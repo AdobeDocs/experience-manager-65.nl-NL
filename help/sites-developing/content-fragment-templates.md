@@ -23,7 +23,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) worden nu aanbevolen voor het maken van al uw fragmenten.
+>[Het wordt nu ](/help/assets/content-fragments/content-fragments-models.md) aanbevolen om al uw fragmenten te maken.
 >
 >De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
 
@@ -45,16 +45,17 @@ De rangorde is (in aflopende volgorde) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->U ***mag*** niets in het `/libs` pad wijzigen.
+>U ***must*** verandert niets in `/libs` weg.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (d.w.z. zoals het in `/libs`) `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in `/libs`) onder `/apps`
    >
    >
-1. Breng wijzigingen aan in `/apps`
+1. Wijzigingen aanbrengen binnen `/apps`
+
 >
 
 
@@ -120,12 +121,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>required<br /> </p> </td>
-     <td>De titel van de sjabloon (weergegeven in de wizard Fragment <strong></strong> maken).</td>
+     <td>De titel van de sjabloon (weergegeven in de wizard <strong>Fragment maken</strong>).</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>optioneel</p> </td>
-     <td>Een tekst die het doel van de sjabloon beschrijft (weergegeven in de wizard Fragment <strong></strong> maken).</td>
+     <td>Een tekst die het doel van het malplaatje beschrijft (die in <strong>Create Fragment</strong> tovenaar wordt getoond).</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -135,12 +136,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>required</p> </td>
-     <td><p><code>true</code>, als de subelementen die de elementen (behalve het hoofdelement) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als deze 'op de vlucht' moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
+     <td><p><code>true</code>, als de subassets die de elementen (behalve het master element) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als deze 'ter plekke' moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op  <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>required</p> </td>
-     <td><p>Versie van de inhoudsstructuur; momenteel ondersteund:</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>2</code>.<br /> </p> </td>
+     <td><p><code>Long</code></p> <p>vereist</p> </td>
+     <td><p>Versie van de inhoudsstructuur; momenteel ondersteund:</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op  <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -156,8 +157,8 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
-     <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet minstens één kindknoop voor het <strong>Belangrijkste</strong> element bevatten, maar kan [1.. bevatten.n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het <i>belangrijkste</i> element. de knooppuntnaam is irrelevant en het knooppunt zelf heeft geen speciale betekenis, afgezien van het feit dat het wordt vertegenwoordigd door het hoofdactief; de overige elementen worden behandeld als subactiva.</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>vereist</p> </td>
+     <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet minstens één kindknoop voor het <strong>Hoofd</strong> element bevatten, maar kan [1.. bevatten.n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het <i>main</i>-element; de knooppuntnaam is irrelevant en het knooppunt zelf heeft geen speciale betekenis, afgezien van het feit dat het wordt vertegenwoordigd door het hoofdactief; de overige elementen worden behandeld als subactiva.</p> </td>
     </tr>
    </tbody>
   </table>
@@ -178,7 +179,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
      <td>De titel van het element (wordt weergegeven in de elementenkiezer van de fragmenteditor).</td>
     </tr>
     <tr>
@@ -198,7 +199,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
      <td>De interne naam van het element; moet uniek zijn voor het fragmenttype.</td>
     </tr>
    </tbody>
@@ -233,18 +234,18 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
      <td><p><code>nt:unstructured</code></p> <p>vereist als er een variatieknooppunt aanwezig is</p> </td>
-     <td><p>Definieert een oorspronkelijke variatie.<br /> De variatie wordt standaard toegevoegd aan alle elementen van het inhoudsfragment.</p> <p>De wijziging heeft dezelfde initiële inhoud als het desbetreffende element (zie <code class="code">defaultContent/
+     <td><p>Definieert een oorspronkelijke variatie.<br /> De variatie wordt standaard toegevoegd aan alle elementen van het inhoudsfragment.</p> <p>De variatie zal de zelfde aanvankelijke inhoud hebben zoals het respectieve element (zie <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
-     <td>De titel van de variatie (weergegeven op het tabblad <strong>Variatie</strong> van de fragmenteditor (linkerspoor)).</td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
+     <td>De titel van de variatie (weergegeven in de tab <strong>Variatie</strong> van de fragmenteditor (linkerrail)).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
-     <td>Een tekst die een beschrijving van de variatie bevat <span>(weergegeven op het tabblad <strong>Variatie</strong> van de fragmenteditor (linkerspoor)).</code></td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
+     <td>Een tekst die een beschrijving van de variatie <span> (getoond in <strong>Variatie</strong> lusje (linkerspoor)) van de fragmentredacteur verstrekt.</code></td>
     </tr>
    </tbody>
   </table>

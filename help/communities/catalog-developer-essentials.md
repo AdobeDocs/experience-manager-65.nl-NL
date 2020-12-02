@@ -24,11 +24,11 @@ Deze pagina bevat de essentiële informatie voor het werken met de catalogusfunc
 
 Met de catalogusfunctie kunnen leden van de gemeenschap bladeren naar en instellingsbronnen selecteren die in een catalogus staan.
 
-De [ component `enablement catalog` staat communautaire leden toe om tot een catalogus van](catalog.md) enablement middelen [](resources.md)toegang te hebben. Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de weergave van activeringsbronnen in een catalogus.
+Met de [ `enablement catalog` component](catalog.md) hebben leden van de gemeenschap toegang tot een catalogus met [enablement resources](resources.md). Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de weergave van activeringsbronnen in een catalogus.
 
-Zie [Tagging Enablement Resources](tag-resources.md).
+Zie [Tags toewijzen Bronnen](tag-resources.md).
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -63,16 +63,16 @@ Zie [Tagging Enablement Resources](tag-resources.md).
 
 ### Catalogusfunctie {#catalog-function}
 
-Een community-sitestructuur die de functie [](functions.md#catalog-function)Catalog bevat, bevat een geconfigureerde `enablement catalog` component.
+Een community-sitestructuur die de [Catalogusfunctie](functions.md#catalog-function) bevat, bevat een geconfigureerde `enablement catalog`-component.
 
 ### Voorfilters {#pre-filters}
 
 Wanneer een functie van de Catalogus aan een communautaire plaats is toegevoegd, is het mogelijk om de enablement middelen en de leerwegen te beperken die in de catalogus door een pre-filter te specificeren verschijnen. Dit wordt gedaan door eigenschappen op de instantie van het catalogusmiddel voor de plaats te plaatsen.
 
-Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebruiken:
+Het voorbeeld van [Enablement Tutorial](getting-started-enablement.md) gebruiken:
 
 * Op auteur
-* CRXDE gebruiken [](../../help/sites-developing/developing-with-crxde-lite.md)
+* [CRXDE](../../help/sites-developing/developing-with-crxde-lite.md) gebruiken
 
    * Bijvoorbeeld [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
 
@@ -82,33 +82,33 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
 
 * Een onderliggende filternode toevoegen
 
-   * Selecteer het `catalog`knooppunt
+   * Selecteer de `catalog`node
    * Selecteer **[!UICONTROL Create Node]**
 
       * Naam: `filters`
       * Type: `nt:unstructured`
       * Selecteer **[!UICONTROL Save All]**
 
-* Eigenschap toevoegen `se_resource-tags` aan `filters` knooppunt
+* `se_resource-tags`-eigenschap toevoegen aan het `filters`-knooppunt
 
-   * Selecteer het `filters` knooppunt
+   * Selecteer de `filters` knoop
    * Een eigenschap voor meerdere objecten toevoegen
 
       * Naam: `se_resource-tags`
       * Type: String
-      * Waarde: *&lt;Voer een[TagID](#pre-filter-tagids)in>*
+      * Waarde: *&lt;enter a [TagID](#pre-filter-tagids)*
          * Selecteer **[!UICONTROL Multi]**
          * Selecteer **[!UICONTROL Add]**
 
-            * Selecteer in het pop-updialoogvenster `+` om aanvullende voorfilter-ID&#39;s toe te voegen
+            * Selecteer `+` in het pop-updialoogvenster om extra voorfilter-id&#39;s toe te voegen
 
 * De communitysite opnieuw publiceren
 
 ![configure-catalog](assets/configure-catalog.png)
 
-#### Label-id&#39;s vóór filter {#pre-filter-tagids}
+#### Label-id&#39;s {#pre-filter-tagids} vóór filter
 
-De [tagIDs](../../help/sites-developing/framework.md#tagid) vóór het filter moet exact overeenkomen met de tags die zijn toegepast op de instellingsbronnen. Deze worden in de `resources` map voor de site weergegeven als de waarden van de eigenschap `se_resource-tags`.
+Het voorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) moet exact overeenkomen met de tags die zijn toegepast op de instellingsbronnen. Deze worden in de map `resources` voor de site weergegeven als de waarden van de eigenschap `se_resource-tags`.
 
 ![configure-filters](assets/configure-catalog1.png)
 

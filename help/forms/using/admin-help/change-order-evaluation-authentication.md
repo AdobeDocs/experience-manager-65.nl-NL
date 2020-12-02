@@ -1,8 +1,8 @@
 ---
 title: De volgorde van de evaluatie voor verificatie wijzigen
 seo-title: De volgorde van de evaluatie voor verificatie wijzigen
-description: U kunt de volgorde wijzigen waarin AEM-formulieren meerdere verificatieproviders evalueren.
-seo-description: U kunt de volgorde wijzigen waarin AEM-formulieren meerdere verificatieproviders evalueren.
+description: U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren.
+seo-description: U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # De volgorde van de evaluatie voor verificatie wijzigen {#change-the-order-of-evaluation-for-authentication}
 
-Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijzigen waarin AEM-formulieren deze evalueren voor verificatie. De orde van de authentificatieleveranciers die in het config.xml- dossier worden vermeld bepaalt de orde van evaluatie voor authentificatie.
+Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijzigen waarin AEM formulieren deze evalueren voor verificatie. De orde van de authentificatieleveranciers die in het config.xml- dossier worden vermeld bepaalt de orde van evaluatie voor authentificatie.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
@@ -44,7 +44,7 @@ Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijz
     </node>
    ```
 
-   Bewerk in `<entry key="order" value="3" />`, bewerk de waarde voor elk knooppunt om de volgorde van de verificatiebeoordeling in te stellen.
+   Bewerk in `<entry key="order" value="3" />` de waarde voor elk knooppunt om de volgorde van de verificatiebeoordeling in te stellen.
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.

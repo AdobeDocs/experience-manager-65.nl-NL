@@ -16,13 +16,13 @@ Met de adaptieve interface voor formulierontwerp kunt u de grootte van component
 
 Met de modus Lay-out kunt u het formaat van componenten wijzigen voor alle apparaattypen, zoals bureaublad, tablet, telefoon en andere kleinere apparaten. De tablet leidt automatisch de lay-outconfiguratie van de Desktopversie af en de kleinere apparaten leiden lay-outconfiguratie van telefoon af. Nochtans, kunt u de automatisch afgeleide configuraties met voeten treden om een verschillende configuratie voor elk apparatentype te bepalen.
 
-## Modus Toegang tot layout {#access-layout-mode}
+## De wijze van de Lay-out van de toegang {#access-layout-mode}
 
-Selecteer **Indeling** in de vervolgkeuzelijst die boven aan de adaptieve ontwerpinterface naast de optie **Voorvertoning** wordt weergegeven. Het formulier wordt weergegeven in de modus Indeling.
+Selecteer **Layout** in de vervolgkeuzelijst die boven aan de adaptieve interface voor formulierontwerp wordt weergegeven naast de optie **Voorvertoning**. Het formulier wordt weergegeven in de modus Indeling.
 
 1. Meld u aan bij de AEM auteur en navigeer naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**.
-1. Create a new or open an existing [adaptive form](../../forms/using/creating-adaptive-form.md).
-1. Selecteer **Lay-out** in de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Het formulier wordt weergegeven in de modus Indeling.
+1. Maak een nieuw of open een bestaand [adaptief formulier](../../forms/using/creating-adaptive-form.md).
+1. Selecteer **Layout** in de vervolgkeuzelijst die boven aan de optie **Voorvertoning** wordt weergegeven. Het formulier wordt weergegeven in de modus Indeling.
 
    ![Lay-outmodus](assets/layout_mode_ic_new.png)
 
@@ -35,10 +35,10 @@ Selecteer **Indeling** in de vervolgkeuzelijst die boven aan de adaptieve ontwer
 
    De werkbalk die wordt weergegeven nadat u op componenten hebt getikt, bestaat uit de volgende opties:
 
-   * **Bovenliggend element:** Selecteer het bovenliggende element van een component.
-   * **Zweven naar nieuwe regel:** Verplaats de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
+   * **Bovenliggend element:** selecteer het bovenliggende element van een component.
+   * **Zweven naar nieuwe regel:** verschuif de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
 
-   U kunt alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met de gewijzigde grootte met de optie **[!UICONTROL Revert breakpoint layout]** ( Onderbrekingspunt ![](assets/reverttopreviouslypublishedversion.png)herstellen). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
+   U kunt alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met gewijzigde componenten met de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt herstellen](assets/reverttopreviouslypublishedversion.png)). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
 
    >[!NOTE]
    >
@@ -58,28 +58,28 @@ Selecteer **Indeling** in de vervolgkeuzelijst die boven aan de adaptieve ontwer
 
    ![Tabel en afbeelding parallel in de modus Lay-out](assets/table_image_parallel_new.png)
 
-   U kunt de component Afbeelding selecteren en op de optie **Zweven tikken naar nieuwe regel** in de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
+   U kunt de component Image selecteren en op de optie **Zweven naar nieuwe regel** op de werkbalk tikken om de component Image naar de volgende regel te verplaatsen.
 
-## Deelvensters vergroten/verkleinen {#resize-panels-layout-mode}
+## Grootte van deelvensters wijzigen {#resize-panels-layout-mode}
 
 Voer de volgende stappen uit als u het formaat van het hele deelvenster wilt wijzigen in plaats van de afzonderlijke componenten:
 
-1. Tik op een van de componenten in het deelvenster waarvan u het formaat wilt wijzigen, selecteer Bovenliggend element ![](assets/select_parent_icon.svg)selecteren en selecteer de eerste optie in de vervolgkeuzelijst als het deelvenster het directe bovenliggende element van de component is.
+1. Tik op een van de componenten in het deelvenster waarvan u het formaat wilt wijzigen, selecteer ![Bovenliggend element](assets/select_parent_icon.svg) en selecteer de eerste optie in de vervolgkeuzelijst als het deelvenster het directe bovenliggende element van de component is.
 
    De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
 
 1. Sleep de blauwe stippen om de positie van het deelvenster in het responsieve raster te definiëren.
-U kunt de stappen 1 en 2 herhalen en Bovenliggend element ![](assets/float_to_new_line_icon.svg) selecteren selecteren selecteren om het gewijzigde deelvenster naar de volgende regel te verplaatsen.
+U kunt stap 1 en 2 herhalen en ![Bovenliggend element ](assets/float_to_new_line_icon.svg) selecteren om het vergrote of verkleinde deelvenster naar de volgende regel te verplaatsen.
 
 ## Meerdere kolommen voor een deelvenster definiëren
 
 Voer de volgende stappen uit om het aantal kolommen voor een deelvenster te definiëren:
 
-1. Tik in de **[!UICONTROL Edit]** modus op het deelvenster, selecteer ![Configureren](assets/configure_icon.png)en selecteer **[!UICONTROL Responsive - everything on the page without navigation]** de optie in de **[!UICONTROL Panel Layout]** vervolgkeuzelijst.
+1. Tik in de modus **[!UICONTROL Edit]** op het deelvenster, selecteer ![Configureren](assets/configure_icon.png) en selecteer **[!UICONTROL Responsive - everything on the page without navigation]** in de vervolgkeuzelijst **[!UICONTROL Panel Layout]**.
 
-1. Tik op ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Tik ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
 
-1. Tik in de **[!UICONTROL Layout]** modus op een van de componenten in het deelvenster, selecteer Bovenliggend element ![](assets/select_parent_icon.svg)selecteren en selecteer het deelvenster.
+1. Tik in de modus **[!UICONTROL Layout]** op een van de componenten in het deelvenster, selecteer ![Bovenliggend element](assets/select_parent_icon.svg) en selecteer het deelvenster.
 
 1. Tik op ![meerdere kolommen](assets/multi-column.svg) en selecteer het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot en met 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
 
@@ -95,18 +95,18 @@ Schakel het nieuwe responsieve raster in voor formulieren die u maakt met AEM Fo
 
 Voer de volgende stappen uit om het nieuwe responsieve raster in te schakelen:
 
-1. Selecteer **Lay-out** in de drop-down lijst die bij de bovenkant naast de optie van de **Voorproef** verschijnt. Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
-1. Tik op **Ja** om de modus **Indeling** voor het formulier in te schakelen.
+1. Selecteer **Layout** in de vervolgkeuzelijst die boven aan de optie **Voorvertoning** wordt weergegeven. Er wordt een bevestiging weergegeven om de modus Lay-out in te schakelen.
+1. Tik **Ja** om de modus **Layout** voor het formulier in te schakelen.
 
 ### Een oud fragment insluiten in een adaptief formulier met nieuwe responsieve indeling {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
 Met de nieuwe responsieve indeling voor het adaptieve formulier kunt u een adaptief formulierfragment met de oude responsieve indeling aan het formulier toevoegen. De nieuwe indeling verwijdert echter de lay-outeigenschappen die al zijn gedefinieerd voor componenten die in het fragment worden gebruikt. U kunt overschakelen naar de modus Lay-out om de eigenschappen voor de lay-out te definiëren van de componenten die in het fragment worden gebruikt.
 
-### Een fragment met een nieuwe responsieve indeling insluiten in een oud adaptief formulier {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
+### Een fragment met een nieuwe responsieve indeling insluiten in een oude adaptieve vorm {#embed-a-fragment-with-new-responsive-layout-in-an-old-adaptive-form}
 
 Als u een fragment met de nieuwe responsieve indeling insluit in een adaptief formulier met een oude responsieve indeling, wordt u gevraagd de modus Indeling in te schakelen voor het formulier en het fragment opnieuw in te sluiten.
 
-Selecteer **Lay-out** in de vervolgkeuzelijst die boven aan de optie **Voorvertoning** wordt weergegeven en tik op **Ja** om de modus Lay-out in te schakelen. Selecteer de modus **Bewerken** om het fragment opnieuw in te sluiten.
+Selecteer **Layout** in de vervolgkeuzelijst die boven aan de optie **Voorvertoning** wordt weergegeven en tik **Ja** om de modus Lay-out in te schakelen. Selecteer de modus **Bewerken** om het fragment opnieuw in te sluiten.
 
 ## Lay-outmodus uitschakelen voor formulieren met oude responsieve indeling {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -114,11 +114,11 @@ U kunt de modus Indeling uitschakelen voor formulieren met een oude responsieve 
 
 Voer de volgende stappen uit om de modus Lay-out uit te schakelen:
 
-1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en open de sjabloon die in het formulier wordt gebruikt in de **[!UICONTROL Edit]** modus.
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en open de sjabloon die in het formulier wordt gebruikt in de modus **[!UICONTROL Edit]**.
 1. Selecteer de documentcontainer in het linkervenster en tik op **[!UICONTROL Policy.]**
 
    ![Lay-outmodus uitschakelen](assets/policy_disable_layout_mode.png)
 
-1. Tik op de **[!UICONTROL Layout Settings]** tab en selecteer **[!UICONTROL Disable Layout Mode]**.
-1. Tik op Wijzigingen ![](assets/save_icon.png) opslaan om de sjablooneigenschappen op te slaan.
+1. Tik op de tab **[!UICONTROL Layout Settings]** en selecteer **[!UICONTROL Disable Layout Mode]**.
+1. Tik ![Wijzigingen opslaan](assets/save_icon.png) om de sjablooneigenschappen op te slaan.
 

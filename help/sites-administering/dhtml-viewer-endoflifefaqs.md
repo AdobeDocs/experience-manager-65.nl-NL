@@ -131,4 +131,4 @@ Hoewel u nog steeds in productie met op DHTML-Gebaseerde kijkers kunt zijn, is h
 
 **Wie neem ik contact op voor meer informatie?**
 
-Als deze veelgestelde vragen niet alle vragen hebben beantwoord, [gebruikt u de Admin Console om een ondersteuningskwestie](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) te maken of neemt u contact op met uw Adobe-accountmanager.
+Als deze veelgestelde vragen niet al uw vragen hebben beantwoord, [gebruik de Admin Console om een ondersteuningscase te maken](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) of neem contact op met uw Adobe-accountmanager.

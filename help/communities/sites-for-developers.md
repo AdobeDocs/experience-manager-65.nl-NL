@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Essentiële elementen voor community-sites {#community-site-essentials}
+# Essentiële elementen voor communautaire sites {#community-site-essentials}
 
 ## Aangepaste sitesjabloon {#custom-site-template}
 
@@ -29,7 +29,7 @@ Daartoe:
 * Een aangepaste sjabloon maken.
 * Bedek het standaardsjabloonpad van de site.
 * Voeg de aangepaste sjabloon toe aan het overlaypad.
-* Specificeer het douanemalplaatje door een `page-template` bezit aan de `configuration` knoop toe te voegen.
+* Specificeer het douanemalplaatje door een `page-template` bezit aan `configuration` knoop toe te voegen.
 
 **Standaardsjabloon**:
 
@@ -43,7 +43,7 @@ Daartoe:
 
 **Type**: String
 
-**Waarde**: `template-name` (geen extensie)
+**Waarde**:  `template-name` (geen extensie)
 
 **Configuratieknooppunt**:
 
@@ -53,17 +53,18 @@ Bijvoorbeeld: `/content/sites/engage/en/configuration`
 
 >[!NOTE]
 >
->Alle knooppunten in het bovenliggende pad hoeven alleen van het type te zijn `Folder`.
+>Alle knooppunten in het bovenliggende pad hoeven alleen van het type `Folder` te zijn.
 
 >[!CAUTION]
 >
->Als het douanemalplaatje de naam *sitepage.hbs* wordt gegeven, dan zullen alle communautaire plaatsen worden aangepast.
+>Als de aangepaste sjabloon de naam *sitepage.hbs* krijgt, worden alle communitysites aangepast.
 
 ### Voorbeeld van aangepaste sitesjabloon {#custom-site-template-example}
 
-Een voorbeeld hiervan `vertical-sitepage.hbs` is een sitesjabloon dat leidt tot de verticale plaatsing van menukoppelingen links op de pagina in plaats van horizontaal onder de banner.
+Als voorbeeld is `vertical-sitepage.hbs` een sitesjabloon dat resulteert in de plaatsing van menukoppelingen verticaal onder de linkerzijde van de pagina in plaats van horizontaal onder de banner.
 
-[Bestand](assets/vertical-sitepage.hbs)ophalen De aangepaste sitesjabloon in de overlaymap plaatsen:
+[Get ](assets/vertical-sitepage.hbs)
+FilePlace het malplaatje van de douaneplaats in de bekledingsomslag:
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
@@ -73,44 +74,44 @@ Identificeer het douanemalplaatje door een `page-template` bezit aan de configur
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Ben zeker om allen **te** sparen en douanecode aan alle AEM instanties (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd) te herhalen.
+Ben zeker aan **sparen allen** en repliceer douanecode aan alle AEM instanties (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
 
-De geadviseerde praktijk voor het herhalen van douanecode is een pakket [tot stand te](../../help/sites-administering/package-manager.md#creating-a-new-package) brengen en het op alle instanties op te stellen.
+De geadviseerde praktijk voor het herhalen van douanecode is [een pakket ](../../help/sites-administering/package-manager.md#creating-a-new-package) tot stand te brengen en het op alle instanties op te stellen.
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
 Wanneer een gemeenschapssite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
 
-Dit is beschikbaar bij de console [van de Plaatsen van](sites-console.md#exporting-the-site)Gemeenschappen.
+Dit is beschikbaar bij [Community Sites console](sites-console.md#exporting-the-site).
 
 Merk op dat UGC en douanecode niet inbegrepen in het pakket van de communautaire plaats is.
 
-Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
+Om UGC uit te voeren, gebruik [AEM Communities UGC het Hulpmiddel van de Migratie ](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), een open bronmigratiehulpmiddel beschikbaar op GitHub.
 
-## Een Community-site verwijderen {#deleting-a-community-site}
+## Verwijderen van een Community-site {#deleting-a-community-site}
 
-Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de communitysite plaatst vanuit **[!UICONTROL Communities]** > **[!UICONTROL Sites]** console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
+Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de communitysite plaatst vanuit de **[!UICONTROL Communities]** > **[!UICONTROL Sites]**-console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
 * [Assets](#enablement-assets)
 * [Databaserecords](#database-records)
 
-### Unieke site-id van community {#community-unique-site-id}
+### Unieke site-id {#community-unique-site-id}
 
 U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is gekoppeld met behulp van CRXDE:
 
-* Navigeer naar de taalhoofdmap van de site, bijvoorbeeld `/content/sites/*<site name>*/en/rep:policy`.
+* Navigeer naar de hoofdtaalmap van de site, bijvoorbeeld `/content/sites/*<site name>*/en/rep:policy`.
 
-* Zoek het `allow<#>` knooppunt met een `rep:principalName` notatie in deze notatie `rep:principalName = *community-enable-nrh9h-members*`.
+* Zoek het `allow<#>` knooppunt met een `rep:principalName` in deze notatie `rep:principalName = *community-enable-nrh9h-members*`.
 
 * De site-id is de derde component van `rep:principalName`
 
-   Als `rep:principalName = community-enable-nrh9h-members`
+   Als bijvoorbeeld `rep:principalName = community-enable-nrh9h-members`
 
-   * **sitenaam** = *inschakelen*
-   * **site-id** = *nrh9h*
-   * **unieke site-id** = *enable-nrh9h*
+   * **site name** =  *enable*
+   * **site-id** =  *nrh9h*
+   * **unieke site-id** =  *enable-nrh9h*
 
 ### Door gebruiker gegenereerde inhoud {#user-generated-content}
 
@@ -124,27 +125,27 @@ Alle UGC kan worden verwijderd of voor een specifieke site, bijvoorbeeld:
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-Hiermee verwijdert u alleen door de gebruiker gegenereerde inhoud (ingevoerd bij publicatie) en geen geschreven inhoud (ingevoerd bij auteur). Dit heeft dus geen invloed op [schaduwknooppunten](srp.md#shadownodes) .
+Hiermee verwijdert u alleen door de gebruiker gegenereerde inhoud (ingevoerd bij publicatie) en geen geschreven inhoud (ingevoerd bij auteur). Daarom worden [schaduwknooppunten](srp.md#shadownodes) niet beïnvloed.
 
-### Gebruikersgroepen van de Gemeenschap {#community-user-groups}
+### Gebruikersgroepen {#community-user-groups}
 
-Zoek in alle auteur- en publicatieinstanties vanuit de [beveiligingsconsole](../../help/sites-administering/security.md)de [gebruikersgroepen](users.md) die:
+Zoek en verwijder in alle auteur- en publicatieinstanties in de [beveiligingsconsole](../../help/sites-administering/security.md) de [gebruikersgroepen](users.md) die:
 
-* Vooraf ingesteld met `community`
+* Vooraf geplaatst met `community`
 * Gevolgd door [unieke site-id](#community-unique-site-id)
 
 Bijvoorbeeld, `community-engage-x0e11-members`.
 
-### Enablement Assets {#enablement-assets}
+### Elementen {#enablement-assets} inschakelen
 
 Vanaf de hoofdconsole:
 
 * Selecteer **[!UICONTROL Assets]**.
 * Ga **[!UICONTROL Select]** wijze in.
 * Selecteer een map met de [unieke site-id](#community-unique-site-id).
-* Selecteer **[!UICONTROL Delete]** (eventueel moet u kiezen uit **[!UICONTROL More...]**).
+* Selecteer **[!UICONTROL Delete]** (moet mogelijk **[!UICONTROL More...]** selecteren).
 
-### Databasegegevens {#database-records}
+### Databaseverslagen {#database-records}
 
 Er is geen hulpmiddel om gegevensbestandingangen voor één specifieke plaats van de enablement communautaire selectief te schrappen.
 

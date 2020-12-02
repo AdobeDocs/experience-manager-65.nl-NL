@@ -89,7 +89,7 @@ Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG
 
    >[!NOTE]
    > 
-   >Als het `CugExcludeImpl` niet wordt gevormd, zal `CugConfiguration` terug naar het gebrek vallen.
+   >Als `CugExcludeImpl` niet wordt gevormd, zal `CugConfiguration` terug naar het gebrek vallen.
 
    Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten in het geval van speciale behoeften.
 

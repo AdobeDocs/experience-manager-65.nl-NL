@@ -19,13 +19,13 @@ ht-degree: 0%
 ---
 
 
-# Authoring - het milieu en de instrumenten {#authoring-the-environment-and-tools}
+# Ontwerpen - het milieu en de Hulpmiddelen {#authoring-the-environment-and-tools}
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
 ## Sitebeheer {#site-administration}
 
-Met de **websiteconsole** kunt u uw website beheren en navigeren. Met behulp van de twee deelvensters kan de structuur van uw website worden uitgebreid en kunt u handelingen uitvoeren op het vereiste element:
+Met de console **Websites** kunt u door uw website navigeren en deze beheren. Met behulp van de twee deelvensters kan de structuur van uw website worden uitgebreid en kunt u handelingen uitvoeren op het vereiste element:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -35,21 +35,21 @@ Er is een afzonderlijke pagina-editor met de klassieke UI, waarbij de zoeker van
 
 `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 ## Toegang tot Help {#accessing-help}
 
-Verschillende **Help** -bronnen zijn rechtstreeks toegankelijk vanuit AEM:
+Verschillende **Help**-bronnen zijn rechtstreeks toegankelijk vanuit AEM:
 
-Naast de toegang tot van [hulp van de consoletoolbars](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), kunt u tot de hulp van sidekick (gebruiken? pictogram) bij het bewerken van een pagina:
+Naast de toegang tot [help van de consolestoolbars](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), kunt u tot de hulp van sidekick ook toegang hebben (gebruiken ? pictogram) bij het bewerken van een pagina:
 
 ![](do-not-localize/sidekick-collapsed-2.png)
 
-Of door de knoop van de **Hulp** in te gebruiken uitgeeft dialoog van specifieke componenten; dit zal contextgevoelige hulp tonen .
+Of door **Help** knoop in te gebruiken uitgeeft dialoog van specifieke componenten; dit zal contextgevoelige hulp tonen .
 
 ## Sidetrap {#sidekick}
 
-Op het tabblad **Componenten** van het Help-werkgebied kunt u door de beschikbare componenten bladeren die aan de huidige pagina moeten worden toegevoegd. De vereiste groep kan worden uitgevouwen, waarna een component naar de gewenste locatie op de pagina wordt gesleept.
+Met het tabblad **Componenten** van het zijpaneel kunt u bladeren naar de beschikbare componenten die aan de huidige pagina moeten worden toegevoegd. De vereiste groep kan worden uitgevouwen, waarna een component naar de gewenste locatie op de pagina wordt gesleept.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -67,11 +67,11 @@ Met de zoekfunctie voor inhoud kunt u een reeks bronnen zoeken. U kunt desgewens
 
 * [Alinea&#39;s](#referencing-paragraphs-from-other-pages)
 * [Producten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
-* Of door de website te [bladeren op de structuur van de repository](#the-content-finder)
+* Of naar [door de website bladeren op de structuur van de opslagplaats](#the-content-finder)
 
 Met alle opties kunt u [zoeken naar specifieke items](#the-content-finder).
 
-### Afbeeldingen zoeken {#finding-images}
+### Afbeeldingen {#finding-images} zoeken
 
 Dit tabblad bevat een overzicht van alle afbeeldingen in de opslagplaats.
 
@@ -79,7 +79,7 @@ Nadat u een afbeeldingsalinea op de pagina hebt gemaakt, kunt u een item naar de
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-### Documenten zoeken {#finding-documents}
+### Documenten {#finding-documents} zoeken
 
 Op dit tabblad worden alle documenten in de opslagplaats weergegeven.
 
@@ -101,7 +101,7 @@ Op dit tabblad worden alle producten weergegeven. Nadat u een geschikte alinea (
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-### Pagina&#39;s zoeken {#finding-pages}
+### Pagina&#39;s {#finding-pages} zoeken
 
 Op dit tabblad worden alle pagina&#39;s weergegeven. Dubbelklik op een pagina om deze te openen voor bewerking.
 
@@ -113,13 +113,13 @@ Op dit tabblad kunt u naar een andere pagina zoeken. Alle alinea&#39;s van die p
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### De weergave Volledige opslagplaats gebruiken {#using-the-full-repository-view}
+### Weergave Volledige opslagplaats gebruiken {#using-the-full-repository-view}
 
 Op dit tabblad worden alle bronnen in de opslagplaats weergegeven.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Zoeken gebruiken met de Inhoudsbrowser {#using-search-with-the-content-browser}
+### Zoeken gebruiken met Inhoudsbrowser {#using-search-with-the-content-browser}
 
 Op alle opties kunt u naar specifieke punten zoeken. Alle tags en bronnen die overeenkomen met het zoekpatroon worden weergegeven:
 
@@ -145,26 +145,26 @@ in de volgende zoekpatronen vindt u het patroon (en alle andere afbeeldingen die
 
 * `name:*nmv*`
 * `name:AD*`
-de tekenovereenkomst is *niet* hoofdlettergevoelig.
+de tekenovereenkomst is  ** niet hoofdlettergevoelig.
 
 * `name:ad?nm??is.*`
 u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 
 >[!NOTE]
 >
->U kunt ook zoeken met [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) .
+>U kunt [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) onderzoek ook gebruiken.
 
-## Referenties weergeven {#showing-references}
+## Referenties {#showing-references} tonen
 
 AEM kunt u bekijken welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
 Verwijzingen naar directe pagina&#39;s weergeven:
 
-1. Selecteer in de assistent het pictogram op het tabblad **Pagina** .
+1. Selecteer in de assistent het tabpictogram **Pagina**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Verwijzingen **tonen selecteren...** AEM opent het venster Verwijzingen en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
+1. Selecteer **Referenties tonen..** AEM opent het venster Referenties en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -175,17 +175,17 @@ In bepaalde situaties zijn verdere acties beschikbaar bij Sidetrap, waaronder:
 
 * [Blauwdruk](/help/sites-administering/msm-best-practices.md)
 
-Andere [interpaginaverhoudingen kunnen in de console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)van Websites worden gezien.
+Andere [relaties tussen pagina&#39;s zijn zichtbaar in de websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Controlelogboek {#audit-log}
 
-Het **controlelogboek** kan van het lusje van de **Informatie** van sidekick worden betreden. In het verslag worden de recente acties vermeld die op de huidige pagina zijn ondernomen; bijvoorbeeld:
+Het **Controlelogboek** kan van **Informatie** lusje van sidekick worden betreden. In het verslag worden de recente acties vermeld die op de huidige pagina zijn ondernomen; bijvoorbeeld:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Pagina-informatie {#page-information}
 
-De websiteconsole [biedt ook informatie over de huidige status van de pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) , zoals publicatie, wijziging, vergrendeld, livecopy enzovoort.
+De console van de Website ook [verstrekt informatie over de huidige status van pagina](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) zoals publicatie, wijziging, gesloten, livecopy, enz.
 
 ## Paginamodi {#page-modes}
 
@@ -195,11 +195,14 @@ Wanneer u een pagina bewerkt met de klassieke UI, zijn er verschillende modi die
 
 De rij met pictogrammen onder aan de Sidetrap wordt gebruikt voor het schakelen tussen modi voor het werken met de pagina&#39;s:
 
-* [Bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)Dit is de standaardmodus. U kunt de pagina bewerken, componenten toevoegen of verwijderen en andere wijzigingen aanbrengen.
+* [](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+BewerkenDit is de standaardmodus, waarmee u de pagina kunt bewerken, componenten kunt toevoegen of verwijderen en andere wijzigingen kunt aanbrengen.
 
-* [In deze modus kunt u een voorvertoning van de pagina weergeven](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)alsof deze in de uiteindelijke vorm op uw website wordt weergegeven.
+* [In ](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+deze modus kunt u een voorvertoning van de pagina weergeven alsof deze in de uiteindelijke vorm op uw website wordt weergegeven.
 
-* [Ontwerp](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)In deze modus kunt u het ontwerp van de pagina bewerken door de toegankelijke onderdelen te configureren.
+* [](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
+DesignIn deze modus kunt u het ontwerp van de pagina bewerken door de toegankelijke componenten te configureren.
 
 >[!NOTE]
 >

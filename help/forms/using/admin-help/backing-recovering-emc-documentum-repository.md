@@ -1,8 +1,8 @@
 ---
 title: Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen
 seo-title: Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen
-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
-seo-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
+description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
+seo-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -18,22 +18,22 @@ ht-degree: 0%
 ---
 
 
-# Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen {#backing-up-and-recovering-the-emc-documentum-repository}
+# Back-ups maken van de EMC Documentum repository {#backing-up-and-recovering-the-emc-documentum-repository} en deze herstellen
 
-In deze sectie worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
+In deze sectie worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
 
 >[!NOTE]
 >
->In deze instructies wordt ervan uitgegaan dat AEM-formulieren met Connectors voor ECM en EMC Documentum Content Server geïnstalleerd en geconfigureerd zijn zoals vereist.
+>In deze instructies wordt ervan uitgegaan dat AEM formulieren met Connectors voor ECM en EMC Documentum Content Server geïnstalleerd en geconfigureerd zijn zoals vereist.
 
 Voor zowel het back-up- als het herstelproces zijn er twee hoofdtaken:
 
-* Back-up maken van (of herstellen van) de AEM-formulieromgeving.
+* Back-up maken van de AEM formulieromgeving (of deze herstellen).
 * Back-up maken van (of herstellen van) de EMC Documentum Content Server.
 
 >[!NOTE]
 >
->Maak een back-up van uw AEM-formuliergegevens voordat u een back-up maakt van het EMC Documentum-systeem en herstel vervolgens het EMC Documentum-systeem voordat u de AEM-formulieromgeving herstelt.
+>Maak een back-up van uw AEM formuliergegevens voordat u een back-up maakt van het EMC Documentum systeem en herstel vervolgens het EMC Documentum systeem voordat u de AEM formulieromgeving herstelt.
 
 ## Softwarevereisten {#software-requirements}
 
@@ -55,7 +55,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
 1. Installeer op de EMC Documentum Content Server de EMC NetWorker-modules en accepteer alle standaardinstellingen.
 
-   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als Naam *van de Server in te gaan* NetWorker. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
+   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als *Naam van de Server van NetWorker* in te gaan. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
 
 1. Maak met behulp van de onderstaande voorbeeldinhoud een configuratiebestand met de naam *nsrnmd_win.cfg* en sla dit op een toegankelijke locatie op de Content Server op. Dit bestand wordt aangeroepen door de opdrachten voor back-up en herstel.
 
@@ -192,18 +192,18 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
 1. Stel het wachtwoord voor het configuratiebestand als volgt in:
 
-   * Open een opdrachtprompt en wijzig deze in `[NetWorker_root]\Legato\nsr\bin`.
+   * Open een bevelherinnering, en verandering in `[NetWorker_root]\Legato\nsr\bin`.
    * Voer de volgende opdracht uit: `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
 
 1. Maak de uitvoerbare batchbestanden (.bat) die worden gebruikt om een back-up van de database te maken. (Zie de documentatie van NetWorker.) Stel de details in de batchbestanden in op basis van uw installatie.
 
    * Volledige back-up van database (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P`*[wachtwoord ]*`-l full`*&lt;database_name>*
+      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Incrementele back-up van databases (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>*`-U``[username]``-P``[password]``-l 1 -R`*&lt;database_name>*
+      `[NetWorker_database_module_root]` `-s`*&lt;networker_server_name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Back-up van databaselogbestand (nsrnmddbl.bat):
 
@@ -215,7 +215,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
       `NetWorker_Server_Name` is de server waarop NetWorker is geïnstalleerd.
 
-      `username` en zijn de gebruikersnaam en het wachtwoord van de gebruiker van de gegevensbestandbeheerder. `password`
+      `username` en  `password` zijn de gebruikersnaam en het wachtwoord van de gebruiker van de gegevensbestandbeheerder.
 
       `database_name` is de naam van de database waarvan een back-up moet worden gemaakt.
 
@@ -226,7 +226,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 1. Klik met de rechtermuisknop op Apparaten en selecteer Maken.
 1. Voer de volgende waarden in en klik op OK:
 
-   **Naam:** Het volledige pad van de gedeelde map
+   **Naam:** het volledige pad van de gedeelde map
 
    **Mediatype:** `File`
 
@@ -237,33 +237,33 @@ Er wordt een apparaat toegevoegd waarop de back-upbestanden worden opgeslagen. U
 
 ## Back-up maken van de EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Voer de volgende taken uit nadat u een volledige back-up van uw AEM-formuliergegevens hebt gemaakt. (Zie Een back- [up maken van de AEM-formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie [Back-up maken van de gegevens van de AEM formulieren](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De opdrachtscripts vereisen het volledige pad naar het bestand nsrnmd_win.cfg dat u hebt gemaakt bij het [voorbereiden van de EMC Document Content Server voor back-up en herstel](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [het Voorbereiden van de Server van de Inhoud van het EMC Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) creeerde.
 
-1. Open een opdrachtprompt en wijzig deze in `[NetWorker_root]\Legato\nsr\bin`.
+1. Open een bevelherinnering, en verandering in `[NetWorker_root]\Legato\nsr\bin`.
 1. Voer de volgende opdracht uit:
 
    ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
-## De EMC Documentum Content Server herstellen {#restore-the-emc-documentum-content-server}
+## De EMC Documentum Content Server {#restore-the-emc-documentum-content-server} herstellen
 
-Voer de volgende taken uit voordat u de AEM-formuliergegevens herstelt. (Zie [De AEM-formuliergegevens](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)herstellen.)
+Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data).)
 
 >[!NOTE]
 >
->De opdrachtscripts vereisen het volledige pad naar het bestand nsrnmd_win.cfg dat u hebt gemaakt bij het [voorbereiden van de EMC Document Content Server voor back-up en herstel](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
+>De bevelmanuscripten vereisen de volledige weg aan het nsrnmd_win.cfg- dossier dat u in [het Voorbereiden van de Server van de Inhoud van het EMC Document voor steun en terugwinning ](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery) creeerde.
 
 1. Stop de Docbase-service die u wilt herstellen.
 1. Start het hulpprogramma NetWorker-gebruiker voor uw databasemodule (bijvoorbeeld *NetWorker-gebruiker voor SQL Server*).
 1. Klik op het gereedschap Herstellen en selecteer vervolgens Normaal.
 1. Selecteer links in het scherm de database voor uw Docbase en klik op de knop Start op de werkbalk.
 1. Start de Docbase-service opnieuw wanneer de database is hersteld.
-1. Een opdrachtprompt openen en wijzigen in *[NetWorker_root]*\Legato\nsr\bin
+1. Open een bevelherinnering en verandering in *[NetWorker_root]*\Legato\nsr\bin
 1. Voer de volgende opdracht uit:
 
    ```shell

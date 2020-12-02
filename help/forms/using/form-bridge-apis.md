@@ -1,8 +1,8 @@
 ---
 title: Form Bridge-API's voor HTML5-formulieren
 seo-title: Form Bridge-API's voor HTML5-formulieren
-description: Externe toepassingen gebruiken de FormBridge-API om verbinding te maken met het XFA Mobile-formulier. De API verzendt een FormBridgeInitialized-gebeurtenis in het bovenliggende venster.
-seo-description: Externe toepassingen gebruiken de FormBridge-API om verbinding te maken met het XFA Mobile-formulier. De API verzendt een FormBridgeInitialized-gebeurtenis in het bovenliggende venster.
+description: Externe toepassingen maken via de FormBridge-API verbinding met het XFA Mobile-formulier. De API verzendt een FormBridgeInitialized-gebeurtenis in het bovenliggende venster.
+seo-description: Externe toepassingen maken via de FormBridge-API verbinding met het XFA Mobile-formulier. De API verzendt een FormBridgeInitialized-gebeurtenis in het bovenliggende venster.
 uuid: 0db22649-522b-4857-9ffd-826c52381d15
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Form Bridge-API&#39;s voor HTML5-formulieren {#form-bridge-apis-for-html-forms}
 
-Met de API&#39;s van Form Bridge kunt u een communicatiekanaal openen tussen een op XFA gebaseerde HTML5-formulier en uw toepassingen. De API&#39;s van Form Bridge bevatten een API voor **verbinding** om de verbinding te maken.
+Met de API&#39;s van Form Bridge kunt u een communicatiekanaal openen tussen een op XFA gebaseerde HTML5-formulier en uw toepassingen. De API&#39;s van de Form Bridge beschikken over een **API om de verbinding te maken.**
 
-De **connect** -API accepteert een handler als argument. Nadat een verbinding tot stand is gebracht tussen een op XFA gebaseerd HTML5-formulier en een Form Bridge, wordt de greep aangeroepen.
+De **connect** API keurt een manager als argument goed. Nadat een verbinding tot stand is gebracht tussen een op XFA gebaseerd HTML5-formulier en een Form Bridge, wordt de greep aangeroepen.
 
 U kunt de volgende voorbeeldcode gebruiken om de verbinding tot stand te brengen.
 
@@ -40,7 +40,7 @@ window.addEventListener("FormBridgeInitialized",
 >
 >Zorg ervoor dat u een verbinding maakt voordat u het bestand formRuntime.jsp toevoegt.
 
-## Beschikbare Form Bridge-API  {#available-form-bridge-api-nbsp}
+## Beschikbare API voor Form Bridge  {#available-form-bridge-api-nbsp}
 
 **getBridgeVersion()**
 
@@ -53,16 +53,16 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 **isConnected()** Controleert of de formulierstatus is geïnitialiseerd
 
 * **Invoer**: Geen
-* **Uitvoer**: **Waar** als de XFA-formulierstatus is geïnitialiseerd
+* **Uitvoer**:  **** Trueif de XFA-formulierstatus is geïnitialiseerd
 
 * **Fouten**: Geen
 
-**connect(handler, context)** Maakt verbinding met FormBridge en voert de functie uit nadat de verbinding tot stand is gebracht en de formulierstatus is geïnitialiseerd
+**connect(handler, context)** Maakt verbinding met FormBridge en voert de functie uit nadat de verbinding is gemaakt en de formulierstatus is geïnitialiseerd
 
 * **Invoer**:
 
    * **handler**: Functie die moet worden uitgevoerd nadat Form Bridge is verbonden
-   * **context**: Het object waarop de context (dit) van de *handlerfunctie* wordt ingesteld.
+   * **context**: Het object waarop de context (dit) van de  ** handlerfunctie is ingesteld.
 
 * **Uitvoer**: Geen
 * **Fout**: Geen
@@ -74,8 +74,8 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
    * **opties:** JavaScript-object met de volgende eigenschappen:
 
       * **Fout**: Error Handler Function
-      * **succes**: Handlerfunctie voor succes. Deze functie wordt doorgegeven aan een object dat XML bevat in *data* -eigenschap.
-      * **context**: Het object waarop de context (dit) van de functie *success* is ingesteld
+      * **succes**: Handlerfunctie voor succes. Deze functie wordt doorgegeven aan een object dat XML bevat in de eigenschap *data*.
+      * **context**: Het object waarop de context (dit) van de  ** opvolfunctie is ingesteld
       * **validationChecker**: Functie om validatiefouten te controleren die van de server zijn ontvangen. Validatiefunctie wordt doorgegeven aan een array met fouttekenreeksen.
       * **formState**: De JSON-status van het XFA-formulier waarvoor gegevens-XML moet worden geretourneerd. Als deze optie niet is opgegeven, worden de gegevens-XML geretourneerd voor het momenteel gegenereerde formulier.
 
@@ -86,15 +86,15 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
 * **Invoer:**
 
-   * **configName:** Naam van de configuratie die moet worden overschreven
+   * **configName:** Naam van de configuratie om met voeten te treden
 
       * **widgetConfig:** Hiermee kan de gebruiker de standaardwidgets in het formulier overschrijven met aangepaste widgets. De configuratie wordt als volgt overschreven:
 
          *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
-      * **pagingConfig:** Hiermee kan de gebruiker het standaardgedrag negeren waarbij alleen de eerste pagina wordt weergegeven. De configuratie wordt als volgt overschreven:
+      * **pagingConfig:** Staat de gebruiker toe om het standaardgedrag met voeten te treden van het teruggeven slechts de eerste pagina. De configuratie wordt als volgt overschreven:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true | false>, shrinkPageDisabled: &lt;true | false> }).*
+         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled:  &lt;true>, shrinkPageDisabled:  &lt;true> }).*
 
       * **LoggingConfig:** Staat de gebruiker toe om het niveau van het registreren met voeten te treden, het registreren voor een categorie onbruikbaar te maken, of om de logboekconsole te tonen of naar server te verzenden. De configuratie kan als volgt worden overschreven:
 
@@ -110,7 +110,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
         }
       ```
 
-      * **SubmitServiceProxyConfig:** Gebruikers toestaan verzendingen te registreren en proxyservices te registreren.
+      * **SubmitServiceProxyConfig:** Sta de gebruikers toe om voorlegging te registreren en de volmachtsdiensten te registreren.
 
          ```javascript
          window.formBridge.registerConfig("submitServiceProxyConfig",
@@ -124,7 +124,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
 
 
-* **Uitvoer:** Object met oorspronkelijke waarde van de configuratie in *data* -eigenschap.
+* **Uitvoer:** Object met oorspronkelijke waarde van de configuratie in  ** gegevenseigenschap.
 
 * **Fout:** Geen
 
@@ -155,7 +155,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 **getFormState()** Retourneert de JSON die de formulierstatus vertegenwoordigt
 
 * **Invoer:** Geen
-* **Uitvoer:** Object met JSON dat de huidige formulierstatus in de *eigenschap data* vertegenwoordigt.
+* **Uitvoer:** Object met JSON die de huidige formulierstatus in  ** gegevenseigenschap vertegenwoordigt.
 
 * **Fout:** Geen
 
@@ -167,7 +167,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
       * **Fout**: Error Handler Function
       * **succes**: Handlerfunctie voor succes
-      * **context**: Het object waarop de context (dit) van de functie *success* is ingesteld
+      * **context**: Het object waarop de context (dit) van de  ** opvolfunctie is ingesteld
       * **formState**: JSON-status van het formulier. Het formulier wordt teruggezet naar de JSON-status.
 
 * **Uitvoer:** Geen
@@ -175,24 +175,24 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
 **setFocus (som)** Hiermee wordt de focus ingesteld op het veld dat is opgegeven in de SOM-expressie
 
-* **Invoer:** Enkele expressie van het veld waarop de focus moet worden ingesteld
+* **Invoer:** bepaalde expressie van het veld waarop de focus moet worden ingesteld
 * **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering in geval van onjuiste SOM-expressie
+* **Fout:** genereert een uitzondering in geval van onjuiste SOM-expressie
 
 **setFieldValue (som, value)** Hiermee wordt de waarde van de velden voor de opgegeven SOM-expressies ingesteld
 
 * **Invoer:**
 
    * **som:** Array met enkele expressies van het veld. The som expression to set value of the fields.
-   * **waarde:** Array die waarden bevat die overeenkomen met SOM-expressies die in een **** enkele array zijn opgegeven. Als het gegevenstype van de waarde niet hetzelfde is als het fieldType, wordt de waarde niet gewijzigd.
+   * **value:** Array met waarden die overeenkomen met SOM-expressies die in een  **** willekeurige array zijn opgegeven. Als het gegevenstype van de waarde niet hetzelfde is als het fieldType, wordt de waarde niet gewijzigd.
 
 * **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering in het geval van een onjuiste SOM-expressie
+* **Fout:** genereert een uitzondering in het geval van een onjuiste SOM-expressie
 
-**getFieldValue (som)** Geeft de waarde van de velden voor de opgegeven SOM-expressies
+**getFieldValue (som)** Retourneert de waarde van de velden voor de opgegeven SOM-expressies
 
-* **Invoer:** Array met enkele expressies van velden waarvan de waarde moet worden opgehaald
-* **Uitvoer:** Object dat het resultaat bevat als Array in **data** -eigenschap.
+* **Input:** Array met enkele expressies van velden waarvan de waarde moet worden opgehaald
+* **Uitvoer:** Object dat het resultaat bevat als Array in  **** gegevenseigenschap.
 
 * **Fout:** Geen
 
@@ -209,24 +209,24 @@ if(a.errors) {
 }
 ```
 
-**getFieldProperties(som, property)** Hiermee wordt de lijst met waarden voor de opgegeven eigenschap opgehaald van de velden die zijn opgegeven in SOM-expressies
+**getFieldProperties(som, property)** Hiermee wordt de lijst met waarden voor de opgegeven eigenschap opgehaald van de velden die in SOM-expressies zijn opgegeven
 
 * **Invoer:**
 
    * **som:** Array met SOM-expressies voor de velden
    * **eigenschap**: Naam van de eigenschap waarvan de waarde is vereist
 
-* **Uitvoer:** Object dat het resultaat bevat als Array in *data* -eigenschap
+* **Uitvoer:** Object dat het resultaat bevat als Array in  ** eigenschap data
 
 * **Fout:** Geen
 
-**setFieldProperties(som, property, values)** Hiermee wordt de waarde van de opgegeven eigenschap ingesteld voor alle velden die zijn opgegeven in de SOM-expressies
+**setFieldProperties(som, property, values)** Hiermee wordt de waarde van de opgegeven eigenschap ingesteld voor alle velden die in de SOM-expressies zijn opgegeven
 
 * **Invoer:**
 
    * **som:** Array met enkele expressies van velden waarvan de waarde moet worden ingesteld
    * **eigenschap**: Eigenschap waarvan de waarde moet worden ingesteld
-   * **waarde:** Array met waarden van de opgegeven eigenschap voor velden die zijn opgegeven in SOM-expressies
+   * **value:** Array met waarden van de opgegeven eigenschap voor velden die zijn opgegeven in SOM-expressies
 
 * **Uitvoer:** Geen
 * **Fout:** Geen

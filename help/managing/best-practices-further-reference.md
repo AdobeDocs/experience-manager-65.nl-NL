@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
 source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+workflow-type: tm+mt
+source-wordcount: '3783'
+ht-degree: 0%
 
 ---
 
 
-# Checklist - Verdere referentie{#the-checklist-further-reference}
+# Checklist - Verdere verwijzing{#the-checklist-further-reference}
 
-Deze pagina bevat nadere details voor het uitwerken en/of vergroten van de documenten en beginselen die worden behandeld in de checklist [voor het](/help/managing/best-practices.md)beheren van projecten - beste praktijken.
+Deze pagina bevat verdere details voor het uitwerken en/of vergroten van de documenten en beginselen die worden behandeld in de [Controlelijst voor beste praktijken](/help/managing/best-practices.md) voor het beheren van projecten.
 
 ## AEM - Wat gaat u gebruiken? {#aem-what-will-you-be-using}
 
@@ -25,28 +28,28 @@ Deze pagina bevat nadere details voor het uitwerken en/of vergroten van de docum
 >
 >De lijsten in deze onderafdeling zijn niet limitatief, maar bedoeld als inleiding.
 
-### Functies in AEM {#features-within-aem}
+### Functies binnen AEM {#features-within-aem}
 
-Bij de implementatie van AEM (vooral voor de eerste keer) moet u de [mogelijkheden en workflows van AEM](https://www.adobe.com/marketing/experience-manager.html) evalueren om te controleren welke gebieden u wilt of nodig hebt.
+Wanneer het uitvoeren van AEM (in het bijzonder voor de eerste keer) zult u [mogelijkheden en werkschema&#39;s van AEM](https://www.adobe.com/marketing/experience-manager.html) moeten herzien om zeker te zijn van welke gebieden u wilt/nodig hebt.
 
 Houd rekening met de functies van AEM die u gebruikt en met de invloed op uw ontwerp. bijvoorbeeld:
 
 * [Handel](/help/sites-administering/ecommerce.md)
 * [Schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
-* [Activa](/help/assets/assets.md)
+* [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Beheer en vertaling van meerdere sites](/help/sites-administering/msm-and-translation.md)
-* [Formulieren](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Gemeenschappen](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Controleer bovendien de [releaseopmerkingen](/help/release-notes/release-notes.md)voor de verschillende versies van AEM om te zien wanneer er nieuwe functies zijn toegevoegd.
+Controleer bovendien de [Release-aantekeningen](/help/release-notes/release-notes.md) voor de verschillende versies van AEM om te zien wanneer er nieuwe functies zijn toegevoegd.
 
-### Integraties {#integrations}
+### Integrations {#integrations}
 
-AEM kan worden geïntegreerd met andere Adobe-producten en/of services van derden. Deze kunnen de macht en de functionaliteit verhogen tot uw beschikking.
+AEM kunnen worden geïntegreerd met andere producten van de Adobe en/of diensten van derden. Deze kunnen de macht en de functionaliteit verhogen tot uw beschikking.
 
-Zie [Oplossingsintegratie](/help/sites-administering/integration.md) voor volledige informatie.
+Zie [Solutions Integration](/help/sites-administering/integration.md) voor volledige informatie.
 
 ## Migreren of upgraden? {#migrate-or-upgrade}
 
@@ -57,8 +60,8 @@ Een belangrijke overweging is of u:
 
 Bij de overgang van een vorige versie naar de huidige versie zijn er twee opties:
 
-* Met [Pakketbeheer](/help/sites-administering/package-manager.md) kunt u alle inhoud en toepassingscode van het oude systeem exporteren naar het nieuwe.
-* [Upgrade](/help/sites-deploying/upgrade.md) het oude systeem op zijn plaats. Dit is in de meeste gevallen de aanbevolen keuze.
+* Gebruik [Pakketbeheer](/help/sites-administering/package-manager.md) om alle inhoud en toepassingscode van het oude systeem naar het nieuwe te exporteren.
+* [Het oude systeem ](/help/sites-deploying/upgrade.md) upgraden. Dit is in de meeste gevallen de aanbevolen keuze.
 
 ## Basisgrondregels {#basic-ground-rules}
 
@@ -66,7 +69,7 @@ Net als bij elk project is het van cruciaal belang dat er zo snel mogelijk grond
 
 >[!NOTE]
 >
->Dit zijn algemene punten, de Checklist [van de](/help/managing/best-practices.md) Beste praktijken behandelt specifieke met betrekking tot AEM.
+>Deze punten zijn generiek, [Checklist van Beste praktijken](/help/managing/best-practices.md) behandelt specifieke details met betrekking tot AEM.
 
 * **Rollen**
 
@@ -81,7 +84,7 @@ Net als bij elk project is het van cruciaal belang dat er zo snel mogelijk grond
 
 * **Betrokkenheid**
 
-   Door de betrokken partijen zo snel mogelijk bij het project te betrekken, kunt u hen aanmoedigen om *belanghebbenden* te worden, zodat zij zich meer inzetten voor het welslagen van het project.
+   Door de betrokken partijen zo snel mogelijk bij het project te betrekken, kunt u hen aanmoedigen om *stakeholders* in het project te worden, zodat zij zich meer inzetten voor het welslagen ervan.
 
    * Aan de kant van de klant staan onder andere de auteurs - die dagelijks met het systeem moeten werken.
    * Binnen uw eigen projectteam omvat dit ook de personen die verantwoordelijk zijn voor kwaliteitsborging. Hoe meer zij de vereisten van de klant begrijpen, hoe beter zij de tests kunnen plannen.
@@ -103,14 +106,14 @@ Net als bij elk project is het van cruciaal belang dat er zo snel mogelijk grond
 
    * Het belangrijkste punt om hier nota van te nemen is slechts één exemplaar van de informatie te houden en de informatie (en daarom toegang tot het hulpmiddel te delen dat wordt gebruikt) te delen. Hierdoor wordt onderhoud eenvoudiger en kunnen verschillen worden voorkomen.
 
-* **Toepassingsgebied**
+* **Scope**
 
    Duidelijk bepalen wat op verschillende niveaus onder het project moet vallen:
 
    * de individuele versies (als een iteratief versieproces wordt gebruikt, en ongeacht of zij aan klanten of uw intern testteam worden geleverd).
-   * het AEM-project.
+   * het AEM project.
    * het gehele project; met inbegrip van software van derden, de gevolgen ervan voor tests, organisatorische problemen en vele andere.
-   * Voor bepaalde aspecten kan het ook nuttig zijn te vermelden wat *niet* binnen het toepassingsgebied van het project valt. Dit kan helpen verwarring en onjuiste veronderstellingen te voorkomen, maar moet beperkt blijven tot essentiële kwesties.
+   * Voor bepaalde aspecten kan het ook nuttig zijn om te verklaren wat *not* binnen het werkingsgebied van het project is. Dit kan helpen verwarring en onjuiste veronderstellingen te voorkomen, maar moet beperkt blijven tot essentiële kwesties.
 
 * **Rapportage**
 
@@ -150,22 +153,22 @@ Sommige, maar niet alle, indicatoren kunnen op de doelmetriek worden gebaseerd d
 
 ### Doelwaarden {#target-metrics}
 
-Metriek worden gebruikt om kwantitatieve metingen voor de kwaliteit van uw website te definiëren - het zijn eigenlijk een definitie van de prestatiedoelen die u wilt bereiken en kunnen worden gebruikt om uw [KPI&#39;s (Belangrijke prestatie-indicatoren)](#key-performance-indicators-and-target-metrics)te definiëren.
+Metrisch worden gebruikt om kwantitatieve metingen voor de kwaliteit van uw website te bepalen - zij zijn fundamenteel een definitie van de prestatiesdoelstellingen die u wilt bereiken en kunnen worden gebruikt om uw [KPIs (Zeer belangrijke Indicatoren van Prestaties)](#key-performance-indicators-and-target-metrics) te bepalen.
 
-Veel metriek kunnen worden gedefinieerd, maar vaak worden de meeteenheden die u definieert, gebruikt voor uw doelstellingen op het gebied van prestaties en gelijktijdige uitvoering. Met name factoren die moeilijk te kwantificeren kunnen zijn en vaak vatbaar zijn voor *emotionele* beoordeling:
+Veel metriek kunnen worden gedefinieerd, maar vaak worden de meeteenheden die u definieert, gebruikt voor uw doelstellingen op het gebied van prestaties en gelijktijdige uitvoering. Met name factoren die moeilijk te kwantificeren kunnen zijn en die vaak gevoelig zijn voor *emotionele*-evaluatie:
 
-* &quot; onze website is vandaag *veel te traag* &quot; - wanneer komt *traag* in aanmerking ?
+* &quot;onze website is *veel te langzaam* vandaag&quot; - wanneer komt *slow* in aanmerking?
 
-* &quot; alles *komt tot stilstand* wanneer mijn collega zich aanmeldt &quot; - hoeveel gelijktijdige gebruikers kunnen het systeem ondersteunen ?
-* &quot;Wanneer ik zoek, *loopt het systeem tot stilstand* &quot; - welke soort zoekverzoeken beïnvloeden het systeem?
-* &quot;het downloaden van het bestand duurt *eeuwen* &quot; - wat zijn aanvaardbare downloadtijden (onder normale netwerkomstandigheden)?
+* &quot;alles *breidt zich aan een halt* wanneer mijn collega zich binnen&quot;registreert - hoeveel gezamenlijke gebruikers kan het systeem steunen?
+* &quot;wanneer ik zoek, breidt het systeem *zich aan een halt* &quot; - welke soort onderzoeksverzoeken beïnvloeden het systeem?
+* &quot;het downloaden van het bestand duurt *ages*&quot; - wat zijn acceptabele downloadtijden (onder normale netwerkomstandigheden)?
 
 De Metriek van het doel worden bepaald bij het begin van een project aan:
 
 * Geef de verwachte afmetingen van de website aan die u wilt aanbieden
 * geeft de minimale kwaliteit aan die u wilt bereiken
 * bepalen hoe deze factoren daadwerkelijk zullen worden gemeten
-* worden gebruikt als basis voor de [prestatiekernindicatoren](#key-performance-indicators-and-target-metrics)
+* worden gebruikt als basis voor de [Belangrijke prestatie-indicatoren](#key-performance-indicators-and-target-metrics)
 
 Zoals altijd zorgvuldig moet worden omgesprongen met het definiëren van de meetwaarden voor het doel:
 
@@ -185,13 +188,13 @@ Als deze gegevens correct worden gebruikt, kunnen ze een nuttig hulpmiddel zijn;
 >
 >In dit deel worden de basisbeginselen en -kwesties behandeld die in overweging moeten worden genomen. Elke installatie is anders, dus de werkelijke waarden die moeten worden gemeten, verschillen.
 
-### Alles is afhankelijk van uw projectontwerp {#everything-rests-on-your-project-design}
+### Alles rust op uw projectontwerp {#everything-rests-on-your-project-design}
 
 Alle meetgegevens die moeten worden gemeten, worden op een of andere manier beïnvloed door het ontwerp van uw project. Omgekeerd kunnen veel problemen het best worden opgelost door ontwerpwijzigingen.
 
-Daarom zou u uw doelmetriek moeten bepalen *alvorens* over uw ontwerp te beslissen. Op deze manier kunt u uw ontwerp optimaliseren op basis van deze factoren. Als uw project eenmaal is ontwikkeld, zal het moeilijk zijn om wijzigingen aan te brengen in de basisontwerpbeginselen.
+Daarom zou u uw doelmetriek *vóór* moeten bepalen bepalend op uw ontwerp. Op deze manier kunt u uw ontwerp optimaliseren op basis van deze factoren. Als uw project eenmaal is ontwikkeld, zal het moeilijk zijn om wijzigingen aan te brengen in de basisontwerpbeginselen.
 
-Wanneer u de structuur voor de website maakt, volgt u de aanbevolen structuur voor AEM-websites. Zorg ervoor dat u de volgende problemen en/of principes begrijpt:
+Wanneer u de structuur voor de website maakt, volgt u de aanbevolen structuur voor AEM websites. Zorg ervoor dat u de volgende problemen en/of principes begrijpt:
 
 * Inhoud van websites structureren.
 * Hoe sjablonen en componenten werken.
@@ -200,7 +203,7 @@ Wanneer u de structuur voor de website maakt, volgt u de aanbevolen structuur vo
 * Hoe de zoekfunctie werkt.
 * Hoe u CSS en verwante technologieën kunt gebruiken om compacte, niet-overtollige code van HTML tot stand te brengen.
 
-Als u van mening bent dat uw ontwerp de richtlijnen niet volgt, of als u over sommige implicaties onzeker bent, verduidelijk deze kwesties alvorens u of de programmeringsfase begint of de inhoud vult.
+Als u van mening bent dat uw ontwerp de richtlijnen niet volgt, of als u over sommige implicaties onzeker bent, verheldeer deze kwesties alvorens u of de programmeringsfase begint of de inhoud vult.
 
 ### Infrastructuur {#infrastructure}
 
@@ -214,7 +217,7 @@ Om de infrastructuur te bepalen of te beoordelen zal het helpen doelwaarden zoal
 Afhankelijk van uw situatie en de strategische betekenis van de website, helpt dit u om uw infrastructuur te beoordelen en te kiezen:
 
 * aantal servers
-* aantal AEM-instanties (auteur en publicatie)
+* aantal AEM (auteur en publicatie)
 
 ### Prestaties {#performance}
 
@@ -227,7 +230,7 @@ Er zijn verschillende prestatiefactoren die kunnen worden geëvalueerd:
 
 * antwoordtijden voor zoekverzoeken
 
-Deze sectie kan samen met de Optimalisering [van](/help/sites-deploying/configuring-performance.md) Prestaties worden gelezen die de technische details van eigenlijk het meten van de prestaties uitbreidt.
+Deze sectie kan worden gelezen in combinatie met [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) die de technische details van het daadwerkelijk meten van de prestaties uitbreidt.
 
 #### Responstijden voor afzonderlijke pagina&#39;s {#response-times-for-individual-pages}
 
@@ -256,7 +259,7 @@ De responstijden die u wilt bepalen, verschillen per auteur- en publicatieomgevi
       * de inhoud is in cache geplaatst
       * taakverdeling wordt toegepast
 
-#### Doelresponstijden instellen {#setting-target-response-times}
+#### Doelresponstijden {#setting-target-response-times} instellen
 
 Dus hoe kan je beslissen over haalbare (gemiddelde) responstijden? Dit is vaak een kwestie van ervaring:
 
@@ -306,7 +309,7 @@ Zoekverzoeken kunnen een aanzienlijke invloed hebben op uw website, zowel wat be
 
 Het vaststellen van doelen voor zoekverzoeken is ook hier een kwestie van ervaring, afhankelijk van:
 
-* ervaring van AEM
+* aem
 * een beoordeling van de frequentie waarmee de zoekopdracht zal worden gebruikt in vergelijking met andere doelstellingen
 * uw persistentiemanager
 * uw zoekindex
@@ -314,17 +317,17 @@ Het vaststellen van doelen voor zoekverzoeken is ook hier een kwestie van ervari
 
 Deze moeten vanaf het begin van uw project worden gepland en geïntegreerd. De volgende controlemechanismen zijn beschikbaar:
 
-* **De zoekreactietijden van het toezicht met AEM request.log**
+* **De zoekreactietijden van de controle met AEM request.log**
 
-   Nogmaals kan request.log worden gebruikt om de reactietijden voor onderzoeksverzoeken te controleren; Zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
+   Nogmaals kan request.log worden gebruikt om de reactietijden voor onderzoeksverzoeken te controleren; zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
 
 * **Geprogrammeerde mechanismen voor het meten van zoekresponstijden**
 
-   Om de informatie aan te passen u over onderzoeksverzoeken, en hun prestaties verzamelt, adviseert men om informatieinzameling in uw projectbroncode te omvatten; Zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
+   Om de informatie aan te passen u over onderzoeksverzoeken, en hun prestaties verzamelt, adviseert men om informatieinzameling in uw projectbroncode te omvatten; zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
 
-### Gelijkend {#concurrency}
+### Gelijktijdige {#concurrency}
 
-Uw website wordt beschikbaar gesteld aan een aantal gebruikers/bezoekers, zowel in de auteur- als in de publicatieomgeving. De getallen zijn vaak hoger dan bij het testen, maar ook fluctuerend en moeilijk te voorspellen. Uw website moet worden ontworpen voor een gemiddeld aantal gelijktijdige gebruikers/bezoekers zonder dat dit negatieve gevolgen heeft voor de prestaties. Ook dit `request.log` kan worden gebruikt om valutatietests te verrichten; Zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
+Uw website wordt beschikbaar gesteld aan een aantal gebruikers/bezoekers, zowel in de auteur- als in de publicatieomgeving. De getallen zijn vaak hoger dan bij het testen, maar ook fluctuerend en moeilijk te voorspellen. Uw website moet worden ontworpen voor een gemiddeld aantal gelijktijdige gebruikers/bezoekers zonder dat dit negatieve gevolgen heeft voor de prestaties. Ook hier kan `request.log` worden gebruikt om valutatietests uit te voeren; Zie [Prestaties optimaliseren](/help/sites-deploying/configuring-performance.md) voor meer informatie.
 
 De doelstellingen voor het aantal gelijktijdige gebruikers zijn afhankelijk van het milieutype:
 
@@ -357,10 +360,10 @@ Voordat u de gerelateerde metriek gaat bespreken, geeft u een snelle definitie v
    | Client | Rekeningvermogen van de computer van de gebruiker. | Complexiteit van de pagina-indeling. |
    | Netwerk | Netwerkbandbreedte. | Grootte van de pagina (code, afbeeldingen enzovoort). |
    | Verzendcache | Servergeheugen van de webserver (hoofdgeheugen en vaste schijf). | Webserver (hoofdgeheugen en vaste schijf). Aantal en formaat van de pagina&#39;s in de cache. |
-   | Uitvoercache | Servergeheugen van de AEM-server (hoofdgeheugen en vaste schijf). | Aantal en grootte van de pagina&#39;s in de uitvoercache, het aantal afhankelijkheden per pagina. Dit volume wordt verlaagd door de verzendercache. |
+   | Uitvoercache | Servergeheugen van de AEM (hoofdgeheugen en vaste schijf). | Aantal en grootte van de pagina&#39;s in de uitvoercache, het aantal afhankelijkheden per pagina. Dit volume wordt verlaagd door de verzendercache. |
    | Webserver | De computermacht van de server van het Web. | Hoeveelheid verzoeken. Dit volume wordt verlaagd door caching. |
    | Sjabloonmodel | De computermacht van de server van het Web. | Complexiteit van de sjablonen. |
-   |  Bewaarplaats | Prestaties van de opslagplaats. | Aantal pagina&#39;s dat vanuit de gegevensopslagruimte is geladen. |
+   | Bewaarplaats | Prestaties van de opslagplaats. | Aantal pagina&#39;s dat vanuit de gegevensopslagruimte is geladen. |
 
 ### Overige cijfers {#other-metrics}
 
@@ -372,9 +375,9 @@ Het is echter aan te raden om een kleine set nauwkeurige, basismeetgegevens te h
 
 ## Beveiliging {#security}
 
-Veiligheid is cruciaal en een steeds groter wordende uitdaging. Het ***moet*** worden overwogen en gepland vanaf de vroegste stadia van uw project.
+Veiligheid is cruciaal en een steeds groter wordende uitdaging. Het ***must*** moet van de vroegste stadia van uw project worden overwogen en worden gepland.
 
-In de [lijst](/help/sites-administering/security-checklist.md) met beveiligingscontroles worden de stappen beschreven die u moet nemen om ervoor te zorgen dat uw AEM-installatie veilig is wanneer deze wordt geïmplementeerd. Andere veiligheidsaspecten worden behandeld onder [Veiligheid (wanneer zich ontwikkelt)](/help/sites-developing/security.md) en [Gebruikersbeheer en Veiligheid](/help/sites-administering/security.md).
+In [Beveiligingschecklist](/help/sites-administering/security-checklist.md) worden de stappen beschreven die u moet uitvoeren om ervoor te zorgen dat uw AEM-installatie veilig is wanneer deze wordt geïmplementeerd. Andere veiligheidsaspecten worden behandeld onder [Beveiliging (bij ontwikkeling)](/help/sites-developing/security.md) en [Gebruikersbeheer en Beveiliging](/help/sites-administering/security.md).
 
 ## Parallelle en interactieve taken {#parallel-and-iterative-tasks}
 
@@ -382,20 +385,21 @@ In de [lijst](/help/sites-administering/security-checklist.md) met beveiligingsc
 >
 >Het volgende:
 >
->* Biedt een overzicht met betrekking tot de *eerste* implementatie van een AEM-project.
->* is bedoeld als abstract overzicht; Zie de [projectchecklist](/help/managing/best-practices.md) voor specifieke fasen/mijlpalen/taken.
+>* Biedt een overzicht met betrekking tot *first* implementatie van een AEM project.
+>* is bedoeld als abstract overzicht; Zie [Projectchecklist](/help/managing/best-practices.md) voor specifieke fasen/mijlpalen/taken.
 >* Elke tijdschaal is theoretisch.
+
 >
 
 
 
-Voor een nieuwe implementatie van een standaardAEM- project zult u taken zoals moeten overwegen:
+Voor een nieuwe implementatie van een standaard AEM project zult u taken zoals moeten overwegen:
 
 * Overhandigen van het verkoopproces.
-* Implementatie van de klanttoepassing (**ontwikkeling**).
-* Installatie en configuratie van de infrastructuur (en bijbehorende processen) op de locatie van de klant (**infrastructuur**).
-* Maak (of migratie) van de inhoud (**Inhoud**).
-* Overdracht aan activiteiten (**onderhoud/ondersteuning**).
+* Implementatie van de klanttoepassing (**Ontwikkeling**).
+* Installatie en configuratie van de infrastructuur (en bijbehorende processen) op de locatie van de klant (**Infrastructuur**).
+* Creation (or migration) of the content (**Content**).
+* Overdracht aan bewerkingen (**Onderhoud/ondersteuning**).
 * Follow-upreleases.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
@@ -406,11 +410,11 @@ Voor alle aspecten wordt aanbevolen een iteratieve benadering te gebruiken:
 
 >[!NOTE]
 >
->Splits de lancering van het project in **Zachte Lancering(en)** (verminderde beschikbaarheid, veelvoudige herhalingen) en **Harde Lancering** (volledige beschikbaarheid - Levend) om voor het stemmen, optimalisering en gebruikersopleiding in realistische omstandigheden op het productiemilieu toe te staan.
+>Splits de lancering van het project in **Zachte lancering(en)** (verminderde beschikbaarheid, veelvoudige herhalingen) en **Harde lancering** (volledige beschikbaarheid - Levend) om voor het stemmen, optimalisering en gebruikersopleiding in realistische omstandigheden op het productiemilieu toe te staan.
 
 >[!NOTE]
 >
->Zie de [projectchecklist](/help/managing/best-practices.md) voor voorbeelden van taken die u tijdens de levenscyclus van uw project zou moeten uitvoeren (of beoordelen).
+>Zie [Projectchecklist](/help/managing/best-practices.md) voor voorbeelden van taken die u tijdens de levenscyclus van uw project zou moeten uitvoeren (of beoordelen).
 
 Voor elke categorie zijn enkele punten die moeten worden vermeld:
 
@@ -423,7 +427,7 @@ Voor elke categorie zijn enkele punten die moeten worden vermeld:
       * Eerste sprint resulteert in de eerste implementatie in uw testomgeving.
       * Elke sprint heeft een runable resultaat.
       * Elke sprint krijgt een klantentekens (minimum van gestructureerde test met terugkoppelen).
-   * Plan voor de eventualiteit van een update van de beschikbare versie AEM tijdens het project.
+   * Plan voor de eventualiteit van een update van de beschikbare AEM versie tijdens het project.
    * Plan voor tests en optimalisatie tijdens sprints.
    * Plan voor stabilisatie- en optimalisatiefasen.
    * Maak een logboek met items die u wilt plannen voor verdere releases.
@@ -467,7 +471,7 @@ Voor elke categorie zijn enkele punten die moeten worden vermeld:
    * Plan voor &quot;in-sprint-migratie&quot; na refactoring.
    * Plan &#39;content burndown&#39; (sitemap voor go-live content).
 
-## Schatting van tijd en inspanningen {#estimating-time-and-effort}
+## Schatting van tijd en inspanning {#estimating-time-and-effort}
 
 Afhankelijk van uw resulterende takenlijst kunt u dan eerste schattingen maken van tijd en moeite voor (high-level) taakdefinities. Deze zouden een aanwijzing moeten omvatten van wie (klant of partner) wat en wanneer zal doen.
 
@@ -475,7 +479,7 @@ De volgende lijst bevat standaardbenaderingen en onderlinge relaties van de betr
 
 >[!CAUTION]
 >
->Deze cijfers kunnen alleen worden gebruikt voor initiële ramingen. Een ervaren AEM-ontwikkelaar moet de gedetailleerde analyse maken.
+>Deze cijfers kunnen alleen worden gebruikt voor initiële ramingen. Een ervaren AEM ontwikkelaar moet de gedetailleerde analyse maken.
 
 | Fase | Inspanningen |
 |---|---|
@@ -491,7 +495,7 @@ De gedetailleerde planning kan dan beschikbare of vereiste middelen met termijne
 
 ## Referentiearchitectuur {#reference-architecture}
 
-De verwijzingsarchitectuur wordt gegeven om een malplaatjeoplossing voor de architectuur te verstrekken AEM. De referentiearchitectuur biedt oplossingen voor problemen die veel voorkomen bij bedrijfssystemen, zoals schalen, betrouwbaarheid en beveiliging.
+De verwijzingsarchitectuur wordt gegeven om een malplaatjeoplossing voor de AEM architectuur te verstrekken. De referentiearchitectuur biedt oplossingen voor problemen die veel voorkomen bij bedrijfssystemen, zoals schalen, betrouwbaarheid en beveiliging.
 
 De volgende sitemetriek moet worden gedefinieerd:
 
@@ -523,13 +527,13 @@ De volgende lijst bevat informatie over de gereedschappen die u kunt gebruiken. 
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM zelf biedt een reeks mechanismen waarmee u uw toepassing kunt controleren, testen, onderzoeken en debuggen; met inbegrip van:</p>
+   <td><p>AEM zelf beschikt over een reeks mechanismen waarmee u uw toepassing kunt controleren, testen, onderzoeken en debuggen; met inbegrip van:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Ontwerpmodus</a></li>
-     <li>De <a href="/help/sites-developing/hobbes.md">testconsole</a></li>
+     <li>De <a href="/help/sites-developing/hobbes.md">Testconsole</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Operations-dashboard</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Inhoudsinzicht</a></li>
-     <li>De <a href="/help/sites-authoring/author-environment-tools.md#content-tree">inhoudsstructuur</a></li>
+     <li>De <a href="/help/sites-authoring/author-environment-tools.md#content-tree">Inhoudsstructuur</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -538,7 +542,7 @@ De volgende lijst bevat informatie over de gereedschappen die u kunt gebruiken. 
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/">Selenium</a> is een testprogramma voor Open Source. De tests worden direct in de browser uitgevoerd - emuleren hoe uw gebruikers werken.</td>
+   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumis een testprogramma voor Open Source. De tests worden direct in de browser uitgevoerd - emuleren hoe uw gebruikers werken.</td>
   </tr>
   <tr>
    <td>Microsoft Project</td>
@@ -546,23 +550,23 @@ De volgende lijst bevat informatie over de gereedschappen die u kunt gebruiken. 
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> is een Open Source-programma voor het bijhouden en beheren van details van de softwarebugs. Workflows kunnen naar wens worden ingesteld op de details van de bug.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jirais </a> is een Open Source-programma voor het bijhouden en beheren van gegevens over softwarebugs. Workflows kunnen naar wens worden ingesteld op de details van de bug.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> is een revisiecontrolesoftware.</td>
+   <td><a href="https://git-scm.com/"></a> Gitis a revision control software.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse is Open Source IDE, die uit diverse projecten wordt samengesteld. Deze zijn gericht op het bouwen van een open ontwikkelingsplatform dat bestaat uit uitbreidbare raamwerken, gereedschappen en runtimes voor het bouwen, implementeren en beheren van software gedurende de hele levenscyclus.</p> <p>Zie <a href="/help/sites-developing/howto-projects-eclipse.md">hoe te AEM- Projecten ontwikkelen die Eclipse</a> voor meer informatie gebruiken.</p> </td>
+   <td><p>Eclipse is Open Source IDE, die uit diverse projecten wordt samengesteld. Deze zijn gericht op het bouwen van een open ontwikkelingsplatform dat bestaat uit uitbreidbare raamwerken, gereedschappen en runtimes voor het bouwen, implementeren en beheren van software gedurende de hele levenscyclus.</p> <p>Zie <a href="/help/sites-developing/howto-projects-eclipse.md">Hoe te om AEM Projecten te ontwikkelen die Eclipse</a> voor meer informatie gebruiken.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Een professionele IDE (en dus ook aan licentiekosten) die een uitgebreide reeks kenmerken biedt. </p> <p>Zie <a href="/help/sites-developing/ht-intellij.md">hoe te AEM Projecten ontwikkelen gebruikend IntelliJ IDEA</a> voor meer informatie.</p> </td>
+   <td><p>Een professionele IDE (en dus ook aan licentiekosten) die een uitgebreide reeks kenmerken biedt. </p> <p>Zie <a href="/help/sites-developing/ht-intellij.md">Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA</a> voor meer informatie.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> is een hulpprogramma voor het beheer en het begrip van softwareprojecten waarmee het bouwproces van een project (software en documentatie) kan worden beheerd.</td>
+   <td><a href="https://maven.apache.org/"></a> Mavenis is een hulpmiddel voor het beheer en het begrip van softwareprojecten waarmee het bouwproces van een project (software en documentatie) kan worden beheerd.</td>
   </tr>
  </tbody>
 </table>
@@ -575,12 +579,12 @@ Daarnaast zijn de volgende punten van bijzonder belang:
 * [Technische vereisten](/help/sites-deploying/technical-requirements.md)
 * [Uw exemplaar controleren en onderhouden](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Aanbevolen werkwijzen {#best-practices}
+### Best practices voor {#best-practices}
 
-Adobe biedt verdere aanbevolen procedures voor alle fasen en doelgroepen:
+Adobe verstrekt verdere Beste praktijken voor alle fasen en publiek:
 
 * [Implementeren](/help/sites-deploying/best-practices.md)
 * [Authoring](/help/sites-authoring/best-practices.md)
 * [Beheer](/help/sites-administering/administer-best-practices.md)
-* [Ontwikkelen](/help/sites-developing/best-practices.md)
+* [Ontwikkeling](/help/sites-developing/best-practices.md)
 * [Projectbeheer](/help/managing/best-practices.md)

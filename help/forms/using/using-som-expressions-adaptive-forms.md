@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# SOM-expressies gebruiken in aangepaste formulieren{#using-som-expressions-in-adaptive-forms}
+# SOM-expressies gebruiken in adaptieve formulieren{#using-som-expressions-in-adaptive-forms}
 
 Aangepaste formulieren worden gemodelleerd als AEM pagina die wordt weergegeven als JCR-inhoudsstructuur in AEM opslagplaats. Het belangrijkste element van de inhoudsstructuur is guideContainer-knooppunt. Onder guideContainer, is er rootPanel die genestelde paneel en gebieden kan bevatten.
 
@@ -29,7 +29,7 @@ In de volgende afbeelding ziet u een knooppuntstructuur waarnaar een adaptief fo
 
 DOM-structuur
 
-Een SOM-expressie voor een element in een adaptieve vorm wordt vooraf ingesteld door `guide[0].guide1[0]`. De positie van een component in de hiërarchie van de knoopstructuur wordt gebruikt om zijn uitdrukking SOM af te leiden.
+Een SOM-expressie voor een element in een adaptieve vorm wordt voorafgegaan door `guide[0].guide1[0]`. De positie van een component in de hiërarchie van de knoopstructuur wordt gebruikt om zijn uitdrukking SOM af te leiden.
 
 ![DOM-structuur met twee keuzerondjes](assets/hierarchy_radio_button.png)
 
@@ -47,4 +47,4 @@ In deelvensters hebt u toegang tot de functie via de werkbalk van het deelvenste
 
 SOM-expressies extraheren met de werkbalk van het deelvenster
 
-Sommige API&#39;s die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) worden vermeld, gebruiken de SOM-expressie van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de overeenkomstige SOM-expressie door aan de `getFocus`API in `guideBridge`.
+Sommige APIs die in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) worden vermeld gebruiken de uitdrukking SOM van een element. Als u bijvoorbeeld een bepaald veld in een adaptieve vorm de focus wilt geven, geeft u de corresponderende SOM-expressie door aan de `getFocus`API in `guideBridge`.

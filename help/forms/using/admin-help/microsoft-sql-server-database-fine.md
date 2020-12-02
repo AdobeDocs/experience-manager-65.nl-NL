@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Microsoft SQL Server-database: De configuratie verfijnen {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server-database: De configuratie {#microsoft-sql-server-database-fine-tuning-the-configuration} verfijnen
 
 U zou de standaardconfiguratiemontages moeten veranderen wanneer het gebruiken van de Server van Microsoft SQL. Klik met de rechtermuisknop op de lokale server in Oracle Enterprise Manager om het dialoogvenster met eigenschappen te openen.
 

@@ -21,13 +21,13 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 >
 >Alleen gebruikers met bewerkingsmachtigingen voor elementen kunnen de elementen releren en de relatie tussen de elementen verbreken.
 
-## Relatieve elementen {#relating-assets}
+## Elementen {#relating-assets} koppelen
 
-1. Open vanuit de [!DNL Experience Manager] interface de **[!UICONTROL Properties]** pagina voor een element dat u wilt koppelen.
+1. Open vanuit de interface [!DNL Experience Manager] de pagina **[!UICONTROL Properties]** voor een element dat u wilt koppelen.
 
    ![de eigenschappenpagina van een element openen om het element te koppelen](assets/asset-properties-relate-assets.png)
 
-   *Afbeelding:[!DNL Assets][!UICONTROL Properties]pagina voor het koppelen van elementen.*
+   *Afbeelding:  [!DNL Assets] [!UICONTROL Properties] pagina voor het koppelen van elementen.*
 
    U kunt ook het element selecteren in de lijstweergave.
 
@@ -37,45 +37,45 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt u op de werkbalk op Elementen **[!UICONTROL Relate]** ![](assets/do-not-localize/link-relate.png) koppelen.
+1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt u op **[!UICONTROL Relate]** ![Relatieve elementen](assets/do-not-localize/link-relate.png) op de werkbalk.
 1. Voer een van de volgende handelingen uit:
 
-   * Als u het bronbestand voor het element wilt koppelen, selecteert u in de **[!UICONTROL Source]** lijst.
-   * Als u een afgeleid bestand wilt koppelen, selecteert u het in de **[!UICONTROL Derived]** lijst.
-   * Als u een relatie in twee richtingen tussen de elementen wilt maken, selecteert u deze in de **[!UICONTROL Others]** lijst.
+   * Als u het bronbestand voor het element wilt koppelen, selecteert u **[!UICONTROL Source]** in de lijst.
+   * Als u een afgeleid bestand wilt koppelen, selecteert u **[!UICONTROL Derived]** in de lijst.
+   * Selecteer **[!UICONTROL Others]** in de lijst om een relatie in twee richtingen tussen de elementen te maken.
 
-1. Navigeer in het **[!UICONTROL Select Asset]** scherm naar de locatie van het element dat u wilt koppelen en selecteer het.
+1. Navigeer in het scherm **[!UICONTROL Select Asset]** naar de locatie van het element dat u wilt koppelen en selecteer het.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klik op **[!UICONTROL Confirm]**.
-1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de **[!UICONTROL Related]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het onder **[!UICONTROL Source]** weergegeven.
+1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3, wordt het gerelateerde element vermeld onder een geschikte categorie in de sectie **[!UICONTROL Related]**. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het weergegeven onder **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Als u de koppeling met een element wilt opheffen, klikt u op de werkbalk op de elementen **[!UICONTROL Unrelate]** die u ![](assets/do-not-localize/link-unrelate-icon.png) niet wilt koppelen.
+1. Als u de koppeling met een element wilt opheffen, klikt u op **[!UICONTROL Unrelate]** ![ongerelateerde elementen](assets/do-not-localize/link-unrelate-icon.png) op de werkbalk.
 
-1. Selecteer in het **[!UICONTROL Remove Relations]** dialoogvenster de elementen die u niet wilt koppelen en klik op **[!UICONTROL Unrelate]**.
+1. Selecteer de elementen die u niet wilt koppelen in het dialoogvenster **[!UICONTROL Remove Relations]** en klik op **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de **[!UICONTROL Related]** sectie.
+1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de sectie **[!UICONTROL Related]**.
 
-## Gerelateerde elementen vertalen {#translating-related-assets}
+## Verwante elementen vertalen {#translating-related-assets}
 
-Het maken van bron-/afgeleide relaties tussen elementen met behulp van de functie voor gerelateerde elementen is ook handig in vertaalworkflows. Wanneer u een vertaalworkflow uitvoert op een afgeleid element, worden [!DNL Experience Manager Assets] automatisch alle elementen opgehaald waarnaar het bronbestand verwijst en dat dit element bevat voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
+Het maken van bron-/afgeleide relaties tussen elementen met behulp van de functie voor gerelateerde elementen is ook handig in vertaalworkflows. Wanneer u een vertaalwerkstroom op een afgeleid middel in werking stelt, [!DNL Experience Manager Assets] haalt automatisch om het even welk middel dat de brondossierverwijzingen en omvat het voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand verwant is aan een ander element, [!DNL Experience Manager Assets] wordt het element waarnaar wordt verwezen opgehaald en opgenomen voor vertaling.
+Als het bronbestand verwant is aan een ander element, haalt [!DNL Experience Manager Assets] het element waarnaar wordt verwezen op en neemt dit voor vertaling op.
 
 ![De pagina met eigenschappen van elementen bevat het bronbestand van het verwante element dat moet worden opgenomen voor vertaling](assets/asset-properties-source-asset.png)
 
 *Afbeelding: Bronactiva van de gerelateerde activa die voor vertaling moeten worden opgenomen.*
 
-1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject](translation-projects.md#create-a-new-translation-project)maken uit te voeren. In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
+1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject maken](translation-projects.md#create-a-new-translation-project) te volgen. In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
 
-1. Open vanuit de [!UICONTROL Projects] pagina de vertaalmap.
+1. Open op de pagina [!UICONTROL Projects] de vertaalmap.
 
 1. Klik op de projecttegel om de detailpagina te openen.
 
@@ -85,7 +85,7 @@ Als het bronbestand verwant is aan een ander element, [!DNL Experience Manager A
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecteer het element en klik vervolgens op **[!UICONTROL Reveal in Assets]** de werkbalk om de vertaalstatus voor het element weer te geven.
+1. Selecteer het element en klik vervolgens op **[!UICONTROL Reveal in Assets]** op de werkbalk om de vertaalstatus voor het element weer te geven.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 

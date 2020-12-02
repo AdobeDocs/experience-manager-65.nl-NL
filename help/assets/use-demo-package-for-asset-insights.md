@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Met behulp van het demopakket kunt u Adobe Asset Insights inschakelen om gegevens vast te leggen van en inzichten te genereren voor een voorbeeldwebpagina.
 
-## [!DNL Use Experience Manager Assets] Inzichten met voorbeeldwebpagina  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Inzichten met voorbeeldwebpagina   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Elementinzichten configureren met behulp van de instructies in Asset Insights [configureren](configure-asset-insights.md).
+1. Elementinzichten configureren met behulp van de instructies in [Asset Insights](configure-asset-insights.md) configureren.
 1. Download het pakket met voorbeeldmiddelen van beneden en installeer het pakket van CRXDE package manager.
 
    [Bestand ophalen](assets/insightsdemo.zip)
@@ -34,4 +34,4 @@ Met behulp van het demopakket kunt u Adobe Asset Insights inschakelen om gegeven
 
    >[!NOTE]
    >
-   >De externe webpagina kan zich op [!DNL Experience Manager] zichzelf bevinden.
+   >De externe webpagina kan zich in [!DNL Experience Manager] zelf bevinden.

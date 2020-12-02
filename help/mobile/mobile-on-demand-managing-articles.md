@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om artikelen binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op artikelen in de toepassing.
 
-## Artikeloverzicht {#articles-overview}
+## Overzicht van artikelen {#articles-overview}
 
 Artikelen vertegenwoordigen de tekst die samen met illustraties wordt gebaseerd om informatie over te brengen.
 
@@ -35,23 +38,24 @@ Artikelen vertegenwoordigen de tekst die samen met illustraties wordt gebaseerd 
    >
    >
 * [Artikelen beheren](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
+
 >
 
 
 
-## Een artikel maken {#creating-an-article}
+## Een artikel {#creating-an-article} maken
 
 De algemene workflow voor het maken van een artikel is als volgt:
 
 1. Selecteer **Mobiel** van de zijspoorstaaf.
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel Artikelen **** beheren.
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Artikelen beheren**.
 1. Kies een artikelsjabloon en klik op **Volgende**.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe artikel.
 1. Klik op **Maken** als u klaar bent.
-1. Het nieuwe artikel wordt weergegeven in de tegel Artikelen **** beheren.
+1. Uw nieuwe artikel wordt weergegeven in de tegel **Artikelen beheren**.
 
-## Een nieuw artikel importeren {#importing-a-new-article}
+## Een nieuw artikel {#importing-a-new-article} importeren
 
 Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mobile On-Demand naar AEM. Zo kunt u lokale inhoud bewerken en weergeven.
 
@@ -62,9 +66,9 @@ Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mob
 De workflow voor het importeren van een nieuw artikel
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag rechtsboven in de tegel Artikelen **** beheren en selecteer Artikelen importeren.
-1. Klik op Artikelen **** importeren in het dialoogvenster en vervolgens op Sluiten.
-1. Uw mobiele On-Demand-artikelen worden nu weergegeven in de tegel **Artikelen** beheren.
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Artikelen beheren** en selecteer Artikelen importeren.
+1. Klik op **Artikelen importeren** in het dialoogvenster en vervolgens op Sluiten.
+1. Uw mobiele On-Demand-artikelen worden nu weergegeven in de **Artikelen beheren**-tegel.
 
 >[!CAUTION]
 >
@@ -72,9 +76,9 @@ De workflow voor het importeren van een nieuw artikel
 
 ![chlimage_1-3](assets/chlimage_1-3.gif)
 
-## Een artikel bewerken {#editing-an-article}
+## Een artikel {#editing-an-article} bewerken
 
-Met de ingebouwde AEM-editor voor slepen en neerzetten kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
+Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
 
 >[!CAUTION]
 >
@@ -83,7 +87,7 @@ Met de ingebouwde AEM-editor voor slepen en neerzetten kunt u een artikel toevoe
 De workflow voor het bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer een AEM-artikel uit de tegel Artikelen **** beheren.
+1. Selecteer een AEM artikel in de tegel **Artikelen beheren**.
 1. Klik op het gemarkeerde artikel in de lijstweergave om het te openen in de inhoudseditor.
 1. Gebruik de inhoudeditor om artikelinhoud (manuscripten, afbeeldingen, tekst, enz.) te slepen.
 
@@ -94,39 +98,39 @@ Inhoud zoals artikelen, banners, enz. heeft talrijke eigenschappen, zoals titels
 De algemene workflow voor het weergeven/bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Kies een artikel in de tegel Artikelen **** beheren.
+1. Kies een artikel in de tegel **Artikelen beheren**.
 
-1. Selecteer **Weergave-eigenschappen** op de actiebalk.
+1. Selecteer **Eigenschappen weergeven** in de actiebalk.
 1. Alle beschikbare metagegevens voor dat artikel weergeven.
 1. Bewerk desgewenst de metagegevens en klik op **Opslaan** als u klaar bent.
 1. U kunt de wijzigingen desgewenst direct uploaden naar Mobiel op aanvraag.
 
-## Een artikel uploaden {#uploading-an-article}
+## Een artikel {#uploading-an-article} uploaden
 
 De uploadactie kopieert de geselecteerde inhoud en voegt het aan een Mobiel project op bestelling toe. Bestaande mobiele on-demand-inhoud wordt vervangen door de nieuwe versie.
 
 De algemene workflow voor het uploaden van een artikel:
 
-1. Kies vanuit **Mobiel** uw Mobile On-Demand-app in de catalogus.
-1. Selecteer in de tegel Artikelen **** beheren een artikel dat u wilt uploaden naar Mobiel op aanvraag.
+1. Kies vanuit **Mobiel** uw mobiele On-Demand-app in de catalogus.
+1. Selecteer in de tegel **Artikelen beheren** een artikel dat u wilt uploaden naar mobiele apparaten op aanvraag.
 1. Voeg desgewenst meer artikelen toe in de lijstweergave.
-1. Selecteer **Uploaden** in de actiebalk en klik vervolgens op Uploaden in het dialoogvenster.
+1. Selecteer **Upload** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw artikelen worden nu geüpload naar Mobile On-Demand.
 
 ![chlimage_1-4](assets/chlimage_1-4.gif)
 
-## Een artikel verwijderen {#deleting-an-article}
+## Een artikel {#deleting-an-article} verwijderen
 
-Met deze bewerking verwijdert u de geselecteerde inhoud van Mobiel op aanvraag en optioneel van de lokale AEM-instantie.
+Met deze bewerking verwijdert u de geselecteerde inhoud van Mobiel op aanvraag en optioneel van de lokale AEM.
 
 De algemene workflow voor het verwijderen van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer het artikel dat u wilt verwijderen in de tegel **Artikelen** beheren.
+1. Selecteer het artikel dat u wilt verwijderen in de tegel **Artikelen beheren**.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
-1. Klik op **Verwijderen** op de actiebalk.
-1. Controleer of u zowel AEM- als Mobiel On-Demand wilt verwijderen.
-1. Click **Delete**.
+1. Klik **Verwijderen** op de actiebalk.
+1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
+1. Klik **Delete**.
 1. Uw artikel is nu verwijderd uit de lijst.
 
 ![chlimage_1-5](assets/chlimage_1-5.gif)

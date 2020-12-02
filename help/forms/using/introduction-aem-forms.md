@@ -1,6 +1,6 @@
 ---
-title: Inleiding tot AEM-formulieren
-seo-title: Inleiding tot AEM-formulieren
+title: Inleiding tot AEM Forms
+seo-title: Inleiding tot AEM Forms
 description: Met Adobe Experience Manager Forms kunnen zakelijke gebruikers aantrekkelijke, responsieve en adaptieve formulieren integreren in websites en mobiele sites, waardoor het digitale inschrijfproces wordt vereenvoudigd en de conversietarieven van klanten worden verhoogd.
 seo-description: Met Adobe Experience Manager Forms kunnen zakelijke gebruikers aantrekkelijke, responsieve en adaptieve formulieren integreren in websites en mobiele sites, waardoor het digitale inschrijfproces wordt vereenvoudigd en de conversietarieven van klanten worden verhoogd.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
@@ -11,48 +11,51 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 translation-type: tm+mt
 source-git-commit: a8deb66b23e6ddde9c5f6379ef4f766668336369
+workflow-type: tm+mt
+source-wordcount: '924'
+ht-degree: 0%
 
 ---
 
 
-# Inleiding tot AEM-formulieren{#introduction-to-aem-forms}
+# Inleiding tot AEM Forms{#introduction-to-aem-forms}
 
-Voor informatie over de recentste eigenschappen en de verhogingen in Vormen AEM, zie [Nieuw in Vormen](../../forms/using/whats-new.md)AEM.
+Zie [Nieuwe functies in AEM Forms](../../forms/using/whats-new.md) voor informatie over de nieuwste functies en verbeteringen in AEM Forms.
 
-## AEM-formulieren {#about-aem-forms}
+## Informatie over AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor de integratie met back-endprocessen, bedrijfsregels en gegevens.
+Adobe Experience Manager (AEM) biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor integratie met back-endprocessen, bedrijfsregels en gegevens.
 
-AEM Forms combineert formulierontwerp, -beheer en -publicatie in combinatie met mogelijkheden voor correspondentiebeheer, documentbeveiliging en geïntegreerde analyses om aantrekkelijke end-to-end ervaringen te creëren. AEM Forms is ontworpen om via internet en mobiele kanalen te werken en kan efficiënt in uw bedrijfsprocessen worden geïntegreerd, waardoor papierprocessen en fouten worden verminderd en de efficiëntie wordt verbeterd.
+AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie in combinatie met mogelijkheden voor correspondentiebeheer, documentbeveiliging en geïntegreerde analyses om aantrekkelijke end-to-end ervaringen te creëren. AEM Forms is ontworpen om via internet en mobiele kanalen te werken en kan efficiënt in uw bedrijfsprocessen worden geïntegreerd, waardoor papierprocessen en fouten worden verminderd en de efficiëntie wordt verbeterd.
 
-In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren kunnen zoeken en openen die ze nodig hebben via het web en mobiele kanalen.
+In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
-AEM Forms biedt hulpprogramma&#39;s voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF-formulieren en gerelateerde elementen. Zie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md)voor meer informatie.
+AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md) voor meer informatie.
 
 ![](do-not-localize/4th-draft.gif)
 
 ### Belangrijkste mogelijkheden {#key-capabilities}
 
-Samenvattend, verstrekken de Vormen AEM krachtige eigenschappen van het vormbeheer, zoals het volgende, die handprocessen verminderen en klantentevredenheid verhogen.
+Samenvattend biedt AEM Forms krachtige functies voor formulierbeheer, zoals de volgende, die handmatige processen verminderen en de tevredenheid van klanten verhogen.
 
-* Een gecentraliseerde Forms Portal voor het ontwerpen en implementeren van dynamische formulieren, waaronder PDF-, HTML5- en adaptieve formulieren
+* Een gecentraliseerd Forms Portal voor het ontwerpen en implementeren van dynamische formulieren, waaronder PDF-, HTML5- en adaptieve formulieren
 * Een gebruiksvriendelijke grafische gebruikersinterface waarmee zakelijke gebruikers eenvoudig formulieren kunnen importeren, beheren, voorvertonen en publiceren
 * Een responsieve formuliermap met krachtige zoekfuncties die trefwoorden, tags en metagegevens gebruiken
 * Dynamische detectie van het apparaat en de locatie van een gebruiker om het formulier op de juiste wijze te genereren via internet en mobiele kanalen
-* Integratie met Adobe Analytics om de afmetingen voor het formuliergebruik effectief te meten
-* Integratie met de eSign-services van Adobe Document Cloud of Scripting om documenten met vertrouwelijke informatie elektronisch te ondertekenen
+* Integratie met Adobe Analytics om gegevens over formuliergebruik effectief te meten
+* Integratie met eSign services van Adobe Document Cloud of Scriptservice voor het elektronisch ondertekenen van documenten die vertrouwelijke informatie bevatten
 * Geautomatiseerde mogelijkheden voor het publiceren van formulieren en de mogelijkheid om tijdige, gepersonaliseerde en consistente communicatie via meerdere kanalen te leveren
 
-## AEM-formuliertypen {#aem-form-types}
+## Formuliertypen AEM {#aem-form-types}
 
 Met AEM Forms kunt u nieuwe en bestaande formulieren uitbreiden om te maken:
 
-* Pixel Perfect, gepagineerde HTML- en PDF-formulieren die er bijna als papier uitzien, of
+* Pixel Perfect, gepagineerde HTML en PDF forms die er bijna als papier uitzien, of
 * adaptieve formulieren die automatisch worden weergegeven voor het apparaat en de browser van de gebruiker.
 
-**PDF-formulieren**
+**PDF forms**
 
-PDF-formulieren kunnen offline worden ingevuld, lokaal worden opgeslagen en formuliergegevens worden verzonden wanneer u de volgende online gebruiker bent. U kunt tweedimensionale streepjescodes gebruiken om formuliergegevens vast te leggen en digitale handtekeningen gebruiken om de authenticiteit voor gebruikers te valideren.
+PDF forms kunnen offline worden ingevuld, lokaal worden opgeslagen en formuliergegevens worden verzonden wanneer u de volgende keer online bent. U kunt tweedimensionale streepjescodes gebruiken om formuliergegevens vast te leggen en digitale handtekeningen gebruiken om de authenticiteit voor gebruikers te valideren.
 
 **HTML-formulieren**
 
@@ -77,9 +80,9 @@ Alle formuliertypen ondersteunen de volgende functies:
 
 ## Offline gegevensverzameling {#offline-data-collection}
 
-Zodra de formuliergegevens zijn verzonden, verbindt Adobe Experience Manager de formuliergegevens met bestaande systemen, bedrijfsregels en de vereiste personen.
+Zodra de vormgegevens worden voorgelegd, verbindt Adobe Experience Manager de vormgegevens met bestaande systemen, bedrijfsregels, en de vereiste mensen.
 
-AEM Forms biedt Forms Workspace, een mobiele toepassing waarmee uw digitale bedrijfsprocessen worden uitgebreid naar mobiele apparaten. Met de Forms Workspace kunt u zelfs offline gegevens verzamelen en opnemen. Forms Workspace maakt gebruik van de mogelijkheden van uw mobiele apparaat en biedt u de mogelijkheid foto&#39;s, video&#39;s en gegevens zoals tijdstempels en andere informatie vast te leggen. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
+AEM Forms biedt Forms Workspace, een mobiele toepassing die uw digitale bedrijfsprocessen uitbreidt tot mobiele apparaten. Met Forms Workspace kunt u zelfs gegevens verzamelen en opnemen als u offline bent. In Forms Workspace worden de mogelijkheden van uw mobiele apparaat benut en kunt u foto&#39;s, video&#39;s en gegevensverzamelingen vastleggen, zoals tijdstempels en andere informatie. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
 
 Met name voor mensen in het veld is het handig om gegevens offline vast te leggen en deze de volgende keer dat u online terugkeert, te synchroniseren. Het verbetert productiviteit en vermindert fouten.
 
@@ -99,7 +102,7 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 
 Een belangrijke component van een efficiënte zelfbedienings digitale ervaring moet geschikte, gepersonaliseerde informatie communiceren die de gebruikers van overal, en op om het even welk apparaat kunnen toegang hebben. De gepersonaliseerde en geschikte mededelingen kunnen zowel omzettingspercentages als gebruikerstevredenheid verbeteren.
 
-Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerservaringen maken door documentsjablonen aan te passen, door informatie van back-endprocessen op te nemen en interactieve componenten op te nemen. Een intuïtieve gebruikersinterface helpt niet-technische gebruikers bedrijfsregels ontwikkelen die besluiten wanneer om een mededeling te produceren die op een onderzoek wordt gebaseerd, of een user-generated reactie in werking te stellen.
+Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerservaring creëren door documentsjablonen aan te passen, door informatie van back-endprocessen op te nemen en interactieve componenten op te nemen. Een intuïtieve gebruikersinterface helpt niet-technische gebruikers bedrijfsregels ontwikkelen die besluiten wanneer om een mededeling te produceren die op een onderzoek wordt gebaseerd, of een user-generated reactie in werking te stellen.
 
 Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen gemakkelijk op meerdere kanalen worden afgeleverd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aankoop van extra services.
 
@@ -110,7 +113,7 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 * Ondersteuning voor documentlevering op aanvraag of in batches via meerdere kanalen, waaronder web, e-mail en papier
 * Controletrails met wijzigingshistorie
 * Ondersteuning voor digitale handtekeningen om de integriteit van de inhoud en de identiteit van de ondertekenaar te valideren
-* Invoegtoepassing voor documentbeveiliging voor AEM Forms inclusief codering, gebruiksbeleid, bijhouden en controleren
+* Invoegtoepassing voor documentbeveiliging voor AEM Forms, inclusief codering, gebruiksbeleid, bijhouden en controleren
 
 ![](do-not-localize/layout-02.png)
 

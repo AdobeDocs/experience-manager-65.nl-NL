@@ -1,8 +1,8 @@
 ---
-title: Richtlijnen voor het oplossen van problemen in de werkruimte van AEM Forms
-seo-title: Richtlijnen voor het oplossen van problemen in de werkruimte van AEM Forms
-description: Logboeken inschakelen en foutopsporing gebruiken in browser om de werkruimte van AEM Forms problemen op te lossen.
-seo-description: Logboeken inschakelen en foutopsporing gebruiken in browser om de werkruimte van AEM Forms problemen op te lossen.
+title: Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte
+seo-title: Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte
+description: Logboeken inschakelen en foutopsporing gebruiken in browser om problemen in de AEM Forms-werkruimte op te lossen.
+seo-description: Logboeken inschakelen en foutopsporing gebruiken in browser om problemen in de AEM Forms-werkruimte op te lossen.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
 
-# Richtlijnen voor het oplossen van problemen in de werkruimte van AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-In dit artikel wordt beschreven hoe u fouten in de werkruimte van AEM Forms kunt opsporen door logboekregistratie in te schakelen en foutopsporing te gebruiken in een browser. Hierin worden ook enkele algemene problemen beschreven die u kunt tegenkomen wanneer u de werkruimte van AEM-formulieren en de bijbehorende werkruimten gebruikt.
+In dit artikel wordt beschreven hoe u fouten in de AEM Forms-werkruimte kunt opsporen door logboekregistratie in te schakelen en foutopsporing te gebruiken in een browser. Hierin worden ook enkele algemene problemen beschreven die u kunt tegenkomen bij het gebruik van de AEM Forms-werkruimte en de bijbehorende oplossingen.
 
-## Kan het werkruimtenpakket AEM Forms niet installeren {#unable-to-install-aem-forms-workspace-package}
+## Kan AEM Forms-werkruimtepakket {#unable-to-install-aem-forms-workspace-package} niet installeren
 
-Nadat u de patch hebt geïnstalleerd, opent u de werkruimte van AEM Forms. Als u de fout Geen bron gevonden tegenkomt, opent u de CRX Package Manager en installeert u het `adobe-lc-workspace-pkg-<version>.zip` pakket opnieuw.
+Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de fout Geen bron gevonden tegenkomt, opent u de CRX Package Manager en installeert u het `adobe-lc-workspace-pkg-<version>.zip`-pakket opnieuw.
 
-Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`:
+Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` optreedt:
 
 1. Meld u aan bij CRX DE List. De standaard-URL is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Verwijder het volgende knooppunt:
@@ -34,15 +37,15 @@ Voer tijdens het installeren van het pakket de volgende stappen uit als er een f
 1. Zoek en installeer het `adobe-lc-workspace-pkg-[version].zip` pakket.
 1. Start de toepassingsserver opnieuw.
 
-## Logboekregistratie van AEM-werkruimten {#aem-forms-workspace-nbsp-logging}
+## Logboekregistratie van AEM Forms-werkruimte {#aem-forms-workspace-nbsp-logging}
 
 U kunt logboeken op diverse niveaus produceren om het optimale oplossen van problemen van fouten toe te laten. Bijvoorbeeld, in een complexe toepassing, helpt het registreren op componentenniveau bij het zuiveren en het oplossen van problemen specifieke componenten.
 
-In de werkruimte van AEM-formulieren:
+In de AEM Forms-werkruimte:
 
-* Als u de logboekgegevens over een specifiek componentbestand wilt opvragen, voegt u deze toe `/log/<ComponentFile>/<LogLevel>` aan de URL en drukt u op `Enter`. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
+* Als u de logboekgegevens over een specifiek componentbestand wilt opvragen, voegt u `/log/<ComponentFile>/<LogLevel>` toe aan de URL en drukt u op `Enter`. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
 
-* Als u logboekgegevens van alle deelbestanden wilt opvragen, voegt u deze toe `/log/all/trace` aan de URL en drukt u op `Enter`.
+* Om logboekinformatie van alle componentendossiers te krijgen, voeg `/log/all/trace` in URL toe, en druk `Enter`.
 
 * Logbestandsindeling: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -52,7 +55,7 @@ In de werkruimte van AEM-formulieren:
 
 * Het logboekniveau dat door gebruiker wordt geplaatst wordt gehandhaafd slechts voor die browser zitting. Wanneer de gebruiker de pagina vernieuwt, wordt het logboekniveau geplaatst aan zijn aanvankelijke waarde voor alle componenten.
 
-### Lijst met deelbestanden in de werkruimte van AEM-formulieren {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Lijst met deelbestanden in de AEM Forms-werkruimte {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table>
  <tbody>
@@ -139,7 +142,7 @@ In de werkruimte van AEM-formulieren:
  </tbody>
 </table>
 
-### Logniveaus beschikbaar in de werkruimte van AEM-formulieren {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Logniveaus beschikbaar in de werkruimte van AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAAL
 * FOUT
@@ -153,9 +156,9 @@ In de werkruimte van AEM-formulieren:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **Foutopsporing in IE**: Voor foutopsporing in de werkruimte voor AEM-formulieren in IE raadpleegt u: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Foutopsporing in Firefox**: Er zijn verschillende invoegtoepassingen beschikbaar voor foutopsporing in scripts en stijlen in Firefox. Firebug is bijvoorbeeld een hulpprogramma voor foutopsporing ([https://getfirebug.com](https://getfirebug.com)).
 
@@ -163,19 +166,19 @@ Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
 1. PDF-formulier wordt niet gegenereerd of verzonden in Google Chrome.
 
-   1. Installeer de insteekmodule Adobe® Reader®.
+   1. Installeer de Adobe® Reader® plug-in.
    1. Open chrome://plugins in Chrome om beschikbare plug-ins weer te geven.
    1. Schakel de insteekmodule Chrome PDF Viewer uit en schakel de insteekmodule Adobe Reader in.
 
 1. SWF-formulier of -hulplijn wordt niet weergegeven in Google Chrome.
 
    1. Open chrome://plugins in Chrome om beschikbare plug-ins weer te geven.
-   1. Zie details voor de insteekmodule Adobe Flash® Player.
-   1. PepperFlash uitschakelen onder de insteekmodule Adobe Flash Player.
+   1. Zie details voor Adobe Flash® Player plug-in.
+   1. PepperFlash uitschakelen onder Adobe Flash Player-plug-in.
 
 1. Ik heb de werkruimte van AEM Forms aangepast, maar ik kan de wijzigingen niet zien.
 
-   Wis de cache van uw browser en open de werkruimte van AEM Forms.
+   Wis het cachegeheugen van uw browser en open vervolgens de AEM Forms-werkruimte.
 
 1. Wat moet de gebruiker doen om ervoor te zorgen dat het formulier wordt weergegeven in HTML wanneer het wordt geopend in een desktopcomputer?
 
@@ -189,6 +192,6 @@ Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
    Meld u af bij de andere formuliertoepassing en meld u vervolgens aan bij de werkruimte.
 
-1. Als HTML-formulieren in de werkruimte van AEM-formulieren worden weergegeven met behulp van proceseigenschappen in hun ontwerp, geeft u de knop Verzenden in het formulier weer.
+1. In HTML-formulieren die gebruikmaken van proceseigenschappen in hun ontwerp, wordt de knop Verzenden in het formulier weergegeven wanneer deze worden weergegeven in de AEM Forms-werkruimte.
 
-   Wanneer u formulieren ontwerpt en proceseigenschappen gebruikt, wordt een knop Verzenden toegevoegd aan het formulier. Wanneer de knop Verzenden als PDF wordt weergegeven in de werkruimte van AEM-formulieren, is deze niet zichtbaar voor de eindgebruiker. Wanneer echter een HTML-formulier wordt weergegeven in de werkruimte van AEM Forms, is de knop Verzenden zichtbaar voor de eindgebruiker. Als u op deze knop Verzenden klikt in het formulier, wordt er geen actie gestart. Als u klikt op de knop Verzenden onder aan de werkruimte voor AEM-formulieren, buiten het formulier, wordt de taak voltooid.
+   Wanneer u formulieren ontwerpt en proceseigenschappen gebruikt, wordt een knop Verzenden toegevoegd aan het formulier. Als de PDF in de AEM Forms-werkruimte wordt gerenderd, is de knop Verzenden niet zichtbaar voor de eindgebruiker. Wanneer echter een HTML-formulier wordt weergegeven in de AEM Forms-werkruimte, is de knop Verzenden zichtbaar voor de eindgebruiker. Als u op deze knop Verzenden klikt in het formulier, wordt er geen actie gestart. Als u klikt op de knop Verzenden onder aan de AEM Forms-werkruimte, buiten het formulier, wordt de taak voltooid.

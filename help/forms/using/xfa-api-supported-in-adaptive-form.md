@@ -29,9 +29,9 @@ Adaptieve formulieren bieden ondersteuning voor verschillende XFA-gebeurtenissen
 
 Wanneer een adaptief formulier wordt gemaakt op basis van een XDP-bestand, worden de eigenschappen, gebeurtenissen en validaties automatisch ingevuld in de gebruikersinterface van het formulierontwerp. Auteurs van formulieren kunnen sommige van deze elementen echter overschrijven om een andere ervaring te creëren.
 
-Dit artikel bevat een lijst met ondersteunde XFA-gebeurtenissen, -eigenschappen en -validaties die in adaptieve formulieren worden ondersteund, en uitleg hoe u deze in adaptieve formulieren kunt overschrijven.
+In dit artikel worden ondersteunde XFA-gebeurtenissen, -eigenschappen en -validaties in adaptieve formulieren weergegeven en wordt uitgelegd hoe u deze in adaptieve formulieren kunt overschrijven.
 
-## Ondersteunde XFA-elementen en hun toewijzing in adaptieve formulieren {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Ondersteunde XFA-elementen en hun toewijzing in adaptieve vormen {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Fields {#fields}
 
@@ -141,7 +141,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de korte beschrijvingseigenschap in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>bijschrift<em> (alle veldtypen)</em></p> </td>
+   <td><p>caption<em> (alle veldtypen)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Title in adaptieve vorm.</p> </td>
   </tr>
   <tr>
@@ -157,23 +157,23 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Eigenschap toegewezen aan opties in adaptieve vorm. U kunt deze negeren met de expressie Opties.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (tekstveld)</em></p> </td>
+   <td><p>maxChar<em> (Tekstveld)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Maximum aantal tekens toegestaan in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>meerdere regels<em> (tekstveld)</em></p> </td>
+   <td><p>multiline<em> (Tekstveld)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere regels toestaan in aangepaste vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (numeriek veld, Decimaal veld)</em></p> </td>
+   <td><p>fracDigit<em> (Numeriek veld, Decimaal veld)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Frac digits in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (numeriek veld, decimaal veld)</em></p> </td>
+   <td><p>leadDigit<em> (Numeriek veld, Decimaal veld)</em></p> </td>
    <td><p>Wordt in adaptieve vorm toegewezen aan de eigenschap Cijfers lead.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (keuzelijst)</em></p> </td>
+   <td><p>multiSelect<em> (Keuzelijst)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Meerdere selecties in aangepaste vorm toestaan.</p> </td>
   </tr>
  </tbody>

@@ -1,8 +1,8 @@
 ---
 title: Aangepaste standalone installatie
 seo-title: Aangepaste standalone installatie
-description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM-instantie.
-seo-description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM-instantie.
+description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
+seo-description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
 uuid: 83fc49d8-2c44-4bb2-988a-f29475066efc
 contentOwner: Tyler Rushton
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,25 +12,28 @@ discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+workflow-type: tm+mt
+source-wordcount: '1623'
+ht-degree: 0%
 
 ---
 
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
-In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een zelfstandige AEM-instantie installeert. U kunt ook [Storage Elements](/help/sites-deploying/storage-elements-in-aem-6.md) lezen voor meer informatie over het kiezen van het back-end opslagtype na de nieuwe installatie van AEM 6.
+In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een zelfstandige AEM installeert. U kunt ook [Opslagelementen](/help/sites-deploying/storage-elements-in-aem-6.md) lezen voor meer informatie over het kiezen van het back-end opslagtype na de nieuwe installatie van AEM 6.
 
-## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
+## Het Aantal van de Haven veranderen door het Dossier {#changing-the-port-number-by-renaming-the-file} anders te noemen
 
 De standaardpoort voor AEM is 4502. Als die haven niet beschikbaar of reeds in gebruik is, vormt QuickStart automatisch om het eerste beschikbare havenaantal als volgt te gebruiken: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
 
-U kunt het poortnummer ook instellen door de naam van het snelstartbestand te wijzigen, zodat de bestandsnaam het poortnummer bevat. bijvoorbeeld, `cq5-publish-p4503.jar` of `cq5-author-p6754.jar`.
+U kunt het poortnummer ook instellen door de naam van het snelstartbestand te wijzigen, zodat de bestandsnaam het poortnummer bevat. bijvoorbeeld `cq5-publish-p4503.jar` of `cq5-author-p6754.jar`.
 
 Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de naam van het snelstartjar-bestand:
 
 * Wanneer u de naam van het bestand wijzigt, moet het beginnen met `cq;` zoals in `cq5-publish-p4503.jar`.
 
-* U wordt aangeraden *altijd* een voorvoegsel van het poortnummer toe te voegen aan -p. zoals in cq5-publish-p4503.jar of cq5-auteurp6754.jar.
+* Het wordt aanbevolen dat u *altijd* het poortnummer met -p vastlegt. zoals in cq5-publish-p4503.jar of cq5-auteurp6754.jar.
 
 >[!NOTE]
 >
@@ -38,47 +41,48 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 >
 >* het havenaantal moet 4 of 5 cijfers zijn
 >* deze cijfers moeten na een streepje komen
->* als er andere cijfers in filename zijn, dan moet het havenaantal met vooraf worden bepaald `-p`
+>* als er andere cijfers in filename zijn, dan moet het havenaantal met `-p` worden vooraf bepaald
 >* het voorvoegsel &quot;cq5&quot; aan het begin van de bestandsnaam wordt genegeerd
+
 >
 
 
 
 >[!NOTE]
 >
->U kunt het havenaantal ook veranderen door de `-port` optie in het beginbevel te gebruiken.
+>U kunt het havenaantal ook veranderen door `-port` optie in het beginbevel te gebruiken.
 
-### Overwegingen bij Java 11 {#java-considerations}
+### Java 11 Overwegingen {#java-considerations}
 
 Als u Oracle Java 11 uitvoert (of doorgaans versies van Java nieuwer dan 8), moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start.
 
-* Het volgende - de schakelaars moeten worden toegevoegd om verwante bezinningstoegang te verhinderen WARNING berichten in `-add-opens``stdout.log`
+* Het volgende - `-add-opens` schakelaars moet worden toegevoegd om verwante bezinning te verhinderen toegang WAARSCHUWING berichten in `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Bovendien, moet u gebruik van de `-XX:+UseParallelGC` schakelaar maken om het even welke potentiële prestatieskwesties te verlichten.
+* Bovendien, moet u gebruik van `-XX:+UseParallelGC` schakelaar maken om het even welke potentiële prestatieskwesties te verlichten.
 
-Hieronder ziet u hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
+Hieronder ziet u een voorbeeld van hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
 
 ```shell
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, zorg ervoor het volgende bezit aan **waar** onder wordt geplaatst `sling.properties`:
+Ten slotte, als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, zorg ervoor het volgende bezit aan **true** onder `sling.properties` wordt geplaatst:
 
 * `felix.bootdelegation.implicit`
 
-## Modi uitvoeren {#run-modes}
+## Modi {#run-modes} uitvoeren
 
-**Met de uitvoermodi** kunt u uw AEM-instantie instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet enz. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud is gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
+**Met de** modus Uitvoeren kunt u uw AEM instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet enz. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud is gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
 
 * [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
 
 ## Een leverancier voor het installeren van bestanden toevoegen {#adding-a-file-install-provider}
 
-Standaard `crx-quickstart/install` wordt de map gecontroleerd op bestanden.
+Standaard wordt de map `crx-quickstart/install` gecontroleerd op bestanden.
 Deze map bestaat niet, maar kan eenvoudig bij uitvoering worden gemaakt.
 
 Als een bundel, configuratie of inhoudspakket in deze folder wordt gezet, wordt het automatisch opgenomen en geïnstalleerd. Als het wordt verwijderd, wordt het verwijderd.
@@ -88,34 +92,35 @@ Dit is vooral interessant voor verschillende gebruiksgevallen:
 
 * Tijdens de ontwikkeling, zou het gemakkelijker kunnen zijn om iets in het dossiersysteem te zetten.
 * Als er iets mis gaat, zijn de webconsole en de opslagplaats niet bereikbaar. Met dit kunt u extra bundels in deze folder zetten en zij zouden moeten worden geïnstalleerd.
-* De `crx-quickstart/install` map kan worden gemaakt voordat de snelstartprocedure wordt gestart en er kunnen extra pakketten worden geplaatst.
+* De map `crx-quickstart/install` kan worden gemaakt voordat de snelstartprocedure wordt gestart en er kunnen extra pakketten worden geplaatst.
 
 >[!NOTE]
 >
->Zie ook [Hoe te om de pakketten van CRX automatisch op serveropstarten](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden te installeren.
+>Zie ook [Hoe te om pakketten CRX op serveropstarten automatisch te installeren](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) voor voorbeelden.
 
 ## Adobe Experience Manager installeren en starten als Windows-service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
->Ben zeker om de volgende procedure uit te voeren terwijl het programma werd geopend als Beheerder of begin/stel deze stappen in werking gebruikend de **Looppas als de contextmenuselectie van de Beheerder** .
+>Ben zeker om de volgende procedure terwijl het programma geopend als Beheerder uit te voeren of begin/stel deze stappen in werking gebruikend **Looppas als Beheerder** context-menuselectie.
 >
->Aangemeld worden als een gebruiker met beheerdersrechten is **onvoldoende**. Als u niet als Beheerder wordt aangemeld wanneer het voltooien van deze stappen, ontvangt u **Toegelaten** fouten.
+>Wordt aangemeld als een gebruiker met beheerdersrechten is **onvoldoende**. Als u niet als Beheerder wanneer het voltooien van deze stappen wordt aangemeld ontvangt u **Toegang Afgewezen** fouten.
 
-AEM installeren en starten als Windows-service:
+Om AEM als dienst van Vensters te installeren en te beginnen:
 
 1. Open het bestand crx-quickstart\opt\helpers\instsrv.bat in een teksteditor.
 1. Als u een 64-bits Windows-server configureert, vervangt u alle exemplaren van prunsrv door een van de volgende opdrachten, afhankelijk van het besturingssysteem:
 
    * prunsrv_amd64
    * prunsrv_ia64
+
    Dit bevel haalt het aangewezen manuscript aan dat de de dienstdaemon van Vensters in Java met 64 bits in plaats van Java met 32 bits begint.
 
-1. Vergroot de maximale heapgrootte en de PermGen JVM-parameters om te voorkomen dat het proces in meer dan één proces wordt vervormd. Zoek de `set jvm_options` opdracht en stel de waarde als volgt in:
+1. Vergroot de maximale heapgrootte en de PermGen JVM-parameters om te voorkomen dat het proces in meer dan één proces wordt vervormd. Zoek de opdracht `set jvm_options` en stel de waarde als volgt in:
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
-1. Open de Herinnering van het Bevel, verander de huidige folder in crx-quickstart/opt/helpers omslag van de installatie AEM, en ga het volgende bevel in om de dienst tot stand te brengen:
+1. Opdrachtprompt openen, de huidige map wijzigen in de map crx-quickstart/opt/helpers van de AEM-installatie en de volgende opdracht invoeren om de service te maken:
 
    `instsrv.bat cq5`
 
@@ -124,12 +129,14 @@ AEM installeren en starten als Windows-service:
 1. Start de service op een van de volgende manieren:
 
    * Klik in het configuratiescherm Services op cq5 en klik op Start.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
-   * Typ in de opdrachtregel het begin cq5 van het net.
+   * Typ in de opdrachtregel het begin cq5 van het netwerk.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser bijvoorbeeld naar AEM `https://localhost:4502` om AEM te gaan gebruiken.
+1. De vensters wijst erop dat de dienst loopt. AEM wordt gestart en het uitvoerbare bestand van de prunsrv wordt weergegeven in Taakbeheer. Navigeer in uw webbrowser naar AEM, bijvoorbeeld `https://localhost:4502` om AEM te gebruiken.
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -139,9 +146,9 @@ AEM installeren en starten als Windows-service:
 
 >[!NOTE]
 >
->Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` Configuratiebeheer.
+>Wanneer het installeren van AEM als dienst, moet u de absolute weg voor de logboekfolder in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` van de Manager van de Configuratie verstrekken.
 
-Als u de service wilt verwijderen, klikt u op **Stoppen** in het configuratiescherm **Services** of op de opdrachtregel. Navigeer vervolgens naar de map en typ `instsrv.bat -uninstall cq5`. De service wordt verwijderd uit de lijst in het configuratiescherm **Services** of uit de lijst in de opdrachtregel wanneer u typt `net start`.
+Als u de service wilt verwijderen, klikt u op **Stop** in het configuratiescherm **Services** of op de opdrachtregel, navigeert u naar de map en typt u `instsrv.bat -uninstall cq5`. De service wordt verwijderd uit de lijst in het configuratiescherm **Services** of uit de lijst in de opdrachtregel wanneer u `net start` typt.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -249,7 +256,7 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer u AEM op een Amazon Elastic Compute Cloud (EC2)-instantie installeert en op de EC2-instantie publiceert, wordt de Author-instantie correct geïnstalleerd door de procedure voor het [installeren van instanties van AEM Manager](#installinginstancesofaemmanager)te volgen. de instantie Publish wordt echter Auteur.
+Wanneer u AEM installeert op een Amazon Elastic Compute Cloud (EC2)-instantie, als u zowel de auteur installeert als op het EC2-exemplaar publiceert, wordt de Auteur-instantie correct geïnstalleerd door de procedure op [Instanties van AEM Manager](#installinginstancesofaemmanager) te volgen; de instantie Publish wordt echter Auteur.
 
 Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
 
@@ -261,7 +268,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
 
    >[!NOTE]
    >
-   >Als u de modus wijzigt **nadat** u de instantie de eerste keer hebt gestart, kunt u de runmode niet wijzigen.
+   >Als u de modus **na** de eerste keer start, kunt u de runmode niet wijzigen.
 
 1. Start de instantie door deze uit te voeren:
 
@@ -271,9 +278,9 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
 
    >[!CAUTION]
    >
-   >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM-upgrades mislukken.
+   >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM upgrades mislukken.
 
-1. Open in de map **bin** het **beginscript** en controleer de volgende sectie:
+1. Open in de map **bin** het script **start** en controleer de volgende sectie:
 
    ```xml
    # runmode(s)
@@ -282,7 +289,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    fi
    ```
 
-1. Wijzig de runmode om het bestand te **publiceren** en op te slaan.
+1. Wijzig de runmode in **publish** en sla het bestand op.
 
    ```xml
    # runmode(s)
@@ -291,35 +298,35 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    fi
    ```
 
-1. Stop de instantie en begin het opnieuw door het **beginmanuscript in werking te stellen** .
+1. Stop de instantie en begin het opnieuw door het **start** manuscript in werking te stellen.
 
-## De installatie controleren {#verifying-the-installation}
+## Installatie controleren {#verifying-the-installation}
 
 De volgende verbindingen kunnen worden gebruikt om te verifiëren dat uw installatie operationeel is (alle voorbeelden zijn op de basis dat de instantie op haven 8080 van localhost loopt, dat CRX onder /crx en Launchpad onder /) geïnstalleerd is:
 
 * `https://localhost:8080/crx/de`
-De CRXDE Lite console.
+De CRXDE Lite-console.
 
 * `https://localhost:8080/system/console`
 De webconsole.
 
 ## Handelingen na installatie {#actions-after-installation}
 
-Hoewel er veel mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
+Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties moeten worden ondernomen, of minstens onmiddellijk na installatie herzien:
 
-* Raadpleeg de [beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voor taken die nodig zijn om te controleren of uw systeem veilig blijft.
-* Controleer de lijst met standaardgebruikers en -groepen die met AEM WCM zijn geïnstalleerd. Controleer of u actie wilt ondernemen op andere accounts. Zie [Beveiliging en Gebruikersbeheer](/help/sites-administering/security.md) voor meer informatie.
+* Raadpleeg [Beveiligingschecklist](/help/sites-administering/security-checklist.md) voor taken die vereist zijn om ervoor te zorgen dat uw systeem veilig blijft.
+* Herzie de lijst van standaardgebruikers en groepen die met AEM WCM geïnstalleerd zijn. Controleer of u actie wilt ondernemen op andere accounts. Zie [Beveiliging en gebruikersbeheer](/help/sites-administering/security.md) voor meer informatie.
 
-## Toegang tot CRXDE Lite en de Console van het Web {#accessing-crxde-lite-and-the-web-console}
+## Toegang verkrijgen tot CRXDE Lite en de webconsole {#accessing-crxde-lite-and-the-web-console}
 
-Nadat u AEM WCM hebt gestart, hebt u ook toegang tot:
+Nadat AEM WCM is gestart, hebt u ook toegang tot:
 
-* [CRXDE Lite](#accessing-crxde-lite) - gebruikt om tot de bewaarplaats toegang te hebben en te leiden
-* [De Console](#accessing-the-web-console) van het Web - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
+* [CRXDE Lite](#accessing-crxde-lite)  gebruikt voor toegang tot en beheer van de opslagplaats
+* [De Console](#accessing-the-web-console)  van het Web - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
 
 ### Toegang tot CRXDE Lite {#accessing-crxde-lite}
 
-Als u CRXDE Lite wilt openen, kunt u **CRXDE Lite** selecteren in het welkomstscherm of uw browser gebruiken om naar
+Als u CRXDE Lite wilt openen, selecteert u **CRXDE Lite** in het welkomstscherm of gebruikt u uw browser om naar
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -332,18 +339,20 @@ Bijvoorbeeld:
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
-Als u toegang wilt tot de Adobe CQ-webconsole, selecteert u **OSGi-console** in het welkomstscherm of gebruikt u uw browser om naar
+Als u toegang wilt tot de Adobe CQ Web-console, kunt u **OSGi Console** selecteren in het welkomstscherm of uw browser gebruiken om naar
 
 ```
  https://<host>:<port>/system/console
 ```
 
 Bijvoorbeeld:
-`https://localhost:4502/system/console`of voor de pagina Bundels`https://localhost:4502/system/console/bundles`
+`https://localhost:4502/system/console`
+of voor de pagina Bundles
+`https://localhost:4502/system/console/bundles`
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-Zie Configuratie [OSGi met de Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) van het Web voor verdere details.
+Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -351,14 +360,14 @@ Voor informatie over het behandelen van kwesties die tijdens installatie kunnen 
 
 * [Problemen oplossen](/help/sites-deploying/troubleshooting.md)
 
-## Adobe Experience Manager verwijderen {#uninstalling-adobe-experience-manager}
+## Adobe Experience Manager {#uninstalling-adobe-experience-manager} verwijderen
 
-Aangezien AEM in één map installeert, is er geen hulpprogramma voor het verwijderen nodig. Het verwijderen van de installatie kan eenvoudig zijn: het verwijderen van de gehele installatiemap, hoewel de manier waarop u AEM verwijdert afhankelijk is van wat u wilt bereiken en van de permanente opslag die u gebruikt.
+Aangezien AEM in één map installeert, is een hulpprogramma voor verwijderen niet nodig. Het verwijderen van de installatiemap kan eenvoudig zijn, maar hoe u de installatiemap verwijdert, hangt AEM af van wat u wilt bereiken en van welke permanente opslag u gebruikt.
 
 Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de standaard-TarPM-installatie, worden bij het verwijderen van mappen ook gegevens verwijderd.
 
 >[!NOTE]
 >
->Adobe raadt u ten zeerste aan een back-up van uw opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
+>Adobe raadt u ten zeerste aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory> verwijdert, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de map &lt;cq-installation-directory>/crx-quickstart/repository verwijdert, verplaatst of kopieert u deze naar een andere locatie voordat u de andere mappen verwijdert.
 
-Als uw installatie van AEM externe opslag, bijvoorbeeld, een gegevensbestandserver gebruikt, verwijdert het verwijderen van omslag niet automatisch de gegevens, maar het verwijdert de opslagconfiguratie, die het herstellen van de inhoud JCR moeilijk maakt.
+Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.

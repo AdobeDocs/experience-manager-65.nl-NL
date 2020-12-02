@@ -20,45 +20,45 @@ ht-degree: 20%
 
 # Modellen van contentfragmenten{#content-fragment-models}
 
-Met Content Fragment Models wordt de structuur van de inhoud voor [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)gedefinieerd.
+Met Inhoudsfragmentmodellen wordt de inhoudsstructuur gedefinieerd voor uw [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
-## Enable Content Fragment Models {#enable-content-fragment-models}
+## Modellen van inhoudsfragmenten {#enable-content-fragment-models} inschakelen
 
 >[!CAUTION]
 >
->Als u Modellen van **inhoudsfragmenten** niet inschakelt, is de optie **Maken** niet beschikbaar voor het maken van nieuwe modellen.
+>Als u **Content Fragment Models** niet inschakelt, is de optie **Create** niet beschikbaar voor het maken van nieuwe modellen.
 
 Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 
-* Het gebruik van modellen van inhoudsfragmenten in de [configuratiebrowser inschakelen](/help/sites-administering/configurations.md)
+* Het gebruik van modellen van inhoudsfragmenten inschakelen in de [Configuration Browser](/help/sites-administering/configurations.md)
 * De configuratie toepassen op de map Middelen
 
 ### Modellen van inhoudsfragmenten inschakelen in Configuratiebeheer {#enable-content-fragment-models-in-configuration-manager}
 
-Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragment-model) creëren **moet** u hen eerst toelaten gebruikend de Manager van de Configuratie:
+Om [een nieuw Model van het Fragment van de Inhoud te creëren ](#creating-a-content-fragment-model) u **moet** eerst hen toelaten gebruikend de Manager van de Configuratie:
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 1. Selecteer de locatie die geschikt is voor uw website.
-1. Gebruik **Maken** om het dialoogvenster te openen waarin u:
+1. Gebruik **Maken** om het dialoogvenster te openen, waarin u:
 
-   1. Geef een **titel** op.
-   1. Selecteer Modellen van **inhoudsfragmenten** om het gebruik ervan in te schakelen.
+   1. Geef een **Titel** op.
+   1. Selecteer **Modellen van inhoudsfragmenten** om het gebruik ervan in te schakelen.
 
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selecteer **Maken** om de definitie op te slaan.
 
-### De configuratie toepassen op de middelenmap {#apply-the-configuration-to-your-assets-folder}
+### Pas de Configuratie op uw Omslag van Activa {#apply-the-configuration-to-your-assets-folder} toe
 
-Wanneer de configuratie **globaal** is ingeschakeld voor modellen van inhoudsfragmenten, kunnen alle modellen die gebruikers maken, worden gebruikt in elke map Middelen.
+Wanneer de configuratie **global** is ingeschakeld voor modellen van inhoudsfragmenten, kunnen modellen die gebruikers maken, worden gebruikt in elke map Middelen.
 
 Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met een vergelijkbare map met assets, moet u de verbinding definiëren. U doet dit met behulp van **Configuratie** op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
 
-1. Navigeer naar **Gereedschappen**, **Elementen** en open vervolgens Modellen **inhoudsfragmenten**.
+1. Navigeer naar **Tools**, **Assets** en open **Content Fragment Models**.
 1. Navigeer naar de map die geschikt is voor uw [configuratie](#enable-content-fragment-models).
-1. Gebruik **Maken** om de wizard te openen.
+1. Gebruik **Create** om de wizard te openen.
 
    >[!CAUTION]
    >
@@ -68,9 +68,9 @@ Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met
 
    ![cfm-6420-10](assets/cfm-6420-10.png)
 
-1. Gebruik **Maken** om het lege model op te slaan. Een bericht zal op het succes van de actie wijzen, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Gedaan** om aan de console terug te keren.
+1. Gebruik **Maken** om het lege model op te slaan. Een bericht zal op het succes van de actie wijzen, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Done** om aan de console terug te keren.
 
-## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
+## Het inhoudsfragmentmodel {#defining-your-content-fragment-model} definiëren
 
 Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende inhoudsfragmenten. Gebruikend de modelredacteur kunt u, de vereiste gebieden toevoegen en vormen:
 
@@ -78,10 +78,10 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 >
 >Het bewerken van een bestaand inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
-1. Navigeer naar **Gereedschappen**, **Elementen** en open vervolgens Modellen **inhoudsfragmenten**.
+1. Navigeer naar **Tools**, **Assets** en open **Content Fragment Models**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
-1. Open het vereiste model voor **Bewerken**; gebruik de snelle actie of selecteer het model en de actie op de werkbalk.
+1. Open het vereiste model voor **Edit**; gebruik de snelle actie of selecteer het model en de actie op de werkbalk.
 
    Zodra open de modelredacteur toont:
 
@@ -100,7 +100,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
-   * Nadat een veld aan het model is toegevoegd, worden in het rechterdeelvenster de **eigenschappen** weergegeven die voor dat specifieke gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist. Bijvoorbeeld:
+   * Nadat een veld aan het model is toegevoegd, wordt in het rechterdeelvenster **Eigenschappen** weergegeven die voor dat specifieke gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist. Bijvoorbeeld:
 
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
@@ -112,7 +112,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    * **Onbewerkte tekst**
 
-   Als er geen waarde wordt opgegeven, wordt de standaardwaarde voor **RTF** gebruikt voor dit veld.
+   Indien niet opgegeven, wordt de standaardwaarde **RTF-tekst** gebruikt voor dit veld.
    Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 1. **Een veld verwijderen**
@@ -125,28 +125,28 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
+## Een inhoudsfragmentmodel {#deleting-a-content-fragment-model} verwijderen
 
 >[!CAUTION]
 Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
 
 Een inhoudsfragmentmodel verwijderen:
 
-1. Navigeer naar **Gereedschappen**, **Elementen** en open vervolgens Modellen **inhoudsfragmenten**.
+1. Navigeer naar **Tools**, **Assets** en open **Content Fragment Models**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
-1. Selecteer het model, gevolgd door **Verwijderen** op de werkbalk.
+1. Selecteer het model, gevolgd door **Delete** op de werkbalk.
 
    >[!NOTE]
    Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
-## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
+## Een inhoudsfragmentmodel {#publishing-a-content-fragment-model} publiceren
 
 Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke inhoudsfragmenten worden gepubliceerd.
 
 Een fragmentmodel voor inhoud publiceren:
 
-1. Navigeer naar **Gereedschappen**, **Elementen** en open vervolgens Modellen **inhoudsfragmenten**.
+1. Navigeer naar **Tools**, **Assets** en open **Content Fragment Models**.
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer het model, gevolgd door **Publiceren** op de werkbalk.

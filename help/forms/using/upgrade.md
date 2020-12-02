@@ -1,6 +1,6 @@
 ---
-title: Upgrade naar AEM 6.5-formulieren
-seo-title: Upgrade naar AEM 6.5-formulieren
+title: Upgrade naar AEM 6,5 Forms
+seo-title: Upgrade naar AEM 6,5 Forms
 description: U kunt een directe upgrade uitvoeren van AEM 6.3 Forms en AEM 6.4 Forms naar AEM 6.5 Forms.
 seo-description: U kunt een directe upgrade uitvoeren van AEM 6.3 Forms en AEM 6.4 Forms naar AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
@@ -18,26 +18,26 @@ ht-degree: 0%
 ---
 
 
-# Upgrade naar AEM 6.5-formulieren{#upgrade-to-aem-forms}
+# Upgrade naar AEM 6.5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms raadpleegt u het overzichtsdocument [](../../forms/using/whats-new.md)Nieuwe functies.
+AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Zie [Samenvattingsdocument over nieuwe functies](../../forms/using/whats-new.md) voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms.
 
-U kunt een upgrade uitvoeren op uw bestaande installatie van LiveCycle of AEM Forms om nieuwe mogelijkheden en verbeteringen te verkrijgen die in AEM 6.5 Forms worden aangeboden, terwijl de bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
+U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
-Het volgende diagram toont de beschikbare verbeteringswegen voor AEM Forms op OSGi:
+Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms op OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 
-* AEM 6.3 Formulieren op OSGi
-* AEM 6.4 Formulieren op OSGi
+* AEM 6.3 Forms over OSGi
+* AEM 6.4 Forms over OSGi
 
 U kunt een multi-hopverbetering van ook uitvoeren
 
-* AEM 6.0-formulieren op OSGi
-* AEM 6.1 Formulieren op OSGi
-* AEM 6.2 Formulieren op OSGi
+* AEM 6,0 Forms op OSGi
+* AEM 6.1 Forms over OSGi
+* AEM 6.2 Forms over OSGi
 
 In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE weergegeven:
 
@@ -45,17 +45,17 @@ In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE
 
 U kunt een directe upgrade uitvoeren vanaf:
 
-* AEM 6.3 Formulieren in JEE
-* AEM 6.4-formulieren in JEE
+* AEM 6.3 Forms in juni
+* AEM 6.4 Forms in juni
 
 U kunt een multi-hopverbetering van ook uitvoeren
 
 * LiveCycle ES2
 * LiveCycle ES3
 * LiveCycle ES4 SP1
-* AEM 6.0-formulieren in JEE
-* AEM 6.1 Formulieren in JEE
-* AEM 6.2-formulieren in JEE
+* AEM 6,0 Forms in juni
+* AEM 6.1 Forms in juni
+* AEM 6.2 Forms in juni
 
 <!--
 [Work in Progress]

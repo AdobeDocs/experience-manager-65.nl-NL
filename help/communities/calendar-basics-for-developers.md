@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# Essentiële elementen van agenda {#calendar-essentials}
+# Essentiële elementen voor kalender {#calendar-essentials}
 
 Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -66,18 +66,18 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
 ### Kalenderfunctie {#calendar-function}
 
-Een community-sitestructuur die de functie [](functions.md#calendar-function) Kalender bevat, heeft een geconfigureerde `calendar` component. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group)van een lid.
+Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) bevat, heeft een geconfigureerde `calendar`-component. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group).
 
 ### Toegang tot agendaberichten (UGC) {#accessing-calendar-posts-ugc}
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - introductie en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
+* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
 

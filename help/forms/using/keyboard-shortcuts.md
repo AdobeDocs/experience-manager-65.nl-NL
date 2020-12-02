@@ -57,7 +57,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 
 
-## Thema-editor  {#themeeditor}
+## Thema-editor {#themeeditor}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -71,7 +71,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
 
-## Inhoudsbrowser  {#contentbrowser}
+## Inhoudsbrowser {#contentbrowser}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -89,10 +89,10 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
 
-* Een [tekstelement](texts-interactive-communications.md) maken of bewerken
-* Een tekstmodule bewerken nadat u op het betreffende pictogram Bewerken ( ![bewerkingsmodule](assets/edittextmodule.png)) hebt getikt tijdens het [maken van een overeenkomst](/help/forms/using/create-correspondence.md).
+* Een [Text](texts-interactive-communications.md)-element maken of bewerken
+* Een tekstmodule bewerken nadat op het betreffende bewerkingspictogram ( ![edittextmodule](assets/edittextmodule.png)) is getikt wanneer [een correspondentie maakt](/help/forms/using/create-correspondence.md).
 
-### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}
+### Tekst selecteren en de cursor verplaatsen rond {#text-selection-and-moving-the-cursor-around}
 
 <table> 
  <tbody>
@@ -286,7 +286,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
  </tbody>
 </table>
 
-### Een woord verwijderen {#deleting-a-word}
+### Een woord {#deleting-a-word} verwijderen
 
 <table> 
  <tbody>
@@ -308,7 +308,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
  </tbody>
 </table>
 
-### Kopiëren en plakken {#copy-and-paste}
+### {#copy-and-paste} kopiëren en plakken
 
 <table> 
  <tbody>

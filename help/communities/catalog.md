@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # Catalogusonderdeel {#catalog-feature}
 
-De [`Enablement Assignments`](assignments.md) en de `Enablement Catalog` componenten die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van een [toelatingsgemeenschap](overview.md#enablement-community).
+De [`Enablement Assignments`](assignments.md) en `Enablement Catalog` componenten die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van [enablement community](overview.md#enablement-community).
 
-De `Enablement Catalog` component staat communautaire leden toe om tot een catalogus van [enablement middelen](resources.md)toegang te hebben. Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de lijst met activeringsbronnen in een catalogus (zie [Tags toewijzen](tag-resources.md)).
+Met de component `Enablement Catalog` hebben leden van de gemeenschap toegang tot een catalogus met [enablement resources](resources.md). Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de lijst met machtigingsbronnen in een catalogus (zie [Tags toewijzen van bronnen van Enablement](tag-resources.md)).
 
-Van het [Begonnen Worden met AEM Communities voor zelfstudie Enablement](getting-started-enablement.md) , zie de mening van een lid van taken en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
+Van [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in [Ervaar de Gepubliceerde Plaats](enablement-published-site.md) sectie.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina Essentiële elementen [catalogus](catalog-developer-essentials.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Catalog Essentials](catalog-developer-essentials.md) voor ontwikkelaars.
 
-De [catalogusfunctie](functions.md#catalog-function) is beschikbaar wanneer u een [communitysite](sites-console.md)maakt.
+De [catalogusfunctie](functions.md#catalog-function) is beschikbaar wanneer het creëren van een [communautaire plaats](sites-console.md).

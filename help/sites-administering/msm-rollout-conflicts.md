@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: 47b69098a45f774501ebb62ee1a14a8d209ad101
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
 
-# Conflicten MSM-rollout{#msm-rollout-conflicts}
+# MSM-uitrolconflicten{#msm-rollout-conflicts}
 
 Conflicten kunnen optreden als er nieuwe pagina&#39;s met dezelfde paginanaam worden gemaakt in zowel de vertakking Verblauwdrukken als een afhankelijke vertakking voor live kopieën.
 
 Dergelijke conflicten moeten bij de uitrol worden afgehandeld en opgelost.
 
-## Conflictbehandeling {#conflict-handling}
+## Conflictverwerking {#conflict-handling}
 
 Wanneer conflicterende pagina&#39;s bestaan (in de blauwdruk en de levende exemplaartakken), staat MSM u toe om te bepalen hoe (of zelfs als) zij zouden moeten worden behandeld.
 
@@ -41,7 +44,7 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
 
 * blauwdruk: `/b`
 
-   een basispagina; met 1 onderliggende pagina, bp-niveau-1.
+   Een master pagina; met 1 onderliggende pagina, bp-niveau-1.
 
 * live kopie: `/b`
 
@@ -66,16 +69,16 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (handmatig gemaakt in actieve kopie-vertakking)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (bevat de inhoud van de pagina<br /> onderliggende-niveau-1 die handmatig is gemaakt in de actieve kopieervertakking)</td>
+   <td><code> /lc-level-1</code> <br /> (bevat de inhoud van pagina<br /> kind-niveau-1 die manueel in de levende exemplaartak werd gecreeerd)</td>
   </tr>
  </tbody>
 </table>
 
-## Rolloutbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
+## Uitrolbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
-Dit wordt gedaan gebruikend [configuratie](/help/sites-deploying/configuring-osgi.md) OSGi van **Dag CQ WCM Rollout Manager**:
+Dit wordt gedaan gebruikend [OSGi configuratie](/help/sites-deploying/configuring-osgi.md) van **Dag CQ WCM Rollout Manager**:
 
 * **Conflict verwerken met handmatig gemaakte pagina**&#39;s:
 
@@ -83,11 +86,11 @@ Dit wordt gedaan gebruikend [configuratie](/help/sites-deploying/configuring-osg
 
    Ingesteld op true als de rollout manager conflicten moet verwerken van een pagina die in de live kopie is gemaakt met een naam die in de blauwdruk voorkomt.
 
-AEM heeft [vooraf bepaald gedrag wanneer het conflictbeheer is gedeactiveerd](#behavior-when-conflict-handling-deactivated).
+AEM heeft [vooraf gedefinieerd gedrag wanneer het conflictbeheer is gedeactiveerd](#behavior-when-conflict-handling-deactivated).
 
 ## Conflicthandlers {#conflict-handlers}
 
-AEM gebruikt conflictmanagers om het even welke paginaconflicten op te lossen die wanneer het rollen van inhoud van een blauwdruk aan een levende kopie bestaan. De naam van pagina&#39;s wijzigen is een (de gebruikelijke) methode om dergelijke conflicten op te lossen. Er kunnen meerdere conflicthandlers operationeel zijn, zodat u verschillende gedragingen kunt selecteren.
+AEM gebruikt conflicthandlers om eventuele paginaconflicten op te lossen die bestaan wanneer het rollen van inhoud van een blauwdruk aan een levende kopie. De naam van pagina&#39;s wijzigen is een (de gebruikelijke) methode om dergelijke conflicten op te lossen. Er kunnen meerdere conflicthandlers operationeel zijn, zodat u verschillende gedragingen kunt selecteren.
 
 AEM biedt:
 
@@ -95,23 +98,23 @@ AEM biedt:
 
    * `ResourceNameRolloutConflictHandler`
 
-* De mogelijkheid om een [aangepaste manager](#customized-handlers)uit te voeren.
+* De mogelijkheid om een [aangepaste manager](#customized-handlers) uit te voeren.
 * Het de dienstrangschikkingsmechanisme dat u toestaat om de prioriteit van elke individuele manager te plaatsen. De dienst met het hoogste rangschikken wordt gebruikt.
 
 ### Standaardconflicthandler {#default-conflict-handler}
 
 De standaardconflicthandler:
 
-* Wordt aangeroepen `ResourceNameRolloutConflictHandler`
+* Wordt `ResourceNameRolloutConflictHandler` genoemd
 
 * Met deze handler krijgt de blauwdrukpagina prioriteit.
 * De dienst die voor deze manager rangschikt wordt geplaatst laag ( &quot;d.w.z. onder de standaardwaarde voor het `service.ranking` bezit) aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
 
-Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina voor live kopiëren `/b` wordt verplaatst (binnen de actieve kopieervertakking) naar `/b_msm_moved`.
+Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina `/b` voor live kopiëren wordt verplaatst (binnen de actieve kopieervertakking) naar `/b_msm_moved`.
 
 * live kopie: `/b`
 
-   Wordt verplaatst (binnen de live kopie) naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
+   Wordt verplaatst (binnen de actieve kopie) naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
 
    * `lc-level-1` wordt niet verplaatst.
 
@@ -129,8 +132,8 @@ Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina voor live kopië
    <td><strong>blauwdruk na rollout</strong></td>
    <td><strong>live kopie na rollout</strong><br /> </td>
    <td></td>
-   <td><strong>live kopie na rollout</strong><br /> <br /><br /> </td>
-   <td><strong>publiceren na rollout</strong><br /><br /> </td>
+   <td><strong>live kopie na rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>publiceren na rollout</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
@@ -157,23 +160,23 @@ Aangepaste conflicthandlers kunnen:
 
 * Geef een naam op basis van uw vereisten.
 * worden ontwikkeld/geconfigureerd volgens uw vereisten; bijvoorbeeld, kunt u een manager ontwikkelen zodat de levende exemplaarpagina voorrang wordt gegeven.
-* kan worden ontworpen om worden gevormd gebruikend de configuratie [](/help/sites-deploying/configuring-osgi.md)OSGi; met name:
+* Kan worden ontworpen om worden gevormd gebruikend [OSGi configuratie](/help/sites-deploying/configuring-osgi.md); met name:
 
    * **Serviceklasse**:
 
-      Bepaalt de orde met betrekking tot andere conflicthandlers ( `service.ranking`).
+      Bepaalt de orde met betrekking tot andere conflictmanagers ( `service.ranking`).
 
       De standaardwaarde is 0.
 
-### Gedrag wanneer Conflict afhandelen gedeactiveerd {#behavior-when-conflict-handling-deactivated}
+### Gedrag bij conflictafhandeling gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u de [conflictafhandeling](#rollout-manager-and-conflict-handling) handmatig deactiveert, voert AEM geen actie uit op conflicterende pagina&#39;s (pagina&#39;s die niet conflicteren worden naar behoren geïmplementeerd).
+Als u handmatig [conflictafhandeling](#rollout-manager-and-conflict-handling) deactiveert, onderneemt AEM geen actie op conflicterende pagina&#39;s (pagina&#39;s die niet-conflicterend zijn, worden naar behoren geïmplementeerd).
 
 >[!CAUTION]
 >
->AEM geeft geen aanwijzing dat conflicten worden genegeerd aangezien dit gedrag uitdrukkelijk moet worden gevormd, zodat wordt verondersteld dat het het vereiste gedrag is.
+>AEM geeft geen aanwijzing dat conflicten worden genegeerd omdat dit gedrag expliciet moet worden geconfigureerd, zodat wordt aangenomen dat het vereiste gedrag is.
 
-In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `/b` wordt niet gekopieerd en de pagina met de live kopie `/b` blijft ongewijzigd.
+In dit geval heeft de live kopie in feite voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina `/b` voor live kopiëren wordt ongewijzigd gelaten.
 
 * blauwdruk: `/b`
 
@@ -190,8 +193,8 @@ In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `
  <tbody>
   <tr>
    <td><strong>blauwdruk na rollout</strong></td>
-   <td><strong>live kopie na rollout</strong><br /> <br /><br /> </td>
-   <td><strong>publiceren na rollout</strong><br /><br /> </td>
+   <td><strong>live kopie na rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>publiceren na rollout</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
@@ -206,6 +209,6 @@ In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `
  </tbody>
 </table>
 
-### Servicebeoordelingen {#service-rankings}
+### Servicerendeclaraties {#service-rankings}
 
 De [OSGi](https://www.osgi.org/) de dienstrangschikking kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.

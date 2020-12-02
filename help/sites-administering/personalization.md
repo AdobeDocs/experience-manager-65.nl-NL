@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '1684'
+ht-degree: 0%
 
 ---
 
@@ -70,13 +73,13 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 **Website voor verkoop en distributie**
 
-* Verkoop- en distributiewebsites, zoals Amazon, kunnen een gebruikersprofiel, de verkoopgeschiedenis van de gebruiker en hun browsergeschiedenis combineren en suggesties doen voor wat de gebruiker interesseert.
+* Op verkoop- en distributiewebsites, zoals Amazon, kunnen een gebruikersprofiel, de verkoopgeschiedenis van de gebruiker en de browsergeschiedenis worden gecombineerd om suggesties te doen voor wat de gebruiker interesseert.
 
 **Zoeken in websites**
 
 * Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name wat betreft het weergeven van advertenties.
 
-### Sterkte van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
+### Sterke punten van personalisatie en te overwegen punten {#strengths-of-personalization-and-points-to-consider}
 
 De volgende redenen waarom personalisatie moet worden gebruikt:
 
@@ -128,25 +131,25 @@ Nochtans, kan de toegangscontrole worden gebruikt om een vorm van verpersoonlijk
 
 ## Componenten beschikbaar voor personalisatie {#components-available-for-personalization}
 
-Verschillende componenten worden geleverd met AEM voor personalisatie. Sommige gebruikers kunnen zich aanmelden en hun profielen bewerken, andere (zoals Mijn Gadgets) kunnen gebruikers een specifieke pagina configureren:
+Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebruikers kunnen zich aanmelden en hun profielen bewerken, andere (zoals Mijn Gadgets) kunnen gebruikers een specifieke pagina configureren:
 
 | Titel in Sidetrap | Doel |
 |---|---|
 | Veld voor gecontroleerd wachtwoord | Verzoekt om wachtwoord en bevestiging van wachtwoord. |
 | Gecombineerde aanmelding | Hiermee kan de gebruiker zich aanmelden bij een bestaande account of zich aanmelden voor een nieuwe account. |
-| Formulieradresveld | Een complex veld dat de invoer van een internationaal adres mogelijk maakt. |
-| Formulieren beginnen | Hiermee wordt een formulierdefinitie gestart |
+| Forms-adresveld | Een complex veld dat de invoer van een internationaal adres mogelijk maakt. |
+| Forms beginnen | Hiermee wordt een formulierdefinitie gestart |
 | Forms Captcha | Een veld dat bestaat uit een alfanumeriek woord dat automatisch wordt vernieuwd. De component captcha beschermt websites tegen bots. |
-| Groep selectievakjes voor formulieren | Meerdere items die zijn ingedeeld in een lijst en worden voorafgegaan door selectievakjes. Gebruikers kunnen meerdere selectievakjes selecteren. |
-| Formuliervervolgkeuzelijst | Meerdere items die zijn ingedeeld in een vervolgkeuzelijst. Met de schakeloptie Multi Selectable wordt opgegeven of verschillende elementen in de lijst kunnen worden geselecteerd. |
-| Einde formulier | Hiermee wordt de formulierdefinitie beëindigd. |
-| Formulierbestand uploaden | An upload element that allows the user to upload a file to the server. |
-| Verborgen veld voor formulieren | Dit veld wordt niet weergegeven aan de gebruiker. Het kan worden gebruikt om een waarde aan de cliënt en terug naar de server te vervoeren. Dit veld mag geen beperkingen hebben. |
-| Afbeeldingsknop formulier | Een extra verzendknop voor het formulier dat als afbeelding wordt weergegeven. |
-| Formulierwachtwoordveld | Hetzelfde als tekstveld, maar er is slechts één regel toegestaan en de tekstinvoer van de gebruiker is niet zichtbaar in het veld. |
-| Groep keuzerondjes formulieren | Meerdere items die zijn ingedeeld in een lijst die wordt voorafgegaan door een keuzerondje. Gebruikers mogen slechts één keuzerondje selecteren. |
-| Knop Formulieren verzenden | Een extra verzendknop voor het formulier waarvan de titel als tekst op de knop wordt weergegeven. |
-| Formuliertekstveld | Tekstveld waarin gebruikers gegevens kunnen invoeren. |
+| Forms Checkbox-groep | Meerdere items die zijn ingedeeld in een lijst en worden voorafgegaan door selectievakjes. Gebruikers kunnen meerdere selectievakjes selecteren. |
+| Forms-vervolgkeuzelijst | Meerdere items die zijn ingedeeld in een vervolgkeuzelijst. Met de schakeloptie Multi Selectable wordt opgegeven of verschillende elementen in de lijst kunnen worden geselecteerd. |
+| Forms End | Hiermee wordt de formulierdefinitie beëindigd. |
+| Forms-bestanden uploaden | An upload element that allows the user to upload a file to the server. |
+| Verborgen Forms-veld | Dit veld wordt niet weergegeven aan de gebruiker. Het kan worden gebruikt om een waarde aan de cliënt en terug naar de server te vervoeren. Dit veld mag geen beperkingen hebben. |
+| Forms-afbeeldingsknop | Een extra verzendknop voor het formulier dat als afbeelding wordt weergegeven. |
+| Forms-wachtwoordveld | Hetzelfde als tekstveld, maar er is slechts één regel toegestaan en de tekstinvoer van de gebruiker is niet zichtbaar in het veld. |
+| Forms-keuzerondje | Meerdere items die zijn ingedeeld in een lijst die wordt voorafgegaan door een keuzerondje. Gebruikers mogen slechts één keuzerondje selecteren. |
+| Knop Forms verzenden | Een extra verzendknop voor het formulier waarvan de titel als tekst op de knop wordt weergegeven. |
+| Forms-tekstveld | Tekstveld waarin gebruikers gegevens kunnen invoeren. |
 | Mijn gadgets | Hiermee kunt u een van de beschikbare gadgets opnemen. |
 | Profiel Avatar Photo | Hiermee wordt invoer van een Avatar-foto toegestaan. |
 | Gedetailleerde naam profiel | Invoer van naamdetails, inclusief elementen zoals titel, middelnaam en achtervoegsel, indien vereist. |
@@ -161,11 +164,11 @@ Verschillende componenten worden geleverd met AEM voor personalisatie. Sommige g
 | Cloud labelen | Een labelwolk om een grafisch weergegeven selectie van tags op uw website weer te geven |
 | Teaser | Een stuk inhoud (gewoonlijk een beeld) die op een hoofdpagina wordt getoond om gebruikers tot de onderliggende inhoud &quot;te &quot;teweegbrengen&quot;. |
 
-## Personalisatie en community-inhoud {#personalization-and-community-content}
+## Personalisatie en communautaire inhoud {#personalization-and-community-content}
 
-Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in een publicatiemilieu is ingegaan dat uit veelvoudige instanties AEM ( [publicatielandbouwbedrijf](/help/communities/topologies.md)) bestaat, is één belangrijke kwestie geweest hoe te om UGC over alle instanties te synchroniseren.
+Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in een publicatiemilieu is ingegaan dat uit veelvoudige AEM instanties (a [publiceer landbouwbedrijf](/help/communities/topologies.md)) bestaat, is één belangrijke kwestie geweest hoe te om UGC over alle instanties te synchroniseren.
 
-Met de uitbreiding [AEM Communities 6.1](/help/communities/overview.md) , wordt dit probleem opgelost door een [gemeenschappelijke opslag voor UGC](/help/communities/working-with-srp.md)te gebruiken. Wat personalisatie betreft, omvat de Community Inloggen [ook](/help/communities/social-login.md) sociale inlognaam: bezoekers van de site kunnen zich aanmelden bij Facebook en Twitter.
+Met [AEM Communities 6.1](/help/communities/overview.md) uitbreiding, wordt dit probleem opgelost door een [gemeenschappelijke opslag voor UGC](/help/communities/working-with-srp.md) te gebruiken. Wat personalisatie betreft, bevatten de Community&#39;s [Sociale aanmelding](/help/communities/social-login.md) - de mogelijkheid voor bezoekers van de site om zich aan te melden bij Facebook en Twitter.
 
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 

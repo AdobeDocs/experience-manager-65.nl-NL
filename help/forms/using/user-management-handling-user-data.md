@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Forms-gebruikersbeheer | Gebruikersgegevens verwerken {#forms-user-management-handling-user-data}
+# Forms-gebruikersbeheer | Gebruikersgegevens {#forms-user-management-handling-user-data} verwerken
 
 Gebruikersbeheer is een AEM Forms JEE-component waarmee AEM Forms-gebruikers toegang kunnen krijgen tot AEM Forms en waarmee ze deze kunnen maken, beheren en autoriseren. Gebruikersbeheer gebruikt domeinen als map voor het verkrijgen van gebruikersinformatie. De volgende domeintypen worden ondersteund:
 
@@ -29,7 +29,7 @@ Gebruikersbeheer is een AEM Forms JEE-component waarmee AEM Forms-gebruikers toe
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Gebruikersbeheer slaat gebruikersgegevens op in een database, zoals Mijn SQL, Oracle, MS SQL Server en IBM DB2. Bovendien wordt elke gebruiker die zich minstens één keer heeft aangemeld in Forms-toepassingen op AEM auteur op `https://'[server]:[port]'lc`, gemaakt in AEM opslagplaats. Daarom wordt het gebruikersbeheer opgeslagen in de volgende gegevensopslag:
+Gebruikersbeheer slaat gebruikersgegevens op in een database, zoals Mijn SQL, Oracle, MS SQL Server en IBM DB2. Bovendien wordt de gebruiker die zich minstens één keer heeft aangemeld bij Forms-toepassingen op AEM auteur op `https://'[server]:[port]'lc`, gemaakt in AEM opslagplaats. Daarom wordt het gebruikersbeheer opgeslagen in de volgende gegevensopslag:
 
 * Database
 * AEM
@@ -86,9 +86,9 @@ Gebruikersbeheer slaat gebruikersgegevens op in de volgende databasetabellen:
  </tbody>
 </table>
 
-### AEM {#aem-repository}
+### AEM opslagplaats {#aem-repository}
 
-Gebruikersbeheergegevens voor gebruikers die minstens één keer toegang hebben gekregen tot de Forms-toepassingen onder `https://'[server]:[port]'lc` worden ook in AEM opslagplaats opgeslagen.
+Gebruikersbeheergegevens voor gebruikers die ten minste eenmaal de Forms-toepassingen onder `https://'[server]:[port]'lc` hebben geopend, worden ook in AEM opslagplaats opgeslagen.
 
 ## Gebruikersgegevens openen en verwijderen {#access-and-delete-user-data}
 
@@ -98,7 +98,7 @@ U kunt gegevens van het gebruikersbeheer voor gebruikers in de gebruikersbeheerg
 
 Als u gebruikersgegevens wilt exporteren of verwijderen uit een gebruikersbeheerdatabase, moet u verbinding maken met de database met behulp van een databaseclient en de belangrijkste id opzoeken op basis van sommige PII&#39;s van de gebruiker. Bijvoorbeeld, om belangrijkste identiteitskaart van een gebruiker terug te winnen die een login identiteitskaart gebruikt, stel het volgende `select` bevel op het gegevensbestand in werking.
 
-In het `select` bevel, vervang `<user_login_id>` met login identiteitskaart van de gebruiker de waarvan belangrijkste identiteitskaart u wilt terugwinnen.
+In `select` bevel, vervang `<user_login_id>` met login identiteitskaart van de gebruiker de waarvan belangrijkste identiteitskaart u wilt terugwinnen.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -108,22 +108,22 @@ Zodra u de belangrijkste identiteitskaart kent, kunt u de gebruikersgegevens uit
 
 #### Gebruikersgegevens exporteren {#export-user-data}
 
-Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te exporteren. In het `select` bevel, vervang `<principal_id>` met belangrijkste identiteitskaart van de gebruiker de waarvan gegevens u wilt uitvoeren.
+Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te exporteren. Vervang `<principal_id>` in de opdracht `select` door de hoofd-id van de gebruiker wiens gegevens u wilt exporteren.
 
 >[!NOTE]
 >
 >De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer u deze opdrachten uitvoert op Oracle- en MS SQL-databases, vervangt u de volgende tabelnamen in de opdrachten:
 >
->* Vervangen `EdcPrincipalLocalAccountEntity` door `EdcPrincipalLocalAccount`
+>* `EdcPrincipalLocalAccountEntity` vervangen door `EdcPrincipalLocalAccount`
    >
    >
-* Vervangen `EdcPrincipalEmailAliasEntity` door `EdcPrincipalEmailAliasEn`
+* `EdcPrincipalEmailAliasEntity` vervangen door `EdcPrincipalEmailAliasEn`
    >
    >
-* Vervangen `EdcPrincipalMappingEntity` door `EdcPrincipalMappingEntit`
+* `EdcPrincipalMappingEntity` vervangen door `EdcPrincipalMappingEntit`
    >
    >
-* Vervangen `EdcPrincipalGrpCtmntEntity` door `EdcPrincipalGrpCtmntEnti`
+* `EdcPrincipalGrpCtmntEntity` vervangen door `EdcPrincipalGrpCtmntEnti`
 
 >
 
@@ -147,13 +147,13 @@ Select * from EdcPrincipalGrpCtmntEntity where refchildprincipalid in (Select id
 Select * from EdcPrincipalEntity where id='<principal_id>';
 ```
 
-#### Gebruikersgegevens verwijderen {#delete-user-data}
+#### Gebruikersgegevens {#delete-user-data} verwijderen
 
 Ga als volgt te werk om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te verwijderen.
 
-1. Verwijder gebruikersgegevens uit AEM opslagplaats, indien van toepassing, zoals beschreven in [Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md#delete-aem)verwijderen.
+1. Verwijder gebruikersgegevens uit AEM opslagplaats, indien van toepassing, zoals beschreven in [Gebruikersgegevens verwijderen](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Sluit de AEM Forms-server af.
-1. Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te verwijderen. In het `Delete` bevel, vervang `<principal_id>` met belangrijkste identiteitskaart van de gebruiker de waarvan gegevens u wilt schrappen.
+1. Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoofd-id uit databasetabellen te verwijderen. Vervang `<principal_id>` in de opdracht `Delete` door de hoofd-id van de gebruiker wiens gegevens u wilt verwijderen.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -175,20 +175,20 @@ Ga als volgt te werk om gebruikersbeheergegevens voor een hoofd-id uit databaset
 
 1. Start de AEM Forms-server.
 
-### AEM {#aem-repository-1}
+### AEM opslagplaats {#aem-repository-1}
 
 Forms JEE-gebruikers hebben hun gegevens in AEM gegevensopslagruimte als ze minstens één instantie van de AEM Forms-auteur hebben geopend. U kunt hun gebruikersgegevens uit AEM opslagplaats openen en verwijderen.
 
 #### Gebruikersgegevens openen {#access-user-data}
 
-Als u een gebruiker wilt bekijken die in AEM opslagplaats is gemaakt, meldt u zich aan `https://'[server]:[port]'/lc/useradmin` met AEM beheerdersreferenties. Merk op dat `server` en `port` in URL die van de AEM auteurinstantie zijn. Hier kunt u naar gebruikers zoeken met hun gebruikersnaam. Dubbelklik op een gebruiker om informatie weer te geven, zoals eigenschappen, machtigingen en groepen voor de gebruiker. De `Path` eigenschap voor een gebruiker geeft het pad aan naar het gebruikersknooppunt dat in AEM opslagplaats is gemaakt.
+Als u een in AEM opslagplaats gemaakte gebruiker wilt weergeven, meldt u zich aan bij `https://'[server]:[port]'/lc/useradmin` met AEM beheerdersreferenties. Merk op dat `server` en `port` in URL die van de AEM auteursinstantie zijn. Hier kunt u naar gebruikers zoeken met hun gebruikersnaam. Dubbelklik op een gebruiker om informatie weer te geven, zoals eigenschappen, machtigingen en groepen voor de gebruiker. De eigenschap `Path` voor een gebruiker geeft het pad aan naar het gebruikersknooppunt dat in AEM opslagplaats is gemaakt.
 
-#### Gebruikersgegevens verwijderen {#delete-aem}
+#### Gebruikersgegevens {#delete-aem} verwijderen
 
 Een gebruiker verwijderen:
 
 1. Ga naar `https://'[server]:[port]'/lc/useradmin` met AEM beheerdersreferenties.
-1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. Kopieer de `Path` eigenschap.
+1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. Kopieer de eigenschap `Path`.
 1. Ga naar AEM CRX DELite op `https://'[server]:[port]'/lc/crx/de/index.jsp` en navigeer of zoek het gebruikerspad.
-1. Verwijder het pad en klik **[!UICONTROL Save All]** om de gebruiker definitief uit AEM opslagplaats te verwijderen.
+1. Verwijder het pad en klik op **[!UICONTROL Save All]** om de gebruiker definitief uit AEM opslagplaats te verwijderen.
 

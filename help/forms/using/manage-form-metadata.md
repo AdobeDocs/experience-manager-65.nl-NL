@@ -11,30 +11,33 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 06335b9a85414b6b1141dd19c863dfaad0812503
+workflow-type: tm+mt
+source-wordcount: '1979'
+ht-degree: 0%
 
 ---
 
 
-# Metagegevens van formulieren beheren{#manage-form-metadata}
+# Formuliermetagegevens beheren{#manage-form-metadata}
 
 ## Overzicht  {#overview-nbsp}
 
 Met metagegevens kunt u elementen gemakkelijker indelen en ordenen en gebruikers die op zoek zijn naar een bepaald middel helpen.
 
-AEM Forms biedt standaard een gedefinieerde set metagegevens voor elk elementtype. Naast de standaardmetagegevens kunt u ook aangepaste metagegevens toevoegen aan elk elementtype. Met AEM Forms beschikt u ook over de juiste middelen om al deze metagegevens efficiënt voor uw formulieren te maken, beheren en uit te wisselen.
+AEM Forms biedt standaard een gedefinieerde set metagegevens voor elk elementtype. Naast de standaardmetagegevens kunt u ook aangepaste metagegevens toevoegen aan elk elementtype. AEM Forms biedt u ook de juiste middelen om al deze metagegevens efficiënt voor uw formulieren te maken, te beheren en uit te wisselen.
 
-Als u een ontwikkelaar of site-eigenaar bent, kunt u Forms Portal, de gebruikersinterface voor AEM Forms aanpassen aan de metagegevens die u in uw organisatie gebruikt. Zie [Inleiding tot het publiceren van formulieren op een portal](../../forms/using/introduction-publishing-forms.md)voor meer informatie over Forms Portal.
+Als u een ontwikkelaar of site-eigenaar bent, kunt u Forms Portal, de gebruikersinterface voor AEM Forms, aanpassen aan de metagegevens die u in uw organisatie gebruikt. Zie [Inleiding tot het publiceren van formulieren op een portal](../../forms/using/introduction-publishing-forms.md) voor meer informatie over Forms Portal.
 
-## Metagegevens in AEM-formulieren {#metadata-in-aem-forms}
+## Metagegevens in AEM Forms {#metadata-in-aem-forms}
 
-In AEM Forms is de lijst met eigenschappen van metagegevens die aan een element zijn gekoppeld, afhankelijk van het type. Als u bovendien een aangepaste eigenschap voor metagegevens toevoegt, wordt deze toegevoegd aan alle elementen van het type waarop de aangepaste metagegevens zijn toegevoegd.
+In AEM Forms is de lijst met metagegevenseigenschappen die aan een element zijn gekoppeld, afhankelijk van het type. Als u bovendien een aangepaste eigenschap voor metagegevens toevoegt, wordt deze toegevoegd aan alle elementen van het type waarop de aangepaste metagegevens zijn toegevoegd.
 
 ### Elementen {#asset-types}
 
-De volgende elementtypen worden ondersteund in AEM-formulieren:
+De volgende elementtypen worden ondersteund in AEM Forms:
 
 * Formuliersjablonen (XFA-formulieren)
-* PDF-formulieren
+* PDF forms
 * Document (vlakke PDF&#39;s)
 * Aangepaste formulieren
 * Bronnen
@@ -42,7 +45,7 @@ De volgende elementtypen worden ondersteund in AEM-formulieren:
 
 #### Uitgebreide lijst met metagegevens {#extensive-list-of-metadata}
 
-Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden ondersteund in AEM Forms:
+Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die in AEM Forms worden ondersteund:
 
 <table>
  <tbody> 
@@ -54,7 +57,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
   <tr> 
    <td>Titel</td> 
    <td>Alles behalve bron</td> 
-   <td>De naam van het formulier weergeven.<br /> </td> 
+   <td>Naam van formulier weergeven.<br /> </td> 
   </tr> 
   <tr> 
    <td>Beschrijving</td> 
@@ -84,7 +87,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td>Een alleen-lezen waarde die de tijd aangeeft waarop het element voor het laatst is gewijzigd.</td> 
   </tr> 
   <tr> 
-   <td>Author</td> 
+   <td>Auteur</td> 
    <td>Alles behalve bron</td> 
    <td><p>Een alleen-lezen waarde die automatisch wordt berekend op basis van het formuliertype.</p> 
     <ul> 
@@ -121,8 +124,8 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
    <td><p>Formuliersjabloon</p> <p>PDF-formulier</p> </td> 
    <td><p>Een door de gebruiker opgegeven URL configureren voor het verzenden van formuliergegevens naar een servlet.</p> <p>Verzenden van URL kan worden geconfigureerd met een van de volgende methoden, vermeld in volgorde van prioriteit:</p> 
     <ul> 
-     <li>Geef een verzendURL rechtstreeks op in een formuliersjabloon met de knop HTTP verzenden terwijl u een XFA-formulier maakt in AEM Forms Designer.</li> 
-     <li>Selecteer een formulier in de gebruikersinterface van AEM Forms en geef een verzendURL op bij het bewerken van de metagegevenseigenschappen.</li> 
+     <li>Geef een verzend-URL rechtstreeks op in een formuliersjabloon met de knop HTTP verzenden tijdens het maken van een XFA-formulier in AEM Forms Designer.</li> 
+     <li>Selecteer in de gebruikersinterface van AEM Forms een formulier en geef een verzendURL op bij het bewerken van de eigenschappen van metagegevens.</li> 
      <li>Bewerk in Forms Portal de component Search &amp; Lister en geef een verzendURL op onder het tabblad Formulierkoppeling.</li> 
     </ul> </td> 
   </tr> 
@@ -153,7 +156,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
     <ul> 
      <li>Verwijst naar: Elementen waarnaar het huidige formulier verwijst.</li> 
      <li>Verwezen door: Activa die verwijzen naar het huidige actief.</li> 
-    </ul> <p>Deze elementen worden als koppelingen weergegeven en de bijbehorende metagegevens zijn rechtstreeks toegankelijk door erop te klikken.<br /> </p> </td> 
+    </ul> <p>Deze elementen worden weergegeven als koppelingen en de bijbehorende metagegevens zijn rechtstreeks toegankelijk door erop te klikken.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Selectie van formuliermodel (XDP/XSD)</td> 
@@ -171,7 +174,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die worden o
  </tbody> 
 </table>
 
-## Metagegevens van formulieren weergeven {#view-form-metadata}
+## Metagegevens van formulieren {#view-form-metadata} weergeven
 
 Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in de alleen-lezen modus. Deze metagegevens zijn afkomstig bij het uploaden van het formulier of het maken van het formulier.
 
@@ -179,36 +182,37 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
 
 1. Open de eigenschappenpagina op een van de volgende manieren:
 
-   1. Klik op het pictogram Eigenschappen van weergave ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) vanuit Snelle handelingen.
+   1. Klik op het pictogram Weergave-eigenschappen ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) vanuit Snelle handelingen.
 
       >[!NOTE]
       >
       >Snelle acties zijn de actiepunten die over een duimnagel worden getoond wanneer de muiswijzer.
 
-   1. Selecteer het formulier en klik op het pictogram Eigenschappen van weergave ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) op de werkbalk.
+   1. Selecteer het formulier en klik op het pictogram Weergave-eigenschappen ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) op de werkbalk.
    1. Navigeer naar de pagina met formulierdetails door op de miniatuur van het formulier te klikken wanneer u niet in de selectiemodus werkt. Klik nu op het oogpictogram ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) rechtsboven en klik vervolgens op Eigenschappen in de lijst eronder.
 
 1. De bezitspagina die opent toont een schema dat slechts die meta-gegevenseigenschappen bevat die één of andere waarde houden.
 
    De eigenschappenpagina heeft een werkbalk met twee actiepictogrammen:
 
-   * Bewerken: ![aaem6forms_edit](assets/aem6forms_edit.png) geef de waarden van het meta-gegevensbezit uit
-   * Weergave: Met ![naam6forms_eye_viewon](assets/aem6forms_eye_viewon.png) navigeert u naar de pagina met formulierdetails. Hiermee wordt het formulier geopend in de voorbeeldmodus.
+   * Bewerken: ![name6forms_edit](assets/aem6forms_edit.png) De waarden van de metagegevenseigenschap bewerken
+   * Weergave: ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) Navigeer naar de pagina met formulierdetails, waarmee het formulier in de voorbeeldmodus wordt geopend.
+
    Het inhoudgedeelte wordt in twee delen verdeeld:
 
    * Het linkerdeelvenster bevat een miniatuur van het formulier
    * Het rechterdeelvenster bevat eigenschappen van metagegevens in de alleen-lezen modus, verdeeld over verschillende tabbladen.
 
 
-## Waarden van metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
+## Waarden voor metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
 
-U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor eigenschappen van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
+U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor de eigenschap van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-### Waarden voor metagegevenseigenschappen bijwerken {#update-metadata-property-values}
+### Waarden van metagegevenseigenschappen {#update-metadata-property-values} bijwerken
 
 1. Voer de stappen in de vorige sectie uit om de eigenschappenpagina te openen waarop bestaande metagegevens van het geselecteerde formulier kunnen worden weergegeven.
 
-1. Klik op het bewerkingspictogram ![aaem6forms_edit](assets/aem6forms_edit.png) op de werkbalk om de modus van de pagina te wijzigen van alleen-lezen in lezen/schrijven.
+1. Klik op het bewerkingspictogram ![name6forms_edit](assets/aem6forms_edit.png) op de werkbalk om de modus van de pagina te wijzigen van alleen-lezen in lezen/schrijven.
 
 1. De eigenschappenpagina die wordt geopend, bevat een schema dat een combinatie bevat van bewerkbare invoervelden en statische tekst.
 
@@ -218,22 +222,24 @@ U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe
 
    Deze pagina heeft een werkbalk met twee actiepictogrammen die afwijken van die in de weergavemodus:
 
-   * Annuleren: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Alle wijzigingen in eigenschapswaarden van metagegevens tot nu toe annuleren
+   * Annuleren: ![aem6forms_close](assets/aem6forms_close.svg_w24.png) Alle wijzigingen annuleren die tot dusverre in eigenschapswaarden van metagegevens zijn aangebracht
    * Gereed: ![aem6forms_check](assets/aem6forms_check.png) Alle wijzigingen opslaan die tot nu toe in eigenschapswaarden voor metagegevens zijn aangebracht
+
    Met beide handelingen wordt de gebruiker weer naar de alleen-lezen modus geleid van de eigenschappenpagina die de bijgewerkte waarden bevat.
 
-### De miniatuur van het formulier bijwerken {#update-the-form-thumbnail}
+### De formulierminiatuur {#update-the-form-thumbnail} bijwerken
 
 In het linkerdeelvenster op de pagina Eigenschappen wordt de miniatuur van het formulier weergegeven. Standaard wordt de miniatuur weergegeven die wordt gegenereerd bij het maken van het formulier (adaptief formulier) of bij het uploaden van het formulier.
 
-Voor alle formuliertypen kunt u een afbeelding uploaden door op Afbeelding **** uploaden te klikken en naar een afbeeldingsbestand in de lokale map te bladeren. De geselecteerde afbeelding wordt gebruikt als een miniatuur in plaats van de standaardafbeelding.
+Voor alle formuliertypen kunt u een afbeelding uploaden door op **[!UICONTROL Upload Image]** te klikken en naar een afbeeldingsbestand in de lokale map te bladeren. De geselecteerde afbeelding wordt gebruikt als miniatuur in plaats van de standaardafbeelding.
 
-Voor adaptieve formulieren is extra functionaliteit beschikbaar, waarmee de gebruiker een miniatuur kan genereren als momentopname van de huidige aangepaste formuliervoorvertoning. Aangezien AEM Forms ook het ontwerpen van adaptieve formulieren ondersteunt, kan het voorbeeld van het adaptieve formulier elke keer dat u het adaptieve formulier wijzigt, veranderen. Met deze functie voor het genereren van een miniatuur krijgt u een nieuwe miniatuur voor het adaptieve formulier op basis van de huidige voorbeeldstatus. Klik op Voorvertoning **** genereren om deze handeling uit te voeren.
+Voor adaptieve formulieren is extra functionaliteit beschikbaar, waarmee de gebruiker een miniatuur kan genereren als momentopname van de huidige aangepaste formuliervoorvertoning. Aangezien AEM Forms ook het schrijven van adaptieve formulieren ondersteunt, kan het voorbeeld van het adaptieve formulier elke keer dat u het adaptieve formulier wijzigt, veranderen. Met deze functie voor het genereren van een miniatuur krijgt u een nieuwe miniatuur voor het adaptieve formulier op basis van de huidige voorbeeldstatus. Klik **[!UICONTROL Generate Preview]** om deze actie uit te voeren.
 
 >[!NOTE]
 >
 >* Gebruik een vierkante afbeelding voor de miniatuur. Wanneer u een niet-vierkante afbeelding gebruikt en de miniatuur in de lijstweergave weergeeft, wordt de miniatuur afgekapt weergegeven.
 >* Nadat een nieuwe afbeelding is geüpload of gegenereerd, wordt de miniatuur vervangen door deze afbeelding en kan deze niet opnieuw worden ingesteld op de vorige afbeelding.
+
 >
 
 
@@ -242,15 +248,15 @@ Voor adaptieve formulieren is extra functionaliteit beschikbaar, waarmee de gebr
 
 Naast de metagegevens die in het tekstvak worden vermeld, ondersteunt AEM Forms nieuwe aangepaste metagegevens.
 
-Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee u het schema voor de indeling van metagegevens kunt definiëren. Dit is de indeling van wat wordt weergegeven op de pagina **[!UICONTROL Eigenschappen]** van een formulier. Met de Metagegevensschemaeditor kunt u een aangepast schema voor uw elementen toevoegen of wijzigen.
+Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee u het schema voor de indeling van metagegevens kunt definiëren. Dit is de indeling van wat wordt weergegeven op de pagina **[!UICONTROL Properties]** van een formulier. Met de Metagegevensschemaeditor kunt u een aangepast schema voor uw elementen toevoegen of wijzigen.
 
-In AEM Forms worden de metagegevensschema&#39;s van de ondersteunde formuliertypen in dit gereedschap weergegeven. Op deze manier hebt u toegang tot deze schema&#39;s en kunt u aangepaste eigenschappen toevoegen met gebruik van de functionaliteit in de editor voor het metagegevensschema.
+AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen in dit gereedschap beschikbaar. Op deze manier hebt u toegang tot deze schema&#39;s en kunt u aangepaste eigenschappen toevoegen met gebruik van de functionaliteit in de editor voor het metagegevensschema.
 
-### Navigeren door de editor voor het metagegevensschema {#navigate-the-metadata-schema-editor}
+### Navigeren in de metagegevensschemaeditor {#navigate-the-metadata-schema-editor}
 
-1. Ga naar **[!UICONTROL Gereedschappen > Middelen > Metagegevensschema&#39;s]**.
+1. Ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 
-1. Klik op **[!UICONTROL formulieren]** in de lijst met schemaformulieren.
+1. Klik **[!UICONTROL forms]** van de vermelde schemavormen.
 
 1. Klik in de lijst die wordt geopend op het elementtype waarvoor u aangepaste metagegevens wilt toevoegen.
 
@@ -258,11 +264,11 @@ In AEM Forms worden de metagegevensschema&#39;s van de ondersteunde formuliertyp
    >
    >Deze schema&#39;s bevatten eigenschappen van meta-gegevens die buiten doos worden verstrekt en moeten niet worden veranderd/worden uitgegeven (het selecteren van controledoos en het klikken geeft van toolbar uit) om functionele kwesties te vermijden.
 
-1. Elk type element waarop u klikt, opent een lijst met de `extendedmetadata` optie. Bewerk dit schema.
+1. Elk type element waarop u klikt, opent een lijst met de optie `extendedmetadata`. Bewerk dit schema.
 
-1. Schakel het selectievakje naast `extendedmetadata` en klik op het pictogram ![Aem6forms_edit](assets/aem6forms_edit.png) bewerken op de werkbalk.
+1. Schakel het selectievakje naast `extendedmetadata` in en klik op het pictogram ![aem6forms_edit](assets/aem6forms_edit.png) op de werkbalk.
 
-1. Met AEM Forms opent u de editor/formulierbuilder voor metagegevens van het geselecteerde elementtype (in dit geval een adaptief formulier).
+1. AEM Forms opent de editor/formulierbuilder voor metagegevens van het geselecteerde elementtype (in dit geval adaptief formulier).
 
    ![Schema-editor voor metagegevens voor adaptief formuliertype](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
@@ -274,14 +280,14 @@ In AEM Forms worden de metagegevensschema&#39;s van de ondersteunde formuliertyp
 
    1. U kunt extra tabbladen toevoegen door op het plus-symbool te klikken.
 
-   1. U kunt een aangepast veld van het gewenste type toevoegen door de veldcomponent vanuit de sectie Formulier **** samenstellen naar de schemapagina te slepen.
-   1. U kunt de specificaties voor dit veld opgeven in de sectie **[!UICONTROL Instellingen]** nadat u op het veld hebt geklikt.
+   1. U kunt een aangepast veld van het gewenste type toevoegen door de veldcomponent van de sectie **[!UICONTROL Build Form]** naar de schemapagina te slepen.
+   1. U kunt de specificaties voor dit veld opgeven in de sectie **[!UICONTROL Settings]** nadat u op het veld hebt geklikt.
 
 ### Aangepaste metagegevenseigenschap toevoegen in schema-editor {#add-custom-metadata-property-in-schema-editor}
 
 1. Navigeer naar het tabblad (bestaand of nieuw) waar u de aangepaste eigenschap wilt toevoegen.
 
-1. Sleep een component van het gewenste type van de sectie van de Vorm **[!UICONTROL van de]** Bouwstijl aan linkerpaneel en plaats bij een geschikte plaats.
+1. Sleep een component van gewenst type van **[!UICONTROL Build Form]** sectie aan linkerpaneel en plaats bij een geschikte plaats.
 
    >[!NOTE]
    >
@@ -290,7 +296,7 @@ In AEM Forms worden de metagegevensschema&#39;s van de ondersteunde formuliertyp
 1. Klik op een component die u net hebt gesleept. Vul op het tabblad Instellingen dat in het rechterdeelvenster wordt geopend de gegevens in voor de volgende velden:
 
    1. Geef een veldlabel op dat wordt gebruikt als een weergavenaam boven het veld dat in het schema wordt geplaatst (bijvoorbeeld: Afdeling)
-   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde zien **&#39;./jcr:content/metadata/default&#39;**. Verander de &quot;**gebrek**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats op te slaan (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
+   1. Onder Kaart aan bezitsgebied, kunt u een vooraf ingevulde waarde **&#39; zien./jcr:content/metadata/default&#39;**. Verander &quot;**default**&quot;in een gewenste bezitsnaam, die wordt gebruikt om het bezit in crx bewaarplaats op te slaan (bijvoorbeeld: &quot;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -299,7 +305,7 @@ In AEM Forms worden de metagegevensschema&#39;s van de ondersteunde formuliertyp
       >De eigenschapsnaam moet ook uniek zijn om te voorkomen dat waarden worden geschreven voor twee of meer eigenschappen op dezelfde locatie in de opslagplaats. Het wordt daarom aanbevolen de waarde &#39;default&#39; te wijzigen.
 
    1. Vul andere instellingen in op basis van vereisten. Bijvoorbeeld: Selecteer de optie Vereist als u het veld verplicht wilt maken.
-   1. Als u een toegevoegd veld wilt verwijderen, selecteert u het veld en klikt u op het pictogram ![delete-1](assets/delete-1.png) .
+   1. Als u een toegevoegd veld wilt verwijderen, selecteert u het veld en klikt u op het pictogram ![delete-1](assets/delete-1.png).
 
 1. Voer indien nodig stap 1-3 uit om een andere eigenschap toe te voegen.
 1. Klik op **Gereed** nadat u alle wijzigingen hebt aangebracht.

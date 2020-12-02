@@ -14,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.5 Mobiele gebruikershandleiding {#mobile}
+# AEM 6.5 Handboek voor mobiele gebruikers {#mobile}
 
 + [Overzicht van de mobiele gebruikershandleiding](home.md)
 + Inleiding tot AEM Mobile {#introduction}
@@ -24,7 +24,7 @@ ht-degree: 0%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR-gereedheid](aem-mobile-gdpr-compliance.md)
    + [Mobiele apps ontwikkelen](develop-mobile-apps.md)
-+ Authoring On-Demand Services App {#authoring}
++ Authoring On-Demand Services-app {#authoring}
    + [Mobiel op aanvraag](mobile-apps-ondemand.md)
    + [Inhoud beheren](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Inhoud publiceren ongedaan maken](mobile-on-demand-publishing-unpublishing.md)
@@ -34,7 +34,7 @@ ht-degree: 0%
    + [Gedeelde bronnen uploaden](mobile-on-demand-shared-resources.md)
    + [Cloud Configuration](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Banners beheren](mobile-on-demand-managing-banners.md)
-+ On-Demand Services-app ontwikkelen {#developing}
++ Developing On-Demand Services App {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [App-sjablonen en -componenten](app-templates-and-components1.md)
    + [Eigenschappen en knooppunten van inhoud](content-properties.md)
@@ -57,7 +57,7 @@ ht-degree: 0%
    + [Modellen - overzicht](model-management.md)
    + [Spaties en entiteiten](spaces-and-entities.md)
    + [Verzamelingen beheren](mobile-on-demand-managing-collections.md)
-+ Authoring in Adobe PhoneGap Enterprise {#author-phonegap}
++ Adobe PhoneGap Enterprise {#author-phonegap} ontwerpen
    + [PhoneGap](phonegap.md)
    + [App-metagegevens bewerken](phonegap-editmetadata.md)
    + [Toepassingsdefinities](phonegap-app-definitions.md)
@@ -66,7 +66,7 @@ ht-degree: 0%
    + [Mobiele toepassingen ontwerpen](phonegap-authoring-apps.md)
    + [App-tegel beheren](phonegap-app-details-tile.md)
    + [AEM Mobile-inhoud aanpassen](phonegap-aem-mobile-content-personalization.md)
-+ Adobe PhoneGap Enterprise ontwikkelen {#developphonegap}
++ Adobe PhoneGap Enterprise {#developphonegap} ontwikkelen
    + [PhoneGap](developing-in-phonegap.md)
    + [Mobiele toepassingen maken](building-app-mobile-phonegap.md)
    + [Pushmeldingen](phonegap-push-notifications.md)
@@ -87,7 +87,7 @@ ht-degree: 0%
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
    + [Een app structureren](phonegap-structure-an-app.md)
    + [App-prestaties bijhouden met Adobe Mobile Analytics](phonegap-intro-to-app-analytics.md)
-+ Adobe PhoneGap Enterprise beheren {#administering-phonegap}
++ Adobe PhoneGap Enterprise {#administering-phonegap} beheren
    + [Mobile QuickStart](phonegap-mobile-quickstart.md)
    + [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](administer-phonegap.md)
    + [Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)

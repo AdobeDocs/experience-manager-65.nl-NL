@@ -26,7 +26,7 @@ Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is
 
 Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten zich slechts eenmaal registreren en aanmelden om aan de stemming deel te nemen. De ondertekenaar (lid) kan te allen tijde zijn stem wijzigen.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +36,7 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in de <i></i>ontwerpmodus</td>
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -67,19 +67,19 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Toegang tot gebste stemmen (UGC) {#accessing-posted-voting-ugc}
+### Toegang tot Geposte Stemming (UGC) {#accessing-posted-voting-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie Door de gebruiker gegenereerde inhoud [modereren](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - SRP nutsmethodes en voorbeelden.
+* [Overzicht](srp.md)  van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen verouderde nutsmethodes aan huidige SRP nutsmethodes.
+* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes.
 

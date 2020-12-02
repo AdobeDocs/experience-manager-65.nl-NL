@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Leer meer](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) of [graaf in enkele van onze nieuwe videofunctiezelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) meer of  [graaf in enkele van onze nieuwe videofunctiezelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -47,8 +47,8 @@ De Gemeenschappen zijn een Adobe Experience Manager-mogelijkheid waarmee u onlin
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre is een geheel nieuwe Adobe Experience Manager-mogelijkheid waarmee u alles kunt aantikken dat op het web wordt gedeeld om een constante stroom nieuwe en kwalitatief hoogwaardige inhoud op uw eigen sites te maken. [Meer](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) weten of [naar onze gidsen springen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre is een geheel nieuwe Adobe Experience Manager-mogelijkheid waarmee u alles kunt aantikken dat op het web wordt gedeeld om een constante stroom nieuwe en kwalitatief hoogwaardige inhoud op uw eigen sites te maken. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) meer of  [sprong recht in onze gidsen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
-## AEM stichting {#aem-foundation}
+## AEM Stichting {#aem-foundation}
 
-Meer informatie over de [Adobe Experience Manager 6.5-stichting](/help/sites-deploying/home.md) en ons implementatiemodel voor beheerde services of duik in een aantal van onze [nieuwe video-introducties naar de functies in deze release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Meer informatie over de [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) en ons model voor beheerde services voor implementatie of duik in een aantal van onze [nieuwe video-introducties voor de functies in deze release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)

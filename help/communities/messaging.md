@@ -19,37 +19,37 @@ ht-degree: 0%
 ---
 
 
-# Berichten configureren {#configure-messaging}
+# Berichten {#configure-messaging} configureren
 
 ## Overzicht {#overview}
 
 Met de communicatiefunctie voor AEM Communities kunnen bezoekers van de aangemelde site (leden) berichten naar elkaar sturen die toegankelijk zijn wanneer ze zich op de site hebben aangemeld.
 
-Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens de verwezenlijking [van de](/help/communities/sites-console.md)communautaire plaats te controleren.
+Het overseinen wordt toegelaten voor een communautaire plaats door een doos tijdens [de verwezenlijking van de communautaire plaats](/help/communities/sites-console.md) te controleren.
 
 Deze pagina bevat informatie over de standaardconfiguratie en mogelijke aanpassingen.
 
-Voor extra informatie voor ontwikkelaars, zie de Hoofdzaak van het [Overseinen](/help/communities/essentials-messaging.md).
+Voor extra informatie voor ontwikkelaars, zie [Hoofdzaak van het Overseinen](/help/communities/essentials-messaging.md).
 
 ## Service voor berichtenverkeer {#messaging-operations-service}
 
-De configuratie [AEM Communities de Dienst](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) van de Verrichtingen van het Overseinen identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
+De configuratie [De Dienst van de Verrichtingen van het Overseinen van AEM Communities ](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
 
-Voor communautaire plaatsen die gebruikend de `Communities Sites console`, een geval van de dienst worden gecreeerd bestaat reeds, met inbox die aan wordt geplaatst `/mail/inbox`.
+Voor gemeenschapssites die zijn gemaakt met de `Communities Sites console`, bestaat al een instantie van de service, met de inbox ingesteld op `/mail/inbox`.
 
 ### Community Messaging Operations Service {#community-messaging-operations-service}
 
-Zoals hieronder getoond, bestaat een configuratie van de dienst voor plaatsen die met de tovenaar [van de](/help/communities/sites-console.md)plaatsverwezenlijking worden gecreeerd. U kunt de configuratie weergeven of bewerken door het potloodpictogram naast de configuratie te selecteren.
+Zoals hieronder wordt weergegeven, bestaat er een configuratie van de service voor sites die zijn gemaakt met de wizard [Site maken](/help/communities/sites-console.md). U kunt de configuratie weergeven of bewerken door het potloodpictogram naast de configuratie te selecteren.
 
 ![berichtenverkeer](assets/messaging-operations.png)
 
-### Nieuwe configuratie toevoegen {#add-new-configuration}
+### Nieuwe configuratie {#add-new-configuration} toevoegen
 
-Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**+**&#39; naast de naam van de service:
+Als u een nieuwe configuratie wilt toevoegen, selecteert u de plusknop &#39;**+**&#39; naast de naam van de service:
 
 * **Lijst van gewenste personen Berichtvelden**
 
-   Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
+   Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *subject* en *content*.
 
 * **Maximale grootte berichtvenster**
 
@@ -57,19 +57,19 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
 * **Limiet voor aantal berichten**
 
-   Het totale aantal toegestane berichten per gebruiker. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. De standaardwaarde is *10000* (10 kB).
+   Het totale aantal toegestane berichten per gebruiker. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. De standaardwaarde is *10000* (10k).
 
 * **Leveringsfout melden**
 
-   Als deze optie is ingeschakeld, stuurt u een melding naar de afzender als de berichtlevering bij sommige ontvangers mislukt. Standaard is *ingeschakeld*.
+   Als deze optie is ingeschakeld, stuurt u een melding naar de afzender als de berichtlevering bij sommige ontvangers mislukt. Standaard is *checked*.
 
 * **Leverancier-id mislukt**
 
-   Naam van afzender die in ontbroken bericht verschijnt levering. De standaardwaarde is *failureNotifier*.
+   Naam van afzender die in ontbroken bericht verschijnt levering. Standaard is *failureNotifier*.
 
 * **Sjabloonpad voor mislukte berichten**
 
-   Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. De standaardwaarde is */etc/notification/messaging/default*.
+   Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. Standaard is */etc/notification/messaging/default*.
 
 * **Aantal pogingen**
 
@@ -85,21 +85,21 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
 * **Pad in vak**
 
-   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de `inbox` map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox*.
+   (*Required*) De weg, met betrekking tot de knoop van de gebruiker (/home/users/*username*), aan gebruik voor de `inbox` omslag. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is */mail/inbox*.
 
 * **Pad naar verzonden items**
 
-   (*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de `sent items` map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
+   (*Required*) De weg, met betrekking tot de knoop van de gebruiker (/home/users/*username*), aan gebruik voor de `sent items` omslag. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. De standaardwaarde is */mail/sentitems*.
 
 * **Ondersteuningsbijlagen**
 
-   Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is *ingeschakeld*.
+   Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is *checked*.
 
 * **Groepsberichten inschakelen**
 
-   Als deze optie is geselecteerd, kunnen geregistreerde gebruikers bulkberichten naar een groep leden verzenden. Standaard is *uitgeschakeld*.
+   Als deze optie is geselecteerd, kunnen geregistreerde gebruikers bulkberichten naar een groep leden verzenden. Standaard is *niet geselecteerd*.
 
-* **Maximum aantal. van de totale begunstigden**
+* **Maximum aantal. van totale ontvangers**
 
    Als het groepsoverseinen wordt toegelaten, specificeer het maximumaantal ontvangers waarnaar het groepsbericht tegelijkertijd kan worden verzonden. De standaardwaarde is *100*.
 
@@ -113,7 +113,7 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
 * **Lijst van afgewezen personen bijlagetype**
 
-   Een lijst van afgewezen personen met bestandsextensies, voorafgegaan door &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt toegevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+   Een lijst van afgewezen personen met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt toegevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
 
@@ -121,23 +121,23 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 
 * **Servicekiezer**
 
-   (*Vereist*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen in de configuratie van de Wegen *van de* Uitvoering van OSGi config [ , zoals `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`, en `/apps/``/services/`zijn. Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie de Eigenschap [van het](/help/communities/configure-messaging.md)Bericht).
+   (*Required*) Een absolute weg (eindpunt) waardoor de dienst (een virtuele middel) wordt geroepen. De wortel van de gekozen weg moet één inbegrepen in *de configuratieplaatsen van Wegen van de Uitvoering* van OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), zoals `/bin/`, `/apps/`, en `/services/` zijn. Om deze configuratie voor de het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie [Berichteigenschap](/help/communities/configure-messaging.md)).
 
-   De standaardwaarde is */bin/messaging* .
+   De standaardwaarde is */bin/messaging*.
 
 * **Lijst van gewenste personen veld**
 
-   De Lijst van gewenste personen **van de Gebieden van het** Bericht van het gebruik.
+   Gebruik **Lijst van gewenste personen van de Gebieden van het bericht**.
 
 >[!CAUTION]
 >
->Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
+>Elke keer dat een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de enkele lege invoer te verwijderen voordat u op **Opslaan** klikt.
+>Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
 
 ## Groepsberichten {#group-messaging}
 
-Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebruikersgroepen te verzenden, zorg ervoor om groepsoverseinen **in de volgende twee instanties van de configuratie van de Diensten** van de Verrichting van het **Overseinen toe te** laten:
+Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebruikersgroepen te verzenden, zorg ervoor om **groepsoverseinen** in de volgende twee instanties van **de Configuratie van de Bewerking van het Overseinen Services** toe te laten:
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
@@ -152,8 +152,8 @@ Om geregistreerde gebruikers toe te staan om directe berichten in bulk naar gebr
 
 ## Problemen oplossen {#troubleshooting}
 
-Één manier om problemen op te lossen is het toelaten van [het zuiveren berichten in het logboek.](/help/sites-administering/troubleshooting.md)
+Één manier om problemen op te lossen is [het zuiveren berichten in het logboek toe te laten.](/help/sites-administering/troubleshooting.md)
 
-Zie ook [Loggers en Schrijvers voor de Individuele Diensten](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+Zie ook [Loggers and Writers for Individual Services](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 
 Het te controleren pakket is `com.adobe.cq.social.messaging`.

@@ -1,8 +1,8 @@
 ---
 title: XCI-configuratieopties opgeven
 seo-title: XCI-configuratieopties opgeven
-description: Leer hoe u XCI-configuratieopties kunt opgeven.
-seo-description: Leer hoe u XCI-configuratieopties kunt opgeven.
+description: Leer hoe u XCI-configuratieopties opgeeft.
+seo-description: Leer hoe u XCI-configuratieopties opgeeft.
 uuid: cf9e544d-63cd-4fad-8f89-bdb46eeef409
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 1%
 
 ---
 
 
 # XCI-configuratieopties opgeven {#specify-xci-configuration-options}
 
-Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie [Bestandslocaties opgeven voor Uitvoer](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) Standaard overschrijft Output enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
+Met Output kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie [Bestandslocaties opgeven voor Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) Standaard overschrijft Output enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

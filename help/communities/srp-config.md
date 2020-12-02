@@ -42,9 +42,9 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 * Selecteer een optie
 * Passend configureren
 
-   * Zie details voor het [selecteren van MSRP](msrp.md#select-msrp)
-   * Zie details voor het [selecteren van DSRP](dsrp.md#select-dsrp)
-   * Zie details voor het [selecteren van ASRP](asrp.md#select-asrp)
+   * Zie details voor [het selecteren van MSRP](msrp.md#select-msrp)
+   * Zie details voor [het selecteren van DSRP](dsrp.md#select-dsrp)
+   * Zie details voor [het selecteren van ASRP](asrp.md#select-asrp)
 
 * Selecteer **[!UICONTROL Submit]**.
 
@@ -52,10 +52,10 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
 Houd er rekening mee dat als er geen selectie wordt gemaakt, de standaardinstelling de AEM opslagplaats JCR is.
 
-JCR is *geen* algemene winkel die door de auteur- en publicatieomgeving wordt gedeeld. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
+JCR is *geen* een gemeenschappelijke opslag die door de auteur wordt gedeeld en publiceert milieu&#39;s. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
 
-Ga naar de [JCR Store](jsrp.md) voor meer informatie.
+Bezoek [JCR Store](jsrp.md) voor meer informatie.
 
 >[!NOTE]
 >
->De afwezigheid van het knooppunt `srpc` onder `/etc/socialconfig` geeft de standaard [JCR-opslag](jsrp.md)aan.
+>De afwezigheid van de knoop `srpc` onder `/etc/socialconfig` wijst op het gebrek [JCR store](jsrp.md).

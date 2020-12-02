@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 translation-type: tm+mt
 source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+workflow-type: tm+mt
+source-wordcount: '1593'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Door groepen gebruikers te maken, kunt u rollen toewijzen aan de groep in plaats
 
 Er zijn twee verschillende typen groepen beschikbaar. U kunt handmatig een groep maken en er gebruikers en andere groepen aan toevoegen. U kunt ook dynamische groepen maken die automatisch alle gebruikers bevatten die aan een opgegeven set regels voldoen.
 
-De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM-formulieren zo configureren dat informatie uit bepaalde domeinen vooraf wordt opgehaald. (Zie AEM-formulieren [configureren om domeininformatie](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)vooraf in te stellen.)
+De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen (bijvoorbeeld, 500 of meer) behoren of als de groepen diep worden genesteld (bijvoorbeeld, 30 niveaus). Als dit probleem optreedt, kunt u AEM formulieren zo configureren dat informatie uit bepaalde domeinen vooraf wordt opgehaald. (Zie [AEM formulieren configureren om domeininformatie vooraf in te stellen](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information).)
 
 ## Handmatig een groep maken {#create-a-group-manually}
 
@@ -34,7 +37,7 @@ Als u de (Vervangen) Diensten van de Inhoud gebruikt, kunt u Uitgezochte Deze Op
 
    De Canonical Name is een unieke id voor de groep. Elke groep en gebruiker in een domein moet een unieke canonieke naam hebben. Schakel het selectievakje Door systeem gegenereerd in als u wilt dat gebruikersbeheer een unieke waarde toewijst of schakel het selectievakje uit en geef een aangepaste waarde op voor Canonical Name.
 
-   Gebruik bijvoorbeeld geen onderstrepingstekens (_) in canonieke namen `sample_group`. Wanneer u naar groepen zoekt op basis van hun canonieke naam, worden de groepen met onderstrepingstekens niet geretourneerd.
+   Gebruik geen onderstrepingstekens (_) in canonieke namen, bijvoorbeeld `sample_group`. Wanneer u naar groepen zoekt op basis van hun canonieke naam, worden de groepen met onderstrepingstekens niet geretourneerd.
 
 1. Als u gebruikers en groepen aan deze nieuwe groep wilt toevoegen, klikt u op Gebruikers/groepen zoeken en voert u de volgende taken uit:
 
@@ -44,14 +47,14 @@ Als u de (Vervangen) Diensten van de Inhoud gebruikt, kunt u Uitgezochte Deze Op
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor de gebruikers en groepen die u aan deze nieuwe groep wilt toevoegen en klik op OK.
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Als u deze nieuwe groep wilt toevoegen aan andere bestaande groepen, klikt u op Groepen zoeken en voert u de volgende taken uit:
 
    * Typ uw zoekcriteria in het vak Zoeken.
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor de groepen waartoe de nieuwe groep behoort en klik op OK.
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Als u rollen wilt toewijzen aan de groep, klikt u op Rollen zoeken, schakelt u de selectievakjes in voor elke rol die u wilt toewijzen aan de groep en klikt u op OK. De gebruikers in de groep erven rollen die op het groepsniveau worden toegewezen.
 1. Klik op Voltooien.
 
@@ -61,7 +64,7 @@ In een dynamische groep selecteert u niet afzonderlijk de gebruikers die tot de 
 
 U kunt op een van de volgende twee manieren dynamische groepen maken:
 
-* Schakel het automatisch maken van dynamische groepen in op basis van e-maildomeinen, zoals @adobe.com. Wanneer u deze functie inschakelt, maakt Gebruikersbeheer een dynamische groep voor elk uniek e-maildomein in de AEM-formulierdatabase. Gebruik een uitsnijdexpressie om op te geven hoe vaak gebruikersbeheer de database met AEM-formulieren doorzoekt naar nieuwe e-maildomeinen. Deze dynamische groepen worden toegevoegd aan het lokale domein DefaultDom en worden genoemd &quot;Alle gebruikers met een *`[email domain]`* postidentiteitskaart&quot;.
+* Schakel het automatisch maken van dynamische groepen in op basis van e-maildomeinen, zoals @adobe.com. Wanneer u deze functie inschakelt, maakt Gebruikersbeheer een dynamische groep voor elk uniek e-maildomein in de database met AEM formulieren. Gebruik een uitsnijdexpressie om op te geven hoe vaak gebruikersbeheer de database met AEM formulieren doorzoekt naar nieuwe e-maildomeinen. Deze dynamische groepen worden toegevoegd aan het lokale domein DefaultDom en worden genoemd &quot;Alle gebruikers met een *`[email domain]`* postidentiteitskaart&quot;
 * Maak een dynamische groep op basis van opgegeven criteria, zoals het e-maildomein, de beschrijving, de canonieke naam en de domeinnaam van de gebruiker. Een gebruiker moet aan alle opgegeven criteria voldoen om tot de dynamische groep te kunnen behoren. Als u een voorwaarde &quot;of&quot; wilt instellen, maakt u twee aparte dynamische groepen en voegt u deze twee groepen toe aan een lokale groep. U kunt deze methode bijvoorbeeld gebruiken om een groep gebruikers te maken die tot het e-maildomein @adobe.com behoren of waarvan de canonieke naam ou=adobe.com bevat. De gebruikers hoeven echter niet noodzakelijkerwijs aan beide voorwaarden te voldoen.
 
 Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatten. Een dynamische groep kan echter tot een bovenliggende groep behoren.
@@ -73,7 +76,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
 1. Geef op wanneer Gebruikersbeheer controleert op nieuwe e-maildomeinen. Deze tijd zou na de tijd van de domeinsynchronisatie moeten zijn omdat de verwezenlijking van dynamische groepen logisch slechts is als de domeinsynchronisatie wordt voltooid.
 
    * Om automatische synchronisatie op een dagelijkse basis toe te laten, typ de tijd in het formaat van 24 uur in Occurs Daily bij doos. Wanneer u uw instellingen opslaat, wordt deze waarde omgezet in een uitsnijdexpressie, die in het onderstaande vak wordt weergegeven.
-   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *`(dat wil zeggen controle bij 4 A.M. elke dag).
+   * Als u synchronisatie wilt plannen op een bepaalde dag van de week of maand, of in een bepaalde maand, selecteert u de gewenste uitsnijdexpressie in het vak. De standaardwaarde is `0 00 4 ? * *` (wat controle bij 4 A.M. betekent) elke dag).
 
       Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
@@ -90,13 +93,13 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
    >
    >De kenmerken E-mail, Beschrijving en Canonical Name zijn hoofdlettergevoelig wanneer u de operator Equals gebruikt. Ze zijn niet hoofdlettergevoelig bij Begint met, Eindigt met of Bevat operatoren.
 
-   **** E-mail: Het e-maildomein van de gebruiker, zoals `@adobe.com`.
+   **E-mail:Het e-maildomein van de** gebruiker, zoals  `@adobe.com`.
 
-   **** Omschrijving: Beschrijving van de gebruiker, zoals &quot;Computerwetenschapper&quot;
+   **Beschrijving:Beschrijving van** gebruiker, zoals &quot;Computerwetenschapper&quot;
 
-   **** Canonieke naam: De canonieke naam van de gebruiker, zoals `ou=adobe.com`
+   **Canonical Name:** User&#39;s canonical name, zoals  `ou=adobe.com`
 
-   **** Domeinnaam: De naam van het domein waartoe de gebruiker behoort, zoals `DefaultDom`. Het attribuut van de Naam van het Domein is case-sensitive wanneer het gebruiken van Bevat exploitant. Het is niet hoofdlettergevoelig met de operatoren Begint met, Eindigt met of Gelijk aan.
+   **Domeinnaam:** de naam van het domein waartoe de gebruiker behoort, zoals  `DefaultDom`. Het attribuut van de Naam van het Domein is case-sensitive wanneer het gebruiken van Bevat exploitant. Het is niet hoofdlettergevoelig met de operatoren Begint met, Eindigt met of Gelijk aan.
 
 1. Klik op Testen. Op een testpagina worden de eerste 200 gebruikers weergegeven die aan de gedefinieerde criteria voldoen. Klik op Sluiten.
 1. Als de test de verwachte resultaten heeft geretourneerd, klikt u op Volgende. Bewerk anders de dynamische groepscriteria en test het opnieuw.
@@ -106,18 +109,18 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
    * Selecteer het domein, selecteer het aantal items dat u wilt weergeven en klik op Zoeken.
    * Selecteer in de zoekresultaten de selectievakjes voor groepen waartoe de dynamische groep behoort en klik op OK.
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Als u rollen wilt toewijzen aan de dynamische groep, klikt u op Rollen zoeken, schakelt u de selectievakjes in voor elke rol die u wilt toewijzen aan de groep en klikt u op OK. De gebruikers in de groep erven rollen die op het groepsniveau worden toegewezen.
 1. Klik op Voltooien.
 
-## Details over een groep weergeven {#view-details-about-a-group}
+## Details weergeven over een groep {#view-details-about-a-group}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Gebruikers en groepen.
 1. Selecteer Groep in de lijst In en klik vervolgens op Zoeken. De resultaten van de zoekopdracht worden onder aan de pagina weergegeven. U kunt de lijst sorteren door op een van de kolomkoppen te klikken.
 1. Klik op de naam van de groep om details weer te geven over de groep. De pagina Groepdetails wordt weergegeven.
 1. Klik op Onderliggende principes om de directe leden van de groep weer te geven.
 
-## Een groep bewerken {#edit-a-group}
+## Een groep {#edit-a-group} bewerken
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Gebruikers en groepen.
 1. Ga als volgt te werk om de groep te zoeken die u wilt bewerken:
@@ -147,7 +150,7 @@ Een dynamische groep bevat alleen gebruikers. Het kan geen andere groepen bevatt
    * Als u een rol wilt toevoegen, schakelt u het selectievakje voor de rol in, klikt u op OK en vervolgens op Opslaan.
    * Als u de toewijzing van een rol ongedaan wilt maken, schakelt u het selectievakje voor de rol in, klikt u op Toewijzen ongedaan maken en klikt u vervolgens op Opslaan.
 
-## Een groep verwijderen {#delete-a-group}
+## Een groep {#delete-a-group} verwijderen
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Gebruikers en groepen.
 1. Selecteer Groepen in de lijst Zoeken en klik op Zoeken.

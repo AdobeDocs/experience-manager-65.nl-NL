@@ -16,23 +16,23 @@ ht-degree: 0%
 ---
 
 
-# API om de service voor formuliergegevensmodellen aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# API om formuliergegevensmodelservice aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
 ## Overzicht {#overview}
 
-Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld in een formuliergegevensmodel zijn geconfigureerd. Om de dienst van een gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of een JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [regelredacteur](/help/forms/using/rule-editor.md).
+Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Om een dienst van het gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of een JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van [rule redacteur](/help/forms/using/rule-editor.md).
 
-In dit document wordt het schrijven van een JavaScript met de `guidelib.dataIntegrationUtils.executeOperation` API voor het oproepen van een service centraal gesteld.
+Dit document is gericht op het schrijven van een JavaScript met de `guidelib.dataIntegrationUtils.executeOperation`-API om een service aan te roepen.
 
-## De API gebruiken {#using-the-api}
+## API {#using-the-api} gebruiken
 
-De `guidelib.dataIntegrationUtils.executeOperation` API roept een service aan vanuit een adaptief formulierveld. De API-syntaxis ziet er als volgt uit:
+De `guidelib.dataIntegrationUtils.executeOperation`-API roept een service aan vanuit een adaptief formulierveld. De API-syntaxis ziet er als volgt uit:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API geeft details over de servicebewerking op. De syntaxis van de structuur is als volgt.
+De structuur van de `guidelib.dataIntegrationUtils.executeOperation` API specificeert details over de de dienstverrichting. De syntaxis van de structuur is als volgt.
 
 ```javascript
 var operationInfo = {
@@ -80,20 +80,20 @@ De API-structuur geeft de volgende details over de servicebewerking op.
   </tr>
   <tr>
    <td><code>success</code></td>
-   <td>Retourneert waarden die zijn gebaseerd op de invoerargumenten voor de servicebewerking. Het is een optionele parameter die als callback functie wordt gebruikt.<br /> </td>
+   <td>Retourneert waarden die zijn gebaseerd op de invoerargumenten voor de servicebewerking. Het is een facultatieve parameter die als callback functie wordt gebruikt.<br /> </td>
   </tr>
   <tr>
    <td><code>failure</code></td>
-   <td>Toont een foutenmelding als de succesvolle callback functie er niet in slaagt om de outputwaarden te tonen die op de inputargumenten worden gebaseerd. Het is een optionele parameter die als callback functie wordt gebruikt.<br /> </td>
+   <td>Toont een foutenmelding als de succesvolle callback functie er niet in slaagt om de outputwaarden te tonen die op de inputargumenten worden gebaseerd. Het is een facultatieve parameter die als callback functie wordt gebruikt.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-## Voorbeeldscript om een service aan te roepen {#sample-script-to-invoke-a-service}
+## Voorbeeldscript om de service {#sample-script-to-invoke-a-service} aan te roepen
 
-In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation` API gebruikt om de `getAccountById` servicebewerking aan te roepen die in het `employeeAccount` formuliergegevensmodel is geconfigureerd.
+In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation`-API gebruikt om de `getAccountById`-servicebewerking aan te roepen die in het formuliergegevensmodel `employeeAccount` is geconfigureerd.
 
-De `getAccountById` bewerking neemt de waarde in het `employeeID` formulierveld op als invoer voor het `empId` argument en retourneert de werknemernaam, het accountnummer en het rekeningssaldo voor de corresponderende employee. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in `name` argument wordt bijvoorbeeld ingevuld in het `fullName` formulierelement en de waarde voor het `accountNumber` argument in het `account` formulierelement.
+De bewerking `getAccountById` neemt de waarde in het formulierveld `employeeID` als invoer voor het argument `empId` en retourneert de werknemernaam, het accountnummer en het rekeningssaldo voor de corresponderende employee. De uitvoerwaarden worden ingevuld in de opgegeven formuliervelden. De waarde in het argument `name` wordt bijvoorbeeld ingevuld in het formulierelement `fullName` en de waarde voor het argument `accountNumber` in het formulierelement `account`.
 
 ```javascript
 var operationInfo = {
@@ -111,25 +111,25 @@ var outputs = {
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
 
-## API gebruiken met callback-functie {#using-the-api-callback}
+## API gebruiken met callback functie {#using-the-api-callback}
 
-U kunt de service van het formuliergegevensmodel ook aanroepen met behulp van de `guidelib.dataIntegrationUtils.executeOperation` API met een callback-functie. De API-syntaxis ziet er als volgt uit:
+U kunt de service van het formuliergegevensmodel ook aanroepen met de API `guidelib.dataIntegrationUtils.executeOperation` met een callback-functie. De API-syntaxis ziet er als volgt uit:
 
 ```javascript
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, callbackFunction)
 ```
 
-De callback functie kan `success` `failure` en callback functies hebben.
+De callback functie kan `success` en `failure` callback functies hebben.
 
 ### Sampletcript van de steekproef met succes en mislukkingscallback functies {#callback-function-success-failure}
 
-In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation` API gebruikt om de `GETOrder` servicebewerking aan te roepen die in het `employeeOrder` formuliergegevensmodel is geconfigureerd.
+In het volgende voorbeeldscript wordt de `guidelib.dataIntegrationUtils.executeOperation`-API gebruikt om de `GETOrder`-servicebewerking aan te roepen die in het formuliergegevensmodel `employeeOrder` is geconfigureerd.
 
-De `GETOrder` bewerking neemt de waarde in het `Order ID` formulierveld op als invoer voor het `orderId` argument en retourneert de waarde voor het aantal orders in de `success` callback-functie.  Als de `success` callback functie niet de orde hoeveelheid terugkeert, toont de `failure` callback functie het `Error occured` bericht.
+De bewerking `GETOrder` neemt de waarde in het formulierveld `Order ID` als invoer voor het argument `orderId` en retourneert de waarde voor het aantal orders in de callback-functie `success`.  Als de `success` callback functie niet de orde hoeveelheid terugkeert, toont de `failure` callback functie `Error occured` bericht.
 
 >[!NOTE]
 >
-> Als u de `success` callback-functie gebruikt, worden de uitvoerwaarden niet ingevuld in de opgegeven formuliervelden.
+> Als u de callback-functie `success` gebruikt, worden de uitvoerwaarden niet in de opgegeven formuliervelden ingevuld.
 
 ```javascript
 var operationInfo = {

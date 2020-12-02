@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Inline voorwaarde en herhaling in Interactieve Mededelingen en letters{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
-## Inline-voorwaarden {#inline-conditions}
+## Inline voorwaarden {#inline-conditions}
 
 Met AEM Forms kunt u inline-voorwaarden in tekstmodules gebruiken om de weergave van tekst te automatiseren die afhankelijk is van de context of de gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
 
@@ -32,15 +32,15 @@ Meer informatie:
 * [Overzicht van Correspondentenbeheer](/help/forms/using/cm-overview.md)
 * [Tekst in interactieve communicatie](../../forms/using/texts-interactive-communications.md)
 
-### Voorbeeld: Regels gebruiken om inline tekst in interactieve communicatie te conditioneren {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### Voorbeeld: Regels gebruiken om inline tekst in interactieve communicatie {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication} te conditioneren
 
 Als u een zin, alinea of tekenreeks in een interactieve communicatie wilt conditionaliseren, kunt u een regel maken in het desbetreffende tekstdocumentfragment. In het volgende voorbeeld wordt een regel gebruikt om alleen aan de Amerikaanse ontvangers van de interactieve communicatie een gratis nummer weer te geven.
 
-Zie Regel maken in tekst in [Teksten in interactieve communicatie](../../forms/using/texts-interactive-communications.md)voor meer informatie.
+Zie Regel maken in tekst in [Teksten in interactieve communicatie](../../forms/using/texts-interactive-communications.md) voor meer informatie.
 
 Zodra u het tekstfragment in een Interactieve Communicatie omvat en de Agent gebruikt de Agent UI om een Interactieve Mededeling voor te bereiden, worden de (model van vormgegevens) gegevens voor de ontvangers geëvalueerd en de tekst wordt getoond slechts aan de ontvangers in de V.S.
 
-### Voorbeeld: Het gebruiken van gealigneerde voorwaarde in een brief om het aangewezen adres terug te geven  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Voorbeeld: Het gebruiken van gealigneerde voorwaarde in een brief om het aangewezen adres {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address} terug te geven
 
 U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in de aangewezen tekstmodule op te nemen. Het volgende voorbeeld gebruikt twee voorwaarden om het aangewezen adres, Sir of Ma&#39;am, in een brief te evalueren en te tonen die op het DD element Gender wordt gebaseerd. Met vergelijkbare stappen kunt u andere voorwaarden maken.
 
@@ -48,7 +48,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 >
 >Als uw bestaande activa oude voorwaarde/herhaalde uitdrukkingen (pre 6.2 SP1 GFP 4) omvatten, tonen de activa oude syntaxis van voorwaarde en herhalen. De oude voorwaarde/herhaling werkt echter wel. De nieuwe en oude voorwaarde/herhalingsexpressies zijn compatibel met elkaar om een geneste mix van oude en nieuwe voorwaarde/herhalingsexpressies te maken.
 
-1. Selecteer in de relevante tekstmodule het tekstgedeelte dat u wilt conditionaliseren en tikken op **Voorwaarde**.
+1. Selecteer in de betreffende tekstmodule het tekstgedeelte dat u wilt conditionaliseren en tik op **Condition**.
 
    ![1_selecttext](assets/1_selecttext.png)
 
@@ -58,7 +58,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    >[!NOTE]
    >
-   >Lege of ongeldige voorwaardelijke expressie kan niet worden opgeslagen. Er moet een geldige voorwaardelijke expressie binnen voorkomen `${}` om de expressie op te slaan.
+   >Lege of ongeldige voorwaardelijke expressie kan niet worden opgeslagen. Er moet een geldige voorwaardelijke expressie in `${}` staan om de expressie op te slaan.
 
 1. Ga als volgt te werk om een voorwaarde te maken voor het evalueren of de geselecteerde/geconditioneerde tekst in de letter staat en tik vervolgens op het vinkje om de expressie op te slaan:
 
@@ -68,13 +68,13 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
    ${DD_creditcard_Gender=="Male"}
    ```
 
-   Voor meer informatie bij het creëren van de uitdrukking, zie het **Creëren van uitdrukkingen en verre functies met uitdrukkingsbouwer** in de Bouwer [van de](../../forms/using/expression-builder.md)Uitdrukking. De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Zie [Gegevenswoordenboek](../../forms/using/data-dictionary.md)voor meer informatie.
+   Zie **Expressies en externe functies maken met expressiebouwer** in [Expressiebouwer](../../forms/using/expression-builder.md) voor meer informatie over het maken van de expressie. De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Zie [Gegevenswoordenboek](../../forms/using/data-dictionary.md) voor meer informatie.
 
    Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. Tik op de handgreep om het pop-upmenu van de voorwaarde weer te geven. U kunt de voorwaarde dan bewerken of verwijderen.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
-1. Voeg een vergelijkbare voorwaarde in door de tekst te selecteren `Ma'am`.
+1. Voeg een vergelijkbare voorwaarde in door de tekst `Ma'am` te selecteren.
 
    ```javascript
    ${DD_creditcard_Gender == "Female"}
@@ -85,11 +85,11 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
 
-   Zie [Gegevenswoordenboek](../../forms/using/data-dictionary.md)voor meer informatie.
+   Zie [Gegevenswoordenboek](../../forms/using/data-dictionary.md) voor meer informatie.
 
    ![5_letteruitvoer](assets/5_letteroutput.png)
 
-## Herhalen {#repeat}
+## {#repeat} herhalen
 
 U kunt dynamische informatie in uw Interactieve Communicatie/brief, zoals transacties in een creditcardverklaring hebben, waarvan de instantie of het voorkomen met elke geproduceerde brief kan blijven veranderen. Met Herhalen kunt u dergelijke dynamische informatie in het tekstdocumentfragment opmaken en structureren.
 
@@ -139,7 +139,7 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling aan s
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### Voorbeeld: Herhaling gebruiken in een brief om een lijst met creditcardtransacties op te maken, te structureren en weer te geven {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Voorbeeld: Herhaling gebruiken in een brief aan formaat, structuur, en tonen een lijst van creditcardtransacties {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herhalen om de creditcardtransacties in een letter te structureren en weer te geven. Met vergelijkbare stappen kunt u herhalen in een ander scenario gebruiken.
 
@@ -172,7 +172,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    ![2_repeat_selecttext](assets/2_repeat_selecttext.png)
 
-1. Tik op **Herhalen**. Het dialoogvenster Herhalen wordt weergegeven met een lege inline voorwaarde.
+1. Tik **Herhalen**. Het dialoogvenster Herhalen wordt weergegeven met een lege inline voorwaarde.
 
    ![3_repeat_dialog](assets/3_repeat_dialog.png)
 
@@ -202,7 +202,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    * Een voorbeeld-XML-gegevensbestand dat is gemaakt op basis van het relevante gegevenswoordenboek terwijl de letter wordt voorvertoond met voorbeeldgegevens.
    * Een XML-gegevensbestand dat is gekoppeld aan het desbetreffende gegevenswoordenboek.
 
-   Zie [Gegevenswoordenboek](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)voor meer informatie.
+   Zie [Gegevenswoordenboek](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html) voor meer informatie.
 
    ![6_repeatOutputPreview](assets/6_repeatoutputpreview.png)
 
@@ -212,9 +212,9 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    >
    >U kunt voorwaarde en herhaling slechts opnemen terwijl het creëren van of het uitgeven van de relevante tekstmodule. Terwijl u een voorvertoning van de letter weergeeft, kunt u wel bewerkingen in de tekstmodule uitvoeren, maar kunt u geen voorwaarde of herhaling invoegen.
 
-## Inline voorwaarde en herhaling gebruiken - sommige gebruiksgevallen  {#using-inline-condition-and-repeat-some-use-cases}
+## Inline voorwaarde en herhaling gebruiken - sommige gebruiksgevallen {#using-inline-condition-and-repeat-some-use-cases}
 
-### Herhalen binnen voorwaarde {#repeat-within-condition}
+### Herhalen in voorwaarde {#repeat-within-condition}
 
 Het kan nodig zijn om herhaling te gebruiken binnen een bepaalde conditie. Met Correspondentiebeheer kunt u herhalingen gebruiken binnen een inlineconstructie.
 
@@ -230,7 +230,7 @@ Op dezelfde manier kunt u volgens uw vereiste het volgende maken:
 * Een of meer voorwaarden binnen een herhaling
 * Een combinatie van voorwaarden en herhaling binnen een voorwaarde of herhaling
 
-### Lege inline-voorwaarde {#empty-inline-condition}
+### Lege inline voorwaarde {#empty-inline-condition}
 
 Mogelijk moet u lege inline-voorwaarden invoegen en later tekst en DD-elementen insluiten. Met Correspondence Management kunt u dat doen.
 

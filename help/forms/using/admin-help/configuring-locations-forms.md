@@ -1,6 +1,6 @@
 ---
-title: Locaties voor Forms configureren
-seo-title: Locaties voor Forms configureren
+title: Locaties configureren voor Forms
+seo-title: Locaties configureren voor Forms
 description: Leer hoe u locatie voor Forms configureert.
 seo-description: Leer hoe u locatie voor Forms configureert.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
 
-# Locaties voor Forms configureren {#configuring-locations-for-forms}
+# Locaties configureren voor Forms {#configuring-locations-for-forms}
 
 U kunt de URL, URI en bestandslocaties van kenmerken opgeven, zoals de hoofdmap van het web, de locatie van de formulieren die moeten worden opgehaald, het PDF-bestand met het zaadbestand dat wordt gebruikt in PDFForm-transformaties en de cachelocatie.
 
@@ -41,29 +44,29 @@ In het volgende voorbeeld wordt naar dezelfde inhoud verwezen (met Inhoudsopgave
 
 `(BaseURL)/subdir/image1.jpg`
 
-**FS Web Root URI:** De URL van de webtoepassing Forms. U kunt dit vak leeg laten als de webtoepassing Forms en de clienttoepassing op dezelfde toepassingsserver worden geïmplementeerd. De URL van de webhoofdmap van de Forms API wordt gebruikt.
+**FS Web Root URI:** De URL van de Forms-webtoepassing. U kunt dit vak leeg laten als de Forms-webtoepassing en de clienttoepassing op dezelfde toepassingsserver worden geïmplementeerd. De URL van de Forms API-webhoofdmap wordt gebruikt.
 
 Als de Forms-webtoepassing en de clienttoepassing niet op dezelfde toepassingsserver worden geïmplementeerd, geeft u in dit vak de URL voor de Forms-webtoepassing op, zoals in dit voorbeeld:
 
 `https://<host name>:<port>/FormServer`
 
-Waar `host name`en `port` zijn de servernaam en het poortnummer van de server die als host fungeert voor de Forms-webtoepassing.
+Hierbij zijn `host name`en `port` de servernaam en het poortnummer van de server die als host fungeert voor de Forms-webtoepassing.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Web Root URI:** De hoofdmap van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), gespecificeerd door AEM vormen SDK, om een absolute URL te construeren om tot toepassing-specifieke Web-inhoud toegang te hebben.
+**Web Root URI:** De webhoofdmap van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI van basisinhoud:** De URI of absolute locatie waaruit formulieren worden opgehaald. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
+**URI met hoofdmap van inhoud:** de URI of absolute locatie waaruit formulieren worden opgehaald. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI XCI-configuratie:** De relatieve of absolute locatie waarin het XCI-bestand dat voor rendering wordt gebruikt, wordt gevonden. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM-formulierbestand EAR bevindt.
+**XCI-configuratie-URI:** de relatieve of absolute locatie waar het XCI-bestand dat voor rendering wordt gebruikt, zich bevindt. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM formulieren EAR-bestand bevindt.
 
 De standaardwaarde is `com/adobe/formServer/PA/pa.xci`.
 
-**URI lettertypetoewijzing:** De relatieve of absolute locatie van het fonttoewijzingsbestand. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het implementeerbare AEM-formulierbestand EAU bevindt.
+**Font Map URI:** de relatieve of absolute locatie van het fonttoewijzingsbestand. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het inzetbare AEM van het EAR-bestand bevindt.
 
 Het fonttoewijzingsbestand wordt gebruikt om aangepaste fonttoewijzingen te maken voor HTML-transformaties in formulieren. Hierdoor kunt u opgeven welk font wordt vervangen wanneer een font niet beschikbaar is op de computer van de client.
 
@@ -73,21 +76,21 @@ De volgende vermelding is een voorbeeld van een item in het fonttoewijzingsbesta
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**PDF-zaadbestand:** Het oorspronkelijke PDF-bestand dat wordt gebruikt in een PDFForm-transformatie om de levering te optimaliseren. In het PDF-bestand met de zaadnaam wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-stroom, afbeelding en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
+**PDF-bestand met zaad:** het eerste PDF-bestand dat in een PDFForm-transformatie wordt gebruikt om de aflevering te optimaliseren. In het PDF-bestand met de zaadnaam wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-stroom, afbeelding en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Cachelocatie:** Hiermee geeft u de locatie op van de schijfcache van Forms. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
+**Cachelocatie:** geeft de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
 
-**Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
+**Standaardlocatie:** dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 
 * **JBoss:** [JBoss Home]\server\[installatietype]\svcdata\FormServer\Cache
 * **WebLogic:** [WebLogic Home]\user_projects\domains\[domeinnaam aem-formulieren]\adobe\[naam formulierserver]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp-map:** De cache wordt gemaakt in een submap van de map AEM forms temp, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De submap heeft de naam adobeform_[servername].
+**LC Temp Directory:** de cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De submap heeft de naam adobeform_[servernaam].
 
 >[!NOTE]
 >
->Als u een hulpprogramma voor tijdelijke reiniging gebruikt, moet u er rekening mee houden dat het verwijderen van deze mappen geen invloed heeft op de functionaliteit, maar dat dit de prestaties gedurende korte tijd aanzienlijk kan beïnvloeden totdat de nieuwe cache wordt gemaakt. U voorkomt dit door deze mappen niet te verwijderen terwijl u de tijdelijke map voor AEM-formulieren wist.
+>Als u een hulpprogramma voor tijdelijke reiniging gebruikt, moet u er rekening mee houden dat het verwijderen van deze mappen geen invloed heeft op de functionaliteit, maar dat dit de prestaties gedurende korte tijd aanzienlijk kan beïnvloeden totdat de nieuwe cache wordt gemaakt. U voorkomt dit door deze mappen niet te verwijderen terwijl u de tijdelijke map voor AEM formulieren wist.
 

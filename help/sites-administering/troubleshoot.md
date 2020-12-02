@@ -1,8 +1,8 @@
 ---
-title: Problemen met AEM oplossen
-seo-title: Problemen met AEM oplossen
-description: Meer informatie over probleemoplossing met AEM.
-seo-description: Meer informatie over probleemoplossing met AEM.
+title: AEM
+seo-title: AEM
+description: Meer informatie over het oplossen van problemen met AEM.
+seo-description: Meer informatie over het oplossen van problemen met AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,23 +12,26 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
 
-# Problemen met AEM oplossen {#troubleshooting-aem}
+# AEM {#troubleshooting-aem} oplossen
 
-In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
+De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM kunt ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
 >[!NOTE]
 >
->Raadpleeg [Problemen met auteurs oplossen voor AEM&#39;s als u problemen met het schrijven van programmacode ondervindt.](/help/sites-authoring/troubleshooting.md)
+>Zie [Problemen met auteurs oplossen als u problemen met het schrijven van AEM oplost.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
 >Wanneer het ervaren van problemen het ook de moeite waard is de lijst van [Bekende Kwesties](/help/release-notes/known-issues.md) voor uw instantie (versie en de dienstpakken) te controleren.
 
-## Het oplossen van problemen scenario&#39;s voor Beheerders {#troubleshooting-scenarios-for-administrators}
+## Problemen met scenario&#39;s voor beheerders {#troubleshooting-scenarios-for-administrators} oplossen
 
 De volgende lijst verstrekt een overzicht van problemen beheerders kunnen moeten problemen oplossen:
 
@@ -48,7 +51,7 @@ De volgende lijst verstrekt een overzicht van problemen beheerders kunnen moeten
   </tr>
   <tr>
    <td><p>Systeembeheerder</p> </td>
-   <td><p>Het AEM-welkomstscherm wordt niet weergegeven in de browser nadat u dubbelklikt op AEM CM QuickStart</p> </td>
+   <td><p>Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM CM QuickStart</p> </td>
   </tr>
   <tr>
    <td><p>Systeembeheerder</p> <p>beheerder</p> </td>
@@ -63,30 +66,30 @@ De volgende lijst verstrekt een overzicht van problemen beheerders kunnen moeten
 
 ## Installatieproblemen {#installation-issues}
 
-Zie [Gemeenschappelijke Problemen](/help/sites-deploying/troubleshooting.md#common-installation-issues) van de Installatie voor informatie over de volgende het oplossen van problemenscenario&#39;s:
+Zie [Algemene installatiekwesties](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende probleemoplossingsscenario&#39;s:
 
 * Dubbelklikken op de Quickstart-strip heeft geen effect op het JAR-bestand met een ander programma (zoals archiefbeheer).
 * Toepassingen die op CRX worden uitgevoerd, genereren fouten die zich buiten het geheugen bevinden.
-* Het AEM-welkomstscherm wordt niet in de browser weergegeven nadat u op AEM QuickStart hebt gedubbelklikt.
+* Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart.
 
 ## Methoden voor de Analyse van het Oplossen van problemen {#methods-for-troubleshooting-analysis}
 
-### Een Thread Dump maken {#making-a-thread-dump}
+### Een thread Dump {#making-a-thread-dump} maken
 
-De draadstortplaats is een lijst van alle draden van Java die momenteel actief zijn. Als AEM niet behoorlijk antwoordt, kan de draadstortplaats u helpen kadels of andere problemen identificeren.
+De draadstortplaats is een lijst van alle draden van Java die momenteel actief zijn. Als AEM niet behoorlijk antwoordt, kan de draadstortplaats u helpen kastjes of andere problemen identificeren.
 
-### Dumper met slingerdraad gebruiken {#using-sling-thread-dumper}
+### Het gebruiken van de Dumper van de Dumper van de Schilddraad {#using-sling-thread-dumper}
 
-1. Open de **AEM-webconsole**; bijvoorbeeld om `https://localhost:4502/system/console/`.
-1. Selecteer de **Draden** onder **Status** tabel.
+1. Open de **AEM webconsole**; bijvoorbeeld op `https://localhost:4502/system/console/`.
+1. Selecteer **Draden** onder **Status** tabel.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
-### jstack gebruiken (opdrachtregel) {#using-jstack-command-line}
+### jstack (opdrachtregel) {#using-jstack-command-line} gebruiken
 
 1. Zoek de PID (process id) van de AEM Java-instantie.
 
-   U kunt bijvoorbeeld `ps -ef` of `jps`.
+   U kunt bijvoorbeeld `ps -ef` of `jps` gebruiken.
 
 1. Uitvoeren:
 
@@ -96,27 +99,27 @@ De draadstortplaats is een lijst van alle draden van Java die momenteel actief z
 
 >[!NOTE]
 >
->U kunt de draaddumps aan een logboekdossier toevoegen door de `>>` outputredirection te gebruiken:
+>U kunt de draaddumps aan een logboekdossier toevoegen door `>>` outputredirection te gebruiken:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Zie de [Hoe u de Thread Dumps kunt gebruiken vanuit een JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) -documentatie voor meer informatie
+Zie de [Hoe te om Dumpels van de Draad van een JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) documentatie voor meer informatie te nemen
 
 ### Controleren op niet-afgesloten JCR-sessies {#checking-for-unclosed-jcr-sessions}
 
-Wanneer functionaliteit is ontwikkeld voor AEM WCM, kunnen JCR-sessies worden geopend (vergelijkbaar met het openen van een databaseverbinding). Als de geopende sessies nooit gesloten zijn, kan uw systeem de volgende symptomen ervaren:
+Wanneer de functionaliteit voor AEM WCM wordt ontwikkeld, kunnen de zittingen van JCR worden geopend (vergelijkbaar met het openen van een gegevensbestandverbinding). Als de geopende sessies nooit gesloten zijn, kan uw systeem de volgende symptomen ervaren:
 
 * Het systeem wordt langzamer.
 * U kunt veel CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) toont het aantal geheime voorgeheugens, elke zittingen opent verscheidene geheime voorgeheugens.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
-Om unclosed zittingen te analyseren en te weten te komen welke code een zitting niet sluit, verwijs naar het artikel van de Kennisbank [analyseert Unclosed Sessions](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
+Om unclosed zittingen te analyseren en te weten te komen welke code een zitting niet sluit, verwijs naar het artikel [Analyze Unclosed Sessions](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) van de Kennisbank.
 
-### De webconsole van Adobe Experience Manager gebruiken {#using-the-adobe-experience-manager-web-console}
+### De Adobe Experience Manager-webconsole {#using-the-adobe-experience-manager-web-console} gebruiken
 
 De status van de OSGi-bundels kan ook een vroege indicatie geven van mogelijke problemen.
 
-1. Open de **AEM-webconsole**; bijvoorbeeld om `https://localhost:4502/system/console/`.
+1. Open de **AEM webconsole**; bijvoorbeeld op `https://localhost:4502/system/console/`.
 1. Selecteer **Bundels** onder **OSGI** tabblad.
 1. Vinkje:
 

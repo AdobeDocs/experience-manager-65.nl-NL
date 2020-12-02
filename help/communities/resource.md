@@ -18,15 +18,15 @@ ht-degree: 2%
 ---
 
 
-# Creeer en wijs Middelen toe Enablement {#create-and-assign-enablement-resources}
+# Creeer en wijs Middelen {#create-and-assign-enablement-resources} toe
 
-## Een Enablement Resource toevoegen {#add-an-enablement-resource}
+## Een Enablement Resource {#add-an-enablement-resource} toevoegen
 
 Om een enablement middel aan de nieuwe communautaire plaats toe te voegen:
 
 * Meld u aan als systeembeheerder bij de instantie van de auteur:
-   * Bijvoorbeeld: [http://localhost:4502/](http://localhost:4503/)
-* Selecteer in globale navigatie **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
+   * Bijvoorbeeld [http://localhost:4502/](http://localhost:4503/)
+* Selecteer **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
    ![bronnen](assets/resources.png)
 
@@ -56,7 +56,7 @@ Vul de basisinformatie voor de Middel in:
 
 * **[!UICONTROL Show in Catalog]**
 
-   Stel deze in op **Aan**.
+   Stel dit in op **Op**.
 
 * **[!UICONTROL Description]**
 
@@ -74,7 +74,7 @@ Vul de basisinformatie voor de Middel in:
 
 Terwijl het lijkt alsof de veelvoudige Middelen zouden kunnen worden geselecteerd, wordt slechts één toegestaan.
 
-Selecteer `'+' icon`in de rechterbovenhoek het item om het proces te starten waarbij de bron wordt geïdentificeerd door de bron te kiezen.
+Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om het Middel te kiezen door de bron te identificeren.
 
 ![add-content](assets/add-content.png)
 
@@ -94,21 +94,21 @@ Upload een resource. Als een videobron een aangepaste afbeelding uploadt om weer
 
 * **[!UICONTROL Due Date]**
 
-   *(Optioneel)* Er kan een datum worden geselecteerd waarop de toewijzing moet worden voltooid.
+   *(Optioneel)* Er kan een datum worden gekozen waarop de toewijzing moet worden voltooid.
 
 * **[!UICONTROL Resource Author]**
 
-   *(Optioneel)* Laat dit veld leeg.
+   *(Optioneel)* Laat leeg.
 
 * **[!UICONTROL Resource Contact&ast;]**
 
-   *(Vereist)* Gebruik het keuzemenu om lid te selecteren `Quinn Harper`.
+   *(Vereist)* Gebruik het keuzemenu om lid te selecteren  `Quinn Harper`.
 
 * **[!UICONTROL Resource Expert]**
 
-   *(Optioneel)* Laat dit veld leeg.
+   *(Optioneel)* Laat leeg.
 
-   **Opmerking**: Als gebruikers of groepen niet zichtbaar zijn, controleert u of ze aan de `Community Enable Members` groep zijn toegevoegd en op de publicatie-instantie zijn *opgeslagen* .
+   **Opmerking**: Als gebruikers of groepen niet zichtbaar zijn, controleert u of ze aan de  `Community Enable Members` groep zijn toegevoegd en op het publicatieexemplaar zijn  ** opgeslagen.
 
    ![enablement-settings](assets/enablement-settings.png)
 
@@ -130,23 +130,23 @@ Succesvolle verwezenlijking van het Middel keert aan de console van Middelen met
 
 Om een nieuwe versie van het enablement middel te uploaden, wordt het geadviseerd om een nieuw Middel tot stand te brengen, en dan leden van de oude versie uit te schrijven en hen in de nieuwe versie in te schrijven.
 
-### De bron publiceren {#publish-the-resource}
+### De bron {#publish-the-resource} publiceren
 
 Voordat ingeschreven personen de toegewezen cursus kunnen zien, moet deze worden gepubliceerd:
 
-* Het pictogram van de wereld `Publish` selecteren
+* Het pictogram wereld `Publish` selecteren
 
 Activering wordt bevestigd met een succesbericht:
 
 ![publicatiebron](assets/publish-resource.png)
 
-## Een tweede Enablement Resource toevoegen {#add-a-second-enablement-resource}
+## Een tweede Enablement Resource {#add-a-second-enablement-resource} toevoegen
 
 Herhaal de bovenstaande stappen om een tweede gerelateerde enablement-resource te maken en te publiceren waaruit een leerpad wordt gemaakt.
 
 ![add-resource](assets/add-resource.png)
 
-**Publiceer** de tweede bron.
+**De tweede resource** publiceren.
 
 Keer terug naar de lijst van de Leergids van Enablement van de Middelen van het.
 
@@ -158,12 +158,12 @@ Keer terug naar de lijst van de Leergids van Enablement van de Middelen van het.
 
 Een leerpad is een logische groepering van bronnen voor activering die een cursus vormen.
 
-* Van de console van Middelen, selecteer `+ Create`
+* Van de console van Middelen, uitgezocht `+ Create`
 * Selecteer **[!UICONTROL Learning Path]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Voeg de **[!UICONTROL Basic Info]**:
+Voeg **[!UICONTROL Basic Info]** toe:
 
 * **[!UICONTROL Learning Path Name]**
 
@@ -191,9 +191,9 @@ Sla het volgende deelvenster over omdat er geen in de eerste plaats leerpaden zi
 
 In het deelvenster Bronnen toevoegen:
 
-* Selecteer `+ Add Resources` om de 2 skissessies te selecteren die u wilt toevoegen aan het leerpad.
+* Selecteer `+ Add Resources` om de 2 skislessiebronnen te selecteren die u aan het leerpad wilt toevoegen.
 
-   Opmerking: Alleen **gepubliceerde** bronnen kunnen worden geselecteerd.
+   Opmerking: Alleen **published** Bronnen kunnen worden geselecteerd.
 
 >[!NOTE]
 >
@@ -211,11 +211,11 @@ In het deelvenster Bronnen toevoegen:
 
 * **[!UICONTROL Add Assignees]**
 
-   Gebruik het keuzemenu om de `Community Ski Class` groep te selecteren die leden moet bevatten `Riley Taylor` en `Sidney Croft.`
+   Gebruik het keuzemenu om de `Community Ski Class` groep te selecteren die leden `Riley Taylor` en `Sidney Croft.` zou moeten omvatten
 
 * **[!UICONTROL Learning Path Contact&ast;]**
 
-   *(Vereist)* Gebruik het keuzemenu om lid te selecteren `Quinn Harper`.
+   *(Vereist)* Gebruik het keuzemenu om lid te selecteren  `Quinn Harper`.
 
 * Selecteer **[!UICONTROL Create]**.
 
@@ -223,5 +223,5 @@ In het deelvenster Bronnen toevoegen:
 
 De succesvolle verwezenlijking van de het leren weg keert aan de console van Middelen met de pas gecreëerde het leren weg geselecteerd terug. Vanuit deze console is het mogelijk studenten te publiceren, toe te voegen en andere instellingen te wijzigen.
 
-**Publiceer** het leerpad.
+**Het leerpad** publiceren.
 

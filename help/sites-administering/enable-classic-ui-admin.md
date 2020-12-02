@@ -1,6 +1,6 @@
 ---
-title: Beheerconsoles
-seo-title: Beheerconsoles
+title: Admin Consoles
+seo-title: Admin Consoles
 description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in AEM.
 seo-description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
@@ -12,19 +12,22 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
 
-# Beheerconsoles{#admin-consoles}
+# Admin Consoles{#admin-consoles}
 
 De mogelijkheid om via de beheerconsoles over te schakelen op de klassieke gebruikersinterface is standaard uitgeschakeld. Daarom worden de pop-uppictogrammen die werden gezien toen de muis over bepaalde consolepictogrammen beweegt, die toegang tot klassieke UI toestaan, niet meer getoond.
 
-Elke console die een Klassieke versie UI binnen heeft `/libs/cq/core/content/nav` kan individueel worden re-toegelaten zodat de optie Klassieke UI **** opnieuw over het consolepictogram verschijnt wanneer het over wordt gemouseover.
+Elke console die een Klassieke versie UI in `/libs/cq/core/content/nav` heeft kan individueel worden re-toegelaten zodat **Klassieke UI** optie opnieuw over het consolepictogram verschijnt wanneer het over wordt gemouseover.
 
 In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatsen.
 
-1. Gebruikend CRXDE Lite, vind de knoop die aan de admin console beantwoordt waarvoor u Klassieke UI opnieuw wilt toelaten. Deze zijn te vinden onder:
+1. Gebruikend CRXDE Lite, vind de knoop die aan de admin console beantwoordt waarvoor u Klassieke UI wilt re-toelaten. Deze zijn te vinden onder:
 
    `/libs/cq/core/content/nav`
 
@@ -36,10 +39,10 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
    `/libs/cq/core/content/nav/sites`
 
-1. Maak een bedekking met de optie **Overlay knooppunt** . bijvoorbeeld:
+1. Maak een overlay met de optie **Overlay Node**; bijvoorbeeld:
 
-   * **Pad**: `/apps/cq/core/content/nav/sites`
-   * **Locatie** bedekking: `/apps/`
+   * **Pad**:  `/apps/cq/core/content/nav/sites`
+   * **Locatie** bedekking:  `/apps/`
    * **Identieke knooppunttypen**: actief (schakel het selectievakje in)
 
 1. Voeg de volgende booleaanse eigenschap toe aan het bovenliggende knooppunt:

@@ -35,33 +35,33 @@ De functie Forum biedt een gebied voor ingetekende sitebezoekers (leden van de c
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 * De forumfunctie toevoegen aan een AEM-site.
-* De montages van de configuratie voor de `Forum` component.
+* De montages van de configuratie voor `Forum` component.
 
 ### Een forum toevoegen aan een pagina {#adding-a-forum-to-a-page}
 
-Als u een `Forum` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Forum`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Forum`
 
 en sleep het naar zijn plaats op een pagina waar het forum zou moeten verschijnen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) worden opgenomen, wordt de `Forum` component als volgt weergegeven:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) worden opgenomen, wordt de `Forum`-component op deze manier weergegeven:
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-### Een forum configureren {#configuring-a-forum}
+### Een forum {#configuring-a-forum} configureren
 
-Selecteer de geplaatste `Forum` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Forum` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
 ![forum-config](assets/forum-config.png)
 
-#### Het tabblad Instellingen {#settings-tab}
+#### Tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoorden:
+Geef onder het tabblad **Instellingen** instellingen voor onderwerpen en antwoorden op:
 
 * **Miniatuur van bijlage toestaan**
 
@@ -94,7 +94,7 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **Tagveld** ). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie **Veld labelen** tabblad). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -102,7 +102,7 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 * **Volgen toestaan**
 
-   Indien deze optie is ingeschakeld, dient u de volgende functie voor forumposten op te nemen, waardoor leden op de [hoogte kunnen worden gebracht](/help/communities/notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, neemt u de volgende functie voor forumposten op, waardoor leden [op de hoogte worden gesteld](/help/communities/notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **Vastzetten toestaan**
 
@@ -114,17 +114,18 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 * **E-mailabonnementen toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Max. bestandsgrootte**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **Maximale bestandsgrootte** van afbeelding alleen relevant koppelen als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
+* **Max.**
+grootte afbeeldingsbestand bijvoegenAlleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
 * **Reacties met verbindingen toestaan**
 
@@ -144,7 +145,7 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 * **Badges weergeven**
 
-   Indien ingeschakeld, verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, toont u verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) met het blogbericht van een lid. De optie Standaard is uitgeschakeld.
 
 * **Geprivilegieerde leden toestaan**
 
@@ -172,11 +173,11 @@ Geef op het tabblad **Instellingen** instellingen op voor onderwerpen en antwoor
 
 >[!NOTE]
 >
->Het kan nodig zijn om zowel `AllowThreaded Replies` als `Allow users to Delete Comments and Topics` om opmerkingen over een onderwerp mogelijk te maken.
+>Het kan nodig zijn om zowel `AllowThreaded Replies` als `Allow users to Delete Comments and Topics` te controleren om commentaren op een onderwerp toe te laten.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Onder **De Moderatie van de Gebruiker** lusje, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor meer informatie.
 
 * **Posten weigeren**
 
@@ -210,13 +211,13 @@ Onder het lusje van de Moderatie **van de** Gebruiker, specificeer hoe de gepost
 
    Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad Tagveld {#tag-field-tab}
+#### Tabblad {#tag-field-tab} voor tagveld
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **Instellingen** , beperkt op basis van de gekozen naamruimten.
+Onder het tabblad **Tagveld** worden de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen**, beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen**. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
@@ -224,7 +225,7 @@ Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien t
 
 #### Tabblad Vertaling {#translation-tab}
 
-Als op het tabblad **Vertaling** vertaling is ingeschakeld voor de site van de gebruikersgemeenschap, kan de vertaling worden ingesteld op het vertalen van het gehele onderwerp of van geselecteerde artikelen.
+Onder **Vertaling** tabel, als vertaling voor de communautaire plaats wordt toegelaten, kan de vertaling worden geplaatst om het volledige onderwerp of geselecteerde posten te vertalen.
 
 * **Alles vertalen**
 
@@ -232,28 +233,28 @@ Als op het tabblad **Vertaling** vertaling is ingeschakeld voor de site van de g
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef op onder het tabblad **Sorteerinstellingen** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het tabblad **Instellingen sorteren** op hoe de geposte opmerkingen moeten worden gesorteerd wanneer ze worden weergegeven.
 
 * **Sorteren op**
 
-   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is dit `Newest, Oldest, Last Updated`.
+   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. De standaardwaarde is `Newest, Oldest, Last Updated`.
 
 * **Instellen als standaard**
 
-   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is dit `Newest`.
+   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. De standaardwaarde is `Newest`.
 
 * **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
 
    Trek naar beneden om een van de volgende opties te selecteren: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
-   Standaard is dit `All`.
+   De standaardwaarde is `All`.
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
-Meer informatie kunt u vinden op de pagina [Forum Essentials](/help/communities/essentials-forum.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Forum Essentials](/help/communities/essentials-forum.md) voor ontwikkelaars.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](/help/communities/moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](/help/communities/tag-ugc.md)labelen voor informatie over het labelen van geposte onderwerpen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor een vertaling van geposte onderwerpen en opmerkingen](/help/communities/translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor een vertaling van geposte onderwerpen en opmerkingen.

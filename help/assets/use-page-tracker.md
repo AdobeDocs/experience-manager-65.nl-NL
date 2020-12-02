@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Paginatracering gebruiken en code insluiten in webpagina&#39;s {#using-page-tracker-and-embed-code-in-web-pages}
+# Paginacontracker gebruiken en code insluiten in webpagina&#39;s {#using-page-tracker-and-embed-code-in-web-pages}
 
-Paginanummering is een stuk JavaScript-code dat u opneemt in code van websites van derden om Adobe Analytics in staat te stellen gebruiksgegevens vast te leggen rond [!DNL Adobe Experience Manager Assets] deze websites.
+Paginanummering is een stuk JavaScript-code dat u in code van externe websites opneemt, zodat Adobe Analytics gebruiksgegevens rond [!DNL Adobe Experience Manager Assets] op deze websites kan vastleggen.
 
 Als u gebeurtenissen wilt vastleggen, zoals klikken en dergelijke, die specifiek zijn voor elementen, neemt u ook de code Insluiten op in de code van websites van derden.
 
@@ -59,7 +59,7 @@ De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanu
 </html>
 ```
 
-## Code voor paginatracering toevoegen {#adding-page-tracker-code}
+## Code {#adding-page-tracker-code} voor paginatracering toevoegen
 
 U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecode toe. Het volgende codefragment toont de code van de Tracker van de Pagina inbegrepen in een steekproefWeb-pagina:
 
@@ -79,7 +79,7 @@ U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecod
  </head>
 ```
 
-## Insluitcode toevoegen {#add-embed-code}
+## Insluitcode {#add-embed-code} toevoegen
 
 U voegt de insluitcode toe aan de hoofdtekst van de websitecode. In het volgende codefragment wordt de insluitcode weergegeven die in een voorbeeldwebpagina is opgenomen:
 

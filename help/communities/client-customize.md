@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Aanpassing aan clientzijde  {#client-side-customization}
+# Aanpassing aan clientzijde {#client-side-customization}
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
@@ -28,37 +28,37 @@ Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Commu
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
-[Als u een component overschrijft](#overlays) , wordt de standaardcomponent gewijzigd en wordt elke verwijzing naar de component gewijzigd.
+[Als u een component ](#overlays) overschrijft, wordt de standaardcomponent gewijzigd en wordt elke verwijzing naar de component gewijzigd.
 
-[Als u een component uitbreidt](#extensions) met een unieke naam, beperkt u het bereik van wijzigingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
+[Als u een component ](#extensions) uitbreidt met een unieke naam, beperkt u het bereik van wijzigingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
 
 ## Bedekkingen {#overlays}
 
 Het bedekken van een component is een methode om wijzigingen aan een standaardcomponent aan te brengen en alle instanties te beïnvloeden die het gebrek gebruiken.
 
-De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in de /**apps** folder te wijzigen, eerder dan de originele component in de /**libs** folder te wijzigen. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
+De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in de folder te wijzigen /**apps**, eerder dan het wijzigen van de originele component in /**libs** folder. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
 
 De map /apps is de eerste plaats die wordt gezocht om aanvragen op te lossen. Als deze niet wordt gevonden, wordt de standaardversie in de map /libs gebruikt.
 
 De standaardcomponent in de /libs folder moet nooit worden gewijzigd aangezien de toekomstige flarden en de verbeteringen vrij zijn om de /libs folder op om het even welke manier noodzakelijk te veranderen terwijl het handhaven van openbare interfaces.
 
-Dit is verschillend van het [uitbreiden](#extensions) van een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een uniek weg aan de component leiden en zich baserend op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als super middeltype baseren.
+Dit is verschillend van [het uitbreiden van](#extensions) een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een uniek weg aan de component leiden en zich baserend op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als supermiddeltype baseren.
 
-Voor een kort voorbeeld van het bedekken van de commentaarcomponent, probeert u de zelfstudie [van de component Opmerkingen](overlay-comments.md)bedekken.
+Voor een snel voorbeeld van het bedekken van de commentaarcomponent, probeer [de Onderzelfstudie van de Component van Commentaren van de Bedekking](overlay-comments.md).
 
 ## Extensies {#extensions}
 
 Het uitbreiden (met voeten treden) van een component is een methode om wijzigingen voor een specifiek gebruik aan te brengen zonder alle instanties te beïnvloeden die het gebrek gebruiken. De uitgebreide component krijgt een unieke naam in de map /apps en verwijst naar de standaardcomponent in de map /libs, zodat het standaardontwerp en de standaardwerking van een component niet worden gewijzigd.
 
-Dit is anders dan het [bedekken](#overlays) van de standaardcomponent, waarbij de aard van Sling relatieve verwijzingen naar de apps/map oplost voordat wordt gezocht in de map libs/. Het ontwerp of gedrag van een component wordt dus globaal gewijzigd.
+Dit verschilt van [het bedekken](#overlays) de standaardcomponent waar de aard van het Sling relatieve verwijzingen naar apps/omslag alvorens in de libs/ omslag te zoeken oplost, zodat wordt het ontwerp of het gedrag van een component globaal gewijzigd.
 
-Voor een kort voorbeeld van het uitbreiden van de commentaarcomponent, probeer het [Uitbreiden van de Component van Commentaren zelfstudie](extend-comments.md).
+Voor een snel voorbeeld van het uitbreiden van de commentaarcomponent, probeer [breid de Component van Commentaren uit leerprogramma](extend-comments.md).
 
 ## JavaScript-binding {#javascript-binding}
 
 Het HBS-script voor de component moet zijn gebonden aan de JavaScript-objecten, -modellen en -weergaven, die deze functie implementeren.
 
-De waarde van het `data-scf-component` kenmerk kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`** of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/components/hbs/rating**.
+De waarde van het kenmerk `data-scf-component` kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`**, of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/components/hbs/rating**.
 
 Om een component te binden, moet het volledige componentenmanuscript binnen een &lt;div> element met de volgende attributen worden ingesloten:
 
@@ -66,9 +66,9 @@ Om een component te binden, moet het volledige componentenmanuscript binnen een 
 
    wordt vanuit de context omgezet in de eigenschap id
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
-Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs`:
+Bijvoorbeeld uit `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
 <div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
@@ -86,7 +86,7 @@ Alle eigenschappen die op een component/een middel worden geplaatst kunnen worde
 
 `{{properties.<property_name>}}`
 
-## CSS schuintrekken {#skinning-css}
+## CSS {#skinning-css} schuintrekken
 
 Componenten aanpassen aan het algemene thema van de website kan worden bereikt door &#39;skins&#39; toe te wijzen. Kleuren, lettertypen, afbeeldingen, knoppen, koppelingen, afstand en zelfs positionering worden in zekere mate gewijzigd.
 
@@ -105,11 +105,11 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->Elke CSS-klassenaam die vooraf is ingesteld met `scf-js` heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Elke CSS-klassenaam die wordt voorafgegaan door `scf-js`, heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
->Hoewel de `scf-js` klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
+>Hoewel de `scf-js`-klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met het voorbehoud dat er, aangezien ze de status van elementen bepalen, bijwerkingen kunnen optreden.
 
-## JavaScript uitbreiden {#extending-javascript}
+## JavaScript {#extending-javascript} uitbreiden
 
 Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
@@ -119,7 +119,7 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
-### forum.js: Voorbeeld van uitbreiding van forum - GB  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Voorbeeld van uitbreiding van forum - GB {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -158,8 +158,8 @@ De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varia
 
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
-| complete clientlib | cq.social.hbs.&lt;naam component> |
-| auteur-clientlib | cq.social.author.hbs.&lt;naam component> |
+| complete clientlib | cq.social.hbs.&lt;component name=&quot;&quot;> |
+| auteur-clientlib | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
 
 ### Volledige Clientlibs {#complete-clientlibs}
 
@@ -174,11 +174,11 @@ Bijvoorbeeld:
 * Clientmapknooppunt: `/etc/clientlibs/social/hbs/forum`
 * Eigenschap Categorieën: `cq.social.hbs.forum`
 
-De gids [van de Componenten van de](components-guide.md) Gemeenschap maakt een lijst van de volledige clientlibs die voor elke component SCF wordt vereist.
+De [Community Components guide](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke SCF component worden vereist.
 
-[Clientlibs voor Community Components](clientlibs.md) beschrijft hoe u clientlibs aan een pagina kunt toevoegen.
+[Clientlibs voor Community ](clientlibs.md) Componenten beschrijft hoe u clientlibs aan een pagina kunt toevoegen.
 
-### Auteur Clientlibs {#author-clientlibs}
+### Clientlibs {#author-clientlibs}
 
 De clientlibs van de auteurversie worden gestript neer aan minimale JavaScript noodzakelijk om de component uit te voeren.
 
@@ -195,7 +195,7 @@ Bijvoorbeeld:
 
 Opmerking: hoewel auteur clientlibs geen andere bibliotheken inbedden , maken ze een lijst van hun afhankelijkheden . Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
 
-De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in de gids [van de Componenten van de](components-guide.md)Gemeenschap worden vermeld.
+De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in [Community Components guide](components-guide.md) worden vermeld.
 
 ### Overwegingen bij gebruik {#usage-considerations}
 

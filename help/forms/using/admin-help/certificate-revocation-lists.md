@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 1%
 
 ---
 
@@ -19,20 +22,20 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Met Betrouwbaarheidswinkelbeheer kunt u lijsten voor certificaatintrekking importeren, bewerken en verwijderen. Base64- en DER-gecodeerde certificaatintrekkingslijsten worden ondersteund.
 
-## Een CRL importeren {#import-a-crl}
+## CRL {#import-a-crl} importeren
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Certificaatintrekkingslijsten en klik vervolgens op Importeren.
 1. Typ in het vak Alias een id voor het CRL.
 1. Klik doorbladeren om van CRL de plaats te bepalen en dan O.K. te klikken.
 
-## Een CRL exporteren {#export-a-crl}
+## CRL {#export-a-crl} exporteren
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Certificaatintrekkingslijsten.
 1. Klik op de naam van de alias van de CRL die u wilt exporteren en klik vervolgens op Exporteren.
 1. Volg de aanwijzingen om de CRL te exporteren. CRLs wordt uitgevoerd in het coderen Base64.
 1. Klik op OK.
 
-## CRL verwijderen {#delete-a-crl}
+## CRL {#delete-a-crl} verwijderen
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Certificaatintrekkingslijsten.
 1. Selecteer de selectievakjes voor de CRL&#39;s die u wilt verwijderen, klik op Verwijderen en klik vervolgens op OK.

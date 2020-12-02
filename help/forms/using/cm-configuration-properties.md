@@ -10,11 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
 
-# Eigenschappen van Correspondentenbeheer {#correspondence-management-configuration-properties}
+# Eigenschappen van Correspondentenbeheer voor configuratie {#correspondence-management-configuration-properties}
 
 Als u deze eigenschappen wilt configureren, opent u de volgende URL in een browser: `https://<server>:<port>/<contextPath>/system/console/configMgr` en selecteer **Correspondence Management Configurations**.
 
@@ -31,19 +34,19 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>Inspringing</p> </td>
    <td>Inspringing op modules<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Willekeurig getal</p> </td>
   </tr>
   <tr>
    <td>Minimumbreedte aantal</td>
    <td>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer wanneer u genummerde lijsten naast Romeinse nummers gebruikt</td>
-   <td>8.0mm</td>
+   <td>8,0 mm</td>
    <td>Willekeurig getal</td>
   </tr>
   <tr>
    <td><p>Roman Numbers Minimum Width</p> </td>
    <td><p>Minimumbreedte die moet worden toegepast op het veld opsommingsteken/nummer bij gebruik van Romeinse getallen</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12,7 mm</p> </td>
    <td><p>Willekeurig getal</p> </td>
   </tr>
   <tr>
@@ -152,13 +155,13 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>Indelingen voor gegevensweergave</p> </td>
    <td><p>Hiermee wordt de specifieke landinstelling voor gegevensweergave opgegeven</p> </td>
    <td><p>locale=nl_NL; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=.; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
   </tr>
   <tr>
    <td><p>Gegevensbewerkingsindeling</p> </td>
    <td><p>Opmaak voor gegevens bewerken. Dit wordt gebruikt wanneer het schrijven van gegevens als Koord of het ontleden gegevens van Koord</p> </td>
    <td><p>locale=nl_NL; dateFormat=dd-MM-yyyy; numberDecimalSeparator=.; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>Lettervarianten beheren bij publicatie</p> </td>
@@ -241,18 +244,18 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>CM-gebruikersbasis</p> </td>
    <td><p>URL van de map met alle Correspondentenbeheergebruikerselementen</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>Geldige maplocatie</p> </td>
   </tr>
   <tr>
    <td><p>Grootte lettercache</p> </td>
-   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt het <code>in-memory</code> cachegeheugen gewist.</p> </td>
+   <td><p>Geef het maximumaantal letters op dat in de cache moet worden opgeslagen.</p> <p>Als u deze waarde wijzigt, wordt de cache <code>in-memory</code> opgeschoond.</p> </td>
    <td><p>100</p> </td>
    <td><p>Willekeurige numerieke waarde</p> </td>
   </tr>
   <tr>
    <td><p>Lettercache inschakelen</p> </td>
-   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt het <code>in-memory </code> cachegeheugen gewist.</p> </td>
+   <td><p>De lettercache in-/uitschakelen.</p> <p>Als u deze waarde wijzigt, wordt de cache <code>in-memory </code> opgeschoond.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -288,7 +291,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td><p>Foutopsporingsdirectory </p> <p> </p> </td>
-   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map dit niet doet, <code>exists</code>worden er geen foutopsporingsdumps gegenereerd.</td>
+   <td>Locatie bestandssysteemmap voor foutopsporing. Als de map niet <code>exists</code> is, worden er geen foutopsporingsdumps gegenereerd.</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

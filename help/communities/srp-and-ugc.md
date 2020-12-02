@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Als de leverancier van het opslagmiddel (SRP) en zijn verhouding aan gebruiker-geproduceerde inhoud (UGC) onbekend zijn, bezoek [Communautair Overzicht](working-with-srp.md) van de Opslag [van de Inhoud en van de Leverancier van het Middel van de](srp.md)Opslag.
+Als u niet bekend bent met de opslagbronprovider (SRP) en de relatie met door gebruikers gegenereerde inhoud (UGC), gaat u naar [Community Content Storage](working-with-srp.md) en [Storage Resource Provider Overview](srp.md).
 
 Deze sectie van de documentatie verstrekt wat essentiële informatie over SRP en UGC.
 
-## StorageResourceProvider API {#storageresourceprovider-api}
+## StorageResourceProvider-API {#storageresourceprovider-api}
 
 De API van SocialResourceProvider (SRP API) is een uitbreiding van diverse API&#39;s van Sling Resource Provider. Het omvat steun voor paginering en atoomverhoging (nuttig voor tally en scoring).
 
@@ -38,13 +38,13 @@ SRP API is geen abstracte klasse, het is een interface. Een aangepaste implement
 
 De middelen om SRP API te gebruiken zijn door verstrekte nut, zoals die gevonden in het pakket SocialResourceUtilities.
 
-Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open Bron hulpmiddel beschikbaar is. Zie [Upgrade uitvoeren naar AEM Communities 6.3](upgrade.md).
+Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open Bron hulpmiddel beschikbaar is. Zie [Upgraden naar AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
 >Historisch, werden de nut voor de toegang tot van UGC gevonden in het pakket SocialUtils, dat niet meer bestaat.
 >
->Voor vervangingsnut, zie Refactoring [SocialUtils](socialutils.md).
+>Zie [Refactoring](socialutils.md) voor vervangende hulpprogramma&#39;s.
 
 ## Hulpprogrammamethode voor toegang tot UGC {#utility-method-to-access-ugc}
 
@@ -65,15 +65,15 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-Voor andere vervangingen SocialUtils, zie Refactoring [SocialUtils](socialutils.md).
+Voor andere vervangingen SocialUtils, zie [Refactoring SocialUtils](socialutils.md).
 
-Voor coderingsrichtlijnen, bezoek de [Toegang tot van UGC met SRP](accessing-ugc-with-srp.md).
+Voor coderingsrichtlijnen, bezoek [Toegang tot UGC met SRP](accessing-ugc-with-srp.md).
 
 >[!CAUTION]
 >
->De weg resourceToUGCStoragePath () keert is *niet* geschikt voor [ACL het controleren](srp.md#for-access-control-acls)terug.
+>De path resourceToUGCStoragePath () terugkeer is *niet* geschikt voor [ACL het controleren](srp.md#for-access-control-acls).
 
-## De Methode van het nut om tot ACLs toegang te hebben {#utility-method-to-access-acls}
+## Hulpprogrammamethode voor toegang tot ACL&#39;s {#utility-method-to-access-acls}
 
 Sommige implementaties SRP, zoals ASRP en MSRP, slaan communautaire inhoud in gegevensbestanden op die geen ACL controle verstrekken. De knopen van de schaduw verstrekken een plaats in de lokale bewaarplaats waarop ACLs kan worden toegepast.
 
@@ -108,7 +108,7 @@ De volgende beschrijvingen van opslagplaats kunnen van hulp zijn wanneer het ont
 
 Wanneer een lid UGC in het publicatiemilieu ingaat, communiceren zij met een component als deel van een AEM plaats.
 
-Een voorbeeld van een dergelijke component is de [commentaarcomponent](http://localhost:4502/content/community-components/en/comments.html) die aanwezig is op de site [Community Components Guide](components-guide.md) . Het pad naar het knooppunt met opmerkingen in de lokale opslagplaats is:
+Een voorbeeld van een dergelijke component is de [commentaarcomponent](http://localhost:4502/content/community-components/en/comments.html) die in [Community Components Guide](components-guide.md) plaats bestaat. Het pad naar het knooppunt met opmerkingen in de lokale opslagplaats is:
 
 * Componentpad = `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
@@ -116,20 +116,20 @@ Een voorbeeld van een dergelijke component is de [commentaarcomponent](http://lo
 
 De verwezenlijking van UGC leidt ook tot een [schaduwknoop](srp.md#about-shadow-nodes-in-jcr) waarop noodzakelijke ACLs wordt toegepast. Het pad naar het corresponderende schaduwknooppunt in de lokale opslagruimte is het resultaat van het voorzetten van het hoofdpad van het schaduwknooppunt naar het componentpad:
 
-* Basispad = `/content/usergenerated`
-* Commentaar schaduwknooppunt = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
+* Hoofdpad = `/content/usergenerated`
+* Commentaarschaduwknooppunt = `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **UGC-locatie**
 
 UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betreden gebruikend een [nutsmethode](#utility-method-to-access-ugc) die SRP API aanhaalt.
 
-* Basispad = `/content/usergenerated/asi/srp-choice`
+* Hoofdpad = `/content/usergenerated/asi/srp-choice`
 * UGC-knooppunt voor JSRP = `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*Houd er rekening mee* dat voor JSRP het UGC-knooppunt *alleen* aanwezig is op de AEM instantie (auteur of publicatie) waarop het knooppunt is ingevoerd. Als ingegaan op een publiceer instantie, zal de matiging niet van de moderatieconsole op auteur mogelijk zijn.
+*Houd er rekening mee* dat voor JSRP het UGC-knooppunt  ** alleen aanwezig is op de AEM instantie (auteur of publicatie) waarop het knooppunt is ingevoerd. Als ingegaan op een publiceer instantie, zal de matiging niet van de moderatieconsole op auteur mogelijk zijn.
 
 ## Gerelateerde informatie {#related-information}
 
-* [Overzicht](srp.md) van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
+* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
+* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.

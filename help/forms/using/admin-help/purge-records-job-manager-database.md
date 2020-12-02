@@ -1,8 +1,8 @@
 ---
 title: Records uit de taakbeheerdatabase wissen
 seo-title: Records uit de taakbeheerdatabase wissen
-description: Grote procesgegevens kunnen resulteren in lagere prestaties voor AEM-formulieren. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
-seo-description: Grote procesgegevens kunnen resulteren in lagere prestaties voor AEM-formulieren. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
+description: Grote procesgegevens kunnen resulteren in lagere AEM formulierprestaties. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
+seo-description: Grote procesgegevens kunnen resulteren in lagere AEM formulierprestaties. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
 uuid: cf214498-36e9-4dcc-b4d4-e7c46f80dbab
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
 
-# Records uit de taakbeheerdatabase wissen {#purge-records-from-the-job-manager-database}
+# Records verwijderen uit de taakbeheerdatabase {#purge-records-from-the-job-manager-database}
 
-Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangeroepen, kunnen te groot worden, wat resulteert in lagere prestaties van AEM-formulieren en het gebruik van overbodige schijfruimte. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
+Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangeroepen, kunnen te groot worden, wat resulteert in lagere AEM formulierprestaties en het gebruik van overbodige schijfruimte. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
 
-U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methoden voor het wissen van verouderde records worden besproken in de gegevens [van het](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)zuiveringsproces.
+U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methoden voor het wissen van verouderde records worden besproken in [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **De pagina Job Purge Scheduler openen**
 
@@ -62,7 +65,7 @@ De informatie over om het even welke momenteel geplande zuiveringen wordt getoon
 
    >[!NOTE]
    >
-   >Als u een begindatum en -tijd opgeeft die in het verleden ligt, berekenen AEM-formulieren de logische volgende begindatum op basis van de opgegeven datum. Als u bijvoorbeeld plant dat de taak wekelijks wordt leeggemaakt vanaf 7 april en dat nu 9 april is, vindt de eerste leegloop plaats op 14 april.
+   >Als u een begindatum en -tijd opgeeft die in het verleden liggen, berekent AEM formulieren de logische volgende begindatum op basis van de opgegeven datum. Als u bijvoorbeeld plant dat de taak wekelijks wordt leeggemaakt vanaf 7 april en dat nu 9 april is, vindt de eerste leegloop plaats op 14 april.
 
 1. Klik op Start Scheduler. Om het even welke eerder geplande plannermontages worden vervangen met de nieuwe montages.
 

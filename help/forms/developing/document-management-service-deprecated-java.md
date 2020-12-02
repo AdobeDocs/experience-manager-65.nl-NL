@@ -45,11 +45,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 
-De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een nieuwe ruimte gemaakt met de naam *Testdirectory* in het startpunt van het bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
+Het volgende de codevoorbeeld van Java leidt tot een nieuwe ruimte genoemd *Folder van de Test* in het Huis van het Bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
 ```java
  /*

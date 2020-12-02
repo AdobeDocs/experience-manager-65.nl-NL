@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Aangepaste weergaven maken in HTML5-formulieren{#create-custom-appearances-in-html-forms}
 
-U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. XFA-engine gebruikt verschillende widgets. Zie [Vormgevingsframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
 
 ![Een voorbeeld van de standaard- en aangepaste widget](assets/custom-widgets.jpg)
 
@@ -31,11 +31,11 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ### Een profiel maken  {#create-a-profile-nbsp}
 
-U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Zie Aangepast profiel [maken voor meer informatie over het maken van profielen](/help/forms/using/custom-profile.md).
+U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Zie [Aangepast profiel maken](/help/forms/using/custom-profile.md) voor meer informatie over het maken van profielen.
 
 ### Een widget maken {#create-a-widget}
 
-HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie bestaat uit een *abstracte widget* voor jQuery die kan worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
+HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie is een jQuery-widget *abstractWidget* die kan worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
 
 <table>
  <tbody>
@@ -78,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine met behulp van de `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
+Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine met behulp van `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

@@ -12,11 +12,14 @@ discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 translation-type: tm+mt
 source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
 
-# De testcase definiëren{#defining-your-test-cases}
+# Het bepalen van uw Gevallen van de Test{#defining-your-test-cases}
 
 Uw testgevallen moeten gebaseerd zijn op:
 
@@ -38,7 +41,7 @@ De tests moeten duidelijk omschrijven:
 
 Het vooruitzicht om testgevallen te automatiseren is duidelijk aantrekkelijk, aangezien het herhalende taken kan elimineren.
 
-## Handmatige en geautomatiseerde tests {#manual-versus-automated-tests}
+## Handmatige versus geautomatiseerde tests {#manual-versus-automated-tests}
 
 Het automatiseren van testgevallen is echter een belangrijke investering, dus moeten bepaalde aspecten in overweging worden genomen:
 
@@ -49,18 +52,20 @@ Het automatiseren van testgevallen is echter een belangrijke investering, dus mo
 
 ## Specifieke aspecten testen {#testing-specific-aspects}
 
-Bij het testen van AEM zijn enkele specifieke details van bijzonder belang:
+Bij het testen AEM zijn enkele specifieke details van bijzonder belang:
 
 **Auteur- en publicatie-omgevingen**
 
-Hoewel het in de [milieus](/help/sites-developing/the-basics.md#environments) aan de orde komt, is het de moeite waard om een doorslaggevende factor voor AEM-tests te benadrukken.
+Hoewel het in [Omgevingen](/help/sites-developing/the-basics.md#environments) wordt behandeld, is het de moeite waard om een beslissende factor van AEM met betrekking tot het testen te benadrukken.
 
 U moet AEM als twee toepassingen beschouwen:
 
-* de *auteuromgeving* Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
+* de *Auteur*-omgeving
+Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
 Dit heeft een kleine (er), voorspelbare reeks gebruikers, voor wie specifieke functionaliteit en prestaties cruciaal zijn.
 
-* de ** publicatieomgevingDeze instantie presenteert de website in zijn gepubliceerde formulier voor toegang van bezoekers.
+* de *Publicatie*-omgeving
+Dit exemplaar presenteert de website in zijn gepubliceerde vorm voor toegang van bezoekers.
 Dit heeft gewoonlijk een grotere reeks gebruikers, waar het volume van verkeer niet altijd 100% voorspelbaar is. Prestaties zijn nog steeds van cruciaal belang - bij het beantwoorden van verzoeken. Er moet ook rekening worden gehouden met caching en taakverdeling.
 
 Alhoewel dezelfde software als dusdanig:
@@ -81,19 +86,24 @@ Het cachegeheugen moet ook op correct gedrag worden gecontroleerd.
 
 **De verzender**
 
-De meeste projecten zullen Dispatcher voor caching en lading het in evenwicht brengen installeren.
+De meeste projecten installeren de Dispatcher voor caching en lading het in evenwicht brengen.
 
 Testen is moeilijk (caching vindt plaats op verschillende niveaus en op verschillende locaties) en moet gebeuren op basis van een zwarte doos. De belangrijkste aspecten waarop u wilt testen zijn:
 
-* **Nauwkeurigheid** zorgt ervoor dat de inhoud-updates zichtbaar zijn voor de websitebezoeker.
+* **Zorg**
+ervoor dat de bezoeker van de website de inhoud kan bijwerken.
 
-* **Continuïteit** zorgt ervoor dat de website nog steeds beschikbaar is wanneer één server wordt afgesloten.
+* **Zorg er**
+voortdurend voor dat de website beschikbaar blijft wanneer één server wordt afgesloten.
 
-* **Clusters** worden gebruikt voor:
+* **Clusters**
+Clusters worden gebruikt voor:
 
-   * **Failover** Als één server uitvalt, nemen andere servers in de cluster de verwerking over.
+   * ****
+FailoverAls één server uitvalt, nemen andere servers in de cluster de verwerking over.
 
-   * **Prestaties**taakverdeling met volledige failover verbetert de prestaties van een cluster.
+   * ****
+PerformanceLoad-taakverdeling met volledige failover verbetert de prestaties van een cluster.
 Wanneer gebruikt voor een klantenproject moet de cluster worden getest om correcte verrichting van de configuratie te bevestigen.
 
 ## Software van derden testen {#testing-third-party-software}

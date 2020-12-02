@@ -1,8 +1,8 @@
 ---
-title: Verschil tussen functies in HTML5-formulieren en PDF-formulieren
-seo-title: Verschil tussen functies in HTML5-formulieren en PDF-formulieren
-description: Functie wordt ondersteund in HTML5-formulieren en PDF-formulieren
-seo-description: Functie wordt ondersteund in HTML5-formulieren en PDF-formulieren
+title: Verschil tussen functies in HTML5-formulieren en PDF forms
+seo-title: Verschil tussen functies in HTML5-formulieren en PDF forms
+description: Functie wordt ondersteund in HTML5-formulieren en -PDF forms
+seo-description: Functie wordt ondersteund in HTML5-formulieren en -PDF forms
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,19 +12,22 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 2%
 
 ---
 
 
-# Verschil tussen functies in HTML5-formulieren en PDF-formulieren {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Verschil tussen functies tussen HTML5-formulieren en PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor HTML5-formulieren en PDF-formulieren:
+In de volgende tabel vindt u ondersteuning van de functies die worden geboden voor HTML5-formulieren en -PDF forms:
 
 <table>
  <tbody>
   <tr>
    <th>Functie</th>
-   <th>HTML5-formulieren</th>
+   <th>HTML5 Forms</th>
    <th>PDF</th>
   </tr>
   <tr>
@@ -34,8 +37,8 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>Handtekeningveld<br /> </td>
-   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar er wordt een nieuw veld <strong>Krabbelhandtekening</strong> toegevoegd voor handtekeningen die lijken op papier. U kunt de handtekening op het formulier krabbelen met het veld <strong>Krabbelhandtekening</strong> . De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het veld <strong>Krabbelhandtekening</strong> .</td>
-   <td>Handtekeningveld beschikbaar voor <strong>digitale handtekeningen</strong>.</td>
+   <td><strong>Digitale </strong> handtekeningen worden niet ondersteund, maar er wordt een nieuw veld voor  <strong>scriptbare </strong> handtekeningen toegevoegd. U kunt de handtekening van de handtekening op het formulier krabbelen met het veld <strong>Krabbelhandtekening</strong>. De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het veld <strong>Krabbelen handtekening</strong>.</td>
+   <td>Handtekeningveld beschikbaar voor <strong>Digitale handtekeningen</strong>.</td>
   </tr>
   <tr>
    <td>Gegevenssamenvoeging</td>
@@ -44,12 +47,12 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>Afbeeldingen</td>
-   <td>Het schema Data URI wordt gebruikt om afbeeldingen weer te geven. In alle moderne versies van browsers wordt dit schema ondersteund, maar de afbeeldingsindelingen die in elke browser worden ondersteund, verschillen van elkaar.<br /> </td>
+   <td>Het schema Data URI wordt gebruikt om afbeeldingen weer te geven. Alle moderne versies van browsers ondersteunen dit schema, maar er zijn verschillen in het bereik van afbeeldingsindelingen dat door elke browser wordt ondersteund.<br /> </td>
    <td>De indelingen .gif, .png, .jpeg, .bmp en .tiff worden ondersteund.</td>
   </tr>
   <tr>
    <td>Paginering<br /> </td>
-   <td><p>Een HTML5-formulier wordt opgedeeld in deelvensters en vakken zodat het er net zo uitziet als PDF-formulieren. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier verborgen wordt verwijderd of gemarkeerd, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td>
+   <td><p>Een HTML5-formulier is onderverdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td>
    <td>Paginering in PDF is afhankelijk van samengevoegde gegevensinhoud of van gebruikersinhoud en het aantal pagina's wordt op basis daarvan verhoogd/verlaagd.</td>
   </tr>
   <tr>
@@ -64,12 +67,12 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>XFA Script API</td>
-   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Zie <a href="/help/forms/using/scripting-support.md">Scriptondersteuning</a>voor een gedetailleerde lijst met ondersteunde constructies.</td>
+   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Zie <a href="/help/forms/using/scripting-support.md">Scriptondersteuning</a> voor een gedetailleerde lijst met ondersteunde constructies.</td>
    <td>Ondersteunt alle XFA-scriptconstructies.</td>
   </tr>
   <tr>
    <td>Acrobat Script API's </td>
-   <td>HTML5-formulieren ondersteunen veelgebruikte API's. Zie <a href="/help/forms/using/scripting-support.md">Scriptondersteuning</a>voor meer informatie.</td>
+   <td>HTML5-formulieren ondersteunen veelgebruikte API's. Zie <a href="/help/forms/using/scripting-support.md">Ondersteuning van scripts</a> voor meer informatie.</td>
    <td>Als het PDF-bestand wordt geopend in Acrobat of Reader, worden ook alle script-API's van Acrobat ondersteund.</td>
   </tr>
   <tr>

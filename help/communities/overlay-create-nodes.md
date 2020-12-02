@@ -18,9 +18,9 @@ ht-degree: 4%
 ---
 
 
-# Notities maken {#create-nodes}
+# Knooppunten {#create-nodes} maken
 
-Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal bestanden dat nodig is van `/libs` naar te kopiëren `/apps` en te wijzigen in `/apps`.
+Bedek het opmerkingssysteem met een douaneversie door het minimale aantal dossiers noodzakelijk van `/libs` in `/apps` te kopiëren en hen te wijzigen in `/apps`.
 
 >[!CAUTION]
 >
@@ -35,7 +35,7 @@ Het pad dat wordt gedupliceerd is:
 Sommige knooppunten in het pad zijn mappen en andere componenten.
 
 1. Bladeren naar [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
-1. Maken `/apps/social` (als deze nog niet bestaat)
+1. `/apps/social` maken (als deze nog niet bestaat)
    * Knooppunt `/apps` selecteren
    * **[!UICONTROL Create > Folder ...]**
       * Naam invoeren: `social`
@@ -49,50 +49,50 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
    * **[!UICONTROL Create > Folder..]**.
       * Naam invoeren: `hbs`
 1. Knooppunt `hbs` selecteren
-   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
+   * **[!UICONTROL Create]** >  **[!UICONTROL Create Component...]**
       * Label invoeren: `comments`
       * Titel invoeren: `Comments`
       * Beschrijving invoeren: `List of comments without showing avatars`
       * Supertype: `social/commons/components/comments`
       * Groep invoeren: `Communities`
-      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
+      * Klik **[!UICONTROL Next]** tot **[!UICONTROL OK]**
 1. Knooppunt `comments` selecteren
 
-   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
+   * **[!UICONTROL Create]** >  **[!UICONTROL Create Component...]**
 
       * Label invoeren: `comment`
       * Titel invoeren: `Comment`
       * Beschrijving invoeren: `A comment instance without avatars`
       * Supertype: `social/commons/components/comments/comment`
       * Groep invoeren: `.hidden`
-      * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
+      * Klik **[!UICONTROL Next]** tot **[!UICONTROL OK]**
    * Selecteer **[!UICONTROL Save All]**
-1. De standaardinstelling verwijderen `comments.jsp`
-   * Knooppunt selecteren `/apps/social/commons/components/hbs/comments/comments.jsp`
+1. De standaardinstelling `comments.jsp` verwijderen
+   * Knooppunt `/apps/social/commons/components/hbs/comments/comments.jsp` selecteren
    * Selecteer **[!UICONTROL Delete]**
 1. De standaardcomment.jsp verwijderen
-   * Selecteer knooppunt `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
+   * select node `/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * Selecteer **[!UICONTROL Delete]**
    * Selecteer **[!UICONTROL Save All]**
 
 >[!NOTE]
 >
->Om de overervingsketen te behouden, wordt de `Super Type` (eigenschap `sling:resourceSuperType`) van de overlaycomponenten op dezelfde waarde ingesteld als de waarde `Super Type` van de componenten die worden bedekt, in dit geval:
+>Om de overervingsketen te behouden, worden `Super Type` (eigenschap `sling:resourceSuperType`) van de overlaycomponenten op dezelfde waarde ingesteld als `Super Type` van de componenten die worden bedekt, in dit geval:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
 
 
-De eigen eigenschap `Type`(property `sling:resourceType`) van de overlay moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, vervolgens wordt gezocht in /libs.
+De eigen `Type` (eigenschap `sling:resourceType`) van de overlay moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, vervolgens wordt gezocht in /libs.
 * Naam: `sling:resourceType`
 * Type: `String`
 * Waarde: `social/commons/components/hbs/comments`
 
-1. Groen selecteren `[+] Add`
+1. Groen `[+] Add` selecteren
    * Naam: `sling:resourceType`
    * Type: `String`
    * Waarde: `social/commons/components/hbs/comments/comment`
-1. Groen selecteren `[+] Add`
+1. Groen `[+] Add` selecteren
    * Selecteer **[!UICONTROL Save All]**
 
 ![create-nodes](assets/create-nodes.png)

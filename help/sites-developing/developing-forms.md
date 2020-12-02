@@ -27,9 +27,9 @@ De basisstructuur van een formulier is:
 * Formulierelementen
 * Einde formulier
 
-Al deze worden gerealiseerd met een reeks standaardcomponenten [van het](/help/sites-authoring/default-components.md#form)Vorm, beschikbaar in een standaard AEM installatie.
+Al deze worden gerealiseerd met een reeks gebrek [de componenten van de Vorm](/help/sites-authoring/default-components.md#form), beschikbaar in een standaard AEM installatie.
 
-Naast het [ontwikkelen van nieuwe componenten](/help/sites-developing/developing-components-samples.md) voor gebruik op uw formulieren kunt u ook:
+Naast [het ontwikkelen van nieuwe componenten](/help/sites-developing/developing-components-samples.md) voor gebruik op uw vormen kunt u ook:
 
 * [Uw formulier vooraf laden met waarden](#preloading-form-values)
 * [(bepaalde) velden met meerdere waarden vooraf laden](#preloading-form-fields-with-multiple-values)
@@ -37,15 +37,15 @@ Naast het [ontwikkelen van nieuwe componenten](/help/sites-developing/developing
 * [Nieuwe beperkingen ontwikkelen](#developing-your-own-form-constraints)
 * [Specifieke formuliervelden weergeven of verbergen](#showing-and-hiding-form-components)
 
-[Scripts](#developing-scripts-for-use-with-forms) gebruiken om de functionaliteit waar nodig uit te breiden.
+[Gebruik ](#developing-scripts-for-use-with-forms) scripts om de functionaliteit waar nodig uit te breiden.
 
 >[!NOTE]
 >
->Dit document concentreert zich op het ontwikkelen van vormen gebruikend de Componenten [van de](/help/sites-authoring/default-components-foundation.md) Stichting in klassieke UI. Adobe raadt u aan de nieuwe [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en Voorwaarden [](/help/sites-developing/hide-conditions.md) verbergen te gebruiken voor formulierontwikkeling in de interface met aanraakbediening.
+>Dit document richt zich op het ontwikkelen van vormen gebruikend [de Componenten van de Stichting](/help/sites-authoring/default-components-foundation.md) in klassieke UI. Adobe raadt aan de nieuwe [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en [Hide Conditions](/help/sites-developing/hide-conditions.md) te gebruiken voor formulierontwikkeling in de interface met aanraakbediening.
 
-## Formulierwaarden vooraf laden {#preloading-form-values}
+## Formulierwaarden {#preloading-form-values} vooraf laden
 
-De component form start bevat een veld voor het **laadpad**, een optioneel pad dat naar een knooppunt in de gegevensopslagruimte wijst.
+De component van het vormbegin verstrekt een gebied voor **Laad Weg**, een facultatieve weg die aan een knoop in de bewaarplaats richt.
 
 Het pad laden is het pad naar knoopeigenschappen dat wordt gebruikt om vooraf gedefinieerde waarden te laden in meerdere velden op het formulier.
 
@@ -53,30 +53,31 @@ Dit is een optioneel veld dat het pad naar een knooppunt in de repository aangee
 
 >[!NOTE]
 >
->Een [formulieractie](#developing-your-own-form-actions) kan ook de bron instellen waaruit de oorspronkelijke waarden moeten worden geladen. Dit gebeurt met `FormsHelper#setFormLoadResource` binnenuit `init.jsp`.
+>Een [formulieractie](#developing-your-own-form-actions) kan ook de bron instellen waaruit de beginwaarden moeten worden geladen. Dit wordt gedaan gebruikend `FormsHelper#setFormLoadResource` binnen `init.jsp`.
 >
 >Alleen als dit niet is ingesteld, wordt het formulier door de auteur ingevuld in de padset die in het beginformulieronderdeel is ingesteld.
 
-### Formuliervelden met meerdere waarden vooraf laden {#preloading-form-fields-with-multiple-values}
+### Formuliervelden met meerdere waarden {#preloading-form-fields-with-multiple-values} vooraf laden
 
-Verschillende formuliervelden hebben ook het pad **** Items laden, wederom een optioneel pad dat naar een knooppunt in de gegevensopslagruimte wijst.
+Verschillende formuliervelden hebben ook **Items Load Path**, opnieuw een optioneel pad dat wijst naar een knooppunt in de opslagplaats.
 
-Het pad **Items laden** is het pad naar knoopeigenschappen dat wordt gebruikt om vooraf gedefinieerde waarden te laden in dat specifieke veld op het formulier, bijvoorbeeld een [vervolgkeuzelijst](/help/sites-authoring/default-components-foundation.md#dropdown-list), een [selectievakje](/help/sites-authoring/default-components-foundation.md#checkbox-group) of een [groep](/help/sites-authoring/default-components-foundation.md#radio-group)keuzerondjes.
+De **Items Load Path** is het pad naar knoopeigenschappen die worden gebruikt om vooraf gedefinieerde waarden in dat specifieke veld op het formulier te laden, bijvoorbeeld een [vervolgkeuzelijst](/help/sites-authoring/default-components-foundation.md#dropdown-list), [checkbox group](/help/sites-authoring/default-components-foundation.md#checkbox-group) of [radio group](/help/sites-authoring/default-components-foundation.md#radio-group).
 
-#### Voorbeeld - Een vervolgkeuzelijst met meerdere waarden vooraf laden {#example-preloading-a-dropdown-list-with-multiple-values}
+#### Voorbeeld - Een vervolgkeuzelijst met meerdere waarden voorladen {#example-preloading-a-dropdown-list-with-multiple-values}
 
 Een vervolgkeuzelijst kan worden geconfigureerd met uw reeks waarden voor selectie.
 
-Met het **pad** voor het laden van items kunt u een lijst openen vanuit een map in de opslagplaats en deze vooraf in het veld laden:
+Met de **Items Load Path** kunt u een lijst openen vanuit een map in de opslagplaats en deze vooraf in het veld laden:
 
-1. Maak bijvoorbeeld een nieuwe slingermap ( `sling:Folder`) `/etc/designs/<myDesign>/formlistvalues`
+1. Een nieuwe slingermap maken ( `sling:Folder`)
+bijvoorbeeld `/etc/designs/<myDesign>/formlistvalues`
 
-1. Voeg een nieuwe eigenschap (bijvoorbeeld `myList`) van het type tekenreeks met meerdere waarden ( `String[]`) toe voor de lijst met vervolgkeuzelijsten. Inhoud kan ook worden geïmporteerd met een script, zoals met een JSP-script of cURL in een shell-script.
+1. Voeg een nieuwe eigenschap (bijvoorbeeld `myList`) toe van het type tekenreeks met meerdere waarden ( `String[]`) voor de lijst met vervolgkeuzelijsten. Inhoud kan ook worden geïmporteerd met een script, zoals met een JSP-script of cURL in een shell-script.
 
-1. Gebruik het volledige pad in het veld Pad **laden** items:
-bijvoorbeeld: `/etc/designs/geometrixx/formlistvalues/myList`
+1. Gebruik het volledige pad in het veld **Items laden pad**:
+bijvoorbeeld `/etc/designs/geometrixx/formlistvalues/myList`
 
-Let op: als de waarden in de afbeelding `String[]` als volgt zijn opgemaakt:
+Als de waarden in de `String[]` als volgt zijn opgemaakt:
 
 * `AL=Alabama`
 * `AK=Alaska`
@@ -97,13 +98,13 @@ Een reeks acties wordt voorzien van een standaard AEM installatie, deze kunnen o
 
 `/libs/foundation/components/form/actions`
 
-en in de lijst **Type** handeling van de **component Form** :
+en in de lijst **Action Type** van de **Form** component:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
 In deze sectie wordt beschreven hoe u uw eigen formulieractie voor opname in deze lijst kunt ontwikkelen.
 
-U kunt uw eigen actie toevoegen onder `/apps` als volgt:
+U kunt uw eigen actie onder `/apps` als volgt toevoegen:
 
 1. Maak een knooppunt van het type `sling:Folder`. Geef een naam op die de uit te voeren handeling weerspiegelt.
 
@@ -111,11 +112,11 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
 
    `/apps/myProject/components/customFormAction`
 
-1. In dit knooppunt worden de volgende eigenschappen gedefinieerd en vervolgens klikt u op Alles **** opslaan om uw wijzigingen aan te houden:
+1. Voor deze knoop definieert de volgende eigenschappen, dan klik **sparen allen** om uw veranderingen voort te zetten:
 
-   * `sling:resourceType` - ingesteld als `foundation/components/form/action`
+   * `sling:resourceType` - ingesteld als  `foundation/components/form/action`
 
-   * `componentGroup` - definiëren als `.hidden`
+   * `componentGroup` - definiëren als  `.hidden`
 
    * Optioneel:
 
@@ -130,29 +131,31 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
 1. Maak in de map een van de volgende handelingen:
 
    1. Een postscript.
-De naam van het script is `post.POST.<extension>`bijvoorbeeld dat `post.POST.jsp`het postscript wordt aangeroepen wanneer een formulier wordt verzonden om het formulier te verwerken, het de code bevat die de gegevens uit het formulier afhandelt 
+De naam van het script is `post.POST.<extension>`, bijvoorbeeld `post.POST.jsp`
+Het postscript wordt geactiveerd wanneer een formulier wordt verzonden om het formulier te verwerken, bevat het de code waarmee de gegevens uit het formulier worden verwerkt 
 `POST`.
 
    1. Voeg een voorwaarts script toe dat wordt aangeroepen wanneer het formulier wordt verzonden.
-De naam van het script is `forward.<extension`>, `forward.jsp`dit script kan bijvoorbeeld een pad definiëren. Het huidige verzoek wordt dan door:sturen aan de gespecificeerde weg.
+De naam van het script is `forward.<extension`, bijvoorbeeld `forward.jsp`
+Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aan de gespecificeerde weg.
    De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-servlet de werkelijke opslag in JCR kan uitvoeren.
 
-   Er zou ook een ander servlet kunnen zijn die de daadwerkelijke verwerking doet, in een dergelijk geval de formulieractie en de actie `forward.jsp` zou slechts als &quot;lijm&quot;code dienst doen. Een voorbeeld van dit is de postactie bij `/libs/foundation/components/form/actions/mail`, die details aan door:sturen `<currentpath>.mail.html`waar een postservlet heeft.
+   Er kan ook een ander servlet zijn dat de daadwerkelijke verwerking uitvoert, in een dergelijk geval zouden de formulieractie en `forward.jsp` slechts als &quot;lijm&quot;code dienst doen. Een voorbeeld van dit is de postactie bij `/libs/foundation/components/form/actions/mail`, die details aan `<currentpath>.mail.html`door:sturen waar een postservlet zit.
 
    Dus:
 
    * a `post.POST.jsp` is nuttig voor kleine verrichtingen die volledig door de actie zelf worden gedaan
-   * terwijl het nuttig `forward.jsp` is wanneer slechts delegatie wordt vereist.
+   * terwijl `forward.jsp` nuttig is wanneer slechts delegatie wordt vereist.
 
    De uitvoeringsvolgorde voor de scripts is:
 
-   * Tijdens het weergeven van het formulier ( `GET`):
+   * Bij het weergeven van het formulier ( `GET`):
 
       1. `init.jsp`
       1. voor alle beperkingen van het veld: `clientvalidation.jsp`
       1. validatieRT van formulier: `clientvalidation.jsp`
       1. formulier wordt geladen via bron laden als dit is ingesteld
-      1. `addfields.jsp` tijdens renderen `<form></form>`
+      1. `addfields.jsp` tijdens renderen  `<form></form>`
    * bij het verwerken van een formulier `POST`:
 
       1. `init.jsp`
@@ -161,7 +164,7 @@ De naam van het script is `forward.<extension`>, `forward.jsp`dit script kan bij
       1. `forward.jsp`
       1. als een voorwaartse weg ( `FormsHelper.setForwardPath`) werd geplaatst, door:sturen het verzoek, dan vraag `cleanup.jsp`
 
-      1. Als geen voorwaartse weg werd geplaatst, vraag `post.POST.jsp` (beëindigt hier, geen `cleanup.jsp` geroepen)
+      1. Als geen voorwaarts weg werd geplaatst, vraag `post.POST.jsp` (beëindigt hier, geen `cleanup.jsp` geroepen)
 
 
 
@@ -169,15 +172,18 @@ De naam van het script is `forward.<extension`>, `forward.jsp`dit script kan bij
 1. Voeg desgewenst opnieuw toe aan de map:
 
    1. Een script voor het toevoegen van velden.
-De naam van het script is `addfields.<extension>`, bijvoorbeeld `addfields.jsp`een addfield-script wordt direct na het schrijven van de HTML voor het starten van het formulier geactiveerd. Hierdoor kan de handeling aangepaste invoervelden of andere dergelijke HTML in het formulier toevoegen.
+De naam van het script is `addfields.<extension>`, bijvoorbeeld `addfields.jsp`
+Er wordt direct nadat de HTML voor het starten van het formulier is geschreven, een addfields-script geactiveerd. Hierdoor kan de handeling aangepaste invoervelden of andere dergelijke HTML in het formulier toevoegen.
 
    1. Een initialisatiescript.
-De naam van het script wordt `init.<extension>`weergegeven, bijvoorbeeld `init.jsp`Dit script wordt aangeroepen wanneer het formulier wordt gegenereerd. Deze kan worden gebruikt om actiespecificaties te initialiseren. &quot;
+De naam van het script is `init.<extension>`, bijvoorbeeld `init.jsp`
+Dit script wordt aangeroepen wanneer het formulier wordt gegenereerd. Deze kan worden gebruikt om actiespecificaties te initialiseren. &quot;
 
    1. Een opschoonscript.
-De naam van het script is `cleanup.<extension>`, bijvoorbeeld `cleanup.jsp`Dit script kan worden gebruikt om opschoning uit te voeren.
+De naam van het script is `cleanup.<extension>`, bijvoorbeeld `cleanup.jsp`
+Dit script kan worden gebruikt om opschoning uit te voeren.
 
-1. Gebruik de component **Forms** in een parsys. De **keuzelijst Type** handeling bevat nu uw nieuwe handeling.
+1. Gebruik de **Forms** component in parsys. De vervolgkeuzelijst **Handelingstype** bevat nu uw nieuwe handeling.
 
    >[!NOTE]
    >
@@ -191,7 +197,7 @@ De naam van het script is `cleanup.<extension>`, bijvoorbeeld `cleanup.jsp`Dit s
 Beperkingen kunnen op twee niveaus worden opgelegd:
 
 * Voor [afzonderlijke velden (zie de volgende procedure)](#constraints-for-individual-fields)
-* Als [globale validatie van formulieren](#form-global-constraints)
+* As [form-global validation](#form-global-constraints)
 
 #### Restricties voor afzonderlijke velden {#constraints-for-individual-fields}
 
@@ -203,9 +209,9 @@ U kunt als volgt uw eigen beperkingen voor een afzonderlijk veld (onder `/apps`)
 
    `/apps/myProject/components/customFormConstraint`
 
-1. In dit knooppunt worden de volgende eigenschappen gedefinieerd en vervolgens klikt u op Alles **** opslaan om uw wijzigingen aan te houden:
+1. Voor deze knoop definieert de volgende eigenschappen, dan klik **sparen allen** om uw veranderingen voort te zetten:
 
-   * `sling:resourceType` - ingesteld op `foundation/components/form/constraint`
+   * `sling:resourceType` - ingesteld op  `foundation/components/form/constraint`
 
    * `constraintMessage` - een aangepast bericht dat wordt weergegeven als het veld volgens de beperking niet geldig is op het moment dat het formulier wordt ingediend.
 
@@ -217,10 +223,12 @@ U kunt als volgt uw eigen beperkingen voor een afzonderlijk veld (onder `/apps`)
 1. In deze map hebt u de volgende scripts nodig:
 
    * Een clientvalidatiescript:
-De naam van het script wordt `clientvalidation.<extension>`aangeroepen, bijvoorbeeld `clientvalidation.jsp`wanneer het formulierveld wordt gegenereerd. U kunt hiermee JavaScript voor de client maken om het veld op de client te valideren.
+De naam van het script is `clientvalidation.<extension>`, bijvoorbeeld `clientvalidation.jsp`
+Dit wordt aangeroepen wanneer het formulierveld wordt gegenereerd. U kunt hiermee JavaScript voor de client maken om het veld op de client te valideren.
 
    * Een servervalidatiescript:
-De naam van het script wordt `servervalidation.<extension>`bijvoorbeeld `servervalidation.jsp`aangeroepen wanneer het formulier wordt verzonden. Het kan worden gebruikt om het gebied op de server te bevestigen nadat het wordt voorgelegd.
+De naam van het script is `servervalidation.<extension>`, bijvoorbeeld `servervalidation.jsp`
+Dit wordt aangeroepen wanneer het formulier wordt verzonden. Het kan worden gebruikt om het gebied op de server te bevestigen nadat het wordt voorgelegd.
 
 >[!NOTE]
 >
@@ -228,7 +236,7 @@ De naam van het script wordt `servervalidation.<extension>`bijvoorbeeld `serverv
 >
 >`/libs/foundation/components/form/constraints`
 
-#### Formulierglobale beperkingen {#form-global-constraints}
+#### Formulier-globale beperkingen {#form-global-constraints}
 
 De vorm-globale bevestiging wordt gespecificeerd door een middeltype in de beginvormcomponent ( `validationRT`) te vormen. Bijvoorbeeld:
 
@@ -236,16 +244,16 @@ De vorm-globale bevestiging wordt gespecificeerd door een middeltype in de begin
 
 Vervolgens kunt u het volgende definiëren:
 
-* een `clientvalidation.jsp` - geïnjecteerd na de clientvalidatiescripts van het veld
-* en een `servervalidation.jsp` - ook aangeroepen na de afzonderlijke validaties van de veldserver op een `POST`.
+* a `clientvalidation.jsp` - geïnjecteerd na de clientvalidatiescripts van het veld
+* en een `servervalidation.jsp` - ook opgeroepen na de afzonderlijke validaties van de veldserver op een `POST`.
 
-### Formuliercomponenten weergeven en verbergen {#showing-and-hiding-form-components}
+### Formuliercomponenten tonen en verbergen {#showing-and-hiding-form-components}
 
 U kunt het formulier zo configureren dat formuliercomponenten worden weergegeven of verborgen op basis van de waarde van andere velden in het formulier.
 
 Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is. Op een feedbackformulier wordt bijvoorbeeld aan klanten gevraagd of ze productinformatie per e-mail naar hen willen sturen. Als u Ja selecteert, wordt een tekstveld weergegeven waarmee de klant zijn e-mailadres kan typen.
 
-In het dialoogvenster Regels **tonen/verbergen** bewerken kunt u opgeven onder welke voorwaarden een formuliercomponent wordt weergegeven of verborgen.
+Met het dialoogvenster **Regels tonen/verbergen bewerken** kunt u opgeven onder welke voorwaarden een formuliercomponent wordt weergegeven of verborgen.
 
 ![showhideeditor](assets/showhideeditor.png)
 
@@ -260,7 +268,7 @@ Onder deze velden worden een of meer voorwaarden weergegeven. Een voorwaarde ver
 * Een operator.
 * Er wordt een waarde vergeleken met de veldwaarde.
 
-Een component Groep keuzerondjes met de titel `Receive email notifications?`* * bevat bijvoorbeeld keuzerondjes `Yes` `No` en keuzerondjes. Een component van het Gebied van de Tekst met de titel van `Email Address` gebruikt de volgende voorwaarde zodat het zichtbaar is als `Yes` wordt geselecteerd:
+Een component Groep keuzerondjes met de titel `Receive email notifications?`* * bevat bijvoorbeeld de keuzerondjes `Yes` en `No`. Een component van het Gebied van de Tekst met de titel van `Email Address` gebruikt de volgende voorwaarde zodat het zichtbaar is als `Yes` wordt geselecteerd:
 
 ![showhidCondition](assets/showhidecondition.png)
 
@@ -272,26 +280,26 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
 
 1. Bewerk de specifieke formuliercomponent.
 
-1. Selecteer **Tonen/Verbergen** om het dialoogvenster **Weergeven/Regels** verbergen te openen:
+1. Selecteer **Tonen/verbergen** om het dialoogvenster **Regels tonen/verbergen** te openen:
 
-   * Selecteer in de eerste vervolgkeuzelijst de optie **Tonen** of **Verbergen** om op te geven of uw voorwaarden bepalen of de component moet worden weergegeven of verborgen.
+   * Selecteer in de eerste vervolgkeuzelijst **Tonen** of **Verbergen** om op te geven of uw voorwaarden bepalen of de component moet worden weergegeven of verborgen.
 
    * Selecteer in de vervolgkeuzelijst aan het einde van de bovenste regel:
 
       * **all** - als alle voorwaarden waar moeten zijn om de component weer te geven of te verbergen
-      * **om het even welk** - als slechts één of meerdere voorwaarden waar moeten zijn om de component te tonen of te verbergen
+      * **om het even welk**  - als slechts één of meerdere voorwaarden waar moeten zijn om de component te tonen of te verbergen
    * Selecteer in de voorwaardelijn (een wordt standaard weergegeven) een component, operator en geef een waarde op.
-   * Voeg desgewenst meer voorwaarden toe door op Voorwaarde **** toevoegen te klikken.
+   * Voeg indien nodig meer voorwaarden toe door te klikken op **Voorwaarde toevoegen**.
 
    Bijvoorbeeld:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Klik op **OK** om de definitie op te slaan.
+1. Klik **OK** om de definitie op te slaan.
 
-1. Nadat u de definitie hebt opgeslagen, wordt de koppeling Regels **** bewerken weergegeven naast de optie **Tonen/verbergen** in de eigenschappen van de formuliercomponent. Klik op deze koppeling om het dialoogvenster Regels **tonen/verbergen** bewerken te openen en wijzigingen aan te brengen.
+1. Nadat u uw definitie hebt opgeslagen, wordt een **Regels bewerken**-koppeling weergegeven naast de optie **Tonen/verbergen** in de eigenschappen van de formuliercomponent. Klik op deze koppeling om het dialoogvenster **Regels tonen/verbergen** te openen en wijzigingen aan te brengen.
 
-   Klik op **OK** om alle wijzigingen op te slaan.
+   Klik **OK** om alle wijzigingen op te slaan.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -301,7 +309,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
    >
    >
    >
-   >    * in de modus **Voorvertoning** in de auteursomgeving (pagina moet opnieuw worden geladen wanneer voor het eerst wordt overgeschakeld op de voorvertoning)
+   >    * in de modus **Voorvertoning** in de auteursomgeving (moet de pagina opnieuw worden geladen wanneer eerst wordt overgeschakeld op de voorvertoning)
       >
       >    
    * over de publicatieomgeving
@@ -315,7 +323,7 @@ Wanneer de configuratie Tonen/verbergen ongeldig is, wordt de configuratie allee
 
 ### Scripts ontwikkelen voor gebruik met Forms {#developing-scripts-for-use-with-forms}
 
-Zie de [javadocs voor formulieren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html)voor meer informatie over de API-elementen die kunnen worden gebruikt bij het schrijven van scripts.
+Zie [javadocs gerelateerd aan formulieren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html) voor meer informatie over de API-elementen die kunnen worden gebruikt bij het schrijven van scripts.
 
 U kunt dit gebruiken voor handelingen zoals het aanroepen van een service voordat het formulier wordt verzonden en het annuleren van de service als dit mislukt:
 

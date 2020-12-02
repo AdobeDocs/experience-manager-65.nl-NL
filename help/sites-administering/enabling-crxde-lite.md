@@ -11,25 +11,28 @@ content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 translation-type: tm+mt
 source-git-commit: a833a34bbeb938c72cdb851a46b2ffd97aee9f6d
+workflow-type: tm+mt
+source-wordcount: '225'
+ht-degree: 0%
 
 ---
 
 
 # CRXDE Lite inschakelen in AEM{#enabling-crxde-lite-in-aem}
 
-Om ervoor te zorgen dat AEM-installaties zo veilig mogelijk zijn, wordt in de beveiligingschecklist aanbevolen WebDAV [uit te schakelen in productieomgevingen](/help/sites-administering/security-checklist.md#disable-webdav) .
+Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, raadt de beveiligingscontrolelijst [aan WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) uit te schakelen in productieomgevingen.
 
-CRXDE Lite hangt echter af van de `org.apache.sling.jcr.davex` bundel om correct te functioneren, zodat het onbruikbaar maken van WebDAV CRXDE Lite ook effectief onbruikbaar zal maken.
+Nochtans, hangt CRXDE Lite van de `org.apache.sling.jcr.davex` bundel om behoorlijk te functioneren af, zodat zal het onbruikbaar maken WebDAV effectief CRXDE Lite ook onbruikbaar maken.
 
-Wanneer dit gebeurt, `https://serveraddress:4502/crx/de/index.jsp` zal het doorbladeren aan een leeg wortelknoop tonen, en alle HTTP- verzoeken aan middelen CRXDE Lite zullen ontbreken:
+Wanneer dit gebeurt, zal het doorbladeren aan `https://serveraddress:4502/crx/de/index.jsp` een leeg wortelknoop tonen, en alle HTTP- verzoeken aan de middelen van CRXDE Lite zullen ontbreken:
 
 ```xml
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Hoewel deze aanbeveling bedoeld is om aanvalsoppervlakken zoveel mogelijk te beperken, hebben systeembeheerders soms toegang tot CRXDE Lite nodig om te bladeren in inhoud of problemen met de foutopsporing op productieinstanties.
+Hoewel deze aanbeveling bedoeld is om aanvalsoppervlakken zoveel mogelijk te beperken, hebben systeembeheerders soms toegang tot CRXDE Lite nodig om inhoud te kunnen doorbladeren of problemen met betrekking tot productieinstanties op te sporen.
 
-Indien uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaande procedure te volgen:
+Als deze optie is uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaande procedure te volgen:
 
 1. Ga naar de console van Componenten OSGi bij `http://localhost:4502/system/console/components`
 1. Zoek naar de volgende component:
@@ -42,12 +45,12 @@ Indien uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaande procedu
 
 1. Maak de volgende configuratie:
 
-   * **** Hoofdpad: `/crx/server`
-   * Vink het vakje aan onder Absolute URI&#39;s **gebruiken**.
+   * **Hoofdpad:** `/crx/server`
+   * Tik op het vak onder **Absolute URI&#39;s gebruiken**.
 
 1. Als u klaar bent met het gebruik van CRXDE Lite, moet u WebDAV opnieuw uitschakelen.
 
-U kunt CRXDE Lite via cURL ook toelaten, door dit bevel in werking te stellen:
+U kunt CRXDE Lite ook inschakelen via cURL door deze opdracht uit te voeren:
 
 ```shell
 curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
@@ -55,8 +58,8 @@ curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server"
 
 ## Overige bronnen {#other-resources}
 
-Raadpleeg de volgende pagina&#39;s voor meer informatie over de beveiligingsfuncties van AEM 6:
+Raadpleeg de volgende pagina&#39;s voor meer informatie over AEM 6 beveiligingsfuncties:
 
-* [De AEM-beveiligingscontrolelijst](/help/sites-administering/security-checklist.md)
-* [AEM wordt uitgevoerd in productiekaartmodus](/help/sites-administering/production-ready.md)
+* [De lijst AEM beveiligingscontrole](/help/sites-administering/security-checklist.md)
+* [AEM uitvoeren in productielocatie](/help/sites-administering/production-ready.md)
 

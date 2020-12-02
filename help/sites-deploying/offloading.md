@@ -1,8 +1,8 @@
 ---
 title: Taken verschuiven
 seo-title: Taken verschuiven
-description: Leer hoe te om instanties AEM in een topologie te vormen en te gebruiken om specifieke soorten verwerking uit te voeren.
-seo-description: Leer hoe te om instanties AEM in een topologie te vormen en te gebruiken om specifieke soorten verwerking uit te voeren.
+description: Leer hoe te om AEM instanties in een topologie te vormen en te gebruiken om specifieke soorten verwerking uit te voeren.
+seo-description: Leer hoe te om AEM instanties in een topologie te vormen en te gebruiken om specifieke soorten verwerking uit te voeren.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -22,11 +22,11 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Het ontladen verdeelt verwerkingstaken onder instanties Experience Manager in een topologie. Met offloading kunt u specifieke Experience Manager-instanties gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
+Het ontladen verdeelt verwerkingstaken onder de instanties van de Experience Manager in een topologie. Met offloading kunt u specifieke instanties van Experience Managers gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-Offloaden is gebaseerd op de functies [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en Sling JobManager. Om het ontladen te gebruiken, voegt u de clusters van Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer Experience Manager-instanties, zodat één instantie als een cluster wordt beschouwd.
+Offloading is gebaseerd op de [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- en Sling JobManager-functies. Om het ontladen te gebruiken, voegt u de clusters van de Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Managers, zodat één instantie als een cluster wordt beschouwd.
 
-Voor informatie over het toevoegen van instanties aan een topologie, zie [het Beheer Topologieën](/help/sites-deploying/offloading.md#administering-topologies).
+Voor informatie over het toevoegen van instanties aan een topologie, zie [Beheerderende Topologies](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Taakverdeling {#job-distribution}
 
@@ -35,14 +35,14 @@ Sling JobManager en JobConsumer laten de verwezenlijking van banen toe die in ee
 * JobManager: De dienst die banen voor specifieke onderwerpen leidt.
 * JobConsumer: De dienst die banen van één of meerdere onderwerpen uitvoert. De veelvoudige diensten JobConsumer kunnen voor het zelfde onderwerp worden geregistreerd.
 
-Wanneer JobManager een taak maakt, selecteert het Offloading-framework een Experience Manager-cluster in de topologie om de taak uit te voeren:
+Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster van de Experience Manager in de topologie om de baan uit te voeren:
 
 * De cluster moet één of meerdere instanties omvatten die een JobConsumer in werking stellen die voor het baanonderwerp wordt geregistreerd.
 * Het onderwerp moet voor minstens één geval in de cluster worden toegelaten.
 
-Zie [het Vormen de Consumptie](/help/sites-deploying/offloading.md#configuring-topic-consumption) van het Onderwerp voor informatie over het raffineren van baandistributie.
+Zie [Het Vormen de Verbruik van het Onderwerp](/help/sites-deploying/offloading.md#configuring-topic-consumption) voor informatie over het raffineren van baandistributie.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 Wanneer het Offloading-framework een cluster selecteert om een taak uit te voeren en de cluster uit meerdere instanties bestaat, bepaalt Sling Distribution welke instantie in de cluster de taak uitvoert.
 
@@ -52,11 +52,11 @@ Het offloading-framework ondersteunt taaktaken die taken koppelen aan bronnen in
 
 Bij het maken van een taak wordt de lading alleen gegarandeerd geplaatst op het exemplaar dat de taak maakt. Wanneer het ontladen van de baan, zorgen de replicatieagenten ervoor dat de lading op de instantie wordt gecreeerd die uiteindelijk de baan verbruikt. Wanneer de uitvoering van de taak is voltooid, zorgt omgekeerde replicatie ervoor dat de payload wordt gekopieerd naar de instantie die de taak heeft gemaakt.
 
-## Onderwerptechnologieën beheren {#administering-topologies}
+## Onderwerpen {#administering-topologies} beheren
 
-De topologieën zijn losjes-verbonden Experience Manager clusters die aan het ontladen deelnemen. Een cluster bestaat uit een of meer Experience Manager-serverinstanties (één instantie wordt als een cluster beschouwd).
+De technologieën zijn losjes-verbonden clusters van de Experience Manager die aan het ontladen deelnemen. Een cluster bestaat uit een of meer serverinstanties van de Experience Manager (één instantie wordt beschouwd als een cluster).
 
-Elke Experience Manager-instantie voert de volgende offloading-gerelateerde services uit:
+Elke instantie van de Experience Manager stelt de volgende aan het ontladen verwante diensten in werking:
 
 * Detectieservice: Verzendt verzoeken naar een Schakelaar van de Topologie om zich bij de topologie aan te sluiten.
 * Topology Connector: Ontvangt om zich bij verzoeken aan te sluiten en of keurt goed of weigert elk verzoek.
@@ -67,9 +67,9 @@ De dienst van de Ontdekking van alle leden van de topologie richt aan de Schakel
 
 Elke cluster in de topologie bevat een instantie die als leider wordt erkend. De clusterleider communiceert met de topologie namens de andere leden van de cluster. Wanneer de leader de cluster verlaat, wordt automatisch een nieuwe leader voor de cluster gekozen.
 
-### De topologie weergeven {#viewing-the-topology}
+### De topologie {#viewing-the-topology} weergeven
 
-Browser van de Topologie van het gebruik om de staat van de topologie te onderzoeken waarin de instantie van Experience Manager deelneemt. Browser van de topologie toont de clusters en de instanties van de topologie.
+Browser van de Topologie van het gebruik om de staat van de topologie te onderzoeken waarin de instantie van de Experience Manager deelneemt. Browser van de topologie toont de clusters en de instanties van de topologie.
 
 Voor elke cluster, ziet u een lijst van clusterleden die op de orde wijst waarin elk lid zich bij de cluster aansloot, en welk lid de Leider is. De eigenschap Current geeft de instantie aan die u momenteel beheert.
 
@@ -106,9 +106,9 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
-De Apache Sling Resource-Based Dienst van de Ontdekking stelt op elke instantie in werking om te controleren hoe de instanties van Experience Manager met een topologie interactie aangaan.
+De Apache die middel-Gebaseerde Dienst van de Ontdekking op elke instantie plaatst om te controleren hoe de instanties van de Experience Manager met een topologie in wisselwerking staan.
 
-De dienst van de Ontdekking verzendt periodieke POST- verzoeken (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een lijst van gewenste personen van IP adressen of gastheernamen die worden toegestaan om zich bij de topologie aan te sluiten:
+De dienst van de Ontdekking verzendt periodieke verzoeken van de POST (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een lijst van gewenste personen van IP adressen of gastheernamen die worden toegestaan om zich bij de topologie aan te sluiten:
 
 * Om zich bij een instantie aan een topologie aan te sluiten, specificeer URL van de dienst van de Verbinding van de Topologie van het wortellid.
 * Om een instantie toe te laten om zich bij een topologie aan te sluiten, voeg de instantie aan de lijst van gewenste personen van de dienst van de Verbinding van de Topologie van het wortellid toe.
@@ -148,7 +148,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>lijst van gewenste personen voor topologieconnector</td>
+   <td>Lijst van gewenste personen voor topologieconnector</td>
    <td>topologieConnectorWhitelist</td>
    <td>De lijst van IP adressen of gastheernamen die de lokale dienst van de Verbinding van de Topologie in de topologie toestaat. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -157,7 +157,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>Naam beschrijving opslagplaats</td>
    <td>leaderSelectionRepositoryDescriptor</td>
    <td> </td>
-   <td>&lt;geen waarde&gt;</td>
+   <td>&lt;no value=""&gt;</td>
   </tr>
  </tbody>
 </table>
@@ -178,7 +178,7 @@ Voer de volgende procedure op het wortellid van de topologie uit. De procedure v
 
 ## Het vormen onderwerpconsumptie {#configuring-topic-consumption}
 
-Gebruik het Offloaden Browser om onderwerpconsumptie voor de instanties van Experience Manager in de topologie te vormen. Voor elke instantie, kunt u de onderwerpen specificeren die het gebruikt. Bijvoorbeeld, om uw topologie te vormen zodat slechts één instantie onderwerpen van een specifiek type verbruikt, maak het onderwerp op alle instanties behalve één onbruikbaar.
+Gebruik het Offloaden Browser om onderwerpconsumptie voor de instanties van de Experience Manager in de topologie te vormen. Voor elke instantie, kunt u de onderwerpen specificeren die het gebruikt. Bijvoorbeeld, om uw topologie te vormen zodat slechts één instantie onderwerpen van een specifiek type verbruikt, maak het onderwerp op alle instanties behalve één onbruikbaar.
 
 De taken worden verdeeld onder instanties die het bijbehorende die onderwerp hebben door middel van round-robin logica wordt toegelaten.
 
@@ -193,14 +193,15 @@ De taken worden verdeeld onder instanties die het bijbehorende die onderwerp heb
 1. Om de consumptie van een onderwerp voor een instantie onbruikbaar te maken, onder de onderwerpnaam klik onbruikbaar maken naast de instantie.
 1. Om al onderwerpconsumptie voor een instantie te vormen, klik het instantieherkenningsteken onder om het even welk onderwerp.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
    * Ingeschakeld: Dit exemplaar verbruikt banen van dit onderwerp.
    * Uitgeschakeld: Dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: Dit exemplaar verbruikt slechts banen van dit onderwerp.
-   **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+
+   **Opmerking:** Wanneer u Exclusief selecteert voor een onderwerp, worden alle andere onderwerpen automatisch ingesteld op Uitgeschakeld.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -215,32 +216,32 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
 -->
 
-### Onderwerpen voor een instantie uitschakelen en inschakelen {#disabling-and-enabling-topics-for-an-instance}
+### Onderwerpen voor een instantie {#disabling-and-enabling-topics-for-an-instance} uitschakelen en inschakelen
 
-De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van Experience Manager toe te laten of onbruikbaar te maken.
+De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
 
-**Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
+**Nota:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
 De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn. Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van afgewezen personen heeft geen waarde).
 
-Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knooppunten is org.apache.sling.event.impl.jobs.JobConsumerManager de PID van de service Job Consumer Manager.
+Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knopen, is PID van de dienst van de Manager van de Consumentenconsument van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
 | Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
 | Topic lijst van afgewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
-## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
+## Replicatieagents maken voor offloaden {#creating-replication-agents-for-offloading}
 
 Het offloading-framework gebruikt replicatie om bronnen tussen auteur en worker te vervoeren. Het het ontladen kader leidt automatisch tot replicatieagenten wanneer de instanties zich bij de topologie aansluiten. De agenten worden gecreeerd met standaardwaarden. U moet het wachtwoord manueel veranderen dat de agenten voor authentificatie gebruiken.
 
 >[!CAUTION]
 >
->Een bekende kwestie met de automatisch-geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen. Volg de procedure in [Problemen die de Automatisch Gegenereerde Agenten](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) van de Replicatie gebruiken alvorens u de agenten voor het Offloaden creeert.
+>Een bekende kwestie met de automatisch-geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen. Volg de procedure in [Problems Gebruikend de Automatisch Gegenereerde Agenten van de Replicatie ](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) alvorens u de agenten voor het Verschuiven creeert.
 
 Creeer de replicatieagenten die baanlading tussen instanties voor het ontladen vervoeren. De volgende illustratie toont de agenten die worden vereist om van de auteur aan een arbeidersinstantie te offloaden. De auteur heeft een Sling-id van 1 en de arbeidersinstantie heeft een Sling-id van 2:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 Deze opstelling vereist de volgende drie agenten:
 
@@ -254,19 +255,19 @@ Dit replicatieschema is vergelijkbaar met het replicatieschema dat wordt gebruik
 >
 >Het kader van het Verschuiven gebruikt de topologie om de IP adressen van de het ontladen instanties te verkrijgen. Het kader leidt dan automatisch tot de replicatieagenten die op deze IP adressen worden gebaseerd. Als de IP adressen van de het ontladen instanties later veranderen, wordt de verandering automatisch verspreid op de topologie nadat de instantie opnieuw begint. Nochtans, werkt het Offloading kader niet automatisch de replicatieagenten bij om op de nieuwe IP adressen te wijzen. Om deze situatie te vermijden, gebruik vaste IP adressen voor alle instanties in de topologie.
 
-### De replicatieagents benoemen voor offloaden {#naming-the-replication-agents-for-offloading}
+### De replicatieagents voor offloaden benoemen {#naming-the-replication-agents-for-offloading}
 
-Gebruik een specifiek formaat voor het bezit van de ***Naam*** van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
+Gebruik een specifiek formaat voor ***Naam*** bezit van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
 
 **De naam van de uitgaande agent op de auteurinstantie:**
 
-`offloading_<slingid>`, waarbij `<slingid>` de id Verdelen van de arbeidersinstantie is.
+`offloading_<slingid>`, waarbij  `<slingid>` de id Verdelen van de arbeidersinstantie is.
 
 Voorbeeld: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **De reverse-agent een naam geven op de auteurinstantie:**
 
-`offloading_reverse_<slingid>`, waarbij `<slingid>` de id Verdelen van de arbeidersinstantie is.
+`offloading_reverse_<slingid>`, waarbij  `<slingid>` de id Verdelen van de arbeidersinstantie is.
 
 Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -276,7 +277,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de uitgaande agent {#creating-the-outgoing-agent}
 
-1. Creeer een Agent **van de** Replicatie op auteur. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md)). Geef een **titel** op. De **naam** moet de naamgevingsconventie volgen.
+1. Maak een **Replication Agent** op auteur. (Zie de [documentatie voor replicatiemiddelen](/help/sites-deploying/replication.md)). Geef een **Titel** op. De **Naam** moet de naamgevingsconventie volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -288,9 +289,9 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Uitgebreid > HTTP-methode | POST |
    | Triggers > Standaard negeren | Waar |
 
-### De reverse agent maken {#creating-the-reverse-agent}
+### Het creëren van de omgekeerde agent {#creating-the-reverse-agent}
 
-1. Maak een **reverse Replication Agent** bij de auteur. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md).) Geef een **titel** op. De **naam** moet de naamgevingsconventie volgen.
+1. Maak een **Reverse Replication Agent** bij de auteur. (Zie de [documentatie voor replicatiemiddelen](/help/sites-deploying/replication.md).) Geef een **Titel** op. De **Naam** moet de naamgevingsconventie volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -303,7 +304,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de outbox agent {#creating-the-outbox-agent}
 
-1. Creeer een Agent **van de** Replicatie op de arbeidersinstantie. (Zie de [documentatie voor replicatieagenten](/help/sites-deploying/replication.md).) Geef een **titel** op. De **naam** moet `offloading_outbox`zijn.
+1. Maak een **Replication Agent** op de worker-instantie. (Zie de [documentatie voor replicatiemiddelen](/help/sites-deploying/replication.md).) Geef een **Titel** op. De **Naam** moet `offloading_outbox` zijn.
 1. Creeer de agent gebruikend de volgende eigenschappen.
 
    | Eigenschap | Waarde |
@@ -312,11 +313,11 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transport > Transport URI | repo://var/replication/outbox |
    | Trigger > Standaard negeren | Waar |
 
-### De verkoper-id zoeken {#finding-the-sling-id}
+### Bezig met zoeken van de id {#finding-the-sling-id}
 
-Verkrijg identiteitskaart van het Verkopen van een instantie van Experience Manager gebruikend één van beide volgende methodes:
+Verkrijg identiteitskaart van de Schuine kant van een instantie van de Experience Manager gebruikend één van beide volgende methodes:
 
-* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het het Verdelen bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
+* Open de Console van het Web en, in de Verschuivende Montages, vind de waarde van het Verschuivende bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
 
 <!--
@@ -355,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 Naast de details op deze pagina kunt u ook het volgende lezen:
 
-* Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie het [Creëren en het Verbruiken van Banen voor het Offloaden](/help/sites-developing/dev-offloading.md).
+* Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie [het Creëren van en het Verbruiken van Banen voor het Offloaden](/help/sites-developing/dev-offloading.md).

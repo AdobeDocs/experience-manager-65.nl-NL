@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '3163'
+ht-degree: 4%
 
 ---
 
 
-# JavaScript-API voor clientcontext{#client-context-javascript-api}
+# JavaScript-API{#client-context-javascript-api} voor clientcontext
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}
 
@@ -75,7 +78,7 @@ Wanneer de vertraging aan `true` of een aantal milliseconden wordt geplaatst, wa
 
 * storeName: Tekenreeks. De naam van het sessiearchief om de listener toe te voegen.
 * callback: Functie. De functie om op archiefinitialisatie te roepen.
-* vertraging: Boolean of Number. De hoeveelheid tijd om de vraag aan de callback functie, in milliseconden te vertragen. Een booleaanse waarde van `true` gebruikt de standaardvertraging van `200 ms`. Een booleaanse waarde `false` of een negatief getal zorgt ervoor dat er geen vertraging wordt gebruikt.
+* vertraging: Boolean of Number. De hoeveelheid tijd om de vraag aan de callback functie, in milliseconden te vertragen. Een booleaanse waarde van `true` gebruikt de standaardvertraging van `200 ms`. Een booleaanse waarde van `false` of een negatief getal zorgt ervoor dat geen vertraging wordt gebruikt.
 
 **Geeft als resultaat**
 
@@ -83,7 +86,7 @@ Geen geretourneerde waarde.
 
 #### onStoreRegistered(storeName, callback) {#onstoreregistered-storename-callback}
 
-Registreert een callback functie die wordt geroepen wanneer een zittingsopslag wordt geregistreerd. De registergebeurtenis treedt op wanneer een winkel is geregistreerd bij [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
+Registreert een callback functie die wordt geroepen wanneer een zittingsopslag wordt geregistreerd. De registergebeurtenis vindt plaats wanneer een winkel is geregistreerd op [CQ_Analytics.ClientContextMgr](#cq-analytics-clientcontextmgr).
 
 **Parameters**
 
@@ -96,7 +99,7 @@ Geen geretourneerde waarde.
 
 ## CQ_Analytics.JSONPStore {#cq-analytics-jsonpstore}
 
-Een niet-voortgezette sessiewinkel die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP. Gebruik de `getInstance` methode of `getRegisteredInstance` methode om een instantie van deze klasse te maken.
+Een niet-voortgezette sessiewinkel die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP. Gebruik de methode `getInstance` of `getRegisteredInstance` om een instantie van deze klasse te creëren.
 
 Breidt CQ_Analytics.JSONStore uit.
 
@@ -191,11 +194,11 @@ Breidt CQ_Analytics.SessionStore uit.
 
 #### STOREKEY {#storekey}
 
-De sleutel die de opslag identificeert. Gebruik de `getInstance` methode om deze waarde op te halen.
+De sleutel die de opslag identificeert. Gebruik de methode `getInstance` om deze waarde op te halen.
 
 #### STORENAME {#storename}
 
-De naam van de winkel. Gebruik de `getInstance` methode om deze waarde op te halen.
+De naam van de winkel. Gebruik de methode `getInstance` om deze waarde op te halen.
 
 ### Methoden {#methods-3}
 
@@ -240,7 +243,7 @@ Een object dat de opslaggegevens in JSON-indeling vertegenwoordigt.
 
 #### init() {#init}
 
-Wist de zittingsopslag en initialiseert het met het initialiseringsbezit. Hiermee stelt u de initialisatiemarkering in op `true` en activeert u vervolgens de `initialize` en `update` gebeurtenissen.
+Wist de zittingsopslag en initialiseert het met het initialiseringsbezit. Stelt de initialisatiemarkering in op `true` en activeert vervolgens de gebeurtenissen `initialize` en `update`.
 
 **Parameters**
 
@@ -300,9 +303,9 @@ Hiermee worden gebeurtenissen geactiveerd en kunnen andere objecten naar deze ge
 
 ### Methoden {#methods-4}
 
-#### addListener (gebeurtenis, effect, bereik) {#addlistener-event-fct-scope}
+#### addListener(event, font, scope) {#addlistener-event-fct-scope}
 
-Registreert een listener voor een gebeurtenis. Zie ook Listener [maken die reageert op een Sessiewinkelupdate](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
+Registreert een listener voor een gebeurtenis. Zie ook [Een listener maken om te reageren op een Session Store Update](/help/sites-developing/client-context.md#creating-a-listener-to-react-to-a-session-store-update).
 
 **Parameters**
 
@@ -314,7 +317,7 @@ Registreert een listener voor een gebeurtenis. Zie ook Listener [maken die reage
 
 Geen geretourneerde waarde.
 
-#### removeListener (gebeurtenis, fct) {#removelistener-event-fct}
+#### removeListener(event, fct) {#removelistener-event-fct}
 
 Verwijdert de opgegeven gebeurtenishandler voor een gebeurtenis.
 
@@ -410,17 +413,17 @@ Geen geretourneerde waarde.
 
 Een persistente container van een JSON-object.
 
-Breidt uit `CQ_Analytics.PersistedSessionStore`.
+Breidt `CQ_Analytics.PersistedSessionStore` uit.
 
 ### Eigenschappen {#properties-2}
 
 #### STOREKEY {#storekey-1}
 
-De sleutel die de opslag identificeert. Gebruik de `getInstance` methode om deze waarde op te halen.
+De sleutel die de opslag identificeert. Gebruik de methode `getInstance` om deze waarde op te halen.
 
 #### STORENAME {#storename-1}
 
-De naam van de winkel. Gebruik de `getInstance` methode om deze waarde op te halen.
+De naam van de winkel. Gebruik de methode `getInstance` om deze waarde op te halen.
 
 ### Methoden {#methods-6}
 
@@ -513,11 +516,11 @@ De standaardwaarde is `key`.
 
 Zie CQ_Analytics.SessionStore voor overerfde methoden.
 
-Wanneer de geërfte methodes `clear`, `setProperty`, `setProperties`, `removeProperty` worden gebruikt om de opslaggegevens te veranderen, worden de veranderingen automatisch voortgeduurd, tenzij de veranderde eigenschappen worden gemarkeerd nietPersisted.
+Wanneer de overgeërfde methodes `clear`, `setProperty`, `setProperties`, `removeProperty` worden gebruikt om de opslaggegevens te veranderen, worden de veranderingen automatisch voortgeduurd, tenzij de veranderde eigenschappen als notPersisted worden gemarkeerd.
 
 #### getStoreKey() {#getstorekey}
 
-Hiermee wordt de `STOREKEY` eigenschap opgehaald.
+Hiermee wordt de eigenschap `STOREKEY` opgehaald.
 
 **Parameters**
 
@@ -525,7 +528,7 @@ Geen
 
 **Geeft als resultaat**
 
-De waarde van de `STOREKEY` eigenschap.
+De waarde van de eigenschap `STOREKEY`.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -537,15 +540,15 @@ Hiermee wordt bepaald of een gegevenseigenschap wordt gepresteerd.
 
 **Geeft als resultaat**
 
-Een Booleaanse waarde: `true` als de eigenschap wordt voortgezet, en een waarde `false` als de waarde geen blijvend eigenschap is.
+Een Booleaanse waarde: `true` als de eigenschap wordt voortgezet, en een waarde van `false` als de waarde geen persisted eigenschap is.
 
 #### persist() {#persist}
 
-Houdt de zittingsopslag voort. In de standaardpersistentiemodus wordt de browser gebruikt `localStorage` met `ClientSidePersistence` de naam ( `window.localStorage.set("ClientSidePersistance", store);`)
+Houdt de zittingsopslag voort. In de standaardpersistentiemodus wordt browser `localStorage` gebruikt met `ClientSidePersistence` als naam ( `window.localStorage.set("ClientSidePersistance", store);`)
 
 Als localStorage niet beschikbaar of schrijfbaar is, dan wordt de opslag voortgeduurd als bezit van het venster.
 
-Hiermee wordt de `persist` gebeurtenis geactiveerd wanneer deze is voltooid.
+Hiermee wordt de gebeurtenis `persist` na voltooiing geactiveerd.
 
 **Parameters**
 
@@ -555,13 +558,13 @@ Geen
 
 Geen geretourneerde waarde.
 
-#### reset(delayEvent) {#reset-deferevent}
+#### reset(deferEvent) {#reset-deferevent}
 
-Hiermee verwijdert u alle gegevenseigenschappen uit de winkel en gaat u door met de winkel. De `udpate` gebeurtenis wordt optioneel niet geactiveerd wanneer deze is voltooid.
+Hiermee verwijdert u alle gegevenseigenschappen uit de winkel en gaat u door met de winkel. De gebeurtenis `udpate` wordt optioneel niet geactiveerd als de bewerking is voltooid.
 
 **Parameters**
 
-* delayEvent: De waarde true voorkomt dat de `update` gebeurtenis wordt geactiveerd. De updategebeurtenis wordt `false` geactiveerd als de waarde van is.
+* delayEvent: De waarde true voorkomt dat de gebeurtenis `update` wordt geactiveerd. Bij een waarde van `false` wordt de updategebeurtenis geactiveerd.
 
 **Geeft als resultaat**
 
@@ -622,7 +625,7 @@ Geen.
 
 Geen retourwaarde.
 
-#### getData(uitgesloten) {#getdata-excluded}
+#### getData(exclude) {#getdata-excluded}
 
 Retourneert de opslaggegevens. Hiermee worden naameigenschappen eventueel uitgesloten van de gegevens. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
 
@@ -644,7 +647,7 @@ Hiermee wordt de waarde van een eigenschap data opgehaald.
 
 **Geeft als resultaat**
 
-De waarde van de eigenschap data. Hiermee wordt geretourneerd `null` als de sessiewinkel geen eigenschap met de opgegeven naam bevat.
+De waarde van de eigenschap data. Retourneert `null` als de sessieopslag geen eigenschap van de opgegeven naam bevat.
 
 #### getName() {#getname}
 
@@ -697,7 +700,7 @@ this
 
 #### init() {#init-1}
 
-Hiermee wordt de winkel gemarkeerd als geïnitialiseerd en wordt de `initialize` gebeurtenis geactiveerd.
+Hiermee markeert u de winkel als geïnitialiseerd en wordt de gebeurtenis `initialize` geactiveerd.
 
 **Parameters**
 
@@ -734,7 +737,7 @@ Geen geretourneerde waarde.
 
 #### removeProperty(name) {#removeproperty-name}
 
-Hiermee wordt een eigenschap uit de sessieopslag verwijderd. Hiermee wordt de `update` gebeurtenis geactiveerd wanneer deze is voltooid. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
+Hiermee wordt een eigenschap uit de sessieopslag verwijderd. Hiermee wordt de gebeurtenis `update` na voltooiing geactiveerd. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
 
 **Parameters**
 
@@ -746,7 +749,7 @@ Geen geretourneerde waarde.
 
 #### reset() {#reset}
 
-Hiermee herstelt u de oorspronkelijke waarden van de gegevensopslag. De standaardimplementatie verwijdert eenvoudig alle gegevens. Hiermee wordt de `update` gebeurtenis geactiveerd wanneer deze is voltooid.
+Hiermee herstelt u de oorspronkelijke waarden van de gegevensopslag. De standaardimplementatie verwijdert eenvoudig alle gegevens. Hiermee wordt de gebeurtenis `update` na voltooiing geactiveerd.
 
 **Parameters**
 
@@ -758,11 +761,11 @@ Geen geretourneerde waarde.
 
 #### setProperties(eigenschappen) {#setproperties-properties}
 
-Stelt de waarden van meerdere eigenschappen in. Hiermee wordt de `update` gebeurtenis geactiveerd wanneer deze is voltooid. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
+Stelt de waarden van meerdere eigenschappen in. Hiermee wordt de gebeurtenis `update` na voltooiing geactiveerd. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
 
 **Parameters**
 
-* Eigenschappen: Object. Een object dat opsombare eigenschappen bevat. Elke eigenschapsnaam en -waarde wordt toegevoegd aan de winkel.
+* Eigenschappen: Object. Een object dat opsombare eigenschappen bevat. Elke eigenschapnaam en -waarde worden toegevoegd aan de winkel.
 
 **Geeft als resultaat**
 
@@ -770,7 +773,7 @@ Geen geretourneerde waarde.
 
 #### setProperty(name, value) {#setproperty-name-value}
 
-Hiermee wordt de waarde van een eigenschap ingesteld. Hiermee wordt de `update` gebeurtenis geactiveerd wanneer deze is voltooid. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
+Hiermee wordt de waarde van een eigenschap ingesteld. Hiermee wordt de gebeurtenis `update` na voltooiing geactiveerd. Roept de `init` methode als het gegevensbezit van de opslag niet bestaat.
 
 **Parameters**
 

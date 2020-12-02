@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
 
-# Dialoogvenster omzetten{#dialog-conversion-tool}
+# Dialoogomzettingsgereedschap{#dialog-conversion-tool}
 
 Het hulpmiddel van de dialoogomzetting wordt verstrekt helpen bestaande componenten uitbreiden die slechts een dialoog hebben die voor klassieke UI (op ExtJS wordt gebaseerd) wordt bepaald of op Granite UI en Koraal 2 wordt gebaseerd. Het gereedschap gebruikt het oorspronkelijke dialoogvenster om een dubbel dialoogvenster te maken dat is ontworpen voor de standaardinterface op basis van de gebruikersinterface van graniet en koraal 3.
 
@@ -29,7 +32,7 @@ Het hulpmiddel zal de nieuwe dialoog tot stand brengen gebruikend de norm, grani
 
 >[!NOTE]
 >
->Omdat de klassieke interface niet meer wordt ontwikkeld of verbeterd, raadt Adobe klanten aan een upgrade uit te voeren naar de standaardgebruikersinterface van Granite om te profiteren van de nieuwste technologie.
+>Omdat klassieke UI niet meer wordt ontwikkeld of verbeterd, adviseert Adobe dat de klanten aan het gebrek van de gebruikersinterface van Granite UI aan voordeel van de recentste technologie bevorderen.
 >
 >Hoewel het over het algemeen een goede praktijk is om naar het meest recente platform te migreren, is migratie van Coral 2 naar Coral 3 niet van cruciaal belang. Een nieuw project moet echter worden gestart op basis van Coral 3.
 
@@ -42,24 +45,24 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open aem-dialoog-omzettingsproject op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion)
-* Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/archive/master.zip)
 
 >[!NOTE]
 >
->AEM wordt niet verzonden met het hulpprogramma voor het omzetten van dialoogvensters. U moet het downloaden en installeren om het te gebruiken.
+>AEM wordt niet verzonden met het gereedschap voor het omzetten van dialoogvensters. U moet het downloaden en installeren om het te gebruiken.
 
 Voer de volgende stappen uit om het gereedschap voor het converteren van dialoogvensters te installeren.
 
-1. Download het pakket van het project [GitHub van het Hulpmiddel van de Omzetting van de](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases)Dialoog.
-1. Installeer het pakket op uw exemplaar. Voor details op pakketbeheer zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
+1. Download het pakket van het [GitHub project ](https://github.com/Adobe-Marketing-Cloud/aem-dialog-conversion/releases) van het Hulpmiddel van de Omzetting van de Dialoog.
+1. Installeer het pakket op uw exemplaar. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over pakketbeheer.
 
-## Een dialoogvenster converteren {#converting-a-dialog}
+## Een dialoogvenster {#converting-a-dialog} converteren
 
-Het gereedschap converteert dialoogvensters door een overeenkomend dialoogvenster voor graniet-gebruikersinterface / koraal 3 te maken op dezelfde locatie als het oorspronkelijke dialoogvenster in de inhoudsstructuur. In het geval van de dialogen van Granite UI/Coral 2, worden deze gekopieerd aan een reserveplaats (een `.coral2` achtervoegsel wordt toegevoegd aan de naam van de dialoogdoos) zodat niet om worden met voeten getreden. Het gereedschap kan ontwerpdialoogvensters converteren en dialoogvensters bewerken.
+Het gereedschap converteert dialoogvensters door een overeenkomend dialoogvenster voor graniet-gebruikersinterface / koraal 3 te maken op dezelfde locatie als het oorspronkelijke dialoogvenster in de inhoudsstructuur. In het geval van de dialogen van Granite UI/Coral 2, worden deze gekopieerd aan een reserveplaats (a `.coral2` achtervoegsel wordt toegevoegd aan de naam van de dialoogdoos) zodat niet om worden met voeten getreden. Het gereedschap kan ontwerpdialoogvensters converteren en dialoogvensters bewerken.
 
 Gebruik de volgende stappen om een of meer dialoogvensters om te zetten:
 
-1. Open de **Dialog Conversion** -console, toegankelijk via **Global Navigation** -> **Tools** -> **Operations**:
+1. Open de **Dialoogconversie**-console, toegankelijk via **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen**:
 
    `https://<hostname>:<port>/libs/cq/dialogconversion/content/console.html`
 
@@ -69,27 +72,28 @@ Gebruik de volgende stappen om een of meer dialoogvensters om te zetten:
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Selecteer Dialoogvensters **** tonen om alle dialoogvensters onder die locatie weer te geven.
+1. Selecteer **Dialoogvensters tonen** om alle dialoogvensters onder die locatie weer te geven.
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
    De tabel bevat een lijst met alle bestaande oudere dialoogvensters onder het ingevoerde pad. In elk dialoogvenster wordt het type weergegeven. De volgende typen zijn beschikbaar:
 
-   * **** Klassiek: Knooppunten van het type `cq:Dialog` met knooppuntnaam `dialog` of `design_dialog`
-   * **** Koraal 2: Nodes genoemd `cq:dialog` of `cq:design_dialog` die een graniet UI/Koral 2 middeltype bij hun knoop van de kindinhoud hebben
-   Elke rij bevat een koppeling om het dialoogvenster weer te geven en een koppeling naar CRXDE Lite om de bijbehorende knooppuntstructuur weer te geven.
+   * **Klassiek:** knooppunten van het type  `cq:Dialog` met knooppuntnaam  `dialog` of  `design_dialog`
+   * **Koraal 2:** Nodes genoemd  `cq:dialog` of  `cq:design_dialog` die een graniet UI/Koral 2 middeltype bij hun knoop van de kindinhoud hebben
+
+   Elke rij bevat een koppeling om het dialoogvenster weer te geven en een koppeling naar CRXDE Lite om de knooppuntstructuur weer te geven.
 
    >[!NOTE]
    >
    >Componenten die geen dialoogvenster hebben voor de klassieke interface of koraal 2 (dat wil zeggen ze die zijn ontworpen met de gebruikersinterface van graniet / koraal 3) worden niet vermeld.
 
-1. Selecteer een of meer dialoogvensters voor conversie en klik op X-dialoogvenster **converteren of tik op X-dialoogvenster** converteren om het conversieproces te starten.
+1. Selecteer een of meer dialoogvensters voor conversie en klik of tik op **X-dialoogvenster(en) converteren** om het conversieproces te starten.
 
-   ![chlimage_1-21](assets/chlimage_1-21a.png)
+   ![chlimage_1-29](assets/chlimage_1-21a.png)
 
-1. De geselecteerde dialogen worden weergegeven met de resultaten van hun conversies. Als de conversie succesvol was, bevat de rij koppelingen naar het omgezette dialoogvenster of naar het openen van het dialoogvenster in CRXDE Lite.
+1. De geselecteerde dialogen worden weergegeven met de resultaten van hun conversies. Als de conversie is gelukt, bevat de rij koppelingen naar het omgezette dialoogvenster of naar het openen van het dialoogvenster in CRXDE Lite.
 
-   Klik of tik op **Terug** om terug te keren naar het gereedschap Dialoogomzetting.
+   Klik of tik **Terug** om naar het Hulpmiddel van de Omzetting van de Dialoog terug te keren.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
@@ -97,41 +101,41 @@ Gebruik de volgende stappen om een of meer dialoogvensters om te zetten:
 
    ![chlimage_1-23](assets/chlimage_1-23a.png)
 
-1. Schakel de optie Omgezette dialoogvensters **** tonen in om de dialoogvensters weer te geven die zich op het opgegeven pad bevinden en die al zijn omgezet.
+1. Schakel de optie **Omgezette dialoogvensters weergeven** in om de dialoogvensters weer te geven die zich op het opgegeven pad bevinden en die al zijn omgezet.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
    Als het dialoogvenster al is geconverteerd, worden er ook koppelingen naar het geconverteerde dialoogvenster weergegeven. Een dialoogvenster wordt geconverteerd als er al een dialoogvenster voor een verwant graniet-interface/koraal 3 beschikbaar is.
 
-## Regels voor herschrijven van dialoogvensters {#dialog-rewrite-rules}
+## Dialoogvenster Regels voor herschrijven {#dialog-rewrite-rules}
 
-Het gereedschap voor het omzetten van dialoogvensters is gebaseerd op het concept van herschrijven van **grafieken**, dat bestaat uit het transformeren van een onderwerpreeks door het toepassen van herschrijfregels. Een herschrijfregel is de koppeling van een patroon met een vervangende grafiek. De regel komt overeen met het aantal exemplaren van een bepaalde alinea in de onderwerpreeks en vervangt deze vervolgens. Zie ook [https://en.wikipedia.org/wiki/Graph_rewriting](https://en.wikipedia.org/wiki/Graph_rewriting) voor meer informatie over het herschrijven van grafieken.
+Het gereedschap voor het omzetten van dialoogvensters is gebaseerd op het concept **herschrijven van grafieken**, dat bestaat uit het transformeren van een onderwerpreeks door het toepassen van herschrijfregels. Een herschrijfregel is de koppeling van een patroon met een vervangende grafiek. De regel komt overeen met het aantal exemplaren van een bepaalde alinea in de onderwerpreeks en vervangt deze vervolgens. Zie ook [https://en.wikipedia.org/wiki/Graph_rewriting](https://en.wikipedia.org/wiki/Graph_rewriting) voor meer informatie over het herschrijven van grafieken.
 
 Het hulpmiddel van de dialoogomzetting gebruikt deze benadering om een bepaalde erfenis dialoogboom (Klassiek of Granite UI/Koral 2) aan zijn Granite UI/Koral 3 tegenhanger te herschrijven. Dit heeft het voordeel dat de omzetting hoogst flexibel is en zelfs complexe componenten in aanmerking kan nemen, aangezien de aanpassing op daadwerkelijke subbomen en niet alleen enige knopen of eigenschappen wordt gedaan.
 
-### Algorithm {#algorithm}
+### Algoritme {#algorithm}
 
 Het herschrijfalgoritme neemt als parameter de boom die moet worden herschreven en een reeks herschrijfregels. Het doorloopt de boom in pre-orde en voor elke knoop controleert als een regel voor de subboom van toepassing is die bij die knoop wordt geworteld. De eerste regel die overeenkomt, wordt toegepast op die substructuur om deze te herschrijven. De traversal begint vervolgens opnieuw bij de basis. Het algoritme stopt zodra de gehele boom is doorlopen en geen enkele regel een subboomstructuur heeft gevonden. Als optimaliseringsmaatregel, houdt het algoritme spoor van een reeks knopen die definitief zijn en daarom moet niet voor gelijken in verdere traversals opnieuw worden gecontroleerd. Het is aan rewrite regels om te bepalen welke knopen van de herschreven boom definitief zijn, en die door toekomstige overgangen van het algoritme zouden moeten worden herzien.
 
-Het ingangspunt voor de omzetting is het `DialogConversionServlet`, dat op POST-verzoeken aan `/libs/cq/dialogconversion/content/convert.json`wordt geregistreerd. Deze accepteert een padaanvraagparameter. Dit is een array die de paden naar de dialoogvensters bevat die moeten worden omgezet. Voor elk dialoogvenster herschrijft de servlet vervolgens de corresponderende dialoogstructuur door alle gedefinieerde regels voor het herschrijven van dialoogvensters toe te passen.
+Het ingangspunt voor de omzetting is `DialogConversionServlet`, die op POST verzoeken aan `/libs/cq/dialogconversion/content/convert.json` wordt geregistreerd. Deze accepteert een padaanvraagparameter. Dit is een array die de paden naar de dialoogvensters bevat die moeten worden omgezet. Voor elk dialoogvenster herschrijft de servlet vervolgens de corresponderende dialoogstructuur door alle gedefinieerde regels voor het herschrijven van dialoogvensters toe te passen.
 
 ### Regeltypen herschrijven {#rewrite-rule-types}
 
 De herschrijfregels kunnen op twee verschillende manieren worden gedefinieerd:
 
-* JCR-knooppuntstructuren - Op [knooppunt gebaseerde herschrijfregels](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)
+* JCR-knooppuntstructuren - [Op knooppunten gebaseerde herschrijfregels](/help/sites-developing/dialog-conversion.md#node-based-rewrite-rules)
 
-* Java-klassen die een specifieke interface implementeren - Op [Java gebaseerde herschrijfregels](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
+* Java-klassen die een specifieke interface implementeren - [Java-Based Rewrite Rules](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
 
-Sommige worden [verstrekt uit-van-de-doos](#provided-rewrite-rules), maar u kunt uw eigen aangepaste regels ook bepalen. [Er zijn ook voorbeelden van herschrijfregels](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) beschikbaar.
+Sommige zijn [verstrekt uit-van-de-doos](#provided-rewrite-rules), maar u kunt ook uw eigen aangepaste regels bepalen. [Voorbeelden van herschrijfregels ](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) zijn ook beschikbaar.
 
 Doorgaans is één regel voor het herschrijven van dialoogvensters verantwoordelijk voor het herschrijven van één dialoogelement, bijvoorbeeld het invoerveld van de padbrowser.
 
 >[!CAUTION]
 >
->Herschrijven de lijnen worden niet ontdekt door het algoritme, daarom moeten de **herschrijvingsregels bomen niet op een cirkelwijze** herschrijven.
+>Herschrijven de lijnen worden niet ontdekt door het algoritme, daarom **herschrijf de regels moeten geen bomen op een cirkelwijze herschrijven**.
 
-### Herschrijfregels op basis van knooppunten {#node-based-rewrite-rules}
+### Op knooppunten gebaseerde herschrijfregels {#node-based-rewrite-rules}
 
 Een dialoogvenster voor het herschrijven van regels kan worden gedefinieerd in termen van knooppunten en eigenschappen.
 
@@ -153,9 +157,9 @@ rule
       + ...
 ```
 
-In dit voorbeeld wordt een regel gedefinieerd die twee **patronen** bevat (de bomen die zijn geworteld op `foo` en `foo1`) en een **vervanger** (de boom die is geworteld op `bar`). De patroon- en vervangingsbomen zijn willekeurige bomen die knooppunten en eigenschappen bevatten. De regel komt overeen met een substructuur als een van de gedefinieerde patronen overeenkomt. Een patroon komt alleen overeen als de onderwerpstructuur dezelfde knooppunten bevat als het patroon (overeenkomende namen) en alle eigenschappen die in het patroon zijn gedefinieerd, overeenkomen met de eigenschappen van de structuur.
+In dit voorbeeld wordt een regel gedefinieerd met twee **patronen** (de bomen die zijn geworteld op `foo` en `foo1`) en een **replacement** (de boom die geworteld is op `bar`). De patroon- en vervangingsbomen zijn willekeurige bomen die knooppunten en eigenschappen bevatten. De regel komt overeen met een substructuur als een van de gedefinieerde patronen overeenkomt. Een patroon komt alleen overeen als de onderwerpstructuur dezelfde knooppunten bevat als het patroon (overeenkomende namen) en alle eigenschappen die in het patroon zijn gedefinieerd, overeenkomen met de eigenschappen van de structuur.
 
-In het geval van een overeenkomst wordt de overeenkomende substructuur (de oorspronkelijke structuur genoemd) vervangen door de vervangende substructuur. De vervangingsboom kan in kaart gebrachte eigenschappen bepalen die de waarde van een bezit in de originele boom zullen erven. Zij moeten van type zijn `String` en het volgende formaat hebben:
+In het geval van een overeenkomst wordt de overeenkomende substructuur (de oorspronkelijke structuur genoemd) vervangen door de vervangende substructuur. De vervangingsboom kan in kaart gebrachte eigenschappen bepalen die de waarde van een bezit in de originele boom zullen erven. Ze moeten van het type `String` zijn en de volgende indeling hebben:
 
 `${<path>}`
 
@@ -185,7 +189,7 @@ Regels ondersteunen ook de volgende optionele eigenschappen.
 
 * `cq:rewriteRanking` (integer)
 
-   Plaats dit bezit op de regelknoop om de orde te beïnvloeden waardoor de regels worden toegepast. Dit kan nuttig zijn om ervoor te zorgen dat de regels die meer specifieke structuren behandelen niet door meer algemene worden beschreven. Regels met een lagere rangorde hebben voorrang op regels met een hogere rangorde. Alle regels worden standaard `Integer.MAX_VALUE` als rangschikking toegepast.
+   Plaats dit bezit op de regelknoop om de orde te beïnvloeden waardoor de regels worden toegepast. Dit kan nuttig zijn om ervoor te zorgen dat de regels die meer specifieke structuren behandelen niet door meer algemene worden beschreven. Regels met een lagere rangorde hebben voorrang op regels met een hogere rangorde. Alle regels door gebrek ontvangen `Integer.MAX_VALUE` als hun rangschikking.
 
 De vervangingsboom steunt ook de volgende speciale eigenschappen (genoemd begin met `cq:rewrite`):
 
@@ -193,21 +197,21 @@ De vervangingsboom steunt ook de volgende speciale eigenschappen (genoemd begin 
 
    De knoop die dit bezit bevat zal een exemplaar van de kinderen van de knoop in de originele boom ontvangen die door de bezitswaarde van verwijzingen wordt voorzien (b.v. `cq:rewriteMapChildren=./items`).
 
-* `cq:rewriteFinal` (boolean)
+* `cq:rewriteFinal` (Booleaans)
 
    Dit is een optimaliseringsmaatregel die het algoritme vertelt dat de knoop die dit bezit bevat definitief is en niet moet opnieuw worden gecontroleerd voor de aanpassing herschrijft regels. Wanneer geplaatst op de vervangingsknoop zelf, wordt de volledige vervangingsboom beschouwd als definitief.
-* `cq:rewriteCommonAttrs` (boolean)
+* `cq:rewriteCommonAttrs` (Booleaans)
 
-   Plaats dit bezit op de vervangingsknoop ( `rule`/ `replacement`) om relevante eigenschappen van de originele wortelknoop aan Granite gemeenschappelijke attributenequivalenten in de exemplaarwortel in kaart te brengen. Deze behandelt gegevenskenmerken door het `granite:data` subknooppunt op het doel te kopiëren of te maken en er `data-*` eigenschappen te schrijven.
-* `cq:rewriteRenderCondition` (boolean)
+   Plaats dit bezit op de vervangingsknoop ( `rule`/ `replacement`) om relevante eigenschappen van de originele wortelknoop aan de gemeenschappelijke attributenequivalenten van Granite in de exemplaarwortel in kaart te brengen. Deze behandelt gegevenskenmerken door het subknooppunt `granite:data` op het doel te kopiëren of te maken en `data-*`-eigenschappen daar te schrijven.
+* `cq:rewriteRenderCondition` (Booleaans)
 
    Plaats dit bezit op de vervangingsknoop ( `rule`/ `replacement`) om het even welke graniet terug te geven voorwaarde ( `rendercondition` of `granite:rendercondition`) kindknoop van de originele wortelknoop aan een `granite:rendercondition` kind van de exemplaarwortel te kopiëren.
 
-Daarnaast kan een `cq:rewriteProperties` knooppunt aan een vervangingsknooppunt worden toegevoegd om tekenreeksherschrijvingen voor toegewezen eigenschappen in het resultaat te definiëren. Het knooppunt wordt verwijderd uit de vervanging. De eigenschappen van het `cq:rewriteProperties` knooppunt moeten dezelfde naam hebben als de eigenschappen die ze herschrijven en die een tekenreeksarray met twee parameters accepteren:
+Bovendien kan een `cq:rewriteProperties` knoop aan een vervangingsknoop worden toegevoegd om koord te bepalen herschrijft voor in kaart gebrachte eigenschappen in het resultaat. Het knooppunt wordt verwijderd uit de vervanging. De eigenschappen van de `cq:rewriteProperties` knoop moeten het zelfde als worden genoemd die zij herschrijven en een koordserie met twee parameters goedkeuren:
 
-* `pattern`: Regex moet overeenkomen met, bijvoorbeeld `"(?:coral-Icon-)(.+)"`
+* `pattern`: Regex moet overeenkomen met, bijvoorbeeld  `"(?:coral-Icon-)(.+)"`
 
-* `replacement`: Aan de `replaceAll` functie matcher, bv. `"$1"`
+* `replacement`: Aan de  `replaceAll` functie matcher verstrekt, bijvoorbeeld  `"$1"`
 
 Hieronder ziet u een voorbeeld van het herschrijven van de eigenschappen van het pictogram Coral 2 naar de equivalenten van Coral 3:
 
@@ -236,11 +240,11 @@ Deze regels kunnen worden overschreven door een aantal regels op te geven op:
 
 `/apps/cq/dialogconversion/rules`
 
-U kunt kopiëren `/libs/cq/dialogconversion/rules` om `/apps` dan bestaande te wijzigen en/of nieuwe regels aan dit nieuwe geval toe te voegen &quot;.
+U kunt `/libs/cq/dialogconversion/rules` aan `/apps` dan wijzigen bestaande en/of nieuwe regels toevoegen aan deze nieuwe instantie &quot;.
 
 ### Op Java gebaseerde herschrijfregels {#java-based-rewrite-rules}
 
-Complexere herschrijfregels kunnen worden gedefinieerd als Java-klassen die een OSGi-service van de interface toegankelijk maken `com.adobe.cq.dialogconversion.DialogRewriteRule`.
+Complexere herschrijfregels kunnen worden gedefinieerd als Java-klassen die een OSGi-service van de interface `com.adobe.cq.dialogconversion.DialogRewriteRule` blootstellen.
 
 Een dergelijke klasse moet de volgende methoden implementeren:
 
@@ -250,15 +254,15 @@ Node applyTo(Node root, Set<Node> finalNodes) throws DialogRewriteException, Rep
 int getRanking();
 ```
 
-De `matches` methode moet terugkeren `true` als de regel de subboomstructuur aanpast die bij de geleverde wortelknoop wordt geworteld. Als de regel aanpast, zal de boom die algoritme herschrijft later de `applyTo` methode roepen, die de subboom moet herschrijven die op de gespecificeerde wortelknoop wordt geworteld. Gewoonlijk, zal deze methode tijdelijk anders noemen de originele boom, bouwt de nieuwe boom als nieuw kind van de originele knoop van de boom (gebruikend zijn knopen en eigenschappen), en verwijdert tenslotte de originele boom. Meer gedetailleerde informatie vindt u in de Javadoc van de `com.adobe.cq.dialogconversion.DialogRewriteRule` interface.
+De `matches` methode moet `true` terugkeren als de regel de subboom aanpast die bij de geleverde wortelknoop wordt geworteld. Als de regel aanpast, zal de boom die algoritme herschrijft de `applyTo` methode later roepen, die de subboom moet herschrijven die op de gespecificeerde wortelknoop wordt geworteld. Gewoonlijk, zal deze methode tijdelijk anders noemen de originele boom, bouwt de nieuwe boom als nieuw kind van de originele knoop van de boom (gebruikend zijn knopen en eigenschappen), en verwijdert tenslotte de originele boom. Meer gedetailleerde informatie kunt u vinden in het Javadoc van de `com.adobe.cq.dialogconversion.DialogRewriteRule` interface.
 
 #### Meer informatie - JavaDocs {#further-information-javadocs}
 
-Raadpleeg de JavaDocs voor meer informatie [`com.adobe.cq.dialogconversion`](https://adobe-marketing-cloud.github.io/aem-touchui-dialogconversion-samples/javadoc/).
+Zie de JavaDocs voor [`com.adobe.cq.dialogconversion`](https://adobe-marketing-cloud.github.io/aem-touchui-dialogconversion-samples/javadoc/) voor meer informatie.
 
 #### Uw eigen op Java gebaseerde herschrijfregels definiëren {#defining-your-own-java-based-rewrite-rules}
 
-De volgende klasse toont een voorbeeld van een aangepaste herschrijfregel die de `com.adobe.cq.dialogconversion.DialogRewriteRule` interface implementeert.
+De volgende klasse toont een voorbeeld van een douane herschrijft regel die de `com.adobe.cq.dialogconversion.DialogRewriteRule` interface uitvoert.
 
 ```java
 @Component
@@ -280,7 +284,7 @@ public class CustomDialogRewriteRule implements DialogRewriteRule {
 }
 ```
 
-U kunt ook `com.adobe.cq.dialogconversion.AbstractDialogRewriteRule` als volgt uitbreiden. De abstracte klasse voert de `getRanking` methode uit en gebruikt het bezit `service.ranking` OSGi van de dienst om het rangschikken van de regel te bepalen.
+U kunt `com.adobe.cq.dialogconversion.AbstractDialogRewriteRule` ook uitbreiden zoals hieronder. De abstracte klasse voert de `getRanking` methode uit en gebruikt `service.ranking` bezit OSGi van de dienst om het rangschikken van de regel te bepalen.
 
 ```java
 @Component
@@ -303,7 +307,7 @@ public class CustomDialogRewriteRule extends AbstractDialogRewriteRule {
 
 ### Opgegeven herschrijfregels {#provided-rewrite-rules}
 
-Het `cq-dialog-conversion-content` pakket bevat verschillende vooraf gedefinieerde herschrijfregels. Zie Extypes [gebruiken voor meer informatie voor klassieke UI-widgets](/help/sites-developing/xtypes.md) .
+Het pakket `cq-dialog-conversion-content` bevat verschillende vooraf gedefinieerde herschrijfregels. Zie [Xtypes gebruiken](/help/sites-developing/xtypes.md) voor meer informatie voor klassieke UI-widgets.
 
 <table>
  <tbody>
@@ -314,8 +318,8 @@ Het `cq-dialog-conversion-content` pakket bevat verschillende vooraf gedefinieer
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.CqDialogRewriteRule</code></td>
-   <td>Knooppunt van het type <code>cq:Dialog</code>, verwerkt verschillende substructuren</td>
-   <td><p>Een <code>granite/ui/components/foundation/container</code> lay-out of een <code>fixedcolumns</code> lay-out <code>tabs</code> gebruiken</p> <p>De daadwerkelijke componenten van het dialoogvenster worden gekopieerd en in de volgende stappen van het algoritme herschreven.</p> </td>
+   <td>Knooppunt van het type <code>cq:Dialog</code> verwerkt verschillende substructuren</td>
+   <td><p>A <code>granite/ui/components/foundation/container</code> met een <code>fixedcolumns</code>- of <code>tabs</code>-lay-out</p> <p>De daadwerkelijke componenten van het dialoogvenster worden gekopieerd en in de volgende stappen van het algoritme herschreven.</p> </td>
   </tr>
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.IncludeRule</code></td>
@@ -325,7 +329,7 @@ Het `cq-dialog-conversion-content` pakket bevat verschillende vooraf gedefinieer
   <tr>
    <td><code>com.adobe.cq.dialogconversion.rules.MultifieldRewriteRule</code></td>
    <td>xtype = <code>multifield</code></td>
-   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>Het <code>fieldConfig</code> onderliggende knooppunt (indien aanwezig) wordt afzonderlijk herschreven, zodat de ondersteunde componenten niet worden beperkt.</p> </td>
+   <td><p>A <code>granite/ui/components/coral/foundation/form/multifield</code></p> <p>Het onderliggende <code>fieldConfig</code>-knooppunt (indien aanwezig) wordt afzonderlijk herschreven, zodat de ondersteunde componenten niet worden beperkt.</p> </td>
   </tr>
   <tr>
    <td><code>/libs/cq/dialogconversion/rules/classic</code></td>
@@ -400,5 +404,5 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open aem-touchui-dialogconversion-samples project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples)
-* Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-touchui-dialogconversion-samples/archive/master.zip)
 

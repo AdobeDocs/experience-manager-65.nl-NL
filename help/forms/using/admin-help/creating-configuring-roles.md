@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 translation-type: tm+mt
 source-git-commit: 413af4ef9bc3652e05da78d622183bcf20a8bee7
+workflow-type: tm+mt
+source-wordcount: '2556'
+ht-degree: 0%
 
 ---
 
@@ -21,81 +24,81 @@ Gebruikend de Web-pagina&#39;s van het Beheer van de Gebruiker, kunt u gebruiker
 
 Gebruikersbeheer heeft twee soorten rollen:
 
-**** Tabelrollen: Dit type rol kan worden uitgegeven en worden geschrapt, en de roltoestemmingen kunnen van deze roltypes worden toegevoegd en worden geschrapt. Elke rol die u maakt, wordt beschouwd als een veranderlijke rol. U kunt gebruikers en groepen toevoegen of verwijderen die aan veranderlijke rollen worden toegewezen.
+**Meerdere rollen:** Dit type rol kan worden bewerkt en verwijderd en rolinstellingen kunnen worden toegevoegd en verwijderd uit deze rolindelingen. Elke rol die u maakt, wordt beschouwd als een veranderlijke rol. U kunt gebruikers en groepen toevoegen of verwijderen die aan veranderlijke rollen worden toegewezen.
 
-**** Onveranderbare rollen: De standaardrollen die met het Beheer van de Gebruiker inbegrepen zijn zijn onveranderlijke rollen. Deze rollen kunnen niet worden bewerkt of verwijderd. U kunt echter gebruikers en groepen toevoegen of verwijderen die aan onveranderlijke rollen zijn toegewezen.
+**Onveranderbare rollen:** De standaardrollen die met het Beheer van de Gebruiker inbegrepen zijn zijn onveranderlijke rollen. Deze rollen kunnen niet worden bewerkt of verwijderd. U kunt echter gebruikers en groepen toevoegen of verwijderen die aan onveranderlijke rollen zijn toegewezen.
 
-Zowel veranderlijke als onveranderlijke rollen kunnen ook door AEM vormen APIs worden gecreeerd.
+Zowel veranderlijke als onveranderlijke rollen kunnen ook door de AEM vormen APIs worden gecreeerd.
 
 ## Standaardrollen {#default-roles}
 
 De volgende standaardrollen zijn inbegrepen in het gegevensbestand van het Beheer van de Gebruiker.
 
-**** Gebruiker van beheerconsole: Kan beheerconsole openen.
+**Beheerconsole Gebruiker:** kan toegang krijgen tot beheerconsole.
 
-**** Toepassingsbeheerder: Kan alle Workbench-functies gebruiken. Kan de pagina&#39;s van Toepassingen en van de Diensten in beleidsconsole gebruiken om de eigenschappen van de de dienstruntime, eindpunten, en veiligheid te vormen.
+**Toepassingsbeheerder:** kan alle Workbench-functies gebruiken. Kan de pagina&#39;s van Toepassingen en van de Diensten in beleidsconsole gebruiken om de eigenschappen van de de dienstruntime, eindpunten, en veiligheid te vormen.
 
-**** AEM-formulierbeheerder: Kan alle taken voor alle geïnstalleerde diensten uitvoeren.
+**AEM formulierbeheerder:** kan alle taken uitvoeren voor alle geïnstalleerde services.
 
-**** Beveiligingsbeheerder: Controleert de montages van het Beheer van de Gebruiker, en beheert gebruikers en groepen die met om het even welk domein van de Manager van de Gebruiker worden geassocieerd
+**Beveiligingsbeheerder:** beheert de instellingen voor gebruikersbeheer en beheert gebruikers en groepen die zijn gekoppeld aan een gebruikersbeheerdomein
 
-**** Gebruikers van services: Kan elke service weergeven en aanroepen
+**Gebruikers van services:** kan elke service weergeven en aanroepen
 
-**** Super Administrator: Heeft toegang tot alle administratieve functies in het systeem, met inbegrip van de diensten
+**Superbeheerder:** heeft toegang tot alle administratieve functionaliteit in het systeem, met inbegrip van de diensten
 
-**** Betrouwbaarheidsbeheerder: Kan de PKI-vertrouwensinstellingen en PKI-referenties beheren die worden beheerd via de pagina Betrouwbaarheidsopslagbeheer in de beheerconsole
+**Betrouwbaarheidsbeheerder:** Kan de PKI-vertrouwensinstellingen en PKI-referenties beheren die worden beheerd via de pagina Betrouwbaarheidsopslagbeheer in de beheerconsole
 
 ### Aanvullende standaardrollen {#additional-default-roles}
 
-Afhankelijk van de componenten van AEM-formulieren die u hebt geïnstalleerd, kunnen de volgende aanvullende standaardrollen worden opgenomen
+De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van de AEM formuliercomponenten die u hebt geïnstalleerd
 
-**** Gebruiker van toepassing voor uploaden van document: Kan documenten uploaden met Flex Remoting.
+**Toepassingsgebruiker voor uploaden van document:** kan documenten uploaden met Flex Remoting.
 
-**** Formulierbeheerder: Kan instellingen weergeven en wijzigen vanaf de pagina Formulieren in de beheerconsole
+**Forms Administrator:** Kan instellingen weergeven en wijzigen op de Forms-pagina in de beheerconsole
 
-**** Inhoudsbeheerder voor AEM-formulieren: Kan instellingen van de pagina Content Services (Afgekeurd) in de beheerconsole weergeven en wijzigen
+**AEM formulieren Inhoudsruimtebeheerder:** Kan instellingen van de pagina Content Services (Afgekeurd) weergeven en wijzigen in beheerconsole
 
-**** Gebruiker van de inhoudsruimte van AEM-formulieren: Kan zich aanmelden bij de pagina&#39;s van de inhoudsruimte (Afgekeurd)
+**Formulieren AEM Inhoudsruimte gebruiker:** kan zich aanmelden bij de pagina&#39;s in de inhoudsruimte (afgekeurd)
 
-**** Documentum Connector Administrator: Kan instellingen bekijken en wijzigen van de Connector voor EMC Documentum pagina in beheerconsole
+**Documentum Connector Administrator:** Kan instellingen bekijken en wijzigen van de Connector voor EMC Documentum pagina in beheerconsole
 
-**** AEM-formulieren BestandsNet Connector-beheerder: Kan instellingen van de Connector voor IBM FileNet-pagina weergeven en wijzigen in beheerconsole
+**AEM formulier FileNet Connector Administrator:** Kan instellingen van de Connector voor IBM FileNet-pagina weergeven en wijzigen in beheerconsole
 
-**** AEM-formulieren IBM CM-connectorbeheerder: Kan instellingen van de pagina Connector voor IBM Content Manager in de beheerconsole weergeven en wijzigen
+**AEM formulieren IBM CM Connector Administrator:** Kan instellingen bekijken en wijzigen via de pagina Connector voor IBM Content Manager op de beheerconsole
 
-**** Beheerder van rechtenbeheer: Voert alle taken uit die voor alle serverconfiguraties op de relevante pagina&#39;s van het Beheer van Rechten worden vereist
+**Beheerder van Rights Management:** voert alle taken uit die voor alle serverconfiguraties op de relevante pagina&#39;s van het Rights Management worden vereist
 
-**** Eindgebruiker van rechtenbeheer: Kan toegang krijgen tot webpagina&#39;s voor eindgebruikers van Rights Management
+**Eindgebruiker van Rights Management:** Kan toegang krijgen tot eindgebruikerwebpagina&#39;s van Rights Management
 
-**** Uitnodiging gebruiker voor rechtenbeheer: Kan gebruikers uitnodigen
+**Rights Management uitnodigen gebruiker:** kan gebruikers uitnodigen
 
-**** Rights Management Manager Uitgenodigde en lokale gebruikers: Kan taken uitvoeren die vereist zijn om alle uitgenodigde en lokale gebruikers op de relevante pagina&#39;s van het Beheer van Rechten te beheren
+**Rights Management Uitgenodigde en lokale gebruikers beheren:** kan taken uitvoeren die vereist zijn om alle uitgenodigde en lokale gebruikers op de desbetreffende pagina&#39;s van het Rights Management te beheren
 
-**** Beheerder rechtenbeheerbeleid instellen: Voert alle taken uit die voor alle beleidsreeksen op de relevante pagina&#39;s van het Beheer van Rechten worden vereist
+**Beheerder voor beleidsset voor Rights Management:** voert alle taken uit die vereist zijn voor alle beleidssets op de relevante pagina&#39;s van het Rights Management
 
-**** Super Administrator voor rechtenbeheer: Voert alle taken uit die van de pagina van het Beheer van Rechten worden vereist
+**Rights Management Super Administrator:** voert alle taken uit die van de pagina van het Rights Management worden vereist
 
-**** AEM-formulieren, werkruimtebeheerder: Kan instellingen weergeven en wijzigen vanaf de pagina Werkruimte in de beheerconsole
+**AEM formulieren, werkruimtebeheerder:** kan instellingen weergeven en wijzigen op de pagina Werkruimte in beheerconsole
 
-***opmerking **:De Flex-werkruimte is verouderd voor de release van AEM-formulieren.*
+***opmerking **: De Flex-werkruimte is verouderd voor AEM formulierrelease.*
 
-**** Gebruiker werkruimte: Kan zich aanmelden bij de Workspace-toepassing voor eindgebruikers
+**Gebruiker van werkruimte:** kan zich aanmelden bij de toepassing voor eindgebruikers van Workspace
 
-**** Uitvoerbeheerder: Kan instellingen weergeven en wijzigen via de uitvoerpagina in de beheerconsole
+**Uitvoerbeheerder:instellingen** kunnen weergeven en wijzigen op de uitvoerpagina in de beheerconsole
 
-**** PDFG-beheerder: Kan instellingen van de pagina PDF Generator weergeven en wijzigen in de beheerconsole
+**PDFG-beheerder:instellingen** kunnen worden weergegeven en gewijzigd op de pagina PDF Generator in de beheerconsole
 
-**** PDFG-gebruiker: Kan alle niet-beheerfuncties openen voor PDF Generator
+**PDFG-gebruiker:** heeft toegang tot alle niet-beheerfuncties voor PDF Generator
 
-**** Acrobat Reader DC extensions Web Application: Kan de webtoepassing Acrobat Reader DC-extensies gebruiken
-
->[!NOTE]
->
->Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze pagina&#39;s buiten een firewall kunnen bestaan, zou het toestaan van beleid-vlakke taken een veiligheidsrisico kunnen vormen. Alleen gebruikers met de bevoegdheden van de werkruimtemanager van de AEM-formulieren of de AEM-formulierwerkruimte van de gebruiker hebben toegang tot de webpagina&#39;s van de eindgebruiker van de Workspace.
+**Acrobat Reader DC-extensies, webtoepassing:** kan de webtoepassing voor Acrobat Reader DC-extensies gebruiken
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze pagina&#39;s buiten een firewall kunnen bestaan, zou het toestaan van beleid-vlakke taken een veiligheidsrisico kunnen vormen. Alleen gebruikers met de AEM Workspace Administrator of AEM formulierwerkruimte Gebruikersrechten hebben toegang tot de eindgebruikerwebpagina&#39;s van de Workspace.
+
+>[!NOTE]
+>
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 ## Een rol maken {#create-a-role}
 
@@ -119,14 +122,14 @@ Afhankelijk van de componenten van AEM-formulieren die u hebt geïnstalleerd, ku
 1. Als u gebruikers- en groepsgegevens wilt weergeven, selecteert u de entiteit.
 1. Klik op OK en vervolgens op Voltooien.
 
-## Een rol bewerken {#edit-a-role}
+## Rollen {#edit-a-role} bewerken
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
    Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Klik op de rol die u wilt bewerken, bewerk de algemene instellingen en klik op Opslaan.
-1. Als u rolmachtigingen wilt bewerken, klikt u op het tabblad Machtigingen en voert u de volgende taken uit:
+1. Als u machtigingen voor rollen wilt bewerken, klikt u op het tabblad Machtigingen en voert u de volgende taken uit:
 
    * Als u nieuwe machtigingen wilt toevoegen, klikt u op Machtigingen zoeken, schakelt u de selectievakjes in waarin de machtigingen moeten worden toegevoegd, klikt u op OK en vervolgens op Opslaan.
    * Als u een machtiging wilt verwijderen uit de rol, schakelt u het selectievakje voor de machtiging in, klikt u op Verwijderen en vervolgens op Opslaan.
@@ -136,9 +139,9 @@ Afhankelijk van de componenten van AEM-formulieren die u hebt geïnstalleerd, ku
    * Als u de rol aan nieuwe gebruikers en groepen wilt toewijzen, klikt u op Gebruikers/groepen zoeken en vult u de zoekinformatie in. Schakel het selectievakje in voor elke gebruiker en groep waaraan u deze rol wilt toewijzen, en klik op OK. Klik vervolgens op Opslaan.
    * Als u de rol wilt verwijderen, schakelt u het selectievakje voor de gebruikers of groep in, klikt u op Toewijzing ongedaan maken en vervolgens op Opslaan.
 
-## Een rol verwijderen {#delete-a-role}
+## Een rol {#delete-a-role} verwijderen
 
-U kunt alle rollen verwijderen die u hebt gemaakt, maar niet de standaard-AEM-formulierrollen die in het product zijn opgenomen.
+U kunt alle rollen verwijderen die u hebt gemaakt, maar niet de standaardrollen AEM formulieren die in het product zijn opgenomen.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
@@ -155,7 +158,7 @@ U kunt alle rollen verwijderen die u hebt gemaakt, maar niet de standaard-AEM-fo
 
 U kunt rollen ook toewijzen door de pagina Rolbeheer te gebruiken.
 
-## Bepaal wie aan een rol wordt toegewezen {#determine-who-is-assigned-to-a-role}
+## Bepaal wie aan een rol {#determine-who-is-assigned-to-a-role} wordt toegewezen
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
@@ -165,7 +168,7 @@ U kunt rollen ook toewijzen door de pagina Rolbeheer te gebruiken.
 
 ## Rolmachtigingen wijzigen {#change-role-permissions}
 
-U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde. U kunt de machtigingen voor de standaardrollen van AEM-formulieren die in het product zijn opgenomen, niet wijzigen.
+U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde. U kunt de machtigingen voor de standaardrollen AEM formulieren die in het product zijn opgenomen, niet wijzigen.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
@@ -175,167 +178,167 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 1. Als u deze machtigingen wilt wijzigen, klikt u op Machtigingen zoeken, schakelt u de selectievakjes in voor de machtigingen die u aan de rol wilt toevoegen, klikt u op OK en vervolgens op Opslaan.
 1. Als u een machtiging wilt verwijderen, selecteert u de machtiging, klikt u op Verwijderen en vervolgens op Opslaan.
 
-### Machtigingen voor AEM-formulieren {#aem-forms-permissions}
+### Formuliermachtigingen {#aem-forms-permissions} AEM
 
-**** ADD_REMOVE_ENDPOINT_PERM: Voeg, verwijder en wijzig eindpunten voor de dienst toe
+**ADD_REMOVE_ENDPOINT_PERM:** Voeg, verwijder en wijzig eindpunten voor de dienst toe
 
-**** Aanmelden beheerconsole: De beheerconsole weergeven
+**Aanmelden bij Admin Console:de beheerconsole** weergeven
 
-**** Certificaat wijzigen: De instellingen voor vertrouwen van certificaten in het vertrouwde archief wijzigen
+**Certificaat wijzigen:de vertrouwensinstellingen van een certificaat** wijzigen in het Betrouwbaarheidsarchief
 
-**** Leescertificaat: Elk certificaat lezen in de Trust Store
+**Certificaat gelezen:certificaten** lezen in het Betrouwbaarheidsarchief
 
-**** Schrijven certificaat: Een certificaat toevoegen aan de Trust Store
+**Certificaat schrijven:certificaat** toevoegen aan vertrouwde opslag
 
-**** Component toevoegen: Een nieuwe component in het systeem installeren
+**Component toevoegen:** Installeer een nieuwe component in het systeem
 
-**** Verwijderen van component: Een component in het systeem verwijderen
+**Component verwijderen:component in systeem** verwijderen
 
-**** Component gelezen: Een component in het systeem lezen
+**Component Read:** Lees om het even welke component in het systeem
 
-**** Inhoudsruimtebeheerder: Machtiging voor beheerder inhoudruimte (afgekeurd)
+**Inhoudsruimtebeheerder:** Machtiging voor (afgekeurde) inhoudsbeheerder
 
-**** Aanmelden bij inhoudsruimteconsole: Machtiging voor aanmelding van inhoudsruimte (afgekeurd) console
+**Aanmelden bij inhoudsruimteconsole:Aanmelding** voor inhoudsruimte (afgekeurd) console
 
-**** Core Settings Control: De instellingen op de pagina Core System Settings in de beheerconsole beheren
+**Core Settings Control:** Manage the settings on the Core System Settings page in Administration Console
 
-**** CREATE_VERSION_PERM: Een nieuwe versie van een service maken
+**CREATE_VERSION_PERM:** Een nieuwe versie van een service maken
 
-**** Credentials wijzigen: Ondertekeningsreferentie wijzigen in de Trust Store
+**Credentials wijzigen:** ondertekeningsreferenties wijzigen in Vertrouwensarchief
 
-**** Gelezen referentie: Alle ondertekeningsreferenties lezen in de Trust Store
+**Credentials gelezen:eventuele ondertekeningsreferenties** lezen in de Trust Store
 
-**** Credentijd: Een ondertekeningsreferentie toevoegen aan de Trust Store
+**Credentijd:** Voeg een ondertekeningsreferentie toe aan de Trust Store
 
-**** CRL wijzigen: CRL (Certificate Revocation List) wijzigen in het Trust Store
+**CRL wijzigen:CRL (Certificate Revocation List) in de Trust Store** wijzigen
 
-**** CRL-lezen: Een CRL lezen in de Trust Store
+**CRL-lezen:CRL&#39;s in de vertrouwde opslag** lezen
 
-**** Schrijven van CRL: CRL toevoegen aan vertrouwde opslag
+**CRL schrijven:CRL** toevoegen aan vertrouwde opslag
 
-**** Delegeren: Plaats ACL op een middel
+**Delegeren:ACL op een middel** instellen
 
-**** DELETE_VERSION_PERM: Een versie van een service verwijderen
+**DELETE_VERSION_PERM:een versie van een service** verwijderen
 
-**** Document uploaden: Documenten uploaden in AEM-formulieren
+**Document uploaden:documenten** uploaden in AEM
 
-**** Domeinbesturing: Instellingen maken, verwijderen of wijzigen voor elk gebruikersbeheerdomein, inclusief verificatie- en directoryproviders
+**Domeincontrole:instellingen** maken, verwijderen of wijzigen voor een willekeurig gebruikersbeheerdomein, inclusief verificatie- en directoryproviders
 
-**** Bewerken van gebeurtenistype: Bewerken naar gebeurtenistypen
+**Gebeurtenistype bewerken:** Bewerken naar gebeurtenistypen
 
-**** Naamimitatiebeheer: Identiteit imiteren in Gebruikersbeheer
+**identiteitscontrole:identiteit** imiteren in gebruikersbeheer
 
-**** INVOKE_PERM: Alle bewerkingen op een service aanroepen
+**INVOKE_PERM:** Alle bewerkingen op een service aanroepen
 
-**** Besturing LCDS-gegevensmodel: Lees en stel gegevensmodellen in de Diensten van Gegevens op
+**LCDS-gegevensmodelbesturing:gegevensmodellen** lezen en implementeren in Data Services
 
-**** Update voor licentiebeheer: Licentiegegevens bijwerken
+**Licentiebeheer bijwerken:licentiegegevens** bijwerken
 
-**** MODIFY_CONFIG_PERM: De configuratie van een service wijzigen
+**MODIFY_CONFIG_PERM:De configuratie van een service** wijzigen
 
-**TERM** De versie van een service wijzigen
+**** TERMModify de versie van de dienst
 
-**** PDFGAdminPermission: PDFG-beheerder
+**PDFGAdminPermission:** PDFG-beheerder
 
-**** PDFGUserPermission: PDFG-gebruiker
+**PDFGUserPermission:** PDFG-gebruiker
 
-**** PERM_DCTM_ADMIN: Documentum Connector-beheerder
+**PERM_DCTM_ADMIN:** Documentum Connector-beheerder
 
-**** PERM_FILENET_ADMIN: Bestuurder FileNet-connector
+**PERM_FILENET_ADMIN:** Besturingselement voor FileNet-aansluiting
 
-**** PERM_FORMS_ADMIN: Formulierbeheerder
+**PERM_FORMS_ADMIN:** Forms-beheerder
 
-**** PERM_IBMCM_ADMIN: IBM CM Connector-beheerder
+**PERM_IBMCM_ADMIN:** IBM CM-connectorbeheerder
 
-**** PERM_OUTPUT_ADMIN: Uitvoerbeheerder
+**PERM_OUTPUT_ADMIN:** Uitvoerbeheerder
 
-**** PERM_READER_EXTENSIONS_WEB_APPLICATION: De webtoepassing Acrobat Reader DC-extensies gebruiken
+**PERM_READER_EXTENSIONS_WEB_APPLICATION:** De webtoepassing voor Acrobat Reader DC-extensies gebruiken
 
-**** PERM_SP_ADMIN: SharePoint-verbindingsinstellingen beheren
+**PERM_SP_ADMIN:SharePoint-verbindingsinstellingen** beheren
 
-**** PERM_WORKSPACE_ADMIN: Werkruimte-instellingen beheren
+**PERM_WORKSPACE_ADMIN:Werkruimte-instellingen** beheren
 
-**** PERM_WORKSPACE_USER: Aanmelden bij de toepassing voor eindgebruikers van Workspace
+**PERM_WORKSPACE_USER:** Meld u aan bij de eindgebruikerstoepassing van de Werkruimte
 
-**** Hoofdcontrole: Gebruikers en groepen beheren voor elk domein en roltoewijzingen beheren voor alle gebruikers en groepen in elk domein
+**Hoofdcontrole:gebruikers en groepen voor om het even welk domein** beheren, en roltaken voor alle gebruikers en groepen in om het even welk domein beheren
 
-**** Opname lezen/verwijderen verwerken: Workflowauditinstanties weergeven en ophalen
+**Opname verwerken, lezen/verwijderen:** workflowauditinstanties weergeven en ophalen
 
-**** PROCESS_OWNER_PERM: De trendgegevens van de mening en voert administratieve acties op de dienst uit die van een proces wordt gecreeerd
+**PROCESS_OWNER_PERM:De tendensen van de** mening gegevens en voeren administratieve acties op de dienst uit die van een proces wordt gecreeerd
 
-**** Lezen: De inhoud van een bron lezen
+**Lezen:De inhoud van een bron** lezen
 
-**** READ_PERM: Een service lezen of weergeven
+**READ_PERM:een service** lezen of weergeven
 
-**** Verlenging van bewering: Berichten in Gebruikersbeheer vernieuwen
+**Verlenging, bevestiging:** Verlenging, beweringen in Gebruikersbeheer
 
-**** Delegatie opslagplaats: Plaats ACL op een middel
+**Delegatie opslagplaats:ACL op een bron** instellen
 
-**** Leesruimte opslagplaats: De inhoud van een bron lezen
+**Bewaarplaats gelezen:de inhoud van een bron** lezen
 
-**** Repository traverse: Neem een bron op in een verzoek om lijstbronnen of lees de metagegevens van een bron
+**Repository traverse:bron** opnemen in verzoek om lijstbronnen of de metagegevens van een bron lezen
 
-**** Schrijven naar opslagplaats: Metagegevens en inhoud van opslagplaatsen schrijven
+**Schrijven in opslagplaats:metagegevens en inhoud van opslagplaats** schrijven
 
-**** Eigenaar wijzigingsbeleid voor rechtenbeheer: Beleidseigenaar wijzigen
+**Eigenaar wijzigingsbeleid Rights Management:** beleidseigenaar wijzigen
 
-**** Aanmelden bij eindgebruikersconsole van Rights Management: Aanmelden bij de gebruikersinterface van Rights Management
+**Aanmelden bij Eindgebruikersconsole van Rights Management:** aanmelden bij eindgebruikersinterface van Rights Management
 
-**** Configuratie van beheer van rechten: Serverconfiguratie beheren
+**Rights Management beheren configuratie:serverconfiguratie** beheren
 
-**** Rights Management Manager Uitgenodigde en lokale gebruikers: Uitgenodigde en lokale gebruikers beheren
+**Rights Management Uitgenodigde en lokale gebruikers beheren:uitgenodigde en lokale gebruikers** beheren
 
-**** Beleidssets voor beheer van rechten: Alle beleid en documenten binnen een willekeurige beleidsset beheren
+**Rights Management beheert beleidssets:alle beleid en documenten** beheren binnen elke willekeurige beleidsset
 
-**** Beleidsset voor rechtenbeheer coördinator toevoegen: Machtigingen voor beleidssetcoördinatoren toevoegen, verwijderen en wijzigen
+**Rights Management beleidsset coördinator toevoegen:machtigingen voor beleidssetcoördinatoren** toevoegen, verwijderen en wijzigen
 
-**** Beleid instellen voor rechtenbeheer: beleid maken: Een nieuw beleid voor een beleidsset maken
+**Beleid instellen voor Rights Managementen: beleid maken:een nieuw beleid** maken voor een beleidsset
 
-**** Beleid voor rechtenbeheer instellen Beleid voor verwijderen: Een beleid verwijderen uit een beleidsset
+**Beleid voor Rights Managementen instellen Beleid verwijderen:beleid** verwijderen uit een beleidsset
 
-**** Beleid voor bewerken van rechtenbeheer instellen: Een beleid in een beleidsset bewerken
+**Beleid voor Rights Managementen instellen Bewerkbeleid:beleid** bewerken in een beleidsset
 
-**** Rechtenbeheerbeleidsset Documentuitgever beheren:Wanneer u beleidssets maakt, wijst u gebruikers de rol van documentuitgever toe. De uitgever van het document is de gebruiker die het document met een beleid beschermt.
+**Met de Beleidsset Rights Managementen Document Publisher beheren:** wanneer u beleidssets maakt, wijst u gebruikers de rol van documentuitgever toe. De uitgever van het document is de gebruiker die het document met een beleid beschermt.
 
-**** Beleidsset voor rechtenbeheer verwijderen coördinator: Een beleidssetcoördinator verwijderen uit een beleidsset
+**Rights Management beleidsset verwijderen coördinator:** beleidssetcoördinator verwijderen uit een beleidsset
 
-**** Ingetrokken document voor rechtenbeheerbeleid instellen: Toegang tot documenten in een beleidsset intrekken
+**Rights Management beleidsset document intrekken:toegang** tot documenten in een beleidsset intrekken
 
-**** Beleid van het Beheer van rechten vastgestelde het Beleid van de Schakelaar: Van beleid wisselen voor een document
+**Beleid van de Reeks van de Schakelaar van het Rights Management Beleid:** Van beleid schakelen voor een document
 
-**** Document voor intrekken van rechtenbeheerbeleid ingesteld: Een document intrekken
+**Beleid voor Rights Managementen instellen Document intrekken ongedaan maken:** document intrekken
 
-**** Weergavegebeurtenis voor rechtenbeheerbeleidsset: Beleid en documentgebeurtenissen weergeven voor beleid of document binnen een beleidsset
+**Weergavegebeurtenis Beleidsset Rights Managementen:** Beleid en documentgebeurtenissen weergeven voor beleid of document binnen een beleidsset
 
-**** Rights Management View-servergebeurtenissen: Alle auditgebeurtenissen zoeken en weergeven
+**Gebeurtenissen van de Server van de Mening van het Rights Management:** Onderzoek en bekijk alle controlegebeurtenissen
 
-**** Rolbesturing: Rollen maken, verwijderen en wijzigen in Gebruikersbeheer
+**Rolbesturing:rollen** maken, verwijderen en wijzigen in Gebruikersbeheer
 
-**** Service activeren: De dienst van begin om het even welke dienst, die het voor oproeping ter beschikking stelt
+**Service activeren:service** starten, beschikbaar maken voor oproepen
 
-**** Service toevoegen: Stel een nieuwe dienst aan de de dienstregistratie op. Dit omvat het toevoegen van nieuwe processen en procesvarianten
+**De dienst voegt toe:** stelt een nieuwe dienst aan het de dienstregister op. Dit omvat het toevoegen van nieuwe processen en procesvarianten
 
-**** Service gedeactiveerd: Stop om het even welke dienst in het systeem
+**Service deactiveren:service in systeem** stoppen
 
-**** Service verwijderen: Alle services in het systeem verwijderen, inclusief processen en procesvarianten
+**Service verwijderen:alle services in het systeem** verwijderen, inclusief processen en procesvarianten
 
-**** Service aanroepen: Alle services in het serviceregister die beschikbaar zijn bij uitvoering aanroepen
+**Service aanroepen:elke service** aanroepen in het serviceregister die beschikbaar is bij uitvoering
 
-**** Service wijzigen: Wijzig de configuratieeigenschappen van om het even welke dienst in het systeem. Dit omvat het sluiten van en het ontgrendelen van de dienst in winde, en het toevoegen van of het verwijderen van eindpunten uit de dienst
+**De dienst wijzigt:** wijzigt de configuratieeigenschappen van om het even welke dienst in het systeem. Dit omvat het sluiten van en het ontgrendelen van de dienst in winde, en het toevoegen van of het verwijderen van eindpunten uit de dienst
 
-**** Service-lezen: Lees om het even welke diensten in het systeem. Dit omvat alle processen en procesvarianten
+**Service gelezen:services in het systeem** lezen. Dit omvat alle processen en procesvarianten
 
-**** SERVICE_AGENT_PERM: Gegevens bekijken en met procesinstanties voor de dienst in wisselwerking staan die van een proces wordt gecreeerd
+**SERVICE_AGENT_PERM:Gegevens** bekijken en met procesinstanties voor de dienst interactie aangaan die van een proces wordt gecreeerd
 
-**** SERVICE_MANAGER_PERM: Het in evenwicht brengen van lading en andere administratieve acties op de dienst uitvoeren die van een proces wordt gecreeerd
+**SERVICE_MANAGER_PERM:** taakverdeling en andere beheeracties uitvoeren op een service die is gemaakt op basis van een proces
 
-**** START_STOP_PERM: Een service starten of stoppen
+**START_STOP_PERM:een service** starten of stoppen
 
-**** SUPERVISOR_PERM: De gegevens van de procesinstantie van de mening voor de dienst die van een proces wordt gecreeerd
+**SUPERVISOR_PERM:** Gegevens van procesinstanties weergeven voor een service die is gemaakt op basis van een proces
 
-**** Gekanteld: Neem een bron op in een verzoek om lijstbronnen of lees de metagegevens van een bron
+**Omkeren:** Neem een bron op in een verzoek om lijstbronnen of lees de metagegevens van een bron
 
-**** Schrijven: Metagegevens en inhoud van opslagplaatsen schrijven
+**Schrijven:metagegevens en inhoud van opslagplaats** schrijven
 
 **Bestanden openen in Workbench**
 
@@ -346,9 +349,9 @@ Om de inhoud van de mening van Middelen in Workbench en open dossiers voor het b
 * Service aanroepen
 * Service Read
 
-## Een gebruiker of groep uit een rol verwijderen {#remove-a-user-or-group-from-a-role}
+## Een gebruiker of groep verwijderen uit een rol {#remove-a-user-or-group-from-a-role}
 
-Gebruik de pagina Rolbeheer om gebruikers en groepen uit een bepaalde rol te verwijderen. Als de gebruiker of groep de roltoewijzing heeft geërfd, kunt u de rol op gebruiker of groepsniveau niet verwijderen. Verwijder de gebruiker of groep uit de overervingstructuur of verwijder de rol uit het bovenliggende element.
+Gebruik de pagina Rolbeheer om gebruikers en groepen uit een bepaalde rol te verwijderen. Als de gebruiker of de groep de roltaak heeft overgeërfd, kunt u de rol op gebruiker of groepsniveau niet verwijderen. Verwijder de gebruiker of groep uit de overervingstructuur of verwijder de rol uit het bovenliggende element.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 

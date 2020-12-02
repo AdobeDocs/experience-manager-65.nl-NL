@@ -12,7 +12,7 @@ ht-degree: 99%
 
 # Snelgids voor WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) is ontwikkeld om maximale overeenstemming met de Web Content Accessibility Guidelines te bereiken.
+Adobe Experience Manager (AEM) is ontwikkeld om de naleving van de Web Content Accessibility Guidelines te maximaliseren.
 
 De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die door het [World Wide Web Consortium (W3C)](https://www.w3.org/) in het kader van hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) zijn ontwikkeld.
 

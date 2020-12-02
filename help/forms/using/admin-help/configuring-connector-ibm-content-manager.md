@@ -1,8 +1,8 @@
 ---
 title: Connector configureren voor IBM Content Manager
 seo-title: Connector configureren voor IBM Content Manager
-description: Configureer de connector voor IBM Content Manager om communicatie tussen AEM-formulieren en IBM Content Manager mogelijk te maken.
-seo-description: Configureer de connector voor IBM Content Manager om communicatie tussen AEM-formulieren en IBM Content Manager mogelijk te maken.
+description: Configureer de Connector voor IBM Content Manager om communicatie tussen AEM formulieren en IBM Content Manager mogelijk te maken.
+seo-description: Configureer de Connector voor IBM Content Manager om communicatie tussen AEM formulieren en IBM Content Manager mogelijk te maken.
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Connector configureren voor IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Connector voor IBM Content Manager maakt communicatie mogelijk tussen AEM-formulieren en IBM Content Manager. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor IBM Content Manager maakt communicatie mogelijk tussen AEM formulieren en IBM Content Manager. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
 
-## De verbinding met IBM Content Manager configureren {#configure-the-ibm-content-manager-connection}
+## De IBM Content Manager-verbinding {#configure-the-ibm-content-manager-connection} configureren
 
 1. Klik in de beheerconsole op Services > Connector voor IBM Content Manager.
 1. Voer in het vak Naam datastore de naam in van de IBM Content Manager-datastore waarmee u verbinding wilt maken. Als de database lokaal is, voert u de naam van de database in. Als de database extern is, voert u de naam van de alias in.

@@ -1,27 +1,30 @@
 ---
-title: AEM-moderniseringsgereedschappen
-seo-title: AEM-moderniseringsgereedschappen
-description: Met de AEM Moderniseringsgereedschappen kunt u uw oudere AEM-functies omzetten in de nieuwste technologie
-seo-description: Met de AEM Moderniseringsgereedschappen kunt u uw oudere AEM-functies eenvoudig omzetten in de nieuwste technologie
+title: AEM-moderniseringstools
+seo-title: AEM-moderniseringstools
+description: AEM-moderniseringstools help u bij het omzetten van uw oude AEM naar de nieuwste technologie
+seo-description: AEM Moderniseringsgereedschappen helpen u uw oudere AEM eenvoudig om te zetten in de nieuwste technologie
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 58%
 
 ---
 
 
-# AEM-moderniseringsgereedschappen {#modernization-tools}
+# AEM-moderniseringstools {#modernization-tools}
 
-[Met de moderniseringsinstrumenten](http://opensource.adobe.com/aem-modernize-tools/) van AEM kunt u eenvoudig converteren naar:
+[Met de AEM-moderniseringstools kunt u eenvoudig de volgende taken uitvoeren:](http://opensource.adobe.com/aem-modernize-tools/)
 
-* [Statische sjablonen](page-templates-static.md) naar [bewerkbare sjablonen](page-templates-editable.md)
-* [Configuraties](page-templates-static.md) ontwerpen naar [beleid](page-templates-editable.md)
-* [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) naar [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Klassieke interface](website.md) naar interface met [aanraakbediening](touch-ui-concepts.md)
+* [](page-templates-static.md)Statische sjablonen converteren naar bewerkbare sjablonen[](page-templates-editable.md)
+* [](page-templates-static.md)Ontwerpconfiguraties omzetten naar beleid[](page-templates-editable.md)
+* [](/help/sites-authoring/default-components-foundation.md)Elementaire componenten omzetten naar kerncomponenten[](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [](website.md)De klassieke interface converteren naar een interface met aanraakbediening[](touch-ui-concepts.md)
 
-Raadpleeg de documentatie [](http://opensource.adobe.com/aem-modernize-tools/)bij deze gereedschappen voor meer informatie over het gebruik van deze gereedschappen.
+Voor meer informatie over het gebruik van deze hulpmiddelen, [zie hun documentatie](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
->De Moderniseringshulpmiddelen van AEM zijn een communautaire inspanning en worden niet gesteund of door Adobe gewaarborgd.
+>De AEM-moderniseringstools worden gemaakt door leden van onze community. De tools worden niet ondersteund of gewaarborgd door Adobe.

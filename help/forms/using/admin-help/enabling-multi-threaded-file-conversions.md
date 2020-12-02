@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Bestanden met meerdere threads omzetten {#enabling-multi-threaded-file-conversions}
+# Multithread-bestandsconversies inschakelen {#enabling-multi-threaded-file-conversions}
 
 PDF Generator biedt de mogelijkheid om multi-threaded bestandsconversies in te schakelen voor bepaalde bestandstypen. Bestandsconversie via meerdere threads verbetert de prestaties van de PDF Generator doordat deze meerdere conversies tegelijk kan uitvoeren.
 
@@ -40,12 +40,12 @@ Op de pagina Gebruikersaccounts in de beheerconsole kunt u opgeven welke gebruik
 
 Wanneer het toevoegen van gebruikers voor OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2003 of 2008 van Vensters, of voor OpenOffice op Linux of Sun™ Solaris™, de aanvankelijke activeringsdialogen voor alle gebruikers verwerpen.
 
-### Voeg het recht toe om het proces-vlakke teken te vervangen {#add-the-right-to-replace-the-process-level-token}
+### Voeg het recht toe om het proces-vlakke teken {#add-the-right-to-replace-the-process-level-token} te vervangen
 
 In een Windows-besturingssysteem moeten de beheerdersgebruikersaccounts die worden gebruikt voor PDF-conversie (PDFG-gebruikers) de tokenrechten op procesniveau vervangen. U kunt dit recht toevoegen door de Redacteur van het Beleid van de Groep te gebruiken:
 
 1. Klik in het menu Start van Windows op Uitvoeren en voer vervolgens gpedit.msc in.
-1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk het token *-beleid* Vervangen om de groep Beheerders op te nemen.
+1. Klik op Lokaal computerbeleid > Computerconfiguratie > Windows-instellingen > Beveiligingsinstellingen > Lokaal beleid > Toewijzing gebruikersrechten. Bewerk het beleid *Een token* op procesniveau vervangen om de groep Beheerders op te nemen.
 1. Voeg de gebruiker toe aan de Replace een Symbolische ingang van het Niveau van het Proces.
 
 ### Aanvullende configuratie vereist voor OpenOffice, Microsoft Word en Microsoft PowerPoint op Windows Server 2008 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -58,9 +58,9 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
 ### Aanvullende configuratie vereist voor OpenOffice op Linux of Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. Gebruikersaccounts toevoegen. (Zie Een gebruikersaccount [](enabling-multi-threaded-file-conversions.md#add-a-user-account)toevoegen.)
+1. Gebruikersaccounts toevoegen. (Zie [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
 1. Vervolgens brengt u wijzigingen aan in het bestand /etc/sudoers. De standaardmachtigingen voor dit bestand zijn 440. Wijzig de machtiging voor dit bestand in schrijfbaar.
-1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de formulierserver uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM-formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
+1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de formulierserver uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
 
    ```shell
     lcadm myhost=(user1) NOPASSWD: ALL
@@ -71,7 +71,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
    >[!NOTE]
    >
-   >Zorg ervoor dat u de gebruikersrollen van de systeemgebruiker en PDFG aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Zie Een gebruikersaccount [toevoegen als u een PDFG-rol aan een gebruiker wilt toewijzen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >Zorg ervoor dat u de gebruikersrollen van de systeemgebruiker en PDFG aan &quot;user1&quot;en &quot;user2&quot;hebt toegewezen. Om rol PDFG aan een gebruiker toe te wijzen, zie [een gebruikersrekening toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. Zoek en becommentariëer deze regel ook in het bestand /etc/sudoers door een hekje (#) aan het begin van de regel toe te voegen:
 
@@ -82,7 +82,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
    Hiermee kunt u Linux-gebruikers toevoegen.
 
 1. Wijzig de machtiging voor het bestand e-mail/submenu&#39;s weer in 440.
-1. Hiermee kunnen alle gebruikers die u hebt toegevoegd via [Een gebruikersaccount](enabling-multi-threaded-file-conversions.md#add-a-user-account) toevoegen, verbinding maken met de formulierserver. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de formulierserver, gebruikt u de volgende opdracht
+1. Hiermee kunnen alle gebruikers die u via [Een gebruikersaccount toevoegen](enabling-multi-threaded-file-conversions.md#add-a-user-account) hebt toegevoegd, verbinding maken met de formulierserver. Als u een lokale gebruiker met de naam user1 bijvoorbeeld toestemming wilt geven om verbinding te maken met de formulierserver, gebruikt u de volgende opdracht
 
    `xhost +local:user1@`
 
@@ -94,7 +94,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 >
 >OpenOffice moet zijn geïnstalleerd op een maplocatie waartoe alle PDFG-gebruikers toegang hebben. U kunt dit verifiëren door u aan te melden als gebruiker PDFG en te controleren of u OpenOffice zonder problemen kunt starten.
 
-### Een gebruikersaccount toevoegen {#add-a-user-account}
+### Een gebruikersaccount {#add-a-user-account} toevoegen
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op Toevoegen en voer de gebruikersnaam en het wachtwoord in van een gebruiker die beheerdersrechten heeft op de formulierserver. Als u gebruikers voor OpenOffice vormt, verwerp de aanvankelijke activeringsdialoogvensters OpenOffice.
@@ -105,7 +105,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
 1. Start de formulierserver opnieuw.
 
-### Een gebruiker verwijderen uit de lijst die wordt gebruikt voor bestanden met meerdere threads {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions}
+### Verwijder een gebruiker uit de lijst die voor multi-threaded dossieromzettingen {#remove-a-user-from-the-list-used-for-multi-threaded-file-conversions} wordt gebruikt
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
 1. Klik op het selectievakje naast de gebruiker die u wilt verwijderen en klik op Verwijderen.
@@ -115,5 +115,5 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 ### Het wachtwoord voor een account wijzigen {#change-the-password-for-an-account}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
-1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig dit. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
+1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig het. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
 

@@ -1,8 +1,8 @@
 ---
 title: Werken met logbestanden
 seo-title: Werken met logbestanden
-description: Leer hoe u AEM kunt oplossen door met logboeken te werken.
-seo-description: Leer hoe u AEM kunt oplossen door met logboeken te werken.
+description: Leer hoe te om AEM problemen op te lossen door met logboeken te werken.
+seo-description: Leer hoe te om AEM problemen op te lossen door met logboeken te werken.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,6 +12,9 @@ discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 8b53e79e3a88f58423e99477db930a4912a1ba09
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +29,7 @@ CRX registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken en g
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
+## Het FOUTOPSPORINGSlogniveau {#activating-the-debug-log-level} activeren
 
 Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd.
 

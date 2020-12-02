@@ -1,8 +1,8 @@
 ---
 title: JSON-exportfunctie voor services voor inhoud
 seo-title: JSON-exportfunctie voor services voor inhoud
-description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in/vanuit AEM te veralgemenen, maar niet alleen op webpagina's. Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina's zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt.
-seo-description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in/vanuit AEM te veralgemenen, maar niet alleen op webpagina's. Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina's zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt.
+description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt.
+seo-description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt.
 uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
@@ -18,27 +18,27 @@ ht-degree: 3%
 ---
 
 
-# JSON-exportfunctie voor services voor inhoud{#json-exporter-for-content-services}
+# JSON Exporter voor Content Services{#json-exporter-for-content-services}
 
-AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in/vanuit AEM te veralgemenen, maar niet alleen op webpagina&#39;s.
+AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
-Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
+Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt. Deze kanalen kunnen zijn:
 
 * [Toepassingen voor één pagina](spa-walkthrough.md)
 * Systeemeigen mobiele toepassingen
 * andere kanalen en aanraakpunten buiten AEM
 
-Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdiensten verlenen door JSON-exporter te gebruiken om de inhoud van een (y) AEM-pagina in het formaat van het JSON-gegevensmodel te leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdiensten verlenen door JSON-exporter te gebruiken om de inhoud van een (y) AEM pagina in het formaat van het JSON-gegevensmodel te leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Core Components sinds [versie 1.1.0 van de Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
+>De hier beschreven functionaliteit is beschikbaar voor alle Core Components sinds [release 1.1.0 van de Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
-Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM-pagina in JSON-indeling voor gegevensmodellen leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM pagina in de indeling van het JSON-gegevensmodel leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
-Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en de `.json` uitbreiding.
+Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en `.json` uitbreiding.
 
 `.model.json`
 
@@ -50,7 +50,7 @@ Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en de `.jso
 
 1. Zal inhoud leveren zoals:
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
@@ -72,11 +72,11 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
    >[!NOTE]
    >
-   >U kunt uw eigen componenten [](/help/sites-developing/json-exporter-components.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
+   >U kunt [uw eigen componenten ](/help/sites-developing/json-exporter-components.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
 
    >[!NOTE]
    >
-   >Hoewel het geen standaardimplementatie is, [worden](json-exporter-components.md#multiple-selectors) meerdere kiezers ondersteund, `model` maar dit moet wel de eerste zijn.
+   >Hoewel geen standaardimplementatie, [worden de veelvoudige selecteurs gesteund, ](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
@@ -94,7 +94,7 @@ Zie ook:
 
    * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)
 
-## Related Documentation {#related-documentation}
+## Verwante documentatie {#related-documentation}
 
 Zie voor meer informatie:
 
@@ -104,5 +104,5 @@ Zie voor meer informatie:
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en de component [Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de kern en de component van het Fragment van de  [Inhoud](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 

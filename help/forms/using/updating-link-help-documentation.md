@@ -1,8 +1,8 @@
 ---
 title: De koppeling naar de documentatie bijwerken
 seo-title: De koppeling naar de documentatie bijwerken
-description: Hoe kan ik de doelkoppeling van Workspace Help in de werkruimte van AEM Forms bijwerken om naar de koppeling voor aangepaste documentatie te verwijzen.
-seo-description: Hoe kan ik de doelkoppeling van Workspace Help in de werkruimte van AEM Forms bijwerken om naar de koppeling voor aangepaste documentatie te verwijzen.
+description: Hoe kan ik de doelkoppeling van Workspace Help in de AEM Forms-werkruimte bijwerken zodat deze naar de koppeling voor aangepaste documentatie verwijst.
+seo-description: Hoe kan ik de doelkoppeling van Workspace Help in de AEM Forms-werkruimte bijwerken zodat deze naar de koppeling voor aangepaste documentatie verwijst.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# De koppeling naar de documentatie bijwerken {#updating-the-link-to-the-documentation}
+# De koppeling naar de documentatie {#updating-the-link-to-the-documentation} bijwerken
 
-U hebt toegang tot de standaardHelp-inhoud voor de werkruimte AEM Forms door **Help > Help** werkruimte te selecteren. Het verwijst naar de online documentatie op de website van Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
+U kunt de standaardHelp-inhoud voor de AEM Forms-werkruimte openen door **Help > Werkruimte Help** te selecteren. Het verwijst naar de online documentatie op de website Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
 
 Overweeg de volgende gebruiksgevallen waarin u de standaard Help-URL wilt wijzigen:
 
 * Voor het bieden van gelokaliseerde hulp in een taal van uw keus.
 * Voor het aanbieden van aangepaste Help-inhoud voor uw aangepaste werkruimte.
 
-Als u de URL van de onlinedocumentatie wilt bijwerken, volgt u eerst de [algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) en daarna de volgende stappen.
+Als u de URL van de onlinedocumentatie wilt bijwerken, volgt u [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) en vervolgens de volgende stappen.
 
-1. Kopieer het `userinfo.html` bestand van `/libs/ws/js/runtime/templates` naar `/apps/ws/js/runtime/templates`.
+1. Kopieer het `userinfo.html`-bestand van `/libs/ws/js/runtime/templates` naar `/apps/ws/js/runtime/templates`.
 1. Wijzigen:
 
    ```html
@@ -51,4 +51,4 @@ Als u de URL van de onlinedocumentatie wilt bijwerken, volgt u eerst de [algemen
 1. Ga als volgt te werk:
 
    1. Open /apps/ws/js/registry.js voor bewerking.
-   1. Zoeken en vervangen `text!/lc/libs/ws/js/runtime/templates/userinfo.html` door `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.
+   1. `text!/lc/libs/ws/js/runtime/templates/userinfo.html` doorzoeken en vervangen door `text!/lc/apps/ws/js/runtime/templates/userinfo.html`.

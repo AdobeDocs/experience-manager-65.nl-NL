@@ -11,9 +11,9 @@ ht-degree: 1%
 ---
 
 
-# Aanbevolen procedures voor het vertalen van middelen {#best-practices-for-translating-assets-efficiently}
+# Aanbevolen procedures voor het omzetten van elementen {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] biedt ondersteuning voor meertalige workflows voor het vertalen van binaire bestanden, metagegevens en tags voor digitale elementen naar meerdere landinstellingen en het beheren van de vertaalde middelen. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
+[!DNL Adobe Experience Manager Assets] biedt ondersteuning voor meertalige workflows voor het vertalen van binaire bestanden, metagegevens en tags voor digitale elementen naar meerdere landinstellingen en het beheren van de vertaalde middelen. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
 
 Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
 
@@ -42,9 +42,9 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. Schakel de [!UICONTROL Set last modified date] workflow in.
+1. Schakel de [!UICONTROL Set last modified date]-workflow in.
 
-   De [!UICONTROL DAM MetaData Writeback] workflow configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, [!DNL Assets] kunt u de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   Met de [!UICONTROL DAM MetaData Writeback]-workflow configureert u de datum van de laatste wijziging voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan [!DNL Assets] de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de *Laatste gewijzigde datum instellen*-workflow in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
-1. [Configureer het vertaalintegratieframework](/help/sites-administering/tc-tic.md) om te stoppen met het vertalen van binaire elementen. Hef de selectie van de **[!UICONTROL Translate Assets]** optie onder het [!UICONTROL Assets] tabblad op om de vertaling van binaire elementen te stoppen.
-1. Metagegevens/tags van elementen vertalen met behulp van [meertalige middelenworkflows](multilingual-assets.md).
+1. [Configureer het ](/help/sites-administering/tc-tic.md) framework voor vertaalintegratie om het vertalen van binaire bestanden met middelen te stoppen. Schakel de optie **[!UICONTROL Translate Assets]** onder het tabblad [!UICONTROL Assets] uit om de vertaling van binaire elementen te stoppen.
+1. Metagegevens/tags van elementen vertalen met behulp van [Workflows met meerdere bedrijfsmiddelen](multilingual-assets.md).

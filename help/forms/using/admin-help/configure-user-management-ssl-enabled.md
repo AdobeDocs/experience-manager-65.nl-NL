@@ -11,22 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 Synchronisatie werkt alleen correct via LDAPS als de LDAP-certificaten die de certificeringsinstantie (CA) heeft uitgegeven, aanwezig zijn in de JRE-omgeving (Java Runtime Environment) van de toepassingsserver. Importeer het certificaat in het JRE-cacerts-bestand van de toepassingsserver, dat zich gewoonlijk in de map *[JAVA_HOME]*/jre/lib/security/cacerts bevindt.
 
 1. Schakel SSL in op de directoryserver. Zie de documentatie die is geleverd door de leverancier van de directory voor meer informatie.
 1. Exporteer een clientcertificaat van de directoryserver.
-1. Gebruik het hulpprogramma Keytool om het clientcertificaatbestand te importeren in het standaard JVM™-certificaatarchief van de AEM-formuliertoepassingsserver. De procedure voor deze taak varieert, afhankelijk van uw JVM- en clientinstallatiepaden. Als u bijvoorbeeld BEA WebLogic Server met JDK 1.5 gebruikt, typt u deze tekst via een opdrachtprompt:
+1. Gebruik het hulpprogramma Keytool om het clientcertificaatbestand te importeren in het standaard JVM™-certificaatarchief van de AEM formuliertoepassingsserver. De procedure voor deze taak varieert, afhankelijk van uw JVM- en clientinstallatiepaden. Als u bijvoorbeeld BEA WebLogic Server met JDK 1.5 gebruikt, typt u deze tekst via een opdrachtprompt:
 
-   `keytool -import -alias`*alias *`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
+   `keytool -import -alias`*alias* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
 1. Typ desgevraagd het wachtwoord. (Voor Java is het standaardwachtwoord `changeit`.) Er verschijnt een bericht met de mededeling dat het certificaat is geïmporteerd.
-1. Typ desgevraagd `Yes` om het certificaat te vertrouwen.
+1. Typ `Yes` als u hierom wordt gevraagd om het certificaat te vertrouwen.
 1. Schakel SSL in Gebruikersbeheer in en selecteer bij het configureren van de directory-instellingen Ja voor de SSL-optie en wijzig de poortinstelling dienovereenkomstig. Het standaardpoortnummer is 636.
 
 >[!NOTE]

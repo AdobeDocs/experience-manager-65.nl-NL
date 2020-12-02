@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 0%
 
 ---
 
@@ -28,33 +31,40 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 * [Openingspagina&#39;s](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 * [Doelaanbiedingen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Werken met de manager van de Campagne van de Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
-* [Segmentering begrijpen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
+* [Inzicht in segmentering](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
 * [Uw campagne instellen](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 Het beheer van campagnes bestaat uit verschillende elementen:
 
-* **Merken** In AEM zijn merken de eenheid op hoofdniveau en vormen een verzameling **campagnes**.
+* **aem**
+merken zijn de eenheid op hoofdniveau en vormen een verzameling 
+**Campagnes**.
 
-* **Campagne** A campagne is een verzameling individuele **ervaringen**.
+* **De**
+campagne CampaignsA is een inzameling van individuele 
+**Ervaringen**.
 
-* **Ervaringen** De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker op **Touchpoints** worden getoond. Er zijn verschillende soorten ervaring beschikbaar:
+* ****
+ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoeker worden getoond op 
+**Aanraakpunten**. Er zijn verschillende soorten ervaring beschikbaar:
 
    * **Teasers**
-      [Taserpagina&#39;s/alinea](#teasers) &#39;s worden gebruikt om specifieke **segmenten** van bezoekers te sturen naar inhoud die op hun belangen is toegespitst.
+      [Taserpagina&#39;s/](#teasers) alinea&#39;s worden gebruikt om specifieke  **** bezoekerssegmenten te sturen naar inhoud die op hun belangen is toegespitst.
 
       Taserpagina&#39;s kunnen:
 
       * een reeks opties presenteren waaruit de bezoeker kan kiezen
       * slechts één laseralinea tonen die op het specifieke bezoekerssegment is gebaseerd; zo kan de getoonde laseralinea afhankelijk zijn van de leeftijd van de bezoeker .
+
       Een laserpagina is doorgaans een tijdelijke actie die een bepaalde periode duurt, totdat deze wordt vervangen door de volgende laserpagina.
 
    * **Nieuwsbrieven**
 
-      [E-mailcommunicatie](#emailmarketing) wordt gebruikt om gebruikers te betrekken en hen aan te moedigen om uw website te bezoeken. Deze hebben meestal de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **** Opmerking: Adobe is niet van plan deze functionaliteit verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
 
-   * **Adobe-doel**
+   * **Adobe Target**
 
-      Hierdoor is integratie met Adobe Target (voorheen Test&amp;Target) mogelijk, waardoor marketers een tool voor optimalisatie van hun conversiewebsite krijgen met de benodigde mogelijkheden om hun online-inhoud voortdurend te maken en aanbiedingen die voor hun klanten relevanter zijn, waardoor hun conversie groter wordt. Adobe Target biedt een intuïtieve interface voor het ontwerpen en uitvoeren van tests, het maken van publiekssegmenten en het kiezen van inhoud, allemaal vanuit één toepassing.
+      Dit maakt integratie met Adobe Target (voorheen Test&amp;Target) mogelijk, waardoor marketers een tool voor optimalisatie van hun conversiewebsite krijgen met de benodigde mogelijkheden om hun online-inhoud voortdurend te maken en aanbiedingen die voor hun klanten relevanter zijn, waardoor hun conversie wordt vergroot. Adobe Target biedt een intuïtieve interface voor het ontwerpen en uitvoeren van tests, het maken van publiekssegmenten en het kiezen van inhoud, allemaal vanuit één toepassing.
 
 
 * **Aanraakpunten**
@@ -65,15 +75,15 @@ Het beheer van campagnes bestaat uit verschillende elementen:
 
 * **Leads**
 
-   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **** Opmerking: Adobe is niet van plan deze functionaliteit verder te verbeteren.
+   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+   De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
 
 * **Lijsten**
 
-   Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. **Opmerking:** Opmerking: Adobe is niet van plan deze functionaliteit verder te verbeteren.
+   Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. Opmerking: **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie met AEM te [benutten.](/help/sites-administering/campaign.md)
+   Aanbeveling is om Adobe Campaign en de integratie naar AEM te gebruiken.[](/help/sites-administering/campaign.md)
 
 * **Segmenten**
 
@@ -83,7 +93,7 @@ Het beheer van campagnes bestaat uit verschillende elementen:
 
    De manager van de Campagne van de Marketing (MCM) is een console die u toestaat om tot alle functionaliteit toegang te hebben u uw campagnes, merken, ervaringen, touchpoints, lood, lijsten, segmenten en rapporten moet tot stand brengen en controleren.
 
-   Het kan van diverse plaatsen (geëtiketteerd als Campagnes ****), of met, bijvoorbeeld, URL worden betreden:
+   Het kan van diverse plaatsen (geëtiketteerd als **Campagnes**), of met, bijvoorbeeld URL worden betreden:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Bij de [volledige oplossingen AEM Sites, Assets en Dynamic Media is krachtige ondersteuning beschikbaar voor het schrijven en leveren van content en AEM krachtige ondersteuning voor hybride gebruiksscenario&#39;s.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Belangrijke creatie en levering van inhoud en AEM krachtige steun voor hybride gebruiksgevallen zijn beschikbaar met [volledige AEM Sites, Middelen, en Dynamische oplossingen van Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefinieerd en wordt een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 
@@ -37,13 +37,13 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 | [Afbeeldingsuitvoeringen](/help/assets/image-presets.md) |
 | [Metagegevens- en tagbeheer](/help/assets/metadata.md) |
 | [Zoeken](/help/assets/manage-assets.md) |
-| [Verzamelingen](/help/assets/manage-assets.md) en [lichtbak](/help/assets/light-box.md) |
+| [](/help/assets/manage-assets.md) Verzamelingen en  [lichtbak](/help/assets/light-box.md) |
 | [Profielen](/help/assets/processing-profiles.md) |
 | [Versiebeheer](/help/assets/manage-assets.md) |
 | [Dubbele detectie](/help/assets/duplicate-detection.md) |
 | [Slimme tags](/help/assets/enhanced-smart-tags.md) |
 
-## Toegang-, API- en leveringsfuncties {#access-api-and-delivery-features}
+## {#access-api-and-delivery-features}-functies voor toegang, API en levering
 
 |  |
 |---|

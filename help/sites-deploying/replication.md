@@ -23,11 +23,11 @@ ht-degree: 0%
 
 De agenten van de replicatie zijn centraal aan Adobe Experience Manager (AEM) als mechanisme dat wordt gebruikt om:
 
-* [Publiceer (activeer)](/help/sites-authoring/publishing-pages.md#activatingcontent) inhoud van een auteur naar een publicatieomgeving.
+* [Publiceer (activeer) ](/help/sites-authoring/publishing-pages.md#activatingcontent) inhoud van een auteur aan een publicatiemilieu.
 * Inhoud expliciet uit de Dispatcher-cache verwijderen.
 * Hiermee wordt gebruikersinvoer (bijvoorbeeld formulierinvoer) vanuit de publicatieomgeving geretourneerd naar de auteursomgeving (onder controle van de auteursomgeving).
 
-De verzoeken worden [een rij gevormd](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) aan de aangewezen agent voor verwerking.
+De verzoeken zijn [een rij gevormd](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler) aan de aangewezen agent voor verwerking.
 
 >[!NOTE]
 >
@@ -48,9 +48,9 @@ De replicatie, aan een publicatie-instantie of verzender, vindt in verscheidene 
 
 * er kunnen meerdere auteur- en publicatieomgevingen worden geconfigureerd.
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
-### Repliceren van Publiceren naar Auteur {#replicating-from-publish-to-author}
+### Replicatie van publiceren naar auteur {#replicating-from-publish-to-author}
 
 Met sommige functies kunnen gebruikers gegevens invoeren op een publicatie-instantie.
 
@@ -60,16 +60,16 @@ De omgekeerde replicatie gebruikt een agent in het publicatiemilieu die verwijzi
 
 In andere gevallen, zoals bij Community-functies (bijvoorbeeld forums, blogs, opmerkingen en revisies), is het moeilijk om de hoeveelheid door de gebruiker gegenereerde inhoud (UGC) die in de publicatieomgeving wordt ingevoerd, op efficiënte wijze te synchroniseren in verschillende AEM gevallen met replicatie.
 
-AEM [Gemeenschappen](/help/communities/overview.md) gebruiken nooit replicatie voor UGC. In plaats daarvan, vereist de plaatsing voor Gemeenschappen een gemeenschappelijke opslag voor UGC (zie de Opslag van de Inhoud van de [Gemeenschap](/help/communities/working-with-srp.md)).
+AEM [Communities](/help/communities/overview.md) gebruikt nooit replicatie voor UGC. In plaats daarvan, vereist de plaatsing voor Gemeenschappen een gemeenschappelijke opslag voor UGC (zie [Community Content Storage](/help/communities/working-with-srp.md)).
 
-### Replicatie - uit de doos {#replication-out-of-the-box}
+### Replicatie - uit het vak {#replication-out-of-the-box}
 
 De wij-kleinhandelswebsite die in een standaardinstallatie van AEM inbegrepen is kan worden gebruikt om replicatie te illustreren.
 
-Om dit voorbeeld te volgen en de standaardreplicatieagenten te gebruiken moet u AEM [](/help/sites-deploying/deploy.md) installeren:
+Om dit voorbeeld te volgen en de standaardreplicatieagenten te gebruiken moet u AEM [installeren ](/help/sites-deploying/deploy.md) met:
 
-* de auteursomgeving op de haven `4502`
-* de publicatieomgeving op de haven `4503`
+* de auteursomgeving op poort `4502`
+* de publicatieomgeving op de poort `4503`
 
 >[!NOTE]
 >
@@ -85,22 +85,23 @@ Effectief uitgeschakeld (vanaf AEM 6.1):
 
 >
 >
-Om het statuut van of de agent of de rij te controleren gebruik de console van **Hulpmiddelen** .
->Zie [Uw Replicators](#monitoring-your-replication-agents)controleren.
+Om de status van of de agent of de rij te controleren gebruik **Tools** console.
+>Zie [Uw Replicatieagenten controleren](#monitoring-your-replication-agents).
 
 #### Replicatie (te publiceren auteur) {#replication-author-to-publish}
 
 1. Navigeer naar de ondersteuningspagina in de ontwerpomgeving.
    **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. Bewerk de pagina om nieuwe tekst toe te voegen.
-1. **Activeer Pagina** om de wijzigingen te publiceren.
+1. **Activeer** Pagina om de wijzigingen te publiceren.
 1. Open de ondersteuningspagina in de publicatieomgeving:
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. U kunt nu de wijzigingen zien die u bij de auteur hebt ingevoerd.
 
 Deze replicatie wordt in de auteursomgeving geactiveerd door:
 
-* **Standaard Agent (publiceren)**Deze agent repliceert inhoud aan het gebrek publiceert instantie.
+* **Standaard Agent (publiceren)**
+Deze agent repliceert inhoud aan het gebrek publiceert instantie.
 De details van dit (configuratie en logboeken) kunnen van de console van Hulpmiddelen van het auteursmilieu worden betreden; of:
 
    `https://localhost:4502/etc/replication/agents.author/publish.html`.
@@ -109,17 +110,21 @@ De details van dit (configuratie en logboeken) kunnen van de console van Hulpmid
 
 De volgende agenten zijn beschikbaar in een standaard AEM installatie:
 
-* [De standaardagent](#replication-author-to-publish)die voor het herhalen van auteur wordt gebruikt te publiceren.
+* [Standaard ](#replication-author-to-publish)
+AgentGebruikt voor het herhalen van auteur om te publiceren.
 
-* Dispatcher FlushDit wordt gebruikt voor het beheren van de Dispatcher cache. Zie [Het Invalideren van het Geheime voorgeheugen van de Verzender van het OntwerpMilieu](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) en het [Invalideren van het Geheime voorgeheugen van de Verzender van een het Publiceren Instantie](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie.
+* Dispatcher Flush
+Dit wordt gebruikt voor het beheren van het cachegeheugen van Dispatcher. Zie [De Dispatcher Cache van het Authoring Environment](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) en [De Dispatcher Cache van een het Publiceren Instantie](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) voor meer informatie ongeldig maken.
 
-* [Replicatie](#reverse-replication-publish-to-author)omkeren die wordt gebruikt voor replicatie van publicatie naar auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
+* [Omgekeerde ](#reverse-replication-publish-to-author)
+replicatieGebruikt voor het herhalen van publiceren aan auteur. Reverse-replicatie wordt niet gebruikt voor functies van Gemeenschappen, zoals forums, blogs en opmerkingen. De optie is in feite uitgeschakeld omdat de Postvak UIT niet is ingeschakeld. Het gebruik van omgekeerde replicatie zou douaneconfiguratie vereisen.
 
-* Statische AgentThis is een &quot;Agent die een statische vertegenwoordiging van een knoop in het filesystem opslaat.&quot;
-Met de standaardinstellingen worden de inhoudspagina&#39;s en de dam-elementen bijvoorbeeld opgeslagen in `/tmp`de HTML-indeling of in de juiste indeling voor elementen. Zie de `Settings` en `Rules` lusjes voor de configuratie.
+* Statische agent
+Dit is een &quot;Agent die een statische vertegenwoordiging van een knoop in het filesystem opslaat.&quot;
+Met de standaardinstellingen worden de inhoudspagina&#39;s en de dam-elementen bijvoorbeeld opgeslagen onder `/tmp`, als HTML of in de juiste indeling voor elementen. Zie `Settings` en `Rules` lusjes voor de configuratie.
 Dit is aangevraagd zodat de inhoud zichtbaar is wanneer de pagina rechtstreeks bij de toepassingsserver wordt aangevraagd. Dit is een gespecialiseerde agent en (waarschijnlijk) zal niet voor de meeste gevallen worden vereist.
 
-## Replicatieagents - configuratieparameters {#replication-agents-configuration-parameters}
+## Replicatieagents - Configuratieparameters {#replication-agents-configuration-parameters}
 
 Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn vier lusjes beschikbaar binnen de dialoog:
 
@@ -137,11 +142,11 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
    Wijst erop of de replicatieagent momenteel wordt toegelaten.
 
-   Wanneer de agent wordt **toegelaten** zal de rij als worden getoond:
+   Wanneer de agent **enabled** is zal de rij als worden getoond:
 
-   * **Actief** wanneer objecten worden verwerkt.
-   * **Niet actief** wanneer de wachtrij leeg is.
-   * **Geblokkeerd** wanneer de punten in de rij zijn, maar niet kunnen worden verwerkt; bijvoorbeeld wanneer de ontvangende wachtrij is uitgeschakeld.
+   * **Activeer** wanneer items worden verwerkt.
+   * **** Niet beschikbaar wanneer de wachtrij leeg is.
+   * **** geblokkeerd wanneer de punten in de rij zijn, maar niet kunnen worden verwerkt; bijvoorbeeld wanneer de ontvangende wachtrij is uitgeschakeld.
 
 * **Type serienummering**
 
@@ -154,7 +159,7 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
    De vertraging (wachttijd in milliseconden) tussen twee pogingen, mocht een probleem worden ontmoet.
 
-   Default: `60000`
+   Standaard: `60000`
 
 * **Gebruiker-id agent**
 
@@ -167,11 +172,11 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
    >[!CAUTION]
    >
-   >Voor een agent in de auteursomgeving *moet* deze account leestoegang hebben tot alle paden die u wilt repliceren.
+   >Voor een agent op het auteursmilieu *must* heeft leestoegang tot alle wegen die u wilt hebben herhaald.
 
    >[!CAUTION]
    >
-   >Voor een agent in de publicatieomgeving *moet* deze account de vereiste lees- en schrijftoegang hebben om de inhoud te repliceren.
+   >Voor een agent op het publicatiemilieu *must* heeft deze rekening creeer/schrijf toegang wordt vereist om de inhoud te herhalen.
 
    >[!NOTE]
    >
@@ -185,7 +190,7 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
    * `Info`: fouten, waarschuwingen en andere informatieberichten worden geregistreerd
    * `Debug`: een hoog niveau van detail zal in de berichten, hoofdzakelijk voor zuiveringsdoeleinden worden gebruikt
 
-   Default: `Info`
+   Standaard: `Info`
 
 * **Gebruiken voor omgekeerde replicatie**
 
@@ -193,7 +198,7 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
 * **Alias-update**
 
-   Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Ook, zie het [Vormen van een Agent](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent)van de Vlek van de Verzender.
+   Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Zie ook [Een Dispatcher Flush Agent](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent) configureren.
 
 #### Vervoer {#transport}
 
@@ -204,11 +209,11 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
    Bijvoorbeeld:
 
    * Een standaardagent kan worden gerepliceerd naar `https://localhost:4503/bin/receive`
-   * Een Dispatcher Flush-agent kan zich repliceren naar `https://localhost:8000/dispatcher/invalidate.cache`
+   * Een Dispatcher Flush-agent kan worden gerepliceerd naar `https://localhost:8000/dispatcher/invalidate.cache`
 
    Het hier opgegeven protocol (HTTP of HTTPS) bepaalt de transportmethode.
 
-   Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. Zo heeft farm #1 een virtuele host van `www.mysite.com/path1/*` en farm #2 een virtuele host van `www.mysite.com/path2/*`. U kunt een URL van gebruiken `/path1/invalidate.cache` om het eerste landbouwbedrijf te richten en `/path2/invalidate.cache` het tweede landbouwbedrijf te richten.
+   Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. Zo heeft farm #1 bijvoorbeeld een virtuele host van `www.mysite.com/path1/*` en farm #2 heeft een virtuele host van `www.mysite.com/path2/*`. U kunt een URL van `/path1/invalidate.cache` gebruiken om het eerste landbouwbedrijf te richten en `/path2/invalidate.cache` om het tweede landbouwbedrijf te richten.
 
 * **Gebruiker**
 
@@ -347,28 +352,28 @@ Deze instellingen worden gebruikt om triggers voor geautomatiseerde replicatie t
 
    Als deze optie is ingeschakeld, wordt het versienummer van geactiveerde pagina&#39;s niet geforceerd.
 
-## De replicatieagents configureren {#configuring-your-replication-agents}
+## Het vormen van uw Agenten van de Replicatie {#configuring-your-replication-agents}
 
-Voor informatie over het aansluiten van replicatieagenten aan de publicatieinstantie die MSSL gebruikt, zie het [Repliceren Gebruikend Wederzijdse SSL](/help/sites-deploying/mssl-replication.md).
+Voor informatie over het aansluiten van replicatieagenten aan de publicatieinstantie die MSSL gebruikt, zie [Replicating Using Mutual SSL](/help/sites-deploying/mssl-replication.md).
 
-### Het vormen van uw Agenten van de Replicatie van het Milieu van de Auteur {#configuring-your-replication-agents-from-the-author-environment}
+### Het vormen van uw Agenten van de Replicatie van het Milieu {#configuring-your-replication-agents-from-the-author-environment}
 
-Van het lusje van Hulpmiddelen in het auteursmilieu kunt u replicatieagenten vormen die in of het auteursmilieu (**Agenten op auteur**) of het publicatiemilieu (**Agenten op publiceren**) verblijven. De volgende procedures illustreren de configuratie van een agent voor het auteursmilieu, maar kunnen voor beide worden gebruikt.
+Van het lusje van Hulpmiddelen in het auteursmilieu kunt u replicatieagenten vormen die in of het auteursmilieu (**Agenten op auteur**) of het publicatiemilieu (**Agenten op publish**) verblijven. De volgende procedures illustreren de configuratie van een agent voor het auteursmilieu, maar kunnen voor beide worden gebruikt.
 
 >[!NOTE]
 >
->Wanneer een verzender HTTP- verzoeken om auteur behandelt of instanties publiceert, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de verzender lijst van cliëntkopballen toevoegen. (Zie [/clientheaders (clientheaders)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Wanneer een verzender HTTP- verzoeken om auteur behandelt of instanties publiceert, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de verzender lijst van cliëntkopballen toevoegen. (Zie [/clientheaders (de Kopballen van de Cliënt)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
 
 
-1. Open het tabblad **Gereedschappen** in AEM.
-1. Klik op **Replicatie** (linkerdeelvenster om de map te openen).
-1. Dubbelklik op **Agenten op auteur** (of de linkerzijde of de juiste ruit).
+1. Open de tab **Tools** in AEM.
+1. Klik **Replication** (linkerdeelvenster om de map te openen).
+1. Dubbelklik **Agenten op auteur** (of de linkerzijde of de juiste ruit).
 1. Klik de aangewezen agentennaam (die een verbinding) is om gedetailleerde informatie over die agent te tonen.
-1. Klik op **Bewerken** om het configuratiedialoogvenster te openen:
+1. Klik **Bewerken** om het configuratiedialoogvenster te openen:
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. De opgegeven waarden moeten voldoende zijn voor een standaardinstallatie. Als u veranderingen aanbrengt dan **O.K.** klikken om hen (zie de Agenten van de [Replicatie - de Parameters](#replication-agents-configuration-parameters) van de Configuratie voor meer details van de individuele parameters) te bewaren.
+1. De opgegeven waarden moeten voldoende zijn voor een standaardinstallatie. Als u wijzigingen aanbrengt, klikt u op **OK** om deze op te slaan (zie [Replication Agents - Configuration Parameters](#replication-agents-configuration-parameters) voor meer details van de individuele parameters).
 
 >[!NOTE]
 >
@@ -380,20 +385,20 @@ Van het lusje van Hulpmiddelen in het auteursmilieu kunt u replicatieagenten vor
 
 De omgekeerde replicatie wordt gebruikt om gebruikersinhoud terug te krijgen die op een te publiceren instantie wordt geproduceerd aan een auteursinstantie. Dit wordt doorgaans gebruikt voor functies zoals enquêtes en registratieformulieren.
 
-Om veiligheidsredenen, staan de meeste netwerktopologieën geen verbindingen *van* de &quot;Verwante Zone&quot;toe (subnetwork die de externe diensten aan een onbetrouwbaar netwerk zoals Internet blootstelt).
+Om veiligheidsredenen staan de meeste netwerktopologieën geen verbindingen *van* de &quot;Gedemilitariseerde Zone&quot; toe (een subnetwerk dat de externe services toegankelijk maakt voor een niet-vertrouwd netwerk zoals internet).
 
 Aangezien het publiceren milieu gewoonlijk in DMZ is, om inhoud terug naar het auteursmilieu te krijgen moet de verbinding van de auteursinstantie in werking worden gesteld. Dit gebeurt met:
 
-* een *outbox* in het publicatiemilieu waar de inhoud wordt geplaatst.
+* en *outbox* in het publicatiemilieu waar de inhoud wordt geplaatst.
 * een agent (publiceren) in het auteursmilieu dat periodiek outbox voor nieuwe inhoud opiniepeilt.
 
 >[!NOTE]
 >
->Voor AEM [Communities](/help/communities/overview.md)wordt de replicatie niet gebruikt voor door de gebruiker gegenereerde inhoud op een publicatie-instantie. Zie Opslag van [Community-inhoud](/help/communities/working-with-srp.md).
+>Voor AEM [Communities](/help/communities/overview.md), wordt de replicatie niet gebruikt voor gebruiker geproduceerde inhoud op een publicatieinstantie. Zie [Community Content Storage](/help/communities/working-with-srp.md).
 
 Hiervoor hebt u het volgende nodig:
 
-**Een omgekeerde replicatieagent in het auteursmilieu** Dit handelt als actieve component om informatie van outbox in het publicatiemilieu te verzamelen:
+**Een omgekeerde replicatieagent in de auteur** environmentThis handelt als actieve component om informatie van outbox in het publicatiemilieu te verzamelen:
 
 Als u omgekeerde replicatie wilt gebruiken dan zorg ervoor dat deze agent wordt geactiveerd.
 
@@ -409,28 +414,28 @@ Als u omgekeerde replicatie wilt gebruiken dan zorg ervoor dat deze agent wordt 
 >
 >Alleen inhoud wordt gerepliceerd. Gebruikersgegevens worden niet gekopieerd (gebruikers, gebruikersgroepen en gebruikersprofielen).
 >
->Schakel [Gebruikerssynchronisatie](/help/sites-administering/sync.md)in als u gebruikersgegevens in meerdere publicatieinstanties wilt synchroniseren.
+>Schakel [Gebruikerssynchronisatie](/help/sites-administering/sync.md) in om gebruikersgegevens in meerdere publicatieinstanties te synchroniseren.
 
 Op installatie wordt een standaardagent reeds gevormd voor replicatie van inhoud aan een te publiceren instantie die op haven 4503 van localhost loopt.
 
 Om replicatie van inhoud voor een extra te vormen publiceer instantie moet u, een nieuwe replicatieagent creëren en vormen:
 
 1. Open het tabblad **Gereedschappen** in AEM.
-1. Selecteer **Replication** en vervolgens **Agents op auteur** in het linkerdeelvenster.
-1. Selecteer **Nieuw...**.
-1. Plaats de **Titel** en de **Naam**, dan uitgezochte Agent **van de** Replicatie.
-1. Klik **creëren** om de nieuwe agent tot stand te brengen.
+1. Selecteer **Replication** en **Agents op auteur** in het linkerdeelvenster.
+1. **Nieuw selecteren...**.
+1. Stel de **Title** en **Name** in en selecteer **Replication Agent**.
+1. Klik **Create** om de nieuwe agent tot stand te brengen.
 1. Dubbelklik op het nieuwe agentitem om het configuratievenster te openen.
-1. Klik op **Bewerken** - het dialoogvenster **Agent-instellingen** wordt geopend. Het **serialisatietype** is al gedefinieerd als Standaard. Dit moet zo blijven.
+1. Klik **Edit** - het **de dialoogvakje van de Montages van de Agent** zal openen - **Serialization Type** wordt reeds bepaald als Gebrek, dit moet zo blijven.
 
-   * Op het tabblad **Instellingen** :
+   * Op het tabblad **Instellingen**:
 
-      * Activeer **Ingeschakeld**.
-      * Voer een **beschrijving** in.
-      * Stel de **vertraging** Opnieuw proberen in op `60000`.
+      * Activeer **Enabled**.
+      * Voer een **Beschrijving** in.
+      * Stel **Opnieuw Vertraging** in op `60000`.
 
-      * Laat het **serialisatietype** ongewijzigd `Default`.
-   * Op het tabblad **Vervoer** :
+      * Laat **Serienummeringstype** ongewijzigd als `Default`.
+   * Op het tabblad **Vervoer**:
 
       * Voer de vereiste URI in voor het nieuwe publicatie-exemplaar; bijvoorbeeld:
          `https://localhost:4504/bin/receive`.
@@ -439,44 +444,44 @@ Om replicatie van inhoud voor een extra te vormen publiceer instantie moet u, ee
       * U kunt desgewenst andere parameters configureren.
 
 
-1. Klik op **OK** om de instellingen op te slaan.
+1. Klik **OK** om de instellingen op te slaan.
 
 Vervolgens kunt u de bewerking testen door een pagina in de ontwerpomgeving bij te werken en te publiceren.
 
 De updates verschijnen op alle publicatieinstanties die zoals hierboven zijn gevormd.
 
-Als u problemen ondervindt, kunt u de logboeken op de auteurinstantie controleren. Afhankelijk van het vereiste detailniveau kunt u het **Logniveau** ook instellen op `Debug` het dialoogvenster **Agent-instellingen** zoals hierboven beschreven.
+Als u problemen ondervindt, kunt u de logboeken op de auteurinstantie controleren. Afhankelijk van het vereiste detailniveau kunt u **Logniveau** ook instellen op `Debug` door het dialoogvenster **Agent-instellingen** als hierboven beschreven te gebruiken.
 
 >[!NOTE]
 >
->Dit kan met gebruik van de Gebruiker van de [Agent identiteitskaart](#agentuserid) worden gecombineerd om verschillende inhoud te selecteren voor het herhalen aan individuele publicatiemilieu&#39;s. Voor elke publicatieomgeving:
+>Dit kan worden gecombineerd met het gebruik van [Agent-gebruikersnaam](#agentuserid) om verschillende inhoud te selecteren voor replicatie naar de afzonderlijke publicatieomgevingen. Voor elke publicatieomgeving:
 >
 >1. Vorm een replicatieagent voor het herhalen aan dat publicatiemilieu.
 >1. Een gebruikersaccount configureren; met de toegangsrechten die zijn vereist voor het lezen van de inhoud die wordt gerepliceerd naar die specifieke publicatieomgeving.
->1. Wijs de gebruikersrekening als Gebruiker - identiteitskaart **van de** Agent voor de replicatieagent toe.
+>1. Wijs de gebruikersrekening als **Gebruiker van de Agent ID** voor de replicatieagent toe.
 
 >
 
 
 
-### Een Dispatcher Flush-agent configureren {#configuring-a-dispatcher-flush-agent}
+### Een Dispatcher Flush-agent {#configuring-a-dispatcher-flush-agent} configureren
 
 De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde configuratie nog nodig en het zelfde is van toepassing als u een nieuwe agent bepaalt:
 
 1. Open het tabblad **Gereedschappen** in AEM.
-1. Klik op **Implementatie**.
-1. Selecteer **Replication** en vervolgens **Agents bij publiceren**.
+1. Klik **Implementatie**.
+1. Selecteer **Replication** en **Agents op publish**.
 1. Dubbelklik op het item **Dispatcher Flush** om het overzicht te openen.
-1. Klik op **Bewerken** . Het dialoogvenster **Agent-instellingen** wordt geopend:
+1. Klik op **Bewerken** - het dialoogvenster **Agent-instellingen** wordt geopend:
 
-   * Op het tabblad **Instellingen** :
+   * Op het tabblad **Instellingen**:
 
-      * Activeer **Ingeschakeld**.
-      * Voer een **beschrijving** in.
-      * Verlaat het Type **van** Rangschikking als `Dispatcher Flush`, of plaats het als dusdanig als het creëren van een nieuwe agent.
+      * Activeer **Enabled**.
+      * Voer een **Beschrijving** in.
+      * Verlaat **Serialization Type** als `Dispatcher Flush`, of plaats het als dusdanig als het creëren van een nieuwe agent.
 
-      * (Optioneel) Selecteer **Alias-update** om aanvragen voor validatie van aliassen of ijdelingspaden voor Dispatcher in te schakelen.
-   * Op het tabblad **Vervoer** :
+      * (optioneel) Selecteer **Alias-update** om aanvragen voor validatie van aliassen of ijdelingspaden voor Dispatcher in te schakelen.
+   * Op het tabblad **Vervoer**:
 
       * Voer de vereiste URI in voor het nieuwe publicatie-exemplaar; bijvoorbeeld:
          `https://localhost:80/dispatcher/invalidate.cache`.
@@ -484,49 +489,49 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde co
       * Voer de sitespecifieke gebruikersaccount in die voor replicatie wordt gebruikt.
       * U kunt desgewenst andere parameters configureren.
 
-   Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. Zo heeft farm #1 een virtuele host van `www.mysite.com/path1/*` en farm #2 een virtuele host van `www.mysite.com/path2/*`. U kunt een URL van gebruiken `/path1/invalidate.cache` om het eerste landbouwbedrijf te richten en `/path2/invalidate.cache` het tweede landbouwbedrijf te richten.
+   Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. Zo heeft farm #1 bijvoorbeeld een virtuele host van `www.mysite.com/path1/*` en farm #2 heeft een virtuele host van `www.mysite.com/path2/*`. U kunt een URL van `/path1/invalidate.cache` gebruiken om het eerste landbouwbedrijf te richten en `/path2/invalidate.cache` om het tweede landbouwbedrijf te richten.
 
    >[!NOTE]
    >
-   >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan moet u de Kopballen [van](#extended) HTTP op het **Uitgebreide** lusje vormen.
+   >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan moet u [Kopballen van HTTP ](#extended) in **Uitgebreide** tabel vormen.
 
-1. Click **OK** to save the changes.
-1. Keer terug naar het lusje van **Hulpmiddelen** , van hier kunt u de **agent van de Flush** van de **Dispatcher (** Medewerkers op publiceren **)** activeren.
+1. Klik **OK** om de wijzigingen op te slaan.
+1. Keer terug naar **Tools** lusje, van hier kunt u **Activate** de **Dispatcher Flush** agent (**Agenten op publish**).
 
-De **Dispatcher Flush** replicator is niet actief op auteur. U hebt toegang tot dezelfde pagina in de publicatieomgeving met behulp van de equivalente URI. bijvoorbeeld `https://localhost:4503/etc/replication/agents.publish/flush.html`.
+De **Dispatcher Flush** replicatieagent is niet actief op auteur. U hebt toegang tot dezelfde pagina in de publicatieomgeving met behulp van de equivalente URI. bijvoorbeeld `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 
 ### Toegang tot replicatieagents beheren {#controlling-access-to-replication-agents}
 
-De toegang tot de pagina&#39;s die worden gebruikt om de replicatieagenten te vormen kan worden gecontroleerd door gebruiker en/of groepspaginatoestemmingen op de `etc/replication` knoop te gebruiken.
+De toegang tot de pagina&#39;s die worden gebruikt om de replicatieagenten te vormen kan worden gecontroleerd door gebruiker en/of groepspaginachtigingen op `etc/replication` knoop te gebruiken.
 
 >[!NOTE]
 >
 >Het instellen van dergelijke machtigingen heeft geen invloed op gebruikers die inhoud repliceren (bijvoorbeeld via de websiteconsole of de optie sidekick). Het replicatieframework gebruikt niet de &quot;gebruikerssessie&quot; van de huidige gebruiker om toegang te krijgen tot replicatieagents tijdens het repliceren van pagina&#39;s.
 
-### Het vormen van uw Medewerkers van de Replicatie van CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
+### Het vormen van uw Agenten van de Replicatie van CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
 
 >[!NOTE]
 >
->Het maken van replicatieagents wordt alleen ondersteund op de locatie van de `/etc/replication` opslagplaats. Dit is nodig opdat bijbehorende ACLs behoorlijk wordt behandeld. Het creëren van een replicatieagent in een andere plaats van de boom zou tot onbevoegde toegang kunnen leiden.
+>Het maken van replicatieagents wordt alleen ondersteund in de opslaglocatie `/etc/replication`. Dit is nodig opdat bijbehorende ACLs behoorlijk wordt behandeld. Het creëren van een replicatieagent in een andere plaats van de boom zou tot onbevoegde toegang kunnen leiden.
 
 Diverse parameters van uw replicatieagenten kunnen worden gevormd gebruikend CRXDE Lite.
 
-Als u naar `/etc/replication` u navigeert, kunt u de volgende drie knooppunten zien:
+Als u naar `/etc/replication` navigeert, kunt u de volgende drie knooppunten zien:
 
 * `agents.author`
 * `agents.publish`
 * `treeactivation`
 
-Twee houden configuratieinformatie over het aangewezen milieu, en zijn slechts actief wanneer dat milieu loopt. `agents` Dit `agents.publish` wordt bijvoorbeeld alleen gebruikt in de publicatieomgeving. Het volgende screenshot toont de publicatieagent in de auteursomgeving, zoals inbegrepen met AEM WCM:
+Twee `agents` houden configuratieinformatie over het aangewezen milieu, en zijn slechts actief wanneer dat milieu loopt. `agents.publish` wordt bijvoorbeeld alleen gebruikt in de publicatieomgeving. Het volgende screenshot toont de publicatieagent in de auteursomgeving, zoals inbegrepen met AEM WCM:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## Uw replicatieagents controleren {#monitoring-your-replication-agents}
+## Uw replicatieagents {#monitoring-your-replication-agents} controleren
 
 Om een replicatieagent te controleren:
 
-1. Open het tabblad **Gereedschappen** in AEM.
-1. Klik op **Replicatie**.
+1. Open de tab **Tools** in AEM.
+1. Klik **Replication**.
 1. Dubbelklik op de koppeling naar agents voor de juiste omgeving (links of rechts); bijvoorbeeld **Agenten op auteur**.
 
    Het resulterende venster toont een overzicht van al uw replicatieagenten voor het auteursmilieu, met inbegrip van hun doel en status.
@@ -541,11 +546,11 @@ Om een replicatieagent te controleren:
    * Zie het doel van eventuele replicaties.
    * Zie of de replicatierij momenteel actief (toegelaten) is.
    * Zie of er items in de wachtrij staan.
-   * **Vernieuwen** of **Wissen** om de weergave van wachtrijitems bij te werken; dit helpt u punten te zien ingaan en de rij verlaten.
+   * **** Vernieuwen of  **** wissen om de weergave van wachtrijitems bij te werken; dit helpt u punten te zien ingaan en de rij verlaten.
 
-   * **Logboek** van de mening om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
-   * **Verbinding** met de doelinstantie testen.
-   * **Indien nodig opnieuw proberen** afdwingen voor alle wachtrij-items.
+   * **Logboek van de mening** om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
+   * **Test** Connection to the target instance.
+   * **Indien nodig** opnieuw in de wachtrij plaatsen.
 
    >[!CAUTION]
    >
@@ -570,12 +575,12 @@ De uitgever zal alle punten uitpakken, sparen hen en rapport terug aan de auteur
 
 ### Batchreplicatie configureren {#configuring-batch-replication}
 
-1. Go to `http://serveraddress:serverport/siteadmin`
-1. Druk op het **[!UICONTROL Tools]** pictogram boven aan het scherm
-1. Ga vanaf de linkerzijnavigatieregel naar **[!UICONTROL Replication - Agents on Author]** en dubbelklik **[!UICONTROL Default Agent]**.
-   * U kunt het gebrek ook bereiken publiceert replicatieagent door rechtstreeks te gaan naar `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
-1. Druk de **[!UICONTROL Edit]** knoop boven de replicatierij.
-1. Ga in het volgende venster naar het **[!UICONTROL Batch]** tabblad:
+1. Ga naar `http://serveraddress:serverport/siteadmin`
+1. Druk op het pictogram **[!UICONTROL Tools]** in de bovenzijde van het scherm
+1. Ga vanuit de linkerzijnavigatieregel naar **[!UICONTROL Replication - Agents on Author]** en dubbelklik **[!UICONTROL Default Agent]**.
+   * U kunt de standaard ook bereiken publiceert replicatieagent door rechtstreeks naar `http://serveraddress:serverport/etc/replication/agents.author/publish.html` te gaan
+1. Druk **[!UICONTROL Edit]** knoop boven de replicatierij.
+1. Ga in het volgende venster naar het tabblad **[!UICONTROL Batch]**:
    ![batchreplicatie](assets/batchreplication.png)
 1. Vorm de agent.
 
@@ -587,8 +592,21 @@ De uitgever zal alle punten uitpakken, sparen hen en rapport terug aan de auteur
 
 ## Aanvullende bronnen {#additional-resources}
 
-Voor details over het oplossen van problemen, kunt u de pagina van de Replicatie [van het](/help/sites-deploying/troubleshoot-rep.md) Oplossen van problemen lezen.
+Voor meer informatie over het oplossen van problemen, kunt u [het Oplossen van problemen Replicatie](/help/sites-deploying/troubleshoot-rep.md) pagina lezen.
 
 Voor meer informatie, heeft Adobe een reeks artikelen van de Kennisbank met betrekking tot replicatie:
 
-[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)[https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)[https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)[https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html[](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)[](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)[](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)[](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)[](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)[](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)[](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)[](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.htmlDO
+[https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.](https://helpx.adobe.com/experience-manager/kb/LimitAccessToReplicationAgents.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.](https://helpx.adobe.com/experience-manager/kb/PagePermissionsNotReplicatedWithUser.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.](https://helpx.adobe.com/experience-manager/kb/HowToUseReverseReplication.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.](https://helpx.adobe.com/experience-manager/kb/CQ5ReplicateToSpecificAgents.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/ReplicationListener.](https://helpx.adobe.com/experience-manager/kb/ReplicationListener.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-stuck.](https://helpx.adobe.com/experience-manager/kb/replication-stuck.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.](https://helpx.adobe.com/experience-manager/kb/replication-privileges-missing-after-upgrade-to-cq-5-5.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/ACLReplication.](https://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues.html)
+[htmlhttps://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.](https://helpx.adobe.com/experience-manager/kb/ACLReplication.html)
+[ ](https://helpx.adobe.com/experience-manager/kb/content-grow-due-reverse-replication.html)
+[ ](https://helpx.adobe.com/experience-manager/kb/ReplicationAgentUsingAnonUser.html)
+htmlhttps://helpx.adobe.com/experience-manager/kb/CQ53UnableToCreateJobQueueDueToMaxQueues..bij voor de op het bij het voor het bij het vinden bij het vinden van het bij het vinden van het vinden van het vinden van het

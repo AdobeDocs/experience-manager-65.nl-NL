@@ -19,39 +19,39 @@ ht-degree: 0%
 ---
 
 
-# Sites-console van gemeenschappen {#communities-sites-console}
+# Console {#communities-sites-console} voor sites van gemeenschappen
 
 De console van de Plaatsen van Gemeenschappen verleent toegang tot:
 
 * Site maken
 * Site bewerken
 * Sitebeheer
-* [Geneste groepen](/help/communities/groups.md) maken en bewerken (subgemeenschappen)
+* [Geneste groepen](/help/communities/groups.md)  maken en bewerken (subgemeenschappen)
 
-Zie [Aan de slag met AEM Communities](/help/communities/getting-started.md) om te zien hoe snel een communitysite kan worden gemaakt in de ontwerpomgeving en hoe u communitygroepen kunt maken van de auteur- en publicatieomgevingen.
+Zie [Aan de slag met AEM Communities](/help/communities/getting-started.md) om te zien hoe snel een communautaire plaats in het auteursmilieu kan worden gecreeerd, evenals hoe te om communautaire groepen van de auteur tot stand te brengen en milieu&#39;s te publiceren.
 
 >[!NOTE]
 >
->De belangrijkste menu&#39;s van Gemeenschappen voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), de malplaatjes [van de](/help/communities/sites.md)communautaire plaats, [communautaire groepsmalplaatjes](/help/communities/tools-groups.md) en [communautaire functies](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
+>De belangrijkste menu&#39;s van Gemeenschappen voor de verwezenlijking van [communautaire plaatsen](/help/communities/sites-console.md), [communautaire plaatssjablonen](/help/communities/sites.md), [communitygroepsmalplaatjes](/help/communities/tools-groups.md) en [communityfuncties](/help/communities/functions.md) zijn voor gebruik slechts in het auteursmilieu.
 
 ## Vereisten {#prerequisites}
 
-Voordat u een community-site maakt, moet u *het volgende doen* :
+Voordat u een communitysite maakt, moet u *a1/> gebruiken om:*
 
 * Zorg ervoor dat een of meer publicatie-instanties actief zijn.
-* Laat de [tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author) toe om leden en lidgroepen te beheren.
-* Identificeer de [primaire uitgever](/help/communities/deploy-communities.md#primary-publisher).
-* [Configureer replicatie](/help/communities/deploy-communities.md#replication-agents-on-author) wanneer de primaire uitgeverspoort niet de standaardinstelling is (4503).
+* Schakel de [tunnelservice](/help/communities/deploy-communities.md#tunnel-service-on-author) in om leden en lidgroepen te beheren.
+* Identificeer [primaire uitgever](/help/communities/deploy-communities.md#primary-publisher).
+* [Configureer ](/help/communities/deploy-communities.md#replication-agents-on-author) replicatie wanneer primaire uitgevershavens niet het gebrek is (4503).
 
 De beste praktijken, om ervoor te zorgen de plaats bereid is om vele eigenschappen te steunen, moeten de volgende stappen nemen:
 
 * Installeer het [nieuwste functiepakket](/help/communities/deploy-communities.md#latestfeaturepack).
-* Schakel [Adobe Analytics](/help/communities/analytics.md) in voor AEM Communities.
-* E- [mail configureren](/help/communities/email.md)
-* Identificeer [communautaire beheerders](/help/communities/users.md#creating-community-members).
-* [Schakel de OAuth-handler](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler) in voor aanmelden bij een sociaal netwerk.
+* Schakel [Adobe Analytics](/help/communities/analytics.md) voor AEM Communities in.
+* [e-mail](/help/communities/email.md) configureren
+* [Community Administrators](/help/communities/users.md#creating-community-members) identificeren.
+* [Schakel OAuth-](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler) handleraar in voor aanmelden bij een sociaal netwerk.
 
-## Toegang tot de console met sites van Gemeenschappen {#accessing-communities-sites-console}
+## Toegang tot console {#accessing-communities-sites-console} van Communitysites
 
 In het auteursmilieu, om de console van de Plaatsen van Gemeenschappen te bereiken:
 
@@ -59,23 +59,23 @@ In het auteursmilieu, om de console van de Plaatsen van Gemeenschappen te bereik
 
 De console van de Plaatsen van Gemeenschappen toont om het even welke bestaande communautaire plaatsen. Vanuit deze console kunnen gemeenschapssites worden gemaakt, bewerkt, beheerd en verwijderd.
 
-Als u een nieuwe communitysite wilt maken, selecteert u het pictogram **Maken** .
+Als u een nieuwe communitysite wilt maken, selecteert u het pictogram **Maken**.
 
 Als u toegang wilt krijgen tot een bestaande communitysite, ten behoeve van het ontwerpen, wijzigen, publiceren, exporteren of toevoegen van een geneste groep, selecteert u het mappictogram van de site.
 
-In de volgende afbeelding ziet u bijvoorbeeld de hoofdconsole van Communitysites met de mappen voor twee communitysites: [inschakelen](/help/communities/getting-started-enablement.md) en [inschakelen](/help/communities/getting-started.md):
+In de volgende afbeelding ziet u bijvoorbeeld de hoofdconsole van Communitysites met de mappen voor twee communitysites: [enable](/help/communities/getting-started-enablement.md) en [engageren](/help/communities/getting-started.md):
 
 ![site-console](assets/site-console.png)
 
 ## Site maken {#site-creation}
 
-De console van de plaatsverwezenlijking verstrekt een geleidelijke benadering om eigenschappen van de plaats samen te stellen die op een geselecteerde malplaatje [en montages van de](/help/communities/sites.md) communautaire plaats wordt gebaseerd.
+De console voor het maken van sites biedt een stapsgewijze benadering voor het samenstellen van functies van de site op basis van een geselecteerde [communitysjabloon](/help/communities/sites.md) en instellingen.
 
 Elke gemaakte site bevat een aanmeldingsfunctie omdat bezoekers van de site zich moeten aanmelden voordat ze inhoud kunnen posten, berichten kunnen verzenden of aan een groep kunnen deelnemen. Andere inbegrepen eigenschappen zijn gebruikersprofielen, overseinen, berichten, plaatsmenu, onderzoek, thema, en branding.
 
-Het proces wordt gelanceerd door de `Create` knoop te selecteren die bij de bovenkant van de console van de Plaatsen van Gemeenschappen wordt gevestigd.
+Het proces wordt gestart door de `Create` knoop te selecteren die bij de bovenkant van de console van de Plaatsen van Gemeenschappen wordt gevestigd.
 
-Het ontwerpproces is een reeks stappen die worden gepresenteerd als deelvensters met een set functies die moeten worden geconfigureerd (weergegeven als subdeelvensters). U kunt naar de volgende **stap of** Terug **** naar de vorige stap gaan voordat u de site in de laatste stap toewijst.
+Het ontwerpproces is een reeks stappen die worden gepresenteerd als deelvensters met een set functies die moeten worden geconfigureerd (weergegeven als subdeelvensters). Het is mogelijk om naar **Volgende** stap of **Terug** naar de vorige stap te gaan alvorens de plaats in de definitieve stap te bevestigen.
 
 ### Stap 1: Sitesjabloon {#step-site-template}
 
@@ -99,26 +99,26 @@ In het deelvenster Sjabloon site worden de titel, beschrijving, hoofdmap van sit
 
    Het hoofdpad naar de site.
 
-   De standaardhoofdmap is `/content/sites`, maar de hoofdmap kan naar een willekeurige locatie op de website worden verplaatst.
+   De standaardhoofdmap is `/content/sites`, maar de hoofdmap kan naar een willekeurige locatie binnen de website worden verplaatst.
 
 * **Basis van gemeenschapssite**
 
-   (Niet gewijzigd laten voor één taal: (Engels) Gebruik het keuzemenu om een *of meer* basistalen te kiezen uit de beschikbare talen: Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel) en Chinees (Vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+   (Niet gewijzigd laten voor één taal: (Engels) Gebruik het keuzemenu om een *of meer* basistalen te kiezen uit de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel) en Chinees (Vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de best practices die worden beschreven in [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
 * **Naam** van communautaire site:
 
    De naam van de hoofdpagina van de site die in de URL wordt weergegeven.
 
    * Controleer de naam nogmaals omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd.
-   * De basis-URL ( `https://server:port/site root/site name)` wordt onder de `Community Site Name`URL weergegeven.
+   * De basis-URL ( `https://server:port/site root/site name)` wordt onder `Community Site Name` weergegeven.
 
    * Voeg voor een geldige URL een basistaalcode + &quot;.html&quot; toe
 
       *Bijvoorbeeld*, `https://localhost:4502/content/sites/mysight/en.html`
 
-* **Menu Sjabloon** communautaire site
+* **Community Site** Templatemenu
 
-   Gebruik het keuzemenu om een beschikbare sjabloon voor een [community-site](/help/communities/tools.md)te kiezen.
+   Gebruik het keuzemenu om een beschikbare [communitysitesjabloon](/help/communities/tools.md) te kiezen.
 
 * Selecteer **Volgende**.
 
@@ -126,17 +126,17 @@ In het deelvenster Sjabloon site worden de titel, beschrijving, hoofdmap van sit
 
 Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het thema en de brandingbanner:
 
-#### COMMUNAUTAIR SITE-THEMA {#community-site-theme}
+#### THEMA VAN COMMUNAUTAIRE SITE {#community-site-theme}
 
 ![sitethema](assets/sitetheme.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site responsief en flexibel te ontwerpen. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
-Nadat de communitysite is gepubliceerd, kunt u de eigenschappen [](#modifying-site-properties) bewerken en een ander thema selecteren.
+Nadat de communitysite is gepubliceerd, is het mogelijk om de eigenschappen [te bewerken en een ander thema te selecteren.](#modifying-site-properties)
 
-#### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
+#### COMMUNAUTAIRE SITEBRANDING {#community-site-branding}
 
 ![branding van sites](assets/site-branding.png)
 
@@ -173,11 +173,11 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 >
 >Verscheidene sub-panelen van Montages staan toewijzing van een vertrouwd lid aan gematigde UGC toe, leiden groepen, of zijn contacten voor inschrijvingsmiddelen in het publicatiemilieu.
 >
->De conventie is dat [gebruikers en gebruikersgroepen](/help/communities/users.md) (leden en lidgroepen) aan de publiczijde niet in de auteursomgeving worden gedupliceerd.
+>De conventie is dat [gebruikers en gebruikersgroepen](/help/communities/users.md) (leden en lidgroepen) niet in de auteursomgeving worden gedupliceerd.
 >
 >Zo is het bij het maken van de gemeenschapssite in de auteursomgeving en het toewijzen van vertrouwde leden aan verschillende rollen noodzakelijk om lidgegevens op te halen uit de publicatieomgeving.
 >
->Dit wordt verwezenlijkt door het ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` voor het auteursmilieu toe te laten.
+>Dit wordt verwezenlijkt door ` [AEM Communities Publish Tunnel Service](/help/communities/deploy-communities.md#tunnel-service-on-author)` voor het auteursmilieu toe te laten.
 
 #### GEBRUIKERSBEHEER {#user-management}
 
@@ -185,15 +185,15 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
 >[!NOTE]
 >
->We raden u aan om websites van [gemeenschappen](/help/communities/overview.md#enablement-community) in te schakelen als private (neem contact op met uw accountvertegenwoordiger voor meer informatie).
+>Het wordt aanbevolen [communitysites inschakelen](/help/communities/overview.md#enablement-community) privé te laten zijn (neem contact op met uw accountvertegenwoordiger voor meer informatie).
 >
 >Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
 
 * **Gebruikersregistratie toestaan**
 
    Als deze optie ingeschakeld is, kunnen bezoekers van de site leden van de community worden via zelfregistratie.
-Als deze optie niet is ingeschakeld, is de site van de community *beperkt* en moeten bezoekers van de site worden toegewezen aan de groep van leden van de site van de community, een aanvraag indienen of een uitnodiging per e-mail ontvangen. Als deze optie uitgeschakeld is, mag anonieme toegang niet worden toegestaan.
-Schakel de optie voor een *privésite* van de community uit. Standaard is ingeschakeld.
+Als deze optie niet is ingeschakeld, is de site van de community *beperkt* en moeten sitebezoekers worden toegewezen aan de groep van leden van de site van de community, een aanvraag indienen of een uitnodiging per e-mail ontvangen. Als deze optie uitgeschakeld is, mag anonieme toegang niet worden toegestaan.
+Schakel de optie uit voor een *private*-communitysite. Standaard is ingeschakeld.
 
 * **Anonieme toegang toestaan**
 
@@ -209,37 +209,37 @@ De optie Standaard is uitgeschakeld.
 
 * **Sociale aanmeldingen toestaan: Facebook**
 
-   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Facebook-accountgegevens. De geselecteerde [Facebook-wolkenconfiguratie](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers worden toegevoegd aan de groep leden van de site van de gemeenschap zodra de communitysite is gemaakt.
+   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Facebook-accountgegevens. De geselecteerde [Facebook-cloudconfiguratie](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers worden toegevoegd aan de ledengroep van de site van de community nadat de communitysite is gemaakt.
 Als deze optie uitgeschakeld is, wordt geen Facebook-aanmelding weergegeven.
-Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Standaard is uitgeschakeld.
+Laat de *private*-communitysite uitgeschakeld. De optie Standaard is uitgeschakeld.
 
 * **Sociale aanmeldingen toestaan: Twitter**
 
-   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Twitter-accountgegevens. De geselecteerde [Twitter-wolkenconfiguratie](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers aan de ledengroep van de site van de community worden toegevoegd zodra de communitysite is gemaakt.
+   Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Twitter-accountgegevens. De geselecteerde [Twitter wolkenconfiguratie](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) zou moeten worden gevormd om gebruikers aan de de ledengroep van de communautaire plaats toe te voegen zodra de communautaire plaats wordt gecreeerd.
 Als deze optie uitgeschakeld is, wordt er geen Twitter-aanmelding weergegeven.
-Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Standaard is uitgeschakeld.
+Laat de *private*-communitysite uitgeschakeld. De optie Standaard is uitgeschakeld.
 
 >[!NOTE]
 >
 >**Sociale aanmeldingen toestaan**
 >
->Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](/help/sites-administering/production-ready.md)noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](/help/communities/social-login.md).
+>Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](/help/sites-administering/production-ready.md) noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](/help/communities/social-login.md).
 
-#### TAGGING {#tagging}
+#### TAGS {#tagging}
 
 ![sitetags](assets/site-tagging.png)
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door de tagnaamruimten te selecteren die eerder zijn gedefinieerd via de [tagconsole](/help/sites-administering/tags.md#tagging-console).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door Tag-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](/help/sites-administering/tags.md#tagging-console).
 
-Bovendien beperkt het selecteren van tagnaamruimten voor de site van de community de weergegeven selectie bij het definiëren van catalogi en bronnen. Zie [Tags toewijzen Hulpbronnen](/help/communities/tag-resources.md) voor belangrijke informatie.
+Bovendien beperkt het selecteren van tagnaamruimten voor de site van de community de weergegeven selectie bij het definiëren van catalogi en bronnen. Zie [Tags toewijzen Bronnen](/help/communities/tag-resources.md) voor belangrijke informatie.
 
 * tekstzoekvak: Begin te typen om tags te identificeren die op de site mogen worden gebruikt.
 
-#### ROLES {#roles}
+#### ROLLEN {#roles}
 
 ![Communautaire rollen](assets/site-admin-2.png)
 
-De [rollen van leden](/help/communities/users.md) van de gemeenschap worden toegewezen met deze montages.
+De [rollen van communityleden](/help/communities/users.md) worden toegewezen met deze montages.
 
 Het zoeken naar leden van een community is eenvoudig met &#39;type-ahead&#39;-zoekopdracht.
 
@@ -253,7 +253,7 @@ Het zoeken naar leden van een community is eenvoudig met &#39;type-ahead&#39;-zo
 
 * **Geprivilegieerde leden van de Gemeenschap**
 
-   Begin te typen om één of meerdere leden van de gemeenschap of lidgroepen te selecteren die de capaciteit moeten krijgen om nieuwe inhoud tot stand te brengen wanneer `Allow Privileged Member` is geselecteerd voor een [communautaire functie](/help/communities/functions.md).
+   Begin te typen om één of meerdere leden van de gemeenschap of lidgroepen te selecteren die de capaciteit moeten worden gegeven om nieuwe inhoud tot stand te brengen wanneer `Allow Privileged Member` voor een [communautaire functie](/help/communities/functions.md) is geselecteerd.
 
 * **Community Admins**
 
@@ -267,7 +267,7 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 * **Inhoud is vooraf gemodereerd**
 
-   Als deze optie is ingeschakeld, wordt de geposte community-inhoud pas weergegeven nadat deze is goedgekeurd door een moderator. De optie Standaard is uitgeschakeld. Voor meer informatie, zie het [Modereren van Communautaire Inhoud](/help/communities/moderate-ugc.md#premoderation).
+   Als deze optie is ingeschakeld, wordt de geposte community-inhoud pas weergegeven nadat deze is goedgekeurd door een moderator. De optie Standaard is uitgeschakeld. Voor meer informatie, zie [Moderating Community Content](/help/communities/moderate-ugc.md#premoderation).
 
 * **Markeringsdrempel voordat inhoud wordt verborgen**
 
@@ -279,7 +279,7 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 * **Analyse inschakelen**
 
-   Alleen beschikbaar wanneer Adobe Analytics is [geconfigureerd](/help/communities/analytics.md) voor functies van Communities.
+   Alleen beschikbaar wanneer Adobe Analytics [geconfigureerd](/help/communities/analytics.md) is voor functies van Communities.
 De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een extra selectiemenu weergegeven:
 
 ![voor locatieanalyse](assets/site-analytics-enable.png)
@@ -287,33 +287,33 @@ De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een e
 * **Verwijzing naar Cloud Config Framework**
 
    Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze communitysite is geconfigureerd.
-   `Communities` is het kadervoorbeeld van de Configuratie van [Analytics voor de documentatie van de Eigenschappen](/help/communities/analytics.md#aem-analytics-framework-configuration) van Communities.
+   `Communities` Dit is het kadervoorbeeld van  [Analytics Configuration for Communities ](/help/communities/analytics.md#aem-analytics-framework-configuration) Featuresdocumentation.
 
-#### VERTALING {#translation}
+#### TRANSLATION {#translation}
 
 ![site-vertaling](assets/site-translation.png)
 
 * **Machinevertaling toestaan**
 
-   Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt automatische omzetting ingeschakeld voor UGC binnen de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie Door gebruiker gegenereerde inhoud [](/help/communities/translate-ugc.md) vertalen voor informatie over het configureren van een vertaalservice met licentie voor AEM Communities. Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) voor een volledig overzicht.
+   Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt automatische omzetting ingeschakeld voor UGC binnen de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie [Door gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md) voor informatie over het configureren van een gelicentieerde vertaalservice voor AEM Communities. Zie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) voor een volledig overzicht.
 
 ![allow-machine-translatie](assets/allow-machine-translation.png)
 
 * **Machine Translation inschakelen voor geselecteerde talen**
 
-   De talen die voor machinevertaling zijn ingeschakeld, worden standaard ingesteld op de systeeminstelling die is opgegeven in de configuratie [voor](/help/communities/translate-ugc.md#translation-integration-configuration)vertaalintegratie. Deze standaardinstellingen kunnen voor deze site worden overschreven door standaardinstellingen te verwijderen en/of andere talen te selecteren in het keuzemenu.
+   De talen die voor machinevertaling worden toegelaten gebrek aan het systeem dat door [vertaalintegratieconfiguratie](/help/communities/translate-ugc.md#translation-integration-configuration) wordt gespecificeerd. Deze standaardinstellingen kunnen voor deze site worden overschreven door standaardinstellingen te verwijderen en/of andere talen te selecteren in het keuzemenu.
 
 * **Vertaalprovider kiezen**
 
-   Standaard is de serviceprovider een testservice die alleen wordt gebruikt `microsoft` voor demonstraties. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machinevertaling** toestaan zijn uitgeschakeld.
+   Standaard is de serviceprovider een proefversie die alleen `microsoft` gebruikt voor demonstratie. Als er geen licentie is voor een vertaalservicebureau, moet **Machinevertaling toestaan** zijn uitgeschakeld.
 
 * **Globale gedeelde opslag kiezen**
 
-   Voor een website met veelvoudige taalexemplaren, verstrekt een globale gedeelde opslag één enkele draad van gesprek, zichtbaar van elke taalexemplaar. Dit wordt bereikt door een van de talen te selecteren die als een taalkopie worden opgenomen. De standaardinstelling is *Geen wereldwijde gedeelde opslag*.
+   Voor een website met veelvoudige taalexemplaren, verstrekt een globale gedeelde opslag één enkele draad van gesprek, zichtbaar van elke taalexemplaar. Dit wordt bereikt door een van de talen te selecteren die als een taalkopie worden opgenomen. Standaard is *Geen globale gedeelde opslag*.
 
 * **Configuratie van vertaalprovider kiezen**
 
-   Kies een [vertaalintegratieframework](/help/sites-administering/tc-tic.md) dat voor de vertaalprovider met licentie is gemaakt.
+   Kies een [vertaalintegratieframework](/help/sites-administering/tc-tic.md) dat is gemaakt voor de vertaalprovider met licentie.
 
 * **Selecteer de vertaalopties voor uw communitysite**
 
@@ -326,11 +326,12 @@ De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een e
    * **Alleen selectie vertalen**
 
       Als deze optie is geselecteerd, wordt naast elke advertentie een vertaaloptie weergegeven waarmee afzonderlijke posts kunnen worden vertaald in de basistaal van de pagina.
-Standaard is *geselecteerd*.
+Standaard is *selected*.
 
 * **Persistopties selecteren**
 
-   * **Vertaal bijdragen op verzoek van de gebruiker en blijf daarna** Indien geselecteerd, wordt de inhoud niet vertaald tot een verzoek wordt gedaan. Nadat de vertaling is vertaald, wordt de vertaling opgeslagen in de opslagplaats.
+   * **Vertaal bijdragen op verzoek van de gebruiker en blijf**
+daarna bestaanAls geselecteerd, wordt de inhoud niet vertaald tot een verzoek wordt gedaan. Nadat de vertaling is vertaald, wordt de vertaling opgeslagen in de opslagplaats.
 
       Standaard is *niet geselecteerd*.
 
@@ -350,25 +351,26 @@ Standaard is *geselecteerd*.
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
 
-#### UITSCHAKELING {#enablement}
+#### INSCHAKELEN {#enablement}
 
 ![locatienablement](assets/site-enablement.png)
 
-De `ENABLEMENT`montages zijn van toepassing wanneer het gekozen malplaatje van de communautaire plaats de [toewijzingsfunctie](/help/communities/functions.md#assignments-function)omvat, die beschikbaar is wanneer de enablement eigenschappen vergunning en [gevormd](/help/communities/enablement.md)zijn. De verwijzingsplaatssjabloon die de toewijzingsfunctie omvat is `Reference Structured Learning Site Template.`
+De `ENABLEMENT`montages zijn van toepassing wanneer het gekozen malplaatje van de communautaire plaats [toewijzingsfunctie](/help/communities/functions.md#assignments-function) omvat, die beschikbaar is wanneer de enablement eigenschappen vergunning en [configured](/help/communities/enablement.md) hebben. De verwijzingsplaatssjabloon die de toewijzingsfunctie omvat is `Reference Structured Learning Site Template.`
 
-* **Enablement Managers**(Vereist) Slechts zijn de leden van de `Community Enablementmanagers` groep beschikbaar om worden geselecteerd om deze enablement gemeenschap te beheren. Enablement managers zijn verantwoordelijk voor het toewijzen van leden aan bronnen. Zie ook Gebruikers en gebruikersgroepen [beheren](/help/communities/users.md).
+* **Enablement Managers**
+ (Vereist) Slechts zijn de leden van de  `Community Enablementmanagers` groep beschikbaar om worden geselecteerd om deze enablement gemeenschap te beheren. Enablement managers zijn verantwoordelijk voor het toewijzen van leden aan bronnen. Zie ook [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
 
 * **Org-id Marketing Cloud**
 
-   (optioneel) De id voor een [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics) -licentie.
+   (optioneel) De id voor een [Video Heartbone Analytics](/help/communities/analytics.md#video-heartbeat-analytics)-licentie.
 
 * Selecteer **Volgende**.
 
-### Stap 4: Communitysite maken {#step-create-communities-site}
+### Stap 4: Communitysite {#step-create-communities-site} maken
 
-Als er aanpassingen nodig zijn, maakt u deze met de knop **Terug** .
+Als er aanpassingen nodig zijn, gebruikt u de knop **Terug** om deze aan te brengen.
 
-Nadat **Maken** is geselecteerd en gestart, kan het maken van de site niet worden onderbroken.
+Als **Create** eenmaal is geselecteerd en gestart, kan het maken van de site niet worden onderbroken.
 
 Nadat de site is gemaakt:
 
@@ -387,29 +389,29 @@ Als u een communitysite wilt wijzigen, selecteert u de projectmap om deze te ope
 
 ![project](assets/site-project.png)
 
-Wanneer u de muisaanwijzer op een site of een sitekaart plaatst, worden pictogrammen weergegeven waarmee u de site kunt [bewerken in de ontwerpmodus](#authoring-site-content), de site-eigenschappen kunt [openen voor wijziging](#modifying-site-properties), de site [kunt](#publishing-the-site)publiceren, de site [kunt](#exporting-the-site)exporteren en de site [kunt](#deleting-the-site)verwijderen.
+Als u de muis boven een site houdt of een sitekaart aanraakt, worden pictogrammen weergegeven waarmee [de site kan worden bewerkt in de modus Schrijver](#authoring-site-content), [de site-eigenschappen kunnen worden geopend voor modificatie](#modifying-site-properties), [het publiceren van de site](#publishing-the-site), [het exporteren van de site](#exporting-the-site) en [het verwijderen van de site.](#deleting-the-site)
 
 ## Site-inhoud ontwerpen {#authoring-site-content}
 
-De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site` pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
+De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site`-pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
 
 ![site-inhoud](assets/site-content.png)
 
 >[!NOTE]
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](/help/sites-authoring/qg-page-authoring.md)&#39;s.
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina&#39;s](/help/sites-authoring/qg-page-authoring.md).
 
 ## Site-eigenschappen wijzigen {#modifying-site-properties}
 
 ![site bewerken](assets/edit-site.png)
 
-De eigenschappen van een bestaande site die tijdens het maken van de site zijn opgegeven, kunnen worden gewijzigd door het `Edit Site`pictogram te selecteren dat met de muis op de site wordt weergegeven.
+De eigenschappen van een bestaande site die tijdens het maken van de site zijn opgegeven, kunnen worden gewijzigd door het pictogram `Edit Site`te selecteren dat wordt weergegeven wanneer u de muis op de site plaatst.
 
-`Details of the following properties match the descriptions provided in the` [Sectie Site maken](#site-creation) .
+`Details of the following properties match the descriptions provided in the` [Site ](#site-creation) maken.
 
 ![modify-site-basicinfo](assets/modify-site-basicinfo.png)
 
-### Basis wijzigen {#modify-basic}
+### Basis {#modify-basic} wijzigen
 
 In het BASIC-deelvenster kunt u de volgende wijzigingen aanbrengen:
 
@@ -420,18 +422,18 @@ De naam van de communautaire site mag niet worden gewijzigd.
 
 Het kiezen van een verschillend malplaatje van de communautaire plaats zou geen invloed op een bestaande communautaire plaats hebben aangezien geen verbinding tussen malplaatjes en plaatsen blijft.
 
-In plaats daarvan kan de [STRUCTUUR](#modify-structure) van de site van de community worden gewijzigd.
+In plaats daarvan kan de [STRUCTUUR](#modify-structure) van de communitysite worden gewijzigd.
 
-### Structuur wijzigen {#modify-structure}
+### Structuur {#modify-structure} wijzigen
 
 In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is gemaakt op basis van de geselecteerde communitysitesjabloon. Vanuit het deelvenster kunt u het volgende doen:
 
-* Sleep extra [gemeenschapsfuncties](/help/communities/functions.md) naar de sitestructuur.
+* Sleep extra [communityfuncties](/help/communities/functions.md) naar de sitestructuur.
 * Bij een instantie van een communautaire functie in de sitestructuur:
 
    * **`gear icon`**
 
-      Bewerk instellingen, zoals de titel van de weergave en de URL-naam* en [geprivilegieerde ledengroepen](/help/communities/users.md#privilegedmembersgroups).
+      Bewerk instellingen, zoals de titel van de weergave en de URL-naam*, en [groepen van geprivilegieerde leden](/help/communities/users.md#privilegedmembersgroups).
 
    * **`trashcan icon`**
 
@@ -454,15 +456,15 @@ Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verpl
 
 >[!CAUTION]
 >
->De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
+>De groepsfunctie moet *niet* eerst of de enige functie *in de sitestructuur zijn.*
 >
->Alle andere functies, zoals de [paginafunctie](/help/communities/functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
+>Elke andere functie, zoals de [paginafunctie](/help/communities/functions.md#page-function), moet worden opgenomen en als eerste worden vermeld.
 
-#### Voorbeeld: Een catalogusfunctie toevoegen aan een community-sitestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### Voorbeeld: Een catalogusfunctie toevoegen aan een locatiestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![add-catalog-site](assets/add-catalog-site.png)
 
-### Ontwerp wijzigen {#modify-design}
+### Ontwerp {#modify-design} wijzigen
 
 In het deelvenster ONTWERP kunt u een nieuw thema toepassen:
 
@@ -471,7 +473,7 @@ In het deelvenster ONTWERP kunt u een nieuw thema toepassen:
 
    * Schuif naar de onderkant van het deelvenster om de afbeelding van het merk te wijzigen.
 
-### Instellingen wijzigen {#modify-settings}
+### Instellingen {#modify-settings} wijzigen
 
 In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder de subdeelvensters van Stap 3 van het maken van de communitysite:
 
@@ -482,19 +484,19 @@ In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder 
 * [Analyse](#analytics)
 * [Vertaling](#translation)
 
-### Miniatuur wijzigen {#modify-thumbnail}
+### Miniatuur {#modify-thumbnail} wijzigen
 
 In het deelvenster MINIATUUR kunt u een afbeelding uploaden om de site in de console Sites van Gemeenschappen weer te geven.
 
-### Inschakelen wijzigen {#modify-enablement}
+### Inschakelen {#modify-enablement} wijzigen
 
 Met het deelvenster ENABLEMENT hebt u toegang tot de instellingen die zijn opgegeven tijdens het maken van de site van de community.
 
-Zie de beschrijving van [ENABLEMENT](#enablement) .
+Zie de beschrijving [ENABLEMENT](#enablement).
 
-## De site publiceren {#publishing-the-site}
+## De site {#publishing-the-site} publiceren
 
-Nadat een communitysite net is gemaakt of gewijzigd, is het mogelijk om de site te publiceren (activeren) door het `Publish Site` pictogram te selecteren dat wordt weergegeven wanneer u de muisaanwijzer op de site plaatst.
+Nadat een communitysite net is gemaakt of gewijzigd, is het mogelijk om de site te publiceren (activeren) door het pictogram `Publish Site` te selecteren, dat verschijnt als u de muisaanwijzer op de site plaatst.
 
 ![publicatiesite](assets/publish-site.png)
 
@@ -504,17 +506,17 @@ Er verschijnt een indicatie nadat de site is gepubliceerd.
 
 ### Publiceren met geneste groepen {#publishing-with-nested-groups}
 
-Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subcommunity (genestelde groep) individueel te publiceren die gebruikend de console [van](/help/communities/groups.md)Groepen wordt gecreeerd.
+Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subcommunity (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](/help/communities/groups.md) wordt gecreeerd.
 
-## De site exporteren {#exporting-the-site}
+## De site {#exporting-the-site} exporteren
 
 ![exportlocatie](assets/export-site.png)
 
-Selecteer het exportpictogram als u de muisaanwijzer op de site plaatst, om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.
+Selecteer het exportpictogram als u de muisaanwijzer op de site plaatst om een pakket van de communitysite te maken dat zowel in [pakketbeheer](/help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.
 
 UGC is niet opgenomen in het sitepakket.
 
-## De site verwijderen {#deleting-the-site}
+## De site {#deleting-the-site} verwijderen
 
 ![deleteicon](assets/deleteicon.png)
 
@@ -524,20 +526,20 @@ Als u de communitysite wilt verwijderen, selecteert u het pictogram Site verwijd
 
 Zodra de nieuwe communautaire plaats wordt gepubliceerd, worden de nieuwe lidgroepen (gebruikersgroepen worden gecreeerd in publicatiemilieu) die de aangewezen toestemmingen hebben die voor diverse administratieve en lidrollen worden geplaatst.
 
-De naam die voor de lidgroepen wordt gemaakt, bevat de *site-naam* die in [Stap 1](#step13asitetemplate) (de naam die in de URL wordt weergegeven) aan de site is gegeven, en een unieke id om conflicten te voorkomen met gemeenschapssites en groepen die dezelfde site-naam hebben voor verschillende lokale sites.
+De naam die voor de lidgroepen is gemaakt, bevat de *site-naam* die op de site is vermeld in [Stap 1](#step13asitetemplate) (de naam die in de URL wordt weergegeven) en een unieke id om conflicten te voorkomen met gemeenschapssites en groepen die dezelfde site-naam hebben voor verschillende hoofdmappen van de site.
 
 Als de naam bijvoorbeeld &quot;enter&quot; was voor een site met de naam &quot;Getting Started Tutorial&quot;, zou de gebruikersgroep voor moderatoren het volgende zijn:
 
 * titel: Maatschappelijke experts
-* naam: community-*engid*-moderators
+* naam: community-*commit-uid*-moderators
 
 Bericht dat om het even welke leden rollen als moderatoren of groepsbeheerders terwijl het creëren van de plaats toewezen, aan de aangewezen groep zal worden toegewezen evenals aan de lidgroep toegewezen. Deze groepen en lidtoewijzingen worden gemaakt bij publicatie wanneer de nieuwe site wordt gepubliceerd.
 
-Zie Gebruikers en gebruikersgroepen [](/help/communities/users.md)beheren voor meer informatie.
+Zie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md) voor meer informatie.
 
 >[!NOTE]
 >
->Als aanmelden via sociaal netwerk [toestaan: Facebook](#user-management) is ingeschakeld, zodra de gebruikersgroep
+>Als [Sociale aanmelding toestaan: Facebook](#user-management) is ingeschakeld, zodra de gebruikersgroep
 >
 >* `community-<site-name>-<uid>-members`
 >
@@ -552,13 +554,13 @@ Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te pub
 
 * Op elke AEM-publicatie-instantie.
 * Meld u aan met beheerdersrechten.
-* Open de [webconsole](/help/sites-deploying/configuring-osgi.md).
+* Open de [Webconsole](/help/sites-deploying/configuring-osgi.md).
 
    * Bijvoorbeeld [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
-* Zoeken `Adobe Granite Login Selector Authentication Handler`.
-* Selecteer het `pencil` pictogram om de configuratie voor bewerking te openen.
-* Voer de volgende **aanmeldingspagina-toewijzingen** in:
+* `Adobe Granite Login Selector Authentication Handler` zoeken.
+* Selecteer het pictogram `pencil` om de configuratie voor bewerking te openen.
+* Voer als volgt een **Aanmeldingspagina-toewijzingen** in:
 
    `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
@@ -569,13 +571,13 @@ Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te pub
 
 ![auth-error](assets/auth-error.png)
 
-### Omleiding van verificatie testen {#test-authentication-redirection}
+### Omleiding van testverificatie {#test-authentication-redirection}
 
 Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
 
 * Blader naar de homepage van de website van de community.
 
-   * Bijvoorbeeld: [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+   * Bijvoorbeeld [https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * Selecteer Afmelden.
 * Selecteer Aanmelden.
@@ -584,9 +586,9 @@ Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communau
 
 ![testverificatie](assets/test-authentication.png)
 
-## Toegang tot communitysites vanuit de hoofdsiteconsole {#accessing-community-sites-from-main-sites-console}
+## Toegang tot communautaire sites vanuit de hoofdsiteconsole {#accessing-community-sites-from-main-sites-console}
 
-Vanuit de globale console van navigatiesites bevinden de communitysites zich in de `Community Sites` map.
+Vanuit de globale console van navigatiesites bevinden communitysites zich in de map `Community Sites`.
 
 Terwijl het mogelijk is om tot een communautaire plaats op deze manier, voor administratieve taken toegang te hebben, zou de communautaire plaats van de console van de Plaatsen van Gemeenschappen moeten worden betreden.
 

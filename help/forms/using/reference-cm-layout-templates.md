@@ -1,8 +1,8 @@
 ---
 title: Referentielettersjablonen
 seo-title: Referentielettersjablonen
-description: 'AEM Forms biedt indelingssjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
-seo-description: 'AEM Forms biedt indelingssjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
+description: 'AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
+seo-description: 'AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Correspondence Management biedt briefsjablonen in het AEM Forms-pakket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Voor het installeren van een pakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken. U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
+Correspondence Management biedt lettertypesjablonen in het AEM Forms-pakket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket. U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig
@@ -59,7 +62,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres. Een 
 
 PDF-voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
 
-## Evenwichtig links {#balanced-left}
+## Balanced Left {#balanced-left}
 
 De sjabloon Balanced Left bevat een logo links van de letter.
 
@@ -67,7 +70,7 @@ De sjabloon Balanced Left bevat een logo links van de letter.
 
 PDF-voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
 
-## Evenwichtig rechts {#balanced-right}
+## Balanced Right {#balanced-right}
 
 Een evenwichtige rechtersjabloon heeft het bedrijfslogo aan de linkerkant en biedt ruimte voor het invoeren van het geadresseerde adres op de brief zelf. De evenwichtige sjabloon Rechts bevat ook een voettekst die doorloopt wanneer uw brief meerdere pagina&#39;s heeft.
 

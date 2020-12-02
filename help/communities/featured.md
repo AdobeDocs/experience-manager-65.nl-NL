@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Functie voor aanbevolen inhoud {#featured-content-feature}
+# Kenmerk aanbevolen inhoud {#featured-content-feature}
 
 ## Inleiding {#introduction}
 
@@ -37,37 +37,37 @@ De mogelijkheid om inhoud te voorzien van functies is per component mogelijk toe
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 * Aanbevolen inhoud toevoegen aan een communitysite.
-* De montages van de configuratie voor de `Featured Content` component.
+* De montages van de configuratie voor `Featured Content` component.
 
 ## Aanbevolen inhoud toevoegen aan een pagina {#adding-featured-content-to-a-page}
 
-Als u een `Featured Content` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Featured Content`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Featured Content`
 
 en sleep de inhoud naar de juiste plaats op een pagina waar de aanbevolen inhoud moet worden weergegeven.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, wordt de `Featured Content` component als volgt weergegeven:
+Wanneer de [vereiste client-side bibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, wordt de `Featured Content`-component op deze manier weergegeven:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
 ## Aanbevolen inhoud configureren {#configuring-featured-content}
 
-Selecteer de geplaatste `Featured Content` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Featured Content` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-### Het tabblad Instellingen {#settings-tab}
+### Tabblad Instellingen {#settings-tab}
 
-Geef op het **[!UICONTROL Settings]** tabblad aan welke inhoud u wilt gebruiken:
+Geef op het tabblad **[!UICONTROL Settings]** aan welke inhoud u wilt gebruiken:
 
 * **[!UICONTROL Display Name]**
 
-   De titel voor de lijst met aanbevolen inhoud. For example `Featured Questions` or `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg blijft.
+   De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld `Featured Questions` of `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg wordt gelaten.
 
 * **[!UICONTROL Location of the Featured Content]**
 
@@ -77,7 +77,7 @@ Geef op het **[!UICONTROL Settings]** tabblad aan welke inhoud u wilt gebruiken:
 
    Het maximumaantal aanbevolen inhoud dat kan worden weergegeven. De standaardwaarde is 5.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 De capaciteit om inhoud als kenmerkende inhoud te markeren vereist moderatorvoorrechten.
 
@@ -85,16 +85,16 @@ Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen 
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Als de markering voor beweging eenmaal is gemarkeerd, verandert de markering voor beweging in `Unfeature`.
+Als de markering eenmaal is gemarkeerd als functie, verandert de markering voor beweging in `Unfeature`.
 
-Deze post wordt nu opgenomen op de pagina die de `Featured Content` component bevat.
+Deze post wordt nu opgenomen op de pagina die de component `Featured Content` bevat.
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
 `Read More` Dit is een link naar de feitelijke post.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Aanbevolen inhoud](essentials-featured.md) voor ontwikkelaars.
 
-Zie Door gebruiker gegenereerde inhoud [modereren voor informatie over het markeren van inhoud zoals aanbevolen](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor het markeren van inhoud zoals aanbevolen.

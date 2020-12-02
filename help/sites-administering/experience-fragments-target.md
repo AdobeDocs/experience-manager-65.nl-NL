@@ -25,10 +25,10 @@ ht-degree: 0%
 >
 >Voor bepaalde functies op deze pagina is de toepassing van AEM 6.5.3.0 vereist.
 >
->6.5.3.0
+>6.5.3.0.
 >
->* **U kunt nu Extern alizer-domeinen** selecteren.
-   >  **Opmerking:** De Domeinen van de externalizer zijn slechts relevant voor de inhoud van het Fragment van de Ervaring dat naar Doel wordt verzonden, en niet meta-gegevens zoals de Inhoud van de Aanbieding van de Mening.
+>* **U kunt** nu ExternAlizer-domeinen selecteren.
+   >  **Opmerking:** Externe domeinen zijn alleen relevant voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 >
 >
 6.5.2.0:
@@ -38,9 +38,9 @@ ht-degree: 0%
    >   
    * de standaardwerkruimte.
    >   * een benoemde werkruimte, opgegeven in de Cloud Configuration.
-   >   * **Opmerking:** Voor het exporteren naar specifieke werkruimten is Adobe Target Premium vereist.
+   >   * **Opmerking:Adobe Target Premium is vereist voor het** exporteren naar specifieke werkruimten.
 >
->* AEM moeten met Adobe Target worden [geïntegreerd met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+>* AEM moet [geïntegreerd zijn met Adobe Target met Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
 
 >
 >
@@ -48,7 +48,7 @@ ht-degree: 0%
 AEM 6.5.0.0 en 6.5.1.0:
 >
 >* De fragmenten AEM Experience worden geëxporteerd naar de standaardwerkruimte van Adobe Target.
->* AEM moeten met Adobe Target worden geïntegreerd volgens de instructies in het kader van [Integratie met Adobe Target](/help/sites-administering/target.md).
+>* AEM moeten worden geïntegreerd met Adobe Target volgens de instructies onder [Integratie met Adobe Target](/help/sites-administering/target.md).
 
 
 U kunt [Experience Fragments](/help/sites-authoring/experience-fragments.md), gemaakt in Adobe Experience Manager (AEM), exporteren naar Adobe Target (Doel). Zij kunnen dan als aanbiedingen in de activiteiten van het Doel worden gebruikt, om ervaringen op schaal te testen en te personaliseren.
@@ -59,7 +59,7 @@ Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van d
 * JSON: Ondersteuning voor levering van inhoud zonder kop
 * HTML &amp; JSON
 
-AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit gebeurt via Adobe I/O, waarvoor AEM met Adobe Target moeten worden [geïntegreerd met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit gebeurt via Adobe I/O, waarvoor AEM met Adobe I/O[ moet worden geïntegreerd met Adobe Target.](/help/sites-administering/integration-ims-adobe-io.md)
 
 >[!NOTE]
 >
@@ -88,24 +88,24 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 
 Er zijn verschillende acties vereist:
 
-1. U moet AEM met Adobe Target [integreren gebruikend Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-2. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u AEM Verbinding Externalzer [op de auteursinstantie](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) vormen om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
+1. U moet [AEM integreren met Adobe Target gebruikend Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+2. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie, zodat moet u [Vorm AEM Verbinding Externalzer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteursinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]
    >
-   >Voor verbinding die niet door het gebrek wordt behandeld herschrijft, is de Leverancier [van Rewriter van de Verbinding van het Fragment van de](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) Ervaring. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
+   >Voor verbinding die niet door het gebrek wordt behandeld herschrijft, is [Ervaar de Leverancier van Rewriter van de Verbinding van het Fragment ](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html) van het Fragment beschikbaar. Met dit, kunnen de aangepaste regels voor uw geval worden ontwikkeld.
 
 ## Cloudconfiguratie toevoegen {#add-the-cloud-configuration}
 
-Voordat u een fragment exporteert, moet u de **Cloud Configuration** voor **Adobe Target** toevoegen aan het fragment of de map. Hierdoor kunt u ook:
+Voordat u een fragment exporteert, moet u **Cloud Configuration** for **Adobe Target** toevoegen aan het fragment of de map. Hierdoor kunt u ook:
 
 * de indelingsoptie(s) opgeven die voor de export moet worden gebruikt
 * een doelwerkruimte selecteren als doel
 * selecteer een extern domein om verwijzingen in het Fragment van de Ervaring te herschrijven (facultatief)
 
-De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de vereiste map en/of het vereiste fragment. het productdossier zal zo nodig worden geërfd .
+De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de vereiste map en/of het vereiste fragment; het productdossier zal zo nodig worden geërfd .
 
-1. Navigeer naar de **console van de Fragmenten** van de Ervaring.
+1. Navigeer naar de **Experience Fragments** console.
 
 1. Open **Pagina-eigenschappen** voor de juiste map of het juiste fragment.
 
@@ -116,9 +116,9 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
    >
    >Als u de wolkenconfiguratie aan het Fragment van de Ervaring zelf toevoegt, wordt de configuratie geërft door alle variaties.
 
-1. Selecteer het tabblad **Cloud Services** .
+1. Selecteer het tabblad **Cloud Services**.
 
-1. Selecteer **Adobe Target** in de vervolgkeuzelijst onder Configuratie **Cloud Service** .
+1. Selecteer **Adobe Target** in de vervolgkeuzelijst onder **Configuratie Cloud Service**.
 
    >[!NOTE]
    >
@@ -128,7 +128,7 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
    >
    >[Kernonderdelen - Ervaar fragmenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
 
-   Selecteer onder **Adobe Target** :
+   Selecteer onder **Adobe Target**:
 
    * de juiste configuratie
    * de optie voor de vereiste indeling
@@ -139,13 +139,13 @@ De vereiste opties kunnen worden geselecteerd in **Pagina-eigenschappen** van de
    >
    >Het externalizer-domein is optioneel.
    >
-   > Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan een specifiek *publiceer* domein wilt richten. Voor meer details zie het [Vormen van de Verbinding External](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)van de AEM.
+   > Een AEM externalizer wordt gevormd wanneer u de uitgevoerde inhoud aan specifiek *publiceer* domein wilt richten. Voor meer details zie [Het vormen van de AEM Verbinding Externalzer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
    > Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 
    Bijvoorbeeld voor een map:
 
-   ![Map - Cloud](assets/xf-target-integration-01.png "Services-map - Cloud Services")
+   ![Map - Cloud ](assets/xf-target-integration-01.png "Services-map - Cloud Services")
 
 1. **Opslaan en sluiten**.
 
@@ -166,41 +166,41 @@ Een ervaringsfragment exporteren van AEM naar doel (na het opgeven van de cloudc
    >
    >Het moet een variant van het Web van het Fragment van de Ervaring zijn.
 
-1. Tik/klik op **Exporteren naar Adobe Target**.
+1. Tik/klik **Exporteren naar Adobe Target**.
 
    >[!NOTE]
    >
    >Als het ervaringsfragment al is geëxporteerd, selecteert u **Bijwerken in Adobe Target**.
 
-1. Tik/klik op **Exporteren zonder publiceren** of **Publiceren** naar wens.
+1. Tik/klik **Exporteren zonder publicatie** of **Publiceren** naar wens.
 
    >[!NOTE]
    >
    >Als u **Publiceren** selecteert, wordt het ervaringsfragment meteen gepubliceerd en naar Doel verzonden.
 
-1. Tik/klik op **OK** in het bevestigingsvenster.
+1. Tik/klik **OK** in het bevestigingsdialoogvenster.
 
    Het ervaringsfragment moet nu in Doel staan.
 
    >[!NOTE]
    >
-   >[Diverse details](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) van de uitvoer kunnen in de Mening **van de** Lijst van de console en de **Eigenschappen** worden gezien.
+   >[Diverse ](/help/sites-authoring/experience-fragments.md#details-of-your-experience-fragment) details van de uitvoer kunnen in de  **Mening van de** Lijst van de console en de  **Eigenschappen** worden gezien.
 
    >[!NOTE]
    >
-   >Wanneer u een Experience Fragment weergeeft in Adobe Target, is de *laatst gewijzigde* datum die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
+   >Wanneer u een Ervingsfragment in Adobe Target weergeeft, is de datum *last modified* die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
 
 >[!NOTE]
 >
->U kunt het exporteren ook vanuit de pagina-editor uitvoeren met behulp van vergelijkbare opdrachten in het menu [Pagina-informatie](/help/sites-authoring/author-environment-tools.md#page-information) .
+>U kunt het exporteren ook vanuit de paginaeditor uitvoeren met behulp van vergelijkbare opdrachten in het menu [Pagina-informatie](/help/sites-authoring/author-environment-tools.md#page-information).
 
-## Uw ervaringsfragmenten in Adobe Target gebruiken {#using-your-experience-fragments-in-adobe-target}
+## Uw ervaringsfragmenten gebruiken in Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
 Na het uitvoeren van de voorafgaande taken, toont het ervaringsfragment op de pagina van Aanbiedingen in Doel. Raadpleeg de [specifieke doeldocumentatie](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) voor meer informatie over wat u daar kunt bereiken.
 
 >[!NOTE]
 >
->Wanneer u een Experience Fragment weergeeft in Adobe Target, is de *laatst gewijzigde* datum die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
+>Wanneer u een Ervingsfragment in Adobe Target weergeeft, is de datum *last modified* die wordt weergegeven de datum waarop het fragment voor het laatst is gewijzigd in AEM, niet de datum waarop het fragment voor het laatst is geëxporteerd naar Adobe Target.
 
 ## Een ervaringsfragment verwijderen dat al naar Adobe Target is geëxporteerd {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 

@@ -31,18 +31,18 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 
-## Use {#use}
+## {#use} gebruiken
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige status
-* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live kopie met vervaging
-* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
-* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies) - Een pagina voor en na (her)vertaling
+* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
+* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live kopie met vervaging
+* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
+* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies)  - Een pagina voor en na (her)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
-### Presentatie van de verschillen {#presentation-of-differences}
+### Presentatie van verschillen {#presentation-of-differences}
 
 Ongeacht de inhoud die wordt vergeleken, blijft de presentatie van het diff gelijk.
 
@@ -75,7 +75,7 @@ De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 >
 >Bij het vergelijken van taalkopieën wordt het markeren gedeactiveerd, omdat in een vertaling alles verandert en het markeren geen nut zou hebben.
 
-### Volledig scherm en afsluiten {#fullscreen-and-exiting}
+### Volledig scherm en {#fullscreen-and-exiting} afsluiten
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
 
@@ -101,7 +101,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Het diff kan beeldomwenteling niet ontdekken.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleert u de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is verplaatst.
+   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
 
 >[!NOTE]
 >
@@ -109,4 +109,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Zie de documentatie over [de](/help/sites-developing/pagediff.md) ontwikkelaar van deze functie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden.
+>Raadpleeg de [documentatie voor ontwikkelaars](/help/sites-developing/pagediff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.

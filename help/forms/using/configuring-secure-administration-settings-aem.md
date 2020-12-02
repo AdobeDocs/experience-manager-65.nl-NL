@@ -1,6 +1,6 @@
 ---
-title: Beveiligde beheerinstellingen configureren voor AEM Forms op JEE
-seo-title: Beveiligde beheerinstellingen configureren voor AEM Forms op JEE
+title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
+seo-title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
 description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
 seo-description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Beveiligde beheerinstellingen configureren voor AEM Forms op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Beveiligde beheerinstellingen voor AEM Forms configureren op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
 
@@ -25,13 +25,13 @@ Over het algemeen gebruiken ontwikkelaars de productieomgeving niet om hun toepa
 
 Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsopties te verminderen die AEM Forms op JEE verstrekt.
 
-## Het onbruikbaar maken van niet essentiële verre toegang tot de diensten {#disabling-non-essential-remote-access-to-services}
+## Niet-essentiële externe toegang tot services {#disabling-non-essential-remote-access-to-services} uitschakelen
 
-Nadat AEM Forms op JEE worden geïnstalleerd en gevormd, zijn vele diensten beschikbaar voor verre aanroeping over ZEEP en Onderneming JavaBeans™ (EJB). De term ver, in dit geval, verwijst naar om het even welke bezoeker die netwerktoegang tot de havens van de Formaat van de ZEEP, EJB, of van het Bericht van de Actie van de Formaat (AMF) voor de toepassingsserver heeft.
+Nadat AEM Forms op JEE is geïnstalleerd en geconfigureerd, zijn veel services beschikbaar voor externe aanroeping via SOAP en Enterprise JavaBeans™ (EJB). De term extern verwijst in dit geval naar elke aanroeper die netwerktoegang heeft tot de SOAP-, EJB- of AMF-poorten (Action Message Format) voor de toepassingsserver.
 
-Hoewel de AEM Forms op de diensten JEE geldige geloofsbrieven vereisen om voor een erkende bezoeker worden overgegaan, zou u slechts verre toegang tot de diensten moeten toestaan die u ver toegankelijk moet zijn. Om beperkte toegankelijkheid te bereiken, zou u de reeks ver toegankelijke diensten tot het minimum mogelijk voor een werkend systeem moeten verminderen en dan verre aanroeping voor de extra diensten toelaten die u nodig hebt.
+Hoewel AEM Forms op de diensten JEE geldige geloofsbrieven vereisen om voor een erkende bezoeker worden overgegaan, zou u slechts verre toegang tot de diensten moeten toestaan die u ver toegankelijk moet zijn. Om beperkte toegankelijkheid te bereiken, zou u de reeks ver toegankelijke diensten tot het minimum mogelijk voor een werkend systeem moeten verminderen en dan verre aanroeping voor de extra diensten toelaten die u nodig hebt.
 
-AEM Forms op JEE-services hebben altijd minstens SOAP-toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
+AEM Forms on JEE services hebben altijd minstens SOAP-toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
 
 Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Diensten in de Console van het Beleid:
 
@@ -41,14 +41,14 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
             https://[host name]:'port'/adminui
    ```
 
-1. Klik op **Services > Toepassingen en services > Voorkeuren**.
+1. Klik **Services > Toepassingen en services > Voorkeuren**.
 1. Stel de voorkeuren in om maximaal 200 services en eindpunten op dezelfde pagina weer te geven.
-1. Klik op **Services** > **Toepassingen en services** > **Eindpuntbeheer**.
-1. Selecteer **EJB** in de lijst **Provider** en klik op **Filter**.
+1. Klik **Services** > **Toepassingen en services** > **Eindpuntbeheer**.
+1. Selecteer **EJB** in de lijst **Provider** en klik vervolgens op **Filter**.
 1. Als u alle EJB-eindpunten wilt uitschakelen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Uitschakelen**.
-1. Klik op **Volgende** en herhaal de vorige stap voor alle EJB-eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
-1. Selecteer **SOAP** in de lijst **Provider** en klik op **Filter**.
-1. Als u de eindpunten van de SOAP wilt verwijderen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Verwijderen**. Verwijder de volgende eindpunten niet:
+1. Klik **Volgende** en herhaal de vorige stap voor alle EJB eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
+1. Selecteer **SOAP** in de lijst **Provider** en klik vervolgens op **Filter**.
+1. Om de eindpunten van de ZEEP te verwijderen, selecteer de controledoos naast elk in de lijst en klik **Remove**. Verwijder de volgende eindpunten niet:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -64,9 +64,9 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Klik op **Volgende** en herhaal de vorige stap voor SOAP-eindpunten die zich niet in de bovenstaande lijst bevinden. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
+1. Klik **Volgende** en herhaal de vorige stap voor de eindpunten van de ZEEP die niet in de bovengenoemde lijst zijn. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
 
-## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
+## Niet-essentiële anonieme toegang tot services {#disabling-non-essential-anonymous-access-to-services} uitschakelen
 
 Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroeping toe voor bepaalde bewerkingen. Dit betekent dat één of meerdere verrichtingen die door de dienst worden blootgesteld als om het even welke voor authentiek verklaarde gebruiker of als geen voor authentiek verklaarde gebruiker kunnen worden aangehaald.
 
@@ -78,7 +78,7 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
 
 1. Klik op **Services > Toepassingen en services > Servicebeheer**.
 1. Klik de naam van de dienst die u (bijvoorbeeld, AuthenticationManagerService) wilt onbruikbaar maken.
-1. Klik op het tabblad **** Beveiliging, schakel de optie **Anonieme toegang toegestaan** uit en klik op **Opslaan**.
+1. Klik **Het lusje van de Veiligheid**, schrap **Anonieme Toegang Toegestane**, en klik **sparen**.
 1. Voltooi de stappen 3 en 4 voor de volgende services:
 
    * AuthenticationManagerService
@@ -107,11 +107,11 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
 
    De anonieme toegang zou voor om het even welke diensten moeten worden onbruikbaar gemaakt die niet nodig zijn. Vele interne diensten vereisen anonieme authentificatie om worden toegelaten omdat zij door potentieel om het even welke gebruiker in het systeem moeten worden aangehaald zonder vooraf geautoriseerd.
 
-## De standaard algemene time-out wijzigen {#changing-the-default-global-time-out}
+## De standaard algemene time-out {#changing-the-default-global-time-out} wijzigen
 
-Eindgebruikers kunnen zich aan AEM Forms door Workbench, het Webtoepassingen van AEM Forms, of douanetoepassingen voor authentiek verklaren die de de serverdiensten van AEM Forms aanhalen. Één globale onderbreking die wordt gebruikt om te specificeren hoe lang dergelijke gebruikers met AEM Forms (het gebruiken van een op SAML-Gebaseerde Bevestiging) kunnen in wisselwerking staan alvorens zij worden gedwongen om opnieuw voor authentiek te verklaren. De standaardinstelling is twee uur. In een productieomgeving moet de hoeveelheid tijd tot het minimaal aanvaardbare aantal minuten worden beperkt.
+Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-webtoepassingen of aangepaste toepassingen die de AEM Forms-serverservices aanroepen. Één globale onderbreking wordt geplaatst gebruikt om te specificeren hoe lang dergelijke gebruikers met AEM Forms (gebruikend een op SAML-Gebaseerde Bevestiging) kunnen interactie aangaan alvorens zij worden gedwongen om opnieuw voor authentiek te verklaren. De standaardinstelling is twee uur. In een productieomgeving moet de hoeveelheid tijd tot het minimaal aanvaardbare aantal minuten worden beperkt.
 
-### Limiet voor opnieuw verifiëren minimaliseren {#minimize-reauthentication-time-limit}
+### Limiet voor opnieuw verifiëren {#minimize-reauthentication-time-limit} minimaliseren
 
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 
@@ -119,8 +119,8 @@ Eindgebruikers kunnen zich aan AEM Forms door Workbench, het Webtoepassingen van
             https://[host name]:'port'/adminui
    ```
 
-1. Klik op **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden** importeren en exporteren.
-1. Klik op **Exporteren** om een bestand config.xml te maken met de bestaande AEM Forms-instellingen.
+1. Klik op **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren**.
+1. Klik **Exporteren** om een config.xml- dossier met de bestaande montages van AEM Forms te produceren.
 1. Open het XML-bestand in een editor en zoek de volgende gegevens:
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`
@@ -128,5 +128,5 @@ Eindgebruikers kunnen zich aan AEM Forms door Workbench, het Webtoepassingen van
 1. Wijzig de waarde in een waarde groter dan 5 (in minuten) en sla het bestand op.
 1. Navigeer in de beheerconsole naar de pagina Configuration Files importeren en exporteren.
 1. Ga de weg aan het gewijzigde config.xml- dossier in of de klik doorbladert om aan het te navigeren.
-1. Klik op **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
+1. Klik **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
 

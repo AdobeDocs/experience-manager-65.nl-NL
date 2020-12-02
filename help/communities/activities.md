@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De activiteiten van een getekend lid van de gemeenschap, zoals posten op een forum of blog, worden verzameld in een stream die op verschillende manieren kan worden gefilterd en weergegeven door de configuratie van de `Activity Streams` component.
+De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan een forum of blog, worden verzameld in een stroom die op verschillende manieren door configuratie van `Activity Streams` component kan worden gefiltreerd en getoond.
 
 De mogelijkheid om te volgen voegt nog een weergave van activiteiten toe wanneer leden van de gemeenschap belangenverklaringen volgen of de activiteiten van andere leden van de gemeenschap volgen.
 
@@ -34,25 +34,25 @@ In het document wordt beschreven:
 
 ### Activiteitsstromen toevoegen aan een pagina {#adding-activity-streams-to-a-page}
 
-Als u een `Activity Streams` component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
+Als u een component `Activity Streams` in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Activity Streams`
 
 en sleep het naar de juiste plaats op een pagina waar de activiteitenstromen moeten verschijnen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](/help/communities/basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) worden opgenomen, ziet u zo de `Activity Streams` component eruit:
+Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-activities.md#essentials-for-client-side) worden opgenomen, wordt de `Activity Streams`-component op deze manier weergegeven:
 
 ![activity-streams](assets/activity-component.png)
 
 ### Activiteitenstromen configureren {#configuring-activity-streams}
 
-Selecteer de geplaatste `Activity Streams` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Activity Streams` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![vormen](assets/configure-new.png)
 
-Geef op onder het tabblad **Gebruikersactiviteiten** op welke activiteiten u wilt weergeven:
+Geef onder het tabblad **Gebruikersactiviteiten** op welke activiteiten moeten worden weergegeven:
 
 ![gebruikersactiviteiten](assets/user-activities.png)
 
@@ -76,17 +76,17 @@ Geef op onder het tabblad **Gebruikersactiviteiten** op welke activiteiten u wil
 
    Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
-### Volgende weergave {#following-view}
+### Na weergave {#following-view}
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [agenda](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md)[](/help/communities/comments.md)en commentaren.
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [agenda](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md) en [commentaren](/help/communities/comments.md).
 
 ![volgende weergave](assets/following-activities.png)
 
-Met de knop **Volg** kunt u items volgen als activiteiten, [meldingen](/help/communities/notifications.md)of [abonnementen](/help/communities/subscriptions.md). Telkens wanneer de knop **Volgen** is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
+Met de knop **Follow** kunt u vermeldingen als activiteiten, [meldingen](/help/communities/notifications.md) of [abonnementen](/help/communities/subscriptions.md) volgen. Telkens wanneer de **Follow** knoop wordt geselecteerd, is het mogelijk om of van een selectie van een knevel te voorzien. De `Email Subscriptions` selectie is slechts aanwezig wanneer gevormd.
 
-Als er een methode van het volgende is geselecteerd, verandert de tekst van de knop in **Volgende**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
+Als een methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak, is het mogelijk om `Unfollow All` te selecteren om alle methodes van een knevel te voorzien.
 
-De knop **Volg** wordt weergegeven:
+De **Follow** knoop zal verschijnen:
 
 * Bij weergave van het profiel van een ander lid.
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs.
@@ -97,6 +97,6 @@ De knop **Volg** wordt weergegeven:
 
    * Hiermee wordt alle activiteit voor die specifieke vermelding gevolgd.
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Activiteitenstromen](/help/communities/essentials-activities.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Activiteitsstromen Essentials](/help/communities/essentials-activities.md) voor ontwikkelaars.

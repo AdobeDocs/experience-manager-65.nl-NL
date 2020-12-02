@@ -16,13 +16,13 @@ ht-degree: 14%
 ---
 
 
-# About managing Dynamic Media assets {#managing-assets}
+# Informatie over het beheren van dynamische media-elementen {#managing-assets}
 
 Het beheren van dynamische media elementen-beelden, video, en interactieve activa-nadat zij worden geupload-impliceert vele taken met inbegrip van het voorvertonen, het downloaden, of het publiceren van hen.
 
-Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen](/help/assets/viewer-presets.md) voor viewers toepassen en [Voorinstellingen](/help/assets/image-sets.md)voor afbeeldingen toepassen.
+Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen voor viewers toepassen](/help/assets/viewer-presets.md) en [Voorinstellingen voor afbeeldingen toepassen](/help/assets/image-sets.md).
 
-Algemene informatie over het beheer van middelen vindt u in [Elementen](/help/assets/manage-assets.md)beheren.
+Algemene informatie over het beheer van elementen vindt u in [Elementen beheren](/help/assets/manage-assets.md).
 
 De volgende onderwerpen beschrijven wat u moet doen om Dynamische activa van Media te beheren:
 

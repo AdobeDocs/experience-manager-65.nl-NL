@@ -12,10 +12,13 @@ discoiquuid: 23386353-b2bf-49f1-947a-dd7587bba175
 noindex: true
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 0%
 
 ---
 
 
-# Beperkingen voor back-up van PDF Generator {#pdf-generator-backup-limitations}
+# Back-upbeperkingen van de PDF Generator {#pdf-generator-backup-limitations}
 
 Er kan geen back-up worden gemaakt van de tijdelijke map die de PDF Generator gebruikt om bestanden te converteren. Hoewel de service correct wordt hersteld, kunnen gegevens verloren gaan omdat de PDF Generator de inhoud van de tijdelijke map met ingestelde intervallen controleert en wist.

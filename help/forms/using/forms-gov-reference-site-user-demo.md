@@ -16,17 +16,17 @@ ht-degree: 0%
 ---
 
 
-# We.Gov en We.Finance {#we-gov-reference-site-walkthrough}
+# We.Gov en We.Finance doorzoeken de referentiesite {#we-gov-reference-site-walkthrough}
 
 ## Voorwaarden {#pre-requisites}
 
-Opstelling de verwijzingsplaats zoals die in [Opstelling en vormt Wij.Gov en Wij.Finance verwijzingsplaats](../../forms/using/forms-install-configure-gov-reference-site.md)wordt beschreven.
+Stel de referentiesite in zoals beschreven in [De referentiesite Web.Gov en Web.Finance instellen en configureren](../../forms/using/forms-install-configure-gov-reference-site.md).
 
 ## Gebruikersartikel {#user-story}
 
 * AEM Forms
 
-   * Automatische Forms-omzetting
+   * automatede form conversion
    * Authoring
    * Formuliergegevensmodellen/gegevensbronnen
 
@@ -46,7 +46,7 @@ Opstelling de verwijzingsplaats zoals die in [Opstelling en vormt Wij.Gov en Wij
 * Adobe Analytics
 * Integratie van gegevensbron
 
-### Fictitious users and groups {#fictitious-users-and-groups}
+### Fictieve gebruikers en groepen {#fictitious-users-and-groups}
 
 Het Wij.Gov-demopakket wordt geleverd met de volgende ingebouwde fictieve gebruikers:
 
@@ -75,14 +75,14 @@ De volgende groepen zijn eveneens opgenomen:
    * Camila Santos (lid)
    * Aya Tan (lid)
 
-### Demo-overzicht: legenda {#demo-overview-terms-legend}
+### Demo-overzicht legenda {#demo-overview-terms-legend}
 
 1. **Imiteren**: Gedefinieerde gebruikers en groepen in AEM demo.
 1. **Knop**: Gekleurde rechthoek of omcirkelde pijl voor navigatie.
 1. **Klik**: Een handeling uitvoeren in het gebruikersartikel.
 1. **Koppelingen**: Deze bevindt zich boven aan het hoofdmenu op de site Web.Gov.
 1. **Gebruikersinstructies**: Een reeks numerieke stappen om door het verhaal van de gebruiker te navigeren.
-1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
+1. **Forms Portal**:  *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
 1. **Mobiele weergave**:Gebruikers van de webserver kunnen een mobiele weergave repliceren met een browser van een andere grootte.
 1. **Bureaubladweergave**: We gov-gebruikers bekijken de demo op een laptop of desktop.
 1. **Pre-screener-formulier**: Formulier op de startpagina van de website Web.Gov.
@@ -90,23 +90,23 @@ De volgende groepen zijn eveneens opgenomen:
 
    *https://&lt;aemserver>:&lt;port>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **Site** Adobe wij.Gov: *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. **Adobe in vak**: Pictogram [van](assets/bell.svg) Bell van de bovenste menubalk in AEM achtergrond.
+1. **Site** Adobe wij.Gov:  *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
+1. **Adobe in vak**: Located top menu bar  [Bell ](assets/bell.svg) iconin AEM background.
 
    *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. **E-mailclient**: Voorkeur voor het weergeven van e-mails (Gmail, Outlook)
 1. **CTA**: Oproep tot actie
 1. **Navigeren**: Een specifiek referentiepunt op de browserpagina zoeken.
-1. **AFC**: Automatische Forms-omzetting
+1. **AFC**: automatede form conversion
 
-## Automated Forms Conversion (Camila) {#automated-forms-conversion}
+## automatede form conversion (Camila) {#automated-forms-conversion}
 
 **Deze sectie**: Camila de CX Lead heeft een bestaand PDF-formulier dat is gebruikt als onderdeel van een papierproces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF-formulier gebruiken om automatisch een nieuwe, moderne Adaptieve Forms te maken.
 
-### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
+### automatede form conversion - Wij.Gov (Camila) {#automated-forms-conversion-wegov}
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
+1. Navigeer naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
 
 1. Aanmelden met:
    * **Gebruiker**: camila.santos
@@ -116,7 +116,7 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![Formulier uploaden](assets/aftia-upload-form.jpg)
 
-1. Camilla selecteert vervolgens het PDF-formulier en klikt op **Geautomatiseerde conversie** starten om het conversieproces te starten. U moet mogelijk op **Overschrijven klikken** als u het formulier hebt geconverteerd.
+1. Camilla selecteert vervolgens het PDF-formulier en klikt op **Geautomatiseerde conversie starten** om het conversieproces te starten. U moet mogelijk **Conversie overschrijven** klikken als u het formulier hebt geconverteerd.
 
    >[!NOTE]
    >
@@ -128,7 +128,7 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![Ultramarijnthema](assets/aftia-upload-conversion-settings.jpg)
 
-   Het percentage voltooide status wordt weergegeven tijdens de conversie. Als de status **Omgezet** wordt weergegeven, klikt u op de **uitvoermap** , selecteert u het aangepaste formulier en klikt u op **Bewerken** om het geconverteerde formulier te openen.
+   Het percentage voltooide status wordt weergegeven tijdens de conversie. Als de status **Converted** heeft weergegeven, klikt u op de map **output**, selecteert u het aangepaste formulier en klikt u op **Edit** om het geconverteerde formulier te openen.
 
 1. Camilla controleert vervolgens het formulier en controleert of alle velden aanwezig zijn
 
@@ -146,7 +146,7 @@ De volgende groepen zijn eveneens opgenomen:
 
 **Deze sectie**: Nadat het document is geconverteerd en een adaptieve vorm heeft geproduceerd, moet Camila het adaptieve formulier vervolgens verbinden met een gegevensbron.
 
-1. Camila opent de eigenschappen op het formulier dat is geconverteerd naar [Automated Forms Conversion - We.Gov](#automated-forms-conversion-wegov).
+1. Camila opent de eigenschappen op de vorm die in [Automatede form conversion - wij.Gov](#automated-forms-conversion-wegov) werd omgezet.
 
 1. In Camila selecteert u vervolgens Formuliermodel > Formuliergegevensmodel selecteren in het vervolgkeuzemenu Selecteert de FDM voor inschrijving via Web.gov in de lijst met opties.
 
@@ -154,14 +154,14 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![FDM-selectie](assets/aftia-select-fdm.jpg)
 
-1. Camila klikt op de **uitvoermap** , selecteert het aangepaste formulier en klikt op **Bewerken** om het ingevulde We.Gov-formulier te openen.
-1. Camila selecteert een adaptief formulierveld en klikt op pictogram ![](assets/configure-icon.svg)Configureren. Ze maakt een binding met de entiteiten van het formuliergegevensmodel met het veld **Bindverwijzing** . Ze herhaalt deze stap voor alle velden in het adaptieve formulier.
+1. Camila klikt op de map **output**, selecteert het aangepaste formulier en klikt op **Edit** om het voltooide Web.Gov-formulier te openen.
+1. Camila selecteert een adaptief formulierveld en klikt op ![Pictogram configureren](assets/configure-icon.svg). Ze maakt binding met de formuliergegevensmodelentiteiten met het veld **Bind Reference**. Ze herhaalt deze stap voor alle velden in het adaptieve formulier.
 
-### Toegankelijkheidstest formulier (Camila) {#form-accessibility-testing}
+### Toegankelijkheidstest van formulier (Camila) {#form-accessibility-testing}
 
 Camila controleert ook of de gemaakte inhoud correct en volledig toegankelijk is volgens de bedrijfsnormen.
 
-1. Camila klikt op de **uitvoermap** , selecteert het aangepaste formulier en klikt op **Voorvertoning** om het voltooide Web.Gov-formulier te openen.
+1. Camila klikt op de map **output**, selecteert het aangepaste formulier en klikt op **Preview** om het voltooide Web.Gov-formulier te openen.
 
 1. Hiermee opent u het tabblad Audit in het Chrome Developer Tool.
 
@@ -169,7 +169,7 @@ Camila controleert ook of de gemaakte inhoud correct en volledig toegankelijk is
 
    ![Toegankelijkheidscontrole](assets/aftia-accessibility.jpg)
 
-## Aanpassingsformulier voor mobiele weergave (Aya) {#mobile-view-demo}
+## Aangepast formulier voor mobiele weergave demo (Aya) {#mobile-view-demo}
 
 **Dit deel moet vóór de demonstratie worden uitgevoerd.**
 
@@ -201,12 +201,12 @@ Aya beantwoordt een paar vragen om haar geschiktheid te bevestigen door een kort
    >
    >Als de gebruiker meer dan $200.000/jaar verdient, komen ze niet in aanmerking.
 
-1. Klik op &quot;**Ben ik in aanmerking komend?**” button.
-1. Klik op de knop &quot;Nu **toepassen**&quot; om door te gaan.
+1. Klik op &quot;**Komt ik in aanmerking?**” button.
+1. Klik op de knop &quot;**Nu toepassen**&quot; om door te gaan.
 
    ![Koppeling Nu toepassen](/help/forms/using/assets/apply_now_link.png)
 
-### We.Gov Adaptive Form (Aya) {#aya-user-story-we-gov-adaptive-form}
+### We.Gov Adaptief formulier (Aya) {#aya-user-story-we-gov-adaptive-form}
 
 Aya vindt dat ze in aanmerking komt en vult haar aanvraag in om service aan te vragen op haar mobiele apparaat.
 
@@ -223,7 +223,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
       1. DOB
       1. E-mail
 
-1. Gebruik de volgende **dynamische logica** om de dynamische eigenschap te tonen gebruikend het **drop-down van de Status** van de Familie:
+1. Gebruik de volgende **dynamische logica** om dynamische eigenschap te demonstreren gebruikend **Familiestatus** dropdown:
 
    1. **Enkel**: Volgende paneel van skin tonen
    1. **Gehuwd**: Deelvenster echtelijk afhankelijk weergeven
@@ -240,13 +240,13 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 ## Bureaubladdemo {#desktop-demo}
 
-**Deze sectie:** Terug thuis heeft Aya de informatie gevonden die ze nodig heeft en de toepassing hervat vanaf haar bureaublad. Navigeert altijd naar de online formulierportal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
+**Deze sectie:** Terug thuis, heeft Aya de informatie gevonden die zij nodig had en hervat de toepassing van haar Desktop. Navigeert altijd naar de online formulierportal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
 
 ### Vervolg adaptief formulier (Aya) {#aya-user-story-continued-adaptive-form}
 
 **Gebruikersinstructies:**
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
+1. Navigeer naar *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
 1. Klik in de navigatiebalk op &quot;**Online services**&quot;.
 1. Selecteer in het deelvenster &quot;Concept Forms&quot; de bestaande &quot;Inschrijvingstoepassing voor gezondheidsvoordelen&quot;.
 
@@ -281,40 +281,40 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 **Gebruikersinstructies:**
 
-1. Schakel het selectievakje **Ik ga akkoord** in.
+1. Schakel het selectievakje &quot;**Ik ga akkoord**&quot; in.
 1. Klik op &quot;**Accepteren**&quot;.
 1. Blader naar de onderkant van het gereviseerde document.
 1. Klik op de gemarkeerde gele tab om het document te ondertekenen.
 
-   ![Het document](/help/forms/using/assets/sign_document_new.png) ondertekenen en het testdocument ![ondertekenen](/help/forms/using/assets/sign_test_document.png)
+   ![Onderteken het ](/help/forms/using/assets/sign_document_new.png) ![documentOnderteken het testdocument](/help/forms/using/assets/sign_test_document.png)
 
 ## Regeringsagent (George) {#government-agent-george}
 
 ![Government Agent George](/help/forms/using/assets/george_lang-1.png)
 
-**Deze sectie:** George is een zakenanalist bij het overheidsagentschap Aya vraagt om een dienst van. George heeft één dashboard waar hij alle toepassingen van het de dienstverzoek kan zien die aan hem voor overzicht zijn toegewezen.
+**Dit deel:** George is een zakenanalist bij het overheidsagentschap Aya vraagt om een dienst van. George heeft één dashboard waar hij alle toepassingen van het de dienstverzoek kan zien die aan hem voor overzicht zijn toegewezen.
 
 ### AEM Inbox (George) {#george-user-story-aem-inbox}
 
 **Gebruikersinstructies:**
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik de optie **Afmelden** of de menuoptie &quot;**Imiteren als**&quot; als u momenteel bent aangemeld bij een beheerder.
+1. Navigeer naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
+1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik &quot;**Sign Out**&quot;, of &quot;**Impersonate as**&quot;menuoptie als u momenteel met een administratieve gebruiker wordt het programma geopend.
 
    1. Aanmelden met:
 
       1. **Gebruiker:** george.lang
-      1. **Wachtwoord:** password
+      1. **Wachtwoord:** wachtwoord
    1. Of imiteren:
 
-      1. Typ &quot;**George**&quot; in het veld &quot;**Impersonate as**&quot;.
+      1. Typ &quot;**George**&quot; in het veld &quot;**Imiteren als**&quot;.
 
       1. Klik op OK om u voor te doen.
 
 
 1. Klik in de rechterbovenhoek op het pictogram Melding (bel).
-1. Klik op Alles **** weergeven om naar het Postvak IN te navigeren.
-1. Open vanuit het Postvak In de nieuwste taak &quot;**Health Benefits Application Review**&quot;.
+1. Klik &quot;**Bekijk allen**&quot;om aan Inbox te navigeren.
+1. Open vanuit het Postvak In de laatste taak &quot;**Health Benefits Application Review**&quot;.
 
    ![Evaluatie van de gezondheidsuitkeringen](/help/forms/using/assets/health_benefits.png)
 
@@ -325,7 +325,7 @@ Dankzij gegevensintegratie en geautomatiseerde workflows wordt de toepassing van
 **Gebruikersinstructies:**
 
 1. Open en inspecteer het alleen-lezen adaptieve formulier.
-1. Klik op de knop &quot;MS Dynamics **** openen&quot; om de record voor MS Dynamics in een nieuw venster te openen.
+1. Klik op de knop &quot;**MS Dynamics**&quot; openen om de MS Dynamics-record in een nieuw venster te openen.
 1. In CRM kunt u alle informatie zien kan worden bijgewerkt
 
    1. Voeg desgewenst enkele revisienotities rechtstreeks toe in Dynamiek.
@@ -340,25 +340,25 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 **Gebruikersinstructies:**
 
-1. Navigeer naar de linkerbovenhoek en klik op **Goedkeuren** om de toepassing goed te keuren.
+1. Navigeer naar de linkerbovenhoek en klik op &quot;**Goedkeuren**&quot; om de toepassing goed te keuren.
 1. In de modale modus kunt u een bericht voor de CX-lead achterlaten.
 1. Klik op Gereed.
 1. (Burgerrol) Open uw e-mailclient om de e-mail te bekijken die naar Aya is verzonden.
 
    ![De naar Aya verzonden e-mail weergeven](/help/forms/using/assets/email_client.png)
 
-## CX-lood (Camila) {#cx-lead-camila}
+## CX lood (Camila) {#cx-lead-camila}
 
 ![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**Deze sectie:** Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor ze is goedgekeurd.
+**In deze sectie:** Camila, de CX-leider, heeft een welkome telefoongesprek met Aya opgezet om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor zij is goedgekeurd.
 
-### (Optioneel) AEM Inbox en MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optioneel) AEM Inbox &amp; MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Gebruikersinstructies:**
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik de optie **Afmelden** of de menuoptie &quot;**Imiteren als**&quot; als u momenteel bent aangemeld bij een beheerder.
+1. Navigeer naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
+1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik &quot;**Sign Out**&quot;, of &quot;**Impersonate as**&quot;menuoptie als u momenteel met een administratieve gebruiker wordt het programma geopend.
 
    1. Aanmelden met:
 
@@ -366,38 +366,38 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
       1. **Wachtwoord**: password
    1. Of imiteren:
 
-      1. Typ &quot;**Camila**&quot; in het veld &quot;**Impersonate as**&quot;.
+      1. Typ &quot;**Camila**&quot; in het veld &quot;**Imiteren als**&quot;.
 
       1. Klik op OK om u voor te doen.
 
 
 1. Klik in de rechterbovenhoek op het pictogram Melding (bel).
-1. Klik op Alles **** weergeven om naar het Postvak IN te navigeren.
-1. Open vanuit het Postvak In de laatste taak **Nieuwe contactgoedkeuring**.
+1. Klik &quot;**Bekijk allen**&quot;om aan Inbox te navigeren.
+1. Open vanuit het vak Inbox de laatste taak &quot;**Nieuwe contactpersoon voor goedkeuring**&quot;.
 
 ![Nieuwe contactgoedkeuring](/help/forms/using/assets/new_contact_approval.png)
 
 **(Optioneel) Gebruikersinstructies:**
 
 1. Open en inspecteer het alleen-lezen adaptieve formulier.
-1. Klik op de knop &quot;MS Dynamics **** openen&quot; om de record voor MS Dynamics in een nieuw venster te openen.
+1. Klik op de knop &quot;**MS Dynamics**&quot; openen om de MS Dynamics-record in een nieuw venster te openen.
 1. In CRM kunt u alle informatie zien kan worden bijgewerkt
 
    1. Naar keuze, voeg direct een nieuwe vraagactiviteit in Dynamiek toe.
    1. Open de sectie &quot;**Activiteiten**&quot;.
-   1. Klik op de optie &quot;**Nieuwe Vraag** van de Telefoon&quot;.
+   1. Klik op &quot;**Nieuwe Vraag van de Telefoon**&quot;optie.
    1. Voeg telefoongesprekdetails toe.
    1. Sla het venster op en sluit het.
 
-1. Navigeer weer in AEM naar de linkerbovenhoek en klik op **Verzenden** om de toepassing te verzenden.
+1. Navigeer weer in AEM naar de linkerbovenhoek en klik op &quot;**Verzenden**&quot; om de toepassing te verzenden.
 1. In de modale modus kunt u een bericht achterlaten.
 1. Klik op Gereed.
 
-   ![Het tabblad](/help/forms/using/assets/activities_tab.png) Activiteiten ![Nieuwe contactpersoon bevestigen](/help/forms/using/assets/confirm_new_contact.png)
+   ![Activiteiten ](/help/forms/using/assets/activities_tab.png) ![tabbladNieuwe contactpersoon bevestigen](/help/forms/using/assets/confirm_new_contact.png)
 
 ## (Optioneel) Welkom Kit Citizen (Aya) {#welcome-kit-citizen-aya}
 
-**Deze sectie:** Aya ontvangt een e-mailbericht met een koppeling naar een interactieve communicatie waarin de voordelen van het bericht worden samengevat en waarin ook formuliervelden worden opgenomen die moeten worden ingevuld. Met PDF-uitkeringsinstructie bijgevoegd en koppeling naar interactieve communicatieletter in de e-mail (met hetzelfde thema/branding als de interactieve communicatie).
+**In deze sectie:** Aya ontvangt een e-mail met een koppeling naar een interactieve communicatie waarin de voordelen worden samengevat en waarin ook formuliervelden worden opgenomen die moeten worden ingevuld. Met PDF-uitkeringsinstructie bijgevoegd en koppeling naar interactieve communicatieletter in de e-mail (met hetzelfde thema/branding als de interactieve communicatie).
 
 ### Melding e-mailclient (Aya) {#aya-user-story-email-client}
 
@@ -406,7 +406,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 1. Zoek en open de welkomstkit-e-mail.
 1. Blader naar de PDF-bijlage onder aan de pagina.
 1. Klik om de PDF-bijlage te openen.
-1. Schuif een back-up in uw e-mailclient en klik op &quot;**Welkomstkit online** weergeven&quot;.
+1. Schuif een back-up in uw e-mailclient en klik op &quot;**De welkomstkit online weergeven**&quot;.
 
    1. Hiermee wordt de webkanaalversie van hetzelfde document geopend.
 
@@ -418,11 +418,11 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    *https://&lt;aemserver>:&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content?channel=web&amp;mode=preview&amp;wcmmode=disabled*
 
-   ![Welkomstvoordelen Handboek](/help/forms/using/assets/welcome_benefits_handbook.png) ![Interactieve Communicatie Verbinding](/help/forms/using/assets/interactive_communication.png)
+   ![Welkomstvoordelen ](/help/forms/using/assets/welcome_benefits_handbook.png) ![HandbookInteractive Communication Link](/help/forms/using/assets/interactive_communication.png)
 
 ## Herinnering burger (Aya) {#renewal-reminder-citizen-aya}
 
-**Deze sectie:** Camila plant ook een herinnering voor communicatie, een jaar later. (Workflowstap die automatiseert/uitvoert en e-mail verzendt).
+**In deze sectie:** Camila plant ook een herinnering voor communicatie, een jaar later. (Workflowstap die automatiseert/uitvoert en e-mail verzendt).
 
 ### Melding e-mailclient (Aya) {#aya-user-story-email-client-updated}
 
@@ -430,7 +430,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 1. Navigeer naar uw e-mailclient.
 1. Zoek en open het e-mailbericht Herinnering voor vernieuwen.
-1. Klik op de knop &quot;**Een nieuwe toepassing** verzenden&quot; om het aangepaste formulier te openen.
+1. Klik op de knop &quot;**Een nieuwe toepassing verzenden**&quot; om het aangepaste formulier te openen.
 
    1. Deze sectie wordt opzettelijk leeg gelaten ter ondersteuning van gegevens die vooraf in fase 2 worden ingevuld.
 
@@ -444,11 +444,11 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 **Deze sectie**: Camila navigeert aan de pagina van Gegevensbronnen om de gegevens te bevestigen die de server binnen het gegevensbestand van Derby heeft herhaald.
 
-1. Als de gebruikerservaring is voltooid en de gebruikersverzending is voltooid, navigeert Camila naar het tabblad Gegevensbronnen in AEM Forms (**Forms** > **Gegevensintegratie**)
+1. Als de gebruikerservaring is voltooid en de gebruiker klaar is met verzenden, navigeert Camila naar het tabblad Gegevensbronnen in AEM Forms (**Forms** > **Gegevensintegratie**)
 
 1. Camila selecteert vervolgens AEM Forms **We.gov FDM** en bewerkt vervolgens de **We.gov-inschrijving FDM**.
 
-1. Camila selecteert vervolgens de **contactpersoon** > **Leesservice** die u wilt testen.
+1. Camila selecteert vervolgens **Contact** > **Service lezen** om te testen.
 
    ![Contact opnemen met leesservice](assets/aftia-contact-read-service.jpg)
 
@@ -482,12 +482,12 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ## (Optioneel) Analytics (Camila) {#analytics-cx-lead-camila}
 
-**Deze sectie:** Camila navigeert naar een dashboard waar ze in de hele organisatie KPI&#39;s kan zien, zoals % van de burgers die beginnen met het invullen van een formulier voor een serviceaanvraag en afzien, de gemiddelde tijdsduur van indiening van een aanvraag tot een antwoord op een vraag over goedkeuring/weigering, en betrokkenheidsstatistieken voor de bonushandboeken die ze naar de burgers heeft gestuurd.
+**Dit gedeelte:** Camila navigeert naar een dashboard waar ze in de hele organisatie KPI&#39;s kan zien, zoals % van de burgers die beginnen met het invullen van een formulier voor een serviceaanvraag en het opgeven van hun aanvraag, de gemiddelde tijdsduur vanaf de indiening van een aanvraag tot de reactie op goedkeuring/weigering, en betrokkenheidsstatistieken voor de bonushandboeken die ze naar de burgers heeft gestuurd.
 
 ### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
-1. Ga naar *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Selecteer de &quot;**AEM Forms We.Gov-site**&quot; om de sitepagina&#39;s weer te geven.
+1. Navigeer naar *https://&lt;aemserver>:&lt;port>/sites.html/content*
+1. Selecteer &quot;**AEM Forms We.Gov Site**&quot; om de sitepagina&#39;s weer te geven.
 1. Selecteer een van de sitepagina (bijvoorbeeld Home) en kies &quot;**Analytics &amp; Recommendations**&quot;.
 
    ![Analyse en aanbeveling](/help/forms/using/assets/analytics_recommendation.jpg)
@@ -496,16 +496,16 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    ![Metrische Adobe Analytics-sleutel](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Terug op de pagina van de paginamening (betreden in stap 3.), kunt u de informatie van de paginamening ook bekijken door de vertoning te veranderen die punten in de &quot;Mening **van de** Lijst&quot;plaatst te bekijken.
-1. Zoek het vervolgkeuzemenu **Weergave** en selecteer **Lijstweergave**.
+1. Terug op de pagina van de paginamening (betreden in stap 3.), kunt u de informatie van de paginamening ook bekijken door de vertoning te veranderen die aan meningspunten in &quot;**de Mening van de Lijst**&quot;plaatst te bekijken.
+1. Zoek het vervolgkeuzemenu &quot;**Weergave**&quot; en selecteer &quot;**Lijstweergave**&quot;.
 
    ![Lijstweergave in het vervolgkeuzemenu Weergave](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Selecteer &#39;**Weergave-instelling**&#39; in hetzelfde menu en selecteer de kolommen die u wilt weergeven in de sectie &#39;**Analytics**&#39;.
+1. Selecteer in hetzelfde menu de optie &quot;**Weergave-instelling**&quot; en selecteer de kolommen die u wilt weergeven in de sectie &quot;**Analytics**&quot;.
 
    ![De weergave van kolommen configureren](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Klik op &quot;**Bijwerken**&quot; om de nieuwe kolommen beschikbaar te maken.
+1. Klik &quot;**Update**&quot;om de nieuwe kolommen ter beschikking te stellen.
 
    ![Nieuwe kolommen beschikbaar maken](/help/forms/using/assets/new_columns_available.jpg)
 

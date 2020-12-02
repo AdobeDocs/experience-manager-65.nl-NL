@@ -8,13 +8,16 @@ content-type: reference
 docset: aem65
 translation-type: tm+mt
 source-git-commit: f466193a259d9e8869d7f79eafda1be20869e4af
+workflow-type: tm+mt
+source-wordcount: '512'
+ht-degree: 2%
 
 ---
 
 
-# Info over de overgang van dynamische media-hybride naar dynamische media-Scene7 {#about-migrating}
+# Info over de overgang van Dynamic Media-Hybrid naar Dynamic Media-Scene7 {#about-migrating}
 
-Dynamic Media-Hybrid is een oudere versie van Dynamic Media-integratie met Adobe Experience Manager. De Hybride-versie werd voor het eerst geïntroduceerd in AEM (Adobe Experience Manager) 6.1. Hoewel Adobe de hybride modus blijft ondersteunen, heeft dit niet de voorkeursmodus (Dynamische media-Scene7 heeft de voorkeur). Het biedt ook geen ondersteuning voor nieuwe functies, zoals SmartCrop en panoramische afbeeldingen. Terwijl Dynamic Media-Scene7 dat doet.
+Dynamic Media-Hybrid is een oudere versie van Dynamic Media-integratie met Adobe Experience Manager. De Hybride versie werd voor het eerst ingevoerd in AEM (Adobe Experience Manager) 6.1. Hoewel Adobe de hybride modus blijft ondersteunen, heeft deze de voorkeur (Dynamic Media-Scene7 is de voorkeursmodus). Het biedt ook geen ondersteuning voor nieuwe functies, zoals SmartCrop en panoramische afbeeldingen. Dynamic Media-Scene7 doet dat.
 
 De extra belangrijkste verschillen tussen Dynamische media-Hybride en Dynamische media-Scene7 omvatten het volgende:
 
@@ -23,28 +26,28 @@ De extra belangrijkste verschillen tussen Dynamische media-Hybride en Dynamische
 * Het maken en opslaan van afbeeldingsuitvoeringen.
 * Configuratie en referenties van de cloud (provisioning).
 
-Er zijn twee opties beschikbaar wanneer u van Dynamische media-Hybride naar Dynamische media-Scene7 beweegt. De eerste optie is eenvoudig voorziening een nieuw geval van Dynamische media-Scene7 op AEM. De tweede optie moet uw bestaande instantie van Dynamische media-Hybride aan Dynamische media-Scene7 migreren. Met deze optie geeft u een overzicht van het tabelformulier onder de stappen en overwegingen die u tijdens het verplaatsen wilt uitvoeren.
+Er zijn twee opties beschikbaar wanneer u van Dynamic Media-Hybrid naar Dynamic Media-Scene7 gaat. De eerste optie is eenvoudig een nieuw geval van Dynamische Media-Scene7 op AEM te verstrekken. De tweede optie is het migreren van uw bestaande instantie van Dynamic Media-Hybrid naar Dynamic Media-Scene7. Met deze optie geeft u een overzicht van het tabelformulier onder de stappen en overwegingen die u tijdens het verplaatsen wilt uitvoeren.
 
 >[!IMPORTANT]
 >
->Adobe raadt u aan om een dynamische media-hybride implementatie niet naar Dynamic Media-Scene7 te migreren voor live productieinstanties.
+>Adobe raadt u aan om een Dynamic Media-Hybrid-implementatie niet te migreren naar Dynamic Media-Scene7 op liveproductieexemplaren.
 
-## Optie 1 - Levering een nieuw geval van Dynamische media-Scene7 op AEM {#provision-new-dms7}
+## Optie 1 - Een nieuwe instantie van Dynamic Media-Scene7 op AEM {#provision-new-dms7} aanbieden
 
-Overweeg eenvoudig om vers met een nieuwe, provisioned instantie van Dynamische Media-Scene7 op de Manager van de Ervaring van Adobe te beginnen. Naast het opnemen en verwerken van middelen via Dynamic Media Cloud Service wordt een Adobe-controle van het gebruik van middelen, workflows en componenten ten zeerste aanbevolen. In veel gevallen kunnen aangepaste componenten en workflows worden vervangen door nieuwere, out-of-the-box functies.
+Overweeg eenvoudig vers te beginnen met een nieuwe, provisioned instantie van Dynamic Media-Scene7 op Adobe Experience Manager. Naast het opnemen en verwerken van middelen via Dynamic Media Cloud Service wordt een Adobe-controle van het gebruik van middelen, workflows en componenten ten zeerste aanbevolen. In veel gevallen kunnen aangepaste componenten en workflows worden vervangen door nieuwere, out-of-the-box functies.
 
-## Optie 2 - Het migreren van uw bestaande instantie van Dynamische media-Hybride aan Dynamische Media-Scene7 {#process-for-migrating}
+## Optie 2 - Uw bestaande instantie van Dynamic Media-Hybrid migreren naar Dynamic Media-Scene7 {#process-for-migrating}
 
 | Stap | Taak | Overwegingen |
 |---|---|---|
 | 1 | Clone Dynamic Media-Hybrid Author-instantie. | U zou uw bestaand geval van Dynamische media-Hybride Auteur voor reservedoeleinden moeten handhaven tot de resterende stappen in dit migratieproces met succes worden voltooid. |
-| 2 | De gekloonde instantie van de Auteur van het begin op Dynamische media-Scene7 wijze. |  |
-| 3 | In de Diensten van de Wolk van de Manager van de Ervaring van Adobe, vorm Dynamische Media met Dynamische media-Scene7 geloofsbrieven. | Adobe moet de Dynamische Media-Scene7 levering goedkeuren. U zult gelijktijdige Dynamische MediaM-Hybride en Dynamische Media-Scene7 milieu&#39;s hebben die voor een beperkte tijd zullen worden gesteund. |
+| 2 | Een gekloonde instantie Auteur starten in de modus Dynamisch media-Scene7. |  |
+| 3 | Configureer in Adobe Experience Manager-Cloud Services Dynamic Media met Dynamic Media-Scene7-referenties. | Adobe moet de Dynamic Media-Scene7-voorziening goedkeuren. U hebt naast Dynamic MediaM-Hybrid ook dynamische Media-Scene7 omgevingen die gedurende een beperkte periode worden ondersteund. |
 | 4 | Maak zo nodig een migratiebundel om elementen in te voeren.<br>Verwijder de lokale PTIFF-bestanden die tijdens de eerste opname zijn gemaakt in Dynamic Media-Hybrid. | Als alle elementen momenteel beschikbaar zijn in de instantie Dynamic Media-Hybrid, bevat een kloon van die elementen al deze elementen. Daarom is geen bundel nodig. |
-| 5 | Werk de workflow voor het bijwerken van middelen uit om elementen te synchroniseren met Dynamic Media Cloud Service. | Adobe raadt u aan de updateworkflow batchgewijs uit te voeren, zodat u de gegevens kunt comprimeren. |
+| 5 | Werk de workflow voor het bijwerken van elementen uit om elementen te synchroniseren met Dynamic Media Cloud Service. | Adobe raadt u aan de updateworkflow batchgewijs uit te voeren, zodat de bestanden kunnen worden gecomprimeerd. |
 | 6 | Viewer-, afbeeldings- en videovoorinstellingen migreren. |  |
 | 7 | Doorloop de elementen waarnaar wordt verwezen in het beheer van webinhoud en werk de bijbehorende URL&#39;s bij. |  |
-| 8 | Migreer om het even welke douanewerkschema&#39;s om de nieuwe Dynamische media-Scene7 wijze (handupdates) te steunen. |  |
+| 8 | Migreer aangepaste workflows ter ondersteuning van de nieuwe Dynamic Media-Scene7-modus (handmatige updates). |  |
 | 9 | Verifieer uw upload en configuratie van het Beheer van de Inhoud van het Web. |  |
 | 10 | Na controle, krijg een goedkeuring om Dynamische media-Hybride Auteur onbruikbaar te maken (handhaaf als daling terug). |  |
 | 11 | Verwijder de Dynamic Media-Hybrid Author-instantie na ongeveer een maand succesvol gebruik van Dynamic Media-Scene7. |  |

@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 translation-type: tm+mt
 source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 1%
 
 ---
 
 
-# Controlelijsten{#checklists}
+# Controlklists{#checklists}
 
 In de volgende checklist worden enkele van de belangrijkste problemen beschreven. Lees de andere secties over Testen voor meer informatie.
 
@@ -34,4 +37,4 @@ In de volgende checklist worden enkele van de belangrijkste problemen beschreven
 
 >[!NOTE]
 >
->U kunt ook de Checklist [](/help/managing/best-practices.md) voor het beheren van projecten - Beste praktijken voor meer controlelijsten met betrekking tot het volledige project zien.
+>U kunt [Beheerde Projecten - Checklist van Beste praktijken ](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.

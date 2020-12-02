@@ -11,24 +11,27 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 translation-type: tm+mt
 source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersinterface selecteren{#selecting-your-ui}
+# Uw interface selecteren{#selecting-your-ui}
 
-Aangezien de interface met aanraakbediening de klassieke interface vervangt, moet de gebruiker of beheerder van de AEM-instantie een actief besluit nemen om de klassieke UI te blijven gebruiken. Omdat klassieke UI niet meer wordt gehandhaafd, is er geen manier voor de auteursgebruiker eenvoudig om van klassieke UI aan het equivalent in aan aanraking-toegelaten UI over te schakelen.
+Aangezien de aanraking-toegelaten UI de klassieke UI vervangt, moet de gebruiker of de beheerder van de AEM instantie een actief besluit nemen om het gebruiken van klassieke UI voort te zetten. Omdat klassieke UI niet meer wordt gehandhaafd, is er geen manier voor de auteursgebruiker eenvoudig om van klassieke UI aan het equivalent in aan aanraking-toegelaten UI over te schakelen.
 
-Voor het gemak waarmee gebruikers kunnen ontwerpen, maakt de interface met aanraakbediening het mogelijk om indien nodig over te schakelen op de klassieke interface. Zie de [Uw interface](/help/sites-authoring/select-ui.md) selecteren in de standaarddocumentatie voor ontwerpen voor meer informatie.
+Voor het gemak waarmee gebruikers kunnen ontwerpen, maakt de interface met aanraakbediening het mogelijk om indien nodig over te schakelen op de klassieke interface. Zie [Uw UI](/help/sites-authoring/select-ui.md) in de standaardAuthoring documentatie voor details selecteren.
 
 >[!NOTE]
 >
 >Instanties die zijn bijgewerkt vanaf een vorige versie behouden de klassieke interface voor het ontwerpen van pagina&#39;s.
 >
->Na verbetering, zal de paginascreatie niet automatisch geschakeld worden aan aanraking-toegelaten UI, maar u kunt dit vormen[gebruikend de configuratie](/help/sites-deploying/configuring-osgi.md) OSGi van de **Dienst** van de Wijze van de Authoring UI van WCM (de `AuthoringUIMode` dienst). Zie [UI-overschrijvingen voor de Editor](#uioverridesfortheeditor).
+>Na verbetering, zal de pagina authoring niet automatisch worden geschakeld op touch-enabled UI, maar u kunt dit vormen gebruikend [OSGi configuratie](/help/sites-deploying/configuring-osgi.md) van **WCM Authoring UI Mode Service** ( `AuthoringUIMode` dienst). Zie [UI-overschrijvingen voor de Editor](#uioverridesfortheeditor).
 
-## De standaardinterface voor uw instantie configureren {#configuring-the-default-ui-for-your-instance}
+## Standaardinterface configureren voor uw instantie {#configuring-the-default-ui-for-your-instance}
 
-Een systeembeheerder kan UI vormen die bij opstarten en login door [Wortel Toewijzing](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping)te gebruiken wordt gezien.
+Een systeembeheerder kan UI vormen die bij opstarten en login door [Toewijzing van de Wortel](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping) te gebruiken wordt gezien.
 
 Dit kan door gebruikersgebreken of zittingsmontages worden met voeten getreden.

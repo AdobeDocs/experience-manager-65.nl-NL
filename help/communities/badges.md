@@ -21,7 +21,7 @@ ht-degree: 0%
 
 # Badges-console {#badges-console}
 
-## Info Badges {#about-badges}
+## Informatie over Badges {#about-badges}
 
 De console van de Badges van de Gemeenschappen verstrekt de capaciteit om douanebadges toe te voegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de gemeenschap (toegewezen) nemen.
 
@@ -43,32 +43,32 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ![badges-homepage](assets/badges-homepage.png)
 
-## Badge maken {#create-badge}
+## Badge {#create-badge} maken
 
-Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats in `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
+Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
-Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om [gebruikerssynchronisatie](/help/communities/sync.md)te vormen.
+Als de publicatieomgeving een bedrijf van uitgevers is, is het nodig om [user sync](/help/communities/sync.md) te configureren.
 
 ![aanmaken](assets/create-badge.png)
 
 * **Afbeelding uploaden**
 
-   (*Vereist*) Een badge-afbeelding met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in de JPEG- of PNG-indeling.
+   (*Required*) Een afbeelding met een badge met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in JPEG- of PNG-indeling.
 
 * **Naam**
 
-   (*Vereist*) De badge name. Dit is de standaardnaam `Display Name` en de naam van het knooppunt in de repository. Als het knooppunt geen geldige naam voor een opslagplaats `Name` is, wordt het gewijzigd.
+   (*Required*) De merknaam. Het is de standaard `Display Name` evenals de naam van de repository node. Als `Name` geen geldige naam voor een opslagplaats is, wordt deze gewijzigd.
 
 * **Weergavenaam**
 
-   (*Optioneel*) De naam die voor de badge in de gebruikersinterface moet worden weergegeven. De standaardinstelling is de ongewijzigde tekst die voor de `Name`code wordt ingevoerd.
+   (*Optioneel*) De naam die moet worden weergegeven voor de badge in de gebruikersinterface. Standaard is de ongewijzigde tekst die voor `Name` wordt ingevoerd.
 
 * **Beschrijving**
 
-   (*Optioneel*) Een beschrijving van de badge.
+   (*Optioneel*) Een beschrijving voor de badge.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Zie [Scores en Badges](/help/communities/implementing-scoring.md)voor meer informatie over het instellen van regels voor scoring en badges.
+Zie [Scores en Badges](/help/communities/implementing-scoring.md) voor meer informatie over het instellen van regels voor scoring en badging.
 
-Zie [Ledenconsole](/help/communities/members.md)voor informatie over het beheren van badges voor leden.
+Zie [Ledenconsole](/help/communities/members.md) voor het beheren van badges voor leden.

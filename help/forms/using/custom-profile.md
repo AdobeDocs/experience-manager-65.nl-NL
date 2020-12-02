@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Een aangepast profiel maken voor HTML5-formulieren {#creating-a-custom-profile-for-html-forms}
 
-Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de `/content` map of in een submap van de `/content` map plaatsen.
+Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de map `/content` in de JCR-opslagruimte. U kunt het knooppunt rechtstreeks in de map `/content` of in een submap van de map `/content` plaatsen.
 
 Het profielknooppunt heeft de eigenschap **sling:resourceSuperType** en de standaardwaarde is **xfaforms/profile**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
 
-De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze het Verdelen manuscripten worden ook bedoeld als manuscripten **van de Renderer van het** Profiel. De profielrenderer roept de dienst van Forms OSGi aan om de gevraagde vorm terug te geven.
+De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze het Verdelen manuscripten worden ook bedoeld als **de manuscripten van Renderer van het Profiel**. De profielrenderer roept de Forms OSGi-service aan om het gevraagde formulier te genereren.
 
-Het profielscript bevindt zich in html.jsp en html.POST.jsp voor GET en POST aanvragen. U kunt een of meer bestanden kopiëren en wijzigen om uw aanpassingen te overschrijven en toe te voegen. Breng geen wijzigingen op de plaats aan. Dergelijke wijzigingen worden door de patchupdate overschreven.
+Het profielscript bevindt zich in html.jsp en html.POST.jsp voor verzoeken om GET en POST. U kunt een of meer bestanden kopiëren en wijzigen om uw aanpassingen te overschrijven en toe te voegen. Breng geen wijzigingen op de plaats aan. Dergelijke wijzigingen worden door de patchupdate overschreven.
 
 Een profiel bevat verschillende modules. De modules zijn formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, en footer.jsp.
 
@@ -61,11 +61,11 @@ Voer de volgende stappen uit om een aangepast profiel te maken:
 
 1. Navigeer naar de interface CRX DE bij URL: `https://'[server]:[port]'/crx/de` en login aan de interface met beheerdergeloofsbrieven.
 
-1. Navigeer in het linkerdeelvenster naar de locatie */inhoud/XFAFORM/profielen*.
+1. Navigeer in het linkerdeelvenster naar de locatie */content/xfaforms/profiles*.
 
-1. Kopieer de standaardinstelling voor het knooppunt en plak het knooppunt in een andere map (*/inhoud/profielen*) met de *naamstructuur*.
+1. Kopieer het standaardknooppunt en plak het knooppunt in een andere map (*/content/profiles*) met de naam *Transform*.
 
-1. Selecteer het nieuwe knooppunt, *vorm* en voeg een tekenreekseigenschap toe: *sling:resourceType* met waarde: *Transformatie/demo*.
+1. Selecteer het nieuwe knooppunt *Transform* en voeg een tekenreekseigenschap toe: *sling:resourceType* met waarde: *Transformatie/demo*.
 
 1. Klik op Alles opslaan in het werkbalkmenu om de wijzigingen op te slaan.
 
@@ -73,14 +73,14 @@ Voer de volgende stappen uit om een aangepast profiel te maken:
 
 Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit profiel. Wanneer het ontvangen van een verzoek om het nieuwe profiel, controleert CRX het bestaan van de /apps omslag voor de JSP pagina die moet worden teruggegeven. Maak de JSP-pagina in de map /apps.
 
-1. Navigeer in het linkerdeelvenster naar de `/apps` map.
-1. Klik met de rechtermuisknop op de `/apps` map en kies een map met de naam **Transform**.
-1. Met behulp van de map **Transform** maakt u een map met de naam **demo**.
-1. Klik op de knop **Alles** opslaan.
+1. Navigeer in het linkerdeelvenster naar de map `/apps`.
+1. Klik met de rechtermuisknop op de map `/apps` en kies een map met de naam **Transform** maken.
+1. Met de map **Transform** maakt u een map met de naam **demo**.
+1. Klik op de knop **Alles opslaan**.
 1. Navigeer naar `/libs/xfaforms/profile/html.jsp` en kopieer het knooppunt **html.jsp**.
-1. Plak het **knooppunt html.jsp** in de `/apps/hrform/demo` map die hierboven met dezelfde naam **html.jsp** is gemaakt en klik op **Opslaan**.
+1. Plak **html.jsp**-knooppunt in de `/apps/hrform/demo`-map die hierboven met dezelfde naam **html.jsp** is gemaakt en klik op **Save**.
 1. Als u andere componenten van profielmanuscript hebt, volg stap 1-6 om de componenten in /apps/hrform/demo omslag te kopiëren.
 
-1. Open de URL om te controleren of het profiel is gemaakt `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
+1. Als u wilt controleren of het profiel is gemaakt, opent u URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op de auteur van de AEM-server.
+Als u uw formulieren wilt controleren, [Importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op AEM exemplaar van de serverauteur.

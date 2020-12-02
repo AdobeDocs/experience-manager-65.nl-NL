@@ -11,26 +11,29 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
 # Het kleurenschema van de interface wijzigen {#changing-the-color-scheme-of-the-interface}
 
-U kunt het kleurschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, raadpleegt u [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, zie [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Bovenste navigatiebalk {#top-navigation-bar}
 
-### Achtergrondafbeelding gebruiken {#using-background-image}
+### Achtergrondafbeelding {#using-background-image} gebruiken
 
-De navigatiebalk boven in de werkruimte van AEM-formulieren bijwerken.
+De navigatiebalk boven in de AEM Forms-werkruimte bijwerken.
 
 1. Maak een achtergrondafbeelding om de kleur bij te werken. Geef het bestand een naam als newBackground.jpg.
 1. Upload het bestand met de achtergrondafbeelding in de map /apps/ws/images met een WebDAV-client.
 
    >[!NOTE]
    >
-   >Ga voor meer informatie over WebDAV-toegang naar [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Zie [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html) voor meer informatie over WebDAV-toegang.
 
 1. Verwijs naar de nieuwe achtergrondafbeelding in /apps/ws/css/newStyle.css door de volgende stijl toe te voegen.
 
@@ -51,9 +54,9 @@ De navigatiebalk boven in de werkruimte van AEM-formulieren bijwerken.
    }
    ```
 
-## Categorieonderdeel {#category-component}
+## Categoriecomponent {#category-component}
 
-De component van de categorie toont de diverse categorieën van uw taken in het linkerpaneel. Als u de kleur wilt wijzigen, definieert u de achtergrondkleur in `.category` element van het CSS-bestand.
+De component van de categorie toont de diverse categorieën van uw taken in het linkerpaneel. Als u de kleur wilt wijzigen, definieert u de achtergrondkleur in het element `.category` van het CSS-bestand.
 
 ## Taakcomponent {#task-component}
 

@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: ed8299662139c2c2ab2fa304c9fa3448b0fce223
+source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
 workflow-type: tm+mt
-source-wordcount: '3696'
+source-wordcount: '4098'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,16 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 * Gebruikers kunnen digitale elementen sorteren in de Kaart- en kolomweergave.
 
 * [!DNL Assets] en  [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, het gebruik van schermlezers en het inschakelen van gebruikers om vergelijkbare ondersteunende hulpmiddelen (AT) te gebruiken. Zie [[!DNL Assets] verbeteringen](#assets-6570) en [[!DNL Dynamic Media] verbeteringen](#dynamic-media-6570).
+
+* De cliëntconfiguratie van het modelHTTP van de gegevens van de vorm om prestaties te optimaliseren.
+
+* Beschikbaarheid van de optie Herstellen voor elke component in de modus Lay-out
+
+* [!DNL Experience Manager] 6.5 Service Pack 7 Forms verbetert de prestaties voor:
+
+   * De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
+
+   * Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.22.5.
 
@@ -299,6 +309,48 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+
+**Adaptieve Forms**
+
+* Kan een adaptief formulier niet bewerken met de klassieke gebruikersinterface nadat [!DNL Experience Manager] Service Pack 6 (NPR-35126) is toegepast.
+
+* Als u een PDF converteert naar een adaptief formulier, kunt u geen waarde instellen voor een genest deelvenster met een formuliergegevensmodel in de indeling met tabbladen. Daarnaast zijn er problemen wanneer u een waarde voor Keuzerondjesgroepen dynamisch instelt met een statische array met behulp van de code-editor (NPR-35062).
+
+* Wanneer u Japanse tekens in een adaptieve vorm in een tekstveldcomponent invoert, kunt u meer tekens opgeven dan de maximale limiet van 35 tekens (NPR-35039).
+
+* Het adaptieve formulier geeft ongewenste parameters weer, zoals `owner` en `status`, op de pagina **[!UICONTROL Thank you]** die wordt weergegeven na het verzenden van het formulier (NPR-34989).
+
+* In het dialoogvenster [!UICONTROL File Selection] voor de component [!UICONTROL Attachment] worden de niet-ondersteunde bestandstypen ook weergegeven voor selectie. Dit leidt tot een fout tijdens het verzenden van het adaptieve formulier (NPR-34970).
+
+* Wanneer u een adaptief formulier invoegt op een [!DNL Experience Manager Sites]-pagina die tekst vóór het formulier bevat, wordt de cursorfocus direct verplaatst naar het formulier in plaats van naar de tekst vóór het formulier (NPR-34947).
+
+* [!UICONTROL Preview with Data] het vooraf invullen van een adaptief formulier met een XML-bestand met  [!DNL Experience Manager] 6.2-gegevens werkt niet correct (NPR-35087).
+
+* Wanneer u het gegevenswoordenboek voor een adaptief formulier bijwerkt, wordt het formulier niet vertaald omdat het adaptieve formulier in de cache opgeslagen waarden retourneert (NPR-34845).
+
+* Het laden van fragmenten in adaptieve vorm duurt langer omdat de cache ongeldig wordt (NPR-34567).
+
+* Tabnavigatie werkt niet correct voor schermlezers in adaptieve vorm (NPR-34544).
+
+**Correspondentenbeheer**
+
+* Kan waarden voor XML-labels met numerieke gegevens, waaronder floattype, niet opslaan als concept (NPR-35050).
+
+* Wanneer u de activa van ES3 migreert, omvatten de activa twee niet-editable wanbetalingsvoorwaarden (NPR-34972).
+
+* Wanneer u een gegevenswoordenboek in een letter bewerkt, worden in de sectie [!UICONTROL Lent Content] draaiende rechthoeken weergegeven in plaats van nuttige informatie (NPR-34853).
+
+**Interactieve communicatie**
+
+* De naam van de rollout configuratie voor Interactieve Communicatie, beschikbaar na het installeren van [!DNL Forms] toe:voegen-op pakket, dupliceert de standaard naam van de rollout configuratie (NPR-34976).
+
+**Documentbeveiliging**
+
+* Wanneer u een nieuw document beveiligingsbeleid opslaat, geeft Experience Manager Forms het foutbericht `Relative validity period is required` weer (NPR-34679).
+
+* Wanneer u een nieuw document beveiligingsbeleid opslaat, geeft Experience Manager Forms het foutbericht `Invalid filed value.Numeric value is required` weer (NPR-34678).
+
+* Documentbeveiliging kan PDF 2.0-document (CQ-4305851) niet beveiligen.
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 

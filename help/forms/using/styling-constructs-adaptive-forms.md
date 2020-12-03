@@ -10,11 +10,14 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 5a76200a573d95026e2347d2049a089d975b5619
+workflow-type: tm+mt
+source-wordcount: '2322'
+ht-degree: 2%
 
 ---
 
 
-# Constructies voor stijlen voor adaptieve formulieren{#styling-constructs-for-adaptive-forms}
+# Stijlconstructies voor adaptieve formulieren{#styling-constructs-for-adaptive-forms}
 
 ## Vereisten {#prerequisites}
 
@@ -22,9 +25,9 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten met [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies om stijlen te maken (met CSS of Minder) alleen wanneer u geen stijl kunt toepassen op componenten met [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
-## Stijlen in aangepaste formulieren aanpassen {#customizing-styles-in-adaptive-forms}
+## Stijlen aanpassen in aangepaste formulieren {#customizing-styles-in-adaptive-forms}
 
 Het LESS-framework vereenvoudigt het gebruik van hoofdletters en kleine letters om stijlen in aangepaste formulieren aan te passen. Met het framework kunt u stijlen definiëren met behulp van een set variabelen en functies (mixins). Het LESS-framework helpt de grootte van de gebundelde code te reduceren en vergroot de herbruikbaarheid ervan.
 
@@ -33,7 +36,7 @@ U kunt aangepaste formulierstijlen op de volgende manieren aanpassen:
 * Het thema wijzigen
 * Stijl van component wijzigen
 
-## Thema wijzigen {#changing-theme}
+## Thema {#changing-theme} wijzigen
 
 U kunt het thema van een adaptief formulier wijzigen om ervoor te zorgen dat de weergave ervan consistent is met de webpagina&#39;s waarop het adaptieve formulier is ingesloten.
 
@@ -51,13 +54,13 @@ Op basis van de laarzentrekker definieert de volgende set CSS-eigenschappen het 
 
 Momenteel zijn LESS-variabelen alleen voor deze eigenschappen van de verschillende elementen in een adaptieve vorm gedefinieerd.
 
-## Componentstijl wijzigen {#changing-component-style}
+## Componentstijl {#changing-component-style} wijzigen
 
 U kunt de weergave, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
 
 Als u een stijl wilt toepassen op een adaptief formulier, opent u het adaptieve formulier in voor bewerking, opent u eigenschappen van adaptieve formuliercontainer en geeft u het pad van het aangepaste CSS-bestand op op het tabblad Standaard. Standaardstijlconstructies van het adaptieve formulier die worden overschreven door de constructies in het aangepaste CSS-bestand.
 
-## Componenten {#components}
+## Onderdelen {#components}
 
 De componenten die in dit artikel worden besproken, hebben hun vooraf gedefinieerde CSS-klassen. U kunt de variabelen bewerken om de stijlen in de CSS-klassen te wijzigen. U kunt ook de gehele klasse herschrijven. In deze sectie worden de klassen binnen componenten en stijlen beschreven die u kunt wijzigen met behulp van variabelen.
 
@@ -137,7 +140,7 @@ Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijvi
 
 ## Labelstijl {#label-styling}
 
-Het HTML- **elementlabel** dat voor het veld wordt gebruikt, bevat de klassen **links** of **boven** , afhankelijk van het feit of het label zich boven of links bevindt.
+Het HTML-element **label** dat voor het veld wordt gebruikt, bevat de klassen **left** of **top**, afhankelijk van of het label zich boven of links bevindt.
 
 <table>
  <tbody>
@@ -177,11 +180,11 @@ Het HTML- **elementlabel** dat voor het veld wordt gebruikt, bevat de klassen **
  </tbody>
 </table>
 
-De CSS-regels voor het label worden toegepast met het label **guideFieldLabel** . Als u een auteur bent, schrap deze regel om uw douaneveranderingen zichtbaar te maken.
+De CSS-regels voor het label worden toegepast met het label **guideFieldLabel**. Als u een auteur bent, schrap deze regel om uw douaneveranderingen zichtbaar te maken.
 
 ## Widget-stijl {#widgets-styling}
 
-Afhankelijk van het type, bevatten widgets ook klassen. Over het algemeen bevatten widgets de `guideFieldWidget` klasse. De widgets die met HTML worden verzonden, gebruiken doorgaans de standaardinvoer voor HTML-elementen en selecteren. De opmaak wordt dienovereenkomstig toegepast. U kunt een aangepaste widget niet opmaken door de variabelen te wijzigen.
+Afhankelijk van het type, bevatten widgets ook klassen. Over het algemeen bevatten widgets de klasse `guideFieldWidget`. De widgets die met HTML worden verzonden, gebruiken doorgaans de standaardinvoer voor HTML-elementen en selecteren. De opmaak wordt dienovereenkomstig toegepast. U kunt een aangepaste widget niet opmaken door de variabelen te wijzigen.
 
 <table>
  <tbody>
@@ -236,7 +239,7 @@ Afhankelijk van het type, bevatten widgets ook klassen. Over het algemeen bevatt
   </tr>
   <tr>
    <td><p><code>widgets-line-height</code></p> </td>
-   <td>CSS lineheight-eigenschap voor de widget </td>
+   <td>CSS-lijneigenschap voor de widget </td>
   </tr>
   <tr>
    <td><p><code>widgets-padding</code></p> </td>
@@ -287,7 +290,7 @@ De opmaak voor velden met focus, verplicht en uitgeschakeld is beperkt met behul
 
 ## Help-beschrijving {#help-description}
 
-Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Korte en Lange beschrijvingscomponenten. Beide componenten hebben een gemeenschappelijke klasse `.guideHelpDescription` en een andere klasse `.long`/ `.short`, afhankelijk van het type beschrijving. De inhoud van de Hulp is ingesloten in een paragraafelement om het stileren van de beschrijving met voeten te treden. De beschrijving van de Help (zowel lang als kort) wordt gewijzigd met behulp van variabelen die beginnen met widgetshelp, zoals vermeld in de volgende tabel:
+Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Korte en Lange beschrijvingscomponenten. Beide componenten hebben een gemeenschappelijke klasse `.guideHelpDescription` en een andere klasse `.long`/ `.short`, afhankelijk van het type van beschrijving. De inhoud van de Hulp is ingesloten in een paragraafelement om het stileren van de beschrijving met voeten te treden. De beschrijving van de Help (zowel lang als kort) wordt gewijzigd met behulp van variabelen die beginnen met widgetshelp, zoals vermeld in de volgende tabel:
 
 <table>
  <tbody>
@@ -326,7 +329,7 @@ Een auteur kan de inhoud van de Hulp in de gebieden specificeren gebruikend Kort
  </tbody>
 </table>
 
-## Voorwaarden en bepalingen {#terms-and-conditions}
+## Voorwaarden {#terms-and-conditions}
 
 Met de widget Voorwaarden (TnC `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de widget aanpassen met de variabelen die in de volgende tabel worden beschreven.
 
@@ -351,7 +354,7 @@ Met de widget Voorwaarden (TnC `` ``) kunt u voorwaarden en bepalingen opgeven. 
 
 Knoppen zijn ook widgets. Hun opmaak wijkt echter enigszins af van die van de widgets. In adaptieve vormen vormt een van de volgende vormen een knop:
 
-* [inputtype = text]
+* input[type = text]
 * button
 * element with class.button
 
@@ -638,7 +641,7 @@ Hier volgt de HTML-code voor het tabnavigatorelement (vergelijkbaar met de tabbl
 
 `</div>`
 
-U kunt de stijl van de navigator veranderen gebruikend CSS regels die de elementen gebruikend **afstammende** selecteurs selecteren. Als u bijvoorbeeld een stijl voor tekstdecoratie wilt toevoegen aan het ankerlabel:
+U kunt de opmaak van de navigator wijzigen met CSS-regels die de elementen selecteren met behulp van **afstammende** kiezers. Als u bijvoorbeeld een stijl voor tekstdecoratie wilt toevoegen aan het ankerlabel:
 
 Tabnavigator bovenaan:
 
@@ -748,7 +751,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr>
   <tr>
    <td><p><code>tabs-hover-font-color</code></p> </td>
-   <td><p>Fontkleur voor de tab bij aanwijzen</p> </td>
+   <td><p>Fontkleur voor tab bij aanwijzen</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-active-bg-color</code></p> </td>
@@ -885,7 +888,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
  </tbody>
 </table>
 
-## Opmaak voor deelvensters {#panel-styling}
+## Opmaak van deelvenster {#panel-styling}
 
 Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
 
@@ -914,7 +917,7 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
   </tr>
   <tr>
    <td><p><code>panel-font-color</code></p> </td>
-   <td><p>Lettertypekleur voor de deelvenstertekst<br /> </p> </td>
+   <td><p>Lettertypekleur voor de paneeltekst<br /> </p> </td>
   </tr>
   <tr>
    <td><p><code>panel-padding</code></p> </td>
@@ -939,13 +942,13 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
  </tbody>
 </table>
 
-Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Er `` `` is geen afzonderlijke opmaakcomponent voor de inhoud. De beschreven variabelen worden zowel op de navigator als op de inhoud toegepast.
+Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Er is `` `` geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden zowel op de navigator als op de inhoud toegepast.
 
 Het bovenste deelvenster (RootPanel) heeft deze klasse niet.
 
 ## Mobiele stijl {#mobile-styling}
 
-## Kopbalk {#header-bar}
+## Koptekstbalk {#header-bar}
 
 Deze variabelen beïnvloeden de kopbalbar die op een mobiel apparaat of kleine het schermapparaten zichtbaar is die paneeltitel en volgende en achternavigators bevatten.
 
@@ -1073,7 +1076,7 @@ Deze variabelen in de volgende tabel zijn van invloed op de vaste indeling van d
 
 ## Themaspecifieke variabele {#theme-specific-variable}
 
-Het **eenvoudige inschrijvingsthema** op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie introduceren `guide.theme.simpleEnrollment` ook een paar variabelen. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
+Het thema **Eenvoudige inschrijving** op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` introduceren ook een paar variabelen. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
 
 <table>
  <tbody>

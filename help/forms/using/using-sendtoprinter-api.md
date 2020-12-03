@@ -10,29 +10,32 @@ topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '372'
+ht-degree: 2%
 
 ---
 
 
-# De sendToPrinter-API gebruiken {#using-the-sendtoprinter-api}
+# De sendToPrinter-API {#using-the-sendtoprinter-api} gebruiken
 
 ## Overzicht {#overview}
 
-In AEM Forms, kunt u de dienst SendToPrinter gebruiken om een document naar printer te verzenden. De dienst SendToPrinter steunt de volgende druktoegangsmechanismen:
+In AEM Forms kunt u een document naar de printer verzenden met de SendToPrinter-service. De dienst SendToPrinter steunt de volgende druktoegangsmechanismen:
 
-* **Direct toegankelijke printer**`: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
+* **Direct toegankelijke printer** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **Indirect toegankelijke printer**`: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+* **Indirecte toegankelijke printer** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
    Wanneer u een document naar een printer verzendt, geeft u een van de volgende afdrukprotocollen op:
 
-   * **CUPS**`: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP**`: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD**`: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter**`: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: De uitvoerservice ondersteunt het CIFS-afdrukprotocol (Common Internet File System).
 
-## De SendToPrinter-service gebruiken {#using-sendtoprinter-service}
+## SendToPrinter Service {#using-sendtoprinter-service} gebruiken
 
 De onderstaande tabel bevat:
 
@@ -65,7 +68,7 @@ Verificatie wordt alleen ondersteund voor CIFS-afdrukken. Geef voor verificatie 
 
 1. Ga naar https://&lt;server>:&lt;port>/system/console.
 
-1. Ga naar **[!UICONTROL Hoofd]** > **[!UICONTROL Crypto Steun]**.
+1. Ga naar **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
-1. Voer onbewerkte tekst in en klik op **[!UICONTROL Beveiligen]**.
+1. Voer onbewerkte tekst in en klik op **[!UICONTROL Protect]**.
 

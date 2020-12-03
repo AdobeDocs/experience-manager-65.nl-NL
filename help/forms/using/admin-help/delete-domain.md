@@ -11,16 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
 
 
-# Een domein verwijderen {#delete-a-domain}
+# Een domein {#delete-a-domain} verwijderen
 
 Gebruik de pagina van het Beheer van het Domein om een bestaand domein als verouderd te merken.
 
 Als u een domein met de zelfde naam zoals een geschrapt domein creeert, wordt het geschrapte domein opnieuw opgenomen samen met de informatie die het bevatte. Het DefaultDom-domein kan niet worden verwijderd.
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Domeinbeheer]**.
-1. Schakel het selectievakje voor het domein dat u wilt verwijderen in, klik op **[!UICONTROL Verwijderen]** en klik op **[!UICONTROL OK]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]**.
+1. Selecteer het selectievakje voor het domein dat u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
 

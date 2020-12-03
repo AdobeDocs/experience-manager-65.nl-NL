@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 3%
 
 ---
@@ -53,13 +53,13 @@ Meer specifiek, zullen de volgende configuratieveranderingen worden uitgevoerd w
 1. De **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`)-bundel is alleen beschikbaar in **auteur**-instanties.
 
 1. Nieuwe gebruikers moeten het wachtwoord wijzigen bij de eerste aanmelding. Dit is niet van toepassing op de beheerder.
-1. **Genereren van foutopsporingsinformatie is uitgeschakeld** voor de  **Apache Java Script-handler**.
+1. **Genereer foutopsporingsinformatie uitgeschakeld** voor de  **Apache Sling Java Script Handler**.
 
 1. **Toegewezen** inhoud en  **genereren foutopsporingsinformatie uitgeschakeld voor de JSP Script-handler**   **** Apache Sling.
 
 1. Het **Day CQ WCM-filter** wordt ingesteld op `edit` op **auteur** en `disabled` op **publish**-instanties.
 
-1. **De Adobe Granite HTML Library** Manageris geconfigureerd met de volgende instellingen:
+1. De **Adobe Granite HTML Library Manager** is geconfigureerd met de volgende instellingen:
 
    1. **Miniatuur:** `enabled`
    1. **Foutopsporing:** `disabled`

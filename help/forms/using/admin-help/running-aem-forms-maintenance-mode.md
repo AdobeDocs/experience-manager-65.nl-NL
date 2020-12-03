@@ -1,8 +1,8 @@
 ---
-title: AEM-formulieren uitvoeren in de onderhoudsmodus
-seo-title: AEM-formulieren uitvoeren in de onderhoudsmodus
-description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen van AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM-formulieren in de onderhoudsmodus.
-seo-description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen van AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM-formulieren in de onderhoudsmodus.
+title: AEM formulieren uitvoeren in de onderhoudsmodus
+seo-title: AEM formulieren uitvoeren in de onderhoudsmodus
+description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM formulieren in de onderhoudsmodus.
+seo-description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM formulieren in de onderhoudsmodus.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulieren uitvoeren in de onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
+# AEM formulieren uitvoeren in onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
 
-De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen van AEM vormen, of het toepassen van een de dienstpak.
+De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak.
 
 U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de onderhoudsmodus bevindt. Dit is wat gebeurt als een proces wordt aangehaald terwijl de server op onderhoudswijze is:
 
-* Als het proces van lange duur is, wordt het toegevoegd aan het baangegevensbestand, maar is niet begonnen. Wanneer u de onderhoudsmodus afsluit, verwerkt AEM de taken met een lange levensduur in de wachtrij, zelfs als de server opnieuw is gestart in de onderhoudsmodus.
+* Als het proces van lange duur is, wordt het toegevoegd aan het baangegevensbestand, maar is niet begonnen. Wanneer u de onderhoudsmodus afsluit, verwerkt AEM formulieren de taken met een lange levensduur in de wachtrij, zelfs als de server opnieuw is gestart in de onderhoudsmodus.
 * Als het proces van korte duur is, wordt het meteen verwerkt.
 
-**AEM-formulieren plaatsen in de onderhoudsmodus**
+**AEM formulieren in de onderhoudsmodus plaatsen**
 
 1. Voer in een webbrowser de volgende gegevens in:
 
@@ -36,7 +39,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
    >
    >Als u de server sluit terwijl het onderhoudswijze is, zal het nog op onderhoudswijze zijn wanneer het opnieuw wordt begonnen. U moet de onderhoudsmodus uitschakelen wanneer u klaar bent met uw onderhoudstaken.
 
-**Controleren of AEM-formulieren worden uitgevoerd in de onderhoudsmodus**
+**Controleren of AEM formulieren worden uitgevoerd in de onderhoudsmodus**
 
 1. Voer in een webbrowser de volgende gegevens in:
 

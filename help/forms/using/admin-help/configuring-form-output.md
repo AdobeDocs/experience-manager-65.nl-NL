@@ -11,20 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
 
 # Formulieruitvoer configureren{#configuring-form-output}
 
-## Het type HTML-uitvoer opgeven dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Geef het type HTML-uitvoer op dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer formulier in de lijst Uitvoertype een van de volgende opties:
 
-   **** Volledige HTML: Het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
+   **Volledige HTML:** het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
 
-   **** Hoofdtekst van formulier: Het formulier weergeven binnen `<BODY>` -codes (geen volledige HTML-pagina).
+   **Tekst van formulier:** het formulier weergeven binnen  `<BODY>` codes (geen volledige HTML-pagina).
 
 1. Klik op Opslaan.
 
@@ -32,20 +35,20 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 1. Selecteer onder Formulieruitvoer in de lijst Renderen op een van de volgende opties:
 
-   **** Client: PDF-formulieren renderen in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM-formulieren en is alleen van toepassing op PDFForm-transformatie.
+   **Client:PDF forms renderen** in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
 
-   **** Server: PDF-formulieren genereren op de toepassingsserver.
+   **Server:PDF forms renderen** op de toepassingsserver.
 
-   **** Automatisch: Het PDF-formulier weergeven op de locatie die is opgegeven door de `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
+   **Automatisch:** het PDF-formulier weergeven op de locatie die is opgegeven door de  `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
 
 1. Klik op Opslaan.
 
-## Aanroepen van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aanroeping van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Voer de volgende stappen uit om de functie in te schakelen:
 
 1. Meld u aan bij de beheerconsole.
-1. Ga naar **Services** > **Formulieren**.
+1. Ga naar **Services** > **formulieren**.
 1. Geef het uitvoertype op als Formulierhoofdtekst.
 1. Sla de instellingen op.
 1. Declareer een JavaScript-variabele, __CUSTOM_SCRIPTS_VERSION, in de kopsectie van de HTML-code en stel de waarde ervan in op 1.

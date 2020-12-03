@@ -1,8 +1,8 @@
 ---
-title: Aanmelden bij werkstromen van AEM Forms
-seo-title: Aanmelden bij werkstromen van AEM Forms
-description: Logboeken gebruiken om fouten op te sporen in de werkstroom van AEM Forms.
-seo-description: Logboeken gebruiken om fouten op te sporen in de werkstroom van AEM Forms.
+title: Aanmelden bij AEM Forms-workflows
+seo-title: Aanmelden bij AEM Forms-workflows
+description: Gebruik logboeken om fouten in de AEM Forms-workflow op te sporen.
+seo-description: Gebruik logboeken om fouten in de AEM Forms-workflow op te sporen.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,11 +18,11 @@ ht-degree: 6%
 ---
 
 
-# Aanmelden bij werkstromen van AEM Forms{#logging-in-aem-forms-workflows}
+# Aanmelden bij AEM Forms-workflows{#logging-in-aem-forms-workflows}
 
-Workflowstappen voor formulieren bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogbestand in voor AEM Forms-workflows om de logbestanden weer te geven.
+Workflowstappen van Forms bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
 
-Standaard zijn alle logboekgegevens beschikbaar in het bestand **error.log** in de map */crx-repository/logs/* .
+Standaard zijn alle logboekgegevens beschikbaar in het bestand **error.log** in de map */crx-repository/logs/*.
 
 De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
@@ -72,26 +72,26 @@ In het volgende voorbeeld worden de logboeken voor de stap Document ondertekenen
 Gebruik de logboeken om te evalueren dat:
 
 * U gebruikt een correcte configuratie voor het ondertekenen van Adobe.
-* De Adobe-ondertekeningsservice wordt afgesloten nadat een overeenkomst is gemaakt.
+* De Adobe Sign Service wordt afgesloten nadat een overeenkomst is gemaakt.
 * De stap Document ondertekenen sluit af met een succesbericht.
 
 Als er een uitzondering is, kunt u de volledige stacktracering bekijken om de oorzaak van de fout te evalueren.
 
 ## Foutopsporingsregistratie inschakelen voor AEM Forms-workflows {#enable-debug-logging-for-aem-forms-workflows}
 
-Voer de volgende stappen uit om het registreren van fouten voor de werkschema&#39;s van AEM Forms toe te laten:
+Voer de volgende stappen uit om het registreren van fouten voor AEM Forms-workflows in te schakelen:
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op:
 
-   https://&#39;[server]:[port]&#39;/system/console/configMgr
+   https://&#39;[server]:[poort]&#39;/system/console/configMgr
 
 1. Selecteer **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
 1. Tik op **[!UICONTROL Add new Logger.]**
 1. Selecteer **[!UICONTROL Debug]** als **[!UICONTROL Log Level]**.
 1. Geef de locatie van het logbestand op. De standaardlocatie voor het logbestand is: *logs\error.log*
-1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
+1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de kolom **[!UICONTROL Logger]**.
 
-   Als u deze stappen uitvoert, kunnen de logbestanden voor foutopsporing worden opgeslagen voor het pakket **com.adobe.granite.workflow.core** . Tik op de volgende pakketnamen **[!UICONTROL +]** en voeg deze toe aan de lijst:
+   Als u deze stappen uitvoert, kunnen de logbestanden voor foutopsporing worden opgeslagen voor het pakket **com.adobe.granite.workflow.core**. Tik **[!UICONTROL +]** en voeg de volgende pakketnamen toe aan de lijst:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

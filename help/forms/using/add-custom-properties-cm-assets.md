@@ -46,10 +46,10 @@ In dit scenario ziet u hoe u een aangepaste eigenschap kunt toevoegen aan alle e
 
 Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle elementtypen en letters:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak in de map apps een map met de naam css met een pad/structuur die lijkt op de css-map (in de map ccrui) en voer de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
@@ -57,29 +57,29 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
+      **Pad:** /libs/fd/cm/gui/content/cmmetadataproperties/commonProperties/col1/items
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
       ![Overlay-knooppunt](assets/cmmetapropertiesoverlaynode.png)
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste eigenschap in alle elementen (voorbeeld: GeoLocation) gebruikend de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Node maken**.
 
       ![Knooppunt maken in CRX](assets/itemscreatenode.png)
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** GeoLocation (of de naam die u aan deze eigenschap wilt geven)
+      **Name:** GeoLocation (of de naam die u aan deze eigenschap wilt geven)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
       ![Knooppunt maken: GeoLocation](assets/geographicallocationcreatenode.png)
 
@@ -93,9 +93,9 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
       | renderReadOnly | Boolean | true |
       | sling:resourceType | Tekenreeks | `granite/ui/components/coral/foundation/form/textfield` |
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
-1. Als u de aanpassing wilt bekijken, plaatst u de muisaanwijzer boven een element (tekst, lijst, voorwaarde of layoutfragment) of letter, klikt u op Eigenschappen **** weergeven en klikt u op **Bewerken**. Het nieuwe veld (Locatie van ontvangers) wordt weergegeven op het tabblad Standaard in de eigenschappen element/letter.
+1. Als u de aanpassing wilt bekijken, plaatst u de muisaanwijzer boven een element (tekst-, lijst-, voorwaarde- of layoutfragment) of letter, klikt u op **Eigenschappen weergeven** en klikt u op **Bewerken**. Het nieuwe veld (Locatie van ontvangers) wordt weergegeven op het tabblad Standaard in de eigenschappen element/letter.
 
    >[!NOTE]
    >
@@ -105,17 +105,18 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    >[!NOTE]
    >
-   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina met het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u dat doen.
+   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina met het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u <!--link to show / hide properties]-->.
 
 ### Scenario: Aangepaste vervolgkeuzelijsten en waarden toevoegen aan een aangepaste eigenschap/veld {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
 In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kunt toevoegen en er vervolgkeuzelijsten aan kunt toevoegen.
 
-1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. Onder het nieuwe overlayknooppunt (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items) maakt u een knooppunt voor elk van de eigenschappen (velden) waarvoor u een vervolgkeuzelijst (hier `geographicallocation`) van het type nt:unStructured moet maken.
+1. Onder het nieuwe overlayknooppunt (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
+Maak een knooppunt voor elk van de eigenschappen (velden) waarvoor u een vervolgkeuzelijst (hier `geographicallocation`) van het type nt:unStructured moet maken.
 1. Voeg de volgende eigenschappen aan de knoop (hier geografische toewijzing) toe en klik **sparen allen**:
 
    <table>
@@ -143,15 +144,15 @@ In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kun
    <tr>
       <td>sling:resourceType</td>
       <td>Tekenreeks</td>
-      <td>graniet/ui/componenten/koraal/stichting/vorm/selecteren<br /> </td>
+      <td>graniet/ui/components/koral/foundation/form/select<br /> </td>
    </tr>
    </tbody>
    </table>
 
-1. Onder bezitsknoop (hier geografische toewijzing), voeg een nieuw knooppunt met naam toe `items`. Onder de puntenknoop, voeg een knoop elk voor de waarden in drop-down toe. U kunt het beste het eerste knooppunt als leeg toevoegen, zodat dit de standaardwaarde van de vervolgkeuzelijst is en de gebruiker de optie krijgt om geen waarde voor het veld op te geven. Herhaal de volgende stappen om meerdere opties/vervolgkeuzelijsten toe te voegen:
+1. Onder bezitsknoop (hier geografische toewijzing), voeg een nieuw knooppunt met naam `items` toe. Onder de puntenknoop, voeg een knoop elk voor de waarden in drop-down toe. U kunt het beste het eerste knooppunt als leeg toevoegen, zodat dit de standaardwaarde van de vervolgkeuzelijst is en de gebruiker de optie krijgt om geen waarde voor het veld op te geven. Herhaal de volgende stappen om meerdere opties/vervolgkeuzelijsten toe te voegen:
 
-   1. Klik met de rechtermuisknop op het eigenschapknooppunt (hier geografische toewijzing) en selecteer **Maken** > **Knooppunt** maken.
-   1. Typ de naam van het veld als `item1,` behouden type als niet:ongestructureerd en klik op **OK**.
+   1. Klik met de rechtermuisknop op het eigenschapknooppunt (hier geografische toewijzing) en selecteer **Maken** > **Node maken**.
+   1. Voer een naam van het veld in als `item1,` het type behoudt als niet:ongestructureerd en klik op **OK**.
    1. Voeg de volgende eigenschappen aan de pas gecreëerde knoop (hier punt1) toe en klik dan **sparen allen**:
 
       <table>
@@ -164,7 +165,7 @@ In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kun
          <tr>
           <td>text</td>
           <td>Tekenreeks</td>
-          <td>Dit is de waarde van de drop-down optie die aan de gebruiker zichtbaar is. Laat deze leeg voor de lege waarde (standaardwaarde) of voer de waarde in, bijvoorbeeld <strong>International</strong> of <strong>Within US</strong>.<br /> </td>
+          <td>Dit is de waarde van de drop-down optie die aan de gebruiker zichtbaar is. Laat het leeg voor de lege (standaard) waarde of ga de waarde in, zoals <strong>International</strong> of <strong>Within US</strong>.<br />. </td>
          </tr>
          <tr>
           <td>value</td>
@@ -188,10 +189,10 @@ In dit scenario ziet u hoe u een aangepast tabblad, Ontvangers, kunt toevoegen a
 
 Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw elementen:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak in de map apps een map met de naam cmmetadataproperties met een pad/structuur die vergelijkbaar is met de map cmmetadataproperties (in de inhoudsmap) en voer de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de map CommetadataProperties in het volgende pad en selecteer **Overlay Node**:
+   1. Klik met de rechtermuisknop op de map cmmetadataproperties op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties`
 
@@ -199,29 +200,29 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties
+      **Pad:** /libs/fd/cm/gui/content/cmmetadataproperties
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
       ![In CRX gemaakte mappenstructuur bedekken](assets/cmmetadatapropertiesappsfolder.png)
 
-      Klik op Alles **opslaan**.
+      Klik **Alles opslaan**.
 
 1. Voeg onder de map cmmetadataproperties een knooppunt toe voor het maken van een aangepast tabblad voor alle elementen (voorbeeld: commontab) met behulp van de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map CommetadataProperties en selecteer **Maken** > **Node** maken.
+   1. Klik met de rechtermuisknop op de map cmmetadataproperties en selecteer **Maken** > **Node maken**.
 
       ![Knooppunt maken](assets/cmmetadatapropertiescreatenode.png)
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** commontab (of de naam die u aan deze eigenschap wilt geven)
+      **Name:** commontab (of de naam die u aan deze eigenschap wilt geven)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier komt het gemeenschappelijke tabblad). CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg de volgende eigenschappen toe aan het knooppunt (hier komt het algemene tabblad):
@@ -241,34 +242,34 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          <tr>
           <td>sling:resourceType</td>
           <td>Tekenreeks</td>
-          <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
+          <td>graniet/ui/components/koral/foundation/container<br /> </td>
    </tr>
          </tbody>
        </table>
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Voor de tabnode die in de laatste stap (hier gemeenschappelijke tab) is gemaakt, maakt u een knooppunt met de naam Item met de volgende stap:
 
-   1. Klik met de rechtermuisknop op het relevante knooppunt (hier op het tabblad Algemeen) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het relevante knooppunt (hier komt de komma) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** items
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik op Alles **opslaan:**
+   1. Klik **Alles opslaan:**
 
 1. In de puntenknoop u in de vorige stap (onder gemeenschappelijk lusje) creeerde, voeg een knoop voor het creëren van een kolom (hier Kolom1) in het douanetabblad (gemeenschappelijk lusje) toe gebruikend de volgende stappen (om meer kolommen toe te voegen, herhaal deze stap):
 
-   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** Column1 (Of de naam u aan de knoop wilt geven - deze naam verschijnt niet in het Gebruikersinterface.)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Voeg de volgende eigenschap toe aan het knooppunt (hier kolom1) en klik op Alles **** opslaan:
+   1. Voeg het volgende bezit aan de knoop (hier Kolom1) toe en klik dan **sparen allen**:
 
       <table>
          <tbody>
@@ -280,32 +281,32 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          <tr>
            <td>sling:resourceType</td>
            <td>Tekenreeks</td>
-           <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
+           <td>graniet/ui/components/koral/foundation/container<br /> </td>
          </tr>
          </tbody>
        </table>
 
 1. In de knoop u in de vorige stap (hier Column1) creeerde, voeg een knoop genoemd punten toe gebruikend de volgende stappen:
 
-   1. Klik met de rechtermuisknop op het knooppunt (hier Column1) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het knooppunt (hier Kolom1) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** items
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Als u een veld wilt maken op het aangepaste tabblad (hier Ontvangers), voegt u een knooppunt toe (hier GeogragraphicLocation). Deze eigenschap komt overeen met de kolom die u hebt gemaakt. Gebruik de volgende stappen om het veld te maken (als u meer velden/knooppunten wilt maken, herhaalt u deze stappen.):
 
-   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** GeogragraphicLocation (of een andere naam voor de veldeigenschap)
+      **Name:** GeogragraphicLocation (of een andere naam voor de veldeigenschap)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Voeg de volgende eigenschappen toe aan het veldknooppunt (hier GeogragraphicLocation) en klik op Alles **** opslaan.
+   1. Voeg de volgende eigenschappen toe aan het veldknooppunt (hier GeogragraphicLocation) en klik op **Alles opslaan**.
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
@@ -318,11 +319,11 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
-   Als u een bedekking voor een letter of ander element wilt maken, gebruikt u het volgende pad door [het type] element te vervangen door tekst, voorwaarde, lijst, gegevenswoordenboek of fragment:
+   Als u een overlay wilt maken voor een letter of een ander element, gebruikt u het volgende pad door [assettype] te vervangen door tekst, voorwaarde, lijst, gegevenswoordenboek of fragment:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
-   1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
@@ -332,18 +333,18 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De map wordt gemaakt. Klik op Alles **opslaan**.
+   1. Klik **OK**. De map wordt gemaakt. Klik **Alles opslaan**.
 
 1. Voeg in de map met nieuw gemaakte items een knooppunt toe voor het aangepaste tabblad in het element (hier wordt mijn tabblad - deze naam wordt niet weergegeven in de gebruikersinterface) met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** mytab (of de naam die u aan deze eigenschap wilt geven)
+      **Name:** mytab (of de naam die u aan deze eigenschap wilt geven)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier mijntabblad). CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg de volgende twee eigenschappen toe aan het knooppunt (hier customtab):
@@ -363,14 +364,14 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          <tr>
            <td>sling:resourceType</td>
            <td>Tekenreeks</td>
-           <td>graniet/ui/componenten/koraal/stichting/inclusief<br /> </td>
+           <td>graniet/ui/components/koral/foundation/include<br /> </td>
          </tr>
          </tbody>
        </table>
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
-1. Als u de aanpassing wilt weergeven, plaatst u de muisaanwijzer boven het desbetreffende element (hier een brief), klikt u op Eigenschappen weergeven en klikt u op **Bewerken**. Het nieuwe tabblad (Ontvangers) en het nieuwe veld (Locatie van ontvangers) worden weergegeven in de gebruikersinterface.
+1. Als u de aanpassing wilt weergeven, plaatst u de muisaanwijzer boven het desbetreffende element (hier een letter), klikt u op Eigenschappen weergeven en klikt u op **Bewerken**. Het nieuwe tabblad (Ontvangers) en het nieuwe veld (Locatie van ontvangers) worden weergegeven in de gebruikersinterface.
 
    >[!NOTE]
    >
@@ -393,7 +394,7 @@ Als u bijvoorbeeld alleen de tekstelementen wilt bewerken, wilt u een eigenschap
 
 Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Als u een tab wilt maken in een elementtype (zoals Tekst), maakt u de volgende mapstructuur in de map apps:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
@@ -402,7 +403,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
    Ga als volgt te werk om deze mapstructuur te maken:
 
-   1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
@@ -414,24 +415,24 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
+      **Pad:** /libs/fd/cm/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-      Klik op Alles **opslaan**.
+      Klik **Alles opslaan**.
 
 1. Voeg in de map met nieuw gemaakte items een knooppunt toe voor het aangepaste tabblad in het element (voorbeeld: aangepaste tab) met behulp van de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** customtab (of de naam die u aan deze eigenschap wilt geven)
+      **Name:** customtab (of de naam die u aan deze eigenschap wilt geven)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier customtab). CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg de volgende twee eigenschappen toe aan het knooppunt (hier customtab):
@@ -441,29 +442,29 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
       | sling:resourceType | Tekenreeks | graniet/ui/componenten/koraal/stichting/container |
       | jcr:titel | Tekenreeks | De naam van het veld in de gebruikersinterface (hier het tabblad Mijn) |
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Voeg in het knooppunt dat u in de vorige stap hebt gemaakt (hier customtab) een knooppunt met de naam items toe door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op het knooppunt (hier op het aangepaste tabblad) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het knooppunt (hier op het aangepaste tabblad) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** items
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. In de puntenknoop u in de vorige stap (onder customtab) creeerde, voeg een knoop voor het creëren van een kolom (hier Kolom1) op het douanetabblad toe gebruikend de volgende stappen (om meer kolommen toe te voegen, herhaal deze stap):
 
-   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het knooppunt Items en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** Column1 (of de naam u aan de knoop wilt geven)
+      **Name:** Column1 (of de naam u aan de knoop wilt geven)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Voeg de volgende eigenschap toe aan het knooppunt (hier kolom1) en klik op Alles **** opslaan.
+   1. Voeg het volgende bezit aan de knoop (hier Kolom1) toe en klik dan **sparen allen**.
 
       <table>
          <tbody>
@@ -475,30 +476,30 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
          <tr>
            <td>sling:resourceType</td>
            <td>Tekenreeks</td>
-           <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
+           <td>graniet/ui/components/koral/foundation/container<br /> </td>
          </tr>
          </tbody>
        </table>
 
 1. Voor elke kolom die u maakt (zoals opgegeven in de vorige stap - hier Column1), maakt u een knooppunt met de naam Item door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op het relevante kolomknooppunt (hier Kolom1) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het relevante kolomknooppunt (hier Kolom1) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** items
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik op Alles **opslaan:**
+   1. Klik **Alles opslaan:**
 
 1. Maak voor elk van de gemaakte kolommen een knooppunt onder het knooppunt Items voor het maken van een veld op het nieuwe tabblad in de gebruikersinterface. Herhaal deze stap om meer velden in de kolom te maken:
 
-   1. Klik met de rechtermuisknop op het relevante knooppunt (hier items onder Kolom1) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het relevante knooppunt (hier items onder Kolom1) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** Een naam van uw keuze (hier GeoLocation)
+      **Naam:** een naam van uw keuze (hier GeoLocation)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Voeg de volgende eigenschappen aan de knoop toe en klik dan **sparen allen**.
 
@@ -521,17 +522,17 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
 Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevoegd, alleen zichtbaar op de eigenschappenpagina en niet op de pagina voor het maken van elementen, omdat de pagina voor het maken van elementen geen tablay-out heeft. Als u de aangepaste eigenschappen samen met andere eigenschappen op de pagina voor het maken van elementen wilt weergeven, moet u het volgende doen:
 
-1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
    `/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
 1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden voor letter heeft. Voor andere elementtypen wordt het pad gegeven in de volgende tabel:
 
-   **Pad:** /libs/fd/cm/maa/gui/content/createAsset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/lettereigenschappen/items/lettereigenschappen/items
+   **Pad:** /libs/fd/cm/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/items/items/lettereigenschappen/items/lettereigenschappen/items/items
 
    **Locatie:** /apps/
 
-   **Identieke knooppunttypen:** Geselecteerd
+   **Identieke knooppunttypen:** geselecteerd
 
    Afhankelijk van het type element moet het volgende het pad zijn:
 
@@ -543,15 +544,15 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
    | Fragment | /libs/fd/cm/maa/gui/content/createAsset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/Items/tabs2/items/tab1/items |
    | Letter | /libs/fd/cm/maa/gui/content/createAsset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/items/lettereigenschappen/items/lettereigenschappen/items |
 
-1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-1. Maak onder het knooppunt voor overlayitems dat u hebt gemaakt een knooppunt met de naam col4 (of een andere naam) en klik op Alles **** opslaan.
+1. Onder de knoop van bedekkingspunten u creeerde, creeer een knoop van de naam col4 (of om het even welke andere naam) en klik **sparen allen**.
 
    Hier volgt bijvoorbeeld het bedekkingsknooppunt dat voor letters is gemaakt.
 
    `/apps/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
-1. Voeg de volgende eigenschappen toe aan het nieuwe knooppunt (hier col4) en klik op **Alles** opslaan:
+1. Voeg de volgende eigenschappen aan de pas gecreëerde knoop (hier col4) toe en klik **sparen allen**:
 
 <table>
  <tbody>
@@ -572,7 +573,7 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
   <tr>
    <td>sling:resourceType</td>
    <td>Tekenreeks</td>
-   <td> graniet/ui/componenten/koraal/stichting/inclusief<br /> </td>
+   <td> graniet/ui/components/koral/foundation/include<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -581,13 +582,13 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
 
 Aangepaste eigenschap, taal, die wordt weergegeven in de gebruikersinterface voor het maken van een letter
 
-## De lijstweergave aanpassen om aangepaste eigenschappen weer te geven {#customize-the-list-view-to-show-custom-properties}
+## De lijstweergave aanpassen om aangepaste eigenschappen {#customize-the-list-view-to-show-custom-properties} weer te geven
 
 Nadat u een douanebezit aan de activa van het Beheer van de Correspondentie hebt toegevoegd, moet u verdere veranderingen in CRX/DE aanbrengen om ervoor te zorgen dat het douanebezit in Correspondence Management UI wordt getoond.
 
 Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de gebruikersinterface van de middelenlijst van het Correspondentiebeheer:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak de volgende mapstructuur in de map apps:
 
    `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns`
@@ -600,24 +601,24 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **Pad:** /libs/fd/cm/gui/content/cmassets/jcr:content/views/lists/columns
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-      Klik op Alles **opslaan**.
+      Klik **Alles opslaan**.
 
 1. Maak voor elk van de gemaakte eigenschappen een knooppunt onder het knooppunt columns voor het maken van een kolom in de gebruikersinterface. Herhaal deze stap om meer kolommen in UI tot stand te brengen:
 
-   1. Klik met de rechtermuisknop op het relevante knooppunt (kolommen) en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op het relevante knooppunt (kolommen) en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** Een naam van uw keuze (hier GeogragraphicLocation)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Voeg de volgende eigenschappen aan de knoop toe en klik dan **sparen allen**.
 
@@ -658,15 +659,15 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/components/admin/child/pagerenderer/child-listpage
+      **Pad:** /libs/fd/cm/gui/components/admin/kinderpagerenderer/kinderkeuzepagina
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-      Klik op Alles **opslaan**.
+      Klik **Alles opslaan**.
 
 1. Kopieer het bestand childListpage.jsp van de volgende locatie:
 
@@ -724,7 +725,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
       Herhaal de stappen 6.3 en 6.4 om meer kolommen toe te voegen.
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Als u de aanpassing wilt bekijken, opent u de lijstweergave van documentfragmenten of letters waaraan u de aangepaste eigenschap hebt toegevoegd.
 
@@ -758,7 +759,7 @@ Wanneer u de eigenschap sling:orderBefore toevoegt om de kolomlocatie op te geve
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(version) %>"><%= xssAPI.encodeForHTML(version) %></td>
 ```
 
-## Zoeken naar aangepaste eigenschappen inschakelen {#enable-search-for-custom-properties}
+## Zoeken naar aangepaste eigenschappen {#enable-search-for-custom-properties} inschakelen
 
 Standaard bevat de volledige tekstzoekopdracht geen aangepaste eigenschappen die u met behulp van CRX/DE toevoegt aan de gebruikersinterface.
 
@@ -766,31 +767,31 @@ Als u de aangepaste eigenschappen wilt opnemen in de zoekopdracht, moet u indexe
 
 Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe te staan:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
-1. Ga naar `/oak:index/cmLucene`en voeg een knooppunt toe met de naam **aggregaten** eronder.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Ga naar `/oak:index/cmLucene`en voeg een knoop genoemd **aggregates** onder het toe.
 
-   1. Klik met de rechtermuisknop op de map cmLucene en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op de map cmLucene en selecteer **Maken** > **Node maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** aggregaten
+      **naam:** aggregaten
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Voeg onder de nieuwe map aggregates een knooppunt cm:resource toe. En onder cm:resource, voeg een knoop genoemd include0 toe.
 
-   1. Klik met de rechtermuisknop op de map aggregates en selecteer **Maken** > **Knooppunt** maken. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
+   1. Klik met de rechtermuisknop op de map aggregates en selecteer **Maken** > **Node maken**. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** cm:resource
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
-   1. Klik met de rechtermuisknop op de map cm:resource en selecteer **Maken** > **knooppunt** maken. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
+   1. Klik met de rechtermuisknop op de map cm:resource en selecteer **Maken** > **Node maken**. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** include0
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Klik de nieuwe knoop u (hier include0) hebt gecreeerd. CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg het volgende bezit aan de knoop (hier include0) toe:
@@ -803,25 +804,25 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
            <td><strong>Waarde</strong></td>
          </tr>
          <tr>
-           <td>path</td>
+           <td>pad</td>
            <td>Tekenreeks</td>
            <td>extendedProperties<br /> </td>
          </tr>
          </tbody>
        </table>
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Ga naar eigenschappen op de volgende locatie en voeg er een knooplocatie onder toe: `/oak:index/cmLucene/indexRules/cm:resource/properties`
 
    Herhaal deze stap voor alle aangepaste eigenschappen die u aan de zoekopdracht wilt toevoegen.
 
-   1. Klik met de rechtermuisknop op de map met eigenschappen en selecteer **Maken** > **Knooppunt** maken.
+   1. Klik met de rechtermuisknop op de map Properties en selecteer **Create** > **Create Node**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** locatie (of de naam van de aangepaste eigenschap die u aan de zoekopdracht wilt toevoegen)
 
-      **Type:** nt:ongestructureerd
+      **tekst:** niet gestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier de locatie). CRX geeft de eigenschappen van het knooppunt weer.
    1. Voeg de volgende eigenschappen aan de knoop (hier plaats) toe:
@@ -833,7 +834,7 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
       | propertyIndex | Boolean | true |
       | useInSuggest | Boolean | true |
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
 1. Nu kunt u aangepaste eigenschapswaarden gebruiken in de zoekopdracht voor volledige tekst om relevante elementen te zoeken.
 
@@ -843,12 +844,12 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 >
 >/oak:index/cmLucene&quot; en wijzigingswaarde van eigenschap
 
-## Standaardweergave van de zoekpagina wijzigen {#change-default-view-of-the-search-page}
+## Standaardweergave van zoekpagina {#change-default-view-of-the-search-page} wijzigen
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak in de map Apps een map met de naam list met een pad/structuur die lijkt op de map met lijsten in /libs/granite/ui/content/shell/omnissearch/search results/singleresults/views:
 
-   1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list`
 
@@ -858,13 +859,13 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
-1. Voeg in het nieuwe knooppunt de volgende eigenschap toe en klik op **Alles** opslaan:
+1. Voeg in het nieuwe knooppunt de volgende eigenschap toe en klik op **Alles opslaan**:
 
    <table>
    <tbody>
@@ -881,36 +882,36 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
    </tbody>
    </table>
 
-1. De aanpassing toont onderzoeksresultaten in de mening van de Lijst voor alle consoles, met inbegrip van Vormen en Documenten, Activa, en Plaatsen.
+1. De aanpassing toont onderzoeksresultaten in de mening van de Lijst voor alle consoles, met inbegrip van Forms en Documenten, Activa, en Plaatsen.
 
-## Standaardweergave van de pagina Elementen wijzigen {#change-default-view-of-the-assets-page}
+## Standaardweergave van de elementenpagina wijzigen {#change-default-view-of-the-assets-page}
 
 >[!NOTE]
 >
->Deze stappen veranderen de standaardmening van alle consoles zoals Vormen en Documenten, Activa, en Plaatsen.
+>Met deze stappen wijzigt u de standaardweergave van alle consoles, zoals Forms en Documenten, Middelen en Sites.
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
 1. Maak in de map Apps een map met de naam Lijst met paden/structuur die lijkt op de map met lijsten in:
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
-   1. Klik met de rechtermuisknop op de itemmap in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **Pad:** /libs/fd/cm/gui/content/cmassets/jcr:content/views/list
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** Geselecteerd
+      **Identieke knooppunttypen:** geselecteerd
 
-   1. Click **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
-1. Voeg in het nieuwe knooppunt de volgende eigenschap toe en klik op **Alles** opslaan:
+1. Voeg in het nieuwe knooppunt de volgende eigenschap toe en klik op **Alles opslaan**:
 
    <table>
    <tbody>
@@ -929,12 +930,12 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 
 1. Wis de browsercookies of gebruik de incogingmodus van uw browser om de elementen weer te geven. De elementenpagina wordt standaard weergegeven in de kaartindeling.
 
-## Aangepaste eigenschappen weergeven/verbergen op de pagina&#39;s voor het maken van elementen en eigenschappen {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
+## Aangepaste eigenschappen tonen/verbergen op pagina&#39;s voor het maken van elementen en eigenschappen {#show-hide-custom-properties-on-asset-creation-and-properties-pages}
 
 Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te verbergen:
 
 1. Onder het knooppunt voor aangepaste eigenschappen, zoals geografische toewijzing, maakt u een nieuw knooppunt met de naam &quot;granite:rendercondition&quot; van het type &quot;nt:unStructured&quot;.
-1. Voeg de volgende eigenschap toe aan het knooppunt en klik op **Alles** opslaan:
+1. Voeg de volgende eigenschap toe aan het knooppunt en klik op **Alles opslaan**:
 
    <table>
    <tbody>
@@ -951,7 +952,7 @@ Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te 
    </tbody>
    </table>
 
-1. Als u deze eigenschap op de pagina voor het maken van elementen wilt verbergen, voegt u de volgende eigenschap toe en klikt u op Alles **** opslaan:
+1. Als u deze eigenschap op de pagina voor het maken van elementen wilt verbergen, voegt u de volgende eigenschap toe en klikt u op **Alles opslaan**:
 
    <table>
    <tbody>
@@ -968,7 +969,7 @@ Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te 
    </tbody>
    </table>
 
-1. Als u de aangepaste eigenschap op de eigenschappenpagina van de elementen wilt verbergen, voegt u de volgende eigenschap toe en klikt u op Alles **** opslaan:
+1. Als u de aangepaste eigenschap op de eigenschappenpagina van de elementen wilt verbergen, voegt u de volgende eigenschap toe en klikt u op **Alles opslaan**:
 
    <table>
    <tbody>
@@ -985,4 +986,4 @@ Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te 
    </tbody>
    </table>
 
-   Als u de waarden opnieuw wilt weergeven, moet u de eigenschapswaarden opnieuw instellen op `false` of de eigenschapitems verwijderen.
+   Als u de waarden opnieuw wilt weergeven, stelt u de eigenschapswaarden in op `false` of verwijdert u de eigenschapitems.

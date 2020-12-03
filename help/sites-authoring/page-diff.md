@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: eb9a4792f4d64f98805919f00bb62193a6a7dafc
+source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![chlimage_1-189](assets/chlimage_1-109.png)
 
 De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
@@ -61,10 +61,6 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
-* Blauw - component gewijzigd
-* Blauw - component verplaatst
-
-De kleuren Gewijzigd en Verplaatst zijn hetzelfde.
 
 **HTML-wijzigingen**
 
@@ -96,9 +92,7 @@ U kunt het schuifregelaar Naast elkaar op elk gewenst moment afsluiten door op d
 In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert zoals u had verwacht.
 
 * Bij verschillende versies en lanceringen houdt diff geen rekening met dynamische componenten zoals broodkruimels, menu&#39;s, productlijsten of logo&#39;s (componenten die op de plaatsstructuur vertrouwen om hun inhoud terug te geven).
-* Voor versies maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
-* Als er wijzigingen worden aangebracht in een afbeelding, zoals het wijzigen van de kenmerken alt, title of src, wordt deze in blauw gemarkeerd als gewijzigd. In sommige gevallen heeft de afbeelding echter een Base64-representatie van het kenmerk src en zelfs als beide afbeeldingen er hetzelfde uitzien, worden ze door het diff als verschillend gemarkeerd vanwege de verschillende src-kenmerken.
-* Het diff kan beeldomwenteling niet ontdekken.
+* Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
    * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.

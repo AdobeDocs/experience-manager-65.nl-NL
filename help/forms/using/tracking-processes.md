@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Op de pagina Volgen kunt u zoeken naar actieve of voltooide processen die u hebt
 
 ## Zoeken naar processen en taken {#search-for-processes-and-tasks}
 
-U kunt naar procesinstanties en bijbehorende taken zoeken op basis van procesnamen of met behulp van zoeksjablonen die zijn ingesteld door de beheerder van de AEM-werkruimte.
+U kunt naar procesinstanties en bijbehorende taken zoeken op basis van procesnamen of met behulp van zoeksjablonen die zijn ingesteld door de beheerder van de AEM Forms-werkruimte.
 
 U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
@@ -36,14 +39,14 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 ### Een taak zoeken met een zoeksjabloon {#search-for-a-task-using-a-search-template}
 
-1. Selecteer in de lijst aan de linkerkant van de pagina Tracking de optie **Sjablonen** zoeken en selecteer een zoeksjabloon.
-1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden in en klikt u op **Zoeken**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
+1. Selecteer **Sjablonen zoeken** in de lijst Volgende op de pagina en selecteer een zoeksjabloon.
+1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden en klikt u op **Zoeken** om de zoekparameters te beperken. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
 
-## Procesdetails weergeven {#view-process-details}
+## Procesdetails {#view-process-details} weergeven
 
 Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U kunt de processen zoeken die op diverse parameters worden gebaseerd om de taakdetails te bekijken. U kunt het tabblad Status ook weergeven voor processen waarbij meerdere gebruikers taken gelijktijdig ontvangen, waarbij de gereedschappen voor het reviseren van documenten zijn ingeschakeld.
 
-**Status:** De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
+**Status:** De status van taken in een proces wordt weergegeven in de kolom &#39;Geselecteerde actie&#39; wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
 
 1. Selecteer de procesinstantie in de lijst met zoekresultaten om details weer te geven van de taken die deel uitmaken van de procesinstantie.
 1. Voer een of meer van de volgende handelingen uit om meer informatie over een taak weer te geven:

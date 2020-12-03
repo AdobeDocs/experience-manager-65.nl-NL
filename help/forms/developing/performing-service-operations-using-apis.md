@@ -11,13 +11,16 @@ topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 1%
 
 ---
 
 
 # Servicebewerkingen uitvoeren met behulp van API&#39;s {#performing-service-operations-using-apis}
 
-Voordat u clienttoepassingen gaat ontwikkelen met behulp van de API&#39;s van AEM Forms, wordt u aangeraden eerst het aanroepen van AEM Forms te lezen, waarin de verschillende manieren worden beschreven waarop services kunnen worden aangeroepen. (Zie [Servicecontainer](/help/forms/developing/service-container.md#service-container).)
+Voordat u begint clienttoepassingen te ontwikkelen met de AEM Forms API&#39;s, wordt u aangeraden eerst het aanroepen van AEM Forms te lezen, waarin de verschillende manieren worden beschreven waarop services kunnen worden aangeroepen. (Zie [Servicecontainer](/help/forms/developing/service-container.md#service-container).)
 
 Nadat u met de verschillende aanroepingsmethodes vertrouwd bent geworden, kunt u leren hoe te met elke dienst programmatically in wisselwerking te staan. U kunt een cliënttoepassing in Adobe Flex® Builder™, in een ontwikkelomgeving van Java, of in een milieu zoals Microsoft Visual Studio .NET ontwikkelen die u toestaat om blootgestelde WSDL voor consumptie op een inheemse stapel van de ZEEP te gebruiken.
 

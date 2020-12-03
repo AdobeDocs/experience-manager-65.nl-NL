@@ -11,11 +11,14 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '1099'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersinterface voor maken van correspondentie aanpassen{#customize-create-correspondence-ui}
+# Pas creeer correspondentie UI{#customize-create-correspondence-ui} aan
 
 ## Overzicht {#overview}
 
@@ -27,15 +30,15 @@ U kunt het logo in de interface Correspondentie maken wijzigen met het logo van 
 
 Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken
 
-### Het logo wijzigen in de gebruikersinterface Correspondentie maken {#changing-the-logo-in-the-create-correspondence-ui}
+### Het logo wijzigen in de interface Correspondentie maken {#changing-the-logo-in-the-create-correspondence-ui}
 
 Ga als volgt te werk om een door u gekozen logoafbeelding in te stellen:
 
 1. Maak de juiste [mapstructuur in CRX](#creatingfolderstructure).
-1. [Upload het nieuwe logobestand](#uploadlogo) in de map die u in CRX hebt gemaakt.
+1. [Upload het nieuwe logobestand ](#uploadlogo) in de map die u in CRX hebt gemaakt.
 
-1. [Stel de CSS](#createcss) in op CRX om naar het nieuwe logo te verwijzen.
-1. Wis de browsergeschiedenis en [vernieuw de interface](#refreshccrui)Correspondentie maken.
+1. [Stel de ](#createcss) CSS op CRX in om naar het nieuwe logo te verwijzen.
+1. Wis de browsergeschiedenis en [vernieuw de Create Correspondentie UI](#refreshccrui).
 
 ## De vereiste mapstructuur maken {#creatingfolderstructure}
 
@@ -51,12 +54,12 @@ De tak /apps (omslagstructuur):
 
 Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken:
 
-1. Ga naar Beheerder `https://'[server]:[port]'/[ContextPath]/crx/de` en meld u aan.
-1. Maak in de map Apps een map met de naam pad/structuur, vergelijkbaar met de map css (in de map ccrui). `css`
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Maak in de map apps een map met de naam `css` met een pad/structuur die lijkt op de css-map (in de map ccrui).
 
    Stappen voor het maken van de css-map:
 
-   1. Klik met de rechtermuisknop op de **css** -map in het volgende pad en selecteer **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
+   1. Klik met de rechtermuisknop op de map **css** op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
       ![Overlay-knooppunt](assets/1_overlaynode_css.png)
 
@@ -64,7 +67,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
       **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **Locatie bedekking:** /apps/
+      **Overlay-locatie:** /apps/
 
       **Identieke knooppunttypen:** Ingeschakeld
 
@@ -81,28 +84,28 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
       >    * Een functiepakket installeren
 
 
-   1. Click **OK**. De css-map wordt gemaakt in het opgegeven pad.
+   1. Klik **OK**. De css-map wordt gemaakt in het opgegeven pad.
 
 
 
-1. Maak in de map Apps een map met de naam pad/structuur, vergelijkbaar `imgs` met de map imgs (in de map ccrui).
+1. Maak in de map apps een map met de naam `imgs` met een pad/structuur die lijkt op de map imgs (in de map ccrui).
 
-   1. Klik met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
+   1. Klik met de rechtermuisknop op de map **imgs** op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
       **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **Locatie bedekking:** /apps/
+      **Overlay-locatie:** /apps/
 
       **Identieke knooppunttypen:** Ingeschakeld
 
-   1. Click **OK**.
+   1. Klik **OK**.
 
       >[!NOTE]
       >
       >U kunt de mapstructuur ook handmatig in de map /apps maken.
 
-1. Klik op Alles **** opslaan om de wijzigingen op de server op te slaan.
+1. Klik **Alles opslaan** om de wijzigingen op de server op te slaan.
 
 ## Het nieuwe logo uploaden naar CRX {#uploadlogo}
 
@@ -115,7 +118,7 @@ Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de r
 Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
 1. Ga naar `https://'[server]:[port]'/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
-1. Klik in CRXDE met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Maken > Bestand** maken:
+1. Klik in CRXDE met de rechtermuisknop op de map **imgs** op het volgende pad en selecteer **Maken > Bestand maken**:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
 
@@ -125,7 +128,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    ![CustomLogo.png als nieuw knooppunt](assets/3_contentexplorernewnode_customlogo.png)
 
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 
    Onder het nieuwe bestand dat u hebt gemaakt (hier CustomLogo.png), wordt de eigenschap jcr:content weergegeven.
 
@@ -135,13 +138,13 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    ![jcrContentProperties](assets/jcrcontentproperties.png)
 
-1. Dubbelklik op de eigenschap **jcr:data** .
+1. Dubbelklik op de eigenschap **jcr:data**.
 
-   Het dialoogvenster JCR:gegevens bewerken wordt geopend.
+   Het dialoogvenster jcr:gegevens bewerken wordt geopend.
 
    Klik nu op de map newlogo.png, dubbelklik op jcr:content (grijze optie) en stel type nt:resource in. Maak indien niet aanwezig een eigenschap met de naam jcr:content.
 
-1. Klik in het dialoogvenster Jcr:data bewerken op **Bladeren** en selecteer het afbeeldingsbestand dat u als logo wilt gebruiken (hier CustomLogo.png).
+1. Klik in het dialoogvenster jcr:data bewerken op **Bladeren** en selecteer het afbeeldingsbestand dat u als logo wilt gebruiken (hier CustomLogo.png).
 
    De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt voor toegang tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
@@ -149,7 +152,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    Voorbeeld: CustomLogo.png voor gebruik als aangepast logo
 
-1. Klik op Alles **opslaan**.
+1. Klik **Alles opslaan**.
 
 ## CSS maken om het logo te integreren met de gebruikersinterface {#createcss}
 
@@ -164,8 +167,8 @@ Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen va
 
    Stappen om het bestand customcss.css te maken:
 
-   1. Klik met de rechtermuisknop op de **css** -map en selecteer **Maken > Bestand** maken.
-   1. Geef in het dialoogvenster Nieuw bestand de naam van de CSS op als `customcss.css`(u kunt geen andere bestandsnaam gebruiken) en klik op **OK**.
+   1. Klik met de rechtermuisknop op de map **css** en selecteer **Maken > Bestand maken**.
+   1. Geef in het dialoogvenster Nieuw bestand de naam van de CSS op als `customcss.css` (u kunt geen andere bestandsnaam gebruiken) en klik op **OK**.
    1. Voeg de volgende code toe aan het nieuwe CSS-bestand. In inhoud:url in de code, specificeer de beeldnaam u aan de omslag van imgs in CRXDE hebt geupload.
 
       ```css
@@ -174,9 +177,9 @@ Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen va
       }
       ```
 
-   1. Klik op Alles **opslaan**.
+   1. Klik **Alles opslaan**.
 
-## De gebruikersinterface Correspondentie maken vernieuwen om het aangepaste logo weer te geven {#refreshccrui}
+## Vernieuw Create Correspondent UI om het aangepaste logo {#refreshccrui} te zien
 
 Wis de browsercache en open vervolgens de instantie Correspondentie-UI maken in uw browser. Je moet het aangepaste logo zien.
 

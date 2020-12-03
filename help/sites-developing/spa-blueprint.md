@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+source-git-commit: c1b5df634eba0628c8d2e0b38b9c220cbee8ec62
 workflow-type: tm+mt
 source-wordcount: '2112'
 ht-degree: 0%
@@ -76,7 +76,7 @@ In de rest van dit document worden de vereisten van deze specifieke laag van het
 
 De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om SPA componenten in kaart te brengen en te concretiseren. De SPA ontwikkelaars creëren SPA componenten die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
 
-De SPA componenten moeten in overeenstemming zijn met het paginamodel en worden bijgewerkt met eventuele wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
+De SPA componenten moeten synchroon zijn met het paginamodel en worden bijgewerkt met wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
 
 ### Metavelden {#meta-fields}
 

@@ -181,7 +181,7 @@ De manier om met onjuiste aangepaste code om te gaan is eerst rooktests uit te v
 
 `/apps` en  `/libs` worden goed afgehandeld door de upgrade, maar wijzigingen in de upgrade moeten  `/etc` mogelijk handmatig worden hersteld  `/var/upgrade/PreUpgradeBackup` na de upgrade. Controleer deze locatie op alle inhoud die handmatig moet worden samengevoegd.
 
-### Het bestand error.log en upgrade.log {#analyzing-the-error.log-and-upgrade.log} analyseren
+### Het bestand error.log en upgrade.log analyseren {#analyzing-the-error.log-and-upgrade.log}
 
 In de meeste gevallen moeten de logboeken worden geraadpleegd voor fouten om de oorzaak van een probleem te vinden. In het geval van upgrades is het echter ook nodig om afhankelijkheidskwesties te controleren, aangezien oude bundels mogelijk niet correct worden bijgewerkt.
 

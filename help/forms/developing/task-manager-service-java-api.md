@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) voor Taakbeheerservice {#task-manager-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van de Taak.
 
@@ -36,15 +36,15 @@ De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van d
 
 [Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is omdat u niet de `taskList` methode kunt aanroepen, die een noodzakelijke methodevraag is om deze taak uit te voeren.
+>U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is omdat u niet de `taskList` methode kunt aanhalen, die een noodzakelijke methodevraag is om deze taak uit te voeren.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
@@ -179,7 +179,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
  
 ```
 
-## Snel starten (SOAP-modus): Taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): Taken vergrendelen met de Java-API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt met de waarde 2 voor de taak-id.
 
@@ -268,7 +268,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
  
 ```
 
-## Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java-API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tony blue*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
@@ -502,7 +502,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
 
 ## Snel starten (SOAP-modus): Formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens uit het *bestand FormData.xml* .
+In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens in het bestand *FormData.xml*.
 
 ```java
  /*

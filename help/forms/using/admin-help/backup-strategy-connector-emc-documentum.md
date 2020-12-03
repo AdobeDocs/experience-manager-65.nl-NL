@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
 
 Als u Connector voor EMC Documentum hebt geïnstalleerd, moet uw back-up- en herstelstrategie naast de instructies in dit hoofdstuk ook back-up (of herstel) omvatten van de computer waarop het betreffende ECM-systeem is geïnstalleerd. (Zie de documentatie van ECM Documentum).
 
-Maak een back-up van uw AEM-formulieromgeving met behulp van de ECM-opslagruimte en voer de volgende taken uit:
+Maak een back-up van uw AEM formulieromgeving met behulp van de ECM-opslagplaats en voer de volgende taken uit:
 
-* Maak een back-up van AEM-formulieren aan de hand van de instructies die in dit document worden beschreven.
-* Maak een back-up van uw ECM Documentum systeem door de instructies op te volgen in [Back-up van de EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
+* Maak een back-up AEM formulieren door de instructies in dit document op te volgen.
+* Maak een back-up van uw ECM Documentum systeem door de instructies in [Back-up te maken van de EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#back-up-the-emc-documentum-content-server).
 
-Herstel de AEM-formulieromgeving met behulp van de ECM-opslagruimte en voer de volgende taken uit:
+Herstel AEM formulieromgeving met behulp van ECM-opslagruimte en voer de volgende taken uit:
 
-* Herstel uw respectievelijke ECM-systeem door de instructies in de EMC Documentum Content Server [](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server)te volgen.
-* AEM-formulieren herstellen door de instructies in dit document op te volgen.
+* Herstel uw respectieve ECM-systeem door de instructies in [Herstel de EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server) te volgen.
+* Herstel AEM formulieren door de instructies in dit document op te volgen.
 

@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c92efd64662e831c8771a8f35701f4e9ed788645
+source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4140'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] Service Pack bevat geen oplossingen voor  [!DNL Forms]. Zij worden geleverd gebruikend een afzonderlijk [!DNL Forms] toe:voegen-op pakket. Bovendien wordt een cumulatief installatieprogramma vrijgegeven dat moeilijke situaties voor [!DNL Experience Manager Forms] op JEE omvat. Zie [AEM Forms-invoegtoepassing installeren](#install-aem-forms-add-on-package) en [AEM Forms installeren op JEE](#install-aem-forms-jee-installer) voor meer informatie.
 
 **Adaptieve Forms**
 

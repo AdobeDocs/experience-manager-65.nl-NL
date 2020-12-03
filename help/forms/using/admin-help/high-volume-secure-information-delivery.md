@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 translation-type: tm+mt
 source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
@@ -27,4 +30,4 @@ In het geval van maandelijkse factuurgeneratie voor een telecombedrijf, creeert 
 
 Het maken van een abstract beleid wordt alleen ondersteund door Java SDK voor documentbeveiliging. U kunt echter wel het beleid beheren dat u maakt op basis van het abstracte beleid van de webpagina&#39;s voor documentbeveiliging. Beleid dat met deze methode wordt gemaakt, werkt hetzelfde als het beleid dat op basis van webpagina&#39;s voor documentbeveiliging wordt gemaakt.
 
-Zie [Programmeren met AEM-formulieren](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie.
+Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63) voor meer informatie.

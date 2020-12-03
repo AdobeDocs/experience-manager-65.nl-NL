@@ -37,7 +37,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code>werkt niet correct in de volgende gevallen:</p>
     <ul>
      <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden op de iPad, en </li>
-     <li>Voor het veld Datum (wanneer de datum door de kalender wordt ingevoerd).<br /> </li>
+     <li>Voor het gebied van de Datum (wanneer de datum door kalender is ingegaan).<br /> </li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
   </tr>
   <tr>
@@ -48,7 +48,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>newtext</code></td>
    <td>Hiermee geeft u de inhoud van het veld aan nadat deze is gewijzigd door de actie van een gebruiker.</td>
-   <td><p>De <code>newText</code> eigenschap werkt niet goed voor de volgende gevallen:</p>
+   <td><p>De eigenschap <code>newText</code> werkt niet goed voor de volgende gevallen:</p>
     <ul>
      <li>Bij het selecteren van teksten</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
@@ -131,7 +131,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Specifies whether validation scripts will execute.<br /> </td>
+   <td>Geeft aan of validatiescripts worden uitgevoerd.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -204,17 +204,17 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifies the formatted value for this field.</td>
-   <td>Het instellen <code>formattedValue</code> via script wordt niet ondersteund.</td>
+   <td>Het instellen van <code>formattedValue</code> via script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifies the edit value for this field.</td>
-   <td>Het instellen <code>editValue </code>via script wordt niet ondersteund.</td>
+   <td>Het instellen van <code>editValue </code>via-script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Hiermee wordt de tekenreeks van het validatiebericht voor opmaak voor dit veld aangegeven.</td>
-   <td>Het instellen <code>formatMessage </code>via script wordt niet ondersteund.</td>
+   <td>Het instellen van <code>formatMessage </code>via-script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -380,7 +380,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 | `remove` | Hiermee wordt een knooppunt uit de lijst met knooppunten verwijderd. |
 | `insert` | Hiermee wordt een knooppunt ingevoegd vóór een specifiek knooppunt in de lijst met knooppunten. |
 
-## node {#node}
+## knooppunt {#node}
 
 | Eigenschap | Beschrijving | Uitzondering |
 |---|---|---|
@@ -400,7 +400,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 |---|---|---|
 | NA | NA | NA |
 
-## Subform {#subform}
+## Subformulier {#subform}
 
 <table>
  <tbody>
@@ -544,7 +544,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## subformset {#subformset}
+## subformulierset {#subformset}
 
 | Eigenschap | Beschrijving | Uitzondering |
 |---|---|---|
@@ -593,7 +593,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>De kleureigenschappen definiëren een unieke vulkleur.</td>
    <td>
     <ul>
@@ -614,7 +614,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur beschreven voor een lineaire verloopvulling op een formulier.</td>
    <td>
     <ul>
@@ -652,7 +652,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het patroonobject beschreven. </td>
    <td>
     <ul>
@@ -673,7 +673,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het radiale object beschreven</td>
    <td>
     <ul>
@@ -694,7 +694,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het stipple-object beschreven.</td>
    <td>
     <ul>
@@ -720,19 +720,19 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>bijschrift</td>
    <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>presence</td>
+   <td>aanwezigheid</td>
    <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
    <td> </td>
   </tr>
   <tr>
    <td>name</td>
    <td>Geeft een id die kan worden gebruikt om in scriptexpressies dit object of deze gebeurtenis op te geven.</td>
-   <td>Het instellen van de waarde tijdens runtime wordt niet ondersteund</td>
+   <td>Het instellen van de waarde tijdens de runtime wordt niet ondersteund</td>
   </tr>
   <tr>
    <td>value</td>
@@ -752,7 +752,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het hoekobject beschreven.</td>
    <td>
     <ul>
@@ -775,7 +775,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td>border</td>
    <td>Het object border beschrijft de rand rondom het object checkButton. </td>
-   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.<br /> </td>
+   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden daarom niet weerspiegeld in de gebruikersinterface.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -803,7 +803,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 |---|---|---|
 | border | Het randobject beschrijft de rand rond het dateTimeEdit-object. |  |
 
-## Image {#image}
+## Afbeelding {#image}
 
 <table>
  <tbody>
@@ -825,7 +825,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## imageEdit {#imageedit}
+## imageEdit  {#imageedit}
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
@@ -948,7 +948,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>bijschrift</td>
    <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.<br /> </td>
    <td>Geen</td>
   </tr>
@@ -963,12 +963,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>presence</td>
+   <td>aanwezigheid</td>
    <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>access</td>
+   <td>toegang</td>
    <td>Deze eigenschap bepaalt de toegang tot de inhoud van een container object, zoals een subformulier.</td>
    <td>Voor afzonderlijke items in de uitzondering wordt altijd open geretourneerd. </td>
   </tr>
@@ -1109,7 +1109,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| presence | Hiermee wordt de zichtbaarheid van een object opgegeven. | Geen |
+| aanwezigheid | Hiermee wordt de zichtbaarheid van een object opgegeven. | Geen |
 
 ## FormCalc {#formcalc}
 
@@ -1117,7 +1117,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
 
 ### Ondersteunde functies van FormCalc {#formcalc-supported-functions}
 
-### Ondersteuning voor FormCalc-expressies {#formcalc-expression-support}
+### Ondersteuning voor FormCalc-expressie {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1158,7 +1158,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   <tr>
    <td>for</td>
    <td><br type="_moz" /> </td>
-   <td>voor i = 100 tot 1 <br /> do s = s + i endfor</td>
+   <td>for i = 100 tot 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>voor elke</td>
@@ -1173,7 +1173,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
  </tbody>
 </table>
 
-### Ondersteuning voor Acrobat API {#acrobat-api-support}
+### Acrobat API-ondersteuning {#acrobat-api-support}
 
 1. **Rekenkundige functies**
 
@@ -1353,4 +1353,4 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 
 >[!NOTE]
 >
->HTML5-formulieren worden weergegeven op de client (browser). Het wordt aanbevolen om scripts op de client te **valideren** en te **berekenen** in plaats van scripts op de server.
+>HTML5-formulieren worden weergegeven op de client (browser). Aanbevolen wordt om clientscripts **validate** en **calculate** te gebruiken in plaats van serverscripts.

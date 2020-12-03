@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 translation-type: tm+mt
 source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+workflow-type: tm+mt
+source-wordcount: '891'
+ht-degree: 0%
 
 ---
 
@@ -44,9 +47,9 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
    * Selecteer boven aan het tabblad Criteria een proceselement of taakelement.
 
-      **Tip**: *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
+      **Tip**:  *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
 
-      **Tip**: *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
+      **Tip**:  *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
 
       De velden met zoekcriteria voor het geselecteerde element staan onder aan het tabblad Criteria.
 
@@ -55,9 +58,10 @@ U kunt zo veel zoeksjablonen maken als u wilt.
       * Selecteer een relationele operator (bijvoorbeeld &quot;gelijk aan&quot;) in de opgegeven lijst en geef de waarde van de operand op in het vak ernaast.
       * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
-      **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
 
-      **Tip**: U *kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
+      **Tip**:  *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Na het selecteren van een proces, zijn om het even welke procesvariabelen die in dat proces worden bepaald beschikbaar voor selectie onder de Variabelen van het Proces in de hoogste sectie van het lusje van Criteria.*
+
+      **Tip**:  *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
 
 
 1. (Optioneel) Klik op het tabblad Lay-out voor elke kolomkop die in de zoekresultaten moet worden weergegeven en voer de volgende stappen uit:
@@ -65,11 +69,12 @@ U kunt zo veel zoeksjablonen maken als u wilt.
    * Selecteer een proces- of taakelement en klik op de pijl-rechts om dit naar de lijst Kolommen te rapporteren te verplaatsen.
    * Selecteer in de lijst Kolommen die u wilt rapporteren het proces- of taakelement en klik op de pijl-omhoog of pijl-omlaag om dit naar de gewenste plaats in de kolomvolgorde te verplaatsen. De kolomkoppen in de zoekresultaten worden weergegeven in de volgorde waarin ze hier worden vermeld.
    * (Optioneel) Als u de naam van het element voor de kolomkop wilt wijzigen, selecteert u het element in de lijst Te rapporteren kolommen en geeft u de nieuwe naam op.
+
    >[!NOTE]
    >
    >De indeling die in de zoeksjabloon is opgegeven, heeft voorrang op de gebruikersvoorkeuren die voor kolomkoppen in Workspace zijn opgegeven.
 
-1. (Optioneel) Als u de zoekresultaten wilt sorteren in elke kolom, klikt u op het tabblad Sorteren en voert u de volgende stappen uit:
+1. (Optioneel) Klik op het tabblad Sorteren voor elke kolom die u in de zoekresultaten wilt sorteren en voer de volgende stappen uit:
 
    * Selecteer een proces- of taakelement en klik op de pijl-rechts om dit naar de lijst Sorteervolgorde te verplaatsen.
    * Selecteer het proces- of taakelement in de lijst Sorteervolgorde en klik op Pijl-omhoog of Pijl-omlaag om het element in de sorteervolgorde te verplaatsen. De kolommen in de zoekresultaten worden gesorteerd op basis van de volgorde waarin ze hier worden weergegeven.

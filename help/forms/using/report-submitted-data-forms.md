@@ -17,13 +17,13 @@ ht-degree: 5%
 ---
 
 
-# API&#39;s voor het werken met verzonden formulieren op een formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
+# API&#39;s voor het werken met verzonden formulieren op formulierportal {#apis-to-work-with-submitted-forms-on-forms-portal}
 
 AEM Forms biedt API&#39;s die u kunt gebruiken voor het zoeken naar formuliergegevens die via de portal Formulieren worden verzonden. Bovendien kunt u opmerkingen plaatsen of eigenschappen van verzonden formulieren bijwerken met de API&#39;s die in dit document worden beschreven.
 
 >[!NOTE]
 >
->Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de groep revisoren, zoals wordt beschreven in [Verzendrevisoren koppelen aan een formulier](/help/forms/using/adding-reviewers-form.md).
+>Gebruikers die de API&#39;s aanroepen, moeten worden toegevoegd aan de revisorgroep zoals wordt beschreven in [Verzendrevisoren koppelen aan een formulier](/help/forms/using/adding-reviewers-form.md).
 
 ## GET /content/forms/portal/submission.review.json?func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -33,7 +33,7 @@ Retourneert een lijst met alle in aanmerking komende formulieren.
 
 Voor deze API zijn geen aanvullende parameters vereist.
 
-### Response {#response}
+### Reactie {#response}
 
 Het reactieobject bevat een JSON-array die formuliernamen en het pad naar de opslagplaats bevat. De structuur van de respons is als volgt:
 
@@ -91,7 +91,7 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr>
   <tr>
    <td><code>sort</code> <br /> (optioneel)</td>
-   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <strong>desc</strong>, dat in dalende orde sorteert. U kunt opgeven <code>asc</code> om de resultaten in oplopende volgorde te sorteren.</td>
+   <td>Hiermee geeft u de volgorde voor het sorteren van resultaten op. De standaardwaarde is <strong>desc</strong>, die resultaten in dalende orde sorteert. U kunt <code>asc</code> specificeren om resultaten in stijgende orde te sorteren.</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> (optioneel)</td>
@@ -104,7 +104,7 @@ Geef de volgende parameters op in de aanvraag-URL:
  </tbody>
 </table>
 
-### Response {#response-1}
+### Reactie {#response-1}
 
 Het reactieobject bevat een JSON-array die details van de opgegeven formulieren bevat. De structuur van de respons is als volgt:
 
@@ -142,7 +142,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 | `submitID` | Hiermee wordt de metagegevens-id opgegeven die aan een verzendinstantie is gekoppeld. |
 | `Comment` | Geeft de tekst aan voor de opmerking die moet worden toegevoegd aan de opgegeven verzendinstantie. |
 
-### Response {#response-2}
+### Reactie {#response-2}
 
 Retourneert een opmerking-id bij het plaatsen van een opmerking.
 
@@ -172,7 +172,7 @@ Geef de volgende parameter op in de aanvraag-URL:
 |---|---|
 | `submitID` | Hiermee wordt de metagegevens-id van een verzendinstantie opgegeven. |
 
-### Response {#response-3}
+### Reactie {#response-3}
 
 Het reactieobject bevat een JSON-array die alle opmerkingen bevat die aan de opgegeven verzendings-id zijn gekoppeld. De structuur van de respons is als volgt:
 
@@ -212,7 +212,7 @@ Geef de volgende parameters op in de aanvraag-URL:
 | `property` | Hiermee geeft u de formuliereigenschap op die moet worden bijgewerkt. |
 | `value` | Hiermee wordt de waarde opgegeven van de eigenschap form die moet worden bijgewerkt. |
 
-### Response {#response-4}
+### Reactie {#response-4}
 
 Retourneert een JSON-object met informatie over de geposte update.
 

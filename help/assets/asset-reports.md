@@ -3,15 +3,15 @@ title: Rapporten over het gebruik en het delen van elementen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 6016cefa9456d8f142347ff197b61b1614d55ab9
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 8%
+source-wordcount: '1065'
+ht-degree: 7%
 
 ---
 
 
-# Elementrapporten {#asset-reports}
+# Rapporten over assets {#asset-reports}
 
 Met Asset Reporting kunt u het nut van uw [!DNL Adobe Experience Manager Assets]-implementatie beoordelen. Met [!DNL Assets] kunt u verschillende rapporten genereren voor uw digitale middelen. De rapporten bevatten nuttige informatie over het gebruik van uw systeem, over de manier waarop gebruikers met elementen werken en over de elementen die worden gedownload en gedeeld.
 
@@ -152,3 +152,11 @@ Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegm
 1. Open de **[!UICONTROL DAM Report Purge Service]** configuratie.
 1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het veld `scheduler.expression.name`. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
 1. Sla de wijzigingen op.
+
+## Informatie, tips en beperkingen voor probleemoplossing {#best-practices-and-limitations}
+
+* Als sommige rapporten of aantallen in de rapporten niet beschikbaar of zoals verwacht zijn, zorg ervoor dat [!UICONTROL Day CQ DAM Event Recorder] de dienst wordt toegelaten.
+
+* Verwijder de rapporten die niet meer vereist zijn. Gebruik de configuratieopties in de DAM dienst van de Leegmaken van het Rapport om de criteria te vormen om rapporten te zuiveren.
+
+* Als het Rapport van het Gebruik van de Schijf niet produceert en u [!DNL Dynamic Media] gebruikt, zorg ervoor dat alle activa correct te werk gaan. U lost de problemen op door de elementen opnieuw te verwerken en vervolgens het rapport opnieuw te genereren.

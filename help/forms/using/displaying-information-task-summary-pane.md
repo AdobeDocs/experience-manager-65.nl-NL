@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Informatie weergeven in het deelvenster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
+# Informatie weergeven in het venster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
 
-Wanneer u een taak in de werkruimte van AEM Forms opent, kan een ruit van het Overzicht van de Taak een samenvatting van de taak tonen. Deze extra en relevante informatie voor een taak voegt meer waarde voor de eindgebruiker van de werkruimte van AEM Forms toe.
+Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakoverzicht een overzicht van de taak weergegeven. Deze aanvullende en relevante informatie voor een taak voegt meer waarde toe aan de eindgebruiker van de AEM Forms-werkruimte.
 
-In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
+In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
-1. Maak een taakproces toewijzen in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Hulp](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Maak een taakproces toewijzen in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Help](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
@@ -33,9 +33,9 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
 1. Configureer het veld Taakoverzicht-URL. U kunt een letterlijke waarde, een sjabloon, een variabele of een XPath-expressie opgeven.
 1. Hieronder ziet u een voorbeeld van het weergeven van de informatie op de pagina Taakoverzicht.
 
-   * Meld u aan bij de CRXDE Lite-omgeving bij `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**SampleSummary **` under `/` with type `content:`. In the properties of this node, add `unstructuresling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**SampleSummary **onder`/apps`. In de Lijst van het Toegangsbeheer van`/apps/SampleSummary`, voeg een ingang toe voor het`PERM_WORKSPACE_USER`toestaan van`jcr:readprivileges`.
+   * Meld u aan bij de CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuresling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
+   * `Create a folder`**** SampleSummaryunder  `/apps`. In de Lijst van het Toegangsbeheer van `/apps/SampleSummary`, voeg een ingang voor `PERM_WORKSPACE_USER` toe die `jcr:readprivileges` toestaat.
    * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
 
    ```html
@@ -51,5 +51,5 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
    </html>
    ```
 
-   * Plaats de waarde van taak summiere url zoals `/lc/content/SampleSummary.html` in Assign de stap van de Taak.
+   * Plaats de waarde van taak summiere url als `/lc/content/SampleSummary.html` in de stap van de Taak toewijzen.
    * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van AEM Forms wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.

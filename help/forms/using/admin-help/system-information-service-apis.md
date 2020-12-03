@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
 
-# System Information Service API&#39;s {#system-information-service-apis}
+# Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
 
 De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te winnen. De volgende tabel bevat gedetailleerde informatie over de API&#39;s:
 
@@ -31,7 +34,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.properties`</p></td>
-   <td><p>Deze API is een wrapper voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
+   <td><p>Deze API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -51,10 +54,10 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.services</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.services</p></td>
-   <td><p>Haalt status- en configuratieparameters van AEM-formulierservices op.</p></td>
+   <td><p>Haalt status- en configuratieparameters van AEM formulierservices op.</p></td>
   </tr>
   <tr>
-   <td><p>SystemInfo.priorityDetails</p></td>
+   <td><p>SystemInfo.vitalDetails</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.essentialDetails</p></td>
    <td><p>Haalt serveruptime, JVM-argumenten, systeemgeheugen, heapgrootte, naam van het besturingssysteem, aantal actieve threads en aantal threads op. </p></td>
   </tr>
@@ -85,7 +88,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.licenseInfo</p></td>
-   <td><p>Hiermee worden versie- en licentiegegevens van geïnstalleerde AEM-formuliercomponenten opgehaald. </p></td>
+   <td><p>Hiermee worden versie- en licentiegegevens opgehaald van geïnstalleerde AEM formulieronderdelen. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td>

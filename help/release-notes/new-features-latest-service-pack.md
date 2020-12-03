@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e056d25cf16d79e8eadc80b9cb17b60b2ba8d7e1
+source-git-commit: 55ef8af25887a59d9d13275645c1ec20f0c49380
 workflow-type: tm+mt
-source-wordcount: '2667'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,23 @@ U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerking
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on pakketten worden een week na de geplande release van  [!DNL Experience Manager] Service Pack beschikbaar gesteld. [!DNL Experience Manager] 6.5 Service Pack 7 (6.5.7.0) is gepland om op 26 november 2020 vrij te geven.
+>[!DNL Experience Manager Forms] add-on pakketten worden een week na de geplande release van  [!DNL Experience Manager] Service Pack beschikbaar gesteld.
+
+### Prestatieverbeteringen {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms verbetert de prestaties voor:
+
+* De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
+
+* Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
+
+### Formuliergegevensmodel HTTP-clientconfiguratie om prestaties te optimaliseren {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] het model van vormgegevens wanneer het integreren met RESTful Webdiensten als gegevensbron omvat nu de cliëntconfiguraties van HTTP voor prestatiesoptimalisering.
+
+### Beschikbaarheid van de Optie van het Terugstellen voor elke component op de wijze van de Lay-out {#reset-option-layout-mode}
+
+U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen.
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 

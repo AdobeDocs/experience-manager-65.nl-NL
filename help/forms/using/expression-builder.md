@@ -22,9 +22,9 @@ ht-degree: 1%
 
 Met de expressiebouwer kunt u expressies of voorwaarden maken waarmee berekeningen worden uitgevoerd op gegevenswaarden die worden geleverd door het gegevenswoordenboek of door eindgebruikers. Het Beheer van de correspondentie gebruikt het resultaat van de uitdrukkingsevaluatie om activa zoals tekst, beelden, lijsten, en voorwaarden te selecteren en hen op te nemen in de correspondentie zoals vereist.
 
-## Expressies en externe functies maken met expressiebuilder {#creating-expressions-and-remote-functions-with-expression-builder}
+## Expressies en externe functies maken met de expressiebouwer {#creating-expressions-and-remote-functions-with-expression-builder}
 
-De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie [Voorbeeldexpressies](#exampleexpressions)voor meer informatie.
+De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie [Voorbeeldexpressies](#exampleexpressions) voor meer informatie.
 
 ![Expressiebouwer](assets/expressionbuilder.png)
 
@@ -40,9 +40,9 @@ Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing v
 * Twee tekenreeksen aaneenschakelen: ${str1} ${str2}
 * Twee getallen vergelijken: ${age &lt; 18}
 
-Meer informatie vindt u in de [JSP EL-specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
+U kunt meer informatie in [JSP EL specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf) vinden. De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
 
-* Indexen en kaartsleutels voor verzamelingen (met de [] notatie) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
+* Indexen en kaartsleutels voor verzamelingen (met de notatie []) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
 * Hieronder volgen de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
 
    * java.lang.String
@@ -60,7 +60,7 @@ Meer informatie vindt u in de [JSP EL-specificatie](https://download.oracle.com/
    * java.lang.Double
    * Dubbel
    * java.lang.Long
-   * Long
+   * Lang
    * java.lang.Float
    * Zwevend
    * java.util.Calendar
@@ -157,8 +157,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Hieronder vindt u voorbeeldarchieven die moeten worden gebruikt:
 
-* **GoodFunctions.jar.zip** is het jar-bestand met bundel dat een voorbeeld van een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
-* **GoodFunctions.zip** is het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
+* **GoodFunctions.jar.** zipis het jar-bestand met bundel dat een voorbeeld van een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
+* **GoodFunctions.** zipis het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
 
 GoodFunctions.jar.zip
 

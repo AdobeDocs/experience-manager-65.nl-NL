@@ -16,15 +16,15 @@ ht-degree: 0%
 ---
 
 
-# Een Correspondentiebeheeroplossing configureren {#configuring-a-correspondence-management-solution}
+# Een Correspondentiebeheeroplossing {#configuring-a-correspondence-management-solution} configureren
 
-## URL van auteurinstantie voor VersionRestoreManagerImpl bepalen {#defining-author-instance-url-for-versionrestoremanagerimpl}
+## URL van auteurinstantie voor VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl} bepalen
 
 Gebruik de volgende stappen om een instantie-URL van de auteur te definiëren voor het terugzetten van de auteurversie:
 
 1. Ga naar *https://:&lt;PublishHost>:&lt;PublishPort>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
-1. Zoek en klik op het **[!UICONTROL Edit]** pictogram naast de **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]** instelling.
-1. Geef in het **[!UICONTROL VersionRestoreManager Author URL]** veld de URL op van de instantie Auteur van VersionRestoreManager.
+1. Zoek en klik op het pictogram **[!UICONTROL Edit]** naast de instelling **[!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name]**.
+1. Geef in het veld **[!UICONTROL VersionRestoreManager Author URL]** de URL van de instantie Auteur van VersionRestoreManager op.
 
    **URL-tekenreeks**:
 
@@ -32,7 +32,7 @@ Gebruik de volgende stappen om een instantie-URL van de auteur te definiëren vo
 
    >[!NOTE]
    >
-   >Als er meerdere auteur-instanties (geclusterd) zijn met een taakverdeler, geeft u de URL voor het taakverdelingsmechanisme in het **[!UICONTROL VersionRestoreManager Author URL]** veld op.
+   >Als er meerdere auteur-instanties (geclusterd) zijn met een taakverdeler, geeft u de URL voor het taakverdelingsmechanisme op in het veld **[!UICONTROL VersionRestoreManager Author URL]**.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -40,9 +40,9 @@ Gebruik de volgende stappen om een instantie-URL van de auteur te definiëren vo
 
 Voer de volgende stappen uit om de URL van de instantie Publiceren te definiëren voor het beheer voor activering van openbare instanties:
 
-1. Ga naar *https://:&lt;auteurshost>:&lt;auteurshaven>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
-1. Zoek en klik op het **[!UICONTROL Edit]** pictogram naast de **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]** instelling.
-1. Geef in het **[!UICONTROL ActivationManager Publish URL]** veld de URL op voor toegang tot de Publish Instance ActivationManager. U kunt de volgende URL&#39;s opgeven.
+1. Ga naar *https://:&lt;auteurshost>:&lt;auteurPort>/lc/system/console/configMgr*. Meld u aan met de gebruikersgegevens van de OSGi Management Console. De standaardreferenties zijn admin/admin.
+1. Zoek en klik op het pictogram **[!UICONTROL Edit]** naast de instelling **[!UICONTROL com.adobe.livecycle.content.activate.impl.ActivationManagerImpl.name]**.
+1. Geef in het veld **[!UICONTROL ActivationManager Publish URL]** de URL op voor toegang tot de instantie Publish ActivationManager. U kunt de volgende URL&#39;s opgeven.
 
    * **Load Balancer URL (aanbevolen)**: Geef een URL voor het taakverdelingsmechanisme op als u een webserver hebt die als taakverdelingsmechanisme fungeert vóór het publicatiefarm (meerdere niet-geclusterde publicatieinstanties).
    * **URL** van instantie publiceren: Geef een URL voor een publicatieexemplaar op als u één publicatieexemplaar hebt of als de webserver die de publicatiecapaciteit doorstuurt, niet toegankelijk is vanuit de auteursomgeving vanwege beperkingen. Als de opgegeven publicatie-instantie is ingedrukt, is er een fallback-mechanisme waarmee aan de auteurzijde moet worden omgegaan.
@@ -52,4 +52,4 @@ Voer de volgende stappen uit om de URL van de instantie Publiceren te definiëre
 
 1. Klik op **[!UICONTROL Save]**.
 
-Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie de Eigenschappen [van de Configuratie van het Beheer van de](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html)Correspondentie.
+Voor meer informatie over het vormen van het Beheer van de Correspondentie, zie [Eigenschappen van de Configuratie van het Beheer van de Correspondentie](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html).

@@ -3,9 +3,9 @@ title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f6da1c69ea3b3c3f07e8ac10fd8e1e9c7208158
+source-git-commit: e36d08c9ea89e840aecde79ffdd911372c0c54ee
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '963'
 ht-degree: 3%
 
 ---
@@ -57,9 +57,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
    >
    >Als u een e-mailadres opgeeft van een gebruiker die geen lid is van uw organisatie, wordt het woord [!UICONTROL External User] voorafgegaan door de e-mailid van de gebruiker.
 
-1. Voer in het veld **[!UICONTROL Subject]** een onderwerpregel in.
+1. Voer in het tekstvak **[!UICONTROL Subject]** een onderwerp in voor het element dat u wilt delen.
 
-1. Voer in het veld **[!UICONTROL Message]** een optioneel bericht in.
+1. Voer in het tekstvak **[!UICONTROL Message]** een optioneel bericht in.
 
 1. Geef in het veld **[!UICONTROL Expiration]** een vervaldatum en -tijd op waarop de koppeling moet stoppen met werken. De vervaldatum wordt standaard ingesteld voor een week vanaf de datum waarop u de koppeling deelt.
 
@@ -69,9 +69,9 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling via e-mail met de gebruikers wordt gedeeld.
 
-1. Klik op de koppeling in de e-mail die naar de gebruiker is verzonden om het gedeelde element weer te geven. Het gedeelde element wordt weergegeven op de pagina **[!UICONTROL Adobe Marketing Cloud]**.
+1. Klik op de koppeling in de e-mail die naar de gebruiker is verzonden om het gedeelde element weer te geven. Het gedeelde element wordt weergegeven op de pagina [!UICONTROL Adobe Marketing Cloud].
 
-   ![chlimage_1-260](assets/chlimage_1-545.png)
+   ![Gedeelde elementen zijn beschikbaar in Adobe Marketing Cloud](assets/chlimage_1-545.png)
 
 1. Klik op het gedeelde element om een voorvertoning van het element te genereren. Als u de voorvertoning wilt sluiten en wilt terugkeren naar de pagina **[!UICONTROL Marketing Cloud]**, klikt u op **[!UICONTROL Back]** op de werkbalk. Als u een map hebt gedeeld, klikt u op **[!UICONTROL Parent Folder]** om terug te keren naar de bovenliggende map.
 
@@ -83,7 +83,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 1. Als u het gedeelde element wilt downloaden, klikt u op **[!UICONTROL Select]** op de werkbalk, klikt u op het element en vervolgens op **[!UICONTROL Download]** op de werkbalk.
 
-   ![chlimage_1-262](assets/chlimage_1-547.png)
+   ![Werkbalkoptie om het gedeelde element te downloaden](assets/chlimage_1-547.png)
 
 1. Als u de elementen wilt weergeven die u als koppelingen hebt gedeeld, gaat u naar de [!DNL Assets]-gebruikersinterface en klikt u op het [!DNL Experience Manager]-logo. Choose **[!UICONTROL Navigation]**. Kies **[!UICONTROL Shared Links]** in het navigatievenster om een lijst met gedeelde elementen weer te geven.
 

@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 11f3e2f7cb742340388bc9421a3ea8f25deabec5
+source-git-commit: 4abfda568fc15f225510c79635387142aefddc72
 workflow-type: tm+mt
 source-wordcount: '3861'
 ht-degree: 0%
@@ -215,7 +215,8 @@ Bovendien wordt een adaptief formulier dat geschikt is voor Adobe Sign alleen ve
 <!-- Remove when forms portal goes live
 >[!NOTE]
 >
->Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. -->
+>Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
+-->
 
 Uw ervaring voor het ondertekenen van formulieren is gereed. U kunt een voorbeeld van het formulier bekijken om de ondertekeningservaring te verifiëren. Op het gepubliceerde formulier worden de velden Adobe Sign Block weergegeven wanneer een ondertekenaar het formulier voor ondertekening via een e-mail ontvangt. Deze ervaring wordt ook wel bekend als een ondertekeningservaring in de vorm van een out-of-form. U kunt ook een ondertekeningservaring in formulieren configureren voor de eerste ondertekenaar. Zie [In-form ondertekeningservaring maken](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) voor gedetailleerde stappen.
 

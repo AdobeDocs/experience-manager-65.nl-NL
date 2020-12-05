@@ -1,11 +1,11 @@
 ---
 title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
-description: U genereert miniaturen en uitvoeringen van hoge kwaliteit met de Adobe PDF Rasterizer-bibliotheek in [!DNL Adobe Experience Manager].
+description: U kunt miniaturen en uitvoeringen van hoge kwaliteit genereren met de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: b68311d593730d1c441b863967b15e6481758267
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # PDF-rasterfunctie gebruiken {#using-pdf-rasterizer}
 
-Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardomzetting mogelijk geen nauwkeurige uitvoer. PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren in vergelijking met de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
+Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar [!DNL Adobe Experience Manager Assets], genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. PDF Rasterizer-bibliotheek kan een betrouwbaardere en nauwkeurigere uitvoer genereren in vergelijking met de uitvoer uit een standaardbibliotheek. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor de volgende scenario&#39;s:
+
+Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
 * AI-bestanden of PDF-bestanden met veel inhoud.
 * AI-bestanden en PDF-bestanden met miniaturen die niet standaard worden gegenereerd.
@@ -47,14 +49,12 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 1. Configureer de volgende argumenten voor de stap **[!UICONTROL PDF Rasterizer Handler]**:
 
    * MIME-typen: `application/pdf` of `application/postscript`
-   * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Opdrachten: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: 319:319, 140:100, 48:48. Voeg indien nodig aangepaste miniatuurconfiguratie toe.
 
    De opdrachtregelargumenten voor de opdracht `PDFRasterizer` kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
-
-   * `-p`: Paginanummer. De standaardwaarde is alle pagina&#39;s. Om alle pagina&#39;s aan te duiden, gebruik `*`.
 
    * `-s`: Maximale afmetingen afbeelding (hoogte of breedte). Deze wordt voor elke pagina geconverteerd naar DPI. Als de pagina&#39;s van verschillende grootte zijn, kan elke pagina potentieel met verschillende hoeveelheid schalen. De standaardinstelling is het daadwerkelijke paginaformaat.
 
@@ -66,7 +66,6 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 
 1. Als u tussenliggende vertoningen wilt verwijderen, selecteert u **[!UICONTROL Delete Generated Rendition]**.
-
 1. Selecteer **[!UICONTROL Generate Web Rendition]** als u wilt dat PDF Rasterizer webuitvoeringen genereert.
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
@@ -76,23 +75,17 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. Sla de workflow op.
-
 1. Als u wilt dat PDF-rasterfunctie PDF-pagina&#39;s kan verwerken met PDF-bibliotheken, opent u het **[!UICONTROL DAM Process Subasset]**-model in de console [!UICONTROL Workflow].
-
 1. Sleep vanuit het zijpaneel de stap PDF Rasterizer Handler onder de stap **[!UICONTROL Create Web-Enabled Image Rendition]**.
-
 1. Configureer de volgende argumenten voor de stap **[!UICONTROL PDF Rasterizer Handler]**:
 
    * MIME-typen: `application/pdf` of `application/postscript`
-
-   * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
+   * Opdrachten: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: `319:319`, `140:100`, `48:48`. Voeg desgewenst aangepaste miniatuurconfiguratie toe.
 
    De opdrachtregelargumenten voor de opdracht `PDFRasterizer` kunnen het volgende bevatten:
 
    * `-d`: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
-
-   * `-p`: Paginanummer. De standaardwaarde is alle pagina&#39;s. `*` geeft alle pagina&#39;s aan.
 
    * `-s`: Maximale afmetingen afbeelding (hoogte of breedte). Deze wordt voor elke pagina geconverteerd naar DPI. Als de pagina&#39;s van verschillende grootte zijn, kan elke pagina potentieel met verschillende hoeveelheid schalen. De standaardinstelling is het daadwerkelijke paginaformaat.
 

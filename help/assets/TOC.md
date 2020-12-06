@@ -7,9 +7,9 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 696aaa54007e4a78fe6b07d8ba65660595286dca
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '590'
 ht-degree: 34%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 34%
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Scene7-functies aan uw pagina toevoegen](scene7.md)
+   + [Dynamische mediafuncties toevoegen aan uw pagina](scene7.md)
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)

@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2020'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
 1. Navigeer naar de [!DNL Assets] gebruikersinterface en klik op Zoeken.
 
-1. Typ het zoekwoord in het vak Zoeken en druk op `Enter`. Open het deelvenster Filters en pas een zoekfilter toe.
+1. Typ het zoekwoord in het vak Zoeken en selecteer `Enter`. Open het deelvenster Filters en pas een zoekfilter toe.
 
 1. Selecteer **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**.
 
@@ -120,7 +120,7 @@ U kunt het element ook naar het **[!UICONTROL Drop in Collection]**-gebied op de
 Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u de inhoud kunt wijzigen door de zoekparameters van de [opgeslagen zoekopdracht](#saved-searches) te wijzigen.
 
 1. Klik in de gebruikersinterface [!DNL Assets] op de zoekoptie ![zoekoptie](assets/do-not-localize/search_icon.png) op de werkbalk.
-1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
+1. Met de curseur in het vakje van het Onderzoek, selecteer `Return` sleutel.
 1. Open in de interface [!DNL Experience Manager] het deelvenster Filters.
 1. Selecteer in de lijst met **[!UICONTROL Saved Searches]** de slimme verzameling die u wilt wijzigen. In het deelvenster Zoeken worden de filters weergegeven die zijn geconfigureerd voor de opgeslagen zoekopdracht.
 
@@ -249,7 +249,7 @@ Opgeslagen zoekopdrachten bewerken is hetzelfde als slimme verzamelingen bewerke
 Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 1. Klik in de gebruikersinterface [!DNL Assets] op Zoeken ![zoekoptie](assets/do-not-localize/search_icon.png).
-1. Met de curseur op het gebied van Onderzoek, druk de sleutel van de Terugkeer.
+1. Met de curseur op het gebied van Onderzoek, selecteer `Return` sleutel.
 1. Open in de interface [!DNL Experience Manager] het deelvenster Filters.
 1. Klik in de lijst **[!UICONTROL Saved Searches]** op **[!UICONTROL Delete]** naast de slimme verzameling die u wilt verwijderen.
 

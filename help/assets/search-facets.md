@@ -3,10 +3,10 @@ title: Zoeken in facetten om zoekresultaten te filteren
 description: Hoe te om tot stand te brengen, te wijzigen en, onderzoeksfacetten in  [!DNL Adobe Experience Manager] te gebruiken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2288'
-ht-degree: 15%
+source-wordcount: '2274'
+ht-degree: 14%
 
 ---
 
@@ -38,15 +38,15 @@ Voor full-text onderzoeken, voeg [!UICONTROL Fulltext] voorspellen aan de vorm t
    >
    >1. Navigeer naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
    >1. Verwijder het knooppunt **type**.
-   >1. Kopieer van het pad */libs/settings/dam/search/facets/assets/jcr:content/items* de knooppunten **asset, directory, typeor, excludepaths** en **searchType** naar het pad dat in stap 1 wordt vermeld.
+   >1. Kopieer vanuit het pad `/libs/settings/dam/search/facets/assets/jcr:content/items` de knooppunten `asset`, `directory`, `typeor`, `excludepaths` en `searchtype` naar het pad dat in stap 1 wordt vermeld.
    >1. Sla de wijzigingen op.
 
 
 1. Sleep op de pagina [!UICONTROL Edit Search Forms] een voorspelling van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster. Sleep bijvoorbeeld **[!UICONTROL Property Predicate]**.
 
-   ![Druk op een voorvertoning en verplaats deze om de zoekfilters aan te passen](assets/drag_predicate.png)
+   ![Een voorspelling selecteren en verplaatsen om de zoekfilters aan te passen](assets/drag_predicate.png)
 
-   *Afbeelding: Druk op en verplaats een voorspelling om de zoekfilters aan te passen.*
+   *Afbeelding: Selecteer en verplaats een voorspelling om de zoekfilters aan te passen.*
 
 1. Voer op het tabblad [!UICONTROL Settings] een veldlabel, plaatsaanduidingstekst en beschrijving voor de voorspelling in. Geef een geldige naam op voor de eigenschap metadata die u aan de voorspelling wilt koppelen. Het koptekstlabel op het tabblad [!UICONTROL Settings] geeft het type van de geselecteerde voorspelling aan.
 

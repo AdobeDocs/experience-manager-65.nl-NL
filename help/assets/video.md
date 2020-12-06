@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f63e13486792f9975c84202b2cd3ddcf618ce0fc
 workflow-type: tm+mt
 source-wordcount: '11340'
 ht-degree: 6%
@@ -404,7 +404,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 |--- |--- |--- |--- |
 | Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 3 |
+| Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -758,7 +758,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Voor gedetailleerdere voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+>Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 Video&#39;s publiceren naar uw YouTube-kanaal:
 
@@ -991,13 +991,13 @@ Videorapporten weergeven:
 1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports.]**
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
 
-   * Tik in de rechterbovenhoek op het pictogram **Videorapport vernieuwen **pictogram.
+   * Tik in de rechterbovenhoek op het pictogram **Video-rapport vernieuwen**.
 U hoeft alleen Vernieuwen te gebruiken als de einddatum van het rapport de huidige dag is. Dit zorgt ervoor dat u video het volgen ziet die sinds de laatste tijd is voorgekomen u het rapport in werking stelde.
 
-   * Tik in de rechterbovenhoek op de **Datumkiezer **pictogram.
+   * Tik in de rechterbovenhoek op het pictogram **Datumkiezer**.
 Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik op **[!UICONTROL Run Report.]**
 
-   In het groepsvak Metriek bovenaan ziet u verschillende statistische metingen voor alle *gepubliceerde *video&#39;s op uw site.
+   In het groepsvak Metriek bovenaan ziet u diverse geaggregeerde metingen voor alle *gepubliceerde* video&#39;s op uw site.
 
 1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 

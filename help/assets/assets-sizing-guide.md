@@ -3,9 +3,9 @@ title: '[!DNL Assets] formaatgids'
 description: Aanbevolen werkwijzen om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om  [!DNL Adobe Experience Manager Assets] op te stellen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
 1. Hiermee wordt een representatieve steekproef opgehaald van de elementen die naar [!DNL Experience Manager] moeten worden geüpload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
+1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamische Media uitvoeren, kunt u binair IC gebruiken om de vertoningen te produceren PTIFF die in Experience Manager moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor voor de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.

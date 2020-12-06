@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: 54645149dc4968c1c4f85eedb5ce4d71f80c3b64
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 18%
@@ -50,7 +50,7 @@ Zie ook [Overzicht van cache in Dynamic Media Classic (Scene7)](https://helpx.ad
    Als de sjabloon alleen `<ID>` bevat, worden Dynamic Media `https://<server>/is/image` ingevuld, waarbij `<server>` de naam van de publicatieserver is die is gedefinieerd in Algemene instellingen en &lt;ID> de middelen is die zijn geselecteerd om ongeldig te worden gemaakt.
 
 1. Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Close.]**
-1. Selecteer een of meer elementen in de gebruikersinterface Dynamic Media Classic (Scene7) en klik op **[!UICONTROL File > Invalidate CDN.]**. Er wordt een lijst weergegeven met een of meer URL&#39;s die zijn gegenereerd op basis van de sjabloon die u hebt gemaakt en het element dat u hebt geselecteerd. De URL van de server wordt gebruikt onder &quot;Gepubliceerde servernaam&quot; onder Algemene instellingen van toepassing.
+1. Selecteer een of meer elementen in de gebruikersinterface Dynamic Media Classic en klik op **[!UICONTROL File > Invalidate CDN.]**. Er wordt een lijst weergegeven met een of meer URL&#39;s die zijn gegenereerd op basis van de sjabloon die u hebt gemaakt en het element dat u hebt geselecteerd. De URL van de server wordt gebruikt onder &quot;Gepubliceerde servernaam&quot; onder Algemene instellingen van toepassing.
 
    Stel dat u, terwijl de CDN-validatiesjabloon in de vorige stap is ingesteld, één afbeelding met afbeeldingselementen hebt geselecteerd met de naam `Backpack_B`. Wanneer u op **[!UICONTROL File > Invalidate CDN]** klikt, resulteert dit in de volgende gegenereerde URL in de gebruikersinterface voor CDN-validatie:
 

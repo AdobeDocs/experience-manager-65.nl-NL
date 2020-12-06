@@ -4,9 +4,9 @@ description: Suggesties en richtlijnen voor [!DNL Experience Manager] configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: cc61b8473fb919a963eb73c015efbc2f06197ee8
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2678'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Het instellen van een wachtrij op de helft van de beschikbare processors is een 
 
 ### DAM Update Asset Configuration {#dam-update-asset-configuration}
 
-De [!UICONTROL DAM Update Asset]-workflow bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals Scene7 PTIFF-generatie en [!DNL Adobe InDesign Server]-integratie. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het [!UICONTROL DAM Update Asset]-workflowmodel te maken en overbodige stappen te verwijderen. In dit geval werkt u de draagraketten voor [!UICONTROL DAM Update Asset] bij om naar het nieuwe model te verwijzen.
+De [!UICONTROL DAM Update Asset]-workflow bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals Dynamic Media PTIFF-generatie en [!DNL Adobe InDesign Server]-integratie. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het [!UICONTROL DAM Update Asset]-workflowmodel te maken en overbodige stappen te verwijderen. In dit geval werkt u de draagraketten voor [!UICONTROL DAM Update Asset] bij om naar het nieuwe model te verwijzen.
 
 Als u de [!UICONTROL DAM Update Asset]-workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de datastore-grootte met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
 
@@ -180,7 +180,7 @@ Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun w
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een andere manier is om Scene7-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
+Een andere manier is om gebruik te maken van Dynamic Media-technologie om afbeeldingen volledig te manipuleren. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 

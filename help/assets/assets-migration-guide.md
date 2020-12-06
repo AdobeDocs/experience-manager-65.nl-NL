@@ -3,9 +3,9 @@ title: Elementen in bulk migreren
 description: Beschrijft hoe te om activa in  [!DNL Adobe Experience Manager] te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1781'
 ht-degree: 8%
 
 ---
@@ -79,7 +79,7 @@ Aangezien elementen niet via een netwerk hoeven te worden verzonden, verbeteren 
 
 ### Procesuitvoeringen {#processing-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de [!UICONTROL DAM Update Asset]-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de [!UICONTROL DAM Update Asset]-workflow dupliceren en aanpassen aan uw wensen. De out-of-the-box workflow bevat veel stappen die u wellicht niet nodig hebt, zoals Scene7 PTIFF-generatie of [!DNL InDesign Server]-integratie.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de [!UICONTROL DAM Update Asset]-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de [!UICONTROL DAM Update Asset]-workflow dupliceren en aanpassen aan uw wensen. De werkstroom uit de doos bevat vele stappen die niet noodzakelijk voor u kunnen zijn, zoals Dynamische Media PTIFF generatie of [!DNL InDesign Server] integratie.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 

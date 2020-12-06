@@ -3,9 +3,9 @@ title: Metagegevensconcepten begrijpen
 description: Leer over de behoefte van en de soorten meta-gegevens die voor gemakkelijkere categorisering en organisatie van activa toestaan.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '2720'
+source-wordcount: '2719'
 ht-degree: 6%
 
 ---
@@ -178,7 +178,7 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
 | beschrijving | Meer informatie over het element. |
 | format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruikt  `dc:format` om het MIME-type van het element aan te duiden. |
 | id | Een unieke verwijzing naar het element. |
-| language | De taal van het element (bijvoorbeeld en voor Engels). |
+| language | De taal van het element (bijvoorbeeld `en` voor Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |
 | relation | Een gerelateerd actief. |
 | rechten | Informatie over wie de rechten op dit actief heeft. |

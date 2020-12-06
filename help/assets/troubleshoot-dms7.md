@@ -1,6 +1,6 @@
 ---
 title: Problemen met dynamische media oplossen - Scene7-modus
-description: Problemen met Dynamic Media oplossen in Scene7-runmode.
+description: Problemen met dynamische media oplossen wanneer deze wordt uitgevoerd in de Scene7-modus.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e916f70549197ac9f95443e972401a78735b0560
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende 
 * Om het even welke AEM 6.4 cumulatieve moeilijke fixpakken (GFPs) zijn eerst geïnstalleerd *vóór* om het even welke beschikbare Dynamische Packs van de Eigenschap van Media.
 * Optioneel Feature Pack 18912 is geïnstalleerd.
 
-   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen migreert naar Dynamic Media van Dynamic Media Classic (Scene7).
+   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen migreert naar Dynamic Media van Dynamic Media Classic.
 
 * Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations.]** verschijnt
 * Zorg ervoor dat `Dynamic Media Asset Activation (scene7)` replicatieagent wordt toegelaten.

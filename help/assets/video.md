@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '11356'
+source-wordcount: '11340'
 ht-degree: 6%
 
 ---
@@ -146,7 +146,7 @@ Voor het beheren van afzonderlijke video- en adaptieve videosets wordt het volge
 * Video organiseren, doorbladeren en doorzoeken met volledige metagegevensondersteuning voor een efficiënt beheer van video-elementen.
 * Lever Adaptieve videosets naar het web, naar desktops en mobiele apparaten, waaronder de iPhone, iPad, Android, Blackberry en Windows-telefoon.
 
-Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor Scene7-viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [Referentiehandleiding voor dynamische mediaverviewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
 Dynamische media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. U vindt Blackberry-apparaten die deze video-indeling ondersteunen op de volgende locatie: [Ondersteunde video-indelingen op Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -162,7 +162,7 @@ U kunt de apparaten van Vensters vinden die dit videoformaat bij het volgende st
 
 Zie [Dynamisch afspelen van video](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) voorbeeld.
 
-Zie ook [Viewers for AEM Assets and Dynamic Media Classic](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) en [Viewers for AEM assets only](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in de Adobe Scene7 Viewers Reference Guide.
+Zie ook [Viewers voor AEM Assets en Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) en [Viewers voor alleen AEM middelen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ## Beste praktijken: De HTML5-videoviewer {#best-practice-using-the-html-video-viewer} gebruiken
 
@@ -174,7 +174,7 @@ Aan de afspeelzijde van de viewer wordt automatisch de videocapaciteit van de br
 
 Door de combinatie in één speler van de capaciteit om de playbackcomponenten te ontwerpen gebruikend HTML5 en CSS, ingebedde playback te hebben, en adaptieve en progressieve het stromen te gebruiken afhankelijk van het vermogen van browser, breidt u het bereik van uw rijke media inhoud tot zowel Desktop als mobiele gebruikers uit en verzekert een gestroomlijnde videoervaring.
 
-Zie ook [Informatie over HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in de Adobe Scene7 Viewers Reference Guide.
+Zie ook [Informatie over HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
 ### Afspelen van video op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -191,7 +191,7 @@ HLS is een Apple-standaard voor adaptieve videostreaming die het afspelen automa
 
 Progressieve video wordt geleverd door de video lokaal te downloaden en op het desktopsysteem of mobiele apparaat van de gebruiker op te slaan.
 
-In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de Scene7 Video Viewer.
+In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de Dynamic Media Video Viewer.
 
 <table>
  <tbody>
@@ -404,7 +404,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 |--- |--- |--- |--- |
 | Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 1 |
+| Gecodeerd | 640 x 360 | 3 | 3 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -1005,9 +1005,9 @@ Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik op **
 
 Als u een uit-van-doos videoviewer gebruikt die door Dynamische Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die van een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om videorapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de SDK van de Scene7 HTML5 Viewer, voert u de volgende stappen uit om ervoor te zorgen dat de video-viewer traceergebeurtenissen verzendt naar Dynamic Media Video Reports.
 
-Gebruik de Scene7 Viewers Reference en de Scene7 HTML5 Viewers SDK om uw eigen videoviewers te maken.
+Gebruik de Naslaggids voor dynamische mediasviewers en de SDK van Scene7 HTML5 Viewers om uw eigen videoviewers te maken.
 
-Zie [Referentiehandleiding voor Scene7-viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Zie [Referentiehandleiding voor dynamische mediaverviewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 <!-- Download the Scene7 HTML Viewer SDK from Adobe Developer Connection.
 

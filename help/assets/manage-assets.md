@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9331'
 ht-degree: 3%
 
 ---
@@ -66,7 +66,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat dit zich in de [indeling
 
    ![Optie maken om elementen te uploaden](assets/create-options.png)
 
-   Als u meerdere bestanden wilt selecteren, drukt u op Ctrl of Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
+   Als u meerdere bestanden wilt selecteren, selecteert u `Ctrl` of `Command` en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Als u een iPad gebruikt, kunt u slechts één bestand tegelijk selecteren.
 
    U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Klik op **[!UICONTROL Pause]** naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
 
@@ -355,13 +355,13 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Navigeer in de gebruikersinterface [!DNL Assets] naar het gewenste element met `Tab` en de pijltoetsen.
 
-1. Druk op `Enter` om het gewenste element te openen. In de voorvertoningsmodus kunt u inzoomen op elementen.
+1. Selecteer `Enter` op het gewenste element om het te openen. In de voorvertoningsmodus kunt u inzoomen op elementen.
 
 1. Inzoomen op het element:
    1. Gebruik `Tab` om de focus naar de inzoomoptie te verplaatsen.
    1. Gebruik `Enter` om in te zoomen op de afbeelding.
 
-   Als u wilt uitzoomen, gebruikt u `Tab` om de focus naar de uitzoomoptie te verplaatsen en drukt u op `Enter`.
+   Als u wilt uitzoomen, gebruikt u `Tab` om de focus naar de uitzoomoptie te verplaatsen en selecteert u `Enter`.
 
 1. Gebruik `Shift` + `Tab` toetsen om de focus weer op de afbeelding te plaatsen.
 
@@ -395,7 +395,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Off Time]**. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar of via de [!DNL Assets] Webinterface of door HTTP API.
 
-1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op Enter. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager]. [!DNL YouTube] vereist dat codes worden gepubliceerd. Zie [video&#39;s publiceren naar YouTube](video.md#publishing-videos-to-youtube).
+1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en selecteert u `Enter`. De nieuwe tag wordt opgeslagen in [!DNL Experience Manager]. [!DNL YouTube] vereist dat codes worden gepubliceerd. Zie [video&#39;s publiceren naar YouTube](video.md#publishing-videos-to-youtube).
 
    >[!NOTE]
    >

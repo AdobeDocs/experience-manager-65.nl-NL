@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f5aa1d31f3b31e29073937e044c8fbac27138c4d
+source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
 workflow-type: tm+mt
-source-wordcount: '5720'
+source-wordcount: '5718'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 4%
 | [](#limitations) Beperkingen en  [tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
 
-Zoek elementen met behulp van het veld Onderzoek boven aan de webinterface. [!DNL Experience Manager] Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en druk terugkeer. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
+Zoek elementen met behulp van het veld Onderzoek boven aan de webinterface. [!DNL Experience Manager] Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klik ![search_icon](assets/do-not-localize/search_icon.png) in hoogste bar, ga onderzoekssleutelwoord in, en selecteer `Return`. U kunt ook de trefwoordsneltoets `/` (slash) gebruiken om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
 
 Gebruik het **[!UICONTROL Filters]** paneel om naar activa, omslagen, markeringen, en meta-gegevens te zoeken. U kunt zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen of verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md). Het filter [!UICONTROL File Type] in het [!UICONTROL Filters] paneel heeft gemengde-staat checkboxes. Tenzij u alle geneste voorspellen (of indelingen) selecteert, worden de selectievakjes op het eerste niveau daarom gedeeltelijk gecontroleerd.
 
@@ -259,7 +259,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 * Geef geen regelafstand op in de zoekopdracht als de zoekopdracht anders niet werkt.
 * [!DNL Experience Manager] Mogelijk blijft de zoekterm zichtbaar nadat u eigenschappen van een element hebt geselecteerd in de gezochte resultaten en vervolgens de zoekopdracht hebt geannuleerd.  <!-- (CQ-4273540) -->
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
-* Als u op Return drukt zonder op de zoekbalk te typen, geeft [!DNL Experience Manager] alleen een lijst met bestanden en niet met mappen. Als u specifiek naar omslagen zonder een sleutelwoord zoekt, [!DNL Experience Manager] keert geen resultaten terug.
+* Als u `Return` selecteert zonder in de bar van het Onderzoek te typen, [!DNL Experience Manager] keert een lijst van slechts dossiers en niet omslagen terug. Als u specifiek naar omslagen zonder een sleutelwoord zoekt, [!DNL Experience Manager] keert geen resultaten terug.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 

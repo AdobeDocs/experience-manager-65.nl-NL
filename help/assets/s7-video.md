@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1531'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ ht-degree: 0%
 
 # Video {#video}
 
-Middelen zijn bedoeld voor gecentraliseerd beheer van video-elementen, waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic (Scene7) en rechtstreeks vanuit Middelen toegang kunt krijgen tot Dynamic Media Classic-video&#39;s voor het ontwerpen van pagina&#39;s.
+Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Dynamic Media Classic-video&#39;s voor het ontwerpen van pagina&#39;s.
 
 De dynamische integratie van Media Klassieke video breidt het bereik van geoptimaliseerde video tot alle schermen (autoapparaat en bandbreedteopsporing) uit.
 
 * De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
-* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. Zie [Scene7 documentatie over adaptieve videoreeksen voor meer informatie](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten.
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -60,11 +60,11 @@ Als u een workflow of versie voor uw middelen nodig hebt, moet u deze eerst uplo
 1. In AEM hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Movies]** van de Inhoudszoeker.
 1. Auteur met **[!UICONTROL Scene7 Video]** of **[!UICONTROL Foundation Video]** component.
 
-### Als u uw video uploadt naar Scene7 {#if-you-are-uploading-your-video-to-scene}
+### Als u uw video uploadt naar Dynamic Media Classic {#if-you-are-uploading-your-video-to-scene}
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeemgeautomatiseerd)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeemgeautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 1. In AEM hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Scene7]** van de Inhoudszoeker.
 1. Auteur met de **[!UICONTROL Scene7 Video]** component.
 
@@ -85,7 +85,7 @@ Universele voorinstellingen configureren:
 
    >[!NOTE]
    >
-   >Raadpleeg de [Dynamische documentatie van Media Classic](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html) voor meer informatie over wat de videovoorinstellingen betekenen.
+   >Raadpleeg de [Dynamische documentatie van Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 

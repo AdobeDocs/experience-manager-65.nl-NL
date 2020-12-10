@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+source-git-commit: f696b1081f14ba379cde51a3542a5b1b5f9668e2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -23,37 +23,27 @@ ht-degree: 0%
 
 Deze sectie beschrijft de procedure die moet worden gevolgd om AEM voor de installaties van de Server van de Toepassing bij te werken.
 
-Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld om upgrades te documenteren die worden uitgevoerd van **AEM versie 5.6 tot 6.3**.
+Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld om upgrades te documenteren die worden uitgevoerd van **AEM versie 6.4 tot 6.5**.
 
-1. Start eerst JBoss. In de meeste situaties, kunt u dit doen door het `standalone.sh` startmanuscript in werking te stellen, door dit bevel van de terminal in werking te stellen:
-
-   ```shell
-   jboss-install-folder/bin/standalone.sh
-   ```
-
-1. Als AEM 5.6 al is geïmplementeerd, controleert u of de bundels correct werken door:
+1. Start eerst TomCat. In de meeste situaties, kunt u dit doen door het `./catalina.sh` startmanuscript in werking te stellen, door dit bevel van de terminal in werking te stellen:
 
    ```shell
-   wget https://<serveraddress:port>/cq/system/console/bundles
+   $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Verwijder vervolgens AEM 5.6:
+1. Als AEM 6.4 al is geïmplementeerd, controleert u of de bundels correct werken door toegang te krijgen tot:
 
    ```shell
-   rm jboss-install-folder/standalone/deployments/cq.war
+   https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Stop JBoss.
+1. Verwijder vervolgens AEM 6.4. Dit kan worden gedaan vanuit de TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma:
+1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Hiervoor downloadt u de nieuwste versie van crx2oak van [deze locatie](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
 
    ```shell
-   java -jar crx2oak.jar crx-quickstart/repository/ crx-quickstart/oak-repository
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
    ```
-
-   >[!NOTE]
-   >
-   >In dit voorbeeld is de eikenopslagplaats de tijdelijke map waarin de nieuwe geconverteerde opslagplaats zich bevindt. Voordat u deze stap uitvoert, moet u de nieuwste versie crx2oak.jar gebruiken.
 
 1. Verwijder de benodigde eigenschappen in het bestand sling.properties door het volgende te doen:
 
@@ -84,59 +74,41 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
 
    * Het bestand **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-1. Kopieer de nieuwe gemigreerde segmentstore naar de juiste locatie:
+   * **sling.options.file** verwijderen door uit te voeren: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-   ```shell
-   mv crx-quickstart/oak-repository/segmentstore crx-quickstart/repository/segmentstore
-   ```
-
-1. Kopieer ook de datastore:
-
-   ```shell
-   mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
-   ```
-
-1. Daarna, moet u de omslag tot stand brengen die de configuraties OSGi zal bevatten die met de nieuwe promotieinstantie zullen worden gebruikt. Meer in het bijzonder moet een map met de naam install worden gemaakt onder **crx-quickstart**.
-
-1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.3 zullen worden gebruikt. U kunt dit doen door twee dossiers met de volgende namen onder **crx-quickstart \ te creëren installeert**:
+1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.5 zullen worden gebruikt. U kunt dit doen door twee dossiers met de volgende namen onder `crx-quickstart\install` te creëren:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
-
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
    Deze twee dossiers zullen AEM vormen om een TarMK knoopopslag en een de gegevensopslag van het Dossier te gebruiken.
 
 1. Bewerk de configuratiebestanden om deze gebruiksklaar te maken. Meer specifiek:
 
-   * Voeg de volgende regel toe aan **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:\
-      `customBlobStore=true`
+   * Voeg de volgende regel toe aan `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-   * Voeg vervolgens de volgende regels toe aan **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+      ```customBlobStore=true```
+
+   * Voeg vervolgens de volgende regels toe aan `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
       ```
       path=./crx-quickstart/repository/datastore
-       minRecordLength=4096
+      minRecordLength=4096
       ```
 
-1. Verwijder de crx2 runmode door te lopen:
+1. U moet nu de uitvoeringswijzen in het AEM 6.5 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de oorlog van AEM 6.5 wordt ondergebracht. De naam van de map in dit voorbeeld is `temp`. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
 
-   ```shell
-   find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
+   ```
+   jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. U moet nu de uitvoeringswijzen in het AEM 6.3 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de AEM 6.3-oorlog is ondergebracht. De naam van de map in dit voorbeeld is **temp**. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
+1. Nadat de inhoud is uitgepakt, gaat u naar de map **WEB-INF** en bewerkt u het bestand web.xml om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar deze in de XML zijn ingesteld, zoekt u de tekenreeks `sling.run.modes`. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
 
-   ```shell
-   jar xvf aem-quickstart-6.3.0.war
-   ```
-
-1. Nadat de inhoud is uitgepakt, gaat u naar de map **WEB-INF** en bewerkt u het bestand `web.xml` om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar deze in de XML zijn ingesteld, zoekt u de tekenreeks `sling.run.modes`. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
-
-   ```shell
+   ```bash
    <param-value >author</param-value>
    ```
 
-1. Wijzig de bovenstaande auteurwaarde en stel de uitvoeringsmodi in op: auteur,crx3,crx3tar Het laatste codeblok moet er als volgt uitzien:
+1. Wijzig de bovenstaande auteurwaarde en stel de uitvoeringsmodi in op: `author,crx3,crx3tar`. Het laatste codeblok moet er als volgt uitzien:
 
    ```
    <init-param>
@@ -149,13 +121,8 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
 
 1. De pot opnieuw maken met de gewijzigde inhoud:
 
-   ```shell
-   jar cvf aem62.war
+   ```bash
+   jar cvf aem65.war
    ```
 
-1. Implementeer ten slotte het nieuwe oorlogsbestand:
-
-   ```shell
-   cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
-   ```
-
+1. Ten slotte, zet het nieuwe oorlogsdossier in TomCat op.

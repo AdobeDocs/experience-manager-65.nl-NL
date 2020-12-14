@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: 4eb5f1c4aa6631d2570279eb1d4bf17a928e3b9f
+source-git-commit: f8abdd7ed0212d5ee0602e2573c184203f22d4a4
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Beheerders moeten veelvoorkomende taken in elk systeem vaak automatiseren of vereenvoudigen. In AEM bijvoorbeeld, zijn het leiden van gebruikers, het installeren van pakketten, en het beheren van bundels OSGi taken die algemeen moeten worden gedaan.
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep. cURL kan worden gebruikt om dergelijke URL vraag uit te voeren en kan een nuttig hulpmiddel voor AEM beheerders zijn.
+Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden uitgevoerd met een URL-aanroep. cURL kan worden gebruikt om dergelijke URL vraag uit te voeren en kan een nuttig hulpmiddel voor AEM beheerders zijn.
 
 ## Wat is cURL {#what-is-curl}
 
@@ -206,7 +206,7 @@ curl -u <user>:<password> -Fmembership=contributor -Fmembership=testgroup http:/
 #### Een gebruiker {#delete-a-user} verwijderen
 
 ```shell
-curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser 
+curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/users/t/testuser
 ```
 
 #### Een groep {#delete-a-group} verwijderen

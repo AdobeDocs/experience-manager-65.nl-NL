@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f64eb57a69f2124523bd6eaed3e2f58a54c1ea8e
+source-git-commit: 97c93a95cd7fe63b306d80fe127388a209b727c7
 workflow-type: tm+mt
-source-wordcount: '4989'
+source-wordcount: '4974'
 ht-degree: 0%
 
 ---
@@ -803,10 +803,7 @@ Hiermee wordt een bericht weergegeven in het QuickStart-venster.
 
 Argumenten:
 
-* p1: Een waarde `String` die het bericht aan vertoning vertegenwoordigt. In de volgende afbeelding ziet u het resultaat van het aanroepen van `log` met een p1-waarde van `this is a log message`.
-
-![lancerersuilog](assets/launcheruilog.png)
-
+* p1: Een waarde `String` die het bericht aan vertoning vertegenwoordigt.
 * Geretourneerde waarde: none
 
 **startFinished**
@@ -821,12 +818,8 @@ Roept de opstartenFinished methode van de serverlancerer. De methode probeert de
 Hiermee wordt de voltooiingswaarde van het opstartproces van de server ingesteld. De voortgangsbalk in het QuickStart-venster vertegenwoordigt de voltooiingswaarde.
 
 * Argumenten:
-
    * p1: Een drijvende-kommawaarde die aangeeft hoeveel van het opstartproces is voltooid, als een breuk. De waarde moet liggen tussen nul en één. 0,3 geeft bijvoorbeeld aan dat 30% is voltooid.
-
 * Geretourneerde waarde: geen.
-
-![lancering](assets/launcherprogress.png)
 
 ## Services van derden {#third-party-services}
 

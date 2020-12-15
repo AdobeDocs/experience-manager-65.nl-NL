@@ -2,9 +2,9 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
 translation-type: tm+mt
-source-git-commit: 4755f33ed27bb876bfb70bab35d411d9b06788b0
+source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
 workflow-type: tm+mt
-source-wordcount: '4115'
+source-wordcount: '4114'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Een blauwdrukconfiguratie maken:
 1. [Navigeer ](/help/sites-authoring/basic-handling.md#global-navigation) naar het menu  **** Opties en selecteer vervolgens het menu  **** Sites.
 1. Selecteer **Blauwdrukken** om de **Blueprint Configurations**-console te openen:
 
-   ![chlimage_1-209](assets/chlimage_1-209.png)
+   ![chlimage_1-209](assets/blueprint-configurations.png)
 
 1. Selecteer **Maken**.
 1. Selecteer de blauwdruksjabloon en **Volgende** om door te gaan.
@@ -66,14 +66,12 @@ U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 1. [Navigeer ](/help/sites-authoring/basic-handling.md#global-navigation) naar het menu  **** Opties en selecteer vervolgens het menu  **** Sites.
 1. Selecteer **Blauwdrukken** om de **Blueprint Configurations**-console te openen:
 
-   ![chlimage_1-210](assets/chlimage_1-210.png)
+   ![chlimage_1-210](assets/blueprint-configurations.png)
 
 1. Selecteer de vereiste blauwdrukconfiguratie. De juiste acties worden beschikbaar op de werkbalk:
 
    * **Eigenschappen**; u kunt dit gebruiken om de eigenschappen van de configuratie te bekijken en dan uit te geven.
    * **Verwijderen**
-
-   ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Een actieve kopie maken {#creating-a-live-copy}
 
@@ -154,7 +152,7 @@ Een live kopie van een site maken op basis van een blauwdrukconfiguratie:
 1. Selecteer **Maken** in de **Sites**-console en **Site** in de keuzelijst.
 1. Selecteer de blauwdrukconfiguratie die u als bron van de live kopie wilt gebruiken en ga verder met **Next**:
 
-   ![chlimage_1-216](assets/chlimage_1-216.png)
+   ![chlimage_1-216](assets/blueprint-configuration-select.png)
 
 1. Met de kiezer **Oorspronkelijke talen** kunt u de taal of talen van de blauwdruksite opgeven die voor de live kopie moet worden gebruikt.
 
@@ -428,7 +426,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen. d.w.z. of 
 
    * Zal onmiddellijk effect hebben en is niet omkeerbaar.
 
-      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan worden gemaakt.
+      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan gemaakt worden.
 
       * Hiermee verwijdert u een afstammeling `LiveRelationships`, zelfs als er `LiveCopies` is genest.
 

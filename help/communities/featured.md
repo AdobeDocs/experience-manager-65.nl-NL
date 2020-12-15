@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
-source-git-commit: cbb5a6bac5e9932fd36abf20d4424890080d39bf
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '339'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,15 +51,15 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Wanneer de [vereiste client-side bibliotheken](essentials-featured.md#essentials-for-client-side) worden opgenomen, wordt de `Featured Content`-component op deze manier weergegeven:
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![featuretisch](assets/featuredcontent.png)
 
 ## Aanbevolen inhoud configureren {#configuring-featured-content}
 
 Selecteer de geplaatste `Featured Content` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### Tabblad Instellingen {#settings-tab}
 
@@ -83,13 +83,13 @@ De capaciteit om inhoud als kenmerkende inhoud te markeren vereist moderatorvoor
 
 Wanneer een moderator geposte inhoud bekijkt, hebben zij toegang tot de vlaggen van de in-context moderatie, die de nieuwe `Feature` vlag omvat.
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![site-bezoeker](assets/site-visitor-experience.png)
 
 Als de markering eenmaal is gemarkeerd als functie, verandert de markering voor beweging in `Unfeature`.
 
 Deze post wordt nu opgenomen op de pagina die de component `Featured Content` bevat.
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![site-bezoeker-ervaring1](assets/site-visitor-experience1.png)
 
 `Read More` Dit is een link naar de feitelijke post.
 

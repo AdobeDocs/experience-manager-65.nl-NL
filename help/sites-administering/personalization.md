@@ -10,15 +10,15 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: ffded9c4c08c68db59d05b341166bed92e741e1e
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1693'
 ht-degree: 0%
 
 ---
 
 
-# Personalisatie{#personalization}
+# Personalisatie {#personalization}
 
 ## Wat is personalisatie? {#what-is-personalization}
 
@@ -28,28 +28,28 @@ Personalisatie richt zich op het bieden van een op maat gemaakte omgeving waarin
 
 Er zijn drie hoofdelementen betrokken bij personalisatie:
 
-**Gebruikers**
+### Gebruikers {#users}
 
-* hebben profielen, zowel individueel als groep. Deze profielen bevatten kenmerken (zoals taakbeschrijving, locatie en interesses) die kunnen worden gebruikt om de inhoud die ze kunnen zien aan te passen.
-* acties ondernemen. Deze kunnen vervolgens worden geanalyseerd en vergeleken met gedragsregels om de inhoud die ze zien aan te passen.
+* Profielen hebben, zowel individueel als gegroepeerd. Deze profielen bevatten kenmerken (zoals taakbeschrijving, locatie en interesses) die kunnen worden gebruikt om de inhoud die ze kunnen zien aan te passen.
+* Voer handelingen uit. Deze kunnen vervolgens worden geanalyseerd en vergeleken met gedragsregels om de inhoud die ze zien aan te passen.
 
-**Inhoud**
+### Inhoud {#content}
 
-* is wat de gebruiker wil zien. Voorkeurelijk inhoud van belang en gebruik voor de vervulling van hun taken.
-* kunnen worden ingedeeld en derhalve volgens vooraf gedefinieerde regels aan de gebruikers ter beschikking worden gesteld.moet dynamisch zijn; met andere woorden, de inhoud
-* moet in zekere zin afhankelijk zijn van de gebruiker - als elke gebruiker dezelfde inhoud zou zien, dan zou personalisatie overtollig zijn.
+* Is wat de gebruiker wil zien. Voorkeurelijk inhoud van belang en gebruik voor de vervulling van hun taken.
+* kan worden gecategoriseerd en moet daarom volgens vooraf gedefinieerde regels aan de gebruikers ter beschikking worden gesteld. moet dynamisch zijn; met andere woorden, de inhoud
+* Moet in zekere zin afhankelijk zijn van de gebruiker - als elke gebruiker dezelfde inhoud zou zien, dan zou personalisatie overtollig zijn.
 
-**Regels**
+### Regels {#rules}
 
-* bepalen hoe verpersoonlijking eigenlijk gebeurt - welke inhoud de gebruiker kan zien, en wanneer.
+* Bepaal hoe verpersoonlijking eigenlijk gebeurt - welke inhoud de gebruiker kan zien, en wanneer.
 
 Personalisatie kan:
 
-**Expliciet**
+#### Expliciet {#explicit}
 
 * Aanpassing: waarbij de gebruiker selecties maakt van een keuze uit inhoudsbronnen.
 
-**Impliciet**
+#### Impliciet {#implicit}
 
 * Gebaseerde regels: bedrijfsmanagers definiëren specifieke regels voor acties op basis van specifieke profielen en/of gedrag.
 * Eenvoudig filteren: selecties worden gemaakt op basis van vooraf gedefinieerde profielen op gebruikers- en/of groepsniveau.
@@ -59,23 +59,23 @@ Personalisatie kan:
 
 Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
-**Intranetpagina&#39;s**
+### Intranetpagina&#39;s {#intranet-pages}
 
 * Inhoud kan worden aangeboden op basis van de locatie, afdeling en/of rol van een gebruiker - al gedefinieerd binnen een intern netwerk.
 * Afhankelijk van de beschikbare keuze kan de gebruiker meer selecties maken.
 
-**Specifieke, beperkte, doelgebruikersgroepen (extranets)**
+### Specifieke, beperkte, doelgebruikersgroepen - Extra {#extranets}
 
 * De gebruikers vereisen login voor vergunning; dit wordt gekoppeld aan een profiel met informatie die nodig is voor personalisatie; eventueel nadere gegevens zoals de locatie, de relatie met het product, de gebruiksgeschiedenis, de budgettaire verantwoordelijkheden, enz.
 * Dergelijke instanties kunnen zich uitstrekken over sites zoals:
 * Bedrijven die websites aanbieden aan een zeer gespecialiseerde afdeling van hun markt, bijvoorbeeld een farmaceutische onderneming die een gespecialiseerde website voor artsen aanbiedt.
 * Bedrijven die websites aanbieden waarmee hun klanten actuele account- en factureringsgegevens kunnen bekijken; bijvoorbeeld telefoonaanbieders.
 
-**Website voor verkoop en distributie**
+### Website voor verkoop en distributie {#sales-site}
 
 * Op verkoop- en distributiewebsites, zoals Amazon, kunnen een gebruikersprofiel, de verkoopgeschiedenis van de gebruiker en de browsergeschiedenis worden gecombineerd om suggesties te doen voor wat de gebruiker interesseert.
 
-**Zoeken in websites**
+### Websites zoeken {#search-site}
 
 * Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name wat betreft het weergeven van advertenties.
 
@@ -93,31 +93,35 @@ De volgende redenen waarom personalisatie moet worden gebruikt:
 
 Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
-**Prestaties**
+#### Prestaties {#performance}
 
 * Natuurlijk heeft de extra analyse en evaluatie gevolgen voor de prestaties. De gebruikte methoden zijn echter zeer geavanceerd en kunnen worden geoptimaliseerd om de impact tot een minimum te beperken.
 
-**Toestemming**
+#### Toestemming {#authorization}
 
 * Voor personalisatie is een aanmeldingsmechanisme vereist, omdat de website de gebruiker moet kunnen identificeren.
 
-**Caching**
+#### {#caching}
 
 * Caching is een aspect dat de gebruiker in termen van prestaties en nauwkeurigheid zal zien - hoe snel levert de website gepersonaliseerde inhoud, en is het altijd huidig.
-* Het in cache plaatsen is een belangrijke overweging bij het configureren van de personalisatie en de tijd moet in acht worden genomen om ervoor te zorgen dat de juiste implementatie wordt gebruikt. Dit zal later nader worden besproken.
+* Het in cache plaatsen is een belangrijke overweging bij het configureren van de personalisatie en de tijd moet in acht worden genomen om ervoor te zorgen dat de juiste implementatie wordt gebruikt.
 
-**Nauwkeurigheid van de regels**
+>[!TIP]
+>
+>Het effect van de aanpassing op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden verder besproken in het document [Prestaties optimaliseren.](/help/sites-deploying/configuring-performance.md)
+
+#### Nauwkeurigheid van regels {#accuracy}
 
 * Personalisatie die wordt gerealiseerd door het gedrag van de gebruiker te volgen, of regels te plaatsen die op het profiel van de gebruiker worden gebaseerd, moet nauwkeurig en logisch zijn.
 * Er is niets frustrerender voor de gebruiker dan het hebben van inhoud gedwongen op, of ontkend aan, hen wegens de onnauwkeurige logica van een regel.
 * Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten en mag niet onderschat worden. het bepalen van de bedrijfsregels weegt vaak tegen de technische inspanning wanneer het uitvoeren van verpersoonlijking.
 
-**Wanneer gebruiken**
+#### Wanneer moet u {#when-to-use} gebruiken?
 
 * Zoals vele eigenschappen op het Web, zou de verpersoonlijking met zorg moeten worden gebruikt. Zal het gebruik ervan de gebruiker echt ten goede komen? moet altijd de eerste overweging zijn - of dat het gewenste doel met minder moeite met een andere methode kan worden bereikt. Personalisatie kan het risico lopen om een eigenschap te zijn die de gebruikers één keer (om te zien hoe het werkt) en slechts één keer vormen - aangezien het hen geen echte voordelen brengt.
 * Personalisatie is alleen zinvol wanneer de inhoud dynamisch is, op een of andere manier afhankelijk van de gebruiker. Als alle gebruikers de zelfde inhoud zien, dan is de verpersoonlijking overtollig.
 
-**Vertrouwelijkheid**
+#### Vertrouwelijkheid {#confidentiality}
 
 * Veel gebruikers maken zich zorgen over gegevensbescherming en beveiliging. Met name gegevens die worden opgehaald bij het volgen van hun gedrag bij surfen op het web.
 
@@ -156,7 +160,7 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Weergavenaam profiel | Naam die moet worden weergegeven. |
 | E-mailadres profiel | Invoer van een e-mailadres. |
 | Profiel Geslacht | Hiermee kan het geslacht worden ingevoerd. |
-| Primaire telefoonnummer van profiel | Hiermee wordt invoer van een telefoonnummer toegestaan. |
+| Primair telefoonnummer profiel | Hiermee wordt invoer van een telefoonnummer toegestaan. |
 | Primaire URL profiel | Hiermee wordt invoer van een URL toegestaan. |
 | Profiel algemene tekst, eigenschap | Profieleigenschappen. |
 | Aanmelden | Hiermee kunt u een gebruikersnaam en wachtwoord opgeven wanneer u zich aanmeldt. |
@@ -172,7 +176,7 @@ Met [AEM Communities 6.1](/help/communities/overview.md) uitbreiding, wordt dit 
 
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 
-* Meerdere publicatieinstanties indien nodig synchroniseren
-* de UGC van de publicatie-instantie naar de auteursomgeving verzenden, vanwaar deze op vergelijkbare wijze kan worden gepubliceerd als het publiceren van pagina-inhoud
+* Meerdere publicatie-instanties indien nodig synchroniseren
+* De UGC vanuit de publicatie-instantie naar de auteursomgeving verzenden, vanwaar deze kan worden gepubliceerd op een manier die vergelijkbaar is met het publiceren van pagina-inhoud
 
 De methode die wordt gebruikt om UGC-consistentie te bereiken in een publicatieomgeving die uit meerdere publicatie-instanties bestaat, moet zorgvuldig worden ontworpen en getest op prestaties en consistentie.

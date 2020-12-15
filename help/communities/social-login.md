@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 6d0ff6ae47688ba7f0e071bad40808fb3466246f
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -391,13 +391,13 @@ Bijvoorbeeld http://localhost:4503/system/console/configMgr
 * Selecteer deze optie om de configuratie voor bewerking te openen.
 * Selecteer **[!UICONTROL Save]**.
 
-![chlimage_1-489](assets/chlimage_1-489.png)
+![graniteoauth](assets/graniteoauth.png)
 
 >[!CAUTION]
 >
 >Let op dat u de verificatiehandler niet verwart met een Facebook- of Twitter-instantie van *Adobe Granite OAuth Application and Provider*.
 
-![chlimage_1-490](assets/chlimage_1-490.png)
+![graniteoauth1](assets/graniteoauth1.png)
 
 ### Adobe graniet OAuth-toepassing en -provider {#adobe-granite-oauth-application-and-provider}
 
@@ -414,7 +414,7 @@ Ga als volgt te werk om de gemaakte instantie voor een Facebook- of Twitter-app 
 
    * Zoek de instantie waarbij **[!UICONTROL Client ID]** overeenkomt met **[!UICONTROL App ID]**.
 
-      ![chlimage_1-491](assets/chlimage_1-491.png)
+      ![graniteoauth2](assets/graniteoauth2.png)
 
       Met uitzondering van de volgende eigenschappen, verlaat u de andere eigenschappen van de config ongewijzigd:
 
@@ -493,7 +493,7 @@ Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
 * Voor de **naam** `oauthid-123` vervangt u *123* door Facebook ***App ID*** of Twitter ***Consumer (API) Key*** die de waarde is van **Client ID** in [ Adobe Granite OAuth Application and Provider](social-login.md#adobe-granite-oauth-application-and-provider) configuration.
 
-   ![chlimage_1-492](assets/chlimage_1-492.png)
+   ![graniteoauth-crxde](assets/graniteoauth-crxde.png)
 
 Raadpleeg [Vragen en indexeren](../../help/sites-deploying/queries-and-indexing.md) voor aanvullende informatie en gereedschappen.
 

@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 0e1ac02879ff09ab0e78d043450ef7114c868417
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 0%
@@ -222,7 +222,7 @@ Door gebrek, wordt de `AEM Communities Publisher Configuration` configuratie OSG
 
 Daarom is het noodzakelijk om **de configuratie op alle secundaire publicatieinstanties** uit te geven om **`Primary Publisher`** checkbox uit te schakelen.
 
-![chlimage_1-411](assets/chlimage_1-411.png)
+![primaire uitgever](assets/primary-publisher.png)
 
 Voor alle andere (secundaire) publiceer instanties in publiceer landbouwbedrijf:
 
@@ -266,11 +266,11 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 #### Standaardagent (publiceren) {#default-agent-publish}
 
-![chlimage_1-412](assets/chlimage_1-412.png)
+![default-agent-publish](assets/default-agent-publish.png)
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![chlimage_1-413](assets/chlimage_1-413.png)
+![reverse-replication-agent](assets/reverse-replication-agent.png)
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
@@ -293,7 +293,7 @@ dan [vorm de replicatieagent](#replication-agents-on-author)
 * Schakel het selectievakje **enable** in
 * Selecteer **Opslaan**
 
-   ![chlimage_1-414](assets/chlimage_1-414.png)
+   ![tunneldienst](assets/tunnel-service.png)
 
 ### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
 
@@ -353,7 +353,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * [De graniet-cryptobundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
-   ![chlimage_1-415](assets/chlimage_1-415.png)
+   ![replicare-opslagplaats](assets/replicare-repository.png)
 
 #### De graniet-cryptobundel vernieuwen {#refresh-the-granite-crypto-bundle}
 
@@ -364,7 +364,7 @@ Met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * `Adobe Granite Crypto Support`-bundel zoeken (com.adobe.granite.crypto)
 * Selecteer **Vernieuwen**
 
-   ![chlimage_1-416](assets/chlimage_1-416.png)
+   ![graniet-crypto](assets/granite-crypto.png)
 
 * Na een ogenblik, zou een **Succes** dialoog moeten verschijnen:
    `Operation completed successfully.`

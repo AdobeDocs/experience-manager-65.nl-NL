@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 418e7fad2d990f1a7cb3b69ab4c290ca1b7075ba
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 4%
@@ -72,7 +72,7 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Selecteer **[!UICONTROL Delete]**
 1. Selecteer **[!UICONTROL Save All]**
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![create-component](assets/create-component.png)
 
 ### De component Onderliggende opmerking maken {#create-the-child-comment-component}
 
@@ -83,7 +83,7 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Naar het knooppunt `/apps/custom/components/comments` navigeren
 1. Klik met de rechtermuisknop op het knooppunt
 
-   * Selecteer **[!UICONTROL Create] > **[!UICONTROL Component...]**
+   * Selecteer **[!UICONTROL Create]** > **[!UICONTROL Component...]**
 
       * **Label**:  *opmerking*
       * **Titel**:  *Alt-opmerking*
@@ -102,9 +102,9 @@ De verwijdering van het automatisch gemaakte JSP-bestand komt doordat in plaats 
 1. Selecteer **[!UICONTROL Delete]**
 1. Selecteer **[!UICONTROL Save All]**
 
-![chlimage_1-71](assets/chlimage_1-71.png)
+![create-child-component](assets/create-child-component.png)
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![create-component-crxde](assets/create-component-crxde.png)
 
 ### Kopieer en wijzig de StandaardManuscripten HBS {#copy-and-modify-the-default-hbs-scripts}
 
@@ -168,7 +168,7 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 * Voer &#39;customcommentsystem.js&#39; in als de inhoud van `js.txt`
 * Selecteer **[!UICONTROL Save All]**
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![commentaarclientlibs](assets/comments-clientlibs.png)
 
 ## SCF-model registreren en bekijken {#register-the-scf-model-view}
 
@@ -200,9 +200,9 @@ Voer de volgende tekst in als de inhoud van `customcommentsystem.js`:
 
 Als u de uitgebreide component wilt ervaren in de publicatieomgeving, moet u de aangepaste component repliceren.
 
-Een manier om dit te doen is
+Een manier om dit te doen is:
 
-* Van globale navigatie
+* Van globale navigatie,
 
    * Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
    * Selecteer **[!UICONTROL Activate Tree]**

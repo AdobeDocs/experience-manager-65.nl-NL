@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
-source-git-commit: 29f150215052d61c1e20d25b0c095ea6582e26f7
+source-git-commit: 6693baecb1345c30385eb04caeb03960925f46c3
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ MySQL Workbench moet worden gedownload en geïnstalleerd volgens de instructies 
 
 Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere doeleinden wordt gebruikt, worden er nog geen verbindingen weergegeven:
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![mysqlconnection](assets/mysqlconnection.png)
 
 ### Nieuwe verbindingsinstellingen {#new-connection-settings}
 
@@ -105,13 +105,13 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 #### Nieuwe verbinding Gemeenschappen {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![communautaire verbinding](assets/community-connection.png)
 
 ## Database-instelling {#database-setup}
 
 Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![install-database](assets/install-database.png)
 
 ### SQL-script ophalen {#obtain-the-sql-script}
 
@@ -124,7 +124,7 @@ Het SQL-script is afkomstig uit de AEM opslagplaats:
 1. Selecteer de map /libs/social/config/datastore/dsrp/schema
 1. `init-schema.sql` downloaden
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![database-schema-crxde](assets/database-schema-crxde.png)
 
 Eén methode voor het downloaden van het schema is:
 
@@ -143,10 +143,10 @@ Als de gegevensbestandnaam in het manuscript wordt veranderd, ben zeker om het i
 
 In MySQL Workbench
 
-* Via het keuzemenu Bestand
-* Selecteer gedownloade `init_schema.sql`
+* Selecteer in het keuzemenu Bestand de optie **[!UICONTROL Open SQL Script]**
+* Het gedownloade `init_schema.sql`-script selecteren
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![select-sql-script](assets/select-sql-script.png)
 
 #### Stap 2: SQL-script uitvoeren {#step-execute-sql-script}
 
@@ -154,13 +154,13 @@ Selecteer `lightening (flash) icon` in het Workbench-venster voor het bestand da
 
 In de volgende afbeelding kan het `init_schema.sql`-bestand worden uitgevoerd:
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![execute-sql-script](assets/execute-sql-script.png)
 
 #### Vernieuwen {#refresh}
 
 Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om `SCHEMAS` sectie van `Navigator` te verfrissen om het nieuwe gegevensbestand te zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![vernieuwingsschema](assets/refresh-schema.png)
 
 ## JDBC-verbinding {#configure-jdbc-connection} configureren
 
@@ -179,7 +179,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * `Day Commons JDBC Connections Pool` zoeken
 * Selecteer het pictogram `+` om een nieuwe verbindingsconfiguratie tot stand te brengen.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Voer de volgende waarden in:
 

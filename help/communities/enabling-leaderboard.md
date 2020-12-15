@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 6720d5a0fdf1facc0b10011ec306dffbb31f4ac5
+source-git-commit: a8b1ad0fcd2ca9c7fe3117dd8bd161da82d13e8a
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Wanneer de component voor het eerst op een pagina van een communitysite wordt geplaatst, ziet deze er zo uit:
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![leaderboard](assets/leaderboard.png)
 
 ### Leaderboard {#configuring-leaderboard} configureren
 
 Selecteer de geplaatste `Leaderboard` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
-![chlimage_1-9](assets/chlimage_1-9.png)
+![configure-new](assets/configure-new.png)
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![configuratieleider](assets/configure-leaderboard.png)
 
 #### Tabblad Instellingen {#settings-tab}
 
@@ -120,7 +120,7 @@ Configuratie van de component Leaderboard:
    * Badging Rule = `/libs/settings/community/badging/rules//reference-badging`
    * Weergavelimiet = `10`
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![deelnemerslijst](assets/participants-leaderboard.png)
 
 ### Voorbeeld: Leaderboard van experts {#example-experts-leaderboard}
 
@@ -143,7 +143,7 @@ Configuratie van de component Leaderboard:
    * Badging Rule = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![deskundigenpanel](assets/experts-leaderboard.png)
 
 ### Aanvullende informatie {#additional-information}
 

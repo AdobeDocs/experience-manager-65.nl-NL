@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 871c42ee000eb250c1c6159d9a0c752e8ed4d7b8
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 1%
@@ -217,7 +217,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * `AEM Communities ScormEngine Service` zoeken
 * Het bewerkingspictogram selecteren
 
-   ![chlimage_1-337](assets/chlimage_1-337.png)
+   ![scrom-motor](assets/scrom-engine.png)
 
 * Verifieer de volgende parameterwaarden met [JDBC Verbinding](#configurejdbcconnectionspool) config verenigbaar zijn:
    * **[!UICONTROL JDBC connection URI]**:  `jdbc:mysql://localhost:3306/ScormEngineDB` ** ScormEngineDB is de standaarddatabasenaam in de SQL-scripts

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
+source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 0%
@@ -294,7 +294,7 @@ De leaderboard-functie is een pagina met één [Leaderboard-component](/help/com
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![chlimage_1-388](assets/chlimage_1-388.png)
+![leaderboard-dialog](assets/leaderboard-dialog.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -325,7 +325,7 @@ De functie QnA is een pagina met een [component QnA](/help/communities/working-w
 
 Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoorrechte leden toe:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![qna-dialog](assets/qna-dialog.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -353,11 +353,11 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 
 De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
 
-![chlimage_1-390](assets/chlimage_1-390.png)
+![create-community-function](assets/create-community-function.png)
 
 ### Naam communautaire functie {#community-function-name}
 
-![chlimage_1-391](assets/chlimage_1-391.png)
+![function-name](assets/function-name.png)
 
 In het deelvenster Community Function Name worden een naam, beschrijving en of de functie is ingeschakeld of uitgeschakeld geconfigureerd:
 
@@ -375,7 +375,7 @@ In het deelvenster Community Function Name worden een naam, beschrijving en of d
 
 ### AEM blauwdruk {#aem-blueprint}
 
-![chlimage_1-392](assets/chlimage_1-392.png)
+![aem-blauwdruk](assets/aem-blueprint.png)
 
 In het `AEM Blueprint` paneel, is het mogelijk om de blauwdruk te selecteren die de onderliggende implementatie van de communautaire functie is.
 
@@ -387,13 +387,13 @@ Zie ook [Beheer van meerdere sites](/help/sites-administering/msm.md).
 
 ### Miniatuur {#thumbnail}
 
-![chlimage_1-393](assets/chlimage_1-393.png)
+![functie-miniatuur](assets/funtion-thumbnail.png)
 
 In het venster Miniatuur kan een afbeelding worden geüpload om te worden weergegeven in de [Community Functions console](#community-functions-console).
 
 ## Community-functie openen {#open-community-function}
 
-![chlimage_1-394](assets/chlimage_1-394.png)
+![open-functie](assets/open-function.png)
 
 Selecteer het pictogram `Open Community Function` om de bewerkingsmodus voor auteurs in te schakelen voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
 
@@ -409,6 +409,6 @@ Voor configuratiedetails, bezoek [Communities Components](/help/communities/auth
 
 ## Community-functie bewerken {#edit-community-function}
 
-![chlimage_1-395](assets/chlimage_1-395.png)
+![bewerken, functie](assets/edit-function.png)
 
 Selecteer het pictogram `Edit Community Function` om de eigenschappen van de functie uit te geven gebruikend de zelfde panelen zoals [creërend een communautaire functie](#create-community-function), met inbegrip van het toelaten of onbruikbaar maken van de functie.

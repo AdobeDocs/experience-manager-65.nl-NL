@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3133f712be1380ae98e18e63c9598d760d2e7595
+source-git-commit: cbce81a028195d97dba5f9bd154685393d8be180
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Wanneer een communautaire functie aan een malplaatje van de communautaire plaats
 
 #### Details configuratiefunctie {#configuration-function-details}
 
-![chlimage_1-380](assets/chlimage_1-380.png)
+![title-url-details](assets/title-url-details.png)
 
 * **Titel**
 
@@ -70,7 +70,7 @@ De URL naar de pagina is vervolgens https://localhost:4503/content/sites/engage/
 
 en de menukoppeling voor de pagina wordt weergegeven als:
 
-![chlimage_1-381](assets/chlimage_1-381.png)
+![opengageren](assets/engage-page.png)
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
@@ -80,7 +80,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Details configuratiefunctie {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![functiedetails](assets/function-details.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -110,7 +110,7 @@ De blogfunctie is een pagina met een [Blogcomponent](/help/communities/blog-feat
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-383](assets/chlimage_1-383.png)
+![blogcomponent](assets/blog-component.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -136,7 +136,7 @@ De kalenderfunctie is een pagina met een [agendacomponent](/help/communities/cal
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![Kalender](assets/calendar-details.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -201,7 +201,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 #### Details configuratiefunctie {#configuration-function-details-2}
 
-![chlimage_1-384](assets/chlimage_1-384.png)
+![forum-component1](assets/forum-component1.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -243,7 +243,7 @@ Vanaf Communities [feature pack 1](/help/communities/deploy-communities.md#lates
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
-![chlimage_1-386](assets/chlimage_1-386.png)
+![group-template-config](assets/group-template-config.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
@@ -266,7 +266,7 @@ De videofunctie is een pagina met één [Ideeringscomponent](/help/communities/i
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
-![chlimage_1-387](assets/chlimage_1-387.png)
+![ideatie-functie](assets/ideation-function.png)
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 

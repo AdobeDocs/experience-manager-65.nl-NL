@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 932601c849b3a1ddd196e6570a9cf05710cd3e6a
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '753'
 ht-degree: 20%
 
 ---
@@ -37,8 +37,12 @@ Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 
 Om [een nieuw Model van het Fragment van de Inhoud te creëren ](#creating-a-content-fragment-model) u **moet** eerst hen toelaten gebruikend de Manager van de Configuratie:
 
+>[!CAUTION]
+>
+>Subconfiguraties (een configuratie die in een configuratie is genest) worden niet ondersteund voor gebruik met Content Fragments.
+
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
-1. Selecteer de locatie die geschikt is voor uw website.
+
 1. Gebruik **Maken** om het dialoogvenster te openen, waarin u:
 
    1. Geef een **Titel** op.
@@ -47,6 +51,8 @@ Om [een nieuw Model van het Fragment van de Inhoud te creëren ](#creating-a-con
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. Selecteer **Maken** om de definitie op te slaan.
+
+<!-- 1. Select the location appropriate to your website. -->
 
 ### Pas de Configuratie op uw Omslag van Activa {#apply-the-configuration-to-your-assets-folder} toe
 

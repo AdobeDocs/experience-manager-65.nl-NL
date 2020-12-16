@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 4d21a61ed687caea2b1867d5321f75636f5310a3
 workflow-type: tm+mt
 source-wordcount: '1210'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -90,7 +90,7 @@ Als het gebruikersprofiel niet door zelfregistratie werd gecreeerd, wordt de zee
 
 De volgende keer dat het lid inlogt, wordt de homepage, die door het eerste menupunt wordt geïdentificeerd, getoond.
 
-![chlimage_1-434](assets/chlimage_1-434.png)
+![ingeschreven lid](assets/enrolled-member.png)
 
 ### Toewijzingen {#assignments}
 
@@ -106,11 +106,11 @@ Elke toewijzing bevat basisinformatie over:
 
 Het type toewijzing wordt aangegeven met een pictogram in de linkerbovenhoek van de kaart. Het beeld van een weg is voor een het leren weg met het aantal inbegrepen enablement middelen.
 
-![chlimage_1-435](assets/chlimage_1-435.png)
+![toewijzen1](assets/assignment1.png)
 
 Als u *Ski Lessen* selecteert, worden de twee bronnen voor activering weergegeven waarnaar door het leerpad wordt verwezen.
 
-![chlimage_1-436](assets/chlimage_1-436.png)
+![toewijzen2](assets/assignment2.png)
 
 Als u *Ski Les 1* selecteert, wordt de detailpagina van de Enablement resource geopend.
 
@@ -118,7 +118,7 @@ Van de detailpagina, kan het lid leren, [rate](rating.md) de les en [commentaren
 
 De interactie met het enablement middel zal in de sectie van het Rapport worden genoteerd die in het auteursmilieu toegankelijk is.
 
-![chlimage_1-437](assets/chlimage_1-437.png)
+![toewijzen3](assets/assignment3.png)
 
 ### Ski-catalogus {#ski-catalog}
 
@@ -126,7 +126,7 @@ De pagina van de Catalogus van het Ski is de catalogus van enablement middelen d
 
 Wanneer aan een lid geen middelen van toelage, of direct of door een het leren weg is toegewezen, is het mogelijk om met enablement middelen in een catalogus in wisselwerking te staan en terugkoppelen door commentaren en classificaties te verstrekken.
 
-![chlimage_1-438](assets/chlimage_1-438.png)
+![skicatalogus](assets/ski-catalog.png)
 
 ### Discussies {#discussions}
 
@@ -138,7 +138,7 @@ Meld u af en meld u aan als Sidney Croft (sidney/password) en beantwoord de vraa
 
 Het bericht, naast gealigneerde matiging, zijn er opties om het onderwerp op sociale media te delen of het onderwerp te e-mailen.
 
-![chlimage_1-439](assets/chlimage_1-439.png)
+![discussies](assets/discussions.png)
 
 ### Wat is er nieuw?{#what-s-new}
 
@@ -146,7 +146,7 @@ Het menu-item `What's New` is de titel die is gegeven aan de functie [activity s
 
 Nog steeds aangemeld als Sidney, selecteert u de `What's New`-koppeling om de activiteit weer te geven.
 
-![chlimage_1-440](assets/chlimage_1-440.png)
+![whats-new-menu](assets/whats-new-menu.png)
 
 ## Vertrouwd communautair lid {#trusted-community-member}
 
@@ -159,7 +159,7 @@ Aanmelden met
 
 Zodra ondertekend binnen, merk op is er een nieuw menupunt, `Administration`, dat verschijnt omdat het lid de rol van moderator werd gegeven.
 
-![chlimage_1-441](assets/chlimage_1-441.png)
+![trusted-member-homepage](assets/trusted-member-homepage.png)
 
 De homepage wordt geïdentificeerd door het eerste menupunt, Toewijzingen. Quinn is de moderator en enablement middelcontact en werd niet ingeschreven in om het even welke enablement middelen of het leren wegen, en zodat is er niets aan vertoning.
 
@@ -171,7 +171,7 @@ Als u de pictogramschakelopties voor het zijpaneel selecteert, worden de filters
 
 Als u de muis boven een opmerkingskaart houdt, worden moderatiehandelingen weergegeven.
 
-![chlimage_1-442](assets/chlimage_1-442.png)
+![administratie](assets/administration.png)
 
 ## Rapporten over auteur {#reports-on-author}
 
@@ -213,7 +213,7 @@ Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven, wa
 
 #### Resournerapport Ski Lessen {#ski-lessons-resource-report}
 
-![chlimage_1-443](assets/chlimage_1-443.png)
+![ski-lessen-verslag](assets/ski-lessons-report.png)
 
 #### Ski Lessen Rapport {#ski-lessons-user-report}
 
@@ -223,7 +223,7 @@ Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven, wa
 * Kaart `Ski Lessons` openen
 * Selecteer `Report > User Report`
 
-![chlimage_1-444](assets/chlimage_1-444.png)
+![ski-lessen-gebruikersrapport](assets/ski-lessons-user-report.png)
 
 ### Rapportconsole {#reports-console}
 
@@ -245,7 +245,7 @@ Voor rapporten over toewijzingen:
 
 * Selecteer **[!UICONTROL Generate]**
 
-![chlimage_1-445](assets/chlimage_1-445.png)
+![rapport-toewijzing](assets/report-assignment.png)
 
 Voor rapporten over weergaven:
 
@@ -259,6 +259,6 @@ Voor rapporten over weergaven:
 
 * Selecteer **[!UICONTROL Generate]**.
 
-![chlimage_1-446](assets/chlimage_1-446.png)
+![rapportweergaven](assets/report-views.png)
 
 **[⇐ maken en toewijzen van Enablement-bronnen](resource.md)**

@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 98180b630c991bc65ddfa275e0f8a97be3be6f7e
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '629'
 ht-degree: 6%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 6%
    + [De component Video configureren](config-video.md)
    + [De Bulkeditor](bulk-editor.md)
    + [E-mailmelding configureren](notification.md)
-   + [De externe koppelingencontrole](external-link-checker.md)
+   + [De koppelingencontrole](external-link-checker.md)
    + [AEM](troubleshoot.md)
    + [Toegang tot werkstromen beheren](workflows-managing.md)
    + [Workflows starten](workflows-starting.md)

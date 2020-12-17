@@ -1,6 +1,6 @@
 ---
-title: Dynamische voorinstellingen voor mediaafbeeldingen beheren
-description: Dynamische voorinstellingen voor mediafobeeldingen begrijpen en leren hoe u voorinstellingen voor afbeeldingen kunt maken, wijzigen en beheren
+title: Dynamic Media-voorinstellingen voor afbeeldingen beheren
+description: Dynamic Media-voorinstellingen voor afbeeldingen leren gebruiken en voorinstellingen voor afbeeldingen maken, wijzigen en beheren
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,15 +10,15 @@ discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: ae3e6b1c2d3dfa63b9ea5763ebedaa57f5c7bc85
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3721'
 ht-degree: 8%
 
 ---
 
 
-# Dynamische voorinstellingen voor mediagrote beheren{#managing-image-presets}
+# Dynamic Media-voorinstellingen voor afbeeldingen beheren{#managing-image-presets}
 
 Met voorinstellingen voor afbeeldingen kan AEM Assets dynamisch afbeeldingen van verschillende grootten, in verschillende indelingen of met andere afbeeldingseigenschappen leveren die dynamisch worden gegenereerd. Elke voorinstelling voor afbeeldingen vertegenwoordigt een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van afbeeldingen. Wanneer u een voorinstelling voor afbeeldingen maakt, kiest u een grootte voor het leveren van de afbeelding. U kiest ook opmaakopdrachten, zodat de weergave van de afbeelding wordt geoptimaliseerd wanneer de afbeelding wordt geleverd voor weergave.
 
@@ -32,13 +32,13 @@ In deze sectie wordt beschreven hoe u voorinstellingen voor afbeeldingen maakt, 
 >
 >Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie.
 
-## Voorinstellingen voor dynamische media-afbeeldingen {#understanding-image-presets}
+## Voorinstellingen voor Dynamic Media-afbeeldingen {#understanding-image-presets}
 
 Net als bij een macro is een voorinstelling voor afbeeldingen een vooraf gedefinieerde verzameling opdrachten voor het vergroten of verkleinen en opmaken van de grootte die onder een naam zijn opgeslagen. Als u wilt weten hoe Voorinstellingen afbeelding werken, kunt u instellen dat elke productafbeelding op uw website moet worden weergegeven in verschillende formaten, formaten en compressiesnelheden voor levering op het bureaublad en op mobiele apparatuur.
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 worden afbeeldingsvoorinstellingen alleen ondersteund voor afbeeldingselementen.
+>In de modus Dynamic Media - Scene7 worden afbeeldingsvoorinstellingen alleen ondersteund voor afbeeldingselementen.
 
 U kunt twee voorinstellingen voor afbeeldingen maken: één met 500 x 500 pixels voor desktopversie en 150 x 150 pixels voor de mobiele versie. U maakt twee voorinstellingen voor afbeeldingen, één genaamd `Enlarge`, om afbeeldingen met 500 x 500 pixels weer te geven en één genaamd `Thumbnail` om afbeeldingen met 150 x 150 pixels weer te geven. Als u afbeeldingen in de `Enlarge`- en `Thumbnail`-grootte wilt leveren, AEM de definitie van de voorinstelling Afbeelding vergroten en Afbeelding met miniatuur opzoeken. Vervolgens AEM dynamisch een afbeelding met de grootte en opmaakspecificaties van elke voorinstelling voor afbeeldingen.
 
@@ -46,7 +46,7 @@ Afbeeldingen die bij dynamische levering kleiner worden gemaakt, kunnen scherper
 
 Beheerders kunnen voorinstellingen voor afbeeldingen maken. Als u een voorinstelling voor een afbeelding wilt maken, begint u helemaal opnieuw of u kunt een bestaande voorinstelling beginnen en opslaan onder een andere naam.
 
-## Dynamische voorinstellingen voor mediaafbeeldingen beheren {#managing-image-presets-1}
+## Dynamic Media-voorinstellingen voor afbeeldingen beheren {#managing-image-presets-1}
 
 U beheert uw voorinstellingen voor afbeeldingen in AEM door te tikken op het AEM-logo of te klikken om de algemene navigatieconsole te openen, vervolgens te tikken of te klikken op het pictogram Extra en naar **[!UICONTROL Assets > Image Presets.]** te navigeren
 
@@ -56,9 +56,9 @@ U beheert uw voorinstellingen voor afbeeldingen in AEM door te tikken op het AEM
 >
 >Alle afbeeldingsvoorinstellingen die u maakt, zijn ook beschikbaar als dynamische uitvoeringen wanneer u elementen voorvertoont of levert.
 >
->In *Dynamische media - Scene7-modus* moet u *not* afbeeldingsvoorinstellingen publiceren omdat voorinstellingen voor afbeeldingen automatisch worden gepubliceerd.
+>In de modus *Dynamic Media - Scene7* moet u *not* afbeeldingsvoorinstellingen publiceren omdat voorinstellingen voor afbeeldingen automatisch worden gepubliceerd.
 >
->In *Dynamische media - hybride modus* moet u de voorinstellingen van afbeeldingen handmatig publiceren.
+>In *Dynamic Media - Hybride modus* moet u de voorinstellingen voor afbeeldingen handmatig publiceren.
 >
 >Zie [Voorinstellingen voor afbeeldingen publiceren.](#publishing-image-presets)
 
@@ -70,7 +70,7 @@ U beheert uw voorinstellingen voor afbeeldingen in AEM door te tikken op het AEM
 
 >[!NOTE]
 >
->Dit onderwerp is van toepassing op Dynamische Media - Hybride slechts wijze.
+>Dit onderwerp is van toepassing op Dynamic Media - Hybride wijze slechts.
 
 Als u de opname van AI-, EPS- en PDF-bestanden wilt ondersteunen, zodat u dynamische uitvoeringen van deze bestandsindelingen kunt genereren, is het verstandig de volgende informatie te bekijken voordat u voorinstellingen voor afbeeldingen maakt.
 
@@ -85,7 +85,7 @@ Zie ook [Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven](/help
 
 U kunt de submiddelen of de pagina&#39;s weergeven wanneer u het element opent, tikken op het menu Inhoud en **[!UICONTROL Subassets]** of **[!UICONTROL Pages.]** selecteren. De submiddelen zijn echte elementen. Dat wil zeggen dat PDF-pagina&#39;s worden geëxtraheerd door de workflowcomponent `Create Sub Asset`. Ze worden vervolgens opgeslagen als `page1.pdf`, `page2.pdf` enzovoort onder het hoofdelement. Nadat ze zijn opgeslagen, verwerkt de `DAM Update Asset` workflow ze.
 
-Met Dynamische media kunt u dynamische uitvoeringen voor AI-, EPS- of PDF-bestanden voorvertonen en genereren. Hiervoor zijn de volgende verwerkingsstappen vereist:
+Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of PDF-bestanden voor te vertonen en te genereren, voert u de volgende verwerkingsstappen uit:
 
 1. In `DAM Update Asset` werkschema, `Rasterize PDF/AI Image Preview Rendition` de procescomponent rasterizes de eerste pagina van origineel element-gebruikend gevormde resolutie-in een `cqdam.preview.png` vertoning.
 
@@ -162,7 +162,7 @@ De het procescomponent van het Proces van de Extractie van Media in de `DAM Upda
 
 De ExtendScript-paden in de argumenten van Media Extraction Process-component in de [!UICONTROL DAM Update Asset]-workflow.
 
-De volgende scripts worden gebruikt door Dynamic Media-integratie:
+De volgende scripts worden door Dynamic Media-integratie gebruikt:
 
 <table>
  <tbody>
@@ -223,11 +223,11 @@ Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width
 
 1. Tik **[!UICONTROL Save]** om de wijzigingen in de workflow op te slaan.
 
-### Het aantal voorinstellingen voor dynamische media-afbeeldingen waarmee {#increasing-or-decreasing-the-number-of-image-presets-that-display} wordt weergegeven verhogen of verlagen
+### Het aantal Dynamic Media-voorinstellingen voor afbeeldingen dat {#increasing-or-decreasing-the-number-of-image-presets-that-display} wordt weergegeven verhogen of verlagen
 
 Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoeringen wanneer u een voorvertoning van elementen weergeeft. AEM toont een verscheidenheid van dynamische vertoningen wanneer het bekijken van activa van **[!UICONTROL Detail View > Renditions.]** U kunt de grens van vertoningen verhogen of verminderen.
 
-**U kunt als volgt het aantal dynamische voorinstellingen voor mediagrote afbeeldingen verhogen of verlagen**:
+**Het aantal weergegeven** Dynamic Media-voorinstellingen voor afbeeldingen verhogen of verlagen:
 
 1. Navigeer naar CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigeer naar het knooppunt met vooraf ingestelde lijsten voor afbeeldingen op `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -242,9 +242,9 @@ Afbeeldingsvoorinstellingen die u maakt, zijn beschikbaar als dynamische uitvoer
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Tik op **[!UICONTROL Save All.]**
 
-## Een voorinstelling voor een dynamische mediafbeelding maken {#creating-image-presets}
+## Dynamic Media-voorinstellingen voor afbeeldingen maken {#creating-image-presets}
 
-Als u een voorinstelling voor dynamische media-afbeeldingen maakt, kunt u deze instellingen op alle afbeeldingen toepassen wanneer u een voorvertoning weergeeft of publiceert.
+Als u een Dynamic Media-voorinstelling voor afbeeldingen maakt, kunt u deze instellingen op alle afbeeldingen toepassen wanneer u een voorvertoning weergeeft of publiceert.
 
 >[!NOTE]
 >
@@ -258,9 +258,9 @@ Zie [InDesign-bestandsindeling (INDD)](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->Als u dynamische voorinstellingen voor mediabestanden wilt maken, hebt u beheerdersrechten nodig als beheerder van AEM of Admin Console.
+>Als u Dynamic Media-voorinstellingen voor afbeeldingen wilt maken, hebt u beheerdersrechten nodig als AEM beheerder of beheerder van Admin Consoles.
 
-**Een voorinstelling** voor dynamische media-afbeeldingen maken:
+**Een Dynamic Media-voorinstelling** voor afbeeldingen maken:
 
 1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Assets > Image Presets.]**
 1. Klik op **[!UICONTROL Create.]** Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
@@ -291,9 +291,9 @@ Als u deze leeg laat, wordt AEM aangegeven dat op deze voorinstelling kan worden
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->In de modus Dynamische media - Scene7 worden afbeeldingsvoorinstellingen en afbeeldingselementen automatisch gepubliceerd.
+>In de modus Dynamic Media - Scene7 worden afbeeldingsvoorinstellingen en afbeeldingselementen automatisch gepubliceerd.
 >
->In de modus Dynamische media - hybride moet u de voorinstellingen en afbeeldingselementen van de afbeelding handmatig publiceren.
+>In Dynamic Media - hybride modus moet u handmatig voorinstellingen voor afbeeldingen en afbeeldingselementen publiceren.
 
 ### Opties {#image-preset-options} voor voorinstellingen afbeelding
 
@@ -407,7 +407,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul>
     <div>
       Verscherpen wordt beschreven in
-     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/s7_sharpening_images.pdf">Afbeeldingen verscherpen</a>.
+     <a href="https://docs.adobe.com/content/help/en/dynamic-media-classic/using/assets/sharpening_images.pdf">Afbeeldingen verscherpen</a>.
     </div> </td>
   </tr>
   <tr>
@@ -436,7 +436,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Niet-kernservices voor dynamische media: SVG, Afbeelding renderen en Web-to-Print</li>
+     <li>Niet-kernservices van Dynamic Media: SVG, Afbeelding renderen en Web-to-Print</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -501,13 +501,13 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 1. Selecteer een voorinstelling en klik op **[!UICONTROL Edit.]** Het venster **[!UICONTROL Edit Image Preset]** wordt geopend.
 1. Breng wijzigingen aan en klik op **[!UICONTROL Save]** om uw wijzigingen op te slaan of op **[!UICONTROL Cancel]** om uw wijzigingen te annuleren.
 
-## Voorinstellingen {#publishing-image-presets} voor dynamische media-afbeeldingen publiceren
+## Dynamic Media-voorinstellingen voor afbeeldingen publiceren {#publishing-image-presets}
 
-Als u de modus Dynamische media - hybride gebruikt, moet u de voorinstellingen van de afbeelding handmatig publiceren.
+Als u de modus Dynamic Media - Hybride gebruikt, moet u de voorinstellingen voor afbeeldingen handmatig publiceren.
 
-(Als u in de modus Dynamische media - Scene7 werkt, worden voorinstellingen voor afbeeldingen automatisch voor u gepubliceerd.) u hoeft deze stappen niet uit te voeren.)
+(Als u de modus Dynamic Media - Scene7 uitvoert, worden voorinstellingen voor afbeeldingen automatisch voor u gepubliceerd.) u hoeft deze stappen niet uit te voeren.)
 
-**Voorinstellingen voor afbeeldingen publiceren in de modus** Dynamische media - Hybride:
+**Voorinstellingen voor afbeeldingen publiceren in Dynamic Media - hybride modus**:
 
 1. Tik AEM of klik op het AEM logo om de algemene navigatieconsole te openen en tik op het pictogram Gereedschappen of navigeer naar **[!UICONTROL Assets > Image Presets.]**
 1. Selecteer de afbeeldingsvoorinstelling of meerdere afbeeldingsvoorinstellingen in de lijst met voorinstellingen voor afbeeldingen en klik of tik op **[!UICONTROL Publish.]**
@@ -515,9 +515,9 @@ Als u de modus Dynamische media - hybride gebruikt, moet u de voorinstellingen v
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
-## Voorinstellingen voor dynamische media-afbeeldingen verwijderen {#deleting-image-presets}
+## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
 
 1. Tik of klik in AEM op het AEM logo om de globale navigatieconsole te openen.
 1. Tik op het pictogram **[!UICONTROL Tools]** en navigeer naar **[!UICONTROL Assets > Image Presets.]**
-1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamische media bevestigen dat u deze wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
+1. Selecteer een voorinstelling en klik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tik **[!UICONTROL Delete]** om **[!UICONTROL Cancel]** te verwijderen of te tikken om af te breken.
 

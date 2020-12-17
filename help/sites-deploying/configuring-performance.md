@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
-source-git-commit: 7f1ae2d4ab361bc039c1098daa0ef944ec9df639
+source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
 workflow-type: tm+mt
-source-wordcount: '6648'
+source-wordcount: '6658'
 ht-degree: 1%
 
 ---
@@ -676,11 +676,11 @@ De AEM configuratie plaatst de opslagplaats en datastore op het zelfde logische 
 
 De volgende tabel illustreert de grootte van gegevensvolumes die worden gebruikt in de back-upbenchmarks. De initiële basislijninhoud wordt eerst geïnstalleerd, waarna extra bekende hoeveelheden gegevens worden toegevoegd om de inhoud waarvan een back-up wordt gemaakt, groter te maken. Back-ups worden gemaakt in specifieke stappen, zodat de inhoud van de back-ups aanzienlijk toeneemt en de productie per dag aanzienlijk toeneemt. De distributie van inhoud (pagina&#39;s, afbeeldingen, tags) is ruwweg gebaseerd op een realistische samenstelling van productieelementen. Pagina&#39;s, afbeeldingen en tags zijn beperkt tot maximaal 800 onderliggende pagina&#39;s. Elke pagina bevat de volgende onderdelen: titel, Flash, tekst/afbeelding, video, presentatie, formulier, tabel, cloud en carrousel. Afbeeldingen worden geüpload uit een groep van 400 unieke bestanden, variërend van 37 kB tot 594 kB.
 
-|Inhoud|Nodes|Pagina&#39;s|Afbeeldingen|Labels|
+| Inhoud | Knooppunten | Pagina&#39;s | Afbeeldingen | Tags |
 |---|---|---|---|---|
-|Basisinstallatie|69 610|562|256|237|
-|Kleine inhoud voor incrementele back-up||+100|+2|+2|
-|Grote inhoud voor volledige back-up||+10 000|+100|+100|
+| Basisinstallatie | 69 610 | 562 | 256 | 237 |
+| Kleine inhoud voor incrementele back-up |  | +100 | +2 | +2 |
+| Grote inhoud voor volledige back-up |  | +10 000 | +100 | +100 |
 
 De reservebenchmark wordt herhaald met de extra inhoudssets die bij elke herhaling worden toegevoegd.
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: e9d5a7acad04d841cbc7d62050163f3de998fab6
 workflow-type: tm+mt
 source-wordcount: '1724'
 ht-degree: 1%
@@ -70,9 +70,9 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 (Optioneel) Upload een bannerafbeelding voor weergave op de sitepagina&#39;s. De banner is vastgezet aan de linkerrand van browser, tussen de communautaire plaatsheader en menu (navigatiekoppelingen). De bannerhoogte wordt bijgesneden tot 120 pixels. Er wordt geen grootte van de banner aangepast aan de breedte van de browser en de hoogte van 120 pixels.
 
-![chlimage_1-449](assets/chlimage_1-449.png)
+![site-branding1](assets/site-branding1.png)
 
-![chlimage_1](assets/chlimage_1.jpeg)
+![merknaam2](assets/site-branding2.png)
 
 Selecteer **Volgende**.
 
@@ -130,7 +130,7 @@ Bijvoorbeeld,
 
 Accepteer de standaard algemene instellingen voor [het modereren](/help/communities/sites-console.md#moderation) door de gebruiker gegenereerde inhoud (UGC).
 
-![chlimage_1-452](assets/chlimage_1-452.png)
+![matiging1](assets/moderation1.png)
 
 #### ANALYSE {#analytics}
 
@@ -138,7 +138,7 @@ Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze com
 
 De selectie in het schermafbeelding, `Communities`, is het kadervoorbeeld van de [configuratiedocumentatie.](/help/communities/analytics.md#aem-analytics-framework-configuration)
 
-![chlimage_1-454](assets/chlimage_1-454.png)
+![analyse](assets/analytics.png)
 
 #### TRANSLATION {#translation}
 
@@ -147,7 +147,7 @@ Met de [Vertaalinstellingen](/help/communities/sites-console.md#translation) wor
 * Schakel **Machinevertaling toestaan**
 * De standaardinstellingen gebruiken
 
-![chlimage_1-456](assets/chlimage_1-456.png)
+![vertalen](assets/translation.png)
 
 #### INSCHAKELEN {#enablement}
 
@@ -163,7 +163,7 @@ Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communa
 * **Org-id**
  van Marketing Cloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer  [Video Heartbone-](/help/communities/analytics.md#video-heartbeat-analytics) analysemogelijkheden worden opgenomen in de actiemelding.
 
-![chlimage_1-457](assets/chlimage_1-457.png)
+![inschakelen](assets/enablement.png)
 
 Selecteer **Volgende**.
 
@@ -171,7 +171,7 @@ Selecteer **Volgende**.
 
 Selecteer **Maken.**
 
-![chlimage_1-458](assets/chlimage_1-458.png)
+![voorvertoning](assets/preview.png)
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities > Sites.
 
@@ -218,11 +218,11 @@ UGC is niet opgenomen in het sitepakket.
 
 Selecteer het pictogram van de wereld om de communitysite te publiceren.
 
-![chlimage_1-465](assets/chlimage_1-465.png)
+![publicatiesite](assets/publish-site.png)
 
 Er wordt een indicatie gegeven dat de site is gepubliceerd.
 
-![chlimage_1-466](assets/chlimage_1-466.png)
+![op de site gepubliceerd](assets/site-published.png)
 
 ## Community-gebruikers en -gebruikersgroepen {#community-users-user-groups}
 
@@ -251,7 +251,7 @@ In dit voorbeeld wordt de groep `Community Ski Class` toegevoegd als lid van de 
 
 * Selecteer **Opslaan**
 
-![chlimage_1-418](assets/chlimage_1-418.png)
+![bewerken, groep-instellingen](assets/edit-group-settings.png)
 
 ## Configuraties bij publiceren {#configurations-on-publish}
 
@@ -317,13 +317,13 @@ Aan de slag:
 >
 >Als u deze optie wilt uitschakelen, voegt u de eigenschapswaarde `sling:match` gewoon toe met een &#39;x&#39; - `xlocalhost.4503/$` - en **Alles opslaan**.
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![change-default-homepage](assets/change-default-homepage.png)
 
 #### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
 
 Als u wijzigingen niet kunt opslaan, moet u ervoor zorgen dat de knooppuntnaam `localhost.4503` is, met een &#39;punt&#39;-scheidingsteken en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, omdat `localhost` geen geldig naamruimtevoorvoegsel is.
 
-![chlimage_1-365](assets/chlimage_1-365.png)
+![error-map](assets/error-map.png)
 
 #### Problemen oplossen: Kan {#troubleshooting-fail-to-redirect} niet omleiden
 
@@ -361,11 +361,11 @@ Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaa
 
 * Selecteer **Opslaan**.
 
-![chlimage_1-299](assets/chlimage_1-299.png)
+![wijzigen-plaats-structuur](assets/modify-site-structure.png)
 
 Gebruik het pictogram Positie om de functie Catalog naar de tweede positie te verplaatsen, na Toewijzingen.
 
-![chlimage_1-300](assets/chlimage_1-300.png)
+![move-catalog-func](assets/move-catalog-func.png)
 
 Selecteer **Opslaan** in de rechterbovenhoek om de wijzigingen in de communitysite op te slaan.
 

@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 translation-type: tm+mt
-source-git-commit: d621a612556f0bea032444c2e07be101868b1905
+source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3386'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,11 @@ Een paar andere punten die u kunt opmerken zijn:
 * Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven volgens de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
 * verschillende scriptengines worden ondersteund :
 
-   * `.esp, .ecma`: ECMAScript (JavaScript) Pages (uitvoering op de server)
-   * `.jsp`: Java Server Pages (uitvoering op de server)
-   * `.java`: Java Servlet Compiler (uitvoering op de server)
-   * `.jst`: JavaScript-sjablonen (uitvoering op de client)
+   * HTML (HTML Template Language - voorkeur van Adobe Experience Manager en aanbevolen sjabloonsysteem voor de server voor HTML): `.html`
+   * ECMAScript (JavaScript) Pages (uitvoering op de server): `.esp, .ecma`
+   * Java Server Pages (serveruitvoering): `.jsp`
+   * Java Servlet Compiler (uitvoering op de server): `.java`
+   * JavaScript-sjablonen (uitvoering op de client): `.jst`
 
 De lijst van manuscriptmotoren die door de bepaalde instantie van AEM worden gesteund zijn vermeld op de Console van het Beheer van de Felix ( `http://<host>:<port>/system/console/slingscripting`).
 
@@ -175,7 +176,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+   Het script zal /apps/hr/jobs/jobs.esp zijn; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 

@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3533'
 ht-degree: 1%
 
 ---
@@ -287,6 +287,14 @@ Zie voor een voorbeeld:
 In de klassieke UI met ExtJS, was het gebruikelijk om luisteraars voor een bepaalde widget in de inhoudsstructuur te hebben. Hetzelfde bereiken in de interface met aanraakbediening is anders dan het bereiken van JS-listenercode (of enige andere code) wordt niet meer gedefinieerd in de inhoud.
 
 De inhoudstructuur beschrijft de semantische structuur; het mag (moet) niet de aard van de onderliggende widget impliceren. Als u geen JS-code hebt in de inhoudsstructuur, kunt u de implementatiedetails wijzigen zonder de inhoudsstructuur te wijzigen. Met andere woorden, u kunt de widgetbibliotheek wijzigen zonder de inhoudsstructuur aan te raken.
+
+#### Beschikbaarheid van dialoogvenster {#dialog-ready} detecteren
+
+Als u een aangepast JavaScript hebt dat alleen moet worden uitgevoerd wanneer het dialoogvenster beschikbaar en gereed is, moet u luisteren naar de gebeurtenis `dialog-ready`.
+
+Deze gebeurtenis wordt geactiveerd wanneer het dialoogvenster wordt geladen (of opnieuw wordt geladen) en klaar voor gebruik is. Dit houdt in dat telkens wanneer er een wijziging (maken/bijwerken) plaatsvindt in de DOM van het dialoogvenster.
+
+`dialog-ready` U kunt dit gebruiken om aangepaste JavaScript-code te koppelen die aanpassingen uitvoert op de velden in een dialoogvenster of vergelijkbare taken.
 
 ### Veldvalidatie {#field-validation}
 

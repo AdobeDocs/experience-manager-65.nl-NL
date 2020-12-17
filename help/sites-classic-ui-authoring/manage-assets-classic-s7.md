@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 81707b4d57f7f15106459b91f95b1bc6ec333bf4
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3250'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan Web, mobiele apparaten, e-mail en internetschermen en drukwerk.
 
-U kunt AEM middelen bekijken die in Scene7 zijn gepubliceerd in verschillende viewers:
+U kunt in Scene7 gepubliceerde Experience Managers weergeven in verschillende viewers:
 
 * In-/uitzoomen
 * Flyout
@@ -31,13 +31,13 @@ U kunt AEM middelen bekijken die in Scene7 zijn gepubliceerd in verschillende vi
 * Afbeeldingssjabloon
 * Afbeelding
 
-U kunt digitale middelen rechtstreeks van AEM naar Scene7 publiceren en u kunt digitale middelen van Scene7 naar AEM publiceren.
+U kunt digitale elementen rechtstreeks van Experience Manager naar Scene7 publiceren en u kunt digitale elementen van Scene7 naar Experience Manager publiceren.
 
-In dit document wordt beschreven hoe u digitale elementen kunt publiceren van AEM naar Scene7 en vice versa. Viewers worden ook in detail beschreven. Zie [Scene7 integreren met AEM](/help/sites-administering/scene7.md) voor informatie over het configureren van AEM voor Scene7.
+In dit document wordt beschreven hoe u digitale elementen kunt publiceren van Experience Manager naar Scene7 en omgekeerd. Viewers worden ook in detail beschreven. Voor informatie bij het vormen van Experience Manager voor Scene7, zie [Integrating Scene7 with Experience Manager](/help/sites-administering/scene7.md).
 
 Zie ook [Afbeeldingskaarten toevoegen](/help/assets/image-maps.md).
 
-Raadpleeg de volgende secties voor meer informatie over het gebruik van videocomponenten met AEM:
+Raadpleeg de volgende secties voor meer informatie over het gebruik van videocomponenten met Experience Manager:
 
 * [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
 
@@ -51,14 +51,14 @@ U kunt digitale middelen naar Scene7 publiceren vanuit de middelenconsole in de 
 
 >[!NOTE]
 >
->AEM publiceert asynchroon naar Scene7. Nadat u op **Publiceren** hebt geklikt, kan het enkele seconden duren voordat uw element naar Scene7 wordt gepubliceerd.
+>Experience Manager publiceert asynchroon naar Scene7. Nadat u op **Publiceren** hebt geklikt, kan het enkele seconden duren voordat uw element naar Scene7 wordt gepubliceerd.
 
 
 ### Publiceren vanaf de middelenconsole {#publishing-from-the-assets-console}
 
 Publiceren naar Scene7 vanaf de middelenconsole als de middelen zich in een Scene7-doelmap bevinden:
 
-1. Klik in de AEM klassieke interface op **Digitale elementen** om toegang te krijgen tot het beheer van digitale elementen.
+1. In de klassieke UI van de Experience Manager, klik **Digitale Activa** om tot het beheer van digitale activa toegang te hebben.
 
 1. Selecteer het element (of de elementen) of de map in de doelmap die u naar Scene7 wilt publiceren, klik met de rechtermuisknop en selecteer **Publiceren naar Scene7**. U kunt ook **Publiceren naar Scene7** selecteren in het **menu Extra**.
 
@@ -80,7 +80,7 @@ U kunt een element handmatig publiceren zolang dat element zich in de gesynchron
 
 Direct vanaf een digitaal middel publiceren naar Scene7:
 
-1. Klik in AEM op **Digitale middelen** om toegang te krijgen tot het beheer van digitale middelen.
+1. Klik in Experience Manager op **Digitale middelen** om toegang te krijgen tot het beheer van digitale elementen.
 
 1. Dubbelklik om een element te openen.
 
@@ -92,7 +92,7 @@ Direct vanaf een digitaal middel publiceren naar Scene7:
 
    >[!NOTE]
    >
-   >Als het element niet correct naar Scene7 wordt gepubliceerd, verandert de koppeling in **Publiceren mislukt**. Als het element al naar Scene7 is gepubliceerd, leest de koppeling **Opnieuw publiceren naar Scene7**. Door middel van opnieuw publiceren kunt u wijzigingen aanbrengen in een element in AEM en deze opnieuw publiceren.
+   >Als het element niet correct naar Scene7 wordt gepubliceerd, verandert de koppeling in **Publiceren mislukt**. Als het element al naar Scene7 is gepubliceerd, leest de koppeling **Opnieuw publiceren naar Scene7**. Door middel van opnieuw publiceren kunt u wijzigingen aanbrengen in een element in de Experience Manager en deze opnieuw publiceren.
 
 ### Elementen publiceren van buiten de CQ-doelmap {#publishing-assets-from-outside-the-cq-target-folder}
 
@@ -106,7 +106,7 @@ U doet dit door eerst de configuratie van de Wolk voor de pagina te vormen waar 
 
 Elementen publiceren die zich buiten de CQ-doelmap bevinden:
 
-1. In AEM in klassieke UI, klik **Websites** en navigeer aan de Web-pagina die u een digitaal middel aan wilt toevoegen dat nog niet aan Scene7 wordt gepubliceerd. (Normale regels voor paginaovererving zijn van toepassing.)
+1. In Experience Manager in klassieke UI, klik **Websites** en navigeer aan de Web-pagina die u een digitaal middel aan wilt toevoegen dat nog niet aan Scene7 wordt gepubliceerd. (Normale regels voor paginaovererving zijn van toepassing.)
 
 1. Klik in de assistent op het pictogram **Pagina** en klik op **Pagina-eigenschappen**.
 
@@ -124,7 +124,7 @@ Elementen publiceren die zich buiten de CQ-doelmap bevinden:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Klik **Status Scene7-publicatie controleren**. Als de activa niet worden gepubliceerd, publiceert AEM de activa aan Scene7. Nadat het element is geüpload, bevindt het zich in de ad-hocmap. Standaard bevindt de ad-hocmap zich in de map **name_of_the_company/CQ5_adhoc**. U kunt [dit, indien nodig ](#configuringtheadhocfolder) vormen.
+1. Klik **Status Scene7-publicatie controleren**. Als de activa niet worden gepubliceerd, publiceert Experience Manager de activa aan Scene7. Nadat het element is geüpload, bevindt het zich in de ad-hocmap. Standaard bevindt de ad-hocmap zich in de map **name_of_the_company/CQ5_adhoc**. U kunt [dit, indien nodig ](#configuringtheadhocfolder) vormen.
 
    >[!NOTE]
    >
@@ -132,7 +132,7 @@ Elementen publiceren die zich buiten de CQ-doelmap bevinden:
 
 ## Scene7-componenten {#scene-components}
 
-De volgende Scene7-componenten zijn beschikbaar in AEM:
+De volgende Scene7-componenten zijn beschikbaar in de Experience Manager:
 
 * In-/uitzoomen
 * Flyout (zoomen)
@@ -144,7 +144,7 @@ De volgende Scene7-componenten zijn beschikbaar in AEM:
 >
 >Deze componenten zijn niet standaard beschikbaar en moeten in de ontwerpmodus worden geselecteerd voordat ze kunnen worden gebruikt.
 
-Nadat ze in de ontwerpmodus beschikbaar zijn gemaakt, kunt u de componenten net als alle andere AEM aan de pagina toevoegen. Elementen die nog niet naar Scene7 zijn gepubliceerd, worden naar Scene7 gepubliceerd als ze zich in een gesynchroniseerde map of op een pagina of met een Scene7-cloudconfiguratie bevinden.
+Nadat ze in de ontwerpmodus beschikbaar zijn gemaakt, kunt u de componenten net als alle andere Experience Managers aan de pagina toevoegen. Elementen die nog niet naar Scene7 zijn gepubliceerd, worden naar Scene7 gepubliceerd als ze zich in een gesynchroniseerde map of op een pagina of met een Scene7-cloudconfiguratie bevinden.
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Het toevoegen van een Scene7-component aan een pagina is hetzelfde als het toevo
 
 Een Scene7-component/viewer toevoegen aan een pagina in de klassieke gebruikersinterface:
 
-1. Open in AEM de pagina waaraan u de Scene7-component wilt toevoegen.
+1. Open in Experience Manager de pagina waaraan u de Scene7-component wilt toevoegen.
 
 1. Als er geen Scene7-componenten beschikbaar zijn, klikt u op de liniaal in het hulpwerkgebied om de modus **Design** te activeren, klikt u op **Edit** parsys en selecteert u alle **Scene7** componenten om deze beschikbaar te maken.
 
@@ -180,7 +180,7 @@ Het responsieve ontwerp voor uw middelen betekent dat uw middelen worden aangepa
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
-1. Meld u aan bij AEM en controleer of u [geconfigureerde Adobe Scene7-Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) hebt en of Scene7-componenten beschikbaar zijn.
+1. Meld u aan bij de Experience Manager en controleer of u [geconfigureerde Adobe Scene7-Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) hebt en of Scene7-componenten beschikbaar zijn.
 
    >[!NOTE]
    >
@@ -227,7 +227,7 @@ In de HTML5 Flyout-component wordt het element weergegeven als gesplitst scherm.
 
 ### Afbeelding {#image}
 
-Met de Scene7 Image-component kunt u Scene7-functionaliteit aan uw afbeeldingen toevoegen, zoals Scene7-wijzigingstoetsen, voorinstellingen voor afbeeldingen of viewers en verscherpen. De Scene7-afbeeldingscomponent is vergelijkbaar met andere afbeeldingscomponenten in AEM met speciale Scene7-functionaliteit. In dit voorbeeld is op de afbeelding de Scene7 URL-modifier **&amp;op_invert=1** toegepast.
+Met de Scene7 Image-component kunt u Scene7-functionaliteit aan uw afbeeldingen toevoegen, zoals Scene7-wijzigingstoetsen, voorinstellingen voor afbeeldingen of viewers en verscherpen. De Scene7-afbeeldingscomponent is vergelijkbaar met andere afbeeldingscomponenten in Experience Manager met speciale Scene7-functionaliteit. In dit voorbeeld is op de afbeelding de Scene7 URL-modifier **&amp;op_invert=1** toegepast.
 
 ![](do-not-localize/chlimage_1-4.png)
 
@@ -253,7 +253,7 @@ Met de Scene7 Image-component kunt u Scene7-functionaliteit aan uw afbeeldingen 
 
 ### Afbeeldingssjabloon {#image-template}
 
-[Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Templatesare gelaagde Photoshop-inhoud die naar Scene7 is geïmporteerd, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u afbeeldingen importeren en de tekst dynamisch in AEM wijzigen. Daarnaast kunt u de **Afbeeldingssjabloon** configureren om waarden uit de clientcontext te gebruiken, zodat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
+[Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Templatesare gelaagde Photoshop-inhoud die naar Scene7 is geïmporteerd, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Daarnaast kunt u de **Afbeeldingssjabloon** configureren om waarden uit de clientcontext te gebruiken, zodat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
 
 Klik **Bewerken** om de component te configureren. U kunt [instellingen configureren die hetzelfde zijn voor alle Scene7-componenten](/help/sites-administering/scene7.md#settingscommontoallscene7components) en andere instellingen die in deze sectie worden beschreven.
 
@@ -327,15 +327,15 @@ Wanneer u een adaptieve videoset gebruikt met de Scene7-video-component, moet de
 
 ## Scene7 Content Browser {#scene-content-browser}
 
-Met de Scene7-inhoudbrowser kunt u inhoud van Scene7 rechtstreeks in AEM bekijken. Als u de inhoudbrowser wilt openen, selecteert u **Scene7** in de gebruikersinterface met geoptimaliseerde aanrakingen of het pictogram **S7** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
+Met de Scene7-inhoudbrowser kunt u inhoud van Scene7 rechtstreeks in Experience Manager weergeven. Als u de inhoudbrowser wilt openen, selecteert u **Scene7** in de gebruikersinterface met geoptimaliseerde aanrakingen of het pictogram **S7** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
 
-Als u veelvoudige configuraties hebt, AEM door gebrek toont [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Scene7-inhoudbrowser in de vervolgkeuzelijst.
+Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Scene7-inhoudbrowser in de vervolgkeuzelijst.
 
 >[!NOTE]
 >
 >* Middelen in de ad-hocmap worden niet weergegeven in de Scene7-inhoudbrowser.
 >* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), worden zowel gepubliceerde als niet-gepubliceerde elementen op Scene7 wel weergegeven in de Scene7-inhoudbrowser.
->* Als u **Scene7** of het **S7** pictogram niet als optie in inhoudbrowser ziet, moet u [Scene7 vormen om met AEM](/help/sites-administering/scene7.md) te werken.
+>* Als u **Scene7** of het **S7** pictogram niet als optie in inhoudbrowser ziet, moet u [vormen Scene7 om met Experience Manager](/help/sites-administering/scene7.md) te werken.
 >* Voor video ondersteunt de Scene7-inhoudbrowser:
    >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
    >   * Eén MP4-video
@@ -368,7 +368,7 @@ Elementen worden standaard weergegeven op bestandsnaam. U kunt resultaten ook fi
 
 ### Scene7-elementen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
-Het zoeken naar Scene7-elementen lijkt op het zoeken naar AEM elementen, maar wanneer u een zoekopdracht uitvoert, ziet u in feite een externe weergave van de elementen in het Scene7-systeem in plaats van deze rechtstreeks in AEM te importeren.
+Het zoeken naar Scene7-elementen lijkt op het zoeken naar Experience Manager-elementen, maar wanneer u een zoekopdracht uitvoert, ziet u in feite een externe weergave van de elementen in het Scene7-systeem in plaats van deze rechtstreeks in de Experience Manager te importeren.
 
 U kunt zowel de klassieke interface als de interface met geoptimaliseerde aanrakingen gebruiken om elementen weer te geven en te zoeken. Afhankelijk van de interface, is hoe u zoekt lichtjes verschillend.
 
@@ -380,9 +380,9 @@ Wanneer u in een van beide UI zoekt, kunt u filteren op de volgende criteria (di
 
 **Map/** padDe naam van de map die wordt weergegeven, is gebaseerd op de configuratie die u hebt geselecteerd. U kunt tot lagere niveaus boor door het omslagpictogram te klikken en een subomslag te selecteren, dan het controleteken te klikken om het te selecteren.
 
-Als u een sleutelwoord ingaat en een omslag selecteert, AEM onderzoeken die omslag en om het even welke subfolders. Als u echter bij het zoeken geen trefwoorden invoert, worden bij het selecteren van de map alleen de elementen in die map weergegeven en worden er geen submappen opgenomen.
+Als u een sleutelwoord ingaat en een omslag selecteert, zoekt de Experience Manager die omslag en om het even welke subfolders. Als u echter bij het zoeken geen trefwoorden invoert, worden bij het selecteren van de map alleen de elementen in die map weergegeven en worden er geen submappen opgenomen.
 
-AEM zoekt standaard naar de geselecteerde map en naar alle submappen.
+Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle submappen.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -394,7 +394,7 @@ AEM zoekt standaard naar de geselecteerde map en naar alle submappen.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**ElementtypeIn de Scene7-browser kunt** u de resultaten filteren en de volgende items opnemen: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt AEM standaard naar alle elementtypen.
+**ElementtypeIn de Scene7-browser kunt** u de resultaten filteren en de volgende items opnemen: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt Experience Manager standaard naar alle elementtypen.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -404,10 +404,10 @@ AEM zoekt standaard naar de geselecteerde map en naar alle submappen.
    >
    >
 * Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen *.mp4) en de gecodeerde uitvoering.
-* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, zoekt AEM niet in de submappen.
+* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 
 
 
-**PublicatiestatusU kunt** filteren op elementen die zijn gebaseerd op de publicatiestatus: Niet gepubliceerd of gepubliceerd. Als u geen publicatiestatus selecteert, zoekt AEM standaard alle publicatiestatus.
+**PublicatiestatusU kunt** filteren op elementen die zijn gebaseerd op de publicatiestatus: Niet gepubliceerd of gepubliceerd. Als u geen publicatiestatus selecteert, zoekt de Experience Manager standaard naar alle publicatiestatussen.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

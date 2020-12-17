@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c863e438df45fd54c29c1b99114eea07aaeb6162
+source-git-commit: 303841896717448947aa48ece7ae86519a5450d5
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 1%
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +63,7 @@ De verouderde wijze is voor klanten die douaneinterfaces hebben die op erfenis o
 
 ## Instellen {#how-to-set-up}
 
-Het AEM 6.3 compatibiliteitspakket kan als een pakket worden geïnstalleerd met behulp van Package Manager op deze [link](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+Het AEM 6.3 compatibiliteitspakket kan als een pakket worden geïnstalleerd met de Package Manager. U kunt het [AEM 6.3 compatibiliteitspakket downloaden van de plaats van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
 
 Zodra het Pakket van de Verenigbaarheid wordt geïnstalleerd, kan het verpletteren worden toegelaten of worden onbruikbaar gemaakt gebruikend een schakelaar in de configuratie OSGI zoals hieronder getoond:
 

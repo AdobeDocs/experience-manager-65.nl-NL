@@ -1,6 +1,6 @@
 ---
-title: Dynamische media-elementen toevoegen aan pagina's
-description: Dynamische mediacomponenten toevoegen aan een pagina in AEM
+title: Dynamic Media-elementen toevoegen aan pagina's
+description: Dynamic Media-componenten toevoegen aan een pagina in Adobe Experience Manager
 uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,33 +9,33 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 863c3292d272ba4c80a80645262919e55870a437
 workflow-type: tm+mt
-source-wordcount: '2957'
-ht-degree: 7%
+source-wordcount: '2965'
+ht-degree: 6%
 
 ---
 
 
-# Dynamische media-elementen toevoegen aan pagina&#39;s{#adding-dynamic-media-assets-to-pages}
+# Dynamic Media-elementen toevoegen aan pagina&#39;s{#adding-dynamic-media-assets-to-pages}
 
 Als u de functionaliteit voor dynamische media wilt toevoegen aan assets die u op uw websites gebruikt, kunt u de component **Dynamische media**, **Interactieve media**, **Panoramische media** of **Video 360-media** rechtstreeks op de pagina toevoegen. U doet dit door naar de modus Lay-out te gaan en de componenten voor dynamische media in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en assets aan de component toevoegen. De componenten voor dynamische media zijn slim: ze weten of u een afbeelding of een video toevoegt en de beschikbare configuratieopties veranderen dienovereenkomstig.
 
-U voegt dynamische media-assets rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt. Als u een oplossing van derden gebruikt voor uw WCM, moet u uw assets [koppelen](/help/assets/linking-urls-to-yourwebapplication.md) of [insluiten](/help/assets/embed-code.md). Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](/help/assets/responsive-site.md).
+U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Adobe Experience Manager als uw WCM gebruikt. Als u een oplossing van derden gebruikt voor uw WCM, moet u uw assets [koppelen](/help/assets/linking-urls-to-yourwebapplication.md) of [insluiten](/help/assets/embed-code.md). Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >
->U moet elementen publiceren voordat u deze aan pagina&#39;s in AEM toevoegt. Zie [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
+>U moet elementen publiceren voordat u ze in Experience Manager aan pagina&#39;s toevoegt. Zie [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Een component Dynamische media toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
+## Een Dynamic Media-component toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
 
-Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De dynamische componenten van Media worden beschreven in de volgende secties.
+Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De Dynamic Media-componenten worden in de volgende secties beschreven.
 
-1. Open in AEM de pagina waaraan u de component Dynamische media wilt toevoegen.
+1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
 1. Klik op het pictogram **[!UICONTROL Components]** in het deelvenster aan de linkerkant van de pagina (mogelijk moet u de weergave van het zijpaneel in- of uitschakelen).
 1. Selecteer **[!UICONTROL Dynamic Media.]** onder de kop **[!UICONTROL Components]** in de vervolgkeuzelijst
 
-   Als geen lijst van Dynamische componenten van Media beschikbaar is, moet u waarschijnlijk de Dynamische componenten van Media toelaten die u wilt gebruiken. Zie [Dynamische mediacomponenten inschakelen](#enabling-dynamic-media-components).
+   Als er geen lijst met Dynamic Media-componenten beschikbaar is, moet u waarschijnlijk de Dynamic Media-componenten inschakelen die u wilt gebruiken. Zie [Dynamic Media-componenten inschakelen](#enabling-dynamic-media-components).
 
    ![6_5_360video_wcmcomponent](/help/assets/assets/6_5_360video_wcmcomponent.png)
 
@@ -47,7 +47,7 @@ Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische m
 
 1. Afhankelijk van de Dynamic Media-component die u op de pagina hebt neergezet, wordt een configuratiedialoogvenster geopend. [Stel de ](/help/assets/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) opties van de component naar wens in.
 
-   In het onderstaande voorbeeld ziet u het dialoogvenster Dynamische media **[!UICONTROL Video 360 Media]** en de opties die beschikbaar zijn in de vervolgkeuzelijst Voorinstelling viewer.
+   In het onderstaande voorbeeld ziet u het dialoogvenster Dynamic Media **[!UICONTROL Video 360 Media]** en de opties die beschikbaar zijn in de vervolgkeuzelijst Voorinstelling viewer.
 
    ![Video 360-mediacomponent](assets/6_5_360video_wcmcomponentviewerpreset.png)
 
@@ -55,11 +55,11 @@ Het toevoegen van 3D-media, dynamische media, interactieve media, panoramische m
 
 1. Als u klaar bent, tikt u in de rechterbovenhoek van het dialoogvenster op het vinkje om de wijzigingen op te slaan.
 
-### Dynamische mediacomponenten {#enabling-dynamic-media-components} inschakelen
+### Dynamic Media-componenten {#enabling-dynamic-media-components} inschakelen
 
-Als er geen dynamische mediacomponenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
+Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
 
-1. Open in AEM de pagina waaraan u de component Dynamische media wilt toevoegen.
+1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
 1. Tik links op de werkbalk naast de pagina op het pictogram Pagina-informatie en tik vervolgens op **[!UICONTROL Edit Template]** in de vervolgkeuzelijst.
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
@@ -74,17 +74,17 @@ Als er geen dynamische mediacomponenten beschikbaar zijn om aan een pagina toe t
    ![Toegestane componenten](/help/assets/assets-dm/allowed-components.png)
 
 1. Schuif totdat u **[!UICONTROL Dynamic Media.]** ziet
-1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** om de lijst uit te vouwen, selecteer de dynamische mediacomponenten die u wilt inschakelen.
+1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** om de lijst uit te vouwen, selecteer de Dynamic Media-componenten die u wilt inschakelen.
 
-   ![Lijst met dynamische mediacomponenten](/help/assets/assets-dm/dm-components-select.png)
+   ![Lijst met Dynamic Media-componenten](/help/assets/assets-dm/dm-components-select.png)
 
 1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Layout Container]** op het pictogram Gereed (vinkje).
 
-1. Tik in de vervolgkeuzelijst rechts op de werkbalk boven aan de pagina op **[!UICONTROL Initial Content]** en voeg vervolgens [zoals gewoonlijk een component Dynamische media toe aan een pagina](#adding-a-dynamic-media-component-to-a-page).
+1. Tik in de vervolgkeuzelijst rechts op de werkbalk boven aan de pagina op **[!UICONTROL Initial Content]** en voeg vervolgens [zoals gewoonlijk een Dynamic Media-component toe aan een pagina](#adding-a-dynamic-media-component-to-a-page).
 
-## Dynamische mediacomponenten lokaliseren {#localizing-dynamic-media-components}
+## Dynamic Media-componenten lokaliseren {#localizing-dynamic-media-components}
 
-U kunt dynamische mediacomponenten op twee manieren lokaliseren:
+U kunt Dynamic Media-componenten op twee manieren lokaliseren:
 
 * Open **[!UICONTROL Properties]** en selecteer het tabblad **[!UICONTROL Advanced]** op een webpagina in Sites. Selecteer de gewenste taal voor lokalisatie.
 
@@ -96,11 +96,11 @@ U kunt dynamische mediacomponenten op twee manieren lokaliseren:
    >
    >Niet alle talen in het menu **[!UICONTROL Language]** hebben tokens toegewezen.
 
-## Dynamische mediacomponenten {#dynamic-media-components}
+## Dynamic Media-componenten {#dynamic-media-components}
 
-Dynamische mediacomponenten zijn beschikbaar wanneer u op het **[!UICONTROL Components]**-pictogram tikt en vervolgens op **[!UICONTROL Dynamic Media.]** filtert
+Dynamic Media-componenten zijn beschikbaar wanneer u op het **[!UICONTROL Components]**-pictogram tikt en vervolgens op **[!UICONTROL Dynamic Media.]** filtert
 
-De dynamische componenten van Media die beschikbaar zijn omvatten het volgende:
+De volgende Dynamic Media-componenten zijn beschikbaar:
 
 * **[!UICONTROL Dynamic Media]** - Wordt gebruikt voor assets zoals afbeeldingen, video, e-catalogi en spinsets.
 * **[!UICONTROL Interactive Media]** - Wordt gebruikt voor interactieve elementen zoals interactieve video, interactieve afbeeldingen of carrouselsets.
@@ -109,39 +109,39 @@ De dynamische componenten van Media die beschikbaar zijn omvatten het volgende:
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten via de sjablooneditor beschikbaar worden gemaakt voordat ze kunnen worden gebruikt. [Nadat ze beschikbaar zijn gesteld ](/help/sites-authoring/templates.md#editing-templates-template-authors)in de sjablooneditor, kunt u de componenten aan de pagina toevoegen, net als elke andere AEM.
+>Deze componenten zijn niet standaard beschikbaar en moeten via de sjablooneditor beschikbaar worden gemaakt voordat ze kunnen worden gebruikt. [Nadat zij ](/help/sites-authoring/templates.md#editing-templates-template-authors)in de malplaatjeredacteur ter beschikking worden gesteld, kunt u de componenten aan uw pagina toevoegen zoals u een andere component van de Experience Manager.
 
 ![6_5_dynamicmediawcmcomponents](assets/6_5_dynamicmediawcmcomponents.png)
 
-### Dynamische mediacomponent {#dynamic-media-component}
+### Dynamic Media-component {#dynamic-media-component}
 
-De component Dynamische media is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer hierop. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
+De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding of video toevoegt, hebt u verschillende opties. De component ondersteunt voorinstellingen voor afbeeldingen, op afbeeldingen gebaseerde viewers, zoals afbeeldingssets, centrifuges, gemengde mediasets en video. Bovendien reageert de viewer hierop. De grootte van het scherm verandert automatisch op basis van de schermgrootte. Alle viewers zijn HTML5-viewers.
 
 >[!NOTE]
 >
 >Als uw webpagina het volgende heeft:
 >
->* Meerdere instanties van de component Dynamic Media die op dezelfde pagina worden gebruikt.
+>* Meerdere instanties van de Dynamic Media-component die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
 
 >
 >
 Houd er rekening mee dat het toewijzen van een andere viewervoorinstelling aan elke Dynamic Media-component op die pagina niet wordt ondersteund.
 >
->U kunt echter dezelfde viewervoorinstelling gebruiken voor alle Dynamic Media-componenten die elementen van hetzelfde type gebruiken, op de pagina.
+>U kunt echter dezelfde viewervoorinstelling gebruiken voor alle Dynamic Media-componenten die op de pagina elementen van hetzelfde type gebruiken.
 
-Wanneer u de component Dynamische media toevoegt en **[!UICONTROL Dynamic Media Settings]** leeg is of u kunt activa niet behoorlijk toevoegen, controleer het volgende:
+Wanneer u de Dynamic Media-component toevoegt en **[!UICONTROL Dynamic Media Settings]** leeg is of wanneer u een element niet correct kunt toevoegen, controleert u het volgende:
 
-* U hebt [ingeschakelde Dynamische Media](/help/assets/config-dynamic.md). Dynamische media is standaard uitgeschakeld.
+* U hebt [ingeschakelde Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
 * De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat dynamische media is ingeschakeld, hebben geen TIFF-bestand met piramide.
 
 #### Wanneer u werkt met afbeeldingen {#when-working-with-images}
 
-Met de component Dynamische media kunt u dynamische afbeeldingen toevoegen, zoals afbeeldingssets, centrifuges en gemengde mediasets. U kunt inzoomen, uitzoomen en, indien van toepassing, een afbeelding binnen een centrifugeset draaien of een afbeelding van een ander type set selecteren.
+Met de Dynamic Media-component kunt u dynamische afbeeldingen toevoegen, zoals afbeeldingssets, centrifuges en gemengde mediasets. U kunt inzoomen, uitzoomen en, indien van toepassing, een afbeelding binnen een centrifugeset draaien of een afbeelding van een ander type set selecteren.
 
 U kunt de viewervoorinstelling, afbeeldingsvoorinstelling of afbeeldingsindeling ook rechtstreeks in de component configureren. Als u een afbeelding responsief wilt maken, kunt u de onderbrekingspunten instellen of een responsieve voorinstelling voor de afbeelding toepassen.
 
-U *must* bewerkt de volgende instellingen voor dynamische media door te tikken op het pictogram **[!UICONTROL Edit]** in de component en vervolgens **[!UICONTROL Dynamic Media Settings.]**
+U *must* bewerkt de volgende Dynamic Media Settings door op het **[!UICONTROL Edit]**-pictogram in de component te tikken en vervolgens **[!UICONTROL Dynamic Media Settings.]**
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -186,15 +186,15 @@ U *must* bewerkt de volgende instellingen voor dynamische media door te tikken o
 
 #### Bij het werken met video {#when-working-with-video}
 
-Met de component Dynamische media kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
+Met de Dynamic Media-component kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
 ![chlimage_1-173](assets/chlimage_1-540.png)
 
-U moet de volgende Dynamische Montages van Media uitgeven door **[!UICONTROL Edit]** in de component te klikken.
+U moet de volgende Dynamic Media-instellingen bewerken door in de component op **[!UICONTROL Edit]** te klikken.
 
 >[!NOTE]
 >
->Standaard is de videocomponent Dynamic Media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component met **[!UICONTROL Width]** en **[!UICONTROL Height]** in **[!UICONTROL Advanced]** tabel.
+>De Dynamic Media-videocomponent is standaard adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component met **[!UICONTROL Width]** en **[!UICONTROL Height]** in **[!UICONTROL Advanced]** tabel.
 
 * **[!UICONTROL Viewer preset]**—Selecteer een bestaande voorinstelling voor een videoviewer in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren.
 
@@ -215,13 +215,13 @@ U moet de volgende Dynamische Montages van Media uitgeven door **[!UICONTROL Edi
 
 #### Wanneer u werkt met Slim uitsnijden {#when-working-with-smart-crop}
 
-Met de component Dynamische media kunt u SmartCrop-afbeeldingselementen toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
+Met de Dynamic Media-component kunt u SmartCrop-afbeeldingselementen toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
 Zie ook [Afbeeldingsprofielen](/help/assets/image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-U moet de volgende instelling voor dynamische media bewerken door in de component op **[!UICONTROL Edit]** te klikken.
+U moet de volgende Dynamic Media-instelling bewerken door in de component op **[!UICONTROL Edit]** te klikken.
 
 >[!NOTE]
 >
@@ -332,18 +332,18 @@ U kunt de volgende instelling bewerken door te tikken op **[!UICONTROL Configure
 
 Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. U moet viewervoorinstellingen publiceren voordat u deze kunt gebruiken. Zie [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
-### HTTP/2 gebruiken om dynamische media-elementen {#using-http-to-delivery-dynamic-media-assets} te leveren
+### HTTP/2 gebruiken om Dynamic Media-elementen {#using-http-to-delivery-dynamic-media-assets} te leveren
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van dynamische media-elementen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 
-Zie [HTTP2 Levering van Inhoud](/help/assets/http2.md) voor volledige details bij het worden begonnen met het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](/help/assets/http2.md) voor volledige informatie over het gaan gebruiken van HTTP/2 met uw Dynamic Media-account.
 
 >[!MORELIKETHIS]
 >
->* [De videospeler gebruiken in AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
->* [Interactieve video gebruiken met AEM dynamische media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
+>* [De videospeler in AEM Dynamic Media gebruiken](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
+>* [Interactieve video gebruiken met AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
 >* [De Asset Viewer begrijpen met AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [Aangepaste videominiatuur gebruiken met AEM dynamische media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [Werken met kleurbeheer met AEM dynamische media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
->* [Afbeelding verscherpen gebruiken met AEM dynamische media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
+>* [Aangepaste videominiatuur gebruiken met AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [Werken met kleurbeheer met AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [Afbeeldingen verscherpen gebruiken met AEM Dynamic Media](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-image-sharpening-feature-video-use.html)
 

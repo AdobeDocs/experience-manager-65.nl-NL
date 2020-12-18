@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1c633e87d773f864c65320d3ce658f61271d086d
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2781'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerking
 
 ### Formuliergegevensmodel HTTP-clientconfiguratie om prestaties te optimaliseren {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] het model van vormgegevens wanneer het integreren met RESTful Webdiensten als gegevensbron omvat nu de cliëntconfiguraties van HTTP voor prestatiesoptimalisering.
+[!DNL Experience Manager Forms] het model van vormgegevens wanneer het integreren met RESTful Webdiensten als gegevensbron omvat nu de cliëntconfiguraties van HTTP voor prestatiesoptimalisering. Zie [Gegevensbronnen configureren](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 ### Beschikbaarheid van de Optie van het Terugstellen voor elke component op de wijze van de Lay-out {#reset-option-layout-mode}
 
-U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen.
+U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen. Zie [De lay-outwijze van het gebruik resize componenten](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 
@@ -211,11 +211,11 @@ U kunt de [!DNL Dynamic Media] gebruikersinterface nu gebruiken om inhoud van he
 
 U kunt er nu voor kiezen om elementen selectief te publiceren of de publicatie ervan ongedaan te maken op [!DNL Experience Manager] of [!DNL Dynamic Media] met de wizard [!UICONTROL Quick Publish] of [!UICONTROL Manage Publication]. U kunt de modus `Publish` of `Unpublish` ook op mapniveau instellen.
 
-#### Smart Imaging voor dynamische media {#smart-imaging}
+#### Smart Imaging voor Dynamic Media {#smart-imaging}
 
 Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker om automatisch de juiste afbeeldingen te leveren die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid. Slimme beeldverwerking werkt met bestaande voorinstellingen voor afbeeldingen en maakt gebruik van intelligentie tijdens de laatste milliseconde van levering om de bestandsgrootte van de afbeelding verder te beperken op basis van de snelheid van de browser of netwerkverbinding. Zie [Slimme beeldverwerking](../assets/imaging-faq.md).
 
-#### Slim uitsnijden in videoprofielen voor dynamische media (6.5.3.0) {#smart-crop-video}
+#### Slim uitsnijden in videoprofielen voor Dynamic Media (6.5.3.0) {#smart-crop-video}
 
 Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprofielen - is een gereedschap dat de kracht van kunstmatige intelligentie in Adobe Sensei gebruikt om het brandpunt automatisch te detecteren en uit te snijden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte. Zie [Informatie over slim uitsnijden in videoprofielen](../assets/video-profiles.md).
 

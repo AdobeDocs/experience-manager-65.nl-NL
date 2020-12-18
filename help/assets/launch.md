@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch
-description: Met de extensie Dynamic Media Viewers voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
+description: Met de Dynamic Media Viewers-extensie voor het starten van Adobe en de release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
 uuid: d218ee1c-cd2c-40c3-a3d4-b95719ae8e98
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f4051767-182e-4cfd-9dfc-8f516378e0b6
 docset: aem65
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '6239'
+source-wordcount: '6221'
 ht-degree: 15%
 
 ---
@@ -21,35 +21,35 @@ ht-degree: 15%
 
 ## Wat is de integratie van Dynamic Media Viewers met Adobe Analytics en Adobe Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
-Met de nieuwe *Dynamic Media Viewers*-extensie voor het starten van Adobe en de recente release van Dynamic Media Viewers 5.13 kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van Adobe.
+Met de nieuwe *Dynamic Media Viewers*-extensie voor het starten van de Adobe, samen met de recente release van Dynamic Media Viewers 5.13, kunnen klanten van Dynamic Media, Adobe Analytics en Adobe Launch gebeurtenissen en gegevens gebruiken die specifiek zijn voor de Dynamic Media Viewers in hun configuratie voor het starten van de Adobe.
 
 Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw website bijhouden met Adobe Analytics. Tegelijkertijd kunt u de gebeurtenissen en gegevens gebruiken die door de viewers beschikbaar worden gesteld, met elke andere extensie voor Starten die afkomstig is van Adobe of een derde.
 
-Zie [Uitbreiding van Adobe](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/overview.html) in de Gids van de Gebruiker van het Experience Platform Launch om meer over uitbreidingen te leren.
+Zie [Uitbreiding van Adobe](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) in de Gids van de Gebruiker van het Experience Platform Launch om meer over uitbreidingen te leren.
 
 **Doelgroep van deze documentatie:** Sitebeheerders, ontwikkelaars op het AEM-platform en beheerders in bewerkingen.
 
 ### Beperkingen van de integratie {#limitations-of-the-integration}
 
-* Adobe-opstartopname voor Dynamic Media-viewers werkt niet in het AEM auteurknooppunt. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
-* Adobe De-startintegratie voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt opgehaald met de knop &quot;URL&quot; op de pagina Asset Details.
+* Adobe De integratie van de Lancering voor de kijkers van Dynamic Media werkt niet in de AEM auteursknoop. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
+* Adobe De-opstartintegratie voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
 * De integratie van de Lancering van Adobe kan niet gelijktijdig met de integratie van de Analytics van erfeniskijkers worden gebruikt (als parameter `config2=`).
-* Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de kern, zoals wordt beschreven in [Overzicht bijhouden](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
-* De configuratie van de Duur van de opslag voor Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens gebruikend *Dynamische Kijkers van Media* uitbreiding. Opslagduur moet worden ingesteld op **[!UICONTROL None]**.
+* Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de kern, zoals wordt beschreven in [Overzicht bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+* Configuratie opslagduur voor gegevenselementen wordt niet ondersteund voor gegevenselementen met de extensie *Dynamic Media Viewers*. Opslagduur moet worden ingesteld op **[!UICONTROL None]**.
 
 ### Gebruik scenario&#39;s voor de integratie {#use-cases-for-the-integration}
 
-Het belangrijkste gebruiksgeval voor de integratie met Adobe Launch zijn klanten die zowel AEM Assets als AEM Sites gebruiken. In dergelijke scenario&#39;s, kunt u een standaardintegratie tussen uw AEM auteursknoop en de Lancering van de Adobe instellen, dan uw instantie van Plaatsen met het bezit van de Lancering van de Adobe associëren. Daarna, zal om het even welke Dynamische component van Media WCM die aan een pagina van Plaatsen wordt toegevoegd gegevens en gebeurtenissen van kijkers volgen.
+Het belangrijkste gebruiksgeval voor de integratie met Adobe Launch zijn klanten die zowel AEM Assets als AEM Sites gebruiken. In dergelijke scenario&#39;s, kunt u een standaardintegratie tussen uw AEM auteursknoop en de Lancering van de Adobe instellen, dan uw instantie van Plaatsen met het bezit van de Lancering van de Adobe associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
 
-Zie [Informatie over het bijhouden van dynamische mediasviewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Zie [Informatie over het bijhouden van Dynamic Media-viewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
 
 Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Dynamic Media Classic gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de URL voor het maken van de Adobe-bibliotheek op vanuit Adobe Launch en voegt u deze handmatig toe aan de code van de webpagina.
 
-Zie [Informatie over het bijhouden van dynamische mediasviewers met behulp van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Zie [Informatie over het bijhouden van Dynamic Media-viewers met behulp van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
 
 ## Hoe gegevens en gebeurtenis volgen werkt in de integratie {#how-data-and-event-tracking-works-in-the-integration}
 
-De integratie maakt gebruik van twee afzonderlijke en onafhankelijke typen van Dynamic Media Viewers die worden bijgehouden: *Adobe Analytics* en *Adobe Analytics for Audio and Video*.
+De integratie maakt gebruik van twee aparte en onafhankelijke typen tracering voor Dynamic Media Viewers: *Adobe Analytics* en *Adobe Analytics for Audio and Video*.
 
 ### Informatie over tekstspatiëring met Adobe Analytics {#about-tracking-using-adobe-analytics}
 
@@ -59,17 +59,17 @@ In de Lancering van Adobe werken de concepten *Data Elements* en *Rules* samen o
 
 #### Gegevenselementen in Adobe starten {#about-data-elements-in-adobe-launch}
 
-Een gegevenselement in de Lancering van Adobe is een genoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of gegevens van Dynamic Media Viewers.
+Een gegevenselement in Adobe Launch is een benoemde eigenschap waarvan de waarde statisch is gedefinieerd of dynamisch is berekend op basis van de status van een webpagina of Dynamic Media Viewers-gegevens.
 
 De opties die beschikbaar zijn voor een definitie van een gegevenselement, zijn afhankelijk van de lijst met extensies die zijn geïnstalleerd in de Adobe-opstarteigenschap. De &quot;Core&quot;uitbreiding is vooraf geïnstalleerd en beschikbaar uit de doos in om het even welke configuratie. Met deze extensie &quot;Core&quot; kunt u een gegevenselement definiëren dat afkomstig is van cookie, JavaScript-code, queryreeks en vele andere bronnen.
 
 Voor het bijhouden van Adobe Analytics moeten verschillende extra extensies worden geïnstalleerd, zoals beschreven in [Installatie en installatie van extensies](#installing-and-setup-of-extensions). Met de extensie Dynamic Media Viewers kunt u een gegevenselement definiëren dat een argument is van de gebeurtenis Dynamic Viewer. Het is bijvoorbeeld mogelijk te verwijzen naar het viewertype, of de naam van het element die tijdens het laden door de viewer wordt gemeld, het zoomniveau dat wordt gemeld wanneer de eindgebruiker zoomt en nog veel meer.
 
-Met de extensie Dynamic Media Viewer worden de waarden van de Data Elements automatisch bijgewerkt.
+De extensie Dynamic Media Viewer houdt de waarden van de Data Elements automatisch up-to-date.
 
-Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van de Adobe Lancering UI worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. Met name wordt in de regel naar gegevenselementen die zijn gedefinieerd voor het bijhouden van dynamische mediaverviewers verwezen door de extensie Handeling voor variabelen instellen van Adobe Analytics (zie hieronder).
+Nadat u het hebt bepaald, kan een Element van Gegevens in andere plaatsen van de Adobe Lancering UI worden gebruikt, gebruikend de plukker van het Element van Gegevens widget. In het bijzonder wordt naar gegevenselementen die zijn gedefinieerd voor het bijhouden van Dynamic Media Viewers verwezen door de extensie Set Variables Action of Adobe Analytics in Rule (zie hieronder).
 
-Zie [Gegevenselementen](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html) in de Gids van de Gebruiker van het Experience Platform Launch om meer te leren.
+Zie [Gegevenselementen](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html#reference) in de Gids van de Gebruiker van het Experience Platform Launch om meer te leren.
 
 #### Informatie over regels in Adobe Launch {#about-rules-in-adobe-launch}
 
@@ -83,10 +83,10 @@ Welke opties beschikbaar zijn in de sectie Gebeurtenissen, Voorwaarden en Handel
 
 Voor het bijhouden van Adobe Analytics moeten verschillende extra extensies worden geïnstalleerd, zoals beschreven in [Installatie en installatie van extensies](#installing-and-setup-of-extensions). Specifiek:
 
-* De extensie Dynamic Media Viewers breidt de lijst met ondersteunde gebeurtenissen uit tot gebeurtenissen die specifiek zijn voor dynamische mediasviewers, zoals het laden van de viewer, het wisselen van elementen, inzoomen en het afspelen van video.
+* De extensie Dynamic Media Viewers breidt de lijst met ondersteunde gebeurtenissen uit tot gebeurtenissen die specifiek zijn voor Dynamic Media-viewers, zoals het laden van viewers, het wisselen van middelen, inzoomen en het afspelen van video.
 * De extensie Adobe Analytics breidt de lijst met ondersteunde handelingen uit met twee handelingen die vereist zijn voor het verzenden van gegevens naar trackingservers: *Stel variabelen in* en *Verstuur baken*.
 
-Als u dynamische mediasviewers wilt bijhouden, kunt u een van de volgende typen gebruiken:
+Als u Dynamic Media-viewers wilt bijhouden, kunt u elk type van het volgende gebruiken:
 
 * Gebeurtenissen van de extensie Dynamic Media Viewers, Core-extensie of een andere extensie.
 * Voorwaarden in de definitie van de regel. Of u kunt het gebied met voorwaarden leeg laten.
@@ -95,13 +95,13 @@ In de sectie van Acties, is het vereist dat u een *actie van Variabelen* plaatst
 
 De *actie van de Vastgestelde Variabelen* moet door een *actie worden gevolgd verzenden Beacon*. Met de handeling *Send Beacon* worden gegevens daadwerkelijk verzonden naar de analytics tracking-server. Beide acties, *Reeks Variabelen* en *Send Beacon*, komen uit de uitbreiding van Adobe Analytics.
 
-Zie [Regels](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/rules.html) in de Gids van de Gebruiker van het Experience Platform Launch om meer te leren.
+Zie [Regels](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/rules.html#reference) in de Gids van de Gebruiker van het Experience Platform Launch om meer te leren.
 
 #### Voorbeeldconfiguratie {#sample-configuration}
 
 In de volgende voorbeeldconfiguratie in Adobe Launch ziet u hoe u een elementnaam kunt bijhouden tijdens het laden van de viewer.
 
-1. Definieer op het tabblad **[!UICONTROL Data Elements]** een gegevenselement `AssetName` dat verwijst naar de parameter `asset` van de gebeurtenis `LOAD` uit de extensie Dynamic Media Viewers.
+1. Definieer op het tabblad **[!UICONTROL Data Elements]** een gegevenselement `AssetName` dat verwijst naar de parameter `asset` van de gebeurtenis `LOAD` van de extensie Dynamic Media Viewers.
 
    ![image2019-11](assets/image2019-11.png)
 
@@ -129,37 +129,37 @@ Wanneer een Experience Cloud-account is geabonneerd om Adobe Analytics for Audio
 
 Zie [Installatie en installatie van extensies](#installing-and-setup-of-extensions).
 
-Momenteel is de ondersteuning voor het bijhouden van video&#39;s beperkt tot alleen &#39;core playback&#39;, zoals beschreven in [Tracking Overview](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+Momenteel is de ondersteuning voor het bijhouden van video&#39;s beperkt tot alleen &#39;core playback&#39;, zoals beschreven in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 
-## De extensie {#using-the-dynamic-media-viewers-extension} Dynamische mediumviewers gebruiken
+## De Dynamic Media Viewers-extensie {#using-the-dynamic-media-viewers-extension} gebruiken
 
-Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om Dynamische kijkers van Media met de nieuwe integratie van de Adobe Lancering in AEM Sites te volgen en door ingebedcode te gebruiken.
+Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integration), is het mogelijk om de kijkers van Dynamic Media met de nieuwe Adobe te volgen Lancering integratie in AEM Sites en door ingebedcode te gebruiken.
 
-### Dynamische mediasviewers bijhouden in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
+### Dynamic Media-viewers bijhouden in AEM Sites {#tracking-dynamic-media-viewers-in-aem-sites}
 
-Als u dynamische mediasviewers in AEM Sites wilt bijhouden, moeten alle stappen worden uitgevoerd die worden vermeld onder de sectie [Alle integratieonderdelen configureren](#configuring-all-the-integration-pieces). Specifiek, moet u de configuratie IMS en de Configuratie van de Cloud van de Adobe creëren.
+Als u Dynamic Media-viewers in AEM Sites wilt bijhouden, moeten alle stappen worden uitgevoerd die worden vermeld onder de sectie [Alle integratieonderdelen configureren](#configuring-all-the-integration-pieces). Specifiek, moet u de configuratie IMS en de Configuratie van de Cloud van de Adobe creëren.
 
-Na de juiste configuratie, om het even welke Dynamische kijker van Media die u aan een pagina van Plaatsen toevoegt, gebruikend een component WCM die door Dynamische Media wordt gesteund, volgt automatisch gegevens aan Adobe Analytics, of Adobe Analytics voor Video, of allebei.
+Na de juiste configuratie worden gegevens automatisch bijgehouden in Dynamic Media-viewers die u aan een sitepagina toevoegt met een WCM-component die door Dynamic Media wordt ondersteund, naar Adobe Analytics, Adobe Analytics for Video of beide.
 
 <!-- To be reviewed and updated:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
 -->
 
-### Dynamische mediasviewers bijhouden met gebruik van ingesloten code {#tracking-dynamic-media-viewers-using-embed-code}
+### Dynamic Media-viewers bijhouden met de insluitcode {#tracking-dynamic-media-viewers-using-embed-code}
 
-Klanten die geen AEM Sites gebruiken of geen Dynamic Media-viewers insluiten in webpagina&#39;s buiten AEM Sites, of beide, kunnen nog steeds gebruikmaken van de integratie voor het starten van Adobe.
+Klanten die geen AEM Sites gebruiken of Dynamic Media-viewers insluiten in webpagina&#39;s buiten AEM Sites, of beide, kunnen nog steeds gebruikmaken van de integratie Adobe starten.
 
 U moet de configuratiestappen van de secties [Adobe Analytics configureren](#configuring-adobe-analytics-for-the-integration) en [Adobe Launch configureren](#configuring-adobe-launch-for-the-integration) voltooien. Aan AEM gerelateerde configuratiestappen zijn echter niet nodig.
 
 Na de juiste configuratie kunt u ondersteuning voor het starten van Adobe toevoegen aan een webpagina met een Dynamic Media-viewer.
 
-Zie [Code insluiten van starten toevoegen](https://docs.adobe.com/content/help/en/launch/using/implement/configure/implement-the-launch-install-code.html) voor meer informatie over het gebruik van insluitcode van bibliotheek Adobe starten.
+Zie [Code insluiten van starten toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) voor meer informatie over het gebruik van insluitcode van bibliotheek Adobe starten.
 
 <!-- To be reviewed and updated:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of AEM Dynamic Media.
 -->
 
-**Dynamische mediaviewers volgen met gebruik van ingesloten code**:
+**Dynamic Media-viewers volgen met behulp van insluitcode**:
 
 1. Zorg dat een webpagina gereed is voor het insluiten van een Dynamic Media-viewer.
 1. Verkrijg de insluitcode voor de bibliotheek van de Lancering van de Adobe door zich eerst aan te melden bij Adobe Launch (zie [Het Vormen de Lancering van Adobe](#configuring-adobe-launch-for-the-integration)).
@@ -167,22 +167,22 @@ See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/
 1. Ophalen van het milieuniveau dat relevant is voor de omgeving van de webpagina. Klik vervolgens in de kolom **[!UICONTROL Install]** op het pictogram van het vak.
 1. **[!UICONTROL In the Web Install Instructions]** kopieert u de volledige insluitcode van de Adobe Launch-bibliotheek, samen met de omringende  `<script/>` tags.
 
-## Referentiegids voor de extensie {#reference-guide-for-the-dynamic-media-viewers-extension} Dynamische mediumviewers
+## Referentiegids voor de extensie Dynamic Media Viewers {#reference-guide-for-the-dynamic-media-viewers-extension}
 
-### Informatie over de configuratie {#about-the-dynamic-media-viewers-configuration} voor dynamische mediasviewers
+### Informatie over de configuratie {#about-the-dynamic-media-viewers-configuration} van Dynamic Media Viewers
 
 De extensie Dynamic Media Viewer wordt automatisch geïntegreerd met de Adobe Launch-bibliotheek als aan alle onderstaande voorwaarden wordt voldaan:
 
 * Adobe Het globale object van de bibliotheek starten ( `_satellite`) is aanwezig op de pagina.
-* De extensiefunctie `_dmviewers_v001()` van Dynamic Media Viewers wordt gedefinieerd op `_satellite`.
+* De Dynamic Media Viewers extension functie `_dmviewers_v001()` wordt gedefinieerd op `_satellite`.
 
 * `config2=` Er is geen viewerparameter opgegeven, wat betekent dat de viewer geen gebruik maakt van verouderde analytische integratie.
 
 Bovendien is er een optie om de integratie van de Adobe Starten in de kijker uitdrukkelijk onbruikbaar te maken door `launch=0` parameter in de configuratie van de kijker te specificeren. De standaardwaarde van deze parameter is `1`.
 
-### De extensie {#configuring-the-dynamic-media-viewers-extension} voor dynamische mediaverviewers configureren
+### De Dynamic Media Viewers-extensie {#configuring-the-dynamic-media-viewers-extension} configureren
 
-De enige configuratieoptie voor de uitbreiding van de Kijkers van de Dynamische Media is **[!UICONTROL Enable Adobe Media Analytics for Audio and Video]**.
+De enige configuratieoptie voor de extensie Dynamic Media Viewers is **[!UICONTROL Enable Adobe Media Analytics for Audio and Video]**.
 
 Wanneer u deze optie inschakelt (inschakelen of inschakelen) en als Adobe Media Analytics for Audio en Video is geïnstalleerd en correct is geconfigureerd, worden meetgegevens voor het afspelen van video naar de Adobe Analytics verzonden voor audio- en videooplossing. Als u deze optie uitschakelt, wordt het bijhouden van video uitgeschakeld.
 
@@ -190,35 +190,35 @@ Als u deze optie *inschakelt zonder dat er Adobe Media Analytics for Audio and V
 
 ![image2019-7-22_12-4-23](assets/image2019-7-22_12-4-23.png)
 
-### Informatie over gegevenselementen in de extensie {#about-data-elements-in-the-dynamic-media-viewers-extension} Dynamische mediumviewers
+### Informatie over gegevenselementen in de extensie Dynamic Media Viewers {#about-data-elements-in-the-dynamic-media-viewers-extension}
 
 Het enige data-elementtype dat de uitbreiding Dynamische mediaviewers biedt, is **[!UICONTROL Viewer Event]** in de vervolgkeuzelijst **[!UICONTROL Data Element Type]**.
 
 Als deze optie is geselecteerd, maakt de Data Element-editor een formulier met twee velden:
 
 * **[!UICONTROL DM viewers event data type]** - een vervolgkeuzelijst met alle viewergebeurtenissen die door de uitbreiding Dynamische mediaviewers worden ondersteund en die argumenten bevatten, plus een speciaal **[!UICONTROL COMMON]**-item. Een **[!UICONTROL COMMON]**-item vertegenwoordigt een lijst met gebeurtenisparameters die gemeenschappelijk zijn voor alle typen gebeurtenissen die door de viewers worden verzonden.
-* **[!UICONTROL Tracking parameter]** - een argument van de geselecteerde Dynamic Media Viewer-gebeurtenis.
+* **[!UICONTROL Tracking parameter]** - een argument van de geselecteerde Dynamic Media-viewergebeurtenis.
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-Zie [Dynamic Media Viewers reference guide](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html) voor de lijst met ondersteunde gebeurtenissen per viewertype; Ga naar de specifieke sectie van de kijker, dan klik Steun voor de sectie van het volgen van Adobe Analytics. Op dit moment worden in de naslaggids voor dynamische media-viewers geen gebeurtenisargumenten vastgelegd.
+Zie de [Dynamic Media Viewers reference guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) voor de lijst met ondersteunde gebeurtenissen per viewertype; Ga naar de specifieke sectie van de kijker, dan klik Steun voor de sectie van het volgen van Adobe Analytics. Op dit moment worden in de naslaggids voor Dynamic Media Viewers geen gebeurtenisargumenten vastgelegd.
 
-Laten we nu eens kijken naar de levenscyclus van de Dynamic Media Viewers *Gegevenselement*. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende dynamische mediaviewer-gebeurtenis op de pagina plaatsvindt. Als het gegevenselement bijvoorbeeld naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &quot;asset&quot; verwijst, ontvangt de waarde van dat gegevenselement geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis **[!UICONTROL ZOOM]** en het bijbehorende &quot;schaal&quot;argument wijst, zal de waarde van zulk een Element van Gegevens leeg blijven tot de kijker een **[!UICONTROL ZOOM]** gebeurtenis voor het eerst verzendt.
+Laten we nu eens kijken naar de levenscyclus van de Dynamic Media Viewers *Data Element*. De waarde van een dergelijk gegevenselement wordt gevuld nadat de bijbehorende Dynamic Media-viewergebeurtenis op de pagina plaatsvindt. Als het gegevenselement bijvoorbeeld naar de gebeurtenis **[!UICONTROL LOAD]** en het argument &quot;asset&quot; verwijst, ontvangt de waarde van dat gegevenselement geldige gegevens nadat de viewer de gebeurtenis LOAD voor de eerste keer uitvoert. Als het gegevenselement naar de gebeurtenis **[!UICONTROL ZOOM]** en het bijbehorende &quot;schaal&quot;argument wijst, zal de waarde van zulk een Element van Gegevens leeg blijven tot de kijker een **[!UICONTROL ZOOM]** gebeurtenis voor het eerst verzendt.
 
 Op dezelfde manier worden de waarden van data-elementen automatisch bijgewerkt wanneer de viewer een overeenkomstige gebeurtenis op de pagina verzendt. De waarde-update gebeurt zelfs als de specifieke gebeurtenis niet in de regelconfiguratie is opgegeven. Als bijvoorbeeld het data-element **[!UICONTROL ZoomScale]** is gedefinieerd voor de &quot;scale&quot;-parameter van de ZOOM-gebeurtenis, maar de enige regel in de regelconfiguratie door de gebeurtenis **[!UICONTROL LOAD]** wordt getriggerd, wordt de waarde van **[!UICONTROL ZoomScale]** nog steeds bijgewerkt telkens als een gebruiker zoomt in de viewer.
 
 Elke viewer voor dynamische media heeft een unieke id op de webpagina. Het data-element houdt de waarde zelf bij en de viewer die de waarde heeft ingevuld. Dit betekent dat als er meerdere viewers op dezelfde pagina zijn en er een data-element **[!UICONTROL AssetName]** is dat naar de gebeurtenis **[!UICONTROL LOAD]** en het bijbehorende &quot;asset&quot;-argument verwijst, het data-element **[!UICONTROL AssetName]** een verzameling assetnamen bijhoudt die zijn gekoppeld aan elke viewer die op de pagina is geladen.
 
-De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement in een Regel wordt gevraagd die door een Dynamische de kijkergebeurtenis van Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En, als het Element van Gegevens in een Regel wordt gevraagd die door een Gebeurtenis van één of andere andere uitbreiding van de Lancering van Adobe werd teweeggebracht, dan is de waarde van het Element van Gegevens de waarde van de kijker die laatste was om dit Element van Gegevens bij te werken.
+De exacte waarde die door het gegevenselement wordt geretourneerd, is afhankelijk van de context. Als het gegevenselement wordt gevraagd in een Regel die door een de kijkergebeurtenis van Dynamic Media werd teweeggebracht, dan is de waarde van het Element van Gegevens teruggekeerd voor de kijker die de Regel in werking stelde. En, als het Element van Gegevens in een Regel wordt gevraagd die door een Gebeurtenis van één of andere andere uitbreiding van de Lancering van Adobe werd teweeggebracht, dan is de waarde van het Element van Gegevens de waarde van de kijker die laatste was om dit Element van Gegevens bij te werken.
 
 **Bekijk de volgende voorbeeldset-up**:
 
-* Een webpagina met twee Dynamic Media Zoom-viewers; zullen wij naar hen als *viewer1* en *viewer2* verwijzen.
+* Een webpagina met twee Dynamic Media-zoomviewers. zullen wij naar hen als *viewer1* en *viewer2* verwijzen.
 
 * **[!UICONTROL ZoomScale]** Data Element verwijst naar de  **[!UICONTROL ZOOM]** gebeurtenis en het argument &#39;scale&#39; ervan.
 * **[!UICONTROL TrackPan]** Regel met het volgende:
 
-   * Gebruikt de Dynamic Media Viewer **[!UICONTROL PAN]**-gebeurtenis als een trigger.
+   * Gebruikt de Dynamic Media Viewer **[!UICONTROL PAN]**-gebeurtenis als trigger.
    * Verzendt de waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens naar Adobe Analytics.
 
 * 
@@ -234,13 +234,13 @@ De activiteit van de eindgebruiker resulteert in de volgende twee volgende volge
 * De eerste vraag komt voor omdat **[!UICONTROL TrackPan]** de Regel wordt teweeggebracht wanneer de gebruiker in *viewer1* pant. Die vraag verzendt 50% als waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens omdat het Element van Gegevens zal weten dat de Regel door *viewer1* wordt teweeggebracht en de overeenkomstige schaalwaarde haalt;
 * De tweede vraag komt voor omdat **[!UICONTROL TrackKey]** de Regel wordt teweeggebracht wanneer de gebruiker op een sleutel op het toetsenbord duwde. Die vraag verzendt 25% als waarde van **[!UICONTROL ZoomScale]** het Element van Gegevens omdat de Regel niet door de kijker werd teweeggebracht. Als dusdanig, keert het Element van Gegevens de meest bijgewerkte waarde terug.
 
-Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de Adobe Launch-bibliotheekcode, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een niet-Dynamische uitbreiding van de Kijker van Media wordt teweeggebracht en verwijzingen zoals het Element van Gegevens, het Element van Gegevens de laatste bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
+Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor het gegevenselement. De waarde van het gegevenselement dat door de Dynamic Media Viewer wordt beheerd, wordt opgeslagen in de bibliotheekcode van de Adobe Launch-bibliotheek, zelfs nadat de viewer zelf op de webpagina is verwijderd. Dit betekent dat als er een Regel is die door een uitbreiding van de niet-Dynamic Media Kijker en verwijzingen zoals het Element van Gegevens wordt teweeggebracht, het Element van Gegevens de laatst bekende waarde terugkeert, zelfs als de kijker niet meer aanwezig op de Web-pagina is.
 
-In elk geval worden de waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, niet opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek aan de clientzijde bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
+De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, worden in geen geval opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de Adobe Launch-bibliotheek aan de clientzijde bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://docs.adobe.com/content/help/en/launch/using/reference/manage-resources/data-elements.html#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
+Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/reference/manage-resources/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
 
-### Info over Regels in de extensie {#about-rules-in-the-dynamic-media-viewers-extension} Dynamische media
+### Informatie over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 
 In de redacteur van de Regel, voegt de uitbreiding nieuwe configuratieopties voor de redacteur van Gebeurtenissen toe. Ook biedt de toepassing een optie om handmatig te verwijzen naar gebeurtenisparameters in de Action Editor als een kortzichtige optie in plaats van vooraf geconfigureerde gegevenselementen te gebruiken.
 
@@ -248,17 +248,17 @@ In de redacteur van de Regel, voegt de uitbreiding nieuwe configuratieopties voo
 
 In de gebeurteniseditor voegt de uitbreiding Dynamische mediaviewers een nieuw **[!UICONTROL Event Type]** genaamd **[!UICONTROL Viewer Event]** toe.
 
-Als deze optie is geselecteerd, wordt de vervolgkeuzelijst **[!UICONTROL Dynamic Media Viewer events]** weergegeven met alle beschikbare gebeurtenissen die worden ondersteund door Dynamic Media-viewers.
+Als deze optie is geselecteerd, wordt de vervolgkeuzelijst **[!UICONTROL Dynamic Media Viewer events]** weergegeven met alle beschikbare gebeurtenissen die door Dynamic Media-viewers worden ondersteund.
 
 ![image2019-8-2_15-13-1](assets/image2019-8-2_15-13-1.png)
 
 #### Informatie over de bewerkingseditor {#about-the-actions-editor}
 
-Met de extensie Dynamische media-viewers kunt u gebeurtenisparameters van Dynamic Media-viewers gebruiken voor het toewijzen van variabelen aan analytische variabelen in de editor Variabelen instellen van de Adobe Analytics-extensie.
+Met de extensie Dynamic Media Viewers kunt u gebeurtenisparameters van Dynamic Media-viewers gebruiken om de variabelen voor de analyse in te delen in de editor Variabelen instellen van de Adobe Analytics-extensie.
 
 De eenvoudigste methode om dat te doen is het volgende twee-stap proces te voltooien:
 
-* Definieer eerst een of meer gegevenselementen, waarbij elk gegevenselement een parameter van een dynamische Media Viewer-gebeurtenis vertegenwoordigt.
+* Definieer eerst een of meer gegevenselementen, waarbij elk gegevenselement een parameter van een Dynamic Media Viewer-gebeurtenis vertegenwoordigt.
 * Tot slot in de Vastgestelde redacteur van Variabelen van de uitbreiding van Adobe Analytics klikt het pictogram van de plukker van het Element van Gegevens (drie gestapelde schijven) om het Uitgezochte de dialoogvakje van het Element van Gegevens te openen, dan selecteer een Element van Gegevens van het.
 
 ![image2019-7-10_20-41-52](assets/image2019-7-10_20-41-52.png)
@@ -273,7 +273,7 @@ Er is een belangrijk verschil tussen het gebruik van Data Elements en de verwijz
 
 Als bijvoorbeeld wordt verwezen naar `%event.detail.dm.LOAD.asset%`, wordt de juiste assetnaam geretourneerd als de regel wordt getriggerd door de gebeurtenis **[!UICONTROL LOAD]** van de uitbreiding Dynamische mediaviewer. Er wordt echter een lege waarde voor elke andere gebeurtenis geretourneerd.
 
-In de volgende tabel worden de gebeurtenissen van de Dynamic Media Viewer en de ondersteunde argumenten weergegeven:
+De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de argumenten die hiervoor worden ondersteund:
 
 <table>
  <tbody>
@@ -432,7 +432,7 @@ Nadat u Adobe Analytics hebt geconfigureerd, wordt het volgende voor integratie 
 * De Variabelen van de Analyse zijn beschikbaar om het volgen gegevens te ontvangen.
 * Rapporten zijn beschikbaar voor het weergeven van verzamelde gegevens in Adobe Analytics.
 
-Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/analytics/implementation/home.html).
+Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs/analytics/implementation/home.html).
 
 **Adobe Analytics configureren voor integratie**:
 
@@ -450,7 +450,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
    Als er geen rapportsuite beschikbaar is, moet u of uw Adobe Analytics-beheerder er een maken voordat u verder kunt gaan met de configuratie.
 
-   Zie [Rapporten en Rapporten ](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html) en [Een rapportsuite](https://docs.adobe.com/content/help/en/analytics/admin/admin-console/create-report-suite.html) maken.
+   Zie [Rapporten en Rapporten ](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) en [Een rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/create-report-suite.html#admin-console) maken.
 
    In Adobe Analytics worden rapportsuites beheerd onder **[!UICONTROL Admin > Report Suites]**.
 
@@ -464,7 +464,7 @@ Zie ook [Analytics Implementation Guide](https://docs.adobe.com/content/help/en/
 
    U kunt elk type variabele gebruiken dat door Adobe Analytics wordt ondersteund. De beslissing over het variabeletype (zoals het Verkeer van de Douane [props], de Omzetting [eVar]) zou door specifieke behoeften van u de implementatie van Analytics moeten worden gedreven.
 
-   Zie [Overzicht van props en eVars](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/evar.html).
+   Zie [Overzicht van props en eVars](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars).
 
    In het kader van deze documentatie wordt alleen een variabele Custom Traffic (props) gebruikt, omdat deze binnen een paar minuten nadat een handeling op een webpagina heeft plaatsgevonden, beschikbaar komt in een Analytics-rapport.
 
@@ -497,7 +497,7 @@ Nadat u de Lancering van Adobe vormt, zal het volgende opstelling voor de integr
 
 * Het creëren van een nieuw Bezit om al uw configuraties samen te houden.
 * De installatie en installatie van extensies. De client-side code van alle extensies die in de eigenschap zijn geïnstalleerd, wordt samen gecompileerd in een bibliotheek. Deze bibliotheek wordt later door de webpagina gebruikt.
-* Configuratie van gegevenselementen en regels. Deze configuratie bepaalt welke gegevens van de Dynamische kijkers van Media moeten vangen, wanneer om de volgende logica teweeg te brengen, en waar om de gegevens van de kijker in Adobe Analytics te verzenden.
+* Configuratie van gegevenselementen en regels. Deze configuratie bepaalt welke gegevens van de kijkers van Dynamic Media moeten vangen, wanneer om de volgende logica teweeg te brengen, en waar om de gegevens van de kijker in Adobe Analytics te verzenden.
 * Publiceren van de bibliotheek.
 
 **Om de Lancering van Adobe voor de integratie** te vormen:
@@ -512,7 +512,7 @@ Nadat u de Lancering van Adobe vormt, zal het volgende opstelling voor de integr
 
 Een eigenschap in Adobe Launch is een benoemde configuratie die al uw instellingen bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
-Zie ook [Een eigenschap maken](https://docs.adobe.com/content/help/en/launch/using/implement/configure/create-a-property.html).
+Zie ook [Een opstarteigenschap maken](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
 
 1. Klik in Adobe Launch op **[!UICONTROL New Property]**.
 1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld, `DynamicMediaViewersProp.`
@@ -537,7 +537,7 @@ Waar nodig moeten de volgende extensies worden geïnstalleerd en geconfigureerd:
 
 Geen extra configuratie is nodig, keur voor om het even welke voorgestelde waarden goed. Wanneer u wordt gedaan, zeker bent u **[!UICONTROL Save]** klikt.
 
-Zie [Experience Cloud ID Service Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html).
+Zie [Experience Cloud ID Service Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html#extensions-ref).
 
 * (Vereist) *Adobe Analytics*-extensie
 
@@ -557,7 +557,7 @@ Vouw op de pagina **[!UICONTROL Install Extension]** **[!UICONTROL General]** ui
 
 Klik op **[!UICONTROL Save]**.
 
-Zie [Adobe Analytics Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html).
+Zie [Adobe Analytics Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html#extensions-ref).
 
 * (facultatief; is alleen vereist als videotracering nodig is) *Adobe Media Analytics voor audio en video*-extensie
 
@@ -565,13 +565,13 @@ Vul het veld Trackingserver in. De trackingserver voor de extensie *Adobe Media 
 
 Alle andere velden zijn optioneel.
 
-Zie [Adobe Media Analytics for Audio and Video Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html).
+Zie [Adobe Media Analytics for Audio and Video Extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#extensions-ref).
 
 * (Vereist) *Dynamic Media Viewers*-extensie
 
 Schakel **[!UICONTROL enable Adobe Analytics for Video]** in om het bijhouden van videorecorders in te schakelen.
 
-Merk op dat—op het tijdstip van dit schrijven—de uitbreiding *Dynamic Media Viewers* slechts beschikbaar is als het Bezit van de Lancering van de Adobe voor ontwikkeling wordt gecreeerd.
+Merk op dat—op het ogenblik van dit schrijven—de *uitbreiding van de Kijkers van Dynamic Media* slechts beschikbaar is als het Bezit van de Lancering van de Adobe voor ontwikkeling wordt gecreeerd.
 
 Zie [Een eigenschap maken in Adobe Launch](#creating-a-property-in-adobe-launch).
 
@@ -581,13 +581,13 @@ Nadat de extensies zijn geïnstalleerd en ingesteld, worden ten minste de volgen
 
 ### Gegevenselementen en regels instellen {#setting-up-data-elements-and-rules}
 
-Maak bij Adobe Launch gegevenselementen en -regels die nodig zijn voor het bijhouden van dynamische mediaviewers.
+Maak bij Adobe Launch gegevenselementen en -regels die nodig zijn voor het bijhouden van Dynamic Media-viewers.
 
 Zie [Hoe gegevens en gebeurtenis het volgen in de integratie ](#how-data-and-event-tracking-works-in-the-integration) voor een overzicht van het volgen met de Lancering van Adobe werkt.
 
 Zie [Sampleconfiguratie](#sample-configuration) voor een voorbeeldconfiguratie in Adobe Launch die aantoont hoe te om een activanaam bij de lading van de kijker te volgen.
 
-Zie [De extensie Dynamische media-viewers configureren](#configuring-the-dynamic-media-viewers-extension) voor uitgebreide informatie over de mogelijkheden van de extensie.
+Zie [De extensie Dynamic Media Viewers configureren](#configuring-the-dynamic-media-viewers-extension) voor uitgebreide informatie over de mogelijkheden van de extensie.
 
 ### Bibliotheek {#publishing-a-library} publiceren
 
@@ -595,7 +595,7 @@ Als u wijzigingen wilt aanbrengen in de configuratie voor het starten van de Ado
 
 De Lancering van Adobe kan veelvoudige milieu&#39;s van de Ontwikkeling, één het Opvoeren milieu, en één milieu van de Productie hebben. Door gebrek richt de Configuratie van de Wolk van de Lancering van de Adobe in AEM de AEM auteurknoop aan het milieu van het Stadium van de Lancering van Adobe, en AEM publicatieknooppunt aan het milieu van de Productie van de Lancering van Adobe. Deze regeling betekent dat met de standaard AEM montages, het noodzakelijk is om de bibliotheek van de Lancering van de Adobe aan het Staging milieu te publiceren zodat gebruik van het in AEM auteur, en dan het in het milieu van de Productie te publiceren zodat het in AEM publicatie kan worden gebruikt.
 
-Zie [Omgevingen](https://docs.adobe.com/content/help/en/launch/using/reference/publish/environments.html) voor meer informatie over Adobe Launch-omgevingen.
+Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/reference/publish/environments/environments.html#environment-types) voor meer informatie over Adobe Launch-omgevingen.
 
 Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoerd:
 
@@ -653,15 +653,15 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   Zie [Publiceren](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html) voor meer informatie over het publicatieproces bij het starten van de Adobe.
+   Zie [Publiceren](https://experienceleague.adobe.com/docs/launch/using/reference/publish/overview.html#reference) voor meer informatie over het publicatieproces bij het starten van de Adobe.
 
 ## Adobe Experience Manager configureren voor integratie {#configuring-adobe-experience-manager-for-the-integration}
 
 Vereisten:
 
 * AEM voert zowel de instanties Auteur als Publish uit.
-* AEM auteurnode wordt ingesteld in Dynamic Media - Scene7-uitvoeringsmodus (dynamicmedia_s7)
-* Dynamische media WCM-componenten zijn ingeschakeld in AEM Sites.
+* AEM auteurknooppunt is ingesteld in de uitvoeringsmodus Dynamic Media - Scene7 (dynamicmedia_s7)
+* Dynamic Media WCM-componenten zijn ingeschakeld in AEM Sites.
 
 De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
@@ -670,7 +670,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 ### AEM IMS {#configuring-aem-ims} configureren
 
-1. Klik in AEM auteur op het pictogram Extra (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
+1. Klik in AEM auteur op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 

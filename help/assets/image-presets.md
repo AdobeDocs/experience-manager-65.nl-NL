@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: fed2e6474f710fd02cf27946252896ac33f3b256
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 12%
 
 ---
@@ -32,9 +32,9 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 worden afbeeldingsvoorinstellingen alleen ondersteund voor afbeeldingselementen.
+>In de modus Dynamic Media - Scene7 worden afbeeldingsvoorinstellingen alleen ondersteund voor afbeeldingselementen.
 
-**Dynamische voorinstellingen voor mediaafbeeldingen toepassen**
+**Voorinstellingen Dynamic Media-afbeelding toepassen**
 
 1. Open het element en tik in de linkertrack op de vervolgkeuzelijst en tik op **[!UICONTROL Renditions.]**
 
@@ -57,5 +57,5 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >
    >Als de asset *en* de afbeeldingsvoorinstelling nog niet zijn gepubliceerd, is de knop **[!UICONTROL URL]** (of de knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]**, indien van toepassing) niet beschikbaar.
    >
-   >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media S7-server.
+   >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media-server.
 

@@ -2,9 +2,9 @@
 title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve formulieren te wijzigen
 description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
 translation-type: tm+mt
-source-git-commit: c62ad355469a95db89db44c34bb6df72d8f4bf77
+source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,16 @@ Selecteer **Layout** in de vervolgkeuzelijst die boven aan de adaptieve interfac
 1. Tik in de modus Lay-out op de component om de grootte te wijzigen. De blauwe stippen worden weergegeven aan het begin en einde van het responsieve raster.
 1. Sleep de blauwe stippen om de positie van de component in het responsieve raster te definiëren.
 
-   ![Vergroten/verkleinen met de modus Lay-out](assets/layout_mode_resize_new_updated.png)
+   ![Vergroten/verkleinen met de modus Lay-out](assets/layout_mode_resize_new_updated1.png)
 
    De werkbalk die wordt weergegeven nadat u op componenten hebt getikt, bestaat uit de volgende opties:
 
    * **Bovenliggend element:** selecteer het bovenliggende element van een component.
    * **Zweven naar nieuwe regel:** verschuif de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
 
-   U kunt alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met gewijzigde componenten met de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt herstellen](assets/reverttopreviouslypublishedversion.png)). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
+   Daarnaast kunt u alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met gewijzigde componenten. Gebruik hiervoor de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt omkeren](assets/reverttopreviouslypublishedversion.png)). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
+
+   U kunt op de component tikken en de optie **[!UICONTROL Revert breakpoint layout]** gebruiken om alle wijzigingen in de grootte ongedaan te maken en de standaardlay-out toe te passen op componentniveau.
 
    >[!NOTE]
    >

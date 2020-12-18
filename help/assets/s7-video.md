@@ -1,6 +1,6 @@
 ---
 title: Video
-description: Leer over het gecentraliseerde videobeheer AEM Assets waar u video's voor automatisch coderen kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit AEM Assets toegang hebt tot Dynamic Media Classic video's. Met de integratie van Dynamic Media Classic voor video wordt het bereik van geoptimaliseerde video uitgebreid naar alle schermen.
+description: Leer over het gecentraliseerde videobeheer AEM Assets waar u video's voor automatische codering kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit AEM Assets toegang hebt tot Dynamic Media Classic video's. Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen.
 uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1527'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Video {#video}
 
-Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Dynamic Media Classic-video&#39;s voor het ontwerpen van pagina&#39;s.
+Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Classic Dynamic Media-video&#39;s voor het ontwerpen van pagina&#39;s.
 
-De dynamische integratie van Media Klassieke video breidt het bereik van geoptimaliseerde video tot alle schermen (autoapparaat en bandbreedteopsporing) uit.
+Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 * De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
 * Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten.
@@ -32,7 +32,7 @@ Het standaardvideocoderingsproces is gebaseerd op het gebruik van de op FFMPEG g
 * FMPEG-miniaturen
 * FFMPEG-codering
 
-Houd er rekening mee dat het inschakelen en configureren van de Dynamic Media Classic-integratie deze twee workflowstappen niet automatisch verwijdert of deactiveert uit de workflow voor het innemen van DAM. Als u al in AEM gebruik maakt van de op FFMPEG gebaseerde videocodering, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met DAM wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van Dynamic Media Classic-integratie.
+Houd er rekening mee dat het inschakelen en configureren van de Dynamic Media Classic-integratie deze twee workflowstappen niet automatisch verwijdert of deactiveert uit de uit-van-de-box DAM-opnameworkflow. Als u al in AEM gebruik maakt van de op FFMPEG gebaseerde videocodering, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met DAM wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van de Dynamic Media Classic-integratie.
 
 Als u op FFMPEG-Gebaseerde videocodering in AEM gevormd hebt en FFMPEG geïnstalleerd, adviseert Adobe dat u de twee werkschema&#39;s van FFMPEG uit uw DAM inname werkschema&#39;s verwijdert.
 
@@ -50,7 +50,7 @@ Bepaal waar u uw video-elementen wilt uploaden afhankelijk van het volgende:
 * Hebt u een workflow voor het video-element nodig?
 * Hebt u versiebeheer nodig voor het video-element?
 
-Als het antwoord op een van deze vragen &quot;ja&quot; is, uploadt u uw video rechtstreeks naar Adobe DAM. Als het antwoord op beide vragen &#39;nee&#39; is, uploadt u uw video rechtstreeks naar Dynamic Media Classic. Het werkschema voor elk scenario wordt beschreven in de volgende sectie.
+Als het antwoord op een van deze vragen &quot;ja&quot; is, uploadt u uw video rechtstreeks naar Adobe DAM. Als het antwoord op beide vragen &quot;nee&quot; is, uploadt u uw video rechtstreeks naar Dynamic Media Classic. Het werkschema voor elk scenario wordt beschreven in de volgende sectie.
 
 ### Als u de video rechtstreeks uploadt naar Adobe DAM {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
@@ -64,7 +64,7 @@ Als u een workflow of versie voor uw middelen nodig hebt, moet u deze eerst uplo
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeemgeautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
+1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeem geautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp).
 1. In AEM hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Scene7]** van de Inhoudszoeker.
 1. Auteur met de **[!UICONTROL Scene7 Video]** component.
 
@@ -85,7 +85,7 @@ Universele voorinstellingen configureren:
 
    >[!NOTE]
    >
-   >Raadpleeg de [Dynamische documentatie van Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
+   >Raadpleeg de [Klassieke documentatie van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 
@@ -135,7 +135,7 @@ De volgende lijst verstrekt een high level vergelijking van gesteunde mogelijkhe
 | Benadering | De eerste HTML5-aanpak. Flash wordt alleen gebruikt voor niet-HTML5-fallback. | Flash op de meeste desktops. HTML5 wordt gebruikt voor mobiele apparaten en tablets. |
 | Aflevering | Progressief | Adaptieve streaming |
 | Tekstspatiëring | Ja | Ja |
-| Uitbreidbaarheid | Ja | Ja (met Scene7-viewer-SDK) |
+| Uitbreidbaarheid | Ja | Nee |
 | Mobiele video | Ja | Ja |
 
 ### {#setting-up} instellen

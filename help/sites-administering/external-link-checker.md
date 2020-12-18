@@ -2,9 +2,9 @@
 title: De koppelingencontrole
 description: Met de koppelingencontrole kunt u zowel interne als externe koppelingen valideren en het herschrijven van koppelingen toestaan.
 translation-type: tm+mt
-source-git-commit: 861cd74e1b2fd3d210647d83dee5d9a6fcead22a
+source-git-commit: 8a551cce581056cb274b1d8567f579fc73a95d3c
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -65,14 +65,14 @@ De External Link Checker gebruiken:
 1. Selecteer **Navigatie**, selecteer **Gereedschappen** en **Sites**.
 1. Selecteer **External Link Checker** en er wordt een lijst met alle externe koppelingen weergegeven.
 
-![](assets/external-link-checker.png)
+![Het venster Externe koppelingencontrole](assets/external-link-checker.png)
 
 De volgende informatie wordt weergegeven:
 
-* **Status**  - De validatiestatus van de koppeling
+* **Status**  - De validatiestatus van de koppeling die een van de volgende kan zijn:
    * **Geldig**  - de externe verbinding is bereikbaar door de Controle van de Verbinding
    * **In behandeling**  - De externe koppeling is toegevoegd aan de site-inhoud, maar is nog niet gevalideerd door de koppelingencontrole
-   * **Ongeldig**  - de externe verbinding wordt niet bereikbaar door de Controleur van de Verbinding.
+   * **Ongeldig**  - De externe koppeling kan niet worden bereikt door de koppelingencontrole
 * **URL**  - De externe koppeling
 * **Referrer**  - De inhoudspagina die de externe verbinding bevat
    * Dit is slechts bevolkt [indien gevormd.](#configuring)
@@ -80,7 +80,7 @@ De volgende informatie wordt weergegeven:
    * Hoe vaak de verbindingen [configureerbaar zijn.](#configuring)
 * **Laatste status**  - De laatste HTML-statuscode die werd geretourneerd toen de koppeling voor het laatst werd gecontroleerd op de externe koppeling
 * **Laatst beschikbaar**  - Tijd sinds de koppeling voor het laatst beschikbaar was voor de koppelingencontrole
-* **Laatst geopend**  - tijd sinds de koppeling voor het laatst is geopend door de koppelingencontrole
+* **Laatst geopend**  - tijd sinds de pagina met de externe koppeling voor het laatst is geopend in de ontwerpinterface
 
 U kunt de inhoud van het venster bewerken met de twee knoppen boven aan de lijst met koppelingen:
 

@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 69dbfeab855f70167eead24f3d411df4c82a0050
+source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
 workflow-type: tm+mt
 source-wordcount: '4140'
 ht-degree: 0%
@@ -39,9 +39,9 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * [!DNL Assets] en  [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, het gebruik van schermlezers en het inschakelen van gebruikers om vergelijkbare ondersteunende hulpmiddelen (AT) te gebruiken. Zie [[!DNL Assets] verbeteringen](#assets-6570) en [[!DNL Dynamic Media] verbeteringen](#dynamic-media-6570).
 
-* De cliëntconfiguratie van het modelHTTP van de gegevens van de vorm om prestaties te optimaliseren.
+* [Het gegevensmodel van de vormHTTP- cliëntconfiguratie ](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) om prestaties te optimaliseren.
 
-* Beschikbaarheid van de optie Herstellen voor elke component in de modus Lay-out
+* [Beschikbaarheid van de optie Herstellen voor elke ](../../help/forms/using/resize-using-layout-mode.md#resize-components) component in de modus Lay-out
 
 * [!DNL Experience Manager] 6.5 Service Pack 7 Forms verbetert de prestaties voor:
 
@@ -226,7 +226,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Kan geen afbeeldingen downloaden waarop SmartCrop is toegepast (CQ-4304558).
 
-* Kan mappen niet selectief publiceren naar dynamische media (CQ-4304526).
+* Kan mappen niet selectief publiceren naar Dynamic Media (CQ-4304526).
 
 * Als u de publicatie van een videobestand opheft vanuit [!DNL Experience Manager], wordt de publicatie van de Adaptive Video Set niet ongedaan gemaakt op basis van een geconfigureerde Scene7-implementatie (CQ-4304405).
 
@@ -507,7 +507,7 @@ Om uw runtime exemplaar terug te winnen, adviseert Adobe om het ontwerp-tijd exe
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
    * De adaptieve servervalidatie van het formulier mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt. CQ-4274424
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
-   * Hotspot in een interactieve afbeelding voor dynamische media is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
+   * Hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen {#osgi-bundles-and-content-packages-included}
 

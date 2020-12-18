@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van [!DNL Adobe Experience Manager Assets] 6.5.
 description: De nieuwe mogelijkheden en de verhogingen aan [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
 translation-type: tm+mt
-source-git-commit: 2cccbdea594bb9ba61e8c0f7884b724aab10b5da
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '897'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 [!DNL Dynamic Media] biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media  [!DNL Experience Manager Assets] om geavanceerde ervaringen te stimuleren die meeslepend en gepersonaliseerd zijn. Door één master middel van hoge kwaliteit te uploaden en onze geavanceerde cloudrendering en viewers te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediabeleid van uw organisatie.
 
-Zie [Opmerkingen bij de release van dynamische media](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/release-notes/s7rn2017.html) voor meer informatie over nieuwe [!DNL Dynamic Media] functies.
+Zie [Opmerkingen bij de release van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html) voor meer informatie over nieuwe [!DNL Dynamic Media] functies.
 
 ### 360-videoondersteuning {#video-support}
 
@@ -80,7 +80,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ### Verbeteringen voor toegankelijkheid {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie [Opmerkingen bij de release van dynamische mediasviewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html) voor meer informatie.
+[!DNL Dynamic Media] viewers bieden nu ondersteuning voor verbeterde toegankelijkheidsfuncties, zoals apparaatondersteuning, schermlezers en Alt-tekst. Zie [Opmerkingen bij de release van Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) voor meer informatie.
 
 ## Verbetering van zoekervaring {#experience-enhancement-for-searching}
 

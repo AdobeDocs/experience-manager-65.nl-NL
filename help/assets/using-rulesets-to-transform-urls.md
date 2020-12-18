@@ -1,6 +1,6 @@
 ---
 title: Regels gebruiken om URL's te transformeren
-description: U kunt regelsets implementeren in dynamische media om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
+description: U kunt regelsets in Dynamic Media gebruiken om URL's te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen.
 uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: 7e9dcebc654e63e171e2baacfe53081f58676f8d
+source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '724'
 ht-degree: 3%
 
 ---
@@ -18,16 +18,16 @@ ht-degree: 3%
 
 # Regelsets gebruiken om URL&#39;s {#using-rulesets-to-transform-urls} om te zetten
 
-U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen. Elke regel bestaat uit ten minste één voorwaarde en ten minste één actie. Een regel evalueert de gegevens van XML tegen de voorwaarden, en als een voorwaarde wordt voldaan, dan neemt het de aangewezen actie. Voorbeelden van regelsets zijn:
+U kunt regelsets in Dynamic Media gebruiken om URL&#39;s te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen. Elke regel bestaat uit ten minste één voorwaarde en ten minste één actie. Een regel evalueert de gegevens van XML tegen de voorwaarden, en als een voorwaarde wordt voldaan, dan neemt het de aangewezen actie. Voorbeelden van regelsets zijn:
 
 * Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen van `.jpg` aan een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
 
-   Zie [Hoe Adobe Scene7 Publishing System SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
 
 * Metagegevens toevoegen aan de URL voor SEO-doeleinden (Search Engine Optimization).
 
-   Zie [Hoe Adobe Scene7 Publishing System SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
 
 * De positie van de inhoud instellen om een download te activeren.
 * Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Zet `rgb{XX,YY,ZZ}` bijvoorbeeld om in RTF-ready `\redXX\greenYY\blueZZ`
@@ -36,14 +36,14 @@ U kunt regelsets implementeren in dynamische media om URL&#39;s te transformeren
 
    Zie [Speciale tekens verwijderen uit URL&#39;s](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
-In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem gebruiken voor het beheer van elementgegevens, XML-bestanden uploaden naar Dynamic Media. U kunt een van deze bestanden aanwijzen als het bestand met de regelset voor voorbewerking voor het bedienen van de dynamische media-elementen. Dit dossier herstructureert het standaard URL protocolformaat om aan de bedrijfslogica van systemen te voldoen die met Dynamische Media worden geïntegreerd. U geeft een XML-bestand op dat moet dienen als pad naar het definitiebestand voor de regel.
+In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem gebruiken voor het beheer van elementgegevens, XML-bestanden uploaden naar Dynamic Media. U kunt een van deze bestanden aanwijzen als het bestand met de voorverwerkingsregel voor het bedienen van Dynamic Media-elementen. Dit bestand herstructureert de standaard URL-protocolindeling om te voldoen aan de bedrijfslogica van systemen die worden geïntegreerd met Dynamic Media. U geeft een XML-bestand op dat moet dienen als pad naar het definitiebestand voor de regel.
 
 >[!CAUTION]
 >
->Wees voorzichtig bij het gebruik van linialen; kunnen voorkomen dat inhoud van dynamische media op uw website wordt weergegeven.
+>Wees voorzichtig bij het gebruik van linialen; kunnen voorkomen dat Dynamic Media-inhoud op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regels te maken.
-Zie [Referentie regelset](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Zie [Referentie regelset](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 Zie ook [Regelsets voor probleemoplossing](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -51,9 +51,11 @@ Zie ook [Regelsets voor probleemoplossing](https://helpx.adobe.com/experience-ma
 Zorg er ook voor dat u eerst de regel test die is ingesteld in een testomgeving die geen invloed heeft op uw live productieomgeving.
 Productieomgevingen en staging-omgevingen vereisen doorgaans verschillende logins.
 
-* **NA het opvoeren van** milieu login pagina:  [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **Staging** van aanmeldingspagina voor omgeving bij EMEA:  [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC-** pagina voor aanmelding bij omgeving:  [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+Zie de [Adobe Dynamic Media Klassieke bureaubladtoepassing voor aanmelding](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+
+<!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in een regelset](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
@@ -82,7 +84,7 @@ Zie ook [Afbeelding &#39;element&#39; gebruiken in plaats van &#39;is&#39; in ee
 1. Klik in de rechterbenedenhoek van de pagina Setup op **[!UICONTROL Close]**.
 1. Voer een publicatietaak voor afbeeldingsservers uit.
 
-   De regelvastgestelde voorwaarden worden toegepast op de aanvragen voor de live Dynamic Media Image Servers.
+   De regelingestelde voorwaarden worden toegepast op de aanvragen voor live Dynamic Media Image Servers.
 
    Als u wijzigingen aanbrengt in het bestand met de regelset, worden de wijzigingen direct toegepast wanneer u het bijgewerkte bestand met de regelset opnieuw uploadt en publiceert.
 

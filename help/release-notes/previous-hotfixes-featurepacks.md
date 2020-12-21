@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Vorige Opmerkingen bij de release Se
 description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 22112319b31576d542d04bdc3519795b02db356c
+source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
 workflow-type: tm+mt
-source-wordcount: '14525'
+source-wordcount: '14670'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De belangrijkste functies en verbeteringen die in Adobe Experience Manager 6.5.6
 
 * Een nieuw bedrijf wordt het plaatsen verstrekt om de status van [!DNL Dynamic Media] schakelaar te weerspiegelen.
 
-* De standaardopties voor `test` en `aiprocess` worden bijgewerkt naar `Thumbnail`, van `Rasterize` eerder in Dynamische Media, om ervoor te zorgen dat de gebruikers slechts duimnagel moeten tot stand brengen en de pagina-extractie en sleutelwoordextractie overslaan.
+* De standaardopties voor `test` en `aiprocess` worden bijgewerkt naar `Thumbnail`, van `Rasterize` eerder in Dynamic Media, om ervoor te zorgen dat gebruikers alleen miniaturen moeten maken en de pagina-extractie en uitname van trefwoorden moeten overslaan.
 
 * [Een adaptief formulier vooraf invullen op de client](../../help/forms/using/prepopulate-adaptive-form-fields.md#prefill-at-client).
 
@@ -95,6 +95,15 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * In de modus Bladeren wordt een waarde die u in het menu Type/Grootte hebt geselecteerd, niet door NVDA van commentaar voorzien. De visuele focus is niet op het geselecteerde element. Gebruikers die op een schermlezer vertrouwen, kunnen de modus Bladeren niet gebruiken (CQ-4294993).
 * Gebruikers die een webpagina maken, kunnen [!UICONTROL Content Page]-sjabloon selecteren. Op het tabblad [!UICONTROL Social Media] selecteren gebruikers een [!UICONTROL Preferred XF variation]. Gebruikers kunnen geen toetsenbordtoetsen gebruiken om een Experience Fragment in de NVDA-bladermodus te selecteren (CQ-4292669).
 * De handbalkbibliotheek is bijgewerkt naar versie 4.7.3 (NPR-34484) met meer beveiliging.
+* Meerdere cross-site scripting instances in [!DNL Experience Manager Sites] componenten (NPR-33925).
+* Het veld Mapnaam bij het maken van een nieuwe map is kwetsbaar voor opgeslagen cross-site scripting (GRANITE-30094).
+* De zoekresultaten op de pagina[!UICONTROL  Welcome] en de padvoltooiingssjabloon zijn kwetsbaar voor cross-site scripting (NPR-33719, NPR-33718).
+* Als u een binaire eigenschap maakt op een ongestructureerd knooppunt, wordt naar andere sites cross-site scripting uitgevoerd op het dialoogvenster voor binaire eigenschappen (NPR-33717).
+* Xxx-site scripting bij gebruik van [!UICONTROL Access Control Test] optie op de CRX DE interface (NPR-33716).
+* Gebruikersinvoer wordt niet op de juiste wijze gecodeerd voor verschillende componenten bij het verzenden van informatie naar de client (NPR-33695).
+* Scripts voor andere sites in de kalenderweergave voor Experience Manager Inbox (NPR-33545).
+* Een URL die eindigt met `childrenlist.html` geeft een HTML-pagina weer in plaats van een 404-reactie. Dergelijke URL&#39;s zijn kwetsbaar voor cross-site scripting (NPR-33441).
+
 
 ### [!DNL Assets] {#assets-6560}
 
@@ -201,7 +210,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * De runtime kopie van het aangepaste workflowmodel voor middelen (gemaakt in `/var/workflow/models/dam`) wordt verwijderd wanneer u [!DNL Experience Manager] 6.5 Service Pack 5 of een eerdere versie installeert op [!DNL Experience Manager] 6.5 (NPR-34532). Als u de runtimekopie wilt ophalen, synchroniseert u de ontwerptijdkopie van het workflowmodel met de runtimekopie met de HTTP-API:
    `<designModelPath>/jcr:content.generate.json`.
 
-**In dynamische media opgeloste problemen**
+**In Dynamic Media opgeloste problemen**
 
 * Als de gebruiker de coderingsinstellingen definieert in bewerkingen nadat het videoprofiel is gemaakt, worden de instellingen voor slimme uitsnijdingen verwijderd uit videoprofielen (CQ-4299177).
 
@@ -281,6 +290,8 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * De bestaande gebruikers van een communautaire groep die via admin console wordt toegevoegd worden verwijderd uit de gebruikerslijst op om het even welke wijziging in de communautaire groepsconsole (NPR-34315).
 
+* De `TagFilterServlet` lekt potentieel gevoelige gegevens (NPR-33868).
+
 <!--
 * Tag filters are vulnerable to sensitive information disclosure (NPR-33868).
 -->
@@ -328,6 +339,8 @@ Na installatie van het [!DNL Experience Manager Forms] 6.5.6.0-invoegpakket:
 * Wanneer u de veldconfiguratie voor het eerst opent, wordt het eigenschappenpictogram niet weergegeven (CQ-4296284).
 
 * Gebruikers kunnen metagegevens voor verzending bewerken, zoals `afPath`, `afSubmissionTime` en `signers`, wanneer zij een adaptief formulier indienen. Om het probleem op te lossen, worden de metagegevenswaarden verwijderd uit de formulierverzendgegevens op de client. Gebruikers kunnen het object `FormSubmitInfo` gebruiken om deze waarden op te halen van de server (NPR-33654).
+
+* Gebruikersinvoer wordt niet op de juiste wijze gecodeerd voor [!DNL Forms]-componenten bij het verzenden van informatie naar de client (NPR-33611).
 
 **Workflow**
 
@@ -391,7 +404,7 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in [!DNL A
 
 * Verbeterde uitzonderingsbehandeling in [!DNL Adobe Experience Manager Assets] gebruikersinterfacestroom.
 
-* Om publicatie-URL voor Dynamic Media Scene7 op te halen, wordt een nieuwe methode `getRemoteAssetPublishURL` toegevoegd aan de `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi`-interface.
+* Om publicatie-URL voor Dynamic Media Scene7 op te halen, wordt een nieuwe methode `getRemoteAssetPublishURL` toegevoegd aan `com.day.cq.dam.api.s7dam.scene7.ImageUrlApi`-interface.
 
 * [Toegankelijkheidsverbeteringen ](#assets-6550) in overeenstemming  [!DNL Adobe Experience Manager Assets] met de Web Content Accessibility Guidelines (WCAG).
 
@@ -557,7 +570,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Traversale waarschuwingen worden waargenomen in logboeken bij het openen van een slimme verzameling die meer dan 10.000 activa bevat (NPR-32980).
 
-* Elementnamen worden gewijzigd in kleine letters wanneer middelen van de ene map naar de andere worden verplaatst in [!DNL Adobe Experience Manager] die werken op de Dynamic Media Scene7-runmode (NPR-32995).
+* Namen van middelen worden gewijzigd in kleine letters wanneer u middelen van de ene map naar de andere verplaatst in [!DNL Adobe Experience Manager] en werkt op de Dynamic Media Scene7-runmode (NPR-32995).
 
 * Een doorzocht middel kan niet worden geschrapt nadat aan zijn eigenschappen van de onderzoeksresultaten navigeert en dan naar onderzoeksresultaten teruggaat om het te schrappen (NPR-32998).
 
@@ -575,7 +588,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * De verwerking van bedrijfsmiddelen tijdens bulkupload blijft vastzitten en de werkstroominstantie toont vastgelopen instanties van update DAM-middelen (CQ-4293916).
 
-* Het creëren van een Dynamische configuratie van Media op Experience Manager werkt, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
+* Het creëren van een configuratie van Dynamic Media op Experience Manager werkt, maar op het gebruikersinterface gebeurt niets bij het selecteren van sparen (CQ-4292442).
 
 * Voorvertoning van F4V-video-elementen werkt niet in progressief afspelen op Safari/Mac (CQ-4289844).
 
@@ -589,9 +602,9 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
    * Het uploaden van grote binaire bestanden naar Dynamic Media Image Processing-servers duurt te lang.
 
-   * De tijd van de duimnagelgeneratie bij Experience Manager stijgt wegens Dynamic Media Scene7 architectuur.
+   * De tijd van de miniatuurgeneratie bij Experience Manager neemt toe vanwege de Dynamic Media Scene7-architectuur.
 
-* Dynamic Media Scene7-migratiekwesties mislukken voor klanten met een groot aantal middelen (CQ-4279206).
+* Migratieproblemen met Dynamic Media Scene7 mislukken voor klanten met een groot aantal middelen (CQ-4279206).
 
 * De lay-out van video 360-viewer wordt verbroken wanneer `setVideo` wordt gebruikt en de video wordt omlaag verplaatst bij gebruik van `video= modifier` (CQ-4263201).
 
@@ -703,7 +716,7 @@ Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe E
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.10.8.
 
-* U kunt selectieve inhoudsubstructuren nu synchroniseren naar *Dynamische media - Scene7-modus* in plaats van alle beschikbare substructuren op `content/dam`.
+* U kunt selectieve inhoudsubstructuren nu synchroniseren naar *Dynamic Media - Scene7-modus* in plaats van alle beschikbare substructuren op `content/dam`.
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
@@ -759,7 +772,7 @@ Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in 
 
 * De knop waarmee de workflow voor het verzamelen van elementen wordt geactiveerd, is uitgeschakeld (NPR-32471).
 
-* Een map zonder naam wordt gemaakt in SPS (Scene7 Publishing System) en een element van de ene map naar de andere verplaatst in Experience Manager met Dynamic Media Scene7 Configuration (NPR-32440).
+* Een map zonder naam wordt gemaakt in SPS (Scene7 Publishing System) en een element van de ene map naar de andere verplaatst in Experience Manager met de Dynamic Media Scene7-configuratie (NPR-32440).
 
 * De handeling voor het verplaatsen van alle elementen (met de opdracht Alles selecteren en vervolgens verplaatsen) naar een map met gepubliceerde elementen mislukt bij fout (NPR-32366).
 
@@ -791,11 +804,11 @@ Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in 
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31307).
 
-* Op de pagina met middelendetails van PDF-elementen worden geen actieknoppen weergegeven, behalve de knoppen voor verzameling en uitvoering toevoegen in Experience Manager die wordt uitgevoerd in de uitvoeringsmodus Dynamische media Scene7 (CQ-4286705).
+* Op de elementendetailpagina van PDF-elementen worden geen actieknoppen weergegeven, behalve naar de knoppen Verzameling en Vertoning toevoegen in Experience Manager die worden uitgevoerd in de Dynamic Media Scene7-uitvoeringsmodus (CQ-4286705).
 
 * Het duurt te lang om de batchupload van Scene7 te doorlopen (CQ-4286445).
 
-* Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in de Dynamic Media Client (CQ-4285690).
+* Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Set Editor in de Dynamic Media Client (CQ-4285690).
 
 * Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in de Experience Manager wordt opgenomen (CQ-4283701).
 
@@ -803,7 +816,7 @@ Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in 
 
 * Onjuiste containerhoogte van een geüpload 3D-model, voorvertoond in 3D-viewer, wordt weergegeven op de detailpagina van het element (CQ-4283309).
 
-* De Carousel Editor wordt niet geopend in IE 11 in de modus Dynamische media hybride van Experience Manager (CQ-4255590).
+* De Carousel Editor wordt niet geopend in IE 11 in de modus Dynamic Media Hybrid Experience Manager (CQ-4255590).
 
 * De toetsenbordfocus blijft vastzitten in de vervolgkeuzelijst E-mail in het dialoogvenster Downloaden, in Chrome- en Safari-browsers (NPR-32067).
 
@@ -1520,7 +1533,7 @@ De belangrijkste hoogtepunten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 **Backend-integratie**
 
-* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29945: Hotfix voor CQ-4270777
+* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29944: Hotfix voor CQ-4270777
 * Wanneer [!DNL Experience Manager Forms] is geïnstalleerd op IBM WebSphere, mislukt het maken van een formuliergegevensmodel op basis van SOAP. Hotfix voor CQ-4251134
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. Hotfix voor CQ-4270586
 * Als de titel van een gegevensbron wordt gewijzigd, wordt de bijgewerkte titel niet weergegeven in het formuliergegevensmodel. Hotfix voor CQ-4265599

@@ -1,8 +1,8 @@
 ---
 title: AEM Forms aanroepen met REST-verzoeken
 seo-title: AEM Forms aanroepen met REST-verzoeken
-description: 'null'
-seo-description: 'null'
+description: Roep in Workbench gemaakte processen aan met behulp van REST-aanvragen.
+seo-description: Roep in Workbench gemaakte processen aan met behulp van REST-aanvragen.
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2492'
+source-wordcount: '2506'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: Documenten digitaal ondertekenen en certificeren
 seo-title: Documenten digitaal ondertekenen en certificeren
-description: 'null'
-seo-description: 'null'
+description: Met de service Handtekening kunt u digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document, de namen ophalen van handtekeningvelden in een PDF-document, handtekeningvelden wijzigen, PDF-documenten digitaal ondertekenen, PDF-documenten certificeren, digitale handtekeningen in een PDF-document valideren, alle digitale handtekeningen in een PDF-document valideren en een digitale handtekening uit een handtekeningveld verwijderen.
+seo-description: Met de service Handtekening kunt u digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document, de namen ophalen van handtekeningvelden in een PDF-document, handtekeningvelden wijzigen, PDF-documenten digitaal ondertekenen, PDF-documenten certificeren, digitale handtekeningen in een PDF-document valideren, alle digitale handtekeningen in een PDF-document valideren en een digitale handtekening uit een handtekeningveld verwijderen.
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---

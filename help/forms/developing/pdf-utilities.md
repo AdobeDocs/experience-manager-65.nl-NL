@@ -1,8 +1,8 @@
 ---
 title: Werken met PDF-hulpprogramma's
 seo-title: Werken met PDF-hulpprogramma's
-description: 'null'
-seo-description: 'null'
+description: Met de service PDF-hulpprogramma's kunt u converteren tussen PDF- en XDP-bestandsindelingen, PDF-documenteigenschappen instellen en ophalen en XMP metagegevens bewerken.
+seo-description: Met de service PDF-hulpprogramma's kunt u converteren tussen PDF- en XDP-bestandsindelingen, PDF-documenteigenschappen instellen en ophalen en XMP metagegevens bewerken.
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2592'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Voer de volgende stappen uit om een XDP-document te converteren naar een PDF-doc
 
 1. Inclusief projectbestanden.
 1. Maak een PDFUtilityService-client.
-1. Voer de conversiebewerking XDP naar PDF uit.
+1. Roep de conversiebewerking XDP naar PDF aan.
 
 **Projectbestanden opnemen**
 

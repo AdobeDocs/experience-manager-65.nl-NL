@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,6 @@ Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie kiest, 
 
    Inhoud van de site wordt in feite opgeslagen in een nodenarchief. Voor Middelen, kan een gegevensopslag worden gevormd om binaire gegevens op te slaan. Voor Gemeenschappen, moet een gemeenschappelijke opslag worden gevormd om SRP te selecteren.
 
-* [Opslagelementen in AEM 6.3](../../help/sites-deploying/storage-elements-in-aem-6.md)
+* [Opslagelementen](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
    Beschrijft de twee implementaties van de knoopopslag: Tar en MongoDB.

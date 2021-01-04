@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart (SOAP) voor handtekeningservice
 seo-title: Java API QuickStart (SOAP) voor handtekeningservice
-description: 'null'
-seo-description: 'null'
+description: Met de service Handtekening kunt u een handtekeningveld toevoegen aan een PDF-document, namen van handtekeningvelden ophalen, een handtekeningveld wijzigen, een PDF-document digitaal ondertekenen, een XFA-formulier digitaal ondertekenen, een PDF-document certificeren, een digitale handtekening verifiëren, meerdere digitale handtekeningen verifiëren en een digitale handtekening verwijderen.
+seo-description: Met de service Handtekening kunt u een handtekeningveld toevoegen aan een PDF-document, namen van handtekeningvelden ophalen, een handtekeningveld wijzigen, een PDF-document digitaal ondertekenen, een XFA-formulier digitaal ondertekenen, een PDF-document certificeren, een digitale handtekening verifiëren, meerdere digitale handtekeningen verifiëren en een digitale handtekening verwijderen.
 uuid: ae6adf23-b119-45f6-bd57-73d8d9ca8ecb
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---

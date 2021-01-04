@@ -1,8 +1,8 @@
 ---
 title: PDF-documenten samenstellen
 seo-title: PDF-documenten samenstellen
-description: 'null'
-seo-description: 'null'
+description: Met de Assembler-service kunt u meerdere PDF-documenten in één PDF-document samenvoegen of één PDF-document in meerdere PDF-documenten demonteren.
+seo-description: Met de Assembler-service kunt u meerdere PDF-documenten in één PDF-document samenvoegen of één PDF-document in meerdere PDF-documenten demonteren.
 uuid: 0789feea-1bbc-4acd-9ad7-ddf4d05e1c68
 contentOwner: admin
 content-type: reference
@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 1%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 

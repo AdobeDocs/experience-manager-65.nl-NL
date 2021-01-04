@@ -1,8 +1,8 @@
 ---
 title: AEM Forms aanroepen met Remoting
 seo-title: AEM Forms aanroepen met Remoting
-description: 'null'
-seo-description: 'null'
+description: Gebruik Remoting om een AEM Forms-proces aan te roepen om processen die in Workbench zijn gemaakt, aan te roepen. U kunt een AEM Forms-proces aanroepen vanuit een clienttoepassing die met Flex is gebouwd.
+seo-description: Gebruik Remoting om een AEM Forms-proces aan te roepen om processen die in Workbench zijn gemaakt, aan te roepen. U kunt een AEM Forms-proces aanroepen vanuit een clienttoepassing die met Flex is gebouwd.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '4593'
+source-wordcount: '4647'
 ht-degree: 0%
 
 ---

@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Z
 
 1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Upload vervolgens de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL-verbinding.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al d
 
 ### Genereren van een privésleutel/certificaatpaar voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken.
+Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken. Installeer OpenSSL op basis van het besturingssysteem, open de opdrachtprompt OpenSSL en wijzig de map in de map waarin u de persoonlijke sleutel of het certificaat wilt genereren.
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
 1. Genereer vervolgens een CSR (Certificate Signing Request) met behulp van de persoonlijke sleutel:
 
    ```shell
-   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj '/CN=localhost'
+   openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
 1. Genereer het SSL-certificaat en onderteken het met de persoonlijke sleutel. In dit voorbeeld verloopt de bewerking over een jaar:

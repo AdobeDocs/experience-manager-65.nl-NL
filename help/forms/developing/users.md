@@ -1,8 +1,8 @@
 ---
 title: Gebruikers beheren
 seo-title: Gebruikers beheren
-description: 'null'
-seo-description: 'null'
+description: Gebruik de API voor gebruikersbeheer om clienttoepassingen te maken die rollen, machtigingen en principes (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren.
+seo-description: Gebruik de API voor gebruikersbeheer om clienttoepassingen te maken die rollen, machtigingen en principes (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren.
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
@@ -744,7 +744,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>De gebruiker heeft toegang tot een website en geeft een gebruikersnaam en wachtwoord op. Deze informatie wordt verzonden naar een J2EE-toepassingsserver die als host fungeert voor AEM Forms.</p></td>
   </tr>
   <tr>
@@ -752,7 +752,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>De gebruikersgegevens worden geverifieerd met de service Verificatiebeheer. Als de gebruikersgegevens geldig zijn, gaat de workflow naar stap 3. Anders wordt een bericht naar de gebruiker verzonden waarin wordt aangegeven dat de gebruiker geen geautoriseerde gebruiker is.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Gebruikersgegevens en een formulierontwerp worden opgehaald uit een beveiligde ondernemingsdatabase. </p></td>
   </tr>
   <tr>
@@ -870,7 +870,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Een clienttoepassing vraagt of AEM Forms een synchronisatiebewerking uitvoert.</p></td>
   </tr>
   <tr>
@@ -878,7 +878,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>AEM Forms voert een synchronisatiebewerking uit.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Gebruikersgegevens worden bijgewerkt.</p></td>
   </tr>
   <tr>

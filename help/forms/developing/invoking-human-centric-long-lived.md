@@ -1,8 +1,8 @@
 ---
 title: Het aanhalen van mens-Centric langlevende Processen
 seo-title: Het aanhalen van mens-Centric langlevende Processen
-description: 'null'
-seo-description: 'null'
+description: Programmatiatically halen mens-centric langlevende processen aan die in Workbench worden gecreeerd gebruikend een Java web-based cliënttoepassing die de Inroeping API, een toepassing ASP.NET gebruikt die de Webdiensten, en een cliënttoepassing gebruikt die met Flex wordt gebouwd die het Verwijderen gebruikt.
+seo-description: Programmatiatically halen mens-centric langlevende processen aan die in Workbench worden gecreeerd gebruikend een Java web-based cliënttoepassing die de Inroeping API, een toepassing ASP.NET gebruikt die de Webdiensten, en een cliënttoepassing gebruikt die met Flex wordt gebouwd die het Verwijderen gebruikt.
 uuid: 42269d41-a90f-4ea1-aeb9-d61337bcfa54
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3739'
 ht-degree: 0%
 
 ---

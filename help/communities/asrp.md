@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 3202866bd38779a9784e44ab470152df61c585f5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -97,9 +97,9 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 Instantie van AEM-auteur:
 
-* Navigeer van hoofdmenu aan **[!UICONTROL Tools > Operations > Replication]**.
+* Navigeer van hoofdmenu aan **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
 * Selecteer **Boom activeren**
-* **Startpad**: bladeren naar  `/etc/socialconfig/srpc/`
+* **Startpad**: bladeren naar  `/conf/global/settings/communities/srpc/`
 * Deselecteer **Alleen Gewijzigd**
 * Selecteer **Activeren**
 
@@ -144,8 +144,8 @@ Zorg ervoor dat ASRP is gevormd om de standaardleverancier te zijn door de confi
 
 Ga bij alle auteurs en publiceer AEM instanties terug naar de opslagconfiguratieconsole of controleer de AEM opslagplaats.
 
-In JCR, als [/etc/socialconfig](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
+In JCR, als [/conf/global/settings/Communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/):
 
-* Bevat geen [srpc](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, het betekent dat de opslagleverancier JSRP is.
-* Als de srpc knoop bestaat en knoop [default configuration](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.
+* Bevat geen [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) knoop, het betekent dat de opslagleverancier JSRP is.
+* Als de srpc knoop bestaat en [default configuration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) knoop bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.
 

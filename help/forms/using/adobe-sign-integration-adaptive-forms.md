@@ -10,72 +10,73 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f0038c1f88ea0047cbaae4fe49456a665aa67f10
+source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
 
 
-# Adobe Sign integreren met AEM Forms{#integrate-adobe-sign-with-aem-forms}
+# [!DNL Adobe Sign] integreren met AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
-Adobe Sign maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
+[!DNL Adobe Sign] maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
 
-In een standaard Adobe Sign- en adaptief formulierscenario vult een gebruiker een adaptief formulier in om **een service aan te vragen**. Bijvoorbeeld een creditcardaanvraag en een burgerservicepakket. Wanneer een gebruiker het toepassingsformulier invult, verzendt en ondertekent, wordt het formulier naar de serviceprovider verzonden voor verdere actie. De serviceprovider controleert de toepassing en gebruikt Adobe Sign om de goedgekeurde toepassing te markeren. Als u vergelijkbare workflows voor elektronische handtekeningen wilt inschakelen, kunt u Adobe Sign integreren met AEM Forms.
+In een standaard [!DNL Adobe Sign]- en adaptief-formulierscenario vult een gebruiker een adaptief formulier in om **een service aan te vragen**. Bijvoorbeeld een creditcardaanvraag en een burgerservicepakket. Wanneer een gebruiker het toepassingsformulier invult, verzendt en ondertekent, wordt het formulier naar de serviceprovider verzonden voor verdere actie. Serviceprovider controleert de toepassing en gebruikt [!DNL Adobe Sign] om de goedgekeurde toepassing te markeren. Als u vergelijkbare workflows voor elektronische handtekeningen wilt inschakelen, kunt u [!DNL Adobe Sign] integreren met AEM [!DNL Forms].
 
-Als u Adobe Sign met AEM Forms wilt gebruiken, configureert u Adobe Sign in AEM Cloud Services:
+Als u [!DNL Adobe Sign] wilt gebruiken met AEM [!DNL Forms], configureert u [!DNL Adobe Sign] in AEM Cloud Services:
 
 ## Vereisten {#prerequisites}
 
-U hebt het volgende nodig om Adobe Sign te integreren met AEM Forms:
+U hebt het volgende nodig om [!DNL Adobe Sign] te integreren met AEM [!DNL Forms]:
 
 * Een actieve [Adobe Sign-ontwikkelaarsaccount.](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)
-* Een [SSL ingeschakeld](/help/sites-administering/ssl-by-default.md) AEM Forms-server.
+* Een [SSL ingeschakeld](/help/sites-administering/ssl-by-default.md) AEM [!DNL Forms] server.
 * An [Adobe Sign API application](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md).
-* Referenties (client-id en clientgeheim) van Adobe Sign API-toepassing.
-* Als u de configuratie opnieuw configureert, verwijdert u de bestaande Adobe Sign-configuratie uit zowel auteur- als publicatieinstanties.
+* Referenties (client-id en clientgeheim) van [!DNL Adobe Sign] API-toepassing.
+* Bij het opnieuw vormen, verwijder de bestaande [!DNL Adobe Sign] configuratie uit zowel auteur als publiceer instanties.
 * Gebruik [identieke crypto key](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) voor auteur en publiceer instanties.
 
-## Adobe Sign configureren met AEM Forms {#configure-adobe-sign-with-aem-forms}
+## [!DNL Adobe Sign] configureren met AEM [!DNL Forms] {#configure-adobe-sign-with-aem-forms}
 
-Voer de volgende stappen uit om Adobe Sign met AEM Forms in de Author-instantie te configureren nadat u aan de voorwaarden hebt voldaan:
+Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om [!DNL Adobe Sign] met AEM [!DNL Forms] op de instantie van de Auteur te vormen:
 
-1. Navigeer in AEM Forms-auteurinstantie naar **Tools** ![hammer](assets/hammer.png) > **Algemeen** > **Configuratiebrowser**.
+1. Navigeer op AEM [!DNL Forms] auteurinstantie naar **Tools** ![hammer](assets/hammer.png) > **[!UICONTROL General]** > **[!UICONTROL Configuration Browser]**.
 1. Tik op de pagina **[!UICONTROL Configuration Browser]** op **[!UICONTROL Create]**.
    * Zie de [Configuration Browser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een **[!UICONTROL Title]** op voor de configuratie, schakel **[!UICONTROL Cloud Configurations]** in en tik **[!UICONTROL Create]**. Er wordt een configuratiecontainer voor cloudservices gemaakt.
-1. Navigeer naar **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** en selecteer de configuratiecontainer die u in de bovenstaande stap hebt gemaakt.
+1. Navigeer naar **Tools** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** en selecteer de configuratiecontainer die u in de bovenstaande stap hebt gemaakt.
 
    >[!NOTE]
    >
-   >U kunt of stappen 1-4 uitvoeren om een nieuwe configuratiecontainer tot stand te brengen en een configuratie van Adobe Sign in de container tot stand te brengen of de bestaande `global` omslag in **Tools** ![hammer](assets/hammer.png) > **Cloud Services** > **Adobe Sign** te gebruiken. Als u de configuratie maakt in de nieuwe configuratiecontainer, moet u de naam van de container opgeven in het veld **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
+   >U kunt of stappen 1-4 uitvoeren om een nieuwe configuratiecontainer tot stand te brengen en een [!DNL Adobe Sign] configuratie in de container tot stand te brengen of de bestaande `global` omslag in **Tools** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** te gebruiken. Als u de configuratie maakt in de nieuwe configuratiecontainer, moet u de naam van de container opgeven in het veld **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
 
    >[!NOTE]
-   Zorg ervoor dat de URL van de configuratiepagina voor cloudservices begint met **HTTPS**. Als dat niet het geval is, [schakel SSL](/help/sites-administering/ssl-by-default.md) voor de AEM Forms-server in.
+   Zorg ervoor dat de URL van de configuratiepagina voor cloudservices begint met **HTTPS**. Zo niet, [schakel SSL](/help/sites-administering/ssl-by-default.md) in voor AEM [!DNL Forms]-server.
 
-1. Tik op **[!UICONTROL Create]** op de configuratiepagina om Adobe Sign-configuratie te maken in AEM Forms.
-1. Geef op het tabblad **[!UICONTROL General]** van de pagina **[!UICONTROL Create Adobe Sign Configuration]** een **Naam** op voor de configuratie en tik **Volgende**. U kunt desgewenst een titel opgeven en naar een miniatuur voor de configuratie bladeren.
+1. Tik op de configuratiepagina op **[!UICONTROL Create]** om [!DNL Adobe Sign]-configuratie te maken in AEM [!DNL Forms].
+1. Geef op het tabblad **[!UICONTROL General]** van de pagina **[!UICONTROL Create Adobe Sign Configuration]** een **[!UICONTROL Name]** op voor de configuratie en tik **[!UICONTROL Next]**. U kunt desgewenst een titel opgeven en naar een miniatuur voor de configuratie bladeren.
 
-1. Kopieer de URL in het huidige browservenster naar een laptop. Het is vereist om Adobe Sign-toepassing te configureren met AEM Forms.
+1. Kopieer de URL in het huidige browservenster naar een laptop. Het is vereist om [!DNL Adobe Sign] toepassing met AEM[!DNL Forms] te vormen.
 
-1. Configureer OAuth-instellingen voor de Adobe Sign-toepassing:
+1. Configureer OAuth-instellingen voor de toepassing [!DNL Adobe Sign]:
 
-   1. Open een browservenster en meld u aan bij de Adobe Sign-ontwikkelaarsaccount.
-   1. Selecteer de toepassing die voor AEM Forms is geconfigureerd en tik op OAuth configureren voor toepassing.
-   1. Voeg in het vak **URL omleiden** de HTTPS-URL toe die in de vorige stap is gekopieerd en klik op **Opslaan**.
-   1. Schakel de volgende OAuth-instellingen voor de Adobe Sign-toepassing in en klik op **Opslaan**.
+   1. Open een browservenster en meld u aan bij de [!DNL Adobe Sign]-ontwikkelaarsaccount.
+   1. Selecteer de toepassing die voor AEM [!DNL Forms] wordt geconfigureerd en tik **[!UICONTROL Configure OAuth for Application]**.
+   1. Kopieer de **[!UICONTROL Client ID]** en **[!UICONTROL Client Secret]** naar een laptop.
+   1. Voeg in het tekstvak **[!UICONTROL Redirect URL]** de HTTPS-URL toe die u in de vorige stap hebt gekopieerd.
+   1. Schakel de volgende OAuth-instellingen in voor de toepassing [!DNL Adobe Sign] en klik op **[!UICONTROL Save]**.
    * samenvoeging_read
    * samenvoeging_write
    * aggregatie_verzenden
    * widget_write
    * workflow_read
 
-   Voor geleidelijke informatie om montages OAuth voor een toepassing van Adobe Sign te vormen en de sleutels te verkrijgen, zie [montages van Auth voor de toepassing ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) ontwikkelaarsdocumentatie vormen.
+   Voor geleidelijke informatie om montages OAuth voor een [!DNL Adobe Sign] toepassing te vormen en de sleutels te verkrijgen, zie [montages van Auth voor de toepassing ](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) ontwikkelaardocumentatie vormen.
 
    ![OAuth Config](assets/oauthconfig_new.png)
 
-1. Ga terug naar **Adobe Sign Configuration** pagina. Op het tabblad **[!UICONTROL Settings]** vermeldt het veld **[!UICONTROL OAuth URL]** de volgende standaard-URL:
+1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. Op het tabblad **[!UICONTROL Settings]** vermeldt het veld **[!UICONTROL OAuth URL]** de volgende standaard-URL:
 
    https://secure.na1.echosign.com/public/oauth
 
@@ -85,34 +86,34 @@ Voer de volgende stappen uit om Adobe Sign met AEM Forms in de Author-instantie 
 
    U kunt de waarde voor het delen van de database wijzigen. Start de server opnieuw om de nieuwe waarde voor de databaseschijf te kunnen gebruiken.
 
-1. Geef de **Client ID** (ook wel toepassings-id genoemd) en **Client Secret** op. Selecteer de optie **Adobe Sign ook inschakelen voor bijlagen** om bestanden die zijn gekoppeld aan een adaptief formulier, toe te voegen aan het corresponderende Adobe Sign-document dat ter ondertekening is verzonden.
+1. Geef de **Client ID** (ook wel toepassings-id genoemd) op en **Client Secret** gekopieerd in stap 8. Selecteer de optie **[!UICONTROL Enable Adobe Sign for attachments also]** om bestanden die aan een adaptief formulier zijn gekoppeld, toe te voegen aan het corresponderende [!DNL Adobe Sign]-document dat ter ondertekening is verzonden.
 
-   Tik op **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van een Adobe Sign-toepassing.
+   Tik op **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt bij het maken van de [!DNL Adobe Sign]-toepassing.
 
-   Tik **[!UICONTROL Create]** om de Adobe Sign-configuratie te maken.
+   Tik **[!UICONTROL Create]** om de [!DNL Adobe Sign] configuratie tot stand te brengen.
 
 1. Open AEM webconsole. De URL is `https://'[server]:[port]'/system/console/configMgr`
-1. Open **Forms Common Configuration Service.**
-1. In het **Allow** veld **select** Alle gebruikers - Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren controleren en ondertekenen en op **Opslaan klikken.** Author-instantie is geconfigureerd voor gebruik van Adobe Sign.
+1. Open **[!UICONTROL Forms Common Configuration Service].**
+1. In het **[!UICONTROL Allow]** gebied, **select** Alle gebruikers - Alle gebruikers, anoniem of het programma geopend, kunnen voorproef gehechtheid, vormen verifiëren en ondertekenen, en **[!UICONTROL Save]klikken.** De instantie van de auteur wordt gevormd om te gebruiken  [!DNL Adobe Sign].
 1. Publiceer de configuratie.
 1. Gebruik [replicatie](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) om identieke configuratie op overeenkomstige te creëren publiceer instanties.
 
-Adobe Sign is nu geïntegreerd met AEM Forms en klaar voor gebruik in adaptieve formulieren. Als u de Adobe Sign-service in een adaptieve vorm wilt [gebruiken, geeft u de hierboven gemaakte configuratiecontainer op in adaptieve formuliereigenschappen.](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)
+[!DNL Adobe Sign] is nu geïntegreerd met AEM [!DNL Forms] en klaar voor gebruik in adaptieve formulieren. Als u de Adobe Sign-service in een adaptieve vorm wilt [gebruiken, geeft u de hierboven gemaakte configuratiecontainer op in adaptieve formuliereigenschappen.](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)
 
 
 
-## Adobe Sign-planner configureren om de ondertekeningsstatus te synchroniseren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
+## Configureer [!DNL Adobe Sign]-planner om de ondertekeningsstatus te synchroniseren {#configure-adobe-sign-scheduler-to-sync-the-signing-status}
 
-Een adaptief formulier dat geschikt is voor Adobe Sign wordt alleen verzonden nadat alle ondertekenaars het ondertekeningsproces hebben voltooid. Standaard is de Adobe Sign Scheduler-service gepland om na elke 24 uur de respons van de ondertekenaar van de (opiniepeiling)gegevens te controleren. U kunt het standaardinterval voor uw milieu veranderen. Voer de volgende stappen uit om het standaardinterval te wijzigen:
+Een adaptief formulier met [!DNL Adobe Sign] wordt alleen verzonden nadat alle ondertekenaars het ondertekeningsproces hebben voltooid. Standaard wordt de respons van de ondertekenaar van de [!DNL Adobe Sign]-planningsservices na elke 24 uur gecontroleerd. U kunt het standaardinterval voor uw milieu veranderen. Voer de volgende stappen uit om het standaardinterval te wijzigen:
 
-1. Meld u met beheerdersgegevens aan bij de AEM Forms-server en navigeer naar **Tools** > **Operations** > **Webconsole**.
+1. Meld u aan bij AEM [!DNL Forms]-server met beheerdersreferenties en navigeer naar **Extra** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
    U kunt ook de volgende URL openen in een browservenster:
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. Zoek en open de **Adobe Sign Configuration Service**-optie. Geef een [expressie voor uitsnijden](https://en.wikipedia.org/wiki/Cron#CRON_expression) op in het veld **Uitdrukking voor statusupdate-planner** en klik op **Opslaan**. Als u bijvoorbeeld de configuratieservice dagelijks om 00:00 uur wilt uitvoeren, geeft u `0 0 0 1/1 * ? *` op in het veld **Uitdrukking planner voor statusupdate**.
+1. Zoek en open de optie **[!UICONTROL Adobe Sign Configuration Service]**. Geef een [uitsnijdexpressie](https://en.wikipedia.org/wiki/Cron#CRON_expression) op in het veld **[!UICONTROL Status Update Scheduler Expression]** en klik op **[!UICONTROL Save]**. Als u bijvoorbeeld de configuratieservice dagelijks om 00:00 uur wilt uitvoeren, geeft u `0 0 0 1/1 * ? *` op in het veld **[!UICONTROL Status Update Scheduler Expression]**.
 
-Het standaardinterval voor het synchroniseren van de status van Adobe Sign is nu gewijzigd.
+Het standaardinterval voor het synchroniseren van de status van [!DNL Adobe Sign] is nu gewijzigd.
 
 ## Verwante artikelen {#related-articles}
 

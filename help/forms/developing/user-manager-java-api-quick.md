@@ -1,8 +1,8 @@
 ---
 title: Java API Quick Start (SOAP) voor gebruikersbeheer
 seo-title: Java API Quick Start (SOAP) voor gebruikersbeheer
-description: 'null'
-seo-description: 'null'
+description: De Manager API van de Gebruiker van het gebruik om gebruikers toe te voegen, gebruikers te schrappen, groepen tot stand te brengen, gebruikers en groepen te leiden, rollen en toestemmingen te beheren, gebruikers programmatically te synchroniseren, en de Knoop van de Voorkeur te beheren programmatically.
+seo-description: De Manager API van de Gebruiker van het gebruik om gebruikers toe te voegen, gebruikers te schrappen, groepen tot stand te brengen, gebruikers en groepen te leiden, rollen en toestemmingen te beheren, gebruikers programmatically te synchroniseren, en de Knoop van de Voorkeur te beheren programmatically.
 uuid: 0a2aa4ab-9329-485f-a30e-47bb471ce1b5
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---

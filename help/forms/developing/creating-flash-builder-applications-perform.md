@@ -1,8 +1,8 @@
 ---
 title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
 seo-title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
-description: 'null'
-seo-description: 'null'
+description: Creeer een cliënttoepassing gebruikend Flash Builder die enig-sign op (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Verifieer een gebruiker voor een verrichting eens en gebruik die authentificatie om veelvoudige verrichtingen van AEM Forms uit te voeren.
+seo-description: Creeer een cliënttoepassing gebruikend Flash Builder die enig-sign op (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Verifieer een gebruiker voor een verrichting eens en gebruik die authentificatie om veelvoudige verrichtingen van AEM Forms uit te voeren.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---

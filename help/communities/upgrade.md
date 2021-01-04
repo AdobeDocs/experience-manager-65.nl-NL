@@ -1,8 +1,8 @@
 ---
 title: Opwaarderen naar AEM 6.5 Gemeenschappen
 seo-title: Opwaarderen naar AEM 6.5 Gemeenschappen
-description: Hoe te om van een vroegere versie aan AEM 6.4 Gemeenschappen te bevorderen
-seo-description: Hoe te om van een vroegere versie aan AEM 6.4 Gemeenschappen te bevorderen
+description: Hoe te om van een vroegere versie aan AEM 6.5 Gemeenschappen te bevorderen
+seo-description: Hoe te om van een vroegere versie aan AEM 6.5 Gemeenschappen te bevorderen
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 0%
@@ -109,4 +109,4 @@ Conceptueel zijn er drie generaties gemeenschappen componenten:
 
 **Gen 2**: Van AEM 5.6.1 tot AEM 6.1 is dit een mengeling van  **** sociale  **** componenten. AEM 6.0 introduceerde het nieuwe [sociale componentenkader](/help/communities/scf.md) (SCF) en AEM 6.2 introduceerde een [gemeenschappelijke opslag UGC](/help/communities/working-with-srp.md) waar UGC wordt betreden gebruikend een [opslagmiddelleverancier](/help/communities/srp.md) (SRP).
 
-**Gen 3**: Van AEM 6.2 voorwaarts, zijn er slechts  **** sociale componenten, die in SCF als componenten van Handlebars (HBS) worden uitgevoerd die een keus van SRP voor UGC vereisen.
+**Gen 3**: Vanaf AEM 6.2 zijn er slechts  **** sociale componenten, die in SCF als componenten van Handlebars (HBS) worden uitgevoerd die een keus van SRP voor UGC vereisen.

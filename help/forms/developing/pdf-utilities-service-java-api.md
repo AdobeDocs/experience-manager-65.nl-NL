@@ -1,8 +1,8 @@
 ---
 title: Java APIQuick Start (SOAP) van PDF-hulpprogramma's
 seo-title: Java APIQuick Start (SOAP) van PDF-hulpprogramma's
-description: 'null'
-seo-description: 'null'
+description: Met de service PDF-hulpprogramma's kunt u een PDF-document converteren naar een XDP-document, een XDP-document converteren naar een PDF-document, PDF-documenteigenschappen ophalen, de opmaakstijl voor een PDF-document instellen en PDF-documenten ontsmetten.
+seo-description: Met de service PDF-hulpprogramma's kunt u een PDF-document converteren naar een XDP-document, een XDP-document converteren naar een PDF-document, PDF-documenteigenschappen ophalen, de opmaakstijl voor een PDF-document instellen en PDF-documenten ontsmetten.
 uuid: 96bb2bd5-b274-43d4-a664-49cc1c526b3f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---

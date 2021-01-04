@@ -10,7 +10,7 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a69e0354b5599ab555df650858f8f3200e21d2b8
+source-git-commit: f3b5b22c1d5573492867aef60457413ad5cf419f
 workflow-type: tm+mt
 source-wordcount: '3097'
 ht-degree: 0%
@@ -159,11 +159,11 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
    <td>Hiermee voegt u een veld toe met alle bijlagen die zijn geüpload met de component Bestandsbijlage.</td>
   </tr>
   <tr>
-   <td>Voettekst<br /> </td>
+   <td>Koptekst<br /> </td>
    <td>Voegt de paginakoptekst toe die doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht bevat.<br /> </td>
   </tr>
   <tr>
-   <td>Koptekst</td>
+   <td>Voettekst</td>
    <td>Hiermee voegt u de voettekst van de pagina toe die meestal copyrightinformatie en koppelingen naar andere pagina's bevat. </td>
   </tr>
   <tr>

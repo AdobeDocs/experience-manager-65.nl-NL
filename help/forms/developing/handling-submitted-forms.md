@@ -1,8 +1,8 @@
 ---
 title: Verzendde Forms afhandelen
 seo-title: Verzendde Forms afhandelen
-description: 'null'
-seo-description: 'null'
+description: Gebruik de Forms-service om de verzonden gegevens op te halen die in een interactief formulier zijn ingevoerd. De gebruiker kan de formuliergegevens verzenden in de indelingen XML, PDF en URL UTF-16.
+seo-description: Gebruik de Forms-service om de verzonden gegevens op te halen die in een interactief formulier zijn ingevoerd. De gebruiker kan de formuliergegevens verzenden in de indelingen XML, PDF en URL UTF-16.
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: b97452eb42275d889a82eb9364b5daf7075fcc41
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Servlet die de Forms-service aanroept.</p></td>
   </tr>
   <tr>
@@ -96,7 +96,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
    <td><p>De Forms-service geeft een interactief PDF-formulier weer aan de webbrowser van de client.</p></td>
   </tr>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>De gebruiker vult een interactief formulier in en klikt op een verzendknop. Het formulier wordt als PDF-gegevens teruggestuurd naar de Forms-service. Deze optie wordt ingesteld in Designer.</p></td>
   </tr>
   <tr>

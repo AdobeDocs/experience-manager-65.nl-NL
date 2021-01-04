@@ -1,8 +1,8 @@
 ---
 title: Forms renderen als HTML
 seo-title: Forms renderen als HTML
-description: 'null'
-seo-description: 'null'
+description: Gebruik de Forms-service om formulieren te genereren als HTML-bestand in reactie op een HTTP-aanvraag van een webbrowser. U kunt de API voor Java API en Web Service gebruiken om formulieren te genereren als HTML.
+seo-description: Gebruik de Forms-service om formulieren te genereren als HTML-bestand in reactie op een HTTP-aanvraag van een webbrowser. U kunt de API voor Java API en Web Service gebruiken om formulieren te genereren als HTML.
 uuid: bd8edb6f-333b-4ceb-9877-618f5377f56f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4174'
 ht-degree: 1%
 
 ---

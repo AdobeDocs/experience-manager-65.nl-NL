@@ -1,8 +1,8 @@
 ---
 title: Interactieve PDF forms renderen
 seo-title: Interactieve PDF forms renderen
-description: 'null'
-seo-description: 'null'
+description: Met de Forms-service kunt u interactieve PDF forms renderen naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. U kunt de dienst van Forms gebruiken om interactieve vormen terug te geven gebruikend Java API en de Dienst API van het Web.
+seo-description: Met de Forms-service kunt u interactieve PDF forms renderen naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. U kunt de dienst van Forms gebruiken om interactieve vormen terug te geven gebruikend Java API en de Dienst API van het Web.
 uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '2442'
+source-wordcount: '2514'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,8 @@
 ---
 title: PDF-documenten maken met verzonden XML-gegevens
 seo-title: PDF-documenten maken met verzonden XML-gegevens
-description: 'null'
-seo-description: 'null'
+description: Gebruik de Forms-service om de formuliergegevens op te halen die de gebruiker in een interactief formulier heeft ingevoerd. Geef de formuliergegevens door aan een andere AEM Forms-servicebewerking en maak een PDF-document met de gegevens.
+seo-description: Gebruik de Forms-service om de formuliergegevens op te halen die de gebruiker in een interactief formulier heeft ingevoerd. Geef de formuliergegevens door aan een andere AEM Forms-servicebewerking en maak een PDF-document met de gegevens.
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---

@@ -3,7 +3,7 @@ title: '[!DNL Adobe Experience Manager] 6.5 Vorige Opmerkingen bij de release Se
 description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 9be522fd8354674ad40691e99b349a6fd7bff2b5
+source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
 workflow-type: tm+mt
 source-wordcount: '14670'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
    ![Screenshot om het probleem van het ontbreken van een menu in de klassieke gebruikersinterface te illustreren](assets/33949_missing_menu.png)
 
 * Een [!DNL Content Fragment] kan niet als `TemplatedResource` worden gebruikt aangezien het in `ContentFragmentUsePojo` (NPR-33911) ontbreekt.
-* Synchrone en asynchrone verplaatsingsbewerkingen kunnen leiden tot fouten als gevolg van gelijktijdige overdrachten. Verplaatsen van pagina&#39;s is beperkt tot alleen synchroon verplaatsen. Hiermee wordt gelijktijdige verplaatsing van pagina&#39;s voorkomen (NPR-33875).
+* Synchrone en asynchrone verplaatsingsbewerkingen kunnen leiden tot fouten als gevolg van gelijktijdige overdrachten. Verplaatsingsbewerkingen voor pagina&#39;s zijn beperkt tot alleen asynchrone verplaatsing. Hiermee wordt gelijktijdige verplaatsing van pagina&#39;s voorkomen (NPR-33875).
 * [!UICONTROL Manage Publication] bewerking voor het repliceren van inhoud van de instantie Auteur naar instantie Publiceren mislukt en genereert een JavaScript-fout (NPR-33872).
 * Wanneer u meerdere pagina&#39;s of middelen hebt geselecteerd om versies te maken, wordt de nieuwe versie alleen gemaakt voor de laatst geselecteerde pagina of het laatst geselecteerde element (NPR-33866).
 * Verplaats een pagina met een blauwdruk met live kopieën naar een andere map. Wanneer u de afbeelding naar de oorspronkelijke map verplaatst, mislukt de verplaatsing zonder fout (NPR-33864).

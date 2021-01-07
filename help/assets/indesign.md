@@ -3,9 +3,9 @@ title: Integreer [!DNL Assets] met [!DNL InDesign Server]
 description: Leer hoe te om [!DNL Adobe Experience Manager Assets] met [!DNL Adobe InDesign Server] te integreren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+source-git-commit: a31fa2712e541dfdc7a5b08ee9b33782f190f00b
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1546'
 ht-degree: 1%
 
 ---
@@ -165,15 +165,15 @@ PoolHet (de) eindpunt(en) van de ZEEP die voor het communiceren met  [!DNL InDes
 
 ### De ExtensionAlizer {#configuring-day-cq-link-externalizer} van de Verbinding van Dag CQ vormen
 
-Als [!DNL InDesign Server] en [!DNL Experience Manager] op verschillende gastheren of één van beide of beide toepassingen niet op standaardhavens lopen, vorm [!UICONTROL Day CQ Link Externalizer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server] te plaatsen.
+Als [!DNL InDesign Server] en [!DNL Experience Manager] op verschillende gastheren zijn of één of beide toepassingen niet aan standaardhavens werken, dan vorm [!UICONTROL Day CQ Link Externalizer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server] te plaatsen.
 
 1. Open de webconsole op `https://[aem_server]:[port]/system/console/configMgr`.
-1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]** en klik **[!UICONTROL Edit]** om deze te openen.
-1. Geef de hostnaam en het contextpad op voor [!DNL Adobe InDesign Server] en klik op **Opslaan**.
+1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]**. Klik **[!UICONTROL Edit]** om te openen.
+1. De montages van de Verbinding Externalzer helpen absolute URLs voor de [!DNL Experience Manager] plaatsing en voor [!DNL InDesign Server] tot stand brengen. Gebruik **[!UICONTROL Domains]** veld om de hostnaam en het contextpad voor [!DNL Adobe InDesign Server] op te geven. Klik **Opslaan**.
 
-   ![chlimage_1-97](assets/chlimage_1-290.png)
+   ![Instellingen voor extern hulpprogramma koppelen](assets/link-externalizer-config.png)
 
-### Parallelle taakverwerking inschakelen voor [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server-s}
+### Parallelle taakverwerking inschakelen voor [!DNL InDesign Server] {#enabling-parallel-job-processing-for-indesign-server}
 
 U kunt nu parallelle taakverwerking inschakelen voor IDS. Bepaal het maximumaantal parallelle banen (`x`) en [!DNL InDesign Server] kan verwerken:
 

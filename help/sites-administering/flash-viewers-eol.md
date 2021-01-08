@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe392c24-d01e-4d5b-9af9-9ec500adc61a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 13%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 # Kennisgeving over de gebruiksduur van Flash-viewers{#flash-viewers-end-of-life-notice}
 
-*Met ingang van 31 januari 2017 heeft de Adobe Dynamic Media Classic (Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.*
+*Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (voorheen Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.*
 
 *Raadpleeg de volgende website met veelgestelde vragen voor meer informatie over deze belangrijke wijziging:*
 

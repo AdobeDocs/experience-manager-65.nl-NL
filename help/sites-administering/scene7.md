@@ -1,6 +1,6 @@
 ---
-title: Integreren met Dynamic Media Classic (Scene7)
-seo-title: Integreren met Dynamic Media Classic (Scene7)
+title: Integreren met Dynamic Media Classic
+seo-title: Integreren met Dynamic Media Classic
 description: Leer hoe u AEM kunt integreren met Dynamic Media Classic.
 seo-description: Leer hoe u AEM kunt integreren met Dynamic Media Classic.
 uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
 workflow-type: tm+mt
-source-wordcount: '5301'
+source-wordcount: '5280'
 ht-degree: 0%
 
 ---
 
 
-# Integreren met Dynamic Media Classic (Scene7){#integrating-with-dynamic-media-classic-scene}
+# Integreren met Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classics is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media middelen aan Web, mobiel, e-mail, en Internet-verbonden vertoningen en druk.
+Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan web, mobiele apparaten, e-mail en displays en drukwerk via internet.
 
 Als u Dynamic Media Classic wilt gebruiken, moet u de cloudconfiguratie zodanig configureren dat Dynamic Media Classic en AEM Assets met elkaar kunnen communiceren. In dit document wordt beschreven hoe u AEM en Dynamic Media Classic configureert.
 
@@ -363,7 +363,7 @@ U schakelt dit als volgt in:
 
 ### Aanpasbare time-out toevoegen aan Dynamic Media Classic Upload-workflow {#adding-configurable-timeout-to-scene-upload-workflow}
 
-Wanneer een AEM instantie wordt gevormd om videocodering door Dynamic Media Classic (Scene7) te behandelen, door gebrek, is er een 35 minieme onderbreking op om het even welke uploadbaan. U kunt deze instelling configureren om mogelijk langere taken voor videocodering aan te passen:
+Wanneer een AEM instantie wordt gevormd om videocodering door Dynamic Media Classic te behandelen, door gebrek, is er een 35 minieme onderbreking op om het even welke uploadbaan. U kunt deze instelling configureren om mogelijk langere taken voor videocodering aan te passen:
 
 1. Navigeer naar **http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**.
 

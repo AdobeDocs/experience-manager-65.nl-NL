@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: ba42f1e85216f6be4ae0dd90891e1b2d1d559bd8
 workflow-type: tm+mt
 source-wordcount: '4034'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie.
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie [Werken met navigatie-eigenschappen van OData-services](#work-with-navigation-properties-of-odata-services) voor meer informatie.
 
 1. Tik **[!UICONTROL Save]** om het formuliermodelobject op te slaan.
 
@@ -146,7 +146,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
    >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Wanneer u een de dienstgegevensbron van OData aan een Model van de Gegevens van de Vorm toevoegt, is er de dienst beschikbaar in het Model van de Gegevens van de Vorm voor alle navigatie eigenschappen in een voorwerp van het gegevensmodel. U kunt deze service gebruiken om de navigatie-eigenschappen van het overeenkomende gegevensmodelobject te lezen.
    >
    >
-   >Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie over de service.
+   >Zie [Werken met navigatie-eigenschappen van OData-services](#work-with-navigation-properties-of-odata-services) voor meer informatie over de service.
 
 1. Schakel **[!UICONTROL Top Level Object]** in om op te geven of het gegevensmodelobject een modelobject op het hoogste niveau is.
 
@@ -244,7 +244,7 @@ Een koppeling toevoegen:
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie.
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel. Zie [Werken met navigatie-eigenschappen van OData-services](#work-with-navigation-properties-of-odata-services) voor meer informatie.
 
    Het dialoogvenster Koppeling toevoegen wordt geopend.
 

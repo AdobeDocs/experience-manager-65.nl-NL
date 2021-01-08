@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
 workflow-type: tm+mt
-source-wordcount: '4140'
+source-wordcount: '4124'
 ht-degree: 0%
 
 ---
@@ -351,8 +351,6 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 **Documentbeveiliging**
 
 * Wanneer u een nieuw document beveiligingsbeleid opslaat, geeft Experience Manager Forms het foutbericht `Relative validity period is required` weer (NPR-34679).
-
-* Wanneer u een nieuw document beveiligingsbeleid opslaat, geeft Experience Manager Forms het foutbericht `Invalid filed value.Numeric value is required` weer (NPR-34678).
 
 * Documentbeveiliging kan PDF 2.0-document (CQ-4305851) niet beveiligen.
 

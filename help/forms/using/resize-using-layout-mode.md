@@ -2,9 +2,9 @@
 title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve formulieren te wijzigen
 description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
 translation-type: tm+mt
-source-git-commit: 77fef5a1926c733abdaf01a19d9fdfc37323566e
+source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -35,12 +35,11 @@ Selecteer **Layout** in de vervolgkeuzelijst die boven aan de adaptieve interfac
 
    De werkbalk die wordt weergegeven nadat u op componenten hebt getikt, bestaat uit de volgende opties:
 
-   * **Bovenliggend element:** selecteer het bovenliggende element van een component.
-   * **Zweven naar nieuwe regel:** verschuif de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
+   * **[!UICONTROL Parent]**: Selecteer het bovenliggende element van een component.
+   * **[!UICONTROL Revert breakpoint layout]**: Alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op de component.
+   * **[!UICONTROL Float to new line]**: Verplaats de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
 
-   Daarnaast kunt u alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op het deelvenster met gewijzigde componenten. Gebruik hiervoor de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt omkeren](assets/reverttopreviouslypublishedversion.png)). Tik op het bovenliggende element van de component waarvan de grootte is gewijzigd om de optie weer te geven.
-
-   U kunt op de component tikken en de optie **[!UICONTROL Revert breakpoint layout]** gebruiken om alle wijzigingen in de grootte ongedaan te maken en de standaardlay-out toe te passen op componentniveau.
+   U kunt ook de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt terugkeren](assets/reverttopreviouslypublishedversion.png)) op deelvensterniveau gebruiken om alle wijzigingen in de grootte ongedaan te maken.
 
    >[!NOTE]
    >

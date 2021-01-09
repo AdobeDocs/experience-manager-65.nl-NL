@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 01c30e78d1f89e8c07abeb0ac19af38722010dd0
 workflow-type: tm+mt
-source-wordcount: '2302'
+source-wordcount: '2422'
 ht-degree: 0%
 
 ---
@@ -107,6 +107,14 @@ Sorteren inschakelen:
    Op dezelfde manier vertegenwoordigt een kolomkopbal met een benedenpijl dat de waarden in de kolom in dalende orde worden getoond.
 
    U kunt ook wijzigingen aanbrengen in de tabel in de modus **Voorvertoning** en nogmaals op de kolomkop klikken om de kolomwaarden te sorteren.
+
+## Kolombreedte instellen voor een tabel {#set-column-width}
+
+Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
+
+1. Tik op het tabblad **[!UICONTROL Content]** op de **[!UICONTROL Table]**-component en tik op het pictogram Configure (![Configure](assets/configure-icon.svg)).
+
+1. Voer in het veld **[!UICONTROL Column Width]** de lijst met door komma&#39;s gescheiden waarden in om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld, voor een lijst die 3 kolommen omvat, die 2.4.6 als waarde in **[!UICONTROL Column Width]** gebied specificeren resulteert in het plaatsen van de breedte van kolommen als 2/12 voor eerste kolom, 4/12 voor tweede kolom, en 6/12 voor derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
 ## Tabelstijl {#configure} configureren
 

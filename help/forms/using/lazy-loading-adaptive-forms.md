@@ -9,9 +9,9 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 428d675bd254c18651c1188de26b706b5ad3d55c
+source-git-commit: 4d95d0e38acc54e1ebbb9f9e31761205533e99f9
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet 
 
 * Aanbevolen wordt om adaptieve formulieren op basis van XSD-schema&#39;s via op XFA gebaseerde adaptieve formulieren te gebruiken voor het configureren van lazy loading op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde adaptieve formulieren is relatief minder dan de toename in op XSD gebaseerde adaptieve formulieren.
 * Configureer lui laden niet op fragmenten in een adaptieve vorm die **[!UICONTROL Responsive -everything on one page without navigation]** lay-out voor het hoofddeelvenster gebruiken. Als gevolg van de responsieve layoutconfiguratie worden alle fragmenten tegelijkertijd in een adaptieve vorm geladen. Het kan ook leiden tot verminderde prestaties.
+* Het wordt aanbevolen om het laden van het eerste fragment niet in een adaptieve vorm te configureren.
 * Het wordt aanbevolen het laden van fragmenten in het eerste deelvenster dat wordt weergegeven bij het laden van het adaptieve formulier, niet te configureren.
 * Lazy loading wordt ondersteund tot twee niveaus in de fragmenthiërarchie.
 * Zorg ervoor dat velden die zijn gemarkeerd als globaal, uniek zijn in een adaptief formulier.

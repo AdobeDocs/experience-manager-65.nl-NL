@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: 535a175486a2d0f31762d71954c4fead2ef246e1
+source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,14 @@ ht-degree: 0%
 Met de [Video-component](/help/sites-authoring/default-components-foundation.md#video) kunt u een vooraf gedefinieerd, out-of-the-box (OTB)-video-element op uw pagina plaatsen.
 
 Een beheerder installeert FMPEG afzonderlijk om ervoor te zorgen dat de juiste transcodering plaatsvindt. Zie [Mpeg installeren en AEM configureren](#install-ffmpeg). Beheerders kunnen ook [Videoprofielen configureren](#configure-video-profiles) voor gebruik met HTML5-elementen.
+
+>[!CAUTION]
+>
+>Deze Foundation-component is vervangen. Adobe raadt in plaats daarvan aan de [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) te gebruiken.
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 ## Videoprofielen {#configure-video-profiles} configureren
 

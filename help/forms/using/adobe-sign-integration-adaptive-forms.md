@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+source-git-commit: c451948c43004d084bc3fce7a2c6ad99381f1ea8
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,9 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om [
    **na1** verwijst naar het standaard gegevensbestandaandeel.
 
    U kunt de waarde voor het delen van de database wijzigen. Start de server opnieuw om de nieuwe waarde voor de databaseschijf te kunnen gebruiken.
+
+   >[!NOTE]
+   Zorg ervoor dat de auteur en de publicatie van instantieconfiguraties naar hetzelfde niveau verwijzen. Als u meerdere Adobe Sign-configuraties voor een organisatie maakt, moet u ervoor zorgen dat alle configuraties hetzelfde segment gebruiken.
 
 1. Geef de **Client ID** (ook wel toepassings-id genoemd) op en **Client Secret** gekopieerd in stap 8. Selecteer de optie **[!UICONTROL Enable Adobe Sign for attachments also]** om bestanden die aan een adaptief formulier zijn gekoppeld, toe te voegen aan het corresponderende [!DNL Adobe Sign]-document dat ter ondertekening is verzonden.
 

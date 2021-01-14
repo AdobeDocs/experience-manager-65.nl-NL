@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Het filter voor de indeling van inhoud is een beveiligingsfunctie tegen XSS-aanvallen op SVG-bestanden.
 
-Na installatie blokkeert het filter de toegang tot alle elementen. U kunt een PDF bijvoorbeeld niet online bekijken. In deze sectie wordt beschreven hoe u het filter naar wens kunt configureren.
+Na installatie blokkeert het filter de toegang tot alle elementen. U kunt een PDF bijvoorbeeld niet online weergeven. In deze sectie wordt beschreven hoe u het filter naar wens kunt configureren.
 
 ## Filter voor inhoudsafzetting configureren {#configure-content-disposition-filter}
 

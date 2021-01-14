@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '3218'
+source-wordcount: '3285'
 ht-degree: 0%
 
 ---
@@ -130,6 +130,16 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Resulterende inhoudspagina&#39;s](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in dit document voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen.
 
+>[!TIP]
+>
+>Voer nooit informatie in die u wilt internationaliseren in een sjabloon. Voor internalisatiedoeleinden wordt de [lokalisatiefunctie van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+
+>[!NOTE]
+>
+>Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
+>
+>Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
+
 >[!NOTE]
 >
 >In de clientbibliotheek van de editor wordt ervan uitgegaan dat de naamruimte `cq.shared` aanwezig is op inhoudspagina&#39;s. Als deze ontbreekt, resulteert de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -137,10 +147,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared`, dus alle inhoud die hierop is gebaseerd, bevat automatisch `cq.shared`. Als u echter besluit uw eigen inhoudspagina&#39;s helemaal zelf te maken zonder deze op voorbeeldinhoud te baseren, moet u de naamruimte `cq.shared` invoegen.
 >
 >Zie [Client-Side Libraries](/help/sites-developing/clientlibs.md) gebruiken voor meer informatie.
-
->[!CAUTION]
->
->Voer nooit informatie in die [geïnternationaliseerd](/help/sites-developing/i18n.md) moet zijn in een sjabloon.
 
 ## Sjabloonmappen {#template-folders}
 
@@ -214,7 +220,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 1. Ga naar **Algemene navigatie** -> **Gereedschappen** > **Configuratiebrowser**.
 
-   De bestaande mappen worden links weergegeven, inclusief de map **globa** l.
+   De bestaande mappen worden links weergegeven, inclusief de map **global**.
 
 1. Klik **Maken**.
 1. In het **Create Configuratie** dialoog moeten de volgende gebieden worden gevormd:

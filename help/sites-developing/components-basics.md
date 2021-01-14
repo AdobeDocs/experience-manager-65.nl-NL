@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0a6f50457efda42a9d496c0c9202cb7d7b8f6eb9
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
 source-wordcount: '4974'
 ht-degree: 0%
@@ -224,7 +224,7 @@ Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigen
    * De aanbevolen kleur is rgb(112, 112, 112) > #707070
    * De achtergrond van standaardcomponentpictogrammen is transparant.
    * Alleen `.png`- en `.svg`-bestanden worden ondersteund.
-   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-insteekmodule, moeten de bestandsnamen bijvoorbeeld als `_cq_icon.png` of `_cq_icon.svg` worden opgenomen.
+   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-plug-in, moeten bestandsnamen bijvoorbeeld worden beschermd als `_cq_icon.png` of `_cq_icon.svg`.
    * `.png` heeft voorrang op  `.svg` als beide aanwezig zijn
 
 Als geen van de bovenstaande eigenschappen ( `cq:icon`, `abbreviation`, `cq:icon.png` of `cq:icon.svg`) worden gevonden op de component:
@@ -414,7 +414,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
 * Interface voor aanraakbediening:
    * `cq:dialog` (  `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
    * `cq:design_dialog` (  `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
-* Klassieke gebruikersinterface:
+* Klassieke interface:
    * `dialog` (  `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` (  `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
    * `icon.png` - afbeeldingsbestand dat moet worden gebruikt als pictogram voor de component in de Sidetrap

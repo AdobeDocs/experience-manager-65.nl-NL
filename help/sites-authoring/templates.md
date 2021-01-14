@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 translation-type: tm+mt
-source-git-commit: e3f1c932a5937e8a115e2849935b8f5ea5c2613d
+source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
 workflow-type: tm+mt
-source-wordcount: '4833'
+source-wordcount: '4901'
 ht-degree: 9%
 
 ---
@@ -148,7 +148,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!CAUTION]
 >
->Voer nooit informatie in die [geïnternationaliseerd](/help/sites-developing/i18n.md) moet zijn in een sjabloon.
+>Voer nooit informatie in die [geïnternationaliseerd](/help/sites-developing/i18n.md) moet zijn in een sjabloon. Voor internalisatiedoeleinden worden de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
 
 ### Een sjabloonmap maken - Admin {#creating-a-template-folder-admin}
 
@@ -201,13 +201,19 @@ Een sjabloon kan de volgende eigenschappen hebben:
 
 * Beschrijving
 
-   * Een optionele beschrijving voor meer informatie over de sjabloon en het gebruik ervan, die u kunt vinden in bijvoorbeeld de wizard **Pagina maken**.
+   * Een optionele beschrijving voor meer informatie over de sjabloon en het gebruik ervan, die bijvoorbeeld te zien is in de wizard **Pagina maken**.
 
 De eigenschappen weergeven en/of bewerken:
 
 1. Selecteer de sjabloon in de **Sjabloonconsole**.
 1. Selecteer **Eigenschappen weergeven** op de werkbalk of kies Snelle opties om het dialoogvenster te openen.
 1. U kunt nu de sjablooneigenschappen weergeven of bewerken.
+
+>[!NOTE]
+>
+>Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
+>
+>Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
 
 >[!NOTE]
 >
@@ -347,7 +353,7 @@ Met de optie **Paginabeleid** in het menu **Pagina-informatie** kunt u [het vere
 
 ### Een sjabloon bewerken - Structuur - Sjabloonauteur {#editing-a-template-structure-template-author}
 
-Op **Structuur** wijze bepaalt u componenten en inhoud voor uw malplaatje en bepaalt beleid voor het malplaatje en zijn verbindingen.
+Op **Structuur** wijze bepaalt u componenten en inhoud voor uw malplaatje en bepaalt beleid voor het malplaatje en zijn componenten.
 
 * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.

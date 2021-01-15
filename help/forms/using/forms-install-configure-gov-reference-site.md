@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '4727'
+source-wordcount: '4728'
 ht-degree: 1%
 
 ---
@@ -465,7 +465,7 @@ AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics-cloudconfigu
 
 Gebruikers van het gereedschap Conversie moeten het volgende hebben om AEM Forms te kunnen installeren en configureren met de Adobe Forms.
 
-1. Toegang tot Adobe IO.
+1. Toegang tot Adobe I/O.
 
 1. Toestemming om een integratie met de dienst van de Omzetting van Adobe Forms tot stand te brengen.
 

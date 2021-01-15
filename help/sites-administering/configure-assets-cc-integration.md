@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 82a8e807-a2df-4fe3-a68c-2dabc9328eca
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c7f06670ca8b488a661fde7a133bce6886ee7f5d
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 # AEM Assets-integratie configureren met Experience Cloud en Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen synchroniseren binnen Adobe Experience Manager (AEM) Assets met Adobe Creative Cloud en andersom. U kunt uw elementen ook synchroniseren met Experience Cloud en andersom. U kunt deze synchronisatie instellen via Adobe I/O.
+Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen in Adobe Experience Manager Assets synchroniseren met Adobe Creative Cloud en andersom. U kunt uw elementen ook synchroniseren met Experience Cloud en andersom. U kunt deze synchronisatie instellen via [!DNL Adobe I/O].
 
 De workflow voor het instellen van deze integratie is:
 
-1. Creeer een authentificatie in Adobe I/O gebruikend een openbare gateway en krijg toepassingsidentiteitskaart
+1. Creeer een authentificatie in [!DNL Adobe I/O] gebruikend een openbare gateway en krijg toepassingsidentiteitskaart
 1. Maak een profiel op uw AEM Assets-instantie met de toepassings-id.
 1. Gebruik deze configuratie om uw elementen in AEM Assets te synchroniseren met Creative Cloud.
 

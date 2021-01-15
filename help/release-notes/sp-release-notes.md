@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: fa8d8c9a001b56006f1c0a30eb5a342754e63573
+source-git-commit: ad8ca7aaacd80bf5ca8daec78f7836e883e2343b
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4174'
 ht-degree: 0%
 
 ---
@@ -183,7 +183,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Als u de aanwijzer op de kaartweergave plaatst, schuift het scherm als gevolg van (automatische) focus op de snelle acties die beschikbaar zijn op de kaart (NPR-34514).
 
-* Als u de eigenschappen van meerdere elementen bulksgewijs bewerkt, wordt de weergave van de grote editor gesloten en wordt de hoofdpagina [!UICONTROL Save] omgeleid. [!DNL Assets] Dit gedrag is hetzelfde als het gedrag van de optie [!UICONTROL Save & Close] en wordt niet verwacht (NPR-34546).
+* Als u de eigenschappen van meerdere elementen bulksgewijs bewerkt, wordt de weergave van de grote editor gesloten en wordt de hoofdpagina [!DNL Assets] omgeleid. [!UICONTROL Save] Dit gedrag is hetzelfde als het gedrag van de optie [!UICONTROL Save & Close] en wordt niet verwacht (NPR-34546).
 
 * De slimme verzameling bevat na het opslaan niet de juiste instelling voor de gebruikersinterface. De vraag wordt bewaard behoorlijk maar de interface toont altijd de laatste toegevoegde predikaat van de Optie (NPR-34539).
 
@@ -423,6 +423,10 @@ Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements
 1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
 1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem.
 1. Installeer het invoegpakket voor Forms zoals beschreven in [AEM Forms-invoegpakketten installeren](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.7.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar AEM 6.5.7.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-on Package.
 
 ### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 

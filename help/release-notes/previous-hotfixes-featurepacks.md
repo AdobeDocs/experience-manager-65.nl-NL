@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 Vorige Opmerkingen bij de release Se
 description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 544d99921a3b487bf8ae64111a8568f8f02fcd03
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '14670'
+source-wordcount: '14661'
 ht-degree: 0%
 
 ---
@@ -633,7 +633,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * De interne cache wordt gewist wanneer een pagina met een Adobe Target-component wordt gepubliceerd (NPR-33162).
 * Integratie met Adobe Target werkt niet op [!DNL Windows Internet Explorer] 11 (NPR-33111).
 * Bij het configureren van Adobe Target worden de velden [!UICONTROL Company] en [!UICONTROL Report Suite] niet weergegeven bij het selecteren van een rapportbron (NPR-32502).
-* Wanneer u [!DNL Experience Fragments] exporteert met Adobe I/O, worden metagegevens zoals een bronproduct niet geëxporteerd naar Adobe Target (NPR-32159).
+* Wanneer u [!DNL Experience Fragments] exporteert met [!DNL Adobe I/O], worden metagegevens zoals een bronproduct niet geëxporteerd naar Adobe Target (NPR-32159).
 * Erkende IMS-gebruikers in de lokale beheergroep van Experience Managers kunnen geen IMS-configuraties maken of wijzigen (NPR-33045).
 * Op de pagina Startconfiguraties van Adobe worden niet alle records weergegeven (NPR-33011).
 * Gebruikers in een groep van inhoudsauteurs kunnen vanwege een JavaScript-fout de eigenschappen van een Adobe Target-component niet bewerken (NPR-32996).
@@ -704,7 +704,7 @@ Adobe Experience Manager 6.5.4.0 is een belangrijke update die nieuwe functies b
 
 Enkele belangrijke functies en verbeteringen die zijn geïntroduceerd in Adobe Experience Manager 6.5.4.0 zijn:
 
-* Adobe Experience Manager Assets is nu geconfigureerd met Brand Portal via Adobe I/O Console.
+* Adobe Experience Manager Assets wordt nu geconfigureerd met Brand Portal via de console [!DNL Adobe I/O].
 
 * Er is nu een nieuwe [Afdrukbare uitvoerstap genereren](../forms/using/aem-forms-workflow-step-reference.md) beschikbaar voor Adobe Experience Manager Forms-workflows.
 
@@ -868,7 +868,7 @@ Voor een volledige lijst van eigenschappen en belangrijkste hoogtepunten die in 
 
 ### Merk-portal {#assets-brand-portal-6540}
 
-* Gebruikers van het Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar [!DNL Assets] bij de upgrade naar Adobe I/O op Experience Manager 6.5.4 (CQDOC-15655). Voor een directe oplossing voor Experience Manager 6.5.4, wordt het geadviseerd [hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) te downloaden en op uw auteursinstantie te installeren.
+* Gebruikers van het Brand Portal kunnen geen middelen uit de bijdragemap publiceren naar [!DNL Assets] bij de upgrade naar [!DNL Adobe I/O] op Experience Manager 6.5.4 (CQDOC-15655). Voor een directe oplossing voor Experience Manager 6.5.4, wordt het geadviseerd [hotfix](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/hotfix/cq-6.5.0-hotfix-33041) te downloaden en op uw auteursinstantie te installeren.
 
 * Pop-upwaarden van het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
 

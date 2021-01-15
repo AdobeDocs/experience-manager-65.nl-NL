@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 30701cfdb36e5caf606e31564179a632b0de9fb5
+source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2778'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,7 @@ Met ondersteuning voor 3D-afbeeldingen in [!DNL Dynamic Media] kunnen klanten 3D
 
 #### [!DNL Experience Manager Assets] configureren met [!DNL Brand Portal] (6.5.4.0) {#configure-assets-bp}
 
-Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] wordt gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] wordt nu gevormd met  [!DNL Brand Portal] door Adobe I/O, die een teken IMS voor toestemming van uw  [!DNL Brand Portal] huurder verwerft.
+Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] wordt gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] wordt nu gevormd met  [!DNL Brand Portal] door  [!DNL Adobe I/O], die een teken IMS voor vergunning van uw  [!DNL Brand Portal] huurder verwerft.
 
 De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [Experience Manager-elementen configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
 

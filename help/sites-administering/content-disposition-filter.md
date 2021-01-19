@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
-source-git-commit: 741ba6f6ef3270414c0ddabb1a1d02d5c436b7d9
+source-git-commit: bb50e530f0d015c0e7d06650157e3e3994082483
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
@@ -34,5 +34,4 @@ De opties voor het filter voor het verplaatsen van inhoud bieden de volgende fun
 
 * Uitgesloten bronpaden: een lijst van uitgesloten middelen, moet elk middelweg als absolute en volledig gekwalificeerde weg worden gegeven. Overeenkomende voorvoegsels/jokertekens worden niet ondersteund.
 
-* Inschakelen voor alle bronnenpaden: Met deze markering wordt bepaald of dit filter moet worden ingeschakeld voor alle paden, behalve voor de uitgesloten paden die worden gedefinieerd door Uitgesloten bronpaden. Als u deze waarde instelt op &#39;true&#39;, worden paden voor het verwijderen van inhoud genegeerd. Onafhankelijk van de configuratie worden alleen bronpaden behandeld die een eigenschap met de naam &#39;jcr:data&#39; of &#39;jcr:content jcr:data&#39; bevatten.
-
+* Inschakelen voor alle bronnenpaden: Met deze markering wordt bepaald of dit filter moet worden ingeschakeld voor alle paden, behalve voor de uitgesloten paden die worden gedefinieerd door Uitgesloten bronpaden. Als u deze waarde instelt op &#39;true&#39;, worden paden voor het verwijderen van inhoud genegeerd. Onafhankelijk van de configuratie worden alleen bronpaden behandeld die een eigenschap met de naam &#39;jcr:data&#39; of &#39;jcr:content/jcr:data&#39; bevatten.

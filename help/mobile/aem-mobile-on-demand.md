@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken va
 * [Mobiel met inhoudssynchronisatie](/help/mobile/mobile-ondemand-contentsync.md)
 * [Eigenschappen van inhoud en Inhoud exporteren](/help/mobile/on-demand-content-properties-exporting.md)
 
-Zie [AEM Mobile Content Services ontwikkelen](//help/mobile/developing-content-services.md) voor het ontwikkelen van Content Services.
+Zie [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-services.md) voor het ontwikkelen van Content Services.
 
 >[!NOTE]
 >

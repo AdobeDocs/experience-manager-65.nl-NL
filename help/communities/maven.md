@@ -1,8 +1,8 @@
 ---
 title: Maven gebruiken voor Gemeenschappen
 seo-title: Maven gebruiken voor Gemeenschappen
-description: AEM Communities API-jar en AEM Uber API-jar
-seo-description: AEM Communities API-jar en AEM Uber API-jar
+description: AEM Uber API-jar
+seo-description: AEM Uber API-jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 5e7cc6ab82ba450b9be7c97266ec4c81b18fe3d2
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,42 @@ Deze sectie van de documentatie van AEM Communities is naast:
 
 * [Bouwen AEM projecten met Apache Maven](../../help/sites-developing/ht-projects-maven.md).
 
-Er zijn nu twee &#39;Number&#39;-artefacten die afzonderlijke artefacten vervangen:
+Er is slechts één &quot;uber&quot;artefact dat individuele artefacten vervangt:
 
-* AEM [Community API jar](#communities-api-jar-artifact)
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+
+>[!NOTE]
+>
+>Vanaf AEM 6.4 worden de communautaire API&#39;s niet expliciet vrijgegeven. Alle Community API&#39;s zijn nu opgenomen in de Uber jar zelf.
+>
+>Aanbevolen wordt de meest recente versie van de Gemeenschappen bij te houden.
+>
+>Zie [Laatste releases](deploy-communities.md#latest-releases) sectie om de meest recente versie te identificeren.
+
+## Voorbeeld van een weven afhankelijkheid {#maven-dependency-example}
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.5.7</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+>[!NOTE]
+>
+>Zie [AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) om het nieuwste Uber jar artefact te identificeren.
+
+<!--
+There are now two "uber" artifacts that replace individual artifacts:
+
+* AEM [Communities API jar](#communities-api-jar-artifact)
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 ## Communities API Jar Artifact {#communities-api-jar-artifact}
 
-Hier volgt een voorbeeld van een GAV voor de AEM Communities API-jar:
+Following is an example of a GAV for the AEM Communities API jar:
 
 ```xml
 <dependency>
@@ -42,27 +70,28 @@ Hier volgt een voorbeeld van een GAV voor de AEM Communities API-jar:
     <version>1.11.170</version>
     <scope>provided</scope>
 </dependency>
+
 ```
 
-Zorg ervoor dat de opgegeven versie overeenkomt met de versie van het communautaire pakket die voor AEM Communities is geïnstalleerd. Om het geïnstalleerde versienummer te verifiëren:
+Ensure thet the version specified corresponds with the Communities package version installed for AEM Communities. To verify the installed version number:
 
-1. Meld u aan met beheerdersrechten.
-1. Blader naar [Pakketbeheer](../../help/sites-administering/package-manager.md). Bijvoorbeeld [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Log in with adminstrative privileges.
+1. Browse to [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-1. Zoek het pakket: `cq-socialcommunities-pkg-1.x.xxx`
-1. Extraheer de versie uit de pakketnaam:
-   * De eerste versie voor AEM 6.3 is versie 1.11.170.
-   * De pakken van de eigenschap zullen versies 1.12.xxx zijn.
+1. Locate the package: `cq-socialcommunities-pkg-1.x.xxx`
+1. Extract the version from the package name:
+   * First version for AEM 6.3 is version 1.11.170.
+   * Feature packs will be versions 1.12.xxx.
 
 >[!NOTE]
 >
->Aanbevolen wordt de meest recente versie van de Gemeenschappen bij te houden.
+>It is recommended to keep up-to-date with the most recent Communities release.
 >
->Bezoek de sectie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
+>Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
-## Voorbeeld van een weven afhankelijkheid {#maven-dependency-example}
+## Maven Dependency Example {#maven-dependency-example}
 
-De Community API jar moet worden opgegeven vóór de Uber API jar.
+The Communities API jar must be specified before the Uber API jar.
 
 ```xml
 <dependency>
@@ -79,3 +108,4 @@ De Community API jar moet worden opgegeven vóór de Uber API jar.
     <classifier>apis</classifier>
 </dependency>
 ```
+-->

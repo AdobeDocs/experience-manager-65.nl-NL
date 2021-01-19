@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: a876a1a8d4aeb9e9a94c93a16742a4058307b0a8
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -84,7 +84,7 @@ Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken va
 * [App-sjablonen en -componenten](/help/mobile/app-templates-and-components1.md)
 * [Mobiel met inhoudssynchronisatie](/help/mobile/mobile-ondemand-contentsync.md)
 * [Eigenschappen van inhoud en inhoud exporteren](/help/mobile/on-demand-content-properties-exporting.md)
-* [AEM Mobile Content Services ontwikkelen](//help/mobile/developing-content-services.md)
+* [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-services.md)
 
 Om met de rollen en de verantwoordelijkheden van de Ontwikkelaar te beginnen, zie [Ontwikkelen AEM Inhoud voor AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md).
 

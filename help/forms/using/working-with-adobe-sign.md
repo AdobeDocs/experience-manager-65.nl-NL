@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 70fff9b4029ba70fe0667dafa69fc6172f4b1733
+source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
 workflow-type: tm+mt
-source-wordcount: '3553'
+source-wordcount: '3625'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om velden toe te voegen aan een adaptief formulier 
    >[!NOTE]
    >
    >    * Het gebruik van [!DNL Adobe Sign]-blok is niet verplicht om [!DNL Adobe Sign] in een adaptieve vorm te gebruiken. Als u geen [!DNL Adobe Sign] blok gebruikt en gebieden voor de ondertekenaars toevoegt, dan wordt het standaardhandtekeningsgebied getoond bij de bodem van de het ondertekenen documenten.
-   >    * Gebruik [!DNL Adobe Sign] alleen voor de adaptieve formulieren die automatisch Document of Record genereren. Als u een aangepaste XDP gebruikt voor het genereren van Document of een adaptief formulier op basis van een formuliersjabloon, is [!DNL Adobe Sign]-blok niet vereist.
+   >    * Gebruik [!DNL Adobe Sign] alleen voor de adaptieve formulieren die automatisch Document of Record genereren. Als u een aangepaste XDP gebruikt voor het genereren van Document of een adaptief formulier op basis van een formuliersjabloon, wordt [!DNL Adobe Sign]-blok niet ondersteund.
 
 
 1. Selecteer de **[!UICONTROL Adobe Sign Block]** component en tik **Edit** ![aem_6_3_edit](assets/aem_6_3_edit.png) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
@@ -300,7 +300,8 @@ Voer de volgende stappen uit om de component van de Stap van de Handtekening te 
       > Enkele aanbevolen procedures zijn:
    > * Het deelvenster Adaptief formulier met de stap Handtekening bevindt zich altijd in het laatste of tweede laatste deelvenster van een adaptief formulier. Dit kan alleen het tweede laatste deelvenster zijn wanneer het laatste deelvenster de stap Overzicht bevat.
    > * Het deelvenster met de stapcomponent Handtekening of Samenvatting mag geen andere component bevatten.
-   > * Adaptieve formulieren met de stap Handtekening kunnen niet worden verzonden. De verzending wordt afgehandeld via een achtergrondservice of de stap Overzicht.
+   > * Adaptieve formulieren met de stap Handtekening kunnen niet worden verzonden.
+   > * De verzending van de adaptieve formulieren met de stap Handtekening wordt afgehandeld via een achtergrondservice of de stap Samenvatting. Als er één geconfigureerde ondertekenaar is die het formulier ook invult, heeft de verwerking van het adaptieve formulier via de stap Samenvatting als voordeel dat deze direct evalueert dat de ondertekenaar het formulier heeft ondertekend en de actie Verzenden heeft geactiveerd. Een achtergrondservice heeft meer tijd nodig om te beoordelen of alle geconfigureerde ondertekenaars het formulier hebben ondertekend en de verzending van het adaptieve formulier vertragen.
    > * Ontwerp het formulier zodanig dat een gebruiker niet kan terugnavigeren vanuit een deelvenster dat de stap Handtekening of Overzicht bevat.
 
 

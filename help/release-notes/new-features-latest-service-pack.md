@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2743'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 0%
 In dit artikel worden de functies beschreven die zijn opgenomen in het nieuwste 6.5 Service Pack, de [belangrijkste functies die zijn opgenomen in de vorige 6.5 Service Packs](#key-features-previous-service-packs) en de [AEM-versies sinds de laatste service pack](#key-releases-since-last-sp)-release.
 
 ## Adobe [!DNL Experience Manager Sites] {#aem-sites}
-
-### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout sorteren {#sort-livecopy-pages}
-
-U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date] en [!UICONTROL Last rollout date]. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release is geïntroduceerd.
 
 ### Beschikbaarheid van paginabewegingen en MSM-rollouts als asynchrone bewerkingen {#page-moves-msm-asynchronous}
 

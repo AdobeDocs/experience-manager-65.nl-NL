@@ -4,9 +4,9 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '9331'
+source-wordcount: '9359'
 ht-degree: 3%
 
 ---
@@ -50,7 +50,7 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
+>In de modus Dynamic Media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
 
 U kunt ervoor kiezen elementen te uploaden naar mappen waaraan al dan niet een verwerkingsprofiel is toegewezen.
 
@@ -137,7 +137,7 @@ Voeg geen speciale tekens toe aan de extensies van de bestandsnamen van elemente
 
 ![Het dialoogvenster Uploadvoortgang toont de status van geüploade bestanden en bestanden die niet zijn geüpload](assets/bulk-upload-progress.png)
 
-Daarnaast wordt in de gebruikersinterface [!DNL Assets] het meest recente element weergegeven dat u uploadt of de map die u als eerste hebt gemaakt.
+Daarnaast wordt in de gebruikersinterface [!DNL Assets] het element weergegeven dat u het laatst hebt geüpload of de map die u het eerst hebt gemaakt.
 
 Als u het uploaden annuleert voordat de bestanden zijn geüpload, stopt [!DNL Assets] met het uploaden van het huidige bestand en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
@@ -153,11 +153,11 @@ Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt
 
 ### Elementen uploaden met FTP {#uploading-assets-using-ftp}
 
-Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
+Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelijk. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
+>In de modus Dynamic Media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
 
 >[!NOTE]
 >
@@ -168,8 +168,12 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 **Elementen uploaden met FTP**
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
-1. [Meld u aan bij Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicusing de gegevens die zijn ontvangen van de e-mail met provisioning. Klik op **[!UICONTROL Upload]** op de algemene navigatiebalk.
 
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) en meld u vervolgens aan bij uw account.
+
+   Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de provisioning opgegeven. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+
+1. Klik op **[!UICONTROL Upload]** op de algemene navigatiebalk.
 1. Klik op het tabblad **[!UICONTROL Via FTP]** in de linkerbovenhoek van de pagina Uploaden.
 1. Kies links op de pagina een FTP-map waaruit u bestanden wilt uploaden. aan de rechterkant van de pagina kiest u een doelmap.
 1. Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Job Options]** en stel vervolgens de gewenste opties in op basis van de elementen in de map die u hebt geselecteerd.
@@ -178,12 +182,12 @@ Met Dynamic Media kunt u via de FTP-server items in batches uploaden. Als u grot
 
    >[!NOTE]
    >
-   >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u instelt in Dynamic Media Classic (S7) voorrang op parameters voor elementverwerking die zijn ingesteld in [!DNL Experience Manager].
+   >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u instelt in Dynamic Media Classic (S7) voorrang op parameters voor middelenverwerking die zijn ingesteld in [!DNL Experience Manager].
 
 1. Klik in de rechterbenedenhoek van het dialoogvenster Taakopties uploaden op **[!UICONTROL Save]**.
 1. Klik in de rechterbenedenhoek van de pagina Uploaden op **[!UICONTROL Submit Upload]**.
 
-   Klik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in [!DNL Experience Manager] blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
+   Klik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina Taken wordt de voortgang van het uploaden weergegeven. U kunt in [!DNL Experience Manager] blijven werken en aan de pagina van Banen in de Klassiek van Dynamic Media op elk ogenblik terugkeren om een lopende baan te herzien.
 Als u een actieve uploadtaak wilt annuleren, klikt u op **[!UICONTROL Cancel]** naast de duur van de upload.
 
 #### Opties voor uploaden {#upload-job-options}
@@ -205,7 +209,7 @@ Als u een actieve uploadtaak wilt annuleren, klikt u op **[!UICONTROL Cancel]** 
 |  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> E-catalogi worden niet ondersteund in  [!DNL Experience Manager]. <br> Zie  [Opties voor](#setting-pdf-upload-options) PDF-upload instellen. |
 |  | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie  [Uploadopties](#setting-postscript-and-illustrator-upload-options) voor PostScript en Illustrator instellen. |
 |  | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie  [Opties voor](#setting-evideo-upload-options) eVideo-upload instellen. |
-|  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingen/batchsets van Dynamic Media Classic.<br> Zie Voorinstellingen voor batchsets  [ ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configureren voor het automatisch genereren van afbeeldingssets en de instellingen voor centrifugeren voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie Voorinstellingen  [voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
+|  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> Zie Voorinstellingen voor batchsets  [ ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configureren voor het automatisch genereren van afbeeldingssets en de instellingen voor centrifugeren voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie Voorinstellingen  [voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
@@ -252,7 +256,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 
 PSD-bestanden (Photoshop Document) worden meestal gebruikt om afbeeldingssjablonen te maken. Wanneer u een PSD-bestand uploadt, kunt u automatisch een afbeeldingssjabloon maken vanuit het bestand (selecteer de optie [!UICONTROL Create Template] in het scherm Uploaden).
 
-Met Dynamische media maakt u meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
+Dynamic Media maakt meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
 
 Gebruik de [!UICONTROL Crop Options] en [!UICONTROL Color Profile Options], zoals hierboven beschreven, met de uploadopties van Photoshop.
 
@@ -369,7 +373,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
 >[!MORELIKETHIS]
 >
->* [Dynamische media-elementen](/help/assets/previewing-assets.md) voorvertonen.
+>* [Voorbeeld van Dynamic Media-middelen](/help/assets/previewing-assets.md) bekijken.
 >* [Subelementen](managing-linked-subassets.md#viewing-subassets) weergeven.
 
 
@@ -583,7 +587,7 @@ Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-f
 
 >[!NOTE]
 >
->Zie [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over Dynamic Media.
+>Zie [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over Dynamic Media.
 
 1. Navigeer naar de locatie van de middelen/map die u wilt publiceren.
 

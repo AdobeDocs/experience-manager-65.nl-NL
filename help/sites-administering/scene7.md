@@ -1,18 +1,14 @@
 ---
 title: Integreren met Dynamic Media Classic
-seo-title: Integreren met Dynamic Media Classic
-description: Leer hoe u AEM kunt integreren met Dynamic Media Classic.
-seo-description: Leer hoe u AEM kunt integreren met Dynamic Media Classic.
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
+description: Leer hoe u Adobe Experience Manager kunt integreren met Dynamic Media Classic.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '5280'
+source-wordcount: '5268'
 ht-degree: 0%
 
 ---
@@ -579,7 +575,7 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
    >
    >`process=MaintainLayers&createTemplate=true`
    >
-   >Zorg ervoor dat uw PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
+   >Zorg ervoor dat het PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All.]**
 

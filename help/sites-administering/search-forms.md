@@ -1,18 +1,14 @@
 ---
 title: Zoekformulieren configureren
-seo-title: Zoekformulieren configureren
 description: Leer hoe u Search Forms configureert.
-seo-description: Leer hoe u Search Forms configureert.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2060'
 ht-degree: 2%
 
 ---
@@ -64,7 +60,7 @@ De beschikbare standaardconfiguraties zijn:
 
    Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
-* **Pagina-editor (zoeken in Scene7)**:
+* **Pagina-editor (Dynamic Media Classic  [voorheen Scene7] zoeken)**:
 
    Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
 
@@ -440,7 +436,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 1. [Open de aangepaste ](#creating-opening-a-customized-configuration) configuratie voor bijwerken.
 1. Als u een nieuw gebied wilt toevoegen, open **Uitgezochte Predicate** tabel en sleep het vereiste voorspel aan de vereiste plaats. Bijvoorbeeld het **Datumbereik voorspellen**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. Afhankelijk van of:
 
@@ -453,7 +449,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
       Selecteer het voorloopgebied (op het recht), dan open **Montages** tabel.
    Bijvoorbeeld, de montages voor **Datumbereik Predicate**:
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
 1. Breng de gewenste wijzigingen aan en bevestig deze met **Done**.
 

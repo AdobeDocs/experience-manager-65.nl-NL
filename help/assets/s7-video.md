@@ -8,7 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 0%
@@ -24,6 +24,7 @@ Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde v
 
 * De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
 * Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten.
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -150,7 +151,7 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 
 1. Tik in AEM op **[!UICONTROL Tools]>[!UICONTROL Configuration Console]**.
 1. Navigeer in **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools > DAM > Video Profiles]** in de navigatiestructuur.
-1. Maak een nieuw S7-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu &lt;a0/> en selecteer vervolgens de sjabloon Scene7 Video Profile. **[!UICONTROL Create Page]** Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
+1. Maak een nieuw S7-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu **[!UICONTROL Create Page]** en selecteer vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

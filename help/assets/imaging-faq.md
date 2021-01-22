@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 * Smart Imaging kan worden uitgeschakeld met de URL-parameter &quot;bfc&quot;.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
 * Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een procedure voor het invalideren van het cachegeheugen in één stap mogelijk is.
-* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing staat oorsprong toe&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamische media Klassiek](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste slimme beeldbewerking, omdat deze kopteksten niet worden geblokkeerd, in tegenstelling tot de vorige versie van Smart Imaging.
+* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing staat oorsprong toe&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals wordt voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste functie voor slimme afbeeldingen, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
@@ -118,16 +118,16 @@ Slimme afbeeldingen werken met afbeeldingen die via HTTP of HTTPS worden gelever
 
 ## Mag ik slimme beeldverwerking gebruiken? {#am-i-eligible-to-use-smart-imaging}
 
-Als u Smart Imaging wilt gebruiken, moet de Dynamic Media Classic of Dynamic Media van uw bedrijf op AEM account aan de volgende vereisten voldoen:
+Als u Smart Imaging wilt gebruiken, moet Dynamic Media Classic of Dynamic Media van uw bedrijf voor AEM account aan de volgende vereisten voldoen:
 
 * Gebruik Adobe-Gebundelde CDN (het Netwerk van de Levering van de Inhoud) als deel van uw vergunning.
 * Gebruik een specifiek domein (bijvoorbeeld `images.company.com` of `mycompany.scene7.com`), niet een algemeen domein (bijvoorbeeld `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
-Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
 Tik **[!UICONTROL Setup > Application Setup > General Settings.]** Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepast domein gaat wanneer u een technisch ondersteuningsticket verzendt.
 
-Uw eerste aangepaste domein kost geen extra geld met een Dynamic Media-licentie.
+Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dynamic Media-licentie.
 
 ## Wat is het proces voor het inschakelen van Smart Imaging voor mijn account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
@@ -139,7 +139,7 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
    1. Primaire contactpersoon, e-mail, telefoon.
    1. Alle domeinen die voor slimme beeldverwerking (namelijk `images.company.com` of `mycompany.scene7.com`) moeten worden toegelaten.
 
-      Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings.]**
 
@@ -147,11 +147,11 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
    1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` gebruikt.
 
-      Meld u aan bij uw bedrijfsaccount of accounts om uw domeinen te zoeken.
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts.
 
       Klik op **[!UICONTROL Setup > Application Setup > General Settings.]**
 
-      Zoek het gebied geëtiketteerd **[!UICONTROL Published Server Name.]** als u momenteel een generisch Dynamisch Dynamisch Klassiek domein van Media gebruikt, kunt u verzoeken zich over naar uw eigen douanedomein als deel van deze overgang te bewegen.
+      Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen Dynamic Media Classic-domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat.
    1. Geef aan of u dit ook nodig hebt om via HTTP/2 te werken.
 
 1. De technische Steun zal u aan de Slimme Lijst van de Wacht van het Beeld toevoegen die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
@@ -160,8 +160,8 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 1. U wordt op de hoogte gesteld na voltooiing door ondersteuning.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
-   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of langer.
-   1. Als u Dynamische media gebruikt, volg [deze instructies](config-dynamic.md). Stel de waarde **[!UICONTROL Expiration]** 24 uur of langer in.
+   1. Als u Dynamic Media Classic gebruikt, klikt u op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]** Stel de waarde **[!UICONTROL Default Client Cache Time To Live]** in op 24 of hoger.
+   1. Als u Dynamic Media gebruikt, volgt u [deze instructies](config-dynamic.md). Stel de waarde **[!UICONTROL Expiration]** 24 uur of langer in.
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
@@ -172,13 +172,13 @@ Het kan lang duren, omdat het inschakelen van Smart Imaging Adobe het wissen van
 
 ## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-Er is geen risico voor een klantenwebpagina. Nochtans, zou u zich ervan bewust moeten zijn dat de overgang aan Slimme Beelden uw geheime voorgeheugen bij CDN ontruimt omdat het het bewegen aan een nieuwe configuratie van Dynamische Media Klassieke of Dynamische Media op AEM impliceert.
+Er is geen risico voor een klantenwebpagina. Houd er echter rekening mee dat bij de overgang naar Smart Imaging de cache van de CDN wordt gewist, omdat hierbij op AEM naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden gegaan.
 
 Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de oorspronkelijke Adobe-servers totdat het cachegeheugen opnieuw wordt opgebouwd. Wegens dit, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van onze oorsprong. Voor de meeste klanten wordt het cachegeheugen binnen ~1 tot 2 dagen volledig opgebouwd bij de CDN.
 
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Nadat uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic of Adobe Experience Manager - Dynamic Media Image URL op de browser.
+1. Wanneer uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
 1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.

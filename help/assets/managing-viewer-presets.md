@@ -10,9 +10,9 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4226'
 ht-degree: 15%
 
 ---
@@ -22,12 +22,12 @@ ht-degree: 15%
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. Beheerders kunnen voorinstellingen voor viewers maken. Er zijn instellingen beschikbaar voor een array met viewerconfiguratieopties. U kunt bijvoorbeeld de weergavegrootte of het zoomgedrag van de viewer wijzigen.
 
-<!-- OBSOLETE CONTENT  For instructions on creating and customizing your own HTML5 viewer presets, see the *Adobe Scene7 HTML5 Viewer SDK*. The SDK is available on the IS publish server embedded in the SDK itself. Each library version has its own SDK documentation included.
+Zie de Adobe Dynamic Media *HTML5 Viewer SDK API-documentatie* voor instructies over het maken en aanpassen van uw eigen HTML5-viewervoorinstellingen. De SDK is beschikbaar op de IS-publicatieserver die is ingesloten in de SDK zelf. Elke bibliotheekversie heeft zijn eigen documentatie van SDK inbegrepen.
 
-Path: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.
-For example, 3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html) -->
+Pad: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
+Bijvoorbeeld 3.10 SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Zie de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+Zie ook de [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 In deze sectie wordt beschreven hoe u voorinstellingen voor viewers kunt maken, bewerken en beheren. U kunt een viewervoorinstelling op elk gewenst moment op een element toepassen. Zie [Viewer-voorinstellingen toepassen](#applying-a-viewer-preset-to-an-asset).
 
@@ -602,7 +602,7 @@ Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de
 
 **Een viewervoorinstelling toepassen op een element**
 
-1. Open het element en selecteer **[!UICONTROL Viewers.]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer &lt;a0/>
+1. Open het element en selecteer **[!UICONTROL Viewers.]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer 
 
    >[!NOTE]
    >

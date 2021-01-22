@@ -1,6 +1,6 @@
 ---
 title: Panoramische afbeeldingen
-description: Leer hoe u met panoramische afbeeldingen werkt in Dynamic Media.
+description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
 uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '550'
 ht-degree: 5%
 
 ---
@@ -39,11 +39,11 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 
 Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
 
-## Dynamische media Classic {#configuring-dynamic-media-classic-scene} configureren
+## Dynamic Media Classic {#configuring-dynamic-media-classic-scene} configureren
 
-De Panoramische beeldviewer werkt alleen correct binnen AEM als u de voorinstellingen van de Panoramische afbeeldingsviewer synchroniseert met de specifieke metagegevens voor Dynamic Media Classic en Dynamic Media Classic, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Om dit te verwezenlijken, vorm Dynamische Klassieke Media op de volgende manier:
+De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voor de Panoramische afbeeldingsviewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Hiertoe configureert u Dynamic Media Classic als volgt:
 
-1. [Meld u voor elk bedrijfsaccount aan bij Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classification.
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]**
 1. Selecteer **[!UICONTROL Image Serving.]** in het vervolgkeuzemenu **[!UICONTROL Publish Context]** op de pagina Publiceren op de afbeeldingsserver
@@ -76,7 +76,7 @@ Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen co
 
 * Voor een &quot;Ongeldige vergrendeling&quot; op het element of &quot;Parseerfout&quot; die op de pagina wordt weergegeven, schakelt u de modus Verduistering aanvragen en de modus Vergrendelen aanvragen in om ervoor te zorgen dat deze zijn uitgeschakeld.
 * Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
-* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamische media Klassiek configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
+* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
 
 ## Voorvertoning van panorama-afbeeldingen {#previewing-panoramic-images}
 

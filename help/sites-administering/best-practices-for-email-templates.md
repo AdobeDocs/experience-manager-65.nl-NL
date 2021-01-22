@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemal
 | Tekst&amp;personalisatie | /libs/mcm/campagne/componenten/personalisatie |
 | Textimage | /libs/mcm/campagne/onderdelen/textielafbeelding |
 | Koppeling | /libs/mcm/campagne/componenten/reference |
-| Scene7-afbeeldingssjabloon | /libs/mcm/campagne/s7image |
+| Dynamic Media Classic (voorheen Scene7) afbeeldingssjabloon | /libs/mcm/campagne/s7image |
 | Gerichte referentie | /libs/mcm/campagne/componenten/reference |
 
 >[!NOTE]

@@ -1,18 +1,14 @@
 ---
 title: Veelgestelde vragen over HTTP2-levering van content
-seo-title: Veelgestelde vragen over HTTP2-levering van content
 description: Meer informatie over de levering van HTTP2-inhoud.
-seo-description: Meer informatie over de levering van HTTP2-inhoud.
-uuid: e837c3e0-6e48-46f1-b510-847c9976807a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '748'
 ht-degree: 1%
 
 ---
@@ -51,7 +47,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik de Adobe-gebundelde CDN (content delivery network) als onderdeel van uw Dynamic Media-licentie.
 * Gebruik een specifiek domein (dat wil zeggen `images.company.com` of `mycompany.scene7.com`), geen algemeen Dynamic Media-domein (dat wil zeggen `s7d1.scene7.com`, `s7d2.scene7.com` of `s7d13.scene7.com`).
 
-   Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing[. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
+   Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app). [ Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld **Gepubliceerde servernaam**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -61,13 +57,13 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
    * Primaire contactpersoon, e-mail en telefoonnummer.
    * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`.
 
-      Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing[. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoeken naar het veld met het label **[!UICONTROL Published Server Name.]**
+      Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app). [ Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoeken naar het veld met het label **[!UICONTROL Published Server Name.]**
 
    * Controleer of u beveiligde HTTPS gebruikt voor aanvragen voor rich media.
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
    * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing[. ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat.
+      Meld u aan bij uw account om uw domeinen te zoeken met de Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app). [ Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat.
 
 1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
 1. Wanneer Adobe klaar is om uw verzoek te behandelen, zal de Steun u contacteren om de overgang te coördineren en een doeldatum te plaatsen.

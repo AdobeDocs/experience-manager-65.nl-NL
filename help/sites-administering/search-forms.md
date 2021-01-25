@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 19faa273908e67a744e52d173a5352f0a52f7345
 workflow-type: tm+mt
 source-wordcount: '2060'
 ht-degree: 2%
@@ -414,7 +414,7 @@ De labels voor de selectievakjes Publiceren en Live kopie voor de specifieke voo
 
 ### Een aangepaste configuratie maken/openen {#creating-opening-a-customized-configuration}
 
-1. Navigeer naar **Tools**, **Operations**, **Search Forms**.
+1. Navigeer naar **Tools**, **General**, **Search Forms**.
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik het **pictogram Edit** om de configuratie voor het bijwerken te openen.

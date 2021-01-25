@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 translation-type: tm+mt
-source-git-commit: 6396660b642fd78ac7f311fa416efe0e0d52a9e3
+source-git-commit: 838e194f699b0832839c80f4ba9503c9d5a15945
 workflow-type: tm+mt
 source-wordcount: '2721'
 ht-degree: 1%
@@ -85,7 +85,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde workflowmodellen moeten worden gemigreerd naar /conf/global/workflow/modellen.</p>
     <ol>
-     <li>Stel de gewijzigde Modellen van het Werkschema in een lokale AEM 6.4 ontwikkelingsinstantie op, zodat zij in de Vorige plaats bestaan.</li>
+     <li>Stel de gewijzigde Modellen van het Werkschema in een lokale AEM 6.5 ontwikkelingsinstantie op, zodat zij in de Vorige plaats bestaan.</li>
      <li>Bewerk het workflowmodel met AEM Workflow Model Editor op AEM &gt; Extra &gt; Workflow &gt; Modellen.</li>
      <li>Bij het migreren van aangepaste AEM-geleverde workflowmodellen
       <ol>

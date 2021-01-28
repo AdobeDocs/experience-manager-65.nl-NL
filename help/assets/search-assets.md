@@ -1,12 +1,12 @@
 ---
-title: Digitale elementen en afbeeldingen zoeken in [!DNL Adobe Experience Manager].
+title: Digitale middelen en afbeeldingen zoeken in [!DNL Adobe Experience Manager]
 description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 38ef8d8bd574933fdc57d7475831518f9d7f293e
 workflow-type: tm+mt
-source-wordcount: '5718'
+source-wordcount: '5667'
 ht-degree: 4%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 4%
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
 | [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpectedresults) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamische media-elementen](#dynamicmedia)</li></ul> |  |  |
+| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamic Media-middelen](#dynamicmedia)</li></ul> |  |  |
 | [Elementkiezer](#assetpicker) |  |  |
 | [](#limitations) Beperkingen en  [tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
@@ -146,7 +146,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) doorzoeken en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` in de bar van het Onderzoek toe. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
-### Dynamische media-elementen {#dmassets}
+### Dynamic Media-elementen {#dmassets}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
@@ -155,28 +155,28 @@ U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Medi
 U kunt naar elementen zoeken op basis van exacte waarden van specifieke metagegevensvelden, zoals titel, beschrijving en auteur. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (bijvoorbeeld auteur, titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
 
 | Metagegevensveld | Facetwaarde en gebruik |
-| ----------------------------------------- | ------------------------------------- |
-| Titel | titel:John |
-| Creator | maker:John |
-| Locatie | locatie:NA |
-| Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2020&quot; |
-| Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
-| Medewerker | contribuant:John |
-| Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
-| Gemaakt | gemaakt:YYYY-MM-DDTHH |
-| Vervaldatum | verloopt:YYYY-MM-DDTHH |
-| Op tijd | ontime:YYYY-MM-DDTHH |
-| Uit-tijd | offtime:YYYY-MM-DDTHH |
-| Tijdsbereik (verloopt dateontime, offtime) | Veld facet: lager gebonden..bovenaan |
+| ----------------------------------------- | --------------------------------------- |
+| Titel | `title:John` |
+| Creator | `creator:John` |
+| Locatie | `location:NA` |
+| Beschrijving | `description:"Sample Image"` |
+| Gereedschap Maker | `creatortool:"Adobe Photoshop CC 2020"` |
+| Copyrighteigenaar | `copyrightowner:"Adobe Systems"` |
+| Medewerker | `contributor:John` |
+| Gebruiksvoorwaarden | `usageterms:"CopyRights Reserved"` |
+| Gemaakt | `created`:YYYY-MM-DDTHH |
+| Vervaldatum | `expires`:YYYY-MM-DDTHH |
+| Op tijd | `ontime`:YYYY-MM-DDTHH |
+| Uit-tijd | `offtime`:YYYY-MM-DDTHH |
+| Tijdsbereik (verloopt dateontime, offtime) | `facet field`: lager gebonden..bovenaan |
 | Pad | /content/dam/&lt;naam map> |
-| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
-| Subject | onderwerp: &quot;Opleiding&quot; |
-| Tags | tags:&quot;Locatie en reizen&quot; |
-| Type | type:&quot;image\png&quot; |
-| Breedte van afbeelding | breedte:ondergrens..bovenaan |
-| Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
-| Person | persoon:John |
+| PDF-titel | `pdftitle`:&quot;Adobe Document&quot; |
+| Subject | `subject:"Training"` |
+| Tags | `tags:"Location And Travel"` |
+| Type | `type:"image\png"` |
+| Breedte van afbeelding | `width`:lowerbound..bovenaan |
+| Hoogte van afbeelding | `height`:lowerbound..bovenaan |
+| Person | `person:John` |
 
 De eigenschappen `path`, `limit`, `size` en `orderby` kunnen niet worden gecombineerd met een `OR` operator met een andere eigenschap.
 
@@ -212,7 +212,7 @@ De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van he
 
 Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` op het gebied van Onderzoek toe. U kunt ook **[!UICONTROL Filters]** gebruiken om alle gelicentieerde of niet gelicentieerde activa te vinden of een specifiek middel te zoeken gebruikend het dossieraantal van Adobe Stock. Zie [Adobe Stock-afbeeldingen beheren in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Dynamische media-elementen zoeken {#dynamicmedia}
+### Zoeken in Dynamic Media-middelen {#dynamicmedia}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
@@ -239,12 +239,12 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 | Naam | Waarden | Voorbeeld | Doel |
 |---|---|---|---|
 | bronachtervoegsel (B) | Het pad van de map als het bronachtervoegsel in de URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd, moet de URL de volgende vorm hebben: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
-| mode | enkelvoudig, meerdere | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
-| dialoogvenster | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
-| basis | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
-| viewmode | zoeken |  | De elementenkiezer starten in de zoekmodus met parameters assettype en mimetype. |
-| assettype | afbeeldingen, documenten, multimedia, archieven | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Gebruik deze optie om elementtypen te filteren op basis van de doorgegeven waarde. |
-| mimetype | mimetype(s) (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund) | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Hiermee kunt u elementen filteren op basis van MIME-typen |
+| `mode` | enkelvoudig, meerdere | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
+| `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
+| `root` | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
+| `viewmode` | zoeken |  | De elementenkiezer starten in de zoekmodus met parameters assettype en mimetype. |
+| `assettype` | afbeeldingen, documenten, multimedia, archieven. | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Gebruik de optie om elementtypen te filteren op basis van de opgegeven waarde. |
+| `mimetype` | MIME-type (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Gebruik deze optie om elementen te filteren op basis van het MIME-type. |
 
 Ga naar `https://[aem_server]:[port]/aem/assetpicker` om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
 
@@ -263,7 +263,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
-* Visueel onderzoek werkt het best met grotere bewaarplaatsen. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen mogelijk minder goed dan de overeenkomsten met een grote opslagplaats.
+* Het visuele onderzoek werkt het best met een grote bewaarplaats. Hoewel er geen minimaal aantal afbeeldingen vereist is voor goede resultaten, is de kwaliteit van overeenkomsten met een paar afbeeldingen minder goed dan de overeenkomsten met een grote opslagplaats.
 * U kunt het model niet wijzigen of [!DNL Experience Manager] trainen om vergelijkbare afbeeldingen te zoeken. Als u bijvoorbeeld slimme tags toevoegt of verwijdert aan een paar elementen, verandert het model niet. De elementen worden wel uitgesloten van de visueel vergelijkbare zoekresultaten.
 
 De zoekfunctionaliteit kan prestatiebeperkingen hebben in de volgende scenario&#39;s:
@@ -297,11 +297,11 @@ Gebruik dubbele aanhalingstekens rond trefwoorden om te zoeken naar elementen di
 **Zoeken met jokerteken** sterretje: Als u de zoekopdracht wilt uitbreiden, gebruikt u een sterretje voor of na het zoekwoord om het gewenste aantal tekens te zoeken. Als u bijvoorbeeld zoekt naar tekst zonder sterretje, worden er geen elementen geretourneerd die een variatie van het woord bevatten (inclusief in de metagegevens). Een sterretje vervangt het gehele aantal tekens. Bijvoorbeeld,
 
 * `run` retourneert elementen met trefwoord exact uitvoeren
-* `run*` retourneert elementen met actieve, actieve, weglopende enzovoort.
-* `*run` retourneert outrun, reerun enzovoort.
+* `run*` retourneert elementen met  `running`,  `run`,  `runaway`enzovoort.
+* `*run` retourneert elementen met  `outrun`,  `rerun`enzovoort.
 * `*run*` retourneert alle mogelijke combinaties.
 
-![Het gebruik van jokertekens voor sterretjes in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
+![Het gebruik van een sterretje in het zoeken naar elementen illustreren aan de hand van een voorbeeld](assets/search_with_asterisk_run.gif)
 
 *Afbeelding: Het illustreren van het gebruik van asteriskvervanging in het onderzoek van Activa gebruikend een voorbeeld.*
 
@@ -455,7 +455,7 @@ U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het
 | Onjuiste resultaten bij het zoeken naar elementen met ontbrekende metagegevens. | Bij het zoeken naar elementen waarvoor de verplichte metagegevens ontbreken, kunnen [!DNL Experience Manager] elementen weergeven die geldige metagegevens hebben. De resultaten zijn gebaseerd op de eigenschap voor geïndexeerde metagegevens. | Nadat de metagegevens zijn bijgewerkt, moet de index opnieuw worden geïndexeerd om de juiste status van metagegevens voor elementen weer te geven. Zie [verplichte metagegevens](metadata-schemas.md#define-mandatory-metadata). |
 | Te veel zoekresultaten. | Brede zoekparameter. | Overweeg het [bereik van zoeken](#scope) te beperken. Het gebruik van slimme tags kan meer zoekresultaten opleveren dan u had verwacht. Zie [zoekgedrag met slimme tags](#withsmarttags). |
 | Onverwante of gedeeltelijk verwante zoekresultaten. | Wijzigingen in zoekgedrag met slimme tags. | Begrijp [hoe zoekopdracht verandert na slimme tags](#withsmarttags). |
-| Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Assets] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
+| Geen suggesties voor automatisch aanvullen van elementen. | Nieuw geüploade elementen zijn nog niet geïndexeerd. De metagegevens zijn niet direct beschikbaar als suggesties wanneer u een trefwoord in de zoekbalk typt. | [!DNL Experience Manager] wacht tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade of bijgewerkte elementen te indexeren en voegt de metagegevens vervolgens toe aan de lijst met suggesties. |
 | Geen zoekresultaten. | <ul><li>Elementen die overeenkomen met uw query bestaan niet. </li><li> Whitespace toegevoegd vóór de zoekquery. </li><li> Niet-ondersteund metagegevensveld bevat het trefwoord waarnaar u hebt gezocht.</li><li> Zoeken tijdens offline uitvoering van een element. </li></ul> | <ul><li>Zoeken met een ander trefwoord. U kunt ook slim labelen of zoeken op basis van gelijkenis gebruiken om de zoekresultaten te verbeteren. </li><li>[Bekende beperking](#limitations).</li><li>Niet alle metagegevensvelden worden in aanmerking genomen voor zoekopdrachten. Zie [scope](#scope).</li><li>Later zoeken of on-time en off-time wijzigen voor de vereiste elementen.</li></ul> |
 | Zoekfilter of voorspelling is niet beschikbaar. | <ul><li>Het zoekfilter is niet geconfigureerd.</li><li>Het is niet beschikbaar voor uw aanmelding.</li><li>(Minder waarschijnlijk) De onderzoeksopties worden niet aangepast op de plaatsing u gebruikt.</li></ul> | <ul><li>Neem contact op met de beheerder om te controleren of de zoekaanpassingen beschikbaar zijn of niet.</li><li>Neem contact op met de beheerder om te controleren of uw account de rechten/machtigingen heeft om de aanpassing te gebruiken.</li><li>Neem contact op met de beheerder en controleer de beschikbare aanpassingen voor de [!DNL Assets]-implementatie die u gebruikt.</li></ul> |
 | Bij het zoeken naar visueel vergelijkbare afbeeldingen ontbreekt een verwachte afbeelding. | <ul><li>Afbeelding is niet beschikbaar in [!DNL Experience Manager].</li><li>Afbeelding is niet geïndexeerd. Doorgaans wanneer het onlangs is geüpload.</li><li>Afbeelding heeft geen slimme tags.</li></ul> | <ul><li>Voeg de afbeelding toe aan [!DNL Assets].</li><li>Neem contact op met de beheerder om de gegevensopslagruimte opnieuw te indexeren. Zorg er ook voor dat u de juiste index gebruikt.</li><li>Neem contact op met de beheerder om de relevante elementen een slimme tag te geven.</li></ul> |

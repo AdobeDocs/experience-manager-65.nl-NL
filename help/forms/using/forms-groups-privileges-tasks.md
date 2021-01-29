@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 494551d3d886c1ed70d252a28b03cfa9d8e82a6a
+source-git-commit: a4314a30e2329aebe02f4983fd543240be920ee8
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Nadat u [AEM Forms-add-on-pakket](../../forms/using/installing-configuring-aem-f
     </ul> </td> 
   </tr>
   <tr>
-   <td>form-power-user</td> 
+   <td>formulieren-grootgebruikers</td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 

@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Een werkstroom kan een van de volgende status hebben:
 * **UITVOEREN**: De werkstroominstantie wordt uitgevoerd.
 * **VOLTOOID**: De werkstroominstantie is beëindigd.
 
-* **GESCHORST**: De werkstroominstantie is opgeschort.
+* **GESCHORST**: Markeer de workflow als onderbroken. Zie echter de waarschuwing hieronder over een bekend probleem met deze staat.
 * **GEABORTEERD**: De werkstroominstantie is beëindigd.
 * **STAAL**: Voor de voortgang van de werkstroominstantie moet een achtergrondtaak worden uitgevoerd, maar de taak kan niet in het systeem worden gevonden. Deze situatie kan zich voordoen wanneer er een fout optreedt bij het uitvoeren van de workflow.
 
@@ -107,7 +107,12 @@ Een werkstroom kan een van de volgende status hebben:
 
 Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van workflowinstanties wanneer u moet ingrijpen in de normale voortgang van een workflowinstantie:
 
-* **Onderbreken**: Hiermee wordt de uitvoering van de workflow tijdelijk gestopt. Opschorsen is handig in uitzonderlijke gevallen waarin u niet wilt dat de workflow wordt voortgezet, bijvoorbeeld voor onderhoud. Met Opschorting wijzigt u de status van de workflow in Opgeschort.
+* **Onderbreken**: Met Opschorting wijzigt u de status van de workflow in Opgeschort. Zie Voorzichtigheid hieronder:
+
+>[!CAUTION]
+>
+>Het markeren van een workflowstatus op &quot;Suspend&quot; heeft een bekende kwestie. In deze status is het mogelijk om acties uit te voeren voor geschorste workflowitems in een Postvak IN.
+
 * **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
 * **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in  **ABORTED**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
 

@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
+source-git-commit: 6ca333c64fcd7d3b91b1ae8ef98c53ed770479d4
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -98,6 +98,23 @@ Soms heeft het AEM WCM QuickStart-venster het bericht &quot;AEM WCM wordt uitgev
 
 Als alles anders ontbreekt, controleer de logboeken om te weten te komen wat is gebeurd.
 
+### De website laadt niet of mislukt soms met Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+
+Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java 11 waarbij de website niet met tussenpozen wordt geladen of gezakt.
+
+Als dit gebeurt, volgt u de onderstaande tijdelijke oplossing:
+
+1. Open het `sling.properties`-bestand onder de map `crx-quickstart/conf/`
+1. Zoek de volgende regel:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Vervang het door het volgende:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Start de instantie opnieuw.
+
 ## Installaties van problemen met een toepassingsserver {#troubleshooting-installations-with-an-application-server} oplossen
 
 ### Pagina niet gevonden bij aanvragen van een geometrixx-outdoorpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
@@ -130,20 +147,3 @@ Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een d
 
 Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Zie voor meer informatie de
 [JSP-compilatieproblemen in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)-artikel.
-
-### De website laadt niet of mislukt soms met Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
-
-Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java 11 waarbij de website niet met tussenpozen wordt geladen of gezakt.
-
-Als dit gebeurt, volgt u de onderstaande tijdelijke oplossing:
-
-1. Open het `sling.properties`-bestand onder de map `crx-quickstart/conf/`
-1. Zoek de volgende regel:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.`
-
-1. Vervang het door het volgende:
-
-   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
-
-1. Start de instantie opnieuw.

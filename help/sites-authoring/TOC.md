@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: a74be2627dd63c246eaf4576827f1b2ea16d3146
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 38%
+source-wordcount: '298'
+ht-degree: 37%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 38%
    + [Deelnemen aan workflows](workflows-participating.md)
    + [Werken met projectworkflows](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
 + Paginaprestaties {#page-performance}
-   + [Inhoudsinzicht](content-insights.md)
+   + [Inhoudsinzicht](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
    + [Paginaprestaties analyseren](ci-analyze.md)
    + [Gegevens van paginaanalyse bekijken](pa-using.md)
    + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)

@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 Mobiele gebruikershandleiding
 breadcrumb-title: Gids voor mobiele apparaten
 user-guide-description: Inhoud maken en beheren voor mobiele apps.
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
    + [Paginasjablonen voor mobiele apps](phonegap-apps-arch-page-templates.md)
    + [Adobe Target-Cloud Service configureren](aem-mobile-configuring-cloud-service.md)
    + [Toepassingen voor één pagina](phonegap-single-page-applications.md)
-   + [Modellen in opslagplaats](administer-mobile-apps.md)
+   + [Modellen in opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/administering/administer-mobile-apps.html)
    + [AEM PhoneGap starten](starting-aem-phonegap-app.md)
    + [Mobiele apps testen](develop-mobile-apps-testing.md)
    + [Een app structureren](phonegap-structure-an-app.md)

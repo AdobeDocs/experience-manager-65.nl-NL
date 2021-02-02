@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 9b65f7194dc648ba9a6dbc127bc8d5951f126269
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -130,3 +130,20 @@ Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een d
 
 Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Zie voor meer informatie de
 [JSP-compilatieproblemen in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)-artikel.
+
+### De website laadt niet of mislukt soms met Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+
+Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java 11 waarbij de website niet met tussenpozen wordt geladen of gezakt.
+
+Als dit gebeurt, volgt u de onderstaande tijdelijke oplossing:
+
+1. Open het `sling.properties`-bestand onder de map `crx-quickstart/conf/`
+1. Zoek de volgende regel:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.`
+
+1. Vervang het door het volgende:
+
+   `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
+
+1. Start de instantie opnieuw.

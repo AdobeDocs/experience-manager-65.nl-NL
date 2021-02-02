@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '905'
 ht-degree: 6%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 6%
       + [Ontwikkelen met SAP Commerce Cloud](sap-commerce-cloud.md)
 + Onderdelen{#components}
    + [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-   + [Stijlsysteem](/help/sites-authoring/style-system.md)
+   + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
    + [Overzicht van componenten](components.md)
    + [Componenten AEM - De basisbeginselen](components-basics.md)
    + [AEM ontwikkelen](developing-components.md)
@@ -101,7 +101,7 @@ ht-degree: 6%
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Beleidsloos ervaringsbeheer{#headless}
    + [Hoofdloos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [JSON-export inschakelen voor een component](json-exporter-components.md)
+   + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Toepassingen voor één pagina{#spas}
       + [SPA Inleiding en Analyse](spa-walkthrough.md)
       + [SPA WKND-zelfstudie](spa-wknd.md)
@@ -118,9 +118,9 @@ ht-degree: 6%
       + [Integratie SPA en Adobe Experience Platform Launch](spa-launch.md)
       + [SPA en rendering op de server](spa-ssr.md)
       + [Referentiematerialen SPA](spa-reference-materials.md)
-   + [HTTP-API](/help/assets/mac-api-assets.md)
-   + [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
-   + [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)
+   + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
+   + [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [Ervaringsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Ontwikkelingshulpmiddelen{#devtools}
    + [Ontwikkelingsinstrumenten](dev-tools.md)
@@ -181,12 +181,12 @@ ht-degree: 6%
       + [Aangepaste formuliertoewijzingen maken](extending-campaign-form-mapping.md)
       + [Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten](extending-campaign-custom-template.md)
       + [Analyse aanvragen](analyze-request.md)
-   + [Services integreren met de JMX-console](jmx-integration.md)
-   + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
+   + [Services integreren met de JMX-console](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
+   + [De Bulk-editor ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
    + Klassieke UI uitbreiden{#extending-classic-ui}
       + [De websiteconsole aanpassen (klassieke gebruikersinterface)](customizing-siteadmin.md)
       + [De welkomstconsole aanpassen (klassieke gebruikersinterface)](customizing-the-welcome-console.md)
-      + [Rapporten ontwikkelen](dev-reports.md)
+      + [Rapporten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Testen{#testing}
    + [Planning](planning.md)
    + [Welke testomgevingen zijn nodig?](test-environments.md)
@@ -199,10 +199,10 @@ ht-degree: 6%
    + [De volgende release..](the-next-release.md)
    + [Controlelijsten](checklists.md)
    + [Dag](tough-day.md)
-   + [Uw gebruikersinterface testen](hobbes.md)
+   + [Uw gebruikersinterface testen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html)
 + Best practices voor{#bestpractices}
    + [Overzicht van best practices](best-practices.md)
-   + [Richtlijnen voor AEM ontwikkeling en beste praktijken](dev-guidelines-bestpractices.md)
+   + [Richtlijnen voor AEM ontwikkeling en beste praktijken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html)
    + [Aanbevolen werkwijzen voor ontwikkeling](development-practices.md)
    + [Inhoudsarchitectuur](content-architecture.md)
    + [Softwarearchitectuur](software-architecture.md)

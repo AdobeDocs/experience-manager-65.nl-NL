@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5, inclusief de cloudimplementatie van Adobe Managed Services.
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '352'
 ht-degree: 1%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 1%
    + [Taken verschuiven](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Brontoewijzing](resource-mapping.md)
-   + [HTTP via SSL inschakelen](/help/sites-administering/ssl-by-default.md)
+   + [HTTP via SSL inschakelen](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
    + [Consistentie- en reiscontroles](consistency-check.md)
    + [Richtlijnen voor prestaties](performance-guidelines.md)
    + [Optimalisatie van prestaties](configuring-performance.md)
@@ -84,7 +84,7 @@ ht-degree: 1%
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Sites Repositoregeling Herstructurering AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Herstructurering van activa Bewaarinstelling in AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
-   + [Dynamic Media Repository Herstructurering in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
+   + [Dynamic Media Repositoregeling Herstructurering in AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Forms Repositoregeling Herstructurering in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Repositoregeling voor de herstructurering van AEM Communities in punt 6.5](communities-repository-restructuring-in-aem-6-5.md)

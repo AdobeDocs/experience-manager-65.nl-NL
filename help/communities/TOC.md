@@ -6,9 +6,9 @@ user-guide-title: AEM 6.5 Gebruikersgids voor gemeenschappen
 breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 + Inleiding tot AEM Communities {#introduction}
    + [Communitysites](administer-landing.md)
    + [AEM Communities - Overzicht](overview.md)
-   + [Opmerkingen bij de release van AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Opmerkingen bij de release van AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Aan de slag met AEM Communities](getting-started.md)
    + [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
    + [Eerste instelling](setup.md)
@@ -38,7 +38,7 @@ ht-degree: 0%
    + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 + Beheren {#administer}
    + [Gebruikersbeheer en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
-   + [Communitysites](administer-landing.md)
+   + [Communitysites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communityconsoles](consoles.md)
    + [Analytische configuratie voor functies van Gemeenschappen](analytics.md)
    + [Functies van Enablement configureren](enablement.md)
@@ -165,4 +165,4 @@ ht-degree: 0%
    + [Activiteitendensen](trends.md)
    + [Sociale tagcloud gebruiken](tagcloud.md)
    + [Stemmen gebruiken](voting.md)
-   + [Een voorbeeldpagina maken](create-sample-page.md)
+   + [Een voorbeeldpagina maken](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

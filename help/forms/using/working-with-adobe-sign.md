@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 77c3624a780bd0d2e3bb3e82004cce73e5b66b32
+source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3657'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ In een standaard [!DNL Adobe Sign]- en adaptief-formulierscenario vult een gebru
 * Formulieren ondertekenen als anonieme of aangemelde gebruiker
 * Dynamische ondertekeningsprocessen (integratie met AEM [!DNL Forms]-workflow)
 * Verificatie via een kennisbasis, telefoon en sociale profielen
+
+Leer de [beste praktijken van het gebruiken van Adobe Sign met adaptieve vormen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) om betere ondertekeningservaringen tot stand te brengen.
 
 ## Vereisten {#prerequisites}
 
@@ -358,5 +360,5 @@ ProbleemWanneer  [!DNL Adobe Sign] een adaptief formulier is geconfigureerd, wor
 ## Verwante artikelen {#related-articles}
 
 * [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md)
-* [Adobe Sign in een adaptieve vorm gebruiken](../../forms/using/working-with-adobe-sign.md)
+* [Aanbevolen procedures voor het gebruik van Adobe Sign met adaptieve formulieren](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)
 * [Adobe Sign gebruiken met AEM Forms (video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)

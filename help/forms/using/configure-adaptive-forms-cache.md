@@ -10,9 +10,9 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ade3747ba608164a792a62097b82c55626245891
+source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,6 @@ U kunt ook adaptieve formulieren in cache plaatsen bij dispatcher voor extra pre
 ### Voorwaarden {#pre-requisites}
 
 * Schakel de optie [Gegevens samenvoegen of vooraf invullen op client](prepopulate-adaptive-form-fields.md#prefill-at-client) in. Hiermee kunt u unieke gegevens samenvoegen voor elk exemplaar van een vooraf ingevuld formulier.
-* [De spoelagent inschakelen voor elke publicatie-instantie](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance). Hierdoor worden adaptieve formulieren sneller in cache geplaatst. De standaard-URL van spoelmiddelen is `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
 
 ### Overwegingen bij het in cache plaatsen van adaptieve formulieren op een verzender {#considerations}
 
@@ -63,7 +62,7 @@ U kunt ook adaptieve formulieren in cache plaatsen bij dispatcher voor extra pre
 
 Voer de onderstaande stappen uit om adaptieve formulieren in de cache in te schakelen en te configureren op de dispatcher:
 
-1. Open volgende URL voor elk publiceer geval van u milieu en vorm de replicatieagent:
+1. Open de volgende URL voor elke publicatie-instantie van uw omgeving en [schakel flush agent in voor het publiceren van instanties van uw omgeving](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Voeg het volgende toe aan het bestand](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:
@@ -143,17 +142,7 @@ Wanneer u via de middelenbrowser afbeeldingen of video&#39;s selecteert en toevo
 
 Nadat u de afbeeldingen en video hebt gepubliceerd, maakt u de publicatie van de adaptieve formulieren die naar deze elementen verwijzen, expliciet ongedaan en publiceert u deze.
 
-### Sommige adaptieve formulieren met inhoudsfragment of ervaringsfragmenten worden niet automatisch ongeldig gemaakt in de verzendingscache {#content-or-experience-fragment-not-auto-invalidated}
-
-#### Probleem {#issue2}
-
-Wanneer u een inhoudsfragment of ervaringsfragment toevoegt aan een adaptief formulier en deze elementen onafhankelijk worden bewerkt en gepubliceerd, worden adaptieve formulieren met deze elementen niet automatisch ongeldig gemaakt door de verzendercache.
-
-#### Oplossing {#Solution2}
-
-Nadat u het bijgewerkte inhoudsfragment hebt gepubliceerd of een fragment hebt ervaren, publiceert u de adaptieve formulieren die deze elementen gebruiken expliciet ongedaan en publiceert u deze.
-
-### Alleen de eerste instantie van een adaptief formulier wordt in de cache opgeslagen{#only-first-insatnce-of-adptive-forms-is-cached}
+### Alleen de eerste instantie van een adaptief formulier wordt in de cache opgeslagen {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Probleem {#issue3}
 

@@ -1,11 +1,11 @@
 ---
-title: Inleiding tot [!DNL Adobe Experience Manager Assets].
+title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale activa, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ De basisgebruikersinterface is het zelfde als dat van [!DNL Sites]. Zie [Overzic
 
 Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afbeelding in de DAM-opslagplaats moet worden geplaatst of een afbeeldingscomponent moet worden gebruikt:
 
-* Als de afbeelding dezelfde levenscyclus heeft als de pagina, gebruikt u de component Afbeelding.
+* Als de afbeelding dezelfde levenscyclus heeft als de pagina, gebruikt u de component Image.
 * Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding twee keer of buiten WCM gebruikt, gebruikt u [!DNL Assets].
 
 ## Wat zijn digitale middelen? {#what-are-digital-assets}
@@ -67,11 +67,11 @@ Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de v
 
 * **Uitvoeringen**: Een vertoning is de binaire representatie van een element. [!DNL Assets] altijd een primaire representatie hebben, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
-* **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in Elementen](manage-assets.md#asset-versioning).
+* **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in [!DNL Assets]](manage-assets.md#asset-versioning).
 
 * **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een  [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets] kunt u subelementen op dezelfde manier beheren als elementen.
 
-### Werken met elementen {#how-to-work-with-assets}
+### Werken met digitale elementen {#how-to-work-with-assets}
 
 U voert een actie op een middel of een inzameling uit. Met handelingen kunt u elementen, verzamelingen en uitvoeringen maken of wijzigen. Veel van de basishandelingen die u uitvoert op elementen - uploaden, verwijderen, bijwerken, opslaan van subelementen - activeren vooraf geconfigureerde workflows. Deze worden automatisch ingeschakeld in [!DNL Assets] en worden gedetailleerd beschreven in [!DNL Assets] media managers.
 
@@ -82,8 +82,13 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 * Uitvoeringen en miniaturen genereren voor het element; inclusief, waar nodig, automatisch vergroten/verkleinen en uitsnijden.
 * Transcodeer het element waar nodig. Zo wordt video voor mobiel gebruik en webgebruik getranscodeerd met 24 frames per seconde. Download video met 30 frames per seconde. Audio voor mobiel en webgebruik wordt getranscodeerd met 128 Kbps, audio voor downloaden met 192 Kbps.
 
-Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Handlers](/help/assets/media-handlers.md)voor een lijst met standaardworkflows.
+Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Handlers](media-handlers.md)voor een lijst met standaardworkflows.
 
-## [!DNL Experience Manager Assets] en  [!DNL MediaLibrary] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] en  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Zie [Middelen en MediaLibrary](/help/assets/medialibrary.md) voor informatie over de verschillen.
+Zie [Middelen en Mediabibliotheek](medialibrary.md) voor informatie over de verschillen.
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets als moderne DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+

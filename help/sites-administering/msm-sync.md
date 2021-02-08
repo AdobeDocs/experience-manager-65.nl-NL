@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 3b64b1fe5d47f115681608f38e7e53d078c4698e
+source-git-commit: 31f546400f4c3335953d05b1df9394445b5feb56
 workflow-type: tm+mt
-source-wordcount: '2673'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Voer de volgende taken uit om te controleren hoe en wanneer de levende exemplare
 ## Geïnstalleerde en Aangepaste rollout Configuraties {#installed-and-custom-rollout-configurations}
 
 Deze sectie verstrekt informatie over de geïnstalleerde rollout configuraties en de synchronisatieacties die zij gebruiken, en hoe te om douaneconfiguraties tot stand te brengen indien vereist.
+
+>[!CAUTION]
+>
+>Het bijwerken van of het veranderen van een uit de doos (geïnstalleerde) rollout configuratie is **niet** geadviseerd. Als er een vereiste voor een douanelevende actie is dan zou het in een aangepaste rollout configuratie moeten worden toegevoegd.
 
 ### Uitroltriggers {#rollout-triggers}
 

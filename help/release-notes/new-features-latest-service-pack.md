@@ -4,9 +4,9 @@ description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 65a92d86a34ea7796f515178622332d6fbe31a39
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,10 @@ U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerking
 ### Beschikbaarheid van de Optie van het Terugstellen voor elke component op de wijze van de Lay-out {#reset-option-layout-mode}
 
 U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen. Zie [De lay-outwijze van het gebruik resize componenten](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+
+### Ondersteuning voor Microsoft SQL Server 2019
+
+[!DNL Experience Manager Forms] ondersteunt nu Microsoft SQL Server 2019.
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 

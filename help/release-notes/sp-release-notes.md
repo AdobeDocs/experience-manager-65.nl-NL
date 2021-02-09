@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: eec0e8f466c4a228b16ee2c1249052bfc3250dec
+source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4212'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
    * De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
 
    * Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
+
+* Ondersteuning voor Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.22.5.
 

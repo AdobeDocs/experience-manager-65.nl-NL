@@ -1,34 +1,30 @@
 ---
-title: Aangepaste formulieren maken met XML-schema
-seo-title: Aangepaste formulieren maken met XML-schema
-description: Adaptieve formulieren kunnen het XML-schema als formuliermodel gebruiken, zodat u bestaande XSD-sjablonen kunt gebruiken om adaptieve formulieren te maken. U kunt schema-elementen van XSD naar het aangepaste formulier slepen.
-seo-description: Adaptieve formulieren kunnen het XML-schema als formuliermodel gebruiken, zodat u bestaande XSD-sjablonen kunt gebruiken om adaptieve formulieren te maken. U kunt schema-elementen van XSD naar het aangepaste formulier slepen.
-uuid: 84c35728-1b6c-4286-854b-51c03bfd0eac
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0d6c12b3-3a70-48e9-a83b-974360a8b0b6
-docset: aem65
+title: Hoe te om Aangepast Forms tot stand te brengen gebruikend het Schema van XML?
+description: Leer hoe u het XML-schema als formuliermodel in een adaptief formulier gebruikt. U kunt bestaande XSD-sjablonen toepassen om adaptieve formulieren te maken en schemaelementen van XSD naar het aangepaste formulier te slepen. Dig dieper in met een voorbeeld van een XML-schema, voeg speciale eigenschappen toe aan velden die gebruikmaken van het XML-schema en beperkt acceptabele waarden voor een adaptieve formuliercomponent.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 4ecf5efc568cd21f11801a71d491c3d75ca367fe
+source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1073'
 ht-degree: 1%
 
 ---
 
 
-# Aangepaste formulieren maken met XML-schema{#creating-adaptive-forms-using-xml-schema}
+# Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
 
 ## Vereisten {#prerequisites}
 
 Wanneer u een adaptief formulier maakt met een XML-schema als formuliermodel, hebt u basiskennis van XML-schema&#39;s nodig. Het wordt ook aanbevolen de volgende inhoud vóór dit artikel te lezen.
 
-* [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md)
+* [Een adaptief formulier maken](creating-adaptive-form.md)
 * [XML-schema](https://www.w3.org/TR/xmlschema-2/)
 
 ## Een XML-schema gebruiken als formuliermodel {#using-an-xml-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met een bestaand XML-schema als formuliermodel. Dit schema van XML vertegenwoordigt de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt.
+[!DNL Experience Manager Forms] ondersteunt het maken van een adaptief formulier met een bestaand XML-schema als formuliermodel. Dit schema van XML vertegenwoordigt de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt.
 
 De belangrijkste kenmerken van het gebruik van een XML-schema zijn:
 
@@ -293,7 +289,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
 
 **Hoe weet ik welk element in de structuur is gekoppeld aan welk XML-element?**
 
-Wanneer u dubbelklikt op een element in de Inhoudszoeker, worden een veldnaam en een eigenschap met de naam `bindRef` weergegeven in een pop-up. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
+Wanneer u dubbelklikt op een element in de Inhoudszoeker, wordt in een pop-upvenster een veldnaam en een eigenschap met de naam `bindRef` weergegeven. Deze eigenschap wijst het structuurelement toe aan het element of kenmerk in het schema.
 
 ![Een bindveld van een element in een XML-schema](assets/dblclick.png)
 
@@ -305,7 +301,7 @@ Het bindRef</code> gebied toont de vereniging tussen een boomelement en een elem
 
 **Waarom kan ik geen afzonderlijke elementen van een subformulier (structuur gegenereerd van een complex type) slepen voor herhaalbare subformulieren (waarden voor minOccurs of maxOccurs zijn groter dan 1)?**
 
-In een herhaalbaar subformulier moet u het volledige subformulier gebruiken. Als u alleen selectieve velden wilt, gebruikt u de volledige structuur en verwijdert u de ongewenste velden.
+In een herhaalbaar subformulier moet u het subformulier Voltooien gebruiken. Als u alleen selectieve velden wilt, gebruikt u de volledige structuur en verwijdert u de ongewenste velden.
 
 **Ik heb een lange complexe structuur in de Inhoudszoeker. Hoe kan ik een specifiek element vinden?**
 

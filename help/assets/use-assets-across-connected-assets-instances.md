@@ -3,7 +3,7 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f0d91a32caa4d3b862d852028e3bc5547aeb8015
+source-git-commit: d05dc3af0a885e51758194783e773695086d7956
 workflow-type: tm+mt
 source-wordcount: '2177'
 ht-degree: 38%
@@ -32,7 +32,7 @@ Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
    |  | [!DNL Sites] als Cloud Service | [!DNL Experience Manager] 6.5  [!DNL Sites] over AMS | [!DNL Experience Manager] 6.5  [!DNL Sites] on-premise |
    |---|---|---|---|
-   | **[!DNL Experience Manager Assets]als Cloud Service** | Ondersteund | Ondersteund | Ondersteund |
+   | **[!DNL Experience Manager Assets]als[!DNL Cloud Service]** | Ondersteund | Ondersteund | Ondersteund |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] over AMS** | Ondersteund | Ondersteund | Ondersteund |
    | **[!DNL Experience Manager]6.5  [!DNL Assets] on-premise** | Niet ondersteund | Niet ondersteund | Niet ondersteund |
 
@@ -51,7 +51,7 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 |---|---|---|---|---|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Stel [!DNL Experience Manager] in en configureer integratie met de externe [!DNL Assets]-implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | `Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) | `ksaner` | Eindgebruiker zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken naar elementen in externe DAM en bladeren door deze bestanden met [!UICONTROL Content Finder] en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met lees toegang op verre DAM en auteurstoegang op lokaal  [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau  [!DNL Sites]</li></ul> | `ksaner` | Eindgebruiker zijn [!DNL Sites] auteurs die deze integratie gebruiken om hun inhoudssnelheid te verbeteren. De auteurs zoeken naar elementen in externe DAM en bladeren door deze bestanden met [!UICONTROL Content Finder] en gebruiken de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand  [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
 | DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand  [!DNL Experience Manager] | Auteurrol bij de externe [!DNL Experience Manager]-implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
 | DAM-distributeur (technische gebruiker) | Extern | [!DNL Sites] `Authors` | `ksaner` op afstand  [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door de lokale server [!DNL Experience Manager] (niet de auteur-rol [!DNL Sites]) om de externe middelen op te halen, namens de auteur [!DNL Sites]. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
@@ -124,7 +124,7 @@ Alleen die tags met externe elementen worden opgehaald die een exact overeenkome
 Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervaring beter te begrijpen. Gebruik documenten of afbeeldingen van uw keuze op de externe DAM-implementatie.
 
 1. Navigeer naar de [!DNL Assets]-interface op de externe implementatie door **[!UICONTROL Assets]** > **[!UICONTROL Files]** vanuit [!DNL Experience Manager]-werkruimte te openen. U kunt `https://[assets_servername_ams]:[port]/assets.html/content/dam` ook in een browser openen. Upload de assets van uw keuze.
-1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de &lt;a0/>-implementatie. **[!UICONTROL Impersonate as]** Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
+1. Klik op [!DNL Sites] in de profielactivator rechtsboven in de **[!UICONTROL Impersonate as]**-implementatie. Geef `ksaner` op als gebruikersnaam, selecteer de opgegeven optie en klik op **[!UICONTROL OK]**.
 1. Open een websitepagina van het type Web.Retail op **[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**. Bewerk de pagina. U kunt `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` ook in een browser openen om een pagina te bewerken.
 
    Klik op **[!UICONTROL Toggle Side Panel]** in de linkerbovenhoek van de pagina.

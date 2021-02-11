@@ -2,9 +2,9 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
 translation-type: tm+mt
-source-git-commit: 7d40fbfb55755d815a11b1872c41dd8e1a0e1ffd
+source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
 workflow-type: tm+mt
-source-wordcount: '4114'
+source-wordcount: '4170'
 ht-degree: 0%
 
 ---
@@ -356,6 +356,10 @@ U kunt de overerving van live kopieën voor een live kopieerpagina opschorten, z
 >
 >U kunt ook [een live kopie](#detaching-a-live-copy) loskoppelen van de blauwdruk om alle verbindingen te verwijderen. De handeling Loskoppelen is permanent en niet-omkeerbaar.
 
+>[!NOTE]
+>
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
+
 #### Overerving van pagina-eigenschappen opheffen {#suspending-inheritance-from-page-properties}
 
 Overerving op een pagina opschorten:
@@ -459,6 +463,10 @@ De diepte opgeven of wijzigen:
 ### Overerving voor een component {#cancelling-inheritance-for-a-component} annuleren
 
 Annuleer de overerving van de live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+
+>[!NOTE]
+>
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
 
 >[!NOTE]
 >

@@ -1,36 +1,32 @@
 ---
-title: Aangepaste formulieren maken met JSON-schema
-seo-title: Aangepaste formulieren maken met JSON-schema
-description: Adaptieve formulieren kunnen het JSON-schema als formuliermodel gebruiken, zodat u bestaande JSON-schema's kunt gebruiken om adaptieve formulieren te maken.
-seo-description: Adaptieve formulieren kunnen het JSON-schema als formuliermodel gebruiken, zodat u bestaande JSON-schema's kunt gebruiken om adaptieve formulieren te maken.
-uuid: bdeaeae8-65a3-4c46-b27d-fe68481e31f1
-topic-tags: develop
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 375ba8fc-3152-4564-aec5-fcff2a95cf4c
-docset: aem65
+title: Hoe maakt u een adaptieve Forms met JSON-schema?
+description: Leer hoe u adaptieve formulieren maakt met JSON-schema als formuliermodel. U kunt bestaande JSON-schema's gebruiken om adaptieve formulieren te maken. Dig dieper met een voorbeeld van een JSON-schema, configureer velden vooraf in JSON-schemadefinitie, beperk acceptabele waarden voor een adaptieve formuliercomponent en leer niet-ondersteunde constructies.
+feature: Adaptive Forms
+role: Business Practitioner, Developers
+level: Beginner, Imtermediate
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 37ab98c9c78af452887c32101287b6d7f18d9d91
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1448'
 ht-degree: 2%
 
 ---
 
 
-# Aangepaste formulieren maken met JSON-schema{#creating-adaptive-forms-using-json-schema}
+# Aangepaste formulieren maken met JSON-schema {#creating-adaptive-forms-using-json-schema}
 
 ## Vereisten {#prerequisites}
 
 Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als formuliermodel is basiskennis van JSON-schema vereist. Het wordt aanbevolen de volgende inhoud vóór dit artikel te lezen.
 
-* [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md)
+* [Een adaptief formulier maken](creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
 ## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan [v4-specificaties](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms] ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan [v4-specificaties](https://json-schema.org/draft-04/schema).
 
-De belangrijkste kenmerken van het gebruik van een JSON-schema zijn:
+De belangrijkste eigenschappen van het gebruiken van een Schema JSON zijn:
 
 * De structuur van JSON wordt als een structuur weergegeven op het tabblad Inhoudszoeker in de ontwerpmodus voor een adaptief formulier. U kunt elementen slepen van de JSON-hiërarchie naar het aangepaste formulier.
 * U kunt het formulier vooraf invullen met JSON dat voldoet aan het bijbehorende schema.
@@ -82,7 +78,7 @@ Deze toewijzing van JSON-elementen met adaptieve formuliercomponenten is als vol
     </ul> </td>
   </tr>
   <tr>
-   <td><p>{</p> <p>"type": "string",</p> <p>}</p> </td>
+   <td><p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>}</code></p> </td>
    <td><br /> <br /> Tekstveld<br /> <br /> <br /> </td>
   </tr>
   <tr>
@@ -112,16 +108,16 @@ Deze toewijzing van JSON-elementen met adaptieve formuliercomponenten is als vol
 
 Het adaptieve formulier gebruikt informatie die beschikbaar is in het JSON-schema om elk gegenereerd veld in kaart te brengen. Met name:
 
-* De eigenschap title fungeert als label voor de adaptieve formuliercomponenten.
-* De eigenschap description wordt ingesteld als lange beschrijving voor een adaptieve formuliercomponent.
-* De standaardeigenschap fungeert als de beginwaarde van een adaptief formulierveld.
-* De eigenschap maxLength wordt ingesteld als het kenmerk maxlength van de tekstveldcomponent.
-* De eigenschappen minimum, maximum, ExclusiveMinimum en ExclusiveMaximum worden gebruikt voor de component Numeric box.
-* Als u een bereik voor de component DatePicker wilt ondersteunen, worden aanvullende JSON-schemaeigenschappen minDate en maxDate opgegeven.
-* De eigenschappen minItems en maxItems worden gebruikt om het aantal items/velden te beperken dat kan worden toegevoegd aan of verwijderd uit een deelvenstercomponent.
-* Met de eigenschap readOnly wordt het kenmerk Alleen-lezen van een adaptieve formuliercomponent ingesteld.
-* De vereiste eigenschap markeert het adaptieve formulierveld als verplicht, terwijl in het geval van een paneel (waarbij type object is) de uiteindelijke JSON-gegevens velden hebben met een lege waarde die overeenkomt met dat object.
-* De eigenschap pattern wordt ingesteld als het validatiepatroon (reguliere expressie) in adaptieve vorm.
+* De eigenschap `title` fungeert als label voor de adaptieve formuliercomponenten.
+* De eigenschap `description` wordt ingesteld als lange beschrijving voor een adaptieve formuliercomponent.
+* De eigenschap `default` dient als beginwaarde van een adaptief formulierveld.
+* De eigenschap `maxLength` wordt ingesteld als `maxlength`-kenmerk van de tekstveldcomponent.
+* De eigenschappen `minimum`, `maximum`, `exclusiveMinimum` en `exclusiveMaximum` worden gebruikt voor de component Numeric box.
+* Als u een bereik voor `DatePicker component` wilt ondersteunen, worden extra JSON-schemaeigenschappen `minDate` en `maxDate` opgegeven.
+* De eigenschappen `minItems` en `maxItems` worden gebruikt om het aantal punten/gebieden te beperken die uit een paneelcomponent kunnen worden toegevoegd of worden verwijderd.
+* Met de eigenschap `readOnly` wordt het kenmerk `readonly` van een adaptieve formuliercomponent ingesteld.
+* De eigenschap `required` markeert het adaptieve formulierveld als verplicht, terwijl in het paneel (waar type object is) de uiteindelijke JSON-gegevens velden hebben met een lege waarde die overeenkomt met dat object.
+* De eigenschap `pattern` wordt ingesteld als het validatiepatroon (reguliere expressie) in adaptieve vorm.
 * De extensie van het JSON-schemabestand moet .schema.json blijven. Bijvoorbeeld &lt;filename>.schema.json.
 
 ## Voorbeeld JSON-schema {#sample-json-schema}
@@ -361,7 +357,7 @@ Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configu
 
 ## Scripts of expressies configureren voor formulierobjecten {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt formulierobjecten vooraf configureren om een expressie[ op een formuliergebeurtenis te evalueren.](../../forms/using/adaptive-form-expressions.md)
+JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt formulierobjecten vooraf configureren om een expressie](adaptive-form-expressions.md) op een formuliergebeurtenis te evalueren.[
 
 Met de eigenschap aaem:afproperties kunt u aangepaste formulierexpressies of scripts vooraf configureren voor adaptieve formuliercomponenten. Wanneer bijvoorbeeld de gebeurtenis initialize wordt geactiveerd, stelt de onderstaande code de waarde van het telefoonveld in en drukt een waarde af op het logbestand:
 
@@ -381,7 +377,7 @@ Met de eigenschap aaem:afproperties kunt u aangepaste formulierexpressies of scr
 }
 ```
 
-U zou lid van [vormen-macht-gebruikersgroep](/help/forms/using/forms-groups-privileges-tasks.md) moeten zijn om manuscripten of uitdrukkingen voor vormvoorwerp te vormen. In de onderstaande tabel staan alle scriptgebeurtenissen die worden ondersteund voor een adaptieve formuliercomponent.
+U zou lid van [vormen-macht-gebruikersgroep](forms-groups-privileges-tasks.md) moeten zijn om manuscripten of uitdrukkingen voor vormvoorwerp te vormen. In de onderstaande tabel staan alle scriptgebeurtenissen die worden ondersteund voor een adaptieve formuliercomponent.
 
 <table>
  <tbody>
@@ -586,9 +582,9 @@ U zou lid van [vormen-macht-gebruikersgroep](/help/forms/using/forms-groups-priv
  </tbody>
 </table>
 
-Sommige voorbeelden van het gebruik van gebeurtenissen in een JSON verbergen een gebied bij initialize gebeurtenis en vormen waarde van een ander gebied bij waarde begaan gebeurtenis. Zie [Adaptieve formulierexpressies](../../forms/using/adaptive-form-expressions.md) voor gedetailleerde informatie over het maken van expressies voor scriptgebeurtenissen.
+Sommige voorbeelden van het gebruik van gebeurtenissen in een JSON verbergen een gebied bij initialize gebeurtenis en vormen waarde van een ander gebied bij waarde begaan gebeurtenis. Zie [Adaptieve formulierexpressies](adaptive-form-expressions.md) voor gedetailleerde informatie over het maken van expressies voor scriptgebeurtenissen.
 
-Hier volgt een voorbeeld van de JSON-code voor bovengenoemde voorbeelden.
+Hier volgt een voorbeeld van de JSON-code voor eerder vermelde voorbeelden.
 
 ### Veld verbergen bij initialisatiegebeurtenis {#hiding-a-field-on-initialize-event}
 
@@ -711,13 +707,13 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
     </ul> </td>
   </tr>
   <tr>
-   <td>maxItems</td>
+   <td><code>maxItems</code></td>
    <td>Tekenreeks</td>
    <td>Geeft het maximale aantal items in een array op. De maximale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>minItems</td>
+   <td><code>minItems</code></td>
    <td>Tekenreeks</td>
    <td>Geeft het minimale aantal items in een array op. De minimale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>

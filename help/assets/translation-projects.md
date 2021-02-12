@@ -3,9 +3,9 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1741'
 ht-degree: 10%
 
 ---
@@ -19,13 +19,11 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 
 * **Taalkopieën** bijwerken: Voer deze workflow uit om een extra groep elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat.
 
->[!NOTE]
+>[!PREREQUISITES]
 >
->De binaire boeken van activa worden vertaald slechts als de vertaaldienstverlener de vertaling van binaire getallen steunt.
+>* Gebruikers die vertaalprojecten maken, zijn lid van de groep `projects-administrators`.
+>* De vertaaldienstverlener steunt de vertaling van binaire getallen.
 
->[!NOTE]
->
->Als u een vertaalworkflow start voor complexe elementen, zoals PDF- en [!DNL Adobe InDesign]-bestanden, worden de subelementen of vertoningen (indien aanwezig) van die elementen niet verzonden voor vertaling.
 
 ## Workflow {#create-and-translate-workflow} maken en vertalen
 
@@ -40,17 +38,14 @@ Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal e
 Gebruik de optie **[!UICONTROL Create structure only]** om een hiërarchie van de doelmap binnen de hoofdmap van de doeltaal te maken die overeenkomt met de hiërarchie van de bronmap in de hoofdmap van de brontaal. In dit geval worden bronassets naar de doelmap gekopieerd. Er wordt echter geen vertaalproject gegenereerd.
 
 1. Selecteer in de interface [!DNL Assets] de bronmap waarvoor u een structuur in de hoofdmap van de doeltaal wilt maken.
+
 1. Open het venster **[!UICONTROL References]** en klik **[!UICONTROL Language Copies]** onder **[!UICONTROL Copies]**.
 
-   ![chlimage_1-57](assets/chlimage_1-57.png)
+   ![Taalkopieën](assets/translation-language-copies.png)
 
-1. Klik **[!UICONTROL Create & Translate]** bij de bodem.
-
-1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal waarvoor u een mapstructuur wilt maken.
+1. Klik op **[!UICONTROL Create & Translate]**. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal waarvoor u een mapstructuur wilt maken.
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
-
-   ![chlimage_1-60](assets/chlimage_1-60.png)
 
 1. Klik op **[!UICONTROL Create]**. De nieuwe structuur voor de doeltaal wordt vermeld onder **[!UICONTROL Language Copies]**.
 
@@ -109,7 +104,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    Zie [De status van een vertaaltaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job) voor meer informatie over de taakstatus.
 
-1. Navigeer naar de interface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Navigeer naar de [!DNL Assets] gebruikersinterface en open de [!UICONTROL Properties] pagina voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
    ![de vertaalde metagegevens weergeven op de pagina met eigenschappen van elementen](assets/translated-metadata-asset-properties.png)
 
@@ -131,8 +126,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
 
 1. Selecteer in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]** om de vertaalworkflow in de map uit te voeren.
-
-   ![chlimage_1-77](assets/chlimage_1-77.png)
 
    >[!NOTE]
    >
@@ -157,10 +150,6 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
    >[!NOTE]
    >
-   >Als u Machine Translation gebruikt, worden binaire bestanden met elementen niet vertaald.
-
-   >[!NOTE]
-   >
    >Als het element dat u toevoegt aan de vertaaltaak subelementen bevat, selecteert u de subelementen en verwijdert u deze zodat de vertaling zonder scheuren kan worden uitgevoerd.
 
 1. Als u de vertaling voor de elementen wilt starten, klikt u op de pijl op de **[!UICONTROL Translation Job]**-tegel en selecteert u **[!UICONTROL Start]** in de lijst.
@@ -175,7 +164,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
    Zie [De status van een vertaaltaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job) voor meer informatie.
 
-1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de interface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de gebruikersinterface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
 ## Taalkopieën {#update-language-copies} bijwerken
 
@@ -197,8 +186,6 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 1. Klik **[!UICONTROL Update language copies]** bij de bodem.
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create a new translation project]**.
-
-   ![chlimage_1-86](assets/chlimage_1-86.png)
 
 1. Voer in het veld **[!UICONTROL Project Title]** een titel in voor het project.
 
@@ -227,7 +214,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    Zie [De status van een vertaaltaak controleren](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job) voor meer informatie over de taakstatus.
 
-1. Navigeer naar de gebruikersinterface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Navigeer naar de gebruikersinterface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
 ### Toevoegen aan bestaand vertaalproject {#add-to-existing-translation-project-1}
 
@@ -273,13 +260,13 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
 
    >[!NOTE]
    >
-   >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
+   >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen de doelelementen bij te werken.
 
    Klik op **[!UICONTROL Reject Translation]** ![Vertaling negeren](assets/do-not-localize/thumb-down.png) om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
 1. Als u de vertaalde metagegevens wilt weergeven, navigeert u naar de [!DNL Assets]-console en opent u de pagina [!UICONTROL Properties] voor elk van de vertaalde elementen.
 
->[!MORELIKETHIS]
->
->* [Tips om metagegevens](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/) efficiënt te vertalen.
+## Tips en beperkingen {#tips-limitations}
 
+* Als u een vertaalworkflow start voor complexe elementen, zoals PDF- en [!DNL Adobe InDesign]-bestanden, worden de subelementen of vertoningen (indien aanwezig) van die elementen niet verzonden voor vertaling.
+* Als u automatische vertaling gebruikt, worden de binaire bestanden met elementen niet vertaald.

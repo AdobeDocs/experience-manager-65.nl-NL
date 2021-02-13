@@ -3,9 +3,9 @@ title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2105'
 ht-degree: 0%
 
 ---
@@ -268,7 +268,7 @@ Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendo
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Maak een actie End door te klikken op **Edit** in het gebied End van het formulier. U kunt bijvoorbeeld een knop **Verzenden** maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. Naar keuze, kunt u **Terugstellen** knoop toevoegen die de meta-gegevens aan zijn originele staat terugstelt.
+1. Maak een actie End door te klikken op **Edit** in het gebied End van het formulier. U kunt bijvoorbeeld een optie **[!UICONTROL Submit]** maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. U kunt desgewenst een optie **Herstellen** toevoegen waarmee de metagegevens worden teruggezet naar de oorspronkelijke staat.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
@@ -381,7 +381,7 @@ De volgende acties zijn beschikbaar:
 | [!UICONTROL References] | Klik hierop om te tonen op welke pagina&#39;s   het actief wordt gebruikt. |
 | [!UICONTROL Versioning] | Hiermee kunt u bestanden maken en herstellen   versies van een element. |
 
-1. Sleep de aangewezen actie aan **Acties** gebied op de pagina. Als u dit doet, wordt een knop gemaakt waarmee die handeling wordt uitgevoerd.
+1. Sleep de aangewezen actie aan **Acties** gebied op de pagina. Er wordt een optie gemaakt waarmee de handeling wordt uitgevoerd die op de pagina wordt gesleept.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 

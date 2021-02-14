@@ -3,9 +3,9 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1574'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Nadat een tag is opgeleid en gereed, kan de service deze tags nu toepassen op el
 
 Op de achtergrond gebruikt de Smart Content Service het Adobe Sensei AI-framework om het algoritme voor imageherkenning op te leiden voor uw tagstructuur en bedrijfskatonomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
-Smart Content Service is een cloudservice die wordt gehost op [!DNL Adobe I/O]. Om het in [!DNL Adobe Experience Manager] te gebruiken, moet de systeembeheerder uw [!DNL Experience Manager] plaatsing met [!DNL Adobe I/O] integreren.
+Smart Content Service is een cloudservice die wordt gehost op [!DNL Adobe Developer Console]. Om het in [!DNL Adobe Experience Manager] te gebruiken, moet de systeembeheerder uw [!DNL Experience Manager] plaatsing met [!DNL Adobe Developer Console] integreren.
 
 Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inhoud te gebruiken:
 
@@ -36,13 +36,40 @@ Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inho
 
 ![Stroomdiagram](assets/flowchart.gif)
 
-## Vereisten {#prerequisites}
+## Vereisten en ondersteunde indelingen {#prerequisites}
 
-Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie te maken op [!DNL Adobe I/O]:
+Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie te maken op [!DNL Adobe Developer Console]:
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie.
 * De service Smart Content Service is ingeschakeld voor uw organisatie.
 * Het pakket Smart Content Services Base mag alleen worden toegevoegd aan een implementatie waarbij een [!DNL Adobe Experience Manager Sites] Base Package en [!DNL Assets] add-on zijn gelicentieerd.
+
+Slimme tags worden alleen toegepast op elementen met de volgende MIME-typen:
+
+* image/jpeg
+* image/tiff
+* image/png
+* image/bmp
+* image/gif
+* image/pjpeg
+* image/x-portable-anymap
+* image/x-portable-bitmap
+* image/x-portable-graymap
+* image/x-portable-pixmap
+* image/x-rgb
+* image/x-xbitmap
+* image/x-xpixmap
+* image/x-icon
+* image/photoshop
+* image/x-photoshop
+* image/psd
+* image/vnd.adobe.photoshop
+
+Slimme tags toepassen van elementuitvoeringen wordt alleen ondersteund voor de volgende MIME-typen:
+
+* image/jpeg
+* image/pjpeg
+* image/png
 
 ## Onboarding {#onboarding}
 
@@ -162,3 +189,4 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 
 * Het gebruik van Smart Content Services is beperkt tot maximaal 2 miljoen getagde afbeeldingen per jaar. Alle gedupliceerde afbeeldingen die zijn verwerkt en getagd, worden allemaal geteld als een gecodeerde afbeelding.
 * Als u de labelworkflow uitvoert vanuit de tijdlijn, kunt u tags toepassen op maximaal 15 elementen tegelijk.
+* Slimme tags werken alleen voor PNG- en JPG-afbeeldingsindelingen. Dus ondersteunde elementen met uitvoeringen die in deze twee indelingen zijn gemaakt, worden gelabeld met slimme tags.

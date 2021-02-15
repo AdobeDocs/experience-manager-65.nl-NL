@@ -3,7 +3,7 @@ title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u JavaScript-codes in uw websitecode kunt opnemen in Paginanummering en hoe u JavaScript-codes kunt insluiten om Adobe Analytics in staat te stellen gebruiksgegevens vast te leggen rond elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c1362c2c1f32d02d36d2067e0e74d927ddbc1554
+source-git-commit: fc433851c24f9049e7ba6dfada24d6e552eb6d05
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -23,13 +23,13 @@ De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanu
 <!DOCTYPE html>
 <html>
     <head>
-            <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/sitecatalyst/appmeasurement.js"></script>
-            <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/assetinsights/pagetracker.js"></script>
             <script type="text/javascript">
                                 assetAnalytics.attrTrackable = 'trackable';
                 assetAnalytics.defaultTrackable = false;
                 assetAnalytics.attrAssetID = 'aem-asset-id';
-                assetAnalytics.assetImpressionPollInterval = 200; // interval in millis
+                assetAnalytics.assetImpressionPollInterval = 200; // interval in milliseconds
                 assetAnalytics.charsLimitForGET = 2000; // bytes
                 assetAnalytics.dispatcher.init("assetstesting","xxxx","xxx","list1","eVar3","event8","event7");
             </script>
@@ -65,8 +65,8 @@ U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecod
 
 ```xml
  <head>
-            <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/sitecatalyst/appmeasurement.js"></script>
-            <script type="text/javascript" src="http://localhost:4502/xxxx/etc/clientlibs/foundation/assetinsights/pagetracker.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/sitecatalyst/appmeasurement.js"></script>
+            <script type="text/javascript" src="http://localhost:4502/xxxx/etc.clientlibs/dam/clientlibs/foundation/assetinsights/pagetracker.js"></script>
             <script type="text/javascript">
                                 assetAnalytics.attrTrackable = 'trackable';
                 assetAnalytics.defaultTrackable = false;

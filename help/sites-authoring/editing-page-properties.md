@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ea39bb870fd20f7e30afc2c4f5bceb2fe6427848
+source-git-commit: 7fed51b68c626b54565b9120f69229872946016f
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1883'
 ht-degree: 4%
 
 ---
@@ -53,6 +53,14 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
 
+* **Branding**
+
+   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de paginacomponent vanaf versie 2.14.0 of hoger van de [kerncomponenten vereist.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **Overschrijven**  - Schakel deze optie in om de witruimte op deze pagina te definiëren.
+      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij de waarden **Override** zijn ingesteld.
+   * **Waarde**  overschrijven - De tekst van de gloedmarkering die aan de paginatitel moet worden toegevoegd.
+      * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
 * **Paginatitel**
 
    Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
@@ -71,7 +79,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 

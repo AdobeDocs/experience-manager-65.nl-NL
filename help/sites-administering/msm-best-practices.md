@@ -10,9 +10,9 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: cacf15a4e9c407d86aef47d7a6dda19e8eda7fb7
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 0%
 MSM is een configureerbaar framework voor het automatiseren van de implementatie van inhoud. Bij implementaties gaat het vaak om grote delen van een website en meerdere organisaties en geografische gebieden. Daarom wordt u ten zeerste aangeraden MSM-implementaties net zo zorgvuldig te plannen als uw website:
 
 * **Plan de structuur en inhoudsstromen** zorgvuldig voordat u de implementatie start.
+* **Houd de hoeveelheid levende exemplaren tot een minimum.** Het verwerken van live kopieën is een hulpbronnenintensieve taak. Hoe meer live kopieën er in uw systeem zijn, des te groter de invloed op de prestaties: van het verwerken van interne levende exemplaarindexen, over levende exemplaarverrichtingen zoals rollouts, aan verrichtingen UI zoals het tonen van levende exemplaarverhoudingen in Sites Admin verwijzingen spoorstaaf. De beste manier is om live kopieën te maken van sites of vertakkingen van een site, waarbij de live-kopieerrelaties worden overgeërfd op pagina&#39;s in de site of vertakking. Vermijd het maken van individuele live kopieën voor pagina&#39;s in een site of vertakking wanneer de volledige structuur in een live kopie kan worden gemaakt.
 * **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
 * Stel een **governance** model vroeg in en geef gebruikers de juiste training om succes te garanderen. Een beste manier vanuit bestuurlijk oogpunt is om de autoriteit die lokale inhoudsproducenten hebben, tot een minimum te beperken.**om inhoud toe te wijzen aan/te verbinden met andere lokale gebruikers en hun respectievelijke live kopieën.** Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 

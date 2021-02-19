@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase. Adobe raadt
 
 ## Aanvraagsessie {#use-request-session} gebruiken
 
-Volgens het beginsel van bevoegdheden op het gebied van gegevensopslag, raadt Adobe aan dat elke toegang tot de gegevensopslagruimte wordt uitgevoerd door gebruik te maken van de sessie die is gebonden aan het verzoek van de gebruiker en het juiste toegangsbeheer.
+Volgens het beginsel van minste privileges raadt Adobe aan dat elke opslagplaats toegang krijgt door de sessie te gebruiken die gebonden is aan de gebruikersaanvraag en een juiste toegangscontrole.
 
 ## Protect tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
 

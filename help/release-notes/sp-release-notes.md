@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 349568af561ca170ee000fbb0d1b40d3470ebe98
 workflow-type: tm+mt
-source-wordcount: '4212'
+source-wordcount: '4165'
 ht-degree: 0%
 
 ---
@@ -467,8 +467,6 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 | Connectors | De Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013 is vervangen door AEM 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}
-
-* Als u problemen ondervindt in [!DNL Experience Manager] reactie vanwege vergrendelde timer voor componentregistratie, [installeert u dit pakket](https://mvnrepository.com/artifact/org.apache.felix/org.apache.felix.scr/2.1.20). De oplossing voor deze problemen wordt opgenomen in de volgende [release Service Pack-Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=en#aem-on-prem-managed-services).
 
 * Negeer de volgende fouten in het `error.log` dossier tijdens de installatie van Experience Manager 6.5.7.0:
 

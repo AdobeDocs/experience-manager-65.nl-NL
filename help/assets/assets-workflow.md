@@ -3,9 +3,9 @@ title: Elementen verwerken met behulp van workflows
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '924'
 ht-degree: 3%
 
 ---
@@ -106,5 +106,4 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 >* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
 >* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
 >* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
->* [Communautair artikel over het wijzigen van elementen met behulp van workflow](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
 

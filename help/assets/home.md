@@ -3,9 +3,9 @@ title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 user-guide-title: Hulplijn voor middelen
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '321'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,6 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 <!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
 -->
 
-* [Aan de slag met Experience Manager](https://helpx.adobe.com/experience-manager/get-started.html)
 * [Opmerkingen bij de release Experience Manager 6.5](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md)
@@ -44,9 +43,9 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 
 ## Belangrijke [!DNL Experience Manager] bronnen
 
-* [Experience Manager Video Tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html#Assets)
+* [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Forum Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
 * [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)

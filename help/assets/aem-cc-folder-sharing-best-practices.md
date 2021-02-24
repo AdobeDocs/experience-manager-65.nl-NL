@@ -3,9 +3,9 @@ title: Mappen delen naar  [!DNL Adobe Creative Cloud] aanbevolen werkwijzen
 description: Configureer [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] om mappen uit te wisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie [!DNL Experience Manager] tot [!DNL Creative Cloud] Mappen delen is vervangen. Adobe raadt u ten zeerste aan nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Leer meer in [Experience Manager en de integratie van de Creative Cloud beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
+>De functie [!DNL Experience Manager] tot [!DNL Creative Cloud] Mappen delen is vervangen. Adobe raadt u ten zeerste aan nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) of [Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Leer meer in [Experience Manager en de integratie van de Creative Cloud beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
 
 [!DNL Adobe Experience Manager] Kan zo worden geconfigureerd dat gebruikers in  [!DNL Assets] de app mappen kunnen delen met de gebruikers van  [!DNL Adobe Creative Cloud] apps, zodat ze beschikbaar zijn als gedeelde mappen in de  [!DNL Adobe Creative Cloud] elementenservice. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en [!DNL Assets]-gebruikers, vooral wanneer creatieve gebruikers geen toegang hebben tot de [!DNL Assets]-implementatie (ze bevinden zich niet op het bedrijfsnetwerk).
 

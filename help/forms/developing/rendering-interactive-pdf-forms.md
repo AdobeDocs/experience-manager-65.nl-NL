@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2528'
 ht-degree: 0%
 
 ---
 
 
 # Interactieve PDF forms renderen {#rendering-interactive-pdf-forms}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 De Forms-service rendert interactieve PDF forms naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Nadat een interactief formulier is gegenereerd, kan een gebruiker gegevens invoeren in formuliervelden en op een verzendknop op het formulier klikken om informatie terug te sturen naar de Forms-service. Een interactief PDF-formulier is alleen zichtbaar als Adobe Reader of Acrobat is geïnstalleerd op de computer die als host fungeert voor de webbrowser van de client.
 
@@ -53,7 +55,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>Nadat de gebruiker het leningformulier heeft ingevuld en op de verzendknop klikt, worden de gegevens verzonden naar de Java Server. <code>HandleData</code> (Zie <i>"Vormgeving van leningen"</i>.)</p></td>
+   <td><p>Nadat de gebruiker het leningsformulier heeft ingevuld en op de verzendknop klikt, worden de gegevens verzonden naar de Java Server. <code>HandleData</code> (Zie <i>"Vormgeving van leningen"</i>.)</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
@@ -168,9 +170,9 @@ U kunt bestanden aan een formulier koppelen. Wanneer u een PDF-formulier met bes
 
 **Een interactief PDF-formulier renderen**
 
-Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat met Acrobat is gemaakt en als PDF-bestand is opgeslagen. Als u een interactief PDF-formulier wilt genereren, roept u de methode `FormsServiceClient` of `renderPDFForm` van het object aan.`renderPDFForm2`
+Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat met Acrobat is gemaakt en als PDF-bestand is opgeslagen. Als u een interactief PDF-formulier wilt genereren, roept u de methode `renderPDFForm` of `renderPDFForm2` van het object aan.`FormsServiceClient`
 
-`renderPDFForm` gebruikt een `URLSpec` voorwerp. De inhoudsbasis wordt aan het XDP-bestand doorgegeven aan de Forms-service met behulp van de methode `URLSpec` van het object. `setContentRootURI` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
+`renderPDFForm` gebruikt een `URLSpec` voorwerp. De inhoudsbasis wordt aan het XDP-bestand doorgegeven aan de Forms-service met behulp van de methode `setContentRootURI` van het object. `URLSpec` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
 
 De methode `renderPDFForm2` accepteert een `com.adobe.idp.Document`-instantie die het XDP- of PDF-document bevat dat moet worden gerenderd.
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: b4795930c87fa30d7c7ab60a50bc6f40da4f97d2
 workflow-type: tm+mt
-source-wordcount: '6355'
+source-wordcount: '6418'
 ht-degree: 1%
 
 ---
@@ -19,11 +19,15 @@ ht-degree: 1%
 
 # Programmatiek {#using-aem-document-services-programmatically} AEM Document Services gebruiken
 
-Clientklassen die zijn vereist om Maven Projecten te bouwen met AEM Document Services zijn beschikbaar in de [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar. Voor informatie rond gemaakte projecten, zie [hoe te om uw AEM te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
+De steekproeven en de voorbeelden in dit document helpen u begrijpen en gebruiken AEM de Diensten van het Document op een AEM Forms op milieu OSGi. Zie [Programmeren met AEM Forms op JEE](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=en#programming-aem-forms-jee) voor voorbeelden en voorbeelden voor AEM Forms op JEE-omgeving.
 
->[!NOTE]
->
->Alvorens de dienst DocAssurance APIs te gebruiken, [vorm de dienst DocAssurance](/help/forms/using/install-configure-document-services.md).
+## Vereiste {#prerequisite}
+
+* Alvorens de dienst DocAssurance APIs te gebruiken, [vorm de dienst DocAssurance](/help/forms/using/install-configure-document-services.md).
+
+* Download en configureer [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) samen met u AEM toegewezen project. De cliëntklassen die worden vereist om Geweven Projecten te bouwen gebruikend AEM de Diensten van het Document zijn beschikbaar in [AEM Forms Cliënt SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+
+* Leer [hoe u uw AEM project bouwt met Maven](/help/sites-developing/ht-projects-maven.md)
 
 ## DocAssurance Service {#docassurance-service}
 
@@ -1337,7 +1341,7 @@ public class Certify {
 
 ### Documenten {#securing-documents} beveiligen
 
-Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null wordt aangenomen dat de specifieke verwerking niet vereist is.
+Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null, wordt aangenomen dat de specifieke verwerking niet vereist is.
 
 **PDF-documenten versleutelen met een wachtwoord**
 

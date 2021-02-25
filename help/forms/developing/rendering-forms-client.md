@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
 
 
 # Forms renderen op de client {#rendering-forms-at-the-client}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 ## Forms renderen op de client {#rendering-forms-at-the-client-inner}
 
@@ -63,7 +65,7 @@ U kunt Designer gebruiken om een eenvoudig dynamisch PDF-bestand te maken dat u 
 
 >[!NOTE]
 >
->U hoeft de optie PDF-runtime voor het genereren van een formulier op de client niet te definiëren. Als u geen PDF-bestand voor een zaadbestand opgeeft, maakt de Forms-service een shell-pdf die geen COS-objecten bevat maar wel een PDF-omslag met daarin de daadwerkelijke XDP-inhoud ingesloten. Met de stappen in deze sectie wordt de optie voor het uitvoeren van de PDF-zaadbewerking niet ingesteld. Zie de handleiding Adobe PDF Reference voor informatie over COS-objecten.
+>U hoeft de optie PDF-runtime voor het genereren van een formulier op de client niet te definiëren. Als u geen PDF-bestand voor een zaadbestand opgeeft, maakt de Forms-service een shell-pdf die geen COS-objecten bevat maar een PDF-omslag bevat waarin de werkelijke XDP-inhoud is ingesloten. Met de stappen in deze sectie wordt de optie voor het uitvoeren van de PDF-zaadbewerking niet ingesteld. Zie de handleiding Adobe PDF Reference voor informatie over COS-objecten.
 
 **Een formulier weergeven op de client**
 

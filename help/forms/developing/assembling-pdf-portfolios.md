@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 
 # PDF-Portfolio samenstellen {#assembling-pdf-portfolios}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt een PDF-Portfolio samenstellen met de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals het *raster met voorvertoning*, de *layout op een afbeelding* of zelfs *Draaien*.
 

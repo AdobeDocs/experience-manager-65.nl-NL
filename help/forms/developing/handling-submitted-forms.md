@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
 
 
 # Verzendde Forms {#handling-submitted-forms} verwerken
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 Web-based toepassingen die een gebruiker toelaten om interactieve vormen in te vullen vereisen dat de gegevens terug naar de server worden voorgelegd. Met de Forms-service kunt u de gegevens ophalen die de gebruiker in een interactief formulier heeft ingevoerd. Nadat u de gegevens hebt opgehaald, kunt u de gegevens verwerken om aan uw bedrijfsvereisten te voldoen. U kunt de gegevens bijvoorbeeld opslaan in een database, de gegevens naar een andere toepassing verzenden, de gegevens naar een andere service verzenden, de gegevens in een formulierontwerp samenvoegen, de gegevens weergeven in een webbrowser, enzovoort.
 
@@ -88,7 +90,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Servlet die de Forms-service aanroept.</p></td>
   </tr>
   <tr>

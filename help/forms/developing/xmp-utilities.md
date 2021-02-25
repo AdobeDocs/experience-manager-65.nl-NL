@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
 
 
 # Werken met XMP hulpprogramma&#39;s {#working-with-xmp-utilities}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Informatie over de XMP Utilities Service**
 
@@ -164,7 +166,7 @@ Importeer XMP metagegevens met de XMP Utilities-API (Java):
 
 1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceClient` of de methode `importMetadata` van het object aan.`importXMP`
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `importMetadata` of de methode `importXMP` van het object aan.`XMPUtilityServiceClient`
 
    Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 
@@ -201,7 +203,7 @@ Voer de volgende taken uit om XMP metagegevens via de API voor XMP hulpprogramma
 
 1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceService` of de methode `importMetadata` van het object aan.`importXMP`
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `importMetadata` of de methode `importXMP` van het object aan.`XMPUtilityServiceService`
 
    Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 

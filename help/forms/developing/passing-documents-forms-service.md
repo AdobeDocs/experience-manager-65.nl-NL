@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1700'
+source-wordcount: '1714'
 ht-degree: 0%
 
 ---
 
 
 # Documenten doorgeven aan de Forms-service {#passing-documents-to-the-formsservice}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 De AEM Forms-service rendert interactieve PDF forms naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Een interactief PDF-formulier is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. Vanaf AEM Forms kunt u een `com.adobe.idp.Document`-object met het formulierontwerp doorgeven aan de Forms-service. De Forms-service geeft vervolgens het formulierontwerp weer dat zich in het object `com.adobe.idp.Document` bevindt.
 

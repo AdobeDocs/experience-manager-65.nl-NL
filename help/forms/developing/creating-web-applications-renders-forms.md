@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
 
 
 # Webtoepassingen maken die Forms {#creating-web-applications-thatrenders-forms} renderen
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 ## Webtoepassingen maken die Forms {#creating-web-applications-that-renders-forms} renderen
 
@@ -379,7 +381,7 @@ Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u u
 
 1. Klik in het venster **Projectverkenner** met de rechtermuisknop op het `FragmentsWebApplication`-project en selecteer **Exporteren** > **WAR-bestand**.
 1. Typ `FragmentsWebApplication` voor de naam van het Java-project in het tekstvak **Webmodule**.
-1. Typ `FragmentsWebApplication.war`**in het tekstvak** Doel **voor de bestandsnaam &lt;a3/>de locatie voor het WAR-bestand en klik op Voltooien.**
+1. Typ `FragmentsWebApplication.war`**in het tekstvak** Doel **voor de bestandsnaam** de locatie voor het WAR-bestand en klik op Voltooien.
 
 ### WAR-bestand gebruiken op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 

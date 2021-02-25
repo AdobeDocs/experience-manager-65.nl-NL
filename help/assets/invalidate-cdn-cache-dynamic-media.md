@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 
 >[!NOTE]
 >
->Klanten moeten de CDN gebruiken die is gebundeld met Adobe Experience Manager Dynamic Media om te profiteren van CDN-cachevalidatie.
+>Voor deze functie is het vereist dat u de CDN uit de doos gebruikt die bij Adobe Experience Manager Dynamic Media is gebundeld. Een andere aangepaste CDN wordt niet ondersteund met deze functie.
 
 >[!IMPORTANT]
 >

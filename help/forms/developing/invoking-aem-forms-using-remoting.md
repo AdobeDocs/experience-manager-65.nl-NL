@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '4647'
+source-wordcount: '4661'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms aanroepen met Verwijderen {#invoking-aem-forms-using-remoting}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 In Workbench gemaakte processen kunnen worden aangeroepen door Remoting te gebruiken. Dat wil zeggen dat u een AEM Forms-proces kunt aanroepen vanuit een clienttoepassing die met Flex is gebouwd. Deze eigenschap is gebaseerd op de Diensten van Gegevens.
 
@@ -466,7 +468,7 @@ Als u Single Sign-On wilt gebruiken in AEM Forms, installeert u de component voo
 
 Wanneer u van het enige sign-on mechanisme voordeel haalt, verwacht u gebruikers om login door de gecentraliseerde login dienst te gebruiken alvorens een cliënttoepassing te beginnen. Met andere woorden, een clienttoepassing meldt zich niet aan via de browser of door de methode `ChannelSet.login` aan te roepen.
 
-Als u het AEM Forms enig sign-on mechanisme gebruikt, vorm het Remoting eindpunt om douaneauthentificatie, niet basis te gebruiken. Anders, wanneer het gebruiken van basisauthentificatie, veroorzaakt een authentificatiefout een browser uitdaging, die u niet de gebruiker wilt zien. In plaats daarvan detecteert uw toepassing de verificatiefout en wordt een bericht weergegeven waarin de gebruiker wordt opgedragen zich aan te melden met de gecentraliseerde aanmeldingsservice.
+Als u het enige sign-on mechanisme van AEM Forms gebruikt, vorm het Remoting eindpunt om douaneauthentificatie, niet basis te gebruiken. Anders, wanneer het gebruiken van basisauthentificatie, veroorzaakt een authentificatiefout een browser uitdaging, die u niet de gebruiker wilt zien. In plaats daarvan detecteert uw toepassing de verificatiefout en wordt een bericht weergegeven waarin de gebruiker wordt opgedragen zich aan te melden met de gecentraliseerde aanmeldingsservice.
 
 Een cliënttoepassing heeft toegang tot AEM Forms door een remoting eindpunt door de `RemoteObject` component te gebruiken, zoals het volgende voorbeeld toont.
 

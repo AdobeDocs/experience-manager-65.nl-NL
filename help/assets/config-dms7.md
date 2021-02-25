@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
 workflow-type: tm+mt
-source-wordcount: '5730'
+source-wordcount: '5719'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,6 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 >* [Cache-validatie](/help/assets/invalidate-cdn-cache-dynamic-media.md)
 >* [Hotlink-beveiliging](/help/assets/hotlink-protection.md)
 >* [HTTP/2-levering van inhoud](/help/assets/http2.md)
->* [Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch](/help/assets/launch.md)
 >* URL omleiden op CDN-niveau
 >* Akamai ChinaCDN (voor optimale levering in China)
 

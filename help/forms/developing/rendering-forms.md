@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
 
 
 # Forms {#rendering-forms} renderen
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Informatie over de Forms-service**
 
@@ -39,7 +41,7 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de Forms-service:
 
-* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Deze benadering omvat het gebruik van een `URLSpec`-object. De inhoudsbasis wordt aan de Forms-service doorgegeven met de methode `URLSpec` van het object. `setContentRootURI` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (De meeste snelle start bevindt zich in de sectie *Forms* renderen gebruikt deze benadering.)
+* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Deze benadering omvat het gebruik van een `URLSpec`-object. De inhoudsbasis wordt aan de Forms-service doorgegeven met de methode `setContentRootURI` van het object. `URLSpec` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (De meeste snelle start bevindt zich in de sectie *Forms* renderen gebruikt deze benadering.)
 * U kunt een `com.adobe.idp.Document` met het formulierontwerp doorgeven aan de Forms-service. Twee nieuwe methoden met de naam `renderPDFForm2` en `renderHTMLForm2` accepteren een `com.adobe.idp.Document`-object dat een formulierontwerp bevat. (Zie [Documenten doorgeven aan de Forms Service](/help/forms/developing/passing-documents-forms-service.md)
 
 U kunt deze taken uitvoeren met de Forms-service:

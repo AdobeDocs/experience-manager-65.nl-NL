@@ -1,6 +1,6 @@
 ---
 title: Slimme beeldverwerking
-description: Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
+description: Slimme beeldverwerking past de unieke weergavekenmerken van elke gebruiker toe, zodat deze automatisch de juiste afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
 uuid: c11e52ba-8d64-4dc5-b30a-fc10c2b704e5
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
 workflow-type: tm+mt
-source-wordcount: '1819'
+source-wordcount: '1817'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 ## Wat is &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
 
-Smart Imaging-technologie maakt gebruik van Adobe Sensei AI-mogelijkheden en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot; om de prestaties van de beeldlevering te verbeteren door de indeling, grootte en kwaliteit van afbeeldingen automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
+Slimme beeldverwerking past Adobe Sensei AI-mogelijkheden toe en werkt met bestaande &quot;voorinstellingen voor afbeeldingen&quot; om de prestaties van de beeldlevering te verbeteren door de afbeeldingsindeling, -grootte en -kwaliteit automatisch te optimaliseren op basis van de mogelijkheden van de clientbrowser.
 
-De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volledig geïntegreerd zijn met de best-in-klasse de dienst van CDN van de Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peerpunten die de laagste latentie, en/of pakketverliestarief dan de standaardroute op Internet hebben.
+>[!NOTE]
+>
+>Klanten moeten de CDN (Content Deliver Network) gebruiken die met Adobe Experience Manager Dynamic Media is meegeleverd om te profiteren van Smart Imaging.
+
+De slimme Beeldvorming profiteert ook van de extra prestatiesverhoging van volledig geïntegreerd zijn met de best-in-klasse de dienst van CDN van de Adobe. Deze dienst vindt de optimale Internet route tussen servers, netwerken, en peering punten. Het vindt een route die de laagste latentie en het laagste tarief van het pakketverlies in plaats van het gebruiken van de standaardroute op Internet heeft.
 
 De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisatie van Smart Imaging aan:
 
@@ -34,11 +38,11 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 | [Afbeelding 4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](/help/assets/assets-dm/picture4.png) | 315,80 kB | 178,19 kB | 44% |
 |  |  |  |  | Gemiddelde = 51% |
 
-Net als het bovenstaande heeft Adobe ook een test uitgevoerd met 7009 URL&#39;s van live klantsites en kon een gemiddelde van 38% verdere optimalisatie van de bestandsgrootte voor JPEG en 31% verdere optimalisatie van de bestandsgrootte voor PNG met WebP-indeling behalen, vanwege de mogelijkheid van Smart Imaging.
+Net als hierboven heeft Adobe ook een test uitgevoerd met 7009 URL&#39;s van live klantsites. Dankzij de mogelijkheden van Smart Imaging konden ze gemiddeld 38% meer optimalisatie voor de bestandsgrootte van JPEG bereiken en 31% meer optimalisatie voor de bestandsgrootte van PNG met WebP-indeling.
 
 ## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
-Omdat de beelden een meerderheid van de ladingstijd van een pagina vormen, kan de prestatiesverbetering een diepgaande invloed op zaken KPIs zoals hogere omzetting, tijd die aan plaats wordt doorgebracht, en lagere plaats hebben stuitend tarief.
+Omdat de beelden het grootste deel van de ladingstijd van een pagina vormen, kan de prestatiesverbetering een diepgaande invloed op een Zaken zoals hogere omzetting, tijd die aan plaats wordt doorgebracht, en lagere plaats het stuiteren tarief hebben.
 
 Verbeteringen in de nieuwste versie van Smart Imaging:
 
@@ -46,12 +50,12 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 * Gebruikt Adobe Sensei-technologie voor conversie op basis van de kwaliteit (qlt) die is opgegeven in de afbeeldingsaanvraag.
 * Smart Imaging kan worden uitgeschakeld met de URL-parameter &quot;bfc&quot;.
 * onafhankelijk van TTL (Time to Live). Eerder was een minimale TTL van 12 uur verplicht voor Smart Imaging.
-* Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. In de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een procedure voor het invalideren van het cachegeheugen in één stap mogelijk is.
-* Klanten die in hun regels aangepaste kopteksten gebruiken (bijvoorbeeld &#39;&#39;Timing staat oorsprong toe&#39;&#39;, &#39;&#39;X-Robot&#39;&#39; zoals wordt voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan reacties op afbeeldingen|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)) profiteren van de nieuwste functie voor slimme afbeeldingen, omdat deze koppen, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
+* Eerder waren zowel de oorspronkelijke als de afgeleide afbeeldingen in het cachegeheugen opgeslagen. Het was een proces van twee stappen om de cache ongeldig te maken. Bij de nieuwste Smart Imaging worden alleen de derivaten in het cachegeheugen opgeslagen, zodat een cachevalidatieproces in één stap mogelijk is.
+* Klanten die aangepaste kopteksten in hun regels gebruiken. Bijvoorbeeld &quot;Timing Allow Origin&quot;, &quot;X-Robot&quot; zoals voorgesteld in [Een aangepaste koptekstwaarde toevoegen aan afbeeldingsreacties|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)). Ze kunnen profiteren van de nieuwste functie voor slimme afbeeldingen, omdat deze headers, in tegenstelling tot de vorige versie van Smart Imaging, niet worden geblokkeerd.
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Nee. Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic of Adobe Experience Manager - Dynamic Media (On Prem, AMS en AEM als Cloud Service).
+Nee. Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic of Adobe Experience Manager - Dynamic Media (On-prem, AMS en AEM als Cloud Service).
 
 >[!NOTE]
 >
@@ -60,7 +64,7 @@ Nee. Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Cla
 
 ## Hoe werkt intelligente beeldverwerking? {#how-does-smart-imaging-work}
 
-Wanneer een afbeelding door een consument wordt opgevraagd, controleren we de gebruikerskenmerken en zetten we de afbeelding om in de juiste afbeeldingsindeling op basis van de gebruikte browser. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
+Wanneer een consument om een afbeelding vraagt, controleert Smart Imaging de gebruikerskenmerken en wordt deze op basis van de gebruikte browser omgezet in de juiste afbeeldingsindeling. Deze formaatomzettingen worden gedaan op een manier die geen visuele getrouwheid degradeert. Met Slimme afbeeldingen worden afbeeldingen op de volgende manier automatisch omgezet in verschillende indelingen op basis van browsermogelijkheden.
 
 * Automatisch converteren naar WebP voor de volgende browsers:
    * Chroom
@@ -94,19 +98,19 @@ De volgende afbeeldingsindelingen worden ondersteund voor Smart Imaging:
 
 Adobe is working on a permanent fix that does not require you to append `bfc=off` for `fmt !=JPEG` or `fmt !=PNG`. This topic will be updated after the fix is delivered. -->
 
-## Hoe werkt Smart Imaging met onze bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
+## Hoe werkt Smart Imaging met mijn bestaande voorinstellingen voor afbeeldingen die al in gebruik zijn? {#how-does-smart-imaging-work-with-our-existing-image-presets-that-are-already-in-use}
 
-Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot; en nemen alle afbeeldingsinstellingen in acht, met uitzondering van kwaliteit (qlt) en indeling (fmt) als de gewenste bestandsindeling JPEG of PNG is. Voor het omzetten van de bestandsindeling blijven de volledige visuele getrouwheid behouden, zoals wordt gedefinieerd door de instellingen van de voorinstelling voor de afbeelding, maar is het bestand kleiner. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
+Slimme afbeeldingen werken met uw bestaande &quot;voorinstellingen voor afbeeldingen&quot; en nemen alle afbeeldingsinstellingen in acht, behalve de instellingen voor kwaliteit (qlt) en indeling (fmt) als de gewenste bestandsindeling JPEG of PNG is. Voor conversie van indelingen behoudt Smart Imaging volledige visuele getrouwheid zoals gedefinieerd door de vooraf ingestelde instellingen van de afbeelding, maar met een kleinere bestandsgrootte. Als de oorspronkelijke afbeelding kleiner is dan het resultaat van Smart Imaging, wordt de oorspronkelijke afbeelding weergegeven.
 
 <!-- In addition, if your image presets are used to return `fmt !=JPEG` or `fmt !=PNG`, be sure append `bfc=off` in the preset modifier field to return the requested file format. -->
 
-## Moet ik URL&#39;s, voorinstellingen voor afbeeldingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
+## Moet ik URL&#39;s, afbeeldingsvoorinstellingen wijzigen of nieuwe code op mijn site implementeren voor Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
-Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinstellingen voor afbeeldingen als u Smart Imaging configureert op uw bestaande aangepaste domein. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Dit alles wordt automatisch afgehandeld.
+Smart Imaging werkt naadloos met uw bestaande afbeeldings-URL&#39;s en voorinstellingen voor afbeeldingen als u Smart Imaging configureert op uw bestaande aangepaste domein. Bovendien hoeft u bij Slimme afbeeldingen geen code aan uw website toe te voegen om de browser van een gebruiker te detecteren. Deze wordt allemaal automatisch afgehandeld.
 
-Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt met dit aangepaste domein.
+Als u een nieuw aangepast domein moet configureren voor het gebruik van Smart Imaging, moeten de URL&#39;s worden bijgewerkt om dit aangepaste domein te weerspiegelen.
 
-Zie [Mag ik Smart Imaging gebruiken?](#am-i-eligible-to-use-smart-imaging) om inzicht te krijgen in de vereisten voor slimme beeldverwerking.
+Zie [Ben ik geschikt voor het gebruik van Smart Imaging?](#am-i-eligible-to-use-smart-imaging) voor meer informatie over de vereisten voor Smart Imaging.
 
 <!-- No. Smart Imaging works seamlessly with your existing image URLs and image presets. In addition, Smart Imaging does not require you to add any code on your website to detect a user's browser. All of this is handled automatically. -->
 
@@ -131,7 +135,7 @@ Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dyn
 
 ## Wat is het proces voor het inschakelen van Smart Imaging voor mijn account? {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wordt niet automatisch ingeschakeld.
+U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt niet automatisch ingeschakeld.
 
 1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
@@ -152,11 +156,11 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
       Klik op **[!UICONTROL Setup > Application Setup > General Settings.]**
 
       Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen Dynamic Media Classic-domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat.
-   1. Geef aan of u dit ook nodig hebt om via HTTP/2 te werken.
+   1. Geef aan of deze via HTTP/2 moet werken.
 
-1. De technische Steun zal u aan de Slimme Lijst van de Wacht van het Beeld toevoegen die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-1. Wanneer Adobe klaar is om uw verzoek te behandelen, zal de steun u contacteren om een doeldatum te coördineren en te plaatsen.
-1. **Optioneel**: U kunt slimme beeldverwerking in het Staging testen voordat Adobe de nieuwe functie naar de productie verplaatst.
+1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken werden voorgelegd.
+1. Wanneer Adobe bereid is om uw verzoek te behandelen, steuncontacten u om een doeldatum te coördineren en te plaatsen.
+1. **Optioneel**: U kunt optioneel de functie voor het maken van slimme afbeeldingen in Staging testen voordat Adobe de nieuwe functie in productie neemt.
 1. U wordt op de hoogte gesteld na voltooiing door ondersteuning.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
@@ -165,18 +169,18 @@ U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wo
 
 ## Wanneer kan ik verwachten dat mijn account is ingeschakeld met Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
-De verzoeken worden verwerkt in de orde waarin zij door Technische Steun, volgens de Wachtlijst worden ontvangen.
+De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, volgens de Wachtlijst worden ontvangen.
 
 >[!NOTE]
-Het kan lang duren, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
+Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
 ## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-Er is geen risico voor een klantenwebpagina. Houd er echter rekening mee dat bij de overgang naar Smart Imaging de cache van de CDN wordt gewist, omdat hierbij op AEM naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden gegaan.
+Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 
-Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de oorspronkelijke Adobe-servers totdat het cachegeheugen opnieuw wordt opgebouwd. Wegens dit, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van onze oorsprong. Voor de meeste klanten wordt het cachegeheugen binnen ~1 tot 2 dagen volledig opgebouwd bij de CDN.
+Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op servers die niet in de Adobe zijn opgeslagen, totdat het cachegeheugen opnieuw wordt opgebouwd. Dientengevolge, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van de oorsprong. Voor de meeste klanten wordt de cache binnen ~1 - 2 dagen volledig opnieuw opgebouwd bij de CDN.
 
-## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?{#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. Wanneer uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic- of Adobe Experience Manager - Dynamic Media-afbeeldings-URL in de browser.
 1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
@@ -190,7 +194,7 @@ Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de 
 1. Herhaal deze test voor verschillende browsers en gebruikersomstandigheden.
 
 >[!NOTE]
-Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie nodig is om de prestaties te verbeteren. In sommige gevallen waarin er geen verwachte prestatieverhoging is of de indeling geen JPEG of PNG is, wordt de afbeelding niet geconverteerd.
+Niet alle afbeeldingen worden geconverteerd. Smart Imaging bepaalt of de conversie de prestaties kan verbeteren. Soms wordt de afbeelding niet geconverteerd als er geen verwachte prestatieverbetering is of de indeling geen JPEG- of PNG-indeling is.
 
 ![image2017-11-14_15398](assets/image2017-11-14_15398.png)
 
@@ -202,10 +206,10 @@ Ja. U kunt Smart Imaging uitschakelen door de optie `bfc=off` aan de URL toe te 
 
 Op dit moment kunt u Smart Imaging optioneel in- of uitschakelen. Er is geen andere tuning beschikbaar.
 
-## Als Smart Imaging de kwaliteitsinstellingen beheert, zijn er dan minimum- en maximumwaarden die we kunnen instellen? Is het bijvoorbeeld mogelijk om &quot;niet lager dan 60&quot; en &quot;niet groter dan 80&quot; in te stellen? (#minimum-maximum)
+## Als u de kwaliteitsinstellingen beheert met Smart Imaging, zijn er dan minimum- en maximumwaarden die ik kan instellen? Is het bijvoorbeeld mogelijk om &quot;niet lager dan 60&quot; en &quot;niet groter dan 80&quot; in te stellen? (#minimum-maximum)
 
 De huidige slimme beeldverwerking biedt geen dergelijke provisioningmogelijkheden.
 
-## In sommige gevallen wordt een JPEG-afbeelding geretourneerd naar Chrome in plaats van een WebP-afbeelding. Waarom gebeurt dat? (#jpeg-webp)
+## Soms wordt een JPEG-afbeelding geretourneerd naar Chrome in plaats van een WebP-afbeelding. Waarom? (#jpeg-webp)
 
 Slimme afbeeldingen bepalen of de conversie nuttig is of niet. De nieuwe afbeelding wordt alleen geretourneerd als de conversie resulteert in een kleinere bestandsgrootte met vergelijkbare kwaliteit.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '671'
 ht-degree: 18%
 
 ---
@@ -16,7 +16,11 @@ ht-degree: 18%
 
 # De CDN-cache ongeldig maken door middel van Dynamic Media Classic {#invalidating-your-cdn-cached-content}
 
-Dynamic Media-elementen worden door de CDN in cache geplaatst voor snelle levering. Wanneer u echter updates aan een element aanbrengt, wilt u deze wijzigingen mogelijk direct van kracht laten worden. Door de CDN-inhoud (Content Delivery Network) in de cache te ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
+Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery Network) voor snelle levering. Wanneer u echter updates aan een element aanbrengt, wilt u dat deze wijzigingen onmiddellijk van kracht worden. Als u de CDN-inhoud in de cache ongeldig maakt, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd, in plaats van te wachten tot de cache verloopt.
+
+>[!NOTE]
+>
+>Klanten moeten de CDN gebruiken die is gebundeld met Adobe Experience Manager Dynamic Media om te profiteren van CDN-cachevalidatie.
 
 >[!IMPORTANT]
 >
@@ -39,20 +43,20 @@ Zie ook [Overzicht van cache in Dynamic Media Classic (Scene7)](https://helpx.ad
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   Als de sjabloon alleen `<ID>` bevat, vult Dynamic Media `https://<server>/is/image` in, waarbij `<server>` de naam van de publicatieserver is die is gedefinieerd in Algemene instellingen en &lt;ID> de middelen is die zijn geselecteerd om ongeldig te worden gemaakt.
+   Als de sjabloon alleen `<ID>` bevat, vult Dynamic Media `https://<server>/is/image` in, waarbij `<server>` de naam van de publicatieserver is die is gedefinieerd in Algemene instellingen en &lt;ID> de elementen zijn die zijn geselecteerd om ongeldig te worden gemaakt.
 
 1. Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Close.]**
-1. Selecteer in de Klassieke gebruikersinterface van Dynamic Media een of meer elementen en klik op **[!UICONTROL File > Invalidate CDN.]** Er wordt een lijst weergegeven met een of meer URL&#39;s die zijn gegenereerd op basis van de sjabloon die u hebt gemaakt en het element dat u hebt geselecteerd. De URL van de server wordt gebruikt onder &quot;Gepubliceerde servernaam&quot; onder Algemene instellingen van toepassing.
+1. Selecteer een of meer elementen in de Klassieke gebruikersinterface van Dynamic Media en klik op **[!UICONTROL File > Invalidate CDN.]**. U ziet een lijst met een of meer URL&#39;s die zijn gegenereerd op basis van de sjabloon die u hebt gemaakt en de elementen die u hebt geselecteerd. De URL van de server wordt gebruikt onder &quot;Gepubliceerde servernaam&quot; onder Algemene instellingen van toepassing.
 
-   Stel dat u, terwijl de CDN-validatiesjabloon in de vorige stap is ingesteld, één afbeelding met afbeeldingselementen hebt geselecteerd met de naam `Backpack_B`. Wanneer u op **[!UICONTROL File > Invalidate CDN]** klikt, resulteert dit in de volgende gegenereerde URL in de gebruikersinterface voor CDN-validatie:
+   Stel dat u, terwijl de CDN-validatiesjabloon in de vorige stap is ingesteld, één afbeelding met afbeeldingselementen hebt geselecteerd met de naam `Backpack_B`. Wanneer u **[!UICONTROL File > Invalidate CDN]** tikt, resulteert dit in de volgende gegenereerde URL in de gebruikersinterface voor CDN-validatie:
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. Klik in de keuzelijst URL op **[!UICONTROL Continue]** om de cache voor elke specifieke URL te wissen. U kunt een URL bewerken of u kunt een URL toevoegen door deze in het vak URL-lijst te typen of te plakken. u hoeft CDN niet vooraf in te stellen om sjabloon ongeldig te maken.
+1. Tik in de keuzelijst URL op **[!UICONTROL Continue]** om de cache voor elke specifieke URL te wissen. U kunt een URL bewerken of u kunt een URL toevoegen door deze in het vak URL-lijst te typen of te plakken. u hoeft CDN niet vooraf in te stellen om sjabloon ongeldig te maken.
 
    Nadat u **[!UICONTROL Continue]** klikt, wordt een indicator getoond die u een schatting geeft van hoe lang het zal duren om het geheime voorgeheugen te ontruimen.
 
-   Als u meerdere elementen hebt geselecteerd en vervolgens op **[!UICONTROL File > Invalidate CDN]** hebt geklikt, wordt naar elk element verwezen in het opgeslagen **[!UICONTROL Template URL.]**. Daarom kunt u een **[!UICONTROL CDN Invalidate Template]** definiëren die verwijst naar elke URL-voorinstelling voor afbeeldingen waarnaar op uw website wordt verwezen (zoals productdetails, zoekresultaten enzovoort). Wanneer u vervolgens een of meer afbeeldingen selecteert om ongeldig te worden gemaakt door het cachegeheugen, vullen de URL&#39;s automatisch de interface in.
+   Als u meerdere elementen hebt geselecteerd en op **[!UICONTROL File > Invalidate CDN]** tikt, wordt naar elk element verwezen in het opgeslagen **[!UICONTROL Template URL.]**. Daarom kunt u een **[!UICONTROL CDN Invalidate Template]** definiëren die verwijst naar elke URL-voorinstelling voor afbeeldingen waarnaar op uw website wordt verwezen (zoals productdetails en zoekresultaten). Wanneer u vervolgens een of meer afbeeldingen selecteert om ongeldig te worden gemaakt door het cachegeheugen, vullen de URL&#39;s automatisch de interface in.
 
    >[!NOTE]
    >

@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 729fbf3a97d3ae3bc91204f8831fd115d9d77f20
+source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
 workflow-type: tm+mt
-source-wordcount: '5770'
+source-wordcount: '5730'
 ht-degree: 4%
 
 ---
@@ -31,14 +31,15 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Klanten die de gebundelde CDN niet gebruiken met Experience Manager Dynamic Media profiteren niet van de volgende mogelijkheden:
->* [Smart Imaging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/imaging-faq.html?lang=en#dynamicmedia)
->* [Cache-validatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/invalidate-cdn-cache-dynamic-media.html?lang=en#dynamicmedia)
->* [Hotlink-beveiliging](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/hotlink-protection.html?lang=en#dynamicmedia)
->* [HTTP/2-levering van inhoud](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/http2faq.html?lang=en#dynamicmedia)
->* [Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/launch.html?lang=en#dynamicmedia)
+>Voor de volgende lijst met functies moet u de CDN uit de doos gebruiken die is gebundeld met Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functies.
+>
+>* [Smart Imaging](/help/assets/imaging-faq.md)
+>* [Cache-validatie](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-beveiliging](/help/assets/hotlink-protection.md)
+>* [HTTP/2-levering van inhoud](/help/assets/http2.md)
+>* [Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch](/help/assets/launch.md)
 >* URL omleiden op CDN-niveau
 >* Akamai ChinaCDN (voor optimale levering in China)
 

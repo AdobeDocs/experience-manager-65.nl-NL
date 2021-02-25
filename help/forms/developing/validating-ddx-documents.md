@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1543'
 ht-degree: 0%
 
 ---
 
 
 # DDX-documenten {#validating-ddx-documents} valideren
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt een DX- document programmatically bevestigen dat door de dienst van de Assembler wordt gebruikt. Met andere woorden, met de API van de Assembler-service kunt u bepalen of een DDX-document geldig is of niet. Als u bijvoorbeeld een upgrade hebt uitgevoerd van een eerdere AEM Forms-versie en u wilt controleren of uw DDX-document geldig is, kunt u dit valideren met de API voor de Assembler-service.
 
@@ -196,7 +198,7 @@ Valideer een DDX-document met behulp van de API (webservice) voor vergaderingsse
 1. Sla de validatieresultaten op in een logbestand.
 
    * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het logbestand en de modus voor het openen van het bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .xml is.
-   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde op te halen van het `AssemblerResult`-gegevenslid van het object.`jobLog`
+   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde van het `AssemblerResult`-gegevenslid van het object op te halen.`jobLog`
    * Maak een bytearray waarin de inhoud van het object `BLOB` wordt opgeslagen. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
    * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
    * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.

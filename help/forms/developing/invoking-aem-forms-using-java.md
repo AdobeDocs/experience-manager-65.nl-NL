@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5494'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms aanroepen met de Java API {#invoking-aem-forms-using-the-javaapi}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 AEM Forms kan worden aangeroepen door de AEM Forms Java API te gebruiken. Wanneer u de AEM Forms Java API gebruikt, kunt u de Invocation API- of Java-clientbibliotheken gebruiken. Java-clientbibliotheken zijn beschikbaar voor services zoals de service Rights Management. Deze sterk getypte APIs laten u toepassingen ontwikkelen Java die AEM Forms aanhalen.
 
@@ -89,107 +91,107 @@ In de volgende tabel worden de JAR-bestanden weergegeven die nodig zijn om AEM F
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Vereist om de dienst van de Manager van de Toepassing aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Vereist om de dienst van de Assembler aan te halen. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Vereist om de service-API voor back-up en herstel aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Vereist om de service voor formulieren met streepjescodes aan te roepen. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>De service PDF converteren is vereist. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Vereist om de Distiller-service aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Vereist om de dienst DocConverter aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Vereist om de service Documentbeheer aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Vereist om de dienst van de Encryptie aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Vereist om de Forms-service aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Vereist om de dienst van de Integratie van de Gegevens van de Vorm aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>Vereist om de service PDF genereren aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>Vereist om de service 3D-PDF genereren aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>Vereist om de service Taakbeheer aan te roepen. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>Vereist om de dienst van de Output aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>Vereist om de service PDF-hulpprogramma's of XMP te activeren.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Vereist om de Acrobat Reader DC-extensieservice aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>Vereist om de dienst van de Bewaarplaats aan te halen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs\third-party</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs\third-party<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +206,22 @@ In de volgende tabel worden de JAR-bestanden weergegeven die nodig zijn om AEM F
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Vereist om de dienst van het Rights Management aan te halen.</p><p>Als AEM Forms wordt geïmplementeerd op JBoss, neemt u al deze bestanden op. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p><p>JBoss-specifieke lib-map</p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p><p>JBoss-specifieke lib-map</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>Vereist om de service Handtekening aan te roepen.</p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>Vereist om de dienst van de Manager van de Taak aan te halen. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Vereist om de dienst van de Opslag van het Vertrouwen aan te halen. </p></td>
-   <td><p>&lt;&gt;installatiemap<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;installatiemap</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +263,7 @@ In de volgende tabel worden de JAR-bestanden weergegeven die afhankelijk zijn va
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>Als AEM Forms wordt aangeroepen via de SOAP-modus, neemt u deze JAR-bestanden op.</p> </td>
-   <td><p>&lt;&gt;installatiemap<em>&gt;/sdk/client-libs/third-party</em></p> </td>
+   <td><p>&lt;&gt;installatiemap</em>&gt;/sdk/client-libs/third-party<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>

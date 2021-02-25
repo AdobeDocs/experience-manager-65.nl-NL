@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2554'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms for Backup {#preparing-aem-forms-for-backup} voorbereiden
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 ## Over de service Back-up en herstel {#about-the-backup-and-restore-service}
 
@@ -133,7 +135,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
    * Een `int` waarde die het aantal minuten specificeert om in reservewijze te blijven. U kunt een waarde opgeven van `1` tot `10080` (het aantal minuten in een week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
    * Een `Boolean`-waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. De waarde `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd.
 
-      In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid. De waarde `False` betekent dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
+      In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid. De waarde `False` houdt in dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 
@@ -168,7 +170,7 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
    * Een waarde `Uint32` die het aantal minuten specificeert om in reservewijze te blijven. U kunt een waarde opgeven van `1` tot `10080` (aantal minuten in een week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
    * Een `Boolean`-waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. De waarde `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd. In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid.
 
-      De waarde `False` betekent dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
+      De waarde `False` houdt in dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 

@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '9143'
+source-wordcount: '9157'
 ht-degree: 0%
 
 ---
 
 
 # Werken met AEM Forms Repository {#working-with-aem-forms-repository}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Over de Repository Service**
 
@@ -189,7 +191,7 @@ Een map maken met de Repository Service API (webservice):
 
    * Een `Id`-object, dat wordt gemaakt door de standaardconstructor voor de klasse `Id` aan te roepen en toegewezen aan het veld `Resource` van het object `id`.
    * Een `Lid`-object, dat wordt gemaakt door de standaardconstructor voor de klasse `Lid` aan te roepen en toegewezen aan het veld `Resource` van het object `lid`.
-   * Een tekenreeks met de naam van de bronverzameling, die wordt toegewezen aan het veld `Resource` van het object. `name` De naam die in dit voorbeeld wordt gebruikt, is `"testfolder"`.
+   * Een tekenreeks met de naam van de bronverzameling, die wordt toegewezen aan het veld `name` van het object. `Resource` De naam die in dit voorbeeld wordt gebruikt, is `"testfolder"`.
    * Een tekenreeks met de beschrijving van de bronverzameling, die wordt toegewezen aan het veld `Resource` van het object `description`. De beschrijving die in dit voorbeeld wordt gebruikt is `"test folder"`.
 
 1. De map naar de opslagplaats schrijven
@@ -279,7 +281,7 @@ Schrijf een bron met behulp van de Repository Service API (Java):
 
 1. De URI van de doelmap voor de bron opgeven
 
-   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron &lt;a0/> wordt opgeslagen in de map met de naam `testFolder`. `"/testFolder"` De URI wordt opgeslagen als een `java.lang.String`-object.
+   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron `"/testFolder"` wordt opgeslagen in de map met de naam `testFolder`. De URI wordt opgeslagen als een `java.lang.String`-object.
 
 1. De bron maken
 
@@ -331,7 +333,7 @@ Schrijf een bron met behulp van de Repository Service API (webservice):
 
 1. De URI van de doelmap voor de bron opgeven
 
-   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron &lt;a0/> wordt opgeslagen in de map met de naam `testFolder`. `"/testFolder"` Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
+   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron `"/testFolder"` wordt opgeslagen in de map met de naam `testFolder`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
 
 1. De bron maken
 
@@ -339,8 +341,8 @@ Schrijf een bron met behulp van de Repository Service API (webservice):
 
    * Een object `com.adobe.repository.infomodel.Id`, dat wordt gemaakt door de standaardconstructor voor de klasse `Id` aan te roepen en toegewezen aan het veld `Resource` van het object `id`.
    * Een object `com.adobe.repository.infomodel.Lid`, dat wordt gemaakt door de standaardconstructor voor de klasse `Lid` aan te roepen en toegewezen aan het veld `Resource` van het object `lid`.
-   * Een tekenreeks die de bestandsnaam van de bron bevat. Deze wordt toegewezen aan het veld `Resource` van het object. `name` De naam die in dit voorbeeld wordt gebruikt, is `"testResource"`.
-   * Een tekenreeks met de beschrijving van de bron, die wordt toegewezen aan het veld `Resource` van het object. `description` De beschrijving die in dit voorbeeld wordt gebruikt is `"test resource"`.
+   * Een tekenreeks die de bestandsnaam van de bron bevat. Deze wordt toegewezen aan het veld `name` van het object. `Resource` De naam die in dit voorbeeld wordt gebruikt, is `"testResource"`.
+   * Een tekenreeks met de beschrijving van de bron, die wordt toegewezen aan het veld `description` van het object. `Resource` De beschrijving die in dit voorbeeld wordt gebruikt is `"test resource"`.
 
 1. De inhoud van de bron opgeven
 
@@ -572,7 +574,7 @@ Een bron lezen met de Repository Service API (webservice):
 
 1. De URI opgeven van de bron die moet worden gelezen
 
-   Geef een tekenreeks op met de URI van de bron die moet worden opgehaald. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam &lt;a1/> bevindt. `"/testFolder/testResource"` Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
+   Geef een tekenreeks op met de URI van de bron die moet worden opgehaald. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResource"` bevindt. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
 
 1. De bron lezen
 
@@ -1069,7 +1071,7 @@ Bronnen vergrendelen met de API voor opslagplaats (Java):
 
 1. De URI opgeven van de bron die moet worden vergrendeld
 
-   Geef de URI op van de bron die moet worden vergrendeld. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam &lt;a1/> bevindt. `"/testFolder/testResource"` De URI wordt opgeslagen als een `java.lang.String`-object.
+   Geef de URI op van de bron die moet worden vergrendeld. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResource"` bevindt. De URI wordt opgeslagen als een `java.lang.String`-object.
 
 1. De bron vergrendelen
 
@@ -1242,7 +1244,7 @@ Verwijder een bron met de Repository API (webservice):
 
 1. De URI opgeven van de bron die moet worden verwijderd
 
-   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI `testResourceToBeDeleted` omdat de bron `testFolder` zich in de map met de naam &lt;a1/> bevindt. `"/testFolder/testResourceToBeDeleted"` In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
+   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI `testResourceToBeDeleted` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResourceToBeDeleted"` bevindt. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
 
 1. De bron verwijderen
 

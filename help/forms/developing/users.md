@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6257'
 ht-degree: 0%
 
 ---
 
 
 # Gebruikers {#managing-users} beheren
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Over Gebruikersbeheer**
 
@@ -237,12 +239,12 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 1. Gebruikersgegevens definiëren.
 
    * Maak een `UserImpl`-object met de constructor ervan.
-   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`domainName`
-   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object. `principalType` U kunt bijvoorbeeld `USER` opgeven.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`userid`
-   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`canonicalName`
-   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`givenName`
-   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`familyName`
+   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het veld `domainName` van het object.`UserImpl`
+   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het veld `principalType` van het object. `UserImpl` U kunt bijvoorbeeld `USER` opgeven.
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `userid` van het object.`UserImpl`
+   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `canonicalName` van het object.`UserImpl`
+   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `givenName` van het object.`UserImpl`
+   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het veld `familyName` van het object.`UserImpl`
 
 1. Voeg de gebruiker toe aan AEM Forms.
 
@@ -366,7 +368,7 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 1. Geef de gebruiker op die u wilt verwijderen.
 
    * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `PrincipalSearchFilter` van het object.`userId`
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `userId` van het object.`PrincipalSearchFilter`
    * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode keert een `MyArrayOfUser` inzamelingsvoorwerp terug, waar elk element een `User` voorwerp is. Doorloop de verzameling `MyArrayOfUser` om de gebruiker te zoeken. Het object `User` dat is opgehaald uit het verzamelingsobject `MyArrayOfUser` wordt gebruikt om de gebruiker te verwijderen.
 
 1. Verwijder de gebruiker uit AEM Forms.
@@ -474,7 +476,7 @@ Maak een groep met de API voor directoryservice (Java):
    * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
    * Stel de waarde van de gebruikersidentificatie in door de methode `setUserId` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
    * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode retourneert een `java.util.List`-instantie, waarbij elk element een `User`-object is. Doorloop de instantie `java.util.List` om de gebruiker te zoeken.
-   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het voorwerp `addPrincipalToLocalGroup` aan te halen. Geef de geretourneerde waarde van de methode `User` van het object door. `getOid` Geef de geretourneerde waarde van de methode `Group` van de objecten door (gebruik de instantie `getOid` die de nieuwe groep vertegenwoordigt).`Group`
+   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het voorwerp `addPrincipalToLocalGroup` aan te halen. Geef de geretourneerde waarde van de methode `getOid` van het object door. `User` Geef de geretourneerde waarde van de methode `getOid` van de objecten door (gebruik de instantie `Group` die de nieuwe groep vertegenwoordigt).`Group`
 
 **Zie ook**
 
@@ -604,7 +606,7 @@ Dit onderwerp beschrijft hoe u de Dienst API van de Manager van de Vergunning (J
 
 In AEM Forms is een *rol* een groep machtigingen voor toegang tot een of meer systeembronnen. Deze toestemmingen worden gecreeerd door het Beheer van de Gebruiker en door de de dienstcomponenten afgedwongen. Een beheerder kan bijvoorbeeld de rol &quot;Policy Set Author&quot; aan een groep gebruikers toewijzen. Het Rights Management zou dan de gebruikers van die groep met die rol toestaan om beleidsreeksen door beleidsconsole tot stand te brengen.
 
-Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. Standaardrollen (*systeemrollen)* zijn reeds ingezeten in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
+Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. Standaardrollen (*systeemrollen)* zijn reeds ingezetene in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
 
 Rollen maken het eenvoudiger om machtigingen te beheren. Wanneer een rol aan een hoofd wordt toegewezen, wordt een reeks toestemmingen automatisch toegewezen aan dat hoofd, en alle specifieke op toegang betrekking hebbende besluiten voor het hoofd zijn gebaseerd op die algemene reeks toegewezen toestemmingen.
 
@@ -744,7 +746,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>De gebruiker heeft toegang tot een website en geeft een gebruikersnaam en wachtwoord op. Deze informatie wordt verzonden naar een J2EE-toepassingsserver die als host fungeert voor AEM Forms.</p></td>
   </tr>
   <tr>
@@ -870,7 +872,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead>
  <tbody>
   <tr>
-   <td><p>3</p></td>
+   <td><p>1</p></td>
    <td><p>Een clienttoepassing vraagt of AEM Forms een synchronisatiebewerking uitvoert.</p></td>
   </tr>
   <tr>

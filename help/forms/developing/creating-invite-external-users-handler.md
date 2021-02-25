@@ -2,15 +2,17 @@
 title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Een Uitnodigingshandler voor externe gebruikers maken
 translation-type: tm+mt
-source-git-commit: 92e5cc0b1934dad641357a22894e70a3660b774a
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
 
 # Externe gebruikershandler {#create-invite-external-users-handler} uitnodigen
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt een Invite External Users Handler voor de service Rights Management maken. Een Invite External Users Handler stelt de service Rights Management in staat externe gebruikers uit te nodigen Rights Management gebruikers te worden. Nadat een gebruiker een gebruiker van het Rights Management wordt, kan de gebruiker taken uitvoeren, zoals het openen van een beleid-beschermd PDF document. Nadat de Invite External Users Handler wordt opgesteld aan AEM Forms, kunt u beleidsconsole gebruiken om met het in wisselwerking te staan.
 

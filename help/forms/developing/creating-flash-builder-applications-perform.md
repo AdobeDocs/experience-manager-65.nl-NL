@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1839'
 ht-degree: 0%
 
 ---
 
 
 # Flash Builder-toepassingen maken die SSO-verificatie uitvoeren met HTTP-tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt een cliënttoepassing tot stand brengen gebruikend Flash Builder die enig-sign (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Stel bijvoorbeeld dat u een webtoepassing maakt met Flash Builder. Ga er vervolgens van uit dat de toepassing verschillende weergaven bevat, waarbij elke weergave een andere AEM Forms-bewerking aanroept. In plaats van een gebruiker te verifiëren voor elke Forms-bewerking, kunt u een aanmeldingspagina maken waarmee de gebruiker één keer kan verifiëren. Zodra voor authentiek verklaard, kan een gebruiker veelvoudige verrichtingen aanhalen zonder het moeten opnieuw voor authentiek verklaren. Als een gebruiker zich bijvoorbeeld heeft aangemeld bij Workspace (of een andere Forms-toepassing), hoeft de gebruiker zich niet opnieuw te verifiëren.
 

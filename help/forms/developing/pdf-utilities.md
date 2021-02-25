@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2606'
 ht-degree: 0%
 
 ---
 
 
 # Werken met PDF-hulpprogramma&#39;s {#working-with-pdf-utilities}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Informatie over de PDF-hulpprogramma&#39;s**
 
@@ -136,7 +138,7 @@ Voer de volgende stappen uit om een XDP-document te converteren naar een PDF-doc
 
 1. Inclusief projectbestanden.
 1. Maak een PDFUtilityService-client.
-1. Roep de conversiebewerking XDP naar PDF aan.
+1. Voer de conversiebewerking XDP naar PDF uit.
 
 **Projectbestanden opnemen**
 
@@ -419,7 +421,7 @@ Stel de opslagopties voor PDF-documenten in met behulp van het AP PDF-hulpprogra
 1. De modus Opslaan instellen
 
    * Maak een `PDFUtilitySaveMode`-object met de constructor ervan.
-   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de methode `PDFUtilitySaveMode` van het object waarmee de opslagmodus wordt opgegeven. `saveStyle` Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` op.
+   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de methode `saveStyle` van het object waarmee de opslagmodus wordt opgegeven. `PDFUtilitySaveMode` Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` op.
 
 1. Opslaan van stijlbewerking aanroepen
 

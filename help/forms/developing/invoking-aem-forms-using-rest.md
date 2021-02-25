@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2520'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms aanroepen met REST-verzoeken {#invoking-aem-forms-using-rest-requests}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 De processen die in Workbench worden gecreeerd kunnen worden gevormd zodat u hen door de verzoeken van de Overdracht van de Staat van de Vertegenwoordiging (REST) kunt aanhalen. REST-aanvragen worden verzonden vanuit HTML-pagina&#39;s. Met andere woorden, u kunt een Forms-proces rechtstreeks vanaf een webpagina oproepen met behulp van een REST-aanvraag. U kunt bijvoorbeeld een nieuw exemplaar van een webpagina openen. Vervolgens kunt u een Forms-proces aanroepen en een gerenderd PDF-document laden met gegevens die in een HTTP-POST-aanvraag zijn verzonden.
 
@@ -181,7 +183,7 @@ De volgende voorbeelden van REST-oproepen worden gegeven:
 * Het MyApplication/EncryptDocument-proces aanroepen met REST
 * Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat
 
-   In elk voorbeeld worden verschillende gegevenstypen doorgegeven aan een AEM Forms-proces
+   In elk voorbeeld wordt getoond hoe verschillende gegevenstypen worden doorgegeven aan een AEM Forms-proces
 
 **Booleaanse waarden doorgeven aan een proces**
 

@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2152'
 ht-degree: 0%
 
 ---
 
 
 # PDF-documenten programmatisch samenstellen {#programmatically-assembling-pdf-documents}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt de API van de Dienst van de Assembler gebruiken om veelvoudige PDF documenten in één enkel Pdf- document samen te stellen. In de volgende afbeelding ziet u drie PDF-documenten die in één PDF-document worden samengevoegd.
 
@@ -115,7 +117,7 @@ Nadat u de serviceclient hebt gemaakt, naar een DDX-bestand hebt verwezen, een v
 
 **De resultaten extraheren**
 
-De service Assembler retourneert een `java.util.Map`-object dat kan worden verkregen van het `AssemblerResult`-object en dat de bewerkingsresultaten bevat. Het geretourneerde `java.util.Map`-object bevat de resulterende documenten en eventuele uitzonderingen.
+De service Assembler retourneert een object `java.util.Map`, dat kan worden verkregen van het object `AssemblerResult` en dat bewerkingsresultaten bevat. Het geretourneerde `java.util.Map`-object bevat de resulterende documenten en eventuele uitzonderingen.
 
 De volgende tabel bevat een overzicht van enkele sleutelwaarden en objecttypen die in het geretourneerde `java.util.Map`-object kunnen worden gevonden.
 

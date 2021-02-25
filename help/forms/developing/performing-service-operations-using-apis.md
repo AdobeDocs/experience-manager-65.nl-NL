@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
 
 
 # Servicebewerkingen uitvoeren met behulp van API&#39;s {#performing-service-operations-using-apis}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 Voordat u begint clienttoepassingen te ontwikkelen met de AEM Forms API&#39;s, wordt u aangeraden eerst het aanroepen van AEM Forms te lezen, waarin de verschillende manieren worden beschreven waarop services kunnen worden aangeroepen. (Zie [Servicecontainer](/help/forms/developing/service-container.md#service-container).)
 

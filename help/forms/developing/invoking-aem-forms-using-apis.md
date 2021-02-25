@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 
 # AEM Forms aanroepen met API&#39;s {#invoking-aem-forms-using-apis}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 Adobe Experience Manager Forms is op J2EE gebaseerde bedrijfssoftware die bestaat uit services die werken binnen een gedeelde infrastructuur. De verrichtingen van de dienst verbruiken typisch of produceren documenten. Met AEM Forms kunt u de formulierwerkstroom combineren met elektronische formulieren, documentbeveiliging en het genereren van documenten in een geïntegreerde en samenhangende set services. Deze diensten kunnen van binnen en buiten de firewall worden betreden.
 

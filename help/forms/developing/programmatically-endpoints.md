@@ -10,15 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10863'
 ht-degree: 0%
 
 ---
 
 
 # Programmaticaal beheer van eindpunten {#programmatically-managing-endpoints}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 **Info over Endpoint Registry Service**
 
@@ -94,7 +96,7 @@ Voordat u een EJB-eindpunt programmatisch kunt toevoegen, moet u een `EndpointRe
 
 Om een EJB eindpunt voor de dienst tot stand te brengen, specificeer de volgende waarden:
 
-* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Om een EJB eindpunt tot stand te brengen, specificeer `EJB`.
+* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Als u een EJB-eindpunt wilt maken, geeft u `EJB` op.
 * **Omschrijving**: Specificeert de eindpuntbeschrijving.
 * **Naam**: Specificeert de naam van het eindpunt.
 * **Service-id**: Specificeert de dienst waartot het eindpunt behoort.
@@ -361,7 +363,7 @@ Als u parameterwaarden voor invoer wilt definiëren die vereist zijn voor het ei
 
 Wanneer u een eindpunt van een gecontroleerde map maakt, moet u een uitvoerparameterwaarde definiëren. Namelijk moet u de outputwaarde beschrijven die door de dienst is teruggekeerd die door het Gecontroleerde eindpunt van de Omslag wordt aangehaald. Neem bijvoorbeeld het proces dat in dit onderwerp is geïntroduceerd. Het heeft een outputwaarde genoemd `SecuredDoc` en zijn gegevenstype is `com.adobe.idp.Document`. Wanneer het creëren van een Gecontroleerd eindpunt van de Omslag voor dit proces (nadat een proces wordt geactiveerd, wordt het een dienst), moet u de waarde van de outputparameter bepalen.
 
-Geef de volgende waarden op om een uitvoerparameterwaarde te definiëren die voor het eindpunt van een gecontroleerde map is vereist:
+Geef de volgende waarden op om een uitvoerparameterwaarde te definiëren die vereist is voor het eindpunt van een gecontroleerde map:
 
 **Naam uitvoerparameter**: De naam van de uitvoerparameter. De naam van een waarde voor de procesuitvoer wordt opgegeven in Workbench. Als de outputwaarde tot een de dienstverrichting (de dienst behoort die geen proces is dat in Workbench wordt gecreeerd), wordt de outputnaam gespecificeerd in het component.xml- dossier. De naam van de uitvoerparameter voor het proces dat in deze sectie wordt geïntroduceerd, is bijvoorbeeld `SecuredDoc`.
 

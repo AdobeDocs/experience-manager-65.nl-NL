@@ -9,15 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '929'
 ht-degree: 0%
 
 ---
 
 
 # Servicecontainer {#service-container}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 De diensten van AEM Forms die in de de dienstcontainer worden gevestigd (met inbegrip van standaarddiensten zoals de encryptiedienst, langlevende, en kortstondige processen) kunnen worden aangehaald gebruikend diverse leveranciers, zoals een leverancier EJB. Met een EJB-provider kunnen AEM Forms-services worden aangeroepen via RMI/IIOP. Een webserviceprovider stelt services beschikbaar als webservices (WSDL Generation) met standaarden zoals SOAP/HTTP en SOAP/JMS.
 

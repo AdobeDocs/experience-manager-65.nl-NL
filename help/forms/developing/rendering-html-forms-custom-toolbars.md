@@ -11,15 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 9cf46a26d2aa2e41b924a4de89cf8ab5fdeeefc6
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
 
 
 # HTML Forms renderen met CustomToolbars {#rendering-html-forms-with-customtoolbars}
+
+**Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 ## HTML Forms renderen met aangepaste werkbalken {#rendering-html-forms-with-custom-toolbars}
 
@@ -44,7 +46,7 @@ fscJS is het Java-script dat aan elk knooppunt is gekoppeld. Het is noodzakelijk
 
 fscCSS is een stijlpagina die aan een bepaalde knoop wordt geassocieerd. De stijlen in de CSS-bestanden geven de werkbalkweergave aan. ** fscVCSS is een stijlpagina voor een verticale werkbalk, die links van het weergegeven HTML-formulier wordt weergegeven. ** fscIECSS is een stijlpagina die wordt gebruikt voor HTML-formulieren die worden weergegeven in Internet Explorer.
 
-Controleer of naar alle bovenstaande bestanden wordt verwezen in het bestand fscmenu.xml. Dat wil zeggen dat u in het bestand fscmenu.xml URI-locaties opgeeft die naar deze bestanden verwijzen, zodat de Forms-service ze kan vinden. Deze bestanden zijn standaard beschikbaar op URI-locaties die beginnen met interne trefwoorden `FSWebRoot` of `ApplicationWebRoot`.
+Controleer of naar alle bovenstaande bestanden wordt verwezen in het bestand fscmenu.xml. In het bestand fscmenu.xml geeft u dus URI-locaties op die naar deze bestanden verwijzen, zodat de Forms-service ze kan vinden. Deze bestanden zijn standaard beschikbaar op URI-locaties die beginnen met interne trefwoorden `FSWebRoot` of `ApplicationWebRoot`.
 
 Als u de werkbalk wilt aanpassen, vervangt u de trefwoorden door het externe trefwoord `FSToolBarURI` te gebruiken. Dit sleutelwoord vertegenwoordigt URI die aan de dienst van Forms in runtime wordt overgegaan (deze benadering wordt getoond later in deze sectie).
 
@@ -193,7 +195,7 @@ Wanneer de Forms-service een HTML-formulier genereert, wordt een formuliergegeve
 
 [Een HTML-formulier met een aangepaste werkbalk weergeven met de Java API](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
-[HTML-formulieren renderen met een aangepaste werkbalk met de webservice-API](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
+[HTML-formulieren met een aangepaste werkbalk weergeven met de webservice-API](#rendering-an-html-form-with-a-custom-toolbar-using-the-web-service-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

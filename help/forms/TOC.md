@@ -44,7 +44,7 @@ ht-degree: 1%
       + [Zelfstudie: Sjablonen maken](using/create-templates-print-web.md)
       + [Zelfstudie: Interactieve communicatie maken](using/create-interactive-communication0.md)
    + AEM Forms Reference Collaterals {#aem-forms-reference-collaterals}
-      + [De referentiesite Web.Gov en Web.Finance instellen en configureren](/help/forms/using/forms-install-configure-gov-reference-site.md)
+      + [De referentiesite We.Gov en We.Finance instellen en configureren](/help/forms/using/forms-install-configure-gov-reference-site.md)
       + [We.Gov en We.Finance](/help/forms/using/forms-gov-reference-site-user-demo.md)
       + [Referentiesite voor werving van werknemers doorloopt](/help/forms/using/employee-recruitment-reference-site.md)
       + [We.Referentiesite voor verlenging autoverzekering financieren](/help/forms/using/finance-auto-insurance-renewal-reference-site-walkthrough.md)
@@ -542,7 +542,7 @@ ht-degree: 1%
       + [AEM formulieren uitvoeren in de onderhoudsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + De database voor AEM formulieren {#maintain-aem-forms-database} onderhouden
       + [DB2-database: Een proces wekelijks uitvoeren](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Oracle database maximum open cursors drempel](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [Maximale drempel voor open cursors in de database oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md)
       + [Microsoft SQL Server-database: De configuratie verfijnen](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)

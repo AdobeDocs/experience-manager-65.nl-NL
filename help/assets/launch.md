@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1f40c099518bc9d296026d8cfac5b6291e41a846
+source-git-commit: 02937bb85792e2ae9dcdeee3b860f800812a4461
 workflow-type: tm+mt
-source-wordcount: '6242'
+source-wordcount: '6235'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ Dankzij deze integratie kunt u het gebruik van Dynamic Media Viewers op uw websi
 
 Zie [Extensie Adobe](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/overview.html#adobe-extension) in de gebruikershandleiding van het Experience Platform Launch voor meer informatie over extensies.
 
-**Wie deze documentatie in voorgenomen voor:** de beheerders van de Plaats, Ontwikkelaars op het Platform van de Experience Manager, en mensen in Verrichtingen.
+**Dit onderwerp is voorgenomen voor het volgende:De beheerders van de** Plaats, Ontwikkelaars op het Platform van de Experience Manager, en mensen in Verrichtingen.
 
 ### Beperkingen van de integratie {#limitations-of-the-integration}
 
@@ -405,7 +405,7 @@ De volgende tabel bevat een lijst met Dynamic Media Viewer-gebeurtenissen en de 
 
 **VOORDAT U BEGINT**
 
-Als u dit nog niet hebt gedaan, raadt Adobe u aan alle documentatie vóór deze sectie grondig te herzien zodat u de volledige integratie begrijpt.
+Adobe raadt u aan alle documentatie vóór deze sectie grondig te controleren, zodat u de volledige integratie begrijpt.
 
 In deze sectie worden de configuratiestappen beschreven die nodig zijn om Dynamic Media-viewers te integreren met Adobe Analytics en Adobe Analytics for Audio en Video. Hoewel het gebruik van de extensie Dynamic Media Viewers voor andere doeleinden in Experience Platform Launch mogelijk is, worden dergelijke scenario&#39;s niet behandeld in deze documentatie.
 
@@ -468,7 +468,7 @@ Zie ook [Analytics Implementation Guide](https://experienceleague.adobe.com/docs
    Als u een nieuwe variabele Aangepast verkeer wilt inschakelen, klikt u in Adobe Analytics op **[!UICONTROL Admin > Report Suites]** op de werkbalk.
 
 1. Selecteer op de pagina **[!UICONTROL Report Suite Manager]** het juiste rapport en klik vervolgens op **[!UICONTROL Edit Settings > Traffic > Traffic Variables]** op de werkbalk.
-1. Daar, neem een ongebruikte variabele op, geef het een beschrijvende naam ( **[!UICONTROL Viewer asset (prop 30)]**) en verander combodoos in &quot;Toegelaten&quot;in de Toegelaten kolom.
+1. Kies daar een ongebruikte variabele, geef deze een beschrijvende naam ( **[!UICONTROL Viewer asset (prop 30)]**) en wijzig keuzelijst met invoervak in &quot;Ingeschakeld&quot; in de kolom Ingeschakeld.
 
    De volgende schermafbeelding is een voorbeeld van een variabele van het Verkeer van de Douane ( **[!UICONTROL prop30]**) voor het volgen van een activanaam die door de kijker wordt gebruikt:
 
@@ -597,7 +597,7 @@ Zie [Omgevingen](https://experienceleague.adobe.com/docs/launch/using/reference/
 Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoerd:
 
 * Het toevoegen van en het bouwen van een nieuwe bibliotheek door alle noodzakelijke veranderingen (nieuwe degenen en updates) in de bibliotheek te omvatten.
-* De bibliotheek door de verschillende milieuniveaus verplaatsen (van ontwikkeling tot Staging en Productie)
+* De bibliotheek door de verschillende milieuniveaus verplaatsen (van Ontwikkeling tot Staging en Productie).
 
 #### Een nieuwe bibliotheek toevoegen en maken {#adding-and-building-a-new-library}
 
@@ -617,7 +617,7 @@ Bij het publiceren van een bibliotheek worden de volgende twee stappen uitgevoer
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Save & Build for Development]**.
 
-   Binnen enkele minuten wordt de bibliotheek gemaakt en klaar voor gebruik.
+   Over een paar minuten wordt de bibliotheek gemaakt en klaar voor gebruik.
 
    ![image2019-7-15_15-3-34](assets/image2019-7-15_15-3-34.png)
 
@@ -677,7 +677,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
    Het volgende Info-bericht wordt weergegeven:
 
-   *Om een geldig toegangstoken terug te winnen, wordt de openbare sleutel van het nieuwe certificaat toegevoegd aan de technische rekening op Adobe I/O!*.
+   *Om een geldig toegangstoken terug te winnen, wordt de openbare sleutel van het nieuwe certificaat toegevoegd aan de technische rekening op Adobe I/O!*
 
    Klik op **[!UICONTROL OK]** om het dialoogvenster Info te sluiten.
 
@@ -733,7 +733,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 1. Ga terug naar de pagina **[!UICONTROL Adobe IMS Technical Account Configuration]** die u eerder geopend hebt gelaten. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Next]** om de pagina **[!UICONTROL Account]** in het venster **[!UICONTROL Adobe IMS Technical Account Configuration]** te openen.
 
-   (Als u de pagina per ongeluk eerder hebt gesloten, gaat u terug naar de auteur van de Experience Manager en klikt u op **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** de optie **[!UICONTROL Experience Platform Launch]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Certificate]** de naam van het eerder gemaakte certificaat.)
+   (Als u de pagina eerder hebt gesloten, gaat u terug naar de auteur van de Experience Manager en klikt u op **[!UICONTROL Tools > Security > Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Cloud Solution]** de optie **[!UICONTROL Experience Platform Launch]**. Selecteer in de vervolgkeuzelijst **[!UICONTROL Certificate]** de naam van het eerder gemaakte certificaat.)
 
    ![2019-07-25_20-57-50](assets/2019-07-25_20-57-50.png)
 

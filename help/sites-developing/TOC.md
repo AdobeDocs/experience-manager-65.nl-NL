@@ -106,7 +106,7 @@ ht-degree: 6%
       + [SPA Inleiding en Analyse](spa-walkthrough.md)
       + [SPA WKND-zelfstudie](spa-wknd.md)
       + [Aan de slag met SPA in AEM - Reageren](spa-getting-started-react.md)
-      + [Aan de slag met SPA in AEM - hoekig](spa-getting-started-angular.md)
+      + [Aan de slag met SPA in AEM - Angular](spa-getting-started-angular.md)
       + [Een component React implementeren voor SPA](spa-implementing-react-component.md)
       + [SPA diep duiken](spa-deep-dives.md)
       + [Overzicht SPA Editor](spa-overview.md)

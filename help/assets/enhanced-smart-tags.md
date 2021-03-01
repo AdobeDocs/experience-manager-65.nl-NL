@@ -3,23 +3,23 @@ title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 09bb767ae8565624e7a6b9786a5cd4c581fe0b9a
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 2%
+source-wordcount: '1561'
+ht-degree: 1%
 
 ---
 
 
 # Slimme tags {#enhanced-smart-tags} begrijpen, toepassen en beheren
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt gecontroleerd, worden de elementen gemakkelijk geïdentificeerd en opgehaald.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt gecontroleerd, worden de elementen gemakkelijk geïdentificeerd en opgehaald.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
 Een autofabrikant kan bijvoorbeeld autoafbeeldingen labelen met modelnamen, zodat alleen relevante afbeeldingen worden weergegeven wanneer afbeeldingen van verschillende modellen worden doorzocht om een promotiecampagne te ontwerpen.
 
-Als u wilt dat de Smart Content Service de juiste tags toepast, moet u deze trainen om uw taxonomie te herkennen. Als u de service wilt trainen, moet u eerst een set elementen en tags beheren die deze elementen het beste beschrijven. Pas deze tags toe op de middelen en voer een trainingsworkflow uit om de service te helpen leren.
+Als u wilt dat de Smart Content Service de juiste tags toepast, moet u deze trainen om uw taxonomie te herkennen. Als u de service wilt trainen, moet u eerst een set elementen en tags beheren die deze elementen het beste beschrijven. Om de dienst te helpen leren, pas deze markeringen op de activa toe en stel een opleidingswerkschema in werking.
 
 Nadat een tag is opgeleid en gereed, kan de service deze tags nu toepassen op elementen via een workflow voor labelen.
 
@@ -41,10 +41,10 @@ Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inho
 Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie te maken op [!DNL Adobe Developer Console]:
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie.
-* De service Smart Content Service is ingeschakeld voor uw organisatie.
-* Het pakket Smart Content Services Base mag alleen worden toegevoegd aan een implementatie waarbij een [!DNL Adobe Experience Manager Sites] Base Package en [!DNL Assets] add-on zijn gelicentieerd.
+* Schakel de service Smart Content Service voor uw organisatie in.
+* Om het Slimme Pakket van de Basis van de Diensten van de Inhoud aan een plaatsing toe te voegen, vergunning [!DNL Adobe Experience Manager Sites] het Pakket van de Basis en [!DNL Assets] toe:voegen-on.
 
-Slimme tags worden alleen toegepast op elementen met de volgende MIME-typen:
+De service past slimme tags toe op elementen van de volgende MIME-typen:
 
 * image/jpeg
 * image/tiff
@@ -65,7 +65,7 @@ Slimme tags worden alleen toegepast op elementen met de volgende MIME-typen:
 * image/psd
 * image/vnd.adobe.photoshop
 
-Slimme tags toepassen van elementuitvoeringen wordt alleen ondersteund voor de volgende MIME-typen:
+De service past slimme tags toe op elementuitvoeringen van de volgende MIME-typen:
 
 * image/jpeg
 * image/pjpeg
@@ -152,7 +152,7 @@ U kunt de tagwerkstroom vanuit de workflowconsole of vanuit de tijdlijn activere
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld.
+   Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gecodeerd.
 
 #### Elementen labelen vanaf de tijdlijn {#tagging-assets-from-the-timeline}
 
@@ -163,7 +163,7 @@ U kunt de tagwerkstroom vanuit de workflowconsole of vanuit de tijdlijn activere
    ![start_workflow](assets/start_workflow.png)
 
 1. Selecteer de **[!UICONTROL DAM Smart Tag Assets]** workflow en geef een titel op voor de workflow.
-1. Klik op **[!UICONTROL Start]**. De workflow past de labels toe op elementen. Navigeer naar de map met middelen en controleer de tags om te controleren of de Smart Content Service uw elementen correct heeft gelabeld.
+1. Klik op **[!UICONTROL Start]**. De workflow past labels toe op de elementen. Als u wilt controleren of de Smart Content Service uw elementen correct heeft gelabeld, navigeert u naar de map met middelen en controleert u de tags.
 
 >[!NOTE]
 >
@@ -175,12 +175,12 @@ U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw 
 
 Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags naar afbeeldingen verder verfijnen door ervoor te zorgen dat de afbeelding in de zoekresultaten wordt weergegeven voor de meest relevante tags. In feite wordt hiermee de kans dat niet-verwante afbeeldingen in zoekresultaten worden weergegeven, verkleind.
 
-U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor een afbeelding te vergroten. Door een tag voor een afbeelding te promoten, neemt de kans toe dat de afbeelding in de zoekresultaten wordt weergegeven wanneer een zoekopdracht op basis van de desbetreffende tag wordt uitgevoerd.
+U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor een afbeelding te vergroten. Als u een tag voor een afbeelding promoot, neemt de kans toe dat de afbeelding in de zoekresultaten wordt weergegeven wanneer de desbetreffende tag wordt doorzocht.
 
-1. Zoek in het vak Onderzoek naar elementen op basis van een tag.
-1. Inspect de zoekresultaten om een afbeelding te identificeren die je niet relevant vindt voor je zoekopdracht.
+1. Zoek in het zoekvak naar elementen op basis van een tag als een trefwoord.
+1. Als u een afbeelding wilt identificeren die u niet relevant vindt voor uw zoekopdracht, bekijkt u de zoekresultaten.
 1. Selecteer de afbeelding en klik op **[!UICONTROL Manage Tags]** op de werkbalk.
-1. Controleer de tags op de pagina **[!UICONTROL Manage Tags]**. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt u op **[!UICONTROL Delete]** op de werkbalk. U kunt ook op `x`-symbool naast een tag klikken.
+1. Reviseer de tags op de pagina **[!UICONTROL Manage Tags]**. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt u op **[!UICONTROL Delete]** op de werkbalk. U kunt ook op `x`-symbool naast een tag klikken.
 1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt u op **[!UICONTROL Promote]** op de werkbalk. De tag die u promoot, wordt verplaatst naar de sectie **[!UICONTROL Tags]**.
 1. Klik **[!UICONTROL Save]** en klik dan **[!UICONTROL OK]**
 1. Navigeer naar de pagina **[!UICONTROL Properties]** voor de afbeelding. Let erop dat de code die u hebt bevorderd relevanter wordt toegewezen en eerder in de zoekresultaten wordt weergegeven.

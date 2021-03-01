@@ -3,17 +3,17 @@ title: Asset tagging configureren met behulp van Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags configureert in [!DNL Adobe Experience Manager] met de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 788a66d5732f0a120de6b80da69e9cf81f998667
 workflow-type: tm+mt
-source-wordcount: '1916'
-ht-degree: 23%
+source-wordcount: '1909'
+ht-degree: 21%
 
 ---
 
 
 # [!DNL Assets] voorbereiden voor slimme tags {#configure-asset-tagging-using-the-smart-content-service}
 
-Voordat u met het labelen van uw middelen kunt beginnen met Smart Content Services, moet u [!DNL Experience ManageR Assets] integreren met Adobe Developer Console om de slimme service van [!DNL Adobe Sensei] te benutten. Zodra gevormd treig de dienst gebruikend een paar beelden en een markering.
+Voordat u met het labelen van uw middelen kunt beginnen met Smart Content Services, moet u [!DNL Experience Manager Assets] integreren met Adobe Developer Console om de slimme service van [!DNL Adobe Sensei] te benutten. Zodra gevormd treig de dienst gebruikend een paar beelden en een markering.
 
 Controleer het volgende voordat u de Smart Content Service gebruikt:
 
@@ -31,7 +31,7 @@ Wanneer u met de Console van de Ontwikkelaar van Adobe integreert, verifieert de
 
 Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
-1. [Creeer een Slimme Configuratie van de ](#obtain-public-certificate) Dienst van de Inhoud in  [!DNL Experience Manager] om een openbare sleutel te produceren. [Verkrijg een openbaar certificaat voor OAuth-integratie.](#obtain-public-certificate)
+1. Om een openbare sleutel te produceren, [creeer een Slimme Configuratie van de Dienst](#obtain-public-certificate) in [!DNL Experience Manager]. [Verkrijg een openbaar certificaat voor OAuth-integratie.](#obtain-public-certificate)
 
 1. [Maak een integratie in Adobe Developer Console en upload de gegenereerde openbare sleutel.](#create-adobe-i-o-integration)
 
@@ -41,7 +41,7 @@ Om de Slimme Dienst van de Inhoud te vormen, volg deze top-level stappen:
 
 1. Schakel desgewenst automatische labeling in bij het uploaden van elementen](#enable-smart-tagging-in-the-update-asset-workflow-optional).[
 
-### Configuratie van Smart Content Service maken om een openbaar certificaat op te vragen {#obtain-public-certificate}
+### Verkrijg openbaar certificaat door de Slimme configuratie van de Dienst van de Inhoud {#obtain-public-certificate} te creëren
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Console.
 
@@ -73,11 +73,11 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe Developer Co
    ![Een voorstelling van de instellingen die voor de service voor slimme tags zijn gemaakt](assets/smart-tags-download-public-cert.png)
 
 
-   *Afbeelding: Instellingen voor service voor slimme tags*
+   *Afbeelding: Instellingen voor service voor slimme tags.*
 
 #### Opnieuw configureren wanneer een certificaat verloopt {#certrenew}
 
-Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een verlopen certificaat niet verlengen. Voer de onderstaande stappen uit om een nieuw certificaat toe te voegen.
+Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een verlopen certificaat niet verlengen. Voer de volgende stappen uit om een certificaat toe te voegen.
 
 1. Meld u als beheerder aan bij uw [!DNL Experience Manager]-implementatie. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
@@ -85,10 +85,10 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
 
 1. Verwijder het bestaande **[!UICONTROL similaritysearch]**-sleutelarchief met het verlopen certificaat. Klik op **[!UICONTROL Save & Close]**.
 
-   ![Verwijder het bestaande zoekitem voor gelijkenis in Keystore om een nieuw beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
+   ![Verwijder het bestaande zoekitem voor gelijkenis in Keystore om een beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
 
 
-   *Afbeelding: Verwijder de bestaande `similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
+   *Afbeelding: Verwijder het bestaande  `similaritysearch` item in het sleutelarchief om een beveiligingscertificaat toe te voegen.*
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Klik op **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Klik op de gewenste configuratie.
 
@@ -108,7 +108,7 @@ Als u API&#39;s voor Smart Content Service wilt gebruiken, maakt u een integrati
 
 1. Selecteer **[!UICONTROL Upload your public key]**. Geef het certificaatbestand op dat u hebt gedownload van [!DNL Experience Manager]. Er wordt een [!UICONTROL Public key(s) uploaded successfully]-bericht weergegeven. Klik op **[!UICONTROL Next]**.
 
-   De pagina [!UICONTROL Create a new Service Account (JWT) credential] toont de openbare sleutel voor het serviceaccount dat u zojuist hebt geconfigureerd. 
+   [!UICONTROL Create a new Service Account (JWT) credential] De pagina toont de openbare sleutel voor de de dienstrekening.
 
 1. Klik op **[!UICONTROL Next]**.
 
@@ -187,7 +187,7 @@ De validatieresultaten worden in hetzelfde dialoogvenster weergegeven.
    ![Workflow van DAM Update Asset configureren om stap Smart Tag toe te voegen en markering Smart Tag negeren te selecteren](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *Afbeelding: Workflow van DAM Update Asset configureren om stap Smart Tag toe te voegen en markering Smart Tag negeren te selecteren*
+   *Afbeelding: Configureer de DAM Update Asset-workflow om een stap met slimme tags toe te voegen en selecteer Slim label negeren.*
 
 1. Klik op **[!UICONTROL OK]** om de processtap te sluiten en sla de workflow op.
 
@@ -205,17 +205,17 @@ U kunt de Slimme Dienst van de Inhoud periodiek of op vereiste basis trainen.
 
 ### Richtlijnen voor training {#guidelines-for-training}
 
-Voor de beste resultaten moeten de afbeeldingen in de trainingsset voldoen aan de volgende richtlijnen:
+Voor de beste resultaten voldoen de afbeeldingen in de trainingsset aan de volgende richtlijnen:
 
 **Hoeveelheid en grootte:** Minimaal 30 afbeeldingen per tag. Minimaal 500 pixels aan de langere zijde.
 
-**Coherentie**: Afbeeldingen voor een tag moeten visueel op elkaar lijken.
+**Coherentie**: Afbeeldingen die voor een specifieke tag worden gebruikt, lijken visueel op elkaar.
 
 Het is bijvoorbeeld geen goed idee om al deze afbeeldingen te labelen als `my-party` (voor training), omdat ze er anders uitzien.
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](/help/assets/assets/do-not-localize/coherence.png)
 
-**Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat de Experience Manager leert zich te richten op de juiste dingen. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
+**Dekking**: Gebruik voldoende variatie in de afbeeldingen in de training. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat de Experience Manager leert zich te richten op de juiste dingen. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
 
 Voor de tag *model-down-pose* neemt u bijvoorbeeld meer trainingsafbeeldingen op die lijken op de gemarkeerde afbeelding hieronder, zodat u vergelijkbare afbeeldingen tijdens het labelen nauwkeuriger kunt identificeren.
 

@@ -12,10 +12,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 19%
+source-wordcount: '551'
+ht-degree: 18%
 
 ---
 
@@ -29,7 +29,14 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud b
 1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
 1. Selecteer **Ga naar de pagina** om de pagina te openen voor bewerking.
 
-### Starten van pagina&#39;s bewerken die zijn onderworpen aan een actieve kopie {#editing-launch-pages-subject-to-a-live-copy}
+>[!NOTE]
+>
+>U mag een pagina niet verplaatsen binnen een startperiode. Als u deze handeling uitvoert, wordt een waarschuwingsbericht weergegeven:
+>
+>* Waarschuwing: Deze pagina is de bron van een opstart. Het verplaatsen van de pagina is niet toegestaan.
+
+
+### Starten van pagina&#39;s bewerken waarop een actieve kopie {#editing-launch-pages-subject-to-a-live-copy} van toepassing is
 
 Als uw lancering op een [levende exemplaar](/help/sites-administering/msm.md) gebaseerd is, dan zult u:
 

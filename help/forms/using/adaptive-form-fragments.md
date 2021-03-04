@@ -9,7 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 translation-type: tm+mt
-source-git-commit: f9389a06f9c2cd720919486765cee76257f272c3
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Voer de volgende stappen uit om volledige fragmenten in formulieren weer te geve
 
 1. Ga naar AEM webconsoleconfiguratiepagina op https:[*host*]:[*port*]/system/console/configMgr.
 
-1. Zoek en klik op **[!UICONTROL Adaptive Form Configuration Service]** om het te openen in bewerkingsmodus.
+1. Zoek en klik op **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** om het te openen in bewerkingsmodus.
 1. Schakel het selectievakje **[!UICONTROL Enable Placeholder in place of Fragment]** uit om volledige fragmenten te tonen in plaats van de voorlopige afbeelding.
 
 ### Een fragment invoegen in een adaptief formulier {#insert-a-fragment-in-an-adaptive-form}

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te bepe
 
    ![1-2](assets/1-2.png)
 
-1. Zoek en klik in het venster Webconsole op **Adaptieve service Formulierconfiguratie**. **Het dialoogvenster Adaptive Form Configuration** Service wordt weergegeven. Wijzig geen waarde en klik op **Opslaan**.
+1. Zoek en klik op **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** in het venster Webconsole. **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** wordt weergegeven. Wijzig geen waarde en klik op **Opslaan**.
 
    Het leidt tot een dossier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-bewaarplaats.
 

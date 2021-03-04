@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7065a6b984afb18c188acd848b9b77da7da67749
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3118'
+source-wordcount: '3207'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Neem contact op met de leverancier van het platform voor alle problemen die spec
 Minimumeisen voor de installatie van Adobe Experience Manager:
 
 * Geïnstalleerde Java Platform, Standard Edition JDK, of andere ondersteunde [Java Virtual Machines](#java-virtual-machines)
-* Experience Manager QuickStart-bestand (zelfstandige WAR voor JAR- of webimplementatie)
+* QuickStart-bestand voor Experience Manager (zelfstandige WAR voor JAR- of webtoepassingsimplementatie)
 
 ### Minimale groottevereisten {#minimum-sizing-requirements}
 
@@ -120,7 +120,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 8 JDK - 64 bits</td>
+   <td>Oracle Java SE 8 JDK - 64-bits</td>
    <td>A: Ondersteund [3]</td>
   </tr>
   <tr>
@@ -134,10 +134,10 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
  </tbody>
 </table>
 
-1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS versies door Oracle (zie [Ondersteuning voor Oracle Java SE roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java.
+1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10, en Java 12 zijn niet-LTS versies door Oracle (zie [de steunroadmap van Java SE van het Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java.
 
 1. IBM JRE wordt slechts gesteund samen met de Server van de Toepassing WebSphere.
-1. Ondersteuning en distributie van de Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Raadpleeg de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie.
+1. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Zie [Oracle Java support for Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie.
 
 ### Opslag en duurzaamheid {#storage-persistence}
 
@@ -154,7 +154,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
 | IBM DB2 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[4]` |
-| Oracle Database 12c (12.1.x) | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
+| Database van oracle 12c (12.1.x) | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
 | Microsoft SQL Server 2016 | Forms-database | A: Ondersteund |
 | **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A: Ondersteund |
 | Apache Solr | Zoekservice | A: Ondersteund |
@@ -374,17 +374,17 @@ bijvoorbeeld `https://www.yourserver.com:4502`
 * het standaardgeval van `localhost` zal voor zowel IPv4 als IPv6 netwerkinstallaties worden geïnterpreteerd
 bijvoorbeeld `https://localhost:4502`
 
-### Vereisten voor AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
+### Vereisten voor AEM invoegtoepassing Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamische media is standaard uitgeschakeld. Zie hier om [Dynamische media](/help/assets/config-dynamic.md#enabling-dynamic-media) in te schakelen.
+AEM Dynamic Media is standaard uitgeschakeld. Zie hier om [Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media) in te schakelen.
 
-Als Dynamische media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
+Als Dynamic Media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
 
 >[!NOTE]
 >
->Deze systeemvereisten **alleen** zijn van toepassing als u Dynamische media - Hybride wijze gebruikt; Dynamische media - de hybride wijze heeft een ingebedde beeldserver, die slechts op bepaalde werkende systemen wordt verklaard.
+>Deze systeemvereisten **zijn slechts** van toepassing als u Dynamic Media - Hybride wijze gebruikt; Dynamic Media - Hybride modus heeft een ingesloten imageserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
 >
->Voor klanten van Dynamic Media die in de modus Dynamische media - Scene7 werken (dat wil zeggen: **dynamicmedia_scene7** runmode), zijn er geen extra systeemvereisten. alleen dezelfde systeemvereisten als AEM. Dynamische media - Scene7-modusarchitectuur gebruikt de op de cloud gebaseerde beeldservice en niet de service die is ingesloten in AEM.
+>Voor Dynamic Media-klanten die de Dynamic Media - Scene7-modus uitvoeren (dat wil zeggen **dynamicmedia_scene7** runmode), zijn er geen extra systeemvereisten. alleen dezelfde systeemvereisten als AEM. Dynamic Media - Scene7-modusarchitectuur gebruikt de op cloud gebaseerde beeldservice en niet de service die in AEM is ingesloten.
 
 #### Hardware {#hardware}
 
@@ -395,7 +395,7 @@ De volgende hardwarevereisten zijn van toepassing voor zowel Linux als Windows:
 
 #### Linux {#linux}
 
-Als u Dynamic Media gebruikt op Linux, moet aan de volgende voorwaarden worden voldaan:
+Als u Dynamic Media op Linux gebruikt, moet aan de volgende voorwaarden worden voldaan:
 
 * RedHat Enterprise 7 of CentOS 7 en hoger met de nieuwste herstelpatches
 * 64-bits besturingssysteem
@@ -431,7 +431,7 @@ Als u Dynamic Media gebruikt op Linux, moet aan de volgende voorwaarden worden v
 * Microsoft Windows Server 2016
 * Ruimte wisselen gelijk aan minstens tweemaal de hoeveelheid fysiek geheugen (RAM)
 
-Om Dynamische Media op Vensters te gebruiken, installeer Microsoft Visual Studio 2010, 2013, en 2015 redistributables voor x64 en x86.
+Om Dynamic Media op Vensters te gebruiken, installeer Microsoft Visual Studio 2010, 2013, en 2015 redistributables voor x64 en x86.
 
 Voor Windows x64:
 
@@ -509,6 +509,20 @@ Voor Windows x86:
 >
 
 
+
+### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
+
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server of Microsoft Windows 10
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
+* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
+* Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
+* 2,35 GB beschikbare ruimte op de vaste schijf
+* Dvd-rom-station
+* Monitorresolutie van 1024 x 768 pixels of hoger
+* Hardwareversnelling voor video (optioneel)
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
+* Beheerdersrechten voor het installeren van Designer.
 
 ### Vereisten voor het terugschrijven van AEM Assets XMP metagegevens {#requirements-for-aem-assets-xmp-metadata-write-back}
 

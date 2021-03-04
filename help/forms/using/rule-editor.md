@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
 source-wordcount: '6766'
 ht-degree: 0%
@@ -63,7 +63,7 @@ Voor meer informatie over regeltypes beschikbaar in de regelredacteur, zie [Besc
 
 Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelconstructie te gebruiken, zijn hier sommige richtlijnen om één constructie over een andere te kiezen. Voor meer informatie over de beschikbare regels in regelredacteur, zie [Beschikbare regeltypes in regelredacteur](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
 
-* Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die wordt geretourneerd.
+* Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die de voorwaarde retourneert.
 
    Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
 
@@ -156,7 +156,7 @@ Als u een regel wilt definiëren die is gebaseerd op een formulierobject, select
 
 Met de regel Eigenschap instellen op basis van een objecteigenschap kunt u het aantal selectievakjes in een adaptief formulier toevoegen op basis van een andere objecteigenschap die in het adaptieve formulier is opgenomen.
 
-De volgende afbeelding toont een voorbeeld van het dynamisch toevoegen van selectievakjes op basis van het aantal vervolgkeuzelijsten in het adaptieve formulier:
+In de volgende afbeelding ziet u een voorbeeld van het dynamisch toevoegen van selectievakjes op basis van het aantal vervolgkeuzelijsten in het adaptieve formulier:
 
 ![Objecteigenschap](assets/object_property_set_property_new.png)
 
@@ -383,7 +383,7 @@ Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-edi
 AEM Forms volgt de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
 1. Ga naar AEM webconsole op `https://[host]:[port]/system/console/configMgr`.
-1. Klik om **[!UICONTROL Adaptive Form Configuration Service]** te bewerken.
+1. Klik om **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** te bewerken.
 1. Kies **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** in de vervolgkeuzelijst **[!UICONTROL Default Mode for Rule Editor]**
 
 1. Klik op **[!UICONTROL Save]**.
@@ -620,7 +620,7 @@ Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulie
    ![De aangepaste clientbibliotheek van de functie toevoegen](assets/clientlib.png)
 
 1. Selecteer het invoernumerieke vak en tik ![edit-rules](assets/edit-rules.png) om de regeleditor te openen.
-1. Tik **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
+1. Tik **Regel maken**. Maak met de onderstaande opties een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
    [ ![Het gebruiken van douanefuncties om een ](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)ruleTap  **Done** tot stand te brengen. Uw aangepaste functie wordt toegevoegd.
 
 #### Ondersteunde typen voor functiedeclaratie {#function-declaration-supported-types}

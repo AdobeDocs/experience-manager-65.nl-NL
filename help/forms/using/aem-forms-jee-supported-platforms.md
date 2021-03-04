@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c9c407ea7c0bff3d15934552cd709bec7f24e857
+source-git-commit: d62249ee2e2d40f2a437c1cb7f2a80f3f8e67efe
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -140,22 +140,22 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle Database 12c Release 1</p> </td>
+   <td><p>Database van oracles 12c, Release 1</p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
    <tr>
-   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0)</p> </td>
+   <td><p>Database van het oracle 12c Release 2 (12.2.0.1.0)</p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td>Oracle Database 18c </td>
+   <td>Database van oracles 18c </td>
    <td>Repository Microkernel</td>
    <td>Ondersteund</td>
   </tr> 
    <tr>
-   <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) en Enterprise-edities) </td>
+   <td>Database 19c van oracles (Standard, Real Application Clusters (RAC) en Enterprise-edities) </td>
    <td>Repository Microkernal </td>
    <td>Ondersteund</td>
   </tr>
@@ -221,8 +221,8 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
   </tr>
   <tr>
    <td>Oracle</td>
-   <td><p>Oracle Database 19.3.0.0.0 JDBC-stuurprogramma</p> <p>ojdbc8.jar (versie 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Downloaden vanaf <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Oracle-website</a>.</p> </td>
+   <td><p>JDBC-stuurprogramma voor oracle Database 19.3.0.0.0</p> <p>ojdbc8.jar (versie 19.3.0.0.0)<br /> </p> </td>
+   <td><p>Downloaden vanaf <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Website Oracle</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -335,7 +335,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
 * AEM Forms on JEE ondersteunt updates, patches en repareert pakketten boven op de opgegeven primaire en secundaire versie van ondersteunde software. Bijwerken naar de volgende hoofd- of subversie wordt echter alleen ondersteund als dit is opgegeven.
 * Clustergebaseerde installaties ondersteunen TarMK-persistentie niet. Zie [Een persistentietype kiezen voor een AEM Forms-installatie](/help/forms/using/choosing-persistence-type-for-aem-forms.md) voor informatie over ondersteunde persistentie.
 * AEM Forms on JEE biedt ondersteuning voor diverse software van derden volgens ons [Beleid voor softwareondersteuning van derden](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-* AEM Forms on JEE ondersteunt platforms op basis van de ondersteuning van externe leveranciers. Sommige combinaties zijn mogelijk niet toegestaan door externe leveranciers. Veel leveranciers hebben hun toepassingsservers bijvoorbeeld niet gecertificeerd met Oracle. Als gevolg hiervan biedt AEM Forms op JEE ook geen ondersteuning voor deze combinaties. Om ervoor te zorgen dat u de gesteunde softwareversies kiest, controleer de steunmatrijs ook voor de derdeverkopers.
+* AEM Forms on JEE ondersteunt platforms op basis van de ondersteuning van externe leveranciers. Sommige combinaties zijn mogelijk niet toegestaan door externe leveranciers. Veel leveranciers hebben hun toepassingsservers bijvoorbeeld niet met Oracle gecertificeerd. Als gevolg hiervan biedt AEM Forms op JEE ook geen ondersteuning voor deze combinaties. Om ervoor te zorgen dat u de gesteunde softwareversies kiest, controleer de steunmatrijs ook voor de derdeverkopers.
 * AEM Forms op JEE biedt geen ondersteuning voor TarMK Cold Standby.
 * AEM Forms on JEE biedt geen ondersteuning voor verticale clustering.
 * AEM Forms on JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
@@ -350,7 +350,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle Unified Directory (OUD) 11g Release 2</td>
+   <td>Oracle Verenigde Folder (OUD) Versie 11g 2</td>
    <td>Servicepakketten</td>
   </tr>
   <tr>
@@ -552,23 +552,17 @@ Zie voor aanvullende vereisten:
 
 ### Designer {#designer}
 
->[!NOTE]
->
->Als u Designer in Windows wilt installeren, voert u het installatieprogramma uit met beheerdersrechten.
-
-* Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
-   * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
-   * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
-
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server of Microsoft Windows 10
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
+* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
 * 2,35 GB beschikbare ruimte op de vaste schijf
 * Dvd-rom-station
-* Internet Explorer 10 of 11; Firefox 45.x
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
+* Beheerdersrechten voor het installeren van Designer.
 
 ### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
 

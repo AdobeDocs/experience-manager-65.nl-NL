@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 3690d2d76ce13064bd3946f4f6fea1a2759cdf37
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -35,8 +35,8 @@ De volgende secties in dit artikel zijn beschikbaar:
 De AEM Forms-app voor iOS die is geconfigureerd voor synchronisatie met AEM Forms op OSGi ondersteunt alleen bijlagen op veldniveau. Alle bijlagen moeten unieke namen hebben. Als meerdere bijlagen dezelfde naam hebben, wordt slechts één bijlage bewaard en gaan alle andere bijlagen met dezelfde naam verloren. Voer de volgende stappen uit om te voorkomen dat gebruikers op iOS-apparaten gegevens verliezen:
 
 1. Navigeer op de verbonden server naar **Adobe Experience Manager > Tools > Operations > Web Console**.
-1. Zoek en klik **Adaptieve service Formulierconfiguratie**.
-1. Schakel in het dialoogvenster Adaptieve formulierconfiguratieservice **Bestandsnamen uniek maken** in.
+1. **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** zoeken en klikken.
+1. Schakel in het dialoogvenster [!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration] **Bestandsnamen uniek maken** in.
 
    Als de instelling **Bestandsnamen uniek maken** is uitgeschakeld, ervaren gebruikers gegevensverlies als ze proberen adaptieve formulieren met meerdere bijlagen te verzenden.
 

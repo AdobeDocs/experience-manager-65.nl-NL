@@ -1,17 +1,16 @@
 ---
 title: De handeling Verzenden configureren
 seo-title: De handeling Verzenden configureren
-description: Met AEM Forms kunt u een verzendactie configureren om te definiëren hoe een adaptief formulier na verzending wordt verwerkt. U kunt ingebouwde verzendacties gebruiken of zelf schrijven.
-seo-description: Met AEM Forms kunt u een verzendactie configureren om te definiëren hoe een adaptief formulier na verzending wordt verwerkt. U kunt ingebouwde verzendacties gebruiken of zelf schrijven.
+description: Met Forms kunt u een verzendactie configureren om te definiëren hoe een adaptief formulier na verzending wordt verwerkt. U kunt ingebouwde verzendacties gebruiken of zelf schrijven.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 translation-type: tm+mt
-source-git-commit: c74d9e86727f2deda62b8d1eb105b28ef4b6d184
+source-git-commit: 82fcc7ea1029f069aff95f50b3eb1a1581ec5c95
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -60,9 +59,9 @@ Met de optie **Verzenden naar REST-eindpunt** worden de gegevens die in het form
 
 `{fieldName}={request parameter name}`
 
-Zoals u in de onderstaande afbeelding ziet, worden `param1` en `param2` doorgegeven als parameters met waarden die zijn gekopieerd uit de velden **textbox** en **numericbox** voor de volgende actie.
+Zoals in de afbeelding hieronder wordt getoond, worden `param1` en `param2` doorgegeven als parameters met waarden die uit de velden **textbox** en **numeric box** voor de volgende actie worden gekopieerd.
 
-U kunt **verzoek van de POST ook toelaten** en een URL verstrekken om het verzoek te posten. Als u gegevens wilt verzenden naar de AEM server waarop het formulier zich bevindt, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de AEM server. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt **verzoek van de POST ook toelaten** en een URL verstrekken om het verzoek te posten. Als u gegevens wilt verzenden naar de server van de Experience Manager die als host fungeert voor het formulier, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de server van de Experience Manager. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
 
@@ -85,7 +84,7 @@ In het bovenstaande voorbeeld wordt door de gebruiker ingevoerde informatie in `
 
 `String data=request.getParameter("param1");`
 
-De parameters die u gebruikt voor het posten van XML-gegevens en -bijlagen zijn `dataXml` en `attachments`.
+Op dezelfde manier zijn parameters die u voor het posten van de gegevens en de gehechtheid van XML gebruikt `dataXml` en `attachments`.
 
 U gebruikt deze twee parameters in uw script bijvoorbeeld om gegevens te parseren op een eindpunt in de rest. U gebruikt de volgende syntaxis om de gegevens op te slaan en te ontleden:
 
@@ -108,11 +107,11 @@ Met de handeling **PDF verzenden via e-mail** wordt een e-mail met een PDF met f
 >[!NOTE]
 Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
 
-## Een formulierwerkstroom aanroepen {#invoke-a-forms-workflow}
+## Een Forms Workflow {#invoke-a-forms-workflow} aanroepen
 
-Met de optie **Verzenden naar Forms-workflow** worden een gegevens-xml en bestandsbijlagen (indien aanwezig) naar een bestaande Adobe-LiveCycle of AEM Forms verzonden tijdens een JEE-proces.
+Met de verzendoptie **Verzenden naar Forms Workflow** worden een gegevens-xml en bestandsbijlagen (indien aanwezig) verzonden naar een bestaande Adobe-LiveCycle of AEM Forms op een JEE-proces.
 
-Zie [Formulierwerkstromen verzenden en de formuliergegevens verwerken met werkstromen](../../forms/using/submit-form-data-livecycle-process.md) voor informatie over het configureren van de verzendactie Verzenden naar formulieren.
+Zie [Formuliergegevens verzenden en verwerken met behulp van formulierwerkstromen](../../forms/using/submit-form-data-livecycle-process.md) voor informatie over het configureren van de verzendactie Verzenden naar Forms Workflow.
 
 ## Verzenden met gebruik van formuliergegevensmodel {#submit-using-form-data-model}
 
@@ -124,7 +123,7 @@ Zie [AEM Forms Data Integration](../../forms/using/data-integration.md) voor inf
 
 ## Forms Portal verzendt handeling {#forms-portal-submit-action}
 
-Met de optie **Forms Portal Handeling verzenden** worden formuliergegevens beschikbaar via een AEM Forms-portal.
+Met de optie **Forms Portal Handeling verzenden** worden formuliergegevens beschikbaar via een AEM Forms Portal.
 
 Zie [Concepten en verzendingscomponent](../../forms/using/draft-submission-component.md) voor meer informatie over de Forms Portal en de verzendactie.
 
@@ -132,7 +131,7 @@ Zie [Concepten en verzendingscomponent](../../forms/using/draft-submission-compo
 
 Met de **Invoke an AEM Workflow** submit-handeling wordt een adaptief formulier gekoppeld aan een AEM workflow. Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart op het verwerkingsknooppunt. Bovendien worden het gegevensbestand, de bijlagen, en het document van Verslag, indien van toepassing, bij de ladingsplaats van het werkschema geplaatst.
 
-Voordat u de **Invoke an AEM Workflow** submit action, [configure de AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEMWerkschema, zie [Formulier-centric werkschema&#39;s op OSGi](../../forms/using/aem-forms-workflow.md).
+Voordat u de **Invoke an AEM Workflow** submit action, [configure de Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEMWerkschema, zie [Formulier-centric werkschema&#39;s op OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
@@ -142,7 +141,7 @@ Met de functie voor opnieuw valideren aan de serverzijde kunt u ook de validatie
 
 ### Wat moet u op de server valideren? {#what-to-validate-on-server-br}
 
-Alle OOTB-veldvalidaties (out-of-box) van een adaptief formulier die opnieuw op de server worden uitgevoerd, zijn:
+Alle OOTB-veldvalidaties (out-of-box) van een adaptief formulier die opnieuw worden uitgevoerd op de server zijn:
 
 * Vereist
 * Clausule voor validatie
@@ -158,9 +157,12 @@ Validatie op de server inschakelen
 
 Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie op het servereinde mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
 
+>[!NOTE]
+Servervalidatie valideert het formuliermodel. Het wordt aanbevolen een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML-opmaak en DOM-manipulatie, in dezelfde clientbibliotheek.
+
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}
 
-In het geval van **complexe validatieregels** bevindt het exacte validatiescript zich soms in aangepaste functies en de auteur roept deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties op de server, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder het tabblad **Standaard** van Adaptief formuliercontainereigenschappen, zoals hieronder wordt weergegeven.
+Als er soms complexe validatieregels zijn, bevindt het exacte validatiescript zich in aangepaste functies en roept de auteur deze aangepaste functies aan vanuit de expressie voor veldvalidatie. Als u deze aangepaste functiebibliotheek bekend en beschikbaar wilt maken tijdens het uitvoeren van validaties op de server, kan de auteur van het formulier de naam van AEM clientbibliotheek configureren onder het tabblad **Standaard** van Adaptief formuliercontainereigenschappen, zoals hieronder wordt weergegeven.
 
 ![Aangepaste functies ondersteunen in validatie-expressies](assets/clientlib-cat.png)
 
@@ -170,6 +172,6 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek per adaptief formulier confi
 
 ## Foutafhandeling bij verzendactie {#error-handling-on-submit-action}
 
-Als deel van AEM veiligheid en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer een formulier 404- of 500-fouten worden verzonden. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
+Als deel van de veiligheid van de Experience Manager en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer een formulier 404- of 500-fouten worden verzonden. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
 
 Zie [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md) voor meer informatie.

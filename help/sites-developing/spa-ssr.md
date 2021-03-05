@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: a2fa9a56de8882731e8193696f572a74c98c6b89
+source-git-commit: 41e30a668c8c02f2c43e509ed708c4b9fa39a269
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Dit kan echter leiden tot langere laadtijden, vooral als de SPA groot en rijk is
 
 ## Wanneer moet u SSR {#when-to-use-ssr} gebruiken?
 
-SSR is niet vereist voor alle projecten. Hoewel AEM JS SSR voor SPA volledig steunt, beveelt Adobe niet aan deze systematisch uit te voeren voor elk project.
+SSR is niet vereist voor alle projecten. Hoewel AEM volledig JS SSR voor SPA steunt, adviseert Adobe niet het systematisch voor elk project uit te voeren.
 
 Wanneer u besluit SSR te implementeren, moet u eerst inschatten welke extra complexiteit, inspanning en kosten het toevoegen van SSR realistisch vertegenwoordigt voor het project, inclusief het langetermijnonderhoud. Een SSR-architectuur mag alleen worden gekozen wanneer de toegevoegde waarde duidelijk hoger is dan de geraamde kosten.
 

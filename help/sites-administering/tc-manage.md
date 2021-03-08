@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '3427'
+source-wordcount: '3453'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,10 @@ Maak vertaalprojecten zodat u de workflow voor het vertalen van de master bronne
 U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, AEM leidt tot extra projecten.
 
 U kunt ook [handmatig vertaalprojecten maken](#creating-a-translation-project-using-the-projects-console).
+
+>[!NOTE]
+>
+>Als u een project wilt maken, moet uw account lid zijn van de groep `project-administrators`.
 
 **Eerste vertalingen en Bijwerken van vertalingen**
 
@@ -170,7 +174,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
 1. Selecteer het bovenste item van de vertakking die u wilt toevoegen en klik of tik op het pictogram van het vinkje. U kunt meerdere selecties maken.
 
-   ![chlimage_1-247](assets/chlimage_1-248.png)
+   ![chlimage_1-248](assets/chlimage_1-248.png)
 
 1. U kunt ook het zoekpictogram selecteren om gemakkelijk te zoeken naar pagina&#39;s of elementen die u aan uw vertaaltaak wilt toevoegen.
 
@@ -402,7 +406,7 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-1. Selecteer Taalkopieën en selecteer vervolgens de taalkopieën die u wilt vullen.
+1. Selecteer Exemplaren van de Taal, en selecteer dan de taalexemplaren die u wilt bevolken.
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
@@ -418,6 +422,10 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt
 ## Een vertaalproject maken met de projectconsole {#creating-a-translation-project-using-the-projects-console}
 
 U kunt een vertaalproject manueel tot stand brengen als u verkiest de console van Projecten te gebruiken.
+
+>[!NOTE]
+>
+>Als u een project wilt maken, moet uw account lid zijn van de groep `project-administrators`.
 
 Wanneer u handmatig een vertaalproject maakt, moet u naast de [basiseigenschappen](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) ook waarden opgeven voor de volgende translatie-gerelateerde eigenschappen:
 

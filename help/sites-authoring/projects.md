@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0d5a48be283484005013ef3ed7ad015b43f6398b
+source-git-commit: b9c77b9b50ae7f18198baddf82dffcd8de4f30be
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1399'
 ht-degree: 9%
 
 ---
@@ -76,7 +76,7 @@ In de **Elementen** tegel, kunt u alle activa verzamelen die u voor een bepaald 
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamische media beschikt.
+U uploadt elementen rechtstreeks in de tegel. Daarnaast kunt u Afbeeldingssets, Spin-sets of Gemengde mediasets maken als u over de invoegtoepassing Dynamic Media beschikt.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -168,7 +168,7 @@ Deze worden beschreven in [Werken met projectworkflows.](/help/sites-authoring/p
 
 ### Lanceringen {#launches}
 
-In de tegel Startpagina worden alle opstarten weergegeven die zijn aangevraagd met een [Workflow voor het starten van aanvragen.](/help/sites-authoring/projects-with-workflows.md)
+De tegel van Lanceringen toont om het even welke lanceringen die met een [werkschema van de Lancering van het Verzoek zijn gevraagd.](/help/sites-authoring/projects-with-workflows.md)
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
@@ -234,7 +234,7 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
    <td>
     <ul>
      <li>DAM-gebruikersgroep (om een project te kunnen tot stand brengen)</li>
-     <li>project-beheerders groep (om activa te kunnen bewegen)</li>
+     <li>project-beheerders groep (om tot een project te kunnen leiden en activa te bewegen)</li>
     </ul> </td>
   </tr>
  </tbody>

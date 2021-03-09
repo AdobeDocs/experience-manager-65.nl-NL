@@ -1,11 +1,11 @@
 ---
 title: Inleiding tot [!DNL Adobe Experience Manager Assets]
-description: Leer wat het beheer van digitale activa, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
+description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 130a03c821fd2a1e9ecda70039241720052a8920
+source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De basisgebruikersinterface is het zelfde als dat van [!DNL Sites]. Zie [Overzic
 Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afbeelding in de DAM-opslagplaats moet worden geplaatst of een afbeeldingscomponent moet worden gebruikt:
 
 * Als de afbeelding dezelfde levenscyclus heeft als de pagina, gebruikt u de component Image.
-* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding twee keer of buiten WCM gebruikt, gebruikt u [!DNL Assets].
+* Als de afbeelding een aparte levenscyclus heeft, bijvoorbeeld als u de afbeelding tweemaal of buiten WCM gebruikt, gebruikt u [!DNL Assets].
 
 ## Wat zijn digitale middelen? {#what-are-digital-assets}
 
@@ -90,5 +90,6 @@ Zie [Middelen en Mediabibliotheek](medialibrary.md) voor informatie over de vers
 
 >[!MORELIKETHIS]
 >
->* [Experience Manager Assets als moderne DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [Video-introductie - Experience Manager-elementen als een moderne DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [Metagegevensconcepten begrijpen](/help/assets/metadata-concepts.md)
 

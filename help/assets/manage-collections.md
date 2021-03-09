@@ -4,9 +4,9 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '2024'
 ht-degree: 10%
 
 ---
@@ -94,7 +94,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    >[!NOTE]
    >
-   >Als u **[!UICONTROL Public]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de eigenaarrol nadat u het creeert. Als u de optie **[!UICONTROL Public]** uitschakelt, wordt de DAM-gebruikersgroep niet meer gekoppeld aan de slimme verzameling.
+   >Als u **[!UICONTROL Public]** selecteert, wordt de slimme inzameling beschikbaar aan iedereen met de eigenaarrol nadat u het creeert. Als u de optie **[!UICONTROL Public]** annuleert, is de DAM-gebruikersgroep niet langer gekoppeld aan de slimme verzameling.
 
 1. Klik **[!UICONTROL Save]** om de slimme inzameling tot stand te brengen, en dan het berichtvakje te sluiten om het proces te voltooien.
 
@@ -152,11 +152,11 @@ U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functi
 1. Selecteer twee of meer verzamelingen in de verzamelingsconsole.
 1. Klik **[!UICONTROL Properties]** op de werkbalk.
 1. Bewerk desgewenst de metadata op de pagina **[!UICONTROL Collection Metadata]** onder de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**.
-1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, schakelt u de overige verzamelingen in de lijst met verzamelingen uit. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
+1. Als u de eigenschappen van metagegevens voor een specifieke verzameling wilt weergeven, annuleert u de selectie van de resterende verzamelingen in de lijst met verzamelingen. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor de bepaalde inzameling.
 
    >[!NOTE]
    >
-   >* Op de pagina [!UICONTROL Properties] kunt u verzamelingen uit de lijst met verzamelingen verwijderen door ze te deselecteren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. [!DNL Experience Manager] werkt de metagegevens van de verzamelingen die u verwijdert niet bij.
+   >* Op de pagina [!UICONTROL Properties] kunt u verzamelingen verwijderen uit de lijst met verzamelingen door de selectie te annuleren. Alle verzamelingen zijn standaard geselecteerd in de lijst met verzamelingen. [!DNL Experience Manager] werkt de metagegevens van de verzamelingen die u verwijdert niet bij.
    >* Selecteer boven aan de lijst het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de verzamelingen en het wissen van de lijst.
 
 
@@ -202,7 +202,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
    >[!NOTE]
    >
-   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten [ te verwijderen.](#saved-searches)
+   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#saved-searches) te verwijderen.[
 
 ## Een verzameling {#downloading-a-collection} downloaden
 

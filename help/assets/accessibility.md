@@ -3,7 +3,7 @@ title: Toegankelijkheid in [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] gebruikers met een handicap helpen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 1%
@@ -95,7 +95,7 @@ De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De 
 | Element of map is geselecteerd | `e` | Het geselecteerde element bewerken. |
 | Element of map is geselecteerd | `m` | Verplaats het geselecteerde element. |
 | Element of map is geselecteerd | `Ctrl + c` | Kopieer het geselecteerde element. |
-| Element of map is geselecteerd | `Esc` | Schakel de selectie uit. |
+| Element of map is geselecteerd | `Esc` | De selectie annuleren. |
 | Dialoogvenster wordt geopend en heeft de focus | `Esc` | Dialoogvenster Sluiten. |
 | In een map in DAM | `Ctrl + v` | Plak het gekopieerde element. |
 | [!DNL Assets] Console | `Ctrl + A` | Selecteer alle elementen. |

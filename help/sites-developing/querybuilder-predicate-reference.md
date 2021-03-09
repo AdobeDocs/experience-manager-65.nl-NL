@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
 * **operation**
 
-   &quot; `=`&quot; voor exacte overeenkomst, &quot; `!=`&quot; voor ongelijkheidsvergelijking, &quot; `>`&quot; voor eigenschap1 groter dan eigenschap2, &quot; `>=`&quot; voor eigenschap1 groter dan of gelijk aan property2. De standaardwaarde is &quot; `=`&quot;.
+   &quot; `equals`&quot; voor exacte overeenkomst, &quot; `!=`&quot; voor ongelijkheidsvergelijking, &quot; `greater`&quot; voor eigenschap1 groter dan eigenschap2, &quot; `>=`&quot; voor eigenschap1 groter dan of gelijk aan property2. De standaardwaarde is &quot; `equals`&quot;.
 
 ### daterange {#daterange}
 

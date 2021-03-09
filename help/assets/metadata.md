@@ -3,9 +3,9 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d070f5dca569dfb90d3034b74c2940fd68d8ceab
+source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
 workflow-type: tm+mt
-source-wordcount: '2322'
+source-wordcount: '2285'
 ht-degree: 10%
 
 ---
@@ -77,11 +77,6 @@ Als u de pagina met metagegevenseigenschappen wilt aanpassen, inclusief het toev
 1. Navigeer in de gebruikersinterface [!DNL Assets] naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
 1. Klik in de werkbalk op **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
-
-   >[!NOTE]
-   >
-   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de eigenschappenpagina worden alleen metagegevensvelden weergegeven die gemeenschappelijk zijn op de eigenschappenpagina&#39;s van alle afzonderlijke elementen.
-
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
 1. Schakel de overige elementen in de lijst uit als u de metagegevenseditor voor een bepaald element wilt weergeven. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
 
@@ -213,7 +208,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit de map **[!UICONTROL Properties]**.
 

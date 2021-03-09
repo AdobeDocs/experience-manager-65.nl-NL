@@ -3,9 +3,9 @@ title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience M
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 4ca77c7de6113127b123645a1955aaa70a91c1f3
+source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2289'
 ht-degree: 10%
 
 ---
@@ -78,11 +78,11 @@ Als u de pagina met metagegevenseigenschappen wilt aanpassen, inclusief het toev
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
 1. Klik in de werkbalk op **[!UICONTROL Properties]** om de pagina met eigenschappen voor de geselecteerde elementen te openen.
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
-1. Schakel de overige elementen in de lijst uit als u de metagegevenseditor voor een bepaald element wilt weergeven. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
+1. Als u de metagegevenseditor voor een bepaald element wilt weergeven, annuleert u de selectie van de overige elementen in de lijst. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
 
    >[!NOTE]
    >
-   >* Op de pagina met eigenschappen kunt u elementen uit de lijst met elementen verwijderen door ze te deselecteren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
+   >* Op de eigenschappenpagina kunt u elementen uit de elementenlijst verwijderen door de selectie te annuleren. In de lijst met elementen zijn standaard alle elementen geselecteerd. De metagegevens voor elementen die u uit de lijst verwijdert, worden niet bijgewerkt.
    >* Selecteer boven aan de lijst met elementen het selectievakje bij **[!UICONTROL Title]** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
@@ -208,7 +208,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit de map **[!UICONTROL Properties]**.
 

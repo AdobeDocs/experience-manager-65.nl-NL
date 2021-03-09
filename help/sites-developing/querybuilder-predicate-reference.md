@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
-source-git-commit: 571a48790c4977e97abec24fe88407b5b6376108
+source-git-commit: 7a96ff5cdd187291efe108d1171782bcbecfaeb0
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -100,7 +100,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
 * **operation**
 
-   &quot; `equals`&quot; voor exacte overeenkomst, &quot; `!=`&quot; voor ongelijkheidsvergelijking, &quot; `greater`&quot; voor eigenschap1 groter dan eigenschap2, &quot; `>=`&quot; voor eigenschap1 groter dan of gelijk aan property2. De standaardwaarde is &quot; `equals`&quot;.
+   &quot;`equals`&quot;voor nauwkeurige gelijke, &quot;`!=`&quot;voor ongelijkheidsvergelijking, &quot;`greater`&quot;voor eigenschap1 groter dan eigenschap2, &quot;`>=`&quot;voor eigenschap1 groter dan of gelijk aan property2. De standaardwaarde is &quot;`equals`&quot;.
 
 ### daterange {#daterange}
 
@@ -370,7 +370,7 @@ Ondersteunt facetextractie. Zal emmers verstrekken voor elke unieke eigenschapwa
 
 * **bewerking**
 
-   &quot; `equals`&quot; voor exacte overeenkomst (standaard), &quot; `unequals`&quot; voor ongelijkheidsvergelijking, &quot; `like`&quot; voor het gebruik van de `jcr:like` xpath-functie (optioneel), &quot; `not`&quot; voor geen overeenkomst (bijvoorbeeld &quot; `not(@prop)`&quot; in xpath, value param will be ignored) or &quot; `exists`&quot; for existentiecontrole (value can be true - property must exist, the default - or false - same as &quot; `not`&quot;)
+   &quot;`equals`&quot; voor exacte overeenkomst (standaard), &quot;`unequals`&quot; voor ongelijkheidsvergelijking, &quot;`like`&quot; voor het gebruik van de `jcr:like` xpath-functie (optioneel), &quot; `not`&quot; voor geen overeenkomst (bijvoorbeeld &quot;`not(@prop)`&quot; in xpath, value param zal worden genegeerd) of &quot;`exists`&quot;voor existentiecontrole (de waarde kan waar zijn - het bezit moet bestaan, het gebrek - of vals - het zelfde als &quot;`not`&quot;)
 
 * **diepte**
 

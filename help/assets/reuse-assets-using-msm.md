@@ -4,9 +4,9 @@ description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 7eb569c86c45daa8b175f924b211693a5d5dde58
+source-git-commit: 5c9907bf475796c5bbb61d6fcaf43730f9e79777
 workflow-type: tm+mt
-source-wordcount: '3264'
+source-wordcount: '3257'
 ht-degree: 9%
 
 ---
@@ -70,7 +70,7 @@ Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 1. Selecteer bronelementen of -mappen. Klik op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]** op de werkbalk.
 
-   ![Actieve kopie maken van Experience Manager-interface](assets/create_lc1.png)
+   ![Actieve kopie maken van  [!DNL Experience Manager] interface](assets/create_lc1.png)
 
    *Afbeelding: Live kopie maken van  [!DNL Experience Manager] interface.*
 
@@ -82,7 +82,7 @@ Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
 1. Klik in de interface [!DNL Experience Manager] in de rechterbovenhoek op **[!UICONTROL Create]** > **[!UICONTROL Live Copy]**.
 
-   ![Actieve kopie maken van Experience Manager-interface](assets/create_lc2.png)
+   ![Actieve kopie maken van  [!DNL Experience Manager] interface](assets/create_lc2.png)
 
    *Afbeelding: Live kopie maken van  [!DNL Experience Manager] interface.*
 
@@ -106,7 +106,7 @@ De volgende twee methoden werken voor elementen en mappen:
 
 >[!TIP]
 >
->Als u de status van enkele afzonderlijke live kopieën wilt controleren, gebruikt u de eerste methode om de pagina [!UICONTROL Properties] te controleren. Om statussen van vele levende exemplaren te controleren, gebruik de tweede methode om de **[!UICONTROL Relationship Status]** pagina te controleren.
+>Als u de status van enkele afzonderlijke live kopieën wilt controleren, gebruikt u de eerste methode om de pagina **[!UICONTROL Properties]** te controleren. Om statussen van vele levende exemplaren te controleren, gebruik de tweede methode om de **[!UICONTROL Relationship Status]** pagina te controleren.
 
 ### Informatie en status van een live kopie {#statuslcasset}
 
@@ -189,8 +189,9 @@ Nadat een bron wordt gewijzigd, kunnen de veranderingen aan de levende exemplare
 U kunt een rollout-actie starten vanuit het bronelement en alle of enkele geselecteerde live kopieën bijwerken.
 
 1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets `p` gebruiken.
-1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Rollout]** op de werkbalk bovenaan.
-1. Selecteer de live kopieën die u wilt bijwerken. Klik op **[!UICONTROL Rollout]**. Selecteer **[!UICONTROL Rollout Source and all Children]** om de updates uit te voeren die aan de onderliggende elementen worden aangebracht.
+1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Rollout]** op de werkbalk.
+1. Selecteer de live kopieën die u wilt bijwerken. Klik op **[!UICONTROL Rollout]**.
+1. Selecteer **[!UICONTROL Rollout Source and all Children]** om de updates uit te voeren die aan de onderliggende elementen worden aangebracht.
 
    ![De wijzigingen van de bron doorvoeren in enkele of alle live kopieën](assets/livecopy_rollout_page.png)
 

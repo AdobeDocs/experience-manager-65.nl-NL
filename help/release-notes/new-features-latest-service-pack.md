@@ -1,66 +1,50 @@
 ---
-title: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
-description: Nieuw in Adobe Experience Manager 6.5 Service Pack 7
+title: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
+description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a24b66506440eb2153d5589e8c79dbfafb24df66
+source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2845'
 ht-degree: 0%
 
 ---
 
 
-# Nieuw in Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
+# Nieuw in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Wit-nieuw](assets/whatsnew.jpeg)
 
-[!DNL Adobe Experience Manager] 6.5 de dienstpakken verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
+[!DNL Adobe Experience Manager] 6.5 De Pakken van de Dienst verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
-In dit artikel worden de functies beschreven die zijn opgenomen in het nieuwste 6.5 Service Pack, de [belangrijkste functies die zijn opgenomen in de vorige 6.5 Service Packs](#key-features-previous-service-packs) en de [AEM-versies sinds de laatste service pack](#key-releases-since-last-sp)-release.
+In dit artikel worden de functies beschreven die zijn opgenomen in het meest recente Service Pack, [belangrijke functies die zijn opgenomen in de vorige 6.5 Service Packs](#key-features-previous-service-packs) en de [belangrijke releases sinds de laatste release van Service Pack](#key-releases-since-last-sp).
 
-## Adobe [!DNL Experience Manager Sites] {#aem-sites}
+## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Beschikbaarheid van paginabewegingen en MSM-rollouts als asynchrone bewerkingen {#page-moves-msm-asynchronous}
+### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout sorteren {#sort-livecopy-pages}
 
-U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerkingen om het effect ervan op de prestaties bij uitvoering te beperken. U kunt de bewerkingen plannen voor directe of latere uitvoering. De status van bijbehorende taken en processtappen wordt weergegeven in een console, die nuttig is voor het controleren van grootschalige MSM-rollouts.
+U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date] en [!UICONTROL Last rollout date]. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release is geïntroduceerd.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] en  [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, gebruik van schermlezers en vergelijkbare verbeteringen om het gebruik van ondersteunende hulpmiddelen (AT) mogelijk te maken. Zie [[!DNL Assets] verbeteringen](/help/release-notes/sp-release-notes.md#assets-6570) en [[!DNL Dynamic Media] verbeteringen](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
+* Wanneer u [Functionaliteit voor verbonden elementen](/help/assets/use-assets-across-connected-assets-instances.md) gebruikt, kunt u nu een lijst weergeven met alle [!DNL Sites] pagina&#39;s die het element gebruiken. Deze verwijzingen naar een element zijn beschikbaar op de pagina [!UICONTROL Properties] van een element. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, zodat ze het bedrijfsmerk beter kunnen bijhouden, beheren en het merk consistenter zijn.
 
-* Gebruikers kunnen digitale elementen sorteren in de Kaart- en kolomweergave.
+* Als u een element verwijdert waarnaar in een webpagina wordt verwezen, wordt een waarschuwing weergegeven. [!DNL Experience Manager] U kunt een element waarnaar wordt verwezen, forceren verwijderen of de verwijzingen controleren en wijzigen die op de pagina [!DNL Properties] van het element worden weergegeven. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s geopend.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on pakketten worden een week na de geplande release van  [!DNL Experience Manager] Service Pack beschikbaar gesteld.
-
-### Prestatieverbeteringen {#performance-improvements-forms}
-
-[!DNL Experience Manager] 6.5 Service Pack 7 Forms verbetert de prestaties voor:
-
-* De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
-
-* Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
-
-### Formuliergegevensmodel HTTP-clientconfiguratie om prestaties te optimaliseren {#fdm-http-client-config}
-
-[!DNL Experience Manager Forms] het model van vormgegevens wanneer het integreren met RESTful Webdiensten als gegevensbron omvat nu de cliëntconfiguraties van HTTP voor prestatiesoptimalisering. Zie [Gegevensbronnen configureren](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
-
-### Beschikbaarheid van de Optie van het Terugstellen voor elke component op de wijze van de Lay-out {#reset-option-layout-mode}
-
-U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen. Zie [De lay-outwijze van het gebruik resize componenten](../../help/forms/using/resize-using-layout-mode.md#resize-components).
-
-### Ondersteuning voor Microsoft SQL Server 2019
-
-[!DNL Experience Manager Forms] ondersteunt nu Microsoft SQL Server 2019.
+>Het add-on pakket van [!DNL Experience Manager Forms] wordt een week na de geplande [!DNL Experience Manager] Service Pack-release beschikbaar gesteld.
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Beschikbaarheid van paginabewegingen en MSM-rollouts als asynchrone bewerkingen (6.5.7.0) {#page-moves-msm-asynchronous}
+
+U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerkingen om het effect ervan op de prestaties bij uitvoering te beperken. U kunt de bewerkingen plannen voor directe of latere uitvoering. De status van bijbehorende taken en processtappen wordt weergegeven in een console, die nuttig is voor het controleren van grootschalige MSM-rollouts.
 
 #### Beschikbaarheid van de bewerking Pagina verplaatsen in asynchrone modus (6.5.6.0) {#page-move-asynchronous}
 
@@ -109,6 +93,10 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 * Verbeterde verwerking van onvolledige of ongeldige URL&#39;s. Dergelijke URL&#39;s kunnen de Sjablooneditor vertragen.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* [!DNL Assets] en  [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, gebruik van schermlezers en vergelijkbare verbeteringen om het gebruik van ondersteunende hulpmiddelen (AT) mogelijk te maken. Zie [[!DNL Assets] verbeteringen](/help/release-notes/sp-release-notes.md#assets-6570) en [[!DNL Dynamic Media] verbeteringen](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
+
+* Gebruikers kunnen digitale elementen sorteren in de Kaart- en kolomweergave (6.5.7.0).
 
 #### Toegankelijkheidsverbeteringen (6.5.6.0) {#accessibility-assets-6560}
 
@@ -220,6 +208,22 @@ Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker o
 Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprofielen - is een gereedschap dat de kracht van kunstmatige intelligentie in Adobe Sensei gebruikt om het brandpunt automatisch te detecteren en uit te snijden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte. Zie [Informatie over slim uitsnijden in videoprofielen](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Prestatieverbeteringen (6.5.7.0) {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms verbetert de prestaties voor:
+
+* De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
+
+* Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
+
+#### Formuliergegevensmodel HTTP-clientconfiguratie voor optimale prestaties (6.5.7.0) {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] het model van vormgegevens wanneer het integreren met RESTful Webdiensten als gegevensbron omvat nu de cliëntconfiguraties van HTTP voor prestatiesoptimalisering. Zie [Gegevensbronnen configureren](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+
+#### Beschikbaarheid van de Optie van het Terugstellen voor elke component in de wijze van de Lay-out (6.5.7.0) {#reset-option-layout-mode}
+
+U kunt nu de resetoptie voor elke component in de modus Indeling van een adaptief formulier gebruiken. Wanneer u een lay-out met meerdere kolommen definieert voor een deelvenster, kunt u deze functie gebruiken om afzonderlijke componenten in het deelvenster opnieuw in te stellen. Zie [De lay-outwijze van het gebruik resize componenten](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 #### Een adaptief formulier vooraf invullen op de client (6.5.6.0) {#prefill-merge-data-at-client}
 
@@ -337,19 +341,18 @@ U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht 
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten. Zie [Meerdere interactieve communicatie genereren met de batch-API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Toetsreleases sinds Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
+<!-- TBD: Check if the wider team released anything in FY21.
+-->
 
-Tussen 3 september 2020, 2020 en 26 november 2020 heeft Adobe het volgende uitgebracht, naast de servicepacks en cumulatieve fixepacks:
+## Belangrijke releases sinds [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
 
-* [!DNL Adobe Experience Manager] als Cloud Service  [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) en  [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+Tussen 26 november 2020 en 25 februari 2021 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks en Cumulatieve Fix-pakketten:
 
-* [[!DNL Experience Manager] bureaubladtoepassing 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [!DNL Adobe Experience Manager] als Cloud Service  [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html),  [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html) en  [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [WKND Reference Site - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
+* [[!DNL Experience Manager] bureaubladtoepassing 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Managers Screens: Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
-
-* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >

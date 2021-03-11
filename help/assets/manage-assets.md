@@ -4,7 +4,7 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 863d1bd3f0f188153fcbbb7256d3ac2e3b247f59
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
 source-wordcount: '9358'
 ht-degree: 3%
@@ -340,7 +340,7 @@ Enkele beperkingen van de functie zijn:
 * Als er op de bestemming een map met dezelfde naam staat, worden de elementen uit het ZIP-bestand geëxtraheerd naar de bestaande map.
 * Als u de extractie annuleert, worden de reeds geëxtraheerde elementen niet verwijderd.
 * U kunt niet twee ZIP-bestanden tegelijk selecteren en extraheren. U kunt slechts één ZIP-archief tegelijk extraheren.
-* Als tijdens het uploaden van een ZIP-archief in het dialoogvenster voor uploaden een serverfout van 500 wordt weergegeven, probeert u het opnieuw nadat u het laatste servicepack hebt geïnstalleerd.
+* Als tijdens het uploaden van een ZIP-archief in het dialoogvenster voor uploaden een serverfout van 500 wordt weergegeven, probeert u het opnieuw na het installeren van [het nieuwste Service Pack](/help/release-notes/sp-release-notes.md).
 
 ## Elementen voorvertonen {#previewing-assets}
 
@@ -885,7 +885,7 @@ U kunt versies in [!DNL Experience Manager] in de volgende scenario&#39;s tot st
 * Bewerk de metagegevens van een element.
 * Gebruik [!DNL Experience Manager] desktop app om een bestaand element uit te checken, te bewerken en [uw wijzigingen te uploaden](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open in de linkerbovenhoek van de pagina het menu en selecteer **[!UICONTROL Timeline]**.
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 4333cfde433d00ddc4cb013b31fe52956791da46
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '5268'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Zie [Dynamic Media Classic](../assets/scene7.md) gebruiken voor informatie over 
 
 ## AEM/Dynamic Media Klassieke integratie versus Dynamic Media {#aem-scene-integration-versus-dynamic-media}
 
-AEM gebruikers kunnen kiezen uit twee oplossingen om met dynamische media te werken: Of het integreren van hun geval van AEM met Dynamic Media Classic of het gebruiken van de oplossing van Dynamic Media die in AEM wordt geïntegreerd.
+AEM gebruikers kunnen kiezen uit twee oplossingen om met Dynamic Media te werken: Of het integreren van hun geval van AEM met Dynamic Media Classic of het gebruiken van de oplossing van Dynamic Media die in AEM wordt geïntegreerd.
 
 Gebruik de volgende criteria om te bepalen welke oplossing moet worden gekozen:
 
@@ -246,7 +246,7 @@ Met de synchronisatie tussen AEM Assets en Dynamic Media Classic zijn er momente
   </tr>
   <tr>
    <td>Eén toegewezen synchronisatiemap (doel)</td>
-   <td>U kunt per bedrijf slechts één toegewezen map AEM voor Dynamic Media Classic-uploads. U kunt meerdere configuraties maken als u toegang moet hebben tot meerdere bedrijfsaccounts in Dynamic Media Classic.</td>
+   <td>U kunt per bedrijf slechts één toegewezen map AEM voor Dynamic Media Classic-uploads. U kunt meerdere configuraties maken als u toegang moet hebben tot meer dan één bedrijfsaccount in Dynamic Media Classic.</td>
   </tr>
   <tr>
    <td>Mapstructuur</td>
@@ -421,7 +421,7 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 Voordat u elementen naar Dynamic Media Classic kunt verzenden zonder ze te publiceren, moet u het volgende instellen:
 
-1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van ondersteuning, verzoek u om beveiligde voorvertoning voor uw Dynamic Media Classic-account in te schakelen.
+1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van ondersteuning, verzoek u om beveiligde voorvertoning in te schakelen voor uw Dynamic Media Classic-account.
 1. Volg de aanwijzingen op [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Dit zijn dezelfde stappen die u zou volgen om veilige testinstellingen te maken in Dynamic Media Classic.
@@ -575,7 +575,7 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
    >
    >`process=MaintainLayers&createTemplate=true`
    >
-   >Zorg ervoor dat het PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
+   >Zorg ervoor dat uw PSD-bestand &#39;lagen&#39; heeft. Als het strikt genomen één afbeelding of een afbeelding met een masker is, wordt de afbeelding verwerkt als een afbeelding omdat er geen lagen zijn om te verwerken.
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All.]**
 

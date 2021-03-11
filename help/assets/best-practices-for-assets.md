@@ -3,7 +3,7 @@ title: Beste praktijken voor [!DNL Assets]
 description: Verbetert systeemstabiliteit en prestaties onder lading door beste praktijken te identificeren en te volgen die van uw plaatsing en configuratie afhangen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aanbevolen procedures voor [!DNL Assets] {#best-practices-for-assets}
 
-[!DNL Adobe Experience Manager Assets] is een cruciaal onderdeel van het aanbieden van hoogwaardige digitale marketingervaringen die bijdragen tot het bereiken van zakelijke doelen door de snelheid van uw inhoud te verhogen. Als u met een groot aantal middelen werkt binnen [!DNL Experience Manager Assets] of regelmatig/periodiek talrijke activa uploadt, met inbegrip van video&#39;s en dynamische media, is het optimaliseren van uw ervaring van het beheer van digitale activa essentieel voor systeemefficiency.
+[!DNL Adobe Experience Manager Assets] is een cruciaal onderdeel van het aanbieden van hoogwaardige digitale marketingervaringen die bijdragen tot het bereiken van zakelijke doelen door de snelheid van uw inhoud te verhogen. Als u met een groot aantal middelen werkt binnen [!DNL Experience Manager Assets] of regelmatig/periodiek talrijke activa uploadt, met inbegrip van video&#39;s en Dynamic Media, is het optimaliseren van uw ervaring in het beheer van digitale activa essentieel voor systeemefficiency.
 
 Afhankelijk van hoe u [!DNL Assets] voor uw organisatie en de eigenschappen hebt geplaatst die u voor activa, vertoningsgeneratie, en meta-gegevensextractie gebruikt, het identificeren van en het volgen van beste praktijken op verschillende gebieden zeer verbetert systeemstabiliteit en prestaties onder lading.
 

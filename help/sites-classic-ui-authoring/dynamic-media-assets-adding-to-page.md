@@ -1,28 +1,24 @@
 ---
 title: Dynamic Media-assets aan pagina's toevoegen
-seo-title: Dynamic Media-assets aan pagina's toevoegen
-description: Als u de functionaliteit voor dynamische media wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component Dynamic Media of Interactive Media rechtstreeks op de pagina toevoegen.
-seo-description: Als u de functionaliteit voor dynamische media wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component Dynamic Media of Interactive Media rechtstreeks op de pagina toevoegen.
-uuid: 650d0867-a079-4936-a466-55b7a30803a2
+description: Als u de Dynamic Media-functionaliteit wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de Dynamic Media- of Interactive Media-component rechtstreeks op de pagina toevoegen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 2%
+source-wordcount: '1569'
+ht-degree: 3%
 
 ---
 
 
 # Dynamic Media-assets aan pagina&#39;s toevoegen{#adding-dynamic-media-assets-to-pages}
 
-Als u de Dynamic Media-functionaliteit wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component **[!UICONTROL Dynamic Media]** of **[!UICONTROL Interactive Media]** rechtstreeks op de pagina toevoegen. U doet dit door de modus [!UICONTROL Design] in te voeren en de dynamische mediacomponenten in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en assets aan de component toevoegen. De dynamische media en interactieve mediacomponenten zijn slim: ze weten of u een afbeelding of video toevoegt en de beschikbare opties veranderen dienovereenkomstig.
+Als u de Dynamic Media-functionaliteit wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component **[!UICONTROL Dynamic Media]** of **[!UICONTROL Interactive Media]** rechtstreeks op de pagina toevoegen. U doet dit door de modus [!UICONTROL Design] in te voeren en de Dynamic Media-componenten in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en assets aan de component toevoegen. De Dynamic Media en interactieve mediacomponenten zijn slim: ze weten of u een afbeelding of een video toevoegt en de beschikbare opties veranderen dienovereenkomstig.
 
-U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM gebruikt als uw WCM.
+U voegt dynamische media-assets rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt.
 
 >[!NOTE]
 >
@@ -48,7 +44,7 @@ Een Dynamic Media-component/viewer toevoegen aan een pagina:
 
 ## Dynamic Media-componenten {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] en  [!UICONTROL Interactive Media] zijn beschikbaar in het  [!UICONTROL Sidekick] gedeelte  **[!UICONTROL Dynamic Media.]** U gebruikt de  **[!UICONTROL Interactive Media]** component voor interactieve elementen, zoals interactieve video, interactieve afbeeldingen of carrouselsets. Gebruik voor alle andere dynamische mediacomponenten de component **[!UICONTROL Dynamic Media]**.
+[!UICONTROL Dynamic Media] en  [!UICONTROL Interactive Media] zijn beschikbaar in het  [!UICONTROL Sidekick] gedeelte  **[!UICONTROL Dynamic Media.]** U gebruikt de  **[!UICONTROL Interactive Media]** component voor interactieve elementen, zoals interactieve video, interactieve afbeeldingen of carrouselsets. Voor alle andere Dynamic Media-componenten gebruikt u de **[!UICONTROL Dynamic Media]**-component.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -65,7 +61,7 @@ De Dynamic Media-component is slim. Afhankelijk van het feit of u een afbeelding
 >Wanneer u de component [!UICONTROL Dynamic Media] toevoegt en **[!UICONTROL Dynamic Media Settings]** leeg is of u kunt activa niet behoorlijk toevoegen, controleer het volgende:
 >
 >* U hebt [ingeschakelde Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
->* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat dynamische media is ingeschakeld, hebben geen TIFF-bestand met piramide.
+>* De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die zijn geïmporteerd voordat Dynamic Media is ingeschakeld, hebben geen TIFF-bestand met piramide.
 
 >
 

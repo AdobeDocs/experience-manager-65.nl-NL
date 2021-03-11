@@ -4,9 +4,9 @@ description: Suggesties en richtlijnen voor [!DNL Experience Manager] configurat
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
 workflow-type: tm+mt
-source-wordcount: '2678'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,7 @@ Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun w
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een andere manier is om gebruik te maken van Dynamic Media-technologie om afbeeldingen volledig te manipuleren. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
+Een andere manier is om Dynamic Media-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
@@ -241,7 +241,7 @@ Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoor
 
 ## Indexen zoeken {#search-indexes}
 
-Zorg ervoor u de recentste de dienstpakken en op prestaties betrekking hebbende hotfixes uitvoert aangezien zij vaak updates aan systeemindexen omvatten. Zie [Tips voor het afstemmen van prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor sommige indexoptimalisaties.
+Installeer [de nieuwste servicepacks](/help/release-notes/sp-release-notes.md) en prestatiegerelateerde hotfixes, omdat deze vaak updates voor systeemindexen bevatten. Zie [tips voor het afstemmen van prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor sommige indexoptimalisaties.
 
 Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Zie [methodologie voor het analyseren van langzame query&#39;s](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [Aangepaste indexen maken](/help/sites-deploying/queries-and-indexing.md) voor meer informatie. Voor extra inzichten rond vraag en index beste praktijken, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -305,6 +305,6 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Configureer [!DNL ImageMagick] om het verbruik van bronnen te beperken.
 * Verwijder overbodige stappen uit de [!UICONTROL DAM Update Asset] workflow.
 * Vorm werkschema en versie het zuiveren.
-* Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
+* Optimaliseer indexen met de recentste Packs en hotfixes van de Dienst. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik radenTotal om queryprestaties te optimaliseren.
 * Als u [!DNL Experience Manager] configureert om bestandstypen van de inhoud van de bestanden te detecteren (door **[!UICONTROL Day CQ DAM Mime Type Service]** in **[!UICONTROL AEM Web Console]** in te schakelen), uploadt u een groot aantal bestanden in bulk tijdens niet-piekuren omdat dit bronintensief is.

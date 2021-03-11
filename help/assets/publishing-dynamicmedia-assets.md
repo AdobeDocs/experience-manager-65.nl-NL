@@ -1,6 +1,6 @@
 ---
-title: Dynamische media-elementen publiceren
-description: Dynamische media-elementen publiceren
+title: Dynamic Media-middelen publiceren
+description: Dynamic Media-elementen publiceren
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 2%
@@ -16,12 +16,12 @@ ht-degree: 2%
 ---
 
 
-# Dynamische media-elementen publiceren {#publishing-dynamic-media-assets}
+# Dynamic Media-middelen {#publishing-dynamic-media-assets} publiceren
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** te tikken nadat uw dynamische media-elementen zijn gepubliceerd, zijn deze beschikbaar voor opname in een webpagina via een URL of door de code in te sluiten op de pagina.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** te tikken Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze als URL in een webpagina opnemen of door de code op de pagina in te sluiten.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie [Dynamische media configureren - Scene7-modus.](config-dms7.md)
-Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in dynamische media.](/help/assets/selective-publishing.md)
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie [De modus Dynamic Media configureren - Scene7.](config-dms7.md)
+Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media.](/help/assets/selective-publishing.md)
 
 In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder de naam van een element en links van de datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
@@ -33,7 +33,7 @@ Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorge
 
 Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
 
-Zie ook [De Dynamic Media Video- of Image-viewer insluiten op een webpagina](embed-code.md)
+Zie ook [De Dynamic Media Video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md)
 
 >[!NOTE]
 >
@@ -46,8 +46,8 @@ Zie ook [De Dynamic Media Video- of Image-viewer insluiten op een webpagina](emb
 
 Zie [Elementen publiceren.](manage-assets.md)
 
-## HTTP/2-levering van dynamische media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 
-AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
+AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
 Zie [HTTP/2 levering van inhoud vaak gestelde vragen](/help/sites-administering/scene7-http2faq.md) om meer te leren.

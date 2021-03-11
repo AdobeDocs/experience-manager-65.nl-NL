@@ -1,15 +1,15 @@
 ---
 title: Dynamic Media configureren - Scene7-modus
-description: Informatie over het configureren van de Dynamic Media-Scene7-modus.
+description: Leer hoe u de Dynamic Media - Scene7-modus configureert.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 787f3b4cf5835b7e9b03e3f4e6f6597084adec8c
+source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
 workflow-type: tm+mt
-source-wordcount: '5719'
+source-wordcount: '5776'
 ht-degree: 4%
 
 ---
@@ -65,11 +65,11 @@ De upgrade van Experience Manager Dynamic Media van 6.3 naar 6.4 of 6.5 omvat nu
 >
 >Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt dus het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
 
-Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende de krullbevel van Linux in werking te stellen kwam:
+Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende Linux® krullbevel in werking te stellen kwam:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Als u aangepaste voorinstellingen en configuraties van viewers die u hebt gemaakt van `/etc` naar `/conf` wilt migreren, voert u de volgende Linux-curl-opdracht uit:
+Als u aangepaste viewervoorinstellingen en -configuraties die u hebt gemaakt van `/etc` naar `/conf` wilt migreren, voert u de volgende Linux® curl-opdracht uit:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -106,7 +106,10 @@ Zie [Actiepakket 18912 installeren voor migratie van grote hoeveelheden elemente
 
    * **[!UICONTROL Publishing Assets]** - U kunt uit de volgende drie opties kiezen:
       * **[!UICONTROL Immediately]** betekent dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren.
-      * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL/Embed-koppeling wordt opgegeven.
+      * **[!UICONTROL Upon Activation]** betekent dat u het element eerst expliciet moet publiceren voordat er een URL/Embed-koppeling wordt opgegeven.<br><!-- CQDOC-17478, Added March 9, 2021-->Vanaf Experience Manager 6.5.8 weerspiegelt de instantie van de Publicatie van de Experience Manager nauwkeurige de meta-gegevenswaarden van Dynamic Media, zoals  `dam:scene7Domain` en  `dam:scene7FileStatus` in  **[!UICONTROL Upon Activation]** publicatiewijze slechts. Installeer Service Pack 8 en start vervolgens Experience Manager opnieuw om deze functionaliteit in te schakelen. Ga naar Sling Config Manager. Zoek de configuratie voor `Scene7ActivationJobConsumer Component` of creeer nieuwe). Schakel het selectievakje **[!UICONTROL Replicate Metadata after Dynamic Media publishing]** in en tik op **[!UICONTROL Save]**.
+
+         ![Metagegevens repliceren na het selectievakje Dynamic Media publiceren](assets-dm/replicate-metadata-setting.png)
+
       * **[!UICONTROL Selective Publish]** Met deze optie kunt u bepalen welke mappen in Dynamic Media worden gepubliceerd. Hiermee kunt u functies gebruiken, zoals Slim uitsnijden of Dynamische uitvoeringen, of bepalen welke mappen uitsluitend in Experience Manager worden gepubliceerd voor voorvertoning. Dezelfde activa worden *niet* gepubliceerd in Dynamic Media voor levering in het publieke domein.<br>U kunt deze optie hier in de map instellen  **[!UICONTROL Dynamic Media Cloud Configuration]** of, als u dat wilt, u kunt deze optie instellen op mapniveau, in de map  **[!UICONTROL Properties]**.<br>Zie  [Werken met Selectieve publicatie in Dynamic Media.](/help/assets/selective-publishing.md)<br>Als u deze configuratie later wijzigt, of u wijzigt de configuratie later op mapniveau, hebben die wijzigingen alleen invloed op nieuwe elementen die u vanaf dat punt uploadt. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]**.
    * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Met andere woorden, nadat uitvoeringen zijn gegenereerd, kan Experience Manager de externe Dynamic Media-uitvoeringen veilig openen en bekijken (er worden geen binaire bestanden teruggestuurd naar de instantie Experience Manager).
 Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe dat u dit het plaatsen zoals gespecificeerd verlaat.
@@ -117,7 +120,7 @@ Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een spe
       * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
 Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u een elementmap en tikt u op **[!UICONTROL Properties]** op de werkbalk. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Tik **[!UICONTROL Save.]** *Onthoud: Deze drie opties zijn niet beschikbaar als u **Alle inhoud synchroniseren**eerder hebt geselecteerd.* Zie ook  [Werken met Selectief publiceren op mapniveau in Dynamic Media.](/help/assets/selective-publishing.md)
-         * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde toont als knopinfo.
+         * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.
          * **[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
 
@@ -574,7 +577,7 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
 ### (Optioneel) Elementen filteren voor replicatie {#optional-filtering-assets-for-replication}
 
-Bij niet-Dynamic Media-implementaties repliceert u *all* middelen (zowel afbeeldingen als video) van de auteursomgeving van de Experience Manager naar het publicatieknooppunt van de Experience Manager. Deze workflow is nodig omdat de Experience Manager ook de middelen op de publicatieservers plaatst.
+Bij niet-Dynamic Media-implementaties repliceert u *all* middelen (zowel afbeeldingen als video) van de ontwerpomgeving van de Experience Manager naar het knooppunt Publiceren van de Experience Manager. Deze workflow is nodig omdat de Experience Manager Publish-servers ook de elementen leveren.
 
 In Dynamic Media-implementaties is het echter niet nodig dezelfde middelen te repliceren naar publicatieknooppunten van Experience Managers, omdat elementen via de Cloud Service worden geleverd. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals sitepagina&#39;s, wordt nog steeds aangeboden vanaf de publicatieknooppunten van de Experience Manager.
 
@@ -589,7 +592,7 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
   <tr>
    <td> </td>
    <td><strong>Filter</strong></td>
-   <td><strong>Mimetype</strong></td>
+   <td><strong>MIME-type</strong></td>
    <td><strong>Uitvoeringen</strong></td>
   </tr>
   <tr>

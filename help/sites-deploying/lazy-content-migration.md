@@ -11,7 +11,7 @@ topic-tags: upgrading
 discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 7d93df515bf98f0a947428b8093e059d63b21a34
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 3%
@@ -61,5 +61,5 @@ Hieronder ziet u de volledige lijst van `CodeUpgradeTasks` die in 6.5 is geïntr
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6=&quot;&quot;> | Vertraagd | Schoont **/etc/cloudsettings** (die Configuratie ContextHub bevatten) op. De configuratie wordt automatisch gemigreerd bij eerste toegang. Als Lazy Content Migration wordt gestart samen met een upgrade van deze inhoud in **/etc/cloudsettings** moet worden bewaard via pakket voor de upgrade en opnieuw worden geïnstalleerd om de impliciete transformatie te starten, samen met een volgende verwijdering van het pakket na voltooiing. |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | Vertraagd | Past oude titelstructuur aan titel in de knoop van het gebruikersprofiel aan. |
 | `CQ64CommerceMigrationTask` | &lt; 6=&quot;&quot;> | Vertraagd | Migreer commerciële inhoud van **/etc/commerce** aan **/var/commerce**. Tijdens migratie wordt inhoud verplaatst en worden verwijzingen naar verplaatste inhoud bijgewerkt met de nieuwe locatie. |
-| `CQ65DMMigrationTask` | &lt; 6=&quot;&quot;> | Vertraagd | Verouderde catalogusinstellingen en instellingen voor dynamische mediawolkenservices migreren van **/etc** naar **/conf** |
+| `CQ65DMMigrationTask` | &lt; 6=&quot;&quot;> | Vertraagd | Verouderde catalogusinstellingen en Dynamic Media-Cloud Services migreren van **/etc** naar **/conf** |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6=&quot;&quot;> | Vertraagd | Oudere clientlibs opruimen onder **/etc/clientlibs** |

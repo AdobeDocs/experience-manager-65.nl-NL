@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 0a082d3cff66b82ef6de551a735a16a001446a1e
+source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Raadpleeg de documentatie bij de toepassingsserver voor meer informatie over het
 
 >[!NOTE]
 >
->Als u Dynamic Media gebruikt in een WAR-implementatie, raadpleegt u de [dynamische mediadocumentatie](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Als u Dynamic Media gebruikt in een WAR-implementatie, raadpleegt u de [Dynamic Media-documentatie](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Algemene beschrijving {#general-description}
 

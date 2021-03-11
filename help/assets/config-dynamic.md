@@ -10,10 +10,10 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 99293a13fcdf06f37d9747683f7c32ebd9246d18
 workflow-type: tm+mt
-source-wordcount: '7597'
-ht-degree: 1%
+source-wordcount: '7601'
+ht-degree: 0%
 
 ---
 
@@ -32,22 +32,22 @@ Meer informatie over het werken met [video](/help/assets/video.md) in Dynamic Me
 
 >[!NOTE]
 >
->Als u Adobe Experience Manager-configuratie gebruikt voor verschillende omgevingen, zoals een omgeving voor ontwikkeling, een omgeving voor staging en een omgeving voor live productie, moet u Dynamic Media-Cloud Services configureren voor elk van deze omgevingen.
+>Als u Adobe Experience Manager-configuratie gebruikt voor verschillende omgevingen, zoals een omgeving voor ontwikkeling, staging en live productie, configureert u Dynamic Media-Cloud Services voor elke omgeving.
 
 >[!NOTE]
 >
->Als u problemen hebt met uw Dynamic Media-configuratie, is het belangrijk dat u de logbestanden bekijkt die specifiek zijn voor dynamische media. Deze worden automatisch geïnstalleerd wanneer u dynamische media inschakelt:
+>Als u problemen hebt met uw Dynamic Media-configuratie, raadpleegt u de logbestanden die specifiek zijn voor Dynamic Media. Deze bestanden worden automatisch geïnstalleerd wanneer u Dynamic Media inschakelt:
 >
 >* `s7access.log`
 >* `ImageServing.log`
 
 >
 >
-Ze worden beschreven in [Uw AEM-instantie controleren en onderhouden](/help/sites-deploying/monitoring-and-maintaining.md).
+Deze worden beschreven in [De instantie van uw Experience Manager controleren en onderhouden](/help/sites-deploying/monitoring-and-maintaining.md).
 
-Hybride uitgeverij en levering vormen een kernelement van de toevoeging van Dynamic Media aan Adobe Experience Manager. Met hybride publicaties kunt u Dynamic Media-elementen, zoals afbeeldingen, sets en video, uit de cloud leveren in plaats van uit de AEM publicatieknooppunten.
+Hybride uitgeverij en levering vormen een kernelement van de toevoeging van Dynamic Media aan Adobe Experience Manager. Met hybride publicaties kunt u Dynamic Media-elementen, zoals afbeeldingen, sets en video, uit de cloud leveren in plaats van uit de publicatieknooppunten van de Experience Manager.
 
-Andere inhoud, zoals Dynamic Media-viewers, sitepagina&#39;s en statische inhoud, blijft beschikbaar via de AEM publicatieknooppunten.
+Andere inhoud, zoals Dynamic Media-viewers, sitepagina&#39;s en statische inhoud, wordt nog steeds aangeboden vanaf de publicatieknooppunten van de Experience Manager.
 
 Als u een klant van Dynamic Media bent, moet u hybride levering als leveringsmechanisme voor alle Dynamic Media-inhoud gebruiken.
 
@@ -65,11 +65,11 @@ De configuratietaken die volgen verwijzen naar de volgende termen:
 
 | **Term** | **Dynamic Media ingeschakeld** | **Beschrijving** |
 |---|---|---|
-| AEM auteurknooppunt | Wit vinkje in een groene cirkel | Het auteurknooppunt dat u op locatie of via Managed Services implementeert. |
-| AEM publicatieknooppunt | Wit &quot;X&quot; in een rood vierkant. | Het publicatieknooppunt dat u op locatie of via Managed Services implementeert. |
+| Knooppunt auteur Experience Manager | Wit vinkje in een groene cirkel | Het auteurknooppunt dat u op locatie of via Managed Services implementeert. |
+| Publicatieknooppunt Experience Manager | Wit &quot;X&quot; in een rood vierkant. | Het publicatieknooppunt dat u op locatie of via Managed Services implementeert. |
 | Publicatieknooppunt voor Image Service | Witte vinkje in een groene cirkel. | Het publicatieknooppunt dat u op de Centra van Gegevens in werking stelt die door Adobe worden beheerd. Verwijst naar de URL van de afbeeldingsservice. |
 
-U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerking, alleen voor video of voor zowel beeldbewerking als video. Verwijs naar de volgende tabel om de stappen te bepalen voor het configureren van Dynamic Media voor uw specifieke scenario.
+U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerking, alleen voor video of voor beeldbewerking en video. Raadpleeg de volgende tabel voor informatie over de stappen voor het configureren van Dynamic Media voor uw specifieke scenario.
 
 <table>
  <tbody>
@@ -83,7 +83,7 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
    <td>De beelden worden geleverd door servers in de wereldwijde gegevenscentra van Adobe en dan in het voorgeheugen ondergebracht door CDN voor scalable prestaties en globaal bereik.</td>
    <td>
     <ol>
-     <li>Op de AEM <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat dynamische media</a> toe.</li>
+     <li>Op de Experience Manager <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe.</li>
      <li>Configureer de beeldverwerking in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media-Cloud Services</a>.</li>
      <li><a href="#configuring-image-replication">Afbeeldingsreplicatie</a> configureren.</li>
      <li><a href="#replicating-catalog-settings">Catalogusinstellingen</a> repliceren.</li>
@@ -95,11 +95,11 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
   </tr>
   <tr>
    <td>Alleen afbeeldingen leveren in pre-productie (Dev, QE, Stage, enzovoort.)</td>
-   <td>Afbeeldingen worden geleverd via het AEM publicatieknooppunt. In dit scenario, aangezien het verkeer minimaal is, is er geen behoefte om beelden aan het gegevenscentrum van Adobe te leveren. Een extra voordeel is dat u hiermee een beveiligde voorvertoning van inhoud kunt bekijken voordat de productie wordt gestart</td>
+   <td>Afbeeldingen worden geleverd via het publicatieknooppunt Experience Manager. In dit scenario, omdat het verkeer minimaal is, is er geen behoefte om beelden aan het gegevenscentrum van Adobe te leveren. En het maakt een veilige voorvertoning van inhoud mogelijk voordat de productie wordt gestart.</td>
    <td>
     <ol>
-     <li>Op de AEM <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat dynamische media</a> toe.</li>
-     <li>Op AEM <strong>publish</strong>-knooppunt <a href="#enabling-dynamic-media">enable dynamic media</a>.</li>
+     <li>Op de Experience Manager <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe.</li>
+     <li>Bij Experience Manager <strong>publish</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe.</li>
      <li><a href="#replicating-viewer-presets">Viewervoorinstellingen</a> dupliceren.</li>
      <li>Stel <a href="#setting-up-asset-filters-for-imaging-in-non-production-deployments">elementfilter in voor niet-productieafbeeldingen</a>.</li>
      <li><a href="#configuring-dynamic-media-image-server-settings">Dynamic Media Image Server-instellingen configureren.</a></li>
@@ -108,11 +108,11 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
   </tr>
   <tr>
    <td>ALLEEN video leveren in elke omgeving (Productie, Dev, QE, Stage, enzovoort)</td>
-   <td>De video's worden geleverd en in het voorgeheugen ondergebracht door CDN voor scalable prestaties en globaal bereik. De video-posterafbeelding (miniatuur van video die wordt weergegeven voordat het afspelen wordt gestart) wordt door de AEM-publicatie-instantie geleverd.</td>
+   <td>De video's worden geleverd en in het voorgeheugen ondergebracht door CDN voor scalable prestaties en globaal bereik. De videoposterafbeelding (videominiatuur die wordt weergegeven voordat het afspelen wordt gestart) wordt geleverd door de publicatieinstantie van de Experience Manager.</td>
    <td>
     <ol>
-     <li>Op de AEM <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat dynamische media</a> toe.</li>
-     <li>Schakel op het AEM <strong>publish</strong>-knooppunt <a href="#enabling-dynamic-media">dynamic media</a> in (de publicatie-instantie dient voor de videoposterafbeelding en biedt metagegevens voor het afspelen van video).</li>
+     <li>Op de Experience Manager <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe.</li>
+     <li>Op de Experience Manager <strong>publish</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe (de publicatie instantie dient het videoposterbeeld en verstrekt meta-gegevens voor videoplayback).</li>
      <li>Video configureren in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media-Cloud Services.</a></li>
      <li><a href="#replicating-viewer-presets">Viewervoorinstellingen</a> dupliceren.</li>
      <li>Stel <a href="#setting-up-asset-filters-for-video-only-deployments">elementfilter in voor alleen video</a>.</li>
@@ -121,10 +121,10 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
   </tr>
   <tr>
    <td>Lever ZOWEL beelden als video in productie</td>
-   <td><p>De video's worden geleverd en in het voorgeheugen ondergebracht door CDN voor scalable prestaties en globaal bereik. Afbeeldingen en videoposterafbeeldingen worden via servers in wereldwijde datacenters van Adobe geleverd en worden vervolgens in cache geplaatst door een CDN voor schaalbare prestaties en een wereldwijd bereik.</p> <p>Raadpleeg de vorige secties voor het instellen van het beeld of de video in de preproductie. </p> </td>
+   <td><p>De video's worden geleverd en in het voorgeheugen ondergebracht door CDN voor scalable prestaties en globaal bereik. Afbeeldingen en videoposterafbeeldingen worden via servers in wereldwijde datacenters van Adobe geleverd en worden vervolgens in cache geplaatst door een CDN voor schaalbare prestaties en een wereldwijd bereik.</p> <p>Verwijs naar vorige secties aan opstellingsbeeld of video in preproductie. </p> </td>
    <td>
     <ol>
-     <li>Op de AEM <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat dynamische media</a> toe.</li>
+     <li>Op de Experience Manager <strong>auteur</strong> knoop, <a href="#enabling-dynamic-media">laat Dynamic Media</a> toe.</li>
      <li>Video configureren in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media-Cloud Services.</a></li>
      <li>Afbeeldingen configureren in <a href="#configuring-dynamic-media-cloud-services">Dynamic Media-Cloud Services.</a></li>
      <li><a href="#configuring-image-replication">Afbeeldingsreplicatie</a> configureren.</li>
@@ -140,19 +140,22 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
 
 ## Dynamic Media {#enabling-dynamic-media} inschakelen
 
-[Dynamische ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) media is standaard uitgeschakeld. Als u gebruik wilt maken van dynamische mediafuncties, moet u dynamische media inschakelen met de uitvoeringsmodus `dynamicmedia` zoals u bijvoorbeeld `publish` uitvoeringsmodus gebruikt. Controleer voordat u de optie inschakelt de [technische vereisten.](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)
+[Dynamische ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) media is standaard uitgeschakeld. Als u gebruik wilt maken van Dynamic Media-functies, moet u Dynamic Media inschakelen in de uitvoeringsmodus `dynamicmedia` zoals u bijvoorbeeld `publish` uitvoeringsmodus gebruikt. Controleer voordat u de optie inschakelt de [technische vereisten.](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)
 
 >[!NOTE]
 >
->Als u dynamische media inschakelt via de uitvoeringsmodus, wordt de functionaliteit in AEM 6.1 en AEM 6.0 vervangen, waarbij u dynamische media hebt ingeschakeld door de markering `dynamicMediaEnabled` in te stellen op **[!UICONTROL true.]** Deze markering heeft geen functionaliteit in AEM 6.2 en hoger. Bovendien hoeft u de snelstartprocedure niet opnieuw te starten om dynamische media in te schakelen.
+>Als u Dynamic Media inschakelt via de uitvoeringsmodus, wordt de functionaliteit in Experience Manager 6.1 en Experience Manager 6.0 vervangen. Dynamic Media wordt ingeschakeld door de markering `dynamicMediaEnabled` in te stellen op **[!UICONTROL true.]** Deze markering heeft geen functionaliteit in Experience Manager 6.2 en hoger. Bovendien hoeft u de snelstartprocedure niet opnieuw te starten om Dynamic Media in te schakelen.
 
-Als u Dynamic Media inschakelt, zijn de dynamische mediafuncties beschikbaar in de gebruikersinterface en ontvangt elk geüploade afbeeldingselement een *cqdam.piramid.tiff*-uitvoering die wordt gebruikt voor snelle levering van dynamische afbeeldingsuitvoeringen. Deze PTIFF&#39;s hebben belangrijke voordelen, zoals (1) de mogelijkheid om slechts één primaire bronafbeelding te beheren en onbeperkte uitvoeringen ter plekke te genereren zonder extra opslagruimte en (2) de mogelijkheid om interactieve visualisatie te gebruiken, zoals zoomen, pannen, centrifugeren, enzovoort.
+Door Dynamic Media in te schakelen, zijn de Dynamic Media-functies beschikbaar in de gebruikersinterface en ontvangt elk geüploade afbeeldingselement een *cqdam.piramid.tiff*-uitvoering die wordt gebruikt voor snelle levering van dynamische afbeeldingsuitvoeringen. Deze PTIFF&#39;s hebben belangrijke voordelen, zoals:
 
-Als u Dynamic Media Classic (Scene7) in AEM wilt gebruiken, moet u Dynamic Media alleen inschakelen als u een [specifiek scenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) gebruikt. Dynamic Media is uitgeschakeld, tenzij u dynamische media inschakelt in de runmode.
+* De mogelijkheid om slechts één primaire bronafbeelding te beheren en een oneindige uitvoering te genereren zonder extra opslagruimte.
+* De mogelijkheid om interactieve visualisatie te gebruiken, zoals zoomen, pannen en draaien.
 
-Om dynamische media toe te laten, moet u de dynamische media runmode of van de bevellijn of van de naam van het quickstart dossier toelaten.
+Als u de Klassieke van Dynamic Media in Experience Manager wilt gebruiken, laat geen Dynamic Media toe tenzij u een [specifiek scenario](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) gebruikt. Dynamic Media is uitgeschakeld, tenzij u Dynamic Media inschakelt in de uitvoeringsmodus.
 
-**Dynamische media inschakelen**
+Als u Dynamic Media wilt inschakelen, moet u de Dynamic Media-uitvoeringsmodus inschakelen via de opdrachtregel of de snelstartbestandsnaam.
+
+**Dynamic Media inschakelen**
 
 1. Ga als volgt te werk op de opdrachtregel wanneer u de snelstart start:
 
@@ -162,7 +165,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
    ```
 
-   Als u publiceert naar s7delivery, dan moet u ook de volgende TrustStore argumenten omvatten:
+   Als u publiceert naar s7delivery, moet u de volgende TrustStore argumenten ook omvatten:
 
    ```
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
@@ -170,7 +173,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
    ```
 
-1. Verzoek `https://localhost:4502/is/image` en zorg ervoor de Server van het Beeld nu loopt.
+1. `https://localhost:4502/is/image` aanvragen en controleren of de Image Server nu is gestart.
 
    >[!NOTE]
    >
@@ -181,31 +184,31 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2020-07-25.log`
    * s7access-&lt;yyyy>&lt;dd>.log - Het s7access-logboek registreert elke aanvraag die aan Dynamic Media is gedaan via `/is/image` en `/is/content`.
 
-   Deze logboeken worden alleen gebruikt als Dynamic Media is ingeschakeld. Zij zijn niet inbegrepen in **Download volledig** pakket dat van `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer u Customer Support belt als u een Dynamic Media-probleem hebt, voeg dan beide logbestanden aan het probleem toe.
+   Deze logboeken worden alleen gebruikt als Dynamic Media is ingeschakeld. Zij zijn niet inbegrepen in **Download volledig** pakket dat van `system/console/status-Bundlelist` pagina wordt geproduceerd; wanneer u Customer Support belt als u een Dynamic Media-probleem hebt, voegt u beide logboeken aan het probleem toe.
 
-### Als u AEM hebt geïnstalleerd op een andere poort of een ander contextpad... {#if-you-installed-aem-to-a-different-port-or-context-path}
+### Als u Experience Manager op een andere haven of een contextweg installeerde... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Als u [AEM aan een toepassingsserver](/help/sites-deploying/application-server-install.md) en toegelaten Dynamic Media hebt, moet u **self** domein in externalizer vormen. Anders werkt het genereren van miniaturen voor elementen niet correct voor dynamische media-elementen.
+Als u [Experience Manager aan een toepassingsserver](/help/sites-deploying/application-server-install.md) opstelt en Dynamic Media toegelaten hebt, moet u **self** domein in externalizer vormen. Anders werkt het genereren van miniaturen voor elementen niet correct voor Dynamic Media-elementen.
 
 Bovendien als u quickstart op een verschillende haven of contextweg in werking stelt, moet u ook **self** domein veranderen.
 
-Als Dynamic Media is ingeschakeld, worden de statische miniatuuruitvoeringen voor afbeeldingselementen gegenereerd met Dynamic Media. Voor het correct genereren van miniaturen voor dynamische media, moet AEM een URL-aanvraag naar zichzelf uitvoeren en zowel het poortnummer als het contextpad kennen.
+Als Dynamic Media is ingeschakeld, worden de statische miniatuuruitvoeringen voor afbeeldingselementen gegenereerd met Dynamic Media. Voor het correct genereren van miniaturen voor Dynamic Media moet de Experience Manager een URL-aanvraag naar zichzelf uitvoeren en zowel het poortnummer als het contextpad weten.
 
-In AEM:
+In Experience Manager:
 
 * Het **self** domein in [externalizer](/help/sites-developing/externalizer.md) wordt gebruikt om zowel het havenaantal als contextweg terug te winnen.
 * Als geen **self** domein wordt gevormd, worden het havenaantal en contextweg teruggewonnen van de dienst van HTTP van Jetty.
 
-In een AEM plaatsing van de WAR van QuickStart, kunnen het havenaantal en contextweg niet worden afgeleid, daarom moet u een **self** domein vormen. Zie [externalizer documentatie](/help/sites-developing/externalizer.md) over hoe te om **self** domein te vormen.
+In een plaatsing van de WAR van QuickStart van de Experience Manager, kunnen het havenaantal en contextweg niet worden afgeleid, daarom moet u een **self** domein vormen. Zie [externalizer documentatie](/help/sites-developing/externalizer.md) over hoe te om **self** domein te vormen.
 
 >[!NOTE]
-In een [AEM stand-alone plaatsing QuickStart](/help/sites-deploying/deploy.md), te hoeven een **self** domein over het algemeen niet worden gevormd omdat het havenaantal en contextweg auto-gevormd kan zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **self** domein vormen.
+In een [Experience Manager QuickStart stand-alone plaatsing](/help/sites-deploying/deploy.md), te hoeven een **self** domein over het algemeen niet worden gevormd omdat het havenaantal en contextweg auto-gevormd kan zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **self** domein vormen.
 
 ## Dynamic Media {#disabling-dynamic-media} uitschakelen
 
-Dynamische media zijn niet standaard ingeschakeld. Als u echter eerder dynamische media hebt ingeschakeld, kunt u deze later uitschakelen.
+Dynamic Media is niet standaard ingeschakeld. Als u Dynamic Media eerder hebt ingeschakeld, kunt u deze later uitschakelen.
 
-Als u dynamische media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijdert u de runmodusmarkering `-r dynamicmedia`.
+Als u Dynamic Media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijdert u de markering `-r dynamicmedia` voor de uitvoermodus.
 
 **Dynamic Media uitschakelen nadat deze is ingeschakeld**
 
@@ -220,28 +223,29 @@ Als u dynamische media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijd
 1. Verzoek `https://localhost:4502/is/image`. Je ontvangt een bericht dat Dynamic Media is uitgeschakeld.
 
    >[!NOTE]
-   Nadat de Dynamic Media-uitvoeringsmodus is uitgeschakeld, wordt de workflowstap waarmee de uitvoering `cqdam.pyramid.tiff` wordt gegenereerd, automatisch overgeslagen. Hierdoor worden ook ondersteuning voor dynamische uitvoeringen en andere Dynamic Media-functies uitgeschakeld.
-   Houd er ook rekening mee dat wanneer de Dynamic Media-uitvoeringsmodus wordt uitgeschakeld nadat de AEM is geconfigureerd, alle middelen die in die uitvoeringsmodus zijn geüpload, nu ongeldig zijn.
+   Nadat de Dynamic Media-uitvoeringsmodus is uitgeschakeld, wordt de workflowstap waarmee de uitvoering `cqdam.pyramid.tiff` wordt gegenereerd, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoeringen en andere Dynamic Media-functies uit.
+   Houd er ook rekening mee dat wanneer de Dynamic Media-uitvoeringsmodus wordt uitgeschakeld nadat de Experience Manager-server is geconfigureerd, alle middelen die in die uitvoeringsmodus zijn geüpload, nu ongeldig zijn.
 
 ## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6.3 naar 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Als u AEM Dynamic Media van 6.3 aan 6.5 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen om al uw voorinstellingen en configuraties van `/etc` aan `/conf` in CRXDE Lite te migreren.
+Als u Experience Manager Dynamic Media van 6.3 aan 6.5 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen. Met deze opdracht migreert u al uw voorinstellingen en configuraties van `/etc` naar `/conf` in CRXDE Lite.
 
-**Opmerking**: Als u uw AEM op verenigbaarheidswijze-namelijk in werking stelt hebt u het verenigbaarheidspakket geïnstalleerd-u te hoeven om deze bevelen in werking te stellen.
+>[!NOTE]
+Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
 
-Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende de krullbevel van Linux in werking te stellen kwam:
+Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende Linux® krullbevel in werking te stellen kwam:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-Als u aangepaste voorinstellingen en configuraties van viewers die u hebt gemaakt van `/etc` naar `/conf` wilt migreren, voert u de volgende Linux-curl-opdracht uit:
+Als u aangepaste viewervoorinstellingen en -configuraties die u hebt gemaakt van `/etc` naar `/conf` wilt migreren, voert u de volgende Linux® curl-opdracht uit:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
 ## Afbeeldingsreplicatie {#configuring-image-replication} configureren
 
-De levering van Dynamic Media-afbeeldingen werkt door het publiceren van afbeeldingselementen, waaronder videominiaturen, van AEM Author die deze repliceert tot Adobe op aanvraag (de Replication Service URL). De activa worden dan geleverd door de dienst van de beeldlevering op bestelling (de Dienst URL van het Beeld).
+De levering van Dynamic Media-afbeeldingen werkt door beeldelementen, waaronder videominiaturen, te publiceren van Auteur van Experience Managers tot Auteur van Adobe en deze te repliceren op aanvraag (de replicatieservice URL). De activa worden dan geleverd door de dienst van de beeldlevering op bestelling (de Dienst URL van het Beeld).
 
-U moet het volgende doen:
+Ga als volgt te werk:
 
 1. [Verificatie](#setting-up-authentication) instellen.
 1. [Vorm de replicatieagent](#configuring-the-replication-agent).
@@ -252,18 +256,18 @@ Nadat u de replicatieagent hebt gevormd, moet u [bevestigen en testen dat het me
 
 >[!NOTE]
 De standaardgeheugenlimiet voor het maken van PTIFF is 3 GB voor alle workflows. U kunt bijvoorbeeld één afbeelding verwerken die 3 GB geheugen vereist terwijl andere workflows worden gepauzeerd, of u kunt 10 afbeeldingen parallel verwerken die elk 300 MB geheugen vereisen.
-De geheugenlimiet is configureerbaar en moet passen bij de beschikbaarheid van de systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele zeer grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
-Een afbeelding waarvoor meer dan de maximale geheugenlimiet is vereist, wordt afgewezen.
+De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeembronnen en het type afbeeldingsinhoud dat wordt verwerkt. Als u vele grote activa hebt en genoeg geheugen op het systeem hebt, kunt u deze grens verhogen om ervoor te zorgen dat de beelden parallel worden verwerkt.
+Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
 Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools > Operations > Web Console > Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]**.
 
 ### Verificatie {#setting-up-authentication} instellen
 
-U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen repliceren naar de Dynamic Media-service voor het leveren van images. U doet dit door een KeyStore te verkrijgen en dan het onder **[!UICONTROL dynamic-media-replication]** gebruiker op te slaan en het te vormen. Uw bedrijfsbeheerder had tijdens het inrichtingsproces een welkomstbericht met het KeyStore-bestand en de benodigde gegevens moeten ontvangen. Neem contact op met de klantenservice als u dit niet hebt ontvangen.
+Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt repliceren naar de Dynamic Media-service voor het leveren van afbeeldingen. U verkrijgt eerst een KeyStore en dan sparen het onder **[!UICONTROL dynamic-media-replication]** gebruiker en vormt het. Uw bedrijfsbeheerder heeft tijdens het inrichtingsproces een welkomstbericht met het KeyStore-bestand en de benodigde gegevens ontvangen. Neem contact op met de klantenservice van Adobe als u deze informatie niet hebt ontvangen.
 
 **Verificatie instellen**
 
-1. Neem contact op met de klantenservice voor uw KeyStore-bestand en wachtwoord als u dit nog niet hebt. Dit maakt deel uit van provisioning en de sleutels worden aan uw account gekoppeld.
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Security > Users.]**
+1. Neem contact op met de klantenservice van Adobe voor uw KeyStore-bestand en wachtwoord als u nog geen bestand en wachtwoord hebt. Deze informatie is een noodzakelijk onderdeel van provisioning. De sleutels worden aan uw account gekoppeld.
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > Security > Users.]**
 1. Navigeer op de pagina Gebruikersbeheer naar de **[!UICONTROL dynamic-media-replication]**-gebruiker en tik vervolgens om deze te openen.
 
    ![dm-replicatie](assets/dm-replication.png)
@@ -275,15 +279,15 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen r
 1. Voer een wachtwoord in en bevestig het wachtwoord in het dialoogvenster **[!UICONTROL Set KeyStore Access Password]**.
 
    >[!NOTE]
-   Het wachtwoord onthouden dat u invoert. U zult het opnieuw moeten ingaan wanneer u de Agent van de Replicatie later vormt.
+   Herinner het wachtwoord omdat u het moet opnieuw ingaan wanneer u de Agent van de Replicatie later vormt.
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
 1. Vouw op de pagina **[!UICONTROL Edit User Settings For dynamic-media-replication]** de **Privésleutel toevoegen uit het KeyStore-bestand**-gebied uit en voeg het volgende toe (zie de volgende afbeeldingen):
 
-   * Op **[!UICONTROL New Alias]** gebied, ga de naam van een alias in die u later in de replicatieconfiguratie zult gebruiken; bijvoorbeeld `replication`.
+   * Op **[!UICONTROL New Alias]** gebied, ga de naam van een alias in die u later in de replicatieconfiguratie wilt gebruiken. U kunt `replication` bijvoorbeeld gebruiken als een alias.
    * Tik **[!UICONTROL KeyStore File.]** Navigeer naar het KeyStore-bestand dat u via Adobe ontvangt, selecteer het en tik op **[!UICONTROL Open.]**
-   * Voer in het veld **[!UICONTROL KeyStore File Password]** het wachtwoord voor het sleutelarchief-bestand in. Dit is **niet** het Wachtwoord KeyStore dat u in Stap 5 creeerde maar is de Adobe van het Wachtwoord van het Dossier KeyStore in het Welkome e-mail die naar u tijdens levering wordt verzonden. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een KeyStore-bestand hebt ontvangen.
+   * Voer in het veld **[!UICONTROL KeyStore File Password]** het wachtwoord voor het sleutelarchief-bestand in. Dit wachtwoord is **niet** het Wachtwoord KeyStore dat u in Stap 5 creeerde maar is de Adobe van het Wachtwoord van het Dossier KeyStore in het Welkome die e-mail aan u tijdens levering wordt verzonden. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een KeyStore-bestand hebt ontvangen.
    * Voer in het veld **[!UICONTROL Private Key Password]** het wachtwoord voor de persoonlijke sleutel in (dit kan hetzelfde wachtwoord voor de persoonlijke sleutel zijn als in de vorige stap). Adobe geeft het wachtwoord voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen wachtwoord voor een persoonlijke sleutel hebt ontvangen.
    * Voer in het veld **[!UICONTROL Private Key Alias]** de alias van de persoonlijke sleutel in. Bijvoorbeeld, `*companyname*-alias`. Adobe geeft de alias voor de persoonlijke sleutel op in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u geen alias voor een persoonlijke sleutel hebt ontvangen.
 
@@ -295,16 +299,16 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen r
 
 ### De replicatieagent {#configuring-the-replication-agent} configureren
 
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de globale navigatieconsole en tik vervolgens op **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
 1. Tik op **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery).]** op de pagina Agents op de auteurspagina
 1. Tik op **[!UICONTROL Edit.]**
 1. Tik op de tab **[!UICONTROL Settings]** en voer vervolgens het volgende in:
 
    * **[!UICONTROL Enabled]** - Schakel dit selectievakje in om de replicatieagent in te schakelen.
    * **[!UICONTROL Region]** - Instellen op het juiste gebied: Noord-Amerika, Europa of Azië
-   * **[!UICONTROL Tenant ID]** - Deze waarde is de naam van uw bedrijf/huurder die aan de Dienst van de Replicatie publiceert. Deze waarde is de huurder-id die Adobe opgeeft in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u dit niet hebt ontvangen.
+   * **[!UICONTROL Tenant ID]** - Deze waarde is de naam van uw bedrijf/huurder die aan de Dienst van de Replicatie publiceert. Deze waarde is de huurder-id die Adobe opgeeft in het welkomstbericht dat u tijdens de levering hebt ontvangen. Neem contact op met de klantenservice van Adobe als u deze informatie niet hebt ontvangen.
    * **[!UICONTROL Key Store Alias]** - Deze waarde is gelijk aan de waarde** New Alias** die is ingesteld bij het genereren van de sleutel in  [Setting Up Authentication](#setting-up-authentication). bijvoorbeeld  `replication`. (Zie stap 7 in [Verificatie instellen](#setting-up-authentication).)
-   * **[!UICONTROL Key Store Password]** - Dit is het KeyStore-wachtwoord dat is gemaakt toen u op  **[!UICONTROL Create KeyStore.]** Adobe tikte, geeft dit wachtwoord niet op. Zie stap 5 van [Verificatie instellen](#setting-up-authentication).
+   * **[!UICONTROL Key Store Password]** - Het KeyStore-wachtwoord dat is gemaakt toen u op  **[!UICONTROL Create KeyStore.]** Adobe tikte, bevat dit wachtwoord niet. Zie stap 5 van [Verificatie instellen](#setting-up-authentication).
 
    In de volgende afbeelding ziet u de replicatieagent met voorbeeldgegevens:
 
@@ -314,7 +318,7 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te kunnen r
 
 ### De Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media} valideren
 
-Ga als volgt te werk om de replicatieagent voor dynamische media te valideren:
+Ga als volgt te werk om de replicatieagent voor Dynamic Media te valideren:
 
 Tik **[!UICONTROL Test Connection.]** Voorbeeld uitvoer is als volgt:
 
@@ -334,14 +338,14 @@ Replication test succeeded
 
 >[!NOTE]
 U kunt ook op een van de volgende manieren controleren:
-* Controleer de replicatielogboeken om ervoor te zorgen het middel wordt herhaald.
-* Publiceer een afbeelding. Tik op de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu. Selecteer vervolgens een viewervoorinstelling, klik op URL en kopieer/plak de URL in de browser om te controleren of de afbeelding zichtbaar is.
+* Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
+* Publiceer een afbeelding. Tik op de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Klik op **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
 
 
 
 ### Probleemoplossingsverificatie {#troubleshooting-authentication}
 
-Bij het instellen van verificatie zijn er enkele problemen die u kunt oplossen. Controleer voordat u deze inschakelt of u replicatie hebt ingesteld.
+Bij het instellen van verificatie zijn er enkele problemen die u kunt oplossen. Controleer voordat u op deze problemen controleert of u replicatie hebt ingesteld.
 
 #### Probleem: HTTP-statuscode 401 met bericht - Autorisatie vereist {#problem-http-status-code-with-message-authorization-required}
 
@@ -386,7 +390,7 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 
 #### Probleem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
-Dit probleem wordt veroorzaakt door een configuratiefout in uw AEM Auteur-instantie. Het Java-proces op de auteur krijgt niet de juiste `javax.net.ssl.trustStore`. U ziet deze fout in het replicatielogboek:
+Deze kwestie wordt veroorzaakt door een configuratiefout in uw instantie van de Auteur van de Experience Manager. Het Java™-proces op de auteur krijgt niet de juiste `javax.net.ssl.trustStore`. U ziet deze fout in het replicatielogboek:
 
 ```shell
 14.04.2016 09:37:43 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1460651862089, userId='admin', revision='null'}. java.io.IOException: Failed to execute request 'https://<localhost>:8580/is-publish/publish-receiver?Cmd=Test&RootId=rbrough-osx2': java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
@@ -402,11 +406,11 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Oplossing**: Zorg ervoor dat voor het Java-proces op de AEM-auteur de eigenschap system is  `-Djavax.net.ssl.trustStore=` ingesteld op een geldige vertrouwde opslag.
+**Oplossing**: Zorg ervoor dat het proces Java™ op de Auteur van de Experience Manager het systeembezit heeft dat aan een geldig truststore wordt  `-Djavax.net.ssl.trustStore=` geplaatst.
 
 #### Probleem: KeyStore is niet ingesteld of is niet geïnitialiseerd {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
-Dit probleem kan worden veroorzaakt door een hotfix of een functiepak die het dynamic-media-user of keystore-knooppunt overschrijft.
+Dit probleem wordt waarschijnlijk veroorzaakt door een hotfix of een functiepak die het dynamic-media-user of keystore-knooppunt overschrijft.
 
 Voorbeeld van replicatielogboek:
 
@@ -426,7 +430,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
    `localhost:4502/libs/granite/security/content/useradmin.html`
 1. Navigeer op de pagina Gebruikersbeheer naar de `dynamic-media-replication`-gebruiker en tik vervolgens om deze te openen.
 1. Klik op het tabblad **[!UICONTROL KeyStore]**. Als de **[!UICONTROL Create KeyStore]** knoop verschijnt, dan moet u de stappen onder [Opstelling Authentificatie ](#setting-up-authentication) vroeger opnieuw doen.
-1. Als u de opstelling KeyStore moest opnieuw doen, kunt u [het Vormen van de Agent van de Replicatie ](/help/assets/config-dynamic.md#configuring-the-replication-agent) opnieuw moeten doen, eveneens.
+1. Als u de opstelling KeyStore moest opnieuw doen, moet u [het Vormen van de Agent van de Replicatie ](/help/assets/config-dynamic.md#configuring-the-replication-agent) opnieuw, eveneens doen.
 
    Wijzig de s7delivery Replication Agent.
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
@@ -435,7 +439,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 #### Probleem: Publish Agent gebruikt SSL in plaats van OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
-Dit probleem kan worden veroorzaakt door een hotfix of een functiepakket die niet correct hebben geïnstalleerd of de instellingen overschrijven.
+Dit probleem wordt waarschijnlijk veroorzaakt door een hotfix of een functiepakket die niet correct hebben geïnstalleerd of de instellingen overschrijven.
 
 Voorbeeld van replicatielogboek:
 
@@ -451,7 +455,7 @@ Voorbeeld van replicatielogboek:
 
 **Oplossing:**
 
-1. Klik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Klik in Experience Manager op **[!UICONTROL Tools > General > CRXDE Lite.]**
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -468,7 +472,7 @@ Voorbeeld van replicatielogboek:
 
 Adobe adviseert dat u een test van begin tot eind van de configuratie uitvoert.
 
-Zorg ervoor dat u het volgende al hebt gedaan voordat u met deze test begint:
+Zorg ervoor dat u het volgende al hebt gedaan voordat u deze test start:
 
 * Voorinstellingen voor toegevoegde afbeelding.
 * Configureer **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** onder Cloud Services. De afbeeldingsservice-URL is vereist voor deze test
@@ -483,37 +487,37 @@ Zorg ervoor dat u het volgende al hebt gedaan voordat u met deze test begint:
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
 1. Selecteer een dynamische vertoning.
-1. Klik **[!UICONTROL URL]** om URL voor dit middel te verkrijgen.
+1. Klik op **[!UICONTROL URL]** om de URL voor dit element op te halen.
 1. Navigeer naar de geselecteerde URL en controleer of de afbeelding zich naar behoren gedraagt.
 
 U kunt ook testen of uw elementen zijn geleverd door req=exists aan uw URL toe te voegen.
 
 ## Dynamic Media-Cloud Services {#configuring-dynamic-media-cloud-services} configureren
 
-De Dynamic Media Cloud-service biedt ondersteuning voor cloudservices, zoals hybride publicatie en levering van beelden en video, videoanalyse en videocodering.
+De Dynamic Media-Cloud Service ondersteunt onder andere hybride publicatie en levering van afbeeldingen en video, videoanalyse en videocodering.
 
-Als onderdeel van de configuratie moet u een registratie-id, een URL voor de videoservice, een URL voor de afbeeldingsservice, een URL voor de replicatieservice en een verificatieverificatie invoeren. U zou al deze informatie als deel van het proces van de rekeninglevering moeten ontvangen. Als u deze gegevens niet hebt ontvangen, neemt u contact op met de Adobe Experience Manager Administrator of Adobe Technical Support om deze gegevens te vragen.
+Als onderdeel van de configuratie moet u een registratie-id, een URL voor de videoservice, een URL voor de afbeeldingsservice, een URL voor de replicatieservice en een verificatieverificatie invoeren. Deze gegevens zijn per e-mail naar u verzonden als onderdeel van het proces voor het verschaffen van accounts. Als u deze informatie niet hebt ontvangen, neemt u contact op met uw Adobe Experience Manager-beheerder of de klantenservice van Adobe om de informatie op te vragen.
 
 >[!NOTE]
-Voordat u Dynamic Media Cloud-services instelt, moet u uw publicatie-exemplaar instellen. Ook moet replicatie zijn ingesteld voordat u Dynamic Media Cloud-services kunt configureren.
+Voordat u Dynamic Media-Cloud Services instelt, moet u eerst uw publicatieexemplaar hebben ingesteld. U moet ook replicatie hebben opstelling alvorens de Cloud Services van Dynamic Media te vormen.
 
-Dynamische mediawolkenservices configureren:
+Dynamic Media-Cloud Services configureren:
 
-1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Cloud Services > Dynamic Media Configuration (Pre-6.3).]**
 1. Selecteer **[!UICONTROL global]** in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina en tik **[!UICONTROL Create.]**
 1. Typ in het dialoogvenster **[!UICONTROL Create Dynamic Media Configuration]** een titel in het veld Titel.
 1. Als u Dynamic Media for video configureert,
 
    * Typ uw registratie-id in het veld **[!UICONTROL Registration ID]**.
-   * Voer in het veld **V[!UICONTROL ideo Service URL]** de URL van de videoservice voor de Dynamic Media Gateway in.
+   * Voer in het veld **[!UICONTROL Video Service URL]** de URL van de videoservice voor de Dynamic Media Gateway in.
 
 1. Als u Dynamic Media configureert voor beeldbewerking, voert u in het veld **[!UICONTROL Image Service URL]** de URL van de afbeeldingsservice voor de Dynamic Media Gateway in.
 1. Tik **[!UICONTROL Save]** om terug te keren naar de pagina Dynamic Media Configuration Browser.
-1. Tik op het AEM om de globale navigatieconsole te openen.
+1. Tik op het logo van de Experience Manager om de globale navigatieconsole te openen.
 
 ## Video-rapportage {#configuring-video-reporting} configureren
 
-Met Dynamic Media Hybrid kunt u videomelding configureren voor meerdere installaties van AEM.
+Met Dynamic Media Hybrid kunt u videomelding configureren voor meerdere installaties van Experience Manager.
 
 **Wanneer wordt gebruikt:** Op het moment dat u Dynamic Media Configuration configureert (ouder dan 6.3), worden veel functies gestart, waaronder videobiteringen. De configuratie leidt tot een rapportreeks in een regionaal bedrijf Analytics. Als u veelvoudige knopen van de Auteur vormt, creeert u een afzonderlijke rapportreeks voor elke. Dit heeft tot gevolg dat de rapportage van gegevens tussen de installaties inconsistent is. Bovendien als elke knoop van de Auteur naar de zelfde Hybride Publish server verwijst, verandert de laatste installatie van de Auteur de reeks van het bestemmingsrapport voor al videorapportering. Deze kwestie overlaadt het systeem van Analytics met teveel rapportseries.
 
@@ -525,25 +529,25 @@ Met Dynamic Media Hybrid kunt u videomelding configureren voor meerdere installa
 
 ### Een voorinstellingspakket voor videoanalyse maken nadat het eerste auteurknooppunt {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node} is geconfigureerd
 
-Wanneer u deze taak hebt voltooid, beschikt u over een pakketbestand met de voorinstellingen voor videoanalyse. Deze voorinstellingen bevatten een rapportsuite, de trackingserver, de naamruimte voor bijhouden en de Marketing Cloud-organisatie-id, indien beschikbaar.
+Wanneer u deze taak hebt voltooid, hebt u een pakketbestand dat de voorinstellingen voor Video Analytics bevat. Deze voorinstellingen bevatten een rapportsuite, de trackingserver, de naamruimte voor bijhouden en de Marketing Cloud-organisatie-id, indien beschikbaar.
 
 1. Indien u dit nog niet hebt gedaan, configureert u Dynamic Media Configuration (Pre 6.3).
 1. (Optioneel) Geef de rapportsuite-id weer en kopieer deze. (U moet toegang hebben tot het JCR). Hoewel het niet nodig is om de rapportsuite-id te hebben, wordt de validatie eenvoudiger.
 1. Maak een pakket met gebruik van Package Manager.
 1. Bewerk het pakket om een filter op te nemen.
 
-   In AEM: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+   In Experience Manager: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. Maak het pakket.
 1. Download of deel het voorinstellingspakket voor Video Analytics, zodat het kan worden gedeeld met de volgende nieuwe auteurknooppunten.
 
-### Het vooraf ingestelde pakket voor videoanalyse installeren voordat u extra auteurknooppunten {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes} configureert
+### Het vooraf ingestelde pakket voor videoanalyse installeren voordat u meer ontwerpknooppunten configureert {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
-Zorg ervoor dat u deze taak ***voor*** voltooit u de Configuratie van Dynamic Media (pre 6.3). Als u dit niet doet, wordt er een andere ongebruikte rapportsuite gemaakt. Bovendien, alhoewel de video het melden correct zal blijven werken, wordt het verzamelen van gegevens niet geoptimaliseerd.
+Zorg ervoor dat u deze taak ***voor*** voltooit u de Configuratie van Dynamic Media (pre 6.3). Als u dit niet doet, wordt er een andere ongebruikte rapportsuite gemaakt. Bovendien, alhoewel de video het melden correct blijft werken, wordt het verzamelen van gegevens niet geoptimaliseerd.
 
 Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste auteurknooppunt toegankelijk is op het nieuwe auteurknooppunt.
 
-1. Upload het vooraf ingestelde pakket voor videoanalyse dat u eerder hebt gemaakt naar Package Manager.
+1. Upload het vooraf ingestelde pakket voor Video Analytics dat u eerder hebt gemaakt naar Package Manager.
 1. Installeer het vooraf ingestelde pakket Video Analytics.
 1. Dynamic Media-configuratie configureren (ouder dan 6.3).
 
@@ -554,10 +558,10 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
    * **Controleer de voorinstelling Video Analytics via het**
 JCRToor de voorinstelling Video Analytics via het JCR hebt u toegang tot CRXDE Lite.
 
-      AEM - Navigeer in CRXDE Lite naar `/conf/global/settings/
+      Experience Manager - Navigeer in CRXDE Lite naar `/conf/global/settings/
 dam/dm/presets/analytics/jcr:content/userdata`
 
-      Dat is `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
+      Zoals in `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
       Als u geen toegang hebt tot CRXDE Lite op het knooppunt Auteur, kunt u de voorinstelling controleren via de server Publiceren.
 
@@ -568,7 +572,7 @@ Als u bijvoorbeeld de voorinstelling Analytics wilt weergeven op het knooppunt A
 
       `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
-      Als u de voorinstelling wilt valideren op publicatieservers, kunt u een vergelijkbare directe aanvraag indienen bij de publicatieserver. De reacties zijn hetzelfde op de knooppunten Auteur en Publiceren. De reactie ziet er ongeveer als volgt uit:**
+      Als u de voorinstelling wilt valideren op publicatieservers, kunt u een vergelijkbare directe aanvraag indienen bij de publicatieserver. De reacties zijn hetzelfde op de knooppunten Auteur en Publiceren. De reactie ziet er ongeveer als volgt uit:
 
       ```
       marketingCloudOrgId=0FC4E86B573F99CC7F000101
@@ -577,8 +581,8 @@ Als u bijvoorbeeld de voorinstelling Analytics wilt weergeven op het knooppunt A
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-   * **Controleer de voorinstelling Video Analytics via Video Reporting tool in**
-AEMTap  **[!UICONTROL Tools > Assets > Video Reporting]**
+   * **Controleer de voorinstelling Video-analyse met het gereedschap Video-rapportage in Experience**
+ManagerTap  **[!UICONTROL Tools > Assets > Video Reporting]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -587,7 +591,7 @@ AEMTap  **[!UICONTROL Tools > Assets > Video Reporting]**
 
    Als u rapportgegevens wilt genereren, uploadt en publiceert u één video. Gebruik **[!UICONTROL Copy URL]** en voer de video minstens één keer uit.
 
-   Houd er rekening mee dat het maximaal 12 uur kan duren voordat de rapportgegevens zijn gevuld met het gebruik van de Video Viewer.
+   Het kan 12 uur duren voordat de rapportgegevens zijn gevuld met het gebruik van de Video Viewer.
 
    Als er een fout is en de rapportreeks niet correct wordt geplaatst, wordt het volgende alarm getoond.
 
@@ -599,7 +603,7 @@ AEMTap  **[!UICONTROL Tools > Assets > Video Reporting]**
 
 * Tijdens de installatie zijn soms verbindingen met de Analytics API-server onderbroken. De installatie probeert de verbinding 20 keer opnieuw, maar het ontbreekt nog. Wanneer deze situatie voorkomt, registreert het logboekdossier veelvoudige fouten. Zoeken naar `SiteCatalystReportService`.
 * Als u het pakket met voorinstellingen voor analysemogelijkheden niet eerst installeert, wordt mogelijk een nieuwe rapportsuite gemaakt.
-* De bevordering van AEM 6.3 aan AEM 6.4 of AEM 6.4.1, dan het vormen van de Configuratie van Dynamic Media (pre 6.3), leidt nog tot een rapportreeks. Dit probleem is bekend en moet worden opgelost voor AEM 6.4.2.
+* De bevordering van Experience Manager 6.3 aan Experience Manager 6.4 of Experience Manager 6.4.1, dan het vormen van de Configuratie van Dynamic Media (pre 6.3), leidt nog tot een rapportreeks. Dit probleem is bekend en moet worden opgelost voor Experience Manager 6.4.2.
 
 ### Informatie over de voorinstelling voor Video-analyse {#about-the-video-analytics-preset}
 
@@ -610,19 +614,19 @@ De eigenschappen van de voorinstelling zijn als volgt:
 * `reportSuite`
 * `trackingServer`
 * `trackingNamespace`
-* `marketingCloudOrgId` (niet aanwezig in oudere AEM versies)
+* `marketingCloudOrgId` (niet aanwezig in oudere versies van Experience Managers)
 
-AEM 6.4 en nieuwere versies slaan deze voorinstelling op `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
+Experience Manager 6.4 en nieuwere versies slaan deze voorinstelling op `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 ## Catalogusinstellingen {#replicating-catalog-settings} herhalen
 
-U moet uw eigen standaardinstellingen voor de catalogus publiceren als onderdeel van het installatieproces via het JCR. Catalogusinstellingen herhalen:
+Publiceer uw eigen standaardinstellingen voor de catalogus als onderdeel van het installatieproces via het JCR. Catalogusinstellingen herhalen:
 
 1. In een Eindvenster, stel het volgende in werking:
 
    `curl -u admin:admin localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-1. Navigeer in AEM naar de volgende locatie in CRXDE Lite (vereist beheerdersrechten):
+1. Navigeer in Experience Manager naar de volgende locatie in CRXDE Lite (vereist beheerdersrechten):
 
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
@@ -631,17 +635,17 @@ U moet uw eigen standaardinstellingen voor de catalogus publiceren als onderdeel
 
 ## Viewer-voorinstellingen {#replicating-viewer-presets} repliceren
 
-Als u *een element met een viewervoorinstelling wilt leveren, moet u de viewervoorinstelling repliceren/publiceren.* (Alle viewervoorinstellingen moeten *en* worden gerepliceerd om de URL of insluitcode voor een element te verkrijgen.
+Als u *een element met een viewervoorinstelling wilt leveren, moet u de viewervoorinstelling repliceren/publiceren.* (Alle voorinstellingen voor viewers moeten worden geactiveerd *en* gerepliceerd om de URL of insluitcode voor een element te verkrijgen.
 Zie [Voorinstellingen van viewer publiceren](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) voor meer informatie.
 
 >[!NOTE]
-Standaard geeft het systeem diverse uitvoeringen weer wanneer u **[!UICONTROL Renditions]** selecteert en een aantal viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal voorinstellingen voor viewers dat wordt weergegeven, vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Standaard geeft het systeem verschillende uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en verschillende voorinstellingen voor viewers selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven, vergroten](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal voorinstellingen voor viewers dat wordt weergegeven, vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Elementen filteren voor replicatie {#filtering-assets-for-replication}
 
-Bij niet-Dynamic Media-implementaties repliceert u *all* middelen (zowel afbeeldingen als video) van uw AEM auteursomgeving naar het AEM publicatieknooppunt. Deze workflow is nodig omdat de AEM ook de middelen levert.
+Bij niet-Dynamic Media-implementaties repliceert u *all* middelen (zowel afbeeldingen als video) van de auteursomgeving van de Experience Manager naar het publicatieknooppunt van de Experience Manager. Deze workflow is nodig omdat de Experience Manager ook de middelen op de publicatieservers plaatst.
 
-Bij Dynamic Media-implementaties is het echter niet nodig om dezelfde middelen te repliceren naar publicatieknooppunten, omdat assets via de cloud worden geleverd. AEM publicatieknooppunten moeten echter niet worden gerepliceerd. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals Dynamic Media-viewers, sitepagina&#39;s en statische inhoud, wordt nog steeds aangeboden vanaf de AEM publicatieknooppunten.
+Bij Dynamic Media-implementaties is het echter niet nodig dezelfde middelen te repliceren naar publicatieknooppunten van Experience Managers, omdat assets via de cloud worden geleverd. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals Dynamic Media-viewers, sitepagina&#39;s en statische inhoud, wordt nog steeds aangeboden vanaf de publicatieknooppunten van de Experience Manager.
 
 Naast het repliceren van de activa, worden de volgende niet-activa ook herhaald:
 
@@ -649,11 +653,11 @@ Naast het repliceren van de activa, worden de volgende niet-activa ook herhaald:
 * Voorinstellingen afbeelding: `/conf/global/settings/dam/dm/presets/macros`
 * Voorinstellingen viewer: `/conf/global/settings/dam/dm/presets/viewer`
 
-Met de filters kunt u *assets* uitsluiten van replicatie naar het AEM publicatieknooppunt.
+De filters verstrekken een manier voor u om *activa* uit te sluiten van worden herhaald aan de Experience Manager publicatieknooppunt.
 
 ### Standaardelementfilters gebruiken voor replicatie {#using-default-asset-filters-for-replication}
 
-Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) beeldbewerking en video, kunt u de standaardfilters gebruiken die wij &#39;as-is&#39; leveren. De volgende filters zijn standaard actief:
+Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) beeldbewerking en video, kunt u de standaardfilters gebruiken die Adobe as-is biedt. De volgende filters zijn standaard actief:
 
 <table>
  <tbody>
@@ -667,7 +671,7 @@ Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) bee
    <td>Afbeeldingslevering Dynamic Media</td>
    <td><p>filterafbeeldingen</p> <p>filtersets</p> <p> </p> </td>
    <td><p>Begint met <strong>image/</strong></p> <p>Bevat <strong>application/</strong> en eindigt met <strong>set</strong>.</p> </td>
-   <td>De 'filter-images' die buiten het vak (voor afzonderlijke afbeeldingselementen, waaronder interactieve afbeeldingen) en 'filtersets' (voor centrifuges, afbeeldingssets, gemengde mediasets en Carousel-sets) worden gebruikt, zijn:
+   <td>De 'filter-images' die buiten het vak (voor afzonderlijke afbeeldingselementen, inclusief interactieve afbeeldingen) en 'filtersets' (voor centrifuges, afbeeldingssets, gemengde mediasets en Carousel-sets) worden gebruikt, zijn:
     <ul>
      <li>Neem PTIFF-afbeeldingen en metagegevens op voor replicatie (elke uitvoering die begint met <strong>cqdam</strong>).</li>
      <li>Sluit de oorspronkelijke afbeelding en statische afbeeldingsuitvoeringen uit van replicatie.</li>
@@ -687,9 +691,9 @@ Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) bee
    <td>Dynamic Media Classic-integratie (Scene7)</td>
    <td><p>filterafbeeldingen</p> <p>filtersets</p> <p>filter-video</p> </td>
    <td><p>Begint met <strong>image/</strong></p> <p>Bevat <strong>application/</strong> en eindigt met <strong>set</strong>.</p> <p>Begint met <strong>video/</strong></p> </td>
-   <td><p>U vormt het Vervoer URI om aan uw AEM te richten publiceert server in plaats van de Adobe Dynamic Media Cloud Replication Service URL. Als u dit filter instelt, kan Dynamic Media Classic elementen leveren in plaats van AEM publicatie-instantie.</p> <p>Met de 'filter-images', 'filtersets' en 'filter-video' uit de box worden:</p>
+   <td><p>U vormt het Vervoer URI om aan uw Experience Manager te richten publiceert server in plaats van de Adobe Dynamic Media Cloud Replication Service URL. Door dit filter in te stellen, kan Dynamic Media Classic elementen leveren in plaats van de Experience Manager-publicatie-instantie.</p> <p>Met de 'filter-images', 'filtersets' en 'filter-video' uit de box worden:</p>
     <ul>
-     <li>Inclusief PTIFF-afbeelding, proxyvideo-uitvoeringen en metagegevens voor replicatie. Maar omdat ze niet bestaan in het JCR-programma voor AEM - Klassieke integratie van Dynamic Media - doet het in feite niets.</li>
+     <li>Inclusief PTIFF-afbeelding, proxyvideo-uitvoeringen en metagegevens voor replicatie. Maar omdat ze niet bestaan in het JCR-programma voor degenen die Experience Manager uitvoeren - de Klassieke integratie van Dynamic Media - doet het in feite niets.</li>
      <li>Sluit de oorspronkelijke afbeelding, statische afbeeldingsuitvoeringen, oorspronkelijke video en statische miniatuuruitvoeringen uit van replicatie. In plaats daarvan levert Dynamic Media Classic afbeeldingen en video-elementen.</li>
     </ul> </td>
   </tr>
@@ -703,29 +707,29 @@ Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie h
 
 Als u Dynamic Media alleen voor video gebruikt, voert u de volgende stappen uit om elementfilters voor replicatie in te stellen:
 
-1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
 1. Tik op **[!UICONTROL Default Agent (publish).]** op de pagina Agents op de auteurspagina
 1. Tik op **[!UICONTROL Edit.]**
 1. Schakel in het dialoogvenster **[!UICONTROL Agent Settings]** op het tabblad **[!UICONTROL Settings]** **[!UICONTROL Enabled]** in om de agent in te schakelen.
 1. Tik op **[!UICONTROL OK.]**
-1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik in Experience Manager op **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 1. **[!UICONTROL filter-video]** zoeken, er met de rechtermuisknop op klikken en **[!UICONTROL Copy.]** selecteren
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/publish`
 1. **[!UICONTROL jcr:content]** zoeken, er met de rechtermuisknop op klikken en **[!UICONTROL Paste.]** selecteren
 
-Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat zowel de videoposterafbeelding als de videometagegevens worden geleverd die zijn vereist voor het afspelen, terwijl de video zelf wordt geleverd door de Dynamic Media-cloudservice. Het filter sluit ook de originele video en statische miniatuuruitvoeringen uit van replicatie, die niet nodig zijn voor de publicatie-instantie.
+Met deze stappen stelt u de publicatieinstantie van de Experience Manager zo in dat de video-posterafbeelding en de videometagegevens die zijn vereist voor het afspelen, worden geleverd terwijl de video zelf wordt geleverd door de Dynamic Media-Cloud Service. Het filter sluit de originele video en statische miniatuurweergaven, die niet nodig zijn voor de publicatie-instantie, uit van replicatie.
 
 ### Elementfilters instellen voor imaging in implementaties buiten de productie {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 Als u Dynamic Media gebruikt voor het maken van images in implementaties die niet voor productiedoeleinden worden gebruikt, voert u de volgende stappen uit om elementfilters voor replicatie in te stellen:
 
-1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > Deployment > Replication > Agents on author.]**
 1. Tik op **[!UICONTROL Default Agent (publish).]** op de pagina Agents op de auteurspagina
 1. Tik op **[!UICONTROL Edit.]**
 1. Schakel in het dialoogvenster **[!UICONTROL Agent Settings]** op het tabblad **[!UICONTROL Settings]** **[!UICONTROL Enabled]** in om de agent in te schakelen.
 1. Tik op **[!UICONTROL OK.]**
-1. Tik in AEM op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik in Experience Manager op **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
@@ -735,11 +739,11 @@ Als u Dynamic Media gebruikt voor het maken van images in implementaties die nie
 1. Zoek **[!UICONTROL jcr:content]**, klik er met de rechtermuisknop op en selecteer **[!UICONTROL Create > Create Node.]** Voer de naam `damRenditionFilters` van het type `nt:unstructured` in.
 1. `damRenditionFilters` zoeken, er met de rechtermuisknop op klikken en **[!UICONTROL Paste.]** selecteren
 
-Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat de afbeeldingen worden geleverd aan uw niet-productieomgeving. Het filter sluit ook de oorspronkelijke afbeelding en statische uitvoeringen uit van replicatie, die niet nodig zijn voor de publicatie-instantie.
+Deze stappen plaatsen opstelling de Experience Manager publiceer instantie om de beelden aan uw niet productiemilieu te leveren. Het filter sluit de oorspronkelijke afbeelding en statische uitvoeringen, die niet nodig zijn voor de publicatie-instantie, ook uit van replicatie.
 
 >[!NOTE]
 Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Voor elke filterinstelling moet er altijd een andere gebruiker zijn.
-Als u meer dan één filter op een server gebruikt - bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery - dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in **jcr:content** knoop wordt toegewezen. Zie de volgende afbeelding:
+Gebruikt u meer dan één filter op een server? Bijvoorbeeld, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery. Als zo, dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in **jcr:content** knoop wordt toegewezen. Zie de volgende afbeelding:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -747,7 +751,7 @@ Als u meer dan één filter op een server gebruikt - bijvoorbeeld, één filter 
 
 Elementfilters optioneel aanpassen voor replicatie:
 
-1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik **[!UICONTROL Tools > General > CRXDE Lite.]**
 1. Navigeer in de linkermapstructuur naar `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` om de filters te bekijken.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
@@ -808,12 +812,12 @@ Als u de Dynamic Media Image Server configureert, moet u de Adobe CQ Scene7 Imag
 >[!NOTE]
 Dynamic Media werkt uit-van-de-doos [nadat het ](#enabling-dynamic-media) wordt toegelaten. U kunt echter desgewenst de installatie verfijnen door Dynamic Media Image Server te configureren om aan bepaalde specificaties of vereisten te voldoen.
 
-**Vereiste**:  *Voordat* u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows een installatie van de Microsoft Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Visual C++ 2010 Redistributable Pakket van Microsoft (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=14632) downloaden.
+**Vereiste**:  *Voordat* u Dynamic Media Image Server configureert, moet u ervoor zorgen dat uw VM van Windows® een installatie van de Microsoft® Visual C++-bibliotheken bevat. De bibliotheken zijn nodig om Dynamic Media Image Server uit te voeren. U kunt [het Visuele C++ 2010 Redistributable Pakket van Microsoft® (x64) hier ](https://www.microsoft.com/en-us/download/details.aspx?id=14632) downloaden.
 
 Dynamic Media Image Server-instellingen configureren:
 
-1. Tik in de linkerbovenhoek van AEM op **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en tik vervolgens op **[!UICONTROL Tools > Operations > Web Console.]**
-1. Tik op de configuratiepagina van de Adobe Experience Manager-webconsole op **[!UICONTROL OSGi > Configuration]** om alle bundels weer te geven die momenteel in AEM worden uitgevoerd.
+1. Tik in de linkerbovenhoek van de Experience Manager op **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en tik vervolgens op **[!UICONTROL Tools > Operations > Web Console.]**
+1. Tik op de configuratiepagina van de Adobe Experience Manager-webconsole op **[!UICONTROL OSGi > Configuration]** om alle bundels weer te geven die momenteel binnen de Experience Manager worden uitgevoerd.
 
    De Dynamic Media Delivery Servers staan onder de volgende namen in de lijst:
 
@@ -824,7 +828,7 @@ Dynamic Media Image Server-instellingen configureren:
 1. Stel in het dialoogvenster Adobe CQ Scene7 ImageServer de volgende configuratiewaarden in:
 
    >[!NOTE]
-   In de meeste gevallen is het niet nodig de standaardwaarden te wijzigen. Als u echter wel de standaardwaarden wijzigt, moet u de bundel opnieuw starten om de wijzigingen door te voeren.
+   Gewoonlijk hoeven de standaardwaarden niet te worden gewijzigd. Als u de standaardwaarden echter wijzigt, moet u de bundel opnieuw starten voordat de wijzigingen van kracht worden.
 
 <table>
  <tbody>
@@ -841,7 +845,7 @@ Dynamic Media Image Server-instellingen configureren:
   <tr>
    <td>AllowRemoteAccess.name</td>
    <td><code><em>empty</em></code></td>
-   <td><p>Externe toegang tot ImageServer-proces toestaan of weigeren. Als de waarde false is, luistert de afbeeldingsserver alleen op de localhost.</p> <p>Standaard externalizer-instellingen die naar de localhost verwijzen, moeten het werkelijke domein of IP-adres van de specifieke VM-instantie opgeven. De reden hiervoor is dat de localhost mogelijk naar het bovenliggende systeem van de VM wijst.</p> <p>Domeinen of IP-adressen voor de VM moeten mogelijk een vermelding van het hostbestand hebben, zodat deze zelf kan worden opgelost.</p> </td>
+   <td><p>Externe toegang tot ImageServer-proces toestaan of weigeren. Als de waarde false is, luistert de afbeeldingsserver alleen op de localhost.</p> <p>Standaard externalizer-instellingen die naar de localhost verwijzen, moeten het werkelijke domein of IP-adres van de specifieke VM-instantie opgeven. De reden is dat de localhost naar het hoofdsysteem van de VM wijst.</p> <p>Domeinen of IP-adressen voor de VM moeten een vermelding van het hostbestand hebben, zodat deze zichzelf kan oplossen.</p> </td>
   </tr>
   <tr>
    <td>MaxRenderRgnPixels</td>
@@ -856,7 +860,7 @@ Dynamic Media Image Server-instellingen configureren:
   <tr>
    <td>RandomAccessUrlTimeout</td>
    <td>20</td>
-   <td>De waarde van de onderbreking voor hoe lang in seconden ImageServer op JCR zal wachten om op een gerangschikte tegelverzoek te antwoorden.</td>
+   <td>De waarde van de onderbreking voor hoe lang in seconden de Server van het Beeld op JCR wacht om op een gerangschikte tegelverzoek te antwoorden.</td>
   </tr>
   <tr>
    <td>WorkerThreads</td>
@@ -871,32 +875,32 @@ Dynamic Media Image Server-instellingen configureren:
 1. Stel in het dialoogvenster Adobe CQ Scene7 PlatformServer de volgende standaardopties in:
 
    >[!NOTE]
-   Dynamic Media Image Server gebruikt een eigen schijfcache om reacties in de cache op te slaan. De AEM HTTP-cache en de Dispacher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache te plaatsen.
+   Dynamic Media Image Server gebruikt een eigen schijfcache om reacties in de cache op te slaan. De Experience Manager HTTP-cache en de Dispatcher kunnen niet worden gebruikt om reacties van Dynamic Media Image Server in cache te plaatsen.
 
    | **Eigenschap** | **Standaardwaarde** | **Beschrijving** |
    |---|---|---|
-   | Cache ingeschakeld | Ingeschakeld | Of de responscache is ingeschakeld. |
+   | Cache ingeschakeld | Ingeschakeld | Of de responscache is ingeschakeld |
    | Cachewortels | cachegeheugen | Een of meer paden naar de responscachemappen. Relatieve paden worden omgezet in de interne bundelmap s7imaging. |
    | Max. grootte cache | 20000000 | Maximale grootte van responscache in bytes. |
    | Max. items in cache | 100000 | Maximumaantal items dat is toegestaan in de cache. |
 
 ### Standaardinstellingen voor manifest {#default-manifest-settings}
 
-Standaard manifest laat u de gebreken vormen die worden gebruikt om de antwoorden van de Levering van Dynamic Media te produceren. U kunt de kwaliteit (JPEG-kwaliteit, resolutie, modus voor het berekenen van nieuwe beeldpixels), het in cache plaatsen (verlopen) en het renderen van te grote afbeeldingen voorkomen (standaard-pix, standaard-miniatuur, maxpix).
+Standaard manifest laat u de gebreken vormen die worden gebruikt om de antwoorden van de Levering van Dynamic Media te produceren. U kunt de kwaliteit (JPEG-kwaliteit, resolutie, modus voor het berekenen van nieuwe pixels), het in cache plaatsen (verlopen) en het renderen van te grote afbeeldingen voorkomen (standaard pix, standaard miniatuur, maxpix).
 
-De locatie van de standaardmanifestconfiguratie wordt ontleend aan de **[!UICONTROL Catalog root]** standaardwaarde van **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundel. Deze waarde bevindt zich standaard op het volgende pad binnen **[!UICONTROL Tools > General > CRXDE Lite]**:
+De locatie van de standaardmanifestconfiguratie wordt ontleend aan de **[!UICONTROL Catalog root]** standaardwaarde van **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundel. Standaard bevindt deze waarde zich op het volgende pad binnen **[!UICONTROL Tools > General > CRXDE Lite]**:
 
 `/conf/global/settings/dam/dm/imageserver/`
 
-![configimageservercrxdelite](assets/configimageservercrxdelite.png)
+![Afbeeldingsserver configureren in CRXDE Lite](assets/configimageservercrxdelite.png)
 
 U kunt de waarden van de eigenschappen wijzigen, zoals wordt beschreven in de onderstaande tabel, door nieuwe waarden in te voeren.
 
-Wanneer u klaar bent met het aanbrengen van wijzigingen in het standaardmanifest, tikt u in de linkerbovenhoek van de pagina op **[!UICONTROL Save All.]**
+Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Save All]** wanneer u klaar bent met het wijzigen van het standaardmanifest.
 
 Zorg ervoor dat u op het tabblad **[!UICONTROL Access Control]** (rechts van het tabblad Eigenschappen) tikt en stel vervolgens de toegangsbeheerbevoegdheden in op `jcr:read` voor alle gebruikers en voor gebruikers met dynamische media-replicatie.
 
-![configimageservercrxdeliteaccessController, tabblad](assets/configimageservercrxdeliteaccesscontroltab.png)
+![Afbeeldingsserver in CRXDE Lite configureren en het tabblad Toegangsbeheer instellen](assets/configimageservercrxdeliteaccesscontroltab.png)
 
 Instellingen voor de manifestatie en de standaardwaarden ervan:
 
@@ -915,12 +919,12 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>defaultPix</td>
    <td>300 300</td>
-   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a> in de Beeldserver-API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
+   <td><p>Standaardweergavegrootte. De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a> in de Beeldserver-API.</p> <p>Gewoonlijk gebruikt u echter een viewervoorinstelling of voorinstelling voor afbeeldingen om het element te leveren. De standaardvoorinstelling is alleen van toepassing op elementen die geen viewervoorinstelling of voorinstelling voor afbeeldingen gebruiken.</p> </td>
   </tr>
   <tr>
    <td>standaard miniatuur</td>
    <td>100 100</td>
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in de API voor beeldbewerking. </p> </td>
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt de antwoordafbeeldingen tot maximaal deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (req=tmb) niet uitdrukkelijk de grootte specificeert en niet de meningsgrootte uitdrukkelijk specificeert gebruikend ` wid= `, hei= `, of ` scl= `.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in de API voor beeldbewerking. </p> </td>
   </tr>
   <tr>
    <td>vervaldatum</td>
@@ -930,7 +934,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>jpegquality</td>
    <td>80</td>
-   <td><p>Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.</p> <p>Geheel getal en markering, gescheiden door een komma. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 voor het uitschakelen van de downsampling van RGB-chromaticiteit die gewoonlijk door JPEG-codeermodules wordt gebruikt.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a> in de API voor beeldbewerking.</p> </td>
+   <td><p>Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.</p> <p>Geheel getal en markering, gescheiden door een komma. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 voor het uitschakelen van de downsampling van RGB-chromaticiteit door JPEG-codeermodules.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a> in de API voor beeldbewerking.</p> </td>
   </tr>
   <tr>
    <td>maxpix</td>
@@ -945,25 +949,25 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>resolutie</td>
    <td>72</td>
-   <td><p>Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.</p> <p>Reëel getal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar mogelijk ook in andere eenheden, zoals pixels per meter.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">Resolutie</a> in de API voor beeldbewerking.</p> </td>
+   <td><p>Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.</p> <p>Reëel getal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">Resolutie</a> in de API voor beeldbewerking.</p> </td>
   </tr>
   <tr>
    <td>miniatuur</td>
    <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td>
-   <td>Deze waarden vertegenwoordigen een momentopname van videoplaytime en worden overgegaan tot <a href="https://encoding.com/">encoding.com</a>. Zie <a href="/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode">Informatie over videominiaturen</a> voor meer informatie.</td>
+   <td>Deze waarden vertegenwoordigen een momentopname van videoplaytime en worden overgegaan tot <a href="https://www.encoding.com/">encoding.com</a>. Zie <a href="/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode">Informatie over videominiaturen</a> voor meer informatie.</td>
   </tr>
  </tbody>
 </table>
 
 ## Dynamic Media-kleurbeheer configureren {#configuring-dynamic-media-color-management}
 
-Met dynamisch kleurbeheer voor media kunt u de juiste elementen kleuren om ze voor te vertonen.
+Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren om ze voor te vertonen.
 
-Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel in de gegenereerde piramide TIFF-uitvoering. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur gecorrigeerd in de doelkleurruimte. U configureert het uitvoerkleurprofiel in de publicatie-instellingen voor dynamische media in de JCR.
+Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel in de gegenereerde piramide TIFF-uitvoering. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur gecorrigeerd in de doelkleurruimte. U configureert het uitvoerkleurprofiel in de Dynamic Media-publicatie-instellingen in de JCR.
 
-Bij kleurbeheer voor Adobe wordt gebruikgemaakt van ICC-profielen, een indeling die is gedefinieerd door het ICC (International Color Consortium).
+Voor kleurbeheer van Adobe wordt gebruikgemaakt van ICC-profielen (International Color Consortium), een indeling die door de ICC wordt gedefinieerd.
 
-U kunt dynamisch kleurbeheer voor media configureren en voorinstellingen voor afbeeldingen configureren met CMYK-, RGB- of grijsuitvoer. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/managing-image-presets.md).
+U kunt Dynamic Media-kleurbeheer configureren en voorinstellingen voor afbeeldingen configureren met CMYK-, RGB- of grijsuitvoer. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/managing-image-presets.md).
 
 Gevallen van geavanceerd gebruik zouden een handmatige configuratie `icc=` bepaling kunnen gebruiken om een profiel van de outputkleur uitdrukkelijk te selecteren:
 
@@ -976,7 +980,7 @@ De standaardset Adobe-kleurprofielen is alleen beschikbaar als [Feature Pack 124
 
 ### Feature Pack 12445 {#installing-feature-pack} installeren
 
-U moet functiepak 12445 installeren om de mogelijkheden voor dynamisch kleurbeheer voor media te kunnen gebruiken.
+Installeer functiepak 12445 om de Dynamic Media-mogelijkheden voor kleurbeheer te gebruiken.
 
 **Om functiepak 12445 te installeren**
 
@@ -988,7 +992,7 @@ U moet functiepak 12445 installeren om de mogelijkheden voor dynamisch kleurbehe
 
 ### De standaardkleurprofielen {#configuring-the-default-color-profiles} configureren
 
-Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurprofielen configureren om kleurcorrectie in te schakelen wanneer u RGB- of CMYK-afbeeldingsgegevens aanvraagt.
+Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaardkleurprofielen om kleurcorrectie in te schakelen bij het aanvragen van RGB- of CMYK-afbeeldingsgegevens.
 
 **De standaardkleurprofielen configureren**
 
@@ -996,7 +1000,7 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
-1. Voeg een eigenschap voor kleurcorrectie toe door naar de onderkant van het tabblad **[!UICONTROL Properties]** te schuiven en handmatig de naam, het type en de waarde van de eigenschap in te voeren. Deze worden in de volgende tabellen beschreven. Nadat u de waarden hebt ingevoerd, tikt u op **[!UICONTROL Add]** en **[!UICONTROL Save All]** om de waarden op te slaan.
+1. Voeg een eigenschap voor kleurcorrectie toe door naar de onderkant van het tabblad **[!UICONTROL Properties]** te schuiven. Voer handmatig de naam, het type en de waarde van de eigenschap in, die in de volgende tabellen worden beschreven. Nadat u de waarden hebt ingevoerd, tikt u op **[!UICONTROL Add]** en **[!UICONTROL Save All]** om de waarden op te slaan.
 
    De eigenschappen voor kleurcorrectie worden beschreven in de tabel **Eigenschappen voor kleurcorrectie**. Waarden die u kunt toewijzen aan eigenschappen voor kleurcorrectie bevinden zich in de tabel **Kleurprofiel**.
 
@@ -1054,13 +1058,13 @@ Nadat u het functiepakket hebt geïnstalleerd, moet u de juiste standaardkleurpr
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html">icblackpointcompensatie</a></td>
    <td>Boolean</td>
    <td>Waar</td>
-   <td>Hiermee geeft u aan of zwartpuntcompensatie moet worden toegepast tijdens kleurcorrectie. Adobe raadt u aan dit aan te doen.</td>
+   <td>Hiermee wordt opgegeven of zwartpuntcompensatie wordt toegepast tijdens kleurcorrectie. Adobe raadt aan dat deze instelling is ingeschakeld.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html">icdithering</a></td>
    <td>Boolean</td>
    <td>Onwaar</td>
-   <td>Hiermee geeft u aan of dithering moet worden toegepast tijdens kleurcorrectie.</td>
+   <td>Hiermee bepaalt u of dithering wordt toegepast tijdens kleurcorrectie.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
@@ -1255,14 +1259,14 @@ U kunt bijvoorbeeld **[!UICONTROL iccprofilergb]** instellen op `sRGB` en **[!UI
 Dit doet het volgende:
 
 * Hiermee schakelt u kleurcorrectie in voor RGB- en CMYK-afbeeldingen.
-* RGB-afbeeldingen die geen kleurprofiel hebben, worden geacht zich in de kleurruimte *sRGB* te bevinden.
+* RGB-afbeeldingen zonder kleurprofiel worden verondersteld in de kleurruimte *sRGB* te staan.
 * CMYK-afbeeldingen zonder kleurprofiel worden geacht zich in de kleurruimte *WebCoated* te bevinden.
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de *sRGB *kleurruimte.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de kleurruimte *WebCoated*.
 
 ## Elementen {#delivering-assets} leveren
 
-Nadat u alle bovenstaande taken hebt voltooid, worden de geactiveerde Dynamic Media-middelen aangeboden via de Image- of Video-service. In AEM, verschijnt deze capaciteit in **[!UICONTROL Copy Image URL]**, **[!UICONTROL Copy Viewer URL]**, **[!UICONTROL Embed Viewer Code]**, en in WCM.
+Nadat u alle bovenstaande taken hebt voltooid, worden de geactiveerde Dynamic Media-middelen aangeboden via de Image- of Video-service. In Experience Manager, verschijnt deze capaciteit in **[!UICONTROL Copy Image URL]**, **[!UICONTROL Copy Viewer URL]**, **[!UICONTROL Embed Viewer Code]**, en in WCM.
 
 Zie [Dynamic Media-middelen leveren](/help/assets/delivering-dynamic-media-assets.md).
 
@@ -1278,7 +1282,7 @@ Zie [Dynamic Media-middelen leveren](/help/assets/delivering-dynamic-media-asset
   </tr>
   <tr>
    <td>Een viewer-URL kopiëren</td>
-   <td><p>In het dialoogvenster URL kopiëren wordt een URL weergegeven die vergelijkbaar is met de volgende URL (URL is alleen bedoeld voor demonstratiedoeleinden):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Waarbij <code>PUBLISHNODE</code> verwijst naar het gewone AEM publicatieknooppunt en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de afbeeldingsservice.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets</a> leveren.</p> </td>
+   <td><p>In het dialoogvenster URL kopiëren wordt een URL weergegeven die vergelijkbaar is met de volgende URL (URL is alleen bedoeld voor demonstratiedoeleinden):</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>Waarbij <code>PUBLISHNODE</code> verwijst naar het publicatieknooppunt van de gewone Experience Manager en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de afbeeldingsservice.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets</a> leveren.</p> </td>
   </tr>
   <tr>
    <td>Insluitcode van een viewer kopiëren</td>
@@ -1300,7 +1304,7 @@ Zie [Dynamic Media-middelen leveren](/help/assets/delivering-dynamic-media-asset
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
        "asset" : "/content/dam/path/to/Image.jpg" }
        }).init();
-       &lt;/script&gt;</code></p> <p>Waarbij <code>PUBLISHNODE</code> verwijst naar het gewone AEM publicatieknooppunt en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de afbeeldingsservice.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets</a> leveren.</p> </td>
+       &lt;/script&gt;</code></p> <p>Waarbij <code>PUBLISHNODE</code> verwijst naar het publicatieknooppunt van de gewone Experience Manager en <code>IMAGESERVICEPUBLISHNODE</code> naar de URL van de afbeeldingsservice.</p> <p>Zie ook <a href="/help/assets/delivering-dynamic-media-assets.md">Dynamic Media Assets</a> leveren.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -3,7 +3,7 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d17749cb8e923848f8f81360c03b9afba7989ae2
+source-git-commit: 8714a76843231650555e84d3670ecad0bfec2566
 workflow-type: tm+mt
 source-wordcount: '2655'
 ht-degree: 27%
@@ -225,4 +225,4 @@ Ga als volgt te werk om algemene fouten op te lossen:
 
 * Als de verre verwijzingen niet worden teruggewonnen en in een foutenmelding resulteren, controleer als de plaatsing van Plaatsen beschikbaar is en controleer voor de kwesties van de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
 
-![mislukken van opnieuw geprobeerd externe referenties voor middelen](assets/reference-report-failure.png)
+   ![mislukken van opnieuw geprobeerd externe referenties voor middelen](assets/reference-report-failure.png)

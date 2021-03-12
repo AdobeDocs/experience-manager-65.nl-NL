@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release van AEM Sites
 description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.5 Sites.
 translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+source-git-commit: 23656e023a9a0bfc335655f9cfb0530aa917b3ef
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Zie het volgende voor AEM Sites 6.5-verbeteringen in detail:
 
 ## Pagina-editor {#page-editor}
 
-* In-context bewerken en samenstellen van app-ervaringen van één pagina toestaan die zijn opgebouwd met React en Angular clientcomponenten die gebruikmaken van de JS SDK (ook wel SPA Editor genoemd)
+* In-context bewerken en samenstellen van app-ervaringen van één pagina toestaan die zijn opgebouwd met React en Angular-clientcomponenten die gebruikmaken van de JS SDK (ook wel SPA Editor genoemd)
 * De modus Basisstructuur wordt alleen weergegeven als op de pagina een basispagina is geconfigureerd.
 
 ## Inhoudsfragmenten en -editor {#content-fragments-amp-editor}
@@ -110,7 +110,13 @@ Zie het volgende voor AEM Sites 6.5-verbeteringen in detail:
 
 >[!CAUTION]
 >
->at.js 2.x wordt niet ondersteund met AEM op het punt van de AEM 6.5-release. Gebruik de nieuwste versie van at.js 1.x
+>Momenteel:
+>
+>* Alleen `at.js 1.x` wordt ondersteund als u Adobe Target gebruikt als de doelengine binnen AEM activiteitenconsole.
+   >
+   >
+* Zowel `at.js. 1.x` als `at.js 2.x` worden gesteund als u de uitvoer van het Fragment van de Ervaring naar Doel en lopende Activiteiten binnen de console van Target gebruikt.
+
 
 * Adobe Target-integratie kan nu de standaard-API van het doel gebruiken. Eerdere versies van AEM gebruiken de Classic HTTP-API van Target, die nu is afgekeurd.
 * Adobe Target `mbox.js` versie 63 is inbegrepen. Adobe beveelt ten zeerste aan om over te schakelen op `at.js` v1.x.

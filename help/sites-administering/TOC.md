@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: fd7a32c1070a0560ca744db041cf809f28672b33
+source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '675'
 ht-degree: 6%
 
 ---
@@ -97,6 +97,7 @@ ht-degree: 6%
    + [Hoofdweergave voor beheer van machtigingen](touch-ui-principal-view.md)
    + [Filter voor inhoudsafzetting](content-disposition-filter.md)
    + [Toewijzing van aangepaste gebruikersgroepen in AEM 6.5](/help/sites-administering/cug-mapping.md)
+   + [Ondersteuning voor zelfde site-cookie](same-site-cookie-support.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
    + [ContextHub configureren](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)

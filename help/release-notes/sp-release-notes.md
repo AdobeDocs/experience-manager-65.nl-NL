@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d96730eed6447815c40307a8d60b6ffc9ff45c2e
+source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
 workflow-type: tm+mt
 source-wordcount: '2760'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * Wanneer u [Functionaliteit voor verbonden elementen](/help/assets/use-assets-across-connected-assets-instances.md) gebruikt, kunt u nu een lijst weergeven met alle [!DNL Sites] pagina&#39;s die het element gebruiken. Deze verwijzingen naar een element zijn beschikbaar op de pagina [!UICONTROL Properties] van een element. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, zodat ze het bedrijfsmerk beter kunnen bijhouden, beheren en het merk consistenter zijn.
 
-* Als u een element verwijdert waarnaar in een webpagina wordt verwezen, wordt een waarschuwing weergegeven. [!DNL Experience Manager] U kunt een element waarnaar wordt verwezen, forceren verwijderen of de verwijzingen controleren en wijzigen die op de pagina [!DNL Properties] van het element worden weergegeven. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s geopend.
+* Als u een element verwijdert waarnaar in een webpagina wordt verwezen, wordt [!DNL Experience Manager] [een waarschuwing ](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references) weergegeven. U kunt een element waarnaar wordt verwezen, forceren verwijderen of de verwijzingen controleren en wijzigen die op de pagina [!DNL Properties] van het element worden weergegeven. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s geopend.
 
 * De pagina&#39;s van Live Copy die beschikbaar zijn voor rollout sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date,] en [!UICONTROL Last rollout date].
 

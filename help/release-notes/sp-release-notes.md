@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 89b037fbde6003ccf86336c4467df415e233986b
+source-git-commit: 60764db23115e7f548a82a67955331da2b858973
 workflow-type: tm+mt
-source-wordcount: '2760'
+source-wordcount: '2750'
 ht-degree: 0%
 
 ---
@@ -208,7 +208,7 @@ Er zijn twee manieren om Adobe Experience Manager 6.5.8.0 automatisch op een wer
 
 A. Plaats het pakket in de map `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 
-B. Gebruik [HTTP API van de Manager van het Pakket](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). Gebruik `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
+B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/package-manager.md#package-share). Gebruik `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
 
 >[!NOTE]
 >

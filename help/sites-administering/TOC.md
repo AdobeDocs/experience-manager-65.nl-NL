@@ -7,9 +7,9 @@ user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
+source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '662'
 ht-degree: 6%
 
 ---
@@ -114,7 +114,6 @@ ht-degree: 6%
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
 + Integratie {#integration}
    + [Integreren met services van derden](third-party-services.md)
    + [Integratie met Salesforce](salesforce.md)
@@ -163,8 +162,7 @@ ht-degree: 6%
    + [Aanbevolen MSM-procedures](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
    + [AEM Sites - GDPR-gereedheid](gdpr-compliance-sites.md)
    + [Behandeling van GDPR-verzoeken aan de AEM Stichting](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
-   + [AEM handel - gereedheid van de GDPR](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
-+ Inhoudsbeheer {#contentmanagement}
+   + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
    + [Werken met pakketten](package-manager.md)
    + [Tags beheren](tags.md)
    + [De pagina-exportfunctie](page-exporter.md)

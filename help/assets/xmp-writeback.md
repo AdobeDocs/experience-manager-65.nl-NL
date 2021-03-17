@@ -3,9 +3,9 @@ title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: 7faa6638eff422599450946a257e53970d25189c
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '712'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,9 @@ ht-degree: 3%
 
 # Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
-Met de functie XMP terugschrijven in [!DNL Adobe Experience Manager Assets] worden wijzigingen in de metagegevens van elementen overgenomen in de uitvoeringen van het element. Wanneer u de metagegevens voor een element wijzigt vanuit [!DNL Experience Manager Assets] of tijdens het uploaden van het element, worden wijzigingen in eerste instantie opgeslagen in het knooppunt met elementen in CRXDe. De XMP functie voor terugschrijven geeft de metagegevenswijzigingen door in alle of in specifieke uitvoeringen van het element.
+Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Middelen of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
+
+Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De eigenschap schrijft slechts die meta-gegevenseigenschappen terug die `jcr` namespace gebruiken, namelijk wordt een bezit genoemd `dc:title` teruggeschreven maar een bezit genoemd `mytitle` is niet.
 
 Overweeg een scenario waarbij u de [!UICONTROL Title] eigenschap van het element `Classic Leather` aan `Nylon` wijzigt.
 
@@ -23,11 +25,9 @@ In dit geval slaat [!DNL Experience Manager Assets] de wijzigingen in de eigensc
 
 ![metadata_stored](assets/metadata_stored.png)
 
-[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element.
+[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [hoe te om XMP terug ](#enable-xmp-writeback) toe te laten.
 
-Met de functie XMP terugdraaien kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De wijzigingen worden echter niet opgeslagen onder het metagegevensknooppunt in de elementenhiërarchie. In plaats daarvan worden de wijzigingen in de binaire bestanden voor de uitvoeringen ingesloten.
-
-## XMP terugschrijven {#enabling-xmp-writeback} inschakelen
+## Terugschrijven XMP {#enable-xmp-writeback} inschakelen
 
 Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activa worden verspreid wanneer het uploaden van het, wijzig de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie in de Manager van de Configuratie.
 
@@ -47,7 +47,7 @@ Voer de volgende stappen uit voor de functie XMP terugschrijven om metagegevens 
 1. Open op de pagina Modellen het workflowmodel **[!UICONTROL DAM Metadata Writeback]**.
 1. Op de pagina met eigenschappen voor **[!UICONTROL DAM Metadata Writeback]** opent u de stap **[!UICONTROL XMP Writeback Process]**.
 1. Klik in het dialoogvenster [!UICONTROL Step Properties] op het tabblad **[!UICONTROL Process]**.
-1. Voeg in het tekstvak **Argumenten** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` toe en klik vervolgens op **OK**.
+1. Voeg `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png` toe in het tekstvak **Argumenten** en klik op **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
@@ -68,7 +68,7 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
 
 Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de [!DNL Experience Manager] plaatsing stabiliteitskwesties ontmoeten, bijvoorbeeld verstopte observatierijen.
 

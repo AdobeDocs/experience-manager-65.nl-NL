@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2c6d11f63420040a500bbb75f1146c29f64bdcc5
+source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
 workflow-type: tm+mt
-source-wordcount: '2845'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,22 @@ U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren m
 >[!NOTE]
 >
 >Het add-on pakket van [!DNL Experience Manager Forms] wordt een week na de geplande [!DNL Experience Manager] Service Pack-release beschikbaar gesteld.
+
+### CAPTCHA-component weergeven of verbergen in een adaptieve vorm op basis van regels {#show-hide-captcha}
+
+U kunt CAPTCHA nu valideren bij het verzenden van het aangepaste formulier of bij actie van de gebruiker. U kunt ook voorwaarden toevoegen om CAPTCHA op een gebruikersactie te valideren en de component CAPTCHA in een adaptief formulier weergeven of verbergen op basis van regels.
+
+### Aangepaste CAPTCHA-services toevoegen {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] biedt in de box-ondersteuning voor het gebruik van Google reCAPTCHA (een aparte licentie voor Google reCAPTCHA-API&#39;s is vereist) als een CAPTCHA-validatieservice. U kunt ook een aangepaste CAPTCHA-service gebruiken om CAPTCHA&#39;s te valideren.
+
+### Andere verbeteringen {#other-enhancements-forms-6580}
+
+* Verbeterde toegankelijkheid van de component [!DNL Experience Manager Forms] Datumkiezer.
+
+* Extra ondersteuning voor het genereren van een interactieve communicatie in PCL-indeling met de PrintChannel-API.
+
+* Wanneer u een PDFG-conversie uitvoert, kunt u nu de registerwijzigingen voor het genereren van aangepaste bladwijzers in- of uitschakelen.[!DNL Experience Manager Forms]
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 

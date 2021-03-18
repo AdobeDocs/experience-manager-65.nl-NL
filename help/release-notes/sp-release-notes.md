@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 60764db23115e7f548a82a67955331da2b858973
+source-git-commit: dfaa25ea72e50b60b8a40883ffb0241c131cc846
 workflow-type: tm+mt
-source-wordcount: '2750'
+source-wordcount: '3287'
 ht-degree: 0%
 
 ---
@@ -168,6 +168,56 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 >
 >[!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
 
+**Adaptieve Forms**
+
+* Wanneer u een tabel met een herhaalbare rij invoegt in een herhaalbaar paneel dat meerdere instanties in een adaptieve vorm heeft, wordt de tabel altijd toegevoegd aan de eerste instantie van het paneel (NPR-35635).
+
+* Wanneer de tabfocus de component CAPTCHA opnieuw bereikt nadat deze eenmaal is geverifieerd in een adaptieve vorm, geeft [!DNL Experience Manager Forms] het foutbericht `Provide Captcha phrase to proceed` weer (NPR-35539).
+
+**Interactieve communicatie**
+
+* Wanneer u een vertaald formulier verzendt, worden de verzendberichten in het Engels weergegeven en niet in de juiste taal vertaald (NPR-35808).
+
+* Wanneer u een hide-voorwaarde opneemt in de bijgevoegde XDP- of documentfragmenten, kan de interactieve communicatie niet worden geladen (NPR-35745).
+
+**Correspondentenbeheer**
+
+* Wanneer u een letter bewerkt, duurt het langer om de modules met voorwaarden te laden (NPR-35325).
+
+* Wanneer u in het linkernavigatievenster een element selecteert dat niet in een letter is opgenomen en vervolgens het volgende element selecteert, wordt de blauwe markering niet uit het eerder geselecteerde element verwijderd (NPR-35851).
+
+* Wanneer u tekstvelden in een letter bewerkt, wordt [!DNL Experience Manager Forms] het foutbericht `Text Edit Failed` weergegeven (CQ-4313770).
+
+**Workflow**
+
+* Wanneer u een adaptief formulier probeert te openen op een [!DNL Experience Manager Forms] mobiele toepassing voor iOS, stopt de toepassing met reageren (CQ-4314825).
+
+* Het tabblad [!UICONTROL To-do] in de HTML-werkruimte geeft HTML-tekens weer (NPR-35298).
+
+**XMLFM**
+
+* Wanneer u een XML-document genereert met de uitvoerservice, treedt de fout `OutputServiceException` op voor sommige XML-bestanden (CQ-4311341, CQ-4313893).
+
+* Wanneer u superscript-eigenschap toepast op het eerste teken van het opsommingsteken, wordt de grootte van het opsommingsteken kleiner (CQ-4306476).
+
+* De PDF forms die worden gegenereerd met de uitvoerservice omvatten geen randen (CQ-4312564).
+
+**Designer**
+
+* Wanneer u een XDP-bestand opent in [!DNL Experience Manager Forms] Designer, wordt een bestand designer.log gegenereerd in dezelfde map als het XDP-bestand (CQ-4309427, CQ-4310865).
+
+**HTML5 Forms**
+
+* Wanneer u een selectievakje in adaptieve vorm in [!DNL Safari] webbrowser selecteert voor [!DNL iOS 14.1 or 14.2], worden geen extra velden weergegeven (NPR-35652).
+
+**Forms Management**
+
+* Geen bevestigingsbericht om aan te geven dat XDP-bestanden in bulk zijn geüpload naar CRX-opslagplaats (NPR-35546).
+
+**Documentbeveiliging**
+
+* Meerdere problemen gerapporteerd voor de optie [!UICONTROL Edit Policy] op AdminUI (NPR-35747).
+
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installatie 6.5.8.0 {#install}
@@ -223,6 +273,32 @@ B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/pa
 1. De bundel OSGi `org.apache.jackrabbit.oak-core` is versie 1.22.3 of later (de Console van het Gebruik: `/system/console/bundles`).
 
 Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md) voor meer informatie over de platforms die zijn gecertificeerd voor deze release.
+
+### Adobe Experience Manager Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Sla over als u Experience Manager Forms niet gebruikt. Correcties in Experience Manager Forms worden één week na de geplande [!DNL Experience Manager] Service Pack-release geleverd via een afzonderlijk add-on pakket.
+
+1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
+1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem.
+1. Installeer het invoegpakket voor Forms zoals beschreven in [AEM Forms-invoegpakketten installeren](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.8.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar AEM 6.5.8.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-on Package.
+
+### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in Adobe Experience Manager Forms op JEE worden via een afzonderlijk installatieprogramma geleverd.
+
+Raadpleeg de [releaseopmerkingen](jee-patch-installer-65.md) voor informatie over de installatie van het cumulatieve installatieprogramma voor Experience Manager Forms in JEE en de configuratie na de implementatie.
+
+>[!NOTE]
+>
+>Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste Forms-invoegpakket, verwijdert u het Forms-invoegpakket uit de map `crx-repository\install` en start u de server opnieuw.
 
 ### UberJar {#uber-jar}
 

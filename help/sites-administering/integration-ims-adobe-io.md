@@ -1,8 +1,8 @@
 ---
 title: Integratie met Adobe Target met Adobe I/O
 seo-title: Integratie met Adobe Target met Adobe I/O
-description: Meer informatie over het integreren van AEM met Adobe Target met Adobe I/O
-seo-description: Meer informatie over het integreren van AEM met Adobe Target met Adobe I/O
+description: Meer informatie over het integreren van AEM met Adobe Target met behulp van Adobe I/O
+seo-description: Meer informatie over het integreren van AEM met Adobe Target met behulp van Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,15 +11,15 @@ topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 26efba567985dcb89b2610935cab18943b7034b3
+source-git-commit: 07f354ccfb8741f0de4fc85ba1575ead3b8ea6e4
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
 
 
-# Integratie met Adobe Target met Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
+# Integratie met Adobe Target met gebruik van Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
 De integratie van AEM met Adobe Target via de Target Standard API vereist de configuratie van Adobe IMS (Identity Management System) en Adobe I/O.
 
@@ -30,6 +30,7 @@ De integratie van AEM met Adobe Target via de Target Standard API vereist de con
 >Het gebruik van de Classic API van Adobe Target in AEM wordt nog steeds ondersteund voor achterwaartse compatibiliteit. De [Classic API van het doel gebruikt gebruikersgeloofsauthentificatie](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
 >De API-selectie wordt aangestuurd door de verificatiemethode die wordt gebruikt voor AEM/doelintegratie.
+>Zie ook de sectie [Aanbestedings-id en Clientcode](#tenant-client).
 
 ## Vereisten {#prerequisites}
 
@@ -44,7 +45,7 @@ Voordat u met deze procedure begint:
 
 * De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
-   * Hierdoor hebben de specifieke ontwikkelaars machtigingen om integratie in Adobe I/O mogelijk te maken.
+   * Dit voorziet de specifieke ontwikkelaars van toestemmingen om integratie binnen Adobe I/O toe te laten.
    * Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) voor meer informatie.
 
 
@@ -61,7 +62,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    ![](assets/integrate-target-io-01.png)
 
-1. Selecteer **Download** (of **Download Public Key**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [Adobe I/O voor Adobe Target-integratie met AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem) wordt geconfigureerd.
+1. Selecteer **Download** (of **Download Public Key**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [Adobe I/O configureren voor Adobe Target-integratie met AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -69,19 +70,19 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    ![](assets/integrate-target-io-02.png)
 
-## Adobe I/O for Adobe Target-integratie configureren met AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
+## Adobe I/O configureren voor Adobe Target-integratie met AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
 
-U moet het Adobe I/O-project (integratie) maken met Adobe Target dat AEM gebruiken en vervolgens de vereiste rechten toewijzen.
+U moet het Adobe I/O Project (integratie) met Adobe Target tot stand brengen dat AEM zal gebruiken, dan de vereiste voorrechten toewijzen.
 
 ### Het project {#creating-the-project} maken
 
-Open de Adobe I/O-console om een I/O-project te maken met Adobe Target dat AEM gebruikt:
+Open de Adobe I/O-console om een I/O-project te maken met Adobe Target dat AEM gebruiken:
 
 >[!NOTE]
 >
 >Zie ook de [Adobe I/O-zelfstudies](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
 
-1. Open de Adobe I/O-console voor projecten:
+1. Open de Adobe I/O console voor Projecten:
 
    [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
@@ -146,7 +147,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteer **Integraties**, dan de vereiste integratieconfiguratie.
 1. Selecteer **Editor** als **Productrol**; in plaats van **Observer**.
 
-## Gegevens opgeslagen voor het Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
+## Gegevens opgeslagen voor het Adobe I/O Integration-project {#details-stored-for-the-adobe-io-integration-project}
 
 Van de console van de Projecten van Adobe I/O kunt u een lijst van al uw integratieprojecten zien:
 
@@ -167,7 +168,7 @@ Bij sommige hiervan moet u de Adobe I/O-integratie voor Target in AEM voltooien.
 
 ## De IMS-configuratie voltooien in AEM {#completing-the-ims-configuration-in-aem}
 
-Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste waarden van de Adobe I/O-integratie voor Doel toe te voegen:
+Terugkeren naar AEM kunt u de configuratie voltooien IMS door vereiste waarden van de integratie van Adobe I/O voor Doel toe te voegen:
 
 1. Terugkeer naar [IMS Configuratie open in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecteer **Volgende**.
@@ -176,9 +177,9 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de  `"aud"` regel van de  **** Payloadsectie hieronder, bijvoorbeeld  `"https://ims-na1.adobelogin.com"` in het onderstaande voorbeeld.
-   * **API-sleutel**: Kopieer dit uit het  [](#details-stored-for-the-adobe-io-integration-project) Overzichtsgedeelte van de Adobe I/O-integratie voor Doel
-   * **Clientgeheim**: Genereer dit in de sectie  [](#details-stored-for-the-adobe-io-integration-project) Overzien van de Adobe I/O-integratie voor Doel en kopieer het
-   * **Payload**: Kopieer dit uit het  [Generate ](#details-stored-for-the-adobe-io-integration-project) JWT-gedeelte van de Adobe I/O-integratie voor Doel
+   * **API-sleutel**: Kopieer dit uit de sectie  [](#details-stored-for-the-adobe-io-integration-project) Overzicht van de Adobe I/O-integratie voor Doel
+   * **Clientgeheim**: Genereer dit in de sectie  [](#details-stored-for-the-adobe-io-integration-project) Overzicht van de Adobe I/O-integratie voor Doel en kopieer
+   * **Payload**: Kopieer dit uit de  [Generate ](#details-stored-for-the-adobe-io-integration-project) JWT sectie van de integratie van Adobe I/O voor Doel
 
    ![](assets/integrate-target-io-10.png)
 
@@ -230,7 +231,7 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 1. Voer de gegevens in op het tabblad **Adobe Target Settings**:
 
    * **Verificatie**: IMS
-   * **ID** huurder: de Adobe IMS Tenant ID
+   * **ID** huurder: de Adobe IMS Tenant ID. Zie ook de sectie [Aanbestedings-id en Clientcode](#tenant-client) hieronder.
 
       >[!NOTE]
       >
@@ -241,7 +242,7 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Dan zou u `yourtenantid` gebruiken.
-
+   * **Clientcode**: Zie de  [huurder-id en de ](#tenant-client) clientcodering hieronder.
    * **IMS-configuratie**: Selecteer de naam van de IMS-configuratie
    * **API-type**: REST
    * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u uw wolkenconfiguratie niet ziet, zie nota in [het Vormen A4T de Configuratie van Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
@@ -254,15 +255,35 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
    >[!NOTE]
    >
    >[De configuratie van een Cloud Service voor het gebruik van de Klassieke ](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) API van het Doel is afgekeurd (gebruikt het tabblad Adobe Recommendations-instellingen).
-
-   Bijvoorbeeld:
-
-   ![](assets/integrate-target-io-14.png)
-
 1. Klik **Verbinden met Doel** om de verbinding met Adobe Target te initialiseren.
 
    Als de verbinding succesvol is, wordt het bericht **Verbinding succesvol** getoond.
 
 1. Selecteer **OK** in het bericht, gevolgd door **OK** in het dialoogvenster om de configuratie te bevestigen.
 1. U kunt nu aan [Toevoegend een Kader van het Doel](/help/sites-administering/target-configuring.md#adding-a-target-framework) te werk gaan om parameters te vormen ContextHub of van ClientContext die naar Doel zullen worden verzonden. Dit is mogelijk niet vereist voor het exporteren AEM Experience Fragments naar Target.
+
+### Aanbestedings-id en clientcode {#tenant-client}
+
+Met [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md), was het gebied van de Code van de Cliënt toegevoegd aan het de configuratievenster van het Doel.
+
+Houd rekening met het volgende wanneer u de velden Tenant ID en Client Code configureert:
+
+1. Voor de meeste klanten, zijn identiteitskaart van de Aannemer en de Code van de Cliënt het zelfde. Dit betekent dat beide velden dezelfde informatie bevatten en identiek zijn. Zorg ervoor dat u de id van de huurder in beide velden invoert.
+2. Voor oudere doeleinden kunt u ook verschillende waarden invoeren in de velden Tenant ID en Client Code.
+
+Houd er in beide gevallen rekening mee dat:
+
+* Door gebrek, zal de Code van de Cliënt (als eerst toegevoegd) ook automatisch in het gebied van identiteitskaart van de Aannemer worden gekopieerd.
+* U kunt de standaard huurder-id wijzigen.
+* Dienovereenkomstig, zal de achterste vraag aan Doel op identiteitskaart van de Aannemer en de cliënt zijvraag aan Doel worden gebaseerd op de Code van de Cliënt.
+
+Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM 6.5. In beide gevallen moet u ervoor zorgen dat de velden **both** de juiste gegevens bevatten, afhankelijk van uw vereisten.
+
+>[!NOTE]
+>
+> Als u een bestaande Configuratie van het Doel wilt veranderen:
+>
+> 1. Voer de huurder-id opnieuw in.
+> 2. Maak opnieuw verbinding met Doel.
+> 3. Sla de configuratie op.
 

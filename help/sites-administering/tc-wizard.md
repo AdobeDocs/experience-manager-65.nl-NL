@@ -10,10 +10,11 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
+feature: Taalkopie
 translation-type: tm+mt
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 # Wizard Taalkopie{#language-copy-wizard}
 
-De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten voorzien voor de structuur van meertalige inhoud. Het is nu veel eenvoudiger en sneller om een taalkopie te maken.
+De wizard Taalkopie is een begeleide ervaring voor het maken van meertalige contentstructuren en het van instrumenten voorzien. Het is nu veel eenvoudiger en sneller om een taalkopie te maken.
 
 >[!NOTE]
 >

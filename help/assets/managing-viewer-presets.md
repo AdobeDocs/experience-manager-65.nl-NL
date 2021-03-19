@@ -9,10 +9,12 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
+feature: Voorinstellingen viewer
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: fff2c39561f54436f8e5613ac648cb91af888c66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4231'
 ht-degree: 15%
 
 ---
@@ -162,7 +164,7 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van de [Referenti
 
 >[!NOTE]
 >
->Alle voorinstellingen voor viewers die buiten de box vallen, zijn al geactiveerd (ingeschakeld), maar u moet ze wel publiceren.
+>Alle voorinstellingen voor viewers die niet in de box staan, zijn al geactiveerd (ingeschakeld), maar u moet ze wel publiceren.
 >Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
 >
 >Alle nieuwe viewervoorinstellingen die u maakt en toevoegt, moeten zowel worden geactiveerd *als *gepubliceerd.
@@ -492,7 +494,7 @@ Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt,
   </tr>
   <tr>
    <td>Doorlopend</td>
-   <td><p>Als in <code>continuous </code>weergavemodus het aantal miniaturen in een segment kleiner is dan het aantal dat zichtbaar is in het deelvenster, neemt de viewer automatisch de weergave van miniaturen van het volgende of vorige segment op wanneer de laatste miniatuur wordt weergegeven.</p> <p>De <a href="/help/assets/interactive-videos.md">video in dit onderwerp</a> is een voorbeeld van <code>continuous </code>vertoningswijze.</p> </td>
+   <td><p>Als in <code>continuous </code>weergavemodus het aantal miniaturen in een segment kleiner is dan het aantal dat zichtbaar is in het deelvenster, neemt de viewer automatisch de weergave van miniaturen van het volgende segment of het vorige segment op wanneer de laatste miniatuur wordt weergegeven.</p> <p>De <a href="/help/assets/interactive-videos.md">video in dit onderwerp</a> is een voorbeeld van <code>continuous </code>vertoningswijze.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -11,10 +11,11 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 807a81045fca19ab83b9d7872684a5f8a9ed70f1
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -105,7 +106,7 @@ De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke lo
 
 * **Community Group** Templatemenu
 
-   Gebruik drop-down om beschikbare [communitygroepmalplaatje](/help/communities/tools.md) te kiezen.
+   Gebruik drop-down om beschikbare [communitygroepsjabloon](/help/communities/tools.md) te kiezen.
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -170,7 +171,7 @@ Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren o
 
 * **Vereist lidmaatschap**
 
-   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. Leden kunnen deelnemen door de knop `Join` in de publicatieomgeving te selecteren. Standaard is niet geselecteerd.
+   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten lid worden van de groep om inhoud te posten. Leden kunnen deelnemen door de knop `Join` in de publicatieomgeving te selecteren. Standaard is niet geselecteerd.
 
 * **Beperkt lidmaatschap**
 

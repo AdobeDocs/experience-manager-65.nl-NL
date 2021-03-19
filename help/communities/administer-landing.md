@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 2bd74d5e90aff1146de5c5a0dffd99fc7dd9031c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 * [Modererende UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
 * [UGC](tag-ugc.md) labelen: functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
 * [UGC](translate-ugc.md) vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
-* [Configuratie](analytics.md) analyse: adobe analytics in staat stellen om te rapporteren over verschillende maatstaven voor lidactiviteiten
+* [Configuratie](analytics.md) analyse: Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
 
 ### Community-leden {#community-members}
 

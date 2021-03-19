@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2159'
 ht-degree: 0%
 
 ---
@@ -98,7 +99,7 @@ De `PreUpgradeTasksMBean` component OSGI komt vooraf gevormd met een lijst van p
 
    ![1487758925984](assets/1487758925984.png)
 
-De takenlijst verschilt afhankelijk van de uitvoeringsmodus die wordt gebruikt om de instantie te starten. Hieronder volgt een beschrijving van de uitvoeringsmodus waarvoor elke onderhoudstaak is ontworpen.
+De takenlijst is afhankelijk van de uitvoeringsmodus die wordt gebruikt om de instantie te starten. Hieronder volgt een beschrijving van de uitvoeringsmodus waarvoor elke onderhoudstaak is ontworpen.
 
 <table>
  <tbody>
@@ -135,7 +136,7 @@ De takenlijst verschilt afhankelijk van de uitvoeringsmodus die wordt gebruikt o
   <tr>
    <td><code>RevisionCleanupTask</code></td>
    <td>crx3</td>
-   <td>Voor instanties TarMK op AEM 6.0 tot 6.2, stel in plaats daarvan manueel Off-line Correctie van de Revisie in werking.</td>
+   <td>Voor instanties TarMK op AEM 6.0 tot 6.2, stel in plaats daarvan manueel Off-line de Correctie van de Revisie in werking.</td>
   </tr>
   <tr>
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td>

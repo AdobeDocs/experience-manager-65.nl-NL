@@ -2,10 +2,11 @@
 title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
+role: Architect, beheerder
 translation-type: tm+mt
-source-git-commit: 534a3d75ebb6a6d297354cce4840bdc1dfa25707
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1741'
+source-wordcount: '1743'
 ht-degree: 10%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 10%
 
 # Vertaalprojecten maken {#creating-translation-projects}
 
-Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor het kopiëren van talen die beschikbaar zijn onder de References-rail in de gebruikersinterface [!DNL Experience Manager].
+Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor het kopiëren van talen die beschikbaar zijn onder de References rail in de gebruikersinterface [!DNL Experience Manager].
 
 * **Maken en vertalen**: In deze workflow worden elementen die moeten worden vertaald, gekopieerd naar de hoofdtaal van de taal waarnaar u wilt vertalen. Bovendien wordt, afhankelijk van de opties u kiest, een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 

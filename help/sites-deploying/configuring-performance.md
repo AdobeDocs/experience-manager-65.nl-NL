@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: a0673c23588cba263c292680637b16a18ef1431c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '6658'
+source-wordcount: '6659'
 ht-degree: 1%
 
 ---
@@ -162,7 +163,7 @@ Prestaties (of het ontbreken ervan) zijn een van de eerste dingen die uw gebruik
 
 Zie [Prestaties controleren](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) voor informatie over hoe u prestatiebewaking kunt uitvoeren.
 
-De problemen die prestatieproblemen veroorzaken, zijn vaak moeilijk op te sporen, zelfs als de effecten ervan gemakkelijk te zien zijn.
+De problemen die prestatieskwesties veroorzaken zijn vaak moeilijk te volgen, zelfs wanneer hun gevolgen gemakkelijk zijn te zien.
 
 Een basisuitgangspunt is een goede kennis van uw systeem wanneer het zoals normaal werkt. Tenzij u weet hoe uw omgeving eruit ziet en zich gedraagt wanneer deze goed functioneert, kan het moeilijk zijn het probleem op te sporen wanneer de prestaties achteruitgaan. Dit betekent dat u wat tijd moet besteden aan het onderzoeken van uw systeem wanneer het regelmatig loopt en ervoor moet zorgen dat het verzamelen van prestatiesinformatie een lopende taak is. Dit zal u een basis voor vergelijking verstrekken als de prestaties lijden.
 
@@ -389,7 +390,7 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 | Component | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Homepage voor één gebruiker | Gemiddelde | 1 | 3 |  |  |
-|  | Piek | 3 | 3 |  |  |
+|  | Piek | 1 | 3 |  |  |
 | Homepage 100 gebruikers | Gemiddelde | 100 | 3 |  |  |
 |  | Piek | 100 | 3 |  |
 
@@ -433,7 +434,7 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 
 | Foutscenario | Fouttype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 3 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
+| Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 1 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
 |  | Woord stoppen | 20 | 2 |  | Zoeken naar een stopwoord. |
 |  | Lege tekenreeks | 10 | 3 |  | Zoeken naar een lege tekenreeks. |
 |  | Speciale tekens | 10 | 3 |  | Zoeken naar speciale tekens. |
@@ -445,7 +446,7 @@ Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een
 | Scenario | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Duurzaamheidstest (72 uur) | Homepage | 10 | 3 |  |  |
-|  | Zoeken | 10 | 3 |  |  |
+|  | Zoeken | 10 | 1 |  |  |
 |  | Nieuws | 20 | 2 |  |  |
 |  | Gebeurtenissen | 10 | 3 |  |  |
 |  | Activering | 3 | 3 |  | Simulatie van het gedrag van de auteur. |
@@ -644,7 +645,7 @@ Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensi
 
 Als de bestandsnaam geen extensie heeft, wordt deze weergegeven als onbewerkte tekst.
 
-Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u antwoordheaders niet in de cache plaatst bij Dispatcher, moet u er rekening mee houden dat het MIME-type onderdeel is van de HTTP-header. Als uw AEM-toepassing bestanden retourneert die geen herkend bestand hebben dat eindigt en in plaats daarvan afhankelijk is van het MIME-type, worden deze bestanden mogelijk onjuist weergegeven.
+Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u antwoordheaders niet in de cache plaatst bij Dispatcher, moet u er rekening mee houden dat het MIME-type onderdeel is van de HTTP-header. Als uw AEM-toepassing bestanden retourneert die geen herkend bestandseinde hebben en in plaats daarvan afhankelijk is van het MIME-type, worden deze bestanden mogelijk onjuist weergegeven.
 
 Volg de onderstaande richtlijnen om ervoor te zorgen dat bestanden correct in het cachegeheugen worden opgeslagen:
 
@@ -718,7 +719,7 @@ Deze grafiek illustreert dat zowel stijgende als volledige steunen een eenvoudig
 
 #### Back-upvertraging {#backup-delay}
 
-De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand wordt doorgestuurd naar de back-upbewerking. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
+De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand in de back-upbewerking wordt afgedrukt. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
 
 * Als u een back-up gelijktijdig uitvoert met een normale toepassingsbelasting, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
 * De impact kan gering zijn (maar niet minder dan 5%) of zeer significant zijn, wat tot een daling van de productie met 75% kan leiden, en dit hangt waarschijnlijk meer af van de toepassing dan wat dan ook.

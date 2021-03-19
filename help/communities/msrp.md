@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1175'
 ht-degree: 0%
 
 ---
@@ -104,7 +105,7 @@ De naam van de Solr-verzameling.
 
 >[!NOTE]
 >
->De database mongoDB, die standaard de naam `communities` heeft, mag niet worden ingesteld op de naam van een database die wordt gebruikt voor [knooppuntopslag of gegevens (binair) winkels](../../help/sites-deploying/data-store-config.md). Zie ook [Opslagelementen in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
+>De database mongoDB, die standaard de naam `communities` krijgt, mag niet worden ingesteld op de naam van een database die wordt gebruikt voor [knoopopslag of gegevens (binair) winkels](../../help/sites-deploying/data-store-config.md). Zie ook [Opslagelementen in AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md).
 
 ### MongoDB Replica-set {#mongodb-replica-set}
 

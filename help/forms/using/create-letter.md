@@ -7,10 +7,11 @@ uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
+feature: Correspondentenbeheer
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4003'
+source-wordcount: '4005'
 ht-degree: 1%
 
 ---
@@ -241,7 +242,7 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 1. Selecteer **Forms** > **Letters**.
 
-1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [Referentielettermalplaatjes](/help/forms/using/reference-cm-layout-templates.md). Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (lay-out) in Designer en uploadt u deze vervolgens naar AEM Forms[.](/help/forms/using/get-xdp-pdf-documents-aem.md)
+1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [Referentielettermalplaatjes](/help/forms/using/reference-cm-layout-templates.md). Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (lay-out) in Designer en uploadt u deze vervolgens naar AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).[
 
    ![aanmaken](assets/create-letter.png)
 

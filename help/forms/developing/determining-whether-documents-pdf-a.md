@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
+role: Developer
 translation-type: tm+mt
-source-git-commit: 07889ead2ae402b5fb738ca08c7efe076ef33e44
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -106,7 +107,7 @@ In het XML-document dat door de Assembler-service wordt geretourneerd, wordt aan
  <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
 ```
 
-Sla het XML-document op als een XML-bestand, zodat u het bestand kunt openen en de resultaten kunt bekijken.
+Sla het XML-document op als een XML-bestand zodat u het bestand kunt openen en de resultaten kunt bekijken.
 
 **Zie ook**
 
@@ -246,7 +247,7 @@ Bepaal of een PDF-document PDF/A-compatibel is met behulp van de API (webservice
 
    * Open het veld `AssemblerResult` van het object `documents`. Dit is een object `Map` dat de XML-gegevens bevat die aangeven of het invoer-PDF-document een PDF/A-document is.
    * Doorloop het object `Map` om elk resulterend document te verkrijgen. Vervolgens cast u de waarde van dat arraylid naar een `BLOB`.
-   * Extraheer de binaire gegevens die de XML-gegevens vertegenwoordigen door het veld `BLOB` van het object te openen. `MTOM` In dit veld wordt een array met bytes opgeslagen waarnaar u kunt schrijven als een XML-bestand.
+   * Extraheer de binaire gegevens die de XML-gegevens vertegenwoordigen door het veld `MTOM` van het object te openen. `BLOB` In dit veld wordt een array met bytes opgeslagen waarnaar u kunt schrijven als een XML-bestand.
 
 **Zie ook**
 

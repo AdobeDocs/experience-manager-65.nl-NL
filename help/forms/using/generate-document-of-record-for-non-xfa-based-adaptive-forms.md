@@ -9,10 +9,11 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: fa3d5923784a8d89e2b440412d2b88790de3e39e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2646'
+source-wordcount: '2648'
 ht-degree: 1%
 
 ---
@@ -28,7 +29,7 @@ In dit artikel wordt uitgelegd hoe u een recorddocument voor adaptieve formulier
 
 >[!NOTE]
 >
->Automatisch genereren van een record wordt niet ondersteund voor op XFA gebaseerde adaptieve formulieren. U kunt echter de XDP gebruiken om het adaptieve formulier te maken als een recorddocument.
+>Automatisch genereren van een recorddocument wordt niet ondersteund voor op XFA gebaseerde adaptieve formulieren. U kunt echter de XDP gebruiken om het adaptieve formulier te maken als een recorddocument.
 
 ## Adaptieve formuliertypen en hun recorddocumenten {#adaptive-form-types-and-their-documents-of-record}
 
@@ -248,7 +249,7 @@ Wijzig of verwijder geen scripts in de basissjabloon.
 
 **Basissjabloon wijzigen**
 
-* Als u geen opmaak toepast op velden in de basissjabloon, is het raadzaam deze velden uit de basissjabloon te verwijderen, zodat alle upgrades naar de basissjabloon automatisch worden opgehaald.
+* Als u geen opmaak toepast op velden in de basissjabloon, is het aan te raden deze velden uit de basissjabloon te verwijderen, zodat alle upgrades naar de basissjabloon automatisch worden opgehaald.
 * Verwijder scripts niet tijdens het wijzigen van een basissjabloon, voeg ze toe of wijzig ze niet.
 
 >[!NOTE]

@@ -2,10 +2,11 @@
 title: Configuratie en beheer van metagegevensfunctionaliteit.
 description: Configuratie en beheer van [!DNL Experience Manager Assets] functionaliteit met betrekking tot toevoeging en beheer van metagegevens.
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 4%
 
 ---
@@ -36,7 +37,7 @@ U kunt uw eigen naamruimten toevoegen binnen [!DNL Experience Manager]. Net zoal
 
 ## Limieten configureren voor updates van bulkmetagegevens {#bulk-metadata-update-limit}
 
-Om een ontkenning van de dienst (DOS) als situatie te verhinderen, [!DNL Enterprise Manager] beperkt het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van veel elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. Enterprise Manager genereert de volgende waarschuwing in de logboeken:
+Om een ontkenning van de dienst (DOS) als situatie te verhinderen, [!DNL Enterprise Manager] beperkt het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van vele elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. Enterprise Manager genereert de volgende waarschuwing in de logboeken:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 

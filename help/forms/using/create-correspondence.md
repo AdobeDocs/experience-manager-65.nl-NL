@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
+feature: Correspondentenbeheer
 translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3699'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
@@ -253,7 +254,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    ![saveascript](assets/saveasdraft.png)
 
-   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Done**. U kunt deze id later gebruiken om het concept letter[ opnieuw te laden.](submit-letter-topostprocess.md#reloaddraft)
+   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Done**. U kunt deze id later gebruiken om het concept letter](submit-letter-topostprocess.md#reloaddraft) opnieuw te laden.[
 
 1. Tik op Voorvertoning ( ![preview](assets/preview.png)) om een voorvertoning van de letter weer te geven als een afgevlakte PDF met de exacte indeling en pagina-einden zoals deze worden verzonden.
 

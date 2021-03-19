@@ -1,11 +1,12 @@
 ---
 title: Persoonlijke mappen om elementen te delen
-description: Leer hoe te om een privé omslag in  [!DNL Adobe Experience Manager Assets] te creëren en het met andere gebruikers te delen en verschillende voorrechten aan hen toe te wijzen.
+description: Leer hoe te om tot een privé omslag in  [!DNL Adobe Experience Manager Assets] te leiden en het met andere gebruikers te delen en verschillende voorrechten aan hen toe te wijzen.
 contentOwner: AG
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---

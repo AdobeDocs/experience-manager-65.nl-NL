@@ -1,7 +1,7 @@
 ---
 title: Elementaire componenten
 seo-title: Elementaire componenten
-description: 'null'
+description: Elementaire componenten
 seo-description: 'null'
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7364'
+source-wordcount: '7365'
 ht-degree: 3%
 
 ---
@@ -403,7 +403,7 @@ Als de afbeelding eenmaal is geüpload (en niet eerder), kunt u [Bewerken op pla
 >
 >Afhankelijk van uw exemplaar, kunnen de minimum en maximumbeperkingen ook door het [ontwerp van pagina](/help/sites-developing/designer.md) worden opgelegd; deze worden ontwikkeld tijdens de uitvoering van het project .
 
-In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
+Er zijn verschillende aanvullende opties beschikbaar in de modus Volledig scherm; bijvoorbeeld toewijzen en zoomen:
 
 ![](do-not-localize/chlimage_1-16.png)
 

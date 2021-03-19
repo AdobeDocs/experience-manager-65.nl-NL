@@ -2,10 +2,11 @@
 title: Mappen delen naar  [!DNL Adobe Creative Cloud] aanbevolen werkwijzen
 description: Configureer [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] om mappen uit te wisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 18e62f8fb46de20e1668b2dcdcedf68fe4622b50
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---

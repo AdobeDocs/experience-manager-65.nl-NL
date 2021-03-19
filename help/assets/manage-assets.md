@@ -3,10 +3,11 @@ title: Uw digitale middelen beheren
 description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, bewerken, zoeken, verwijderen, notities aanbrengen en de versie van uw digitale middelen.
 contentOwner: AG
 mini-toc-levels: 1
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '9358'
+source-wordcount: '9360'
 ht-degree: 3%
 
 ---

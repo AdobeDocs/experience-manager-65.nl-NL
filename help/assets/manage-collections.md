@@ -3,10 +3,11 @@ title: Verzamelingen digitale middelen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: cf86d0c38e326766b35318e78a94a3f32e166e01
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2026'
 ht-degree: 10%
 
 ---

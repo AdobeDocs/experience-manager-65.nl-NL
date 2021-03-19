@@ -10,10 +10,11 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -44,7 +45,7 @@ Het staat u toe om oude versies van een knoop, of een hiërarchie van knopen, vo
 Wanneer dit aantal wordt overschreden, wordt de oudste versie verwijderd.
 
    * De maximumleeftijd van versies die in de opslagplaats worden bewaard.
-Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de repository verwijderd.
+Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de opslagplaats verwijderd.
 
 * de [onderhoudstaak voor versiezuivering](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
 

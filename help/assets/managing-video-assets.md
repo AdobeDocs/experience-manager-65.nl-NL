@@ -2,10 +2,11 @@
 title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '727'
 ht-degree: 8%
 
 ---
@@ -56,7 +57,7 @@ Als u een hogere maximale bestandsgrootte wilt configureren, voert u de volgende
 
 1. Klik **[!UICONTROL Save All]** op de werkbalk.
 1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Zoek op de pagina [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles] onder de kolom Naam van de tabel **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** en klik op &lt;a2/>.
+1. Zoek op de pagina [!DNL Adobe Experience Manager] [!UICONTROL Web Console Bundles] onder de kolom Naam van de tabel **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** en klik op .
 1. Stel op de pagina [!UICONTROL Adobe Granite Workflow External Process Job Handler] de seconden voor zowel **[!UICONTROL Default Timeout]** als **[!UICONTROL Max Timeout]** velden in op `18000` (vijf uur). Klik op **[!UICONTROL Save]**.
 1. Klik in [!DNL Experience Manager] op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Selecteer **[!UICONTROL Dynamic Media Encode Video]** op de pagina Workflowmodellen en klik vervolgens op **[!UICONTROL Edit]**.
@@ -67,7 +68,7 @@ Als u een hogere maximale bestandsgrootte wilt configureren, voert u de volgende
 
 ## Video-elementen publiceren {#publish-video-assets}
 
-Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie.
+Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [Dynamic Media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie.
 
 ## Video-elementen {#annotate-video-assets} notities aanbrengen
 
@@ -89,5 +90,5 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 >
 >* [Digitale middelen beheren in Experience Manager Assets](/help/assets/manage-assets.md)
 >* [Verzamelingen beheren in Experience Managers](/help/assets/manage-collections.md)
->* [Dynamische mediavideodocumentatie](/help/assets/video.md).
+>* [Dynamic Media-videodocumentatie](/help/assets/video.md).
 

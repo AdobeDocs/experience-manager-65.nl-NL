@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 29f8e59e3fc9d3c089ee3b78c24638cd3cd2e96b
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2403'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster
 
 Zie [Het Vormen de Verbruik van het Onderwerp](/help/sites-deploying/offloading.md#configuring-topic-consumption) voor informatie over het raffineren van baandistributie.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 Wanneer het Offloading-framework een cluster selecteert om een taak uit te voeren en de cluster uit meerdere instanties bestaat, bepaalt Sling Distribution welke instantie in de cluster de taak uitvoert.
 
@@ -102,7 +103,7 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
@@ -193,7 +194,7 @@ De taken worden verdeeld onder instanties die het bijbehorende die onderwerp heb
 1. Om de consumptie van een onderwerp voor een instantie onbruikbaar te maken, onder de onderwerpnaam klik onbruikbaar maken naast de instantie.
 1. Om al onderwerpconsumptie voor een instantie te vormen, klik het instantieherkenningsteken onder om het even welk onderwerp.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
@@ -218,18 +219,18 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 
 ### Onderwerpen voor een instantie {#disabling-and-enabling-topics-for-an-instance} uitschakelen en inschakelen
 
-De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
+De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van gewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
 
 **Nota:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn. Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van afgewezen personen heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn. Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van gewezen personen heeft geen waarde).
 
 Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knopen, is PID van de dienst van de Manager van de Consumentenconsument van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
 | Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
-| Topic lijst van afgewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
+| Topic lijst van gewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
 ## Replicatieagents maken voor offloaden {#creating-replication-agents-for-offloading}
 

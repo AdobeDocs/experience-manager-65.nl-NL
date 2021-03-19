@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -77,7 +78,7 @@ Hiermee kunt u een instantie van het vereiste functieobject maken.
 
 Als u een item in de lijst selecteert, worden de parameters met betrekking tot die configuratie weergegeven:
 
-![chlimage_1-29](assets/chlimage_1-21a.png)
+![chlimage_1-21](assets/chlimage_1-21a.png)
 
 Vervolgens kunt u de parameters naar wens bijwerken en:
 

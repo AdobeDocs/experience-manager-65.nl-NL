@@ -1,7 +1,7 @@
 ---
 title: Componenten configureren in ontwerpmodus
 seo-title: Componenten configureren in ontwerpmodus
-description: 'null'
+description: Componenten configureren in ontwerpmodus
 seo-description: 'null'
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Een component in- of uitschakelen:
    Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor parsys beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-   * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+   * U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.

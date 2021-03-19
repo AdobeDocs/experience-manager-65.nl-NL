@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -20,13 +21,13 @@ ht-degree: 0%
 
 # Door gebruiker gegenereerde inhoud omzetten {#translating-user-generated-content}
 
-De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (social component framework)](scf.md) naar communitysites wordt gepost.
+De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (Social Component Framework)](scf.md) naar communitysites wordt gepost.
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
 Stel bijvoorbeeld:
 
-* Een Franse afgevaardigde plaatst een recept in het Frans op het communautair forum van een multinationale kookwebsite.
+* Een Franse afgevaardigde plaatst een recept in het Frans op het communityforum van een multinationale kookwebsite.
 * Een ander Japans lid gebruikt de vertaalfunctie om het recept van het Frans naar het Japans te vertalen.
 * Na het lezen van het recept in het Japans heeft het Japanse lid een opmerking geplaatst in het Japans.
 * Het Franse lid gebruikt de vertaalfunctie om de Japanse opmerking in het Frans te vertalen.
@@ -151,7 +152,7 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 
 #### Gebruikersprofiel {#user-profile}
 
-Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zich te identificeren voor de community en hun voorkeuren in te stellen.
+Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zichzelf te identificeren voor de community en hun voorkeuren in te stellen.
 
 Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling is standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling wijzigen in Aan of Uit en zo de systeeminstelling overschrijven.
 

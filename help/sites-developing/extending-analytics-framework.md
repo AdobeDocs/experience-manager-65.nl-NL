@@ -1,7 +1,7 @@
 ---
 title: Adobe Analytics Framework aanpassen
 seo-title: Adobe Analytics Framework aanpassen
-description: 'null'
+description: Adobe Analytics Framework aanpassen
 seo-description: 'null'
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 translation-type: tm+mt
-source-git-commit: 0dc96f07e45ccbfea4edc87431677ada5b1bfa8c
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,7 @@ De volgende procedure laat zien hoe u het vak javascript kunt gebruiken om het b
 
    >[!CAUTION]
    >
-   >Deze code is nodig als u variabelen in een vraag van Adobe Analytics wilt verzenden die op één of andere manier zijn aangepast die niet door de basis belemmering &amp; dalingsinterface OF door gealigneerd javascript in de Mening van Adobe Analytics kan worden gedaan.
+   >Deze code is noodzakelijk als u variabelen in een vraag van Adobe Analytics wilt verzenden die op één of andere manier zijn aangepast die niet door de basis belemmering &amp; dalingsinterface OF door gealigneerd javascript in de Mening van Adobe Analytics kan worden gedaan.
    >
    >Als de douanevariabelen buiten de functie s_doPlugins zijn zullen zij als *undefined *in de vraag van Adobe Analytics worden verzonden
 

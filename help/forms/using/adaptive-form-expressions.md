@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: 26a65772c43a5176d178bb6625604d18ac91e894
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2767'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -191,7 +192,7 @@ De expressie voor het voltooien van de stap wordt gebruikt om te voorkomen dat e
 
 Er zijn meerdere methoden om veldvalidatie toe te voegen aan een adaptief formulier. Als een validatiecontrole op een veld wordt toegevoegd, geeft **True** aan dat de waarde die in het veld wordt ingevoerd, geldig is. **Falserepresents** that the value is invalid. Als u in- en uitgaat van een veld, wordt het foutbericht niet gegenereerd.
 
-U kunt als volgt validaties toevoegen aan een veld:
+De methoden om validaties toe te voegen aan een veld zijn:
 
 ### Vereist {#required}
 
@@ -229,7 +230,7 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 #### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
-U kunt de GuideBridge API&#39;s ook buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
+U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
 Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, legt u een instantie van GuideBridge vast. Als u de instantie wilt vastleggen, luistert u naar `bridgeInitializeStart`gebeurtenis van een `window`object:
 
@@ -275,7 +276,7 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen voor validatie- of weergaveindelingen leveren. U kunt niet alleen patronen uit het vak gebruiken, maar ook herbruikbare aangepaste patronen definiëren voor een adaptieve formuliercomponent. U kunt bijvoorbeeld een tekstveld of een numeriek veld definiëren. Als u deze patronen eenmaal hebt gedefinieerd, kunt u deze patronen in alle formulieren gebruiken voor het opgegeven type component. U kunt bijvoorbeeld een aangepast patroon maken voor een tekstveld en dit gebruiken in de tekstvelden in de aangepaste formulieren. U kunt het aangepaste patroon selecteren door de patroonsectie te openen in het dialoogvenster Bewerken van een component. Zie [Ondersteuning van afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md) voor meer informatie over de definitie of indeling van patronen.
 
-Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
+Voer de volgende stappen uit om een aangepast patroon voor een specifiek veldtype te maken en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
 1. Navigeer naar CRXDE Lite op de ontwerpinstantie.
 1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns`. Onder deze knoop, creeer een andere knoop van type `nt:unstructed` en noem het `textboxpatterns`. Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.

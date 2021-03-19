@@ -7,10 +7,11 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: 04e1b722cc9be1c4f51b629caffabe1a3f06d28e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---

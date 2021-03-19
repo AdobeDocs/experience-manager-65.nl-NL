@@ -8,10 +8,11 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ De interactieve Mededelingen kunnen door twee kanalen worden geleverd: afdrukken
 
 Auteurs van interactieve communicatie kunnen elementen zoals documentfragmenten en afbeeldingen hergebruiken om zowel afdruk- als webversies van interactieve communicatie te maken.
 
-Een van de voorwaarden voor het maken van een interactieve communicatie[ is dat de sjablonen voor afdrukken en/of webkanaal beschikbaar zijn op de server. ](../../forms/using/create-interactive-communication.md) Hoewel sjabloonauteurs de webkanaalsjabloon op AEM zelf maken, wordt de XDP-afdruksjabloon gemaakt in Adobe Forms Designer en geüpload naar de server.
+Een van de voorwaarden voor het maken van een interactieve communicatie](../../forms/using/create-interactive-communication.md) is dat de sjablonen voor afdrukken en/of webkanaal beschikbaar zijn op de server. [ Hoewel sjabloonauteurs de webkanaalsjabloon op AEM zelf maken, wordt de XDP-afdruksjabloon gemaakt in Adobe Forms Designer en geüpload naar de server.
 
 ## Kanaal {#printchannel} afdrukken
 

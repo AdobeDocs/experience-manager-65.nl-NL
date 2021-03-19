@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
+feature: Context Hub
 translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '5029'
+source-wordcount: '5031'
 ht-degree: 2%
 
 ---
@@ -33,7 +34,7 @@ De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels Co
 | Constante | Beschrijving | Waarde |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | ContextHub-gebeurtenisnaamruimte | ch |
-| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste winkels zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
+| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste opslagruimten zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
 | ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Geeft aan dat niet alle winkels binnen een bepaalde tijd zijn geïnitialiseerd | gedeeltelijk gereed voor winkels |
 | ContextHub.Constants.EVENT_STORE_REGISTERED | Wordt geactiveerd wanneer een winkel is geregistreerd | in de winkel geregistreerd |
 | ContextHub.Constants.EVENT_STORE_READY | Geeft aan dat winkels klaar zijn om te werken. Het wordt teweeggebracht onmiddellijk na registratie, behalve JSONP slaat op, waar het in brand wordt gestoken wanneer het gegeven wordt opgehaald). | klaar voor gebruik |
@@ -832,7 +833,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript-waarden en -objecten in tekenreekswaarden in JSON-indeling.
+Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indeling.
 
 **Parameters**
 

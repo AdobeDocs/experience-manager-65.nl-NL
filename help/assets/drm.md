@@ -1,11 +1,12 @@
 ---
 title: Digital Rights Management van activa
-description: Leer hoe u de verloopstatussen van elementen en informatie voor gelicentieerde middelen beheert in [!DNL Experience Manager].
+description: Leer hoe u de verloopstatus van elementen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1323'
 ht-degree: 5%
 
 ---

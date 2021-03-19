@@ -2,10 +2,11 @@
 title: Vergelijk [!DNL Assets] en de aanbiedingen van de Bibliotheek van Media
 description: Vergelijk [!DNL Experience Manager Assets] en de eigenschappen van de Bibliotheek van Media en ken de verschillen.
 contentOwner: AG
+role: Architect, leider
 translation-type: tm+mt
-source-git-commit: 82c2df0e53e8ef595ad158ef46089d6e4964ca26
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

@@ -1,7 +1,7 @@
 ---
 title: Uitbreiding van workflowfunctionaliteit
 seo-title: Uitbreiding van workflowfunctionaliteit
-description: 'null'
+description: Uitbreiding van workflowfunctionaliteit
 seo-description: 'null'
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3589'
 ht-degree: 1%
 
 ---
@@ -817,7 +817,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    Hier is het resultaat van onze voorbeeld aangepaste stap:
 
-   ![wf-36](assets/wf-34.png)
+   ![wf-34](assets/wf-34.png)
 
    >[!CAUTION]
    >
@@ -858,7 +858,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
 1. U kunt nu een workflowmodel openen voor bewerking. In stappen kunt u browser filtreren om **Mijn Stap van de Douane** te zien:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    Als u **Mijn aangepaste stap** op het model sleept, wordt de kaart weergegeven:
 

@@ -1,7 +1,7 @@
 ---
 title: Rendering en levering
 seo-title: Rendering en levering
-description: 'null'
+description: Rendering en levering
 seo-description: 'null'
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 translation-type: tm+mt
-source-git-commit: 7eb3529de1c99d09eaa78c7589320a85e729400b
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 4%
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +37,7 @@ Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
 ## JSON {#requesting-json} aanvragen
 
-Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto request JSON.**
+Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto request JSON.]
 
 <table>
  <tbody>

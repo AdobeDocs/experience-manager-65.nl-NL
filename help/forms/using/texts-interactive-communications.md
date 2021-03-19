@@ -8,10 +8,11 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2439'
+source-wordcount: '2441'
 ht-degree: 0%
 
 ---
@@ -83,7 +84,7 @@ U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U ku
 
 ## Een tekstdocumentfragment aanpassen met eigenschappen van formuliergegevensmodel {#formdatamodel}
 
-U kunt tekstdocumentfragmenten personaliseren door de eigenschappen van het formuliergegevensmodel in te voegen. Door eigenschappen van het formuliergegevensmodel in tekst in te voegen, kunt u specifieke gegevens voor ontvangers ophalen en vullen vanuit de bijbehorende gegevensbron terwijl u een voorbeeld van een interactieve communicatie weergeeft. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
+U kunt tekstdocumentfragmenten personaliseren door de eigenschappen van het formuliergegevensmodel in te voegen. Door eigenschappen van het formuliergegevensmodel in tekst in te voegen, kunt u specifieke gegevens voor ontvangers ophalen en vullen vanuit de bijbehorende gegevensbron terwijl u een voorbeeld van een interactieve communicatie bekijkt. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over het formuliergegevensmodel.
 
 Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst, worden de eigenschappen in het formuliergegevensmodel weergegeven in het linkerdeelvenster van de teksteditor. Het opgegeven formuliergegevensmodel moet hetzelfde zijn voor het tekstdocumentfragment en de interactieve communicatie waarin het fragment voorkomt.
 
@@ -93,7 +94,7 @@ Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst,
 
 U kunt ook de eigenschap van het formuliergegevensmodel zoeken en toevoegen met het symbool @ in de teksteditor. Plaats de cursor op de plaats waar u de eigenschap wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel die beschikbaar zijn in het documentfragment. De eigenschappen of variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het bezit dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
-* Om de agenten toe te staan om de waarde van een modelbezit van vormgegevens in de agent UI uit te geven terwijl [Interactieve Communicatie](/help/forms/using/prepare-send-interactive-communication.md) gebruikend de UI van de Agent voorbereidt en verzendt, het **[D]** slotpictogram voor dat bezit tikken en het in een ontgrendelde staat verzekeren. De standaardstaat van het bezit is gesloten en een agent kan niet het bezit in de Agent UI uitgeven.
+* Om de agenten toe te staan om de waarde van een modelbezit van vormgegevens in de agent UI uit te geven terwijl [Interactieve Communicatie](/help/forms/using/prepare-send-interactive-communication.md) gebruikend de UI van de Agent voorbereidt en verzendt, het **[D]** slotpictogram voor dat bezit tikken en ervoor zorgen het in een ontgrendelde staat is. De standaardstaat van het bezit is gesloten en een agent kan niet het bezit in de Agent UI uitgeven.
 
 U kunt ook eigenschappen van het gegevensmodel van het formulier gebruiken om regels samen te stellen voor het weergeven of verbergen van delen van inhoud. Zie [Regels maken in tekst](#rules) voor meer informatie.
 

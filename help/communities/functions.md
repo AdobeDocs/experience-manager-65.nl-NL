@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 94a5a8d99d052d7bcf01f237dc2b73157a2f11c2
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2455'
 ht-degree: 0%
 
 ---
@@ -351,7 +352,7 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 
 ## Community-functie maken {#create-community-function}
 
-De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
+De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus van de auteur.
 
 ![create-community-function](assets/create-community-function.png)
 

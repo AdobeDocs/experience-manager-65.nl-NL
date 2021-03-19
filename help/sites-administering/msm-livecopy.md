@@ -1,10 +1,11 @@
 ---
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
+feature: Beheer van meerdere sites
 translation-type: tm+mt
-source-git-commit: 1725f19d0676680ae89ad7ea39fa3ae1deaeb8a3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4173'
 ht-degree: 0%
 
 ---
@@ -430,7 +431,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen. d.w.z. of 
 
    * Zal onmiddellijk effect hebben en is niet omkeerbaar.
 
-      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan gemaakt worden.
+      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan worden gemaakt.
 
       * Hiermee verwijdert u een afstammeling `LiveRelationships`, zelfs als er `LiveCopies` is genest.
 

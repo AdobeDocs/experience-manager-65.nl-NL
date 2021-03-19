@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 17d70e532ab5d825dd4dc0ea4c891c5b7cb8d345
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3435'
 ht-degree: 0%
 
 ---
@@ -496,7 +497,7 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde co
    >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan moet u [Kopballen van HTTP ](#extended) in **Uitgebreide** tabel vormen.
 
 1. Klik **OK** om de wijzigingen op te slaan.
-1. Keer terug naar **Tools** lusje, van hier kunt u **Activate** de **Dispatcher Flush** agent (**Agenten op publish**).
+1. Keer terug naar **Tools** tabel, vanaf hier kunt u **Activate** de **Dispatcher Flush** agent (**Agenten op publish**).
 
 De **Dispatcher Flush** replicatieagent is niet actief op auteur. U hebt toegang tot dezelfde pagina in de publicatieomgeving met behulp van de equivalente URI. bijvoorbeeld `https://localhost:4503/etc/replication/agents.publish/flush.html`.
 

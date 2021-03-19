@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7698'
+source-wordcount: '7699'
 ht-degree: 0%
 
 ---
@@ -293,7 +294,7 @@ Als AEM Forms op JEE is geïnstalleerd, wordt één standaardgebruikersaccount g
 
    **WebSphere:** 9080.
 
-1. Typ `administrator` in het veld **Gebruikersnaam** en typ **Wachtwoord** in het veld &lt;a3/>Wachtwoord&lt;a4/>.`password`
+1. Typ `administrator` in het veld **Gebruikersnaam** en typ **Wachtwoord** in het veld `password`Wachtwoord.
 1. Klik **Instellingen** > **Gebruikersbeheer** > **Gebruikers en groepen**.
 1. Typ `administrator` in het veld **Zoeken** en klik op **Zoeken**.
 1. Klik **Super Administrator** van de lijst van gebruikers.
@@ -343,7 +344,7 @@ In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassing
   </tr> 
   <tr> 
    <td><p>Bladeren door mappen</p> </td> 
-   <td><p>Wanneer iemand om een pagina verzoekt die niet bestaat of om de naam van een directeur verzoekt (het verzoekkoord beëindigt met een voorwaartse schuine streep (/)), zou de toepassingsserver niet de inhoud van die folder moeten terugkeren. Om dit te voorkomen, kunt u bladeren door mappen op uw toepassingsserver uitschakelen. U zou dit voor de toepassing van de beleidsconsole en voor andere toepassingen moeten doen die op uw server lopen.</p> <p>Stel voor JBoss de waarde van de initialisatieparameter voor lijsten van de eigenschap <code>DefaultServlet</code> in op <code>false</code> in het bestand web.xml, zoals in dit voorbeeld:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;aanbiedingen&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Stel voor WebSphere de eigenschap <code>directoryBrowsingEnabled</code> in het bestand ibm-web-ext.xmi in op <code>false</code>.</p> <p>Voor WebLogic, plaats de index-folders eigenschappen in het weblogic.xml- dossier aan <code>false</code>, zoals aangetoond in dit voorbeeld:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>Wanneer iemand om een pagina verzoekt die niet bestaat of om de naam van een directeur verzoekt (het verzoekkoord beëindigt met een voorwaartse schuine streep (/)), zou de toepassingsserver niet de inhoud van die folder moeten terugkeren. Om dit te voorkomen, kunt u bladeren door mappen op uw toepassingsserver uitschakelen. U zou dit voor de toepassing van de beleidsconsole en voor andere toepassingen moeten doen die op uw server lopen.</p> <p>Stel voor JBoss de waarde van de initialisatieparameter voor lijsten van de eigenschap <code>DefaultServlet</code> in op <code>false</code> in het bestand web.xml, zoals in dit voorbeeld:</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;default&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;aanbiedingen&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>Stel voor WebSphere de eigenschap <code>directoryBrowsingEnabled</code> in het bestand ibm-web-ext.xmi in op <code>false</code>.</p> <p>Voor WebLogic, plaats de index-folders eigenschappen in het weblogic.xml- dossier aan <code>false</code>, zoals aangetoond in dit voorbeeld:</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -352,7 +353,7 @@ In de volgende tabel worden enkele technieken beschreven waarmee u uw toepassing
 
 Wanneer het beveiligen van uw gegevensbestand, zou u de maatregelen moeten uitvoeren die door uw gegevensbestandverkoper worden beschreven. U zou een gegevensbestandgebruiker met de minimaal vereiste gegevensbestandtoestemmingen moeten toewijzen die voor gebruik door AEM Forms op JEE worden verleend. Gebruik bijvoorbeeld geen account met databasebeheerdersrechten.
 
-In Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNECT, RESOURCE en CREATE VIEW nodig. Voor gelijkaardige vereisten op andere gegevensbestanden, zie [Voorbereidend om AEM Forms op (Enige Server) te installeren JEE](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
+Bij Oracle heeft de databaseaccount die u gebruikt alleen de bevoegdheden CONNECT, RESOURCE en CREATE VIEW nodig. Voor gelijkaardige vereisten op andere gegevensbestanden, zie [Voorbereidend om AEM Forms op (Enige Server) te installeren JEE](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64).
 
 #### Het vormen van geïntegreerde veiligheid voor SQL Server op Vensters voor JBoss {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -689,8 +690,8 @@ Het filterproces Referrer kan als volgt worden beschreven:
 
 1. De formulierserver controleert of de aangevraagde URI bestaat in de lijst van gewenste personen:
 
-   1. Als URI wordt toegevoegd op lijst van gewenste personen, accepteert de server de aanvraag.
-   1. Als gevraagde URI niet wordt toegevoegd op lijst van gewenste personen, wint de server de Referrer van het verzoek terug.
+   1. Als URI wordt gevoegd op lijst van gewenste personen, accepteert de server de aanvraag.
+   1. Als gevraagde URI niet wordt gevoegd op lijst van gewenste personen, wint de server de Referrer van het verzoek terug.
 
 1. Als er een Referrer in het verzoek is, controleert de server of het een Toegestane Referrer is. Als dit is toegestaan, controleert de server op een uitzondering Referrer:
 
@@ -745,7 +746,7 @@ Neem het argument `-Dlc.um.csrffilter.disabled=true` JAVA op in het opstartscrip
 
 **Filteren met referenties voor aangepaste WAR-bestanden**
 
-Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u met AEM Forms op JEE kunt gebruiken om aan uw zakelijke vereisten te voldoen. Als u het filteren van referenties wilt inschakelen voor uw aangepaste WAR-bestanden, neemt u ***adobe-usermanager-client.jar*** op in het klassepad voor de WAR en neemt u een filteritem op in het bestand* web.xml* met de volgende parameters:
+Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u met AEM Forms op JEE kunt gebruiken om aan uw zakelijke vereisten te voldoen. Als u het filteren van verwijzingen wilt inschakelen voor uw aangepaste WAR-bestanden, neemt u ***adobe-usermanager-client.jar*** op in het klassepad voor de WAR en neemt u een filteritem op in het bestand* web.xml* met de volgende parameters:
 
 **CSRF_CHECK_** GETScontrols the Referrer check on GET request. Wanneer deze parameter niet is gedefinieerd, wordt de standaardwaarde op false ingesteld. Neem deze parameter alleen op als u uw GET-aanvragen wilt filteren.
 

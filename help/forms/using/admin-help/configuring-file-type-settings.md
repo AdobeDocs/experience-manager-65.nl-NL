@@ -8,10 +8,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '5857'
+source-wordcount: '5859'
 ht-degree: 1%
 
 ---
@@ -263,7 +264,7 @@ Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings
 
    >[!NOTE]
    >
-   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan**niet-ingesloten lijst nog steeds ongedaan gemaakt.*
+   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan**niet-ingesloten lijst nog steeds volledig ongedaan gemaakt.*
 
    >[!NOTE]
    >
@@ -595,7 +596,7 @@ Deze opties bepalen hoe de dossiers OpenOffice worden omgezet. Zie [Bestandstype
 
 **Afbeeldingen**: Configureer hoe afbeeldingen worden geconverteerd. EPS-afbeeldingen met ingesloten voorvertoningen worden alleen als voorvertoningen geëxporteerd. EPS-afbeeldingen zonder ingesloten voorvertoningen worden geëxporteerd als lege plaatsaanduidingen. Bij compressie zonder verlies van afbeeldingen blijven alle pixels behouden. Met JPEG-compressie van afbeeldingen en een hoge kwaliteit blijven bijna alle pixels behouden. Bij een laag kwaliteitsniveau gaan sommige pixels verloren en worden artefacten geïntroduceerd, maar de bestanden worden kleiner.
 
-**Algemeen**: Schakel de opties in om een gecodeerde PDF te converteren of om opmerkingen in Schrijver- en FormCalc-documenten te exporteren, dia-overgangseffecten te drukken of lege pagina&#39;s naar de PDF te exporteren. Wanneer labels worden geëxporteerd, kan de bestandsgrootte aanzienlijk toenemen. Sommige tags die worden geëxporteerd, zijn inhoudsopgaven, hyperlinks en besturingselementen.
+**Algemeen**: Schakel de opties in om een gecodeerde PDF te converteren of om opmerkingen in Schrijver- en FormCalc-documenten te exporteren, dia-overgangseffecten te drukken of lege pagina&#39;s naar de PDF te exporteren. Wanneer tags worden geëxporteerd, kan de bestandsgrootte aanzienlijk toenemen. Sommige tags die worden geëxporteerd, zijn inhoudsopgaven, hyperlinks en besturingselementen.
 
 U kunt ook opgeven hoe formulieren worden verzonden. De opties zijn XML, FDF, PDF of HTML. Dit het plaatsen treedt het bezit van URL van de controle met voeten dat u in het document plaatst. U kunt slechts één veelgebruikte instelling selecteren voor het PDF-document:
 

@@ -2,10 +2,11 @@
 title: Elementsjablonen
 description: Leer over de malplaatjes van Activa in [!DNL Adobe Experience Manager Assets] en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
 contentOwner: AG
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: f9f745369ba0fe242dea1e5a5e5af0b8263b1ec0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ Dankzij de flexibiliteit om beperkte bewerkingen uit te voeren en de globale han
 
 Als markeerteken kunt u sjablonen opslaan en beheren binnen [!DNL Experience Manager Assets] en één basissjabloon gebruiken om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen om uw marketing bericht aan klanten lucently over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoer. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
 
-Elementsjablonen zijn meestal [!DNL Adobe InDesign] bestanden, maar de vaardigheid in [!DNL Adobe InDesign] vormt geen belemmering voor het maken van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign]-sjabloon niet toe te wijzen aan de productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Als u uw bewerkingswijzigingen echter wilt verwerken, moet u [!DNL Adobe InDesign] eerst configureren voor integratie met [!DNL Experience Manager Assets].[!DNL Adobe InDesign Server]
+Elementsjablonen zijn meestal [!DNL Adobe InDesign] bestanden, maar de vaardigheid in [!DNL Adobe InDesign] vormt geen belemmering voor het maken van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign]-sjabloon niet toe te wijzen aan de productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Als u uw bewerkingswijzigingen echter wilt verwerken, moet u [!DNL Experience Manager Assets] eerst configureren voor integratie met [!DNL Adobe InDesign Server].[!DNL Adobe InDesign]
 
 De mogelijkheid om [!DNL Adobe InDesign]-sjablonen vanuit de webinterface te bewerken helpt een betere samenwerking tussen creatief en marketingpersoneel te bevorderen. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
 
@@ -82,7 +83,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    Met behulp van de zoekfunctie voor elementen kunt u bladeren naar afbeeldingen in [!DNL Experience Manager Assets] en de bewerkbare afbeeldingen in de sjabloon vervangen door afbeeldingen van uw keuze.
 
-   ![chlimage_1-189](assets/chlimage_1-314.png)
+   ![chlimage_1-109](assets/chlimage_1-314.png)
 
    De bewerkbare tekst wordt rechts weergegeven. Een veld kan alleen worden bewerkt in [!DNL Experience Manager Assets] als het desbetreffende veld in de sjabloon is gelabeld in [!DNL InDesign]. Met andere woorden, ze moeten worden gemarkeerd als bewerkbaar in [!DNL InDesign].
 
@@ -148,7 +149,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Klik op [!UICONTROL Template Merge] ![Elementen toevoegen](assets/do-not-localize/assets_add_icon.png) op de pagina &lt;a0/>.**[!UICONTROL Merge]**
+1. Klik op [!UICONTROL Template Merge] ![Elementen toevoegen](assets/do-not-localize/assets_add_icon.png) op de pagina **[!UICONTROL Merge]**.
 
 1. Navigeer naar de locatie van de elementen die u wilt samenvoegen en klik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
 

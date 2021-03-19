@@ -2,10 +2,11 @@
 title: Vertaalcloudservices toepassen op mappen
 description: Vertaalcloudservices toepassen op mappen
 contentOwner: AG
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 43%
 
 ---

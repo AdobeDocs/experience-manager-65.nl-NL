@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
+feature: Mediasets mixen, beheer van bedrijfsmiddelen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1399'
 ht-degree: 18%
 
 ---
@@ -71,7 +73,7 @@ Indien nodig kunt u [Gemengde Mediasets](#editing-mixed-media-sets) bewerken. Da
 
 >[!NOTE]
 >
->Zie [Problemen met dynamische media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md) als u problemen ondervindt bij het maken van sets.
+>Zie [Problemen met Dynamic Media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md) als u problemen ondervindt bij het maken van sets.
 
 ## Elementen {#uploading-assets} uploaden
 

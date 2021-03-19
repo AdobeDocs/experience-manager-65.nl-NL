@@ -2,10 +2,11 @@
 title: Lijst met functies voor dynamische ervaringen AEM
 description: Lijst met functies voor dynamische ervaringen
 index: n
+feature: Authoring
 translation-type: tm+mt
-source-git-commit: 33abb544c5f12f7d7a44fc326f07fe9b53ebc9d3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '351'
 ht-degree: 6%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 6%
 
 Adobe Experience Manager Fluid Experience maakt gebruik van de krachtige functiesets van AEM Sites, AEM Dynamic Media en AEM Assets om een robuuste oplossing te bieden voor het leveren van inhoud zonder kop.
 
-AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Belangrijke creatie en levering van inhoud en AEM krachtige steun voor hybride gebruiksgevallen zijn beschikbaar met [volledige AEM Sites, Middelen, en Dynamische oplossingen van Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experience onderscheidt zich van klassieke AEM in die zin dat alleen de headless delivery use case wordt behandeld. Belangrijke creatie en levering van inhoud en AEM krachtige steun voor hybride gebruiksgevallen zijn beschikbaar met de [volledige oplossingen van AEM Sites, Middelen, en Dynamic Media.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
 
 In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefinieerd en wordt een koppeling naar de relevante ondersteuningsdocumentatie opgenomen.
 

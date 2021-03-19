@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '827'
 ht-degree: 0%
 
 ---
@@ -111,13 +112,13 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u de plusknop &#39;**+*
 
    Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
 
-* **Lijst van afgewezen personen bijlagetype**
+* **Lijst van gewezen personen bijlagetype**
 
-   Een lijst van afgewezen personen met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt toegevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
+   Een lijst van gewezen personen met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt gevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;.
 
 * **Toegestane typen bijlagen**
 
-   **(*Actie vereist*)** Een lijst van gewenste personen van filename uitbreidingen, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+   **(*Actie vereist*)** Een lijst van gewenste personen van filename uitbreidingen, het tegenovergestelde van de lijst van gewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn gevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **Servicekiezer**
 
@@ -131,9 +132,9 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u de plusknop &#39;**+*
 
 >[!CAUTION]
 >
->Elke keer dat een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
+>Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn toegevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
+>Als u alle bestandsextensies wilt toestaan, behalve de extensies die zijn gevoegd op lijst van gewenste personen, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **Opslaan** klikt.
 
 ## Groepsberichten {#group-messaging}
 

@@ -6,10 +6,12 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
+feature: Viewers
+role: Bedrijfs Praktijk, Beheerder, Ontwikkelaar, de Ingenieur van Gegevens, Architect van Gegevens
 translation-type: tm+mt
-source-git-commit: 0a4708800e00eb34042e6979eb0703ca7816c7e1
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '6235'
+source-wordcount: '6244'
 ht-degree: 9%
 
 ---
@@ -669,7 +671,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 ### AEM IMS {#configuring-aem-ims} configureren
 
-1. Klik in AEM auteur op het pictogram Extra (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
+1. Klik in AEM auteur op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 

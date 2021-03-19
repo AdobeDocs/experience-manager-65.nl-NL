@@ -2,10 +2,11 @@
 title: Elementen in- en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '426'
 ht-degree: 1%
 
 ---
@@ -59,7 +60,7 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
 ## Beste werkwijzen en beperkingen {#tips-limitations}
 
-* Het is mogelijk om een *map* te verwijderen die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
+* Het is mogelijk een *map* te verwijderen die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
 
 >[!MORELIKETHIS]
 >

@@ -10,10 +10,11 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -181,7 +182,7 @@ De manier om met onjuiste aangepaste code om te gaan is eerst rooktests uit te v
 
 `/apps` en  `/libs` worden goed afgehandeld door de upgrade, maar wijzigingen in de upgrade moeten  `/etc` mogelijk handmatig worden hersteld  `/var/upgrade/PreUpgradeBackup` na de upgrade. Controleer deze locatie op alle inhoud die handmatig moet worden samengevoegd.
 
-### Het bestand error.log en upgrade.log analyseren {#analyzing-the-error.log-and-upgrade.log}
+### Het bestand error.log en upgrade.log {#analyzing-the-error.log-and-upgrade.log} analyseren
 
 In de meeste gevallen moeten de logboeken worden geraadpleegd voor fouten om de oorzaak van een probleem te vinden. In het geval van upgrades is het echter ook nodig om afhankelijkheidskwesties te controleren, aangezien oude bundels mogelijk niet correct worden bijgewerkt.
 

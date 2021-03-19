@@ -4,10 +4,12 @@ user-guide-title: AEM
 breadcrumb-title: Handleiding voor dynamische ervaringen
 user-guide-description: AEM de Vloeiende Ervaringen trekt uit de krachtige eigenschapreeksen van AEM Sites, AEM Dynamic Media, en AEM Assets om een robuuste oplossing voor de levering van inhoud zonder kop te verstrekken.
 index: n
+feature-set: Experience Manager Sites
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practice
 translation-type: tm+mt
-source-git-commit: e917a36f9b8748080e9ab770a7f58f06123ea166
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '41'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---

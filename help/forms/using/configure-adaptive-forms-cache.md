@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 2d54d115529126162c92e9943a188d05159535f9
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ U kunt ook adaptieve formulieren in cache plaatsen bij dispatcher voor extra pre
 
 Voer de onderstaande stappen uit om adaptieve formulieren in de cache in te schakelen en te configureren op de dispatcher:
 
-1. Open de volgende URL voor elke publicatie-instantie van uw omgeving en [schakel flush agent in voor het publiceren van instanties van uw omgeving](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Open de volgende URL voor elke publicatieinstantie van uw omgeving en [laat flush agent voor publiceer instanties van uw milieu toe](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Voeg het volgende toe aan het bestand](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) dispatcher.any:

@@ -11,10 +11,11 @@ content-type: reference
 discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 5f8198f0fd6c335708f2b771848b2e66dfc242b3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -139,7 +140,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 1. Start de secundaire Mongo-instanties op met een van deze als nieuwe primaire
 
-1. Vorm `DocumentNodeStoreService.cfg` dossiers op de secundaire instanties van de Auteur om aan de replicaset te richten die nog niet instanties van Mongo wordt bevorderd
+1. Vorm `DocumentNodeStoreService.cfg` dossiers op de secundaire instanties van de Auteur om aan de replicaset te richten die nog niet instanties van Mongo bevordert
 
 1. De secundaire instanties van de auteur opstarten
 

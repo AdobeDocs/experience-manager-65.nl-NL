@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: e4d84b5c6f7d2bfcac942b0b685a8f1fd11274f0
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2747'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,7 @@ Deze zelfstudie is een stap in de serie [Maak uw eerste interactieve communicati
 
 ## Informatie over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
 Zie [AEM Forms Data Integration](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html) voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
@@ -124,7 +125,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
    1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
    1. Tik **Installeren/bijwerken**. Er verschijnt een dialoogvenster **Bundels uploaden/installeren**.
 
-   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC Driver for MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
+   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
@@ -156,7 +157,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 3: Formuliergegevensmodel {#step-create-form-data-model} maken
 
-AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodus[l op basis van geconfigureerde gegevensbronnen. ](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585) U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodus](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l op basis van geconfigureerde gegevensbronnen. [ U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
@@ -268,7 +269,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
 
    * Selecteer **get** in de vervolgkeuzelijst **Service**.
 
-   * Tik **Add** om het gegevensmodelobject **customer** te koppelen aan **call** gegevensmodelobject met behulp van een eigenschap. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. Het dialoogvenster **Argument toevoegen** wordt geopend.
+   * Tik **Add** om het gegevensmodelobject **customer** te koppelen aan **call** gegevensmodelobject met behulp van een eigenschap. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het modelvoorwerp van klantengegevens worden verbonden. Het dialoogvenster **Argument toevoegen** wordt geopend.
 
    ![Koppeling toevoegen](assets/add_association_new.png)
 

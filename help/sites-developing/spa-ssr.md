@@ -1,7 +1,7 @@
 ---
 title: SPA en rendering op de server
 seo-title: SPA en rendering op de server
-description: 'null'
+description: '"SPA en rendering op de server"'
 seo-description: 'null'
 uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 41e30a668c8c02f2c43e509ed708c4b9fa39a269
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1694'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ Net zoals AEM de Angular- en Reactie-SPA-frameworks buiten de box ondersteunt, w
 * Reageren: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Raadpleeg voor een simplistisch voorbeeld de [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Het rendert de volledige kant van de toepassingsserver. Hoewel dit geen echt voorbeeld is, toont het wel wat nodig is om SSR uit te voeren.
+Raadpleeg voor een simplistisch voorbeeld de [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Het rendert de volledige kant van de toepassingsserver. Hoewel dit geen echt voorbeeld is, toont het wat nodig is om SSR uit te voeren.
 
 >[!CAUTION]
 >

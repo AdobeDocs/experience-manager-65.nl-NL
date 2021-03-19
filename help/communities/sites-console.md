@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3290'
+source-wordcount: '3291'
 ht-degree: 0%
 
 ---
@@ -506,7 +507,7 @@ Er verschijnt een indicatie nadat de site is gepubliceerd.
 
 ### Publiceren met geneste groepen {#publishing-with-nested-groups}
 
-Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subcommunity (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](/help/communities/groups.md) wordt gecreeerd.
+Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subgemeenschap (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](/help/communities/groups.md) wordt gecreeerd.
 
 ## De site {#exporting-the-site} exporteren
 

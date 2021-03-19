@@ -5,10 +5,13 @@ audience: end-user
 user-guide-title: AEM 6.5 Mobiele gebruikershandleiding
 breadcrumb-title: Gids voor mobiele apparaten
 user-guide-description: Inhoud maken en beheren voor mobiele apps.
+feature-set: Experience Manager Sites
+feature: Mobiel
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---

@@ -10,10 +10,11 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '5891'
+source-wordcount: '5892'
 ht-degree: 0%
 
 ---
@@ -1169,6 +1170,6 @@ Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebru
 
 >[!NOTE]
 >
->Voor Oracle VM is er ook informatie op:
+>Voor VM van Oracle is er ook informatie op:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)

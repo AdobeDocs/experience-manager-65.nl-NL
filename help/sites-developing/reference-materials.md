@@ -12,9 +12,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 4c9a0bd73e8d87d3869c6a133f5d1049f8430cd1
+source-git-commit: 5b33f615f1c82ec7cf80ae00c440cb5e3f0741fa
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 0%
 Adobe Experience Manager (AEM) biedt verschillende API&#39;s voor het ontwikkelen van toepassingen en het uitbreiden van AEM. De volgende lijst bevat de documentatie voor API&#39;s die worden ondersteund door AEM:
 
 * [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
-* API-verschillen (binnenkort beschikbaar)
 * [Granite UI (Touch-enabled) API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Hulplijn koraalinterface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Widgets API-documentatie (Classic UI)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
@@ -37,7 +36,7 @@ AEM Single-Page Application (SPA) Editor SDK framework JavaScript API-referentie
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Hoekbewerkbare componenten](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Bewerkbare angulars](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 API&#39;s voor levering en inhoudsbeheer AEM:
 

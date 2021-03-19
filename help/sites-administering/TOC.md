@@ -6,10 +6,13 @@ audience: admin-user
 user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
+feature-set: Experience Manager Sites
+feature: Beheer
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: c56e93b99553993e1c144c2ad2cb1299c9894812
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '664'
 ht-degree: 6%
 
 ---

@@ -2,10 +2,11 @@
 title: Zoeken in facetten om zoekresultaten te filteren
 description: Hoe te om tot stand te brengen, te wijzigen en, onderzoeksfacetten in  [!DNL Adobe Experience Manager] te gebruiken.
 contentOwner: AG
+role: Beheerder, ontwikkelaar
 translation-type: tm+mt
-source-git-commit: adeb20c1e7222e7c5702061cba73350002f5154c
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2276'
 ht-degree: 14%
 
 ---
@@ -107,7 +108,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 >De voorspelling van Opties is een aangepaste omslag die bezitsvoorspelling omvat om het beschreven gedrag aan te tonen. Momenteel, is er geen REST eindpunt beschikbaar om de functionaliteit te steunen native.
 
 1. Klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. Selecteer **[!UICONTROL Search Forms]** op de pagina &lt;a0/> en klik vervolgens op **[!UICONTROL Edit]**.**[!UICONTROL Assets Admin Search Rail]**
+1. Selecteer **[!UICONTROL Search Forms]** op de pagina **[!UICONTROL Assets Admin Search Rail]** en klik vervolgens op **[!UICONTROL Edit]**.
 1. Sleep op de pagina **[!UICONTROL Edit Search Form]** **[!UICONTROL Options Predicate]** van het tabblad **[!UICONTROL Select Predicate]** naar het hoofdvenster.
 1. Voer op het tabblad **[!UICONTROL Settings]** een label en een naam voor de eigenschap in. Als u bijvoorbeeld assets wilt zoeken op basis van hun indeling, geeft u een gebruikersvriendelijke naam voor het label op, bijvoorbeeld **[!UICONTROL File Type]**. Geef de eigenschap op op basis waarvan de zoekopdracht in het eigenschapsveld moet worden uitgevoerd, bijvoorbeeld `jcr:content/metadata/dc:format.`
 1. Voer een van de volgende handelingen uit:

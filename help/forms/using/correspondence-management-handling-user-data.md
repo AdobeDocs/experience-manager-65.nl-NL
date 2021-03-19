@@ -6,10 +6,11 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ U kunt tot ontwerp en voorgelegde brievengegevens in de gevormde gegevensopslag 
 
 Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Zie [API&#39;s voor toegang tot letterinstanties](/help/forms/using/cm-apis-to-access-letter-instances.md) voor meer informatie.
 
-U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM opslagplaats navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslaglocatie.
+U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslaglocatie.
 
 ### Gebruikersgegevens {#delete-user-data} verwijderen
 

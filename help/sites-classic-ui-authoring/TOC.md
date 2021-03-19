@@ -5,10 +5,13 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
+feature-set: Experience Manager Sites
+feature: Authoring
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 984e50ec1a523ff8a4f618016797c326fd679511
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '274'
 ht-degree: 20%
 
 ---
@@ -80,8 +83,8 @@ ht-degree: 20%
    + [Adobe Campaign Forms maken in AEM](classic-personalization-ac-forms.md)
 + Elementen ontwerpen in klassieke gebruikersinterface {#assets}
    + [Werken met elementen](classicui-assets.md)
-   + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
-   + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
+   + [Dynamic Media-middelen leveren](dynamic-media-assets-delivering.md)
+   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
    + [Scene7-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
    + [Video](manage-assets-classic-s7-video.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)

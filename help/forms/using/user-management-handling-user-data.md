@@ -6,10 +6,11 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -112,7 +113,7 @@ Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoo
 
 >[!NOTE]
 >
->De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer u deze opdrachten uitvoert op Oracle- en MS SQL-databases, vervangt u de volgende tabelnamen in de opdrachten:
+>De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer het runnen van deze bevelen op Oracle en SQL gegevensbestanden van MS, vervang de volgende lijstnamen in de bevelen:
 >
 >* `EdcPrincipalLocalAccountEntity` vervangen door `EdcPrincipalLocalAccount`
    >

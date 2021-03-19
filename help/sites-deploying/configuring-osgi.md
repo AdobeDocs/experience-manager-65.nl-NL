@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
@@ -130,7 +131,7 @@ Deze kunnen in inhoudspakketten worden opgenomen en op andere instanties worden 
 
 De console van het Web toont geen aanwijzing van waar in de bewaarplaats uw veranderingen zijn bewaard, maar zij kunnen gemakkelijk worden gevestigd:
 
-1. Maak het configuratiebestand door een eerste wijziging aan te brengen in de webconsole[.](#osgi-configuration-with-the-web-console)
+1. Maak het configuratiebestand door een eerste wijziging aan te brengen in de webconsole](#osgi-configuration-with-the-web-console).[
 1. Open CRXDE Lite.
 1. Selecteer in het menu **Extra** **Query..** .
 1. Verzend een vraag van **Type** `SQL` om naar PID van de configuratie te zoeken die u hebt bijgewerkt.

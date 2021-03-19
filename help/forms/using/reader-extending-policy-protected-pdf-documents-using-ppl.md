@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
+feature: Documentbeveiliging
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ De documenten die met een beleid zijn beveiligd, zijn versleutelde documenten. U
 
 ### Reader Extensions-service {#reader-extensions-service}
 
-De lezer-extensieservice voegt gebruiksrechten toe aan een PDF-document dat met een beleid is beveiligd. Functies die normaal niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Acrobat-Reader, worden geactiveerd. Het heeft ook APIs om gebruiksrechten van een beleid-beschermd document te verwijderen en terug te winnen.
+De lezer-extensieservice voegt gebruiksrechten toe aan een PDF-document dat met een beleid is beveiligd. Functies die normaal gesproken niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Acrobat-Reader, worden geactiveerd. Het heeft ook APIs om gebruiksrechten van een beleid-beschermd document te verwijderen en terug te winnen.
 
 De service Reader Extensions biedt volledige ondersteuning voor PDF-documenten die zijn gebaseerd op PDF-standaard 1.6 en hoger. Behalve Acrobat Reader hebben gebruikers van derden geen extra software of plug-ins nodig om de met een beleid beveiligde PDF-documenten te kunnen gebruiken.
 

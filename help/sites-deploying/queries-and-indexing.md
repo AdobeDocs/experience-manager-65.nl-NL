@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: b01f6d3726fd6aa06ffedaf10dfde9526479a2a3
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2880'
+source-wordcount: '2881'
 ht-degree: 0%
 
 ---
@@ -334,7 +335,7 @@ AEM kan ook worden geconfigureerd om met een externe Solr-serverinstantie te wer
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
-1. Zoek de voorbeeldinstantie in het Solr-pakket. De map bevindt zich gewoonlijk in de map `example` in de hoofdmap van het pakket.
+1. Zoek de voorbeeldinstantie in het Solr-pakket. De map bevindt zich gewoonlijk in de hoofdmap van het pakket. Deze map wordt &quot; `example`&quot; genoemd.
 1. Kopieer de volgende mappen van de voorbeeldinstantie naar de twee gedeelde mappen ( `aemsolr1\node1` en `aemsolr2\node2`):
 
    * `contexts`

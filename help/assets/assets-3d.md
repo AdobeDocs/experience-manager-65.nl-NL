@@ -1,38 +1,40 @@
 ---
-title: Werken met 3D-elementen in dynamische media
-seo-title: Werken met 3D-elementen in dynamische media
+title: Werken met 3D-elementen in Dynamic Media
+seo-title: Werken met 3D-elementen in Dynamic Media
 description: Leer hoe u met 3D-middelen werkt in Dynamic Media
 seo-description: Leer hoe u met 3D-middelen werkt in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
+feature: 3D-middelen, beheer van bedrijfsmiddelen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2241'
+source-wordcount: '2248'
 ht-degree: 2%
 
 ---
 
 
-# Werken met 3D-elementen in dynamische media {#working-with-three-d-assets-dm}
+# Werken met 3D-elementen in Dynamic Media {#working-with-three-d-assets-dm}
 
-Met dynamische media kunt u 3D-elementen uploaden, beheren, weergeven en leveren als indrukwekkende ervaringen.
+Met Dynamic Media kunt u 3D-middelen uploaden, beheren, weergeven en leveren als een indrukwekkende ervaring.
 
 * Klik met één klik op het publiceren van 3D-elementen (met **[!UICONTROL Quick Publish]** op de werkbalk) om een URL te genereren.
 * Geoptimaliseerde ondersteuning voor het weergeven van 3D-middelen met de voorinstelling voor interactieve maatviewer van hoge kwaliteit, aangedreven door Adobe Dimension.
 * Met de 3D Media WCM-component kunt u eenvoudig 3D-elementen toevoegen aan uw AEM Sites-pagina&#39;s.
 
-Er is geen aanvullende configuratie vereist voor het gebruik van 3D-elementen in dynamische media.
+Er is geen aanvullende configuratie vereist voor het gebruik van 3D-elementen in Dynamic Media.
 
 ![schoen in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
-## 3D-indelingen die worden ondersteund in dynamische media {#supported-three-d-file-formats-in-dm}
+## 3D-indelingen ondersteund in Dynamic Media {#supported-three-d-file-formats-in-dm}
 
-Dynamische media ondersteunt de volgende 3D-indelingen.
+Dynamic Media ondersteunt de volgende 3D-indelingen.
 
 Zie ook [Ondersteunde 3D-indelingen.](/help/assets/assets-formats.md)
 
@@ -43,21 +45,21 @@ Zie ook [Ondersteunde 3D-indelingen.](/help/assets/assets-formats.md)
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari- en iOS-apparaten kan worden weergegeven. |
 
-## Snel starten: 3D-elementen in dynamische media {#quick-start-three-d}
+## Snel starten: 3D-elementen in Dynamic Media {#quick-start-three-d}
 
-De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met 3D-middelen in de modus Dynamische media - Scene7.
+De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met 3D-middelen in de Dynamic Media-Scene7-modus.
 
 >[!NOTE]
 >
->3D-elementen worden niet ondersteund in de modus Dynamische media - Hybride.
+>3D-elementen worden niet ondersteund in de Dynamic Media-hybride modus.
 
-Voordat u met 3D-elementen werkt in Dynamische media, moet u controleren of de AEM beheerder Dynamische media-Cloud Services al heeft ingeschakeld en geconfigureerd in de modus Dynamische media - Scene7.
+Voordat u in Dynamic Media met 3D-middelen gaat werken, moet u controleren of uw AEM Dynamic Media-Cloud Services al in de Dynamic Media - Scene7-modus heeft ingeschakeld en geconfigureerd.
 
-Zie [Dynamische media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Dynamische media configureren - Scene7-modus en [Problemen met dynamische media oplossen - Scene7-modus.](/help/assets/troubleshoot-dms7.md)
+Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in de modus Dynamic Media configureren - Scene7 en [Problemen oplossen in de modus Dynamic Media - Scene7.](/help/assets/troubleshoot-dms7.md)
 
 1. **3D-elementen uploaden**
 
-   * [3D-elementen uploaden voor gebruik in dynamische media](/help/assets/manage-assets.md#uploading-assets).
+   * [3D-elementen uploaden voor gebruik in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
    * [Ondersteunde 3D-bestandsindelingen voor uploaden in Dynamic Media](#supported-three-d-file-formats-in-dm).
 
 1. **3D-middelen beheren**
@@ -80,8 +82,8 @@ Zie [Dynamische media-Cloud Services configureren](/help/assets/config-dms7.md#c
 
 1. **3D-elementen publiceren**
 
-   * [Statische dynamische media 3D-elementen publiceren](#publishing-three-d-assets)
-   * [Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met behulp van de Dimensional-viewer](#alternate-publish-methods)
+   * [Statische Dynamic Media 3D-elementen publiceren](#publishing-three-d-assets)
+   * [Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met de Dimensional-viewer](#alternate-publish-methods)
 
 ## Informatie over het weergeven van en communiceren met 3D-elementen {#viewing-three-d-assets}
 
@@ -111,7 +113,7 @@ Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/asset
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar AEM.
 
-   Zie [Uw 3D-elementen uploaden voor gebruik in dynamische media.](/help/assets/manage-assets.md#uploading-assets)
+   Zie [Uw 3D-elementen uploaden voor gebruik in Dynamic Media.](/help/assets/manage-assets.md#uploading-assets)
 
 1. Tik vanaf AEM op de pagina **[!UICONTROL Navigation]** op **[!UICONTROL Assets > Files.]**
 1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL Card View.]**
@@ -197,13 +199,13 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u in AEM Sites kunt
 1. Blader in de sectie **[!UICONTROL Properties]** onder de tab **[!UICONTROL Allowed Components]** naar **[!UICONTROL Dynamic Media]**, vouw vervolgens de lijst uit en controleer **[!UICONTROL 3D Media.]**
 1. Tik **[!UICONTROL Done]** om de wijzigingen op te slaan en **[!UICONTROL Policy Editor.]** te sluiten
 
-   U kunt de component Dynamische media 3D Media nu op alle pagina&#39;s plaatsen die dit malplaatje gebruiken.
+   U kunt de Dynamic Media 3D Media-component nu op alle pagina&#39;s plaatsen die deze sjabloon gebruiken.
 
 ## De 3D-mediacomponent toevoegen aan een webpagina {#adding-the-three-d-media-component-to-a-web-page}
 
 Als u Adobe Experience Manager gebruikt als het webcontentbeheersysteem, kunt u 3D-elementen aan uw webpagina&#39;s toevoegen met behulp van de 3D Media-component.
 
-Zie ook [Dynamische media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 1. Open AEM Sites en selecteer de webpagina waaraan u de Dynamic Media 3D Media-component wilt toevoegen.
 1. Tik op het pictogram **[!UICONTROL Edit]** (potlood) om de pagina in de paginaeditor te openen. Zorg ervoor dat de modus **[!UICONTROL Edit]** rechtsboven op de pagina is geselecteerd.
@@ -252,21 +254,21 @@ Zie [De 3D-mediacomponent toevoegen aan een webpagina.](#adding-the-three-d-medi
 >
 >In de AEM Sites-modus **[!UICONTROL Edit]** wordt het 3D-element weergegeven in de 3D-mediacomponent, maar interactie met het element is niet mogelijk. Als u het element interactief wilt maken, kunt u de functie **[!UICONTROL Preview]** gebruiken om de webpagina in de pagina-editor weer te geven met volledige toegang tot de functionaliteit van de 3D Media-component.
 
-## Statische dynamische media 3D-elementen publiceren {#publishing-three-d-assets}
+## Statische Dynamic Media 3D-elementen publiceren {#publishing-three-d-assets}
 
-Dynamische media accepteert verschillende 3D-bestandsindelingen die worden ondersteund als *statische inhoud* in dynamische media. Statische inhoud houdt in dat u 3D-elementen kunt uploaden en publiceren, maar dat er geen ondersteuning is voor *dynamic*-beeldbewerking of het vernieuwen van afbeeldingen die aan het 3D-element zijn gekoppeld. De reden hiervoor is dat Dynamic Media Imaging Server 3D-indelingen niet herkent. Nadat u een 3D-element hebt gepubliceerd in dynamische media, hebt u dus een directe URL die u kunt kopiëren. De URL voor het 3D-element volgt de gebruikelijke URL-structuur voor dynamische media. In tegenstelling tot traditionele afbeeldingselementen in Dynamic Media kunt u echter geen parameters in de URL van het element bewerken.
+Dynamic Media accepteert verschillende 3D-bestandsindelingen die worden ondersteund als *statische inhoud* in Dynamic Media. Statische inhoud houdt in dat u 3D-elementen kunt uploaden en publiceren, maar dat er geen ondersteuning is voor *dynamic*-beeldbewerking of het vernieuwen van afbeeldingen die aan het 3D-element zijn gekoppeld. De reden hiervoor is dat Dynamic Media Imaging Server 3D-indelingen niet herkent. Nadat u een 3D-element hebt gepubliceerd in Dynamic Media, hebt u dus een directe URL die u kunt kopiëren. De URL voor het 3D-element volgt de gebruikelijke URL-structuur van Dynamic Media. In tegenstelling tot traditionele afbeeldingselementen in Dynamic Media kunt u echter geen parameters in de URL van het element bewerken.
 
 Zie ook [Een URL verkrijgen voor een statisch element.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset)
 
 In **[!UICONTROL Card View]** verschijnt een klein globpictogram direct onder de naam van een element en links van zijn datum en tijd om erop te wijzen dat het wordt gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
-Als u AEM als WCM gebruikt, gebruikt u deze publicatiemethode om de Dynamic Media 3D-elementen rechtstreeks op uw webpagina toe te voegen.
+Als u AEM gebruikt als uw WCM, gebruikt u deze publicatiemethode om de Dynamic Media 3D-elementen rechtstreeks op uw webpagina toe te voegen.
 
-Zie ook [Dynamische media-elementen publiceren.](publishing-dynamicmedia-assets.md)
+Zie ook [Dynamic Media-elementen publiceren.](publishing-dynamicmedia-assets.md)
 
 Zie ook [Pagina&#39;s publiceren.](/help/sites-authoring/publishing-pages.md)
 
-**Statische dynamische media 3D-elementen publiceren**
+**Statische Dynamic Media 3D-elementen publiceren**
 
 1. Open een 3D-element (GLB-, OBJ- of STL-bestandsindeling) om dit weer te geven op de pagina met elementdetails.
 1. Tik op **[!UICONTROL Quick Publish.]** op de werkbalk
@@ -280,21 +282,21 @@ Zie ook [Pagina&#39;s publiceren.](/help/sites-authoring/publishing-pages.md)
 
 1. Tik **[!UICONTROL original.]** Als een 3D-element wordt gepubliceerd (of &quot;geactiveerd&quot;) op de knop **[!UICONTROL URL]** in de linkerbenedenhoek van de pagina als aan alle volgende 3D-elementvoorwaarden wordt voldaan:
    * Het 3D-element heeft een ondersteunde indeling (GLB, OBJ, STL en USDZ).
-   * Het 3D element werd opgenomen in het Dynamische Systeem van de Productie van het Beeld van Media (IPS).
+   * Het 3D-element is opgenomen in het Dynamic Media Image Production System (IPS).
    * Het 3D-element wordt gepubliceerd.
 
    ![3d-asset-url](/help/assets/assets-dm/3d-asset-url.png)
 
 1. Tik **[!UICONTROL URL]** om de directe productie-URL van het 3D-element weer te geven, die u kunt kopiëren en gebruiken op webpagina&#39;s.
 
-### Alternatieve methoden voor het publiceren van dynamische media 3D-elementen met behulp van de Dimensional-viewer {#alternate-publish-methods}
+### Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met de Dimensional-viewer {#alternate-publish-methods}
 
 Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-elementen als u *geen* bent en AEM gebruikt als uw WCM.
 
-* **[!UICONTROL URL]** - Gebruik deze optie  **[!UICONTROL URL]** als u een systeem voor webcontentbeheer van derden gebruikt en u dynamische media 3D-elementen wilt koppelen aan uw webpagina&#39;s met de DIMM-viewer.
+* **[!UICONTROL URL]** - Gebruik deze optie  **[!UICONTROL URL]** als u een systeem voor webcontentbeheer van derden gebruikt en u Dynamic Media 3D-middelen wilt koppelen aan uw webpagina&#39;s met de DIMM-viewer.
 
    Zie [URL&#39;s koppelen aan uw webtoepassing.](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset)
 
-* **[!UICONTROL Embed]** - Gebruik deze optie  **[!UICONTROL Embed]** als u een dynamisch Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
+* **[!UICONTROL Embed]** - Gebruik deze optie  **[!UICONTROL Embed]** als u een Dynamic Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
 
-   Zie [De dynamische mediavideo, de afbeeldingsviewer of de dimensionale viewer insluiten op een webpagina.](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)
+   Zie [De Dynamic Media-video, afbeeldingsviewer of dimensionale viewer insluiten op een webpagina.](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page)

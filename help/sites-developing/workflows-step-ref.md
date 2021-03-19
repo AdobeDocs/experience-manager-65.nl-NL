@@ -1,7 +1,7 @@
 ---
 title: Referentie workflowstap
 seo-title: Referentie workflowstap
-description: 'null'
+description: Referentie workflowstap
 seo-description: 'null'
 uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3286'
+source-wordcount: '3288'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ U kunt kiezen tussen: **Uit**, **Direct**, **1h**, **6h**, **12h**, **24h**.
 
 * **Handler Advance**
 
-   Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
 
 ### Step Properties - User/Group tab {#step-properties-user-group-tab}
 
@@ -182,7 +182,7 @@ U kunt ook simuleren voor lijn gebruikend de Definitie van de Regel als verplett
 
 ![Een lus for simuleren](assets/variable_use_case_count_new.png)
 
-In **Goto Step**, gebruik **Reeks Variabele** als **Stap** en &lt;a6/>telling &lt; 5 **als verpletterende uitdrukking.**
+In **Goto Step**, gebruik **Reeks Variabele** als **Stap** en **telling &lt; 5** als verpletterende uitdrukking.
 
 ![Voorwaarde voor het simuleren van een lus for](assets/variable_use_case_count1_new.png)
 
@@ -589,7 +589,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * De standaard ECMAScripts en OSGi diensten, zie [Ingebouwde Processen voor de Stappen van het Proces](/help/sites-developing/workflows-process-ref.md).
       * Creërend ECMAScripts voor een stap van het Proces, zie [Implementerend een Stap van het Proces met ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creërend de diensten OSGi voor een stap van het Proces, zie [Implementerend een Stap van het Proces met een Klasse van Java](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
-   * **Handler Advance**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   * **Handler Advance**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **Argumenten**: Argumenten die aan het proces moeten worden doorgegeven.
 
 

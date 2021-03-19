@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '7276'
+source-wordcount: '7278'
 ht-degree: 0%
 
 ---
@@ -383,7 +384,7 @@ Overdrachtsfuncties worden gebruikt voor artistieke effecten en voor het aanpass
 
 **Wanneer overdrachtsfuncties worden gevonden:** bepaalt wat moet worden gedaan wanneer overdrachtsfuncties worden gevonden:
 
-**Behouden:** behoudt de overdrachtsfuncties die traditioneel worden gebruikt om de puntverbreding of puntversmalling te compenseren die kunnen optreden wanneer een afbeelding naar film wordt overgezet. Er treedt puntverbreding op wanneer de inktstippen waaruit een afgedrukte afbeelding bestaat groter zijn (bijvoorbeeld door spreiding op papier) dan in het halftoonraster; puntverlies treedt op wanneer de punten kleiner worden afgedrukt. Met deze optie worden de overdrachtsfuncties als onderdeel van het bestand bewaard en op het bestand toegepast wanneer het bestand wordt uitgevoerd.
+**Behouden:** behoudt de overdrachtsfuncties die traditioneel worden gebruikt om de puntverbreding of puntversmalling te compenseren die kunnen optreden wanneer een afbeelding naar film wordt overgezet. Er treedt puntverbreding op wanneer de inktstippen waaruit een afgedrukte afbeelding bestaat, groter zijn (bijvoorbeeld door spreiding op papier) dan in het halftoonraster. puntverlies treedt op wanneer de punten kleiner worden afgedrukt. Met deze optie worden de overdrachtsfuncties als onderdeel van het bestand bewaard en op het bestand toegepast wanneer het bestand wordt uitgevoerd.
 
 **Toepassen:** Behoudt de overdrachtsfunctie niet, maar past deze toe op het bestand, dat de kleuren in het bestand wijzigt. Deze optie is handig voor het maken van kleureffecten in een bestand. Deze optie is standaard geselecteerd voor nieuwe instellingen.
 
@@ -415,7 +416,7 @@ Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScri
 
 **Overdrukinstellingen behouden:Overdrukinstellingen** blijven behouden in bestanden die naar PDF worden geconverteerd. Overgedrukte kleuren zijn twee of meer inkten die op elkaar worden afgedrukt. Wanneer bijvoorbeeld een cyaan inkt over een gele inkt wordt afgedrukt, is de resulterende overdruk een groene kleur. Zonder overdrukken wordt het onderliggende geel niet afgedrukt, wat resulteert in een cyaan kleur.
 
-**Standaardwaarde voor overdrukken is niet-nul overdrukken:** hiermee voorkomt u dat objecten met overdruk en CMYK-waarden van nul worden afgedrukt op onderliggende CMYK-objecten. Dit effect wordt bereikt door de statusparameter OPM 1 voor afbeeldingen in te voegen in het PDF-bestand, waar de Afdrukoperator SetOverprint zich bevindt.
+**Standaardwaarde voor overdrukken is niet-nul overdrukken:** Hiermee voorkomt u dat objecten met overdruk en CMYK-waarden van nul CMYK-objecten die eronder staan, uitnemen. Dit effect wordt bereikt door de statusparameter OPM 1 voor afbeeldingen in te voegen in het PDF-bestand, waar de Afdrukoperator SetOverprint zich bevindt.
 
 **Adobe PDF-instellingen opslaan in PDF-bestand:** sluit het instellingenbestand in dat wordt gebruikt om het PDF-bestand te maken. U kunt het instellingenbestand (met de bestandsnaamextensie .joboptions) openen en weergeven in het dialoogvenster Bestandsbijlagen in Acrobat. Het Adobe PDF-instellingenbestand wordt een item in de structuur EmbeddedFiles in het PDF-bestand.
 
@@ -535,7 +536,7 @@ De vensteropties bepalen hoe het venster in het schermgebied wordt aangepast wan
 
 **Venster centreren op scherm:** Hiermee plaatst u het venster in het midden van het schermgebied.
 
-**Openen in Volledig scherm:** maximaliseert het documentvenster en geeft het document weer zonder de menubalk, werkbalk of vensteropties.
+**Openen in Volledig scherm:** maximaliseert het documentvenster en geeft het document weer zonder de menubalk, werkbalk of vensterknoppen.
 
 **Tonen:** Bestandsnaam geeft de bestandsnaam weer op de titelbalk van het venster. De documenttitel wordt weergegeven in de titelbalk van het venster.
 

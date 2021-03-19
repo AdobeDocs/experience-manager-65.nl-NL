@@ -7,10 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
+feature: Beheer van bedrijfsmiddelen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 0595d89409e0ca21f771be5c55c3ec9548a8449f
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '326'
 ht-degree: 11%
 
 ---
@@ -40,7 +42,7 @@ Zie ook [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplic
    >
    >De geselecteerde asset *en* de geselecteerde afbeeldings- of viewervoorinstelling moeten worden gepubliceerd om de knoppen **[!UICONTROL URL]** of **[!UICONTROL RESS]** beschikbaar te maken.
    >
-   >Dynamische media - Voor de hybride modus moet u voorinstellingen voor afbeeldingen publiceren. Dynamische media - in de Scene7-modus worden automatisch voorinstellingen voor afbeeldingen gepubliceerd.
+   >Dynamic Media - Voor de hybride modus moet u voorinstellingen voor afbeeldingen publiceren. In de modus Dynamic Media - Scene7 worden automatisch voorinstellingen voor afbeeldingen gepubliceerd.
 
 1. Tik op **[!UICONTROL RESS]**.
 
@@ -49,8 +51,8 @@ Zie ook [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplic
 1. Selecteer en kopieer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardbreekpunten in de insluitcode zodat deze overeenkomen met die van de responsieve website rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
 
-## Het gebruiken van HTTP/2 om uw Dynamische activa van Media {#using-http-to-delivery-your-dynamic-media-assets} te leveren
+## HTTP/2 gebruiken om uw Dynamic Media-middelen {#using-http-to-delivery-your-dynamic-media-assets} te leveren
 
-HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijden biedt.
+HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijd biedt.
 
-Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige details bij het worden begonnen met het gebruiken van HTTP/2 met uw Dynamische rekening van Media.
+Zie [HTTP2 Levering van Inhoud](http2.md) voor volledige informatie over het gaan gebruiken van HTTP/2 met uw Dynamic Media-account.

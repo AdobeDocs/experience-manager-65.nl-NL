@@ -1,8 +1,8 @@
 ---
 title: Problemen met replicatie oplossen
 seo-title: Problemen met replicatie oplossen
-description: Dit artikel verstrekt informatie over hoe te om replicatiekwesties problemen op te lossen.
-seo-description: Dit artikel verstrekt informatie over hoe te om replicatiekwesties problemen op te lossen.
+description: Dit artikel biedt informatie over hoe u problemen met replicatie kunt oplossen.
+seo-description: Dit artikel biedt informatie over hoe u problemen met replicatie kunt oplossen.
 uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 38ef8fc8d80009c8ca79aca9e45cf10bd70e1f1e
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -83,7 +84,7 @@ Soms kan het zeer nuttig zijn om al replicatieregistreren te plaatsen om in een 
    * Pad logbestand: logs/replication.log
    * Categorieën: com.day.cq.replication
 
-1. Als u vermoedt dat het probleem op enige manier te maken heeft met sling-gebeurtenissen/taken, kunt u dit Java-pakket ook toevoegen onder categorieën:org.apache.sling.event
+1. Als u vermoedt dat het probleem op enigerlei wijze te maken heeft met sling, kunt u dit Java-pakket ook toevoegen onder categorieën:org.apache.sling.event
 
 ## Wachtrij van replicatieagent {#pausing-replication-agent-queue} pauzeren
 

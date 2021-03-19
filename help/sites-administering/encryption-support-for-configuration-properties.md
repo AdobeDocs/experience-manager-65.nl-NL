@@ -1,7 +1,7 @@
 ---
 title: Coderingsondersteuning voor configuratieeigenschappen
 seo-title: Coderingsondersteuning voor configuratieeigenschappen
-description: 'null'
+description: Coderingsondersteuning voor configuratieeigenschappen
 seo-description: 'null'
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 1%
+source-wordcount: '283'
+ht-degree: 0%
 
 ---
 

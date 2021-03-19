@@ -7,10 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
+feature: Beheer van bedrijfsmiddelen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 996780c3fac85f0ce0deeddd5ff4e74e01df436e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1830'
 ht-degree: 0%
 
 ---
@@ -174,7 +176,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, vo
 >[!NOTE]
 Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 

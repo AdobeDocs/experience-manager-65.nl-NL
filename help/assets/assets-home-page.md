@@ -2,10 +2,12 @@
 title: '[!DNL Assets] Introductiepagina'
 description: Pas de [!DNL Experience Manager Assets] startpagina aan voor een welkomstscherm, inclusief een momentopname van recente activiteiten rond elementen.
 contentOwner: AG
+feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+role: Beheerder, Business Practiter
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '514'
 ht-degree: 1%
 
 ---

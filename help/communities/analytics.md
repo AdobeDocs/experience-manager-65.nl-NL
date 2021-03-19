@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: ef57d53fc780bd222abbe994fc71e133ce8a77fc
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2743'
 ht-degree: 2%
 
 ---
@@ -146,7 +147,7 @@ Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met bet
 
 ### Video-hartslaganalyse {#video-heartbeat-analytics}
 
-Als er een licentie is voor de functie Videohartslaganalyse, wordt een `Marketing Cloud Org Id` toegewezen.
+Wanneer een licentie wordt gegeven voor de functie Videohartslaganalyse, wordt een `Marketing Cloud Org Id` toegewezen.
 
 Om Video toe te laten hartslagrapportering na [het vormen van de het rapportreeks van Analytics voor video rapportering](#adobe-analytics-report-suite-for-video-reporting):
 

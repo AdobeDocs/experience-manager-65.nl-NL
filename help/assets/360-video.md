@@ -1,6 +1,6 @@
 ---
 title: 360/VR-video
-description: Leer hoe u werkt met 360 en VR-video (Virtual Reality) in dynamische media.
+description: Leer hoe u met 360 en VR-video (Virtual Reality) werkt in Dynamic Media.
 uuid: c21bf2c0-7acc-401f-857e-0186de86e7a1
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
+feature: 360 VR-video
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 0d5ee29141c897284f3f298d921f4f8528216f8f
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -21,7 +23,7 @@ ht-degree: 0%
 
 Bij video&#39;s van 360 graden wordt een weergave in elke richting tegelijkertijd vastgelegd. Ze worden opgenomen met een omnidirectionele camera of een verzameling camera&#39;s. Tijdens het afspelen op een plat beeldscherm heeft de gebruiker controle over de kijkhoek; afspelen op mobiele apparaten maakt doorgaans gebruik van de ingebouwde gyroscopische besturingselementen.
 
-Dynamische media - De Scene7-modus biedt native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.
+De Dynamic Media-Scene7-modus biedt native ondersteuning voor de levering van 360 video-elementen. Standaard is geen aanvullende configuratie nodig voor weergave of afspelen. U levert 360 Video gebruikend standaardvideouitbreidingen zoals .mp4, .mkv, en .mov. De meest algemene codec is H.264.
 
 In deze sectie wordt beschreven hoe u met de 360/VR Video-viewer werkt om equirechthoekige video te renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap, medische procedure, enzovoort.
 
@@ -56,7 +58,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
    Bij het renderen van 360 video-inhoud worden hogere eisen gesteld aan de resolutie van de bronvideo en aan de resolutie van gecodeerde vertoningen dan aan de standaard niet-360 video-inhoud.
 
-   U kunt het uit-van-de-doos Aangepast Videoprofiel gebruiken dat reeds met Dynamische Media wordt geleverd. Houd er echter rekening mee dat dit resulteert in een aanzienlijk lagere videokwaliteit dan bij niet-360-video die is gecodeerd met dezelfde instellingen die worden gerenderd met een niet-360-videoviewer. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
+   U kunt het adaptieve videoprofiel gebruiken dat al bij Dynamic Media wordt geleverd. Houd er echter rekening mee dat dit resulteert in een aanzienlijk lagere videokwaliteit dan bij niet-360-video die is gecodeerd met dezelfde instellingen die worden gerenderd met een niet-360-videoviewer. Ga daarom als volgt te werk als u hoogwaardige 360 video nodig hebt:
 
    * In het ideale geval moet de oorspronkelijke 360 video-inhoud een van de volgende resoluties hebben:
 
@@ -100,7 +102,7 @@ Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
 Zie [Video- of afbeeldingsviewer insluiten op een webpagina.](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html)
 Zie URL&#39;s  [koppelen aan uw webtoepassing](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
-Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
 
 **Een voorvertoning van 360 video&#39;s weergeven**
 
@@ -131,9 +133,9 @@ Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe
 
 ## 360-video {#publishing-video} publiceren
 
-U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de Dynamische wolk van Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
+U moet de 360-video publiceren om deze te kunnen gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie [Dynamische media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360-video.
+Zie [Dynamic Media Assets publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360 Video.
 Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html).
 Zie ook [URL&#39;s koppelen aan uw webtoepassing](https://helpx.adobe.com/experience-manager/6-5/help/assets/linking-urls-to-yourwebapplication.html). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
-Zie ook [Dynamische media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)
+Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s.](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html)

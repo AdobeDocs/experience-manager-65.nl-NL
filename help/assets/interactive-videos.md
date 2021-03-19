@@ -1,6 +1,6 @@
 ---
 title: Interactieve video's
-description: Leer hoe u met interactieve video en shoppable video werkt in Dynamic Media
+description: Leer hoe u in Dynamic Media werkt met interactieve video en schopbare video
 uuid: c3ff6839-fff5-4709-8163-5c4245b80e6d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +8,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
+feature: Interactieve video's
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: ce43c49f8f7d4509e414554b8f4eba368ff66e95
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '6013'
+source-wordcount: '6018'
 ht-degree: 4%
 
 ---
@@ -86,10 +88,10 @@ Voltooi de bewerking door de interactieve video-elementen te publiceren. Bij het
 Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. **Als u een interactieve video toevoegt aan uw website of aan uw website in**
-AEMI, kunt u de interactieve video rechtstreeks toevoegen aan een webpagina in AEM door de component Interactieve media naar de pagina te slepen. Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+AEMI, kunt u de interactieve video rechtstreeks toevoegen aan een webpagina in AEM door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 Gebruik de insluitcode of URL om uw interactieve video te integreren met uw ervaringen op de website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
 Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve video integreren met een bestaande QuickView](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Dynamische media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md)
+   [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 ## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
 
@@ -223,7 +225,7 @@ U kunt deze taak overslaan en verdergaan naar de volgende taak als u van plan be
 
 Wanneer op een miniatuur wordt geklikt in de ontwerpomgeving, wordt een voorbeeld van het dialoogvenster Snelle weergave weergegeven.
 
-![chlimage_1-29](assets/chlimage_1-127.png)
+![chlimage_1-21](assets/chlimage_1-127.png)
 
 U kunt desgewenst uw eigen aangepaste voorinstelling voor een interactieve videoviewer maken. U kunt onder andere de opmaak bepalen van de videospeler, de interactieve miniaturen en de weergave van het miniatuurraster die aan het einde van de video wordt weergegeven.
 
@@ -468,7 +470,7 @@ Om interactiviteit aan uw video toe te voegen:
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-133](assets/chlimage_1-135.png)
+   ![chlimage_1-135](assets/chlimage_1-135.png)
 
    Een geselecteerd tien-secondensegment splitsen in twee segmenten van vijf seconden elk.
 
@@ -502,7 +504,7 @@ Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor 
 
 Nadat u een video hebt geüpload, tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
-Als u een AEM Sites-klant bent, kunt u de interactieve video toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamische media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Als u een AEM Sites-klant bent, kunt u de interactieve video toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
 Als u een zelfstandige AEM Assets-klant bent, kunt u de interactieve video handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
 

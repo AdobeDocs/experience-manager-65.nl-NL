@@ -10,10 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: b8a532f45f531f36e04ff4b5f0cc2c9e729668bb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratievereisten {#migration-prerequisites}
 
-* **Minimaal vereiste Java-versie:** het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Voor AEM 6.3 en hoger zijn Oracle JRE 8 en JRE 7 &amp; 8 van IBM de enige ondersteunde versies.
+* **Minimaal vereiste Java-versie:** het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Voor AEM 6.3 en hoger zijn JRE 8 en JRE 7 &amp; 8 van IBM de enige ondersteunde versies.
 
 * **Bijgewerkte Instantie:** Als u van een versie  **ouder dan 5.6** bevordert, zorg ervoor dat u een op-plaats verbetering aan AEM 6.0 door de procedure hebt uitgevoerd te volgen die in versie 6.0 van de documentatie van de Verbetering wordt beschreven.
 
@@ -178,7 +179,7 @@ Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaa
 
 >[!IMPORTANT]
 >
->Als u Oracle Java 11 uitvoert (of doorgaans versies van Java nieuwer dan 8), moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start. Zie [Java 11 Overwegingen](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
+>Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen AEM. Zie [Java 11 Overwegingen](/help/sites-deploying/custom-standalone-install.md#java-considerations) voor meer informatie.
 
 Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseren wij na deze procedure om het juiste verbeteringsbevel te bepalen:
 

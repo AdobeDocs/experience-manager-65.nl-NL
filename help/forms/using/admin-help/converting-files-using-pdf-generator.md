@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
    * Als u een instellingenbestand uploadt, typt u het pad en de naam in het vak of klikt u op Bladeren om het bestand te zoeken en te selecteren.
 
-1. (Optioneel) Typ onder XMP metagegevensbestand het pad en de naam van het XMP of klik op Bladeren om het bestand te zoeken en te selecteren. Een XMP bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. (Optioneel) Typ onder XMP metagegevensbestand het pad en de naam van het XMP of klik op Bladeren om het bestand te zoeken en te selecteren. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt er een koppeling naar weergegeven. Als tijdens de conversie een fout optreedt, wordt een waarschuwing weergegeven. Als u een Postscript-bestand maakt, bevat de waarschuwing ook een koppeling naar het logbestand.
 1. Klik op de koppeling voor het PDF-bestand. Het bestand wordt geopend in Acrobat.
 
@@ -104,7 +105,7 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
 
 
-1. Als u een XMP wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. Een XMP bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. Als u een XMP wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt een koppeling naar het PDF-bestand weergegeven.
 1. Klik op de koppeling om het PDF-document in Acrobat weer te geven.
 

@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: 12b2b73b6363c90d784527b260d664e48c746496
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2191'
 ht-degree: 0%
 
 ---
@@ -31,9 +32,9 @@ U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf
 
 * Gebruik voor adaptieve formulieren met de [XFA-formuliersjabloon](../../forms/using/prepopulate-adaptive-form-fields.md) de vooraf ingevulde XML-code die compatibel is met het gegevensschema van de XFA-sjabloon.
 * Gebruik voor adaptieve formulieren met [XML-schema](#xml-schema-af) de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
-* Gebruik voor adaptieve formulieren met het JSON-schema[ de Prefill JSON die compatibel is met het JSON-schema.](#json-schema-based-adaptive-forms)
+* Gebruik voor adaptieve formulieren met het JSON-schema](#json-schema-based-adaptive-forms) de Prefill JSON die compatibel is met het JSON-schema.[
 * Gebruik voor adaptieve formulieren met FDM-schema de Prefill JSON die compatibel is met het FDM-schema.
-* Voor adaptieve formulieren zonder formuliermodel[ zijn er geen gebonden gegevens. ](#adaptive-form-with-no-form-model) Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
+* Voor adaptieve formulieren zonder formuliermodel](#adaptive-form-with-no-form-model) zijn er geen gebonden gegevens. [ Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
 
 ### Voorbeeld van vooraf ingevulde XML-structuur {#sample-prefill-xml-structure}
 

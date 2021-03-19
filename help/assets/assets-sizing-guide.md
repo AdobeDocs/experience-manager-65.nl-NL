@@ -2,10 +2,11 @@
 title: '[!DNL Assets] formaatgids'
 description: Aanbevolen werkwijzen om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om  [!DNL Adobe Experience Manager Assets] op te stellen.
 contentOwner: AG
+role: Architect, beheerder
 translation-type: tm+mt
-source-git-commit: 10dae6e9f49e93d2f4923cee754c1d23d9d4b25e
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,9 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
 1. Hiermee wordt een representatieve steekproef opgehaald van de elementen die naar [!DNL Experience Manager] moeten worden geüpload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamische Media uitvoeren, kunt u binair IC gebruiken om de vertoningen te produceren PTIFF die in Experience Manager moeten worden opgeslagen.
+1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
-1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor voor de uitvoering 3.
+1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
 1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als [!DNL Experience Manager] wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
@@ -122,4 +123,4 @@ Het is moeilijk nauwkeurig de grootte te schatten van het TIF dossier dat uit-va
 
 ## Grootte van elementen {#size-of-assets}
 
-Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Zie [!DNL Experience Manager]Configuratie om zeer grote elementen te uploaden[ voor informatie over het uploaden van zeer grote elementen.](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)
+Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Zie [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb) voor informatie over het uploaden van zeer grote elementen.[!DNL Experience Manager]

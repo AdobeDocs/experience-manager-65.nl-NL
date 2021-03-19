@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
+feature: Taalkopie
 translation-type: tm+mt
-source-git-commit: a929252a13f66da8ac3e52aea0655b12bdd1425f
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## Algemeen {#general}
 
-Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw wereldwijde bedrijfsdoelstellingen ondersteunen.
+Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een complex proces zijn, maar met goede voorspelling en goede planning kunnen AEM uw inspanningen vereenvoudigen en uw globale bedrijfsdoelstellingen ondersteunen.
 
 * **Plan voor algemene** uitbreiding voordat u uw eerste site implementeert. Het aanpassen van een bestaande site voor wereldwijde dekking op het moment dat de site op korte termijn werd geïmplementeerd, is doorgaans moeilijker dan aan het begin plannen voor wereldwijde uitbreiding:
 
@@ -54,7 +55,7 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 
    * Sommige LSPs is zowel dienst als technologieleveranciers. Er zijn ook standalone technologieleveranciers die vele LSPs toestaan om aan hun vertaalplatforms deel te nemen.
    * Het **AEM Omzetten Kader** steunt integratie met een verscheidenheid van vertaaltechnologieleveranciers voor zowel machine als menselijke vertaling.
-   * Leer hoe te om LSP schakelaars in uw AEM te integreren [ om inhoudsomzetting te automatiseren, of hoe te manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.](/help/sites-administering/translation.md)
+   * Leer hoe te om LSP schakelaars in uw AEM te integreren ](/help/sites-administering/translation.md) om inhoudsomzetting te automatiseren, of hoe te manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.[
 
 * Kies een **vertaalmethode** die het beste bij de inhoud past.
 

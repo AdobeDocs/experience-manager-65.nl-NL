@@ -8,10 +8,11 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
+feature: Formuliergegevensmodel
 translation-type: tm+mt
-source-git-commit: 19ee2722bc73f67b77cc08dd2a634328ba5269ec
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1846'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
 1. Geef een SQL SELECT-query op in het veld **[!UICONTROL Validation Query]** om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Geef op basis van uw database een van de volgende opties op:
 
    * SELECT 1 (MySQL en MS SQL)
-   * SELECTEER 1 vanuit dual (Oracle)
+   * SELECTEER 1 uit twee items (Oracle)
 
 1. Tik **[!UICONTROL Save]** om de configuratie op te slaan.
 

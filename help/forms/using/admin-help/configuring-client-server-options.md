@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
+feature: Documentbeveiliging
 translation-type: tm+mt
-source-git-commit: 998a127ce00c6cbb3db3a81d8a89d97ab9ef7469
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '10273'
+source-wordcount: '10275'
 ht-degree: 0%
 
 ---
@@ -164,7 +165,7 @@ In het volgende voorbeeld, is Key1 de ouder van de twee belangrijkste sleutels, 
 
 **De frequentie voor sleutelrollover wijzigen**
 
-Als u offlinedocumenten gebruikt, biedt documentbeveiliging u uit vertrouwelijkheidsoverwegingen een automatische sleutelrolloveroptie met een standaardfrequentieperiode van 20 dagen. U kunt de rollover-frequentie wijzigen. Zorg er echter voor dat de waarde lager is dan 14 dagen, omdat mensen mogelijk geen offlinedocumenten kunnen bekijken en dat de systeemprestaties mogelijk worden beïnvloed.
+Wanneer u offlinedocumenten gebruikt, biedt documentbeveiliging om redenen van vertrouwelijkheid een automatische rolloveroptie met een standaardfrequentieperiode van 20 dagen. U kunt de rollover-frequentie wijzigen. Zorg er echter voor dat de waarde lager is dan 14 dagen, omdat mensen mogelijk geen offlinedocumenten kunnen bekijken en dat de systeemprestaties mogelijk worden beïnvloed.
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > Zeer belangrijk Beheer.
 1. Typ in het vak Frequentie sleutelrollover het aantal dagen voor de rolloverperiode.
@@ -641,7 +642,7 @@ De volgende instellingen bevinden zich in het gedeelte Invitation Email Configur
 
 **Time-out:** Het aantal dagen waarna de registratieuitnodiging verloopt als de externe gebruiker zich niet registreert. De standaardwaarde is 30 dagen.
 
-**Bericht:** De tekst die in het lichaam van het bericht verschijnt waarin de gebruiker wordt uitgenodigd om zich te registreren.
+**Bericht:** De tekst die in het lichaam van het bericht verschijnt uitnodigend de gebruiker om zich te registreren.
 
 ### E-mailinstellingen voor activering {#activation-email-settings}
 

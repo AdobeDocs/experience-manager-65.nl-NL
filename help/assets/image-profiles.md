@@ -7,10 +7,12 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
+feature: Afbeeldingsprofielen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2679'
 ht-degree: 6%
 
 ---
@@ -279,7 +281,7 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 ## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
-Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een afbeeldingsprofiel verwijderen uit een map in het menu **[!UICONTROL Tools]** of als u in de map bent, in **[!UICONTROL Properties.]** In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
 

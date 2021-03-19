@@ -6,10 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+feature-set: Experience Manager Sites
+feature: Ontwikkeling
+role: Developer
 translation-type: tm+mt
-source-git-commit: fa2002950bbfb902db8c98a418b3a3d9185efea0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '907'
 ht-degree: 6%
 
 ---

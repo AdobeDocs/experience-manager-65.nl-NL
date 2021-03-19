@@ -10,10 +10,11 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 44eb94b917fe88b7c90c29ec7da553e15be391db
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -61,8 +62,8 @@ Op deze manier kunt u een URL- of bronpad invoeren. Klik **Los** of **Kaart** om
 * **Resolver Map**
 IngangenDe lijst van ingangen die door de methodes worden gebruikt ResourceResolver.resolve om URLs aan Middelen in kaart te brengen.
 
-* **Toewijzing van**
-VermeldingenDe lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
+* **Toewijzing**
+van de Wegen van de KaartDe lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
 
 De twee lijsten bevatten verschillende items, waaronder items die door de toepassing(en) als standaardwaarden zijn gedefinieerd. Deze zijn vaak bedoeld om URL&#39;s voor de gebruiker te vereenvoudigen.
 

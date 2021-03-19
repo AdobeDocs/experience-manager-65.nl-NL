@@ -2,10 +2,11 @@
 title: '[!DNL Adobe Camera Raw] ondersteuning.'
 description: Leer hoe te om [!DNL Adobe Camera Raw] steun in [!DNL Adobe Experience Manager Assets] toe te laten.
 contentOwner: AG
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: bccc937c1e1a349ab292a748c3c7b9d0c68b6199
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Afbeeldingen verwerken met Camera Raw {#camera-raw-support}
 
-U kunt de ondersteuning van [!DNL Adobe Camera Raw] inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in [!DNL Adobe Experience Manager Assets] met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
+U kunt de ondersteuning [!DNL Adobe Camera Raw] inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in [!DNL Adobe Experience Manager Assets] met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
 
 >[!NOTE]
 >

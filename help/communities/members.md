@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -212,4 +213,4 @@ Wanneer het werken met leden in de console van de Leden van Gemeenschappen, is h
 
 Als u zich niet hebt aangemeld als `admin`, moet de aangemelde gebruiker lid zijn van de gebruikersgroep `administrators`.
 
-Zie ook [Replication Agents on Author](deploy-communities.md#replication-agents-on-author).
+Zie ook [Replication Agents on Auteur](deploy-communities.md#replication-agents-on-author).

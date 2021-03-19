@@ -2,10 +2,11 @@
 title: Aanbevolen procedures voor het verwerken van de ondersteunde bestandsindelingen
 description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
 contentOwner: AG
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ Adobe raadt u aan [!DNL Adobe InDesign Server] te gebruiken om [!DNL Adobe InDes
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] produceert en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie [Dynamische media configureren](/help/assets/config-dynamic.md) voor meer informatie over het inschakelen van [!DNL Dynamic Media].
+[!DNL Dynamic Media] produceert en levert veelvoudige variaties van rijke inhoud in echt - tijd door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie [Dynamic Media configureren](/help/assets/config-dynamic.md) voor meer informatie over het inschakelen van [!DNL Dynamic Media].
 
 [!DNL Dynamic Media] biedt momenteel ondersteuning voor video&#39;s met maximaal 15 GB aan inhoud per bestand.
 

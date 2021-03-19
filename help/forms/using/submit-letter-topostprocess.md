@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
+feature: Correspondentenbeheer
 translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 1. Geef de gebruikersnaam en het wachtwoord op.
 1. Zorg ervoor dat sun.util.agenda wordt toegevoegd aan Configuratie van de Firewall Deserialization.
 
-   Ga naar Configuratie van de Firewall Deserialization en onder Toegevoegde op lijst van gewenste personen klassen van pakketprefixen, voeg sun.util.agenda toe.
+   Ga naar Configuratie van de Firewall Deserialization en onder Gevoegde op lijst van gewenste personen klassen van pakketprefixen, voeg sun.util.agenda toe.
 
 1. Nu zijn uw servers toegewezen en zijn de postprocessen in AEM Forms op JEE beschikbaar in de AEM gebruikersinterface terwijl het creëren van brieven.
 

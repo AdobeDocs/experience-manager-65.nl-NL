@@ -11,10 +11,11 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 93cb84763cfd77b67a5dd1481caab79337f6e7c4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '3423'
+source-wordcount: '3424'
 ht-degree: 0%
 
 ---
@@ -124,7 +125,7 @@ De details over de verschillende gegevensopslag en configuraties worden hieronde
 
 >[!NOTE]
 >
->Om de Opslag van douaneGegevens toe te laten, moet u ervoor zorgen dat `customBlobStore` aan `true` in het respectieve de configuratiedossier van de Opslag van de Knoop ([segmentknooppuntopslag](/help/sites-deploying/data-store-config.md#segment-node-store) of [document knooppuntopslag](/help/sites-deploying/data-store-config.md#document-node-store)) wordt geplaatst.
+>Om de Opslag van douaneGegevens toe te laten, moet u ervoor zorgen dat `customBlobStore` aan `true` in het respectieve de configuratiedossier van de Opslag van de Knoop ([segment knoopopslag](/help/sites-deploying/data-store-config.md#segment-node-store) of [document knooppuntopslag](/help/sites-deploying/data-store-config.md#document-node-store)) wordt geplaatst.
 
 ### Bestandsgegevensopslag {#file-data-store}
 
@@ -287,7 +288,7 @@ Het lokale geheime voorgeheugen zal op het verslag van het gevraagde dossier/blo
 
 **Asynchroon uploaden**
 
-De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van het opvoeringsgeheime voorgeheugen. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door de `stagingSplitPercentage` parameter te gebruiken. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van de opvoercache. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door de `stagingSplitPercentage` parameter te gebruiken. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) *`cacheSize`**.
 
 De asynchrone uploads zijn multi-threaded en het aantal draden wordt gevormd door de `uploadThreads` parameter te gebruiken.
 

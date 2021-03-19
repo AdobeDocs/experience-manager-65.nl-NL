@@ -2,16 +2,17 @@
 title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 9fc1201db83ae0d3bb902d4dc3ab6d78cc1dc251
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
 
 
-# Beeldtransformatiebibliotheek {#imaging-transcoding-library}
+# Afbeeldingstransformatiebibliotheek {#imaging-transcoding-library}
 
 Imaging Transcoding Library is een oplossing voor imaging-verwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals:
 
@@ -105,7 +106,7 @@ Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wi
 
 Werk de [!UICONTROL DAM Update Asset]-workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 
-1. Selecteer [!DNL Experience Manager] > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** in &lt;a0/> gebruikersinterface.**[!UICONTROL Tools]**
+1. Selecteer [!DNL Experience Manager] > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** in **[!UICONTROL Tools]** gebruikersinterface.
 
 1. Open op de pagina **[!UICONTROL Workflow Models]** het workflowmodel **[!UICONTROL DAM Update Asset]** in de bewerkingsmodus.
 

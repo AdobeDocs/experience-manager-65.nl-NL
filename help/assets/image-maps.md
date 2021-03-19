@@ -2,10 +2,11 @@
 title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u afbeeldingen met hyperlinks aan een afbeelding kunt toevoegen.
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 5069c2cd26e84866d72a61d36de085dadd556cdd
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -45,4 +46,4 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Als de optie Dynamische media is ingeschakeld, navigeert u naar de Asset-editor en klikt u op **[!UICONTROL Map]** om alle toegepaste afbeeldingen met hyperlinks weer te geven.
+   Als de optie Dynamic Media is ingeschakeld, navigeert u naar de Asset Editor en klikt u op **[!UICONTROL Map]** om alle toegepaste afbeeldingen met hyperlinks weer te geven.

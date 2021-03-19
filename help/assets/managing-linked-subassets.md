@@ -2,10 +2,11 @@
 title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 12c56c27c7f97f1029c757ec6d28f482516149d0
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # Samengestelde elementen en elementen van meerdere pagina&#39;s beheren {#managing-compound-assets}
 
-[!DNL Adobe Experience Manager Assets] kan vaststellen of een geüpload bestand verwijzingen bevat naar elementen die al in de opslagplaats bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar [!DNL Experience Manager] elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de gerefereerde elementen.
+[!DNL Adobe Experience Manager Assets] kan vaststellen of een geüpload bestand verwijzingen bevat naar elementen die al in de opslagplaats bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar [!DNL Experience Manager] elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de items waarnaar wordt verwezen.
 
 Naast het elimineren van overtolligheid, het van verwijzingen voorzien van de activa in [!DNL Adobe Creative Cloud] toepassingen verbetert samenwerking en verhoogt de efficiency en de productiviteit van gebruikers.
 
@@ -48,7 +49,7 @@ U kunt naar bestaande digitale elementen verwijzen vanuit een [!DNL Adobe Illust
 
 Als u vanuit een [!DNL InDesign]-bestand naar digitale elementen wilt verwijzen, sleept u elementen naar het [!DNL InDesign]-bestand of exporteert u het [!DNL InDesign]-bestand als een ZIP-archief.
 
-Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets]. U kunt subassets extraheren door InDesign Server[ te configureren. ](indesign.md) Ingesloten elementen in een [!DNL InDesign]-bestand worden geëxtraheerd als subelementen.
+Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets]. U kunt subassets extraheren door InDesign Server](indesign.md) te configureren. [ Ingesloten elementen in een [!DNL InDesign]-bestand worden geëxtraheerd als subelementen.
 
 >[!NOTE]
 >

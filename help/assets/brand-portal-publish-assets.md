@@ -10,10 +10,12 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
+feature: Brand Portal
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 4c00385984a0ac315a60c768cb517832ab4289b4
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '333'
 ht-degree: 45%
 
 ---
@@ -59,7 +61,7 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
 1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
 
-1. Selecteer **[!UICONTROL Manage Publication]** op &lt;a0/> pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
+1. Selecteer **[!UICONTROL Manage Publication]** op  pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 

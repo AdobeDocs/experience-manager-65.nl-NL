@@ -2,10 +2,11 @@
 title: Aanbevolen procedures voor het bewaken van [!DNL Assets] implementatie
 description: Beste praktijken om het milieu en de prestaties van uw  [!DNL Adobe Experience Manager] plaatsing te controleren nadat het wordt opgesteld.
 contentOwner: AG
+role: Beheerder, architect
 translation-type: tm+mt
-source-git-commit: b14b377e52ab10c41355f069d97508b588d82216
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 
 * [IFP](https://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Als u op de meeste Linux-systemen `yum install iftop` of `apt-get install iftop` wilt installeren.
 
-* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij kunt gebruiken in niet-productiemilieu&#39;s. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
+* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in non-production milieu&#39;s kunt gebruiken. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
 * [!DNL Experience Manager] `error.log` bestand: U kunt het  [!DNL Experience Manager] `error.log` bestand onderzoeken op details van fouten die in het systeem zijn aangemeld. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren om te onderzoeken.
 * [Workflowconsole](/help/sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
@@ -109,7 +110,7 @@ Threads
 
 **Monitor[!DNL Experience Manager]**
 
-[!DNL Experience Manager] stelt ook een reeks statistieken en verrichtingen door JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie [documentatie](/help/sites-administering/jmx-console.md) op [!DNL Experience Manager] JMX MBans voor meer informatie.
+[!DNL Experience Manager] stelt ook een reeks statistieken en verrichtingen via JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie [documentatie](/help/sites-administering/jmx-console.md) op [!DNL Experience Manager] JMX MBans voor meer informatie.
 
 Hier volgen enkele basislijnparameters die u kunt controleren voor [!DNL Experience Manager]:
 

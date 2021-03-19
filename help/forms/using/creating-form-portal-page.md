@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
+feature: Forms Portal
 translation-type: tm+mt
-source-git-commit: 13cc8ba8fda8fa0e5fac6bb92d1d4fc4849492eb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -246,7 +247,7 @@ Onderdeel Zoeken en bibliotheken
 
 U kunt een pagina voor een portal Formulieren aanpassen om de pagina een andere weergave te geven. U kunt ook metagegevens toevoegen om de zoekervaring te verbeteren, de lay-out van de pagina te wijzigen en aangepaste CSS-stijlen toe te voegen. Zie [Sjablonen aanpassen voor Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md) voor meer informatie.
 
-Met de gebruikersinterface van AEM Forms kunt u aangepaste metagegevens toevoegen aan formulieren. Aangepaste metagegevens zijn handig voor het aanbieden van lijsten en het zoeken in formulieren voor eindgebruikers. Zie [Sjablonen aanpassen voor Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md) voor meer informatie over aangepaste metagegevens.
+Met de gebruikersinterface van AEM Forms kunt u aangepaste metagegevens toevoegen aan formulieren. Aangepaste metagegevens zijn handig voor het weergeven van lijsten en het zoeken in formulieren voor eindgebruikers. Zie [Sjablonen aanpassen voor Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md) voor meer informatie over aangepaste metagegevens.
 
 Het portal Formulieren biedt renderacties. U kunt de portal Formulieren aanpassen om meer acties toe te voegen. Zie [Aangepaste handeling toevoegen aan formulierlisteritems voor gedetailleerde informatie.](../../forms/using/add-custom-action-form-lister.md)
 

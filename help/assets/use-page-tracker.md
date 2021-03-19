@@ -2,10 +2,11 @@
 title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u JavaScript-codes in uw websitecode kunt opnemen in Paginanummering en hoe u JavaScript-codes kunt insluiten om Adobe Analytics in staat te stellen gebruiksgegevens vast te leggen rond elementen.
 contentOwner: AG
+role: Architect, beheerder
 translation-type: tm+mt
-source-git-commit: fc433851c24f9049e7ba6dfada24d6e552eb6d05
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---

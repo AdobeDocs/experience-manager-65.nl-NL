@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 14%
 
 ---
@@ -91,7 +92,7 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
 
    Opties voor AEM Forms Designer
 
-1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorvertoning van HTML**.
+1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorbeeld-HTML**.
 
    >[!NOTE]
    >

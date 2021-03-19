@@ -9,10 +9,11 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 54dd71655aeae00bcaa27847f91af07f15faf478
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '7601'
+source-wordcount: '7604'
 ht-degree: 0%
 
 ---

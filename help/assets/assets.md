@@ -2,10 +2,12 @@
 title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Leader, Architect, Business Practitioner
 translation-type: tm+mt
-source-git-commit: b851bfb2758db60e960afd4720d04202934c18bc
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---

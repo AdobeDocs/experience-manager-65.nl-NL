@@ -1,7 +1,7 @@
 ---
 title: Mobiele apps testen
 seo-title: Mobiele apps testen
-description: 'null'
+description: Mobiele apps testen
 seo-description: 'null'
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 Gezien het grote aantal apparaten op de markt en de apparaten die worden vrijgegeven, is het testen van uw Apps uiterst belangrijk geworden. Dit is een gebied waarop functionaliteit en bruikbaarheid lage revisies kunnen opleveren op een App Store, maar één fout kan ertoe leiden dat uw app wordt verwijderd. In uw testplannen en kwaliteitsborging moet zorgvuldig aandacht worden besteed. De volgende koppeling heeft betrekking op veel van de onderwerpen die in het algemeen moeten worden behandeld, zoals het identificeren van uw omgeving, het definiëren van testgevallen, typen tests, veronderstellingen, betrokkenheid van klanten, enz. Ook worden de hulpmiddelen besproken om in de testende inspanning te helpen. De interne hulpmiddelen, zoals [Hobbes](/help/sites-developing/hobbes.md), kunnen met web-based het testen van UI helpen. [Met een stevige ](/help/sites-developing/tough-day.md) Daycan kunt u uw instanties met een gesimuleerde belasting stressen. Als uw testomgeving al ervaring heeft met hulpmiddelen van derden, zoals Selenium, kunnen deze ook worden gebruikt.
 
-Bij het ontwikkelen van een mobiele app zijn er veel nieuwe problemen die specifiek zijn voor apparaten die samen met de traditionele tests moeten worden aangepakt.
+Bij de ontwikkeling van een mobiele app zijn er veel nieuwe problemen die specifiek zijn voor apparaten die samen met de traditionele tests moeten worden aangepakt.
 
 * Functioneel - Voldoet uw app aan alle vereisten?
 * Gebruiksmogelijkheden - Is de toepassing gebruiksvriendelijk en begrijpelijk voor uw klant?
@@ -41,7 +41,7 @@ Deze vragen moeten tijdens uw geautomatiseerde en handmatige tests worden beantw
 
 ## Automatisch testen {#automated-testing}
 
-Er moet enige mate van geautomatiseerde tests worden uitgevoerd om de verschillende schermgrootten, geheugenbeperkingen, invoermethoden en besturingssystemen te bestrijken. Niet alleen bestrijkt het veel testgevallen, maar het kan regressietests versnellen wanneer nieuwe eigenschappen of apparaten worden geïntroduceerd. In het ideale geval moeten uw automatiseringsprogramma&#39;s dubbel werk verminderen of beperken. Gebruik gereedschappen of frameworks zodat uw testwerkzaamheden op alle platforms van toepassing zijn. In het volgende diagram ziet u een vereenvoudigde structuur van een testomgeving voor het testen van gebruikersinterface op internet en voor het testen van mobiele apps. Links in het diagram ziet u een reeks Selenium-knooppunten met browsers. SeleniumGrid kan gemeenschappelijke, web-based tests UI aan om het even welk van deze knopen landbouwbedrijf. De Selenium-hub kan ook verbinding maken met Appium voor het testen van apps voor verschillende platforms. Alleen getoonde simulatoren zijn simulatoren, maar u kunt adb, voor Android- en Xcode-hulpprogramma&#39;s voor iOS-apparaten opnemen. De verbindingen worden verstrekt later in dit document waar u specifieke details voor de vermelde hulpmiddelen kunt vinden.
+Er moet enige mate van geautomatiseerde tests worden uitgevoerd om de verschillende schermgrootten, geheugenbeperkingen, invoermethoden en besturingssystemen te bestrijken. Niet alleen bestrijkt het veel testgevallen, maar het kan regressietests versnellen wanneer nieuwe eigenschappen of apparaten worden geïntroduceerd. Idealiter zouden uw automatiseringsprogramma&#39;s dubbel werk moeten verminderen of beperken. Gebruik gereedschappen of frameworks zodat uw testwerkzaamheden op alle platforms van toepassing zijn. In het volgende diagram ziet u een vereenvoudigde structuur van een testomgeving voor het testen van gebruikersinterface op internet en voor het testen van mobiele apps. Links in het diagram ziet u een reeks Selenium-knooppunten met browsers. SeleniumGrid kan gemeenschappelijke, web-based tests UI aan om het even welk van deze knopen landbouwbedrijf. De Selenium-hub kan ook verbinding maken met Appium voor het testen van apps voor verschillende platforms. Alleen getoonde simulatoren zijn simulatoren, maar u kunt adb, voor Android- en Xcode-hulpprogramma&#39;s voor iOS-apparaten opnemen. De verbindingen worden verstrekt later in dit document waar u specifieke details voor de vermelde hulpmiddelen kunt vinden.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 

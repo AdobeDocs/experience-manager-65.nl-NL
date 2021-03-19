@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---

@@ -2,10 +2,11 @@
 title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] and [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 376bb4496c1e875f8d129dd79d67e3347be726ac
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1572'
 ht-degree: 2%
 
 ---

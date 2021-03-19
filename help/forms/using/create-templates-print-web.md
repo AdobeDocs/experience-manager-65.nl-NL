@@ -8,10 +8,11 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: ce64b148ba96cc64670aaf96c1b201bafa282b98
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
@@ -240,9 +241,9 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in **
    | Naam | Titel | Aantal kolommen |
    |---|---|---|
    | klantgegevens | Klantgegevens | 1 |
-   | billsummary | Bill Summary | 1 |
+   | billsummary | Bill Summary | 3 |
    | samenvattingskosten | Overzicht van heffingen | 2 |
-   | gespecificeerde vraag | Gespecificeerde Vraag | 1 |
+   | gespecificeerde vraag | Gespecificeerde Vraag | 3 |
    | uitbetaling | Nu betalen | 2 |
    | vas | Services voor toegevoegde waarde | 3 |
 

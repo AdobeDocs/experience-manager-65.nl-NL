@@ -2,10 +2,11 @@
 title: Asset tagging configureren met behulp van Smart Content Service
 description: Leer hoe u slimme tags en verbeterde slimme tags configureert in [!DNL Adobe Experience Manager] met de Smart Content Service.
 contentOwner: AG
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 178b1433de1d6b1e20527755414a494d4291935e
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1908'
 ht-degree: 21%
 
 ---

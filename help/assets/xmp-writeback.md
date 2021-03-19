@@ -2,10 +2,11 @@
 title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 7faa6638eff422599450946a257e53970d25189c
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '715'
 ht-degree: 3%
 
 ---
@@ -68,7 +69,7 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
 
 Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de [!DNL Experience Manager] plaatsing stabiliteitskwesties ontmoeten, bijvoorbeeld verstopte observatierijen.
 

@@ -11,10 +11,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -39,7 +40,7 @@ U kunt [upgrade](../../forms/using/upgrade.md) uitvoeren naar de nieuwste versie
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclusief het pakket Compatibiliteit met Correspondentiebeheer) installeren.
 
 Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
 
@@ -95,7 +96,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
 1. Voer de volgende handelingen uit om de migratie uit te voeren:
 
-   * Tik op **Migratie starten** om **assets** te migreren en tik in het volgende scherm op &lt;a2/>Migratie starten&lt;a3/>. De volgende code wordt gemigreerd:
+   * Tik op **Migratie starten** om **assets** te migreren en tik in het volgende scherm op Migratie starten. De volgende code wordt gemigreerd:
 
       * Aangepaste formulieren
       * Documentfragmenten

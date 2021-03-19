@@ -3,10 +3,11 @@ title: Prestaties afstemmen [!DNL Assets].
 description: Suggesties en richtlijnen voor [!DNL Experience Manager] configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van [!DNL Experience Manager Assets] te optimaliseren.
 contentOwner: AG
 mini-toc-levels: 1
+role: Architect, beheerder
 translation-type: tm+mt
-source-git-commit: 0cecf1940136175887802b5ba205c67e61475a59
+source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---

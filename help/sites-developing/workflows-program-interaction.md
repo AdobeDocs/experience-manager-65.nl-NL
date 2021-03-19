@@ -1,7 +1,7 @@
 ---
 title: Programmatische interactie met Workflows
 seo-title: Programmatische interactie met Workflows
-description: 'null'
+description: Programmatische interactie met Workflows
 seo-description: 'null'
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
-source-git-commit: edf7ef93372e44cb71d8eac8712db53f4e45b6cf
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 0%
 
 ---
@@ -405,7 +405,7 @@ De `uri` die in de resultaten wordt getoond kan als instantie `id` in andere bev
 
 ### Hoe te om de Titel van het Werkschema {#how-to-change-the-workflow-title} te veranderen
 
-Als u de **Werkstroomtitel** op het tabblad **Instanties** van de werkstroomconsole wilt wijzigen, verzendt u een `POST`-opdracht:
+Als u de **Werkstroomtitel** op het tabblad **Instanties** van de workflowconsole wilt wijzigen, verzendt u een `POST`-opdracht:
 
 * tot: `http://localhost:4502/etc/workflow/instances/{id}`
 

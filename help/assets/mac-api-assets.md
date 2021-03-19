@@ -2,10 +2,11 @@
 title: '[!DNL Assets] HTTP-API.'
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Developer
 translation-type: tm+mt
-source-git-commit: c3ae4447581d946554d792c68d31b47a6b67d5df
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---

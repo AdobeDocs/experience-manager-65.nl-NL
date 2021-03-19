@@ -1,32 +1,33 @@
 ---
-title: Herstructurering van dynamische opslagplaats voor media in AEM 6.5
-seo-title: Herstructurering van dynamische opslagplaats voor media in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 voor Dynamic Media.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 voor Dynamic Media.
+title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.5
+seo-title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.5
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Dynamic Media.
+seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: d20ddba254c965e1b0c0fc84a482b7e89d4df5cb
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '444'
 ht-degree: 1%
 
 ---
 
 
-# Herstructurering van dynamische opslagplaats van media in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Herstructurering van Dynamic Media-opslagplaats in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de Dynamic Media Solution. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de Dynamic Media-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **Voorafgaand aan toekomstige upgrade**
 
 * [Aangepaste configuraties voor adaptieve videocodering](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
-* [Dynamische media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configuratie van dynamische Cloud Service (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamische media - configuratie YouTube-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Configuratie van Dynamic Media (DM Hybrid)-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Media - Configuratie YouTube-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Dic](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Vóór toekomstige upgrade {#prior-to-upgrade}
@@ -54,7 +55,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Dynamische media (DMS7) Cloud-configuratie {#dynamic-media-dms-cloud-configuration}
+### Dynamic Media (DMS7) Cloud-configuratie {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -71,7 +72,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><p>De klant kan een migratiescript bij deze plaats in werking stellen:<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
-     <li>Start Dynamic Media OSGi-bundel opnieuw.</li>
+     <li>Start de Dynamic Media OSGi-bundel opnieuw.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -81,7 +82,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Configuratie van dynamische Cloud Servicen (DM Hybrid) {#cloudserviceconfiguration}
+### Dynamic Media (DM Hybrid) configuratie Cloud Service {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -104,7 +105,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Dynamische media - configuratie YouTube-Cloud Service {#youtubecloudserviceconfiguration}
+### Dynamic Media - configuratie YouTube-Cloud Service {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>

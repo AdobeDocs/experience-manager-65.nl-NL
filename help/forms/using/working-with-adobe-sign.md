@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
+feature: Adaptive Forms, Adobe Sign
 translation-type: tm+mt
-source-git-commit: fd9ee8e4eb35bd5d303d7bbdd9660a94c54925ff
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3657'
+source-wordcount: '3661'
 ht-degree: 0%
 
 ---
@@ -249,7 +250,7 @@ Nadat [adaptieve formuliereigenschappen voor Adobe sign](../../forms/using/worki
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
    * Wolkhandtekeningen: Onderteken met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) die wordt gehost door een vertrouwde serviceprovider.
-   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met behulp van een smartcard, USB-token of een op een bestand gebaseerde digitale id.
+   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
 

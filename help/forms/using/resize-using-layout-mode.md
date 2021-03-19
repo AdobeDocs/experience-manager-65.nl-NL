@@ -1,10 +1,11 @@
 ---
 title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve formulieren te wijzigen
 description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: 923c31bf67c7ad480ef3c3a1e312b4bd841bac6d
+source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ Selecteer **Layout** in de vervolgkeuzelijst die boven aan de adaptieve interfac
    De werkbalk die wordt weergegeven nadat u op componenten hebt getikt, bestaat uit de volgende opties:
 
    * **[!UICONTROL Parent]**: Selecteer het bovenliggende element van een component.
-   * **[!UICONTROL Revert breakpoint layout]**: Alle wijzigingen in de grootte ongedaan maken en de standaardlay-out toepassen op de component.
+   * **[!UICONTROL Revert breakpoint layout]**: Alle wijzigingen in het formaat ongedaan maken en standaardlay-out toepassen op de component.
    * **[!UICONTROL Float to new line]**: Verplaats de component naar de volgende regel als er meerdere componenten binnen dezelfde regel zijn.
 
    U kunt ook de optie **[!UICONTROL Revert breakpoint layout]** ( ![Onderbrekingspunt terugkeren](assets/reverttopreviouslypublishedversion.png)) op deelvensterniveau gebruiken om alle wijzigingen in de grootte ongedaan te maken.

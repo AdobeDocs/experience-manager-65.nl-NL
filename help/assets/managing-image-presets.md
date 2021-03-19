@@ -9,10 +9,12 @@ content-type: reference
 discoiquuid: cc1111c4-6e24-4570-9ac7-97c25cf24ede
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
+feature: Voorinstellingen afbeelding
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3688'
 ht-degree: 8%
 
 ---
@@ -104,7 +106,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 
 U hebt toegang tot `Rasterize PDF/AI Image Preview Rendition` opties voor procescomponenten via de `DAM Update Asset` workflow.
 
-Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools > Workflow > Models.]** Op de pagina Workflowmodellen en selecteer **[!UICONTROL DAM Update Asset]**. Tik vervolgens op de werkbalk op **[!UICONTROL Edit.]** Op de [!UICONTROL DAM Update Asset] workflowpagina en dubbeltik op de `Rasterize PDF/AI Image Preview Rendition` procescomponent om het dialoogvenster Step Properties te openen.
+Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools > Workflow > Models.]** Op de pagina Workflowmodellen en selecteer **[!UICONTROL DAM Update Asset]**. Tik vervolgens op de werkbalk op **[!UICONTROL Edit.]** Op de [!UICONTROL DAM Update Asset] workflowpagina en dubbeltik op de procescomponent `Rasterize PDF/AI Image Preview Rendition` om het dialoogvenster Step Properties te openen.
 
 #### Opties voor PDF/AI-voorvertoning van afbeelding omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 

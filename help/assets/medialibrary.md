@@ -1,12 +1,12 @@
 ---
-title: Media Library-aanbieding voor beheer van digitale middelen.
+title: Mediabibliotheek gebruiken voor elementair beheer van digitale elementen
 description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelenbeheer.'
 contentOwner: AG
 role: Architect, leider
 translation-type: tm+mt
-source-git-commit: 10e5ca2fb6e108a7201e6114b61b3d0266ff80d2
+source-git-commit: 31dc984d9cd93f7024229fd6773878eebfdadc57
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,6 @@ De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
 * Ervaringen met digitaal scherm die zijn gemaakt met [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST-API&#39;s voor bewerkingen zonder kop.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -65,7 +64,7 @@ De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
 * Comments and annotation
 -->
 
-U kunt de volgende specifieke taken uitvoeren met de mediabibliotheek:
+Om de functionaliteit van de Bibliotheek van Media te gebruiken, kunt u het gebrek [!DNL Experience Manager] gebruikersinterface gebruiken. De Bibliotheek van media maakt deel uit van [!DNL Experience Manager Sites] installatie en geen afzonderlijke interface of toe:voegen-op wordt vereist. Met behulp van de bestaande interface hebben de gebruikers van de mediabibliotheek het recht om de volgende taken uit te voeren:
 
 * Maak mappen om elementen te ordenen.
 * Elementen uploaden.

@@ -11,7 +11,7 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -119,7 +119,7 @@ Dialoogvensters zijn een belangrijke factor bij het migreren van uw componenten:
 
 * [Ontwikkeling AEM Componenten](/help/sites-developing/developing-components.md)  (met de interface met aanraakbediening)
 * [Migreren vanuit een klassieke component](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Het Hulpmiddel](/help/sites-developing/dialog-conversion.md)  van de Omzetting van de dialoog - om u te helpen de dialogen van uw klassieke UI componenten in aanrakingsUI omzetten
+* [AEM Moderniseringsgereedschappen](/help/sites-developing/modernization-tools.md)  - om u te helpen de dialoogvensters van uw klassieke UI-componenten om te zetten in een interface
 
    * Er is een compatibiliteitslaag in aanraak UI om een klassiek UI-dialoogvenster te openen binnen een &quot;Touch UI-wrapper&quot;, maar deze heeft beperkte functionaliteit en wordt niet aanbevolen voor de lange termijn.
 

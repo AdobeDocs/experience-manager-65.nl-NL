@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 5597fb39500ac1f85d03263bfa1e5239d35d2a2c
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan het <a href="/help/sites-developing/dialog-conversion.md">Dialoogomzettingshulpmiddel</a> te gebruiken om de componenten bij te werken.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt aan de <a href="/help/sites-developing/modernization-tools.md">AEM Moderniseringsgereedschappen</a> te gebruiken om de componenten bij te werken.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -90,7 +90,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan het <a href="/help/sites-developing/dialog-conversion.md">Dialoogomzettingshulpmiddel</a> te gebruiken om de componenten bij te werken.</li>
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt aan de <a href="/help/sites-developing/modernization-tools.md">AEM Moderniseringsgereedschappen</a> te gebruiken om de componenten bij te werken.</li>
      <li>Vorm ContextHub (de vervanging voor ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van douaneClientContext opslag toestaat.</li>
     </ol> </td>
   </tr>
@@ -124,7 +124,7 @@ Voor achtergrondinformatie over basisverwerking:
 Voor gedetailleerde ontwikkelingsinformatie:
 
 * [UI-architectuur](/help/sites-developing/touch-ui-concepts.md) met aanraakbediening.
-* Met het gereedschap [Dialoogconversie](/help/sites-developing/dialog-conversion.md) kunt u dialoogvensters voor het bewerken van componenten omzetten van de klassieke interface naar de interface voor aanraakbediening.
+* Met de [AEM Moderniseringsgereedschappen](/help/sites-developing/modernization-tools.md) kunt u dialoogvensters voor bewerken van componenten omzetten van de klassieke interface naar de interface voor aanraakbediening.
 
 * [Structuur van de interface](/help/sites-developing/touch-ui-structure.md) met aanraakbediening.
 

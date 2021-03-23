@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3587'
 ht-degree: 1%
 
 ---
@@ -1039,7 +1039,7 @@ Het voorbeeld `_cq_dialog/.content.xml` dat in dit voorbeeld wordt gebruikt:
 >
 >Dialoogvensters van de klassieke UI-modeleditor werken nog steeds met de standaardinterface-editor met aanraakbediening.
 >
->Hoewel AEM een [dialoogomzettingshulpmiddel ](/help/sites-developing/dialog-conversion.md) heeft als u uw klassieke de stapdialogen van UI aan standaarddialogen wilt bevorderen UI. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
+>Hoewel AEM [moderniseringshulpmiddelen](/help/sites-developing/modernization-tools.md) heeft als u uw klassieke de stapdialogen van UI aan standaarddialogen wilt bevorderen UI. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
 >* Wanneer een geüpgrade dialoogvenster leeg is, kunt u dialoogvensters bekijken in `/libs` met vergelijkbare functionaliteit als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
    >

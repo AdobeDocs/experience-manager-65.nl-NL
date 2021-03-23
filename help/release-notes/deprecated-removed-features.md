@@ -2,7 +2,7 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 2%
@@ -76,4 +76,4 @@ Deze sectie wordt gebruikt om de aanstaande veranderingen in de toekomstige vers
 
 | Gebied | Functie | Aankondiging |
 |--- |--- |--- |
-| Stichting | UI Framework | Adobe is van plan om de Coral UI 2 componenten in 2019 te schrappen. Coral UI 3 werd geïntroduceerd met AEM 6.2 en AEM 6.5 is volledig gebaseerd op koraal 3. Adobe raadt klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om hen aan Koraal 3 te refactored. Adobe is een hulpmiddel om de dialogen van Koraal 2 in Koraal 3 om te zetten - [Meer informatie](/help/sites-developing/dialog-conversion.md). |
+| Stichting | UI Framework | Adobe is van plan om de Coral UI 2 componenten in 2019 te schrappen. Coral UI 3 werd geïntroduceerd met AEM 6.2 en AEM 6.5 is volledig gebaseerd op koraal 3. Adobe raadt klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om hen aan Koraal 3 te refactored. Adobe is een hulpmiddel om de dialogen van Koraal 2 in Koraal 3 om te zetten - [Meer informatie](/help/sites-developing/modernization-tools.md). |

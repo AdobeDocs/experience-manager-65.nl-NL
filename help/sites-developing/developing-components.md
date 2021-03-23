@@ -12,7 +12,7 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
-source-git-commit: d0842a5994068b1e9a92cd14c1a59f1ea1a6c8b8
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
@@ -78,7 +78,7 @@ Zie [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) voo
 
 ## Markering {#defining-the-markup} definiëren
 
-De component wordt weergegeven met [HTML](https://www.w3schools.com/htmL/html_intro.asp). Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
+Uw component wordt weergegeven met [HTML](https://www.w3schools.com/htmL/html_intro.asp). Uw component moet de HTML definiëren die nodig is om de vereiste inhoud te nemen en deze vervolgens naar wens weer te geven, zowel in de auteur- als in de publicatieomgeving.
 
 ### De HTML-sjabloontaal {#using-the-html-template-language} gebruiken
 
@@ -470,7 +470,7 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
 * Dialoogvensters
 
    * U moet een nieuw dialoogvenster maken voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
-   * Het [Hulpmiddel van de Omzetting van de Dialoog](/help/sites-developing/dialog-conversion.md) wordt verstrekt om u te helpen bestaande componenten uitbreiden.
+   * De [AEM Moderniseringshulpmiddelen](/help/sites-developing/modernization-tools.md) worden verstrekt om u te helpen bestaande componenten uitbreiden.
    * [Het in kaart brengen ExtJS aan de ](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) Componenten van Granite UI verstrekt een geschikt overzicht van xtypes ExtJS en knooptypes van ExtJS met hun gelijkwaardige middeltypes van Granite UI.
    * Het aanpassen van gebieden, voor meer informatie zie de zitting van AEM Gems op [Aanpassen van de Gebieden van de Dialoog](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
    * Migreren van vtypen naar [graniet-UI-validatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)

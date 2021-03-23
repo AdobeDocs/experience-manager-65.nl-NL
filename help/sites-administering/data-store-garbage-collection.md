@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 0eda6ee61acf737abc91d1e5df731e719663b3f2
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 0%
@@ -172,7 +172,7 @@ Als u niet wenst om de inzameling van de gegevensopslag met het Wekelijkse Venst
 >
 >In het volgende voorbeeld `curl` bevelen diverse parameters zouden voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld de hostnaam ( `localhost`), poort ( `4502`), het beheerderswachtwoord ( `xyz`) en diverse parameters voor de feitelijke afvalophaling van de gegevensopslagruimte.
 
-Hier is een bevel van de voorbeeldkrulling om huisvuilinzameling van de gegevensopslag via de bevellijn aan te halen:
+Hier is een bevel van de voorbeeldkrulling om de inzameling van het huisvuil van de gegevensopslag via de bevellijn aan te halen:
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean

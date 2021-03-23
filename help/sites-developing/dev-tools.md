@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
-source-git-commit: c13eabdf4938a47ddf64d55b00f845199591b835
+source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM schepen met andere instrumenten die de ontwikkeling bevorderen:
 * [Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Het gereedschap VLT gebruiken](/help/sites-developing/ht-vlttool.md)
 * [Het gereedschap Proxyserver gebruiken](/help/sites-developing/ht-proxy-server.md)
-* [Dialoogvenster omzetten](/help/sites-developing/dialog-conversion.md)
+* [AEM-moderniseringstools](/help/sites-developing/modernization-tools.md)
 * [AEM](/help/sites-developing/aem-repo-tool.md)
 
 Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:

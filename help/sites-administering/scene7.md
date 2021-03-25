@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: d700510efb340598a7931647164e22d574884569
 workflow-type: tm+mt
-source-wordcount: '5326'
+source-wordcount: '5332'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ Om Experience Manager te vormen om activa aan Dynamic Media Klassiek te kunnen p
 
 Schakel de Klassieke Dam Listener van Adobe CQ Dynamic Media in, die standaard is uitgeschakeld.
 
-U schakelt dit als volgt in:
+Adobe CQ Dynamic Media Classic Dam Listener inschakelen:
 
 1. Tik op het pictogram [!UICONTROL Tools] en navigeer naar **[!UICONTROL Operations > Web Console]**. De webconsole wordt geopend.
 1. Navigeer naar **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** en selecteer het selectievakje **[!UICONTROL Enabled]**.
@@ -525,7 +525,7 @@ De standaardconfiguratie configureren:
 
 U kunt de map configureren waarnaar elementen worden geüpload in Dynamic Media Classic wanneer het element zich niet in de CQ-doelmap bevindt. Zie Elementen publiceren van buiten de CQ-doelmap.
 
-De ad-hocmap configureren:
+De map Ad hoc configureren:
 
 1. Tik op het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tik **[!UICONTROL Dynamic Media Classic]** en selecteer de configuratie in Dynamic Media Classic.
 1. Tik op **[!UICONTROL Edit]** om de configuratie te openen.

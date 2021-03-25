@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: ef975961ddcd6910b5fba2dea7e9302921f45055
+source-git-commit: 543f59a82e869e7d004d994014e0bd586b013b02
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5770'
 ht-degree: 4%
 
 ---
@@ -90,11 +90,11 @@ Zie [Actiepakket 18912 installeren voor migratie van grote hoeveelheden elemente
 
 **Een Dynamic Media-configuratie maken in Cloud Services**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Gereedschappen en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration.]**
-1. Tik op de pagina Configuratiebrowser voor dynamische media in het linkerdeelvenster op **[!UICONTROL global]** (tik niet op het mappictogram links van **[!UICONTROL global]** of selecteer dit niet) en tik vervolgens op **[!UICONTROL Create.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Extra en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. Tik op de pagina Configuratiebrowser voor dynamische media in het linkerdeelvenster op **[!UICONTROL global]** (tik niet op het mappictogram links van **[!UICONTROL global]** of selecteer dit niet) en tik vervolgens op **[!UICONTROL Create]**.
 1. Voer op de pagina **[!UICONTROL Create Dynamic Media Configuration]** een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze informatie wordt u door Adobe in de levering-e-mail verstrekt. Neem contact op met de klantenservice van Adobe als u het e-mailbericht niet hebt ontvangen.
 
-   Tik op **[!UICONTROL Connect to Dynamic Media.]**
+   Tik op **[!UICONTROL Connect to Dynamic Media]**.
 
    >[!NOTE]
    Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, opent u [Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw account om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat de Dynamic Media-Cloud Service de juiste referenties krijgt.
@@ -120,7 +120,7 @@ Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een spe
    * **[!UICONTROL Dynamic Media sync mode]**
       * **[!UICONTROL Enabled by default]** - De configuratie wordt standaard toegepast op alle mappen, tenzij u een map markeert die specifiek is bedoeld voor uitsluiting.  <!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL Disabled by default]** - De configuratie wordt pas op een map toegepast als u een geselecteerde map expliciet markeert voor synchronisatie met Dynamic Media.
-Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u een elementmap en tikt u op **[!UICONTROL Properties]** op de werkbalk. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Tik **[!UICONTROL Save.]** *Onthoud: Deze drie opties zijn niet beschikbaar als u **Alle inhoud synchroniseren**eerder hebt geselecteerd.* Zie ook  [Werken met Selectief publiceren op mapniveau in Dynamic Media.](/help/assets/selective-publishing.md)
+Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren, selecteert u een elementmap en tikt u op **[!UICONTROL Properties]** op de werkbalk. Kies op het tabblad **[!UICONTROL Details]** in de vervolgkeuzelijst **[!UICONTROL Dynamic Media sync mode]** een van de volgende drie opties. Tik **[!UICONTROL Save]** als u klaar bent. *Onthoud: Deze drie opties zijn niet beschikbaar als u **Alle inhoud eerder**synchroniseren hebt geselecteerd.* Zie ook  [Werken met Selectief publiceren op mapniveau in Dynamic Media.](/help/assets/selective-publishing.md)
          * **[!UICONTROL Inherited]** - Geen expliciete synchronisatiewaarde in de map; in plaats daarvan neemt de map de synchronisatiewaarde over van een van de bovenliggende mappen of de standaardmodus in de cloudconfiguratie. De gedetailleerde status voor overgeërfde presentaties wordt weergegeven als knopinfo.
          * **[!UICONTROL Enable for subfolders]** - Neem alles op in deze substructuur voor synchronisatie met Dynamic Media. De mapspecifieke instellingen overschrijven de standaardmodus in de cloudconfiguratie.
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
@@ -129,17 +129,17 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
    Er is geen steun voor versioning in DMS7. Ook is de vertraagde activering slechts van toepassing als **[!UICONTROL Publish Assets]** op de pagina Configuratie van dynamische media bewerken is ingesteld op **[!UICONTROL Upon Activation]**, en dit alleen tot de eerste keer dat de asset wordt geactiveerd.
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de Experience Manager auteur-instantie &#39;lijsten van gewenste personen&#39; om verbinding te maken met Dynamic Media:
 
    * Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
    * Tik op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]** op de navigatiebalk rechts boven aan de pagina.
 
-   * Selecteer **[!UICONTROL Test Image Serving.]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver
-   * Tik **[!UICONTROL Add.]** op voor het clientadresfilter
+   * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver.
+   * Tik **[!UICONTROL Add]** voor het clientadresfilter.
    * Schakel het selectievakje in om het adres in te schakelen. Ga het IP adres van de instantie van de Auteur van de Experience Manager (niet Verzender IP) in.
-   * Tik op **[!UICONTROL Save.]**
+   * Tik op **[!UICONTROL Save]**.
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt de Dynamic Media - Scene7-modus gebruiken.
 
@@ -188,9 +188,9 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Tik op **[!UICONTROL Setup > Application Setup > General Settings.]** om de pagina Algemene instellingen toepassing te openen in de klassieke algemene navigatiebalk van Dynamic Media
+Tik op **[!UICONTROL Setup > Application Setup > General Settings]** om de pagina Algemene instellingen toepassing te openen op de klassieke algemene navigatiebalk van Dynamic Media.
 
-**Servers - **Voor rekeninglevering, verstrekt Dynamic Media automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij de klantenservice dit expliciet opgeeft.
+**[!UICONTROL Servers]** - Dynamic Media levert automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij de klantenservice dit expliciet opgeeft.
 
 **[!UICONTROL Overwrite Images]** - Dynamic Media staat niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die naar een andere map zijn geüpload dan het origineel of op elementen met een andere bestandsnaamextensie dan het origineel (zoals JPG, TIF of PNG).
 
@@ -215,8 +215,8 @@ Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleu
 De standaardeigenschappen voor kleuren zo configureren dat kleurcorrectie wordt ingeschakeld wanneer afbeeldingen worden aangevraagd:
 
 1. Open de [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven.
-1. Ga naar **[!UICONTROL Setup > Application Setup.]**
-1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server.]** **[!UICONTROL Publish Context]** instellen op **[!UICONTROL Image Serving]** bij het instellen van standaardinstellingen voor publicatie-instanties.
+1. Ga naar **[!UICONTROL Setup > Application Setup]**.
+1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u wilt wijzigen. Een eigenschap in het gebied **[!UICONTROL Color Management Attributes]**.
 
    U kunt de volgende eigenschappen voor kleurcorrectie instellen:
@@ -224,9 +224,9 @@ De standaardeigenschappen voor kleuren zo configureren dat kleurcorrectie wordt 
    * **[!UICONTROL CMYK Default Color Space]** - Naam van het standaard CMYK-kleurprofiel
    * **[!UICONTROL Gray-Scale Default Color Space]** - Naam van het standaardgrijskleurprofiel
    * **[!UICONTROL RGB Default Color Space]** - Naam van het standaard RGB-kleurprofiel
-   * **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric.]** Adobe raadt **[!UICONTROL relative]** als standaardwaarde aan.
+   * **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe raadt **[!UICONTROL relative]** als standaardwaarde aan.
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 
 U kunt bijvoorbeeld **[!UICONTROL RGB Default Color Space]** instellen op *sRGB* en **[!UICONTROL CMYK Default Color Space]** op *WebCoated*.
 
@@ -249,9 +249,9 @@ U kunt bepalen welke elementtypen door Dynamic Media worden verwerkt en geavance
 
 Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
 
-**MIME-typen bewerken voor ondersteunde indelingen**
+**MIME-typen bewerken voor ondersteunde indelingen:**
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. Navigeer in de linkerspoorstaaf naar het volgende:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -261,24 +261,24 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
 1. Selecteer een mime-type onder de map mimeTypes.
 1. Aan de rechterkant van de pagina CRXDE Lite, in het onderste gedeelte:
 
-   * Dubbelklik op het veld **[!UICONTROL enabled]**. Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd met Dynamic Media voor verwerking. Als u wilt uitsluiten dat dit elementtype mime wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false.]**
+   * Dubbelklik op het veld **[!UICONTROL enabled]**. Standaard zijn alle elementtypen ingeschakeld (ingesteld op **[!UICONTROL true]**), wat betekent dat de elementen worden gesynchroniseerd met Dynamic Media voor verwerking. Als u wilt uitsluiten dat dit elementtype mime wordt verwerkt, wijzigt u deze instelling in **[!UICONTROL false]**.
 
    * dubbeltikken **[!UICONTROL jobParam]** om het bijbehorende tekstveld te openen. Zie [Ondersteunde MIME-typen](/help/assets/assets-formats.md#supported-mime-types) voor een lijst met toegestane waarden voor de verwerkingsparameters die u voor een bepaald mime-type kunt gebruiken.
 
 1. Voer een van de volgende handelingen uit:
 
    * Herhaal stap 3-4 om meer MIME-typen te bewerken.
-   * Tik op **[!UICONTROL Save All.]** op de menubalk van de pagina CRXDE Lite
+   * Tik op **[!UICONTROL Save All]** op de menubalk van de pagina CRXDE Lite.
 
 1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL CRXDE Lite]** om terug te keren naar de Experience Manager.
 
 #### MIME-typen toevoegen voor niet-ondersteunde indelingen {#adding-mime-types-for-unsupported-formats}
 
-U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Experience Manager Assets. Zorg ervoor dat om het even welke nieuwe knoop u in CRXDE Lite toevoegt niet door Experience Manager wordt geschrapt door het MIME type vóór `image_` te bewegen. Zorg er ook voor dat de ingeschakelde waarde is ingesteld op **[!UICONTROL false.]**
+U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Experience Manager Assets. Zorg ervoor dat om het even welke nieuwe knoop u in CRXDE Lite toevoegt niet door Experience Manager wordt geschrapt door het MIME type vóór `image_` te bewegen. Zorg er ook voor dat de ingeschakelde waarde is ingesteld op **[!UICONTROL false]**.
 
-**MIME-typen toevoegen voor niet-ondersteunde indelingen**
+**MIME-typen toevoegen voor niet-ondersteunde indelingen:**
 
-1. Tik vanuit Experience Manager op **[!UICONTROL Tools > Operations > Web Console.]**
+1. Tik **[!UICONTROL Tools > Operations > Web Console]** vanaf Experience Manager.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -300,12 +300,12 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
-1. Tik in de rechterbenedenhoek van de pagina op **[!UICONTROL Save.]**
+1. Tik in de rechterbenedenhoek van de pagina op **[!UICONTROL Save]**.
 
    Op dit punt kunt u het browsertabblad sluiten waarop de pagina Configuratie Adobe Experience Manager-webconsole is geopend.
 
 1. Keer terug naar het browser lusje dat uw open console van de Experience Manager heeft.
-1. Tik vanuit Experience Manager op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik **[!UICONTROL Tools > General > CRXDE Lite]** vanaf Experience Manager.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -322,7 +322,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
    ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
 
-1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All.]**
+1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]**.
 
 #### Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets} te genereren
 
@@ -342,13 +342,13 @@ Als alternatief kunt u **[!UICONTROL View Code]** gebruiken als er geen formulie
 
 Er zijn twee elementen beschikbaar voor definitie, Identieke en Basisnaam. Met deze velden kunt u alle elementen van een naamgevingsconventie definiëren en het gedeelte van de conventie identificeren dat wordt gebruikt voor de naamgeving van de set waarin deze elementen zich bevinden. De individuele noemende overeenkomst van een bedrijf gebruikt vaak één of meerdere lijnen van definitie voor elk van deze elementen. U kunt zo vele lijnen voor uw unieke definitie gebruiken en hen groeperen in verschillende elementen, zoals voor HoofdBeeld, het element van de Kleur, het element van de Afwisselende Mening, en het element van het Monster.
 
-**Standaardnaamgeving configureren**
+**Standaardnaamgeving configureren:**
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
-1. Tik op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming.]** op de navigatiebalk boven aan de pagina
+1. Tik op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming]** op de navigatiebalk boven aan de pagina.
 1. Selecteer **[!UICONTROL View Form]** of **[!UICONTROL View Code]** om op te geven hoe u informatie over elke asset wilt weergeven en invoeren.
 
    U kunt het selectievakje **[!UICONTROL View Code]** inschakelen om de waarde van de reguliere expressie naast de formulierselecties weer te geven. U kunt deze waarden invoeren of wijzigen om de elementen van de naamgevingsconventie te definiëren, als de formulierweergave u beperkt om welke reden dan ook. Als uw waarden niet kunnen worden geparseerd in de formulierweergave, worden de formuliervelden inactief.
@@ -375,13 +375,13 @@ U kunt uw voorinstellingen voor batchsets maken, bewerken en beheren. Er zijn tw
 
 U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een batchset te definiëren of de methode voor code, waarmee u reguliere expressies kunt gebruiken. Net als bij Standaardnaam kunt u de optie Code weergeven kiezen terwijl u de definitie in de formulierweergave definieert en reguliere expressies gebruiken om uw definities samen te stellen. U kunt ook de optie voor het uitsluitend gebruiken van de ene weergave of de andere uitschakelen.
 
-**Een voorinstelling voor een batch-set maken**
+**Een voorinstelling voor een batchset maken:**
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
-1. Tik op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset.]** op de navigatiebalk boven aan de pagina
+1. Tik op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset]** op de navigatiebalk boven aan de pagina.
 
    **[!UICONTROL View Form]**, zoals ingesteld in de rechterbovenhoek van de pagina Details, is de standaardweergave.
 
@@ -390,9 +390,9 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 1. Selecteer een type voorinstelling in het keuzemenu Type batch.
 1. Voer een van de volgende handelingen uit:
 
-   * Als u een standaardnaamgevingsconventie gebruikt die u eerder hebt ingesteld onder **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, vouwt u **[!UICONTROL Asset Naming Conventions]** uit en tikt u vervolgens in de vervolgkeuzelijst Bestandsnaamgeving op **[!UICONTROL Default.]**
+   * Als u een standaardnaamgevingsconventie gebruikt die u eerder hebt ingesteld onder **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, vouwt u **[!UICONTROL Asset Naming Conventions]** uit en tikt u vervolgens in de vervolgkeuzelijst Bestandsnaamgeving op **[!UICONTROL Default]**.
 
-   * Als u een nieuwe naamgevingsconventie wilt definiëren terwijl u de voorinstelling instelt, vouwt u **[!UICONTROL Asset Naming Conventions]** uit en tikt u vervolgens in de vervolgkeuzelijst Bestandsnaamgeving op **[!UICONTROL Custom.]**
+   * Als u een nieuwe naamgevingsconventie wilt definiëren terwijl u de voorinstelling instelt, vouwt u **[!UICONTROL Asset Naming Conventions]** uit en tikt u vervolgens in de vervolgkeuzelijst Bestandsnaamgeving op **[!UICONTROL Custom]**.
 
 1. Definieer bij Volgorde de volgorde waarin de afbeeldingen worden weergegeven nadat de set in Dynamic Media is gegroepeerd.
 
@@ -402,7 +402,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
    Als u grote aantallen sets definieert, moet u de sets gescheiden houden van de mappen die de elementen zelf bevatten. Maak bijvoorbeeld een map met afbeeldingssets en plaats hier gegenereerde sets.
 
-1. Tik in het venster Details op **[!UICONTROL Save.]**
+1. Tik in het venster Details op **[!UICONTROL Save]**.
 1. Tik **[!UICONTROL Active]** naast de naam van de nieuwe voorinstelling.
 
    Als u de voorinstelling activeert, weet u zeker dat wanneer u elementen uploadt naar Dynamic Media, de voorinstelling van de batch-set wordt toegepast om de set te genereren.
@@ -431,7 +431,7 @@ De groepering voor het gedeelde element naamdeel van de spinset wordt toegevoegd
 
 Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het recept voor de 2D-spinset die wordt vermeld onder **Voorinstellingen voor batchsets** in het dialoogvenster **Taakopties uploaden**.
 
-**Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-reeks met draaien**
+**Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-set met draaien:**
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
@@ -443,9 +443,9 @@ Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het 
 
 1. Tik in het deelvenster Lijst met voorinstellingen op **[!UICONTROL Add]** om de definitievelden te activeren in het deelvenster Details aan de rechterkant van het scherm.
 1. Typ in het veld Naam voorinstelling in het deelvenster Details een naam voor de voorinstelling.
-1. Selecteer in het vervolgkeuzemenu Batchsettype de optie **[!UICONTROL Asset Set.]**
-1. Selecteer **[!UICONTROL Multi-Axis Spin Set.]** in de vervolgkeuzelijst Subtype
-1. **[!UICONTROL Asset Naming Conventions]** uitvouwen en vervolgens in de vervolgkeuzelijst Bestandsnaamgeving tikken op **[!UICONTROL Custom.]**
+1. Selecteer in het vervolgkeuzemenu Batchsettype de optie **[!UICONTROL Asset Set]**.
+1. Selecteer **[!UICONTROL Multi-Axis Spin Set]** in de vervolgkeuzelijst Subtype.
+1. Vouw **[!UICONTROL Asset Naming Conventions]** uit en tik **[!UICONTROL Custom]** in de vervolgkeuzelijst Bestandsnaamgeving.
 1. Gebruik de kenmerken **[!UICONTROL Match]** en (optioneel) **[!UICONTROL Base Name]** om een reguliere expressie te definiëren voor de naamgeving van afbeeldingsassets waaruit de groepering bestaat.
 
    De reguliere expressie Letterlijke overeenkomst kan er bijvoorbeeld als volgt uitzien:
@@ -483,7 +483,7 @@ Wanneer de spinset wordt geüpload en gepubliceerd, activeert u de naam van het 
 
    Als u grote aantallen sets definieert, moet u de sets gescheiden houden van de mappen die de elementen zelf bevatten. Maak bijvoorbeeld een map met centrifugesets om gegenereerde sets hier te plaatsen.
 
-1. Tik in het venster Details op **[!UICONTROL Save.]**
+1. Tik in het venster Details op **[!UICONTROL Save]**.
 1. Tik **[!UICONTROL Active]** naast de naam van de nieuwe voorinstelling.
 
    Als u de voorinstelling activeert, weet u zeker dat wanneer u elementen uploadt naar Dynamic Media, de voorinstelling van de batch-set wordt toegepast om de set te genereren.
@@ -503,7 +503,7 @@ U kunt taakparameters instellen voor snellere verwerking wanneer u bestanden upl
 
 Gebruik de volgende parameters als u sjabloonontwerp wilt inschakelen: `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`.
 
-<!-- REMOVED BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
+<!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
 Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bestanden te gebruiken:
 
@@ -519,13 +519,13 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-Als u een van deze parameters wilt bijwerken, volgt u de stappen in [Ondersteuning voor Classic uploadtaakparameter voor MIME-elementen/Dynamic Media Classic-uploads](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
+<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
 
 #### De voorlopige wachtrij van Granite-workflows bijwerken {#updating-the-granite-transient-workflow-queue}
 
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]**-workflow. In Dynamic Media wordt het gebruikt voor het opnemen en verwerken van afbeeldingen.
 
-**De voorlopige wachtrij van Granite bijwerken**
+**De voorlopige wachtrij voor graniet bijwerken:**
 
 1. Navigeer naar [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek naar **Wachtrij: Granite Transient Workflow Queue**.
 
@@ -542,13 +542,13 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 
 #### De Granite-workflowwachtrij bijwerken {#updating-the-granite-workflow-queue}
 
 De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamic Media werd video verwerkt met de **[!UICONTROL Dynamic Media Encode Video]**-workflow.
 
-**De Granite-werkstroomwachtrij bijwerken**
+**De Granite-workflowwachtrij bijwerken:**
 
 1. Navigeer naar `https://<server>/system/console/configMgr` en zoek naar **Wachtrij: Gerichte werkstroom Wachtrij**.
 
@@ -561,13 +561,13 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 
 #### De Dynamic Media Classic-uploadverbinding {#updating-the-scene-upload-connection} bijwerken
 
 Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-elementen met Dynamic Media Classic-servers.
 
-**De Dynamic Media Classic-uploadverbinding bijwerken**
+**De Dynamic Media Classic-uploadverbinding bijwerken:**
 
 1. Ga naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Wijzig desgewenst het getal in het veld **[!UICONTROL Number of connections]** en/of het veld **[!UICONTROL Active job timeout]**.
@@ -580,7 +580,7 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Tik op **[!UICONTROL Save.]**
+1. Tik op **[!UICONTROL Save]**.
 
 ### (Optioneel) Elementen filteren voor replicatie {#optional-filtering-assets-for-replication}
 
@@ -628,7 +628,7 @@ Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie h
 
 #### Elementfilters aanpassen voor replicatie {#customizing-asset-filters-for-replication}
 
-1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > General > CRXDE Lite.]**
+1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. Navigeer in de linkermapstructuur naar `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` om de filters te bekijken.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
@@ -659,7 +659,7 @@ Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie h
   </tr>
   <tr>
    <td>*</td>
-   <td>Jokerteken<br /> </td>
+   <td>Jokerteken</td>
   </tr>
   <tr>
    <td>+</td>
@@ -679,4 +679,3 @@ De volgende afbeelding is een voorbeeld van de uitvoeringen van een element.
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
 Als u slechts origineel wilde herhalen, dan zou u `+original` ingaan.
-

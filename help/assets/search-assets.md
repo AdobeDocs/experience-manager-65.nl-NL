@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Zoeken, metagegevens
 role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt
-source-wordcount: '5671'
+source-wordcount: '5528'
 ht-degree: 4%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 4%
 
 [!DNL Experience Manager Assets] steunt de volgende gebruiksgevallen en dit artikel beschrijft het gebruik, de concepten, de configuraties, de beperkingen, en het oplossen van problemen voor deze gebruiksgevallen.
 
-| Assets doorzoeken | Configuratie en beheer | Werken met zoekresultaten |
+| Middelen zoeken | Zoekfuncties configureren en beheren | Werken met zoekresultaten |
 |---|---|---|
 | [Standaardzoekopdrachten](#searchbasics) | [Zoekindex](#searchindex) | [Resultaten sorteren](#sort) |
 | [Gebruiksinterface voor zoeken begrijpen](#searchui) | [Zoeken op visuele of gelijkenis](#configvisualsearch) | [Eigenschappen en metagegevens van een element controleren](#checkinfo) |
 | [Zoeken in suggesties](#searchsuggestions) | [Verplichte metagegevens](#mandatorymetadata) | [Downloaden](#download) |
 | [Zoekresultaten en gedrag begrijpen](#searchbehavior) | [Zoekfacetten wijzigen](#searchfacets) | [Bulkupdates van metagegevens](#metadataupdates) |
 | [Zoeken in rang en opvoeren](#searchrank) | [Tekst extraheren](#extracttextupload) | [Slimme verzamelingen](#collections) |
-| [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpectedresults) |
-| [Zoeken in andere oplossingen en apps](#beyondomnisearch):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brandportal)</li><li>[Experience Manager-bureaubladtoepassing](#desktopapp)</li><li>[Adobe Stock-afbeeldingen](#adobestock)</li><li>[Dynamic Media-middelen](#dynamicmedia)</li></ul> |  |  |
+| [Geavanceerd zoeken: filteren en zoekbereik](#scope) | [Aangepaste voorspelling](#custompredicates) | [Onverwachte resultaten begrijpen en problemen oplossen](#unexpected-results) |
+| [Zoeken in andere oplossingen en apps](#search-assets-other-surfaces):<ul><li>[Adobe-itemkoppeling](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager-bureaubladtoepassing](#desktop-app)</li><li>[Adobe Stock-afbeeldingen](#adobe-stock)</li><li>[Dynamic Media-middelen](#dynamic-media)</li></ul> |  |  |
 | [Elementkiezer](#assetpicker) |  |  |
 | [](#limitations) Beperkingen en  [tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
@@ -69,7 +69,7 @@ Om de relevante activa snel te vinden, verstrekt de rijke interface het filtrere
 
 Wanneer de resultaten veel elementen zijn, [!DNL Experience Manager] toont eerste 100 in de kaartmening en 200 in de lijstmening. Wanneer gebruikers schuiven, worden meer elementen geladen. Dit is om de prestaties te verbeteren. Bekijk een videodemonstratie van het [aantal getoonde activa](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
-Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#troubleshoot-unexpected-search-results-and-issues) voor meer informatie.
+Het kan voorkomen dat de zoekresultaten een aantal onverwachte elementen bevatten. Zie [onverwachte resultaten](#unexpected-results) voor meer informatie.
 
 [!DNL Experience Manager] U kunt naar vele dossierformaten zoeken en de onderzoeksfilters kunnen worden aangepast aan uw bedrijfsvereisten. Neem contact op met uw beheerder om te weten welke zoekopties beschikbaar worden gesteld voor uw DAM-opslagplaats en welke beperkingen uw account heeft.
 
@@ -82,11 +82,11 @@ Standaard combineert de zoekopdracht [!DNL Experience Manager] de zoektermen met
 * `woman-running`
 
 De query `woman -running` retourneert echter elementen zonder `running` in de metagegevens.
-Als u slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm te zoeken als de toegepaste slimme tags. Een element dat is getagd met `woman` of `running` en dat slimme tags gebruikt, wordt ook weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Als u Slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm te zoeken als de toegepaste slimme tags. Een element dat is gelabeld met `woman` of `running` met behulp van slimme tags, wordt ook weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * Elementen met `woman` en `running` trefwoorden in de metagegevens (standaardgedrag).
 
-* Elementen die zijn getagd met een van de trefwoorden (gedrag voor slimme tags).
+* Elementen die zijn gelabeld met een van de trefwoorden (gedrag Slimme tags).
 
 ### Suggesties zoeken terwijl u {#searchsuggestions} typt
 
@@ -144,7 +144,7 @@ Als u afbeeldingen wilt zoeken die visueel lijken op een door de gebruiker gesel
 
 *Afbeelding: U kunt vergelijkbare afbeeldingen zoeken met de optie in de kaartweergave.*
 
-### Adobe Stock-afbeeldingen {#adobestock}
+### Adobe Stock-afbeeldingen {#adobe-stock}
 
 Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers [Adobe Stock-middelen](/help/assets/aem-assets-adobe-stock.md) doorzoeken en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` in de bar van het Onderzoek toe. U kunt ook het deelvenster Filters gebruiken om alle middelen te zoeken waarvoor een licentie is verleend of om een bepaald element te zoeken aan de hand van het Adobe Stock-bestandsnummer.
 
@@ -152,35 +152,38 @@ Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers [Adobe
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets.
 
-### Zoeken met specifieke waarden in metagegevensvelden {#gqlsearch}
+### GQL-zoekopdracht met specifieke waarden in metagegevensvelden {#gql-search}
 
-U kunt naar elementen zoeken op basis van exacte waarden van specifieke metagegevensvelden, zoals titel, beschrijving en auteur. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (bijvoorbeeld auteur, titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
+U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, zoals titel, beschrijving en maker. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (Maker, Titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
 
 | Metagegevensveld | Facetwaarde en gebruik |
-| ----------------------------------------- | --------------------------------------- |
-| Titel | `title:John` |
-| Creator | `creator:John` |
-| Locatie | `location:NA` |
-| Beschrijving | `description:"Sample Image"` |
-| Gereedschap Maker | `creatortool:"Adobe Photoshop CC 2020"` |
-| Copyrighteigenaar | `copyrightowner:"Adobe Systems"` |
-| Medewerker | `contributor:John` |
-| Gebruiksvoorwaarden | `usageterms:"CopyRights Reserved"` |
-| Gemaakt | `created`:YYYY-MM-DDTHH |
-| Vervaldatum | `expires`:YYYY-MM-DDTHH |
-| Op tijd | `ontime`:YYYY-MM-DDTHH |
-| Uit-tijd | `offtime`:YYYY-MM-DDTHH |
-| Tijdsbereik (verloopt dateontime, offtime) | `facet field`: lager gebonden..bovenaan |
+|---|---|
+| Titel | titel:John |
+| Creator | maker:John |
+| Locatie | locatie:NA |
+| Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
+| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
+| Medewerker | contribuant:John |
+| Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
+| Gemaakt | gemaakt:YYYY-MM-DDTHH |
+| Vervaldatum | verloopt:YYYY-MM-DDTHH |
+| Op tijd | ontime:YYYY-MM-DDTHH |
+| Uit-tijd | offtime:YYYY-MM-DDTHH |
+| Tijdsbereik (verloopt dateontime, offtime) | facetveld: lager gebonden..bovenaan |
 | Pad | /content/dam/&lt;naam map> |
-| PDF-titel | `pdftitle`:&quot;Adobe Document&quot; |
-| Subject | `subject:"Training"` |
-| Tags | `tags:"Location And Travel"` |
-| Type | `type:"image\png"` |
-| Breedte van afbeelding | `width`:lowerbound..bovenaan |
-| Hoogte van afbeelding | `height`:lowerbound..bovenaan |
-| Person | `person:John` |
+| PDF-titel | pdftitle:&quot;Adobe-document&quot; |
+| Subject | onderwerp: &quot;Opleiding&quot; |
+| Tags | tags:&quot;Locatie en reizen&quot; |
+| Type | type:&quot;image\png&quot; |
+| Breedte van afbeelding | breedte:ondergrens..bovenaan |
+| Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
+| Person | persoon:John |
 
 De eigenschappen `path`, `limit`, `size` en `orderby` kunnen niet worden gecombineerd met een `OR` operator met een andere eigenschap.
+
+<!-- TBD: Where are the limit, size, orderby properties defined?
+-->
 
 Het sleutelwoord voor een user-generated bezit is zijn gebiedsetiket in de bezitsredacteur in kleine letters, met verwijderde ruimten.
 
@@ -194,31 +197,31 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 * Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: titel = Bazel-vergaderruimte): `title:*Meeting*`
 * Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar string Adobe in assets met title=Jan Smit): `*Adobe* title:"John Doe"`
 
-## Elementen zoeken vanuit andere [!DNL Experience Manager]-aanbiedingen of interfaces {#beyondomnisearch}
+## Elementen zoeken vanuit andere [!DNL Experience Manager]-aanbiedingen of interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] Maakt de DAM-opslagplaats aan verschillende andere  [!DNL Experience Manager] oplossingen aan om snellere toegang tot digitale middelen te bieden en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige onderzoeksmethodes veranderen aangezien het doelpubliek, de gebruiksgevallen, en de gebruikersinterface over de [!DNL Experience Manager] oplossingen variëren. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
 ### Elementen zoeken in het deelvenster Koppeling van Adobe-element {#aal}
 
-Met Adobe Asset Link kunnen creatieve professionals nu toegang krijgen tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieve personen kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken met het deelvenster in de app in [!DNL Adobe Creative Cloud apps]: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [Elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met behulp van Adobe Asset Link.
+Met Adobe Asset Link kunnen creatieve professionals nu toegang krijgen tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Creatieven kunnen naadloos door middelen bladeren, zoeken, uitchecken en inchecken met het deelvenster in de app in de [!DNL Adobe Creative Cloud]-apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [Elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) met behulp van Adobe Asset Link.
 
-### Middelen zoeken in [!DNL Experience Manager] desktop app {#desktopapp}
+### Middelen zoeken in [!DNL Experience Manager] desktop app {#desktop-app}
 
 Creatieve professionals gebruiken de desktop-app om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden weer opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, `*`- en `?`-jokertekens en `AND`-operator. Zie [Elementen doorbladeren, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Middelen zoeken in [!DNL Brand Portal] {#brandportal}
+### Middelen zoeken in [!DNL Brand Portal] {#brand-portal}
 
 De gebruikers van de lijn-van-zaken en de marketers gebruiken het Portaal van het Merk om de goedgekeurde digitale activa met hun uitgebreide interne teams, partners, en resellers efficiënt en veilig te delen. Zie [zoekmiddelen op Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
-### [!DNL Adobe Stock] afbeeldingen doorzoeken {#adobestock-1}
+### [!DNL Adobe Stock] afbeeldingen doorzoeken {#adobe-stock1}
 
-Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` op het gebied van Onderzoek toe. U kunt ook **[!UICONTROL Filters]** gebruiken om alle gelicentieerde of niet gelicentieerde activa te vinden of een specifiek middel te zoeken gebruikend het dossieraantal van Adobe Stock. Zie [Adobe Stock-afbeeldingen beheren in Experience Manager](/help/assets/aem-assets-adobe-stock.md#usemanage).
+Vanuit de [!DNL Experience Manager]-gebruikersinterface kunnen gebruikers zoeken in Adobe Stock-middelen en een licentie voor de vereiste middelen aanschaffen. Voeg `Location: Adobe Stock` op het gebied van Onderzoek toe. U kunt ook **[!UICONTROL Filters]** gebruiken om alle gelicentieerde of niet gelicentieerde activa te vinden of een specifiek middel te zoeken gebruikend het dossieraantal van Adobe Stock. Zie [afbeeldingen beheren [!DNL Adobe Stock] in [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
 
-### Zoeken in Dynamic Media-middelen {#dynamicmedia}
+### [!DNL Dynamic Media] middelen doorzoeken {#dynamic-media}
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
-### Elementen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#contentfinder}
+### Elementen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#content-finder}
 
 Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken naar de relevante elementen en de elementen te gebruiken op de webpagina&#39;s die ze maken. Auteurs kunnen ook de functie Verbonden elementen gebruiken om te zoeken naar elementen die beschikbaar zijn op een externe [!DNL Experience Manager]-implementatie. Auteurs kunnen deze elementen vervolgens gebruiken in webpagina&#39;s op een lokale [!DNL Experience Manager]-implementatie. Zie [externe elementen gebruiken](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -226,13 +229,13 @@ Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken na
 
 [!DNL Experience Manager] zoekmogelijkheden bieden ondersteuning voor het zoeken naar verzamelingen en het zoeken naar elementen in een verzameling. Zie [zoekverzamelingen](/help/assets/manage-collections.md).
 
-## Elementkiezer {#assetpicker}
+## Elementkiezer {#asset-picker}
 
 >[!NOTE]
 >
 >Asset selector werd [asset picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) in eerdere versies van [!DNL Adobe Experience Manager] genoemd.
 
-Met de functie Asset Selector kunt u op een speciale manier door DAM-middelen bladeren, zoeken en filteren. U kunt de elementenkiezer in uw [!DNL Experience Manager]-instantie starten met `https://[aem-server]:[port]/aem/assetpicker.html`. Deze URL opent de elementenkiezer in de bladermodus. Gebruik de ondersteunde aanvraagparameters als achtervoegsel, zoals `mode` (enkele of meerdere selecties) of `viewmode` met `assettype` (afbeelding, video, tekst) en `mimetype`. Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact. U kunt ook de metagegevens ophalen van elementen die u selecteert met deze functie.
+Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. De selecteur van activa is beschikbaar bij `https://[aem_server]:[port]/aem/assetpicker.html`. U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
 De elementkiezer gebruikt het HTML5 `Window.postMessage`-bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. Deze functie werkt alleen in de modus Bladeren en alleen met de resultatenpagina van Omnsearch.
 
@@ -240,13 +243,13 @@ Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een
 
 | Naam | Waarden | Voorbeeld | Doel |
 |---|---|---|---|
-| bronachtervoegsel (B) | Het pad van de map als het bronachtervoegsel in de URL:[https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd, moet de URL de volgende vorm hebben: [https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images](https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images) | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
-| `mode` | enkelvoudig, meerdere | <ul><li>[https://localhost:4502/aem/assetpicker.html?mode=single](https://localhost:4502/aem/assetpicker.html?mode=single)</li><li>[https://localhost:4502/aem/assetpicker.html?mode=multiple](https://localhost:4502/aem/assetpicker.html?mode=multiple)</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
+| bronachtervoegsel (B) | Mappad als resix van de bron in de URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Als u de elementenkiezer wilt starten terwijl een bepaalde map is geselecteerd, bijvoorbeeld met de map `/content/dam/we-retail/en/activities` geselecteerd, moet de URL de volgende vorm hebben: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Als u wilt dat een bepaalde map wordt geselecteerd wanneer de elementenkiezer wordt gestart, geeft u deze door als een bronachtervoegsel. |
+| `mode` | enkelvoudig, meerdere | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | In meerdere modi kunt u meerdere elementen tegelijk selecteren met de elementkiezer. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Gebruik deze parameters om de elementenkiezer te openen als granietdialoogvenster. Deze optie is alleen van toepassing wanneer u de elementenkiezer start via Granite Path Field en deze configureert als pickerSrc URL. |
-| `root` | &lt;folder_path> | [https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities](https://localhost:4502/aem/assetpicker.html?assettype=images&amp;root=/content/dam/we-retail/en/activities) | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
-| `viewmode` | zoeken |  | De elementenkiezer starten in de zoekmodus met parameters assettype en mimetype. |
-| `assettype` | afbeeldingen, documenten, multimedia, archieven. | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=images)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=documents](https://localhost:4502/aem/assetpicker.html?assettype=documents)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=multimedia)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;assettype=archives)</li></ul> | Gebruik de optie om elementtypen te filteren op basis van de opgegeven waarde. |
-| `mimetype` | MIME-type (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund). | <ul><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=image/png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*png)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation)</li><li>[https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png](https://localhost:4502/aem/assetpicker.html?viewmode=search&amp;mimetype=*presentation&amp;mimetype=*png)</li></ul> | Gebruik deze optie om elementen te filteren op basis van het MIME-type. |
+| `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Gebruik deze optie om de hoofdmap voor de elementenkiezer op te geven. In dit geval kunt u met de elementenkiezer alleen onderliggende elementen (direct/indirect) in de hoofdmap selecteren. |
+| `viewmode` | zoeken |  | De elementkiezer starten in de zoekmodus met de parameters `assettype` en `mimetype`. |
+| `assettype` | Afbeeldingen, documenten, multimedia, archieven. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Gebruik de optie om elementtypen te filteren op basis van de opgegeven waarde. |
+| `mimetype` | MIME-type (`/jcr:content/metadata/dc:format`) van een element (jokerteken wordt ook ondersteund). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Gebruik deze optie om elementen te filteren op basis van het MIME-type. |
 
 Ga naar `https://[aem_server]:[port]/aem/assetpicker` om de interface van de elementenkiezer te openen. Navigeer naar de gewenste map en selecteer een of meer elementen. U kunt ook naar het gewenste element zoeken in het vak Zoeken, naar wens een filter toepassen en het vervolgens selecteren.
 
@@ -262,6 +265,7 @@ De zoekfunctie in [!DNL Experience Manager Assets] heeft de volgende beperkingen
 * [!DNL Experience Manager] Mogelijk blijft de zoekterm zichtbaar nadat u eigenschappen van een element hebt geselecteerd in de gezochte resultaten en vervolgens de zoekopdracht hebt geannuleerd.  <!-- (CQ-4273540) -->
 * Wanneer u naar mappen of bestanden en mappen zoekt, kunnen de zoekresultaten op geen enkele parameter worden gesorteerd.
 * Als u `Return` selecteert zonder in de bar van het Onderzoek te typen, [!DNL Experience Manager] keert een lijst van slechts dossiers en niet omslagen terug. Als u specifiek naar omslagen zonder een sleutelwoord zoekt, [!DNL Experience Manager] keert geen resultaten terug.
+* U kunt zoeken in volledige tekst op mappen. Geef een zoekterm op die de zoekopdracht moet gebruiken.
 
 Het visuele onderzoek of het gelijkenis onderzoek heeft de volgende beperkingen:
 
@@ -335,7 +339,7 @@ Om specifieke activa van onderzoeksresultaten uit te sluiten, gebruik `excludedP
 
 ### Zoeken op visuele of gelijkenis {#configvisualsearch}
 
-Bij visueel zoeken wordt slimme tags gebruikt en is [!DNL Experience Manager] 6.5.2.0 of hoger vereist. Voer de volgende stappen uit nadat u de functionaliteit voor slimme tags hebt geconfigureerd:
+Bij visueel zoeken worden slimme tags gebruikt. Voer de volgende stappen uit nadat u de functionaliteit voor slimme tags hebt geconfigureerd.
 
 1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` knoop, voeg de volgende eigenschappen en de waarden toe en sparen de veranderingen.
 
@@ -355,7 +359,7 @@ Bij visueel zoeken wordt slimme tags gebruikt en is [!DNL Experience Manager] 6.
    Sla de wijzigingen op.
 
 1. Open `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` bezit van type `Boolean` met de waarde van `true` toe.
-1. Pas slimme tags toe op de elementen in uw [!DNL Experience Manager]-opslagplaats.
+1. Pas Slimme tags toe op de elementen in uw [!DNL Experience Manager]-opslagplaats. Zie [slimme tags configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` knoop, plaats `reindex` bezit aan `true`. Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het knooppunt `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla de wijzigingen op.
 
@@ -413,9 +417,9 @@ U kunt het volgende doen met de activa u in [!DNL Experience Manager] hebt gezoc
 
 ### Zoekresultaten sorteren {#sort}
 
-U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de onderzoeksresultaten slechts sorteren wanneer u **[[!UICONTROL Files]](#searchui)** van **[!UICONTROL Filters]** paneel selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
+U kunt zoekresultaten sorteren om sneller de vereiste elementen te vinden. U kunt de zoekresultaten sorteren in de lijstweergave en alleen wanneer u **[[!UICONTROL Files]](#searchui)** in het deelvenster **[!UICONTROL Filters]** selecteert. [!DNL Assets] gebruikt sorteren op de server om snel alle assets (hoe talrijk ook) in een map of de resultaten van een zoekopdracht te sorteren. Sorteren op de server levert sneller en nauwkeuriger resultaten op dan sorteren op de client.
 
-U kunt de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
+In de lijstweergave kunt u de zoekresultaten op dezelfde manier sorteren als elementen in een willekeurige map. Sorteren werkt op deze kolommen: Naam, Titel, Status, Dimension, Grootte, Classificatie, Gebruik (Gemaakt op), (Datum) Gewijzigd, (Datum) Gepubliceerd, Workflow en Uitgecheckt.
 
 Voor beperkingen van soortfunctionaliteit, zie [beperkingen](#limitations).
 
@@ -450,7 +454,7 @@ Een verzameling is een geordende set elementen die elementen van verschillende l
 
 U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Files]** en klik op **[!UICONTROL Save Smart Collection]**. Zie [Verzamelingen beheren](/help/assets/manage-collections.md).
 
-## Onverwachte zoekresultaten en problemen {#unexpectedresults}
+## Onverwachte zoekresultaten en problemen {#unexpected-results}
 
 | Fout, problemen, symptomen | Mogelijke reden | Mogelijke oplossing of begrip van het probleem |
 |---|---|---|

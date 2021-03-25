@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 543f59a82e869e7d004d994014e0bd586b013b02
+source-git-commit: 6f4cbacb89a891ea8193ca2f495aba353bea6b1a
 workflow-type: tm+mt
-source-wordcount: '5770'
+source-wordcount: '5791'
 ht-degree: 4%
 
 ---
@@ -519,7 +519,7 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+Als u een van deze parameters wilt bijwerken, volgt u de stappen in [Ondersteuning voor Classic uploadtaakparameter voor MIME-elementen/Dynamic Media Classic-uploads](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### De voorlopige wachtrij van Granite-workflows bijwerken {#updating-the-granite-transient-workflow-queue}
 

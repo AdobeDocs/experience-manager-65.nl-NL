@@ -3,9 +3,9 @@ title: '[!DNL Adobe Experience Manager] 6.5 de vorige de versienota''s van Servi
 description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
 translation-type: tm+mt
-source-git-commit: 131e564e4ed50c4f08412ba39c62f15b9c362b8c
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '17544'
+source-wordcount: '17558'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
    * Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
 
 * Ondersteuning voor [!DNL Microsoft SQL Server] 2019 in [!DNL Experience Manager Forms].
+
+* Steun voor [!DNL Microsoft] SQL Server 2016 altijd op beschikbaarheidsgroepen voor Hoge Beschikbaarheid voor plaatsingen OSGi.
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.22.5.
 
@@ -1383,7 +1385,7 @@ Enkele belangrijke kenmerken van deze Service Pack-release zijn:
 
 * Een fout &quot;Groep niet vermeld door de plukker van de gebruiker: onwaar naar verwacht gelijk aan true&quot; wordt waargenomen bij het toevoegen van een gesloten gebruikersgroep met verschillende `principalName` en `authorizableId` (CQ-4278177).
 
-* De Mening van de Kolom UI van activa toont alle wegen ongeacht de de dampwortel van specifieke huurder weg (CQ-4278175).
+* De Mening van de Kolom UI van activa toont alle wegen ongeacht de de damwortel van specifieke huurder weg (CQ-4278175).
 
 * Het zoeken door de kiezer van middelen werkt niet zoals verwacht (CQ-4275886).
 
@@ -1864,7 +1866,7 @@ De belangrijkste hoogtepunten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 **Backend-integratie**
 
-* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29944: Hotfix voor CQ-4270777
+* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29945: Hotfix voor CQ-4270777
 * Wanneer [!DNL Experience Manager Forms] is geïnstalleerd op IBM WebSphere, mislukt het maken van een formuliergegevensmodel op basis van SOAP. Hotfix voor CQ-4251134
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. Hotfix voor CQ-4270586
 * Als de titel van een gegevensbron wordt gewijzigd, wordt de bijgewerkte titel niet weergegeven in het formuliergegevensmodel. Hotfix voor CQ-4265599

@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f52fc643c30babab68bcf122eb3d91da5ce37a24
+source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3003'
 ht-degree: 0%
 
 ---
@@ -232,6 +232,10 @@ Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprof
 * De veldwaarden op de server valideren wanneer u een adaptief formulier verzendt.
 
 * Een PDF-formulier converteren naar een adaptief formulier met [!DNL Automated Forms Conversion service].
+
+#### Ondersteuning voor Microsoft SQL Server 2016 Altijd op beschikbaarheidsgroepen voor Hoge Beschikbaarheid (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] steunt nu  [!DNL Microsoft] SQL Server 2016 altijd op beschikbaarheidsgroepen voor Hoge Beschikbaarheid voor plaatsingen OSGi.
 
 #### Formuliergegevensmodel HTTP-clientconfiguratie voor optimale prestaties (6.5.7.0) {#fdm-http-client-config}
 

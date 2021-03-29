@@ -9,11 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2724'
 ht-degree: 1%
 
 ---
@@ -72,7 +71,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Workflowmodellen {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -121,7 +120,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Workflowinstanties {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -147,7 +146,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Workflow Launchers {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -178,7 +177,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Workflowscripts {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -213,7 +212,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### ContextHub Configurations {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -244,7 +243,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Klassieke Cloud Services ontwerpen {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -283,7 +282,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Klassieke dashboards ontwerpen {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -322,7 +321,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Klassieke rapportontwerpen {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -361,7 +360,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Standaardontwerpen {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -400,7 +399,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Adobe DTM JavaScript-eindpunt {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -423,7 +422,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Adobe DTM Web-Hook Eindpunt {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -446,7 +445,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Inbox Taken {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -473,7 +472,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Configuraties {#multi-site-manager-blueprint-configurations} voor beheer van meerdere locaties
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Vorige locatie</strong></td>
@@ -500,7 +499,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Gadget-configuraties voor AEM projecten {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -530,7 +529,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### E-mailsjabloon voor replicatiemelding {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -563,7 +562,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Labels {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -597,7 +596,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Cloud Services voor vertalingen {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -642,7 +641,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Vertaal talen {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -673,7 +672,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Vertaalregels {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -704,7 +703,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Widget-clientbibliotheek voor vertaling {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -747,11 +746,13 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 |---|---|
 | **Nieuwe locatie(s)** | `/libs/replication/treeactivation` |
 | **Herstructureringsrichtsnoeren** | Geen actie vereist. |
-| **Opmerkingen** | De Web Console van de Activering van de Boom is nu beschikbaar via **Hulpmiddelen > Plaatsing > Replicatie > Activate Tree**. |
+| **Opmerkingen** | De Web-console van de Activering van de Boom is nu beschikbaar via **Hulpmiddelen > Plaatsing > Replicatie > Activate Tree**. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ### Cloud Services Vertaalaansluiting leverancier {#vendor-translation-connector-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -798,7 +799,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### E-mailsjablonen voor workflowmelding {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>
@@ -830,7 +831,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 
 ### Workflowpakketten {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vorige locatie</strong></td>

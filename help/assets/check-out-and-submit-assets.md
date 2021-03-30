@@ -1,12 +1,12 @@
 ---
-title: Elementen in- en uitchecken voor bewerking
+title: Bestanden in [!DNL Assets] inchecken en uitchecken
 description: Leer hoe u middelen kunt uitchecken voor bewerking en ze weer kunt inchecken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
 role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: eb87d77e1366786e8574f84590dfe9a3303efda0
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '420'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,7 @@ Met deze functie voorkomt u dat andere gebruikers de wijzigingen overschrijven d
 ## Elementen {#checking-out-assets} uitchecken
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt uitchecken. U kunt ook meerdere elementen selecteren om uit te checken.
-1. Klik **[!UICONTROL Checkout]** op de werkbalk.
-Met de optie **[!UICONTROL Checkout]** schakelt u over naar **[!UICONTROL Checkin]**.
+1. Klik **[!UICONTROL Checkout]** op de werkbalk. Met de optie **[!UICONTROL Checkout]** schakelt u over naar **[!UICONTROL Checkin]**.
 Meld u aan als een andere gebruiker om te controleren of andere gebruikers het uitgecheckte element kunnen bewerken. Er wordt een vergrendelingssymbool weergegeven op de miniatuur van het element dat u hebt uitgecheckt.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -33,7 +32,7 @@ Meld u aan als een andere gebruiker om te controleren of andere gebruikers het u
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   U kunt op **[!UICONTROL View Properties]** klikken om de metagegevens voor het vergrendelde element te bewerken.
+   Als u de metagegevens voor het vergrendelde element wilt bewerken, klikt u op **[!UICONTROL View Properties]**.
 
 1. Klik op **[!UICONTROL Edit]** om het element in de bewerkingsmodus te openen.
 
@@ -64,6 +63,6 @@ Beheerders kunnen elementen inchecken die door andere gebruikers zijn uitgecheck
 
 >[!MORELIKETHIS]
 >
->* [Inchecken en uitchecken in Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Videozelfstudie voor meer informatie over het in- en uitchecken van middelen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Inchecken en uitchecken van  [!DNL Experience Manager] bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Videozelfstudie voor meer informatie over inchecken en uitchecken [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
 

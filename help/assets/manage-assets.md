@@ -4,10 +4,11 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 role: Zakelijke praktiserer
+feature: Middelenbeheer, zoeken
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '9360'
+source-wordcount: '9363'
 ht-degree: 3%
 
 ---

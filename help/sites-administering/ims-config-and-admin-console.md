@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: a71c1e87dd5f01ba2584282e0960ca27d419adb0
+source-git-commit: 655d32a4ebb72ca447fc2157b029f0d08cf42b27
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1691'
 ht-degree: 11%
 
 ---
@@ -65,7 +65,7 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. De aangewezen Systeembeheerder ontvangt een uitnodiging om zich aan te melden bij [!DNL Admin Console]
-1. System Admin eist Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
+1. System Admin beweert Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
 1. Systeembeheer stelt gebruikersmappen in
 1. Systeembeheerder configureert de Identiteitsprovider (IDP) in [!DNL Admin Console] voor SSO-installatie.
 1. De AEM Admin beheert de lokale groepen, de toestemmingen en de voorrechten zoals gebruikelijk. Zie Synchronisatie van gebruikers en groepen
@@ -127,7 +127,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 >Raadpleeg de [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie over het gereedschap Gebruikerssynchronisatie.
 >
 >
->Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>Het hulpmiddel van de Synchronisatie van de Gebruiker moet als Adobe I/O cliënt UMAPI registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
 >De documentatie van de Adobe I/O-console vindt u [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
@@ -206,7 +206,9 @@ In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lok
 
 Hier, is een gebruiker ook toegewezen aan een paar groepen in [!DNL Admin Console]. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie **Gebruikers aan boord nemen op[!DNL Admin Console]** hierboven).
 
-&amp;ast;Merk op dat gebruikersgroepen slechts gesynchroniseerd worden wanneer de gebruikers aan de instantie, voor klanten die een groot aantal gebruikers en groepen hebben, een nut van de Synchronisatie van de Groep kan door AMS worden in werking gesteld om groepen voor toegangsbeheer en toestemmingenbeheer vooraf te halen zoals hierboven beschreven.
+>[!NOTE]
+>
+>Gebruikersgroepen worden alleen gesynchroniseerd wanneer de gebruikers zich aanmelden bij de instantie.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 

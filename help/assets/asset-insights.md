@@ -2,11 +2,12 @@
 title: 'Asset Insights '
 description: Leer hoe u met Asset Insights gebruikersbeoordelingen en gebruiksstatistieken kunt bijhouden van afbeeldingen die worden gebruikt in websites van derden, marketingcampagnes en creatieve oplossingen voor Adobe.
 contentOwner: AG
-role: Zakelijke praktiserer
+role: Bedrijfs Praktijk, Beheerder
+feature: Asset Insights, Asset Reports
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '699'
 ht-degree: 2%
 
 ---

@@ -3,10 +3,11 @@ title: Integreer [!DNL Assets] met activiteitsstroom
 description: Beschrijft de opnamemogelijkheden van [!DNL Experience Manager] en hoe te om het te vormen om specifieke gebeurtenissen te registreren.
 contentOwner: AG
 role: Developer
+feature: Beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---

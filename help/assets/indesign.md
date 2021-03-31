@@ -3,10 +3,11 @@ title: Integreer [!DNL Assets] met [!DNL InDesign Server]
 description: Leer hoe te om [!DNL Adobe Experience Manager Assets] met [!DNL Adobe InDesign Server] te integreren.
 contentOwner: AG
 role: Beheerder
+feature: Publiceren
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1548'
 ht-degree: 1%
 
 ---

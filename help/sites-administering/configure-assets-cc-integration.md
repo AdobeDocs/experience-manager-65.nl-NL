@@ -1,51 +1,41 @@
 ---
-title: AEM Assets-integratie configureren met Experience Cloud en Creative Cloud
-seo-title: AEM Assets-integratie configureren met Marketing Cloud en Creative Cloud
-description: Leer hoe u AEM Assets-integratie kunt configureren met Experience Cloud en Creative Cloud.
-seo-description: Leer hoe u AEM Assets-integratie kunt configureren met Experience Cloud en Creative Cloud.
-uuid: ec36ea0e-607f-4c73-89df-e095067fccd4
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: integration
-content-type: reference
-discoiquuid: 82a8e807-a2df-4fe3-a68c-2dabc9328eca
-docset: aem65
+title: AEM Assets-integratie configureren met Experience Cloud
+description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
+contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Business Practice, Architect, Administrator
 translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+source-git-commit: 4cc8e60694e2aea74dfedd0bbcb8d47a208d45d1
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '922'
 ht-degree: 1%
 
 ---
 
 
-# AEM Assets-integratie configureren met Experience Cloud en Creative Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
+# AEM Assets-integratie configureren met Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen in Adobe Experience Manager Assets synchroniseren met Adobe Creative Cloud en andersom. U kunt uw elementen ook synchroniseren met Experience Cloud en andersom. U kunt deze synchronisatie instellen via [!DNL Adobe I/O].
+Als u een Adobe Experience Cloud-klant bent, kunt u uw middelen in Adobe Experience Manager Assets synchroniseren met Adobe Creative Cloud en andersom. U kunt uw elementen ook synchroniseren met Experience Cloud en andersom. U kunt deze synchronisatie instellen via [!DNL Adobe I/O]. De bijgewerkte naam van [!DNL Adobe Marketing Cloud] is [!DNL Adobe Experience Cloud].
 
 De workflow voor het instellen van deze integratie is:
 
 1. Creeer een authentificatie in [!DNL Adobe I/O] gebruikend een openbare gateway en krijg toepassingsidentiteitskaart
 1. Maak een profiel op uw AEM Assets-instantie met de toepassings-id.
-1. Gebruik deze configuratie om uw elementen in AEM Assets te synchroniseren met Creative Cloud.
+1. Gebruik deze configuratie om uw elementen te synchroniseren.
 
-Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchroniseert dan de gegevens tussen AEM Assets en Experience Cloud.
+Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchroniseert dan de gegevens tussen Middelen en Experience Cloud.
 
 >[!CAUTION]
 >
->De functie AEM naar Creative Cloud Mappen delen is afgekeurd in AEM Assets. Leer meer en vind vervangingen in [AEM en de Beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>Deze functie is afgekeurd in AEM Assets. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenservice van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
-![Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd](assets/chlimage_1-48.png)
-
-Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd
+<!-- Hiding this for now via cqdoc-16834.
+![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
 
 >[!NOTE]
 >
->Voor het delen van elementen tussen Adobe Experience Cloud en Adobe Creative Cloud zijn beheerdersrechten voor de AEM vereist.
-
->[!CAUTION]
->
->Adobe Marketing Cloud is omgedoopt tot Adobe Experience Cloud. In de onderstaande procedures wordt nog steeds verwezen naar Marketing Cloud om de huidige interface te weerspiegelen. Deze vermeldingen zullen later worden gewijzigd.
+>Sharing assets between Adobe Experience Cloud and Adobe Creative Cloud requires administrator privileges on the AEM instance.
+-->
 
 ## Een toepassing {#create-an-application} maken
 
@@ -74,11 +64,11 @@ Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd
    >
    >Zorg ervoor dat u niet per ongeluk **[!UICONTROL Application Secret]** in plaats van **[!UICONTROL Application ID]** kopieert.
 
-## Nieuwe configuratie toevoegen aan Marketing Cloud {#add-a-new-configuration-to-marketing-cloud}
+## Nieuwe configuratie toevoegen aan Experience Cloud {#add-a-new-configuration}
 
 1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-instantie en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
 
-1. Zoek de **[!UICONTROL Adobe Marketing Cloud]**-service. Als er geen configuraties bestaan, klikt u op **[!UICONTROL Configure Now]**. Als configuraties bestaan, klik **[!UICONTROL Show Configurations]** en klik `+` om een nieuwe configuratie toe te voegen.
+1. Zoek de **[!UICONTROL Adobe Experience Cloud]**-service. Als er geen configuraties bestaan, klikt u op **[!UICONTROL Configure Now]**. Als configuraties bestaan, klik **[!UICONTROL Show Configurations]** en klik `+` om een nieuwe configuratie toe te voegen.
 
    >[!NOTE]
    >
@@ -88,38 +78,27 @@ Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd
 
    ![Geef een nieuwe configuratie de naam om AEM Assets en CC te integreren](assets/chlimage_1-51.png)
 
-1. Geef in het veld **[!UICONTROL Tenant URL]** de URL voor AEM Assets op.
+1. Geef in het veld **[!UICONTROL Tenant URL]** de URL voor AEM Assets op. Als de URL in het verleden is gedefinieerd als `https://<tenant_id>.marketing.adobe.com`, wijzigt u deze in `https://<tenant_id>.experiencecloud.adobe.com`.
 
-   >[!CAUTION]
-   >
-   >Als u de URL voor de huurder hebt ingevoerd als `https://<tenant_id>.marketing.adobe.com`, moet u de URL wijzigen in `https://<tenant_id>.experiencecloud.adobe.com.` Hiervoor volgt u de onderstaande stappen:
-   >
-   >1. Navigeer naar **Gereedschappen > Cloud Services > Oudere Cloud Services**.
-   1. Klik onder Adobe Marketing Cloud op **Configuraties tonen**.
-   1. Selecteer de configuratie die terwijl vestiging de AEM-MAC-CC synchronisatie werd gecreeerd.
-   1. Bewerk de configuratie van cloudservice en vervang **marketing.adobe.com** in het veld Tenant URL naar **ExperienceCloud.adobe.com**.
-   1. Sla de configuratie op.
-   1. Test de MAC-sync replicatieagenten.
+   1. Navigeer naar **Gereedschappen > Cloud Services > Oudere Cloud Services**. Klik onder Adobe Experience Cloud op **Configuraties tonen**.
+   1. Selecteer de bestaande configuratie die u wilt bewerken. Bewerk de configuratie en vervang `marketing.adobe.com` naar `experiencecloud.adobe.com`.
+   1. Sla de configuratie op. Test de MAC-sync replicatieagenten.
 
-
-1. Plak in het veld **[!UICONTROL Client ID]** de toepassings-id die u aan het einde van de procedure hebt gekopieerd [Een toepassing maken](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
+1. Plak in het veld **[!UICONTROL Client ID]** de toepassings-id die u aan het einde van de procedure hebt gekopieerd [een toepassing maken](#create-an-application).
 
    ![Geef de waarden voor de toepassings-id op die vereist zijn voor de integratie van AEM Assets en Creative Cloud](assets/cloudservices_tenant_info.png)
 
-1. Selecteer **[!UICONTROL Synchronization]** onder **[!UICONTROL Enabled]** om synchronisatie in te schakelen en klik **[!UICONTROL OK]**.
-
-   >[!NOTE]
-   Als u **disabled** selecteert, werkt de synchronisatie in één richting.
+1. Selecteer **[!UICONTROL Synchronization]** onder **[!UICONTROL Enabled]** om synchronisatie in te schakelen en klik **[!UICONTROL OK]**. Als u **disabled** selecteert, werkt de synchronisatie in één richting.
 
 1. Van de configuratiepagina, klik **[!UICONTROL Display Public Key]** om de openbare sleutel te tonen die voor uw instantie wordt geproduceerd. U kunt ook op **[!UICONTROL Download Public Key for OAuth Gateway]** klikken om het bestand met de openbare sleutel te downloaden. Open vervolgens het bestand om de openbare sleutel weer te geven.
 
 ## Synchronisatie {#enable-synchronization} inschakelen
 
-1. Toon de openbare sleutel gebruikend één van de volgende methodes die in de laatste stap van de procedure [een nieuwe configuratie aan Marketing Cloud ](/help/sites-administering/configure-assets-cc-integration.md#add-a-new-configuration-to-marketing-cloud) worden vermeld. Klik op **[!UICONTROL Display Public Key]**.
+1. Toon de openbare sleutel gebruikend één van de volgende methodes die in de laatste stap van de procedure [worden vermeld voeg een nieuwe configuratie aan Experience Cloud ](#add-a-new-configuration) toe. Klik op **[!UICONTROL Display Public Key]**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Kopieer de openbare sleutel en plak het in het **[!UICONTROL Public Key]** gebied van configuratieinterface van de toepassing u in [creeerde een toepassing ](/help/sites-administering/configure-assets-cc-integration.md#create-an-application).
+1. Kopieer de openbare sleutel en plak het in het **[!UICONTROL Public Key]** gebied van configuratieinterface van de toepassing u in [creeerde een toepassing ](#create-an-application).
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -136,55 +115,64 @@ Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd
 
 1. Wanneer de replicatierest voltooit, controleer een succesbericht aan het eind van de testresultaten.
 
-## Gebruikers toevoegen aan Marketing Cloud {#add-users-to-marketing-cloud}
+## Gebruikers toevoegen aan Experience Cloud {#add-users-to-experience-cloud}
 
-1. Meld u aan bij de Marketing Cloud met beheerdersreferenties.
+1. Meld u met beheerdersreferenties aan bij Experience Cloud.
 1. Ga vanaf de rails naar **[!UICONTROL Administration]** en klik/tik **[!UICONTROL Launch Enterprise Dashboard]**.
 1. Klik in de track op **[!UICONTROL Users]** om de pagina **[!UICONTROL User Management]** te openen.
-1. Klik/tik **Add** ![name_assets_add_icon](assets/aem_assets_add_icon.png) op de werkbalk.
+1. Klik op **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png) op de werkbalk.
 1. Voeg een of meer gebruikers toe die u de mogelijkheid wilt bieden elementen te delen met Creative Cloud.
 
+<!-- TBD: Check.
    >[!NOTE]
-   Alleen de gebruikers die u aan de Marketing Cloud toevoegt, kunnen elementen van AEM Assets naar Creative Cloud delen.
+   >
+   >Only the users that you add to Experience Cloud can share assets from AEM Assets to Creative Cloud.
 
-## Wisselmiddelen tussen AEM Assets en Marketing Cloud {#exchange-assets-between-aem-assets-and-marketing-cloud}
+-->
+
+## Wisselmiddelen tussen AEM Assets en Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Meld u aan bij AEM Assets.
 1. Maak een map in de middelenconsole en upload enkele bestanden naar deze map. Maak bijvoorbeeld een map **mc-demo** en upload er een element naar.
-1. Selecteer de map en klik op **Delen** ![assets_share](assets/assets_share.png).
-1. Selecteer **[!UICONTROL Adobe Marketing Cloud]** in het menu en klik **[!UICONTROL Share]**. Een bericht meldt dat de map wordt gedeeld met Marketing Cloud.
-
-   ![chlimage_1-55](assets/chlimage_1-55.png)
+1. Selecteer de map en klik op **Delen** ![assets_share](assets/do-not-localize/assets_share.png).
+1. Selecteer **[!UICONTROL Adobe Experience Cloud]** in het menu en klik **[!UICONTROL Share]**. Een bericht meldt dat de map wordt gedeeld met Experience Cloud.
 
    >[!NOTE]
-   Het delen van een map Middelen van het type `sling:OrderedFolder` wordt niet ondersteund in de context van delen in Adobe Marketing Cloud. Als u een map wilt delen, moet u bij het maken ervan in AEM Assets de optie **[!UICONTROL Ordered]** niet selecteren.
+   >
+   >Het delen van een map Middelen van het type `sling:OrderedFolder` wordt niet ondersteund in de context van delen in Adobe Experience Cloud. Als u een map wilt delen, moet u bij het maken ervan in AEM Assets de optie **[!UICONTROL Ordered]** niet selecteren.
 
-1. Vernieuw de AEM Assets-gebruikersinterface. De map die u hebt gemaakt in de middelenconsole van uw lokale AEM Assets-instantie, wordt gekopieerd naar de gebruikersinterface van de Marketing Cloud. Het middel dat u naar de map in AEM Assets uploadt, wordt in de kopie van de map in de Marketing Cloud weergegeven nadat deze door de AEM server is verwerkt.
-1. U kunt ook elementen uploaden in de gekopieerde kopie van de map in Marketing Cloud. Nadat het element is verwerkt, wordt het in de gedeelde map in AEM Assets weergegeven.
+1. Vernieuw de AEM Assets-gebruikersinterface. De map die u in de middelenconsole van uw lokale AEM Assets-instantie hebt gemaakt, wordt gekopieerd naar de gebruikersinterface van de Experience Cloud. Het middel dat u uploadt naar de omslag in AEM Assets verschijnt in het exemplaar van de omslag in Experience Cloud nadat het door de AEM server wordt verwerkt.
+1. U kunt ook elementen uploaden in de gekopieerde kopie van de map in Experience Cloud. Nadat het element is verwerkt, wordt het in de gedeelde map in AEM Assets weergegeven.
 
-## Wisselmiddelen tussen AEM Assets en Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
+<!-- Removing as per PM guidance via https://jira.corp.adobe.com/browse/CQDOC-16834?focusedCommentId=22881523&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-22881523.
+
+## Exchange assets between AEM Assets and Creative Cloud {#exchange-assets-between-aem-assets-and-creative-cloud}
 
 >[!CAUTION]
-De functie Mappen delen AEM naar Creative Cloud is vervangen. Klanten wordt ten zeerste aangeraden nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Leer meer in [AEM en de Beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>
+>The AEM to Creative Cloud Folder Sharing feature is deprecated. Customers are strongly advised to use newer capabilities, like [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) or [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Learn more in [AEM and Creative Cloud Integration Best Practices](/help/assets/aem-cc-integration-best-practices.md).
 
-Met AEM Assets kunt u mappen met elementen delen met Adobe Creative Cloud-gebruikers.
+AEM Assets lets you share folders containing assets with Adobe Creative Cloud users.
 
-1. Selecteer in de middelenconsole de map die u wilt delen met Creative Cloud.
-1. Klik op **[!UICONTROL Share]** ![assets_share](assets/assets_share.png) op de werkbalk.
-1. Selecteer in de lijst de optie **[!UICONTROL Adobe Creative Cloud]**.
+1. In the Assets console, select the folder to share with Creative Cloud.
+1. From the toolbar, click **[!UICONTROL Share]** ![assets_share](assets/do-not-localize/assets_share.png).
+1. From the list, select the **[!UICONTROL Adobe Creative Cloud]** option.
 
    >[!NOTE]
-   De opties zijn beschikbaar voor gebruikers met leesmachtigingen in de hoofdmap. De gebruikers moeten de vereiste toestemming hebben om tot de informatie van de replicatieagent van Marketing Cloud toegang te hebben.
+   >
+   >The options are available for users with read permissions on the root. Users must have the required permission to access the replication agent information of Marketing Cloud.
 
-1. Voeg op de pagina **[!UICONTROL Creative Cloud Sharing]** de gebruiker toe om de map te delen met en kies een rol voor de gebruiker. Klik **[!UICONTROL Save]** en klik **[!UICONTROL OK]**.
+1. In the **[!UICONTROL Creative Cloud Sharing]** page, add the user to share the folder with and choose a role for the user. Click **[!UICONTROL Save]** and click **[!UICONTROL OK]**.
 
-1. Meld u aan bij Creative Cloud met de gegevens van de gebruiker met wie u de map hebt gedeeld. De gedeelde map is beschikbaar in Creative Cloud.
+1. Log on to Creative Cloud with the credentials of the user you shared the folder with. The shared folder is available in Creative Cloud.
 
-De synchronisatie tussen AEM Assets en Marketing Cloud is zodanig ontworpen dat de instantie van de gebruikerscomputer van waaruit het element is geüpload het recht behoudt om het element te wijzigen. Alleen deze wijzigingen worden doorgegeven aan de andere instantie.
+The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-Als een element bijvoorbeeld wordt geüpload vanuit een AEM Assets-instantie (op locatie), worden de wijzigingen in het element van deze instantie doorgegeven aan de instantie Marketing Cloud. De wijzigingen die zijn doorgevoerd van de instantie Marketing Cloud naar hetzelfde element, worden echter niet doorgegeven aan de instantie AEM en andersom voor elementen die zijn geüpload uit Marketing Cloud.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+-->
 
 >[!MORELIKETHIS]
-* [Aanbevolen werkwijzen voor AEM en Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md)
-* [Aanbevolen werkwijzen voor het delen van mappen AEM naar Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md)
+>
+>* [Aanbevolen werkwijzen voor het integreren van middelen en Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
+>* [Middelen naar Creative Cloud-map die aanbevolen werkwijzen deelt](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

@@ -3,10 +3,11 @@ title: Metagegevensconcepten begrijpen
 description: Leer over de behoefte van en de soorten meta-gegevens die voor gemakkelijkere categorisering en organisatie van activa toestaan.
 contentOwner: AG
 role: Bedrijfs Praktijk, Beheerder
+feature: Metagegevens
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2722'
+source-wordcount: '2723'
 ht-degree: 6%
 
 ---

@@ -3,10 +3,11 @@ title: Watermerk toevoegen aan uw digitale elementen
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
 role: Bedrijfs Praktijk, Beheerder
+feature: Beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---

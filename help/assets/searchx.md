@@ -3,11 +3,12 @@ title: De zoekfunctionaliteit uitbreiden.
 description: Breid de onderzoeksmogelijkheden van [!DNL Adobe Experience Manager Assets] voorbij de gebreken uit.
 contentOwner: AG
 role: Developer
+feature: Zoeken
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 15%
+source-wordcount: '840'
+ht-degree: 16%
 
 ---
 

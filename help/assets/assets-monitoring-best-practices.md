@@ -3,10 +3,11 @@ title: Aanbevolen procedures voor het bewaken van [!DNL Assets] implementatie
 description: Beste praktijken om het milieu en de prestaties van uw  [!DNL Adobe Experience Manager] plaatsing te controleren nadat het wordt opgesteld.
 contentOwner: AG
 role: Beheerder, architect
+feature: Beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---

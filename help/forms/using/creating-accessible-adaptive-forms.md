@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 7a3f54d90769708344e6751756b2a12ac6c962d7
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 0%
+source-wordcount: '2057'
+ht-degree: 1%
 
 ---
 
@@ -163,6 +163,24 @@ De volgende sneltoetsen zijn beschikbaar in AEM Forms.
 | Naar het vorige deelvenster gaan | Alt+Pijl-links |
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
 | Een formulier verzenden | Alt+Z |
+
+Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de component **[!UICONTROL Date Picker]** in Adaptive Forms. Tik op de **[!UICONTROL Date Picker]**-component en tik ![Configure](assets/configure-icon.svg) om de eigenschappen te openen. Selecteer in de sectie **[!UICONTROL Patterns]** een weergavepatroon met de vervolgkeuzelijsten **[!UICONTROL Type]** en **[!UICONTROL Pattern]**. Sla de eigenschappen op om het gebruik van sneltoetsen voor de component **[!UICONTROL Date Picker]** in te schakelen.
+
+De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adaptive Forms:
+
+| Actie | Sneltoets |
+|---|---|
+| <ul><li>De opties van de component Date Picker weergeven wanneer de tabfocus het kalenderpictogram markeert</li><li>De gebeurtenis click uitvoeren wanneer de tabfocus een optie markeert</li> | Ruimte of Enter |
+| De opties van de component Datumkiezer verbergen | Esc |
+| <ul><li>Verplaats de cursor vooruit door de opties in de component Datumkiezer.</li><li>Tabfocus instellen op kalenderpictogram wanneer datuminvoerveld actief is</li> | Tab |
+| De cursor achterwaarts verplaatsen met de opties die beschikbaar zijn in de component Datumkiezer | Shift+Tab |
+| <ul><li>De opties van de component Date Picker weergeven wanneer de tabfocus het invoerveld voor de datum markeert</li><li>De cursor omlaag verplaatsen in de kalender die beschikbaar is in de component Datumkiezer</li> | Pijl-omlaag |
+| De cursor omhoog verplaatsen in de kalender die beschikbaar is in de component Datumkiezer | Pijl-omhoog |
+| De cursor achterwaarts verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-links |
+| De cursor vooruit verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-rechts |
+| Voer de handeling uit voor het bijschrift dat beschikbaar is tussen rechter- en linkernavigatiepijlen in de kalender | Shift+Pijl-omhoog |
+| Voer de actie voor het juiste navigatiepijlpictogram ![pijl-rechts](assets/right-navigation-icon.svg) beschikbaar in de kalender uit | Shift+Pijl-links |
+| Voer de actie voor het pictogram van de linkernavigatiepijl ![left-arrow](assets/left-navigation-icon.svg) beschikbaar in de kalender uit | Shift+Pijl-rechts |
 
 ## Gebruik het gereedschap Toegankelijkheid om resterende toegankelijkheidsproblemen te zoeken
 

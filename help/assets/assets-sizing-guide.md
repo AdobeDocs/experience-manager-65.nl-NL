@@ -3,10 +3,11 @@ title: '[!DNL Assets] formaatgids'
 description: Aanbevolen werkwijzen om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om  [!DNL Adobe Experience Manager Assets] op te stellen.
 contentOwner: AG
 role: Architect, beheerder
+feature: Beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---

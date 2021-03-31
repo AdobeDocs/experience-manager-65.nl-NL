@@ -3,10 +3,11 @@ title: Aanpassen en uitbreiden [!DNL Assets]
 description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen en uitbreiden, waarmee gebruikers een specifiek op maat gemaakte interface en een set functies krijgen.
 contentOwner: AG
 role: Developer
+feature: Gereedschappen voor ontwikkelaars
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---

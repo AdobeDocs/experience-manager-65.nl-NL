@@ -4,9 +4,9 @@ description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL 
 contentOwner: AG
 role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: e6a0cab17d203183cc4169563179060338596cc3
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Naast het elimineren van overtolligheid, het van verwijzingen voorzien van de ac
 
 Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van de middelen waarnaar wordt verwezen.
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Illustrator] {#refai}
+## [!DNL Adobe Illustrator]: Digitale elementen toevoegen als verwijzingen  {#refai}
 
 U kunt naar bestaande digitale elementen verwijzen vanuit een [!DNL Adobe Illustrator]-bestand.
 
@@ -45,7 +45,7 @@ U kunt naar bestaande digitale elementen verwijzen vanuit een [!DNL Adobe Illust
 
    *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Digitale elementen toevoegen als verwijzingen  {#add-aem-assets-as-references-in-adobe-indesign}
 
 Als u vanuit een [!DNL InDesign]-bestand naar digitale elementen wilt verwijzen, sleept u elementen naar het [!DNL InDesign]-bestand of exporteert u het [!DNL InDesign]-bestand als een ZIP-archief.
 
@@ -55,6 +55,8 @@ Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets
 >
 >Als de [!DNL InDesign Server] proxied is, is de voorvertoning van [!DNL InDesign]-bestanden ingesloten in de XMP metagegevens. In dit geval is het niet expliciet vereist miniatuurextractie uit te voeren. Als de [!DNL InDesign Server] echter geen proxy is, moeten de miniaturen expliciet worden geëxtraheerd voor [!DNL InDesign]-bestanden.
 
+Wanneer een INDD-bestand wordt geüpload, worden de verwijzingen opgehaald door te zoeken naar elementen met de eigenschappen `xmpMM:InstanceID` en `xmpMM:DocumentID` in de opslagplaats.
+
 ### Verwijzingen maken door elementen {#create-references-by-dragging-aem-assets} te slepen
 
 Deze procedure is vergelijkbaar met [digitale elementen toevoegen als verwijzingen in Adobe Illustrator](#refai).
@@ -62,12 +64,12 @@ Deze procedure is vergelijkbaar met [digitale elementen toevoegen als verwijzing
 ### Verwijzingen naar elementen maken door een ZIP-bestand {#create-references-to-aem-assets-by-exporting-a-zip-file} te exporteren
 
 1. Voer de stappen in [Workflowmodellen maken](/help/sites-developing/workflows-models.md) uit om een nieuwe workflow te maken.
-1. Gebruik de functie Pakket van [!DNL Adobe InDesign] om het document uit te voeren. [!DNL Adobe InDesign] U kunt een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een map Koppelingen met subelementen in het [!DNL InDesign]-bestand.
+1. Gebruik de [functie Pakket](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document te exporteren. [!DNL Adobe InDesign] U kunt een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links`-map die subelementen bevat in het [!DNL InDesign]-bestand. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
 1. Maak een ZIP-bestand en upload het bestand naar de [!DNL Experience Manager]-opslagplaats.
 1. Start de `Unarchiver`-workflow.
 1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails van het [!DNL InDesign]-element en sluit u [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Digitale elementen toevoegen als verwijzingen in [!DNL Adobe Photoshop] {#refps}
+## [!DNL Adobe Photoshop]: Digitale elementen toevoegen als verwijzingen  {#refps}
 
 1. Gebruik [!DNL Experience Manager] desktop app om [!DNL Experience Manager Assets] te openen. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie [Elementen in de bureaubladtoepassing plaatsen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 

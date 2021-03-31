@@ -3,10 +3,11 @@ title: Integratie met best practices van Adobe Creative Cloud
 description: Aanbevolen procedures om [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] te integreren om workflows voor de overdracht van elementen te stroomlijnen en een hoge snelheid van de inhoud te bereiken.
 contentOwner: AG
 role: Bedrijfs Praktijk, Beheerder
+feature: Samenwerking,Adobe Asset Link,Experience Manager-bureaubladtoepassing
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3259'
 ht-degree: 15%
 
 ---

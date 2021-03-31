@@ -3,10 +3,11 @@ title: Netwerkoverwegingen en -vereisten
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een  [!DNL Adobe Experience Manager Assets] plaatsing.
 contentOwner: AG
 role: Architect, beheerder
+feature: Gereedschappen voor ontwikkelaars
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---

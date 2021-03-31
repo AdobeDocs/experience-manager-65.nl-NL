@@ -4,10 +4,11 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 role: Zakelijke praktiserer
+feature: Verzamelingen, beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2029'
 ht-degree: 10%
 
 ---

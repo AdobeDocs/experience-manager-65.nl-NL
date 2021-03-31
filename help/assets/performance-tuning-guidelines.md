@@ -4,10 +4,11 @@ description: Suggesties en richtlijnen voor [!DNL Experience Manager] configurat
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, beheerder
+feature: Beheer van bedrijfsmiddelen
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---

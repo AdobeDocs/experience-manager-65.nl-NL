@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Business Practice, Architect, Administrator
 translation-type: tm+mt
-source-git-commit: 4cc8e60694e2aea74dfedd0bbcb8d47a208d45d1
+source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '920'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ De workflow voor het instellen van deze integratie is:
 
 Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchroniseert dan de gegevens tussen Middelen en Experience Cloud.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Deze functie is afgekeurd in AEM Assets. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenservice van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
@@ -76,7 +76,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 1. Geef in het dialoogvenster **[!UICONTROL Create Configuration]** een titel en naam voor de nieuwe configuratie op en klik op **[!UICONTROL Create]**.
 
-   ![Geef een nieuwe configuratie de naam om AEM Assets en CC te integreren](assets/chlimage_1-51.png)
+   ![Geef een nieuwe configuratie de naam om AEM Assets en CC te integreren](assets/aem-ec-integration-config1.png)
 
 1. Geef in het veld **[!UICONTROL Tenant URL]** de URL voor AEM Assets op. Als de URL in het verleden is gedefinieerd als `https://<tenant_id>.marketing.adobe.com`, wijzigt u deze in `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -95,8 +95,6 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 ## Synchronisatie {#enable-synchronization} inschakelen
 
 1. Toon de openbare sleutel gebruikend één van de volgende methodes die in de laatste stap van de procedure [worden vermeld voeg een nieuwe configuratie aan Experience Cloud ](#add-a-new-configuration) toe. Klik op **[!UICONTROL Display Public Key]**.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 1. Kopieer de openbare sleutel en plak het in het **[!UICONTROL Public Key]** gebied van configuratieinterface van de toepassing u in [creeerde een toepassing ](#create-an-application).
 
@@ -118,7 +116,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 ## Gebruikers toevoegen aan Experience Cloud {#add-users-to-experience-cloud}
 
 1. Meld u met beheerdersreferenties aan bij Experience Cloud.
-1. Ga vanaf de rails naar **[!UICONTROL Administration]** en klik/tik **[!UICONTROL Launch Enterprise Dashboard]**.
+1. Ga vanaf de rails naar **[!UICONTROL Administration]** en klik vervolgens op **[!UICONTROL Launch Enterprise Dashboard]**.
 1. Klik in de track op **[!UICONTROL Users]** om de pagina **[!UICONTROL User Management]** te openen.
 1. Klik op **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png) op de werkbalk.
 1. Voeg een of meer gebruikers toe die u de mogelijkheid wilt bieden elementen te delen met Creative Cloud.

@@ -3,10 +3,11 @@ title: PDF-rasterfunctie gebruiken om uitvoeringen te genereren
 description: U kunt miniaturen en uitvoeringen van hoge kwaliteit genereren met de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
 role: Ontwikkelaar, beheerder
+feature: Gereedschappen voor ontwikkelaars, uitvoeringen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---

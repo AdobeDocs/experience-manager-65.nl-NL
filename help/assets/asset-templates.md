@@ -3,10 +3,11 @@ title: Elementsjablonen
 description: Leer over de malplaatjes van Activa in [!DNL Adobe Experience Manager Assets] en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
 contentOwner: AG
 role: Zakelijke praktiserer
+feature: Asset Management, ontwikkelprogramma's
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -103,7 +104,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
 1. Selecteer het afbeeldingsveld in de lijst met bewerkbare velden en sleep een gewenste afbeelding van de elementkiezer naar het bewerkbare veld.
 
-   ![chlimage_1-115](assets/chlimage_1-319.png)
+   ![chlimage_1-114](assets/chlimage_1-319.png)
 
    U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door [!DNL Experience Manager Assets] bewaarplaats doorbladeren en aan de plaats van het gewenste beeld navigeren.
 

@@ -3,11 +3,12 @@ title: Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen
 description: Leer hoe u met de functie voor meerdere huurders inhoud in de CRX-opslagplaats kunt scheiden op basis van de organisatie van de klant om ongeoorloofde toegang te voorkomen.
 contentOwner: AG
 role: Architect, beheerder, leider
+feature: Verzamelingen
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 0%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 

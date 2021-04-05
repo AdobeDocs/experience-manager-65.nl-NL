@@ -2,14 +2,14 @@
 title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
+exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 translation-type: tm+mt
-source-git-commit: 6f5e650c99017c4b2f04ca8495eea8481b3236cd
+source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
 workflow-type: tm+mt
-source-wordcount: '4383'
+source-wordcount: '4382'
 ht-degree: 0%
 
 ---
-
 
 # Plug-ins {#configure-the-rich-text-editor-plug-ins} van de Rich Text Editor configureren
 
@@ -73,13 +73,13 @@ Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op het
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Hierdoor kan de auteur de tekst controleren die de auteur vervangt. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
-## De plakmodi {#pastemodes} configureren
+## De plakmodi {#paste-modes} configureren
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
 * **Browsermodus**: Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
 
-* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd.
+* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de component [!DNL Experience Manager] worden ingevoegd.
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
@@ -124,7 +124,7 @@ De plakken-als-Microsoft-Word (`paste-wordhtml`) wijze kan verder worden gevormd
 
 Als u bijvoorbeeld alleen vette indelingen en lijsten wilt toestaan bij het plakken in AEM, kunt u de andere indelingen filteren. Dit wordt configureerbare het kleven het filtreren genoemd, die voor allebei kan worden gedaan:
 
-* [Tekst](#pastemodes)
+* [Tekst](#paste-modes)
 * [Koppelingen](#linkstyles)
 
 Voor koppelingen kunt u ook de protocollen definiëren die automatisch worden geaccepteerd.
@@ -589,7 +589,7 @@ Soms kunt u gegevenslijsten zonder visuele tekst in een kolomkopbal tot stand br
 Om toegankelijkheid in dergelijke scenario&#39;s te verbeteren, steunt RTE verborgen kopbalcellen. Bovendien worden er configuratie-instellingen gegeven voor verborgen koppen in tabellen. Met deze instellingen kunt u CSS-stijlen toepassen op verborgen koppen in de bewerkings- en voorvertoningsmodus. Om auteurs te helpen verborgen kopballen in Edit wijze identificeren, omvat de volgende parameters in uw code:
 
 * `hiddenHeaderEditingCSS`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
-* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
+* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst wanneer RTE wordt bewerkt.
 
 Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de CSS-klasse voorrang op de stijltekenreeks en kan deze alle configuratiewijzigingen overschrijven die de stijltekenreeks aanbrengt.
 

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 3bb12f6323398971ec315f49611a39977bd548a2
 workflow-type: tm+mt
-source-wordcount: '5859'
+source-wordcount: '5874'
 ht-degree: 1%
 
 ---
@@ -515,6 +515,8 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Best
 **[!UICONTROL Enable Advanced Tagging]**: Hiermee voegt u geavanceerde codes toe voor verbeterde toegankelijkheid.
 
 **[!UICONTROL Convert All Styles To Bookmarks]**: Hiermee converteert u alle stijlen in het Word-document naar bladwijzers in het PDF-document.
+
+**[!UICONTROL Convert specified styles to bookmarks]**: Hiermee converteert u de stijlen die u in het  **[!UICONTROL Styles with levels]** veld definieert naar bladwijzers in het PDF-document.
 
 **[!UICONTROL Styles With Levels]**: Hiermee geeft u op welke stijlen in het Word-document worden geconverteerd naar bladwijzers in het PDF-document. Hiermee geeft u ook het niveau van de bladwijzers op. Als u deze functie wilt gebruiken, schakelt u de optie **[!UICONTROL Convert All Styles To Bookmarks]** uit en geeft u de stijlnamen op in de volgende indeling:
 

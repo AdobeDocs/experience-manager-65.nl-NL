@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactieve communicatie
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
 workflow-type: tm+mt
-source-wordcount: '5948'
+source-wordcount: '6038'
 ht-degree: 0%
 
 ---
-
 
 # Een interactieve communicatie maken{#create-an-interactive-communication}
 
@@ -611,3 +611,23 @@ Met de ontwerpinterface voor webkanalen kunt u de componenten groeperen in een d
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
 
+## Uitvoerindeling voor afdrukkanaal {#output-format-print-channel}
+
+Gebruik PrintChannel API om uitvoerindeling te definiëren voor het afdrukkanaal van een interactieve communicatie. Als u geen uitvoerindeling definieert, genereert AEM Forms de uitvoer in PDF-indeling.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+Als u de uitvoer in een andere indeling wilt genereren, geeft u het type uitvoerindeling op. Raadpleeg [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) voor de lijst met ondersteunde typen uitvoerindeling.
+
+U kunt bijvoorbeeld het volgende voorbeeld gebruiken om PCL als uitvoerindeling voor een interactieve communicatie te definiëren:
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```

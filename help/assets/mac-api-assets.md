@@ -4,14 +4,14 @@ description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren 
 contentOwner: AG
 role: Developer
 feature: API's,middelen HTTP API,ontwikkelaarsgereedschappen
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] HTTP-API  {#assets-http-api}
 
@@ -314,4 +314,4 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 * [HTTP API werkt de meta-](#update-asset-metadata) eigenschappen in  `jcr` namespace bij. Nochtans, werkt het gebruikersinterface van de Experience Manager de meta-gegevenseigenschappen in `dc` namespace bij.
 
-* Asset API retourneert de volledige metagegevens niet. In de API zijn de naamruimten gecodeerd en worden deze alleen geretourneerd. Als u volledige meta-gegevens nodig hebt, dan bekijk de elementenweg `/jcr_content/metadata.json`.
+* De HTTP-API van middelen retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het elementpad `/jcr_content/metadata.json` voor volledige metagegevens.

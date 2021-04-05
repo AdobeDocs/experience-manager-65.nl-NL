@@ -4,14 +4,14 @@ description: Leer meer over de media handlers en hoe u workflows kunt gebruiken 
 contentOwner: AG
 role: Zakelijke praktiserer
 feature: Workflow,uitvoeringen
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2097'
 ht-degree: 1%
 
 ---
-
 
 # Elementen verwerken met behulp van mediaflers en workflows {#processing-assets-using-media-handlers-and-workflows}
 
@@ -46,6 +46,8 @@ De volgende media managers zijn beschikbaar binnen [!DNL Assets] en behandelen d
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback als er geen andere handler is gevonden om gegevens uit een element te extraheren |
+
+{style=&quot;table-layout:auto&quot;}
 
 Alle managers voeren de volgende taken uit:
 

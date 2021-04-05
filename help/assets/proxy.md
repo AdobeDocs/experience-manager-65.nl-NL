@@ -3,14 +3,14 @@ title: '[!DNL Assets] proxyontwikkeling'
 description: Een volmacht is een  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] volmacht, gesteunde verrichtingen, volmachtscomponenten, en hoe te om een worker van de douanevolmacht te ontwikkelen.
 contentOwner: AG
 role: Beheerder, architect
+exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Assets] proxyontwikkeling  {#assets-proxy-development}
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Assets]-proxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen elementen. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een [!DNL Adobe InDesign]-server om bestanden te verwerken voor gebruik in Middelen.
 
-Wanneer de proxy een aparte [!DNL Experience Manager]-instantie is, wordt de belasting van de ontwerpinstantie(s) van de Experience Manager verminderd. Standaard voert [!DNL Assets] de elementverwerkingstaken in dezelfde JVM (extern via proxy) uit om de belasting op de Experience Manager-ontwerpinstantie te verminderen.
+Wanneer de proxy een afzonderlijke [!DNL Experience Manager]-instantie is, wordt de belasting op de [!DNL Experience Manager]-ontwerpinstantie(s) hierdoor verminderd. Standaard voert [!DNL Assets] de taken voor elementverwerking uit in dezelfde JVM (extern via Proxy) om de belasting op de [!DNL Experience Manager]-ontwerpinstantie te verminderen.
 
 ## Proxy (HTTP-toegang) {#proxy-http-access}
 

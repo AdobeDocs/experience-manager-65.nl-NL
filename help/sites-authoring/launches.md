@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 translation-type: tm+mt
-source-git-commit: 2d7492cdee9f7f730dfa6ad2ffae396b3a737b15
+source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '854'
 ht-degree: 6%
 
 ---
-
 
 # Lanceringen{#launches}
 
@@ -102,6 +102,13 @@ Met Launches kunt u:
 >Voor het maken en bewerken van startpagina&#39;s zijn toegangsrechten vereist voor `/content/launches` - zoals bij de standaardgroep `content-authors`.
 >
 >Neem contact op met de systeembeheerder als u problemen ondervindt.
+
+>[!CAUTION]
+>
+>Het opnieuw ordenen van componenten op een startpagina wordt niet ondersteund.
+>
+>Wanneer de pagina wordt bevorderd, zullen om het even welke inhoudveranderingen worden weerspiegeld, maar de componentenposities zullen niet veranderen.
+
 
 ### De opstartconsole {#the-launches-console}
 

@@ -10,14 +10,15 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
+exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
+feature: Bewerkingen
 translation-type: tm+mt
-source-git-commit: 19a6a4f80e2af37b8de49080a977d02bf0e43507
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '6198'
+source-wordcount: '6199'
 ht-degree: 0%
 
 ---
-
 
 # Operations-dashboard {#operations-dashboard}
 
@@ -230,7 +231,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
       <ul>
        <li>Geeft de status Kritiek als deze meer dan 2 uur geleden is </li>
        <li>retourneert de waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li>
-       <li>retourneert de status OK als deze minder dan 45 minuten geleden is </li>
+       <li>Hiermee wordt de status OK geretourneerd als deze minder dan 45 minuten geleden is </li>
       </ul> </li>
      <li>als aan geen van deze voorwaarden is voldaan, wordt de status OK geretourneerd</li>
     </ul> <p>Zowel zijn de Kritieke als de statusdrempels van de Waarschuwing configureerbaar. De sjabloon voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Opmerking:  </strong>Deze health check is beschikbaar bij AEM 6.4 en is teruggezet naar AEM 6.3.0.1.</p> </td>
@@ -329,7 +330,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de controleserver.
+1. Stel Nagios in en installeer deze op de bewakingsserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]
@@ -624,7 +625,7 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 
 ## Aangepaste onderhoudstaken {#custom-maintenance-tasks}
 
-De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur van de onderhoudstaak gebaseerd is op de taakbehandeling van Apache Sling, moet een onderhoudstaak de Java-interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)` implementeren. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder wordt vermeld:
+De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur van de onderhoudstaak gebaseerd is op de taakbehandeling van Apache Sling, moet een onderhoudstaak de Java-interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)` implementeren. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder vermeld:
 
 <table>
  <tbody>
@@ -697,7 +698,7 @@ Het **systeemoverzicht dashboard** toont een overzicht op hoog niveau van de con
 
 >[!NOTE]
 >
->U kunt [deze video](https://video.tv.adobe.com/v/21340?captions=dut) voor een inleiding aan het Dashboard van het Overzicht van het Systeem ook bekijken.
+>U kunt [deze video](https://video.tv.adobe.com/v/21340) voor een inleiding aan het Dashboard van het Overzicht van het Systeem ook bekijken.
 
 ### Hoe te om tot {#how-to-access} toegang te hebben
 
@@ -905,4 +906,3 @@ U kunt ook een `JSON`-bestand downloaden met een overzicht van de dashboardgegev
   </tr>
  </tbody>
 </table>
-

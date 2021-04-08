@@ -10,14 +10,15 @@ topic-tags: Security
 content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
+exl-id: 89f55598-e749-42b8-8f2a-496f45face66
+feature: Beveiliging
 translation-type: tm+mt
-source-git-commit: 8ed7409740cdd3e45fad006dc6e470a06acc60fe
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2437'
 ht-degree: 2%
 
 ---
-
 
 # Gebruikerssynchronisatie{#user-synchronization}
 
@@ -419,7 +420,7 @@ Wanneer de [User Administration and Security](/help/sites-administering/security
 
 ### Gebruikerssynchronisatie offline gebruiken {#how-to-take-user-sync-offline}
 
-Als u gebruikerssynchronisatie offline wilt zetten en een uitgever[ of ](#how-to-remove-a-publisher)gegevens handmatig synchroniseren[ wilt verwijderen, moet de distributierij leeg en stil zijn.](#manually-syncing-users-and-user-groups)
+Als u gebruikerssynchronisatie offline wilt zetten en een uitgever](#how-to-remove-a-publisher) of [gegevens handmatig synchroniseren](#manually-syncing-users-and-user-groups) wilt verwijderen, moet de distributierij leeg en stil zijn.[
 
 Om de staat van de distributierij te controleren:
 

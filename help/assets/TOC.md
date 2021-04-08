@@ -10,8 +10,8 @@ feature-set: Experience Manager Assets, Experience Manager, Experience Manager S
 translation-type: tm+mt
 source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 34%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

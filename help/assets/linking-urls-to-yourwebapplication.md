@@ -7,15 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
-role: Bedrijfs Praktijk, Beheerder
+role: Business Practitioner, Administrator
+exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
+feature: Configuratie
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 9%
 
 ---
-
 
 # URL&#39;s koppelen aan uw webapplicatie {#linking-urls-to-your-web-application}
 
@@ -39,7 +40,7 @@ Zie ook [Elementen uploaden.](manage-assets.md#uploading-assets)
 
 ## Een URL verkrijgen voor een element {#obtaining-a-url-for-an-asset}
 
-U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geplaatst, zodat u deze desgewenst kunt plakken naar de pagina&#39;s van uw website of toepassing.
+U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geland, zodat u deze desgewenst kunt plakken naar pagina&#39;s in uw website of toepassing.
 
 >[!NOTE]
 >

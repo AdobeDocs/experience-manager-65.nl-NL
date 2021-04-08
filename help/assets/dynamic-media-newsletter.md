@@ -4,15 +4,16 @@ description: 'De Dynamic Media-nieuwsbrief van Experience League is een maandeli
 keywords: Dynamic Media;nieuwsbrief;productupdates;tips en trucs;gebeurtenissen;succes van de klant;blog;blogs;beelden;video;eigenschappen;mogelijkheden
 contentOwner: Rick Brough
 solution: Dynamic Media Classic, Experience Manager
-role: Bedrijfs Praktijk, Beheerder
+role: Business Practitioner, Administrator
+exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
+feature: Samenwerking,Dynamic Media Classic
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
-
 
 # ![Dynamic Media Newsletter-logo](/help/assets/assets/dynamic-media-newsletter-logo.png)
 

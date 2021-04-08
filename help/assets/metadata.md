@@ -1,17 +1,17 @@
 ---
-title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
+title: Metagegevens van uw digitale middelen beheren
 description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
 contentOwner: AG
 feature: Tags, metagegevens
-role: Architect, leider
+role: Architect, Leader
+exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
-source-wordcount: '2243'
+source-wordcount: '2240'
 ht-degree: 10%
 
 ---
-
 
 # Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
 
@@ -204,7 +204,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit de map **[!UICONTROL Properties]**.
 

@@ -6,15 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Bedrijfs Praktijk, Beheerder
+role: Business Practitioner, Administrator
+exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
+feature: Publiceren
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2539'
 ht-degree: 1%
 
 ---
-
 
 # Selectieve publicatie op mapniveau configureren in Dynamic Media {#selective-publish-configure-folder}
 
@@ -264,4 +265,3 @@ Wanneer u **[!UICONTROL List View]** gebruikt, verschijnt een extra kolom voor *
 Een middel dat niet aan Dynamic Media wordt gesynchroniseerd maar een Dynamic Media publicatieactie teweegbrengt die op het in werking treedt resulteert in het volgende foutenbericht en de oplossing:
 
 ![Selectieve publicatiefout](/help/assets/assets-dm/selective-publish-error.png)
-

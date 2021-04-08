@@ -1,17 +1,17 @@
 ---
-title: Toegankelijkheid in [!DNL Experience Manager Assets]
+title: Toegankelijke eigenschappen en interfaces van [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] gebruikers met een handicap helpen.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Architect, Leader
+exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
 workflow-type: tm+mt
-source-wordcount: '1906'
+source-wordcount: '1905'
 ht-degree: 1%
 
 ---
-
 
 <!--
 Possible topics to cover in this article are below.
@@ -67,7 +67,7 @@ De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden rege
 
 ## Ondersteuning voor het gebruik van het toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant van de gebruikersinterface openen door met het toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder de gebruikersinterface-elementen te hoeven activeren en deze met het toetsenbord te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant van de gebruikersinterface openen door met het toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
 
 <!-- TBD items:
 

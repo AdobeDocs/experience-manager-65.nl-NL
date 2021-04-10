@@ -3,16 +3,16 @@ title: Uw digitale middelen beheren
 description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, bewerken, zoeken, verwijderen, notities aanbrengen en de versie van uw digitale middelen.
 contentOwner: AG
 mini-toc-levels: 1
-role: Zakelijke praktiserer
+role: Business Practitioner
 feature: Middelenbeheer, zoeken
+exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
 workflow-type: tm+mt
-source-wordcount: '9363'
+source-wordcount: '9417'
 ht-degree: 3%
 
 ---
-
 
 # Uw digitale middelen beheren {#manage-digital-assets}
 
@@ -585,48 +585,33 @@ Middelen of mappen met elementen verwijderen:
 
 Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-from-aem.md).
 
-## Elementen {#publishing-assets} publiceren
+## Elementen publiceren of verwijderen {#publish-assets}
 
->[!NOTE]
->
->Zie [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over Dynamic Media.
+Nadat u uw elementen hebt geüpload, verwerkt of bewerkt op de auteur [!DNL Experience Manager], publiceert u het element naar de publicatieserver. Door middel van publicatie wordt het middel openbaar gemaakt. Met de actie Unpublishing is het element van de publicatieserver verwijderd, maar niet van de publicatieserver.
 
-1. Navigeer naar de locatie van de middelen/map die u wilt publiceren.
+Zie [publishing [!DNL Dynamic Media] assets](/help/assets/publishing-dynamicmedia-assets.md) voor specifieke informatie over [!DNL Dynamic Media].
 
-1. Selecteer de handeling **[!UICONTROL Publish]** in de elementenkaart of selecteer het element en klik op de optie **[!UICONTROL Quick Publish]** in de werkbalk.
-1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet-gepubliceerd of gewijzigd zijn sinds ze voor het laatst zijn gepubliceerd/niet gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
+1. Navigeer naar de locatie van het element of de map met middelen die u wilt publiceren of die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-   >[!NOTE]
-   >
-   >Lege mappen, die onderdeel zijn van een map die u hebt gepubliceerd, worden niet gepubliceerd.
+1. Selecteer het element of de map waarvan u de publicatie ongedaan wilt maken en klik op **[!UICONTROL Manage Publication]** ![Publicatieoptie beheren](assets/do-not-localize/globe-publication.png) op de werkbalk. Als u snel wilt publiceren, selecteert u de optie **[!UICONTROL Quick Publish]** in de werkbalk. Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-1. Klik **[!UICONTROL Publish]** om de activering voor de activa te bevestigen.
-
->[!CAUTION]
->
->Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
-
-## Elementen {#unpublishing-assets} verwijderen
-
-1. Navigeer naar de locatie van de map met middelen die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
-
-1. Selecteer het middel/de omslag om unpublish, en klik **[!UICONTROL Manage Publication]** ![de optie van de Publicatie ](assets/do-not-localize/globe-publication.png) van de toolbar te beheren.
-
-1. Selecteer de handeling **[!UICONTROL Unpublish]** in de lijst.
+1. Selecteer de optie **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** naar wens.
 
    ![Handeling Unpublish](assets/unpublish_action.png)
+   *Afbeelding: Publiceer- en publicatieopties en de planningsoptie.*
 
-1. Als u de publicatie van het element later ongedaan wilt maken, selecteert u **[!UICONTROL Unpublish Later]** en selecteert u vervolgens een datum voor het ongedaan maken van de publicatie van het element.
-1. Plan een datum waarop het element niet beschikbaar is in de publicatieomgeving.
-1. Als het element verwijst naar andere elementen, kiest u de verwijzingen die u ongedaan wilt maken. Klik op **[!UICONTROL Unpublish]**.
-1. Klik in het bevestigingsdialoogvenster op:
+1. Selecteer **[!UICONTROL Now]** om direct op het element te handelen of **[!UICONTROL Later]** te selecteren om de actie te plannen. Selecteer een datum en tijd als u de optie **[!UICONTROL Later]** kiest. Klik op **[!UICONTROL Next]**.
 
-   * **[!UICONTROL Cancel]** om de handeling te stoppen
-   * **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
+1. Als een element bij het publiceren naar andere elementen verwijst, worden de bijbehorende verwijzingen in de wizard weergegeven. Alleen die verwijzingen worden weergegeven die niet zijn gepubliceerd of zijn gewijzigd sinds de laatste publicatie. Kies de referenties die u wilt publiceren.
 
-   >[!NOTE]
-   >
-   >Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
+1. Wanneer u de publicatie ongedaan maakt, kiest u de referenties die u ongedaan wilt maken wanneer een element naar andere elementen verwijst. Klik op **[!UICONTROL Unpublish]**. Klik in het bevestigingsdialoogvenster op **[!UICONTROL Cancel]** om de handeling te stoppen of klik op **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd moeten worden.
+
+De volgende beperkingen en tips voor het publiceren of verwijderen van middelen of mappen zijn beschikbaar:
+
+* De optie voor [!UICONTROL Manage Publication] is alleen beschikbaar voor gebruikersaccounts die replicatiemachtigingen hebben.
+* Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat er mogelijk naar wordt verwezen door andere gepubliceerde elementen.
+* Lege mappen worden niet gepubliceerd.
+* Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 
 ## Gesloten gebruikersgroep {#closed-user-group}
 
@@ -887,7 +872,7 @@ U kunt versies in [!DNL Experience Manager] in de volgende scenario&#39;s tot st
 * Bewerk de metagegevens van een element.
 * Gebruik [!DNL Experience Manager] desktop app om een bestaand element uit te checken, te bewerken en [uw wijzigingen te uploaden](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open in de linkerbovenhoek van de pagina het menu en selecteer **[!UICONTROL Timeline]**.
 

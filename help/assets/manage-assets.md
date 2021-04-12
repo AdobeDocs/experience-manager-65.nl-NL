@@ -7,9 +7,9 @@ role: Business Practitioner
 feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 translation-type: tm+mt
-source-git-commit: d88962cb4018b0b60f61006510f416478d119cb5
+source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
 workflow-type: tm+mt
-source-wordcount: '9417'
+source-wordcount: '9563'
 ht-degree: 3%
 
 ---
@@ -925,4 +925,24 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om gerelat
 * Een verzameling kan elementen van verschillende locaties bevatten, omdat deze alleen verwijzingen naar deze elementen bevatten. Bij elke verzameling blijft de referentiële integriteit van de elementen behouden.
 * U kunt verzamelingen delen met meerdere gebruikers met verschillende machtigingsniveaus, zoals bewerken, weergeven, enzovoort.
 
-Zie [Verzamelingen beheren](/help/assets/manage-collections.md) voor meer informatie over verzamelingsbeheer.
+Zie [Verzamelingen beheren](/help/assets/manage-collections.md) voor meer informatie over Verzamelingsbeheer.
+
+## Verlopen elementen verbergen bij weergave van elementen in desktop-app of Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] bureaubladtoepassing biedt toegang tot de DAM-opslagruimte vanaf Windows- of Mac-desktopcomputers. Met Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen.
+
+Wanneer u elementen bladert vanuit de gebruikersinterface [!DNL Experience Manager], worden de verlopen elementen niet weergegeven. Beheerders kunnen de volgende configuratie uitvoeren om te voorkomen dat verlopen middelen worden weergegeven, gezocht en opgehaald wanneer ze middelen zoeken vanuit de bureaubladtoepassing en de Asset Link. De configuratie werkt voor alle gebruikers, ongeacht beheerderrechten.
+
+Voer het volgende bevel CURL uit. Zorg voor leestoegang op `/conf/global/settings/dam/acpapi/` voor gebruikers die toegang hebben tot elementen. De gebruikers die deel van `dam-user` groep uitmaken hebben de toestemming door gebrek.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+Zie voor meer informatie hoe u door DAM-middelen kunt bladeren met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [hoe u Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) kunt gebruiken.[

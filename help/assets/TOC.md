@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-feature-set: Experience Manager Assets, Experience Manager, Experience Manager Sites
+feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 36454754ac726471c611adcc942548d3501109b7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '590'
+ht-degree: 34%
 
 ---
 

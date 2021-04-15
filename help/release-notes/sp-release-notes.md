@@ -5,9 +5,9 @@ docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
+source-git-commit: 9b23e9d5bbdbdde864ce71f434d6536439067f82
 workflow-type: tm+mt
-source-wordcount: '3353'
+source-wordcount: '3346'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * Als u [!UICONTROL All Users] uit het veld [!UICONTROL Administrators] verwijdert, worden deze niet daadwerkelijk uit het achterste gedeelte verwijderd (NPR-35592, NPR-35611).
 * De component [!UICONTROL Compose Message] retourneert geen resultaat wanneer de ingevoerde tekst gedeeltelijk overeenkomt (NPR-35666).
 
-* Wanneer u probeert tags toe te voegen aan een nieuwe blog door **Codes toevoegen** te selecteren, wordt enige invloed op de prestaties waargenomen. Als u de prestaties wilt verbeteren, installeert u [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) die het probleem met de tagsuggestie verhelpt. U kunt de hotfix downloaden van [!DNL Software Distribution].
+* Het kan zijn dat de prestaties enigszins worden beïnvloed en vertraagd wanneer u probeert tags toe te voegen aan een nieuwe blog door **[!UICONTROL Add Tags]** te selecteren. Voor betere prestaties installeert u [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip), beschikbaar via [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 

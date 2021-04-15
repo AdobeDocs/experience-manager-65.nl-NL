@@ -2,14 +2,14 @@
 title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
 feature: Beheer van meerdere sites
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4174'
 ht-degree: 0%
 
 ---
-
 
 # Actieve kopieën maken en synchroniseren{#creating-and-synchronizing-live-copies}
 
@@ -240,7 +240,7 @@ Rollen worden verwerkt als asynchrone taken en kunnen worden gecontroleerd in he
 
 #### Een blauwdruk uitrollen vanuit de referentierail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Selecteer in de console **Sites** de pagina in de blauwdruk en open het deelvenster **[Referenties](/help/sites-authoring/basic-handling.md#references)** (vanuit de werkbalk).
+1. Selecteer in de **Sites**-console de pagina in de live kopie en open het venster **[References](/help/sites-authoring/basic-handling.md#references)** (vanuit de werkbalk).
 1. Selecteer de optie **Vervagen** in de lijst om de blauwdrukken weer te geven die aan deze pagina zijn gekoppeld.
 1. Selecteer de gewenste blauwdruk in de lijst.
 1. Klik of tik **Uitvoer**.

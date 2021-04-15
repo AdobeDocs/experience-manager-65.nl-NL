@@ -3,14 +3,14 @@ title: '[!DNL Experience Manager] Opmerkingen bij de release van 6.5 servicepack
 description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 translation-type: tm+mt
-source-git-commit: fb1423b7ae110b8a3cf8e0e389394e9266157a9f
+source-git-commit: e2eb007eb7660004f98b4c26aba00a6a6e2a2f1a
 workflow-type: tm+mt
-source-wordcount: '3295'
+source-wordcount: '3353'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Adobe Experience Manager] Opmerkingen bij de release van 6.5 servicepack  {#aem-service-pack-release-notes}
 
@@ -154,9 +154,11 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Bij het toevoegen van een paginastructuur aan een communautaire groep, wordt de [!UICONTROL Group] titel in de broodkruimel veranderd in de titel van eerste [!UICONTROL Page] (NPR-35803).
 * In tegenstelling tot moderatoren is een standaardlid van de community geen toegang tot een ontwerppost (NPR-35339) en kan het deze niet bewerken.
-* Verbroken toegangscontrole en ontkenning van de dienst met DSRPReindexServlet die de plaats van gemeenschappen neer brengt tot het indexeren volledig is (NPR-35591).
+* Verbroken toegangscontrole en ontkenning van service met `DSRPReindexServlet` die de site van de gemeenschappen omlaag brengt tot de indexering is voltooid (NPR-35591).
 * Als u [!UICONTROL All Users] uit het veld [!UICONTROL Administrators] verwijdert, worden deze niet daadwerkelijk uit het achterste gedeelte verwijderd (NPR-35592, NPR-35611).
 * De component [!UICONTROL Compose Message] retourneert geen resultaat wanneer de ingevoerde tekst gedeeltelijk overeenkomt (NPR-35666).
+
+* Wanneer u probeert tags toe te voegen aan een nieuwe blog door **Codes toevoegen** te selecteren, wordt enige invloed op de prestaties waargenomen. Als u de prestaties wilt verbeteren, installeert u [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) die het probleem met de tagsuggestie verhelpt. U kunt de hotfix downloaden van [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 

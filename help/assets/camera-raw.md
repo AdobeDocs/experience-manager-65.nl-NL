@@ -2,8 +2,8 @@
 title: '[!DNL Adobe Camera Raw] ondersteuning.'
 description: Leer hoe te om [!DNL Adobe Camera Raw] steun in [!DNL Adobe Experience Manager Assets] toe te laten.
 contentOwner: AG
-role: Beheerder
-feature: Gereedschappen voor ontwikkelaars
+role: Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

@@ -2,7 +2,7 @@
 title: Toegankelijke eigenschappen en interfaces van [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] gebruikers met een handicap helpen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Business Practitioner, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 translation-type: tm+mt

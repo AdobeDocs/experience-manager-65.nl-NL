@@ -2,8 +2,8 @@
 title: Configuratie en beheer van metagegevensfunctionaliteit.
 description: Configuratie en beheer van [!DNL Experience Manager Assets] functionaliteit met betrekking tot toevoeging en beheer van metagegevens.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Metagegevens
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

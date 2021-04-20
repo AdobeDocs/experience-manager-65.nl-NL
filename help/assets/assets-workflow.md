@@ -2,8 +2,8 @@
 title: Elementen verwerken met behulp van workflows
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
-feature: Workflow, uitvoeringen
-role: Bedrijfs Praktijk, Beheerder
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

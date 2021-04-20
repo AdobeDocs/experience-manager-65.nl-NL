@@ -2,8 +2,8 @@
 title: Persoonlijke mappen om elementen te delen
 description: Leer hoe te om tot een privé omslag in  [!DNL Adobe Experience Manager Assets] te leiden en het met andere gebruikers te delen en verschillende voorrechten aan hen toe te wijzen.
 contentOwner: AG
-role: Zakelijke praktiserer
-feature: Samenwerking
+role: Business Practitioner
+feature: Collaboration
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

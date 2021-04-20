@@ -2,8 +2,8 @@
 title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u afbeeldingen met hyperlinks aan een afbeelding kunt toevoegen.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Beheer van bedrijfsmiddelen
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

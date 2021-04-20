@@ -2,8 +2,8 @@
 title: Beste praktijken voor [!DNL Assets]
 description: Verbetert systeemstabiliteit en prestaties onder lading door beste praktijken te identificeren en te volgen die van uw plaatsing en configuratie afhangen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
-role: Architect, beheerder
+feature: Asset Management
+role: Architect, Administrator
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

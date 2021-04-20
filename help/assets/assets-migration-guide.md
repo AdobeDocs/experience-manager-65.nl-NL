@@ -2,8 +2,8 @@
 title: Elementen in bulk migreren
 description: Beschrijft hoe te om activa in  [!DNL Adobe Experience Manager] te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
-role: Architect, beheerder
-feature: migratie,uitvoeringen,beheer van bedrijfsmiddelen
+role: Architect, Administrator
+feature: Migration,Renditions,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

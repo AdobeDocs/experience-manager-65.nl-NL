@@ -2,8 +2,8 @@
 title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Gereedschappen voor ontwikkelaars
+role: Business Practitioner, Administrator
+feature: Developer Tools
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

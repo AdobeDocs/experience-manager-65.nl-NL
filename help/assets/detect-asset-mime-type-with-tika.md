@@ -2,8 +2,8 @@
 title: MIME-type van activa detecteren met Apache Tika
 description: Schakel Apache Tika in om te helpen [!DNL Experience Manager Assets] het MIME-type van elementen van de inhoudsstroom te detecteren tijdens het uploaden in plaats van de bestandsextensie.
 contentOwner: AG
-role: Beheerder, architect
-feature: Metagegevens,Gereedschappen voor ontwikkelaars,Middelenbeheer
+role: Administrator, Architect
+feature: Metadata,Developer Tools,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

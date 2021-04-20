@@ -2,8 +2,8 @@
 title: Elementinzichten configureren voor analyses.
 description: Elementinzichten configureren in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Architect, beheerder
-feature: Asset Insights, Asset Reports
+role: Architect, Administrator
+feature: Asset Insights,Asset Reports
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

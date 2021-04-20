@@ -2,8 +2,8 @@
 title: Elementsjablonen
 description: Leer over de malplaatjes van Activa in [!DNL Adobe Experience Manager Assets] en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
 contentOwner: AG
-role: Zakelijke praktiserer
-feature: Asset Management, ontwikkelprogramma's
+role: Business Practitioner
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

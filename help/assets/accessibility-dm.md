@@ -4,8 +4,8 @@ description: Meer informatie over toegankelijkheidsondersteuning in Dynamic Medi
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Toegankelijkheid
-role: Bedrijfs Praktijk, Beheerder
+feature: Accessibility
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

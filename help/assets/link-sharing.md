@@ -2,8 +2,8 @@
 title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
-role: Zakelijke praktiserer
-feature: Delen van koppelingen, beheer van bedrijfsmiddelen
+role: Business Practitioner
+feature: Link Sharing,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

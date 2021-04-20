@@ -3,8 +3,8 @@ title: Verzamelingen digitale middelen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
-role: Zakelijke praktiserer
-feature: Verzamelingen, beheer van bedrijfsmiddelen
+role: Business Practitioner
+feature: Collections,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

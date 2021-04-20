@@ -2,8 +2,8 @@
 title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Beheer van bedrijfsmiddelen
+role: Business Practitioner, Administrator
+feature: Asset Management
 translation-type: tm+mt
 source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
 workflow-type: tm+mt

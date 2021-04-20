@@ -1,7 +1,7 @@
 ---
 title: Gebruik de modus Indeling om het formaat van componenten voor adaptieve formulieren te wijzigen
 description: 'De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out '
-feature: Adaptieve Forms
+feature: Adaptive Forms
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

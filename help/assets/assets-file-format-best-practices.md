@@ -2,8 +2,8 @@
 title: Aanbevolen procedures voor het verwerken van de ondersteunde bestandsindelingen
 description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Beheerder
-feature: Asset Management, ontwikkelprogramma's
+role: Administrator
+feature: Asset Management,Developer Tools
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

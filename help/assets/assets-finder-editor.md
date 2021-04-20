@@ -2,8 +2,8 @@
 title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+role: Business Practitioner, Administrator
+feature: Developer Tools,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

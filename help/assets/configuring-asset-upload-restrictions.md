@@ -2,8 +2,8 @@
 title: Beperkingen voor het uploaden van middelen configureren
 description: 'Beperk het type elementen (bestanden) dat gebruikers kunnen uploaden '
 contentOwner: AG
-role: Ontwikkelaar, beheerder, architect
-feature: Middelenbeheer, uploaden
+role: Developer, Administrator, Architect
+feature: Asset Management,Upload
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

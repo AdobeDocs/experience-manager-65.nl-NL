@@ -2,8 +2,8 @@
 title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 user-guide-title: Hulplijn voor middelen
-feature: Beheer van bedrijfsmiddelen
-role: Business Practice, Architect, Administrator
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

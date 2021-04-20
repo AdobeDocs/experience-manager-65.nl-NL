@@ -2,8 +2,8 @@
 title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Projecten
+role: Business Practitioner, Administrator
+feature: Projects
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

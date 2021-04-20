@@ -2,8 +2,8 @@
 title: Activiteitsstroom van digitale elementen in de tijdlijnweergave
 description: In dit artikel wordt beschreven hoe u activiteitenlogboeken voor elementen op de tijdlijn kunt weergeven.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
-role: Bedrijfs Praktijk, Beheerder
+feature: Asset Management
+role: Business Practitioner, Administrator
 translation-type: tm+mt
 source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
 workflow-type: tm+mt

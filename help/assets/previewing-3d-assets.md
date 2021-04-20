@@ -3,8 +3,8 @@ title: 3D-elementen voorvertonen
 description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 contentOwner: Rick Brough
 docset: aem65
-feature: 3D-middelen
-role: Zakelijke praktiserer
+feature: 3D Assets
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

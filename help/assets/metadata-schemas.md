@@ -2,8 +2,8 @@
 title: 'Metagegevensschema''s om lay-out van meta-gegevenseigenschappen pagina in  [!DNL Adobe Experience Manager Assets] te bepalen. '
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: Metagegevens
+role: Business Practitioner, Administrator
+feature: Metadata
 translation-type: tm+mt
 source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
 workflow-type: tm+mt

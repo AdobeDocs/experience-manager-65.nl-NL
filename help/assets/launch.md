@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 docset: aem65
 feature: Viewers
-role: Bedrijfs Praktijk, Beheerder, Ontwikkelaar, de Ingenieur van Gegevens, Architect van Gegevens
+role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
 translation-type: tm+mt
 source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
 workflow-type: tm+mt

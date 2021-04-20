@@ -2,7 +2,7 @@
 title: Beheren [!DNL Adobe Stock] middelen
 description: Zoek, haal, vergunning, en beheer [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
-feature: Zoeken, Adobe Stock
+feature: Search, Adobe Stock
 role: Business Practitioner, Administrator
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 translation-type: tm+mt

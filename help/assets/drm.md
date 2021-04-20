@@ -2,8 +2,8 @@
 title: Digital Rights Management van activa
 description: Leer hoe u de verloopstatussen van elementen en informatie voor gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
-role: Bedrijfs Praktijk, Beheerder
-feature: DRM,beheer van bedrijfsmiddelen
+role: Business Practitioner, Administrator
+feature: DRM,Asset Management
 translation-type: tm+mt
 source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
 workflow-type: tm+mt

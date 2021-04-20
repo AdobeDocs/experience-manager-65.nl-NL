@@ -2,8 +2,8 @@
 title: Meertalige assets en de vertaling van assets
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
-role: Beheerder
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
 workflow-type: tm+mt

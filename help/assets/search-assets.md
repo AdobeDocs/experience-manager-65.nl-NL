@@ -3,8 +3,8 @@ title: Digitale middelen en afbeeldingen zoeken in [!DNL Adobe Experience Manage
 description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Zoeken, metagegevens
-role: Zakelijke praktiserer
+feature: Search, Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: fd283b840830bef613689f81cf753e226fb834d7
 workflow-type: tm+mt

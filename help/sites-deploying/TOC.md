@@ -6,13 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.5 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5, inclusief de cloudimplementatie van Adobe Managed Services.
-feature-set: Experience Manager Sites
-feature: Deploying
+feature: Implementeren
 role: Architect
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '353'
 ht-degree: 1%
 
 ---

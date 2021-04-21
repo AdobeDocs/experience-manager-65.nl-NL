@@ -8,14 +8,14 @@ content-type: reference
 docset: aem65
 feature: Viewers
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 4b1b9fb014594a67e8db271cc02bc54b29e24896
 workflow-type: tm+mt
-source-wordcount: '6244'
+source-wordcount: '6210'
 ht-degree: 9%
 
 ---
-
 
 # Dynamic Media Viewers integreren met Adobe Analytics en Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
@@ -43,11 +43,13 @@ Zie [Extensie Adobe](https://experienceleague.adobe.com/docs/launch/using/extens
 
 Het belangrijkste gebruiksgeval voor integratie met Experience Platform Launch is klanten die zowel AEM Assets als AEM Sites gebruiken. In dergelijke scenario&#39;s, kunt u opstelling een standaardintegratie tussen uw AEM auteursknoop en Experience Platform Launch, dan uw instantie van Plaatsen met het bezit van het Experience Platform Launch associëren. Daarna volgt elke Dynamic Media WCM-component die aan een sitepagina wordt toegevoegd, de gegevens en gebeurtenissen van viewers.
 
-Zie [Informatie over het bijhouden van Dynamic Media-viewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+Zie [Dynamic Media-viewers bijhouden in AEM Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 Een tweede gebruiksgeval dat de integratie steunt zijn die klanten die slechts AEM Assets, of Dynamic Media Classic gebruiken. In dergelijke gevallen ontvangt u de insluitcode voor uw viewer en voegt u deze toe aan de websitepagina. Vervolgens haalt u de productie-URL van de Experience Platform Launch-bibliotheek op vanuit het Experience Platform Launch en voegt u deze handmatig toe aan de webpaginacode.
 
-Zie [Informatie over het bijhouden van Dynamic Media-viewers met behulp van ingesloten code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+Zie [Dynamic Media-viewers bijhouden met gebruik van ingesloten code](#tracking-dynamic-media-viewers-using-embed-code).
+
+<!-- Path on internal wiki [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode). -->
 
 ## Hoe gegevens en gebeurtenis volgen werkt in de integratie {#how-data-and-event-tracking-works-in-the-integration}
 
@@ -671,7 +673,7 @@ De AEM configuratie bestaat uit de volgende twee belangrijke stappen:
 
 ### AEM IMS {#configuring-aem-ims} configureren
 
-1. Klik in AEM auteur op het pictogram Gereedschappen (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
+1. Klik in AEM auteur op het pictogram Extra (hamer) en klik vervolgens op **[!UICONTROL Security > Adobe IMS Configurations]**.
 
    ![2019-07-25_11-52-58](assets/2019-07-25_11-52-58.png)
 

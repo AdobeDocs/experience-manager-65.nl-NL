@@ -5,14 +5,13 @@ audience: end-user
 user-guide-title: Opmerkingen bij de release Adobe Experience Manager 6.5
 breadcrumb-title: Release-opmerkingen
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
-feature-set: Experience Manager
-feature: Release Information
+feature: Geen informatie
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 6%
+source-wordcount: '77'
+ht-degree: 7%
 
 ---
 

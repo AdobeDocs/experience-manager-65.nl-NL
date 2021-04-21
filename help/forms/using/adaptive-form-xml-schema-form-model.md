@@ -1,17 +1,17 @@
 ---
 title: Hoe te om Aangepast Forms tot stand te brengen gebruikend het Schema van XML?
 description: Leer hoe u het XML-schema als formuliermodel in een adaptief formulier gebruikt. U kunt bestaande XSD-sjablonen toepassen om adaptieve formulieren te maken en schemaelementen van XSD naar het aangepaste formulier te slepen. Dig dieper in met een voorbeeld van een XML-schema, voeg speciale eigenschappen toe aan velden die gebruikmaken van het XML-schema en beperkt acceptabele waarden voor een adaptieve formuliercomponent.
-feature: Adaptive Forms
-role: Business Practitioner, Developers
-level: Beginner, Imtermediate
+feature: Adaptieve Forms
+role: Business Practitioner, Developer
+level: Beginner, Intermediate
+exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 translation-type: tm+mt
-source-git-commit: ec8a4c3941b5434f10ad0727be02fcf296cd4da7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste formulieren maken met XML-schema {#creating-adaptive-forms-using-xml-schema}
 

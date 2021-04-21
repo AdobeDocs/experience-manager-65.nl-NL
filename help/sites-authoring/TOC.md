@@ -6,14 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.5 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
-feature-set: Experience Manager Sites
 feature: Authoring
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: d7b0803385aaa451a1ec7ec280ff51c3e96e36e7
+source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 37%
+source-wordcount: '299'
+ht-degree: 38%
 
 ---
 

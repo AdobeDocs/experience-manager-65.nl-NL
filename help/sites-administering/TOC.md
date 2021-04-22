@@ -9,9 +9,9 @@ user-guide-description: Meer informatie over het AEM.
 feature: Beheer
 role: Administrator
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '665'
 ht-degree: 6%
 
 ---
@@ -165,6 +165,7 @@ ht-degree: 6%
    + [AEM Sites - GDPR-gereedheid](gdpr-compliance-sites.md)
    + [Behandeling van GDPR-verzoeken aan de AEM Stichting](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
    + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
++ Inhoudsbeheer {#contentmanagement}
    + [Werken met pakketten](package-manager.md)
    + [Tags beheren](tags.md)
    + [De pagina-exportfunctie](page-exporter.md)

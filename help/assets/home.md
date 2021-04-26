@@ -2,16 +2,16 @@
 title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 user-guide-title: Hulplijn voor middelen
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Architect, Administrator
+exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
-
 
 # Hulplijn voor middelen
 
@@ -40,6 +40,7 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van Experience Manager. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u de implementatie van uw Experience Manager kunt ontwikkelen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | Deze gids beschrijft hoe te om een project van de Experience Manager met succes te beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |
 

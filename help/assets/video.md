@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
+exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '11269'
+source-wordcount: '11276'
 ht-degree: 6%
 
 ---
-
 
 # Video in Dynamic Media {#video}
 
@@ -404,9 +404,9 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 3 |
+| Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -415,18 +415,18 @@ Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebru
 
 ## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 
-U kunt op locatie AEM video-elementen rechtstreeks publiceren naar een YouTube-kanaal dat u eerder hebt gemaakt.
+U kunt video-elementen op locatie AEM rechtstreeks publiceren naar een YouTube-kanaal dat u eerder hebt gemaakt.
 
 Als u video-elementen naar YouTube wilt publiceren, stelt u AEM Assets in met tags. U koppelt deze tags aan een YouTube-kanaal. Als de tag van een video-element overeenkomt met de tag van een YouTube-kanaal, wordt de video gepubliceerd naar YouTube. Publiceren naar YouTube vindt plaats samen met een normale publicatie van de video zolang een bijbehorende tag wordt gebruikt.
 
-YouTube voert zijn eigen codering uit. Als zodanig wordt het originele videobestand dat in AEM is geüpload, gepubliceerd naar YouTube in plaats van elke video-uitvoering die door de codering van Dynamic Media is gemaakt. Hoewel het niet nodig is om video&#39;s te verwerken met Dynamic Media, wordt verwacht dat dit zal gebeuren als een viewer-voorinstelling nodig is voor het afspelen.
+YouTube voert zijn eigen codering uit. Als zodanig wordt het originele videobestand dat in AEM is geüpload, gepubliceerd naar YouTube in plaats van een video-uitvoering die door de codering van Dynamic Media is gemaakt. Hoewel het niet nodig is om video&#39;s te verwerken met Dynamic Media, wordt verwacht dat dit zal gebeuren als een viewer-voorinstelling nodig is voor het afspelen.
 
 Wanneer u het videoverwerkingsprofiel overslaat en rechtstreeks naar YouTube publiceert, betekent dit gewoon dat uw video-element in AEM Asset geen zichtbare miniatuur krijgt. Dit betekent ook dat als u in de uitvoeringsmodi dynamicmedia of dynamicmedia_scene7 werkt, video&#39;s die niet zijn gecodeerd, niet met de Dynamic Media-elementtypen werken.
 
-Wanneer u video-elementen publiceert naar YouTube-servers, voert u de volgende taken uit om een veilige en beveiligde server-naar-server verificatie met YouTube te garanderen:
+Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende taken worden uitgevoerd om een veilige en beveiligde server-naar-server verificatie met YouTube te garanderen:
 
 1. [Google Cloud-instellingen configureren](#configuring-google-cloud-settings)
-1. [Een YouTube-kanaal maken](#creating-a-youtube-channel)
+1. [YouTube-kanalen maken](#creating-a-youtube-channel)
 1. [Codes toevoegen voor publicatie](#adding-tags-for-publishing)
 1. [De YouTube-agent voor publicatiereplicatie inschakelen](#enabling-the-youtube-publish-replication-agent)
 1. [YouTube instellen in AEM](#setting-up-youtube-in-aem)
@@ -435,15 +435,15 @@ Wanneer u video-elementen publiceert naar YouTube-servers, voert u de volgende t
 1. [(Optioneel) De gepubliceerde video op YouTube controleren](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
 1. [YouTube-URL&#39;s koppelen aan uw webtoepassing](#linking-youtube-urls-to-your-web-application)
 
-U kunt de publicatie van video&#39;s ook [ongedaan maken om deze te verwijderen van YouTube](#unpublishing-videos-to-remove-them-from-youtube).
+U kunt de publicatie van video&#39;s ook [ongedaan maken om deze uit YouTube te verwijderen](#unpublishing-videos-to-remove-them-from-youtube).
 
 ### Google Cloud-instellingen configureren {#configuring-google-cloud-settings}
 
-Als u op YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account; als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u referenties nodig hebt om video-elementen naar YouTube te publiceren. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u direct door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
+Als u naar YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMAIL-account hebt, hebt u al een Google-account; als u geen Google-account hebt, kunt u er eenvoudig een maken. U hebt het account nodig omdat u aanmeldingsgegevens nodig hebt om video-elementen naar YouTube te publiceren. Als u al een account hebt gemaakt, slaat u deze taak over en gaat u direct door naar [Een YouTube-kanaal maken](#creating-a-youtube-channel).
 
 Het account dat wordt gebruikt met Google Cloud en het Google-account dat wordt gebruikt voor YouTube, hoeft niet hetzelfde te zijn.
 
-Houd er rekening mee dat Google regelmatig wijzigingen aanbrengt in de gebruikersinterface. Daarom kunnen de stappen voor het publiceren van video&#39;s naar YouTube enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud geldt ook voor YouTube wanneer u probeert te controleren of er video&#39;s naar zijn geüpload.
+Houd er rekening mee dat Google regelmatig wijzigingen aanbrengt in de gebruikersinterface. Daarom kunnen de stappen voor het publiceren van video&#39;s naar YouTube enigszins afwijken van wat hieronder wordt beschreven. Dit voorbehoud geldt ook voor YouTube wanneer u probeert te controleren of er video&#39;s naar worden geüpload.
 
 >[!NOTE]
 >
@@ -468,7 +468,7 @@ Google Cloud-instellingen configureren:
 
 1. In het Nieuwe de dialoogvakje van het Project, op het gebied van de Naam van het Project, typ de naam van uw nieuw project.
 
-   Merk op dat uw identiteitskaart van het Project op uw projectnaam wordt gebaseerd. Kies daarom de projectnaam zorgvuldig; het kan na het creëren niet worden veranderd. Bovendien moet u dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt AEM. misschien wilt u het wegschrijven.
+   Merk op dat uw identiteitskaart van het Project op uw projectnaam wordt gebaseerd. Kies daarom de projectnaam zorgvuldig; het kan na het creëren niet worden veranderd. Bovendien moet u dezelfde project-id opnieuw invoeren wanneer u YouTube later instelt in AEM. misschien wilt u het wegschrijven.
 
 1. Klik op **[!UICONTROL Create.]**
 
@@ -481,7 +481,7 @@ Google Cloud-instellingen configureren:
 
 1. Tik boven aan de pagina met API&#39;s en services op **[!UICONTROL Enable APIs and Services.]**
 1. Tik op de pagina API-bibliotheek links onder **[!UICONTROL Category]** op **[!UICONTROL YouTube.]** rechts op de pagina op **[!UICONTROL YouTube Data API.]**
-1. Tik op de v3-pagina voor de YouTube Data API op **[!UICONTROL Enable.]**
+1. Tik op de v3-pagina YouTube Data API op **[!UICONTROL Enable.]**
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -526,7 +526,7 @@ Google Cloud-instellingen configureren:
 
 1. Voer onder de kop **[!UICONTROL Product name shown to users]** in het tekstveld in wat u wilt weergeven op het instemmingsscherm.
 
-   Het toestemmingsscherm wordt getoond aan de AEM beheerder wanneer zij voor YouTube voor authentiek verklaren; AEM neemt contact op met YouTube voor toestemming.
+   Het toestemmingsscherm wordt getoond aan de AEM beheerder wanneer zij aan YouTube voor authentiek verklaren; AEM neemt contact op met YouTube voor toestemming.
 
 1. Klik op **[!UICONTROL Continue.]**
 1. Tik op de pagina Referenties aan uw project toevoegen in stap 4 onder de kop **[!UICONTROL Download credentials]** op **[!UICONTROL Download.]**
@@ -535,7 +535,7 @@ Google Cloud-instellingen configureren:
 
 1. Sla het `client_id.json`-bestand op.
 
-   U hebt dit gedownloade json-bestand nodig wanneer u YouTube later in Adobe Experience Manager instelt.
+   U hebt dit gedownloade json-bestand nodig wanneer u YouTube later instelt in Adobe Experience Manager.
 
 1. Klik op **[!UICONTROL Done.]**
 
@@ -543,16 +543,16 @@ Google Cloud-instellingen configureren:
 
 ### Een YouTube-kanaal {#creating-a-youtube-channel} maken
 
-Als u video&#39;s naar YouTube wilt publiceren, hebt u een of meer kanalen nodig. Als u al een YouTube-kanaal hebt gemaakt, kunt u deze taak overslaan en naar [Codes toevoegen voor publicatie](/help/assets/video.md#adding-tags-for-publishing) gaan.
+Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u al een YouTube-kanaal hebt gemaakt, kunt u deze taak overslaan en naar [Codes toevoegen voor publicatie](/help/assets/video.md#adding-tags-for-publishing) gaan.
 
 >[!CAUTION]
 >
->Zorg ervoor dat u al een of meer kanalen hebt ingesteld op YouTube *voor* dat u kanalen toevoegt onder YouTube-instellingen in AEM (zie [YouTube instellen in AEM](#setting-up-youtube-in-aem) hieronder). Als u dit niet doet, krijgt u geen enkele waarschuwing voor bestaande kanalen. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
+>Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *before* u kanalen toevoegt onder YouTube Settings in AEM (zie [YouTube instellen in AEM](#setting-up-youtube-in-aem) hieronder). Als u dit niet doet, krijgt u geen enkele waarschuwing voor bestaande kanalen. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
 
 Een YouTube-kanaal maken:
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
-1. Klik in de rechterbovenhoek van de YouTube-pagina op het profielbeeld (kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
+1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (die ook als een letter in een cirkel met effen kleuren kan worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
 1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a new channel.]**
 1. Klik op **[!UICONTROL Create a new channel.]** op de pagina Kanalen
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create.]**
@@ -567,11 +567,11 @@ Een YouTube-kanaal maken:
 
 Als u video&#39;s naar YouTube wilt publiceren, AEM tags aan een of meer YouTube-kanalen gekoppeld. Zie [Codes beheren](/help/sites-administering/tags.md) voor informatie over het toevoegen van codes voor publiceren.
 
-Of als u de standaardlabels in AEM wilt gebruiken, kunt u deze taak overslaan en naar [De publicatie-replicatieagent voor YouTube inschakelen](#enabling-the-youtube-publish-replication-agent) gaan.
+Of, als u van plan bent om de standaardmarkeringen in AEM te gebruiken, kunt u deze taak overslaan en naar [Toelatend YouTube gaan publiceer replicatieagent](#enabling-the-youtube-publish-replication-agent).
 
 ### De YouTube-publicatiereplicatieagent {#enabling-the-youtube-publish-replication-agent} inschakelen
 
-Nadat u de YouTube Publish-replicatieagent hebt ingeschakeld, tikt u op **[!UICONTROL Test Connection.]** Een browsertabblad om de verbindingsresultaten weer te geven als u de verbinding met de Google Cloud-account wilt testen. Als u YouTube-kanalen hebt toegevoegd, wordt een lijst met deze kanalen weergegeven als onderdeel van de test.
+Als u de YouTube Publish Replication Agent hebt ingeschakeld en u de verbinding met de Google Cloud-account wilt testen, tikt u op **[!UICONTROL Test Connection.]** Het tabblad Browser geeft de verbindingsresultaten weer. Als u YouTube-kanalen hebt toegevoegd, wordt een lijst met kanalen weergegeven als onderdeel van de test.
 
 1. Klik in de linkerbovenhoek van AEM op het AEM-logo en klik vervolgens in het linkerspoor op **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author.]**
 1. Voor de Agenten van de pagina van de Auteur, klik **[!UICONTROL YouTube Publish (youtube).]**
@@ -579,14 +579,14 @@ Nadat u de YouTube Publish-replicatieagent hebt ingeschakeld, tikt u op **[!UICO
 1. Schakel het selectievakje **[!UICONTROL Enabled]** in om de replicatieagent in te schakelen.
 1. Klik op **[!UICONTROL OK.]**
 
-   U stelt YouTube nu in AEM in.
+   Nu stelt u YouTube in AEM in.
 
 ### YouTube instellen in AEM {#setting-up-youtube-in-aem}
 
 Vanaf AEM 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd waarmee u YouTube-publicaties kunt instellen in AEM. Voer een van de volgende handelingen uit op basis van het geïnstalleerde exemplaar van AEM dat u gebruikt:
 
 * Zie [YouTube instellen in AEM vóór 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before) om YouTube in AEM vóór 6.4 te configureren.
-* Zie [YouTube instellen in AEM 6.4 en hoger](#setting-up-youtube-in-aem-and-later) als u YouTube wilt configureren in AEM 6.4 of hoger.
+* Zie [YouTube instellen in AEM 6.4 en hoger](#setting-up-youtube-in-aem-and-later) om YouTube in AEM 6.4 of hoger te configureren.
 
 #### YouTube instellen in AEM 6.4 en hoger {#setting-up-youtube-in-aem-and-later}
 
@@ -598,7 +598,7 @@ Vanaf AEM 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd wa
 1. Voer op de pagina YouTube-configuratie maken onder Google Cloud-platforminstellingen in het veld **[!UICONTROL Application Name]** de Google-project-id in.
 
    U hebt de project-id opgegeven toen u aanvankelijk eerder Google Cloud-instellingen had geconfigureerd.
-Laat de pagina Create YouTube Configuration open. daar kom je zo op terug .
+Laat de pagina YouTube-configuratie maken open. daar kom je zo op terug .
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -607,7 +607,7 @@ Laat de pagina Create YouTube Configuration open. daar kom je zo op terug .
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save.]**
 
-   U stelt YouTube-kanalen nu in AEM.
+   U stelt nu YouTube-kanalen in AEM.
 
 1. Tik op **[!UICONTROL Add Channel.]**
 1. Voer in het veld Kanaalnaam de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
@@ -635,25 +635,25 @@ Laat de pagina Create YouTube Configuration open. daar kom je zo op terug .
 
    Nu publiceert u video&#39;s naar uw YouTube-kanaal.
 
-#### YouTube instellen in AEM voor 6.4 {#setting-up-youtube-in-aem-before}
+#### YouTube instellen in AEM vóór 6.4 {#setting-up-youtube-in-aem-before}
 
 1. Meld u als beheerder aan bij uw exemplaar van Dynamic Media.
 
 1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services.]**
-1. Onder de kop Services van derden tikt u onder YouTube op **[!UICONTROL Configure now.]**
+1. Onder de rubriek Services van derden tikt u onder YouTube op **[!UICONTROL Configure now.]**
 1. Voer in het dialoogvenster Configuratie maken een titel (verplicht) en een naam (optioneel) in de desbetreffende velden in.
 1. Tik op **[!UICONTROL Create.]**
 1. Voer in het veld **[!UICONTROL Application Name]** in het dialoogvenster YouTube-accountinstellingen de Google-project-id in.
 
    U hebt de project-id opgegeven wanneer u eerder [Google Cloud-instellingen hebt geconfigureerd](/help/assets/video.md#configuring-google-cloud-settings).
-Laat het dialoogvenster YouTube-accountinstellingen geopend. daar kom je zo op terug .
+Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op terug .
 
 1. Open met een teksteditor zonder opmaak het JSON-bestand dat u eerder hebt gedownload en opgeslagen in de taak Google Cloud-instellingen configureren.
 1. Selecteer en kopieer de volledige JSON-tekst.
 1. Ga terug naar het dialoogvenster YouTube-accountinstellingen. Plak de JSON-tekst in het veld **[!UICONTROL JSON Config]**.
 1. Tik op **[!UICONTROL OK.]**
 
-   U stelt YouTube-kanalen nu in AEM.
+   U stelt nu YouTube-kanalen in AEM.
 
 1. Tik rechts van **[!UICONTROL Available Channels]** op **+** (plusteken).
 1. Voer in het veld Titel in het dialoogvenster YouTube-kanaalinstellingen de naam in van het kanaal dat u eerder in de taak **[!UICONTROL Adding one or more channels to YouTube]** hebt gemaakt.
@@ -681,7 +681,7 @@ Laat het dialoogvenster YouTube-accountinstellingen geopend. daar kom je zo op t
 
    Nu publiceert u video&#39;s naar uw YouTube-kanaal.
 
-### (Optioneel) De standaardeigenschappen van YouTube voor uw geüploade video&#39;s automatiseren {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Optioneel) De standaardeigenschappen van YouTube voor uw geüploade video&#39;s automatisch instellen {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 U kunt desgewenst de instelling van YouTube-eigenschappen automatiseren bij het uploaden van uw video&#39;s. U doet dit door een verwerkingsprofiel voor metagegevens in AEM te maken.
 
@@ -717,7 +717,7 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
 1. Klik in de rechterbovenhoek van de pagina Metagegevensprofielen op **[!UICONTROL Create.]**
 1. Voer in het tekstveld **[!UICONTROL Profile title]** in het dialoogvenster Metadataprofiel toevoegen de naam `YouTube Video` in en klik vervolgens op **[!UICONTROL Create.]**
 1. Klik op het tabblad **[!UICONTROL Advance]** op de pagina Metagegevensprofieleditor.
-1. Voeg de gekopieerde Publishing-waarden voor YouTube als volgt toe aan het profiel:
+1. Voeg de gekopieerde YouTube Publishing-waarden als volgt toe aan het profiel:
 
    * Klik rechts van de pagina op het tabblad **[!UICONTROL Build Form]**.
    * (Optioneel) Sleep de component met het label **[!UICONTROL Section Header]** naar links en zet deze neer in het formuliergebied.
@@ -726,7 +726,7 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
    * Klik op de tab **[!UICONTROL Build Form]** en sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de kop **[!UICONTROL YouTube Publishing]** die u net hebt gemaakt.
 
    * Klik **[!UICONTROL Field Label]** om de component te selecteren.
-   * Plak rechts van de pagina, onder het tabblad Instellingen, de Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in de respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
+   * Plak rechts van de pagina, onder het tabblad Instellingen, de YouTube Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in hun respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
 
 1. Voeg de gekopieerde YouTube-privacywaarden als volgt toe aan het profiel:
 
@@ -737,7 +737,7 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
    * Klik op het tabblad **[!UICONTROL Build Form]** en sleep de component met het label **[!UICONTROL Multi Value Text]** en zet deze onder de **[!UICONTROL YouTube Privacy]** kop die u net hebt gemaakt.
 
    * Klik **[!UICONTROL Field Label]** om de component te selecteren.
-   * Plak rechts van de pagina, onder het tabblad Instellingen, de Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in de respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
+   * Plak rechts van de pagina, onder het tabblad Instellingen, de YouTube Publishing-waarden (Field Label value en Map to property value) die u eerder hebt gekopieerd, in hun respectievelijke velden op het formulier. Plak de waarde Keuzen in het veld Standaardwaarde.
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Save.]**
 1. Pas het metagegevensprofiel voor YouTube Publishing toe op de mappen waarin u video&#39;s gaat uploaden. U moet zowel het metagegevensprofiel als het videoprofiel hebben ingesteld.
@@ -746,25 +746,25 @@ Plak de gekopieerde waarde in de geopende teksteditor. Deze waarde hebt u later 
 
 ### Video&#39;s publiceren naar uw YouTube-kanaal {#publishing-videos-to-your-youtube-channel}
 
-Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proces laat AEM weten welke elementen u naar uw YouTube-kanaal wilt publiceren.
+Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proces laat AEM weten welke middelen naar uw YouTube-kanaal moeten worden gepubliceerd.
 
 >[!NOTE]
 >
->Wanneer u in de modus Dynamic Media - Scene7 werkt, ziet u dat publiceren direct niet automatisch naar YouTube wordt gepubliceerd. Als de Dynamic Media-Scene7-modus is ingesteld, zijn er twee publicatieopties waaruit u kunt kiezen: **[!UICONTROL Immediately]** of **[!UICONTROL Upon Activation.]**
+>Houd er rekening mee dat bij het uitvoeren in de Dynamic Media - Scene7-modus publiceren niet automatisch naar YouTube wordt gepubliceerd. Als de Dynamic Media-Scene7-modus is ingesteld, zijn er twee publicatieopties waaruit u kunt kiezen: **[!UICONTROL Immediately]** of **[!UICONTROL Upon Activation.]**
 >
->**[!UICONTROL Publish Immediately]** betekent dat het geüploade element-nadat het met IPS wordt gesynchroniseerd-automatisch aan het leveringssysteem wordt gepubliceerd. Dat geldt voor Dynamic Media, maar niet voor YouTube. Als u naar YouTube wilt publiceren, moet u publiceren via AEM-auteur.
+>**[!UICONTROL Publish Immediately]** betekent dat het geüploade element-nadat het met IPS wordt gesynchroniseerd-automatisch aan het leveringssysteem wordt gepubliceerd. Dat geldt voor Dynamic Media, maar dat geldt niet voor YouTube. Als u wilt publiceren naar YouTube, moet u publiceren via AEM Author.
 
 >[!NOTE]
 >
->Als u inhoud van YouTube wilt publiceren, gebruikt AEM de **[!UICONTROL Publish to YouTube]**-workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
+>Als u inhoud uit YouTube wilt publiceren, gebruikt AEM de **[!UICONTROL Publish to YouTube]**-workflow. Hiermee kunt u de voortgang volgen en eventuele foutgegevens weergeven.
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Voor meer gedetailleerde voortgangsinformatie kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
+>Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
 Video&#39;s publiceren naar uw YouTube-kanaal:
 
-1. Navigeer in AEM naar een video-element dat u naar uw YouTube-kanaal wilt publiceren.
+1. Navigeer in AEM naar een video-element dat u naar het YouTube-kanaal wilt publiceren.
 1. Selecteer het video-element (de adaptieve videoset).
 1. Klik op **[!UICONTROL Properties.]** op de werkbalk
 1. Klik op het tabblad Standaard onder de kop Metagegevens op **[!UICONTROL Open Selection Dialog]** rechts van het veld Codes.
@@ -782,7 +782,7 @@ Video&#39;s publiceren naar uw YouTube-kanaal:
 
 ### (Optioneel) De gepubliceerde video op YouTube {#optional-verifying-the-published-video-on-youtube} controleren
 
-U kunt optioneel de voortgang van uw publicatie op YouTube (of het ongedaan maken van de publicatie) volgen.
+U kunt optioneel de voortgang van het publiceren van YouTube (of het ongedaan maken van het publiceren) volgen.
 
 Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -790,31 +790,31 @@ De het publiceren tijden kunnen zeer afhankelijk van talrijke factoren variëren
 
 Als u na acht uur nog steeds een statusbericht ziet met de tekst **[!UICONTROL Uploaded (processing, please wait)]**, verwijdert u de video van onze site en uploadt u deze opnieuw.
 
-### URL&#39;s van YouTube koppelen aan uw webtoepassing {#linking-youtube-urls-to-your-web-application}
+### YouTube-URL&#39;s koppelen aan uw webtoepassing {#linking-youtube-urls-to-your-web-application}
 
-U kunt een URL-tekenreeks van YouTube verkrijgen die door Dynamic Media wordt gegenereerd nadat u de video hebt gepubliceerd. Wanneer u de URL van YouTube kopieert, wordt deze op het Klembord gedownload, zodat u deze indien nodig kunt plakken naar pagina&#39;s in uw website of toepassing.
+U kunt een YouTube URL-tekenreeks verkrijgen die door Dynamic Media wordt gegenereerd nadat u de video hebt gepubliceerd. Wanneer u de YouTube-URL kopieert, wordt deze op het Klembord gedownload, zodat u deze indien nodig kunt plakken naar pagina&#39;s in uw website of toepassing.
 
 >[!NOTE]
 >
->De URL van YouTube kan pas worden gekopieerd nadat u het video-element naar YouTube hebt gepubliceerd.
+>De YouTube-URL kan pas worden gekopieerd nadat u het video-element naar YouTube hebt gepubliceerd.
 
-U kunt als volgt YouTube-URL&#39;s koppelen aan uw webtoepassing:
+YouTube-URL&#39;s koppelen aan uw webtoepassing:
 
-1. Navigeer naar het *YouTube published* videoelement waarvan u de URL wilt kopiëren en selecteer het vervolgens.
+1. Navigeer naar het *YouTube gepubliceerde* videoelement waarvan u de URL wilt kopiëren en selecteer het.
 
-   Onthoud dat YouTube-URL&#39;s alleen beschikbaar zijn om *after* de video-elementen eerst *gepubliceerd* naar YouTube te kopiëren.
+   Onthoud dat YouTube-URL&#39;s alleen beschikbaar zijn om *after* te kopiëren. De video-elementen zijn eerst *gepubliceerd* naar YouTube.
 
 1. Klik op **[!UICONTROL Properties.]** op de werkbalk
 1. Klik op het tabblad **[!UICONTROL Advanced]**.
-1. Selecteer onder de kop YouTube Publishing in de URL-lijst YouTube de URL-tekst en kopieer deze naar uw webbrowser om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
+1. Selecteer onder YouTube Publishing in de URL-lijst van YouTube de URL-tekst en kopieer deze naar uw webbrowser om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
 
-### Publicatie van video&#39;s opheffen om deze te verwijderen van YouTube {#unpublishing-videos-to-remove-them-from-youtube}
+### Publiceren van video&#39;s om deze uit YouTube te verwijderen {#unpublishing-videos-to-remove-them-from-youtube} ongedaan maken
 
 Wanneer u de publicatie van een video-element in AEM ongedaan maakt, wordt de video verwijderd uit YouTube.
 
 >[!CAUTION]
 >
->Als u een video rechtstreeks van YouTube verwijdert, is AEM zich hiervan niet bewust en gedraagt het zich alsof de video nog steeds op YouTube wordt gepubliceerd. Publiceer de publicatie van een video-element op YouTube altijd ongedaan AEM.
+>Als u een video rechtstreeks uit YouTube verwijdert, is AEM zich hiervan niet bewust en gedraagt het zich alsof de video nog steeds naar YouTube wordt gepubliceerd. Publicatie van een video-element uit YouTube altijd ongedaan maken AEM.
 
 >[!NOTE]
 >
@@ -822,18 +822,18 @@ Wanneer u de publicatie van een video-element in AEM ongedaan maakt, wordt de vi
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-U kunt als volgt de publicatie van video&#39;s ongedaan maken om deze van YouTube te verwijderen:
+Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:
 
-1. Navigeer naar de video-elementen waarvan u de publicatie ongedaan wilt maken via uw YouTube-kanaal.
+1. Navigeer naar de video-elementen waarvan u de publicatie via uw YouTube-kanaal wilt ongedaan maken.
 1. Selecteer in de modus voor middelenselectie een of meer gepubliceerde video-elementen.
 1. Klik op **[!UICONTROL Manage Publication.]** Mogelijk moet u op het pictogram met drie punten (. . .) op de werkbalk om **[!UICONTROL Manage Publication.]** te zien
 1. Tik op **[!UICONTROL Unpublish.]** op de pagina Publicatie beheren
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Next.]**
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Unpublish.]**
 
-## Voortgang van videocodering en publicatie op YouTube {#monitoring-video-encoding-and-youtube-publishing-progress} controleren
+## Voortgang van videocodering en YouTube-publicatie volgen {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepast, of wanneer u uw video publiceert naar YouTube, kunt u op verschillende manieren controleren hoe de videocodering/YouTube-publicatie vordert (of mislukt). De daadwerkelijke vooruitgang bij het publiceren op YouTube is alleen beschikbaar via de logboeken, maar of het programma mislukt of slaagt, wordt vermeld op extra manieren die in de volgende procedure worden beschreven. Bovendien kunt u e-mailmeldingen ontvangen wanneer een publicatieworkflow of videocodering op YouTube is voltooid of onderbroken.
+Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepast, of wanneer u uw video publiceert naar YouTube, kunt u op verschillende manieren controleren hoe de videocodering/YouTube-publicatie vordert (of mislukt). De daadwerkelijke YouTube-publicatievoortgang is alleen beschikbaar in de vorm van logboeken, maar of deze mislukt of slaagt, wordt vermeld op extra manieren die in de volgende procedure worden beschreven. Bovendien kunt u e-mailmeldingen ontvangen wanneer een publicatieworkflow of videocodering van YouTube is voltooid of onderbroken.
 
 ### Voortgang {#monitoring-progress} controleren
 
@@ -857,7 +857,7 @@ De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
 
    ![chlimage_1-432](assets/chlimage_1-432.png)
 
-   Workflowinformatie, zoals codering, wordt weergegeven in de tijdlijn. Voor YouTube-publicaties bevat de tijdlijn van de workflow ook de naam van het YouTube-kanaal en de URL van de YouTube-video. Bovendien ziet u eventuele foutmeldingen in de tijdlijn van de workflow nadat het publiceren is voltooid.
+   Workflowinformatie, zoals codering, wordt weergegeven in de tijdlijn. Voor YouTube-publicatie bevat de tijdlijn van de workflow ook de naam van het YouTube-kanaal en de YouTube-video-URL. Bovendien ziet u eventuele foutmeldingen in de tijdlijn van de workflow nadat het publiceren is voltooid.
 
    >[!NOTE]
    >
@@ -922,16 +922,16 @@ De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
 >
 >Mogelijk hebt u beheerrechten nodig om toegang te krijgen tot het menu **[!UICONTROL Tools]**.
 
-Hoe u een melding configureert, hangt af van het feit of u meldingen voor coderingstaken of publicatietaken op YouTube wilt:
+Hoe u een melding configureert, hangt af van het feit of u berichten voor coderingstaken of publicatietaken in YouTube wilt:
 
 * Voor coderingsbanen, kunt u tot de configuratiepagina voor alle AEM werkschema e-mailberichten bij **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** en door te zoeken naar **[!UICONTROL Day CQ Workflow Email Notification Service.]** Zie [E-mailbericht configureren in AEM](/help/sites-administering/notification.md). U kunt de selectievakjes voor **[!UICONTROL Notify on Abort]** of **[!UICONTROL Notify on Complete]** dienovereenkomstig selecteren of wissen.
 
-* Ga als volgt te werk voor publicatietaken op YouTube:
+* Ga als volgt te werk voor publicatietaken in YouTube:
 
 1. Tik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models.]**
 1. Selecteer **[!UICONTROL Publish to YouTube]** op de pagina Workflowmodellen en tik **[!UICONTROL Edit]** op de werkbalk.
 1. Tik in de rechterbovenhoek van de pagina Publiceren op YouTube-workflow op **[!UICONTROL Edit.]**
-1. Houd de muisaanwijzer boven op de component Upload van YouTube en tik één keer om de inlinewerkbalk weer te geven.
+1. Houd de muisaanwijzer boven op de YouTube-component Upload en tik één keer om de inlinewerkbalk weer te geven.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
 
@@ -953,10 +953,10 @@ Hoe u een melding configureert, hangt af van het feit of u meldingen voor coderi
 
    >[!NOTE]
    >
-   >Deze e-mailberichten zijn specifiek voor YouTube en vormen een aanvulling op de algemene e-mailmeldingen over de workflow. Het gevolg is dat u twee sets e-mailmeldingen ontvangt: het algemene bericht in de **[!UICONTROL Day CQ Workflow Email Notification Service]** en een specifiek bericht voor YouTube, afhankelijk van de configuratie-instellingen.
+   >Deze e-mailberichten zijn specifiek voor YouTube en vormen een aanvulling op de algemene e-mailmeldingen over de workflow. Dientengevolge, kunt u twee reeksen e-mailbericht ontvangen - het generische bericht beschikbaar in **[!UICONTROL Day CQ Workflow Email Notification Service]** en één specifiek voor YouTube afhankelijk van uw configuratiemontages.
 
 1. Tik op het pictogram **[!UICONTROL Done]** (vinkje) wanneer u klaar bent, in de rechterbovenhoek van het dialoogvenster.
-1. Tik in de rechterbovenhoek op de pagina Publiceren op YouTube-workflow op **[!UICONTROL Sync.]**
+1. Tik in de rechterbovenhoek op de pagina Publiceren naar YouTube-workflow op **[!UICONTROL Sync.]**
 
 ## Videorapporten {#viewing-video-reports} weergeven
 
@@ -1133,7 +1133,7 @@ U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstuk
 >
 >De videospeler die wordt gebruikt moet het gebruik van hoofdstukmarkeringen steunen. Dynamic Media-videospelers ondersteunen wel hoofdstukmarkeringen, maar het gebruik van videospelers van derden is mogelijk niet mogelijk.
 
-Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Raadpleeg voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie in de Adobe HTML5 Viewer SDK API de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. Zie de [HTML5 Viewer SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) documentatie.
+Desgewenst kunt u uw eigen aangepaste videoviewer maken en markeren met hoofdstukken in plaats van een voorinstelling voor de videoviewer te gebruiken. Raadpleeg voor instructies over het maken van uw eigen HTML5-viewer met hoofdstuknavigatie in de Adobe HTML5 Viewer SDK API de kop &quot;Gedrag aanpassen met wijzigingstoetsen&quot; onder de klassen `s7sdk.video.VideoPlayer` en `s7sdk.video.VideoScrubber`. Zie de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) documentatie.
 
 <!-- If desired, you can create and brand your own custom video viewer with chapters instead of using a video viewer preset. For instructions on creating your own HTML5 viewer with chapter navigation, in the Adobe Scene7 Viewer SDK for HTML5 guide, reference the heading “Customizing Behavior Using Modifiers” under the classes `s7sdk.video.VideoPlayer` and `s7sdk.video.VideoScrubber`. The Adobe Scene7 Viewer SDK is available as a download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
@@ -1329,4 +1329,3 @@ T **Een aangepaste videominiatuur toevoegen**,
 1. Tik op **[!UICONTROL Save Changes.]** nadat u de afbeelding hebt geüpload en gepubliceerd op de pagina Miniatuur wijzigen
 
    De aangepaste miniatuur wordt toegevoegd aan uw video.
-

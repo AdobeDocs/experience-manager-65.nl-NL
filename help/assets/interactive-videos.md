@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
-feature: Interactive Videos
+feature: Interactieve video's
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '6018'
+source-wordcount: '6015'
 ht-degree: 4%
 
 ---
-
 
 # Interactieve video&#39;s{#interactive-videos}
 
@@ -50,7 +50,7 @@ Bekijk een analyse van 7 minuten en 30 seconden over [hoe interactieve video&#39
 
 ### Adobe Klantsucces Webinar {#adobe-customer-success-webinar}
 
-De webinar &#39;Using Interactive Video, Link Sharing, and YouTube sharing in AEM Assets&#39; leert u hoe u interactieve video en andere functies kunt gebruiken om gebeurtenissen die tijdens de conversie worden aangestuurd, aan uw video marketinginhoud te koppelen.
+De webinar ‘Interactive Video, Link Sharing en YouTube sharing gebruiken in AEM Assets’ leert u hoe u interactieve video en andere functies kunt gebruiken om conversie-gebeurtenissen te koppelen aan uw video marketing inhoud.
 
 >[!NOTE]
 [Interactieve video gebruiken, koppelingen delen en YouTube delen in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
@@ -73,7 +73,7 @@ Interactieve videostappen:
 
 1. **(Optioneel) Quickview-variabelen**  identificeren - Begin door dynamische variabelen te identificeren die door uw bestaande QuickView-implementatie worden gebruikt. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige productQuickView wanneer u uw interactieve video creeert. Zie [(Optioneel) Variabelen in QuickView identificeren](#optional-identifying-quickview-variables).
    *Deze stap is alleen vereist als aan alle volgende voorwaarden wordt voldaan*: ・ U wilt interactiviteit aan uw video toevoegen door aan snelle meningen in werking te stellen.
-・ Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM te halen van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop. Zie [eCommerce-concepten in AEM Assets](/help/sites-administering/concepts.md).
+・ Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM te halen van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop. Zie [eCommerce-concepten in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optioneel) Een voorinstelling**  voor een interactieve videoviewer maken: pas de weergave en het gedrag aan van de verschillende componenten waaruit de speler bestaat, zoals de videoscrubber en de interactieve miniaturen.
 Het is niet nodig een eigen voorinstelling voor een interactieve videoviewer te maken als u de voorinstellingen `Shoppable_Video_Light` of `Shoppable_Video_Dark` voor de externe interactieve videoviewer wilt gebruiken.
@@ -98,7 +98,7 @@ Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactie
 >[!NOTE]
 Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
 * U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen in werking te stellen.
-* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. Zie [eCommerce-concepten in AEM Assets](/help/sites-administering/concepts.md).
+* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. Zie [eCommerce-concepten in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 Als uw implementatie van AEM eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
@@ -470,7 +470,7 @@ Om interactiviteit aan uw video toe te voegen:
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Een geselecteerd tien-secondensegment splitsen in twee segmenten van vijf seconden elk.
 

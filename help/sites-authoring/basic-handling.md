@@ -10,14 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 translation-type: tm+mt
-source-git-commit: b68dd6c48d03e233265a2c93e61c0aeb768fa408
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 3%
 
 ---
-
 
 # Basisbewerkingen{#basic-handling}
 
@@ -108,7 +108,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Handel</td>
-   <td>Hierdoor kunt u producten, productcatalogi en bestellingen beheren die verwant zijn aan uw <a href="/help/sites-administering/ecommerce.md">Commerciële</a>-sites.</td>
+   <td>Hierdoor kunt u producten, productcatalogi en bestellingen beheren die verwant zijn aan uw <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerciële</a>-sites.</td>
   </tr>
   <tr>
    <td>Ervaringsfragmenten</td>
@@ -292,7 +292,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 >[!NOTE]
 >
->De afzonderlijke beschikbare pictogrammen worden gedocumenteerd ten opzichte van de juiste console/functie/scenario.
+>De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
 
 ## Snelle handelingen {#quick-actions}
 
@@ -593,4 +593,3 @@ Deze opties zijn toegankelijk via het chevron naast het veld **Opmerking**.
 Hiermee wordt een deelvenster geopend dat lijkt op [search](/help/sites-authoring/search.md), waarbij de juiste locatiefilters al zijn ingesteld, zodat u de inhoud die u wilt weergeven verder kunt filteren.
 
 ![bh-29](assets/bh-29.png)
-

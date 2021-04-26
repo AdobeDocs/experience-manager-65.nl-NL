@@ -9,9 +9,9 @@ user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt sa
 feature: Ontwikkeling
 role: Developer
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 6%
 
 ---
@@ -70,10 +70,6 @@ ht-degree: 6%
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
    + [Rapporten ontwikkelen](dev-reports.md)
-   + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [Ontwikkelen (algemeen)](generic.md)
-      + [Ontwikkelen met SAP Commerce Cloud](sap-commerce-cloud.md)
 + Onderdelen{#components}
    + [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
    + [Stijlsysteem](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)

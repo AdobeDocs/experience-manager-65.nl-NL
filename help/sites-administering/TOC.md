@@ -9,9 +9,9 @@ user-guide-description: Meer informatie over het AEM.
 feature: Beheer
 role: Administrator
 translation-type: tm+mt
-source-git-commit: 06cbf5ccc957b0cb5bd24c820f5209821ae92cd9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '665'
+source-wordcount: '637'
 ht-degree: 6%
 
 ---
@@ -109,13 +109,6 @@ ht-degree: 6%
    + [Segmentatie configureren](campaign-segmentation.md)
    + [De importmodule voor ontwerpen voor bestemmingspagina&#39;s uitbreiden en configureren](extending-the-design-importer-for-landingpages.md)
    + [Landingpagina&#39;s integreren met Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-   + [eCommerce](ecommerce.md)
-   + [Concepten](concepts.md)
-   + [Algemeen eCommerce beheren](generic.md)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 + Integratie {#integration}
    + [Integreren met services van derden](third-party-services.md)
    + [Integratie met Salesforce](salesforce.md)

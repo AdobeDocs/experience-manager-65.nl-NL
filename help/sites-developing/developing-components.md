@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3533'
 ht-degree: 1%
 
 ---
-
 
 # AEM componenten ontwikkelen{#developing-aem-components}
 
@@ -26,8 +26,8 @@ AEM componenten worden gebruikt om de inhoud die op uw webpagina&#39;s beschikba
 
 * Wanneer [authoring pages](/help/sites-authoring/default-components.md), staan de componenten de auteurs toe om de inhoud uit te geven en te vormen.
 
-   * Wanneer het construeren van een [Commerce](/help/sites-administering/ecommerce.md) plaats kunnen de componenten, bijvoorbeeld, informatie van de catalogus verzamelen en teruggeven.
-Zie [eCommerce ontwikkelen](/help/sites-developing/ecommerce.md) voor meer informatie.
+   * Wanneer het construeren van een [Commerce](/help/commerce/cif-classic/administering/ecommerce.md) plaats kunnen de componenten, bijvoorbeeld, informatie van de catalogus verzamelen en teruggeven.
+Zie [eCommerce ontwikkelen](/help/commerce/cif-classic/developing/ecommerce.md) voor meer informatie.
 
    * Wanneer u een [Communities](/help/communities/author-communities.md)-site samenstelt, kunnen de componenten informatie verschaffen aan en informatie verzamelen van uw bezoekers.
 Zie [Gemeenschappen ontwikkelen](/help/communities/communities.md) voor meer informatie.

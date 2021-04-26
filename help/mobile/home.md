@@ -3,14 +3,14 @@ title: AEM 6.5 Mobiele gebruikershandleiding
 seo-title: AEM 6.5 Mobiele gebruikershandleiding
 description: In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren.
 seo-description: Beschrijft om inhoud voor mobiele toepassingen tot stand te brengen en te beheren.
+exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '369'
 ht-degree: 18%
 
 ---
-
 
 # AEM 6.5 Mobiele gebruikershandleiding
 
@@ -38,6 +38,7 @@ Deze handleiding behandelt alle AEM Mobile-taken, zoals het maken en beheren van
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

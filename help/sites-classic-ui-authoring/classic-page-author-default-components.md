@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 1%
 
 ---
-
 
 # Onderdelen{#components}
 
@@ -37,11 +37,10 @@ De volgende pagina&#39;s bevatten snelle koppelingen naar enkele van de belangri
 
    Componenten die worden gebruikt voor het maken van standaardpagina-inhoud bevinden zich voornamelijk in de groepen **Algemeen**, **Kolommen** en **Forms**.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
    De eCommerce-functionaliteit binnen AEM omvat ook een reeks componenten in de **Commerce**-groep. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
 
 ## Ontwerpmodus gebruiken om componenten {#using-design-mode-to-configure-components} te configureren
 
 Naast de componenten waartoe auteurs via het hulpprogramma toegang hebben in een standaardinstallatie, zijn er ook verschillende andere componenten beschikbaar. U kunt [Ontwerpmodus](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) gebruiken om deze in of uit te schakelen en parameters voor specifieke componenten te bewerken.
-

@@ -5,9 +5,9 @@ topics: Commerce
 feature: Kader voor integratie in de handel
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ Het instappen voor AEM Inhoud en Handel is een proces in twee stappen:
 
 2. Verbind AEM met uw handelsoplossing
 
-### Installeer de AEM Content and Comemerence add-on voor AEM 6.5
+### Installeer de AEM Content and Commerce add-on voor AEM 6.5 {#install-add-on}
 
 Download en installeer de AEM Commerce Add-On voor AEM 6.5 van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
 Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren om het laatste beschikbare de dienstpak te installeren.
 
-    >[!OPMERKING]
-    >
-    >Dit wordt door de CSE gedaan voor AEM klanten van de beheerde service.
+>[!NOTE]
+>
+>Dit zal door CSE voor AEM Beheerde klanten van de Dienst worden gedaan.
 
-### AEM verbinden met uw handelssysteem
+### AEM verbinden met uw handelssysteem {#connect}
 
 AEM kan met om het even welk handelssysteem worden verbonden dat een toegankelijk eindpunt GraphQL voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
 

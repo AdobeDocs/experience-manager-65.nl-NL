@@ -1,14 +1,14 @@
 ---
 title: Opmerkingen bij de release Adobe Experience Manager 6.5
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 translation-type: tm+mt
-source-git-commit: 90ab21c4a25fa1a2dcdf04af61fd30982cae7aae
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '384'
 ht-degree: 13%
 
 ---
-
 
 # Opmerkingen bij de release Adobe Experience Manager 6.5
 
@@ -34,6 +34,7 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

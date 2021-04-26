@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
+exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 translation-type: tm+mt
-source-git-commit: cb07e24b01084f57ad46615cb463ad5a0329c181
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '1833'
 ht-degree: 1%
 
 ---
-
 
 # Implementeren en onderhouden van{#deploying-and-maintaining}
 
@@ -50,7 +50,7 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Start en stop opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configureren](/help/sites-deploying/configuring.md)
 * [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
@@ -311,7 +311,7 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Start en stop opdrachtregel](/help/sites-deploying/command-line-start-and-stop.md)
 * [Configureren](/help/sites-deploying/configuring.md)
 * [Upgrade uitvoeren naar AEM 6.5](/help/sites-deploying/upgrade.md)
-* [eCommerce](/help/sites-deploying/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)

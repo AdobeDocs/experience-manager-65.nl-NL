@@ -2,15 +2,15 @@
 title: AEM 6.5 Handboek beheren
 seo-title: AEM 6.5 Handboek beheren
 description: 'In deze handleiding wordt uitgelegd hoe u een AEM project kunt beheren '
-seo-description: 'Omvat hoe te om een AEM project met succes te beheren '
+seo-description: Omvat hoe te om een AEM project met succes te beheren
+exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 19%
+source-wordcount: '357'
+ht-degree: 18%
 
 ---
-
 
 # AEM 6.5 Handboek beheren
 
@@ -38,6 +38,7 @@ In deze handleiding wordt uitgelegd hoe u een AEM project kunt beheren
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

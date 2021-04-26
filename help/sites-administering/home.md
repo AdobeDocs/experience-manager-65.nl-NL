@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Gebruikershandleiding voor het beheer
 description: AEM
 seo-description: AEM
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 20%
+source-wordcount: '339'
+ht-degree: 19%
 
 ---
 
@@ -38,6 +38,7 @@ Deze handleiding behandelt alle AEM beheertaken.
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

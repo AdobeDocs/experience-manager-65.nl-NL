@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.5 Community Guide
 seo-title: Adobe Experience Manager 6.5 Community Guide
 description: Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 seo-description: Omvat alle taken van AEM Communities, zoals het creëren van online ervaringen zoals forums, gebruikersgroepen, het leren middelen, en andere sociale eigenschappen.
+exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 translation-type: tm+mt
-source-git-commit: d340f34704149c9e096aa6988bb3e3fda1caf3d7
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 17%
+source-wordcount: '399'
+ht-degree: 16%
 
 ---
-
 
 # Adobe Experience Manager 6.5 Community Guide
 
@@ -38,6 +38,7 @@ Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van onlin
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

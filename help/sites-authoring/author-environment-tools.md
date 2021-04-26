@@ -10,14 +10,14 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2239'
 ht-degree: 9%
 
 ---
-
 
 # Ontwerpen - het Milieu en Hulpmiddelen{#authoring-the-environment-and-tools}
 
@@ -243,7 +243,7 @@ Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties 
 
 * Instanties van geleende en geleende inhoud die de **Referentie** component gebruiken, van hier kunt u aan de verwijzende/referenced pagina navigeren
 
-* [Verwijzingen naar productpagina](/help/sites-administering/generic.md#showing-product-references) &#39;s (beschikbaar op de console Handel-Producten)
+* [Verwijzingen naar productpagina](/help/commerce/cif-classic/administering/generic.md#showing-product-references) &#39;s (beschikbaar op de console Handel-Producten)
 * [Opstarten](/help/sites-authoring/launches.md), biedt toegang tot gerelateerde opstarties
 * [Met Live ](/help/sites-administering/msm.md) kopieën worden de paden van alle live kopieën weergegeven die zijn gebaseerd op de geselecteerde bron.
 * [Blauwdruk](/help/sites-administering/msm-best-practices.md), details en diverse handelingen

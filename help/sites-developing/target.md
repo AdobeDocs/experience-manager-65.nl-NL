@@ -10,14 +10,14 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
+exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelen voor gerichte inhoud{#developing-for-targeted-content}
 
@@ -218,7 +218,7 @@ Uw doelconfiguratie bevat een aangepast bestand mbox.js. Met [de vereiste code i
 
 De meeste componenten kunnen in gerichte componenten worden omgezet gebruikend het bevel van het Doel op het contextmenu.
 
-![chlimage_1-29](assets/chlimage_1-21.png)
+![chlimage_1-21](assets/chlimage_1-21.png)
 
 Als u de opdracht Doel uit het contextmenu wilt verwijderen, voegt u de volgende eigenschap toe aan het knooppunt cq:editConfig van de component:
 
@@ -253,7 +253,7 @@ De code op de weergegeven HTML-pagina die de mbox maakt, is vergelijkbaar met he
 </script>
 ```
 
-De waarden van elke parameter zijn verschillend voor elke orde. Daarom hebt u een component nodig die de code genereert op basis van de eigenschappen van de aankoop. Met het CQ [eCommerce Integration Framework](/help/sites-administering/ecommerce.md) kunt u integreren met uw productcatalogus en een winkelwagentje en afhandelingspagina implementeren.
+De waarden van elke parameter zijn verschillend voor elke orde. Daarom hebt u een component nodig die de code genereert op basis van de eigenschappen van de aankoop. Met het CQ [eCommerce Integration Framework](/help/commerce/cif-classic/administering/ecommerce.md) kunt u integreren met uw productcatalogus en een winkelwagentje en afhandelingspagina implementeren.
 
 In het voorbeeld Geometrixx Outdoors wordt de volgende bevestigingspagina weergegeven wanneer een bezoeker producten koopt:
 

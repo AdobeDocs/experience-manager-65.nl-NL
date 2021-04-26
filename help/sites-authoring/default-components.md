@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # Onderdelen{#components}
 
@@ -62,7 +62,7 @@ De volgende pagina&#39;s bevatten koppelingen naar enkele aanvullende, belangrij
 
 * [Community](/help/communities/author-communities.md) -componenten bieden interactieve functies voor een website, zoals forums en opmerkingen. Veel van deze componenten worden inbegrepen wanneer een [Communautaire Plaats ](/help/communities/overview.md) wordt gecreeerd.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)  - De eCommerce-functie binnen AEM omvat ook een reeks componenten. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)  - De eCommerce-functie binnen AEM omvat ook een reeks componenten. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
 
 ### Componenten {#configuring-components} configureren
 
@@ -70,4 +70,3 @@ Naast de componenten waartoe auteurs in een standaardinstallatie toegang hebben,
 
 * Als uw pagina op het geadviseerde, moderne, editable malplaatje gebaseerd is, kunt u [het malplaatje ](/help/sites-authoring/templates.md) toelaten/onbruikbaar maken en parameters voor specifieke componenten uitgeven.
 * Als uw pagina op een statisch malplaatje gebaseerd is, kunt u [ontwerpwijze ](/help/sites-authoring/default-components-designmode.md#enable-disable-components) gebruiken om deze toe te laten/onbruikbaar te maken en parameters voor specifieke componenten uit te geven.
-

@@ -9,9 +9,9 @@ user-guide-description: Meer informatie over het installeren, implementeren en d
 feature: Implementeren
 role: Architect
 translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -90,11 +90,6 @@ ht-degree: 1%
    + [Forms Repositoregeling Herstructurering in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
    + [Repositoregeling voor de herstructurering van AEM Communities in punt 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ eCommerce {#ecommerce}
-   + [Overzicht eCommerce](ecommerce.md)
-   + [SAP Commerce Cloud](sap-commerce-cloud.md)
-   + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best practices voor {#practices}
    + [Best practices implementeren](best-practices.md)
    + [Prestatieschema](performance-tree.md)

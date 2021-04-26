@@ -3,14 +3,14 @@ title: Adobe Experience Manager 6.5 Forms Guide
 seo-title: AEM 6.5 Forms Guide
 description: Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
 seo-description: Omvat alle AEM Forms-taken, waaronder het maken, beheren, publiceren en bijwerken van digitale formulieren.
+exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 translation-type: tm+mt
-source-git-commit: d97cc2ad393fc10ff545ae374180426eb1574ba9
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 18%
+source-wordcount: '378'
+ht-degree: 17%
 
 ---
-
 
 # Adobe Experience Manager 6.5 Forms Guide
 
@@ -38,6 +38,7 @@ Deze handleiding behandelt alle AEM Forms-taken, waaronder het maken, beheren, p
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 

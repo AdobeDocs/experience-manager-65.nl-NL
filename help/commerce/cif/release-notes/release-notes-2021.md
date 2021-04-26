@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 translation-type: tm+mt
-source-git-commit: 2d0b52dbf85e1fbe91c09a8366744aa77f25cd73
+source-git-commit: 1a6d713e74056333b18ed68f58876c2a75d535b8
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 9%
+source-wordcount: '498'
+ht-degree: 10%
 
 ---
 
@@ -27,13 +27,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | v2021.04.22 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF-invoegtoepassing | v021.04.22 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF Core-componenten | 1.10.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2021,04,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw {#what-is-new-april}
-
-* **CIF-invoegtoepassing is nu beschikbaar via  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Migreer naar de nieuwe CIF-invoegtoepassing.**
 
 * Ondersteuning voor categorie UID - Hierdoor wordt integratie van andere leveranciers mogelijk voor systemen die strings gebruiken voor categorie-id&#39;s
 

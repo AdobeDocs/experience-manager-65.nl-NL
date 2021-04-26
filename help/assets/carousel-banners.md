@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
-feature: Carousel Banners
+feature: Carousel-banners
 role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '4724'
+source-wordcount: '4721'
 ht-degree: 2%
 
 ---
-
 
 # Carousel-banners{#carousel-banners}
 
@@ -57,7 +57,7 @@ Zo kunt u snel aan de slag:
 
    >[!NOTE]
    >
-   >Als u een AEM Sites- of e-commerceklanten bent, kunt u de ingebouwde functie gebruiken om naar productpagina&#39;s te navigeren en de bestaande skus in de productcatalogus op te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over [eCommerce instellen](/help/sites-administering/generic.md).
+   >Als u een AEM Sites- of e-commerceklanten bent, kunt u de ingebouwde functie gebruiken om naar productpagina&#39;s te navigeren en de bestaande skus in de productcatalogus op te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over [eCommerce instellen](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Als u een AEM Assets- en Dynamic Media-klant bent, voert u handmatig gegevens in voor hotspots en afbeeldingen met hyperlinks. Vervolgens integreert u de gepubliceerde URL of de Embed-code met uw externe contentbeheersysteem.
@@ -104,7 +104,7 @@ Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeeld
 
 >[!NOTE]
 >
->Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de variabelen van hotspot of afbeeldingen met hyperlinks niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over [eCommerce instellen](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
+>Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de variabelen van hotspot of afbeeldingen met hyperlinks niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over [eCommerce instellen](/help/commerce/cif-classic/administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
 >
 >Als u een AEM Assets- of Media-klant bent, publiceert u de URL- of insluitcode en integreert u deze vervolgens met het contentbeheersysteem van derden en identificeert u handmatig hotspots en afbeeldingen met hyperlinks.
 

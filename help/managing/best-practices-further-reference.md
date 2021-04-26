@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
+exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 translation-type: tm+mt
-source-git-commit: 37ec3d8ce779ba392e6a92c828efb5fad749abec
+source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '3783'
 ht-degree: 0%
 
 ---
-
 
 # Checklist - Verdere verwijzing{#the-checklist-further-reference}
 
@@ -34,7 +34,7 @@ Wanneer het uitvoeren van AEM (in het bijzonder voor de eerste keer) zult u [mog
 
 Houd rekening met de functies van AEM die u gebruikt en met de invloed op uw ontwerp. bijvoorbeeld:
 
-* [Handel](/help/sites-administering/ecommerce.md)
+* [Handel](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
@@ -170,7 +170,7 @@ De Metriek van het doel worden bepaald bij het begin van een project aan:
 * bepalen hoe deze factoren daadwerkelijk zullen worden gemeten
 * worden gebruikt als basis voor de [Belangrijke prestatie-indicatoren](#key-performance-indicators-and-target-metrics)
 
-Zoals altijd zorgvuldig moet worden omgesprongen met het definiëren van de meetwaarden voor het doel:
+Zoals altijd zorgvuldig moet worden omgesprongen met de definitie van de doelwaarden:
 
 * als ze te hoog zijn , kunnen ze totaal onbereikbaar zijn
 * indien te lage fluctuaties zijn ingesteld, wordt deze mogelijk niet gemarkeerd
@@ -309,11 +309,11 @@ Zoekverzoeken kunnen een aanzienlijke invloed hebben op uw website, zowel wat be
 
 Het vaststellen van doelen voor zoekverzoeken is ook hier een kwestie van ervaring, afhankelijk van:
 
-* aem
+* AEM
 * een beoordeling van de frequentie waarmee de zoekopdracht zal worden gebruikt in vergelijking met andere doelstellingen
 * uw persistentiemanager
 * uw zoekindex
-* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, is sneller dan een geavanceerd zoeken waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
+* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, wordt sneller uitgevoerd dan een geavanceerde zoekopdracht waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
 
 Deze moeten vanaf het begin van uw project worden gepland en geïntegreerd. De volgende controlemechanismen zijn beschikbaar:
 
@@ -473,7 +473,7 @@ Voor elke categorie zijn enkele punten die moeten worden vermeld:
 
 ## Schatting van tijd en inspanning {#estimating-time-and-effort}
 
-Afhankelijk van uw resulterende takenlijst kunt u dan eerste schattingen maken van tijd en moeite voor (high-level) taakdefinities. Deze zouden een aanwijzing moeten omvatten van wie (klant of partner) wat en wanneer zal doen.
+Afhankelijk van uw resulterende takenlijst kunt u dan eerste schattingen maken van tijd en moeite voor (high-level) taakdefinities. Deze zouden een aanwijzing moeten omvatten van wie (klant of partner) zal doen wat en wanneer.
 
 De volgende lijst bevat standaardbenaderingen en onderlinge relaties van de betrokken inspanningen, en dus kosten:
 
@@ -517,7 +517,7 @@ De volgende sitemetriek moet worden gedefinieerd:
 
 ## Overzicht van mogelijke gereedschappen {#overview-of-potential-tools}
 
-De volgende lijst bevat informatie over de gereedschappen die u kunt gebruiken. Het is bedoeld als inleiding, niet als een uitgebreide lijst met aanbevelingen, en mag u zeker niet beletten andere instrumenten te gebruiken die u liever hebt.
+De volgende lijst bevat informatie over de gereedschappen die u kunt gebruiken. Het is bedoeld als inleiding, niet als een uitgebreide lijst met aanbevelingen, en mag u zeker niet ervan weerhouden andere instrumenten te gebruiken die u liever hebt.
 
 <table>
  <tbody>

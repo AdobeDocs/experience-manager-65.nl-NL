@@ -6,8 +6,8 @@ user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en t
 translation-type: tm+mt
 source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 

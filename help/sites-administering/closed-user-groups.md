@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
-feature: Security
+feature: Beveiliging
 translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
-source-wordcount: '6891'
+source-wordcount: '6886'
 ht-degree: 0%
 
 ---
@@ -773,7 +773,7 @@ Het configureren van CUG&#39;s in combinatie met LiveCopy wordt in de opslagplaa
 
 Beide elementen worden gemaakt onder `cq:Page`. Met het huidige ontwerp, behandelt MSM slechts knopen en eigenschappen die onder `cq:PageContent` (`jcr:content`) knoop zijn.
 
-Daarom kunnen CUG-groepen niet worden teruggedraaid van een blauwdruk naar een Live Copy. Houd hier rekening mee wanneer u een Live kopie instelt.
+CUG-groepen kunnen daarom niet worden geïmplementeerd in Actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
 
 ## Veranderingen met de Nieuwe Implementatie van de GUG {#changes-with-the-new-cug-implementation}
 

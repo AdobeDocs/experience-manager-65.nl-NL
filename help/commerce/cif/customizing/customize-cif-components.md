@@ -11,9 +11,9 @@ feature: Kader voor integratie in de handel
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Wij zullen het [Project van Venia ](https://github.com/adobe/aem-cif-guides-veni
 
 1. Voeg de noodzakelijke configuraties OSGi toe om uw AEM instantie met een instantie van de Magento te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
 
-1. Op dit punt zou u een werkende versie van een storefront moeten hebben die met een instantie van Magento wordt verbonden. Navigeer naar de pagina `US` > `Home` op: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. Op dit punt, zou u een werkende versie van een storefront moeten hebben die met een instantie van Magento wordt verbonden. Navigeer naar de pagina `US` > `Home` op: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    Je moet zien dat de winkel het thema Venia gebruikt. Als u het hoofdmenu van de storefront uitbreidt, ziet u verschillende categorieën die aangeven dat de Magento van de verbinding werkt.
 
@@ -261,7 +261,7 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
 
    De `@PostConstruct`-annotatie zorgt ervoor dat deze methode wordt aangeroepen zodra het Sling-model is geïnitialiseerd.
 
-   Bericht dat de vraag van product GraphQL reeds gebruikend de `extendProductQueryWith` methode is uitgebreid om de extra `created_at` attributen terug te winnen. Dit kenmerk wordt later gebruikt als onderdeel van de methode `isShowBadge()`.
+   Bericht dat de vraag product GraphQL reeds gebruikend de `extendProductQueryWith` methode is uitgebreid om de extra `created_at` attributen terug te winnen. Dit kenmerk wordt later gebruikt als onderdeel van de methode `isShowBadge()`.
 
 1. Werk de vraag GraphQL bij om het `eco_friendly` attribuut in de gedeeltelijke vraag te omvatten:
 
@@ -287,7 +287,7 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
 
    Toevoegen aan de methode `extendProductQueryWith` is een krachtige manier om ervoor te zorgen dat extra productkenmerken beschikbaar zijn voor de rest van het model. Het minimaliseert ook het aantal uitgevoerde vragen.
 
-   In de bovenstaande code wordt `addCustomSimpleField` gebruikt om het `eco_friendly` attribuut terug te winnen. Dit illustreert hoe u voor om het even welke douanekenmerken kunt vragen die deel van het schema van de Magento uitmaken.
+   In de bovenstaande code, wordt `addCustomSimpleField` gebruikt om `eco_friendly` attributen terug te winnen. Dit illustreert hoe u voor om het even welke douanekenmerken kunt vragen die deel van het schema van de Magento uitmaken.
 
    >[!NOTE]
    >
@@ -326,7 +326,7 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
    }
    ```
 
-   In de bovenstaande methode wordt `productRetriever` gebruikt om het product op te halen en wordt de `getAsInteger()` methode gebruikt om de waarde van het `eco_friendly` attribuut te krijgen. Gebaseerd op de vragen GraphQL wij vroeger in werking stelden weten wij dat de verwachte waarde wanneer het `eco_friendly` attribuut aan &quot;**Yes**&quot;eigenlijk een geheel van **1** wordt geplaatst.
+   In de bovenstaande methode wordt `productRetriever` gebruikt om het product op te halen en wordt de methode `getAsInteger()` gebruikt om de waarde van het `eco_friendly` attribuut op te halen. Gebaseerd op de vragen GraphQL wij vroeger in werking stelden weten wij dat de verwachte waarde wanneer het `eco_friendly` attribuut aan &quot;**Yes**&quot;eigenlijk een geheel van **1** wordt geplaatst.
 
    Nu het Sling Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om een indicator van **Eco Friendly** eigenlijk te tonen die op het het Verschilderen Model wordt gebaseerd.
 
@@ -494,8 +494,8 @@ Controleer de functionaliteit van de **New** badge die reeds in de Teaser van he
 
 ## Aanvullende bronnen {#additional-resources}
 
-- [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components)
 - [Aanpassen AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Kerncomponenten aanpassen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-- [Aan de slag met AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)

@@ -3,7 +3,7 @@ title: AEM en Adobe Commerce (Magento) Integratie die het Kader van de Integrati
 description: AEM en Adobe Commerce (Magento) zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van de Magento toegang te hebben en met Magento via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om door product- en categoriegegevens te bladeren die op verzoek van Magento zijn opgehaald. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Integratie van AEM en Adobe Commerce (Magento) met gebruik van Commerce Integration Framework {#aem-magento-framework}
 
-De Experience Manager en de Handel van de Adobe (Magento) zijn naadloos geïntegreerd gebruikend het Kader van de Integratie van de Handel (CIF). CIF laat AEM toe om tot en met de handelsinstantie direct toegang te hebben gebruikend Adobe Commerce [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
+De Experience Manager en de Handel van de Adobe (Magento) zijn naadloos geïntegreerd gebruikend het Kader van de Integratie van de Handel (CIF). CIF laat AEM toe om tot direct toegang te hebben en met de handelsinstantie te communiceren gebruikend Adobe Commerce [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 ## Overzicht architectuur {#overview}
 
@@ -20,8 +20,8 @@ De architectuur ziet er als volgt uit:
 
 ![Overzicht van CIF-architectuur](../assets/AEM_Magento_Architecture.png)
 
-Binnen CIF is er steun voor server-kant en cliënt-zijcommunicatie patronen.
-Server-side APIs vraag wordt uitgevoerd gebruikend ingebouwde, generische [GraphQL cliënt](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met een [reeks geproduceerde gegevensmodellen](https://github.com/adobe/commerce-cif-magento-graphql) voor het schema van GraphQL van de handel Bovendien, om het even welke vraag GraphQL of mutatie in formaat GQL kunnen worden gebruikt.
+Binnen CIF, is er steun voor server-kant en cliënt-zijcommunicatie patronen.
+Server-kant APIs vraag wordt uitgevoerd gebruikend ingebouwde, generische [GraphQL cliënt](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met een [reeks geproduceerde gegevensmodellen](https://github.com/adobe/commerce-cif-magento-graphql) voor het handelsGrafiekQL schema. Bovendien kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
 
 Voor de client-side componenten, die worden gebouwd met [React](https://reactjs.org/), wordt [Apollo Client](https://www.apollographql.com/docs/react/) gebruikt.
 

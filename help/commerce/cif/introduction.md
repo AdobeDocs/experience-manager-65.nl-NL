@@ -3,9 +3,9 @@ title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Kader van de Integratie van de Handel van de Experience Manager (CIF) wordt geadviseerd Adobe om de handelsdiensten van Magento en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ De krachtige hulpmiddelen van CIF in AEM laten inhoudsscheppers toe om rijke en 
 
 ### Tijd-aan-Waarde (TTV)
 
-Versnelt projectontwikkeling met [AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [AEM Venia verwijzingsstorefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Projectarchetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaarloze inhoud &amp; handel).
+Versnelt projectontwikkeling met [AEM de Componenten van de Kern ](https://www.aemcomponents.dev/), [AEM Venia verwijzingsstorefront](https://github.com/adobe/aem-cif-guides-venia), [AEM Archetype van het Project](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), en integratiepatronen voor PWA (Zwaarloze Inhoud en Handel).
 
 CIF wordt gebouwd voor ononderbroken innovatie met een altijd bijgewerkte toe:voegen-op, die klant toestaan om tot nieuwe en betere eigenschappen toegang te hebben.
 

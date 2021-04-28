@@ -3,7 +3,7 @@ title: Opvallende wijzigingen van de add-on van het kader voor de integratie van
 description: Opvallende wijzigingen van de add-on van het Commerce Integration Framework (CIF) in vergelijking met de oude CIF-versies.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 translation-type: tm+mt
-source-git-commit: a8dba82029168660b84b085ab46d0406b19961ef
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
@@ -16,7 +16,7 @@ In dit document worden de belangrijke verschillen tussen de add-on en oude CIF-v
 
 ## Installatie en updates
 
-Het AEM cif-invoegpakket wordt geïnstalleerd en bijgewerkt met AEM pakketbeheer.
+Het AEM CIF-invoegpakket wordt geïnstalleerd en bijgewerkt met AEM Package Manager.
 
 **Vorige CIF-versies**
 
@@ -34,7 +34,7 @@ Het eindpunt wordt gevormd via console OSGi.
 
 ## Plaatsing van het CIF-project van Venia
 
-Project beschikbaar op [GitHub AEMGidsen - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) en plaatsing via pakket AEM manager
+Project beschikbaar op [GitHub AEM Gidsen - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) en plaatsing die via AEM de Manager van het Pakket wordt gedaan.
 
 **Vorige CIF-versies**
 
@@ -58,4 +58,4 @@ AEM geeft de ervaringen van de productcatalogus direct weer met behulp van AEM c
 
 >[!NOTE]
 >
->Raadpleeg [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) voor aanvullende documentatie over het gebruik van CIF met AEM Beheerde service of AEM On-premisse.
+>Raadpleeg [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) voor aanvullende documentatie over het gebruik van CIF met AEM Beheerde Service of AEM On-Premise

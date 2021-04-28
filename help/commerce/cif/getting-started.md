@@ -5,9 +5,9 @@ topics: Commerce
 feature: Kader voor integratie in de handel
 thumbnail: 37843.jpg
 translation-type: tm+mt
-source-git-commit: 3df590b5b5dd4a72af1808fe55c8e61338334d0d
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ Het instappen voor AEM Inhoud en Handel is een proces in twee stappen:
 
 2. Verbind AEM met uw handelsoplossing
 
-### Installeer de AEM Content and Commerce add-on voor AEM 6.5 {#install-add-on}
+### Installeer de AEM Inhouds- en Commerce Add-On voor AEM 6.5 {#install-add-on}
 
 Download en installeer de AEM Commerce Add-On voor AEM 6.5 van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
-Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren om het laatste beschikbare de dienstpak te installeren.
+Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installerend het laatste beschikbare de dienstpak.
 
 >[!NOTE]
 >
 >Dit zal door CSE voor AEM Beheerde klanten van de Dienst worden gedaan.
 
-### AEM verbinden met uw handelssysteem {#connect}
+### AEM verbinden met uw Systeem van de Handel {#connect}
 
 AEM kan met om het even welk handelssysteem worden verbonden dat een toegankelijk eindpunt GraphQL voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
 
@@ -50,11 +50,11 @@ Vervang de waarde van `url` in `com.adobe.cq.commerce.graphql.client.impl.Graphq
 
 De AEM Inhoud en de Handel toe:voegen-aan en de Componenten van de Kern CIF gebruiken zowel AEM server-kant als cliënt-zijverbindingen. Client-side CIF Core Components and CIF Add-On authoring tools connect by default to `/api/graphql`. Dit kan worden aangepast via de CIF Cloud Service config indien nodig (zie hieronder).
 
-De toe:voegen-on CIF verstrekt een de volmachtsservlet GraphQL bij `/api/graphql` die naar keuze voor [lokale ontwikkeling](develop.md) kan worden gebruikt. Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het eindpunt van commerceGraphQL via de AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
+CIF toe:voegen-On verstrekt een de volmachtsservlet GraphQL bij `/api/graphql` die naar keuze voor [lokale ontwikkeling](develop.md) kan worden gebruikt. Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het eindpunt van commerceGraphQL via de AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
 
-## Opslaan en catalogi configureren {#catalog}
+## Het vormen van Opslag en Catalogi {#catalog}
 
-De add-on en [CIF Core Components](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels opslag (of opslagmeningen, enz. worden verbonden). Door gebrek, wordt toe:voegen-binnen CIF opgesteld met een gebrek config die met de standaardopslag en de catalogus van de Handel van Adobe verbindt (Magento).
+De toe:voegen-aan en [CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels (of opslagmeningen, etc. worden verbonden). Door gebrek, wordt toe:voegen-On CIF opgesteld met een gebrek config die met de standaardopslag en de catalogus van de Handel van Adobe verbindt (Magento).
 
 Deze configuratie kan voor het project via CIF Cloud Service config worden aangepast die deze stappen volgt:
 
@@ -80,7 +80,7 @@ De volgende eigenschappen kunnen worden geconfigureerd:
    > Steun voor UIDs werd geïntroduceerd in de Handel van de Adobe (Magento) 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
 
-De configuratie hierboven wordt getoond is voor verwijzing. De projecten moeten hun eigen configuraties bieden.
+De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 
 Zie de zelfstudie [Commerce Multi-Store Setup](configuring/multi-store-setup.md) voor meer complexe instellingen die gebruikmaken van meerdere AEM sitestructuren die zijn gecombineerd met verschillende handelscatalogi.
 

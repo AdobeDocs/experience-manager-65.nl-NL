@@ -7,7 +7,7 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -203,7 +203,7 @@ Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
    * gebruikersnaam: beheerder
    * wachtwoord: nimda
 
-1. Van de zijbalknavigatie, breid **System** en **Tools** uit. Selecteer vervolgens **Import** om de **Wizard te openen: Het venster CSV-import**.
+1. Vouw vanuit de zijbalknavigatie **System** en **Tools** uit. Selecteer vervolgens **Import** om de **Wizard te openen: Het venster CSV-import**.
 1. In **Configuration** tabel, **Upload** het volgende **Import file**:
 
    [Bestand ophalen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)

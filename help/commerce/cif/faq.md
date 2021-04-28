@@ -3,9 +3,9 @@ title: AEM - Veelgestelde vragen over integratie van de handel met behulp van he
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ CIF toe:voegen-op gebruikt met AEM laat gegevens toe om van de handelsoplossing 
 
 ## 6. Welke catalogusgrootte AEM CIF-ondersteuning?
 
-Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe schaalbaar zijn de API&#39;s van uw handelsoplossingen?
+Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is de cacheverhouding van uw catalogusgegevens en -pagina&#39;s? Hoeveel gezamenlijke verzoeken verwacht u tijdens piekuren? Hoe scalable zijn APIs van uw handelsoplossingen?
 
 ## 7. Hoe speelt PIM in dit kader?
 
@@ -64,7 +64,7 @@ Productgegevens worden meestal al vertaald in PIM of in Magento. De integratie A
 
 ## 13. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in de handelsoplossing?
 
-We raden u aan om marketinggerelateerde gegevens en inhoud in AEM te beheren. Decoreer productgegevens van uw handelsoplossing met extra attributen gebruikend de Fragmenten van de Inhoud of creeer en verbind de Fragmenten van de Ervaring voor ongestructureerde inhoud met uw producten.
+We raden u aan marketinggerelateerde gegevens en inhoud in AEM te beheren. Decoreer productgegevens van uw handelsoplossing met extra attributen gebruikend de Fragmenten van de Inhoud of creeer en verbind de Fragmenten van de Ervaring voor ongestructureerde inhoud met uw producten.
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 

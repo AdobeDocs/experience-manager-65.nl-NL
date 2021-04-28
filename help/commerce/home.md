@@ -1,16 +1,16 @@
 ---
-title: AEM Commerce
-description: De zelfhulp van de Handel middelen en documentatiekoppelingen AEM
+title: AEM Inhoud en Handel
+description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
 translation-type: tm+mt
-source-git-commit: b8a46b96db1b81897186f1c8078c06bea64789c4
+source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 21%
+source-wordcount: '315'
+ht-degree: 20%
 
 ---
 
 
-# AEM{#commerce-guide}
+# Inhoud en handel AEM {#commerce-guide}
 
 Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel.
 

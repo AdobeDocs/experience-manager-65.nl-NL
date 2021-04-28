@@ -9,9 +9,9 @@ feature: Kader voor integratie in de handel
 kt: 3046
 thumbnail: 28952.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ AEM functies voor beheer van meerdere sites van Live Copy en Language Copy worde
 
 De geadviseerde opstelling is een 1:1 verhouding tussen AEM plaats en de opslagmening van de Magento te gebruiken.
 
-Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten te AEM zodat ook deze kunnen worden gekoppeld aan een toegewijde winkelweergave:
+Voer de onderstaande stappen uit om een AEM-site aan te sluiten en CIF Core-componenten te AEM aan een speciale winkelweergave:
 
 ## Configuratie {#configuration}
 
@@ -51,7 +51,7 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar AEM Sites-console
-   * Navigeer naar het gebied of de hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl
+   * Navigeer naar het gebied of de taalhoofdmap van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
    * Pagina-eigenschappen selecteren en pagina-eigenschappen openen
    * Selecteer het tabblad Geavanceerd
    * Selecteer in de sectie `Configuration` de configuratie die u stapsgewijs hebt gemaakt
@@ -60,5 +60,5 @@ Volg onderstaande stappen om een AEM-site aan te sluiten en CIF Core-componenten
 
 * [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core-componenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
-* [Beheer van meerdere sites gebruiken](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [Beheer van meerdere sites gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](/help/sites-administering/msm.md)

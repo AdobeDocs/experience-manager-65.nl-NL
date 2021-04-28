@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 translation-type: tm+mt
-source-git-commit: c859aa89e481e852302e9cda0adf2acc04d68a55
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 10%
+source-wordcount: '1324'
+ht-degree: 9%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 10%
 | CIF Core-componenten | 1.6.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2020 12 01 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw {#what-is-new-november}
+### Wat is er nieuw?{#what-is-new-november}
 
 * Sjabloonovererving toegevoegd aan specifieke categoriepagina. Deze functie verbetert de efficiëntie van zakelijke gebruikers omdat alle subcategorieën de sjabloon kunnen overnemen die voor een specifieke topcategorie is gemaakt.
 
 * Venia-referentiearchief bijgewerkt om Experience Fragment te gebruiken voor de voettekst. Zakelijke gebruikers kunnen de voettekst van de pagina bewerken met AEM ontwerpgereedschappen.
 
-### Wat is er verbeterd?{#what-is-improved-november}
+### Verbeterde {#what-is-improved-november}
 
 * De afhandelingscomponent is verbeterd en biedt kopers de mogelijkheid om het land van bestemming te betreden, zodat ze facturerings- en verzendadressen buiten de Verenigde Staten kunnen invoeren.
 
@@ -42,13 +42,13 @@ ht-degree: 10%
 | CIF Core-componenten | 1.5.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2020 10 27 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw {#what-is-new-october}
+### Wat is er nieuw?{#what-is-new-october}
 
 * De nieuwe die component van de carrousel van de Categorie wordt toegevoegd om bedrijfsgebruikers toe te laten om deze component op AEM inhoudspagina&#39;s te slepen en te laten vallen om inhoudspagina&#39;s met handelsgegevens te verrijken.
 
 * De de kerncomponenten van CIF die worden uitgebreid om de Laag van Gegevens van de Cliënt van Adobe te bevrijden door handelsgegevens te verzenden. De Adobe Client Data Layer is een gestandaardiseerde methode voor het verzamelen van gegevens en het doorgeven van de gegevens aan digitale analyses en rapportservers. Raadpleeg [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki) voor meer informatie.
 
-* De pagina&#39;s van het Detail van het product en van de Lijst van het Product uitgebreid om meta-gegevens SEO (b.v. titel, meta beschrijving, meta sleutelwoorden) automatisch te bevolken die van binnen Magento admin UI worden gevormd
+* De pagina&#39;s van het Detail van het product en van de Lijst van het Product uitgebreid om meta-gegevens SEO (zoals titel, meta beschrijving, meta sleutelwoorden) automatisch te bevolken die van binnen Magento admin UI worden gevormd
 
 * Correctie van de bug in de koopkrachtteaser.
 
@@ -60,7 +60,7 @@ ht-degree: 10%
 | CIF Core-componenten | 1.4.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2020,10,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw {#what-is-new-september}
+### Wat is er nieuw?{#what-is-new-september}
 
 * Ondersteunt query&#39;s voor Magento 2.4.0-schema.
 
@@ -86,7 +86,7 @@ ht-degree: 10%
 | CIF Core-componenten | 1.3.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2020,9,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw {#what-is-new-august}
+### Wat is er nieuw?{#what-is-new-august}
 
 * De component Breadcrumb die wordt toegevoegd om inhoud en handelspagina&#39;s te steunen.
 
@@ -110,7 +110,7 @@ ht-degree: 10%
 | CIF Core-componenten | 1.2.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2020,8,14 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw {#what-is-new-july}
+### Wat is er nieuw?{#what-is-new-july}
 
 * CIF Venia Reference Site werd geëxtraheerd uit de CIF Archetype repo en is nu een standalone GitHub-opslagplaats.
 
@@ -120,7 +120,7 @@ ht-degree: 10%
 
 * De gebruikersinterface van de CIF Cloud-configuratie ondersteunt publicatie-/unpublish-handelingen.
 
-### Wat is er verbeterd?{#what-is-improved-july}
+### Verbeterde {#what-is-improved-july}
 
 * Aanmeldingsonderdeel verplaatst naar vervolgkeuzelijst voor eenvoudige toegang.
 
@@ -136,7 +136,7 @@ ht-degree: 10%
 | CIF Core-componenten | 1.1.1. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0.11.0. | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-june}
+### Wat is er nieuw?{#what-is-new-june}
 
 Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager wordt ondersteund.
 
@@ -146,7 +146,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Toegevoegde de dienstgebruikerstoewijzing als deel van veiligheidsvereiste om toegang tot /conf via de dienstgebruikers te verzekeren en niet door ACLs direct te manipuleren. De Componenten van de Kern van CIF moeten nu een de dienstgebruiker gebruiken om tot configuraties toegang te hebben.
 
-### Wat is er verbeterd?{#what-is-improved-june}
+### Verbeterde {#what-is-improved-june}
 
 * De pagina Productlijst en de pagina Zoekresultaat geven het totale aantal objecten weer. Het aantal items wordt bijgewerkt wanneer de gebruiker filters toepast.
 
@@ -164,7 +164,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 | CIF Core-componenten | 1.0.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0.11.0. | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-may}
+### Wat is er nieuw?{#what-is-new-may}
 
 * Ondersteunt query&#39;s voor Magento 2.3.5-schema.
 
@@ -174,9 +174,9 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Productbinding wordt automatisch gemaakt wanneer een cloudconfiguratie wordt gemaakt.
 
-### Wat is er verbeterd?
+### Verbeterde functies
 
-* Cloudinstellingen uitgebreid met de handeling Map maken.
+* Cloud Configuration extended to display &quot;Create Folder&quot; action.
 
 * Meerdere correcties toegepast.
 
@@ -188,11 +188,11 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 | CIF Core-componenten | 0,10,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,10,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-april}
+### Wat is er nieuw?{#what-is-new-april}
 
 * De montages van de configuratie voor CIF Schakelaar verenigd en vereenvoudigd. Voor meer details checkout [Getting Started](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) of [New AEM CIF Project Setup](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### Wat is er verbeterd?{#what-is-improved-april}
+### Verbeterde {#what-is-improved-april}
 
 * Winkelwagentje en afrekenstroom worden uitgebreid tot geregistreerde winkels.
 
@@ -212,15 +212,15 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 | CIF Core-componenten | 0,9,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,9,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-february}
+### Wat is er nieuw?{#what-is-new-february}
 
 * Ondersteunt query&#39;s voor Magento 2.3.4-schema.
 
 * Extra ondersteuning voor zoekopdrachten in Categoriekiezer.
 
-* Paginering in de component Cataloguslijst ter ondersteuning van grote catalogussets.
+* Paginering in de component Categorielijst ter ondersteuning van grote catalogussets.
 
-### Wat is er verbeterd?{#what-is-improved-february}
+### Verbeterde {#what-is-improved-february}
 
 * Winkelwagentje wordt uitgebreid om kortingen weer te geven.
 
@@ -238,7 +238,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 | CIF Core-componenten | 0,8,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,7,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-january}
+### Wat is er nieuw?{#what-is-new-january}
 
 * De component van het Fragment van de ervaring (XF) die wordt toegevoegd om klanten toe te laten om XF in hun handelsproject tot stand te brengen.
 
@@ -248,7 +248,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Algemene verwante productcomponent beschikbaar.
 
-### Wat is er verbeterd?{#what-is-improved-january}
+### Verbeterde {#what-is-improved-january}
 
 * Ondersteuning voor het weergeven van de CTA-knop op het product.
 
@@ -256,6 +256,6 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Optie voor het verbergen/weergeven van de titel/banner in de component Productlijst.
 
-* De functie Slepen en neerzetten is toegepast op de component Prodcut Carousel.
+* Functie Slepen en neerzetten toegepast op de component Productcarrousel.
 
 * Meerdere correcties toegepast.

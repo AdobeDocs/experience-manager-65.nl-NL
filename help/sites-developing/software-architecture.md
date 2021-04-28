@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
+exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+source-git-commit: 423e17dadf2e506eb68b37851dde5e68ed950866
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
-
 
 # Softwarearchitectuur{#software-architecture}
 
@@ -36,13 +36,19 @@ Door te bepalen welke componenten in elk parsys op de pagina kunnen worden omvat
 
 SOLID is een acroniem dat vijf architecturale principes beschrijft die zouden moeten worden nageleefd:
 
-* **Het beginsel van**&#x200B;één enkele verantwoordelijkheid - elke module, klasse, methode, enz. zou maar één ding moeten doen.
+* **** Eén verantwoordelijkheidsbeginsel - elke module, klasse, methode, enz. moet maar één verantwoordelijkheid hebben.
 * **** Open/Gesloten Beginsel - modules moeten voor verlenging openstaan en voor wijziging worden gesloten.
 * **Beginsel van** vervanging door Liskov - soorten moeten door hun subtypes kunnen worden vervangen.
 * **Beginsel van** interfacesegregatie - geen enkele cliënt mag worden gedwongen af te hangen van methoden die hij niet gebruikt.
 * **Beginsel van** inversie van afhankelijkheid - Modules op hoog niveau mogen niet afhangen van modules op laag niveau. Beide moeten afhankelijk zijn van abstracties. Abstracties mogen niet afhankelijk zijn van details. Details moeten afhankelijk zijn van abstracties.
 
 Het streven naar naleving van deze vijf beginselen moet resulteren in een systeem dat een strikte scheiding van zorgen heeft.
+
+>[!TIP]
+>
+>SOLID is een algemeen gebruikt concept in object-oriented programmering en elk element wordt uitgebreid besproken in de industrie literatuur.
+>
+>Dit is slechts een korte samenvatting die wordt gepresenteerd voor bewustwording en u wordt aangespoord om meer vertrouwd te raken met deze concepten.
 
 ### Volg het Robustness-beginsel {#follow-the-robustness-principle}
 

@@ -7,9 +7,9 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 translation-type: tm+mt
-source-git-commit: 8ead3d1b24177effa4d40141408c5676eaabcc30
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Een lokale ontwikkelomgeving wordt aanbevolen voor CIF-projecten.
 
 >[!NOTE]
 >
->De volgende instructies helpen u vestiging een lokale AEM ontwikkelomgeving voor AEM Handel gebruikend CIF met nadruk voor AEM 6.5). Als u AEM als Cloud Service gebruikt, te zien gelieve [AEM Handel als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) documentatie.
+>De volgende instructies helpen u vestiging een lokale AEM ontwikkelomgeving voor AEM Handel gebruikend CIF met nadruk voor AEM 6.5). Als u AEM als Cloud Service gebruikt, te zien gelieve [AEM Handel als Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentatie.
 
 De AEM Commerce Add-On voor AEM 6.5 ook bekend. CIF Add-On is ook beschikbaar voor lokale ontwikkeling en verstrekt als AEM pakket. Het kan van [het portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) als eigenschappak worden gedownload.
 
@@ -46,7 +46,7 @@ Het volgende moet lokaal worden geïnstalleerd:
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Toegang tot de CIF-invoegtoepassing
+### Toegang tot de CIF Add-On
 
 De CIF-invoegtoepassing kan worden gedownload van het [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), zoek naar &quot;AEM Commerce add-on&quot;.
 
@@ -58,7 +58,7 @@ De CIF-invoegtoepassing kan worden gedownload van het [Software Distribution Por
 
 Voor de lokale ontwikkeling van CIF-projecten met behulp van de AEM en de CIF-invoegtoepassing:
 
-1. Krijg AEM 6.5 versie en installeer AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is vereist, nochtans adviseren wij om het laatste beschikbare de dienstpak te installeren.
+1. Krijg AEM 6.5 versie en installeer AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 wordt vereist, nochtans adviseren wij installerend het laatste beschikbare de dienstpak.
 
 1. Pak de AEM .jar uit om de `crx-quickstart` omslag tot stand te brengen, looppas:
 
@@ -149,7 +149,7 @@ Om aan de slag te gaan met de Venia Reference Store klone eenvoudig de [Git repo
 >
 >Het project van de Referentieopslag van Venia bevat twee bouwstijlprofielen voor AEM als Cloud Service en AEM 6.5. Controleer [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) om te zien hoe zij worden gebruikt. Gebruik voor AEM 6.5 het profiel `classic`.
 
-### AEM koppelen aan het handelssysteem
+### AEM aansluiten op het systeem voor handel
 
 Om uw project met het handelssysteem te verbinden AEM moet met het eindpunt GraphQL van uw handelssysteem worden gevormd.
 

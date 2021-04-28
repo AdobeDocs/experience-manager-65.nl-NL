@@ -1,13 +1,13 @@
 ---
-sub-product: AEM Commerce
-user-guide-title: AEM Commerce
+sub-product: AEM Inhoud en Handel
+user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
-user-guide-description: Begrijp hoe te om de Handel van de Experience Manager te gebruiken en te beheren.
+user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
 translation-type: tm+mt
-source-git-commit: 96bb4904818e7f3f64613c810eeb48f223e287c7
+source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 8%
+source-wordcount: '104'
+ht-degree: 7%
 
 ---
 

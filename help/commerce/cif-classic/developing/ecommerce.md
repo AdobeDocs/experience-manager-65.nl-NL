@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '151'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,3 @@ De eCommerce-API wordt geleverd door de pakketten:
 
 Zie de [API documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) voor meer informatie.
 
->[!NOTE]
->
->Zie [Aangepaste Adobe Experience Manager 6.2 eCommerce-providers maken](https://helpx.adobe.com/experience-manager/using/ecommerce62.html) voor een volledig artikel waarin alle stappen worden beschreven die nodig zijn om een eCommerce-provider te bouwen.

@@ -9,9 +9,9 @@ feature: Kader voor integratie in de handel
 kt: 3455
 thumbnail: 28969.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '105'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Meer informatie over dit onderwerp vindt u in de volgende bronnen:
+U kunt meer informatie over dit onderwerp van het volgende middel vinden:
 
 - [AEM CIF Core-componenten - Configuratie van meerdere cataloguspagina&#39;s](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)

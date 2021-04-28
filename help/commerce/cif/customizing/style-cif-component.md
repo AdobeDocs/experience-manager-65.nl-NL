@@ -9,9 +9,9 @@ feature: Kader voor integratie in de handel
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '2562'
+source-wordcount: '2566'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Wij zullen het [Project van Venia ](https://github.com/adobe/aem-cif-guides-veni
 
 ## Client Libraries and ui.frontend Module {#introduction-to-client-libraries}
 
-De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema/de stijlen van de storefront worden in AEM beheerd door een [Clientbibliotheek](/help/sites-developing/clientlibs.md) of clientlibs voor kort. Clientbibliotheken bieden een mechanisme voor het indelen van CSS en Javascript in de code van een project en leveren vervolgens op de pagina.
+De CSS en JavaScript die verantwoordelijk zijn voor het renderen van het thema/de stijlen van de storefront worden in AEM beheerd door een [clientbibliotheek](/help/sites-developing/clientlibs.md) of clientlibs voor kort. Clientbibliotheken bieden een mechanisme voor het indelen van CSS en Javascript in de code van een project en leveren vervolgens op de pagina.
 
 Brand-specifieke stijlen kunnen worden toegepast op AEM CIF Core-componenten door de CSS die door deze clientbibliotheken wordt beheerd, toe te voegen en te overschrijven. Inzicht in de structuur van clientbibliotheken en de inhoud van deze bibliotheken op de pagina is van essentieel belang.
 
@@ -75,7 +75,7 @@ De `ui.frontend` module is ook een Maven module en geïntegreerd met het grotere
 
 ![ui.frontend naar ui.apps-architectuur](../assets/style-cif-component/ui-frontend-architecture.png)
 
-*Gecompileerde CSS en Javascript worden gekopieerd van de  `ui.frontend` module naar de  `ui.apps` module als bibliotheek van de Cliënt tijdens een Maven bouwt*
+*Gecompileerde CSS en Javascript worden gekopieerd van de  `ui.frontend` module naar de  `ui.apps` module als cliëntbibliotheek tijdens een Maven bouwt*
 
 ## De laserstijl {#ui-frontend-module} bijwerken
 
@@ -164,7 +164,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    ![Gecompileerde site-CSS in ui.apps](../assets/style-cif-component/comiled-css-ui-apps.png)
 
-   Dit het gekopieerde `site.css` dossier in het `ui.apps` project. Het maakt nu deel uit van een clientbibliotheek met de naam `clientlib-site` met een categorie van `venia.site`. Zodra het dossier deel van `ui.apps` module uitmaakt kan het aan AEM worden opgesteld.
+   Dit kopieert het `site.css` dossier in het `ui.apps` project. Het maakt nu deel uit van een clientbibliotheek met de naam `clientlib-site` met een categorie van `venia.site`. Zodra het dossier deel van `ui.apps` module uitmaakt kan het aan AEM worden opgesteld.
 
    >[!NOTE]
    >
@@ -174,7 +174,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de mo
 
    ![Andere clientbibliotheken](../assets/style-cif-component/other-clientlibs.png)
 
-   Deze clientbibliotheken worden niet beheerd door de module `ui.frontend`. In plaats daarvan bevatten deze clientbibliotheken CSS- en JavaScript-afhankelijkheden die door Adobe worden verschaft. De definitie voor deze clientbibliotheken vindt u in het `.content.xml`-bestand onder elke map.
+   Deze clientbibliotheken worden niet beheerd door de module `ui.frontend`. In plaats daarvan bevatten deze clientbibliotheken CSS- en JavaScript-afhankelijkheden die door Adobe worden verschaft. De definitie voor deze clientbibliotheken staat in het `.content.xml`-bestand onder elke map.
 
    **clientlib-base**  - Dit is een lege clientbibliotheek die eenvoudig de noodzakelijke afhankelijkheden van  [AEM Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) insluit. De categorie is `venia.base`.
 
@@ -225,7 +225,7 @@ Controleer vervolgens de opname van de clientbibliotheken op de pagina.
 
    ![Weergeven als gepubliceerd](../assets/style-cif-component/view-as-published.png)
 
-   Hierdoor wordt de pagina geopend zonder dat de AEM auteur javascript is geladen, zoals deze op de gepubliceerde site wordt weergegeven. De URL heeft de queryparameter `?wcmmode=disabled` toegevoegd. Bij het ontwikkelen van CSS en Javascript is het een goede praktijk om deze parameter te gebruiken om de pagina met om het even wat van AEM auteur te vereenvoudigen.
+   Hierdoor wordt de pagina geopend zonder dat de AEM auteur javascript is geladen, zoals deze op de gepubliceerde site wordt weergegeven. De URL heeft de queryparameter `?wcmmode=disabled` toegevoegd. Bij het ontwikkelen van CSS en Javascript is het een goede praktijk om deze parameter te gebruiken om de pagina zonder enige van AEM auteur te vereenvoudigen.
 
 1. Bekijk de paginabron en u zou verscheidene cliëntbibliotheken moeten kunnen identificeren inbegrepen zijn:
 
@@ -280,13 +280,13 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
    * `venia.dependencies` - Biedt leveranciersbibliotheken die  `venia.site` afhankelijk zijn van
    * `venia.site` - Dit is de categorie  `clientlib-site` die de  `ui.frontend` module genereert.
 
-   Andere sjablonen gebruiken hetzelfde beleid, **Inhoudspagina**, **Landing Page**, enz. Door hetzelfde beleid opnieuw te gebruiken, kunnen we ervoor zorgen dat dezelfde clientbibliotheken op alle pagina&#39;s worden opgenomen.
+   Andere sjablonen gebruiken hetzelfde beleid, **Content Page**, **Landing Page** enzovoort. Door hetzelfde beleid opnieuw te gebruiken, kunnen we ervoor zorgen dat dezelfde clientbibliotheken op alle pagina&#39;s worden opgenomen.
 
    Het voordeel van het gebruiken van Malplaatjes en het beleid van de Pagina om de opneming van cliëntbibliotheken te beheren is dat u het beleid per malplaatje kunt veranderen. U beheert bijvoorbeeld twee verschillende merken binnen dezelfde AEM. Elk merk zal zijn eigen unieke stijl of *theme* maar de basisbibliotheken en de code zullen het zelfde zijn. Een ander voorbeeld: als u een grotere clientbibliotheek had die u alleen op bepaalde pagina&#39;s wilde weergeven, kon u een uniek paginabeleid maken, alleen voor die sjabloon.
 
 ## Ontwikkeling van lokale webpack {#local-webpack-development}
 
-In de vorige oefening, werd een update gemaakt aan een dossiers van de Klasse in `ui.frontend` module en dan na het uitvoeren van een Maven bouwt de veranderingen aan AEM worden opgesteld. Vervolgens bekijken we hoe we een webpack-dev-server kunnen gebruiken om de front-end stijlen snel te ontwikkelen.
+In de vorige oefening, werd een update gemaakt aan een dossier van de Klasse in `ui.frontend` module en dan na het uitvoeren van een Maven bouwt de veranderingen aan AEM worden opgesteld. Vervolgens bekijken we hoe we een webpack-dev-server kunnen gebruiken om de front-end stijlen snel te ontwikkelen.
 
 Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-code uit de lokale versie van AEM beschikbaar gemaakt, maar kan de ontwikkelaar de stijlen en JavaScript in de module `ui.frontend` wijzigen.
 
@@ -328,7 +328,7 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-c
 
    >[!CAUTION]
    >
-   > Als er een fout met betrekking tot Volgen optreedt, stopt u de server en voert u de opdracht `npm rebuild node-sass` uit en herhaalt u de bovenstaande stappen. Dit kan voorkomen als een verschillende versie van `npm` en `node` dan in het project `aem-cif-guides-venia/pom.xml` wordt gespecificeerd.
+   > Als er een fout met betrekking tot Volgen optreedt, stopt u de server en voert u de opdracht `npm rebuild node-sass` uit en herhaalt u de bovenstaande stappen. Dit kan voorkomen als u een verschillende versie van `npm` en `node` dan in het project `aem-cif-guides-venia/pom.xml` gespecificeerd hebt.
 
 1. Navigeer naar [http://localhost:8080/](http://localhost:8080/) in een nieuw lusje met zelfde browser zoals het het programma geopende geval van AEM. U moet de startpagina van Venia zien via de webpack-dev-server:
 

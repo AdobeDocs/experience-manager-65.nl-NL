@@ -2,10 +2,10 @@
 title: AEM Inhoud en Handel
 description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
 translation-type: tm+mt
-source-git-commit: 7b03772e3c7f185cb107c6576e2423275c1a6ccc
+source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 20%
+source-wordcount: '337'
+ht-degree: 19%
 
 ---
 
@@ -13,6 +13,11 @@ ht-degree: 20%
 # Inhoud en handel AEM {#commerce-guide}
 
 Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel.
+
+>[!NOTE]
+>
+>Voor AEM Inhoud en Handel met AEM als Cloud Service, zie [AEM Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
+
 
 ## Belangrijke handelsartikelen {#key-articles}
 

@@ -10,14 +10,14 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
+exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 translation-type: tm+mt
-source-git-commit: 29328ff7fde4ed0e7f9728af1be911133259dc6c
+source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # Een gesloten gebruikersgroep maken{#creating-a-closed-user-group}
 
@@ -85,7 +85,7 @@ De CUG toepassen op een pagina:
 
    >[OPMERKING!]
    >
-   > CUG&#39;s op het tabblad Machtigingen kunnen niet worden teruggedraaid van Blauwdrukken naar Actieve kopieën. Plan dit probleem bij het configureren van Live Copy.
+   > CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
    >
    > Zie [deze pagina](closed-user-groups.md#aem-livecopy) voor meer informatie.
 
@@ -144,4 +144,3 @@ Configureer [sessiebeheer in de dispatcher.any file](https://helpx.adobe.com/exp
    ```
 
 1. Stel [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) in op `0`.
-

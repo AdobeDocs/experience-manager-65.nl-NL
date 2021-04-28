@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 translation-type: tm+mt
-source-git-commit: c2fb9af056fa4be13cfd7e60e8a44485e8712c0b
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
 source-wordcount: '973'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 8%
 | CIF Core-componenten | 0,6,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,6,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-november}
+### Wat is er nieuw?{#what-is-new-november}
 
 * Auteurs kunnen productdetails en pagina&#39;s met productlijsten voorvertonen met producten/categorieën met de nieuwe optie &#39;Weergeven met product/categorie&#39; in de Sites-editor.
 
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 * Braintree betalingsondersteuning toegevoegd aan AEM winkel van Venia.
 
-### Wat is er verbeterd?{#what-is-improved-november}
+### Verbeterde {#what-is-improved-november}
 
 * De categorie/de plukkers van het Product verbeterd om gespecificeerde de archiefmening van de Magento in een multi-store opstelling te respecteren.
 
@@ -45,7 +45,7 @@ ht-degree: 8%
 | CIF Core-componenten | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-october}
+### Wat is er nieuw?{#what-is-new-october}
 
 * Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu nieuwe sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
 
@@ -53,7 +53,7 @@ ht-degree: 8%
 
 * React-based cliënt-zijcomponenten voor rekeningsbeheer. Deze release ondersteunt de volgende functies: Aanmelden, Wachtwoord vergeten en Account maken.
 
-### Wat is er verbeterd?{#what-is-improved-october}
+### Verbeterde {#what-is-improved-october}
 
 * De productdetails en de componenten van de productlijst zijn verbeterd om dummygegevens te tonen om auteurs van een voorproef van de lay-out te voorzien wanneer deze componenten op een malplaatje/een pagina worden geplaatst.
 
@@ -67,7 +67,7 @@ ht-degree: 8%
 | CIF Core-componenten | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-september}
+### Wat is er nieuw?{#what-is-new-september}
 
 * Meerdere sjabloonfuncties waarmee auteurs specifieke productdetailpagina of productlijstpagina kunnen verrijken. Auteurs kunnen eenvoudig een aangepaste productdetailpagina of productlijstpagina maken en de product- of categoriekiezer gebruiken om de aangepaste pagina aan een of meer specifieke producten of categorieën toe te wijzen.
 
@@ -77,7 +77,7 @@ ht-degree: 8%
 
 * Afhandelingscomponent bevat adresformulieren, selectie van betalingen en selectie van verzendmethoden.
 
-### Wat is er verbeterd?{#what-is-improved-september}
+### Verbeterde {#what-is-improved-september}
 
 * De componenten van de Teaser en van het Product Carousel steunen productvarianten.
 
@@ -89,7 +89,7 @@ ht-degree: 8%
 | CIF Core-componenten | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-august}
+### Wat is er nieuw?{#what-is-new-august}
 
 * Het insluiten van de Schakelaar van CIF in Archetype CIF maakte facultatief om ontwikkelaars meer flexibiliteit te verstrekken.
 
@@ -105,7 +105,7 @@ ht-degree: 8%
 
 * Knop om auteurs toe te staan op een AEM pagina te plaatsen en een koppeling te maken naar een AEM pagina, productdetailpagina, productlijstpagina of een externe koppeling.
 
-### Wat is er verbeterd?{#what-is-improved-august}
+### Verbeterde {#what-is-improved-august}
 
 * De de opslagconfiguratie van Magento werd bewogen van OSGi aan AEM console van het Product om de integratieopstelling auteur-vriendelijker te maken.
 
@@ -117,7 +117,7 @@ ht-degree: 8%
 | CIF Core-componenten | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Archetype | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
-### Wat is er nieuw {#what-is-new-july}
+### Wat is er nieuw?{#what-is-new-july}
 
 * Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Distributie AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF-elementen gebruiken in een bestaand project
 
@@ -131,7 +131,7 @@ ht-degree: 8%
 
 * Lijst met aanbevolen categorieën aan de serverzijde om een lijst met categorieën op een AEM pagina weer te geven.
 
-### Wat is er verbeterd?{#what-is-improved-july}
+### Verbeterde {#what-is-improved-july}
 
 * Ondersteuning voor Magento 2.3.2 en foutoplossingen met betrekking tot de weergave van producteigenschappen in de productconsole.
 
@@ -142,7 +142,7 @@ ht-degree: 8%
 | CIF-aansluiting | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF Core-componenten | 0,1,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 
-### Wat is er nieuw {#what-is-new-june}
+### Wat is er nieuw?{#what-is-new-june}
 
 * AEM B2C-winkel met de eerste mobiele Venia CSS-stijl, openingspagina, dynamische catalogusnavigatie via product- en categoriepagina&#39;s, productzoekpagina en de mogelijkheid om winkelwagentjes te gebruiken om handelsprojecten snel te starten en te versnellen.
 

@@ -9,16 +9,16 @@ feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
 translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '791'
 ht-degree: 2%
 
 ---
 
 # Geavanceerde URL-configuraties {#url}
 
-[AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) componenten biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).  In de volgende video ziet u hoe u de `UrlProvider`-service en functies van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) configureert om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
+[AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) componenten biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). In de volgende video ziet u hoe u de `UrlProvider`-service en functies van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) configureert om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
@@ -74,5 +74,5 @@ Het project [Venia Reference store](https://github.com/adobe/aem-cif-guides-veni
 ## Aanvullende bronnen
 
 * [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-* [Brontoewijzing AEM](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [Brontoewijzing AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

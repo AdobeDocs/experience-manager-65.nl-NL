@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
+exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '646'
 ht-degree: 1%
 
 ---
 
-
-# Voorwaarden verbergen gebruiken{#using-hide-conditions}
+# Voorwaarden {#using-hide-conditions} verbergen gebruiken
 
 De voorwaarden van de huid kunnen worden gebruikt om te bepalen als een componentenmiddel wordt teruggegeven of niet. Een voorbeeld van dit zou zijn wanneer een malplaatjeauteur de Component [list ](https://helpx.adobe.com/experience-manager/core-components/using/list.html) in [malplaatjeredacteur](/help/sites-authoring/templates.md) vormt en besluit om de opties onbruikbaar te maken om de lijst te bouwen die op kindpagina&#39;s wordt gebaseerd. Als u deze optie in het ontwerpdialoogvenster uitschakelt, wordt een eigenschap zo ingesteld dat wanneer de component List wordt gerenderd, de voorwaarde hide wordt geëvalueerd en de optie om onderliggende pagina&#39;s weer te geven niet wordt weergegeven.
 
@@ -72,16 +72,15 @@ Als een sjabloonauteur ervoor kiest de optie voor onderliggende pagina&#39;s uit
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Een beleidsknooppunt wordt gemaakt onder `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t met een eigenschap `disableChildren` ingesteld op `true`.
-1. De voorwaarde hide wordt gedefinieerd als de waarde van een `granite:hid`e-eigenschap op het dialoogeigenschapknooppunt `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. Een beleidsknooppunt wordt gemaakt onder `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` met een eigenschap `disableChildren` ingesteld op `true`.
+1. De voorwaarde hide wordt gedefinieerd als de waarde van een eigenschap `granite:hide` op het knooppunt van de dialoogeigenschap `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cdDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
+1. De waarde van `disableChildren` wordt gehaald uit de ontwerpconfiguratie en de uitdrukking `${cqDesign.disableChildren}` evalueert aan `false`, betekenend zal de optie niet als deel van de component worden teruggegeven.
 
    U kunt de huidenuitdrukking als waarde van `granite:hide` bezit [in GitHub hier](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40) bekijken.
 
 1. De optie **Onderliggende pagina&#39;s** wordt niet meer weergegeven voor de auteur van de pagina wanneer de component List wordt gebruikt.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
-

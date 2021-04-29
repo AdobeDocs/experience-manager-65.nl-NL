@@ -1,22 +1,22 @@
 ---
 title: AEM kernconcepten
 seo-title: De basisbeginselen
-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, werkschema's, en MSM
-seo-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, werkschema's, en MSM
+description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+seo-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
+exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 translation-type: tm+mt
-source-git-commit: 28fdb57f51a5bd97ce78b626db86f4a59de6f0be
+source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
 workflow-type: tm+mt
-source-wordcount: '3386'
+source-wordcount: '3367'
 ht-degree: 0%
 
 ---
-
 
 # Core Concepten AEM {#aem-core-concepts}
 
@@ -79,7 +79,7 @@ Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters
 Sling is *inhoudcentric*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
 * het eerste doel is de bron (JCR-knooppunt) die de inhoud in zijn bezit heeft
-* ten tweede bevindt de representatie, of het script, zich in combinatie met bepaalde delen van het verzoek (bijvoorbeeld kiezers en/of de extensie) uit de eigenschappen resource.
+* ten tweede, wordt de vertegenwoordiging, of het manuscript, gevestigd van de middeleigenschappen in combinatie met bepaalde delen van het verzoek (b.v. selecteurs en/of de uitbreiding)
 
 ### RESTful Sling {#restful-sling}
 
@@ -178,7 +178,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
    Het script zal /apps/hr/jobs/jobs.esp zijn; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
-* Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
+* POST-aanvragen (alle aanvraagtypen behalve GET/HEAD, de methodenaam moet in hoofdletters staan)
 
    POST wordt gebruikt in de scriptnaam.
 
@@ -441,7 +441,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 * `/var`
 
-   bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling. De submap `/var/classes` bevat de Java-servlets in bron- en gecompileerde formulieren die zijn gegenereerd op basis van de componentscripts.
+   bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 
 ## Omgevingen {#environments}
 

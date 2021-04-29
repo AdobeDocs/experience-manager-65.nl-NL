@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
+exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 0%
 
 ---
-
 
 # {#reporting} rapporteren
 
@@ -31,6 +31,10 @@ Om u te helpen de staat van uw instantie controleren en analyseren, verstrekt AE
 * [Gebruikersrapport](#user-report)
 * [Rapport voor werkstroominstantie](#workflow-instance-report)
 * [Workflowrapport](#workflow-report)
+
+>[!NOTE]
+>
+>Deze rapporten zijn alleen beschikbaar in de klassieke gebruikersinterface. Voor systeemcontrole en rapportering in moderne UI, zie [Het Dashboard van Verrichtingen.](/help/sites-administering/operations-dashboard.md)
 
 Alle rapporten kunnen van **Tools** console worden betreden. Selecteer **Rapporten** in de linkerruit, dan klik het vereiste rapport in de juiste ruit tweemaal om het voor het bekijken en/of configuratie te openen.
 
@@ -289,7 +293,7 @@ Wanneer u **Eindigt** het rapport:
 * Eventuele bestaande momentopnamen worden verwijderd.
 * Nieuwe momentopnamen worden verzameld voor de [Historische gegevens](#historic-data).
 
-In dit dialoogvenster kunt u uw eigen titel en beschrijving voor het resulterende rapport definiëren of bijwerken.
+Met dit dialoogvenster kunt u uw eigen titel en beschrijving voor het resulterende rapport definiëren of bijwerken.
 
 ![reportage](assets/reportfinish.png)
 

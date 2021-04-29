@@ -77,7 +77,7 @@ Om dit te doen, moet u [file uw volledige bewaarplaats](#backing-up-your-reposit
 
 >[!CAUTION]
 >
->Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [AEM installeren met een toepassingsserver](/help/sites-deploying/application-server-install.md) voor informatie over het installeren van toepassingsservers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe Experience Manager with an application server)
+>Als u een toepassingsserver van een andere fabrikant gebruikt, kunnen extra mappen zich op een andere locatie bevinden en moeten er mogelijk ook back-ups van worden gemaakt. Zie [AEM installeren met een toepassingsserver](/help/sites-deploying/application-server-install.md) voor informatie over het installeren van toepassingsservers.
 
 >[!CAUTION]
 >

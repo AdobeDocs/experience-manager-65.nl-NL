@@ -3,15 +3,14 @@ title: Elementen downloaden
 description: Leer hoe u elementen downloadt van [!DNL Adobe Experience Manager] en de downloadfunctionaliteit in- of uitschakelt.
 contentOwner: AG
 role: Business Practitioner
-feature: Asset Management,Asset Distribution
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Middelenbeheer, middelenverdeling
+exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
+source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '862'
 ht-degree: 1%
 
 ---
-
 
 # Elementen downloaden van [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -64,6 +63,8 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
    enabled=B"true"
    asset.download.prezip.maxcontentsize=I"102400"
    ```
+
+[!DNL Experience Manager] past standaard een limiet van 50 MB toe op de downloadgrootte van het ZIP-archief voor `GET`-aanvragen om bestanden te downloaden. Downloads die via `POST` verzoeken of de gebruikersinterface in werking worden gesteld worden niet beïnvloed door deze grens.
 
 ## Subserver {#disable-asset-download-servlet} uitschakelen
 

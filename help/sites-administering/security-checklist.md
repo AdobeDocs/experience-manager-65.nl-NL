@@ -11,11 +11,10 @@ content-type: reference
 discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
-feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Beveiliging
+source-git-commit: 1c6ee9b547fd0870feb510e35ffdcb8e3f857f18
 workflow-type: tm+mt
-source-wordcount: '2842'
+source-wordcount: '2873'
 ht-degree: 0%
 
 ---
@@ -26,7 +25,7 @@ Deze sectie behandelt diverse stappen die u zou moeten nemen om ervoor te zorgen
 
 >[!NOTE]
 >
->Aanvullende informatie [is ook beschikbaar over de gevaarlijkste veiligheidsbedreigingen zoals gepubliceerd door Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>Meer informatie is ook beschikbaar over de gevaarlijkste veiligheidsbedreigingen zoals gepubliceerd door [Open het Project van de Veiligheid van de Toepassing van het Web (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -163,7 +162,7 @@ Deze bundel OSGi zou op zowel auteur moeten worden gedesinstalleerd als producti
 
 #### Het CSRF-beschermingskader {#the-csrf-protection-framework}
 
-AEM 6.1 schepen met een mechanisme dat hulp tegen de aanvallen van het Verzoek van de Vervalsing van de Vertoning van de Deposito&#39;s van de Deposito&#39;s beschermt, genoemd **CSRF Kader**. Raadpleeg de [documentatie](/help/sites-developing/csrf-protection.md) voor meer informatie over het gebruik ervan.
+AEM 6.1 schepen met een mechanisme dat tegen de aanvallen van het Verzoek van de Vervalsing van de Vertoning van de Deposito&#39;s van de Deposito&#39;s beschermt, genoemd **CSRF Kader**. Raadpleeg de [documentatie](/help/sites-developing/csrf-protection.md) voor meer informatie over het gebruik ervan.
 
 #### Het filter Verschuivende verwijzing {#the-sling-referrer-filter}
 
@@ -333,11 +332,9 @@ Volg onderstaande stappen om dit te beperken:
 
 **Mitigate Against DoS Caused by Asset Download Servlet**
 
-De standaard Server van de Download van Activa in AEM staat voor authentiek verklaarde gebruikers toe om willekeurig-grote, gezamenlijke downloadverzoeken uit te geven voor het creëren van ZIP dossiers van activa zichtbaar aan hen die de server en/of het netwerk kunnen overbelasten.
+Met het standaard assetdownloadservlet kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen indienen om ZIP-bestanden met elementen te maken. Door grote ZIP-archieven te maken, kunnen de server en het netwerk worden overbelast. Om een mogelijk DoS-risico (Denial of Service) dat door dit gedrag wordt veroorzaakt, te beperken, wordt `AssetDownloadServlet` OSGi-component standaard uitgeschakeld op [!DNL Experience Manager]-publicatieexemplaar. Deze wordt standaard ingeschakeld voor de auteur [!DNL Experience Manager].
 
-Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, `AssetDownloadServlet` OSGi component is door gebrek voor publiceer instanties op recentste AEM versies.
-
-Als de installatie vereist dat de Asset Download Server is ingeschakeld, raadpleegt u [dit artikel](/help/assets/download-assets-from-aem.md) voor meer informatie.
+Als u de downloadmogelijkheden niet nodig hebt, schakelt u de servlet uit bij het ontwerpen en publiceren van implementaties. Als uw opstelling vereist dat de capaciteit van de activadownload wordt toegelaten, zie [dit artikel](/help/assets/download-assets-from-aem.md) voor meer informatie. Bovendien kunt u een maximale downloadlimiet definiëren die uw implementatie kan ondersteunen.
 
 ### WebDAV {#disable-webdav} uitschakelen
 
@@ -452,4 +449,4 @@ Adobe raadt u ten zeerste aan een penetratietest van uw AEM uit te voeren voorda
 
 ### Aanbevolen werkwijzen voor ontwikkeling {#development-best-practices}
 
-Het is essentieel dat de nieuwe ontwikkeling [Beste praktijken van de Veiligheid ](/help/sites-developing/security.md) volgt om uw AEM milieu te verzekeren blijft veilig.
+Het is essentieel dat de nieuwe ontwikkeling [Beste praktijken van de Veiligheid ](/help/sites-developing/security.md) volgt om uw AEM milieu veilig te verzekeren.

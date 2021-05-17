@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Documentbeveiliging
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
+source-git-commit: ffba6ecf6c3d75a71c3e6f970fd9a20ce467492d
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,7 @@ Beleidssetcoördinatoren kunnen de volgende taken uitvoeren:
 
 >[!NOTE]
 >
->U kunt een maximum van 1000 namen van beleidsreeksen van het gegevensbestand terugwinnen.
+>U kunt een maximum van 1000 namen van beleidsreeksen van het gegevensbestand terugwinnen gebruikend `getAllPolicysetnames()` API.
 
 De reeksen van het beleid worden gecreeerd en in de Web-pagina&#39;s van het beleid van de documentveiligheid geschrapt door beheerders en beleidsvastgestelde coördinatoren die toestemming hebben om dit te doen.
 

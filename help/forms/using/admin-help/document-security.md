@@ -10,15 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
-feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Documentbeveiliging
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
+source-git-commit: 76201cc58f2d3f7d65f867801fcb95f5390baada
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
-
 
 # Documentbeveiliging {#about-document-security}
 
@@ -223,6 +222,10 @@ Beleidssetcoördinatoren kunnen de volgende taken uitvoeren:
 * Beleid en documentgebeurtenissen weergeven voor beleid of document binnen de beleidsset
 * Toegang tot documenten intrekken
 * Van beleid wisselen voor het document.
+
+>[!NOTE]
+>
+>U kunt een maximum van 1000 namen van beleidsreeksen van het gegevensbestand terugwinnen.
 
 De reeksen van het beleid worden gecreeerd en in de Web-pagina&#39;s van het beleid van de documentveiligheid geschrapt door beheerders en beleidsvastgestelde coördinatoren die toestemming hebben om dit te doen.
 

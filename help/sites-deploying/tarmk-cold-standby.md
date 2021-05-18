@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configureren
+exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
+source-git-commit: d9565be9183bd4485036d99869585a79999be54b
 workflow-type: tm+mt
-source-wordcount: '2732'
+source-wordcount: '2719'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM met TarMK Koude Reserve{#how-to-run-aem-with-tarmk-cold-standby} in werking te stellen
 
@@ -282,7 +281,7 @@ De volgende montages OSGi zijn beschikbaar voor de Koude Reserve dienst:
 
 * **Toegestane IP-Randen (`primary.allowed-client-ip-ranges`):** - de IP waaiers die primair verbindingen van zal toestaan.
 * **Secure (`secure`):SSL-codering** inschakelen. Als u deze instelling wilt gebruiken, moet deze in alle gevallen zijn ingeschakeld.
-* **Standby Read Timeout (`standby.readtimeout`):** Timeout voor verzoeken die van de reserve instantie in milliseconden worden uitgegeven. De aanbevolen time-out is 43200000. U wordt doorgaans aangeraden de time-out in te stellen op een waarde van ten minste 12 uur.
+* **Standby Read Timeout (`standby.readtimeout`):** Timeout voor verzoeken die van de reserve instantie in milliseconden worden uitgegeven. De standaardwaarde is 60000 (één minuut).
 
 * **Standby Automatische Overbodig Opschonen (`standby.autoclean`):** Roep de schoonmaakmethode als de grootte van de opslag op een synchronisatiecyclus stijgt.
 
@@ -410,4 +409,3 @@ Het is belangrijk om afvalophaling op de instanties van de dossierdatastore van 
    >[!NOTE]
    >
    >Als u geen gedeelde gegevensopslag gebruikt, zal de huisvuilinzameling eerst op primair en dan op reserve moeten in werking worden gesteld.
-

@@ -4,12 +4,11 @@ description: Leer de taken voor middelenbeheer, zoals het uploaden, downloaden, 
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: Asset Management,Search
+feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-translation-type: tm+mt
-source-git-commit: 46b11d0b59d748f2035e7ed46dc8caeef79d48c0
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '9563'
+source-wordcount: '9561'
 ht-degree: 3%
 
 ---
@@ -114,7 +113,7 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 >
 >Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
 >
->Als Asset Insights is ingeschakeld voor het bijhouden van indrukken/klikken met Adobe Analytics, maakt de opnieuw gegenereerde asset-id de vastgelegde gegevens voor het element op Analytics ongeldig.
+>Als Asset Insights is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics], maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
 
 Als het element dat u uploadt aanwezig is in [!DNL Assets], wordt in het dialoogvenster **[!UICONTROL Duplicates Detected]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom `SHA 1` van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
 
@@ -327,7 +326,7 @@ Als u veel middelen uploadt naar Adobe Experience Manager, nemen de I/O-verzoeke
 >
 >Uploaden naar streaming is uitgeschakeld voor Adobe Experience Manager dat op de JEE-server wordt uitgevoerd en de servlet-api-versie lager is dan 3.1.
 
-### ZIP-archief met elementen uitpakken {#extractzip}
+### ZIP-archief met elementen extraheren {#extractzip}
 
 U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. [!DNL Experience Manager] kunt u een ZIP-archief extraheren naar een DAM-locatie. Als de archiefbestanden geen ZIP als extensie bevatten, schakelt u detectie van bestandstypen met inhoud in.
 
@@ -719,7 +718,7 @@ In de tijdlijn kunt u verschillende gebeurtenissen voor een geselecteerd item we
 >
 >De tijdlijn bevat verschillende [opties die specifiek zijn voor inhoudsfragmenten](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-## Elementen {#annotating} annoteren
+## Elementen notities aanbrengen {#annotating}
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 

@@ -3,10 +3,9 @@ title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
-feature: Connected Assets,User and Groups
+feature: Verbonden elementen, gebruikers en groepen
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-translation-type: tm+mt
-source-git-commit: 48e5b55a1d79fef6172f684cb65a4137113fb7fb
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 27%
@@ -182,7 +181,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 
-* Om inzicht in activagebruik te krijgen, vorm [de functionaliteit van het Inzicht van Activa](/help/assets/asset-insights.md) op [!DNL Sites] instantie.
+* Om inzicht in activagebruik te krijgen, vorm [Activa Insight](/help/assets/asset-insights.md) functionaliteit op [!DNL Sites] instantie.
 
 ### Machtigingen en middelenbeheer {#permissions-and-managing-assets}
 

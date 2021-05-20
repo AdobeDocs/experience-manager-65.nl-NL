@@ -3,19 +3,18 @@ title: Elementinzichten configureren voor analyses.
 description: Elementinzichten configureren in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Asset Insights, Asset Reports
+exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
+source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-
 # Elementinzichten configureren {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om Asset Insights in in staat te stellen deze gegevens op te halen en inzichten te genereren, dient u eerst de functie te configureren voor integratie met Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] Hiermee haalt u gebruiksgegevens op van digitale elementen die door websites van derden worden gebruikt  [!DNL Adobe Analytics]. Om de Inzichten van Activa toe te laten om deze gegevens terug te winnen en inzichten te produceren, vorm eerst de eigenschap om met [!DNL Adobe Analytics] te integreren. Koop [!DNL Adobe Analytics] licentie afzonderlijk om deze functie te gebruiken. Klanten op [!DNL Managed Services] ontvangen [!DNL Analytics] licentie gebundeld met [!DNL Experience Manager]. Zie [Managed Services productbeschrijving](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >

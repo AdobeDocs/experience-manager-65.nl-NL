@@ -2,16 +2,15 @@
 title: AEM Assets-integratie configureren met Experience Cloud
 description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
 contentOwner: AG
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Architect, Administrator
-translation-type: tm+mt
-source-git-commit: a9c9194ac1d163be3ab642ab5a6323de02d67363
+exl-id: d167cf97-6829-45a7-ba46-2239d530b060
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '906'
 ht-degree: 1%
 
 ---
-
 
 # AEM Assets-integratie configureren met Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
@@ -27,7 +26,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 >[!NOTE]
 >
->Deze functie is afgekeurd in AEM Assets. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenservice van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
+>Deze functie is vervangen in [!DNL Assets]. Vind vervangingen in [AEM en de beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md). Als u vragen hebt, [neem contact op met de klantenservice van Adobe](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -172,5 +171,4 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Aanbevolen werkwijzen voor het integreren van middelen en Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
->* [Middelen naar Creative Cloud-map die aanbevolen werkwijzen deelt](/help/assets/aem-cc-folder-sharing-best-practices.md)
 

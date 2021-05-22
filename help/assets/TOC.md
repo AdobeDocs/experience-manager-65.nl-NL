@@ -6,16 +6,15 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '582'
 ht-degree: 34%
 
 ---
 
 
-# Elementengids {#assets}
+# Hulplijn voor middelen {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
 + [[!DNL Experience Manager] 6.5 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
@@ -27,7 +26,7 @@ ht-degree: 34%
    + [Digitale middelen zoeken](search-assets.md)
    + [Werken met metagegevens van elementen](metadata.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [ [!DNL Adobe Stock] Activa in activa](aem-assets-adobe-stock.md)
+   + [Elementen in elementen gebruiken [!DNL Adobe Stock] ](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Verbeterde slimme tags](enhanced-smart-tags.md)
@@ -87,11 +86,11 @@ ht-degree: 34%
    + [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [Installeren en  [!DNL ImageMagick] configureren om te werken met [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installeren en configureren [!DNL ImageMagick] voor samenwerking met [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
-   + [Content Fragments ondersteunt  [!DNL Assets] in HTTP API](assets-api-content-fragments.md)
+   + [Content Fragments support in [!DNL Assets] HTTP API](assets-api-content-fragments.md)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
 + Elementen {#administer} beheren
    + [Ondersteunde bestandsindelingen](assets-formats.md)
@@ -125,9 +124,8 @@ ht-degree: 34%
    + [Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen](multi-tenancy.md)
    + [Watermerk uw elementen](watermarking.md)
    + [Elementsjablonen](asset-templates.md)
-   + [Aanbevolen procedures voor het delen van mappen met [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
-+ Merk-portal {#brandportal}
-   + [ [!DNL Assets] Configureren met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
++ Brand Portal {#brandportal}
+   + [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Mappen publiceren naar [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar [!DNL Brand Portal]](brand-portal-publish-collection.md)

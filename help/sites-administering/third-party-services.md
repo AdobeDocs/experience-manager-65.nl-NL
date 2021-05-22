@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
-translation-type: tm+mt
-source-git-commit: 471b57a52efc849eb57201e6397221fa4f88c746
+exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met services van derden{#integrating-with-third-party-services}
 
@@ -34,7 +33,7 @@ Met AEM, kunt u met de volgende niet Adobe producten uit de doos integreren:
 * Twitter - sociale netwerken
 * YouTube - video delen
 
-Daarnaast kunt u AEM integreren met de [marketingcloud](/help/sites-administering/marketing-cloud.md) en met de [Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md).
+Bovendien kunt u AEM integreren met [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Integreren met Salesforce {#integrating-with-salesforce}
 
@@ -54,13 +53,13 @@ Zie [Integreren met Silverpop Engage](/help/sites-administering/silverpop.md) vo
 
 ## Integreren met ExactTarget {#integrating-with-exacttarget}
 
-De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
+Met de e-mailmarketingoplossingen van ExactTarget kunnen organisaties van elke omvang zeer gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes ontwerpen en leveren.
 
 Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [het Vormen ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook en Twitter zijn populaire sociale netwerkservices. AEM integratie met Facebook en Twitter stelt organisaties in staat een aanmeldingsoptie voor Facebook of Twitter in te voeren voor digitale eigenschappen die in eigendom zijn en de gebruikerservaring aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
+Facebook en Twitter zijn populaire sociale netwerkservices. AEM integratie met Facebook en Twitter stelt organisaties in staat een Facebook- of Twitter-aanmeldingsoptie voor digitale eigenschappen in eigendom te bieden en de gebruikerservaring aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
 
 Zie [Sociale aanmelding](/help/communities/social-login.md) voor meer informatie.
 

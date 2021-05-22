@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
+source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '121'
 ht-degree: 0%
 
 ---
-
 
 # Oplossingsintegratie{#solutions-integration}
 
@@ -24,7 +23,6 @@ ht-degree: 0%
 * [Integreren met services van derden](/help/sites-administering/third-party-services.md)
 * [Analyse met externe providers](/help/sites-administering/external-providers.md)
 * [Catalogusproducent](/help/sites-administering/catalog-producer.md)
-* [AEM Assets-integratie configureren met Marketing Cloud en Creative Cloud](/help/sites-administering/configure-assets-cc-integration.md)
 * [SharePoint-connector](/help/sites-administering/sharepoint-connector.md)
 
 De volgende informatie is beschikbaar over het integreren AEM met andere Adobe of derdediensten:
@@ -37,6 +35,5 @@ De volgende informatie is beschikbaar over het integreren AEM met andere Adobe o
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
 >
-
 
 

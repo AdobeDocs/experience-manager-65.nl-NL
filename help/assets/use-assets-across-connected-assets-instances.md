@@ -5,18 +5,18 @@ contentOwner: AG
 role: Business Practitioner, Administrator, Leader
 feature: Verbonden elementen, gebruikers en groepen
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: c07467feb96c25a4bac1916f88f04fdb37979ee1
+source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2655'
 ht-degree: 27%
 
 ---
 
 # Aangesloten middelen gebruiken om DAM-elementen te delen in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch verdeeld bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen acquisities zijn die leiden tot heterogene infrastructuren die de moedermaatschappij samen wil gebruiken.
+In grote ondernemingen is de infrastructuur voor het maken van websites soms gedistribueerd. Soms zijn de functies en de digitale assets voor het maken van websites opgenomen in verschillende implementaties. Één reden kan geografisch gedistribueerde bestaande plaatsingen zijn die worden vereist om samen te werken. Een andere reden kunnen overnames zijn die leiden tot heterogene infrastructuren, waaronder verschillende [!DNL Experience Manager] versies, die het moederbedrijf samen wil gebruiken.
 
-Gebruikers kunnen webpagina&#39;s maken in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is het DAM-systeem (Digital Asset Management) dat de vereiste middelen voor websites levert. [!DNL Experience Manager] ondersteunt nu het bovenstaande gebruiksgeval door integratie  [!DNL Sites] en  [!DNL Assets].
+De functionaliteit Verbonden elementen ondersteunt het bovenstaande gebruiksgeval door [!DNL Experience Manager Sites] en [!DNL Experience Manager Assets] te integreren. Gebruikers kunnen webpagina&#39;s maken in [!DNL Sites] die de digitale elementen gebruiken van een afzonderlijke [!DNL Assets]-implementatie.
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
@@ -188,8 +188,8 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.
 * Lokaal opgehaalde assets zijn alleen beschikbaar voor authoring. Workflows voor het bijwerken van assets kunnen niet worden toegepast en metadata kunnen niet worden bewerkt.
-* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Dynamic Media] Elementen, inhoudsfragmenten en ervaringsfragmenten worden niet ondersteund.
-* [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk wordt bijgewerkt, worden alle eigenschappen weergegeven.
+* Alleen afbeeldingen en de vermelde documentindelingen worden ondersteund. [!DNL Dynamic Media] elementen  [!DNL Content Fragments]en  [!DNL Experience Fragments] worden niet ondersteund.
+* [!DNL Experience Manager] haalt niet de meta-gegevensschema&#39;s. Dit betekent dat mogelijk niet alle opgehaalde metagegevens worden weergegeven. Als het schema afzonderlijk bij de [!DNL Sites] plaatsing wordt bijgewerkt, dan worden alle meta-gegevenseigenschappen getoond.
 * Alle [!DNL Sites] auteurs hebben leestemmingen op de opgehaalde exemplaren, zelfs als de auteurs tot de verre plaatsing DAM niet kunnen toegang hebben.
 * Geen API-ondersteuning om de integratie aan te passen.
 * De functionaliteit ondersteunt naadloos zoeken en gebruiken van externe assets. Als u veel externe assets in één keer beschikbaar wilt maken voor lokale implementatie, kunt u overwegen om de assets te migreren. Zie de [Assets-migratiegids](assets-migration-guide.md).
@@ -199,8 +199,8 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 * [!DNL Assets] implementatie op  [!DNL Adobe Managed Services] wordt ondersteund.
 * [!DNL Sites] kan tegelijkertijd verbinding maken met één  [!DNL Assets] opslagplaats.
-* Een licentie van [!DNL Assets] die als externe opslagruimte werkt.
-* Een of meer licenties van [!DNL Sites] die als lokale ontwerpimplementatie werken.
+* Er is een licentie van [!DNL Assets] vereist om als externe opslagruimte te werken.
+* Een of meer licenties van [!DNL Sites] die als lokale ontwerpimplementatie werken, zijn vereist.
 
 ### Gebruik {#usage}
 

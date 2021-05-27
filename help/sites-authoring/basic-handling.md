@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2980'
 ht-degree: 3%
 
 ---
@@ -271,7 +270,7 @@ ResourcesDeveloper
    >Raadpleeg de volgende documentatie voor een overzicht van alle sneltoetsen:
    >
    >    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
 ## Werkbalk Handelingen {#actions-toolbar}
@@ -288,11 +287,10 @@ Hoe u [een middel ](/help/sites-authoring/basic-handling.md#viewing-and-selectin
 
 Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op het beletselteken (de drie stippen of **...**) klikt of tikt, wordt een vervolgkeuzelijst geopend met alle resterende acties. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
 
-![bh-12](assets/bh-12.png)
+![Werkbalk Handelingen](assets/bh-12.png)
 
 >[!NOTE]
->
->De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
+De afzonderlijke beschikbare pictogrammen worden gedocumenteerd met betrekking tot de juiste console/functie/scenario.
 
 ## Snelle handelingen {#quick-actions}
 
@@ -314,8 +312,7 @@ U kunt uw bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met
 * [Lijstweergave](#list-view)
 
 >[!NOTE]
->
->Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
+Standaard worden in AEM Assets de oorspronkelijke uitvoeringen van elementen in de gebruikersinterface niet als miniaturen weergegeven in een van de weergaven. Beheerders kunnen met overlays de oorspronkelijke uitvoeringen als miniaturen weergeven.
 
 ### Bronnen selecteren {#selecting-resources}
 
@@ -499,8 +496,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 * Wijzig de volgorde van de items met de gestippelde verticale balk helemaal rechts van elk item in de lijst.
 
    >[!NOTE]
-   >
-   >Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` als waarde `sling:OrderedFolder` heeft.
+   Het wijzigen van de volgorde werkt alleen in een geordende map die `jcr:primaryType` als waarde `sling:OrderedFolder` heeft.
 
    ![bh-22](assets/bh-22.png)
 
@@ -525,8 +521,7 @@ U kunt bijvoorbeeld in Sites alleen inhoud (de standaardinstelling), de inhoudss
 Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorstaaf weergegeven. Als er een andere optie is geselecteerd, wordt de naam van de optie weergegeven naast het pictogram van de track.
 
 >[!NOTE]
->
->[Er zijn ](/help/sites-authoring/keyboard-shortcuts.md) sneltoetsen beschikbaar waarmee u snel kunt schakelen tussen de weergaveopties voor rails.
+[Er zijn ](/help/sites-authoring/keyboard-shortcuts.md) sneltoetsen beschikbaar waarmee u snel kunt schakelen tussen de weergaveopties voor rails.
 
 ### Inhoudsstructuur {#content-tree}
 
@@ -537,10 +532,8 @@ Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijst
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
->
->Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
->
->Raadpleeg de [sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md) voor meer informatie.
+Wanneer een item in de hiërarchische weergave is geselecteerd, kunt u met de pijltoetsen snel door de hiërarchie navigeren.
+Raadpleeg de [sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md) voor meer informatie.
 
 ### Tijdlijn {#timeline}
 

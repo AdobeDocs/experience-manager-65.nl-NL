@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 188434543403fab48f79be06356b86e132e2888a
+exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
+source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
 workflow-type: tm+mt
-source-wordcount: '1094'
-ht-degree: 6%
+source-wordcount: '1487'
+ht-degree: 4%
 
 ---
-
 
 # Werken met paginaversies{#working-with-page-versions}
 
@@ -65,36 +64,105 @@ U kunt een versie van uw bron maken op basis van:
 
    De tijdlijn wordt geopend met de informatie die wordt bijgewerkt om de nieuwe versie aan te geven.
 
-## Terugkeren naar een paginaversie {#reverting-to-a-page-version}
+## Versies opnieuw installeren {#reinstating-versions}
 
-Als er eenmaal een versie is gemaakt, kunt u desgewenst terugkeren naar die versie.
+Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op verschillende manieren opnieuw installeren:
+
+* de optie **Terugkeren naar deze versie** van de [Timeline](/help/sites-authoring/basic-handling.md#timeline) rail
+
+   Vorige versie van geselecteerde pagina opnieuw installeren.
+
+* de **Herstel** opties van de hoogste [actietoolbar](/help/sites-authoring/basic-handling.md#actions-toolbar)
+
+   * **Versie herstellen**
+
+      Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
+
+   * **Boom herstellen**
+
+      Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
 
 >[!NOTE]
 >
->Bij het herstellen van een pagina wordt de gemaakte versie onderdeel van een nieuwe vertakking.
+>Wanneer u een pagina opnieuw invoegt, maakt de gemaakte versie deel uit van een nieuwe vertakking.
 >
 >Ter illustratie:
 >
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
->1. Herstel de eerste versie; d.w.z. 1.0.
+>1. De eerste versie opnieuw installeren; d.w.z. 1.0.
 >1. Maak opnieuw nieuwe versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
 
->
 
+### Terugkeren naar een versie {#revert-to-a-version}
 
-
-Een vorige versie herstellen:
+Om **de geselecteerde pagina aan een vorige versie terug te keren**:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
 1. Selecteer de pagina in [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
+   ![Deze versie herstellen](assets/screen-shot_2019-03-05at112505.png)
 
 1. Selecteer **Terugkeren naar deze versie**. De geselecteerde versie wordt hersteld en de informatie in de tijdlijn wordt bijgewerkt.
+
+### Versie {#restore-version} herstellen
+
+Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten:
+
+1. Navigeer naar de vereiste map en [selecteer](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+1. Selecteer **Herstel**, dan **Herstel Versie** van hoogste [actietoolbar](/help/sites-authoring/basic-handling.md#actions-toolbar).
+
+   >[!NOTE]
+   >
+   >Indien:
+   >
+   >* u één pagina hebt geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
+   >* of geen van de pagina&#39;s in de map een versie heeft,
+
+   >
+   >Dan zal de vertoning leeg zijn aangezien er geen toepasselijke versies zijn.
+
+1. De beschikbare versies worden weergegeven:
+
+   ![Versie herstellen - Lijst met alle pagina&#39;s in map](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. Voor een specifieke pagina gebruikt u de keuzelijst onder **HERSTELLEN NAAR VERSION** om de vereiste versie voor die pagina te selecteren.
+
+   ![Versie herstellen - Versie selecteren](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. Selecteer in het hoofdscherm de pagina die u wilt herstellen:
+
+   ![Versie herstellen - Pagina selecteren](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. Selecteer **Herstel** voor de geselecteerde versie van de geselecteerde pagina, die als huidige versie moet worden hersteld.
+
+>[!NOTE]
+>
+>De volgorde waarin u een vereiste pagina en de bijbehorende versie selecteert, is uitwisselbaar.
+
+### Boom {#restore-tree} herstellen
+
+Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd:
+
+1. Navigeer naar de vereiste map en [selecteer](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+
+1. Selecteer **Herstellen**, dan **Herstel Boom** van de hoogste [actietoolbar](/help/sites-authoring/basic-handling.md#actions-toolbar). De meest recente versie van de boomstructuur wordt weergegeven:
+
+   ![Boom herstellen](/help/sites-authoring/assets/versions-restore-tree-02.png)
+
+1. Gebruik de datum- en tijdkiezer op **Nieuwste versies op datum** om een andere versie van de structuur te selecteren, de versie die moet worden hersteld.
+
+1. Stel de markering **Behouden niet-versioned pagina&#39;s** naar wens in:
+
+   * Als deze optie actief is (geselecteerd), blijven niet-versioned pagina&#39;s behouden en worden deze niet beïnvloed door het terugzetten.
+
+   * Als de optie inactief (niet geselecteerd) is, worden alle pagina&#39;s zonder versiebeheer verwijderd, omdat deze niet in de versiestructuur bestonden.
+
+1. Selecteer **Herstel** voor de geselecteerde versie van de boom die als *huidige* versie moet worden hersteld.
 
 ## Een voorbeeld weergeven van een versie {#previewing-a-version}
 
@@ -129,7 +197,7 @@ Een vorige versie vergelijken met de huidige pagina:
 
 1. Selecteer **Vergelijken met huidige**. Met het [page diff](/help/sites-authoring/page-diff.md) worden de verschillen geopend en weergegeven.
 
-## Timewaring {#timewarp}
+## Timewarp {#timewarp}
 
 Timewarp is een eigenschap die wordt ontworpen om de *gepubliceerde* staat van een pagina op specifieke tijden in het verleden te simuleren.
 

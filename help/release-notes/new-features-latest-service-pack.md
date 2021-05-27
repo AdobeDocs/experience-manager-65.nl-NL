@@ -1,18 +1,17 @@
 ---
-title: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
-description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 8
+title: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
+description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
-translation-type: tm+mt
-source-git-commit: ecb32596edecaf47ef54a74c2be8ecf252de466c
+exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
+source-git-commit: 48a5f9ffb33ae09f5d4e6e57cf66b871a9ff6981
 workflow-type: tm+mt
-source-wordcount: '3003'
+source-wordcount: '3256'
 ht-degree: 0%
 
 ---
 
-
-# Nieuw in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
+# Nieuw in [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
 
 ![Wit-nieuw](assets/whatsnew.jpeg)
 
@@ -22,15 +21,57 @@ In dit artikel worden de functies beschreven die zijn opgenomen in het meest rec
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout sorteren {#sort-livecopy-pages}
+### Mogelijkheid om verwijderde pagina&#39;s en boomstructuur {#ability-to-restore-pages-tree} te herstellen
 
-U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date] en [!UICONTROL Last rollout date]. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release is geïntroduceerd.
+U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen op een [!DNL Experience Manager Sites]-pagina.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Wanneer u [Functionaliteit voor verbonden elementen](/help/assets/use-assets-across-connected-assets-instances.md) gebruikt, kunt u nu een lijst weergeven met alle [!DNL Sites] pagina&#39;s die het element gebruiken. Deze verwijzingen naar een element zijn beschikbaar op de pagina [!UICONTROL Properties] van een element. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, zodat ze het bedrijfsmerk beter kunnen bijhouden, beheren en het merk consistenter zijn.
+* Bijgewerkt aan de naamgeving van Chinese landinstellingen en regio&#39;s met betrekking tot Hongkong, Macau en Taiwan, om deze in overeenstemming te brengen met de sociale en politieke standpunten van China.
 
-* Als u een element verwijdert waarnaar in een webpagina wordt verwezen, wordt een waarschuwing weergegeven. [!DNL Experience Manager] U kunt een element waarnaar wordt verwezen, forceren verwijderen of de verwijzingen controleren en wijzigen die op de pagina [!DNL Properties] van het element worden weergegeven. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s geopend.
+* Er wordt een optionele configuratie geïntroduceerd om de e-mailadressen in ACS api-reacties van [!DNL Adobe Experience Manager] in kleine letters te plaatsen.
+
+   ![configuratie om de e-mailadressen in ACS-antwoord van AEM in kleine letters te plaatsen](assets/email-lowcase-config.png)
+
+* Het contrast (met achtergrond) van tekst en pictogrammen op verschillende plaatsen wordt verbeterd volgens WCAG, zodat het toegankelijk wordt voor gebruikers met een beperkt gezichtsvermogen en een beperkte kleurperceptie. Zie [Toegankelijkheidsverbeteringen in Elementen](sp-release-notes.md#assets-accessibility-6590) voor meer informatie.
+
+###  Dynamic Media {#assets-dynamic-media}
+
+* [Dynamische media zijn ](sp-release-notes.md#assets-accessibility-6590) toegankelijker in termen van:
+
+   * gebruiksgemak met toetsenbordtoetsen.
+   * contrast (met achtergrond) van tekst, plaatsaanduidingstekst en besturingselementen in verschillende editors.
+   * toegankelijkheid en gesproken tekst voor schermlezers.
+
+* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie.
+
+   >[!NOTE]
+   >
+   >De releasetijdlijn voor de bovenstaande verbeteringen in Smart Imaging is:
+   >
+   >* Noord-Amerika 24 mei 2021 in NA,
+      >
+      >
+   * Europa, het Midden-Oosten en Afrika 25 juni 2021,
+      >
+      >
+   * Azië-Stille Oceaan 19 juli 2021.
+
+
+* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van de volgende generatie in Dynamic Media-levering (fmt URL-modifier). Zie [api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldbewerking en rendering.
+
+   >[!NOTE]
+   >
+   >De releasetijdlijn voor AVIF-ondersteuning is:
+   >
+   >* Noord-Amerika 10 mei 2021,
+      >
+      >
+   * Europa, het Midden-Oosten en Afrika 24 mei 2021,
+      >
+      >
+   * Azië-Stille Oceaan 24 juni 2021.
+
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -38,25 +79,13 @@ U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren m
 >
 >Het add-on pakket van [!DNL Experience Manager Forms] wordt een week na de geplande [!DNL Experience Manager] Service Pack-release beschikbaar gesteld.
 
-### CAPTCHA-component weergeven of verbergen in een adaptieve vorm op basis van regels {#show-hide-captcha}
-
-U kunt CAPTCHA nu valideren bij het verzenden van het aangepaste formulier of bij actie van de gebruiker. U kunt ook voorwaarden toevoegen om CAPTCHA op een gebruikersactie te valideren en de component CAPTCHA in een adaptief formulier weergeven of verbergen op basis van regels.
-
-### Aangepaste CAPTCHA-services toevoegen {#add-custom-captcha-services}
-
-[!DNL Experience Manager Forms] biedt in de box-ondersteuning voor het gebruik van Google reCAPTCHA (een aparte licentie voor Google reCAPTCHA-API&#39;s is vereist) als een CAPTCHA-validatieservice. U kunt ook een aangepaste CAPTCHA-service gebruiken om CAPTCHA&#39;s te valideren.
-
-### Andere verbeteringen {#other-enhancements-forms-6580}
-
-* Verbeterde toegankelijkheid van de component [!DNL Experience Manager Forms] Datumkiezer.
-
-* Extra ondersteuning voor het genereren van een interactieve communicatie in PCL-indeling met de PrintChannel-API.
-
-* Wanneer u een PDFG-conversie uitvoert, kunt u nu de registerwijzigingen voor het genereren van aangepaste bladwijzers in- of uitschakelen.[!DNL Experience Manager Forms]
-
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout (6.5.8.0) {#sort-livecopy-pages} sorteren
+
+U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date] en [!UICONTROL Last rollout date]. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release is geïntroduceerd.
 
 #### Beschikbaarheid van paginabewegingen en MSM-rollouts als asynchrone bewerkingen (6.5.7.0) {#page-moves-msm-asynchronous}
 
@@ -109,6 +138,10 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 * Verbeterde verwerking van onvolledige of ongeldige URL&#39;s. Dergelijke URL&#39;s kunnen de Sjablooneditor vertragen.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* Wanneer u [Functionaliteit voor verbonden elementen](/help/assets/use-assets-across-connected-assets-instances.md) gebruikt, kunt u nu een lijst weergeven met alle [!DNL Sites] pagina&#39;s die het element gebruiken. Deze verwijzingen naar een element zijn beschikbaar op de pagina [!UICONTROL Properties] van een element. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, waardoor ze het bedrijfsmerk beter kunnen bijhouden, beheren en de consistentie van merken kunnen verbeteren (6.5.8.0).
+
+* Als u een element verwijdert waarnaar in een webpagina wordt verwezen, wordt een waarschuwing weergegeven. [!DNL Experience Manager] U kunt een element waarnaar wordt verwezen, forceren verwijderen of de verwijzingen controleren en wijzigen die op de pagina [!DNL Properties] van het element worden weergegeven. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s (6.5.8.0) geopend.
 
 * [!DNL Assets] en  [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, gebruik van schermlezers en vergelijkbare verbeteringen om het gebruik van ondersteunende hulpmiddelen (AT) mogelijk te maken. Zie [[!DNL Assets] verbeteringen](/help/release-notes/sp-release-notes.md#assets-6570) en [[!DNL Dynamic Media] verbeteringen](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
 
@@ -174,9 +207,9 @@ Met ondersteuning voor 3D-afbeeldingen in [!DNL Dynamic Media] kunnen klanten 3D
 
 Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] wordt gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] wordt nu gevormd met  [!DNL Brand Portal] door  [!DNL Adobe I/O], die een teken IMS voor vergunning van uw  [!DNL Brand Portal] huurder verwerft.
 
-De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [Experience Manager-elementen configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
+De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [Elementen van Experience Managers configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
 
-#### Toegankelijkheidsverbeteringen (6.5.4.0) {#accessibility-enhancements}
+#### Toegankelijkheidsverbeteringen (6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets] bevat de volgende toegankelijkheidsverbeteringen:
 
@@ -224,6 +257,22 @@ Slimme beeldverwerking gebruikt de unieke weergavekenmerken van elke gebruiker o
 Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprofielen - is een gereedschap dat de kracht van kunstmatige intelligentie in Adobe Sensei gebruikt om het brandpunt automatisch te detecteren en uit te snijden in adaptieve video of progressieve video die u hebt geüpload, ongeacht de grootte. Zie [Informatie over slim uitsnijden in videoprofielen](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### CAPTCHA-component weergeven of verbergen in een adaptieve vorm op basis van de regels (6.5.8.0) {#show-hide-captcha}
+
+U kunt CAPTCHA nu valideren bij het verzenden van het aangepaste formulier of bij actie van de gebruiker. U kunt ook voorwaarden toevoegen om CAPTCHA op een gebruikersactie te valideren en de component CAPTCHA in een adaptief formulier weergeven of verbergen op basis van regels.
+
+#### Aangepaste CAPTCHA-services toevoegen (6.5.8.0) {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] biedt in de box-ondersteuning voor het gebruik van Google reCAPTCHA (een aparte licentie voor Google reCAPTCHA-API&#39;s is vereist) als een CAPTCHA-validatieservice. U kunt ook een aangepaste CAPTCHA-service gebruiken om CAPTCHA&#39;s te valideren.
+
+#### Andere verbeteringen (6.5.8.0) {#other-enhancements-forms-6580}
+
+* Verbeterde toegankelijkheid van de component [!DNL Experience Manager Forms] Datumkiezer.
+
+* Extra ondersteuning voor het genereren van een interactieve communicatie in PCL-indeling met de PrintChannel-API.
+
+* Wanneer u een PDFG-conversie uitvoert, kunt u nu de registerwijzigingen voor het genereren van aangepaste bladwijzers in- of uitschakelen.[!DNL Experience Manager Forms]
 
 #### Prestatieverbeteringen (6.5.7.0) {#performance-improvements-forms}
 
@@ -377,6 +426,6 @@ Tussen 26 november 2020 en 25 februari 2021 heeft Adobe het volgende uitgebracht
 >[!MORELIKETHIS]
 >
 >* [[!DNL Adobe Experience Manager] 6.5 Documentatie](../user-guide/home.md)
->* [Algemene opmerkingen bij de release voor [!DNL Adobe Experience Manager]  6.5](release-notes.md)
->* [Opmerkingen bij de release van het servicepack voor [!DNL Adobe Experience Manager]  6.5](sp-release-notes.md)
+* [Algemene opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5](release-notes.md)
+* [Opmerkingen bij de release van het servicepack voor [!DNL Adobe Experience Manager] 6.5](sp-release-notes.md)
 

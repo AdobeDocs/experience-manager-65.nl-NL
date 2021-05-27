@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2efb7e618050f2bbedf7771ae73741b8e77891f8
+source-git-commit: e33a4f197c0deb2457237aac1c1e31093c89adef
 workflow-type: tm+mt
 source-wordcount: '3328'
 ht-degree: 0%
@@ -363,7 +363,9 @@ B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/pa
 
 Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md) voor meer informatie over de platforms die zijn gecertificeerd voor deze release.
 
-<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--
+
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -387,7 +389,8 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+-->
 
 ### UberJar {#uber-jar}
 

@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: a7f8e98729dd27f6976d3289a51f22435fced585
+source-git-commit: d06e60baac692c92358244944226b77d5dad4022
 workflow-type: tm+mt
 source-wordcount: '9540'
 ht-degree: 3%
@@ -113,7 +113,7 @@ U kunt een bestaand element vervangen, een andere versie maken of beide behouden
 >
 >Als u **[!UICONTROL Replace]** selecteert in het dialoogvenster [!UICONTROL Name Conflict], wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
 >
->Als Asset Insights is ingeschakeld voor het bijhouden van indrukken of klikken met [!DNL Adobe Analytics], maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
+>Als Assets Insights is ingeschakeld om afbeeldingen te volgen of op [!DNL Adobe Analytics] te klikken, maakt de opnieuw gegenereerde element-id de gegevensopname voor het element op [!DNL Analytics] ongeldig.
 
 Als het element dat u uploadt aanwezig is in [!DNL Assets], wordt in het dialoogvenster **[!UICONTROL Duplicates Detected]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom `SHA 1` van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van elementen niet van belang.
 
@@ -420,7 +420,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
    * Kanalen/apparaten waardoor het middel werd gebruikt
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt
 
-   Zie [Asset Insights](/help/assets/asset-insights.md) voor meer informatie.
+   Zie [Elementinzichten](/help/assets/asset-insights.md) voor meer informatie.
 
 1. Klik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de [!DNL Assets] gebruikersinterface. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, waarderingen, enzovoort, worden weergegeven op de elementenkaart in de Kaartweergave en onder de desbetreffende kolommen in de lijstweergave.

@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Bijwerken
+exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '721'
 ht-degree: 0%
 
 ---
-
 
 # Upgrade uitvoeren naar AEM 6.5 {#upgrading-to-aem}
 
@@ -54,11 +53,11 @@ Hieronder vindt u een aantal belangrijke wijzigingen in de laatste paar versies 
 
 AEM 6.0 introduceerde de nieuwe opslagplaats voor jakobak. Persistentiemanagers zijn vervangen door [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Zie [Het CRX2OAK-migratiehulpmiddel gebruiken](/help/sites-deploying/using-crx2oak.md) voor meer informatie.
 
-Als Asset Insights moet worden gebruikt en u een upgrade uitvoert van een versie die ouder is dan AEM 6.2, moeten middelen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. In onze interne tests werden 125.000 bedrijfsmiddelen op een TarMK-omgeving over een uur gemigreerd, maar de resultaten kunnen afwijken.
+Als Assets Insights moet worden gebruikt en u een upgrade uitvoert vanaf een versie die ouder is dan AEM 6.2, moeten middelen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. In onze interne tests werden 125.000 bedrijfsmiddelen op een TarMK-omgeving over een uur gemigreerd, maar de resultaten kunnen afwijken.
 
 6.3 introduceerde een nieuw formaat voor `SegmentNodeStore`, dat de basis van de implementatie TarMK vormt. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6.3, is hiervoor een migratie naar de opslagplaats vereist als onderdeel van de upgrade, waarbij systeemdowntime wordt gebruikt.
 
-Adobe Engineering schat dit op ongeveer 20 minuten. Herindexering is niet nodig. Bovendien is er een nieuwe versie van het crx2oak-programma uitgebracht om te werken met de nieuwe repository-indeling.
+Adobe Engineering schat dit op ongeveer 20 minuten. Het opnieuw indexeren is niet nodig. Bovendien is er een nieuwe versie van het crx2oak-programma uitgebracht om te werken met de nieuwe repository-indeling.
 
 **Deze migratie is niet vereist als een upgrade van AEM 6.3 naar AEM 6.5 wordt uitgevoerd.**
 
@@ -94,4 +93,3 @@ In 6.5 was er veel nadruk op het behoud van alle nieuwe functies achterwaarts co
 Tot slot, in uw 6.5 ontwikkelingscyclus, helpen de eigenschappen die onder Duurzame Verbeteringen worden geïntroduceerd (zie [Duurzame Verbeteringen](/help/sites-deploying/sustainable-upgrades.md)) u beste praktijken volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
 
 ![6_4_upgrade_overviewflow-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-

@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 34%
@@ -115,7 +115,7 @@ ht-degree: 34%
    + [[!DNL Experience Manager] and [!DNL Creative Cloud] integratie](aem-cc-integration-best-practices.md)
    + [Integreren met [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in activa](drm.md)
-   + [Demo-pakket gebruiken voor elementinzichten](use-demo-package-for-asset-insights.md)
+   + [Demo-pakket gebruiken voor informatie over elementen](use-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen procedures voor het controleren van elementen](assets-monitoring-best-practices.md)
    + [Camera Raw ondersteuning](camera-raw.md)
@@ -150,8 +150,8 @@ ht-degree: 34%
    + [Elementen downloaden van Experience Manager](download-assets-from-aem.md)
    + [Lichtbak](light-box.md)
    + [Elementinzichten](asset-insights.md)
-   + [Middels DTM inzicht in bedrijfsmiddelen inschakelen](use-dtm-for-asset-insights.md)
-   + [Elementinzichten configureren](configure-asset-insights.md)
+   + [Elementeninzichten via DTM inschakelen](use-dtm-for-asset-insights.md)
+   + [Elementeninzichten configureren](configure-asset-insights.md)
    + [Elementen in- en uitchecken](check-out-and-submit-assets.md)
    + [Vertaalcloudservices toepassen op mappen](transition-cloud-services.md)
    + [Paginatracering gebruiken en code insluiten in webpagina&#39;s](use-page-tracker.md)

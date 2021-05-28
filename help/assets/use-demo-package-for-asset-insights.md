@@ -1,32 +1,31 @@
 ---
-title: Demo-pakket gebruiken voor Asset Insights
-description: Gebruik het demopakket om Adobe Asset Insights in staat te stellen gegevens vast te leggen van en inzichten te genereren voor een webpagina.
+title: Demo-pakket gebruiken voor elementinzichten
+description: Gebruik het demopakket om Adobe Assets Insights in staat te stellen gegevens vast te leggen van en inzichten te genereren voor een webpagina.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Asset Insights, Asset Reports
+exl-id: 13947513-da76-43e1-ae01-abd24a59752a
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
+# Demo-pakket gebruiken voor elementinzichten {#using-demo-package-for-asset-insights}
 
-# Demo-pakket gebruiken voor Asset Insights {#using-demo-package-for-asset-insights}
-
-Met behulp van het demopakket kunt u Adobe Asset Insights inschakelen om gegevens vast te leggen van en inzichten te genereren voor een voorbeeldwebpagina.
+Met behulp van het demopakket kunt u Adobe Assets Insights inschakelen om gegevens vast te leggen van en inzichten te genereren voor een voorbeeldwebpagina.
 
 ## [!DNL Use Experience Manager Assets] Inzichten met voorbeeldwebpagina   {#using-aem-assets-insights-with-sample-web-page}
 
-1. Elementinzichten configureren met behulp van de instructies in [Asset Insights](configure-asset-insights.md) configureren.
+1. Configureer Assets Insights met behulp van de instructies in [Assets Insights](configure-asset-insights.md) configureren.
 1. Download het pakket met voorbeeldmiddelen van beneden en installeer het pakket van CRXDE package manager.
 
-   [Bestand ophalen](assets/insightsdemo.zip)
+[Bestand ophalen](assets/insightsdemo.zip)
 
 1. Download het ZIP-bestand met de voorbeeldwebpagina hieronder en extraheer het naar uw lokale bestandssysteem.
 
-   [Bestand ophalen](assets/demosite.zip)
+[Bestand ophalen](assets/demosite.zip)
 
 1. Klik op de webpagina om deze te openen in de webbrowser.
 

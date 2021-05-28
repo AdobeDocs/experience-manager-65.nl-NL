@@ -1,32 +1,31 @@
 ---
-title: Asset Insights inschakelen via DTM
-description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
+title: Assets Insights inschakelen via DTM
+description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Elementen in te schakelen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Insights,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Asset Insights, Asset Reports
+exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
+# Assets Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
 
-# Asset Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
-
-Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt uw trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, of u kunt DTM gebruiken om labels voor Asset Insights in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
 >[!CAUTION]
 >
 >Adobe DTM is vervangen door [!DNL Adobe Experience Platform Launch] en zal binnenkort [einde van levensduur](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [gebruik [!DNL Launch] voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) te gebruiken.
 
-Voer deze stappen uit om Asset Insights in te schakelen via DTM.
+Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
 
 1. Klik op het logo van de Experience Manager en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Implementatie van Experience Managers configureren met DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt in het gebruikersprofiel. Deze stap is niet vereist vanuit het standpunt van de Inzichten van Activa, omdat de integratie van de Plaatsen van de Experience Manager met de Inzichten van Activa nog in de werken is.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** bezoekt in het gebruikersprofiel. Deze stap is niet vereist vanuit het standpunt van Activa Insights, omdat de integratie van Experience Manager Sites met Assets Insights nog steeds in de werkzaamheden plaatsvindt.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/) en selecteer een bedrijf.
 1. Een bestaande webeigenschap maken of openen
@@ -52,7 +51,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM.
    >
    >* `AppMeasurement.js` wordt verwijderd. Naar verwachting is het beschikbaar via het Adobe Analytics-hulpprogramma van DTM.
    >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
-   >* Afhankelijk van de plaats waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* In het geval van door Experience Managers gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
 

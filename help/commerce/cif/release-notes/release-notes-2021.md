@@ -1,11 +1,10 @@
 ---
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 9%
+source-wordcount: '648'
+ht-degree: 8%
 
 ---
 
@@ -15,13 +14,37 @@ ht-degree: 9%
 
 Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
 
-**CIF-invoegtoepassing is nu beschikbaar via  [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Migreer naar de nieuwe CIF-invoegtoepassing.**
+**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-op vervangen die op [de Distributie van de Software van de Adobe beschikbaar is ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
+
+* De meeste nieuwe functies zijn direct beschikbaar op AEM 6.5 (niet meer wachtend op zijpoort met functies)
+* Eenvoudig upgradebaar naar nieuwe invoegversies
+* Gereed voor Cloud Service
+
+De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Vervang de CIF-connector door de nieuwe CIF-invoegtoepassing. Voor de meeste projecten moet eenvoudig een pakketvervanging mogelijk zijn. **
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: Mei 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021,05,26 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF Core-componenten | 1.11.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
+| CIF Venia Reference Site | 2021,05,24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+
+### Wat is er nieuw?{#what-is-new-may}
+
+* Pagineringsondersteuning voor gekoppelde inhoud in eigenschappen van productconsole
+
+### Bugfixes {#bug-fixes-may}
+
+* Miniaturen van middelen worden niet weergegeven op het tabblad Middelen van de producteigenschappen
+
+* Breadcrumb herstelt voorvertoningsgegevens in productconsole
 
 ## Releasedatum: april 2021
 

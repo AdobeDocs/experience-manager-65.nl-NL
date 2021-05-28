@@ -7,14 +7,13 @@ uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
 contentOwner: jsyal
 discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 117208c634613559bb13556e12f094add70006e2
+exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
+source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
-
 
 # Veelgestelde vragen AEM {#aem-faqs}
 
@@ -94,17 +93,9 @@ Raadpleeg [Redenen voor upgrade AEM](https://helpx.adobe.com/experience-manager/
 
 Als de gebruiker, die de filmdossiers uploadt geen toestemmingen onder activaknoop schrapt, ontbreken de schrappingsbrokkenknopen en uploadt opnieuw begint.
 
-#### Wat is het maximumaantal digitale activa dat met AEM 6.4 tegelijk kan worden geëxploiteerd? {#what-is-the-maximum-number-of-digital-assets-that-can-be-operated-with-aem-at-a-time}
-
-Met Adobe Experience Manager (AEM) 6.5 kunt u momenteel maximaal 2 GB aan middelen tegelijk uploaden.
-
-Zie [Hulplijn voor het aanpassen van de grootte van elementen](/help/assets/assets-sizing-guide.md) voor meer informatie over het maximumaantal elementen dat met AEM 6.5 kan worden gebruikt.
-
 #### Wat zijn de standaardmontages voor configuraties OTB terwijl het creëren van het Exemplaar van de Taal? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Wanneer u taalkopieën maakt via een klassieke UI, worden Elementen niet onder de nieuwe taalhiërarchie geplaatst, maar vanuit de master taal gebruikt.
-
-Terwijl, wanneer u een taalexemplaar door Touch UI (**References** -> **Update Language Copy**) creeert, wordt een nieuwe omslag DAM gecreeerd onder de nieuwe taal en de activa van daar van verwijzingen voorzien.
+Wanneer u een taalexemplaar door Touch UI (**References** -> **Update Language Copy**) creeert, wordt een nieuwe omslag DAM gecreeerd onder de nieuwe taal en de activa worden van daar van verwijzingen voorzien.
 
 Dit is de standaardinstelling voor OOTB-configuraties. U kunt **Paginaelementen omzetten** = **Niet vertalen** in vertaalconfiguraties instellen.
 Voor AEM 6.4 **Tools** > **Cloud Services** > **Translation Cloud services**.
@@ -116,10 +107,6 @@ U kunt de Disabler van de Component OSGi onbruikbaar maken. Zie [OSGi Component 
 Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebruikersinterface of via een opdracht `curl` (voorbeeld hieronder), na elke AEM herstart.
 
 `curl -u admin:$(pass CQ_Admin) 'https://localhost:4502/system/console/components/com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporter' --data 'action=disable'`
-
-#### Hoe te om de Inzichten van Activa met AEM 6.5 instantie te vormen? {#how-to-configure-asset-insights-with-aem-instance}
-
-Als u Asset Insights voor Experience Manager via Adobe Activation (DTM) wilt instellen en configureren, ziet u hoe u Asset Insights [Asset Insights kunt instellen met AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 #### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
 
@@ -137,20 +124,8 @@ Raadpleeg [Eenvoudige handleiding voor zoekfuncties](https://helpx.adobe.com/exp
 
 De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek.
 
-#### Wat is het verschil tussen AEM Assets en AEM MediaLibrary? {#what-is-the-difference-between-aem-assets-and-aem-medialibrary}
-
-AEM Assets is een toepassing op het AEM-Platform waarmee onze klanten hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen beheren in een op het web gebaseerde opslagplaats, terwijl AEM Mediabibliotheek een aangewezen onderdeel is van de AEM WCM-inhoudsruimte waar afbeeldingen en andere gedeelde bronnen worden opgeslagen.
-
-Raadpleeg [AEM Assets vs. AEM MediaLibrary](/help/assets/medialibrary.md) voor meer informatie.
-
 #### Is het mogelijk om insteekmodule voor WordPress te bouwen die een klant toestaat om tot de Plukker van Activa van Adobe toegang te hebben om beelden te selecteren? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Ja, een klant die WordPress gebruikt, kan de Adobe Asset Picker gebruiken om afbeeldingen van zijn AEM Assets-server te selecteren en toe te voegen aan advertenties op zijn WordPress-site.
 
 Raadpleeg [Asset Selector](../assets/search-assets.md#assetpicker) voor meer informatie.
-
-#### Is het mogelijk om de zoekfacetten in AEM Assets uit te breiden om extra voorspellingen toe te voegen? {#is-it-possible-to-extend-the-search-facets-in-aem-assets-to-add-additional-predicates}
-
-Een bedrijfsbrede implementatie van Adobe Experience Manager (AEM) Assets heeft de capaciteit om vele activa op te slaan. U kunt voorspelden toevoegen aan het standaardformulier of een aangepast formulier gebruiken dat bepaalde facetten van uw keuze bevat.
-
-Raadpleeg [Facetten zoeken](/help/assets/search-facets.md) voor meer informatie.

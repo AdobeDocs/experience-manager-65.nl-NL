@@ -3,21 +3,15 @@ title: Aangepaste standalone installatie
 seo-title: Aangepaste standalone installatie
 description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
 seo-description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
-uuid: 83fc49d8-2c44-4bb2-988a-f29475066efc
-contentOwner: Tyler Rushton
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
-docset: aem65
-translation-type: tm+mt
-source-git-commit: 3f53945579eaf5de1ed0b071aa9cce30dded89f1
+exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
+source-git-commit: 3e18eed63d676e22e12483a1ee68e7e0148d8083
 workflow-type: tm+mt
 source-wordcount: '1623'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste standalone installatie{#custom-standalone-install}
 
@@ -54,7 +48,7 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 
 ### Java 11 Overwegingen {#java-considerations}
 
-Als u Oracle Java 11 uitvoert (of doorgaans versies van Java nieuwer dan 8), moeten extra switches aan uw opdrachtregel worden toegevoegd wanneer u AEM start.
+Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen AEM.
 
 * Het volgende - `-add-opens` schakelaars moet worden toegevoegd om verwante bezinning te verhinderen toegang WAARSCHUWING berichten in `stdout.log`
 
@@ -132,7 +126,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
-   * Typ in de opdrachtregel het begin cq5 van het netwerk.
+   * Typ in de opdrachtregel het begin cq5 van het net.
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 

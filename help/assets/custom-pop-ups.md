@@ -1,5 +1,5 @@
 ---
-title: Quickviews gebruiken om aangepaste pop-ups te maken
+title: Aangepaste pop-ups maken met Quickviews
 seo-title: Quickviews gebruiken om aangepaste pop-ups te maken
 description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 seo-description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
@@ -11,18 +11,17 @@ content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 2%
+source-wordcount: '1090'
+ht-degree: 1%
 
 ---
 
-
 # Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
-De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de kijker u gebruikt, laat deze functionaliteit gebruikers op hotspot, of een duimnagelbeeld, of op een beeldkaart klikken om informatie of verwante inhoud te zien.
+De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functie op een hotspot, een miniatuurafbeelding of op een afbeelding met hyperlinks tikken om informatie of verwante inhoud te zien.
 
 Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
 
@@ -32,7 +31,7 @@ Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**Quickviews gebruiken om aangepaste pop-ups te maken**
+**U kunt als volgt aangepaste pop-ups maken met Snelle weergaven:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
@@ -42,7 +41,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     <tbody>
     <tr>
     <td><strong>Viewer die u gebruikt</strong></td>
-    <td><strong>Voer de volgende stappen uit om de Snelle weergave te maken</strong></td>
+    <td><strong>Voer de volgende stappen uit als u de Snelle weergave wilt maken</strong></td>
     </tr>
     <tr>
     <td>Interactieve afbeeldingen</td>
@@ -65,7 +64,7 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
     <tbody>
     <tr>
     <td><strong>Viewer die u gebruikt</strong><br /> </td>
-    <td><strong>Voer de volgende stappen uit om de viewer te integreren met uw website</strong></td>
+    <td><strong>Voer de volgende stappen uit als u de viewer wilt integreren met uw website</strong></td>
     </tr>
     <tr>
     <td>Interactieve afbeelding</td>
@@ -84,10 +83,10 @@ Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het make
 
 1. De viewer die u nu gebruikt, moet weten hoe u de Snelle weergave kunt gebruiken.
 
-   Hiervoor gebruikt de viewer een handler met de naam `QuickViewActive`.
+   De viewer gebruikt een handler met de naam `QuickViewActive`.
 
    ****
-Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina voor een interactieve afbeelding:
+VoorbeeldStel dat u de volgende voorbeeldcode voor insluiten op uw webpagina gebruikt voor een interactieve afbeelding:
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -95,7 +94,7 @@ Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina 
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **Met behulp van het voorbeeld van de voorbeeldinsluitcode van bovenaf, hebben we de volgende code:**
+   **Met behulp van het voorbeeld van de voorbeeldinsluitcode hierboven, is er de volgende code:**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -115,7 +114,7 @@ Voorbeeld: u gebruikte de volgende voorbeeldcode voor insluiten op uw webpagina 
 
 1. U moet nu de `quickViewActivate` manager vormen.
 
-   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening evenals een steekproef `loadQuickView` functievraag wordt geplaatst.
+   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening en een steekproef `loadQuickView` functievraag wordt geplaatst.
 
    **Variabele**
 mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:
@@ -154,7 +153,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
       * Werk `loadQuickView(sku,*var1*,*var2*)` vraag bij als u extra variabelen toevoegt.
    * Maak een eenvoudige functie `loadQuickView` () op pagina, buiten de viewer.
 
-      In het volgende voorbeeld wordt de waarde van sku naar de browserconsole geschreven:
+      Bijvoorbeeld, schrijft het volgende de waarde van SKU aan de browser console:
 
    ```xml
    function loadQuickView(sku){
@@ -183,7 +182,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
 
 1. Plaats de pop-up `DIV` in het lichaam van uw HTML- pagina.
 
-   Één van de elementen wordt geplaatst met een identiteitskaart die met sku waarde wordt bijgewerkt wanneer de gebruiker een Snelle mening aanhaalt. Het voorbeeld bevat ook een eenvoudige knop waarmee u de pop-up weer kunt verbergen nadat deze zichtbaar is geworden.
+   Één van de elementen wordt geplaatst met een identiteitskaart die met waarde SKU wordt bijgewerkt wanneer de gebruiker een Snelle mening aanhaalt. Het voorbeeld bevat ook een eenvoudige knop waarmee u de pop-up weer kunt verbergen nadat deze zichtbaar is geworden.
 
    ```xml
    <div id="quickview_div" >
@@ -194,7 +193,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    </div>
    ```
 
-1. Voeg een functie toe om de sku-waarde in pop-up bij te werken; de pop-up zichtbaar maken door de eenvoudige functie te vervangen die in stap 5 wordt gecreeerd. met het volgende:
+1. Voeg een functie toe zodat u de waarde SKU in pop-up kunt bijwerken; de pop-up zichtbaar maken door de eenvoudige functie te vervangen die in stap 5 wordt gecreeerd. met het volgende:
 
    ```xml
    <script type="text/javascript">
@@ -210,7 +209,7 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
 
    Sommige viewers, zoals de Interactieve Video-viewer, ondersteunen weergave op volledig scherm. Als u de pop-up echter gebruikt zoals in de vorige stappen wordt beschreven, wordt deze achter de viewer weergegeven in de modus Volledig scherm.
 
-   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Hiervoor kunt u een tweede handlermethode gebruiken, `initComplete`.
+   Als u de pop-upweergave zowel in de standaardmodus als in de modus Volledig scherm wilt weergeven, koppelt u de pop-up aan de viewercontainer. Gebruik een tweede handlermethode, `initComplete`.
 
    De handler `initComplete` wordt aangeroepen nadat de viewer is geïnitialiseerd.
 
@@ -235,14 +234,14 @@ callThe manager vereist ook een functievraag voor QuickView om te werken. De fun
    }
    ```
 
-   In de bovenstaande code hebben we het volgende gedaan:
+   In de bovenstaande code is het volgende gedaan:
 
-   * Onze aangepaste pop-up geïdentificeerd.
+   * De aangepaste pop-up geïdentificeerd.
    * Verwijderd uit DOM.
    * De viewercontainer geïdentificeerd.
    * De pop-up is gekoppeld aan de viewercontainer.
 
-1. De gehele setHandlers-code moet er nu ongeveer als volgt uitzien (de interactieve videoviewer is gebruikt):
+1. De gehele setHandlers-code ziet er ongeveer als volgt uit (Interactive Video Viewer is gebruikt):
 
    ```xml
    s7interactivevideoviewer.setHandlers({
@@ -271,4 +270,3 @@ VoorbeeldIn dit voorbeeld wordt de interactieve afbeeldingsviewer gebruikt.
    `s7interactiveimageviewer.init()`
 
    Nadat u de viewer hebt ingesloten in uw hostpagina, moet u ervoor zorgen dat de viewerinstantie wordt gemaakt en dat de handlers worden geladen voordat de viewer wordt aangeroepen met `init()`.
-

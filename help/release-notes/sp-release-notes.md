@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 68928e251203f67faef498dc22f6d57ea141e748
+source-git-commit: 0f70c011cc192df0650c3ec666bae2c26653b444
 workflow-type: tm+mt
-source-wordcount: '3336'
+source-wordcount: '3338'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,9 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * Steun voor een nieuwe gebruiker om het toegangstoken te verfrissen gebruikend verfrist token voor de dienst van de brievenbusconfiguratie.
 
-* Steun voor mechanisme SMTP XOAUTH2 voor de dienst van de brievenbusconfiguratie.
+* Ondersteuning voor [!DNL SMTP XOAUTH2]-mechanisme voor mailerconfiguratieservice.
+
+* Ondersteuning voor [!DNL MongoDB] versies 4.2 en 4.4.
 
 * Namen die betrekking hebben op Hongkong, Macau en Taiwan worden bijgewerkt volgens de nieuwe naamconventies voor Chinese landinstellingen en regio&#39;s.
 

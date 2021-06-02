@@ -4,16 +4,15 @@ description: Meer informatie over toegankelijkheidsondersteuning in Dynamic Medi
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Accessibility
+feature: Toegankelijkheid
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
+source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '568'
 ht-degree: 0%
 
 ---
-
 
 # Toegankelijkheid in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
@@ -21,20 +20,20 @@ ht-degree: 0%
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in [!DNL Dynamic Media]
 
-Aangezien [!DNL Dynamic Media] een insteekmodule is voor [!DNL Adobe Experience Manager Assets], is het meeste gedrag voor toetsenbordbesturing hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] en reageert op de `Spacebar` toets als in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Aangezien [!DNL Dynamic Media] een insteekmodule is naar [!DNL Adobe Experience Manager Assets], is het meeste gedrag voor toetsenbordbesturing hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] en reageert op de `Spacebar` toets als in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die worden ondersteund door afzonderlijke elementen van de gebruikersinterface in [!DNL Dynamic Media] zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in [!DNL Dynamic Media] gaat over het volgende:
 
 * Mogelijkheid om met de toetsen `Tab` en `Shift+Tab` te navigeren tussen interactieve elementen op de pagina.
 Wanneer u `Tab` gebruikt, wordt de invoerfocus naar het volgende interface-element in de tabvolgorde verplaatst. wanneer u `Shift+Tab` gebruikt, krijgt het vorige gebruikersinterface-element weer focus.
 Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` drukken om de focus naar het veld te verplaatsen.
-* Mogelijkheid om de `Spacebar` en `Enter` sleutel te gebruiken om standaardelementen van de gebruikersinterface, zoals knopen, drop-down lijst, etc. te activeren.
-* Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het gebruikersinterface-element dat invoerfocus heeft, krijgt mogelijk een visuele focusindicatie als een rand die rondom het interface-element wordt weergegeven.
+* Mogelijkheid om de `Spacebar` en `Enter` sleutel te gebruiken om standaardelementen van de gebruikersinterface, zoals knopen en drop-down lijsten te activeren.
+* Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het element van de gebruikersinterface dat inputnadruk heeft ontvangt een visuele nadrukaanwijzing als grens die rond het gebruikersinterface element wordt teruggegeven.
 * In de Hotspot-editor kunt u bepaalde aangepaste toetsaanslagen gebruiken, zoals pijltoetsen, om te communiceren met complexe gebruikersinterface-elementen om hotspots te verplaatsen.
-* In de Interactieve Video redacteur, kunt u `Spacebar` gebruiken om een beeld te selecteren en het toe te voegen aan een segment. Bovendien kunt u de `Backspace` toets gebruiken om het geselecteerde punt van **[!UICONTROL Content]** tabel te schrappen. Als u `Tab` ingedrukt houdt, kunt u ook naar wens navigeren tussen interactieve elementen op de pagina.
-* In de redacteur van het Gewas van het Beeld/van het Slim Gewas, hebt u de capaciteit om het volgende te doen:
-   * Gebruik de pijltoetsen om de framegrootte bij te snijden of om de positie van de afbeelding of van beide te wijzigen.
-   * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het frame opnieuw plaatsen met de pijltoetsen op het toetsenbord.
+* In de Interactieve Video redacteur, kunt u `Spacebar` gebruiken om een beeld te selecteren en het toe te voegen aan een segment. Bovendien kunt u de `Backspace` sleutel gebruiken om het geselecteerde punt van **[!UICONTROL Content]** tabel te schrappen. Als u `Tab` ingedrukt houdt, kunt u ook naar wens navigeren tussen interactieve elementen op de pagina.
+* In de redacteur van het Gewas van het Beeld/van het Slim Gewas, kunt u het volgende doen:
+   * Gebruik de pijltoetsen om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
+   * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
    * De volgende vier `Tab` einden zijn de vier hoeken van het kader. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
 Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 

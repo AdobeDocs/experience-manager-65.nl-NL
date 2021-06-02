@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: e33a4f197c0deb2457237aac1c1e31093c89adef
+source-git-commit: 68928e251203f67faef498dc22f6d57ea141e748
 workflow-type: tm+mt
-source-wordcount: '3328'
+source-wordcount: '3336'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Voor een volledige lijst van eigenschappen en verhogingen die in [!DNL Experienc
 >Vanaf AEM Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager]-toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu]-builds van OpenJDK, die voldoen aan de standaarden van Java SE.
 >Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
 >U kunt de relevante versies van [!DNL Azul Zulu JDKs] van [de Distributie van de Software van de Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende veelgestelde vragen voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
+>De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
 
 Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience Manager] 6.5.9.0-release.
 

@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
-translation-type: tm+mt
-source-git-commit: 0362be4d78fa39ac73c9be5dd5d08ccfebd21edc
+exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
-
 
 # De videocomponent {#configure-the-video-component} configureren
 
@@ -82,7 +81,7 @@ Ga als volgt te werk om AEM **te configureren:**
    >
    >Bedek en bewerk het gehele profielknooppunt en niet alleen de eigenschap die moet worden gewijzigd. Dergelijke middelen worden niet opgelost via SlingResourceMerger.
 
-4. Als u een van de eigenschappen hebt gewijzigd, klikt u op **[!UICONTROL Save All.]**
+4. Als u een van de eigenschappen hebt gewijzigd, klikt u op **[!UICONTROL Save All]**.
 
 >[!NOTE]
 >

@@ -7,16 +7,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
-feature: Viewer Presets
+feature: Voorinstellingen viewer
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 13%
+source-wordcount: '214'
+ht-degree: 23%
 
 ---
-
 
 # Voorinstellingen voor Dynamic Media-viewers {#applying-viewer-presets} toepassen
 
@@ -31,12 +30,12 @@ Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media
 
 ## Een Dynamic Media-viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
-1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers.]**
+1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
-   * Het systeem bevat een groot aantal voorinstellingen voor viewers wanneer u Viewers selecteert in het **[!UICONTROL Detail View.]** van een element. U kunt het aantal zichtbare voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
+   * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
 
 1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 

@@ -5,7 +5,7 @@ contentOwner: AG
 role: Business Practitioner
 feature: Middelenbeheer, middelenverdeling
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: 92983232216a5c7c563ebddc3baf6fcd81aaa4e2
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 1%
@@ -22,13 +22,13 @@ U kunt elementen downloaden, zoals statische en dynamische uitvoeringen. U kunt 
 
 De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets kunnen niet worden gedownload.
 
-Voer de volgende stappen uit om elementen te downloaden:
+**Voer de volgende stappen uit om elementen te downloaden:**
 
 1. Klik in de linkerbovenhoek op het logo. Klik in de linkertrack op **[!UICONTROL Navigation]**.
-1. Ga naar de pagina [!UICONTROL Navigation] en klik op **[!UICONTROL Assets]** > **[!UICONTROL Files.]**
+1. Ga naar de pagina [!UICONTROL Navigation] en klik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Navigeer naar een map die elementen bevat die u wilt downloaden.
 1. Selecteer de map of selecteer een of meer middelen in de map.
-1. Klik op **[!UICONTROL Download.]** op de werkbalk
+1. Klik op **[!UICONTROL Download]** op de werkbalk.
 
    ![Beschikbare opties voor het downloaden van Experience Manager-elementen](/help/assets/assets/asset-download1.png)
 
@@ -45,7 +45,7 @@ Voer de volgende stappen uit om elementen te downloaden:
    | **[!UICONTROL Smart Crops]** | Selecteer deze optie als u alle slimme uitsnijduitvoeringen van het geselecteerde element vanuit AEM wilt downloaden. Er wordt een ZIP-bestand met de Smart Crop-uitvoeringen gemaakt en gedownload naar uw lokale computer. |
    | **[!UICONTROL Dynamic Rendition(s)]** | Selecteer deze optie als u een reeks alternatieve vertoningen in real-time wilt genereren. Wanneer u deze optie selecteert, selecteert u ook de uitvoeringen die u dynamisch wilt maken door een optie te selecteren in de lijst [Voorinstelling afbeelding](image-presets.md). <br>Bovendien kunt u de grootte en maateenheid, de indeling, de kleurruimte, de resolutie en eventuele optionele afbeeldingsaanpassingen selecteren, zoals het omkeren van de afbeelding. De optie is alleen beschikbaar als u [!DNL Dynamic Media] hebt ingeschakeld. |
 
-1. Klik in het dialoogvenster op **[!UICONTROL Download.]**.
+1. Klik in het dialoogvenster op **[!UICONTROL Download]**.
 
 Wanneer u een map selecteert om te downloaden, wordt de volledige elementenhiërarchie onder de map gedownload. Selecteer **[!UICONTROL Create separate folder for each asset]** als u elk element dat u downloadt (inclusief elementen in onderliggende mappen die onder de bovenliggende map zijn genest), in een afzonderlijke map wilt opnemen.
 

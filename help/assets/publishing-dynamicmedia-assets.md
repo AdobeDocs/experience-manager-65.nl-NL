@@ -9,9 +9,8 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
-feature: Publishing
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Publiceren
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
@@ -20,7 +19,7 @@ ht-degree: 2%
 
 # Dynamic Media-middelen {#publishing-dynamic-media-assets} publiceren
 
-U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish.]** te tikken Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze als URL in een webpagina opnemen of door de code op de pagina in te sluiten.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze gebruiken om op een webpagina in te voegen via een URL of door de code in te sluiten op de pagina.
 
 U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie [De modus Dynamic Media configureren - Scene7.](config-dms7.md)
 Of u kunt selectief elementen publiceren naar Dynamic Media of AEM, elkaar wederzijds uitsluiten, met behulp van  **[!UICONTROL Selective Publish]** op mapniveau. Zie [Werken met Selectieve publicatie in Dynamic Media.](/help/assets/selective-publishing.md)

@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 3%
 
 ---
-
 
 # Dynamic Media-assets aan pagina&#39;s toevoegen{#adding-dynamic-media-assets-to-pages}
 
@@ -44,7 +43,7 @@ Een Dynamic Media-component/viewer toevoegen aan een pagina:
 
 ## Dynamic Media-componenten {#dynamic-media-components}
 
-[!UICONTROL Dynamic Media] en  [!UICONTROL Interactive Media] zijn beschikbaar in het  [!UICONTROL Sidekick] gedeelte  **[!UICONTROL Dynamic Media.]** U gebruikt de  **[!UICONTROL Interactive Media]** component voor interactieve elementen, zoals interactieve video, interactieve afbeeldingen of carrouselsets. Voor alle andere Dynamic Media-componenten gebruikt u de **[!UICONTROL Dynamic Media]**-component.
+[!UICONTROL Dynamic Media] en  [!UICONTROL Interactive Media] zijn beschikbaar in het  [!UICONTROL Sidekick] volgende  **[!UICONTROL Dynamic Media]**. U gebruikt de component **[!UICONTROL Interactive Media]** voor alle interactieve elementen, zoals interactieve video, interactieve afbeeldingen of carrouselsets. Voor alle andere Dynamic Media-componenten gebruikt u de **[!UICONTROL Dynamic Media]**-component.
 
 ![chlimage_1-71](assets/chlimage_1-71a.png)
 

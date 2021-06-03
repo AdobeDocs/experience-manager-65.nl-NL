@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: f786b35e77c6b862f7fc6e45d3d0af56a51e3e95
+exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 1%
 
 ---
-
 
 # Veelgestelde vragen over HTTP2-levering van content{#http-delivery-of-content-faq}
 
@@ -57,13 +56,13 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
    * Primaire contactpersoon, e-mail en telefoonnummer.
    * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`.
 
-      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts. Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoeken naar het veld met het label **[!UICONTROL Published Server Name.]**
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts. Tik vervolgens op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**.
 
    * Controleer of u beveiligde HTTPS gebruikt voor aanvragen voor rich media.
    * Verifieer u CDN door Adobe gebruikt en niet beheerd met een directe verhouding.
    * Controleer of u een specifiek domein gebruikt. Dat wil zeggen: `images.company.com` of `mycompany.scene7.com`, geen algemeen Dynamic Media-domein zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts. Tik vervolgens op **[!UICONTROL Setup > Application Setup > General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name.]** Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u als onderdeel van deze overgang naar uw eigen aangepaste domein gaat.
+      Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts. Tik vervolgens op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
 1. Wanneer Adobe klaar is om uw verzoek te behandelen, zal de Steun u contacteren om de overgang te coördineren en een doeldatum te plaatsen.
@@ -85,4 +84,4 @@ De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opges
 
 ## Hoe kunt u controleren of een URL of website met HTTP/2 wordt geactiveerd? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-U moet een externsie downloaden om met uw browser van het Web te gebruiken. Voor Firefox en Chrome is er een uitbreiding genoemd **[!UICONTROL HTTP/2 and SPDY Indicator.]** Browsers steunt slechts veilig HTTP/2, zodat is het noodzakelijk om een URL met HTTPS te roepen om te verifiëren. Wanneer HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+U moet een externsie downloaden om met uw browser van het Web te gebruiken. Voor Firefox en Chrome is er een extensie met de naam **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Wanneer HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.

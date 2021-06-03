@@ -9,15 +9,14 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: Business Practitioner, Administrator
-feature: Workflow,Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Workflow,middelenbeheer,uitvoeringen
+exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1322'
 ht-degree: 1%
 
 ---
-
 
 # Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s{#profiles-for-processing-metadata-images-and-videos}
 
@@ -77,33 +76,33 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
    * Als er een of meer submappen met elementen in de geselecteerde hoofdmap staan, wordt elk element in de mappenhiërarchie opnieuw verwerkt.
    * U kunt het beste deze workflow niet uitvoeren in een mappenhiërarchie met meer dan 1000 elementen.
 
-1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Timeline.]**
+1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Timeline]**.
 1. Klik in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, op het karatpictogram ( **^** ).
 
    ![Workflow 1 voor opnieuw verwerken van middelen](/help/assets/assets/reprocess-assets1.png)
 
-1. Klik op **[!UICONTROL Start Workflow.]**
-1. Kies **[!UICONTROL Scene7: Reprocess Assets.]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]**
+1. Klik op **[!UICONTROL Start Workflow]**.
+1. Kies **[!UICONTROL Scene7: Reprocess Assets]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]**.
 1. (Optioneel) Voer in het tekstveld **Voer een titel van de workflow in** een naam voor de workflow in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
    ![Activa opnieuw verwerken 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm.]**
+1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
 
-   Om de werkstroom te controleren of zijn vooruitgang te controleren, van de AEM belangrijkste consolepagina, klik **[!UICONTROL Tools > Workflow.]** op de pagina van de Instanties van het Werkschema, selecteer een werkschema. Klik in de menubalk op **[!UICONTROL Open History.]** U kunt een geselecteerde workflow ook beëindigen, opschorten of de naam ervan wijzigen via dezelfde pagina Workflowinstanties.
+   Als u de workflow wilt controleren of de voortgang wilt controleren, klikt u op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** op de AEM hoofdconsolepagina. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
 (Optioneel) De standaardbatch-grootte in de opwerkingsworkflow is 50 elementen per taak. Deze optimale omvang van de partij wordt bepaald door de gemiddelde omvang van de activa en de MIME-typen van activa waarop het herproces wordt uitgevoerd. Een hogere waarde betekent dat u veel bestanden in één herverwerkingstaak hebt. De verwerkingsbanner blijft daarom langer op AEM middelen staan. Als de gemiddelde bestandsgrootte echter klein-1 MB of kleiner-Adobe is, wordt u aangeraden de waarde te verhogen tot honderden, maar nooit meer dan 1000. Als het gemiddelde bestand groot-honderden megabytes-Adobe is, kunt u het beste de batch tot 10 verkleinen.
 
-**De batchgrootte van de workflow voor opnieuw verwerken optioneel aanpassen**
+**U kunt de batchgrootte van de workflow voor opnieuw verwerken desgewenst aanpassen:**
 
-1. Klik in Experience Manager op **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en klik vervolgens op **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow > Models.]**
+1. Klik in Experience Manager op **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en klik vervolgens op het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Voor de pagina van de Modellen van het Werkschema, in de Mening van de Kaart of de Mening van de Lijst, selecteer **[!UICONTROL Scene7: Reprocess Assets]**.
 
    ![Pagina Workflowmodellen met Scene7: Workflow voor opnieuw verwerken van middelen die zijn geselecteerd in Kaartweergave](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klik op **[!UICONTROL Edit.]** Een nieuw browsertabblad opent de Scene7: Modelpagina voor middelenwerkstroom opnieuw verwerken.
+1. Klik op **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
 1. Op de Scene7: Klik in de rechterbovenhoek op **[!UICONTROL Edit]** om de workflow te ontgrendelen.
 1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en klik vervolgens op **[!UICONTROL Configure]** op de werkbalk.
 
@@ -128,7 +127,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 1. Sluit het browsertabblad waarin de Scene7 wordt weergegeven: Workflowmodel voor opnieuw verwerken van middelen.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite.]**
+1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +138,10 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add.]** The new property appears as the following:
+1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All.]**
+1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main AEM console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->

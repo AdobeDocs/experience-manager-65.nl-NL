@@ -10,9 +10,8 @@ discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
-feature: Troubleshooting
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Problemen oplossen
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
@@ -33,7 +32,7 @@ Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende 
 
    Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
 
-* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations.]** verschijnt
+* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations]** verschijnt.
 * Zorg ervoor dat `Dynamic Media Asset Activation (scene7)` replicatieagent wordt toegelaten.
 
    Deze replicatieagent wordt gevonden onder Medewerkers op Auteur.

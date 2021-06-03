@@ -9,24 +9,23 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: Business Practitioner, Administrator
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Samenwerking, beheer van bedrijfsmiddelen
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 6%
+source-wordcount: '423'
+ht-degree: 7%
 
 ---
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
->[!NOTE]
+<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->Een communautair artikel is beschikbaar op [Werken met Adobe Experience Manager en Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## Wat u kunt doen met Dynamic Media {#what-you-can-do-with-dynamic-media}
 
@@ -51,7 +50,7 @@ Zie ook [Dynamic Media](administering-dynamic-media.md) instellen.
 
 >[!NOTE]
 >
->Zie [Klassieke Dynamic Media-integratie versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) voor meer informatie over de verschillen tussen het gebruik van Dynamic Media en het integreren van Dynamic Media Classic met AEM.
+>Zie [Klassieke Dynamic Media-integratie versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media) voor meer informatie over de verschillen tussen het gebruik van Dynamic Media en het integreren van Dynamic Media Classic met Adobe Experience Manager.
 
 ## Dynamic Media ingeschakeld en Dynamic Media uitgeschakeld {#dynamic-media-on-versus-dynamic-media-off}
 

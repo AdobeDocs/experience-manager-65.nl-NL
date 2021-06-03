@@ -11,8 +11,7 @@ docset: aem65
 feature: Interactieve video's
 role: Business Practitioner, Administrator
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '6015'
 ht-degree: 4%
@@ -53,7 +52,8 @@ Bekijk een analyse van 7 minuten en 30 seconden over [hoe interactieve video&#39
 De webinar ‘Interactive Video, Link Sharing en YouTube sharing gebruiken in AEM Assets’ leert u hoe u interactieve video en andere functies kunt gebruiken om conversie-gebeurtenissen te koppelen aan uw video marketing inhoud.
 
 >[!NOTE]
-[Interactieve video gebruiken, koppelingen delen en YouTube delen in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
+>
+>[Interactieve video gebruiken, koppelingen delen en YouTube delen in AEM Assets](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/).
 
 ## Snel starten: Interactieve video&#39;s {#quick-start-interactive-videos}
 
@@ -96,10 +96,14 @@ Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactie
 ## (Optioneel) Quickview-variabelen identificeren {#optional-identifying-quickview-variables}
 
 >[!NOTE]
-Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
-* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen in werking te stellen.
-* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. Zie [eCommerce-concepten in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
+>
+>Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
+>
+>* U wilt interactiviteit aan uw video toevoegen door aan Snelle meningen in werking te stellen.
+>* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. Zie [eCommerce-concepten in AEM Assets](/help/commerce/cif-classic/administering/concepts.md).
 
+>
+>
 Als uw implementatie van AEM eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u productduimnagels aan hun overeenkomstige productSnelle mening tijdens het interactieve videoaanmaakproces kunt in kaart brengen.
@@ -259,10 +263,12 @@ Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe bin
 Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
-Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve video niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+>
+>Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve video niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 >[!NOTE]
-De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
+>
+>De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met AEM Sites pagina&#39;s heeft.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
@@ -273,11 +279,11 @@ Om interactiviteit aan uw video toe te voegen:
 1. Navigeer in de weergave Elementen naar de video die u hebt geüpload en maak een interactieve video.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit.]** op de werkbalk
+   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
-   * Houd de muis boven de afbeelding en tik **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL > Edit.]**
+   * Tik op **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL > Edit]**.
 
-   * Tik op de afbeelding om deze te openen in de detailweergave. Tik op **[!UICONTROL Edit.]** op de werkbalk
+   * Tik op de afbeelding om deze te openen in de detailweergave. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
 1. Voer op de pagina Interactieve video maken een van de volgende handelingen uit:
 
@@ -285,7 +291,7 @@ Om interactiviteit aan uw video toe te voegen:
 
       Voor elk tijdsegment dat u toevoegt, kunt u er een of meer miniatuurafbeeldingen aan toewijzen en deze miniaturen vervolgens koppelen aan de productpagina&#39;s van de Snelle weergave die klanten kunnen kopen of aan webpagina&#39;s voor meer informatie.
 
-   * Tik op de knop **[!UICONTROL Play]** om de video af te spelen. Tik **[!UICONTROL Pause.]** op **[!UICONTROL Add Segment.]** wanneer een bepaald product, een bepaalde service of een bepaald detail dat u wilt markeren, in beeld komt
+   * Tik op de knop **[!UICONTROL Play]** om de video af te spelen. Tik op **[!UICONTROL Pause]** wanneer een bepaald product, een bepaalde service of een bepaald detail dat u wilt markeren in beeld komt. Tik op **[!UICONTROL Add Segment]**.
 
       Ga door met het afspelen en pauzeren van de video op punten langs de tijdlijn waar u een segment wilt toevoegen totdat u het einde van de video hebt bereikt.
 
@@ -364,9 +370,9 @@ Om interactiviteit aan uw video toe te voegen:
 
    * Een segment verwijderen
 
-      Selecteer het laatste segment in de tijdlijn en tik **[!UICONTROL Delete Segment.]** op de werkbalk als er twee of meer segmenten zijn geselecteerd, is de functie Segment verwijderen uitgeschakeld.
+      Selecteer het laatste segment dat zich op de tijdlijn bevindt en tik op **[!UICONTROL Delete Segment]** op de werkbalk. Als twee of meer segmenten zijn geselecteerd, is de functie Segment verwijderen uitgeschakeld.
 
-      U kunt alleen het laatste segment verwijderen. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens op **[!UICONTROL Delete Segment.]** tikken
+      U kunt alleen het laatste segment verwijderen. Als u bijvoorbeeld alle segmenten op de tijdlijn wilt verwijderen, moet u altijd de laatste selecteren en vervolgens op **[!UICONTROL Delete Segment]** tikken.
 
 
 1. Selecteer een tijdsegment waaraan u een of meer miniatuurafbeeldingen wilt koppelen.
@@ -480,10 +486,11 @@ Om interactiviteit aan uw video toe te voegen:
 
    Als u uw eigen voorinstelling voor de interactieve videoviewer hebt gemaakt, wordt deze ook weergegeven in de lijst met voorinstellingen waaruit u kunt kiezen.
 
-   Tik **[!UICONTROL Save.]** als u klaar bent
+   Tik **[!UICONTROL Save]** als u klaar bent.
 
    >[!NOTE]
-   Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. Het `.vtt`-bestand wordt opgeslagen in de map `_VTT` in de hoofdmap van **[!UICONTROL Assets.]**. Het bestand en de map zijn nodig om de interactieve video correct op uw website af te spelen. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
+   >
+   >Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. Het `.vtt`-bestand wordt opgeslagen in de map `_VTT` die zich in de hoofdmap van **[!UICONTROL Assets]** bevindt. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
 
 1. Publiceer de interactieve video. Bij het publiceren wordt de insluitcode of URL gemaakt die u uiteindelijk naar uw website gaat kopiëren en plakken.
 
@@ -492,7 +499,8 @@ Om interactiviteit aan uw video toe te voegen:
    Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   Als u een schokkende video met Quickviews wilt publiceren, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
+   >
+   >Als u een schokkende video met Quickviews wilt publiceren, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
    Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website.](#integrating-an-interactive-video-with-your-website)
 
@@ -517,8 +525,10 @@ Als u interactiviteit met Snelle meningen toevoegde, gebruik slechts de ingebedc
 De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch past in het gebied dat eerder door de statische video werd ingenomen.
 
 >[!NOTE]
-Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
-Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. ze zijn nog niet geïntegreerd met uw bestaande QuickView. In dat geval moet u nu de interactieve video integreren met bestaande QuickView op uw website.
+>
+>Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
+>
+>Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. ze zijn nog niet geïntegreerd met uw bestaande QuickView. In dat geval moet u nu de interactieve video integreren met bestaande QuickView op uw website.
 
 **Voorbeeld**
 
@@ -560,7 +570,8 @@ Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het v
 ## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
-Deze taak is alleen van toepassing als u een zelfstandige AEM Assets-klant bent.
+>
+>Deze taak is alleen van toepassing als u een zelfstandige AEM Assets-klant bent.
 
 De laatste stap in dit proces is uw interactieve video te integreren met een bestaande implementatie van de Snelle mening die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quickview-implementatie is uniek. Daarom is een specifieke aanpak nodig, die hoogstwaarschijnlijk de hulp van een front-end IT-persoon omvat.
 

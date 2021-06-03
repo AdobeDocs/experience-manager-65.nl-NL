@@ -7,9 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
-feature: CDN Cache
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: CDN-cache
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
@@ -34,7 +33,7 @@ Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-
 
 *Deel 1 van 2: Een CDN-validatiesjabloon maken*
 
-1. Tik in Experience Manager 6.5.6 of hoger op **[!UICONTROL Tools > Assets > CDN Invalidation.]**
+1. Tik in Experience Manager 6.5.6 of hoger op **[!UICONTROL Tools > Assets > CDN Invalidation]**.
 
    ![Functie voor CDN-validatie](/help/assets/assets-dm/cdn-invalidation-template2.png)
 
@@ -47,10 +46,12 @@ Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-
 
    ![CDN-validatiesjabloon - maken](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL CDN Invalidation template]** op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK.]**<br>   *Deel 2 van 2: Opties voor CDN-validatie instellen*
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL CDN Invalidation template]** op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL OK]**.<br>
+
+   *Deel 2 van 2: Opties voor CDN-validatie instellen*
    <br>
 
-1. Tik in Experience Manager als Cloud Service op **[!UICONTROL Tools > Assets > CDN Invalidation.]**
+1. Tik in Experience Manager als Cloud Service op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
 
    ![Functie voor CDN-validatie](/help/assets/assets-dm/cdn-invalidation-path2.png)
 
@@ -70,7 +71,7 @@ Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-
    | **[!UICONTROL Add Assets]** | Gebruik de elementkiezer om elementen te selecteren die u ongeldig wilt maken. U kunt gepubliceerde of niet-gepubliceerde elementen selecteren.<br>Het in cache plaatsen van de CDN is gebaseerd op URL en niet op elementen. Daarom is het noodzakelijk dat u op de hoogte bent van de volledige URL&#39;s die op uw website staan. Nadat u deze URL&#39;s hebt bepaald, kunt u ze aan de sjabloon toevoegen. Vervolgens kunt u deze elementen selecteren en toevoegen en de URL&#39;s in één stap ongeldig maken. <br>Gebruik deze optie met  **[!UICONTROL Invalidate asset associated image presets in CDN]**, of  **[!UICONTROL Invalidation based on template]**, of allebei. |
    | **[!UICONTROL Add URL]** | Voeg handmatig volledige URL-paden toe of plak deze naar Dynamic Media-elementen waarvan u de CDN-cache wilt ongeldig maken. Gebruik deze optie als u geen CDN-validatiesjabloon hebt gemaakt in ***deel 1 van 2: Creërend een CDN Validatiesjabloon***, en heeft slechts een paar activa om ongeldig te maken.<br>**Belangrijk:** elke URL die u toevoegt, moet op een aparte regel staan.<br>U kunt maximaal 1000 URL&#39;s op een bepaald moment ongeldig maken. Als het aantal URL&#39;s in het tekstveld **[!UICONTROL Add URL]** groter is dan 1000, kunt u niet op **[!UICONTROL Next]** tikken. In dergelijke gevallen moet u **[!UICONTROL X]** rechts van een geselecteerd element tikken of een handmatig toegevoegde URL om het element uit de lijst met validaties te verwijderen.<br>Geef URL&#39;s voor slimme afbeeldingsgewassen op in de CDN-validatiesjabloon of in dit  **[!UICONTROL Add URL]** tekstveld. |
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Next.]**
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Next]**.
 1. Op de **[!UICONTROL CDN Invalidation - Confirm]** pagina, in **[!UICONTROL URLs]** lijstvakje, kunt u een lijst van één of meerdere URLs zien die van het Malplaatje van de Bevestiging CDN wordt geproduceerd u vroeger en de activa u enkel toevoegde.
 
    Als u bijvoorbeeld het voorbeeld voor de CDN-validatiesjabloon gebruikt dat eerder in de stappen werd weergegeven, kunt u een enkel element met de naam `spinset` toevoegen. Wanneer u op **[!UICONTROL Tools > Assets > CDN Invalidation]** tikt, resulteert dit in de volgende vijf gegenereerde URL&#39;s in de gebruikersinterface **[!UICONTROL CDN Invalidation - Confirm]**:
@@ -90,7 +91,7 @@ In alle gevallen wordt de gehele batch voor ongeldigmaking verwerkt of is de hel
 | *Kan URL&#39;s voor geselecteerde elementen niet ophalen.* | Komt voor als om het even welke volgende scenario&#39;s worden ontmoet:<br> - een configuratie van Dynamic Media wordt niet gevonden.<br>- Er is een uitzondering bij het ophalen van een servicegebruiker via welke de Dynamic Media-configuratie wordt gelezen.<br>- De publicatieserver of de hoofdmap van het bedrijf die wordt gebruikt om de URL&#39;s te maken, ontbreekt in de Dynamic Media-configuratie. |
 | *Sommige URL&#39;s zijn niet correct gedefinieerd. Juist en opnieuw verzenden.* | Komt voor als IPS CDN geheim voorgeheugenbevestiging API een fout terugkeert die URL naar een verschillend bedrijf verwijst. Of als de URL niet geldig is volgens de validatie die wordt uitgevoerd door de IPS `cdnCacheInvalidation`-API. |
 | *Kan de CDN-cache niet ongeldig maken.* | Komt voor als het CDN verzoek van de geheim voorgeheugenongeldigverklaring om een andere reden ontbreekt. |
-| *Er zijn geen URL&#39;s ingevoerd om ongeldig te worden gemaakt.* | Vindt plaats als er geen URL&#39;s aanwezig zijn op de pagina **[!UICONTROL CDN Invalidation - Confirm]** en u tikt op **[!UICONTROL Submit.]** |
+| *Er zijn geen URL&#39;s ingevoerd om ongeldig te worden gemaakt.* | Komt voor als er geen URLs aanwezig in **[!UICONTROL CDN Invalidation - Confirm]** pagina zijn, en u tikt **[!UICONTROL Submit]**. |
 
 
 <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

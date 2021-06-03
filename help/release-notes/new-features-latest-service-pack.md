@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: f0398d63aa7d9c994c56217cce52b3fb4de04769
+source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3674'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,13 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] 6.5 De Pakken van de Dienst verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
 In dit artikel worden de functies beschreven die zijn opgenomen in het meest recente Service Pack, [belangrijke functies die zijn opgenomen in de vorige 6.5 Service Packs](#key-features-previous-service-packs) en de [belangrijke releases sinds de laatste release van Service Pack](#key-releases-since-last-sp).
+
+>[!NOTE]
+>
+>Vanaf AEM Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager]-toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu]-builds van OpenJDK, die voldoen aan de standaarden van Java SE.
+>Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
+>U kunt de relevante versies van [!DNL Azul Zulu JDKs] van [de Distributie van de Software van de Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -78,6 +85,36 @@ U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen 
 >[!NOTE]
 >
 >Het add-on pakket van [!DNL Experience Manager Forms] wordt een week na de geplande [!DNL Experience Manager] Service Pack-release beschikbaar gesteld.
+
+### Ondersteuning voor [!DNL Azul Zulu OpenJDK] {#support-azul-zulu}
+
+U kunt nu toepassingen ontwikkelen en gebruiken met [!DNL Azul Zulu] builds van [!DNL OpenJDK] voor [!DNL Experience Manager Forms] op OSGi-implementaties. Zie [Opmerkingen bij de release van Experience Manager 6.5 Service Pack 9](sp-release-notes.md) en [Technische vereisten](../sites-deploying/technical-requirements.md) voor meer informatie.
+
+### Mogelijkheid om een bericht-e-mail naar een groep te verzenden met [!UICONTROL Assign Task] {#group-notification-email}
+
+U kunt nu een e-mailbericht naar een groep e-mailadres verzenden met de workflowstap Taak toewijzen.
+
+### Capaciteit om een Interactief Communicatie ontwerp terug te winnen na het wijzigen van de bron Interactieve Communicatie {#retrieve-draft-after-source-modifications}
+
+U kunt nu een interactieve mededeling terugwinnen die als ontwerp wordt bewaard nadat u veranderingen in de bron Interactieve Communicatie aanbrengt.
+
+### Aangepaste domeinnaam instellen voor het laden, renderen en valideren van de reCAPTCHA-service {#set-custom-domain-name-recaptcha}
+
+reCAPTCHA-service gebruikt `https://www.recaptcha.net/` als het standaarddomein. U kunt nu de instellingen wijzigen om `https://www.google.com/` of een aangepaste domeinnaam in te stellen voor het laden, renderen en valideren van de reCAPTCHA-service.
+
+### Verbeteringen van invoergegevens voor [!UICONTROL Invoke Form Data Model Service]-workflowstap {#input-data-enhancements-fdm}
+
+Wanneer u een formuliergegevensmodel en een service selecteert in de workflowstap [!UICONTROL Invoke Form Data Model Service], geeft u serviceargumenten op voor invoergegevens.
+
+Als u [!UICONTROL Relative to Payload] optie selecteert om een dossier als de dienstargument vast te maken, kunt u nu de omslagweg specificeren die het dossier in plaats van de daadwerkelijke dossiernaam bevat. Als u de mapnaam definieert in plaats van de naam van de bestandsbijlage, kunt u workflowmodellen opnieuw gebruiken. U beperkt het workflowmodel niet tot één bestandsnaam voor bijlagen.
+
+### Mogelijkheid om meerdere master pagina&#39;s te gebruiken in een documentsjabloon {#use-multiple-master-pages-dor-template}
+
+U kunt nu meerdere master pagina&#39;s gebruiken in een document met een recordsjabloon. Hierdoor kunt u nu verschillende koptekst-, voettekst-, lettertypen- en logogegevens op de titelpagina en andere pagina&#39;s van de sjabloon plaatsen.
+
+### Pagina-einden in document van record {#support-page-breaks-dor} ondersteunen
+
+U kunt nu pagina-einden toevoegen aan een Document of Record. Als een deelvenster pagina&#39;s afbreekt, kunt u daarom een pagina-einde toevoegen om het deelvenster te verplaatsen naar een nieuwe pagina in een document met records.
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 

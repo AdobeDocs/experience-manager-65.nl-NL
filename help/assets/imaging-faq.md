@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Middelenbeheer, uitvoeringen
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: d407162e18f85f4fee0596581f004f8cf4c99458
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -207,7 +207,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
       Klik op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
-      Zoeken naar het veld met het label **[!UICONTROL Published Server Name.]**
+      Zoek het veld met het label **[!UICONTROL Published Server Name]**.
    1. Verifieer dat u CDN door Adobe gebruikt en niet met een directe verhouding wordt beheerd.
    1. Verifieer u een specifiek domein zoals `images.company.com` of `mycompany.scene7.com`, en niet een generisch domein, zoals `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com` gebruikt.
 
@@ -235,7 +235,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, vo
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 

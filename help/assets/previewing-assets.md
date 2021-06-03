@@ -8,16 +8,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: bb8c355c-4475-45ec-9096-0975f0ce2c27
 docset: aem65
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1335'
 ht-degree: 2%
 
 ---
-
 
 # Elementen voorvertonen met de softwareinterface {#previewing-assets}
 
@@ -39,7 +38,7 @@ Zie [Voorinstellingen van viewers beheren](/help/assets/managing-viewer-presets.
 **Elementen voorvertonen met de software-interface**
 
 1. Tik op **[!UICONTROL Adobe Experience Manager]** op de pagina **[!UICONTROL Navigation]** en **[!UICONTROL Files]** op om elementen te openen.**[!UICONTROL Assets]**
-1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL List View.]**
+1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL List View]**.
 1. (Optioneel) Gebruik de kolom **[!UICONTROL Type]** om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
 1. Klik onder de kolom **[!UICONTROL Title]** op de titelnaam (niet de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
 1. Voer afhankelijk van het type element waarop u hebt geklikt een van de volgende handelingen uit:

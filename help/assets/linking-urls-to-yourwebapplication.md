@@ -9,9 +9,8 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
-feature: Configuration
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Configuratie
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 9%
@@ -68,25 +67,25 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 1. Voer op basis van het element dat u hebt geselecteerd een van de volgende handelingen uit:
 
-   * Als u een afbeelding hebt geselecteerd, tikt u in de vervolgkeuzelijst op **[!UICONTROL Renditions.]**
+   * Tik **[!UICONTROL Renditions]** als u een afbeelding hebt geselecteerd in de vervolgkeuzelijst.
 
       Tik onder de kop **[!UICONTROL Dynamic]** op de naam van een voorinstelling om de vertoning ervan in het rechterframe weer te geven. Mogelijk moet u door de lijst met uitvoeringen bladeren om de dynamische kop te zien.
 
-      Tik op **[!UICONTROL URL.]** onder aan de linkerspoorstaaf
+      Tik op **[!UICONTROL URL]** onder aan de linkerspoorstaaf.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Tik **[!UICONTROL Viewers.]** als u een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd in de vervolgkeuzelijst
+   * Tik **[!UICONTROL Viewers]** als u een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd in de vervolgkeuzelijst.
 
       Tik in de linkertrack op de naam van een viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
 
-      Tik op **[!UICONTROL URL.]** in de linkerspoorstaaf onderaan
+      Tik op **[!UICONTROL URL]** in het linkerspoor onderaan.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Selecteer en kopieer de tekst naar uw webbrowser om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
 
-   Tik op **[!UICONTROL X]** of tik **[!UICONTROL Close.]** om het URL-venster te sluiten
+   Tik op **[!UICONTROL X]** of **[!UICONTROL Close]** om het URL-venster te sluiten.
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
@@ -124,8 +123,8 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
 ## Een video-URL ophalen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations.]**
+1. Navigeer in AEM naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 
 1. Kopieer op de pagina **[!UICONTROL Dynamic Media Cloud Settings]** onder **[!UICONTROL Video Service URL]** het volledige URL-pad omlaag. U hebt het gekopieerde URL-pad later nodig in de stappen.
@@ -140,7 +139,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany` was, zou de naam van de klant `MyCompany` zijn.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Services]**, tik vervolgens op het logo van de Experience Manager en navigeer naar **[!UICONTROL General > CRXDE Lite.]**
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Services]**, tik vervolgens op het logo van de Experience Manager en navigeer naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieer het volledige pad voor video-uitvoering vanuit de JCR (Java Content Repository).
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -161,8 +160,8 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
 ## Een video-URL ophalen voor adaptieve streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. Navigeer in AEM naar **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations.]**
+1. Navigeer in AEM naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
 1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
 1. Ga als volgt te werk op de pagina **[!UICONTROL Dynamic Media Cloud Services Settings]**:
 

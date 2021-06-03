@@ -8,9 +8,8 @@ content-type: reference
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publishing
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Publiceren
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 1%
@@ -33,9 +32,9 @@ Met selectief publiceren kunt u bijvoorbeeld werken aan elementen voor producten
 
 Als u later besluit om de **[!UICONTROL Selective Publish]** montages in een omslag te veranderen, beïnvloeden die veranderingen slechts nieuwe activa die u aan die omslag van dat punt vooruit uploadt. De publicatiestatus van bestaande elementen in de map blijft ongewijzigd totdat u deze handmatig wijzigt vanuit **[!UICONTROL Quick Publish]** of het dialoogvenster **[!UICONTROL Manage Publication]**.
 
-De optie **[!UICONTROL Dynamic Media Publish mode]** van het omslagniveau blijft altijd aan de waarde in **[!UICONTROL Publish Assets]** het plaatsen in uw **[!UICONTROL Dynamic Media Configuration.]** altijd in gebreke. De volgende stappen in dit onderwerp, echter, tonen u hoe te om deze standaardwaarde op het omslagniveau (zoals die in de volgende stappen wordt beschreven) manueel te veranderen om **[!UICONTROL Dynamic Media Configuration]** waarde met voeten te treden.
+De optie **[!UICONTROL Dynamic Media Publish mode]** op mapniveau is altijd standaard ingesteld op de waarde die wordt gevonden in de instelling **[!UICONTROL Publish Assets]** in **[!UICONTROL Dynamic Media Configuration]**. De volgende stappen in dit onderwerp, echter, tonen u hoe te om deze standaardwaarde op het omslagniveau (zoals die in de volgende stappen wordt beschreven) manueel te veranderen om de **[!UICONTROL Dynamic Media Configuration]** waarde met voeten te treden.
 
-Ongeacht of u afhankelijk bent van de waarde **[!UICONTROL Publish Assets]** die is ingesteld in **[!UICONTROL Dynamic Media Configuration]** of de waarde **[!UICONTROL Dynamic Media Publish mode]** die is ingesteld in de eigenschappen op mapniveau, kunt u nog **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]** of **[!UICONTROL Selective Publish.]** kiezen. U kunt bijvoorbeeld de waarde **[!UICONTROL Publish Assets]** in uw **[!UICONTROL Dynamic Media Configuration]** instellen op **[!UICONTROL Upon Activation]**, maar u kunt de waarde **[!UICONTROL Dynamic Media Publish]** instellen op de waarde in mapniveau tot **[!UICONTROL Selective Publish]**, vice versa, enzovoort.
+Ongeacht of u afhankelijk bent van de waarde **[!UICONTROL Publish Assets]** die is ingesteld in **[!UICONTROL Dynamic Media Configuration]**, of de waarde **[!UICONTROL Dynamic Media Publish mode]** die is ingesteld in de eigenschappen op mapniveau, u kunt nog **[!UICONTROL Immediately]**, **[!UICONTROL Upon Activation]** of **[!UICONTROL Selective Publish]** kiezen. U kunt bijvoorbeeld de waarde **[!UICONTROL Publish Assets]** in uw **[!UICONTROL Dynamic Media Configuration]** instellen op **[!UICONTROL Upon Activation]**, maar de moduswaarde **[!UICONTROL Dynamic Media Publish]** op mapniveau instellen op **[!UICONTROL Selective Publish]**, vice versa, enzovoort.
 
 Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
 
@@ -46,22 +45,22 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
 
 **Selectieve publicatie op mapniveau in Dynamic Media configureren**
 
-1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files]**.
 1. Voer een van de volgende handelingen uit:
-   * Bewerk de eigenschappen van een bestaande map - Navigeer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** naar een map waarvan u de eigenschappen wilt bewerken. Selecteer de map en tik vervolgens op de werkbalk op **[!UICONTROL Properties.]**
-   * Bewerk de eigenschappen van een nieuwe map - tik **[!UICONTROL Create > Folder.]** in het dialoogvenster **[!UICONTROL Create Folder]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** in de rechterbovenhoek van de pagina op **[!UICONTROL Card View]** Voer in  een titel (vereist) voor de map in en tik vervolgens op **[!UICONTROL Create.]** Selecteer de map, tik vervolgens op de werkbalk op **[!UICONTROL Properties.]**
+   * Bewerk de eigenschappen van een bestaande map - Navigeer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** naar een map waarvan u de eigenschappen wilt bewerken. Selecteer de map en tik op **[!UICONTROL Properties]** op de werkbalk.
+   * Bewerk de eigenschappen van een nieuwe map - tik **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** in de rechterbovenhoek van de pagina op **[!UICONTROL Create]** > **[!UICONTROL Folder]**. Voer in het dialoogvenster **[!UICONTROL Create Folder]** een titel (vereist) voor de map in en tik vervolgens op **[!UICONTROL Create]**. Selecteer de map en tik op **[!UICONTROL Properties]** op de werkbalk.
 
 1. Selecteer een van de volgende opties in de vervolgkeuzelijst **[!UICONTROL Sync mode]**:
 
    | Synchronisatiemodus | Beschrijving |
    | --- | --- |
-   | **[!UICONTROL Inherited]** | Geen expliciete synchronisatiewaarde in de map; in plaats daarvan, erft de omslag de synchronisatiewaarde van één van zijn voorouderomslagen of de standaardwijze die in uw **[!UICONTROL Dynamic Media Configuration.]** wordt geplaatst de gedetailleerde status voor **[!UICONTROL Inherited]** toont als hulpmiddeluiteinde. |
-   | **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | Voor het publiceren naar Dynamic Media moet u de middelen synchroniseren met Dynamic Media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen voor synchronisatie met Dynamic Media. De omslag-specifieke montages treden het gebrek met voeten dat in **[!UICONTROL Dynamic Media Configuration.]** plaatst |
+   | **[!UICONTROL Inherited]** | Geen expliciete synchronisatiewaarde in de map; in plaats daarvan, erft de omslag de synchronisatiewaarde van één van zijn voorouderomslagen of de standaardwijze die in uw **[!UICONTROL Dynamic Media Configuration]** wordt geplaatst. De gedetailleerde status voor **[!UICONTROL Inherited]** wordt weergegeven als knopinfo. |
+   | **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** | Voor het publiceren naar Dynamic Media moet u de middelen synchroniseren met Dynamic Media. Als u deze optie selecteert, worden alle elementen in deze substructuur opgenomen voor synchronisatie met Dynamic Media. De omslag-specifieke montages treden het gebrek met voeten dat in **[!UICONTROL Dynamic Media Configuration]** plaatst. |
    | **[!UICONTROL Exclude everything in this folder sub-tree from dynamicmedia sync]** | Sluit alle elementen in deze substructuur uit van synchroniseren naar Dynamic Media. |
 
    ![Selectieve publicatie op mapniveau](/help/assets/assets-dm/createfolder-properties-selectivepublish.png)
 
-1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Dynamic Media Publish mode]**. Houd er rekening mee dat de optie **[!UICONTROL Dynamic Media Publish mode]** altijd standaard de waarde heeft die is ingesteld in **[!UICONTROL Dynamic Media Configuration.]** U kunt deze standaardwaarde **[!UICONTROL Dynamic Media Configuration]** echter handmatig overschrijven met een van de volgende opties.
+1. Selecteer een optie in de vervolgkeuzelijst **[!UICONTROL Dynamic Media Publish mode]**. Houd er rekening mee dat de optie **[!UICONTROL Dynamic Media Publish mode]** altijd de waarde heeft die is ingesteld in **[!UICONTROL Dynamic Media Configuration]**. U kunt deze standaardwaarde **[!UICONTROL Dynamic Media Configuration]** echter handmatig overschrijven met een van de volgende opties.
 
    >[!IMPORTANT]
    >
@@ -91,10 +90,10 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
 
 **Elementen selectief publiceren naar Dynamic Media of AEM met Publicatie beheren**
 
-1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik vervolgens op de werkbalk op **[!UICONTROL Manage Publication.]** Mogelijk is het handig om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication.]** Als u **[!UICONTROL List View]** wilt gebruiken, kunt u de publicatiestatus van een bepaald element eenvoudiger controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik op **[!UICONTROL Manage Publication]** op de werkbalk.  Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication]** op de werkbalk. Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
 
       >[!NOTE]
       >
@@ -114,19 +113,19 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
    | **[!UICONTROL Now]** | Selecteer deze optie om de elementen direct te publiceren. |
    | **[!UICONTROL Later]** | Selecteer deze optie om de elementen op een bepaalde datum en tijd te publiceren. |
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication]** op **[!UICONTROL Next.]**
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication]** op **[!UICONTROL Next]**.
 1. Voer op de pagina **[!UICONTROL Manage Publication - Scope]** een van de volgende handelingen uit:
 
    * Selecteer zo nodig een of meer elementen die u uit publicatie wilt verwijderen.
-   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Publish]** of **[!UICONTROL Publish to Dynamic Media.]**
-1. Tik op **[!UICONTROL OK.]**
+   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Publish]** of **[!UICONTROL Publish to Dynamic Media]**.
+1. Tik op **[!UICONTROL OK]**.
 
 ### Publicatie van middelen van Dynamic Media of AEM selectief ongedaan maken met Publicatie beheren {#selective-unpublish-manage-publication}
 
-1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Selecteer de map en tik vervolgens op de werkbalk op **[!UICONTROL Manage Publication.]** Mogelijk is het handig om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
-   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication.]** Als u **[!UICONTROL List View]** wilt gebruiken, kunt u de publicatiestatus van een bepaald element eenvoudiger controleren.
+   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Selecteer de map en tik op **[!UICONTROL Manage Publication]** op de werkbalk.  Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de publicatie ongedaan wilt maken. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Manage Publication]** op de werkbalk. Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
 
       >[!NOTE]
       >
@@ -146,11 +145,11 @@ Zie [Een Dynamic Media-configuratie maken](#configuring-dynamic-media-cloud-serv
    | **[!UICONTROL Now]** | Selecteer deze optie om de publicatie van de elementen direct ongedaan te maken. |
    | **[!UICONTROL Later]** | Selecteer deze optie om de publicatie van de elementen op een bepaalde datum en tijd ongedaan te maken. |
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication]** op **[!UICONTROL Next.]**
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication]** op **[!UICONTROL Next]**.
 1. Voer op de pagina **[!UICONTROL Manage Publication - Scope]** een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit het ongedaan maken van de publicatie wilt verwijderen.
-   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Unpublish]** of **[!UICONTROL Unpublish from Dynamic Media.]**
-1. Tik op **[!UICONTROL OK.]**
+   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Unpublish]** of **[!UICONTROL Unpublish from Dynamic Media]**.
+1. Tik op **[!UICONTROL OK]**.
 
 ## Elementen publiceren naar Dynamic Media of AEM met Snel publiceren {#quick-publish-aem-dm}
 
@@ -162,10 +161,10 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 **Elementen publiceren naar Dynamic Media of AEM met Snel publiceren**
 
-1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik vervolgens rechts op de pagina op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik vervolgens rechts op de pagina op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Voer in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** een van de volgende handelingen uit:
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik vervolgens op de werkbalk op **[!UICONTROL Quick Publish.]** Mogelijk is het handig om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
-   * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Quick Publish.]** Als u **[!UICONTROL List View]** wilt gebruiken, kunt u de publicatiestatus van een bepaald element eenvoudiger controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Selecteer de map en tik op **[!UICONTROL Quick Publish]** op de werkbalk.  Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaalde map eenvoudiger kunt controleren.
+   * Navigeer naar een map waarvan u de elementen wilt publiceren. Open de map en selecteer vervolgens een of meer elementen. Tik op **[!UICONTROL Quick Publish]** op de werkbalk. Het kan handig zijn om **[!UICONTROL List View]** te gebruiken, zodat u de publicatiestatus van een bepaald element eenvoudiger kunt controleren.
 
       >[!NOTE]
       >
@@ -178,10 +177,10 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
    | Snel publiceren, optie | Wat het doet |
    | --- | --- | 
    | Publiceren naar AEM | Hiermee publiceert u de geselecteerde elementen direct naar AEM. |
-   | Publiceren naar Brand Portal | Hiermee publiceert u de geselecteerde elementen direct naar **[!UICONTROL Brand Portal.]**<br>Deze optie is alleen beschikbaar als uw AEM Assets-instantie al **[!UICONTROL Brand Portal]**heeft geconfigureerd. |
-   | Publiceren naar Dynamic Media | Hiermee publiceert u de geselecteerde elementen direct naar Dynamic Media.<br>Een middel moet reeds aan Dynamic Media worden gesynchroniseerd. Indien nodig moet **[!UICONTROL Sync mode]** in de eigenschappen van een map al zijn ingesteld op **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia.]** |
+   | Publiceren naar Brand Portal | Hiermee publiceert u de geselecteerde elementen direct naar **[!UICONTROL Brand Portal]**.<br>Deze optie is alleen beschikbaar als uw AEM Assets-instantie  **[!UICONTROL Brand Portal]** al is geconfigureerd. |
+   | Publiceren naar Dynamic Media | Hiermee publiceert u de geselecteerde elementen direct naar Dynamic Media.<br>Een middel moet reeds aan Dynamic Media worden gesynchroniseerd. Indien nodig, zorg ervoor dat **[!UICONTROL Sync mode]** in de eigenschappen van een omslag reeds aan **[!UICONTROL Sync everything in this folder sub-tree to dynamicmedia]** wordt geplaatst. |
 
-1. Tik **[!UICONTROL OK]** en tik vervolgens op **[!UICONTROL Close.]**
+1. Tik **[!UICONTROL OK]** en tik vervolgens op **[!UICONTROL Close]**.
 
 ## Elementen selectief publiceren of verwijderen via zoekresultaten {#selective-publish-unpublish-search-results}
 
@@ -191,9 +190,9 @@ Zie ook [Middelen zoeken in AEM.](/help/assets/search-assets.md)
 
 **Elementen selectief publiceren of verwijderen via zoekresultaten**
 
-1. Tik in AEM, linksboven op de pagina, op het AEM logo om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM, linksboven op de pagina, op het AEM logo om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Tik in de werkbalk rechtsboven op de pagina op het pictogram Zoeken (vergrootglas).
-1. Voer in het tekstveld **[!UICONTROL Type to search]** een trefwoord in en druk op **[!UICONTROL Enter.]**
+1. Voer in het tekstveld **[!UICONTROL Type to search]** een trefwoord in en druk op **[!UICONTROL Enter]**.
 1. Tik in de rechterbovenhoek van de pagina op het pictogram **[!UICONTROL List View]**.
 1. Tik in de linkerbovenhoek van de pagina op het pictogram **[!UICONTROL Filters]**.
 
@@ -204,8 +203,8 @@ Zie ook [Middelen zoeken in AEM.](/help/assets/search-assets.md)
 U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling **[!UICONTROL Publish]** om de zoekresultaten van de AEM **[!UICONTROL Published]** en **[!UICONTROL Unpublished]** te verfijnen.
 1. Voer een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken.
-   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Search Results]** op **[!UICONTROL Select All.]**
-1. Tik op de werkbalk op **[!UICONTROL Manage Publication.]** Mogelijk moet u tikken op het ellipsiepictogram op de werkbalk om **[!UICONTROL Manage Publication.]** te zien
+   * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Search Results]** op **[!UICONTROL Select All]**.
+1. Tik op **[!UICONTROL Manage Publication]** op de werkbalk. Mogelijk moet u op het ellipsiepictogram op de werkbalk tikken om **[!UICONTROL Manage Publication]** te kunnen zien.
 1. Selecteer op de pagina **[!UICONTROL Manage Publication - Options]** de gewenste actie.
 
    | Geselecteerde actie | Instelling Middelen publiceren in Dynamic Media-configuratie | Elementen zijn |
@@ -226,7 +225,7 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling *
    | Nu | De geselecteerde actie wordt onmiddellijk uitgevoerd. |
    | Later | De geselecteerde actie wordt uitgevoerd op de geselecteerde bepaalde datum en tijd. |
 
-1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Options]** op **[!UICONTROL Next.]**
+1. Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Options]** op **[!UICONTROL Next]**.
 1. (Optioneel) Controleer op de pagina **[!UICONTROL Manage Publication - Scope]** de kolom **[!UICONTROL Publish Target]** in de tabel voor de geselecteerde elementen.
 
    | Instelling Middelen publiceren in Dynamic Media-configuratie | Geselecteerde actie | Publicatiedoel |
@@ -243,7 +242,7 @@ U kunt deze selectievakjes ook gebruiken in combinatie met de zoekvoorspelling *
 1. Voer op de pagina **[!UICONTROL Manage Publication - Scope]** een van de volgende handelingen uit:
    * Selecteer een of meer elementen die u uit publiceren of verwijderen.
    * Tik in de rechterbovenhoek van de pagina **[!UICONTROL Manage Publication - Scope]** op **[!UICONTROL Publish]** of **[!UICONTROL Unpublish]** om de handeling te starten.
-1. Tik op **[!UICONTROL OK.]**
+1. Tik op **[!UICONTROL OK]**.
 
 ## De publicatiestatus van een element {#check-publish-status-of-asset} controleren
 
@@ -251,10 +250,10 @@ U kunt **[!UICONTROL Timeline]** met **[!UICONTROL Card view]**, **[!UICONTROL C
 
 **De publicatiestatus van een element controleren**
 
-1. Tik in AEM, linksboven op de pagina, op het AEM logo om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het pictogram Gereedschappen) en tik op **[!UICONTROL Assets > Files.]**
+1. Tik in AEM, linksboven op de pagina, op het AEM logo om toegang te krijgen tot de algemene navigatieconsole. Tik links op de pagina op het navigatiepictogram (net boven het gereedschapspictogram) en tik op **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Open in **[!UICONTROL Card View]**, **[!UICONTROL Column View]** of **[!UICONTROL List View]** (onderstaande schermafbeelding geeft de **[!UICONTROL List View]** weer) een map met elementen die u hebt gepubliceerd of die u niet hebt gepubliceerd.
 1. Selecteer een element, zodat dit met een vinkje wordt weergegeven. Zie onderstaande schermafbeelding.
-1. Selecteer in de linkerbovenhoek van de pagina in het keuzemenu **[!UICONTROL Timeline.]** Het gebied **[!UICONTROL Status]** in het linkerdeelvenster toont de publicatiestatus van het geselecteerde element.
+1. Selecteer **[!UICONTROL Timeline]** in de linkerbovenhoek van de pagina in het keuzemenu. Het gebied **[!UICONTROL Status]** in het linkerpaneel toont de publicatiestatus van het geselecteerde element.
 Wanneer u **[!UICONTROL List View]** gebruikt, verschijnt een extra kolom voor **[!UICONTROL Dynamic Media]** publicatiestatus.
    * Een map die is geconfigureerd om te synchroniseren met Dynamic Media, geeft standaard de kolom **[!UICONTROL Dynamic Media]** weer.
    * Als een map *not* is geconfigureerd voor synchronisatie met Dynamic Media, wordt de Dynamic Media-kolom niet weergegeven.

@@ -5,10 +5,9 @@ user-guide-title: Hulplijn voor middelen
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Architect, Administrator
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '337'
 ht-degree: 4%
 
 ---
@@ -33,14 +32,14 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 | [Releaseopmerkingen](/help/release-notes/home.md) | Verstrekt belangrijke informatie over de recentste versie, met inbegrip van wat nieuwe, gesteunde platforms is, verouderde en verwijderde eigenschappen, en bekende kwesties |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om Experience Manager toe te dienen. |
+| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe u Adobe Experience Manager moet beheren. |
 | [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in Experience Manager. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in Experience Manager in het klassieke gebruikersinterface. |
-| [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
+| [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Ontdek de oplossing voor digitale handtekeningen, zodat u dynamische en interactieve digitale ervaringen kunt publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van Experience Manager. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u de implementatie van uw Experience Manager kunt ontwikkelen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | Deze gids beschrijft hoe te om een project van de Experience Manager met succes te beheren. |
-| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
+| [Handboek voor handel](/help/commerce/home.md) | Leer over het Kader van de Integratie van de Handel op Experience Manager. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |
 
@@ -49,7 +48,7 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 * [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
-* [Forum Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/Adobe-Experience-Manager-Assets/ct-p/experience-manager-assets-community)
+* [Forum Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
 * [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

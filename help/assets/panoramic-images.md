@@ -8,16 +8,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-feature: Panoramic Images,Asset Management
+feature: Panoramische afbeeldingen, beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 5%
 
 ---
-
 
 # Panoramische afbeeldingen{#panoramic-images}
 
@@ -47,11 +46,11 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server.]**
-1. Selecteer **[!UICONTROL Image Serving.]** in het vervolgkeuzemenu **[!UICONTROL Publish Context]** op de pagina Publiceren op de afbeeldingsserver
+1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu **[!UICONTROL Publish Context]** boven op de pagina Publiceren op de afbeeldingsserver.
 
-1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes.]**
-1. Zoek onder de kop Request-kenmerken **[!UICONTROL Reply Image Size Limit.]** Vervolgens in de bijbehorende velden Breedte en Hoogte de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
+1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes]**.
+1. Zoek onder de kop Aanvraagkenmerken **[!UICONTROL Reply Image Size Limit]**. Vergroot vervolgens in de bijbehorende velden Breedte en Hoogte de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
 
    Dynamic Media Classic heeft een limiet van 25.000.000 pixels. De maximaal toegestane grootte voor afbeeldingen met een hoogte-breedteverhouding van 2:1 is 7000 x 3500. Voor standaarddesktopschermen is 4096 x 2048 pixels echter voldoende.
 
@@ -61,14 +60,14 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
 
 1. Ga als volgt te werk onder Aanvraagkenmerken:
 
-   * Modus Verduistering verzoek instellen op **[!UICONTROL Disabled.]**
-   * Vergrendelingsmodus voor aanvragen instellen op **[!UICONTROL Disabled.]**
+   * Stel de modus Vervaging verzoek in op **[!UICONTROL Disabled]**.
+   * Stel de modus Verzoek vergrendelen in op **[!UICONTROL Disabled]**.
 
    Deze instellingen zijn nodig voor het gebruik van de WCM-component `Panoramic Media` in AEM.
 
-1. Klik links onder aan de pagina Publiceren afbeeldingsserver op **[!UICONTROL Save.]**
+1. Klik links onder aan de pagina Publiceren afbeeldingsserver op **[!UICONTROL Save]**.
 
-1. Klik in de rechterbenedenhoek op **[!UICONTROL Close.]**
+1. Klik in de rechterbenedenhoek op **[!UICONTROL Close]**.
 
 ### Problemen met de WCM-component Panoramische media {#troubleshooting-the-panoramic-media-wcm-component} oplossen
 

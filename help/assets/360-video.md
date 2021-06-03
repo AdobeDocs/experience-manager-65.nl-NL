@@ -11,7 +11,7 @@ docset: aem65
 feature: 360 VR-video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 **Elementen uploaden voor gebruik met de 360-videoviewer:**
 
 1. Er is een map gemaakt voor uw 360-video-element.
-1. [Pas een adaptief videoprofiel toe op de map.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [Pas een adaptief videoprofiel toe op de map](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Bij het renderen van 360 video-inhoud worden hogere eisen gesteld aan de resolutie van de bronvideo en aan de resolutie van gecodeerde vertoningen dan aan de standaard niet-360 video-inhoud.
 
@@ -99,9 +99,9 @@ Zie ook [Viewer-voorinstellingen bewerken](/help/assets/managing-viewer-presets.
 
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
-Zie [Video- of afbeeldingsviewer insluiten op een webpagina.](/help/assets/embed-code.md)
-Zie URL&#39;s  [koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
-Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **Een voorvertoning van 360 video&#39;s weergeven:**
 
@@ -111,7 +111,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dy
 
    Tik op het video-element 360 zodat u een voorvertoning van de video kunt bekijken.
 
-1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers.]**
+1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -122,13 +122,13 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dy
 
    ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
 
-   * Tik in de lijst Viewers op **[!UICONTROL Video360VR.]**
+   * Tik in de lijst Viewers op **[!UICONTROL Video360VR]**.
 
       VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360 graden.
    ![6_5_360video-voorvertoning-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 
-1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Close.]**
+1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Close]**.
 
 ## 360-video {#publishing-video} publiceren
 
@@ -137,4 +137,4 @@ Publiceer de 360-video zodat u deze kunt gebruiken. Wanneer u een 360-video publ
 Zie [Dynamic Media Assets publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360 Video.
 Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
-Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).

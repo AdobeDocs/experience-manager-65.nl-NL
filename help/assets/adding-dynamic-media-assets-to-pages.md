@@ -11,10 +11,10 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: componenten,publiceren
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '3043'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -34,7 +34,7 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
 1. Open in Experience Manager de pagina waaraan u de Dynamic Media-component wilt toevoegen.
 1. Klik in het deelvenster aan de linkerkant van de pagina (indien nodig op het pictogram **[!UICONTROL Components]** om de weergave van het zijpaneel in of uit te schakelen).
-1. Selecteer **[!UICONTROL Dynamic Media.]** onder de kop **[!UICONTROL Components]** in de vervolgkeuzelijst
+1. Selecteer **[!UICONTROL Dynamic Media]** onder de kop **[!UICONTROL Components]** in de vervolgkeuzelijst.
 
    Als er geen lijst met Dynamic Media-componenten beschikbaar is, moet u de Dynamic Media-componenten inschakelen die u wilt gebruiken. Zie [Dynamic Media-componenten inschakelen](#enabling-dynamic-media-components).
 
@@ -65,7 +65,7 @@ Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te 
 
    ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. Tik in de vervolgkeuzelijst rechts van de werkbalk naast de pagina op **[!UICONTROL Structure.]**
+1. Tik in de vervolgkeuzelijst rechts van de werkbalk naast de pagina op **[!UICONTROL Structure]**.
 
    ![Beleid](/help/assets/assets-dm/structure-mode.png)
 
@@ -74,7 +74,7 @@ Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te 
 
    ![Toegestane componenten](/help/assets/assets-dm/allowed-components.png)
 
-1. Schuif totdat u **[!UICONTROL Dynamic Media.]** ziet
+1. Schuif totdat u **[!UICONTROL Dynamic Media]** ziet.
 1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** zodat u de lijst kunt uitvouwen en vervolgens de Dynamic Media-componenten die u wilt inschakelen selecteren.
 
    ![Lijst met Dynamic Media-componenten](/help/assets/assets-dm/dm-components-select.png)
@@ -99,7 +99,7 @@ U kunt Dynamic Media-componenten op twee manieren lokaliseren:
 
 ## Dynamic Media-componenten {#dynamic-media-components}
 
-Dynamic Media-componenten zijn beschikbaar wanneer u op het **[!UICONTROL Components]**-pictogram tikt en vervolgens op **[!UICONTROL Dynamic Media.]** filtert
+Dynamic Media-componenten zijn beschikbaar wanneer u op het **[!UICONTROL Components]**-pictogram tikt en vervolgens op **[!UICONTROL Dynamic Media]** filtert.
 
 De volgende Dynamic Media-componenten zijn beschikbaar:
 
@@ -142,13 +142,13 @@ Met de Dynamic Media-component kunt u dynamische afbeeldingen toevoegen, zoals a
 
 U kunt de viewervoorinstelling, afbeeldingsvoorinstelling of afbeeldingsindeling ook rechtstreeks in de component configureren. Als u een afbeelding responsief wilt maken, kunt u de onderbrekingspunten instellen of een responsieve voorinstelling voor de afbeelding toepassen.
 
-Bewerk de volgende Dynamic Media-instellingen door te tikken op het **[!UICONTROL Edit]**-pictogram in de component en vervolgens **[!UICONTROL Dynamic Media Settings.]**
+Bewerk de volgende Dynamic Media-instellingen door te tikken op het pictogram **[!UICONTROL Edit]** in de component en vervolgens **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op **[!UICONTROL Advanced]** lusje met **[!UICONTROL Width]** en **[!UICONTROL Height.]**
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u een vaste grootte wilt instellen, stelt u dit in de component op het tabblad **[!UICONTROL Advanced]** met **[!UICONTROL Width]** en **[!UICONTROL Height]** in.
 
 * **[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
@@ -236,7 +236,7 @@ Bewerk de volgende Dynamic Media-instelling door in de component op **[!UICONTRO
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op **[!UICONTROL Advanced]** lusje met **[!UICONTROL Width]** en **[!UICONTROL Height.]**
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. Als u een vaste grootte wilt instellen, stelt u dit in de component op het tabblad **[!UICONTROL Advanced]** met **[!UICONTROL Width]** en **[!UICONTROL Height]** in.
 
 * **[!UICONTROL Image Modifiers]** - U kunt afbeeldingseffecten toepassen door extra opdrachten voor afbeeldingen te geven. Deze effecten worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
 

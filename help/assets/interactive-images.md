@@ -11,8 +11,7 @@ docset: aem65
 feature: Interactieve afbeeldingen
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '4299'
 ht-degree: 1%
@@ -192,23 +191,23 @@ Wanneer u een aangepaste voorinstelling voor een interactieve afbeeldingsviewer 
 
 Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactiveerd (ingeschakeld) op de pagina met de lijst met voorinstellingen voor viewers in AEM Assets. Deze functionaliteit houdt in dat het zichtbaar is in de Interactieve component van Media en wanneer u activa bekijkt. Als *echter *een interactieve banner met deze viewer-voorinstelling wilt leveren, moet *uw viewer-voorinstelling ook *publiceren (dit geldt voor aangepaste of offline viewervoorinstellingen).
 
-**Een voorinstelling voor een interactieve afbeeldingsviewer maken**
+**Een voorinstelling voor een interactieve afbeeldingsviewer maken:**
 
-1. Tik **[!UICONTROL Tools > Assets > Viewer Presets.]** in de linkerspoorstaaf
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Create.]**
+1. Tik in de linkerspoorstaaf op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
 1. Typ in het dialoogvenster Nieuwe voorinstelling voor viewer een naam om de voorinstelling voor de interactieve bannerviewer te beschrijven.
 
    Dit is de titel die wordt weergegeven op de pagina met de lijst Voorinstellingen voor viewer nadat u de voorinstelling hebt opgeslagen.
 
-1. Selecteer in het vervolgkeuzemenu Uitgebreid mediatype de optie **[!UICONTROL Interactive Image.]**
-1. Tik op **[!UICONTROL Create.]**
+1. Selecteer in het vervolgkeuzemenu Uitgebreid mediatype de optie **[!UICONTROL Interactive Image]**.
+1. Tik op **[!UICONTROL Create]**.
 1. Tik op het tabblad **[!UICONTROL Appearance]** op de pagina Voorinstelling viewer bewerken.
 1. Voer een van de volgende handelingen uit:
 
    * Tik op het pictogram Asset Picker om uw eigen hotspot-afbeelding te uploaden die u voor afbeeldingen wilt gebruiken. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding, selecteer deze en tik op het pictogram Markeren controleren in de rechterbovenhoek.
    * Tik op het pictogram Hotspot-galerie om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik op het palet van de hotspot op de hotspot die u wilt gebruiken.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save.]**
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
@@ -220,7 +219,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
 Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
 
-**Een afbeeldingsbanner uploaden**
+**Een afbeeldingsbanner uploaden:**
 
 1. Upload afbeeldingsbanners die u interactief wilt maken.
 
@@ -263,32 +262,32 @@ Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-in
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit.]** op de werkbalk
+   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
-   * Houd de muis boven de afbeelding en tik **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL > Edit.]**
+   * Tik op **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL Edit]**.
 
-   * Tik op de afbeelding om deze te openen in de detailweergave. Tik op **[!UICONTROL Edit.]** op de werkbalk
+   * Tik op de afbeelding om deze te openen in de detailweergave. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
 1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Add Hotspot]** (vingertikpictogram) om de pagina Hotspotbeheer te openen.
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot.]**
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot]**.
 
-1. Tik in de linkerbovenhoek van de pagina Hotspot Management (Hotspot-beheer) op **[!UICONTROL Hotspot.]**
-1. Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen.
-1. Voeg desgewenst extra hotspots toe door de stappen a en b te herhalen.
-1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u deze in de afbeelding en tikt u op **[!UICONTROL Delete]** (vuilnisbakpictogram) onder de kop **[!UICONTROL Hotspots]**.
+   1. Tik in de linkerbovenhoek van de pagina Hotspot Management op **[!UICONTROL Hotspot]**.
+   1. Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen.
+   1. Voeg desgewenst extra hotspots toe door de stappen a en b te herhalen.
+   1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u deze in de afbeelding en tikt u op **[!UICONTROL Delete]** (vuilnisbakpictogram) onder de kop **[!UICONTROL Hotspots]**.
 
 1. Typ in het tekstveld Naam de naam van de hotspot. Deze naam wordt ook weergegeven in de vervolgkeuzelijst Geselecteerde hotspot.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Quickview.]**
+   * Tik op **[!UICONTROL Quickview]**.
 
-      * Als u een AEM Sites- of eCommerce-klant bent, tikt of klikt u op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Tik of klik op het product dat u wilt gebruiken en tik op **Selecteer **in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
+      * Als u een AEM Sites- of eCommerce-klant bent, tikt of klikt u op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Tik op het product dat u wilt gebruiken of klik op **Select** in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
       * Als u *geen* een klant van AEM Sites of eCommerce bent
 
          * Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Als de Snelle weergave andere variabelen bevat die u nodig hebt om een product nader te identificeren, tikt u op **[!UICONTROL Add Generic Variable.]** In het tekstveld en geeft u een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
-   * Tik op **[!UICONTROL Hyperlink.]**
+         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u nodig hebt om een product nader te identificeren. Geef in het tekstveld een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
+   * Tik op **[!UICONTROL Hyperlink]**.
 
       * Als u een AEM Sites-klant bent, tikt of klikt u op het pictogram Site-kiezer (map) om naar een URL te navigeren. De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
@@ -297,7 +296,7 @@ Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-in
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
 
-   * Tik op **[!UICONTROL Experience Fragment.]**
+   * Tik op **[!UICONTROL Experience Fragment]**.
 
       * Als u een AEM Sites-klant bent, tikt of klikt u op het zoekpictogram (vergrootglas) om de pagina Experience Fragment te openen. Tik op het gewenste fragment voor beleving of klik op het gewenste fragment. Tik vervolgens op Selecteren in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
 Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
@@ -332,10 +331,10 @@ Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-**Interactieve afbeeldingen voorvertonen**
+**Een voorvertoning weergeven van interactieve afbeeldingen:**
 
 1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze te openen in Voorvertoning.
-1. Tik in de vervolgkeuzelijst Inhoud in de linkerbovenhoek van de voorvertoningspagina op **[!UICONTROL Viewers.]**
+1. Tik in de vervolgkeuzelijst Inhoud in de linkerbovenhoek van de voorvertoningspagina op **[!UICONTROL Viewers]**.
 1. Tik in de lijst Viewers op **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
 1. Tik op hotspots in de afbeelding om de bijbehorende acties te testen.
 

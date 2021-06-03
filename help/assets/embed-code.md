@@ -9,24 +9,23 @@ content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 21%
 
 ---
 
-
 # De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit URLs slechts in als u _niet_ gebruikend AEM als WCM bent. Als u AEM gebruikt als uw WCM, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u *niet* gebruikend Adobe Experience Manager als WCM bent. Als u Experience Manager als uw WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
-Zie [URL&#39;s koppelen aan uw webtoepassing.](linking-urls-to-yourwebapplication.md)
+Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
-Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsive-site.md)
+Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
 >[!NOTE]
 >
@@ -38,22 +37,22 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site.](responsiv
 >
 >Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-**De Dynamic Media Video- of Image-viewer insluiten op een webpagina**
+**De Dynamic Media Video- of Image-viewer insluiten op een webpagina:**
 
 1. Navigeer naar de *gepubliceerde* video of afbeeldingselement waarvan u de insluitcode wilt kopiëren.
 
    Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [Elementen publiceren.](publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    Zie [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
    Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-1. Selecteer in de linkertrack het vervolgkeuzemenu en tik **[!UICONTROL Viewers.]**
+1. Selecteer in de linkertrack het vervolgkeuzemenu en tik op **[!UICONTROL Viewers]**.
 1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
-1. Tik op **[!UICONTROL Embed.]**
-1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close.]**
+1. Tik op **[!UICONTROL Embed]**.
+1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
 ## HTTP/2 gebruiken om uw Dynamic Media-elementen {#using-http-to-deliver-your-dynamic-media-assets} te leveren

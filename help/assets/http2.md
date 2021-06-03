@@ -9,11 +9,10 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: Business Practitioner, Administrator
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publishing,Configuration
-translation-type: tm+mt
-source-git-commit: c9aec973faf4caef741961d92a6f258646aeddb7
+feature: Publiceren,Configuratie
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -32,7 +31,7 @@ HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor inf
 
 De volgende website beschrijft HTTP/2 en de voordelen ervan op een korte en eenvoudige manier:
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[Wat u moet weten over HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## Wat zijn de belangrijkste voordelen van de overgang naar HTTP/2 voor de levering van inhoud? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -63,7 +62,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
-1. Als u wilt overschakelen op HTTP/2, start u een aanvraag voor de klantenservice van Adobe. Zie [Toegang tot het AEM Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Als u wilt overschakelen op HTTP/2, start u een aanvraag voor de klantenservice van Adobe. Zie [Toegang tot het Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Geef de volgende informatie op in uw supportverzoek:
 

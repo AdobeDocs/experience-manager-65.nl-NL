@@ -6,8 +6,7 @@ docset: aem65
 feature: 3D-middelen
 role: Business Practitioner
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-translation-type: tm+mt
-source-git-commit: 666bc5d943af371726708cb2ef157a9b3f07eb8e
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 4%
@@ -56,7 +55,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
 Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-assets) en [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
-1. Tik in Experience Manager op de pagina **[!UICONTROL Navigation]** op **[!UICONTROL Assets > Files.]**
+1. Tik **[!UICONTROL Assets > Files]** vanaf Experience Manager op de pagina **[!UICONTROL Navigation]**.
 
    ![Navigatiepagina](/help/assets/assets-dm/navigation-assets.png)
 
@@ -80,4 +79,4 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    | **Herstellen** | Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
    | **Modus Volledig scherm** | Tik op het pictogram Volledig scherm in de rechterbenedenhoek van de pagina om de modus Volledig scherm te activeren. |  |  |
 
-1. Tik, als u klaar bent, in de rechterbovenhoek van de pagina op **[!UICONTROL Close.]**
+1. Tik op **[!UICONTROL Close]** in de rechterbovenhoek van de pagina als u klaar bent.

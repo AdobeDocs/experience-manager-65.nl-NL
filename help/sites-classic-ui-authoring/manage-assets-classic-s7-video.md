@@ -7,20 +7,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c540aa49-9981-4e8c-97df-972085b26490
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
-
 
 # Video{#video}
 
 Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Classic Dynamic Media-video&#39;s voor het ontwerpen van pagina&#39;s.
 
-Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
+Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 * De Klassieke Dynamic Media-videocomponent voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
 * Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. Zie [Klassieke documentatie van Dynamic Media over adaptieve videoreeksen voor meer informatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
@@ -72,7 +71,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
 **Universele voorinstellingen** configureren:
 
-1. Navigeer in **[!UICONTROL Cloud Services]** naar uw **[!UICONTROL Dynamic Media Classic]**-configuratie en klik op **[!UICONTROL Edit.]**
+1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Dynamic Media Classic]**-configuratie en klik op **[!UICONTROL Edit]**.
 1. Selecteer het tabblad **[!UICONTROL Video]**.
 
    >[!NOTE]
@@ -112,7 +111,7 @@ U kunt als volgt uw primaire bronvideo vanaf Adobe DAM uploaden naar Dynamic Med
 
 Wanneer u AEM gebruikt, hebt u toegang tot zowel de videocomponent beschikbaar in Sites als de Klassieke videocomponent van Dynamic Media. Deze componenten zijn niet onderling verwisselbaar.
 
-De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stivingscomponent werkt met video&#39;s die zijn opgeslagen vanuit AEM (met behulp van mpeg) en Dynamic Media Classic video&#39;s.
+De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stichtingscomponent werkt met video&#39;s die zijn opgeslagen vanuit AEM (met behulp van mpeg) en Dynamic Media Classic video&#39;s.
 
 De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
@@ -149,8 +148,8 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 >
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
-1. Ga AEM naar **[!UICONTROL Tools]** en selecteer **[!UICONTROL Configuration Console.]** in de configuratieconsole om naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur te navigeren.
-1. Maak een nieuw Klassiek Dynamic Media-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu &lt;a0/> en selecteer vervolgens de sjabloon Klassiek videoprofiel van Dynamic Media. **[!UICONTROL Create Page]** Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
+1. Ga in Experience Manager naar **[!UICONTROL Tools]** en selecteer **[!UICONTROL Configuration Console]**. Navigeer in de configuratieconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
+1. Maak een nieuw Klassiek Dynamic Media-videoprofiel. In **[!UICONTROL New]**. selecteert u **[!UICONTROL Create Page]** en selecteert u vervolgens de sjabloon Klassiek videoprofiel van Dynamic Media. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
@@ -188,4 +187,3 @@ De basis videocomponent moet weten welke videoprofielen moeten worden gebruikt o
 1. De videoprofielen moeten worden geactiveerd.
 1. Configureer het ontwerp van de basis-videocomponent op de pagina.
 1. Activeer het ontwerp nadat u klaar bent met uw ontwerpwijzigingen.
-

@@ -10,10 +10,9 @@ discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -75,7 +74,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
 Universele voorinstellingen configureren:
 
-1. Navigeer in **[!UICONTROL Cloud Services]** naar uw **[!UICONTROL Scene7]**-configuratie en klik op **[!UICONTROL Edit.]**
+1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]**-configuratie en klik op **[!UICONTROL Edit]**.
 1. Selecteer het tabblad **[!UICONTROL Video]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -96,7 +95,7 @@ Universele voorinstellingen configureren:
 
 ## Voorinstellingen {#updating-viewer-and-encoding-presets} voor viewer en codering bijwerken
 
-Als u de voorinstellingen voor de viewer en codering voor video in AEM moet bijwerken omdat de voorinstellingen in Scene7 zijn bijgewerkt, navigeert u naar de Scene7-configuratie in de cloudconfiguratie en klikt u op **[!UICONTROL Update the viewer and encoding presets.]**
+Als u de voorinstellingen voor de viewer en codering voor video in Experience Manager moet bijwerken omdat de voorinstellingen in Scene7 zijn bijgewerkt, navigeert u naar de Scene7-configuratie in de cloudconfiguratie en klikt u op **[!UICONTROL Update the viewer and encoding presets]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -113,9 +112,9 @@ Als u de voorinstellingen voor de viewer en codering voor video in AEM moet bijw
 
 ## Elementaire videocomponent versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
-Wanneer u AEM gebruikt, hebt u toegang tot zowel de videocomponent Video beschikbaar in Sites als de videocomponent van Scene7. Deze componenten zijn niet onderling verwisselbaar.
+Wanneer u Experience Manager gebruikt, hebt u toegang tot zowel de videocomponent Video beschikbaar in Sites als de videocomponent van Scene7. Deze componenten zijn niet onderling verwisselbaar.
 
-De Scene7-videocomponent werkt alleen voor Scene7-video&#39;s. De stivingscomponent werkt met video&#39;s die zijn opgeslagen vanuit AEM (met gebruik van mpeg) en Scene7-video&#39;s.
+De Scene7-videocomponent werkt alleen voor Scene7-video&#39;s. De stivingscomponent werkt met video&#39;s die zijn opgeslagen vanuit Experience Manager (met behulp van mpeg) en Scene7-video&#39;s.
 
 De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
@@ -123,11 +122,11 @@ De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
 >[!NOTE]
 >
->De videocomponent S7 gebruikt het universele videoprofiel uit het vak. U kunt de op HTML5 gebaseerde videospeler echter voor gebruik door AEM verkrijgen door een van de volgende handelingen uit te voeren in Scene7: Kopieer de insluitcode van de uit-van-doos HTML5 videospeler en zet het in uw AEM pagina.
+>De videocomponent S7 gebruikt het universele videoprofiel uit het vak. U kunt de op HTML5 gebaseerde videospeler echter verkrijgen voor gebruik door Experience Manager door een van de volgende handelingen uit te voeren in Scene7: Kopieer de insluitcode van de uit-van-doos HTML5 videospeler en zet het in uw Experience Manager pagina.
 
 ## AEM videocomponent {#aem-video-component}
 
-Zelfs als het gebruik van de Scene7-videocomponent wordt aanbevolen voor het weergeven van Scene7-video&#39;s, wordt in deze sectie beschreven hoe u ter wille van de volledigheid Scene7-video&#39;s gebruikt met de AEM Foundation Video Component.
+Zelfs als het gebruiken van de videocomponent van Scene7 voor het bekijken van de video&#39;s van Scene7 wordt geadviseerd, beschrijft deze sectie het gebruiken van de video&#39;s van Scene7 met de Component van de Video van de Stichting in Experience Manager, voor volledigheid.
 
 ### AEM Video- en Scene7-videovergelijking {#aem-video-and-scene-video-comparison}
 
@@ -151,9 +150,9 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 >
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
-1. Tik in AEM op **[!UICONTROL Tools]>[!UICONTROL Configuration Console]**.
-1. Navigeer in **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools > DAM > Video Profiles]** in de navigatiestructuur.
-1. Maak een nieuw S7-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu **[!UICONTROL Create Page]** en selecteer vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create.]**
+1. Tik in AEM op **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
+1. Navigeer in **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
+1. Maak een nieuw S7-videoprofiel. In **[!UICONTROL New]**. selecteert u **[!UICONTROL Create Page]** en selecteert u vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

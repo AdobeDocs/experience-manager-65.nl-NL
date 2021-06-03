@@ -9,16 +9,15 @@ content-type: reference
 discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
-feature: Viewer Presets
+feature: Voorinstellingen viewer
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
+source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
 workflow-type: tm+mt
-source-wordcount: '4231'
+source-wordcount: '4229'
 ht-degree: 15%
 
 ---
-
 
 # Viewer-voorinstellingen beheren{#managing-viewer-presets}
 
@@ -45,7 +44,7 @@ Zie ook [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.ado
 
 ## Viewer-voorinstellingen {#managing-viewer-presets-1} beheren
 
-U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door te tikken op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets > Viewer Presets.]**
+U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, publiceren, ongedaan maken en voorvertonen door te tikken op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -389,9 +388,9 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
 
 ## Het aantal Viewer-voorinstellingen dat {#increasing-the-number-of-viewer-presets-that-display} wordt weergegeven verhogen
 
-AEM toont een groot aantal viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View > Viewers.]** U kunt het aantal viewers dat wordt weergegeven, verhogen of verlagen.
+AEM toont een groot aantal viewervoorinstellingen wanneer u elementen weergeeft van **[!UICONTROL Detail View]** > **[!UICONTROL Viewers]**. U kunt het aantal weergegeven viewers verhogen of verlagen.
 
-**Het aantal weergegeven viewervoorinstellingen verhogen**
+**Het aantal weergegeven viewervoorinstellingen verhogen:**
 
 1. Navigeer naar CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigeer naar het lijstknooppunt voor viewervoorinstellingen op `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
@@ -404,7 +403,7 @@ AEM toont een groot aantal viewervoorinstellingen wanneer u elementen weergeeft 
    ![chlimage_1-222](assets/chlimage_1-222.png)
 
 1. Wijzig in de eigenschap limit het getal in het gewenste getal, bijvoorbeeld `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tik op **[!UICONTROL Save All.]**
+1. Tik op **[!UICONTROL Save All]**.
 
 ## Een viewervoorinstelling {#creating-a-new-viewer-preset} maken
 
@@ -424,12 +423,12 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
 
    ![6_5_viewervoorinstellingen](assets/6_5_viewerpresets.png)
 
-1. Tik op de pagina Voorinstellingen viewer op de werkbalk op **[!UICONTROL Create.]**
-1. Voer in het dialoogvenster **[!UICONTROL New Viewer Preset]** in het veld **[!UICONTROL Preset Name]** de naam van de nieuwe voorinstelling in. Kies een zorgvuldig gekozen naam. U kunt deze niet bewerken nadat u op **[!UICONTROL Create.]** tikt
+1. Tik op de pagina Voorinstellingen viewer op de werkbalk op **[!UICONTROL Create]**.
+1. Voer in het dialoogvenster **[!UICONTROL New Viewer Preset]** in het veld **[!UICONTROL Preset Name]** de naam van de nieuwe voorinstelling in. Kies zorgvuldig een naam. U kunt deze niet meer bewerken nadat u op **[!UICONTROL Create]** hebt getikt.
 
    Wanneer u de voorinstelling later in deze stappen opslaat, wordt de naam weergegeven op de pagina Voorinstellingen viewer onder de kolomkop Titel voorinstelling.
 
-1. Selecteer in het vervolgkeuzemenu Type rijke media het type voorinstelling voor de viewer dat u wilt maken en tik vervolgens in de rechterbovenhoek van de pagina op **[!UICONTROL Create.]**
+1. Selecteer in het keuzemenu Type rijke media het type voorinstelling voor viewer dat u wilt maken en tik vervolgens in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
 
    Zie [Rijke mediatypen voor voorinstellingen van viewer](#rich-media-types-for-viewer-presets).
 
@@ -471,7 +470,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
    >
    >Nadat u een waarde in het tekstveld hebt getypt, tikt u ergens anders in de gebruikersinterface om de wijziging te verzenden en sluit u het virtuele toetsenbord. Als u op Enter tikt, vindt er geen actie plaats.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save.]**
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 1. Publiceer uw nieuwe viewervoorinstelling. U moet de voorinstelling publiceren voordat u deze op uw website kunt gebruiken.
 
    Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
@@ -503,7 +502,7 @@ Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt,
 
 Het gedrag voor automatisch schuiven van miniaturen in de Interactieve videoviewer werkt onafhankelijk van de gekozen weergavemodus.
 
-Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, hebt u via het tabblad Gedrag toegang tot Automatisch schuiven. Tik op het tabblad Gedrag in het vervolgkeuzemenu **[!UICONTROL Selected Components]** Het selectievakje Automatisch schuiven wordt weergegeven onder het tekstveld IS-opdracht.**[!UICONTROL InteractiveSwatches.]**
+Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, hebt u via het tabblad Gedrag toegang tot Automatisch schuiven. Tik in het tabblad Gedrag vanuit het vervolgkeuzemenu **[!UICONTROL Selected Components]** op **[!UICONTROL InteractiveSwatches]**. Het selectievakje Automatisch schuiven wordt weergegeven onder het tekstveld IS-opdracht.
 
 Als u **[!UICONTROL Auto Scroll]** uitschakelt (het selectievakje wist) in de viewervoorinstelling, wordt tijdens het afspelen van video door de gebruiker in het deelvenster alleen de eerste miniatuurafbeelding voor de volledige lengte van de video weergegeven. Een gebruiker kan echter desgewenst handmatig door de miniaturen bladeren met de pictogrammen pijl-omhoog en pijl-omlaag.
 
@@ -536,7 +535,7 @@ Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van
 
 |  | **Beschrijving** | **Acties** |
 |---|---|---|
-| **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Als u de afbeelding van het hotspot-pictogram wilt wijzigen, navigeert u op het tabblad **[!UICONTROL Appearance]** in **[!UICONTROL Selected Component]** onder **[!UICONTROL Icon]** naar **[!UICONTROL Background]** en navigeert u in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding.**[!UICONTROL ImageMapEffect.]** |
+| **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Tik **[!UICONTROL ImageMapEffect]** op het tabblad **[!UICONTROL Appearance]** in **[!UICONTROL Selected Component]** om de afbeelding van het hotspot-pictogram te wijzigen. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
 
 ## Viewer-voorinstellingen {#activating-or-deactivating-viewer-presets} activeren of deactiveren
 
@@ -544,7 +543,7 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
 **Voorinstellingen voor viewers activeren of deactiveren**
 
-1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. Tik op de voorinstellingspagina van de viewer onder de kolomkop **[!UICONTROL State]** op de schakelknop om een voorinstelling voor de viewer te activeren of deactiveren.
 
    De viewervoorinstellingen die worden geactiveerd, worden aan de rechterkant weergegeven, in een blauw vak. bij gedeactiveerde viewervoorinstellingen wordt de schakeloptie links weergegeven, in een lichtgrijs vak.
@@ -553,32 +552,32 @@ De Viewer-voorinstellingen die beschikbaar zijn in de gebruikersinterface, zijn 
 
 Als u de status van een viewervoorinstelling activeert (of inschakelt), is deze zichtbaar in de Dynamic Media-component, de interactieve mediacomponent en wanneer u een element weergeeft.
 
-Als u echter* *een asset wilt leveren met een viewervoorinstelling, moet de viewervoorinstelling ook worden gepubliceerd. Alle viewervoorinstellingen moeten geactiveerd *en *gepubliceerd zijn om een URL of insluitcode voor een asset te verkrijgen. U moet alle standaard viewervoorinstellingen die bij dynamische media worden geleverd, activeren en publiceren. Aangepaste viewervoorinstellingen die u maakt en toevoegt, worden automatisch geactiveerd, maar moeten ook worden gepubliceerd.
+Als u *echter een element met een viewervoorinstelling wilt leveren, moet de viewervoorinstelling ook worden gepubliceerd.* Alle voorinstellingen voor viewers moeten worden geactiveerd *en* gepubliceerd om een URL te verkrijgen of code voor een element in te sluiten. U moet alle standaard viewervoorinstellingen die bij dynamische media worden geleverd, activeren en publiceren. Aangepaste viewervoorinstellingen die u maakt en toevoegt, worden automatisch geactiveerd, maar moeten ook worden gepubliceerd.
 
 Zie [Voorinstellingen van viewers activeren of deactiveren](#activating-or-deactivating-viewer-presets).
 
 Zie ook [Elementen voorvertonen](/help/assets/previewing-assets.md).
 
-**Voorinstellingen voor viewers publiceren**
+**Voorinstellingen voor viewers publiceren:**
 
-1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. Selecteer een of meer voorinstellingen voor viewers die u wilt publiceren.
 1. Tik op het pictogram **[!UICONTROL Publish]** op de werkbalk.
 
 ## Voorinstellingen van viewer sorteren {#sorting-viewer-presets}
 
-1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]>[!UICONTROL Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. Klik op **[!UICONTROL Preset Title]**, **[!UICONTROL Type]**, **[!UICONTROL Published]** of **[!UICONTROL State]** om op die kolomkop te sorteren. Klik bijvoorbeeld op **[!UICONTROL Type]** om de typen viewervoorinstellingen in alfabetische of omgekeerd alfabetische volgorde te sorteren.
 
 ## Viewer-voorinstellingen {#editing-viewer-presets} bewerken
 
 Houd er rekening mee dat het bewerken van *vooraf gedefinieerde, voorinstellingen voor viewers uit de box* geen ondersteund scenario is. Als u een voorinstelling voor een viewer buiten de box bewerkt, wordt u gevraagd deze op te slaan onder een andere naam.
 
-**Voorinstellingen voor viewers bewerken**
+**Voorinstellingen voor viewers bewerken:**
 
-1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]>[!UICONTROL Viewer Presets.]**
+1. Tik in de linkerbovenhoek van de Experience Manager op het AEM-logo en tik **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Asset]** > **[!UICONTROL Viewer Presets]**.
 1. Selecteer een voorinstelling door het vakje links van de titel van de voorinstelling voor de viewer in te schakelen.
-1. Tik op **[!UICONTROL Edit.]** op de werkbalk
+1. Tik op **[!UICONTROL Edit]** op de werkbalk.
 1. Breng op de pagina **[!UICONTROL Viewer Preset Editor]** de wijzigingen aan die u in de viewervoorinstelling wilt aanbrengen met behulp van de opties op de tabbladen **[!UICONTROL Appearance]** en **[!UICONTROL Behavior]**.
 
    Tik op het tabblad **[!UICONTROL Appearance]** in de linkerbovenhoek van de pagina Editor van viewervoorinstellingen op **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** of **[!UICONTROL Phone]** om de presentatiemodus van de asset te wijzigen.
@@ -594,17 +593,17 @@ U kunt Viewer-voorinstellingen verwijderen die u hebt gemaakt en aan Dynamic Med
 
 **Aangepaste voorinstellingen voor viewers verwijderen**
 
-1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) **[!UICONTROL > Assets > Viewer Presets.]**
+1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. Controleer op de pagina Voorinstellingen viewer een voorinstellingstitel en tik op het pictogram **[!UICONTROL Trash]**.
-1. Tik op **[!UICONTROL Delete.]**
+1. Tik op **[!UICONTROL Delete]**.
 
 ## Een Viewer-voorinstellingen toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
 Als u zowel de asset als de geselecteerde viewer al hebt gepubliceerd, worden de knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
 
-**Een viewervoorinstelling toepassen op een element**
+**Een viewervoorinstelling toepassen op een element:**
 
-1. Open het element en selecteer **[!UICONTROL Viewers.]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer 
+1. Open het element en selecteer **[!UICONTROL Viewers]** in de linkerbovenhoek van de pagina. Tik op het vervolgkeuzemenu en selecteer .
 
    >[!NOTE]
    >

@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0f70c011cc192df0650c3ec666bae2c26653b444
+source-git-commit: 7d3c8d9266bdec3f75211cfa0636217fd8b054ca
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3814'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,18 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
       >
    * Azië-Stille Oceaan 24 juni 2021.
 
+
+* Mogelijkheid om een meldingsbericht per e-mail naar een groep te verzenden met de workflowstap [!UICONTROL Assign Task].
+
+* Capaciteit om een Interactief Communicatie ontwerp terug te winnen na het wijzigen van de bron Interactieve Communicatie.
+
+* Stel een aangepaste domeinnaam in voor het laden, renderen en valideren van de reCAPTCHA-service in [!DNL Experience Manager Forms].
+
+* Verbeteringen van invoergegevens voor [!UICONTROL Invoke Form Data Model Service]-workflowstap.
+
+* Mogelijkheid om meerdere master pagina&#39;s te gebruiken in een Document of Record-sjabloon in [!DNL Experience Manager Forms].
+
+* Pagina-einden in Document of Record worden ondersteund in [!DNL Experience Manager Forms].
 
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar 1.2.7.
 
@@ -307,7 +319,50 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+>* [!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+>* U kunt nu toepassingen ontwikkelen en gebruiken met [!DNL Azul Zulu] builds van [!DNL OpenJDK] voor [!DNL Experience Manager Forms] op OSGi-implementaties.
+
+
+**Adaptieve Forms**
+
+* Problemen met taalinitialisatie in [!DNL Experience Manager Forms] 6.5.7.0 bij het genereren van meerdere vertaalwoordenboeken (NPR-36439).
+* Als u een bijlage toevoegt aan een adaptief formulierfragment en het formulier verzendt, wordt het volgende foutbericht weergegeven in [!DNL Experience Manager Forms] (NPR-36195):
+
+   ```TXT
+    POST /content/forms/af/attachmentissue/jcr:content/guideContainer.af.submit.jsp HTTP/1.1] com.adobe.aemds.guide.servlet.GuideSubmitServlet [AF] Invalid file name or mime type for file resulted in submission failure
+   ```
+
+* Wanneer u menselijke vertaling gebruikt om een woordenboek bij te werken en dan een voorbeeld van een adaptief formulier te bekijken, worden de wijzigingen niet weergegeven (NPR-36035).
+
+**Interactieve communicatie**
+
+* Wanneer u een afbeelding uploadt via het Interactieve communicatiekanaal Afdrukken en deze bewerkt, is de afbeelding niet meer zichtbaar (NPR-36518).
+
+* Bij het bewerken van een tekstelement en het vullen van een plaatsaanduiding worden alle interactieve elementen verwijderd uit het navigatiegebied (NPR-35991).
+
+**Workflow**
+
+* Wanneer u het REST-eindpunt van een [!DNL Experience Manager Forms]-service op JBoss aanroept, geeft [!DNL Experience Manager] het volgende foutbericht weer (NPR-36305):
+
+   ```TXT
+   Invalid input. The maximum length of 2000 characters was exceeded.
+   ```
+
+**BackendIntegration**
+
+* Kan een formuliergegevensmodel niet opslaan terwijl het Leesservice-argument wordt gebonden aan een letterlijke waarde die een streepje bevat (NPR-36366).
+
+**Documentbeveiliging**
+
+* Wanneer u certificering en HSM instelt voor GlobalSign, [!DNL Experience Manager Forms] geeft de foutberichten `Unsuported Algorithm` en `Invalid TSA Certificate` weer terwijl een tijdstempel wordt toegevoegd aan LTV (NPR-36026, NPR-36025).
+
+**Document Services**
+
+* Updates voor [!DNL Gibson]-bibliotheek voor integratie met [!DNL Experience Manager Forms] (NPR-36211).
+
+**Foundation JEE**
+
+* Wanneer u Eindpuntbeheer op AdminUI selecteert, [!DNL Experience Manager Forms] toont het `endpoint registry failure` foutenbericht (CQ-4320249).
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -365,34 +420,31 @@ B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/pa
 
 Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md) voor meer informatie over de platforms die zijn gecertificeerd voor deze release.
 
-<!--
-
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Adobe Experience Manager Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Sla over als u Experience Manager Forms niet gebruikt. Correcties in Experience Manager Forms worden één week na de geplande [!DNL Experience Manager] Service Pack-release geleverd via een afzonderlijk add-on pakket.
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->AEM 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
+1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) voor uw besturingssysteem.
+1. Installeer het invoegpakket voor Forms zoals beschreven in [AEM Forms-invoegpakketten installeren](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>AEM 6.5.9.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar AEM 6.5.9.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-on Package.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
--->
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in Adobe Experience Manager Forms op JEE worden via een afzonderlijk installatieprogramma geleverd.
+
+Raadpleeg de [releaseopmerkingen](jee-patch-installer-65.md) voor informatie over de installatie van het cumulatieve installatieprogramma voor Experience Manager Forms in JEE en de configuratie na de implementatie.
+
+>[!NOTE]
+>
+>Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste Forms-invoegpakket, verwijdert u het Forms-invoegpakket uit de map `crx-repository\install` en start u de server opnieuw.
 
 ### UberJar {#uber-jar}
 

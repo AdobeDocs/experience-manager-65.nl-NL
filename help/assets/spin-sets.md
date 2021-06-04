@@ -11,7 +11,7 @@ docset: aem65
 feature: centrifuges, middelenbeheer
 role: Business Practitioner, Administrator
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 11%
@@ -36,11 +36,11 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 
 Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
-1. [Upload uw afbeeldingen voor meerdere weergaven.](#uploading-assets-for-spin-sets)
+1. [Upload uw afbeeldingen voor meerdere weergaven](#uploading-assets-for-spin-sets).
 
    U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30 graden (360/12) voor elke opname.
 
-1. [Spin-sets maken.](#creating-spin-sets)
+1. [Spin-sets](#creating-spin-sets) maken.
 
    Als u een centrifugeset wilt maken, selecteert u **[!UICONTROL Create > Spin Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
@@ -56,17 +56,17 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie **[!UICONTROL Tools > Assets > Viewer Presets]** om voorinstellingen voor viewers te maken of te bewerken.
 
-   Zie [Voorinstellingen voor viewers toevoegen en bewerken.](/help/assets/managing-viewer-presets.md)
+   Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/managing-viewer-presets.md).
 
 1. [Spin-sets](#viewing-spin-sets) weergeven.
 
    U kunt sets die zijn gemaakt met voorinstellingen voor batchsets op drie verschillende manieren weergeven en openen. (Sets die zijn gemaakt met voorinstellingen voor batchsets, worden *niet* weergegeven in de gebruikersinterface.)
 
-1. [Voorvertoning van centrifuges.](/help/assets/previewing-assets.md)
+1. [Voorvertoning van centrifuges](/help/assets/previewing-assets.md).
 
    Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
-1. [Spin-sets publiceren.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Spin-sets](/help/assets/publishing-dynamicmedia-assets.md) publiceren.
 
    Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Daarnaast moet u [de viewervoorinstelling](/help/assets/managing-viewer-presets.md) publiceren.
 
@@ -142,7 +142,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken in AEM.
 
    Sleep indien nodig het pictogram Opnieuw ordenen van een element naar de rechterkant van de bestandsnaam van het element om de volgorde van de afbeeldingen in de lijst met sets te wijzigen.
 
-   ![De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie te slepen.](assets/6_5_spinset-reorderassets.png)
+   ![De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie](assets/6_5_spinset-reorderassets.png) te slepen.
 
    De volgorde van frame 11 in de centrifugeerset wijzigen door deze naar een nieuwe locatie te slepen.
 
@@ -162,7 +162,7 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 >
 >U kunt sets ook weergeven in de gebruikersinterface zoals wordt beschreven in [Spin Sets bewerken](#editing-spin-sets).
 
-**Draaisets weergeven**
+**Om de reeksen van Draaien te bekijken:**
 
 1. Bij het openen van de eigenschappen van een afzonderlijk element. Eigenschappen geven aan welke sets het geselecteerde element lid zijn van (onder **[!UICONTROL Member of Sets]**). Klik op de naam van de set om de volledige set weer te geven.
 
@@ -188,7 +188,7 @@ U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges
 * Voorinstellingen voor viewers toepassen.
 * Verwijder de centrifugeset.
 
-**Een centerset bewerken**
+**Een centrifugeset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 

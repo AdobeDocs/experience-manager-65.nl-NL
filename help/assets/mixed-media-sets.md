@@ -11,7 +11,7 @@ docset: aem65
 feature: Mediasets mixen, beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1396'
 ht-degree: 27%
@@ -38,11 +38,11 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](/help/assets/image-sets.md) en [spinsets](/help/assets/spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de viewer voor gemengde mediasets, moet u rekening houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
 
-1. [Gemengde mediasets maken.](#creating-mixed-media-sets)
+1. [Gemengde mediasets](#creating-mixed-media-sets) maken.
 
    Als u een gemengde mediaset wilt maken, tikt u op de pagina Assets op **[!UICONTROL Create > Mixed Media Set]** en geeft u de set een naam, kiest u de assets en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
-   Zie [Werken met kiezers.](/help/assets/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/working-with-selectors.md).
 
 1. Stel [Voorinstellingen voor gemengde media-viewer](/help/assets/managing-viewer-presets.md) naar wens in.
 
@@ -50,13 +50,13 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
    Zie **[!UICONTROL Tools > Assets > Viewer Presets]** om voorinstellingen voor viewers te maken of te bewerken.
 
-   Zie [Voorinstellingen voor viewers toevoegen en bewerken.](/help/assets/managing-viewer-presets.md)
+   Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/managing-viewer-presets.md).
 
-1. [Voorvertoning gemengde mediasets.](#previewing-mixed-media-sets)
+1. [Voorvertoning gemengde mediasets](#previewing-mixed-media-sets).
 
    Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen om de gemengde mediaset in de geselecteerde viewer te bekijken. U kunt verschillende Viewers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
-1. [Gemengde mediasets publiceren.](#publishing-mixed-media-sets)
+1. [Gemengde mediasets](#publishing-mixed-media-sets) publiceren.
 
    Wanneer u een gemengde mediaset publiceert, worden de URL en de insluitreeks geactiveerd. Daarnaast moet u [de viewervoorinstelling](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) publiceren.
 
@@ -86,7 +86,7 @@ U kunt afbeeldingen, afbeeldingssets, centrifuges en video&#39;s toevoegen aan d
 
 Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumerieke volgorde toegevoegd. U kunt elementen handmatig opnieuw ordenen of sorteren nadat u ze hebt toegevoegd.
 
-**Een gemengde mediaset maken**
+**Een gemengde mediaset maken:**
 
 1. Ga in Assets naar de plaats waar u een gemengde mediaset wilt maken, klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Mixed Media Set]**. U kunt de set ook maken vanuit een map die uw assets bevat. De editor voor gemengde mediasets wordt weergegeven.
 
@@ -132,7 +132,7 @@ U kunt een verscheidenheid van het uitgeven taken aan activa in Gemengde Reeksen
 * Voorinstellingen voor viewers toepassen.
 * Wijzig de standaardminiatuur.
 
-**Een gemengde mediaset bewerken**
+**Een gemengde mediaset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 

@@ -11,7 +11,7 @@ docset: aem65
 feature: Afbeeldingssets,middelenbeheer
 role: Business Practitioner, Administrator
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 13%
@@ -40,13 +40,13 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 **Zo kunt u snel aan de slag:**
 
-1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven.](#uploading-assets-in-image-sets)
+1. [Upload uw primaire bronafbeeldingen voor meerdere weergaven](#uploading-assets-in-image-sets).
 
    Begin door de beelden voor uw Reeksen van het Beeld te uploaden. Wanneer u afbeeldingen kiest, moet u niet vergeten dat uw klanten op afbeeldingen kunnen zoomen in de viewer voor de afbeeldingsset. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn voor optimale zoomdetails. Dynamic Media kan afbeeldingen renderen tot 25 megapixels per pixel. U kunt bijvoorbeeld een afbeelding van 5000 x 5000 megapixel of een andere formaatcombinatie van maximaal 25 megapixels gebruiken.
 
    Adobe Experience Manager Assets biedt ondersteuning voor veel bestandsindelingen voor afbeeldingen, maar het wordt aanbevolen afbeeldingen zonder verlies op te nemen in de indeling TIFF, PNG en EPS.
 
-1. [Afbeeldingssets maken.](#creating-image-sets)
+1. [Afbeeldingssets](#creating-image-sets) maken.
 
    In de Reeksen van het Beeld, klikken de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
@@ -59,7 +59,7 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
    Zie [Afbeeldingsset-elementen voorbereiden voor het uploaden en uploaden van uw bestanden](#uploading-assets-in-image-sets).
 
-   Zie [Werken met kiezers.](/help/assets/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/working-with-selectors.md).
 
 1. Voeg [Voorinstellingen voor de afbeeldingsset Viewer toe](/help/assets/managing-viewer-presets.md), indien nodig.
 
@@ -68,11 +68,11 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
    Zie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** als u viewervoorinstellingen wilt maken of bewerken.
 
 1. (Optioneel) [Afbeeldingssets weergeven](/help/assets/image-sets.md#viewing-image-sets) die zijn gemaakt met behulp van voorinstellingen voor batchsets.
-1. [Voorvertoning van afbeeldingssets.](/help/assets/previewing-assets.md)
+1. [Voorvertoning van afbeeldingssets](/help/assets/previewing-assets.md).
 
    Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen, zodat u de Afbeeldingsset kunt bekijken in de geselecteerde viewer. U kunt verschillende kijkers van **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
-1. [Afbeeldingssets publiceren.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Afbeeldingssets](/help/assets/publishing-dynamicmedia-assets.md) publiceren.
 
    Als u een Afbeeldingsset publiceert, wordt de URL geactiveerd en wordt de code ingesloten. Daarnaast moet u [een aangepaste viewer-voorinstelling](/help/assets/managing-viewer-presets.md) publiceren die u hebt gemaakt. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
 
@@ -84,7 +84,7 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
    Zie [Een afbeeldingset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Zie [Afbeeldingssets bewerken als u Afbeeldingssets wilt bewerken.](#editing-image-sets) Bovendien kunt u de eigenschappen [ van de ](/help/assets/manage-assets.md#editing-properties)Afbeeldingsset weergeven en bewerken.
+Zie [Afbeeldingssets bewerken](#editing-image-sets) als u Afbeeldingssets wilt bewerken. Bovendien kunt u [Eigenschappen van de Reeks van het Beeld bekijken en uitgeven](/help/assets/manage-assets.md#editing-properties).
 
 Als u problemen ondervindt bij het maken van sets, raadpleegt u Afbeeldingen en sets in [Problemen met Dynamic Media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
@@ -148,7 +148,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
-   Zie [Werken met kiezers.](/help/assets/working-with-selectors.md)
+   Zie [Werken met kiezers](/help/assets/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 

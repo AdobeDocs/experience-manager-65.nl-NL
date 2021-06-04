@@ -4,14 +4,13 @@ description: AEM Forms JEE Patch Installer
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6b17472b-9226-4319-b305-4dba862d21af
+source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms JEE Patch Installer {#aem-forms-jee-patch-installer}
 
@@ -53,10 +52,12 @@ LinuxNavigate aan de aangewezen folder, en van een bevelherinnering, type
 1. Lees de informatie over het Pre-Installation Summary en klik op **[!UICONTROL Install]**.
 1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
 
-1. Schakel de optie Configuratiebeheer starten uit voordat u op Gereed klikt. Voordat u configuratiebeheer uitvoert met **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeert u naar *&lt;AEMForms_Install_Dir>\configurationManager\bin* en werkt u **axis.jar** bij **axis-1.4.1.1 1.jar** in de volgende bestanden:
+1. Schakel de optie Configuratiebeheer starten uit voordat u op Gereed klikt. Voordat u configuratiebeheer uitvoert met **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeert u naar *&lt;AEMForms_Install_Dir>\configurationManager\bin* en werkt u `ConfigurationManager.lax`- en `ConfigurationManager_IPv6.lax`-bestanden bij met de volgende hernoemingsbewerkingen:
 
-   * ConfigurationManager.lax
-   * ConfigurationManager_IPv6.lax
+   * `axis.jar` tot  `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` tot  `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` tot  `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` tot  `xercesImpl-2.12.0.jar`
 
 1. Het selectievakje Configuratiebeheer starten is standaard ingeschakeld. Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen.
 

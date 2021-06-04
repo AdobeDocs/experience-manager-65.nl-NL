@@ -5,14 +5,13 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-translation-type: tm+mt
-source-git-commit: d700510efb340598a7931647164e22d574884569
+exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '5332'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
@@ -54,7 +53,7 @@ Wanneer u met middelen in deze oplossing werkt, doet u één van het volgende:
 * Upload middelen rechtstreeks naar Dynamic Media Classic en open vervolgens via de **Dynamic Media Classic**-inhoudbrowser voor het ontwerpen van pagina&#39;s of
 * Uploaden naar Experience Manager Assets en vervolgens automatisch publiceren naar Dynamic Media Classic inschakelen; via de inhoudbrowser **Middelen** voor het ontwerpen van pagina&#39;s
 
-De componenten die u voor deze integratie gebruikt, bevinden zich in het gebied **Dynamic Media Classic** in de ontwerpmodus.[Design.](/help/sites-authoring/author-environment-tools.md#page-modes)
+De componenten die u voor deze integratie gebruikt, bevinden zich in het gebied **Dynamic Media Classic** in [Ontwerpmodus](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -424,8 +423,8 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 Voordat u elementen naar Dynamic Media Classic kunt verzenden zonder ze te publiceren, moet u het volgende instellen:
 
-1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
-1. Volg de aanwijzingen op [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen. In het geval van ondersteuning kunt u vragen of een beveiligde voorvertoning voor uw Dynamic Media Classic-account is ingeschakeld.
+1. Volg de aanwijzingen op [Beveiligde voorvertoning instellen voor uw Dynamic Media Classic-account](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 Dit zijn dezelfde stappen die u zou volgen om een veilige testinstallatie te maken in Dynamic Media Classic.
 
@@ -623,4 +622,3 @@ Als u problemen hebt met het integreren van Experience Manager met Dynamic Media
 >Het importeren van activa van een bestaande Dynamic Media Classic-bedrijfsaccount kan lang duren voordat deze in Experience Manager worden weergegeven. Zorg ervoor dat u een map in Dynamic Media Classic aanwijst die niet te veel elementen bevat. De hoofdmap bevat bijvoorbeeld vaak te veel elementen.
 >
 >Als u de integratie wilt testen, moet u het hoofdmappunt alleen naar een submap laten verwijzen in plaats van naar het hele bedrijf.
-

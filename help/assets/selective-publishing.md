@@ -9,7 +9,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publiceren
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '2539'
 ht-degree: 1%
@@ -38,10 +38,10 @@ Ongeacht of u afhankelijk bent van de waarde **[!UICONTROL Publish Assets]** die
 
 Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volgend doen:
 
-* [Publiceer selectief middelen naar Dynamic Media of AEM met Publicatie beheren.](#selective-publish-manage-publication)
-* [Publiceer selectief middelen van Dynamic Media of AEM met Publicatie beheren.](#selective-unpublish-manage-publication)
-* [Elementen publiceren naar Dynamic Media of AEM met Snel publiceren.](#quick-publish-aem-dm)
-* [Publiceer elementen selectief of maak de publicatie ongedaan in de vorm van zoekresultaten.](#selective-publish-unpublish-search-results)
+* [Publiceer selectief middelen naar Dynamic Media of AEM met Publicatie](#selective-publish-manage-publication) beheren.
+* [Publiceer selectief middelen van Dynamic Media of AEM met Publicatie](#selective-unpublish-manage-publication) beheren.
+* [Elementen publiceren naar Dynamic Media of AEM met Snel publiceren](#quick-publish-aem-dm).
+* [Publiceer elementen selectief of maak de publicatie ongedaan door zoekresultaten](#selective-publish-unpublish-search-results).
 
 **Selectieve publicatie op mapniveau in Dynamic Media configureren**
 
@@ -186,7 +186,7 @@ U kunt **[!UICONTROL Quick Publish]** voor eenvoudige gevallen van activering va
 
 In de zoekresultaten kunt u elementen uit verschillende middelenmappen met verschillende Dynamic Media-publicatie-instellingen weergeven. Als u een of meer elementen hebt geselecteerd in zoekresultaten en de elementen verschillende Dynamic Media-instellingen voor de publicatiemodus hebben, kunt u **[!UICONTROL Manage Publication]** op de werkbalk activeren om te publiceren of de publicatie ongedaan te maken.
 
-Zie ook [Middelen zoeken in AEM.](/help/assets/search-assets.md)
+Zie ook [Middelen zoeken in AEM](/help/assets/search-assets.md).
 
 **Elementen selectief publiceren of verwijderen via zoekresultaten**
 

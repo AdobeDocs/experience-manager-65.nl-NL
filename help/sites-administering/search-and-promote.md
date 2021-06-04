@@ -10,14 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
 
 ---
-
 
 # Integreren met Adobe Search&amp;Promote{#integrating-with-adobe-search-promote}
 
@@ -45,7 +44,7 @@ Voer de volgende taken uit om de service Adobe Search&amp;Promote van uw website
 
 De standaard URL die voor de dienst van de Search&amp;Promote wordt gevormd is `https://searchandpromote.omniture.com/px/`. Om de verschillende dienst te gebruiken, gebruik de console OSGi om een verschillende URL te specificeren.
 
-1. Open de console OSGi en klik de Configuratie tabel. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
+1. Open de console OSGi en klik de Configuratie tabel. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Klik het punt van de Configuratie van de Search&amp;Promote van Dag CQ.
 1. Voer de URL in het vak Externe server-URI in en klik op Opslaan.
 

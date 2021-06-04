@@ -11,7 +11,7 @@ docset: aem65
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '11272'
 ht-degree: 6%
@@ -30,7 +30,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >
 >Voordat u in Dynamic Media met video gaat werken, moet u controleren of uw AEM Dynamic Media-Cloud Services al in de Dynamic Media-Scene7-modus of Dynamic Media-Hybride modus heeft ingeschakeld en geconfigureerd.
 >
->* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in de modus Dynamic Media configureren - Scene7 en [Problemen oplossen in de modus Dynamic Media - Scene7.](/help/assets/troubleshoot-dms7.md)
+>* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in de modus Dynamic Media - Scene7 configureren en [Dynamic Media - Scene7-modus oplossen](/help/assets/troubleshoot-dms7.md).
    >
    >
 * Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Dynamic Media configureren - hybride modus.
@@ -356,7 +356,7 @@ In deze tabel wordt de gegevenssnelheid beschreven van standaardverbindingssnelh
 
 ### Resolutie {#resolution}
 
-**Resolutie **beschrijft de hoogte en breedte van een videobestand in pixels. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 x 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 x 480 of lager).
+**Met** resolutie worden de hoogte en breedte van een videobestand in pixels beschreven. De meeste bronvideo wordt opgeslagen met een hoge resolutie (bijvoorbeeld 1920 x 1080). Voor streamingdoeleinden wordt bronvideo gecomprimeerd tot een lagere resolutie (640 x 480 of lager).
 
 Resolutie en gegevenssnelheid zijn twee geïntegreerde gekoppelde factoren die de videokwaliteit bepalen. Als u dezelfde videokwaliteit wilt behouden, geldt dat hoe hoger het aantal pixels in een videobestand (hoe hoger de resolutie), hoe hoger de gegevenssnelheid. Neem bijvoorbeeld het aantal pixels per frame in een videobestand met een resolutie van 320 x 240 en een resolutie van 640 x 480:
 
@@ -403,9 +403,9 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 1 |
+| Gecodeerd | 640 x 360 | 3 | 3 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -548,7 +548,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 >
 >Zorg ervoor dat u al een of meer kanalen hebt ingesteld in YouTube *before* u kanalen toevoegt onder YouTube Settings in AEM (zie [YouTube instellen in AEM](#setting-up-youtube-in-aem) hieronder). Als u dit niet doet, krijgt u geen enkele waarschuwing voor bestaande kanalen. Google-verificatie vindt echter nog steeds plaats wanneer u een kanaal toevoegt, maar er is geen optie om te kiezen welk kanaal de video wordt verzonden.
 
-Een YouTube-kanaal maken:
+**Een YouTube-kanaal maken:**
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
 1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (die ook als een letter in een cirkel met effen kleuren kan worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
@@ -761,7 +761,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
-Video&#39;s publiceren naar uw YouTube-kanaal:
+**Video&#39;s publiceren naar uw YouTube-kanaal:**
 
 1. Navigeer in AEM naar een video-element dat u naar het YouTube-kanaal wilt publiceren.
 1. Selecteer het video-element (de adaptieve videoset).
@@ -797,7 +797,7 @@ U kunt een YouTube URL-tekenreeks verkrijgen die door Dynamic Media wordt gegene
 >
 >De YouTube-URL kan pas worden gekopieerd nadat u het video-element naar YouTube hebt gepubliceerd.
 
-YouTube-URL&#39;s koppelen aan uw webtoepassing:
+**YouTube-URL&#39;s koppelen aan uw webtoepassing:**
 
 1. Navigeer naar het *YouTube gepubliceerde* videoelement waarvan u de URL wilt kopiëren en selecteer het.
 
@@ -821,7 +821,7 @@ Wanneer u de publicatie van een video-element in AEM ongedaan maakt, wordt de vi
 >
 >Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
-Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:
+**Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:**
 
 1. Navigeer naar de video-elementen waarvan u de publicatie via uw YouTube-kanaal wilt ongedaan maken.
 1. Selecteer in de modus voor middelenselectie een of meer gepubliceerde video-elementen.
@@ -836,7 +836,7 @@ Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepas
 
 ### Voortgang {#monitoring-progress} controleren
 
-De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):
+**De voortgang controleren (inclusief mislukte codering/YouTube-publicatie):**
 
 1. Voortgang videocodering weergeven in map met elementen:
 
@@ -955,7 +955,7 @@ Hoe u een melding configureert, hangt af van het feit of u berichten voor coderi
    >Deze e-mailberichten zijn specifiek voor YouTube en vormen een aanvulling op de algemene e-mailmeldingen over de workflow. Dientengevolge, kunt u twee reeksen e-mailbericht ontvangen - het generische bericht beschikbaar in **[!UICONTROL Day CQ Workflow Email Notification Service]** en één specifiek voor YouTube afhankelijk van uw configuratiemontages.
 
 1. Tik op het pictogram **[!UICONTROL Done]** (vinkje) wanneer u klaar bent, in de rechterbovenhoek van het dialoogvenster.
-1. Tik in de rechterbovenhoek op de pagina Publiceren naar YouTube-workflow op **[!UICONTROL Sync]**.
+1. Tik op de workflowpagina Publiceren naar YouTube in de rechterbovenhoek op **[!UICONTROL Sync]**.
 
 ## Videorapporten {#viewing-video-reports} weergeven
 
@@ -987,7 +987,7 @@ Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogege
 
 Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Cloud Services van Dynamic Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Hiervoor moet de publicatieserver echter al zijn ingesteld. Als de publicatieserver niet is ingesteld, kunt u nog steeds publiceren om het videoverslag te bekijken. U moet echter wel terugkeren naar de Dynamic Media Cloud Configuration en op **[!UICONTROL OK]** tikken.
 
-Videorapporten weergeven:
+**Videorapporten weergeven:**
 
 1. Tik in de linkerbovenhoek van AEM op het AEM-logo en tik vervolgens in het linkerspoor op **[!UICONTROL Tools]** (hamerpictogram) > **[!UICONTROL Assets]** > **[!UICONTROL Video Reports]**.
 1. Voer een van de volgende handelingen uit op de pagina Videorapporten:
@@ -1008,7 +1008,7 @@ Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstre
 
 Gebruik de [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) en de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videoviewers te maken.
 
-U kunt als volgt videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de HTML5 Viewer SDK-API:
+**U kunt als volgt videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de HTML5 Viewer SDK-API:**
 
 1. Navigeer naar een gepubliceerd video-element.
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de assetpagina de optie **[!UICONTROL Viewers]**.
@@ -1108,7 +1108,7 @@ Zie [Statische (niet-afbeeldings) inhoud dienen](https://experienceleague.adobe.
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*.
 
-   Zie [Elementen publiceren.](/help/assets/publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Voer een van de volgende handelingen uit:
 
@@ -1311,7 +1311,7 @@ Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 1. Tik **[!UICONTROL OK]** om terug te keren naar het tabblad Eigenschappen.
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]** en tik vervolgens op het pictogram Startpagina Vorige in de linkerbovenhoek om terug te keren naar AEM.
 
-   Zie [Een videominiatuur toevoegen.](#adding-a-video-thumbnail)
+   Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 
 ### Een aangepaste videominiatuur {#adding-a-custom-video-thumbnail-1} toevoegen
 

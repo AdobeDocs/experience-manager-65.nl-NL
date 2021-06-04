@@ -5,14 +5,13 @@ uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
-translation-type: tm+mt
-source-git-commit: 66f46a34832254af74c72da16ec8ebe3eb8cd46d
+exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
 
 ---
-
 
 # Video-uitvoeringen {#video-renditions}
 
@@ -34,7 +33,7 @@ De lijst met video-uitvoeringen wordt weergegeven in het deelvenster **[!UICONTR
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-[Dynamische Media Cloud-services configureren om de proxyserver voor met DM gecodeerde uitvoeringen te configureren.](config-dynamic.md)
+[configureer Dynamic Media Cloud-services](config-dynamic.md) om de proxyserver voor met DM gecodeerde uitvoeringen te configureren.
 
 [Maak een overeenkomstig videoprofiel](video-profiles.md) om video-uitvoeringen met de gewenste parameters te genereren.
 

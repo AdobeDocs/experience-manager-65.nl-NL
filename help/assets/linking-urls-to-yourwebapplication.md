@@ -10,7 +10,7 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuratie
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 9%
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 Uw websites en toepassingen hebben via URL-oproepen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
-U verbindt met URLs slechts als u *niet* gebruikend AEM als WCM bent. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM gebruikt als uw WCM, [voegt u de activa direct op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U verbindt met URLs slechts als u *niet* gebruikend AEM als WCM bent. Linking-versus insluiten-wordt gebruikt wanneer u een videospeler als pop-up of modaal venster wilt leveren. Als u AEM als WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
 Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s en toepassingen te plaatsen.
 
@@ -29,13 +29,13 @@ Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s
 >
 >URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
-Zie ook [Video- of afbeeldingsviewer insluiten op een webpagina.](embed-code.md)
+Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](embed-code.md).
 
-Zie ook [YouTube-URL&#39;s koppelen aan uw webtoepassing.](video.md)
+Zie ook [YouTube-URL&#39;s koppelen aan uw webtoepassing](video.md).
 
-Zie ook [Geoptimaliseerde afbeeldingen voor een responsieve site leveren.](responsive-site.md)
+Zie ook [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
-Zie ook [Elementen uploaden.](manage-assets.md#uploading-assets)
+Zie ook [Elementen uploaden](manage-assets.md#uploading-assets).
 
 ## Een URL verkrijgen voor een element {#obtaining-a-url-for-an-asset}
 
@@ -59,7 +59,7 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
-   Zie [Elementen publiceren.](publishing-dynamicmedia-assets.md)
+   Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    Zie [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 

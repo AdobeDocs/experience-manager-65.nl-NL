@@ -8,7 +8,7 @@ content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN-cache
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery 
 
 >[!IMPORTANT]
 >
->De volgende stappen zijn alleen van toepassing op de Dynamic Media - Scene7-modus in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) of hoger. Deze CDN-validatiefunctie vereist ook dat u de uit-van-de-box CDN gebruikt die is gebundeld met Experience Manager Dynamic Media. andere aangepaste CDN&#39;s worden niet ondersteund.<br>Als u Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) of vroeger gebruikt, volg de stappen die in het  [Invalideren van het CDN geheime voorgeheugen door middel van Dynamic Media Classic worden gevonden.](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>De volgende stappen zijn alleen van toepassing op de Dynamic Media - Scene7-modus in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) of hoger. Deze CDN-validatiefunctie vereist ook dat u de uit-van-de-box CDN gebruikt die is gebundeld met Experience Manager Dynamic Media. andere aangepaste CDN&#39;s worden niet ondersteund.<br>Als u Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) of vroeger gebruikt, volg de stappen die in het  [Invalideren van het CDN geheime voorgeheugen door middel van Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md) worden gevonden.
 
 Zie ook [Caching overzicht in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 

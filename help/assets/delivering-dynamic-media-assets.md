@@ -11,7 +11,7 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Middelenbeheer, uitvoeringen
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Met Dynamic Media hebt u verschillende opties:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
-   * Als uw site reageert, kunt u [geoptimaliseerde afbeeldingen leveren.](/help/assets/responsive-site.md)
+   * Als uw site responsief is, kunt u geoptimaliseerde afbeeldingen ](/help/assets/responsive-site.md) leveren.[
 
 >[!NOTE]
 >

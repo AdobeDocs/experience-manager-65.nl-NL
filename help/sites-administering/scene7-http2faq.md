@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
 
 # Veelgestelde vragen over HTTP2-levering van content{#http-delivery-of-content-faq}
 
-Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen. Wanneer u HTTP/2 gebruikt, zult u een algemene prestatiesverhoging opmerken.
+Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen. Wanneer u HTTP/2 gebruikt, wordt een algemene verhoging van de prestaties opgemerkt.
 
 ## Wat is HTTP/2? {#what-is-http}
 
@@ -23,11 +23,11 @@ HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor inf
 
 De volgende website beschrijft HTTP/2 en de voordelen ervan op een korte en eenvoudige manier:
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[Wat u moet weten over HTTP/2](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/).
 
 ## Wat zijn de belangrijkste voordelen van de overgang naar HTTP/2 voor de levering van inhoud? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Prestatieverbetering varieert sterk op basis van factoren zoals de code van uw website, hoe u Dynamic Media gebruikt, het apparaat van de consument, het scherm en de locatie, enzovoort.
+Prestatieverbetering varieert sterk op basis van factoren zoals de code van uw website, hoe u Dynamic Media gebruikt, het apparaat, het scherm en de locatie van de klant.
 
 Resultaten:
 
@@ -50,7 +50,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. U moet [de Admin Console gebruiken om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen en verzoek om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
+1. [Gebruik de Admin Console om een steungeval ](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) en verzoek tot omschakeling op HTTP/2 tot stand te brengen; het wordt niet automatisch voor u gedaan.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * Primaire contactpersoon, e-mail en telefoonnummer.
@@ -65,7 +65,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
       Als u uw domeinen wilt zoeken, opent u [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meldt u zich aan bij uw bedrijfsaccount of -accounts. Tik vervolgens op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Zoek het veld met het label **[!UICONTROL Published Server Name]**. Als u momenteel een algemeen Dynamic Media-domein gebruikt, kunt u vragen dat u in het kader van deze overgang overschakelt naar uw eigen aangepaste domein.
 
 1. De technische Steun voegt u aan de HTTP/2 klantenwachtlijst toe die op de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-1. Wanneer Adobe klaar is om uw verzoek te behandelen, zal de Steun u contacteren om de overgang te coördineren en een doeldatum te plaatsen.
+1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun u om de overgang te coördineren en een doeldatum te plaatsen.
 1. U wordt op de hoogte gesteld nadat de bewerking is voltooid en u kunt controleren of de overgang naar HTTP2 is gelukt.
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -74,14 +74,14 @@ Verzoeken worden verwerkt in de volgorde waarin ze door Technische Ondersteuning
 
 >[!NOTE]
 >
->Er kan een lange aanlooptijd zijn omdat de overgang naar HTTP/2 het wissen van de cache omvat. Daarom kunnen slechts een paar klantenovergangen tegelijkertijd worden behandeld.
+>Er is een lange aanlooptijd omdat de overgang naar HTTP/2 het wissen van de cache omvat. Daarom kunnen slechts een paar klantenovergangen tegelijkertijd worden behandeld.
 
 ## Wat zijn de risico&#39;s bij de overgang naar HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
 De overgang aan HTTP/2 ontruimt uit uw geheime voorgeheugen bij CDN omdat het het bewegen aan een nieuwe configuratie CDN impliceert.
 
-De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opgeslagen, rechtstreeks aan. Wegens dit, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van onze oorsprong.
+De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opgeslagen, rechtstreeks aan. Wegens dit, is Adobe van plan om een paar klantenovergangen in een tijd te behandelen zodat de aanvaardbare prestaties worden gehandhaafd wanneer het trekken van verzoeken van Adobe oorsprong.
 
 ## Hoe kunt u controleren of een URL of website met HTTP/2 wordt geactiveerd? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-U moet een externsie downloaden om met uw browser van het Web te gebruiken. Voor Firefox en Chrome is er een extensie met de naam **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Wanneer HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
+Download een extensie die u met uw webbrowser kunt gebruiken. Voor Firefox en Chrome is er een extensie met de naam **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers ondersteunen alleen veilig HTTP/2, dus het is nodig een URL met HTTPS aan te roepen om te verifiëren. Als HTTP/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.

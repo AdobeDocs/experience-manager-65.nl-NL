@@ -11,9 +11,9 @@ docset: aem65
 feature: Panoramische afbeeldingen, beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '548'
 ht-degree: 5%
 
 ---
@@ -42,11 +42,11 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets) om elem
 
 ## Dynamic Media Classic {#configuring-dynamic-media-classic-scene} configureren
 
-De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voor de Panoramische afbeeldingsviewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Hiertoe configureert u Dynamic Media Classic als volgt:
+De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voorinstellingen voor de Panoramische Image Viewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media Classic, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Om deze synch te verwezenlijken, vorm als volgt Dynamic Media Classic:
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu **[!UICONTROL Publish Context]** boven op de pagina Publiceren op de afbeeldingsserver.
 
 1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes]**.
@@ -63,7 +63,7 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
    * Stel de modus Vervaging verzoek in op **[!UICONTROL Disabled]**.
    * Stel de modus Verzoek vergrendelen in op **[!UICONTROL Disabled]**.
 
-   Deze instellingen zijn nodig voor het gebruik van de WCM-component `Panoramic Media` in AEM.
+   Deze instellingen zijn nodig voor het gebruik van de WCM-component `Panoramic Media` in Experience Manager.
 
 1. Klik links onder aan de pagina Publiceren afbeeldingsserver op **[!UICONTROL Save]**.
 
@@ -71,13 +71,13 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
 
 ### Problemen met de WCM-component Panoramische media {#troubleshooting-the-panoramic-media-wcm-component} oplossen
 
-Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen componentenplaceholder liet vallen, kunt u het volgende willen problemen oplossen:
+Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen componentenplaceholder liet vallen, los het volgende problemen op:
 
-* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de **[!UICONTROL Reply Image Size Limit]**-instellingen in [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze worden veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de **[!UICONTROL Reply Image Size Limit]**-instellingen in [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * Voor een &quot;Ongeldige vergrendeling&quot; op het element of &quot;Parseerfout&quot; die op de pagina wordt weergegeven, schakelt u de modus Verduistering aanvragen en de modus Vergrendelen aanvragen in om ervoor te zorgen dat deze zijn uitgeschakeld.
-* Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
-* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
+* Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel plaatst en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
+* Als de afbeeldingskwaliteit laag wordt na een verzoek om een afbeelding waarvan de grootte groter is dan de ondersteunde limiet, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
 
 ## Voorvertoning van panorama-afbeeldingen {#previewing-panoramic-images}
 

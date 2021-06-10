@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2e01bb0b16728a8073e5de47deb88de69486d408
+source-git-commit: f62c675af34a4b11cc152eafb7bc561f8b6890a9
 workflow-type: tm+mt
-source-wordcount: '3817'
+source-wordcount: '3797'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,15 @@ ht-degree: 0%
 | Date | 27 mei 2021 |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
 
-<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
-
 ## Wat is inbegrepen in [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen, die sinds de beschikbaarheid van 6.5 versie in April 2019 worden vrijgegeven. Het servicepack is geïnstalleerd op [!DNL Adobe Experience Manager] 6.5.
 
 De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience Manager] 6.5.9.0 worden geïntroduceerd zijn:
 
-* Met de AEM Sites Dynamic Media Foundation-component kunt u nu optimalisatie voor apparaten met een hogere resolutie in- of uitschakelen wanneer u responsieve voorinstelling voor afbeeldingen of Slim uitsnijden gebruikt.
+* [!DNL Experience Manager Sites] Met de Dynamic Media Foundation-component kunt u nu optimalisatie voor apparaten met een hogere resolutie in- of uitschakelen wanneer u responsieve voorinstelling voor afbeeldingen of Slim uitsnijden gebruikt.
 
-* Om prestaties te verbeteren, wordt de verborgen=false voorwaarde verplaatst van vraag JCR naar beoordelaar QueryBuilder. Om te controleren dat een verborgen voorspelling na de wijziging werkt, controleert Adobe Experience Manager of een verborgen map niet wordt weergegeven op de interface.
+* Om prestaties te verbeteren, wordt de verborgen=false voorwaarde verplaatst van vraag JCR naar beoordelaar QueryBuilder. Om te verifiëren dat een verborgen predikaat na de verandering werkt, controleert de Experience Manager dat om het even welke verborgen omslag niet op de interface wordt getoond.
 
 * Mogelijkheid om verwijderde pagina&#39;s en boomstructuur op een [!DNL Experience Manager Sites]-pagina te herstellen.
 
@@ -94,9 +92,9 @@ Voor een volledige lijst van eigenschappen en verhogingen die in [!DNL Experienc
 
 >[!NOTE]
 >
->Vanaf AEM Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager]-toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu]-builds van OpenJDK, die voldoen aan de standaarden van Java SE.
+>Vanaf Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager] toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu] builds van OpenJDK, standaarden-compatibel met Java SE.
 >Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
->U kunt de relevante versies van [!DNL Azul Zulu JDKs] van [de Distributie van de Software van de Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>U kunt de relevante versies van [!DNL Azul Zulu] JDKs van [de Distributie van de Software van Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
 
 Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience Manager] 6.5.9.0-release.
@@ -109,7 +107,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Er wordt een transversale query geactiveerd bij het gebruik van de `com.day.cq.wcm.commons.ReferenceSearch`-API. Het beïnvloedt prestaties van [!DNL Experience Manager] server (NPR-36407).
 
-* De geneste container van de Lay-out binnen een andere resized Container van de Lay-out toont een onjuist aantal kolommen voor zijn kindcomponenten, resulterend in die componenten niet worden gericht aan het net (NPR-36359).
+* De geneste lay-outcontainer binnen een andere resized lay-outcontainer toont een onjuist aantal kolommen voor zijn kindcomponenten, die in deze componenten resulteren die niet aan het net worden gericht (NPR-36359).
 
 * External Link Checker geeft geldige externe koppelingen weer als ongeldige koppelingen (NPR-36289).
 
@@ -212,7 +210,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * Siteauteurs met de machtiging Alleen-lezen kunnen de functie voor slim uitsnijden voor elementen gebruiken en de slimme bijgesneden uitvoeringen bewerken. Gebruikers met de machtiging Alleen-lezen mogen echter de eigenschappen van elementen niet kunnen bewerken in de instantie Sites Dev (CQ-4316450).
 
-* Video-annotaties werken niet voor mappaden waarvoor Dynamic Media-configuratie niet is ingeschakeld, zelfs niet als de AEM-instantie de Dynamic Media-modus is ingesteld (CQ-4314950).
+* Videoannotaties werken niet voor mappaden [!DNL where Dynamic] De mediaconfiguratie is niet ingeschakeld, zelfs niet als de [!DNL Experience Manager]-instantie is ingesteld in de modus [!DNL Dynamic Media] (CQ-4314950).
 
 * Wanneer de titel van het element dubbel-byte, multi-byte, hoge ASCII, Cyrillisch, surrogaat paar, Hebreeuws, Arabisch, en GB18030 karakters heeft, dan bij het publiceren aan Dynamic Media heeft de activa titel een vraagteken (?) (CQ-4311872).
 
@@ -261,7 +259,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * Een `resourceresolver` Het groeperen van bundel veroorzaakt `Sling:alias` vraag om te ontbreken (NPR-35335).
 
-* Het contextpad wordt verwijderd bij het instellen van SSL in AEM (NPR-35294).
+* Het contextpad wordt verwijderd bij het instellen van SSL in Experience Manager (NPR-35294).
 
 * De uitzondering `SegmentNotFound` wordt geretourneerd na een langdurige sessie (NPR-36405).
 
@@ -275,11 +273,11 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 ### Projecten {#projects-6590}
 
-* Kan de eigenschappen van een project niet opslaan omdat het JCR-pad naar het project niet is opgelost door een extra slash (/) die aan het projectpad is toegevoegd (NPR-36191).
+* Kan de eigenschappen van een project niet opslaan omdat het JCR-pad naar het project niet is opgelost door een extra slash (`/`) die aan het projectpad is toegevoegd (NPR-36191).
 
 ### Schermen {#screens-6590}
 
-* [!DNL Experience Manager Screens] De spelers kunnen niet voor authentiek verklaren als de douane 2FA authentificatiemanager wordt gebruikt (NPR-35854).
+* [!DNL Experience Manager Screens] spelers kunnen niet voor authentiek verklaren als een douane twee-factor authentificatiemanager wordt gebruikt (NPR-35854).
 
 ### Handel {#commerce-6590}
 
@@ -291,7 +289,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * Wanneer de optie Automatisch goedkeuren is geselecteerd voor een project met menselijke vertaling, wordt de taakstatus weergegeven als `Unknown` (NPR-35981).
 
-* Wanneer u een pagina vertaalt, werkt het verwijzingspad van de Fragmenten van de Ervaring niet aan de de verwijzingspad van het Fragment van de bestemmingsErvaring bij (NPR-35911).
+* Wanneer u een pagina vertaalt, wordt het referentiepad van [!DNL Experience Fragments] niet bijgewerkt naar het referentiepad [!DNL Experience Fragment] (NPR-35911).
 
 * Wanneer u wijzigingen aanbrengt in de bovenliggende en onderliggende pagina&#39;s en de bovenliggende pagina ter vertaling verzendt, worden de onderliggende pagina&#39;s ook onjuist vertaald (NPR-35896).
 
@@ -303,12 +301,12 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 ### Workflow {#workflow-6590}
 
-* Wanneer u op Handelingen Voltooien, Delegeren of Openen klikt voor items die beschikbaar zijn in Inbox, is er geen visuele aanwijzing dat deze handelingen zijn voltooid (NPR-36317).
+* Wanneer u op Handelingen Voltooien, Delegeren of Openen klikt voor items die beschikbaar zijn in Inbox, is er geen visuele aanwijzing voor het voltooien van deze handelingen (NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
-* Bij Spam-filtering verbruikt het systeem 100% van de JAVA-heapruimte die de AEM server omlaag brengt (NPR-36316, NPR-36493).
-* In de forums worden de gegevens van de JCR-sessies die afkomstig zijn van SearchCommentSocialComponentListProvider gelekt (NPR-36235).
+* Bij het filtreren van spam, verbruikt het systeem 100% van de heapruimte Java waardoor de server van de Experience Manager (NPR-36316, NPR-36493) onbruikbaar wordt.
+* In forums worden de gegevens van de JCR-sessies afkomstig van `SearchCommentSocialComponentListProvider` uitgelekt (NPR-36235).
 * Het openen van een specifiek postbusbericht weerspiegelt alle berichten met onjuiste paginering en andere kwesties (NPR-35917).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
@@ -364,7 +362,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * Wanneer u Eindpuntbeheer op AdminUI selecteert, [!DNL Experience Manager Forms] toont het `endpoint registry failure` foutenbericht (CQ-4320249).
 
-Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
+Zie [[!DNL Experience Manager] pagina met beveiligingsbulletins](https://helpx.adobe.com/security/products/experience-manager.html) voor informatie over beveiligingsupdates.
 
 ## 6.5.9.0 installeren {#install}
 
@@ -400,7 +398,7 @@ Voer de volgende stappen uit om het servicepack te installeren op een [!DNL Adob
 
 **Automatische installatie**
 
-Er zijn twee manieren om Adobe Experience Manager 6.5.9.0 automatisch op een werkexemplaar te installeren:
+Er zijn twee manieren om [!DNL Experience Manager] 6.5.9.0 op een werkende instantie automatisch te installeren:
 
 A. Plaats het pakket in de map `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 
@@ -410,7 +408,7 @@ B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/pa
 >
 >Adobe Experience Manager 6.5.9.0 biedt geen ondersteuning voor Bootstrap-installatie.
 
-**Installatie valideren**
+**De installatie valideren**
 
 1. Op de pagina met productinformatie (`/system/console/productinfo`) wordt de bijgewerkte versietekenreeks `Adobe Experience Manager (6.5.9.0)` weergegeven onder [!UICONTROL Installed Products].
 
@@ -473,7 +471,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integrations | Het scherm **[!UICONTROL AEM Cloud Services Opt-In]** is verouderd. Met de Experience Manager en de integratie van Adobe Target die in Experience Manager 6.5 wordt bijgewerkt om de norm API van Adobe Target te steunen, die authentificatie via Adobe IMS en I/O gebruikt, en de groeiende rol van de Lancering van Adobe voor het van instrumenten voorzien van de pagina&#39;s van de Experience Manager voor analyse en verpersoonlijking, is de Opt-In tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke cloudservices voor Experience Managers. |
+| Integrations | Het scherm **[!UICONTROL AEM Cloud Services Opt-In]** is verouderd. Met de Experience Manager en de integratie van Adobe Target die in Experience Manager 6.5 wordt bijgewerkt om de Standaard API van Adobe Target te steunen, die authentificatie via Adobe IMS en [!DNL Adobe I/O] gebruikt, en de groeiende rol van de Lancering van Adobe voor het van instrumenten voorzien van Experience Manager pagina&#39;s voor analyse en verpersoonlijking, is de opt-in tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013 is afgekeurd voor Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}
@@ -484,7 +482,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 Om uw runtime exemplaar terug te winnen, adviseert Adobe om het ontwerp-tijd exemplaar van het model van het douanewerkschema met zijn runtime exemplaar te synchroniseren gebruikend HTTP API:
    `<designModelPath>/jcr:content.generate.json`.
 
-* Als de naam van een map in de hiërarchie wordt gewijzigd in [!DNL Experience Manager Assets] en de geneste map met een element wordt gepubliceerd naar [!DNL Brand Portal], wordt de titel van de map niet bijgewerkt in [!DNL Brand Portal] totdat de hoofdmap opnieuw wordt gepubliceerd.
+* Als de naam van een map in de hiërarchie wordt gewijzigd in [!DNL Assets] en een geneste map met een element wordt gepubliceerd naar [!DNL Brand Portal], wordt de titel van de map niet bijgewerkt in [!DNL Brand Portal] totdat de hoofdmap opnieuw wordt gepubliceerd.
 
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 

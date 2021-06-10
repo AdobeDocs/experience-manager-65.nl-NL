@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 3d6b0c696b625869bc4ed682a310399b3b6301fb
+source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3673'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ In dit artikel worden de functies beschreven die zijn opgenomen in het meest rec
 >
 >Vanaf AEM Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager]-toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu]-builds van OpenJDK, die voldoen aan de standaarden van Java SE.
 >Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
->U kunt de relevante versies van [!DNL Azul Zulu JDKs] van [de Distributie van de Software van de Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>U kunt de relevante versies van [!DNL Azul Zulu] JDKs van [de Distributie van de Software van Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
@@ -244,7 +244,7 @@ Met ondersteuning voor 3D-afbeeldingen in [!DNL Dynamic Media] kunnen klanten 3D
 
 Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] wordt gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] wordt nu gevormd met  [!DNL Brand Portal] door  [!DNL Adobe I/O], die een teken IMS voor vergunning van uw  [!DNL Brand Portal] huurder verwerft.
 
-De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [Elementen van Experience Managers configureren met Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
+De stappen om [!DNL Experience Manager Assets] met [!DNL Brand Portal] te vormen zijn verschillend afhankelijk van uw [!DNL Experience Manager] versie, en of u voor het eerst vormt, of de bestaande configuraties bevordert. Zie [Elementen van Experience Managers configureren met Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
 
 #### Toegankelijkheidsverbeteringen (6.5.4.0) {#accessibility-enhancements-6540}
 

@@ -10,10 +10,9 @@ audience: developer
 feature: Kader voor integratie in de handel
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
@@ -336,6 +335,10 @@ Een algemene uitbreiding van AEM componenten is het wijzigen van de markering di
 
 In ons geval willen we een banner boven op het gummetje weergeven om aan te geven dat het product &quot;Eco Friendly&quot; is op basis van een aangepast kenmerk. Het ontwerppatroon voor [het aanpassen van de prijsverhoging](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) van een component is eigenlijk norm voor alle AEM Componenten, niet alleen voor de AEMComponenten van de Kern van CIF.
 
+>[!NOTE]
+>
+> Als u een component aanpast met de CIF product &amp; categoriekiezers zoals deze Taser van het Product of de CIF paginacomponent zorg ervoor u vereiste `cif.shell.picker` cliëntlib voor de componentendialogen omvat. Zie [Gebruik van CIF product &amp; categoriekiezer](use-cif-pickers.md) voor meer informatie.
+
 1. In winde, navigeer en breid `ui.apps` module uit en breid de omslaghiërarchie uit aan: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer het `.content.xml` bestand.
 
    ![Productieteams ui.apps](../assets/customize-cif-components/product-teaser-ui-apps-ide.png)
@@ -499,3 +502,4 @@ Controleer de functionaliteit van de **New** badge die reeds in de Teaser van he
 - [Aanpassen AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Kerncomponenten aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Aan de slag met AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Gebruik van CIF-product en rubriekkiezer](use-cif-pickers.md)

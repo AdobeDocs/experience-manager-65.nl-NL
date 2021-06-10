@@ -7,10 +7,9 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Kader voor integratie in de handel
-translation-type: tm+mt
-source-git-commit: d92a635d41cf1b14e109c316bd7264cf7d45a9fe
+source-git-commit: d84993e704096eabe85c4d4d61e24096d15ae9bd
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -44,7 +43,9 @@ Het veld Productkiezer ondersteunt de volgende optionele eigenschappen:
 
 Ook worden standaardeigenschappen van diagramvelden zoals `name`, `fieldLabel` of `fieldDescription` ondersteund.
 
-De component `cifproductfield` vereist de clientlib cif.shell.picker. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de eigenschap extraClientlibs gebruiken.
+>[!CAUTION]
+>
+>De `cifproductfield` component vereist `cif.shell.picker` cliëntlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de eigenschap extraClientlibs gebruiken.
 
 Een volledig werkend voorbeeld van `cifproductfield` kan in [CIF de Componenten van de Kern worden gevonden](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. Zie ook [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de documentatie van de Componenten van de AEMKern.
 
@@ -69,6 +70,8 @@ Het veld Categoriekiezer ondersteunt de volgende optionele eigenschappen:
 
 Ook worden standaardeigenschappen van diagramvelden zoals `name`, `fieldLabel` of `fieldDescription` ondersteund.
 
-Hetzelfde als de `cifproductfield`-component vereist de `cifcategoryfield`-component ook de client lib cif.shell.picker. Als u een client aan een dialoogvenster wilt toevoegen, kunt u de eigenschap `extraClientlibs` gebruiken. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de documentatie van de Componenten van de AEMKern.
+>[!CAUTION]
+>
+>Hetzelfde als de `cifproductfield`-component vereist de `cifcategoryfield`-component ook de `cif.shell.picker`-client. Als u een client aan een dialoogvenster wilt toevoegen, kunt u de eigenschap `extraClientlibs` gebruiken. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de documentatie van de Componenten van de AEMKern.
 
 Een volledig werkend voorbeeld van `cifcategoryfield` kan in [CIF de Componenten van de Kern worden gevonden](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.

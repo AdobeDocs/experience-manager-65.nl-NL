@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
-translation-type: tm+mt
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
+exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
+source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 1%
+source-wordcount: '2097'
+ht-degree: 0%
 
 ---
-
 
 # E-mailmelding configureren{#configuring-email-notification}
 
@@ -304,7 +303,7 @@ Een sjabloon toevoegen voor een nieuwe taal:
 >
 >De `<language-code>` die als filename voor het e-mailmalplaatje wordt gebruikt moet een twee-hoofdtaalcode zijn die door AEM wordt erkend. Voor taalcodes is AEM gebaseerd op ISO-639-1.
 
-## AEM Assets-e-mailmeldingen configureren {#assetsconfig}
+## E-mailberichten voor AEM Assets configureren {#assetsconfig}
 
 Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebruikers e-mailmeldingen ontvangen van AEM. Voer de volgende stappen uit om e-mailmeldingen te configureren.
 
@@ -312,3 +311,155 @@ Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebru
 1. Meld u aan bij AEM als beheerder. Klik **Gereedschappen** > **Bewerkingen** > **Webconsole** om de Configuratie van de Console van het Web te openen.
 1. Bewerk **Day CQ DAM Resource Collection Servlet**. Selecteer **E-mail verzenden**. Klik **Opslaan**.
 
+## OAuth {#setting-up-oauth} instellen
+
+AEM biedt OAuth2 ondersteuning voor zijn geïntegreerde Dienst van de Aannemer, om organisaties toe te staan om e-mailvereisten te beveiligen.
+
+U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt beschreven.
+
+### Gmail {#gmail}
+
+1. Uw project maken op `https://console.developers.google.com/projectcreate`
+1. Selecteer uw project en ga naar **API&#39;s &amp; services** - **Dashboard - Credentials**
+1. Configureer het scherm voor OAuth-instemming naar wens
+1. Voeg de volgende twee bereiken toe in het scherm Bijwerken:
+   * `https://mail.google.com/`
+   * `https://www.googleapis.com//auth/gmail.send`
+1. Als u het bereik hebt toegevoegd, gaat u terug naar **Referenties** in het linkermenu en gaat u vervolgens naar **Credentials maken** - **OAuth Client ID** - **Desktop app**
+1. Er wordt een nieuw venster geopend met daarin de client-id en het clientgeheim.
+1. Sla deze gegevens op.
+
+**AEM zijconfiguraties**
+
+>[!NOTE]
+>
+>Adobe Managed Service-klanten kunnen met hun Customer Service Engineer samenwerken om deze wijzigingen aan te brengen in productieomgevingen.
+
+Eerst, vorm de Dienst van de Post:
+
+1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr` te gaan
+1. Zoek naar, klik vervolgens op **Day CQ Mail Service**
+1. Voeg de volgende instellingen toe:
+   * Naam SMTP-serverhost: `smtp.gmail.com`
+   * SMTP-serverpoort: `25` of `587`, afhankelijk van de vereisten
+   * Controleer de vakjes voor **SMPT gebruik SterTLS** en **SMTP vereist SterTLS**
+   * Controleer **OAuth flow** en klik **Save**.
+
+Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
+
+1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr` te gaan
+1. Zoek, dan klik op **CQ de Wijzer SMTP OAuth2 Provider**
+1. Vul de vereiste informatie als volgt in:
+   * Autorisatie-URL: `https://accounts.google.com/o/oauth2/auth`
+   * Token-URL: `https://accounts.google.com/o/oauth2/token`
+   * Scopes: `https://www.googleapis.com/auth/gmail.send` en `https://mail.google.com/`. U kunt meer dan één werkingsgebied toevoegen door **+** knoop aan de rechterkant van elk gevormd werkingsgebied te drukken.
+   * Client-id en clientgeheim: configureer deze velden met de waarden die u hebt opgehaald, zoals beschreven in de bovenstaande alinea.
+   * URL token vernieuwen: `https://accounts.google.com/o/oauth2/token`
+   * Vervaldatum token vernieuwen: nooit
+1. Klik **Opslaan**.
+
+<!-- clarify refresh token expiry, currrently not present in the UI -->
+
+Zodra gevormd, zouden de montages als dit moeten kijken:
+
+![oauth smtp provider](assets/oauth-smtpprov2.png)
+
+Activeer nu de OAuth-componenten. U kunt dit doen door:
+
+1. Ga naar de componentenconsole door deze URL te bezoeken: `http://serveraddress:serverport/system/console/components`
+1. De volgende componenten zoeken
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. Druk het pictogram van het Spel links van de componenten
+
+   ![componenten](assets/oauth-components-play.png)
+
+Bevestig ten slotte de configuratie door:
+
+1. Ga naar het adres van de instantie Publiceren en meld u aan als beheerder.
+1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Gmail opnieuw richten.
+1. Aanmelding en toestemming voor het verlenen van de vereiste machtigingen
+1. Na instemming wordt het token opgeslagen in de opslagplaats. U kunt het onder `accessToken` tot toegang hebben door tot dit URL op uw publicatieexemplaar direct toegang te hebben: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. Het bovenstaande voor elke publicatie-instantie herhalen
+
+<!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
+
+### Microsoft Outlook {#microsoft-outlook}
+
+1. Ga naar [https://portal.azure.com/](https://portal.azure.com/) en meld u aan.
+1. Zoek naar **Azure Actieve Folder** in de onderzoeksbar en klik op het resultaat. U kunt ook rechtstreeks naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) bladeren
+1. Klik op **Toepassingsregistratie** - **Nieuwe registratie**
+
+   ![](assets/oauth-outlook1.png)
+
+1. Vul de informatie in volgens uw vereisten en klik op **Register**
+1. Ga naar de nieuwe app en selecteer **API-machtigingen**
+1. Ga naar **Machtiging toevoegen** - **Machtiging grafiek** - **Gedelegeerde machtigingen**
+1. Selecteer de onderstaande machtigingen voor uw app en klik op **Machtiging toevoegen**:
+   * `SMTP.Send`
+   * `Mail.Read`
+   * `Mail.Send`
+   * `openid`
+   * `offline_access`
+1. Ga naar **Verificatie** - **Voeg een platform** toe - **Web**, en in **Redirect Urls** sectie, voeg volgende URL voor het opnieuw richten van de Code OAuth toe, dan druk **Configure**:
+   * `http://localhost:4503/services/mailer/oauth2/token`
+1. Het bovenstaande voor elke publicatie-instantie herhalen
+1. Configureer de instellingen volgens uw vereisten
+1. Ga vervolgens naar **Certificaten en geheimen**, klik op **Nieuw clientgeheim** en volg de stappen op het scherm om een geheim te maken. Let op dit geheim voor later gebruik
+1. Druk **Overzicht** in de linkerhand ruit en kopieer de waarden voor **toepassings (cliënt) identiteitskaart** en **Folder (huurder) ID** voor later gebruik
+
+Om opnieuw te verpakken, zult u aan de volgende informatie nodig hebben om OAuth2 voor de dienst van de Aannemer op de AEM te vormen:
+
+* Auth URL, die met huurderidentiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* De token-URL, die wordt samengesteld met de huurder-id. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Vernieuwen URL, die met huurder identiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* Client-id
+* Het clientgeheim
+
+**AEM zijconfiguraties**
+
+Vervolgens integreert u uw OAuth2-instellingen met AEM:
+
+1. Ga naar de webconsole van uw lokale instantie door naar `http://serveraddress:serverport/system/console/configMgr` te bladeren
+1. Zoek en klik op **Day CQ Mail Service**
+1. Voeg de volgende instellingen toe:
+   * Naam SMTP-serverhost: `smtp.office365.com`
+   * SMTP-gebruiker: uw gebruikersnaam in e-mailindeling
+   * Adres &quot;Van&quot;: Het e-mailadres dat moet worden gebruikt in het veld &quot;Van:&quot; van berichten die door de mailer worden verzonden
+   * SMTP-serverpoort: `25` of `587` afhankelijk van de vereisten
+   * Controleer de vakjes voor **SMPT gebruik SterTLS** en **SMTP vereist SterTLS**
+   * Controleer **OAuth flow** en klik **Save**.
+1. Zoek, dan klik op **CQ de Wijzer SMTP OAuth2 Provider**
+1. Vul de vereiste informatie als volgt in:
+   * Vul de URL van de autorisatie-URL, de token-URL en de vernieuwingstoken in door deze te construeren zoals beschreven onder [het einde van deze procedure](#microsoft-outlook)
+   * Client-id en clientgeheim: Configureer deze velden met de waarden die u hebt opgehaald zoals hierboven beschreven.
+   * Voeg de volgende Scopes aan de configuratie toe:
+      * openhartig
+      * offline_access
+      * `https://outlook.office365.com/Mail.Send`
+      * `https://outlook.office365.com/Mail.Read`
+      * `https://outlook.office365.com/SMTP.Send`
+   * AuthCode Redirect URL: `http://localhost:4503/services/mailer/oauth2/token`
+   * URL token vernieuwen: dit zou de zelfde waarde moeten hebben zoals Symbolische Url hierboven
+1. Klik **Opslaan**.
+
+Zodra gevormd, zouden de montages als dit moeten kijken:
+
+![](assets/oauth-outlook-smptconfig.png)
+
+Activeer nu de OAuth-componenten. U kunt dit doen door:
+
+1. Ga naar de componentenconsole door deze URL te bezoeken: `http://serveraddress:serverport/system/console/components`
+1. De volgende componenten zoeken
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeGenerateServlet`
+   * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
+1. Druk het pictogram van het Spel links van de componenten
+
+![components2](assets/oauth-components-play.png)
+
+Bevestig ten slotte de configuratie door:
+
+1. Ga naar het adres van de instantie Publiceren en meld u aan als beheerder.
+1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Gmail opnieuw richten.
+1. Aanmelding en toestemming voor het verlenen van de vereiste machtigingen
+1. Na instemming wordt het token opgeslagen in de opslagplaats. U kunt het onder `accessToken` tot toegang hebben door tot dit URL op uw publicatieexemplaar direct toegang te hebben: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `

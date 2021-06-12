@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactieve afbeeldingen
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
 workflow-type: tm+mt
-source-wordcount: '4292'
+source-wordcount: '4256'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Hieronder ziet u een blaasbare banner met een pop-upvenster van QuickView. Een g
 
 Bekijk de volgende interactieve afbeeldingen in actie op de bovenstaande webpagina:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
 
@@ -40,7 +40,7 @@ De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpe
 
 Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op het volgende webpaginavoorbeeld waaraan nog geen interactieve afbeeldingen zijn toegevoegd:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 De zelfstudie helpt u de stappen te illustreren voor het integreren van interactieve afbeeldingen op uw eigen website.
 
@@ -162,7 +162,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende ho
 
 U kunt dezelfde aanpak toepassen als in de drie bovenstaande voorbeelden op de demo-webpagina:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd, klikt u op elke knop en noteert u de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de productenQuickviews beschikbaar op de pagina activeert, hebt u de volgende lijst verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
@@ -356,7 +356,7 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 
 De demo-website als voorbeeld gebruiken:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 Het beeld van de drie mannen is een statische `IMG`-tag:
 
@@ -366,7 +366,7 @@ Het beeld van de drie mannen is een statische `IMG`-tag:
 
 Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit Experience Manager Assets. Het resultaat wordt weergegeven in de volgende URL, die de mogelijk onjuiste interactieve afbeelding op de pagina met drie hotspots per cirkel weergeeft:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 De hotspots op de schopbare interactieve afbeelding van de demo-website zijn dan alleen bedoeld voor weergave. zij zijn nog niet geïntegreerd met de bestaande Snelle meningen.
@@ -513,7 +513,7 @@ Hier volgt de volledige broncode:
 
 De laatste demo-website met de volledig geïntegreerde interactieve afbeelding ziet er als volgt uit:
 
-[https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 

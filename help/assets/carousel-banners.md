@@ -11,9 +11,9 @@ docset: aem65
 feature: Carousel-banners
 role: Business Practitioner, Administrator
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: 4ad5237939289b5411a988424b2a3ecad15ca029
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4655'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Met carrouselbanners kunnen marketers de conversie stimuleren door eenvoudig int
 
 Het maken en wijzigen van inhoud in promotiebanners kan tijdrovend zijn, waardoor u minder snel nieuwe inhoud kunt publiceren of deze doelgerichter kunt maken. Met carrouselbanners kunt u snel roterende banners maken of wijzigen. U kunt interactiviteit toevoegen zoals hotspots die aan productdetails of verwante middelen verbinden, en hen leveren aan om het even welk scherm - latend u nieuwe promotionele inhoud aan markt sneller brengt.
 
-Carrouselbanners worden aangeduid door een banner met het woord **[!UICONTROL CAROUSELSET]**:
+Carousel Banners worden aangeduid door een banner met het woord **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -48,7 +48,7 @@ Speel een analyse op [hoe carrouselbanners worden gecreeerd](https://s7d5.scene7
 
 ## Snel starten: Carrouselbanners {#quick-start-carousel-banners}
 
-Zo kunt u snel aan de slag:
+Zo kunt u snel aan de slag met Carousel Banners:
 
 1. [Identificeer hotspot en beeldkaartvariabelen](#identifying-hotspot-and-image-map-variables)  (slechts voor klanten die de Middelen van de Experience Manager + Dynamic Media gebruiken)
 
@@ -56,7 +56,7 @@ Zo kunt u snel aan de slag:
 
    >[!NOTE]
    >
-   >Als u een klant van de Plaatsen van de Experience Manager of van de Handel bent, kunt u de ingebouwde eigenschap gebruiken om aan productpagina&#39;s te navigeren en bestaande SKUs in de productcatalogus te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over [eCommerce instellen](/help/commerce/cif-classic/administering/generic.md).
+   >Als u een klant van de Plaatsen van de Experience Manager of van de Handel bent, kunt u de ingebouwde eigenschap gebruiken om aan productpagina&#39;s te navigeren en bestaande SKUs (de Houdende Eenheid van het Beeld) in de productcatalogus te zoeken. U hoeft niet handmatig hotspot- of afbeeldingskaartvariabelen in te voeren. Zie informatie over [eCommerce instellen](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >Als u een klant van de Middelen van de Experience Manager en van Dynamic Media bent, gaat u manueel gegevens voor hotspots en beeldkaarten in, en integreert dan gepubliceerde URL of bedt code met uw systeem van het derdeinhoudsbeheer.

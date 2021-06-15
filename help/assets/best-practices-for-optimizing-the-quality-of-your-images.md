@@ -10,7 +10,7 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: d2649ec83424978ba01b9bb61e9f935bdc79aa62
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 5%
@@ -81,10 +81,10 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
 Als beste praktijken, begin met de onscherpe parameter van de maskerstraal. De volgende instellingen voor Straal kunt u gebruiken:
 
-* **[!UICONTROL Website]**: 0,2-0,3 pixels
-* **[!UICONTROL Photographic printing (250-300 ppi)]**: 0,3-0,5 pixels
-* **[!UICONTROL Offset printing (266-300 ppi)]**: 0,7-1,0 pixels
-* **[!UICONTROL Canvas printing (150 ppi)]**: 1,5-2,0 pixels
+* **[!UICONTROL Website]** - 0,2-0,3 pixels
+* **[!UICONTROL Photographic printing (250-300 ppi)]** - 0,3-0,5 pixels
+* **[!UICONTROL Offset printing (266-300 ppi)]** - 0,7-1,0 pixels
+* **[!UICONTROL Canvas printing (150 ppi)]** - 1,5-2,0 pixels
 
 Verhoog de waarde geleidelijk van 1,75 naar 4. Als de verscherping nog steeds niet de gewenste manier is, vergroot u de straal met een decimaalteken en voer de hoeveelheid nogmaals uit van 1,75 naar 4. Herhaal deze bewerking zo nodig.
 

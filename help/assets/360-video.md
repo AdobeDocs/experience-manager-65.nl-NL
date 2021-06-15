@@ -11,7 +11,7 @@ docset: aem65
 feature: 360 VR-video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 0%
@@ -82,8 +82,8 @@ Standaard detecteert Experience Manager video als &quot;360&quot; als de hoogte-
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **Type** eigenschap: Dubbel
-   * **Waarde**: drijvende-kommaverhouding, standaard 2.0.
+   * **Type**  eigenschap - dubbel
+   * **Waarde**  - floating-point aspectverhouding, gebrek 2.0.
 
 Nadat u deze eigenschap hebt ingesteld, wordt deze direct van kracht op zowel bestaande als nieuw geüploade video&#39;s.
 

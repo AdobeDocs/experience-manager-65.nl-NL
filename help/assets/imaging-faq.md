@@ -9,7 +9,7 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Middelenbeheer, uitvoeringen
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -220,7 +220,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 1. De Zorg van de Klant van Adobe voegt u aan de Slimme Lijst van de Wacht van het Beeld toe de klant gebaseerd op de orde waarin de verzoeken werden voorgelegd.
 1. Wanneer Adobe bereid is om uw verzoek te behandelen, steuncontacten u om een doeldatum te coördineren en te plaatsen.
-1. **Optioneel**: U kunt optioneel de functie voor het maken van slimme afbeeldingen in Staging testen voordat Adobe de nieuwe functie in productie neemt.
+1. **Optioneel**  - U kunt optioneel slimme beeldverwerking in Staging testen voordat Adobe de nieuwe functie naar productie verplaatst.
 1. U wordt op de hoogte gesteld na voltooiing door de klantenservice.
 1. Om de prestatieverbeteringen van Smart Imaging te maximaliseren, raadt Adobe aan om de Time To Live (TTL) in te stellen op 24 uur of langer. De TTL bepaalt hoe lang de activa door CDN in het voorgeheugen worden opgeslagen. Deze instelling wijzigen:
 
@@ -235,7 +235,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, vo
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 

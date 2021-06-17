@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1060'
 ht-degree: 1%
 
 ---
-
 
 # Geavanceerde scores en Badges{#advanced-scoring-and-badges}
 
@@ -56,7 +55,7 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 >[!NOTE]
 >
->Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg) om geavanceerde scoring- en merkmogelijkheden te gebruiken.
+>Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg) om geavanceerde mogelijkheden voor scoring en badging te gebruiken.
 
 ## Configureerbare scores-engine {#configurable-scoring-engine}
 
@@ -185,28 +184,28 @@ In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de functie [
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-   * `subRules[] =
-/libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-/libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **Opmerkingen:**
 
 * Zowel `rules` als `sub-rules` knopen zijn van type `cq:Page`.
-
-* `subRules` is een attribuut van type [] Stringon de  `jcr:content` knoop van de regel.
-
+* `subRules` is een attribuut van type `[]` Stringon de  `jcr:content` knoop van de regel.
 * `sub-rules` kunnen worden gedeeld door verschillende scoreregels.
-
 * `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
-
 * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
 ### Inclusief Badgingregels {#included-badging-rules}
@@ -221,4 +220,3 @@ In de release zijn twee geavanceerde regels voor badging opgenomen die overeenko
 * `rules` knooppunten zijn van het type cq:Page.
 * `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
 * Regelnamen moeten uniek zijn, ongeacht de locatie.
-

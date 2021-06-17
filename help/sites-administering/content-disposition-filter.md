@@ -10,10 +10,9 @@ content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
-translation-type: tm+mt
-source-git-commit: cd895fcab5adce600ce230fb6867392e45963c16
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -30,7 +29,7 @@ U kunt [Apache Sling Content Disposition Filter in GitHub](https://github.com/ap
 
 De opties voor het filter voor het verplaatsen van inhoud bieden de volgende functionaliteit:
 
-* **Paden voor positie van inhoud:** een lijst met paden waarop het filter wordt toegepast, gevolgd door een lijst met MIME-typen die op dat pad worden uitgesloten. Dit pad moet een absoluut pad zijn en mag aan het einde een jokerteken (`*`) bevatten, zodat elk bronnenpad overeenkomt met het opgegeven padvoorvoegsel. Bijvoorbeeld: `/content/*:image/jpeg,image/svg+xml` zal het filter toepassen op elk knooppunt in `/inhoud? behalve JPG- en SVG-afbeeldingen
+* **Paden voor positie van inhoud:** een lijst met paden waarop het filter wordt toegepast, gevolgd door een lijst met MIME-typen die op dat pad worden uitgesloten. Dit pad moet een absoluut pad zijn en mag aan het einde een jokerteken (`*`) bevatten, zodat elk bronnenpad overeenkomt met het opgegeven padvoorvoegsel. Bijvoorbeeld: `/content/*:image/jpeg,image/svg+xml` past het filter toe op elk knooppunt in `/content?` behalve JPG- en svg-afbeeldingen
 
 * **Uitgesloten bronnenpaden:** een lijst met uitgesloten bronnen, elk bronnenpad moet als absoluut en volledig gekwalificeerd pad worden opgegeven. Overeenkomende voorvoegsels/jokertekens worden niet ondersteund.
 

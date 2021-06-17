@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
-feature: Content Fragments
+feature: Contentfragmenten
 role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 4%
 
 ---
-
 
 # Markering{#markdown}
 
@@ -175,7 +174,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een reeks codes wilt aangeven, plaatst u deze tussen aanhalingstekens (`). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&amp;grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 
@@ -218,4 +217,3 @@ Backslash-escapes zijn beschikbaar voor de volgende tekens:
     ` - minus sign (hyphen)`
 
     ` . dot`
-

@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuratie, hybride modus
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '7603'
 ht-degree: 1%
@@ -564,8 +564,7 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
    * **Controleer de voorinstelling Video Analytics via het**
 JCRToor de voorinstelling Video Analytics via het JCR hebt u toegang tot CRXDE Lite.
 
-      Experience Manager - Navigeer in CRXDE Lite naar `/conf/global/settings/
-dam/dm/presets/analytics/jcr:content/userdata`
+      Experience Manager - Navigeer in CRXDE Lite naar `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
       Zoals in `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 

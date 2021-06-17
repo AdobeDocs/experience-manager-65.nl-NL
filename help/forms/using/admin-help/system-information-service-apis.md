@@ -9,14 +9,13 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
-
 
 # Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
 
@@ -33,7 +32,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
  <tbody>
   <tr>
    <td><p>SystemInfo.properties</p></td>
-   <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.properties`</p></td>
+   <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.properties'</p></td>
    <td><p>Deze API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
   </tr>
   <tr>
@@ -111,4 +110,3 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   </tr>
  </tbody>
 </table>
-

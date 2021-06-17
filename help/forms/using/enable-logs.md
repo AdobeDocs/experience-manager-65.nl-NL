@@ -11,14 +11,13 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '647'
 ht-degree: 4%
 
 ---
-
 
 # Logbestand inschakelen voor HTML5-formulieren{#enable-logging-for-html-forms}
 
@@ -53,7 +52,7 @@ U kunt de volgende methoden gebruiken om aanmelding op de client in HTML5-formul
 
 ### Het registreren toelaten gebruikend verzoekparameter {#enabling-logging-using-request-parameter}
 
-Met deze methode kunt u logboeken voor een bepaalde aanvraag genereren. De naam van de verzoekparameter is ` logboek. Het logbestand-URL ziet er als volgt uit:
+Met deze methode kunt u logboeken voor een bepaalde aanvraag genereren. De naam van de parameter request is `log`. Het logbestand-URL ziet er als volgt uit:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -95,7 +94,7 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
    <td>OFF<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>3</td>
+   <td>1</td>
    <td>FATAL<br type="_moz" /> </td>
   </tr>
   <tr>

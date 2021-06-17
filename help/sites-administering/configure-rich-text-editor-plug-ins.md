@@ -3,10 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-translation-type: tm+mt
-source-git-commit: 443115b306ff34ee98da9403222874a9700d8aed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '4382'
+source-wordcount: '4380'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ Voor details over de andere configuraties RTE, zie [Rich Text Editor](/help/site
 >
 >Als u met CRXDE Lite werkt, wordt aangeraden de wijzigingen regelmatig op te slaan met de optie [!UICONTROL Save All].
 
-## Een insteekmodule activeren en de eigenschap features {#activateplugin} configureren
+## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
 Voer de volgende stappen uit om een plug-in te activeren. Sommige stappen zijn alleen nodig wanneer u een insteekmodule voor het eerst configureert, omdat de bijbehorende knooppunten niet bestaan.
 
@@ -118,7 +117,7 @@ De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
    * **Type** `String`
    * **** ValueOne van de vereiste plakwijze  `browser`,  `plaintext`of  `wordhtml`.
 
-### Configureer de toegestane indelingen bij het plakken van inhoud {#pasteformats}
+### Indelingen configureren die zijn toegestaan bij het plakken van inhoud {#pasteformats}
 
 De plakken-als-Microsoft-Word (`paste-wordhtml`) wijze kan verder worden gevormd zodat u kunt uitdrukkelijk bepalen welke stijlen worden toegestaan wanneer het kleven in AEM van een ander programma, zoals Microsoft Word.
 
@@ -244,7 +243,7 @@ Voor latere (re-)configuraties, zeg om meer stijlen toe te voegen, volg slechts 
 >
 >Stijlen kunnen ook worden gedefinieerd voor [tabellen of tabelcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Deze configuraties vereisen afzonderlijke procedures.
 
-### De vervolgkeuzelijst Stijl {#styleselectorlist} inschakelen
+### De vervolgkeuzelijst Stijl inschakelen {#styleselectorlist}
 
 Hiervoor schakelt u de insteekmodule Stijlen in.
 
@@ -261,7 +260,7 @@ Hiervoor schakelt u de insteekmodule Stijlen in.
 >
 >Zodra de plug-in Stijlen is ingeschakeld, wordt de vervolgkeuzelijst Stijl weergegeven in het dialoogvenster Bewerken. De lijst is echter leeg omdat er geen stijlen zijn geconfigureerd.
 
-### De locatie van het stijlblad opgeven {#locationofstylesheet}
+### De locatie van de stijlpagina opgeven {#locationofstylesheet}
 
 Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verwijzen:
 
@@ -339,7 +338,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 
 1. Maak een nieuw knooppunt onder het knooppunt Stijlen. Zie [een nieuwe stijl specificeren](#stylesindropdown).
    * Naam: `jpn-word-wrap`
-   * Type: Verzenden:unstructure
+   * Type: `nt:unstructure`
 
 1. Voeg de eigenschap `cssName` toe aan het knooppunt om naar de CSS-klasse te verwijzen. Deze klassenaam is een gereserveerde naam voor de functie voor tekstomloop in Japans.
    * Naam: `cssName`
@@ -365,7 +364,7 @@ Ga als volgt te werk om de stijl te maken die auteurs op Japanse tekst kunnen to
 
    ![Stijlblad om de functie voor tekstomloop in Japans beschikbaar te maken voor auteurs](assets/rte_jpwordwrap_stylesheet.jpg)
 
-## De alineaopmaak {#paraformats} configureren
+## Alinea-indelingen configureren {#paraformats}
 
 Om het even welke tekst authored in RTE wordt geplaatst binnen een blokmarkering, het gebrek is `<p>`. Als u de insteekmodule `paraformat` inschakelt, geeft u via een vervolgkeuzelijst aanvullende blokcodes op die aan alinea&#39;s kunnen worden toegewezen. Alineaopmaak bepaalt het alineatype door de juiste bloktag toe te wijzen. De auteur kan deze selecteren en toewijzen met de kiezer Indeling. De voorbeeldbloklabels omvatten onder andere de standaardalinea &lt;p> en koppen &lt;h1>, &lt;h2> enzovoort.
 
@@ -384,7 +383,7 @@ Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er gee
 
 Voor latere (re-)configuraties, zeg om meer formaten toe te voegen, volg slechts het relevante deel van de instructies.
 
-### De keuzelijst Indeling {#formatselectorlist} inschakelen
+### De keuzelijst Indeling inschakelen {#formatselectorlist}
 
 Schakel eerst de paraformat-plug-in in:
 
@@ -407,7 +406,7 @@ Als de plug-in niet verder is geconfigureerd, zijn de volgende standaardindeling
 >[!CAUTION]
 Wanneer het vormen van de paragraafformaten van RTE, verwijder niet de paragraafmarkering &lt;p> als het formatteren optie. Als de tag `<p>` wordt verwijderd, kan de auteur van de inhoud de optie **Alineaindelingen** niet selecteren, zelfs niet als er extra indelingen zijn geconfigureerd.
 
-### Geef de beschikbare alineaopmaak op {#paraformatsindropdown}
+### Beschikbare alineaopmaak opgeven {#paraformatsindropdown}
 
 Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 
@@ -443,7 +442,7 @@ Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 >[!CAUTION]
 Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<h1>`, `<h2>` en `<h3>`) verwijderd. Maak de `<p>`-indeling opnieuw omdat dit de standaardindeling is.
 
-## Speciale tekens {#spchar} configureren
+## Speciale tekens configureren {#spchar}
 
 Wanneer in een standaard AEM-installatie de `misctools`-plug-in is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
@@ -628,7 +627,7 @@ Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en
 De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellchecker] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
-## De historiegrootte configureren voor het ongedaan maken en opnieuw uitvoeren van handelingen {#undohistory}
+## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
 Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitvoeren. Standaard worden 50 bewerkingen opgeslagen in de geschiedenis. U kunt deze waarde naar wens configureren.
 
@@ -641,7 +640,7 @@ Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitv
 
 1. Sla de wijzigingen op.
 
-## De tabgrootte {#tabsize} configureren
+## De tabgrootte configureren {#tabsize}
 
 Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd aantal spaties ingevoegd. Dit zijn standaard drie vaste spaties en één spatie.
 
@@ -656,7 +655,7 @@ De tabgrootte definiëren:
 
 1. Sla de wijzigingen op.
 
-## Inspringingsmarge {#indentmargin} instellen
+## Inspringingsmarge instellen {#indentmargin}
 
 Wanneer inspringing is ingeschakeld (standaard), kunt u de grootte van de inspringing definiëren:
 
@@ -670,7 +669,7 @@ Deze inspringingsgrootte wordt alleen toegepast op alinea&#39;s (blokken tekst).
    * **Type**:  `Long`
    * **Waarde**: aantal pixels dat is vereist voor de inspringingsmarge.
 
-## De hoogte van bewerkbare ruimte {#editablespace} configureren
+## De hoogte van bewerkbare ruimte configureren {#editablespace}
 
 >[!NOTE]
 Dit is alleen van toepassing wanneer u de RTE gebruikt in een dialoogvenster (niet tijdens het bewerken op locatie in een klassieke UI).

@@ -2,13 +2,12 @@
 title: Toegankelijke eigenschappen en interfaces van [!DNL Experience Manager Assets]
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] gebruikers met een handicap helpen.
 contentOwner: AG
-feature: Asset Management
+feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1907'
 ht-degree: 1%
 
 ---
@@ -86,7 +85,7 @@ De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De 
 | Kolomweergave in de gebruikersinterface [!DNL Assets] | Pijl-omhoog en Pijl-omlaag | Navigeer naar bestanden en mappen in dezelfde hiërarchie. |
 | Kolomweergave in de gebruikersinterface [!DNL Assets] | Pijl-links en Pijl-rechts | Navigeer naar bestanden en mappen boven of onder de huidige map. |
 | Door mappen bladeren in [!DNL Assets] | `/` | Roep zoekopdracht aan door het vak Onderzoek te openen. |
-| [!DNL Assets] Console | ` | Zijsporen in-/uitschakelen |
+| [!DNL Assets] Console | &amp;grave; | Zijsporen in-/uitschakelen |
 | [!DNL Assets] Console | `Alt + 1` | Open de inhoudsstructuur. |
 | [!DNL Assets] Console | `Alt + 2` | Open [!UICONTROL Navigation] linkerspoor. |
 | [!DNL Assets] Console | `Alt + 3` | [!UICONTROL Timeline] van een geselecteerd element weergeven. |
@@ -104,7 +103,7 @@ De volgende handelingen in [!DNL Assets] werken met de vermelde sneltoetsen. De 
 | Elementeigenschappenpagina&#39;s | `Ctrl + S` | Wijzigingen opslaan. |
 | [!DNL Assets] Console | `?` | Zie een lijst met sneltoetsen. |
 
-## Aanmelden en navigeren [!DNL Assets] gebruikersinterface {#login}
+## Aanmelden en navigeren in [!DNL Assets] gebruikersinterface {#login}
 
 Gebruikers kunnen met het toetsenbord naar het aanmeldingsveld navigeren en dit invullen om zich aan te melden. De foutberichten vanwege onjuiste combinaties van gebruikersnaam en wachtwoord op de aanmeldingspagina worden door schermlezers gemeld wanneer de fout optreedt.
 
@@ -119,7 +118,7 @@ Als een gebruiker de optie Help of gebruikersprofiel in het menu uitbreidt, word
 *Figure: Navigating through the options at the top of [!DNL Experience Manager] user interface using `Tab` key.*
 -->
 
-## Door elementen bladeren en de bijbehorende informatie weergeven {#browse}
+## Blader door elementen en bekijk de bijbehorende informatie {#browse}
 
 In de [!DNL Assets]-gebruikersinterface kunnen gebruikers met het toetsenbord door de lijst met bestaande digitale elementen in de DAM-gegevensopslagruimte bladeren, een voorvertoning van een element bekijken of downloaden, gegenereerde uitvoeringen bekijken, schakelen tussen weergaven, de gegenereerde uitvoeringen bekijken, de tijdlijn en versiegeschiedenis bekijken, opmerkingen en verwijzingen bekijken en metagegevens beheren.
 

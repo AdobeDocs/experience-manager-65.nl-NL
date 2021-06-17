@@ -9,10 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -104,7 +103,7 @@ Nadat u WebLogic Server sluit, kunt u de bevelherinnering sluiten waarvan u de M
 >Deze taak kan alleen worden uitgevoerd nadat u een WebLogic-domein en een beheerde server hebt gemaakt.
 
 1. Zorg ervoor dat WebLogic Server en Node Manager lopen.
-1. Start WebLogic Server Administration Console door `https://host name]:[port]`/console` te typen in de URL-regel van een webbrowser.
+1. Start WebLogic Server Administration Console door `https://host name]:[port]/console` in te voeren op de URL-regel van een webbrowser.
 1. Klik onder Domeinstructuur op Omgeving > Servers.
 1. Klik in het rechterdeelvenster op het tabblad Beheer.
 1. Selecteer de beheerde server die u wilt starten.

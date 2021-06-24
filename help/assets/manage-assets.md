@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d06e60baac692c92358244944226b77d5dad4022
+source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
 workflow-type: tm+mt
-source-wordcount: '9540'
+source-wordcount: '9508'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ In [!DNL Adobe Experience Manager Assets] kunt u meer doen dan alleen uw activa 
 
 In dit artikel worden de basistaken voor middelenbeheer beschreven, zoals het maken of uploaden van bedrijfsmiddelen. updates van metagegevens; kopiëren, verplaatsen en verwijderen; publiceert, publiceert en doorzoekt elementen. Om het gebruikersinterface te begrijpen, zie [begin met activa gebruikersinterface](/help/sites-authoring/basic-handling.md). Zie [Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets beheren voor het beheren van inhoudsfragmenten.
 
-## Mappen {#creating-folders} maken
+## Mappen maken {#creating-folders}
 
 Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. [!DNL Experience Manager Assets] vereist niet dat u elementen in mappen ordent om beter te werken.
 
@@ -77,11 +77,9 @@ De omvang waarboven een actief als een groot actief wordt beschouwd, kan worden 
 
 De optie [!UICONTROL Pause] wordt niet weergegeven als een bestand van meer dan 1000 MB wordt geüpload met een bestand van minder dan 1000 MB. Als u echter de bestandsupload van minder dan 1000 MB annuleert, wordt de optie **[!UICONTROL Pause]** weergegeven.
 
-Als u de formaatlimiet wilt wijzigen, configureert u de eigenschap `chunkUploadMinFileSize` van het `fileupload`knooppunt in de CRX-opslagruimte.
+Als u de formaatlimiet wilt wijzigen, configureert u de eigenschap `chunkUploadMinFileSize` van het knooppunt `fileupload` in de CRX-opslagplaats.
 
 Wanneer u **[!UICONTROL Pause]** klikt, schakelt het aan de **[!UICONTROL Play]** optie van een knevel. Klik op **[!UICONTROL Play]** om het uploaden te hervatten.
-
-![Het gepauzeerde uploaden van elementen hervatten](assets/resume-paused-upload.png)
 
 Als u een actieve upload wilt annuleren, klikt u op Sluiten (`X`) naast de voortgangsbalk. Wanneer u de uploadbewerking annuleert, verwijdert [!DNL Assets] het gedeeltelijk geüploade gedeelte van het element.
 
@@ -253,7 +251,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 |  | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Opties voor Photoshop-upload instellen {#setting-photoshop-upload-options}
+#### Photoshop-upopties instellen {#setting-photoshop-upload-options}
 
 PSD-bestanden (Photoshop Document) worden meestal gebruikt om afbeeldingssjablonen te maken. Wanneer u een PSD-bestand uploadt, kunt u automatisch een afbeeldingssjabloon maken vanuit het bestand (selecteer de optie [!UICONTROL Create Template] in het scherm Uploaden).
 
@@ -300,7 +298,7 @@ Kies een van de volgende opties:
 |  | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Opties voor het uploaden van eVideo instellen {#setting-evideo-upload-options}
+#### Uploadopties voor eVideo instellen {#setting-evideo-upload-options}
 
 U transcodeert een videobestand door een keuze te maken uit verschillende videovoorinstellingen.
 
@@ -425,7 +423,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 1. Klik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de [!DNL Assets] gebruikersinterface. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, waarderingen, enzovoort, worden weergegeven op de elementenkaart in de Kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
 
-## Elementen {#copying-assets} kopiëren
+## Elementen kopiëren {#copying-assets}
 
 Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de omslag gekopieerd, samen met zijn inhoudsstructuur. Een gekopieerd middel of een omslag wordt gedupliceerd bij de doelplaats. Het element op de bronlocatie wordt niet gewijzigd.
 
@@ -541,7 +539,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
    Op dezelfde manier kunt u de afbeelding van de pagina Annotatie aanpassen door `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` te bedekken.
 
-   ![Het knooppunt Overlay renditionpicker in CRXDE om de afbeelding van de annotatiepagina aan te passen](assets/renditionpicker-node-crxde.png)
+   ![Het knooppunt Overlay renditionpicker in CRXDE om de afbeelding van de annotatiepagina aan te passen](assets/renditionpicker-node.png)
 
    Als u renditiedimensies voor een video-element wilt configureren, navigeert u naar het `videopicker`-knooppunt in de CRX-opslagruimte op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, bedekt u het knooppunt en bewerkt u de juiste eigenschap.
 
@@ -551,7 +549,7 @@ Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move A
 
 Zie [subassets beheren](managing-linked-subassets.md#generate-subassets) voor meer informatie over het genereren en weergeven van subassets.
 
-## Elementen {#deleting-assets} verwijderen
+## Elementen verwijderen {#deleting-assets}
 
 Voor het verwijderen van elementen vereist een gebruiker verwijderingsmachtigingen op `dam/asset`. Als u alleen over wijzigingsmachtigingen beschikt, kunt u alleen de metagegevens van de elementen bewerken en annotaties toevoegen aan het element. U kunt het element of de metagegevens echter niet verwijderen.
 
@@ -580,11 +578,11 @@ Middelen of mappen met elementen verwijderen:
 >
 >Bestaande redundante, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter worden opgeschoond vanuit de opslagplaats met de methode `clean` in JMX in uw auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
-## Elementen {#downloading-assets} downloaden
+## Elementen downloaden {#downloading-assets}
 
 Zie [Elementen downloaden van Experience Manager](/help/assets/download-assets-from-aem.md).
 
-## Elementen publiceren of verwijderen {#publish-assets}
+## Elementen publiceren of publiceren ongedaan maken {#publish-assets}
 
 Nadat u uw elementen hebt geüpload, verwerkt of bewerkt op de auteur [!DNL Experience Manager], publiceert u het element naar de publicatieserver. Door middel van publicatie wordt het middel openbaar gemaakt. Met de actie Unpublishing is het element van de publicatieserver verwijderd, maar niet van de publicatieserver.
 
@@ -640,7 +638,7 @@ Het zoeken naar middelen is van cruciaal belang voor het gebruik van een systeem
 
 Voor eenvoudige, geavanceerde, en douaneonderzoeken om de meest aangewezen activa te ontdekken en te gebruiken, zie [onderzoeksactiva in Experience Manager](search-assets.md).
 
-## Snelle handelingen {#quick-actions}
+## Snelle acties {#quick-actions}
 
 De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. Voer afhankelijk van het apparaat de volgende handelingen uit om de snelactiepictogrammen weer te geven:
 
@@ -654,8 +652,6 @@ Met de optie **[!UICONTROL Select]** kunt u elementen weergeven, doorbladeren en
 In de lijstweergave en de kolomweergave wordt de optie **[!UICONTROL Select]** weergegeven wanneer u de aanwijzer boven de elementminiatuur plaatst.
 
 In de kaartweergave wordt de optie **[!UICONTROL Select]** weergegeven als een snelle actie.
-
-![Snelle actie selecteren in de weergave Kaart](assets/select_quick_action.png)
 
 Wanneer u in de gebruikersinterface van [!DNL Assets] in een browser door een map of verzameling bladert, kunt u alle weergegeven of geladen elementen selecteren met de optie [!UICONTROL Select All] in de rechterbovenhoek. In eerste instantie worden slechts 100 elementen in de kaartweergave geladen en worden 200 in de lijstweergave geladen. Er worden meer elementen in de weergave geladen wanneer u door de pagina met zoekresultaten bladert. Met de optie [!UICONTROL Select All] selecteert u alleen de geladen elementen.
 
@@ -678,8 +674,6 @@ Met de bewerkingsgereedschappen in de [!DNL Assets]-interface kunt u kleine bewe
 1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** ![Option om een afbeelding uit te snijden.](assets/do-not-localize/crop.png)
 
 1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
-
-   ![Opties voor uitsnijden](assets/crop-options.png)
 
 1. Selecteer het gebied dat u wilt bijsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
 
@@ -736,11 +730,9 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
-   ![Opmerking in het dialoogvenster Annotatie toevoegen](assets/annotation-comment-box.png)
-
 1. Als u een gebruiker op de hoogte wilt stellen van een aantekening, geeft u het e-mailadres van de gebruiker op en voegt u de opmerking toe. Als u Aaron MacDonald bijvoorbeeld wilt informeren over een annotatie, voert u @aa in. Tips voor alle overeenkomende gebruikers worden weergegeven in een lijst. Selecteer het e-mailadres van Aaron in de lijst om de opmerking aan haar toe te voegen. Op dezelfde manier kunt u meer gebruikers overal in de annotatie of ervoor of erna een tag toewijzen.
 
-   ![Geef het e-mailadres van de gebruiker op en voeg opmerkingen toe om de gebruiker op de hoogte te stellen](assets/annotation-add-user-email.png)
+   ![Geef het e-mailadres van de gebruiker op en voeg opmerkingen toe om de gebruiker op de hoogte te stellen](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -771,7 +763,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 >
 >U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties/opmerkingen aan de bovenliggende verzameling toevoegen. De optie Annoteren is niet beschikbaar voor onderliggende verzamelingen.
 
-### Opgeslagen annotaties weergeven {#viewing-saved-annotations}
+### Opgeslagen notities weergeven {#viewing-saved-annotations}
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
@@ -784,7 +776,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
    Klik op **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
-### Annotaties {#printing-annotations} afdrukken
+### Annotaties afdrukken {#printing-annotations}
 
 Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
@@ -807,8 +799,6 @@ Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op **[!UICONTROL
 1. Klik op **[!UICONTROL Print]** op de werkbalk.
 
 1. Kies in het dialoogvenster Afdrukken de positie waar u de annotaties/revisiestatus wilt weergeven in de PDF. Als u bijvoorbeeld wilt dat de annotaties/status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **Linksboven**. Deze optie is standaard geselecteerd.
-
-   ![Positie van annotatie/revisiestatus selecteren en in PDF weergeven vanuit dialoogvenster Afdrukken](assets/Print-annotation-dialog.png)
 
    U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties/status wilt weergeven in de afgedrukte PDF. Kies **[!UICONTROL Next Page]** als u de annotaties/status wilt weergeven op een pagina die gescheiden is van de afgedrukte asset.
 
@@ -856,7 +846,7 @@ Hier is een voorbeeld van hoe u [!DNL Experience Manager] kunt vormen om annotat
 1. Configureer het PDF-bestand met annotaties door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
 1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een geschikt item (gescheiden door komma&#39;s) toe aan de standaardlettertypefamilie.
 
-## Elementversies {#asset-versioning} maken, beheren, voorvertonen en herstellen
+## Elementversies maken, beheren, voorvertonen en herstellen {#asset-versioning}
 
 Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. Versioning helpt bij het terugzetten van elementen naar een vorige status op een later tijdstip. Als u bijvoorbeeld een wijziging in een element ongedaan wilt maken, herstelt u de onbewerkte versie van het element. In [!DNL Experience Manager] kunt u een versie maken, de huidige revisie bekijken, verschillen tussen twee versies van afbeeldingen naast elkaar weergeven en een element terugzetten naar de vorige versie.
 
@@ -909,7 +899,7 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
 
    *Afbeelding: Gebruik de schuifregelaar om de geselecteerde versies van een element eenvoudig te vergelijken met de huidige versie.*
 
-### Een workflow starten op een element {#starting-a-workflow-on-an-asset}
+### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
 
 Als u een workflow wilt toepassen om een element te verwerken, raadpleegt u [workflow starten op een element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-asset).
 
@@ -922,7 +912,7 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om gerelat
 
 Zie [Verzamelingen beheren](/help/assets/manage-collections.md) voor meer informatie over Verzamelingsbeheer.
 
-## Verlopen elementen verbergen bij weergave van elementen in desktop-app of Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
 [!DNL Experience Manager] bureaubladtoepassing biedt toegang tot de DAM-opslagruimte vanaf Windows- of Mac-desktopcomputers. Met Adobe Asset Link hebt u toegang tot elementen vanuit de ondersteunde [!DNL Creative Cloud]-bureaubladtoepassingen.
 

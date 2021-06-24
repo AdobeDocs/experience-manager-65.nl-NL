@@ -3,15 +3,14 @@ title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten maakt in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Architect, Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Vertaling
+exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1738'
 ht-degree: 10%
 
 ---
-
 
 # Vertaalprojecten maken {#creating-translation-projects}
 
@@ -27,7 +26,7 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 >* De vertaaldienstverlener steunt de vertaling van binaire getallen.
 
 
-## Workflow {#create-and-translate-workflow} maken en vertalen
+## Workflow maken en vertalen {#create-and-translate-workflow}
 
 Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal een kopie van de taal genereren. De workflow bevat de volgende opties:
 
@@ -57,7 +56,7 @@ Gebruik de optie **[!UICONTROL Create structure only]** om een hiërarchie van d
 
    ![onthullend-in-activa](assets/reveal-in-assets.png)
 
-### Nieuw vertaalproject maken {#create-a-new-translation-project}
+### Een nieuw vertaalproject maken {#create-a-new-translation-project}
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
@@ -70,15 +69,9 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. Selecteer **[!UICONTROL Create a new translation project]** in de lijst **[!UICONTROL Project]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. Voer in het veld **[!UICONTROL Project Title]** een titel in voor het project.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Klik op **[!UICONTROL Create]**. [!DNL Assets] in de bronmap worden gekopieerd naar de doelmappen voor de landinstellingen die u in stap 4 hebt geselecteerd.
 
@@ -168,14 +161,14 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Navigeer naar de gebruikersinterface [!DNL Assets] en open de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde meta-gegevens te bekijken.
 
-## Taalkopieën {#update-language-copies} bijwerken
+## Taalkopieën bijwerken {#update-language-copies}
 
 Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat. Afhankelijk van de keuze van opties wordt een vertaalproject gemaakt of wordt een bestaand vertaalproject bijgewerkt voor de nieuwe elementen. De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties:
 
 * Een nieuw vertaalproject maken
 * Toevoegen aan bestaand vertaalproject
 
-### Nieuw vertaalproject maken {#create-a-new-translation-project-1}
+### Een nieuw vertaalproject maken {#create-a-new-translation-project-1}
 
 Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks activa waarvoor u een taalexemplaar wilt bijwerken.
 
@@ -234,8 +227,6 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 1. Klik **[!UICONTROL Update language copies]** bij de bodem.
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]**.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. Selecteer in de lijst **[!UICONTROL Existing translation project]** een project om het element voor vertaling toe te voegen.
 

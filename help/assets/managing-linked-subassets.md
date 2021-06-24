@@ -3,17 +3,16 @@ title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
+feature: Beheer van bedrijfsmiddelen
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
+source-git-commit: a564f158cf1040ef43cb9f5dde9f7cb22769587f
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
 
-
-# Samengestelde elementen en elementen van meerdere pagina&#39;s beheren {#managing-compound-assets}
+# Samengestelde en uit meerdere pagina&#39;s bestaande elementen beheren {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] kan vaststellen of een geüpload bestand verwijzingen bevat naar elementen die al in de opslagplaats bestaan. Deze functie is alleen beschikbaar voor ondersteunde bestandsindelingen. Als het geüploade element verwijzingen naar [!DNL Experience Manager] elementen bevat, wordt een bidirectionele koppeling gemaakt tussen de geüploade en de items waarnaar wordt verwezen.
 
@@ -23,7 +22,7 @@ Naast het elimineren van overtolligheid, het van verwijzingen voorzien van de ac
 
 Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van de middelen waarnaar wordt verwezen.
 
-## [!DNL Adobe Illustrator]: Digitale elementen toevoegen als verwijzingen  {#refai}
+## [!DNL Adobe Illustrator]: Digitale elementen toevoegen als verwijzingen {#refai}
 
 U kunt naar bestaande digitale elementen verwijzen vanuit een [!DNL Adobe Illustrator]-bestand.
 
@@ -46,7 +45,7 @@ U kunt naar bestaande digitale elementen verwijzen vanuit een [!DNL Adobe Illust
 
    *Afbeelding: Verwijzingen naar elementen in de elementen.*
 
-## [!DNL Adobe InDesign]: Digitale elementen toevoegen als verwijzingen  {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Digitale elementen toevoegen als verwijzingen {#add-aem-assets-as-references-in-adobe-indesign}
 
 Als u vanuit een [!DNL InDesign]-bestand naar digitale elementen wilt verwijzen, sleept u elementen naar het [!DNL InDesign]-bestand of exporteert u het [!DNL InDesign]-bestand als een ZIP-archief.
 
@@ -58,11 +57,11 @@ Elementen waarnaar wordt verwezen, bestaan al in [!DNL Experience Manager Assets
 
 Wanneer een INDD-bestand wordt geüpload, worden de verwijzingen opgehaald door te zoeken naar elementen met de eigenschappen `xmpMM:InstanceID` en `xmpMM:DocumentID` in de opslagplaats.
 
-### Verwijzingen maken door elementen {#create-references-by-dragging-aem-assets} te slepen
+### Verwijzingen maken door elementen te slepen {#create-references-by-dragging-aem-assets}
 
 Deze procedure is vergelijkbaar met [digitale elementen toevoegen als verwijzingen in Adobe Illustrator](#refai).
 
-### Verwijzingen naar elementen maken door een ZIP-bestand {#create-references-to-aem-assets-by-exporting-a-zip-file} te exporteren
+### Verwijzingen naar elementen maken door een ZIP-bestand te exporteren {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Voer de stappen in [Workflowmodellen maken](/help/sites-developing/workflows-models.md) uit om een nieuwe workflow te maken.
 1. Gebruik de [functie Pakket](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document te exporteren. [!DNL Adobe InDesign] U kunt een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links`-map die subelementen bevat in het [!DNL InDesign]-bestand. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
@@ -70,11 +69,9 @@ Deze procedure is vergelijkbaar met [digitale elementen toevoegen als verwijzing
 1. Start de `Unarchiver`-workflow.
 1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails van het [!DNL InDesign]-element en sluit u [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## [!DNL Adobe Photoshop]: Digitale elementen toevoegen als verwijzingen  {#refps}
+## [!DNL Adobe Photoshop]: Digitale elementen toevoegen als verwijzingen {#refps}
 
 1. Gebruik [!DNL Experience Manager] desktop app om [!DNL Experience Manager Assets] te openen. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie [Elementen in de bureaubladtoepassing plaatsen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Opslaan in [!DNL Photoshop]-bestand op het gekoppelde station of [upload](/help/assets/manage-assets.md#uploading-assets) naar de [!DNL Experience Manager]-opslagplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande [!DNL Experience Manager] elementen weergegeven op de pagina met elementdetails.
@@ -107,13 +104,13 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
 
 Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]**-workflow uit. Er wordt een `cq:Page`-component gegenereerd op basis van de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd, uit de component `cq:Page`. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 
-## Subelementen {#viewing-subassets} weergeven
+## Subelementen weergeven {#viewing-subassets}
 
 De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op ![Option om de linkerrail](assets/do-not-localize/aem_leftrail_contentonly.png) te openen en klik op **[!UICONTROL Subassets]** in de lijst. Wanneer u **[!UICONTROL Subassets]** van de lijst selecteert. U kunt ook de sneltoets `alt + 5` gebruiken.
 
 ![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
 
-## Pagina&#39;s van een bestand met meerdere pagina&#39;s {#view-pages-of-a-multi-page-file} weergeven
+## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
 U kunt een bestand met meerdere pagina&#39;s, zoals een PDF-, INDD-, PPT-, PPTX- en AI-bestand, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Open een element met meerdere pagina&#39;s en klik op **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 

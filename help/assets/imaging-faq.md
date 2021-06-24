@@ -9,15 +9,15 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Middelenbeheer, uitvoeringen
 role: Business Practitioner, Administrator
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 0%
+source-wordcount: '2575'
+ht-degree: 1%
 
 ---
 
 
-# Smart Imaging {#smart-imaging}
+# Slimme afbeeldingen {#smart-imaging}
 
 ## Wat is &quot;Smart Imaging&quot;? {#what-is-smart-imaging}
 
@@ -41,51 +41,52 @@ De volgende voorbeelden van afbeeldingselementen geven de toegevoegde optimalisa
 
 Net als hierboven heeft Adobe ook een test uitgevoerd met 7009 URL&#39;s van live klantsites. Ze konden gemiddeld 38% meer optimalisatie voor de bestandsgrootte voor JPEG bereiken. Voor PNG met WebP-indeling konden deze bestanden gemiddeld nog 31% optimaliseren. Dit soort optimalisatie is mogelijk vanwege de mogelijkheid van Smart Imaging.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 On the mobile web, the challenges are compounded by two factors:
+Op het mobiele web worden de uitdagingen nog verergerd door twee factoren:
 
-* Large variety of devices with different form factors and high-resolution displays.
-* Constrained network bandwidth.
+* Grote verscheidenheid aan apparaten met verschillende vormfactoren en high-resolution vertoningen.
+* Beperkte netwerkbandbreedte.
 
-In terms of images, the goal is to serve the best quality images as efficiently as possible.
+Wat afbeeldingen betreft, is het de bedoeling om afbeeldingen van de beste kwaliteit zo efficiënt mogelijk te bedienen.
 
-### About device pixel ratio optimization {#dpr}
+### Optimalisatie van apparaatpixelverhoudingen {#dpr}
 
-Device pixel ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
+De apparaatpixelverhouding (DPR) - ook wel CSS-pixelverhouding genoemd - is de relatie tussen de fysieke pixels van een apparaat en logische pixels. Vooral met de komst van Retina-schermen groeit de pixelresolutie van moderne mobiele apparaten snel.
 
-Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it look crisp.
+Als u de pixelverhouding van het apparaat inschakelt, wordt de afbeelding weergegeven met de native resolutie van het scherm, waardoor deze er scherp uitziet.
 
-Turning on Smart Imaging DPR configuration automatically adjusts the requested image based on pixel density of the display the request is being served from. Currently, the pixel density of the display comes from Akamai CDN header values.
+Als u de DPR-configuratie voor Smart Imaging inschakelt, wordt de gevraagde afbeelding automatisch aangepast op basis van de pixeldichtheid van de weergave waarvan de aanvraag wordt verzonden. Momenteel is de pixeldichtheid van het beeldscherm afkomstig van Akamai CDN-headerwaarden.
 
-| Permitted values in the URL of an image | Description |
+| Toegestane waarden in de URL van een afbeelding | Beschrijving |
 |---|---|
-| `dpr=off` | Turn off DPR optimization at an individual image URL level.| 
-| `dpr=on,dprValue` | Override the DPR value detected by Smart Imaging, with a custom value (as detected by any client-side logic or other means). Permitted value for `dprValue` is any number greater than 0. Specified values of 1.5, 2, or 3 are typical. |
+| `dpr=off` | Schakel DPR-optimalisatie op individueel afbeeldings-URL-niveau uit. |
+| `dpr=on,dprValue` | Overschrijf de DPR-waarde die door Smart Imaging wordt gedetecteerd, met een aangepaste waarde (zoals wordt gedetecteerd door elke logica aan de clientzijde of andere methode). Toegestane waarde voor `dprValue` is een getal groter dan 0. Opgegeven waarden van 1,5, 2 of 3 zijn standaard. |
 
 >[!NOTE]
 >
->* You can use `dpr=on,dprValue` even if the company level DPR setting as off.
->* Owing to DPR optimization, when the resultant image is greater than the MaxPix Dynamic Media setting, MaxPix width is always recognized by maintaining the image's aspect ratio.
+>* U kunt `dpr=on,dprValue` zelfs gebruiken als het bedrijfniveau DPR plaatsen als weg.
+>* Als de resulterende afbeelding door DPR-optimalisatie groter is dan de Dynamic Media-instelling MaxPix, wordt de breedte van MaxPix altijd herkend door de hoogte-breedteverhouding van de afbeelding te behouden.
 
-| Requested Image size | DPR value | Delivered image size |
+
+| Grootte aangevraagde afbeelding | DPR-waarde | Afgeleverde afbeeldingsgrootte |
 |---|---|---|
 | 816x500 | 1 | 816x500 |
 | 816x500 | 2 | 1632x1000 |
 
-See also [When working with images](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+Zie ook [Bij het werken met afbeeldingen](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### About network bandwidth optimization {#network-bandwidth-optimization}
+### Informatie over netwerkbandbreedteoptimalisatie {#network-bandwidth-optimization}
 
-Turning on Network Bandwidth automatically adjusts the image quality that is served based on actual network bandwidth. For poor network bandwidth, DPR optimization is automatically turned off, even if it is already on.
+Als u Netwerkbandbreedte inschakelt, wordt automatisch de beeldkwaliteit aangepast die wordt aangeboden op basis van de werkelijke netwerkbandbreedte. Voor slechte netwerkbandbreedte, wordt de optimalisering DPR automatisch uitgezet, zelfs als het reeds aanstaat.
 
-If desired, your company can opt out of network bandwidth optimization at the individual image level by appending `network=off` to the URL of the image.
+Uw bedrijf kan desgewenst de optimalisatie van de netwerkbandbreedte op het niveau van de individuele afbeelding uitschakelen door `network=off` aan de URL van de afbeelding toe te voegen.
 
-| Permitted value in the URL of an image | Description |
+| Toegestane waarde in de URL van een afbeelding | Beschrijving |
 |---|---|
-| `network=off` | Turns off network optimization at an individual image URL level. |
+| `network=off` | Hiermee schakelt u netwerkoptimalisatie op individueel afbeeldings-URL-niveau uit. |
 
 >[!NOTE]
 >
->DPR and network bandwidth values are based on the detected client-side values of the bundled CDN. These values are sometimes inaccurate. For example, iPhone5 with DPR=2 and iPhone12 with DPR=3, both show DPR=2. Still, for high-resolution devices, sending DPR=2 is better than sending DPR=1. Coming soon: Adobe is working on client-side code to accurately determine an end user's DPR. -->
+>DPR en de waarden van de netwerkbandbreedte zijn gebaseerd op de ontdekte cliënt-zijwaarden van gebundelde CDN. Deze waarden zijn soms onjuist. iPhone5 met DPR=2 en iPhone12 met DPR=3 tonen beide DPR=2. Voor apparaten met hoge resolutie is het beter DPR=2 te verzenden dan DPR=1 te verzenden. Binnenkort beschikbaar: Adobe werkt aan code aan de clientzijde om de DPR van een eindgebruiker nauwkeurig te bepalen.
 
 ## Wat zijn de belangrijkste voordelen van de nieuwste Smart Imaging? {#what-are-the-key-benefits-of-smart-imaging}
 
@@ -187,15 +188,15 @@ Voor je eerste aangepaste domein zijn er geen extra kosten verbonden met een Dyn
 
 U start het verzoek om intelligente beeldverwerking te gebruiken; deze wordt niet automatisch ingeschakeld.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 By default, Smart Imaging DPR and network optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) one or both of these out-of-the-box enhancements, create a support case as described below.
+Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een Dynamic Media-bedrijfsaccount. Als u een of beide van deze verbeteringen wilt inschakelen (inschakelen), maakt u een ondersteuningscase zoals hieronder wordt beschreven.
 
-The release schedule for Smart Imaging DPR and network optimization is as follows:
+Het releaseschema voor Smart Imaging DPR en netwerkoptimalisatie is als volgt:
 
-| Region | Target date |
+| Regio | Doeldatum |
 |---|---|
-| North America | 24 May 2021 | 
-| Europe, Middle East, Africa | 25 Jun 2021 | 
-| Asia-Pacific | 19 Jul 2021 | -->
+| Noord-Amerika | Live |
+| Europa, Midden-Oosten, Afrika | 13 aug. 2021 |
+| Azië-Stille Oceaan | 22 jul. 2021 |
 
 1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
@@ -235,7 +236,7 @@ De verzoeken worden verwerkt in de orde waarin zij door de Zorg van de Klant, vo
 >
 >Er kan een lange aanlooptijd zijn, omdat het inschakelen van Smart Imaging Adobe het wissen van de cache met zich meebrengt. Daarom kunnen slechts een paar klantenovergangen op elk bepaald ogenblik worden behandeld.
 
-## Wat zijn de risico&#39;s wanneer u overschakelt op het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
+## Wat zijn de risico&#39;s wanneer u overschakelt naar het gebruik van Smart Imaging? {#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
 Er is geen risico voor een klantenwebpagina. Bij de overgang naar Smart Imaging wordt de cache bij de CDN echter gewist, omdat er bij de Experience Manager naar een nieuwe configuratie van Dynamic Media Classic of Dynamic Media moet worden overgeschakeld.
 
@@ -264,9 +265,9 @@ Tijdens de eerste overgang raakten de afbeeldingen in de cache rechtstreeks op s
 
 Ja. U kunt Smart Imaging uitschakelen door de optie `bfc=off` aan de URL toe te voegen.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 ## Can I request DPR and network optimization to be turned off at the company level? {#dpr-companylevel-turnoff}
+## Kan ik vragen dat DPR en netwerkoptimalisatie op bedrijfsniveau worden uitgeschakeld? {#dpr-companylevel-turnoff}
 
-Yes. To disable DPR and network optimization at your company, create a support case as described earlier in this topic. -->
+Ja. Om DPR en netwerkoptimalisering bij uw bedrijf onbruikbaar te maken, creeer een steungeval zoals vroeger in dit onderwerp wordt beschreven.
 
 ## Wat is &quot;tuning&quot; beschikbaar? Zijn er instellingen of gedragingen die kunnen worden gedefinieerd? (#tuning-settings)
 
@@ -280,10 +281,10 @@ De huidige slimme beeldverwerking biedt geen dergelijke provisioningmogelijkhede
 
 Slimme afbeeldingen bepalen of de conversie nuttig is of niet. De nieuwe afbeelding wordt alleen geretourneerd als de conversie resulteert in een kleinere bestandsgrootte met vergelijkbare kwaliteit.
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 ## How does Smart Imaging DPR optimization work with Adobe Experience Manager Sites components and Dynamic Media viewers?
+## Hoe werkt Smart Imaging DPR-optimalisatie met Adobe Experience Manager Sites-componenten en Dynamic Media-viewers?
 
-* Experience Manager Sites Core Components are configured by default for DPR optimization. To avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Experience Manager Sites Core Components Dynamic Media images.
-* Given Dynamic Media Foundation Component is configured by default for DPR optimization, to avoid oversized images owing to server-side Smart Imaging DPR optimization, `dpr=off` is always added to Dynamic Media Foundation Component images. Even if customer deselects DPR optimization in DM Foundation Component, server-side Smart Imaging DPR does not kick in. In summary, in the DM Foundation Component, DPR optimization comes into effect based on DM Foundation Component level setting only.
-* Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
+* De Componenten van de Kern van de Plaatsen van de Experience Manager worden gevormd door gebrek voor optimalisering DPR. `dpr=off` wordt altijd toegevoegd aan Dynamic Media-afbeeldingen van Experience Manager Sites Core Components om te voorkomen dat afbeeldingen te groot worden als gevolg van DPR-optimalisatie voor Smart Imaging op de server.
+* Als Dynamic Media Foundation Component standaard is geconfigureerd voor DPR-optimalisatie, wordt `dpr=off` altijd toegevoegd aan Dynamic Media Foundation Component-afbeeldingen om te grote afbeeldingen te voorkomen door DPR-optimalisatie voor Smart Imaging op de server. Zelfs als de klant DPR-optimalisatie in de DM Foundation Component uitschakelt, wordt de functie Smart Imaging DPR aan de serverzijde niet ingeschakeld. Samengevat, in de Component van de Stichting DM, komt de optimalisering DPR van kracht die op het niveau van de Component van de Stichting wordt gebaseerd DM slechts het plaatsen.
+* Elke DPR-optimalisatie aan de viewerzijde werkt in combinatie met DPR-optimalisatie voor Smart Imaging op de server en resulteert niet in te grote afbeeldingen. Met andere woorden, wanneer DPR door de viewer wordt afgehandeld, zoals de hoofdweergave alleen in een viewer met zoomfunctie, worden de DPR-waarden voor Smart Imaging op de server niet geactiveerd. Op dezelfde manier wordt de DPR-waarde voor Smart Imaging op de server geactiveerd wanneer viewerelementen, zoals stalen en miniaturen, geen DPR-verwerking hebben.
 
-See also [When working with images](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop). -->
+Zie ook [Bij het werken met afbeeldingen](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).

@@ -1,9 +1,10 @@
 ---
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
-source-git-commit: 99636664a49da3ac5d236db5a1185ad6659ee255
+exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
+source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '758'
 ht-degree: 8%
 
 ---
@@ -28,6 +29,23 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Releasedatum: juni 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021,06,18 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| CIF Core-componenten | 1.12.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
+| CIF Venia Reference Site | 2021 06 12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+
+### Wat is er nieuw? {#what-is-new-june}
+
+* Nieuwe CIF-product- en categoriereferentiedetypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
+* New Commerce Content Fragment Core Component
+* Full-text zoekopdracht ondersteund in AEM achterkant
+* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
+* Ondersteuning voor aangepaste HTTP-headers per site/config
+
 ## Releasedatum: Mei 2021
 
 | Component | Versie | Details |
@@ -36,7 +54,7 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | 1.11.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | CIF Venia Reference Site | 2021,05,24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
-### Wat is er nieuw?{#what-is-new-may}
+### Wat is er nieuw? {#what-is-new-may}
 
 * Pagineringsondersteuning voor gekoppelde inhoud in eigenschappen van productconsole
 
@@ -54,7 +72,7 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | 1.10.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2021,04,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw?{#what-is-new-april}
+### Wat is er nieuw? {#what-is-new-april}
 
 * Steun voor categorie UID - dit ontgrendelt derde handelsintegraties voor systemen die Koorden voor categorie ids gebruiken
 
@@ -68,7 +86,7 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 
 * Het veld Hoofdcategorie is niet weergegeven op het tabblad Handel in de pagina-eigenschappen van categoriepagina&#39;s
 
-## Releasedatum: {#what-is-new-march}
+## Releasedatum: maart 2021 {#what-is-new-march}
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
@@ -96,13 +114,13 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | 1.8.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2021,02,24 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw?{#what-is-new-february}
+### Wat is er nieuw? {#what-is-new-february}
 
 * Product Experience Management: Verrijk de pagina&#39;s van de productcatalogus individueel met de Fragmenten van de Ervaring.
 
 * De uitgebreide eigenschappen van de productconsole om verbonden Middelen en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
 
-### Verbeterde {#what-is-improved-february}
+### Verbeterde functies  {#what-is-improved-february}
 
 * Verbeterde gegevenslaag aan de clientzijde met URL- en categoriegegevens voor productafbeeldingen.
 
@@ -116,11 +134,11 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | 1.7.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2021 02 02 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
-### Wat is er nieuw?{#what-is-new-january}
+### Wat is er nieuw? {#what-is-new-january}
 
 * Product Experience Management: Het nieuwe de bezitslusje van de &quot;Handel&quot;voor Activa en de Fragmenten van de Ervaring. Op dit tabblad kunt u elementen en fragmenten uit de ervaring koppelen aan producten en categorieën. Het lusje toont ook gegevens in real time voor verbonden handelsobjecten en een verbinding om details in de productconsole te tonen.
 
-### Verbeterde {#what-is-improved-january}
+### Verbeterde functies  {#what-is-improved-january}
 
 * Verzend gebruikersgegevens na authentificatie naar de Laag van de Gegevens van de Adobe Cliënt.
 

@@ -3,17 +3,16 @@ title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
 contentOwner: AG
 role: Business Practitioner
-feature: Workflow,Renditions
+feature: Workflow,uitvoeringen
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 1%
 
 ---
 
-# Elementen verwerken met behulp van mediaflers en workflows {#processing-assets-using-media-handlers-and-workflows}
+# Elementen verwerken met behulp van mediafuncties en workflows {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld duimnagelgeneratie of meta-gegevensextractie.
 
@@ -72,7 +71,7 @@ Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden g
 
 In het volgende voorbeeld ziet u hoe u de workflow **[!UICONTROL AEM Assets Synchronization]** kunt verbeteren, zodat er subassets worden gegenereerd voor alle assets behalve PDF-documenten.
 
-### Een mediafunctie {#disabling-enabling-a-media-handler} in- of uitschakelen
+### Een mediafunctie in- of uitschakelen {#disabling-enabling-a-media-handler}
 
 De media-handlers kunnen worden uitgeschakeld of ingeschakeld via de Apache Felix Web Management Console. Wanneer de media-handler is uitgeschakeld, worden de taken niet uitgevoerd op de elementen.
 
@@ -130,7 +129,7 @@ De interface en de klassen omvatten:
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
 
-#### Voorbeeld: een specifieke teksthandler {#example-create-a-specific-text-handler} maken
+#### Voorbeeld: een specifieke teksthandler maken {#example-create-a-specific-text-handler}
 
 In deze sectie maakt u een specifieke teksthandler die miniaturen met een watermerk genereert.
 
@@ -369,7 +368,7 @@ Nadat u de volgende procedure hebt uitgevoerd en u een TXT-bestand uploadt naar 
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
@@ -442,7 +441,7 @@ Nadat u de volgende procedure hebt uitgevoerd en u een TXT-bestand uploadt naar 
 1. Kopieer de bundel `myBundle-0.0.1-SNAPSHOT.jar` en bewaar deze onder `/apps/myApp/install` (bijvoorbeeld met WebDAV). De nieuwe teksthandler is nu actief in [!DNL Experience Manager].
 1. Open [!UICONTROL Apache Felix Web Management Console] in uw browser. Selecteer de tab [!UICONTROL Components] en schakel de standaardteksthandler `com.day.cq.dam.core.impl.handler.TextHandler` uit.
 
-## Op Command Line gebaseerde media-handler {#command-line-based-media-handler}
+## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
 [!DNL Experience Manager] kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen (zoals  [!DNL ImageMagick]) om te zetten en de nieuwe vertoning aan het element toe te voegen. U hoeft het opdrachtregelprogramma alleen te installeren op de schijf die als host fungeert voor de [!DNL Experience Manager]-server en een processtap toe te voegen en te configureren voor de workflow. Met het aangeroepen proces met de naam `CommandLineProcess` kunt u filteren op basis van specifieke MIME-typen en meerdere miniaturen maken op basis van de nieuwe uitvoering.
 
@@ -497,7 +496,7 @@ Voeg een element toe aan `/content/dam` om de gewijzigde workflow te testen.
 1. Ga naar de **[!UICONTROL CQ5 DAM]** console, bijvoorbeeld `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element **[!UICONTROL myImage.tiff]** en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
-#### Vorm de CommandLineProcess stap {#configuring-the-commandlineprocess-process-step}
+#### Vorm de het processtap van CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
 In deze sectie wordt beschreven hoe u [!UICONTROL Process Arguments] van [!UICONTROL CommandLineProcess] instelt.
 

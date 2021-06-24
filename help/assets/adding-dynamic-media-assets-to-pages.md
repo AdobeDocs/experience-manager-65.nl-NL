@@ -11,9 +11,9 @@ docset: aem65
 role: Business Practitioner, Administrator
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: componenten,publiceren
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: 3221454e2d2dfd90b645a4c0303404d44f8d373d
 workflow-type: tm+mt
-source-wordcount: '3043'
+source-wordcount: '3085'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ U voegt Dynamic Media-elementen rechtstreeks aan de pagina toe als u Adobe Exper
 >
 >Zorg ervoor dat u elementen publiceert voordat u deze in Experience Manager aan pagina&#39;s toevoegt. Zie [Dynamic Media-middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
-## Een Dynamic Media-component toevoegen aan een pagina {#adding-a-dynamic-media-component-to-a-page}
+## Een Dynamic Media-component aan een pagina toevoegen {#adding-a-dynamic-media-component-to-a-page}
 
 Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Panoramische media, SmartCrop-video of Video 360-mediacomponent aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. De Dynamic Media-componenten worden in de volgende secties beschreven.
 
@@ -56,7 +56,7 @@ Het toevoegen van een 3D-mediacomponent, Dynamic Media, Interactieve media, Pano
 
 1. Als u klaar bent, tikt u in de rechterbovenhoek van het dialoogvenster op het vinkje om de wijzigingen op te slaan.
 
-### Dynamic Media-componenten {#enabling-dynamic-media-components} inschakelen
+### Dynamic Media-componenten inschakelen {#enabling-dynamic-media-components}
 
 Als er geen Dynamic Media-componenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
 
@@ -136,7 +136,7 @@ Wanneer u de Dynamic Media-component toevoegt en **[!UICONTROL Dynamic Media Set
 * U hebt [ingeschakelde Dynamic Media](/help/assets/config-dynamic.md). Dynamic Media is standaard uitgeschakeld.
 * De afbeelding heeft een piramideTIFF-bestand. Afbeeldingen die u importeert voordat u Dynamic Media inschakelt, beschikken niet over een TIFF-bestand met piramide.
 
-#### Wanneer u werkt met afbeeldingen {#when-working-with-images}
+#### Wanneer u met afbeeldingen werkt {#when-working-with-images}
 
 Met de Dynamic Media-component kunt u dynamische afbeeldingen toevoegen, zoals afbeeldingssets, centrifuges en gemengde mediasets. U kunt inzoomen, uitzoomen en, indien van toepassing, een afbeelding binnen een centrifugeset draaien of een afbeelding van een ander type set selecteren.
 
@@ -178,7 +178,7 @@ Bewerk de volgende Dynamic Media-instellingen door te tikken op het pictogram **
 
    ![instelling voor pixelverhouding van apparaat voor voorinstelling afbeelding](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/imaging-faq.md#dpr). Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
 
 * **[!UICONTROL Title]** - Wijzig de titel van de afbeelding.
 
@@ -195,7 +195,7 @@ Bewerk de volgende Dynamic Media-instellingen door te tikken op het pictogram **
 * **[!UICONTROL Height]** - Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heeft. Als u deze waarde leeg laat, wordt het element adaptief.
 
 
-#### Bij het werken met video {#when-working-with-video}
+#### Wanneer u werkt met video {#when-working-with-video}
 
 Met de Dynamic Media-component kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
@@ -254,7 +254,7 @@ Bewerk de volgende Dynamic Media-instelling door in de component op **[!UICONTRO
 
    ![instelling voor pixelverhouding van apparaat voor slim uitsnijden](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+   Zie ook [Optimalisatie pixelverhouding apparaat](/help/assets/imaging-faq.md#dpr). Alle Adobe Experience Manager Dynamic Media Smart Imaging DPR-waarden worden genegeerd.
 
 * **[!UICONTROL Title]** - Wijzig de titel van de slimme-uitsnijdafbeelding.
 
@@ -339,7 +339,7 @@ U kunt de volgende instelling bewerken door te tikken op **[!UICONTROL Configure
 
 Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. Publiceer viewervoorinstellingen voordat u deze gebruikt. Zie [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
-### Video 360 Media-component {#video-media-component}
+### Video 360-mediacomponent {#video-media-component}
 
 Met de component **[!UICONTROL Video 360 Media]** kunt u rechthoekige video op uw webpagina renderen voor een indrukwekkende kijkervaring van een kamer, eigenschap, locatie, landschap of medische procedure.
 
@@ -355,7 +355,7 @@ U kunt de volgende instelling bewerken door te tikken op **[!UICONTROL Configure
 
 Als de viewervoorinstelling die u zoekt niet zichtbaar is, controleert u of deze is gepubliceerd. Zorg ervoor dat u viewervoorinstellingen publiceert voordat u deze gebruikt. Zie [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
-### HTTP/2 gebruiken om Dynamic Media-elementen {#using-http-to-delivery-dynamic-media-assets} te leveren
+### HTTP/2 gebruiken om Dynamic Media-elementen te leveren {#using-http-to-delivery-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 

@@ -3,15 +3,14 @@ title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u afbeeldingen met hyperlinks aan een afbeelding kunt toevoegen.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Beheer van bedrijfsmiddelen
+exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
+source-git-commit: 1cfa58bb7dcbe70906071a22fbae4a9f479a31d9
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
-
 
 # Afbeeldingen met hyperlinks toevoegen {#adding-image-maps}
 
@@ -27,8 +26,6 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    * Selecteer het element in de weergave **[!UICONTROL Card]** of **[!UICONTROL List]** en klik op **[!UICONTROL Edit]** op de werkbalk.
    * Klik op **[!UICONTROL Edit]** op de elementpagina.
-
-      ![bewerkoptie](assets/do-not-localize/edit_icon.png)
 
 1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u **[!UICONTROL Launch Map]** ![afbeeldingskaart](assets/do-not-localize/image-map-icon.png) op de werkbalk.
 1. Selecteer de vorm van de afbeelding met hyperlinks. De hotspot van de geselecteerde vorm wordt op de afbeelding geplaatst.

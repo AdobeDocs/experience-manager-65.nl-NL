@@ -4,10 +4,10 @@ description: Leer hoe te om een project van de Inhoud en van de Handel van de AE
 topics: Commerce
 feature: Kader voor integratie in de handel
 thumbnail: 37843.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+source-git-commit: 61b8d0bf960bd03a19d22061f3c897a56259dd24
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '721'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Het instappen voor AEM Inhoud en Handel is een proces in twee stappen:
 
 2. Verbind AEM met uw handelsoplossing
 
-### Installeer de AEM Inhouds- en Commerce Add-On voor AEM 6.5 {#install-add-on}
+### Installeer de invoegtoepassing AEM inhoud en handel voor AEM 6.5 {#install-add-on}
 
 Download en installeer de AEM Commerce Add-On voor AEM 6.5 van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
@@ -38,7 +38,7 @@ Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installeren
 >
 >Dit zal door CSE voor AEM Beheerde klanten van de Dienst worden gedaan.
 
-### AEM verbinden met uw Systeem van de Handel {#connect}
+### AEM aansluiten op uw systeem voor handel {#connect}
 
 AEM kan met om het even welk handelssysteem worden verbonden dat een toegankelijk eindpunt GraphQL voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
 
@@ -52,7 +52,7 @@ De AEM Inhoud en de Handel toe:voegen-aan en de Componenten van de Kern CIF gebr
 
 CIF toe:voegen-On verstrekt een de volmachtsservlet GraphQL bij `/api/graphql` die naar keuze voor [lokale ontwikkeling](develop.md) kan worden gebruikt. Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het eindpunt van commerceGraphQL via de AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
 
-## Het vormen van Opslag en Catalogi {#catalog}
+## Opslag en catalogi configureren {#catalog}
 
 De toe:voegen-aan en [CIF de Componenten van de Kern ](https://github.com/adobe/aem-core-cif-components) kunnen op veelvoudige AEM plaatsstructuren worden gebruikt die met verschillende handels (of opslagmeningen, etc. worden verbonden). Door gebrek, wordt toe:voegen-On CIF opgesteld met een gebrek config die met de standaardopslag en de catalogus van de Handel van Adobe verbindt (Magento).
 
@@ -79,6 +79,9 @@ De volgende eigenschappen kunnen worden geconfigureerd:
    >
    > Steun voor UIDs werd geïntroduceerd in de Handel van de Adobe (Magento) 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
+   >[!CAUTION]
+   >
+   > Vanaf CIF Core Components versie 2.0.0 is de ondersteuning voor `id` verwijderd en vervangen door `uid`. Als uw project CIF Core Components versie 2.0.0 gebruikt moet u de Steun van UID van de Catalogus toelaten en een geldige categorieUID als &quot;Identifier van de Categorie van de Hoofdmap van de Catalogus gebruiken&quot;.
 
 De configuratie hierboven wordt getoond is voor verwijzing. De projecten zouden hun eigen configuraties moeten verstrekken.
 

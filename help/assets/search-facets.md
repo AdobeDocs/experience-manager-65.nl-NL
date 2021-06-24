@@ -3,15 +3,14 @@ title: Zoeken in facetten om zoekresultaten te filteren
 description: Hoe te om tot stand te brengen, te wijzigen en, onderzoeksfacetten in  [!DNL Adobe Experience Manager] te gebruiken.
 contentOwner: AG
 role: Administrator, Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Zoeken
+exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
+source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
 workflow-type: tm+mt
-source-wordcount: '2277'
+source-wordcount: '2247'
 ht-degree: 14%
 
 ---
-
 
 # Facetten doorzoeken {#search-facets}
 
@@ -23,7 +22,7 @@ Samengevat kunt u met zoekfacetten op verschillende manieren naar elementen zoek
 
 Als u bijvoorbeeld een afbeelding zoekt, kunt u kiezen of u een bitmap- of een vectorafbeelding wilt. U kunt het zoekbereik verder verkleinen door het MIME-type voor de afbeelding op te geven. Op dezelfde manier kunt u bij het zoeken naar documenten de indeling opgeven, bijvoorbeeld PDF of MS Word.
 
-## Een voorspelling {#adding-a-predicate} toevoegen
+## Een voorspelling toevoegen {#adding-a-predicate}
 
 De zoekfacetten die in het deelvenster Filters worden weergegeven, worden in het onderliggende zoekformulier gedefinieerd aan de hand van voorspelden. Als u meer of verschillende facetten wilt weergeven, voegt u voorspelingen toe aan het standaardformulier of gebruikt u een aangepast formulier dat naar keuze facetten bevat.
 
@@ -31,8 +30,6 @@ Voor full-text onderzoeken, voeg [!UICONTROL Fulltext] voorspellen aan de vorm t
 
 1. Klik op het [!DNL Experience Manager]-logo en ga naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. Selecteer **[!UICONTROL Assets Admin Search Rail]** op de pagina Zoeken in Forms en klik vervolgens op **[!UICONTROL Edit]** ![pictogram bewerken](assets/do-not-localize/aemassets_edit.png).
-
-   ![Middelen of Zoeken in beheerderspost zoeken en selecteren](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -126,7 +123,7 @@ Als u een bestaand knooppunt wilt gebruiken, geeft u dit op in het dialoogvenste
 1. Voer in het veld **[!UICONTROL Description]** een optionele beschrijving in en klik op **[!UICONTROL Done]**.
 1. Navigeer naar het deelvenster Zoeken. De voorspelling Opties wordt toegevoegd aan het **deelvenster Zoeken**. De opties voor **[!UICONTROL File Type]** worden getoond als checkboxes.
 
-## Voorspelfunctie voor eigenschappen met meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
+## Eigenschappenvoorspelling voor meerdere waarden toevoegen {#adding-a-multi-value-property-predicate}
 
 Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere waarden. Overweeg een scenario waarbij u afbeeldingen van meerdere producten in [!DNL Assets] hebt en de metagegevens voor elke afbeelding een SKU-nummer bevatten dat aan het product is gekoppeld. Met deze voorspelling kunt u op basis van meerdere SKU-nummers zoeken naar productafbeeldingen.
 
@@ -139,7 +136,7 @@ Met de voorspelling Multi-Value-eigenschap kunt u elementen zoeken naar meerdere
 1. Navigeer naar het deelvenster Filters in de gebruikersinterface [!DNL Assets]. Het predicaat **[!UICONTROL Multi Value Property]** wordt toegevoegd aan het deelvenster.
 1. Geef meerdere waarden op in het veld Meerdere waarden, gescheiden door de scheidingstekens, en voer de zoekopdracht uit. Met de functie voor voorspellen wordt een exacte tekstovereenkomst opgehaald voor de waarden die u opgeeft.
 
-## Voorspelfunctie {#adding-a-tags-predicate} voor tags toevoegen
+## Een voorspelling van tags toevoegen {#adding-a-tags-predicate}
 
 Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen uitvoeren. Standaard zoekt [!DNL Assets] elementen naar een of meer labels die overeenkomen op basis van de tags die u opgeeft. Met andere woorden, de zoekquery voert een OR-bewerking uit met de opgegeven tags. U kunt echter de optie Alle tags afstemmen gebruiken om te zoeken naar elementen die alle tags bevatten die u opgeeft.
 
@@ -156,7 +153,7 @@ Met de tagvoorspelling kunt u op tags gebaseerde zoekopdrachten naar elementen u
 
 1. Selecteer **[!UICONTROL Match all]** om te zoeken naar overeenkomsten die alle markeringen omvatten die u specificeert.
 
-## Andere voorspelling {#adding-other-predicates} toevoegen
+## Andere voorspelling toevoegen {#adding-other-predicates}
 
 Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspelling van opties toevoegt, kunt u de volgende aanvullende voorspelling toevoegen aan het deelvenster Zoeken:
 
@@ -181,7 +178,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 Standaard wordt een vergrendelingspictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) weergegeven vóór **[!UICONTROL Assets Admin Search Rail]** op de pagina **[!UICONTROL Search Forms]**. Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
-![Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast.](assets/locked_admin_rail.png)
+![Vergrendelingspictogram](assets/locked_admin_rail.png)
 
 Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
@@ -204,5 +201,5 @@ Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigi
 >[!MORELIKETHIS]
 >
 >* [Zoekmogelijkheden voor middelen uitbreiden](searchx.md)
->* [Assets doorzoeken](search-assets.md)
+* [Assets doorzoeken](search-assets.md)
 

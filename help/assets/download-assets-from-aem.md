@@ -5,9 +5,9 @@ contentOwner: AG
 role: Business Practitioner
 feature: Middelenbeheer, middelenverdeling
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '846'
 ht-degree: 1%
 
 ---
@@ -29,11 +29,6 @@ De elementtypen Afbeeldingssets, Spin-sets, Gemengde mediasets en Carousel-sets 
 1. Navigeer naar een map die elementen bevat die u wilt downloaden.
 1. Selecteer de map of selecteer een of meer middelen in de map.
 1. Klik op **[!UICONTROL Download]** op de werkbalk.
-
-   ![Beschikbare opties voor het downloaden van Experience Manager-elementen](/help/assets/assets/asset-download1.png)
-
-   *Afbeelding: Opties beschikbaar in het dialoogvenster Downloaden.*
-
 1. Selecteer in het dialoogvenster Downloaden de gewenste downloadopties.
 
    | De optie Exporteren of downloaden | Beschrijving |
@@ -66,7 +61,7 @@ Om het downloaden van activa van uw DAM toe te staan, bijvoorbeeld wanneer het g
 
 [!DNL Experience Manager] past standaard een limiet van 50 MB toe op de downloadgrootte van het ZIP-archief voor `GET`-aanvragen om bestanden te downloaden. Downloads die via `POST` verzoeken of de gebruikersinterface in werking worden gesteld worden niet beïnvloed door deze grens.
 
-## Subserver {#disable-asset-download-servlet} uitschakelen
+## Asset Download-server uitschakelen {#disable-asset-download-servlet}
 
 De `Asset Download Servlet` kan op [!DNL Experience Manager] Publish instanties worden onbruikbaar gemaakt door de berichtcherconfiguratie bij te werken om het even welke verzoeken van de activadownload te blokkeren. servlet kan ook manueel via de console OSGi direct worden onbruikbaar gemaakt.
 

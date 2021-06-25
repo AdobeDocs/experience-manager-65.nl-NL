@@ -2,16 +2,16 @@
 title: Ondersteunde bestandsindelingen en MIME-typen
 description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] and [!DNL Dynamic Media] en de functies die worden ondersteund voor elke indeling.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
-feature: Asset Management,Renditions
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Middelenbeheer, uitvoeringen
+exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1572'
 ht-degree: 2%
 
 ---
-
 
 # Ondersteunde indelingen in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
@@ -128,7 +128,7 @@ De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van 
 
 Zie [Werken met PDF Rasterizer](aem-pdf-rasterizer.md).
 
-## Ondersteunde bibliotheek {#supported-image-transcoding-library} voor transformatie van afbeeldingen
+## Ondersteunde bibliotheek voor afbeeldingstranscodering {#supported-image-transcoding-library}
 
 De Adobe Imaging Transcoding-bibliotheek is een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen uitvoert, zoals coderen, transcoderen, resampling en vergroten/verkleinen.
 
@@ -140,7 +140,7 @@ Zie [Bibliotheek voor beeldtransformatie](imaging-transcoding-library.md).
 
 Met de [!DNL Adobe Camera Raw]-bibliotheek kan [!DNL Assets] Raw-afbeeldingen innemen. Zie [Camera Raw ondersteuning](camera-raw.md).
 
-## Ondersteunde [!DNL Assets] documentindelingen {#supported-document-formats}
+## Ondersteunde [!DNL Assets]-documentindelingen {#supported-document-formats}
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 

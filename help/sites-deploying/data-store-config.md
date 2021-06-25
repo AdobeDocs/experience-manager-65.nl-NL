@@ -11,17 +11,16 @@ topic-tags: deploying
 discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
 legacypath: /deploy/platform/data-store-config
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configureren
+exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
+source-git-commit: e7038e9c2949cb6326470d0248b640e576c7f919
 workflow-type: tm+mt
-source-wordcount: '3424'
+source-wordcount: '3487'
 ht-degree: 0%
 
 ---
 
-
-# Het vormen knoopopslag en gegevensopslag in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Opslaan van knooppunten en gegevensopslag configureren in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -48,7 +47,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 1. Start AEM.
 
-## Configuratie knooppuntopslag {#node-store-configurations}
+## Configuratie van knooppuntopslag {#node-store-configurations}
 
 >[!CAUTION]
 >
@@ -113,7 +112,7 @@ db="aem-author"
 customBlobStore=B"false"
 ```
 
-## Configuraties voor gegevensopslag {#data-store-configurations}
+## Configuraties van gegevensopslag {#data-store-configurations}
 
 Wanneer het behandelen van groot aantal binaire getallen, adviseert men dat een externe gegevensopslag in plaats van de standaardknoopopslag wordt gebruikt om prestaties te maximaliseren.
 
@@ -336,7 +335,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 1. Herhaal stap 1 tot en met 4 voor de tweede AEM.
 1. Start de tweede AEM.
 
-#### Een gedeelde gegevensopslag {#configuring-a-shared-data-store} configureren
+#### Een gedeelde gegevensopslag configureren {#configuring-a-shared-data-store}
 
 1. Maak eerst het configuratiebestand van de gegevensopslagruimte voor elke instantie die nodig is om de gegevensopslag te delen:
 
@@ -447,7 +446,7 @@ accessKey="ASDASDERFAERAER"
 secretKey="28932hfjlkwdo8fufsdfas\=\="
 ```
 
-## Afvalophaling {#data-store-garbage-collection} van gegevensopslag
+## Opruiming voor dataopslag {#data-store-garbage-collection}
 
 Het proces van de huisvuilinzameling van de gegevensopslag wordt gebruikt om het even welke ongebruikte dossiers in de gegevensopslag te verwijderen, waarbij waardevolle schijfruimte in het proces wordt vrijgemaakt.
 
@@ -464,11 +463,19 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
    >
    >De parameter `markOnly` geeft aan of de sweep-fase van de afvalophaling wordt uitgevoerd of niet.
 
-## Opruimverzameling gegevensopslag voor een gedeelde gegevensopslag {#data-store-garbage-collection-for-a-shared-data-store}
+## De Inzameling van de Winkel van gegevens voor een Gedeelde Opslag van Gegevens {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
 >Wanneer het uitvoeren van huisvuilinzameling in een gegroepeerde of gedeelde opstelling van de gegevensopslag (met Mongo of Tar van het Segment) zou het logboek waarschuwingen over de onmogelijkheid kunnen tonen om bepaalde blob IDs te schrappen. Dit gebeurt omdat de blob IDs die in een vorige huisvuilinzameling worden geschrapt verkeerd opnieuw van verwijzingen wordt voorzien door andere cluster of gedeelde knopen die geen informatie over de schrappingen van identiteitskaart hebben. Dientengevolge, wanneer de huisvuilinzameling wordt uitgevoerd registreert het een waarschuwing wanneer het probeert om identiteitskaart te schrappen die reeds in de laatste looppas is geschrapt. Dit gedrag heeft geen invloed op prestaties of functionaliteit.
+
+>[!NOTE]
+> Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. Om dit te voorkomen, moet u BlobTracker op alle auteur onbruikbaar maken en instanties publiceren als volgt:
+>
+> 1. Stop de AEM Instance.
+> 2. Voeg de parameter `blobTrackSnapshotIntervalInSecs=L"0"` in het `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` dossier toe. Deze parameter vereist eik 1.12.0, 1.10.2 of later.
+> 3. Start de AEM opnieuw.
+
 
 Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoning van gegevens op te slaan in een gedeelde gegevensopslag te kunnen uitvoeren:
 
@@ -482,6 +489,4 @@ Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopsl
    1. Ga naar de JMX-console en selecteer de Repository Manager Mbean.
    1. Klik op de **Click startDataStoreGC(booleaanse markOnly)** verbinding.
    1. In het volgende dialoogvenster voert u `false` nogmaals in voor de parameter `markOnly`.
-
    Hiermee worden alle gevonden bestanden gesorteerd met behulp van de markeringsfase die voor is gebruikt en worden de overige bestanden die niet in de gegevensopslag worden gebruikt, verwijderd.
-

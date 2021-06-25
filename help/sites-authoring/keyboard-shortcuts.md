@@ -42,7 +42,7 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 | Consoles | `?` | Help bij sneltoetsen |
 |  | `/` | [search](/help/sites-authoring/search.md) aanroepen |
 |  | `Alt+`&lt;`Number`> | Schakelen tussen de optie [railkiezer](/help/sites-authoring/basic-handling.md#rail-selector) om weer te geven |
-|  | ` | Spoorstaaf verbergen |
+|  | &grave; | Spoorstaaf verbergen |
 |  | `e` | Bewerken |
 |  | `p` | Eigenschappen |
 |  | `m` | Verplaatsen |

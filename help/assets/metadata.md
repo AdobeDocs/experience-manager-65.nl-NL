@@ -1,14 +1,14 @@
 ---
 title: Metagegevens van uw digitale middelen beheren
-description: Leer meer over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] elementen automatisch kunt ordenen en verwerken op basis van hun metagegevens.
+description: Leer meer over de typen metagegevens en hoe u metagegevens kunt beheren voor elementen om elementen eenvoudig te organiseren en te verwerken.
 contentOwner: AG
-feature: Tagging, Metadata
+mini-toc-levels: 1
+feature: Tags, metagegevens
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-translation-type: tm+mt
-source-git-commit: a7a9a31364497ab67d805e45ba4fa03c927828ed
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2240'
+source-wordcount: '2238'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 [!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden die zijn geüpload naar [!DNL Experience Manager Assets], kan het beheer van metagegevens worden geïntegreerd met de creatieve workflow. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens.
 
-## Metagegevens en oorsprong {#how-to-edit-or-add-metadata}
+## Metagegevens en de oorsprong ervan {#how-to-edit-or-add-metadata}
 
 Metagegevens zijn aanvullende informatie over het element die kan worden doorzocht. Deze wordt toegevoegd aan elementen en in [!DNL Experience Manager] wordt deze verwerkt wanneer u een element uploadt. U kunt de bestaande metagegevens bewerken en nieuwe eigenschappen van metagegevens toevoegen aan bestaande velden. Organisaties hebben beheerste en betrouwbare metagegevenswoordenboeken nodig. Daarom staat [!DNL Experience Manager Assets] het toevoegen van nieuwe eigenschappen van metagegevens op aanvraag niet toe. Alleen beheerders en ontwikkelaars kunnen nieuwe eigenschappen of velden toevoegen die metagegevens bevatten. Gebruikers kunnen de bestaande velden vullen met metagegevens.
 
@@ -90,7 +90,7 @@ Als u de pagina met metagegevenseigenschappen wilt aanpassen, inclusief het toev
 >
 >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u **[!UICONTROL Append mode]** selecteert.
 
-## Metagegevens {#import-metadata} importeren
+## Metagegevens importeren {#import-metadata}
 
 [!DNL Assets] Hiermee kunt u metagegevens van elementen in bulk importeren met een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
@@ -117,7 +117,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 
 1. Navigeer naar de pagina [!UICONTROL Properties] van een element en controleer de waarden in de velden om te controleren of het bestand correct is geïmporteerd.
 
-Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 om 11:26:00.000 AM PST tijd.
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 bij 11:26:00.000 AM PST tijd.
 
 >[!CAUTION]
 >
@@ -179,7 +179,7 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel heeft dat u later wijzigt. Zie [Elementen opnieuw verwerken in een map nadat u het verwerkingsprofiel ervan hebt bewerkt](processing-profiles.md#reprocessing-assets).
 
-### Metagegevensprofielen toepassen op mappen vanuit [!UICONTROL Profiles] gebruikersinterface {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Metagegevensprofielen toepassen op mappen vanuit de gebruikersinterface [!UICONTROL Profiles] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Voer de stappen uit om het metagegevensprofiel toe te passen:
 
@@ -202,13 +202,13 @@ Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van 
 
 For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
 
-### Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
+### Een metagegevensprofiel uit mappen verwijderen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of vanuit de map **[!UICONTROL Properties]**.
 
-#### Metagegevensprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
+#### Metaprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 1. Klik op het [!DNL Experience Manager]-logo en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
 1. Selecteer het metagegevensprofiel dat u uit een of meerdere mappen wilt verwijderen.
@@ -216,7 +216,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 
    U kunt bevestigen dat het metagegevensprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-#### Metagegevensprofielen uit mappen verwijderen via Eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
+#### Metagegevensprofielen uit mappen verwijderen via eigenschappen {#removing-metadata-profiles-from-folders-via-properties}
 
 1. Klik op het [!DNL Experience Manager]-logo en navigeer **[!UICONTROL Assets]** naar de map waaruit u een metagegevensprofiel wilt verwijderen.
 1. Klik in de map op het vinkje om het te selecteren en klik vervolgens op **[!UICONTROL Properties]**.
@@ -234,7 +234,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 >
 >* [Metagegevensconcepten en begrip](metadata-concepts.md).
 >* [Eigenschappen van metagegevens van meerdere verzamelingen bewerken](manage-collections.md#editing-collection-metadata-in-bulk)
->* [Metagegevens importeren en exporteren in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+* [Metagegevens importeren en exporteren in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

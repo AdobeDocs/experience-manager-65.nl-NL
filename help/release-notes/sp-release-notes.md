@@ -4,16 +4,16 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 101cbd0d06d370da315e1579a8c2f274a6138b9a
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3744'
 ht-degree: 0%
 
 ---
 
-# [!DNL Adobe Experience Manager] Opmerkingen bij de release van 6.5 servicepack  {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] Opmerkingen bij de release van 6.5 servicepack {#aem-service-pack-release-notes}
 
-## Informatie {#release-information} opheffen
+## Gegevens vrijgeven {#release-information}
 
 | Producten | [!DNL Adobe Experience Manager] 6,5 |
 | -------- | ---------------------------- |
@@ -30,7 +30,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * [!DNL Experience Manager Sites] Met de Dynamic Media Foundation-component kunt u nu optimalisatie voor apparaten met een hogere resolutie in- of uitschakelen wanneer u responsieve voorinstelling voor afbeeldingen of Slim uitsnijden gebruikt.
 
-* Om prestaties te verbeteren, wordt de verborgen=false voorwaarde verplaatst van vraag JCR naar beoordelaar QueryBuilder. Om te verifiëren dat een verborgen predikaat na de verandering werkt, controleert de Experience Manager dat om het even welke verborgen omslag niet op de interface wordt getoond.
+* Om de prestaties te verbeteren, wordt de `hidden=false` voorwaarde verplaatst van vraag JCR naar [!UICONTROL QueryBuilder] beoordelaar. [!DNL Experience Manager] controleert of een verborgen map niet wordt weergegeven om te controleren of een verborgen voorspelling werkt na de wijziging.
 
 * Mogelijkheid om verwijderde pagina&#39;s en boomstructuur op een [!DNL Experience Manager Sites]-pagina te herstellen.
 
@@ -42,37 +42,11 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * Namen die betrekking hebben op Hongkong, Macau en Taiwan worden bijgewerkt volgens de nieuwe naamconventies voor Chinese landinstellingen en regio&#39;s.
 
-* Verbeterde toegankelijkheid in [!DNL Experience Manager] [Middelen](#assets-accessibility-6590) en [Dynamic Media](#accessibility-dm-6590).
+* Verbeterde toegankelijkheid in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) en [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met hoge resolutievertoningen en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie.
+* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
 
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor de bovenstaande verbeteringen voor Smart Imaging is:
-   >
-   >* Noord-Amerika 24 mei 2021 in NA,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 25 juni 2021,
-      >
-      >
-   * Azië-Stille Oceaan 19 juli 2021.
-
-
-* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van de volgende generatie in Dynamic Media-levering (fmt URL-modifier). Zie [api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldbewerking en rendering.
-
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor AVIF-ondersteuning is:
-   >
-   >* Noord-Amerika 10 mei 2021,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 24 mei 2021,
-      >
-      >
-   * Azië-Stille Oceaan 24 juni 2021.
-
+* [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt de volgende generatie afbeeldingsindeling AVIF (AV1-afbeeldingsindeling). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
 * Mogelijkheid om een meldingsbericht per e-mail naar een groep te verzenden met de workflowstap [!UICONTROL Assign Task].
 
@@ -214,7 +188,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * Wanneer de titel van het element dubbel-byte, multi-byte, hoge ASCII, Cyrillisch, surrogaat paar, Hebreeuws, Arabisch, en GB18030 karakters heeft, dan bij het publiceren aan Dynamic Media heeft de activa titel een vraagteken (?) (CQ-4311872).
 
-#### Verbeterde toegankelijkheid in Dynamic Media {#accessibility-dm-6590}
+#### Toegankelijkheidsverbeteringen in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] biedt de volgende toegankelijkheidsverbeteringen in  [!DNL Dynamic Media].
 
@@ -283,7 +257,7 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 
 * De wizard [!UICONTROL Commerce Catalog] kan niet meer dan 40 items laden in de kolomweergave (CQ-4318379).
 
-### Omzettingsprojecten {#translation-6590}
+### Vertaalprojecten {#translation-6590}
 
 * De opties voor bijwerken of overschrijven worden niet weergegeven wanneer een `es` wordt omgezet in `es_es`-pagina (NPR-36170).
 
@@ -376,7 +350,7 @@ Zie [[!DNL Experience Manager] pagina met beveiligingsbulletins](https://helpx.a
 >
 >Adobe raadt u niet aan het [!DNL Adobe Experience Manager] 6.5.9.0-pakket te verwijderen of te verwijderen.
 
-### Installeren van het servicepack {#install-service-pack}
+### Het servicepack installeren {#install-service-pack}
 
 Voer de volgende stappen uit om het servicepack te installeren op een [!DNL Adobe Experience Manager] 6.5-exemplaar:
 
@@ -471,7 +445,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integrations | Het scherm **[!UICONTROL AEM Cloud Services Opt-In]** is verouderd. Met de Experience Manager en de integratie van Adobe Target die in Experience Manager 6.5 wordt bijgewerkt om de Standaard API van Adobe Target te steunen, die authentificatie via Adobe IMS en [!DNL Adobe I/O] gebruikt, en de groeiende rol van de Lancering van Adobe voor het van instrumenten voorzien van Experience Manager pagina&#39;s voor analyse en verpersoonlijking, is de opt-in tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
+| Integraties | Het scherm **[!UICONTROL AEM Cloud Services Opt-In]** is verouderd. Met de Experience Manager en de integratie van Adobe Target die in Experience Manager 6.5 wordt bijgewerkt om de Standaard API van Adobe Target te steunen, die authentificatie via Adobe IMS en [!DNL Adobe I/O] gebruikt, en de groeiende rol van de Lancering van Adobe voor het van instrumenten voorzien van Experience Manager pagina&#39;s voor analyse en verpersoonlijking, is de opt-in tovenaar functioneel irrelevant geworden. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013 is afgekeurd voor Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}

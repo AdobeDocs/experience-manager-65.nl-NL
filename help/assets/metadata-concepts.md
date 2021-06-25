@@ -3,17 +3,16 @@ title: Metagegevensconcepten begrijpen
 description: Leer over de behoefte van en de soorten meta-gegevens die voor gemakkelijkere categorisering en organisatie van activa toestaan.
 contentOwner: AG
 role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Metagegevens
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2718'
 ht-degree: 6%
 
 ---
 
-
-# Metagegevensconcepten {#why-we-need-metadata} begrijpen
+# Metagegevensconcepten begrijpen {#why-we-need-metadata}
 
 Metagegevens zijn gegevens over gegevens. In dit verband verwijzen gegevens naar uw digitale middel, bijvoorbeeld een afbeelding. Metagegevens zijn essentieel voor efficiënt middelenbeheer.
 
@@ -29,7 +28,7 @@ Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experienc
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
-* Type element (is het een afbeelding, video, audioclip of document?).
+* Type element (een afbeelding, video, audioclip of document).
 * Eigenaar van het actief.
 * Titel van het element.
 * Beschrijving van het actief.
@@ -60,7 +59,7 @@ De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsd
 
 De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er worden dus standaarden ingesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken. [!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
 
-## Coderingsstandaarden {#encoding-standards}
+## Coderingsnormen {#encoding-standards}
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
 
@@ -85,7 +84,7 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 * Ogg Vorbis gebruikt Xiph-opmerkingen die zijn ingesloten in de Ogg-container.
 * AAC gebruikt een merkgebonden etiketteringsformaat.
 
-### EXIF {#exif}
+### Exif {#exif}
 
 Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze meta-gegevens naam-waarde-paren worden ook genoemd markeringen, niet om met het etiketteren in [!DNL Experience Manager] worden verward. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
 
@@ -97,7 +96,7 @@ Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch v
 
 Andere meta-gegevens die van dossiers kunnen worden ingebed omvatten [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
 
-## Schema&#39;s voor metagegevens {#metadata-schemata} begrijpen
+## Metagegevensschema&#39;s begrijpen {#metadata-schemata}
 
 Metagegevensschema&#39;s zijn vooraf gedefinieerde sets definities van metagegevenseigenschappen die in verschillende toepassingen kunnen worden gebruikt. Eigenschappen worden altijd gekoppeld aan een element. Dit houdt in dat de eigenschappen &#39;over&#39; de bron zijn.
 
@@ -130,7 +129,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 * PDF en PDF/X.
 * Photoshop en psAux - [!DNL Adobe Photoshop].
 
-### Digital Rights Management (DRM)-metagegevens {#digital-rights-management-metadata}
+### DRM-metagegevens (Digital Rights Management) {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -249,7 +248,7 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 
 De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van namespaces en schema&#39;s, eigenschappen en waarden, en taalalternatieven.
 
-#### Namespaces en schemata {#namespaces-and-schemata}
+#### Naamruimten en schema&#39;s {#namespaces-and-schemata}
 
 Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die
 het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
@@ -290,7 +289,7 @@ De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de meta
 1. Bewerk desgewenst de eigenschappen van de IPTC-metagegevens voor extensies.
 1. Klik **[!UICONTROL Save & Close]** om de veranderingen te bewaren.
 
-### Ondersteuning voor creatieve beoordeling {#creative-rating-support}
+### Ondersteuning voor creatieve beoordelingen {#creative-rating-support}
 
 Naast het weergeven van individuele gebruikersbeoordelingen en het verzamelen van classificaties, wordt op de pagina Eigenschappen nu de classificaties weergegeven die via Adobe Bridge en andere Creative Apps zijn toegewezen aan elementen
 

@@ -2,10 +2,11 @@
 title: 'Metagegevensschema''s definiëren de indeling van de pagina met eigenschappen van metagegevens '
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner,Administrator
 feature: Metagegevens
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: eefd19768cc52350ba5858a439b793c125fd23cc
+source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 5%

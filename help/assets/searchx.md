@@ -1,17 +1,16 @@
 ---
-title: De zoekfunctionaliteit uitbreiden.
+title: Zoekfunctionaliteit uitbreiden
 description: Breid de onderzoeksmogelijkheden van [!DNL Adobe Experience Manager Assets] voorbij de gebreken uit.
 contentOwner: AG
 role: Developer
-feature: Search
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+feature: Zoeken
+exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
+source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 16%
+source-wordcount: '839'
+ht-degree: 15%
 
 ---
-
 
 # Zoeken naar elementen uitbreiden {#extending-assets-search}
 
@@ -149,7 +148,7 @@ Een voorspelling van eigenschappen maken:
    >
    >Zorg er bij het zoeken voor dat u de term exact typt, inclusief het juiste hoofdlettergebruik.
 
-### Voorbeeld: Een eenvoudige groepspreiding {#example-build-a-simple-group-predicate} maken
+### Voorbeeld: Een eenvoudige groepspreiding maken {#example-build-a-simple-group-predicate}
 
 Om een groep te bouwen predikaat:
 

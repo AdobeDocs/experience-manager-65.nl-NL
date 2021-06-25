@@ -1,11 +1,12 @@
 ---
 title: Elementen verwerken met behulp van mediafuncties en workflows
 description: Leer meer over de media handlers en hoe u workflows kunt gebruiken om taken uit te voeren op uw digitale middelen.
+mini-toc-levels: 1
 contentOwner: AG
 role: Business Practitioner
 feature: Workflow,uitvoeringen
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
+source-git-commit: 9ac5582b2e4859bf4f101c5caa5258fc755ebc46
 workflow-type: tm+mt
 source-wordcount: '2095'
 ht-degree: 1%

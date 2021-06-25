@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
 workflow-type: tm+mt
-source-wordcount: '3673'
+source-wordcount: '3627'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ In dit artikel worden de functies beschreven die zijn opgenomen in het meest rec
 
 >[!NOTE]
 >
->Vanaf AEM Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager]-toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu]-builds van OpenJDK, die voldoen aan de standaarden van Java SE.
+>Vanaf [!DNL Experience Manager] Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager] toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu] builds van OpenJDK, standaarden-compatibel met Java SE.
 >Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
 >U kunt de relevante versies van [!DNL Azul Zulu] JDKs van [de Distributie van de Software van Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >De gebruiksrechten voor de Oracle Java-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java]-technologie en [!DNL Azul Zulu]-technologie.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Mogelijkheid om verwijderde pagina&#39;s en boomstructuur {#ability-to-restore-pages-tree} te herstellen
+### De mogelijkheid om verwijderde pagina&#39;s en boomstructuur te herstellen {#ability-to-restore-pages-tree}
 
 U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen op een [!DNL Experience Manager Sites]-pagina.
 
@@ -36,49 +36,23 @@ U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen 
 
 * Bijgewerkt aan de naamgeving van Chinese landinstellingen en regio&#39;s met betrekking tot Hongkong, Macau en Taiwan, om deze in overeenstemming te brengen met de sociale en politieke standpunten van China.
 
-* Er wordt een optionele configuratie geïntroduceerd om de e-mailadressen in ACS api-reacties van [!DNL Adobe Experience Manager] in kleine letters te plaatsen.
+* Er wordt een optionele configuratie geïntroduceerd om de casing in de e-mailid&#39;s in de ACS API-reactie te wijzigen van [!DNL Adobe Experience Manager].
 
-   ![configuratie om de e-mailadressen in ACS-antwoord van AEM in kleine letters te plaatsen](assets/email-lowcase-config.png)
+   ![configuratie voor het wijzigen van e-mailadressen in kleine letters in ACS-reacties van  [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Het contrast (met achtergrond) van tekst en pictogrammen op verschillende plaatsen wordt verbeterd volgens WCAG, zodat het toegankelijk wordt voor gebruikers met een beperkt gezichtsvermogen en een beperkte kleurperceptie. Zie [Toegankelijkheidsverbeteringen in Elementen](sp-release-notes.md#assets-accessibility-6590) voor meer informatie.
+* Het contrast van tekst en pictogrammen tegen de achtergrond wordt verbeterd voor verschillende functies. Deze implementatie van WCAG-richtlijnen maakt [!DNL Assets] toegankelijker voor gebruikers met een beperkt gezichtsvermogen en kleurperceptie. Zie [toegankelijkheidsverbeteringen in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-###  Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Dynamische media zijn ](sp-release-notes.md#assets-accessibility-6590) toegankelijker in termen van:
+* [[!DNL Dynamic Media] is toegankelijker ](sp-release-notes.md#assets-accessibility-6590) voor:
 
-   * gebruiksgemak met toetsenbordtoetsen.
-   * contrast (met achtergrond) van tekst, plaatsaanduidingstekst en besturingselementen in verschillende editors.
-   * toegankelijkheid en gesproken tekst voor schermlezers.
+   * Gebruiksgemak met toetsenbordtoetsen.
+   * Contrast (met achtergrond) van tekst, plaatsaanduidingstekst en besturingselementen in verschillende editors.
+   * Toegankelijkheid en gesproken tekst voor schermlezers.
 
-* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie.
+* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
 
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor de bovenstaande verbeteringen in Smart Imaging is:
-   >
-   >* Noord-Amerika 24 mei 2021 in NA,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 25 juni 2021,
-      >
-      >
-   * Azië-Stille Oceaan 19 juli 2021.
-
-
-* Introductie van ondersteuning voor AVIF-afbeeldingsindeling van de volgende generatie in Dynamic Media-levering (fmt URL-modifier). Zie [api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldbewerking en rendering.
-
-   >[!NOTE]
-   >
-   >De releasetijdlijn voor AVIF-ondersteuning is:
-   >
-   >* Noord-Amerika 10 mei 2021,
-      >
-      >
-   * Europa, het Midden-Oosten en Afrika 24 mei 2021,
-      >
-      >
-   * Azië-Stille Oceaan 24 juni 2021.
-
+* [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt nu de volgende generatie afbeeldingsindeling AVIF (AV1-afbeeldingsindeling). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -90,11 +64,11 @@ U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen 
 
 U kunt nu toepassingen ontwikkelen en gebruiken met [!DNL Azul Zulu] builds van [!DNL OpenJDK] voor [!DNL Experience Manager Forms] op OSGi-implementaties. Zie [Opmerkingen bij de release van Experience Manager 6.5 Service Pack 9](sp-release-notes.md) en [Technische vereisten](../sites-deploying/technical-requirements.md) voor meer informatie.
 
-### Mogelijkheid om een bericht-e-mail naar een groep te verzenden met [!UICONTROL Assign Task] {#group-notification-email}
+### De mogelijkheid om een bericht per e-mail naar een groep te verzenden met [!UICONTROL Assign Task] {#group-notification-email}
 
 U kunt nu een e-mailbericht naar een groep e-mailadres verzenden met de workflowstap Taak toewijzen.
 
-### Capaciteit om een Interactief Communicatie ontwerp terug te winnen na het wijzigen van de bron Interactieve Communicatie {#retrieve-draft-after-source-modifications}
+### Mogelijkheid om een Interactief Communicatie- ontwerp terug te winnen na het wijzigen van de bron Interactieve Communicatie {#retrieve-draft-after-source-modifications}
 
 U kunt nu een interactieve mededeling terugwinnen die als ontwerp wordt bewaard nadat u veranderingen in de bron Interactieve Communicatie aanbrengt.
 
@@ -108,11 +82,11 @@ Wanneer u een formuliergegevensmodel en een service selecteert in de workflowsta
 
 Als u [!UICONTROL Relative to Payload] optie selecteert om een dossier als de dienstargument vast te maken, kunt u nu de omslagweg specificeren die het dossier in plaats van de daadwerkelijke dossiernaam bevat. Als u de mapnaam definieert in plaats van de naam van de bestandsbijlage, kunt u workflowmodellen opnieuw gebruiken. U beperkt het workflowmodel niet tot één bestandsnaam voor bijlagen.
 
-### Mogelijkheid om meerdere master pagina&#39;s te gebruiken in een documentsjabloon {#use-multiple-master-pages-dor-template}
+### Mogelijkheid om meerdere master pagina&#39;s te gebruiken in een sjabloon Document of Record {#use-multiple-master-pages-dor-template}
 
 U kunt nu meerdere master pagina&#39;s gebruiken in een document met een recordsjabloon. Hierdoor kunt u nu verschillende koptekst-, voettekst-, lettertypen- en logogegevens op de titelpagina en andere pagina&#39;s van de sjabloon plaatsen.
 
-### Pagina-einden in document van record {#support-page-breaks-dor} ondersteunen
+### Pagina-einden in document van record ondersteunen {#support-page-breaks-dor}
 
 U kunt nu pagina-einden toevoegen aan een Document of Record. Als een deelvenster pagina&#39;s afbreekt, kunt u daarom een pagina-einde toevoegen om het deelvenster te verplaatsen naar een nieuwe pagina in een document met records.
 
@@ -120,7 +94,7 @@ U kunt nu pagina-einden toevoegen aan een Document of Record. Als een deelvenste
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
 
-#### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout (6.5.8.0) {#sort-livecopy-pages} sorteren
+#### Live Copy-pagina&#39;s die beschikbaar zijn voor rollout (6.5.8.0) sorteren {#sort-livecopy-pages}
 
 U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren met de eigenschappen [!UICONTROL Name], [!UICONTROL Last modified date] en [!UICONTROL Last rollout date]. De [!UICONTROL Last rollout date] voor een pagina is een nieuwe eigenschap die in deze release is geïntroduceerd.
 
@@ -128,11 +102,11 @@ U kunt de Live Copy-pagina&#39;s die beschikbaar zijn voor rollout nu sorteren m
 
 U kunt nu de paginabewegingen en MSM-rollouts uitvoeren als asynchrone bewerkingen om het effect ervan op de prestaties bij uitvoering te beperken. U kunt de bewerkingen plannen voor directe of latere uitvoering. De status van bijbehorende taken en processtappen wordt weergegeven in een console, die nuttig is voor het controleren van grootschalige MSM-rollouts.
 
-#### Beschikbaarheid van de bewerking Pagina verplaatsen in asynchrone modus (6.5.6.0) {#page-move-asynchronous}
+#### Beschikbaarheid van de bewerking Pagina verplaatsen in de asynchrone modus (6.5.6.0) {#page-move-asynchronous}
 
 De bewerking Pagina verplaatsen is nu beschikbaar in de asynchrone modus. U kunt de bewerking Pagina verplaatsen niet alleen direct uitvoeren, maar ook later plannen.
 
-#### Verbeteringen voor de toegankelijkheid (6.5.5.0) {#accessibility-sites}
+#### Verbeteringen van de toegankelijkheid (6.5.5.0) {#accessibility-sites}
 
 * Verbeterde foutrapportage door tekstgegevens toe te voegen.
 
@@ -269,9 +243,9 @@ Een nieuwe sorteerbare kolom voor de aanmaakdatum van elementen wordt toegevoegd
 
 [!DNL Assets] gebruikers kunnen visueel vergelijkbare afbeeldingen zoeken. Experience Manager geeft de slimme getagde afbeeldingen uit de DAM-opslagplaats weer die lijken op een door de gebruiker geselecteerde afbeelding. Zie [Visuele zoekopdracht](../assets/search-assets.md).
 
-###  Dynamic Media {#dynamic-media-previous-service-packs}
+###  Dynamic Media  {#dynamic-media-previous-service-packs}
 
-#### Ongeldige inhoud in CDN-cache (6.5.6.0) {#invalidate-cdn-cached-content}
+#### CDN-inhoud in cache ongeldig maken (6.5.6.0) {#invalidate-cdn-cached-content}
 
 U kunt de [!DNL Dynamic Media] gebruikersinterface nu gebruiken om inhoud van het Netwerk van de Levering van de Inhoud (CDN) ongeldig te maken caching. Hierdoor zijn de bijgewerkte elementen direct beschikbaar in plaats van te wachten tot de cache verloopt. U kunt CDN ongeldig maken door:
 
@@ -295,7 +269,7 @@ Slim uitsnijden voor video-een optionele functie die beschikbaar is in videoprof
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
-#### CAPTCHA-component weergeven of verbergen in een adaptieve vorm op basis van de regels (6.5.8.0) {#show-hide-captcha}
+#### CAPTCHA-component weergeven of verbergen in een adaptieve vorm op basis van regels (6.5.8.0) {#show-hide-captcha}
 
 U kunt CAPTCHA nu valideren bij het verzenden van het aangepaste formulier of bij actie van de gebruiker. U kunt ook voorwaarden toevoegen om CAPTCHA op een gebruikersactie te valideren en de component CAPTCHA in een adaptief formulier weergeven of verbergen op basis van regels.
 
@@ -344,11 +318,11 @@ U kunt de [!DNL Experience Manager Forms] server nu zodanig configureren dat [de
 
 Als een AcroForm [!DNL Adobe Sign] tekstcodes bevat, worden deze velden nu herkend en weergegeven als [!DNL Adobe Sign] velden in het adaptieve formulier geconverteerd met [!DNL Automated Forms Conversion service]. Een ondertekenaar kan dergelijke velden invullen terwijl hij het adaptieve formulier ondertekent.
 
-#### Ondersteuning voor de conversie van gekleurde PDF forms naar adaptieve formulieren (6.5.6.0) {#colored-PDF-forms}
+#### Ondersteuning voor de omzetting van gekleurde PDF forms in adaptieve formulieren (6.5.6.0) {#colored-PDF-forms}
 
 Met [!DNL Automated Forms Conversion service] kunt u gekleurde PDF forms converteren naar adaptieve formulieren.
 
-#### Ondersteuning voor SMB 2- en SMB 3-protocollen (6.5.6.0) {#smb-support}
+#### Steun voor SMB 2 en SMB 3 protocollen (6.5.6.0) {#smb-support}
 
 [!DNL Experience Manager Forms] steunt nu SMB 2 en SMB 3 protocollen.
 
@@ -360,7 +334,7 @@ U kunt nu [locale als kiezer opgeven in het aangepaste formulier-URL in plaats v
 
 Met het formuliergegevensmodel kunt u de uitvoer van een service van een formuliergegevensmodel opslaan in een variabele. [!DNL Experience Manager Forms] Hiermee wordt nu automatisch het type van de service van het formuliergegevensmodel toegewezen aan het type variabele.
 
-#### Meerdere bestanden bijvoegen voor component Bestandsbijlage (6.5.6.0) {#attach-multiple-files}
+#### Meerdere bestanden koppelen voor component Bestandsbijlage (6.5.6.0) {#attach-multiple-files}
 
 U kunt nu [meerdere bestanden toevoegen](../../help/forms/using/introduction-forms-authoring.md) aan de [!UICONTROL File Attachment]-component van adaptieve formulieren.
 
@@ -376,11 +350,11 @@ U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactie
 
 ![Opslaan als concept](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] ondersteuning toepassingsserver (6.5.5.0)  {#weblogic-support}
+#### [!DNL Oracle WebLogic] ondersteuning toepassingsserver (6.5.5.0) {#weblogic-support}
 
 Adobe Experience Manager Forms heeft ondersteuning toegevoegd voor [!DNL Oracle WebLogic 12] voor Adobe Experience Manager Forms op JEE. U kunt een upgrade uitvoeren van een vorige versie of een nieuwe Experience Manager 6.5 Forms instellen op de JEE-server op [!DNL Oracle WebLogic] 12.2.1.4 en hoger. Later komt dit overeen met de kleine versiewijzigingen, waarbij x in 12.2.1.x wordt vervangen door een versienummer.
 
-#### Verbeteringen voor de toegankelijkheid (6.5.5.0) {#accessibility-improvements}
+#### Verbeteringen van de toegankelijkheid (6.5.5.0) {#accessibility-improvements}
 
 Adobe Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
@@ -406,7 +380,7 @@ Met de workflowstap Afdrukbare uitvoer genereren kunt u een bronsjabloonbestand 
 
 ![Afdrukbare uitvoer genereren](assets/generate-print-output-step.gif)
 
-#### Ondersteuning voor meerdere kolommen voor adaptieve formulieren en interactieve communicatie in de modus Indeling (6.5.4.0) {#multi-column-adaptive-forms}
+#### Ondersteuning voor meerdere kolommen voor adaptieve formulieren en interactieve communicatie in de modus Lay-out (6.5.4.0) {#multi-column-adaptive-forms}
 
 U kunt nu het aantal kolommen voor een deelvenster definiëren in adaptieve formulieren en interactieve communicatie. Schakel over naar de lay-outmodus om de nieuwe optie voor meerdere kolommen te gebruiken. Zie [De modus Lay-out gebruiken om het formaat van componenten te wijzigen](../forms/using/resize-using-layout-mode.md) voor meer informatie.
 
@@ -438,7 +412,7 @@ Experience Manager Forms bevat de volgende toegankelijkheidsverbeteringen:
 
 U kunt uw Inbox punten met een andere gebruiker delen. Zodra een andere gebruiker toegang krijgt tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken. Zie [Toegang tot In-box-items van een gebruiker delen en aanvragen](../forms/using/configure-shared-queues-osgi.md).
 
-#### Vorm de uit-van-bureaumontages voor Inbox punten van een gebruiker van Forms van de Experience Manager (6.5.3.0) {#configure-out-of-office}
+#### Vorm de montages buiten-van-bureau voor Inbox punten van een gebruiker van Forms van de Experience Manager (6.5.3.0) {#configure-out-of-office}
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan punten gebeurt die aan u voor die periode worden toegewezen.
 U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als uw instellingen buiten het kantoor zijn. U kunt een standaardpersoon instellen waarnaar al uw items worden verzonden. Zie [De instellingen voor Buiten het Bureau configureren](../forms/using/configure-out-of-office-settings.md).

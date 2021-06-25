@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3762'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * Verbeterde toegankelijkheid in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) en [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
 
 * [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt de volgende generatie afbeeldingsindeling AVIF (AV1-afbeeldingsindeling). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
@@ -115,6 +115,29 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 ### [!DNL Assets] {#assets-6590}
 
+De volgende verbeteringen in de gebruikerservaring worden uitgevoerd in [!DNL Assets]:
+
+* Als u elementen wilt weergeven die niet zijn gesorteerd op basis van een van de parameters [!UICONTROL Create], [!UICONTROL Modify] of [!UICONTROL Name], biedt [!DNL Adobe Experience Manager] een optie [!UICONTROL None] binnen [!UICONTROL Sort by] opties. De optie [!UICONTROL None] zorgt ervoor dat de elementen in de gebruikersinterface van Elementen (in Kaart, Kolom, en mening) in de zelfde orde zijn zoals zij in knoop JCR (NPR-36356) bestaan.
+
+* Als u de e-mailid in kleine letters wilt weergeven in de ACS API-respons van [!DNL Adobe Experience Manager], wordt een optionele instelling geïntroduceerd. aangezien de [!DNL Adobe Asset Link]-gebruikers geen middelen konden inchecken als hun id niet alle tekens in kleine letters bevatte. Het deelvenster [!DNL Adobe Asset Link] gebruikt de ACS API-reactie van [!DNL Adobe Experience Manager] (CQ-4317704).
+
+[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] biedt de volgende toegankelijkheidsverbeteringen.
+
+Het contrast (met de achtergrond) van de volgende tekst en pictogrammen is verbeterd, zodat gebruikers met een beperkt gezichtsvermogen en kleurperceptie deze kunnen begrijpen:
+
+* Titel van element op pagina [!UICONTROL Properties] (NPR-35967).
+* Sterrenclassificatiepictogrammen in [!UICONTROL Rating]-secties op verschillende plaatsen (NPR-36009).
+* Tekst op het middel en de omslagmening van de Kaart (NPR-35966).
+* Plaatsaanduidingstekst in de weergave [!UICONTROL Timeline] (NPR-35965).
+* Namen van activa in de zoekresultaten van activa (NPR-35964).
+* Plaatsaanduidingstekst in het dialoogvenster [!UICONTROL Link Sharing] (NPR-35963).
+* [!UICONTROL Metadata],  [!UICONTROL Status]en  [!UICONTROL Other] tekst met  [!UICONTROL List] optie in het  [!UICONTROL View Settings] dialoogvenster (NPR-35910).
+* [!UICONTROL Location] en  [!UICONTROL Type to search] plaatsaanduidingsteksten in de wereldwijde zoekactie (NPR-35909).
+* Pictogrammen uitvouwen en samenvouwen onder [!UICONTROL Content Tree] (NPR-35908).
+* De [!UICONTROL Assets]-tekst op de pagina waarop mappen met elementen worden weergegeven (NPR-35905).
+* Tekst in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] binnen [!UICONTROL Overview] optie in de pagina met elementdetails (NPR-35904).
+* Tekst voor sneltoetsen voor opties [!UICONTROL properties] en [!UICONTROL edit] op de pagina met elementdetails (NPR-35904).
+
 [!DNL Adobe Experience Manager] In 6.5.9.0 worden de volgende problemen  [!DNL Assets] opgelost.
 
 * De tags die zijn gemaakt vanuit een element voor tagselectie in een formulier [!UICONTROL Folder Metadata Schema], worden niet opgeslagen (NPR-36119).
@@ -141,61 +164,14 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * DAM-mappen kunnen niet worden verwijderd of verplaatst en er wordt een uitzondering vastgelegd (NPR-35942).
 
-#### Verbeteringen in elementen {#assets-enhancements}
-
-* Introduceerde de optie [!UICONTROL None] in kaart, kolom, en inzichten mening om activa in de orde te sorteren zij in de knoop JCR (NPR-36356) worden opgeslagen.
-
-* Er wordt een optie toegevoegd om de e-mailid in kleine letters toe te voegen in API-reactie van Adobe Experience Manager (CQ-4317704).
-
-#### Verbeterde toegankelijkheid in elementen {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] biedt de volgende toegankelijkheidsverbeteringen.
-
-Het contrast (met de achtergrond) van de volgende tekst en pictogrammen is verbeterd, zodat gebruikers met een beperkt gezichtsvermogen en kleurperceptie deze kunnen begrijpen:
-
-* titel van het element op pagina [!UICONTROL Properties] (NPR-35967).
-* sterrenclassificatiepictogrammen in secties [!UICONTROL Rating] op verschillende plaatsen (NPR-36009).
-* tekst op het middel en de omslagkaartmening (NPR-35966).
-* plaatsaanduidingstekst in de weergave [!UICONTROL Timeline] (NPR-35965).
-* namen van activa in de resultaten van de activazoekopdracht (NPR-35964).
-* plaatsaanduidingstekst in het dialoogvenster [!UICONTROL Link Sharing] (NPR-35963).
-* [!UICONTROL Metadata],  [!UICONTROL Status]en  [!UICONTROL Other] tekst met  [!UICONTROL List] optie in het  [!UICONTROL View Settings] dialoogvenster (NPR-35910).
-* [!UICONTROL Location] en  [!UICONTROL Type to search] plaatsaanduidingsteksten in de wereldwijde zoekactie (NPR-35909).
-* pictogrammen uit- en samenvouwen onder [!UICONTROL Content Tree] (NPR-35908).
-* de [!UICONTROL Assets]-tekst op de pagina waarop mappen met elementen worden weergegeven (NPR-35905).
-* tekst in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] binnen [!UICONTROL Overview] optie op de pagina met elementdetails (NPR-35904).
-* tekst voor sneltoetsen voor opties [!UICONTROL properties] en [!UICONTROL edit] op de pagina met elementdetails (NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL Dynamic Media]:
-
-* Custom ViewerPresets en CSS worden niet gerepliceerd naar [!DNL Dynamic Media] wanneer [!DNL Dynamic Media] selectief wordt geactiveerd en door [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232) wordt uitgeschakeld.
-
-* Wanneer u video-uitvoeringen wilt voorvertonen op de pagina met elementdetails, worden de video&#39;s traag geladen (CQ-4320122).
-
-* Browserpagina reageert niet en wordt trager wanneer meer dan 200 elementen worden geüpload terwijl Duplicate Asset Detector is ingeschakeld (CQ-4319633).
-
-* Wanneer een panoramisch afbeeldingselement wordt toegevoegd aan het panoramische mediacomponent op een pagina, wordt een niet-afgevangen referentiefout vastgelegd (CQ-4317666).
-
-* Wanneer de interactieve media viewer wordt geïmplementeerd met Experience Fragment, wordt het Experience Fragment niet geopend bij de uitgever en wordt een fout vastgelegd (CQ-4317655).
-
-* De optie Publiceren naar Dynamic Media is niet beschikbaar in Snel publiceren in de weergave Metaeditor (CQ-4317199).
-
-* Siteauteurs met de machtiging Alleen-lezen kunnen de functie voor slim uitsnijden voor elementen gebruiken en de slimme bijgesneden uitvoeringen bewerken. Gebruikers met de machtiging Alleen-lezen mogen echter de eigenschappen van elementen niet kunnen bewerken in de instantie Sites Dev (CQ-4316450).
-
-* Videoannotaties werken niet voor mappaden [!DNL where Dynamic] De mediaconfiguratie is niet ingeschakeld, zelfs niet als de [!DNL Experience Manager]-instantie is ingesteld in de modus [!DNL Dynamic Media] (CQ-4314950).
-
-* Wanneer de titel van het element dubbel-byte, multi-byte, hoge ASCII, Cyrillisch, surrogaat paar, Hebreeuws, Arabisch, en GB18030 karakters heeft, dan bij het publiceren aan Dynamic Media heeft de activa titel een vraagteken (?) (CQ-4311872).
-
-#### Toegankelijkheidsverbeteringen in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0  [!DNL Assets] biedt de volgende toegankelijkheidsverbeteringen in  [!DNL Dynamic Media].
 
-* Wanneer u het dialoogvenster opent om elementen toe te voegen met de toetsenbordtoetsen in de Image Set Editor:
-   * schermlezers vertellen dat het dialoogvenster wordt geopend.
-   * wanneer het dialoogvenster wordt geopend, wordt de focus van het toetsenbord verplaatst.
-   * toetsenbordfocus gaat terug naar de optie Element toevoegen wanneer het dialoogvenster wordt gesloten (CQ-4312134).
+* Wanneer u het dialoogvenster opent om elementen toe te voegen met behulp van toetsenbordtoetsen in de [!UICONTROL Image Set]-editor:
+   * Schermlezers vertellen dat het dialoogvenster wordt geopend.
+   * De toetsenbordfocus wordt naar het dialoogvenster verplaatst wanneer het wordt geopend.
+   * De toetsenbordfocus gaat terug naar de optie Element toevoegen wanneer het dialoogvenster wordt gesloten (CQ-4312134).
 
 * U kunt nu Hotspots op elementen toevoegen en bewerken met de sneltoetsen in de Hotspot-editor (CQ-4305965).
 
@@ -218,6 +194,26 @@ Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL 
 * De visuele asterisk om verplicht gebied te betekenen wordt nu verstrekt op het gebied van de Titel van activa in de Redacteur van de Reeks van het Beeld, en de schermlezers kondigen de vereiste informatie voor het gebied aan (CQ-4290712).
 
 * Schermlezers hebben nu toegang tot de pagina met elementdetails voor verschillende interactieve opties in Viewers (CQ-4290708) en kunnen het doel van deze opties nu vertellen.
+
+Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL Dynamic Media]:
+
+* Custom ViewerPresets en CSS worden niet gerepliceerd naar [!DNL Dynamic Media] wanneer [!DNL Dynamic Media] selectief wordt geactiveerd en door [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232) wordt uitgeschakeld.
+
+* Wanneer u video-uitvoeringen wilt voorvertonen op de pagina met elementdetails, worden de video&#39;s traag geladen (CQ-4320122).
+
+* Browserpagina reageert niet en wordt trager wanneer meer dan 200 elementen worden geüpload terwijl Duplicate Asset Detector is ingeschakeld (CQ-4319633).
+
+* Wanneer een panoramisch afbeeldingselement wordt toegevoegd aan het panoramische mediacomponent op een pagina, wordt een niet-afgevangen referentiefout vastgelegd (CQ-4317666).
+
+* Wanneer de interactieve media viewer wordt geïmplementeerd met Experience Fragment, wordt het Experience Fragment niet geopend bij de uitgever en wordt een fout vastgelegd (CQ-4317655).
+
+* [!UICONTROL Publish to Dynamic Media] is niet beschikbaar in de  [!UICONTROL Quick Publish] opties op de  [!UICONTROL Properties] pagina (CQ-4317199).
+
+* Siteauteurs met de machtiging Alleen-lezen kunnen de functie voor slim uitsnijden gebruiken voor elementen en de slimme bijgesneden uitvoeringen bewerken (CQ-4316450).
+
+* Video-annotaties werken niet voor mappaden waarbij [!DNL Dynamic Media]-configuratie niet is ingeschakeld, zelfs als de [!DNL Experience Manager]-instantie is ingesteld in de modus [!DNL Dynamic Media] (CQ-4314950).
+
+* Wanneer de titel van het element dubbel-byte, multi-byte, hoge ASCII, Cyrillisch, surrogaat paar, Hebreeuws, Arabisch, en GB18030 karakters heeft, dan bij het publiceren aan Dynamic Media heeft de activa titel een vraagteken (?) (CQ-4311872).
 
 ### Platform {#platform-6590}
 

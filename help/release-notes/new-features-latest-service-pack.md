@@ -4,9 +4,9 @@ description: Nieuw in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 557615a019fedee1863e4d1970445fbfa17736cb
+source-git-commit: a0f47b4e0e9f38df208ed78fde63c70813fb7dcc
 workflow-type: tm+mt
-source-wordcount: '3627'
+source-wordcount: '3621'
 ht-degree: 0%
 
 ---
@@ -50,9 +50,9 @@ U kunt nu de verwijderde pagina&#39;s en de gehele structuurweergave herstellen 
    * Contrast (met achtergrond) van tekst, plaatsaanduidingstekst en besturingselementen in verschillende editors.
    * Toegankelijkheid en gesproken tekst voor schermlezers.
 
-* Dankzij de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u op efficiënte wijze beelden van de beste kwaliteit leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
+* Efficiënt beelden van de beste kwaliteit leveren op apparaten met beeldschermen met hoge resolutie en beperkte netwerkbandbreedte, met Smart Imaging DPR (Device Pixel Ratio) en optimalisatie van de netwerkbandbreedte. Zie [Veelgestelde vragen over slimme beeldverwerking](/help/assets/imaging-faq.md).
 
-* [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt nu de volgende generatie afbeeldingsindeling AVIF (AV1-afbeeldingsindeling). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
+* [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt nu AVIF (AV1-afbeeldingsindeling) van de volgende generatie. Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 

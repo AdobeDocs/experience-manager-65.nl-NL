@@ -1,6 +1,7 @@
 ---
 title: Dynamic Media configureren - hybride modus
 description: Leer hoe u Dynamic Media - Hybride modus configureert.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuratie, hybride modus
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 48463a72108621e94f1c50cf43f911794ec759dd
 workflow-type: tm+mt
-source-wordcount: '7603'
+source-wordcount: '7598'
 ht-degree: 1%
 
 ---
@@ -139,7 +140,7 @@ U kunt ervoor kiezen om Dynamic Media alleen te implementeren voor beeldbewerkin
  </tbody>
 </table>
 
-## Dynamic Media {#enabling-dynamic-media} inschakelen
+## Dynamic Media inschakelen {#enabling-dynamic-media}
 
 [Dynamische ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) media is standaard uitgeschakeld. Als u gebruik wilt maken van Dynamic Media-functies, moet u Dynamic Media inschakelen in de uitvoeringsmodus `dynamicmedia` zoals u bijvoorbeeld `publish` uitvoeringsmodus gebruikt. Controleer voordat u de optie inschakelt de [technische vereisten](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
@@ -189,23 +190,23 @@ Als u Dynamic Media wilt inschakelen, moet u de Dynamic Media-uitvoeringsmodus i
 
 ### Als u Experience Manager op een andere haven of een contextweg installeerde... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-Als u [Experience Manager aan een toepassingsserver](/help/sites-deploying/application-server-install.md) opstelt en Dynamic Media toegelaten hebt, moet u **self** domein in externalizer vormen. Anders werkt het genereren van miniaturen voor elementen niet correct voor Dynamic Media-elementen.
+Als u [Experience Manager aan een toepassingsserver](/help/sites-deploying/application-server-install.md) opstelt en Dynamic Media toegelaten hebt, moet u **self-domain** in externalizer vormen. Anders werkt het genereren van miniaturen voor elementen niet correct voor Dynamic Media-elementen.
 
-Bovendien als u quickstart op een verschillende haven of contextweg in werking stelt, moet u ook **self** domein veranderen.
+Bovendien als u quickstart op een verschillende haven of contextweg in werking stelt, moet u **self-domain** ook veranderen.
 
 Als Dynamic Media is ingeschakeld, worden de statische miniatuuruitvoeringen voor afbeeldingselementen gegenereerd met Dynamic Media. Voor het correct genereren van miniaturen voor Dynamic Media moet de Experience Manager een URL-aanvraag naar zichzelf uitvoeren en zowel het poortnummer als het contextpad weten.
 
 In Experience Manager:
 
-* Het **self** domein in [externalizer](/help/sites-developing/externalizer.md) wordt gebruikt om zowel het havenaantal als contextweg terug te winnen.
-* Als geen **self** domein wordt gevormd, worden het havenaantal en contextweg teruggewonnen van de dienst van HTTP van Jetty.
+* **self-domain** in [externalizer](/help/sites-developing/externalizer.md) wordt gebruikt om zowel het havenaantal als contextweg terug te winnen.
+* Als er geen **self-domain** is geconfigureerd, worden het poortnummer en het contextpad opgehaald van de Jetty HTTP-service.
 
-In een plaatsing van de WAR van QuickStart van de Experience Manager, kunnen het havenaantal en contextweg niet worden afgeleid, daarom moet u een **self** domein vormen. Zie [externalizer documentatie](/help/sites-developing/externalizer.md) over hoe te om **self** domein te vormen.
+In een plaatsing van de WAR van QuickStart van de Experience Manager, kunnen het havenaantal en contextweg niet worden afgeleid, daarom moet u een **self-domain** vormen. Zie [externalizer documentatie](/help/sites-developing/externalizer.md) over hoe te om **self-domain** te vormen.
 
 >[!NOTE]
-In een [Experience Manager QuickStart stand-alone plaatsing](/help/sites-deploying/deploy.md), te hoeven een **self** domein over het algemeen niet worden gevormd omdat het havenaantal en contextweg auto-gevormd kan zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **self** domein vormen.
+In een [Experience Manager QuickStart stand-alone plaatsing](/help/sites-deploying/deploy.md), te hoeven een **self-domain** over het algemeen niet worden gevormd omdat het havenaantal en contextweg auto-gevormd kan zijn. Nochtans, als alle netwerkinterfaces worden uitgezet, moet u **self-domain** vormen.
 
-## Dynamic Media {#disabling-dynamic-media} uitschakelen
+## Dynamic Media uitschakelen  {#disabling-dynamic-media}
 
 Dynamic Media is niet standaard ingeschakeld. Als u Dynamic Media eerder hebt ingeschakeld, kunt u deze later uitschakelen.
 
@@ -227,7 +228,7 @@ Als u Dynamic Media wilt uitschakelen nadat u deze hebt ingeschakeld, verwijdert
    Nadat de Dynamic Media-uitvoeringsmodus is uitgeschakeld, wordt de workflowstap waarmee de uitvoering `cqdam.pyramid.tiff` wordt gegenereerd, automatisch overgeslagen. De functie schakelt ook ondersteuning voor dynamische uitvoeringen en andere Dynamic Media-functies uit.
    Houd er ook rekening mee dat wanneer de Dynamic Media-uitvoeringsmodus wordt uitgeschakeld nadat de Experience Manager-server is geconfigureerd, alle middelen die in die uitvoeringsmodus zijn geüpload, nu ongeldig zijn.
 
-## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6.3 naar 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6,3 naar 6,5 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 Als u Experience Manager - Dynamic Media van 6.3 aan 6.5 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen. Met deze opdracht migreert u al uw voorinstellingen en configuraties van `/etc` naar `/conf` in CRXDE Lite.
 
@@ -242,7 +243,7 @@ Als u aangepaste viewervoorinstellingen en -configuraties die u hebt gemaakt van
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Afbeeldingsreplicatie {#configuring-image-replication} configureren
+## Afbeeldingsreplicatie configureren {#configuring-image-replication}
 
 De levering van Dynamic Media-afbeeldingen werkt door beeldelementen, waaronder videominiaturen, te publiceren van Auteur van Experience Managers tot Auteur van Adobe en deze te repliceren op aanvraag (de replicatieservice URL). De activa worden dan geleverd door de dienst van de beeldlevering op bestelling (de Dienst URL van het Beeld).
 
@@ -261,7 +262,7 @@ De geheugenlimiet is configureerbaar en past bij de beschikbaarheid van systeemb
 Een afbeelding waarvoor meer dan de maximale geheugenlimiet nodig is, wordt afgewezen.
 Als u de geheugenlimiet voor het maken van PTIFF wilt wijzigen, navigeert u naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** en wijzigt u de waarde **[!UICONTROL maxMemory]**.
 
-### Verificatie {#setting-up-authentication} instellen
+### Verificatie instellen {#setting-up-authentication}
 
 Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt repliceren naar de Dynamic Media-service voor het leveren van afbeeldingen. U verkrijgt eerst een KeyStore en dan sparen het onder **[!UICONTROL dynamic-media-replication]** gebruiker en vormt het. Uw bedrijfsbeheerder heeft tijdens het inrichtingsproces een welkomstbericht met het KeyStore-bestand en de benodigde gegevens ontvangen. Neem contact op met de klantenservice van Adobe als u deze informatie niet hebt ontvangen.
 
@@ -300,7 +301,7 @@ Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt replicere
 
    Daarna, moet u [de replicatieagent](#configuring-the-replication-agent) vormen.
 
-### De replicatieagent {#configuring-the-replication-agent} configureren
+### De Replication Agent configureren {#configuring-the-replication-agent}
 
 1. Tik in Experience Manager op het logo van de Experience Manager om toegang te krijgen tot de algemene navigatieconsole en tik op **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
 1. Tik op **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery)]** op de pagina Agents op de auteurspagina.
@@ -319,7 +320,7 @@ Stel replicatieverificatie in bij de auteur, zodat u afbeeldingen kunt replicere
 
 1. Tik op **[!UICONTROL OK]**.
 
-### De Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media} valideren
+### De Replication Agent for Dynamic Media valideren {#validating-the-replication-agent-for-dynamic-media}
 
 Ga als volgt te werk om de replicatieagent voor Dynamic Media te valideren:
 
@@ -346,7 +347,7 @@ U kunt ook op een van de volgende manieren controleren:
 
 
 
-### Probleemoplossingsverificatie {#troubleshooting-authentication}
+### Problemen met verificatie oplossen {#troubleshooting-authentication}
 
 Bij het instellen van verificatie zijn er enkele problemen die u kunt oplossen. Controleer voordat u op deze problemen controleert of u replicatie hebt ingesteld.
 
@@ -498,7 +499,7 @@ Zorg ervoor dat u het volgende al hebt gedaan voordat u deze test start:
 
 U kunt ook testen of uw elementen zijn geleverd door req=exists aan uw URL toe te voegen.
 
-## Dynamic Media-Cloud Services {#configuring-dynamic-media-cloud-services} configureren
+## Dynamic Media-Cloud Services configureren {#configuring-dynamic-media-cloud-services}
 
 De Dynamic Media-Cloud Service ondersteunt onder andere hybride publicatie en levering van afbeeldingen en video, videoanalyse en videocodering.
 
@@ -521,7 +522,7 @@ Dynamic Media-Cloud Services configureren:
 1. Tik **[!UICONTROL Save]** om terug te keren naar de pagina Dynamic Media Configuration Browser.
 1. Tik op het logo van de Experience Manager om de globale navigatieconsole te openen.
 
-## Video-rapportage {#configuring-video-reporting} configureren
+## Video-rapportage configureren {#configuring-video-reporting}
 
 Met Dynamic Media Hybrid kunt u videomelding configureren voor meerdere installaties van Experience Manager.
 
@@ -533,7 +534,7 @@ Met Dynamic Media Hybrid kunt u videomelding configureren voor meerdere installa
 1. Installeer het vooraf ingestelde pakket van de Analyse Video aan om het even welk ***nieuw*** knoop van de Auteur ***vóór*** u configuratie van Dynamic Media (pre 6.3) vormt.
 1. Verifieer en zuivert de pakketinstallatie.
 
-### Een voorinstellingspakket voor videoanalyse maken nadat het eerste auteurknooppunt {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node} is geconfigureerd
+### Een voorinstellingspakket voor videoanalyse maken nadat het eerste knooppunt Auteur is geconfigureerd {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 Wanneer u deze taak hebt voltooid, hebt u een pakketbestand dat de voorinstellingen voor Video Analytics bevat. Deze voorinstellingen bevatten een rapportsuite, de trackingserver, de naamruimte voor bijhouden en de Experience Cloud Organisatie-id, indien beschikbaar.
 
@@ -557,7 +558,7 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
 1. Installeer het vooraf ingestelde pakket Video Analytics.
 1. Dynamic Media-configuratie configureren (ouder dan 6.3).
 
-### Installatie van pakket controleren en fouten opsporen {#verifying-and-debugging-the-package-installation}
+### De pakketinstallatie controleren en fouten opsporen {#verifying-and-debugging-the-package-installation}
 
 1. Voer een van de volgende handelingen uit om de installatie van het pakket te controleren en, indien nodig, fouten op te sporen:
 
@@ -604,13 +605,13 @@ ManagerTap  **[!UICONTROL Tools]** >  **[!UICONTROL Assets]** >  **[!UICONTROL V
 
    Deze fout wordt ook weergegeven als Video Reporting wordt uitgevoerd voordat u Dynamic Media Configuration (Pre 6.3)-services configureert.
 
-### Probleemoplossing voor de configuratie van videoverportage {#troubleshooting-the-video-reporting-configuration}
+### Het oplossen van problemen de video rapporteringsconfiguratie {#troubleshooting-the-video-reporting-configuration}
 
 * Tijdens de installatie zijn soms verbindingen met de Analytics API-server onderbroken. De installatie probeert de verbinding 20 keer opnieuw, maar het ontbreekt nog. Wanneer deze situatie voorkomt, registreert het logboekdossier veelvoudige fouten. Zoeken naar `SiteCatalystReportService`.
 * Als u het pakket met voorinstellingen voor analysemogelijkheden niet eerst installeert, wordt mogelijk een nieuwe rapportsuite gemaakt.
 * De bevordering van Experience Manager 6.3 aan Experience Manager 6.4 of Experience Manager 6.4.1, dan het vormen van de Configuratie van Dynamic Media (pre 6.3), leidt nog tot een rapportreeks. Dit probleem is bekend en moet worden opgelost voor Experience Manager 6.4.2.
 
-### Informatie over de voorinstelling voor Video-analyse {#about-the-video-analytics-preset}
+### Informatie over de voorinstelling Video Analytics {#about-the-video-analytics-preset}
 
 De voorinstelling voor Video-analyse (ook wel analysevoorinstelling genoemd) wordt naast de voorinstellingen voor de viewer in Dynamic Media opgeslagen. Het is in feite hetzelfde als een viewervoorinstelling, maar met informatie die wordt gebruikt om AppMeasurement- en Video Heartbeat-rapportage te configureren.
 
@@ -623,7 +624,7 @@ De eigenschappen van de voorinstelling zijn als volgt:
 
 Experience Manager 6.4 en nieuwere versies slaan deze voorinstelling op `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-## Catalogusinstellingen {#replicating-catalog-settings} herhalen
+## Catalogusinstellingen worden gerepliceerd {#replicating-catalog-settings}
 
 Publiceer uw eigen standaardinstellingen voor de catalogus als onderdeel van het installatieproces via het JCR. Catalogusinstellingen herhalen:
 
@@ -638,7 +639,7 @@ Publiceer uw eigen standaardinstellingen voor de catalogus als onderdeel van het
 1. Tik op het tabblad **[!UICONTROL Replication]**. 
 1. Tik op **[!UICONTROL Replicate]**.
 
-## Viewer-voorinstellingen {#replicating-viewer-presets} repliceren
+## Viewer-voorinstellingen repliceren {#replicating-viewer-presets}
 
 Als u *een element met een viewervoorinstelling wilt leveren, moet u de viewervoorinstelling repliceren/publiceren.* (Alle voorinstellingen voor viewers moeten worden geactiveerd *en* gerepliceerd om de URL of insluitcode voor een element te verkrijgen.
 Zie [Voorinstellingen van viewer publiceren](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) voor meer informatie.
@@ -662,7 +663,7 @@ De filters verstrekken een manier voor u om *activa* uit te sluiten van worden h
 
 ### Standaardelementfilters gebruiken voor replicatie {#using-default-asset-filters-for-replication}
 
-Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) beeldbewerking en video, kunt u de standaardfilters gebruiken die Adobe as-is biedt. De volgende filters zijn standaard actief:
+Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie *of* (2) beeldbewerking en video, kunt u de standaardfilters gebruiken die Adobe as-is biedt. De volgende filters zijn standaard actief:
 
 <table>
  <tbody>
@@ -708,7 +709,7 @@ Als u Dynamic Media gebruikt voor (1) beeldbewerking in productie **of** (2) bee
 >[!NOTE]
 Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
 
-### Elementfilters instellen voor alleen-video-implementaties {#setting-up-asset-filters-for-video-only-deployments}
+### Elementfilters instellen voor alleen-video implementaties {#setting-up-asset-filters-for-video-only-deployments}
 
 Als u Dynamic Media alleen voor video gebruikt, voert u de volgende stappen uit om elementfilters voor replicatie in te stellen:
 
@@ -810,7 +811,7 @@ Als u in het bovenstaande voorbeeld alleen de PTIFF (Piramid TIFF) wilt replicer
 
 Als u slechts origineel wilde herhalen, dan zou u `+original` ingaan.
 
-## Dynamic Media Image Server-instellingen {#configuring-dynamic-media-image-server-settings} configureren
+## Dynamic Media Image Server-instellingen configureren {#configuring-dynamic-media-image-server-settings}
 
 Als u de Dynamic Media Image Server configureert, moet u de Adobe CQ Scene7 ImageServer-bundel en de Adobe CQ Scene7 PlatformServer-bundel bewerken.
 
@@ -889,7 +890,7 @@ Dynamic Media Image Server-instellingen configureren:
    | Max. grootte cache | 20000000 | Maximale grootte van responscache in bytes. |
    | Max. items in cache | 100000 | Maximumaantal items dat is toegestaan in de cache. |
 
-### Standaardinstellingen voor manifest {#default-manifest-settings}
+### Standaardinstellingen voor Manifest {#default-manifest-settings}
 
 Standaard manifest laat u de gebreken vormen die worden gebruikt om de antwoorden van de Levering van Dynamic Media te produceren. U kunt de kwaliteit (JPEG-kwaliteit, resolutie, modus voor het berekenen van nieuwe pixels), het in cache plaatsen (verlopen) en het renderen van te grote afbeeldingen voorkomen (standaard pix, standaard miniatuur, maxpix).
 
@@ -929,7 +930,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr>
    <td>standaard miniatuur</td>
    <td>100 100</td>
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt de antwoordafbeeldingen tot maximaal deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (req=tmb) niet uitdrukkelijk de grootte specificeert en niet de meningsgrootte uitdrukkelijk specificeert gebruikend ` wid= `, `hei= `, of ` scl= `.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in de API voor beeldbewerking. </p> </td>
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt de antwoordafbeeldingen tot maximaal deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (req=tmb) niet uitdrukkelijk de grootte specificeert en niet de meningsgrootte uitdrukkelijk specificeert gebruikend ` wid= `, hei= `, of ` scl= `.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in de API voor beeldbewerking. </p> </td>
   </tr>
   <tr>
    <td>vervaldatum</td>
@@ -984,7 +985,7 @@ Gevallen van geavanceerd gebruik zouden een handmatige configuratie `icc=` bepal
 De standaardset met kleurprofielen voor Adobe is alleen beschikbaar als [Feature Pack 12445 van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) is geïnstalleerd. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het Pak van de eigenschap 12445 verstrekt Adobe kleurenprofielen.
 
 
-### Feature Pack 12445 {#installing-feature-pack} installeren
+### Functiepakket 12445 installeren {#installing-feature-pack}
 
 Installeer functiepak 12445 om de Dynamic Media-mogelijkheden voor kleurbeheer te gebruiken.
 
@@ -996,7 +997,7 @@ Installeer functiepak 12445 om de Dynamic Media-mogelijkheden voor kleurbeheer t
 
 1. Installeer het functiepakket.
 
-### De standaardkleurprofielen {#configuring-the-default-color-profiles} configureren
+### De standaardkleurprofielen configureren {#configuring-the-default-color-profiles}
 
 Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaardkleurprofielen om kleurcorrectie in te schakelen bij het aanvragen van RGB- of CMYK-afbeeldingsgegevens.
 
@@ -1096,7 +1097,7 @@ De volgende kleurprofielen zijn geïnstalleerd:
    <th><p>Beschrijving</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1270,7 +1271,7 @@ Dit doet het volgende:
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de *sRGB *kleurruimte.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de kleurruimte *WebCoated*.
 
-## Elementen {#delivering-assets} leveren
+## Elementen leveren {#delivering-assets}
 
 Nadat u alle bovenstaande taken hebt voltooid, worden de geactiveerde Dynamic Media-middelen aangeboden via de Image- of Video-service. In Experience Manager, verschijnt deze capaciteit in **[!UICONTROL Copy Image URL]**, **[!UICONTROL Copy Viewer URL]**, **[!UICONTROL Embed Viewer Code]**, en in WCM.
 

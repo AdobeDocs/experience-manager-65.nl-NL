@@ -11,9 +11,9 @@ docset: aem65
 feature: 360 VR-video
 role: Business Practitioner, Administrator
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -43,14 +43,14 @@ Met Adobe Premier Pro kunt u 360/VR-beeldmateriaal weergeven en bewerken. U kunt
 
 Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html).
 
-## Elementen uploaden voor gebruik met de 360 Video-viewer {#uploading-assets-for-use-with-the-video-viewer}
+## Elementen uploaden voor gebruik met de 360-videoviewer {#uploading-assets-for-use-with-the-video-viewer}
 
 360 video-elementen die naar Adobe Experience Manager worden geüpload, krijgen het label **Multimedia** op een elementpagina, vergelijkbaar met het normale video-element.
 
 ![6_5_360video-](assets/6_5_360video-selecttopreview.png)
 *selectto previewEen geüploade 360 video-element in de kaartweergave. Het element is gelabeld als Multimedia.*
 
-**Elementen uploaden voor gebruik met de 360-videoviewer:**
+**Elementen uploaden voor gebruik met de 360 Video-viewer:**
 
 1. Er is een map gemaakt voor uw 360-video-element.
 1. [Pas een adaptief videoprofiel toe op de map](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -62,7 +62,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
    * In het ideale geval heeft uw oorspronkelijke 360 video-inhoud het beste een van de volgende resoluties:
 
       * 1080p - 1920 x 1080, bekend als Full HD- of FHD-resolutie of,
-      * 2160p - 3840 x 2160, bekend als 4K, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4K&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
+      * 2160p - 3840 x 2160, bekend als 4k, UHD of Ultra HD-resolutie. Deze grote weergaveresolutie wordt meestal aangetroffen op hoogwaardige televisies en computermonitoren. De resolutie van 2160p wordt vaak &#39;4k&#39; genoemd omdat de breedte dichtbij 4000 pixels ligt. Met andere woorden, het biedt vier keer de pixels van 1080p.
    * [Maak een aangepast adaptief videoprofiel ](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) met uitvoeringen van hogere kwaliteit. Maak bijvoorbeeld een adaptief videoprofiel met de volgende drie instellingen:
 
       * width=auto; height=720; bitsnelheid=2500 kbps
@@ -74,7 +74,7 @@ Zie [360/VR-video bewerken](https://helpx.adobe.com/premiere-pro/how-to/edit-360
 
 1. [Upload uw video naar de map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## De standaardverhouding van 360 video&#39;s overschrijven {#overriding-the-default-aspect-ratio-of-videos}
+## De standaardverhouding van 360 video&#39;s overschrijven  {#overriding-the-default-aspect-ratio-of-videos}
 
 Als u een geüpload element wilt kwalificeren als een 360-video die u wilt gebruiken met de 360-videoviewer, moet het element een hoogte-breedteverhouding van 2 hebben.
 
@@ -130,7 +130,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
 1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Close]**.
 
-## 360-video {#publishing-video} publiceren
+## 360-video publiceren {#publishing-video}
 
 Publiceer de 360-video zodat u deze kunt gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 

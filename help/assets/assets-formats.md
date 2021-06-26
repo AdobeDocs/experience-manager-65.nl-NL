@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Middelenbeheer, uitvoeringen
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1571'
 ht-degree: 2%
 
 ---
@@ -89,7 +89,7 @@ Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
 
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-In de volgende lijst worden de subtypen van rasterafbeeldingsbestandsindelingen beschreven die *niet* worden ondersteund in Dynamic Media.
+In de volgende lijst worden de subtypen beschreven van bestandsindelingen voor rasterafbeeldingen die *niet* worden ondersteund in Dynamic Media.
 
 Zie ook [Niet-ondersteunde bestandsindelingen detecteren voor Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -136,7 +136,7 @@ De bibliotheek voor grafische transformatie ondersteunt de volgende MIME-typen: 
 
 Zie [Bibliotheek voor beeldtransformatie](imaging-transcoding-library.md).
 
-## Ondersteunde Camera Raw {#supported-camera-raw}
+## Ondersteund Camera Raw {#supported-camera-raw}
 
 Met de [!DNL Adobe Camera Raw]-bibliotheek kan [!DNL Assets] Raw-afbeeldingen innemen. Zie [Camera Raw ondersteuning](camera-raw.md).
 
@@ -211,10 +211,10 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 | MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
 | M4V | Apple iTunes | H264/AVC | - |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
@@ -251,7 +251,7 @@ De toepasbaarheid van de gebruikelijke DAM-functies voor een paar specifieke bes
 
 >[!NOTE]
 >
->Het uploaden en distribueren van JavaScript-bestanden is mogelijk niet veilig. Indien nodig kunnen overlays worden gebruikt om te voorkomen dat gebruikers JS-bestanden uploaden.
+>Het uploaden en distribueren van JavaScript-bestanden is mogelijk niet veilig. Indien nodig kunt u overlays gebruiken om te voorkomen dat gebruikers JS-bestanden uploaden.
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 

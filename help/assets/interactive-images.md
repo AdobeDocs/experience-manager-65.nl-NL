@@ -11,10 +11,10 @@ docset: aem65
 feature: Interactieve afbeeldingen
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 3110c1d4424179dbc9eda9e07cf3353c4b4bb4b0
+source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
 workflow-type: tm+mt
-source-wordcount: '4256'
-ht-degree: 1%
+source-wordcount: '4249'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +30,7 @@ Bekijk de volgende interactieve afbeeldingen in actie op de bovenstaande webpagi
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
+## Controleren hoe interactieve afbeeldingsbanners worden gemaakt {#watch-how-interactive-image-banners-are-created}
 
 Speel een analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner) (10 minuten en 33 seconden). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
 
@@ -46,29 +46,29 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
 
 Stappen voor interactieve afbeeldingen:
 
-1. **(Optioneel) Hotspot-variabelen**  identificeren - Als u Experience Manager Assets en Dynamic Media standalone gebruikt, begint u met het identificeren van dynamische variabelen die worden gebruikt in uw bestaande Quickview-implementatie. Vervolgens kunt u hotspotgegevens invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables).
+1. **(Optioneel) Identificeer hotspot-variabelen** : als u de Experience Manager Assets en Dynamic Media op zichzelf staand gebruikt, begint u met het identificeren van dynamische variabelen die worden gebruikt in uw bestaande Quickview-implementatie. Vervolgens kunt u hotspotgegevens invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables).
 Als u echter Adobe Experience Manager Sites of Adobe Experience Manager eCommerce gebruikt, of beide, is deze stap niet nodig.
 Zie [eCommerce-concepten in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optioneel) Een voorinstelling**  voor een interactieve afbeeldingsviewer maken - Pas de afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. Het is niet nodig een eigen voorinstelling voor de interactieve afbeeldingsviewer te maken als u de voorinstelling `Shoppable_Banner` in plaats daarvan wilt gebruiken die buiten de box is ingesteld met de naam Interactive Image Viewer.
 Zie [(Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Uploading an image banner**  - Upload afbeeldingsbanners die u interactief wilt maken.
+1. **Upload een afbeeldingsbanner**  - Upload afbeeldingsbanners die u interactief wilt maken.
 Zie [Een afbeeldingsbanner uploaden](#uploading-an-image-banner).
 
-1. **Hotspots toevoegen aan een afbeeldingsbanner**  - Voeg een of meer hotspots toe aan een afbeeldingsbanner en koppel deze aan een handeling zoals een hyperlink, een Snelle weergave of een ervaringsfragment. Nadat u hotspots hebt toegevoegd, kunt u deze taak voltooien door de interactieve afbeelding te publiceren.
+1. **Voeg hotspots toe aan een afbeeldingsbanner**  - Voeg een of meer hotspots toe aan een afbeeldingsbanner en koppel deze aan een handeling zoals een hyperlink, een Snelle weergave of een Experience Fragment. Nadat u hotspots hebt toegevoegd, kunt u deze taak voltooien door de interactieve afbeelding te publiceren.
 
    * Zie [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
    * Zie [Interactieve afbeeldingen voorvertonen](#optional-previewing-interactive-images) - Optioneel. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
    * Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
-1. **Een interactieve afbeelding in Experience Manager**  toevoegen aan uw website of website - Als u Sites of eCommerce gebruikt of beide, kunt u de interactieve afbeelding toevoegen aan een webpagina in Experience Manager. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Voeg een interactieve afbeelding toe aan uw website** . Als u Experience Manager Sites of eCommerce gebruikt, of beide, kunt u de interactieve afbeelding toevoegen aan een webpagina in de Experience Manager. Sleep de component Interactieve media naar de pagina. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
    Als u de Elementen van de Experience Manager en Dynamic Media standalone gebruikt, moet u de ingebedde code op uw website kopiëren en dan het integreren met uw bestaande Snelle mening. Zie [Een interactieve afbeelding integreren met uw website](#integrating-an-interactive-image-with-your-website).
 
    Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve afbeelding integreren met een bestaande QuickView](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Optioneel) Hotspotvariabelen {#optional-identifying-hotspot-variables} identificeren
+## (Optioneel) Hotspotvariabelen identificeren {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -166,14 +166,14 @@ U kunt dezelfde aanpak toepassen als in de drie bovenstaande voorbeelden op de d
 
 De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd, klikt u op elke knop en noteert u de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de productenQuickviews beschikbaar op de pagina activeert, hebt u de volgende lijst verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
-* `/datafeed/Men-Windbreaker.json`
-* `/datafeed/Men-SimpleHenley.json`
-* `/datafeed/Men-CamoPullover.json`
-* `/datafeed/Women-QuiltedDownJacket.json`
+* `/datafeed/Male-Windbreaker.json`
+* `/datafeed/Male-SimpleHenley.json`
+* `/datafeed/Male-CamoPullover.json`
+* `/datafeed/Female-QuiltedDownJacket.json`
 
 Wanneer u de serveraanroepen bekijkt, ziet u dat productspecifieke informatie alleen aanwezig is in het aanvraagpad. U merkt ook op dat het vraagkoord helemaal niet wordt gebruikt en er zijn twee verschillende types van betrokken gegevensstukken:
 
-* Het eerste type is Men of Vrouwen. Je kunt deze &#39;productcategorie&#39; noemen.
+* Het eerste type is Mannelijk of Vrouwelijk. Je kunt deze &#39;productcategorie&#39; noemen.
 * Het tweede type is productnaam, zoals CamoPullover. U kunt veronderstellen dat deze informatie product SKU is.
 
 Op basis van deze informatie heeft de volledige URL van de Snelle weergave het volgende patroon:
@@ -216,7 +216,7 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
    U kunt nu een afbeeldingsbanner uploaden.
 
-## Een afbeeldingsbanner {#uploading-an-image-banner} uploaden
+## Een afbeeldingsbanner uploaden {#uploading-an-image-banner}
 
 Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
 
@@ -284,7 +284,7 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 
          * Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u moet gebruiken om een product verder te identificeren. Geef in het tekstveld een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
+         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u moet gebruiken om een product verder te identificeren. Geef in het tekstveld een extra variabele op. `category=Males` is bijvoorbeeld een toegevoegde variabele.
    * Tik op **[!UICONTROL Hyperlink]**.
 
       * Als u een klant van de Plaatsen van de Experience Manager bent, tik of klik het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
@@ -338,7 +338,7 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
 Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
-## Een interactieve afbeelding integreren met uw website {#integrating-an-interactive-image-with-your-website}
+## Een interactieve afbeelding met uw website integreren {#integrating-an-interactive-image-with-your-website}
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd aan de afbeelding en de interactieve afbeelding hebt gepubliceerd, kunt u deze nu toevoegen aan uw websitepagina.
 
@@ -358,7 +358,7 @@ De demo-website als voorbeeld gebruiken:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Het beeld van de drie mannen is een statische `IMG`-tag:
+Het beeld van de drie mannetjes is een statische `IMG`-tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">

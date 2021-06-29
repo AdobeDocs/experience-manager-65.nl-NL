@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 550d837c8ad86393eefecb264b69157fca312984
+source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
 workflow-type: tm+mt
-source-wordcount: '9508'
+source-wordcount: '9553'
 ht-degree: 3%
 
 ---
@@ -765,7 +765,17 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 ### Opgeslagen notities weergeven {#viewing-saved-annotations}
 
-1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
+Er kan slechts één aantekening tegelijk worden weergegeven.
+
+>[!NOTE]
+>
+>Als u meerdere annotaties selecteert, wordt de laatste annotatie weergegeven in de gebruikersinterface.
+>
+>Multi-select wordt alleen ondersteund voor het afdrukken van het geannoteerde element als PDF.
+
+**Opgeslagen annotaties voor een element weergeven:**
+
+1. Navigeer naar de locatie van het element en open de elementpagina.
 
 1. Kies **[!UICONTROL Timeline]** in de interface Experience Manager.
 1. Selecteer in de lijst **[!UICONTROL Show All]** in de tijdlijn de optie **[!UICONTROL Comments]** om de resultaten te filteren op basis van annotaties.
@@ -781,6 +791,10 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
+
+>[!NOTE]
+>
+>U kunt meerdere annotaties selecteren tijdens het afdrukken van het geannoteerde element als PDF.
 
 Als u de annotaties en de revisiestatus wilt afdrukken, klikt u op **[!UICONTROL Print]** en volgt u de instructies in de wizard. De optie **[!UICONTROL Print]** wordt alleen op de werkbalk weergegeven wanneer aan het element ten minste één aantekening of revisiestatus is toegewezen.
 

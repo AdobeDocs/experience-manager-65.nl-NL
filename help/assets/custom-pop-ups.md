@@ -1,6 +1,6 @@
 ---
-title: Aangepaste pop-ups maken met Quickviews
-seo-title: Quickviews gebruiken om aangepaste pop-ups te maken
+title: Aangepaste pop-ups maken met Snelle weergave
+seo-title: QuickView gebruiken om aangepaste pop-ups te maken
 description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 seo-description: De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt aangepaste inhoud activeren om weer te geven in de pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -12,18 +12,18 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: Business Practitioner, Administrator
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+# QuickView gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
 De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functie op een hotspot, een miniatuurafbeelding of op een afbeelding met hyperlinks tikken om informatie of verwante inhoud te zien.
 
-Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
+QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
 * Interactieve afbeeldingen (klikbare hotspots)
 * Interactieve video (aanklikbare miniatuurafbeeldingen tijdens het afspelen van video)
@@ -31,7 +31,7 @@ Snelle weergaven worden ondersteund door de volgende viewers in Dynamic Media:
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**U kunt als volgt aangepaste pop-ups maken met Snelle weergaven:**
+**Met de Snelle weergave kunt u aangepaste pop-ups maken:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 
@@ -114,7 +114,7 @@ VoorbeeldStel dat u de volgende voorbeeldcode voor insluiten op uw webpagina geb
 
 1. U moet nu de `quickViewActivate` manager vormen.
 
-   De `quickViewActivate` manager controleert de Snelle meningen in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening en een steekproef `loadQuickView` functievraag wordt geplaatst.
+   De `quickViewActivate` manager controleert de Snelle mening in de kijker. De manager bevat de veranderlijke lijst en functievraag voor gebruik met de Snelle mening. De ingebedde code verstrekt afbeelding voor de variabele SKU die in de Snelle mening en een steekproef `loadQuickView` functievraag wordt geplaatst.
 
    **Variabele**
 mappingMap variabelen voor gebruik in uw Web-pagina aan de waarde SKU en generische variabelen in de Snelle mening:

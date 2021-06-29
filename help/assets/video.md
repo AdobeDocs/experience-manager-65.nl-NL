@@ -1,6 +1,7 @@
 ---
 title: Video in Dynamic Media
 description: Leer hoe u met video werkt in Dynamic Media
+mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,16 +12,26 @@ docset: aem65
 feature: Beheer van bedrijfsmiddelen
 role: Business Practitioner, Administrator
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: 54230d68fc86c9098f7712044bc501bdc4f16502
 workflow-type: tm+mt
-source-wordcount: '11179'
-ht-degree: 5%
+source-wordcount: '11191'
+ht-degree: 4%
 
 ---
 
 # Video in Dynamic Media {#video}
 
 In deze sectie wordt het werken met video in Dynamic Media beschreven.
+
+Bekende problemen met het afspelen van video in Dynamic Media:
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 ## Snel starten: Video&#39;s {#quick-start-videos}
 
@@ -30,7 +41,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >
 >Voordat u in Dynamic Media met video gaat werken, moet u controleren of uw Adobe Experience Manager-beheerder Dynamic Media-Cloud Services al heeft ingeschakeld en geconfigureerd in de Dynamic Media-Scene7-modus of in de Dynamic Media-hybride modus.
 >
->* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in de modus Dynamic Media - Scene7 configureren en [Dynamic Media - Scene7-modus oplossen](/help/assets/troubleshoot-dms7.md).
+>* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in de modus Dynamic Media configureren - Scene7 en [Dynamic Media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md).
    >
    >
 * Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Dynamic Media configureren - hybride modus.
@@ -43,11 +54,11 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 
    * Maak uw eigen videocoderingsprofiel. U kunt ook gewoon het vooraf gedefinieerde _Adaptieve videocodering_-profiel gebruiken dat bij Dynamic Media wordt geleverd.
 
-      * [Een videocoderingsprofiel](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) maken.
+      * [Maak een videocoderingsprofiel](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Meer informatie over [Aanbevolen werkwijzen voor videocodering](#best-practices-for-encoding-videos).
    * Koppel het videoverwerkingsprofiel aan een of meer mappen waar u de primaire bronvideo&#39;s gaat uploaden.
 
-      * [Een videoprofiel toepassen op mappen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Pas een videoprofiel toe op mappen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Meer informatie over [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/organize-assets.md).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. U kunt videobestanden uploaden van maximaal 15 GB elk. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
@@ -64,13 +75,13 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
    * Video-elementen organiseren, doorbladeren en zoeken
 
       * [Digitale ](/help/assets/organize-assets.md)
-middelen ordenenMeer informatie over  [aanbevolen procedures voor het ordenen van digitale middelen voor het gebruik van verwerkingsprofielen](organize-assets.md)
+middelen organiserenMeer informatie over  [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](organize-assets.md)
 
-      * [Video-](search-assets.md#custompredicates) apparatuur zoeken of elementen  [zoeken](/help/assets/search-assets.md)
+      * [Video-](search-assets.md#custompredicates) apparatuur zoeken  [Zoeken in middelen](/help/assets/search-assets.md)
    * Video-elementen voorvertonen en publiceren
 
       * Bekijk de bronvideo en de gecodeerde vertoningen van de video samen met de bijbehorende miniaturen:
-         [Voorvertoning van ](managing-video-assets.md#upload-and-preview-video-assets) videosor  [voorvertonen van elementen](previewing-assets.md)
+         [Voorvertoning van ](managing-video-assets.md#upload-and-preview-video-assets) videosor  [Voorvertoning van elementen weergeven](previewing-assets.md)
          [Video-uitvoeringen weergeven](video-renditions.md)
          [Video-uitvoeringen beheren](manage-assets.md#managing-renditions)
 
@@ -79,7 +90,7 @@ middelen ordenenMeer informatie over  [aanbevolen procedures voor het ordenen va
    * Werken met videometagegevens
 
       * Bekijk de eigenschappen van een gecodeerde video-uitvoering, zoals framesnelheid, audio- en videobitsnelheid en codec:
-         [Eigenschappen van video-uitvoeringen weergeven](video-renditions.md)
+         [Eigenschappen van video-uitvoering weergeven](video-renditions.md)
 
       * Bewerk de eigenschappen van video, zoals de titel, beschrijving en tags, aangepaste metagegevensvelden:
          [Video-eigenschappen bewerken](manage-assets.md#editing-properties)
@@ -88,10 +99,10 @@ middelen ordenenMeer informatie over  [aanbevolen procedures voor het ordenen va
       * [Metagegevensschema&#39;s](metadata-schemas.md)
    * Video&#39;s bekijken, goedkeuren en annoteren en volledige versiebeheer behouden
 
-      * [Annoteren van ](managing-video-assets.md#annotate-video-assets) videosor  [Elementen annoteren](manage-assets.md#annotating)
+      * [Annoteer ](managing-video-assets.md#annotate-video-assets) videobestanden of  [Annoteer elementen](manage-assets.md#annotating)
 
       * [Een versie maken](manage-assets.md#asset-versioning)
-      * [Workflows toepassen op ](assets-workflow.md) apparatuur. Zie Een workflow  [starten op een element](manage-assets.md#starting-a-workflow-on-an-asset)
+      * [Workflows toepassen op ](assets-workflow.md) elementen of een workflow voor een element  [starten](manage-assets.md#starting-a-workflow-on-an-asset)
 
       * [Mapmiddelen controleren](bulk-approval.md)
       * [Projecten](../sites-authoring/projects.md)
@@ -103,16 +114,16 @@ middelen ordenenMeer informatie over  [aanbevolen procedures voor het ordenen va
 
    * Als u Adobe Experience Manager gebruikt als beheersysteem voor webinhoud, kunt u video&#39;s rechtstreeks aan uw webpagina&#39;s toevoegen.
 
-      * [Video&#39;s toevoegen aan uw webpagina](adding-dynamic-media-assets-to-pages.md)&#39;s.
+      * [Voeg video&#39;s toe aan uw webpagina](adding-dynamic-media-assets-to-pages.md)&#39;s.
    * Als u een systeem voor webcontentbeheer van derden gebruikt, kunt u video&#39;s koppelen aan of insluiten in uw webpagina&#39;s.
 
       * Video integreren met URL:
-         [URL&#39;s koppelen aan uw webapplicatie](linking-urls-to-yourwebapplication.md).
+         [Koppel URL&#39;s aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
 
       * Video integreren met gebruik van ingesloten code op webpagina:
-         [De videoviewer insluiten op een webpagina](embed-code.md).
-   * [Video&#39;s publiceren naar YouTube](#publishing-videos-to-youtube).
-   * [Videorapporten](#viewing-video-reports) genereren.
+         [Sluit de videoviewer in op een webpagina](embed-code.md).
+   * [Publiceer video&#39;s naar YouTube](#publishing-videos-to-youtube).
+   * [Genereer videoverslagen](#viewing-video-reports).
 
    * [Bijschriften toevoegen aan video](#adding-captions-to-video).
 
@@ -165,7 +176,7 @@ U kunt de apparaten van Vensters vinden die dit videoformaat bij het volgende st
 
 Zie ook [Viewers for Experience Manager Assets and Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) and [Viewers for Experience Manager assets only](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-## Beste praktijken: De HTML5-videoviewer {#best-practice-using-the-html-video-viewer} gebruiken
+## Beste praktijken: De HTML5-videoviewer gebruiken {#best-practice-using-the-html-video-viewer}
 
 De voorinstellingen van de Dynamic Media HTML5 Video-viewer zijn robuuste videospelers. U kunt ze gebruiken om veel voorkomende problemen te voorkomen die samenhangen met het afspelen van HTML5-video. En problemen die samenhangen met mobiele apparaten, zoals een gebrek aan adaptieve streaminglevering en een beperkt bereik van de desktopbrowser.
 
@@ -183,7 +194,7 @@ U vergroot het bereik van uw rijke media-inhoud tot zowel gebruikers op het bure
 
 Zie ook [Informatie over HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only).
 
-### Afspelen van video op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### Video afspelen op bureaubladcomputers en mobiele apparaten met de HTML5-videoviewer {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 Voor adaptieve videostreaming op het bureaublad en mobiele apparaten zijn de video&#39;s die worden gebruikt voor het schakelen naar een andere bitsnelheid, gebaseerd op alle MP4-video&#39;s in de adaptieve videoset.
 
@@ -280,9 +291,9 @@ In de volgende afbeelding ziet u de algemene ontwerpworkflow voor video&#39;s di
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## Aanbevolen procedures voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
+## Aanbevolen werkwijzen voor het coderen van video&#39;s {#best-practices-for-encoding-videos}
 
-De **Dynamic Media Encode Video**-workflow codeert video als u Dynamic Media hebt ingeschakeld en videocloudservices hebt ingesteld. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en videocloudservices hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]**-workflow automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt de **[!UICONTROL DAM Update Asset]**-workflow van kracht.)
+De **Dynamic Media Encode Video**-workflow codeert video als u Dynamic Media hebt ingeschakeld en videocloudservices hebt ingesteld. In deze workflow worden de historie en informatie over fouten van het workflowproces vastgelegd. Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress). Als u Dynamic Media hebt ingeschakeld en videocloudservices hebt ingesteld, wordt de **[!UICONTROL Dynamic Media Encode Video]**-workflow automatisch van kracht wanneer u een video uploadt. (Als u Dynamic Media niet gebruikt, wordt de **[!UICONTROL DAM Update Asset]**-workflow van kracht.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -302,7 +313,7 @@ In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en m
 | 1280 x 720 | 16:9 | 3000 - 6000 kbps, afhankelijk van de hoeveelheid beweging in de video. |
 | 1920 x 1080 | 16:9 | 6000 - 8000 kbps, afhankelijk van de mate van beweging in de video. |
 
-### De metagegevens van een bestand ophalen {#obtaining-a-file-s-metadata}
+### De metagegevens van een bestand verkrijgen {#obtaining-a-file-s-metadata}
 
 U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het bestand te bekijken met een programma voor videobewerking of met een toepassing die is ontworpen voor het verkrijgen van metagegevens. Hieronder vindt u instructies voor het gebruik van MediaInfo, een toepassing van derden, voor het verkrijgen van de metagegevens van een videobestand:
 
@@ -310,7 +321,7 @@ U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het b
 1. Selecteer en download het installatieprogramma voor de GUI-versie en volg de installatie-instructies.
 1. Klik na de installatie met de rechtermuisknop op het videobestand (alleen Windows) en selecteer MediaInfo, of open MediaInfo en sleep het videobestand naar de toepassing. U ziet alle metagegevens die aan het videobestand zijn gekoppeld, inclusief de breedte, hoogte en fps.
 
-### Verhouding {#aspect-ratio}
+### Hoogte-breedteverhouding {#aspect-ratio}
 
 Wanneer u een voorinstelling voor videocodering kiest of maakt voor uw primaire bronvideobestand, moet u ervoor zorgen dat de voorinstelling dezelfde hoogte-breedteverhouding heeft als het primaire bronvideobestand. De hoogte-breedteverhouding is de verhouding tussen de breedte en de hoogte van de video.
 
@@ -340,7 +351,7 @@ Bitsnelheid is de hoeveelheid gegevens die wordt gecodeerd om één seconde vide
 Wanneer u een codering voor bitsnelheden selecteert, kunt u kiezen uit twee typen:
 
 * **[!UICONTROL Constant Bitrate Encoding]** (CBR) - Tijdens CBR-codering blijft de bitsnelheid of het aantal bits per seconde tijdens het coderingsproces ongewijzigd. Bij CBR-codering blijft de gegevenssnelheid van de set behouden voor de instelling van de gehele video. Bij CBR-codering worden mediabestanden niet geoptimaliseerd voor kwaliteit, maar wordt opslagruimte bespaard.
-Gebruik CBR als uw video een vergelijkbaar bewegingsniveau in de gehele video bevat. CBR wordt meestal gebruikt voor het streamen van video-inhoud. Zie ook [Video-coderingsparameters op aangepaste basis gebruiken](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
+Gebruik CBR als uw video een vergelijkbaar bewegingsniveau in de gehele video bevat. CBR wordt meestal gebruikt voor het streamen van video-inhoud. Zie ook [Parameters voor aangepaste videocodering gebruiken](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
 * **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR-codering past de gegevenssnelheid naar beneden en naar de bovenste limiet die u instelt, aan op basis van de gegevens die de compressor nodig heeft. Deze functionaliteit houdt in dat de bitsnelheid van het mediabestand tijdens een VBR-coderingsproces dynamisch wordt verhoogd of verlaagd, afhankelijk van de behoeften aan bitsnelheid van mediabestanden.
 VBR duurt langer om te coderen maar produceert de gunstigste resultaten; de kwaliteit van het mediabestand is superieur. VBR wordt het meest meestal gebruikt voor http progressieve levering van video-inhoud.
@@ -390,13 +401,13 @@ Wanneer u een voorinstelling voor videocodering kiest (of maakt) voor uw primair
 | 720p | 720 | Groot scherm |
 | 1080p | 1080 | High-definition groot scherm |
 
-### Fps (frames per seconde) {#fps-frames-per-second}
+### FPS (frames per seconde) {#fps-frames-per-second}
 
 In de Verenigde Staten en Japan wordt de meeste video opgenomen met een snelheid van 29,97 frames per seconde (fps); in Europa wordt de meeste video opgenomen met 25 fps. Film wordt opgenomen bij 24 fps.
 
 Kies een voorinstelling voor videocodering die overeenkomt met de fps-snelheid van het primaire bronvideobestand. Als uw primaire bronvideo bijvoorbeeld 25 fps is, kiest u een coderingsvoorinstelling met 25 fps. Standaard wordt bij alle aangepaste codering de fps van het primaire bronvideobestand gebruikt. Daarom hoeft u de fps-instelling niet expliciet op te geven wanneer u een voorinstelling voor videocodering maakt.
 
-### Afmetingen van videocodering {#video-encoding-dimensions}
+### Afmetingen videocodering {#video-encoding-dimensions}
 
 Voor optimale resultaten selecteert u de coderingsafmetingen, zodat de bronvideo een volledig veelvoud van alle gecodeerde video&#39;s is.
 
@@ -410,7 +421,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 |--- |--- |--- |--- |
 | Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 3 |
+| Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -430,13 +441,13 @@ Wanneer u het videoverwerkingsprofiel overslaat en rechtstreeks naar YouTube pub
 Bij het publiceren van video-elementen naar YouTube-servers moeten de volgende taken worden uitgevoerd om een veilige en beveiligde server-naar-server verificatie met YouTube te garanderen:
 
 1. [Google Cloud-instellingen configureren](#configuring-google-cloud-settings)
-1. [YouTube-kanalen maken](#creating-a-youtube-channel)
+1. [Een YouTube-kanaal maken](#creating-a-youtube-channel)
 1. [Codes toevoegen voor publicatie](#adding-tags-for-publishing)
 1. [De YouTube-agent voor publicatiereplicatie inschakelen](#enabling-the-youtube-publish-replication-agent)
 1. [YouTube instellen in Experience Manager](#setting-up-youtube-in-aem)
-1. [(Optioneel) De standaardeigenschappen van YouTube voor uw geüploade video&#39;s automatisch instellen](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
+1. [(Optioneel) Automatiseer de standaardeigenschappen van YouTube voor uw geüploade video&#39;s](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
 1. [Video&#39;s publiceren naar uw YouTube-kanaal](#publishing-videos-to-your-youtube-channel)
-1. [(Optioneel) De gepubliceerde video op YouTube controleren](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
+1. [(Optioneel) Controleer de gepubliceerde video op YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
 1. [YouTube-URL&#39;s koppelen aan uw webtoepassing](#linking-youtube-urls-to-your-web-application)
 
 U kunt de publicatie van video&#39;s ook [ongedaan maken om deze uit YouTube te verwijderen](#unpublishing-videos-to-remove-them-from-youtube).
@@ -545,7 +556,7 @@ Google Cloud-instellingen configureren:
 
    Log uit op je Google account. Maak nu een YouTube-kanaal.
 
-### Een YouTube-kanaal {#creating-a-youtube-channel} maken
+### Een YouTube-kanaal maken {#creating-a-youtube-channel}
 
 Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodig. Als u al een YouTube-kanaal hebt gemaakt, kunt u deze taak overslaan en naar [Codes toevoegen voor publicatie](/help/assets/video.md#adding-tags-for-publishing) gaan.
 
@@ -556,7 +567,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 **Een YouTube-kanaal maken:**
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
-1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (kan ook worden weergegeven als een letter binnen een cirkel met effen kleuren) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
+1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
 1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a new channel]**.
 1. Voor de pagina van Kanalen, klik **[!UICONTROL Create a new channel]**.
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create]**.
@@ -567,18 +578,18 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
    Voeg nu codes toe voor publicatie.
 
-### Tags toevoegen voor publicatie {#adding-tags-for-publishing}
+### Codes toevoegen voor publicatie {#adding-tags-for-publishing}
 
-Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Zie [Codes beheren](/help/sites-administering/tags.md) voor informatie over het toevoegen van codes voor publiceren.
+Als u video&#39;s naar YouTube wilt publiceren, koppelt de Experience Manager de tags aan een of meer YouTube-kanalen. Zie [Codes beheren](/help/sites-administering/tags.md) als u codes wilt toevoegen voor publicatie.
 
-Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [Toelatend YouTube gaan publiceer replicatieagent](#enabling-the-youtube-publish-replication-agent).
+Of, als u van plan bent om de standaardmarkeringen in Experience Manager te gebruiken, kunt u deze taak overslaan en naar [Enable YouTube Publish replicator](#enabling-the-youtube-publish-replication-agent) gaan.
 
-### De YouTube-publicatiereplicatieagent {#enabling-the-youtube-publish-replication-agent} inschakelen
+### De YouTube Publish Replication-agent inschakelen {#enabling-the-youtube-publish-replication-agent}
 
 Tik op **[!UICONTROL Test Connection]** als u de YouTube Publish Replication Agent hebt ingeschakeld en u de verbinding met het Google Cloud-account wilt testen. Op het tabblad Browser worden de verbindingsresultaten weergegeven. Als u YouTube-kanalen hebt toegevoegd, wordt een lijst met kanalen weergegeven als onderdeel van de test.
 
 1. Klik in de linkerbovenhoek van de Experience Manager op het logo van de Experience Manager en klik vervolgens in de linkertrack op **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
-1. Voor de Agenten van de pagina van de Auteur, klik **[!UICONTROL YouTube Publish (youtube)]**.
+1. Voor de Agenten van de pagina van de Auteur, klik **[!UICONTROL YouTube Publish]**.
 1. Klik rechts van Instellingen op de werkbalk op **[!UICONTROL Edit]**.
 1. Schakel het selectievakje **[!UICONTROL Enabled]** in zodat u de replicatieagent kunt inschakelen.
 1. Klik op **[!UICONTROL OK]**.
@@ -589,8 +600,8 @@ Tik op **[!UICONTROL Test Connection]** als u de YouTube Publish Replication Age
 
 Vanaf Experience Manager 6.4 is een nieuwe aanraakgebruikersinterfacemethode geïntroduceerd om YouTube-publicaties in Experience Manager in te stellen. Op basis van de geïnstalleerde Experience Manager die u gebruikt, voert u een van de volgende handelingen uit:
 
-* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [Setting up YouTube in Experience Manager before 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* Om YouTube in Experience Manager 6.4 of later te vormen, zie [Setting up YouTube in Experience Manager 6.4 and later](#setting-up-youtube-in-aem-and-later).
+* Om YouTube in Experience Manager vóór 6.4 te vormen, zie [Opstelling YouTube in Experience Manager vóór 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
+* Om YouTube in Experience Manager 6.4 of later te vormen, zie [Opstelling YouTube in Experience Manager 6.4 en later](#setting-up-youtube-in-aem-and-later).
 
 #### YouTube instellen in Experience Manager 6.4 en hoger {#setting-up-youtube-in-aem-and-later}
 
@@ -685,7 +696,7 @@ Laat het dialoogvenster YouTube-accountinstellingen open. daar kom je zo op teru
 
    Nu publiceert u video&#39;s naar uw YouTube-kanaal.
 
-### (Optioneel) De standaardeigenschappen van YouTube voor uw geüploade video&#39;s automatisch instellen {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### (Optioneel) Automatiseer de standaardeigenschappen van YouTube voor uw geüploade video&#39;s {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 U kunt desgewenst de instelling van YouTube-eigenschappen automatiseren bij het uploaden van uw video&#39;s door een verwerkingsprofiel voor metagegevens in Experience Manager te maken.
 
@@ -762,7 +773,7 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 >
 >Om inhoud van YouTube te publiceren, gebruikt de Experience Manager **[!UICONTROL Publish to YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
 >
->Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
 >Voor gedetailleerdere voortgangsgegevens kunt u het YouTube-logboek onder replicatie controleren. Houd er echter rekening mee dat voor dergelijke bewaking beheerderstoegang vereist is.
 
@@ -784,11 +795,11 @@ Nu associeert u de markeringen die u eerder aan videoactiva toevoegde. Dit proce
 
    U kunt desgewenst de gepubliceerde video op uw YouTube-kanaal verifiëren.
 
-### (Optioneel) De gepubliceerde video op YouTube {#optional-verifying-the-published-video-on-youtube} controleren
+### (Optioneel) Controleer de gepubliceerde video op YouTube {#optional-verifying-the-published-video-on-youtube}
 
 U kunt optioneel de voortgang van het publiceren van YouTube (of het ongedaan maken van het publiceren) volgen.
 
-Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 De het publiceren tijden kunnen zeer afhankelijk van talrijke factoren variëren die het formaat van uw primaire bronvideo, dossiergrootte, en uploadverkeer omvatten. Het publicatieproces kan een paar minuten tot enkele uren duren. Bovendien worden indelingen met een hogere resolutie veel langzamer gerenderd. Het duurt bijvoorbeeld langer om 720p en 1080p weer te geven dan 480p.
 
@@ -812,7 +823,7 @@ U kunt een YouTube URL-tekenreeks verkrijgen die door Dynamic Media wordt gegene
 1. Klik op het tabblad **[!UICONTROL Advanced]**.
 1. Selecteer onder YouTube Publishing in de URL-lijst van YouTube de URL-tekst die u naar uw webbrowser wilt kopiëren om een voorvertoning van het element weer te geven of om deze toe te voegen aan uw pagina met webinhoud.
 
-### Publiceren van video&#39;s om deze uit YouTube te verwijderen {#unpublishing-videos-to-remove-them-from-youtube} ongedaan maken
+### Publiceren van video&#39;s ongedaan maken zodat u deze kunt verwijderen uit YouTube {#unpublishing-videos-to-remove-them-from-youtube}
 
 Wanneer u de publicatie van een video-element in Experience Manager ongedaan maakt, wordt de video verwijderd uit YouTube.
 
@@ -824,7 +835,7 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 >
 >Om inhoud uit YouTube te verwijderen, gebruikt Experience Manager **[!UICONTROL Unpublish from YouTube]** werkschema, dat u vooruitgang laat controleren en om het even welke mislukkingsinformatie bekijken.
 >
->Zie [De voortgang van videocodering en YouTube-publicatie controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
+>Zie [Videocodering en YouTube-publicatievoortgang controleren](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Publiceren van video&#39;s ongedaan maken om deze uit YouTube te verwijderen:**
 
@@ -835,11 +846,11 @@ Wanneer u de publicatie van een video-element in Experience Manager ongedaan maa
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Next]**.
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Unpublish]**.
 
-## Voortgang van videocodering en YouTube-publicatie volgen {#monitoring-video-encoding-and-youtube-publishing-progress}
+## Video-codering en YouTube-publicatievoortgang controleren {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepast, of wanneer u uw video publiceert naar YouTube, kunt u controleren hoe de videocodering/YouTube-publicatie vordert (of mislukt). Werkelijke vorderingen bij het publiceren in YouTube zijn alleen beschikbaar via de logboeken. De mislukking of het succes ervan wordt echter vermeld op aanvullende manieren die in de volgende procedure worden beschreven. Bovendien ontvangt u e-mailmeldingen wanneer een publicatieworkflow of videocodering van YouTube is voltooid of onderbroken.
+Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepast, of wanneer u uw video publiceert naar YouTube, kunt u controleren hoe de videocodering/YouTube-publicatie vordert. Werkelijke vorderingen bij het publiceren in YouTube zijn alleen beschikbaar via de logboeken. De mislukking of het succes ervan wordt echter vermeld op aanvullende manieren die in de volgende procedure worden beschreven. Bovendien ontvangt u e-mailmeldingen wanneer een publicatieworkflow of videocodering van YouTube is voltooid of onderbroken.
 
-### Voortgang {#monitoring-progress} controleren
+### Voortgang van controle {#monitoring-progress}
 
 1. Voortgang videocodering weergeven in map met elementen:
 
@@ -918,7 +929,7 @@ Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepas
 
 1. U ontvangt e-mailmeldingen over afgebroken of mislukte workflowtaken. Deze e-mailberichten kunnen door een beheerder worden geconfigureerd. Zie [E-mailmeldingen configureren](#configuring-e-mail-notifications).
 
-#### E-mailmeldingen {#configuring-e-mail-notifications} configureren
+#### E-mailmeldingen configureren {#configuring-e-mail-notifications}
 
 >[!NOTE]
 >
@@ -960,7 +971,7 @@ Hoe u een melding configureert, hangt af van het feit of u meldingen voor coderi
 1. Tik op het pictogram **[!UICONTROL Done]** (vinkje) wanneer u klaar bent, in de rechterbovenhoek van het dialoogvenster.
 1. Tik op de workflowpagina Publiceren naar YouTube in de rechterbovenhoek op **[!UICONTROL Sync]**.
 
-## Videorapporten {#viewing-video-reports} weergeven
+## Videorapporten weergeven {#viewing-video-reports}
 
 >[!NOTE]
 >
@@ -1005,13 +1016,13 @@ Geef het begin- en einddatumbereik op waarvoor u videogegevens wilt en tik op **
 
 1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
-### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de SDK van de Dynamic Media HTML5 Viewer {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die van een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om videorapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de HTML5 Viewer SDK API, voert u de volgende stappen uit om ervoor te zorgen dat uw videoviewer traceergebeurtenissen naar Dynamic Media Video Reports verzendt.
 
-Gebruik de [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) en de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videoviewers te maken.
+Gebruik de [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) en de [HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) om uw eigen videoviewers te maken.
 
-**U kunt als volgt videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de HTML5 Viewer SDK-API:**
+**U kunt als volgt videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de SDK van de Dynamic Media HTML5 Viewer:**
 
 1. Navigeer naar een gepubliceerd video-element.
 1. Selecteer in de vervolgkeuzelijst in de linkerbovenhoek van de assetpagina de optie **[!UICONTROL Viewers]**.
@@ -1068,7 +1079,7 @@ Gebruik de [Adobe Dynamic Media Viewers Reference Guide](https://experienceleagu
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Bijschriften toevoegen aan video {#adding-captions-to-video}
+## Bijschriften of ondertitels toevoegen aan video {#adding-captions-to-video}
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen vermijdt u de noodzaak om de audio te dupliceren, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 
@@ -1080,7 +1091,7 @@ Ondertiteling maakt ook een betere toegankelijkheid mogelijk door ondertiteling 
 
 Dynamic Media converteert bijschriftbestanden naar de indeling JSON (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [Statische (niet-afbeeldings) inhoud dienen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in *Dynamic Media Image Serving and Rendering API Help* voor meer informatie over het gebruik van de JSON-functie in een URL.
+Zie [Statische inhoud (niet van het beeld) dienen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in *Dynamic Media Image Serving and Rendering API Help* voor meer informatie over het gebruik van de functie JSON in een URL.
 
 **Bijschriften of ondertitels toevoegen aan video:**
 
@@ -1096,7 +1107,7 @@ Zie [Statische (niet-afbeeldings) inhoud dienen](https://experienceleague.adobe.
 
    U bereikt de beste resultaten met het programma in Internet Explorer 9 of hoger, Google Chrome of Safari.
 
-   Plak in het veld **[!UICONTROL Enter URL of video file]** van het gereedschap de gekopieerde URL van het videobestand en klik vervolgens op **[!UICONTROL Load]**. Zie [Een URL verkrijgen voor een asset](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen, die u vervolgens in het **[!UICONTROL Enter URL of video file field]** kunt plakken. Internet Explorer, Chrome of Safari kunnen de video vervolgens op een native manier afspelen.
+   Plak in het veld **[!UICONTROL Enter URL of video file]** van het gereedschap de gekopieerde URL van het videobestand en klik vervolgens op **[!UICONTROL Load]**. Zie [Een URL verkrijgen voor een element](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen, dat u vervolgens in **[!UICONTROL Enter URL of video file field]** kunt plakken. Internet Explorer, Chrome of Safari kunnen de video vervolgens op een native manier afspelen.
 
    Volg nu de aanwijzingen op het scherm van de site om het WebVTT-bestand te ontwerpen en op te slaan. Wanneer u klaar bent, kopieert u de inhoud van het bijschriftbestand en plakt u deze in een teksteditor zonder opmaak en slaat u het bestand op met de bestandsnaamextensie `.vtt`.
 
@@ -1127,7 +1138,7 @@ Zie [Statische (niet-afbeeldings) inhoud dienen](https://experienceleague.adobe.
 
       Noteer `,1` aan het einde van het bijschriftpad. Direct na de bestandsnaamextensie `.vtt` in het pad kunt u optioneel de knop voor het gesloten bijschrift op de videospelerbalk in- of uitschakelen (uitschakelen) door respectievelijk `,1` of `,0` in te stellen.
 
-## Hoofdstukmarkeringen toevoegen aan video {#adding-chapter-markers-to-video}
+## Hoofdstukmarkeringen aan video toevoegen {#adding-chapter-markers-to-video}
 
 U kunt uw lange formuliervideo&#39;s beter weergeven en navigeren door hoofdstukmarkeringen toe te voegen aan enkele video&#39;s of aan Adaptieve videosets. Wanneer een gebruiker de video afspeelt, kunnen hij of zij op de hoofdstukmarkeringen op de videotijdlijn (ook wel de videoscrubber genoemd) klikken om gemakkelijk naar zijn of haar interessepunt te navigeren. Of ze kunnen meteen naar nieuwe inhoud, demonstraties en zelfstudies gaan.
 
@@ -1143,7 +1154,7 @@ U maakt een hoofdstuklijst voor uw video op ongeveer dezelfde manier als u bijsc
 
 U kunt het volgende voorbeeld als voorbeeld van het formaat gebruiken u gebruikt om een dossier WebVTT met hoofdstuknavigatie tot stand te brengen:
 
-### WebVTT-bestand met navigatie {#webvtt-file-with-video-chapter-navigation} voor videohoofdstukken
+### WebVTT-bestand met navigatie in videohoofdstukken {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT
@@ -1221,7 +1232,7 @@ De mogelijkheid om een videominiatuur aan te passen is alleen beschikbaar nadat 
 
 Zie ook [Informatie over videominiaturen in Dynamic Media - hybride modus](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
-### Een aangepaste videominiatuur {#adding-a-custom-video-thumbnail} toevoegen
+### Een aangepaste videominiatuur toevoegen {#adding-a-custom-video-thumbnail}
 
 Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de modus &quot;Dynamicmedia_Scene7&quot;.
 
@@ -1255,11 +1266,11 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 1. Tik op **[!UICONTROL Save Change]** op de pagina Miniatuur wijzigen.
 1. Tik in de rechterbovenhoek op de pagina Eigenschappen van video op **[!UICONTROL Save & Close]**.
 
-## Informatie over videominiaturen in Dynamic Media - Hybride modus {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## Informatie over videominiaturen in Dynamic Media - hybride modus {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 U kunt kiezen uit een van de tien miniatuurafbeeldingen die automatisch door Dynamic Media worden gegenereerd om aan uw video toe te voegen. De videospeler toont uw geselecteerde duimnagel wanneer een videoactiva met de component van Dynamic Media in het auteursmilieu van de Plaatsen van de Experience Manager, Experience Manager Mobiele, of Experience Managers Screens wordt gebruikt. De miniatuur fungeert als een statisch beeld dat de inhoud van de gehele video het beste vertegenwoordigt en dat gebruikers verder aanmoedigt om op de knop Afspelen te klikken.
 
-Op basis van de totale tijd van de video legt Dynamic Media tien (standaard)miniatuurafbeeldingen vast van 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% en 91% in de video. De tien miniaturen blijven bestaan. Dit betekent dat als u een andere miniatuur kiest, u de reeks niet opnieuw hoeft te genereren. U bekijkt een voorvertoning van de tien miniatuurafbeeldingen en selecteert vervolgens de miniatuurafbeelding die u voor de video wilt gebruiken. Als u wilt veranderen in het gebrek, kunt u CRXDE Lite gebruiken om het tijdinterval te vormen dat duimnagelbeelden worden geproduceerd. Als u bijvoorbeeld alleen een reeks van vier miniatuurafbeeldingen met gelijkmatige tussenruimte uit uw video wilt genereren, kunt u de intervaltijd instellen op 24%, 49%, 74% en 99%.
+Dynamic Media legt tien (standaard)miniatuurafbeeldingen vast op basis van de totale tijd van de video. De afbeeldingen worden vastgelegd op 1%, 11%, 21%, 31%, 41%, 51%, 61%, 71%, 81% en 91% in de video. De tien miniaturen blijven bestaan. Dit betekent dat als u een andere miniatuur kiest, u de reeks niet opnieuw hoeft te genereren. U bekijkt een voorvertoning van de tien miniatuurafbeeldingen en selecteert vervolgens de miniatuurafbeelding die u voor de video wilt gebruiken. Als u wilt veranderen in het gebrek, kunt u CRXDE Lite gebruiken om het tijdinterval te vormen dat duimnagelbeelden worden geproduceerd. Als u bijvoorbeeld alleen een reeks van vier miniatuurafbeeldingen met gelijkmatige tussenruimte uit uw video wilt genereren, kunt u de intervaltijd instellen op 24%, 49%, 74% en 99%.
 
 In het ideale geval kunt u een videominiatuur toevoegen nadat u de video hebt geüpload, maar voordat u de video op uw website publiceert.
 
@@ -1267,7 +1278,7 @@ Desgewenst kunt u een aangepaste miniatuur uploaden die uw video vertegenwoordig
 
 Zie ook [Informatie over videominiaturen in Dynamic Media - Scene7-modus](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
-### Een videominiatuur {#adding-a-video-thumbnail} toevoegen
+### Een videominiatuur toevoegen {#adding-a-video-thumbnail}
 
 Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de hybride modus.
 
@@ -1290,7 +1301,7 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 
    Zie [Het standaardtijdinterval configureren dat videominiaturen worden gegenereerd](#configuring-the-default-time-interval-that-video-thumbnails-are-generated).
 
-#### Het standaardtijdinterval configureren dat videominiaturen worden gegenereerd {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### Configureer het standaardtijdinterval dat videominiaturen worden gegenereerd {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 Wanneer u het nieuwe standaardtijdinterval configureert en opslaat, is uw wijziging automatisch alleen van toepassing op video&#39;s die u in de toekomst uploadt. De nieuwe standaardinstelling wordt niet automatisch toegepast op video&#39;s die u eerder hebt geüpload. Voor bestaande video&#39;s moet u de miniaturen opnieuw genereren.
 
@@ -1316,7 +1327,7 @@ Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 
    Zie [Een videominiatuur toevoegen](#adding-a-video-thumbnail).
 
-### Een aangepaste videominiatuur {#adding-a-custom-video-thumbnail-1} toevoegen
+### Een aangepaste videominiatuur toevoegen {#adding-a-custom-video-thumbnail-1}
 
 Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in de hybride modus.
 

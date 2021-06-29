@@ -9,12 +9,11 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: Business Practitioner, Administrator
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
-feature: Selectors
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+feature: Kiezers
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 17%
+source-wordcount: '684'
+ht-degree: 13%
 
 ---
 
@@ -26,13 +25,13 @@ In dit onderwerp wordt beschreven hoe u de kiezers Product, Site en Asset kunt g
 
 U opent de kiezers door carrouselsets te maken, hotspots en afbeeldingen met hyperlinks toe te voegen en interactieve video&#39;s en afbeeldingen te maken.
 
-In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een Quickview-pagina. gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt; Gebruik de kiezer voor middelen wanneer u een nieuwe dia maakt.
+In deze Carousel Banner gebruikt u bijvoorbeeld de productkiezer als u een hotspot of afbeelding met hyperlinks koppelt aan een Quickview-pagina. Gebruik de sitekiezer als u een hotspot of afbeelding met hyperlink koppelt. Gebruik de kiezer voor middelen wanneer u een dia maakt.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een AEM Sites-klant bent. Voor de productkiezer is ook AEM Commerce vereist.
+Wanneer u selecteert (in plaats van handmatig in te voeren) waar hotspots of afbeeldingen met hyperlinks naartoe gaan, gebruikt u de kiezer. De Sitekiezer werkt alleen als u een klant van de Sites van de Experience Manager bent. De productkiezer vereist ook de Handel van de Experience Manager.
 
-## Producten {#selecting-products} selecteren
+## Producten selecteren {#selecting-products}
 
 Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbeelding met hyperlinks wilt gebruiken om een snelle weergave van een specifiek product in uw productcatalogus te maken.
 
@@ -46,15 +45,15 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   U kunt ook filteren op trefwoorden of tags door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
+   Filter op trefwoord of tag door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren of tags te selecteren, of beide.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   U kunt wijzigen waar AEM naar productgegevens zoekt door te tikken op **[!UICONTROL Browse]** en naar een andere map te navigeren.
+   Wijzig de locatie waar de Experience Manager naar de productgegevens bladert door te tikken op **[!UICONTROL Browse]** en naar een andere map te navigeren.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Tik **[!UICONTROL Sort]** door om te wijzigen of AEM op Nieuwst naar Oudst of op Nieuwst sorteert.
+   Tik **[!UICONTROL Sort]** door om te wijzigen of Experience Manager op Nieuwste naar Oudste of Oudste sorteert.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -70,9 +69,9 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Sites {#selecting-sites} selecteren
+## Sites selecteren {#selecting-sites}
 
-Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die binnen AEM sites wordt beheerd.
+Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeeldingskaart wilt koppelen aan een webpagina die wordt beheerd binnen Experience Manager-sites.
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
@@ -80,7 +79,7 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en ga naar een pagina in uw AEM-sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
+1. Tik op het pictogram **[!UICONTROL Site Selector]** (map met vergrootglas) en navigeer naar een pagina in uw Experience Manager Sites waarnaar u de hotspot of afbeelding met hyperlinks wilt koppelen.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -88,24 +87,24 @@ Gebruik de sitekiezer om een webpagina te kiezen als u een hotspot of afbeelding
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of de afbeelding met hyperlinks tikt, navigeert u naar de AEM sitepagina die u hebt opgegeven.
+1. Als u in de modus **[!UICONTROL Preview]** op de hotspot of afbeelding met hyperlinks tikt, navigeert u naar de door u opgegeven Experience Manager-sitepagina.
 
-## Elementen {#selecting-assets} selecteren
+## Elementen selecteren {#selecting-assets}
 
-Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** tikt op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een nieuwe dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Draaien, is de activa selecteur beschikbaar wanneer u een nieuwe Reeks van het Beeld, GemengdeReeks, of Reeks van de Draai creeert.
+Gebruik deze kiezer om afbeeldingen te kiezen voor gebruik in een carrouselbanner, een interactieve video, afbeeldingssets, gemengde mediasets en centrifugesets. In interactieve video is de elementenkiezer beschikbaar wanneer u **[!UICONTROL Select Assets]** tikt op het tabblad **[!UICONTROL Content]**. In Carousel-sets is de elementenkiezer beschikbaar wanneer u een dia maakt. In de Reeksen van het Beeld, Gemengde Plaatsen van Media, en de Reeksen van de Rotatie, is de activaselecteur beschikbaar wanneer u een Reeks van het Beeld, Gemengde Geplaatste Media, of Reeks van de Rotatie creeert.
 
 Zie ook [Asset Picker](search-assets.md#assetpicker) voor meer informatie.
 
-1. Navigeer naar de Carousel-set en maak een nieuwe dia. Of navigeer naar de Interactieve Video, ga **[!UICONTROL Content]** tabel en selecteer activa. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
+1. Navigeer naar de Carousel-set en maak een dia. Of navigeer naar de interactieve video, ga naar het tabblad **[!UICONTROL Content]** en selecteer elementen. U kunt ook een gemengde mediaset, Afbeeldingsset of Spin-set maken.
 1. Tik op het pictogram **[!UICONTROL Asset Selector]** (map met vergrootglas) en ga naar een asset.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   U kunt ook filteren op trefwoorden of tags door **[!UICONTROL Filter]** te tikken en trefwoorden in te voeren of criteria toe te voegen, of door beide in te voeren.
+   Filter op trefwoord of tag door te tikken op **[!UICONTROL Filter]** en trefwoorden in te voeren, of criteria toe te voegen, of beide.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar AEM naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
+   Wijzig de locatie waar de Experience Manager naar elementen bladert door naar een andere map in het veld **[!UICONTROL Path]** te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
@@ -115,6 +114,6 @@ Zie ook [Asset Picker](search-assets.md#assetpicker) voor meer informatie.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Tik op het vinkje om het element te selecteren. Het element wordt weergegeven.
+1. Selecteer het element door op het vinkje te tikken. Het element wordt weergegeven.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)

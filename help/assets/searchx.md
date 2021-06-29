@@ -5,7 +5,7 @@ contentOwner: AG
 role: Developer
 feature: Zoeken
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
 source-wordcount: '839'
 ht-degree: 15%
@@ -59,7 +59,7 @@ De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Vo
 
 Een voorspelling van eigenschappen maken:
 
-1. Maak een componentmap in de projectmap, bijvoorbeeld **/apps/geometrixx/components/titlepredicate**.
+1. Maak een componentmap in de projectmap, bijvoorbeeld **/apps/weretail/components/titlepredicate**.
 1. **content.xml** toevoegen:
 
    ```xml
@@ -152,7 +152,7 @@ Een voorspelling van eigenschappen maken:
 
 Om een groep te bouwen predikaat:
 
-1. Maak een componentmap in de projectmap, bijvoorbeeld **/apps/geometrixx/components/picspredicate.**
+1. Maak een componentmap in uw projectmap, bijvoorbeeld **/apps/weretail/components/picspredicate**.
 1. **content.xml** toevoegen:
 
    ```xml

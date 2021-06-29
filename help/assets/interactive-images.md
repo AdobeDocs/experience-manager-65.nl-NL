@@ -11,10 +11,10 @@ docset: aem65
 feature: Interactieve afbeeldingen
 role: Business Practitioner, Administrator
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: 663d7b886ba31521789b41002333715ce447e5ca
+source-git-commit: c59ec6e2429095c07c9b2d6bb83dad6ab4f80aa0
 workflow-type: tm+mt
-source-wordcount: '4249'
-ht-degree: 2%
+source-wordcount: '4251'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +74,7 @@ Zie [Een afbeeldingsbanner uploaden](#uploading-an-image-banner).
 >
 >Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
 >
->* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle meningen te teweegbrengen.
+>* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle mening te teweegbrengen.
 >* Uw implementatie van Experience Manager maakt *niet* gebruik van een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, hybris of Intershop, naar de Experience Manager te halen. Zie [eCommerce-concepten in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 >
@@ -164,7 +164,7 @@ U kunt dezelfde aanpak toepassen als in de drie bovenstaande voorbeelden op de d
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd, klikt u op elke knop en noteert u de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier de productenQuickviews beschikbaar op de pagina activeert, hebt u de volgende lijst verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
+De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd, klikt u op elke knop en noteert u de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier productenQuickview activeert die op de pagina beschikbaar zijn, hebt u de volgende lijst van verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -244,7 +244,7 @@ Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagin
 
 Wanneer u klaar bent met het maken van uw interactieve afbeelding, kunt u Voorvertoning gebruiken om een voorstelling te zien van hoe uw interactieve afbeelding eruit ziet voor klanten.
 
-Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-interactive-images).
+Zie [(Optioneel) Voorvertoning van interactieve afbeeldingen](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
@@ -323,7 +323,7 @@ Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 Met Voorvertoning kunt u zien hoe uw interactieve afbeelding eruit ziet en kunt u de hotspots van de afbeelding testen om te controleren of deze zich naar behoren gedragen.
 
 Als u tevreden bent met de interactieve afbeelding, kunt u deze publiceren.
-Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -347,7 +347,7 @@ Als u een klant van de Plaatsen van de Experience Manager bent, kunt u het inter
 Als u een zelfstandige klant van de Middelen van de Experience Manager bent, kunt u het interactieve beeld aan uw website manueel toevoegen zoals die in deze sectie wordt beschreven.
 
 1. Kopieer de insluitcode van de gepubliceerde interactieve afbeelding.
-Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 
 1. Voeg de gekopieerde insluitcode toe op de gewenste locatie op de webpagina.
 De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch in het toegewezen gebied past.
@@ -369,7 +369,7 @@ Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
-De hotspots op de schopbare interactieve afbeelding van de demo-website zijn dan alleen bedoeld voor weergave. zij zijn nog niet geïntegreerd met de bestaande Snelle meningen.
+De hotspots op de schopbare interactieve afbeelding van de demo-website zijn dan alleen bedoeld voor weergave. zij zijn nog niet geïntegreerd met de bestaande Snelle mening.
 
 Als u een &#39;uitsnijding&#39; wilt toepassen op een verwisselbare interactieve afbeelding voor een responsieve omgeving, kunt u het configuratiekenmerk Interactive Image `ZoomView.iscommand` toevoegen aan het pad. De component `ZoomView` wordt aangeroepen en `iscommand` is de opdracht voor het leveren van de &quot;uitsnijdafbeelding&quot; die u toepast.
 
@@ -515,6 +515,6 @@ De laatste demo-website met de volledig geïntegreerde interactieve afbeelding z
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
-## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+## QuickView gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
-Zie [Aangepaste pop-ups maken met Quickviews](/help/assets/custom-pop-ups.md).
+Zie [Aangepaste pop-ups maken met QuickView](/help/assets/custom-pop-ups.md).

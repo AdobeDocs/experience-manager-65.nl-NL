@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Business Practitioner
 feature: Middelenbeheer, zoeken
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: dc483b9871cebce64f7b60fec2144f1f19ef28ec
+source-git-commit: 03b171d2af17efee73780b01058fd62bc9d45dbd
 workflow-type: tm+mt
 source-wordcount: '9553'
 ht-degree: 3%
@@ -765,7 +765,7 @@ Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele vide
 
 ### Opgeslagen notities weergeven {#viewing-saved-annotations}
 
-Er kan slechts één aantekening tegelijk worden weergegeven.
+U kunt slechts één annotatie tegelijk weergeven.
 
 >[!NOTE]
 >
@@ -775,7 +775,7 @@ Er kan slechts één aantekening tegelijk worden weergegeven.
 
 **Opgeslagen annotaties voor een element weergeven:**
 
-1. Navigeer naar de locatie van het element en open de elementpagina.
+1. Ga naar de locatie van het element en open de elementpagina.
 
 1. Kies **[!UICONTROL Timeline]** in de interface Experience Manager.
 1. Selecteer in de lijst **[!UICONTROL Show All]** in de tijdlijn de optie **[!UICONTROL Comments]** om de resultaten te filteren op basis van annotaties.
@@ -871,7 +871,7 @@ U kunt versies in [!DNL Experience Manager] in de volgende scenario&#39;s tot st
 * Bewerk de metagegevens van een element.
 * Gebruik [!DNL Experience Manager] desktop app om een bestaand element uit te checken, te bewerken en [uw wijzigingen te uploaden](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de voorvertoning te openen. Open in de linkerbovenhoek van de pagina het menu en selecteer **[!UICONTROL Timeline]**.
 

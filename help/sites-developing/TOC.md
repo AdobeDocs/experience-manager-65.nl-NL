@@ -1,15 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Ontwikkeling
 role: Developer
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 6%
@@ -17,7 +16,7 @@ ht-degree: 6%
 ---
 
 
-# AEM 6.5 Handboek {#developing} ontwikkelen
+# AEM 6.5 Handboek voor het ontwikkelen van toepassingen {#developing}
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
@@ -43,7 +42,7 @@ ht-degree: 6%
    + [Tagbibliotheken](taglib.md)
    + Sjablonen{#templates}
       + [Sjablonen](templates.md)
-      + [Paginasjablonen - Bewerkbaar  ](page-templates-editable.md)
+      + [Paginasjablonen - Bewerkbaar ](page-templates-editable.md)
       + [Paginasjablonen - statisch](page-templates-static.md)
       + [Sjablonen voor inhoudsfragmenten](content-fragment-templates.md)
       + [Adaptieve sjabloonrendering](templates-adaptive-rendering.md)

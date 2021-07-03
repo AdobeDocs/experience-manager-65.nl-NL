@@ -2,16 +2,15 @@
 title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Developer Tools,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
-
 
 # Elementeditorpagina&#39;s maken en configureren {#creating-and-configuring-asset-editor-pages}
 
@@ -191,7 +190,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 ![screen_shot_2012-04-23at15640pm](assets/screen_shot_2012-04-23at15640pm.png)
 -->
 
-## Een pagina voor de Asset Editor maken en configureren {#creating-and-configuring-an-asset-editor-page}
+## Een pagina voor de Editor van middelen maken en configureren {#creating-and-configuring-an-asset-editor-page}
 
 U kunt de middeleneditor aanpassen om te bepalen hoe gebruikers de digitale elementen kunnen weergeven en bewerken. Hiertoe maakt u een nieuwe pagina in de Editor van middelen en past u de weergaven aan en de acties die gebruikers op die pagina kunnen uitvoeren.
 
@@ -199,7 +198,7 @@ U kunt de middeleneditor aanpassen om te bepalen hoe gebruikers de digitale elem
 >
 >Als u aangepaste velden wilt toevoegen aan de DAM Asset Editor, voegt u nieuwe `cq:Widget`-knooppunten toe aan `/apps/dam/content/asseteditors.`
 
-### Een pagina voor de Asset Editor maken {#creating-the-asset-editor-page}
+### Een pagina voor de Editor van middelen maken {#creating-the-asset-editor-page}
 
 Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de pagina Asset Share te maken.
 
@@ -234,7 +233,7 @@ De pagina Asset Editor instellen:
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
-#### Elementeditorcomponenten toevoegen {#adding-asset-editor-components}
+#### Elementbewerkingscomponenten toevoegen {#adding-asset-editor-components}
 
 U bepaalt welke functionaliteit een middeleneditor heeft door componenten aan de pagina toe te voegen.
 
@@ -262,7 +261,7 @@ Elementeditorcomponenten toevoegen:
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
 
-#### Metagegevensformulier en tekstveld - De component Metagegevens weergeven {#metadata-form-and-text-field-configuring-the-view-metadata-component} configureren
+#### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
 Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **Tekstvelden** in. Zie [Forms](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie over het werken met formulieren.
 
@@ -312,7 +311,7 @@ Als u bijvoorbeeld een subelement selecteert, ziet u hoe de component de juiste 
 
 ![screen_shot_2012-04-23at24552pm](assets/screen_shot_2012-04-23at24552pm.png)
 
-#### Labels {#tags}
+#### Tags {#tags}
 
 De component Tags is een component waarin gebruikers bestaande tags aan een element kunnen toewijzen. Hierdoor kunnen gebruikers de elementen later ordenen en ophalen. U kunt van deze component alleen-lezen maken, zodat gebruikers geen codes kunnen toevoegen, maar alleen deze weergeven.
 

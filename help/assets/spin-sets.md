@@ -9,16 +9,16 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 feature: centrifuges, middelenbeheer
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1765'
 ht-degree: 11%
 
 ---
 
-# Spin Sets{#spin-sets}
+# Sets draaien{#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
 
@@ -32,7 +32,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 >
 >Zie [Elementen beheren](/help/assets/manage-assets.md) voor informatie over de gebruikersinterface van Elementen.
 
-## Snel starten: Draaisets {#quick-start-spin-sets}
+## Snel starten: Sets draaien {#quick-start-spin-sets}
 
 Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
@@ -154,7 +154,7 @@ In deze sectie wordt beschreven hoe u centrifuges kunt maken in AEM.
 
 1. Klik op **[!UICONTROL Save]**. De nieuwe centrifugeset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Spin-sets {#viewing-spin-sets} weergeven
+## Spin-sets weergeven {#viewing-spin-sets}
 
 U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets). Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* weergegeven in de gebruikersinterface. U hebt op drie verschillende manieren toegang tot sets die zijn gemaakt met voorinstellingen voor batchsets. (Deze methoden zijn ook beschikbaar als u de centrifuges in de gebruikersinterface hebt gemaakt.)
 
@@ -178,7 +178,7 @@ U kunt centrifuges maken in de gebruikersinterface of automatisch met [voorinste
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
-## Spinsets bewerken {#editing-spin-sets}
+## Bewerken van centrifuges {#editing-spin-sets}
 
 U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges:
 
@@ -213,10 +213,10 @@ Als u de afbeelding verwijdert die AEM gebruikt voor de miniatuur door deze te v
 
 1. Klik **[!UICONTROL Save]** wanneer klaar het uitgeven.
 
-## Voorvertoning van centrifuges {#previewing-spin-sets}
+## Voorvertoning van centrifuges weergeven {#previewing-spin-sets}
 
 Zie [Elementen voorvertonen](/help/assets/previewing-assets.md).
 
-## Spin-sets {#publishing-spin-sets} publiceren
+## Spin-sets publiceren {#publishing-spin-sets}
 
 Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).

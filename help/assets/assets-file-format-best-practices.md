@@ -2,18 +2,17 @@
 title: Aanbevolen procedures voor het verwerken van de ondersteunde bestandsindelingen
 description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Asset Management, ontwikkelprogramma's
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-
-# Best practices voor bestandsindeling van middelen {#assets-file-format-best-practices}
+# Aanbevolen werkwijzen voor bestandsindelingen voor elementen {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] Biedt ondersteuning voor een groot aantal bibliotheken met bedrijfseigen bestandsindelingen en bestandsindelingen van derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde Adobe-bibliotheken behoren [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer en [!DNL Adobe InDesign Server]. Daarnaast biedt [!DNL Experience Manager Assets] ondersteuning voor bibliotheken van derden, zoals [!DNL ImageMagick], [!DNL TwelveMonkeys] enzovoort.
 
@@ -23,7 +22,7 @@ Zie [Ondersteunde indelingen voor elementen](/help/assets/assets-formats.md) voo
 >
 >Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Werk samen met de Adobe Care-vertegenwoordiger om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen voor de bedrijfseigen indelingen van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
-## [!DNL Adobe Camera Raw] bibliotheek  {#adobe-camera-raw-library}
+## [!DNL Adobe Camera Raw] bibliotheek {#adobe-camera-raw-library}
 
 Voor optimale prestaties raadt Adobe u aan [!DNL Adobe Camera Raw]-bibliotheek te gebruiken voor RAW- en DNG-bestanden.
 
@@ -62,7 +61,7 @@ Adobe raadt u aan de ImageMagick-bibliotheek in de volgende scenario&#39;s te ge
 
 Zie [ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick) gebruiken om te weten hoe u de [!DNL ImageMagick]-bibliotheek instelt in [!DNL Experience Manager]. Voor optimaal gebruik, zie [Beste praktijken voor het Vormen ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
-## Bibliotheek {#image-transcoding-library} voor transformatie van afbeeldingen
+## Bibliotheek voor transformatie van afbeeldingen {#image-transcoding-library}
 
 De Adobe Imaging Transcoding Library is een oplossing voor beeldverwerking die kernfuncties voor beeldverwerking uitvoert, zoals beeldcodering, transcodering, hersampling, formaatwijziging, enzovoort.
 

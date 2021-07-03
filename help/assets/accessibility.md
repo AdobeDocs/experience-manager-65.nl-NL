@@ -3,9 +3,9 @@ title: Toegankelijke eigenschappen en interfaces van [!DNL Experience Manager As
 description: Weet hoe toegankelijkheidsfuncties in [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] gebruikers met een handicap helpen.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner, Architect, Leader
+role: User, Architect, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Gebruikers met een handicap vertrouwen vaak op hardware en software om toegang t
 * Hulpapparatuur, inclusief besturingselementen voor switches, vernieuwbare braillebeeldschermen en andere invoerapparaten voor de computer.
 * Gereedschappen voor het vergroten van de gebruikersinterface.
 
-## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn  {#accessible-assets-use-cases}
+## [!DNL Experience Manager Assets] gebruiksgevallen die toegankelijk zijn {#accessible-assets-use-cases}
 
 In [!DNL Experience Manager] voldoen de toegankelijkheidsfuncties aan twee belangrijke vereisten van [!DNL Experience Manager]-gebruikers en hun klanten.
 
@@ -66,7 +66,7 @@ De kernfuncties in [!DNL Assets] zijn toegankelijker dan voorheen en worden rege
 
 ## Ondersteuning voor het gebruik van het toetsenbord {#keyboard-use}
 
-Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder de gebruikersinterface-elementen te hoeven activeren en deze met het toetsenbord te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant van de gebruikersinterface openen door met het toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
+Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geactiveerd met een aanwijzer, kunnen ook worden gebruikt met het toetsenbord. Met een toetsenbord kunnen gebruikers zich richten op UI-elementen en de juiste actie ondernemen. Gebruikers kunnen rechtstreeks sneltoetsen gebruiken om een opdracht of handeling te activeren zonder dat ze zich hoeven te richten op UI-elementen en deze met het toetsenbord hoeven te activeren. Gebruikers kunnen bijvoorbeeld de tijdlijn van een element aan de linkerkant van de gebruikersinterface openen door met het toetsenbord naar het besturingselement voor de gebruikersinterface te bladeren en `Return` te selecteren en de sneltoets `Alt + 2` te selecteren.
 
 <!-- TBD items:
 
@@ -159,7 +159,7 @@ Wanneer u in de gegevensopslagruimte bladert, verbetert de volgende functionalit
 * Some enhancements to metadata properties UI?
 -->
 
-## Digitale elementen beheren {#manage-assets}
+## Digitale middelen beheren {#manage-assets}
 
 Veel taken voor middelenbeheer, zoals CRUD-bewerkingen, het downloaden van middelen en het toevoegen van metagegevens, zijn in verschillende mate toegankelijk. [!DNL Assets] Hiermee kunt u de taken uitvoeren met behulp van verschillende ondersteunende hulpmiddelen, zoals een schermlezer en een toetsenbord.
 
@@ -173,7 +173,7 @@ Voor meta-gegevensverrichtingen die typisch door rollen zoals marketers en behee
 * De sleepfunctionaliteit met het toetsenbord werkt correct in [!UICONTROL Metadata Schema Editor] in de bladermodus van schermlezers.
 * Een gebruiker kan de focus verplaatsen met het toetsenbord naar het veld Gebruiker toevoegen of Groep onder [!UICONTROL Closed User Group] op het tabblad [!UICONTROL Permissions] in de map [!UICONTROL Properties].
 
-## Digitale elementen zoeken {#search-assets}
+## Digitale middelen zoeken {#search-assets}
 
 Een snelle en naadloze zoekervaring met middelen verhoogt de snelheid van de inhoud. De gebruiksgevallen van de inhoudssnelheid maken deel uit van de kernfunctionaliteit [!DNL Assets]. Om een onderzoek van de bar van het Onderzoek te beginnen, kunnen de gebruikers toetsenbordkortere weg `/` of gebruiken `Tab` samen met het schermlezers om van de onderzoeksoptie snel de plaats te bepalen. De schermlezer noemt de naam van de optie &quot;Knop van het Onderzoek&quot;wanneer de nadruk op de onderzoeksoptie ![onderzoeksoptie](assets/do-not-localize/search_icon.png) is. Gebruikers kunnen `Return` selecteren om het vak Onderzoek te openen. De schermlezer vertelt niet alleen over het trefwoord dat in het zoekvak is getypt, maar vertelt ook over de suggesties van [!DNL Experience Manager Assets]. Gebruikers kunnen een combinatie van pijltoetsen, `Return` en `Tab` gebruiken om toegang te krijgen tot de verschillende opties om een zoekopdracht te activeren.
 

@@ -2,18 +2,17 @@
 title: Configuratie en beheer van metagegevensfunctionaliteit.
 description: Configuratie en beheer van [!DNL Experience Manager Assets] functionaliteit met betrekking tot toevoeging en beheer van metagegevens.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metagegevens
+exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1797'
 ht-degree: 4%
 
 ---
 
-
-# Configuratie en beheer van metagegevensfunctionaliteit in [!DNL Assets] {#config-metadata}
+# Configuratie en beheer van de metagegevensfunctionaliteit in [!DNL Assets] {#config-metadata}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -23,7 +22,7 @@ ht-degree: 4%
 
 [!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Het maakt het gemakkelijker om activa te categoriseren en te organiseren en het helpt mensen die naar een specifiek bezit zoeken. Met de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van hun metagegevens. [!DNL Adobe Experience Manager Assets] Hiermee kunnen beheerders de functionaliteit van metagegevens configureren en aanpassen om het standaard Adobe-aanbod te wijzigen.
 
-## Metagegevensschema {#metadata-schema} bewerken
+## Metagegevensschema bewerken {#metadata-schema}
 
 Zie [Schema-formulieren voor metagegevens bewerken](metadata-schemas.md#edit-metadata-schema-forms) voor meer informatie.
 
@@ -48,7 +47,7 @@ Als u de limiet wilt wijzigen, opent u **[!UICONTROL Tools]** > **[!UICONTROL Op
 
 Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u daarna naar de map uploadt, overerft de standaardmetagegevens die u in het metagegevensprofiel hebt geconfigureerd.
 
-### Een metagegevensprofiel {#adding-a-metadata-profile} toevoegen
+### Een metagegevensprofiel toevoegen {#adding-a-metadata-profile}
 
 1. Navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]** en klik **[!UICONTROL Create]**.
 1. Voer een titel voor het profiel in, bijvoorbeeld `Sample Metadata`, en klik op **[!UICONTROL Create]**. De [!UICONTROL Edit Form] voor het metagegevensprofiel wordt weergegeven.
@@ -92,7 +91,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![Metagegevensprofiel toegevoegd aan pagina Metagegevensprofielen](assets/MetadataProfiles-page.png)
 
-### Een metagegevensprofiel {#copying-a-metadata-profile} kopiëren
+### Een metagegevensprofiel kopiëren {#copying-a-metadata-profile}
 
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een metagegevensprofiel om er een kopie van te maken.
 
@@ -104,7 +103,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![Een kopie van het metagegevensprofiel dat is toegevoegd aan de pagina Metagegevensprofielen](assets/copy-metadata-profile.png)
 
-### Een metagegevensprofiel {#deleting-a-metadata-profile} verwijderen
+### Een metagegevensprofiel verwijderen {#deleting-a-metadata-profile}
 
 1. Selecteer op de pagina **[!UICONTROL Metadata Profiles]** een profiel dat u wilt verwijderen.
 
@@ -143,7 +142,7 @@ Met de Forms-editor voor het schema Metagegevens van map kunt u metagegevenssche
 1. Ga naar de pagina [!UICONTROL Folder Metadata Schema Forms] en klik op **[!UICONTROL Create]**.
 1. Geef een naam voor het formulier op en klik op **[!UICONTROL Create]**. Het nieuwe schema formulier wordt weergegeven op de pagina [!UICONTROL Schema Forms].
 
-### Schema-formulieren voor mapmetagegevens bewerken {#edit-folder-metadata-schema-forms}
+### Formulieren met metagegevens van mappen bewerken {#edit-folder-metadata-schema-forms}
 
 U kunt een nieuw toegevoegd of bestaand schema voor metagegevens bewerken, dat het volgende bevat:
 
@@ -173,7 +172,7 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 
 1. Klik **[!UICONTROL Save]** van de toolbar om de veranderingen te bewaren.
 
-#### Componenten voor het samenstellen van formulieren {#components-to-build-forms}
+#### Componenten om formulieren te maken {#components-to-build-forms}
 
 Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schema voor metagegevens van uw map gebruikt. Het **[!UICONTROL Settings]** lusje toont de attributen voor elk punt dat u op **[!UICONTROL Build Form]** tabel selecteert. Hier volgt een lijst met formulieritems die beschikbaar zijn op het tabblad **[!UICONTROL Build Form]**:
 
@@ -214,19 +213,19 @@ Neem geen spatie op in het eigenschapspad om ervoor te zorgen dat de component c
 
 **[!UICONTROL Class]**: Objectklasse waaraan de eigenschap is gekoppeld.
 
-### Schema-formulieren {#delete-folder-metadata-schema-forms} voor mapmetagegevens verwijderen
+### Formulieren met metagegevens van mappen verwijderen {#delete-folder-metadata-schema-forms}
 
 U kunt de schemaformulieren van de omslagmeta-gegevens van het Schema Forms van de Meta-gegevens van de Omslag schrappen pagina. Als u een formulier wilt verwijderen, selecteert u het formulier en klikt u op de werkbalk op de optie Verwijderen.
 
 ![delete_form](assets/delete_form.png)
 
-### Schema {#assign-a-folder-metadata-schema} voor metagegevens van mappen toewijzen
+### Een schema voor metagegevens van mappen toewijzen {#assign-a-folder-metadata-schema}
 
 U kunt een schema van omslagmeta-gegevens aan een omslag of van de pagina van Forms van het Schema van Meta-gegevens van de Omslag toewijzen of wanneer het creëren van een omslag.
 
 Als u een metagegevensschema voor een map configureert, wordt het pad naar het schemaformulier opgeslagen in de eigenschap `folderMetadataSchema` van het mapknooppunt onder `./jcr:content`.
 
-#### Wijs aan een schema van de pagina {#assign-to-a-schema-from-the-folder-metadata-schema-page} van het Schema van Meta-gegevens van de Omslag toe
+#### Wijs aan een schema van de pagina van het Schema van Meta-gegevens van de Omslag toe {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
 1. Ga in [!DNL Experience Manager] interface naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer op de pagina Forms van het schema Metagegevens map het schema dat u op een map wilt toepassen.
@@ -241,7 +240,7 @@ Als u een metagegevensschema voor een map configureert, wordt het pad naar het s
 
    ![folder_metadata_properties](assets/folder_metadata_properties.png)
 
-#### Schema toewijzen bij het maken van een map {#assign-a-schema-when-creating-a-folder}
+#### Een schema toewijzen bij het maken van een map {#assign-a-schema-when-creating-a-folder}
 
 U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een omslag. Als het systeem minstens één schema van omslagmeta-gegevens bevat, wordt een extra lijst getoond in **[!UICONTROL Create Folder]** dialoog. U kunt het gewenste schema selecteren. Standaard is geen schema geselecteerd.
 
@@ -254,7 +253,7 @@ U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een
 1. Open de eigenschappen van de metagegevens voor de map waarop u het metagegevensschema hebt toegepast.
 1. Klik op het tabblad **[!UICONTROL Folder Metadata]** om de velden met metagegevens van mappen weer te geven.
 
-### Het schema {#use-the-folder-metadata-schema} voor metagegevens van de map gebruiken
+### Het schema voor metagegevens van de map gebruiken {#use-the-folder-metadata-schema}
 
 Open de eigenschappen voor een map die met een mapmetadataschema is geconfigureerd. Het tabblad **[!UICONTROL Folder Metadata]** wordt weergegeven in de map [!UICONTROL Properties] pagina. Selecteer dit tabblad om het formulier van het mapmetadataschema weer te geven.
 

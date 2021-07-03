@@ -1,17 +1,16 @@
 ---
 title: Digital Rights Management van activa
-description: Leer hoe u de verloopstatussen van elementen en informatie voor gelicentieerde middelen beheert in [!DNL Experience Manager].
+description: Leer hoe u de verloopstatus van elementen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: DRM,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: DRM,beheer van bedrijfsmiddelen
+exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1323'
 ht-degree: 5%
 
 ---
-
 
 # Digital Rights Management voor elementen {#digital-rights-management-in-assets}
 
@@ -148,7 +147,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 >
 >Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager]-releases poort, raadt Adobe u aan deze pagina&#39;s op te slaan onder `/apps/settings/dam/drm/licenses` of `/conf/&ast;/settings/dam/drm/licenses`.
 
-### Met DRM beveiligde middelen downloaden {#downloading-drm-assets}
+### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 
 1. Selecteer in de kaartweergave de elementen die u wilt downloaden en klik op **[!UICONTROL Download]**.
 1. Selecteer op de pagina **[!UICONTROL Copyright Management]** de asset die u uit de lijst wilt downloaden.

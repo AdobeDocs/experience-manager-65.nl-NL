@@ -5,17 +5,17 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN-cache
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1280'
 ht-degree: 0%
 
 ---
 
-# De CDN-cache ongeldig maken door middel van Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
+# De CDN-cache ongeldig maken via Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 
 Dynamic Media-elementen worden in cache geplaatst door de CDN (Content Delivery Network) voor snelle levering aan uw klanten. Wanneer u echter updates van deze elementen uitvoert, wilt u dat deze wijzigingen direct op uw website van kracht worden. Door de CDN-cache te wissen of ongeldig te maken, kunt u snel elementen bijwerken die door Dynamic Media worden geleverd. In plaats van te wachten tot de cache verloopt met behulp van een TTL-waarde (Time To Live) (de standaardwaarde is tien uur), kunt u een aanvraag vanuit Dynamic Media verzenden om de cache binnen enkele minuten te laten verlopen.
 

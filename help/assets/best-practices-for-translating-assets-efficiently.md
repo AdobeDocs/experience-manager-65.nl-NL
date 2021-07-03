@@ -2,18 +2,17 @@
 title: Aanbevolen procedures voor het vertalen van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
-role: Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Beheer van bedrijfsmiddelen
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '408'
 ht-degree: 1%
 
 ---
 
-
-# Aanbevolen procedures voor het omzetten van elementen {#best-practices-for-translating-assets-efficiently}
+# Aanbevolen procedures voor het vertalen van middelen {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] biedt ondersteuning voor meertalige workflows voor het vertalen van binaire bestanden, metagegevens en tags voor digitale elementen naar meerdere landinstellingen en het beheren van de vertaalde middelen. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
 

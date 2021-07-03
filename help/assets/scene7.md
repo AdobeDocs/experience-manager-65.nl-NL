@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 900a2ccbf33575644f934e5a75380d8dd3eab5d8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2711'
 ht-degree: 0%
@@ -54,7 +54,7 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 >Experience Manager publiceert asynchroon naar Dynamic Media Classic. Nadat u op **[!UICONTROL Publish]** hebt geklikt, duurt het enkele seconden voordat uw element naar Dynamic Media Classic wordt gepubliceerd.
 
 
-## Dynamic Media Klassieke componenten {#scene-components}
+## Dynamic Media Classic-componenten {#scene-components}
 
 De volgende Klassieke Dynamic Media-componenten zijn beschikbaar in de Experience Manager:
 
@@ -105,7 +105,7 @@ Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina 
    >
    >Alleen in de gebruikersinterface moet u de afbeelding of video slepen en neerzetten op het klassieke Dynamic Media-onderdeel dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Klassieke Dynamic Media-component en vervolgens het kiezen van het element wordt niet ondersteund.
 
-### Interactieve kijkervaringen toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Interactieve weergaven toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Het responsieve ontwerp voor uw elementen betekent dat uw element wordt aangepast, afhankelijk van waar het wordt weergegeven. Bij een responsief ontwerp kunnen dezelfde elementen effectief op meerdere apparaten worden weergegeven.
 
@@ -127,7 +127,7 @@ Zie ook [Responsief ontwerp voor webpagina&#39;s](/help/sites-developing/respons
 
 1. Controleer of de viewers het formaat responsief wijzigen en of alle interacties zijn geoptimaliseerd voor computers, tablets en mobiele apparaten.
 
-### Gemeenschappelijke instellingen voor alle Dynamic Media Classic-componenten {#settings-common-to-all-scene-components}
+### Algemene instellingen voor alle Dynamic Media Classic-componenten {#settings-common-to-all-scene-components}
 
 Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten:
 
@@ -229,7 +229,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Van de klassieke Dynamic Media-afbeeldingssjabloon een koppeling {#making-the-scene-image-template-a-link} maken
+#### Een koppeling maken van de klassieke Dynamic Media-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
 
 1. Tik op **[!UICONTROL Edit]** op de pagina met de klassieke Dynamic Media-component **[!UICONTROL Image Template]**.
 1. Voer in het veld **[!UICONTROL URL]** de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. Selecteer in het veld **[!UICONTROL Open in]** of u het doel wilt openen (een nieuw venster of hetzelfde venster).
@@ -238,7 +238,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 1. Tik op **[!UICONTROL OK]**.
 
-### Videocomponent {#video-component}
+### Video-component {#video-component}
 
 De Klassieke Dynamic Media **[!UICONTROL Video]**-component (beschikbaar in het Klassieke Dynamic Media-gedeelte van het hulpapparaat) gebruikt apparaat- en bandbreedtedetectie om de juiste video voor elk scherm te leveren. Deze component is een HTML5-videospeler; het is één viewer die via meerdere kanalen kan worden gebruikt.
 
@@ -248,7 +248,7 @@ Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Bekende beperkingen voor de videocomponent {#known-limitations-for-the-video-component}
+### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
 
 Adobe DAM en WCM laten zien of een primaire bronvideo is geüpload. Deze proxy-elementen worden niet weergegeven:
 
@@ -277,7 +277,7 @@ Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [s
    >   * Single F4V-video
 
 
-### Door inhoud bladeren in de interface met geoptimaliseerde aanrakingen {#browsing-content-in-the-touch-optimized-ui}
+### Door inhoud bladeren in de gebruikersinterface die geoptimaliseerd is voor aanrakingen {#browsing-content-in-the-touch-optimized-ui}
 
 U kunt de inhoudbrowser openen via de geoptimaliseerde interface of via de klassieke gebruikersinterface. Op dit moment heeft het geoptimaliseerde aanraakgebied de volgende beperking:
 
@@ -303,7 +303,7 @@ Bovendien kunt u informatie over de resolutie, de grootte, de dagen sinds de wij
 * Voor adaptieve videosets en sjablonen wordt geen informatie over de grootte gegenereerd voor miniaturen.
 * Voor adaptieve videosets wordt geen resolutie gegenereerd voor miniaturen.
 
-### Dynamic Media Classic-elementen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
+### Dynamic Media Classic-middelen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
 Het zoeken naar elementen in Dynamic Media Classic lijkt op het zoeken naar elementen in Experience Manager Assets. Wanneer u echter zoekt, ziet u in feite een externe weergave van de elementen in het klassieke Dynamic Media-systeem in plaats van deze rechtstreeks in de Experience Manager te importeren.
 

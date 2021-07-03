@@ -2,16 +2,15 @@
 title: Aanbevolen procedures voor het bewaken van [!DNL Assets] implementatie
 description: Beste praktijken om het milieu en de prestaties van uw  [!DNL Adobe Experience Manager] plaatsing te controleren nadat het wordt opgesteld.
 contentOwner: AG
-role: Administrator, Architect
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin, Architect
+feature: Beheer van bedrijfsmiddelen
+exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen procedures voor het bewaken van [!DNL Adobe Experience Manager Assets]-implementatie {#assets-monitoring-best-practices}
 
@@ -54,15 +53,15 @@ Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijge
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
-## Langdurige bewaking {#long-term-monitoring}
+## Controle op lange termijn {#long-term-monitoring}
 
 Voor langdurige bewaking van een [!DNL Experience Manager]-implementatie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
 
-### Logaggregatie en rapportage {#log-aggregation-and-reporting}
+### Aggregatie en rapportage van stamhout {#log-aggregation-and-reporting}
 
 Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search, Logstash, en Kabana (ELK). Om de uptime van uw [!DNL Experience Manager] plaatsing te evalueren, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
 
-### Omgevingsbewaking {#environment-monitoring}
+### Milieu-monitoring {#environment-monitoring}
 
 De bewaking van het milieu omvat de bewaking van het volgende:
 
@@ -75,7 +74,7 @@ De bewaking van het milieu omvat de bewaking van het volgende:
 
 U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe adviseert geen bepaalde hulpmiddelen over anderen. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
 
-#### Interne bewaking van toepassingen {#internal-application-monitoring}
+#### Interne toepassingsbewaking {#internal-application-monitoring}
 
 De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de [!DNL Experience Manager] stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door douanetoepassingscode die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
 
@@ -189,7 +188,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * Alarmdrempel: Wanneer de status niet OK is
    * Alarmdefinitie: De logbestanden bevatten fouten. Controleer de logboekattributen voor meer informatie over de oorzaak van de kwestie.
 
-## Algemene kwesties en resoluties {#common-issues-and-resolutions}
+## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
 Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met [!DNL Experience Manager] plaatsingen op te lossen:
 

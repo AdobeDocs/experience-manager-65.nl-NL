@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramische afbeeldingen, beheer van bedrijfsmiddelen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 5%
@@ -40,7 +40,7 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 
 Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
 
-## Dynamic Media Classic {#configuring-dynamic-media-classic-scene} configureren
+## Dynamic Media Classic configureren {#configuring-dynamic-media-classic-scene}
 
 De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voorinstellingen voor de Panoramische Image Viewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media Classic, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Om deze synch te verwezenlijken, vorm als volgt Dynamic Media Classic:
 
@@ -69,7 +69,7 @@ De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voo
 
 1. Klik in de rechterbenedenhoek op **[!UICONTROL Close]**.
 
-### Problemen met de WCM-component Panoramische media {#troubleshooting-the-panoramic-media-wcm-component} oplossen
+### Problemen met de WCM-component Panoramische media oplossen {#troubleshooting-the-panoramic-media-wcm-component}
 
 Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen componentenplaceholder liet vallen, los het volgende problemen op:
 
@@ -79,10 +79,10 @@ Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen co
 * Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel plaatst en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
 * Als de afbeeldingskwaliteit laag wordt na een verzoek om een afbeelding waarvan de grootte groter is dan de ondersteunde limiet, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
 
-## Voorvertoning van panorama-afbeeldingen {#previewing-panoramic-images}
+## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
 
 Zie [Elementen voorvertonen](/help/assets/previewing-assets.md).
 
-## Panorama-afbeeldingen {#publishing-panoramic-images} publiceren
+## Panorama-afbeeldingen publiceren {#publishing-panoramic-images}
 
 Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).

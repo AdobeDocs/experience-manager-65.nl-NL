@@ -2,18 +2,17 @@
 title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
-feature: Smart Tags, Search
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Slimme tags, zoeken
+role: User
+exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1564'
 ht-degree: 1%
 
 ---
 
-
-# Slimme tags {#enhanced-smart-tags} begrijpen, toepassen en beheren
+# Slimme tags begrijpen, toepassen en beheren {#enhanced-smart-tags}
 
 Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt gecontroleerd, worden de elementen gemakkelijk geïdentificeerd en opgehaald.
 
@@ -128,7 +127,7 @@ U kunt de tagwerkstroom periodiek of telkens wanneer dat nodig is uitvoeren.
 >
 >De tagwerkstroom wordt zowel op elementen als op mappen uitgevoerd.
 
-### Periodieke labels {#periodic-tagging}
+### Periodieke tags {#periodic-tagging}
 
 U kunt de Slimme Dienst van de Inhoud toelaten om activa binnen een omslag periodiek te etiketteren. Open de eigenschappenpagina van de elementenmap, selecteer **[!UICONTROL Enable Smart Tags]** onder het tabblad **[!UICONTROL Details]** en sla de wijzigingen op.
 
@@ -171,7 +170,7 @@ U kunt de tagwerkstroom vanuit de workflowconsole of vanuit de tijdlijn activere
 >
 >In de volgende coderingscycli worden alleen de gewijzigde elementen opnieuw gecodeerd met zojuist opgeleide tags. Zelfs ongewijzigde elementen worden echter gecodeerd als de ruimte tussen de laatste en huidige coderingscycli voor de coderingsworkflow meer dan 24 uur bedraagt. Voor workflows voor periodieke labeling worden ongewijzigde elementen gecodeerd wanneer het tijdsverschil langer is dan zes maanden.
 
-## De toegepaste slimme tags {#manage-smart-tags} krommen of verkleinen
+## De toegepaste slimme tags curven of matigen {#manage-smart-tags}
 
 U kunt slimme tags beheren om eventuele onjuiste tags te verwijderen die aan uw merkafbeeldingen zijn toegewezen, zodat alleen de meest relevante tags worden weergegeven.
 

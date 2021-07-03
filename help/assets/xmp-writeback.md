@@ -2,16 +2,15 @@
 title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Metadata
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Metagegevens
+exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '713'
 ht-degree: 3%
 
 ---
-
 
 # Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
@@ -29,7 +28,7 @@ In dit geval slaat [!DNL Experience Manager Assets] de wijzigingen in de eigensc
 
 [!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [hoe te om XMP terug ](#enable-xmp-writeback) toe te laten.
 
-## Terugschrijven XMP {#enable-xmp-writeback} inschakelen
+## Terugschrijven XMP inschakelen {#enable-xmp-writeback}
 
 Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activa worden verspreid wanneer het uploaden van het, wijzig de **[!UICONTROL Adobe CQ DAM Rendition Maker]** configuratie in de Manager van de Configuratie.
 
@@ -70,7 +69,7 @@ De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatu
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
 
 Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de [!DNL Experience Manager] plaatsing stabiliteitskwesties ontmoeten, bijvoorbeeld verstopte observatierijen.
 

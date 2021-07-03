@@ -2,18 +2,17 @@
 title: '[!DNL Assets] formaatgids'
 description: Aanbevolen werkwijzen om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om  [!DNL Adobe Experience Manager Assets] op te stellen.
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Beheer van bedrijfsmiddelen
+exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] formaatgids  {#assets-sizing-guide}
+# [!DNL Assets] formaatgids {#assets-sizing-guide}
 
 Wanneer het rangschikken van het milieu voor een [!DNL Adobe Experience Manager Assets] implementatie, is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
@@ -34,7 +33,7 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Definieer de uitvoeringen die moeten worden gebruikt.
 1. Maak de uitvoeringen in [!DNL Experience Manager] met behulp van [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen.
-1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
+1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor voor de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
 1. Bepaal hoe vaak bestaande elementen in het systeem worden gewijzigd. Als [!DNL Experience Manager] wordt gebruikt als een samenwerkingscentrum in creatieve werkschema&#39;s, is de hoeveelheid veranderingen hoog. Als alleen voltooide elementen naar het systeem worden geüpload, is dit aantal veel lager.
 1. Bepaal hoeveel elementen elke maand in het systeem worden geladen. Als u niet zeker weet, controleert u het aantal elementen dat momenteel beschikbaar is en verdeelt u het getal door de leeftijd van het oudste element om een geschatte waarde te berekenen.
@@ -59,21 +58,21 @@ De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangr
 
 Voor grote datastores, kunt u een gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een datastore van Amazon S3 uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa aan publicatiemilieu&#39;s te herhalen.
 
-#### Gebruik gevallen {#use-cases}
+#### Gebruik hoofdletters {#use-cases}
 
 De datastore kan tussen een primaire en reserve auteursinstantie worden gedeeld om de hoeveelheid tijd te minimaliseren die het vergt om de reserve instantie met veranderingen bij te werken die in de primaire instantie worden aangebracht. U kunt datastore tussen de auteur ook delen en instanties publiceren om het verkeer tijdens replicatie te minimaliseren.
 
-#### Terugbetalingen {#drawbacks}
+#### Nadelen {#drawbacks}
 
 Door sommige valkuilen wordt het delen van een datastore niet in alle gevallen aanbevolen.
 
-#### Enkel punt van fout {#single-point-of-failure}
+#### Eén foutpunt {#single-point-of-failure}
 
 Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg daarom dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
 
 Het implementeren van de AWS S3-service voor gedeelde datastores heeft de voorkeur, omdat dit de kans op mislukking aanzienlijk verkleint in vergelijking met normale schijfarchitecturen.
 
-#### Hogere complexiteit {#increased-complexity}
+#### Meer complexiteit {#increased-complexity}
 
 Gedeelde datastores verhogen ook de ingewikkeldheid van verrichtingen, zoals huisvuilinzameling. Normaal, kan de huisvuilinzameling voor een standalone datastore met één enkele klik in werking worden gesteld. Nochtans, vereisen de gedeelde datastores de verrichtingen van de marktopening op elk lid dat datastore gebruikt, naast het runnen van de daadwerkelijke inzameling op één enkele knoop.
 
@@ -87,7 +86,7 @@ Een gedeelde datastore vereist dat de binaire getallen op een netwerk-opgezette 
 
 De latentie in S3 implementaties wordt geïntroduceerd door de achtergrond schrijvend draden. Bij de back-upprocedures moet rekening worden gehouden met deze latentie. Bovendien kunnen de indexen van Lucene onvolledig blijven wanneer het maken van een steun. Het is van toepassing op elk tijdgevoelig dossier dat aan S3 datastore wordt geschreven en van een andere instantie wordt betreden.
 
-### Node store or document store {#node-store-document-store}
+### Node Store of document Store {#node-store-document-store}
 
 Het is moeilijk om exacte cijfers voor de grootte van een NodeStore of DocumentStore te bepalen vanwege de middelen die door het volgende worden verbruikt:
 
@@ -114,7 +113,7 @@ Bestandsgrootte is niet de enige factor die bijdraagt aan problemen met onvoldoe
 
 Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.handler.StandardImageHandler` component in de Manager van de Configuratie uitgeven om tussentijds tijdelijk dossier groter dan nul te gebruiken.
 
-## Maximum aantal elementen {#maximum-number-of-assets}
+## Maximumaantal activa {#maximum-number-of-assets}
 
 De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de gegevensopslagruimte problemen tegenkomt vanwege een groot aantal knooppunten lang voordat de datastore-limiet wordt bereikt.
 
@@ -122,6 +121,6 @@ Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. 
 
 Het is moeilijk nauwkeurig de grootte te schatten van het TIF dossier dat uit-van-de-doos met een specifieke heap voor [!DNL Experience Manager] wordt gesteund omdat de extra factoren, zoals pixelgrootte verwerking beïnvloeden. Het is mogelijk dat [!DNL Experience Manager] een dossier van grootte van 255 MB uit-van-de-doos kan verwerken, maar niet een dossiergrootte van 18 MB kan verwerken omdat het laatstgenoemde uit een ongewoon hoger aantal pixel dan eerstgenoemde omvat.
 
-## Grootte van elementen {#size-of-assets}
+## Omvang van elementen {#size-of-assets}
 
 Standaard kunt u met [!DNL Experience Manager] elementen van maximaal 2 GB uploaden. Zie [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb) voor informatie over het uploaden van zeer grote elementen.[!DNL Experience Manager]

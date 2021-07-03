@@ -8,9 +8,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Afbeeldingsprofielen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2669'
 ht-degree: 9%
@@ -29,7 +29,7 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 >
 >Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
-## Uitsnijdopties {#crop-options}
+## Opties voor uitsnijden {#crop-options}
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
@@ -122,7 +122,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
+## Een Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één afbeeldingsprofiel aan een map kunt toewijzen. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -153,7 +153,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Tik op **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik/klik op **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit Eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen vanuit eigenschappen toepassen op mappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Tik op het logo van de Experience Manager en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
@@ -161,7 +161,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Een Dynamic Media-afbeeldingsprofiel globaal toepassen {#applying-an-image-profile-globally}
+### Een Dynamic Media-afbeeldingsprofiel wereldwijd toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar Experience Manager-elementen in een map.
 
@@ -212,7 +212,7 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Het slimme uitsnijd- of slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Desgewenst kunt u het venster voor slimme uitsnijden in meerdere afbeeldingen *handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.*
 
@@ -263,7 +263,7 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
+## Een afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
 
 Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
@@ -277,7 +277,7 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen door eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
 1. Tik op het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.

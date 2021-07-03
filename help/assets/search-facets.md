@@ -2,10 +2,10 @@
 title: Zoeken in facetten om zoekresultaten te filteren
 description: Hoe te om tot stand te brengen, te wijzigen en, onderzoeksfacetten in  [!DNL Adobe Experience Manager] te gebruiken.
 contentOwner: AG
-role: Administrator, Developer
+role: Admin, Developer
 feature: Zoeken
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: e78b42a899de3c8009817ba9e60bac40e161270f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 14%

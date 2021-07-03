@@ -2,16 +2,15 @@
 title: Persoonlijke mappen om elementen te delen
 description: Leer hoe te om tot een privé omslag in  [!DNL Adobe Experience Manager Assets] te leiden en het met andere gebruikers te delen en verschillende voorrechten aan hen toe te wijzen.
 contentOwner: AG
-role: Business Practitioner
-feature: Collaboration
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User
+feature: Samenwerking
+exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
-
 
 # Persoonlijke map in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
@@ -21,7 +20,7 @@ U kunt een privé omslag in [!DNL Adobe Experience Manager Assets] gebruikersint
 >
 >De privé omslag heeft minstens één lid met de rol van de Eigenaar.
 
-## Maken en delen van privémappen {#create-share-private-folder}
+## Maken en delen van persoonlijke mappen {#create-share-private-folder}
 
 Persoonlijke map maken en delen:
 
@@ -71,7 +70,7 @@ Persoonlijke map maken en delen:
 >
 >Om een privé omslag tot stand te brengen, vereist u Gelezen en wijzigt [toegangsbeheertoestemmingen](/help/sites-administering/security.md#permissions-in-aem) op de ouderomslag waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze toestemmingen niet toegelaten voor u door gebrek op `/content/dam`. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken.
 
-## Verwijderen van privémap {#delete-private-folder}
+## Verwijderen van persoonlijke map {#delete-private-folder}
 
 U kunt een map verwijderen door de map te selecteren en de optie [!UICONTROL Delete] in het bovenste menu te selecteren of door de Backspace-toets op het toetsenbord te gebruiken.
 

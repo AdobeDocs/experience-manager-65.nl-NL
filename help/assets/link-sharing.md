@@ -2,11 +2,10 @@
 title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Delen van koppelingen, beheer van bedrijfsmiddelen
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-translation-type: tm+mt
-source-git-commit: 3ec39279d001297dcc11ebd1110bb452de8ca980
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 3%
@@ -87,7 +86,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Maximale gegevensgrootte {#configure-maximum-data-size} configureren
+## Maximale gegevensgrootte configureren {#configure-maximum-data-size}
 
 Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie voor het delen van koppelingen, wordt de elementenhiërarchie van de opslagplaats gecomprimeerd en wordt het element vervolgens in een ZIP-bestand geretourneerd. [!DNL Experience Manager] Bij gebrek aan beperkingen van de hoeveelheid gegevens die in een ZIP-bestand kan worden gecomprimeerd, worden enorme hoeveelheden gegevens gecomprimeerd, waardoor fouten in het geheugen in JVM worden veroorzaakt. Om het systeem van een potentiële ontkenning van de dienstaanval wegens deze situatie te beveiligen, vorm de maximumgrootte gebruikend de **[!UICONTROL Max Content Size (uncompressed)]** parameter voor **[!UICONTROL Day CQ DAM Adhoc Asset Share Proxy Servlet]** in de Manager van de Configuratie. Als de niet-gecomprimeerde grootte van het element de geconfigureerde waarde overschrijdt, worden de verzoeken om het downloaden van het element afgewezen. De standaardwaarde is 100 MB.
 
@@ -99,7 +98,7 @@ Wanneer u elementen downloadt van de koppeling die wordt gedeeld met de functie 
 
 1. Sla de wijzigingen op.
 
-## Aanbevolen procedures en problemen oplossen {#best-practices-and-troubleshooting}
+## Beste werkwijzen en probleemoplossing {#best-practices-and-troubleshooting}
 
 * Elementmappen of verzamelingen die een witruimte in hun naam bevatten, worden mogelijk niet gedeeld.
 * Als gebruikers de gedeelde elementen niet kunnen downloaden, vraagt u bij uw [!DNL Experience Manager]-beheerder wat de [downloadlimieten](#configure-maximum-data-size) zijn.

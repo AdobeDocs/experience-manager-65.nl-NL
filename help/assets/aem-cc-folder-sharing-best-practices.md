@@ -2,18 +2,17 @@
 title: Mappen delen naar  [!DNL Adobe Creative Cloud] aanbevolen werkwijzen
 description: Configureer [!DNL Adobe Experience Manager] to allow users in [!DNL Experience Manager Assets] om mappen uit te wisselen met gebruikers van Adobe Creative Cloud (CC).
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Collaboration
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Samenwerking
+exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Adobe Experience Manager] naar gedeelde  [!DNL Adobe Creative Cloud] map  {#aem-to-creative-cloud-folder-sharing-best-practices}
+# [!DNL Adobe Experience Manager] naar gedeelde  [!DNL Adobe Creative Cloud] map {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -60,7 +59,7 @@ De integratie omvat de volgende elementen:
 * **Netwerk en bandbreedte:** De bestanden in gedeelde mappen en alle updates moeten via het netwerk tussen de systemen worden getransporteerd. Zorg ervoor dat alleen relevante bestanden en updates worden gedeeld.
 * **Maptype**: Het delen van een  [!DNL Assets] map van het type  `sling:OrderedFolder`, wordt niet ondersteund in de context van delen in  [!DNL Adobe Marketing Cloud]. Selecteer de optie [!UICONTROL Ordered] niet als u een map wilt delen wanneer u deze maakt in [!DNL Assets].
 
-## Aanbevolen werkwijzen {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 De beste werkwijzen voor het gebruiken van [!DNL Experience Manager] aan [!DNL Creative Cloud] omslag het delen omvatten:
 

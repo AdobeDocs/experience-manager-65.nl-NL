@@ -3,16 +3,15 @@ title: Verzamelingen digitale middelen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
-feature: Collections,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Verzamelingen, beheer van bedrijfsmiddelen
+exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2027'
 ht-degree: 10%
 
 ---
-
 
 # Verzamelingen beheren {#managing-collections}
 
@@ -36,7 +35,7 @@ Als u **[!UICONTROL Collections]** wilt openen, gaat u in de [!DNL Experience Ma
 
 U kunt een inzameling of met [statische verwijzingen](#creating-a-collection-with-static-references) of gebaseerd op een [onderzoek op criteria-gebaseerde filter](#creating-a-smart-collection) tot stand brengen. U kunt ook een verzameling maken van een lichtbak.
 
-### Een verzameling maken met statische verwijzingen {#creating-a-collection-with-static-references}
+### Een verzameling met statische verwijzingen maken {#creating-a-collection-with-static-references}
 
 U kunt een verzameling maken met statische verwijzingen, bijvoorbeeld een verzameling met verwijzingen naar elementen, mappen, verzamelingen, centrifuges en afbeeldingssets.
 
@@ -147,7 +146,7 @@ De meta-gegevens van de inzameling omvat gegevens over de inzameling, met inbegr
 1. Op de **[!UICONTROL Collection Metadata]** pagina, bekijk de inzamelingsmeta-gegevens van **[!UICONTROL Basic]** en **[!UICONTROL Advanced]** lusjes.
 1. Wijzig desgewenst de metagegevens. Als u de wijzigingen wilt opslaan, klikt u op **[!UICONTROL Save & Close]** op de werkbalk.
 
-## Metagegevens van meerdere verzamelingen bulksgewijs {#editing-collection-metadata-in-bulk} bewerken
+## Metagegevens van meerdere verzamelingen bulksgewijs bewerken {#editing-collection-metadata-in-bulk}
 
 U kunt de metagegevens van meerdere verzamelingen tegelijk bewerken. Deze functionaliteit helpt u snel gemeenschappelijke meta-gegevens in veelvoudige inzamelingen te herhalen.
 
@@ -196,7 +195,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
 1. Klik op **[!UICONTROL Save]** om de wijzigingen op te slaan.
 
-## Een verzameling {#deleting-a-collection} verwijderen
+## Een verzameling verwijderen {#deleting-a-collection}
 
 1. Selecteer een of meer verzamelingen in de console Verzamelingen en klik op Verwijderen op de werkbalk.
 
@@ -206,7 +205,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
    >
    >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#saved-searches) te verwijderen.[
 
-## Een verzameling {#downloading-a-collection} downloaden
+## Een verzameling downloaden {#downloading-a-collection}
 
 Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elementen in de verzameling gedownload, inclusief mappen en onderliggende verzamelingen.
 
@@ -259,7 +258,7 @@ Voer de volgende stappen uit om opgeslagen zoekopdrachten te verwijderen:
 
 1. Klik in het dialoogvenster op **[!UICONTROL Delete]** om de opgeslagen zoekopdracht te verwijderen.
 
-## Een workflow uitvoeren op een verzameling {#running-a-workflow-on-a-collection}
+## Een workflow op een verzameling uitvoeren {#running-a-workflow-on-a-collection}
 
 U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verzameling geneste verzamelingen bevat, wordt de workflow ook uitgevoerd op de elementen in de geneste verzamelingen. Als de verzameling en de geneste verzameling echter dubbele elementen bevatten, wordt de workflow slechts eenmaal uitgevoerd voor dergelijke elementen.
 
@@ -272,5 +271,5 @@ U kunt een workflow voor de elementen in een verzameling uitvoeren. Als de verza
 >[!MORELIKETHIS]
 >
 >* [E-mailberichten voor Experience Manager Assets configureren](/help/sites-administering/notification.md#assetsconfig)
->* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
+* [Een revisietaak maken voor verzamelingen](bulk-approval.md)
 

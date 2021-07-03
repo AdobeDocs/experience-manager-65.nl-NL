@@ -4,9 +4,9 @@ description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Ma
 contentOwner: AG
 mini-toc-levels: 1
 feature: Zoeken, metagegevens
-role: Business Practitioner
+role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 791f5b5b2544eed1b3564dabf4bc3ed8df092653
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '5526'
 ht-degree: 4%

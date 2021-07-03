@@ -2,16 +2,15 @@
 title: Verwante activa
 description: Leer hoe u digitale elementen die gemeenschappelijke kenmerken delen, koppelt. Maak ook bronafhankelijke relaties tussen digitale elementen.
 contentOwner: AG
-role: Business Practitioner
-feature: Collaboration,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Samenwerking, beheer van bedrijfsmiddelen
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
-
 
 # Verwante activa {#related-assets}
 
@@ -23,7 +22,7 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 >
 >Alleen gebruikers met bewerkingsmachtigingen voor elementen kunnen de elementen releren en de relatie tussen de elementen verbreken.
 
-## Elementen {#relating-assets} koppelen
+## Relatieve elementen {#relating-assets}
 
 1. Open vanuit de interface [!DNL Experience Manager] de pagina **[!UICONTROL Properties]** voor een element dat u wilt koppelen.
 
@@ -63,7 +62,7 @@ Met deze functie hebt u de flexibiliteit om een PDF- of JPG-bestand met lage res
 
 1. Klik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de sectie **[!UICONTROL Related]**.
 
-## Verwante elementen vertalen {#translating-related-assets}
+## Gerelateerde elementen vertalen {#translating-related-assets}
 
 Het maken van bron-/afgeleide relaties tussen elementen met behulp van de functie voor gerelateerde elementen is ook handig in vertaalworkflows. Wanneer u een vertaalwerkstroom op een afgeleid middel in werking stelt, [!DNL Experience Manager Assets] haalt automatisch om het even welk middel dat de brondossierverwijzingen en omvat het voor vertaling. Op deze manier wordt het element waarnaar door het bronelement wordt verwezen, samen met de bron en afgeleide elementen omgezet. Neem bijvoorbeeld een scenario waarin uw Engelse taalkopie een afgeleid element en het bronbestand van dat element bevat, zoals wordt weergegeven.
 

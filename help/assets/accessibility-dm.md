@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Toegankelijkheid
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: a4e9a4003bf0ce686578d3f8b3fddc19bc49dfb4
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken]
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Technische ondersteuning in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Support voor hulpprogramma&#39;s in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
 [!DNL Dynamic Media] gebruikersinterface-elementen werken met ondersteunende hulpmiddelen, zoals schermlezers. De code herkent bijvoorbeeld markeringen op een pagina wanneer u door landmarkeringen navigeert met de sneltoets `D` of gebieden met de sneltoets `R`. De koptekst wordt ook van commentaar voorzien wanneer u navigeert met de sneltoets `H`.
 
@@ -55,7 +55,7 @@ Alle offline [!DNL Dynamic Media] viewercomponenten ondersteunen toetsenbordtoeg
 
 Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de handleiding Referentie voor Dynamic Media-viewers.
 
-## Support voor ondersteunende technologie in [!DNL Dynamic Media]-viewers {#assistive-technology-support-for-dm-viewers}
+## Support voor hulpprogramma&#39;s in [!DNL Dynamic Media]-viewers {#assistive-technology-support-for-dm-viewers}
 
 Alle [!DNL Dynamic Media] viewercomponenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
 Zie het **Technische ondersteuning** Help-onderwerp in een aangepast vieweronderwerp in de handleiding voor Dynamic Media-viewers. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.

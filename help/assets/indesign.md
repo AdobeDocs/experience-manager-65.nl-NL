@@ -2,10 +2,10 @@
 title: Integreer [!DNL Assets] met [!DNL InDesign Server]
 description: Leer hoe te om [!DNL Adobe Experience Manager Assets] met [!DNL Adobe InDesign Server] te integreren.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Publiceren
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 3c1a30f36222c319c354afa408555982bfe2804e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 1%
@@ -69,7 +69,7 @@ Om [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] en n
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 1. Configureer een [proxyworker voor de InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### [!DNL InDesign Server] {#installing-the-indesign-server} installeren
+### [!DNL InDesign Server] installeren {#installing-the-indesign-server}
 
 [!DNL InDesign Server] installeren en starten voor gebruik met [!DNL Experience Manager]:
 
@@ -88,7 +88,7 @@ Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie
    >Als u de outputberichten aan een dossier wilt bewaren dan gebruik redirection; bijvoorbeeld onder Windows:
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### De [!DNL Experience Manager Assets]-workflow {#configuring-the-aem-assets-workflow} configureren
+### De [!DNL Experience Manager Assets]-workflow configureren {#configuring-the-aem-assets-workflow}
 
 [!DNL Experience Manager Assets] beschikt over een vooraf geconfigureerde workflow  **[!UICONTROL DAM Update Asset]** met specifieke verschillende processtappen voor  [!DNL InDesign]:
 
@@ -125,7 +125,7 @@ Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap M
 
 U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u niet de gebreken verwijdert, omdat zij door de [!DNL Experience Manager Assets] interface worden vereist. Tot slot verwijdert de werkstroomstap Voorvertoning van afbeelding verwijderen de uitvoering van de JPG-miniatuur, omdat deze niet langer nodig is.
 
-#### Pagina-extractie {#page-extraction}
+#### Pagina uitnemen {#page-extraction}
 
 Hiermee maakt u een [!DNL Experience Manager]-pagina van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
 
@@ -147,7 +147,7 @@ In een standaard [!DNL Experience Manager] installatie is het volgende beschikba
 
 * **Paginaontwerp**: Het paginaontwerp dat moet worden gebruikt bij het genereren van de resulterende pagina.
 
-### De proxyworker configureren voor [!DNL InDesign Server] {#configuring-the-proxy-worker-for-indesign-server}
+### De proxyworker voor [!DNL InDesign Server] configureren {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -166,7 +166,7 @@ PoolHet (de) eindpunt(en) van de ZEEP die voor het communiceren met  [!DNL InDes
 
 1. Klik op OK om op te slaan.
 
-### De ExtensionAlizer {#configuring-day-cq-link-externalizer} van de Verbinding van Dag CQ vormen
+### vorm de Verbinding van CQ van de Dag uiterlijk {#configuring-day-cq-link-externalizer}
 
 Als [!DNL InDesign Server] en [!DNL Experience Manager] op verschillende gastheren zijn of één of beide toepassingen niet aan standaardhavens werken, dan vorm [!UICONTROL Day CQ Link Externalizer] om de gastheernaam, de haven, en de inhoudspad voor [!DNL InDesign Server] te plaatsen.
 
@@ -226,7 +226,7 @@ Voer voor [!DNL InDesign Server] 10.0 of hoger de volgende stappen uit om onders
 >
 >Voor [!DNL InDesign Server] integratie met [!DNL Experience Manager Assets], gebruik een multi-core bewerker omdat de zittingssteuneigenschap noodzakelijk voor de integratie niet op single core systemen wordt gesteund.
 
-## [!DNL Experience Manager] aanmeldingsgegevens {#configure-aem-credentials} configureren
+## [!DNL Experience Manager] aanmeldingsgegevens configureren {#configure-aem-credentials}
 
 U kunt de standaardbeheerdergeloofsbrieven (gebruikersnaam en wachtwoord) veranderen om tot [!DNL InDesign Server] van uw [!DNL Experience Manager] plaatsing toegang te hebben zonder de integratie met [!DNL InDesign Server] te breken.
 

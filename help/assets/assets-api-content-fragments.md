@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: extending-assets
 discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
-
 
 # Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets{#content-fragments-support-in-aem-assets-http-api}
 
@@ -148,7 +147,7 @@ Zie voor meer informatie over functies die beschikbaar zijn via de API:
 * [Beschikbare ](/help/assets/mac-api-assets.md#assets) functies van de REST API voor middelen
 * [Typen entiteiten](/help/assets/assets-api-content-fragments.md#entity-types)
 
-### {#paging} pagineren
+### Paginering {#paging}
 
 De REST API voor middelen ondersteunt paginering (voor GET-aanvragen) via de URL-parameters:
 
@@ -161,7 +160,7 @@ De reactie zal het pagineren informatie als deel van `properties` sectie van de 
 >
 >Paginering wordt doorgaans toegepast op containerentiteiten (d.w.z. mappen of elementen met uitvoeringen), aangezien deze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
 
-#### Voorbeeld: {#example-paging} pagineren
+#### Voorbeeld: Paginering {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -205,7 +204,7 @@ Een [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is ee
 
 Aangezien er verschillende verschillen zijn met *standard* elementen (zoals afbeeldingen of audio), zijn er enkele aanvullende regels van toepassing op de afhandeling ervan.
 
-#### Weergave {#representation}
+#### Vertegenwoordiging {#representation}
 
 Inhoudsfragmenten:
 
@@ -214,7 +213,7 @@ Inhoudsfragmenten:
 
 * Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
-#### Content Models and Content Fragments {#content-models-and-content-fragments}
+#### Inhoudsmodellen en Inhoudsfragmenten {#content-models-and-content-fragments}
 
 De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom moet de *consument* op de hoogte zijn van het model van een fragment (ten minste een minimum) - hoewel de meeste informatie kan worden afgeleid uit de lading; als gegevenstypen, enz. maken deel uit van de definitie.
 
@@ -224,7 +223,7 @@ Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopsl
 
 Gekoppelde inhoud wordt momenteel niet weergegeven.
 
-## {#using} gebruiken
+## Gebruiken {#using}
 
 Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomgeving gebruikt, samen met uw specifieke gebruiksscenario.
 
@@ -242,7 +241,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 >
 >Zie [API Reference](/help/assets/assets-api-content-fragments.md#api-reference) voor meer informatie. Met name [Adobe Experience Manager Assets API - Content Fragments](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
-### {#read-delivery} lezen/leveren
+### Lezen/Levering {#read-delivery}
 
 Gebruik gebeurt via:
 
@@ -267,7 +266,7 @@ Gebruik gebeurt via:
 
 De hoofdtekst moet een JSON-representatie bevatten van het inhoudsfragment dat moet worden gemaakt, inclusief de initiële inhoud die moet worden ingesteld op de elementen van het inhoudsfragment. Het is verplicht om de eigenschap `cq:model` in te stellen en deze moet verwijzen naar een geldig inhoudsfragmentmodel. Als u dit niet doet, treedt er een fout op. Er moet ook een koptekst `Content-Type` worden toegevoegd die is ingesteld op `application/json`.
 
-### {#update} bijwerken
+### Bijwerken {#update}
 
 Gebruik is via
 
@@ -365,7 +364,7 @@ De volgende statuscodes kunnen in de relevante omstandigheden worden gezien:
    }
    ```
 
-## API-referentie {#api-reference}
+## API-naslag {#api-reference}
 
 Zie hier voor gedetailleerde API-referenties:
 
@@ -380,4 +379,3 @@ Zie voor meer informatie:
 
 * [Elementen HTTP API-documentatie](/help/assets/mac-api-assets.md)
 * [AEM Gem-sessie: OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
-

@@ -3,20 +3,19 @@ title: Prestaties afstemmen [!DNL Assets].
 description: Suggesties en richtlijnen voor [!DNL Experience Manager] configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van [!DNL Experience Manager Assets] te optimaliseren.
 contentOwner: AG
 mini-toc-levels: 1
-role: Architect, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Beheer van bedrijfsmiddelen
+exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2677'
 ht-degree: 0%
 
 ---
 
-
 <!-- TBD: Get reviewed by engineering. -->
 
-# [!DNL Adobe Experience Manager Assets] richtlijn voor afstelling van prestaties  {#assets-performance-tuning-guide}
+# [!DNL Adobe Experience Manager Assets] richtlijn voor afstelling van prestaties {#assets-performance-tuning-guide}
 
 Een [!DNL Experience Manager Assets] opstelling bevat een aantal hardware, software, en netwerkcomponenten. Afhankelijk van uw plaatsingsscenario, kunt u specifieke configuratieveranderingen in hardware, software, en netwerkcomponenten vereisen om prestatiesknelpunten te verwijderen.
 
@@ -72,11 +71,11 @@ Stel de volgende JVM-parameters in:
 
 ## Gegevensopslag en geheugenconfiguratie {#data-store-and-memory-configuration}
 
-### Configuratie {#file-data-store-configuration} van bestandsgegevensopslag
+### Configuratie bestandsgegevensopslag {#file-data-store-configuration}
 
 Het wordt aanbevolen de gegevensopslag te scheiden van de segmentopslag voor alle [!DNL Experience Manager Assets]-gebruikers. Bovendien kunt u de prestaties maximaliseren door de parameters `maxCachedBinarySize` en `cacheSizeInMB` te configureren. Stel `maxCachedBinarySize` in op de kleinste bestandsgrootte die in de cache kan worden opgeslagen. Geef de grootte op van de cache in het geheugen die moet worden gebruikt voor de datastore in `cacheSizeInMB`. Adobe raadt u aan deze waarde in te stellen tussen 2 en 10 procent van de totale heapgrootte. Het testen van de belasting/prestaties kan echter helpen de ideale instelling te bepalen.
 
-### De maximale grootte van de cache voor gebufferde afbeeldingen {#configure-the-maximum-size-of-the-buffered-image-cache} configureren
+### De maximale grootte van de cache voor gebufferde afbeeldingen configureren {#configure-the-maximum-size-of-the-buffered-image-cache}
 
 Wanneer u grote hoeveelheden assets uploadt naar [!DNL Adobe Experience Manager], om onverwachte pieken in geheugenverbruik mogelijk te maken en om te voorkomen dat JVM uitvalt met OutOfMemoryErrors, verlaagt u de geconfigureerde maximumgrootte van de cache voor gebufferde images. Bekijk een voorbeeld van een systeem met een maximale heap (- `Xmx`param) van 5 GB, een Oak BlobCache ingesteld op 1 GB en een documentcache ingesteld op 2 GB. In dit geval neemt de gebufferde cache maximaal 1,25 GB en geheugen in beslag, waardoor er slechts 0,75 GB geheugen overblijft voor onverwachte pieken.
 
@@ -152,7 +151,7 @@ Als het leegmaken te lang duurt, is het wel even. Daarom dient u ervoor te zorge
 
 Bijvoorbeeld, na het uitvoeren van talrijke niet-voorbijgaande werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u [ACS AEM de Werkschema Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) van Commons op een ad hoc basis uitvoeren. Het verwijdert overtollige, voltooide werkschemainstanties onmiddellijk eerder dan het wachten op de Adobe Granite planner van de Wrijving van het Werkschema van de.
 
-### Maximumaantal parallelle taken {#maximum-parallel-jobs}
+### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
 [!DNL Experience Manager] voert standaard een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door [!UICONTROL DAM Update Asset] workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat [!DNL Experience Manager] andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
@@ -176,13 +175,13 @@ Typisch, loopt de de inzamelingstaak van de datastore wekelijks samen met andere
 
 Als u een beperkte schijfruimte hebt en intensieve [!UICONTROL DAM Update Asset] werkschema&#39;s in werking stelt, overweeg vaker het plannen van de huisvuilinzamelingstaak.
 
-#### Genereren van uitvoering {#runtime-rendition-generation}
+#### Genereren van uitvoering bij uitvoering {#runtime-rendition-generation}
 
 Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun website of voor distributie aan zakelijke partners. Aangezien elke uitvoering de afdruk van het middel in de opslagplaats vergroot, raadt Adobe u aan deze functie zorgvuldig te gebruiken. Om de hoeveelheid bronnen te verminderen die nodig is om afbeeldingen te verwerken en op te slaan, kunt u deze afbeeldingen tijdens runtime genereren in plaats van als uitvoeringen tijdens het opnemen.
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een andere manier is om Dynamic Media-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
+Een andere manier is om Dynamic Media-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Daarnaast kunt u Brand Portal implementeren die niet alleen taken voor het genereren van vertoningen overneemt van de [!DNL Experience Manager]-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
@@ -215,7 +214,7 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 
 Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Werk samen met de Adobe Care-vertegenwoordiger om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen voor de bedrijfseigen indelingen van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
-### Terugschrijven XMP {#xmp-writeback}
+### XMP {#xmp-writeback}
 
 XMP terugschrijven werkt het oorspronkelijke element bij wanneer metagegevens worden gewijzigd in [!DNL Experience Manager]. Dit resulteert in het volgende:
 
@@ -231,7 +230,7 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve XM
 
 Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoorbeeld in een implementatie van Plaatsen, adviseert Adobe u kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
 
-### kettingreplicatie {#configure-chain-replication} configureren
+### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
 1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
@@ -261,7 +260,7 @@ Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbee
 1. In [!DNL Experience Manager] interface, toegang [!UICONTROL Package Manager].
 1. Upload en installeer het pakket dat beschikbaar is op [disable_indexingbinarytextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
-### Totaal {#guess-total} raden
+### Totaal raden {#guess-total}
 
 Wanneer het creëren van vragen die grote resultaatreeksen produceren, gebruik de `guessTotal` parameter om zwaar geheugengebruik te vermijden wanneer u hen in werking stelt.
 
@@ -287,14 +286,14 @@ Voor alle kwesties van netwerkprestaties van de klant, voer de volgende taken ui
 * Door een hulpmiddel van de netwerkbenchmark te gebruiken
 * Testen tegen de verzender
 
-### [!DNL Experience Manager] implementatie testen  {#aem-deployment-testing}
+### [!DNL Experience Manager] implementatie testen {#aem-deployment-testing}
 
 Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en lading-delend te bereiken, controleer de prestaties van uw [!DNL Experience Manager] plaatsing regelmatig. Met name:
 
 * Laad tests tegen [!DNL Experience Manager] plaatsing.
 * Uploadprestaties controleren en reageren op de gebruikersinterface.
 
-## [!DNL Experience Manager Assets] prestatiecontrolelijst en impact van taken voor middelenbeheer  {#checklist}
+## [!DNL Experience Manager Assets] prestatiecontrolelijst en impact van taken voor middelenbeheer {#checklist}
 
 * Schakel HTTPS in om rondom eventuele bedrijfs-HTTP-verkeersfragmenten te komen.
 * Gebruik een bekabelde verbinding voor het uploaden van zware middelen.

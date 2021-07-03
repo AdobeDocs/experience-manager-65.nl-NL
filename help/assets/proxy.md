@@ -2,17 +2,16 @@
 title: '[!DNL Assets] proxyontwikkeling'
 description: Een volmacht is een  [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] volmacht, gesteunde verrichtingen, volmachtscomponenten, en hoe te om een worker van de douanevolmacht te ontwikkelen.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-translation-type: tm+mt
-source-git-commit: 15f83387629687994bc2ffee4156d7d42dc1c537
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets] proxyontwikkeling  {#assets-proxy-development}
+# [!DNL Assets] proxyontwikkeling {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] gebruikt een volmacht om verwerking voor bepaalde taken te verdelen.
 
@@ -70,7 +69,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### Proxyworker {#proxy-worker}
+### Proxy Worker {#proxy-worker}
 
 Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. Workers bevinden zich op de proxyinstantie en moeten [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) implementeren om te worden herkend als een proxyworker.
 
@@ -104,7 +103,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  proxyJobService.removeJob(jobId);
 ```
 
-### Configuraties van Cloud Servicen {#cloud-service-configurations}
+### Cloud Service configuraties {#cloud-service-configurations}
 
 >[!NOTE]
 >
@@ -131,7 +130,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### Een aangepaste proxyworker {#developing-a-customized-proxy-worker} ontwikkelen
+### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
 De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een [!DNL Assets] volmachtsarbeider die reeds uit-van-de-doos wordt verstrekt om de verwerking van InDesign activa uit te besteden.
 

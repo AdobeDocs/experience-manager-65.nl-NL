@@ -2,16 +2,15 @@
 title: Elementen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om elementen voor te bereiden voor vertaling ter ondersteuning van meertalige middelen.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Projects
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Projecten
+exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
-
 
 # Elementen voorbereiden voor vertaling {#preparing-assets-for-translation}
 
@@ -42,7 +41,7 @@ Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 1. Voeg middelen toe aan uw primaire taal.
 1. Creeer de taalwortel van elke doeltaal waarvoor u een taalexemplaar vereist.
 
-## Een hoofdtaalmap {#creating-a-language-root} maken
+## Een hoofdmap voor talen maken {#creating-a-language-root}
 
 Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdtaal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
 
@@ -58,7 +57,7 @@ De basispagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 1. Klik op **[!UICONTROL Create]**. De taalwortel wordt gecreeerd in de [!DNL Assets] console.
 
-## Taalwortels {#viewing-language-roots} weergeven
+## Taalwortels weergeven {#viewing-language-roots}
 
 [!DNL Experience Manager] de interface verstrekt een  **[!UICONTROL References]** paneel dat een lijst van taalwortels toont die binnen zijn gecreeerd  [!DNL Assets].
 

@@ -8,21 +8,21 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Problemen oplossen
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 0%
 
 ---
 
-# Problemen met Dynamic Media oplossen - Scene7-modus{#troubleshooting-dynamic-media-scene-mode}
+# Problemen oplossen in de modus Dynamic Media - Scene7{#troubleshooting-dynamic-media-scene-mode}
 
 In het volgende document wordt beschreven hoe u problemen kunt oplossen bij het uitvoeren van **dynamicmedia_scene7**-uitvoeringsmodus in Dynamic Media.
 
-## {#setup-and-configuration} instellen en configureren
+## Instellen en configureren {#setup-and-configuration}
 
 Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende te doen:
 
@@ -56,7 +56,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG verhogen in het `com.adobe.cq.dam.ips`-pakket via de Sling Console ([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
-### {#move-copy-delete} verplaatsen, kopiëren en verwijderen
+### Verplaatsen, kopiëren, verwijderen {#move-copy-delete}
 
 Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren of Verwijderen uitvoert:
 

@@ -6,18 +6,17 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Scene7-modus,hybride modus
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-translation-type: tm+mt
-source-git-commit: 61e703e73b831a9b4e7045e5d5fffeef5be7ed6d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
 
 ---
 
-# Informatie over het overstappen van Dynamic Media-Hybrid naar Dynamic Media-Scene7 {#about-migrating}
+# Over de overgang van Dynamic Media-Hybrid naar Dynamic Media-Scene7 {#about-migrating}
 
 Dynamic Media-Hybrid is een oudere versie van de integratie van Dynamic Media met Adobe Experience Manager. De Hybride versie werd voor het eerst ingevoerd in AEM (Adobe Experience Manager) 6.1. Hoewel Adobe de hybride modus blijft ondersteunen, heeft deze modus geen voorkeur (Dynamic Media-Scene7 is de voorkeursmodus). Het biedt ook geen ondersteuning voor nieuwe functies, zoals SmartCrop en panoramische afbeeldingen. En Dynamic Media-Scene7 wel.
 

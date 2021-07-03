@@ -7,17 +7,17 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
 feature: Configuratie
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
 
-# Beveiliging van hot-link activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
+# Beveiliging via hot link activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
 Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks koppelingen maken naar afbeeldingen, css of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 

@@ -2,16 +2,15 @@
 title: Videoassets beheren
 description: Upload, voorproef, annoteer, en publiceer videoactiva in  [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User
+feature: Beheer van bedrijfsmiddelen
+exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '727'
 ht-degree: 8%
 
 ---
-
 
 # Videoassets beheren {#manage-video-assets}
 
@@ -71,7 +70,7 @@ Als u een hogere maximale bestandsgrootte wilt configureren, voert u de volgende
 
 Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of de elementen rechtstreeks insluiten. Zie [Dynamic Media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie.
 
-## Video-elementen {#annotate-video-assets} notities aanbrengen
+## Video-elementen notities aanbrengen {#annotate-video-assets}
 
 1. Selecteer **[!UICONTROL Edit]** op de elementenkaart in de [!DNL Assets]-console om de pagina met elementdetails weer te geven.
 1. Klik op **[!UICONTROL Preview]** om de video af te spelen.
@@ -90,6 +89,6 @@ Na publicatie kunt u de video-elementen in een webpagina opnemen als een URL of 
 >[!MORELIKETHIS]
 >
 >* [Digitale middelen beheren in Experience Manager Assets](/help/assets/manage-assets.md)
->* [Verzamelingen beheren in Experience Managers](/help/assets/manage-collections.md)
->* [Dynamic Media-videodocumentatie](/help/assets/video.md).
+* [Verzamelingen beheren in Experience Managers](/help/assets/manage-collections.md)
+* [Dynamic Media-videodocumentatie](/help/assets/video.md).
 

@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '931'
 ht-degree: 1%
 
 ---
-
 
 # Vertaalprojecten maken voor inhoudsfragmenten {#creating-translation-projects-for-content-fragments}
 
@@ -36,7 +35,7 @@ In deze workflow worden inhoudsfragmenten die moeten worden vertaald, gekopieerd
 
 Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehorende taalspecifieke inhoudsfragment opnieuw worden vertaald. De workflow voor het kopiëren van de updatetaal zet een extra groep inhoudsfragmenten om en neemt deze op in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde inhoudsfragmenten toegevoegd aan de doelmap die al eerder vertaalde inhoudsfragmenten bevat.
 
-## Workflow {#create-and-translate-workflow} maken en vertalen
+## Workflow maken en vertalen {#create-and-translate-workflow}
 
 De workflow Maken en vertalen bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
@@ -44,7 +43,7 @@ De workflow Maken en vertalen bevat de volgende opties. De procedurele stappen d
 * Een nieuw vertaalproject maken: Zie [Een nieuw vertaalproject maken voor elementen](translation-projects.md#create-a-new-translation-project) voor procedurestappen.
 * Toevoegen aan bestaand vertaalproject: Voor procedurestappen, zie [Toevoegen aan bestaand vertaalproject voor activa](translation-projects.md#add-to-existing-translation-project).
 
-## Workflow {#update-language-copies-workflow} bijwerken voor het kopiëren van talen
+## Workflow voor het kopiëren van talen bijwerken {#update-language-copies-workflow}
 
 De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
@@ -53,7 +52,7 @@ De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties. D
 
 U kunt ook tijdelijke-taalkopieën maken voor fragmenten, vergelijkbaar met de manier waarop u tijdelijke kopieën maakt voor elementen. Zie [Tijdelijke taalkopieën maken voor elementen](translation-projects.md#creating-temporary-language-copies) voor meer informatie.
 
-## Gemengde mediafragmenten {#translating-mixed-media-fragments} omzetten
+## Gemengde-mediafragmenten omzetten {#translating-mixed-media-fragments}
 
 Met AEM kunt u inhoudsfragmenten vertalen die verschillende typen media-elementen en -verzamelingen bevatten. Als u een inhoudsfragment vertaalt dat inline-elementen bevat, worden de vertaalde kopieën van deze elementen opgeslagen onder de hoofdmap van de doeltaal.
 
@@ -165,4 +164,3 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
    >[!NOTE]
    >
    >De procedures voor het toevoegen van een inhoudsfragment aan een bestaand project of voor het uitvoeren van updatewerkstromen zijn gelijkaardig aan de overeenkomstige procedures voor activa. Zie voor leidraden voor deze procedures de voor activa beschreven procedures.
-

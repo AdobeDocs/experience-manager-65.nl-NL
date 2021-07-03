@@ -2,18 +2,17 @@
 title: Elementen in bulk migreren
 description: Beschrijft hoe te om activa in  [!DNL Adobe Experience Manager] te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
-role: Architect, Administrator
-feature: Migration,Renditions,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Architect, Admin
+feature: migratie,uitvoeringen,beheer van bedrijfsmiddelen
+exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1785'
 ht-degree: 8%
 
 ---
 
-
-# Hoe te om activa in bulk {#assets-migration-guide} te migreren
+# Hoe te om activa in bulk te migreren {#assets-migration-guide}
 
 Bij het migreren van elementen naar [!DNL Adobe Experience Manager] zijn er verschillende stappen die u moet overwegen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat dit document sterk verschilt tussen implementaties. In dit document wordt echter beschreven hoe u deze elementen in [!DNL Experience Manager] kunt plaatsen, de metagegevens ervan kunt toepassen, uitvoeringen kunt genereren en hoe u ze kunt activeren om instanties te publiceren.
 
@@ -52,11 +51,11 @@ Het migreren van activa aan [!DNL Experience Manager] vereist verscheidene stapp
 
 Voordat u de migratie start, moet u de draagraketten voor de [!UICONTROL DAM Update Asset]-workflow uitschakelen. U kunt het beste alle elementen in het systeem opnemen en de workflows vervolgens in batches uitvoeren. Als u al woont terwijl de migratie plaatsvindt, kunt u deze activiteiten plannen om op off-hours te lopen.
 
-### Labels {#loading-tags} laden
+### Labels laden {#loading-tags}
 
 Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Hoewel gereedschappen zoals de CSV Asset Importer en [!DNL Experience Manager] ondersteuning voor metagegevensprofielen het toepassen van tags op elementen kunnen automatiseren, moeten de tags in het systeem worden geladen. Met de functie [ACS AEM Tools Tag Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) kunt u codes vullen met een Microsoft Excel-spreadsheet die in het systeem is geladen.
 
-### Bestandsinkomsten {#ingesting-assets}
+### Middelen opnemen {#ingesting-assets}
 
 Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Omdat u een grote hoeveelheid gegevens in het systeem laadt, wilt u ervoor zorgen dat het systeem zo goed mogelijk presteert om de vereiste hoeveelheid tijd te minimaliseren en overbelasting van het systeem te vermijden, wat tot een systeemneerstorting kan leiden, vooral in systemen die reeds in productie zijn.
 
@@ -88,7 +87,7 @@ Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om h
 1. De eenvoudigste benadering is [ACS de Bulk Manager van het Werkschema van de Gemeenschap](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Met dit gereedschap kunt u een query uitvoeren en de resultaten van de query verwerken via een workflow. Er zijn ook opties voor het instellen van batchgrootten.
 1. U kunt [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gebruiken in overleg met [Synthetische workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Hoewel deze benadering veel meer betrokken is, laat het u de overheadkosten van [!DNL Experience Manager] werkschemamotor verwijderen terwijl het optimaliseren van het gebruik van servermiddelen. Bovendien verhoogt de Fast Action Manager de prestaties nog meer door serverresources dynamisch te controleren en het plaatsen van de lading op het systeem te vertragen. U vindt voorbeeldscripts op de ACS Commons-functiepagina.
 
-### Elementen {#activating-assets} activeren
+### Elementen activeren {#activating-assets}
 
 Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Hoewel Adobe aanbeveelt meerdere publicatieinstanties uit te voeren, is het het meest efficiënt om alle elementen te repliceren naar één publicatieinstantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
 
@@ -102,7 +101,7 @@ Voor elk van deze benaderingen is het voorbehoud dat de elementen op de auteurin
 >
 >Adobe biedt geen ondersteuning voor Grabbit.
 
-### Publiceren klonen {#cloning-publish}
+### Kloonpublicatie {#cloning-publish}
 
 Nadat de elementen zijn geactiveerd, kunt u de publicatieinstantie klonen om zoveel kopieën te maken als nodig zijn voor de implementatie. Het klonen van een server is vrij eenvoudig, maar er zijn enkele belangrijke stappen om te onthouden. Publicatie klonen:
 

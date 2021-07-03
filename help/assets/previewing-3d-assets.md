@@ -4,16 +4,16 @@ description: Leer hoe u een voorvertoning van 3D-elementen kunt weergeven
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D-middelen
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 4%
 
 ---
 
-# Voorvertoning weergeven van 3D-elementen in Adobe Experience Manager{#previewing-3d-assets-aem}
+# 3D-elementen voorvertonen in Adobe Experience Manager{#previewing-3d-assets-aem}
 
 Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
 
@@ -45,7 +45,7 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
     material_0_baseColor.
     jpegmaterial_0_normal.jpeg
 
-## Prestatieoverwegingen wanneer u een voorvertoning van 3D-elementen weergeeft in Experience Manager{#performance-3d-previewing-assets}
+## Prestatieaspecten wanneer u een voorvertoning van 3D-elementen weergeeft in Experience Manager{#performance-3d-previewing-assets}
 
 De tijd die nodig is om een 3D-element te openen op de pagina met de elementdetails, is afhankelijk van verschillende factoren, zoals bandbreedte, de complexiteit van de afbeelding en de vertraging van de server.
 

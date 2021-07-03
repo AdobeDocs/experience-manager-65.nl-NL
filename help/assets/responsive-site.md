@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebap
 1. Selecteer en kopieer in het dialoogvenster **[!UICONTROL Embed Responsive Image]** de tekst van de responsieve code en plak deze in uw website om het responsieve element te openen.
 1. Bewerk de standaardbreekpunten in de insluitcode zodat deze overeenkomen met die van de responsieve website rechtstreeks in de code. Test bovendien de verschillende afbeeldingsresoluties die op verschillende pagina-onderbrekingspunten worden weergegeven.
 
-## HTTP/2 gebruiken om uw Dynamic Media-middelen {#using-http-to-delivery-your-dynamic-media-assets} te leveren
+## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-elementen wordt ondersteund met HTTP/2, dat betere responstijd en laadtijd biedt.
 

@@ -2,18 +2,17 @@
 title: Meertalige assets en de vertaling van assets
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Asset Management
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Beheer van bedrijfsmiddelen
+role: Admin
+exl-id: edccf23c-087e-4253-babb-dd4c6610517d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-
-# Meertalige elementen {#multilingual-assets}
+# Meertalige activa {#multilingual-assets}
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u vertaalworkflows op assets (inclusief binaire bestanden, metagegevens en tags) automatiseren om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 

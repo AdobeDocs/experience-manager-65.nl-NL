@@ -2,18 +2,17 @@
 title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u JavaScript-codes in uw websitecode kunt opnemen in Paginanummering en hoe u JavaScript-codes kunt insluiten om Adobe Analytics in staat te stellen gebruiksgegevens vast te leggen rond elementen.
 contentOwner: AG
-role: Architect, Administrator
-feature: Asset Reports
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Elementrapporten
+exl-id: 14d02015-df00-4566-a098-de76eaf42605
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
 
-
-# Paginacontracker gebruiken en code insluiten in webpagina&#39;s {#using-page-tracker-and-embed-code-in-web-pages}
+# Paginatracering gebruiken en code insluiten in webpagina&#39;s {#using-page-tracker-and-embed-code-in-web-pages}
 
 Paginanummering is een stuk JavaScript-code dat u in code van externe websites opneemt, zodat Adobe Analytics gebruiksgegevens rond [!DNL Adobe Experience Manager Assets] op deze websites kan vastleggen.
 
@@ -61,7 +60,7 @@ De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanu
 </html>
 ```
 
-## Code {#adding-page-tracker-code} voor paginatracering toevoegen
+## Code voor paginatracering toevoegen {#adding-page-tracker-code}
 
 U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecode toe. Het volgende codefragment toont de code van de Tracker van de Pagina inbegrepen in een steekproefWeb-pagina:
 
@@ -81,7 +80,7 @@ U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecod
  </head>
 ```
 
-## Insluitcode {#add-embed-code} toevoegen
+## Insluitcode toevoegen {#add-embed-code}
 
 U voegt de insluitcode toe aan de hoofdtekst van de websitecode. In het volgende codefragment wordt de insluitcode weergegeven die in een voorbeeldwebpagina is opgenomen:
 

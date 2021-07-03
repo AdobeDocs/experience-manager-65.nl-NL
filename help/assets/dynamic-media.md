@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Samenwerking, beheer van bedrijfsmiddelen
-source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 7%
@@ -27,7 +27,7 @@ Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 3
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Wat u kunt doen met Dynamic Media {#what-you-can-do-with-dynamic-media}
+## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
 Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Over het algemeen wordt in [Werken met digitale middelen](manage-assets.md) uitvoerig ingegaan op de manier waarop u met middelen werkt. Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
 
@@ -80,7 +80,7 @@ Tot de dynamische media-elementen behoren `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Wijzigingen in de weergave Elementen {#asset-views-change}
+### Weergave van element wijzigen {#asset-views-change}
 
 Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knoppen `+` en `-` te klikken. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld ziet er als volgt uit:
 

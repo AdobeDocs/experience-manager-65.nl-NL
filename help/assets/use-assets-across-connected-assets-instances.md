@@ -2,10 +2,10 @@
 title: Aangesloten middelen gebruiken om DAM-middelen te delen in [!DNL Sites]
 description: Gebruik middelen die beschikbaar zijn op een externe [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] implementatie.
 contentOwner: AG
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 feature: Verbonden elementen, gebruikers en groepen
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9e99d25a15aee56721112e2afd4b570ba7854bd7
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2655'
 ht-degree: 27%
@@ -162,7 +162,7 @@ Gebruik bovenstaande instellingen om de functionaliteit van een authoring-ervari
 
 De opgehaalde assets kunnen net als elke andere lokale asset worden gebruikt, alleen kunnen de bijbehorende metadata niet worden bewerkt.
 
-### Gebruik van een element op webpagina&#39;s controleren {#asset-usage-references}
+### Gebruik van een element op verschillende webpagina&#39;s controleren {#asset-usage-references}
 
 [!DNL Experience Manager] Hiermee kunnen DAM-gebruikers alle verwijzingen naar een element controleren. Het helpt het gebruik van een middel in verre [!DNL Sites] en in samenstellingsactiva begrijpen en beheren. Veel auteurs van webpagina&#39;s bij [!DNL Experience Manager Sites]-implementatie kunnen een middel op een externe [!DNL Assets] in verschillende webpagina&#39;s gebruiken. Om het beheer van bedrijfsmiddelen te vereenvoudigen en niet tot verbroken verwijzingen te leiden, is het belangrijk dat de DAM-gebruikers het gebruik van middelen op lokale en externe webpagina&#39;s controleren. Op het tabblad [!UICONTROL References] in de pagina [!UICONTROL Properties] van een element worden de lokale en externe referenties van het element weergegeven.
 
@@ -183,7 +183,7 @@ Ga als volgt te werk om verwijzingen bij de [!DNL Assets]-implementatie weer te 
 
 * Om inzicht in activagebruik te krijgen, vorm [Activa Insight](/help/assets/asset-insights.md) functionaliteit op [!DNL Sites] instantie.
 
-### Machtigingen en middelenbeheer {#permissions-and-managing-assets}
+### Machtigingen en vermogensbeheer {#permissions-and-managing-assets}
 
 * Lokale assets worden niet gesynchroniseerd met de oorspronkelijke assets op de externe implementatie. Eventuele bewerkingen, verwijderingen of intrekkingen van machtigingen voor de DAM-implementatie worden niet verderop in de DAM-implementatie doorgegeven.
 * Lokale assets zijn alleen-lezen kopieën. [!DNL Experience Manager] componenten bewerken niet-destructieve elementen in elementen. Andere soorten bewerkingen zijn niet toegestaan.

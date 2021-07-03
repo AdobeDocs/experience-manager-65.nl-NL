@@ -2,16 +2,15 @@
 title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
-feature: Collaboration, Collections
-role: Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Samenwerking, verzamelingen
+role: User
+exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 5%
 
 ---
-
 
 # Map-assets en verzamelingen reviewen {#review-folder-assets-and-collections}
 
@@ -25,7 +24,7 @@ Nadat u de middelen hebt gedeeld, kunnen revisoren deze goedkeuren of afwijzen. 
 
 Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), ontvangt u een bericht van de revisievoltooiing.
 
-## Een revisietaak maken voor mappen {#creating-a-review-task-for-folders}
+## Een revisietaak voor mappen maken {#creating-a-review-task-for-folders}
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] de map waarvoor u een revisietaak wilt maken.
 1. Klik in de werkbalk op **[!UICONTROL Create Review Task]** ![Revisietaak maken](assets/do-not-localize/create-review-task.png) om de pagina **[!UICONTROL Review Task]** te openen. Als de optie niet wordt weergegeven op de werkbalk, klikt u op **[!UICONTROL More]** en selecteert u de optie.
@@ -71,7 +70,7 @@ Nadat de controleur de controle heeft voltooid (activa goedkeurt of verwerpt), o
 
    ![Status controleren zoals deze wordt weergegeven in de lijstweergave](assets/review_status_listview.png)
 
-## Een overzichtstaak maken voor verzamelingen {#creating-a-review-task-for-collections}
+## Een revisietaak voor verzamelingen maken {#creating-a-review-task-for-collections}
 
 1. Selecteer op de pagina Verzamelingen de verzameling waarvoor u een revisietaak wilt maken.
 1. Klik in de werkbalk op **[!UICONTROL Create Review Task]** ![Revisietaak maken](assets/do-not-localize/create-review-task.png) om de pagina **[!UICONTROL Review Task]** te openen. Als de optie niet op de werkbalk wordt weergegeven, klikt u op **[!UICONTROL More]** en selecteert u de optie.

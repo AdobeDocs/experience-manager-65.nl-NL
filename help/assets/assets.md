@@ -2,16 +2,15 @@
 title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale middelen, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
-feature: Asset Management
-role: Leader, Architect, Business Practitioner
-translation-type: tm+mt
-source-git-commit: ebe7042b931869c3b4b7204e3ce7afa52d56f0ef
+feature: Beheer van bedrijfsmiddelen
+role: Leader, Architect, User
+exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
-
 
 # Informatie over [!DNL Adobe Experience Manager Assets] als DAM-oplossing {#administering-assets}
 
@@ -36,7 +35,7 @@ ht-degree: 0%
 
 De basisgebruikersinterface is het zelfde als dat van [!DNL Sites]. Zie [Overzicht van de Sites](/help/sites-authoring/page-authoring.md) voor volledige details.
 
-### Digital Asset Management versus imageonderdeel {#digital-asset-management-versus-image-component}
+### Digitaal middelenbeheer versus imageonderdeel {#digital-asset-management-versus-image-component}
 
 Houd rekening met de levenscyclus van de afbeelding wanneer u bepaalt of een afbeelding in de DAM-opslagplaats moet worden geplaatst of een afbeeldingscomponent moet worden gebruikt:
 
@@ -53,7 +52,7 @@ Een element is in wezen een binair plus metagegevens plus uitvoeringen plus sube
 >
 >Het uploaden en/of bewerken van een groot volume aan middelen (in het bijzonder afbeeldingen) kan de prestaties van uw [!DNL Experience Manager]-implementatie beïnvloeden.
 
-### [!DNL Experience Manager Assets] terminologie  {#aem-assets-terminology}
+### [!DNL Experience Manager Assets] terminologie {#aem-assets-terminology}
 
 Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de volgende terminologie nodig:
 
@@ -73,7 +72,7 @@ Wanneer u werkt met digitale elementen in [!DNL Experience Manager], hebt u de v
 
 * **Subactiva**: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een  [!DNL Adobe Photoshop] bestand of pagina&#39;s in een PDF-bestand. In [!DNL Assets] kunt u subelementen op dezelfde manier beheren als elementen.
 
-### Werken met digitale elementen {#how-to-work-with-assets}
+### Werken met digitale middelen {#how-to-work-with-assets}
 
 U voert een actie op een middel of een inzameling uit. Met handelingen kunt u elementen, verzamelingen en uitvoeringen maken of wijzigen. Veel van de basishandelingen die u uitvoert op elementen - uploaden, verwijderen, bijwerken, opslaan van subelementen - activeren vooraf geconfigureerde workflows. Deze worden automatisch ingeschakeld in [!DNL Assets] en worden gedetailleerd beschreven in [!DNL Assets] media managers.
 
@@ -86,9 +85,9 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 
 Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Handlers](media-handlers.md)voor een lijst met standaardworkflows.
 
-## [!DNL Experience Manager Assets] en  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
-Zie [Middelen en Mediabibliotheek](medialibrary.md) voor informatie over de verschillen.
+Zie [Middelen en Media Library](medialibrary.md) voor informatie over de verschillen.
 
 >[!MORELIKETHIS]
 >

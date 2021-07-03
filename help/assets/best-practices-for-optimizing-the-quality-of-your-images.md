@@ -8,9 +8,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: 3267fba890424e18c8c3c61a0cf4c79387b074a8
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Het dynamisch verkleinen van de afbeeldingsgrootte is een van de meest voorkomen
 
 Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp2`
 
-## Aanbevolen procedures voor het verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
+## Aanbevolen procedures voor verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
 

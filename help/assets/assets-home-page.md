@@ -2,18 +2,17 @@
 title: '[!DNL Assets] Introductiepagina'
 description: Pas de [!DNL Experience Manager Assets] startpagina aan voor een welkomstscherm, inclusief een momentopname van recente activiteiten rond elementen.
 contentOwner: AG
-feature: Developer Tools, Asset Management
-role: Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: 2e734041bdad7332c35ab41215069ee696f786f4
+feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+role: Admin, User
+exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '511'
 ht-degree: 1%
 
 ---
 
-
-# [!DNL Adobe Experience Manager Assets] Introductiepagina  {#aem-assets-home-page-experience}
+# [!DNL Adobe Experience Manager Assets] Introductiepagina {#aem-assets-home-page-experience}
 
 Pas de [!DNL Adobe Experience Manager Assets]-startpagina aan voor een welkomstscherm, inclusief een momentopname van recente activiteiten rond elementen.
 

@@ -2,18 +2,17 @@
 title: Watermerk toevoegen aan uw digitale elementen
 description: Leer hoe u met de functie Watermerken een digitaal watermerk aan elementen kunt toevoegen.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Management
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: User, Admin
+feature: Beheer van bedrijfsmiddelen
+exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
-# Watermerk op uw digitale elementen {#watermarking}
+# Watermerk uw digitale elementen {#watermarking}
 
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk toevoegen aan elementen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. [!DNL Experience Manager Assets] ondersteunt tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
 

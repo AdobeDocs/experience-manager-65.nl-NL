@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuratie, Scene7-modus
-source-git-commit: 90737593086c680f0a948f5b9cab6e58767b6373
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '5778'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 Als u Adobe Experience Manager-configuratie gebruikt voor verschillende omgevingen, zoals ontwikkeling, staging en productie, configureert u Dynamic Media-Cloud Services voor elk van deze omgevingen.
 
-## Architectuurdiagram van Dynamic Media - Scene7-modus {#architecture-diagram-of-dynamic-media-scene-mode}
+## Architectuurdiagram van de Dynamic Media-Scene7-modus {#architecture-diagram-of-dynamic-media-scene-mode}
 
 In het volgende architectuurdiagram wordt beschreven hoe de modus Dynamic Media - Scene7 werkt.
 
@@ -57,7 +57,7 @@ Om Dynamic Media toe te laten, moet u Experience Manager beginnen gebruikend `dy
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6.3 naar 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6,3 naar 6,5 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 De upgrade van Experience Manager Dynamic Media van 6.3 naar 6.4 of 6.5 omvat nu de mogelijkheid om geen downtime te implementeren. Als u al uw voorinstellingen en configuraties wilt migreren van `/etc` naar `/conf` in CRXDE Lite, moet u de volgende krullopdracht uitvoeren.
 
@@ -72,7 +72,7 @@ Als u aangepaste viewervoorinstellingen en -configuraties die u hebt gemaakt van
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Installeren van functiepak 18912 voor het migreren van grote bedrijfsmiddelen {#installing-feature-pack-for-bulk-asset-migration}
+## Functiepakket 18912 voor migratie van grote hoeveelheden bedrijfsmiddelen installeren {#installing-feature-pack-for-bulk-asset-migration}
 
 De installatie van functiepak 18912 is *optioneel*.
 
@@ -153,7 +153,7 @@ Als u de configuratie en opstelling van Dynamic Media - Scene7 wijze verder wilt
 
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
 
-### (Optioneel) Instellingen {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings} voor Dynamic Media - Scene7-modus instellen en configureren
+### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
 In de uitvoermodus `dynamicmedia_scene7` wijzigt u de Dynamic Media-instellingen in de klassieke Dynamic Media-gebruikersinterface.
 
@@ -322,7 +322,7 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 1. Tik in de linkerbovenhoek van de pagina CRXDE Lite op **[!UICONTROL Save All]**.
 
-#### Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets} te genereren
+#### Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges te genereren {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 Met voorinstellingen voor batchsets kunt u het maken van afbeeldingssets of centrifuges automatiseren terwijl elementen naar Dynamic Media worden geüpload.
 
@@ -486,7 +486,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
    Als u de voorinstelling activeert, weet u zeker dat wanneer u elementen uploadt naar Dynamic Media, de voorinstelling van de batch-set wordt toegepast om de set te genereren.
 
-### (Optioneel) De prestaties van de Dynamic Media - Scene7-modus afstemmen {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### (Optioneel) De prestaties van de Dynamic Media-Scene7-modus afstemmen {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Om de Dynamic Media - Scene7-modus vlot te laten werken, raadt Adobe de volgende tips voor synchronisatieprestaties/schaalbaarheid aan:
 
@@ -519,7 +519,7 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, PostScript®- en PSD-bes
 
 Als u een van deze parameters wilt bijwerken, volgt u de stappen in [Ondersteuning voor Classic uploadtaakparameter voor MIME-elementen/Dynamic Media Classic-uploads](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
-#### De voorlopige wachtrij van Granite-workflows bijwerken {#updating-the-granite-transient-workflow-queue}
+#### De voorlopige wachtrij van Granite bijwerken {#updating-the-granite-transient-workflow-queue}
 
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]**-workflow. In Dynamic Media wordt het gebruikt voor het opnemen en verwerken van afbeeldingen.
 
@@ -561,7 +561,7 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
 1. Tik op **[!UICONTROL Save]**.
 
-#### De Dynamic Media Classic-uploadverbinding {#updating-the-scene-upload-connection} bijwerken
+#### De Dynamic Media Classic-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
 
 Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-elementen met Dynamic Media Classic-servers.
 

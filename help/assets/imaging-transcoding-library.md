@@ -2,18 +2,17 @@
 title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
-role: Administrator
-feature: Renditions,Developer Tools,Asset Processing
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: uitvoeringen, ontwikkelaarsgereedschappen, middelenverwerking
+exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
 
-
-# Beeldtransformatiebibliotheek {#imaging-transcoding-library}
+# Afbeeldingstransformatiebibliotheek {#imaging-transcoding-library}
 
 Imaging Transcoding Library is een oplossing voor imaging-verwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals:
 
@@ -68,7 +67,7 @@ U kunt de volgende opties voor de parameter `-resize` vormen:
  -output <fileName>
 ```
 
-## Bibliotheek {#configuring-imaging-transcoding-library} voor transformatie van afbeeldingen configureren
+## Bibliotheek voor afbeeldingstransformatie configureren {#configuring-imaging-transcoding-library}
 
 Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werkschema bij om het uit te voeren.
 
@@ -103,7 +102,7 @@ Om de bibliotheek te vormen, creeer een CONF dossier om op de bibliotheken te wi
 
 1. Om ervoor te zorgen dat de waarde van de weg aan `.` wordt geplaatst, gebruik `echo $LD_LIBRARY_PATH` bevel. De uitvoer moet `.` zijn. Start de sessie opnieuw als de waarde niet is ingesteld op `.`.
 
-### [!UICONTROL DAM Update Asset]-workflow {#configure-dam-asset-update-workflow} configureren
+### Workflow [!UICONTROL DAM Update Asset] configureren {#configure-dam-asset-update-workflow}
 
 Werk de [!UICONTROL DAM Update Asset]-workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 

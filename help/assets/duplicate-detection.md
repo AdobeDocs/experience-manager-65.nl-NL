@@ -2,18 +2,17 @@
 title: Detectie van dubbele elementen inschakelen
 description: Leer hoe u dubbele elementen in Experience Manager kunt detecteren.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Management,Asset Reports
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Middelenbeheer, Asset Reports
+exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
-
-# Detectie van dubbele elementen {#enable-detection-of-duplicate-assets} inschakelen
+# Detectie van dubbele elementen inschakelen {#enable-detection-of-duplicate-assets}
 
 Als u probeert een middel te uploaden dat in [!DNL Adobe Experience Manager Assets] bestaat, identificeert de dubbele opsporingseigenschap het als duplicaat. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 

@@ -2,18 +2,17 @@
 title: Beperkingen voor het uploaden van middelen configureren
 description: 'Beperk het type elementen (bestanden) dat gebruikers kunnen uploaden '
 contentOwner: AG
-role: Developer, Administrator, Architect
-feature: Asset Management,Upload
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Developer, Admin, Architect
+feature: Middelenbeheer, uploaden
+exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 29%
+source-wordcount: '179'
+ht-degree: 30%
 
 ---
 
-
-# Beperkingen voor het uploaden van elementen {#configuring-asset-upload-restrictions} configureren
+# Beperkingen voor het uploaden van middelen configureren {#configuring-asset-upload-restrictions}
 
 U kunt [!DNL Adobe Experience Manager Assets] zodanig configureren dat het type elementen dat gebruikers kunnen uploaden, wordt beperkt. Zo voorkomt u ongewenste uploads in de gewenste indeling en schadelijke bestanden. Met de service `Day CQ DAM Asset Upload Restriction` kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard kunnen gebruikers met [!DNL Assets] elementen van alle MIME-typen uploaden. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
 

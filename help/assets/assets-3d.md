@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: 3D-middelen, beheer van bedrijfsmiddelen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 1c95217c98cdf24182eebbfea09c807318b2d514
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2235'
 ht-degree: 2%
@@ -44,7 +44,7 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/assets-formats.md).
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari- en iOS-apparaten kan worden weergegeven. |
 
-## Snel starten: 3D-elementen in Dynamic Media {#quick-start-three-d}
+## Snel starten: 3D-middelen in Dynamic Media {#quick-start-three-d}
 
 De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met 3D-middelen in de Dynamic Media-Scene7-modus.
 
@@ -104,7 +104,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 >
 >Zie [Voorinstellingen voor viewers beheren](/help/assets/managing-viewer-presets.md).
 
-## Een 3D-element weergeven en interactief gebruiken op de pagina {#viewing-three-d-assets-from-asset-details-page} met elementdetails
+## Een 3D-element weergeven en interactief gebruiken op de pagina met elementdetails {#viewing-three-d-assets-from-asset-details-page}
 
 Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/assets/previewing-assets.md).
 
@@ -131,7 +131,7 @@ Zie ook [Elementen voorvertonen met behulp van de softwareinterface](/help/asset
 
 1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Close]** om terug te keren naar de pagina Middelen.
 
-## Een 3D-element in een 3D-mediacomponent {#interacting-with-asset-inside-three-d-media-component} weergeven en hiermee communiceren
+## Een 3D-element in een 3D-mediacomponent weergeven en hiermee communiceren {#interacting-with-asset-inside-three-d-media-component}
 
 Wanneer een webpagina in de modus **[!UICONTROL Edit]** staat, is interactie met een 3D-element niet mogelijk. Als u het element interactief wilt maken, kunt u de functie **[!UICONTROL Preview]** gebruiken om de webpagina in de pagina-editor weer te geven met volledige toegang tot de functionaliteit van de 3D Media-component.
 
@@ -210,7 +210,7 @@ U kunt nu een 3D-element aan de component toewijzen.
 
 Zie [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-asset-to-the-component).
 
-### Optioneel - De 3D-mediacomponent {#configuring-the-three-d-component} configureren
+### Optioneel - De 3D-mediacomponent configureren {#configuring-the-three-d-component}
 
 1. Selecteer in de pagina-editor Sites Experience Manager de **[!UICONTROL 3D Media Viewer]**-component die u eerder aan de pagina hebt toegevoegd.
 1. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel) zodat u het dialoogvenster voor componentconfiguratie kunt openen.
@@ -223,7 +223,7 @@ Zie [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-ass
 
 1. Tik in de rechterbovenhoek op het vinkje om de wijzigingen op te slaan.
 
-## 3D-elementen toewijzen aan de 3D-mediacomponent {#assigning-a-three-d-asset-to-the-component}
+## Een 3D-element toewijzen aan de 3D-mediacomponent {#assigning-a-three-d-asset-to-the-component}
 
 Nadat u een 3D-mediacomponent aan een webpagina hebt toegevoegd, kunt u er een 3D-element aan toewijzen.
 

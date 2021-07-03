@@ -2,24 +2,23 @@
 title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend Experience Manager.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Search
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Middelenbeheer, zoeken
+exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
-
-# Uw digitale elementen ordenen {#organize-digital-assets}
+# Uw digitale middelen organiseren {#organize-digital-assets}
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden uitgebreid besproken in metagegevens in Digital Asset Management.
 
 [!DNL Experience Manager Assets] ondersteunt meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
-## Elementen ordenen in mappen {#organize-using-folders}
+## Elementen in mappen ordenen {#organize-using-folders}
 
 De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in ons lokale bestandssysteem. Zie [Elementen beheren](manage-assets.md) voor meer informatie over het maken en beheren van mappen. Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan van grote invloed zijn op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
@@ -39,7 +38,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
 * Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het element naar een andere map te verplaatsen en vanaf de nieuwe locatie opnieuw te publiceren, blijft de oorspronkelijke locatie van het gepubliceerde element beschikbaar, samen met het opnieuw gepubliceerde element. Het oorspronkelijke gepubliceerde element is echter *verloren* naar [!DNL Experience Manager] en kan niet ongepubliceerd worden. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
 
-## Elementen ordenen met labels {#use-tags-to-organize-assets}
+## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
 Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en AI-algoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
 

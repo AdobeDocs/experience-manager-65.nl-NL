@@ -2,16 +2,15 @@
 title: ImageMagick installeren en configureren
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
-role: Administrator
-feature: Renditions,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: Admin
+feature: Uitvoeringen,Gereedschappen voor ontwikkelaars
+exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # ImageMagick installeren en configureren om te werken met [!DNL Experience Manager Assets] {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
@@ -25,7 +24,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 >
 >Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) gebruikt, contacteer de Zorg van de Klant van Adobe als u van plan bent om vele hoge resolutie PSD of PSB dossiers te verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
-## ImageMagick {#installing-imagemagick} installeren
+## ImageMagick installeren {#installing-imagemagick}
 
 Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor verschillende besturingssystemen. Gebruik de juiste versie voor uw besturingssysteem.
 
@@ -35,7 +34,7 @@ Er zijn meerdere versies van ImageMagic-installatiebestanden beschikbaar voor ve
 1. Plaats de variabele van het wegmilieu aan de installatiemap ImageMagic.
 1. Om te controleren of de installatie succesvol was, voer `identify -version` bevel uit.
 
-## De processtap {#set-up-the-command-line-process-step} van de opdrachtregel instellen
+## De processtap van de opdrachtregel instellen {#set-up-the-command-line-process-step}
 
 U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Voer de volgende stappen uit om elke keer dat u een JPEG-afbeeldingsbestand toevoegt aan `/content/dam` op de [!DNL Experience Manager]-server een gespiegelde afbeelding en miniaturen (140x100, 48x48, 319x319 en 1280x1280) te genereren:
 

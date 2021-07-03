@@ -8,16 +8,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 feature: Voorinstellingen viewer
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
-source-git-commit: 1349d9929fc64ad46fc91f0d189bab54cca9de81
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 23%
 
 ---
 
-# Voorinstellingen voor Dynamic Media-viewers {#applying-viewer-presets} toepassen
+# Voorinstellingen voor Dynamic Media-viewers toepassen {#applying-viewer-presets}
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
@@ -39,6 +39,6 @@ Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media
 
 1. Selecteer een viewer in het linkerdeelvenster, zodat u deze kunt toepassen op het element, zoals in het rechterdeelvenster. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## URL&#39;s met voorinstellingen van viewer {#obtaining-viewer-preset-urls} ophalen
+## URL&#39;s met voorinstellingen van viewer ophalen {#obtaining-viewer-preset-urls}
 
 Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen.

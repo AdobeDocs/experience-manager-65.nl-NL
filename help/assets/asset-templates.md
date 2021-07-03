@@ -2,16 +2,15 @@
 title: Elementsjablonen
 description: Leer over de malplaatjes van Activa in [!DNL Adobe Experience Manager Assets] en hoe te om activamalplaatjes te gebruiken om marketing onderpand tot stand te brengen.
 contentOwner: AG
-role: Business Practitioner
-feature: Asset Management,Developer Tools
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User
+feature: Asset Management, ontwikkelprogramma's
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1507'
 ht-degree: 0%
 
 ---
-
 
 # Elementsjablonen {#asset-templates}
 
@@ -37,7 +36,7 @@ Wanneer u een sjabloon voor uw onderpand kiest, [!DNL Experience Manager Assets]
 
 U kunt het bijgewerkte bestand in de bovenliggende map exporteren in de indelingen INDD, PDF of JPG. U kunt de uitvoer in deze indelingen ook downloaden naar uw lokale bestandssysteem.
 
-## Een zekerheid {#creating-a-collateral} maken
+## Een zekerheid maken {#creating-a-collateral}
 
 Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals brochures, vliegers en advertenties voor een komende campagne en wereldwijd wilt delen met verkooppunten. Het creëren van onderpand dat op een malplaatje wordt gebaseerd helpt een verenigde klantenervaring over kanalen leveren. Ontwerpers kunnen de campagnemalplaatjes (enig-pagina of multi-page) tot stand brengen gebruikend een creatieve oplossing, zoals [!DNL InDesign] en de malplaatjes uploaden aan [!DNL Experience Manager Assets] voor u. Voordat u een zekerheid maakt, moet u een of meer INDD-sjablonen vooraf uploaden naar en beschikbaar hebben in [!DNL Experience Manager].
 
@@ -65,7 +64,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
    ![chlimage_1-107](assets/chlimage_1-312.png)
 
-## Een zekerheid {#editing-a-collateral} bewerken
+## Een zekerheid bewerken {#editing-a-collateral}
 
 U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjabloon ook openen vanaf de pagina [!UICONTROL Templates] of de elementpagina.
 
@@ -108,7 +107,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    U kunt ook naar afbeeldingen zoeken met behulp van trefwoorden, tags en op basis van hun publicatiestatus. U kunt door [!DNL Experience Manager Assets] bewaarplaats doorbladeren en aan de plaats van het gewenste beeld navigeren.
 
-   ![chlimage_1-114](assets/chlimage_1-320.png)
+   ![chlimage_1-115](assets/chlimage_1-320.png)
 
 1. Klik op **[!UICONTROL Preview]** om een voorvertoning van de afbeelding weer te geven.
 1. Als u een specifieke pagina in een pagina-element wilt bewerken dat uit meerdere pagina&#39;s bestaat, gebruikt u de paginanavigator onderaan.
@@ -140,7 +139,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 
-## Onderpanden {#merge-collateral} samenvoegen
+## Zekerheden samenvoegen {#merge-collateral}
 
 1. Klik in de interface [!DNL Experience Manager] op [!UICONTROL Assets] op de navigatiepagina.
 
@@ -177,6 +176,6 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt de sjablo
    >
    >U kunt een samengevoegd onderpand later niet bewerken of gebruiken om ander onderpand te maken.
 
-## Beste werkwijzen en beperkingen {#best-practices-limitations-tips}
+## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
 * De [!DNL InDesign] redacteur in [!DNL Experience Manager] werkt bij een markeringsniveau en al tekst onder één enkele markering wordt beschouwd als één enkele entiteit. Als u de tekstopmaak en stijlen tijdens het bewerken wilt behouden, moet u elke alinea (of tekst met een andere opmaak) afzonderlijk labelen.

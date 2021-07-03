@@ -2,24 +2,23 @@
 title: Vertaalcloudservices toepassen op mappen
 description: Vertaalcloudservices toepassen op mappen
 contentOwner: AG
-role: Administrator
-feature: Translation
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Admin
+feature: Vertaling
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '354'
 ht-degree: 43%
 
 ---
 
-
-# Vertaalwolkenservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
+# Vertaalcloudservices toepassen op mappen {#applying-translation-cloud-services-to-folders}
 
 [!DNL Adobe Experience Manager] kunt u gebruikmaken van vertaalservices in de cloud van de door u gekozen vertaalprovider om ervoor te zorgen dat uw middelen op basis van uw vereisten worden vertaald.
 
 U kunt de vertaalcloudservice rechtstreeks toepassen op de map met middelen, zodat u deze kunt gebruiken tijdens vertaalworkflows.
 
-## De vertaalservices toepassen {#applying-the-translation-services}
+## Vertaalservices toepassen {#applying-the-translation-services}
 
 Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoeft u geen vertaalservices te configureren wanneer u vertaalworkflows maakt of bijwerkt.
 
@@ -39,7 +38,7 @@ Als u de vertaalcloud-services rechtstreeks toepast op uw map met middelen, hoef
 
 1. Klik op **[!UICONTROL Save]** op de werkbalk en klik vervolgens op **[!UICONTROL OK]** om het dialoogvenster te sluiten. De vertaalservice wordt toegepast op de map.
 
-## Aangepaste vertaalaansluiting toepassen {#applying-custom-translation-connector}
+## Aangepaste vertaalaansluiting toepassen  {#applying-custom-translation-connector}
 
 Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt gebruiken in vertaalworkflows. Om een aangepaste connector toe te passen installeert u eerst de connector vanaf Package Manager. Vervolgens configureert u de connector vanaf de Cloud Services-console. Nadat u de connector hebt geconfigureerd, is deze beschikbaar in de lijst met connectors op het tabblad Cloud Services die wordt beschreven in [De vertaalservices toepassen](transition-cloud-services.md#applying-the-translation-services). Nadat u de aangepaste connector hebt toegepast en vertaalworkflows hebt uitgevoerd, geeft de tegel **[!UICONTROL Translation Summary]** van het vertaalproject de connectordetails weer onder de koppen **[!UICONTROL Provider]** en **[!UICONTROL Method]**.
 

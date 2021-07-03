@@ -9,22 +9,22 @@ content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 feature: Afbeeldingssets,middelenbeheer
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '2018'
 ht-degree: 13%
 
 ---
 
-# Image Sets {#image-sets}
+# Afbeeldingssets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door op een miniatuurafbeelding te klikken. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 
 Afbeeldingsets worden aangegeven door een banner met het woord `IMAGESET`. Als de afbeeldingset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![chlimage_1-135](assets/chlimage_1-339.png)
 
 In de afbeeldingsset kunt u ook stalen maken door een afbeeldingsset te maken en miniaturen toe te voegen.
 
@@ -112,7 +112,7 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 >* Een zwarte, bruine en groene kleurminiatuur.
 
 
-## Afbeeldingssets {#creating-image-sets} maken
+## Afbeeldingssets maken {#creating-image-sets}
 
 U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze sectie wordt beschreven hoe u afbeeldingssets maakt in de gebruikersinterface.
 
@@ -171,7 +171,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 1. Klik op **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Afbeeldingssets {#viewing-image-sets} weergeven
+## Afbeeldingssets weergeven {#viewing-image-sets}
 
 U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -199,7 +199,7 @@ Sets die zijn gemaakt met voorinstellingen voor batchsets, worden echter *niet* 
 >
 >U kunt sets weergeven in de gebruikersinterface zoals wordt beschreven in [Afbeeldingssets bewerken](#editing-image-sets).
 
-## Afbeeldingssets {#editing-image-sets} bewerken
+## Afbeeldingssets bewerken {#editing-image-sets}
 
 U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
@@ -241,6 +241,6 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 Zie [Elementen voorvertonen](/help/assets/previewing-assets.md).
 
-## Afbeeldingssets {#publishing-image-sets} publiceren
+## Afbeeldingssets publiceren {#publishing-image-sets}
 
 Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).

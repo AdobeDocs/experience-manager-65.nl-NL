@@ -2,16 +2,15 @@
 title: Rapporten over het gebruik en het delen van elementen
 description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
-role: Business Practitioner, Administrator
-feature: Asset Reports,Asset Management
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+role: User, Admin
+feature: Elementenrapporten,beheer van bedrijfsmiddelen
+exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1077'
 ht-degree: 7%
 
 ---
-
 
 # Rapporten over assets {#asset-reports}
 
@@ -146,7 +145,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
-## Zuiveringsservice {#configure-purging-service} configureren
+## De zuiveringsservice configureren {#configure-purging-service}
 
 Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegmaken van het Rapport DAM van de Webconsole om bestaande rapporten te zuiveren die op hun hoeveelheid en leeftijd worden gebaseerd.
 
@@ -155,7 +154,7 @@ Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegm
 1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het veld `scheduler.expression.name`. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
 1. Sla de wijzigingen op.
 
-## Informatie, tips en beperkingen voor probleemoplossing {#best-practices-and-limitations}
+## Problemen met informatie, tips en beperkingen oplossen {#best-practices-and-limitations}
 
 * Als sommige rapporten of aantallen in de rapporten niet beschikbaar of zoals verwacht zijn, zorg ervoor dat [!UICONTROL Day CQ DAM Event Recorder] de dienst wordt toegelaten.
 

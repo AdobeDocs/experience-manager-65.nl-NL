@@ -2,18 +2,17 @@
 title: Netwerkoverwegingen en -vereisten
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een  [!DNL Adobe Experience Manager Assets] plaatsing.
 contentOwner: AG
-role: Architect, Administrator
-feature: Developer Tools
-translation-type: tm+mt
-source-git-commit: 174e0703ae541641e3dc602e700bcd31624ae62c
+role: Architect, Admin
+feature: Gereedschappen voor ontwikkelaars
+exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL Assets] netwerkoverwegingen  {#assets-network-considerations}
+# [!DNL Assets] netwerkoverwegingen {#assets-network-considerations}
 
 Kennis van uw netwerk is even belangrijk als begrip [!DNL Adobe Experience Manager Assets]. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
@@ -42,7 +41,7 @@ De bodem verlaten van het diagram toont twee apparaten die met het collectieve n
 
 De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan het collectieve netwerk over VPN met een snelheid van 1 Mbps. De gebruikerservaring voor de verbinding 1Mbps is zeer verschillend van de gebruikerservaring over de verbinding 1Gbps. Afhankelijk van de grootte van de activa interactie met gebruikers, kan hun opstraalverbinding van VPN voor de taak ontoereikend zijn.
 
-## Topologie van het bedrijfsnetwerk {#topology-of-the-corporate-network}
+## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
@@ -78,7 +77,7 @@ De [!DNL Experience Manager]-implementatie deelt de 1Gbps-verbinding met meerder
 
 Als u het netwerk van het clientapparaat tot de [!DNL Experience Manager]-implementatie bekijkt, lijkt het kleinste onderdrukkingspunt de 10 Mbit firewallvertrager te zijn. U kunt deze waarden in de rangschikkingscalculator in [Middelen het Grootte Gids](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
 
-## Gedefinieerde workflows van [!DNL Experience Manager]-implementatie {#defined-workflows-of-the-aem-deployment}
+## Gedefinieerde workflows van de [!DNL Experience Manager]-implementatie {#defined-workflows-of-the-aem-deployment}
 
 Wanneer het overwegen van netwerkprestaties, kan het belangrijk zijn om de werkschema&#39;s en het publiceren te overwegen die in het systeem zullen voorkomen. Bovendien verbruiken S3 of andere netwerk in bijlage opslag die u gebruikt en I/O verzoeken netwerkbandbreedte. Daarom zelfs in een volledig geoptimaliseerd netwerk, kunnen de prestaties door schijf I/O worden beperkt.
 

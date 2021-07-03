@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
+source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '11195'
 ht-degree: 4%
@@ -968,7 +968,7 @@ Hoe u een melding configureert, hangt af van het feit of u berichten voor coderi
    >Deze e-mailberichten zijn specifiek voor YouTube en vormen een aanvulling op de algemene e-mailmeldingen over de workflow. Dientengevolge, kunt u twee reeksen e-mailbericht ontvangen - het generische bericht beschikbaar in **[!UICONTROL Day CQ Workflow Email Notification Service]** en één specifiek voor YouTube afhankelijk van uw configuratiemontages.
 
 1. Tik op het pictogram **[!UICONTROL Done]** (vinkje) wanneer u klaar bent, in de rechterbovenhoek van het dialoogvenster.
-1. Tik in de rechterbovenhoek op de pagina Publiceren naar YouTube-workflow op **[!UICONTROL Sync]**.
+1. Tik op de workflowpagina Publiceren naar YouTube in de rechterbovenhoek op **[!UICONTROL Sync]**.
 
 ## Videorapporten weergeven {#viewing-video-reports}
 

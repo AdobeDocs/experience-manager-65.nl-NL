@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
-translation-type: tm+mt
-source-git-commit: ea6da2b75cce4052211fb8f0793f1f380eb85a20
+exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
+source-git-commit: 08269877be5e98405474e4b1793526763cab174f
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Rapporten ontwikkelen{#developing-reports}
+# Rapporten ontwikkelen {#developing-reports}
 
 AEM biedt een selectie van [standaardrapporten](/help/sites-administering/reporting.md) waarvan de meeste zijn gebaseerd op een rapportagekader.
 
@@ -101,14 +101,14 @@ Het rapportagekader (geïllustreerd door de structuur van een standaardrapport) 
 
 ![chlimage_1-248](assets/chlimage_1-248.png)
 
-### Pagina {#report-page} rapporteren
+### Rapportpagina {#report-page}
 
 De rapportpagina:
 
 * Is een standaard CQ5-pagina.
 * Is gebaseerd op een [standaardCQ5 malplaatje, dat voor rapport](#report-template) wordt gevormd.
 
-### Basis {#report-base} rapporteren
+### Rapportbasis {#report-base}
 
 De [ `reportbase` component](#report-base-component) vormt de basis van om het even welk rapport aangezien het:
 
@@ -126,7 +126,7 @@ Elke kolom is een geval van [ `columnbase` component](#column-base-component) di
 * Bepaalt de verbinding aan [onderliggend resultaatreeks](#the-query-and-data-retrieval); Hiermee worden de specifieke gegevens gedefinieerd waarnaar in deze resultaatset wordt verwezen, en hoe deze worden verwerkt.
 * bevat aanvullende definities; zoals de beschikbare aggregaten en filters, samen met standaardwaarden.
 
-### De vraag en het Terugwinnen van Gegevens {#the-query-and-data-retrieval}
+### De query en het ophalen van gegevens {#the-query-and-data-retrieval}
 
 De query:
 
@@ -150,7 +150,7 @@ De query:
 
 De ontwikkelaar moet ervoor zorgen dat de vraag die voor een rapport wordt bepaald een knoop terugkeert die aangewezen voor dat rapport wordt geplaatst. Nochtans, te hoeven de knoop zelf niet alle vereiste informatie te houden, kan dit ook uit ouder en/of kindknopen worden afgeleid. Bijvoorbeeld, selecteert de vraag die voor [Rapport van de Gebruiker ](/help/sites-administering/reporting.md#user-report) knopen wordt gebruikt die op het knooptype (in dit geval `rep:user`) worden gebaseerd. Nochtans, nemen de meeste kolommen op dit rapport hun gegevens niet direct van deze knopen, maar van de kindknopen `profile`.
 
-### Wachtrij {#processing-queue} verwerken
+### Bezig met verwerken van wachtrij {#processing-queue}
 
 [query](#the-query-and-data-retrieval) keert een resultaatreeks gegevens terug die als rijen op het rapport moeten worden getoond. Elke rij in de resultaatreeks wordt verwerkt (server-kant), in [verscheidene fasen](#phases-of-the-processing-queue), alvorens wordt overgebracht naar de cliënt voor vertoning op het rapport.
 
@@ -175,7 +175,7 @@ De volgende workflow vertegenwoordigt de verwerkingswachtrij:
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
-#### Fases van de Verwerkingswachtrij {#phases-of-the-processing-queue}
+#### Fasen van de Verwerkingswachtrij {#phases-of-the-processing-queue}
 
 Waar de gedetailleerde stappen en elementen zijn:
 
@@ -195,7 +195,7 @@ Waar de gedetailleerde stappen en elementen zijn:
 1. Gegevens zijn [gegroepeerd en geaggregeerd](#column-specific-definitions).
 1. Arraygegevens worden omgezet in een (op tekenreeks gebaseerde) lijst.
 
-   Dit is een impliciete stap die een resultaat met meerdere waarden omzet in een lijst die kan worden getoond; deze is vereist voor (niet-geaggregeerde) celwaarden die zijn gebaseerd op JCR-eigenschappen met meerdere waarden.
+   Dit is een impliciete stap die een multi-waarderesultaat in een lijst omzet die kan worden getoond; deze is vereist voor (niet-geaggregeerde) celwaarden die zijn gebaseerd op JCR-eigenschappen met meerdere waarden.
 
 1. Waarden worden opnieuw [preprocessing](#processing-queue); zoals gedefinieerd voor de *afterApply* fase.
 
@@ -208,7 +208,7 @@ Waar de gedetailleerde stappen en elementen zijn:
 >
 >Andere elementen van de verwerkingsrij worden bepaald op `columnbase` componenten.
 
-## Constructie en configuratie van rapport {#report-construction-and-configuration}
+## Constructie en configuratie van rapporten {#report-construction-and-configuration}
 
 Het volgende is nodig om een rapport te construeren en te vormen:
 
@@ -246,13 +246,13 @@ N:apps
                         N:<columnname> [cq:Component]  // column base component
 ```
 
-### Paginacomponent {#page-component}
+### Pagina-component {#page-component}
 
 Een rapportpagina moet `sling:resourceType` van `/libs/cq/reporting/components/reportpage` gebruiken.
 
 Een aangepaste pagina-component is in de meeste gevallen niet nodig.
 
-## Basiscomponent {#report-base-component} rapporteren
+## Basiscomponent rapporteren {#report-base-component}
 
 Elk rapporttype vereist een containercomponent die van `/libs/cq/reporting/components/reportbase` wordt afgeleid.
 
@@ -315,7 +315,7 @@ N:queryBuilder
 
 Alles is optioneel en kan zo nodig worden gecombineerd, maar u moet ten minste één element definiëren.
 
-### Grafiekdefinities {#chart-definitions}
+### Diagramdefinities {#chart-definitions}
 
 ```xml
 N:charting
@@ -445,7 +445,7 @@ Een voorbeelddialoogvenster kan er als volgt uitzien:
 </jcr:root>
 ```
 
-Verschillende vooraf geconfigureerde componenten worden geleverd; naar deze eigenschappen kan worden verwezen in het dialoogvenster, waarbij de eigenschap `xtype` de waarde `cqinclude` heeft:
+Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in het dialoogvenster naar verwijzen met de eigenschap `xtype` met de waarde `cqinclude`:
 
 * **`title`**
 
@@ -1051,7 +1051,7 @@ Een kolom algemeen maken:
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de overeenkomende componenteigenschap (inclusief het pad).
+   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de bijbehorende componenteigenschap (inclusief het pad).
 
       Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam `./definitions/type`.
 
@@ -1200,9 +1200,9 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Uw eigen rapport maken - Een voorbeeld {#creating-your-own-report-an-example}
+## Uw eigen rapport maken - een voorbeeld {#creating-your-own-report-an-example}
 
-### Het bepalen van Uw Nieuw Rapport {#defining-your-new-report}
+### Uw nieuwe rapport definiëren {#defining-your-new-report}
 
 Om een nieuw rapport te bepalen moet u creëren en vormen:
 
@@ -1411,7 +1411,7 @@ Deze sectie beschrijft geavanceerde configuratieopties voor de diensten OSGi die
 
 Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webconsole (beschikbaar bijvoorbeeld bij `http://localhost:4502/system/console/configMgr`). Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
-### Basic Service (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
+### Basisservice (CQ-rapportconfiguratie op de dag) {#basic-service-day-cq-reporting-configuration}
 
 * **De tijdzone** definieert voor welke historische gegevens de tijdzone wordt gemaakt. Dit moet ervoor zorgen dat de historische grafiek de zelfde gegevens voor elke gebruiker over de wereld toont.
 * **Locale** definieert de landinstelling die moet worden gebruikt in combinatie met de  **** tijdzone voor historische gegevens. De landinstelling wordt gebruikt om bepaalde landspecifieke kalenderinstellingen te bepalen (bijvoorbeeld of de eerste dag van een week zondag of maandag is).
@@ -1435,7 +1435,7 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 
 * **De gebruiker** van de momentopname afdwingen, indien toegelaten, zullen alle momentopnamen met de gebruiker worden genomen die onder de gebruiker van de  *Momentopname wordt gespecificeerd*. Dit kan ernstige gevolgen hebben voor de veiligheid als het niet correct wordt behandeld.
 
-### Cacheinstellingen (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
+### Cacheinstellingen (CQ-rapportagecache dag) {#cache-settings-day-cq-reporting-cache}
 
 * **** Laat toe toelaat u toe of onbruikbaar maakt caching van rapportgegevens. Het toelaten van het rapportgeheime voorgeheugen zal rapportgegevens in geheugen tijdens verscheidene verzoeken houden. Dit kan de prestaties verhogen, maar zal leiden tot een hoger geheugengebruik en kan in extreme omstandigheden leiden tot een gebrek aan geheugen.
 * **** TTL bepaalt de tijd (in seconden) waarvoor het rapportgegeven in het voorgeheugen onder wordt gebracht. Een hoger getal zal de prestaties verhogen, maar kan ook onjuiste gegevens retourneren als de gegevens binnen de tijdsperiode veranderen.
@@ -1449,6 +1449,5 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 >* één gebruiker en twee rapporten
 
 >
-
 
 

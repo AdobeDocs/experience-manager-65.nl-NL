@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 08269877be5e98405474e4b1793526763cab174f
+source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
 workflow-type: tm+mt
 source-wordcount: '5252'
 ht-degree: 0%
@@ -50,34 +50,17 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 >In de volgende voorbeelden en definities wordt de volgende notatie gebruikt:
 >
 >* Elke regel definieert een knooppunt of een eigenschap waarbij:
-   >
-   >  
-* `N:<name> [<nodeType>]`
-   >
-   >     
-   Beschrijft een knoop met de naam van `<*name*>` en knooptype van `<*nodeType*>`*.*
-   >
-   >  
-* `P:<name> [<propertyType]`
-   >
-   >     
-   Beschrijft een bezit met de naam van `<*name*>` en een bezitstype van `<*propertyType*>`.
-   >
-   >  
-* `P:<name> = <value>`
-   >
-   >     
-   Beschrijft een eigenschap `<name>` die moet worden ingesteld op de waarde van `<value>`.
+   >  `N:<name> [<nodeType>]` : Beschrijft een knoop met de naam van  `<*name*>` en knooptype van  `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : Beschrijft een bezit met de naam van  `<*name*>` en een bezitstype van  `<*propertyType*>`.
+   >  `P:<name> = <value>` : Beschrijft een bezit  `<name>` dat aan de waarde van moet worden geplaatst  `<value>`.
    >
    >
 * De inspringing toont de hiërarchische gebiedsdelen tussen de knopen.
->* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen:
+>* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen; bijv. `String|String[]` betekent dat het bezit of Koord of Koord[] kan zijn.
 
->
->  
-bijv. `String|String[]` betekent dat het bezit of Koord of Koord[] kan zijn.
->
->* `[]` een array weergeeft; zoals [] Stringor een array van knooppunten zoals in de  [Query Definition](#query-definition).
+   >
+   >
+* `[]` een array weergeeft; zoals [] Stringor een array van knooppunten zoals in de  [Query Definition](#query-definition).
 >
 >
 Tenzij anders vermeld zijn de standaardtypes:
@@ -99,7 +82,7 @@ Het rapportagekader werkt aan de volgende beginselen:
 
 Het rapportagekader (geïllustreerd door de structuur van een standaardrapport) gebruikt de volgende bouwstenen, die door de verwerkingswachtrij worden gevoed:
 
-![chlimage_1-248](assets/chlimage_1-248.png)
+![chlimage_1-247](assets/chlimage_1-248.png)
 
 ### Rapportpagina {#report-page}
 

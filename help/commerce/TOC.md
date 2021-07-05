@@ -3,10 +3,9 @@ sub-product: AEM Inhoud en Handel
 user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
-translation-type: tm+mt
-source-git-commit: 8612e7c4105a9872fc8bba1988716eaa4b18d550
+source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '108'
 ht-degree: 7%
 
 ---
@@ -32,6 +31,7 @@ ht-degree: 7%
       + [CIF-componenten opmaken](cif/customizing/style-cif-component.md)
       + [CIF-componenten aanpassen](cif/customizing/customize-cif-components.md)
       + [CIF-cataloguskiezers gebruiken](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migratie](cif/migration.md)
 + Releaseopmerkingen {#release-notes}
    + [2021](cif/release-notes/release-notes-2021.md)

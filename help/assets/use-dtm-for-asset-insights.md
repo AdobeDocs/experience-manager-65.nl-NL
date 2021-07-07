@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights, Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -114,4 +114,4 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    * Het object AppMeasurement wordt opgehaald door `satelliteLib` te vragen voor alle beschikbare SiteCatalyst engines. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
 
 1. Sla het venster Code-editor op, sluit dit en sla de wijzigingen vervolgens op in de configuratie van het gereedschap.
-1. Goedkeuren beide goedkeuringen die in behandeling zijn op het tabblad **[!UICONTROL Approvals]**. De tag DTM kan worden ingevoegd in uw webpagina. Zie [DTM integreren in aangepaste paginasjablonen](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/) voor meer informatie over het invoegen van DTM-tags in webpagina&#39;s.
+1. Goedkeuren beide goedkeuringen die in behandeling zijn op het tabblad **[!UICONTROL Approvals]**. De tag DTM kan worden ingevoegd in uw webpagina.

@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience M
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 0c5759786a698f7c7503a56da7f472229d18f763
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3759'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Voor een volledige lijst van eigenschappen en verhogingen die in [!DNL Experienc
 >Vanaf Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager] toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu] builds van OpenJDK, standaarden-compatibel met Java™ SE.
 >Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
 >U kunt de relevante versies van [!DNL Azul Zulu] JDKs van [de Distributie van de Software van Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->De gebruiksrechten voor de Oracle Java™-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en) voor meer informatie over het gebruik van de [!DNL Oracle Java™]-technologie en [!DNL Azul Zulu]-technologie.
+>De gebruiksrechten voor de Oracle Java™-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie over het gebruik van de [!DNL Oracle Java™]-technologie en [!DNL Azul Zulu]-technologie.
 
 Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience Manager] 6.5.9.0-release.
 
@@ -197,7 +197,7 @@ Het contrast (met de achtergrond) van de volgende tekst en pictogrammen is verbe
 
 Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL Dynamic Media]:
 
-* Custom ViewerPresets en CSS worden niet gerepliceerd naar [!DNL Dynamic Media] wanneer [!DNL Dynamic Media] selectief wordt geactiveerd en door [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232) wordt uitgeschakeld.
+* Custom ViewerPresets en CSS worden niet gerepliceerd naar [!DNL Dynamic Media] wanneer [!DNL Dynamic Media] selectief wordt geactiveerd en door [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config) (NPR-36232) wordt uitgeschakeld.
 
 * Wanneer u video-uitvoeringen wilt voorvertonen op de pagina met elementdetails, worden de video&#39;s traag geladen (CQ-4320122).
 
@@ -405,12 +405,12 @@ Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements
 >Sla over als u Experience Manager Forms niet gebruikt. Correcties in Experience Manager Forms worden één week na de geplande [!DNL Experience Manager] Service Pack-release geleverd via een afzonderlijk add-on pakket.
 
 1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
-1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) voor uw besturingssysteem.
+1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
 1. Installeer het invoegpakket voor Forms zoals beschreven in [AEM Forms-invoegpakketten installeren](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Experience Manager 6.5.9.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar Experience Manager 6.5.9.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-on Package.
+>Experience Manager 6.5.9.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar Experience Manager 6.5.9.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-on Package.
 
 ### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 

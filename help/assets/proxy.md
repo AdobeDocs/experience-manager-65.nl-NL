@@ -4,9 +4,9 @@ description: Een volmacht is een  [!DNL Experience Manager] instance that uses p
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,11 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Cloud Service configuraties {#cloud-service-configurations}
 
+<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
->Referentiedocumentatie voor de proxy-API is beschikbaar onder [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+>Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+-->
 
 Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cloudserviceconfiguraties die toegankelijk zijn via de [!DNL Assets] **Tools**-console of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze onder `/etc/cloudservices/proxy` een knooppunt toevoegt voor specifieke configuratiegegevens van de worker (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
 

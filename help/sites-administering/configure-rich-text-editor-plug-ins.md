@@ -3,9 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
+source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4391'
 ht-degree: 0%
 
 ---
@@ -245,19 +245,11 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 >
 >De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identiteitskaart van `CQrte` die kan worden gebruikt om verschillende stijlen voor het bekijken en het uitgeven te verstrekken:
 >
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
-```
->#CQ td {
-> // defines the style for viewing
-> }
->```
->
->
-```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Geef de beschikbare stijlen op in de pop-uplijst {#stylesindropdown}
 
@@ -496,7 +488,7 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 
    * **Naam** `features`
    * **Type** `String`
-   * **Waarde** `*`
+   * **Waarde** `*`  (sterretje)
 
    >[!NOTE]
    Als u niet alle lijsteigenschappen wilt toelaten kunt u `features` bezit tot stand brengen als:
@@ -613,7 +605,7 @@ De tabgrootte definiëren:
 
    * **Naam** `tabSize`
    * **Type** `String`
-   * **De** waarde van het aantal spatietekens dat voor de tabulator moet worden gebruikt.
+   * **De** waarde van het aantal spatietekens dat moet worden gebruikt voor de tabulator
 
 1. Sla de wijzigingen op.
 

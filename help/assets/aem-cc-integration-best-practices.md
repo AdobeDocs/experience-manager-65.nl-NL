@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Samenwerking,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3250'
 ht-degree: 15%
 
 ---
@@ -89,7 +89,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 ### Overwegingen bij het gebruik van [!DNL Experience Manager]- en [!DNL Creative Cloud]-integratie {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Zie [Aanbevolen werkwijzen voor bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* Zie [Aanbevolen werkwijzen voor bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * Zie [Adobe Stock-integratie](aem-assets-adobe-stock.md)
 * Zie [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -209,7 +209,7 @@ De beschrijving verwijst naar het operationeel uploaden van bestanden (bijvoorbe
 
 U kunt de volgende uploadmogelijkheden gebruiken:
 
-* Als u grote/hiërarchische mappen bulksgewijs wilt uploaden, gebruikt u [!DNL Experience Manager]-bureaubladtoepassing die [functionaliteit voor het uploaden van mappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem) biedt. U kunt ook hiërarchische mapstructuren uploaden. [!DNL Assets] worden geüpload op de achtergrond en zijn daarom niet gekoppeld aan een webbrowsersessie
+* Als u grote/hiërarchische mappen bulksgewijs wilt uploaden, gebruikt u [!DNL Experience Manager]-bureaubladtoepassing die [functionaliteit voor het uploaden van mappen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) biedt. U kunt ook hiërarchische mapstructuren uploaden. [!DNL Assets] worden geüpload op de achtergrond en zijn daarom niet gekoppeld aan een webbrowsersessie
 * Als u enkele bestanden uit één map wilt uploaden, sleept u de bestanden rechtstreeks naar de webinterface of gebruikt u de optie Maken in de webinterface [!DNL Assets].
 * Afhankelijk van uw bedrijfsvereisten kunt u ook aangepaste uploader gebruiken.
 

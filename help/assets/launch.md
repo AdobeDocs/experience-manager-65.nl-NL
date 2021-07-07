@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '6224'
+source-wordcount: '6222'
 ht-degree: 9%
 
 ---
@@ -143,7 +143,7 @@ Zoals vermeld in [Gebruik gevallen voor de integratie](#use-cases-for-the-integr
 
 Om de kijkers van Dynamic Media in de Plaatsen van de Experience Manager te volgen, moeten alle stappen onder [Vormend alle integratiestukken worden vermeld](#configuring-all-the-integration-pieces) sectie worden uitgevoerd. Specifiek, moet u de configuratie IMS en de Configuratie van de Wolk van het Experience Platform Launch tot stand brengen.
 
-Na de juiste configuratie worden gegevens automatisch bijgehouden in Dynamic Media-viewers die u aan een sitepagina toevoegt met een WCM-component die door Dynamic Media wordt ondersteund, naar Adobe Analytics, Adobe Analytics for Video of beide.
+Na de juiste configuratie worden gegevens automatisch bijgehouden naar Adobe Analytics, Adobe Analytics for Video, of naar beide, wanneer u een Dynamic Media-viewer toevoegt aan een sitepagina met een WCM-component die door Dynamic Media wordt ondersteund.
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe.com/experience-manager/6-5/help/assets/adding-dynamic-media-assets-to-pages.html).
@@ -241,7 +241,7 @@ Het voorbeeld hierboven heeft ook invloed op de levensduur van de waarde voor he
 
 De waarden van gegevenselementen die door Dynamic Media Viewers worden aangestuurd, worden in geen geval opgeslagen op de lokale opslag of op de server. in plaats daarvan worden ze alleen in de client-side bibliotheek met Experience Platforms Launch bewaard. Waarden van een dergelijk gegevenselement verdwijnen als de webpagina opnieuw wordt geladen.
 
-Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
+Over het algemeen biedt de Data Element-editor ondersteuning voor de optie [opslagduur](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#create-a-data-element). Gegevenselementen die de extensie Dynamic Media Viewers gebruiken, ondersteunen echter alleen de opslagduuroptie van **[!UICONTROL None]**. Het instellen van een andere waarde is mogelijk in de gebruikersinterface, maar het gedrag Gegevenselement is in dit geval niet gedefinieerd. De extensie beheert de waarde van het gegevenselement op zichzelf: het gegevenselement dat de waarde van het gebeurtenisargument van de viewer tijdens de volledige de levenscyclus van de kijker handhaaft.
 
 ### Over Regels in de extensie Dynamic Media Viewers {#about-rules-in-the-dynamic-media-viewers-extension}
 

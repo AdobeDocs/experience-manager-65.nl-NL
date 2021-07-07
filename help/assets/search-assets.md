@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Zoeken, metagegevens
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
 workflow-type: tm+mt
-source-wordcount: '5526'
+source-wordcount: '5524'
 ht-degree: 4%
 
 ---
@@ -358,7 +358,7 @@ Bij visueel zoeken worden slimme tags gebruikt. Voer de volgende stappen uit nad
    Sla de wijzigingen op.
 
 1. Open `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` en voeg `similarityTags` bezit van type `Boolean` met de waarde van `true` toe.
-1. Pas Slimme tags toe op de elementen in uw [!DNL Experience Manager]-opslagplaats. Zie [slimme tags configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Pas Slimme tags toe op de elementen in uw [!DNL Experience Manager]-opslagplaats. Zie [slimme tags configureren](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` knoop, plaats `reindex` bezit aan `true`. Sla de wijzigingen op.
 1. (Optioneel) Als u het zoekformulier hebt aangepast, kopieert u het knooppunt `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` naar `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Sla de wijzigingen op.
 

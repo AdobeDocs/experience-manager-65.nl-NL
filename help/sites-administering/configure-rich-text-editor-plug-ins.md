@@ -3,14 +3,15 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 7f8263a9304ff51e08878c13115c8aeeafce3de3
 workflow-type: tm+mt
-source-wordcount: '4380'
+source-wordcount: '4390'
 ht-degree: 0%
 
 ---
 
-# Plug-ins {#configure-the-rich-text-editor-plug-ins} van de Rich Text Editor configureren
+
+# De invoegtoepassingen van de Rich Text Editor configureren {#configure-the-rich-text-editor-plug-ins}
 
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt het eigenschapbezit vormen om, één of meerdere eigenschappen van RTE toe te laten of onbruikbaar te maken. Dit artikel beschrijft hoe te om de stop-ins specifiek te vormen RTE.
 
@@ -72,7 +73,7 @@ Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op het
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Hierdoor kan de auteur de tekst controleren die de auteur vervangt. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
-## De plakmodi {#paste-modes} configureren
+## De plakmodi configureren {#paste-modes}
 
 Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende drie wijzen kleven:
 
@@ -82,7 +83,7 @@ Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
-### De beschikbare plakopties op de RTE-werkbalk configureren {#configure-paste-options-available-on-the-rte-toolbar}
+### De beschikbare plakopties op de werkbalk RTE configureren  {#configure-paste-options-available-on-the-rte-toolbar}
 
 U kunt sommige, alle, of geen van deze drie pictogrammen aan uw auteurs in de toolbar van RTE verstrekken:
 
@@ -98,7 +99,7 @@ Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 1. Navigeer naar het knooppunt `rtePlugins/edit`. Zie [Een insteekmodule activeren](#activateplugin) als het knooppunt niet bestaat.
 1. Maak de eigenschap `features` op het knooppunt `edit` en voeg een of meer functies toe. Sla alle wijzigingen op.
 
-### Het gedrag van het pictogram Plakken (Ctrl+V) en de sneltoets {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut} configureren
+### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 U kunt het gedrag van het pictogram **[!UICONTROL Paste (Ctrl+V)]** vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
 
@@ -155,53 +156,18 @@ Om te vormen welke formaten worden toegestaan wanneer het kleven van tekst in AE
    >
    >Indien niet expliciet gedefinieerd, wordt de standaardwaarde true gebruikt en wordt de opmaak geaccepteerd.
 
-1. Andere indelingen kunnen ook worden gedefinieerd met behulp van een reeks andere eigenschappen of knooppunten, die ook worden toegepast op het knooppunt `htmlPasteRules`:
+1. Andere indelingen kunnen ook worden gedefinieerd met behulp van een reeks andere eigenschappen of knooppunten, die ook worden toegepast op het knooppunt `htmlPasteRules`. Sla alle wijzigingen op.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Eigenschap</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Beschrijving</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>Tekenreeks[]</td>
-   <td><p>Hiermee definieert u de lijst met blokcodes die zijn toegestaan.</p> <p>Enkele mogelijke blokcodes zijn:</p>
-    <ul>
-     <li>koppen (h1, h2, h3)</li>
-     <li>lid p)</li>
-     <li>lijsten (ol, ul)</li>
-     <li>tabellen (tabel)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>Tekenreeks</td>
-   <td><p>Definieert de bloktag die wordt gebruikt voor blokken met een bloktag die niet in allowBlockTags zijn opgenomen.</p> <p> p is in de meeste gevallen voldoende.</p> </td>
-  </tr>
-  <tr>
-   <td>table</td>
-   <td>nt:ongestructureerd</td>
-   <td><p>Bepaalt het gedrag wanneer het kleven van lijsten.<br /> </p> <p>Dit knooppunt moet de eigenschap <code>allow</code> (type <code>Boolean</code>) hebben om te bepalen of het plakken van tabellen is toegestaan.</p> <p>Als <code>allow</code> aan <code>false</code> wordt geplaatst, moet u het bezit <code>ignoreMode</code> (type<code> String</code>) specificeren om te bepalen hoe de gekleefde lijstinhoud wordt behandeld. Geldige waarden voor <code>ignoreMode</code> zijn:</p>
-    <ul>
-     <li><code>remove</code>: Hiermee verwijdert u tabelinhoud.</li>
-     <li><code>paragraph</code>: Hiermee zet u tabelcellen om in alinea's.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:ongestructureerd</td>
-   <td><p>Hiermee definieert u het gedrag bij het plakken van lijsten.<br /> </p> <p>U moet de eigenschap <code>allow</code> (type <code>Boolean</code>) hebben om te definiëren of het plakken van lijsten is toegestaan.</p> <p>Als <code>allow</code> aan <code>false</code> wordt geplaatst, moet u het bezit <code>ignoreMode</code> (type <code>String</code>) specificeren om te bepalen hoe te om het even welke gekleefde lijstinhoud te behandelen. Geldige waarden voor <code>ignoreMode</code> zijn:</p>
-    <ul>
-     <li><code>remove</code>: Hiermee verwijdert u de inhoud van de lijst.</li>
-     <li><code>paragraph</code>: Hiermee zet u lijstitems om in alinea's.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+U kunt de volgende eigenschappen gebruiken voor `htmlPasteRules`.
 
-Voorbeeld van een geldige `htmlPasteRules`-structuur:
+| Eigenschap | Type | Beschrijving |
+|---|---|---|
+| `allowBlockTags` | Tekenreeks | Hiermee definieert u de lijst met blokcodes die zijn toegestaan. Enkele mogelijke blokcodes zijn: <ul> <li>koppen (h1, h2, h3)</li> <li>lid p)</li> <li>lijsten (ol, ul)</li> <li>tabellen (tabel)</li> </ul> |
+| `fallbackBlockTag` | Tekenreeks | Definieert de bloktag die wordt gebruikt voor alle blokken met een bloktag die niet in `allowBlockTags` zijn opgenomen. `p` in de meeste gevallen voldoende. |
+| table | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van tabellen. Dit knooppunt moet de eigenschap `allow` (type Boolean) hebben om te bepalen of het plakken van tabellen is toegestaan. Als allow is ingesteld op `false`, moet u de eigenschap `ignoreMode` (type String) opgeven om te bepalen hoe geplakte tabelinhoud wordt afgehandeld. Geldige waarden voor `ignoreMode` zijn: <ul> <li>`remove`: Hiermee verwijdert u tabelinhoud.</li> <li>`paragraph`: Hiermee zet u tabelcellen om in alinea&#39;s.</li> </ul> |
+| list | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van lijsten. U moet de eigenschap `allow` (type Boolean) hebben om te definiëren of het plakken van lijsten is toegestaan. Wanneer `allow` is ingesteld op `false`, moet u de eigenschap `ignoreMode` (type String) opgeven om te definiëren hoe inhoud uit de lijst moet worden verwerkt. Geldige waarden voor `ignoreMode` zijn: <ul><li> `remove`: Hiermee verwijdert u de inhoud van de lijst.</li> <li>`paragraph`: Hiermee zet u lijstitems om in alinea&#39;s.</li> </ul> |
+
+Hieronder ziet u een voorbeeld van een geldige `htmlPasteRules`-structuur.
 
 ```xml
 "htmlPasteRules": {
@@ -223,13 +189,9 @@ Voorbeeld van een geldige `htmlPasteRules`-structuur:
 }
 ```
 
-1. Sla alle wijzigingen op.
-
 ## Tekststijlen configureren {#textstyles}
 
-Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud wordt ingesloten in `span`-tags met behulp van het `class`-kenmerk om naar de CSS-klasse te verwijzen. Bijvoorbeeld:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud wordt ingesloten in `span`-tags met behulp van het `class`-kenmerk om naar de CSS-klasse te verwijzen. Bijvoorbeeld, `<span class=monospaced>Monospaced Text Here</span>`.
 
 Wanneer de plug-in Stijlen voor de eerste keer is ingeschakeld, zijn er geen standaardstijlen beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs stijlen te voorzien:
 
@@ -237,11 +199,11 @@ Wanneer de plug-in Stijlen voor de eerste keer is ingeschakeld, zijn er geen sta
 * Geef de locatie(s) van de stijlpagina(&#39;s) op.
 * Geef de afzonderlijke stijlen op die u kunt selecteren in de vervolgkeuzelijst Stijl.
 
-Voor latere (re-)configuraties, zeg om meer stijlen toe te voegen, volg slechts de instructies om naar een nieuw stijlblad te verwijzen en de extra stijlen te specificeren.
+Voor latere configuraties, bijvoorbeeld om meer stijlen toe te voegen, volg slechts de instructies om naar een nieuw stijlblad te verwijzen en de extra stijlen te specificeren.
 
 >[!NOTE]
 >
->Stijlen kunnen ook worden gedefinieerd voor [tabellen of tabelcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Deze configuraties vereisen afzonderlijke procedures.
+>U kunt Stijlen voor [lijsten of lijstcellen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles) bepalen. Deze configuraties vereisen afzonderlijke procedures.
 
 ### De vervolgkeuzelijst Stijl inschakelen {#styleselectorlist}
 
@@ -708,10 +670,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
    * **Type** `String`
    * **Waarde** `richtext`
 
-   De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster; twee voorbeelden zijn :
-   * `/apps/myProject>/components/text/dialog/items/text`
-   * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
-
+   De locatie van het knooppunt `../items/text` kan variëren, afhankelijk van de structuur van het dialoogvenster; twee voorbeelden zijn `/apps/myProject>/components/text/dialog/items/text` en `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Maak onder `htmlRules` een nieuw knooppunt.
 

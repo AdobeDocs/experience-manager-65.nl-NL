@@ -3,9 +3,9 @@ sub-product: AEM Inhoud en Handel
 user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
-source-git-commit: 538dc7620317f86c0b3d762eaef597d0a7969ace
+source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '111'
 ht-degree: 7%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 7%
       + [Gebruik van meerdere sjablonen](cif/configuring/multi-template-usage.md)
       + [URL&#39;s configureren voor SEO](cif/configuring/advanced-url-configuration.md)
       + [Cacheopties](cif/configuring/caching.md)
+      + [Aangepaste HTTP-headers](/help/commerce/cif/configuring/custom-http-headers.md)
    + Ontwikkeling {#developing}
       + [Ontwikkelen met AEM](cif/develop.md)
       + [CIF-componenten opmaken](cif/customizing/style-cif-component.md)

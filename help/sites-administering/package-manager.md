@@ -10,16 +10,15 @@ topic-tags: content
 content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 03967fcdc9685c9a8bf1dead4bd5e389603ff91b
+exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
+source-git-commit: 4a2a9f177049e8199662ed94cf7aace9aa937655
 workflow-type: tm+mt
-source-wordcount: '3934'
+source-wordcount: '3964'
 ht-degree: 0%
 
 ---
 
-
-# Hoe te met Pakketten te werken{#how-to-work-with-packages}
+# Werken met pakketten{#how-to-work-with-packages}
 
 Pakketten maken het importeren en exporteren van inhoud in de opslagplaats mogelijk. U kunt bijvoorbeeld pakketten gebruiken om nieuwe functionaliteit te installeren, inhoud tussen instanties over te brengen, en een back-up van inhoud in de opslagplaats te maken.
 
@@ -62,7 +61,7 @@ U kunt de volgende handelingen uitvoeren op of met pakketten:
 * Download pakketten, zoals hotfixes, uit de bibliotheek van de Distributie van de Software
 * Pakketten uploaden naar de interne sectie van het bedrijf van de bibliotheek van de Distributie van de Software
 
-## Pakketinformatie {#package-information}
+## Pakketgegevens {#package-information}
 
 Een pakketdefinitie bestaat uit verschillende soorten informatie:
 
@@ -148,8 +147,8 @@ Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken*
 |---|---|---|
 | Getest met | De productnaam en versie van dit pakket zijn bedoeld voor of zijn compatibel met. | *AEM6* |
 | Opgeloste problemen | Een tekstveld waarin u details kunt weergeven van bugs die zijn gecorrigeerd voor dit pakket. Vermeld elke bug op een aparte regel. | Overzicht van bug-nr |
-| Afhankelijk van | Hiermee geeft u informatie over afhankelijkheden weer die moet worden gerespecteerd wanneer andere pakketten nodig zijn om het huidige pakket op de verwachte manier te laten uitvoeren. Dit veld is belangrijk bij het gebruik van hotfixes. | groupId:name:version |
-| Vervangen | Een lijst met vervangen pakketten die door dit pakket worden vervangen. Controleer vóór de installatie of dit pakket alle benodigde inhoud uit de verouderde pakketten bevat, zodat er geen inhoud wordt overschreven. | groupId:name:version |
+| Afhankelijk van | Hiermee geeft u informatie over afhankelijkheden weer die moet worden gerespecteerd wanneer andere pakketten nodig zijn om het huidige pakket op de verwachte manier te laten uitvoeren. Dit veld is belangrijk bij het gebruik van hotfixes. | groupId:name:versie |
+| Vervangen | Een lijst met vervangen pakketten die door dit pakket worden vervangen. Controleer vóór de installatie of dit pakket alle benodigde inhoud uit de verouderde pakketten bevat, zodat er geen inhoud wordt overschreven. | groupId:name:versie |
 
 ### Pakketfilters {#package-filters}
 
@@ -227,12 +226,18 @@ De pakketmanager beheert de pakketten op uw lokale AEM installatie. Nadat u [de 
 * [Pakketinstellingen](#package-settings)
 * [Pakketfilters](#package-filters)
 
-### Toestemmingen nodig voor het gebruiken van de Manager {#permissions-needed-for-using-the-package-manager} van het Pakket
+### Machtigingen nodig voor het gebruik van Package Manager {#permissions-needed-for-using-the-package-manager}
 
 Om gebruikers het recht te verlenen om pakketten tot stand te brengen, te wijzigen, te uploaden en te installeren, moet u hen de aangewezen toestemmingen bij de volgende plaatsen geven:
 
 * **/etc/packages** (volledige rechten m.u.v. schrapping)
 * het knooppunt dat de pakketinhoud bevat
+
+>[!CAUTION]
+>
+>Het verlenen van toestemmingen op pakketten kan tot gevoelige informatieonthulling en gegevensverlies leiden.
+>
+>Om deze risico&#39;s te beperken, wordt het hoogst geadviseerd om specifieke groepstoestemmingen over specifieke subbomen slechts, bijvoorbeeld `/etc/packages/site-content` te verlenen.
 
 Zie [Machtigingen instellen](/help/sites-administering/security.md#setting-page-permissions) voor instructies over het wijzigen van machtigingen.
 
@@ -337,7 +342,7 @@ Een pakket wordt vaak gebouwd tezelfdertijd aangezien u [de pakketdefinitie ](#c
 
 1. Klik **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
 
-### Een pakket {#rewrapping-a-package} opnieuw inpakken
+### Een pakket opnieuw inpakken {#rewrapping-a-package}
 
 Nadat een pakket is gemaakt, kan het indien nodig opnieuw worden verpakt.
 
@@ -383,7 +388,7 @@ Nadat een pakket is gemaakt, kunt u de inhoud weergeven:
 
    ![packagestestinstall](assets/packagestestinstall.png)
 
-### Pakketten downloaden naar uw bestandssysteem {#downloading-packages-to-your-file-system}
+### Pakketten naar uw bestandssysteem downloaden {#downloading-packages-to-your-file-system}
 
 In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem kunt downloaden met **Package Manager**.
 
@@ -422,7 +427,7 @@ Een pakket uploaden:
    >
    >Als u de inhoud beschikbaar wilt maken voor AEM, moet u [het pakket ](#installing-packages) installeren.
 
-### Pakketten {#validating-packages} valideren
+### Pakketten valideren {#validating-packages}
 
 Voordat u een pakket installeert, dient u de inhoud ervan te controleren. Omdat de pakketten overlay dossiers onder `/apps` kunnen wijzigen en/of ACLs toevoegen wijzigen en verwijderen, is het vaak nuttig om deze veranderingen te bevestigen alvorens te installeren.
 
@@ -500,7 +505,7 @@ Deze opties worden hieronder beschreven.
    >
    >Als beste praktijken wordt het geadviseerd dat de pakketten geen AEM-Verstrekte ACLs zouden moeten beïnvloeden aangezien dit in onverwacht productgedrag kan resulteren.
 
-#### Validatie {#performing-validation} uitvoeren
+#### Validatie uitvoeren {#performing-validation}
 
 De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
@@ -558,7 +563,7 @@ Hieronder ziet u een voorbeeld van het gebruik van cURL voor het uitvoeren van e
 >
 >De reactie op een aanvraag van een HTTP-validatie-POST is een JSON-object met de resultaten van de validatie.
 
-### Pakketten {#installing-packages} installeren
+### Pakketten installeren {#installing-packages}
 
 Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinhoud geïnstalleerd en functioneel te hebben, moet het allebei zijn:
 
@@ -568,7 +573,7 @@ Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinh
 
 >[!CAUTION]
 >
->Wanneer u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
+>Als u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
 >
 >Als u de inhoud of de invloed van een pakket wilt zien, kunt u:
 >
@@ -626,7 +631,7 @@ Als uw instantie wordt uitgevoerd en u een pakket aan de map `install` toevoegt,
 >
 >U kunt dit ook doen voordat u de instantie voor de eerste keer start. Hieronder moet u de map `crx-quickstart` handmatig maken, de map `install` maken en de pakketten daar plaatsen. Wanneer u uw exemplaar vervolgens voor het eerst start, worden de pakketten in alfabetische volgorde geïnstalleerd.
 
-### Pakketten {#uninstalling-packages} verwijderen
+### Pakketten verwijderen {#uninstalling-packages}
 
 Met AEM kunt u pakketten verwijderen. Deze actie keert de inhoud van de bewaarplaats terug die aan de momentopname wordt beïnvloed die onmiddellijk voorafgaand aan de pakketinstallatie wordt gemaakt.
 
@@ -640,7 +645,7 @@ Met AEM kunt u pakketten verwijderen. Deze actie keert de inhoud van de bewaarpl
 1. Klik op het pakketpictogram van het pakket dat u wilt verwijderen.
 1. Klik op **Verwijderen** om de inhoud van dit pakket uit de opslagplaats te verwijderen. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld. Wanneer gebeëindigd klik **Close** op de dialoog.
 
-### Pakketten {#deleting-packages} verwijderen
+### Pakketten verwijderen {#deleting-packages}
 
 Een pakket verwijderen uit de lijst(en) in Package Manager:
 
@@ -663,7 +668,7 @@ Een pakket verwijderen uit de lijst(en) in Package Manager:
 >
 >Als dit pakket al is geïnstalleerd, wordt de *geïnstalleerde*-inhoud **not** verwijderd.
 
-### Pakketten {#replicating-packages} dupliceren
+### Pakketten repliceren {#replicating-packages}
 
 Kopieer de inhoud van een pakket en installeer het naar de publicatie-instantie:
 
@@ -687,4 +692,3 @@ Voor meer informatie, heb een blik bij de [documentatie van de Distributie van d
 >[!CAUTION]
 >
 >AEM pakketbeheer is momenteel niet bruikbaar met Software Distribution, downloadt u uw pakketten naar uw lokale schijf.
-

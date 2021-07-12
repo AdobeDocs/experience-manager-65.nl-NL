@@ -10,22 +10,21 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '243'
 ht-degree: 13%
 
 ---
-
 
 # Gekoppelde inhoud{#associated-content}
 
 Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door [een reeks elementen te bieden die u kunt openen bij het gebruik van het inhoudsfragment op een pagina](/help/sites-authoring/content-fragments.md#using-associated-content), en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
 
-## Gekoppelde inhoud {#adding-associated-content} toevoegen
+## Gekoppelde inhoud toevoegen {#adding-associated-content}
 
 >[!NOTE]
 >
@@ -56,4 +55,3 @@ Nadat u een verzameling hebt gekoppeld, kunt u:
 * **Voeg** Elementen aan de inzameling toe.
 * Selecteer een element voor verdere actie.
 * Bewerk het element.
-

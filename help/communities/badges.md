@@ -10,19 +10,18 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-
 # Badges-console {#badges-console}
 
-## Informatie over Badges {#about-badges}
+## Info Badges {#about-badges}
 
 De console van de Badges van de Gemeenschappen verstrekt de capaciteit om douanebadges toe te voegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de gemeenschap (toegewezen) nemen.
 
@@ -44,7 +43,7 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ![badges-homepage](assets/badges-homepage.png)
 
-## Badge {#create-badge} maken
+## Badge maken {#create-badge}
 
 Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 

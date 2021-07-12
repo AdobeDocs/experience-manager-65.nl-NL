@@ -10,17 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
-
-# Gebruikers- en UGC-beheerservice in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
+# Gebruikersbeheer en UGC-beheerservice in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
@@ -40,7 +39,7 @@ Om deze APIs aan gebruik te zetten, moet u het `/services/social/ugcmanagement` 
 
 Met deze API&#39;s kunnen de volgende functies worden uitgevoerd.
 
-## De UGC van een gebruiker {#retrieve-the-ugc-of-a-user} ophalen
+## De UGC van een gebruiker ophalen {#retrieve-the-ugc-of-a-user}
 
 **getUserUgc (ResourceResolver resourceResolver, String user, OutputStream outputStream)** helpt alle UGC van een gebruiker uit het systeem uitvoeren.
 
@@ -51,7 +50,7 @@ Als u bijvoorbeeld de UGC wilt exporteren van een gebruiker met de naam Weston M
 
 `https://localhost:port/services/social/ugcmanagement?user=weston.mccall@dodgit.com&operation=getUgc`
 
-## De UGC van een gebruiker {#delete-the-ugc-of-a-user} verwijderen
+## De UGC van een gebruiker verwijderen {#delete-the-ugc-of-a-user}
 
 **deleteUserUgc (ResourceResolver resourceResolver, de gebruiker van het Koord)** helpt schrapping al UGC voor een gebruiker van het systeem.
 
@@ -70,7 +69,7 @@ Raadpleeg de volgende afbeelding voor Adobe Analytics-variabeletoewijzingen die 
 
 ![AEM gemeenschappen variabele mapping voor Adobe Analytics](assets/analytics-communities-mapping.png)
 
-## Gebruikersaccount {#disable-a-user-account} uitschakelen
+## Gebruikersaccount uitschakelen {#disable-a-user-account}
 
 **deleteUserAccount(ResourceResolver resourceResolver, String user)** helpt een gebruikersaccount onbruikbaar maken.
 

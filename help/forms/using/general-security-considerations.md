@@ -9,21 +9,20 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1082'
 ht-degree: 0%
 
 ---
 
-
-# Algemene beveiligingsoverwegingen voor AEM Forms op JEE{#general-security-considerations-for-aem-forms-on-jee}
+# Algemene veiligheidsoverwegingen voor AEM Forms in juni{#general-security-considerations-for-aem-forms-on-jee}
 
 Dit artikel bevat inleidende informatie die u helpt bij het voorbereiden op het verharden van uw AEM Forms-omgeving. Dit omvat informatie over AEM Forms op JEE, besturingssysteem, toepassingsserver en databasebeveiliging. Controleer deze gegevens voordat u uw omgeving vergrendelt.
 
-## Leveranciersspecifieke beveiligingsinformatie {#vendor-specific-security-information}
+## Specifieke beveiligingsinformatie van de leverancier {#vendor-specific-security-information}
 
 Deze sectie bevat veiligheid-verwante informatie over werkende systemen, toepassingsservers, en gegevensbestanden die in uw AEM Forms op oplossing JEE worden opgenomen.
 
@@ -207,7 +206,7 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
  </tbody>
 </table>
 
-### Het vormen JBoss om een niet standaardHTTP- haven {#configuring-jboss-to-use-a-non-default-http-port} te gebruiken
+### JBoss configureren voor het gebruik van een niet-standaard HTTP-poort {#configuring-jboss-to-use-a-non-default-http-port}
 
 JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBoss heeft ook pre-gevormde havens 8180, 8280, en 8380, die uit in het jreliëf-service.xml- dossier worden becommentarieerd. Als u een toepassing op uw computer hebt die deze poort al gebruikt, wijzigt u de poort die AEM Forms op JEE gebruikt door de volgende stappen uit te voeren:
 
@@ -224,11 +223,11 @@ JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBo
 1. Sla het bestand op en sluit het.
 1. Start de JBoss-toepassingsserver opnieuw.
 
-## AEM Forms op JEE-beveiligingsoverwegingen {#aem-forms-on-jee-security-considerations}
+## AEM Forms over JEE-beveiligingsoverwegingen {#aem-forms-on-jee-security-considerations}
 
 In deze sectie worden enkele AEM Forms beschreven over JEE-specifieke beveiligingsproblemen waarvan u op de hoogte moet zijn.
 
-### E-mailreferenties niet gecodeerd in database {#email-credentials-not-encrypted-in-database}
+### E-mailreferenties zijn niet gecodeerd in database {#email-credentials-not-encrypted-in-database}
 
 De e-mailgegevens die door toepassingen worden opgeslagen, worden niet versleuteld voordat ze in de AEM Forms in de JEE-database worden opgeslagen. Wanneer u een de diensteindpunt vormt om e-mail te gebruiken, wordt om het even welke wachtwoordinformatie die als deel van die eindpuntconfiguratie wordt gebruikt niet gecodeerd wanneer het in het gegevensbestand wordt opgeslagen.
 
@@ -236,7 +235,7 @@ De e-mailgegevens die door toepassingen worden opgeslagen, worden niet versleute
 
 AEM Forms on JEE gebruikt de AEM Forms on JEE-database voor het opslaan van gevoelige informatie over de documentsleutel en ander cryptografisch materiaal dat wordt gebruikt voor beleidsdocumenten. Het beveiligen van de database tegen indringing helpt deze vertrouwelijke informatie te beschermen.
 
-### Wachtwoord in duidelijke tekstvorm {#password-in-clear-text-format-in-adobe-ds-xml}
+### Wachtwoord in tekstformulier wissen {#password-in-clear-text-format-in-adobe-ds-xml}
 
 De toepassingsserver die wordt gebruikt om AEM Forms op JEE in werking te stellen vereist zijn eigen configuratie voor toegang tot uw gegevensbestand door een gegevensbron die op de toepassingsserver wordt gevormd. Zorg ervoor dat uw toepassingsserver uw databasewachtwoord niet in duidelijke tekst in het configuratiebestand van de gegevensbron weergeeft.
 
@@ -248,6 +247,6 @@ Het bestand lc_[database].xml mag geen wachtwoord in duidelijke tekstindeling be
 
 De Server van de Toepassing van IBM WebSphere en de Server van Oracle WebLogic kunnen gegevensbronwachtwoorden door gebrek coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
 
-### Beveiliging van de persoonlijke sleutel die is opgeslagen in de Trust Store {#protecting-the-private-key-stored-in-trust-store}
+### De persoonlijke sleutel die is opgeslagen in de Trust Store beveiligen {#protecting-the-private-key-stored-in-trust-store}
 
 De persoonlijke sleutels of referenties die in de Trust Store worden geïmporteerd, worden opgeslagen in AEM Forms in de JEE-database. Neem de juiste voorzorgsmaatregelen om de database te beveiligen en beperk de toegang tot alleen de aangewezen beheerders.

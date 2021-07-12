@@ -6,17 +6,16 @@ seo-description: 'Met documentbeveiliging kunt u alle gegevens die u in een onde
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
 
-
-# De documentbeveiligingsserver {#installing-and-configuring-the-document-security-server} installeren en configureren
+# De documentbeveiligingsserver installeren en configureren {#installing-and-configuring-the-document-security-server}
 
 Met documentbeveiliging kunt u alle gegevens die u in een ondersteunde indeling hebt opgeslagen, veilig verspreiden. Alleen geautoriseerde gebruikers hebben toegang tot beveiligde documenten.
 
@@ -28,7 +27,7 @@ Het beleid wordt opgeslagen op de server van de Veiligheid van het Document; u p
 
 Documentbeveiliging biedt ook clients, viewers en indexeerders om documenten te beveiligen, beveiligde documenten weer te geven en beveiligde documenten te indexeren. Voor gedetailleerde informatie over documentveiligheid, zie [over documentveiligheid](/help/forms/using/admin-help/document-security.md).
 
-## Implementatietopologie {#deployment-topology}
+## Implementatietopologie  {#deployment-topology}
 
 De beveiligingsmogelijkheden voor documenten zijn alleen beschikbaar in AEM Forms op JEE. U hebt één instantie van AEM Forms op JEE nodig. Indien nodig kunt u ook een cluster of farm van AEM Forms-servers maken. De volgende topologie is indicatieve topologie om het vermogen van de documentveiligheid in werking te stellen. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](aem-forms-architecture-deployment.md).
 

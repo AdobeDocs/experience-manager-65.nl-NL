@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Sitesjablonen {#site-templates}
 
@@ -37,7 +36,7 @@ Deze console toont de malplaatjes waarvan een [communityplaats](sites-console.md
 
 ![site-sjabloon](assets/site-template.png)
 
-## Sitjabloon maken {#create-site-template}
+## Sitesjabloon maken {#create-site-template}
 
 Selecteer `Create` om een nieuwe sitesjabloon te gaan maken.
 
@@ -87,7 +86,7 @@ De paginafunctie biedt een lege pagina. De groepsfunctie biedt de mogelijkheid o
 
 ![site-editor](assets/site-editor.png)
 
-### Groepsjablonen voor groepsfuncties {#group-templates-for-groups-function}
+### Groepsjablonen voor groepfuncties {#group-templates-for-groups-function}
 
 Wanneer het omvatten van een groepsfunctie in het plaatssjabloon, vereist de configuratie de specificatie van de keuzen van het groepsmalplaatje toegestaan wanneer een nieuwe groep in het publicatiemilieu wordt gecreeerd.
 

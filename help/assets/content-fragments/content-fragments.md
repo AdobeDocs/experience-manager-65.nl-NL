@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: b204df18-2aef-4905-82f8-c777928ba828
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1975'
 ht-degree: 3%
 
 ---
-
 
 # Werken met contentfragmenten{#working-with-content-fragments}
 
@@ -60,7 +59,7 @@ Met inhoudelementen kunt u:
 
 Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillende kanalen ervaringen op te doen.
 
-## Content Fragments and Content Services {#content-fragments-and-content-services}
+## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
 AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
@@ -162,7 +161,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * Bevat niet het concept dat voor een specifiek fragment wordt goedgekeurd.
    * Zie [Assets Browser](/help/sites-authoring/author-environment-tools.md#assets-browser) voor meer informatie.
 
-### Onderdelen van een inhoudsfragment {#constituent-parts-of-a-content-fragment}
+### Delen van een inhoudsfragment maken {#constituent-parts-of-a-content-fragment}
 
 De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct of indirect):
 
@@ -202,7 +201,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    >[!NOTE]
    >
-   >Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Middelen.
+   >Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
 
 * **Gekoppelde inhoud**
 
@@ -250,7 +249,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan [Samengevat](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text) zijn om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
    * Beschikbaar op het tabblad [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van de fragmenteditor.
 
-### Tussenliggende inhoud bij pagina&#39;s ontwerpen met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
+### Tussen inhoud wanneer pagina&#39;s worden gemaakt met inhoudsfragmenten {#in-between-content-when-page-authoring-with-content-fragments}
 
 Tussen inhoud:
 
@@ -289,11 +288,11 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
    * Fragmenten hebben een of meer specifieke componenten nodig om de lay-out te definiëren en om enkele of alle elementen/variaties en bijbehorende inhoud te leveren.
    * Als u een fragment naar een pagina sleept tijdens het ontwerpen, wordt de vereiste component automatisch gekoppeld.
 
-## Voorbeeld van gebruik {#example-usage}
+## Voorbeeldgebruik {#example-usage}
 
 Een fragment met de elementen en variaties kan worden gebruikt om coherente inhoud voor meerdere kanalen te maken. Bij het ontwerpen van het fragment moet u rekening houden met de plaats waar het fragment wordt gebruikt.
 
-### We.Retail-voorbeeld {#we-retail-sample}
+### We.Handelsvoorbeeld {#we-retail-sample}
 
 Een voorbeeldfragment is zichtbaar bij:
 

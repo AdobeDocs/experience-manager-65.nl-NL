@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-
-# Rapportconsole {#reports-console}
+# Rapportenconsole {#reports-console}
 
 ## Overzicht {#overview}
 
@@ -44,9 +43,9 @@ Wanneer [Adobe Analytics is ingeschakeld](/help/communities/sites-console.md#ana
 
 Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verdere verwerking.
 
-## Consoles {#reporting-consoles} rapporteren
+## Consoles rapporteren {#reporting-consoles}
 
-### Rapporten voor communautaire sites {#reports-for-community-sites}
+### Verslagen voor communautaire sites {#reports-for-community-sites}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Reports]**
 
@@ -66,7 +65,7 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 ![rapporten](assets/reports1.png)
 
-### Rapporten voor Middelen van Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
+### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Resources]**
 
@@ -91,7 +90,7 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 Voor meer details, zie [de sectie van Rapporten](/help/communities/resources.md#report) van de console van Middelen.
 
-## Rapport Toewijzingen {#assignments-report}
+## Toewijzingsrapport {#assignments-report}
 
 Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysite, gebruikers of groepen en toewijzing in te schakelen.
 
@@ -119,7 +118,7 @@ Selecteer **Generate** om het rapport tot stand te brengen:
 
 ![genereren](assets/generate-assignment-report.png)
 
-## Rapport {#views-report} weergaven
+## Rapport Weergaven {#views-report}
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door een of meer algemene functies.
 
@@ -179,11 +178,11 @@ Selecteer **[!UICONTROL Generate]** om het rapport tot stand te brengen.
 
 ## Problemen oplossen {#troubleshooting}
 
-### Geen vermelde communitysites {#no-community-sites-listed}
+### Geen community-sites vermeld {#no-community-sites-listed}
 
 Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
 
-### Rapporten worden niet weergegeven in instantie AEM-auteur {#reports-do-not-show-in-aem-author-instance}
+### Rapporten worden niet weergegeven in een instantie van AEM-auteur {#reports-do-not-show-in-aem-author-instance}
 
 Als rapporten niet worden weergegeven in een instantie van AEM-auteur, controleert u of er aanpassingen zijn, zoals URL-toewijzing bij instantie Publiceren. Als de afbeelding URL slechts op AEM wordt gedaan publiceer instantie van de communautaire plaats, zorg ervoor dat het zelfde in de instantie van de Auteur AEM in **de Configuratie van de Component van het Rapport Sociale van de Tendens van de Plaats** is gevormd.
 

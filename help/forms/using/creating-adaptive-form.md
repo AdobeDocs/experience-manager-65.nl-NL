@@ -2,18 +2,17 @@
 title: Een adaptief formulier maken
 description: 'Leer hoe u een adaptief formulier maakt met [!DNL Experience Manager Forms]. Adaptieve formulieren zijn responsieve HTML5-formulieren die het verzamelen en verwerken van informatie stroomlijnen. Dig dieper in op de manier waarop u een adaptief formulier kunt maken op basis van een formuliergegevensmodel, een XFA-formuliersjabloon en een XML- of JSON-schema. '
 feature: Adaptieve Forms
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
 
 ---
 
-# Een adaptief formulier {#creating-an-adaptive-form} maken
+# Een adaptief formulier maken {#creating-an-adaptive-form}
 
 ## <strong>Een adaptief formulier maken</strong> {#strong-create-an-adaptive-form-strong}
 
@@ -148,7 +147,7 @@ Daarnaast kunt u de sjablooneditor gebruiken om uw eigen sjablonen te maken. Zie
 >
 >Als u een adaptief formulier opent dat is gemaakt met de geavanceerde sjabloon voor bewerken, wordt een foutbericht weergegeven. De geavanceerde sjabloon heeft een Signature Step-component en Adobe Sign is er standaard voor ingeschakeld. Maak en selecteer een [Adobe Sign-cloudconfiguratie](adobe-sign-integration-adaptive-forms.md) en [configureer een ondertekenaar](working-with-adobe-sign.md#addsignerstoanadaptiveform) om de fout op te lossen.
 
-## Eigenschappen formuliermodel bewerken van een adaptief formulier {#edit-form-model}
+## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model}
 
 Aangepaste formulieren worden gemaakt zonder formuliermodel (met de optie Geen voor formuliermodel) of met een formuliermodel zoals een formuliersjabloon, XML-schema of JSON-schema of formuliergegevensmodel. U kunt het formuliermodel voor een adaptief formulier wijzigen van Geen in een ander formuliermodel. Voor een adaptief formulier op basis van een formuliermodel kunt u een andere formuliersjabloon, een XML-schema, een JSON-schema of een formuliergegevensmodel kiezen voor hetzelfde formuliermodel. U kunt echter niet van het ene formuliermodel naar het andere gaan.
 

@@ -10,15 +10,14 @@ topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # Compatibiliteitspakket{#compatibility-package}
 
@@ -50,7 +49,7 @@ Zorg ervoor dat u [AEM compatibiliteitspakket](https://helpx.adobe.com/aem-forms
 
    Zie [migratiehulpprogramma](../../forms/using/migration-utility.md) voor meer informatie.
 
-## Elementen die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket {#assetsmadecompatible} te installeren
+## Activa die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
 
 Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en sjablonen compatibel maken met AEM Forms 6.5:
 
@@ -77,4 +76,3 @@ Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en 
    * /libs/fd/af/components/page/survey
    * /libs/fd/af/components/page/tabbedenrollment
    * /libs/fd/afaddon/components/page/advancedRolment
-

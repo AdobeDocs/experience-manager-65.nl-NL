@@ -11,15 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1809'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-elementen en -documenten migreren{#migrate-aem-forms-assets-and-documents}
 
@@ -34,13 +33,13 @@ Het migratiehulpprogramma converteert de [Adaptieve Forms-elementen](../../forms
 >
 >Als de upgrade op een verkeerde plaats is uitgevoerd, kunt u de migratie voor Correspondence Management-middelen altijd uitvoeren wanneer u de middelen importeert. Voor migratie naar Correspondence Management moet het Forms-compatibiliteitspakket zijn geïnstalleerd.
 
-## Migratiebenadering {#approach-to-migration}
+## Migratieaanpak {#approach-to-migration}
 
 U kunt [upgrade](../../forms/using/upgrade.md) uitvoeren naar de nieuwste versie van AEM Forms 6.5 vanuit AEM Forms 6.4, 6.3 of 6.2 of een nieuwe installatie uitvoeren. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclusief het pakket Compatibiliteit met Correspondentiebeheer) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
 
 Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
 
@@ -52,7 +51,7 @@ Vervolgens moet u uw elementenpakket (zip of cmp) importeren in de nieuwe instal
 
 Als gevolg van wijzigingen in [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) worden de locaties van een paar mappen in crx-repository gewijzigd. Exporteer en importeer handmatig afhankelijkheden (aangepaste bibliotheken en elementen) van vorige installatie naar een nieuwe omgeving.
 
-## Lees deze voordat u doorgaat met de migratie {#prerequisites}
+## Lees deze voordat u verdergaat met de migratie {#prerequisites}
 
 Voor Correspondentenbeheermiddelen:
 
@@ -69,9 +68,9 @@ Voor Correspondentenbeheermiddelen:
 * Configuraties van de middelencomposer veranderen in Correspondence Management-configuraties.
 * Elementen worden onder mappen met namen als Bestaande tekst en Bestaande lijst geplaatst.
 
-## Het migratiehulpprogramma {#using-the-migration-utility} gebruiken
+## Het migratiehulpprogramma gebruiken {#using-the-migration-utility}
 
-### Het migratiehulpprogramma {#runningmigrationutility} uitvoeren
+### Het migratiehulpprogramma uitvoeren {#runningmigrationutility}
 
 Voer het migratiehulpprogramma uit voordat u wijzigingen aanbrengt in de elementen of elementen maakt. We raden u aan het hulpprogramma niet uit te voeren nadat u wijzigingen hebt aangebracht of elementen hebt gemaakt. Zorg ervoor dat de gebruikersinterface Correspondence Management of Adaptive Forms Assets niet is geopend tijdens het migratieproces.
 
@@ -203,4 +202,3 @@ Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudel
 
 1. Publiceer alle elementen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij op de instantie van de auteur en om de elementen in de instantie(s) voor publicatie bij te werken, moet u de elementen publiceren.
 1. In AEM Forms 6.4 en 6.5 zijn enkele rechten van de gebruikersgroepen gewijzigd. Als u wilt dat een van uw gebruikers XDP&#39;s en Adaptive Forms met scripts of code-editor kan uploaden, moet u ze toevoegen aan een gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen alleen code-editor gebruiken als ze deze aan de af-template-script-writers-groep toevoegen. Zie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md) voor instructies voor het toevoegen van gebruikers aan groepen.
-

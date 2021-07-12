@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
 
-
-# Formuliermetagegevens beheren{#manage-form-metadata}
+# Metagegevens van formulieren beheren{#manage-form-metadata}
 
 ## Overzicht  {#overview-nbsp}
 
@@ -175,7 +174,7 @@ Hieronder volgt een uitgebreide lijst met metagegevenseigenschappen die in AEM F
  </tbody> 
 </table>
 
-## Metagegevens van formulieren {#view-form-metadata} weergeven
+## Metagegevens van formulieren weergeven {#view-form-metadata}
 
 Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in de alleen-lezen modus. Deze metagegevens zijn afkomstig bij het uploaden van het formulier of het maken van het formulier.
 
@@ -205,11 +204,11 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
    * Het rechterdeelvenster bevat eigenschappen van metagegevens in de alleen-lezen modus, verdeeld over verschillende tabbladen.
 
 
-## Waarden voor metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
+## Waarden van metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
 
 U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor de eigenschap van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
 
-### Waarden van metagegevenseigenschappen {#update-metadata-property-values} bijwerken
+### Waarden voor metagegevenseigenschappen bijwerken {#update-metadata-property-values}
 
 1. Voer de stappen in de vorige sectie uit om de eigenschappenpagina te openen waarop bestaande metagegevens van het geselecteerde formulier kunnen worden weergegeven.
 
@@ -228,7 +227,7 @@ U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe
 
    Met beide handelingen wordt de gebruiker weer naar de alleen-lezen modus geleid van de eigenschappenpagina die de bijgewerkte waarden bevat.
 
-### De formulierminiatuur {#update-the-form-thumbnail} bijwerken
+### De miniatuur van het formulier bijwerken {#update-the-form-thumbnail}
 
 In het linkerdeelvenster op de pagina Eigenschappen wordt de miniatuur van het formulier weergegeven. Standaard wordt de miniatuur weergegeven die wordt gegenereerd bij het maken van het formulier (adaptief formulier) of bij het uploaden van het formulier.
 
@@ -253,7 +252,7 @@ Er is een hulpmiddel (de Editor voor het metagegevensschema) beschikbaar waarmee
 
 AEM Forms stelt de metagegevensschema&#39;s van de ondersteunde formuliertypen in dit gereedschap beschikbaar. Op deze manier hebt u toegang tot deze schema&#39;s en kunt u aangepaste eigenschappen toevoegen met gebruik van de functionaliteit in de editor voor het metagegevensschema.
 
-### Navigeren in de metagegevensschemaeditor {#navigate-the-metadata-schema-editor}
+### Navigeren door de editor voor het metagegevensschema {#navigate-the-metadata-schema-editor}
 
 1. Ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 

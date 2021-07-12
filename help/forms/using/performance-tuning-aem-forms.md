@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
-
 
 # Prestaties afstemmen van AEM Forms-server{#performance-tuning-of-aem-forms-server}
 
@@ -63,7 +62,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 >
 >De geadviseerde montages zijn voor Vensters 2008 R2 8 Kern en Oracle HotSpot 1.7 (met 64 bits) JDK en zouden omhoog of neer volgens uw systeemconfiguratie moeten worden vergroot.
 
-## Een webserver {#using-a-web-server} gebruiken
+## Een webserver gebruiken {#using-a-web-server}
 
 Adaptieve formulieren en HTML5-formulieren worden weergegeven in HTML5-indeling. De resulterende uitvoer kan groot zijn, afhankelijk van factoren zoals de formuliergrootte en afbeeldingen in het formulier. Om de gegevensoverdracht te optimaliseren, is de geadviseerde benadering de reactie van HTML te comprimeren gebruikend de Webserver waarvan het verzoek wordt gediend. Deze benadering vermindert de reactiegrootte, het netwerkverkeer, en de tijd die wordt vereist om gegevens tussen server en cliëntmachines te stromen.
 
@@ -141,7 +140,7 @@ Voeg volgende configuratie in `APACHE_HOME/conf/httpd.conf` configuratiedossier 
 
    Als u toegang wilt krijgen tot de crx-server, gebruikt u `https://'server':80`, waarbij `server` de naam is van de server waarop de Apache-server wordt uitgevoerd.
 
-## Een antivirus gebruiken op een server waarop AEM Forms {#using-an-antivirus-on-server-running-aem-forms} wordt uitgevoerd
+## Een antivirus gebruiken op een server waarop AEM Forms wordt uitgevoerd {#using-an-antivirus-on-server-running-aem-forms}
 
 U kunt trage prestaties ervaren op de servers die een antivirussoftware uitvoeren. Een programma dat altijd antivirussoftware gebruikt (voor scannen op toegang) scant alle bestanden van een systeem. Het kan de server vertragen en de prestaties van de AEM Forms worden beïnvloed.
 
@@ -175,6 +174,5 @@ Om de prestaties te verbeteren, kunt u de antivirussoftware zo instellen dat de 
 >* Als u een andere locatie voor GDS en een tijdelijke map gebruikt, opent u AdminUI op `https://'[server]:[port]'/adminui` en navigeert u naar **Home > Instellingen > Core System Settings > Core Configurations** om de gebruikte locatie te bevestigen.
 
 * Als de AEM Forms-server zelfs na het uitsluiten van de voorgestelde mappen traag werkt, sluit u het uitvoerbare bestand van Java (java.exe) ook uit.
-
 
 

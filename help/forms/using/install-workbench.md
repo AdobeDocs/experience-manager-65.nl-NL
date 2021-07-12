@@ -4,17 +4,16 @@ seo-title: Workbench installeren
 description: Installeren van werkbank.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
 
-
-# Workbench {#install-workbench} installeren
+# Workbench installeren {#install-workbench}
 
 Dit document bevat instructies voor het installeren en configureren van AEM Forms Workbench. Het installatieprogramma installeert ook Forms Designer.
 
@@ -54,7 +53,7 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
 >
 >De Flex-werkruimte is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
 
-## Voordat u {#before-you-install} installeert
+## Voordat u gaat installeren {#before-you-install}
 
 ### Overzicht van Workbench-installatie {#workbench-installation-overview}
 
@@ -132,11 +131,11 @@ Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar best
 1. Selecteer **Adobe Designer** in de lijst Momenteel geïnstalleerde programma&#39;s.
 1. Klik **Uninstall** en klik dan **Yes**.
 
-## Workbench {#installing-workbench} installeren
+## Workbench installeren {#installing-workbench}
 
 In dit hoofdstuk wordt beschreven hoe u Workbench kunt installeren.
 
-### Workbench {#installing-and-running-workbench} installeren en uitvoeren
+### Workbench installeren en uitvoeren {#installing-and-running-workbench}
 
 Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereiste software en hardware bevat om het uit te voeren (zie sectie: **Voordat u** installeert).
 
@@ -176,11 +175,11 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
    * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag-onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a> voor meer informatie.
    * **AEM Forms SDK**: Zie  <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a> voor meer informatie over het gebruik van de SDK.
 
-## Processen {#upgrading-processes} bijwerken
+## Processen upgraden {#upgrading-processes}
 
 AEM Forms on JEE-processen kunnen worden geüpgraded naar AEM Forms-toepassingen met de wizard Upgrade. Zie Informatie over verouderde artefacten bijwerken in Workbench Help voor meer informatie.
 
-### Aanmelden bij een server {#configuring-and-logging-server} configureren
+### Aanmelden bij een server configureren {#configuring-and-logging-server}
 
 Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
 
@@ -257,11 +256,11 @@ De volgende beste praktijken zullen ervoor zorgen dat het geheime voorgeheugen n
    * Strip UUID of ga zelfde UUID in alle dynamisch geproduceerde malplaatjes over.
    * Genereer het document op basis van sjabloonbytes of op basis van dezelfde bestandsnaam op de schijf.
 
-### Workbench {#uninstalling-workbench} verwijderen
+### Workbench verwijderen {#uninstalling-workbench}
 
 Gebruik de functie Software in het Configuratiescherm om het verwijderprogramma te starten. De Workbench- en Designer-toepassingen hebben aparte verwijderingsprogramma&#39;s.
 
-## AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor} configureren
+## AEM Forms XDC Editor configureren {#configuring-aem-forms-xdc-editor}
 
 Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML Forms Architecture Device Configuration) maken en wijzigen. XDC-bestanden beschrijven de mogelijkheden van printers, zoals de printertaal of de correlatie tussen papierformaat en ladelocatie.
 
@@ -274,4 +273,3 @@ Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u 
 **Voor de XDC Editor Help**:
 1. Ga naar de AEM Forms documentatiewebsite.
 1. Klik op het tabblad **Ontwikkelen** en navigeer naar Apparaatprofielen maken met de XDC Editor. Download het bestand xdc_editor_help_web.zip en installeer de Help-bestanden aan de hand van de instructies in het bestand Readme.
-

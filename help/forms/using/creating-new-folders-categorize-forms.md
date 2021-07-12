@@ -8,23 +8,22 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-
-# Nieuwe mappen maken om formulieren {#create-new-folders-to-categorize-forms} te categoriseren
+# Nieuwe mappen maken om formulieren te categoriseren {#create-new-folders-to-categorize-forms}
 
 U kunt uw elementen beter ordenen met behulp van mappen. Aangezien AEM Forms ondersteuning biedt voor verschillende typen elementen (formuliersjablonen, PDF&#39;s, documenten, bronnen en adaptieve formulieren, met verschillende metagegevens), kunt u mappen gebruiken om uw formulieren te categoriseren op basis van de gewenste criteria.
 
 Met AEM Forms kunt u de titel van een map wijzigen. De titel is niet gelijk aan de naam van het knooppunt waaronder de map is opgeslagen in de opslagplaats. In plaats daarvan blijft de titel behouden als metagegevens voor de map. Als u de titel van een map wijzigt, heeft dit geen invloed op het pad van de middelen in de map.
 
-## Een map {#create-a-folder} maken
+## Een map maken {#create-a-folder}
 
 U kunt op een van de volgende manieren een map maken in AEM Forms:
 
@@ -51,10 +50,9 @@ U kunt op een van de volgende manieren een map maken in AEM Forms:
 
    Als een map met de opgegeven naam bestaat, mislukt het verzenden met een fout. U kunt het foutbericht weergeven door de muisaanwijzer op het foutpictogram ![aem6forms_error_alert](assets/aem6forms_error_alert.png) naast het naamveld te plaatsen.
 
-### De maptitel {#edit-the-folder-title-br} bewerken
+### De maptitel bewerken {#edit-the-folder-title-br}
 
 1. Selecteer de map waarvan u de titel wilt bewerken.
 1. Klik op het pictogram ![aem6forms_edit](assets/aem6forms_edit.png) op de werkbalk.
 1. Voer de nieuwe titel in. Het tekstveld wordt vooraf gevuld met de huidige waarde van de maptitel. U kunt de waarde wijzigen in een nieuwe waarde.
 1. Klik op **[!UICONTROL Submit].**
-

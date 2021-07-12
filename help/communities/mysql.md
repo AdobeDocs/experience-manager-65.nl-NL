@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 2d33e6ba-cd32-40d1-8983-58f636b21470
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
 
-
-# MySQL Configuration for Enablement Features {#mysql-configuration-for-enablement-features}
+# MySQL-configuratie voor functies van Enablement {#mysql-configuration-for-enablement-features}
 
 MySQL is een relationele database die voornamelijk wordt gebruikt voor het bijhouden en rapporteren van SCORM-gegevens voor actiemiddelen. Ingesloten tabellen zijn tabellen voor andere functies, zoals het bijhouden van een pauze/resume.
 
@@ -36,11 +35,11 @@ Voordat u MySQL voor de functie enablement van Communities configureert, moet u
 * Installeer [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/).
 * Installeer het [SCORM-pakket](enablement.md#scorm) op alle AEM.
 
-## MySQL {#installing-mysql} installeren
+## MySQL installeren {#installing-mysql}
 
 MySQL moet worden gedownload en geïnstalleerd volgens de instructies voor het doel-besturingssysteem.
 
-### Tabelnamen van kleine letters {#lower-case-table-names}
+### Tabelnamen met kleine letters {#lower-case-table-names}
 
 Aangezien SQL niet hoofdlettergevoelig is, is het voor hoofdlettergevoelige besturingssystemen nodig om de instelling voor kleine letters in te voeren voor alle tabelnamen.
 
@@ -61,13 +60,13 @@ Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 * Voeg in de sectie `[client]` het volgende toe: `default-character-set=utf8`
 * Voeg in de sectie `[mysqld]` het volgende toe: `character-set-server=utf8`
 
-## MySQL Workbench {#installing-mysql-workbench} installeren
+## MySQL Workbench installeren {#installing-mysql-workbench}
 
 MySQL Workbench biedt een UI voor het uitvoeren van SQL-scripts die het schema en de initiële gegevens installeren.
 
 MySQL Workbench moet worden gedownload en geïnstalleerd volgens de instructies voor het doel-besturingssysteem.
 
-## Verbinding {#enablement-connection} inschakelen
+## Enablement Connection {#enablement-connection}
 
 Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere doeleinden wordt gebruikt, worden er nog geen verbindingen weergegeven:
 
@@ -89,7 +88,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 * De standaardpoort is `3306`.
 * De gekozen `Connection Name` wordt ingevoerd als `datasource` naam in [JDBC OSGi configuratie](#configure-jdbc-connections).
 
-#### Succesvolle verbinding {#successful-connection}
+#### Verbinding gelukt {#successful-connection}
 
 ![mysqlconnection1](assets/mysqlconnection1.png)
 
@@ -97,13 +96,13 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 ![mysqlconnection2](assets/mysqlconnection2.png)
 
-## Database-instelling {#database-setup}
+## Database instellen {#database-setup}
 
 Bij het openen van de nieuwe verbinding Enablement, merk op dat er een testschema en standaardgebruikersrekeningen zijn.
 
 ![database instellen](assets/database-setup.png)
 
-### SQL-scripts ophalen {#obtain-sql-scripts}
+### SQL-scripts verkrijgen {#obtain-sql-scripts}
 
 De SQL manuscripten worden verkregen gebruikend CRXDE Lite op de auteursinstantie. Het [SCORM-pakket](deploy-communities.md#scorm) moet worden geïnstalleerd:
 
@@ -121,7 +120,7 @@ Eén methode voor het downloaden van het schema is:
 * Merk op de waarde voor het `jcr:data` bezit een meningsverbinding is.
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan.
 
-### SCORM-database {#create-scorm-database} maken
+### SCORM-database maken {#create-scorm-database}
 
 De toe te voegen SCORM-database is:
 
@@ -139,10 +138,10 @@ Installeer het schema voordat u de gegevens installeert.
 >Als de databasenaam is gewijzigd, moet u deze correct opgeven in:
 >
 >* [JDBC-configuratie](#configure-jdbc-connections)
->* [SCORM-configuratie](#configure-scorm)
+* [SCORM-configuratie](#configure-scorm)
 
 
-#### Stap 1: SQL-bestand {#step-open-sql-file} openen
+#### Stap 1: SQL-bestand openen {#step-open-sql-file}
 
 In MySQL Workbench
 
@@ -199,7 +198,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
    * **[!UICONTROL Datasource name]**: Naam die u hebt ingevoerd voor de  [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &#39;enablement&#39;.
 * Selecteer **[!UICONTROL Save]**.
 
-## Muziek {#configure-scorm} configureren
+## Muziek configureren {#configure-scorm}
 
 ### AEM Communities ScormEngine-service {#aem-communities-scormengine-service}
 
@@ -230,7 +229,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
       Uitsluitend voor intern gebruik: Het is voor een speciale de dienstgebruiker die door AEM Communities wordt gebruikt om met de golfmotor te communiceren.
 * Selecteer **[!UICONTROL Save]**
 
-### Adobe graniet CSRF-filter {#adobe-granite-csrf-filter}
+### Adobe graniet-CSRF-filter {#adobe-granite-csrf-filter}
 
 Om ervoor te zorgen dat de cursussen in- en uitgeschakeld werken in alle browsers, moet Mozilla worden toegevoegd als een gebruikersagent die niet door het CSRF-filter wordt gecontroleerd.
 
@@ -245,4 +244,3 @@ Om ervoor te zorgen dat de cursussen in- en uitgeschakeld werken in alle browser
 * Selecteer het pictogram `[+]` om een Veilige Agent van de Gebruiker toe te voegen.
 * Voer `Mozilla/*` in.
 * Selecteer **[!UICONTROL Save]**.
-

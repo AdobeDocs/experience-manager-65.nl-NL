@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # Communityabonnementen {#communities-subscriptions}
 
@@ -59,7 +58,7 @@ De **Follow** knoop zal `Email Subscriptions` optie slechts omvatten wanneer een
 
 * Voor een specifiek bericht, zoals een forumonderwerp, een QnA-vraag of een blogartikel Er wordt een e-mail verzonden wanneer er activiteit is voor dat specifieke bericht.
 
-## Reageren via e-mail {#reply-by-email}
+## Reageren per e-mail {#reply-by-email}
 
 Als e-mail [geconfigureerd is voor het beantwoorden via e-mail](email.md#configure-polling-importer), ontvangt het lid dat zich heeft geabonneerd een e-mail met de geposte inhoud en een koppeling naar de online-inhoud.
 
@@ -70,4 +69,3 @@ Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord inv
 De hoeveelheid tijd die nodig is om een antwoord te verzenden, wordt bepaald door het update-interval van de [opiniepeilingimporteur](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)
-

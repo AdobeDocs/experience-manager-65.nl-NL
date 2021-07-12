@@ -11,17 +11,16 @@ content-type: reference
 discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1676'
 ht-degree: 0%
 
 ---
 
-
-# Console {#community-groups-console} voor groepen van gemeenschappen
+# Console van groepen Gemeenschap {#community-groups-console}
 
 De console van Groepen verleent toegang tot het creëren van communautaire groepen wanneer [malplaatjestructuur](/help/communities/sites-console.md#step1) [groepenfunctie](/help/communities/functions.md#groups-function) omvat.
 
@@ -73,7 +72,7 @@ De console Groepen openen:
 
 * Selecteer de **Create Group** knoop.
 
-### Stap 1: Communitygroepsjabloon {#step-community-group-template}
+### Stap 1: Template voor communautaire groep {#step-community-group-template}
 
 ![Meertalige groepen van gemeenschappen](assets/multi-lingual-group.png)
 
@@ -114,7 +113,7 @@ De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke lo
 
 ![communitygroepthema](assets/communitygrouptheme.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon op te maken, anders kan een Bootstrap-thema worden geüpload.
+Het framework gebruikt [Twitter Bootstrap {a1/> om een responsief, flexibel ontwerp op de site te brengen. ](https://twitterbootstrap.org/) Een van de vele vooraf geladen Bootstrap-thema&#39;s kan worden geselecteerd om de geselecteerde communitygroepsjabloon op te maken, anders kan een Bootstrap-thema worden geüpload.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -122,7 +121,7 @@ Het is mogelijk een thema te selecteren dat afwijkt van het thema van de bovenli
 
 Nadat de communitysite is gepubliceerd, is het mogelijk om de eigenschappen [te bewerken en een ander thema te selecteren.](#modifyinggroupproperties)
 
-### COMMUNAUTAIRE GROEPSVERDELING {#community-group-branding}
+### COMMUNAUTAIRE BRANDBOEK {#community-group-branding}
 
 ![gemeenschapsmerk](assets/community-group-branding.png)
 
@@ -189,7 +188,7 @@ Als er geen afbeelding wordt toegevoegd, wordt een standaardafbeelding weergegev
 
 ![miniatuurafbeelding](assets/thumbnail-image.png)
 
-### Stap 4: Groep {#step-create-group} maken
+### Stap 4: Groep maken {#step-create-group}
 
 ![community-create-group](assets/community-create-group.png)
 
@@ -205,7 +204,7 @@ Wanneer het proces is voltooid, wordt de kaart voor de nieuwe subcommunity-site 
 >
 >De groep wordt gecreeerd in alle talen, zoals gespecificeerd in [Stap 1: Template](/help/communities/groups.md#step-community-group-template) van de Groep van de Gemeenschap in de Extra Beschikbare Talen van de Groep van de Gemeenschap, in de console van de Groepen Gemeenschap van de respectieve communautaire plaatsen.
 
-## Inhoud auteurgroep {#author-group-content}
+## Inhoud groep auteurs {#author-group-content}
 
 ![open-site](assets/open-site.png)
 
@@ -221,7 +220,7 @@ De details van de volgende eigenschappen komen overeen met de beschrijvingen in 
 
 ![communautaristisch](assets/community-group-basic.png)
 
-### Basis {#modify-basic} wijzigen
+### Basis wijzigen {#modify-basic}
 
 Met het BASIC-deelvenster kunt u
 
@@ -234,7 +233,7 @@ Het kiezen van een verschillend malplaatje van de communautaire groep zou geen i
 
 In plaats daarvan kan de [STRUCTUUR](#modify-structure) van de subcommunity worden gewijzigd.
 
-### Structuur {#modify-structure} wijzigen
+### Structuur wijzigen {#modify-structure}
 
 Met het deelvenster STRUCTUUR kunt u de structuur wijzigen die u aanvankelijk hebt gemaakt op basis van de sjabloon voor een groep met gemeenschappen die u hebt geselecteerd bij het maken van de subcommunity-site vanuit de auteur- of publicatieomgeving. Vanuit het deelvenster kunt u het volgende doen:
 
@@ -266,7 +265,7 @@ Wijzig de volgorde van de functies die wordt weergegeven op de navigatiebalk op 
 
 ![community-group-add-agenda](assets/community-group-add-calendar.png)
 
-### Ontwerp {#modify-design} wijzigen
+### Ontwerp wijzigen {#modify-design}
 
 In het deelvenster ONTWERP kunt u het thema wijzigen:
 
@@ -275,19 +274,19 @@ In het deelvenster ONTWERP kunt u het thema wijzigen:
 
    * Schuif naar de onderkant van het deelvenster om de afbeelding van het merk te wijzigen.
 
-### Instellingen {#modify-settings} wijzigen
+### Instellingen wijzigen {#modify-settings}
 
 Met het deelvenster INSTELLINGEN kunt u community [moderators](#moderation) toevoegen.
 
-### Lidmaatschap {#modify-membership} wijzigen
+### Lidmaatschap wijzigen {#modify-membership}
 
 Het deelvenster [LIDMAATSCHAP](#membership) is alleen ter informatie. Het is niet mogelijk om het type groepslidmaatschap dat is ingesteld, te wijzigen, ongeacht of het optioneel, vereist of beperkt is.
 
-### Miniatuur {#modify-thumbnail} wijzigen
+### Miniatuur wijzigen {#modify-thumbnail}
 
 Met het deelvenster [MINIATUUR](#thumbnail) kan een afbeelding worden geüpload om de community-groep weer te geven voor sitebezoekers in de publicatieomgeving en in de console Groepen van de Communitysite in de auteuromgeving.
 
-## De groep {#publish-the-group} publiceren
+## De groep publiceren {#publish-the-group}
 
 ![publicatiesite](assets/publish-site.png)
 
@@ -303,7 +302,7 @@ Zodra de groep met succes wordt gepubliceerd, zal een bericht verschijnen:
 >
 >De site van de community en geneste groepen moeten van boven naar beneden worden gepubliceerd.
 
-## De groep {#delete-the-group} verwijderen
+## De groep verwijderen {#delete-the-group}
 
 ![verwijderpictogram](assets/deleteicon.png)
 

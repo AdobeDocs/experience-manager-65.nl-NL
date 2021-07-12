@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
-
-# Het vormen AEM montages DS{#configuring-aem-ds-settings}
+# AEM DS-instellingen configureren{#configuring-aem-ds-settings}
 
 In dit artikel wordt beschreven hoe u **AEM DS Settings Service** configureert. Deze instelling kan in meerdere scenario&#39;s worden gebruikt, bijvoorbeeld:
 
@@ -59,5 +58,6 @@ Hier volgen de stappen voor het configureren van **[!UICONTROL AEM DS Settings]*
    >    
    >    
    >    * Voordat u Forms- of AEM-workflows gebruikt, moet u de service voor DS-instellingen configureren voordat u gegevens van de publicatieserver verzendt. Anders zal de indiening van het formulier mislukken.
+
 
 

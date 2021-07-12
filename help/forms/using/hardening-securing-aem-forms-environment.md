@@ -6,17 +6,16 @@ seo-description: Leer aanbevelingen en beste praktijken voor het beveiligen van 
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
 
-
-# Verharden en beveiligen van AEM formulieren in OSGi-omgeving {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Verharden en beveiligen van AEM formulieren op OSGi-omgeving {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Leer aanbevelingen en beste praktijken voor het beveiligen van AEM Forms op server OSGi.
 
@@ -39,11 +38,11 @@ AEM Forms is zeer aanpasbaar en kan in veel verschillende omgevingen werken. Som
 
 De kwetsbaarheid van de laagveiligheid van het vervoer is onder de eerste bedreigingen aan om het even welke Internet-Onder ogen ziet of intranet-Onder ogen ziet toepassingsserver. Deze sectie beschrijft het proces om gastheren op het netwerk tegen deze kwetsbaarheid te verharden. Het richt netwerksegmentatie, de stapelverharding van het Protocol van de Controle van de Transmissie/van Internet-protocol (TCP/IP), en het gebruik van firewalls voor gastheerbescherming.
 
-### Open eindpunten beperken {#limit-open-endpoints}
+### Open eindpunten beperken  {#limit-open-endpoints}
 
 Een organisatie kan een externe firewall hebben om toegang tussen een eindgebruiker en AEM Forms te beperken publiceer Farm. De organisatie kan een interne firewall ook hebben om toegang tussen te beperken publiceer landbouwbedrijf en andere binnen organisatieelementen (bijvoorbeeld, auteursinstantie, verwerkingsinstantie, gegevensbestanden). firewalls toestaan toegang tot een beperkt aantal AEM Forms URL&#39;s voor eindgebruikers en binnen organisaties toe te staan:
 
-#### Externe firewall {#configure-external-firewall} configureren
+#### Externe firewall configureren  {#configure-external-firewall}
 
 U kunt een externe firewall zo configureren dat bepaalde AEM Forms-URL&#39;s toegang hebben tot internet. U hebt toegang tot deze URL&#39;s nodig als u een adaptief formulier, HTML5, letter voor correspondentiebeheer of als u zich wilt aanmelden bij een AEM Forms-server:
 
@@ -97,7 +96,7 @@ U kunt een externe firewall zo configureren dat bepaalde AEM Forms-URL&#39;s toe
  </tbody>
 </table>
 
-#### Interne firewall {#configure-internal-firewall} configureren
+#### Interne firewall configureren  {#configure-internal-firewall}
 
 U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoorbeeld, auteursinstantie, verwerkingsinstantie, gegevensbestanden) toe te staan om met te communiceren publiceer landbouwbedrijf en andere interne componenten die in het topologiediagram worden vermeld:
 
@@ -122,7 +121,7 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
  </tbody>
 </table>
 
-#### Machtigingen als opslagplaats instellen en toegangslijsten (ACL&#39;s) {#setup-repository-permissions-and-access-control-lists-acls}
+#### Machtigingen van de bewaarplaats van de opstelling en toegangsbeheerlijsten (ACLs) {#setup-repository-permissions-and-access-control-lists-acls}
 
 Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de elementen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
 
@@ -130,17 +129,17 @@ Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iederee
 * /etc.clientlibs/fd/&amp;ast;
 * /libs/fd/&amp;ast;
 
-## Formuliergegevens veilig verwerken {#securely-handle-forms-data}
+## Formuliergegevens veilig verwerken  {#securely-handle-forms-data}
 
 AEM Forms slaat gegevens op vooraf gedefinieerde locaties en tijdelijke mappen op. U moet de gegevens beveiligen om onbevoegd gebruik te voorkomen.
 
-### Periodieke opschoning van tijdelijke map {#setup-periodic-cleanup-of-temporary-folder} instellen
+### Periodieke opschoning van tijdelijke map instellen {#setup-periodic-cleanup-of-temporary-folder}
 
 Wanneer u formulieren configureert voor bestandsbijlagen, controleert u of voorbeeldcomponenten, worden de bijbehorende gegevens opgeslagen op de publicatieknooppunten op /tmp/fd/. De gegevens worden periodiek gewist. U kunt de standaardtaak voor het wissen van gegevens wijzigen en deze agressiever maken. Als u de taak die is gepland voor het wissen van gegevens wilt wijzigen, opent u AEM webconsole, opent u de tijdelijke taak voor het opschonen van opslagruimte van AEM Forms en wijzigt u de expressie voor uitsnijden.
 
 In de bovenstaande scenario&#39;s worden de gegevens alleen opgeslagen voor geverifieerde gebruikers. Bovendien wordt het gegeven beschermd met toegangsbeheerlijsten (ACLs). Het wijzigen van de gegevenswissing is dus een extra stap om informatie te beveiligen.
 
-### Beveiligde gegevens opgeslagen door verzendactie {#secure-data-saved-by-forms-portal-submit-action} van formulierportal
+### Beveiligde gegevens opgeslagen door verzendactie van formulierportal {#secure-data-saved-by-forms-portal-submit-action}
 
 Standaard slaat de verzendactie van een portal Formulieren met aangepaste formulieren gegevens op in de lokale opslagplaats van het publicatieknooppunt. De gegevens worden opgeslagen op /content/forms/fp. **Het wordt afgeraden gegevens op te slaan in een publicatie-instantie.**
 
@@ -148,7 +147,7 @@ U kunt de opslagdienst vormen om over-de-draad naar de verwerkingscluster te ver
 
 Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Het wordt aanbevolen referenties te gebruiken van een niet-administratieve gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie [Opslagservices configureren voor concepten en verzendingen](/help/forms/using/configuring-draft-submission-storage.md) voor meer informatie.
 
-### Beveiligde gegevens die worden verwerkt door het formuliergegevensmodel (FDM) {#secure-data-handled-by-form-data-model-fdm}
+### Beveiligde gegevens die worden verwerkt door FDM (Form Data Model) {#secure-data-handled-by-form-data-model-fdm}
 
 Gebruik gebruikersaccounts met minimaal vereiste rechten om gegevensbronnen voor het formuliergegevensmodel (FDM) te configureren. Het gebruik van een beheeraccount kan onbevoegde gebruikers toegang bieden tot metagegevens en schema-entiteiten.\
 De integratie van gegevens verstrekt ook methodes om FDM de dienstverzoeken toe te laten. U kunt machtigingsmechanismen vóór en na uitvoering invoegen om een aanvraag te valideren. De serviceaanvragen worden gegenereerd tijdens het vooraf invullen van een formulier, het verzenden van een formulier en het aanroepen van services via een regel.
@@ -193,10 +192,10 @@ Voor auteur-, publicatie- en verwerkingsinstanties is een andere set met gebruik
 
 Over het algemeen worden verwerkingsclusters en de invoegtoepassing Forms Workflow (AEM Forms on JEE) achter een firewall uitgevoerd. Deze zijn dus veilig. U kunt nog steeds een paar stappen uitvoeren om deze omgevingen te beschadigen:
 
-### Beveiligde verwerkingscluster {#secure-processing-cluster}
+### Veilig verwerkingscluster {#secure-processing-cluster}
 
 Een verwerkingscluster wordt uitgevoerd in de auteursmodus, maar gebruikt deze niet voor ontwikkelingsactiviteiten. Sta niet toe dat een normale gebruiker wordt opgenomen in de groepen van inhoudsauteurs en gebruikers van formulieren in een verwerkingscluster.
 
-### Gebruik AEM beste praktijken om een milieu van AEM Forms {#use-aem-best-practices-to-secure-an-aem-forms-environment} te beveiligen
+### Gebruik AEM beste praktijken om een milieu van AEM Forms te beveiligen {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
 Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Zie [AEM Beveiligingschecklist](/help/sites-administering/security-checklist.md) documentatie voor gedetailleerde instructies.

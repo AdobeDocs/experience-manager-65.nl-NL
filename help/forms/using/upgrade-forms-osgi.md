@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
 
-
-# Upgrade naar AEM 6.5 Forms op OSGi {#upgrade-to-aem-forms-osgi}
+# Upgrade naar AEM 6,5 Forms op OSGi {#upgrade-to-aem-forms-osgi}
 
 U kunt een directe upgrade uitvoeren van AEM 6.3 Forms of AEM 6.4 Forms naar AEM 6.5 Forms.
 
@@ -110,4 +109,3 @@ Ga als volgt te werk om een upgrade uit te voeren van AEM 6.3 Forms of AEM 6.4 F
 
    >[!NOTE]
    In AEM 6.4 Forms is de structuur van crx-repository veranderd. Als u een upgrade uitvoert van 6.3 Forms naar AEM 6.5 Forms, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Zie [Herstructurering van de opslagplaats van Forms in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md) voor de volledige lijst met gewijzigde paden.
-

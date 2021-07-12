@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
@@ -74,13 +73,13 @@ Na het voorleggen van de configuratie, test de verbinding:
 
 * Zorg ervoor dat de site-URL&#39;s voor profielgegevens vanuit het datacenter kunnen worden gerouteerd door koppelingen [extern te maken](#externalize-links).
 
-### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
+### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutels worden alleen correct gecodeerd/gedecodeerd als de primaire Crypto-sleutel van Granite op alle AEM gelijk is.
 
 Volg de instructies bij [Repliceer Crypto Key](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
-### Koppelingen {#externalize-links} extern maken
+### Koppelingen extern maken {#externalize-links}
 
 Voor correcte profiel en de verbindingen van het profielbeeld, ben zeker om [te vormen de Verbinding Externalzer](/help/sites-developing/externalizer.md).
 
@@ -90,7 +89,7 @@ Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van
 
 Opdat de authentificatie met het eindpunt van ASRP succesvol is, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met [het Protocol van de Tijd van het Netwerk (NTP)](https://www.ntp.org/).
 
-### De configuratie {#publishing-the-configuration} publiceren
+### De configuratie publiceren {#publishing-the-configuration}
 
 ASRP moet als gemeenschappelijke opslag op alle auteur en publiceer instanties worden geïdentificeerd.
 
@@ -104,7 +103,7 @@ Instantie van AEM-auteur:
 * Deselecteer **Alleen Gewijzigd**
 * Selecteer **Activeren**
 
-## Bijwerken vanaf AEM 6.0 {#upgrading-from-aem}
+## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 
 >[!CAUTION]
 >
@@ -114,7 +113,7 @@ Instantie van AEM-auteur:
 
 Vanwege de nieuwe opslagstructuur is het nodig om de [upgrade](/help/communities/upgrade.md#adobe-cloud-storage) instructies te volgen wanneer u een upgrade uitvoert van sociale gemeenschappen naar Gemeenschappen.
 
-## Gebruikersgegevens {#managing-user-data} beheren
+## Gebruikersgegevens beheren {#managing-user-data}
 
 Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*, vaak ingevoerd in de publicatieomgeving, gaat u naar
 
@@ -149,4 +148,3 @@ In JCR, als [/conf/global/settings/Communities](https://localhost:4502/crx/de/in
 
 * Bevat geen [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) knoop, het betekent dat de opslagleverancier JSRP is.
 * Als de srpc knoop bestaat en [default configuration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) knoop bevat, bepalen de eigenschappen van de standaardconfiguratie ASRP om de standaardleverancier te zijn.
-

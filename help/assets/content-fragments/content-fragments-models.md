@@ -9,22 +9,21 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '755'
 ht-degree: 20%
 
 ---
-
 
 # Modellen van contentfragmenten{#content-fragment-models}
 
 Met Inhoudsfragmentmodellen wordt de inhoudsstructuur gedefinieerd voor uw [inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md).
 
-## Modellen van inhoudsfragmenten {#enable-content-fragment-models} inschakelen
+## Modellen van inhoudsfragmenten inschakelen {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -56,7 +55,7 @@ Om [een nieuw Model van het Fragment van de Inhoud te creëren ](#creating-a-con
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Pas de Configuratie op uw Omslag van Activa {#apply-the-configuration-to-your-assets-folder} toe
+### De configuratie toepassen op de middelenmap {#apply-the-configuration-to-your-assets-folder}
 
 Wanneer de configuratie **global** is ingeschakeld voor modellen van inhoudsfragmenten, kunnen modellen die gebruikers maken, worden gebruikt in elke map Middelen.
 
@@ -78,7 +77,7 @@ Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met
 
 1. Gebruik **Maken** om het lege model op te slaan. Een bericht zal op het succes van de actie wijzen, kunt u **Open** selecteren om het model onmiddellijk uit te geven, of **Done** om aan de console terug te keren.
 
-## Het inhoudsfragmentmodel {#defining-your-content-fragment-model} definiëren
+## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
 Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende inhoudsfragmenten. Gebruikend de modelredacteur kunt u, de vereiste gebieden toevoegen en vormen:
 
@@ -133,7 +132,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
-## Een inhoudsfragmentmodel {#deleting-a-content-fragment-model} verwijderen
+## Een inhoudsfragmentmodel verwijderen {#deleting-a-content-fragment-model}
 
 >[!CAUTION]
 Het verwijderen van een inhoudsfragmentmodel kan invloed hebben op afhankelijke fragmenten.
@@ -148,7 +147,7 @@ Een inhoudsfragmentmodel verwijderen:
    >[!NOTE]
    Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
 
-## Een inhoudsfragmentmodel {#publishing-a-content-fragment-model} publiceren
+## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
 Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke inhoudsfragmenten worden gepubliceerd.
 
@@ -161,4 +160,3 @@ Een fragmentmodel voor inhoud publiceren:
 
    >[!NOTE]
    Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
-

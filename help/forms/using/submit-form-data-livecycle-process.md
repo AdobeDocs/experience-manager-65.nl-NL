@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
-
-# AEM Forms configureren om formuliergegevens via JEE-proces naar een AEM Forms te verzenden{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
+# AEM Forms configureren voor het verzenden van formuliergegevens naar een AEM Forms tijdens JEE-proces{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}
 
 Adaptieve formulieren ondersteunen het verzenden van gegevens naar een AEM Forms on JEE-proces voor verdere verwerking. Hiermee kunt u een AEM Forms op JEE-proces activeren met de gegevens die beschikbaar zijn in het verzonden formulier. Voer de volgende stappen uit om uw AEM Forms-exemplaar in staat te stellen een adaptief formulier naar AEM Forms te verzenden bij JEE-proces:
 
-## Uw AEM Forms-server {#configure-your-aem-forms-server} configureren
+## AEM Forms-server configureren {#configure-your-aem-forms-server}
 
 Voer de volgende stappen uit om uw AEM formulierserver in staat te stellen gegevens naar een AEM Forms op de JEE-server te verzenden:
 
@@ -35,7 +34,7 @@ Voer de volgende stappen uit om uw AEM formulierserver in staat te stellen gegev
 
 ![Adobe LiveCycle Client SDK-configuratie](assets/clientsdkconfiguration.jpg)
 
-## Gegevens toewijzen met procesvelden {#map-data-with-process-fields}
+## Gegevens toewijzen aan procesvelden {#map-data-with-process-fields}
 
 Nadat uw AEM Forms is geconfigureerd, wijst u de XML-gegevens en bijlagen van het verzonden formulier toe aan de velden in het AEM Forms on JEE-proces. Dit doet u als volgt:
 

@@ -8,15 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Desktop-app AEM voor AEM Forms {#aem-desktop-app-for-aem-forms}
 
@@ -44,4 +43,3 @@ AEM desktop App gebruikt WebDAV-protocol in Microsoft Windows en SMB1 in Mac OS 
 1. Open de toepassing en maak verbinding met de AEM Forms-server.
 
    Bij een geslaagde verbinding worden de mappen `content/dam` en `content/dam/formsanddocuments` ingevuld. U kunt de app gebruiken om bestanden van de bovenliggende mappen naar lokale mappen te verplaatsen en omgekeerd, en om inhoud tussen automatisch gevulde mappen te verplaatsen.
-

@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
 
-
-# Door gebruiker gegenereerde inhoud omzetten {#translating-user-generated-content}
+# Door gebruiker gegenereerde inhoud vertalen {#translating-user-generated-content}
 
 De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (Social Component Framework)](scf.md) naar communitysites wordt gepost.
 
@@ -53,7 +52,7 @@ Wanneer [een communitysite maakt](sites-console.md), wordt de standaardvertaalse
 >
 >Voor een productiesysteem is een vertaaldienst met licentie vereist. Als er geen licentie is, moet de standaardvertaalservice [uitgeschakeld zijn](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
 
-## Globale omzetting van UGC {#global-translation-of-ugc}
+## Wereldwijde omzetting van UGC {#global-translation-of-ugc}
 
 Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md) heeft, herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd gerelateerd kan zijn aan UGC die op een andere site is ingevoerd, zoals wanneer de UGC in feite wordt gegenereerd door dezelfde component (de taalkopie van de pagina die de component bevat).
 
@@ -136,7 +135,7 @@ Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard i
 
 De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publicatieomgeving. Als de activeringsworkflow nog niet is geactiveerd en aan een website is gekoppeld, wordt gevraagd om deze cloudserviceconfiguratie te publiceren wanneer de pagina wordt gepubliceerd waaraan deze is gekoppeld.
 
-## Vertaalinstellingen {#managing-translation-settings} beheren
+## Vertaalinstellingen beheren {#managing-translation-settings}
 
 >[!NOTE]
 >
@@ -160,6 +159,6 @@ Wanneer de pagina&#39;s automatisch in de aangewezen taal van de gebruiker worde
 
 ![gebruikersprofiel](assets/translation-integration4.png)
 
-### Instelling {#community-site-setting} voor community-site
+### Site-instelling van community {#community-site-setting}
 
 Wanneer een communautaire Plaats wordt gecreeerd, kan de vertaaloptie worden toegelaten en worden gevormd. De vertaalinstelling is van kracht voor inhoud die anonieme sitebezoekers kunnen bekijken, maar wordt overschreven door de profielinstelling van de gebruiker.

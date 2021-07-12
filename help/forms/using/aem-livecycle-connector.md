@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms verbinden met Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
@@ -45,7 +44,7 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 * **Wachtwoord** - Geeft het wachtwoord op.
 * **De Naam**  van de dienst - specificeert de diensten die gebruikend de gebruikersgeloofsbrieven worden begonnen die in de gebieden van de Gebruikersnaam en van het Wachtwoord worden verstrekt. Standaard worden geen referenties doorgegeven bij het starten van LiveCycle-services.
 
-## Documentservices {#starting-document-services} starten
+## Documentservices starten {#starting-document-services}
 
 De toepassingen van de cliënt kunnen de diensten van LiveCycle programmatically beginnen gebruikend Java API, de Diensten van het Web, Remoting, en REST. Voor Java-clients kan de toepassing LiveCycle SDK gebruiken. De LiveCycle SDK biedt een Java API waarmee deze services op afstand kunnen worden gestart. Als u bijvoorbeeld een Microsoft Word-document naar PDF wilt converteren, start de client GeneratePDFService. De aanroepingsstroom bestaat uit de volgende stappen:
 
@@ -59,7 +58,7 @@ AEM de Schakelaar van de LiveCycle vereenvoudigt de stroom door deze cliëntinst
 * Doorgave gebruikersreferenties: De verbindingsgegevens die nodig zijn om verbinding te maken met de LiveCycle-server worden centraal beheerd.
 * ServiceClientFactory Service: Om de processen te beginnen, kan de cliënttoepassing tot de instantie toegang hebben ServiceClientFactory.
 
-### Starten via verwijzingen naar service vanuit het OSGi Service Registry {#starting-via-service-references-from-osgi-service-registry}
+### Beginnend via de Verwijzingen van de Dienst van OSGi Registratie van de Dienst {#starting-via-service-references-from-osgi-service-registry}
 
 Om de blootgestelde dienst van binnen AEM te beginnen, voer de volgende stappen uit:
 
@@ -153,11 +152,11 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 ...
 ```
 
-## RunAs-ondersteuning {#runas-support}
+## Ondersteuning voor RunAs {#runas-support}
 
 Bijna elke Document Service in LiveCycle vereist authentificatie. U kunt om het even welke volgende opties gebruiken om deze diensten te beginnen zonder expliciete geloofsbrieven in de code te verstrekken:
 
-### Configuratie van Lijst van gewenste personen {#allowlist-configuration}
+### Configuratie Lijst van gewenste personen {#allowlist-configuration}
 
 De configuratie van SDK van de Cliënt van LiveCycle bevat het plaatsen over de dienstnamen. Deze configuratie is een lijst van de diensten waarvoor de aanroepingslogica uit de doos beheerderreferentie gebruikt. Bijvoorbeeld, als u de diensten DirectoryManager (deel van het Beheer van de Gebruiker API) aan deze lijst toevoegt, kan om het even welke cliëntcode de dienst en de aanroepingslaag direct gebruiken automatisch op de gevormde geloofsbrieven als deel van het verzoek overgaan dat naar de server van LiveCycle wordt verzonden
 
@@ -193,7 +192,7 @@ List<Component> components = runAsManager.doPrivileged(new PrivilegedAction<List
 },credential);
 ```
 
-### InvocationRequest-eigenschap {#invocationrequest-property}
+### InvocationRequest, eigenschap {#invocationrequest-property}
 
 Als u een proces roept of direct gebruik maakt van de klasse ServiceClientFactory en een InvocationRequest creeert, kunt u een bezit specificeren om erop te wijzen dat de aanroepingslaag gevormde geloofsbrieven zou moeten gebruiken.
 
@@ -214,9 +213,9 @@ ir.setProperty(InvocationProperties.INVOKER_TYPE,InvocationProperties.INVOKER_TY
 InvocationResponse response = serviceClientFactory.getServiceClient().invoke(ir);
 ```
 
-## Lijst Document Services {#document-services-list}
+## Lijst met Document Services {#document-services-list}
 
-### Adobe LiveCycle client SDK API-bundel {#adobe-livecycle-client-sdk-api-bundle}
+### Adobe LiveCycle Client SDK API-bundel {#adobe-livecycle-client-sdk-api-bundle}
 
 De volgende services zijn beschikbaar:
 
@@ -226,7 +225,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.idp.dsc.registry.service.ServiceRegistry
 * com.adobe.idp.dsc.registry.component.ComponentRegistry
 
-#### Gemaakte afhankelijkheden {#maven-dependencies}
+#### Geweven afhankelijkheden {#maven-dependencies}
 
 ```xml
 <dependency>
@@ -241,14 +240,14 @@ De volgende services zijn beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle client SDK-bundel {#adobe-livecycle-client-sdk-bundle}
+### Adobe LiveCycle Client SDK-bundel {#adobe-livecycle-client-sdk-bundle}
 
 De volgende services zijn beschikbaar:
 
 * com.adobe.livecycle.dsc.clientsdk.security.RunAsManager
 * com.adobe.livecycle.dsc.clientsdk.ServiceClientFactoryProvider
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-1}
+#### Geweven afhankelijkheden {#maven-dependencies-1}
 
 ```xml
 <dependency>
@@ -258,7 +257,7 @@ De volgende services zijn beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle TaskManager Client bundle {#adobe-livecycle-taskmanager-client-bundle}
+### Adobe LiveCycle TaskManager Client-bundel {#adobe-livecycle-taskmanager-client-bundle}
 
 De volgende services zijn beschikbaar:
 
@@ -269,7 +268,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.idp.taskmanager.dsc.client.endpoint.TaskManagerEndpointClient
 * com.adobe.idp.taskmanager.dsc.client.userlist.UserlistService
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-2}
+#### Geweven afhankelijkheden {#maven-dependencies-2}
 
 ```xml
 <dependency>
@@ -285,7 +284,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.idp.workflow.client.WorkflowServiceClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-3}
+#### Geweven afhankelijkheden {#maven-dependencies-3}
 
 ```xml
 <dependency>
@@ -301,7 +300,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-4}
+#### Geweven afhankelijkheden {#maven-dependencies-4}
 
 ```xml
 <dependency>
@@ -311,7 +310,7 @@ De volgende service is beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Application Manager Client-bundel {#adobe-livecycle-application-manager-client-bundle}
+### Adobe LiveCycle Application Manager-clientbundel {#adobe-livecycle-application-manager-client-bundle}
 
 De volgende services zijn beschikbaar:
 
@@ -319,7 +318,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.livecycle.applicationmanager.client.ApplicationManager
 * com.adobe.livecycle.design.service.DesigntimeService
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-5}
+#### Geweven afhankelijkheden {#maven-dependencies-5}
 
 ```xml
 <dependency>
@@ -335,7 +334,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.livecycle.assembler.client.AssemblerServiceClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-6}
+#### Geweven afhankelijkheden {#maven-dependencies-6}
 
 ```xml
 <dependency>
@@ -345,13 +344,13 @@ De volgende service is beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle-clientbundel voor de integratie van formuliergegevens {#adobe-livecycle-form-data-integration-client-bundle}
+### Adobe LiveCycle Form Data Integration Client-bundel {#adobe-livecycle-form-data-integration-client-bundle}
 
 De volgende service is beschikbaar:
 
 * com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-7}
+#### Geweven afhankelijkheden {#maven-dependencies-7}
 
 ```xml
 <dependency>
@@ -367,7 +366,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.livecycle.formsservice.client.FormsServiceClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-8}
+#### Geweven afhankelijkheden {#maven-dependencies-8}
 
 ```xml
 <dependency>
@@ -383,7 +382,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.livecycle.output.client.OutputClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-9}
+#### Geweven afhankelijkheden {#maven-dependencies-9}
 
 ```xml
 <dependency>
@@ -399,7 +398,7 @@ De volgende service is beschikbaar:
 
 * com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-10}
+#### Geweven afhankelijkheden {#maven-dependencies-10}
 
 ```xml
 <dependency>
@@ -421,7 +420,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.livecycle.rightsmanagement.client.PolicyManager
 * com.adobe.livecycle.rightsmanagement.client.AbstractPolicyManager
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-11}
+#### Geweven afhankelijkheden {#maven-dependencies-11}
 
 ```xml
 <dependency>
@@ -431,13 +430,13 @@ De volgende services zijn beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Signatures Client bundle {#adobe-livecycle-signatures-client-bundle}
+### Adobe LiveCycle Signatures-clientbundel {#adobe-livecycle-signatures-client-bundle}
 
 De volgende service is beschikbaar:
 
 * com.adobe.livecycle.signatures.client.SignatureServiceClientInterface
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-12}
+#### Geweven afhankelijkheden {#maven-dependencies-12}
 
 ```xml
 <dependency>
@@ -456,7 +455,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.truststore.dsc.CredentialService
 * com.adobe.truststore.dsc.CertificateService
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-13}
+#### Geweven afhankelijkheden {#maven-dependencies-13}
 
 ```xml
 <dependency>
@@ -473,7 +472,7 @@ De volgende services zijn beschikbaar:
 * com.adobe.repository.bindings.ResourceRepository
 * com.adobe.repository.bindings.ResourceSynchronizer
 
-#### Gemaakte afhankelijkheden {#maven-dependencies-14}
+#### Geweven afhankelijkheden {#maven-dependencies-14}
 
 ```xml
 <dependency>

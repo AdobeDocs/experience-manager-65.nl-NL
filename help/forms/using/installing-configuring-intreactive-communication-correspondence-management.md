@@ -7,15 +7,14 @@ uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
 discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
-
 
 # Interactieve communicatie installeren en configureren{#install-and-configure-interactive-communications}
 
@@ -105,13 +104,13 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand  [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
-## Configuratie {#post-installation-configurations} na installatie
+## Configuratie na installatie {#post-installation-configurations}
 
 AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
-#### RSA- en BouncyCastle-bibliotheken configureren {#configure-rsa-and-bouncycastle-libraries}
+#### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
 Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
@@ -138,9 +137,9 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 1. Voeg het pakket **sun.util.agenda** toe aan het **veld lijst van gewenste personen**. Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
-### Optionele configuraties {#optional-post-installation-configurations} na installatie
+### Optionele configuraties na installatie {#optional-post-installation-configurations}
 
-#### Compatibiliteitspakket {#install-compatibility-package} installeren
+#### Compatibiliteitspakket installeren {#install-compatibility-package}
 
 De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.5 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u het [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
@@ -151,7 +150,7 @@ Met het compatibiliteitspakket voor AEMFD kunt u de volgende middelen gebruiken 
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
-#### Dispatcher {#configure-dispatcher} configureren
+#### Dispatcher configureren {#configure-dispatcher}
 
 Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
@@ -167,13 +166,13 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverd
 
    Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. Selecteer in het menu **Configuraties** de optie **Apache-schuifverwijzaarfilter**. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de vermelding is https://&#39;[server]:[port]&#39;.
 
-#### Adobe Target {#integrate-adobe-target} integreren
+#### Adobe Target integreren {#integrate-adobe-target}
 
 Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
 AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Als u Adobe Target wilt gebruiken om een interactieve communicatie aan te passen, [Integreer Adobe Target met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### SSL-communicatie configureren voor formuliergegevensmodel {#configure-ssl-communcation-for-form-data-model}
+#### SSL-communicatie configureren voor formuliergegevensmodel  {#configure-ssl-communcation-for-form-data-model}
 
 U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-communicatie wilt inschakelen voor het formuliergegevensmodel, voegt u certificaten toe aan het Java Trust Store van alle exemplaren voordat u een AEM Forms-exemplaar start. U kunt de onderstaande opdracht uitvoeren om de certificaten toe te voegen:
 
@@ -188,4 +187,3 @@ U hebt een omgeving geconfigureerd voor het gebruik van de mogelijkheden voor in
 * [Een interactieve communicatie maken](../../forms/using/create-interactive-communication.md)
 
 * [Een brief voor correspondentiebeheer maken](../../forms/using/create-letter.md)
-

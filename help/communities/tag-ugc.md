@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
-
-# Door gebruiker gegenereerde inhoud {#tagging-user-generated-content} labelen
+# Door gebruiker gegenereerde inhoud labelen {#tagging-user-generated-content}
 
 ## Overzicht {#overview}
 
@@ -29,7 +28,7 @@ Codes worden doorgaans toegepast door auteurs en beheerders in de auteursomgevin
 
 De tagnaamruimten en taxonomieën zijn voor beide toepassingen hetzelfde.
 
-## Functies {#communities-features} van Gemeenschappen
+## Functies van Gemeenschappen {#communities-features}
 
 De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staan, zijn:
 
@@ -39,7 +38,7 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 * [Forum](forum.md#configuretheaddedforum)
 * [Vragen en antwoorden](working-with-qna.md)
 
-## Labels {#administering-tags} beheren
+## Tags beheren {#administering-tags}
 
 Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
 
@@ -58,4 +57,3 @@ Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-t
 Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members`.
 
 ![tagmachtigingen](assets/tag-permissions.png)
-

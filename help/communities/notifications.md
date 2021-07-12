@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-
-# Communitymeldingen {#communities-notifications}
+# Publikaties {#communities-notifications}
 
 ## Overzicht {#overview}
 
@@ -70,7 +69,7 @@ Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functi
 
 * Gebruikersprofielen zijn al zo geconfigureerd dat andere leden deze kunnen volgen.
 
-## Meldingen van volgende {#notifications-from-following}
+## Meldingen van: {#notifications-from-following}
 
 ![meldingen](assets/notifications.png)
 
@@ -89,7 +88,7 @@ De knop **[!UICONTROL Follow]** wordt weergegeven:
 
    * Hiermee wordt alle activiteit voor die specifieke vermelding gevolgd.
 
-## Meldingsinstellingen {#managing-notification-settings} beheren
+## Meldingsinstellingen beheren {#managing-notification-settings}
 
 Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, kan elk lid bepalen hoe meldingen worden ontvangen.
 
@@ -107,7 +106,7 @@ Het kan door een lid worden aangezet, maar nog hangt van e-mail af die wordt gev
 
 ![notifications3](assets/notifications3.png)
 
-## Meldingen {#viewing-notifications} weergeven
+## Meldingen weergeven {#viewing-notifications}
 
 ### Webmeldingen {#web-notifications}
 
@@ -123,7 +122,7 @@ Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een ko
 
 ![meldingen5](assets/notifications5.png)
 
-## E-mailmeldingen aanpassen {#customize-email-notifications}
+## E-mailberichten aanpassen {#customize-email-notifications}
 
 Organisaties kunnen de e-mailmeldingen aanpassen door [de sjablonen op **/libs/settings/community/templates/email/html** te bedekken.](/help/communities/client-customize.md#overlays)
 
@@ -136,4 +135,3 @@ Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijz
     A new mention <a href="{{objectUrl}}">comment</a> {{#if this.target.properties.[jcr:title]}}to the article "{{{target.displayName}}}" {{/if}}was added by {{{user.name}}} on {{dateUtil this.published format="EEE, d MMM yyyy HH:mm:ss z"}}.\n \
 {{/equals}}\
 ```
-

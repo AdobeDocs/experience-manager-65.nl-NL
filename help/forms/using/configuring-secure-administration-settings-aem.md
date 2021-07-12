@@ -8,15 +8,14 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligde beheerinstellingen voor AEM Forms configureren op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
@@ -26,7 +25,7 @@ Over het algemeen gebruiken ontwikkelaars de productieomgeving niet om hun toepa
 
 Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsopties te verminderen die AEM Forms op JEE verstrekt.
 
-## Niet-essentiële externe toegang tot services {#disabling-non-essential-remote-access-to-services} uitschakelen
+## Het onbruikbaar maken van niet essentiële verre toegang tot de diensten {#disabling-non-essential-remote-access-to-services}
 
 Nadat AEM Forms op JEE is geïnstalleerd en geconfigureerd, zijn veel services beschikbaar voor externe aanroeping via SOAP en Enterprise JavaBeans™ (EJB). De term extern verwijst in dit geval naar elke aanroeper die netwerktoegang heeft tot de SOAP-, EJB- of AMF-poorten (Action Message Format) voor de toepassingsserver.
 
@@ -67,7 +66,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
 
 1. Klik **Volgende** en herhaal de vorige stap voor de eindpunten van de ZEEP die niet in de bovengenoemde lijst zijn. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
 
-## Niet-essentiële anonieme toegang tot services {#disabling-non-essential-anonymous-access-to-services} uitschakelen
+## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
 
 Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroeping toe voor bepaalde bewerkingen. Dit betekent dat één of meerdere verrichtingen die door de dienst worden blootgesteld als om het even welke voor authentiek verklaarde gebruiker of als geen voor authentiek verklaarde gebruiker kunnen worden aangehaald.
 
@@ -108,11 +107,11 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
 
    De anonieme toegang zou voor om het even welke diensten moeten worden onbruikbaar gemaakt die niet nodig zijn. Vele interne diensten vereisen anonieme authentificatie om worden toegelaten omdat zij door potentieel om het even welke gebruiker in het systeem moeten worden aangehaald zonder vooraf geautoriseerd.
 
-## De standaard algemene time-out {#changing-the-default-global-time-out} wijzigen
+## De standaard algemene time-out wijzigen {#changing-the-default-global-time-out}
 
 Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-webtoepassingen of aangepaste toepassingen die de AEM Forms-serverservices aanroepen. Één globale onderbreking wordt geplaatst gebruikt om te specificeren hoe lang dergelijke gebruikers met AEM Forms (gebruikend een op SAML-Gebaseerde Bevestiging) kunnen interactie aangaan alvorens zij worden gedwongen om opnieuw voor authentiek te verklaren. De standaardinstelling is twee uur. In een productieomgeving moet de hoeveelheid tijd tot het minimaal aanvaardbare aantal minuten worden beperkt.
 
-### Limiet voor opnieuw verifiëren {#minimize-reauthentication-time-limit} minimaliseren
+### Limiet voor opnieuw verifiëren minimaliseren {#minimize-reauthentication-time-limit}
 
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 
@@ -130,4 +129,3 @@ Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-we
 1. Navigeer in de beheerconsole naar de pagina Configuration Files importeren en exporteren.
 1. Ga de weg aan het gewijzigde config.xml- dossier in of de klik doorbladert om aan het te navigeren.
 1. Klik **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
-

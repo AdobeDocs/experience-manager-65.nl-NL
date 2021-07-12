@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
-
 
 # Communitysites {#communities-sites}
 
@@ -31,7 +30,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 * [Aan de slag met AEM Communities](getting-started.md)
 * [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
-## Onderwerpen voor beheer en configuratie {#administration-and-configuration-topics}
+## Beheer en configuratieonderwerpen {#administration-and-configuration-topics}
 
 ### Creatie en beheer van sites van gemeenschappen {#communities-site-creation-and-management}
 
@@ -66,20 +65,20 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 * [UGC](translate-ugc.md) vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
 * [Configuratie](analytics.md) analyse: Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
 
-### Community-leden {#community-members}
+### Communautaire leden {#community-members}
 
 * [Gebruikers en gebruikersgroepen](users.md) beheren: nadere gegevens over de leden van de gemeenschap en de leden , met inbegrip van de geprivilegieerde leden .
 * [Bijdragelimieten](limits.md): de mogelijkheid om detachering door nieuwe leden te beperken.
 * [Tunneldienst](deploy-communities.md#tunnel-service-on-author): Hiermee kunt u leden van de publicatielanden en lidgroepen benaderen vanuit de auteursomgeving.
 * [Samenstellingen](members.md) van leden en groepen: Hiermee kunnen leden en leden van leden van de publicatievorm worden gemaakt en beheerd vanuit de auteursomgeving.
 * [Gebruikerssynchronisatie](sync.md): voor het synchroniseren van leden en lidgroepen in meerdere publicatie-instanties.
-* [Sociale aanmelding bij Facebook en Twitter](social-login.md): de mogelijkheid voor sitebezoekers om lid te worden van de gemeenschap op basis van hun Facebook- of Twitter-gegevens.
+* [Sociale aanmelding met Facebook en Twitter](social-login.md): de mogelijkheid voor bezoekers van de site om lid te worden van de gemeenschap op basis van hun Facebook- of Twitter-gegevens.
 * [Scores en badges](implementing-scoring.md): de mogelijkheid om toegangspasjes toe te wijzen om de rol(en) van een lid te identificeren en om leden een toegangspasje te laten verdienen door hun deelname aan de gemeenschap.
 * [Meldingen](notifications.md): de mogelijkheid voor de leden om in kennis te worden gesteld van hun activiteiten.
 * [Abonnementen](subscriptions.md): de mogelijkheid voor leden om via externe e-mail te communiceren met de gemeenschap.
 * [Berichten](messaging.md): de mogelijkheid voor de leden om met de gemeenschap te communiceren door middel van interne berichten .
 
-### Functies {#enablement-features} inschakelen
+### Functies Enablement {#enablement-features}
 
 * [Inschakelen](enablement.md) configureren: noodzakelijke informatie om de enablement eigenschappen correct te plaatsen.
 * [Configuratie](analytics.md) analyse: noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken.
@@ -99,7 +98,7 @@ Het is belangrijk om de meest recente versie van Gemeenschappen op het AEM platf
 
 Zie de distributiepagina voor andere communautaire specifieke informatie, zoals voor [Upgraden](upgrade.md), [Dispatcher](dispatcher.md) en [Replication](deploy-communities.md#replication-agents-on-author).
 
-## Documentatie van verwante gemeenschappen {#related-communities-documentation}
+## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
 * Bezoek [Gemeenschappen implementeren](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 

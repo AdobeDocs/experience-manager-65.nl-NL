@@ -8,9 +8,9 @@ topic-tags: installing
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
-role: Administrator
+role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1892'
 ht-degree: 0%
@@ -124,7 +124,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED in het  `[AEM-Installation-Directory]/crx-quickstart/logs/error.log` bestand zijn gestopt en het logbestand stabiel is.
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
-### (Alleen Windows) Automatische installatie van Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
+### (Vensters slechts) Automatische installatie van Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
 Als u een AEM instantie op opgeheven wijze installeert, zijn de ontbrekende Visual Studio redistributables automatisch geïnstalleerd tijdens de installatie van AEM Forms toe:voegen-op pakket.
 
@@ -142,13 +142,13 @@ Als de machtigingscontrole ontbreekt, omvatten de logboeken het volgende bericht
 
 `Privilege escalation check failed with error: <error message>`
 
-## Configuratie {#post-installation-configurations} na installatie
+## Configuratie na installatie {#post-installation-configurations}
 
 AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher, Forms Portal, Adobe Sign, Adobe Analytics en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
-#### RSA- en BouncyCastle-bibliotheken configureren {#configure-rsa-and-bouncycastle-libraries}
+#### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
 Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
 
@@ -175,9 +175,9 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 1. Voeg het pakket **sun.util.agenda** toe aan het **veld lijst van gewenste personen**. Klik **Opslaan**.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
-### Optionele configuraties {#optional-post-installation-configurations} na installatie
+### Optionele configuraties na installatie {#optional-post-installation-configurations}
 
-#### Dispatcher {#configure-dispatcher} configureren
+#### Dispatcher configureren {#configure-dispatcher}
 
 Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) gebruikt, dan voer de volgende configuraties voor AEM Forms uit:
 
@@ -193,7 +193,7 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverd
 
    Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van de configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer in het menu **Configuraties** de optie **Apache-schuifverwijzaarfilter**. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De opmaak van de vermelding is `https://[server]:[port]`.
 
-#### Cache {#configure-cache} configureren
+#### Cache configureren {#configure-cache}
 
 Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminderen, en input/output (I/O) snelheden te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier te genereren, verkort.
 
@@ -215,7 +215,7 @@ U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-c
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 
-#### Adobe Sign {#configure-adobe-sign} configureren
+#### Adobe Sign configureren {#configure-adobe-sign}
 
 Adobe Sign maakt workflows voor e-handtekeningen mogelijk voor adaptieve formulieren. E-handtekeningen verbeteren workflows om documenten te verwerken voor juridische documenten, verkoop, salarisadministratie, personeelsbeheer en nog veel meer gebieden.
 
@@ -223,13 +223,13 @@ In een standaard Adobe Sign- en adaptief formulierscenario vult een gebruiker ee
 
 Als u Adobe Sign wilt gebruiken met AEM Forms, [Integreer Adobe Sign met AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md).
 
-#### Adobe Analytics {#configure-adobe-analytics} configureren
+#### Adobe Analytics configureren {#configure-adobe-analytics}
 
 AEM Forms is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
 Zie [Analyses en rapporten configureren](/help/forms/using/configure-analytics-forms-documents.md) om Adobe Analytics met AEM Forms te gebruiken.
 
-#### Adobe Target {#integrate-adobe-target} integreren
+#### Adobe Target integreren {#integrate-adobe-target}
 
 Uw klanten zullen waarschijnlijk een formulier verlaten als de ervaring die het biedt, niet aantrekkelijk is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek evenals uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omrekeningskoers verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 

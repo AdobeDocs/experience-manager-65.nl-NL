@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
 
-
-# MongoDB instellen voor demo {#how-to-setup-mongodb-for-demo}
+# MongoDB voor demo instellen {#how-to-setup-mongodb-for-demo}
 
 ## Inleiding {#introduction}
 
@@ -37,7 +36,7 @@ Deze configuratie is geschikt voor *niet-productie* milieu&#39;s zoals voor ontw
 
 ## MongoDB {#mongodb}
 
-### MongoDB {#install-mongodb} installeren
+### MongoDB installeren {#install-mongodb}
 
 * Download MongoDB van [https://www.mongodb.org/](https://www.mongodb.org/)
 
@@ -63,7 +62,7 @@ Deze configuratie is geschikt voor *niet-productie* milieu&#39;s zoals voor ontw
 
 * MongoDB kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd.
 
-### MongoDB {#start-mongodb} starten
+### MongoDB starten {#start-mongodb}
 
 * &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
 
@@ -95,7 +94,7 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 
 ## Solr {#solr}
 
-### Solr {#install-solr} installeren
+### Solo installeren {#install-solr}
 
 * Solr downloaden van [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
@@ -109,14 +108,14 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
    * Er is geen service nodig.
    * De geïnstalleerde map Solr wordt &lt;solr-install> genoemd.
 
-### Solr voor AEM Communities {#configure-solr-for-aem-communities} configureren
+### Solr voor AEM Communities configureren {#configure-solr-for-aem-communities}
 
 Om een inzameling Solr voor MSRP voor demo te vormen, zijn er twee te nemen besluiten (selecteer de verbindingen aan belangrijkste documentatie voor details):
 
 1. Solr uitvoeren in zelfstandige modus of [SolrCloud-modus](msrp.md#solrcloudmode).
 1. Installeer [standard](msrp.md#installingstandardmls) of [advanced](msrp.md#installingadvancedmls) multilingual search (MLS).
 
-### Zelfstandige zonne-energie {#standalone-solr}
+### Zelfstandige Solr {#standalone-solr}
 
 De methode voor het uitvoeren van Solr kan verschillen, afhankelijk van de versie en wijze van installatie. De [Solr verwijzingsgids](https://archive.apache.org/dist/lucene/solr/ref-guide/) is de gebiedende documentatie.
 
@@ -140,7 +139,7 @@ U kunt een eenvoudige solrCloud-instelling (geen productie) uitvoeren door solr 
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
-## MongoDB identificeren als gemeenschappelijke opslag {#identify-mongodb-as-common-store}
+## MongoDB identificeren als een gemeenschappelijke winkel {#identify-mongodb-as-common-store}
 
 Start de auteur en publiceer AEM indien nodig.
 
@@ -148,7 +147,7 @@ Als AEM actief was voordat MongoDB werd gestart, moeten de AEM instanties opnieu
 
 Volg de instructies op de hoofddocumentatiepagina: [MSRP - MongoDB Common Store](msrp.md)
 
-## {#test} testen
+## Testen {#test}
 
 Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een opmerking op de publicatieinstantie en bekijkt u deze op de auteurinstantie, en bekijkt u de UGC in MongoDB en Solr:
 
@@ -179,7 +178,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 ## Problemen oplossen {#troubleshooting}
 
-### Er wordt geen UGC weergegeven {#no-ugc-appears}
+### Geen UGC weergegeven {#no-ugc-appears}
 
 1. Controleer of MongoDB op de juiste wijze is geïnstalleerd en uitgevoerd.
 

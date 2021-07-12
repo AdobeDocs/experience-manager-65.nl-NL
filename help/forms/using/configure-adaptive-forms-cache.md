@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
-
-# Cache voor adaptieve formulieren {#configure-adaptive-forms-cache} configureren
+# Cache voor aangepaste formulieren configureren {#configure-adaptive-forms-cache}
 
 Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de latentie te verminderen en de invoer-/uitvoersnelheid (I/O) te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier op de client te genereren, verkort. Het is specifiek ontworpen voor adaptieve formulieren.
 
-## Cache voor adaptieve formulieren configureren bij auteur en exemplaren publiceren {#configure-adaptive-forms-caching-at-author-and-publish-instances}
+## Cache voor adaptieve formulieren configureren bij auteur- en publicatieinstanties {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op `https://[server]:[port]/system/console/configMgr`.
 1. Klik **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** om zijn configuratiewaarden uit te geven.
@@ -40,7 +39,7 @@ Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de la
 Uw omgeving is geconfigureerd voor het gebruik van cacheadaptieve formulieren en gerelateerde elementen.
 
 
-## (Optioneel) Aangepast formuliercache configureren op verzender {#configure-the-cache}
+## (Optioneel) Adaptief formuliercache configureren bij verzender {#configure-the-cache}
 
 U kunt ook adaptieve formulieren in cache plaatsen bij dispatcher voor extra prestatieverhoging.
 

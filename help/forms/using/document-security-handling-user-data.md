@@ -6,17 +6,16 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 00c01a12-1180-4f35-9179-461bf177c787
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
 
-
-# Documentbeveiliging | Gebruikersgegevens {#document-security-handling-user-data} verwerken
+# Documentbeveiliging | Gebruikersgegevens verwerken {#document-security-handling-user-data}
 
 Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in het gebruikersbeheer van AEM Forms JEE worden toegevoegd.
 
@@ -131,7 +130,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Forms-gebruikersbeheer voor meer informatie: Gebruikergegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 
-### Gebruikersgegevens {#delete-user-data} verwijderen
+### Gebruikersgegevens verwijderen {#delete-user-data}
 
 Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit databasetabellen te verwijderen.
 
@@ -213,4 +212,3 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
 
 1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Zie [Forms-gebruikersbeheer voor gedetailleerde stappen | Gebruikersgegevens verwerken](/help/forms/using/user-management-handling-user-data.md).
 1. Start de AEM Forms-server.
-

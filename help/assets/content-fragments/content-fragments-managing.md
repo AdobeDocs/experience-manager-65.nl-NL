@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1488'
 ht-degree: 10%
 
 ---
-
 
 # Contentfragmenten beheren{#managing-content-fragments}
 
@@ -29,7 +28,7 @@ Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden b
 >
 >Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. zie [Pagina-authoring met inhoudfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Inhoudsfragmenten {#creating-content-fragments} maken
+## Inhoudsfragmenten maken {#creating-content-fragments}
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
@@ -39,7 +38,7 @@ Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden b
 >
 >Zie [Inhoudsfragmenten ontwikkelen](/help/sites-developing/customizing-content-fragments.md) voor meer informatie over sjablonen. worden gebruikt voor eenvoudige inhoudsfragmenten.
 
-### Een inhoudsfragment {#creating-a-content-fragment} maken
+### Een inhoudsfragment maken {#creating-a-content-fragment}
 
 De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
 
@@ -164,7 +163,7 @@ Uw fragment openen voor bewerken:
    >
    >Zowel met **Opslaan** als **Annuleren** sluit u de editor af. Zie [Opslaan, annuleren en versies](#save-cancel-and-versions) voor gedetailleerde informatie over hoe beide opties werken voor contentfragmenten.
 
-## Opslaan, annuleren en versies {#save-cancel-and-versions}
+## Opslaan, Annuleren en versies {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -217,11 +216,11 @@ Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gema
 3. Als de gebruiker de bewerking **Annuleren** selecteert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 4. Als de gebruiker de bewerkingen **Opslaan** selecteert, blijven de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
-## De inhoud van het fragment {#editing-the-content-of-your-fragment} bewerken
+## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
 Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](/help/assets/content-fragments/content-fragments-variations.md) gebruiken om de inhoud te ontwerpen.
 
-## Variaties maken en beheren in het fragment {#creating-and-managing-variations-within-your-fragment}
+## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
 Als u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
 
@@ -229,7 +228,7 @@ Als u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fra
 
 U kunt ook [inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) aan een fragment koppelen. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
-## De metagegevens (eigenschappen) van het fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment} weergeven en bewerken
+## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 U kunt de eigenschappen van een fragment weergeven en bewerken met het tabblad [Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md).
 
@@ -303,7 +302,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Terugkeren naar een versie {#reverting-to-a-version}
+## Een versie herstellen  {#reverting-to-a-version}
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
@@ -313,7 +312,7 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 * Terwijl [het vergelijken van een versie aan de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) kunt u **terugkeren** aan de geselecteerde versie.
 
-## Een fragment {#publishing-and-referencing-a-fragment} publiceren en ernaar verwijzen
+## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
@@ -330,7 +329,7 @@ Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgevi
 >
 >Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
-## Een fragment {#deleting-a-fragment} verwijderen
+## Een fragment verwijderen {#deleting-a-fragment}
 
 Een fragment verwijderen:
 
@@ -347,4 +346,3 @@ Een fragment verwijderen:
    >[!CAUTION]
    >
    >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
-

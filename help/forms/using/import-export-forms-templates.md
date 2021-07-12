@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
-
 
 # Elementen importeren en exporteren naar AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
@@ -39,7 +38,7 @@ Exporteren en importeren via de gebruikersinterface van AEM Forms wordt onderste
 
 Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor informatie over het maken en installeren van pakketten.
 
-### Forms- en documentmiddelen downloaden {#download-forms-amp-documents-assets}
+### Forms- en Documenten downloaden {#download-forms-amp-documents-assets}
 
 Forms en Documenten downloaden:
 
@@ -79,11 +78,11 @@ Forms en Documenten uploaden:
    >
    >Het uploaden van een pakket vervangt de bestaande maphiërarchie niet. Als u bijvoorbeeld een adaptief formulier hebt met de naam &#39;Training&#39; op de locatie /content/dam/formsanddocuments op één server. U downloadt het adaptieve formulier en uploadt het formulier naar een andere server. De tweede server heeft ook een map met de naam &#39;Training&#39; op dezelfde locatie/content/dam/formsanddocuments. Het uploaden mislukt.
 
-## Een thema {#downloading-or-uploading-a-theme} downloaden of uploaden
+## Een thema downloaden of uploaden {#downloading-or-uploading-a-theme}
 
 Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. U kunt een thema maken, dit downloaden en uploaden naar een aparte versie om het opnieuw te gebruiken. Zie [Thema&#39;s in AEM Forms](../../forms/using/themes.md) voor meer informatie over thema&#39;s.
 
-### Een thema {#downloading-a-theme} downloaden
+### Een thema downloaden {#downloading-a-theme}
 
 U kunt thema&#39;s in AEM Forms exporteren die u kunt gebruiken in andere projecten of instanties. AEM kunt u thema downloaden als een ZIP-bestand dat u kunt uploaden op het exemplaar.
 
@@ -93,7 +92,7 @@ Een thema downloaden:
 1. Tik op Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. Selecteer het thema en tik **Download**. Het thema wordt gedownload als een archief (.zip-bestand).
 
-### Een thema {#uploading-a-theme} uploaden
+### Een thema uploaden {#uploading-a-theme}
 
 U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw project. U kunt themapakketten die anderen maken, importeren door deze te uploaden naar uw project.
 
@@ -108,7 +107,7 @@ Het geüploade thema is beschikbaar op de themapagina.
 1. Tik op Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. Klik **Maken** > **Bestand uploaden**. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**. Het thema wordt geüpload.
 
-## Elementen importeren en exporteren in Correspondentenbeheer {#import-and-export-assets-in-correspondence-management}
+## Importeren en exporteren van activa in Correspondentenbeheer {#import-and-export-assets-in-correspondence-management}
 
 Als u elementen, zoals gegevenswoordenboeken, letters en documentfragmenten, wilt delen tussen twee verschillende implementaties van Correspondence Management, kunt u .cmp-bestanden maken en delen. Een .cmp-bestand kan een of meer gegevenswoordenboeken, letters, documentfragmenten en formulieren bevatten.
 
@@ -127,7 +126,7 @@ Als u elementen, zoals gegevenswoordenboeken, letters en documentfragmenten, wil
 
    Het .cmp- dossier omvat de uitgevoerde activa. U kunt het .cmp- dossier met anderen delen. Andere gebruikers kunnen het .cmp- dossier in een verschillende server invoeren om alle activa in de nieuwe server te krijgen.
 
-### Alle Correspondentenbeheermiddelen exporteren als een pakket {#export-all-the-correspondence-management-assets-as-a-package}
+### Alle Correspondentenbeheermiddelen als een pakket exporteren {#export-all-the-correspondence-management-assets-as-a-package}
 
 Gebruik deze optie om alle Correspondence Management-elementen en gerelateerde afhankelijkheden als een pakket te downloaden van een AEM formulierexemplaar.
 
@@ -178,7 +177,7 @@ U kunt elementen importeren die naar een .cmp-bestand worden geëxporteerd. Een 
    >
    >Als u XDP&#39;s wilt uploaden (als onderdeel van het cmp-bestand of anderszins), moet u deel uitmaken van een gebruikersgroep voor formulieren. Neem contact op met de beheerder voor toegangsrechten.
 
-## Een workflowtoepassing {#export-a-workflow-application} exporteren
+## Een workflowtoepassing exporteren {#export-a-workflow-application}
 
 U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De procedure is als volgt:
 
@@ -202,7 +201,7 @@ De gebruikersinterface van AEM Forms gebruikt omslagen om activa te schikken. De
 
 Voer de volgende stappen uit om een map te maken:
 
-### Een map {#create-a-folder} maken
+### Een map maken {#create-a-folder}
 
 1. Meld u aan bij de AEM Forms-gebruikersinterface op `https://<server>:<port>/aem/forms.html`.
 1. Navigeer naar de locatie waaronder u een map wilt maken.

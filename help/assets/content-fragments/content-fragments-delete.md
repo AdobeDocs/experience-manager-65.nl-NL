@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '457'
 ht-degree: 13%
 
 ---
 
-
 # Contentfragmenten - Overwegingen verwijderen{#content-fragments-delete-considerations}
 
-## Machtigingen - {#permissions-delete-or-not-delete} verwijderen of niet verwijderen
+## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
 De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met vele industrieën die moeten beperken en controleren hoe deze voorrechten worden verdeeld.
 
@@ -49,7 +48,7 @@ Met betrekking tot het schrappen van toestemmingen, moeten de Fragmenten van de 
 >
 >Zie ook [Gebruikersbeheerbewerkingen in AEM](/help/sites-administering/audit-user-management-operations.md) controleren.
 
-## Machtigingen alleen vereist voor bewerkingsfunctionaliteit {#permissions-required-for-editor-functionality-only}
+## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
 Voor gebruikers die een contentfragment moeten bewerken of bijwerken, **zonder hun toe te staan om een volledig fragment te verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de contentfragmenteditor vereist dat tijdelijke subelementen kunnen worden verwijderd.
 
@@ -96,4 +95,3 @@ De `add` en `modify` voorrechten kunnen ook in CRXDE Lite worden beheerd, of het
 Bijvoorbeeld, de definitie van `remove` voorrechten voor een groep `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-

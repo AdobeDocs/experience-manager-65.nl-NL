@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
 
-
-# Upgrade naar AEM 6.5 Forms op JEE {#upgrade-to-aem-forms-jee}
+# Upgrade naar AEM 6,5 Forms in JEE {#upgrade-to-aem-forms-jee}
 
 Voer de volgende procedure uit om bestaande AEM 6.3 Forms op JEE of AEM 6.4 Forms op JEE aan AEM 6.5 Forms op JEE te bevorderen:
 

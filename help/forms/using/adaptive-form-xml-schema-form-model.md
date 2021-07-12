@@ -2,11 +2,10 @@
 title: Hoe te om Aangepast Forms tot stand te brengen gebruikend het Schema van XML?
 description: Leer hoe u het XML-schema als formuliermodel in een adaptief formulier gebruikt. U kunt bestaande XSD-sjablonen toepassen om adaptieve formulieren te maken en schemaelementen van XSD naar het aangepaste formulier te slepen. Dig dieper in met een voorbeeld van een XML-schema, voeg speciale eigenschappen toe aan velden die gebruikmaken van het XML-schema en beperkt acceptabele waarden voor een adaptieve formuliercomponent.
 feature: Adaptieve Forms
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 1%
@@ -125,7 +124,7 @@ Hier is een voorbeeld van een XML-schema.
 >
 >Zorg ervoor dat uw XML-schema slechts één basiselement heeft. Een XML-schema met meer dan één hoofdelement wordt niet ondersteund.
 
-## Speciale eigenschappen toevoegen aan velden met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
+## Speciale eigenschappen aan velden toevoegen met XML-schema {#adding-special-properties-to-fields-using-xml-schema}
 
 U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speciale eigenschappen toe te voegen aan de velden van het gekoppelde adaptieve formulier.
 
@@ -171,7 +170,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
 >
 Als u bijvoorbeeld het schema-element `userFirstName` toevoegt, is het bijschrift dat in het adaptieve formulier wordt gegenereerd `User First Name`.
 
-## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
+## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 

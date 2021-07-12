@@ -10,17 +10,16 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
-
-# AEM Forms inzake OSGi-groepen en -voorrechten{#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms over OSGi-groepen en -voorrechten{#aem-forms-on-osgi-groups-and-privileges}
 
 U kunt [groepen maken](/help/sites-administering/user-group-ac-admin.md#group-administration) en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in AEM. Dit beleid controleert voorrechten van de gebruikers die deel van de groep uitmaken.
 
@@ -113,4 +112,3 @@ Nadat u [AEM Forms-add-on-pakket](../../forms/using/installing-configuring-aem-f
 
 1. De gebruiker met groepsrechten voor formulieren kan geen scripts schrijven voor adaptieve formulieren.
 1. De gebruiker met de groepsrechten voor sjabloonauteurs kan geen scripts voor sjablonen schrijven.
-

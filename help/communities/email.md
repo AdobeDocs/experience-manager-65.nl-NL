@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
 
-
-# E-mail {#configuring-email} configureren
+# E-mail configureren {#configuring-email}
 
 AEM Communities gebruikt e-mail voor:
 
@@ -33,7 +32,7 @@ De e-mailfunctie werkt standaard niet omdat hiervoor een SMTP-server en een SMTP
 >
 >E-mail voor meldingen en abonnementen moet alleen worden geconfigureerd op de [primaire uitgever](deploy-communities.md#primary-publisher).
 
-## Configuratie van standaardmailservice {#default-mail-service-configuration}
+## Standaardconfiguratie e-mailservice {#default-mail-service-configuration}
 
 De standaardmailservice is vereist voor zowel meldingen als abonnementen.
 
@@ -76,7 +75,7 @@ Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
 
    Indien gecontroleerd, laat registreren van SMTP serverinteractie toe.
 
-## AEM Communities-e-mailconfiguratie {#aem-communities-email-configuration}
+## AEM Communities E-mailconfiguratie {#aem-communities-email-configuration}
 
 Zodra [standaardpostdienst ](#default-mail-service-configuration) wordt gevormd, worden de twee bestaande instanties van `AEM Communities Email Reply Configuration` OSGi config, inbegrepen in de versie, functioneel.
 
@@ -165,11 +164,11 @@ Voor Gemeenschapsabonnementen is het mogelijk om de mogelijkheid voor een lid om
 
    De e-mail wordt samengesteld met een sjabloon die op dit hoofdpad is opgeslagen. De standaardwaarde is `/etc/community/templates/subscriptions-email`.
 
-## Opiniepeilingimportmodule {#configure-polling-importer} configureren
+## Opiniepeilingimportmodule configureren {#configure-polling-importer}
 
 Om de e-mail in de gegevensopslagplaats te brengen, is het noodzakelijk om een opiniepeilingimporteur te vormen en zijn eigenschappen in de bewaarplaats manueel te vormen.
 
-### Nieuwe opiniepeilingimportmodule {#add-new-polling-importer} toevoegen
+### Nieuwe importmodule voor opiniepeiling toevoegen {#add-new-polling-importer}
 
 * Meld u aan bij de primaire uitgever met beheerdersrechten en blader naar de pollingimporterconsole:
 
@@ -223,4 +222,3 @@ Met [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 De rode driehoeken geven de gewijzigde eigenschappen aan. Sla de wijzigingen op:
 
 * Selecteer **[!UICONTROL Save All]**.
-

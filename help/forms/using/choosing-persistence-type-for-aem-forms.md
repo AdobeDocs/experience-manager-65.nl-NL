@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
-
-# Een persistentietype kiezen voor een AEM Forms-installatie {#choosing-a-persistence-type-for-an-aem-forms-installation}
+# Een type persistentie kiezen voor een AEM Forms-installatie {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 Kies verstandig een persistentietype. Het helpt u een efficiënte en schaalbare AEM Forms-omgeving op te bouwen.
 

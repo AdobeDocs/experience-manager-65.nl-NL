@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 6f13b21a-f4ef-4889-9b8e-4da3f846fa35
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: e29aae44-67be-43d2-8004-c986412d9e63
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
 
-
-# SRP - Community Content Storage {#srp-community-content-storage}
+# SRP - Opslag van communautaire inhoud {#srp-community-content-storage}
 
 ## Inleiding {#introduction}
 
@@ -106,7 +105,7 @@ JSRP:
 * De matiging wordt uitgevoerd slechts in het publicatiemilieu (er is geen omgekeerd/voorwaarts replicatiemechanisme tussen auteur en publiceert).
 * Is het beste voor ontwikkeling, demonstraties, en opleiding.
 
-## SRP {#configuring-srp} configureren
+## SRP configureren {#configuring-srp}
 
 De standaardopslagoptie specificeren, die op de onderliggende plaatsing wordt gebaseerd, wordt gemaakt door [de console van de Configuratie van de Opslag](/help/communities/srp-config.md).
 
@@ -121,7 +120,7 @@ Als er geen opslagoptie actief is geselecteerd, wordt JSRP standaard ingeschakel
 
 ## Aanvullende informatie {#additional-information}
 
-### UGC Nooit gerepliceerd {#ugc-never-replicated}
+### UGC nooit gerepliceerd {#ugc-never-replicated}
 
 In de auteursomgeving, creeert een auteur pagina inhoud en herhaalt het aan het publicatiemilieu. Wanneer een pagina een interactieve AEM Communities-functie bevat, zoals opmerkingen, revisies, forum, blog of QnA, resulteert de interactie door leden (aangemeld bij sitebezoekers) op een publicatie-instantie in door gebruikers gegenereerde inhoud (UGC) die wordt ingevoerd in de publicatieomgeving.
 
@@ -131,7 +130,7 @@ Vanaf AEM Communities 6.1 is de behoefte aan replicatie van UGC geëlimineerd do
 
 Terwijl site-inhoud wordt gerepliceerd, wordt UGC nooit gerepliceerd.
 
-### Gebruikersgegevens {#managing-user-data} beheren
+### Gebruikersgegevens beheren {#managing-user-data}
 
 Ook van belang voor CommunityIes zijn [*gebruikers*, *gebruikersgroepen*, en *gebruikersprofielen*](/help/communities/users.md). Deze op gebruiker betrekking hebbende gegevens, wanneer gecreeerd en bijgewerkt in publicatiemilieu, moeten aan andere publicatieinstanties ter beschikking worden gesteld wanneer de topologie [publicerend landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm) is.
 

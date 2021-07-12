@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4237085a-d70d-41de-975d-153f58336daa
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikers en gebruikersgroepen beheren {#managing-users-and-user-groups}
 
@@ -94,7 +93,7 @@ Voor productieomgevingen moet de standaardbeheerdersgroep worden gewijzigd.
 
 Zorg ervoor dat u de [Beveiligingscontrolelijst](../../help/sites-administering/security-checklist.md) volgt.
 
-## Omgeving {#publish-environment} publiceren
+## Publicatie-omgeving {#publish-environment}
 
 ### Lid worden {#becoming-a-member}
 
@@ -123,7 +122,7 @@ Afhankelijk van de [instellingen](sites-console.md#user-management) van de commu
 | *Bevoorrechte ledenbeveiligingsgroep* | Een handmatig gemaakte en onderhouden gebruikersgroep om het maken van inhoud te beperken. Zie [Geprivilegieerde ledengroep](#privileged-members-group). |
 | Geen | Een anonieme sitebezoeker, die de site ontdekt, kan gemeenschapssites weergeven en doorzoeken die anonieme toegang toestaan. Om te kunnen deelnemen en inhoud te kunnen plaatsen, moet de gebruiker zich zelf registreren (indien toegestaan) en lid worden van de gemeenschap. |
 
-### Leden toewijzen aan Groeprollen {#assigning-members-to-publish-group-roles} publiceren
+### Leden toewijzen aan rollen van groepen publiceren {#assigning-members-to-publish-group-roles}
 
 Wanneer [het creëren van een communautaire plaats](sites-console.md) in het auteursmilieu, of wanneer [het wijzigen van plaatseigenschappen, ](sites-console.md#modifying-site-properties) leden diverse rollen kunnen worden toegewezen die in het publicatiemilieu, zoals moderatoren, groepsbeheerders, middelcontacten, of bevoorrechte leden worden uitgevoerd.
 
@@ -131,7 +130,7 @@ Wanneer [het creëren van een communautaire plaats](sites-console.md) in het aut
 
 De geselecteerde leden worden automatisch toegewezen aan de [juiste groep](#publish-group-roles) en hun lidmaatschap wordt opgenomen wanneer de communitysite (opnieuw) wordt gepubliceerd.
 
-### Groep geprivilegieerde leden {#privileged-members-group}
+### Groep met geprivilegieerde leden {#privileged-members-group}
 
 Het doel van een bevoorrechte groep van de ledenveiligheid is de verwezenlijking van inhoud voor bepaalde communautaire functies tot een bevoorrechte ondergroep van de leden van een communautaire plaats te beperken.
 
@@ -152,7 +151,7 @@ Wanneer een communautaire functie niet wordt beveiligd (geen bevoorrechte toegew
 >
 >Als u een gebruiker toevoegt aan een geprivilegieerde ledengroep voor een communitysite, worden er alleen privileges toegekend aan gebruikers die ook lid zijn van dezelfde communitysite.
 
-## Community-leden {#creating-community-members} maken
+## Communautaire leden creëren {#creating-community-members}
 
 ### Locatie opslagplaats {#repository-location}
 
@@ -197,7 +196,7 @@ Er zijn vier afzonderlijke consoles beschikbaar slechts in het auteursmilieu:
 | beheer | gebruikers op auteur | gebruikersgroepen bij auteur | leden die worden gepubliceerd | lidgroepen die worden gepubliceerd |
 | vereist | machtiging beheerder | machtiging beheerder | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm |
 
-### Rol van Community Enabability Manager {#community-enablement-manager-role}
+### Rol van Community Enablement Manager {#community-enablement-manager-role}
 
 De mogelijkheid voor een bezoeker van een site om zichzelf te registreren is doorgaans niet toegestaan voor een [enablement community](overview.md#enablement-community) omdat er kosten aan elk lid zijn gekoppeld. Studenten en bronnen van Enablement worden beheerd door een gebruiker met de [rol](#author-group-roles) van `enablement manager` [tijdens het maken van de site](sites-console.md#enablement) op de auteur (toegevoegd als lid van groep `Community <site-name> Siteenablementmanagers`). `enablement manager` is ook verantwoordelijk voor [het toewijzen van leermiddelen](resources.md) aan leden van de gemeenschap op auteur.
 

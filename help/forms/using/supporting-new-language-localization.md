@@ -9,20 +9,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
-feature: Adaptive Forms
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptieve Forms
+role: Admin
+exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
-
 # Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren{#supporting-new-locales-for-adaptive-forms-localization}
 
-## Informatie over woordenboeken {#about-locale-dictionaries} voor landinstellingen
+## Over woordenboeken voor landinstellingen {#about-locale-dictionaries}
 
 De lokalisatie van adaptieve formulieren is afhankelijk van twee typen taalwoordenboeken:
 
@@ -72,7 +71,7 @@ Ondersteuning voor een nieuwe landinstelling toevoegen bij runtime voor adaptiev
 1. [Ondersteuning voor landinstellingen toevoegen voor het woordenboek](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [De server opnieuw starten](../../forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Een landinstelling toevoegen aan de Guide Localization service {#add-a-locale-to-the-guide-localization-service-br}
+### Een landinstelling toevoegen aan de Guide Localization-service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr`.
 1. Klik om de **Guide Localization Service** component te bewerken.
@@ -94,7 +93,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### Aangepaste clientbibliotheek van formulier toevoegen voor een landinstelling {#add-adaptive-form-client-library-for-a-locale-br}
+### Aangepaste clientbibliotheek voor een landinstelling toevoegen {#add-adaptive-form-client-library-for-a-locale-br}
 
 Maak een knooppunt van het type `cq:ClientLibraryFolder` onder `etc/<folderHierarchy>`, met categorie als `guides.I18N.<locale>` en afhankelijkheden als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` en `guide.common`. &quot;
 
@@ -109,7 +108,7 @@ i18n.js
 LogMessages.js
 ```
 
-### Ondersteuning voor landinstelling toevoegen voor woordenboek {#add-locale-support-for-the-dictionary-br}
+### Ondersteuning voor landinstellingen toevoegen voor het woordenboek {#add-locale-support-for-the-dictionary-br}
 
 Voer deze stap slechts uit als `<locale>` u toevoegt niet onder `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` is.
 
@@ -122,7 +121,7 @@ Voer deze stap slechts uit als `<locale>` u toevoegt niet onder `en`, `de`, `es`
 
 De `<locale>` verschijnt om `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
 
-### De server {#restart-the-server} opnieuw starten
+### De server opnieuw starten {#restart-the-server}
 
 Start de AEM server opnieuw om de toegevoegde landinstelling te activeren.
 

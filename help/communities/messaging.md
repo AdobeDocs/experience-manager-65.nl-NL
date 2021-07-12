@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
-
-# Berichten {#configure-messaging} configureren
+# Berichten configureren {#configure-messaging}
 
 ## Overzicht {#overview}
 
@@ -44,7 +43,7 @@ Zoals hieronder wordt weergegeven, bestaat er een configuratie van de service vo
 
 ![berichtenverkeer](assets/messaging-operations.png)
 
-### Nieuwe configuratie {#add-new-configuration} toevoegen
+### Nieuwe configuratie toevoegen {#add-new-configuration}
 
 Als u een nieuwe configuratie wilt toevoegen, selecteert u de plusknop &#39;**+**&#39; naast de naam van de service:
 

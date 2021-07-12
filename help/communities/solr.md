@@ -9,19 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1483'
 ht-degree: 2%
 
 ---
 
-
 # Solr Configuratie voor SRP {#solr-configuration-for-srp}
 
-## Solr voor AEM Platform {#solr-for-aem-platform}
+## Solr. voor AEM Platform {#solr-for-aem-platform}
 
 Een [Apache Solr](https://lucene.apache.org/solr/)-installatie kan worden gedeeld tussen de [knooppuntenopslag](../../help/sites-deploying/data-store-config.md) (eikel) en [gemeenschappelijke winkel](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
 
@@ -149,7 +148,7 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
-### Standaard MLS {#installing-standard-mls} installeren
+### Standaard MLS installeren {#installing-standard-mls}
 
 Voor de inzameling SRP (of MSRP of DSRP), om Standaard Meertalig Onderzoek (MLS) te steunen is het noodzakelijk om twee configuratiedossiers van Solr te wijzigen:
 
@@ -217,7 +216,7 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Start Solr opnieuw.
 1. Voor MSRP, looppas [MSRP Hulpmiddel opnieuw indexeren](#msrpreindextool), tenzij dit een nieuwe installatie is.
 
-### Geavanceerde MLS {#installing-advanced-mls} installeren
+### Geavanceerde MLS installeren {#installing-advanced-mls}
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde MLS te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload. Bovendien is een installatiescript inbegrepen voor gebruik wanneer Solr op standalone wijze wordt opgesteld.
 

@@ -11,15 +11,14 @@ content-type: reference
 discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2884'
 ht-degree: 1%
 
 ---
-
 
 # Scores en badges van gemeenschappen {#communities-scoring-and-badges}
 
@@ -53,7 +52,7 @@ Als ze op een andere locatie zijn opgeslagen, moeten ze door iedereen toegankeli
 
 De badges zijn in de UGC verschillend wat betreft de vraag of zij volgens de regels werden toegewezen of verdiend. Momenteel worden toegewezen badges weergegeven als tekst en worden verdiende badges als een afbeelding weergegeven.
 
-### Gebruikersinterface Badge Management {#badge-management-ui}
+### Bandenbeheer-interface {#badge-management-ui}
 
 De Gemeenschappen [Badges console](/help/communities/badges.md) verstrekt de capaciteit om douanebadges toe te voegen die voor een lid kunnen worden getoond wanneer verdiend (toegekend) of wanneer zij een specifieke rol in de (toegewezen) gemeenschap op zich nemen.
 
@@ -116,7 +115,7 @@ Aangepaste badges kunnen worden geïnstalleerd met de [Badges-console](/help/com
 
 Wanneer deze vanaf de Badges-console zijn geïnstalleerd, worden aangepaste badges automatisch naar de publicatieomgeving gerepliceerd.
 
-## Muziek {#enable-scoring} inschakelen
+## Muziek inschakelen {#enable-scoring}
 
 Scores is niet standaard ingeschakeld. De basisstappen voor het opzetten en mogelijk maken van scoring en toekenning van badges zijn:
 
@@ -147,13 +146,13 @@ Als het knooppunt van het type `cq:Page` (aanbevolen) is, voegt u met behulp van
 >
 >Als een het scoren regel geen effect op het verlenen van badges lijkt te hebben, zorg ervoor de het scoren regel niet door het scoringRules bezit van de merkingsregel is geblokkeerd. Zie de sectie [Badging Rules](#badging-rules).
 
-### Badges voor component {#enable-badges-for-component} inschakelen
+### Badges voor component inschakelen {#enable-badges-for-component}
 
 De het scoren en het inkleuren regels zijn in feite slechts voor instanties van componenten die merkings door de componentenconfiguratie in [auteurswijze ](/help/communities/author-communities.md) te uitgeven hebben toegelaten.
 
 Een booleaanse eigenschap, `allowBadges`, schakelt de weergave van badges voor een componentinstantie in of uit. Het is configureerbaar in [component uitgeeft dialoog](/help/communities/author-communities.md) voor forum, QnA en commentaarcomponenten door een checkbox geëtiketteerd **de Badges van de Vertoning**.
 
-#### Voorbeeld: allowBadges voor instantie van de component Forum {#example-allowbadges-for-forum-component-instance}
+#### Voorbeeld: allowBadges voor de componentinstantie Forum {#example-allowbadges-for-forum-component-instance}
 
 ![enable-badges-component](assets/enable-badges-component.png)
 
@@ -193,7 +192,7 @@ Scores worden opgeslagen in SRP.
 >/libs/settings/community/scoring/rules/site1/forums-scoring
 >/libs/settings/community/scoring/rules/site2/forums-scoring
 
-### Subregels voor het sorteren {#scoring-sub-rules}
+### Subregels voor score {#scoring-sub-rules}
 
 De scoringsubregels bevatten de eigenschappen die de waarden voor deelname aan de gemeenschap in detail beschrijven.
 
@@ -308,7 +307,7 @@ In de release zijn twee scoreregels opgenomen voor de functie [Forum Function](/
 
    * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
-### Aangepaste sorteerregels {#activating-custom-scoring-rules} activeren
+### Aangepaste sorteerregels activeren {#activating-custom-scoring-rules}
 
 Wijzigingen of toevoegingen aan de in de ontwerpomgeving aangebrachte scoreregels of subregels moeten bij publicatie worden geïnstalleerd.
 
@@ -375,7 +374,7 @@ Het `scoringRules` bezit op een merkingsregel beperkt eenvoudig welke het schrap
  </tbody>
 </table>
 
-### Inclusief Badgingregels {#included-badging-rules}
+### Ingesloten Badgingregels {#included-badging-rules}
 
 In de release zijn twee Badging Rules opgenomen die overeenkomen met de [Forums and Comments Scoring Rules](#includedscoringrules).
 
@@ -390,7 +389,7 @@ In de release zijn twee Badging Rules opgenomen die overeenkomen met de [Forums 
 
    * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
-### Aangepaste Badgingregels {#activating-custom-badging-rules} activeren
+### Aangepaste Badgingregels activeren {#activating-custom-badging-rules}
 
 Wijzigingen of toevoegingen aan badgingregels of afbeeldingen die in de ontwerpomgeving zijn aangebracht, moeten bij publicatie worden geïnstalleerd.
 
@@ -424,13 +423,13 @@ cURL -i -X POST -H *header* -u *signin* -F *operation* -F *badge* *member-profil
 
 ### Voorbeelden: {#examples}
 
-#### Een moderatorbadge {#assign-a-moderator-badge} toewijzen
+#### Een moderatorbadge toewijzen {#assign-a-moderator-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
 ```
 
-#### Een toegewezen zilversymbool {#revoke-an-assigned-silver-badge} intrekken
+#### Toegewezen zilverbadge intrekken {#revoke-an-assigned-silver-badge}
 
 ```shell
 curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:deleteBadge" -F "badgeContentPath=/libs/settings/community/badging/images/silver/jcr:content/silver.png" /home/users/community/updcs9DndLEI74DB9zsB/profile.social.json
@@ -575,13 +574,13 @@ Als op de inhoud van de website scoring- en badingregels zijn toegepast en badge
 
 Zie de `scoringRules` eigenschap van [Badging Rules](#badging-rules).
 
-### Hoofdlettergevoelig type {#case-sensitive-typo}
+### Hoofdlettergevoelig (typ) {#case-sensitive-typo}
 
 De meeste eigenschappen en waarden, met name de werkwoorden, zijn hoofdlettergevoelig. Bij gebruik in een scoringsubregel moeten de hoekpunten allemaal HOOFDLETTERS zijn.
 
 Als de functie niet naar behoren werkt, controleert u of de gegevens correct zijn ingevoerd.
 
-## Snelle test {#quick-test}
+## Snel testen {#quick-test}
 
 Het is mogelijk om snel scoring en badging te proberen met behulp van de [Aan de slag-zelfstudie](/help/communities/getting-started.md) (engageren) site:
 

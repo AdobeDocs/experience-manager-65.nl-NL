@@ -9,21 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
-# De synchronisatieplanner {#configuring-the-synchronization-scheduler} configureren
+# De synchronisatieplanner configureren {#configuring-the-synchronization-scheduler}
 
 Standaard wordt de synchronisatieplanner na elke 3 minuten uitgevoerd om alle elementen te synchroniseren die via LiveCycle Workbench 11 zijn gewijzigd en bijgewerkt in de opslagplaats. Toepassingen die formulieren en bronnen bevatten, zijn zichtbaar in de AEM Forms-gebruikersinterface nadat het synchronisatieproces is voltooid.
 
-## Het interval van de synchronisatieplanner {#change-interval-of-the-synchronization-scheduler} wijzigen
+## Het interval van de synchronisatieplanner van de verandering {#change-interval-of-the-synchronization-scheduler}
 
 Voer de volgende stappen uit om het interval van de synchronisatieplanner te veranderen:
 
@@ -35,7 +34,7 @@ Voer de volgende stappen uit om het interval van de synchronisatieplanner te ver
 
    De eenheid van de frequentie is minuten. Bijvoorbeeld, om de planner te vormen om na elke 60 minuten te lopen, specificeer 60.
 
-## Elementen {#synchronizing-assets} synchroniseren
+## Elementen synchroniseren {#synchronizing-assets}
 
 Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de elementen handmatig synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
 
@@ -51,7 +50,7 @@ Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de 
 
    **Afbeelding:** *Synchronisatie, dialoogvenster*
 
-## Synchronisatiefout {#troubleshooting-synchronization-error} oplossen
+## Synchronisatiefout voor probleemoplossing {#troubleshooting-synchronization-error}
 
 U kunt nieuwe toepassingen maken in de werkstroomontwerper (LiveCycle Workbench).
 

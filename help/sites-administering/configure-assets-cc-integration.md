@@ -3,9 +3,9 @@ title: AEM Assets-integratie configureren met Experience Cloud
 description: Leer hoe u AEM Assets-integratie met Experience Cloud configureert.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 1%
@@ -36,7 +36,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 >Sharing assets between Adobe Experience Cloud and Adobe Creative Cloud requires administrator privileges on the AEM instance.
 -->
 
-## Een toepassing {#create-an-application} maken
+## Een toepassing maken {#create-an-application}
 
 1. Heb toegang tot de de gatewayinterface van de Ontwikkelaar van Adobe door het programma te openen bij [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
 
@@ -63,7 +63,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
    >
    >Zorg ervoor dat u niet per ongeluk **[!UICONTROL Application Secret]** in plaats van **[!UICONTROL Application ID]** kopieert.
 
-## Nieuwe configuratie toevoegen aan Experience Cloud {#add-a-new-configuration}
+## Een nieuwe configuratie toevoegen aan Experience Cloud {#add-a-new-configuration}
 
 1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-instantie en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
 
@@ -91,7 +91,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 1. Van de configuratiepagina, klik **[!UICONTROL Display Public Key]** om de openbare sleutel te tonen die voor uw instantie wordt geproduceerd. U kunt ook op **[!UICONTROL Download Public Key for OAuth Gateway]** klikken om het bestand met de openbare sleutel te downloaden. Open vervolgens het bestand om de openbare sleutel weer te geven.
 
-## Synchronisatie {#enable-synchronization} inschakelen
+## Synchronisatie inschakelen {#enable-synchronization}
 
 1. Toon de openbare sleutel gebruikend één van de volgende methodes die in de laatste stap van de procedure [worden vermeld voeg een nieuwe configuratie aan Experience Cloud ](#add-a-new-configuration) toe. Klik op **[!UICONTROL Display Public Key]**.
 
@@ -101,7 +101,7 @@ Op de achtergrond, verifieert de AEM server uw profiel met de gateway en synchro
 
 1. Klik op **[!UICONTROL Update]**. Synchroniseer uw elementen nu met de AEM Assets-instantie.
 
-## Synchronisatie {#test-the-synchronization} testen
+## Synchronisatie testen {#test-the-synchronization}
 
 1. Klik op het AEM-logo in de gebruikersinterface van uw lokale AEM Assets-exemplaar en navigeer naar **[!UICONTROL Tools]** **[!UICONTROL Deployment]** **[!UICONTROL Replication]**om de replicatieprofielen te zoeken die voor synchronisatie zijn gemaakt.
 1. Ga naar de pagina **[!UICONTROL Replication]** en klik op **[!UICONTROL Agents on author]**.

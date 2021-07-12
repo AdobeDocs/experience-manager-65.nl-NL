@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
-
 
 # XDP- en PDF-documenten ophalen in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -35,7 +34,7 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 >
 >Zorg ervoor dat u lid bent van de groep `form-power-users` om XDP-bestanden te kunnen uploaden. Neem contact op met de beheerder om lid te worden van de groep.
 
-## Formulieren {#uploading-forms} uploaden
+## Formulieren uploaden {#uploading-forms}
 
 1. Meld u aan bij de AEM Forms-gebruikersinterface door `https://'[server]:[port]'/aem/forms.html` te openen.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
@@ -73,7 +72,7 @@ De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde
 1. Open Mobile Forms Configurations voor bewerking.
 1. Schakel de optie Beveiligde modus uit en klik op **Opslaan**. De beveiligde modus is uitgeschakeld.
 
-## XFA-formulieren waarnaar wordt verwezen {#updating-referenced-xfa-forms} bijwerken
+## XFA-formulieren waarnaar wordt verwezen bijwerken {#updating-referenced-xfa-forms}
 
 In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
@@ -89,4 +88,3 @@ Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formuli
 Er wordt een vlag onderhouden om aan te geven of een adaptief formulier bevuild is. Deze informatie is beschikbaar op de pagina met formuliereigenschappen, naast de metagegevens van het formulier. Alleen voor vuile adaptieve formulieren geeft een metagegevenseigenschap `Model Refresh` `Recommended` waarde weer.
 
 ![Indicatie van een adaptief formulier dat niet synchroon is met het XFA-model](assets/model-refresh.png)
-

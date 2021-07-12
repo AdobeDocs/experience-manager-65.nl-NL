@@ -10,16 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
-feature: Content Fragments
-role: Business Practitioner, Administrator
-translation-type: tm+mt
-source-git-commit: aec4530fa93eacd151ca069c2da5d1bc92408e10
+feature: Contentfragmenten
+role: User, Admin
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 14%
+source-wordcount: '1746'
+ht-degree: 15%
 
 ---
-
 
 # Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
@@ -46,7 +45,7 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 >
 >Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
-## Uw inhoud ontwerpen {#authoring-your-content}
+## Inhoud ontwerpen {#authoring-your-content}
 
 Wanneer u het inhoudsfragment opent voor bewerking, wordt het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. U kunt:
 
@@ -98,7 +97,7 @@ De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) wanneer
 
 * [Visuele elementen in het fragment](#inserting-assets-into-your-fragment)  invoegen (afbeeldingen)
 
-### Opmaak {#formats}
+### Indelingen {#formats}
 
 De opties voor het bewerken van tekst met meerdere regels zijn afhankelijk van de geselecteerde indeling:
 
@@ -165,17 +164,17 @@ U kunt de volledige het schermredacteur voor verdere [acties](#actions) ook open
 >
 >Als u tussen **Tekst met opmaak** en **Markdown** schakelt, kunt u onverwachte effecten met Blokcitaten en Codeblokken ervaren, aangezien deze twee opmaakindelingen verschillen in hoe zij worden behandeld.
 
-### Belangrijkste statistieken {#viewing-key-statistics} weergeven
+### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
 Wanneer de volledige-schermeditor open is, zal de actie **Tekststatistieken** allerlei informatie over de tekst tonen. Bijvoorbeeld:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
-### Inhoud {#uploading-content} uploaden
+### Inhoud uploaden {#uploading-content}
 
 Als u het maken van inhoudsfragmenten wilt vereenvoudigen, kunt u tekst uploaden die is voorbereid in een externe editor en deze rechtstreeks aan het fragment toevoegen.
 
-### Tekst {#summarizing-text} samenvatten
+### Tekst samenvatten {#summarizing-text}
 
 Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst te beperken tot een vooraf gedefinieerd aantal woorden, terwijl de hoofdpunten en de algemene betekenis behouden blijven.
 
@@ -224,7 +223,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 
 1. Selecteer **Samenvatten** om de veranderingen te bevestigen.
 
-### Een inhoudsfragment {#annotating-a-content-fragment} annoteren
+### Een inhoudsfragment annoteren {#annotating-a-content-fragment}
 
 Een fragment annoteren:
 
@@ -238,7 +237,7 @@ Een fragment annoteren:
 
 1. Sluit de volledige-schermredacteur en **sparen** het fragment.
 
-### Annotaties {#viewing-editing-deleting-annotations} weergeven, bewerken en verwijderen
+### Annotaties weergeven, bewerken, verwijderen {#viewing-editing-deleting-annotations}
 
 Annotaties:
 
@@ -256,7 +255,7 @@ Annotaties:
 
 * Kan worden weergegeven en verwijderd in [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) voor het geselecteerde fragment.
 
-### Elementen invoegen in het fragment {#inserting-assets-into-your-fragment}
+### Elementen invoegen in uw fragment {#inserting-assets-into-your-fragment}
 
 Als u het ontwerpen van inhoudsfragmenten wilt vereenvoudigen, kunt u [Middelen](/help/assets/manage-assets.md) (afbeeldingen) rechtstreeks aan het fragment toevoegen.
 
@@ -294,9 +293,9 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. opma
    >* **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
 
 
-## Variaties {#managing-variations} beheren
+## Variaties beheren {#managing-variations}
 
-### Een variatie {#creating-a-variation} maken
+### Een variatie maken {#creating-a-variation}
 
 Met behulp van variaties kunt u de **Master**-inhoud innemen en deze afhankelijk van het doel variëren (indien nodig).
 
@@ -312,7 +311,7 @@ Een nieuwe variatie maken:
    >
    >Wanneer u een nieuwe variant maakt, wordt deze altijd **Master** gekopieerd en niet de variant die momenteel is geopend.
 
-### Een variatie {#editing-a-variation} bewerken
+### Een variatie bewerken {#editing-a-variation}
 
 U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
@@ -321,7 +320,7 @@ U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
 ![cfm-6420-26](assets/cfm-6420-26.png)
 
-### Naam wijzigen van een variatie {#renaming-a-variation}
+### De naam van een variatie wijzigen {#renaming-a-variation}
 
 Een bestaande variatie een andere naam geven:
 
@@ -337,7 +336,7 @@ Een bestaande variatie een andere naam geven:
 >
 >Dit beïnvloedt slechts de variatie **Titel**.
 
-### Een variatie {#deleting-a-variation} verwijderen
+### Een variatie verwijderen {#deleting-a-variation}
 
 Een bestaande wijziging verwijderen:
 
@@ -382,4 +381,3 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Selecteer **Synchronize**, zal de variatie worden bijgewerkt en getoond.
-

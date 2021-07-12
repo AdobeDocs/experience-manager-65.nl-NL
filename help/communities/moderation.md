@@ -10,15 +10,14 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2108'
 ht-degree: 1%
 
 ---
-
 
 # Moderatieconsole {#moderation-console}
 
@@ -65,7 +64,7 @@ Slechts wanneer binnen ondertekend als beheerder, of als lid met [moderatortoest
 
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
-## UI voor moderatieconsole {#moderation-console-ui}
+## Gebruikersinterface van aanpassingsconsole {#moderation-console-ui}
 
 Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie verschijnt), heeft de moderatie UI de volgende belangrijkste gebieden:
 
@@ -111,7 +110,7 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 > 
 >Het inhoudsgebied heeft een *oneindige scroll*, zo betekent het dat u zal blijven scrollen tot u het eind van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
 
-### Rail {#ootbfilters} filteren
+### Rail filteren {#ootbfilters}
 
 ![open-filterrail](assets/open-filterrail.png)
 
@@ -137,7 +136,7 @@ Met Inhoudspad wordt de referentie-UGC beperkt tot de posten die in de opgegeven
 
 ![inhoudspad](assets/content-path.png)
 
-#### Tekstzoekopdracht {#text-search}
+#### Tekst zoeken {#text-search}
 
 Bij zoeken naar tekst wordt de UGC waarnaar wordt verwezen, beperkt tot advertenties waarin de ingevoerde tekst voorkomt.
 
@@ -221,7 +220,7 @@ Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en 
 
 ![leden](assets/members.png)
 
-#### Gepost in laatste {#posted-in-the-last}
+#### Gepost in de laatste {#posted-in-the-last}
 
 Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste uur, de dag, de week, de maand, of het jaar worden getoond.
 
@@ -243,7 +242,7 @@ Met het [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communit
 
 Het voorbeeld voor het filter Codes installeren:
 
-1. Open pakketbeheer op AEM-auteur ([https://[aem-auteur]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie en AEM-publicatieexemplaar ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp)).
+1. Open pakketbeheer op AEM-auteur ([https://[aem-auteur]:4502/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie en AEM-publicatie ([https://[aem-publish]:4503/crx/packmgr/index.jsp](https://aem65-communities-demo.corp.adobe.com:4502/crx/packmgr/index.jsp))-instantie.
 1. Bouw het pakket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` van code van Github, en installeer en laat het zelfde toe.
 1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instantie.
 1. Bouw het pakket ` [com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar` van Github, en installeer en laat het zelfde toe.
@@ -290,7 +289,7 @@ De pictogrammen voor deze handelingen worden alleen op de werkbalk weergegeven a
 
 ![paars](assets/bulkmoderate.png)
 
-### Eén bericht {#moderating-a-single-post} moderniseren
+### Eén artikel moderniseren {#moderating-a-single-post}
 
 In de enkelvoudige selectiemodus is het mogelijk:
 
@@ -319,7 +318,7 @@ De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de t
 
 Wanneer het werken met één enkele post, zal een pictogram van het Antwoord verschijnen als het type UGC antwoorden steunt en wordt gevormd om antwoorden toe te staan.
 
-#### {#allow} toestaan
+#### Toestaan {#allow}
 
 ![toestaan](assets/allow.png)
 
@@ -361,7 +360,7 @@ Bijvoorbeeld:
 
 ![gematigdheid in de geschiedenis](assets/moderation-history.png)
 
-#### Detail {#view-detail} weergeven
+#### Details weergeven {#view-detail}
 
 ![weergave](assets/view.png)
 
@@ -374,4 +373,3 @@ Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-po
 Bijvoorbeeld:
 
 ![view1](assets/view1.png)
-

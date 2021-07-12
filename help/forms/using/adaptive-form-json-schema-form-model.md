@@ -2,11 +2,10 @@
 title: Hoe maakt u een adaptieve Forms met JSON-schema?
 description: Leer hoe u adaptieve formulieren maakt met JSON-schema als formuliermodel. U kunt bestaande JSON-schema's gebruiken om adaptieve formulieren te maken. Dig dieper met een voorbeeld van een JSON-schema, configureer velden vooraf in JSON-schemadefinitie, beperk acceptabele waarden voor een adaptieve formuliercomponent en leer niet-ondersteunde constructies.
 feature: Adaptieve Forms
-role: Business Practitioner, Developer
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-translation-type: tm+mt
-source-git-commit: ad67634278088f8f953fde61a3543acdd70537dd
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 2%
@@ -22,7 +21,7 @@ Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als
 * [Een adaptief formulier maken](creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
-## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
+## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
 [!DNL Adobe Experience Manager Forms] ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan [v4-specificaties](https://json-schema.org/draft-04/schema).
 
@@ -355,7 +354,7 @@ Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configu
 }
 ```
 
-## Scripts of expressies configureren voor formulierobjecten {#configure-scripts-or-expressions-for-form-objects}
+## Scripts of expressies configureren voor formulierobjecten  {#configure-scripts-or-expressions-for-form-objects}
 
 JavaScript is de expressietaal van adaptieve formulieren. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. U kunt formulierobjecten vooraf configureren om een expressie](adaptive-form-expressions.md) op een formuliergebeurtenis te evalueren.[
 
@@ -599,7 +598,7 @@ Hier volgt een voorbeeld van de JSON-code voor eerder vermelde voorbeelden.
 }
 ```
 
-#### Waarde van een ander veld configureren voor gebeurtenis value commit {#configure-value-of-another-field-on-value-commit-event}
+#### Waarde van een ander veld configureren bij gebeurtenis value commit {#configure-value-of-another-field-on-value-commit-event}
 
 ```json
 "Income": {
@@ -623,7 +622,7 @@ Hier volgt een voorbeeld van de JSON-code voor eerder vermelde voorbeelden.
 }
 ```
 
-## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
+## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 
@@ -721,7 +720,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
  </tbody>
 </table>
 
-## Niet-ondersteunde constructies {#non-supported-constructs}
+## Niet-ondersteunde constructies  {#non-supported-constructs}
 
 De volgende JSON-schemaconstructies worden niet ondersteund door adaptieve formulieren:
 

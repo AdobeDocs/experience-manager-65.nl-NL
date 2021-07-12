@@ -6,17 +6,16 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
 
-
-# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens {#forms-centric-workflows-on-osgi-handling-user-data} verwerken
+# Forms-gecentreerde workflows op OSGi | Gebruikersgegevens verwerken {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Met Forms-gerichte AEM-workflows kunt u real-world Forms-gerichte bedrijfsprocessen automatiseren. Workflows bestaan uit een reeks stappen die worden uitgevoerd in een volgorde die is opgegeven in het bijbehorende workflowmodel. Elke stap voert een specifieke actie uit zoals het toewijzen van een taak aan een gebruiker of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services. Daarom kunnen werkstromen ingewikkelde activiteiten coördineren die om het even welk aspect van Experience Manager impliceren.
 
@@ -125,7 +124,7 @@ Voer de volgende stappen uit om gebruikersgegevens te identificeren en te benade
    >
    >AEM [!DNL Forms]-toepassing slaat ook gegevens op in de offline modus. Het is mogelijk dat gegevens voor een workflowinstantie lokaal op afzonderlijke apparaten worden opgeslagen en naar de [!DNL Forms]-server worden verzonden wanneer de app synchroniseert met de server.
 
-### Gebruikersgegevens {#delete-user-data} verwijderen
+### Gebruikersgegevens verwijderen {#delete-user-data}
 
 U moet een AEM beheerder zijn om gebruikersgegevens uit workflowinstanties te verwijderen door de volgende stappen uit te voeren:
 
@@ -161,4 +160,3 @@ U kunt API&#39;s ook gebruiken om knooppunten en eigenschappen te openen en te v
 * [Programmatoegang tot het AEM JCR](/help/sites-developing/access-jcr.md)
 * [Knooppunten en eigenschappen verwijderen](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API-referentie](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-

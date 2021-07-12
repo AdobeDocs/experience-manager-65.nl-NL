@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
-
 
 # In context Moderatie {#in-context-moderation}
 
@@ -29,7 +28,7 @@ Wanneer het gebruiken van een [moderatieconsole](moderation.md), omvat de inform
 
 Bezoek het moderatieoverzicht voor een beschrijving van [moderatieacties](moderate-ugc.md#moderation-actions).
 
-## Moderatieinterface {#moderation-ui}
+## Moderniseringsinterface {#moderation-ui}
 
 UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van gebruiker geproduceerde inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
 
@@ -135,7 +134,7 @@ Afmelden.
 
 ![moderatie-console-publish](assets/moderation-console-publish.png)
 
-### Community Moderator (#2) {#community-moderator}
+### Moderator van de Gemeenschap (#2) {#community-moderator}
 
 Log in als Aaron McDonald (aaron.mcdonal@mailinator.com), een moderator van de gemeenschap, en open de thread door Forum te selecteren, en lees dan meer voor de bulgvogelpost.
 
@@ -169,4 +168,3 @@ Opmerking:
 * Rebekah heeft geen toegang tot de moderatieconsole.
 
 ![communityforum-auteur](assets/community-forum-author.png)
-

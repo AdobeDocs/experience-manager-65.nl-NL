@@ -8,15 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren en gerelateerde bronnen verwijderen {#deleting-forms-and-related-resources}
 
@@ -24,7 +23,7 @@ U kunt de formulieren en elementen verwijderen om deze elementen uit de gegevens
 
 Als u een element verwijdert uit de instantie Auteur, wordt het element ook verwijderd uit de instantie Publiceren. AEM Forms-server bestaat uit auteur- en publicatieinstanties. De instantie Auteur is bedoeld voor het maken en beheren van formulierelementen en -bronnen. De instantie Publiceren bevat de gepubliceerde formulierelementen en verwante bronnen die beschikbaar zijn voor eindgebruikers.
 
-## Een formulier {#how-to-delete-a-form} verwijderen
+## Een formulier verwijderen {#how-to-delete-a-form}
 
 1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://[hostname]:'port'/aem/forms.html.`
 1. Navigeer naar en selecteer het formulier dat u wilt verwijderen. Klik op ![aem6forms_delete2](assets/aem6forms_delete2.png) van de werkbalk verwijderen en bevestig de verwijderingsbewerking.

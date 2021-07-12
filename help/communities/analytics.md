@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2743'
+source-wordcount: '2742'
 ht-degree: 2%
 
 ---
 
-
-# Analytische configuratie voor functies {#analytics-configuration-for-communities-features}
+# Analytische configuratie voor functies van Gemeenschappen {#analytics-configuration-for-communities-features}
 
 ## Overzicht {#overview}
 
@@ -147,7 +146,7 @@ Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met bet
 
 ### Video-hartslaganalyse {#video-heartbeat-analytics}
 
-Wanneer een licentie wordt gegeven voor de functie Videohartslaganalyse, wordt een `Marketing Cloud Org Id` toegewezen.
+Als er een licentie is voor de functie Videohartslaganalyse, wordt een `Marketing Cloud Org Id` toegewezen.
 
 Om Video toe te laten hartslagrapportering na [het vormen van de het rapportreeks van Analytics voor video rapportering](#adobe-analytics-report-suite-for-video-reporting):
 
@@ -250,7 +249,7 @@ De instellingen opslaan:
 
    ![analytics-enablement-settings](assets/analytics-settings1.png)
 
-### Framework {#create-framework} maken
+### Framework maken {#create-framework}
 
 Nadat de basisverbinding met Adobe Analytics met succes is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het kader is om de eigenschapvariabelen van de Gemeenschappen (AEM) aan (rapportreeks) variabelen Analytics in kaart te brengen.
 
@@ -282,7 +281,7 @@ Het doel van het kader is AEM variabelen toe te wijzen aan analytische variabele
 
 ![analytische actiekader](assets/analytics-framework1.png)
 
-### Selecteer rapportsuite {#select-report-suite}
+### Rapportsuite selecteren {#select-report-suite}
 
 Selecteer de rapportsuite die is ingesteld voor videoverslag.
 
@@ -318,9 +317,9 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
 
 De analytische cloudservice en het framework zijn nu voltooid. De toewijzingen worden gedefinieerd zodra een communitysite is gemaakt en deze Analytics-service is ingeschakeld.
 
-## Analyses inschakelen voor een communautaire site {#enable-analytics-for-a-community-site}
+## Analyses inschakelen voor een Community-site {#enable-analytics-for-a-community-site}
 
-### Inschakelen voor nieuwe communautaire site {#enable-for-new-community-site}
+### Inschakelen voor nieuwe Community-site {#enable-for-new-community-site}
 
 De cloudservice Analytics toevoegen terwijl [een nieuwe communitysite wordt gemaakt](/help/communities/sites-console.md):
 
@@ -372,7 +371,7 @@ Voor een **generische AEM site** die onderdelen van de Gemeenschappen bevat, maa
 </div>
 ```
 
-## Analyses voor functies {#analytics-for-communities-features}
+## Analyses voor functies van Gemeenschappen {#analytics-for-communities-features}
 
 Analytics wordt automatisch gebruikt voor verschillende functies van de Gemeenschappen.
 
@@ -398,7 +397,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [Aan de 
 
 ![map-analytics](assets/map-analytics1.png)
 
-#### Kaart van eVars verzonden met elke gebeurtenis {#map-of-evars-sent-with-each-event}
+#### Kaart met eVars die met elke gebeurtenis worden verzonden {#map-of-evars-sent-with-each-event}
 
 <table>
  <tbody>
@@ -538,7 +537,7 @@ of
 
 * *pad naar community-site-inhoud*:  `/content/sites/<site name>/en`
 
-### Wijzigen van variabele-analysetoewijzing {#modifying-analytics-variable-mapping}
+### Variabele-toewijzing Analytics wijzigen {#modifying-analytics-variable-mapping}
 
 De toewijzing van Analytics Vars en events aan AEM variabelen is zichtbaar van de kaderconfiguratie nadat Analytics voor een communautaire plaats wordt toegelaten.
 
@@ -552,11 +551,11 @@ Als Communities Vars en events toewijzingen overschrijven die al in de rapportsu
 >
 >Het is belangrijk om opnieuw toe te wijzen alvorens de communautaire plaats [published](#publishing-the-community-site) met toegelaten Analytics is, anders is er risico van gegevensverlies.
 
-#### Voorbeeld, stap 1: Analytics evar14 naar toewijzingstabel {#example-step-dragging-analytics-evar-into-mapping-table} slepen
+#### Voorbeeld, stap 1: Analytics evar14 naar toewijzingstabel slepen {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![analytische-mapping-evar](assets/analytics-mapping-evar.png)
 
-#### Voorbeeld stap 2: &#39;x&#39; selecteren om vervangen evar11 {#example-step-selecting-x-to-remove-replaced-evar} te verwijderen
+#### Voorbeeld stap 2: Vervangen evar11 verwijderen door &#39;x&#39; te selecteren {#example-step-selecting-x-to-remove-replaced-evar}
 
 ![analytics-mapping-evar1](assets/analytics-mapping-evar1.png)
 
@@ -564,9 +563,9 @@ Als Communities Vars en events toewijzingen overschrijven die al in de rapportsu
 
 ![analytics-mapping-evar2](assets/analytics-mapping-evar2.png)
 
-## De communautaire site {#publishing-the-community-site} publiceren
+## De website van de Gemeenschap publiceren {#publishing-the-community-site}
 
-### Analyses verifiëren om variabele-toewijzing {#verify-analytics-to-aem-variable-mapping} te AEM
+### Analyses controleren op AEM variabele toewijzing {#verify-analytics-to-aem-variable-mapping}
 
 Het is verstandig om de variabeletoewijzing te controleren voordat de communitysite wordt gepubliceerd, die ook de cloudservice en het framework Analytics publiceert.
 
@@ -603,17 +602,17 @@ Voor specifieke instructies, zie de primaire uitgeverssectie van [Het Opstellen 
 >
 >Het is belangrijk dat de primaire uitgever wordt gevormd om het opiniepeilen van veelvoudige publicatieinstanties te verhinderen.
 
-### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
+### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 De Adobe Analytics-referenties worden versleuteld. Om het repliceren of verzenden van gecodeerde analysegegevens tussen auteur en uitgever te vergemakkelijken, moeten alle AEM instanties dezelfde primaire coderingssleutel delen.
 
 Hiervoor volgt u de instructies op [Crypto Key](/help/communities/deploy-communities.md#replicate-the-crypto-key) repliceren.
 
-### Community Site en Analytics Cloud Service {#publish-community-site-and-analytics-cloud-service} publiceren
+### Community Site en Analytics Cloud Service publiceren {#publish-community-site-and-analytics-cloud-service}
 
 Zodra de Analytics-cloudservice is ingeschakeld voor een communitysite en, indien nodig, de [mapping van Analytics naar AEM variabelen is aangepast](#mapped-analytics-to-aem-variables), is het nodig om de configuratie te repliceren naar de publicatieomgeving door [(re)publishing van de communitysite](/help/communities/sites-console.md#publishing-the-site).
 
-## Rapporten verkrijgen van Analytics {#obtaining-reports-from-analytics}
+## Rapporten van Analytics verkrijgen {#obtaining-reports-from-analytics}
 
 ### Rapportbeheer {#report-management}
 

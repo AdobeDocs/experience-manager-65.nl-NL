@@ -10,17 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2509'
 ht-degree: 1%
 
 ---
 
-
-# Gebruikerssynchronisatie {#communities-user-synchronization} van gemeenschappen
+# Gebruikerssynchronisatie van gemeenschappen {#communities-user-synchronization}
 
 ## Inleiding {#introduction}
 
@@ -32,7 +31,7 @@ In AEM Communities kunnen *sitebezoekers* in de publicatieomgeving (afhankelijk 
 
 Voor meer informatie betreffende gebruikersgegevens, bezoek [Beherende Gebruikers en Gebruikersgroepen](/help/communities/users.md).
 
-## Gebruikers synchroniseren in een publicatiebedrijf {#synchronizing-users-across-a-publish-farm}
+## Gebruikers in een publicatiebedrijf synchroniseren {#synchronizing-users-across-a-publish-farm}
 
 Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de ontwerpomgeving.
 
@@ -42,13 +41,13 @@ Wanneer [topologie](/help/communities/topologies.md) een [publicerend landbouwbe
 
 Wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebruikersgegevens automatisch gesynchroniseerd over publiceer instanties in het landbouwbedrijf.
 
-### Instructies {#user-sync-setup-instructions} voor het instellen van gebruikerssynchronisatie
+### Instructies voor het synchroniseren van gebruikers {#user-sync-setup-instructions}
 
 Voor gedetailleerde, geleidelijke instructies, op hoe te om synchronisatie over toe te laten publiceert landbouwbedrijf, zie:
 
 * [Gebruikerssynchronisatie](/help/sites-administering/sync.md)
 
-## Gebruikerssynchronisatie op de achtergrond {#user-sync-in-the-background}
+## Gebruikerssynchronisatie op de achtergrond  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -62,7 +61,7 @@ Voor gedetailleerde, geleidelijke instructies, op hoe te om synchronisatie over 
 
 ## Wat gebeurt er als ... {#what-happens-when}
 
-### Site publiceren vanuit console Sites van gemeenschappen {#publish-site-from-communities-sites-console}
+### Site publiceren vanuit console Communitysites {#publish-site-from-communities-sites-console}
 
 Wanneer een communitysite op de auteur wordt gepubliceerd via de [Community Sites console](/help/communities/sites-console.md), heeft dit effect als gevolg dat [replicate](/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) de bijbehorende pagina&#39;s worden weergegeven en dat de dynamisch gemaakte community-gebruikersgroepen, inclusief hun lidmaatschap, worden gedistribueerd.
 
@@ -84,11 +83,11 @@ Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het on
 
 Wanneer de [User Administration and Security](/help/sites-administering/security.md) console wordt gebruikt om nieuwe gebruikers toe te voegen in het publicatiemilieu, zal de gebruikerssynchronisatie de nieuwe gebruikers en hun groepslidmaatschap aan andere publiceren instanties synchroniseren, indien nodig. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
 
-### Inhoud gebruikersberichten in publicatie {#user-posts-content-on-publish}
+### Inhoud voor berichten van gebruikers publiceren {#user-posts-content-on-publish}
 
 Voor door de gebruiker gegenereerde inhoud (UGC) worden de gegevens die zijn ingevoerd op een publicatieinstantie benaderd via de [geconfigureerde SRP](/help/communities/srp-config.md).
 
-## Aanbevolen werkwijzen {#bestpractices}
+## Aanbevolen procedures {#bestpractices}
 
 Gebruikerssynchronisatie is standaard **uitgeschakeld**. Als u gebruikerssynchronisatie inschakelt, moet u *bestaande* OSGi-configuraties wijzigen. Er mogen geen nieuwe configuraties worden toegevoegd als gevolg van het inschakelen van gebruikerssynchronisatie.
 
@@ -134,7 +133,7 @@ Configuratie van Apache Sling Sync Agents configureren:
       Deze eindpunten bepalen waar u de inhoud van wilt krijgen en waar u de inhoud wilt duwen. De auteur haalt de inhoud van het gespecificeerde exportereindpunt op en duwt de inhoud aan de uitgevers (buiten de uitgever waarvan het de inhoud haalde).
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe granietdistributie - gecodeerde geheime provider van wachtwoordvervoer {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Hiermee kan de auteur de geautoriseerde gebruiker identificeren, zodat deze kan zien welke machtiging hij heeft om gebruikersgegevens van de auteur te synchroniseren voor publicatie.
 
@@ -277,7 +276,7 @@ Op elke AEM-publicatie-instantie:
 
    ![user-sync-listener](assets/user-sync-listner.png)
 
-### Unieke verkoop-id {#unique-sling-id}
+### Unieke verkoper-id {#unique-sling-id}
 
 AEM auteurinstantie gebruikt Verschuivende identiteitskaart om te identificeren van waar de gegevens komen en aan welke uitgevers het (of niet nodig) het pakket moet terugsturen naar.
 
@@ -334,7 +333,7 @@ Om ervoor te zorgen dat updates correct over uitgevers, op elke AEM publicatiein
 
    ![Fabrikant van Vault-pakket](assets/vault-package-builder-factory.png)
 
-## Probleemoplossing voor distributie bij verkoop in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
+## Probleemoplossing voor verkoopverdeling in AEM Communities {#troubleshoot-sling-distribution-in-aem-communities}
 
 Als de distributie van het Verdelen ontbreekt, probeer de volgende het zuiveren stappen:
 

@@ -9,17 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
-role: Administrator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+role: Admin
+exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
 
-
-# mpeg voor Gemeenschappen {#ffmpeg-for-communities}
+# MPEG voor Gemeenschappen {#ffmpeg-for-communities}
 
 ## Overzicht {#overview}
 
@@ -27,7 +26,7 @@ mpeg is een oplossing voor het converteren en streamen van audio en video en wor
 
 mpeg wordt gebruikt in de auteursomgeving om meta-gegevens voor geupload enablement middelen te verkrijgen evenals een duimnagel te produceren om te tonen wanneer het vermelden van het enablement middel.
 
-## Mpeg {#installing-ffmpeg} installeren
+## Mpeg installeren {#installing-ffmpeg}
 
 MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AEM *auteur*-instantie(s).
 
@@ -44,7 +43,7 @@ MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AE
 
    * Bijvoorbeeld, `ffmpeg -version`.
 
-## MPEG Transcoding Service {#configure-ffmpeg-transcoding-service} configureren
+## MPEG Transcoding Service configureren {#configure-ffmpeg-transcoding-service}
 
 Wanneer MPEG wordt geïnstalleerd, worden standaard meerdere uitvoeringen geconfigureerd (transcoderingen) volgens de [!UICONTROL DAM Update Asset]-workflowdefinitie.
 
@@ -69,6 +68,3 @@ U kunt als volgt de [!UICONTROL DAM Update Asset]-workflow wijzigen en in dit vo
 * Selecteer **[!UICONTROL OK]** om het dialoogvenster `Step Properties` te sluiten.
 
 * Selecteer **[!UICONTROL Save]** om het `DAM Update Asset` werkschema te bewaren.
-
-
-

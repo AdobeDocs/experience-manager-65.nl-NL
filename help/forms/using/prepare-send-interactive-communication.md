@@ -7,17 +7,16 @@ uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
-feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Interactieve communicatie
+exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
+source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2012'
 ht-degree: 0%
 
 ---
 
-
-# Bereid en verzend Interactieve Communicatie gebruikend de Agent UI {#prepare-and-send-interactive-communication-using-the-agent-ui} voor
+# Bereid en verzend Interactieve Communicatie gebruikend de Agent UI voor {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 De agent UI staat de agenten toe om Interactieve Communicatie aan het postproces voor te bereiden en te verzenden. De agent brengt de vereiste wijzigingen aan zoals toegestaan, en legt de Interactieve Mededeling aan een postproces, zoals e-mail of druk voor.
 
@@ -31,7 +30,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 * **Inhoud**: In het lusje van de Inhoud, beheert de Agent de inhoud zoals documentfragmenten en inhoudsvariabelen in de Interactieve Mededeling. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
 * **Bijlagen**: Het lusje van Bijlagen verschijnt in de Agent UI slechts als de Interactieve Communicatie om het even welke gehechtheid heeft of de Agent bibliotheektoegang heeft. De agent mag de bijlagen wel of niet wijzigen of bewerken.
 
-## Bereid Interactieve Communicatie gebruikend de Agent UI {#prepare-interactive-communication-using-the-agent-ui} voor
+## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Selecteer de aangewezen Interactieve Communicatie en tik **[!UICONTROL Open Agent UI]**.
@@ -48,13 +47,13 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
    Ga door met het invoeren van gegevens, het beheren van de inhoud en het beheren van de bijlagen.
 
-### Gegevens {#enter-data} invoeren
+### Gegevens invoeren {#enter-data}
 
 1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden die zijn gemarkeerd met een sterretje (&amp;ast;) in om de knop **Verzenden** in te schakelen.
 
    Tik op de waarde van een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren, of andersom.
 
-### Inhoud {#manage-content} beheren
+### Inhoud beheren {#manage-content}
 
 Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie.
 
@@ -124,21 +123,21 @@ Alinea, werkbalk
 
 Lijst, werkbalk
 
-### Onderdelen van tekst markeren/benadrukken {#highlightemphasize}
+### Tekstgedeelten markeren/benadrukken {#highlightemphasize}
 
 Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewerkbaar fragment te benadrukken.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
-### Opgemaakte tekst {#pasteformattedtext} plakken
+### Opgemaakte tekst plakken {#pasteformattedtext}
 
 ![pasttext](assets/pastedtext.png)
 
-### Speciale tekens invoegen in tekst {#specialcharacters}
+### Speciale tekens in tekst invoegen {#specialcharacters}
 
 De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. De beheerder kan [ondersteuning toevoegen voor meer/aangepaste speciale tekens door aanpassing](/help/forms/using/custom-special-characters.md).
 
-#### Aflevering van bijlage {#attachmentdelivery}
+#### Oplevering van bijlage {#attachmentdelivery}
 
 * Wanneer de interactieve communicatie wordt gerenderd met server-side API&#39;s als een interactieve of niet-interactieve PDF, bevat de gerenderde PDF bijlagen als PDF-bijlagen.
 * Wanneer een postproces verbonden aan een Interactieve Mededeling als deel van wordt geladen Submit gebruikend de UI van de Agent, worden de gehechtheid overgegaan als parameter List&lt;com.adobe.idp.Document> in AttachmentDocs.
@@ -163,7 +162,7 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 * Selectie (oogpictogram): Hiermee\nHiermee sluit u het documentfragment uit van de interactieve communicatie.
 * Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.
 
-### Documentfragmenten {#list-document-fragments} weergeven
+### Documentfragmenten weergeven {#list-document-fragments}
 
 ![listopties](assets/listoptions.png)
 
@@ -178,7 +177,7 @@ U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactie
 
 Adobe raadt u aan deze instructies op volgorde uit te voeren om een interactieve communicatie als concept op te slaan.
 
-### De functie Opslaan als concept {#before-save-as-draft} inschakelen
+### De functie Opslaan als concept inschakelen {#before-save-as-draft}
 
 De functie Opslaan als concept is niet standaard ingeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
@@ -204,17 +203,13 @@ Voer de volgende stappen uit om een Interactieve Mededeling als ontwerp te bewar
 
 Als u de interactieve communicatie eenmaal als concept hebt opgeslagen, tikt u op **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
 
-### Haal het ontwerp van een Interactieve Mededeling {#retrieve-draft} terug
+### Het concept van een interactieve communicatie ophalen {#retrieve-draft}
 
 Nadat u een interactieve communicatie als concept hebt opgeslagen, kunt u deze ophalen om er verder aan te werken. Haal de Interactieve Mededeling terug gebruikend:
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
 [Concepten ] verwijzen naar de unieke id voor de conceptversie die wordt gegenereerd nadat een interactieve communicatie als concept is opgeslagen.
-
->[!NOTE]
->
->Als u wijzigingen aanbrengt in de interactieve communicatie nadat u deze hebt opgeslagen als concept, kan de conceptversie niet worden geopend.
 
 ### Voorbeeld crDocumentInstance SPI-implementatie {#sample-ccrDocumentInstance-spi}
 

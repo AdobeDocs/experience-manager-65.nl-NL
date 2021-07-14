@@ -8,22 +8,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a873cf3e7efd3bc9cd4744bf09078d9040efcdda
+exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
+source-git-commit: aaafda59c63ea47c67ec974263013ead468df9cc
 workflow-type: tm+mt
-source-wordcount: '7013'
+source-wordcount: '7150'
 ht-degree: 0%
 
 ---
 
+# Forms-centric workflow voor OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
 
-# Forms-centric workflow op OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
-
-## Stappen {#forms-workflow-steps} Forms Workflows
+## Stappen Forms Workflow {#forms-workflow-steps}
 
 Forms-workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van Forms-centric workflow voor OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Forms Workflow gebruiken om documentservices te starten, te integreren met de Adobe Sign-handtekeningworkflow en andere AEM Forms-bewerkingen uit te voeren. U hebt [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) nodig om deze stappen in een workflow te gebruiken.
 
-## Taakstap {#assign-task-step} toewijzen
+## Taakstap toewijzen {#assign-task-step}
 
 De taakstap toewijzen maakt een taak en wijst deze toe aan een gebruiker of groep. Naast het toewijzen van de taak geeft de component ook het adaptieve of niet-interactieve PDF-formulier voor de taak op. Het adaptieve formulier is vereist om invoer van gebruikers te accepteren en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt voor workflows die alleen voor revisie zijn.
 
@@ -88,7 +87,9 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **Gebruiker of Groep:** De taak wordt toegewezen aan geselecteerde gebruiker of groep. De optie is beschikbaar wanneer **Aan een specifieke gebruiker of groepoptie** in **opties toewijzen** gebied wordt geselecteerd. In het veld worden alle gebruikers en groepen van de groep met workflowgebruikers weergegeven.\
    In het vervolgkeuzemenu **Gebruiker of Groep** worden de gebruikers en groepen weergegeven waartoe de aangemelde gebruiker toegang heeft. De vertoning van de gebruikersbenaming hangt af van als u toegangstoestemmingen op de **users** knoop in crx-bewaarplaats voor die bepaalde gebruiker hebt.
 
-* **De geadresseerde per e-mail op de hoogte stellen:** Selecteer deze optie om e-mailberichten naar de ontvanger te verzenden. Deze meldingen worden verzonden wanneer een taak aan een gebruiker wordt toegewezen. Schakel de meldingen van AEM webconsole in voordat u deze optie gebruikt. Zie [E-mailmeldingen configureren voor de taakstap toewijzen voor stapsgewijze instructies.](../../forms/using/aem-forms-workflow.md)
+* **[!UICONTROL Send Notification Email]**: Selecteer deze optie als u e-mailberichten wilt verzenden naar de ontvanger. Deze meldingen worden verzonden wanneer een taak wordt toegewezen aan een gebruiker of een groep. Met de optie **[!UICONTROL Recipient Email Address]** kunt u opgeven hoe het e-mailadres moet worden opgehaald.
+
+* **[!UICONTROL Recipient Email Address]**: U kunt e-mailadres in een variabele opslaan, letterlijk een permanent e-mailadres opgeven of standaard e-mailadres gebruiken van de ontvanger die is opgegeven in het profiel van de ontvanger. U kunt de letterlijke waarde of een variabele gebruiken om het e-mailadres van een groep op te geven. De optie Variabele is handig bij het dynamisch ophalen en gebruiken van een e-mailadres. De optie **[!UICONTROL Use default email address of the assignee]** is slechts voor één toegewezen persoon. In dit geval wordt het e-mailadres gebruikt dat is opgeslagen in het gebruikersprofiel van de toewijzing.
 
 * **HTML-e-mailsjabloon**: Selecteer een e-mailsjabloon voor het e-mailbericht. Als u een sjabloon wilt bewerken, wijzigt u het bestand op /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in de crx-repository.
 * **Delegatie toestaan aan:** AEM InBox biedt een optie voor de aangemelde gebruiker om de toegewezen workflow te delegeren aan een andere gebruiker. U kunt delegeren binnen dezelfde groep of aan de werkschemagebruiker van een andere groep. Als de taak aan één enkele gebruiker wordt toegewezen en **sta delegatie aan leden van de bestemmingsgroep** optie wordt geselecteerd, dan is het niet mogelijk om de taak aan een andere gebruiker of een groep te delegeren.
@@ -118,7 +119,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **Gegevens uit volgende stappen tonen:** selecteer deze optie om de huidige ontvanger in staat te stellen de actie te bekijken die is uitgevoerd en de opmerkingen die aan de taak zijn toegevoegd door volgende toewijzingen. Ook kan de huidige toegewezen persoon een document bekijken waarin de voltooide taak is vastgelegd, indien beschikbaar.
 * **Zichtbaarheid van gegevenstype:** standaard kan een toegewezen persoon een document met record weergeven, toewijzingen, actie die is uitgevoerd en opmerkingen die door eerdere en volgende toewijzingen zijn toegevoegd. Gebruik de zichtbaarheid van de optie Gegevenstype om het type gegevens te beperken dat zichtbaar is voor de ontvangers.
 
-## E-mailstap {#send-email-step} verzenden
+## E-mailstap verzenden {#send-email-step}
 
 Met de stap E-mail kunt u een e-mail verzenden, bijvoorbeeld een e-mail met een recorddocument, een koppeling van een adaptief formulier, een koppeling van een interactieve communicatie of met een bijgevoegd PDF-document. De stap E-mail verzenden ondersteunt [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML-e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. U kunt een HTML-e-mailsjabloon gebruiken om de weergave, het kleurenschema en het gedrag van het e-mailadres te definiëren.
 
@@ -152,7 +153,7 @@ Selecteer de optie **Variabele** om de bestandsbijlage op te halen die is opgesl
 
 **Bestandsnaam:** naam van het bestand met e-mailbijlagen. Met de E-mailstap wijzigt u de oorspronkelijke bestandsnaam van de bijlage in de opgegeven bestandsnaam. De naam kan handmatig worden opgegeven of opgehaald uit een eigenschap voor metagegevens van een workflow of een variabele. Gebruik de optie **Letterlijk** als u de exacte waarde kent die u wilt opgeven. Gebruik de optie **Variabele** om de bestandsnaam op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. Gebruik de optie **Ophalen uit een werkstroommetagegevens** wanneer de te gebruiken waarde is opgeslagen in een eigenschap voor werkstroommetagegevens.
 
-## Document met recordstap {#generate-document-of-record-step} genereren
+## Document met recordstap genereren {#generate-document-of-record-step}
 
 Wanneer een formulier wordt ingevuld of verzonden, kunt u het formulier afdrukken of in documentindeling registreren. Dit wordt bedoeld als Document van Verslag (DoR). Met de stap Document van record genereren kunt u een alleen-lezen of interactieve PDF-versie maken van een adaptief formulier. De PDF-versie bevat informatie die in het formulier is ingevuld en de indeling van het adaptieve formulier.
 
@@ -173,7 +174,7 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 **Landinstelling**: Geef de taal van het recorddocument op. Selecteer **Letterlijk** om de landinstelling in een vervolgkeuzelijst te selecteren of selecteer **Variabele** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **en_US** op voor Engels en **fr_FR** voor Frans.
 
-## Service-stap {#invoke-form-data-model-service-step} voor formuliergegevensmodel aanroepen
+## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
 Met [AEM Forms Data Integration](../../forms/using/data-integration.md) kunt u verschillende gegevensbronnen configureren en verbinden. Deze gegevensbronnen kunnen een gegevensbestand, de Webdienst, de dienst van REST, de dienst van OData, en oplossing van CRM zijn. Met AEM Forms Data Integration kunt u een formuliergegevensmodel maken dat verschillende services omvat voor het ophalen, optellen en bijwerken van gegevens in de geconfigureerde database. Met de **Gegevensmodelservice aanroepen** kunt u een formuliergegevensmodel (FDM) selecteren en de services van de FDM gebruiken om gegevens op te halen, bij te werken of toe te voegen aan verschillende gegevensbronnen.
 
@@ -243,6 +244,9 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
    * **Letterlijk:** gebruik de optie wanneer u precies weet welke waarde u moet opgeven. Bijvoorbeeld srose@we.info.
    * **Variabele:** gebruik de optie om de waarde op te halen die in een variabele is opgeslagen.
    * **Ophalen uit metagegevens van workflow:** gebruik de optie wanneer de te gebruiken waarde wordt opgeslagen in een eigenschap voor metagegevens van workflow. Bijvoorbeeld emailAddress.
+   * **[!UICONTROL Relative to Payload]**: Gebruik de optie om de bestandsbijlage op te halen die is opgeslagen op een pad dat relatief is ten opzichte van de laadbewerking. Selecteer de optie en geef de mapnaam op die de bestandsbijlage bevat of geef de naam van de bestandsbijlage op in het tekstvak.
+
+      Als de map Relatief aan Payload in de CRX-opslagplaats bijvoorbeeld een bestandsbijlage bevat op de locatie `attachment\attachment-folder`, geeft u `attachment\attachment-folder` in het tekstvak op nadat u de optie **[!UICONTROL Relative to Payload]** hebt geselecteerd.
    * **JSON-puntnotatie:** gebruik de optie wanneer de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie Puntnotatie JSON is alleen beschikbaar als de optie Invoervelden toewijzen van invoer-JSON is geselecteerd.
    * **Wijs invoervelden toe vanuit invoer-JSON:** geef het pad van een JSON-bestand op om de invoerwaarde van sommige serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON- of Formuliergegevensmodel.
 
@@ -255,7 +259,7 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 * **Uitvoer van service > Uitvoer opslaan naar variabele of een JSON-bestand:** selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan op een absoluut pad, een pad dat relatief is ten opzichte van de laadbewerking of in een variabele.
 * **Sla het JSON-uitvoerdocument op met de onderstaande opties:** Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model.
 
-## Documentstap {#sign-document-step} ondertekenen
+## stap Document ondertekenen {#sign-document-step}
 
 Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te ondertekenen. De stap Document ondertekenen heeft de volgende eigenschappen:
 
@@ -306,7 +310,7 @@ Converteer PDF-documenten naar PostScript. Bij het converteren naar PostScript k
 
 Genereer een PDF-document op basis van een invoerbestand. Het invoerdocument kan relatief zijn ten opzichte van de payload, een absoluut pad hebben, kan zelf worden geladen of worden opgeslagen in een variabele van het gegevenstype Document.
 
-### PDF maken van URL/HTML/ZIP-stap {#create-pdf-from-url-html-zip-step}
+### PDF maken van stap URL/HTML/ZIP {#create-pdf-from-url-html-zip-step}
 
 Hiermee genereert u een PDF-document op basis van de opgegeven URL-, HTML- en ZIP-bestanden.
 
@@ -318,7 +322,7 @@ Hiermee exporteert u gegevens uit een PDF forms- of XDP-bestand. Hiervoor moet u
 
 Hiermee converteert u een PDF-document naar een geselecteerde indeling.
 
-### Niet-interactieve PDF-stap {#generatenoninteractive} genereren
+### Niet-interactieve PDF-stap genereren {#generatenoninteractive}
 
 Een niet-interactieve PDF genereren. Het biedt verschillende aanpassingsopties.
 
@@ -326,11 +330,11 @@ Een niet-interactieve PDF genereren. Het biedt verschillende aanpassingsopties.
 >
 >Met variabelen kunt u het sjabloonbestand voor invoerdocumenten opgeven. Sla het pad van het sjabloonbestand op in een variabele van het gegevenstype String.
 
-### Gegevensstap {#import-data-step} importeren
+### Gegevensstap importeren {#import-data-step}
 
 Hiermee voegt u formuliergegevens samen tot een PDF-formulier. U kunt formuliergegevens importeren in een PDF-formulier.
 
-### DDX-stap {#invokeddx} aanroepen
+### DDX-stap aanroepen {#invokeddx}
 
 Hiermee wordt het DDX-bestand uitgevoerd op de opgegeven kaart met invoerdocumenten en worden de gemanipuleerde PDF-documenten geretourneerd.
 
@@ -338,7 +342,7 @@ Hiermee wordt het DDX-bestand uitgevoerd op de opgegeven kaart met invoerdocumen
 >
 >U kunt variabelen gebruiken om het DDX-bestand voor invoerdocumenten op te geven. Sla het DDX-bestand op in een variabele van het gegevenstype Document of XML.
 
-### Optimize PDF stap {#optimize-pdf-step}
+### Optimize PDF-stap {#optimize-pdf-step}
 
 Hiermee optimaliseert u PDF-bestanden door de grootte ervan te verkleinen. Het resultaat van deze conversie zijn PDF-bestanden die mogelijk kleiner zijn dan de oorspronkelijke versie. Met deze bewerking worden PDF-documenten ook geconverteerd naar de PDF-versie die is opgegeven in de optimalisatieparameters.
 
@@ -352,7 +356,7 @@ Optimalisatie-instellingen bepalen hoe bestanden worden geoptimaliseerd. Hier vo
 * Ingesloten lettertypen verwijderen
 * Transparantiewaarden instellen
 
-### PDF-formulierstap {#renderpdf} renderen
+### PDF-formulierstap renderen {#renderpdf}
 
 Hiermee maakt u een formulier dat is gemaakt in Form Designer (XDP), naar een PDF-formulier.
 
@@ -360,18 +364,18 @@ Hiermee maakt u een formulier dat is gemaakt in Form Designer (XDP), naar een PD
 >
 >Met variabelen kunt u het sjabloonbestand voor invoerdocumenten opgeven. Sla het pad van het sjabloonbestand op in een variabele van het gegevenstype String.
 
-### Stap {#secure-document-step} voor beveiligd document
+### Stap voor beveiligd document {#secure-document-step}
 
 Een document versleutelen, ondertekenen en certificeren. AEM Forms ondersteunt zowel op wachtwoorden gebaseerde versleuteling als versleuteling op basis van certificaten. U kunt ook kiezen uit verschillende algoritmen voor het ondertekenen van documenten. Bijvoorbeeld SHA-256 en SH-512. U kunt de workflowstap ook gebruiken om PDF-documenten door te lezen. De workflowstap biedt opties voor het decoderen van streepjescodes, digitale handtekeningen, het importeren en exporteren van PDF-gegevens en andere opties.
 
-### Verzenden naar printerstap {#send-to-printer-step}
+### Verzenden naar printer, stap {#send-to-printer-step}
 
 Een document rechtstreeks naar een printer verzenden. De volgende toegangsmechanismen voor afdrukken worden ondersteund:
 
 * **Direct toegankelijke printer**: Een printer die op dezelfde computer is geïnstalleerd, wordt een direct toegankelijke printer genoemd en de computer krijgt de naam van de printerhost. Dit type printer kan een lokale printer zijn die rechtstreeks op de computer is aangesloten.
 * **Indirecte toegankelijke printer**: De printer die op een afdrukserver is geïnstalleerd, is toegankelijk vanaf andere computers. Technologieën zoals het algemene UNIX®-afdruksysteem (CUPS) en het Line Printer Daemon-protocol (LPD) zijn beschikbaar voor verbinding met een netwerkprinter. Als u toegang wilt tot een indirecte toegankelijke printer, geeft u de IP of hostnaam van de afdrukserver op. Met behulp van dit mechanisme kunt u een document naar een LPD URI verzenden wanneer het netwerk een LPD loopt. Met het mechanisme kunt u het document doorsturen naar elke printer die is aangesloten op het netwerk waarop een LPD-scherm wordt uitgevoerd.
 
-### Afgedrukte uitvoerstap {#generatePrintedOutput} genereren
+### Afgedrukte uitvoerstap genereren {#generatePrintedOutput}
 
 De stap genereert een PCL-, PostScript-, ZPL-, IPL-, TPCL- of DPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer die door deze stap wordt gegenereerd, kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. U wordt aangeraden deze stap te gebruiken als u formulierontwerpen of gegevens uit een toepassing wilt gebruiken. Als uw formulierontwerpen of formulierontwerpen zich op het netwerk, het lokale bestandssysteem of de HTTP-locatie bevinden, gebruikt u de bewerking generatePrintedOutput.
 

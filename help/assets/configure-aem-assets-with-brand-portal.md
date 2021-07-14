@@ -12,10 +12,10 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: aed6e28d7ff228ecbaeaf0d468d1d9bcb4373f90
 workflow-type: tm+mt
-source-wordcount: '1969'
-ht-degree: 11%
+source-wordcount: '1959'
+ht-degree: 10%
 
 ---
 
@@ -70,13 +70,13 @@ Het wordt aanbevolen om AEM 6.5 te hebben om een AEM instantie van de auteur in 
 
 * Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
 
-Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#default-local-install).
 
 ### Download en installeer AEM nieuwste Service Pack {#servicepack}
 
 Zie voor gedetailleerde instructies
 
-* [Opmerkingen bij de release AEM 6.5 Service Pack](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
+* [Opmerkingen bij de release AEM 6.5 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
 **Neem contact op met de** ondersteuning als u het nieuwste AEM of Service Pack niet kunt vinden.
 
@@ -337,18 +337,18 @@ Voer de volgende stappen uit om de configuratie te valideren:
    >
    >Vermijd onbruikbaar makend om het even welke replicatieagenten, aangezien het de replicatie van de activa (in werking stellen-in-rij) kan veroorzaken om te ontbreken.
    >
-   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen oplossen in parallelle publicatie naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen oplossen in parallelle publicatie naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html?lang=en#connection-timeout).
 
 U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Elementen publiceren van Brand Portal naar AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset Sourcing in Brand Portal
+* [Elementen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset Sourcing in Brand Portal
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Tags publiceren naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
+* [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Zie [Brand Portal documentation](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) voor meer informatie.
+Zie [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor meer informatie.
 
 
 ## Upgradeconfiguratie {#upgrade-integration-65}

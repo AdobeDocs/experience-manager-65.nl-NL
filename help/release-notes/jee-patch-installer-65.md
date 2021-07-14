@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: ecac6269b5e12b847136f4af534016bc7b88bb2b
+source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >[Neem contact op met ](https://www.adobe.com/account/sign-in.supportportal.html) Ondersteuning voor meer informatie of om de pleister te verkrijgen.
 
-## Informatie over het patchinstallatieprogramma {#about-the-patch-installer}
+## Het installatieprogramma van de patch {#about-the-patch-installer}
 
 Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Raadpleeg de nieuwste [Opmerkingen bij de release van Service Pack](sp-release-notes.md) voor een volledige lijst met opgeloste problemen.
 
@@ -58,6 +58,7 @@ LinuxNavigate aan de aangewezen folder, en van een bevelherinnering, type
    * `serializer-2.7.1.jar` tot  `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` tot  `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` tot  `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` tot  `xml-apis-2.7.2.jar`
 
 1. Het selectievakje Configuratiebeheer starten is standaard ingeschakeld. Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen.
 
@@ -70,7 +71,7 @@ LinuxNavigate aan de aangewezen folder, en van een bevelherinnering, type
 
 1. (Alleen JBoss) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss-toepassingsserver.
 
-## Configuratie {#post-deployment-configurations} na implementatie
+## Configuratie na implementatie {#post-deployment-configurations}
 
 ### SAML-configuraties {#saml-configurations}
 

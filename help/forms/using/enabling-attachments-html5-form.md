@@ -9,28 +9,32 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
+source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '353'
+ht-degree: 1%
 
 ---
-
 
 # Bijlagen inschakelen voor een HTML5-formulier {#enabling-attachments-for-an-html-form}
 
 U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
 
-1. Maak een [aangepast profiel](/help/forms/using/custom-profile.md) met multiselect-tekenreekseigenschap `mfAttachmentOptions`.
-1. Geef in het aangepaste profiel de eigenschappen `fileSizeLimit`, `multiSelect` en `buttonTex`t op om opties voor de bestandsbijlage-widget te configureren. Desgewenst kunt u ook meer aangepaste eigenschappen opgeven.
+1. Creeer een [douaneprofiel](/help/forms/using/custom-profile.md) met een `mfAttachmentOptions` multiselect koordbezit. Elke tekenreeks in de eigenschap `mfAttachmentOptions` moet een `property=value`-indeling hebben om opties voor de bestandsbijlage-widget te configureren. De `property` en `value` kunnen om het even welke volgende waarden hebben:
 
-1. Gebruik de volgende configuraties in het aangepaste profiel:
+   | Eigenschap | Waarde |
+   |--- |---|
+   | multiSelect | true of false (standaard true) |
+   | fileSizeLimit | Aantal in MBs (2 MBs door gebrek). Bijvoorbeeld 5. |
+   | buttonText | Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard) |
+   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard) |
 
-   * **multiSelect** -> true of false (standaard true)
-   * **fileSizeLimit** -> value_in_mb (say 5) (standaard 2 MB)
-   * **buttonText** -> Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard)
-   * **Accepteren** -> bestandstypen die worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, afbeelding/&amp;ast;, tekst/&amp;ast;, standaard .pdf&quot;)
+   Bijvoorbeeld:
+
+   ![configureren, opties](assets/mfAttachmentOptions.png)
+
+   Desgewenst kunt u ook meer aangepaste opties voor de eigenschap `mfAttachmentOptions` opgeven.
 
    >[!NOTE]
    >
@@ -53,7 +57,7 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
    >
    >De optie voor het voorvertonen van bestanden is niet beschikbaar voor anonieme gebruikers.
 
-## Indeling {#attachment-submission-format} voor het verzenden van bijlagen
+## Indeling voor het verzenden van bijlagen {#attachment-submission-format}
 
 Als bijlagen zijn ingeschakeld, verzendt het HTML5-formulier meerdelige gegevens. De uit meerdere delen bestaande verzendingsgegevens bestaan uit twee delen **dataXml** en **bijlagen**.
 

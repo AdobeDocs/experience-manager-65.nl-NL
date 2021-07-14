@@ -13,10 +13,10 @@ docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 39a44c4b706f68d2f4f220811aa9bcc80aec55e4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 45%
+source-wordcount: '330'
+ht-degree: 44%
 
 ---
 
@@ -74,4 +74,4 @@ Voer de volgende handelingen uit om het publiceren van de assets naar Brand Port
 
 Meld u nu aan bij Brand Portal om te zien of de gepubliceerde middelen beschikbaar zijn op de interface van Brand Portal.
 
-![bp_landing_page](assets/bp_landing_page.png)
+![bp_landingpage](assets/bp_landingpage.png)

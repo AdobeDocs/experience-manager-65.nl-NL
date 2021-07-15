@@ -1,5 +1,5 @@
 ---
-title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
+title: Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen in Dynamic Media
 description: Leer de beste praktijken voor het optimaliseren van beeldkwaliteit in Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Beheer van bedrijfsmiddelen
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 5%
+source-wordcount: '1440'
+ht-degree: 3%
 
 ---
 
-# Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen {#best-practices-for-optimizing-the-quality-of-your-images}
+# Aanbevolen procedures voor het optimaliseren van de kwaliteit van uw afbeeldingen in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Het optimaliseren van de beeldkwaliteit kan een tijdrovend proces zijn omdat veel factoren bijdragen tot het renderen van acceptabele resultaten. Het resultaat is deels subjectief omdat individuen de beeldkwaliteit anders waarnemen. Gestructureerde experimenten zijn essentieel.
 
@@ -47,7 +47,7 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd om meer te leren over hoe verscherpen en onscherp maskeren in de Experience Manager werken door naar de volgende nuttige bronnen te verwijzen:
 
-Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), dat ook van toepassing is op Experience Manager.
+Tips en trucs: whitepaper [Verscherp afbeeldingen in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf), dat ook van toepassing is op Experience Manager.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -59,14 +59,14 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 * Eenvoudig verscherpen ( `&op_sharpen`) - Vergelijkbaar met het verscherpingsfilter dat in Photoshop wordt gebruikt, wordt met eenvoudige verscherping elementaire verscherping toegepast op de uiteindelijke weergave van de afbeelding na dynamisch vergroten of verkleinen. Deze methode kan echter niet door de gebruiker worden geconfigureerd. De beste manier is om &amp;op_sharpen niet te gebruiken tenzij vereist.
 * Onscherp maskeren ( `&op_USM`) - Onscherp maskeren is een industriestandaard filter voor verscherpen. U kunt afbeeldingen het beste verscherpen met onscherp maskeren volgens de onderstaande richtlijnen. Met Onscherp maskeren kunt u de volgende drie parameters instellen:
 
-   * `&op_sharpen=`bedrag,straal,drempel
+   * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL amount]** (0-5, sterkte van het effect.)
-      * **[!UICONTROL radius]** (0-250, breedte van de &#39;verscherpingslijnen&#39; die worden getekend rond het verscherpte object, zoals wordt gemeten in pixels.)
+      * **[!UICONTROL *hoeveelheid *]**(0-5, sterkte van het effect.)
+      * **[!UICONTROL *straal *]**(0-250, breedte van de &quot;het scherpen lijnen&quot;getekend rond het scherpte voorwerp, zoals gemeten in pixel.)
 
       Onthoud dat de parameterstraal en de hoeveelheid tegen elkaar werken. Het verminderen van straal kan door stijgende hoeveelheid worden gecompenseerd. Met Straal kunt u nauwkeuriger omgaan, aangezien een lagere waarde alleen de randpixels verscherpt, terwijl met een hogere waarde een bredere reeks pixels wordt verscherpt.
 
-      * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
+      * **[!UICONTROL *drempelwaarde *]**(0-255, gevoeligheid van effect.)
 
              Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. Met de parameter **[!UICONTROL threshold]** voorkomt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
          
@@ -74,7 +74,7 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
 
          Help-onderwerp Experience Manager over het verscherpen van een afbeelding.
 
-         Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+         Tips en trucs: whitepaper [Verscherp afbeeldingen in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
       * Met Experience Manager kunt u ook een vierde parameter instellen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 

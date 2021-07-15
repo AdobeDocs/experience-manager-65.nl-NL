@@ -8,9 +8,9 @@ discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: User, Admin
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
 feature: Configuratie
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 Als u Dynamic Media beheert, zijn de volgende onderwerpen van belang:
 
-* [Modus](config-dms7.md)  Dynamic Media-Scene7 configureren - Gebruik deze configuratie als u een nieuwe Dynamic Media-klant bent.
-* [De Dynamic Media-Hybride modus](config-dynamic.md)  configureren - Gebruik deze configuratie als u een bestaande Dynamic Media-Experience Manager voor klantenupgrade bent.
-* [Voorinstellingen afbeelding beheren](managing-image-presets.md)
-* [Viewer-voorinstellingen beheren](managing-viewer-presets.md)
-* [Problemen oplossen in de modus Dynamic Media - Scene7](troubleshoot-dms7.md)
+* [Dynamic Media configureren - Scene7-modus](config-dms7.md)  - Gebruik deze configuratie als u een nieuwe Dynamic Media-klant bent.
+* [Dynamic Media configureren - Hybride modus](config-dynamic.md)  - Gebruik deze configuratie als u een bestaande Dynamic Media-Experience Manager voor klantupgrade bent.
+* [Afbeeldingsvoorinstellingen beheren](managing-image-presets.md)
+* [Viewervoorinstellingen beheren](managing-viewer-presets.md)
+* [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
 
 Zie ook de volgende onderwerpen:
 

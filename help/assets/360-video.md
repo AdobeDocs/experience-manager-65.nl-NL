@@ -11,7 +11,7 @@ docset: aem65
 feature: 360 VR-video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Zie ook [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.m
 
 ## 360 Video in actie {#video-in-action}
 
-Tik [Ruimtestation 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360 graden te bekijken. Tijdens het afspelen van video sleept u de muisaanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
+Selecteer [Ruimtestation 360](https://mobiletest.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) om een browservenster te openen en een video van 360 graden te bekijken. Tijdens het afspelen van video sleept u de muisaanwijzer naar een nieuwe locatie om de weergavehoek te wijzigen.
 
 ![360 Video ](assets/6_5_360videoiss_simplified.png)
 *sampleVideo frame van Space Station 360*
@@ -91,50 +91,50 @@ De hoogte-breedteverhouding is van toepassing op 360 video-elementen voor de pag
 
 Begin met het uploaden van 360 video&#39;s.
 
-## Voorvertoning van 360 video {#previewing-video}
+## Voorvertoning 360-video {#previewing-video}
 
 Met Voorvertoning kunt u zien hoe uw 360-video er uitziet voor klanten en kunt u controleren of deze zich gedraagt zoals u had verwacht.
 
-Zie ook [Viewer-voorinstellingen bewerken](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
+Zie ook [Voorinstellingen voor viewers bewerken](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
 Als u tevreden bent met de 360-video, kunt u deze publiceren.
 
-Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Een voorvertoning van 360 video&#39;s weergeven:**
+**Een voorvertoning van 360 video weergeven:**
 
-1. Navigeer in **[!UICONTROL Assets]** naar een bestaande 360-video die u hebt gemaakt. Tik op het 360 Video-element zodat u dit kunt openen in de voorvertoningsmodus.
+1. Navigeer in **[!UICONTROL Assets]** naar een bestaande 360-video die u hebt gemaakt. Selecteer het 360 Video-element zodat u het kunt openen in de voorvertoningsmodus.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Tik op het video-element 360 zodat u een voorvertoning van de video kunt bekijken.
+   Selecteer het 360-video-element zodat u een voorvertoning van de video kunt bekijken.
 
-1. Tik op de voorvertoningspagina linksboven op de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
+1. Selecteer op de voorvertoningspagina, linksboven op de pagina, de vervolgkeuzelijst en selecteer **[!UICONTROL Viewers]**.
 
    ![6_5_360video-voorvertoning-viewers](assets/6_5_360video-preview-viewers.png)
 
-   Tik in de lijst Viewers op **[!UICONTROL Video360_social]** en voer een van de volgende handelingen uit:
+   Selecteer **[!UICONTROL Video360_social]** in de lijst Viewers en voer een van de volgende handelingen uit:
 
    * Sleep de muisaanwijzer over de video als u de kijkhoek van de statische scène wilt wijzigen.
-   * Tik op de knop **[!UICONTROL Play]** als u wilt beginnen met afspelen. Terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
+   * Selecteer de **[!UICONTROL Play]** knoop van de video als u met playback wilt beginnen. Terwijl de video wordt afgespeeld, sleept u de muisaanwijzer over de video om de kijkhoek te wijzigen.
 
    ![6_5_360video-voorvertoning-video360-](assets/6_5_360video-preview-video360-social.png)*socialA 360 videoscreenshot.*
 
-   * Tik in de lijst Viewers op **[!UICONTROL Video360VR]**.
+   * Selecteer **[!UICONTROL Video360VR]** in de lijst Viewers.
 
       VR-video (Virtual Reality) is overweldigende video-inhoud die wordt benaderd met headsets van virtuele realiteit. Net als bij gewone video&#39;s maakt u aan het begin VR-video&#39;s wanneer een video wordt opgenomen of vastgelegd met videocamera&#39;s van 360 graden.
    ![6_5_360video-voorvertoning-video360vr](assets/6_5_360video-preview-video360vr.png)
    *Een videoschermafbeelding van 360 VR.*
 
-1. Tik rechtsboven op de voorvertoningspagina op **[!UICONTROL Close]**.
+1. Selecteer **[!UICONTROL Close]** rechtsboven op de voorvertoningspagina.
 
 ## 360-video publiceren {#publishing-video}
 
 Publiceer de 360-video zodat u deze kunt gebruiken. Wanneer u een 360-video publiceert, wordt de URL en de insluitcode geactiveerd. Het publiceert ook de 360 Video aan de wolk van Dynamic Media die met een CDN voor scalable en prestatieslevering geïntegreerd is.
 
-Zie [Dynamic Media Assets publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360 Video.
-Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [Dynamic Media-elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van 360-video.
+Zie ook [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 Zie ook [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 Zie ook [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).

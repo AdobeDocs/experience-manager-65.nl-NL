@@ -7,9 +7,9 @@ content-type: reference
 feature: Toegankelijkheid
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Aangezien [!DNL Dynamic Media] een insteekmodule is naar [!DNL Adobe Experience Manager Assets], is het meeste gedrag voor toetsenbordbesturing hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] en reageert op de `Spacebar` toets als in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Toetsen die worden ondersteund door afzonderlijke elementen van de gebruikersinterface in [!DNL Dynamic Media] zijn meestal duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in [!DNL Dynamic Media] gaat over het volgende:
+Toetsen die door afzonderlijke elementen van de gebruikersinterface in [!DNL Dynamic Media] worden ondersteund, zijn duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in [!DNL Dynamic Media] gaat over het volgende:
 
 * Mogelijkheid om met de toetsen `Tab` en `Shift+Tab` te navigeren tussen interactieve elementen op de pagina.
 Wanneer u `Tab` gebruikt, wordt de invoerfocus naar het volgende interface-element in de tabvolgorde verplaatst. wanneer u `Shift+Tab` gebruikt, krijgt het vorige gebruikersinterface-element weer focus.
@@ -35,7 +35,7 @@ Het focustraversal volgt de natuurlijke locatie van het interface-element op het
    * Gebruik de pijltoetsen om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
    * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
    * De volgende vier `Tab` einden zijn de vier hoeken van het kader. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
-Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+Zie [De slimme uitsnijding of het slimme staal van één afbeelding bewerken](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 

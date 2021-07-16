@@ -11,10 +11,10 @@ docset: aem65
 feature: Carousel-banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '4655'
-ht-degree: 4%
+source-wordcount: '4646'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +24,7 @@ Met carrouselbanners kunnen marketers de conversie stimuleren door eenvoudig int
 
 Het maken en wijzigen van inhoud in promotiebanners kan tijdrovend zijn, waardoor u minder snel nieuwe inhoud kunt publiceren of deze doelgerichter kunt maken. Met carrouselbanners kunt u snel roterende banners maken of wijzigen. U kunt interactiviteit toevoegen zoals hotspots die aan productdetails of verwante middelen verbinden, en hen leveren aan om het even welk scherm - latend u nieuwe promotionele inhoud aan markt sneller brengt.
 
-Carousel Banners worden aangeduid door een banner met het woord **[!UICONTROL CAROUSELSET]**
+Carrouselbanners worden aangeduid door een banner met het woord **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -32,7 +32,7 @@ Op uw website kan een carrouselbanner er als volgt uitzien:
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-Hier kunt u door de afbeeldingen navigeren (door op de nummers te klikken). Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen die u in carrouselbanners toevoegt, ondersteunen zowel hotspots als afbeeldingen met hyperlinks, waar gebruikers op een hyperlink kunnen tikken of naar een hyperlink kunnen gaan of een Quickview-venster kunnen openen.
+Hier kunt u door de afbeeldingen navigeren (door op de nummers te klikken). Bovendien worden de dia&#39;s automatisch geroteerd op basis van een tijdsinterval dat u kunt aanpassen. Afbeeldingen die u in carrouselbanners toevoegt, ondersteunen zowel hotspots als afbeeldingen met hyperlinks, waarbij gebruikers een hyperlink kunnen selecteren of naar een hyperlink kunnen gaan of toegang kunnen krijgen tot een Quickview-venster.
 
 In dit voorbeeld heeft een gebruiker op een afbeelding met hyperlinks getikt of erop geklikt en heeft hij het venster QuickView voor handschoenen geopend:
 
@@ -46,9 +46,9 @@ Speel een analyse op [hoe carrouselbanners worden gecreeerd](https://s7d5.scene7
 >
 >Gebruikers zonder beheerdersrechten moeten worden toegevoegd aan de groep **[!UICONTROL dam-users]** om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u kan toevoegen aan de groep **[!UICONTROL dam-users]**.
 
-## Snel starten: Carousel Banners {#quick-start-carousel-banners}
+## Snel starten: Carousel-banners {#quick-start-carousel-banners}
 
-Zo kunt u snel aan de slag met Carousel Banners:
+Zo kunt u snel aan de slag met carrouselbanners:
 
 1. [Identificeer hotspot en beeldkaartvariabelen](#identifying-hotspot-and-image-map-variables)  (slechts voor klanten die de Middelen van de Experience Manager + Dynamic Media gebruiken)
 
@@ -69,21 +69,21 @@ Zo kunt u snel aan de slag met Carousel Banners:
 
    Upload afbeeldingsbanners die u interactief wilt maken.
 
-1. [Maak een Carousel-set](#creating-carousel-sets).
+1. [Carrouselsets](#creating-carousel-sets) maken.
 
-   In Carousels Sets navigeert de gebruiker door bannerafbeeldingen en tikt hij op hotspots of afbeeldingen met hyperlinks om toegang te krijgen tot relevante inhoud.
+   In de Reeksen van Carrousels, navigeren de gebruikers door bannerbeelden en selecteren hotspots of beeldkaarten om tot relevante inhoud toegang te hebben.
 
-   Tik op **[!UICONTROL Create]** en selecteer vervolgens **[!UICONTROL Carousel Sets]** om een carrouselset te maken in Assets. Voeg assets toe aan dia&#39;s en tik op **[!UICONTROL Save]**. U kunt de weergave en het gedrag van de carrousel ook rechtstreeks in de editor bewerken.
+   Als u een Carousel-set in Elementen wilt maken, selecteert u **[!UICONTROL Create]** en selecteert u **[!UICONTROL Carousel Sets]**. Voeg elementen toe aan dia&#39;s en selecteer **[!UICONTROL Save]**. U kunt de weergave en het gedrag van de carrousel ook rechtstreeks in de editor bewerken.
 
 1. [Voeg hotspots of afbeeldingen met hyperlinks toe aan een afbeeldingsbanner](#adding-hotspots-or-image-maps-to-an-image-banner).
 
    Voeg een of meer hotspots of afbeeldingen met hyperlinks toe aan een afbeeldingsbanner en koppel deze aan een actie zoals een koppeling, een Snelle weergave of een Experience-fragment. Nadat u hotspots of afbeeldingen met hyperlinks hebt toegevoegd, kunt u deze taak voltooien door de carrouselset te publiceren. Met Publiceren maakt u de insluitcode die u kunt gebruiken om de bestemmingspagina van uw website te kopiëren en toe te passen.
 
-   Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners) - Optioneel. U kunt desgewenst een voorstelling van de carrouselset weergeven en de interactiviteit ervan testen.
+   Zie [(Optioneel) Voorvertoning carrouselbanners](#optional-previewing-carousel-banners) - Optioneel. U kunt desgewenst een voorstelling van de carrouselset weergeven en de interactiviteit ervan testen.
 
 1. [Carrouselbanners](#publishing-carousel-banners) publiceren.
 
-   U publiceert een Carousel-set op dezelfde manier als elk ander element. Navigeer in Elementen naar de Carousel-set, selecteer deze en tik **[!UICONTROL Publish]**. Wanneer u een Carousel-set publiceert, worden de URL en de insluitreeks geactiveerd.
+   U publiceert een Carousel-set op dezelfde manier als elk ander element. Navigeer in Elementen naar de Carousel-set, selecteer deze en selecteer **[!UICONTROL Publish]**. Wanneer u een Carousel-set publiceert, worden de URL en de insluitreeks geactiveerd.
 
 1. Voer een van de volgende handelingen uit:
 
@@ -124,7 +124,7 @@ Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de 
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
-* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 (Vensters) of Command-Option-I (MAC) om het paneel van de Hulpmiddelen van de Ontwikkelaar te openen, en dan het lusje van het Netwerk te tikken.
+* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 (Vensters) of Command-Option-I (MAC) om het paneel van de Hulpmiddelen van de Ontwikkelaar te openen, en dan het lusje van het Netwerk te selecteren.
 * In Firefox kunt u de Firebug-plug-in activeren door op F12 (Windows) of Command-Option-I (Mac) te drukken en het tabblad Net te gebruiken. U kunt ook het ingebouwde paneel en het bijbehorende tabblad Netwerk gebruiken.
 
 Wanneer netwerkcontrole in browser wordt aangezet, teweeg de Snelle mening op de pagina.
@@ -177,9 +177,9 @@ Bekijk de volgende voorbeelden van URL&#39;s in QuickView en de resulterende hot
  </tbody>
 </table>
 
-## Beeldbanners uploaden {#uploading-image-banners}
+## Afbeeldingsbanners uploaden {#uploading-image-banners}
 
-Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Carousel-sets maken](#creating-carousel-sets). Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
+Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Carrouselsets maken](#creating-carousel-sets). Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
 
 Zie [Elementen uploaden](/help/assets/manage-assets.md) om afbeeldingsbanners te uploaden.
 
@@ -189,19 +189,19 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md) om afbeeldingsbanners te
 >
 >Gebruikers zonder beheerdersrechten moeten worden toegevoegd aan de groep **[!UICONTROL dam-users]** om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u kan toevoegen aan de groep **[!UICONTROL dam-users]**.
 
-**Een Carousel-set maken:**
+**Carousel-sets maken:**
 
-1. Navigeer in Elementen naar de map waar u de Carousel-set wilt maken en tik **[!UICONTROL Create > Carousel Set]**.
-1. Tik op de pagina Carousel Banner Editor op **[!UICONTROL Tap to open Asset Selector]** om de afbeelding voor de eerste dia te selecteren.
+1. Navigeer in Elementen naar de map waar u de Carousel-set wilt maken en ga naar **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**.
+1. Selecteer **[!UICONTROL Tap to open Asset Selector]** op de pagina voor de editor van de carrouselbanner om de afbeelding voor de eerste dia te selecteren.
 
-   Voer een van de volgende handelingen uit op de pagina Carousel Banner Editor:
+   Voer een van de volgende handelingen uit op de pagina voor de editor van carrouselbanners:
 
-   * Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Add Slide]** pictogram.
+   * Selecteer **[!UICONTROL Add Slide]** pictogram in de linkerbovenhoek van de pagina.
 
-   * Tik in het midden van de pagina op **[!UICONTROL Tap to open Asset Selector]**.
-   Tik om assets te selecteren die u in de carrouselset wilt opnemen. Geselecteerde assets hebben een vinkje. Tik op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina als u klaar bent.
+   * Selecteer **[!UICONTROL Tap to open Asset Selector]** in het midden van de pagina.
+   Selecteer deze optie om de elementen te selecteren die u in de Carousel-set wilt opnemen. Geselecteerde assets hebben een vinkje. Als u klaar bent, selecteert u **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
 
-   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
+   Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken of klikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en selecteer vervolgens het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door te tikken op het pictogram Weergave en **[!UICONTROL Column View]**, **[!UICONTROL Card View]** of **[!UICONTROL List View]** te selecteren.
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
 
@@ -209,13 +209,13 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md) om afbeeldingsbanners te
 1. (Optioneel) Voer een van de volgende handelingen uit:
 
    * Sleep indien nodig dia&#39;s om de volgorde van de afbeeldingen in de lijst te wijzigen.
-   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Slide]** op de werkbalk.
+   * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en selecteert u **[!UICONTROL Delete Slide]** op de werkbalk.
 
-   * Als u een voorinstelling wilt toepassen, klikt u in de rechterbovenhoek van de pagina op de vervolgkeuzelijst met voorinstellingen en selecteert u vervolgens een voorinstelling die u tegelijk op de set wilt toepassen.
-   Als u een dia wilt verwijderen, tikt u op de dia of klikt u op **[!UICONTROL Delete Slide]** in de werkbalk. Als u een dia wilt verplaatsen, tikt u op het pictogram voor herschikking en houdt u de muisknop ingedrukt en verplaatst u de gewenste locatie.
+   * Als u een voorinstelling wilt toepassen, selecteert u in de rechterbovenhoek van de pagina de vervolgkeuzelijst met voorinstellingen en selecteert u vervolgens een voorinstelling die u tegelijkertijd op de set wilt toepassen.
+   Als u een dia wilt verwijderen, selecteert u de dia en vervolgens **[!UICONTROL Delete Slide]** op de werkbalk. Als u een dia wilt verplaatsen, selecteert u het pictogram voor opnieuw ordenen en houdt u de muisknop ingedrukt en gaat u naar de gewenste locatie.
 
-1. Nadat u de afbeeldingen in dia&#39;s hebt toegevoegd, kunt u een hotspot, afbeelding met hyperlinks of beide toevoegen aan uw afbeelding. Zie [hotspots of afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
-1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen. Tik op de tabbladen **[!UICONTROL Behavior]** en **[!UICONTROL Appearance]** en pas aan hoe de carrouselbanner eruitziet of hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
+1. Nadat u de afbeeldingen in dia&#39;s hebt toegevoegd, kunt u een hotspot, afbeelding met hyperlinks of beide toevoegen aan uw afbeelding. Zie [Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner](#adding-hotspots-or-image-maps-to-an-image-banner).
+1. U kunt het visuele ontwerp en het gedrag van carrouselsets wijzigen. Selecteer de tabbladen **[!UICONTROL Behavior]** en **[!UICONTROL Appearance]** en pas aan hoe de carrouselbanner wordt weergegeven of hoe specifieke componenten zich gedragen. Zie [Voorinstellingen voor viewers beheren](/help/assets/viewer-presets.md) voor meer informatie over het gebruik van de viewer-editor.
 
    >[!NOTE]
    >
@@ -228,11 +228,11 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md) om afbeeldingsbanners te
    >    * Voordat u een viewervoorinstelling bewerkt, kiest u de stijl waarop de voorinstelling moet zijn gebaseerd. Als u geen stijl kiest en de voorinstelling van de viewer gaat bewerken, gaan alle wijzigingen verloren als u besluit dat u een andere voorinstelling wilt gebruiken.
 
    >
-   >Zie [Speciale overwegingen voor Carousel Banners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) voor gedetailleerde instructies en meer informatie over de viewer editor.
+   >Zie [Speciale overwegingen voor carrouselbanners](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset) voor gedetailleerde instructies en meer informatie over de viewer-editor.
 
-   U kunt ook een voorvertoning weergeven van de wijze waarop de carrouselbanner wordt weergegeven. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
+   U kunt ook een voorvertoning weergeven van de wijze waarop de carrouselbanner wordt weergegeven. Zie [(Optioneel) Voorvertoning van carrouselbanners](#optional-previewing-carousel-banners).
 
-1. Tik **[!UICONTROL Save]** als u klaar bent.
+1. Selecteer **[!UICONTROL Save]** wanneer gebeëindigd.
 
 ## Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner {#adding-hotspots-or-image-maps-to-an-image-banner}
 
@@ -244,7 +244,7 @@ Zie [Fragment ervaren](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
->De gereedschappen voor het delen van sociale media in de Carousel Banner worden niet ondersteund wanneer u de viewer insluit in een Experience Fragment.
+>De gereedschappen voor het delen van sociale media in carrouselbanner worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment.
 >
 >Om dit probleem te verhelpen, kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
@@ -252,49 +252,49 @@ Terwijl u hotspots of afbeeldingen met hyperlinks toevoegt aan een afbeelding, v
 
 Wanneer u klaar bent met het maken van uw carrouselbanner, kunt u Voorvertoning optioneel gebruiken om een voorstelling te zien van hoe uw carrouselbanner aan klanten wordt weergegeven.
 
-Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
+Zie [(Optioneel) Voorvertoning van carrouselbanners](#optional-previewing-carousel-banners).
 
 >[!NOTE]
 >
->Wanneer u hotspots toevoegt aan een afbeelding in een [Interactieve afbeelding](/help/assets/interactive-images.md) of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
-Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd deze regel in gedachten als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. Overweeg om interactieve afbeeldingen en carrouselbanners te maken met aparte kopieën van dezelfde afbeelding.
+>Wanneer u hotspots toevoegt aan een afbeelding in een [Interactieve afbeelding](/help/assets/interactive-images.md) of een carrouselbanner, wordt de hotspot-informatie opgeslagen op dezelfde metagegevenslocatie. Deze locatie is relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit betekent dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
+Houd er echter rekening mee dat carrouselbanners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd deze regel in gedachten als u een interactieve afbeeldings- of carrouselbanner wilt maken die dezelfde afbeelding gebruikt. Overweeg interactieve afbeeldingen en carrouselbanners te maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
 Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
 
-Zie ook [Afbeeldingskaarten toevoegen](/help/assets/image-maps.md).
+Zie ook [Afbeeldingen met hyperlinks toevoegen](/help/assets/image-maps.md).
 
 **Hotspots of afbeeldingen met hyperlinks toevoegen aan een afbeeldingsbanner:**
 
 1. Navigeer vanuit Middelen naar de carrouselset die u interactief wilt maken.
-1. Selecteer de carrouselset en tik **[!UICONTROL Edit]**. De Carousel Viewer Editor wordt geopend.
+1. Selecteer de carrouselset en selecteer **[!UICONTROL Edit]**. De Carousel Viewer Editor wordt geopend.
 1. Selecteer de dia die u interactief wilt maken.
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot]** of **[!UICONTROL Image Map]**.
+1. Selecteer **[!UICONTROL Hotspot]** of **[!UICONTROL Image Map]** in de linkerbovenhoek van de pagina.
 1. Voer een van de volgende handelingen uit:
 
-   * Voor hotspots: Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven.
-   * Voor afbeeldingen met hyperlinks: Klik in de afbeelding en sleep van linksboven naar rechtsonder om het gebied met de afbeeldingskaart te maken. U kunt de grootte van de afbeelding met hyperlinks aanpassen door de hoeken te slepen.
+   * Voor hotspots: Selecteer in de afbeelding een locatie waar u de hotspot wilt weergeven.
+   * Voor afbeeldingen met hyperlinks: Selecteer in de afbeelding de optie en sleep van linksboven naar rechtsonder om het gebied met de afbeelding met hyperlinks te maken. U kunt de grootte van de afbeelding met hyperlinks aanpassen door de hoeken te slepen.
 
    Sleep indien nodig de hotspot of de afbeelding met hyperlinks naar een nieuwe locatie. Voeg desgewenst extra hotspots of afbeeldingen met hyperlinks toe.
 
-   Tik op het tabblad **[!UICONTROL Actions]** om een hotspot of afbeelding met hyperlinks te verwijderen. Selecteer onder de kop **[!UICONTROL Maps & Hotspots]** in het vervolgkeuzemenu **[!UICONTROL Selected Type]** de naam van de hotspot of de afbeelding met hyperlinks die u wilt verwijderen. Tik op het pictogram **[!UICONTROL Trash]** naast het menu en tik vervolgens op **[!UICONTROL Delete]**.
+   Als u een hotspot of afbeelding met hyperlinks wilt verwijderen, selecteert u het tabblad **[!UICONTROL Actions]**. Selecteer onder de kop **[!UICONTROL Maps & Hotspots]** in het vervolgkeuzemenu **[!UICONTROL Selected Type]** de naam van de hotspot of de afbeelding met hyperlinks die u wilt verwijderen. Selecteer **[!UICONTROL Trash]** pictogram naast het menu, dan uitgezocht **[!UICONTROL Delete]**.
 
 1. Typ in het tekstveld Naam de naam van de hotspot of de afbeelding met hyperlinks. Deze naam wordt ook weergegeven in de vervolgkeuzelijst **[!UICONTROL Maps & Hotspot]**. Als u een naam opgeeft, kunt u de hotspot of de afbeelding met hyperlinks gemakkelijk herkennen als u deze later wilt wijzigen.
 1. Voer op het tabblad **[!UICONTROL Actions]** een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Quickview]**.
+   * Selecteer **[!UICONTROL Quickview]**.
 
-      * Als u een klant van de Plaatsen van de Experience Manager en van de Handel bent, tik het pictogram van de Plukker van het Product (vergrootglas) om de Uitgezochte pagina van het Product te openen. Tik op het product dat u wilt gebruiken en tik vervolgens op het vinkje in de rechterbovenhoek van de pagina, zodat u terug kunt keren naar de Carousel Banner Editor.
+      * Als u een klant van de Plaatsen van de Experience Manager en van de Handel bent, selecteer het pictogram van de Plukker van het Product (vergrootglas) om de Uitgezochte pagina van het Product te openen. Selecteer het product dat u wilt gebruiken en selecteer vervolgens het vinkje in de rechterbovenhoek van de pagina zodat u kunt terugkeren naar de editor voor carrouselbanners.
       * Als u geen de Plaatsen van de Experience Manager of de consument van de Handel bent
 
          * Zie [Hotspot-variabelen identificeren](#identifying-hotspot-and-image-map-variables) als u deze variabelen wilt definiëren.
          * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u moet gebruiken om een product verder te identificeren. Geef in het tekstveld een extra variabele op. category=Mens is bijvoorbeeld een toegevoegde variabele.
+         * (Optioneel) Als de Snelle weergave andere variabelen bevat die u moet gebruiken om een product nader te identificeren, selecteert u **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. category=Mens is bijvoorbeeld een toegevoegde variabele.
 
          * Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
-   * Tik op **[!UICONTROL Hyperlink]**.
+   * Selecteer **[!UICONTROL Hyperlink]**.
 
-      * Als u een klant van de Plaatsen van de Experience Manager bent, tik het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren.
+      * Als u een klant van de Plaatsen van de Experience Manager bent, selecteer het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren.
          >[!NOTE]
          De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
 
@@ -304,21 +304,21 @@ Zie ook [Afbeeldingskaarten toevoegen](/help/assets/image-maps.md).
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
 
-   * Tik op **[!UICONTROL Experience Fragment]**.
+   * Selecteer **[!UICONTROL Experience Fragment]**.
 
-      * Als u een klant van de Plaatsen van de Experience Manager bent, tik het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Tik op het gewenste fragment voor beleving of klik op het gewenste fragment. Tik vervolgens op Selecteren in de rechterbovenhoek van de pagina zodat u terug kunt keren naar de pagina Hotspot-beheer.
+      * Als u een klant van de Plaatsen van de Experience Manager bent, selecteer het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Selecteer het gewenste fragment van de Ervaring, dan uitgezocht **[!UICONTROL Select]** in de hoger-juiste hoek van de pagina zodat kunt u aan de pagina van het hotspot beheer terugkeren.
 Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals dit op de banner wordt weergegeven.
 
          >[!NOTE]
-         De gereedschappen voor het delen van sociale media in de Carousel Banner worden niet ondersteund wanneer u de viewer insluit in een Experience Fragment.
+         De gereedschappen voor het delen van sociale media in carrouselbanner worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment.
          U kunt dit probleem omzeilen door viewervoorinstellingen te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    U kunt ook een voorvertoning weergeven van de wijze waarop de carrouselbanner wordt weergegeven. Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-previewing-carousel-banners).
 
-1. Tik op **[!UICONTROL Save]**.
+1. Selecteer **[!UICONTROL Save]**.
 1. Publiceer de carrouselset. Bij het publiceren wordt de insluitcode of URL gemaakt die u op uw websitepagina kunt gebruiken. Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de carrousel toevoegen die direct aan uw webpagina wordt geplaatst.
 
    Zie [Elementen publiceren](/help/assets/publishing-dynamicmedia-assets.md).
@@ -339,25 +339,25 @@ U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 * Verwijder de carrouselset.
 * Voeg hotspots en afbeeldingen met hyperlinks toe of bewerk deze. Zie ook [Werken met kiezers](/help/assets/working-with-selectors.md).
 
-**Een Carousel-set bewerken**
+**Carrouselsets bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de cursor boven een Carousel-set-element en tik op **[!UICONTROL Edit]** (potloodpictogram).
-   * Houd de cursor boven een Carousel-set-element, tik **[!UICONTROL Select]** (vinkpictogram) en tik **[!UICONTROL Edit]** op de werkbalk.
+   * Houd de cursor boven een Carousel-set-element en selecteer **[!UICONTROL Edit]** (potloodpictogram).
+   * Houd de cursor boven een Carousel-set-element, selecteer **[!UICONTROL Select]** (vinkpictogram) en selecteer **[!UICONTROL Edit]** op de werkbalk.
 
-   * Tik op een Carousel-set-element en tik vervolgens in de linkerbovenhoek van de pagina **[!UICONTROL Edit]** (potloodpictogram).
+   * Selecteer een Carousel-set-element en selecteer **[!UICONTROL Edit]** (potloodpictogram) in de linkerbovenhoek van de pagina.
 
 1. Voer een van de volgende handelingen uit om de Carousel-set te bewerken:
 
-   * Als u een dia wilt toevoegen, tikt u op het pictogram **[!UICONTROL Add Slide]** en navigeert u naar het element dat u aan die dia wilt toevoegen. Tik vervolgens op het vinkje.
+   * Als u een dia wilt toevoegen, selecteert u het pictogram **[!UICONTROL Add Slide]** en navigeert u naar het element dat u aan die dia wilt toevoegen. Selecteer vervolgens het vinkje.
    * Als u de volgorde van dia&#39;s wilt wijzigen, sleept u een dia naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
-   * Als u een hotspot of afbeelding met hyperlinks wilt toevoegen, klikt u op de pictogrammen voor hotspots of afbeeldingen met hyperlinks en ziet u [hotspots en afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
-   * Tik op het tabblad **[!UICONTROL Appearance]** of **[!UICONTROL Behavior]** en stel de gewenste opties in om de weergave of het gedrag van de carrouselset te bewerken.
+   * Als u een hotspot of afbeelding met hyperlinks wilt toevoegen, selecteert u de pictogrammen voor hotspots of afbeeldingen met hyperlinks. Zie [hotspots en afbeeldingen met hyperlinks toevoegen](#adding-hotspots-or-image-maps-to-an-image-banner).
+   * Als u de weergave of het gedrag van de carrouselset wilt bewerken, selecteert u de tab **[!UICONTROL Appearance]** of **[!UICONTROL Behavior]** en stelt u de gewenste opties in.
    * Als u hotspots of afbeeldingen met hyperlinks wilt bewerken, selecteert u op de juiste dia een hotspot of afbeelding met hyperlinks en wijzigt u desgewenst onder het tabblad **[!UICONTROL Actions]**.
-   * Als u een dia wilt verwijderen, selecteert u de dia en tikt u op **[!UICONTROL Delete Slide]** op de werkbalk.
-   * Tik op de vervolgkeuzelijst **[!UICONTROL Preset]** en selecteer een voorinstelling voor de viewer om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
-   * Als u een volledige Carousel-set wilt verwijderen, navigeert u naar de Carousel-set, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
+   * Als u een dia wilt verwijderen, selecteert u deze en selecteert u **[!UICONTROL Delete Slide]** op de werkbalk.
+   * Als u een voorinstelling wilt toepassen, selecteert u in de rechterbovenhoek van de pagina de vervolgkeuzelijst **[!UICONTROL Preset]** en selecteert u vervolgens een voorinstelling voor de viewer.
+   * Als u een volledige Carousel-set wilt verwijderen, navigeert u naar de Carousel-set, selecteert u deze en selecteert u **[!UICONTROL Delete]**.
 
    >[!NOTE]
    Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt, worden de hotspots verwijderd.
@@ -375,21 +375,21 @@ U kunt carrouselbanners voorvertonen vanuit de Carousel Editor (voorkeursmethode
 
 **Een voorvertoning weergeven van carrouselbanners:**
 
-1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en tik om deze te openen.
-1. Tik op **[!UICONTROL Edit]**.
+1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en selecteer deze om deze te openen.
+1. Selecteer **[!UICONTROL Edit]**.
 1. Selecteer in de lijst met voorinstellingen voor viewers in de rechterhoek van de werkbalk een viewer voor een voorvertoning van de carrouselbanner.
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. Tik op **[!UICONTROL Preview]**.
-1. Tik op de hotspots of afbeeldingen met hyperlinks in de afbeelding, zodat u de bijbehorende handelingen kunt testen.
+1. Selecteer **[!UICONTROL Preview]**.
+1. Selecteer de hotspots of afbeeldingen met hyperlinks in de afbeelding, zodat u de bijbehorende handelingen kunt testen.
 
 **Een voorvertoning van carrouselbanners weergeven in de lijst Viewers:**
 
-1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en tik om deze te openen.
-1. Klik in de linkerbovenhoek van de voorvertoningspagina op het pictogram Inhoud.
-1. Tik in de lijst **[!UICONTROL Viewers]** in het deelvenster aan de linkerkant van de pagina op de naam van de voorinstelling voor de carrouselbannerviewer die u wilt gebruiken.
-1. Tik op de hotspots of afbeeldingen met hyperlinks in de afbeelding, zodat u de bijbehorende handelingen kunt testen.
+1. Navigeer in **[!UICONTROL Assets]** naar een bestaande carrouselbanner die u hebt gemaakt en selecteer deze om deze te openen.
+1. Selecteer het pictogram Inhoud in de linkerbovenhoek van de voorvertoningspagina.
+1. Selecteer in de lijst **[!UICONTROL Viewers]** in het deelvenster aan de linkerkant van de pagina de naam van de voorinstelling voor de carrouselbannerviewer die u wilt gebruiken.
+1. Selecteer de hotspots of afbeeldingen met hyperlinks in de afbeelding, zodat u de bijbehorende handelingen kunt testen.
 
 ## Carrouselbanners publiceren {#publishing-carousel-banners}
 
@@ -411,14 +411,15 @@ Als u een klant van de Plaatsen van de Experience Manager bent, kunt u de carrou
 Als u echter een zelfstandige Experience Manager bent, kunt u de carrouselbanner handmatig toevoegen aan de bestemmingspagina van uw website, zoals beschreven in deze sectie.
 
 1. Kopieer de insluitcode van de gepubliceerde carrouselset.
-Zie [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
+Zie [Video of Afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md).
 
 1. Voeg de insluitcode die u hebt gekopieerd van Experience Manager Assets toe aan uw webpagina.
 De gekopieerde insluitcode reageert, zodat deze automatisch in het insluitingsgebied van de pagina past.
 
-## De Carousel Banner integreren met een bestaande QuickView {#integrating-the-carousel-banner-with-an-existing-quickview}
+## De carrouselbanner integreren met een bestaande QuickView {#integrating-the-carousel-banner-with-an-existing-quickview}
 
-Opmerking: deze stap is alleen van toepassing als u een zelfstandige klant voor Experience Manager Assets bent.
+>[!NOTE]
+Deze stap is alleen van toepassing als u een zelfstandige klant voor Experience Manager Assets bent.
 
 De laatste stap in dit proces is het integreren van de carrouselbanner met een bestaande implementatie van QuickView op uw website. Elke implementatie van QuickView is uniek en een specifieke benadering is nodig die de hulp van een front-end IT persoon impliceert.
 
@@ -448,10 +449,10 @@ Het is dus alleen nodig de commentaarmarkering van de code ongedaan te maken en 
 
 Het proces voor het samenstellen van de URL van de Snelle weergave is tegengesteld aan het proces voor het identificeren van hotspot- en afbeeldingskaartvariabelen die eerder zijn behandeld.
 
-Zie [Variabelen van hotspot en afbeeldingen met hyperlinks identificeren](#identifying-hotspot-and-image-map-variables).
+Zie [Variabelen van hotspot en afbeelding met hyperlinks identificeren](#identifying-hotspot-and-image-map-variables).
 
 De laatste stap om de Quickview URL teweeg te brengen en het paneel van de Snelle mening te activeren vereist hoogstwaarschijnlijk de hulp van een front-end persoon van IT van uw afdeling van IT. Zij hebben de kennis om het best te weten hoe te om de implementatie van de Snelle mening van de juiste stap nauwkeurig teweeg te brengen, die een klaar-aan-gebruiksKickview URL hebben.
 
-## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+## Aangepaste pop-ups maken met Snelle weergave {#using-quickviews-to-create-custom-pop-ups}
 
-Zie [Aangepaste pop-ups maken met Snelle weergaven](/help/assets/custom-pop-ups.md).
+Zie [Aangepaste pop-ups maken met QuickView](/help/assets/custom-pop-ups.md).

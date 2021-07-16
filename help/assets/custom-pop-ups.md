@@ -12,26 +12,26 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1088'
 ht-degree: 0%
 
 ---
 
-# QuickView gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
+# Aangepaste pop-ups maken met Snelle weergave {#using-quickviews-to-create-custom-pop-ups}
 
-De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functie op een hotspot, een miniatuurafbeelding of op een afbeelding met hyperlinks tikken om informatie of verwante inhoud te zien.
+De standaard Snelle mening wordt gebruikt in e-commerceervaringen waarbij pop-up met productinformatie wordt getoond om een aankoop te drijven. U kunt echter aangepaste inhoud activeren om weer te geven in de pop-ups. Afhankelijk van de viewer kunnen gebruikers met deze functionaliteit een hotspot, miniatuurafbeelding of een afbeelding met hyperlinks selecteren om informatie of verwante inhoud te zien.
 
 QuickView wordt ondersteund door de volgende viewers in Dynamic Media:
 
-* Interactieve afbeeldingen (klikbare hotspots)
+* Interactieve afbeelding (klikbare hotspots)
 * Interactieve video (aanklikbare miniatuurafbeeldingen tijdens het afspelen van video)
-* Carrouselbanners (aanklikbare hotspots of afbeeldingen met hyperlinks)
+* Carrouselbanner (aanklikbare hotspots of afbeeldingen met hyperlinks)
 
 Hoewel de functionaliteit van elke viewer verschilt, is het proces voor het maken van een QuickView hetzelfde voor alle drie ondersteunde viewers.
 
-**Met de Snelle weergave kunt u aangepaste pop-ups maken:**
+**Aangepaste pop-ups maken met Snelle weergave:**
 
 1. Maak een Snelle weergave voor een geüpload element.
 

@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Klassieke functies toevoegen aan uw pagina
+title: Klassieke Dynamic Media-functies toevoegen aan uw pagina
 description: Leer hoe u klassieke Dynamic Media-functies en -componenten aan uw Adobe Experience Manager-pagina kunt toevoegen.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
 workflow-type: tm+mt
 source-wordcount: '2711'
 ht-degree: 0%
 
 ---
 
-# Dynamic Media Klassieke functies toevoegen aan uw pagina {#adding-scene-features-to-your-page}
+# Klassieke Dynamic Media-functies toevoegen aan uw pagina {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) Classics is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media middelen aan Web, mobiel, e-mail, en Internet-verbonden vertoningen en druk.
 
@@ -51,7 +51,7 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 
 >[!NOTE]
 >
->Experience Manager publiceert asynchroon naar Dynamic Media Classic. Nadat u op **[!UICONTROL Publish]** hebt geklikt, duurt het enkele seconden voordat uw element naar Dynamic Media Classic wordt gepubliceerd.
+>Experience Manager publiceert asynchroon naar Dynamic Media Classic. Nadat u **[!UICONTROL Publish]** hebt geselecteerd, duurt het enkele seconden voordat uw element naar Dynamic Media Classic wordt gepubliceerd.
 
 
 ## Dynamic Media Classic-componenten {#scene-components}
@@ -78,9 +78,7 @@ Nadat de componenten in de modus **[!UICONTROL Design]** beschikbaar zijn gemaak
 
 Vanaf 31 januari 2017 is ondersteuning voor het Flash-viewerplatform beëindigd voor Adobe Dynamic Media Classic.
 
-<!-- For more information about this important change, see [Flash Viewer End-of-Life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
-
-### Een Dynamic Media Classic (Scene7)-component toevoegen aan een pagina {#adding-a-scene-component-to-a-page}
+### Een klassieke Dynamic Media-component (Scene7) aan een pagina toevoegen {#adding-a-scene-component-to-a-page}
 
 Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina is het zelfde als het toevoegen van een component aan om het even welke pagina. Klassieke Dynamic Media-componenten worden in de volgende secties uitgebreid beschreven.
 
@@ -88,17 +86,17 @@ Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina 
 
 1. Open in Experience Manager de pagina waar u de **[!UICONTROL Dynamic Media Classic (Scene7)]**-component wilt toevoegen.
 
-1. Als er geen Klassieke Dynamic Media-componenten beschikbaar zijn, klikt u op **[!UICONTROL Design]**-modus, tikt u op een component met een blauwe rand, tikt u op het pictogram **[!UICONTROL Parent]** en vervolgens op het pictogram **[!UICONTROL Configuration]**. Selecteer in **[!UICONTROL Parsys (Design)]** alle Klassieke Dynamic Media-componenten om deze beschikbaar te maken en klik op **[!UICONTROL OK]**.
+1. Als er geen Klassieke Dynamic Media-componenten beschikbaar zijn, selecteert u **[!UICONTROL Design]**-modus, selecteert u een component met een blauwe rand, selecteert u het pictogram **[!UICONTROL Parent]** en vervolgens het pictogram **[!UICONTROL Configuration]**. Selecteer in **[!UICONTROL Parsys (Design)]** alle Klassieke Dynamic Media-componenten om deze beschikbaar te maken en selecteer **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Klik **[!UICONTROL Edit]** zodat kunt u op **[!UICONTROL Edit]** wijze terugkeren.
+1. Selecteer **[!UICONTROL Edit]** zodat u op **[!UICONTROL Edit]** wijze kunt terugkeren.
 
 1. Sleep een component van de Klassieke groep van Dynamic Media in de sidekick op de pagina in de gewenste plaats.
 
-1. Klik op het pictogram **[!UICONTROL Configuration]** zodat u de component kunt openen.
+1. Selecteer het pictogram **[!UICONTROL Configuration]** zodat u de component kunt openen.
 
-1. Bewerk de component naar wens en klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Bewerk de component naar wens en selecteer **[!UICONTROL OK]** om de wijzigingen op te slaan.
 1. Sleep de afbeelding of video van de inhoudbrowser naar de klassieke Dynamic Media-component die u aan de pagina hebt toegevoegd.
 
    >[!NOTE]
@@ -120,7 +118,7 @@ Zie ook [Responsief ontwerp voor webpagina&#39;s](/help/sites-developing/respons
    >Als de Klassieke componenten van Dynamic Media niet beschikbaar zijn, zeker [om hen als wijze van het Ontwerp toe te laten](/help/sites-authoring/default-components-designmode.md).
 
 1. In een website waarvoor **[!UICONTROL Dynamic Media Classic]**-componenten zijn ingeschakeld, sleept u een **[!UICONTROL Image]**-component naar de pagina.
-1. Selecteer de component en tik op het configuratiepictogram.
+1. Selecteer de component en selecteer het configuratiepictogram.
 1. Pas op het tabblad **[!UICONTROL Dynamic Media Classic Settings]** de onderbrekingspunten aan.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -143,13 +141,13 @@ U stelt deze configuratieopties in door een klassieke Dynamic Media-component te
 
 De component HTML5 Zoom geeft een grotere afbeelding weer wanneer u op de knop **[!UICONTROL +]** drukt.
 
-Het element heeft onderaan zoomgereedschappen. Tik **[!UICONTROL +]** als u wilt vergroten; Tik **[!UICONTROL -]** als u wilt verminderen. Als u op **[!UICONTROL x]** of de zoompijl opnieuw instellen tikt, wordt de oorspronkelijke grootte van de afbeelding hersteld wanneer deze als geïmporteerd werd. Tik op de diagonale pijlen zodat u deze volledig scherm kunt weergeven. Tik **[!UICONTROL Edit]** zodat u de component kunt configureren. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten](#settings-common-to-all-scene-components).
+Het element heeft onderaan zoomgereedschappen. Selecteer **[!UICONTROL +]** als u wilt vergroten; Selecteer **[!UICONTROL -]** als u wilt verminderen. Als u op **[!UICONTROL x]** of de zoompijl opnieuw instellen tikt, wordt de oorspronkelijke grootte van de afbeelding hersteld wanneer deze als geïmporteerd werd. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteer **[!UICONTROL Edit]** zodat u de component kunt vormen. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
-In de HTML5 **[!UICONTROL Flyout]**-component wordt het element weergegeven als gesplitst scherm. het element in de opgegeven grootte laten staan; rechts wordt het zoomgedeelte weergegeven. Tik **[!UICONTROL Edit]** zodat u de component kunt configureren. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle Klassieke componenten van Dynamic Media](#settings-common-to-all-scene-components).
+In de HTML5 **[!UICONTROL Flyout]**-component wordt het element weergegeven als gesplitst scherm. het element in de opgegeven grootte laten staan; rechts wordt het zoomgedeelte weergegeven. Selecteer **[!UICONTROL Edit]** zodat u de component kunt vormen. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle Klassieke componenten van Dynamic Media](#settings-common-to-all-scene-components).
 
 >[!NOTE]
 >
@@ -189,7 +187,7 @@ Met de Klassieke Dynamic Media-component **[!UICONTROL Image]** kunt u Klassieke
 
 [Dynamic Media Classic Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) Templatesare gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
 
-Tik **[!UICONTROL Edit]** als u de component wilt configureren. U kunt [instellingen configureren die hetzelfde zijn voor alle klassieke Dynamic Media-componenten](#settings-common-to-all-scene-components) en andere instellingen die in deze sectie worden beschreven.
+Selecteer **[!UICONTROL Edit]** als u de component wilt vormen. U kunt [instellingen configureren die hetzelfde zijn voor alle klassieke Dynamic Media-componenten](#settings-common-to-all-scene-components) en andere instellingen die in deze sectie worden beschreven.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -211,7 +209,7 @@ Tik **[!UICONTROL Edit]** als u de component wilt configureren. U kunt [instelli
 
 #### Tekst dynamisch wijzigen {#changing-text-dynamically}
 
-Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en klikt u op **[!UICONTROL OK]**. In dit voorbeeld is **[!UICONTROL Price]** nu $50 en is de verzending 99 cent.
+Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en selecteert u **[!UICONTROL OK]**. In dit voorbeeld is **[!UICONTROL Price]** nu $50 en is de verzending 99 cent.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -221,7 +219,7 @@ De tekst in de afbeelding verandert. U kunt de tekst terugzetten naar de oorspro
 
 #### Tekst wijzigen om de waarde van de context van een client weer te geven {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Als u een veld aan een clientcontextwaarde wilt koppelen, tikt u op **[!UICONTROL Select]** om het contextmenu van de client te openen, selecteert u de clientcontext en tikt u op **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
+Als u een veld aan een clientcontextwaarde wilt koppelen, selecteert u **[!UICONTROL Select]** om het contextmenu van de client te openen, selecteert u de clientcontext en selecteert u **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -231,12 +229,12 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 #### Een koppeling maken van de klassieke Dynamic Media-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
 
-1. Tik op **[!UICONTROL Edit]** op de pagina met de klassieke Dynamic Media-component **[!UICONTROL Image Template]**.
+1. Selecteer **[!UICONTROL Edit]** op de pagina met de klassieke Dynamic Media-component **[!UICONTROL Image Template]**.
 1. Voer in het veld **[!UICONTROL URL]** de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. Selecteer in het veld **[!UICONTROL Open in]** of u het doel wilt openen (een nieuw venster of hetzelfde venster).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tik op **[!UICONTROL OK]**.
+1. Selecteer **[!UICONTROL OK]**.
 
 ### Video-component {#video-component}
 
@@ -248,7 +246,7 @@ Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
+### Bekende beperkingen van de video-component {#known-limitations-for-the-video-component}
 
 Adobe DAM en WCM laten zien of een primaire bronvideo is geüpload. Deze proxy-elementen worden niet weergegeven:
 
@@ -311,7 +309,7 @@ U kunt zowel de klassieke interface als de interface met geoptimaliseerde aanrak
 
 Wanneer u in een van beide UI zoekt, kunt u filteren op de volgende criteria (die hier in de voor aanraking geoptimaliseerde UI worden getoond):
 
-**[!UICONTROL Enter keywords]** - U kunt elementen zoeken op naam. Bij het zoeken zijn de ingevoerde trefwoorden de beginwaarden van de bestandsnaam. Als u bijvoorbeeld het woord &quot;zwemmen&quot; typt, wordt gezocht naar namen van elementbestanden die met die letters in die volgorde beginnen. Tik op Enter nadat u de term hebt getypt om het element te zoeken.
+**[!UICONTROL Enter keywords]** - U kunt elementen zoeken op naam. Bij het zoeken zijn de ingevoerde trefwoorden de beginwaarden van de bestandsnaam. Als u bijvoorbeeld het woord &quot;zwemmen&quot; typt, wordt gezocht naar namen van elementbestanden die met die letters in die volgorde beginnen. Druk op Enter nadat u de term hebt getypt om het element te zoeken.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 

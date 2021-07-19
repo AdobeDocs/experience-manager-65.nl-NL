@@ -1,38 +1,35 @@
 ---
-title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.5
-seo-title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Dynamic Media.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Dynamic Media.
+title: Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in Experience Manager 6.5 voor Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Bijwerken
+exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
 
+# Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-# Herstructurering van Dynamic Media-opslagplaats in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
+Zoals beschreven op de bovenliggende [Repository Reform in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar Experience Manager 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die van invloed zijn op Dynamic Media. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
-Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de Dynamic Media-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
-
-**Voorafgaand aan toekomstige upgrade**
+**Voor toekomstige upgrade**
 
 * [Aangepaste configuraties voor adaptieve videocodering](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
 * [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
 * [Configuratie van Dynamic Media (DM Hybrid)-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Media - Configuratie YouTube-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Dynamic Media - YouTube Cloud Service Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Dic](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
-## Vóór toekomstige upgrade {#prior-to-upgrade}
+## Voor toekomstige upgrade {#prior-to-upgrade}
 
-### Aangepaste configuraties voor adaptieve videocodering {#custom-adaptive-video-encoding-configurations}
+### Aangepaste configuraties voor adaptieve videocodering  {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -41,12 +38,12 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/dam/video/dynamicmedia</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/conf/global/settings/dam/dm/presets/video/jcr:content</code></td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>U kunt het volgende migratiescript in werking stellen om aan de nieuwe plaats te migreren:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in AEM UI en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
+   <td><p>U kunt het volgende migratiescript in werking stellen om aan de nieuwe plaats te migreren:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in de gebruikersinterface van de Experience Manager en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -64,7 +61,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/cloudservices/dmscene7</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/conf/global/settings/cloudservices/dmscene7</code></td>
   </tr>
   <tr>
@@ -82,7 +79,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Dynamic Media (DM Hybrid) configuratie Cloud Service {#cloudserviceconfiguration}
+### Dynamic Media (DM Hybrid) configuratie van de Cloud Service {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -91,7 +88,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/cloudservices/dynamicmediaservices</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/conf/global/settings/dam/dm/cloudservices/dynamicmediaservices</code></td>
   </tr>
   <tr>
@@ -105,7 +102,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Dynamic Media - configuratie YouTube-Cloud Service {#youtubecloudserviceconfiguration}
+### Dynamic Media - configuratie YouTube-Cloud Service  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -114,12 +111,12 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/cloudservices/youtube</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/libs/settings/dam/dm/youtube</code></td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>1. Publiceer alle video's van YouTube<br /> 2. Creeer de Configuratie YouTube gebruikend nieuwe TouchUI (van <code>/conf</code>) met inbegrip van het kopiëren van alle Kanalen van de oude plaats<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een nieuwe TouchUI YouTube-config maakt, worden er meerdere YouTube-URL's weergegeven onder Eigenschappen, omdat de opnieuw gemaakte kanalen bij deze gelegenheid opnieuw zullen publiceren. Dit betekent dat u nutteloze URLs hebt die onder Eigenschappen wordt vermeld.</p> </td>
+   <td><p>1. Publiceer alle video's van YouTube<br /> 2. Creeer de Configuratie van YouTube gebruikend nieuwe TouchUI (van <code>/conf</code>) met inbegrip van het kopiëren van alle Kanalen van de oude plaats<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -128,7 +125,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
  </tbody>
 </table>
 
-### Diverse {#misc}
+### Dic {#misc}
 
 <table>
  <tbody>
@@ -137,12 +134,12 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/dam/imageserver/macros</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/conf/global/settings/dam/dm/presets/macro</code></td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>De klant kan het onderstaande migratiescript uitvoeren.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in AEM UI en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
+   <td><p>De klant kan het onderstaande migratiescript uitvoeren.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in de gebruikersinterface van de Experience Manager en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -158,7 +155,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
    <td><code>/etc/dam/presets/analytics</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locaties</strong></td>
    <td><code>/libs/settings/dam/dm/analytics</code></td>
   </tr>
   <tr>
@@ -171,4 +168,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
   </tr>
  </tbody>
 </table>
-

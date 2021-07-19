@@ -11,7 +11,7 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Middelenbeheer, uitvoeringen
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 1%
@@ -37,12 +37,12 @@ Met Dynamic Media hebt u verschillende opties:
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
-* [Dynamic Media-middelen toevoegen aan webpagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md)
-* [Video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md)
-* [Hotlinkbeveiliging in Dynamic Media activeren](/help/assets/hotlink-protection.md)
+* [Dynamic Media-elementen toevoegen aan webpagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [De video- of afbeeldingsviewer insluiten op een webpagina](/help/assets/embed-code.md)
+* [Hotlink-beveiliging activeren in Dynamic Media](/help/assets/hotlink-protection.md)
 * [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md)
-* [Geoptimaliseerde afbeeldingen voor een responsieve site leveren](/help/assets/responsive-site.md)
-* [HTTP2 Levering van inhoud](/help/assets/http2.md)
+* [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](/help/assets/responsive-site.md)
+* [HTTP2-levering van content](/help/assets/http2.md)
 * [De CDN-cache ongeldig maken via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Regels gebruiken om URL&#39;s te transformeren](/help/assets/using-rulesets-to-transform-urls.md)
 
@@ -51,4 +51,4 @@ Raadpleeg de volgende onderwerpen voor meer informatie:
 
 Experience Manager ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
-Zie [HTTP/2 Levering van inhoud Veelgestelde vragen](/help/sites-administering/scene7-http2faq.md) voor meer informatie.
+Voor meer informatie, zie [HTTP/2 levering van inhoud vaak gestelde vragen](/help/sites-administering/scene7-http2faq.md).

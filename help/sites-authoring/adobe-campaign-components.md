@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 90c99e527a40bb663d4f32d8746b46cf34a2319f
+exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '2854'
+source-wordcount: '2845'
 ht-degree: 0%
 
 ---
 
-
-# Adobe Campaign Components{#adobe-campaign-components}
+# Adobe Campaign-componenten{#adobe-campaign-components}
 
 Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u met nieuwsbrieven en met formulieren werkt. Beide worden in dit document beschreven.
 
@@ -29,7 +28,7 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 >
 >E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Deze vervangen onderdelen mogen echter niet worden gebruikt voor projecten.
 
-## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
+## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
 Alle componenten van de Campagne volgen de beste praktijken die in [Beste praktijken voor E-mailMalplaatjes ](/help/sites-administering/best-practices-for-email-templates.md) worden geschetst en zijn gebaseerd op de de prijsverhogingstaal van Adobe [HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
@@ -96,7 +95,7 @@ Nadat de afbeelding is geüpload (en niet eerder), kunt u [Bewerken op plaats ve
 >
 >Afhankelijk van uw exemplaar, kunnen de minimum en maximumbeperkingen ook door het [ontwerp van pagina](/help/sites-developing/designer.md) worden opgelegd; deze worden ontwikkeld tijdens de uitvoering van het project .
 
-In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
+Er zijn verschillende aanvullende opties beschikbaar in de modus Volledig scherm; bijvoorbeeld toewijzen en zoomen:
 
 ![](do-not-localize/chlimage_1-11.png)
 
@@ -172,9 +171,9 @@ In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergeg
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-### Scene7-afbeeldingssjabloon (campagne) {#scene-image-template-campaign}
+### Dynamic Media Classic (Scene7) afbeeldingssjabloon (campagne) {#scene-image-template-campaign}
 
-[Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Templatesare layered zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
+Dynamic Media Classic (Scene7)-afbeeldingssjablonen zijn gelaagde afbeeldingsbestanden waarin inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -246,7 +245,7 @@ In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die w
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Tekst en personalisatie (campagne) {#text-personalization-campaign}
+### Tekst en persoonlijke voorkeur (campagne) {#text-personalization-campaign}
 
 De component van de Tekst &amp; van de Personalisatie (Campagne) laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door [Rich Text redacteur](/help/sites-authoring/rich-text-editor.md) wordt verstrekt. Daarnaast kunt u met deze component contextvelden en personaliseringsblokken gebruiken die beschikbaar zijn in Adobe Campaign. Zie ook [Personalisatie invoegen](/help/sites-authoring/campaign.md#inserting-personalization).
 
@@ -334,7 +333,7 @@ In de volgende tabel worden de componenten beschreven die beschikbaar zijn om Ad
  </tbody>
 </table>
 
-### Gemeenschappelijke instellingen voor de meeste componenten {#settings-common-to-most-components}
+### Instellingen die door de meeste componenten worden gebruikt {#settings-common-to-most-components}
 
 De Adobe Campaign-componenten hebben dezelfde instellingen voor alle componenten (behalve de componenten Gecodeerde primaire sleutel en Verborgen reconstruatietoets).
 
@@ -368,7 +367,7 @@ ToewijzingSelecteer, indien van toepassing, een personalisatieveld voor Adobe Ca
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-#### Beperkingen {#constraints}
+#### Restricties {#constraints}
 
 * **** VereistSchakel dit selectievakje in om dit onderdeel verplicht te maken; gebruikers moeten dus een waarde invoeren.
 * **Vereiste** MessageOpoptional, voeg een bericht toe verklarend dat het gebied wordt vereist.
@@ -407,7 +406,7 @@ In het volgende voorbeeld wordt een component Date Field (Campaign) weergegeven 
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
-### Gecodeerde primaire sleutel (Campagne) {#encrypted-primary-key-campaign}
+### Gecodeerde primaire sleutel (campagne) {#encrypted-primary-key-campaign}
 
 Deze component definieert de naam van de URL-parameter die de id van een Adobe Campaign-profiel zal bevatten (**Main Resource Identifier** of **Encrypted primary key** in Adobe Campaign Standard respectievelijk 6.1).
 
@@ -500,4 +499,3 @@ Naast [instellingen die gelden voor de meeste Adobe Campaign-componenten](#setti
 In het volgende voorbeeld wordt een component Text Field (Campaign) weergegeven.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
-

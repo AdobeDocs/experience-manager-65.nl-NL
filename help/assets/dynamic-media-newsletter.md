@@ -7,9 +7,9 @@ solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Samenwerking,Dynamic Media Classic
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1182'
+source-wordcount: '1170'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * Ontdek hoe je de bijsnijdmagie van Dynamic Media kunt gebruiken.
    * Profiteer van een gratis controle zodat u meer waarde krijgt van Dynamic Media Classic.
    * Meer informatie over de nieuwe gebruikersinterface voor Dynamic Media Classic.
-   * Ontmoet Georgia Myers, Manager van Klantsucces voor Adobe Experience Cloud.
+   * Ontmoet `Georgia Myers`, Manager van het Succes van de Klant voor Adobe Experience Cloud.
 
 * **[Januari 2020, uitgave 1](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 
@@ -85,7 +85,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * Krachtige nieuwe beveiligingsfuncties.
    * Hoe Adobe zich voorbereidt, zodat je een succesvol vakantieseizoen hebt.
    * Deel de nieuwsbrief met uw collega&#39;s om teamexpertise op te bouwen.
-   * Ontmoet Aporva Gupta, Senior Product Manager, Dynamic Media.
+   * Ontmoet `Apoorva Gupta`, Senior Product Manager, Dynamic Media.
 
 * **[Oktober 2019, uitgave 10](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_10_2019_Oct.html)**
 
@@ -95,7 +95,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * Een infografisch element met tips voor het uitnemen van schitterende resultaten bij afbeeldingen en video&#39;s van hoge kwaliteit.
    * Een artikel CMSwire dat u helpt begrijpen hoe te om uw rijke media strategie bij te werken om aan de klantenverwachtingen van vandaag te voldoen.
    * Toegang tot webinar op bestelling op Dynamic Media van de reeks van de Bouwer van de Vaardigheid.
-   * Ontmoet Nick Peters, Manager, Site Reliability Engineering, Adobe Experience Manager.
+   * Ontmoet `Nick Peters`, Manager, de Techniek van de Betrouwbaarheid van de Plaats, Adobe Experience Manager.
    * Ga op snelheid met Dynamic Media en Dynamic Media Classic in Experience League.
 
 * **[september 2019, uitgave 09](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_09_2019_Sept.html)**
@@ -117,7 +117,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * Meer informatie over een webinar-serie die is ontworpen om je up-to-speed te laten werken op Adobe Experience Manager Assets en Dynamic Media.
    * Begin aan je reis die waarde krijgt van Dynamic Media op Experience League.
    * Ontdek een gulle blik op een krachtige integratie die deze maand september komt en u laat analyseren hoe bezoekers met uw rijke media omgaan.
-   * Maak kennis met PieterJan Pieper, Dynamic Media technische ondersteuning wiz.
+   * Ontmoet `PieterJan Pieper`, de technische steun van Dynamic Media wiz.
 
 * **[Juli 2019, uitgave 07](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
@@ -128,7 +128,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * De volgende einden op de informatie-gevulde Adobe Insider Tour.
    * Buitengewone mogelijkheden zijn beschikbaar als u Dynamic Media binnen Adobe Experience Manager Assets (Adobe Experience Manager Assets) hebt.
    * Video&#39;s van 360 graden en aangepaste videominiaturen toevoegen aan uw website.
-   * Ontmoet Andrew Hathaway, de belangrijkste consultant voor Oplossingen voor Dynamic Media binnen Experience Manager Assets.
+   * Ontmoet `Andrew Hathaway`, de Belangrijkste Adviseur van Oplossingen voor Dynamic Media binnen de activa van de Experience Manager.
 
 * **[Juni 2019, uitgave 06](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_06_2019_June.html)**
 
@@ -139,7 +139,7 @@ De waardevolle kennis-bouwende middelen zijn beschikbaar in deze one-stop shop n
    * Meer informatie over de komende Adobe Insider Tour.
    * Lees hoe u uw digitale middelen kunt beschermen tegen piraterij.
    * Leer meer over door AI aangedreven Smart Crop voor afbeeldingen.
-   * Ontmoet Alex Thiers, een van de drijvende krachten achter veel van de geweldige eigenschappen en innovaties in Dynamic Media en Dynamic Media Classic.
+   * Ontdek `Alex Thiers`, een van de drijvende krachten achter veel van de geweldige eigenschappen en innovaties in Dynamic Media en Dynamic Media Classic.
 
 * **[Mei 2019, uitgave 05](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_05_2019_May.html)**
 

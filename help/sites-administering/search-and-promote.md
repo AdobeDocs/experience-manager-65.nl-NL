@@ -1,8 +1,6 @@
 ---
 title: Integreren met Adobe Search&Promote
-seo-title: Integreren met Adobe Search&Promote
 description: Leer hoe u kunt integreren met Adobe Search&Promote.
-seo-description: Leer hoe u kunt integreren met Adobe Search&Promote.
 uuid: 7e9384d9-9e4f-4e00-a1c9-35547de6ceb8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '849'
 ht-degree: 1%
 
 ---
@@ -25,13 +23,13 @@ Voer de volgende taken uit om de service Adobe Search&amp;Promote van uw website
 1. Geef de URL van de cloud op.
 1. Configureer de verbinding met de service Search&amp;Promote.
 1. Voeg Search&amp;Promote-componenten toe aan Sidetrap.
-1. Gebruik de componenten om de inhoud te ontwerpen. (Zie [Search&amp;Promote toevoegen aan een webpagina](/help/sites-authoring/search-and-promote.md).)
+1. Gebruik de componenten om de inhoud te ontwerpen. (Zie [Search&amp;Promote-functies toevoegen aan een webpagina](/help/sites-authoring/search-and-promote.md).)
 1. Voeg banners toe aan uw pagina&#39;s. Bannerafbeeldingen zijn gevoelig voor Search&amp;Promote-gegevens.
 1. Genereer een site-overzicht voor de service Search&amp;Promote die u wilt gebruiken.
 
 >[!NOTE]
 >
->Als u Search&amp;Promote met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van AEM de 3.x APIs en sommige anderen 4.x APIs gebruiken:
+>Als u Search&amp;Promote met een configuratie van de douanevolmacht gebruikt, moet u zowel de volmachtsconfiguraties van de Cliënt van HTTP vormen aangezien sommige functionaliteiten van Adobe Experience Manager 3.x APIs en sommige anderen 4.x APIs gebruiken:
 >
 >* 3.x is geconfigureerd met [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x wordt geconfigureerd met [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
@@ -44,37 +42,36 @@ Voer de volgende taken uit om de service Adobe Search&amp;Promote van uw website
 
 De standaard URL die voor de dienst van de Search&amp;Promote wordt gevormd is `https://searchandpromote.omniture.com/px/`. Om de verschillende dienst te gebruiken, gebruik de console OSGi om een verschillende URL te specificeren.
 
-1. Open de console OSGi en klik de Configuratie tabel. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
-1. Klik het punt van de Configuratie van de Search&amp;Promote van Dag CQ.
-1. Voer de URL in het vak Externe server-URI in en klik op Opslaan.
+1. Open de console OSGi en selecteer **[!UICONTROL Configuration]** tabel. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Selecteer het item Search&amp;Promote dag-CQ.
+1. Voer de URL in het vak URI van externe server in en selecteer **[!UICONTROL Save]**.
 
-## De verbinding met Search&amp;Promote {#configuring-the-connection-to-search-promote} configureren
+## De verbinding met Search&amp;Promote configureren {#configuring-the-connection-to-search-promote}
 
 Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#39;s met de dienst kunnen interactie aangaan. Als u verbinding wilt maken, hebt u de lididentificatie en het accountnummer van uw Search&amp;Promote-account nodig.
 
-1. Selecteer **Gereedschappen** pictogram > **Implementatie** **Cloud Services**.
+1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > selecteer **[!UICONTROL Cloud Services]**.
 
-   Hiermee gaat u naar het dashboard van Cloud Services. Als de URL van het dashboard op een lokale machine er ongeveer als volgt uitziet:
+   Als u zich op een lokale computer bevindt, ziet de URL van het dashboard er ongeveer als volgt uit:
 
    [https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html)
 
-1. Klik op de pagina Cloud Services op de koppeling Adobe Search&amp;Promote of Search&amp;Promote.
+1. Selecteer op de pagina Cloud Services de koppeling Adobe Search&amp;Promote of Search&amp;Promote.
 
-1. Als dit de eerste keer is vormt u Adobe Search&amp;Promote, klik **vorm nu** om het Create paneel van de Configuratie te openen.
+1. Als u Adobe Search&amp;Promote voor het eerst vormt, uitgezocht **[!UICONTROL Configure Now]** om het Create paneel van de Configuratie te openen.
 
-   Als u meer over Search&amp;Promote wilt leren klikt **Meer** in plaats daarvan.
+   Selecteer **[!UICONTROL Learn More]** voor meer informatie over Search&amp;Promote.
 
    ![](assets/chlimage_1-59.png)
 
-1. Voer een **Titel** in die herkenbaar is voor auteurs van pagina&#39;s en voer een unieke **Naam** in en klik vervolgens op **Maken**.
-
-   Het venster **Component bewerken** wordt geopend.
+1. Voer een **[!UICONTROL Title]** in die herkenbaar is voor auteurs van pagina&#39;s en voer een unieke **[!UICONTROL Name]** in.
+1. Selecteer **[!UICONTROL Create]**.
 
    Ook, verschijnt de pas gecreëerde Configuratie onder **Beschikbare Configuraties** op **Cloud Services dashboard** de lijstpunt van de Search&amp;Promote van de Adobe.
 
    ![](assets/chlimage_1-60.png)
 
-1. Voeg het volgende toe aan de gebieden in **geef Component** dialoogdoos uit.
+1. Voeg in het dialoogvenster **[!UICONTROL Edit Component]** het volgende toe aan de velden.
 
    * **Lid-id**
    * **Rekeningnummer**
@@ -87,7 +84,7 @@ Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#
    >
    >
    >met uw geldige e-mail&amp;Promote referenties (e-mail/wachtwoord).
-   >Dan, moet u uw url in de adresbar van uw browser bekijken die iets als dit zou moeten kijken:
+   >Vervolgens moet u in de adresbalk van uw browser naar de URL kijken die er ongeveer als volgt uitziet:
    >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
@@ -98,19 +95,19 @@ Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#
    >    * **** spYYYYYY komt overeen met uw  **accountnummer**
 
 
-1. Klik **Verbinding maken met Search&amp;Promote**.
+1. Selecteer **[!UICONTROL Connect To Search&Promote]**.
 
-   Wanneer het bericht van het verbindingssucces verschijnt, klik **OK**.
+   Selecteer **[!UICONTROL OK]** wanneer het bericht over het succes van de verbinding wordt weergegeven.
 
    (Na verbinding wordt de knoptekst gewijzigd in** Opnieuw verbinden met Search&amp;Promote**.)
 
-1. Klik **OK**. De pagina Instellingen Search&amp;Promote wordt weergegeven voor de configuratie die u zojuist hebt gemaakt.
+1. Selecteer **[!UICONTROL OK]**. De pagina Instellingen Search&amp;Promote wordt weergegeven voor de configuratie die u hebt gemaakt.
 
-## Het vormen van het Centrum van Gegevens {#configuring-the-data-center}
+## Het datacenter configureren {#configuring-the-data-center}
 
 Als uw Search&amp;Promote-account zich in Azië of Europa bevindt, moet u het standaarddatacenter wijzigen zodat het naar het juiste datacenter wijst (het standaarddatacenter is voor Noord-Amerikaanse accounts).
 
-Het datacenter configureren:
+**Het datacenter configureren:**
 
 1. Navigeer naar de webconsole op `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
 
@@ -122,15 +119,15 @@ Het datacenter configureren:
    * EMEA: [https://center.lon5.atomz.com/px/](https://center.lon5.atomz.com/px/)
    * APAC: [https://center.sin2.atomz.com/px/](https://center.sin2.atomz.com/px/)
 
-1. Klik **Opslaan**.
+1. Selecteer **[!UICONTROL Save]**.
 
-## Search&amp;Promote toevoegen aan Sidetrap {#adding-search-promote-components-to-sidekick}
+## Search&amp;Promote-componenten toevoegen aan Sidetrap {#adding-search-promote-components-to-sidekick}
 
 Bewerk in de ontwerpmodus een **par**-component om de Search&amp;Promote-componenten in Sidetrap toe te staan. (Zie de documentatie [Components](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) voor meer informatie.)
 
-Voor informatie over het gebruiken van de componenten, zie [Search&amp;Promote aan een Web-pagina toevoegen](/help/sites-authoring/search-and-promote.md).)
+Zie [Search&amp;Promote-functies toevoegen aan een webpagina](/help/sites-authoring/search-and-promote.md) voor informatie over het gebruik van de componenten.)
 
-## De service Search&amp;Promote opgeven die uw pagina&#39;s gebruiken {#specifying-the-search-promote-service-that-your-pages-use}
+## Geef de service Search&amp;Promote op die uw pagina&#39;s gebruiken {#specifying-the-search-promote-service-that-your-pages-use}
 
 Webpagina&#39;s configureren zodat deze een specifieke Search&amp;Promote-service gebruiken. Componenten van Search&amp;Promote gebruiken automatisch de service van hun hostpagina.
 
@@ -138,24 +135,25 @@ Wanneer u de Search&amp;Promote-eigenschappen voor een pagina configureert, neme
 
 >[!NOTE]
 >
->De de dienstverbinding moet reeds worden gevormd. (Zie [De verbinding met Search&amp;Promote](#connection) configureren.)
+>De de dienstverbinding moet vooraf worden gevormd. (Zie [De verbinding met Search&amp;Promote](#connection) configureren.)
 
-1. Open het dialoogvenster **Pagina-eigenschappen**. Klik bijvoorbeeld op de pagina** Websites** met de rechtermuisknop op de pagina en klik op **Eigenschappen**.
-1. Klik op het tabblad **Cloud Services**.
-1. Als u de overerving van configuraties van cloudservices van een bovenliggende pagina wilt uitschakelen, klikt u op het hangslotpictogram naast het overervingspad.
+1. Open het dialoogvenster **[!UICONTROL Page Properties]**. Klik bijvoorbeeld op de pagina** Websites** met de rechtermuisknop op de pagina en selecteer **[!UICONTROL Properties]**.
+1. Selecteer het tabblad **[!UICONTROL Cloud Services]**.
+1. Als u de overerving van configuraties van cloudservices van een bovenliggende pagina wilt uitschakelen, selecteert u het hangslotpictogram naast het overervingspad.
 
    ![](assets/sandpinheritpadlock.png)
 
-1. Klik **Service toevoegen**, selecteer **Adobe Search&amp;Promote**, en klik **OK**.
-1. Selecteer de verbindingsconfiguratie voor uw Search&amp;Promote-account en klik op **OK**.
+1. Selecteer **[!UICONTROL Add Service]**.
+1. Selecteer **[!UICONTROL Adobe Search&Promote]** en selecteer **[!UICONTROL OK]**.
+1. Selecteer de verbindingsconfiguratie voor uw Search&amp;Promote-account en selecteer **OK**.
 
 ## Productfeed {#product-feed}
 
-Dankzij de Search&amp;Promote-integratie kunt u:
+Met de Search&amp;Promote-integratie kunt u het volgende doen:
 
-* gebruik de eCommerce-API, onafhankelijk van de onderliggende structuur van de gegevensopslagruimte en het handelsplatform.
-* hefboomwerking de eigenschap van de Schakelaar van de Index van Search&amp;Promote om een productvoer in formaat van XML te verstrekken.
-* de functie voor afstandsbediening van Search&amp;Promote gebruiken om op aanvraag of geplande aanvragen van de productfeed uit te voeren
-* feed generation voor verschillende Search&amp;Promote-accounts, geconfigureerd als cloudservices configuraties.
+* Gebruik de eCommerce-API, onafhankelijk van de onderliggende repository structuur en het handelsplatform.
+* Gebruik de functie Indexaansluiting van Search&amp;Promote, zodat u een productfeed in XML-indeling kunt hebben.
+* Gebruik de eigenschap van de Controle van de Verre van Search&amp;Promote als u op bestelling of geplande verzoeken van de productvoer wilt uitvoeren.
+* De productie van voer voor verschillende rekeningen van Search&amp;Promote, die als configuraties van de wolkendiensten worden gevormd.
 
-Lees [Productfeed](/help/sites-administering/product-feed.md) voor meer informatie.
+Zie [Productfeed](/help/sites-administering/product-feed.md) voor meer informatie.

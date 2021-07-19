@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuratie, Scene7-modus
-source-git-commit: 752eacca9d29b272c040b48c35e4717b13e34b12
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '5785'
 ht-degree: 3%
@@ -208,7 +208,7 @@ Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditi
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
-Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/managing-image-presets.md).
+Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen voor afbeeldingen configureren](/help/assets/managing-image-presets.md).
 
 De standaardeigenschappen voor kleuren zo configureren dat kleurcorrectie wordt ingeschakeld wanneer afbeeldingen worden aangevraagd:
 

@@ -1,6 +1,6 @@
 ---
-title: De Dynamic Media Video- of Image-viewer insluiten op een webpagina
-description: Leer hoe u Dynamic Media-video of -afbeeldingen op een webpagina insluit
+title: De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina
+description: Leer hoe u Dynamic Media-video, -afbeeldingen of -3D-afbeeldingen op een webpagina insluit
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 21%
+source-wordcount: '372'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +23,7 @@ Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen 
 
 U sluit URLs slechts in als u *niet* gebruikend Adobe Experience Manager als WCM bent. Als u Experience Manager als uw WCM gebruikt, [voegt u de activa direct op uw pagina](adding-dynamic-media-assets-to-pages.md) toe.
 
-Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md).
+Zie [URLs van de verbinding aan uw Toepassing van het Web](linking-urls-to-yourwebapplication.md).
 
 Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
@@ -37,7 +37,7 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive
 >
 >Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-**De Dynamic Media Video- of Image-viewer insluiten op een webpagina:**
+**U kunt als volgt de Dynamic Media Video, Image Viewer of DIMM-viewer insluiten op een webpagina:**
 
 1. Navigeer naar de *gepubliceerde* video of afbeeldingselement waarvan u de insluitcode wilt kopiëren.
 
@@ -49,10 +49,10 @@ Zie [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive
 
    Zie [Voorinstellingen voor afbeeldingen publiceren](managing-image-presets.md#publishing-image-presets).
 
-1. Selecteer in de linkertrack het vervolgkeuzemenu en tik op **[!UICONTROL Viewers]**.
-1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
-1. Tik op **[!UICONTROL Embed]**.
-1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de volledige code naar het klembord en tik op **[!UICONTROL Close]**.
+1. Selecteer in de linkertrack het vervolgkeuzemenu en selecteer **[!UICONTROL Viewers]**.
+1. Selecteer in het linkerspoor een naam voor de viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
+1. Selecteer **[!UICONTROL Embed]**.
+1. Kopieer in het dialoogvenster **[!UICONTROL Embed Code]** de gehele code naar het klembord en selecteer **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
 ## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}

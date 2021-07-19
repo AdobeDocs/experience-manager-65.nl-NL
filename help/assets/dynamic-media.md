@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Samenwerking, beheer van bedrijfsmiddelen
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 7%
+source-wordcount: '421'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 [Met Dynamic ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set primaire bronelementen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
-Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
+Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamic Media integreert op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -29,7 +29,7 @@ Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 3
 
 ## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Over het algemeen wordt in [Werken met digitale middelen](manage-assets.md) uitvoerig ingegaan op de manier waarop u met middelen werkt. Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
+Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Over het algemeen wordt in [Werken met digitale elementen](manage-assets.md) uitgebreid ingegaan op de manier waarop u met middelen werkt. Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
@@ -44,9 +44,9 @@ Alleen Dynamic Media biedt de volgende functies:
 * [Video](video.md)
 * [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)
-* [Quickviews gebruiken om aangepaste pop-ups te maken](custom-pop-ups.md)
+* [Aangepaste pop-ups maken met Snelle weergave](custom-pop-ups.md)
 
-Zie ook [Dynamic Media](administering-dynamic-media.md) instellen.
+Zie ook [Dynamic Media instellen](administering-dynamic-media.md).
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ U kunt zien of Dynamic Media is ingeschakeld (ingeschakeld) door de volgende ken
 * Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar.
 * PTIFF-uitvoeringen worden gemaakt.
 
-Wanneer u op een afbeeldingselement klikt, verschilt de weergave van het element met Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media gebruikt de HTML5-viewers op aanvraag.
+Wanneer u een afbeeldingselement selecteert, verschilt de weergave van het element met Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media gebruikt de HTML5-viewers op aanvraag.
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
@@ -76,7 +76,7 @@ Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic 
 
 ### PTIFF-uitvoeringen {#ptiff-renditions}
 
-Tot de dynamische media-elementen behoren `pyramid.tiffs`.
+Tot de voor Dynamic Media geschikte elementen behoren `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 

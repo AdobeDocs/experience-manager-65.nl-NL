@@ -3,14 +3,13 @@ title: Lijst met functies voor dynamische ervaringen AEM
 description: Lijst met functies voor dynamische ervaringen
 index: n
 feature: Authoring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
+source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
-
 
 # Lijst met functies voor dynamische ervaringen AEM{#aem-fluid-experiences-feature-list}
 
@@ -44,7 +43,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 | [Dubbele detectie](/help/assets/duplicate-detection.md) |
 | [Slimme tags](/help/assets/enhanced-smart-tags.md) |
 
-## {#access-api-and-delivery-features}-functies voor toegang, API en levering
+## Toegang-, API- en leveringsfuncties {#access-api-and-delivery-features}
 
 |  |
 |---|
@@ -55,7 +54,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 | HTTP API voor gestructureerde inhoud (lezen) |
 | HTTP-API voor gestructureerde inhoud (CRUD) |
 | [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) |
-| [Dynamische media](/help/assets/dynamic-media.md) |
+| [ Dynamic Media ](/help/assets/dynamic-media.md) |
 
 ## Functies voor beheer en integratie {#admin-and-integration-features}
 

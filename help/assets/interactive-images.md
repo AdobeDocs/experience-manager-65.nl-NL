@@ -11,18 +11,18 @@ docset: aem65
 feature: Interactieve afbeeldingen
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 4b8369de9e6a10b73115d53358ce98729d92ed44
 workflow-type: tm+mt
-source-wordcount: '4251'
+source-wordcount: '4242'
 ht-degree: 1%
 
 ---
 
 # Interactieve afbeeldingen{#interactive-images}
 
-U kunt statische afbeeldingen eenvoudig verrijken en aantrekkelijke ervaringen voor klanten creëren door &#39;onoverzichtelijke&#39; hotspots naar een afbeelding te slepen. Slepbare hotspots combineren aanvullende informatie over een product of service met een directe, verkooppuntfunctie &#39;Toevoegen aan winkelwagentje&#39; of &#39;Kopen&#39;. Klanten kunnen op deze hotspots tikken of erop klikken en deze rechtstreeks aan het product of de service koppelen, ze aan een winkelwagentje toevoegen of aan een webpagina koppelen. Directe ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies op uw website.
+U kunt statische afbeeldingen eenvoudig verrijken en aantrekkelijke ervaringen voor klanten creëren door &#39;onoverzichtelijke&#39; hotspots naar een afbeelding te slepen. Slepbare hotspots combineren aanvullende informatie over een product of service met een directe, verkooppuntfunctie &#39;Toevoegen aan winkelwagentje&#39; of &#39;Kopen&#39;. Klanten kunnen deze hotspots selecteren en rechtstreeks aan het product of de service worden gekoppeld, deze aan een winkelwagentje toevoegen of aan een webpagina worden gekoppeld. Directe ervaringen zoals deze verhogen de betrokkenheid van klanten en conversies op uw website.
 
-Hieronder ziet u een blaasbare banner met een pop-upvenster van QuickView. Een gebruiker activeert de Snelle weergave door op de cirkel of de hotspot op het model te tikken.
+Hieronder ziet u een blaasbare banner met een pop-upvenster van QuickView. Een gebruiker activeert de Snelle weergave door de cirkel of de hotspot op het model te selecteren.
 
 ![chlimage_1-152](assets/chlimage_1-368.png)
 
@@ -93,7 +93,7 @@ Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn
 
 De meeste implementaties van de Snelle mening gebruiken het volgende paradigma:
 
-* De gebruiker activeert een gebruikersinterface-element op de website. Klik bijvoorbeeld op een knop Snelle weergave.
+* De gebruiker activeert een gebruikersinterface-element op de website. Selecteer bijvoorbeeld een knop Snelle weergave.
 * De website verzendt een Ajax-aanvraag naar de achterkant om de Quickview-gegevens of -inhoud te laden, indien nodig.
 * De Quickview-gegevens worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
@@ -102,11 +102,11 @@ Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de 
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
-* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 om het paneel van Hulpmiddelen van de Ontwikkelaar te openen, en dan het lusje van het Netwerk te klikken.
-Druk op een Mac op Command+Option+I om het deelvenster Gereedschappen voor ontwikkelaars te openen en klik vervolgens op het tabblad Netwerk.
+* Om alle uitgaande HTTP- verzoeken in Google Chrome te zien, druk F12 om het paneel van Hulpmiddelen van de Ontwikkelaar te openen, en dan het lusje van het Netwerk te selecteren.
+Druk op een Mac op Command+Option+I om het deelvenster Gereedschappen voor ontwikkelaars te openen en selecteer vervolgens het tabblad Netwerk.
 
 * In Firefox kunt u de Firebug-plug-in activeren door op F12 te drukken en het tabblad Net te gebruiken. U kunt ook het ingebouwde controllergereedschap en het bijbehorende tabblad Netwerk gebruiken.
-Druk op een Mac op Command+Option+I om het deelvenster Gereedschappen voor ontwikkelaars te openen en klik vervolgens op het tabblad Inspecteur.
+Druk op een Mac op Command+Option+I om het deelvenster Gereedschappen voor ontwikkelaars te openen en selecteer vervolgens het tabblad Inspecteur.
 
 Wanneer netwerkcontrole in browser wordt aangezet, teweeg de Snelle mening op de pagina.
 
@@ -164,7 +164,7 @@ U kunt dezelfde aanpak toepassen als in de drie bovenstaande voorbeelden op de d
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Terwijl het foutopsporingsprogramma van uw webbrowser nog is geactiveerd, klikt u op elke knop en noteert u de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier productenQuickview activeert die op de pagina beschikbaar zijn, hebt u de volgende lijst van verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
+De demo-webpagina heeft verschillende productminiaturen, elk met een Quickview-knop met het label &quot;Meer weergeven&quot;. Zorg dat het foutopsporingsprogramma van uw webbrowser nog is geactiveerd en selecteer elke knop en noteer de opgenomen URL&#39;s van de Snelle weergave. Nadat u alle vier productenQuickview activeert die op de pagina beschikbaar zijn, hebt u de volgende lijst van verzoeken van de Snelle mening die aan het achterste eind worden gemaakt:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -194,21 +194,21 @@ Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactive
 
 **Een voorinstelling voor een interactieve afbeeldingsviewer maken:**
 
-1. Tik in de linkerspoorstaaf op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
+1. Navigeer in de linkerrail naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
+1. Selecteer **[!UICONTROL Create]** in de rechterbovenhoek van de pagina.
 1. Typ in het dialoogvenster Nieuwe voorinstelling voor viewer een naam om de voorinstelling voor de interactieve bannerviewer te beschrijven.
 
    Nadat u de titel hebt opgeslagen, wordt deze weergegeven in de lijstpagina Voorinstelling viewer.
 
 1. Selecteer in het vervolgkeuzemenu Uitgebreid mediatype de optie **[!UICONTROL Interactive Image]**.
-1. Tik op **[!UICONTROL Create]**.
-1. Tik op het tabblad **[!UICONTROL Appearance]** op de pagina Voorinstelling viewer bewerken.
+1. Selecteer **[!UICONTROL Create]**.
+1. Selecteer op de pagina Voorinstelling viewer bewerken het tabblad **[!UICONTROL Appearance]**.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op het pictogram Asset Picker om uw eigen hotspot-afbeelding te uploaden die u voor afbeeldingen wilt gebruiken. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding, selecteer deze en tik op het pictogram Markeren controleren in de rechterbovenhoek.
-   * Tik op het pictogram Hotspot-galerie om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik in het palet van de hotspot op de hotspot die u wilt gebruiken.
+   * Als u uw eigen hotspot-afbeelding wilt uploaden die u voor afbeeldingen wilt gebruiken, selecteert u het pictogram Asset Picker. Navigeer op de pagina Inhoud selecteren naar de gewenste hotspot-afbeelding, selecteer deze en selecteer vervolgens het pictogram Markeren controleren in de rechterbovenhoek.
+   * Als u een vooraf gedefinieerde hotspot-afbeelding wilt selecteren, selecteert u het pictogram Hotspot-galerie. Selecteer in het palet van de hotspot de hotspot die u wilt gebruiken.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
+1. Selecteer **[!UICONTROL Save]** in de rechterbovenhoek van de pagina.
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
@@ -260,43 +260,43 @@ Als u interactieve afbeeldingen met hotspots bewerkt en de afbeelding bijsnijdt,
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit]** op de werkbalk.
+   * Houd de cursor boven de afbeelding en selecteer **[!UICONTROL Select]** (vinkpictogram). Selecteer **[!UICONTROL Edit]** op de werkbalk.
 
-   * Tik op **[!UICONTROL More actions]** (drie punts pictogram) **[!UICONTROL Edit]**.
+   * Houd de cursor boven op de afbeelding en selecteer **[!UICONTROL More actions]** (drie punten) **[!UICONTROL Edit]**.
 
-   * Tik op de afbeelding zodat u deze kunt openen op de pagina Gedetailleerde weergave. Tik op **[!UICONTROL Edit]** op de werkbalk.
+   * Selecteer de afbeelding zodat u deze kunt openen op de pagina Gedetailleerde weergave. Selecteer **[!UICONTROL Edit]** op de werkbalk.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Add Hotspot]** (vingertikpictogram) om de pagina Hotspotbeheer te openen.
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot]**.
+1. Selecteer **[!UICONTROL Add Hotspot]** (vingertikpictogram) in de linkerbovenhoek van de pagina om de pagina Hotspot-beheer te openen.
+1. Selecteer **[!UICONTROL Hotspot]** in de linkerbovenhoek van de pagina.
 
-   1. Tik in de linkerbovenhoek van de pagina Hotspot Management op **[!UICONTROL Hotspot]**.
-   1. Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen.
+   1. Selecteer **[!UICONTROL Hotspot]** in de linkerbovenhoek van de pagina Hotspot Management.
+   1. Selecteer in de afbeelding een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen.
    1. Voeg desgewenst extra hotspots toe door de stappen a en b te herhalen.
-   1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u de hotspot in de afbeelding en tikt u op **[!UICONTROL Delete]** (trashcan-pictogram) onder de kop **[!UICONTROL Hotspots]**.
+   1. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u de hotspot in de afbeelding en selecteert u **[!UICONTROL Delete]** (trashcan-pictogram) onder de kop **[!UICONTROL Hotspots]**.
 
 1. Typ in het tekstveld Naam de naam van de hotspot. Deze naam wordt ook weergegeven in de vervolgkeuzelijst Geselecteerde hotspot.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Quickview]**.
+   * Selecteer **[!UICONTROL Quickview]**.
 
-      * Tik of klik op het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen als u een Experience Manager- of eCommerce-klant bent. Tik of klik op het product dat u wilt gebruiken en tik op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina zodat u terug kunt keren naar de pagina Hotspot-beheer.
+      * Als u een Experience Manager Sites of eCommerce-klant bent, selecteert u het pictogram Productkiezer (vergrootglas) om de pagina Selecteer product te openen. Selecteer het product dat u wilt gebruiken en selecteer **[!UICONTROL Select]** in de rechterbovenhoek van de pagina zodat u naar de pagina Hotspot-beheer kunt terugkeren.
       * Als u *not* een klant van de Experience Manager of van de eCommerce bent
 
          * Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
-         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u moet gebruiken om een product verder te identificeren. Geef in het tekstveld een extra variabele op. `category=Males` is bijvoorbeeld een toegevoegde variabele.
-   * Tik op **[!UICONTROL Hyperlink]**.
+         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld SKU-waarde de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingevoerde waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geselecteerde hotspot met een bepaalde mening van SKU te associëren Quickview.
+         * (Optioneel) Als de Snelle weergave andere variabelen bevat die u moet gebruiken om een product nader te identificeren, selecteert u **[!UICONTROL Add Generic Variable]**. Geef in het tekstveld een extra variabele op. `category=Males` is bijvoorbeeld een toegevoegde variabele.
+   * Selecteer **[!UICONTROL Hyperlink]**.
 
-      * Als u een klant van de Plaatsen van de Experience Manager bent, tik of klik het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
+      * Als u een klant van de Plaatsen van de Experience Manager bent, selecteer het pictogram van de Selecteur van de Plaats (omslag) om aan een URL te navigeren. De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met de pagina&#39;s van de Plaatsen van de Experience Manager heeft.
       * Als u een zelfstandige klant bent, geeft u in het tekstveld HREF het volledige URL-pad naar een gekoppelde webpagina op.
 
    Zorg ervoor dat u opgeeft of u de koppeling wilt openen in een nieuw browsertabblad (aanbevolen standaard) of op hetzelfde tabblad.
 
    Zie [Werken met kiezers](/help/assets/working-with-selectors.md) voor meer informatie.
 
-   * Tik op **[!UICONTROL Experience Fragment]**.
+   * Selecteer **[!UICONTROL Experience Fragment]**.
 
-      * Als u een klant van de Plaatsen van de Experience Manager bent, tik of klik het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Tik op het ervaringsfragment dat u wilt gebruiken en tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina zodat u terug kunt keren naar de pagina Hotspot-beheer.
+      * Als u een klant van de Plaatsen van de Experience Manager bent, selecteer het pictogram van het Onderzoek (vergrootglas) om de pagina van het Fragment van de Ervaring te openen. Selecteer het gewenste fragment van de Ervaring, dan uitgezocht **[!UICONTROL Select]** in de hoger-juiste hoek van de pagina zodat kunt u aan de Hotspot beheerpagina terugkeren.
 Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 
       * Geef de breedte en hoogte van het ervaringsfragment op zoals u het wilt weergeven op de banner.
@@ -306,7 +306,7 @@ Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 
 
 
-1. Tik **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de pagina Bladeren.
+1. Selecteer **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de Browse pagina.
 1. Publiceer de interactieve afbeelding. Met publicatie kan de banner via de cloud worden geleverd en wordt ook insluitcode gegenereerd als u wilt integreren met een website van derden.
 
    Zie [Elementen publiceren](/help/assets/manage-assets.md#publishing-assets).
@@ -329,10 +329,10 @@ Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dyn
 
 **Een voorvertoning weergeven van interactieve afbeeldingen:**
 
-1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze te openen in Voorvertoning.
-1. Tik in de vervolgkeuzelijst Inhoud in de linkerbovenhoek van de voorvertoningspagina op **[!UICONTROL Viewers]**.
-1. Tik in de lijst Viewers op **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
-1. Tik op hotspots in de afbeelding als u de bijbehorende handelingen wilt testen.
+1. Navigeer in de weergave Elementen naar een bestaande interactieve afbeelding die u hebt gemaakt en selecteer deze om deze te openen in Voorvertoning.
+1. Selecteer **[!UICONTROL Viewers]** in de vervolgkeuzelijst Inhoud in de linkerbovenhoek van de voorvertoningspagina.
+1. Selecteer **[!UICONTROL Shoppable_Banner]** in de lijst Viewers of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
+1. Selecteer hotspots in de afbeelding als u de bijbehorende handelingen wilt testen.
 
 ## Interactieve afbeeldingselementen publiceren {#publishing-interactive-image-assets}
 
@@ -398,7 +398,7 @@ De bestaande implementatie van QuickView vertegenwoordigt normaal gesproken een 
 
 Deze aanroepen vertegenwoordigen geen onafhankelijke openbare API-aanroepen die door de webpaginalogica kunnen worden aangeroepen vanuit een willekeurige stap. In plaats daarvan, is het een geketende vraag waar elke volgende stap in de laatste fase (callback) van de vorige stap verborgen is.
 
-Wanneer een gebruiker op een hotspot in de aanpasbare afbeelding klikt, wordt deze gebruikersinteractie door de viewer afgehandeld, terwijl de aanpasbare interactieve afbeelding stap 1 en gedeeltelijk stap 2 vervangt. De viewer retourneert een gebeurtenis naar de webpagina die alle hotspotgegevens bevat die eerder aan Experience Manager Assets zijn toegevoegd.
+Wanneer een gebruiker een hotspot binnen de verschuifbare afbeelding selecteert, wordt deze gebruikersinteractie door de viewer afgehandeld, terwijl de verschuifbare interactieve afbeelding stap 1 en gedeeltelijk stap 2 vervangt. De viewer retourneert een gebeurtenis naar de webpagina die alle hotspotgegevens bevat die eerder aan Experience Manager Assets zijn toegevoegd.
 
 In een dergelijke gebeurtenishandler doet de front-end code het volgende:
 

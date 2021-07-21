@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: ed213692bc72ab727a5fa105796fb68aef33904e
+source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 34%
+source-wordcount: '584'
+ht-degree: 32%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 34%
    + [Interactieve afbeeldingen](interactive-images.md)
    + [Interactieve video&#39;s](interactive-videos.md)
    + [360 VR-video](/help/assets/360-video.md)
-   + [Dynamic Media-viewers integreren met Adobe Analytics en Adobe Launch](/help/assets/launch.md)
+   + [Dynamic Media-viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](/help/assets/tags.md)
    + [Quickviews gebruiken om aangepaste pop-ups te maken](custom-pop-ups.md)
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md)
    + [Dynamic Media-assets vooraf bekijken](previewing-assets.md)

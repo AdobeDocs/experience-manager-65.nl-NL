@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-viewers integreren met Adobe Analytics- en Experience Platform-tags
-description: Dynamic Media Viewers-extensie voor Experience Platform Tags en Dynamic Media Viewers 5.13 biedt klanten van Adobe Analytics- en Experience Platform Tags de mogelijkheid om gebeurtenissen en gegevens te gebruiken die specifiek zijn voor Dynamic Media Viewers in hun configuratie met Experience Platform Tags.
+description: Meer informatie over de extensie Dynamic Media Viewers voor Experience Platform Tags en Dynamic Media Viewers 5.13. Het laat klanten van Adobe Analytics en de Markeringen van het Experience Platform gebeurtenissen en gegevens gebruiken specifiek voor de Kijkers van Dynamic Media in hun configuratie van de Markeringen van het Experience Platform.
 mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
 workflow-type: tm+mt
-source-wordcount: '6233'
+source-wordcount: '6239'
 ht-degree: 7%
 
 ---
@@ -802,7 +802,7 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
 1. Selecteer op de pagina **[!UICONTROL Experience Platform Tags Configurations]** in het linkerdeelvenster een site van een Experience Manager waarop u de configuratie van de Experience Platform Tags wilt toepassen.
 
-   Alleen voor voorbeelddoeleinden wordt de `We.Retail`-site geselecteerd in de onderstaande schermafbeelding.
+   Alleen voor voorbeelddoeleinden wordt de **`We.Retail`**-site geselecteerd in de onderstaande schermafbeelding.
 
    ![2019-07-26_12-20-06](assets/2019-07-26_12-20-06.png)
 

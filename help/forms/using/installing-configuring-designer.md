@@ -12,7 +12,7 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 85596d4c2204aa1dd34c409b45d25eeffdb9c046
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 37%
@@ -29,7 +29,7 @@ Voor het installatieprogramma van AEM Forms Designer is de 32-bits versie van [V
 
 Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met WorkBench. Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor Designer gebruikt:
 
-1. Neem contact op met de ondersteuning van Adobe om het installatieprogramma van Designer te downloaden.
+1. Download Designer van Adobe [Licentiewebsite](https://licensing.adobe.com/).
 
    >[!NOTE]
    >

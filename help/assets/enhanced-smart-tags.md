@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Slimme tags, zoeken
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1596'
 ht-degree: 1%
 
 ---
@@ -188,6 +188,7 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan voor
 
 ## Tips en beperkingen {#tips-best-practices-limitations}
 
+* Gebruik de meest geschikte afbeeldingen om het model op te leiden. De training kan niet worden teruggezet of het trainingsmodel kan niet worden verwijderd. De nauwkeurigheid van de tags is afhankelijk van de huidige training, dus doe dit zorgvuldig.
 * Het gebruik van Smart Content Services is beperkt tot maximaal 2 miljoen getagde afbeeldingen per jaar. Alle gedupliceerde afbeeldingen die zijn verwerkt en getagd, worden allemaal geteld als een gecodeerde afbeelding.
 * Als u de labelworkflow uitvoert vanuit de tijdlijn, kunt u tags toepassen op maximaal 15 elementen tegelijk.
 * Slimme tags werken alleen voor PNG- en JPG-afbeeldingsindelingen. Dus ondersteunde elementen met uitvoeringen die in deze twee indelingen zijn gemaakt, worden gelabeld met slimme tags.

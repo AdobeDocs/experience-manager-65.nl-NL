@@ -10,7 +10,8 @@ audience: developer
 feature: Kader voor integratie in de handel
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-source-git-commit: b132fc30e9ab77da24557c5d644a255173dc23c2
+exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
+source-git-commit: 90a19e84e2a8e2ff8c4216a6c0beab0b65b582d4
 workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 0%
@@ -55,7 +56,7 @@ Wij zullen het [Project van Venia ](https://github.com/adobe/aem-cif-guides-veni
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Voeg de noodzakelijke configuraties OSGi toe om uw AEM instantie met een instantie van de Magento te verbinden of de configuraties aan het onlangs gecreeerd project toe te voegen.
@@ -66,7 +67,7 @@ Wij zullen het [Project van Venia ](https://github.com/adobe/aem-cif-guides-veni
 
    ![Storefront geconfigureerd met Venia-thema](../assets/customize-cif-components/venia-store-configured.png)
 
-## Auteur de Taser {#author-product-teaser} van het Product
+## Auteur van de producttaser {#author-product-teaser}
 
 De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste stap voegt u een nieuw exemplaar van de Product Teaser toe aan de startpagina om de basislijnfunctionaliteit te begrijpen.
 
@@ -134,7 +135,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Magento.
    >
    > Meer informatie over [Cachebeheer kunt u vinden in de gebruikershandleiding van Magento](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Gebruik een IDE GraphQL om Attribuut {#use-graphql-ide} te verifiëren
+## Gebruik een GrafiekQL winde om Attribuut te verifiëren {#use-graphql-ide}
 
 Alvorens in AEM code te springen is het nuttig om [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) te onderzoeken gebruikend IDE GraphQL. De integratie van Magento met AEM wordt hoofdzakelijk gedaan via een reeks vragen GraphQL. Het begrip van en het wijzigen van de vragen GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
 
@@ -274,11 +275,9 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
        productRetriever = productTeaser.getProductRetriever();
    
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -329,7 +328,7 @@ Gebruik [IDE van uw keus](https://docs.adobe.com/content/help/en/experience-mana
 
    Nu het Sling Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om een indicator van **Eco Friendly** eigenlijk te tonen die op het het Verschilderen Model wordt gebaseerd.
 
-## De opmaak van de producttaser {#customize-markup-product-teaser} aanpassen
+## De opmaak van de producttaser aanpassen {#customize-markup-product-teaser}
 
 Een algemene uitbreiding van AEM componenten is het wijzigen van de markering die door de component wordt gegenereerd. Dit wordt gedaan door [HTML manuscript](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) met voeten te treden dat de component gebruikt om zijn prijsverhoging terug te geven. HTML Template Language (HTL) is een lichte sjabloontaal die AEM componenten gebruiken om markeringen dynamisch te renderen op basis van geschreven inhoud, zodat de componenten opnieuw kunnen worden gebruikt. De producttaser kan bijvoorbeeld steeds opnieuw worden gebruikt om verschillende producten weer te geven.
 
@@ -399,7 +398,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Open een nieuw browservenster en navigeer naar AEM en de **OSGi-console** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -478,7 +477,7 @@ Op dit punt werkt de logica voor wanneer om **Eco Friendly** badge te tonen, noc
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Vernieuw naar de **Introductiepagina van Venia** om [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) waar de Product Teaser is toegevoegd.
@@ -489,7 +488,7 @@ Op dit punt werkt de logica voor wanneer om **Eco Friendly** badge te tonen, noc
 
 U hebt zojuist uw eerste AEM CIF-component aangepast! Download [voltooide oplossingsdossiers hier](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
-## Uitdaging {#bonus-challenge}
+## Bonus Challenge {#bonus-challenge}
 
 Controleer de functionaliteit van de **New** badge die reeds in de Teaser van het Product is uitgevoerd. Probeer een extra selectievakje voor auteurs toe te voegen om te bepalen wanneer de **Eco Friendly** badge moet worden weergegeven. U moet het dialoogvenster voor componenten bijwerken op `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 

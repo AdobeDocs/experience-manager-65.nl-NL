@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 71782a3caae3f74a4886c52cf9b29f9e998913fa
+source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 8%
+source-wordcount: '867'
+ht-degree: 7%
 
 ---
 
@@ -15,19 +15,36 @@ ht-degree: 8%
 
 Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
 
-**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-op vervangen die op [de Distributie van de Software van de Adobe beschikbaar is ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
+**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-** op vervangen die op de Distributie [ van de Software van ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Adobe beschikbaar is. De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
 
 * De meeste nieuwe functies zijn direct beschikbaar op AEM 6.5 (niet meer wachtend op zijpoort met functies)
 * Eenvoudig upgradebaar naar nieuwe invoegversies
 * Gereed voor Cloud Service
 
-De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Vervang de CIF-connector door de nieuwe CIF-invoegtoepassing. Voor de meeste projecten moet eenvoudig een pakketvervanging mogelijk zijn. **
+De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Vervang de CIF-connector door de nieuwe CIF-invoegtoepassing. Voor de meeste projecten moet eenvoudig een pakketvervanging mogelijk zijn.
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: juli 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021,07,21 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF Core-componenten | 1.13.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| CIF Venia Reference Site | 2021,07,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+
+### Wat is er nieuw? {#what-is-new-july}
+
+* CIF Core Components v2
+   * Vereenvoudigde en verbeterde configuraties voor PDP/PLP URL en SEO
+   * Visuele indicator voor gefaseerde productgegevens op auteurswijze voor betere zichtbaarheid van aanstaande veranderingen
+   * Nieuwe sitemapcomponent voor inhoud- en handelspagina&#39;s
+
+* Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of ter plekke gemaakte aanbevelingen
 
 ## Releasedatum: juni 2021
 
@@ -79,8 +96,6 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 * AEM extensie voor PWA Studio incl. voorbeeldintegratie
 
 * Nieuwe CIF-kerncomponent voor navigatie die de WCM-kerncomponent voor navigatie uitbreidt
-
-* Visuele indicator voor gefaseerde catalogusgegevens in AEM storefront
 
 ### Bugfixes {#bug-fixes-april}
 

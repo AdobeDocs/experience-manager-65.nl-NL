@@ -10,16 +10,15 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 3a1d02fc1bc561b54e57cf91abc8f4406ba8c365
+exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
+source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
 source-wordcount: '2601'
 ht-degree: 0%
 
 ---
 
-
-# Het uitbreiden van de Manager van de MultiPlaats{#extending-the-multi-site-manager}
+# Het beheer van meerdere sites uitbreiden{#extending-the-multi-site-manager}
 
 Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitbreiden:
 
@@ -65,14 +64,18 @@ De belangrijkste MSM API voorwerpen werken als volgt in wisselwerking (zie ook [
       * Hiermee kan de auteur **Site maken/> gebruiken. hierdoor kan de gebruiker eenvoudig talen selecteren en de structuur van de live kopie configureren .**
       * Bepaalt de standaardrollout configuratie voor om het even welke resulterende levende exemplaren.
 
-* **`LiveRelationship`** De  `LiveRelationship` opgegeven verbinding (relatie) tussen een bron in de actieve kopieervertakking en de equivalente bron/blauwdrukbron.
+* **`LiveRelationship`**
+
+   `LiveRelationship` specificeert de verbinding (verhouding) tussen een middel in de levende exemplaartak en zijn gelijkwaardige bron/blauwdruk middel.
 
    * De relaties worden gebruikt bij het realiseren van overerving en rollout.
    * `LiveRelationship` de voorwerpen verlenen toegang (verwijzingen) tot de rollout configuraties (  `RolloutConfig`),  `LiveCopy`, en  `LiveStatus` voorwerpen met betrekking tot de verhouding.
 
    * Bijvoorbeeld, wordt een levende exemplaar gecreeerd in `/content/copy/us` van de bron/blauwdruk bij `/content/we-retail/language-masters`. De bronnen `/content/we.retail/language-masters/en/jcr:content` en `/content/copy/us/en/jcr:content` vormen een relatie.
 
-* **`LiveCopy`** `LiveCopy` bevat de configuratiedetails voor de verhoudingen (  `LiveRelationship`) tussen de levende exemplaarmiddelen en hun bron/blauwdruk middelen.
+* **`LiveCopy`**
+
+   `LiveCopy` bevat de configuratiedetails voor de verhoudingen (  `LiveRelationship`) tussen de levende exemplaarmiddelen en hun bron/blauwdruk middelen.
 
    * Met de klasse `LiveCopy` hebt u toegang tot het pad van de pagina, het pad van de bron-/blauwdrukpagina, de rollout-configuraties en of onderliggende pagina&#39;s ook worden opgenomen in `LiveCopy`.
 
@@ -92,7 +95,9 @@ De belangrijkste MSM API voorwerpen werken als volgt in wisselwerking (zie ook [
 
    Hiermee maakt u `LiveAction`-objecten op basis van een `LiveAction`-configuratie. Configuraties worden opgeslagen als bronnen in de opslagplaats.
 
-* **`RolloutConfig`** De code  `RolloutConfig` bevat een lijst met  `LiveActions`objecten die moeten worden gebruikt wanneer ze worden geactiveerd. `LiveCopy` erft `RolloutConfig` en het resultaat is aanwezig in `LiveRelationship`.
+* **`RolloutConfig`**
+
+   De `RolloutConfig` bevat een lijst met `LiveActions` die moet worden gebruikt wanneer deze wordt geactiveerd. `LiveCopy` erft `RolloutConfig` en het resultaat is aanwezig in `LiveRelationship`.
 
    * Voor het eerst dat een live kopie wordt ingesteld, wordt ook een RolloutConfig gebruikt (die de LiveActions activeert).
 
@@ -118,7 +123,7 @@ Met `LiveActionFactory` maakt u instanties van de klasse `LiveAction` voor een b
 
    * `createsAction`: Retourneert de naam van de gekoppelde  `LiveAction`.
 
-### Toegang krijgen tot de LiveAction Configuration Node {#accessing-the-liveaction-configuration-node}
+### De LiveAction Configuration-node openen {#accessing-the-liveaction-configuration-node}
 
 Gebruik het `LiveAction` configuratieknooppunt in de repository om informatie op te slaan die het runtimegedrag van de `LiveAction` instantie beïnvloedt. Het knooppunt in de opslagplaats dat de `LiveAction`-configuratie opslaat, is tijdens runtime beschikbaar voor het `LiveActionFactory`-object. Daarom kunt u eigenschappen aan de configuratieknoop toevoegen aan en hen in uw `LiveActionFactory` implementatie gebruiken zoals nodig.
 
@@ -138,7 +143,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Toegang tot doelknooppunten, bronknooppunten en de LiveRelatie {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Toegang tot doelknooppunten, bronknooppunten en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 De volgende objecten worden opgegeven als parameters van de methode `execute` van het object `LiveAction`:
 
@@ -163,7 +168,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >De argumenten `Resource` kunnen `null` of `Resources` voorwerpen zijn die niet aan `Node` voorwerpen, zoals [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) voorwerpen aanpassen.
 
-## Nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
+## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 
 Maak een rollout-configuratie wanneer de geïnstalleerde rollout-configuraties niet voldoen aan de toepassingsvereisten:
 
@@ -176,7 +181,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 >
 >Zie ook de [beste praktijken voor het aanpassen van rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
-### De rollout-configuratie {#create-the-rollout-configuration} maken
+### De configuratie voor rollout maken {#create-the-rollout-configuration}
 
 Een nieuwe rollout-configuratie maken:
 
@@ -225,7 +230,7 @@ Een nieuwe rollout-configuratie maken:
 
 1. Klik **Alles opslaan**.
 
-### Synchronisatiehandelingen toevoegen aan de configuratie {#add-synchronization-actions-to-the-rollout-configuration}
+### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
 
 De configuraties van de rollout worden opgeslagen onder [rollout configuratieknooppunt](#create-the-rollout-configuration) die u onder `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
 
@@ -244,7 +249,7 @@ De naam moet het zelfde als **Naam van de Actie** in de lijst onder [Synchronisa
 
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist. Wijzig de rangschikking van de actieknoppen zodat de volgorde overeenkomt met de volgorde waarin u deze wilt uitvoeren. Het bovenste actieknooppunt komt eerst voor.
 
-## Een eenvoudige LiveActionFactory-klasse {#creating-and-using-a-simple-liveactionfactory-class} maken en gebruiken
+## Een eenvoudige LiveActionFactory-klasse maken en gebruiken {#creating-and-using-a-simple-liveactionfactory-class}
 
 Volg de procedures in deze sectie om `LiveActionFactory` te ontwikkelen en het in een rollout configuratie te gebruiken. De procedures gebruiken Maven en Eclipse om `LiveActionFactory` te ontwikkelen en op te stellen:
 
@@ -263,7 +268,7 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open ExperienceManager-java-msmrollout project op GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-### Maven van project {#create-the-maven-project}
+### Maven {#create-the-maven-project}
 
 Voor de volgende procedure is het vereist dat u het adobe-public profiel hebt toegevoegd aan het Maven-instellingenbestand.
 
@@ -379,7 +384,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
     </dependency>
    ```
 
-### LiveActionFactory {#implement-liveactionfactory} implementeren
+### LiveActionFactory implementeren {#implement-liveactionfactory}
 
 De volgende `LiveActionFactory` klasse voert `LiveAction` uit die berichten over de bron en doelpagina&#39;s registreert, en kopieert het `cq:lastModifiedBy` bezit van de bronknoop aan de doelknoop. De naam van de live actie is `exampleLiveAction`.
 
@@ -545,7 +550,7 @@ De volgende `LiveActionFactory` klasse voert `LiveAction` uit die berichten over
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-### De voorbeeldconfiguratie {#create-the-example-rollout-configuration} maken
+### De voorbeeldconfiguratie voor rollout maken {#create-the-example-rollout-configuration}
 
 Creeer de MSM rollout configuratie die `LiveActionFactory` gebruikt die u creeerde:
 
@@ -555,7 +560,7 @@ Creeer de MSM rollout configuratie die `LiveActionFactory` gebruikt die u creeer
    * **Naam**: voorbeplerolloutconfig
    * **cq:trigger**:  `publish`
 
-### De actieve handeling toevoegen aan de voorbeeldconfiguratie {#add-the-live-action-to-the-example-rollout-configuration}
+### Voeg de Actieve Actie aan de Configuratie van de Uitvoer van het Voorbeeld toe {#add-the-live-action-to-the-example-rollout-configuration}
 
 Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de `ExampleLiveActionFactory` klasse gebruikt.
 

@@ -8,10 +8,10 @@ audience: administrator
 feature: Kader voor integratie in de handel
 kt: 4933
 thumbnail: 34350.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
+source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '745'
 ht-degree: 2%
 
 ---
@@ -24,38 +24,63 @@ ht-degree: 2%
 
 ## Configuratie {#configuration}
 
-Om de `UrlProvider` dienst volgens de SEO vereisten te vormen en een project moet een config OSGI voor de configuratie van de &quot;CIF URL van de Leverancier&quot;verstrekken, en de dienst vormen zoals hieronder beschreven.
+Om de `UrlProvider` dienst volgens de SEO vereisten te vormen en een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF verstrekken URL&quot;.
 
 >[!NOTE]
 >
-> Het project [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia), zie hieronder, omvat steekproefconfiguraties om het gebruik van douane URLs voor product en categoriepagina&#39;s aan te tonen.
+> Sinds versie 2.0.0 van de AEM CIF Core Components, verstrekt de configuratie van de Leverancier URL slechts vooraf bepaalde url formaten, in plaats van vrij-tekst configureerbare formaten die van 1.x versies worden gekend. Bovendien is het gebruik van kiezers voor het doorgeven van gegevens in URL&#39;s vervangen door achtervoegsels.
 
-### URL-sjabloon van productpagina {#product}
+### URL-indeling van productpagina {#product}
 
-Hierdoor worden de URL&#39;s van de productpagina&#39;s geconfigureerd met de volgende eigenschappen:
+Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u de volgende opties:
 
-* **Sjabloon** voor product-URL: Hiermee definieert u de opmaak van URL&#39;s met een set plaatsaanduidingen. De standaardwaarde is `{{page}}.{{url_key}}.html#{{variant_sku}}`, die URL&#39;s genereert zoals bijvoorbeeld `/content/venia/us/en/products/product-page.chaz-kangeroo-hoodie.html#MH01-M-Orange` waarbij
-   * `{{page}}` vervangen door  `/content/venia/us/en/products/product-page`
-   * `{{url_key}}` is vervangen door hier de  `url_key` eigenschap MagentoProperty van het product  `chaz-kangeroo-hoodie`
-   * `{{variant_sku}}` is vervangen door de geselecteerde variant, hier  `MH01-M-Orange`
-* **Locatie** van product-id: definieert de locatie van de id die wordt gebruikt om de productgegevens op te halen. De standaardwaarde is `SELECTOR`, de andere mogelijke waarde is `SUFFIX`. Met het vorige voorbeeld-URL betekent dit dat de id `chaz-kangeroo-hoodie` wordt gebruikt om de productgegevens op te halen.
-* **Type** product-id: definieert het type id dat moet worden gebruikt bij het ophalen van de productgegevens. De standaardwaarde is `URL_KEY`, de andere mogelijke waarde is `SKU`. Met het vorige voorbeeld-URL betekent dit dat de productgegevens worden opgehaald met een Magento GraphQL-filter, zoals `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (standaardwaarde)
+* `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
+* `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
+* `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-### URL-sjabloon voor productlijst {#product-list}
+In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
 
-Hiermee configureert u de URL&#39;s van de pagina&#39;s met categorieën of productlijsten met de volgende eigenschappen:
+* `{{page}}` wordt vervangen door  `/content/venia/us/en/products/product-page`
+* `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld  `VP09`
+* `{{url_key}}` worden vervangen door de  `url_key` eigenschap van het product, bijvoorbeeld  `lenora-crochet-shorts`
+* `{{url_path}}` worden vervangen door het product,  `url_path`bijvoorbeeld  `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld  `VP09-KH-S`
 
-* **Categorie-URL-sjabloon**: Hiermee definieert u de opmaak van URL&#39;s met een set plaatsaanduidingen. De standaardwaarde is `{{page}}.{{id}}.html`, die URL&#39;s genereert zoals bijvoorbeeld `/content/venia/us/en/products/category-page.3.html` waarbij
-   * `{{page}}` vervangen door  `/content/venia/us/en/products/category-page`
-   * `{{id}}` is vervangen door hier de  `id` eigenschap MagentoProperty van de categorie  `3`
-* **Locatie** van categorie-id: definieert de locatie van de id die wordt gebruikt om de productgegevens op te halen. De standaardwaarde is `SELECTOR`, de andere mogelijke waarde is `SUFFIX`. Met het vorige voorbeeld-URL betekent dit dat de id `3` wordt gebruikt om de productgegevens op te halen.
-* **Type** categorie-id: definieert het type id dat moet worden gebruikt bij het ophalen van de productgegevens. De standaardwaarde en momenteel alleen de ondersteunde waarde is `ID`. Met het vorige voorbeeld-URL betekent dit dat de categoriegegevens worden opgehaald met een Magento GraphQL-filter, zoals `category(id:3)`.
+Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
-Het is mogelijk om aangepaste eigenschappen toe te voegen voor elke sjabloon, zolang de corresponderende gegevens door de componenten worden ingesteld met de `UrlProvider`. Controleer bijvoorbeeld de code van de klasse `ProductListItemImpl` om te weten te komen hoe dit wordt uitgevoerd.
+### Categorie Pagina-URL-indeling {#product-list}
 
-Het is ook mogelijk de `UrlProvider` service te vervangen door een volledig aangepaste OSGi service. In dit geval moet u de `UrlProvider`-interface implementeren en deze registreren met een hogere servicerangschikking om de standaardimplementatie te vervangen.
+Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of productlijst en ondersteunt u de volgende opties:
 
-## Combineren met segmentering {#sling-mapping}
+* `{{page}}.html/{{url_path}}.html` (standaardwaarde)
+* `{{page}}.html/{{url_key}}.html`
+
+In het geval van het [Referentiearchief van Venia](https://github.com/adobe/aem-cif-guides-venia):
+
+* `{{page}}` wordt vervangen door  `/content/venia/us/en/products/category-page`
+* `{{url_key}}` wordt vervangen door de  `url_key` eigenschap van de categorie
+* `{{url_path}}` worden vervangen door de categorie  `url_path`
+
+Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
+
+>[!NOTE]
+> 
+> De `url_path` is een samenvoeging van de `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` schuine streep.
+
+## Aangepaste URL-indelingen {#custom-url-format}
+
+Om een formaat van douaneURL te verstrekken kan een project [`UrlFormat` interface ](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) uitvoeren en de implementatie als dienst registreren OSGI, gebruikend het of als categorie pagina of het formaat van de productpagina url. Het `UrlFormat#PROP_USE_AS` de dienstbezit wijst op, welke van de gevormde vooraf bepaalde formaten te vervangen:
+
+* `useAs=productPageUrlFormat`, vervangt de geconfigureerde URL-indeling van de productpagina
+* `useAs=categoryPageUrlFormat`, vervangt de geconfigureerde URL-indeling voor de categoriepagina
+
+Als er meerdere implementaties zijn van de `UrlFormat` die als OSGI-services zijn geregistreerd, vervangt de implementatie met de hogere servicerangschikking de één of meerdere implementaties door de lagere servicerangschikking.
+
+`UrlFormat` moet een paar methodes uitvoeren om een URL van een bepaalde Kaart van parameters te bouwen en een URL te ontleden om de zelfde Kaart van parameters terug te keren. De parameters zijn hetzelfde als hierboven beschreven, alleen voor categorieën wordt een extra `{{uid}}`-parameter aan `UrlFormat` gegeven.
+
+## Combineren met Sling Mappings {#sling-mapping}
 
 Naast `UrlProvider` is het ook mogelijk om [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) te vormen om URLs te herschrijven en te verwerken. Het project van Archetype van het AEM verstrekt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Toewijzingen Sling voor haven 4503 (publiceren) en 80 (verzender) te vormen.
 

@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Uitvoeringen
 exl-id: null
-source-git-commit: 865370e38368072c39ad337eb52259c586403efb
+source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -24,10 +24,10 @@ Met Experience Manager kunnen veel methoden afbeeldingen verwerken die kunnen wo
 
 U kunt ImageMagick gebruiken om afbeeldingen te verwerken, inclusief om FPO-uitvoeringen te genereren. Dergelijke vertoningen worden gedownsampled, dat wil zeggen, de pixelafmetingen van de vertoning worden proportioneel verminderd als de oorspronkelijke afbeelding een PPI heeft die groter is dan 72. Zie [ImageMagick installeren en configureren om te werken met Experience Manager Assets](best-practices-for-imagemagick.md).
 
-|  | De ingebouwde workflow van de Experience Manager gebruiken | De ImageMagick-workflow gebruiken | Opmerkingen |
-|— |— |—|— |
-| Nieuwe activa | FPO-uitvoering inschakelen ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | ImageMagick-opdrachtregel toevoegen in Experience Manager-workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager voert de DAM Update Assets-workflow uit voor elke upload. |
-| Voor bestaande activa | FPO-uitvoering inschakelen in een nieuwe, toegewijde workflow voor Experience Managers ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | ImageMagick-opdrachtregel toevoegen aan een nieuwe, toegewijde workflow voor Experience Managers ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO-uitvoeringen van de bestaande activa kunnen op aanvraag of in bulk worden gecreëerd. |
+|  | De ingebouwde workflow van Experience Managers gebruiken | De ImageMagick-workflow gebruiken | Opmerkingen |
+|--- |--- |---|--- |
+| Voor nieuwe activa | FPO-uitvoering inschakelen ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | ImageMagick-opdrachtregel toevoegen in Experience Manager-werkstroom ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager voert de DAM-workflow Middelen bijwerken uit voor elke upload. |
+| Voor bestaande activa | FPO-uitvoering inschakelen in een nieuwe, toegewijde workflow voor Experience Managers ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Voeg ImageMagick bevel-lijn in een nieuw, specifiek Experience Manager werkschema ([help](#generate-renditions-of-existing-assets-using-imagemagick)) toe | FPO-uitvoeringen van de bestaande activa kunnen op aanvraag of in bulk worden gemaakt. |
 
 >[!CAUTION]
 >

@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
 workflow-type: tm+mt
-source-wordcount: '3718'
+source-wordcount: '3771'
 ht-degree: 1%
 
 ---
@@ -679,3 +679,10 @@ ht-degree: 1%
          + [Het programmatisch beheren van de Knooppunten van de Voorkeur](developing/programmatically-preferences-nodes.md)
          + [Documenten beveiligen met beleid](developing/protecting-documents-policies.md)
          + [Een DDX-document valideren met de webservice-API](developing/validate-ddx-document-using-web.md)
+      + Verouderde documentatie {#legacy-documentation}
+         + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
+         + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)
+         + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
+         + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
+         + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
+

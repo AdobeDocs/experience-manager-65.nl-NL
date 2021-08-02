@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: a8fef5d797efb3a6ce25760df6f710b8b99c2dc0
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
 source-wordcount: '584'
-ht-degree: 32%
+ht-degree: 17%
 
 ---
 
@@ -36,28 +36,28 @@ ht-degree: 32%
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
    + [Verbonden elementen met [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 +  Dynamic Media {#dynamic}
-   + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
+   + [Dynamic Media-nieuwsarchief per Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
    + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
    + [Dynamic Media configureren - hybride modus](config-dynamic.md)
-   + [Problemen oplossen in de modus Dynamic Media - Scene7](troubleshoot-dms7.md)
+   + [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
    + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)
-   + [Migreren van Dynamic Media - Hybride modus naar Dynamic Media - S7 modus](migrate-from-hybrid-to-dms7.md)
-   + [Dynamic Media-assets beheren](managing-assets.md)
+   + [Migreren van Dynamic Media naar hybride modus naar Dynamic Media - S7-modus](migrate-from-hybrid-to-dms7.md)
+   + [Dynamic Media-middelen beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
-   + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
-   + [Voorinstellingen voor Dynamic Media-viewer toepassen](viewer-presets.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding beheren](managing-image-presets.md)
-   + [Voorinstellingen voor Dynamic Media-afbeelding toepassen](image-presets.md)
+   + [Voorinstellingen Dynamic Media Viewer beheren](managing-viewer-presets.md)
+   + [Voorinstellingen Dynamic Media Viewer toepassen](viewer-presets.md)
+   + [Voorinstellingen Dynamic Media-afbeelding beheren](managing-image-presets.md)
+   + [Voorinstellingen Dynamic Media-afbeelding toepassen](image-presets.md)
    + [Dynamic Media-videoprofielen](video-profiles.md)
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
    + [Dynamic Media-functies aan uw pagina toevoegen](scene7.md)
    + [HTTP2-levering van content](http2.md)
-   + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
-   + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
+   + [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
+   + [Hotlink-beveiliging activeren in Dynamic Media](hotlink-protection.md)
    + [3D-ondersteuning](/help/assets/assets-3d.md)
    + [Image Sets](image-sets.md)
    + [Panoramische afbeeldingen](panoramic-images.md)
@@ -68,15 +68,15 @@ ht-degree: 32%
    + [Interactieve afbeeldingen](interactive-images.md)
    + [Interactieve video&#39;s](interactive-videos.md)
    + [360 VR-video](/help/assets/360-video.md)
-   + [Dynamic Media-viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](/help/assets/tags.md)
-   + [Quickviews gebruiken om aangepaste pop-ups te maken](custom-pop-ups.md)
+   + [Dynamic Media Viewers integreren met Adobe Analytics- en Adobe Experience Platform-tags](/help/assets/tags.md)
+   + [Aangepaste pop-ups maken met Snelle weergave](custom-pop-ups.md)
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md)
-   + [Dynamic Media-assets vooraf bekijken](previewing-assets.md)
-   + [Dynamic Media-assets aan pagina&#39;s toevoegen](adding-dynamic-media-assets-to-pages.md)
-   + [Viewer voor dynamische video of afbeelding insluiten op een webpagina](embed-code.md)
-   + [URL&#39;s koppelen aan uw webapplicatie](linking-urls-to-yourwebapplication.md)
+   + [Dynamic Media-middelen voorvertonen](previewing-assets.md)
+   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](adding-dynamic-media-assets-to-pages.md)
+   + [De dynamische video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md)
+   + [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](using-rulesets-to-transform-urls.md)
-   + [Dynamic Media-assets publiceren](publishing-dynamicmedia-assets.md)
+   + [Dynamic Media-elementen publiceren](publishing-dynamicmedia-assets.md)
    + [Werken met Selectieve publicatie in Dynamic Media](selective-publishing.md)
    + [De CDN-cache ongeldig maken via Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
    + [De CDN-cache ongeldig maken via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)

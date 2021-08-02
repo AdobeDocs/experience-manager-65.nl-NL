@@ -12,9 +12,9 @@ docset: aem65
 feature: Beheer van bedrijfsmiddelen
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: b42a14729a88bda563b0773dac735ad569ad3097
+source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
 workflow-type: tm+mt
-source-wordcount: '11189'
+source-wordcount: '11226'
 ht-degree: 4%
 
 ---
@@ -60,8 +60,10 @@ Bekende problemen met het afspelen van video in Dynamic Media *alleen op Experie
       * [Pas een videoprofiel toe op mappen](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
       * Meer informatie over [Aanbevolen werkwijzen voor het ordenen van uw digitale middelen voor het gebruik van verwerkingsprofielen](/help/assets/organize-assets.md).
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
-   * Upload uw primaire bronvideo&#39;s naar de mappen. U kunt videobestanden uploaden van maximaal 15 GB elk. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
+   * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
+      * Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+      * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Upload uw video](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)&#39;s.
       * Meer informatie over [Ondersteunde invoerbestandsindelingen](/help/assets/assets-formats.md#supported-multimedia-formats).
    * Controleer hoe [video het coderen](#monitoring-video-encoding-and-youtube-publishing-progress) of van de activa of werkschemamening vordert.
@@ -304,6 +306,9 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
+* Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+* U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
+
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
 
 | Grootte | Hoogte-breedteverhouding | Minimale bitsnelheid |
@@ -418,9 +423,9 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 3 |
+| Bron | 1920 x 1080 | 1 | 1 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
-| Gecodeerd | 640 x 360 | 3 | 3 |
+| Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
 
 ### Gecodeerde videobestandsindeling {#encoded-video-file-format}
@@ -566,7 +571,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 **Een YouTube-kanaal maken:**
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
-1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (kan ook als een letter binnen een cirkel met effen kleuren worden weergegeven) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
+1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (kan ook worden weergegeven als een letter binnen een cirkel met effen kleuren) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
 1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a new channel]**.
 1. Voor de pagina van Kanalen, klik **[!UICONTROL Create a new channel]**.
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create]**.

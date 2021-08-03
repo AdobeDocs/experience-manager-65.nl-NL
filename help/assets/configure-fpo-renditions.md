@@ -5,7 +5,7 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Uitvoeringen
 exl-id: null
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -61,9 +61,11 @@ Hier volgen de stappen voor het configureren van het workflowmodel voor DAM Upda
 
 In Experience Manager wordt de DAM Update Asset-workflow uitgevoerd wanneer een nieuw element wordt geüpload. Als u ImageMagick wilt gebruiken om uitvoeringen van nieuw geüploade elementen te verwerken, voegt u een nieuwe opdracht toe aan het workflowmodel.
 
-1. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Selecteer **[!UICONTROL DAM Update Asset]** model en klik **[!UICONTROL Edit]**.
+1. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
-1. Klik **[!UICONTROL Toggle Side Panel]** in de hogere linkerhoek. Ga naar opdrachtregelstap.
+1. Selecteer **[!UICONTROL DAM Update Asset]** model en klik **[!UICONTROL Edit]**.
+
+1. Klik **[!UICONTROL Toggle Side Panel]** in de hogere linkerhoek en onderzoek naar de stap van de bevellijn.
 
 1. Sleep de stap **[!UICONTROL Command Line]** en voeg deze voor de stap **[!UICONTROL Process Thumbnails]** toe.
 
@@ -89,13 +91,21 @@ Zie [https://imagemagick.org](https://imagemagick.org) voor gedetailleerde infor
 
 Als u een Experience Manager-workflow wilt gebruiken om FPO-uitvoering van de bestaande elementen te genereren, maakt u een speciaal workflowmodel dat gebruikmaakt van de ingebouwde FPO-uitvoeringsoptie.
 
-1. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Als u een model wilt maken, klikt u op **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. Voeg een betekenisvolle **[!UICONTROL Title]** en een **[!UICONTROL Name]** toe.
+1. Klik op **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 
-1. Selecteer het model en klik **[!UICONTROL Edit]**. Klik op **[!UICONTROL Page Information]** > **[!UICONTROL Open Properties]**. Selecteer **[!UICONTROL Transient Workflow]**. Dit verbetert de schaalbaarheid en prestaties. Klik op **[!UICONTROL Save]** en **[!UICONTROL Close]**.
+1. Als u een model wilt maken, klikt u op **[!UICONTROL Create]** > **[!UICONTROL Create Model]**.
 
-1. Klik **[!UICONTROL Toggle Side Panel]** in de hogere linkerhoek. Zoek naar de stap van de procesduimnagel. Sleep de stap **[!UICONTROL Process Thumbnails]**.
+1. Voeg een betekenisvolle **[!UICONTROL Title]** en **[!UICONTROL Name]** toe.
 
-1. Selecteer **[!UICONTROL Process Thumbnails]** en klik **[!UICONTROL Configure]**. Volg de [configuratie om vertoning van nieuwe activa te produceren gebruikend het werkschema van de Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow). Klik op **[!UICONTROL Sync]** om de wijzigingen te activeren.
+1. Selecteer het model en klik **[!UICONTROL Edit]**. Klik **[!UICONTROL Page Information]** > **[!UICONTROL Open Properties]**, en selecteer dan **[!UICONTROL Transient Workflow]**. Dit verbetert de schaalbaarheid en prestaties.
+
+1. Klik op **[!UICONTROL Save]** en **[!UICONTROL Close]**.
+
+1. Klik in de linkerbovenhoek op **[!UICONTROL Toggle Side Panel]** en zoek naar de stap met procesminiaturen.
+
+1. Selecteer **[!UICONTROL Process Thumbnails]** en klik **[!UICONTROL Configure]**. Volg de [configuratie om vertoning van nieuwe activa te produceren gebruikend het werkschema van de Experience Manager](#generate-renditions-of-new-assets-using-aem-workflow).
+
+1. Klik op **[!UICONTROL Sync]** om de wijzigingen te activeren.
 
 
 ## Rendities van bestaande elementen genereren met ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 1e8b5ab66668215e0eeed676b42f533d4e210e1c
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 17%
+source-wordcount: '590'
+ht-degree: 16%
 
 ---
 
@@ -116,6 +116,7 @@ ht-degree: 17%
    + [Integreren met [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor informatie over elementen](use-demo-package-for-asset-insights.md)
+   + [FPO-uitvoeringen genereren voor Adobe InDesign](configure-fpo-renditions.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen procedures voor het controleren van elementen](assets-monitoring-best-practices.md)
    + [Camera Raw ondersteuning](camera-raw.md)

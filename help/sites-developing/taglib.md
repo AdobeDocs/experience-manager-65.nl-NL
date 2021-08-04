@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2509'
 ht-degree: 1%
 
 ---
-
 
 # Tagbibliotheken{#tag-libraries}
 
@@ -38,7 +37,7 @@ De algemene instructie declareert ook de [Sling library](/help/sites-developing/
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### <ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeclientlib> {#ui-includeclientlib}
 
 De tag `<ui:includeClientLib>` bevat een AEM HTML-clientbibliotheek, die een js, css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in de jsp. Deze tag is een handige omslag rondom de service-interface ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
@@ -100,7 +99,7 @@ Wanneer u het Jsp manuscript van een AEM component ontwikkelt, wordt het geadvis
 
 De tags sling, CQ en jstl worden gedeclareerd en de regelmatig gebruikte scriptobjecten die worden gedefinieerd door de tag [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) worden weergegeven. Hierdoor wordt de jsp-code van uw component verkort en vereenvoudigd.
 
-### <cq:text> {#cq-text}
+### &lt;cq:text> {#cq-text}
 
 De tag `<cq:text>` is een gebruikstag die de componenttekst in een JSP uitvoert.
 
@@ -158,7 +157,7 @@ Enkele voorbeelden van hoe de tag `<cq:text>` in een JSP kan worden gebruikt:
 <cq:text property="text" tagClass="text"/>
 ```
 
-### <cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setcontentbundle> {#cq-setcontentbundle}
 
 Met de tag `<cq:setContentBundle>` wordt een i18n-lokalisatiecontext gemaakt en opgeslagen in de configuratievariabele `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
@@ -205,7 +204,7 @@ Voor gepersonaliseerde pagina&#39;s van de gebruiker:
 </div> ...
 ```
 
-### <cq:include> {#cq-include}
+### &lt;cq:include> {#cq-include}
 
 De tag `<cq:include>` bevat een bron op de huidige pagina.
 
@@ -255,7 +254,7 @@ Moet u `<cq:include>` of `<sling:include>` gebruiken?
 * Bij het ontwikkelen van AEM componenten, adviseert Adobe dat u `<cq:include>` gebruikt.
 * `<cq:include>` kunt u scriptbestanden direct op naam opnemen wanneer u het scriptkenmerk gebruikt. Dit neemt component en middeltypeovererving in overweging, en is vaak eenvoudiger dan strikte naleving van het manuscriptresolutie van het Sling gebruikend selecteurs en uitbreidingen.
 
-### <cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeclientlib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
@@ -299,7 +298,7 @@ De tag `<cq:includeClientLib>` kan als volgt worden gebruikt in een JSP:
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### <cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineobjects> {#cq-defineobjects}
 
 Met de tag `<cq:defineObjects>` worden de volgende, regelmatig gebruikte scriptobjecten weergegeven waarnaar de ontwikkelaar kan verwijzen. De code stelt ook de objecten beschikbaar die worden gedefinieerd door de [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects)-tag.
 
@@ -441,7 +440,7 @@ Met de tag `<cq:defineObjects>` worden de volgende, regelmatig gebruikte scripto
 >
 >Wanneer het `/libs/foundation/global.jsp` dossier in het manuscript wordt omvat, wordt `<cq:defineObjects />` markering automatisch omvat.
 
-### <cq:requestURL> {#cq-requesturl}
+### &lt;cq:requesturl> {#cq-requesturl}
 
 Met de tag `<cq:requestURL>` wordt de huidige aanvraag-URL naar de JspWriter geschreven. De twee tags [ `<cq:addParam>`](#amp-lt-cq-addparam) en [ `<cq:removeParam>`](#amp-lt-cq-removeparam) en kunnen binnen de hoofdtekst van deze tag worden gebruikt om de huidige aanvraag-URL te wijzigen voordat deze wordt geschreven.
 
@@ -463,7 +462,7 @@ Voorbeelden:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:addParam> {#cq-addparam}
+### &lt;cq:addparam> {#cq-addparam}
 
 De tag `<cq:addParam>` voegt een aanvraagparameter met de opgegeven naam en waarde toe aan de omsluitende tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl).
 
@@ -483,7 +482,7 @@ Deze heeft de volgende kenmerken:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeparam> {#cq-removeparam}
 
 De tag `<cq:removeParam>` verwijdert een aanvraagparameter met de opgegeven naam en waarde uit de omsluitende tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl). Als er geen waarde is opgegeven, worden alle parameters met de opgegeven naam verwijderd.
 
@@ -499,7 +498,7 @@ Voorbeeld:
 <a href="<cq:requestURL><cq:removeParam name="language"/></cq:requestURL>">remove filter</a>
 ```
 
-## Tagbibliotheek {#sling-tag-library}
+## Tagbibliotheek verkopen {#sling-tag-library}
 
 De tagbibliotheek Sling bevat handige functies voor verkopers.
 
@@ -513,7 +512,7 @@ Wanneer u de Sling-tagbibliotheek in uw script gebruikt, moet het script beginne
 >
 >Wanneer het `/libs/foundation/global.jsp`-bestand in het script wordt opgenomen, wordt de lablib voor de schuine streep automatisch gedeclareerd.
 
-### <sling:include> {#sling-include}
+### &lt;sling:include> {#sling-include}
 
 De tag `<sling:include>` bevat een bron op de huidige pagina.
 
@@ -578,7 +577,7 @@ Voorbeelden:
 <sling:include replaceSelectors="content" />
 ```
 
-### <sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineobjects> {#sling-defineobjects}
 
 Met de tag `<sling:defineObjects>` worden de volgende, regelmatig gebruikte scriptobjecten weergegeven waarnaar de ontwikkelaar kan verwijzen:
 

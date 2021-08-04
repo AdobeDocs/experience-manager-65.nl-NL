@@ -12,9 +12,9 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Documentbeveiliging
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: a84f9bd590193cbb8c2549b34df1bbcec618ba67
+source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
-source-wordcount: '3298'
+source-wordcount: '3310'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ De stappen in de illustratie zijn als volgt:
 1. De ontvanger opent het document in de aangewezen cliënttoepassing. De ontvanger kan het document volgens zijn beleid gebruiken.
 1. De eigenaar van het document, de beleidssetcoördinator of de beheerder kan documenten bijhouden en de toegang tot deze documenten wijzigen met behulp van de webpagina&#39;s.
 
-## Informatie over gebruikers voor documentbeveiliging {#about-document-security-users}
+## Gebruikers voor documentbeveiliging {#about-document-security-users}
 
 Verschillende typen gebruikers werken met documentbeveiliging om verschillende taken uit te voeren:
 
@@ -147,7 +147,7 @@ De beheerders van de veiligheid van het document kunnen douanerollen tot stand b
 * Gebeurtenissen weergaveserver voor documentbeveiliging
 * Beleidseigenaar wijzigen van documentbeveiliging
 
-## Beleid en documenten die met beleid worden beveiligd {#policies-and-policy-protected-documents}
+## Beleid en documenten die door beleid worden beschermd {#policies-and-policy-protected-documents}
 
 Een *beleid* bepaalt een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. Met een beleid kunnen ook de machtigingen voor een document dynamisch worden gewijzigd. Het geeft de persoon die het document verzekert toestemming om de vertrouwelijkheidsmontages te veranderen om toegang tot het document in te trekken of het beleid te veranderen.
 
@@ -233,7 +233,7 @@ De reeksen van het beleid worden over het algemeen ter beschikking gesteld aan e
 
 Wanneer de documentveiligheid wordt geïnstalleerd, wordt een standaardbeleidsreeks gecreeerd genoemd *Globale Reeks van het Beleid*. De beheerder die de software heeft geïnstalleerd, beheert deze beleidsset.
 
-## Aanbevolen werkwijzen {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Het beleid is herbruikbare reeksen toestemmingen en gebruikersgroepen die op diverse documenten kunnen worden toegepast. Voor de beveiligde documenten. Dit beleid zorgt ervoor dat alleen geautoriseerde gebruikers de toegestane functies kunnen gebruiken. Het aantal beleid en beleidsreeksen zullen naar verwachting met een toename in verschillende gebruikersrollen en documenten binnen een afdeling groeien. Hier volgen enkele overwegingen en aanbevolen procedures voor het maken en beheren van beleid:
 
@@ -276,4 +276,4 @@ Voeg gebruikersgroepen aan beleid in plaats van individuele gebruikers toe. Het 
 
    >[!NOTE]
    >
-   > U kunt de [getAllPolicySetnames ()]((https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html)) API gebruiken om een maximum van 1000 vastgestelde namen van het beleid terug te winnen. Intern, wint API een maximum van 1000 beleid terug waarvoor de API aanroeper de toestemming van de documentuitgever heeft en creeert en keert dan een lijst van unieke vastgestelde namen verbonden aan teruggewonnen beleid aan u terug. Wanneer de API bijvoorbeeld 1000 beleidsregels ophaalt en het opgehaalde beleid is gekoppeld aan 200 beleidssets in totaal, retourneert de API slechts 200 beleidssetnamen.
+   > U kunt de [getAllPolicySetnames ()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API gebruiken om een maximum van 1000 vastgestelde namen van het beleid terug te winnen. Intern, wint API een maximum van 1000 beleid terug waarvoor de API aanroeper de toestemming van de documentuitgever heeft en creeert en keert dan een lijst van unieke vastgestelde namen verbonden aan teruggewonnen beleid aan u terug. Wanneer de API bijvoorbeeld 1000 beleidsregels ophaalt en het opgehaalde beleid is gekoppeld aan 200 beleidssets in totaal, retourneert de API slechts 200 beleidssetnamen.

@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metagegevens
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 771bccf12f79648afd59573dad0b7fdf95c6e1e2
+source-git-commit: d3fcf3e55af1c57bed1db9191aa76576d3bedb29
 workflow-type: tm+mt
-source-wordcount: '3358'
+source-wordcount: '3408'
 ht-degree: 5%
 
 ---
@@ -28,6 +28,8 @@ Ga als volgt te werk om de pagina met eigenschappen voor een element weer te gev
    ![Het tabblad Standaard van de eigenschappen van elementen, waarin het elementtype niet kan worden gewijzigd](assets/asset-properties-basic-tab.png)
 
    *Afbeelding: Het tabblad Standaard voor elementen  [!UICONTROL Properties].*
+
+   Zorg ervoor dat slechts één eigenschap aan een veld wordt toegewezen terwijl u het metagegevensschema maakt of bewerkt.
 
    Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschema Forms](#edit-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema van een MIME-type wijzigt, wordt de indeling van de eigenschappenpagina voor de elementen en alle subtypen gewijzigd. Als u bijvoorbeeld een JPEG-schema wijzigt onder `default/image`, wordt alleen de indeling van metagegevens (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `image/jpeg`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
@@ -99,13 +101,13 @@ Het tabblad **[!UICONTROL Build Form]** bevat formulieritems die u in het schema
 
 #### De metagegevenscomponent bewerken {#edit-the-metadata-component}
 
-Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component om de volgende eigenschappen (of een subset ervan) op het tabblad **[!UICONTROL Settings]** geheel of gedeeltelijk te bewerken.
+Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewerken, klikt u op de component om de volgende eigenschappen (of een subset ervan) op het tabblad **[!UICONTROL Settings]** geheel of gedeeltelijk te bewerken. Het wordt aanbevolen slechts één veld toe te wijzen aan een bepaalde eigenschap in het metagegevensschema. Anders wordt het laatst toegevoegde veld dat aan de eigenschap is toegewezen, door het systeem gekozen.
 
 **Veldlabel**: De naam van de eigenschap metadata die wordt weergegeven op de eigenschappenpagina voor het element.
 
 **Toewijzen aan eigenschap**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. Het begint met `./` om erop te wijzen dat de weg onder de knoop van het element is.
 
-Hier volgen de geldige waarden voor deze eigenschap:
+Hieronder volgen enkele voorbeelden van geldige waarden voor een eigenschap:
 
 * `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 

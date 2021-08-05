@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metagegevens
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b36448449830aa8e19f6dc29ab7fb62608bb39dd
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1827'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
    ![Toewijzen aan eigenschapinstelling in metagegevensprofiel](assets/metadata-profile-setting-map-property.png)
 
-   De waarde die u opgeeft voor **[!UICONTROL Map to property]**, wordt opgeslagen als een eigenschap onder het metagegevensknooppunt van het element. Als u bijvoorbeeld `./jcr:content/metadata/dc:desc` opgeeft als naam van **[!UICONTROL Map to property]**, slaat [!DNL Assets] de waarde `dc:desc` op in het metagegevensknooppunt van het element.
+   De waarde die u opgeeft voor **[!UICONTROL Map to property]**, wordt opgeslagen als een eigenschap onder het metagegevensknooppunt van het element. Als u bijvoorbeeld `./jcr:content/metadata/dc:desc` opgeeft als naam van **[!UICONTROL Map to property]**, slaat [!DNL Assets] de waarde `dc:desc` op in het metagegevensknooppunt van het element. Het wordt aanbevolen slechts één veld toe te wijzen aan een bepaalde eigenschap in het metagegevensschema. Anders wordt het laatst toegevoegde veld dat aan de eigenschap is toegewezen, door het systeem gekozen.
 
    * **[!UICONTROL Default Value]**: Gebruik deze eigenschap om een standaardwaarde voor de metagegevenscomponent toe te voegen. Als u bijvoorbeeld &quot;Mijn beschrijving&quot; opgeeft, wordt deze waarde toegewezen aan de eigenschap `dc:desc` bij het metagegevensknooppunt van het element.
 

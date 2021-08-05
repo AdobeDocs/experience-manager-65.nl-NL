@@ -10,16 +10,16 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Beheer van bedrijfsmiddelen
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b0286341c1b643bd39a3009185c0d4c8d76ccba5
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '118'
 ht-degree: 13%
 
 ---
 
 # Informatie over het beheren van Dynamic Media-elementen {#managing-assets}
 
-Het beheren van Dynamic Media-elementen - afbeeldingen, video en interactieve elementen - nadat deze zijn geüpload - omvat veel taken zoals het voorvertonen, downloaden of publiceren van deze elementen.
+Het beheren van Dynamic Media-elementen - afbeeldingen, video en interactieve elementen - nadat deze zijn geüpload, omvat veel taken zoals het voorvertonen, downloaden of publiceren van deze elementen.
 
 Wanneer u een voorvertoning weergeeft, kunt u ook voorinstellingen voor afbeeldingen (alleen voor afbeeldingen) of viewers (voor video en afbeeldingen) toepassen. U kunt niet beide toepassen op een element. Zie [Voorinstellingen voor viewers toepassen](/help/assets/viewer-presets.md) en [Voorinstellingen voor afbeeldingen toepassen](/help/assets/image-sets.md).
 

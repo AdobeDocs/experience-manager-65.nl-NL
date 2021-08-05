@@ -7,11 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuratie, Scene7-modus
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
 workflow-type: tm+mt
-source-wordcount: '5785'
+source-wordcount: '6430'
 ht-degree: 3%
 
 ---
@@ -26,7 +27,8 @@ In het volgende architectuurdiagram wordt beschreven hoe de modus Dynamic Media 
 
 Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire bronactiva en synchrone met Dynamic Media voor activaverwerking en het publiceren:
 
-1. Wanneer het primaire bronelement naar de Experience Manager wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment verwerkt Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. Wanneer het primaire bronelement naar de Experience Manager wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment verwerkt Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding.
+(In de modus Dynamic Media - Scene7 is de standaardgrootte voor het uploaden van bestanden 2 GB of minder. Als u bestanden wilt uploaden van 2 GB tot 15 GB, raadpleegt u [(Optioneel) Dynamic Media - Scene7-modus configureren voor het uploaden van middelen groter dan 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. Nadat de vertoningen worden geproduceerd, kan de Experience Manager tot de verre vertoningen van Dynamic Media veilig toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie van de Experience Manager).
 1. Nadat de inhoud klaar is om te worden gepubliceerd en goedgekeurd, brengt het de dienst van Dynamic Media teweeg om inhoud uit te duwen naar leveringsservers en geheim voorgeheugeninhoud bij CDN (het Netwerk van de Levering van de Inhoud) in het voorgeheugen op.
 
@@ -147,11 +149,95 @@ Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke
 
 Als u de configuratie en opstelling van Dynamic Media - Scene7 wijze verder wilt aanpassen, of zijn prestaties optimaliseren, kunt u één of meerdere van de volgende *facultatieve* taken voltooien:
 
+* [(Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Optioneel) Pas de prestaties van de Dynamic Media-Scene7-modus aan](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
+
+### (Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. U kunt echter desgewenst uploaden van middelen groter dan 2 GB en tot 15 GB configureren.
+
+Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
+
+* U moet Experience Manager 6.5 met Service Pack 6.5.4.0 in werking stellen of later.
+* [Directe binaire ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) downloads van de Toegang van Oak toegelaten.
+
+   Om toe te laten, plaats bezit `presignedHttpDownloadURIExpirySeconds > 0` in de datastore configuratie. De waarde moet lang genoeg zijn om grotere binaire bestanden te downloaden en het opnieuw te proberen.
+
+* Elementen die groter zijn dan 15 GB worden niet geüpload. (De formaatlimiet wordt in stap 8 hieronder vastgesteld.)
+* Wanneer de Scene7 Reprocess Assets-workflow wordt geactiveerd voor een map, worden de reeds geüploade grote elementen in de map opnieuw verwerkt. Het uploadt echter grote activa die niet in het Scene7-bedrijf bestaan.
+* Grote uploads werken alleen voor afzonderlijke asset-ladingen, niet wanneer de workflow voor een map wordt geactiveerd.
+
+**Dynamic Media - Scene7-modus configureren voor het uploaden van middelen groter dan 2 GB:**
+
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+
+1. Voer in het venster CRXDE Lite een van de volgende handelingen uit:
+
+   * Navigeer in de linkerrails naar het volgende pad:
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Kopieer en plak het bovenstaande pad naar het veld CRXDE Lite-pad onder de werkbalk en druk op `Enter`.
+
+1. Klik in de linkertrack met de rechtermuisknop op `fileupload` en selecteer **[!UICONTROL Overlay Node]** in het pop-upmenu.
+
+   ![Overlayknooppunt, optie](/help/assets/assets-dm/uploadassets15gb_a.png)
+
+1. Schakel in het dialoogvenster Overlayknooppunt het selectievakje **[!UICONTROL Match Node Types]** in om de optie in te schakelen (inschakelen) en selecteer **[!UICONTROL OK]**.
+
+   ![Dialoogvenster Overlay-knooppunt](/help/assets/assets-dm/uploadassets15gb_b.png)
+
+1. Voer in het venster CRXDE Lite een van de volgende handelingen uit:
+
+   * Navigeer in het linkerspoor naar het volgende overlayknooppuntpad:
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Kopieer en plak het bovenstaande pad naar het veld CRXDE Lite-pad onder de werkbalk en druk op `Enter`.
+
+1. Zoek op het tabblad **[!UICONTROL Properties]** onder de kolom **[!UICONTROL Name]** `sizeLimit`.
+1. Rechts van de naam `sizeLimit` onder de kolom **[!UICONTROL Value]** dubbelklikt u op het waardeveld.
+1. Voer de juiste waarde in bytes in zodat u de maximale uploadgrootte kunt instellen. Als u bijvoorbeeld de limiet voor de grootte van het uploadelement wilt verhogen tot 10 GB, typt u `10737418240` in het veld Waarde.
+U kunt een waarde tot 15 GB (`2013265920` bytes) ingaan. In dit geval worden geüploade elementen die groter zijn dan 15 GB niet geüpload.
+
+
+   ![Grenswaarde voor grootte](/help/assets/assets-dm/uploadassets15gb_c.png)
+
+1. Selecteer **[!UICONTROL Save All]** in de linkerbovenhoek van het venster CRXDE Lite.
+
+   *Stel nu de time-out in voor de Adobe Granite Workflow External Process Job Handler door het volgende te doen:*
+
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
+1. Voer een van de volgende handelingen uit:
+
+   * Navigeer naar het volgende URL-pad:
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * Kopieer en plak het bovenstaande pad naar het URL-veld van uw browser. Zorg ervoor dat u `localhost:4502` door uw eigen instantie van de Experience Manager vervangt.
+
+1. Stel in het dialoogvenster **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** in het veld **[!UICONTROL Max Timeout]** de waarde in op `18000` minuten (vijf uur). De standaardwaarde is 10800 minuten (drie uur).
+
+   ![Maximale time-outwaarde](/help/assets/assets-dm/uploadassets15gb_d.png)
+
+1. Selecteer **[!UICONTROL Save]** in de rechterbenedenhoek van het dialoogvenster.
+
+   *Stel nu de time-out voor de stap voor het Scene7 Direct Binary Upload-proces in door het volgende te doen:*
+
+1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Selecteer **[!UICONTROL Dynamic Media Encode Video]** op de pagina Workflowmodellen.
+1. Selecteer **[!UICONTROL Edit]** op de werkbalk.
+1. Dubbelklik op de processtap **[!UICONTROL Scene7 Direct Binary Upload]** op de werkstroompagina.
+1. Voer in het dialoogvenster **[!UICONTROL Step Properties]** onder het tabblad **[!UICONTROL Common]** onder de kop **[!UICONTROL Advanced Settings]** in het veld **[!UICONTROL Timeout]** een waarde in van `18000` minuten (vijf uur). De standaardwaarde is `3600` minuten (één uur).
+1. Selecteer **[!UICONTROL OK]**.
+1. Selecteer **[!UICONTROL Sync]**.
+1. Herhaal stap 14-21 voor het **[!UICONTROL DAM Update Asset]** workflowmodel en het **[!UICONTROL Scene7 Reprocess Workflow]** workflowmodel.
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -525,7 +611,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 **De voorlopige wachtrij voor graniet bijwerken:**
 
-1. Navigeer naar [https://&lt;server>/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek naar **Wachtrij: Granite Transient Workflow Queue**.
+1. Navigeer naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek naar **Wachtrij: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    Een tekstonderzoek is noodzakelijk in plaats van een directe URL omdat OSGi PID dynamisch wordt geproduceerd.

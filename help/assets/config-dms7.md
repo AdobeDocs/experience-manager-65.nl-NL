@@ -10,10 +10,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuratie, Scene7-modus
-source-git-commit: 9cca48f13f2e6f26961cff86d71f342cab422a78
+source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
 workflow-type: tm+mt
-source-wordcount: '6430'
-ht-degree: 3%
+source-wordcount: '6509'
+ht-degree: 2%
 
 ---
 
@@ -163,14 +163,19 @@ In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploa
 
 Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebruiken:
 
-* U moet Experience Manager 6.5 met Service Pack 6.5.4.0 in werking stellen of later.
-* [Directe binaire ](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) downloads van de Toegang van Oak toegelaten.
+* U moet Experience Manager 6.5 met Service Pack 6.5.4.0 of later in Dynamic Media - Scene7 wijze in werking stellen.
+* Deze grote uploadfunctie wordt alleen ondersteund voor [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-klanten.
+* Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3 of Microsoft® Azure Blob-opslag.
 
-   Om toe te laten, plaats bezit `presignedHttpDownloadURIExpirySeconds > 0` in de datastore configuratie. De waarde moet lang genoeg zijn om grotere binaire bestanden te downloaden en het opnieuw te proberen.
+   >[!NOTE]
+   Configureer de opslag van Azure Blob met zowel toegangstoetsen (key1 als key2) omdat deze grote uploadfunctie niet wordt ondersteund met AzureSas in de opslagconfiguratie van Blob.
+
+* [Directe binaire Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is ingeschakeld (Oak *Directe binaire Access upload* is niet vereist).
+
+   Om Directe Binaire download van de Toegang toe te laten, plaats bezit `presignedHttpDownloadURIExpirySeconds > 0` in de datastore configuratie. De waarde moet lang genoeg zijn om grotere binaire bestanden te downloaden en het opnieuw te proberen.
 
 * Elementen die groter zijn dan 15 GB worden niet geüpload. (De formaatlimiet wordt in stap 8 hieronder vastgesteld.)
-* Wanneer de Scene7 Reprocess Assets-workflow wordt geactiveerd voor een map, worden de reeds geüploade grote elementen in de map opnieuw verwerkt. Het uploadt echter grote activa die niet in het Scene7-bedrijf bestaan.
-* Grote uploads werken alleen voor afzonderlijke asset-ladingen, niet wanneer de workflow voor een map wordt geactiveerd.
+* Wanneer de **[!UICONTROL Dynamic Media Reprocess]** middelenworkflow wordt geactiveerd voor een map, worden alle grote elementen die al gesynchroniseerd zijn met het Dynamic Media-bedrijf, opnieuw verwerkt. Als grote elementen echter nog niet in de map zijn gesynchroniseerd, wordt het element niet geüpload. Als u bestaande grote elementen in Dynamic Media wilt synchroniseren, kunt u **[!UICONTROL Dynamic Media Reprocess]** assets-workflow dus uitvoeren op afzonderlijke elementen.
 
 **Dynamic Media - Scene7-modus configureren voor het uploaden van middelen groter dan 2 GB:**
 
@@ -237,7 +242,7 @@ U kunt een waarde tot 15 GB (`2013265920` bytes) ingaan. In dit geval worden ge�
 1. Voer in het dialoogvenster **[!UICONTROL Step Properties]** onder het tabblad **[!UICONTROL Common]** onder de kop **[!UICONTROL Advanced Settings]** in het veld **[!UICONTROL Timeout]** een waarde in van `18000` minuten (vijf uur). De standaardwaarde is `3600` minuten (één uur).
 1. Selecteer **[!UICONTROL OK]**.
 1. Selecteer **[!UICONTROL Sync]**.
-1. Herhaal stap 14-21 voor het **[!UICONTROL DAM Update Asset]** workflowmodel en het **[!UICONTROL Scene7 Reprocess Workflow]** workflowmodel.
+1. Herhaal stap 14-21 voor het **[!UICONTROL DAM Update Asset]** workflowmodel en het **[!UICONTROL Dynamic Media Reprocess]** workflowmodel.
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 

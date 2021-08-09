@@ -6,9 +6,9 @@ seo-description: Een lijst met de ondersteunde client- en serverplatforms voor A
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 5ce72a51d69e97d7e07e9f734bfd7547fccd51f1
+source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3266'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
  </tbody>
 </table>
 
-1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt rechtstreeks door Adobe ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. AEM 6.5 SP10 voor AEM Forms Java EE. Zie [Azul Java support for Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie.
+1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt rechtstreeks door Adobe ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie [Azul Java support for Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie.
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10, en Java 12 zijn niet-LTS versies door Oracle (zie [de steunroadmap van Java SE van het Oracle](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie **tot december 2022**. Zie [Oracle Java support for Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie.
 
@@ -241,7 +241,7 @@ In alle andere gevallen van implementatie van AEM op Azure of AWS, of in elke an
 
 Voor aanbevelingen voor de implementatie van AEM op Azure of AWS, buiten Adobe Managed Services, raadt Adobe u ten zeerste aan rechtstreeks samen te werken met de cloud provider of Adobe-partners die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde cloudprovider of partner is verantwoordelijk voor de groottesortering van de specificaties, het ontwerp en de implementatie van de architectuur., om te voldoen aan uw specifieke vereisten op het gebied van prestaties, belasting, schaalbaarheid en beveiliging.
 
-### Platforms voor verzending (webservers) {#dispatcher-platforms-web-servers}
+### Dispatcher-Platforms (webservers) {#dispatcher-platforms-web-servers}
 
 De Dispatcher is de component voor het in cache plaatsen en taakverdeling. [Download de nieuwste versie](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html) van Dispatcher. Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
 
@@ -262,7 +262,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 ## Ondersteunde client-Platforms {#supported-client-platforms}
 
-### Ondersteunde browsers voor gebruikersinterface ontwerpen {#supported-browsers-for-authoring-user-interface}
+### Ondersteunde browsers voor gebruikersinterface voor ontwerpen {#supported-browsers-for-authoring-user-interface}
 
 De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplatforms. Alle browsers worden getest met de standaardset insteekmodules en invoegtoepassingen.
 
@@ -350,7 +350,7 @@ Als u verbinding wilt maken met Microsoft Windows 7+ met een AEM die niet met SS
 
 Om ontvankelijkheid van de Cliënt WebDav onder Vensters te verbeteren - zie [de Steun KB 2445570](https://support.microsoft.com/kb/2445570) van Microsoft
 
-## Aanvullende Platforms {#additional-platform-notes}
+## Aanvullende opmerkingen bij Platforms {#additional-platform-notes}
 
 Deze sectie biedt speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
 
@@ -523,7 +523,7 @@ Voor Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
 * Beheerdersrechten voor het installeren van Designer.
 
-### Vereisten voor het terugschrijven van AEM Assets XMP metagegevens {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 

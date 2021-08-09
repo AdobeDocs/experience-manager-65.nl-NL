@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 feature: Workflow,middelenbeheer,uitvoeringen
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '1324'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -77,20 +77,20 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
    * Als er een of meer submappen met elementen in de geselecteerde hoofdmap staan, worden alle elementen in de maphiërarchie opnieuw verwerkt.
    * U kunt het beste deze workflow niet uitvoeren in een mappenhiërarchie met meer dan 1000 elementen.
 
-1. Klik in de linkerbovenhoek van de pagina in de vervolgkeuzelijst op **[!UICONTROL Timeline]**.
-1. Klik in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, op het karatpictogram ( **^** ).
+1. Selecteer **[!UICONTROL Timeline]** in de vervolgkeuzelijst in de linkerbovenhoek van de pagina.
+1. Selecteer in de linkerbenedenhoek van de pagina, rechts van het veld Opmerking, het karatpictogram ( **^** ).
 
    ![Workflow 1 voor opnieuw verwerken van middelen](/help/assets/assets/reprocess-assets1.png)
 
-1. Klik op **[!UICONTROL Start Workflow]**.
+1. Selecteer **[!UICONTROL Start Workflow]**.
 1. Kies **[!UICONTROL Scene7: Reprocess Assets]** in de vervolgkeuzelijst **[!UICONTROL Start Workflow]**.
 1. (Optioneel) Voer in het tekstveld **Voer een titel van de workflow in** een naam voor de workflow in. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 
    ![Activa opnieuw verwerken 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
+1. Selecteer **[!UICONTROL Start]** en selecteer **[!UICONTROL Confirm]**.
 
-   Om het werkschema te controleren of zijn vooruitgang te controleren, van de Experience Manager belangrijkste consolepagina, klik **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
+   Om de werkstroom te controleren of zijn vooruitgang te controleren, van de Experience Manager belangrijkste consolepagina, uitgezocht **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. Selecteer een workflow op de pagina Workflowinstanties. Selecteer **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
@@ -98,14 +98,14 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
 **U kunt de batchgrootte van de workflow voor opnieuw verwerken desgewenst aanpassen:**
 
-1. Klik in Experience Manager op **[!UICONTROL Adobe Experience Manager]** om de globale navigatieconsole te openen en klik vervolgens op het pictogram **[!UICONTROL Tools]** (hamer) > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Selecteer **[!UICONTROL Adobe Experience Manager]** in Experience Manager om toegang te krijgen tot de algemene navigatieconsole en selecteer **[!UICONTROL Tools]** (hamer) pictogram > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Voor de pagina van de Modellen van het Werkschema, in de Mening van de Kaart of de Mening van de Lijst, selecteer **[!UICONTROL Scene7: Reprocess Assets]**.
 
    ![Pagina Workflowmodellen met Scene7: Workflow voor opnieuw verwerken van middelen die zijn geselecteerd in Kaartweergave](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. Klik op **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
-1. Op de Scene7: Klik in de rechterbovenhoek op **[!UICONTROL Edit]** om de workflow te ontgrendelen.
-1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en klik vervolgens op **[!UICONTROL Configure]** op de werkbalk.
+1. Selecteer **[!UICONTROL Edit]** op de werkbalk. Met een nieuw browsertabblad wordt de Scene7 geopend: Modelpagina voor middelenwerkstroom opnieuw verwerken.
+1. Op de Scene7: Kies **[!UICONTROL Edit]** om de werkstroom te ontgrendelen bij de pagina voor het opnieuw verwerken van middelen in de rechterbovenhoek.
+1. Selecteer in de workflow de Scene7-component Batch uploaden om de werkbalk te openen en selecteer vervolgens **[!UICONTROL Configure]** op de werkbalk.
 
    ![Scene7-component Batch uploaden](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -119,16 +119,16 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
    ![Eigenschappen, dialoogvenster](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Klik in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** op **[!UICONTROL Done]**.
+1. Selecteer **[!UICONTROL Done]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]**.
 
-1. In de rechterbovenhoek van de Scene7: De pagina van het werkschemamodel van Activa opnieuw verwerken, klik **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Synced]** ziet, wordt het model van de werkschemaruntime met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
+1. In de rechterbovenhoek van de Scene7: De pagina van het werkschemamodel van Activa opnieuw verwerken, uitgezocht **[!UICONTROL Sync]**. Wanneer u **[!UICONTROL Synced]** ziet, wordt het model van de werkschemaruntime met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
 
    ![Het workflowmodel synchroniseren](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Sluit het browsertabblad waarin de Scene7 wordt weergegeven: Workflowmodel voor opnieuw verwerken van middelen.
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -139,10 +139,10 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->

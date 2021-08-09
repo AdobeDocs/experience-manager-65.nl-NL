@@ -11,10 +11,10 @@ docset: aem65
 feature: Panoramische afbeeldingen, beheer van bedrijfsmiddelen
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -38,7 +38,7 @@ U kunt de standaardverhouding van 2 in CRXDE Lite bij het volgende met voeten tr
 
 Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van toepassing op panoramische assets voor de pagina met assetdetails en de `Panoramic Media` WCM-component.
 
-Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets) om elementen te uploaden voor gebruik met de Panoramische Image Viewer.
+Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets) als u elementen wilt uploaden voor gebruik met de Panoramische Image-viewer.
 
 ## Dynamic Media Classic configureren {#configuring-dynamic-media-classic-scene}
 
@@ -46,7 +46,7 @@ De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voo
 
 1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+1. Selecteer **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]** in de rechterbovenhoek van de pagina.
 1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu **[!UICONTROL Publish Context]** boven op de pagina Publiceren op de afbeeldingsserver.
 
 1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes]**.
@@ -65,9 +65,9 @@ De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voo
 
    Deze instellingen zijn nodig voor het gebruik van de WCM-component `Panoramic Media` in Experience Manager.
 
-1. Klik links onder aan de pagina Publiceren afbeeldingsserver op **[!UICONTROL Save]**.
+1. Selecteer **[!UICONTROL Save]** links onder aan de pagina Publiceren afbeeldingsserver.
 
-1. Klik in de rechterbenedenhoek op **[!UICONTROL Close]**.
+1. Selecteer **[!UICONTROL Close]** in de rechterbenedenhoek.
 
 ### Problemen met de WCM-component Panoramische media oplossen {#troubleshooting-the-panoramic-media-wcm-component}
 
@@ -79,7 +79,7 @@ Als u een beeld in de component Panoramische Media in uw WCM en samengevouwen co
 * Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel plaatst en maakt CTN voor de vorige verzoeken om het beeldmiddel ongeldig.
 * Als de afbeeldingskwaliteit laag wordt na een verzoek om een afbeelding waarvan de grootte groter is dan de ondersteunde limiet, controleert u of de instelling **[!UICONTROL JPEG Encoding Attributes > Quality]** niet leeg is. Een typische instelling voor het veld **[!UICONTROL Quality]** is `95`. U kunt het plaatsen op de de Publish pagina van de Server van het Beeld vinden. Zie [Dynamic Media Classic configureren](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene) voor toegang tot de pagina.
 
-## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
+## Voorvertoning panorama-afbeeldingen {#previewing-panoramic-images}
 
 Zie [Elementen voorvertonen](/help/assets/previewing-assets.md).
 

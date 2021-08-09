@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-voorinstellingen voor afbeeldingen beheren
-description: Dynamic Media-voorinstellingen voor afbeeldingen leren gebruiken en voorinstellingen voor afbeeldingen maken, wijzigen en beheren
+description: Begrijp Dynamic Media-voorinstellingen voor afbeeldingen en leer hoe u voorinstellingen voor afbeeldingen maakt, wijzigt en beheert.
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -13,9 +13,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Voorinstellingen afbeelding
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '3707'
+source-wordcount: '3699'
 ht-degree: 6%
 
 ---
@@ -101,8 +101,8 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 
 | **Eigenschap Metadata** | **Beschrijving** |
 |---|---|
-| dam:Physicalwidthinches | Documentbreedte in inches. |
-| dam:Physicalheightininches | Documenthoogte in inches. |
+| `dam:Physicalwidthininches` | Documentbreedte in inches. |
+| `dam:Physicalheightininches` | Documenthoogte in inches. |
 
 U hebt toegang tot `Rasterize PDF/AI Image Preview Rendition` opties voor procescomponenten via de `DAM Update Asset` workflow.
 
@@ -181,7 +181,7 @@ De volgende scripts worden door Dynamic Media-integratie gebruikt:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Ja</td>
-   <td>Hiermee genereert u een JPEG-subelement van 300 ppi voor elke pagina. Het JPEG-subelement is een echt element dat is opgeslagen onder het InDesign-element. Het wordt ook geoptimaliseerd en omgezet in PTIFF door de <code>DAM Update Asset</code> werkschema.<br /> </td>
+   <td>Genereert een 300 PPI JPEG-subelement voor elke pagina. Het JPEG-subelement is een echt element dat is opgeslagen onder het InDesign-element. Het wordt ook geoptimaliseerd en omgezet in PTIFF door de <code>DAM Update Asset</code> werkschema.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,11 +193,11 @@ De volgende scripts worden door Dynamic Media-integratie gebruikt:
 
 ## Miniatuurgrootte van afbeelding configureren {#configuring-image-thumbnail-size}
 
-U kunt de grootte van miniaturen configureren door deze instellingen te configureren in de **[!UICONTROL DAM Update Asset]**-workflow. De workflow bevat twee stappen waarmee u de miniatuurgrootte van afbeeldingselementen kunt configureren. Hoewel het ene (**[!UICONTROL Dynamic Media Process Image Assets]**) wordt gebruikt voor dynamische afbeeldingselementen en het andere (**[!UICONTROL Process Thumbnails]**) voor het genereren van statische miniaturen, of wanneer bij alle andere processen geen miniaturen worden gegenereerd, moeten *both* dezelfde instellingen hebben.
+U kunt de grootte van miniaturen configureren door deze instellingen te configureren in de **[!UICONTROL DAM Update Asset]**-workflow. De workflow bevat twee stappen waarmee u de miniatuurgrootte van afbeeldingselementen kunt configureren. Hoewel (**[!UICONTROL Dynamic Media Process Image Assets]**) voor dynamische beeldactiva wordt gebruikt, en (**[!UICONTROL Process Thumbnails]**) voor statische duimnagelverwezenlijking is, of wanneer alle andere processen er niet in slagen om duimnagels te produceren, *zowel* moeten de zelfde montages hebben.
 
 Met de stap **[!UICONTROL Dynamic Media Process Image Assets]** worden miniaturen gegenereerd door de afbeeldingsserver en deze configuratie is onafhankelijk van de configuratie die op de stap **[!UICONTROL Process Thumbnails]** is toegepast. Het genereren van miniaturen via de stap **[!UICONTROL Process Thumbnails]** is de langzaamste en meest geheugenintensieve manier om miniaturen te maken.
 
-Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width:height:center]**, bijvoorbeeld *80:80:false*. De breedte en hoogte bepalen de grootte in pixels van de miniatuur. De middelste waarde is onwaar of true en als de waarde true is, wordt aangegeven dat de miniatuurafbeelding exact de grootte heeft die in de configuratie is opgegeven. Als de gewijzigde afbeelding kleiner is, wordt deze gecentreerd in de miniatuur.
+Miniatuurgrootte wordt gedefinieerd in de volgende indeling: **[!UICONTROL width:height:center]**, bijvoorbeeld `80:80:false`. De breedte en hoogte bepalen de grootte in pixels van de miniatuur. De middelste waarde is onwaar of true en als de waarde true is, wordt aangegeven dat de miniatuurafbeelding exact de grootte heeft die in de configuratie is opgegeven. Als de gewijzigde afbeelding kleiner is, wordt deze gecentreerd in de miniatuur.
 
 >[!NOTE]
 >
@@ -340,7 +340,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li><strong>Type  </strong>- Selecteer  <strong>Adaptief</strong>  (standaard),  <strong>Web</strong> of  <strong>Macintosh</strong>. Als u <strong>GIF met Alpha</strong> selecteert, is de optie van Macintosh niet beschikbaar.</li>
      <li><strong>Dithering</strong>  - Selecteer  <strong></strong> Diffuus of  <strong>Uit</strong>.</li>
      <li><strong>Aantal kleuren  </strong>- Voer een getal in tussen 2 en 256.</li>
-     <li><strong>Kleurenlijst</strong>  - Voer een lijst met door komma's gescheiden waarden in. Voer voor wit, grijs en zwart bijvoorbeeld 000000,888888,ffffffff in.</li>
+     <li><strong>Kleurenlijst</strong>  - Voer een lijst met door komma's gescheiden waarden in. Voer bijvoorbeeld <code>000000,888888,ffffff</code> in voor wit, grijs en zwart.</li>
     </ul>
     <div>
       Kiezen

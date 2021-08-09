@@ -10,14 +10,14 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publiceren
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
 
 ---
 
-# Dynamic Media-middelen publiceren {#publishing-dynamic-media-assets}
+# Dynamic Media-elementen publiceren {#publishing-dynamic-media-assets}
 
 U publiceert uw Dynamic Media-elementen door de elementen te selecteren die u al hebt geüpload en op **[!UICONTROL Publish]** of **[!UICONTROL Quick Publish]** te tikken. Nadat uw Dynamic Media-elementen zijn gepubliceerd, kunt u ze gebruiken om op een webpagina in te voegen via een URL of door de code in te sluiten op de pagina.
 
@@ -32,7 +32,7 @@ In **[!UICONTROL Card View]** verschijnt een klein globe pictogram direct onder 
 
 Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorgen dat het coderen is voltooid. Tijdens het coderen van video&#39;s wordt op het systeem gemeld dat er een videoverwerkingsworkflow wordt uitgevoerd. Wanneer videocodering is voltooid, kunt u een voorvertoning van de video-uitvoeringen bekijken. Op dat moment kunt u de video&#39;s veilig publiceren zonder publicatiefouten te maken.
 
-Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
+Zie ook [URLs van de verbinding aan uw Toepassing van het Web](linking-urls-to-yourwebapplication.md).
 
 Zie ook [De Dynamic Media Video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md)
 

@@ -6,14 +6,14 @@ docset: aem65
 feature: 3D-middelen
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 4%
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
-# 3D-elementen voorvertonen in Adobe Experience Manager{#previewing-3d-assets-aem}
+# 3D-elementen voorvertonen in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 Experience Manager ondersteunt het uploaden, leveren en interactief voorvertonen van 3D-elementen als onderdeel van het ontwerpproces.
 
@@ -49,22 +49,22 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
 
 De tijd die nodig is om een 3D-element te openen op de pagina met de elementdetails, is afhankelijk van verschillende factoren, zoals bandbreedte, de complexiteit van de afbeelding en de vertraging van de server.
 
-Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, laptop of mobiel aanraakapparaat, ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
+Bovendien zijn de mogelijkheden van de clientcomputer - zoals een werkstation, laptop of mobiel aanraakapparaat - ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
 **Een voorvertoning van 3D-elementen weergeven in Experience Manager:**
 
 1. Zorg ervoor dat u 3D-elementen hebt geüpload naar de Experience Manager.
 Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-assets) en [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
-1. Tik **[!UICONTROL Assets > Files]** vanaf Experience Manager op de pagina **[!UICONTROL Navigation]**.
+1. Van Experience Manager, op de **[!UICONTROL Navigation]** pagina, selecteer **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 
    ![Navigatiepagina](/help/assets/assets-dm/navigation-assets.png)
 
-1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst Weergave op **[!UICONTROL Card View]** en ga naar een 3D-asset waarvan u een voorvertoning wilt weergeven.
+1. Selecteer in de rechterbovenhoek van de pagina **[!UICONTROL Card View]** in de vervolgkeuzelijst Weergave en navigeer vervolgens naar een 3D-element waarvan u een voorvertoning wilt weergeven.
 
    ![3D-kaart selecteren](/help/assets/assets-dm/3d-card-select.png)
-   _Tik in de Kaartweergave op de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
+   _Selecteer in de Kaartweergave de kaart van het 3D-element waarvan u een voorvertoning wilt weergeven._
 
-1. Tik op de kaart van het 3D-element.
+1. Selecteer de kaart van het 3D-element.
 
    ![Interactieve 3D-voorvertoning](/help/assets/assets-dm/3d-preview.png)
    _Interactieve voorvertoning van een 3D-element op de pagina met de elementdetails._
@@ -76,7 +76,7 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
-   | **Herstellen** | Tik in de rechterbenedenhoek van de pagina op het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | Tik op het pictogram Volledig scherm in de rechterbenedenhoek van de pagina om de modus Volledig scherm te activeren. |  |  |
+   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
 
-1. Tik op **[!UICONTROL Close]** in de rechterbovenhoek van de pagina als u klaar bent.
+1. Als u klaar bent, selecteert u **[!UICONTROL Close]** in de rechterbovenhoek van de pagina.

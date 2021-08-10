@@ -1,5 +1,5 @@
 ---
-title: URL's koppelen aan uw webapplicatie
+title: URL's koppelen aan uw webtoepassing
 description: URL's koppelen aan uw webtoepassing in Dynamic Media
 uuid: cf599e66-b1f9-40c0-b572-cea19f2e6793
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuratie
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1213'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
-# URL&#39;s koppelen aan uw webapplicatie {#linking-urls-to-your-web-application}
+# URL&#39;s koppelen aan uw webtoepassing {#linking-urls-to-your-web-application}
 
 Uw websites en toepassingen hebben via URL-oproepen toegang tot Dynamic Media-services. Nadat u een element hebt gepubliceerd, activeert Dynamic Media een URL-tekenreeks die verwijst naar het element. U kunt deze URL&#39;s voor testdoeleinden in een webbrowser plakken.
 
@@ -29,17 +29,17 @@ Kopieer deze URL-tekenreeksen vanuit Dynamic Media om deze in uw webpagina&#39;s
 >
 >URL-tekenreeksen zijn alleen beschikbaar voor dynamische uitvoeringen van elementen. Ze zijn momenteel niet beschikbaar voor statische elementen die zich in DAM bevinden en niet voor de Dynamic Media-server. De knop URL wordt niet weergegeven voor vertoningen die statisch zijn.
 
-Zie ook [Video of Afbeeldingsviewer insluiten op een webpagina](embed-code.md).
+Zie ook [De video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md).
 
-Zie ook [YouTube-URL&#39;s koppelen aan uw webtoepassing](video.md).
+Zie ook [YouTube URLs van de Verbinding met uw Toepassing van het Web](video.md).
 
 Zie ook [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md).
 
 Zie ook [Elementen uploaden](manage-assets.md#uploading-assets).
 
-## Een URL ophalen voor een element {#obtaining-a-url-for-an-asset}
+## Een URL verkrijgen voor een element {#obtaining-a-url-for-an-asset}
 
-U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geplaatst, zodat u deze desgewenst kunt plakken naar de pagina&#39;s van uw website of toepassing.
+U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelling voor afbeeldingen of een voorinstelling voor de viewer. Nadat u de URL hebt gekopieerd, wordt de URL op het Klembord geland, zodat u deze desgewenst kunt plakken naar pagina&#39;s in uw website of toepassing.
 
 >[!NOTE]
 >
@@ -53,9 +53,9 @@ U kunt een URL-tekenreeks verkrijgen die wordt gegenereerd door een voorinstelli
 
 Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In de onderstaande stappen ziet u echter slechts één methode die u kunt gebruiken.
 
-**Een URL verkrijgen voor een element**
+**Een URL verkrijgen voor een element:**
 
-1. Navigeer naar het *gepubliceerde*-element waarvan u de URL van de voorinstelling voor de afbeelding of de URL van de viewer met voorinstelling wilt kopiëren en tik op het element om het te openen.
+1. Navigeer naar het *gepubliceerde*-element waarvan u de URL van de voorinstelling voor de afbeelding of de URL van de viewer met voorinstelling wilt kopiëren en selecteer het element om het te openen.
 
    Houd er rekening mee dat URL&#39;s alleen beschikbaar zijn om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
@@ -67,25 +67,25 @@ Er zijn verschillende manieren waarop u een URL-tekenreeks kunt verkrijgen. In d
 
 1. Voer op basis van het element dat u hebt geselecteerd een van de volgende handelingen uit:
 
-   * Tik **[!UICONTROL Renditions]** als u een afbeelding hebt geselecteerd in de vervolgkeuzelijst.
+   * Als u een afbeelding hebt geselecteerd, selecteert u **[!UICONTROL Renditions]** in het keuzemenu.
 
-      Tik onder de kop **[!UICONTROL Dynamic]** op de naam van een voorinstelling om de vertoning ervan in het rechterframe weer te geven. Schuif zo nodig in de lijst Uitvoeringen om de dynamische kop weer te geven.
+      Selecteer onder de kop **[!UICONTROL Dynamic]** een naam voor de voorinstelling om de vertoning ervan in het rechterframe weer te geven. Schuif zo nodig in de lijst Uitvoeringen om de dynamische kop weer te geven.
 
-      Tik op **[!UICONTROL URL]** onder aan de linkerspoorstaaf.
+      Selecteer **[!UICONTROL URL]** onder aan het linkerspoor.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-   * Tik **[!UICONTROL Viewers]** als u een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd in de vervolgkeuzelijst.
+   * Selecteer **[!UICONTROL Viewers]** als u een centrifugeset, een afbeeldingsset, een carrouselset of een video hebt geselecteerd in de vervolgkeuzelijst.
 
-      Tik in de linkertrack op de naam van een viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
+      Selecteer in het linkerspoor een naam voor de viewervoorinstelling. Er wordt een voorvertoning van de set of video geopend op een aparte pagina.
 
-      Tik op **[!UICONTROL URL]** in het linkerspoor onderaan.
+      Selecteer **[!UICONTROL URL]** in het linkerspoor onderaan.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Selecteer en kopieer de tekst naar uw webbrowser, zodat u een voorvertoning van het element kunt bekijken of het aan uw webinhoudpagina kunt toevoegen.
 
-   Tik op **[!UICONTROL X]** of **[!UICONTROL Close]** om het URL-venster te sluiten.
+   Als u het URL-venster wilt sluiten, selecteert u **[!UICONTROL X]** of **[!UICONTROL Close]**.
 
 ## Een URL verkrijgen voor een statisch element {#obtaining-a-url-for-a-static-asset}
 
@@ -101,9 +101,9 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 * XML
 * ZIP
 
-**Een URL verkrijgen voor een statisch element**
+**Een URL verkrijgen voor een statisch element:**
 
-1. Navigeer naar het statische element *published* waarvan u de URL wilt kopiëren en tik op het element om het te openen.
+1. Navigeer naar het statische element *published* waarvan u de URL wilt kopiëren en selecteer het element om het te openen.
 
    Onthoud dat URL&#39;s alleen beschikbaar zijn om *after* te kopiëren. U hebt eerst *published* het statische element.
 
@@ -116,16 +116,16 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
       * `https://*<server_name>*/is/content/*<company_name>*/*<static_asset_filename>*.*<extension>*`
 
          Bijvoorbeeld, `https://aem.com/is/content/adobe/image.gif`.
-   * Tik op **[!UICONTROL Asset > Dynamic Renditions]**, tik vervolgens op een dynamische vertoning van het statische element en kopieer de URL.
+   * Selecteer **[!UICONTROL Asset]** > **[!UICONTROL Dynamic Renditions]**, dan selecteer een dynamische vertoning van het statische element en kopieer URL.
 
       Wijzig de gekopieerde URL om `is/content` in het pad te gebruiken in plaats van `is/image/`.
 
 
-## Een video-URL ophalen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
+## Een video-URL verkrijgen voor een gepubliceerde video-uitvoering {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
-1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en selecteer **[!UICONTROL Show Configurations]**.
+1. Selecteer onder **[!UICONTROL Available Configurations]** de naam van de gewenste configuratie.
 
 1. Kopieer op de pagina **[!UICONTROL Dynamic Media Cloud Settings]** onder **[!UICONTROL Video Service URL]** het volledige URL-pad omlaag. U dient het gekopieerde URL-pad later in de stappen te gebruiken.
 
@@ -139,7 +139,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany` was, zou de naam van de klant `MyCompany` zijn.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Services]**, tik vervolgens op het logo van de Experience Manager en navigeer naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Selecteer **[!UICONTROL Cloud Services]** in de linkerbovenhoek van de pagina, selecteer vervolgens het logo van de Experience Manager en navigeer naar **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieer het volledige pad voor video-uitvoering van de JCR (Java™ Content Repository) naar beneden.
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -161,8 +161,8 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 ## Een video-URL ophalen voor adaptieve streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
-1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en tik op **[!UICONTROL Show Configurations]**.
-1. Tik onder **[!UICONTROL Available Configurations]** op de naam van de gewenste configuratie.
+1. Schuif op de pagina **[!UICONTROL Cloud Services]** omlaag naar de kop **[!UICONTROL Dynamic Media Cloud Services]** en selecteer **[!UICONTROL Show Configurations]**.
+1. Selecteer onder **[!UICONTROL Available Configurations]** de naam van de gewenste configuratie.
 1. Ga als volgt te werk op de pagina **[!UICONTROL Dynamic Media Cloud Services Settings]**:
 
    * Kopieer onder **[!UICONTROL Video Service URL]** het volledige URL-pad. U hebt het gekopieerde pad naar de URL later nodig in deze stappen. Het URL-pad kan er bijvoorbeeld ongeveer als volgt uitzien:
@@ -201,7 +201,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## HTTP/2 gebruiken om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
+## Gebruik HTTP/2 om uw Dynamic Media-middelen te leveren {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 is het nieuwe, bijgewerkte webprotocol dat de manier verbetert waarop browsers en servers communiceren. Het zorgt voor een snellere overdracht van informatie en vermindert de hoeveelheid verwerkingskracht die nodig is. De levering van Dynamic Media-middelen kan nu plaatsvinden via HTTP/2, wat betere responstijd en laadtijden biedt.
 

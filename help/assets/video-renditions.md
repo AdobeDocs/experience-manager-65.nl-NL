@@ -6,26 +6,26 @@ contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 99230f2b9ce8179de4034d8bd739a5535b2cc0da
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Video-uitvoeringen {#video-renditions}
 
-Met Adobe Experience Manager (AEM)-elementen worden video-uitvoeringen gegenereerd voor video-elementen van verschillende indelingen, zoals OGG, FLV enzovoort.
+Adobe Experience Manager Assets genereert video-uitvoeringen voor video-elementen van verschillende indelingen, zoals OGG, FLV enzovoort.
 
-AEM Assets ondersteunt statische en dynamische uitvoeringen (met DM gecodeerde uitvoeringen) voor media-elementen.
+Experience Manager-elementen ondersteunen statische en dynamische uitvoeringen (met DM gecodeerde uitvoeringen) voor media-elementen.
 
 Statische uitvoeringen worden native gegenereerd met behulp van FFMPEG (geïnstalleerd en beschikbaar op het systeempad) en opgeslagen in de inhoudsopslagplaats.
 
 De met DM gecodeerde vertoningen worden opgeslagen in de volmachtsserver en bij runtime gediend.
 
-AEM elementen bieden ondersteuning voor het afspelen van deze uitvoeringen op de client.
+Experience Manager Assets biedt ondersteuning voor het afspelen van deze uitvoeringen aan de clientzijde.
 
-Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en tikt u op het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Renditions]** in de lijst.
+Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en selecteert u het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Renditions]** in de lijst.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
@@ -41,6 +41,6 @@ Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt 
 
 >[!NOTE]
 >
->Het afspelen van audio werkt niet voor OGG- en WAV-bestanden in Microsoft Internet Explorer 11. Er wordt een fout `Invalid Source` weergegeven op de pagina met elementdetails voor elementen met de extensie OGG of WAV.
+>Het afspelen van audio werkt niet voor OGG- en WAV-bestanden in Microsoft® Internet Explorer 11. Er wordt een fout `Invalid Source` weergegeven op de pagina met elementdetails voor elementen met de extensie OGG of WAV.
 >
->Op MS Edge en iPad worden OGG-bestanden niet afgespeeld en wordt een niet-ondersteunde indelingsfout gegenereerd.
+>In MS® Edge en iPad worden OGG-bestanden niet afgespeeld en wordt een niet-ondersteunde indelingsfout gegenereerd.

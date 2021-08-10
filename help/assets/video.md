@@ -12,9 +12,9 @@ docset: aem65
 feature: Beheer van bedrijfsmiddelen
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 3dd49715c7c3078f2ef9495c99c98d4dd566db9b
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '11226'
+source-wordcount: '11224'
 ht-degree: 4%
 
 ---
@@ -306,7 +306,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt vooral korte video&#39;s met een maximale lengte van 30 minuten.
+* Dynamic Media biedt ondersteuning voor korte video&#39;s met een maximale lengte van 30 minuten.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:
@@ -423,7 +423,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
 
 | Videotype | Breedte x hoogte | Breedteverhouding | Hoogteverhouding |
 |--- |--- |--- |--- |
-| Bron | 1920 x 1080 | 1 | 1 |
+| Bron | 1920 x 1080 | 1 | 3 |
 | Gecodeerd | 960 x 540 | 2 | 2 |
 | Gecodeerd | 640 x 360 | 3 | 1 |
 | Gecodeerd | 480 x 270 | 4 | 4 |
@@ -572,7 +572,7 @@ Voor het publiceren van video&#39;s naar YouTube hebt u een of meer kanalen nodi
 
 1. Ga naar [https://www.youtube.com](https://www.youtube.com/) en meld u aan met de referenties van uw Google-account.
 1. Klik in de rechterbovenhoek van de YouTube-pagina op de profielafbeelding (kan ook worden weergegeven als een letter binnen een cirkel met effen kleuren) en klik vervolgens op **[!UICONTROL YouTube settings]** (pictogram met ronde versnelling).
-1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a new channel]**.
+1. Voor de pagina van het Overzicht, onder de Extra rubriek van Eigenschappen, klik **[!UICONTROL See all my channels or create a channel]**.
 1. Voor de pagina van Kanalen, klik **[!UICONTROL Create a new channel]**.
 1. Voer op de pagina Brand Account in het veld Brand Account Name een bedrijfsnaam of een andere kanaalnaam in die u kiest waar u de video-elementen wilt publiceren en klik vervolgens op **[!UICONTROL Create]**.
 
@@ -1182,7 +1182,7 @@ Omdat u een HTML5-videoviewer gebruikt, moet u ervoor zorgen dat het hoofdstukbe
 
 Zie [WebVTT: De indeling Web Video Text Tracks](https://w3c.github.io/webvtt/)
 
-**Hoofdstukmarkeringen aan video toevoegen:**
+**Navigatie voor videopunten toevoegen:**
 
 1. Sla het `.vtt`-bestand op in UTF8-codering, zodat u problemen met tekenuitvoering in de hoofdstuktiteltekst voorkomt.
 
@@ -1245,7 +1245,7 @@ Deze stappen zijn alleen van toepassing op Dynamic Media die wordt uitgevoerd in
 1. Zorg ervoor dat u al het volgende hebt gedaan:
 
    * Er is een map gemaakt voor uw video-elementen.
-   * [Er is een videoprofiel op de map](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) toegepast.
+   * [Pas een videoprofiel toe op de map](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    * [Uw video&#39;s zijn geüpload naar de map](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 

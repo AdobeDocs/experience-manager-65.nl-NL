@@ -8,11 +8,12 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ De volgende indelingen worden ondersteund voor de Scene7 Video-component:
 * F4V H.264
 * MP4 H.264
 
-## Bepalen waar uw video moet worden geüpload {#deciding-where-to-upload-your-video}
+## Bepaal waar u de video wilt uploaden {#deciding-where-to-upload-your-video}
 
 Bepaal waar u uw video-elementen wilt uploaden afhankelijk van het volgende:
 
@@ -72,9 +73,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, uploadt u uw middelen
 
 ## Integratie met Scene7 Video configureren {#configuring-integration-with-scene-video}
 
-Universele voorinstellingen configureren:
-
-1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]**-configuratie en klik op **[!UICONTROL Edit]**.
+1. Navigeer in **[!UICONTROL Cloud Services]** naar de **[!UICONTROL Scene7]**-configuratie en selecteer **[!UICONTROL Edit]**.
 1. Selecteer het tabblad **[!UICONTROL Video]**.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -93,22 +92,22 @@ Universele voorinstellingen configureren:
 
 1. De geselecteerde coderingsprofielen worden automatisch toegepast op alle video&#39;s die zijn geüpload naar de CQ DAM-doelmap die u hebt ingesteld voor deze Scene7-cloudconfiguratie. U kunt meerdere Scene7-cloudconfiguraties met verschillende doelmappen instellen om zo nodig verschillende coderingsprofielen toe te passen.
 
-## Voorinstellingen voor viewers en codering bijwerken {#updating-viewer-and-encoding-presets}
+## Viewer- en coderingsvoorinstellingen bijwerken {#updating-viewer-and-encoding-presets}
 
-Als u de voorinstellingen voor de viewer en codering voor video wilt bijwerken omdat de voorinstellingen in Scene7 zijn bijgewerkt, navigeert u naar de Scene7-configuratie in de Cloud Configuration en tikt u op **[!UICONTROL Update the viewer and encoding presets]**.
+Als u de voorinstellingen voor de viewer en codering voor video wilt bijwerken omdat de voorinstellingen in Scene7 zijn bijgewerkt, navigeert u naar de Scene7-configuratie in de Cloud Configuration en selecteert u **[!UICONTROL Update the viewer and encoding presets]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uw primaire bronvideo uploaden naar Scene7 vanaf Adobe DAM {#uploading-your-master-video}
+## Upload uw primaire bronvideo naar Scene7 vanaf Adobe DAM {#uploading-your-master-video}
 
 1. Navigeer naar de doelmap CQ DAM waar u de cloudconfiguratie hebt ingesteld met Scene7-coderingsprofielen.
-1. Klik **[!UICONTROL Upload]** om primaire bronvideo te uploaden. Het uploaden en coderen van video is voltooid nadat de [!UICONTROL DAM Update Asset]-workflow is voltooid en **[!UICONTROL Publish to Scene7]** een vinkje heeft.
+1. Selecteer **[!UICONTROL Upload]** om primaire bronvideo te uploaden. Het uploaden en coderen van video is voltooid nadat de [!UICONTROL DAM Update Asset]-workflow is voltooid en **[!UICONTROL Publish to Scene7]** een vinkje heeft.
 
    >[!NOTE]
    >
    >Het genereren van videominiaturen duurt langer.
 
-   Als u de primaire DAM-bronvideo naar het videoonderdeel sleept, wordt toegang verkregen tot *all* door Scene7 gecodeerde proxyuitvoeringen voor levering.
+   Door de primaire DAM-bronvideo naar het videoonderdeel te slepen, wordt toegang verkregen tot *all* door Scene7 gecodeerde proxyuitvoeringen voor levering.
 
 ## Foundation Video Component versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
@@ -150,9 +149,9 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 >
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
-1. Tik in Experience Manager op **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
+1. Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]** in Experience Manager.
 1. Navigeer in **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
-1. Maak een S7-videoprofiel. In **[!UICONTROL New]**. selecteert u **[!UICONTROL Create Page]** en selecteert u vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Maak een S7-videoprofiel. In **[!UICONTROL New]**. selecteert u **[!UICONTROL Create Page]** en selecteert u vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en selecteer **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

@@ -10,7 +10,7 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 997eeafa03d3148fb0754eaa27a5a99217e0d1bc
+source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '6239'
 ht-degree: 7%
@@ -811,7 +811,7 @@ Bijvoorbeeld `https://ims-na1.adobelogin.com/`
 
    * **[!UICONTROL Title]** - Voer een beschrijvende configuratitel in. Bijvoorbeeld, `We.Retail Tags cloud configuration`.
 
-   * **[!UICONTROL Associated Adobe IMS Configuration]** - Selecteer de IMS-configuratie die u eerder hebt gemaakt in  [Experience Manager IMS](#configuring-aem-ims) configureren.
+   * **[!UICONTROL Associated Adobe IMS Configuration]** - Selecteer de configuratie IMS die u eerder in  [Configure Experience Manager IMS](#configuring-aem-ims) creeerde.
 
    * **[!UICONTROL Company]** - Selecteer uw Experience Cloud bedrijf in de  **[!UICONTROL Company]** vervolgkeuzelijst. De lijst wordt automatisch gevuld.
 

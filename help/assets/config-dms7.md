@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuratie, Scene7-modus
-source-git-commit: 5769ddeefe2d01d32bb9a0611dc06af68a848936
+source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
 workflow-type: tm+mt
 source-wordcount: '6509'
 ht-degree: 2%
@@ -168,7 +168,7 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
 * Zorg ervoor dat uw Experience Manager-instantie is geconfigureerd met Amazon S3 of Microsoft® Azure Blob-opslag.
 
    >[!NOTE]
-   Configureer de opslag van Azure Blob met zowel toegangstoetsen (key1 als key2) omdat deze grote uploadfunctie niet wordt ondersteund met AzureSas in de opslagconfiguratie van Blob.
+   Configureer de opslag van Azure Blob met een toegangstoets en een geheime sleutel omdat deze grote uploadfunctie niet wordt ondersteund met AzureSas in de opslagconfiguratie van Blob.
 
 * [Directe binaire Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is ingeschakeld (Oak *Directe binaire Access upload* is niet vereist).
 

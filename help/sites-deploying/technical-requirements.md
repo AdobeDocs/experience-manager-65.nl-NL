@@ -6,16 +6,16 @@ seo-description: Een lijst met de ondersteunde client- en serverplatforms voor A
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0f0dfe8af5feed5227a091b89d65ef58d71eb299
+source-git-commit: f3c99936c1bbfd8a942ffefb1fcd3c2c0b3e9094
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
 
 # Technische vereisten{#technical-requirements}
 
-Adobe ondersteunt Adobe Experience Manager (AEM) op de platforms, zoals wordt beschreven in de volgende informatie in dit document.
+Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
 
 Neem contact op met de leverancier van het platform voor alle problemen die specifiek betrekking hebben op het platform.
 
@@ -25,7 +25,7 @@ Neem contact op met de leverancier van het platform voor alle problemen die spec
 
 ## Vereisten {#prerequisites}
 
-Minimumeisen voor de installatie van Adobe Experience Manager:
+Minimum requirements for installing Adobe Experience Manager:
 
 * Geïnstalleerde Java Platform, Standard Edition JDK, of andere ondersteunde [Java Virtual Machines](#java-virtual-machines)
 * QuickStart-bestand voor Experience Manager (zelfstandige WAR voor JAR- of webtoepassingsimplementatie)
@@ -39,7 +39,7 @@ Minimumvereisten voor Adobe Experience Manager:
 
 >[!NOTE]
 >
->* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. Zie [Implementeren en onderhouden](/help/sites-deploying/deploy.md#default-local-install) voor meer informatie.
+>* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. See [Deploying and Maintaining](/help/sites-deploying/deploy.md#default-local-install) for details.
 >* [Voor AEM Forms add-on ](/help/forms/using/installing-configuring-aem-forms-osgi.md) pakketten is 15 GB aan tijdelijke schijfruimte vereist.
 
 >
@@ -50,7 +50,7 @@ Zie [Richtlijnen voor hardwaregrootte](/help/managing/hardware-sizing-guidelines
 
 ### Ondersteuningsniveaus {#support-levels}
 
-In dit document worden de ondersteunde client- en serverplatforms voor Adobe Experience Manager vermeld. Adobe biedt verschillende ondersteuningsniveaus, zowel voor aanbevolen configuraties als voor andere configuraties.
+This document lists the supported client and server platforms for Adobe Experience Manager. Adobe biedt verschillende ondersteuningsniveaus, zowel voor aanbevolen configuraties als voor andere configuraties.
 
 ### Ondersteunde configuraties {#supported-configurations}
 
@@ -107,7 +107,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64-bits</td>
-   <td>A: Ondersteund [2]</td>
+   <td>A: Ondersteund [2] [4]</td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -138,6 +138,8 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
 
 1. IBM JRE wordt slechts gesteund samen met de Server van de Toepassing WebSphere.
 
+1. [!DNL Oracle Java SE 11 JDK] wordt niet ondersteund voor  [!DNL Experience Manager Forms].
+
 
 ### Opslag en duurzaamheid {#storage-persistence}
 
@@ -147,7 +149,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 |---|---|---|
 | **Bestandssysteem met TAR-bestanden** `[1]` | Bewaarplaats | A: Ondersteund |
 | **Bestandssysteem met Datastore** `[1]` | Binden | A: Ondersteund |
-| Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
+| Store binaries in TAR files on file system `[1]` | Binaries | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft Azure Blob-opslag | Binden | A: Ondersteund |
 | MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund `[2, 3]` |
@@ -190,7 +192,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 >
 >**De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
 
-### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
+### Servlet Engines / Application Servers {#servlet-engines-application-servers}
 
 Adobe Experience Manager kan worden uitgevoerd als een zelfstandige server (het QuickStart JAR-bestand) of als een webtoepassing binnen een externe toepassingsserver (het WAR-bestand).
 
@@ -222,7 +224,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Microsoft Windows Server 2019 `[4]` | R: Beperkte steun voor nieuwe contracten |
 | Microsoft Windows Server 2016 `[4]` | R: Beperkte ondersteuning voor nieuwe contracten `[5]` |
 | Microsoft Windows Server 2012 R2 | Z: Niet ondersteund |
-| Oracle Solaris 11 | Z: Niet ondersteund |
+| Oracle Solaris 11 | Z: Not supported |
 | IBM AIX 7.2 | Z: Niet ondersteund |
 
 1. Linux Kernel 2.6, 3.x en 4.x omvat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7 en Red Hat Enterprise Linux 7.
@@ -308,12 +310,12 @@ De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans l
   </tr>
   <tr>
    <td>Apple Safari op macOS (Evergreen)</td>
-   <td>A: Ondersteund</td>
+   <td>A: Supported</td>
    <td>A: Ondersteund</td>
   </tr>
   <tr>
    <td>Apple Safari 11.x op macOS</td>
-   <td>Z: Niet ondersteund</td>
+   <td>Z: Not supported</td>
    <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
@@ -408,7 +410,7 @@ Als u Dynamic Media op Linux gebruikt, moet aan de volgende voorwaarden worden v
 
 >[!NOTE]
 >
->**SELinux uitschakelen:** Afbeeldingsservice werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. U verhelpt dit probleem door het bestand **/etc/selinux/config** te bewerken en de SELinux-waarde te wijzigen van:
+>**SELinux uitschakelen:** Afbeeldingsservice werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. To remedy this issue, edit the **/etc/selinux/config** file and change the SELinux value from:
 >
 >`SELINUX=enforcing` **tot** `SELINUX=disabled`
 
@@ -433,13 +435,13 @@ Als u Dynamic Media op Linux gebruikt, moet aan de volgende voorwaarden worden v
 
 Om Dynamic Media op Vensters te gebruiken, installeer Microsoft Visual Studio 2010, 2013, en 2015 redistributables voor x64 en x86.
 
-Voor Windows x64:
+For Windows x64:
 
 * Krijg Microsoft Visual Studio 2010 redistributable bij [https://www.microsoft.com/en-us/download/details.aspx?id=13523](https://www.microsoft.com/en-us/download/details.aspx?id=13523)
 * Krijg Microsoft Visual Studio 2013 redistributable bij [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Krijg Microsoft Visual Studio 2015 redistributable bij [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
-Voor Windows x86:
+For Windows x86:
 
 * Krijg Microsoft Visual Studio 2010 redistributable bij [https://www.microsoft.com/en-in/download/details.aspx?id=5555](https://www.microsoft.com/en-in/download/details.aspx?id=5555)
 * Krijg Microsoft Visual Studio 2013 redistributable bij [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
@@ -521,13 +523,13 @@ Voor Windows x86:
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
 * Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
-* Beheerdersrechten voor het installeren van Designer.
+* Administrative privileges to install Designer.
 
 ### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 XMP terugschrijven wordt ondersteund en ingeschakeld voor de volgende platforms en bestandsindelingen:
 
-* **Besturingssystemen:**
+* **Operating Systems:**
 
    * Linux (32-bits en 32-bits toepassingsondersteuning op 64-bits systemen). Voor stappen om cliëntbibliotheken met 32 bits te installeren, zie [hoe te XMP extractie en schrijven-terug op Linux met 64 bits RedHat toe te laten](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 

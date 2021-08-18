@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
-translation-type: tm+mt
-source-git-commit: 41de9fff615b5b2f77d835740dfb1d33aa81e59b
+exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '356'
 ht-degree: 3%
 
 ---
-
 
 # Essentiële elementen van catalogus {#catalog-essentials}
 
@@ -28,7 +27,7 @@ Met de [ `enablement catalog` component](catalog.md) hebben leden van de gemeens
 
 Zie [Tags toewijzen Bronnen](tag-resources.md).
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -106,7 +105,7 @@ Het voorbeeld van [Enablement Tutorial](getting-started-enablement.md) gebruiken
 
 ![configure-catalog](assets/configure-catalog.png)
 
-#### Label-id&#39;s {#pre-filter-tagids} vóór filter
+#### Label-id&#39;s vóór filter {#pre-filter-tagids}
 
 Het voorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) moet exact overeenkomen met de tags die zijn toegepast op de instellingsbronnen. Deze worden in de map `resources` voor de site weergegeven als de waarden van de eigenschap `se_resource-tags`.
 
@@ -114,9 +113,8 @@ Het voorfilter [TagIDs](../../help/sites-developing/framework.md#tagid) moet exa
 
 ### Referentie-API&#39;s {#reference-apis}
 
-* [Inschakelings-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/api/package-summary.html)
+* [Inschakelings-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/reporting/model/api/package-summary.html)
 
-* [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
+* [API voor rapportage](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
-* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
-
+* [API voor analyse van rapporten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/model/api/package-summary.html)

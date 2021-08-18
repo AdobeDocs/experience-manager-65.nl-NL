@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Middelenbeheer, uitvoeringen
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1545'
 ht-degree: 2%
 
 ---
@@ -217,12 +217,8 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| MTS | AVCHD | H264/AVC | - |
 | MKV | Matroska | H264/AVC | - |
-| R3D, RM | Raw-video, rood | MJPEG 2000 | - |
 | RAM, RM | RealVideo | Niet ondersteund | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | Vrije, verliesvrije audiocodec | - |
 | MJ2 | Beweging JPEG 2000 | Motion JPEG 2000-codec | - |
 
 ## Ondersteunde archiefindelingen {#supported-archive-formats}

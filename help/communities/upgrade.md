@@ -10,22 +10,21 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
+source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
 
-
-# Bijwerken naar AEM 6.5-gemeenschappen {#upgrading-to-aem-communities}
+# Opwaarderen naar AEM 6.5 Gemeenschappen {#upgrading-to-aem-communities}
 
 Afhankelijk van de topologie en de eigenschappen van elke plaats, kunnen de volgende acties noodzakelijk zijn wanneer bevordering aan AEM Communities 6.5 of het installeren van het recentste eigenschappak.
 
 Deze sectie is specifiek voor Gemeenschappen en vormt een aanvulling op de informatie in [Bijwerken naar AEM 6.5](/help/sites-deploying/upgrade.md) (platform).
 
-## Bijwerken vanaf AEM 6.1 of hoger {#upgrading-from-aem-or-later}
+## Upgrade uitvoeren vanaf AEM 6.1 of hoger {#upgrading-from-aem-or-later}
 
 ### Opnieuw indexeren Solr {#reindex-solr}
 
@@ -42,7 +41,7 @@ Vanaf AEM 6.3 slaan de enablement eigenschappen niet meer rapporteringsinformati
 
 Neem contact op met [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor hulp bij het migreren van inhoud uit Enablement 1.0.
 
-## Bijwerken vanaf AEM 6.0 {#upgrading-from-aem}
+## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 
 Als bestaande UGC moet worden behouden, hangt de manier om dit te doen af van of de plaatsing opgeslagen UGC [on-premise](#on-premise-storage) of in [Adobe wolk](#adobe-cloud-storage).
 
@@ -89,7 +88,7 @@ Zie ook [Maven gebruiken voor Communities](/help/communities/maven.md).
 
 ### Geen JSP-componentsjablonen {#no-jsp-component-templates}
 
-In het [social component framework](/help/communities/scf.md) (SCF) wordt de sjabloontaal [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) gebruikt in plaats van Java Server Pages (JSP) die vóór AEM 6.0 werd gebruikt.
+In het [social component framework](/help/communities/scf.md) (SCF) wordt de sjabloontaal `HandlebarsJS` (HBS) gebruikt in plaats van JSP (Java Server Pages) die vóór AEM 6.0 werd gebruikt.
 
 In AEM 6.0 bleven de JSP componenten naast de nieuwe HBS kadercomponenten op dezelfde plaats, met de componenten HBS typisch gevestigd in subfolders genoemd &quot;hbs&quot;.
 
@@ -101,7 +100,7 @@ Het [AEM Communities UGC-migratiehulpmiddel](https://github.com/Adobe-Marketing-
 
 Naast het bewegen van UGC van vroegere versies, is het ook mogelijk om het hulpmiddel te gebruiken om UGC van één [SRP](/help/communities/working-with-srp.md) naar een andere, zoals van MSRP aan DSRP te bewegen.
 
-## Bijwerken vanaf AEM 5.6.1 of eerder {#upgrading-from-aem-or-earlier}
+## Upgrade uitvoeren vanaf AEM 5.6.1 of lager {#upgrading-from-aem-or-earlier}
 
 Conceptueel zijn er drie generaties gemeenschappen componenten:
 

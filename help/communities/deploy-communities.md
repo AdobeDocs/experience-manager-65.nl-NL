@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
+source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -144,11 +144,11 @@ Shareable Content Object Reference Model (SCORM) is een verzameling standaarden 
 
 De AEM Communities SCORM-engine is vereist voor de functie [enablement](/help/communities/overview.md#enablement-community). Scorepakketten ondersteund op AEM 6.5-gemeenschappen:
 
-* [cq-social-scorm-package, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) die de  [SCORM 2017.1-](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine bevat.
+* [cq-social-scorm-package, versie 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) die de  [SCORM 2017.1-](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine bevat.
 
 **Een SCORM-pakket installeren**
 
-1. Installeer [cq-social-scorm-package, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) van het Delen van het Pakket.
+1. Installeer [cq-social-scorm-package, versie 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) van het Delen van het Pakket.
 1. Download `/libs/social/config/scorm/database_scormengine_data.sql` van cq instantie en voer het in mysql server uit om een bevorderd schema te creëren scormEngineDB.
 1. Voeg `/content/communities/scorm/RecordResults` in Uitgesloten bezit van Wegen in filter CSRF van `https://<hostname>:<port>/system/console/configMgr` op uitgevers toe.
 

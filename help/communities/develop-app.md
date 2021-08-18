@@ -9,24 +9,23 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '560'
 ht-degree: 2%
 
 ---
 
-
-# Sandbox-toepassing ontwikkelen {#develop-sandbox-application}
+# Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
 
 Nu de sjabloon is ingesteld in de sectie [initial application](initial-app.md) en de startpagina&#39;s in de sectie [initial content](initial-content.md), kan de toepassing in deze sectie worden ontwikkeld met behulp van basisscripts, waaronder de mogelijkheid om authoring met Community-componenten mogelijk te maken. Aan het einde van deze sectie is de website functioneel.
 
-## Scripts {#using-foundation-page-scripts} voor elementatiepagina gebruiken
+## Scripts voor basispagina&#39;s gebruiken {#using-foundation-page-scripts}
 
 Het standaardmanuscript, dat wordt gecreeerd toen de component die het playpage malplaatje teruggeeft werd toegevoegd, wordt gewijzigd om head.jsp van de stichtingspagina en een lokale body.jsp te omvatten.
 
-### Super Resource Type {#super-resource-type}
+### Type superbron {#super-resource-type}
 
 De eerste stap is een middel supertype bezit aan de `/apps/an-scf-sandbox/components/playpage` knoop toe te voegen zodat het de manuscripten en de eigenschappen van het super type erft.
 
@@ -46,7 +45,7 @@ CRXDE Lite gebruiken:
 
    ![pageScript](assets/page-script.png)
 
-### Scripts {#head-and-body-scripts} voor hoofd- en hoofdtekst
+### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
 1. Navigeer in **CRXDE Lite** verkenner-deelvenster naar `/apps/an-scf-sandbox/components/playpage` en dubbelklik op het bestand `playpage.jsp` om het te openen in het bewerkvenster.
 
@@ -122,7 +121,7 @@ CRXDE Lite gebruiken:
 
 **De pagina in een browser weergeven in de bewerkingsmodus:**
 
-* Standaardinterface: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Standaardinterface: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 U zou niet alleen de rubriek **Communautair Spel**, maar ook UI voor het uitgeven van paginainhoud moeten zien.
 
@@ -130,7 +129,7 @@ Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is
 
 ![weergavepagina](assets/view-page.png)
 
-* Klassieke interface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Klassieke gebruikersinterface: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
@@ -170,7 +169,7 @@ In een meertalig milieu, zou de wortelpagina een manuscript omvatten dat het ver
 
 In dit eenvoudige voorbeeld wordt de basispagina statisch ingesteld op omleiding naar de Engelse pagina, die in de toekomst kan worden ontwikkeld als de hoofdbestemmingspagina met een koppeling naar de afspeelpagina.
 
-Wijzig de URL van de browser in de hoofdpagina: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Het pictogram Pagina-informatie selecteren
 * Selecteer **[!UICONTROL Open Properties]**

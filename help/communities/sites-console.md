@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
 workflow-type: tm+mt
-source-wordcount: '3290'
+source-wordcount: '3286'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het t
 
 ![sitethema](assets/sitetheme.png)
 
-Het framework gebruikt [Twitter Bootstrap {a1/> om een responsief, flexibel ontwerp op de site te brengen. ](https://twitterbootstrap.org/) U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt `Twitter Bootstrap` om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 

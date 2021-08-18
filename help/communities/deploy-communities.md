@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: d42057a2f8ce50332f404388fd1cfc9b6a154765
+source-git-commit: 626ffab5cd1b5ba9c0bd6928911aa09e9450e5fc
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 0%
@@ -167,8 +167,9 @@ Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS)
 
 De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
 
-* AEM-SOLR-MLS-fasetwo(
-Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.md#aem-advanced-mls) in de plaatsingssectie van de documentatie.
+* AEM-SOLR-MLS-fasetwo
+
+   Voor het Geavanceerde pakket MLS, zie [AEM Geavanceerde MLS](deploy-communities.md#aem-advanced-mls) in de plaatsingssectie van de documentatie.
 
    * Versie 1.2.40, 6 april 2016
    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip

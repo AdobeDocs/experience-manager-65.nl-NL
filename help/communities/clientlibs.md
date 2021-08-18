@@ -10,14 +10,13 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
-
 
 # Clientlibs voor Community-componenten {#clientlibs-for-communities-components}
 
@@ -29,9 +28,9 @@ Voor basisinformatie gaat u naar :
 
 * [Clientzijbibliotheken gebruiken die ](/help/sites-developing/clientlibs.md) gebruiksdetails en foutopsporingsgereedschappen bieden
 * [Clientlibs voor ](/help/communities/client-customize.md#clientlibs) SCFwhich verstrekt nuttige informatie wanneer het aanpassen van componenten SCF
-* [Blog: AEM Clientbibliotheken, zoals wordt uitgelegd in het voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
-## Waarom Clientlibs vereist {#why-clientlibs-are-required}
+
+## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
 
 Clientlibs zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
@@ -60,7 +59,7 @@ Bijvoorbeeld helemaal boven aan de pagina [Revisies](https://localhost:4502/cont
 
 ![clientlibs-reviews](assets/clientlibs-reviews.png)
 
-## Vereiste clips {#adding-required-clientlibs} toevoegen
+## Vereiste clips toevoegen {#adding-required-clientlibs}
 
 Wanneer u een Gemeenschapscomponent aan een pagina wilt toevoegen, moet u de vereiste clientlibs voor de component toevoegen als deze nog niet aanwezig is.
 
@@ -94,4 +93,3 @@ Een clientlib voor een communitysite toevoegen met [CRXDE Lite](/help/sites-deve
 Gebruikend [Aan de slag met AEM Communities](/help/communities/getting-started.md) voorbeeld, waar `site-name` *engageren* is, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
 ![revisie-component](assets/review-component.png)
-

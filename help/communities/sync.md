@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: f4f4be3d9885723953b1306ff25a52d27799aa93
+source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2508'
+source-wordcount: '2490'
 ht-degree: 1%
 
 ---
@@ -119,7 +119,7 @@ De instantie van de auteur pingelt het exportereindpunt van uitgevers. Wanneer e
 Configuratie van Apache Sling Sync Agents configureren:
 
 1. Meld u aan met beheerdersrechten voor de AEM auteur.
-1. Open de [Webconsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html). Bijvoorbeeld [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Open de [Webconsole](/help/sites-deploying/configuring-osgi.md). Bijvoorbeeld [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Zoek **Apache Sling Distribution Agent - Sync Agents Factory**.
 
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram).
@@ -165,7 +165,7 @@ Deze configuratie wordt gebruikt om de gegevens te vormen u over uitgevers wilt 
 De te synchroniseren gegevens (knooppaden) configureren:
 
 1. Meld u aan met beheerdersrechten voor uw publicatieexemplaar.
-1. Open de [Webconsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Open de [Webconsole](/help/sites-deploying/configuring-osgi.md).
 
    Bijvoorbeeld [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
@@ -188,7 +188,7 @@ Als het wijzigen van het lidmaatschap van een groep in één uitgever zijn lidma
 Lidsynchronisatie garanderen:
 
 1. Meld u aan met beheerdersrechten voor uw publicatieexemplaar.
-1. Open de [Webconsole](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
+1. Open de [Webconsole](/help/sites-deploying/configuring-osgi.md).
 
    Bijvoorbeeld [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 

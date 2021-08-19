@@ -10,15 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configureren
+exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '3435'
+source-wordcount: '3428'
 ht-degree: 0%
 
 ---
-
 
 # Replicatie{#replication}
 
@@ -51,7 +50,7 @@ De replicatie, aan een publicatie-instantie of verzender, vindt in verscheidene 
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-### Replicatie van publiceren naar auteur {#replicating-from-publish-to-author}
+### Repliceren van Publiceren naar Auteur {#replicating-from-publish-to-author}
 
 Met sommige functies kunnen gebruikers gegevens invoeren op een publicatie-instantie.
 
@@ -63,7 +62,7 @@ In andere gevallen, zoals bij Community-functies (bijvoorbeeld forums, blogs, op
 
 AEM [Communities](/help/communities/overview.md) gebruikt nooit replicatie voor UGC. In plaats daarvan, vereist de plaatsing voor Gemeenschappen een gemeenschappelijke opslag voor UGC (zie [Community Content Storage](/help/communities/working-with-srp.md)).
 
-### Replicatie - uit het vak {#replication-out-of-the-box}
+### Replicatie - uit de doos {#replication-out-of-the-box}
 
 De wij-kleinhandelswebsite die in een standaardinstallatie van AEM inbegrepen is kan worden gebruikt om replicatie te illustreren.
 
@@ -125,7 +124,7 @@ Dit is een &quot;Agent die een statische vertegenwoordiging van een knoop in het
 Met de standaardinstellingen worden de inhoudspagina&#39;s en de dam-elementen bijvoorbeeld opgeslagen onder `/tmp`, als HTML of in de juiste indeling voor elementen. Zie `Settings` en `Rules` lusjes voor de configuratie.
 Dit is aangevraagd zodat de inhoud zichtbaar is wanneer de pagina rechtstreeks bij de toepassingsserver wordt aangevraagd. Dit is een gespecialiseerde agent en (waarschijnlijk) zal niet voor de meeste gevallen worden vereist.
 
-## Replicatieagents - Configuratieparameters {#replication-agents-configuration-parameters}
+## Replicatieagents - configuratieparameters {#replication-agents-configuration-parameters}
 
 Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn vier lusjes beschikbaar binnen de dialoog:
 
@@ -353,17 +352,17 @@ Deze instellingen worden gebruikt om triggers voor geautomatiseerde replicatie t
 
    Als deze optie is ingeschakeld, wordt het versienummer van geactiveerde pagina&#39;s niet geforceerd.
 
-## Het vormen van uw Agenten van de Replicatie {#configuring-your-replication-agents}
+## De replicatieagents configureren {#configuring-your-replication-agents}
 
 Voor informatie over het aansluiten van replicatieagenten aan de publicatieinstantie die MSSL gebruikt, zie [Replicating Using Mutual SSL](/help/sites-deploying/mssl-replication.md).
 
-### Het vormen van uw Agenten van de Replicatie van het Milieu {#configuring-your-replication-agents-from-the-author-environment}
+### Het vormen van uw Agenten van de Replicatie van het Milieu van de Auteur {#configuring-your-replication-agents-from-the-author-environment}
 
 Van het lusje van Hulpmiddelen in het auteursmilieu kunt u replicatieagenten vormen die in of het auteursmilieu (**Agenten op auteur**) of het publicatiemilieu (**Agenten op publish**) verblijven. De volgende procedures illustreren de configuratie van een agent voor het auteursmilieu, maar kunnen voor beide worden gebruikt.
 
 >[!NOTE]
 >
->Wanneer een verzender HTTP- verzoeken om auteur behandelt of instanties publiceert, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de verzender lijst van cliëntkopballen toevoegen. (Zie [/clientheaders (de Kopballen van de Cliënt)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>Wanneer een verzender HTTP- verzoeken om auteur behandelt of instanties publiceert, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de verzender lijst van cliëntkopballen toevoegen. (Zie [/clientheaders (de Kopballen van de Cliënt)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 
 
 1. Open de tab **Tools** in AEM.
@@ -465,7 +464,7 @@ Als u problemen ondervindt, kunt u de logboeken op de auteurinstantie controlere
 
 
 
-### Een Dispatcher Flush-agent {#configuring-a-dispatcher-flush-agent} configureren
+### Een Dispatcher Flush-agent configureren {#configuring-a-dispatcher-flush-agent}
 
 De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde configuratie nog nodig en het zelfde is van toepassing als u een nieuwe agent bepaalt:
 
@@ -509,7 +508,7 @@ De toegang tot de pagina&#39;s die worden gebruikt om de replicatieagenten te vo
 >
 >Het instellen van dergelijke machtigingen heeft geen invloed op gebruikers die inhoud repliceren (bijvoorbeeld via de websiteconsole of de optie sidekick). Het replicatieframework gebruikt niet de &quot;gebruikerssessie&quot; van de huidige gebruiker om toegang te krijgen tot replicatieagents tijdens het repliceren van pagina&#39;s.
 
-### Het vormen van uw Agenten van de Replicatie van CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
+### Het vormen van uw Medewerkers van de Replicatie van CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
 
 >[!NOTE]
 >
@@ -527,7 +526,7 @@ Twee `agents` houden configuratieinformatie over het aangewezen milieu, en zijn 
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## Uw replicatieagents {#monitoring-your-replication-agents} controleren
+## Uw replicatieagents controleren {#monitoring-your-replication-agents}
 
 Om een replicatieagent te controleren:
 

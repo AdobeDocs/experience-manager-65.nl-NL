@@ -10,16 +10,15 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
 
 ---
 
-
-# Geniet van de gepubliceerde site {#experience-the-published-site}
+# Ervaar de gepubliceerde site {#experience-the-published-site}
 
 ## Bladeren naar nieuwe site bij publicatie {#browse-to-new-site-on-publish}
 
@@ -51,7 +50,7 @@ Een anonieme sitebezoeker ziet het volgende in de gebruikersinterface:
 
 Als u verschillende koppelingen selecteert, bevindt de modus Alleen-lezen zich.
 
-### Anonieme toegang tot JCR {#prevent-anonymous-access-on-jcr} voorkomen
+### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
 Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme bezoekers door jcr inhoud en json bloot, hoewel **anonieme toegang toestaan** voor de inhoud van de plaats gehandicapt is. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
 
@@ -76,11 +75,11 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld **/content/......./GetStarted**.
 1. Publiceer de pagina.
 
-## Vertrouwd communautair lid {#trusted-community-member}
+## Vertrouwd lid van de Gemeenschap {#trusted-community-member}
 
 Deze ervaring veronderstelt [Aaron McDonald](/help/communities/tutorials.md#demo-users) de rollen van [gemeenschapsmanager en moderator](/help/communities/create-site.md#roles) werd toegewezen. Als dat niet het geval is, gaat u terug naar de auteursomgeving om [de site-instellingen te wijzigen](/help/communities/sites-console.md#modifying-site-properties) en selecteert u Aaron McDonald als zowel communitymanager als moderator.
 
-Selecteer in de rechterbovenhoek `Log in` en onderteken met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (password). Meld u aan met de Twitter- of Facebook-referenties.
+Selecteer in de rechterbovenhoek `Log in` en onderteken met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (password). Meld u aan met Twitter- of Facebook-referenties.
 
 ![aanmelden](assets/login.png)
 
@@ -109,7 +108,7 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >* [Component, Function en Feature Essentials](/help/communities/essentials.md)  (voor ontwikkelaars)
 
 
-### Forum link {#forum-link}
+### Forum-koppeling {#forum-link}
 
 U kunt de standaardfunctie voor forums weergeven door de koppeling Forum te selecteren.
 
@@ -119,7 +118,7 @@ Sitebezoekers kunnen artikelen weergeven en op verschillende manieren sorteren.
 
 ![forumlink](assets/forumlink.png)
 
-### Groepskoppeling {#groups-link}
+### Groepen koppelen {#groups-link}
 
 Aangezien Aaron een groepsbeheerder is, zal het selecteren van de verbinding van Groepen Aaron toestaan om een nieuwe communautaire groep tot stand te brengen door een groepsmalplaatje, beeld te selecteren, of de groep open of geheim is, en het uitnodigen van leden.
 
@@ -190,7 +189,7 @@ Als u doorgaat met publiceren, meldt u zich af als Aaron McDonald en bekijkt u d
 
 Alleen de Baseball-groep is zichtbaar.
 
-Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan de open `Join` groep `Baseball` en de private `enter or Leave` groep &lt;a2/> openen.`Gymnastics`
+Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan de open `Baseball` groep `enter or Leave` en de private `Gymnastics` groep `Join` openen.
 
 ![grouplink3](assets/grouplink3.png)
 
@@ -202,11 +201,11 @@ Ga bijvoorbeeld naar **auteur**-instantie, open de map `engage` in de [Community
 
 ![webpagelink](assets/webpagelink.png)
 
-### Moderatiekoppeling {#moderationlink}
+### Moderniseringskoppeling {#moderationlink}
 
 Wanneer het communitylid moderatievoorrechten heeft, dan zal de verbinding van de Moderatie zichtbaar zijn en het selecteren zal het geposte communautaire inhoud tonen en het toestaan om [gematigd](/help/communities/moderate-ugc.md) op een manier gelijkend op [moderatieconsole](/help/communities/moderation.md) in het auteursmilieu te zijn.
 
-Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving. [](/help/communities/moderate-ugc.md)
+Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving.
 
 ![moderniseringslink](assets/moderationlink.png)
 
@@ -232,4 +231,3 @@ Nadat u zich hebt aangemeld, is de eerste pagina die wordt weergegeven de `Profi
 Als het lid zijn aanmeldings-id vergeet, wordt het e-mailadres gebruikt.
 
 ![forgotusernaam](assets/forgotusername.png)
-

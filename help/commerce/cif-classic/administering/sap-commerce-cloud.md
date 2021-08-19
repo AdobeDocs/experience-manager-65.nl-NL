@@ -7,8 +7,8 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
+source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
 workflow-type: tm+mt
 source-wordcount: '1726'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Na de installatie kunt u uw instantie configureren:
 1. [Configureer de importmodule voor](#configure-the-catalog-importer) catalogi.
 1. Met de [importer kunt u de catalogus](#catalog-import) importeren naar een specifieke locatie in AEM.
 
-## Configureer de gefacetteerde zoekopdracht voor Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## De gefacetteerde zoekopdracht voor Geometrixx Outdoors configureren {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Na de installatie kunt u uw instantie configureren:
    * **Indexeerbewerking**:  `full`
    * **Solr-configuratie**:  `Sample Solr Config for Clothes`
 
-## De catalogusversie {#configure-the-catalog-version} configureren
+## De catalogusversie configureren {#configure-the-catalog-version}
 
 De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor de dienst worden gevormd OSGi:
 
@@ -116,7 +116,7 @@ De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor 
 
 De logboekoutput verstrekt terugkoppelen op de gecreeerde pagina&#39;s en de componenten en meldt potentiële fouten.
 
-## De importstructuur {#configure-the-import-structure} configureren
+## De importstructuur configureren {#configure-the-import-structure}
 
 Hieronder ziet u een voorbeeldstructuur (van elementen, pagina&#39;s en componenten) die standaard wordt gemaakt:
 
@@ -166,7 +166,7 @@ De structuur die bij het importeren moet worden gegenereerd, kan worden geconfig
 
 Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor volledige details. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
-## De productkenmerken configureren om {#configure-the-product-attributes-to-load} te laden
+## De te laden productkenmerken configureren {#configure-the-product-attributes-to-load}
 
 De reactiesparser kan worden gevormd om de eigenschappen en de attributen te bepalen die voor (variant) producten moeten worden geladen:
 
@@ -181,7 +181,7 @@ De reactiesparser kan worden gevormd om de eigenschappen en de attributen te bep
    >
    >Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor volledige details. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
-## Productgegevens {#importing-the-product-data} importeren
+## De productgegevens importeren {#importing-the-product-data}
 
 Er zijn verschillende manieren om de productgegevens te importeren. De productgegevens kunnen worden geïmporteerd bij de eerste installatie van de omgeving of nadat er wijzigingen zijn aangebracht in de hybrisgegevens:
 
@@ -205,7 +205,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 >
 >Telkens wanneer informatie over een product wordt aangevraagd, wordt verwezen naar de hybrisserver.
 
-### Volledige import {#full-import}
+### Volledig importeren {#full-import}
 
 1. Verwijder zo nodig alle bestaande productgegevens met CRXDE Lite.
 
@@ -309,9 +309,7 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
-## De importmodule voor catalogi {#configure-the-catalog-importer} configureren
+## De importmodule voor catalogi configureren {#configure-the-catalog-importer}
 
 De hybriscatalogus kan in AEM worden geïmporteerd, waarbij de batchimporter voor hybriscatalogi, -categorieën en -producten wordt gebruikt.
 
@@ -322,7 +320,7 @@ De parameters die door de importeur worden gebruikt, kunnen worden geconfigureer
 
 Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor volledige details. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
-## Importeren van catalogus {#catalog-import}
+## Catalogus importeren {#catalog-import}
 
 Het hybris-pakket wordt geleverd met een catalogusimportmodule voor het instellen van de initiële paginastructuur.
 
@@ -407,7 +405,7 @@ Een of meer producten uit de catalogus verwijderen:
       1. de desbetreffende catalogus opnieuw uitvoeren
       1. De juiste categoriepagina vernieuwen
 
-## Bestelhistorietak toevoegen aan clientcontext {#add-order-history-trait-to-the-client-context}
+## Bedieningshistoriereis toevoegen aan de clientcontext {#add-order-history-trait-to-the-client-context}
 
 Orderhistorie toevoegen aan de [clientcontext](/help/sites-developing/client-context.md):
 

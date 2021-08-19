@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 149cdd00f745ad897f506434d7156b8147ef5bae
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '4901'
 ht-degree: 9%
 
 ---
-
 
 # Paginasjablonen maken{#creating-page-templates}
 
@@ -48,7 +47,7 @@ Raadpleeg het document [Paginasjablonen - Bewerkbaar](/help/sites-developing/pag
 >
 >Pagina&#39;s en sjablonen die zijn gemaakt met de **Sjabloonconsole** zijn niet bedoeld voor gebruik met de klassieke interface en dergelijk gebruik wordt niet ondersteund.
 
-## Voordat u {#before-you-start} begint
+## Voordat u begint {#before-you-start}
 
 >[!NOTE]
 >
@@ -128,7 +127,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Of rechtstreeks bij: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Kan [indien nodig een map voor de sjablonen maken](#creating-a-template-folder-admin)
-* [Een nieuwe sjabloon](#creatinganewtemplateauthor) maken die aanvankelijk leeg is  [](#templatedefinitions)
+* [Een nieuwe sjabloon](#creatinganewtemplateauthor) maken die aanvankelijk leeg is
 
 * [Indien nodig aanvullende ](#definingtemplatepropertiesauthor) eigenschappen voor de sjabloon definiëren
 * [Bewerk de sjabloon ](#editingtemplates) om het volgende te definiëren:
@@ -150,7 +149,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Voer nooit informatie in die [geïnternationaliseerd](/help/sites-developing/i18n.md) moet zijn in een sjabloon. Voor internalisatiedoeleinden worden de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
 
-### Een sjabloonmap maken - Admin {#creating-a-template-folder-admin}
+### Sjabloonmap maken - Beheer {#creating-a-template-folder-admin}
 
 Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-specifieke malplaatjes te houden. Dit is een beheertaak en wordt beschreven in het document [Paginasjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md#template-folders).
 
@@ -219,7 +218,7 @@ De eigenschappen weergeven en/of bewerken:
 >
 >De status van een sjabloon (concept, ingeschakeld of uitgeschakeld) wordt aangegeven in de console.
 
-#### Sjabloonminiatuurafbeelding {#template-thumbnail-image}
+#### Miniatuurafbeelding sjabloon {#template-thumbnail-image}
 
 De sjabloonminiatuur definiëren:
 
@@ -260,7 +259,7 @@ Een sjabloon kan worden in- of uitgeschakeld om het beschikbaar te maken of niet
 
 #### Een sjabloon toestaan - Auteur {#allowing-a-template-author}
 
-Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
+Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasecties.
 
 1. Open [Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) voor de hoofdpagina van de vertakking waar u de sjabloon beschikbaar wilt maken.
 
@@ -341,7 +340,7 @@ Met de selector **Modus** op de werkbalk kunt u het juiste aspect van de sjabloo
 * [Oorspronkelijke inhoud](#editingatemplateinitialcontent)
 * [Indeling](#editingatemplatelayout)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Met de optie **Paginabeleid** in het menu **Pagina-informatie** kunt u [het vereiste paginabeleid selecteren](#editingatemplatepagepolicies):
 
@@ -523,7 +522,7 @@ In de modus **Structuur** van de sjablooneditor:
    Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor de lay-outcontainer beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-   * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+   * U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -607,7 +606,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 >
 >Als u vertaalbare tekst in uw malplaatje zoals in kopballen of footers moet omvatten, kunt u [localisatiefuncties van de kerncomponenten gebruiken](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
 
-### Een sjabloon bewerken - Indeling - Sjabloonauteur {#editing-a-template-layout-template-author}
+### Een sjabloon bewerken - Layout - Sjabloonauteur {#editing-a-template-layout-template-author}
 
 U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [De responsieve ](/help/sites-authoring/responsive-layout.md) indeling voor sjablonen werkt op dezelfde manier als bij het ontwerpen van pagina&#39;s.
 

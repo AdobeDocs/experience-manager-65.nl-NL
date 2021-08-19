@@ -8,17 +8,16 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptieve Forms
+exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2424'
 ht-degree: 0%
 
 ---
 
-
-# Tabellen in aangepaste vormen{#tables-in-adaptive-forms}
+# Tabellen in adaptieve formulieren{#tables-in-adaptive-forms}
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
@@ -40,7 +39,7 @@ Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser 
 
 ![Tabelcomponent in AEM zijbalk](assets/sidebar-tables.png)
 
-### Informatie over koptekst- en lichaamscellen {#about-header-and-body-cells}
+### Over kop- en lichaamscellen {#about-header-and-body-cells}
 
 De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label bij in het veld **Waarde** en klik op **OK**.
 
@@ -78,7 +77,7 @@ U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informati
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
 1. Klik **Done**.
 
-### Kolommen sorteren in een tabel {#sortcolumnstable}
+### Kolommen in een tabel sorteren {#sortcolumnstable}
 
 U kunt gegevens sorteren op elke kolom in een tabel in het adaptieve formulier. De waarden in de kolom kunnen in oplopende of aflopende volgorde worden gesorteerd.
 
@@ -117,7 +116,7 @@ Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
 1. Voer in het veld **[!UICONTROL Column Width]** de lijst met door komma&#39;s gescheiden waarden in om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld, voor een lijst die 3 kolommen omvat, die 2.4.6 als waarde in **[!UICONTROL Column Width]** gebied specificeren resulteert in het plaatsen van de breedte van kolommen als 2/12 voor eerste kolom, 4/12 voor tweede kolom, en 6/12 voor derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
-## Tabelstijl {#configure} configureren
+## Tabelstijl configureren {#configure}
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
 
@@ -130,7 +129,7 @@ De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md) voor meer informatie.
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
@@ -176,7 +175,7 @@ Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele app
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
-### Kopteksten aan linkerzijde {#headers-on-left}
+### Kopteksten links {#headers-on-left}
 
 In de kopteksten op linkerlay-out, wordt de kopbal in de lijst omgezet op de linkerzijde met slechts één cel die op een kopbal verschijnt. Elke rij in deze lay-out wordt weergegeven als een afzonderlijke sectie. In de volgende afbeeldingen wordt een tabel op een desktopcomputer vergeleken met die op een mobiel apparaat.
 
@@ -314,4 +313,3 @@ Bovendien kunt u een groep XSD-complexe tekstelementen slepen en neerzetten om e
 * Aan elke cel in een standaardtabel is een vooraf gedefinieerde elementnaam gekoppeld. Als u een andere tabel in het aangepaste formulier toevoegt, hebben de standaardhoofdtekstcellen in de nieuwe tabel dezelfde elementnaam als in de eerste tabel. In dat geval bevatten de gegevens die bij het verzenden van het formulier worden gegenereerd, gegevens in de standaardhoofdtekstcellen van slechts een van de tabellen. Zorg er daarom voor dat u de elementnamen voor standaardlichaamscellen hernoemt om ze uniek te houden in verschillende tabellen en gegevensverlies te voorkomen.
 
    Merk op dat dit slechts op de standaardlichaamscellen van toepassing is. Als u meer rijen of kolommen aan een tabel toevoegt, worden automatisch unieke elementnamen voor niet-standaardlichaamscellen gegenereerd.
-

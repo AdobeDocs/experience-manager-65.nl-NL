@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 9f260d3ccb98409790cd18b2540329fc36a07c05
+exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '2448'
 ht-degree: 0%
 
 ---
-
 
 # Workflowmodellen maken{#creating-workflow-models}
 
@@ -29,7 +28,7 @@ U maakt een [workflowmodel](/help/sites-developing/workflows.md#model) om de ree
 
 Wanneer een gebruiker een workflow start, wordt een instantie gestart; Dit is het corresponderende runtimemodel dat wordt gemaakt wanneer u uw wijzigingen [Sync](#sync-your-workflow-generate-a-runtime-model) wijzigt.
 
-## Een nieuwe workflow maken {#creating-a-new-workflow}
+## Nieuwe workflow maken {#creating-a-new-workflow}
 
 Wanneer u voor het eerst een nieuw workflowmodel maakt, bevat dit model:
 
@@ -68,7 +67,7 @@ Het uitgeven van [**Standaard en/of Verouderd** (uit-van-de-doos) werkschema](#e
 
 Wanneer updates van uw werkschema volledig zijn moet u **Sync** aan **Genereer een Model van Runtime** gebruiken. Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
-### Synchroniseer uw Workflow - Genereer een Runtime Model {#sync-your-workflow-generate-a-runtime-model}
+### Uw workflow synchroniseren - Een runtimemodel genereren {#sync-your-workflow-generate-a-runtime-model}
 
 **Met Sync**  (rechts op de editor-werkbalk) wordt een  [runtimemodel](/help/sites-developing/workflows.md#runtime-model) gegenereerd. Het runtimemodel is het model dat daadwerkelijk wordt gebruikt wanneer een gebruiker een workflow start. Als u uw wijzigingen niet **Sync**, dan zijn de wijzigingen niet beschikbaar bij uitvoering.
 
@@ -80,7 +79,7 @@ Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer aan
 
 ![wf-21](assets/wf-21.png)
 
-### Een standaard- of verouderde workflow voor het eerst bewerken {#editing-a-default-or-legacy-workflow-for-the-first-time}
+### Een standaardworkflow of oudere workflow voor het eerst bewerken {#editing-a-default-or-legacy-workflow-for-the-first-time}
 
 Wanneer u een [Standaard en/of Verouderd model](/help/sites-developing/workflows.md#workflow-types) voor het uitgeven opent:
 
@@ -144,7 +143,7 @@ Stappen toevoegen aan uw workflowmodel:
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
-### Een workflowstap {#configuring-a-workflow-step} configureren
+### Een workflowstap configureren {#configuring-a-workflow-step}
 
 U kunt **Configureren** en het gedrag van een werkschemastap aanpassen gebruikend **Step Properties** dialoogvensters.
 
@@ -166,7 +165,7 @@ U kunt **Configureren** en het gedrag van een werkschemastap aanpassen gebruiken
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
-### Een tijdelijk werkschema maken {#creating-a-transient-workflow}
+### Een tijdelijke workflow maken {#creating-a-transient-workflow}
 
 U kunt een [transient](/help/sites-developing/workflows.md#transient-workflows) werkschemamodel tot stand brengen wanneer het creëren van een nieuw model, of door bestaande uit te geven:
 
@@ -182,9 +181,9 @@ U kunt een [transient](/help/sites-developing/workflows.md#transient-workflows) 
 
 >[!NOTE]
 >
->Wanneer u een werkschema in [transient](/help/sites-developing/workflows.md#transient-workflows) wijze in werking stelt AEM slaat geen werkschemageschiedenis op. Daarom geeft [Timeline](/help/sites-authoring/basic-handling.md#timeline) geen informatie weer met betrekking tot die workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>Wanneer u een werkschema in [transient](/help/sites-developing/workflows.md#transient-workflows) wijze in werking stelt AEM slaat geen werkschemageschiedenis op. Daarom geeft [Timeline](/help/sites-authoring/basic-handling.md#timeline) geen informatie weer met betrekking tot die workflow.
 
-## Workflowmodellen beschikbaar maken in Touch UI {#classic2touchui}
+## Workflowmodellen beschikbaar stellen in Touch UI {#classic2touchui}
 
 Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontbreekt in het pop-upmenu voor selectie in de **[!UICONTROL Timeline]**-rail van de aanraakinterface, volgt u de configuratie om het beschikbaar te maken. De volgende stappen illustreren het gebruiken van het werkschemamodel genoemd **[!UICONTROL Request for Activation]**.
 
@@ -221,7 +220,7 @@ U kunt een workflowmodel configureren voor [Ondersteuning voor meerdere bronnen]
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
-### Werkstroomfasen configureren (die de voortgang van het werkschema weergeven) {#configuring-workflow-stages-that-show-workflow-progress}
+### Werkstroomfasen configureren (die de voortgang van de workflow weergeven) {#configuring-workflow-stages-that-show-workflow-progress}
 
 [Workflowwerkstroomoverzicht ](/help/sites-developing/workflows.md#workflow-stages) visualiseert de voortgang van een workflow bij het uitvoeren van taken.
 
@@ -309,7 +308,7 @@ U configureert als volgt de workflow die met het formulier moet worden gebruikt:
 
 1. Bevestig de nieuwe formulierconfiguratie met de tik.
 
-## Workflows testen {#testing-workflows}
+## Testworkflows {#testing-workflows}
 
 Het is een goede praktijk wanneer het testen van een werkschema om een verscheidenheid van ladingstypes te gebruiken; met inbegrip van typen die verschillen van de soorten waarvoor zij is ontwikkeld. Als u bijvoorbeeld van plan bent om in uw workflow te werken met Elementen, test u deze door een Pagina in te stellen als een payload en controleer of er geen fouten optreden.
 
@@ -325,7 +324,7 @@ U kunt ook AEM configureren om **DEBUG**-berichten weer te geven in de logbestan
 
 ## Voorbeelden {#examples}
 
-### Voorbeeld: Een (eenvoudige) workflow maken om een verzoek om publicatie te accepteren of af te wijzen {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### Voorbeeld: Een (eenvoudige) workflow maken om een publicatieaanvraag te accepteren of af te wijzen {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 Om enkele mogelijkheden te illustreren om een werkschema tot stand te brengen, leidt het volgende voorbeeld tot een variatie van de `Publish Example` werkschema.
 
@@ -397,7 +396,7 @@ Om enkele mogelijkheden te illustreren om een werkschema tot stand te brengen, l
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Voorbeeld: Een regel definiëren voor een OR-splitsing met ECMA-script {#defineruleecmascript}
+### Voorbeeld: Een regel definiëren voor een OR-splitsing met behulp van een ECMA-script {#defineruleecmascript}
 
 **OF met** Splitstappen kunt u voorwaardelijke verwerkingspaden in uw workflow introduceren.
 
@@ -432,7 +431,7 @@ Ga als volgt te werk om een OR-regel te definiëren:
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
-#### Functiecontrole() {#function-check}
+#### Functie check() {#function-check}
 
 >[!NOTE]
 >

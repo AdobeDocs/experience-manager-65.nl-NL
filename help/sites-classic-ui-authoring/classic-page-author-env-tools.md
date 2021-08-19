@@ -10,16 +10,15 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
-
-# Ontwerpen - het milieu en de Hulpmiddelen {#authoring-the-environment-and-tools}
+# Authoring - het milieu en de instrumenten {#authoring-the-environment-and-tools}
 
 De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud. De beschikbare gereedschappen zijn toegankelijk via de verschillende consoles en pagina-editors.
 
@@ -63,15 +62,15 @@ Met de zoekfunctie voor inhoud kunt u een reeks bronnen zoeken. U kunt desgewens
 * [Documenten](#finding-documents)
 * [Films](#finding-movies)
 * [Dynamic Media-browser](/help/sites-administering/scene7.md#scene7contentbrowser)
-* [](#products) [Pagina&#39;s](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
+* [Pagina&#39;s](#finding-pages)
 
 * [Alinea&#39;s](#referencing-paragraphs-from-other-pages)
-* [Producten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
+* [Producten](#products)
 * Of naar [door de website bladeren op de structuur van de opslagplaats](#the-content-finder)
 
 Met alle opties kunt u [zoeken naar specifieke items](#the-content-finder).
 
-### Afbeeldingen {#finding-images} zoeken
+### Afbeeldingen zoeken {#finding-images}
 
 Dit tabblad bevat een overzicht van alle afbeeldingen in de opslagplaats.
 
@@ -79,7 +78,7 @@ Nadat u een afbeeldingsalinea op de pagina hebt gemaakt, kunt u een item naar de
 
 ![chlimage_1-191](assets/chlimage_1-111.png)
 
-### Documenten {#finding-documents} zoeken
+### Documenten zoeken {#finding-documents}
 
 Op dit tabblad worden alle documenten in de opslagplaats weergegeven.
 
@@ -101,11 +100,11 @@ Op dit tabblad worden alle producten weergegeven. Nadat u een geschikte alinea (
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-### Pagina&#39;s {#finding-pages} zoeken
+### Pagina&#39;s zoeken {#finding-pages}
 
 Op dit tabblad worden alle pagina&#39;s weergegeven. Dubbelklik op een pagina om deze te openen voor bewerking.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Verwijzen naar alinea&#39;s van andere pagina&#39;s {#referencing-paragraphs-from-other-pages}
 
@@ -113,13 +112,13 @@ Op dit tabblad kunt u naar een andere pagina zoeken. Alle alinea&#39;s van die p
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### Weergave Volledige opslagplaats gebruiken {#using-the-full-repository-view}
+### De weergave Volledige opslagplaats gebruiken {#using-the-full-repository-view}
 
 Op dit tabblad worden alle bronnen in de opslagplaats weergegeven.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Zoeken gebruiken met Inhoudsbrowser {#using-search-with-the-content-browser}
+### Zoeken gebruiken met de Inhoudsbrowser {#using-search-with-the-content-browser}
 
 Op alle opties kunt u naar specifieke punten zoeken. Alle tags en bronnen die overeenkomen met het zoekpatroon worden weergegeven:
 
@@ -154,7 +153,7 @@ u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 >
 >U kunt [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) onderzoek ook gebruiken.
 
-## Referenties {#showing-references} tonen
+## Referenties weergeven {#showing-references}
 
 AEM kunt u bekijken welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
@@ -209,9 +208,9 @@ DesignIn deze modus kunt u het ontwerp van de pagina bewerken door de toegankeli
 >Er zijn ook andere opties beschikbaar:
 >
 >* [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Clientcontext](/help/sites-administering/client-context.md)
->* Websites - hiermee opent u de websiteconsole.
->* Opnieuw laden - De pagina wordt vernieuwd.
+* [Clientcontext](/help/sites-administering/client-context.md)
+* Websites - hiermee opent u de websiteconsole.
+* Opnieuw laden - De pagina wordt vernieuwd.
 
 
 ## Sneltoetsen {#keyboard-shortcuts}

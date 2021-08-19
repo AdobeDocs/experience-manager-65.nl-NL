@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
 exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,6 @@ Vorm één of meerdere verbindingen aan Search&amp;Promote zodat uw Web-pagina&#
    >
    >met uw geldige e-mail&amp;Promote referenties (e-mail/wachtwoord).
    >Vervolgens moet u in de adresbalk van uw browser naar de URL kijken die er ongeveer als volgt uitziet:
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >

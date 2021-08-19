@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
+source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '1925'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
 
-
-# Beste praktijken voor het Testen van Prestaties{#best-practices-for-performance-testing}
+# Best practices voor het testen van prestaties{#best-practices-for-performance-testing}
 
 ## Inleiding {#introduction}
 
@@ -66,10 +65,10 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 * U kunt ook hulpprogramma&#39;s voor het testen van belasting op wolken gebruiken, zoals [Neustar](https://www.neustar.biz/services/web-performance/load-testing).
 * Wanneer het gaat om het testen van mobiele of responsieve websites, moet een aparte set hulpmiddelen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Een van de meer gebruikte instrumenten is:
 
-   * **[De Voorwaarde](https://nshipster.com/network-link-conditioner/)**  van de Verbinding van het netwerk - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Het omvat versies voor OS X en iOS; [](https://nshipster.com/network-link-conditioner/)
-   * [**Charles**](https://www.charlesproxy.com/)  - een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux. [](https://www.charlesproxy.com/)
+   * **[De Voorwaarde](https://nshipster.com/network-link-conditioner/)**  van de Verbinding van het netwerk - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Het omvat versies voor OS X en iOS;
+   * [**Charles**](https://www.charlesproxy.com/)  - een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux.
 
-#### Optimalisatieprogramma {#optimization-tools}
+#### Optimalisatieprogramma&#39;s {#optimization-tools}
 
 **Bewaking**
 
@@ -93,7 +92,7 @@ De PageSpeed-programma&#39;s van Google bieden een siteanalyse voor het volgen v
 
 ## Auteursomgeving {#author-environment}
 
-### Tests {#performing-tests} uitvoeren
+### Tests uitvoeren {#performing-tests}
 
 Voor het uitvoeren van prestatietests in de auteursomgeving is het nodig dat u de ervaring van productiefouteurs simuleert. Dit betekent dat de auteursinstallaties alle componenten, bundels OSGi, UI aanpassing, douaneindexes en andere toevoegingen moeten bevatten u voor de instanties van de productiesauteur op zijn plaats hebt.
 
@@ -101,7 +100,7 @@ Er zijn vele automatiseringskaders beschikbaar die voor prestaties en lading het
 
 Voor de soorten milieu&#39;s die vereisten van zwaar activa laden of pagina creatie hebben is het noodzakelijk om hulpmiddelen zoals Dag te gebruiken om ervoor te zorgen dat het milieu efficiënt onder piekbelasting zal werken. [](/help/sites-administering/webdav-access.md) WebDAV is een hulpprogramma waarvoor geen scripts nodig zijn en dat ook kan worden gebruikt om grote hoeveelheden elementen te laden.
 
-#### Specifieke stappen {#mongodb-specific-steps} voor MongoDB
+#### Specifieke stappen van MongoDB {#mongodb-specific-steps}
 
 Op systemen met MongoDB-backends biedt AEM verschillende [JMX](/help/sites-administering/jmx-console.md) MBans die moeten worden gecontroleerd bij het uitvoeren van belasting- of prestatietests:
 
@@ -117,9 +116,9 @@ Voor het cachegeheugen **Document-Diff**, moet de detectiesnelheid boven `.90` l
 
 In de sectie **ObservationQueueMaxLength** wordt het aantal gebeurtenissen in de waarnemingswachtrij van Oak gedurende de laatste uren, minuten, seconden en weken weergegeven. Zoek het grootste aantal gebeurtenissen in de sectie &#39;per uur&#39;. Dit getal moet worden vergeleken met de `oak.observation.queue-length`-instelling die kan worden gevonden in de **SlingRepositoryManager**-component in de [OSGi-console](/help/sites-deploying/web-console.md). Als het hoogste aantal dat voor de waarnemingsrij wordt getoond `queue-length` het plaatsen overschrijdt, contacteer de Steun van Adobe voor hulp bij het verhogen van het plaatsen. De standaardinstelling is 1.000, maar de meeste implementaties moeten deze meestal verhogen tot 20.000 of 50.000.
 
-## Omgeving {#publish-environment} publiceren
+## Publicatie-omgeving {#publish-environment}
 
-### Tests {#performing-tests-1} uitvoeren
+### Tests uitvoeren {#performing-tests-1}
 
 Het belangrijkste onderdeel van een implementatie dat moet worden onderworpen aan laadtests, is de eindgebruiker die wordt geconfronteerd met een publicatie- of verzendomgeving.
 

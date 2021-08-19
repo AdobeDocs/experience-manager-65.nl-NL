@@ -12,7 +12,7 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: fcdadcf691ed5a569a5a40ca070f8ec266ec3eb9
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Om Video toe te laten hartslagrapportering na [het vormen van de het rapportreek
 * [Analyse inschakelen voor een communitysite](#enable-analytics-for-a-community-site)
 * `Marketing Cloud Org Id` koppelen aan de communitysite
 
-De `Marketing Cloud Org Id` kan worden ingegaan op het tijdstip van [het verwezenlijking van de communautaire plaats](/help/communities/sites-console.md#enablement) of later door [het wijzigen](/help/communities/sites-console.md#modifying-site-properties) de eigenschappen van de communautaire plaats. [](#aem-analytics-cloud-service-configuration)
+De `Marketing Cloud Org Id` kan worden ingegaan op het tijdstip van [het verwezenlijking van de communautaire plaats](/help/communities/sites-console.md#enablement) of later door [het wijzigen](/help/communities/sites-console.md#modifying-site-properties) de eigenschappen van de communautaire plaats.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 

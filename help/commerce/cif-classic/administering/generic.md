@@ -8,10 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
 workflow-type: tm+mt
-source-wordcount: '3009'
+source-wordcount: '3002'
 ht-degree: 0%
 
 ---
@@ -59,9 +58,9 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >U kunt een nieuwe productdefinitie overal onder die zonder enige extra opstelling tot stand brengen.
 
-### Producten {#importing-products} importeren
+### Producten importeren {#importing-products}
 
-#### Producten importeren - Touch-geoptimaliseerde UI {#importing-products-touch-optimized-ui}
+#### Producten importeren - Voor aanraking geoptimaliseerde interface {#importing-products-touch-optimized-ui}
 
 1. Navigeer naar de **Products** console, via **Commerce**.
 1. Met de **Products**-console navigeert u naar de gewenste locatie.
@@ -129,13 +128,13 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 1. Klik **Producten importeren**.
 
-### Productinformatie {#creating-product-information} maken
+### Productinformatie maken {#creating-product-information}
 
 >[!NOTE]
 >
 >Het standaardproductbeheer is van fundamenteel belang, omdat de set Geometrixx-Outdoor-producten van fundamenteel belang is. De complexiteit is gebaseerd op het product [steigers](/help/sites-authoring/scaffolding.md), dus met uw eigen productsteigers is het mogelijk om geavanceerdere bewerkingen uit te voeren.
 
-#### Productinformatie maken - Voor aanraking geoptimaliseerde interface {#creating-product-information-touch-optimized-ui}
+#### Productinformatie maken - Voor aanraking geoptimaliseerde gebruikersinterface {#creating-product-information-touch-optimized-ui}
 
 1. Met de **Products**-console (via **Commerce**) navigeert u naar de gewenste locatie.
 1. Gebruik het pictogram **Maken** om een van beide te selecteren (afhankelijk van de structuur en locatie):
@@ -159,7 +158,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >De producten en hun varianten worden opgeslagen als boomstructuur, is de productinformatie bij de bovenkant, met de varianten onderaan (deze structuur wordt afgedwongen door UI).
 
-### Productinformatie {#editing-product-information} bewerken
+### Productinformatie bewerken {#editing-product-information}
 
 >[!NOTE]
 >
@@ -217,7 +216,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 1. Als u op een product klikt of erop tikt, wordt het geopend. U kunt het ook publiceren of de productgegevens bekijken.
 
-#### Zoeken {#extending-search} uitbreiden
+#### Zoeken uitbreiden {#extending-search}
 
 U kunt een bestaand facet wijzigen of nieuwe facetten toevoegen met behulp van CRXDE Lite:
 
@@ -301,7 +300,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 1. Typ de **Afbeeldingscategorie** die u hebt gekozen (bijvoorbeeld `cat1`).
 1. Tik/klik **Done**. De pagina wordt vernieuwd en het juiste element moet worden weergegeven.
 
-#### Catalogus {#catalog}
+#### Catalogus  {#catalog}
 
 1. Navigeer naar de catalogus.
 1. Tik/klik **Eigenschappen weergeven**.
@@ -320,7 +319,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 1. Tik/klik **Done**.
 1. [](#rolling-out-a-catalog) Rolloutuw wijzigingen.
 
-### Productinformatie {#publishing-unpublishing-product-information} publiceren/verwijderen
+### Productinformatie publiceren/verwijderen {#publishing-unpublishing-product-information}
 
 #### Publiceren/Publiceren van de Informatie van het Product - Touch-geoptimaliseerde UI {#publishing-unpublishing-product-information-touch-optimized-ui}
 
@@ -372,9 +371,9 @@ U kunt hen in de Console van het Web in gebeurtenissen bekijken OSGI ( `/system/
 
 >[!NOTE]
 >
->Lees ook [Gebeurtenisafhandeling in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>Lees ook [Gebeurtenisafhandeling in AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
-### Afbeelding met Toevoegen aan winkelwagentkoppelingen {#image-with-add-to-cart-links}
+### Afbeelding met Koppelingen toevoegen aan winkelwagentje {#image-with-add-to-cart-links}
 
 Met de component Afbeelding met Koppelingen toevoegen aan winkelwagentje kunt u snel een product aan het winkelwagentje toevoegen door een hotspot te maken die is gekoppeld aan een product in een afbeelding.
 
@@ -444,9 +443,9 @@ U kunt configureren hoe het dialoogvenster eruitziet wanneer u op de hotspot kli
 
 ## Catalogi {#catalogs}
 
-### Een catalogus {#generating-a-catalog} genereren
+### Een catalogus genereren {#generating-a-catalog}
 
-#### Catalogus genereren - Voor aanraking geoptimaliseerde interface {#generating-a-catalog-touch-optimized-ui}
+#### Een catalogus genereren - Voor aanraking geoptimaliseerde gebruikersinterface {#generating-a-catalog-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -479,7 +478,7 @@ Een catalogus genereren:
 
    Als u op **Catalogus openen** klikt, wordt de catalogus geopend (bijvoorbeeld `http://localhost:4502/editor.html/content/test-catalog.html`).
 
-#### Catalogus genereren - Klassieke UI {#generating-a-catalog-classic-ui}
+#### Een catalogus genereren - klassieke gebruikersinterface {#generating-a-catalog-classic-ui}
 
 >[!NOTE]
 >
@@ -509,9 +508,9 @@ Een catalogus genereren:
 1. Klik **OK** om uw eigenschappen op te slaan. bannergegevens worden weergegeven onder de **Productselectiecriteria** op de pagina Bladeren.
 1. Deze nieuwe wijzigingen uitvoeren.
 
-### Een catalogus {#rolling-out-a-catalog} uitrollen
+### Een catalogus uitrollen {#rolling-out-a-catalog}
 
-#### Een catalogus uitvoeren - Voor aanraking geoptimaliseerde interface {#rolling-out-a-catalog-touch-optimized-ui}
+#### Een catalogus implementeren - geoptimaliseerde gebruikersinterface met aanraakfuncties {#rolling-out-a-catalog-touch-optimized-ui}
 
 Een catalogus uitrollen:
 
@@ -529,7 +528,7 @@ Een catalogus uitrollen:
 1. Stel in de wizard de rollout zo nodig in en tik op **Wijzigingen bij rollout**.
 1. Er wordt een dialoogvenster geopend. Tik/klik **Done** wanneer het proces is voltooid.
 
-#### Catalogus uitrollen - Klassieke UI {#rolling-out-a-catalog-classic-ui}
+#### Een catalogus uitrollen - klassieke gebruikersinterface {#rolling-out-a-catalog-classic-ui}
 
 Een catalogus uitrollen:
 
@@ -541,7 +540,7 @@ Een catalogus uitrollen:
 1. Stel de rollout naar wens in.
 1. Klik **Uitvoer**.
 
-### Invoer van blauwdruk {#blueprint-importer}
+### Blauwdrukimportmodule {#blueprint-importer}
 
 #### Blauwdrukimportmodule - Voor aanraking geoptimaliseerde gebruikersinterface {#blueprint-importer-touch-optimized-ui}
 
@@ -557,7 +556,7 @@ Een catalogus uitrollen:
 
 1. Tik/klik **Done** zodra het importeren is voltooid.
 
-#### Blauwdrukimportmodule - Klassieke UI {#blueprint-importer-classic-ui}
+#### Invoer van blauwdruk - klassieke gebruikersinterface {#blueprint-importer-classic-ui}
 
 1. Navigeer met de **Tools**-console naar **Commerce**.
 
@@ -569,11 +568,11 @@ Een catalogus uitrollen:
 1. Stel de gewenste importbewerking in.
 1. Klik **Catalogusblauwdrukken importeren**.
 
-## Promoties {#promotions}
+## Aanbiedingen {#promotions}
 
-### Promotie {#creating-a-promotion} maken
+### Een aanbieding maken {#creating-a-promotion}
 
-#### Aanbieding maken - Klassieke UI {#creating-a-promotion-classic-ui}
+#### Aanbieding maken - klassieke gebruikersinterface {#creating-a-promotion-classic-ui}
 
 >[!NOTE]
 >
@@ -601,9 +600,9 @@ Een catalogus uitrollen:
 
 ## Vouchers {#vouchers}
 
-### Een voucher {#creating-a-voucher} maken
+### Een voucher maken {#creating-a-voucher}
 
-#### Een voucher maken - klassieke gebruikersinterface {#creating-a-voucher-classic-ui}
+#### Een voucher maken - een klassieke gebruikersinterface {#creating-a-voucher-classic-ui}
 
 1. Open de console **Websites** van uw auteurinstantie.
 1. Selecteer in het linkerdeelvenster de gewenste **Campagne**.
@@ -615,7 +614,7 @@ Een catalogus uitrollen:
 
 1. U kunt de voucher nu activeren, zodat kopers deze kunnen gebruiken in hun winkelwagentjes op het publicatieexemplaar.
 
-### Vouchers {#removing-vouchers} verwijderen
+### Vouchers verwijderen {#removing-vouchers}
 
 #### Vouchers verwijderen - Klassieke UI {#removing-vouchers-classic-ui}
 
@@ -626,19 +625,19 @@ Als u een voucher niet beschikbaar wilt maken voor klanten, kunt u:
 
 Beide acties kunnen van **Websites** console worden gedaan.
 
-### Vouchers {#modifying-vouchers} wijzigen
+### Vouchers wijzigen {#modifying-vouchers}
 
 #### Vouchers wijzigen - Klassieke UI {#modifying-vouchers-classic-ui}
 
 Als u de eigenschappen van een voucher of promotie wilt wijzigen, dubbelklikt u erop op de **Websites**-console en klikt u op **Bewerken**. Nadat u het bestand hebt opgeslagen, activeert u het zo dat de wijzigingen worden doorgevoerd in de publicatie-instantie(s).
 
-### Vouchers toevoegen aan een winkelwagentje {#adding-vouchers-to-a-cart}
+### Vouchers toevoegen aan een winkelwagen {#adding-vouchers-to-a-cart}
 
 Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde **Vouchers**-component (categorie Handel) gebruiken. U moet dit toevoegen aan dezelfde pagina als waar de winkelwagen wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
 
 Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de cartpagina, onder het winkelwagentje zelf.
 
-## Bestellingen {#orders}
+## Orders {#orders}
 
 >[!NOTE]
 >
@@ -657,7 +656,7 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 
 ### Bestelgegevens maken {#creating-order-information}
 
-#### Bestelgegevens maken - Voor aanraking geoptimaliseerde interface {#creating-order-information-touch-optimized-ui}
+#### Bestelgegevens maken - Voor aanraking geoptimaliseerde gebruikersinterface {#creating-order-information-touch-optimized-ui}
 
 1. Met de **Bestellingen**-console navigeert u naar de gewenste locatie.
 1. Met het pictogram **Maken** kunt u **Volgorde maken** selecteren.
@@ -668,7 +667,7 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 
 1. Selecteer **Maken** om de gegevens op te slaan.
 
-### Bewerkordergegevens {#editing-order-information}
+### Bewerkingsordergegevens {#editing-order-information}
 
 #### Bewerkordergegevens - Voor aanraking geoptimaliseerde interface {#editing-order-information-touch-optimized-ui}
 

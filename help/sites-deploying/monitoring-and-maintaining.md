@@ -10,17 +10,16 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Configureren
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
-source-wordcount: '5892'
+source-wordcount: '5878'
 ht-degree: 0%
 
 ---
 
-
-# Bewaking en onderhoud van uw AEM{#monitoring-and-maintaining-your-aem-instance}
+# Uw AEM controleren en onderhouden{#monitoring-and-maintaining-your-aem-instance}
 
 Nadat uw AEM instanties zijn opgesteld zullen bepaalde taken nodig zijn om hun verrichting, prestaties en integriteit te controleren en te handhaven.
 
@@ -93,7 +92,7 @@ Het gedeelte [Back-up en herstel](/help/sites-administering/backup-and-restore.m
 
 Zie [Een online back-up maken](/help/sites-administering/backup-and-restore.md#online-backup) voor meer informatie over het maken van een online &quot;hot&quot; back-up.
 
-## Versieopruiming {#version-purging}
+## Versie leegmaken {#version-purging}
 
 Het gereedschap **Versies wissen** is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
 
@@ -140,7 +139,7 @@ Ga als volgt te werk om versies van een website te wissen:
 >
 >Opgeloste knooppunten kunnen niet worden hersteld zonder de opslagplaats te herstellen. Zorg voor uw configuratie, dus raden we u aan altijd een droge run uit te voeren voordat u gaat leegmaken.
 
-### De console {#analyzing-the-console} analyseren
+### De console analyseren {#analyzing-the-console}
 
 In de processen **Droge uitvoering** en **Leegmaken** worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
 
@@ -177,7 +176,7 @@ AEM WCM registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken 
 
 * `<cq-installation-dir>/crx-quickstart/repository/`
 
-#### Rotatie van logbestand {#log-file-rotation}
+#### Bestandsrotatie logbestand {#log-file-rotation}
 
 De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van dossier door nieuw dossier periodiek te creëren beperkt. In AEM wordt een logbestand met de naam `error.log` eenmaal per dag geroteerd volgens de opgegeven regels:
 
@@ -189,7 +188,7 @@ De omwenteling van het dossier van het logboek verwijst naar het proces dat de g
 >
 >Als u uw AEM installatie bevordert, merk op dat om het even welk bestaand logboekdossier dat niet meer door AEM wordt gebruikt op de schijf zal blijven. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
 
-### Logbestanden {#finding-the-log-files} zoeken
+### De logbestanden zoeken {#finding-the-log-files}
 
 Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM hebt geïnstalleerd:
 
@@ -233,7 +232,7 @@ Informatie over Revisie-journalistiek.
 >
 >De logboeken van ImageServer en s7access zijn niet inbegrepen in **Download volledig **pakket dat van het **systeem/console/status-Bundlelist **pagina wordt geproduceerd. Als u [!DNL Dynamic Media] problemen hebt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
-### Het FOUTOPSPORINGSlogniveau {#activating-the-debug-log-level} activeren
+### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
 Het standaardlogboekniveau ([Apache het Registreren Configuratie van het Sling Logging](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)) is Informatie, zodat zuivert de berichten niet worden geregistreerd.
 
@@ -438,11 +437,11 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
 De Felix-console biedt ook informatie over Sling Log Support op `../system/console/slinglog`. bijvoorbeeld `https://localhost:4502/system/console/slinglog`.
 
-### Controleverslagen {#finding-the-audit-records} zoeken
+### Controleregisters zoeken {#finding-the-audit-records}
 
 Er worden auditrecords bijgehouden om een overzicht te geven van wie wat heeft gedaan en wanneer. Er worden verschillende auditverslagen gegenereerd voor zowel AEM WCM- als OSGi-gebeurtenissen.
 
-#### AEM WCM Controlecords die worden getoond wanneer de Auteur van de Pagina {#aem-wcm-audit-records-shown-when-page-authoring}
+#### AEM WCM-auditrecords die worden weergegeven bij het ontwerpen van pagina&#39;s {#aem-wcm-audit-records-shown-when-page-authoring}
 
 1. Open een pagina.
 1. Vanuit het hulpprogramma kunt u het tabblad selecteren met het vergrendelingspictogram en vervolgens dubbelklikken op **Controlelogboek..**
@@ -464,7 +463,7 @@ OSGi-gebeurtenissen genereren ook auditrecords die kunnen worden weergegeven op 
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
-## Uw replicatieagents {#monitoring-your-replication-agents} controleren
+## Uw replicatieagents controleren {#monitoring-your-replication-agents}
 
 U kunt uw [replicatierijen](/help/sites-deploying/replication.md) controleren om te ontdekken wanneer een rij of neer of geblokkeerd is - die op zijn beurt op een probleem met een het publiceren instantie of extern systeem zou kunnen wijzen:
 
@@ -510,7 +509,7 @@ Om een replicatieagent te controleren:
 
 Opnieuw kunt u een oplossing ontwikkelen om alle replicatiemiddelen (die onder `/etc/replication/author` of `/etc/replication/publish` worden gevestigd) te ontdekken, dan de status van de agent ( `enabled`, `disabled`) en de onderliggende rij ( `active`, `idle`, `blocked`) te controleren.
 
-## Bewaking van prestaties {#monitoring-performance}
+## Monitorprestaties {#monitoring-performance}
 
 [Prestaties ](/help/sites-deploying/configuring-performance.md) optimaliseren is een interactief proces dat tijdens de ontwikkeling de focus krijgt. Na plaatsing wordt het gewoonlijk herzien na specifieke intervallen of gebeurtenissen.
 
@@ -704,7 +703,7 @@ Dit logboek heeft één lijn per verzoek of reactie:
 
 Met behulp van kleine scripts kunt u de vereiste informatie uit het logbestand extraheren en de gewenste statistieken samenstellen. Hieruit kunt u zien welke pagina&#39;s of typen pagina&#39;s langzaam zijn en of de prestaties over het geheel genomen bevredigend zijn.
 
-#### De onderzoekreactie tijden met request.log {#monitoring-search-response-times-with-the-request-log} controleren
+#### De onderzoekreactie tijden van het toezicht met request.log {#monitoring-search-response-times-with-the-request-log}
 
 Zoekverzoeken worden ook in het logbestand geregistreerd:
 
@@ -717,7 +716,7 @@ Dus, zoals hierboven, kunt u manuscripten gebruiken om de relevante informatie t
 
 Als u echter eenmaal de responstijd hebt bepaald, moet u misschien analyseren waarom het verzoek de tijd neemt die het nodig heeft en wat er kan worden gedaan om de reactie te verbeteren.
 
-#### Het aantal en de impact van gelijktijdige gebruikers controleren {#monitoring-the-number-and-impact-of-concurrent-users}
+#### Het aantal en de gevolgen van gelijktijdige gebruikers controleren {#monitoring-the-number-and-impact-of-concurrent-users}
 
 Ook hier kan `request.log` worden gebruikt om de gelijktijdige uitvoering en de reactie van het systeem erop te controleren.
 
@@ -739,7 +738,7 @@ Er moeten tests worden uitgevoerd om te bepalen hoeveel gelijktijdige gebruikers
 31/Mar/2009:11:45:44 +0200 [337] <- 304 text/html 0ms
 ```
 
-### Het gebruiken van rlog.jar om verzoeken met lange duurtijden {#using-rlog-jar-to-find-requests-with-long-duration-times} te vinden
+### Het gebruiken van rlog.jar om verzoeken met lange duurtijden te vinden {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
 AEM bevat diverse hulpgereedschappen in:
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
@@ -921,7 +920,7 @@ Sinds JDK 1.6 is de gereedschapsopdracht `jvisualvm` beschikbaar. Nadat u JDK 1.
 
 U kunt dit gereedschap gebruiken om thread-dumps en dumps voor geheugenkoppen te maken. Deze informatie wordt vaak gevraagd door het technische ondersteuningsteam.
 
-### Informatieverzameling {#information-collection}
+### Informatie verzamelen {#information-collection}
 
 Als u zoveel mogelijk weet wat u met de installatie kunt doen, kunt u nagaan wat een wijziging in de prestaties heeft veroorzaakt en of deze wijzigingen gerechtvaardigd zijn. Deze gegevens moeten regelmatig worden verzameld, zodat u gemakkelijk significante veranderingen kunt zien.
 
@@ -1063,7 +1062,7 @@ Om de verzoeken per uur te bepalen hebt u op het auteurssysteem bij piektijd:
 
 Herhaal de bovenstaande procedure voor uw publicatieexemplaar.
 
-## Specifieke scenario&#39;s {#analyzing-specific-scenarios} analyseren
+## Specifieke scenario&#39;s analyseren {#analyzing-specific-scenarios}
 
 Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde prestatieproblemen optreden. De lijst is (helaas) niet volledig.
 
@@ -1103,7 +1102,7 @@ Controleer in deze gevallen:
 
    * [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 
-### SchijfI/O {#disk-i-o}
+### I/O schijf {#disk-i-o}
 
 Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat de schijf wordt vastgezet, zie:
 
@@ -1114,7 +1113,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
    * [Configuratie van Apache Sling-logboekregistratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [HTML-bibliotheekbeheer CQ](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level) [](/help/sites-deploying/configuring.md#loggersandwritersforindividualservices)
+   * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Of en hoe u [Versieopruiming](/help/sites-deploying/version-purging.md) hebt geconfigureerd
 * De Knowledge Base:
@@ -1122,7 +1121,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem of als u merkt dat 
    * [Te veel geopende bestanden](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
    * [Dagboek verbruikt te veel schijfruimte](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
-### Standaardprestatievermindering {#regular-performance-degradation}
+### Reguliere prestatievermindering {#regular-performance-degradation}
 
 Als u ziet dat de prestaties van uw instantie achteruitgaan nadat u opnieuw hebt opgestart (soms een week of meer later), kunt u het volgende controleren:
 

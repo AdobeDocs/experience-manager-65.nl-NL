@@ -9,15 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
-feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+feature: Adaptieve Forms
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
 workflow-type: tm+mt
-source-wordcount: '2648'
+source-wordcount: '3385'
 ht-degree: 1%
 
 ---
-
 
 # Document met record genereren voor adaptieve formulieren{#generate-document-of-record-for-adaptive-forms}
 
@@ -61,7 +60,7 @@ Automatisch gegenereerde recorddocumenten hebben de volgende voordelen:
 * Hiermee kunt u verschillende stijlen en vormgeving proberen met verschillende basissjablonen en de beste stijl en vormgeving kiezen voor Document of Record. Stijlvormgeving is optioneel. Als u geen stijl opgeeft, worden systeemstijlen standaard ingesteld.
 * Hiermee zorgt u ervoor dat elke wijziging in het formulier direct wordt doorgevoerd in het document met de record.
 
-## Componenten om automatisch een document met records {#components-to-automatically-generate-a-document-of-record} te genereren
+## Componenten die automatisch een recorddocument genereren {#components-to-automatically-generate-a-document-of-record}
 
 Voor het genereren van een recorddocument voor adaptieve formulieren hebt u de volgende componenten nodig:
 
@@ -208,7 +207,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
 
 De tabelcomponenten voor adaptieve formulieren, zoals koptekst, voettekst en rijtoewijzing, voor de overeenkomstige XFA-componenten. U kunt herhaalbare deelvensters toewijzen aan tabellen in een document met records.
 
-## Basissjabloon van een document met record {#base-template-of-a-document-of-record}
+## Basissjabloon van een record {#base-template-of-a-document-of-record}
 
 De basissjabloon biedt opmaak- en weergavegegevens voor documenten met een record. Hiermee kunt u de standaardweergave van automatisch gegenereerd document met record aanpassen. U wilt bijvoorbeeld het bedrijfslogo in de koptekst en copyrightinformatie in de voettekst van het document met de record plaatsen. De master pagina van het basissjabloon wordt gebruikt als een master pagina voor het document met een recordsjabloon. De master pagina kan informatie bevatten, zoals paginakoptekst, voettekst en paginanummer, die u kunt toepassen op het recorddocument. U kunt dergelijke informatie op document van verslag toepassen gebruikend basissjabloon voor auto het produceren van document van verslag. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
@@ -293,7 +292,7 @@ U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
 
 1. Klik **Gereed.**
 
-## De brandinggegevens in het document met records {#customize-the-branding-information-in-document-of-record} aanpassen
+## De brandinggegevens in het document van de record aanpassen {#customize-the-branding-information-in-document-of-record}
 
 Tijdens het genereren van een recorddocument kunt u de brandinggegevens voor het recorddocument wijzigen op het tabblad Document of Record. Het tabblad Document of Record bevat opties zoals logo, weergave, lay-out, koptekst en voettekst, disclaimer en of u niet het selectievakje en keuzerondjes wilt inschakelen of niet.
 
@@ -323,9 +322,15 @@ Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt l
    * **Verborgen velden uitsluiten van het recorddocument**
    * **Beschrijving van deelvensters verbergen**
 
+   Als de aangepaste XDP-sjabloon die u selecteert meerdere master pagina&#39;s bevat, worden de eigenschappen voor deze pagina&#39;s weergegeven in de sectie **[!UICONTROL content]** van het tabblad **[!UICONTROL Document of Record]**.
+
+   ![Master pagina-eigenschappen](assets/master-page-properties.png)
+
+   Tot de master pagina-eigenschappen behoren Logo Image, Header Text, Form Title, Disclaimer Label en Disclaimer Text. U kunt adaptieve formulier- of XDP-sjablooneigenschappen toepassen op het Document of Record. AEM Forms past de sjablooneigenschappen standaard toe op het Document of Record. U kunt ook aangepaste waarden definiëren voor de master pagina-eigenschappen. Voor informatie over hoe te om veelvoudige master pagina&#39;s in een Document van Verslag toe te passen, zie [Meerdere master pagina&#39;s toepassen op een Document van Verslag](#apply-multiple-master-pages-dor).
+
    >[!NOTE]
    >
-   >Als u een adaptief formuliersjabloon gebruikt dat is gemaakt met een versie van Designer die ouder is dan 6.3, zodat de eigenschappen Accentkleur en Lettertypefamilie werken, controleert u of het volgende aanwezig is in uw adaptieve formuliersjabloon onder het basissubformulier:
+   >Als u een adaptieve formuliersjabloon gebruikt die is gemaakt met een versie van Designer die ouder is dan versie 6.3, zodat de eigenschappen Accent Color en Font Family werken, moet u ervoor zorgen dat het volgende aanwezig is in uw adaptieve formuliersjabloon onder het basissubformulier:
 
    ```xml
    <proto>
@@ -368,13 +373,70 @@ Het document met recordinstellingen van een component is beschikbaar onder de ei
 * **Deelvenster weergeven als tabel:als u de eigenschap** instelt, wordt het deelvenster weergegeven als een tabel in een document met een record als het deelvenster minder dan 6 velden bevat. Alleen van toepassing op het deelvenster.
 * **Titel uitsluiten van document van record:** door de eigenschap in te stellen, wordt de titel van het deelvenster/de tabel uitgesloten van het document met records. Alleen van toepassing op het deelvenster en de tabel.
 * **Beschrijving uitsluiten van document van record:** door de eigenschap in te stellen wordt de beschrijving van het deelvenster/de tabel uitgesloten van het document met records. Alleen van toepassing op het deelvenster en de tabel.
+* **[!UICONTROL Pagination]** >  **[!UICONTROL Place]**: Hiermee bepaalt u waar u het deelvenster wilt plaatsen.
+   * **[!UICONTROL Place]** >  **[!UICONTROL Following Previous]**: Hiermee plaatst u het deelvenster achter het vorige object in het bovenliggende deelvenster.
+   * **[!UICONTROL Place]** >  **[!UICONTROL In Content Area]** > Naam van inhoudsgebied: Plaatst het deelvenster in het opgegeven inhoudsgebied.
+   * **[!UICONTROL Place]** >  **[!UICONTROL Top of Next Content Area]**: Hiermee plaatst u het deelvenster boven aan het volgende inhoudsgebied.
+   * **[!UICONTROL Place]** >  **[!UICONTROL Top of Content Area]** > Naam van inhoudsgebied: Plaatst het deelvenster boven aan het opgegeven inhoudsgebied.
+   * **[!UICONTROL Place]** >  **[!UICONTROL On Page]** > Naam van master pagina: Plaatst het deelvenster op de opgegeven pagina. Als een pagina-einde niet automatisch wordt ingevoegd, voegt [!DNL AEM Forms] een pagina-einde toe.
+   * **[!UICONTROL Place]** >  **[!UICONTROL Top of Next Page]**: Hiermee plaatst u het deelvenster boven aan de volgende pagina. Als een pagina-einde niet automatisch wordt ingevoegd, voegt [!DNL AEM Forms] een pagina-einde toe.
+   * **[!UICONTROL Place]** >  **[!UICONTROL Top of Page]** > Naam van master pagina: Plaatst het deelvenster boven aan de pagina wanneer de opgegeven pagina wordt weergegeven. Als een pagina-einde niet automatisch wordt ingevoegd, voegt [!DNL AEM Forms] een pagina-einde toe.
+* **[!UICONTROL Pagination]** >  **[!UICONTROL After]**: Hiermee bepaalt u welk gebied moet worden gevuld nadat een deelvenster is geplaatst. De volgende velden zijn beschikbaar in de  **[!UICONTROL After]** sectie:
+   * **[!UICONTROL After]** >  **[!UICONTROL Continue Filling Parent]**: Hiermee gaat u door met het samenvoegen van gegevens voor alle objecten die nog in het bovenliggende deelvenster moeten worden ingevuld.
+   * **[!UICONTROL After]** >  **[!UICONTROL Go to Next Content Area]**: Hiermee begint u het volgende inhoudsgebied te vullen nadat u het deelvenster hebt geplaatst.
+   * **[!UICONTROL After]** >  **[!UICONTROL Go To Content Area]** > Naam van inhoudsgebied: Hiermee wordt het vullen van het opgegeven inhoudsgebied gestart nadat het deelvenster is geplaatst.
+   * **[!UICONTROL After]** >  **[!UICONTROL Go To Next Page]**: Hiermee wordt het vullen van de volgende pagina gestart nadat het deelvenster is geplaatst.
+   * **[!UICONTROL After]** >  **[!UICONTROL Go To Page]** > Naam van pagina: Hiermee wordt het vullen van de opgegeven pagina gestart nadat het deelvenster is geplaatst.
+* **[!UICONTROL Pagination]** >  **[!UICONTROL Overflow]**: Hiermee stelt u een overloop in voor een deelvenster of een tabel die meerdere pagina&#39;s beslaat. De volgende velden zijn beschikbaar in de sectie **[!UICONTROL Overflow]**:
+   * **[!UICONTROL Overflow]** > **[!UICONTROL None]**: Hiermee wordt een begin gemaakt met het invullen van de volgende pagina. Als een pagina-einde niet automatisch wordt ingevoegd, voegt [!DNL AEM Forms] een pagina-einde toe.
+   * **[!UICONTROL Overflow]** >  **[!UICONTROL Go to Content Area]** > Naam van inhoudsgebied: Hiermee wordt het vullen van het opgegeven inhoudsgebied gestart.
+   * **[!UICONTROL Overflow]** >  **[!UICONTROL Go To Page]** > Naam van pagina: Hiermee wordt het vullen van de opgegeven pagina gestart.
+
+Zie [Paginaeinde toepassen in een document met records en [Meerdere master pagina&#39;s toepassen op een document met record](#apply-multiple-master-pages-dor) voor informatie over het toepassen van pagina-einden en het toepassen van meerdere master pagina&#39;s.](#apply-page-breaks-in-dor)
 
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van een adaptief formulier op basis van schema opgenomen in het document met records. Standaard is dit waar.
 * **Velden uitsluiten van DoR indien verborgen:het** instellen van de eigenschap heeft voorrang op het gedrag van de veldeigenschap &#39;Uitsluiten van document van record&#39; wanneer deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van het document met record als de eigenschap is ingesteld op true, mits de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
 
-## Belangrijke overwegingen bij het werken met een document met record {#key-considerations-when-working-with-document-of-record}
+## Een pagina-einde toepassen in een document van record {#apply-page-breaks-in-dor}
+
+U kunt pagina-einden in een Document van Verslag toepassen gebruikend veelvoudige methodes.
+
+Een pagina-einde toepassen op een document met records:
+
+1. Tik op het deelvenster en selecteer ![Configureren](assets/configure-icon.svg).
+
+1. Vouw **[!UICONTROL Document of Record]** uit om de eigenschappen weer te geven.
+
+1. Tik in de sectie **[!UICONTROL Pagination]** op ![Map](assets/folder-icon.svg) in het veld **[!UICONTROL Place]**.
+1. Tik **[!UICONTROL Top of Next page]** en tik **[!UICONTROL Select]**. U kunt ook op **[!UICONTROL Top of Page]** tikken, de master pagina selecteren en op **[!UICONTROL Select]** tikken om het pagina-einde toe te passen.
+1. Tik ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+
+Het geselecteerde deelvenster gaat naar de volgende pagina.
+
+## Meerdere master pagina&#39;s toepassen op een document met records {#apply-multiple-master-pages-dor}
+
+Als de aangepaste XDP-sjabloon die u selecteert meerdere master pagina&#39;s bevat, worden de eigenschappen voor deze pagina&#39;s weergegeven in de sectie [!UICONTROL content] van het tabblad [!UICONTROL Document of Record]. Zie [De brandinggegevens in een document van record](#customize-the-branding-information-in-document-of-record) aanpassen voor meer informatie.
+
+U kunt meerdere master pagina&#39;s toepassen op een Document of Record door verschillende master pagina&#39;s toe te passen op de onderdelen van een adaptief formulier. Gebruik de sectie [Paginering](#document-of-record-settings) van het Document of Record-eigenschappen om meerdere master pagina&#39;s toe te passen.
+
+Hieronder ziet u hoe u meerdere master pagina&#39;s kunt toepassen op een document met records:
+U uploadt een XDP malplaatje dat vier master pagina&#39;s aan de [!DNL AEM Forms] server omvat. [!DNL AEM Forms] Hiermee past u de sjablooneigenschappen standaard toe op het document of record. [!DNL AEM Forms] Hiermee past u ook de eerste master pagina-eigenschappen in de sjabloon toe op het Document of Record.
+
+Voer de volgende stappen uit om de tweede master pagina-eigenschappen toe te passen op een deelvenster en de derde master pagina-eigenschappen op de volgende deelvensters:
+
+1. Tik op het deelvenster om de tweede master pagina toe te passen en selecteer ![Configure](assets/configure-icon.svg).
+1. Tik in de sectie **[!UICONTROL Pagination]** op ![Map](assets/folder-icon.svg) in het veld **[!UICONTROL Place]**.
+1. Tik **[!UICONTROL On page]**, selecteer de tweede master pagina en tik **[!UICONTROL Select]**.
+AEM Forms past de tweede master pagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
+1. Tik in de sectie **[!UICONTROL Pagination]** op ![Map](assets/folder-icon.svg) in het veld **[!UICONTROL After]**.
+1. Tik **[!UICONTROL Go To page]**, selecteer de derde master pagina en tik **[!UICONTROL Select]**.
+1. Tik ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+AEM Forms past de derde master pagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
+
+
+## Belangrijke overwegingen bij het werken met een document {#key-considerations-when-working-with-document-of-record}
 
 Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan een document of record voor adaptieve formulieren.
 
@@ -382,4 +444,3 @@ Houd rekening met de volgende overwegingen en beperkingen wanneer u werkt aan ee
 * Documentfragmenten in een adaptieve vorm worden niet weergegeven in het recorddocument. Aangepaste formulierfragmenten worden echter ondersteund.
 * Inhoudbinding in document van record die is gegenereerd voor een adaptief formulier op basis van een XML-schema, wordt niet ondersteund.
 * De gelokaliseerde versie van document van verslag wordt gecreeerd op bestelling voor een scène wanneer de gebruiker om de teruggave van het document van verslag verzoekt. De lokalisatie van een recorddocument vindt plaats in combinatie met de lokalisatie van het adaptieve formulier. Zie [AEM vertaalworkflow gebruiken voor het lokaliseren van adaptieve formulieren en recorddocumenten](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md) voor meer informatie over de lokalisatie van documenten en adaptieve formulieren.
-

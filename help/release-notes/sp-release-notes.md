@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 861f5f4ae87da106bc42895e03bc42c0b17bd9fc
 workflow-type: tm+mt
 source-wordcount: '3525'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Verbeterde  [!DNL Content Fragment] modellen en Editor**: U kunt nu complexe en aangepaste modellen voor gestructureerde inhoud maken met behulp van geneste  [!DNL Content Fragment] modellen. Inhoudsstructuren worden gemoduleerd in basiselementen die zijn gemodelleerd als subfragmenten. Fragmenten op een hoger niveau verwijzen naar deze subfragmenten. Meer verbeteringen in gegevenstypen, zoals geavanceerde validatieregels, verbeteren de flexibiliteit van het modelleren van inhoud met [!DNL Content Fragments]. De [!DNL Experience Manager] [!DNL Content Fragment] redacteur steunt genestelde fragmentstructuren in een gemeenschappelijke redacteurszitting, met verhogingen zoals de mening van de boomstructuur en van labels voorzien broodkruimelnavigatie door fragmenthiërarchieën.
 
-* **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment]-modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], blijven [GraphQL vragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en proces geheim voorgeheugenvriendelijke verzoeken van de GET. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5.
+* **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment]-modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], blijven [GraphQL vragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en proces geheim voorgeheugenvriendelijke verzoeken van de GET. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5.10.0.
 
 * **Hiërarchiebeheer en toekomstig voorbeeld**: Gebruikers hebben nu een interface voor toegang tot de inhoudsstructuren van hun  [!DNL Experience Manager] startpagina&#39;s, waaronder de mogelijkheid om pagina&#39;s toe te voegen en te verwijderen bij het starten. Deze functie verbetert de flexibiliteit van [!DNL Experience Manager] lanceringen aan de versies van de auteursinhoud die voor toekomstige publicatie worden gericht. [Met de ](/help/sites-authoring/working-with-page-versions.md#timewarp) functie Tijd verdraaien kunnen gebruikers de voorvertoning starten als toekomstige inhoudsstaten.
 
@@ -376,7 +376,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API gebruikt authentificatie via Adobe IMS en [!DNL Adobe I/O] en steunt de groeiende rol van de Starten van Adobe aan instrument [!DNL Experience Manager] pagina&#39;s voor analyse en verpersoonlijking, de opt-in tovenaar functioneel irrelevant is. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
+| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API maakt gebruik van verificatie via Adobe IMS en [!DNL Adobe I/O] en ondersteunt de groeiende rol van Adobe Launch om [!DNL Experience Manager]-pagina&#39;s te instrumenteren voor analyse en personalisatie. De wizard Optie is functioneel niet relevant. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen door Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}

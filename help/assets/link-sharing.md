@@ -3,11 +3,11 @@ title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
 role: User
-feature: Delen van koppelingen, beheer van bedrijfsmiddelen
+feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '903'
 ht-degree: 3%
 
 ---
@@ -24,20 +24,17 @@ ht-degree: 3%
 
 ## Assets delen {#share-assets}
 
-Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u met gebruikers wilt delen. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share`-locatie kunnen de koppelingen weergeven die met hen worden gedeeld.
+Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebruikt u het dialoogvenster [!UICONTROL Link Sharing]. Gebruikers met beheerdersrechten of met leesmachtigingen op `/var/dam/share`-locatie kunnen de koppelingen weergeven die met hen worden gedeeld.
 
 1. Selecteer in de gebruikersinterface [!DNL Assets] het element dat u wilt delen als koppeling.
-1. Klik op **[!UICONTROL Share Link]** ![pictogram Elementen delen](assets/do-not-localize/assets_share.png) op de werkbalk. De koppeling die wordt gemaakt nadat op **[!UICONTROL Share]** is geklikt, wordt vooraf weergegeven in het veld [!UICONTROL Share Link]. De koppeling wordt pas gemaakt wanneer u op **[!UICONTROL Submit]** klikt.
 
-   ![Dialoogvenster met de koppeling Delen](assets/Link-sharing-dialog-box.png)
+1. Klik op **[!UICONTROL Share Link]** ![pictogram Elementen delen](assets/do-not-localize/assets_share.png) op de werkbalk. De koppeling die wordt gemaakt nadat op **[!UICONTROL Share]** is geklikt, wordt vooraf weergegeven in het veld [!UICONTROL Share Link]. De koppeling wordt pas gemaakt wanneer u **[!UICONTROL Submit]** selecteert.
+
+   ![Dialoogvenster met de koppeling Delen](/help/assets/assets/share-assets-as-link.png)
 
    *Afbeelding: Het dialoogvenster voor het delen van elementen als een koppeling.*
 
 1. Typ in het vak E-mailadres van het dialoogvenster **[!UICONTROL Link Sharing]** de e-mail-id van de gebruiker met wie u de koppeling wilt delen. U kunt een of meer gebruikers toevoegen.
-
-   ![Koppelingen naar elementen rechtstreeks delen via het dialoogvenster Koppelen](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Afbeelding: Koppelingen naar elementen rechtstreeks vanuit het  [!UICONTROL Link Sharing] dialoogvenster delen.*
 
    >[!NOTE]
    >
@@ -51,7 +48,7 @@ Gebruik het dialoogvenster Koppelen om de URL te genereren voor elementen die u 
 
    ![Vervaldatum van gedeelde koppeling instellen](assets/Set-shared-link-expiration.png)
 
-1. Selecteer **[!UICONTROL Allow download of original file]** als u wilt dat gebruikers het oorspronkelijke element samen met de uitvoeringen kunnen downloaden. Standaard kunnen gebruikers alleen de uitvoeringen downloaden van het element dat u als koppeling deelt.
+1. Selecteer **[!UICONTROL Allow download of original file]** als u gebruikers het oorspronkelijke element wilt laten downloaden. Als u gebruikers alleen de uitvoeringen van de gedeelde elementen wilt laten downloaden, selecteert u **[!UICONTROL Allow download of renditions of file]**.
 
 1. Klik op **[!UICONTROL Share]**. Een bericht bevestigt dat de koppeling via e-mail met de gebruikers wordt gedeeld.
 

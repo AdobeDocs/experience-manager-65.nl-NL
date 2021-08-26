@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
+source-git-commit: 218e97eb31061e833f3b291a6607b2ebf4762471
 workflow-type: tm+mt
 source-wordcount: '2851'
 ht-degree: 25%
@@ -116,7 +116,7 @@ U kunt de connectiviteit tussen geconfigureerde [!DNL Sites]-implementaties en [
 ![Verbindingstest van Verbonden activa gevormde  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Cijfer: Verbindingstest van gevormde Verbonden Activa  [!DNL Sites].*
 
-### Een verbinding configureren voor dynamische media-elementen{#sites-dynamic-media-connected-assets}
+### Een verbinding configureren voor dynamische media-elementen {#sites-dynamic-media-connected-assets}
 
 U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring om externe middelen en externe [!DNL Dynamic Media]-implementaties te gebruiken ongewijzigd.
 

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 37073594b45995ade7f0e73c519feb21adf48482
+source-git-commit: 3e4e9ab8b3940f539228bccf759dcade03a8b015
 workflow-type: tm+mt
-source-wordcount: '2645'
-ht-degree: 27%
+source-wordcount: '2851'
+ht-degree: 25%
 
 ---
 
@@ -20,7 +20,7 @@ De functionaliteit Verbonden elementen ondersteunt het bovenstaande gebruiksgeva
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
-Wanneer het uitgeven van pagina&#39;s in [!UICONTROL Page Editor] als doelbestemming, kunnen de auteurs vlot zoeken, doorbladeren, en activa van een verschillende [!DNL Assets] plaatsing inbedden die als bron van activa dienst doet. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites]-mogelijkheid met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets]-mogelijkheid.
+Wanneer het uitgeven van pagina&#39;s in [!UICONTROL Page Editor] als doelbestemming, kunnen de auteurs vlot zoeken, doorbladeren, en activa van een verschillende [!DNL Assets] plaatsing inbedden die als bron van activa dienst doet. De beheerders maken een eenmalige integratie van een implementatie van [!DNL Experience Manager] met [!DNL Sites]-mogelijkheid met een andere implementatie van [!DNL Experience Manager] met [!DNL Assets]-mogelijkheid. Siteauteurs kunnen ook Dynamic Media-afbeeldingen op de webpagina&#39;s van hun site gebruiken via Connected Assets en de Dynamic Media-functies gebruiken, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
 
 Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lokale activa. Met deze functie kunt u naadloos zoeken naar telkens een klein aantal externe assets voor gebruik. Als u veel externe middelen beschikbaar wilt maken voor een [!DNL Sites]-implementatie in één keer, kunt u overwegen de middelen in bulk te migreren. Zie [migratiehandleiding voor Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -115,6 +115,25 @@ U kunt de connectiviteit tussen geconfigureerde [!DNL Sites]-implementaties en [
 
 ![Verbindingstest van Verbonden activa gevormde  [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Cijfer: Verbindingstest van gevormde Verbonden Activa  [!DNL Sites].*
+
+### Een verbinding configureren voor dynamische media-elementen{#sites-dynamic-media-connected-assets}
+
+U kunt een verbinding configureren tussen [!DNL Sites]-implementatie en [!DNL Dynamic Media]-implementatie waarmee auteurs van webpagina&#39;s [!DNL Dynamic Media]-afbeeldingen in hun webpagina&#39;s kunnen gebruiken. Tijdens het ontwerpen van webpagina&#39;s blijft de ervaring om externe middelen en externe [!DNL Dynamic Media]-implementaties te gebruiken ongewijzigd.
+
+Voer de volgende stappen uit om de functionaliteit Verbonden elementen te configureren voor dynamische media-implementaties:
+
+1. [!DNL Dynamic Media] als globale configuratie op verre [!DNL Assets] auteurplaatsing toelaten en vormen. Zie [Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) configureren om Dynamic Media te configureren.<br/>
+Bij verre  [!DNL Assets] plaatsing, binnen  [!UICONTROL Dynamic Media sync mode], uitgezocht  **[!UICONTROL Enabled by default]**.
+
+1. Creeer de Connected configuratie van Activa zoals die in [vorm verbinding tussen plaatsen en activa plaatsingen](#configure-a-connection-between-sites-and-assets-deployments) wordt beschreven. Selecteer ook de optie **[!UICONTROL Fetch Original Rendition for Dynamic Media Connected Assets]**.
+
+1. Configureer [!DNL Dynamic Media] op lokale [!DNL Sites]- en externe [!DNL Assets]-implementaties. Volg de instructies aan [configure [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+
+   * Gebruik dezelfde bedrijfsnaam in alle configuraties.
+   * Selecteer **[!UICONTROL Disabled by default]** op het lokale [!DNL Sites] in [!UICONTROL Dynamic Media sync mode]. Voor de [!DNL Sites]-implementatie is alleen lezen-toegang tot de [!DNL Dynamic Media]-account nodig.
+   * Selecteer **[!UICONTROL Selective Publish]** in de lokale [!DNL Sites] optie. **[!UICONTROL Publish Assets]** Selecteer **[!UICONTROL Sync All Content]** niet.
+
+1. Schakel [[!DNL Dynamic Media] ondersteuning in Image Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media) in. Met deze functie schakelt u de standaard [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) in om [!DNL Dynamic Media]-afbeeldingen weer te geven wanneer [!DNL Dynamic Media]-afbeeldingen door auteurs worden gebruikt op webpagina&#39;s bij lokale [!DNL Sites]-implementatie.
 
 ## Externe assets gebruiken {#use-remote-assets}
 
@@ -226,3 +245,6 @@ Ga als volgt te werk om algemene fouten op te lossen:
 * Als externe referenties niet worden opgehaald en een foutbericht opleveren, controleert u of de [!DNL Sites]-implementatie beschikbaar is en controleert u op problemen met de netwerkconnectiviteit. Probeer het later opnieuw om te controleren. [!DNL Assets] de plaatsing probeert tweemaal om verbinding met  [!DNL Sites] plaatsing te vestigen en dan een mislukking meldt.
 
    ![fout bij ophalen externe elementverwijzingen](assets/reference-report-failure.png)
+
+
+

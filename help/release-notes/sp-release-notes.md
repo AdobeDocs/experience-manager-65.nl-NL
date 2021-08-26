@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 4fca7799bf33bf90f601ab72a354f76e48ccdb04
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3525'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Opties voor delen koppelen om elementen of uitvoeringen** te downloaden: Wanneer gebruikers elementen en verzamelingen delen als koppelingen, kunnen ze kiezen of ze het downloaden van originele elementen, hun vertoningen of beide toestaan met behulp van de gedeelde koppeling. Ook krijgen de gebruikers die de elementen downloaden die via de koppeling met hen worden gedeeld, de optie om alleen de oorspronkelijke elementen, alleen de uitvoeringen of beide te downloaden.
 
-* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden.
+* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden. Zie [Samengestelde elementen beheren](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Camera Raw ondersteuning**: Er is een nieuw  [!DNL Camera Raw] pakket beschikbaar dat  [!DNL Adobe Camera Raw] versie 10.4 ondersteunt. Zie  [Afbeeldingen verwerken met [!DNL Camera Raw]](/help/assets/camera-raw.md).
 

@@ -3,11 +3,11 @@ title: Samengestelde elementen beheren met verwijzingen en meerdere pagina's
 description: Leer hoe u verwijzingen naar digitale elementen maakt vanuit [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Met de functie Paginaviewer kunt u afzonderlijke subelementpagina's van bestanden met meerdere pagina's weergeven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 role: User, Admin
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,10 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
    * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer [!UICONTROL DAM Update Asset] workflow in het pop-updialoogvenster, klik op [!UICONTROL Start] en klik op [!UICONTROL Proceed].
 
 Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]**-workflow uit. Er wordt een `cq:Page`-component gegenereerd op basis van de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd, uit de component `cq:Page`. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
+
+>[!NOTE]
+>
+>In [!UICONTROL Create Sub Asset Process - Step Properties] in [!UICONTROL Process Arguments], kunt u het aantal subactiva specificeren dat [!DNL Experience Manager] produceert. De standaardwaarde is 5. Laat het veld leeg als u alle subelementen wilt genereren. Als het veld een negatief veld heeft, worden geen subactiva gegenereerd.
 
 ## Subelementen weergeven {#viewing-subassets}
 

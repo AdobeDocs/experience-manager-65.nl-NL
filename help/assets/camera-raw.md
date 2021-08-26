@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 73e53f516d8e10b548f913db079c7e9812deb907
+source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ U kunt de ondersteuning [!DNL Adobe Camera Raw] inschakelen voor het verwerken v
 
 Ga als volgt te werk om [!DNL Camera Raw]-ondersteuning in [!DNL Experience Manager Assets] in te schakelen:
 
-1. Download het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van [!DNL Software Distribution].
+1. Download [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) van [!DNL Software Distribution].
 1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
 1. Bewerk de stap **[!UICONTROL Process Thumbnails]**.
 1. Geef de volgende configuratie op het tabblad **[!UICONTROL Thumbnails]** op:

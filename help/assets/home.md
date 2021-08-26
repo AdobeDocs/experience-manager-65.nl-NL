@@ -2,12 +2,12 @@
 title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 user-guide-title: Hulplijn voor middelen
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 4%
 Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
 
 ## Belangrijke [!DNL Experience Manager] artikelen
-
-<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
--->
 
 * [Opmerkingen bij de release Experience Manager 6.5](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)

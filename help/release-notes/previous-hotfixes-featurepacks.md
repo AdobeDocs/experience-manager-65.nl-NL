@@ -1,18 +1,360 @@
 ---
-title: '[!DNL Adobe Experience Manager] 6.5 de vorige de versienota''s van Service Pack'
-description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5 Service Packs.
+title: '[!DNL Adobe Experience Manager] 6.5 de vorige de versienota''s van het de dienstpak'
+description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5-servicepacks
 contentOwner: AK
+mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 29e045ef3080866a94e0925bc0c176a91092c729
+source-git-commit: 97d0b0d85276c733b487a8f3c5095bc4feb7e08d
 workflow-type: tm+mt
-source-wordcount: '19903'
+source-wordcount: '22693'
 ht-degree: 0%
 
 ---
 
-# Hotfixes en de Pakken van de Eigenschap inbegrepen in de vorige Pakken van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+# Hotfixes en de Pakken van de Eigenschap inbegrepen in de vorige de dienstpakken {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
-## [!DNL Adobe Experience Manager] 6.5.8.0.  {#experience-manager-6580}
+## [!DNL Adobe Experience Manager] 6.5.9.0. {#experience-manager-6590}
+
+[!DNL Adobe Experience Manager] 6.5.9.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen, die sinds de beschikbaarheid van 6.5 versie in April 2019 worden vrijgegeven. Het servicepack is geïnstalleerd op [!DNL Adobe Experience Manager] 6.5.
+
+De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience Manager] 6.5.9.0 worden geïntroduceerd zijn:
+
+* [!DNL Experience Manager Sites] Met de Dynamic Media Foundation-component kunt u de optimalisatie voor apparaten met een hogere resolutie nu in- of uitschakelen wanneer u responsieve voorinstelling voor afbeeldingen of Slim uitsnijden gebruikt.
+
+* Om de prestaties te verbeteren, wordt de `hidden=false` voorwaarde verplaatst van vraag JCR naar [!UICONTROL QueryBuilder] beoordelaar. [!DNL Experience Manager] controleert of een verborgen map niet wordt weergegeven om te controleren of een verborgen voorspelling werkt na de wijziging.
+
+* Mogelijkheid om verwijderde pagina&#39;s en boomstructuur op een [!DNL Experience Manager Sites]-pagina te herstellen.
+
+* Steun voor een nieuwe gebruiker om het toegangstoken te verfrissen gebruikend verfrist token voor de dienst van de brievenbusconfiguratie.
+
+* [Steun voor SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth) mechanisme voor de dienst van de postconfiguratie.
+
+* Ondersteuning voor [!DNL MongoDB] versies 4.2 en 4.4.
+
+* Namen die betrekking hebben op Hongkong, Macau en Taiwan worden bijgewerkt volgens de nieuwe naamconventies voor Chinese landinstellingen en regio&#39;s.
+
+* Verbeterde toegankelijkheid in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) en [[!DNL Dynamic Media]](#accessibility-dm-6590).
+
+* Met de functie Smart Imaging DPR (Device Pixel Ratio) en de optimalisatie van de netwerkbandbreedte kunt u afbeeldingen van de beste kwaliteit efficiënt leveren. op apparaten met vertoningen met hoge resolutie en beperkte netwerkbandbreedte. Zie [Veelgestelde vragen over intelligente beeldverwerking](/help/assets/imaging-faq.md) voor meer informatie en tijdlijn.
+
+* [!DNL Dynamic Media] levering (`fmt` URL-optie) ondersteunt de volgende generatie afbeeldingsindeling AVIF (AV1-afbeeldingsindeling). Zie [API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) voor beeldweergave en rendering voor meer informatie en tijdlijn.
+
+* Mogelijkheid om een meldingsbericht per e-mail naar een groep te verzenden met de workflowstap [!UICONTROL Assign Task].
+
+* Capaciteit om een Interactief Communicatie ontwerp terug te winnen na het wijzigen van de bron Interactieve Communicatie.
+
+* Stel een aangepaste domeinnaam in voor het laden, renderen en valideren van de reCAPTCHA-service in [!DNL Experience Manager Forms].
+
+* Verbeteringen van invoergegevens voor [!UICONTROL Invoke Form Data Model Service]-workflowstap.
+
+* Mogelijkheid om meerdere master pagina&#39;s te gebruiken in een Document of Record-sjabloon in [!DNL Experience Manager Forms].
+
+* Pagina-einden in Document of Record worden ondersteund in [!DNL Experience Manager Forms].
+
+* De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar 1.2.7.
+
+Voor een volledige lijst van eigenschappen en verhogingen die in [!DNL Experience Manager] 6.5.9.0 worden geïntroduceerd, zie [nieuw in  [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
+
+>[!NOTE]
+>
+>Vanaf Service Pack 9 kunnen klanten [!DNL Experience Manager] hun [!DNL Experience Manager] toepassingen ontwikkelen en gebruiken met distributies van de [!DNL Azul Zulu] builds van OpenJDK, standaarden-compatibel met Java™ SE.
+>Adobe biedt ook ondersteuning voor de [!DNL Azul Zulu] JDK&#39;s aan klanten van [!DNL Experience Manager].
+>U kunt de relevante versies van [!DNL Azul Zulu] JDKs van [de Distributie van de Software van Adobe downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>De gebruiksrechten voor de Oracle Java™-technologie, zoals die door Adobe wordt gedistribueerd, lopen eind december 2022 af. [!DNL Experience Manager] klanten worden aangemoedigd om uiterlijk op deze datum het gebruik voor de  [!DNL Azul Zulu] JDK&#39;s te plannen en uit te voeren. Raadpleeg de bijbehorende [Veelgestelde vragen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie over het gebruik van de [!DNL Oracle Java™]-technologie en [!DNL Azul Zulu]-technologie.
+
+Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience Manager] 6.5.9.0-release.
+
+### [!DNL Sites] {#sites-6590}
+
+* Gepubliceerde pagina&#39;s waarvoor de eigenschap Verificatievereiste is ingeschakeld, leiden niet om naar de aanmeldingspagina en retourneren het 404-foutbericht (NPR-36354).
+
+* Wanneer u een hyperlink maakt, werkt de optie voor het doorzoeken van een koppeling niet in de tekstcomponent (NPR-35849).
+
+* Er wordt een transversale query geactiveerd bij het gebruik van de `com.day.cq.wcm.commons.ReferenceSearch`-API. Het beïnvloedt prestaties van [!DNL Experience Manager] server (NPR-36407).
+
+* De geneste lay-outcontainer binnen een andere resized lay-outcontainer toont een onjuist aantal kolommen voor zijn kindcomponenten, die in deze componenten resulteren die niet aan het net worden gericht (NPR-36359).
+
+* Externe Linkchecker geeft geldige externe koppelingen weer als ongeldige koppelingen (NPR-36289).
+
+* Nadat u de referenties een tijdje hebt weergegeven, wordt in het venster Referenties een foutbericht weergegeven (NPR-36167).
+
+* Wanneer het bewegen van een component, automatisch gecreeerd parsys, heeft niet de `sling:resourceType` knoop (NPR-36165).
+
+* Wanneer het proberen om een livecopy (terwijl het gebruiken van uitloopvormen [!UICONTROL Activate on Blueprint activation] en [!UICONTROL De-activate on Blueprint activation]) te synchroniseren als een component in de master livecopy wordt geschrapt, ontbreekt de synchronisatie en `NullPointerException` wordt geregistreerd (NPR-36127).
+
+* Wanneer een gebruiker in geïmproviseerde tekst typt voor tag (tag die niet op het systeem aanwezig is) en op Enter drukt, wordt de tag onder het veld weergegeven, maar wanneer het inhoudsfragment wordt opgeslagen en opnieuw geopend, verdwijnt de geïmproviseerde tag (NPR-36132).
+
+* De status van asynchrone bewerkingen (NPR-36104) wordt niet weergegeven in Postvak In.
+
+* Er wordt een dubbele component gemaakt na het herstellen van de overerving (NPR-36000).
+
+* Wanneer het gebruiken van `RemoteContentRenderingService`, omvat het verzoek aan `RemoteContentRendererRequestHandler.getRequest` altijd de wortelpagina voor `ComponentExporter`, maar omvat niet de gevraagde pagina als het niet inbegrepen met het wortelmodel is dat op de traversale diepte en het filtreren optiesreeks wordt gebaseerd. Het verzoek moet altijd de gevraagde pagina omvatten zodat de SPA genoeg informatie heeft om een antwoord terug te geven (NPR-35961).
+
+* onTime/offTime-items activeren/deactiveren niet op de verwachte onTime/offTime (NPR-35936).
+
+* Wanneer u een pagina publiceert die een fragment van de Ervaring bevat dat geen `cq:lastModified` bezit, komt `NullPointerException` voor (NPR-35914).
+
+* Wanneer u probeert de grootte van een component in een container te wijzigen, is het niet mogelijk de oorspronkelijke grootte te herstellen. Wanneer de grootte van de container van de component wordt verkleind, is het niet mogelijk de grootte terug te zetten naar het origineel (NPR-35809).
+
+* In het rollout dialoogvenster, dat in de redacteur of van het Levende Overzicht van het Exemplaar wordt teweeggebracht, zijn de statuspictogrammen voor losgemaakte, geschorste of niet gecreeerde pagina&#39;s verkeerd (NPR-35691).
+
+* Op pagina&#39;s uitrollen van beheer voor meerdere sites hebben de eigenschappen master het selectievakje Uitrollout-pagina en subpagina&#39;s negeren (NPR-35634).
+
+* De functie Herstelboomstructuur, beschikbaar in de klassieke gebruikersinterface, ontbreekt in Touch-gebruikersinterface (CQ-4315352, CQ-4309415).
+
+* Problemen tijdens het herstellen van overerving en het implementeren van de pagina op een [!DNL Experience Manager Sites]-pagina (NPR-36033).
+
+### [!DNL Assets] {#assets-6590}
+
+De volgende verbeteringen in de gebruikerservaring worden uitgevoerd in [!DNL Assets]:
+
+* Als u elementen wilt weergeven die niet zijn gesorteerd op basis van een van de parameters [!UICONTROL Create], [!UICONTROL Modify] of [!UICONTROL Name], biedt [!DNL Adobe Experience Manager] een optie [!UICONTROL None] binnen [!UICONTROL Sort by] opties. De optie [!UICONTROL None] zorgt ervoor dat de elementen in de gebruikersinterface van Elementen (in Kaart, Kolom, en mening) in de zelfde orde zijn zoals zij in knoop JCR (NPR-36356) bestaan.
+
+* Als u de e-mailid in kleine letters wilt weergeven in de ACS API-respons van [!DNL Adobe Experience Manager], wordt een optionele instelling geïntroduceerd. aangezien de [!DNL Adobe Asset Link]-gebruikers geen middelen konden inchecken als hun id niet alle tekens in kleine letters bevatte. Het [!DNL Adobe Asset Link] paneel verbruikt de reactie van ACS API van [!DNL Adobe Experience Manager] (CQ-4317704).
+
+De volgende toegankelijkheidsverbeteringen zijn beschikbaar in [!DNL Assets] als onderdeel van servicepack 9:
+
+Het contrast (met de achtergrond) van de volgende tekst en pictogrammen is verbeterd, zodat gebruikers met een beperkt gezichtsvermogen en kleurperceptie deze kunnen begrijpen:
+
+* Titel van element op pagina [!UICONTROL Properties] (NPR-35967).
+* Sterrenclassificatiepictogrammen in [!UICONTROL Rating]-secties op verschillende plaatsen (NPR-36009).
+* Tekst op het middel en de omslagmening van de Kaart (NPR-35966).
+* Plaatsaanduidingstekst in de weergave [!UICONTROL Timeline] (NPR-35965).
+* Namen van activa in de zoekresultaten van activa (NPR-35964).
+* Plaatsaanduidingstekst in het dialoogvenster [!UICONTROL Link Sharing] (NPR-35963).
+* [!UICONTROL Metadata],  [!UICONTROL Status]en  [!UICONTROL Other] tekst met  [!UICONTROL List] optie in het  [!UICONTROL View Settings] dialoogvenster (NPR-35910).
+* [!UICONTROL Location] en  [!UICONTROL Type to search] plaatsaanduidingsteksten in de wereldwijde zoekactie (NPR-35909).
+* Pictogrammen uitvouwen en samenvouwen onder [!UICONTROL Content Tree] (NPR-35908).
+* De [!UICONTROL Assets]-tekst op de pagina waarop mappen met elementen worden weergegeven (NPR-35905).
+* Tekst in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] binnen [!UICONTROL Overview] optie in de pagina met elementdetails (NPR-35904).
+* Tekst voor sneltoetsen voor opties [!UICONTROL properties] en [!UICONTROL edit] op de pagina met elementdetails (NPR-35904).
+
+De volgende insectenmoeilijke situaties zijn beschikbaar in [!DNL Assets] als deel van de dienstpak 9:
+
+* De tags die zijn gemaakt vanuit een element voor tagselectie in een formulier [!UICONTROL Folder Metadata Schema], worden niet opgeslagen (NPR-36119).
+
+* Wanneer een kleine ellips wordt gebruikt om elementen van notities te voorzien, overlapt de ellips met het nummer van de annotatie in de afdrukversie (NPR-36114).
+
+* Soms, in de mening van de Kolom, [!DNL Experience Manager] veroorzaakt geen dubbel activaconflict wanneer een dubbel middel wordt geupload (NPR-36048).
+
+* Het dialoogvenster Koppeling delen wordt niet gesloten als het wordt geopend en er geen wijzigingen worden aangebracht (NPR-36030).
+
+* Wanneer er meerdere elementen zijn geselecteerd om de eigenschappen bij te werken, treedt soms een fout op of worden eigenschappen van een niet-geselecteerd element bijgewerkt (NPR-36002).
+
+* Wanneer bij het uploaden van middelen witruimten worden toegevoegd aan het begin of einde van namen van elementbestanden, met resterende tekens die gelijk zijn aan de naam van een bestaand element in de gegevensopslagruimte, wordt het bestaande element vervangen zonder dat een fout wordt geregistreerd (NPR-36001).
+
+* Wanneer video wordt afgespeeld op de pagina met elementdetails, werken de opties voor afspelen en pauzeren niet (NPR-35999).
+
+* Wanneer het unpublishing van activa in bulk, Brand Portal een fout veroorzaakt die erop wijst dat het verzoek URI te lang is (NPR-35954).
+
+* Wanneer een element met lange annotatietekst wordt afgedrukt, wordt de annotatietekst bijgesneden, zelfs als er ruimte beschikbaar is (NPR-35948).
+
+* De optie om naar de volgende pagina te gaan is uitgeschakeld wanneer u de pagina selecteert in de weergave Sjablonen op de pagina Catalogus maken (CQ-4315462).
+
+* Wanneer de werkstroom voor het bijwerken van elementen wordt gestart voor het video-element, wordt de pagina herhaaldelijk vernieuwd (CQ-4313375).
+
+* DAM-mappen kunnen niet worden verwijderd of verplaatst en er wordt een uitzondering vastgelegd (NPR-35942).
+
+### [!DNL Dynamic Media] {#dynamic-media-6590}
+
+In [!DNL Adobe Experience Manager] 6.5.9.0 zijn de volgende toegankelijkheidsverbeteringen beschikbaar in [!DNL Dynamic Media]:
+
+* Wanneer u het dialoogvenster opent om elementen toe te voegen met behulp van toetsenbordtoetsen in de [!UICONTROL Image Set]-editor:
+   * Schermlezers vertellen dat het dialoogvenster wordt geopend.
+   * De toetsenbordfocus wordt naar het dialoogvenster verplaatst wanneer het wordt geopend.
+   * De toetsenbordfocus gaat terug naar de optie Element toevoegen wanneer het dialoogvenster wordt gesloten (CQ-4312134).
+
+* U kunt nu Hotspots op elementen toevoegen en bewerken met de sneltoetsen in de Hotspot-editor (CQ-4305965).
+
+* U kunt hyperlink nu op hotspot plaatsen via Hotspot-beheer met behulp van toetsenbordtoetsen. De focus van de schermlezer gaat nu naar het veld om het URL-pad te bewerken en de optie voor het dialoogvenster Selectie openen (CQ-4290735).
+
+* Het contrast (met de achtergrond) van tekst en besturingselementen op de pagina van de Editor voor de afbeeldingsset is verbeterd, zodat gebruikers met een beperkte gezichtsscherpte en kleurperceptie deze kunnen begrijpen (CQ-4290733).
+
+* U kunt nu naar opties voor het delen van elementen navigeren in de Viewer Preset Editor en de uitgevouwen deeloptie samenvouwen met de toetsenbordtoetsen (CQ-4290724).
+
+* U kunt nu met toetsenbordtoetsen navigeren en knopinfo weergeven in de informatiepictogrammen en waarschuwingspictogrammen op de tabbladen Standaard en Geavanceerd van de pagina Video coderen bewerken (CQ-4290722).
+
+* Schermlezers vertellen nu de instructies voor verschillende velden op het tabblad Weergave en op het tabblad Gedrag in de Viewer Preset Editor (CQ-4290721).
+
+* Wanneer u in de modus Formulier door de pagina Voorinstelling afbeelding bewerken navigeert, worden het doel en de namen van de verschillende velden en besturingselementen in schermlezers vermeld (CQ-4290717).
+
+* Bij het navigeren door de detailpagina met elementen beschrijven schermlezers nu het doel van verschillende opties in Viewers (CQ-4290716).
+
+* Contrast (met achtergrond) van de plaatsaanduidingstekst De optie Alle uitvoeringen in uitvoeringen van de pagina met elementdetails is verbeterd, zodat gebruikers met een beperkt gezichtsvermogen en kleurperceptie deze kunnen begrijpen (CQ-4290713).
+
+* De visuele asterisk om verplicht gebied te betekenen wordt nu verstrekt op het gebied van de Titel van activa in de Redacteur van de Reeks van het Beeld, en de schermlezers kondigen de vereiste informatie voor het gebied aan (CQ-4290712).
+
+* Schermlezers hebben nu toegang tot de pagina met elementdetails voor verschillende interactieve opties in Viewers (CQ-4290708) en kunnen het doel van deze opties nu vertellen.
+
+Adobe Experience Manager 6.5.9.0 Assets verhelpt de volgende problemen in [!DNL Dynamic Media]:
+
+* Custom ViewerPresets en CSS worden niet gerepliceerd naar [!DNL Dynamic Media] wanneer [!DNL Dynamic Media] selectief wordt geactiveerd en door [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config) (NPR-36232) wordt uitgeschakeld.
+
+* Wanneer u video-uitvoeringen wilt voorvertonen op de pagina met elementdetails, worden de video&#39;s traag geladen (CQ-4320122).
+
+* Browserpagina reageert niet en wordt trager wanneer meer dan 200 elementen worden geüpload terwijl Duplicate Asset Detector is ingeschakeld (CQ-4319633).
+
+* Wanneer een panoramisch afbeeldingselement wordt toegevoegd aan het panoramische mediacomponent op een pagina, wordt een niet-afgevangen referentiefout vastgelegd (CQ-4317666).
+
+* Wanneer de interactieve media viewer wordt geïmplementeerd met Experience Fragment, wordt het Experience Fragment niet geopend bij de uitgever en wordt een fout vastgelegd (CQ-4317655).
+
+* [!UICONTROL Publish to Dynamic Media] is niet beschikbaar in de  [!UICONTROL Quick Publish] opties op de  [!UICONTROL Properties] pagina (CQ-4317199).
+
+* Siteauteurs met de machtiging Alleen-lezen kunnen de functie voor slim uitsnijden gebruiken voor elementen en de slimme bijgesneden uitvoeringen bewerken (CQ-4316450).
+
+* Video-annotaties werken niet voor mappaden waarbij [!DNL Dynamic Media]-configuratie niet is ingeschakeld, zelfs als de [!DNL Experience Manager]-instantie is ingesteld in de modus [!DNL Dynamic Media] (CQ-4314950).
+
+* Wanneer de titel van het element dubbel-byte, multi-byte, hoge ASCII, Cyrillisch, surrogaat paar, Hebreeuws, Arabisch, en GB18030 karakters heeft, dan bij het publiceren aan Dynamic Media heeft de activa titel een vraagteken (?) (CQ-4311872).
+
+>Bekende problemen met het afspelen van video in Dynamic Media *alleen op Experience Manager 6.5.9.0*:
+>
+>* 
+
+   <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* 
+
+   <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
+
+
+### Platform {#platform-6590}
+
+* Wanneer u een miniatuur voor een blauwdruk genereert en de wijzigingen in de live kopie doorvoert, werkt de overerving voor sommige velden niet (CQ-4319517).
+
+* Wanneer u een map maakt, selecteert u de eigenschap Bestelbaar en voegt u meer dan 20 elementen aan de map toe. Als u alle elementen in de map selecteert, wordt een onjuist aantal weergegeven (CQ-4316243).
+
+* Wanneer u een pagina vernieuwt, geeft het sorteren van mappen of elementen niet de juiste resultaten weer (CQ-4316200).
+
+* Handlebars JavaScript bibliotheek wordt bevorderd aan v4.7.7 (NPR-36375).
+
+* Aangepaste bundels worden niet bijgewerkt wanneer u een nieuw codepakket installeert met Package Manager (NPR-35949).
+
+* Een `resourceresolver` Het groeperen van bundel veroorzaakt `Sling:alias` vraag om te ontbreken (NPR-35335).
+
+* Het contextpad wordt verwijderd bij het instellen van SSL in Experience Manager (NPR-35294).
+
+* De uitzondering `SegmentNotFound` wordt geretourneerd na een langdurige sessie (NPR-36405).
+
+### Integrations {#integrations-6590}
+
+* Kan pagina-eigenschappen niet opslaan met overerving ingeschakeld voor Cloud Services-ervaringsfragmenten (NPR-36107).
+
+* De paginering en lazy loading van de IMS-gebruikersinterface geven geen geschikte resultaten weer (NPR-36046).
+
+* Wanneer u een configuratie van het Doel A4T creeert en de rapporteringsbron als [!DNL Adobe Analytics] selecteert, zijn er geen Adobe Target-Toegelaten rapportreeksen beschikbaar in dropdown lijst (NPR-36006).
+
+### Projecten {#projects-6590}
+
+* Kan de eigenschappen van een project niet opslaan omdat het JCR-pad naar het project niet is opgelost door een extra slash (`/`) die aan het projectpad is toegevoegd (NPR-36191).
+
+### Schermen {#screens-6590}
+
+* [!DNL Experience Manager Screens] spelers kunnen niet voor authentiek verklaren als een douane twee-factor authentificatiemanager wordt gebruikt (NPR-35854).
+
+### Handel {#commerce-6590}
+
+* De wizard [!UICONTROL Commerce Catalog] kan niet meer dan 40 items laden in de kolomweergave (CQ-4318379).
+
+### Vertaalprojecten {#translation-6590}
+
+* De opties voor bijwerken of overschrijven worden niet weergegeven wanneer een `es` wordt omgezet in `es_es`-pagina (NPR-36170).
+
+* Wanneer de optie Automatisch goedkeuren is geselecteerd voor een project met menselijke vertaling, wordt de taakstatus weergegeven als `Unknown` (NPR-35981).
+
+* Wanneer u een pagina vertaalt, wordt het referentiepad van [!DNL Experience Fragments] niet bijgewerkt naar het referentiepad [!DNL Experience Fragment] (NPR-35911).
+
+* Wanneer u wijzigingen aanbrengt in de bovenliggende en onderliggende pagina&#39;s en de bovenliggende pagina ter vertaling verzendt, worden de onderliggende pagina&#39;s ook onjuist vertaald (NPR-35896).
+
+* Wanneer er meerdere gezamenlijke vertaalprojecten voor een geselecteerde pagina zijn, koppelt de optie [!UICONTROL Go To Projects] niet aan het meest recente vertaalproject (NPR-35454).
+
+* Wanneer u elementen publiceert naar [!DNL Dynamic Media], geeft [!DNL Experience Manager] een onjuist bericht weer voor ongepubliceerde tags (CQ-4315914, CQ-4315913).
+
+* Als u een verwijderde taak opent, wordt een onjuist bericht weergegeven in [!DNL Experience Manager] (CQ-4315910).
+
+### Workflow {#workflow-6590}
+
+* Wanneer u op Handelingen Voltooien, Delegeren of Openen klikt voor items die beschikbaar zijn in Inbox, is er geen visuele aanwijzing voor het voltooien van deze handelingen (NPR-36317).
+
+### [!DNL Communities] {#communities-6590}
+
+* Bij spamfiltering verbruikt het systeem 100% van de Java™ heap-ruimte, waardoor de Experience Manager server niet reageert (NPR-36316, NPR-36493).
+* In forums worden de gegevens van de JCR-sessies afkomstig van `SearchCommentSocialComponentListProvider` uitgelekt (NPR-36235).
+* Het openen van een specifiek postbusbericht weerspiegelt alle berichten met onjuiste paginering en andere kwesties (NPR-35917).
+
+### [!DNL Brand Portal] {#brandportal-6590}
+
+* De markering voor de functie Asset Sourcing wordt automatisch ingeschakeld bij het configureren van [!DNL Experience Manager Assets] met [!DNL Brand Portal] (NPR-36010).
+
+### [!DNL Forms] {#forms-6590}
+
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+
+
+**Adaptieve Forms**
+
+* Problemen met taalinitialisatie in [!DNL Experience Manager Forms] 6.5.7.0 bij het genereren van meerdere vertaalwoordenboeken (NPR-36439).
+* Als u een bijlage toevoegt aan een adaptief formulierfragment en het formulier verzendt, wordt het volgende foutbericht weergegeven in [!DNL Experience Manager Forms] (NPR-36195):
+
+   ```TXT
+    POST /content/forms/af/attachmentissue/jcr:content/guideContainer.af.submit.jsp HTTP/1.1] com.adobe.aemds.guide.servlet.GuideSubmitServlet [AF] Invalid file name or mime type for file resulted in submission failure
+   ```
+
+* Wanneer u menselijke vertaling gebruikt om een woordenboek bij te werken en dan een voorbeeld van een adaptief formulier te bekijken, worden de wijzigingen niet weergegeven (NPR-36035).
+
+**Interactieve communicatie**
+
+* Wanneer u een afbeelding uploadt via het Interactieve communicatiekanaal Afdrukken en deze bewerkt, is de afbeelding niet meer zichtbaar (NPR-36518).
+
+* Bij het bewerken van een tekstelement en het vullen van een plaatsaanduiding worden alle interactieve elementen verwijderd uit het navigatiegebied (NPR-35991).
+
+**Workflow**
+
+* Wanneer u het REST-eindpunt van een [!DNL Experience Manager Forms]-service op JBoss® aanroept, geeft [!DNL Experience Manager] het volgende foutbericht weer (NPR-36305):
+
+   ```TXT
+   Invalid input. The maximum length of 2000 characters was exceeded.
+   ```
+
+**BackendIntegration**
+
+* Kan een formuliergegevensmodel niet opslaan terwijl het Leesservice-argument wordt gebonden aan een letterlijke waarde die een streepje bevat (NPR-36366).
+
+**Documentbeveiliging**
+
+* Wanneer u certificering en HSM instelt voor GlobalSign, [!DNL Experience Manager Forms] geeft de foutberichten `Unsuported Algorithm` en `Invalid TSA Certificate` weer terwijl een tijdstempel wordt toegevoegd aan LTV (NPR-36026, NPR-36025).
+
+**Document Services**
+
+* Updates voor [!DNL Gibson]-bibliotheek voor integratie met [!DNL Experience Manager Forms] (NPR-36211).
+
+**Foundation JEE**
+
+* Wanneer u Eindpuntbeheer op AdminUI selecteert, [!DNL Experience Manager Forms] toont het `endpoint registry failure` foutenbericht (CQ-4320249).
+
+Zie [[!DNL Experience Manager] pagina met beveiligingsbulletins](https://helpx.adobe.com/security/products/experience-manager.html) voor informatie over beveiligingsupdates.
+
+### Bekende problemen in Experience Manager 6.5.9.0 {#known-issues-6590}
+
+* Als u uw [!DNL Experience Manager] instantie van versie 6.5 aan versie 6.5.10.0 bevordert, kunt u `RRD4JReporter` uitzonderingen in het `error.log` dossier bekijken. Start de instantie opnieuw om het probleem op te lossen.
+
+* Als u [!DNL Experience Manager] 6.5 Service Pack 5 of een eerder servicepakket installeert op [!DNL Experience Manager] 6.5, wordt de runtimekopie van het aangepaste workflowmodel voor uw middelen (gemaakt in `/var/workflow/models/dam`) verwijderd.
+Om uw runtime exemplaar terug te winnen, adviseert Adobe om het ontwerp-tijd exemplaar van het model van het douanewerkschema met zijn runtime exemplaar te synchroniseren gebruikend HTTP API:
+   `<designModelPath>/jcr:content.generate.json`.
+
+* Gebruikers kunnen de naam van een map in een hiërarchie in [!DNL Assets] wijzigen en een geneste map publiceren naar [!DNL Brand Portal]. De titel van de map wordt echter pas bijgewerkt in [!DNL Brand Portal] als de hoofdmap opnieuw wordt gepubliceerd.
+
+* Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
+
+* De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van Experience Manager 6.5.x.x worden weergegeven:
+   * &quot;Wanneer de integratie van Adobe Target in Experience Manager gebruikend de StandaardAPI van het Doel (authentificatie IMS) wordt gevormd, dan leidt het uitvoeren van de Fragmenten van de Ervaring naar Doel in verkeerde aanbiedingstypes die worden gecreeerd. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/source &quot;Adobe Target Classic&quot;.
+   * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
+   * De adaptieve servervalidatie van formulieren mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt (CQ-4274424).
+   * `com.adobe.granite.maintenance.impl.TaskScheduler` - Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
+   * Hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
+   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging van reg om niet-geregistreerd te voltooien.
+
+## [!DNL Adobe Experience Manager] 6.5.8.0. {#experience-manager-6580}
 
 [!DNL Adobe Experience Manager] 6.5.8.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen, die sinds de beschikbaarheid van 6.5 versie in April 2019 worden vrijgegeven. Het servicepack is geïnstalleerd op [!DNL Adobe Experience Manager] 6.5.
 
@@ -125,11 +467,11 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Wanneer geen waarde wordt verstrekt aan een verborgen gebied dat wordt gemerkt vereist, verhindert het u een component (NPR-35219) op te slaan.
 
-### Integrations {#integrations-6580}
+### Integraties {#integrations-6580}
 
 * Wanneer u verschillende waarden voor IMS huurder ID en de code van de Cliënt van het Doel gebruikt, [!DNL Experience Manager] kan niet integreren met [!DNL Adobe Target] (NPR-35342).
 
-### Omzettingsprojecten {#translation-6580}
+### Vertaalprojecten {#translation-6580}
 
 * Problemen bij het exporteren of importeren van een vertaaltaak in [!DNL Experience Manager] (NPR-35259).
 
@@ -207,7 +549,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Meerdere problemen gerapporteerd voor de optie [!UICONTROL Edit Policy] op AdminUI (NPR-35747).
 
-### Bekende problemen voor [!DNL Experience Manager 6.5.8.0] {#known-issues}
+### Bekende problemen in Experience Manager 6.5.8.0 {#known-issues-6580}
 
 * Als u uw [!DNL Experience Manager] instantie van versie 6.5 aan versie 6.5.8.0 bevordert, kunt u `RRD4JReporter` uitzonderingen in het `error.log` dossier bekijken. Start de instantie opnieuw om het probleem op te lossen.
 
@@ -231,7 +573,7 @@ Om uw runtime exemplaar terug te winnen, adviseert Adobe om het ontwerp-tijd exe
    * Hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging van reg om niet-geregistreerd te voltooien.
 
-## [!DNL Adobe Experience Manager] 6.5.7.0.  {#experience-manager-6570}
+## [!DNL Adobe Experience Manager] 6.5.7.0. {#experience-manager-6570}
 
 [!DNL Adobe Experience Manager] 6.5.7.0 is een belangrijke update die nieuwe eigenschappen, zeer belangrijke klant gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen omvat, die sinds de beschikbaarheid van 6.5 versie in April 2019 worden vrijgegeven. Het Service Pack is geïnstalleerd op [!DNL Adobe Experience Manager] 6.5.
 
@@ -323,7 +665,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Nadat u de optie Rechtsom roteren hebt gebruikt, houdt de schermlezer op met commentaar voor de huidige rotatie- of spiegelstatus (CQ-4282128).
 
-* De knoppen Gereed en Annuleren in het dialoogvenster Configureren hebben meerdere tabstops (CQ-4274601).
+* De knoppen Gereed en Annuleren in het dialoogvenster Configureren bevatten veel tabstops (CQ-4274601).
 
 * Het verplaatsen van pagina&#39;s met een vergelijkbare naam op hetzelfde niveau is niet toegestaan (NPR-35041).
 
@@ -458,7 +800,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * De niet-afbeeldingselementen worden niet weergegeven zoals gepubliceerd na het uploaden (CQ-4306415).
 
-#### [!DNL Experience Manager] 3D-elementen  {#three-d-assets-6570}
+#### [!DNL Experience Manager] 3D-elementen {#three-d-assets-6570}
 
 * `DAM CQ MIME Type` de dienst past onjuiste MIME types op 3D activa toe die tot onjuiste teruggave leiden (NPR-34731).
 
@@ -489,17 +831,17 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
    ERROR The start time must precede (be less than) the end time
    ```
 
-### Integratie {#integrations-6570}
+### Integraties {#integrations-6570}
 
 * Het bewerken van een bestaande [!DNL Adobe Launch]-configuratie mislukt (NPR-35045).
 * Kan [!DNL Experience Fragments] niet exporteren naar [!DNL Adobe Target] bij gebruik van IMS-configuratie en [!DNL Adobe Target Standard]-omgeving (NPR-34555).
 * De optie [!UICONTROL Create] wordt op de pagina [!UICONTROL Audiences] weergegeven bij het navigeren van een map naar de pagina [!UICONTROL Audiences] (NPR-35151).
 
-### Verschuiven {#sling-6570}
+### Sling {#sling-6570}
 
 * De standaardlogin gezondheidscontrole bevestigt de geloofsbrieven van een gebruiker die niet bestaat (NPR-34686).
 
-### Omzettingsprojecten {#translation-6570}
+### Vertaalprojecten {#translation-6570}
 
 * Bij het annuleren van een vertaalproject in [!DNL Experience Manager] wordt het verzoek om het te annuleren niet verzonden naar de vertaalprovider (NPR-34433).
 
@@ -564,7 +906,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## [!DNL Adobe Experience Manager] 6.5.6.0.  {#experience-manager-6560}
+## [!DNL Adobe Experience Manager] 6.5.6.0. {#experience-manager-6560}
 
 Adobe Experience Manager 6.5.6.0 is een belangrijke update die nieuwe functies, de belangrijkste door de klant gevraagde verbeteringen en prestaties, stabiliteit en beveiligingsverbeteringen bevat die worden vrijgegeven sinds de algemene beschikbaarheid van de 6.5-release in **April 2019**. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
@@ -805,7 +1147,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * De [Browser van de Configuratie](/help/sites-administering/configurations.md) interface toont niet alle configuraties (NPR-33644).
 * Wanneer u op de `Esc`-toets drukt terwijl u naar gebruikers zoekt om zich te laten nadoen, wordt het dialoogvenster **[!UICONTROL User]** gesloten in plaats van de gebruikerslijst (NPR-34084).
 
-### Integratie {#integrations-6560}
+### Integraties {#integrations-6560}
 
 * Activiteiten met lange namen worden niet gesynchroniseerd met [!DNL Adobe Target] (NPR-34254).
 
@@ -819,7 +1161,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 
 * Er wordt geen vertaalproject gemaakt als het `authorizableID` van de gebruiker speciale tekens bevat (NPR-33828).
 
-### Verschuiven {#sling-6560}
+### Sling {#sling-6560}
 
 * Health Check en Pattern Detector hebben overlappende functionaliteit. Hierdoor wordt de gezondheidscontrole uit het product verwijderd (NPR-33928).
 
@@ -937,7 +1279,7 @@ Na installatie van het [!DNL Experience Manager Forms] 6.5.6.0-invoegpakket:
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## [!DNL Adobe Experience Manager] 6.5.5.0.  {#experience-manager-6550}
+## [!DNL Adobe Experience Manager] 6.5.5.0. {#experience-manager-6550}
 
 Adobe Experience Manager 6.5.5.0 is een belangrijke update die nieuwe functies, de belangrijkste door de klant gevraagde verbeteringen en prestaties, stabiliteit en beveiligingsverbeteringen bevat die beschikbaar zijn sinds de algemene beschikbaarheid van de 6.5-release in **April 2019**. Deze kan boven op Adobe Experience Manager 6.5 worden geïnstalleerd.
 
@@ -1179,7 +1521,7 @@ Hieronder volgt een lijst met oplossingen die is opgenomen in [!DNL Experience M
 * De resultatenpagina van het onderzoek toont geen bericht als er geen gelijken (NPR-32974) zijn.
 * Het filter van Onderzoek keert alle gelijken onder `/content` knoop terug die de geselecteerde plaats (NPR-32849) negeert.
 
-### Integratie {#integrations-6550}
+### Integraties {#integrations-6550}
 
 * De interne cache wordt gewist wanneer een pagina met een Adobe Target-component wordt gepubliceerd (NPR-33162).
 * Integratie met Adobe Target werkt niet op [!DNL Windows Internet Explorer] 11 (NPR-33111).
@@ -1361,7 +1703,7 @@ Zie [Nieuwe functies in Adobe Experience Manager 6.5 Service Packs](new-features
 
 * Met de knop Opslaan wordt de externe set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Set Editor in de Dynamic Media Client (CQ-4285690).
 
-* Miniatuur van 3D-middelen is niet informatief wanneer een ondersteund 3D-model in de Experience Manager wordt opgenomen (CQ-4283701).
+* Miniatuur van 3D-elementen is niet informatief wanneer een ondersteund 3D-model in de Experience Manager wordt opgenomen (CQ-4283701).
 
 * De onverwerkte status van de voorinstelling van de viewer voor SmartCrop wordt twee keer weergegeven op de bannertekst naast de naam van de voorinstelling (CQ-4283517).
 
@@ -1397,7 +1739,7 @@ Zie [Nieuwe functies in Adobe Experience Manager 6.5 Service Packs](new-features
 
 * Fout in UI en Null-puntuitzondering in foutenlogboeken wordt waargenomen wanneer om het even welke te vertalen markering aan een vertaalproject (NPR-31896) wordt toegevoegd.
 
-### Integratie {#integrations-6540}
+### Integraties {#integrations-6540}
 
 * Het genereren van een URL-bibliotheek met opstarthandleidingen is alleen gebaseerd op de waarden `path` en `library_name` van de API voor opstarten en is niet gebaseerd op de waarde `library_path` (NPR-31550).
 
@@ -1413,7 +1755,7 @@ Zie [Nieuwe functies in Adobe Experience Manager 6.5 Service Packs](new-features
 
 * Er is een fout opgetreden bij het selecteren van een overlay en het selecteren van responsieve rastersleepcomponenten hier (CQ-4283342).
 
-### Campagne gericht op {#campaign-targeting-6540}
+### Campagne gericht {#campaign-targeting-6540}
 
 * De configuratie van de doelcloud mislukt als de fout get-boxes is mislukt (CQ-4279880).
 
@@ -1423,7 +1765,7 @@ Zie [Nieuwe functies in Adobe Experience Manager 6.5 Service Packs](new-features
 
 * Pop-upwaarden van het metagegevensschema zijn niet zichtbaar in de elementeigenschappen (CQ-4283287).
 
-* In het subschema Metagegevens worden geen tabbladen weergegeven op basis van het mimetype in de eigenschappen van elementen (CQ-4283288).
+* In het subschema Metagegevens worden geen tabbladen weergegeven op basis van MIME-typen in de eigenschappen van elementen (CQ-4283288).
 
 * Als u het schema voor metagegevens niet publiceert, wordt een foutbericht weergegeven, maar wordt het schema op de achtergrond verwijderd.
 
@@ -1441,7 +1783,7 @@ Zie [Nieuwe functies in Adobe Experience Manager 6.5 Service Packs](new-features
 
 * De gebruiker kan het Analytics-rapport over de auteurinstantie (NPR-30913) niet bekijken.
 
-### Indexeren en vragen {#oak-indexing-6540}
+### eikenindexering en vragen {#oak-indexing-6540}
 
 * MS Word- en MS Excel-documenten met JPEG-afbeeldingen kunnen niet worden geparseerd en er is een fout opgetreden bij het parseren van een klasse die niet is gevonden (NPR-31952).
 
@@ -1505,7 +1847,7 @@ Enkele belangrijke kenmerken van deze Service Pack-release zijn:
 
 * Bijgewerkte versie van jQuery die in ContextHub aan 3.4.1 wordt gebundeld.
 
-### Elementen {#assets-6530-enhancements}
+### Activa {#assets-6530-enhancements}
 
 **Verbeteringen voor producten**
 
@@ -1603,7 +1945,7 @@ Enkele belangrijke kenmerken van deze Service Pack-release zijn:
 
 * Een fout &quot;Groep niet vermeld door de plukker van de gebruiker: onwaar naar verwacht gelijk aan true&quot; wordt waargenomen bij het toevoegen van een gesloten gebruikersgroep met verschillende `principalName` en `authorizableId` (CQ-4278177).
 
-* De Mening van de Kolom UI van activa toont alle wegen ongeacht de de damwortel van specifieke huurder weg (CQ-4278175).
+* De Mening van de Kolom UI van activa toont alle wegen ongeacht de de dampwortel van specifieke huurder weg (CQ-4278175).
 
 * Het zoeken door de kiezer van middelen werkt niet zoals verwacht (CQ-4275886).
 
@@ -1778,7 +2120,7 @@ Enkele belangrijke kenmerken van deze Service Pack-release zijn:
 * Repareren om ervoor te zorgen dat de de kolommening van Activa slechts huurdersspecifieke inhoud toont.
 * Oplossing voor wijzigingen in stijlaccordeon in zoekresultaten.
 
-### Assets
+### Activa
 
 **Verbeteringen voor producten**
 
@@ -1852,7 +2194,7 @@ Enkele belangrijke kenmerken van deze Service Pack-release zijn:
 
 **Verbeteringen voor producten**
 
-* Verbeter documenttype filters met meer MIME Types om multi-getaxeerde opties te steunen. Hotfix voor CQ-4270694
+* `EnhanceDocument` Typ filters met meer MIME-typen ter ondersteuning van multigetaxeerde opties. Hotfix voor CQ-4270694
 
 ### Beheer van inhoudsfragmenten {#content-fragment-management-6520}
 
@@ -1938,7 +2280,7 @@ De belangrijkste hoogtepunten voor [!DNL Experience Manager] 6.5.2.0 vormen zijn
 
 **Forms - Document Services**
 
-* Als &quot;SubmitURL&quot;een ampersand (&amp;) bevat, worden de ontledingsfouten gezien in het logboek wanneer het verzoek van de POST aan renderpdf servlet wordt gemaakt. NPR-30865: Hotfix voor CQ-4278232
+* Als &quot;SubmitURL&quot;een ampersand (&amp;) bevat, worden de ontledingsfouten gezien in het logboek wanneer het verzoek van de POST aan `renderpdf` servlet wordt gemaakt. NPR-30865: Hotfix voor CQ-4278232
 
 **Forms - Foundation JEE**
 
@@ -2084,7 +2426,7 @@ De belangrijkste hoogtepunten voor [!DNL Experience Manager Forms] 6.5.1.0 zijn:
 
 **Backend-integratie**
 
-* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29945: Hotfix voor CQ-4270777
+* Fout bij het ophalen van de beveiligde Web Service Definition Language (WSDL). NPR-29944: Hotfix voor CQ-4270777
 * Wanneer [!DNL Experience Manager Forms] is geïnstalleerd op IBM WebSphere, mislukt het maken van een formuliergegevensmodel op basis van SOAP. Hotfix voor CQ-4251134
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. Hotfix voor CQ-4270586
 * Als de titel van een gegevensbron wordt gewijzigd, wordt de bijgewerkte titel niet weergegeven in het formuliergegevensmodel. Hotfix voor CQ-4265599

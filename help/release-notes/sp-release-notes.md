@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 55b2e8d3d198857205b81b6974d9d6bfb8527fa6
+source-git-commit: 9c262f57b3c3b7a1d2deaba78d13d02b74c5208d
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3525'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Verbeterde  [!DNL Content Fragment] modellen en Editor**: U kunt nu complexe en aangepaste modellen voor gestructureerde inhoud maken met behulp van geneste  [!DNL Content Fragment] modellen. Inhoudsstructuren worden gemoduleerd in basiselementen die zijn gemodelleerd als subfragmenten. Fragmenten op een hoger niveau verwijzen naar deze subfragmenten. Meer verbeteringen in gegevenstypen, zoals geavanceerde validatieregels, verbeteren de flexibiliteit van het modelleren van inhoud met [!DNL Content Fragments]. De [!DNL Experience Manager] [!DNL Content Fragment] redacteur steunt genestelde fragmentstructuren in een gemeenschappelijke redacteurszitting, met verhogingen zoals de mening van de boomstructuur en van labels voorzien broodkruimelnavigatie door fragmenthiërarchieën.
 
-* **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment]-modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], blijven [GraphQL vragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en proces geheim voorgeheugenvriendelijke verzoeken van de GET. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5.
+* **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment]-modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], blijven [GraphQL vragen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en proces geheim voorgeheugenvriendelijke verzoeken van de GET. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5.10.0.
 
 * **Hiërarchiebeheer en toekomstig voorbeeld**: Gebruikers hebben nu een interface voor toegang tot de inhoudsstructuren van hun  [!DNL Experience Manager] startpagina&#39;s, waaronder de mogelijkheid om pagina&#39;s toe te voegen en te verwijderen bij het starten. Deze functie verbetert de flexibiliteit van [!DNL Experience Manager] lanceringen aan de versies van de auteursinhoud die voor toekomstige publicatie worden gericht. [Met de ](/help/sites-authoring/working-with-page-versions.md#timewarp) functie Tijd verdraaien kunnen gebruikers de voorvertoning starten als toekomstige inhoudsstaten.
 
@@ -38,7 +38,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Opties voor delen koppelen om elementen of uitvoeringen** te downloaden: Wanneer gebruikers elementen en verzamelingen delen als koppelingen, kunnen ze kiezen of ze het downloaden van originele elementen, hun vertoningen of beide toestaan met behulp van de gedeelde koppeling. Ook krijgen de gebruikers die de elementen downloaden die via de koppeling met hen worden gedeeld, de optie om alleen de oorspronkelijke elementen, alleen de uitvoeringen of beide te downloaden.
 
-* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden.
+* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden. Zie [Samengestelde elementen beheren](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Camera Raw ondersteuning**: Er is een nieuw  [!DNL Camera Raw] pakket beschikbaar dat  [!DNL Adobe Camera Raw] versie 10.4 ondersteunt. Zie  [Afbeeldingen verwerken met [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -319,7 +319,9 @@ B. Gebruik [HTTP API van de Manager van het Pakket](/help/sites-administering/pa
 
 Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements.md) voor meer informatie over de platforms die zijn gecertificeerd voor deze release.
 
-<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--
+
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -343,7 +345,9 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+
+-->
 
 ### UberJar {#uber-jar}
 
@@ -355,7 +359,7 @@ Om UberJar in een Geweven project te gebruiken, zie [hoe te UberJar](/help/sites
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.10.0</version>
+     <version>6.5.10</version>
      <scope>provided</scope>
 </dependency>
 ```

@@ -1,28 +1,18 @@
 ---
 title: Gekoppelde inhoud
-seo-title: Gekoppelde inhoud
-description: Gekoppelde inhoud biedt de verbinding, zodat elementen (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
-seo-description: Gekoppelde inhoud biedt de verbinding, zodat elementen (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
-uuid: 0b79e45a-14b7-40e3-8b6c-456a83d215d5
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
-docset: aem65
-feature: Contentfragmenten
-role: User, Admin
-exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstrekt zodat de activa facultatief met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd, toevoegend extra flexibiliteit aan koploze inhoudslevering.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Gekoppelde inhoud{#associated-content}
 
-Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door [een reeks elementen te bieden die u kunt openen bij het gebruik van het inhoudsfragment op een pagina](/help/sites-authoring/content-fragments.md#using-associated-content), en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
+AEM functie Gekoppelde inhoud biedt de verbinding, zodat elementen optioneel met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit voor het leveren van inhoud zonder kop door [een reeks elementen te bieden die toegankelijk zijn wanneer het inhoudsfragment op een pagina wordt gebruikt,](/help/sites-authoring/content-fragments.md#using-associated-content) en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
 
 ## Gekoppelde inhoud toevoegen {#adding-associated-content}
 
@@ -30,22 +20,26 @@ Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met 
 >
 >Er zijn verschillende methoden om [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
-Om de vereniging te maken moet u eerst [uw media activa aan een inzameling ](/help/assets/manage-collections.md#adding-assets-to-a-collection) toevoegen. Zodra dat gedaan is kunt u:
+Om de vereniging te maken moet u eerst [uw media activa aan een inzameling ](/help/assets/manage-collections.md) toevoegen. Daarna kunt u:
 
 1. Open uw fragment en selecteer **Gekoppelde content** in het zijpaneel.
 
-   ![chlimage_1-207](assets/chlimage_1-207.png)
+   ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-1. Selecteer **Inhoud koppelen** of **Verzameling koppelen** (afhankelijk van of verzamelingen al zijn gekoppeld of niet).
+1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
+
+   * **Inhoud**  koppelen: dit is de eerste gekoppelde verzameling
+   * **De bijbehorende inzamelingen**  van de Inzameling worden reeds gevormd
+
 1. Selecteer de gewenste verzameling.
 
    U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
 
-   ![cfm-6420-04](assets/cfm-6420-04.png)
+   ![Verzameling selecteren](assets/cfm-assoc-content-02.png)
 
-1. Bevestig (met het vinkje). De verzameling wordt weergegeven als gekoppeld.
+1. Bevestig (met **Select**). De verzameling wordt weergegeven als gekoppeld.
 
-   ![cfm-6420-05](assets/cfm-6420-05.png)
+   ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 
 ## Gekoppelde inhoud bewerken {#editing-associated-content}
 

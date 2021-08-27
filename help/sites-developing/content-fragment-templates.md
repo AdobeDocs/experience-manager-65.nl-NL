@@ -1,8 +1,8 @@
 ---
 title: Sjablonen voor inhoudsfragmenten
-seo-title: Sjablonen voor inhoudsfragmenten
+seo-title: Content Fragment Templates
 description: Sjablonen worden geselecteerd wanneer u een inhoudsfragment maakt en bieden het nieuwe fragment de basisstructuur, het basiselement en de variatie
-seo-description: Sjablonen worden geselecteerd wanneer u een inhoudsfragment maakt en bieden het nieuwe fragment de basisstructuur, het basiselement en de variatie
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: d147bac8-b710-40ed-9664-decb5ffcf8e7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: a430c4de89bde3b907d342106465d3b5a7c75cc8
+exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Sjablonen voor inhoudsfragmenten{#content-fragment-templates}
 
@@ -26,6 +25,10 @@ ht-degree: 4%
 >[Het wordt nu ](/help/assets/content-fragments/content-fragments-models.md) aanbevolen om al uw fragmenten te maken.
 >
 >De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
+
+>[!NOTE]
+>
+>Voorafgaand aan AEM 6.3 werden de Fragments van de Inhoud gecreeerd met het gebruik van malplaatjes in plaats van modellen. Sjablonen zijn niet meer beschikbaar voor het maken van nieuwe fragmenten, maar fragmenten die met een dergelijke sjabloon zijn gemaakt, worden wel ondersteund.
 
 Sjablonen worden geselecteerd wanneer u een inhoudsfragment maakt. Ze bieden het nieuwe fragment de basisstructuur, elementen en variatie. De sjablonen die voor inhoudsfragmenten worden gebruikt, zijn afhankelijk van de Granite Configuration Manager.
 
@@ -52,12 +55,10 @@ De rangorde is (in aflopende volgorde) `/conf`, `/apps`, `/libs`.
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
 >1. Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in `/libs`) onder `/apps`
-   >
-   >
-1. Wijzigingen aanbrengen binnen `/apps`
+>
+>1. Wijzigingen aanbrengen binnen `/apps`
 
 >
-
 
 
 De basisstructuur van een template wordt aangehouden onder:

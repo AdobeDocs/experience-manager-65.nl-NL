@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 16%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -91,6 +91,9 @@ ht-degree: 16%
    + [Editor van element uitbreiden](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
    + [Content Fragments support in [!DNL Assets] HTTP API](assets-api-content-fragments.md)
+   + [GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
+   + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
+   + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
 + Elementen {#administer} beheren
    + [Ondersteunde bestandsindelingen](assets-formats.md)
@@ -130,15 +133,19 @@ ht-degree: 16%
    + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Mappen publiceren naar [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar [!DNL Brand Portal]](brand-portal-publish-collection.md)
-+ Contentfragmenten {#fragments}
++ Contentfragmenten {#content-fragments}
    + [Werken met contentfragmenten](content-fragments/content-fragments.md)
-   + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
+   + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](content-fragments/content-fragments-graphql.md)
+   + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](content-fragments/content-fragments-configuration-browser.md)
    + [Modellen van contentfragmenten](content-fragments/content-fragments-models.md)
+   + [Contentfragmenten beheren](content-fragments/content-fragments-managing.md)
    + [Variaties - Authoring van content voor fragmenten](content-fragments/content-fragments-variations.md)
    + [Aan contentfragmenten gekoppelde content](content-fragments/content-fragments-assoc-content.md)
    + [Metagegevens - Fragmenteigenschappen](content-fragments/content-fragments-metadata.md)
    + [Contentfragmenten - Overwegingen verwijderen](content-fragments/content-fragments-delete.md)
-   + [Inhoudsfragmenten - Markering](content-fragments/content-fragments-markdown.md)
+   + [Markering](content-fragments/content-fragments-markdown.md)
+   + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
+   + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
 + Elementen {#managing} beheren
    + [Digitale middelen beheren](manage-assets.md)

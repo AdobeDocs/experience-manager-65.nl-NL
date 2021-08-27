@@ -1,44 +1,36 @@
 ---
 title: Contentfragmenten - Overwegingen verwijderen
-seo-title: Contentfragmenten - Overwegingen verwijderen
-description: Contentfragmenten - Overwegingen verwijderen
-seo-description: Contentfragmenten - Overwegingen verwijderen
-uuid: e7ac1809-159f-4d02-ad30-dc6c246e8a04
-contentOwner: aheimoz
-topic-tags: content-fragments
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-content-type: reference
-discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
-docset: aem65
-feature: Contentfragmenten
-role: User, Admin
-exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
+feature: Content Fragments
+role: User
+source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 13%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Contentfragmenten - Overwegingen verwijderen{#content-fragments-delete-considerations}
+# Contentfragmenten - Overwegingen verwijderen {#content-fragments-delete-considerations}
+
+Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
 
 ## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
 De capaciteit om inhoud te schrappen is krachtig, maar potentieel gevoelig, met vele industrieën die moeten beperken en controleren hoe deze voorrechten worden verdeeld.
 
-Met betrekking tot het schrappen van toestemmingen, moeten de Fragmenten van de Inhoud op twee niveaus worden overwogen:
+Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud op twee niveaus worden overwogen:
 
 1. **Het inhoudsfragment als één entiteit.**
 
    * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **en een volledig fragment** moet verwijderen.
    * **Machtigingen**: De  [](/help/sites-administering/security.md#actions) machtiging Verwijderen kan worden  [toegewezen via Gebruiker en/of Groepsbeheer](/help/sites-administering/security.md#managing-permissions).
 
-1. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat; bijvoorbeeld variaties, subknooppunten.**
+2. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat; bijvoorbeeld variaties, subknooppunten.**
 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
    * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **zonder dat het is toegestaan een volledig fragment** te verwijderen.
-   * **Machtigingen**: Zie  [Machtigingen vereist voor alleen](/help/assets/content-fragments/content-fragments-delete.md#permissions-required-for-editor-functionality-only) bewerkingsfunctionaliteit.
+   * **Machtigingen**: Zie  [Machtigingen vereist voor alleen](#permissions-required-for-editor-functionality-only) bewerkingsfunctionaliteit.
 
 >[!NOTE]
 >

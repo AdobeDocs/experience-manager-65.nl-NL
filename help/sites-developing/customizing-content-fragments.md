@@ -1,8 +1,8 @@
 ---
 title: Contentfragmenten aanpassen en uitbreiden
-seo-title: Contentfragmenten aanpassen en uitbreiden
+seo-title: Customizing and Extending Content Fragments
 description: Een inhoudsfragment breidt een standaardelement uit.
-seo-description: Een inhoudsfragment breidt een standaardelement uit.
+seo-description: A content fragment extends a standard asset.
 uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
+source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
 workflow-type: tm+mt
-source-wordcount: '2749'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Contentfragmenten aanpassen en uitbreiden{#customizing-and-extending-content-fragments}
 
@@ -42,6 +41,10 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 >[Het wordt nu ](/help/assets/content-fragments/content-fragments-models.md) aanbevolen om al uw fragmenten te maken.
 >
 >De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
+
+>[!NOTE]
+>
+>Voorafgaand aan AEM 6.3 werden de Fragments van de Inhoud gecreeerd met het gebruik van malplaatjes in plaats van modellen. Sjablonen zijn niet meer beschikbaar voor het maken van nieuwe fragmenten, maar fragmenten die met een dergelijke sjabloon zijn gemaakt, worden wel ondersteund.
 
 * Modellen van contentfragmenten:
 
@@ -125,7 +128,7 @@ Zie [Inhoudsfragment - Overwegingen verwijderen](/help/assets/content-fragments/
 * CFM biedt zijn eigen implementaties voor items in de kaart-, kolom- of lijstweergaven; Deze plug-in de bestaande implementaties voor het renderen van de inhoud van Elementen.
 * Verschillende middelencomponenten zijn uitgebreid om rekening te houden met inhoudsfragmenten.
 
-### Inhoudsfragmenten gebruiken in pagina&#39;s {#using-content-fragments-in-pages}
+### Inhoudsfragmenten op pagina&#39;s gebruiken {#using-content-fragments-in-pages}
 
 >[!CAUTION]
 >
@@ -224,9 +227,8 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
    >De AEM vertaalworkflow werkt met `/content`:
    >
    >    * Aangezien de modellen van het inhoudsfragment in `/conf` verblijven, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt de UI-tekenreeksen [internationaliseren](/help/sites-developing/i18n-dev.md).
-      >
-      >    
-   * Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
+   >
+   >    * Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
 
 
 * **Metagegevensschema&#39;s**
@@ -266,7 +268,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    Deze interface vertegenwoordigt:
 
-   * een inhoudsfragmentmodel of een inhoudsfragmentsjabloon op basis waarvan een inhoudsfragment moet worden gemaakt,
+   * een inhoudsfragmentmodel of een fragmentsjabloon voor inhoud op basis waarvan een inhoudsfragment moet worden gemaakt,
    * en (na het maken) de structuurgegevens van dat fragment
 
    Deze informatie kan omvatten:
@@ -384,7 +386,7 @@ Het volgende kan worden aangepast:
    * `ContentFragment`
    * `FragmentTemplate`
 
-### Voorwerpen {#caveats}
+### Caveats {#caveats}
 
 Er zij op gewezen dat:
 
@@ -411,9 +413,9 @@ Zie het volgende:
 
    `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat het niet overlapt met het elementeninhoudspakket.
 
-## Sessies {#edit-sessions} bewerken
+## Sessies bewerken {#edit-sessions}
 
-Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment in een van de editorpagina&#39;s opent. De bewerkingssessie wordt beëindigd wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
+Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie wordt beëindigd wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
 
 ### Vereisten {#requirements}
 
@@ -480,7 +482,7 @@ De mogelijke acties zijn:
 
 ## Voorbeelden {#examples}
 
-### Voorbeeld: Een bestaand inhoudsfragment {#example-accessing-an-existing-content-fragment} openen
+### Voorbeeld: Een bestaand inhoudsfragment openen {#example-accessing-an-existing-content-fragment}
 
 Hiertoe kunt u de bron die de API vertegenwoordigt aanpassen aan:
 
@@ -535,7 +537,7 @@ Als u een auto sparen interval van 5 minuten wilt plaatsen moet u het bezit op u
 
 Zie [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) voor volledige informatie.
 
-## Componenten voor pagina-ontwerp {#components-for-page-authoring}
+## Componenten voor paginaontwerp {#components-for-page-authoring}
 
 Zie voor meer informatie
 

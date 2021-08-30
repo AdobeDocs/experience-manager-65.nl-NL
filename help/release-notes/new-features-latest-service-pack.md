@@ -4,9 +4,9 @@ description: Wat is nieuw in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 738972f73ff3af070eb6b48bff67496ab451a6a7
+source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
 workflow-type: tm+mt
-source-wordcount: '3919'
+source-wordcount: '3928'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 0%
 [!DNL Adobe Experience Manager] 6.5 De Pakken van de Dienst verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
 In dit artikel worden de functies beschreven die zijn opgenomen in het meest recente Service Pack, [belangrijke functies die zijn opgenomen in de vorige 6.5 Service Packs](#key-features-previous-service-packs) en de [belangrijke releases sinds de laatste release van Service Pack](#key-releases-since-last-sp).
-
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -41,13 +40,13 @@ In dit artikel worden de functies beschreven die zijn opgenomen in het meest rec
 
 * [!DNL Experience Manager] breidt de Connected Assets-functionaliteit uit tot het gebruik van  [!DNL Dynamic Media] afbeeldingen in de toepasselijke kerncomponenten. Zie [Aangesloten elementen gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* Wanneer gebruikers afzonderlijke elementen en verzamelingen als een koppeling delen (met het dialoogvenster [!UICONTROL Link Sharing]), kunnen ze kiezen of de ontvanger de oorspronkelijke elementen of hun uitvoeringen of beide mag downloaden.
+* Wanneer gebruikers afzonderlijke elementen en verzamelingen als een koppeling delen (met het dialoogvenster [!UICONTROL Link Sharing]), kunnen ze kiezen of de ontvanger de oorspronkelijke elementen of hun uitvoeringen of beide mag downloaden. Zie [Elementen delen via koppeling](/help/assets/link-sharing.md).
 
-   ![alleen de oorspronkelijke elementen, alleen de uitvoeringen of beide downloaden](/help/assets/assets/share-renditions.png)
+   ![optie om alleen oorspronkelijke elementen, alleen de uitvoeringen of beide te downloaden](/help/release-notes/assets/share-assets-as-link.png)
 
 * Wanneer gebruikers elementen downloaden die met hen als verbinding worden gedeeld, kunnen zij verkiezen om de originele activa, de vertoningen, of allebei te downloaden.
 
-* Beheerders kunnen het aantal subelementen beperken dat [!DNL Experience Manager] genereert voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden.
+* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden.
 
    ![het genereren van subactiva beperken](/help/assets/assets/sub-asset-limit.png)
 
@@ -449,9 +448,9 @@ U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjab
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Toetsreleases sinds [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
+## Toetsreleases sinds [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
 
-Tussen 25 februari 2021 en 27 mei 2021 heeft Adobe naast de servicepacks het volgende uitgebracht:
+Tussen 27 mei 2021 en 26 augustus 2021 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks:
 
 * [!DNL Adobe Experience Manager] als Cloud Service  [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html),  [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html) en  [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 

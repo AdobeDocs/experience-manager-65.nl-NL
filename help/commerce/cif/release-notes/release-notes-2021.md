@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: d1e2a2b11bd4eaece80a2538ddc34ada59e63578
+source-git-commit: b6703f519295eef728d5504360d99de69438064c
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '989'
 ht-degree: 7%
 
 ---
@@ -29,12 +29,38 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Releasedatum: augustus 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021,08,20 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip) |
+| CIF Core-componenten | 2.1.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
+| CIF Venia Reference Site | 2021,08,27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+
+### Wat is er nieuw? {#what-is-new-august}
+
+* De nieuwe interface van de Categoriekiezer voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
+
+   ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
+
+* Betere A11Y-ondersteuning voor CIF Core-componenten
+
+### Bugfixes {#bug-fixes-august}
+
+* Kan categorie filteraccordeon niet sluiten wanneer deze is geopend
+
+* De eigenschap &#39;Call to action text&#39; is verbroken in de productteaser
+
+* CIF JS-fouten tijdens AEM implementatiestap van CS
+
+* Toegang tot onbewerkte producten herstellen voor in kaart gebrachte producten
+
 ## Releasedatum: juli 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
 | CIF-invoegtoepassing | 2021,07,21 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
-| CIF Core-componenten | 1.13.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0) |
+| CIF Core-componenten | 2.0.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | CIF Venia Reference Site | 2021,07,22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### Wat is er nieuw? {#what-is-new-july}

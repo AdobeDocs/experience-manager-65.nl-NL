@@ -1,22 +1,21 @@
 ---
 title: A/B-test voor adaptieve formulieren maken en beheren
-seo-title: A/B-test voor adaptieve formulieren maken en beheren
+seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms integreert met Adobe Target, waardoor A/B-tests kunnen worden uitgevoerd voor adaptieve formulieren om de ervaring van klanten te verbeteren en de conversiesnelheden te verbeteren.
-seo-description: AEM Forms integreert met Adobe Target, waardoor A/B-tests kunnen worden uitgevoerd voor adaptieve formulieren om de ervaring van klanten te verbeteren en de conversiesnelheden te verbeteren.
+seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
 uuid: e258805c-4da8-4c5d-ae91-7bea78a6a71b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 3eaace94bc0499aaebfcd389d4dc97b97c7d9160
+exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1542'
 ht-degree: 0%
 
 ---
-
 
 # A/B-test voor adaptieve formulieren maken en beheren{#create-and-manage-a-b-test-for-adaptive-forms}
 
@@ -36,7 +35,7 @@ Voordat u A/B-tests gaat maken en analyseren op adaptieve formulieren, moet u de
 
 Zorg ervoor dat u een geldig Adobe Target-account hebt om AEM met Target te integreren. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de clientcode, de e-mail die aan de Target-account is gekoppeld en het wachtwoord nodig om verbinding te maken AEM met Target.
 
-De clientcode identificeert de Adobe Target-klantenaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Voordat u verdergaat, moet u ervoor zorgen dat u zich bij [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/) kunt aanmelden.
+De clientcode identificeert de Adobe Target-klantenaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Voordat u verdergaat, meldt u zich aan bij [https://experience.adobe.com/](https://experience.adobe.com/) en geeft u, als u toegang hebt, de optie [!DNL Adobe Target] weer in de sectie [!UICONTROL Quick Access].
 
 ### Doel integreren in AEM Forms {#integrate-target-in-aem-forms}
 
@@ -62,7 +61,7 @@ Als u doel voor het eerst vormt, klik **nu vormen.**
 1. Klik **AEM Forms Target Configuration**.
 1. Selecteer een **Doelframework**.
 1. Geef in het veld **Doel-URL&#39;s** alle URL&#39;s op waarop A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*:&lt;*port*>/ voor AEM Forms-server op OSGi of https://&lt;*hostnaam*>:&lt;*port*/lc/ voor AEM Forms-server op JEE.
-Bedenk dat u een Doel URL voor een publicatieinstantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klik **+** om veelvoudige URLs te specificeren.
+Bedenk dat u een Doel URL voor publiceer instantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klik **+** om veelvoudige URLs te specificeren.
 
 1. Klik **Opslaan**.
 
@@ -81,7 +80,6 @@ Naast de jreliëfserver kunt u ook het jvm-argument Dabtesting.enabled=true toev
 >[!NOTE]
 >
 >Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Zie [A/B-test bijwerken](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p) voor informatie over het bijwerken van A/B-tests.
-
 
 ## Soorten publiek maken binnen AEM {#create-audiences-within-aem}
 
@@ -111,7 +109,7 @@ Voer de volgende stappen uit om een A/B-test voor een adaptief formulier te make
 1. Klik op het gereedschap **Selecteer** op de werkbalk en selecteer het aangepaste formulier.
 1. Klik **Meer** in toolbar en selecteer **A/B het Testen** vormen. De Configure A/B testende pagina opent.
 
-[ ![A/B testconfiguratiepagina voor adaptieve formulieren](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
+[ ](assets/ab-test-configure-1.png)
 
 1. Geef een **Naam activiteit** op voor de A/B-test.
 
@@ -145,13 +143,13 @@ U kunt het publiek bijwerken en verspreidingen van een lopende test A/B ervaren.
 1. Werk het publiek en ervaringsprestaties bij, indien nodig.
 1. Klik **Update**.
 
-## A/B-testrapport {#view-and-analyze-a-b-test-report} weergeven en analyseren
+## A/B-testrapport weergeven en analyseren {#view-and-analyze-a-b-test-report}
 
 Zodra u de A/B test hebt toegestaan om voor de gewenste periode te lopen, kunt u een rapport produceren en controleren welke ervaring in betere omzetting heeft geresulteerd. U kunt de beter presterende ervaring declareren als winnaar of een andere A/B-test uitvoeren. Voer hiertoe de volgende stappen uit:
 
 1. Selecteer het adaptieve formulier, klik op **Meer** en klik vervolgens op **A/B-testrapport**. Het rapport wordt weergegeven.
 
-[ ![A/B Testrapport](assets/ab-test-report-2.png)](assets/ab-test-report-3.png)
+[ ](assets/ab-test-report-3.png)
 
 1. Analyseer het rapport en controleer of u genoeg gegevenspunten hebt om één van de beter presterende ervaringen als winnaar te verklaren. U kunt ervoor kiezen om dezelfde A/B-test langer te blijven uitvoeren of een winnaar te declareren en de A/B-test te beëindigen.
 1. Als u een winnaar wilt declareren en de A/B-test wilt beëindigen, klikt u op de knop **A/B-test beëindigen** op het rapportagedashboard. In een dialoogvenster wordt u gevraagd een van de twee ervaringen als winnaar op te geven. Kies een winnaar en bevestig om de A/B-test te beëindigen.

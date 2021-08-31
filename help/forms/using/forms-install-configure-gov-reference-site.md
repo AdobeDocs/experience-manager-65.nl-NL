@@ -1,20 +1,19 @@
 ---
-title: De referentiesite Web.Gov en Web.Finance instellen en configureren
-seo-title: De Web.Gov-referentiesite instellen en configureren
+title: De referentiesite We.Gov en We.Finance instellen en configureren
+seo-title: Set up and configure We.Gov reference site
 description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
-seo-description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
+seo-description: Install, configure, and customize an AEM Forms demo package.
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 0560eb8e3c127964920827609a9982acf07b515f
+exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '4728'
+source-wordcount: '4688'
 ht-degree: 1%
 
 ---
-
 
 # De referentiesite We.Gov en We.Finance instellen en configureren {#set-up-and-configure-we-gov-reference-site}
 
@@ -24,7 +23,7 @@ ht-degree: 1%
 
 Dit pakket is gemaakt voor **AEM Forms 6.4 OSGI Author**, is getest en wordt daarom ondersteund in de volgende platformversies:
 
-| AEM | AEM FORMS PACKAGE VERSION | STATUS |
+| AEM | AEM Forms PACKAGE VERSION | STATUS |
 |---|---|---|
 | 6,4 | 5,0,86 | **Ondersteund** |
 | 6,5 | 6,0,80 | **Ondersteund** |
@@ -77,7 +76,7 @@ De elementen die in dit pakket zijn opgenomen, zijn:
 * Voorbeeld (in geheugen) Apache Derby Database
 * Apache Derby Data Source (voor gebruik met formuliergegevensmodel)
 
-## Installatie demopakket {#demo-package-installation}
+## Installatie van demopakket {#demo-package-installation}
 
 Deze sectie bevat informatie over het installeren van het demopakket.
 
@@ -97,7 +96,7 @@ Deze sectie bevat informatie over het installeren van het demopakket.
 1. De installatie kan worden voltooid.
 1. Navigeer naar *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* om te controleren of de installatie is gelukt.
 
-### Uit een lokaal ZIP-bestand {#from-a-local-zip-file}
+### Vanuit een lokaal ZIP-bestand {#from-a-local-zip-file}
 
 1. Download en zoek het bestand **we-gov-forms.pkg.all-&lt;version>.zip**.
 1. Navigeer naar *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*.
@@ -220,7 +219,7 @@ Deze sectie bevat informatie en instructies over de Adobe Sign Cloud Configurati
 1. Klik op &quot;Verbinding maken met Adobe Sign&quot;.
 1. Klik na een geslaagde verbinding op &quot;Opslaan en sluiten&quot; om de integratie te voltooien.
 
-### (Optioneel) MS Dynamics cloud configuration {#ms-dynamics-cloud-configuration}
+### (Optioneel) Configuratie van de cloud voor MS Dynamics {#ms-dynamics-cloud-configuration}
 
 Deze sectie bevat details en instructies over de Configuratie van de Wolk van de Dynamica van MS.
 
@@ -229,7 +228,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 1. [Configuratie Microsoft Dynamics OData](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
 1. [Microsoft Dynamics voor AEM Forms configureren](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
-#### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
+#### MS Dynamics OData cloudservice {#ms-dynamics-odata-cloud-service}
 
 1. Ga naar:
 
@@ -245,7 +244,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
 1. Navigeer naar het tabblad &#39;Verificatie-instellingen&#39;.
 1. Voer de volgende gegevens in:
 
-   1. **Hoofdmap van service:** bijvoorbeeld https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+   1. **Hoofdmap van service:** bijvoorbeeld  `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Type verificatie:** OAuth 2.0
    1. **Verificatie-instellingen**  (zie de instellingen voor de wolkenconfiguratie van  [MS Dynamics ](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) om deze informatie te verzamelen):
 
@@ -256,13 +255,13 @@ Deze sectie bevat details en instructies over de Configuratie van de Wolk van de
       1. Toegang krijgen tot token-URL, bijvoorbeeld [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Toepassingsgebied voor autorisatie - **openid**
       1. Verificatiekoptekst - **Machtigingsdrager**
-      1. Bron - bijvoorbeeld [https://msdynamicsserver.api.crm3.dynamics.com](https://msdynamicsserver.api.crm3.dynamics.com)
+      1. Bron - bijvoorbeeld `https://msdynamicsserver.api.crm3.dynamics.com`
    1. Klik op &quot;Verbinding maken met OAuth&quot;.
 
 
 1. Na succesvolle verificatie klikt u op &quot;Opslaan en sluiten&quot; om de integratie te voltooien.
 
-#### MS Dynamics cloud configuration settings {#dynamicsconfig}
+#### Configuratie-instellingen voor MS Dynamics-cloud {#dynamicsconfig}
 
 De stappen die in deze sectie worden beschreven zijn inbegrepen om u van Cliënt ID, Geheime cliënt en details van uw instantie van de Cloud van de Dynamica van MS te helpen de plaats bepalen.
 
@@ -284,13 +283,13 @@ De stappen die in deze sectie worden beschreven zijn inbegrepen om u van Cliënt
 1. Klik rechts onderaan op Aanpassingen en Developer Resources.
 1. Hier vindt u de hoofdmap van de service: bijv.
 
-   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. Hier vindt u meer informatie over de URL van het token Vernieuwen en Toegangstoken:
 
    *[https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app](https://docs.microsoft.com/en-us/rest/api/datacatalog/authenticate-a-client-app)*
 
-#### Forms-gegevensmodel testen (dynamiek) {#testing-the-form-data-model}
+#### Het Forms-gegevensmodel testen (Dynamics) {#testing-the-form-data-model}
 
 Nadat de cloudconfiguratie is voltooid, wilt u mogelijk het gegevensmodel van het formulier testen.
 
@@ -355,7 +354,7 @@ Deze sectie bevat details en instructies over de Configuratie van Adobe Analytic
 
 * [AEM Forms-analyserapporten weergeven en begrijpen](view-understand-aem-forms-analytics-reports.md)
 
-### Adobe Analytics cloud service configuration {#adobe-analytics-cloud-service-configuration}
+### Configuratie van Adobe Analytics-cloudservice {#adobe-analytics-cloud-service-configuration}
 
 Dit pakket wordt vooraf geconfigureerd voor verbinding met Adobe Analytics. De onderstaande stappen zijn beschikbaar om deze configuratie te kunnen bijwerken.
 
@@ -416,7 +415,7 @@ Beheerders kunnen gebruikers AEM analysebevoegdheden verlenen door de volgende h
 
 ### Adobe Analytics-rapportage {#adobe-analytics-reporting}
 
-#### Rapportering {#view-adobe-analytics-sites-reporting} Adobe Analytics-sites weergeven
+#### Adobe Analytics-sites weergeven {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
 AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics-cloudconfiguratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip`-pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
@@ -444,7 +443,7 @@ AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics-cloudconfigu
 
    ![Weergave van nieuwe kolommen](assets/new_columns_display.jpg)
 
-#### Rapportering van Adobe Analytics-formulieren weergeven {#view-adobe-analytics-forms-reporting}
+#### Rapporten van Adobe Analytics-formulieren weergeven {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
 AEM Forms Analytics-gegevens zijn offline of zonder Adobe Analytics-cloudconfiguratie beschikbaar als het `we-gov-forms.ui.analytics-<version>.zip`-pakket is geïnstalleerd, maar voor AEM Sites-gegevens is een actieve cloudconfiguratie vereist.
@@ -490,12 +489,12 @@ Manager linksboven > Gereedschappen > Beveiliging > Adobe IMS-configuratie.
 
 1. Zorg ervoor dat u het certificaat downloadt.
 
-1. Ga niet verder met het restant van de configuratie - overzichtssectie [Creërend Integratie in Adobe I/O](#create-integration-adobeio)
+1. Ga niet verder met de rest van de configuratie - overzichtssectie [Creërend Integratie in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
-Het in deze sectie gemaakte certificaat wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
+Het certificaat dat in deze sectie wordt gemaakt, wordt gebruikt om de integratieservice in Adobe I/O te maken. Zodra de gebruikers in de integratieservice hebben gecreeerd kunnen de gebruikers die informatie van Adobe I/O gebruiken om de configuratie te beëindigen.
 
-#### Integratie maken in Adobe I/O {#create-integration-adobeio}
+#### Integratie in Adobe I/O maken {#create-integration-adobeio}
 
 Zorg ervoor u de capaciteit hebt om een integratie binnen uw domein van de Adobe tot stand te brengen als u niet uw systeembeheerder contacteert dit.
 
@@ -519,11 +518,11 @@ Zorg ervoor u de capaciteit hebt om een integratie binnen uw domein van de Adobe
 
    ![Nieuwe integratie maken](assets/aftia-create-new-integration.jpg)
 
-#### Het creëren van Deel 2 van de Configuratie IMS {#create-ims-config-part-next}
+#### IMS-configuratiedeel 2 maken {#create-ims-config-part-next}
 
 Nu u een integratie hebt gecreeerd laten ons de installatie van de configuratie voltooien IMS.
 
-1. Klik op uw integratie in Adobe I/O om de verbindingsgegevens beschikbaar te maken.
+1. Klik op de integratie in Adobe I/O om de verbindingsgegevens weer te geven.
 
 1. Navigeer naar de IMS-configuratie in AEM (Gereedschappen > Beveiliging > IMS)
 
@@ -533,7 +532,7 @@ Nu u een integratie hebt gecreeerd laten ons de installatie van de configuratie 
 
 1. Voer de API-sleutel in.
 
-1. Voer het clientgeheim in (klik op Openen in de Integratie in Adobe I/O om dit te onthullen).
+1. Ga het cliëntgeheim in (moet klikken blootstellen op de Integratie in Adobe I/O om het te onthullen).
 
 1. Klik op het tabblad JWT in Adobe I/O om de JWT-payload op te halen en plak deze in de payload van de IMS-configuratie.
 
@@ -543,7 +542,7 @@ Nu u een integratie hebt gecreeerd laten ons de installatie van de configuratie 
 
    ![Gezondheidsbevestiging](assets/aftia-health-confirmation.jpg)
 
-#### Cloud Configuration (Wij.Gov AFC Production) {#configure-cloud-configuration} configureren
+#### Cloud Configuration (Wij.Gov AFC-productie) configureren {#configure-cloud-configuration}
 
 Nadat de IMS-configuratie is voltooid, kunnen we de cloudconfiguratie in AEM bekijken. Als de configuratie niet bestaat, gebruikt u de volgende stappen om de wolkenconfiguratie in AEM tot stand te brengen:
 
@@ -573,7 +572,7 @@ Nadat de IMS-configuratie is voltooid, kunnen we de cloudconfiguratie in AEM bek
 
    * Zie [De cloudservice configureren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service) voor meer informatie over deze opties.
 
-#### Cloud Configuration (Wij.Finance AFC Production) {#configure-cloud-configuration-wefinance} configureren
+#### Cloud Configuration (wij.Finance AFC Production) configureren {#configure-cloud-configuration-wefinance}
 
 Zodra de configuratie IMS volledig is, kunnen wij te werk gaan om de wolkenconfiguratie in AEM tot stand te brengen.
 
@@ -647,7 +646,7 @@ De service Automatede form conversion bevat bepaalde [best practices, bekende co
 
 1. Zorg ervoor dat de sjabloonmap jcr:read voor iedereen machtiging heeft ingeschakeld, anders kan de gebruiker de sjabloon niet lezen uit de opslagplaats en mislukt de conversie.
 
-## Aanpassingen van demopakket {#demo-package-customizations}
+## Aanpassing van demopakket {#demo-package-customizations}
 
 Deze sectie bevat instructies voor het aanpassen van de demo.
 
@@ -689,7 +688,7 @@ Zie Pagina-inhoud bewerken voor meer informatie:
 
 [Paginacontent bewerken](../../sites-authoring/editing-content.md)
 
-### Aanpassing van sitepagina&#39;s {#sites-pages-customization}
+### Aanpassing sitepagina&#39;s {#sites-pages-customization}
 
 Alle sitepagina&#39;s zijn beschikbaar via: *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*
 
@@ -703,7 +702,7 @@ Pagina&#39;s die in dit pakket zijn opgenomen, ondersteunen ook het stijlsysteem
 
 U kunt ook naar [Templates customization style system](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) voor documentatie over ondersteunde stijlen verwijzen.
 
-### Aanpassing van aangepaste formulieren {#adaptive-forms-customization}
+### Aanpassing van adaptieve formulieren {#adaptive-forms-customization}
 
 Alle adaptieve formulieren zijn beschikbaar op:
 
@@ -732,11 +731,11 @@ Vanwege bepaalde beperkingen bevat deze workflow diverse scripts en aangepaste s
 
 Alle Java-code voor workflowstap bevindt zich in de bundel **we-gov-forms.core-&lt;version>.jar**.
 
-## Demoverwegingen en bekende problemen {#demo-considerations-and-known-issues}
+## Demomogelijkheden en bekende problemen {#demo-considerations-and-known-issues}
 
 Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijdens het demonstratieproces speciale aandacht behoeven.
 
-### Demoverwegingen {#demo-considerations}
+### Demooverwegingen {#demo-considerations}
 
 * Conform AGRS-159, zorg ervoor dat de naam (eerste, midden, en laatste) van het contact in de Aangepaste Vorm van de Inschrijving wordt gebruikt uniek is.
 * Met het adaptieve inschrijvingsformulier wordt de e-mail van de Adobe Sign verzonden naar de e-mail die is opgegeven in het e-mailveld van het formulier. Dit e-mailadres mag niet hetzelfde e-mailadres zijn als het e-mailadres dat wordt gebruikt om de configuratie van de Adobe Sign-cloud te configureren.
@@ -746,9 +745,9 @@ Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijde
 * (AGRS-120) De component van de Navigatie van de Plaats steunt momenteel geen genestelde kindpagina&#39;s die meer dan 2 niveaus diep zijn.
 * (AGRS-159) De huidige FDM van de Dynamiek van MS moet twee handelingen eerst uitvoeren, de Adaptieve gegevens van de Vorm van de Inschrijving aan Dynamiek POSTEN, en dan het gebruikersverslag ophalen om identiteitskaart van het Contact terug te winnen. In zijn huidige staat, zal het halen van identiteitskaart van het Contact ontbreken als meer dan twee gebruikers met de zelfde naam in Dynamiek aanwezig zijn, die niet de Aangepaste Vorm van de Inschrijving zal toestaan om voor te leggen.
 
-## Toegankelijkheidstest configureren {#configure-accessibility-testing}
+## Toegankelijkheidstests configureren {#configure-accessibility-testing}
 
-### Chrome voor toegankelijkheidstest inschakelen op {#enable-chrome-add-on}
+### Chrome voor toegankelijkheidstest inschakelen bij {#enable-chrome-add-on}
 
 Als u toegankelijkheidstests eerst wilt uitvoeren, moet u de Chrome-plug-in installeren. Deze vindt u [hier](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
 

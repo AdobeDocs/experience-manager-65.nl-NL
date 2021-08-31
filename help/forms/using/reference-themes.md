@@ -1,25 +1,24 @@
 ---
 title: Referentiethema's
-seo-title: Referentiethema's
+seo-title: Reference Themes
 description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
-seo-description: AEM Forms biedt adaptieve formulierthema's die u kunt ophalen bij Softwaredistributie en gebruiken om een formulier op te maken.
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: 3c6bd309-aa5a-4953-91ed-25ed5ba5671a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1dfc8fa91d3e5ae8ca49cf1f3cb739b59feb18cf
+exl-id: f6c24894-c322-4c44-b001-8978954d6e53
+source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
-
 # Referentiethema&#39;s{#reference-themes}
 
-[Met ](../../forms/using/themes.md) thema&#39;s kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema, kunt u de volgende thema&#39;s krijgen door het [AEM-FORMS-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) pakket te installeren:
+[Met ](../../forms/using/themes.md) thema&#39;s kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema kunt u de volgende thema&#39;s ophalen door het [AEM Forms-invoegpakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) te installeren:
 
 * Beryl
 * Exec

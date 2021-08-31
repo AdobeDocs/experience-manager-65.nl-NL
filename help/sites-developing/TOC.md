@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
-feature: Ontwikkeling
+feature: Developing
 role: Developer
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: 1eb2ef06ed0541026ff3ba436dfab0d261af7356
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '909'
 ht-degree: 6%
 
 ---
@@ -119,7 +119,7 @@ ht-degree: 6%
       + [Samengestelde onderdelen in SPA](spa-composite-component.md)
       + [Referentiematerialen SPA](spa-reference-materials.md)
    + [HTTP-API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-   + [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+   + [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
    + [Ervaringsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Ontwikkelingshulpmiddelen{#devtools}

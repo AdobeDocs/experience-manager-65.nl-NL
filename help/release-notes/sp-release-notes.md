@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 8c345f5f78ca5f9e8981611ef377e23309fcbe3d
+source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
 workflow-type: tm+mt
 source-wordcount: '4248'
 ht-degree: 0%
@@ -70,8 +70,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
    * [!DNL Open Office 4.1.10]
    * [!DNL Microsoft Office 2019]
    * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8.3]
-   * [!DNL Apache Geode cache solution]
+   * [!DNL RHEL8]
 
 Voor een lijst van alle eigenschappen en verhogingen die in [!DNL Experience Manager] 6.5.10.0 worden geïntroduceerd, zie [nieuw in  [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -290,7 +289,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Vertraging bij de weergave van tekens op het tabblad [!UICONTROL Data] en in de HTML-lettertypevoorvertoning (NPR-37020).
 
-* Wanneer u een tekstdocumentfragment bewerkt, worden de nieuwe woorden weergegeven als HTML-tags nadat het fragment is opgeslagen (NPR-36837).
+* Wanneer u een tekstdocumentfragment bewerkt, worden de nieuwe woorden na het opslaan van het fragment weergegeven als HTML-tags (NPR-36837).
 
 * Kan de letters die zijn opgeslagen als concepten niet weergeven (NPR-36816).
 
@@ -455,7 +454,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API gebruikt authentificatie via Adobe IMS en [!DNL Adobe I/O] en steunt de groeiende rol van de Starten van Adobe aan instrument [!DNL Experience Manager] pagina&#39;s voor analyse en verpersoonlijking, de opt-in tovenaar functioneel irrelevant is. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
+| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API maakt gebruik van verificatie via Adobe IMS en [!DNL Adobe I/O] en ondersteunt de groeiende rol van Adobe Launch om [!DNL Experience Manager]-pagina&#39;s te instrumenteren voor analyse en personalisatie. De wizard Optie is functioneel niet relevant. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen door Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}

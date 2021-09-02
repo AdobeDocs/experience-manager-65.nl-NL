@@ -1,8 +1,8 @@
 ---
 title: Documentuitvoerstromen maken
-seo-title: Documentuitvoerstromen maken
+seo-title: Creating Document Output Streams
 description: Met de uitvoerservice kunt u documenten converteren als PDF (inclusief PDF/A-documenten), PostScript, Printer Control Language (PCL) en Zebra - ZPL, Intermec - IPL, Datamax - DPL en TecToshiba - TPCL-labelindelingen.
-seo-description: Met de uitvoerservice kunt u documenten converteren als PDF (inclusief PDF/A-documenten), PostScript, Printer Control Language (PCL) en Zebra - ZPL, Intermec - IPL, Datamax - DPL en TecToshiba - TPCL-labelindelingen.
+seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
 uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
+source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
 workflow-type: tm+mt
-source-wordcount: '19045'
+source-wordcount: '19016'
 ht-degree: 0%
 
 ---
 
-
-# Uitvoerstromen van document maken {#creating-document-output-streams}
+# Documentuitvoerstromen maken  {#creating-document-output-streams}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
@@ -86,7 +85,7 @@ Met de Forms-service kunt u een interactief PDF-formulier maken waarin gebruiker
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een PDF-document te maken:
 
@@ -374,11 +373,11 @@ Een PDF-document maken met de Output API (webservice):
 
    Zie ook
 
-   [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
+[Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-   [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-   [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -402,13 +401,13 @@ Wanneer een PDF/A-document in Acrobat wordt geopend, wordt een bericht weergegev
 
 >[!NOTE]
 >
->De AIR-website heeft een sectie met veelgestelde vragen over PDF/A die u kunt openen op [https://www.aiim.org/documents/standards/19005-1_FAQ.pdf](https://www.aiim.org/documents/standards/19005-1_FAQ.pdf).
+>De AIR-website heeft een sectie met veelgestelde vragen over PDF/A die u kunt openen op [https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om een PDF/A-document te maken:
 
@@ -631,7 +630,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Documenten in Content Services (afgekeurd) doorgeven aan de Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
+## Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
 De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document`-object met het formulierontwerp doorgeven aan de uitvoerservice. De uitvoerservice geeft vervolgens het formulierontwerp weer dat zich in het object `com.adobe.idp.Document` bevindt.
 
@@ -643,7 +642,7 @@ U kunt Loan.xdp programmatically terugwinnen van de Diensten van de Inhoud (afge
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
 
-### Overzicht van stappen {#summary_of_steps-2}
+### Overzicht van de stappen {#summary_of_steps-2}
 
 Als u een document dat is verkregen van Content Services (afgekeurd) wilt doorgeven aan de service Uitvoer, voert u de volgende taken uit:
 
@@ -746,7 +745,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documenten doorgeven aan de uitvoerservice met de API {#pass-documents-to-the-output-service-using-the-web-service-api} voor webservices
+### Documenten doorgeven aan de uitvoerservice met behulp van de webservice-API {#pass-documents-to-the-output-service-using-the-web-service-api}
 
 Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de Output-service en Content Services (afgekeurd) API (webservice):
 
@@ -843,7 +842,7 @@ U kunt op twee manieren een PDF maken op basis van een XDP-bestand in de opslagp
 >
 >Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
 
-### Overzicht van stappen {#summary_of_steps-3}
+### Overzicht van de stappen {#summary_of_steps-3}
 
 Voer de volgende taken uit om een document dat is verkregen van de AEM Forms-opslagplaats door te geven aan de Output-service:
 
@@ -891,7 +890,7 @@ U kunt het niet-interactieve formulier opslaan als een PDF-bestand. Het formulie
 
 ResourceRepositoryClient
 
-### Documenten in de opslagplaats doorgeven aan de uitvoerservice met de Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Documenten in de opslagplaats doorgeven aan de uitvoerservice met behulp van de Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van de Output-service en de Repository-API (Java):
 
@@ -956,7 +955,7 @@ Voordat u *PDF-documenten maakt met behulp van Fragments*, is het raadzaam beken
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-4}
+### Overzicht van de stappen {#summary_of_steps-4}
 
 Voer de volgende stappen uit om een PDF-document te maken op basis van fragmenten:
 
@@ -1164,7 +1163,7 @@ Met de service Uitvoer kunt u XML-gegevens samenvoegen met een formulierontwerp 
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-5}
+### Overzicht van de stappen {#summary_of_steps-5}
 
 Voer de volgende stappen uit om naar een bestand af te drukken:
 
@@ -1363,13 +1362,13 @@ Met de Output-service kunt u XML-gegevens samenvoegen met een formulierontwerp e
 
 >[!NOTE]
 >
->Om aan te tonen hoe te om een drukstroom naar een netwerkprinter te verzenden, verzendt deze sectie een de drukstroom van PostScript naar een netwerkprinter door het SharedPrinter printerprotocol te gebruiken.
+>In deze sectie wordt een PostScript-afdrukstroom naar een netwerkprinter verzonden met behulp van het SharedPrinter-printerprotocol om te tonen hoe u een afdrukstream naar een netwerkprinter verzendt.
 
 >[!NOTE]
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-6}
+### Overzicht van de stappen {#summary_of_steps-6}
 
 Voer de volgende stappen uit om een afdrukstroom naar een netwerkprinter te verzenden:
 
@@ -1569,7 +1568,7 @@ Een afdrukstream naar een netwerkprinter verzenden met de Output API (Java):
    >
    >De methode `sendToPrinter` is toegevoegd aan de AEM Forms API in versie 8.2.1.
 
-### Een afdrukstroom naar een printer verzenden met de webservice-API {#send-a-print-stream-to-a-printer-using-the-web-service-api}
+### Een afdrukstream naar een printer verzenden met de webservice-API {#send-a-print-stream-to-a-printer-using-the-web-service-api}
 
 Een afdrukstroom naar een netwerkprinter verzenden met de Output API (webservice):
 
@@ -1709,7 +1708,7 @@ Het XML-element dat elk gegevensrecord start en beëindigt, is `LoanRecord`. Naa
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-7}
+### Overzicht van de stappen {#summary_of_steps-7}
 
 Voer de volgende stappen uit om meerdere PDF-bestanden te maken op basis van een XML-gegevensbron:
 
@@ -1951,7 +1950,7 @@ Daarnaast kan de Output-service documentpakketten genereren, waarbij de gegevens
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-8}
+### Overzicht van de stappen {#summary_of_steps-8}
 
 Voer de volgende stappen uit om de uitvoerservice op te dragen de zoekregels te gebruiken tijdens het genereren van een document:
 
@@ -2198,7 +2197,7 @@ Maak zoekregels met de Output API (webservice):
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## PDF-documenten {#flattening-pdf-documents} samenvoegen
+## PDF-documenten afvlakken {#flattening-pdf-documents}
 
 Met de service Uitvoer kunt u een interactief PDF-document transformeren naar een niet-interactieve PDF. Met een interactief PDF-document kunnen gebruikers gegevens in de PDF-documentvelden invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt *afvlakking* genoemd. Wanneer een PDF-document wordt samengevoegd, kan een gebruiker de gegevens in de documentvelden niet wijzigen. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd.
 
@@ -2213,7 +2212,7 @@ Als u probeert een PDF af te vlakken die een niet-interactief PDF-document is, o
 >
 >Voor meer informatie over de dienst van de Output, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-9}
+### Overzicht van de stappen {#summary_of_steps-9}
 
 Voer de volgende stappen uit om een interactief PDF-document af te vlakken naar een niet-interactief PDF-document:
 

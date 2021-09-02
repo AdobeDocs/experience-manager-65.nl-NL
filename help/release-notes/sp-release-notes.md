@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f9b53df7d235fa6be2cee8c05071790114a91da1
+source-git-commit: d107a31ff109be6ae848eef5d3102f63983fd120
 workflow-type: tm+mt
-source-wordcount: '4248'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -454,10 +454,13 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API maakt gebruik van verificatie via Adobe IMS en [!DNL Adobe I/O] en ondersteunt de groeiende rol van Adobe Launch om [!DNL Experience Manager]-pagina&#39;s te instrumenteren voor analyse en personalisatie. De wizard Optie is functioneel niet relevant. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
+| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API gebruikt authentificatie via Adobe IMS en [!DNL Adobe I/O] en steunt de groeiende rol van de Starten van Adobe aan instrument [!DNL Experience Manager] pagina&#39;s voor analyse en verpersoonlijking, de opt-in tovenaar functioneel irrelevant is. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen door Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}
+
+* (Alleen voor JBoss in Microsoft Windows) Als u de service PDF maken wilt blijven gebruiken op [!DNL AEM Forms on JEE], downloadt u [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) van Softwaredistributie en kopieert u de map die beschikbaar is in het Zip-bestand naar de volgende locatie:
+   `[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
 
 * Aangezien [!DNL Microsoft Windows Server 2019] [!DNL MySQL 5.7] en [!DNL JBoss EAP 7.1] niet ondersteunt, ondersteunt [!DNL Microsoft Windows Server 2019] geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 

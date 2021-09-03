@@ -4,9 +4,9 @@ description: Wat is nieuw in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 496516f7f4b0e59bbfdae4cbe061a793f28449d2
+source-git-commit: 5dfce89b2c03625e5f93fdcfaafd91d1ee77f476
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4040'
 ht-degree: 0%
 
 ---
@@ -68,15 +68,19 @@ In dit artikel worden de functies beschreven die zijn opgenomen in het meest rec
 
 * **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-typevariabele**: U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. Met de letterlijke optie kunt u een JSON opgeven in de vorm van een tekenreeks.
 
-* [Updates](../forms/using/aem-forms-jee-supported-platforms.md) van Platform:  [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
-   * [!DNL Adobe Acrobat 2020]
-   * [!DNL Ubuntu 20.04]
-   * [!DNL Open Office 4.1.10]
-   * [!DNL Microsoft Office 2019]
-   * [!DNL Microsoft Windows Server 2019]
-   * [!DNL RHEL8]
-
 * Toegevoegde ondersteuning voor `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
+
+<!--
+
+* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+  * [!DNL Adobe Acrobat 2020]
+  * [!DNL Ubuntu 20.04]
+  * [!DNL Open Office 4.1.10]
+  * [!DNL Microsoft Office 2019]
+  * [!DNL Microsoft Windows Server 2019]
+  * [!DNL RHEL8]
+
+  -->
 
 ## Belangrijkste kenmerken in vorige [!DNL Experience Manager] 6.5-servicepacks {#key-features-previous-service-packs}
 

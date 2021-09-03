@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: a3d52ecf9284ba22cac3739ba543e5dd5c855331
+source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
 workflow-type: tm+mt
-source-wordcount: '4077'
+source-wordcount: '4117'
 ht-degree: 0%
 
 ---
@@ -272,8 +272,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
-
+>Met het servicepakket kunt u [!DNL AEM Forms] uitvoeren op de meest recente serverbesturingssystemen, toepassingsservers en databases. Het brengt ook sommige eigenschappen beschikbaar op Cloud Service aan het milieu op-gebouw en verstrekt moeilijke situaties voor klant gemelde kwesties. [!DNL AEM Forms] op OSGi de dienstpak is beschikbaar om te downloaden en te installeren. [!DNL AEM Forms on JEE]  Service Pack is beschikbaar op 9 september 2021.
 
 **Adaptieve Forms**
 
@@ -472,7 +471,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API gebruikt authentificatie via Adobe IMS en [!DNL Adobe I/O] en steunt de groeiende rol van de Starten van Adobe aan instrument [!DNL Experience Manager] pagina&#39;s voor analyse en verpersoonlijking, de opt-in tovenaar functioneel irrelevant is. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
+| Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API maakt gebruik van verificatie via Adobe IMS en [!DNL Adobe I/O] en ondersteunt de groeiende rol van Adobe Launch om [!DNL Experience Manager]-pagina&#39;s te instrumenteren voor analyse en personalisatie. De wizard Optie is functioneel niet relevant. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
 | Connectors | De Adobe JCR-connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen door Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}

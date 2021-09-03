@@ -1,22 +1,26 @@
 ---
 title: Geavanceerde URL-configuraties
 description: Leer hoe u de URL's voor product- en categoriepagina's aanpast. Hiermee kunnen implementaties URL's optimaliseren voor zoekprogramma's en detectie bevorderen.
-sub-product: Handel
+sub-product: Commerce
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: dbd38aa75caa7c3c2feee79702ab85ab397eb583
+source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 2%
+source-wordcount: '784'
+ht-degree: 4%
 
 ---
 
 # Geavanceerde URL-configuraties {#url}
+
+>[!NOTE]
+>
+> SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM projecten rekening worden gehouden met de bezorgdheid van de ZOO. Lees [SEO en URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) voor meer informatie.
 
 [AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) componenten biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). In de volgende video ziet u hoe u de `UrlProvider`-service en functies van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) configureert om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
 

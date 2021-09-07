@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 7d727f4e3e71fac241ed1409caf0fa19355354b9
+source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3471'
 ht-degree: 0%
 
 ---
@@ -185,7 +185,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>R: Beperkte ondersteuning</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.19 </td>
+   <td>MySQL 5.7.34 </td>
    <td>-</td>
    <td>R: Beperkte ondersteuning</td>
   </tr>  
@@ -277,14 +277,29 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Ondersteuningsniveau</strong></p> </th>
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
-  </tr>   
-  <tr>
-   <td>Microsoft Windows Server 2016 (64-bits)</td>
+  </tr>
+   <tr>
+   <td>Microsoft Windows Server 2019 (64-bits)</td>
    <td>A: Ondersteund</td>
    <td>Servicepacks en kritieke updates</td>
-  </tr>  
+  </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)</td>
+   <td>Ubuntu 20,04</td>
+   <td>A: Ondersteund</td>
+   <td>Servicepacks en kritieke updates</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2016 (64-bits) (afgekeurd)</td>
+   <td>A: Ondersteund</td>
+   <td>Servicepacks en kritieke updates</td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 8 (Kernel 4.x) (64-bits)</p> </td>
+   <td><p>A: Ondersteund</p> </td>
+   <td><p>Kleine releases, cumulatieve updates en kritieke updates</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits) (afgekeurd)</td>
    <td><p>A: Ondersteund</p> </td>
    <td><p>Kleine releases, cumulatieve updates en kritieke updates</p> </td>
   </tr>
@@ -432,33 +447,57 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
   <tr>
    <th><p><strong>Product</strong></p> </th>
    <th><p><strong>Ondersteunde indelingen voor conversie naar PDF</strong></p> </th>
-  </tr>  
+  </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 klassieke </a> tracklatest-versie</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 klassieke </a> tracklatest-versie</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
-  </tr> 
+  </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 klassieke </a> tracklatest-versie (afgekeurd)</td>
+   <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2019</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2016 (afgekeurd)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
    <td>WordPerfect X7</td>
    <td>WP, WPD</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft® Office Visio 2019<br /> </td>
    <td>VSD, VSDX</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft® Office Visio 2016 (Afgekeurd)<br /> </td>
+   <td>VSD, VSDX</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft® Publisher 2016 (afgekeurd)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
    <td>MPP</td>
-  </tr>  
+  </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>Microsoft® Project 2016 (Afgekeurd)<br /> </td>
+   <td>MPP</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.10</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF en TXT</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.2 (afgekeurd)</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXC, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, afbeeldingsindelingen (BMP, GIF, JPEG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF en TXT</td>
   </tr>  
  </tbody>
@@ -470,7 +509,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >
 >Daarnaast:
 >
->* PDF Generator vereist 32-bits versie van [Acrobat 2017 versie 17.011.30078 of hoger](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) om de conversie uit te voeren.
+>* PDF Generator vereist 32-bits versie van [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
 >* PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft Office Professional Plus en andere software die vereist is voor conversie.
 >* PDF Generator ondersteunt Microsoft Office 365 niet.
 >* Conversies van PDF-generator voor OpenOffice worden alleen ondersteund in Windows en Linux.
@@ -579,8 +618,12 @@ Zie voor aanvullende vereisten:
    <th><p><strong>Acrobat en Adobe Reader (basis)</strong></p> </th>
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
   </tr>
-    <tr>
-   <td>Acrobat 2017 (klassieke track)</td>
+  <tr>
+   <td>Acrobat 2020 (klassieke track)</td>
+   <td>Versie 20.004.3006 of hoger<br /> </td>
+  </tr>
+  <tr>
+   <td>Acrobat 2017 (klassieke track) (afgekeurd)</td>
    <td>Versie 17.011.30078 of hoger<br /> </td>
   </tr>
 
@@ -743,9 +786,37 @@ Adobe behoudt zich het recht voor om de referentieplatforms van derden die door 
 
 Aanvullende informatie voor patches van derden kunt u ook vinden op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
 
+## Platform-updates {#platform-updates}
+
+De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 release op 7 september 2021:
+
+* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 eindigt op 6 juni 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+
+* Microsoft Windows Server 2016 (64-bits)
+
+* Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)
+
+* Microsoft® Office 2016
+
+* OpenOffice 4.1.2
+
+>[!NOTE]
+>
+>De platforms die zijn gemarkeerd als [afgekeurd, blijven in ondersteuning tot AEM Forms 6.5 Service Pack 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
+
+
+
 ## Revisie-overzicht {#revision-history}
 
 * 09 sep. 2020
    * Ondersteunde versie van iOS voor AEM Forms App gewijzigd in iOS 12. De vorige versie was iOS 11.
 
+* 07 sep. 2021
+   * **Updates** van Platform:  [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
+      * [!DNL Adobe Acrobat 2020]
+      * [!DNL Ubuntu 20.04]
+      * [!DNL Open Office 4.1.10]
+      * [!DNL Microsoft Office 2019]
+      * [!DNL Microsoft Windows Server 2019]
+      * [!DNL RHEL8]
 

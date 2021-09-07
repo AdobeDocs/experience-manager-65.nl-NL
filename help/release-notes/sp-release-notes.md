@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 2095159a76380f7d17abcea9965ed6f82da69c8c
+source-git-commit: f75c6898eee9bbd6cdf9ce5e21dacc7898b80938
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,13 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-typevariabele**: U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. Met de letterlijke optie kunt u een JSON opgeven in de vorm van een tekenreeks.
 
-<!--
-
-* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
-  * [!DNL Adobe Acrobat 2020]
-  * [!DNL Ubuntu 20.04]
-  * [!DNL Open Office 4.1.10]
-  * [!DNL Microsoft Office 2019]
-  * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8]
-
-  -->
+* [Updates](../forms/using/aem-forms-jee-supported-platforms.md) van Platform:  [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
+   * [!DNL Adobe Acrobat 2020]
+   * [!DNL Ubuntu 20.04]
+   * [!DNL Open Office 4.1.10]
+   * [!DNL Microsoft Office 2019]
+   * [!DNL Microsoft Windows Server 2019]
+   * [!DNL RHEL8]
 
 Voor een lijst van alle eigenschappen en verhogingen die in [!DNL Experience Manager] 6.5.10.0 worden geïntroduceerd, zie [nieuw in  [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -270,17 +266,21 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 ### [!DNL Forms] {#forms-65100}
 
+
 >[!NOTE]
 >
->Met het servicepakket kunt u [!DNL AEM Forms] uitvoeren op de meest recente serverbesturingssystemen, toepassingsservers en databases. Het brengt ook sommige eigenschappen beschikbaar op Cloud Service aan het milieu op-gebouw en verstrekt moeilijke situaties voor klant gemelde kwesties. [!DNL AEM Forms] op OSGi de dienstpak is beschikbaar om te downloaden en te installeren. [!DNL AEM Forms on JEE]  Service Pack is beschikbaar op 9 september 2021.
+>* [!DNL Experience Manager Forms] geeft toe:voegen-op pakketten één week na de geplande de versiedatum van het  [!DNL Experience Manager] Service Pack vrij.
+
+
+[!DNL AEM Forms 6.5.10.0] bevat de volgende opgeloste problemen:
+
+* Wanneer u [!DNL AEM Forms 6.5] installeert, worden de volgende bibliotheken van derden automatisch geïnstalleerd (CQDOC-18373):
+   * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
+   * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
 
 **Adaptieve Forms**
 
-<!--
-
-* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
-
--->
+* Als de validaties die op de veldwaarden in een adaptief formulier worden uitgevoerd succesvol zijn, wordt [!DNL AEM Forms] niet aangeroepen tot het formuliergegevensmodel (CQ-4325491).
 
 * Wanneer u een taalwoordenboek aan een vertaalproject toevoegt en dan het project opent, [!DNL AEM Forms] toont een foutenmelding (CQ-4324933):
 
@@ -315,26 +315,19 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Wanneer u alle tekst in een editor selecteert, kunt u de lettertypetekst niet wijzigen in Arial (NPR-36646).
 
-<!--
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
--->
+* Wanneer u een URL maakt in een editor en de wijzigingen voorvertoont, wordt een zwarte achtergrond weergegeven in plaats van de URL-tekst (NPR-36640).
 
 * Wanneer u tekst kopieert en plakt in een editor, kunnen er problemen optreden wanneer u het lettertype wijzigt in Arial voor opsommingstekens die beschikbaar zijn in het document (NPR-36628).
 
 * Problemen met inspringing van opsommingstekens in de teksteditor (NPR-36513).
 
-<!--
 **Designer**
 
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
-
--->
+* De Reader Screen kan geen zwevende veldgegevens lezen die in het tekstlabel op de Master pagina of op subformulierpagina&#39;s in een dynamische PDF zijn geplaatst (CQ-4321587).
 
 **Document Services**
 
-* Wanneer u XDP-bestanden converteert naar PDF-bestanden en vervolgens de resulterende PDF samenstelt, mislukken de PDF-generaties en wordt het volgende foutbericht weergegeven (CQ-4328666):
+* Wanneer u XDP-bestanden converteert naar PDF-bestanden en vervolgens de resulterende PDF samenstelt, mislukken de PDF-generaties en wordt het volgende foutbericht weergegeven:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -428,21 +421,18 @@ Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements
 >
 >Experience Manager 6.5.10.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar Experience Manager 6.5.10.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-On Package.
 
-<!--
-
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in Adobe Experience Manager Forms op JEE worden via een afzonderlijk installatieprogramma geleverd.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+Raadpleeg de [releaseopmerkingen](jee-patch-installer-65.md) voor informatie over de installatie van het cumulatieve installatieprogramma voor Experience Manager Forms in JEE en de configuratie na de implementatie.
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste Forms-invoegpakket, verwijdert u het Forms-invoegpakket uit de map `crx-repository\install` en start u de server opnieuw.
 
--->
 
 ### UberJar {#uber-jar}
 
@@ -476,14 +466,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 ## Bekende problemen {#known-issues}
 
-<!--
-
-* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
-`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
-
-* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
-
--->
+* Aangezien [!DNL Microsoft Windows Server 2019] [!DNL MySQL 5.7] en [!DNL JBoss EAP 7.1] niet ondersteunt, ondersteunt [!DNL Microsoft Windows Server 2019] geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 
 * Als u uw [!DNL Experience Manager] instantie van versie 6.5 aan versie 6.5.10.0 bevordert, kunt u `RRD4JReporter` uitzonderingen in het `error.log` dossier bekijken. Start de instantie opnieuw om het probleem op te lossen.
 

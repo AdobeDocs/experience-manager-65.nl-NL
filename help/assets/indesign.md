@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: f74190692d718da6074affa87d283f326eca7faa
+source-git-commit: 610f294c314489032ec71b863542d269d302ee01
 workflow-type: tm+mt
 source-wordcount: '1545'
 ht-degree: 1%
@@ -174,7 +174,7 @@ Als [!DNL InDesign Server] en [!DNL Experience Manager] op verschillende gasther
 1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]**. Klik **[!UICONTROL Edit]** om te openen.
 1. De montages van de Verbinding Externalzer helpen absolute URLs voor de [!DNL Experience Manager] plaatsing en voor [!DNL InDesign Server] tot stand brengen. Gebruik het veld **[!UICONTROL Domains]** om de hostnaam voor [!DNL Adobe InDesign Server] op te geven. Klik **Opslaan**.
 
-   Wanneer u absolute URL&#39;s maakt, moet u de hostnaam `localhost` gebruiken voor uw lokale instanties, auteur- en publicatieinstanties.
+   In absolute URLs, moet u `localhost` als gastheernaam voor uw lokale, auteur, en publiceer instanties gebruiken.
 
    ![Instellingen voor extern hulpprogramma koppelen](assets/link-externalizer-config.png)
 

@@ -11,14 +11,14 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 9f3ca2da0828ce5170622852220a1926df0d5150
+source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1881'
 ht-degree: 0%
 
 ---
 
-# Aangepaste actie/knop toevoegen in interface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
+# Een aangepaste actieknop toevoegen in de gebruikersinterface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Overzicht {#overview}
 
@@ -360,7 +360,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 >
 >Als u wilt zien wat dit proces doet of een vergelijkbaar proces wilt maken, hebt u Workbench nodig.
 
-1. Meld u aan als beheerder bij Livecycle Server adminui op `https:/[lc server]/:[lc port]/adminui`.
+1. Meld u als beheerder aan bij Server-adminui op `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navigeer naar **Home > Services > Toepassingen en services > Toepassingsbeheer**.
 
@@ -382,7 +382,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 #### Het toevoegen van ServiceName aan de lijst van de Dienst van de Lijst van gewenste personen {#adding-servicename-to-the-allowlist-service-list}
 
-Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wilt toegang hebben.
+Vermelding in de server van de Experience Manager de diensten van de LiveCycle u tot de server van de Experience Manager wilt toegang hebben.
 
 1. Meld u aan als beheerder bij `https:/[host]:'port'/system/console/configMgr`.
 
@@ -395,7 +395,7 @@ Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wil
 
 In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen verzenden, vorm de e-maildienst in de server van de LiveCycle.
 
-1. Meld u aan met beheerdersgegevens voor de Livecycle Server-beheerder op `https:/[lc server]:[lc port]/adminui`.
+1. Meld u aan met beheerdersgegevens bij de beheerder van de LiveCycle-server op `https:/[lc server]:[lc port]/adminui`.
 
 1. Navigeer naar **Home > Services > Toepassingen en services > Servicebeheer**.
 
@@ -407,30 +407,30 @@ In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen 
 
 #### De DSC-service configureren {#configure-the-dsc-service}
 
-Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het bestand DSCSample.jar naar de LiveCycle-server is geüpload, gebruikt de AEM server het bestand DSCSample.jar om toegang te krijgen tot de renderLetter-API.
+Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het DSCSample.jar- dossier aan de server van de LiveCycle wordt geupload, gebruikt de server van de Experience Manager het DSCSample.jar- dossier om tot renderLetter API toegang te hebben.
 
 Zie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md) voor meer informatie.
 
-1. Werk de URL van de AEM server in cmsa.properties in DSCSample.jar bij, die zich op de volgende locatie bevindt:
+1. Werk de URL van de server-URL van de Experience Manager in cmsa.properties in DSCSample.jar bij, die zich op de volgende locatie bevindt:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Geef de volgende parameters op in het configuratiebestand:
 
    * **crx.serverUrl**=https:/host:port/[contextpad]/[AEM URL]
-   * **crx.username**= AEM gebruikersnaam
-   * **crx.password**= AEM wachtwoord
+   * **crx.username**= Experience Manager, gebruikersnaam
+   * **crx.password**= wachtwoord voor Experience Manager
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >Telkens als u om het even welke veranderingen bij de server aanbrengt, begin de Server van de LiveCycle opnieuw.
+   >Elke keer dat u wijzigingen aanbrengt aan de serverzijde, start u de LiveCycle Server opnieuw.
 
-   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC importeren in LiveCyle {#import-dsc-to-livecyle}
 
-Het bestand DSCSample.jar gebruikt de renderLetter-API om de letter te renderen als PDF-bytes van XML-gegevens die C als invoer geeft. Zie [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html) voor meer informatie over renderLetter en andere API&#39;s.
+Het bestand DSCSample.jar gebruikt de renderLetter-API om letters te renderen als PDF-bytes van XML-gegevens die door DSC als invoer worden gegeven. Zie [Letter Render Service](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html) voor meer informatie over renderLetter en andere API&#39;s.
 
 1. Start Workbench en meld u aan.
 1. Selecteer **Venster > Weergaven tonen > Componenten**. De weergave Componenten wordt toegevoegd aan Workbench ES2.

@@ -1,22 +1,21 @@
 ---
 title: Dispatcher configureren voor Gemeenschappen
-seo-title: Dispatcher configureren voor Gemeenschappen
+seo-title: Configuring Dispatcher for Communities
 description: De dispatcher voor AEM Communities configureren
-seo-description: De dispatcher voor AEM Communities configureren
+seo-description: Configure the dispatcher for AEM Communities
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
-translation-type: tm+mt
-source-git-commit: 7f5bfce7fb9d7056e7c0848f92eac3f8c31aad24
+exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
-
 
 # Dispatcher configureren voor Gemeenschappen {#configuring-dispatcher-for-communities}
 
@@ -30,7 +29,7 @@ Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
 Zie ook de belangrijkste [Dispatcher documentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
-## In cache plaatsen {#dispatcher-caching}
+## Caching van Dispatcher {#dispatcher-caching}
 
 ### Overzicht {#overview}
 
@@ -71,7 +70,7 @@ De configuratie OSGi **ACS AEM Commons - de Kopbal van de Controle van het Gehei
 
    *(vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan nul (0).
 
-## Clientkoppen {#dispatcher-client-headers} verzenden
+## Clientkoppen van Dispatcher {#dispatcher-client-headers}
 
 In de /clientheaders sectie van `dispatcher.any`, als het een lijst maken van een specifieke reeks kopballen, is het noodzakelijk om `"CSRF-Token"` te omvatten om [eigenschap van Enablement](enablement.md) behoorlijk te laten werken.
 
@@ -94,11 +93,9 @@ Zie ook:
 >**Voorbeelden van eigenschapnamen**
 >Alle getoonde bezitsnamen, zoals **/0050** en **/0170**, zouden moeten worden aangepast om binnen een bestaand dispatcher.om het even welk configuratiedossier te passen.
 
-
 >[!CAUTION]
 >
->Zie [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en) voor verdere overwegingen bij het beperken van toegang met behulp van Dispatcher. Lees ook [AEM Beveiligingslijst](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) voor aanvullende beveiligingsdetails met betrekking tot de installatie van uw AEM.
-
+>Zie [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voor verdere overwegingen bij het beperken van toegang met behulp van Dispatcher. Lees ook [AEM Beveiligingslijst](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) voor aanvullende beveiligingsdetails met betrekking tot de installatie van uw AEM.
 
 De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toegevoegd, vooral nadat allen ingangen ontkent.
 
@@ -250,7 +247,7 @@ De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toe
 ```
 -->
 
-## Regels {#dispatcher-rules} voor verzending
+## Regels voor verzending {#dispatcher-rules}
 
 In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de cache moeten worden geplaatst op basis van de aangevraagde URL. Voor Gemeenschappen wordt de sectie Regels gebruikt om te bepalen wat nooit in cache mag worden geplaatst.
 
@@ -302,7 +299,7 @@ In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 
@@ -957,4 +954,3 @@ Hier volgt een voorbeeld van een `dispatcher.any`-bestand dat de Gemeenschappen 
 ```
 
 -->
-

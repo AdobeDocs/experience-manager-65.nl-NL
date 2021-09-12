@@ -12,10 +12,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: Configuratie, hybride modus
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+feature: Configuration,Hybrid Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '7563'
+source-wordcount: '7558'
 ht-degree: 0%
 
 ---
@@ -44,8 +44,7 @@ Meer informatie over het werken met [video](/help/assets/video.md) in Dynamic Me
 >* `ImageServing.log`
 
 >
->
-Zij worden gedocumenteerd in [Monitor en handhaaf uw instantie van de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
+>Zij worden gedocumenteerd in [Monitor en handhaaf uw instantie van de Experience Manager](/help/sites-deploying/monitoring-and-maintaining.md).
 
 Hybride uitgeverij en levering vormen een kernelement van de toevoeging van Dynamic Media aan Adobe Experience Manager. Met hybride publicaties kunt u Dynamic Media-elementen, zoals afbeeldingen, sets en video, uit de cloud leveren in plaats van uit de publicatieknooppunten van de Experience Manager.
 
@@ -344,7 +343,6 @@ Replication test succeeded
 U kunt ook op een van de volgende manieren controleren:
 * Controleer de replicatielogboeken om ervoor te zorgen dat het middel wordt herhaald.
 * Publiceer een afbeelding. Selecteer de afbeelding en selecteer **[!UICONTROL Viewers]** in het keuzemenu en selecteer vervolgens een voorinstelling voor de viewer. Selecteer **[!UICONTROL URL]**. Kopieer en plak het URL-pad in de browser om te controleren of de afbeelding zichtbaar is.
-
 
 
 ### Verificatie problemen oplossen {#troubleshooting-authentication}
@@ -869,7 +867,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
 | `defaultthumbpix` | `100,100` | Standaardminiatuurgrootte. Gebruikt in plaats van kenmerk::DefaultPix voor miniatuurverzoeken (`req=tmb`).<br>De server beperkt de antwoordafbeeldingen tot maximaal deze breedte en hoogte. Deze actie is waar als een duimnagelverzoek (`req=tmb`) niet uitdrukkelijk de grootte specificeert en niet de meningsgrootte uitdrukkelijk gebruikend `wid=`, `hei=`, of `scl=` specificeert.<br>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. U kunt een van beide of beide waarden instellen op 0 om ze onbeperkt te houden.<br>Is niet van toepassing op geneste/ingesloten aanvragen.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) DefaultThumbPixin de API voor beeldbewerking. |
 | `expiration` | `36000000` | De standaardtijd voor de clientcache om te live gaan. Biedt een standaardvervalinterval voor het geval dat een bepaalde catalogusrecord geen geldige catalogus bevat::Expiration value.<br>Reëel getal, 0 of hoger. Aantal milliseconden tot aan vervaldatum sinds de antwoordgegevens werden geproduceerd. Reeks aan 0 om altijd het antwoordbeeld onmiddellijk te verlopen, dat effectief cliënt caching onbruikbaar maakt. Deze waarde wordt standaard ingesteld op 10 uur. Als een nieuwe afbeelding wordt gepubliceerd, duurt het tien uur voordat de oude afbeelding de cache van de gebruiker verlaat. Neem contact op met de klantenservice als u de cache sneller moet wissen.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) Verlopen in de API voor beeldbewerking. |
 | `jpegquality` | `80` | Standaard JPEG-coderingskenmerken. Hiermee geeft u de standaardkenmerken op voor JPEG-antwoordafbeeldingen.<br>Geheel getal en markering, gescheiden door een komma. De eerste waarde ligt in het bereik 1.100 en definieert de kwaliteit. De tweede waarde kan 0 zijn voor normaal gedrag of 1 voor het uitschakelen van de downsampling van RGB-chromaticiteit door JPEG-codeermodules.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) JpegQuality in de API voor beeldbewerking. |
-| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br>De server retourneert een fout als een aanvraag een antwoordafbeelding veroorzaakt waarvan de breedte of hoogte groter is dan kenmerk::MaxPix.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) MaxPixin de API voor beeldbewerking. |
+| `maxpix` | `2000,2000` | Limiet voor afbeeldingsgrootte beantwoorden. Maximale breedte en hoogte van antwoordafbeelding die aan de client worden geretourneerd.<br>De server retourneert een fout als een aanvraag een antwoordafbeelding veroorzaakt waarvan de breedte of hoogte groter is dan kenmerk::MaxPix.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html#image-serving-api) MaxPixin de API voor beeldbewerking. |
 | `resmode` | `SHARP2` | Standaardmodus voor opnieuw berekenen van pixels. Hiermee geeft u de standaardkenmerken voor resampling en interpolatie op die moeten worden gebruikt voor het schalen van afbeeldingsgegevens.<br>Wordt gebruikt wanneer  `resMode=` niet in een aanvraag is opgegeven.<br>Toegestane waarden zijn  `BILIN`,  `BICUB`of  `SHARP2`.<br>Enum. Stel in op 2 voor `bilin`, 3 voor `bicub` of 4 voor `sharp2` interpolatiemodus. Gebruik `sharp2` voor de beste resultaten.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) ResMode in de API voor beeldbewerking. |
 | `resolution` | `72` | Standaardobjectresolutie. Biedt een standaardobjectresolutie voor het geval een bepaalde catalogusrecord geen geldige catalogus bevat::resolutiewaarde.<br>Reëel getal, groter dan 0. Doorgaans uitgedrukt als pixels per inch, maar ook in andere eenheden, zoals pixels per meter.<br>Zie ook  [](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) Resolutie in de API voor beeldbewerking. |
 | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | Deze waarden vertegenwoordigen een momentopname van videoplaytime en worden overgegaan tot [encoding.com](https://www.encoding.com/). Zie [Informatie over videominiatuur](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) voor meer informatie. |

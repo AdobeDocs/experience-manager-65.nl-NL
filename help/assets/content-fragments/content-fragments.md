@@ -3,10 +3,11 @@ title: Werken met contentfragmenten
 description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) pagina-onafhankelijke inhoud kunt ontwerpen, maken, beheren en gebruiken, ideaal voor levering zonder kop.
 feature: Content Fragments
 role: User
-source-git-commit: 819df6d6123575b378676dda200064725de47b84
+exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1989'
+ht-degree: 3%
 
 ---
 
@@ -82,7 +83,7 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments) voor meer informatie.
+>Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments) voor meer informatie.
 
 >[!NOTE]
 >

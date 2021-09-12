@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 59cc855e937c7be71cfc7a28fccd1db0b91e9f97
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '4266'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * Toegevoegde ondersteuning voor `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 
-* U kunt nu de service Automatede form conversion gebruiken om PDF forms in het Frans, Duits, Spaans, Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) om te zetten in aangepaste formulieren.[
+* U kunt nu de service Automatede form conversion gebruiken om PDF forms in het Frans, Duits, Spaans, Italiaans en Portugees ](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html#language-specific-meta-model) om te zetten in aangepaste formulieren.[
 
 * **Foutberichten in de browser** Eigenschappen: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
 

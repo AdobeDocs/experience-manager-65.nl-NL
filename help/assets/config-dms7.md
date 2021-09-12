@@ -9,10 +9,10 @@ docset: aem65
 role: User, Admin
 mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
-feature: Configuratie, Scene7-modus
-source-git-commit: 6c042d2c95f18ae4a0d5fd57a048aa12761495b6
+feature: Configuration,Scene7 Mode
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '6509'
+source-wordcount: '6504'
 ht-degree: 2%
 
 ---
@@ -39,11 +39,11 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 >Voor de volgende lijst met functies moet u de CDN uit de doos gebruiken die is gebundeld met Adobe Experience Manager - Dynamic Media. Een andere aangepaste CDN wordt niet ondersteund met deze functies.
 >
 >* [Smart Imaging](/help/assets/imaging-faq.md)
-* [Cache-validatie](/help/assets/invalidate-cdn-cache-dynamic-media.md)
-* [Hotlink-beveiliging](/help/assets/hotlink-protection.md)
-* [HTTP/2-levering van inhoud](/help/assets/http2.md)
-* URL omleiden op CDN-niveau
-* Akamai ChinaCDN (voor optimale levering in China)
+>* [Cache-validatie](/help/assets/invalidate-cdn-cache-dynamic-media.md)
+>* [Hotlink-beveiliging](/help/assets/hotlink-protection.md)
+>* [HTTP/2-levering van inhoud](/help/assets/http2.md)
+>* URL omleiden op CDN-niveau
+>* Akamai ChinaCDN (voor optimale levering in China)
 
 
 ## Dynamic Media inschakelen in Scene7-modus {#enabling-dynamic-media-in-scene-mode}
@@ -51,7 +51,8 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 [Dynamische ](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) media is standaard uitgeschakeld. Als u gebruik wilt maken van Dynamic Media-functies, moet u deze inschakelen.
 
 >[!WARNING]
-Dynamic Media - de wijze van Scene7 is voor *de instantie van de Auteur van de Experience Manager slechts*. Als dusdanig, moet u `runmode=dynamicmedia_scene7` op de instantie van de Auteur van de Experience Manager vormen, *not* de instantie van de Publicatie van de Experience Manager.
+>
+>Dynamic Media - de wijze van Scene7 is voor *de instantie van de Auteur van de Experience Manager slechts*. Als dusdanig, moet u `runmode=dynamicmedia_scene7` op de instantie van de Auteur van de Experience Manager vormen, *not* de instantie van de Publicatie van de Experience Manager.
 
 Om Dynamic Media toe te laten, moet u Experience Manager beginnen gebruikend `dynamicmedia_scene7` looppas wijze van de bevellijn door het volgende in een eindvenster in te gaan (gebruikte voorbeeldhaven is 4502):
 
@@ -64,7 +65,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 De upgrade van Experience Manager Dynamic Media van 6.3 naar 6.4 of 6.5 omvat nu de mogelijkheid om geen downtime te implementeren. Als u al uw voorinstellingen en configuraties wilt migreren van `/etc` naar `/conf` in CRXDE Lite, moet u de volgende krullopdracht uitvoeren.
 
 >[!NOTE]
-Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt dus het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
+>
+>Als u de Experience Manager-instantie uitvoert in de compatibiliteitsmodus - u hebt dus het compatibiliteitspakket geïnstalleerd - hoeft u deze opdrachten niet uit te voeren.
 
 Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de standaard, out-of-box viewer vooraf instelt kopiëren die oorspronkelijk met Dynamic Media door het volgende Linux® krullbevel in werking te stellen kwam:
 
@@ -273,7 +275,7 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 * **[!UICONTROL Defaults for Catalog Fields]**- Deze instellingen hebben betrekking op de resolutie en het standaardtype miniatuur van afbeeldingen.
 * **[!UICONTROL Color Management Attributes]** - Deze instellingen bepalen welke ICC-kleurprofielen worden gebruikt.
 * **[!UICONTROL Compatibility Attributes]** - Met deze instelling kunnen alinea&#39;s met regelafstand en navolgende in tekstlagen op dezelfde manier worden behandeld als in versie 3.6, voor achterwaartse compatibiliteit.
-* **[!UICONTROL Localization Support]** - Met deze instellingen kunt u meerdere kenmerken voor de landinstelling beheren. U kunt hiermee ook een landinstellingenkaarttekenreeks opgeven, zodat u kunt definiëren welke talen u wilt ondersteunen voor de verschillende knopinfo in Viewers. Zie [Overwegingen bij het instellen van lokalisatie van middelen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets) voor meer informatie over het instellen van **[Localisatie-ondersteuning]**.
+* **[!UICONTROL Localization Support]** - Met deze instellingen kunt u meerdere kenmerken voor de landinstelling beheren. U kunt hiermee ook een landinstellingenkaarttekenreeks opgeven, zodat u kunt definiëren welke talen u wilt ondersteunen voor de verschillende knopinfo in Viewers. Zie [Overwegingen bij het instellen van lokalisatie van middelen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets) voor meer informatie over het instellen van **[Localisatie-ondersteuning]**.
 
 #### Algemene instellingen van toepassingen configureren {#configuring-application-general-settings}
 
@@ -295,7 +297,6 @@ Kies altijd de volgende instelling om consistentie met de Experience Manager te 
 
 >[!NOTE]
 Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van de asset selecteert. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen vergroten dat wordt weergegeven](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal voorinstellingen voor viewers dat wordt weergegeven](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display) vergroten.
-
 
 #### Kleurbeheer configureren {#configuring-color-management}
 

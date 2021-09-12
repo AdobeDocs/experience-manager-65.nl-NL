@@ -8,9 +8,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Als u een workflow of versie voor uw elementen nodig hebt, moet u eerst uploaden
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Dynamic Media Classic. Hieronder vindt u de aanbevolen workflow:
 
-1. Stel in de Klassieke Dynamic Media-bureaubladtoepassing [een geplande FTP-upload en -codering in naar Dynamic Media Classic (systeemgeautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. Stel in de Klassieke Dynamic Media-bureaubladtoepassing [een geplande FTP-upload en -codering in naar Dynamic Media Classic (systeemgeautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. In Experience Manager, heb toegang tot videoactiva in WCM op **[!UICONTROL Dynamic Media Classic]** lusje van de Vinder van de Inhoud.
 1. Auteur met de klassieke Dynamic Media-videocomponent.
 
@@ -80,7 +80,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
 
    >[!NOTE]
    >
-   >Zie [Videovoorinstellingen voor het coderen van videobestanden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
+   >Zie [Videovoorinstellingen voor het coderen van videobestanden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 
@@ -119,7 +119,6 @@ De volgende matrix legt uit wanneer u welke component moet gebruiken:
 >
 >De klassieke Dynamic Media-videocomponent gebruikt het universele videoprofiel uit het vak. U kunt de op HTML5 gebaseerde videospeler echter verkrijgen voor gebruik door Experience Manager. Kopieer in Dynamic Media Classic de insluitcode van de HTML5-videospeler uit de doos en plaats deze in de pagina Experience Manager.
 
-
 ## Experience Manager Video-component {#aem-video-component}
 
 Zelfs als het gebruik van de Klassieke Video component van Dynamic Media wordt geadviseerd voor het bekijken van Klassieke video&#39;s van Dynamic Media, beschrijft deze sectie het gebruiken van Klassieke video&#39;s van Dynamic Media met [!UICONTROL Foundation Video Component] in Experience Manager voor volledigheid.
@@ -151,7 +150,7 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 1. Maak een Dynamic Media Klassiek Video-profiel. Selecteer **[!UICONTROL Create Page]** in het menu **[!UICONTROL New]**.
 1. Selecteer de Dynamic Media Classic Video profile-sjabloon. Geef de nieuwe pagina met videoprofielen een naam en selecteer **[!UICONTROL Create]**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloud config. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
 

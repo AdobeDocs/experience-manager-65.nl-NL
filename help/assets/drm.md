@@ -3,11 +3,11 @@ title: Digital Rights Management van activa
 description: Leer hoe u de verloopstatus van elementen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 role: User, Admin
-feature: DRM,beheer van bedrijfsmiddelen
+feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: e87facbad559aa7e45656f621de17e6ef3109273
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1320'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Om [!DNL Assets] console toe te laten om de verwijzende samengestelde activa sam
 1. Open [!DNL Experience Manager] Configuratiebeheer.
 1. Kies **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard is **[!UICONTROL Time based Scheduler]** geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
-1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. De voorbeeldexpressie `0 0 0 &ast; &ast; ?` activeert de taak bijvoorbeeld op 00 uur.
+1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. De voorbeeldexpressie `0 0 0 * * ?` activeert de taak bijvoorbeeld op 00 uur.
 1. Selecteer **[!UICONTROL send email]** om e-mails te ontvangen wanneer een element vervalt.
 
    >[!NOTE]

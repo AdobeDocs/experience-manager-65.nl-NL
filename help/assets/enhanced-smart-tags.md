@@ -2,12 +2,12 @@
 title: Verbeterde slimme tags
 description: Verbeterde slimme tags
 contentOwner: AG
-feature: Slimme tags, zoeken
+feature: Smart Tags, Search
 role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
-source-git-commit: 20442918270b484e0b3c3ce8e68df90e0f305a52
+source-git-commit: fbb27348df0b9d5f93d186acbce45fcf88197c5e
 workflow-type: tm+mt
-source-wordcount: '1596'
+source-wordcount: '1508'
 ht-degree: 1%
 
 ---
@@ -47,30 +47,30 @@ Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om e
 
 De service past slimme tags toe op elementen van de volgende MIME-typen:
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* image/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* image/photoshop
-* image/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 De service past slimme tags toe op elementuitvoeringen van de volgende MIME-typen:
 
-* image/jpeg
-* image/pjpeg
-* image/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
 ## Onboarding {#onboarding}
 
@@ -79,10 +79,6 @@ De Smart Content Service kan worden aangeschaft als een invoegtoepassing voor [!
 De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met [!DNL Experience Manager] te integreren. Zie [Slimme tags configureren](config-smart-tagging.md) om de service te integreren met [!DNL Experience Manager Assets].
 
 Het instapproces is voltooid wanneer de beheerder de service configureert en gebruikers toevoegt in [!DNL Experience Manager].
-
->[!NOTE]
->
->Zie [Slimme tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html) als u [!DNL Experience Manager] 6.3 of een eerdere versie gebruikt en coderingsservice voor uw elementen nodig hebt. Slimme tags maken geen gebruik van de nieuwste AI-mogelijkheden en zijn daarom minder nauwkeurig dan de verbeterde service voor slimme tags.
 
 ## Elementen en tags controleren {#reviewing-assets-and-tags}
 

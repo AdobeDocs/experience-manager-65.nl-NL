@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
-feature: Publiceren
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Publishing
+source-git-commit: a5164c0c2ef175f1bf63ef911bf92df36e413a6f
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2558'
 ht-degree: 1%
 
 ---
@@ -70,6 +70,8 @@ Nadat u selectief publiceren in een omslag vormt, kunt u om het even welke volge
    >[!IMPORTANT]
    >
    >Ongeacht de door u geselecteerde optie in de Dynamic Media-publicatiemodus worden eventuele updates die u later aanbrengt in een element dat *al* is gepubliceerd, onmiddellijk gepubliceerd zonder verdere actie van de gebruiker.
+   >
+   >Als een gepubliceerde video wordt bijgewerkt, moet deze opnieuw worden gepubliceerd om wijzigingen in de levering te weerspiegelen.
 
    | Dynamic Media-publicatiemodus, optie | Beschrijving |
    | --- | --- |

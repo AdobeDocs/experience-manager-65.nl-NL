@@ -1,8 +1,8 @@
 ---
 title: Integratie met Adobe Target met Adobe I/O
-seo-title: Integratie met Adobe Target met Adobe I/O
+seo-title: Integration with Adobe Target using Adobe I/O
 description: Meer informatie over het integreren van AEM met Adobe Target met behulp van Adobe I/O
-seo-description: Meer informatie over het integreren van AEM met Adobe Target met behulp van Adobe I/O
+seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
 uuid: dd4ed638-e182-4d7e-9c98-282431812467
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 498896dccf80065195cc945b01cb8d037b8f6dab
+exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
+source-git-commit: baf68f43decec6631516442c3f9e319ce879696f
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
 
+# Integratie met Adobe Target met Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
-# Integratie met Adobe Target met gebruik van Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
-
-De integratie van AEM met Adobe Target via de Target Standard API vereist de configuratie van Adobe IMS (Identity Management System) en Adobe I/O.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) en Adobe I/O vereist.
 
 >[!NOTE]
 >
@@ -49,13 +48,13 @@ Voordat u met deze procedure begint:
    * Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html) voor meer informatie.
 
 
-## Een IMS-configuratie configureren - Een openbare sleutel {#configuring-an-ims-configuration-generating-a-public-key} genereren
+## Een IMS-configuratie configureren - Een openbare sleutel genereren {#configuring-an-ims-configuration-generating-a-public-key}
 
 De eerste fase van de configuratie is het creëren van een Configuratie IMS in AEM en het produceren van de Openbare Sleutel.
 
 1. Open AEM **Tools** menu.
 1. Selecteer **Adobe IMS Configurations** in de sectie **Beveiliging**.
-1. Selecteer **Maken** om de **Adobe IMS Technical Account Configuration** te openen.
+1. Selecteer **Maken** om de **Configuratie van de technische rekening van Adobe IMS** te openen.
 1. Selecteer **Adobe Target** in de keuzelijst onder **Cloud Configuration**.
 1. Activeer **Nieuw certificaat maken** en voer een nieuwe alias in.
 1. Bevestig met **Certificaat maken**.
@@ -74,7 +73,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
 U moet het Adobe I/O Project (integratie) met Adobe Target tot stand brengen dat AEM zal gebruiken, dan de vereiste voorrechten toewijzen.
 
-### Het project {#creating-the-project} maken
+### Het project maken {#creating-the-project}
 
 Open de Adobe I/O-console om een I/O-project te maken met Adobe Target dat AEM gebruiken:
 
@@ -147,7 +146,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteer **Integraties**, dan de vereiste integratieconfiguratie.
 1. Selecteer **Editor** als **Productrol**; in plaats van **Observer**.
 
-## Gegevens opgeslagen voor het Adobe I/O Integration-project {#details-stored-for-the-adobe-io-integration-project}
+## Details die voor het Project van de Integratie van de Adobe I/O worden opgeslagen {#details-stored-for-the-adobe-io-integration-project}
 
 Van de console van de Projecten van Adobe I/O kunt u een lijst van al uw integratieprojecten zien:
 
@@ -211,7 +210,7 @@ Om te bevestigen dat de configuratie zoals verwacht werkt:
 
    ![](assets/integrate-target-io-13.png)
 
-## De Adobe Target-Cloud Service {#configuring-the-adobe-target-cloud-service} configureren
+## De Adobe Target-Cloud Service configureren {#configuring-the-adobe-target-cloud-service}
 
 Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de standaard-API van het doel kan gebruiken:
 
@@ -246,6 +245,9 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
    * **IMS-configuratie**: Selecteer de naam van de IMS-configuratie
    * **API-type**: REST
    * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u uw wolkenconfiguratie niet ziet, zie nota in [het Vormen A4T de Configuratie van Analytics Cloud](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
+   >[!NOTE]
+   >Gebruikersreferenties (verouderd) functioneren niet met A4T (zowel voor Doel als voor Analytics). Als zodanig moeten klanten     IMS-verificatie in plaats van gebruikersreferentie-verificatie.
    * **Gebruik nauwkeurige doelwitten**: Dit selectievakje is standaard ingeschakeld. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
    * **Segmenten uit Adobe Target** synchroniseren: Selecteer deze optie om segmenten te downloaden die in Doel zijn gedefinieerd om deze in AEM te gebruiken. U moet deze optie selecteren wanneer het bezit van het Type API REST is, omdat de gealigneerde segmenten niet worden gesteund en u altijd segmenten van Doel moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
    * **Clientbibliotheek**: Selecteer of u de AT.js cliëntbibliotheek, of mbox.js (afgekeurd) wilt.

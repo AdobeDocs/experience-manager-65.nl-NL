@@ -1,28 +1,27 @@
 ---
 title: De integratie met Adobe Target handmatig configureren
-seo-title: De integratie met Adobe Target handmatig configureren
+seo-title: Manually Configuring the Integration with Adobe Target
 description: Leer hoe u de integratie met Adobe Target handmatig kunt configureren.
-seo-description: Leer hoe u de integratie met Adobe Target handmatig kunt configureren.
+seo-description: Learn how to manually configure the integration with Adobe Target.
 uuid: 0bb76a65-f981-4cc5-bee8-5feb3297137c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
-translation-type: tm+mt
-source-git-commit: a8ba56849f6bb9f0cf6571fc51f4b5cae71620e0
+exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
+source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
 
-
-# De integratie handmatig configureren met Adobe Target {#manually-configuring-the-integration-with-adobe-target}
+# De integratie met Adobe Target handmatig configureren {#manually-configuring-the-integration-with-adobe-target}
 
 U kunt de configuraties van de wizard die u hebt gemaakt tijdens het gebruik van de wizard aanpassen of u kunt handmatig integreren met Adobe Target zonder de wizard te gebruiken.
 
-## De configuratie van de wizard Opt-In wijzigen {#modifying-the-opt-in-wizard-configurations}
+## De configuratie van de wizard Inschakelen wijzigen {#modifying-the-opt-in-wizard-configurations}
 
 De [Opt-in tovenaar](/help/sites-administering/opt-in.md) die [AEM met Adobe Target](/help/sites-administering/target.md) automatisch tot een de wolkenconfiguratie van het Doel genoemd Provisioned Configuratie van het Doel integreert. De tovenaar creeert ook een kader van het Doel voor de wolkenconfiguratie genoemd Provisioned Kader van het Doel. U kunt de eigenschappen van de cloudconfiguratie en het framework desgewenst wijzigen.
 
@@ -42,7 +41,7 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 * **Segmenten synchroniseren vanuit Adobe Target:** geselecteerd.
 
 * **Clientbibliotheek:** mbox.js.
-* **DTM gebruiken om clientbibliotheek te leveren:** Niet geselecteerd. Selecteer deze optie als u het bestand mbox.js of AT.js host met DTM[ of een ander tagbeheersysteem. ](/help/sites-administering/dtm.md) Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
+* **DTM gebruiken om clientbibliotheek te leveren:** Niet geselecteerd. Selecteer deze optie als u het bestand mbox.js of AT.js host met DTM](/help/sites-administering/dtm.md) of een ander tagbeheersysteem. [ Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
 
 * **Custom mbox.js:** None specified so that the default mbox.js file is used. Geef het bestand mbox.js op dat u wilt gebruiken. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
 * **Aangepaste AT.js:** Geen opgegeven zodat het standaard AT.js-bestand wordt gebruikt. Geef een aangepast AT.js-bestand op dat u wilt gebruiken. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
@@ -67,9 +66,13 @@ Het provisioned Kader van het Doel dat de Opt-in tovenaar creeert wordt gevormd 
 
 U kunt het kader vormen om extra contextinformatie naar Doel te verzenden zoals die in [wordt beschreven Toevoegend een Kader van het Doel](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
-### A4T Analytics Cloud-configuratie {#configuring-a-t-analytics-cloud-configuration} configureren
+### A4T Analytics Cloud-configuratie configureren {#configuring-a-t-analytics-cloud-configuration}
 
 U kunt Adobe Target zo configureren dat Adobe Analytics de rapportagebron is voor het opgeven van inhoud.
+
+>[!NOTE]
+>
+>Gebruikersreferenties (verouderd) functioneren niet met A4T (zowel voor Doel als voor Analytics). Als zodanig moeten klanten [IMS-verificatie](/help/sites-administering/integration-ims-adobe-io.md) gebruiken in plaats van gebruikersreferentie-verificatie.
 
 Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe Target-cloudconfiguratie aan te sluiten met:
 
@@ -105,10 +108,9 @@ AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox
 * Verbeterde beveiliging
 * Betere implementatieopties voor toepassingen van één pagina
 * AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
-
 U kunt AT.js of mbox.js in **de bibliotheek van de Cliënt** drop-down menu selecteren.
 
-### Een doelwolkenconfiguratie maken {#creating-a-target-cloud-configuration}
+### Een doelcloud-configuratie maken {#creating-a-target-cloud-configuration}
 
 Om AEM in staat te stellen om met Adobe Target in wisselwerking te staan, creeer een de wolkenconfiguratie van het Doel. Als u de configuratie wilt maken, geeft u de Adobe Target-clientcode en gebruikersgegevens op.
 
@@ -199,16 +201,14 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 
 Uw framework is gemaakt. Als u het framework wilt repliceren naar de publicatieinstantie, gebruikt u de optie **Framework activeren** van de assistent.
 
-### Activiteiten koppelen aan de doelcloud-configuratie {#associating-activities-with-the-target-cloud-configuration}
+### Activiteiten koppelen aan de doelcloud-configuratie  {#associating-activities-with-the-target-cloud-configuration}
 
 Koppel uw [AEM activiteiten](/help/sites-authoring/activitylib.md) aan uw configuratie van de wolk van het Doel zodat u de activiteiten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html) kunt weerspiegelen.
 
 >[!NOTE]
 Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 * Als de **xt_only** optie op Adobe Target huurder (cliëntcode) wordt toegelaten die aan de AEM kant wordt gebruikt om met Adobe Target te verbinden, dan kunt u **slechts** XT activiteiten in AEM tot stand brengen.
-
 * Als de **xt_only** opties **not** toegelaten op de huurder van Adobe Target (cliëntcode) is, dan kunt u **zowel** XT en A/B activiteiten in AEM tot stand brengen.
-
 **Aanvullende opmerking:** **xt_** only options is een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kan alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 ### Het doelframework koppelen aan uw site {#associating-the-target-framework-with-your-site}
@@ -244,4 +244,3 @@ Voer de volgende taken uit om problemen op te lossen die voorkomen wanneer het v
 * Controleer of de AEM-instantie verbinding kan maken met de doelserver. Bijvoorbeeld, zorg ervoor dat de firewallregels uitgaande AEM geen verbindingen blokkeren, of dat AEM wordt gevormd om noodzakelijke volmachten te gebruiken.
 * Zoek naar nuttige berichten in het AEM foutenlogboek. Het bestand error.log bevindt zich in de map **crx-quickstart/logs** waarin AEM is geïnstalleerd.
 * Wanneer u de activiteit in Adobe Target bewerkt, verwijst de URL naar de localhost. U kunt dit omzeilen door de AEM externalizer in te stellen op de juiste URL.
-

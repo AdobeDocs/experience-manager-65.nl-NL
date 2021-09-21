@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 6850fc2e4251ad408936ee71600ab8923f54e9a3
+source-git-commit: baacb6623757c4a7a67ae2be4232a36c4a509b69
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ U kunt Adobe Target zo configureren dat Adobe Analytics de rapportagebron is voo
 
 >[!NOTE]
 >
->Gebruikersreferenties (verouderd) functioneren niet met A4T (zowel voor Doel als voor Analytics). Als zodanig moeten klanten [IMS-verificatie](/help/sites-administering/integration-ims-adobe-io.md) gebruiken in plaats van gebruikersreferentie-verificatie.
+>Gebruikersreferenties (verouderd) functioneren niet met A4T (zowel voor Doel als voor Analytics). Daarom moeten klanten IMS-verificatie gebruiken in plaats van gebruikersreferentie-verificatie.
 
 Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe Target-cloudconfiguratie aan te sluiten met:
 
@@ -88,7 +88,7 @@ Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe
    >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
    >1. Navigeer naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
-   1. Navigeer naar **/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   1. Ga naar `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Stel de eigenschap **disable** in op **false**.
    1. Tik of klik op **Alles opslaan**.
 

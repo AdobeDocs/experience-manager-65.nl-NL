@@ -2,9 +2,9 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
+source-git-commit: becdfee534e4464147811302ed67de74b8044a24
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1745'
 ht-degree: 2%
 
 ---
@@ -28,6 +28,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
+| [!DNL Sites] | Eenvoudige inhoudsfragmenten op basis van een sjabloon. | [Op modellen gebaseerde gestructureerde ](/help/assets/content-fragments/content-fragments-models.md) inhoudsfragmentatie. |
 | Creative Cloud-integratie | AEM naar het delen van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM, zodat ze ze kunnen openen in CC-toepassingen en nieuwe bestanden kunnen uploaden of wijzigingen in AEM kunnen opslaan. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe is niet van plan om verdere verbeteringen aan te brengen in de AEM voor het delen van mappen in Creative Cloud. Hoewel de functie in AEM is opgenomen, wordt klanten sterk aangeraden vervangende oplossingen te gebruiken. | Klanten wordt aangeraden over te schakelen op nieuwe integratiemogelijkheden voor Creative Cloud, waaronder Adobe Asset Link of AEM desktop app. |
 | Assets | `AssetDownloadServlet` is standaard uitgeschakeld voor de publicatie-instanties. Voor meer details, zie [AEM veiligheidscontrolelijst](/help/sites-administering/security-checklist.md). | Configuratie beschreven bij [AEM checklist ](/help/sites-administering/security-checklist.md). |
 | Activa | Als een gebruiker onvoldoende (lees- en schrijfrechten) heeft op `/content/dam/collections`, kan de gebruiker geen verzameling maken. | De instelling van de toegangscontrole van de gebruiker respecteren en de juiste machtigingen garanderen. |

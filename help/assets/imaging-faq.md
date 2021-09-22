@@ -6,12 +6,12 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
-feature: Middelenbeheer, uitvoeringen
+feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: a166ea9e56ba6b69793e9949a920a7a24b5b9b25
+source-git-commit: cd0ff8f3f595e4c97668abc8c296b2f15f9d4810
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2567'
 ht-degree: 1%
 
 ---
@@ -198,7 +198,7 @@ Smart Imaging DPR en netwerkoptimalisatie zijn standaard uitgeschakeld voor een 
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen.
+1. [Gebruik de Admin Console om een steungeval](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html) tot stand te brengen.
 1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    1. Primaire contactpersoon, e-mail, telefoon.
@@ -288,3 +288,9 @@ Slimme afbeeldingen bepalen of de conversie nuttig is of niet. De nieuwe afbeeld
 * Elke DPR-optimalisatie aan de viewerzijde werkt in combinatie met DPR-optimalisatie voor Smart Imaging op de server en resulteert niet in te grote afbeeldingen. Met andere woorden, wanneer DPR door de viewer wordt afgehandeld, zoals de hoofdweergave alleen in een viewer met zoomfunctie, worden de DPR-waarden voor Smart Imaging op de server niet geactiveerd. Op dezelfde manier wordt de DPR-waarde voor Smart Imaging op de server geactiveerd wanneer viewerelementen, zoals stalen en miniaturen, geen DPR-verwerking hebben.
 
 Zie ook [Bij het werken met afbeeldingen](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) en [Bij het werken met Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+>[!MORELIKETHIS]
+>
+>* [Optimalisatie van afbeeldingen met de volgende generatie afbeeldingsindelingen WebP en AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+

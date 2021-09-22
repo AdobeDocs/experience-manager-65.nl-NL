@@ -88,8 +88,7 @@ Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe
    >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
    >1. Navigeer naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
-   1. Ga naar:
-      `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   1. Ga naar: `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    1. Stel de eigenschap **disable** in op **false**.
    1. Tik of klik op **Alles opslaan**.
 

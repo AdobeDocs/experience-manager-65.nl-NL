@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: e2b13bf47a2a816add7678587d51347266cc3552
+source-git-commit: 1a3430ef3d9e9f4fcd0aaced904644b36953292b
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2198'
 ht-degree: 0%
 
 ---
@@ -88,15 +88,18 @@ Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe
    >Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
    >
    >1. Navigeer naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
-   1. Navigeren naar:
-/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+   1. Navigeer naar [1] (zie hieronder)
    1. Stel de eigenschap **disable** in op **false**.
    1. Tik of klik op **Alles opslaan**.
 
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+```
+/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
+```
 
-   Klik **OK**. Wanneer u inhoud met Adobe Target richt, kunt u uw rapportbron [selecteren ](/help/sites-authoring/content-targeting-touch.md).
+![chlimage_1-159](assets/chlimage_1-159.png)
+
+Klik **OK**. Wanneer u inhoud met Adobe Target richt, kunt u uw rapportbron [selecteren ](/help/sites-authoring/content-targeting-touch.md).
 
 ## Handmatig integreren met Adobe Target {#manually-integrating-with-adobe-target}
 

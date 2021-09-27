@@ -1,8 +1,8 @@
 ---
 title: SPA
-seo-title: SPA
+seo-title: SPA Page Component
 description: In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
-seo-description: In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
+seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,21 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 14cc66dfef7bc7781907bdd6093732912c064579
+exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
+source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
-
-# Paginacomponent SPA{#spa-page-component}
+# SPA{#spa-page-component}
 
 In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
 
 >[!NOTE]
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -35,14 +34,14 @@ De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn ki
 
 De resolutie en het beheer van het paginamodel worden gedelegeerd aan een meegeleverde [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. De SPA moet communiceren met de module `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates - meestal geproduceerd wanneer de auteur de pagina bewerkt via de Pagina-editor. `PageModelManager` is toegankelijk door SPA project als npm pakket. Als tolk tussen AEM en de SPA is `PageModelManager` bedoeld om de SPA te begeleiden.
 
-Om de pagina te kunnen schrijven, moet een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` worden toegevoegd voor een communicatiekanaal tussen de SPA en de pagina-editor. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de clientbibliotheekcategorie `cq.authoring.pagemodel.messaging` beschikbaar te maken:
+Als u het schrijven van de pagina wilt toestaan, moet een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` worden toegevoegd voor een communicatiekanaal tussen de SPA en de pagina-editor. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de clientbibliotheekcategorie `cq.authoring.pagemodel.messaging` beschikbaar te maken:
 
 * Als de sjabloon bewerkbaar is, voegt u de categorie van de clientbibliotheek toe aan het paginabeleid.
 * Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de paginacomponent.
 
 Vergeet niet de opname van de categorie `cq.authoring.pagemodel.messaging` te beperken tot de context van de pagina-editor.
 
-## Gegevenstype voor communicatie {#communication-data-type}
+## Gegevenstype communicatie {#communication-data-type}
 
 Het gegevenstype voor communicatie wordt ingesteld als een HTML-element binnen de component AEM pagina met het kenmerk `data-cq-datatype`. Wanneer het gegevenstype van communicatiegegevens is ingesteld op JSON, bereiken de aanvragen van de GET de eindpunten van het verzendmodel van een component. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. In de bibliotheek Paginamodel wordt vervolgens een waarschuwing voor de SPA van updates weergegeven.
 
@@ -81,7 +80,7 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 >
 >De standaardmodelkiezer wordt statisch ingesteld bij het aanvragen van de representatie van een component in het verkoopmodel.
 
-## Metaeigenschappen {#meta-properties}
+## Eigenschappen van meta {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
 * `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. ` [PageModelManager](/help/sites-developing/spa-page-component.md)` stelt dan systematisch het aanvankelijke model van de toepassing opnieuw samen zoals ingaand de toepassing van zijn wortelingangspunt.
@@ -94,7 +93,7 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Elk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.Alle SPA projecten op AEM zouden op Maven Archetype voor SPA Starter Kit moeten worden gebaseerd.
+>Elk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK.Alle SPA projecten op AEM zouden op het Maven Archetype voor SPA Starter Kit moeten worden gebaseerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 

@@ -1,19 +1,19 @@
 ---
-title: Metagegevens van uw digitale middelen beheren
+title: Metagegevens van uw digitale elementen beheren
 description: Leer meer over de typen metagegevens en hoe u metagegevens kunt beheren voor elementen om elementen eenvoudig te organiseren en te verwerken.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Tags, metagegevens
+feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 124f44b7893631703b1bd79e5c78976463f01efc
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2235'
 ht-degree: 10%
 
 ---
 
-# Metagegevens van uw digitale elementen beheren {#managing-metadata-for-digital-assets}
+# Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -110,7 +110,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
    | [!UICONTROL Batch Size] | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | [!UICONTROL Field Separator] | De standaardwaarde is `,` (een komma). U kunt elk ander teken opgeven. |
    | [!UICONTROL Multi Value Delimiter] | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|`. |
-   | [!UICONTROL Launch Workflows] | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen voor Launcher zijn van kracht voor de [!UICONTROL DAM Metadata WriteBack]-workflow (die metagegevens naar de binaire XMP schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
+   | [!UICONTROL Launch Workflows] | Standaard false. Wanneer ingesteld op `true` en de standaardinstellingen van kracht zijn voor de [!UICONTROL DAM Metadata WriteBack]-workflow (die metagegevens naar de binaire XMP schrijft). Als u de workflows inschakelt, wordt het systeem trager. |
    | [!UICONTROL Asset Path Column Name] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Klik op **[!UICONTROL Import]** op de werkbalk. Nadat de meta-gegevens worden ingevoerd, wordt een bericht getoond in [!UICONTROL Notification] inbox.
@@ -234,7 +234,7 @@ U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICON
 >
 >* [Metagegevensconcepten en begrip](metadata-concepts.md).
 >* [Eigenschappen van metagegevens van meerdere verzamelingen bewerken](manage-collections.md#editing-collection-metadata-in-bulk)
-* [Metagegevens importeren en exporteren in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* [Metagegevens importeren en exporteren in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.

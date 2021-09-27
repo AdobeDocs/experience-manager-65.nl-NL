@@ -3,11 +3,11 @@ title: Assets Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Elementen in te schakelen.
 contentOwner: AG
 role: User, Admin
-feature: Asset Insights, Asset Reports
+feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: b3acfdba41e1bd94c65bb7a87f63b9c326a80dd2
+source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools 
 
 >[!CAUTION]
 >
->Adobe DTM is vervangen door [!DNL Adobe Experience Platform Launch] en zal binnenkort [einde van levensduur](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [gebruik [!DNL Launch] voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) te gebruiken.
+>Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van levensduur](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f) bereiken. Adobe raadt u aan [gebruik [!DNL Adobe Experience Platform] voor elementinzichten](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html) te gebruiken.
 
 Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
 

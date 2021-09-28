@@ -1,24 +1,23 @@
 ---
 title: Ondersteuning voor ingekapselde token
-seo-title: Ondersteuning voor ingekapselde token
+seo-title: Encapsulated Token Support
 description: Leer over de Encapsulated Token steun in AEM.
-seo-description: Leer over de Encapsulated Token steun in AEM.
+seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
-translation-type: tm+mt
-source-git-commit: 215f062f80e7abfe35698743ce971394d01d0ed6
+exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
+source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
 
-
-# Encapsulated Token Support{#encapsulated-token-support}
+# Ondersteuning voor ingekapselde token{#encapsulated-token-support}
 
 ## Inleiding {#introduction}
 
@@ -36,7 +35,7 @@ De oplossing voor dit is kleverige verbindingen op het niveau van het taakverdel
 
 Als een publicatie-instantie niet beschikbaar wordt, verliezen alle gebruikers die voor die instantie zijn geverifieerd hun sessie. Dit komt omdat toegang tot de opslagplaats nodig is om het verificatiecookie te valideren.
 
-## Stateless Authentificatie met het Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
+## Stateless Authentificatie met Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
 
 De oplossing voor horizontale scalability is stateless authentificatie met het gebruik van de nieuwe Encapsulated Token steun in AEM.
 
@@ -52,16 +51,14 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >Als er bijvoorbeeld een nieuwe gebruiker wordt gemaakt op het nummer één van de publicatie-instantie, wordt deze vanwege de manier waarop de ingekapselde token werkt, geverifieerd bij het publiceren van nummer twee. Als de gebruiker niet bestaat op de tweede publicatie-instantie, is de aanvraag nog steeds niet geslaagd.
 
-
 ## Het vormen van Encapsulated Token {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Alle authentificatiemanagers die gebruikers synchroniseren en zich op symbolische authentificatie (zoals SAML &amp; OAuth) baseren zullen slechts met ingekapselde tokens werken als:
 >
 >* Vaste sessies zijn ingeschakeld, of
-   >
-   >
-* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers **create** gebruikers tijdens het synchronisatieproces.
+>
+>* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers **create** gebruikers tijdens het synchronisatieproces.
 
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
@@ -69,7 +66,7 @@ Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encaps
 1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
 1. Het ingekapselde token moet worden ingeschakeld. Dit kan door de Console van het Web worden gedaan.
 
-### Replicatie van de sleutel HMAC {#replicating-the-hmac-key}
+### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
 
 De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. U kunt het afzonderlijk downloaden door de **mening** verbinding naast het te drukken:
 
@@ -98,11 +95,10 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 
-#### Encapsulated Token {#enabling-the-encapsulated-token} toelaten
+#### Encapsulated Token toelaten {#enabling-the-encapsulated-token}
 
 Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van het Web toelaten:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
-1. Zoek een ingang genoemd **Dag CRX Symbolische de Handler van de Authentificatie** en klik het.
+1. Zoek een ingang genoemd **Adobe granite Token de Handler van de Authentificatie** en klik het.
 1. Schakel in het volgende venster het vakje **Ingekapselde tokenondersteuning inschakelen** in en druk op **Save**.
-

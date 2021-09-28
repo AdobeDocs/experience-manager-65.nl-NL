@@ -1,8 +1,8 @@
 ---
 title: E-mailmelding configureren
-seo-title: E-mailmelding configureren
+seo-title: Configuring Email Notification
 description: Leer hoe u e-mailmeldingen in AEM kunt configureren.
-seo-description: Leer hoe u e-mailmeldingen in AEM kunt configureren.
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 2a866e82a059184ea86f22646e4a20406ad109e8
+source-git-commit: 1ae4e3b898f1d0a27fa72a7d8db01f638d4c6f7a
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2086'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de 
 >
 >Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
-## De mailservice {#configuring-the-mail-service} configureren
+## De Mail Service configureren {#configuring-the-mail-service}
 
 AEM kan alleen e-mailberichten verzenden als de **Day CQ Mail Service** correct is geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
@@ -56,7 +56,7 @@ De configuratie kijkt als volgt in de console van het Web:
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## Het kanaal {#configuring-the-email-notification-channel} voor e-mailmeldingen configureren
+## Het kanaal voor e-mailmeldingen configureren {#configuring-the-email-notification-channel}
 
 Wanneer u zich abonneert op berichten voor pagina- of forumgebeurtenissen, wordt het e-mailadres standaard ingesteld op `no-reply@acme.com`. U kunt deze waarde wijzigen door de service **E-mailkanaal** voor meldingen in de webconsole te configureren.
 
@@ -82,7 +82,7 @@ Gebruik de volgende procedure om het knooppunt in de bronmappen van het inhoudsp
 
 1. Sla het bestand op.
 
-## De Workflow Email Notification Service {#configuring-the-workflow-email-notification-service} configureren
+## De Workflow Email Notification Service configureren {#configuring-the-workflow-email-notification-service}
 
 Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van de e-mail als het URL-voorvoegsel van de host ingesteld op standaardwaarden. U kunt deze waarden wijzigen door de **Day CQ Workflow Email Notification Service** in de webconsole te configureren. Als u dat doet, wordt aanbevolen de wijziging in de opslagplaats voort te zetten.
 
@@ -94,7 +94,7 @@ De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
 De e-mailsjablonen voor paginaberichten staan hieronder:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 De standaardsjabloon Engels ( `en.txt`) wordt als volgt gedefinieerd:
 
@@ -115,13 +115,13 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### E-mailsjablonen aanpassen voor paginameldingen {#customizing-email-templates-for-page-notification}
+#### E-mailsjablonen aanpassen voor paginamelding {#customizing-email-templates-for-page-notification}
 
 U kunt als volgt de Engelse e-mailsjabloon voor paginabeldingen aanpassen:
 
 1. Open het bestand in CRXDE:
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Wijzig het bestand naar wens.
 1. Sla de wijzigingen op.
@@ -150,7 +150,7 @@ Hierbij kan &lt;text_x> bestaan uit een combinatie van statische tekst en dynami
 
    PageModified => /content/geometrixx/nl/products
 
-### E-mailsjablonen voor forummelding {#email-templates-for-forum-notification}
+### E-mailsjablonen voor forumkennisgeving {#email-templates-for-forum-notification}
 
 E-mailsjablonen voor forummeldingen vindt u onder:
 
@@ -205,7 +205,7 @@ De volgende variabelen kunnen binnen het e-mailmalplaatje voor forumberichten wo
 
 Het e-mailsjabloon voor workflowmeldingen (Engels) bevindt zich op:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 Het wordt als volgt gedefinieerd:
 
@@ -234,7 +234,7 @@ U kunt als volgt de Engelse e-mailsjabloon voor workflowgebeurtenismeldingen aan
 
 1. Open het bestand in CRXDE:
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Wijzig het bestand naar wens.
 1. Sla de wijzigingen op.
@@ -292,9 +292,9 @@ Een sjabloon toevoegen voor een nieuwe taal:
 
 1. Voeg hieronder een bestand `<language-code>.txt` toe in CRXDE:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : voor paginameldingen
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : voor paginameldingen
    * `/etc/notification/email/default/com.day.cq.collab.forum` : voor forummeldingen
-   * `/etc/workflow/notification/email/default` : voor workflowmeldingen
+   * `/libs/settings/workflow/notification/email/default` : voor workflowmeldingen
 
 1. Pas het bestand aan de taal aan.
 1. Sla de wijzigingen op.
@@ -311,7 +311,7 @@ Wanneer Verzamelingen in AEM Assets worden gedeeld of niet gedeeld, kunnen gebru
 1. Meld u aan bij AEM als beheerder. Klik **Gereedschappen** > **Bewerkingen** > **Webconsole** om de Configuratie van de Console van het Web te openen.
 1. Bewerk **Day CQ DAM Resource Collection Servlet**. Selecteer **E-mail verzenden**. Klik **Opslaan**.
 
-## OAuth {#setting-up-oauth} instellen
+## OAuth instellen {#setting-up-oauth}
 
 AEM biedt OAuth2 ondersteuning voor zijn geïntegreerde Dienst van de Aannemer, om organisaties toe te staan om e-mailvereisten te beveiligen.
 

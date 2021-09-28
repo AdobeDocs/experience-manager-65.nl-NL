@@ -1,22 +1,21 @@
 ---
 title: Paginaontwerp aanpassen
-seo-title: Paginaontwerp aanpassen
+seo-title: Customizing Page Authoring
 description: AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina's kunt aanpassen
-seo-description: AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina's kunt aanpassen
+seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
+source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1383'
 ht-degree: 0%
 
 ---
-
 
 # Paginaontwerp aanpassen{#customizing-page-authoring}
 
@@ -53,8 +52,7 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >* [Structuur van de ](/help/sites-developing/touch-ui-structure.md) UI voor het maken van AEM aanraakfuncties voor meer informatie over de structurele gebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
 
 >
->
-Dit onderwerp wordt ook behandeld in [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) zitting - [Gebruikersinterfaceaanpassing voor AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+>Dit onderwerp wordt ook behandeld in [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) zitting - [Gebruikersinterfaceaanpassing voor AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -72,7 +70,7 @@ Dit onderwerp wordt ook behandeld in [AEM Gems](https://docs.adobe.com/content/d
 
 Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met behulp van [layers](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelen en aanwijzen.
 
-### Voorbeeld van laag: Live Copy-status {#layer-example-live-copy-status}
+### Voorbeeld van laag: Status van live kopiëren {#layer-example-live-copy-status}
 
 Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens met betrekking tot [beheer op meerdere locaties](/help/sites-administering/msm.md) en markeert u deze in de laag.
 
@@ -93,7 +91,7 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open aem-creatie-nieuw-laag-wijze project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip)
 
-## Nieuwe selectiecategorie toevoegen aan middelenbrowser {#add-new-selection-category-to-asset-browser}
+## Nieuwe selectiecategorie toevoegen aan de middelenbrowser {#add-new-selection-category-to-asset-browser}
 
 In de middelenbrowser worden elementen van verschillende typen/categorieën weergegeven (bijvoorbeeld afbeeldingen, documenten, enz.). De activa kunnen ook door deze activacategorieën worden gefiltreerd.
 
@@ -125,7 +123,7 @@ Zie [dit artikel](/help/sites-developing/implementing-custom-predicate-evaluator
 >
 >Zie [dit kennisbasisartikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) voor een voorbeeld van het uitvoeren van een douanevoorspelling in klassieke UI.
 
-## Nieuwe handeling toevoegen aan een componentwerkbalk {#add-new-action-to-a-component-toolbar}
+## Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
 
 Elke component (gewoonlijk) heeft een werkbalk die toegang biedt tot een reeks handelingen die op die component kunnen worden uitgevoerd.
 
@@ -140,9 +138,9 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open aem-authoring-extension-toolbar-screenshot project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
-## Nieuwe op-plaats-editor {#add-new-in-place-editor} toevoegen
+## Nieuwe op-plaats-editor toevoegen {#add-new-in-place-editor}
 
-### Standaard op plaats-editor {#standard-in-place-editor}
+### Standaardeditor {#standard-in-place-editor}
 
 In een standaard AEM-installatie:
 
@@ -191,7 +189,7 @@ In een standaard AEM-installatie:
    >
    >In AEM uitsnijdverhoudingen, zoals ingesteld door de eigenschap `ratio`, worden gedefinieerd als **height/width**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De auteursgebruikers zullen zich van geen verschil bewust zijn op voorwaarde dat u het `name` bezit duidelijk bepaalt aangezien dit is wat in UI wordt getoond.
 
-#### Nieuwe op-plaats-editor maken {#creating-a-new-in-place-editor}
+#### Een nieuwe plaatseditor maken {#creating-a-new-in-place-editor}
 
 Om een nieuwe op zijn plaats redacteur (binnen uw clientlib) uit te voeren:
 
@@ -222,11 +220,11 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open aem-authoring-extension-inplace-editor project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip)
 
-#### Veelvoudige In-Place Redacteurs {#configuring-multiple-in-place-editors} vormen
+#### Meerdere lokale editors configureren {#configuring-multiple-in-place-editors}
 
 Het is mogelijk om een component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft. Wanneer er meerdere editors op locatie zijn geconfigureerd, kunt u de juiste inhoud selecteren en de juiste editor openen. Zie [Veelvoudige In-Place Redacteurs](/help/sites-developing/multiple-inplace-editors.md) documentatie voor meer informatie vormen.
 
-## Nieuwe paginahandeling toevoegen {#add-a-new-page-action}
+## Handeling Nieuwe pagina toevoegen {#add-a-new-page-action}
 
 Om een nieuwe paginaactie aan de paginagtoolbar toe te voegen, bijvoorbeeld een **Terug naar Plaatsen** (console) actie.
 
@@ -241,9 +239,13 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open aem-authoring-extension-header-backtosites project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-header-backtosites/archive/master.zip)
 
-## Aanpassen van de Verzoek om de Werkstroom van de Activering {#customizing-the-request-for-activation-workflow}
+## De workflow voor het aanvragen van activering aanpassen {#customizing-the-request-for-activation-workflow}
 
-De werkstroom uit de doos, **Verzoek om Activering**, wordt automatisch teweeggebracht wanneer een inhoudsauteur niet de aangewezen replicatierechten heeft.
+De out-of-the-box workflow, **Verzoek om activering**:
+
+* Wordt automatisch weergegeven in het juiste menu wanneer een auteur van inhoud **niet over** de juiste replicatierechten beschikt, maar **wel** lidmaatschap van DAM-Users en Auteurs heeft.
+
+* Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
 Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoek om activering**-workflow bedekken:
 
@@ -259,4 +261,3 @@ Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoe
 
 1. Werk het [workflowmodel](/help/sites-developing/workflows-models.md) en de bijbehorende configuraties/scripts naar wens bij.
 1. Het recht op de [ `replicate` actie](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s verwijderen; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).
-

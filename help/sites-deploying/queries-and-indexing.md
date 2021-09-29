@@ -1,8 +1,8 @@
 ---
 title: Oak-query's en indexering
-seo-title: Oak-query's en indexering
+seo-title: Oak Queries and Indexing
 description: Leer hoe te om indexen in AEM te vormen.
-seo-description: Leer hoe te om indexen in AEM te vormen.
+seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
+source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2868'
 ht-degree: 0%
 
 ---
-
 
 # Oak-query&#39;s en indexering{#oak-queries-and-indexing}
 
@@ -65,13 +64,13 @@ Eerst, wordt de vraag ontleed in een Abstracte Boom van de Syntaxis. Dan, wordt 
 
 Daarna, wordt elke index geraadpleegd om de kosten voor de vraag te schatten. Zodra dat wordt voltooid, worden de resultaten van de goedkoopste index teruggewonnen. Tot slot worden de resultaten gefilterd, zowel om ervoor te zorgen dat de huidige gebruiker leestoegang tot het resultaat heeft en dat het resultaat de volledige vraag aanpast.
 
-## De indexen {#configuring-the-indexes} configureren
+## De indexen configureren {#configuring-the-indexes}
 
 >[!NOTE]
 >
 >Voor een grote opslagplaats is het bouwen van een index een tijdrovende bewerking. Dit geldt zowel voor het eerste ontwerp van een index als voor het opnieuw indexeren (het opnieuw samenstellen van een index nadat de definitie is gewijzigd). Zie ook [Problemen oplossen met eiken-indexen](/help/sites-deploying/troubleshooting-oak-indexes.md) en [Langzame re-indexering voorkomen](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-Als herindexering nodig is in zeer grote opslagplaatsen, met name bij gebruik van MongoDB en voor fullText-indexen, kunt u de tekst vooraf extraheren en eekuitvoering gebruiken om de eerste index te genereren en opnieuw te indexeren.
+Als het opnieuw indexeren in zeer grote bewaarplaatsen nodig is, vooral wanneer het gebruiken van MongoDB en voor full-text indexen, overweeg tekst pre-extractie, en het gebruiken van eiken-looppas om de aanvankelijke index te bouwen en opnieuw te indexeren.
 
 Indexen worden geconfigureerd als knooppunten in de opslagplaats onder het knooppunt **oak:index**.
 
@@ -102,13 +101,13 @@ De index van het Bezit heeft de volgende configuratieopties:
 * De **unique** markering die, indien ingesteld op **true**, een unieke beperking toevoegt aan de eigenschapindex.
 
 * Met de eigenschap **DeclaringNodeTypes** kunt u een bepaald knooppunttype opgeven waarop de index alleen van toepassing is.
-* De **redex**-markering die, indien ingesteld op **true**, een volledige inhoudsherdex activeert.
+* De **redex**-markering die, indien ingesteld op **true**, een volledige opnieuw indexering van de inhoud activeert.
 
 ### De geordende index {#the-ordered-index}
 
 De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. Indexen van dit type moeten met [de Index van het Bezit van Lucene](#the-lucene-property-index) worden vervangen.
 
-### De index voor volledige tekst van geluid {#the-lucene-full-text-index}
+### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
 Een volledige tekstindexeerfunctie op basis van Apache Lucene is beschikbaar in AEM 6.
 
@@ -149,7 +148,7 @@ Neem de volgende voorbeeldvraag:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een nieuwe knoop onder **eak:index te creëren:**
+Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een nieuwe knoop onder **eikel:index:** te creëren
 
 * **Naam:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
@@ -158,19 +157,19 @@ Voeg de volgende eigenschappen toe wanneer het knooppunt is gemaakt:
 
 * **type:**
 
-   ```
+   ```xml
    lucene (of type String)
    ```
 
 * **async:**
 
-   ```
+   ```xml
    async (of type String)
    ```
 
 * **fulltextEnabled:**
 
-   ```
+   ```xml
    false (of type Boolean)
    ```
 
@@ -200,7 +199,7 @@ De standaardanalysator voor een index wordt gevormd in `default` kind van de ana
 >
 >Raadpleeg de API-documentatie van de Lucene-versie die u gebruikt voor een lijst met beschikbare analysators.
 
-#### De klasse Analyzer direct {#specifying-the-analyzer-class-directly} opgeven
+#### De klasse Analyzer rechtstreeks opgeven {#specifying-the-analyzer-class-directly}
 
 Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens de onderstaande procedure:
 
@@ -283,7 +282,7 @@ Elke configuratieparameter die voor de fabriek vereist is, wordt opgegeven als e
 
 Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt van het type `nt:file` voor het desbetreffende bestand te maken.
 
-### De zonindex {#the-solr-index}
+### De zonne-index {#the-solr-index}
 
 Het doel van de Solr-index is voornamelijk zoeken in volledige tekst, maar het kan ook worden gebruikt om zoekopdrachten op pad, eigenschapsbeperkingen en beperkingen van primaire typen te indexeren. Dit betekent de Solr index in Oak voor om het even welk type van vraag JCR kan worden gebruikt.
 
@@ -295,7 +294,7 @@ Het kan worden gevormd om als ingebedde server met de AEM instantie, of als verr
 
 >[!CAUTION]
 >
->Gebruik geen ingesloten Solr-server in een productieomgeving. Het mag alleen in een ontwikkelingsomgeving worden gebruikt.
+>Gebruik geen ingesloten Solr-server in een productieomgeving. Het mag alleen in een ontwikkelomgeving worden gebruikt.
 
 AEM kan met een ingebedde server van Solr worden gebruikt die via de Console van het Web kan worden gevormd. In dit geval wordt de Solr-server uitgevoerd in dezelfde JVM als de AEM-instantie waarin deze is ingesloten.
 
@@ -322,10 +321,10 @@ U kunt de ingesloten Solr-server configureren door:
 
 ### AEM configureren met één externe Solr-server {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM kan ook worden geconfigureerd om met een externe Solr-serverinstantie te werken:
+AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstantie:
 
 1. Download en extraheer de nieuwste versie van Solr. Raadpleeg de [documentatie bij de installatie van Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr) voor meer informatie over hoe u dit kunt doen.
-1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elke schijf in de map waarin Solr is geüpload:
+1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
 
    * Voor de eerste gedeelde map maakt u de map:
 
@@ -385,7 +384,7 @@ AEM kan ook worden geconfigureerd om met een externe Solr-serverinstantie te wer
 
 #### Aanbevolen configuratie voor Solr {#recommended-configuration-for-solr}
 
-Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. De toegewezen eigenschapsindexen die al in AEM aanwezig zijn, worden samengevoegd en mogen niet met andere toepassingen worden gebruikt.
+Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. Het past de specifieke bezitsindexen aan die reeds in AEM aanwezig zijn en niet met andere toepassingen zouden moeten worden gebruikt.
 
 om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. In het geval van multi-knoopplaatsingen, zou het direct onder de wortelomslag van elke knoop moeten gaan.
 
@@ -393,7 +392,7 @@ Aanbevolen Solr-configuratiebestanden
 
 [Bestand ophalen](assets/recommended-conf.zip)
 
-### AEM Indexeringsgereedschappen {#aem-indexing-tools}
+### Gereedschappen voor AEM indexeren {#aem-indexing-tools}
 
 AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Toolset van de Diensten van de Gemeenschappelijke Onderneming:
 
@@ -424,7 +423,7 @@ De gemakkelijkste manier om vereiste informatie voor de vraag te krijgen die wor
 
 Als dit om welke reden dan ook niet mogelijk is, kunt u de indexerende logboeken in één enkel dossier verzamelen en het gebruiken om uw bepaald probleem problemen op te lossen.
 
-#### Logboekregistratie {#enable-logging} inschakelen
+#### Logboekregistratie inschakelen {#enable-logging}
 
 Om registreren toe te laten, moet u **DEBUG** niveaulogboeken voor de categorieën toelaten die op het indexeren van eikel en vragen betrekking hebben. Deze categorieën zijn:
 
@@ -489,4 +488,3 @@ U kunt extra details verzamelen helpen het probleem oplossen, zoals:
 
 1. De eikversie waarop uw instantie wordt uitgevoerd. U kunt dit zien door CRXDE te openen en de versie in de lagere juiste hoek van de welkomstpagina te bekijken, of door de versie van `org.apache.jackrabbit.oak-core` bundel te controleren.
 1. De Foutopsporingsoutput QueryBuilder van de lastige vraag. De debugger kan worden betreden bij: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-

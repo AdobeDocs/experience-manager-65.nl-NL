@@ -12,7 +12,7 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: d995173140237f34a03c8e84128ad9d657c9a026
+source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
 workflow-type: tm+mt
 source-wordcount: '1936'
 ht-degree: 10%
@@ -66,7 +66,7 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 Het wordt aanbevolen om AEM 6.5 te hebben om een AEM instantie van de auteur in te stellen. Als u niet AEM, download het van de volgende plaatsen:
 
-* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Adobe-licentiewebsite](http://licensing.adobe.com).
+* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Adobe-licentiewebsite](https://licensing.adobe.com).
 
 * Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
 

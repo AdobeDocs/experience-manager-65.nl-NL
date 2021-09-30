@@ -1,22 +1,21 @@
 ---
 title: SAML 2.0-verificatiehandler
-seo-title: SAML 2.0-verificatiehandler
+seo-title: SAML 2.0 Authentication Handler
 description: Leer over de Handler van de Authentificatie SAML 2.0 in AEM.
-seo-description: Leer over de Handler van de Authentificatie SAML 2.0 in AEM.
+seo-description: Learn about the SAML 2.0 Authentication Handler in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
-translation-type: tm+mt
-source-git-commit: d559a15e3c1c65c39e38935691835146f54a356e
+exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
+source-git-commit: 6bc60122d2512a6f58c0204cd240a1b99a37ed93
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
@@ -37,7 +36,7 @@ Deze handler slaat het gecodeerde SAML-antwoordbericht op in het user-node ( `us
 >
 >Als u het einde van het communityartikel wilt lezen, klikt u op: [SAML integreren met Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
-## De SAML 2.0-verificatiehandler {#configuring-the-saml-authentication-handler} configureren
+## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
 De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de [SAML](http://saml.xml.org/saml-specifications) 2.0-verificatiehandlerconfiguratie met de naam **Adobe Granite SAML 2.0-verificatiehandler**. De volgende eigenschappen kunnen worden ingesteld.
 
@@ -51,10 +50,9 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 >
 
 
-
 >[!NOTE]
 >
->SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de identiteitsprovider in de TrustStore opgeeft. Zie [Het certificaat IdP toevoegen aan de sectie TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) voor meer informatie.
+>SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [Het certificaat IdP toevoegen aan de sectie TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) voor meer informatie.
 
 **Pad** PathRepository waarvoor deze verificatiehandler moet worden gebruikt door Sling. Als dit leeg is, zal de authentificatiemanager worden onbruikbaar gemaakt.
 
@@ -108,7 +106,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## Voeg de sleutel en certificaatketen van de Serviceleverancier toe aan het AEM sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## De sleutel en certificaatketen van de Serviceleverancier toevoegen aan het AEM sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
@@ -128,7 +126,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-## Een logger configureren voor SAML {#configure-a-logger-for-saml}
+## Vorm Logger voor SAML {#configure-a-logger-for-saml}
 
 U kunt opstelling een Logger om het even welke kwesties zuiveren die uit het misconfigureren SAML zouden kunnen voortvloeien. U kunt dit doen door:
 
@@ -139,4 +137,3 @@ U kunt opstelling een Logger om het even welke kwesties zuiveren die uit het mis
    * **Logniveau:** Foutopsporing
    * **logbestand:** logs/saml.log
    * **Logger:** com.adobe.granite.auth.saml
-

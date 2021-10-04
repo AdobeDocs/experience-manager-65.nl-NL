@@ -1,8 +1,8 @@
 ---
 title: Adobe IMS-verificatie en [!DNL Admin Console] Ondersteuning voor AEM Managed Services
-seo-title: Adobe IMS-verificatie en [!DNL Admin Console] Ondersteuning voor AEM Managed Services
+seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
 description: Leer hoe te om  [!DNL Admin Console] in AEM te gebruiken.
-seo-description: Leer hoe te om  [!DNL Admin Console] in AEM te gebruiken.
+seo-description: Learn how to use the [!DNL Admin Console] in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 3f55ebfe3b1603a573fcb77155227c449c6c0fbb
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 11%
 
 ---
@@ -25,9 +24,13 @@ ht-degree: 11%
 >
 >Deze functie is alleen beschikbaar voor klanten van Adobe Managed Services.
 
+>[!NOTE]
+>
+>IMS-aanmelding voor AEM ondersteunt geen geneste groepen in de Admin Console.
+
 ## Inleiding {#introduction}
 
-AEM 6.4.3.0 introduceert [!DNL Admin Console] steun voor AEM instanties en Adobe IMS (het Systeem van Identity Management) gebaseerde authentificatie voor **AEM klanten Managed Services**.
+AEM 6.4.3.0 introduceert [!DNL Admin Console] ondersteuning voor AEM instanties en op Adobe IMS (Identity Management System) gebaseerde verificatie voor **AEM Managed Services** klanten.
 
 AEM aan het instappen aan [!DNL Admin Console] zal AEM klanten van Managed Services toestaan om alle Experience Cloud gebruikers in één console te beheren. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
 
@@ -43,19 +46,19 @@ AEM aan het instappen aan [!DNL Admin Console] zal AEM klanten van Managed Servi
 
 ## Architectuur {#architecture}
 
-IMS de Authentificatie werkt door het protocol OAuth tussen AEM en het eindpunt van Adobe IMS te gebruiken. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
+IMS-verificatie werkt met behulp van het OAuth-protocol tussen AEM en het Adobe IMS-eindpunt. Zodra een gebruiker aan IMS is toegevoegd en een Adobe ID heeft, kan deze zich aanmelden bij AEM Managed Services-instanties met IMS-referenties.
 
 De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en naar keuze aan klant IDP voor bevestiging van SSO worden opnieuw gericht en dan terug naar AEM.
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## {#how-to-set-up} instellen
+## Instellen {#how-to-set-up}
 
 ### Aan boord gaan van organisaties aan [!DNL Admin Console] {#onboarding-organizations-to-admin-console}
 
-De klant die zich aan [!DNL Admin Console] houdt, is een eerste vereiste voor het gebruik van Adobe IMS voor AEM verificatie.
+De klant die zich aan [!DNL Admin Console] houdt, is een vereiste om Adobe IMS voor AEM verificatie te kunnen gebruiken.
 
-Als eerste stap, zouden de klanten een Organisatie moeten hebben die in Adobe IMS wordt voorzien. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe [!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
+Als eerste stap moeten klanten beschikken over een organisatie die is ingericht in Adobe IMS. Adobe Enterprise-klanten worden vertegenwoordigd als IMS-organisaties in de [Adobe [!DNL Admin Console]](https://helpx.adobe.com/nl/enterprise/using/admin-console.html).
 
 AEM Managed Services-klanten moeten al een organisatie hebben die voorzien is, en als onderdeel van de IMS-provisioning worden de exemplaren van de klant beschikbaar gesteld in [!DNL Admin Console] voor het beheer van gebruikersrechten en toegang.
 
@@ -93,7 +96,7 @@ Gebruikers kunnen ook handmatig worden gemaakt als de klant deze methode al gebr
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Bestand uploaden in de [!DNL Admin Console] UI {#file-upload-in-the-admin-console-ui}
+#### Bestand uploaden in de gebruikersinterface [!DNL Admin Console] {#file-upload-in-the-admin-console-ui}
 
 Voor een eenvoudige afhandeling van het maken van gebruikers kan een CSV-bestand worden geüpload om gebruikers in bulk toe te voegen:
 
@@ -191,7 +194,7 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Bestaande gebruikers {#migrating-existing-users} migreren
+### Bestaande gebruikers migreren {#migrating-existing-users}
 
 Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
 
@@ -199,7 +202,7 @@ Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen wo
 
 Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
 
-### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
+### Het beheren van Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
 Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 

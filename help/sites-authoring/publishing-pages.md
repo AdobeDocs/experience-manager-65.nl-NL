@@ -1,8 +1,8 @@
 ---
 title: Pagina's publiceren
-seo-title: Pagina's publiceren
+seo-title: Publishing Pages
 description: Pagina's publiceren
-seo-description: 'null'
+seo-description: null
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
+source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1661'
 ht-degree: 6%
 
 ---
-
 
 # Pagina&#39;s publiceren {#publishing-pages}
 
@@ -33,16 +32,13 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >* **Publiceren/Publiceren ongedaan maken**
    >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
-   >
-   >
-* **Activeren/deactiveren**
+>
+>* **Activeren/deactiveren**
    >  Deze termen zijn synoniem met publiceren/verwijderen.
-   >
-   >
-* **Replicatie/replicatie**
+>
+>* **Replicatie/replicatie**
    >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
 >
-
 
 
 >[!NOTE]
@@ -54,7 +50,6 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
 
 >
-
 
 
 ## Pagina&#39;s publiceren {#publishing-pages-1}
@@ -95,6 +90,10 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 >
 >Publiceren vanuit de editor is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
 
+>[!NOTE]
+>
+>Pagina&#39;s die in de editor worden benaderd door [aliassen](/help/sites-authoring/editing-page-properties.md#advanced), kunnen niet worden gepubliceerd. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+
 ### Publiceren vanuit de console {#publishing-from-the-console}
 
 In de siteconsole zijn er twee opties voor publiceren:
@@ -122,7 +121,7 @@ Een pagina publiceren met Snel publiceren:
 >
 >Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
 
-#### Publicatie {#manage-publication} beheren
+#### Publicatie beheren {#manage-publication}
 
 **U kunt** Publicatie beheren met meer opties dan Snel publiceren, zodat onderliggende pagina&#39;s kunnen worden opgenomen, de referenties kunnen worden aangepast en toepasselijke workflows kunnen worden gestart en de optie kan worden geboden om op een latere datum te publiceren.
 
@@ -207,7 +206,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
-## Publicatie van pagina&#39;s {#unpublishing-pages} ongedaan maken
+## Publicatie van pagina&#39;s ongedaan maken {#unpublishing-pages}
 
 Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw publicatieomgeving, zodat deze niet langer beschikbaar is voor uw lezers.
 
@@ -216,11 +215,15 @@ Op een [manier gelijkend op het publiceren](/help/sites-authoring/publishing-pag
 * [Vanuit de pagina-editor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### Publicatie ongedaan maken in de Editor {#unpublishing-from-the-editor}
+### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
 
 Als u de publicatie van een pagina ongedaan wilt maken, selecteert u **Publicatie van pagina** ongedaan maken in het menu **Pagina-informatie**, net als wanneer u de pagina](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor) zou publiceren.[
 
-### Publiceren van de console {#unpublishing-from-the-console} ongedaan maken
+>[!NOTE]
+>
+>Pagina&#39;s die in de editor toegankelijk zijn via [aliassen](/help/sites-authoring/editing-page-properties.md#advanced), kunnen niet ongepubliceerd worden. Publicatieopties in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+
+### Publicatie ongedaan maken vanuit de console {#unpublishing-from-the-console}
 
 Net zoals u [de optie Publicatie beheren gebruikt om te publiceren](/help/sites-authoring/publishing-pages.md#manage-publication), kunt u deze ook gebruiken om de publicatie ongedaan te maken.
 
@@ -235,7 +238,7 @@ Net zoals u [de optie Publicatie beheren gebruikt om te publiceren](/help/sites-
 
 1. Om unpublication te voltooien, ga door de tovenaar aangezien u [de pagina ](/help/sites-authoring/publishing-pages.md#manage-publication) zou publiceren.
 
-## Een structuur publiceren en verwijderen {#publishing-and-unpublishing-a-tree}
+## Een boomstructuur publiceren en de publicatie ervan opheffen {#publishing-and-unpublishing-a-tree}
 
 Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerkt - die allen onder de zelfde wortelpagina ingezeten zijn - kan het gemakkelijker zijn om de volledige boom in één actie te publiceren.
 

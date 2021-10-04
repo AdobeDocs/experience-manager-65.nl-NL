@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: b82544398ca414afab867f188f33ae60989596f3
+source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '917'
 ht-degree: 6%
 
 ---
@@ -151,6 +151,7 @@ ht-degree: 6%
       + [Clientcontext in detail](client-context.md)
       + [JavaScript-API voor clientcontext](ccjsapi.md)
 + AEM{#extending-aem} uitbreiden
+   + [AEM uitbreiden met Adobe Developer App Builder](app-builder.md)
    + [Paginaontwerp aanpassen](customizing-page-authoring-touch.md)
    + [De consoles aanpassen](customizing-consoles-touch.md)
    + [Weergaven van pagina-eigenschappen aanpassen](page-properties-views.md)

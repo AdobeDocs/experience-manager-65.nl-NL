@@ -3,12 +3,12 @@ title: Digitale middelen en afbeeldingen zoeken in [!DNL Adobe Experience Manage
 description: Leer hoe u de vereiste elementen vindt in [!DNL Adobe Experience Manager] met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 mini-toc-levels: 1
-feature: Zoeken, metagegevens
+feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: 19dd081674b4954498d6aa62335f6b5a9f2a4146
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5521'
 ht-degree: 4%
 
 ---
@@ -42,7 +42,7 @@ Gebruik het **[!UICONTROL Filters]** paneel om naar activa, omslagen, markeringe
 
 Verken uzelf met de zoekinterface en de beschikbare acties.
 
-![De zoekresultateninterface voor Experience Manager Assets begrijpen](assets/aem_search_results.png)
+![Experience Manager Assets-interface voor zoekresultaten begrijpen](assets/aem_search_results.png)
 
 *Afbeelding: Begrijp de interface van  [!DNL Experience Manager Assets] onderzoeksresultaten.*
 
@@ -161,7 +161,7 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Creator | maker:John |
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| Gereedschap Maker | creatortool:&quot;Adobe Photoshop CC 2015&quot; |
+| Gereedschap Maker | creatortool:&quot;Adobe Photoshop&quot; |
 | Copyrighteigenaar | copyrightowner:&quot;Adobe Systems&quot; |
 | Medewerker | contribuant:John |
 | Gebruiksvoorwaarden | usageterms:&quot;CopyRights Reserved&quot; |
@@ -206,7 +206,7 @@ Met Adobe Asset Link kunnen creatieve professionals nu toegang krijgen tot inhou
 
 ### Middelen zoeken in de bureaubladtoepassing [!DNL Experience Manager] {#desktop-app}
 
-Creatieve professionals gebruiken de desktop-app om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Windows of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd. De wijzigingen worden weer opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, `*`- en `?`-jokertekens en `AND`-operator. Zie [Elementen doorbladeren, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
+Creatieve professionals gebruiken de desktop-app om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar te maken op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd - de wijzigingen worden weer opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de opslagplaats is gemaakt. De toepassing ondersteunt basiszoekopdrachten met een of meer trefwoorden, `*`- en `?`-jokertekens en `AND`-operator. Zie [Elementen doorbladeren, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
 ### Middelen zoeken in [!DNL Brand Portal] {#brand-portal}
 
@@ -236,7 +236,7 @@ Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken na
 
 Met de functie Asset Selector kunt u de DAM-middelen op een speciale manier zoeken, filteren en doorbladeren. De selecteur van activa is beschikbaar bij `https://[aem_server]:[port]/aem/assetpicker.html`. U kunt de metagegevens ophalen van elementen die u selecteert met de elementkiezer. U kunt de toepassing starten met ondersteunde aanvraagparameters, zoals het type element (afbeelding, video, tekst) en de selectiemodus (enkele of meerdere selecties). Deze parameters stellen de context van de elementenkiezer voor een bepaalde zoekinstantie in en blijven tijdens de selectie intact.
 
-De elementkiezer gebruikt het HTML5 `Window.postMessage`-bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. Deze functie werkt alleen in de modus Bladeren en alleen met de resultatenpagina van Omnsearch.
+De elementenkiezer gebruikt het HTML5 `Window.postMessage`-bericht om gegevens voor het geselecteerde element naar de ontvanger te verzenden. Deze functie werkt alleen in de modus Bladeren en alleen met de resultatenpagina van Omnsearch.
 
 Geef de volgende aanvraagparameters in een URL door om de elementenkiezer in een bepaalde context te starten:
 

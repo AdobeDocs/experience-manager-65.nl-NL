@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
 workflow-type: tm+mt
 source-wordcount: '2235'
 ht-degree: 10%
@@ -31,7 +31,7 @@ U kunt de volgende methoden gebruiken om metagegevens toe te voegen aan digitale
 
 * Om te beginnen voegen de native toepassingen die elementen maken er metagegevens aan toe. Met [Acrobat voegt u bijvoorbeeld metagegevens](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) toe aan PDF-bestanden of met een camera voegt u enkele basismetagegevens toe aan de foto&#39;s. Wanneer u elementen genereert, kunt u de metagegevens toevoegen in native toepassingen zelf. U kunt bijvoorbeeld [IPTC-metagegevens toevoegen in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te met meta-gegevens [werken in  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en het [etikettenpaneel voor  [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] zien.
+* Voordat u een element uploadt naar [!DNL Experience Manager], kunt u metagegevens bewerken en wijzigen met de oorspronkelijke toepassing die is gebruikt om een element te maken of met een andere toepassing voor het bewerken van metagegevens. Wanneer u een element uploadt naar Experience Manager, worden de metagegevens verwerkt. Bijvoorbeeld, zie hoe te met meta-gegevens [werken in  [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) en het [etikettenpaneel voor  [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange] zien.
 
 * In [!DNL Experience Manager Assets] kunt u metagegevens van elementen handmatig toevoegen of bewerken op de pagina [!UICONTROL Properties].
 

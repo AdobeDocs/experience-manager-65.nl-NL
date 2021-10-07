@@ -5,21 +5,13 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 5462eb18c55a509712dab8fdbb653eb2d1889763
+source-git-commit: 64ac790579db921aa16f32c51592f0b701237df9
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
 
-<!--
-
-Define Media Lib
-Define req for it
-Define use cases
-Define what is not included
-
--->
 
 # Media Library gebruiken voor elementair beheer van bedrijfsmiddelen {#manage-assets-using-media-library}
 
@@ -43,9 +35,9 @@ Als u onbedoeld gebruik van [!DNL Assets] eigenschappen wilt verhinderen die u g
 
 ## Media Library gebruiken {#use-media-library}
 
-Media Library bestrijkt in grote lijnen de volgende gebruiksgevallen:
+Media Library biedt standaard DAM-functies voor de volgende gebruiksgevallen:
 
-* Basisfuncties voor DAM bieden voor webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites].
+* Webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites].
 * Aangepaste formulieren en communicatie gemaakt met [!DNL Adobe Experience Manager Forms].
 * Ervaringen met digitaal scherm die zijn gemaakt met [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST-API&#39;s voor bewerkingen zonder kop.

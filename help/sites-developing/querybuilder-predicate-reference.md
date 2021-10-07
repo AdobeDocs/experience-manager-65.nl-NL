@@ -1,24 +1,23 @@
 ---
 title: Voorlopige naslaggids voor Query Builder
-seo-title: Voorlopige naslaggids voor Query Builder
+seo-title: Query Builder Predicate Reference
 description: Volledige predikate verwijzing voor de Bouwer van de Vraag API.
-seo-description: Volledige predikate verwijzing voor de Bouwer van de Vraag API.
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
-translation-type: tm+mt
-source-git-commit: 054b49fb8aacb9e267ed23552d788f72123ed3b3
+exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 2%
 
 ---
 
-
-# Predicate Reference{#query-builder-predicate-reference} van de Bouwer van de vraag
+# Voorlopige naslaggids voor Query Builder{#query-builder-predicate-reference}
 
 ## Algemeen {#general}
 
@@ -26,7 +25,7 @@ ht-degree: 2%
 * [groep](#group)
 * [ordonneren](#orderby)
 
-## Voorspeld {#predicates}
+## Voorspellen {#predicates}
 
 * [boolproperty](/help/sites-developing/querybuilder-predicate-reference.md#boolproperty)
 * [contentfragment](/help/sites-developing/querybuilder-predicate-reference.md#contentfragment)
@@ -51,7 +50,7 @@ ht-degree: 2%
 * [tagzoeken](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
-### oolproperty {#boolproperty}
+### boolproperty {#boolproperty}
 
 Komt overeen met de JCR BOOLEAN-eigenschappen. Accepteert alleen de waarden &quot; `true`&quot; en &quot; `false`&quot;. In het geval van &quot; `false`&quot;, zal het aanpassen als het bezit de waarde &quot; `false`&quot;heeft of als het helemaal niet bestaat. Dit kan handig zijn om te controleren op Booleaanse markeringen die alleen zijn ingesteld wanneer deze zijn ingeschakeld.
 
@@ -61,12 +60,12 @@ Ondersteunt facetextractie. Wordt geleverd met emmers voor elke `true`- of `fals
 
 #### Eigenschappen {#properties}
 
-* **relatief pad**
-naar eigenschap, bijvoorbeeld 
+* ****
+Eigenschaprelatief pad naar eigenschap, bijvoorbeeld 
 `myFeatureEnabled` or `jcr:content/myFeatureEnabled`
 
-* **value to check property for, &quot;**
- 
+* ****
+value value to check property for, &quot; 
 `true`&quot; or &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -222,7 +221,7 @@ Dit is conceptueel `fulltext AND ( (path AND type) OR (path AND type) )`. Houd e
 
 ### hasPermission {#haspermission}
 
-Hiermee beperkt u het resultaat tot items waarvoor de huidige sessie de opgegeven [JCR-bevoegdheden heeft.](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Hiermee beperkt u het resultaat tot items waarvoor de huidige sessie de opgegeven [JCR-bevoegdheden heeft.](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex gebruiken. Het ondersteunt geen facetextractie.
 
@@ -232,7 +231,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
    de door komma&#39;s gescheiden voorrechten van het JCR die de huidige gebruikerszitting ALLE voor de knoop in kwestie moet hebben; bijvoorbeeld `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### taal {#language}
 
 Hiermee zoekt u CQ-pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een sitestructuur op hoofdniveau bevat.
 
@@ -242,11 +241,11 @@ Ondersteunt facetextractie. Zal emmers voor elke unieke taalcode verstrekken.
 
 #### Eigenschappen {#properties-8}
 
-* **taal**
+* **language**
 
    ISO-taalcode, bijvoorbeeld &quot; `de`&quot;
 
-### mainasset {#mainasset}
+### hoofdmiddel {#mainasset}
 
 Controleert of een knooppunt een DAM-hoofdmiddel is en geen subelement. Dit is eigenlijk elk knooppunt dat zich niet binnen een &#39;subassets&#39;-knooppunt bevindt. Merk op dat dit niet het `dam:Asset` knooptype controleert. Als u deze voorspelling wilt gebruiken, stelt u eenvoudig &quot; `mainasset=true`&quot; of &quot; `mainasset=false`&quot; in, maar er zijn geen eigenschappen meer.
 
@@ -260,7 +259,7 @@ Ondersteunt facetextractie. Twee emmers voor hoofd- en subactiva.
 
    boolean, &quot; `true`&quot; voor hoofdactiva, &quot; `false`&quot; voor subactiva
 
-### memberOf {#memberof}
+### lidOf {#memberof}
 
 Vindt punten die lid van een specifieke [sling middelinzameling](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) zijn.
 
@@ -302,7 +301,7 @@ Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
 
    relatief pad naar de eigenschap `DATE` die moet worden gecontroleerd (vereist)
 
-### orderby {#orderby}
+### ordonneren {#orderby}
 
 Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige eigenschappen wordt vereist, moet dit predikaat veelvoudige tijden worden toegevoegd gebruikend het aantalprefix, zoals `1_orderby=first`, `2_oderby=second`.
 
@@ -320,7 +319,7 @@ Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige e
 
    als deze waarde wordt ingesteld op &quot; `ignore`&quot;, worden sorteerhoofdletters en kleine letters ongevoelig, wat betekent dat &quot;a&quot; voor &quot;B&quot; komt; indien leeg of weggelaten, wordt onderscheid gemaakt tussen hoofdletters en kleine letters, wat betekent dat &quot;B&quot; voor &quot;a&quot; komt
 
-### path {#path}
+### pad {#path}
 
 Hiermee zoekt u in een bepaald pad.
 
@@ -328,7 +327,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 #### Eigenschappen {#properties-14}
 
-* **pad**
+* **path**
 
    padpatroon; afhankelijk van exact, of zal de volledige subboom (als het toevoegen `//*` in xpath, maar merk op dat dit niet het basisweg omvat) (exact=false, gebrek) of slechts een nauwkeurige weggelijken, die vervangingskaarten ( `*`) kunnen omvatten; als self is ingesteld, wordt de gehele substructuur, inclusief het basisknooppunt, doorzocht
 
@@ -438,7 +437,7 @@ Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
 
    lagere datumgebonden in milliseconden of `1s 2m 3h 4d 5w 6M 7y` (één seconde, twee minuten, drie uren, vier dagen, vijf weken, zes maanden, zeven jaar) met betrekking tot huidige servertijd, gebruik &quot;-&quot;voor negatieve compensatie
 
-### root {#root}
+### basis {#root}
 
 Hoofdvoorspelbare groep. Steunt alle eigenschappen van een groep en staat toe om globale vraagparameters te plaatsen.
 
@@ -494,7 +493,7 @@ Biedt geen ondersteuning voor facetextractie voor de voorspelling van de opgesla
 
    pad naar de opgeslagen query (eigenschap String of knooppunt `nt:file`)
 
-### vergelijkbaar {#similar}
+### gelijkaardig {#similar}
 
 Zoekopdracht op basis van overeenkomsten met gebruik van `rep:similar()` van JCR XPath.
 
@@ -502,11 +501,11 @@ Filteren wordt niet ondersteund. Biedt geen ondersteuning voor facetextractie.
 
 #### Eigenschappen {#properties-20}
 
-* **gelijkaardig absolute weg aan de knoop waarvoor om gelijkaardige knopen te vinden**
+* ****
+vergelijkbaar absoluut pad naar het knooppunt waarvoor vergelijkbare knooppunten moeten worden gevonden
 
-
-* **relatieve**
-locala-pad naar een afstammend knooppunt of 
+* ****
+locala relatief pad naar een afstammend knooppunt of 
 `.` voor het huidige knooppunt (optioneel, standaard is &quot;  `.`&quot;)
 
 ### tag {#tag}
@@ -549,7 +548,7 @@ Ondersteunt facetextractie. Hiermee geeft u emmers voor elke unieke tag op met d
 
    eigenschap (of relatief pad naar eigenschap) om naar te kijken (standaard &quot; `cq:tags`&quot;)
 
-### tagsearch {#tagsearch}
+### tagzoeken {#tagsearch}
 
 Zoekt naar inhoud gelabeld met een of meer tags door trefwoorden op te geven. Hiermee zoekt u eerst naar tags die deze trefwoorden bevatten in de titels en beperkt u het resultaat vervolgens tot alleen items die met deze trefwoorden zijn getagd.
 
@@ -573,7 +572,7 @@ Biedt geen ondersteuning voor facetextractie.
 
    (bool) doorzoek volledige labeltekst, dus alle titels, beschrijving enz. (heeft voorrang op &quot;l `ang`&quot;)
 
-### tekst {#type}
+### type {#type}
 
 Hiermee beperkt u de resultaten tot een specifiek JCR-knooppunttype, zowel het primaire knooppunttype als het mixintype. Dit zal ook subtypes van dat knooptype vinden. Merk op dat de gegevensopslagplaats onderzoeksindexen de knooppunttypes voor efficiënte uitvoering moeten behandelen.
 

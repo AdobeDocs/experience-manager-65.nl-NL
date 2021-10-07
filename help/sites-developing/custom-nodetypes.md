@@ -1,8 +1,8 @@
 ---
 title: Aangepaste knooppunttypen
-seo-title: Aangepaste knooppunttypen
+seo-title: Custom Node Types
 description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
-seo-description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
+seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1877'
 ht-degree: 7%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 7%
 
 Omdat AEM gebaseerd is op Sling en een gegevensopslagplaats JCR gebruikt, zijn de knooptypes die door beide worden aangeboden beschikbaar voor gebruik:
 
-* [JCR-knooppunttypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR-knooppunttypen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Daar komt nog bij. AEM biedt een reeks aangepaste knooppunttypen.
@@ -131,7 +131,7 @@ Definieert het knooptype van een trackback-knooppunt.
 
 ## Kern {#core}
 
-### cq:Pagina {#cq-page}
+### cq:pagina {#cq-page}
 
 **Beschrijving**
 
@@ -405,7 +405,7 @@ Inhoud van een DAM-element.
    * `+ metadata (nt:unstructured)`
    * `+ renditions (nt:folder)`
 
-### dam:Element {#dam-asset}
+### dam:Asset {#dam-asset}
 
 **Beschrijving**
 
@@ -429,7 +429,7 @@ Miniatuur die een DAM-element vertegenwoordigt.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Containerlijst {#delivery-container-list} leveren
+## Containerlijst voor levering {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
@@ -442,7 +442,7 @@ Containerlijst.
 * `[cq:containerList]`
    * `mixin`
 
-## Leveringspagina {#delivery-page}
+## Afleveringspagina {#delivery-page}
 
 ### cq:Cq4PageAttributes {#cq-cq-pageattributes}
 
@@ -621,7 +621,7 @@ Voeg voor AEM 5.4 aan het einde van de lijst toe:
 
 * `- cq:rolloutConfigs (string) multiple /** deprecated **/`
 
-### cq:BlueprintAction {#cq-blueprintaction}
+### cq:BluepintAction {#cq-blueprintaction}
 
 **Beschrijving**
 
@@ -942,7 +942,7 @@ Veld
 
 ## Wiki {#wiki}
 
-### wiki:Onderwerp {#wiki-topic}
+### wiki:onderwerp {#wiki-topic}
 
 **Beschrijving**
 
@@ -963,7 +963,7 @@ Wiki-onderwerp
    * `- wiki:logMessage (string)`
    * `- wiki:quietSave (boolean)`
 
-### wiki:Gebruiker {#wiki-user}
+### wiki:gebruiker {#wiki-user}
 
 **Beschrijving**
 
@@ -974,7 +974,7 @@ Wiki-gebruiker
 * `[wiki:User] mixin`
    * `- wiki:subscriptions (string) multiple`
 
-### wiki:Eigenschappen {#wiki-properties}
+### wiki:eigenschappen {#wiki-properties}
 
 **Beschrijving**
 
@@ -1134,7 +1134,7 @@ Of tabblad
    * `- workflowId (String) // not compulsory as this node will already be attached to the workflow node`
    * `- nodeId (String)`
 
-### cq:wait {#cq-wait}
+### cq:wachten {#cq-wait}
 
 **Beschrijving**
 

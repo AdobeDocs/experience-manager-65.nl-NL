@@ -1,8 +1,8 @@
 ---
 title: AEM kernconcepten
-seo-title: De basisbeginselen
+seo-title: The Basics
 description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
-seo-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,14 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-translation-type: tm+mt
-source-git-commit: 78e28636eec331314c2f29c93d516215b1572f20
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3334'
 ht-degree: 0%
 
 ---
 
-# Core Concepten AEM {#aem-core-concepts}
+# AEM kernconcepten {#aem-core-concepts}
 
 >[!NOTE]
 >
@@ -42,7 +41,7 @@ Het wordt ook geadviseerd dat u [Richtlijnen en Beste Praktijken ](/help/sites-d
 
 ## Java Content Repository {#java-content-repository}
 
-De JCR-standaard (Java Content Repository), [JSR 283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatievrije manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats.
+De JCR-standaard (Java Content Repository), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatievrije manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats.
 
 Specificatie lead wordt gehouden door Adobe Research (Zwitserland) AG.
 
@@ -54,9 +53,9 @@ De Server van de Ervaring verstrekt de Diensten van de Ervaring die AEM worden v
 
 [Apache ](https://jackrabbit.apache.org/) Jackrabbitis is een open-source, volledig conform, implementatie van de JCR API 2.0.
 
-## Verwerking verzoek tot verzending {#sling-request-processing}
+## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
-### Inleiding tot Sling {#introduction-to-sling}
+### Inleiding tot verkoop {#introduction-to-sling}
 
 AEM wordt gebouwd gebruikend [Sling](https://sling.apache.org/site/index.html), een de toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit, of in het geval van AEM de CRX Content Repository, als gegevensopslagruimte. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
@@ -74,7 +73,7 @@ Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters
 
 ![De SlingPostServlet gebruiken](assets/sling-cheatsheet-02.png)
 
-### Verdelen is inhoud centraal {#sling-is-content-centric}
+### Verdelen is Content Centric {#sling-is-content-centric}
 
 Sling is *inhoudcentric*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
@@ -117,7 +116,7 @@ We kunnen het opsplitsen in samengestelde delen:
 
 **** extensionContent-indeling; geeft ook het script op dat moet worden gebruikt voor rendering.
 
-**** suffixCan be used to specify additional information.
+**** suffixKan worden gebruikt om aanvullende informatie op te geven.
 
 **param(en)** Alle parameters die vereist zijn voor dynamische inhoud.
 
@@ -134,7 +133,7 @@ De onderstaande afbeelding illustreert het gebruikte mechanisme, dat in de volge
 
 Met Sling, specificeert u welk manuscript een bepaalde entiteit teruggeeft (door het `sling:resourceType` bezit in de knoop te plaatsen JCR). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
 
-#### Aanvragen toewijzen aan bronnen {#mapping-requests-to-resources}
+#### Verzoeken om toewijzing aan bronnen {#mapping-requests-to-resources}
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
@@ -144,7 +143,7 @@ Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repo
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
 
-### Script {#locating-the-script} zoeken
+### Script zoeken {#locating-the-script}
 
 Wanneer de aangewezen bron (inhoudsknoop) wordt gevestigd, wordt **sling middeltype** gehaald. Dit is een pad dat zoekt naar het script dat moet worden gebruikt voor het renderen van de inhoud.
 
@@ -162,7 +161,7 @@ Een paar andere punten die u kunt opmerken zijn:
 * Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven volgens de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
 * verschillende scriptengines worden ondersteund :
 
-   * HTML (HTML Template Language - voorkeur van Adobe Experience Manager en aanbevolen sjabloonsysteem voor de server voor HTML): `.html`
+   * HTL (Sjabloontaal HTML — door Adobe Experience Manager aanbevolen en aanbevolen Sjabloonsysteem aan serverzijde voor HTML): `.html`
    * ECMAScript (JavaScript) Pages (uitvoering op de server): `.esp, .ecma`
    * Java Server Pages (serveruitvoering): `.jsp`
    * Java Servlet Compiler (uitvoering op de server): `.java`
@@ -176,7 +175,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script zal /apps/hr/jobs/jobs.esp zijn; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+   Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * POST-aanvragen (alle aanvraagtypen behalve GET/HEAD, de methodenaam moet in hoofdletters staan)
 
@@ -208,7 +207,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
 * Als er helemaal geen script wordt gevonden, wordt het standaardscript gebruikt.
 
-   De standaardvertoning wordt momenteel ondersteund als normale tekst (.txt), HTML (.html) en JSON (.json), die allemaal de eigenschappen van het knooppunt (correct opgemaakt) vermelden. De standaardvertoning voor de extensie .res, of aanvragen zonder een aanvraagextensie, is de bron te spool (waar mogelijk).
+   De standaardvertoning wordt momenteel ondersteund als tekst zonder opmaak (.txt), HTML (.html) en JSON (.json), die allemaal de eigenschappen van het knooppunt vermelden (correct opgemaakt). De standaardvertoning voor de extensie .res, of aanvragen zonder een aanvraagextensie, is de bron te spool (waar mogelijk).
 * Voor http-foutafhandeling (codes 403 of 404) wordt met Sling gezocht naar een script op:
 
    * de locatie /apps/sling/servlet/errorhandler voor [aangepaste scripts](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -272,7 +271,7 @@ De typehiërarchie van:
 
 Dit komt doordat `/y` de eigenschap `sling:resourceSuperType` heeft, terwijl `/x` dit niet doet en daarom wordt het supertype ervan ontleend aan het type resource.
 
-#### Sling-scripts kunnen niet rechtstreeks {#sling-scripts-cannot-be-called-directly} worden aangeroepen
+#### Sling-scripts kunnen niet rechtstreeks worden aangeroepen {#sling-scripts-cannot-be-called-directly}
 
 Binnen Verschuiving, kunnen de manuscripten niet direct worden geroepen aangezien dit het strikte concept van een REST server zou breken; u zou middelen en vertegenwoordiging mengen.
 
@@ -285,11 +284,11 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
 
 * uw codearchitectuur niet meer zo schoon en zo duidelijk gestructureerd is als zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
 
-### Verschuivende API {#sling-api}
+### Verkopen-API {#sling-api}
 
 Dit gebruikt het Sling API-pakket, org.apache.sling.&amp;ast; en tagbibliotheken.
 
-### Verwijzen naar bestaande elementen met sling:include {#referencing-existing-elements-using-sling-include}
+### Verwijzen naar bestaande elementen met gebruik van sling:include {#referencing-existing-elements-using-sling-include}
 
 Een laatste overweging is de noodzaak om naar bestaande elementen in de scripts te verwijzen.
 
@@ -332,11 +331,11 @@ Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw 
 
 Zie [de Webconsole](/help/sites-deploying/web-console.md), [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) en [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) voor meer informatie.
 
-## Ontwikkelingsobjecten in AEM omgeving {#development-objects-in-the-aem-environment}
+## Ontwikkelingsobjecten in de AEM {#development-objects-in-the-aem-environment}
 
 De volgende zaken zijn van belang voor ontwikkeling:
 
-**** ItemAn punt is of een knoop of een bezit.
+**** ItemAn item is of een knoop of een bezit.
 
 Voor gedetailleerde informatie over het manipuleren van voorwerpen van het Punt, verwijs naar [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) van de Interface javax.jcr.Item
 
@@ -362,13 +361,13 @@ Dialoogvensters worden samengesteld door Widgets te combineren.
 
 AEM is ontwikkeld met behulp van de ExtJS-bibliotheek met widgets.
 
-**DialogA-** dialoogvenster is een speciaal type widget.
+**** DialogA-dialoogvenster is een speciaal type widget.
 
 Voor het bewerken van inhoud gebruikt AEM dialoogvensters die zijn gedefinieerd door de ontwikkelaar van de toepassing. In deze sjablonen wordt een reeks widgets gecombineerd, zodat de gebruiker alle velden en handelingen krijgt die nodig zijn om de gerelateerde inhoud te bewerken.
 
 Dialoogvensters worden ook gebruikt voor het bewerken van metagegevens en door verschillende beheergereedschappen.
 
-**De** softwarecomponent ComponentA is een systeemelement dat een vooraf bepaalde dienst of een gebeurtenis aanbiedt, en met andere componenten kan communiceren.
+**** ComponentA softwarecomponent is een systeemelement dat een vooraf bepaalde dienst of een gebeurtenis aanbiedt, en met andere componenten kan communiceren.
 
 Binnen AEM wordt een component vaak gebruikt om de inhoud van een middel terug te geven. Wanneer de bron een pagina is, wordt de component die de bron rendert, een component op hoofdniveau of een component Pagecomponent genoemd. Een component hoeft echter geen inhoud te renderen en hoeft niet te zijn gekoppeld aan een specifieke bron. een navigatiecomponent geeft bijvoorbeeld informatie over meerdere bronnen weer.
 
@@ -385,7 +384,7 @@ Hiermee worden de paginacomponent gedefinieerd die wordt gebruikt om de pagina e
 
 **Component Pagina (bovenste component)** De component die moet worden gebruikt om de pagina weer te geven.
 
-**Pagina** A is een &#39;exemplaar&#39; van een sjabloon.
+**** PageA-pagina is een &#39;exemplaar&#39; van een sjabloon.
 
 Een pagina heeft een hiërarchieknooppunt van het type cq:Page en een inhoudsknooppunt van het type cq:PageContent. De eigenschap sling:resourceType van de inhoudnode wijst naar de paginacomponent die wordt gebruikt voor het weergeven van de pagina.
 
@@ -451,7 +450,7 @@ Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanti
 
 De Dispatcher is een Adobe voor zowel caching als/of taakverdeling. Meer informatie vindt u onder [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
-## FileVault (bronrevisiesysteem) {#filevault-source-revision-system}
+## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 
 FileVault biedt uw JCR-opslagplaats van bestandssysteemtoewijzing en versiebeheer. Het kan worden gebruikt om AEM ontwikkelingsprojecten met volledige steun voor het opslaan van en het versioning van projectcode, inhoud, configuraties etc., in standaardversiecontrolesystemen (bijvoorbeeld, Subversion) te beheren.
 

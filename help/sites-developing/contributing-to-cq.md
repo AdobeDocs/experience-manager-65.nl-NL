@@ -1,22 +1,21 @@
 ---
 title: Bijdragen aan AEM
-seo-title: Bijdragen aan AEM
+seo-title: Contributing to AEM
 description: AEM wordt ontwikkeld op basis van beproefde methodologieën die algemeen worden toegepast in grote open-sourceprojecten
-seo-description: AEM wordt ontwikkeld op basis van beproefde methodologieën die algemeen worden toegepast in grote open-sourceprojecten
+seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
 uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
-
 
 # Bijdragen aan AEM{#contributing-to-aem}
 
@@ -46,7 +45,7 @@ Op het hoogste niveau zou u dan een stevig inzicht moeten hebben in:
 * Browsercookies
 * en andere moderne concepten voor webontwikkeling
 
-De technologiestapel van Adobe Experience Manager is gebaseerd op de [Apache Felix](https://felix.apache.org/) OSGI-container met het [Apache Sling](https://sling.apache.org/site/index.html)-webframework en sluit een Java Content Repository ([JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)) in op basis van [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). U moet vertrouwd raken met deze afzonderlijke projecten en met andere open-sourcecomponenten (zoals Apache Lucene) die worden gebruikt in het gebied waar u een bijdrage wilt leveren.
+De technologiestapel van Adobe Experience Manager is gebaseerd op de [Apache Felix](https://felix.apache.org/) OSGI-container met het [Apache Sling](https://sling.apache.org/site/index.html)-webframework en sluit een Java Content Repository ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) in op basis van [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). U moet vertrouwd raken met deze afzonderlijke projecten en met andere open-sourcecomponenten (zoals Apache Lucene) die worden gebruikt in het gebied waar u een bijdrage wilt leveren.
 
 ## Tribunale kennis {#tribal-knowledge}
 
@@ -68,7 +67,7 @@ REST (REpresentational State Transfer) verwijst naar de software architecturale 
 
 Omdat REST de leidende filosofie achter zoveel van wat wij doen is, moet u het van essentieel belang vinden om goed doordrongen te raken in de grondbeginselen van RESTful design. Een goede plaats om te beginnen is met [Roy Fielding ](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
-### Resolutie van ondertekeningsaanvraag {#sling-request-resolution}
+### Oplossing voor een aanvraag voor verzending {#sling-request-resolution}
 
 Een belangrijk aspect om te begrijpen over AEM is hoe binnenkomende verzoeken betrekking hebben op inhoud en toepassingsgedrag, hoe inhoud is gestructureerd in de inhoudsopslagplaats en waar AEM zoekt naar de toepassingslogica om de aanvraag af te handelen. Leer over Apache [Sling URL decomposition](https://sling.apache.org/site/url-decomposition.html) en de manier het de architecturale stijl van de REST en zijn stateless, cacheable, en gelaagde systeembeperkingen handhaaft.
 
@@ -82,7 +81,7 @@ Kleine snelstartgrootte: Houd het bestand QuickStart JAR minimaal. Maak slim, ge
 
 Snellere opstarttijd: Wanneer u een verandering aanbrengt die de starttijd zou kunnen beïnvloeden, zorg ervoor het korter, niet langer zal maken.
 
-### Lood en gemiddeld {#lean-and-mean}
+### Lean en Mean {#lean-and-mean}
 
 We zijn voor code en projecten die licht, klein, snel en elegant zijn. &quot;Goed genoeg&quot; is niet goed genoeg.
 
@@ -90,11 +89,11 @@ Hergebruik van code: Onze OSGi-gebaseerde productarchivering en &quot;alles is i
 
 Losse koppeling: We zijn voor losjes gekoppelde interacties boven strakke afhankelijkheden en &quot;ongewenste intimiteit&quot;. Met losse koppeling kunt u ook meer code hergebruiken.
 
-### Demo {#don-t-break-the-demo} niet breken
+### De demo niet breken {#don-t-break-the-demo}
 
 Word vertrouwd met demoscripts en productfuncties die het vaakst in demo&#39;s worden getoond. Begrijp dat, op zijn minst, niets u zou moeten ooit een &quot;demo manuscript&quot;eigenschap breken. Het kernproduct moet altijd demo-klaar zijn, zelfs tijdens de ontwikkeling.
 
-### Ontwerp voor betrouwbaarheid {#design-for-reliability}
+### Ontwerpen voor betrouwbaarheid {#design-for-reliability}
 
 We streven ernaar om functies te ontwerpen en te coderen op faalveilige wijze, zodat (bijvoorbeeld) een probleem met één DOM-element er niet toe leidt dat een hele pagina niet wordt weergegeven. Met andere woorden: Maak dingen die fataal, fataal zouden moeten zijn. Laat alles overleven. Maak het product &#39;vergeven&#39;.
 
@@ -104,13 +103,13 @@ Vertrouw niet op stophaken, zorg ervoor dat u opschoont bij het opstarten. Abnor
 
 `shutdown == kill -9 == power outage`
 
-### Klaar voor elastische clustering {#be-ready-for-elastic-clustering}
+### Wees klaar voor elastische clustering {#be-ready-for-elastic-clustering}
 
 Altijd klaar voor elastische groepering zijn, veronderstel altijd dat er zich het groeperen is. Als algemene regel, die aan alles zich in de inhoudsbewaarplaats houden betekent ingebouwde het groeperen steun.
 
-### Ontwerp voor achterwaartse compatibiliteit {#design-for-backward-compatibility}
+### Ontwerpen voor achterwaartse Verenigbaarheid {#design-for-backward-compatibility}
 
-Niets u zou de oude code van een klant moeten breken. Denk slechts `/libs` na om productcode te bevatten die tijdens een verbetering kan worden bijgewerkt. De sectie `/apps` van de repository is projectcode, en de sectie `/etc` bevat aangepaste configuraties die moeten worden behouden. In het algemeen moet u niets overschrijven in `/apps`, `/content` en `/home`. Na een verbetering, zou oude projectcode, configuraties en inhoud moeten blijven functioneren zoals het allen vóór de verbetering deed.
+Niets u zou de oude code van een klant moeten breken. Denk slechts `/libs` na om productcode te bevatten die tijdens een verbetering kan worden bijgewerkt. De sectie `/apps` van de repository is projectcode, en de sectie `/etc` bevat aangepaste configuraties die behouden moeten blijven. In het algemeen moet u niets overschrijven in `/apps`, `/content` en `/home`. Na een verbetering, zou oude projectcode, configuraties en inhoud moeten blijven functioneren aangezien het allen vóór de verbetering deed.
 
 Het ontwerpen voor achterwaartse verenigbaarheid zorgt ook dat de verbeteringservaring de eenvoud van de aanvankelijke installatie aanpast. U kunt alleen stoppen met AEM, het QuickStart JAR-bestand vervangen en AEMagain starten als dit voldoende is. Met een snel groeiende installatiebasis zal de efficiëntie van upgrades een steeds groter voordeel opleveren.
 
@@ -154,7 +153,7 @@ Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, kunt u [deze u
 
 **Parsys, het Systeem**  van de Paragraaf - het paragraafsysteem (parsys) is een samengestelde component die auteurs toestaat om componenten van verschillende types aan een pagina toe te voegen en andere paragraafcomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component. Het alineasysteem zelf is ook een onderdeel dat de andere alineacomponenten bevat.
 
-**Microkernel**  - Elke werkruimte in de opslagplaats kan afzonderlijk worden geconfigureerd om de gegevens op te slaan via een specifieke microkernel (een klasse die het lezen en schrijven van de gegevens beheert). Op dezelfde manier kan de gegevensopslagruimte-brede versieopslag ook onafhankelijk worden gevormd om een bepaalde microkernel te gebruiken. Er is een aantal verschillende microkorrels beschikbaar waarmee gegevens in verschillende bestandsindelingen of relationele databases kunnen worden opgeslagen. (Er zijn bijvoorbeeld persistentiemanagers voor MongoDB, DB2 of Oracle) De standaard microkernel voor AEM is TarMK (zie verder hieronder).
+**Microkernel**  - Elke werkruimte in de opslagplaats kan afzonderlijk worden geconfigureerd om de gegevens op te slaan via een specifieke microkernel (een klasse die het lezen en schrijven van de gegevens beheert). Op dezelfde manier kan de gegevensopslagruimte-brede versieopslag ook onafhankelijk worden gevormd om een bepaalde microkernel te gebruiken. Er is een aantal verschillende microkorrels beschikbaar waarmee gegevens in verschillende bestandsindelingen of relationele databases kunnen worden opgeslagen. (Er zijn bijvoorbeeld persistentiemanagers voor MongoDB, DB2 of Oracle) De standaardmicrokernel voor AEM is TarMK (zie verder hieronder).
 
 **Publiceer instantie**  - Voor veiligheid, bestuur, en andere redenen, zal een productiesite instanties van AEM in auteur en Publish instanties typisch verdelen. Voor meer informatie over plaatsingsarchitectuur (met inbegrip van auteur/publiceer instanties), zie documentatie over AEM Instanties.
 

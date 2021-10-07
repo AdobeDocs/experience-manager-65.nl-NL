@@ -1,22 +1,21 @@
 ---
 title: Workflows starten
-seo-title: Workflows starten
+seo-title: Starting Workflows
 description: Leer hoe u workflows in AEM start.
-seo-description: Leer hoe u workflows in AEM start.
+seo-description: Learn how to start Workflows in AEM.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
-translation-type: tm+mt
-source-git-commit: 967018907e32e5916df72ff16dfc7bc06f8dbed8
+exl-id: 84a1964c-4121-4763-b946-9eee6093747d
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '794'
 ht-degree: 1%
 
 ---
-
 
 # Workflows starten{#starting-workflows}
 
@@ -43,12 +42,11 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 >
 
 
-
 ## Workflowmodellen {#workflow-models}
 
 U kunt een werkschema [beginnen op één van de modellen](/help/sites-administering/workflows.md#workflow-models-and-instances) die op de console van de Modellen van het Werkschema worden vermeld. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
 
-## Workflows Launchers {#workflows-launchers}
+## Startprogramma&#39;s voor workflows {#workflows-launchers}
 
 De Workflow Launcher controleert wijzigingen in de inhoudsopslagruimte om workflows te starten afhankelijk van de locatie en het type bron van het gewijzigde knooppunt.
 
@@ -88,7 +86,7 @@ Een workflowpakket:
 * kan meerdere keren worden gebruikt.
 * kan door de gebruiker worden gewijzigd (voeg of verwijder middelen toe) terwijl de werkschemainstantie eigenlijk loopt.
 
-## Een workflow starten vanuit de modellenconsole {#starting-a-workflow-from-the-models-console}
+## Een workflow starten vanuit de Modellen-console {#starting-a-workflow-from-the-models-console}
 
 1. Navigeer naar de **Modellen** console met **Tools**, **Workflow**, dan **Models**.
 1. Selecteer de werkstroom (volgens de consolemening); U kunt ook Zoeken (linksboven) gebruiken als dat nodig is:
@@ -176,7 +174,7 @@ Een workflowpakket:
       Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
 
       * `property-name` negeert om het even welke  `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
-      * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die  `*<someValue*`>  `user-data` via de  [ `ObservationManager` API] heeft ingesteld (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die  `*<someValue*`>  `user-data` via de  [ `ObservationManager` API] heeft ingesteld (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
       Bijvoorbeeld:
 

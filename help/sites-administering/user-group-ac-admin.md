@@ -1,8 +1,8 @@
 ---
 title: Beheer van gebruikers-, groep- en toegangsrechten
-seo-title: Beheer van gebruikers-, groep- en toegangsrechten
+seo-title: User, Group and Access Rights Administration
 description: Meer informatie over gebruikers-, groep- en toegangsrechtenbeheer in AEM.
-seo-description: Meer informatie over gebruikers-, groep- en toegangsrechtenbeheer in AEM.
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 26d7bb25-5a38-43c6-bd6a-9ddba582c60f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
@@ -11,10 +11,9 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-translation-type: tm+mt
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -59,15 +58,15 @@ Dit wordt gedaan door voorrechten toe te wijzen om of toegang tot een middel (kn
 
 CRX staat u toe om de toegangsrechten voor zowel gebruiker als groepsrekeningen te vormen. Vervolgens worden dezelfde basisbeginselen voor de evaluatie toegepast op beide.
 
-## Hoe de Rechten van de Toegang {#how-access-rights-are-evaluated} worden geëvalueerd
+## Hoe de Rechten van de Toegang worden geëvalueerd {#how-access-rights-are-evaluated}
 
 >[!NOTE]
 >
->CRX implementeert [toegangsbeheer zoals bepaald door JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX implementeert [toegangsbeheer zoals bepaald door JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Een standaardinstallatie van een CRX bewaarplaats wordt gevormd om op middel-gebaseerde toegangsbeheerlijsten te gebruiken. Dit is één mogelijke implementatie van JSR-283 toegangsbeheer en één van de implementaties heden met Jackrabbit.
 
-### Onderwerpen en hoofden {#subjects-and-principals}
+### Onderwerpen en Opdrachten {#subjects-and-principals}
 
 CRX gebruikt twee zeer belangrijke concepten wanneer het evalueren van toegangsrechten:
 
@@ -91,7 +90,7 @@ CRX gebruikt twee zeer belangrijke concepten wanneer het evalueren van toegangsr
       Alle rechten die zijn toegewezen aan een van de groepen waartoe de gebruiker behoort.
    Het resultaat wordt dan gebruikt om toegang tot het gevraagde middel toe te staan of te ontkennen.
 
-#### Het compileren van de lijst van de Rechten van de Toegang voor een Onderwerp {#compiling-the-list-of-access-rights-for-a-subject}
+#### Opstellen van de lijst van toegangsrechten voor een onderwerp {#compiling-the-list-of-access-rights-for-a-subject}
 
 In CRX is het onderwerp afhankelijk van:
 
@@ -114,8 +113,7 @@ De lijst van toegangsrechten die van toepassing zijn op het onderwerp is samenge
 >
 
 
-
-### Het oplossen van Verzoek en de Rechten van de Toegang {#resolving-request-and-access-rights}
+### Aanvraag- en toegangsrechten oplossen {#resolving-request-and-access-rights}
 
 Wanneer CRX het verzoek behandelt het het toegangsverzoek van het onderwerp met de toegangsbeheerlijst op de gegevensopslaggegevensopslagknoop vergelijkt:
 
@@ -123,7 +121,7 @@ Dus als Linda vraagt om het `/features` knooppunt bij te werken in de volgende r
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
-### Volgorde van prioriteit {#order-of-precedence}
+### Volgorde {#order-of-precedence}
 
 Toegangsrechten in CRX worden als volgt beoordeeld:
 
@@ -258,14 +256,14 @@ Hierdoor kunnen imitatoraccounts taken uitvoeren alsof ze de account gebruiken d
 
 Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logboekdossiers houden geen informatie over het feit dat de imitatie op de gebeurtenissen is voorgekomen. Dus als user-B zich gebruiker-A imiteert zullen alle gebeurtenissen kijken alsof zij door gebruiker-A persoonlijk werden uitgevoerd.
 
-### Gebruikersaccount {#creating-a-user-account} maken
+### Een gebruikersaccount maken {#creating-a-user-account}
 
 1. Open het dialoogvenster **Gebruikersbeheer**.
 1. Klik **Gebruiker maken**.
 1. Vervolgens kunt u de eigenschappen invoeren:
 
-   * **Gebruikte** gebruikersnaam als accountnaam.
-   * **Wachtwoord** nodig bij aanmelden.
+   * **** Gebruikte gebruikersnaam als accountnaam.
+   * **** Wachtwoord vereist bij aanmelden.
    * **De belangrijkste** Naam om een volledige textuele naam te verstrekken.
    * **Tussenweg** die kan worden gebruikt om een boomstructuur te vormen.
 
@@ -286,8 +284,7 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 >
 
 
-
-### Een gebruikersaccount {#updating-a-user-account} bijwerken
+### Een gebruikersaccount bijwerken {#updating-a-user-account}
 
 1. Open in het dialoogvenster **Gebruikersbeheer** de lijstweergave van alle accounts.
 1. Navigeer door de boomstructuur.
@@ -307,7 +304,7 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 >
 >Toegangsrechten worden niet verwijderd. Dit garandeert de historische integriteit.
 
-### Eigenschappen {#defining-properties} definiëren
+### Eigenschappen definiëren {#defining-properties}
 
 U kunt **Eigenschappen** voor of nieuwe of bestaande rekeningen bepalen:
 
@@ -321,13 +318,13 @@ Bestaande eigenschappen kunnen met het prullenbaksymbool worden verwijderd.
 
 Met uitzondering van het Wachtwoord, kunnen de eigenschappen niet worden uitgegeven, moeten zij worden geschrapt en worden ontspannen.
 
-#### Het wachtwoord {#changing-the-password} wijzigen
+#### Het wachtwoord wijzigen {#changing-the-password}
 
 **Password** is een speciale eigenschap die kan worden gewijzigd door op de **Wachtwoord wijzigen**-koppeling te klikken.
 
 U kunt het wachtwoord in uw eigen gebruikersrekening van **Veiligheid** menu in de Ontdekkingsreiziger ook veranderen CRX.
 
-### Imitator {#defining-an-impersonator} definiëren
+### Een imitator definiëren {#defining-an-impersonator}
 
 U kunt imitators definiëren voor nieuwe of bestaande accounts:
 
@@ -397,7 +394,7 @@ De **Overgenomen** kolom wijst op lidmaatschap dat als resultaat van lidmaatscha
    1. Zie **Groepslidmaatschap**.
    1. **Leden** beheren.
 
-### Een groepsaccount {#updating-a-group-account} bijwerken
+### Een groepsaccount bijwerken {#updating-a-group-account}
 
 1. Open in het dialoogvenster **Groepsbeheer** de lijstweergave van alle accounts.
 1. Navigeer door de boomstructuur.
@@ -417,7 +414,7 @@ De **Overgenomen** kolom wijst op lidmaatschap dat als resultaat van lidmaatscha
 >
 >Toegangsrechten worden niet verwijderd. Dit garandeert de historische integriteit.
 
-### Eigenschappen {#defining-properties-1} definiëren
+### Eigenschappen definiëren {#defining-properties-1}
 
 U kunt Eigenschappen definiëren voor nieuwe of bestaande accounts:
 
@@ -608,7 +605,7 @@ U kunt ook nieuwe rechten registreren:
 
 1. Klik **OK** om op te slaan. Het voorrecht is nu beschikbaar voor selectie.
 
-### Een Access Control-item {#adding-an-access-control-entry} toevoegen
+### Een toegangsbeheeritem toevoegen {#adding-an-access-control-entry}
 
 1. Selecteer uw bron en open **Toegangsbeheer** tabel.
 
@@ -637,7 +634,7 @@ U kunt ook nieuwe rechten registreren:
 
 CRX valideert uw selectie; voor een bepaalde principal bestaat (hoogstens) 1 ontkent en 1 staat ingang op een bepaald knooppunt toe. De implementatie ontruimt altijd overtollige ingangen en zorgt ervoor dat het zelfde voorrecht niet in zowel toestaat als ontkent ingangen vermeld is.
 
-### Plaatselijk beleid voor toegangsbeheer {#ordering-local-access-control-policies} bestellen
+### Plaatselijk beleid voor toegangsbeheer bestellen {#ordering-local-access-control-policies}
 
 De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 
@@ -652,7 +649,7 @@ De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 1. In de lijst van **Lokaal Beleid van het Toegangsbeheer** klik het rode pictogram (-) rechts van de ingang.
 1. De vermelding wordt verwijderd uit zowel de tabellen voor **Lokaal** als **Effectief beleid voor toegangsbeheer**.
 
-### Het testen van een Beleid van het Toegangsbeheer {#testing-an-access-control-policy}
+### Een toegangsbeheerbeleid testen {#testing-an-access-control-policy}
 
 1. Selecteer **Gereedschappen** op de werkbalk CRXDE Lite en **Toegangsbeheer testen...**.
 1. Er wordt een nieuw dialoogvenster geopend in het rechterbovenvenster. Selecteer **Pad** en/of **Principal** die u wilt testen.

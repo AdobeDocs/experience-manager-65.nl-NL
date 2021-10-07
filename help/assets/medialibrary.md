@@ -1,17 +1,16 @@
 ---
-title: Mediabibliotheek gebruiken voor elementair beheer van digitale elementen
-description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelenbeheer.'
+title: Media Library gebruiken voor elementair beheer van digitale middelen
+description: '[!DNL Experience Manager Assets] en Media Library voor middelenbeheer.'
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
-translation-type: tm+mt
-source-git-commit: ad0672c345262712e51e821fa4e050b505063ac4
+exl-id: e10d632d-1d90-4f28-8617-95ee41602997
+source-git-commit: 5462eb18c55a509712dab8fdbb653eb2d1889763
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
-
 
 <!--
 
@@ -22,29 +21,29 @@ Define what is not included
 
 -->
 
-# Mediabibliotheek gebruiken voor elementair middelenbeheer {#manage-assets-using-media-library}
+# Media Library gebruiken voor elementair beheer van bedrijfsmiddelen {#manage-assets-using-media-library}
 
-[!DNL Adobe Experience Manager] platform biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
+[!DNL Adobe Experience Manager] platform biedt verschillende mogelijkheden om elementen te beheren. Met Media Library kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken voor middelenbeheer uitvoeren op de middelen.
 
-Mediabibliotheek is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met een [!DNL Adobe Experience Manager Sites]-licentie. [!DNL Sites] is een Web Content Management (WCM)-aanbieding. Mediabibliotheek werkt met alle mogelijkheden van Experience Manager.
+Media Library is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met een [!DNL Adobe Experience Manager Sites]-licentie. [!DNL Sites] is een Web Content Management (WCM)-aanbieding. Media Library werkt met alle mogelijkheden van Experience Manager.
 
-[!DNL Adobe Experience Manager Assets] licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] maakt een robuuste verwerking van bedrijfsmiddelen mogelijk via de gebruiksscenario&#39;s van de onderneming, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere functies die verder gaan dan de mediawisselaar.
+[!DNL Adobe Experience Manager Assets] licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] maakt een robuuste verwerking van bedrijfsmiddelen mogelijk via gevallen voor bedrijfsgebruik, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere functies die verder gaan dan wat Media Library biedt.
 
-## Licentievereisten {#avail-media-library-license}
+## Vergunningsvereisten {#avail-media-library-license}
 
-Klanten met een [!DNL Sites]-licentie hebben het recht Mediabibliotheek te gebruiken. Het werkt met alle componenten van [!DNL Experience Manager].
+Klanten met een [!DNL Sites]-licentie hebben het recht om Media Library te gebruiken. Het werkt met alle componenten van [!DNL Experience Manager].
 
-De mediabibliotheek wordt geïnstalleerd als onderdeel van Sites. Naast de licentie en installatie van Sites is geen extra licentie of pakket vereist.
+Media Library wordt geïnstalleerd als onderdeel van Sites. Naast de licentie en installatie van Sites is geen extra licentie of pakket vereist.
 
-## [!DNL Assets] versus mediabibliotheek  {#assets-and-media-library}
+## [!DNL Assets] versus Media Library {#assets-and-media-library}
 
-Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Elementenfunctionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen middelenlicentie hebben aangeschaft, hebben echter geen recht op het gebruik van de geavanceerde DAM-functies. Zonder middelenlicentie zijn alleen [mediabibliotheekfuncties](#use-media-library) beschikbaar.
+Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Elementenfunctionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen middelenlicentie hebben aangeschaft, hebben echter geen recht op het gebruik van de geavanceerde DAM-functies. Zonder middelenlicentie zijn alleen [Media Library-functies](#use-media-library) beschikbaar.
 
 Als u onbedoeld gebruik van [!DNL Assets] eigenschappen wilt verhinderen die u geen vergunning hebt gegeven, dan verwijder alle [!DNL Assets]-specifieke werkschema&#39;s, componenten, taxonomieën, opties en [!DNL Assets] admin van [!DNL Experience Manager]. Zo voorkomt u dat uw gebruikers per ongeluk [!DNL Assets] functies gebruiken waarvoor u geen licentie hebt verleend.
 
-## Mediabibliotheek {#use-media-library} gebruiken
+## Media Library gebruiken {#use-media-library}
 
-De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
+Media Library bestrijkt in grote lijnen de volgende gebruiksgevallen:
 
 * Basisfuncties voor DAM bieden voor webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites].
 * Aangepaste formulieren en communicatie gemaakt met [!DNL Adobe Experience Manager Forms].
@@ -65,7 +64,7 @@ De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
 * Comments and annotation
 -->
 
-Om de functionaliteit van de Bibliotheek van Media te gebruiken, kunt u het gebrek [!DNL Experience Manager] gebruikersinterface gebruiken. De Bibliotheek van media maakt deel uit van [!DNL Experience Manager Sites] installatie en geen afzonderlijke interface of toe:voegen-op wordt vereist. Met behulp van de bestaande interface hebben de gebruikers van de Mediabibliotheek het recht om de volgende taken uit te voeren:
+Als u de Media Library-functionaliteit wilt gebruiken, kunt u de standaardgebruikersinterface [!DNL Experience Manager] gebruiken. Media Library maakt deel uit van de [!DNL Experience Manager Sites]-installatie en er is geen aparte interface of invoegtoepassing vereist. Met behulp van de bestaande interface kunnen Media Library-gebruikers de volgende taken uitvoeren:
 
 * Maak mappen om elementen te ordenen.
 * Elementen uploaden.
@@ -80,13 +79,22 @@ Om de functionaliteit van de Bibliotheek van Media te gebruiken, kunt u het gebr
 * Annoteer elementen.
 * Voeg elementen toe aan [!DNL Sites] pagina&#39;s via de Inhoudszoeker.
 * Gebruik [!DNL Content Fragments].
+* Gebruik HTTP REST- en GraphQL API&#39;s voor [!DNL Content Fragments] en media-elementen waarnaar wordt verwezen, onder Sites-licentie.
+* integratie van de Marketing Cloud.
+* Gebruikersinterface voor middelenbeheer aanpassen en uitbreiden.
+* Heb toegang tot de Bouwer van de Vraag (API) om de onderzoeksfunctionaliteit uit te breiden.
+* Statische tags maken.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
->Veel geavanceerde DAM-gebruiksgevallen worden vervuld door [!DNL Experience Manager Assets]. Met de mediawisselaarlicentie kunt u alleen de vermelde gebruiksgevallen afhandelen via de mediawisselaar. Als een gebruiksgeval niet vermeld is, gebruik het niet met de vergunning van de Bibliotheek van Media. Neem contact op met de klantenservice van Adobe als u vragen hebt.
+>Veel geavanceerde DAM-gebruiksgevallen worden vervuld door [!DNL Experience Manager Assets]. Met Media Library-licentie kunt u alleen de vermelde gebruiksgevallen met Media Library afhandelen. Als een gebruiksgeval niet wordt vermeld, gebruik het niet met de vergunning van Media Library. Neem contact op met de Klantenondersteuning van Adobe als u vragen hebt.
+
+Let op: u kunt geen slimme tags, [!DNL Asset]-koppeling, [!DNL Asset]-kiezer, bulksgewijs labelen, workflows van elementen wijzigen zonder [!DNL Assets]-licentie.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 

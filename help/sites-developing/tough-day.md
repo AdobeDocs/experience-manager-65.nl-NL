@@ -3,17 +3,12 @@ title: Dag
 seo-title: Tough Day
 description: De test van de Dag van de Stevige simuleert de dagelijkse lading van ongeveer 1000 auteurs in een worstcasescenario met alle verrichtingen die tezelfdertijd gebeuren.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
-docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: e1f9cf160892c2fa5c7cc7f80f998166dbc877e6
+source-git-commit: 8b72715c15a65794bb6d1497961071aaea96c35e
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -22,11 +17,11 @@ ht-degree: 1%
 
 ## Wat is Hoest Dag 2 {#what-is-tough-day}
 
-&quot;Tough Day 2&quot; is een toepassing waarmee u de limieten van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/) voor een presentatie van de toepassing letten.
+&quot;Tough Day 2&quot; is een toepassing waarmee u de limieten van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) voor een presentatie van de toepassing letten.
 
 ## Hoe wordt Tough Day 2 uitgevoerd {#how-to-run-tough-day}
 
-Download de nieuwste versie van Tough Day 2 van [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
+Download de nieuwste versie van Tough Day 2 van [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). Nadat u de toepassing hebt gedownload, kunt u deze uit het vak uitvoeren door de parameter `host` op te geven. In het volgende voorbeeld wordt de AEM instantie lokaal uitgevoerd, zodat de waarde `localhost` wordt gebruikt:
 
 ```xml
 java -jar toughday2.jar --host=localhost

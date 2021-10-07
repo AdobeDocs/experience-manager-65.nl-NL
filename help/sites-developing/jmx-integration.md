@@ -1,23 +1,17 @@
 ---
 title: Services integreren met de JMX-console
-seo-title: Services integreren met de JMX-console
+seo-title: Integrating Services with the JMX Console
 description: Stel de dienstattributen en verrichtingen bloot om beleidstaken toe te laten om worden uitgevoerd door tot stand te brengen en in te voeren MBans om de diensten te beheren gebruikend de Console JMX
-seo-description: Stel de dienstattributen en verrichtingen bloot om beleidstaken toe te laten om worden uitgevoerd door tot stand te brengen en in te voeren MBans om de diensten te beheren gebruikend de Console JMX
-uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
-docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: fe727406-09cb-4516-8278-806fd78cfc12
+source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
-
 
 # Services integreren met de JMX-console{#integrating-services-with-the-jmx-console}
 
@@ -25,7 +19,7 @@ Maak en implementeer MBans om services te beheren met de JMX-console. Stel de di
 
 Zie [Serverbronnen controleren met de JMX-console](/help/sites-administering/jmx-console.md) voor informatie over het gebruik van de JMX-console.
 
-## Het JMX-framework in Felix en CQ5 {#the-jmx-framework-in-felix-and-cq}
+## JMX Framework in Felix en CQ5 {#the-jmx-framework-in-felix-and-cq}
 
 Op het Apache Felix-platform implementeert u MBans als OSGi-services. Wanneer een dienst MBean in de Registratie van de Dienst OSGi wordt geregistreerd, registreert de module JMX van Aries automatisch MBean met de Server MBean. De MBean is dan beschikbaar aan de Console JMX die de openbare attributen en de verrichtingen blootstelt.
 
@@ -41,7 +35,7 @@ MBeans die u voor het beheren van CQ5 of CRX middelen creeert zijn gebaseerd op 
 
 Naast het bepalen van de beheersinterface, bepaalt de interface ook de OSGi de dienstinterface. De implementatieklasse implementeert de OSGi-service.
 
-### Het gebruiken van Annotaties om Informatie te verstrekken MBean {#using-annotations-to-provide-mbean-information}
+### Het gebruiken van Annotaties om Informatie MBean te verstrekken {#using-annotations-to-provide-mbean-information}
 
 Het pakket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) biedt verschillende annotaties en klassen waarmee u eenvoudig metagegevens van MBean aan de JMX-console kunt leveren. Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
 
@@ -63,7 +57,7 @@ De klassen worden verstrekt voor het creëren van Dynamische MBans die de annota
 * **AnnoatedStandardMBean:** Een subklasse van de klasse javax.management.StandardMBean die de JMX-console automatisch de metagegevens voor annotaties verschaft.
 * **OpenAnnoatedStandardMBean:** Een subklasse van de klasse AnnoatedStandardMBean voor het maken van Open-maten die de OpenTypeInfo-annotatie gebruiken..
 
-### Bezig met ontwikkelen van MBans {#developing-mbeans}
+### Bezig met ontwikkelen van MBeans {#developing-mbeans}
 
 Typisch, is uw MBean een bezinning op de dienst OSGi die u wilt beheren. Op het platform van Felix, creeert u MBean zoals u voor plaatsing op andere de serverplatforms van Java zou willen. Een primair verschil is dat u annotaties kunt gebruiken om MBean-informatie op te geven:
 
@@ -72,7 +66,7 @@ Typisch, is uw MBean een bezinning op de dienst OSGi die u wilt beheren. Op het 
 
 Het volgende voorbeeld MBean verstrekt informatie over de bewaarplaats CRX. De interface gebruikt de aantekening van de Beschrijving om informatie aan de console te verstrekken JMX.
 
-#### Beheerinterface {#management-interface}
+#### Management Interface {#management-interface}
 
 ```java
 package com.adobe.example.myapp;
@@ -210,7 +204,7 @@ Het voorbeeld MBean in de volgende sectie verstrekt meer details.
 
 Een MBean de dienstmanager is nuttig wanneer de dienstconfiguraties in de bewaarplaats worden opgeslagen. De manager kan de dienstinformatie terugwinnen en het gebruiken om het overeenkomstige MBean te vormen en tot stand te brengen. De manager-klasse kan ook luisteren naar wijzigingsgebeurtenissen in de repository en de MBean-services dienovereenkomstig bijwerken.
 
-## Voorbeeld: Workflowmodellen volgen met behulp van JMX {#example-monitoring-workflow-models-using-jmx}
+## Voorbeeld: Workflowmodellen volgen met JMX {#example-monitoring-workflow-models-using-jmx}
 
 In dit voorbeeld geeft de MBean informatie over de CQ5-workflowmodellen die in de opslagplaats zijn opgeslagen. Een MBean managerklasse leidt tot MBans die op de modellen van het Werkschema wordt gebaseerd die in de bewaarplaats worden opgeslagen en hun dienst OSGi bij runtime registreert. Dit voorbeeld bestaat uit één bundel die de volgende leden bevat:
 
@@ -278,7 +272,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### De Voorbeeld MBean Manager {#the-example-mbean-manager}
+### De voorbeeld-MBean-manager {#the-example-mbean-manager}
 
 De dienst WorkflowMBeanManager omvat de methode van de componentenactivering die tot de diensten WorkflowMBean leidt. De de dienstimplementatie omvat de volgende methodes:
 
@@ -290,8 +284,7 @@ De dienst WorkflowMBeanManager omvat de methode van de componentenactivering die
 >
 >De implementatie WorkflowMBeanManager leidt slechts tot de diensten MBean voor modelconfiguraties die bestaan wanneer de component wordt geactiveerd. Een robuustere implementatie luistert naar opslagplaatsgebeurtenissen met betrekking tot nieuwe modelconfiguraties en wijzigingen of verwijderingen van bestaande modelconfiguratie. Wanneer een verandering voorkomt, kan de manager, de overeenkomstige dienst creëren wijzigen of verwijderen WorkflowMBean.
 
-
-#### WorkflowMBeanManager-interface {#workflowmbeanmanager-interface}
+#### WorkflowMBeanManager Interface {#workflowmbeanmanager-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -551,7 +544,7 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 
 Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om de openbare opslagplaats voor Adobe te gebruiken.
 
-#### Gemaakt profiel {#maven-profile}
+#### Geweven profiel {#maven-profile}
 
 ```xml
 <profile>
@@ -562,13 +555,13 @@ Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om d
     <properties>
          <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
          <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+         <releaseRepository-URL>https://repo1.maven.org/maven2/com/adobe/</releaseRepository-URL>
     </properties>
     <repositories>
          <repository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe  Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
@@ -581,8 +574,8 @@ Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om d
      <pluginRepositories>
          <pluginRepository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>

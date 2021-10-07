@@ -1,20 +1,19 @@
 ---
 title: 'Metagegevens gebruiken in een e-mailmelding '
-seo-title: 'Metagegevens gebruiken in een e-mailmelding '
+seo-title: Use metadata in an email notification
 description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
-seo-description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
+seo-description: Use metadata to populate information in a forms workflow email notification
 uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
+source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
-
 
 # Metagegevens gebruiken in een e-mailmelding {#use-metadata-in-an-email-notification}
 
@@ -97,7 +96,7 @@ message=<html><body>\n\
 </html>\n\
 ```
 
-## Door het systeem gegenereerde metagegevens gebruiken in een e-mailbericht {#using-system-generated-metadata-in-an-email-notification}
+## Door het systeem gegenereerde metagegevens in een e-mailbericht gebruiken {#using-system-generated-metadata-in-an-email-notification}
 
 Een AEM Forms-toepassing bevat verschillende metagegevensvariabelen (sleutelwaardeparen) uit het vak. U kunt deze variabelen in een e-mailsjabloon gebruiken. De waarde van de variabele is gebaseerd op de bijbehorende formuliertoepassing. In de volgende tabel worden alle metagegevensvariabelen weergegeven die in het vak beschikbaar zijn:
 
@@ -150,11 +149,11 @@ Een AEM Forms-toepassing bevat verschillende metagegevensvariabelen (sleutelwaar
  </tbody> 
 </table>
 
-## Aangepaste metagegevens gebruiken in een e-mailmelding {#using-custom-metadata-in-an-email-notification}
+## Aangepaste metagegevens gebruiken in een e-mailbericht {#using-custom-metadata-in-an-email-notification}
 
 U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste metagegevens bevatten naast door het systeem gegenereerde metagegevens ook informatie. Zo worden bijvoorbeeld beleidsdetails opgehaald uit een database. U kunt een bundel ECMAScript of OSGi gebruiken om douanemetagegevens in crx-bewaarplaats toe te voegen:
 
-### ECMAScript gebruiken om aangepaste metagegevens {#use-ecmascript-to-add-custom-metadata} toe te voegen
+### ECMAScript gebruiken om aangepaste metagegevens toe te voegen  {#use-ecmascript-to-add-custom-metadata}
 
 [](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
 
@@ -199,7 +198,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden toe als externe afhankelijkheden aan het OSGi-bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden toe als externe afhankelijkheden aan het OSGi-bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 

@@ -1,34 +1,32 @@
 ---
 title: Gecontroleerde map in AEM Forms
-seo-title: Gecontroleerde map in AEM Forms
+seo-title: Watched folder in AEM Forms
 description: Een beheerder kan een map in de gaten houden en een workflow, service of scriptbewerking starten wanneer een bestand in de gecontroleerde map wordt geplaatst.
-seo-description: Een beheerder kan een map in de gaten houden en een workflow, service of scriptbewerking starten wanneer een bestand in de gecontroleerde map wordt geplaatst.
+seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
 uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
+source-git-commit: 79dcba8e14eac39467510416bf31737ac721b07f
 workflow-type: tm+mt
-source-wordcount: '7153'
+source-wordcount: '7118'
 ht-degree: 0%
 
 ---
 
-
 # Gecontroleerde map in AEM Forms{#watched-folder-in-aem-forms}
 
-Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resultaatbestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles) voor meer informatie over workflow, service en script.
+Een beheerder kan een netwerkmap configureren, ook wel een gecontroleerde map genoemd, zodat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles) voor meer informatie over workflow, service en script.
 
 ## Een gecontroleerde map maken {#create-a-watched-folder}
 
 U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken op het bestandssysteem:
 
-* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Configuratie van de Omslag, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
-De 
-`MyWatchedFolder`-map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
+* Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
+De map `MyWatchedFolder`bestaat niet. AEM Forms probeert de map op het opgegeven pad te maken.
 
 * Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties) voor gedetailleerde informatie over de eigenschap folderPath.
 
@@ -36,7 +34,7 @@ De
 >
 >In een gegroepeerde omgeving moet de map die als gecontroleerde map wordt gebruikt, toegankelijk, beschrijfbaar en gedeeld zijn op het bestandssysteem of het netwerk. Elke instantie van de toepassingsserver van de cluster moet toegang tot dezelfde gedeelde map hebben. In Windows maakt u een toegewezen netwerkstation op alle servers en geeft u het pad van de toegewezen netwerkschijf op in de eigenschap folderPath.
 
-## Configuratieknooppunt voor gecontroleerde map {#create-watched-folder-configuration-node} maken
+## Configuratieknooppunt voor gecontroleerde map maken {#create-watched-folder-configuration-node}
 
 Om een Gecontroleerde Omslag te vormen, creeer een Gecontroleerde knoop van de Configuratie van de Omslag. Voer de volgende stappen uit om de configuratieknoop tot stand te brengen:
 
@@ -54,7 +52,6 @@ Om een Gecontroleerde Omslag te vormen, creeer een Gecontroleerde knoop van de C
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-
    Zie [Eigenschappen van gecontroleerde mappen](#watchedfolderproperties) voor een volledige lijst met ondersteunde eigenschappen.
 
 1. Klik **Alles opslaan**. Nadat het knooppunt is gemaakt en de eigenschappen zijn opgeslagen. De mappen `input`, `result`, `failure`, `preserve` en `stage`worden gemaakt op het pad dat is opgegeven in de eigenschap `folderPath`.
@@ -143,7 +140,6 @@ Zie [Informatie over bestandspatronen](../../forms/using/watched-folder-in-aem-f
    * %l = millisecond
    * %R = willekeurig getal (tussen 0 en 9)
    * %P = proces- of taak-id
-
    Als het op 17 juli 2009 bijvoorbeeld 8 uur &#39;s middags is en u C:/Test/WF0/failure/%Y/%M/%D/%H/ opgeeft, is de resultaatmap C:/Test/WF0/failure/2009/07/17/20
 
    Als het pad niet absoluut maar relatief is, wordt de map gemaakt in de gecontroleerde map. De standaardwaarde is result/%Y/%M/%D/. Dit is de resultatenmap in de Gecontroleerde map. Zie [Informatie over bestandspatronen](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) voor meer informatie over bestandspatronen.
@@ -266,7 +262,7 @@ public class TestContentProcessor1 implements ContentProcessor {
 }
 ```
 
-### Scripts gebruiken om bestanden van een gecontroleerde map {#using-scripts-to-process-files-of-a-watched-folder} te verwerken
+### Scripts gebruiken om bestanden van een gecontroleerde map te verwerken {#using-scripts-to-process-files-of-a-watched-folder}
 
 Scripts zijn de aangepaste ECMAScript-klachtencode die wordt geschreven naar procesdocumenten die in de gecontroleerde map zijn geplaatst. Een script wordt vertegenwoordigd als een JCR-knooppunt. Naast de standaard ECMAScript-variabelen (log, sling en meer) heeft het script een variabele processorContext. De variabele is van het type ProcessorContext. De ProcessorContext heeft de volgende API&#39;s:
 
@@ -303,7 +299,7 @@ Als u van plan bent om uw manuscripten bij een douaneplaats te plaatsen, is het 
 
 Nu, kunt u gevormde douaneplaats gebruiken om de manuscripten te bewaren.
 
-### Een workflow gebruiken om bestanden van een gecontroleerde map {#using-a-workflow-to-process-files-of-a-watched-folder} te verwerken
+### Bestanden van een gecontroleerde map verwerken met behulp van een workflow {#using-a-workflow-to-process-files-of-a-watched-folder}
 
 Met workflows kunt u Experience Manager-activiteiten automatiseren. Workflows bestaan uit een reeks stappen die in een specifieke volgorde worden uitgevoerd. Elke stap voert een specifieke activiteit uit zoals het activeren van een pagina of het verzenden van een e-mailbericht. Workflows kunnen communiceren met middelen in de opslagplaats, gebruikersaccounts en services voor Experience Managers. Daarom kunnen workflows gecompliceerd coördineren.
 
@@ -402,9 +398,9 @@ Wanneer u een controlemap maakt, maakt deze een mappenstructuur in de map die wo
 
 Als de structuur van een payload anders is dan de structuur van de gecontroleerde map, kunt u aangepaste scripts schrijven om de structuur van de gecontroleerde map toe te wijzen aan de payload. Een dergelijk script wordt een payload mapfilter genoemd. AEM Forms beschikt over een payload mapfilter om de structuur van de gecontroleerde map toe te wijzen aan een payload.
 
-#### Een aangepast filter voor Payload Mapper {#creating-a-custom-payload-mapper-filter} maken
+#### Een aangepast Payload Mapper-filter maken {#creating-a-custom-payload-mapper-filter}
 
-1. Download [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Download [Adobe Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
 1. Opstelling de cliënt SDK in de bouwstijlweg van het op maven-gebaseerde project. Om aan de slag te gaan, kunt u het volgende op maven gebaseerde project downloaden en openen in IDE van uw keuze.
 1. Bewerk de filtercode voor de payload mapper die beschikbaar is in de voorbeeldbundel, naar wens.
 1. Gebruik maven om een bundel van de aangepaste Filter van de Toewijzing van de Payload tot stand te brengen.
@@ -488,7 +484,7 @@ Als de structuur van een payload anders is dan de structuur van de gecontroleerd
    }
    ```
 
-## Hoe gebruikers met een Gecontroleerde Omslag {#how-users-interact-with-a-watched-folder} in wisselwerking staan
+## De manier waarop gebruikers met een gecontroleerde map werken {#how-users-interact-with-a-watched-folder}
 
 Voor het eindpunt van een gecontroleerde map kunnen gebruikers bestandsverwerkingsbewerkingen starten door invoerbestanden of mappen van hun bureaublad naar een gecontroleerde map te kopiëren of te slepen. De bestanden worden verwerkt in de volgorde van aankomst.
 
@@ -502,7 +498,7 @@ Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten
 
 ## Aanvullende informatie over de gecontroleerde mappen {#additional-information-about-the-watched-folders}
 
-### Info over omdraaien {#about-throttling}
+### Info {#about-throttling}
 
 Wanneer throttling voor een eindpunt van de controlemap wordt toegelaten, beperkt het het aantal Gecontroleerde banen van de Omslag die op een bepaald ogenblik worden verwerkt. Het maximumaantal banen wordt bepaald door de waarde van de Grootte van de Partij, ook configureerbaar in het Gecontroleerde eindpunt van de Omslag. Wanneer de vertragingslimiet is bereikt, worden binnenkomende documenten in de invoermap van de Gecontroleerde map niet gepolled. Het document blijft ook in de invoermap totdat andere taken voor gecontroleerde mappen zijn voltooid en een andere poging tot opiniepeiling is gedaan. Voor synchrone verwerking, worden alle banen die in één enkele opiniepeiling worden verwerkt geteld in de vertragingsgrens, alhoewel de banen achtereenvolgens in één enkele draad worden verwerkt.
 
@@ -510,7 +506,7 @@ Wanneer throttling voor een eindpunt van de controlemap wordt toegelaten, beperk
 >
 >De rotatie wordt niet met een cluster geschaald. Wanneer de throttling wordt toegelaten, zal de cluster als geheel niet meer dan het aantal banen verwerken die in de Grootte van de Partij op een bepaald ogenblik worden gespecificeerd. Deze limiet geldt voor de hele cluster en is niet specifiek voor elk knooppunt in de cluster. Met een Batch-grootte van 2, bijvoorbeeld, kan de vertragingslimiet worden bereikt met één knooppunt dat twee taken verwerkt, en geen enkele andere knooppunten zullen de invoermap opvragen totdat een van de taken is voltooid.
 
-#### Hoe snel werkt {#how-throttling-works}
+#### Hoe vertragen werkt {#how-throttling-works}
 
 Gecontroleerde map scant de invoermap bij elk pollInterval, haalt het aantal bestanden op dat is opgegeven in Batch Size en roept de doelservice voor elk van deze bestanden aan. Als de Batchgrootte bijvoorbeeld vier is, worden bij elke scan vier bestanden opgehaald met Gecontroleerde map, worden vier aanroepingsverzoeken gemaakt en wordt de doelservice aangeroepen. Voordat deze aanvragen zijn voltooid en de gecontroleerde map wordt aangeroepen, worden opnieuw vier taken gestart, ongeacht of de vorige vier taken zijn voltooid of niet.
 
@@ -520,7 +516,7 @@ Door deze functie voorkomt u dat Gecontroleerde map nieuwe taken aanroept wannee
 * Als de AEM Forms-server naar beneden gaat voordat de taken worden aangeroepen door de gecontroleerde map, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p) voor meer informatie.
 * Als de AEM Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de service van Job Manager weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p) voor meer informatie.
 
-### Foutpunten en recoveryMislukkingspunten en herstel {#failure-points-and-recoveryfailure-points-and-recovery}
+### Foutpunten en herstelFoutpunten en herstel {#failure-points-and-recoveryfailure-points-and-recovery}
 
 Bij elke opiniepeilingsgebeurtenis worden de invoermap vergrendeld door de gecontroleerde map, worden de bestanden die overeenkomen met het include-bestandspatroon verplaatst naar de werkgebiedmap en wordt de invoermap ontgrendeld. Het sluiten is nodig zodat twee draden niet de zelfde reeks dossiers oppakken en hen tweemaal verwerken. De kans dat dit gebeurt neemt toe met een klein pollInterval en een grote batch. Nadat de bestanden naar de werkgebiedmap zijn verplaatst, wordt de invoermap ontgrendeld, zodat andere threads de map kunnen scannen. Deze stap helpt hoge productie te verstrekken omdat andere draden kunnen aftasten terwijl één draad de dossiers verwerkt.
 
@@ -543,7 +539,6 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
    * Wijzig de eigenschap includeFilePattern voor de Gecontroleerde map in iets dat niet overeenkomt met een van de nieuwe invoerbestanden (voer bijvoorbeeld NOMATCH in).
    * Onderbreek het proces dat nieuwe invoerbestanden maakt.
-
    Wacht tot AEM Forms alle bestanden herstelt en verwerkt. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
 
 1. Bepaal welke bestanden niet kunnen worden verwerkt. Ga naar de volgende stap als u op een geschikte hoeveelheid tijd hebt gewacht en de vorige stap hebt voltooid en er nog steeds onverwerkte bestanden in de map met werkgebieden staan.
@@ -556,9 +551,9 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
 1. Als u hebt verhinderd dat gecontroleerde map nieuwe invoerbestanden kon verwerken in stap 2, wijzigt u het Include-bestandspatroon in de vorige waarde of schakelt u het proces dat u hebt uitgeschakeld opnieuw in.
 
-### Gecontroleerde mappen {#chain-watched-folders-together} samenvoegen
+### Gecontroleerde mappen samenvoegen {#chain-watched-folders-together}
 
-Gecontroleerde mappen kunnen aan elkaar worden gekoppeld, zodat een resultaatdocument van een Gecontroleerde map het invoerdocument van de volgende Gecontroleerde map is. Elke gecontroleerde map kan een andere service oproepen. Door Gecontroleerde Omslagen op deze manier te vormen, kunnen de veelvoudige diensten worden aangehaald. Eén gecontroleerde map kan bijvoorbeeld PDF-bestanden converteren naar Adobe PostScript® en een tweede gecontroleerde map kan de PostScript-bestanden converteren naar PDF/A-indeling. Om dit te doen, plaats eenvoudig de resultaatomslag van de Gecontroleerde Omslag die door uw eerste eindpunt wordt bepaald aan de inputomslag van de Gecontroleerde Omslag te richten door uw tweede eindpunt wordt bepaald.
+Gecontroleerde mappen kunnen aan elkaar worden gekoppeld, zodat een resultaatdocument van een Gecontroleerde map het invoerdocument van de volgende Gecontroleerde map is. Elke gecontroleerde map kan een andere service oproepen. Door Gecontroleerde Omslagen op deze manier te vormen, kunnen de veelvoudige diensten worden aangehaald. Eén gecontroleerde map kan bijvoorbeeld PDF-bestanden converteren naar Adobe PostScript® en een tweede gecontroleerde map kan de PostScript-bestanden converteren naar de indeling PDF/A. Om dit te doen, plaats eenvoudig de resultaatomslag van de Gecontroleerde Omslag die door uw eerste eindpunt wordt bepaald aan de inputomslag van de Gecontroleerde Omslag te richten door uw tweede eindpunt wordt bepaald.
 
 De uitvoer van de eerste conversie gaat naar \path\result. De invoer voor de tweede conversie zou \path\result zijn en de uitvoer van de tweede conversie zou naar \path\result\result (of de map die u in het vak Resultaatmap voor de tweede conversie definieert) gaan.
 
@@ -595,19 +590,19 @@ Toewijzingen voor uitvoerparameters kunnen ook aanvullende patronen opgeven, zoa
 
 Als het toewijzingspatroon van de uitvoerparameter eindigt met &quot;File.separator&quot; (dit is het padscheidingsteken), wordt een map gemaakt en wordt de inhoud naar die map gekopieerd. Als het patroon niet eindigt met &quot;File.separator&quot;, wordt de inhoud (resultaatbestand of -map) met die naam gemaakt.
 
-## PDF-generator gebruiken met een gecontroleerde map {#using-pdf-generator-with-a-watched-folder}
+## PDF Generator gebruiken met een gecontroleerde map {#using-pdf-generator-with-a-watched-folder}
 
-U kunt een Gecontroleerde Omslag vormen om een werkschema, de dienst, of een manuscript in werking te stellen om de inputdossiers te verwerken. In de volgende sectie configureren we een gecontroleerde map om een ECMAScript te starten. De ECMAScript gebruikt PDF Generator om Microsoft Word-documenten (.docx) naar PDF-documenten te converteren.
+U kunt een Gecontroleerde Omslag vormen om een werkschema, de dienst, of een manuscript in werking te stellen om de inputdossiers te verwerken. In de volgende sectie configureren we een gecontroleerde map om een ECMAScript te starten. ECMAScript gebruikt PDF Generator om Microsoft Word-documenten (.docx) om te zetten in PDF-documenten.
 
-Voer de volgende stappen uit om een Gecontroleerde map te configureren met PDF Generator:
+Voer de volgende stappen uit om een Gecontroleerde Omslag met de Generator van PDF te vormen:
 
 1. [Een ECMAScript maken](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [Een workflow maken](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [De gecontroleerde map configureren](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### Een ECMAScript {#create-an-ecmascript} maken
+### Een ECMAScript maken {#create-an-ecmascript}
 
-De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft Word-documenten (.docx) naar PDF-documenten te converteren. Voer de volgende stappen uit om het script te maken:
+ECMAScript gebruikt de createPDF API van PDF Generator om Microsoft Word (.docx) documenten in PDF- documenten om te zetten. Voer de volgende stappen uit om het script te maken:
 
 1. Open CRXDE lijst in een browser venster. De URL is https://&#39;[server]:[port]&#39;/crx/de.
 
@@ -661,7 +656,7 @@ https://[servernaam]:&#39;poort&#39;/workflow
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
-### De gecontroleerde map {#configure-the-watched-folder} configureren
+### De gecontroleerde map configureren {#configure-the-watched-folder}
 
 1. Open CRXDE lijst in een browser venster. https://&#39;[server]:[poort]&#39;/crx/de/
 
@@ -678,4 +673,3 @@ inputProcessorType (String): Het type proces dat moet worden gestart. Geef in de
 
    * outputFilePattern (String): Patroon van het uitvoerbestand. U kunt een map of bestandspatroon opgeven. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
    Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Eigenschappen van gecontroleerde mappen](#watchedfolderproperties) voor een volledige lijst en beschrijving van optionele eigenschappen.
-

@@ -1,18 +1,17 @@
 ---
 title: Algemene opmerkingen bij de release van [!DNL Adobe Experience Manager] 6.5
 description: '[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven.'
-translation-type: tm+mt
-source-git-commit: 8d60e064ab50f24016c049c8d5d0fceb784c99a3
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: f8fcfa9e09167cd4dbaafe938bcbe3ee6ece270f
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
 
 ---
 
-
 # Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
-## Informatie opheffen {#release-information}
+## Geen informatie {#release-information}
 
 | Product | [!DNL Adobe Experience Manager] |
 |---|---|
@@ -29,7 +28,7 @@ De releasecyclus voor deze versie van [!DNL Adobe Experience Manager] is op 4 ap
 
 ![AEM 6.5 Aanmeldingsscherm](/help/assets/assets/aem65-login-v4.png)
 
-## Wat is er nieuw?{#what-s-new}
+## Wat is er nieuw? {#what-s-new}
 
 [!DNL Adobe Experience Manager] 6.5 is een verbeteringsversie aan de  [!DNL Adobe Experience Manager] 6.4 codebasis. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit van de klant en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook [!DNL Adobe Experience Manager] 6.4 Service Pack-releases tot SP4.
 
@@ -43,11 +42,11 @@ Het platform van [!DNL Adobe Experience Manager] 6.5 bouwt voort op bijgewerkte 
 
 De QuickStart gebruikt Eclipse Jetty 9.4.15 als servlet-engine.
 
-#### Java-ondersteuning {#java-support}
+#### Java-ondersteuning  {#java-support}
 
 * Nieuwe ondersteuning voor Java 11 en de reeds ondersteunde Java 8.
 * Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Zie de sectie [installeren en bijwerken](/help/sites-deploying/custom-standalone-install.md) voor meer informatie.
-* Java 11- en Java 8-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM gerelateerde projecten, wanneer deze niet openbaar beschikbaar zijn in Oracle.
+* Java 11- en Java 8-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM gerelateerde projecten, wanneer deze niet openbaar beschikbaar zijn vanuit Oracle.
 
 #### Java Development {#java-development}
 
@@ -67,7 +66,7 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 >
 >Adobe is niet van plan om verdere verhogingen aan Klassieke UI te maken. AEM 6.5 heeft de klassieke gebruikersinterface inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd. [Lees meer](/help/sites-deploying/ui-recommendations.md).
 
-#### {#indexing-and-search} zoeken en indexeren
+#### Zoeken en indexeren {#indexing-and-search}
 
 * Zoeken in eiken ondersteunt nu dynamische facetten. Zo toont de filterrail in de zoekopdracht naar elementen de geschatte hoeveelheid resultaten.
 * QueryBuilder is uitgebreid om resultaten met dynamische facetten te bieden.
@@ -84,9 +83,9 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 
 Volledige lijst van veranderingen in [AEM Sites en toe:voegen-ons](/help/release-notes/sites.md).
 
-#### Beheerde apps voor één pagina {#managed-single-page-apps}
+#### Beheerde apps met één pagina {#managed-single-page-apps}
 
-De Pagina-editor voegt de mogelijkheid toe om in de context inhoud te bewerken en samen te stellen/op te maken in gerenderde ervaringen op de client (ook wel [SPA Editor](/help/sites-developing/spa-architecture.md) genoemd). De bestaande apps van één pagina bouwen met kader JavaScript React of Hoekig kan met AEM SDK worden uitgebreid om editable voor artsen te worden gemaakt.
+De Pagina-editor voegt de mogelijkheid toe om in de context inhoud te bewerken en samen te stellen/op te maken in gerenderde ervaringen op de client (ook wel [SPA Editor](/help/sites-developing/spa-architecture.md) genoemd). Bestaande apps van één pagina die worden gemaakt met JavaScript-framework React of Angular kunnen worden uitgebreid met de AEM SDK van SJ om bewerkbaar te maken voor professionals.
 
 De eerste verscheepte als deel van AEM 6.4 SP2, met AEM 6.5 de SPA steun krijgt volgende mogelijkheden:
 
@@ -142,9 +141,9 @@ Daarnaast AEM u met Adobe Stock geïntegreerd om Adobe Stock-middelen rechtstree
 
 De Connected Assets-mogelijkheid is gericht op grotere implementaties met een aantal AEM Sites-implementaties die middelen van een centrale AEM Assets DAM-implementatie moeten benutten. Het staat voor het verbeteren van bestuur rond centraal beheerde activa toe terwijl het toestaan voor hoge efficiency van het leveren van activa aan de diverse plaatsingen van Plaatsen.
 
-###  Dynamic Media {#dynamic-media}
+###  Dynamic Media  {#dynamic-media}
 
-Dynamic Media biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media in AEM Assets, zodat u de meest geavanceerde ervaringen kunt opdoen die u zowel immersief als gepersonaliseerd vindt. Met één master troef van hoge kwaliteit kunt u onze geavanceerde cloudrendering, Smart Crop en best-in-class viewers gebruiken om de meest aantrekkelijke ervaringen met toonaangevende prestaties te bieden.
+Dynamic Media biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media in AEM Assets om geavanceerde ervaringen te creëren die zowel op maat als op maat zijn. Met één master troef van hoge kwaliteit kunt u onze geavanceerde cloudrendering, Smart Crop en best-in-class viewers gebruiken om de meest aantrekkelijke ervaringen met toonaangevende prestaties te bieden.
 
 Nieuwe functies zijn onder andere:
 
@@ -153,7 +152,7 @@ Nieuwe functies zijn onder andere:
 * Verbeterde toegankelijkheidsondersteuning
 * Warmkoppelingsbeveiliging
 
-#### Gebruikerservaring en zoeken {#user-experience-and-search}
+#### Gebruikerservaring en Zoeken {#user-experience-and-search}
 
 Belangrijke verbeteringen helpen de juiste middelen sneller te vinden door dynamische zoekfacetten te bieden en om meerdere middelen efficiënter te beheren door de mogelijkheid te bieden om alle middelen in een map of zoekresultaat te selecteren.
 
@@ -191,11 +190,11 @@ Zie [AEM 6.5 Opmerkingen bij de release van Communities](/help/release-notes/com
 
 U kunt Livefyre met uw AEM 6.5 instantie integreren. Zie [Hoe te om Levenswijze met AEM](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) te integreren.
 
-### Gebruik klantgerichte ontwikkeling {#leverage-customer-focused-development}
+### Gebruik van klantgerichte ontwikkeling {#leverage-customer-focused-development}
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
-Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant gerichte insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) is geïntegreerd met het systeem voor het bijhouden van Adobe-waarden en-fouten. Vragen van de klant worden waar mogelijk met de klantenservice geïdentificeerd en opgelost. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
+Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant gerichte insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het [portal Ondersteuning Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is geïntegreerd met het systeem voor het verbeteren en opsporen van Adobe en defecten. De vragen van de klant worden geïdentificeerd en opgelost door het team van de Steun van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
 
 Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgeleverd die in AEM 6.5 worden bevestigd.
 
@@ -209,7 +208,7 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 * Plug-in voor Eclipse IDE ([meer lezen en downloaden](/help/sites-developing/aem-eclipse.md))
 
 * Extensie voor de Redacteur van de Code van Brackets ([lees meer en download](/help/sites-developing/aem-brackets.md))
-* Geweven/de Afhankelijkheden van de Wieg ([downloadverbinding](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
+* Geweven/de Afhankelijkheden van de Wieg ([downloadverbinding](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
@@ -218,7 +217,7 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 * Maven Project archetypes:
 
    * voor volledig-stapelsites: [GitHub-project](https://github.com/adobe/aem-project-archetype)
-   * voor apps van één pagina met React/Hoekig: [GitHub-project](https://github.com/adobe/aem-spa-project-archetype)
+   * voor apps van één pagina met React/Angular: [GitHub-project](https://github.com/adobe/aem-spa-project-archetype)
 
 * AEM Screens Players voor diverse doelplatforms ([download](https://download.macromedia.com/screens/))
 
@@ -233,13 +232,13 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 
 **Assets**
 
-* Pakket maken om verbeterde PDF-rasterfunctie toe te voegen ([meer lezen](/help/assets/aem-pdf-rasterizer.md))
+* Pakket om verbeterde Rasterizer van PDF toe te voegen ([lees meer](/help/assets/aem-pdf-rasterizer.md))
 * Pakket om uitgebreide RAW beeldsteun toe te voegen ([lees meer](/help/assets/camera-raw.md))
 
 **Forms**
 
-* [Pakketten voor AEM Forms-mogelijkheden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [Pakketten voor AEM Forms-mogelijkheden](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Talen {#languages}
 
@@ -258,7 +257,7 @@ De gebruikersinterface is beschikbaar in de volgende talen:
 
 [!DNL Experience Manager] 6.5 is gecertificeerd voor GB18030-2005 CITS om de Chinese coderingsstandaard te gebruiken.
 
-## {#install-update} installeren en bijwerken
+## Installeren en bijwerken {#install-update}
 
 Zie [installatie-instructies](/help/sites-deploying/custom-standalone-install.md) voor instellingsvereisten.
 
@@ -270,9 +269,9 @@ Vind de volledige matrijs van gesteunde platforms met steun-niveau op [AEM 6.5 t
 
 >[!NOTE]
 >
->Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies van Oracle. Zie [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe biedt ondersteuning voor LTS-versies van Java, zodat alleen AEM in productie worden uitgevoerd. Java 11 is de aanbevolen versie voor gebruik met AEM 6.5.
+>Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle. Zie [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe biedt ondersteuning voor LTS-versies van Java, zodat alleen AEM in productie worden uitgevoerd. Java 11 is de aanbevolen versie voor gebruik met AEM 6.5.
 
-## Vervangen en verwijderde functies {#deprecated-and-removed-features}
+## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter voor toekomstige verwachtingen of uitbreidingen worden voorbereid.
 
@@ -282,7 +281,7 @@ Voor [!DNL Adobe Experience Manager] 6.5, [lees de lijst van afgekeurde en verwi
 
 [Lijst met bekende problemen](/help/release-notes/known-issues.md)
 
-### Productdownload en -ondersteuning (Beperkte sites) {#product-download-and-support-restricted-sites}
+### Productdownload en -ondersteuning (beperkt aantal sites) {#product-download-and-support-restricted-sites}
 
 De volgende sites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw Adobe-accountmanager.
 

@@ -1,22 +1,21 @@
 ---
 title: Aangepaste weergaven maken voor adaptieve formuliervelden
-seo-title: Aangepaste weergaven maken voor adaptieve formuliervelden
+seo-title: Create custom appearances for adaptive form fields
 description: De weergave van out-of-the-box componenten aanpassen in Adaptive Forms.
-seo-description: De weergave van out-of-the-box componenten aanpassen in Adaptive Forms.
+seo-description: Customize appearance of out-of-the-box components in Adaptive Forms.
 uuid: 1aa36443-774a-49fb-b3d1-d5a2d5ff849a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
+source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste weergaven maken voor adaptieve formuliervelden{#create-custom-appearances-for-adaptive-form-fields}
 
@@ -34,7 +33,7 @@ Laten we eerst kijken naar de belangrijkste termen en concepten die in dit artik
 
 **** ClientLibA client-side bibliotheeksysteem in AEM client-side verwerking aangedreven door complexe JavaScript- en CSS-code. Zie Client-Side Libraries gebruiken voor meer informatie.
 
-**Toolkit** ArchetypeA Maven project templating defined as an original pattern or model for Maven projects. Voor meer informatie, zie Inleiding aan Archetypes.
+**** ArchetypeA Maven toolkit voor projectsjablonen die is gedefinieerd als een origineel patroon of model voor Maven-projecten. Voor meer informatie, zie Inleiding aan Archetypes.
 
 **User** ControlReference to the main element in a widget that contains the value of the field, and is used by the appearance framework for binding the custom widget UI with the adaptive form model.
 
@@ -49,18 +48,18 @@ Op hoog niveau zijn de volgende stappen nodig om een aangepaste weergave te make
 1. **Het project** bouwen en installeren: Bouw het Maven project en installeer het geproduceerde inhoudspakket op AEM.
 1. **Het aangepaste formulier** bijwerken: Pas de eigenschappen van formuliervelden aan om de aangepaste weergave te gebruiken.
 
-### Een project {#create-a-project} maken
+### Een project maken {#create-a-project}
 
 Een bepaald archetype is een uitgangspunt voor het creëren van een douaneverschijning. De details van het te gebruiken archetype zijn als volgt:
 
-* **Bewaarplaats**: https://repo.adobe.com/nexus/content/groups/public/
+* **Bewaarplaats**: https://repo1.maven.org/maven2/com/adobe/
 * **Artefact-id**: custom-appearance-archetype
 * **Groep-id**: com.adobe.aemforms
 * **Versie**: 1.0.4.
 
 Voer het volgende bevel uit om een lokaal project tot stand te brengen dat op archetype wordt gebaseerd:
 
-`mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+`mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
 De opdracht downloadt de Maven-plug-ins en archetype-informatie van de opslagplaats en genereert een project op basis van de volgende informatie:
 
@@ -128,11 +127,11 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaard-HTML-element moet van het brandpunttype zijn. Bijvoorbeeld <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> en <code>&lt;li&gt;</code>. Het geretourneerde element wordt gebruikt als <code>$userControl</code>. Als de <code>$userControl</code> de bovenstaande beperking specificeert, werken de functies van de <code>AbstractWidget</code> klasse zoals verwacht, anders sommige gemeenschappelijke APIs (nadruk, klik) vereisen veranderingen. </td>
+   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> en <code>&lt;li&gt;</code>. Het geretourneerde element wordt gebruikt als <code>$userControl</code>. Als de <code>$userControl</code> de bovenstaande beperking specificeert, werken de functies van de <code>AbstractWidget</code> klasse zoals verwacht, anders sommige gemeenschappelijke APIs (nadruk, klik) vereisen veranderingen. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>Retourneert een kaart voor het converteren van HTML-gebeurtenissen naar XFA-gebeurtenissen. <br /> <code class="code">{
+   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
       }</code><br /> In dit voorbeeld  <code>blur</code> wordt getoond dat het een HTML-gebeurtenis  <code>XFA_EXIT_EVENT</code> is en dat het de corresponderende XFA-gebeurtenis is. </td>
   </tr>
@@ -162,7 +161,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    * Breid `render` methode uit om een afwisselende UI te verstrekken. Dit is de locatie vanwaar de jQuery-insteekmodule wordt aangeroepen om de gebruikersinterface of het interactiegedrag bij te werken. De `render` methode zou een user-control element moeten terugkeren.
 
    * Breid de `getOptionsMap` methode uit om het even welke optie met voeten te treden die als toe te schrijven aan een verandering in widget wordt beïnvloed. De functie retourneert een toewijzing die details bevat voor de actie die moet worden uitgevoerd bij wijziging van een optie. De sleutels zijn de opties die aan widget worden verstrekt en de waarden zijn de functies die worden geroepen wanneer een verandering in de optie wordt ontdekt.
-   * De methode `getEventMap` wijst gebeurtenissen toe die door widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen toe voor de standaardwidget en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
+   * De methode `getEventMap` wijst gebeurtenissen toe die door de widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen voor de standaardwidget toe en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
    * De `showDisplayValue` en `showValue` passen de weergave- en bewerkingsafbeeldingsvoorwaarde toe en kunnen worden overschreven voor een ander gedrag.
 
    * De methode `getCommitValue` wordt aangeroepen door het adaptieve formulierframework wanneer de gebeurtenis `commit`plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie [Aangepaste Forms-expressies](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p) voor meer informatie.
@@ -173,7 +172,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
 
 Het voorbeeldproject dat door het Maven archetype wordt geproduceerd leidt automatisch tot vereiste cliëntbibliotheken, en verpakt hen in een cliëntbibliotheek met een categorie `af.customwidgets`. De JavaScript- en CSS-bestanden die beschikbaar zijn in `af.customwidgets` worden automatisch opgenomen bij uitvoering.
 
-### {#build-and-install} bouwen en installeren
+### Samenstellen en installeren {#build-and-install}
 
 Om het project te bouwen, voer het volgende bevel op shell uit om een pakket te produceren CRX dat op de AEM server moet worden geïnstalleerd.
 
@@ -183,7 +182,7 @@ Om het project te bouwen, voer het volgende bevel op shell uit om een pakket te 
 >
 >Het beheerde project verwijst naar een externe opslagplaats binnen het POM-bestand. Dit is alleen ter referentie en volgens de Maven-standaarden wordt de opslagplaats-informatie vastgelegd in het `settings.xml`-bestand.
 
-### Het aangepaste formulier {#update-the-adaptive-form} bijwerken
+### Het aangepaste formulier bijwerken {#update-the-adaptive-form}
 
 De aangepaste weergave toepassen op een adaptief formulierveld:
 
@@ -197,7 +196,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Voer het volgende bevel uit om een lokaal project tot stand te brengen dat op Maven archetype wordt gebaseerd:
 
-   `mvn archetype:generate -DarchetypeRepository=https://repo.adobe.com/nexus/content/groups/public/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
+   `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    U wordt gevraagd waarden op te geven voor de volgende parameters.
    *De in dit voorbeeld gebruikte waarden worden vet* gemarkeerd.
@@ -267,7 +266,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
    }
    ```
 
-1. Overschrijf in het `numericStepper-widget.js`-bestand de eigenschap `getOptionsMap` om de toegangsoptie te negeren en verberg de knoppen + en - in de uitgeschakelde modus.
+1. Overschrijf in het bestand `numericStepper-widget.js` de eigenschap `getOptionsMap` om de toegangsoptie te overschrijven en verberg de knoppen + en - in de uitgeschakelde modus.
 
    ```javascript
    getOptionsMap: function(){

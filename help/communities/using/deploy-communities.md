@@ -1,25 +1,19 @@
 ---
 title: Gemeenschappen inzetten
-seo-title: Gemeenschappen inzetten
+seo-title: Deploying Communities
 description: AEM Communities implementeren
-seo-description: AEM Communities implementeren
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
+seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
-docset: aem65
-translation-type: tm+mt
-source-git-commit: b29945dc73e85504cd42102eafb9e2bf6198c9cc
+source-git-commit: 14a33b14043869614efcdbf8cb413333d0fa644b
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
 
 
-# Gemeenschappen{#deploying-communities} implementeren
+# Gemeenschappen inzetten{#deploying-communities}
 
 ## Vereisten {#prerequisites}
 
@@ -124,7 +118,7 @@ De noodzakelijke stappen zijn:
    * Bijvoorbeeld https://localhost:4502/system/console/bundles
    * Selecteer **`Install/Update`**
    * Bladeren... om de bundel te selecteren die uit het gedownloade ZIP-archief is geëxtraheerd
-   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start het programma als dat niet het geval is (of controleer de logboeken)
+   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start het indien niet (of controleer de logboeken)
 
 1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
 
@@ -136,7 +130,7 @@ De noodzakelijke stappen zijn:
 
 Meer informatie over het installeren van bundels vindt u op de pagina [Webconsole](/help/sites-deploying/web-console.md#bundles).
 
-#### Voorbeeld: Pakket MySQL-connector geïnstalleerd {#example-installed-mysql-connector-bundle}
+#### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
 ![](../assets/mysql-connector.png)
 
@@ -168,7 +162,7 @@ Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS)
 
 De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
 
-* [AEM-SOLR-MLS-fasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [AEM-SOLR-MLS-fasetwo](https://repo1.maven.org/maven2/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
    * Versie 1.2.40, 6 april 2016
    * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
@@ -206,7 +200,7 @@ De gemeenschappelijke opslag steunt moderatie van, en analytische op, UGC in het
 
 * [Aanbevolen technologieën](/help/communities/topologies.md) : bespreekt de topologie om afhankelijk van gebruiksgeval en keus te gebruiken SRP
 
-## {#upgrading} bijwerken
+## Bijwerken {#upgrading}
 
 Wanneer u een upgrade uitvoert naar het AEM 6.5-platform van eerdere versies van AEM, is het belangrijk [Upgraden naar AEM 6.5](/help/sites-deploying/upgrade.md) te lezen.
 
@@ -216,7 +210,7 @@ Lees [Upgraden naar AEM Communities 6.5](/help/communities/upgrade.md) om meer t
 
 ### Primaire uitgever {#primary-publisher}
 
-Wanneer de gekozen implementatie een [publicatiecentrum](/help/communities/topologies.md#tarmk-publish-farm) is, moet één AEM publicatieexemplaar worden geïdentificeerd als **`primary publisher`** voor activiteiten die niet in alle gevallen zouden moeten voorkomen, zoals eigenschappen die op **meldingen** of **Adobe Analytics** baseren.
+Wanneer de gekozen implementatie een [publicatiecentrum](/help/communities/topologies.md#tarmk-publish-farm) is, moet één AEM publicatieexemplaar worden geïdentificeerd als **`primary publisher`** voor activiteiten die niet in alle gevallen zouden moeten voorkomen, zoals eigenschappen die op **berichten** of **Adobe Analytics** baseren.
 
 Door gebrek, wordt de `AEM Communities Publisher Configuration` configuratie OSGi gevormd met **`Primary Publisher`** gecontroleerd controlevakje, zodat alle publiceer instanties in een publicatielandbouwbedrijf zich als primair zou identificeren.
 
@@ -268,7 +262,7 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 ![configure-Limieten](../assets/default-agent-publish.png)
 
-#### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
+#### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
 ![](../assets/reverse-replication-agent.png)
 
@@ -295,7 +289,7 @@ dan [vorm de replicatieagent](#replication-agents-on-author).
 
 ![](../assets/tunnel-service.png)
 
-### Repliceer de Crypto Sleutel {#replicate-the-crypto-key}
+### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
 Er zijn twee eigenschappen van AEM Communities die alle AEM serverinstanties vereisen om de zelfde encryptiesleutels te gebruiken. Dit zijn [Analytics](/help/communities/analytics.md) en [ASRP](/help/communities/asrp.md).
 
@@ -376,7 +370,7 @@ Als u de Apache HTTP-server gebruikt, moet u ervoor zorgen dat u de juiste serve
 
 Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhost`, in de `RedirectMatch`.
 
-#### httpd.conf sample {#httpd-conf-sample}
+#### httpd.conf, voorbeeld {#httpd-conf-sample}
 
 ```shell
 <IfModule alias_module>
@@ -393,7 +387,7 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
  </IfModule>
 ```
 
-### Verzending {#dispatcher}
+### Dispatcher {#dispatcher}
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
@@ -402,7 +396,7 @@ Als u een Dispatcher gebruikt, raadpleegt u:
 * [Dispatcher configureren voor Gemeenschappen](/help/communities/dispatcher.md)
 * [Bekende problemen](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
-## Documentatie van verwante gemeenschappen {#related-communities-documentation}
+## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
 * Bezoek [Communitysites beheren](/help/communities/administer-landing.md) voor meer informatie over het maken van een communitysite, het configureren van sjablonen voor communitysites, het moderniseren van community-inhoud, het beheren van leden en het configureren van berichten.
 

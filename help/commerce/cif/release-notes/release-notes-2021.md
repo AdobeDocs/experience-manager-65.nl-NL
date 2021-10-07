@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: fd973cb3693872e4850f860a625cab70553d2754
+source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '1135'
 ht-degree: 7%
 
 ---
@@ -28,6 +28,34 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: september 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021,09,27 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF Core-componenten | 2.2.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
+| CIF Venia Reference Site | 2021,09,23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+
+### Wat is er nieuw? {#what-is-new-september}
+
+* Het nieuwe lusje &quot;bijbehorende commerciële inhoud&quot;in de redacteur van Plaatsen verhoogt auteur efficiency door snel toegang tot relevante AEM productinhoud voor de huidige context te krijgen
+
+   ![Gekoppelde commerciële inhoud](/help/assets/CIF/associated-commerce-content.png)
+
+* Verbeterde gebruikersinterface van productkiezer voor een betere gebruikerservaring, verbeterde efficiëntie en ondersteuning voor complexe productcatalogus
+
+   ![Nieuwe productkiezer](/help/assets/CIF/product-picker.png)
+
+* Eigenschap &quot;include_in_menu&quot; in navigatiecomponent respecteren
+
+### Bugfixes {#bug-fixes-september}
+
+* Het leegmaken van de menucache werkt niet zoals verwacht
+
+* JS-fouten tijdens AEM CS-implementatiestap en wanneer geen clientside-componenten worden gebruikt
+
+* Kan CIF-wolkenconfiguratie niet maken in mappen met een sling:confignode
 
 ## Releasedatum: augustus 2021
 
@@ -85,7 +113,7 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 * Nieuwe CIF-product- en categoriereferentiedetypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
 * New Commerce Content Fragment Core Component
 * Full-text zoekopdracht ondersteund in AEM achterkant
-* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
 * Ondersteuning voor aangepaste HTTP-headers per site/config
 

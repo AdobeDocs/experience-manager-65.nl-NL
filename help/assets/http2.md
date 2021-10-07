@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
-feature: Publiceren,Configuratie
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+feature: Publishing,Configuration
+source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik de Adobe-gebundelde CDN (content delivery network) als onderdeel van uw Dynamic Media-licentie.
 * Gebruik een specifiek (niet-bedrijf-h.assetsadobe#.com) domein.
 
-   Als u al een specifiek domein hebt, kunt u zich aanmelden via Technische ondersteuning.
+   Als u al een toegewezen domein hebt, kunt u zich aanmelden via Adobe Klantenondersteuning.
 
    Als u geen specifiek domein hebt, is Adobe van plan om uw overgang naar HTTP/2 in 2018 te plannen.
 
@@ -62,7 +62,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
-1. Als u wilt overschakelen op HTTP/2, start u een aanvraag voor de klantenservice van Adobe. Zie [Toegang tot het Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Als u wilt overschakelen op HTTP/2, start u een verzoek voor klantenondersteuning van Adobe. Zie [Toegang tot het Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
    1. Geef de volgende informatie op in uw supportverzoek:
 
@@ -71,8 +71,8 @@ U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet au
       1. Verifieer u veilige HTTPS voor rijke media verzoeken gebruikt.
       1. Verifieer u CDN door Adobe gebruikt en niet met een directe verhouding beheerd.
       1. Controleer of u een specifiek domein gebruikt. Als u Dynamic Media gebruikt, gebruikt u een speciaal domein.
-   1. De Zorg van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die in de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
-   1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Zorg van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
+   1. De Steun van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die in de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
+   1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld na voltooiing en kunt een geslaagde overgang naar HTTP2 controleren.
 
       Omdat in de browser dit feit niet wordt vermeld, is het nodig een extensie te downloaden.
@@ -82,7 +82,7 @@ U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet au
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Verzoeken worden verwerkt in de volgorde waarin ze door de klantenservice worden ontvangen.
+Verzoeken worden verwerkt in de volgorde waarin ze door Customer Support zijn ontvangen.
 
 >[!NOTE]
 >

@@ -4,11 +4,11 @@ description: Suggesties en richtlijnen voor [!DNL Experience Manager] configurat
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Admin
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '2677'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -118,8 +118,8 @@ Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die 
 
 In de eerste plaats is de optimalisatiestrategie van uw netwerk afhankelijk van de hoeveelheid beschikbare bandbreedte en de belasting van uw [!DNL Experience Manager]-instantie. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw instantie van de Experience Manager hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als [!DNL Experience Manager] op AWS wordt ontvangen.
-* Als uw [!DNL Experience Manager]-instantie wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
+* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw instantie van de Experience Manager hebt. Een adequate bandbreedtetoewijzing is vooral belangrijk als [!DNL Experience Manager] wordt gehost op AWS.
+* Als uw [!DNL Experience Manager]-exemplaar wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
 
@@ -212,7 +212,7 @@ Stel bovendien het pad van de tijdelijke map van ImageMagick in het `configure.x
 >
 >De ImageMagick `policy.xml` en `configure.xml` dossiers zijn beschikbaar bij `/usr/lib64/ImageMagick-&#42;/config/` in plaats van `/etc/ImageMagick/`.Zie [documentatie ImageMagick](https://www.imagemagick.org/script/resources.php) voor plaats van de configuratiedossiers.
 
-Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Werk samen met de Adobe Care-vertegenwoordiger om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen voor de bedrijfseigen indelingen van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Adobe Klantenondersteuning als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de medewerker van de klantenondersteuning van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en modellen voor merkgebonden formaten van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ### XMP {#xmp-writeback}
 
@@ -255,7 +255,7 @@ Sommige optimalisaties kunnen worden uitgevoerd op de indexconfiguraties van de 
 1. Voeg een `String[]` eigenschap `excludedPaths` met waarden `/var`, `/etc/workflow/instances`, en `/etc/replication` toe.
 1. Blader naar `/oak:index/damAssetLucene`. Voeg een `String[]` eigenschap `includedPaths` met waarde `/content/dam` toe. Wijzigingen opslaan.
 
-Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in Pdf- documenten, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken. Ga als volgt te werk om [!DNL Apache Lucene] tekstextractie uit te schakelen:
+Als uw gebruikers geen full-text onderzoek van activa hoeven te doen, bijvoorbeeld, doorzoekend door tekst in documenten van de PDF, dan onbruikbaar maken. U verbetert indexprestaties door full-text indexering onbruikbaar te maken. Ga als volgt te werk om [!DNL Apache Lucene] tekstextractie uit te schakelen:
 
 1. In [!DNL Experience Manager] interface, toegang [!UICONTROL Package Manager].
 1. Upload en installeer het pakket dat beschikbaar is op [disable_indexingbinarytextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
@@ -306,6 +306,6 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Configureer [!DNL ImageMagick] om het verbruik van bronnen te beperken.
 * Verwijder overbodige stappen uit de [!UICONTROL DAM Update Asset] workflow.
 * Vorm werkschema en versie het zuiveren.
-* Optimaliseer indexen met de recentste Packs en hotfixes van de Dienst. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
+* Optimaliseer indexen met de recentste Packs en hotfixes van de Dienst. Raadpleeg de klantenondersteuning van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik radenTotal om queryprestaties te optimaliseren.
 * Als u [!DNL Experience Manager] configureert om bestandstypen van de inhoud van de bestanden te detecteren (door **[!UICONTROL Day CQ DAM Mime Type Service]** in **[!UICONTROL AEM Web Console]** in te schakelen), uploadt u een groot aantal bestanden in bulk tijdens niet-piekuren omdat dit bronintensief is.

@@ -3,11 +3,11 @@ title: Aanbevolen procedures voor het bewaken van [!DNL Assets] implementatie
 description: Beste praktijken om het milieu en de prestaties van uw  [!DNL Adobe Experience Manager] plaatsing te controleren nadat het wordt opgesteld.
 contentOwner: AG
 role: Admin, Architect
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1668'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,14 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 * [IFP](https://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Als u op de meeste Linux-systemen `yum install iftop` of `apt-get install iftop` wilt installeren.
 
 * Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in non-production milieu&#39;s kunt gebruiken. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
-* [!DNL Experience Manager] `error.log` bestand: U kunt het  [!DNL Experience Manager] `error.log` bestand onderzoeken op details van fouten die in het systeem zijn aangemeld. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren om te onderzoeken.
+* [!DNL Experience Manager] `error.log` file: You can investigate the [!DNL Experience Manager] `error.log` file for details of errors logged in the system. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren om te onderzoeken.
 * [Workflowconsole](/help/sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
 Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen van de prestaties van uw [!DNL Experience Manager]-implementatie.
 
 >[!NOTE]
 >
->Dit zijn standaardgereedschappen die niet rechtstreeks door Adobe worden ondersteund. Ze hebben geen extra licenties nodig.
+>Dit zijn standaardgereedschappen die niet rechtstreeks door Adobe worden ondersteund. They don’t require additional licenses.
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
@@ -55,7 +55,7 @@ Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijge
 
 ## Controle op lange termijn {#long-term-monitoring}
 
-Voor langdurige bewaking van een [!DNL Experience Manager]-implementatie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
+Voor langdurige bewaking van een [!DNL Experience Manager]-implementatie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. It also includes defining alerts specific to your environment.
 
 ### Aggregatie en rapportage van stamhout {#log-aggregation-and-reporting}
 
@@ -67,16 +67,16 @@ De bewaking van het milieu omvat de bewaking van het volgende:
 
 * Netwerkdoorvoer
 * Schijf-IO
-* Geheugen
-* CPU-gebruik
+* Memory
+* CPU utilization
 * JMX MBeans
-* Externe websites
+* External websites
 
 U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe adviseert geen bepaalde hulpmiddelen over anderen. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
 
 #### Interne toepassingsbewaking {#internal-application-monitoring}
 
-De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de [!DNL Experience Manager] stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door douanetoepassingscode die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
+Internal application monitoring includes monitoring the application components that make up the [!DNL Experience Manager] stack, including JVM, the content repository, and monitoring through custom application code built on the platform. In general, it is performed through JMX Mbeans that can be monitored directly by many popular monitoring solutions, such as SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM), and others. For systems that do not support a direct connection to JMX, you can write shell scripts to extract the JMX data and expose it to these systems in a format that they natively understand.
 
 Externe toegang tot de JMX-mabeans is niet standaard ingeschakeld. Voor meer informatie over controle door JMX, zie [Controle en Beheer Gebruikend Technologie JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
@@ -92,7 +92,7 @@ Geheugen
 
 * `MBean: lava.lang:type=Memory`
 * URL: `/system/console/jmx/java.lang:type=Memory`
-* Instanties: Alle servers
+* Instances: All servers
 * Alarmdrempel: Wanneer het heap- of non-heap-geheugengebruik meer dan 75% van het overeenkomstige maximale geheugen bedraagt.
 * Alarmdefinitie: Het systeemgeheugen is onvoldoende of er is een geheugenlek in de code. Analyseer een draadstortplaats om bij een definitie aan te komen.
 
@@ -131,9 +131,9 @@ Sessieteller
 
 * MBean: `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
 * URL: */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
-* Instanties: Alle servers
-* Alarmdrempel: Wanneer geopende sessies de basislijn met meer dan 50% overschrijden.
-* Alarmdefinitie: Sessies kunnen worden geopend via een stuk code en nooit worden gesloten. Dit kan in de loop der tijd langzaam gebeuren en uiteindelijk geheugenlekken in het systeem veroorzaken. Hoewel het aantal sessies op een systeem moet fluctueren, mogen ze niet voortdurend toenemen.
+* Instances: All servers
+* Alarm threshold: When open sessions exceed the baseline by more than 50%.
+* Alarmdefinitie: Sessies kunnen worden geopend via een stuk code en nooit worden gesloten. Dit kan in de loop der tijd langzaam gebeuren en uiteindelijk geheugenlekken in het systeem veroorzaken. While the number of sessions should fluctuate on a system, they should not increase continuously.
 
 Gezondheidscontroles
 
@@ -153,7 +153,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * MBean: `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instanties: Eén auteur, alle publicatieservers
-   * Alarmdrempel: Wanneer de status niet OK is
+   * Alarm threshold: When the status is not OK
    * Alarmdefinitie: De status van een van de meetwaarden is WAARSCHUWING of KRITIEK. Controleer de logboekattributen voor meer informatie over de rij die de kwestie veroorzaakte.
 
 * Responsprestaties
@@ -172,7 +172,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * Alarmdrempel: Wanneer de status niet OK is
    * Alarmdefinitie: Één of meerdere vragen die langzaam in het systeem lopen. Controleer de logboekattributen voor meer informatie over de vragen die de kwestie veroorzaakten.
 
-* Actieve pakketten
+* Active Bundles
 
    * MBean: `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
    * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
@@ -199,5 +199,5 @@ Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het 
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
 * Onderzoek de uitgang punten van het cliëntnetwerk en de ingang richt aan het [!DNL Experience Manager] plaatsingsnetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](/help/assets/assets-network-considerations.md) voor meer informatie.
-* Vergroot de grootte van uw [!DNL Experience Manager]-server. U kunt een te grote [!DNL Experience Manager] plaatsing hebben. De klantenservice van Adobe kan u helpen bepalen of uw server te klein is.
+* Vergroot de grootte van uw [!DNL Experience Manager]-server. U kunt een te grote [!DNL Experience Manager] plaatsing hebben. Adobe Klantenondersteuning kan u helpen te bepalen of uw server te klein is.
 * Onderzoek `access.log` en `error.log` dossiers voor ingangen rond de tijd van iets verkeerd ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.

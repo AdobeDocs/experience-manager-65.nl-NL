@@ -4,7 +4,7 @@ description: Opmerkingen bij de release specifiek voor [!DNL Adobe Experience Ma
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 0%
@@ -38,7 +38,7 @@ De belangrijkste eigenschappen en de verhogingen die in [!DNL Adobe Experience M
 
 * **Opties voor delen koppelen om elementen of uitvoeringen** te downloaden: Wanneer gebruikers elementen en verzamelingen delen als koppelingen, kunnen ze kiezen of ze het downloaden van originele elementen, hun vertoningen of beide toestaan met behulp van de gedeelde koppeling. Ook krijgen de gebruikers die de elementen downloaden die via de koppeling met hen worden gedeeld, de optie om alleen de oorspronkelijke elementen, alleen de uitvoeringen of beide te downloaden.
 
-* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF-, PowerPoint-, InDesign- en toetsenbordbestanden. Zie [Samengestelde elementen beheren](/help/assets/managing-linked-subassets.md#generate-subassets).
+* **Gegenereerde** onderactiva beperken: Beheerders kunnen het aantal subelementen beperken dat  [!DNL Experience Manager] wordt gegenereerd voor samengestelde elementen zoals PDF, PowerPoint, InDesign en Keynote-bestanden. Zie [Samengestelde elementen beheren](/help/assets/managing-linked-subassets.md#generate-subassets).
 
 * **Camera Raw ondersteuning**: Er is een nieuw  [!DNL Camera Raw] pakket beschikbaar dat  [!DNL Adobe Camera Raw] versie 10.4 ondersteunt. Zie  [Afbeeldingen verwerken met [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -104,7 +104,7 @@ Hier volgt een lijst met oplossingen die is opgenomen in [!DNL Experience Manage
 * Wanneer een gebruiker typt in een tag op aanvraag die ruimte bevat (de tag die niet op het systeem aanwezig is) en op Enter drukt, wordt de tag onder het veld weergegeven. Wanneer de [!DNL Content Fragment] echter wordt opgeslagen en opnieuw geopend, wordt de tag op aanvraag niet weergegeven (NPR-36441).
 * De sjabloon kan niet worden verwijderd wanneer de instantie wordt benaderd via de Dispatcher (NPR-36385).
 * Wanneer een pagina wordt verplaatst, moet de browser handmatig worden vernieuwd om de wijzigingen weer te geven (NPR-36381).
-* Wanneer u een component selecteert, kunt u deze knippen of kopiëren met Ctrl+X of Ctrl+C (en Command+X of Command+C op de Mac). Wanneer u op een andere component klikt, kunt u met de werkbalk plakken, maar niet met het toetsenbord (Ctrl+V of Command+V) (NPR-36379).
+* Wanneer u een component selecteert, kunt u deze knippen of kopiëren met Ctrl+X of Ctrl+C (en Command+X of Command+C in Mac). Wanneer u op een andere component klikt, kunt u met de werkbalk plakken, maar niet met het toetsenbord (Ctrl+V of Command+V) (NPR-36379).
 * Wanneer een gebruiker knipcomponenten probeert te verplaatsen met het schaarpictogram, treedt een consolefout op. Bovendien wordt bij het plakken slechts één component verplaatst (NPR-36378).
 * [!DNL Experience Manager] heeft een vraag zonder index op WCM of berichten, vertraagt het prestaties (NPR-36303).
 * Wanneer een auteur de overerving van de verwijderde overerfde component herstelt, kunt u alle pagina-inhoud synchroniseren. De auteurs van de inhoud moeten de volledige pagina synchroniseren, zelfs als de overerving slechts op één component wordt hersteld. Een volledige synchronisatie kan ertoe leiden dat ongewenste inhoud wordt gesynchroniseerd (NPR-34456, CQ-4310183).
@@ -294,13 +294,13 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Correspondentenbeheer**
 
-* Vertraging bij de weergave van tekens op het tabblad [!UICONTROL Data] en in de HTML-lettertypevoorvertoning (NPR-37020).
+* Vertraging bij de weergave van tekens op het tabblad [!UICONTROL Data] en in de voorvertoning van de HTML letter (NPR-37020).
 
 * Wanneer u een tekstdocumentfragment bewerkt, worden de nieuwe woorden na het opslaan van het fragment weergegeven als HTML-tags (NPR-36837).
 
 * Kan de letters die zijn opgeslagen als concepten niet weergeven (NPR-36816).
 
-* Wanneer u een tekstdocumentfragment bewerkt en vervolgens een voorvertoning van de letter weergeeft, geeft AEM Forms de expressietaal weer in de HTML-lettertypevoorvertoning (CQ-4322331).
+* Wanneer u een tekstdocumentfragment bewerkt en vervolgens een voorvertoning van de letter bekijkt, geeft AEM Forms de expressietaal weer in de HTML-lettervoorvertoning (CQ-4322331).
 
 * Problemen tijdens het renderen van gegevens met een sjabloon voor een zelfbedieningsbrief (NPR-37161).
 
@@ -323,11 +323,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Designer**
 
-* De Reader Screen kan geen zwevende veldgegevens lezen die in het tekstlabel op de Master pagina of op subformulierpagina&#39;s in een dynamische PDF zijn geplaatst (CQ-4321587).
+* De Reader van het scherm kan geen zwevende veldgegevens lezen die in het tekstlabel op de Master pagina of op subformulierpagina&#39;s in een dynamische PDF zijn geplaatst (CQ-4321587).
 
 **Document Services**
 
-* Wanneer u XDP-bestanden converteert naar PDF-bestanden en vervolgens de resulterende PDF samenstelt, mislukken de PDF-generaties en wordt het volgende foutbericht weergegeven:
+* Wanneer u XDP-bestanden omzet in PDF-bestanden en vervolgens de resulterende PDF samenstelt, mislukken de PDF-generaties en wordt het volgende foutbericht weergegeven:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -341,7 +341,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Wanneer u de waarde voor de eigenschap `mfAllowAttachments` instelt als `True` in de CRX DE-opslagplaats, wordt `dataXml` beschadigd bij het verzenden van het HTML5-formulier (NPR-37035).
 
-* Wanneer u een XDP als HTML teruggeeft gebruikend `dataXml`, [!DNL AEM Forms] toont een `Page Unresponsive` fout (NPR-36631).
+* Wanneer u een XDP als HTML gebruikend `dataXml` teruggeeft, [!DNL AEM Forms] toont een `Page Unresponsive` fout (NPR-36631).
 
 ### Handel {#commerce-65100}
 
@@ -411,7 +411,7 @@ Raadpleeg de [technische vereisten](/help/sites-deploying/technical-requirements
 
 >[!NOTE]
 >
->Sla over als u Experience Manager Forms niet gebruikt. Correcties in Experience Manager Forms worden één week na de geplande [!DNL Experience Manager] Service Pack-release geleverd via een afzonderlijk add-on pakket.
+>Sla dit over als u Experience Manager Forms niet gebruikt. Correcties in Experience Manager Forms worden één week na de geplande [!DNL Experience Manager] Service Pack-release geleverd via een afzonderlijk invoegpakket.
 
 1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
 1. Download het overeenkomstige Forms add-on pakket dat u vindt op [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
@@ -431,7 +431,7 @@ Raadpleeg de [releaseopmerkingen](jee-patch-installer-65.md) voor informatie ove
 
 >[!NOTE]
 >
->Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste Forms-invoegpakket, verwijdert u het Forms-invoegpakket uit de map `crx-repository\install` en start u de server opnieuw.
+>Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste invoegpakket voor Forms, verwijdert u het invoegpakket voor Forms uit de map `crx-repository\install` en start u de server opnieuw.
 
 
 ### UberJar {#uber-jar}
@@ -462,7 +462,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 | Gebied | Functie | Vervanging |
 |---|---|---|
 | Integraties | Het **[!UICONTROL AEM Cloud Services Opt-In]** scherm is verouderd omdat de integratie [!DNL Experience Manager] en [!DNL Adobe Target] in Experience Manager 6.5 wordt bijgewerkt. De integratie ondersteunt de Adobe Target Standard API. De API maakt gebruik van verificatie via Adobe IMS en [!DNL Adobe I/O] en ondersteunt de groeiende rol van Adobe Launch om [!DNL Experience Manager]-pagina&#39;s te instrumenteren voor analyse en personalisatie. De wizard Optie is functioneel niet relevant. | Configureer systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O]-integratie via de respectievelijke [!DNL Experience Manager]-cloudservices. |
-| Connectors | De Adobe JCR-connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen door Experience Manager 6.5. | N.v.t. |
+| Connectors | De Adobe JCR Connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is afgekeurd voor Experience Manager 6.5. | N.v.t. |
 
 ## Bekende problemen {#known-issues}
 
@@ -479,9 +479,9 @@ Om uw runtime exemplaar terug te winnen, adviseert Adobe om het ontwerp-tijd exe
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 
 * De volgende fouten en waarschuwingsberichten kunnen tijdens de installatie van Experience Manager 6.5.x.x worden weergegeven:
-   * &quot;Wanneer de integratie van Adobe Target in Experience Manager gebruikend de StandaardAPI van het Doel (authentificatie IMS) wordt gevormd, dan leidt het uitvoeren van de Fragmenten van de Ervaring naar Doel in verkeerde aanbiedingstypes die worden gecreeerd. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/source &quot;Adobe Target Classic&quot;.
+   * &quot;Wanneer de integratie van Adobe Target in Experience Manager gebruikend de StandaardAPI van het Doel (authentificatie IMS) wordt gevormd, dan leidt het uitvoeren van de Fragmenten van de Ervaring naar Doel in verkeerde aanbiedingstypes die worden gecreeerd. In plaats van het type &quot;Experience Fragment&quot;/bron &quot;Adobe Experience Manager&quot; maakt Target verschillende aanbiedingen met het type &quot;HTML&quot;/bron &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
-   * De adaptieve servervalidatie van formulieren mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt (CQ-4274424).
+   * De validatie aan de adaptieve formulierserver-side mislukt wanneer statistische functies zoals SUM, MAX en MIN worden gebruikt (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud.
    * Hotspot in een interactieve Dynamic Media-afbeelding is niet zichtbaar wanneer u een voorvertoning van het element weergeeft via de Shopable Banner-viewer.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging van reg om niet-geregistreerd te voltooien.
@@ -499,7 +499,7 @@ De volgende tekstdocumenten maken een lijst van de bundels OSGi en de Pakketten 
 Deze websites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw Adobe-accountmanager.
 
 * [Productdownload op licensing.adobe.com](https://licensing.adobe.com/)
-* Zie [hoe u contact opneemt met de klantenservice van Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* Zie [hoe u contact opneemt met de klantenondersteuning van Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >

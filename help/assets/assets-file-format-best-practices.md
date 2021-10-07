@@ -3,11 +3,11 @@ title: Aanbevolen procedures voor het verwerken van de ondersteunde bestandsinde
 description: Aanbevolen procedures voor het verwerken van de verschillende ondersteunde bestandstypen met [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
-feature: Asset Management, ontwikkelprogramma's
+feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ Zie [Ondersteunde indelingen voor elementen](/help/assets/assets-formats.md) voo
 
 >[!TIP]
 >
->Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van Adobe als u van plan bent om veel grote PSD- of PSB-bestanden te verwerken. Werk samen met de Adobe Care-vertegenwoordiger om deze best practices te implementeren voor uw AMS-implementatie en om de best mogelijke tools en modellen voor de bedrijfseigen indelingen van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+>Als u [!DNL Experience Manager] gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Adobe Klantenondersteuning als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Werk samen met de medewerker van de klantenondersteuning van Adobe om deze beste praktijken voor uw plaatsing van AMS uit te voeren en de best mogelijke hulpmiddelen en modellen voor merkgebonden formaten van de Adobe te kiezen. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ## [!DNL Adobe Camera Raw] bibliotheek {#adobe-camera-raw-library}
 
 Voor optimale prestaties raadt Adobe u aan [!DNL Adobe Camera Raw]-bibliotheek te gebruiken voor RAW- en DNG-bestanden.
 
-[!DNL Adobe Camera Raw] De bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter gegenereerd in RGB-kleurruimte en alleen uitvoer in JPEG-indeling wordt ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
+[!DNL Adobe Camera Raw] De bibliotheek ondersteunt CMYK-kleurprofiel als invoer. De uitvoer wordt echter alleen in de kleurruimte RGB gegenereerd en uitvoer in de indeling JPEG wordt alleen ondersteund. De kleurruimte van het bronbestand (bijvoorbeeld CMYK) blijft niet behouden in de miniaturen.
 
 Zie [Camera Raw ondersteuning](/help/assets/camera-raw.md) voor meer informatie.
 
@@ -38,7 +38,7 @@ Voor de beste resultaten raadt Adobe u aan de Adobe PDF Rasterizer-bibliotheek t
 * AI-bestanden met miniaturen die niet uit het vak zijn gegenereerd
 * Voor AI-bestanden met SPOT-kleuren (PMS)
 
-Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter van kwaliteit dan rasteruitvoer die niet in de doos wordt weergegeven. De Adobe PDF Rasterizer-bibliotheek biedt geen ondersteuning voor conversie van kleurruimten. Ongeacht de kleurruimte van het PDF-bronbestand genereert Adobe PDF Rasterizer alleen RGB-uitvoer.
+Miniaturen en voorvertoningen die worden gegenereerd met de Rasterizer-PDF, zijn beter van kwaliteit dan rasteruitvoer die niet in de doos wordt weergegeven. De Adobe PDF Rasterizer-bibliotheek biedt geen ondersteuning voor conversie van kleurruimten. Ongeacht de kleurruimte van het PDF-bronbestand genereert Adobe PDF Rasterizer alleen RGB-uitvoer.
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
@@ -71,7 +71,7 @@ De Beeldtransformatiebibliotheek ondersteunt de volgende MIME-typen:
 * PNG (8 bits en 16 bits)
 * GIF
 * BMP
-* TIFF/gecomprimeerde TIFF (behalve 32 bits TIFF en PTiff).
+* TIFF/Gecomprimeerde TIFF (behalve 32 bits TIFF en PTiff).
 * ICO
 * ICN
 

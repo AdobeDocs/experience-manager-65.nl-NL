@@ -1,32 +1,31 @@
 ---
 title: Mappen configureren
-seo-title: Mappen configureren
+seo-title: Configuring directories
 description: Leer hoe u mappen toevoegt, bewerkt en verwijdert en gebruikersbeheer configureert om de weergave van virtuele lijsten te gebruiken.
-seo-description: Leer hoe u mappen toevoegt, bewerkt en verwijdert en gebruikersbeheer configureert om de weergave van virtuele lijsten te gebruiken.
+seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
 uuid: 0bf1a8a7-c917-4248-9937-d24e31c5ba17
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '3246'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
 
-
-# Mappen {#configuring-directories} configureren
+# Mappen configureren {#configuring-directories}
 
 Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificatieleverancier voor gebruikersinformatie vraagt. U kunt meerdere mappen voor een domein configureren.
 
-## Mappen of aangepaste SPI&#39;s {#adding-directories-or-custom-spis} toevoegen
+## Mappen of aangepaste SPI&#39;s toevoegen {#adding-directories-or-custom-spis}
 
 Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificatieleverancier voor gebruikersinformatie vraagt. U kunt een folder aan een bestaand ondernemingsdomein of aan een nieuw ondernemingsdomein toevoegen dat u toevoegt. U kunt meerdere mappen voor een domein configureren. U kunt een domein ook vormen om een interface van de douaneleverancier van de Dienst (SPI) voor synchronisatie te gebruiken.
 
-### Een map {#add-a-directory} toevoegen
+### Een map toevoegen {#add-a-directory}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Nieuw Enterprise-domein of selecteer een bestaand ondernemingsdomein.
@@ -42,7 +41,7 @@ Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificat
 1. Selecteer Groepsinstellingen en configureer de instellingen naar wens. (Zie [Directory settings](configuring-directories.md#directory-settings).)
 1. Om te verifiëren dat basis DN en andere gevormde attributen de correcte partij van groepen verzamelen, klik Test. Als groepen worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Klik op Sluiten.
 
-### Een aangepaste SPI {#add-a-custom-spi} toevoegen
+### Een aangepaste SPI toevoegen {#add-a-custom-spi}
 
 Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [Programmering met AEM vormen](https://www.adobe.com/go/learn_aemforms_programming_63). Start de server opnieuw om een nieuw geïmplementeerde aangepaste SPI beschikbaar te maken voor associatie met het domein.
 
@@ -53,7 +52,7 @@ Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen v
 1. Selecteer een aangepaste gebruikersprovider in de lijst en klik op Volgende.
 1. Selecteer een aangepaste groepsprovider in de lijst en klik op Voltooien.
 
-## Een map {#edit-a-directory} bewerken
+## Een map bewerken {#edit-a-directory}
 
 U kunt de details van een folder uitgeven die u eerder vormde.
 
@@ -62,7 +61,7 @@ U kunt de details van een folder uitgeven die u eerder vormde.
 1. Configureer de directory-, gebruikers- en groepsinstellingen naar wens. (Zie [Directory settings](configuring-directories.md#directory-settings).)
 1. Klik op OK.
 
-## Een map {#delete-a-directory} verwijderen
+## Een map verwijderen {#delete-a-directory}
 
 Wanneer u domeinen synchroniseert nadat u een map hebt verwijderd, worden alle gebruikers en groepen in die map gemarkeerd als verouderd in de database. Deze worden niet geretourneerd in een zoekopdracht vanuit de beheerconsole.
 
@@ -79,7 +78,7 @@ Wanneer u domeinen synchroniseert nadat u een map hebt verwijderd, worden alle g
 
 Wanneer u een map aan een domein toevoegt, geeft u de volgende directoryinstellingen op.
 
-**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer met de naam x in het netwerk corp.adobe.com is de FQDN bijvoorbeeld x.corp.adobe.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
+**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer met de naam x in het adobe.com-netwerk is de FQDN bijvoorbeeld x.adobe.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
 
 **Poort:** (verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
 
@@ -123,7 +122,7 @@ Als u de Enable verwijzingsoptie in de montages van de Folder selecteerde, plaat
 
 Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, mogelijk een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [Het configuratiebestand importeren en exporteren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
-**Zoekfilter:**  (verplicht) Het zoekfilter dat moet worden gebruikt om de record te zoeken die aan de gebruiker is gekoppeld. U kunt een zoekopdracht op één niveau of een zoekopdracht op subniveau uitvoeren. (Zie Syntaxis van de Filter van het Onderzoek of RFC 2254.) Aanvullende informatie voor het schema van Microsoft AD, zie het Actieve Schema van de Folder.
+**Zoekfilter:**  (verplicht) Het zoekfilter dat moet worden gebruikt om de record te zoeken die aan de gebruiker is gekoppeld. U kunt een zoekopdracht op één niveau of een zoekopdracht op subniveau uitvoeren. (Zie Syntaxis van de Filter van het Onderzoek of RFC 2254.) Aanvullende informatie voor het Microsoft AD-schema, zie Active Directory Schema.
 
 **Beschrijving:** Schema, kenmerk voor beschrijving van de gebruiker
 
@@ -219,7 +218,7 @@ Als gebruikers en groepen worden geretourneerd, geven de resultaten de waarden w
 >
 >Gebruikersbeheer ondersteunt geen dubbele gebruikers-id&#39;s binnen een domein; er wordt slechts één gebruiker met de gebruikersnaam gesynchroniseerd.
 
-## Gebruikersbeheer configureren voor gebruik van VLV (Virtual List View) {#configure-user-management-to-use-virtual-list-view-vlv}
+## Gebruikersbeheer configureren voor gebruik van de Virtual List View (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
 De synchronisatie van de folder is een belangrijke vereiste voor Gebruikersbeheer. De gebruikers en de groepen worden gesynchroniseerd van een ondernemingsfolder aan het AEM vormengegevensbestand voor het toewijzen van rollen en toestemmingen. Het aantal gebruikers varieert van 100 tot 100000+ afhankelijk van de vereisten, en het stelt een technische uitdaging om gegevens efficiënt te synchroniseren.
 
@@ -233,7 +232,7 @@ Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepag
 1. Gebruik Sun ONE-beheerconsole of een opdrachtregelscript om de LDAP VLV-ingangen voor gebruikers en groepen te maken. Als u een opdrachtregelscript gebruikt, kunt u de voorbeeldgebruikers en groepen LDIF-bestanden gebruiken. (Zie [Het vormen van de Zon ONE Server van de Folder voor VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Stop de server en creeer de vereiste index. (Zie [De index van de Server van de Folder voor VLV](configuring-directories.md#create-the-directory-server-index-for-vlv) tot stand brengen.)
 
-### Sun ONE Directory Server voor VLV {#configuring-the-sun-one-directory-server-for-vlv} configureren
+### Het vormen van de Zon ONE Server van de Folder voor VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
 Voor het maken van een VLV is een paar items vereist die de objectklassen `vlvSearch` en `vlvIndex` bevatten. Het vlvSearch-item bevat een zoekbasis en het kenmerk `vlvFilter`, dat de objectklasse opgeeft die de kenmerken bevat die u wilt sorteren. De objectklasse `vlvIndex` bevat het kenmerk `vlvSort`, dat een of meer kenmerken opgeeft die moeten worden gesorteerd en de volgorde waarin ze moeten worden gesorteerd. (A minteken (-) geeft de omgekeerde alfabetische volgorde aan.) Voor het gebruik van VLV met AEM formulieren zijn aparte vermeldingen voor gebruikers en groepen vereist.
 
@@ -286,7 +285,7 @@ Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
    `D:\tools\ldap\sun\shared\bin> -v -a -h localhost -p 55850 -D "uid=admin,ou=administrators,ou=topologymanagement,o=netscaperoot" -w "admin" -f "D:\tools\ldap\data\vlv feature\users.ldif"`
 
-### De indexserverindex voor VLV maken {#create-the-directory-server-index-for-vlv}
+### De index van directoryservers voor VLV maken {#create-the-directory-server-index-for-vlv}
 
 Nadat u de directoryinstellingen hebt geconfigureerd en de LDAP VLV-items voor gebruikers en groepen hebt gemaakt, stopt u de server en maakt u de vereiste index.
 
@@ -332,4 +331,3 @@ Nadat u de directoryinstellingen hebt geconfigureerd en de LDAP VLV-items voor g
         config
     1 matches
    ```
-

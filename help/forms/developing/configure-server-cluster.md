@@ -1,7 +1,8 @@
 ---
 title: Hoe te om een AEM Forms op de servercluster van JEE te vormen en problemen op te lossen?
 description: Leer hoe u een AEM Forms in een JEE-servercluster configureert en problemen oplost
-source-git-commit: 8502e0227819372db4120d3995fba51c7401d944
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
 source-wordcount: '4033'
 ht-degree: 0%
@@ -266,7 +267,7 @@ Om te bepalen hoe Kwartz zich heeft gevormd, moet u de berichten bekijken die do
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Het is belangrijk om van deze eerste lijn in de logboeken de plaats te bepalen omdat sommige toepassingsservers Kwartz ook gebruiken, en hun instanties van Kwartz zouden niet met de instantie moeten worden verward die door AEM Forms op de dienst van de Planner JEE wordt gebruikt. Dit is de aanwijzing dat de dienst van de Planner begint, en de lijnen die het volgen zullen u vertellen of het of niet op gegroepeerde wijze behoorlijk begint. Verscheidene berichten verschijnen in deze opeenvolging, en het is het laatste &quot;begonnen&quot;bericht dat onthult hoe Kwartz wordt gevormd:
 
-Hier wordt de naam van het Kwartz-exemplaar gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.corp.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner zal altijd met het koord `IDPSchedulerService_$_` beginnen. Het koord dat aan het eind van dit wordt toegevoegd vertelt u al dan niet Kwartz op gegroepeerde wijze loopt. De lange unieke die herkenningsteken van hostname van de knoop en een lange koord van cijfers, hier `ap-hp8.ottperflab.corp.adobe.com1312883903975` wordt geproduceerd, wijst erop dat het in een cluster werkt. Als het als één enkele knoop werkt, dan zal het herkenningsteken een twee cijferaantal, &quot;20&quot;zijn:
+Hier wordt de naam van het Kwartz-exemplaar gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner zal altijd met het koord `IDPSchedulerService_$_` beginnen. Het koord dat aan het eind van dit wordt toegevoegd vertelt u al dan niet Kwartz op gegroepeerde wijze loopt. De lange unieke die herkenningsteken van hostname van de knoop en een lange koord van cijfers, hier `ap-hp8.ottperflab.adobe.com1312883903975` wordt geproduceerd, wijst erop dat het in een cluster werkt. Als het als één enkele knoop werkt, dan zal het herkenningsteken een twee cijferaantal, &quot;20&quot;zijn:
 
 INFO `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` is gestart.
 Deze controle moet op alle clusterknopen afzonderlijk worden gedaan, aangezien de planner van elke knoop onafhankelijk bepaalt of om op clusterwijze te werken.
@@ -332,19 +333,3 @@ Hoewel deze bestanden en paden kunnen worden gedeeld tussen de knooppunten of af
 Met name het tijdelijke mappad mag niet worden gedeeld tussen knooppunten. Een procedure vergelijkbaar met de procedure die wordt beschreven voor de verificatie van de GDS moet worden gebruikt om te controleren of de tijdelijke map niet wordt gedeeld: Ga naar elke knoop, creeer een tijdelijk dossier in de weg die door weg het plaatsen wordt vermeld, en verifieer dan dat de andere knopen niet het dossier delen. Het tijdelijke mappad moet, indien mogelijk, verwijzen naar de lokale schijfopslag op elk knooppunt en moet worden gecontroleerd.
 
 Voor elk van de wegmontages, zorg ervoor dat de weg eigenlijk bestaat en van elke knoop in de cluster toegankelijk is, gebruikend de efficiënte gebruiksidentiteit waaronder AEM Forms op JEE loopt. De inhoud van de fontmap moet leesbaar zijn. De tijdelijke map moet lezen, schrijven en besturen toestaan.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

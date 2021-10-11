@@ -1,30 +1,29 @@
 ---
 title: Verificatieproviders configureren
-seo-title: Verificatieproviders configureren
+seo-title: Configuring authentication providers
 description: Voeg, geef, of schrap authentificatieleveranciers uit, verander authentificatiemontages, en lees over just-in-time levering van gebruikers.
-seo-description: Voeg, geef, of schrap authentificatieleveranciers uit, verander authentificatiemontages, en lees over just-in-time levering van gebruikers.
+seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
 uuid: 90e7690b-1ce0-4604-b58f-6dca4f2372cf
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d72a3977-1423-49e0-899b-234bb76be378
+source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1576'
 ht-degree: 0%
 
 ---
 
-
-# Verificatieproviders {#configuring-authentication-providers} configureren
+# Verificatieproviders configureren {#configuring-authentication-providers}
 
 Voor hybride domeinen is minstens één verificatieprovider vereist en voor ondernemingsdomeinen is minstens één verificatieprovider of directoryprovider vereist.
 
 Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancier met toegelaten SPNEGO en een leverancier LDAP als steun toe. Deze configuratie laat gebruikersauthentificatie met een gebruiker toe - identiteitskaart en wachtwoord als SPNEGO niet werkt. (Zie [SSO inschakelen met SPNEGO](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#enable-sso-using-spnego).)
 
-## Een verificatieprovider {#add-an-authentication-provider} toevoegen
+## Een verificatieprovider toevoegen {#add-an-authentication-provider}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op een bestaand domein in de lijst. Als u authentificatie voor een nieuw domein toevoegt, zie [een ondernemingsdomein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) of [een hybride domein toevoegen](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
@@ -40,14 +39,14 @@ Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancie
 1. Selecteer op de pagina die wordt weergegeven de juiste verificatieprovider in de lijst en breng de gewenste wijzigingen aan. (Zie [Verificatie-instellingen](configuring-authentication-providers.md#authentication-settings).)
 1. Klik op OK.
 
-## Een verificatieprovider {#delete-an-authentication-provider} verwijderen
+## Een verificatieprovider verwijderen {#delete-an-authentication-provider}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het desbetreffende domein in de lijst.
 1. Schakel de selectievakjes voor de te verwijderen verificatieproviders in en klik op Verwijderen.
 1. Klik op OK op de bevestigingspagina die wordt weergegeven en klik nogmaals op OK.
 
-## Verificatie-instellingen {#authentication-settings}
+## Verificatieinstellingen {#authentication-settings}
 
 De volgende instellingen zijn beschikbaar, afhankelijk van het type domein en het type verificatie dat u hebt gekozen.
 
@@ -59,7 +58,7 @@ Als u de LDAP-server wilt gebruiken die in uw directoryconfiguratie is opgegeven
 
 Als u een andere LDAP-server wilt gebruiken om verificatie uit te voeren, selecteert u LDAP als de verificatieprovider en schakelt u het selectievakje Aangepaste LDAP-verificatie in. De volgende configuratie-instellingen worden weergegeven.
 
-**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x heet in het netwerk corp.example.com, is de FQDN bijvoorbeeld x.corp.example.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
+**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x op het netwerk example.com wordt aangeroepen, is de FQDN bijvoorbeeld x.voorbeeld.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
 
 **Poort:** (verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
 
@@ -87,7 +86,7 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en authen
 
 **KDC Host:** Volledig - gekwalificeerde gastheernaam of IP adres van de Actieve server van de Folder die voor authentificatie wordt gebruikt.
 
-**De Gebruiker van de dienst:** Als u Actieve Folder 2003 gebruikt, is deze waarde de afbeelding die voor het de diensthoofd in de vorm wordt gecreeerd  `HTTP/<server name>`. Als u Actieve Folder 2008 gebruikt, is deze waarde login identiteitskaart van het de diensthoofd. Bijvoorbeeld, veronderstel dat het de diensthoofd wordt genoemd um spnego, gebruiker - identiteitskaart is spnegodemo, en de afbeelding is HTTP/example.corp.yourcompany.com. Met Actieve Folder 2003, plaatst u de Gebruiker van de Dienst aan HTTP/example.corp.yourcompany.com. Met Actieve Folder 2008, plaatst u de Gebruiker van de Dienst aan spnegodemo. (Zie SSO inschakelen met SPNEGO.)
+**De Gebruiker van de dienst:** Als u Actieve Folder 2003 gebruikt, is deze waarde de afbeelding die voor het de diensthoofd in de vorm wordt gecreeerd  `HTTP/<server name>`. Als u Actieve Folder 2008 gebruikt, is deze waarde login identiteitskaart van het de diensthoofd. Bijvoorbeeld, veronderstel dat het de diensthoofd wordt genoemd um spnego, gebruiker - identiteitskaart is spnegodemo, en de afbeelding is HTTP/example.yourcompany.com. Met Actieve Folder 2003, plaatst u de Gebruiker van de Dienst aan HTTP/example.yourcompany.com. Met Actieve Folder 2008, plaatst u de Gebruiker van de Dienst aan spnegodemo. (Zie SSO inschakelen met SPNEGO.)
 
 **Service Realm:** domeinnaam voor Active Directory
 
@@ -136,7 +135,7 @@ Deze procedure beschrijft de manier de traditionele authentificatie in AEM vorme
 
    **Beheert** existUser Management retourneert verificatiefout.
 
-   **InvalidUser Management** retourneert een verificatiefout.
+   **** InvalidUser Management retourneert verificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
@@ -145,7 +144,7 @@ Wanneer just-in-time levering wordt toegelaten, worden de nieuwe gebruikers dyna
 
 Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek wordt verklaard maar niet in het gegevensbestand van het Beheer van de Gebruiker wordt gevonden, ontbreekt de authentificatie. De just-in-time levering voegt een stap in de authentificatieprocedure toe om de gebruiker tot stand te brengen en rollen en groepen aan de gebruiker toe te wijzen.
 
-### Just-in-Time-provisioning inschakelen voor een domein {#enable-just-in-time-provisioning-for-a-domain}
+### Eenmalige provisioning voor een domein inschakelen {#enable-just-in-time-provisioning-for-a-domain}
 
 1. Schrijf een de dienstcontainer die de interfaces IdentityCreator en AssignmentProvider uitvoert. (Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63).)
 1. Implementeer de servicecontainer op de formulierserver.
@@ -160,4 +159,3 @@ Zonder just-in-time levering, wanneer een gebruiker met succes voor authentiek w
 
 1. Voeg verificatieproviders toe. Tijdens het toevoegen van authentificatieleveranciers, op het Nieuwe scherm van de Authentificatie, selecteer een geregistreerde Maker van de Identiteit en een Leverancier van de Toewijzing. (Zie [Verificatieproviders configureren](configuring-authentication-providers.md#configuring-authentication-providers).)
 1. Sla het domein op.
-

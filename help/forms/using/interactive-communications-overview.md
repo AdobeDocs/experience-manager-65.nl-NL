@@ -1,40 +1,40 @@
 ---
 title: Interactieve communicatie - overzicht
-seo-title: Interactieve communicatie - overzicht
+seo-title: Interactive Communications Overview
 description: Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow voor het maken van ontwerpen en verschillen tussen interactieve communicatie en brief.
-seo-description: De interactieve Communicatie belangrijkste mogelijkheden, de gevallen van het steekproefgebruik, creatiewerkschema, en verschillen tussen Interactieve Communicatie en het Beheer van de Correspondentie
+seo-description: Interactive Communication key capabilities, sample use cases, creation workflow, and differences between Interactive Communication and Correspondence Management
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
-translation-type: tm+mt
-source-git-commit: 46f2ae565fe4a8cfea49572eb87a489cb5d9ebd7
+exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
+source-git-commit: dc8e3ed70ebaf064993ef5af910430b7fc2e521d
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '489'
+ht-degree: 4%
 
 ---
 
 
-# Overzicht van interactieve communicatie {#interactive-communications-overview}
+# Interactieve communicatie - overzicht {#interactive-communications-overview}
 
 Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow voor het maken van ontwerpen en verschillen tussen interactieve communicatie en brief.
 
 ![](do-not-localize/correspondence-management.png)
 
-De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing post, rekeningen, en welkomstkits.
+De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
 Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
-* De integratie van buiten de doos met vormgegevensmodel om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
-* Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
-* Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
-* Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel
-* De gebruikersinterface van de agent toont druk en Webvoorproef van Interactieve Communicatie
-* Met slepen en neerzetten kunt u snel afdrukken- en webkanalen maken
+- De integratie van buiten-de-doos met het model van vormgegevens om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
+- Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
+- Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
+- Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel
+- De gebruikersinterface van de agent toont druk en Webvoorproef van Interactieve Communicatie
+- Met slepen en neerzetten kunt u snel afdrukken- en webkanalen maken
 
 ## Interactieve communicatie maken {#interactive-communication-creation}
 
@@ -63,11 +63,11 @@ Om een Interactieve Mededeling tot stand te brengen, heb [bouwstenen](#buildingb
 
 Hieronder vindt u de bouwstenen die nodig zijn voor het maken van interactieve communicatie:
 
-* [Formuliergegevensmodel](/help/forms/using/data-integration.md)
-* [Afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md)
-* [Documentfragmenten](/help/forms/using/document-fragments.md)
-* Afbeeldingen
-* [](/help/forms/using/themes.md) Thema&#39;s voor het kanaal van het Web
+- [Formuliergegevensmodel](/help/forms/using/data-integration.md)
+- [Afdruk- en webkanaalsjablonen](/help/forms/using/web-channel-print-channel.md)
+- [Documentfragmenten](/help/forms/using/document-fragments.md)
+- Afbeeldingen
+- [](/help/forms/using/themes.md) Thema&#39;s voor het webkanaal
 
 ## Interactieve communicatie Vs Correspondentenbeheer {#interactive-communications-vs-correspondence-management}
 
@@ -119,13 +119,23 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
    <td>Gebruikt thema's om webkanaal op te maken</td>
    <td>Onderwerpen worden niet ondersteund</td>
   </tr>
-  <tr>
-   <td>Controle en verificatie</td>
-   <td>Niet ondersteund</td>
+   <tr>
+   <td>Concepten</td>
+   <td>Ondersteund</td>
    <td>Ondersteund</td>
   </tr>
   <tr>
-   <td>Concepten en instantie beheren</td>
+   <td>Controle</td>
+   <td>Niet ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+   <tr>
+   <td>Versioning</td>
+   <td>Niet ondersteund</td>
+   <td>Ondersteund</td>
+  </tr>
+   <tr>
+   <td>Concepten beheren instanties</td>
    <td>Niet ondersteund</td>
    <td>Ondersteund</td>
   </tr>
@@ -146,4 +156,3 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
  </tbody>
 </table>
-

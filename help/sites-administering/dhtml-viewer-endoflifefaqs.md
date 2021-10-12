@@ -6,20 +6,19 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: e95f26cc1a084358b6bcb78605e3acb98f257b66
+exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
+source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # DHTML Viewer End-of-Life {#dhtml-viewer-end-of-life}
 
 Met ingang van 31 januari 2014 is het DHTML-viewerplatform officieel levenseinde.
 
-Zie de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html) voor de meest recente ondersteunde viewers.
+Zie de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) voor de meest recente ondersteunde viewers.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

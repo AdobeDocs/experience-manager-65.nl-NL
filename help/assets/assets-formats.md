@@ -4,11 +4,11 @@ description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL 
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
-feature: Middelenbeheer, uitvoeringen
+feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: f0a0ea53675afa16463a3cf863257020ba5374d3
+source-git-commit: c8e83622070572d104f2cdc20c592ac2e9d0d31b
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ De ondersteunde indelingen voor rasterafbeeldingen in [!DNL Assets] zijn:
 | PICT | - | - | - | - | - | - | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
 
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 De ondersteunde indelingen voor rasterafbeeldingen in [!DNL Dynamic Media] zijn:
 
@@ -60,15 +60,15 @@ De ondersteunde indelingen voor rasterafbeeldingen in [!DNL Dynamic Media] zijn:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ | - | - | - | - |
 
-‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
-* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor EPS-vectorafbeeldingen wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [vorm ImageMagick](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [Op de lijn gebaseerde de manager van Media](media-handlers.md#command-line-based-media-handler).
+* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor vectorafbeeldingen van EPS wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [vorm ImageMagick](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [Op de lijn gebaseerde de manager van Media](media-handlers.md#command-line-based-media-handler).
 
 * Metagegevensterugschrijving werkt voor PSB- dossierformaat wanneer het aan `NComm` manager wordt toegevoegd.
 
-* Als u [!DNL Dynamic Media] wilt gebruiken om dynamische uitvoeringen voor EPS-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Als u [!DNL Dynamic Media] wilt gebruiken om dynamische uitvoeringen voor EPS-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI)-, Postscript (EPS)- en PDF-bestandsindelingen.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in versie 3.0 of hoger van de PostScript Document Structuring Convention (PS-Adobe).
 
@@ -98,7 +98,7 @@ Zie ook [Niet-ondersteunde bestandsindelingen detecteren voor Dynamic Media](htt
 * PSD-bestanden met een andere kleurruimte dan CMYK, RGB, Grijswaarden of Bitmap worden niet ondersteund. DuoTone-, Lab- en Geïndexeerde kleurruimten worden niet ondersteund.
 * PSD-bestanden met een bitdiepte groter dan 16.
 * TIFF-bestanden met zwevende-kommagegevens.
-* TIFF-bestanden met LAB-kleurruimte.
+* TIFF-bestanden met Lab-kleurruimte.
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -124,15 +124,15 @@ De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van 
 
 * Inhoudsintensieve AI/PDF-bestanden die bronintensief zijn voor verwerking.
 * AI/PDF-bestanden waarvoor standaard geen miniaturen worden gegenereerd.
-* AI-bestanden met Pantone Matching System (PMS)-kleuren.
+* AI-bestanden met PMS-kleuren (Pantone Matching System).
 
-Zie [Werken met PDF Rasterizer](aem-pdf-rasterizer.md).
+Zie [PDF Rasterizer](aem-pdf-rasterizer.md) gebruiken.
 
 ## Ondersteunde bibliotheek voor afbeeldingstranscodering {#supported-image-transcoding-library}
 
 De Adobe Imaging Transcoding-bibliotheek is een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen uitvoert, zoals coderen, transcoderen, resampling en vergroten/verkleinen.
 
-De bibliotheek voor grafische transformatie ondersteunt de volgende MIME-typen: JPG/JPEG, PNG (8-bits en 16-bits), GIF, BMP, TIFF/Gecomprimeerde TIFF (behalve 32-bits TIFF-bestanden en PTIFF-bestanden), ICO en ICN.
+De bibliotheek voor grafische transformatie ondersteunt de volgende MIME-typen: JPG/JPEG, PNG (8-bits en 16-bits), GIF, BMP, TIFF/Gecomprimeerde TIFF (behalve 32-bits TIFF- en PTIFF-bestanden), ICO en ICN.
 
 Zie [Bibliotheek voor beeldtransformatie](imaging-transcoding-library.md).
 
@@ -163,7 +163,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
 | PS | ✓ | ✓ | - | - | - | - | - | - |
 | QXP | ✓ | ✓ | - | - | - | - | - | - |
-| EPUB | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
+| ePub | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
 
 ## Ondersteunde documentindelingen in Dynamic Media {#supported-document-formats-dynamic-media}
 
@@ -177,7 +177,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 * Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor PDF-bestanden te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en de bestandsindelingen PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor INDD-bestanden te genereren, raadpleegt u [InDesign (INDD)-bestandsindeling](../assets/managing-image-presets.md#indesign-indd-file-format).
 
@@ -218,8 +218,6 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 | WebM | WebM | Google VP8 | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | MKV | Matroska | H264/AVC | - |
-| RAM, RM | RealVideo | Niet ondersteund | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| MJ2 | Beweging JPEG 2000 | Motion JPEG 2000-codec | - |
 
 ## Ondersteunde archiefindelingen {#supported-archive-formats}
 
@@ -303,7 +301,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| RTF | application/x-font-ttf |  |  |
+| TTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
@@ -315,6 +313,6 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 >[!MORELIKETHIS]
 >
->* [Schakel op MIME-type gebaseerde elementen en ondersteuning voor](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) Dynamic Media Classic-uploadtaakparameters in.
+>* [Schakel op MIME-type gebaseerde elementen en ondersteuning](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) voor uploadtaakparameters van Dynamic Media Classic in.
 >* [Configureer MIME op type gebaseerd voor ondersteuning](config-dynamic.md) voor uploadtaakparameters.
 

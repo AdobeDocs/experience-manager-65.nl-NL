@@ -3,10 +3,11 @@ title: Modellen van contentfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
+source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2334'
+ht-degree: 4%
 
 ---
 
@@ -73,6 +74,9 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
       * Vele eigenschappen zijn duidelijk, voor extra details zie [Eigenschappen](#properties).
       * Als u een **Veld Label** typt, wordt de **Eigenschapnaam** automatisch aangevuld; als deze naam leeg is, kan de tag achteraf handmatig worden bijgewerkt.
 
+         >[!CAUTION]
+         Wanneer u een gegevenstype **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+         Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
       Bijvoorbeeld:
 
       ![veldeigenschappen](assets/cfm-models-05.png)
@@ -133,6 +137,10 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 
 Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zijn hieronder meer details te vinden:
 
+>[!CAUTION]
+Wanneer u de **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+
 * **Render**
 AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.
 
@@ -140,8 +148,8 @@ AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. 
 LabelEnter 
 **Met** veldlabel wordt automatisch een  **eigenschapsnaam** gegenereerd. U kunt deze naam desgewenst handmatig bijwerken.
 
-* **De**
-bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vereiste bezit. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor meer informatie.
+* ****
+ValidationBasic-validatie is beschikbaar via mechanismen zoals de eigenschap  **** Required. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor meer informatie.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
@@ -153,8 +161,8 @@ bevestiging ValidationBasic is beschikbaar door mechanismen zoals het  **** Vere
 
    Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
-* **UniqueContent (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die van het huidige model zijn gemaakt.**
-
+* ****
+UniqueContent (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die van het huidige model zijn gemaakt.
 
    Dit wordt gebruikt om ervoor te zorgen dat inhoudsauteurs geen inhoud kunnen herhalen die al in een ander fragment van hetzelfde model is toegevoegd.
 
@@ -351,7 +359,7 @@ Om **Beleid** voor **Toegestane Modellen van het Fragment van de Inhoud te vorme
       U kunt meerdere modellen toestaan.
    ![Beleid inhoudsfragmentmodel](assets/cfm-model-policy-assets-folder.png)
 
-1. **Wijzigingen** opslaan.
+1. **** Wijzigingen opslaan.
 
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
 * Het **Beleid** voor **Allow Content Fragment Models**.

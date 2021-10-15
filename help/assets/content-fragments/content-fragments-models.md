@@ -4,9 +4,9 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 924b30680b189ec5061eb0bd664165793a9dbd9c
+source-git-commit: 966398715af1d9083512c4f6d4f0f81c72c898ae
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2342'
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
       * Als u een **Veld Label** typt, wordt de **Eigenschapnaam** automatisch aangevuld; als deze naam leeg is, kan de tag achteraf handmatig worden bijgewerkt.
 
          >[!CAUTION]
-         Wanneer u een gegevenstype **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+         Wanneer u de eigenschap **Naam eigenschap** voor een gegevenstype handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
          Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
       Bijvoorbeeld:
 
@@ -137,9 +137,13 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 
 Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zijn hieronder meer details te vinden:
 
->[!CAUTION]
-Wanneer u de **Eigenschapnaam** handmatig bijwerkt, moet u opletten dat namen alleen Latijnse tekens, numerieke cijfers en het onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
-Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+
+* **Eigenschapnaam**
+
+   Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **must** *only* Latijnse tekens, numerieke cijfers en onderstrepingsteken &quot;_&quot; als speciaal teken bevatten.
+
+   >[!CAUTION]
+   Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
 
 * **Render**
 AsThe diverse opties voor het realiseren/renderen van het veld in een fragment. Hierdoor kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.

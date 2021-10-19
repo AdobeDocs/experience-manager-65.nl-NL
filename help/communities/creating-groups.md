@@ -1,8 +1,8 @@
 ---
 title: Communautaire groepen
-seo-title: Communautaire groepen
+seo-title: Community Groups
 description: Gebruikersgroepen maken
-seo-description: Gebruikersgroepen maken
+seo-description: Creating community groups
 uuid: c677d23d-5edb-414c-9013-130c88c2ea52
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,44 +10,43 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 6337a57ea12f1e026f6c754a083307ce018a1c13
+exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
+source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
-
 
 # Communautaire groepen {#community-groups}
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers (leden van de gemeenschap en auteurs) van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Deze mogelijkheid is aanwezig wanneer de functie [groups](/help/communities/functions.md#groups-function) aanwezig is in de [communitysite](/help/communities/sites-console.md)-structuur.
+Deze mogelijkheid is aanwezig wanneer de [group, functie](/help/communities/functions.md#groups-function) aanwezig is in het dialoogvenster [community-site](/help/communities/sites-console.md) structuur.
 
-Een [communitygroepsjabloon](/help/communities/tools-groups.md) biedt het ontwerp van de communitygroeppagina wanneer een community-groep dynamisch wordt gemaakt.
+A [communitygroepsjabloon](/help/communities/tools-groups.md) verstrekt het ontwerp van de communautaire groepspagina wanneer een communautaire groep dynamisch wordt gecreeerd.
 
 Een of meer groepssjablonen worden geselecteerd voor de groepsfunctie wanneer de functie wordt toegevoegd aan de structuur van een gemeenschapssite of aan een sjabloon voor een gemeenschapssite. Deze lijst van groepsmalplaatjes wordt voorgesteld aan het lid of de auteur die dynamisch tot een nieuwe groep van binnen de communautaire plaats leidt.
 
-## Nieuwe groep maken {#creating-a-new-group}
+## Een nieuwe groep maken {#creating-a-new-group}
 
-De capaciteit om een nieuwe communautaire groep tot stand te brengen baseert zich op het bestaan van een communautaire plaats die de groepsfunctie omvat, zoals die van [het Malplaatje van de Plaats van de Verwijzing ](/help/communities/sites.md) wordt gecreeerd.
+Het vermogen om een nieuwe communautaire groep tot stand te brengen hangt van het bestaan van een communautaire plaats af die de groepenfunctie omvat, zoals die die van wordt gecreeerd [Sjabloon verwijzingssite](/help/communities/sites.md).
 
-De volgende voorbeelden gebruiken de communautaire die plaats van `Reference Site Template` wordt gecreeerd zoals die in [Aan de slag met AEM Communities](/help/communities/getting-started.md) wordt beschreven zelfstudie.
+De volgende voorbeelden gebruiken de communitysite die is gemaakt op basis van de `Reference Site Template` zoals beschreven in de [Aan de slag met AEM Communities](/help/communities/getting-started.md) zelfstudie.
 
-Dit is de pagina die bij publiceren laadt wanneer **Groepen** menupunt wordt geselecteerd:
+Dit is de pagina die wordt geladen bij publicatie wanneer de **Groepen** menu-item is geselecteerd:
 
 ![nieuwe groep](assets/new-group.png)
 
-Als u het pictogram **Nieuwe groep** selecteert, wordt een dialoogvenster voor bewerken geopend.
+Wanneer u **Nieuwe groep** wordt geopend.
 
-Onder het **lusje van Montages**, verstrekt u de basiseigenschappen van de groep:
+Onder de **Instellingen** tabblad geeft u de basisfuncties van de groep op:
 
 ![groep-instellingen](assets/group-settings.png)
 
 * **Groepsnaam**
 
-   De titel van de groep die op de communitysite moet worden weergegeven.
+   De titel van de groep die op de communitysite moet worden weergegeven. Gebruik geen onderstrepingstekens (_) en trefwoorden zoals bronnen en configuratie in groepsnaam.
 
 * **Beschrijving**
 
@@ -63,37 +62,36 @@ Onder het **lusje van Montages**, verstrekt u de basiseigenschappen van de groep
 
 * **Groep openen**
 
-   Als u `Open Group` selecteert, wordt aangegeven dat een anonieme sitebezoeker de inhoud kan weergeven. De selectie `Member Only Group` wordt opgeheven.
+   Selecteren `Open Group` geeft aan dat een anonieme sitebezoeker de inhoud kan bekijken en de selectie van `Member Only Group`.
 
 * **Groep alleen lid**
 
-   Als u `Member Only Group` selecteert, wordt alleen aangegeven dat leden van de groep de inhoud kunnen weergeven en wordt `Open Group` uitgeschakeld.
+   Selecteren `Member Only Group` Hiermee geeft u aan dat alleen leden van de groep de inhoud mogen bekijken en de selectie van `Open Group`.
 
-Onder het tabblad **Sjabloon** is de mogelijkheid om
-selecteer uit de lijst van communautaire groepsmalplaatjes die werden gespecificeerd toen de groepsfunctie in de structuur van de communautaire plaats of in een malplaatje van de communautaire plaats werd opgenomen.
+Onder de **Sjabloon** tab is de mogelijkheid om een keuze te maken uit de lijst met sjablonen voor groepen die zijn opgegeven toen de groepsfunctie was opgenomen in de structuur van de site van de community of in een sjabloon voor een community-site.
 
 ![groepssjabloon](assets/group-template.png)
 
-Onder het tabblad **Afbeelding** kunt u een afbeelding uploaden die u wilt weergeven voor de groep op de pagina Groepen van de communitysite. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
+Onder de **Afbeelding** is de mogelijkheid om een afbeelding te uploaden die voor de groep op de pagina Groepen van de communautaire site moet worden weergegeven. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
 
 ![groepsafbeelding](assets/group-image.png)
 
-Door **Create Groep** knoop te selecteren, worden de pagina&#39;s voor de groep gecreeerd gebaseerd op het gekozen malplaatje, en een gebruikersgroep wordt gecreeerd voor lidmaatschap en de pagina van Groepen zal worden bijgewerkt om de nieuwe subcommunity te tonen.
+Als u **Groep maken** , worden de pagina&#39;s voor de groep gemaakt op basis van de gekozen sjabloon, wordt een gebruikersgroep gemaakt voor lidmaatschap en wordt de pagina Groepen bijgewerkt om de nieuwe subcommunity weer te geven.
 
 De pagina Groepen met een nieuwe subcommunity met de naam &quot;Focus Group&quot;, waarvoor een afbeeldingsminiatuur is geüpload, ziet er bijvoorbeeld als volgt uit (nog steeds aangemeld als beheerder van een communitygroep):
 
 ![groepspagina](assets/group-page.png)
 
-Als u de koppeling `Focus Group` selecteert, wordt de pagina Focusgroep in de browser geopend. Deze pagina heeft een initiële weergave op basis van de gekozen sjabloon en bevat een submenu onder het menu van de hoofdsite van de community:
+Het selecteren van `Focus Group` Met de koppeling wordt de pagina Focus Group geopend in de browser, die een eerste weergave heeft op basis van de gekozen sjabloon, en een submenu bevat onder het menu van de hoofdsite van de community:
 
 ![open-group-page](assets/open-group-page.png)
 
-### Component {#community-group-member-list-component} van lijst met leden van communautaire groep
+### Component Lijst van leden van groep Gemeenschap {#community-group-member-list-component}
 
-De component `Community Group Member List` is bedoeld voor gebruik door ontwikkelaars van groepssjablonen.
+De `Community Group Member List` is bedoeld voor gebruik door ontwikkelaars van groepssjablonen.
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Community Group Essentials](/help/communities/essentials-groups.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen van gebruikersgroepen](/help/communities/essentials-groups.md) pagina voor ontwikkelaars.
 
-Voor andere informatie met betrekking tot communautaire groepen, bezoek [Beherende Gebruikers en Gebruikersgroepen](/help/communities/users.md).
+Voor andere informatie over groepen van gemeenschappen gaat u naar [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).

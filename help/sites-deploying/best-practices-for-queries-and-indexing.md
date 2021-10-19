@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 52c8d4c425213718678543e9e9e8e5a4c2af4f95
+source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
 workflow-type: tm+mt
-source-wordcount: '4684'
+source-wordcount: '4679'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ Wanneer u een index op een MongoDB-instantie verwijdert, zijn de verwijderingsko
 
 ### Het JCR-querycontroleblad {#jcrquerycheatsheet}
 
-Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie. Het bevat steekproefvragen voor QueryBuilder, XPath en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
+Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR-query - Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie. Het bevat steekproefvragen voor QueryBuilder, XPath en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
 
 ## Opnieuw indexeren {#re-indexing}
 
@@ -227,7 +227,7 @@ Herindexering van de eiken-indexen moet worden vermeden, tenzij in onderstaande 
 
 >[!NOTE]
 >
->Voordat u de onderstaande tabellen raadpleegt om te bepalen of indexering opnieuw moet worden toegepast, is** altijd **controleren:
+>Voorafgaand aan het raadplegen van de onderstaande tabellen om te bepalen of het opnieuw indexeren nuttig is, **altijd** verifiëren:
 >
 >* de vraag correct is
 >* de query wordt omgezet in de verwachte index (met [Query uitvoeren](/help/sites-administering/operations-dashboard.md#diagnosis-tools))

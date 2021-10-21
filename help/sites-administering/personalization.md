@@ -1,22 +1,21 @@
 ---
 title: Personalisatie
-seo-title: Personalisatie
+seo-title: Personalization
 description: Meer informatie over personalisatie in AEM.
-seo-description: Meer informatie over personalisatie in AEM.
+seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
-translation-type: tm+mt
-source-git-commit: ffded9c4c08c68db59d05b341166bed92e741e1e
+exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
+source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1686'
 ht-degree: 0%
 
 ---
-
 
 # Personalisatie {#personalization}
 
@@ -35,9 +34,11 @@ Er zijn drie hoofdelementen betrokken bij personalisatie:
 
 ### Inhoud {#content}
 
-* Is wat de gebruiker wil zien. Voorkeurelijk inhoud van belang en gebruik voor de vervulling van hun taken.
-* kan worden gecategoriseerd en moet daarom volgens vooraf gedefinieerde regels aan de gebruikers ter beschikking worden gesteld. moet dynamisch zijn; met andere woorden, de inhoud
-* Moet in zekere zin afhankelijk zijn van de gebruiker - als elke gebruiker dezelfde inhoud zou zien, dan zou personalisatie overtollig zijn.
+* Is wat de gebruiker wil zien. Voorkeurelijk inhoud van belang, en gebruik, aan hen voor het vervullen van hun taken.
+* Kan worden gecategoriseerd en daarom aan gebruikers volgens vooraf bepaalde regels ter beschikking worden gesteld.
+* Moet dynamisch zijn.
+
+Met andere woorden, de inhoud moet in zekere zin afhankelijk zijn van de gebruiker. Als elke gebruiker de zelfde inhoud ziet, dan is de verpersoonlijking overtollig.
 
 ### Regels {#rules}
 
@@ -64,7 +65,7 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 * Inhoud kan worden aangeboden op basis van de locatie, afdeling en/of rol van een gebruiker - al gedefinieerd binnen een intern netwerk.
 * Afhankelijk van de beschikbare keuze kan de gebruiker meer selecties maken.
 
-### Specifieke, beperkte, doelgebruikersgroepen - Extra {#extranets}
+### Specifieke, beperkte, doelgebruikersgroepen - Extra&#39;s {#extranets}
 
 * De gebruikers vereisen login voor vergunning; dit wordt gekoppeld aan een profiel met informatie die nodig is voor personalisatie; eventueel nadere gegevens zoals de locatie, de relatie met het product, de gebruiksgeschiedenis, de budgettaire verantwoordelijkheden, enz.
 * Dergelijke instanties kunnen zich uitstrekken over sites zoals:
@@ -79,7 +80,7 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 * Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name wat betreft het weergeven van advertenties.
 
-### Sterke punten van personalisatie en te overwegen punten {#strengths-of-personalization-and-points-to-consider}
+### Sterke punten van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
 
 De volgende redenen waarom personalisatie moet worden gebruikt:
 
@@ -101,22 +102,22 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 * Voor personalisatie is een aanmeldingsmechanisme vereist, omdat de website de gebruiker moet kunnen identificeren.
 
-#### {#caching}
+#### Caching {#caching}
 
 * Caching is een aspect dat de gebruiker in termen van prestaties en nauwkeurigheid zal zien - hoe snel levert de website gepersonaliseerde inhoud, en is het altijd huidig.
 * Het in cache plaatsen is een belangrijke overweging bij het configureren van de personalisatie en de tijd moet in acht worden genomen om ervoor te zorgen dat de juiste implementatie wordt gebruikt.
 
 >[!TIP]
 >
->Het effect van de aanpassing op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden verder besproken in het document [Prestaties optimaliseren.](/help/sites-deploying/configuring-performance.md)
+>Het effect van de aanpassing op prestaties en verwante in het voorgeheugen onderbrengende onderwerpen worden verder besproken in het document [Optimalisatie van prestaties.](/help/sites-deploying/configuring-performance.md)
 
-#### Nauwkeurigheid van regels {#accuracy}
+#### Nauwkeurigheid van de regels {#accuracy}
 
 * Personalisatie die wordt gerealiseerd door het gedrag van de gebruiker te volgen, of regels te plaatsen die op het profiel van de gebruiker worden gebaseerd, moet nauwkeurig en logisch zijn.
 * Er is niets frustrerender voor de gebruiker dan het hebben van inhoud gedwongen op, of ontkend aan, hen wegens de onnauwkeurige logica van een regel.
 * Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten en mag niet onderschat worden. het bepalen van de bedrijfsregels weegt vaak tegen de technische inspanning wanneer het uitvoeren van verpersoonlijking.
 
-#### Wanneer moet u {#when-to-use} gebruiken?
+#### Wanneer gebruiken {#when-to-use}
 
 * Zoals vele eigenschappen op het Web, zou de verpersoonlijking met zorg moeten worden gebruikt. Zal het gebruik ervan de gebruiker echt ten goede komen? moet altijd de eerste overweging zijn - of dat het gewenste doel met minder moeite met een andere methode kan worden bereikt. Personalisatie kan het risico lopen om een eigenschap te zijn die de gebruikers één keer (om te zien hoe het werkt) en slechts één keer vormen - aangezien het hen geen echte voordelen brengt.
 * Personalisatie is alleen zinvol wanneer de inhoud dynamisch is, op een of andere manier afhankelijk van de gebruiker. Als alle gebruikers de zelfde inhoud zien, dan is de verpersoonlijking overtollig.
@@ -168,11 +169,11 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Cloud labelen | Een labelwolk om een grafisch weergegeven selectie van tags op uw website weer te geven |
 | Teaser | Een stuk inhoud (gewoonlijk een beeld) die op een hoofdpagina wordt getoond om gebruikers tot de onderliggende inhoud &quot;te &quot;teweegbrengen&quot;. |
 
-## Personalisatie en communautaire inhoud {#personalization-and-community-content}
+## Personalisatie en community-inhoud {#personalization-and-community-content}
 
-Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC in een publicatiemilieu is ingegaan dat uit veelvoudige AEM instanties (a [publiceer landbouwbedrijf](/help/communities/topologies.md)) bestaat, is één belangrijke kwestie geweest hoe te om UGC over alle instanties te synchroniseren.
+Communautaire functies zoals blogs, forums en kalenders resulteren in het maken van inhoud van de gebruikersgemeenschap, die doorgaans UGC (door gebruikers gegenereerde inhoud) wordt genoemd. Wanneer UGC wordt ingevoerd in een publicatieomgeving die uit meerdere AEM bestaat (a [publicatiebedrijf](/help/communities/topologies.md)), was één belangrijke kwestie hoe te om UGC over alle instanties te synchroniseren.
 
-Met [AEM Communities 6.1](/help/communities/overview.md) uitbreiding, wordt dit probleem opgelost door een [gemeenschappelijke opslag voor UGC](/help/communities/working-with-srp.md) te gebruiken. Wat personalisatie betreft, bevatten de Community&#39;s [Sociale aanmelding](/help/communities/social-login.md) - de mogelijkheid voor bezoekers van de site om zich aan te melden bij Facebook en Twitter.
+Met [AEM Communities 6.1](/help/communities/overview.md) dit probleem is opgelost door een [gemeenschappelijke opslag voor UGC](/help/communities/working-with-srp.md). Wat personalisatie betreft, omvatten de Gemeenschappen [Sociale aanmelding](/help/communities/social-login.md) - de mogelijkheid voor bezoekers van de site om zich aan te melden bij Facebook en Twitter.
 
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 

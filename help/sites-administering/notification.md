@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 676299c741684708d420ac208f44b0c7a285de0c
+source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -319,7 +319,7 @@ U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt b
 
 >[!NOTE]
 >
->De hieronder beschreven procedure is een voorbeeld voor een instantie Publish. U kunt deze procedure ook volgen voor een instantie Auteur, als u dit wilt doen.
+>Deze procedure is een voorbeeld voor een instantie Publish. Als u e-mailmeldingen wilt inschakelen voor een auteur, moet u dezelfde stappen uitvoeren voor de auteur.
 
 ### Gmail {#gmail}
 

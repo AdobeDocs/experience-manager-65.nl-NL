@@ -2,7 +2,7 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bfe5bb744223be1ff9a00c382734abd9bf4db59a
+source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
 workflow-type: tm+mt
 source-wordcount: '1752'
 ht-degree: 2%
@@ -63,7 +63,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 | Integraties | De integratie met de Salesforce-API is verwijderd uit de standaarddistributie (QuickStart) en is nu een extra pakket voor installatie vanaf [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | De functie is nog steeds beschikbaar. |
 | Forms | De ondersteuning voor de Adobe Central Migration Bridge-service is verwijderd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Geen vervanging. |  |
-| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |
+| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Geen vervanging |  |
 | Forms | Single-hop verbetering van LiveCycle ES4 SP1 aan AEM 6.5 Forms op JEE is niet beschikbaar | Zie [beschikbare upgradepaden](../forms/using/upgrade.md) in AEM Forms-upgradedocumentatie. |  |
 | Forms | Ondersteuning voor clustering via UPD is verwijderd uit AEM Forms op JEE | U kunt slechts op TCP-Gebaseerde groepering in AEM Forms op JEE gebruiken. Als u een UDP multicast server van een vorige versie aan AEM 5.5 Forms op JEE bevordert, voer handconfiguraties uit om op TCP gebaseerde gemfire zich het groeperen over te schakelen. Zie voor gedetailleerde instructies [Upgrade uitvoeren naar AEM 6.5-formulieren op JEE](../forms/using/upgrade-forms-jee.md) |  |
 | Ontwikkelaars | Firebug Lite is verwijderd uit de standaarddistributie (QuickStart) | De ingebouwde browserconsoles voor ontwikkelaars gebruiken |

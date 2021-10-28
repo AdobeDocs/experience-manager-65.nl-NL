@@ -1,8 +1,8 @@
 ---
 title: API-hulplijnen
-seo-title: API-hulplijnen
+seo-title: API Guides
 description: Documentatie voor de API's die AEM voor het ontwikkelen van toepassingen
-seo-description: Documentatie voor de API's die AEM voor het ontwikkelen van toepassingen
+seo-description: Documentation for the APIs that AEM provides for developing applications
 uuid: d998b23c-5b0a-462f-a733-02cf979de2d0
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -11,25 +11,24 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 5b33f615f1c82ec7cf80ae00c440cb5e3f0741fa
+exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
+source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
-
 
 # API-hulplijnen {#api-guides}
 
 Adobe Experience Manager (AEM) biedt verschillende API&#39;s voor het ontwikkelen van toepassingen en het uitbreiden van AEM. De volgende lijst bevat de documentatie voor API&#39;s die worden ondersteund door AEM:
 
-* [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
-* [Granite UI (Touch-enabled) API-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-* [Hulplijn koraalinterface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
-* [Widgets API-documentatie (Classic UI)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-* [UI-testframework JavaScript API-naslaggids](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html)
-* [Referentie voor kern-JavaScript API van de Editor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
+* [Adobe AEM 6.5.0 API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
+* [Granite UI (Touch-enabled) API-documentatie](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
+* [Hulplijn koraalinterface](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [Widgets API-documentatie (Classic UI)](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
+* [UI-testframework JavaScript API-naslaggids](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
+* [Referentie voor kern-JavaScript API van de Editor](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor SDK framework JavaScript API-referenties:
 
@@ -44,15 +43,15 @@ API&#39;s voor levering en inhoudsbeheer AEM:
 
    * [JSON-exportfunctie](/help/sites-developing/json-exporter.md)
    * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
-   * Zie de sectie [Componenten in de Handleiding voor ontwikkelaars](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) voor meer informatie
+   * Zie de [De sectie Componenten in de Handleiding voor ontwikkelaars](/help/sites-developing/home.md) voor meer informatie
 
-* **Elementen**: Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-update-delete) maken op Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
+* **Activa**: Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-update-delete) maken op Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen. Zie [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **Inhoudsfragmenten**  (CF&#39;s):  [CF-ondersteuning in middelen HTTP ](/help/assets/assets-api-content-fragments.md) API en  [AEM Assets API - Inhoudsfragmenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
+* **Inhoudsfragmenten** (CF&#39;s): [CF-ondersteuning in HTTP-API voor middelen](/help/assets/assets-api-content-fragments.md) en [AEM Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 De volgende externe bronnen dienen slechts ter referentie:
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository-API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository-API](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)

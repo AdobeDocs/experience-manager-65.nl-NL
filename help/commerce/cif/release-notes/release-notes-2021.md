@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a401955e4b163a8062a498ea897d4a3d95ae0208
+source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1327'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
 
-**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-** op vervangen die op de Distributie [ van de Software van ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Adobe beschikbaar is. De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
+**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-on vervangen** die beschikbaar zijn op de [Adobe-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
 
 * De meeste nieuwe functies zijn direct beschikbaar op AEM 6.5 (niet meer wachtend op zijpoort met functies)
 * Eenvoudig upgradebaar naar nieuwe invoegversies
@@ -28,6 +28,26 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: oktober 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021.10.2002 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| CIF Core-componenten | 2.4.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
+| CIF Venia Reference Site | 2021 11 01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+
+### Wat is er nieuw? {#what-is-new-october}
+
+* De toe:voegen-on CIF steunt recentste Handel v2.4.3 met nieuwe GraphQL APIs en schema&#39;s
+
+* Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF-pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
+
+* Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten worden gebouwd gebruikend Magento uitbreidbare Peregrine componenten
+
+* Handelaars kunnen bepaalde categorieën van de productcatalogus in de navigatie verbergen gebruikend de achtergrond van de Handel. De CIF component van de Kern van de Navigatie eerbiedigt de handel achterste configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
+
+* AEM Storefront Venia retourneert de HTTP 404-fout als de categorie of productpagina niet wordt gevonden
 
 ## Releasedatum: september 2021
 
@@ -98,7 +118,7 @@ De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden g
    * Visuele indicator voor gefaseerde productgegevens op auteurswijze voor betere zichtbaarheid van aanstaande veranderingen
    * Nieuwe sitemapcomponent voor inhoud- en handelspagina&#39;s
 
-* Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of ter plekke gemaakte aanbevelingen
+* Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of tijdens de vlucht gemaakte aanbevelingen
 
 ## Releasedatum: juni 2021
 

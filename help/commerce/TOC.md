@@ -1,12 +1,12 @@
 ---
-sub-product: AEM Inhoud en Handel
+sub-product: AEM Content and Commerce
 user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
-source-git-commit: a5bf6a1a6e9013e44209ea865145af1557445318
+source-git-commit: 5678d20fa0a7e8a709b02a2f6cbbeffbd4a26cbd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 7%
+source-wordcount: '109'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
    + [Oplossing voor handel van derden](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
    + [Aan de slag](cif/getting-started.md)
-   + Beheren {#administering}
+   + Beheer {#administering}
       + [Multi-Store instellen](cif/configuring/multi-store-setup.md)
       + [Gebruik van meerdere sjablonen](cif/configuring/multi-template-usage.md)
       + [URL&#39;s configureren voor SEO](cif/configuring/advanced-url-configuration.md)
@@ -39,11 +39,12 @@ ht-degree: 7%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [Veelgestelde vragen](cif/faq.md)
-+ Klassieke CIF {#classic}
-   + {#deploying} implementeren
++ AEM CIF Classic {#classic}
+   + [Overzicht](/help/commerce/cif-classic/home.md)
+   + Implementeren {#deploying}
       + [Overzicht eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
-   + Beheren {#administering}
+   + Beheer {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Concepten](/help/commerce/cif-classic/administering/concepts.md)
       + [Algemeen eCommerce beheren](/help/commerce/cif-classic/administering/generic.md)

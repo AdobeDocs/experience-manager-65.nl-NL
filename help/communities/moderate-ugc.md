@@ -1,8 +1,8 @@
 ---
 title: Communautaire inhoud moderniseren
-seo-title: Communautaire inhoud moderniseren
+seo-title: Moderating Community Content
 description: Moderniseringsconcepten en -acties
-seo-description: Moderniseringsconcepten en -acties
+seo-description: Moderation concepts and actions
 uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,9 +12,9 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 812b9f3af3ad04343e648a8d07d53f8442978b82
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1510'
 ht-degree: 2%
 
 ---
@@ -36,11 +36,11 @@ Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wor
 
 Moderatie van UGC is nuttig om positieve bijdragen te erkennen en negatieve (zoals spam en misleidende taal) te beperken. UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
-* [Community-inhoud opslaan](working-with-srp.md)
+* [Opslag van communautaire inhoud](working-with-srp.md)
 
 * [Moderniseringsconsole](moderation.md)
 
-   De console van de Moderatie is toegankelijk door beheerders en [communitymoderators](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijke opslag](/help/communities/working-with-srp.md).
+   De console van de Moderatie is toegankelijk door beheerders en [gemeenschapsmoderatoren](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijk archief](/help/communities/working-with-srp.md).
 
 * [Moderatie binnen de context](in-context.md)
 
@@ -52,11 +52,11 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
 
 * `Admin`
 
-   Een gebruiker die lid is van [community-beheerders](users.md) groep.
+   Een gebruiker die lid is van [gemeenschapsbeheerders](users.md) groep.
 
 * `Moderator`
 
-   Een lid van een [community moderators](users.md#publishenvironmentusersandgroups) groep (heeft [moderatortoestemmingen](in-context.md#moderatorpermissions)).
+   Een lid van een [gemeenschapsmoderatoren](users.md#publishenvironmentusersandgroups) groep (heeft [moderatormachtigingen](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
@@ -79,7 +79,7 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
    <td><strong>Creator</strong></td>
    <td><strong>Lid</strong></td>
    <td><strong>Bezoeker</strong></td>
-   <td><strong>Event<br /> geactiveerd</strong></td>
+   <td><strong>Gebeurtenis<br /> Trigger</strong></td>
    <td><strong>Voormatig</strong></td>
   </tr>
   <tr>
@@ -197,13 +197,13 @@ De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is 
 
 ### Premoderatie {#premoderation}
 
-Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats verschijnen alvorens door een matigingsactie wordt goedgekeurd. Tijdens het maken van een [communitysite](/help/communities/sites-console.md) schakelt u het selectievakje [Inhoud wordt vooraf gematigd](sites-console.md#moderation) in om de voormoderatie voor de gehele site mogelijk te maken. Zodra de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
+Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats verschijnen alvorens door een matigingsactie wordt goedgekeurd. Tijdens de totstandbrenging van een [community-site](/help/communities/sites-console.md), het selectievakje in [Inhoud is vooraf gemodereerd](sites-console.md#moderation) zal de aanleg van de gehele site mogelijk maken. Zodra de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
 
-* [](comments.md) Opmerkingen en  [](reviews.md)
-beoordelingen in  **[!UICONTROL User Moderation]** >  **[!UICONTROL Pre-Moderation]**.
+* [Opmerkingen](comments.md) en [beoordelingen](reviews.md)
+in **[!UICONTROL User Moderation]** > **[!UICONTROL Pre-Moderation]**.
 
-* [Forum](/help/communities/forum.md),  [ideatie](/help/communities/ideation-feature.md),  [QnA](/help/communities/working-with-qna.md), en  [](/help/communities/calendar.md)
-calendarin  **[!UICONTROL Settings]** >  **[!UICONTROL Moderated]**.
+* [Forum](/help/communities/forum.md), [ideatie](/help/communities/ideation-feature.md), [QnA](/help/communities/working-with-qna.md), en [kalender](/help/communities/calendar.md)
+in **[!UICONTROL Settings]** > **[!UICONTROL Moderated]**.
 
 ### Spam-detectie {#spam-detection}
 
@@ -211,7 +211,7 @@ Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukke
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Nochtans, om de standaardspamwoorden aan te passen of uit te breiden creeer een reeks woorden in de /apps folder na de structuur van de standaardspamwoorden door middel van [bedekking](/help/communities/overlay-comments.md).
+Als u echter de standaardspamwoorden wilt aanpassen of uitbreiden, maakt u een set woorden in de map /apps die de structuur volgt van de standaardspamwoorden door middel van [bedekking](/help/communities/overlay-comments.md).
 
 Een door gebruikers gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Deze post is geclassificeerd als spam&quot;.
 
@@ -221,10 +221,10 @@ De moderator kan zulk een bericht zien en het zelfde merken om toe te staan of t
 
 Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
-1. Open [Webconsole](https://localhost:4502/system/console/configMgr) door naar `/system/console/configMgr` te gaan.
+1. Openen [Webconsole](https://localhost:4502/system/console/configMgr), door naar `/system/console/configMgr`.
 
-1. Zoek **AEM Communities Auto Moderation** configuratie en bewerk deze.
-1. Voeg de **[!UICONTROL SpamProcess]** ingang toe.
+1. Zoeken **AEM Communities Auto Moderation** en bewerken.
+1. Voeg de **[!UICONTROL SpamProcess]** vermelding.
 
 ![spamproces](assets/spamprocess.png)
 
@@ -234,7 +234,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
 ### Sentiment {#sentiment}
 
-De waarneming wordt berekend op basis van het aantal positieve en negatieve trefwoorden ([watchwords](#configuringwatchwords)) in een post (UGC).
+De waarneming wordt berekend op basis van het aantal positieve en negatieve trefwoorden ([wachtwoorden](#configuringwatchwords)) aanwezig in een post (UGC).
 
 De sentimentanalyse gebruikt een reeks vooraf geconfigureerde regels en berekent het sentiment van de UGC. De standaardregels worden gevestigd bij: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
@@ -251,25 +251,25 @@ Als u regels wilt overschrijven of toevoegen, maakt u een set regels in de map /
 
 Zodra geanalyseerd, wordt het sentiment bewaard met UGC.
 
-Vanuit de [bulkmoderatieconsole](/help/communities/moderation.md), is het mogelijk om UGC te filtreren en te bekijken gebaseerd op of het sentiment negatief, neutraal, of positief is.
+Van de [bulkmoderniseringsconsole](/help/communities/moderation.md), is het mogelijk om UGC te filteren en te bekijken gebaseerd op of het sentiment negatief, neutraal, of positief is.
 
 #### Wachtwoorden {#watchwords}
 
-AEM gemeenschappen verstrekken een *watchword analysator* als stap in het proces om [sentiment](#sentiment) te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
+AEM gemeenschappen *watchword-analyse* als een stap in het evaluatieproces [sentiment](#sentiment). De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
 #### Sentificatie en wachtwoorden configureren {#configure-sentiment-and-watchwords}
 
 De lijst van positieve en negatieve woorden kan worden aangepast zoals de sentimentregels kunnen zijn.
 
-De standaardlijst van wachtwoorden kan als eigenschappen van een knoop in de folder, gelijkend op het gebrek worden ingegaan of door het gebrek met voeten te treden door de dienst OSGi `sentimentprocess.name` met de lijst van woorden te vormen.
+De standaardlijst van wachtwoorden kan als eigenschappen van een knoop in de folder, gelijkend op het gebrek worden ingegaan of door het gebrek met voeten te treden door de dienst te vormen OSGi `sentimentprocess.name` met de lijst met woorden.
 
-De **sentimentprocess.name** kan ook worden gewijzigd om de plaats van een douanereeks sentimentregels te verwijzen.
+De **sentimentprocess.name** kan ook worden gewijzigd om de locatie van een aangepaste set sentimentregels te vermelden.
 
 sentiment en wachtwoorden configureren:
 
 * Meld u als beheerder aan bij de auteur.
-* Open [Webconsole](https://localhost:4502/system/console/configMgr).
-* `sentimentprocess.name` zoeken.
+* Openen [Webconsole](https://localhost:4502/system/console/configMgr).
+* Zoeken `sentimentprocess.name`.
 * Selecteer de configuratie die u wilt openen in de bewerkingsmodus.
 
 ![sentimentatieproces](assets/sentimentprocess.png)
@@ -284,19 +284,19 @@ sentiment en wachtwoorden configureren:
 
 * **Pad naar controlewoordknooppunt expliciet toepassen**
 
-   De locatie in de opslagplaats van een knooppunt met standaard `positive`- en `negative`-eigenschappen die standaardcontrolewoorden opgeven. De standaardwaarde is `/libs/settings/community/watchwords/default`.
+   De locatie in de opslagplaats van een knooppunt dat de standaardinstelling bevat `positive` en `negative` eigenschappen die standaardwachtwoorden opgeven. Standaard is `/libs/settings/community/watchwords/default`.
 
 * **Regels voor waarneming**
 
-   De locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve watchwords. De standaardinstelling is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter geen werkstroom meer aan gekoppeld).
+   De locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve watchwords. Standaard is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter niet langer sprake van een workflow).
 
-Hieronder ziet u een voorbeeld van een aangepast item voor de standaardwachtwoorden, wanneer `Explicit Path to Watchwords Node` is ingesteld op `/libs/settings/community/watchwords/default`.
+Hier volgt een voorbeeld van een aangepast item voor de standaardwachtwoorden, wanneer `Explicit Path to Watchwords Node` is ingesteld op `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 
 ### Moderatormachtigingen {#moderator-permissions}
 
-Wanneer de volgende machtigingen aan dezelfde bron worden toegewezen, worden deze gezamenlijk `moderator permissions` genoemd:
+De volgende toestemmingen, wanneer toegewezen aan het zelfde middel, worden collectief bedoeld zoals `moderator permissions`:
 
 * `Read`
 * `Modify`

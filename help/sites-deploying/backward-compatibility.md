@@ -1,8 +1,8 @@
 ---
 title: Achterwaartse compatibiliteit in AEM 6.5
-seo-title: Achterwaartse compatibiliteit in AEM 6.5
+seo-title: Backward Compatibility in AEM 6.5
 description: Leer hoe u uw apps en configuraties compatibel kunt houden met AEM 6.5
-seo-description: Leer hoe u uw apps en configuraties compatibel kunt houden met AEM 6.5
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,22 +11,21 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
+source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 1%
 
 ---
 
-
-# Achterwaartse Verenigbaarheid in AEM 6.5{#backward-compatibility-in-aem}
+# Achterwaartse compatibiliteit in AEM 6.5{#backward-compatibility-in-aem}
 
 ## Overzicht {#overview}
 
 >[!NOTE]
 >
->Voor een lijst van inhoud en configuratieveranderingen die niet onder het werkingsgebied het Pakket van de Verenigbaarheid vallen, zie [Herstructurering van de Bewaarplaats in AEM](/help/sites-deploying/repository-restructuring.md).
+>Voor een lijst van inhoud en configuratieveranderingen die niet onder het werkingsgebied het Pakket van de Verenigbaarheid zijn, zie [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md).
 
 In AEM 6.5 zijn alle functies ontwikkeld met achterwaartse compatibiliteit voor ogen.
 
@@ -42,7 +41,7 @@ Met het compatibiliteitspakket kunt u AEM uitvoeren in de compatibiliteitsmodus 
 
 ![verkorten](assets/sase.png)
 
-Het compatibiliteitspakket heeft twee modi: **Verpletterend Toegelaten** en **Verpletterend Gehandicapten**.
+Het compatibiliteitspakket heeft twee modi: **Verpletteren ingeschakeld** en **Routering uitgeschakeld**.
 
 Hierdoor kan AEM 6.5 in drie modi worden uitgevoerd:
 
@@ -64,10 +63,10 @@ De verouderde wijze is voor klanten die douaneinterfaces hebben die op erfenis o
 
 ## Instellen {#how-to-set-up}
 
-Het AEM 6.3 compatibiliteitspakket kan als een pakket worden geïnstalleerd met de Package Manager. U kunt het [AEM 6.3 compatibiliteitspakket downloaden van de plaats van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+De **AEM 6.4-compatibiliteitspakket voor 6.5** kan als pakket worden geïnstalleerd gebruikend de Manager van het Pakket. U kunt de [AEM 6.4 Compatability Pack voor 6.5 van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) site.
 
 Zodra het Pakket van de Verenigbaarheid wordt geïnstalleerd, kan het verpletteren worden toegelaten of worden onbruikbaar gemaakt gebruikend een schakelaar in de configuratie OSGI zoals hieronder getoond:
 
-![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
+![Compat Switches](assets/compat-switches.png)
 
 Nadat het compatibiliteitspakket is geïnstalleerd en ingesteld, worden de functies gebruikt op basis van de gekozen compatibiliteitsmodus.

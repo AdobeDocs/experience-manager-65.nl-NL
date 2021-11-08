@@ -1,16 +1,16 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-sub-product: formulieren
+sub-product: forms
 solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
 workflow-type: tm+mt
-source-wordcount: '3771'
+source-wordcount: '3777'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
       + [Zelfstudie: Stijl uw adaptieve formulier](using/style-your-adaptive-form.md)
       + [Zelfstudie: Het aangepaste formulier publiceren](/help/forms/using/publish-your-adaptive-form.md)
       + [Zelfstudie: Het adaptieve formulier testen](/help/forms/using/testing-your-adaptive-form.md)
-   + Zelfstudie: Maak uw eerste interactieve communicatie {#create-first-interactive-communication}
+   + Zelfstudie: Uw eerste interactieve communicatie maken {#create-first-interactive-communication}
       + [Zelfstudie: Maak uw eerste interactieve communicatie](using/create-your-first-interactive-communication.md)
       + [Zelfstudie: De interactieve communicatie plannen](using/planning-interactive-communications.md)
       + [Zelfstudie: Formuliergegevensmodel maken](using/create-form-data-model0.md)
@@ -52,8 +52,8 @@ ht-degree: 1%
       + [Referentie adaptieve formulierfragmenten](using/reference-adaptive-form-fragments.md)
       + [Referentiethema&#39;s](using/reference-themes.md)
       + [Referentielettersjablonen](using/reference-cm-layout-templates.md)
-      + [Vorm de Dynamiek 365 van Microsoft voor het huishypotheekwerkschema van de Web.Finance verwijzingsplaats](using/ms-dynamics-configuration-home-mortgage.md)
-+ AEM Forms {#install-aem-forms} installeren en configureren
+      + [Configureer Microsoft Dynamics 365 voor de workflow voor hypothecair thuis van de website Web.Finance](using/ms-dynamics-configuration-home-mortgage.md)
++ AEM Forms installeren en configureren {#install-aem-forms}
    + [Architectuur en plaatsingstopologieën voor AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Een type persistentie kiezen voor een AEM Forms-installatie](using/choosing-persistence-type-for-aem-forms.md)
    + AEM Forms installeren op OSGi {#osgi-installation}
@@ -77,7 +77,7 @@ ht-degree: 1%
       + [Adobe Experience Manager Forms configureren op JEE in JBoss-cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
       + [Adobe Experience Manager Forms configureren op JEE op WebSphere-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
       + [Adobe Experience Manager Forms configureren op JEE op WebLogic-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
-   + AEM Forms {#configure-aem-forms} configureren
+   + AEM Forms configureren {#configure-aem-forms}
       + [Prestaties afstemmen van AEM Forms-server](using/performance-tuning-aem-forms.md)
       + [Cache voor aangepaste formulieren configureren](using/configure-adaptive-forms-cache.md)
       + [AEM DS-instellingen configureren](using/configuring-the-processing-server-url-.md)
@@ -86,9 +86,9 @@ ht-degree: 1%
       + [AEM Forms verbinden met Adobe LiveCycle](using/aem-livecycle-connector.md)
       + [AEM Forms configureren voor het verzenden van formuliergegevens naar een AEM Forms tijdens JEE-proces](using/submit-form-data-livecycle-process.md)
       + [Desktop-app AEM voor AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-+ AEM Forms {#upgrade-aem-forms} upgraden
++ Upgrade uitvoeren voor AEM Forms {#upgrade-aem-forms}
    + [Beschikbare upgradepaden](using/upgrade.md)
-   + Upgrade uitvoeren van AEM Forms op OSGi {#aem-forms-osgi-upgrade}
+   + AEM Forms upgraden op OSGi {#aem-forms-osgi-upgrade}
       + [Upgrade naar AEM 6.5-formulieren op OSGi](using/upgrade-forms-osgi.md)
       + [Compatibiliteitspakket installeren](using/compatibility-package.md)
       + [AEM Forms-elementen en -documenten migreren](using/migration-utility.md)
@@ -100,7 +100,7 @@ ht-degree: 1%
       + [Upgrade naar AEM Forms op JEE voor JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
       + [Upgrade uitvoeren naar Adobe Experience Manager Forms op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
       + [Upgrade uitvoeren naar Adobe Experience Manager Forms op JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
-+ AEM Forms {#manage-administer-aem-forms} beheren
++ AEM Forms beheren {#manage-administer-aem-forms}
    + [AEM Forms over OSGi-groepen en -voorrechten](using/forms-groups-privileges-tasks.md)
    + [Nieuwe mappen maken om formulieren te categoriseren](using/creating-new-folders-categorize-forms.md)
    + [Zoeken naar formulieren en middelen](using/searching-forms-or-assets.md)
@@ -110,7 +110,7 @@ ht-degree: 1%
    + [XDP- en PDF-documenten ophalen in AEM Forms](using/get-xdp-pdf-documents-aem.md)
    + [Elementen importeren en exporteren naar AEM Forms](using/import-export-forms-templates.md)
    + [Ondersteuning voor nieuwe landinstellingen voor lokalisatie van adaptieve formulieren](using/supporting-new-language-localization.md)
-   + Gebruikersgegevens {#handling-user-data} verwerken
+   + Gebruikersgegevens verwerken {#handling-user-data}
       + [Forms-gecentreerde workflows op OSGi](using/forms-workflow-osgi-handling-user-data.md)
       + [Forms-gebruikersbeheer](using/user-management-handling-user-data.md)
       + [Forms JEE-workflows](using/forms-workflow-jee-handling-user-data.md)
@@ -118,7 +118,7 @@ ht-degree: 1%
       + [Correspondentenbeheer](using/correspondence-management-handling-user-data.md)
       + [Integratie met Adobe Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [Documentbeveiliging](/help/forms/using/document-security-handling-user-data.md)
-   + Verhardende AEM Forms-omgeving {#hardening-aem-forms-environment}
+   + Hardere AEM Forms-omgeving {#hardening-aem-forms-environment}
       + [Verharden en beveiligen van AEM formulieren op OSGi-omgeving](using/hardening-securing-aem-forms-environment.md)
       + [Algemene veiligheidsoverwegingen voor AEM Forms in juni](using/general-security-considerations.md)
       + [AEM Forms versterken op JEE-omgeving](using/hardening-aem-forms-jee-environment.md)
@@ -248,7 +248,7 @@ ht-degree: 1%
    + [Traceringsprocessen](using/tracking-processes.md)
    + [Single Sign On en timeout handlers](using/single-sign-timeout-handlers.md)
    + [Een adaptief formulier gebruiken in HTML Workspace](using/using-adaptive-form-html-workspace.md)
-   + [De werkruimte van AEM formulieren integreren met Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
+   + [De werkruimte AEM formulieren integreren met Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Werken met to-do-lijsten](using/todo-lists.md)
    + [Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte](using/troubleshooting-guidelines-html-workspace.md)
 + AEM Forms-app {#aem-forms-app}
@@ -280,7 +280,7 @@ ht-degree: 1%
    + [Inleiding tot HTML5-formulieren](using/introduction.md)
    + [Aan de slag met HTML5-formulieren](using/get-started.md)
    + [Architectuur van HTML5-formulieren](using/html5-forms-architecture.md)
-   + [Verschil tussen functies in HTML5-formulieren en PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [Verschil tussen HTML5-formulieren en PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [Veelgestelde vragen (FAQ) voor HTML5-formulieren](using/faq.md)
    + [Formuliersjablonen ontwerpen voor HTML5-formulieren](using/designing-form-template.md)
    + [Aanbevolen procedures voor HTML5-formulieren](using/best-practices-for-html5-forms.md)
@@ -288,7 +288,7 @@ ht-degree: 1%
    + [HTML5-voorbeeld van een XDP-formulier genereren](using/preview-xdp-forms-html.md)
    + [Formuliersjabloon weergeven voor HTML5-formulieren](using/rendering-form-template.md)
    + [Bijlagen inschakelen voor een HTML5-formulier](using/enabling-attachments-html5-form.md)
-   + [HTML5-formulierserviceproxy](using/service-proxy.md)
+   + [HTML5-serviceproxy voor formulieren](using/service-proxy.md)
    + [HTML5-formulieren optimaliseren](using/optimize-html5-forms.md)
    + [Schermlezers voor HTML5-formulieren](using/screen-readers.md)
    + [Een aangepast profiel maken voor HTML5-formulieren](using/custom-profile.md)
@@ -301,11 +301,11 @@ ht-degree: 1%
    + [CSS-stijlen maken voor HTML5-formulieren](using/css-styles.md)
    + [Foutberichten voor HTML5-formulieren aanpassen](using/customzing-errors-html5-forms.md)
    + [Een HTML5-formulier opslaan als concept](using/saving-html5-form-draft.md)
-   + [Logbestand voor HTML5-formulieren inschakelen](using/enable-logs.md)
+   + [Logboek inschakelen voor HTML5-formulieren](using/enable-logs.md)
    + [Fouten opsporen in HTML5-formulieren](using/debug.md)
    + [Scriptondersteuning voor HTML5-formulieren](using/scripting-support.md)
    + [Formulierset in AEM Forms](using/formset-in-aem-forms.md)
-+ Letters en corresponderende {#letters-correspondences}
++ Letters en correspondentie {#letters-correspondences}
    + [Overzicht van Correspondentenbeheer](using/cm-overview.md)
    + [Indelingsontwerp](using/layout-design-details.md)
    + [Gegevenswoordenboek](using/data-dictionary.md)
@@ -324,7 +324,7 @@ ht-degree: 1%
    + [API&#39;s voor toegang tot lettervarianten](using/cm-apis-to-access-letter-instances.md)
    + [De interface Correspondentie maken integreren met uw aangepaste portal](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [Aangepaste speciale tekens in Correspondentenbeheer](using/custom-special-characters.md)
-   + [Aangepast watermerk in PDF-voorbeeld met letter](using/custom-watermark.md)
+   + [Aangepast watermerk in PDF-voorvertoning letter](using/custom-watermark.md)
    + [Een Correspondentiebeheeroplossing configureren](using/configuring-a-cm-solution.md)
    + [Inline voorwaarde en herhaling in Interactieve Mededelingen en letters](using/cm-inline-condition.md)
    + [Documentfragmenten](using/lists.md)
@@ -335,7 +335,7 @@ ht-degree: 1%
    + [Analyses en rapporten configureren](using/configure-analytics-forms-documents.md)
    + [AEM Forms-analyserapporten weergeven en begrijpen](using/view-understand-aem-forms-analytics-reports.md)
    + [A/B-test voor adaptieve formulieren maken en beheren](using/ab-testing-adaptive-forms.md)
-+ AEM Forms {#publish-process-aem-forms} publiceren en verwerken
++ AEM Forms publiceren en verwerken {#publish-process-aem-forms}
    + [Inleiding tot het publiceren van formulieren op een portal](using/introduction-publishing-forms.md)
    + [Voorbeeld voor het integreren van concepten en verzendingen in de database](using/integrate-draft-submission-database.md)
    + [Opslagservices configureren voor concepten en verzending](using/configuring-draft-submission-storage.md)
@@ -368,8 +368,8 @@ ht-degree: 1%
    + [De sendToPrinter-API gebruiken](using/using-sendtoprinter-api.md)
 + Documentbeveiliging {#use-document-security}
    + [Beveiligingsaanbod van documenten](using/document-security-offerings.md)
-   + [AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF-documenten](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
-   + [Reader PDF-documenten die met een beleid zijn beveiligd, uitbreiden met de Portable Protection Library](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
+   + [AEM inschakelen om te zoeken naar documenten die zijn beveiligd met PDF](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
+   + [Reader voor het uitbreiden van met beleid beveiligde PDF-documenten met behulp van Portable Protection Library](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Een document namens een andere gebruiker Protect](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
@@ -379,9 +379,9 @@ ht-degree: 1%
    + [Grondbeginselen van scripts voor Designer ](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
    + [Scriptreferentie in Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [Referentiehandleiding van FormCalc voor Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_65)
-   + [Scripthandtekening gebruiken in HTML5-formulieren](using/scribble-signature.md)
-+ AEM Forms {#customize-aem-forms} aanpassen
-   + [Weergaveframework voor adaptieve en HTML5-formulieren](using/introduction-widgets.md)
+   + [Krabbelhandtekening gebruiken in HTML5-formulieren](using/scribble-signature.md)
++ AEM Forms aanpassen {#customize-aem-forms}
+   + [Vormgevingskader voor adaptieve en HTML5-formulieren](using/introduction-widgets.md)
    + [Een aangepaste aangepaste formuliersjabloon maken](using/custom-adaptive-forms-templates.md)
    + [Aangepaste indelingscomponenten voor aangepaste formulieren maken](using/custom-layout-components-forms.md)
    + [Aangepaste actie toevoegen aan formulierbibliotheekitems](using/add-custom-action-form-lister.md)
@@ -404,7 +404,7 @@ ht-degree: 1%
    + Aan de slag {#get-started}
       + [Algemene AEM Forms-instellingen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)
       + [Het licentietype voor de implementatie bijwerken](/help/forms/using/admin-help/update-license-type-deployment.md)
-   + Domeinen {#setup-manage-domains} instellen en beheren
+   + Domeinen instellen en beheren {#setup-manage-domains}
       + [Domeinen toevoegen](/help/forms/using/admin-help/adding-domains.md)
       + [Een domein verwijderen](/help/forms/using/admin-help/delete-domain.md)
       + [Instellingen voor accountvergrendeling configureren](/help/forms/using/admin-help/configure-account-locking-settings.md)
@@ -412,7 +412,7 @@ ht-degree: 1%
       + [Verificatieproviders configureren](/help/forms/using/admin-help/configuring-authentication-providers.md)
       + [Mappen synchroniseren](/help/forms/using/admin-help/synchronizing-directories.md)
       + [Mappen configureren](/help/forms/using/admin-help/configuring-directories.md)
-   + Gebruikersbeheer {#configure-user-management} configureren
+   + Gebruikersbeheer configureren {#configure-user-management}
       + [De volgorde van de evaluatie voor verificatie wijzigen](/help/forms/using/admin-help/change-order-evaluation-authentication.md)
       + [Het wachtwoord voor LDAP-binding configureren](/help/forms/using/admin-help/configure-ldap-bind-password.md)
       + [Formulieren configureren AEM als voorvoegsel voor domeininformatie](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md)
@@ -423,7 +423,7 @@ ht-degree: 1%
       + [Het configuratiebestand importeren en exporteren](/help/forms/using/admin-help/importing-exporting-configuration-file.md)
       + [Geavanceerde systeemkenmerken configureren](/help/forms/using/admin-help/configure-advanced-system-attributes.md)
       + [Voorkomen van CSRF-aanvallen](/help/forms/using/admin-help/preventing-csrf-attacks.md)
-   + Gebruikers {#setup-organize-users} instellen en organiseren
+   + Gebruikers instellen en organiseren {#setup-organize-users}
       + [Gebruikers toevoegen en configureren](/help/forms/using/admin-help/adding-configuring-users.md)
       + [Just-in-Time gebruikersprovisioning](/help/forms/using/admin-help/just-in-time-user-provisioning.md)
       + [Groepen maken en configureren](/help/forms/using/admin-help/creating-configuring-groups.md)
@@ -441,11 +441,11 @@ ht-degree: 1%
       + [Certificaten beheren](/help/forms/using/admin-help/certificates.md)
       + [HSM-referenties beheren](/help/forms/using/admin-help/hsm-credentials.md)
       + [Lokale referenties beheren](/help/forms/using/admin-help/local-credentials.md)
-   + Toepassingen en archieven {#import-manage-applications-archives} importeren en beheren
+   + Toepassingen en archieven importeren en beheren {#import-manage-applications-archives}
       + [Het aantal items wijzigen dat op de pagina&#39;s Toepassingen en Services wordt weergegeven](/help/forms/using/admin-help/change-number-items-displayed-applications.md)
       + [Archiefbestanden importeren en beheren](/help/forms/using/admin-help/import-archives.md)
       + [Toepassingen importeren en beheren](/help/forms/using/admin-help/import-applications.md)
-   + Services {#manage-services} beheren
+   + Services beheren {#manage-services}
       + [Servicemontages configureren](/help/forms/using/admin-help/configure-service-settings.md)
       + [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md)
    + Eindpunten beheren {#manage-endpoints}
@@ -461,22 +461,23 @@ ht-degree: 1%
       + [Acrobat Reader DC-extensies configureren voor het vastleggen van gegevens](/help/forms/using/admin-help/configuring-acrobat-reader-dc-extensions.md)
       + [Gebruiksgegevens voor referentie controleren](/help/forms/using/admin-help/review-credential-information.md)
       + [Referenties configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md)
-      + [De gebruiksrechten van een PDF-bestand controleren](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
+      + [De gebruiksrechten van een PDF-bestand bekijken](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
       + [Onlineopmerkingen inschakelen voor Adobe Reader-plug-in voor webbrowsers](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
       + [Afdrukwaarden instellen voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
-   + Werken met PDF-Generator {#work-with-pdf-generator}
+      + [Verlopen Reader Extension-servicecertificaten bijwerken](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
+   + Werken met PDF Generator {#work-with-pdf-generator}
       + [Inleiding tot het werken met PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Bestanden met meerdere threads omzetten](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Adobe PDF-instellingen configureren](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Beveiligingsinstellingen configureren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Instellingen voor bestandstypen configureren](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [PDF Generator-configuratiebestanden importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
-      + [PDF/A-ondersteuning inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
+      + [Ondersteuning voor PDF/A inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Een PDFG-netwerkprinter instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Terugvallettertypen configureren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
-      + [De conversie-instellingen voor PDF-export wijzigen](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
+      + [De conversie-instellingen voor PDF exporteren wijzigen](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
       + [Bestanden converteren met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
-   + SSL {#configure-ssl} configureren
+   + SSL configureren {#configure-ssl}
       + [Overzicht van het configureren van SSL](/help/forms/using/admin-help/overview-6.md)
       + [SSL configureren voor JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
       + [SSL configureren onder Windows Vista](/help/forms/using/admin-help/configuring-ssl-windows-vista.md)
@@ -492,7 +493,7 @@ ht-degree: 1%
       + [Webpagina&#39;s voor documentbeveiliging gebruiken](/help/forms/using/admin-help/using-document-security-web-pages.md)
       + [Beleidssets maken en beheren](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Registreren als gebruiker](/help/forms/using/admin-help/registering-as-a-user.md)
-   + Forms {#configure-forms} configureren
+   + Forms configureren {#configure-forms}
       + [Basisbeginselen van formulieren configureren](/help/forms/using/admin-help/overview-7.md)
       + [internationalisatieopties instellen](/help/forms/using/admin-help/setting-internationalization-options.md)
       + [Caching configureren voor Forms](/help/forms/using/admin-help/configuring-caching-forms.md)
@@ -502,7 +503,7 @@ ht-degree: 1%
       + [Locaties configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md)
       + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specifying-security-settings.md)
       + [Validatieberichten configureren](/help/forms/using/admin-help/configuring-validation-messages.md)
-   + Uitvoer {#configure-output} configureren
+   + Uitvoer configureren {#configure-output}
       + [Overzicht van uitvoerservice](/help/forms/using/admin-help/overview-8.md)
       + [XCI-configuratieopties opgeven](/help/forms/using/admin-help/specify-xci-configuration-options.md)
       + [Caching configureren voor Output](/help/forms/using/admin-help/configuring-caching-output.md)
@@ -522,7 +523,7 @@ ht-degree: 1%
       + [Werken met stilstaande bewerkingen en vertakkingen](/help/forms/using/admin-help/stalled-operations-branches.md)
       + [Gedeelde wachtrijen configureren](/help/forms/using/admin-help/configuring-shared-queues.md)
       + [Werken met taken](/help/forms/using/admin-help/tasks.md)
-   + Werkruimte {#configure-workspace} configureren
+   + Werkruimte configureren {#configure-workspace}
       + [Overzicht van werkruimte](/help/forms/using/admin-help/overview-10.md)
       + [Algemene instellingen importeren en exporteren](/help/forms/using/admin-help/importing-exporting-global-settings.md)
       + [Het bericht van de dag instellen](/help/forms/using/admin-help/setting-message-day.md)
@@ -534,20 +535,20 @@ ht-degree: 1%
       + [Statistieken weergeven met betrekking tot Werkbeheer](/help/forms/using/admin-help/view-statistics-related-manager.md)
       + [Systeeminformatie weergeven](/help/forms/using/admin-help/view-system-information.md)
       + [Records uit de taakbeheerdatabase wissen](/help/forms/using/admin-help/purge-records-job-manager-database.md)
-   + AEM formulieren {#maintain-aem-forms} onderhouden
+   + AEM formulieren onderhouden {#maintain-aem-forms}
       + [Logbestanden](/help/forms/using/admin-help/log-files.md)
       + [Gebruikersbeheer](/help/forms/using/admin-help/user-management.md)
       + [Implementaties van AEM controleren](/help/forms/using/admin-help/monitoring-aem-forms-deployments.md)
       + [Tijdelijk beheer en vertraging](/help/forms/using/admin-help/manager-throttling.md)
       + [AEM formulieren uitvoeren in de onderhoudsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
-   + De database voor AEM formulieren {#maintain-aem-forms-database} onderhouden
+   + De database met AEM formulieren onderhouden {#maintain-aem-forms-database}
       + [DB2-database: Een proces wekelijks uitvoeren](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
       + [Maximale drempel voor open cursors in de database oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md)
       + [Microsoft SQL Server-database: De configuratie verfijnen](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [Tips voor het minimaliseren van databasegroei](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
-   + De toepassingsserver {#manage-application-server} onderhouden
+   + De toepassingsserver onderhouden {#manage-application-server}
       + [Websites van toepassingsservers](/help/forms/using/admin-help/application-server-websites.md)
       + [Algemene map voor documentopslag](/help/forms/using/admin-help/global-document-storage-directory.md)
       + [Overwegingen bij het uitvoeren van AdministrationConsole](/help/forms/using/admin-help/considerations-running-administration-console.md)
@@ -559,12 +560,12 @@ ht-degree: 1%
       + [Back-ups maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md)
       + [Back-up- en herstelstrategie voor AEM formulieren](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Beperkingen voor back-up van PDF Generator](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF Generator-back-upbeperkingen](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Back-upstrategieën voor gecontroleerde mappen](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Back-upstrategie voor Connector voor EMC Documentum gebruikers](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)
       + [Strategie voor back-up en herstel in een geclusterde omgeving](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md)
-   + System information service {#system-information-service}
+   + Systeeminformatiedienst {#system-information-service}
       + [De System Information Service instellen](/help/forms/using/admin-help/set-system-information-service.md)
       + [System Information Service API&#39;s](/help/forms/using/admin-help/system-information-service-apis.md)
 + Procesrapportage {#process-reporting}
@@ -575,9 +576,9 @@ ht-degree: 1%
    + [Aangepaste rapporten in procesrapportage](/help/forms/using/process-reporting/process-reporting-custom-reports.md)
    + [Ad hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Problemen met procesrapportage oplossen](/help/forms/using/process-reporting/troubleshooting-process-management.md)
-+ Referentie voor ontwikkelaar {#developer-reference}
++ Referentie ontwikkelaar {#developer-reference}
    + [Grondbeginselen van ontwikkelaars](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML-sjabloontaal](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [HTML Sjabloontaal](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
    + [AEM insteekmodule voor het opsporen van fouten in adaptieve formulieren](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
@@ -597,11 +598,11 @@ ht-degree: 1%
          + [Application Manager Client JavaAPI Quick Start (SOAP)](developing/application-manager-client-java-api.md)
          + [Application Manager Service JavaAPI Quick Start (SOAP)](developing/application-manager-service-java-api.md)
          + [Java API QuickStart (SOAP) van de Assembler-service](developing/assembler-service-java-api-quick.md)
-         + [Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
+         + [Acrobat Reader DC Extension Service Java API Quick Start (SOAP)](developing/acrobat-reader-dc-extensions-service.md)
          + [Back-up- en herstelservice APIQuick start](developing/backup-restore-service-api-quick.md)
          + [Barcoded Forms Service Java APIQuick Start (SOAP)](developing/barcoded-forms-service-java-api.md)
          + [Componenten en services Java APIQuick Start (SOAP)](developing/components-services-java-api-quick.md)
-         + [Java API QuickStart (SOAP) van PDF-service converteren](developing/convert-pdf-service-java-api.md)
+         + [Java API QuickStart (SOAP) van PDF Service converteren](developing/convert-pdf-service-java-api.md)
          + [Credential Service Java API QuickStart (SOAP)](developing/credential-service-java-api-quick.md)
          + [Distiller Service Java API QuickStart (SOAP)](developing/distiller-service-java-api-quick.md)
          + [DocConverter Service Java API QuickStart (SOAP)](developing/docconverter-service-java-api-quick.md)
@@ -615,13 +616,13 @@ ht-degree: 1%
          + [Snel aan de slag met de oproepings-API](developing/invocation-api-quick-starts.md)
          + [LiveCycleProcess Java API(SOAP)Snel starten](developing/livecycleprocess-java-api-soap-quick.md)
          + [Java API voor uitvoerservice, snel starten (SOAP)](developing/output-service-java-api-quick.md)
-         + [Java APIQuick Start (SOAP) van PDF-hulpprogramma&#39;s](developing/pdf-utilities-service-java-api.md)
+         + [Java APIQuick Start (SOAP) van de PDF Utilities Service](developing/pdf-utilities-service-java-api.md)
          + [Repository Service API](developing/repository-service-api-quick-starts.md)
          + [Java API QuickStart (SOAP) voor handtekeningservice](developing/signature-service-java-api-quick.md)
          + [Java API QuickStart (SOAP) van Taakbeheerservice](developing/task-manager-service-java-api.md)
          + [Java API Quick Start (SOAP) voor gebruikersbeheer](developing/user-manager-java-api-quick.md)
          + [Java APIQuick Start (SOAP) XMP Utilities Service](developing/xmp-utilities-service-java-api.md)
-      + AEM Forms aanroepen op JEE met behulp van API&#39;s {#invoking-aem-forms-jee-apis}
+      + AEM Forms aanroepen op JEE met API&#39;s {#invoking-aem-forms-jee-apis}
          + [AEM Forms aanroepen met REST-verzoeken](developing/invoking-aem-forms-using-rest.md)
          + [AEM Forms aanroepen met webservices](developing/invoking-aem-forms-using-web.md)
          + [AEM Forms aanroepen met Remoting](developing/invoking-aem-forms-using-remoting.md)
@@ -633,7 +634,7 @@ ht-degree: 1%
          + [Forms renderen](developing/rendering-forms.md)
          + [PDF-documenten samenstellen](developing/assembling-pdf-documents.md)
          + [PDF-documenten programmatisch samenstellen](developing/programmatically-assembling-pdf-documents.md)
-         + [Converteren tussen bestandsindelingen en PDF](developing/converting-file-formats-pdf.md)
+         + [Bestandsindelingen omzetten in PDF](developing/converting-file-formats-pdf.md)
          + [PDF-documenten programmatisch demonteren](developing/programmatically-disassembling-pdf-documents.md)
          + [Gecodeerde PDF-documenten samenstellen](developing/assembling-encrypted-pdf-documents.md)
          + [Meerdere XDP-fragmenten samenstellen](developing/assembling-multiple-xdp-fragments.md)
@@ -644,8 +645,8 @@ ht-degree: 1%
          + [PDF-Portfolio samenstellen](developing/assembling-pdf-portfolios.md)
          + [Formuliergegevens berekenen](developing/calculating-form-data.md)
          + [Webtoepassingen maken die Forms renderen](developing/creating-web-applications-renders-forms.md)
-         + [PDF-documenten maken met verzonden XML-gegevens](developing/creating-pdf-documents-submitted-xml.md)
-         + [Een PDF-document deassembleren met de webservice-API](developing/disassemble-pdf-document-using-web.md)
+         + [PDF-documenten maken met VerzondenXML-gegevens](developing/creating-pdf-documents-submitted-xml.md)
+         + [Een PDF-document dempen met de webservice-API](developing/disassemble-pdf-document-using-web.md)
          + [Bepalen of documenten PDF/A-compatibel zijn](developing/determining-whether-documents-pdf-a.md)
          + [DDX-documenten dynamisch maken](developing/dynamically-creating-ddx-documents.md)
          + [Verzendde Forms afhandelen](developing/handling-submitted-forms.md)
@@ -661,7 +662,7 @@ ht-degree: 1%
          + [Interactieve PDF forms renderen](developing/rendering-interactive-pdf-forms.md)
          + [Forms met renderrechten](developing/rendering-rights-enabled-forms.md)
          + [DDX-documenten valideren](developing/validating-ddx-documents.md)
-         + [PDF converteren naar Postscript- en afbeeldingsbestanden](developing/converting-pdf-postscript-image-files.md)
+         + [PDF converteren naar PostScript- en afbeeldingsbestanden](developing/converting-pdf-postscript-image-files.md)
          + [Postscript converteren naar PDF-documenten](developing/converting-postscript-pdf-documents.md)
          + [Documentuitvoerstromen maken](developing/creating-document-output-streams.md)
          + [Documenten digitaal ondertekenen en certificeren](developing/digitally-signing-certifying-documents.md)
@@ -672,14 +673,14 @@ ht-degree: 1%
          + [Werken met formulieren met streepjescodes](developing/barcoded-forms.md)
          + [Werken met referenties](developing/credentials.md)
          + [Werken met PDF/A-documenten](developing/pdf-a-documents.md)
-         + [Werken met PDF-hulpprogramma&#39;s](developing/pdf-utilities.md)
+         + [Werken met hulpprogramma&#39;s voor PDF](developing/pdf-utilities.md)
          + [Werken met XMP hulpprogramma&#39;s](developing/xmp-utilities.md)
          + [AEM Forms for Backup voorbereiden](developing/preparing-aem-forms-backup.md)
          + [Programmaticaal het leiden Eindpunten](developing/programmatically-endpoints.md)
          + [Het programmatisch beheren van de Knooppunten van de Voorkeur](developing/programmatically-preferences-nodes.md)
          + [Documenten beveiligen met beleid](developing/protecting-documents-policies.md)
          + [Een DDX-document valideren met de webservice-API](developing/validate-ddx-document-using-web.md)
-      + Verouderde documentatie {#legacy-documentation}
+      + Oudere documentatie {#legacy-documentation}
          + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
          + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)
          + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)

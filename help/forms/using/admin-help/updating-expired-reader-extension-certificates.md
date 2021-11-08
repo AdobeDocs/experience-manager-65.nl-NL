@@ -1,9 +1,9 @@
 ---
 title: Verlopen Reader Extension-servicecertificaten bijwerken
 description: 'Uitgebreide documenten Readers werkt niet, certificaten bijwerken '
-source-git-commit: 5f2fc6a32f67cfed3bc4b09b63bcf9689659a99d
+source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Adobe Experience Manager Forms (AEM Forms)-klanten met Adobe Managed Services of
 
 Adobe maakt gebruik van een PKI (Public Key Infrastructure) om digitale certificaten uit te geven voor gebruik in licenties en functionaliteit. Adobe heeft certificaten uitgegeven onder de certificeringsinstantie &quot;Adobe Root CA&quot;, die volgens de planning op 7 januari 2023 afloopt. Dit zal leiden tot het verlopen van alle certificaten die zijn uitgegeven onder deze certificeringsinstantie. Nadat het certificaat is verlopen, werken alle functies die afhankelijk zijn van de certificaten niet meer. Een PDF-document met uitgebreide lezer dat bijvoorbeeld het toevoegen van opmerkingen met Adobe Acrobat Reader toestaat, werkt niet meer na 7 januari 2023 voor klanten. Om de kwestie op te lossen, zou de beheerder van de dienst van de Uitbreiding van de Reader, gebruikend oude certificaten, nieuwe die certificaten verkrijgen en opnieuw toepassen door nieuwe Adobe Root CA G2 aan hun documenten van de PDF (lezer breidt de documenten van de PDF met nieuwe certificaten uit) worden uitgegeven.
 
-De vervaldatum van certificaten is van invloed op zowel AEM Forms op JEE als AEM Forms op OSGi-stapels. Beide stapels hebben een andere set instructies. Kies afhankelijk van de stapel een van de volgende paden:
+De vervaldatum van certificaten is van invloed op zowel AEM Forms op JEE als AEM Forms op OSGi-stapels. Beide stapels hebben een andere set instructies. Na vergadering [vooraanvragen](#Pre-requisites) en [nieuwe certificaten verkrijgen](#obtain-the-certificates)Kies, afhankelijk van de stapel, een van de volgende paden:
 
-* Certificaten bijwerken voor een AEM Forms in JEE-omgeving
-* Certificaten bijwerken voor een AEM Forms in een OSGi-omgeving
+* [Certificaten bijwerken voor een AEM Forms in JEE-omgeving](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment)
+* [Certificaten bijwerken voor een AEM Forms in een OSGi-omgeving](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
 
 >[!NOTE]
 >
@@ -97,14 +97,14 @@ Voor het bijwerken en toepassen van nieuwe certificaten op AEM Forms in de OSGi-
 In een AEM Forms op milieu OSGi, wordt een referentie van de Uitbreiding van de Reader geassocieerd met fd-dienst gebruiker. Voordat u referenties toevoegt voor het sleutelarchief van de gebruiker, voert u de volgende stappen uit om een sleutelarchief te maken:
 
 1. Meld u als beheerder aan bij de AEM-auteur.
-1. Ga naar Gereedschappen > Beveiliging > Gebruikers.
+1. Ga naar **[!UICONTROL Tools]**> **[!UICONTROL Security]**>**[!UICONTROL Users]**.
 1. Blader omlaag in de lijst met gebruikers totdat u een gebruikersaccount voor fd-service vindt.
-1. Klik op de gebruiker van de fd-dienst.
+1. Klikken **[!UICONTROL fd-service]** gebruiker.
 1. Klik op het tabblad sleutelarchief.
-1. Klik op Create KeyStore.
+1. Klik op **[!UICONTROL Create KeyStore]**.
 1. Stel het wachtwoord voor toegang tot KeyStore in en sla uw instellingen op om het wachtwoord voor KeyStore te maken.
 
-Nadat u de sleutelarchief hebt gemaakt, voegt u referenties toe aan de gebruiker van de fd-service.
+Nadat u de sleutelarchief hebt gemaakt, voegt u referenties toe aan de gebruiker van de fd-service. In de volgende video worden de stappen beschreven:
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 85736791b7a8f518b57180b0139d6a76ebf1c6dc
+source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 15%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 + [Informatie over DAM](assets.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
 + [Toegankelijkheid in [!DNL Assets]](accessibility.md)
-+ Experience Manager-elementen gebruiken {#using}
++ Experience Manager Assets gebruiken {#using}
    + [[!DNL Assets] homepage](assets-home-page.md)
    + [Digitale middelen zoeken](search-assets.md)
    + [Werken met metagegevens van elementen](metadata.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [Elementen in elementen gebruiken [!DNL Adobe Stock] ](aem-assets-adobe-stock.md)
+   + [Gebruiken [!DNL Adobe Stock] activa in activa](aem-assets-adobe-stock.md)
    + [3D-elementen voorvertonen](previewing-3d-assets.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Verbeterde slimme tags](enhanced-smart-tags.md)
@@ -36,11 +36,13 @@ ht-degree: 0%
    + [Elementen hergebruiken met MSM](reuse-assets-using-msm.md)
    + [Verbonden elementen met [!DNL Sites]](use-assets-across-connected-assets-instances.md)
 +  Dynamic Media {#dynamic}
-   + [Dynamic Media-nieuwsarchief per Experience League](dynamic-media-newsletter.md)
+   + [Archief met nieuwsbrief per Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
    + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
    + [Dynamic Media configureren - hybride modus](config-dynamic.md)
+   + [Dynamic Media-instelling Algemeen configureren](dm-general-settings.md)
+   + [Dynamic Media-publicatie-instellingen configureren](dm-publish-settings.md)
    + [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
    + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)
    + [Migreren van Dynamic Media naar hybride modus naar Dynamic Media - S7-modus](migrate-from-hybrid-to-dms7.md)
@@ -82,20 +84,20 @@ ht-degree: 0%
    + [De CDN-cache ongeldig maken via Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
-+ Elementen {#extending} uitbreiden
++ Elementen uitbreiden {#extending}
    + [Aanpassen en uitbreiden [!DNL Assets]](extending-assets.md)
    + [Elementen verwerken met behulp van mediafuncties en workflows](media-handlers.md)
    + [Zoekfunctionaliteit uitbreiden](searchx.md)
-   + [Installeren en configureren [!DNL ImageMagick] voor samenwerking met [!DNL Assets]](best-practices-for-imagemagick.md)
+   + [Installeren en configureren [!DNL ImageMagick] werken met [!DNL Assets]](best-practices-for-imagemagick.md)
    + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
    + [Editor van element uitbreiden](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
-   + [Content Fragments support in [!DNL Assets] HTTP API](assets-api-content-fragments.md)
+   + [Ondersteuning voor inhoudsfragmenten in [!DNL Assets] HTTP-API](assets-api-content-fragments.md)
    + [GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
    + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
-+ Elementen {#administer} beheren
++ Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevensconcepten begrijpen](metadata-concepts.md)
@@ -129,7 +131,7 @@ ht-degree: 0%
    + [Watermerk uw elementen](watermarking.md)
    + [Elementsjablonen](asset-templates.md)
 + Brand Portal {#brandportal}
-   + [Configureren [!DNL Assets] met [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
+   + [Configureren [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
    + [Elementen publiceren naar [!DNL Brand Portal]](brand-portal-publish-assets.md)
    + [Mappen publiceren naar [!DNL Brand Portal]](brand-portal-publish-folder.md)
    + [Verzamelingen publiceren naar [!DNL Brand Portal]](brand-portal-publish-collection.md)
@@ -147,7 +149,7 @@ ht-degree: 0%
    + [Boomstructuur](/help/assets/content-fragments/content-fragments-structure-tree.md)
    + [Voorvertoning - JSON-representatie](/help/assets/content-fragments/content-fragments-json-preview.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
-+ Elementen {#managing} beheren
++ Elementen beheren {#managing}
    + [Digitale middelen beheren](manage-assets.md)
    + [Verzamelingen beheren](manage-collections.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)

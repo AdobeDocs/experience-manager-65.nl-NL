@@ -10,9 +10,9 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: e3067a17153864babaf0243c4c3f6cf9cd8d30bc
+source-git-commit: 1985058faa2a85a4544b35f2a6925670207df9e1
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2927'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,6 @@ ht-degree: 0%
 >* U bent een systeembeheerder van het systeem van de Experience Manager met beheerdervoorrechten.
 
 
-
 De Dynamic Media-instellingen van de pagina Publiceren-instellingen bepalen hoe elementen standaard worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling op een pagina Publicatie-instelling. Als u bijvoorbeeld een verzoek indient om een afbeelding te leveren die geen resolutiekenmerk bevat, wordt een afbeelding weergegeven met de standaardinstelling Objectresolutie op de pagina Afbeeldingsserver.
 
 Beheerders kunnen de standaardinstellingen op de pagina&#39;s Afbeeldingsserver, Afbeeldingsrenderer en Vignet wijzigen om standaardinstellingen voor het leveren van elementen van servers in te stellen.
@@ -42,7 +41,7 @@ Beheerders kunnen de standaardinstellingen op de pagina&#39;s Afbeeldingsserver,
 
 1. In de wijze van de Auteur van de Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
 1. Selecteer in de linkertrack het pictogram Gereedschappen en ga naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
-1. In de pagina van de Server van het Beeld, plaats uw Server van het Beeld - publiceer context, en gebruik dan de vijf lusjes om gebreken te vormen publiceer montages.
+1. In de pagina van de Server van het Beeld, plaats uw Server van het Beeld - publiceer context, en gebruik dan de vijf lusjes om gebrek te vormen publiceer montages.
 
    * [Afbeeldingsserver](#image-server)
    * [Beveiliging](#security-tab) tab
@@ -50,6 +49,9 @@ Beheerders kunnen de standaardinstellingen op de pagina&#39;s Afbeeldingsserver,
    * [Aanvraagkenmerken](#request-attributes-tab) tab
    * [Algemene miniatuurkenmerken](#common-thumbnail-attributes-tab) tab
    * [Kenmerken kleurbeheer](#color-management-attributes-tab) tab
+
+   ![Dynamic Media Publish Setup-pagina](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media Publish Setup-pagina, met de **[!UICONTROL Request Attributes]**geselecteerd.*<br><br>
 
 1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
 
@@ -60,11 +62,11 @@ De pagina van de Server van het Beeld vestigt standaardmontages voor het leveren
 | Context publiceren | Beschrijving |
 | --- | --- |
 | Beeldserver | Hiermee geeft u de context voor publicatie-instellingen op. |
-| Beeldserver testen | Hier geeft u de context voor het testen van publicatie-instellingen op.<br>Zie [Elementen testen voordat ze openbaar worden gemaakt](#test-assets-before-making-public). |
+| Test Image Serving | Hier geeft u de context voor het testen van publicatie-instellingen op.<br>See [Test assets before making them public](#test-assets-before-making-public). |
 
 ### Het tabblad Beveiliging {#security-tab}
 
-**[!UICONTROL Client address]** - Laat u één of meerdere IP adressen of IP adreswaaiers specificeren. Wanneer gespecificeerd, worden de verzoeken aan deze beeldcatalogus die van een cliënt bij een niet vermeld IP adres voortkomen verworpen. Deze regel geldt zowel voor de levering van afbeeldingen als voor gerenderde afbeeldingen.
+**[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originates from a client at an unlisted IP address is rejected. Deze regel geldt zowel voor de levering van afbeeldingen als voor gerenderde afbeeldingen.
 
 ### Tabblad Catalogusbeheer {#catalog-management-tab}
 
@@ -102,29 +104,29 @@ Deze instellingen hebben betrekking op de standaardweergave en -uitlijning van m
 | --- | --- |
 | **[!UICONTROL Default background color for thumbnail]** | Hiermee geeft u de RGB-waarde op die wordt gebruikt om het gebied van een miniatuurafbeelding in de uitvoer te vullen dat geen werkelijke afbeeldingsgegevens bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]** of **[!UICONTROL Texture]**.<br>Zie ook [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Horizontal alignment]** | Geeft de horizontale uitlijning aan van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` en `hei=` waarden.<br>Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]**.<br>U kunt kiezen uit drie horizontale uitlijningen: **[!UICONTROL Center alignment]**, **[!UICONTROL Left alignment]**, en **[!UICONTROL Right alignment]**.<br>Zie ook [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) in de Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Vertical alignment]** | Geeft de verticale uitlijning aan van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` en `hei=` waarden. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]**.<br>U kunt kiezen uit drie verticale uitlijningen: **[!UICONTROL Top alignment]**, **[!UICONTROL Center alignment]**, en **[!UICONTROL Bottom alignment]**.<br>Zie ook [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) in de Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default cache time to live]** | Verstrekt een standaardvervalinterval in uren voor het geval dat een bepaalde catalogusverslag geen geldige waarde van de Vervaldatum van de catalogus bevat. Instellen op `-1` om te markeren als nooit verlopen. <br>Zie ook [Verlopen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in de Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default thumbnail type]** | Hiermee wordt een standaardinstelling voor het miniatuurtype opgegeven voor het geval dat een bepaalde catalogusrecord geen geldige waarde voor ThumbType-catalogus bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`).<br>U kunt uit drie miniatuurtypen kiezen: **[!UICONTROL Crop]**, **[!UICONTROL Fit]**, en **[!UICONTROL Texture]**.<br>Zie ook [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) in de Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default thumbnail resolution]** | Verstrekt een gebrek voor de duimnagelobjecten resolutie in het geval dat een bepaalde catalogusverslag geen geldige catalogus ThumbRes waarde bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer de **[!UICONTROL Default thumbnail type]** instellen op **[!UICONTROL Texture]**.<br>Zie ook [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Vertical alignment]** | Specifies the vertical alignment of the thumbnail image in the reply image rectangle specified by `wid=` and `hei=` values. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]**.<br>U kunt kiezen uit drie verticale uitlijningen: **[!UICONTROL Top alignment]**, **[!UICONTROL Center alignment]**, en **[!UICONTROL Bottom alignment]**.<br>Zie ook [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default cache time to live]** | Provides a default expiration interval in hours in case a particular catalog record does not contain a valid catalog Expiration value. Set to `-1` to mark as never expire. <br>Zie ook [Verlopen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default thumbnail type]** | Provides a default for the thumbnail type in case a particular catalog record does not contain a valid catalog ThumbType value. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`).<br>U kunt uit drie miniatuurtypen kiezen: **[!UICONTROL Crop]**, **[!UICONTROL Fit]**, en **[!UICONTROL Texture]**.<br>See also [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default thumbnail resolution]** | Provides a default for the thumbnail object resolution in case a particular catalog record does not contain a valid catalog ThumbRes value. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer de **[!UICONTROL Default thumbnail type]** instellen op **[!UICONTROL Texture]**.<br>Zie ook [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) in de Dynamic Media Viewers Reference Guide. |
 
 ### Kenmerken kleurbeheer, tabblad {#color-management-attributes-tab}
 
 Deze instellingen bepalen welke ICC-kleurprofielen worden gebruikt voor afbeeldingen.
 
 **Render-intentie kleurconversie**
-Met een rendering intent voor kleurconversie kunt u de standaard rendering intent van de werkprofielen overschrijven om te bepalen hoe de bronkleuren worden aangepast. Wordt gebruikt als:
+Met een rendering intent voor kleurconversie kunt u de standaard rendering intent van de werkprofielen overschrijven om te bepalen hoe de bronkleuren worden aangepast. Used when:
 
 1. Een van de standaard-ICC-profielen is de doelkleurruimte van een kleuromzetting.
 1. Dit profiel kenmerkt een uitvoerapparaat (printer of monitor).
 1. En de opgegeven render-intentie is geldig voor dit profiel.
 
-Bij verschillende rendering intents worden verschillende regels gebruikt om te bepalen hoe de bronkleuren worden aangepast.
+Different rendering intents use different rules to determine how the source colors are adjusted.
 
 Zie ook [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html) in de Dynamic Media Viewers Reference Guide.
 
 >[!NOTE]
 >
->Over het algemeen kunt u het beste de standaard rendering intent gebruiken voor de geselecteerde kleurinstelling, die door Adobe is getest om te voldoen aan industriestandaarden. Als u bijvoorbeeld een kleurinstelling kiest voor Noord-Amerika of Europa, is de standaard rendering intent voor kleurconversie **[!UICONTROL Relative Colormetric]**. Als u een kleurinstelling voor Japan kiest, is de standaard rendering intent voor kleurconversie **[!UICONTROL Perceptual]**.
+>Over het algemeen kunt u het beste de standaard rendering intent gebruiken voor de geselecteerde kleurinstelling, die door Adobe is getest om te voldoen aan industriestandaarden. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colormetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
 
 | Instelling | Kenmerken |
 | --- | --- |
@@ -171,35 +173,35 @@ Niet-gepubliceerde middelen zijn direct beschikbaar bij de services voor het bev
 De Secure Testing-services bieden momenteel ondersteuning voor de volgende typen middelen en functies:
 
 * Afbeeldingen.
-* Vignettes (aanvragen van Server renderen).
-* Serveraanvragen renderen (ondersteund, maar moet expliciet door de klant worden aangevraagd).
+* Vignettes (Render Server requests).
+* Render Server requests (supported, but must be requested explicitly by customer).
 * Sets, inclusief afbeeldingssets, eCatalog, rendersets en mediasets.
 * Standaard Adobe Dynamic Media-viewers met rijke media.
 * Adobe Dynamic Media OnDemand JSP-pagina&#39;s.
 * Statische inhoud, zoals PDF-bestanden en progressief bediende video&#39;s.
 * HTTP-videostreaming.
-* Progressieve videostreaming.
+* Progressive video streaming.
 
-De volgende elementtypen en -functies worden momenteel niet ondersteund:
+The following asset types and functionalities are currently not supported:
 
 * Zoeken in Adobe Dynamic Media Classic Info of eCatalog
 * RTMP-videostreaming
 * Web-to-print
-* UGC-services (door de gebruiker gegenereerde inhoud)
+* UGC (User-Generated Content) services
 
 >[!IMPORTANT]
 >
 >De ondersteuning voor nieuwe of bestaande UGC-vectorafbeeldingselementen in Adobe Dynamic Media is afgelopen op 30 september 2021.
 
-### De service Beveiligde tests testen {#test-secure-testing-service}
+### Test the Secure Testing service {#test-secure-testing-service}
 
-Ga als volgt te werk om ervoor te zorgen dat de service Beveiligd testen naar behoren functioneert:
+To ensure that Secure Testing service works as expected, do the following:
 
 #### Uw account voorbereiden
 
-1. Neem contact op met de klantenservice van Adobe en verzoek hen om Beveiligingstests op uw account in te schakelen.
+1. Contact Adobe Customer Care and request that they enable Secure Testing on your account.
 1. Selecteer in Adobe Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
-1. Op de pagina van de Server van het Beeld, in **[!UICONTROL Publish Context]** vervolgkeuzelijst, selecteert u **[!UICONTROL Test Image Serving]**.
+1. On the Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
 1. Selecteer **[!UICONTROL Security]** tab.
 1. Voor de **[!UICONTROL Client address]** filter, selecteren **[!UICONTROL Add]**.
 1. In de **[!UICONTROL IP Address]** veld, typt u een IP-adres.
@@ -235,13 +237,13 @@ U hebt twee variaties nodig van een website die de gepubliceerde en niet-gepubli
 * Openbare versie - Koppel elementen met behulp van uw traditionele URL-syntaxis van Adobe Dynamic Media.
 * Versie Staging - Koppel elementen met dezelfde syntaxis, maar met de naam van de site voor Beveiligd testen.
 
-#### De tests uitvoeren
+#### Run the tests
 
 Voer de volgende tests uit:
 
-1. Controleer of elementen zichtbaar zijn vanuit uw bedrijfsnetwerk.
+1. Check whether assets are visible from within your corporate network.
 
-   Vanuit het bedrijfsnetwerk dat door het eerder gedefinieerde IP-adresbereik wordt geïdentificeerd, worden in de testversie van de website alle afbeeldingen weergegeven, ongeacht of deze zijn gemarkeerd voor publicatie of niet. Zo kunt u testen zonder dat u per ongeluk afbeeldingen ter beschikking stelt voordat u een voorvertoning van goedkeuring of het product start.
+   From within the corporate network identified by the previously defined IP address range, the staging version of the website displays all images, whether marked for publish or not. Zo kunt u testen zonder dat u per ongeluk afbeeldingen ter beschikking stelt voordat u een voorvertoning van goedkeuring of het product start.
 
    Bevestig dat in de openbare versie van uw site de gepubliceerde middelen worden weergegeven zoals die eerder met Adobe Dynamic Media zijn gebruikt.
 

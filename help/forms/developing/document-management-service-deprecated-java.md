@@ -1,6 +1,6 @@
 ---
 title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
-seo-title: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
+seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Documentbeheerservice (verouderd) Java API Quick Start (SOAP)
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
+source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
-
 
 # Documentbeheerservice (verouderd) Java API Quick Start (SOAP) {#document-management-service-deprecated-java-api-quick-start-soap}
 
@@ -45,12 +44,12 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
-
-De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>
+>De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-Het volgende de codevoorbeeld van Java leidt tot een nieuwe ruimte genoemd *Folder van de Test* in het Huis van het Bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *Testmap* gevestigd in het Huis van het Bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
 ```java
  /*
@@ -246,7 +245,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
 
 ## Snel starten (SOAP-modus): Inhoud toevoegen aan inhoudsservices met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* toegevoegd aan de map /Company Home/Test Directory. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
 ```java
  /*
@@ -369,7 +368,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP-modus): Inhoud ophalen van Content Services met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* opgehaald uit /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *UpdatedMortgaugeForm.pdf*.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *BijgewerkteMortgaugeForm.pdf*.
 
 ```java
  /*
@@ -475,7 +474,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
 
 ## Snel starten (SOAP-modus): Inhoud van Content Services verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* verplaatst van /Company Home/Test Directory naar /Company Home. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
 ```java
  /*
@@ -909,7 +908,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
 
 ## Snel starten (SOAP-modus): Koppelingen maken met de Java API (afgekeurd) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy. Op het PDF-document moet de koppelbare afbeelding zijn toegepast.
+Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy.In het PDF-document moet de koppelbare eigenschap zijn toegepast.
 
 ```java
  /*
@@ -1023,4 +1022,3 @@ Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en 
      }
  
 ```
-

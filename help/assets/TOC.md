@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
+source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '641'
 ht-degree: 15%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 15%
    + [Dynamic Media configureren - hybride modus](config-dynamic.md)
    + [Dynamic Media-instelling Algemeen configureren](dm-general-settings.md)
    + [Dynamic Media-publicatie-instellingen configureren](dm-publish-settings.md)
+   + [Optie A](option-a-config-dms7.md)
+   + [Optie B](option-b-config-dms7.md)
    + [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
    + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)
    + [Migreren van Dynamic Media naar hybride modus naar Dynamic Media - S7-modus](migrate-from-hybrid-to-dms7.md)

@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: b6000516b88342d6abf8072623cfece43e2ba19d
 workflow-type: tm+mt
-source-wordcount: '10861'
+source-wordcount: '10874'
 ht-degree: 1%
 
 ---
@@ -170,11 +170,11 @@ Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke
 Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder wilt aanpassen of de prestaties ervan wilt optimaliseren, kunt u een of meer van de volgende handelingen uitvoeren *optioneel* taken:
 
 * [(Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Optioneel) Dynamic Media-publicatie-instellingen configureren](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+   * [(Optioneel) Testen van elementen voordat deze openbaar worden gemaakt](#test-assets-before-making-public)
+* [(Optioneel) Algemene instellingen van Dynamic Media configureren](#configuring-application-general-settings)
+* [(Optioneel) Aanvullende configuratietaken](#additional-configuration-tasks)
 * [(Optioneel) Pas de prestaties van de Dynamic Media-Scene7-modus aan](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
 
 ### (Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB {#optional-config-dms7-assets-larger-than-2gb}
@@ -643,7 +643,7 @@ Wanneer u Illustrator-afbeeldingsbestanden (AI) uploadt, kunt u deze op verschil
 >[!NOTE]
 Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van de asset selecteert. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal weergegeven viewervoorinstellingen vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-### (Optioneel) Aanvullende configuratietaken
+### (Optioneel) Aanvullende configuratietaken {#additional-configuration-tasks}
 
 Optionele setup- en configuratietaken zijn onder andere:
 

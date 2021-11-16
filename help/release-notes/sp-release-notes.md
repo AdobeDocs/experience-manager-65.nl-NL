@@ -92,7 +92,7 @@ Hieronder volgt een lijst met oplossingen die u vindt in [!DNL Experience Manage
 * Bij het promoten van een lancering worden de wijzigingen in de gepropageerde lancering tweemaal doorgevoerd in de andere lanceringen. Als een gebruiker de dubbel-uitgerolde lancering bevordert, wordt de verdubbelde inhoud weerspiegeld op de bronpagina (NPR-36893).
 * [!DNL Experience Manager] voegt een grijze rand toe aan sommige PNG-afbeeldingen met transparantie als u de afbeeldingen aan een pagina toevoegt met de component Image Core of als u de grootte wijzigt met de component Foundation Image (NPR-36879).
 * [!DNL Experience Manager Sites] Admin UI met een hoog aantal malplaatjes resulteert in langzame navigatie (NPR-36870).
-* Webpagina&#39;s worden niet weergegeven wanneer de koppelingen worden gewijzigd door aangepaste servlet-filterbundels (NPR-36857).
+* Webpagina&#39;s worden niet gerenderd wanneer hun koppelingen worden gewijzigd door aangepaste servlet-filterbundels (NPR-36857).
 * De `ContextHubImpl` methode maakt een `ResourceResolver` dat is niet gesloten. Het leidt tot waarschuwingsberichten over lang lopend `ResourceResolver` en de service retourneert onverwachte resultaten op momenten (NPR-36853).
 * Bij het synchroniseren van één live kopie van de eigenschappen van de blauwdrukpagina worden alle andere live kopieën ook gesynchroniseerd (NPR-36829, NPR-36522).
 * Wanneer alleen XLS MIME-type wordt gebruikt, werkt de functie voor het uploaden van bestanden niet zoals verwacht (NPR-36785).

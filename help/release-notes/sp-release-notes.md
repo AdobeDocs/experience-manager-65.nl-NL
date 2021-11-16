@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Expe
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 14339f6a34952c00351c6dee8537b5df6f6fbcd3
+source-git-commit: 0a35b26c5f790d67db55421b8f3e98e5ddb30528
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4302'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Hieronder volgt een lijst met oplossingen die u vindt in [!DNL Experience Manage
 * Bij het promoten van een lancering worden de wijzigingen in de gepropageerde lancering tweemaal doorgevoerd in de andere lanceringen. Als een gebruiker de dubbel-uitgerolde lancering bevordert, wordt de verdubbelde inhoud weerspiegeld op de bronpagina (NPR-36893).
 * [!DNL Experience Manager] voegt een grijze rand toe aan sommige PNG-afbeeldingen met transparantie als u de afbeeldingen aan een pagina toevoegt met de component Image Core of als u de grootte wijzigt met de component Foundation Image (NPR-36879).
 * [!DNL Experience Manager Sites] Admin UI met een hoog aantal malplaatjes resulteert in langzame navigatie (NPR-36870).
-* De verbetering aan de dienstpak 9 verhindert authoring van een paar componenten. Dit probleem is niet toegestaan [!DNL Sites] gebruikers om nieuwe pagina&#39;s te maken (NPR-36857).
+* Webpagina&#39;s worden niet weergegeven wanneer de koppelingen worden gewijzigd door aangepaste servlet-filterbundels (NPR-36857).
 * De `ContextHubImpl` methode maakt een `ResourceResolver` dat is niet gesloten. Het leidt tot waarschuwingsberichten over lang lopend `ResourceResolver` en de service retourneert onverwachte resultaten op momenten (NPR-36853).
 * Bij het synchroniseren van één live kopie van de eigenschappen van de blauwdrukpagina worden alle andere live kopieën ook gesynchroniseerd (NPR-36829, NPR-36522).
 * Wanneer alleen XLS MIME-type wordt gebruikt, werkt de functie voor het uploaden van bestanden niet zoals verwacht (NPR-36785).
@@ -165,7 +165,7 @@ De volgende toegankelijkheidsverbeteringen zijn beschikbaar in [!DNL Dynamic Med
 
 * Wanneer schermlezers in de formuliermodus navigeren met behulp van toetsenbordtoetsen, vertellen ze de labels die overeenkomen met de opties voor verhogen en verlagen op [!UICONTROL Create] tabblad van [!UICONTROL Image Presets] (CQ-4323900).
 
-* Schermlezers maken nu de [!UICONTROL Search and Add Email Address] optie voor het delen van elementen als een koppelingsdialoogvenster (CQ-4323352).
+* Schermlezers kondigen nu de [!UICONTROL Search and Add Email Address] optie voor het delen van elementen als een koppelingsdialoogvenster (CQ-4323352).
 
 * De toetsenbordfocus blijft behouden op de werkbalk wanneer u door elementen navigeert met behulp van toetsenbordtoetsen (CQ-4322037).
 
@@ -189,7 +189,7 @@ De volgende toegankelijkheidsverbeteringen zijn beschikbaar in [!DNL Dynamic Med
 
 * Schermlezers kondigen nu het label voor de opties aan op [!UICONTROL Image Profiles] pagina (CQ-4290723).
 
-* Windows-gebruikers kunnen nu uit de uitgevouwen CSS-editor navigeren [!UICONTROL Viewer Preset Editor] als de nadruk ligt op de CSS-editor (CQ-4290720).
+* Windows-gebruikers kunnen nu uit de uitgevouwen CSS-editor navigeren [!UICONTROL Viewer Preset Editor] wanneer de nadruk ligt op de CSS-editor (CQ-4290720).
 
 * Aan [!UICONTROL Basic] tabblad van [!UICONTROL Edit Image Preset] Wanneer u in de modus Formulier navigeert, vertellen schermlezers nu de labels voor verschillende bewerkingsvelden en -opties (CQ-4290717).
 
@@ -453,7 +453,7 @@ Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/hel
 
 >[!NOTE]
 >
->UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van Adobe Public Maven bewaarplaats (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
+>UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van de Adobe Openbare Maven bewaarplaats (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
 
 ## Verouderde functies {#removed-deprecated-features}
 

@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 468a8d96153c67232524eea6f180c9ceb364d60a
+source-git-commit: 37d298378b7d33ec7c9803cbf9f4f7eb4d2193f9
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 15%
 
 ---
@@ -173,5 +173,5 @@ ht-degree: 15%
    + [Video-uitvoeringen](video-renditions.md)
 + Integratie met andere oplossingen {#integrations}
    + [Integratie met [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installeren [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
-   + [Configureren [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
+   + [Installeren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+   + [Configureren [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)

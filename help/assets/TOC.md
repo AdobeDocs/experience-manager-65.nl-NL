@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 37d298378b7d33ec7c9803cbf9f4f7eb4d2193f9
+source-git-commit: 41ffd39d6815988b2b172d7dc1748570eb5ef584
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 15%
+source-wordcount: '657'
+ht-degree: 14%
 
 ---
 
@@ -39,11 +39,11 @@ ht-degree: 15%
    + [Archief met nieuwsbrief per Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
+   + [Dynamic Media configureren - Scene7-modus]{#config-scene7-mode}
+      + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
+      + [Optioneel - Algemene instellingen van Dynamic Media configureren](dm-general-settings.md)
+      + [Optioneel - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
    + [Dynamic Media configureren - hybride modus](config-dynamic.md)
-   + [Dynamic Media-instelling Algemeen configureren](dm-general-settings.md)
-   + [Dynamic Media-publicatie-instellingen configureren](dm-publish-settings.md)
-   + [Optie A](option-a-config-dms7.md)
    + [Optie B](option-b-config-dms7.md)
    + [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
    + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)

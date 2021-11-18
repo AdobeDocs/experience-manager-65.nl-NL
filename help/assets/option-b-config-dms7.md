@@ -7,29 +7,23 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: bfa41deb156ffd0adb8138c11548912bc954f084
+source-git-commit: 680c0e00a739c5e880286cb4adf33f4ea5f6a318
 workflow-type: tm+mt
-source-wordcount: '6114'
+source-wordcount: '5738'
 ht-degree: 2%
 
 ---
 
-# RICK: OPTIE B - Dynamic Media configureren - Scene7-modus{#configuring-dynamic-media-scene-mode}
-
->[!NOTE]
->
->RICK: OPTIE B - DE TWEE NIEUWE ONDERWERPEN DIE IK HEB GESCHREVEN, BESTAAN NOG STEEDS. IN DIT ONDERWERP LEEST U ECHTER NU RECHTS, OP DE RESPECTIEVE GEBIEDEN WAAR IK AL SPRAK OVER DE OPTIONS IN ALGEMENE INSTELLINGEN EN PUBLICATIE-INSTELLINGEN, VOEGDE IK KOPPELINGEN TOE AAN DE TWEE NIEUWE ONDERWERPEN.
+# Dynamic Media configureren - Scene7-modus{#configuring-dynamic-media-scene-mode}
 
 Als u Adobe Experience Manager-configuratie gebruikt voor verschillende omgevingen, zoals ontwikkeling, staging en productie, configureert u Dynamic Media-Cloud Services voor elk van deze omgevingen.
 
 ## Architectuurdiagram van de Dynamic Media-Scene7-modus {#architecture-diagram-of-dynamic-media-scene-mode}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 In het volgende architectuurdiagram wordt beschreven hoe de modus Dynamic Media - Scene7 werkt.
 
@@ -56,23 +50,19 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 
 ## Dynamic Media inschakelen in Scene7-modus {#enabling-dynamic-media-in-scene-mode}
 
-**RICK: ZO BEHOUDEN ALS HET IS**
-
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) is standaard uitgeschakeld. Als u gebruik wilt maken van Dynamic Media-functies, moet u deze inschakelen.
 
 >[!WARNING]
 >
 >Dynamic Media - Scene7-modus is bedoeld voor de *Alleen instantie Experience Manager auteur*. Als dusdanig, moet u vormen `runmode=dynamicmedia_scene7` op de instantie Auteur van de Experience Manager, *niet* de Experience Manager Publish instantie.
 
-Als u Dynamic Media wilt inschakelen, moet u de Experience Manager starten met de `dynamicmedia_scene7` run mode van de bevellijn door het volgende in een eindvenster in te gaan (de gebruikte voorbeeldhaven is 4502):
+Als u Dynamic Media wilt inschakelen, start u Experience Manager op met `dynamicmedia_scene7` run mode van de bevellijn door het volgende in een eindvenster in te gaan (de gebruikte voorbeeldhaven is 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
 ## (Optioneel) Dynamic Media-voorinstellingen en -configuraties migreren van 6,3 naar 6,5 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 De upgrade van Experience Manager Dynamic Media van 6.3 naar 6.4 of 6.5 omvat nu de mogelijkheid om geen downtime te implementeren. Al uw voorinstellingen en configuraties migreren vanuit `/etc` tot `/conf` in CRXDE Lite, zorg ervoor u het volgende krullbevel in werking stelt.
 
@@ -90,8 +80,6 @@ Aangepaste voorinstellingen en configuraties van viewers migreren die u hebt gem
 
 ## Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen {#installing-feature-pack-for-bulk-asset-migration}
 
-**RICK: ZO BEHOUDEN ALS HET IS**
-
 De installatie van functiepak 18912 is *optioneel*.
 
 Met Feature Pack 18912 kunt u middelen bulksgewijs importeren via FTP of elementen migreren van de Dynamic Media - Hybride modus of Dynamic Media Classic naar de Dynamic Media - Scene7 modus op Experience Manager. Het is beschikbaar via [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
@@ -99,8 +87,6 @@ Met Feature Pack 18912 kunt u middelen bulksgewijs importeren via FTP of element
 Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](/help/assets/bulk-ingest-migrate.md) voor meer informatie .
 
 ## Een Dynamic Media-configuratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 **Voordat u Dynamic Media configureert** - Nadat u uw inrichtingse-mail met Dynamic Media-referenties hebt ontvangen, moet u de opdracht [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
 
@@ -144,7 +130,7 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
 
    >[!NOTE]
-   Er is geen steun voor versioning in DMS7. Ook is de vertraagde activering slechts van toepassing als **[!UICONTROL Publish Assets]** op de pagina Configuratie van dynamische media bewerken is ingesteld op **[!UICONTROL Upon Activation]**, en dit alleen tot de eerste keer dat de asset wordt geactiveerd.
+   versioning wordt niet ondersteund in de modus Dynamic Media - Scene7. Ook is de vertraagde activering slechts van toepassing als **[!UICONTROL Publish Assets]** op de pagina Configuratie van dynamische media bewerken is ingesteld op **[!UICONTROL Upon Activation]**, en dit alleen tot de eerste keer dat de asset wordt geactiveerd.
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
 1. Selecteer **[!UICONTROL Save]**.
@@ -165,8 +151,6 @@ Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke
 
 ## (Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-**RICK: ZO BEHOUDEN ALS HET IS**
-
 Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder wilt aanpassen of de prestaties ervan wilt optimaliseren, kunt u een of meer van de volgende handelingen uitvoeren *optioneel* taken:
 
 * [(Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB](#optional-config-dms7-assets-larger-than-2gb)
@@ -178,8 +162,6 @@ Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder w
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
 
 ### (Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB {#optional-config-dms7-assets-larger-than-2gb}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. U kunt echter desgewenst uploaden van middelen groter dan 2 GB en tot 15 GB configureren.
 
@@ -267,49 +249,39 @@ U kunt een waarde invoeren tot 15 GB (`2013265920` bytes). In dit geval worden g
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-**RICK: KOPPELINGEN NAAR HET ONDERWERP NIEUWE PUBLICATIE-INSTELLING**
-
 Wanneer u in runtime wijze bent `dynamicmedia_scene7`, gebruikt u de Dynamic Media Classic-gebruikersinterface om uw Dynamic Media-instellingen te wijzigen.
 
 De taken van de opstelling en van de configuratie omvatten het volgende:
 
-* [Publicatie-instelling voor afbeeldingsserver](#publishing-setup-for-image-server)
-* [Algemene instellingen van toepassingen configureren](#configuring-application-general-settings)
+* [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](/help/assets/dm-publish-settings.md)
+* [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md)
 * [Kleurbeheer configureren](#configuring-color-management)
-* [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats) **RICK: HOUDEN?**
-* [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats) **RICK: HOUDEN?**
-* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) **RICK: HOUDEN?**
+* [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats)
+* [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats)
+* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### Publicatie-instelling voor afbeeldingsserver {#publishing-setup-for-image-server}
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
-De instellingen voor Publicatie-instellingen bepalen hoe elementen standaard worden geleverd door Dynamic Media. Als er geen instelling is opgegeven, levert Dynamic Media een element op basis van de standaardinstellingen die zijn gedefinieerd in Publicatie-instelling. Als u bijvoorbeeld een aanvraag indient om een afbeelding te leveren die geen resolutiekenmerk bevat, levert dit een afbeelding op met de standaardinstelling Objectresolutie.
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
-De pagina van de Server van het Beeld vestigt standaardmontages voor het leveren van beelden.
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md).
 
-**RICK: KOPPELEN AAN HET NIEUWE ONDERWERP PUBLICATIE-INSTELLING** Zie [Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
+To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
-* **[!UICONTROL Compatibility Attributes]** - **RICK: NOG STEEDS NODIG?** Met deze instelling kunnen alinea&#39;s aan het begin en aan het einde in tekstlagen op dezelfde manier worden behandeld als in versie 3.6, voor achterwaartse compatibiliteit. **RICK: NOG STEEDS NODIG?**
-* **[!UICONTROL Localization Support]** - **RICK: NOG STEEDS NODIG?** Met deze instellingen kunt u meerdere kenmerken voor de landinstelling beheren. U kunt hiermee ook een landinstellingenkaarttekenreeks opgeven, zodat u kunt definiëren welke talen u wilt ondersteunen voor de verschillende knopinfo in Viewers. Meer informatie over het instellen van **[Ondersteuning voor lokalisatie]**, zie [Overwegingen bij het instellen van lokalisatie van middelen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets). **RICK: NOG STEEDS NODIG?**
-
-#### Algemene instellingen van toepassingen configureren {#configuring-application-general-settings}
-
-**RICK: KOPPELING NAAR HET ONDERWERP NIEUWE ALGEMENE INSTELLINGEN** Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
-**RICK: KOPPELINGEN NAAR HET ONDERWERP NIEUWE ALGEMENE INSTELLINGEN**
+Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte.
 
-Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen afbeelding configureren](/help/assets/managing-image-presets.md).
+Zie [Voorinstellingen afbeelding configureren](/help/assets/managing-image-presets.md).
 
 >[!NOTE]
 Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van het element. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal weergegeven viewervoorinstellingen vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-De standaardeigenschappen voor kleuren zo configureren dat kleurcorrectie wordt ingeschakeld wanneer afbeeldingen worden aangevraagd, **RICK: KOPPELINGEN NAAR HET ONDERWERP NIEUWE ALGEMENE INSTELLINGEN** zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
-
 #### MIME-typen bewerken voor ondersteunde indelingen {#editing-mime-types-for-supported-formats}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 U kunt bepalen welke elementtypen door Dynamic Media worden verwerkt en geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
 
@@ -344,8 +316,6 @@ Zie [Elementen uploaden](/help/assets/manage-assets.md#uploading-assets).
 1. Selecteer in de linkerbovenhoek van de pagina de optie **[!UICONTROL CRXDE Lite]** om terug te keren naar Experience Manager.
 
 #### MIME-typen toevoegen voor niet-ondersteunde indelingen {#adding-mime-types-for-unsupported-formats}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Experience Manager Assets. Zorg ervoor dat een nieuw knooppunt dat u in CRXDE Lite toevoegt, niet door de Experience Manager wordt verwijderd door het MIME-type te verplaatsen vóór `image_`. Zorg er ook voor dat de ingeschakelde waarde is ingesteld op **[!UICONTROL false]**.
 
@@ -399,8 +369,6 @@ U kunt aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen in Expe
 
 #### Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-**RICK: ZOALS HET IS?**
-
 Met voorinstellingen voor batchsets kunt u het maken van afbeeldingssets of centrifuges automatiseren terwijl elementen naar Dynamic Media worden geüpload.
 
 Bepaal eerst de naamgevingsconventie voor de manier waarop elementen in een set worden gegroepeerd. Maak vervolgens een voorinstelling voor een batchset die een unieke, zelfstandige set instructies is. In deze code moet worden gedefinieerd hoe de set wordt samengesteld met behulp van afbeeldingen die overeenkomen met de gedefinieerde naamgevingsconventies in het vooraf ingestelde recept.
@@ -418,8 +386,6 @@ Als alternatief kunt u **[!UICONTROL View Code]** zonder formuliervelden beschik
 Er zijn twee elementen beschikbaar voor definitie, Identieke en Basisnaam. Met deze velden kunt u alle elementen van een naamgevingsconventie definiëren en het gedeelte van de conventie identificeren dat wordt gebruikt voor de naamgeving van de set waarin deze elementen zich bevinden. De individuele noemende overeenkomst van een bedrijf gebruikt vaak één of meerdere lijnen van definitie voor elk van deze elementen. U kunt zo vele lijnen voor uw unieke definitie gebruiken en hen groeperen in verschillende elementen, zoals voor HoofdBeeld, het element van de Kleur, het element van de Afwisselende Mening, en het element van het Monster.
 
 **Standaardnaamgeving configureren:**
-
-**RICK: ZOALS HET IS?**
 
 1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
 
@@ -456,8 +422,6 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **Een voorinstelling voor een batchset maken:**
 
-**RICK: ZOALS HET IS?**
-
 1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met de Klantenondersteuning van Adobe als u deze informatie niet hebt.
@@ -490,8 +454,6 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 ##### Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-centrifugeset
 
-**RICK: ZOALS IS GEHOUDEN?**
-
 U kunt het type Batch-set gebruiken **[!UICONTROL Multi-Axis Spin Set]** om een recept te maken dat het genereren van 2D-centrifuges automatiseert. Bij het groeperen van afbeeldingen worden de reguliere expressies Rij en Kolom gebruikt, zodat de afbeeldingselementen op de juiste wijze worden uitgelijnd op de corresponderende locatie in de multidimensionale array. Er is geen minimum- of maximumaantal rijen of kolommen dat u in een centrifugeerset moet hebben.
 
 Stel dat u een spin-set met meerdere assen wilt maken met de naam `spin-2dspin`. U hebt een set afbeeldingen met een set centrifuges die drie rijen bevatten, met 12 afbeeldingen per rij. De afbeeldingen krijgen de volgende naam:
@@ -515,8 +477,6 @@ De groepering voor het gedeelde element wordt het gedeelte van de spin-set toege
 Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam van het 2D-centrifugesetrecept dat onder **[!UICONTROL Batch Set Presets]** in de **[!UICONTROL Upload Job Options]** in.
 
 **Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-set met draaien:**
-
-**RICK: ZOALS HET IS?**
 
 1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
 
@@ -575,8 +535,6 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
 ### (Optioneel) Pas de prestaties van de Dynamic Media-Scene7-modus aan {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-**RICK: ZOALS HET IS?**
-
 Om de Dynamic Media - Scene7-modus vlot te laten werken, raadt Adobe de volgende tips voor synchronisatieprestaties/schaalbaarheid aan:
 
 * De vooraf gedefinieerde taakparameters bijwerken voor het verwerken van verschillende bestandsindelingen.
@@ -585,8 +543,6 @@ Om de Dynamic Media - Scene7-modus vlot te laten werken, raadt Adobe de volgende
 * De maximale uploadverbindingen naar de Dynamic Media Classic-server bijwerken.
 
 #### De vooraf gedefinieerde taakparameters bijwerken voor de verwerking van verschillende bestandsindelingen
-
-**RICK: ZOALS HET IS?**
 
 U kunt taakparameters instellen voor snellere verwerking wanneer u bestanden uploadt. Als u bijvoorbeeld PSD-bestanden uploadt, maar deze niet als sjablonen wilt verwerken, kunt u de uitname van lagen instellen op false (uitgeschakeld). In dat geval ziet de aangepaste taakparameter er als volgt uit: `process=None&createTemplate=false`.
 
@@ -612,8 +568,6 @@ Voer de volgende stappen uit om een van deze parameters bij te werken: [Onderste
 
 #### De voorlopige wachtrij voor graniet bijwerken {#updating-the-granite-transient-workflow-queue}
 
-**RICK: ZOALS HET IS?**
-
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media wordt het gebruikt voor het opnemen en verwerken van afbeeldingen.
 
 **De voorlopige wachtrij voor graniet bijwerken:**
@@ -637,8 +591,6 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 #### De wachtrij voor een graniet-workflow bijwerken {#updating-the-granite-workflow-queue}
 
-**RICK: ZOALS IS GEHOUDEN?**
-
 De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamic Media werd video verwerkt met de **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
 **De Granite-workflowwachtrij bijwerken:**
@@ -657,8 +609,6 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 1. Selecteer **[!UICONTROL Save]**.
 
 #### De Dynamic Media Classic-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
-
-**RICK: ZOALS HET IS?**
 
 Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-elementen met Dynamic Media Classic-servers.
 
@@ -679,8 +629,6 @@ Met de instelling Scene7 Upload Connection synchroniseert u Experience Manager-e
 
 ### (Optioneel) Elementen filteren voor replicatie {#optional-filtering-assets-for-replication}
 
-**RICK: ZO BEHOUDEN ALS HET IS**
-
 Bij niet-Dynamic Media-implementaties repliceert u *alles* elementen (zowel afbeeldingen als video) van de ontwerpomgeving van de Experience Manager naar het knooppunt Experience Manager publiceren. Deze workflow is nodig omdat de Experience Manager Publish-servers ook de elementen leveren.
 
 In Dynamic Media-implementaties is het echter niet nodig dezelfde middelen te repliceren naar publicatieknooppunten van Experience Managers, omdat elementen via de Cloud Service worden geleverd. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals sitepagina&#39;s, wordt nog steeds aangeboden vanaf de publicatieknooppunten van de Experience Manager.
@@ -688,8 +636,6 @@ In Dynamic Media-implementaties is het echter niet nodig dezelfde middelen te re
 Met de filters kunt u *uitsluiten* elementen die worden gerepliceerd naar het publicatieknooppunt van de Experience Manager.
 
 #### Standaardelementfilters gebruiken voor replicatie {#using-default-asset-filters-for-replication}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de standaardfilters gebruiken die Adobe ongewijzigd biedt. De volgende filters zijn standaard actief:
 
@@ -702,8 +648,6 @@ Als u Dynamic Media gebruikt voor beeldbewerking, video of beide, kunt u de stan
 Filters zijn van toepassing op MIME-typen en kunnen geen padspecifieke notatie hebben.
 
 #### Elementfilters aanpassen voor replicatie {#customizing-asset-filters-for-replication}
-
-**RICK: ZO BEHOUDEN ALS HET IS**
 
 1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigeer in de linkermappenstructuur naar `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` om de filters te bekijken.

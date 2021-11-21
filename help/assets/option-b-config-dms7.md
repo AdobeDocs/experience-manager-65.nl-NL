@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 680c0e00a739c5e880286cb4adf33f4ea5f6a318
+source-git-commit: b1f2a6b8fecd9ee98f345d1de8c26c6f42a44823
 workflow-type: tm+mt
-source-wordcount: '5738'
+source-wordcount: '5787'
 ht-degree: 2%
 
 ---
@@ -249,28 +249,26 @@ U kunt een waarde invoeren tot 15 GB (`2013265920` bytes). In dit geval worden g
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-Wanneer u in runtime wijze bent `dynamicmedia_scene7`, gebruikt u de Dynamic Media Classic-gebruikersinterface om uw Dynamic Media-instellingen te wijzigen.
-
-De taken van de opstelling en van de configuratie omvatten het volgende:
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
 * [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](/help/assets/dm-publish-settings.md)
 * [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md)
 * [Kleurbeheer configureren](#configuring-color-management)
 * [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats)
 * [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats)
-* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (uitgevoerd in de gebruikersinterface van Dynamic Media Classic)
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
+#### Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+Op de pagina Dynamic Media Publish Setup (Publicatie-instellingen) worden standaardinstellingen vastgelegd die bepalen hoe elementen worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen.
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md).
+Zie [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](/help/assets/dm-publish-settings.md).
 
-#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+#### Algemene instellingen van Dynamic Media configureren {#configuring-application-general-settings}
 
-To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+Configureer de standaardeigenschappen voor kleuren, zodat kleurcorrectie is ingeschakeld wanneer afbeeldingen worden aangevraagd.
 
-See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
+Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
 
 #### Kleurbeheer configureren {#configuring-color-management}
 

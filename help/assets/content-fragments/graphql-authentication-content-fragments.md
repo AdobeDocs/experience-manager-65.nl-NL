@@ -2,45 +2,48 @@
 title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
 description: Begrijp de authentificatie die voor Verre AEM vragen GraphQL wordt vereist om uw inhoud zonder kop te beveiligen.
 feature: Content Fragments,GraphQL API
-source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
+exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
+source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
 
 # Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Een primair gebruiksgeval voor [Adobe Experience Manager (AEM) GraphQL API voor de Levering van het Fragment van de Inhoud](/help/assets/content-fragments/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
+Een hoofdgebruik voor het [Adobe Experience Manager (AEM) GraphQL API voor levering van inhoudsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
 
 >[!NOTE]
 >
->Voor het testen en de ontwikkeling kunt u tot de AEM API ook direct toegang hebben GraphQL gebruikend [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
+>Voor testen en ontwikkeling kunt u ook rechtstreeks toegang krijgen tot de AEM GraphQL API [GraphiQL-interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
 
-Voor authentificatie moet de derdedienst [een Token van de Toegang terugwinnen](#retrieving-access-token), die dan [in het Vraag GraphQL](#use-access-token-in-graphql-request) kan worden gebruikt.
+Voor verificatie moet de service van derden verifiëren met de gebruikersnaam en het wachtwoord van de AEM account.
 
-## Een toegangstoken ophalen {#retrieving-access-token}
-
-<!-- 6.5.10.0 - does this page need to be migrated? -->
+<!-- 6.5.10.0 - does this content/page need to be migrated? -->
 
 <!--
+For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
+
+## Retrieving an Access Token {#retrieving-access-token}
+
 See [Generating Access Tokens for Server Side APIs](/help/sites-developing/generating-access-tokens-for-server-side-apis.md) for full details.
--->
 
-## Het gebruiken van het Token van de Toegang in een Vraag GraphQL {#use-access-token-in-graphql-request}
+## Using the Access Token in a GraphQL Request {#use-access-token-in-graphql-request}
 
-Voor een derdedienst om met een AEM instantie te verbinden moet het *Token van de Toegang* hebben. De dienst moet dit teken aan `Authorization` kopbal op het verzoek van de POST dan toevoegen.
+For a third party service to connect with an AEM instance it needs to have an *Access Token*. The service must then add this token to the `Authorization` header on the POST request. 
 
-Bijvoorbeeld een GraphQL-autorisatieheader:
+For example, a GraphQL Authorization Header:
 
 ```xml
 Authorization: Bearer <access_token>
 ```
 
-## Machtigingsvereisten {#permission-requirements}
+## Permission Requirements {#permission-requirements}
 
-Alle verzoeken die worden gedaan gebruikend het toegangstoken zullen *eigenlijk door de gebruikersrekening worden gemaakt die het token* produceerde.
+All requests made using the access token will actually be made *by the user account that generated the token*. 
 
-Dit betekent dat u moet controleren dat de rekening de toestemmingen heeft die worden vereist om vragen in werking te stellen GraphQL.
+This means that you need to check that the account has the permissions required to run GraphQL queries. 
 
-U kunt dit controleren door GraphiQL op de lokale instantie te gebruiken.
+You can check this by using GraphiQL on the local instance.
+-->

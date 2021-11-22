@@ -12,9 +12,9 @@ hide: true
 hidefromtoc: true
 feature: Configuration,Scene7 Mode
 exl-id: null
-source-git-commit: 3b5e65efc9aaedbc3385cc348ead80afecae2f06
+source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
 workflow-type: tm+mt
-source-wordcount: '5739'
+source-wordcount: '5746'
 ht-degree: 2%
 
 ---
@@ -265,7 +265,7 @@ Zie [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](
 
 #### Algemene instellingen van Dynamic Media configureren {#configuring-application-general-settings}
 
-Configureer de standaardeigenschappen voor kleuren, zodat kleurcorrectie is ingeschakeld wanneer afbeeldingen worden aangevraagd.
+De Dynamic Media configureren **[!UICONTROL Publish Server Name]** URL en de **[!UICONTROL Origin Server Name]** URL. U kunt ook **[!UICONTROL Upload to Application]** instellingen en **[!UICONTROL Default Upload Options]** allemaal op basis van uw specifieke gebruiksgeval.
 
 Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
 

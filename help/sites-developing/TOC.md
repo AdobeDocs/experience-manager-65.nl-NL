@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: eda59d12d96ecc55bd58749985d2c15706344fe0
+source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 6%
 
 ---
@@ -96,7 +96,8 @@ ht-degree: 6%
       + [Widgets gebruiken en uitbreiden (klassieke UI)](widgets.md)
       + [xtypes gebruiken (klassieke UI)](xtypes.md)
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
-+ Beleidsloos ervaringsbeheer{#headless}
++ Erviteitsbeheer zonder hoofd{#headless}
+   + [Koploos en AEM](headless/introduction.md)
    + [Hoofdloos en hybride met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
    + Toepassingen voor één pagina{#spas}
@@ -122,7 +123,7 @@ ht-degree: 6%
    + [Contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
    + [Ervaringsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
-+ Ontwikkelingshulpmiddelen{#devtools}
++ Ontwikkelingsinstrumenten{#devtools}
    + [Ontwikkelingsinstrumenten](dev-tools.md)
    + [AEM-moderniseringstools](modernization-tools.md)
    + [Dialoogvenster-editor](dialog-editor.md)
@@ -150,7 +151,7 @@ ht-degree: 6%
    + Clientcontext{#client-context}
       + [Clientcontext in detail](client-context.md)
       + [JavaScript-API voor clientcontext](ccjsapi.md)
-+ AEM{#extending-aem} uitbreiden
++ AEM uitbreiden{#extending-aem}
    + [AEM uitbreiden met Adobe Developer App Builder](app-builder.md)
    + [Paginaontwerp aanpassen](customizing-page-authoring-touch.md)
    + [De consoles aanpassen](customizing-consoles-touch.md)
@@ -159,7 +160,7 @@ ht-degree: 6%
    + [Contentfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
    + [Contentfragmenten die componenten voor rendering configureren](content-fragments-config-components-rendering.md)
    + [Ervaringsfragmenten](experience-fragments.md)
-   + Workflows uitbreiden{#extending-workflows}
+   + Werkstromen uitbreiden{#extending-workflows}
       + [Workflows ontwikkelen en uitbreiden](workflows.md)
       + [Workflowmodellen maken](workflows-models.md)
       + [Uitbreiding van workflowfunctionaliteit](workflows-customizing-extending.md)
@@ -169,7 +170,7 @@ ht-degree: 6%
       + [Referentie workflowproces](workflows-process-ref.md)
       + [Variabelen in AEM werkstromen](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Het beheer van meerdere sites uitbreiden](extending-msm.md)
-   + Tekstspatiëring en analyse{#extending-analytics}
+   + Tracering en analyse{#extending-analytics}
       + [Gebeurtenistracking uitbreiden](extending-analytics.md)
       + [Adobe Analytics-tracking toevoegen aan componenten](extending-analytics-components.md)
       + [Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
@@ -184,7 +185,7 @@ ht-degree: 6%
       + [Analyse aanvragen](analyze-request.md)
    + [Services integreren met de JMX-console](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/jmx-integration.html)
    + [De Bulk-editor ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-bulk-editor.html)
-   + Klassieke UI uitbreiden{#extending-classic-ui}
+   + Klassieke gebruikersinterface uitbreiden{#extending-classic-ui}
       + [De websiteconsole aanpassen (klassieke gebruikersinterface)](customizing-siteadmin.md)
       + [De welkomstconsole aanpassen (klassieke gebruikersinterface)](customizing-the-welcome-console.md)
       + [Rapporten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)

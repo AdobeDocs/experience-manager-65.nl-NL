@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 26f521868d0b983a05579d0d4c1ef50684b721ee
+source-git-commit: f76f02f97de477af80666ea76a499578c36fb09e
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2278'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 Configureren **[!UICONTROL Dynamic Media General Settings]** is alleen beschikbaar als:
 
-* Dynamic Media wordt uitgevoerd in de Scene7-modus. Zie [Dynamic Media inschakelen in Scene7-modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
-* U hebt een *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 of in as a Cloud Service Experience Manager.
+* Dynamic Media wordt uitgevoerd in de Scene7-modus. Zie [Dynamic Media inschakelen in Scene7-modus](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* U hebt een *bestaand* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 of hoger.
 * U bent een systeembeheerder van het systeem van de Experience Manager met beheerdervoorrechten.
 
 Dynamic Media General Settings is bedoeld voor gebruik door ervaren ontwikkelaars en programmeurs van websites. Adobe Dynamic Media raadt gebruikers die deze publicatie-instellingen wijzigen aan bekend te zijn met Dynamic Media op Adobe Experience Manager en de basistechnologie voor beeldbewerking.
@@ -33,11 +33,11 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 
 Op de pagina Dynamic Media Publish Setup (Publicatie-instellingen) worden standaardinstellingen vastgelegd die bepalen hoe elementen worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling die is geconfigureerd op de Dynamic Media Publish Setup-pagina.
 
-Zie ook [Instellingen voor de Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr meer optionele configuratietaken.
 
 >[!NOTE]
 >
->Dynamic Media Classic op Adobe Experience Manager upgraden naar Dynamic Media? De pagina&#39;s Algemene instellingen en Publicatie-instellingen in Dynamic Media zijn vooraf ingevuld met de waarden die van uw Dynamic Media Classic-account zijn overgenomen. De uitzonderingen zijn alle waarden die onder de **[!UICONTROL Default upload options]** op de pagina Algemene instellingen. Deze waarden zijn al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]** Op alle vijf tabbladen wordt de gebruikersinterface van de Experience Manager weergegeven in Dynamic Media, niet in Dynamic Media Classic. Alle andere instellingen en waarden op de pagina Algemene instellingen en Publicatie-instellingen blijven op de Experience Manager tussen Dynamic Media Classic en Dynamic Media behouden.
+>Dynamic Media Classic op Adobe Experience Manager upgraden naar Dynamic Media? De pagina Algemene instellingen en [Publicatie-instelling](/help/assets/dm-publish-settings.md) in Dynamic Media worden vooraf de waarden van uw Dynamic Media Classic-account ingevuld. De uitzonderingen zijn alle waarden die onder de **[!UICONTROL Default upload options]** op de pagina Algemene instellingen. Deze waarden zijn al in Experience Manager. Alle wijzigingen die u onder **[!UICONTROL Default upload options]**, door een van de vijf tabbladen, via de gebruikersinterface van de Experience Manager, worden weergegeven in Dynamic Media, niet in Dynamic Media Classic. Alle andere instellingen en waarden op de pagina Algemene instellingen en op het tabblad [Publicatie-instelling](/help/assets/dm-publish-settings.md) Dynamic Media Classic en Dynamic Media onderhouden deze pagina op Experience Manager.
 
 **Algemene instellingen van Dynamic Media configureren:**
 

@@ -1,9 +1,9 @@
 ---
 title: 'Ontwikkeling zonder hoofd voor AEM 6.5 sites '
 description: Leer hoe AEM 6.5 krachtige headless mogelijkheden zoals Content Models, Content Fragments, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
-source-git-commit: a95cf285be84f6aed194f3ae904556f5d017c7be
+source-git-commit: 8c7acd06f3909897e5756170c606e00aead098b8
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '405'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Dit document richt zich op het volledige implementatiemodel zonder kop van AEM. 
 
 ## AEM 6.5 en zonder kop {#aem-headless}
 
-AEM as a Cloud Service is een flexibel hulpmiddel voor het model van de implementatie zonder kop door drie krachtige diensten aan te bieden:
+AEM 6.5 is een flexibel instrument voor het model van de implementatie zonder kop door drie krachtige services aan te bieden:
 
 1. Inhoudsmodellen
    * Inhoudsmodellen zijn een gestructureerde weergave van inhoud.

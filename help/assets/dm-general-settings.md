@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: null
-source-git-commit: 343b48a4ec5e7124aaa48b7550465982d61fa5ab
+source-git-commit: f5989e182ee0d9075251b582fa618af5efcb9f8a
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 
 Op de pagina Dynamic Media Publish Setup (Publicatie-instellingen) worden standaardinstellingen vastgelegd die bepalen hoe elementen worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling die is geconfigureerd op de Dynamic Media Publish Setup-pagina.
 
-Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr meer optionele configuratietaken.
+Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr meer optionele configuratietaken.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 2ec9625d480eb8cae23f44aa247fce2a519dec31
+source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2789'
 ht-degree: 0%
 
 ---
@@ -22,29 +22,31 @@ ht-degree: 0%
 
 Een inhoudsfragment breidt een standaardelement uit; zie:
 
-* [Inhoudsfragmenten en ](/help/assets/content-fragments/content-fragments.md) pagina&#39;s  [ontwerpen en beheren met ](/help/sites-authoring/content-fragments.md) inhoudfragmenten voor meer informatie over inhoudsfragmenten.
+* [Inhoudsfragmenten maken en beheren](/help/assets/content-fragments/content-fragments.md) en [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md) voor meer informatie over inhoudsfragmenten.
 
-* [Het beheren van ](/help/assets/manage-assets.md) Activa en het  [Aanpassen en het Uitbreiden ](/help/assets/extending-assets.md) Activa voor verdere informatie over standaardactiva.
+* [Elementen beheren](/help/assets/manage-assets.md) en [Elementen aanpassen en uitbreiden](/help/assets/extending-assets.md) voor meer informatie over standaardactiva.
 
 ## Architectuur {#architecture}
 
-De [samenstellende delen](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
+De basis [samenstellende delen](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) van een inhoudsfragment zijn:
 
 * A *Inhoudsfragment,*
-* bestaande uit een of meer *Content Element* s,
-* en die een of meer *Inhoudsvariatie* s kunnen hebben.
+* bestaande uit een of meer *Inhoud-element* s,
+* en die een of meer *Inhoudsvariatie* s.
 
 Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
 
 >[!CAUTION]
 >
->[Het wordt nu ](/help/assets/content-fragments/content-fragments-models.md) aanbevolen om al uw fragmenten te maken.
+>[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) wordt aangeraden alle nieuwe fragmenten te maken.
 >
->De fragmentmodellen van de inhoud worden gebruikt voor alle voorbeelden in Wij.Retail.
+>Modellen van inhoudsfragmenten worden gebruikt voor alle voorbeelden in WKND.
 
 >[!NOTE]
 >
->Voorafgaand aan AEM 6.3 werden de Fragments van de Inhoud gecreeerd met het gebruik van malplaatjes in plaats van modellen. Sjablonen zijn niet meer beschikbaar voor het maken van nieuwe fragmenten, maar fragmenten die met een dergelijke sjabloon zijn gemaakt, worden wel ondersteund.
+>Voorafgaand aan AEM 6.3 werden de Fragments van de Inhoud gecreeerd gebaseerd op malplaatjes in plaats van modellen.
+>
+>Sjablonen voor inhoudsfragmenten zijn nu afgekeurd. Ze kunnen nog steeds worden gebruikt voor het maken van fragmenten, maar het gebruik van Content Fragment Models wordt aangeraden. Er worden geen nieuwe functies toegevoegd aan fragmentsjablonen en deze worden in een toekomstige versie verwijderd.
 
 * Modellen van contentfragmenten:
 
@@ -64,7 +66,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Sjablonen definiëren de (basis-, alleen-tekst) structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt. verdere wijzigingen van de sjabloon worden dus niet weerspiegeld in bestaande fragmenten.
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
-   * [Sjablonen ](/help/sites-developing/content-fragment-templates.md) voor inhoudsfragmenten werken op een andere manier dan andere sjabloonmechanismen in het AEM ecosysteem (bijvoorbeeld paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
+   * [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) op een andere manier te werken dan andere sjabloonmechanismen binnen het AEM ecosysteem (bv. paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
    * Indien gebaseerd op een sjabloon wordt het MIME-type van de inhoud beheerd op de feitelijke inhoud; dit betekent dat elk element en elke variatie een ander MIME-type kunnen hebben.
 
 ### Integratie met middelen {#integration-with-assets}
@@ -81,18 +83,16 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfragmentmodel) worden toegewezen aan één element:
 
-* Alle inhoud wordt opgeslagen onder de `jcr:content/data`-node van het element:
+* Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 
    * De elementgegevens worden opgeslagen onder het master subknooppunt:
       `jcr:content/data/master`
 
-   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie:
-bijv. `jcr:content/data/myvariation`
+   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijv. `jcr:content/data/myvariation`
 
-   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam:
-De inhoud van element `text` wordt bijvoorbeeld als eigenschap `text` op `jcr:content/data/master` opgeslagen
+   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bv. de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
-* Metagegevens en bijbehorende inhoud worden onder `jcr:content/metadata` opgeslagen
+* Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`
 Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op 
 `jcr:content`
 
@@ -120,7 +120,7 @@ Net als bij standaardelementen wordt een inhoudsfragment opgeslagen onder:
 
 #### Elementmachtigingen {#asset-permissions}
 
-Zie [Inhoudsfragment - Overwegingen verwijderen](/help/assets/content-fragments/content-fragments-delete.md) voor meer informatie.
+Zie voor meer informatie [Inhoudsfragment - Overwegingen verwijderen](/help/assets/content-fragments/content-fragments-delete.md).
 
 #### Functieintegratie {#feature-integration}
 
@@ -132,15 +132,15 @@ Zie [Inhoudsfragment - Overwegingen verwijderen](/help/assets/content-fragments/
 
 >[!CAUTION]
 >
->De [Content Fragment Core Component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) wordt nu aanbevolen. Zie [Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) ontwikkelen voor meer informatie.
+>De [Component Content Fragment Core](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) wordt nu aanbevolen. Zie [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor meer informatie .
 
-Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de [**kerncomponent van het inhoudsfragment**](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - een [component waarmee u inhoudsfragmenten op uw pagina&#39;s kunt opnemen](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). U kunt ook de kerncomponent **Content Fragment** uitbreiden.
+Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met elk ander elementtype. AEM biedt de [**Inhoudsfragment** kerncomponent](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - [component waarmee u inhoudsfragmenten op uw pagina&#39;s kunt opnemen](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). U kunt ook het volgende uitbreiden: **Inhoudsfragment** kerncomponent.
 
-* De component gebruikt de eigenschap `fragmentPath` om naar het daadwerkelijke inhoudsfragment te verwijzen. De `fragmentPath`-eigenschap wordt op dezelfde wijze afgehandeld als soortgelijke eigenschappen van andere soorten activa; bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
+* De component gebruikt de `fragmentPath` eigenschap om naar het daadwerkelijke inhoudsfragment te verwijzen. De `fragmentPath` vastgoed wordt op dezelfde wijze afgehandeld als soortgelijke eigenschappen van andere soorten activa; bijvoorbeeld wanneer het inhoudsfragment naar een andere locatie wordt verplaatst.
 
 * Met de component kunt u de variatie selecteren die moet worden weergegeven.
 * Bovendien kan een reeks alinea&#39;s worden geselecteerd om de uitvoer te beperken; Dit kan bijvoorbeeld worden gebruikt voor uitvoer met meerdere kolommen.
-* De component staat [in-tussen inhoud](/help/sites-developing/components-content-fragments.md#in-between-content) toe:
+* De component staat [tussenliggende inhoud](/help/sites-developing/components-content-fragments.md#in-between-content):
 
    * Hier kunt u andere elementen (afbeeldingen, enz.) plaatsen tussen de alinea&#39;s van het fragment waarnaar wordt verwezen.
    * Voor tussenliggende inhoud moet u:
@@ -162,14 +162,14 @@ Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 
 De back-endimplementatie van inhoudsfragmenten is bijvoorbeeld verantwoordelijk voor het maken van instanties van een fragment dat wordt gebruikt op een pagina die kan worden doorzocht, of voor het beheren van gemengde media-inhoud. Deze implementatie moet weten welke componenten worden gebruikt voor het renderen van fragmenten en hoe de rendering wordt geparametriseerd.
 
-De parameters voor dit kunnen in [de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), voor de bundel OSGi **de Configuratie van de Component van het Fragment van de Inhoud** worden gevormd.
+De parameters voor dit kunnen in worden gevormd [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), voor de OSGi-bundel **Configuratie van inhoudsfragmentcomponent**.
 
-* **Resourcetypen**
-Lijst met 
+* **Brontypen**
+Een lijst van 
 `sling:resourceTypes` kan worden opgegeven om componenten te definiëren die worden gebruikt voor het renderen van inhoudsfragmenten en waar de achtergrondverwerking moet worden toegepast.
 
-* **Referentie-**
-eigenschappenEen lijst met eigenschappen kan worden geconfigureerd om op te geven waar de verwijzing naar het fragment wordt opgeslagen voor de desbetreffende component.
+* **Referentie-eigenschappen**
+Een lijst met eigenschappen kan worden geconfigureerd om op te geven waar de verwijzing naar het fragment wordt opgeslagen voor de desbetreffende component.
 
 >[!NOTE]
 >
@@ -181,20 +181,20 @@ eigenschappenEen lijst met eigenschappen kan worden geconfigureerd om op te geve
 
 Er zijn nog enkele richtlijnen die u moet volgen om ervoor te zorgen dat de component compatibel is met de achtergrondverwerking van het inhoudsfragment:
 
-* De naam van de eigenschap waar het element of de elementen worden gerenderd, moet `element` of `elementNames` zijn.
+* De naam van de eigenschap waarin het element of de elementen worden weergegeven, moet ofwel `element` of `elementNames`.
 
-* De naam van de eigenschap waar de te renderen variatie is gedefinieerd, moet `variation` of `variationName` zijn.
+* De naam van de eigenschap waarin de uit te voeren wijziging is gedefinieerd, moet ofwel `variation` of `variationName`.
 
-* Als de uitvoer van meerdere elementen wordt ondersteund (door `elementNames` te gebruiken om meerdere elementen op te geven), wordt de werkelijke weergavemodus gedefinieerd door eigenschap `displayMode`:
+* Als de uitvoer van meerdere elementen wordt ondersteund (door `elementNames` om meerdere elementen op te geven), wordt de werkelijke weergavemodus gedefinieerd door de eigenschap `displayMode`:
 
-   * Als de waarde `singleText` is (en er slechts één gevormd element is), dan wordt het element teruggegeven als tekst met inwendige inhoud, lay-outsteun, enz. Dit is de standaardinstelling voor fragmenten waarbij slechts één element wordt gerenderd.
+   * Als de waarde `singleText` (en er is slechts één geconfigureerd) wordt het element weergegeven als een tekst met tussenliggende inhoud, ondersteuning voor de layout, enz. Dit is de standaardinstelling voor fragmenten waarbij slechts één element wordt gerenderd.
    * Anders wordt een veel eenvoudigere aanpak gebruikt (deze kan &#39;formulierweergave&#39; worden genoemd), waarbij geen tussenliggende inhoud wordt ondersteund en de fragmentinhoud &#39;zoals deze is&#39; wordt weergegeven.
 
-* Als het fragment wordt gerenderd voor `displayMode` == `singleText` (impliciet of expliciet), worden de volgende aanvullende eigenschappen in spel gezet:
+* Als het fragment wordt gerenderd voor `displayMode` == `singleText` (impliciet of expliciet) worden de volgende aanvullende eigenschappen toegepast:
 
-   * `paragraphScope` definieert of alle alinea&#39;s, of alleen een reeks alinea&#39;s, moeten worden gerenderd (waarden:  `all` vs  `range`)
+   * `paragraphScope` definieert of alle alinea&#39;s, of alleen een reeks alinea&#39;s, moeten worden gerenderd (waarden: `all` vs `range`)
 
-   * als `paragraphScope` == `range` dan bepaalt het bezit `paragraphRange` de waaier van paragrafen die moeten worden teruggegeven
+   * indien `paragraphScope` == `range` dan de eigenschap `paragraphRange` definieert het bereik van alinea&#39;s dat moet worden gerenderd
 
 ### Integratie met andere frameworks {#integration-with-other-frameworks}
 
@@ -202,7 +202,7 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de vertaalworkflow [AEM. ](/help/sites-administering/tc-manage.md) Op architectonisch niveau betekent dit:
+   Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
@@ -226,14 +226,14 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
    >
    >De AEM vertaalworkflow werkt met `/content`:
    >
-   >    * Aangezien de modellen van het inhoudsfragment in `/conf` verblijven, zijn deze niet inbegrepen in dergelijke vertalingen. U kunt de UI-tekenreeksen [internationaliseren](/help/sites-developing/i18n-dev.md).
+   >    * Terwijl de modellen van het inhoudsfragment zich bevinden in `/conf`, worden deze niet in dergelijke vertalingen opgenomen. U kunt [UI-tekenreeksen internationaliseren](/help/sites-developing/i18n-dev.md).
    >
    >    * Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
 
 
 * **Metagegevensschema&#39;s**
 
-   * Inhoudsfragmenten (weder)gebruiken de [metagegevensschema&#39;s](/help/assets/metadata-schemas.md), die kunnen worden gedefinieerd met standaardelementen.
+   * Inhoudsfragmenten (opnieuw) gebruiken de [metagegevensschema&#39;s](/help/assets/metadata-schemas.md), die met standaardelementen kunnen worden gedefinieerd.
    * CFM biedt een eigen, specifiek schema:
 
       `/libs/dam/content/schemaeditors/forms/contentfragment`
@@ -256,9 +256,9 @@ U kunt de server-kant API gebruiken om tot uw inhoudsfragmenten toegang te hebbe
 
 De volgende drie interfaces kunnen als ingangspunten dienen:
 
-* **Fragmentsjabloon**  ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Fragmentsjabloon** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-   Gebruik `FragmentTemplate.createFragment()` om een nieuw fragment te maken.
+   Gebruiken `FragmentTemplate.createFragment()` voor het maken van een nieuw fragment.
 
    ```
    Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -268,7 +268,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    Deze interface vertegenwoordigt:
 
-   * een inhoudsfragmentmodel of een fragmentsjabloon voor inhoud op basis waarvan een inhoudsfragment moet worden gemaakt,
+   * een inhoudsfragmentmodel of een inhoudsfragmentsjabloon op basis waarvan een inhoudsfragment moet worden gemaakt,
    * en (na het maken) de structuurgegevens van dat fragment
 
    Deze informatie kan omvatten:
@@ -301,7 +301,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 
 
-* **Inhoudsfragment**  ([ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Inhoudsfragment** ([ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
    Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
 
@@ -317,9 +317,9 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
       * Lijstelementen
       * Elementen op naam ophalen
-      * Nieuwe elementen maken (zie [Voorbehouden](#caveats))
+      * Nieuwe elementen maken (zie [Caveats](#caveats))
 
-      * Gegevens van toegangselement (zie `ContentElement`)
+      * Gegevens over toegangselementen (zie `ContentElement`)
    * Variaties weergeven die zijn gedefinieerd voor het fragment
    * Nieuwe variaties wereldwijd maken
    * Gekoppelde inhoud beheren:
@@ -331,7 +331,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
    De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
-   * **Content Element**  ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+   * **Inhoud-element** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
@@ -340,8 +340,8 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
          * Variaties weergeven
          * Variaties ophalen op naam
          * Nieuwe variaties maken (zie [Caveats](#caveats))
-         * Variaties verwijderen (zie [Bijschriften](#caveats))
-         * Toegang krijgen tot variatiegegevens (zie `ContentVariation`)
+         * Variaties verwijderen (zie [Caveats](#caveats))
+         * Gegevens betreffende variatie van de toegang (zie `ContentVariation`)
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
    * **Inhoudsvariatie** ([ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
@@ -349,7 +349,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Inhoud ophalen/instellen
       * Eenvoudige synchronisatie, gebaseerd op laatst gewijzigde informatie
 
-   Alle drie interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) breiden de `Versionable` interface uit, die versiemogelijkheden toevoegt, die voor inhoudsfragmenten worden vereist:
+   Alle drie de interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) de `Versionable` interface, die versiemogelijkheden toevoegt, vereist voor inhoudsfragmenten:
 
    * Nieuwe versie van het element maken
    * Versies van het element weergeven
@@ -367,9 +367,9 @@ Het volgende kan worden aangepast:
 
 * `ContentFragment` kan worden aangepast aan:
 
-   * `Resource` - de onderliggende sloopbron; Let erop dat u het  `Resource` object opnieuw moet opbouwen wanneer u de onderliggende waarde  `ContentFragment` rechtstreeks bijwerkt.
+   * `Resource` - de onderliggende sloopbron; nemen er nota van dat het bijwerken van de onderliggende `Resource` rechtstreeks, moet u de `ContentFragment` object.
 
-   * `Asset` - de DAM- `Asset` abstractie die het inhoudsfragment vertegenwoordigt; Let erop dat het  `Asset` rechtstreeks bijwerken van het  `ContentFragment` object opnieuw moet worden opgebouwd.
+   * `Asset` - de DAM `Asset` abstractie die het inhoudsfragment vertegenwoordigt; de `Asset` rechtstreeks, moet u de `ContentFragment` object.
 
 * `ContentElement` kan worden aangepast aan:
 
@@ -377,9 +377,9 @@ Het volgende kan worden aangepast:
 
 * `FragmentTemplate` kan worden aangepast aan:
 
-   * `Resource` - het  `Resource` bepalen van het model waarnaar wordt verwezen of de oorspronkelijke sjabloon die is gekopieerd;
+   * `Resource` - de `Resource` het bepalen van het model waarnaar wordt verwezen of de oorspronkelijke sjabloon die is gekopieerd;
 
-      * wijzigingen die zijn aangebracht via `Resource` worden niet automatisch doorgevoerd in `FragmentTemplate`.
+      * wijzigingen aangebracht via `Resource` worden niet automatisch weerspiegeld in de `FragmentTemplate`.
 
 * `Resource` kan worden aangepast aan:
 
@@ -391,11 +391,11 @@ Het volgende kan worden aangepast:
 Er zij op gewezen dat:
 
 * De API is geïmplementeerd om functionaliteit te bieden die door de UI wordt ondersteund.
-* De gehele API is ontworpen om automatisch wijzigingen te behouden **en niet** (tenzij anders vermeld in de API JavaDoc). Zo zult u altijd de middeloplosser van het respectieve verzoek (of resolver moeten begaan u eigenlijk gebruikt).
+* De gehele API is ontworpen voor **niet** Wijzigingen automatisch aanhouden (tenzij anders vermeld in de API JavaDoc). Zo zult u altijd de middeloplosser van het respectieve verzoek (of resolver moeten begaan u eigenlijk gebruikt).
 * Taken die extra inspanning zouden kunnen vereisen:
 
    * Door nieuwe elementen te maken/verwijderen wordt de gegevensstructuur van eenvoudige fragmenten (op basis van een fragmentsjabloon) niet bijgewerkt.
-   * Als u nieuwe variaties maakt vanuit `ContentElement`, wordt de gegevensstructuur niet bijgewerkt (maar worden deze globaal gemaakt op basis van `ContentFragment`).
+   * Nieuwe variaties maken van `ContentElement` werkt de gegevensstructuur niet bij (maar maakt deze globaal op basis van `ContentFragment` zal).
 
    * Als u bestaande variaties verwijdert, wordt de gegevensstructuur niet bijgewerkt.
 
@@ -411,18 +411,18 @@ Zie het volgende:
 
 * `filter.xml`
 
-   `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat het niet overlapt met het elementeninhoudspakket.
+   De `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat dit niet overlapt met het elementeninhoudspakket.
 
 ## Sessies bewerken {#edit-sessions}
 
-Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie wordt beëindigd wanneer de gebruiker de editor verlaat door **Opslaan** of **Annuleren** te selecteren.
+Er wordt een bewerkingssessie gestart wanneer de gebruiker een inhoudsfragment opent in een van de editorpagina&#39;s. De bewerkingssessie is voltooid wanneer de gebruiker de editor verlaat door een van de volgende opties te selecteren **Opslaan** of **Annuleren**.
 
 ### Vereisten {#requirements}
 
 Vereisten voor het besturen van een bewerkingssessie zijn:
 
-* Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML-pagina&#39;s), moet atomisch zijn.
-* De bewerking moet ook *transactie* zijn; aan het einde van de bewerkingssessie moeten de wijzigingen worden vastgelegd (opgeslagen) of teruggedraaid (geannuleerd).
+* Het bewerken van een inhoudsfragment, dat meerdere weergaven kan beslaan (= HTML pagina&#39;s), moet atomisch zijn.
+* De bewerking moet ook *transactie*; aan het einde van de bewerkingssessie moeten de wijzigingen worden vastgelegd (opgeslagen) of teruggedraaid (geannuleerd).
 * Randgevallen moeten op de juiste wijze worden afgehandeld; Dit zijn bijvoorbeeld situaties waarin de gebruiker de pagina verlaat door handmatig een URL in te voeren of door globale navigatie te gebruiken.
 * Om gegevensverlies te voorkomen, moet er regelmatig automatisch worden opgeslagen (elke x minuten).
 * Als een inhoudsfragment tegelijkertijd door twee gebruikers wordt bewerkt, mogen deze de wijzigingen van elkaar niet overschrijven.
@@ -522,7 +522,7 @@ Het interval voor automatisch opslaan (gemeten in seconden) kan worden gedefinie
 * Naam eigenschap: `autoSaveInterval`
 * Type: `Long`
 
-* Standaard: `600` (10 minuten); this is defined on `/libs/settings/dam/cfm/jcr:content`
+* Standaard: `600` (10 minuten); dit is gedefinieerd op `/libs/settings/dam/cfm/jcr:content`
 
 Als u een auto sparen interval van 5 minuten wilt plaatsen moet u het bezit op uw knoop bepalen; bijvoorbeeld:
 
@@ -541,5 +541,5 @@ Zie [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-t
 
 Zie voor meer informatie
 
-* [Core Components - Content Fragment Component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)  (aanbevolen)
+* [Kerncomponenten - component Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) (aanbevolen)
 * [Componenten van inhoudsfragment - Componenten voor paginaontwerp](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

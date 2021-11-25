@@ -2,9 +2,9 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 1e02ad94459ff2893d96055c026d0873b1d69991
+source-git-commit: c9db5a1764d98bb049c08a0e6962b7ed5e1bfe5c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1753'
 ht-degree: 2%
 
 ---
@@ -22,13 +22,13 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 ## Verouderde functies {#deprecated-features}
 
-Deze sectie maakt een lijst van eigenschappen en mogelijkheden die als verouderd met AEM 6.5 zijn gemerkt. In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen door een alternatief.
+Deze sectie maakt een lijst van eigenschappen en mogelijkheden die als verouderd met AEM 6.5 zijn gemerkt. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Sjablonen voor inhoudsfragmenten maken. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. |  |
+| [!DNL Sites] | Sjablonen voor inhoudsfragmenten maken. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. | 6.5.11.0. |
 | Creative Cloud-integratie | AEM naar het delen van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM, zodat ze ze kunnen openen in [!DNL Creative Cloud] en uploadt u nieuwe bestanden of slaat u wijzigingen op in AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe is niet van plan om verdere verbeteringen aan te brengen in de AEM voor het delen van mappen in Creative Cloud. Hoewel de functie in AEM is opgenomen, wordt klanten sterk aangeraden vervangende oplossingen te gebruiken. | Klanten wordt aangeraden over te schakelen op nieuwe integratiemogelijkheden voor Creative Cloud, waaronder Adobe Asset Link of AEM desktop app. |  |
 | Assets | `AssetDownloadServlet` is standaard uitgeschakeld voor de publicatie-instanties. Zie voor meer informatie [Controlelijst voor AEM](/help/sites-administering/security-checklist.md). | Configuratie beschreven op [Controlelijst voor AEM](/help/sites-administering/security-checklist.md). |  |
 | Activa | Als een gebruiker onvoldoende (lees- en schrijfrechten) heeft voor `/content/dam/collections`kan de gebruiker geen verzameling maken. | De instelling van de toegangscontrole van de gebruiker respecteren en de juiste machtigingen garanderen. |  |

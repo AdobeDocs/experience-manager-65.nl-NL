@@ -7,12 +7,12 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b5835d16efb0f2112ec8a6917e8cf2529cbf19c7
+source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
 workflow-type: tm+mt
-source-wordcount: '6508'
+source-wordcount: '5744'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 >
 >Dynamic Media - Scene7-modus is bedoeld voor de *Alleen instantie Experience Manager auteur*. Als dusdanig, moet u vormen `runmode=dynamicmedia_scene7` op de instantie Auteur van de Experience Manager, *niet* de Experience Manager Publish instantie.
 
-Als u Dynamic Media wilt inschakelen, moet u de Experience Manager starten met de `dynamicmedia_scene7` run mode van de bevellijn door het volgende in een eindvenster in te gaan (de gebruikte voorbeeldhaven is 4502):
+Als u Dynamic Media wilt inschakelen, start u Experience Manager op met `dynamicmedia_scene7` run mode van de bevellijn door het volgende in een eindvenster in te gaan (de gebruikte voorbeeldhaven is 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -128,20 +128,19 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
          * **[!UICONTROL Disabled for subfolders]** - Sluit alles in deze substructuur uit van synchroniseren naar Dynamic Media.
 
    >[!NOTE]
-   Er is geen steun voor versioning in DMS7. Ook is de vertraagde activering slechts van toepassing als **[!UICONTROL Publish Assets]** op de pagina Configuratie van dynamische media bewerken is ingesteld op **[!UICONTROL Upon Activation]**, en dit alleen tot de eerste keer dat de asset wordt geactiveerd.
+   versioning wordt niet ondersteund in de modus Dynamic Media - Scene7. Ook is de vertraagde activering slechts van toepassing als **[!UICONTROL Publish Assets]** op de pagina Configuratie van dynamische media bewerken is ingesteld op **[!UICONTROL Upon Activation]**, en dit alleen tot de eerste keer dat de asset wordt geactiveerd.
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
 1. Selecteer **[!UICONTROL Save]**.
 1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de Experience Manager auteur-instantie &#39;lijsten van gewenste personen&#39; om verbinding te maken met Dynamic Media:
 
-   * Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met de Klantenondersteuning van Adobe als u deze informatie niet hebt.
-
-   * Navigeer op de navigatiebalk rechts boven aan de pagina naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
-
-   * Voor de pagina van de Publicatie van de Server van het Beeld, in de Publish drop-down lijst van de Context, selecteer **[!UICONTROL Test Image Serving]**.
-   * Voor de Filter van het Adres van de Cliënt, selecteer **[!UICONTROL Add]**.
-   * Schakel het selectievakje in om het adres in te schakelen. Ga het IP adres van de instantie van de Auteur van de Experience Manager (niet Verzender IP) in.
-   * Selecteer **[!UICONTROL Save]**.
+   * In de wijze van de Auteur van de Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
+   * Selecteer in het linkerspoor de optie **[!UICONTROL Tools]** pictogram, ga dan naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+   * Op de pagina Dynamic Media Image Server in het dialoogvenster **[!UICONTROL Publish Context]** vervolgkeuzelijst, selecteert u **[!UICONTROL Test Image Serving]**.
+   * Selecteer **[!UICONTROL Security]** tab.
+   * Voor de **[!UICONTROL Client address]**, selecteert u **[!UICONTROL Add]**.
+   * Ga het IP adres van de instantie van de Auteur van de Experience Manager (niet Verzender IP) in.
+   * Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]**.
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt de Dynamic Media - Scene7-modus gebruiken.
 
@@ -212,7 +211,6 @@ Houd rekening met de volgende voorwaarden en punten als u deze functie wilt gebr
 1. Voer de juiste waarde in bytes in zodat u de maximale uploadgrootte kunt instellen. Als u bijvoorbeeld de limiet voor het uploadelement wilt verhogen tot 10 GB, voert u `10737418240` in het waardeveld.
 U kunt een waarde invoeren tot 15 GB (`2013265920` bytes). In dit geval worden geüploade elementen die groter zijn dan 15 GB niet geüpload.
 
-
    ![Grenswaarde voor grootte](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. Selecteer in de linkerbovenhoek van het venster CRXDE Lite de optie **[!UICONTROL Save All]**.
@@ -248,85 +246,35 @@ U kunt een waarde invoeren tot 15 GB (`2013265920` bytes). In dit geval worden g
 
 ### (Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-Wanneer u in runtime wijze bent `dynamicmedia_scene7`, gebruikt u de Dynamic Media Classic-gebruikersinterface om uw Dynamic Media-instellingen te wijzigen.
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-Voor sommige van de bovenstaande taken moet u de opdracht [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
-
-De taken van de opstelling en van de configuratie omvatten het volgende:
-
-* [Publicatie-instelling voor afbeeldingsserver](#publishing-setup-for-image-server)
-* [Algemene instellingen van toepassingen configureren](#configuring-application-general-settings)
+* [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](/help/assets/dm-publish-settings.md)
+* [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md)
 * [Kleurbeheer configureren](#configuring-color-management)
 * [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats)
 * [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats)
-* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Batchset-voorinstellingen maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (uitgevoerd in de gebruikersinterface van Dynamic Media Classic)
 
-#### Publicatie-instelling voor afbeeldingsserver {#publishing-setup-for-image-server}
+#### Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren {#publishing-setup-for-image-server}
 
-De instellingen voor Publicatie-instellingen bepalen hoe elementen standaard worden geleverd door Dynamic Media. Als er geen instelling is opgegeven, levert Dynamic Media een element op basis van de standaardinstellingen die zijn gedefinieerd in Publicatie-instelling. Als u bijvoorbeeld een aanvraag indient om een afbeelding te leveren die geen resolutiekenmerk bevat, levert dit een afbeelding op met de standaardinstelling Objectresolutie.
+Op de pagina Dynamic Media Publish Setup (Publicatie-instellingen) worden standaardinstellingen vastgelegd die bepalen hoe elementen worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen.
 
-Publicatie-instelling configureren: in Dynamic Media Classic, navigeer naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+Zie [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren](/help/assets/dm-publish-settings.md).
 
-Het scherm van de Server van het Beeld vestigt standaardmontages voor het leveren van beelden. Zie het scherm UI voor beschrijving van elke het plaatsen.
+#### Algemene instellingen van Dynamic Media configureren {#configuring-application-general-settings}
 
-* **[!UICONTROL Request Attributes]** - Met deze instellingen worden limieten ingesteld voor afbeeldingen die van de server kunnen worden geleverd.
-* **[!UICONTROL Default Request Attributes]** - Deze instellingen hebben betrekking op de standaardweergave van afbeeldingen.
-* **[!UICONTROL Common Thumbnail Attributes]** - Deze instellingen hebben betrekking op de standaardweergave van miniatuurafbeeldingen.
-* **[!UICONTROL Defaults for Catalog Fields]**- Deze instellingen hebben betrekking op de resolutie en het standaardtype miniatuur van afbeeldingen.
-* **[!UICONTROL Color Management Attributes]** - Deze instellingen bepalen welke ICC-kleurprofielen worden gebruikt.
-* **[!UICONTROL Compatibility Attributes]** - Met deze instelling kunnen alinea&#39;s met regelafstand en navolgende in tekstlagen op dezelfde manier worden behandeld als in versie 3.6, voor achterwaartse compatibiliteit.
-* **[!UICONTROL Localization Support]** - Met deze instellingen kunt u meerdere kenmerken voor de landinstelling beheren. U kunt hiermee ook een landinstellingenkaarttekenreeks opgeven, zodat u kunt definiëren welke talen u wilt ondersteunen voor de verschillende knopinfo in Viewers. Meer informatie over het instellen van **[Ondersteuning voor lokalisatie]**, zie [Overwegingen bij het instellen van lokalisatie van middelen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+De Dynamic Media configureren **[!UICONTROL Publish Server Name]** URL en de **[!UICONTROL Origin Server Name]** URL. U kunt ook **[!UICONTROL Upload to Application]** instellingen en **[!UICONTROL Default Upload Options]** allemaal op basis van uw specifieke gebruiksgeval.
 
-#### Algemene instellingen van toepassingen configureren {#configuring-application-general-settings}
-
-Als u de pagina Algemene instellingen toepassing wilt openen, navigeert u op de algemene navigatiebalk van Dynamic Media Classic naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
-
-**[!UICONTROL Servers]** - Dynamic Media levert automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij de Adobe Klantenondersteuning hiervoor expliciet de instructie geeft.
-
-**[!UICONTROL Overwrite Images]** - Dynamic Media staat niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die naar een andere map zijn geüpload dan het origineel of op elementen met een andere bestandsnaamextensie dan het origineel (zoals JPG, TIF of PNG).
-
-* **[!UICONTROL Overwrite in current folder, same base image name/extension]** - Deze optie is de strengste regel voor vervanging. Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel en moet de vervangende afbeelding dezelfde bestandsnaamextensie hebben als het origineel. Als niet aan deze vereisten wordt voldaan, wordt een dubbel gecreeerd.
-
->[!NOTE]
-Kies altijd de volgende instelling om consistentie met de Experience Manager te behouden: **Overschrijven in huidige map, dezelfde naam/extensie voor basisafbeelding**
-
-* **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (bijvoorbeeld eigenschap.jpg moet de naam stoel.jpg vervangen, niet stoel.tif). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding staat in de nieuwe map; kan het bestand niet meer vinden op de oorspronkelijke locatie
-* **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
-
-**[!UICONTROL Default Color Profiles]** - Zie [Kleurbeheer configureren](#configuring-color-management) voor aanvullende informatie.
-
->[!NOTE]
-Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van de asset selecteert. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal weergegeven viewervoorinstellingen vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
 
 #### Kleurbeheer configureren {#configuring-color-management}
 
-Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte. Zie [Voorinstellingen afbeelding configureren](/help/assets/managing-image-presets.md).
+Met Dynamic Media-kleurbeheer kunt u correcte elementen kleuren. Met kleurcorrectie behouden ingesloten elementen hun kleurruimte (RGB, CMYK, Grijs) en ingesloten kleurprofiel. Wanneer u een dynamische uitvoering aanvraagt, wordt de afbeeldingskleur met CMYK-, RGB- of grijsuitvoer gecorrigeerd naar de doelkleurruimte.
 
-De standaardeigenschappen voor kleuren zo configureren dat kleurcorrectie wordt ingeschakeld wanneer afbeeldingen worden aangevraagd:
+Zie [Voorinstellingen afbeelding configureren](/help/assets/managing-image-presets.md).
 
-1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)Meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven.
-1. Ga naar **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**.
-1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
-1. Blader naar de eigenschap die u wilt wijzigen. Een eigenschap in het dialoogvenster **[!UICONTROL Color Management Attributes]** gebied.
-
-   U kunt de volgende eigenschappen voor kleurcorrectie instellen:
-
-   * **[!UICONTROL CMYK Default Color Space]** - Naam van het standaard CMYK-kleurprofiel
-   * **[!UICONTROL Gray-Scale Default Color Space]** - Naam van het standaardgrijskleurprofiel
-   * **[!UICONTROL RGB Default Color Space]** - Naam van het standaardkleurprofiel RGB
-   * **[!UICONTROL Color Conversion Rendering Intent]** - Geeft de render-intentie op. Acceptabele waarden zijn: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe beveelt aan **[!UICONTROL relative]** als standaard.
-
-1. Selecteer **[!UICONTROL Save]**.
-
-U kunt bijvoorbeeld **[!UICONTROL RGB Default Color Space]** instellen op *sRGB* en **[!UICONTROL CMYK Default Color Space]** op *WebCoated*.
-
-Dit doet het volgende:
-
-* Hiermee schakelt u kleurcorrectie in voor RGB- en CMYK-afbeeldingen.
-* RGB-afbeeldingen die geen kleurprofiel hebben, worden verondersteld zich in het deelvenster *sRGB* kleurruimte.
-* CMYK-afbeeldingen zonder kleurprofiel worden verondersteld zich in te bevinden *WebCoated* kleurruimte.
-* Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in het dialoogvenster *sRGB* kleurruimte.
-* Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in het dialoogvenster *WebCoated* kleurruimte.
+>[!NOTE]
+Standaard geeft het systeem 15 uitvoeringen weer wanneer u **[!UICONTROL Renditions]** en 15 voorinstellingen voor viewers wanneer u **[!UICONTROL Viewers]** in de gedetailleerde weergave van het element. U kunt deze limiet verhogen. Zie [Het aantal voorinstellingen voor afbeeldingen dat wordt weergegeven verhogen](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [Het aantal weergegeven viewervoorinstellingen vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### MIME-typen bewerken voor ondersteunde indelingen {#editing-mime-types-for-supported-formats}
 
@@ -458,6 +406,8 @@ Er zijn twee elementen beschikbaar voor definitie, Identieke en Basisnaam. Met d
    * Selecteren **[!UICONTROL Save]** als u een bestaande voorinstelling bewerkt.
 
 ##### Een voorinstelling voor een batchset maken
+
+
 
 Dynamic Media gebruikt voorinstellingen voor batchsets om elementen te ordenen in sets afbeeldingen (alternatieve afbeeldingen, kleuropties, 360 centrifugeren) die kunnen worden weergegeven in viewers. De voorinstellingen voor batchsets worden automatisch naast de processen voor het uploaden van elementen in Dynamic Media uitgevoerd.
 

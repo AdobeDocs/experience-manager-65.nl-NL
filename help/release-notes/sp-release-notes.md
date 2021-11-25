@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Expe
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: c0393e614cf96066dfd765cc00dc8ad370755a27
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '3307'
+source-wordcount: '3306'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Gegevens vrijgeven {#release-information}
 
-| Producten | [!DNL Adobe Experience Manager] 6,5 |
+| Producten | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
 | Versie | 6.5.11.0. |
 | Type | Service Pack-release |
@@ -36,7 +36,7 @@ De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Ado
 
 * Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. Voor meer dan 1000 elementen in een map: [!DNL Assets] geeft 1000+ weer.
 
-* U kunt de sorteeroptie nu weergeven in de Kaart- en kolomweergave (NPR-37199).
+* U kunt de sorteeroptie nu renderen in de Kaart- en kolomweergave.
 
 * U kunt nu [!DNL Dynamic Media] om Algemene Montages te vormen in plaats van het moeten door [!DNL Dynamic Media Classic] bureaubladtoepassing. Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
 
@@ -91,17 +91,17 @@ De volgende problemen zijn opgelost in [!DNL Sites]:
 
 * Automatisch aanvullen werkt niet in [!UICONTROL Content Fragment Model] zoekfacet (SITES-1976).
 
-* Als een inhoudsfragment een reusachtige hiërarchie van geneste fragmenten bevat, [!UICONTROL Content Fragment Editor] reageert niet meer wanneer het zijpaneel wordt geladen (SITES-1974).
+* If a content fragment contains a huge hierarchy of nested fragments, the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
 
 * Het algemene zoeken in de fragmentkiezer werkt niet (SITES-1973).
 
-* Referenties worden bijgewerkt tijdens het verplaatsen van een inhoudsfragment (SITES-1897).
+* References are updating when moving a content fragment (SITES-1897).
 
 * De optie om een pagina te maken ontbreekt in de Kaart- en Kolomweergave (NPR-37549).
 
 * Wanneer u de volgorde van componenten op een startpagina wijzigt, blijft bij het promoten van de Launch de volgorde van componenten niet behouden (NPR-37539).
 
-* De optie om alle items in een lijst te selecteren werkt niet op de rollout-pagina (NPR-37443).
+* The option to select all the items in a list is not working on the rollout page (NPR-37443).
 
 * Als u meerdere pagina&#39;s wilt activeren, wordt een nieuwe JCR-sessie geopend voor `wcm-workflow-service` gebruiker (NPR-37417).
 
@@ -161,7 +161,7 @@ De volgende problemen zijn opgelost in [!DNL Assets]:
 
 * Wanneer u een live kopie van de blauwdruk met een geneste mapstructuur maakt, worden de gewijzigde eigenschappen van de bronmap niet bijgewerkt in de map met live kopieën (NPR-37449).
 
-* Wanneer u meerdere elementen selecteert en de waarden van de metagegevensvelden wijzigt, worden de waarden niet behouden wanneer u de elementen opslaat. De wijzigingen in metagegevens worden ook niet toegepast (NPR-37341).
+* When selecting multiple assets and modifying the metadata field values, saving the assets does not retain the values. De wijzigingen in metagegevens worden ook niet toegepast (NPR-37341).
 
 * Wanneer u meerdere elementen selecteert en de eigenschappen wijzigt, worden de waarden van de aangepaste eigenschappen (dropdowns) overschreven door de standaardwaarden (NPR-36437).
 
@@ -210,22 +210,22 @@ De volgende opgeloste problemen zijn beschikbaar in [!DNL Dynamic Media]:
 
 * Toegang tot de pagina Videoprofielen mislukt als voor de hoofdmap van het videoprofiel van de gebruiker aangepaste toegangsregels zijn gedefinieerd voor het hoofdknooppunt van videoprofielen (CQ-4332941).
 
-* In een zoombare afbeelding wordt met de sneltoetsen (&#39;+&#39;, &#39;-&#39;) of &#39;Esc&#39; de focus van de schermlezers geplaatst (CQ-4290719).
+* In a zoomable image, using the shortcut keys (&#39;+&#39;, &#39;-&#39;) or &#39;Esc&#39; key traps the screen readers focus (CQ-4290719).
 
 * Wanneer een gebruiker op de sneltoets voor de formuliermodus (&#39;F&#39;) klikt, wijst de schermlezer het label van het dialoogvenster [!UICONTROL Embed Size] de menuknop beschikbaar in [!UICONTROL Get Embed] codeselectie (CQ-4290929).
 
 * Als u via toetsenbordnavigatie het pop-upvenster met de e-mailkoppeling opent, zijn de foutsuggesties in de gebruikersinterface voor de velden Aan en Van niet beschrijvend (CQ-4290930).
 
-* Wanneer u naar het dialoogvenster E-mailkoppeling navigeert, haalt de schermlezer de informatie over de labels voor de toegevoegde bewerkingsvelden niet over met de sneltoets Pijl-omlaag en Formuliermodus (&#39;F&#39;) (CQ-4290934).
+* When navigating to the email link dialog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key (&#39;F&#39;) (CQ-4290934).
 
 * Wanneer u naar het dialoogvenster E-mailkoppeling navigeert, geeft de schermlezer niet het visuele sterretje (*) weer voor de verplichte velden &#39;Aan&#39; en &#39;Van&#39; (CQ-4290935).
 
-* De gebruikers kunnen het landmerk en de regio niet identificeren met behulp van de sneltoetsen (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
+* The users are not able to identify the landmark and region using the shortcut keys (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
 
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
 -->
 
-### Handel {#commerce-65110}
+### Commerce {#commerce-65110}
 
 * Wanneer u de [!UICONTROL Publish Later] -optie, komt de gebruikersinterface niet overeen met de status [!UICONTROL Publication Pending] (CQ-4334229).
 
@@ -247,7 +247,7 @@ De volgende opgeloste problemen zijn beschikbaar in [!DNL Dynamic Media]:
 
 ### Gebruikersinterface {#user-interface-65110}
 
-* Het mappictogram dat het model vertegenwoordigt, is onjuist (NPR-37176).
+* The folder icon representing the model is incorrect (NPR-37176).
 
 * Wanneer een gebruiker een onderzoek uitvoert of gebruikend browser van het weggebied doorbladert, worden de onjuiste knopen getoond (NPR-37175).
 
@@ -438,25 +438,25 @@ Om het de dienstpak op een [!DNL Adobe Experience Manager] 6.5-instantie voert u
 
 >[!NOTE]
 >
->De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het de dienstpak. Adobe raadt aan dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Dit probleem treedt meestal op in [!DNL Safari] browser, maar kan soms voorkomen op om het even welke browser.
+>De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het de dienstpak. Adobe raadt aan dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Typically, this issue occurs in [!DNL Safari] browser but can intermittently occur on any browser.
 
-**Automatische installatie**
+**Automatic installation**
 
 Er zijn twee manieren om automatisch te installeren [!DNL Experience Manager] 6.5.11.0 op een werkexemplaar:
 
 A. Plaats het pakket in `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 
-B. Gebruik de [HTTP-API van Package Manager](/help/sites-administering/package-manager.md#package-share). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
+B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.11.0 biedt geen ondersteuning voor Bootstrap-installatie.
+>Adobe Experience Manager 6.5.11.0 does not support Bootstrap installation.
 
-**De installatie valideren**
+**Validate the installation**
 
-1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (6.5.11.0)` krachtens [!UICONTROL Installed Products].
+1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.11.0)` under [!UICONTROL Installed Products].
 
-1. Alle OSGi-bundels zijn **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Gebruik: `/system/console/bundles`).
+1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.2.2.3 of hoger (Webconsole gebruiken: `/system/console/bundles`).
 
@@ -509,7 +509,7 @@ Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/hel
 
 >[!NOTE]
 >
->UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van de Adobe Openbare Maven bewaarplaats (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
+>UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van de Adobe Openbare Maven bewaarplaats (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
 
 ## Verouderde functies {#removed-deprecated-features}
 

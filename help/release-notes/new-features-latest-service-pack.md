@@ -4,9 +4,9 @@ description: Nieuwe functies in [!DNL Experience Manager] 6.5 Service Pack 11
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
-source-git-commit: 092ba82ac645539fd0d4e2085c380025201914de
+source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
 workflow-type: tm+mt
-source-wordcount: '4338'
+source-wordcount: '4330'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager] 6.5 De Pakken van de Dienst verstrekken nieuwe eigenschappen, klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen op kwartaalintervallen. De beschikbaarheid op kwartaalbasis maakt het gemakkelijk om tot nieuwe eigenschappen en innovaties toegang te hebben en te nemen.
 
-Dit artikel benadrukt de eigenschappen inbegrepen in het recentste Service Pack, [de belangrijkste eigenschappen inbegrepen in vorige 6.5 de Pakken van de Dienst](#key-features-previous-service-packs)en de [zeer belangrijke versies sinds het laatste Service Pack](#key-releases-since-last-sp) vrijgeven.
+Dit artikel benadrukt de eigenschappen inbegrepen in het recentste Service Pack [de belangrijkste eigenschappen inbegrepen in vorige 6.5 de Pakken van de Dienst](#key-features-previous-service-packs)en de [zeer belangrijke versies sinds het laatste Service Pack](#key-releases-since-last-sp) vrijgeven.
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -56,7 +56,7 @@ Dit artikel benadrukt de eigenschappen inbegrepen in het recentste Service Pack,
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] geeft toe:voegen-on pakketten één week na gepland vrij [!DNL Experience Manager] Releasedatum van Service Pack.
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
 
 ## Belangrijke functies in vorige [!DNL Experience Manager] 6.5 Servicepacks {#key-features-previous-service-packs}
@@ -65,11 +65,11 @@ Dit artikel benadrukt de eigenschappen inbegrepen in het recentste Service Pack,
 
 #### Functies die zijn opgenomen in AEM 6.5.10.0-release {#features-sites-65100}
 
-* **Verbeterd [!DNL Content Fragment] Modellen en Editor**: U kunt nu complexe en aangepaste modellen voor gestructureerde inhoud maken met behulp van geneste [!DNL Content Fragment] modellen. Inhoudsstructuren worden gemoduleerd in basiselementen die zijn gemodelleerd als subfragmenten. Fragmenten op een hoger niveau verwijzen naar deze subfragmenten. Meer functies voor gegevenstypen, zoals geavanceerde validatieregels, verbeteren de flexibiliteit van contentmodellering nog meer door [!DNL Content Fragments]. De [!DNL Experience Manager] [!DNL Content Fragment] de redacteur steunt genestelde fragmentstructuren in een gemeenschappelijke redacteurszitting, met verhogingen zoals de mening van de boomstructuur en van labels voorzien broodkruimelnavigatie door fragmenthiërarchieën.
+* **Enhanced [!DNL Content Fragment] Models and Editor**: You can now create complex and custom models for structured content using nested [!DNL Content Fragment] models. Inhoudsstructuren worden gemoduleerd in basiselementen die zijn gemodelleerd als subfragmenten. Higher-level fragments reference these sub-fragments. More data type enhancements such as advanced validation rules further enhance the flexibility of content modeling with [!DNL Content Fragments]. De [!DNL Experience Manager] [!DNL Content Fragment] de redacteur steunt genestelde fragmentstructuren in een gemeenschappelijke redacteurszitting, met verhogingen zoals de mening van de boomstructuur en van labels voorzien broodkruimelnavigatie door fragmenthiërarchieën.
 
 * **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment] modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], [GraphQL-query&#39;s blijven bestaan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en verzoeken om cachevriendelijke GET verwerken. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5
 
-* **Hiërarchiebeheer en voorvertoning in de toekomst**: Gebruikers hebben nu een interface voor toegang tot de inhoudstructuren van hun [!DNL Experience Manager] wordt gestart, inclusief de mogelijkheid om pagina&#39;s toe te voegen en te verwijderen bij het starten. Deze functie verbetert de flexibiliteit van [!DNL Experience Manager] wordt gestart bij de versie van de auteursinhoud die is bedoeld voor toekomstig publiceren. [Time-warp, functie](/help/sites-authoring/working-with-page-versions.md#timewarp) Hiermee kunnen gebruikers voorvertoningen starten als toekomstige inhoudsstaten.
+* **Hiërarchiebeheer en voorvertoning in de toekomst**: Gebruikers hebben nu een interface voor toegang tot de inhoudstructuren van hun [!DNL Experience Manager] wordt gestart, inclusief de mogelijkheid om pagina&#39;s toe te voegen en te verwijderen bij het starten. Deze functie verbetert de flexibiliteit van [!DNL Experience Manager] wordt gestart bij de versie van de auteursinhoud die is bedoeld voor toekomstig publiceren. [Time-warp feature](/help/sites-authoring/working-with-page-versions.md#timewarp) lets users preview launches as future content states.
 
 * [!DNL Experience Manager] geeft rechtstreeks een lijst weer van alle inhoudsmodellen onder een map zonder dat de auteurs van de inhoud door de bestandsstructuur hoeven te navigeren. De functionaliteit vereist nu minder klikken en verbetert de efficiëntie van het ontwerpen.
 
@@ -101,21 +101,21 @@ De bewerking Pagina verplaatsen is nu beschikbaar in de asynchrone modus. U kunt
 
 * Verbeterde contrastverhouding voor verschillende gebruikersinterface-elementen.
 
-* Verbeterde consistentie van alt-kenmerken voor paginaafbeeldingen.
+* Improved consistency of alt attributes for page images.
 
-* Verbeterde consistentie van Toegankelijke Rich Internet Applications (ARIA) etiketten.
+* Improved consistency of Accessible Rich Internet Applications (ARIA) labels.
 
 * Verbeterde NVDA-mogelijkheden (Non-Visual Desktop Access).
 
 * Verbeterde ondersteuning voor schermlezers.
 
-#### Andere belangrijke verbeteringen (6.5.5.0) {#other-enhancements-sites}
+#### Other key enhancements (6.5.5.0) {#other-enhancements-sites}
 
-* Anonieme toegang tot CRXDE Lite is niet toegestaan om de beveiliging te verbeteren. In plaats daarvan worden de gebruikers naar het aanmeldingsscherm geleid. Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+* Anonymous access to CRXDE Lite is disallowed to enhance security. Instead, the users are directed to the login screen. Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 * Wanneer u een paginastructuur kopieert of plakt, kunt u nu de basispagina plakken of de basispagina plakken met de subpagina&#39;s van de structuur.
 
-* [!DNL Adobe Experience Manager Experience Fragments] geëxporteerd naar [!DNL Adobe Target] werkruimten worden nu weergegeven als unieke aanbiedingstypen en bieden bronnen aan in [!DNL Target].
+* [!DNL Adobe Experience Manager Experience Fragments] exported to [!DNL Adobe Target] workspaces now appear as unique offer types and offer sources in [!DNL Target].
 
 * Beheer van meerdere sites - De trigger Publiceren verwijdert nu een component van de gepubliceerde pagina als een component van de bronpagina wordt verwijderd.
 
@@ -162,9 +162,9 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
    ![configuratie voor het wijzigen van e-mailadressen in kleine letters in ACS-reacties van [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
 * Het contrast van tekst en pictogrammen tegen de achtergrond wordt verbeterd voor verschillende functies. Deze implementatie van de richtlijnen van de Web Content Accessibility Guidelines (WCAG) maakt [!DNL Assets] toegankelijker zijn voor gebruikers met een beperkt gezichtsvermogen en een beperkte kleurperceptie. Zie [toegankelijkheidsverbeteringen in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
-* Wanneer u [Functionaliteit van verbonden elementen](/help/assets/use-assets-across-connected-assets-instances.md)kunt u nu een lijst weergeven met alle [!DNL Sites] pagina&#39;s die het element gebruiken. Deze verwijzingen naar een actief zijn beschikbaar in het [!UICONTROL Properties] pagina. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, waardoor ze het bedrijfsmerk beter kunnen bijhouden, beheren en de consistentie van merken kunnen verbeteren (6.5.8.0).
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. Deze verwijzingen naar een actief zijn beschikbaar in het [!UICONTROL Properties] pagina. Op deze manier kunnen beheerders, marketers en bibliothecarissen een volledig overzicht van het gebruik van bedrijfsmiddelen krijgen, waardoor ze het bedrijfsmerk beter kunnen bijhouden, beheren en de consistentie van merken kunnen verbeteren (6.5.8.0).
 
-* Wanneer u een element verwijdert waarnaar in een webpagina wordt verwezen, [!DNL Experience Manager] geeft een waarschuwing weer. U kunt afdwingen dat een element waarnaar wordt verwezen wordt verwijderd, of de referenties controleren en wijzigen die worden weergegeven in het dialoogvenster [!DNL Properties] pagina van het element. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s (6.5.8.0).
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. U kunt afdwingen dat een element waarnaar wordt verwezen wordt verwijderd, of de referenties controleren en wijzigen die worden weergegeven in het dialoogvenster [!DNL Properties] pagina van het element. Als u op de referenties klikt, worden de lokale en externe [!DNL Sites] pagina&#39;s (6.5.8.0).
 
 * [!DNL Assets] en [!DNL Dynamic Media] bieden meerdere toegankelijkheidsverbeteringen. De verbeteringen hebben betrekking op toetsenbordnavigatie, gebruik van schermlezers en vergelijkbare verbeteringen om het gebruik van ondersteunende hulpmiddelen (AT) mogelijk te maken. Zie [[!DNL Assets] verbeteringen](/help/release-notes/sp-release-notes.md#assets-6570) en [[!DNL Dynamic Media] verbeteringen](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
 
@@ -206,11 +206,11 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 
 * Veel gebruikersinterface-elementen, besturingselementen, pagina&#39;s en dialoogvensters zijn schermlezervriendelijk.
 
-* Veel elementen, besturingselementen en invoerformuliervelden van de gebruikersinterface zijn toegankelijk via het toetsenbord.
+* Many user interface elements, controls, and input form fields are accessible using keyboard.
 
-* De kleur en het contrast van bepaalde elementen van de gebruikersinterface worden bijgewerkt, zodat gebruikers met een beperkt gezichtsvermogen of gebruikers zonder kleurperceptie deze elementen van de gebruikersinterface kunnen onderscheiden. De kleur van sterrenclassificatiepictogrammen (bijvoorbeeld in [!UICONTROL Rating] deel van [!UICONTROL Advanced] tab in element [!UICONTROL Properties] of in de kaartweergave) wordt gewijzigd voor het juiste contrast.
+* Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. De kleur van sterrenclassificatiepictogrammen (bijvoorbeeld in [!UICONTROL Rating] deel van [!UICONTROL Advanced] tab in element [!UICONTROL Properties] of in de kaartweergave) wordt gewijzigd voor het juiste contrast.
 
-   ![Classificatiepictogrammen met verbeterd contrast](assets/star-rating-icons.png)
+   ![Rating icons with improved contrast](assets/star-rating-icons.png)
 
 #### Uitgebreide afhandeling van uitzonderingen (6.5.5.0) {#exception-handling}
 
@@ -220,7 +220,7 @@ U kunt nu stijlen selecteren in het dialoogvenster met het verbeterde stijlsyste
 
 Het machtigingskanaal tussen [!DNL Experience Manager Assets] en [!DNL Brand Portal] is gewijzigd. Eerder, [!DNL Brand Portal] werd gevormd in Klassieke UI via de Gateway van de Oudheid OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning. [!DNL Experience Manager Assets] is nu geconfigureerd met [!DNL Brand Portal] doorheen [!DNL Adobe I/O], die een IMS-token aanschaft voor goedkeuring van uw [!DNL Brand Portal] huurder.
 
-De stappen om te vormen [!DNL Experience Manager Assets] with [!DNL Brand Portal] zijn afhankelijk van uw [!DNL Experience Manager] en of u voor het eerst configureert of de bestaande configuraties bijwerkt. Zie [Experience Manager Assets configureren met Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
+The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. Zie [Experience Manager Assets configureren met Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) voor meer informatie.
 
 #### Toegankelijkheidsverbeteringen (6.5.4.0) {#accessibility-enhancements-6540}
 
@@ -303,7 +303,7 @@ Slim uitsnijden voor video - een optionele functie die beschikbaar is in videopr
 
 * **Foutberichten in de browser Eigenschappen**: Foutberichten toegevoegd voor elke eigenschap in de browser Adaptive Forms Properties. Met deze berichten kunt u de toegestane waarden voor een veld beter begrijpen.
 
-* **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-typevariabele**: U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. Met de letterlijke optie kunt u een JSON opgeven in de vorm van een tekenreeks.
+* **Ondersteuning voor het gebruik van de letterlijke optie voor het instellen van de waarde voor een JSON-typevariabele**: U kunt letterlijke optie gebruiken om waarde voor een JSON typevariabele in de vastgestelde veranderlijke stap van een AEM Werkstroom te plaatsen. The literal option allows you to specify a JSON in the form of a string.
 
 * [Updates van Platform](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
    * [!DNL Adobe Acrobat 2020]
@@ -313,7 +313,7 @@ Slim uitsnijden voor video - een optionele functie die beschikbaar is in videopr
    * [!DNL Microsoft Windows Server 2019]
    * [!DNL RHEL8]
 
-* Extra ondersteuning voor `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
+* Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 
 #### Ondersteuning voor [!DNL Azul Zulu OpenJDK] (6.5.9.0) {#support-azul-zulu}
 
@@ -327,7 +327,7 @@ U kunt nu een e-mailbericht naar een groep e-mailadres verzenden met de workflow
 
 U kunt nu een interactieve communicatie ophalen die als concept is opgeslagen nadat u de bron Interactieve communicatie hebt gewijzigd.
 
-#### Aangepaste domeinnaam instellen voor het laden, renderen en valideren van de reCAPTCHA-service (6.5.9.0) {#set-custom-domain-name-recaptcha}
+#### Set custom domain name for loading, rendering, and validating the reCAPTCHA service (6.5.9.0) {#set-custom-domain-name-recaptcha}
 
 reCAPTCHA-service gebruikt `https://www.recaptcha.net/` als het standaarddomein. U kunt nu de instellingen wijzigen die u wilt instellen `https://www.google.com/` of een aangepaste domeinnaam om de reCAPTCHA-service te laden, renderen en te valideren.
 
@@ -416,19 +416,19 @@ U kunt nu [meerdere bestanden bijvoegen](../../help/forms/using/introduction-for
 
 #### De Adobe Experience Manager Inbox-kolommen aanpassen (6.5.5.0) {#customize-aem-inbox-columns}
 
-U kunt een [!DNL Experience Manager] InBox om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven die op de gegevens van een werkstroom worden gebaseerd. Leden van `administrators` of `workflow-administrators` kunt u de kolommen aanpassen. Zie voor meer informatie [Beheerbeheer](../sites-authoring/inbox.md#inbox-admin-control).
+U kunt een [!DNL Experience Manager] InBox om de standaardtitel van een kolom te wijzigen, de positie van een kolom opnieuw te ordenen en extra kolommen weer te geven die op de gegevens van een werkstroom worden gebaseerd. Leden van `administrators` of `workflow-administrators` kunt u de kolommen aanpassen. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
 
-![Kolommen van het Postvak IN van Experience Manager aanpassen](assets/customize-columns.gif)
+![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
 
 #### Interactieve communicatie opslaan als concept (6.5.5.0) {#save-as-draft}
 
-U kunt de Agent UI gebruiken om één of meerdere concepten voor elke Interactieve Mededeling te bewaren en het ontwerp later terug te winnen om aan het verder te werken. U kunt voor elk concept een andere naam opgeven om het te identificeren. Zie voor meer informatie [Interactieve communicatie opslaan als concept](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
+You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. Zie voor meer informatie [Interactieve communicatie opslaan als concept](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
 ![Opslaan als concept](assets/save-as-draft.gif)
 
-#### [!DNL Oracle WebLogic] ondersteuning toepassingsserver (6.5.5.0) {#weblogic-support}
+#### [!DNL Oracle WebLogic] application server support (6.5.5.0) {#weblogic-support}
 
-Adobe Experience Manager Forms heeft ondersteuning toegevoegd voor [!DNL Oracle WebLogic 12] voor Adobe Experience Manager Forms op JEE. U kunt een upgrade uitvoeren vanaf een vorige versie of een nieuwe Experience Manager 6.5 Forms instellen op de JEE-server [!DNL Oracle WebLogic] 12.2.1.4 en hoger. Later komt dit overeen met de kleine versiewijzigingen, waarbij x in 12.2.1.x wordt vervangen door een versienummer.
+Adobe Experience Manager Forms has added support for [!DNL Oracle WebLogic 12] for Adobe Experience Manager Forms on JEE. U kunt een upgrade uitvoeren vanaf een vorige versie of een nieuwe Experience Manager 6.5 Forms instellen op de JEE-server [!DNL Oracle WebLogic] 12.2.1.4 en hoger. Later komt dit overeen met de kleine versiewijzigingen, waarbij x in 12.2.1.x wordt vervangen door een versienummer.
 
 #### Verbeteringen van de toegankelijkheid (6.5.5.0) {#accessibility-improvements}
 
@@ -500,15 +500,15 @@ U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjab
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Toetsreleases sinds [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
+## Toetsreleases sinds [!DNL Adobe Experience Manager] 6,5 SP10{#key-releases-since-last-sp}
 
-Tussen 27 mei 2021 en 26 augustus 2021 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks:
+Tussen 26 augustus 2021 en 25 november 2021 heeft Adobe het volgende uitgebracht, in aanvulling op de servicepacks:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021,6,0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html), [2021,7,0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html), en [2021,8,0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021,9,0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) en [2021 10,0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
 
-* [[!DNL Experience Manager] bureaubladtoepassing 2.1 (2.1.3.3)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] bureaubladtoepassing 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Managers Screens: Feature Pack 202105](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202105.html)
+* [Experience Managers Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
 
 >[!MORELIKETHIS]
 >

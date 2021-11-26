@@ -8,7 +8,7 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: 879e69aa17c7142c2b1e86b72ce23226a7f09a88
+source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
 workflow-type: tm+mt
 source-wordcount: '1055'
 ht-degree: 7%
@@ -98,7 +98,7 @@ ht-degree: 7%
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Erviteitsbeheer zonder hoofd{#headless}
    + [Koploos en AEM](headless/introduction.md)
-   + [Contentfragmenten]{#content-fragments}
+   + Contentfragmenten{#content-fragments}
       + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
       + [Functionaliteit van inhoudsfragment inschakelen voor uw instantie](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-configuration-browser.html)
@@ -110,7 +110,7 @@ ht-degree: 7%
       + [Metagegevens - Fragmenteigenschappen](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-metadata.html)
       + [Boomstructuur](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-structure-tree.html)
       + [Voorvertoning - JSON-representatie](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-json-preview.html)
-   + [Leverings-API]{#delivery-api}
+   + Leverings-API{#delivery-api}
       + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)

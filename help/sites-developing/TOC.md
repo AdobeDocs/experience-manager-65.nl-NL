@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: fccfcc71d61b483273cc3501fbcc411fce5c1424
+source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1080'
 ht-degree: 7%
 
 ---
@@ -98,6 +98,13 @@ ht-degree: 7%
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Erviteitsbeheer zonder hoofd{#headless}
    + [Koploos en AEM](headless/introduction.md)
+   + Aan de slag - hulplijnen {#getting-started}
+      + [Inleiding](headless/getting-started/introduction.md)
+      + [Een configuratie maken](headless/getting-started/create-configuration.md)
+      + [Een inhoudsfragmentmodel maken](headless/getting-started/create-content-model.md)
+      + [Een middelenmap maken](headless/getting-started/create-assets-folder.md)
+      + [Een inhoudsfragment maken](headless/getting-started/create-content-fragment.md)
+      + [Inhoudsfragmenten openen en leveren](headless/getting-started/create-api-request.md)
    + Contentfragmenten{#content-fragments}
       + [Aflevering zonder kop met inhoudsfragmenten en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
       + [Werken met contentfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)

@@ -2,7 +2,7 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor de levering van inhoud zonder kop.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmen
 [Nu u enkele inhoudsfragmenten hebt gemaakt,](create-content-fragment.md) u kunt AEM API&#39;s gebruiken om ze zonder kop te leveren.
 
 * [De GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) staat u toe om verzoeken tot toegang te creëren en inhoudsfragmenten te leveren.
-   * Om dit te gebruiken, moeten de eindpunten in AEM worden bepaald en worden toegelaten, en indien vereist, geïnstalleerde interface GraphiQL.
+   * Om dit te gebruiken, [eindpunten moeten worden gedefinieerd en ingeschakeld in AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [De REST-API voor middelen](/help/assets/assets-api-content-fragments.md) Hiermee kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
 De rest van deze gids zal zich op toegang GraphQL en de levering van het Fragment van de Inhoud concentreren.

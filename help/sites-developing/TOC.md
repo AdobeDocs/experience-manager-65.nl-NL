@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: ba6b910add6770753efeb576d9df1db42d5720b8
+source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 7%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 7%
       + [Widgets gebruiken en uitbreiden (klassieke UI)](widgets.md)
       + [xtypes gebruiken (klassieke UI)](xtypes.md)
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
++ [Hoofdletters en headless in AEM](headful-headless.md)
 + Erviteitsbeheer zonder hoofd{#headless}
    + [Koploos en AEM](headless/introduction.md)
    + Aan de slag - hulplijnen {#getting-started}

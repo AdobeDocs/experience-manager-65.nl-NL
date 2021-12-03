@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Expe
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 35260325b583bd047f22ffa88afb9469b2023e60
+source-git-commit: c7fdfeae785ad044437d065a8da6bdcbaf00d4c4
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3613'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Gegevens vrijgeven {#release-information}
 
-| Producten | [!DNL Adobe Experience Manager] 6.5 |
+| Producten | [!DNL Adobe Experience Manager] 6,5 |
 | -------- | ---------------------------- |
 | Versie | 6.5.11.0. |
 | Type | Service Pack-release |
@@ -91,17 +91,17 @@ De volgende problemen zijn opgelost in [!DNL Sites]:
 
 * Automatisch aanvullen werkt niet in [!UICONTROL Content Fragment Model] zoekfacet (SITES-1976).
 
-* If a content fragment contains a huge hierarchy of nested fragments, the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
+* Als een inhoudsfragment een reusachtige hiërarchie van geneste fragmenten bevat, [!UICONTROL Content Fragment Editor] reageert niet meer wanneer het zijpaneel wordt geladen (SITES-1974).
 
 * Het algemene zoeken in de fragmentkiezer werkt niet (SITES-1973).
 
-* References are updating when moving a content fragment (SITES-1897).
+* Referenties worden bijgewerkt tijdens het verplaatsen van een inhoudsfragment (SITES-1897).
 
 * De optie om een pagina te maken ontbreekt in de Kaart- en Kolomweergave (NPR-37549).
 
 * Wanneer u de volgorde van componenten op een startpagina wijzigt, blijft bij het promoten van de Launch de volgorde van componenten niet behouden (NPR-37539).
 
-* The option to select all the items in a list is not working on the rollout page (NPR-37443).
+* De optie om alle items in een lijst te selecteren werkt niet op de rollout-pagina (NPR-37443).
 
 * Als u meerdere pagina&#39;s wilt activeren, wordt een nieuwe JCR-sessie geopend voor `wcm-workflow-service` gebruiker (NPR-37417).
 
@@ -161,7 +161,7 @@ De volgende problemen zijn opgelost in [!DNL Assets]:
 
 * Wanneer u een live kopie van de blauwdruk met een geneste mapstructuur maakt, worden de gewijzigde eigenschappen van de bronmap niet bijgewerkt in de map met live kopieën (NPR-37449).
 
-* When selecting multiple assets and modifying the metadata field values, saving the assets does not retain the values. De wijzigingen in metagegevens worden ook niet toegepast (NPR-37341).
+* Wanneer u meerdere elementen selecteert en de waarden van de metagegevensvelden wijzigt, worden de waarden niet behouden wanneer u de elementen opslaat. De wijzigingen in metagegevens worden ook niet toegepast (NPR-37341).
 
 * Wanneer u meerdere elementen selecteert en de eigenschappen wijzigt, worden de waarden van de aangepaste eigenschappen (dropdowns) overschreven door de standaardwaarden (NPR-36437).
 
@@ -210,22 +210,22 @@ De volgende opgeloste problemen zijn beschikbaar in [!DNL Dynamic Media]:
 
 * Toegang tot de pagina Videoprofielen mislukt als voor de hoofdmap van het videoprofiel van de gebruiker aangepaste toegangsregels zijn gedefinieerd voor het hoofdknooppunt van videoprofielen (CQ-4332941).
 
-* In a zoomable image, using the shortcut keys (&#39;+&#39;, &#39;-&#39;) or &#39;Esc&#39; key traps the screen readers focus (CQ-4290719).
+* In een zoombare afbeelding wordt met de sneltoetsen (&#39;+&#39;, &#39;-&#39;) of &#39;Esc&#39; de focus van de schermlezers geplaatst (CQ-4290719).
 
 * Wanneer een gebruiker op de sneltoets voor de formuliermodus (&#39;F&#39;) klikt, wijst de schermlezer het label van het dialoogvenster [!UICONTROL Embed Size] de menuknop beschikbaar in [!UICONTROL Get Embed] codeselectie (CQ-4290929).
 
 * Als u via toetsenbordnavigatie het pop-upvenster met de e-mailkoppeling opent, zijn de foutsuggesties in de gebruikersinterface voor de velden Aan en Van niet beschrijvend (CQ-4290930).
 
-* When navigating to the email link dialog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key (&#39;F&#39;) (CQ-4290934).
+* Wanneer u naar het dialoogvenster E-mailkoppeling navigeert, haalt de schermlezer de informatie over de labels voor de toegevoegde bewerkingsvelden niet over met de sneltoets Pijl-omlaag en Formuliermodus (&#39;F&#39;) (CQ-4290934).
 
 * Wanneer u naar het dialoogvenster E-mailkoppeling navigeert, geeft de schermlezer niet het visuele sterretje (*) weer voor de verplichte velden &#39;Aan&#39; en &#39;Van&#39; (CQ-4290935).
 
-* The users are not able to identify the landmark and region using the shortcut keys (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
+* De gebruikers kunnen het landmerk en de regio niet identificeren met behulp van de sneltoetsen (&#39;D&#39;, &#39;R&#39;) (CQ-4312118).
 
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
 -->
 
-### Commerce {#commerce-65110}
+### Handel {#commerce-65110}
 
 * Wanneer u de [!UICONTROL Publish Later] -optie, komt de gebruikersinterface niet overeen met de status [!UICONTROL Publication Pending] (CQ-4334229).
 
@@ -247,7 +247,7 @@ De volgende opgeloste problemen zijn beschikbaar in [!DNL Dynamic Media]:
 
 ### Gebruikersinterface {#user-interface-65110}
 
-* The folder icon representing the model is incorrect (NPR-37176).
+* Het mappictogram dat het model vertegenwoordigt, is onjuist (NPR-37176).
 
 * Wanneer een gebruiker een onderzoek uitvoert of gebruikend browser van het weggebied doorbladert, worden de onjuiste knopen getoond (NPR-37175).
 
@@ -320,91 +320,58 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >* [!DNL Experience Manager Forms] geeft toe:voegen-on pakketten één week na gepland vrij [!DNL Experience Manager] Releasedatum van Service Pack.
 
 
-<!--
+**Adaptieve Forms**
 
-[!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
+* Toegankelijkheid - Wanneer u de instelling `Wizard` De navigatieknoppen hebben geen Arialabels en rol (NPR-37613) en hebben een adaptieve lay-out voor een deelvenster.
 
-* When you install [!DNL AEM 6.5 Forms], the following third-party libraries are installed automatically (CQDOC-18373):
-  * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
-  * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
+* Validaties op een datumveld in een adaptieve vorm werken niet zoals verwacht (NPR-37556).
 
-**Adaptive Forms**
+* Wanneer de labeltekst voor de componenten Selectievakje en Keuzerondje lang is, past de tekst niet correct (NPR-37294).
 
-* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+* Wanneer u opmaakwijzigingen toepast op het bericht Bedankt van de AEM Forms Container-component, worden de wijzigingen niet herhaald in het bronadaptieve formulier (NPR-37284).
 
-* When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
+* Verschillen in de waarde van de `Switch` op de gebruikersinterface en in de achterkant (NPR-37268).
 
-   ```TXT
-   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
-   at openButtonClickHandler (clientlibs.js:245)
-   at HTMLButtonElement.onclick (clientlibs.js:258)
+* Wanneer u de toetsenbordtoetsen gebruikt om naar de `Submit` en drukt u op `Enter` , kunt u het adaptieve formulier meerdere keren verzenden (CQ-4333993).
 
-   ```
+* De verwijderbewerking voor de component Bestandsbijlage werkt niet zoals verwacht (NPR-37376).
 
-* Performance issues after installing [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
-
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue (CQ-4325361).
-
-**Correspondence Management**
-
-* Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).
-
-* When you are editing a text document fragment, the new words display as HTML tags after saving the fragment (NPR-36837).
-
-* Unable to view the letters that are saved as drafts (NPR-36816).
-
-* When you edit a text document fragment and then preview the letter, AEM Forms displays the expression language in the HTML letter preview (CQ-4322331).
-
-* Issues while rendering data with a self-service letter template (NPR-37161).
-
-
-**Interactive Communications**
-
-* A tab character duplicates between two words each time you print preview an Interactive Communication after editing a text document fragment (NPR-37021).
-
-* [!DNL AEM Forms] displays an error when you save a text document fragment that exceeds the maximum size limit (NPR-36874).
-
-* When you add an image to an Interactive Communication, an additional empty block displays after the image (NPR-36659).
-
-* When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
-* When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
-
-* Indentation issues for bullets in the text editor (NPR-36513).
-
-**Designer**
-
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
+* Wanneer een label voor een veld meer dan 1000 tekens bevat in een adaptieve vorm die in verschillende talen wordt vertaald, haalt het woordenboek de vertaling van het label niet op (CQ-4329290).
 
 **Document Services**
 
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
+* Er wordt een fout weergegeven bij het gebruik van de Assembler-service (NPR-37606):
 
    ```TXT
-   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
+     500 Internal Server Error
    ```
 
-**Forms Workflow**
+* Wanneer de documentbijlagen worden doorgegeven aan de Assembler-service, wordt de volgende uitzondering weergegeven (NPR-37582):
 
-* Unable to submit a form to a Workbench process after upgrading to AEM Forms Service Pack 8 (CQ-4325846).
+   ```TXT
+     com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
+   ```
+
+* Ontbrekende haakjes sluiten van gegevens na het omzetten van een PDF-document in een PDF-A/1B-PDF (NPR-37608).
 
 **HTML5 Forms**
 
-* When you set the value for the `mfAllowAttachments` property as `True` in the CRX DE repository, the `dataXml` gets corrupted on submitting the HTML5 form (NPR-37035).
+* Wanneer u AEM 6.5.10.0 installeert, werkt de voorvertoning van de HTML voor een XDP-formulier niet (NPR-37503, CQ-4331926).
 
-* When you render an XDP as HTML using `dataXml`, [!DNL AEM Forms] displays a `Page Unresponsive` error (NPR-36631).
+* Tekst die problemen overlapt terwijl het migreren van de PDF forms naar HTML 5 vormen in diverse talen (NPR-37173).
 
-### Commerce {#commerce-65110}
+**Letters**
 
-* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
-* When you recreate a deleted product, the product page is not recreated (NPR-36665).
-* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
-* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
+* Wanneer u een letter verzendt en deze opnieuw opent in de weergave HTML, blijft de positie van tekstdocumentfragmenten niet ongewijzigd (NPR-37307).
 
--->
+**Forms Workflow**
+
+* In het geval van een ingesloten containerworkflow ontvangt u meerdere e-mails over het voltooien van de workflow, zelfs nadat u de optie `Notify on Complete of Container Workflow` (NPR-37280).
+
+**Foundation JEE**
+
+* Na de installatie van AEM 6.5 Forms Service Pack 9 zijn de URL&#39;s van de CRX-opslagplaats niet meer beschikbaar (NPR-37592).
+
 
 Voor informatie over beveiligingsupdates raadpleegt u [[!DNL Experience Manager] beveiligingspagina met opsommingstekens](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -438,25 +405,25 @@ Om het de dienstpak op een [!DNL Adobe Experience Manager] 6.5-instantie voert u
 
 >[!NOTE]
 >
->De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het de dienstpak. Adobe raadt aan dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Typically, this issue occurs in [!DNL Safari] browser but can intermittently occur on any browser.
+>De dialoog over de Manager UI van het Pakket bestaat soms tijdens de installatie van het de dienstpak. Adobe raadt aan dat u op foutenlogboeken wacht om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Dit probleem treedt meestal op in [!DNL Safari] browser, maar kan soms voorkomen op om het even welke browser.
 
-**Automatic installation**
+**Automatische installatie**
 
 Er zijn twee manieren om automatisch te installeren [!DNL Experience Manager] 6.5.11.0 op een werkexemplaar:
 
 A. Plaats het pakket in `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 
-B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
+B. Gebruik de [HTTP-API van Package Manager](/help/sites-administering/package-manager.md#package-share). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.11.0 does not support Bootstrap installation.
+>Adobe Experience Manager 6.5.11.0 biedt geen ondersteuning voor Bootstrap-installatie.
 
-**Validate the installation**
+**De installatie valideren**
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.11.0)` under [!UICONTROL Installed Products].
+1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (6.5.11.0)` krachtens [!UICONTROL Installed Products].
 
-1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
+1. Alle OSGi-bundels zijn **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Gebruik: `/system/console/bundles`).
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.2.2.3 of hoger (Webconsole gebruiken: `/system/console/bundles`).
 
@@ -509,7 +476,7 @@ Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/hel
 
 >[!NOTE]
 >
->UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van de Adobe Openbare Maven bewaarplaats (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
+>UberJar en de andere verwante artefacten zijn beschikbaar op de Centrale Bewaarplaats van de Adobe Openbare Maven bewaarplaats (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` tag.
 
 ## Verouderde functies {#removed-deprecated-features}
 

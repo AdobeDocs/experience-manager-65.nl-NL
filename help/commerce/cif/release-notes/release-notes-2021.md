@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 7261a71769dfb968c768e0cb4835d7d4cca97b1a
+source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1311'
 ht-degree: 7%
 
 ---
@@ -15,19 +15,29 @@ ht-degree: 7%
 
 Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
 
-**Met de versie van April hebben wij de Schakelaar CIF van GitHub met CIF toe:voegen-on vervangen** die beschikbaar zijn op de [Adobe-softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). De omschakeling aan toe:voegen-op komt met grote voordelen voor projecten:
-
-* De meeste nieuwe functies zijn direct beschikbaar op AEM 6.5 (niet meer wachtend op zijpoort met functies)
-* Eenvoudig upgradebaar naar nieuwe invoegversies
-* Gereed voor Cloud Service
-
-De oude AEM CIF-connector gaat naar de onderhoudsmodus en mag niet meer worden gebruikt. Vervang de CIF-connector door de nieuwe CIF-invoegtoepassing. Voor de meeste projecten moet eenvoudig een pakketvervanging mogelijk zijn.
-
 | Component | Systeemvereisten |
 |:-------|:-----:|
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: november 2021
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2021 11 18 00 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| CIF Core-componenten | 2.4.2. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
+| CIF Venia Reference Site | 2021 12 01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+
+### Wat is er nieuw? {#what-is-new-november}
+
+* Uitgebreide myAccount componenten die op de verlengbare Peregrine componenten van de Handel gebaseerd zijn
+
+![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
+
+* Auteurs kunnen ad-hoc Product Recommendations van de Handel tot stand brengen gebruikend extra advisetypes
+
+* Ondersteuning voor cadeaukaarten in AEM Storefront
 
 ## Releasedatum: oktober 2021
 

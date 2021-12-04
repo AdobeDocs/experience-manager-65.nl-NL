@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: null
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 1b853936760daf7ee8d16ba926e612dadec40788
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Bij het aanmaken van accounts verschaft Adobe Dynamic Media automatisch de toege
 
 Op de pagina Dynamic Media Publish Setup (Publicatie-instellingen) worden standaardinstellingen vastgelegd die bepalen hoe elementen worden geleverd vanaf Adobe Dynamic Media-servers naar websites of toepassingen. Als er geen instelling is opgegeven, levert de Adobe Dynamic Media-server een element op basis van een standaardinstelling die is geconfigureerd op de Dynamic Media Publish Setup-pagina.
 
-Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr meer optionele configuratietaken.
+Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen en configureren](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) voor meer optionele configuratietaken.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Opmerkingen bij de release voor [!DNL Adobe Experience Manager] 6.5
 contentOwner: AK
 mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
-source-git-commit: 45673270ec839377f941860c098f965f7b35c59e
+source-git-commit: 80f4e8c857fe9e0dfe344042fc1db81dde721e18
 workflow-type: tm+mt
-source-wordcount: '26016'
+source-wordcount: '26073'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Ado
 * **Verbeterd [!DNL Content Fragment] Modellen en Editor**: U kunt nu complexe en aangepaste modellen voor gestructureerde inhoud maken met behulp van geneste [!DNL Content Fragment] modellen. Inhoudsstructuren worden gemoduleerd in basiselementen die zijn gemodelleerd als subfragmenten. Fragmenten op een hoger niveau verwijzen naar deze subfragmenten. Meer functies voor gegevenstypen, zoals geavanceerde validatieregels, verbeteren de flexibiliteit van contentmodellering nog meer door [!DNL Content Fragments]. De [!DNL Experience Manager] [!DNL Content Fragment] de redacteur steunt genestelde fragmentstructuren in een gemeenschappelijke redacteurszitting, met verhogingen zoals de mening van de boomstructuur en van labels voorzien broodkruimelnavigatie door fragmenthiërarchieën.
 
 * **GraphQL API voor[!DNL Content Fragments]**: De nieuwe GraphQL API is de standaardmethode om gestructureerde inhoud in formaat te leveren JSON. Met GraphQL-query&#39;s kunnen clients alleen de relevante inhoudsitems aanvragen om een ervaring weer te geven. Een dergelijke selectie voorkomt overlevering van inhoud (mogelijkheid met HTTP REST API&#39;s) waarvoor inhoud moet worden geparseerd op de client. GraphQL-schema&#39;s zijn afgeleid van [!DNL Content Fragment] modellen en API-reacties worden gemaakt in JSON-indeling. In [!DNL Experience Manager] als [!DNL Cloud Service], [GraphQL-query&#39;s blijven bestaan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/graphql-api-content-fragments.html#persisted-queries-caching) en verzoeken om cachevriendelijke GET verwerken. Het is nog niet mogelijk in [!DNL Experience Manager] 6.5.10.0.
+
+* **GraphQL API voor[!DNL Content Fragments]**: Om GraphQL API te ondersteunen, zijn afbreekstreepjes niet meer toegestaan in het veld Eigenschap inhoudsfragmentmodel. GraphQL-query&#39;s kunnen ongewenste resultaten opleveren als een afbreekstreepje voorkomt in namen van eigenschappen van het Content Fragment Model.
+Alleen de volgende tekens zijn toegestaan voor de naam van de eigenschap: A-Za-z0-9_. Een cijfer kan niet op de eerste positie staan.
 
 * **Hiërarchiebeheer en voorvertoning in de toekomst**: Gebruikers hebben nu een interface voor toegang tot de inhoudstructuren van hun [!DNL Experience Manager] wordt gestart, inclusief de mogelijkheid om pagina&#39;s toe te voegen en te verwijderen bij het starten. Deze functie verbetert de flexibiliteit van [!DNL Experience Manager] wordt gestart bij de versie van de auteursinhoud die is bedoeld voor toekomstig publiceren. [Time-warp, functie](/help/sites-authoring/working-with-page-versions.md#timewarp) Hiermee kunnen gebruikers voorvertoningen starten als toekomstige inhoudsstaten.
 

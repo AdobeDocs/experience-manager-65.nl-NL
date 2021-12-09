@@ -1,15 +1,15 @@
 ---
 title: Toegankelijkheid in Dynamic Media
-description: Meer informatie over toegankelijkheidsondersteuning in Dynamic Media en Dynamic Media Viewers
+description: Meer informatie over toegankelijkheidsondersteuning in Dynamic Media en Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
-feature: Toegankelijkheid
+feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 471f9e99078a1e0af60024d439afd42ae77cba8c
+source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -20,22 +20,22 @@ ht-degree: 0%
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in [!DNL Dynamic Media]
 
-Aangezien [!DNL Dynamic Media] een insteekmodule is naar [!DNL Adobe Experience Manager Assets], is het meeste gedrag voor toetsenbordbesturing hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft bijvoorbeeld dezelfde focusmarkering als in [!DNL Experience Manager Assets] en reageert op de `Spacebar` toets als in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in Elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Omdat [!DNL Dynamic Media] is een insteekmodule voor [!DNL Adobe Experience Manager Assets], is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft dezelfde focusmarkering als in [!DNL Experience Manager Assets]en reageert op de `Spacebar` key as in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Toetsen die door afzonderlijke elementen van de gebruikersinterface in [!DNL Dynamic Media] worden ondersteund, zijn duidelijk en gemakkelijk te vinden. Het besturingselement Keyboard in [!DNL Dynamic Media] gaat over het volgende:
+Toetsen die door afzonderlijke gebruikersinterface-elementen worden ondersteund in [!DNL Dynamic Media] duidelijk en gemakkelijk te ontdekken zijn. Toetsenbordbesturing in [!DNL Dynamic Media] gaat over het volgende:
 
-* Mogelijkheid om met de toetsen `Tab` en `Shift+Tab` te navigeren tussen interactieve elementen op de pagina.
-Wanneer u `Tab` gebruikt, wordt de invoerfocus naar het volgende interface-element in de tabvolgorde verplaatst. wanneer u `Shift+Tab` gebruikt, krijgt het vorige gebruikersinterface-element weer focus.
-Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` drukken om de focus naar het veld te verplaatsen.
-* Mogelijkheid om de `Spacebar` en `Enter` sleutel te gebruiken om standaardelementen van de gebruikersinterface, zoals knopen en drop-down lijsten te activeren.
+* Gebruiksmogelijkheden `Tab` en `Shift+Tab` toetsaanslagen om te navigeren tussen interactieve elementen op de pagina.
+Gebruiken `Tab` gaat de invoerfocus naar het volgende interface-element in de tabvolgorde; gebruiken `Shift+Tab` Hiermee wordt invoerfocus teruggezet naar het vorige gebruikersinterface-element.
+Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` om de focus naar de afbeelding te verplaatsen.
+* De mogelijkheid om de `Spacebar` en `Enter` toets voor het activeren van standaardelementen van de gebruikersinterface, zoals knoppen en vervolgkeuzelijsten.
 * Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het element van de gebruikersinterface dat inputnadruk heeft ontvangt een visuele nadrukaanwijzing als grens die rond het gebruikersinterface element wordt teruggegeven.
 * In de Hotspot-editor kunt u bepaalde aangepaste toetsaanslagen gebruiken, zoals pijltoetsen, om te communiceren met complexe gebruikersinterface-elementen om hotspots te verplaatsen.
-* In de Interactieve Video redacteur, kunt u `Spacebar` gebruiken om een beeld te selecteren en het toe te voegen aan een segment. Bovendien kunt u de `Backspace` sleutel gebruiken om het geselecteerde punt van **[!UICONTROL Content]** tabel te schrappen. Als u `Tab` ingedrukt houdt, kunt u ook naar wens navigeren tussen interactieve elementen op de pagina.
+* In de Interactieve Video-editor kunt u de opdracht `Spacebar` om een afbeelding te selecteren en toe te voegen aan een segment. Daarnaast kunt u de opdracht `Backspace` toets om het geselecteerde item uit het menu **[!UICONTROL Content]** tab. Ook, drukken `Tab` functioneert naar wens om te navigeren tussen interactieve elementen op de pagina.
 * In de redacteur van het Gewas van het Beeld/van het Slim Gewas, kunt u het volgende doen:
    * Gebruik de pijltoetsen om de framegrootte bij te snijden, of om de positie van de afbeelding te wijzigen, of beide.
-   * Bij de eerste `Tab`-stop wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
-   * De volgende vier `Tab` einden zijn de vier hoeken van het kader. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
-Zie [De slimme uitsnijding of het slimme staal van één afbeelding bewerken](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+   * De eerste `Tab` Met Stoppen wordt het gehele afbeeldingskader gemarkeerd. Vervolgens kunt u het kader verplaatsen met de pijltoetsen op het toetsenbord.
+   * De volgende vier `Tab` stops zijn de vier hoeken van het frame. Wanneer de focus op een kaderhoek wordt geplaatst, wordt de hoek gemarkeerd. U kunt ook de pijltoetsen op het toetsenbord gebruiken om de gefocuste hoek te verplaatsen.
+Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
@@ -45,20 +45,26 @@ Zie [De slimme uitsnijding of het slimme staal van één afbeelding bewerken](/h
 
 <!-- I would not get into much of details of specific keyboard support logic of these editors. One of the reasons - chances are that accessibility support will receive Phase2-like attention, with more holistic approach. -->
 
-## Support voor hulpprogramma&#39;s in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
+## Technische ondersteuning in [!DNL Dynamic Media] {#assistive-technology-support-for-dm}
 
-[!DNL Dynamic Media] gebruikersinterface-elementen werken met ondersteunende hulpmiddelen, zoals schermlezers. De code herkent bijvoorbeeld markeringen op een pagina wanneer u door landmarkeringen navigeert met de sneltoets `D` of gebieden met de sneltoets `R`. De koptekst wordt ook van commentaar voorzien wanneer u navigeert met de sneltoets `H`.
+[!DNL Dynamic Media] gebruikersinterface-elementen werken met ondersteunende hulpmiddelen, zoals schermlezers. De code herkent bijvoorbeeld markeringen op een pagina wanneer u door markeringen met een sneltoets navigeert `D` of gebieden met sneltoetsen `R`. De kop wordt ook van commentaar voorzien wanneer u navigeert met de sneltoets voor koppen `H`.
 
-## Ondersteuning voor toetsenbordtoegankelijkheid in [!DNL Dynamic Media]-viewers {#keyboard-accessibility-for-dm-viewers}
+## Ondersteuning voor toetsenbordtoegankelijkheid in [!DNL Dynamic Media] viewers {#keyboard-accessibility-for-dm-viewers}
 
-Alle offline [!DNL Dynamic Media] viewercomponenten ondersteunen toetsenbordtoegankelijkheid voor uw klanten.
+Alles buiten de box [!DNL Dynamic Media] de componenten van kijkers steunen toetsenbordtoegankelijkheid voor uw klanten.
 
-Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de handleiding Referentie voor Dynamic Media-viewers.
+Zie [Toetsenbordtoegankelijkheid en -navigatie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) in de Dynamic Media Viewers Reference Guide.
 
-## Support voor hulpprogramma&#39;s in [!DNL Dynamic Media]-viewers {#assistive-technology-support-for-dm-viewers}
+## Technische ondersteuning in [!DNL Dynamic Media] viewers {#assistive-technology-support-for-dm-viewers}
 
-Alle [!DNL Dynamic Media] viewercomponenten ondersteunen de rollen en kenmerken van ARIA (Accessible Rich Internet Applications) om de integratie met ondersteunende hulpmiddelen, zoals schermlezers, te verbeteren.
-Zie het **Technische ondersteuning** Help-onderwerp in een aangepast vieweronderwerp in de handleiding voor Dynamic Media-viewers. Zie bijvoorbeeld [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer of [Ondersteuning van hulpprogramma&#39;s](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) voor de Interactieve beeldviewer.
+Alles [!DNL Dynamic Media] de kijkerscomponenten steunen de (Toegankelijke Rijke Toepassingen van Internet) rollen en attributen van ARIA om integratie met ondersteunende technologieën zoals het schermlezers te verbeteren.
+Zie de **Technische ondersteuning** Help-onderwerp in elk aangepast vieweronderwerp in de Dynamic Media Viewers Reference Guide. Zie bijvoorbeeld [Technische ondersteuning](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) voor de videoviewer, of [Technische ondersteuning](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) voor de Interactieve kijker van het Beeld.
+
+## Ondersteuning voor Closed Caption in Dynamic Media {#closed-caption-support}
+
+Dynamic Media ondersteunt de levering van video&#39;s en adaptieve videosets met ondertiteling. De bijschriften moeten vóór de video-inhoud worden weergegeven.
+
+Zie [Video in Dynamic Media - Gesloten bijschriften of ondertitels toevoegen aan video](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

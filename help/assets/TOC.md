@@ -6,7 +6,7 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: a98ee0c090c299bc86bf027f69b2e191b716707a
+source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 14%
@@ -42,10 +42,10 @@ ht-degree: 14%
    + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
    + [Optioneel - Dynamic Media configureren - Scene7-modus, algemene instellingen](dm-general-settings.md)
    + [Optioneel - Dynamic Media configureren - Scene7-modus, Publicatie-instelling](dm-publish-settings.md)
-   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
    + [Problemen met Dynamic Media oplossen - Scene7-modus](troubleshoot-dms7.md)
-   + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)
+   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
    + [Migreren van Dynamic Media naar hybride modus naar Dynamic Media - S7-modus](migrate-from-hybrid-to-dms7.md)
+   + [Toegankelijkheid in Dynamic Media](accessibility-dm.md)
    + [Dynamic Media-middelen beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen Dynamic Media Viewer beheren](managing-viewer-presets.md)

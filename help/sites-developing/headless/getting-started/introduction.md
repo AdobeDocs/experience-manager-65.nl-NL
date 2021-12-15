@@ -2,9 +2,9 @@
 title: Aan de slag met koppen
 description: Met deze snelle startgids, leer de grondbeginselen van AEM 6.5 krachtige headless mogelijkheden zoals de Modellen van de Inhoud, de Fragments van de Inhoud, en GraphQL API.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 03285545d8cc04d97513fb5fee3b3c616551ccdc
+source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,8 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 >[!TIP]
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
-
-<!-- HM-Links
 >
->If you are new to either AEM or headless, please refer to our [Headless Documentation Journeys](/help/journey-headless/home.md) for an end-to-end introduction to both headless and how AEM supports it.
--->
+>Als u niet bekend bent met AEM of zonder kop, raadpleegt u onze [Documentatiereizen zonder kop](/help/journey-headless/home.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
 
 ## Publiek {#audience}
 

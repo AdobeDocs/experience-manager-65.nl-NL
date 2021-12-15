@@ -1,14 +1,14 @@
 ---
 title: Ondersteunde bestandsindelingen en MIME-typen
-description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] and [!DNL Dynamic Media] en de functies die voor elke indeling worden ondersteund.
+description: Bestandsindelingen en MIME-typen die worden ondersteund door [!DNL Assets] en [!DNL Dynamic Media] en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 12a8b26a402ce68ee8f61e1035b7f44531cd2825
+source-git-commit: eb7051582a51d983851c876025770668b258bff5
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1558'
 ht-degree: 2%
 
 ---
@@ -215,10 +215,12 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | - |
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+
+‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
 
 ## Ondersteunde archiefindelingen {#supported-archive-formats}
 

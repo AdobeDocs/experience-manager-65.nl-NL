@@ -1,9 +1,9 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM CMS-documentatie zonder kop. Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
@@ -65,12 +65,8 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 | 5 | [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](access-your-content.md) | Leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben. |
 | 6 | [Inhoud bijwerken via AEM Assets API&#39;s](update-your-content.md) | Leer hoe u REST API kunt gebruiken om de inhoud van Content Fragments te openen en bij te werken. |
 | 7 | [Alles bij elkaar zetten - uw app en uw inhoud in AEM headless](put-it-all-together.md) | Leer hoe u uw AEM Project neemt en voorbereidt voor live gaan met de AEM Headless SDK. |
-| 8 | [Optioneel - Hoe kunt u toepassingen voor één pagina maken (SPA) met AEM](create-spa.md) | Als u AEM functies zonder kop begrijpt, kunt u experimenteren met een combinatie van een krachtige en koploze levering en leren hoe u bewerkbare SPA kunt maken met AEM SPA Editor-framework. |
-
-<!-- HM-Links
-|8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
-|9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
--->
+| 8 | [Live gaan met uw toepassing zonder kop](go-live.md) | Leer hoe u de toepassing live kunt implementeren en uw lokale code in Git kunt plaatsen en deze kunt verplaatsen naar Cloud Manager Git voor CI/CD-pijplijn. |
+| 9 | [Optioneel - Hoe kunt u toepassingen voor één pagina maken (SPA) met AEM](create-spa.md) | Als u AEM functies zonder kop begrijpt, kunt u experimenteren met een combinatie van een krachtige en koploze levering en leren hoe u bewerkbare SPA kunt maken met AEM SPA Editor-framework. |
 
 ## Volgende functies {#what-is-next}
 

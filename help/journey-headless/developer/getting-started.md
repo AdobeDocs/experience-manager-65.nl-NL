@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met AEM headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 0%
@@ -273,11 +273,6 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Pad 
 ## Aanvullende bronnen {#additional-resources}
 
 Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder kop te gaan door het document te bekijken [Pad naar uw eerste ervaring met AEM headless,](path-to-first-experience.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
-
-<!-- HM-Links
-* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
-* [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
--->
 
 * [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.

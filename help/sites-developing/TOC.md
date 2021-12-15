@@ -8,10 +8,10 @@ breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+source-git-commit: b924dc186497b6dfa4c2d2bb675f5029f8fc3617
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 7%
+source-wordcount: '1299'
+ht-degree: 5%
 
 ---
 
@@ -99,6 +99,23 @@ ht-degree: 7%
 + [Hoofdletters en headless in AEM](headful-headless.md)
 + Erviteitsbeheer zonder hoofd{#headless}
    + [Koploos en AEM](headless/introduction.md)
+   + Reizen zonder hoofd {#journeys}
+      + Headless Developer Journey {#developer}
+         + [Doorschijnend begrijpen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+         + [Meer informatie over CMS Headless Development](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
+         + [Aan de slag met AEM headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
+         + [Pad naar uw eerste ervaring met AEM zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
+         + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
+         + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+         + [Inhoud bijwerken via AEM Assets API&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+         + [Hoe kan ik het allemaal samenbrengen?](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
+         + [Live gaan met uw toepassing zonder kop](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+         + [Optioneel - Hoe kunt u toepassingen van één pagina maken met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+      + Reis voor architect zonder hoofdinhoud {#architect}
+         + [Reis van architect zonder hoofdinhoud AEM overzicht](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+         + [Content Modeling for Headless with AEM - Een introductie](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+         + [Leer de basisbeginselen van de Content Modeling voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+         + [Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
    + Aan de slag - hulplijnen {#getting-started}
       + [Inleiding](headless/getting-started/introduction.md)
       + [Een configuratie maken](headless/getting-started/create-configuration.md)

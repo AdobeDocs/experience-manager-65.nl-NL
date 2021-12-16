@@ -3,10 +3,11 @@ title: Contentfragmenten beheren
 description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 25c91a85-06ff-4666-a809-46778a689e25
+source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1727'
+ht-degree: 7%
 
 ---
 
@@ -14,11 +15,11 @@ ht-degree: 0%
 
 Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragmenten, de basis van uw inhoud zonder kop, te beheren.
 
-Nadat u de [Content Fragment Models](#creating-a-content-model) hebt gedefinieerd, kunt u deze gebruiken om uw Content Fragments](#creating-a-content-fragment) te maken.[
+Na het definiëren van uw [Modellen van inhoudsfragmenten](#creating-a-content-model) U kunt deze [Inhoudsfragmenten maken](#creating-a-content-fragment).
 
-De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt verschillende [modi](#modes-in-the-content-fragment-editor) om u in staat te stellen:
+De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt diverse [modi](#modes-in-the-content-fragment-editor) om u in staat te stellen:
 
-* [De ](#editing-the-content-of-your-fragment) inhoud bewerken en Variaties  [beheren](#creating-and-managing-variations-within-your-fragment)
+* [De inhoud bewerken](#editing-the-content-of-your-fragment) en [Variaties beheren](#creating-and-managing-variations-within-your-fragment)
 * [Uw fragment notities aanbrengen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Inhoud koppelen aan uw fragment](#associating-content-with-your-fragment)
 * [De metagegevens configureren](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -30,19 +31,19 @@ De [Inhoudsfragmenteditor](#opening-the-fragment-editor) biedt verschillende [mo
 >
 >Inhoudsfragmenten kunnen worden gebruikt:
 >
->* bij het ontwerpen van pagina&#39;s; zie [Pagina-authoring met inhoudfragmenten](/help/sites-authoring/content-fragments.md).
->* voor [Koploze inhoudslevering met behulp van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>* bij het ontwerpen van pagina&#39;s; zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
+>* for [Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden opgeslagen als **Elementen**, zodat ze primair worden beheerd vanuit de **Assets**-console.
+>Inhoudsfragmenten worden opgeslagen als **Activa**, en dus in de eerste plaats vanuit de **Activa** console.
 
 ## Inhoudsfragmenten maken {#creating-content-fragments}
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
-[U kunt ](/help/assets/content-fragments/content-fragments-models.md) contentfragmentmodellen inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
+[Inhoudsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) kunnen worden ingeschakeld en gemaakt voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
 ### Een inhoudsfragment maken {#creating-a-content-fragment}
 
@@ -52,11 +53,11 @@ De methode voor het maken van een inhoudsfragment is:
 1. Selecteer **Maken** en vervolgens **Inhoudsfragment** om de wizard te openen.
 1. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
-   * [Model](/help/assets/content-fragments/content-fragments-models.md)  - gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het  **** Adventuremodel
+   * [Model](/help/assets/content-fragments/content-fragments-models.md) - wordt gebruikt om een fragment te maken waarvoor gestructureerde inhoud nodig is; bijvoorbeeld **Adventure** model
 
       * Alle beschikbare modellen worden weergegeven.
 
-   Na selectie gebruikt u **Volgende** om door te gaan.
+   Na selectie kunt u **Volgende** om verder te gaan.
 
    ![fragmentbasis](assets/cfm-managing-01.png)
 
@@ -85,11 +86,11 @@ De methode voor het maken van een inhoudsfragment is:
 1. Selecteer **Maken** om de actie te voltooien en **open** vervolgens het fragment voor het bewerken of keer terug naar de console met **Gereed**.
 
    >[!NOTE]
-   >In de modus **List** van de console kunt u de **View Settings** bijwerken om de kolom **Content Fragment Model** in te schakelen.
+   >In **Lijst** wijze van de console u kunt bijwerken **Instellingen weergeven** de **Inhoudsfragmentmodel** kolom.
 
 ## Handelingen voor een inhoudsfragment in de middelenconsole {#actions-for-a-content-fragment-assets-console}
 
-In de **Assets** console is een reeks acties beschikbaar voor uw inhoudsfragmenten, of:
+In de **Activa** een reeks acties beschikbaar is voor uw inhoudsfragmenten:
 
 * van de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
 * Als [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
@@ -110,11 +111,11 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 * **Bewerken**
 
-   * Hiermee kunt u het fragment [openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
+   * Hiermee kunt u [het fragment openen voor het bewerken van inhoud](/help/assets/content-fragments/content-fragments-variations.md) samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
 
 * **Tags beheren**
 * **Naar verzameling**
-* **Kopiëren**  (en  **Plakken**)
+* **Kopiëren** (en **Plakken**)
 * **Verplaatsen**
 * **Snel publiceren**
 * **Publicatie beheren**
@@ -122,7 +123,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel hiervan zijn [standaardhandelingen voor elementen](/help/assets/manage-assets.md) en/of de [AEM-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Veel van deze zijn [standaardhandelingen voor elementen](/help/assets/manage-assets.md) en/of de [Bureaubladapp AEM](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -130,35 +131,31 @@ Uw fragment openen voor bewerken:
 
 >[!CAUTION]
 >
->Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+>Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
 
 >[!CAUTION]
 >
 >U hebt de juiste machtigingen nodig om een inhoudsfragment te bewerken. Neem contact op met de systeembeheerder als er problemen optreden.
 
-1. Met de console **Middelen** kunt u naar de locatie van het inhoudsfragment navigeren.
+1. Gebruik de **Activa** -console om naar de locatie van het inhoudsfragment te navigeren.
 1. Open het fragment voor bewerking door:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
-   * Selecteer het fragment en **Bewerk** op de werkbalk.
+   * Het fragment selecteren en vervolgens **Bewerken** op de werkbalk.
 
 1. De fragmenteditor wordt geopend. Breng de gewenste wijzigingen aan:
 
    ![fragmenteditor](assets/cfm-managing-03.png)
 
-1. Nadat u wijzigingen hebt aangebracht, gebruikt u **Opslaan en sluiten**.
-
-<!-- 
-1. After making changes, use **Save**, **Save & close** or **Close** as required.
+1. Nadat u wijzigingen hebt aangebracht, kunt u **Opslaan**, **Opslaan en sluiten** of **Sluiten** zoals vereist.
 
    >[!NOTE]
    >
-   >**Save & close** is available via the **Save** dropdown.
+   >**Opslaan en sluiten** is beschikbaar via **Opslaan** vervolgkeuzelijst.
 
    >[!NOTE]
    >
-   >Both **Save & Close** and **Close** will exit the editor - see [Save, Close and Versions](#save-close-and-versions) for full information on how the various options operate for content fragments.
--->
+   >Beide **Opslaan en sluiten** en **Sluiten** sluit de editor af - zie [Opslaan, sluiten en versies](#save-close-and-versions) voor volledige informatie over de werking van de verschillende opties voor inhoudsfragmenten.
 
 ## Modi en handelingen in de Inhoudsfragmenteditor {#modes-actions-content-fragment-editor}
 
@@ -168,7 +165,7 @@ Er zijn verschillende modi en acties beschikbaar in de Inhoudsfragmenteditor.
 
 Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 
-* Variaties: [De inhoud bewerken](#editing-the-content-of-your-fragment) en [De variaties beheren](#creating-and-managing-variations-within-your-fragment)
+* Variaties: [De inhoud bewerken](#editing-the-content-of-your-fragment) en [Uw variaties beheren](#creating-and-managing-variations-within-your-fragment)
 
 * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [Gekoppelde inhoud](#associating-content-with-your-fragment)
@@ -182,35 +179,27 @@ Navigeer door de verschillende modi met de pictogrammen in het zijpaneel:
 
 Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
-<!-- screenshot changed from original text see commented out below -->
+![modi](assets/cfm-managing-top-toolbar.png)
 
-![modi](assets/cfm-managing-03.png)
+* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
 
-* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Close** het bericht.
+* Het zijpaneel kan worden verborgen of weergegeven met de opdracht **Zijpaneel in-/uitschakelen** pictogram.
 
-* Het zijpaneel kan worden verborgen/getoond gebruikend **Kneep van de Kant** pictogram.
-
-* Onder de fragmentnaam ziet u de naam van het [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) dat wordt gebruikt voor het maken van het huidige fragment:
+* Onder de fragmentnaam ziet u de naam van de component [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md) gebruikt voor het maken van het huidige fragment:
 
    * De naam is ook een verbinding die de modelredacteur zal openen.
 
 * Zie de status van het fragment; bijvoorbeeld informatie over het tijdstip waarop deze is gemaakt, gewijzigd of gepubliceerd.
 
-* **Opslaan en sluiten**
+* **Opslaan** verleent toegang tot **Opslaan en sluiten** optie.
+
+* De drie stippen (**...**) biedt toegang tot extra handelingen:
+   * **Paginaverwijzingen bijwerken**
+      * Hiermee werkt u alle paginaverwijzingen bij.
+   * **[Snel publiceren](#publishing-and-referencing-a-fragment)**
+   * **[Publicatie beheren](#publishing-and-referencing-a-fragment)**
 
 <!--
-Some features in the top toolbar are available from multiple modes:
-
-![modes](assets/cfm-managing-top-toolbar.png)
-
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
-
-* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
-
-  * The name is also a link that will open the model editor.
-
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
   * **New**: grey
@@ -218,121 +207,106 @@ Some features in the top toolbar are available from multiple modes:
   * **Published**: green
   * **Modified**: orange
   * **Deactivated**: red
-
-* **Save** provides access to the **Save & close** option.
-  
-* The three dots (**...**) drop-down provides access to additional actions:
-  * **Update page references**
-    * This updates any page references. 
-  * **[Quick publish](#publishing-and-referencing-a-fragment)**
-  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
 -->
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required. 
+-->
 
-<!--
-## Save, Close and Versions {#save-close-and-versions}
+## Opslaan, sluiten en versies {#save-close-and-versions}
 
 >[!NOTE]
 >
->Versions can also be [created, compared and reverted from the Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+>Versies kunnen ook [gemaakt, vergeleken en teruggezet vanaf de tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-The editor has various options:
+De editor heeft verschillende opties:
 
-* **Save** and **Save & close**
+* **Opslaan** en **Opslaan en sluiten**
 
-  * **Save** will save the latest changes and remain in the editor.
-  * **Save & close** will save the latest changes and exit the editor.
+   * **Opslaan** slaat de laatste wijzigingen op en blijft deze in de editor.
+   * **Opslaan en sluiten** slaat de laatste wijzigingen op en sluit de editor af.
 
-  >[!CAUTION]
-  >
-  >To edit a content fragment you need [the appropriate permissions](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Please contact your system administrator if you are experiencing issues. 
-
-  >[!NOTE]
-  >
-  >It is possible to remain in the editor, making a series of changes, before saving.
-
-  >[!CAUTION]
-  >
-  >In addition to simply saving your changes, the actions also update any references and ensures that the Dispatcher is flushed as required. These changes can take time to process. Due to this, there can be a performance impact on a large/complex/heavily-loaded system.
-  >
-  >Please bear this in mind when using **Save & close** and then quickly re-entering the fragment editor to make and save further changes.
-
-* **Close**
-
-  Will exit the editor without saving the latest changes (i.e made since the last **Save**).
-
-While editing your content fragment AEM automatically creates versions to ensure that prior content can be restored if you cancel your changes (using **Close** without saving):
-
-1. When a content fragment is opened for editing AEM checks for the existence of the cookie-based token that indicates whether an *editing session* exists:
-
-   1. If the token is found, the fragment is considered to be part of the existing editing session.
-   2. If the token is *not* available and the user starts editing content, a version is created and a token for this new editing session is sent to the client, where it is saved in a cookie.
-
-2. While there is an *active* editing session, the content being edited is automatically saved every 600 seconds (default).
+   >[!CAUTION]
+   >
+   >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions). Neem contact op met de systeembeheerder als er problemen optreden.
 
    >[!NOTE]
    >
-   >The auto save interval is configurable using the `/conf` mechanism.
-   >
-   >Default value, see:
-   >&nbsp;&nbsp;`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
+   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te bewaren.
 
-3. If the user cancels the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
-4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
--->
+   >[!CAUTION]
+   >
+   >Naast het eenvoudig opslaan van uw wijzigingen, werken de acties ook verwijzingen bij en zorgen ervoor dat de Dispatcher wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >
+   >Houd hier rekening mee wanneer u **Opslaan en sluiten** en voert u vervolgens snel de fragmenteditor opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
+
+* **Sluiten**
+
+   Sluit de editor af zonder de laatste wijzigingen op te slaan (dat wil zeggen sinds de laatste **Opslaan**).
+
+AEM tijdens het bewerken van het inhoudsfragment automatisch versies maken om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u de wijzigingen annuleert (met **Sluiten** zonder opslaan):
+
+1. Wanneer een inhoudsfragment wordt geopend om te bewerken, wordt op het bestaan van een cookie-token gecontroleerd dat aangeeft of een *bewerksessie* bestaat:
+
+   1. Als het token wordt gevonden, wordt het fragment beschouwd als onderdeel van de bestaande bewerkingssessie.
+   2. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie verzonden naar de client, waar deze in een cookie wordt opgeslagen.
+
+2. Terwijl er een *actief* tijdens het bewerken van de sessie wordt de inhoud die wordt bewerkt automatisch om de 600 seconden opgeslagen (standaard).
+
+   >[!NOTE]
+   >
+   >Het auto sparen interval is configureerbaar gebruikend `/conf` mechanisme.
+   >
+   >Standaardwaarde, zie:
+   >  `/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
+
+3. Als de gebruiker de bewerking annuleert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
+4. Als de gebruiker selecteert om **Opslaan** de bewerkingen, de bijgewerkte elementen/variaties worden voortgezet en het token wordt verwijderd om de bewerkingssessie te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
-Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](/help/assets/content-fragments/content-fragments-variations.md) gebruiken om de inhoud te ontwerpen.
+Als u het fragment hebt geopend, kunt u de opdracht [Variaties](/help/assets/content-fragments/content-fragments-variations.md) gebruiken om uw inhoud te ontwerpen.
 
 ## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
 
-Als u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud maken en beheren.
+Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](/help/assets/content-fragments/content-fragments-variations.md) van die inhoud.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt ook [inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) aan een fragment koppelen. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt ook [gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) met een fragment. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-U kunt de eigenschappen van een fragment weergeven en bewerken met het tabblad [Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md).
+U kunt de eigenschappen van een fragment weergeven en bewerken met de opdracht [Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md) tab.
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
-Naast de standaardopties biedt [Timeline](/help/assets/manage-assets.md#timeline) zowel informatie als acties die specifiek zijn voor inhoudsfragmenten:
+Naast de standaardopties [Tijdlijn](/help/assets/manage-assets.md#timeline) biedt zowel informatie als acties die specifiek zijn voor inhoudsfragmenten:
 
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
 
-   * **[Terugkeren naar deze versie](#reverting-to-a-version)**  (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Deze versie herstellen](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
-   * **[Vergelijken met huidige](#comparing-fragment-versions)**  versie (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[Vergelijken met huidige](#comparing-fragment-versions)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
-   * Een **Label** en/of **Opmerking** toevoegen (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * Voeg een **Label** en/of **Opmerking** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
 
-   * **Opslaan als versie**  (selecteer een bestaand fragment en klik vervolgens op de pijl omhoog onder aan de tijdlijn)
+   * **Opslaan als versie** (selecteer een bestaand fragment en klik vervolgens op de pijl omhoog onder aan de tijdlijn)
 
 * Handelingen voor annotaties
 
    * **Verwijderen**
 
 >[!NOTE]
->
->Opmerkingen zijn:
->
->* Standaardfunctionaliteit voor alle elementen
->* Gemaakt in tijdlijn
->* Verwant aan het fragmentelement
+Opmerkingen zijn:
+* Standaardfunctionaliteit voor alle elementen
+* Gemaakt in tijdlijn
+* Verwant aan het fragmentelement
 
->
->Annotaties (voor inhoudsfragmenten) zijn:
->
->* Opgegeven in de fragmenteditor
->* Specifiek voor een geselecteerd tekstsegment binnen het fragment
-
->
+Annotaties (voor inhoudsfragmenten) zijn:
+* Opgegeven in de fragmenteditor
+* Specifiek voor een geselecteerd tekstsegment binnen het fragment
 
 
 Bijvoorbeeld:
@@ -341,13 +315,13 @@ Bijvoorbeeld:
 
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
-De **Vergelijken met Huidige** actie is beschikbaar bij [Chronologie](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
+De **Vergelijken met huidige** actie is beschikbaar via [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
 Hiermee wordt het volgende geopend:
 
-* de **Huidige** (laatste) versie (links)
+* de **Huidig** (laatste) versie (links)
 
-* de geselecteerde versie **v&lt;*x.y*** (rechts)
+* de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
 Zij worden naast elkaar weergegeven, waarbij:
 
@@ -358,12 +332,11 @@ Zij worden naast elkaar weergegeven, waarbij:
    * Vervangen tekst - blauw
 
 * Met het pictogram voor volledig scherm kunt u elke versie afzonderlijk openen. dan terug naar de parallelle weergave
-* U kunt **Terugkeren** naar de specifieke versie
-* **** Donewill return you to the console
+* U kunt **Vorige versie** naar de specifieke versie
+* **Gereed** zult u aan de console terugkeren
 
 >[!NOTE]
->
->U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
+U kunt de fragmentinhoud niet bewerken wanneer u fragmenten vergelijkt.
 
 ![vergelijking](assets/cfm-managing-06.png)
 
@@ -371,44 +344,39 @@ Zij worden naast elkaar weergegeven, waarbij:
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
-* Rechtstreeks vanuit de [tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Rechtstreeks vanuit de [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecteer de vereiste versie en kies vervolgens de handeling **Terugkeren naar deze versie**.
+   Selecteer de gewenste versie en klik vervolgens op **Deze versie herstellen** handeling.
 
-* Terwijl [het vergelijken van een versie aan de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) kunt u **terugkeren** aan de geselecteerde versie.
+* while [een versie vergelijken met de huidige versie](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) u **Vorige versie** naar de geselecteerde versie.
 
 ## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->
->Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat het [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->
->Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+Als het fragment op een model is gebaseerd, moet u ervoor zorgen dat de [model is gepubliceerd](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
-* Na de aanmaak; het gebruiken van [acties beschikbaar in de console van Activa](#actions-for-a-content-fragment-assets-console).
-* Vanuit de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor).
-* Wanneer u [een pagina publiceert die het fragment](/help/sites-authoring/content-fragments.md#publishing) gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
+* Na de aanmaak; gebruiken [acties beschikbaar in de middelenconsole](#actions-for-a-content-fragment-assets-console).
+* Van de [Inhoudsfragmenteditor](#toolbar-actions-in-the-content-fragment-editor).
+* Wanneer u [Een pagina publiceren die het fragment gebruikt](/help/sites-authoring/content-fragments.md#publishing); het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
->
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Een fragment verwijderen {#deleting-a-fragment}
 
 Een fragment verwijderen:
 
-1. Navigeer in de **Assets**-console naar de locatie van het inhoudsfragment.
+1. In de **Activa** navigeren naar de locatie van het inhoudsfragment.
 2. Selecteer het fragment.
 
    >[!NOTE]
-   >
-   >De handeling **Delete** is niet beschikbaar als een snelle handeling.
+   De **Verwijderen** Handeling is niet beschikbaar als een snelle handeling.
 
-3. Selecteer **Delete** van de toolbar.
-4. Bevestig de handeling **Delete**.
+3. Selecteren **Verwijderen** op de werkbalk.
+4. Bevestig de **Verwijderen** handeling.
 
    >[!CAUTION]
-   >
-   >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met **Verwijderen forceren**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.

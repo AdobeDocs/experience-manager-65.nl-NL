@@ -1,7 +1,7 @@
 ---
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
-source-git-commit: ee82e8edc9cdf7fb403d54d82ced6caa2c95fdc9
+source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -224,11 +224,3 @@ Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facult
    * [CDN-cache beheren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * Het vormen van [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*zoeken naar CDN Rewriter*)
-
-<!--
-* [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-* [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
-* [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
-* [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
--->

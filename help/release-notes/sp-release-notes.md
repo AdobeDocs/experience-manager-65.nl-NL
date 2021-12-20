@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Expe
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: f2ccc77393e7fc1f53f9976076ec3c66c3f74189
+source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3761'
 ht-degree: 0%
 
 ---
@@ -371,6 +371,17 @@ Need to verify with Engineering, the status is currently showing as Resolved
 **Foundation JEE**
 
 * Na de installatie van AEM 6.5 Forms Service Pack 9 zijn de URL&#39;s van de CRX-opslagplaats niet meer beschikbaar (NPR-37592).
+
+**In AEM Forms 6.5.11.1 opgeloste problemen**
+
+>[!NOTE]
+>
+>Als u geen upgrade naar AEM 6.5.11.0 Forms hebt uitgevoerd, installeert u het invoegpakket AEM Forms 6.5.11.1 rechtstreeks. Als u AEM 6.5.11.0 Forms hebt geïnstalleerd, raadt Adobe aan een upgrade uit te voeren naar AEM 6.5.11.1 Forms.
+
+* U kunt handelingen verzenden, E-mail verzenden en een AEM workflow aanroepen nadat u het invoegpakket Forms 6.5.11.0 hebt geïnstalleerd.
+* Met CreatePDF wordt de conversie van Microsoft Word-documenten naar PDF-documenten gestopt nadat het Forms 6.5.11.0-invoegpakket is geïnstalleerd.
+* (Alleen JEE) Er zijn kritieke beveiligingskwetsbaarheden (CVE-2021-44228 en CVE-2021-45046) gemeld voor Apache Log4j2.
+* (Alleen JEE) Assembler DSC in de patch 6.5.11.0 bevat onjuiste metainfo, zoals de specificatieversie en de impl-versie.
 
 
 Voor informatie over beveiligingsupdates raadpleegt u [[!DNL Experience Manager] beveiligingspagina met opsommingstekens](https://helpx.adobe.com/security/products/experience-manager.html).

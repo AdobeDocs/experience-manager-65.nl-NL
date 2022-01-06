@@ -1,10 +1,7 @@
 ---
 title: AEM Schrijverreis zonder kopinhoud
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om inhoud voor uw project te ontwerpen.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 867b0a5a4c660a069e54094ed003cd93289048c7
+source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 1%

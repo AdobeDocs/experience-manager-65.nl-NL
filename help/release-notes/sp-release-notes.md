@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Expe
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
-source-git-commit: 5b62efe65be44416335c6dbbde23ee6a7e5a8fd7
+source-git-commit: 282f634e84b7c6c5e281d2b425953853790f225c
 workflow-type: tm+mt
-source-wordcount: '3761'
+source-wordcount: '3768'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Ado
 * Dankzij de verbeteringen in de gebruikerservaring wordt het aantal elementen in een map weergegeven. Voor meer dan 1000 elementen in een map: [!DNL Assets] geeft 1000+ weer.
 
 * U kunt de sorteeroptie nu renderen in de Kaart- en kolomweergave.
+
+* Business profiles support for Adobe Asset Link.
 
 * U kunt nu [!DNL Dynamic Media] om Algemene Montages te vormen in plaats van het moeten door [!DNL Dynamic Media Classic] bureaubladtoepassing. Zie [Algemene instellingen van Dynamic Media configureren](/help/assets/dm-general-settings.md).
 
@@ -212,7 +214,7 @@ De volgende opgeloste problemen zijn beschikbaar in [!DNL Dynamic Media]:
 
 * In een zoombare afbeelding wordt met de sneltoetsen (&#39;+&#39;, &#39;-&#39;) of &#39;Esc&#39; de focus van de schermlezers geplaatst (CQ-4290719).
 
-* Wanneer een gebruiker op de sneltoets voor de formuliermodus (&#39;F&#39;) klikt, wijst de schermlezer het label van het dialoogvenster [!UICONTROL Embed Size] de menuknop beschikbaar in [!UICONTROL Get Embed] codeselectie (CQ-4290929).
+* Wanneer een gebruiker op de sneltoets voor de formuliermodus (&#39;F&#39;) klikt, wijst de schermlezer het label van het [!UICONTROL Embed Size] de menuknop beschikbaar in [!UICONTROL Get Embed] codeselectie (CQ-4290929).
 
 * Als u via toetsenbordnavigatie het pop-upvenster met de e-mailkoppeling opent, zijn de foutsuggesties in de gebruikersinterface voor de velden Aan en Van niet beschrijvend (CQ-4290930).
 

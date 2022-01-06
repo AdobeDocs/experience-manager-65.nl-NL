@@ -1,7 +1,6 @@
 ---
-source-git-commit: 107ad4d7f875d27d392212f5fb8ca9b39aae3857
+source-git-commit: 41011e538104405c954761d9adc270e774e8a9a1
 workflow-type: tm+mt
-translation-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
 
@@ -12,7 +11,6 @@ Dit is de opslagplaats voor Adobe Experience Manager 6.5-documentatie. Deze docu
 
 Uw bijdragen aan de documentatie zijn welkom. Zie de volgende bronnen:
 
-* [contribute.](contributing.md) mdVoor een overzicht van hoe te om aan de documentatie bij te dragen.
-* [Guidelines.](guidelines.md) mdVoor een overzicht van wat in bijdragen wordt verwacht en hoe te om uw documentatiebijdragen samen te stellen.
-* [gedragscode.](code-of-conduct.md) mdVoor een overzicht van de normen van gedrag wij verwachten aangezien u aan dit documentatieproject bijdraagt.
-
+* [contribute.md](contributing.md) Voor een overzicht van hoe te om aan de documentatie bij te dragen.
+* [guidelines.md](guidelines.md) Voor een overzicht van wat in bijdragen en hoe te om uw documentatiebijdragen samen te stellen wordt verwacht.
+* [gedragscode.md](code-of-conduct.md) Voor een overzicht van de normen van gedrag verwachten wij aangezien u aan dit documentatieproject bijdraagt.

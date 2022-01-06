@@ -6,9 +6,9 @@ seo-description: The Tough Day test simulates the daily load of around 1000 auth
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 36c0728908e24a13d08c1eaed4e39542f5b61df5
+source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1879'
 ht-degree: 1%
 
 ---
@@ -403,8 +403,10 @@ Tough Day 2 maakt een logmap in dezelfde map als waar u Tough Day 2 hebt uitgevo
 
 De logboeken worden niet overschreven, de verdere looppas zal berichten aan de bestaande logboeken toevoegen. De logboeken hebben verscheidene niveaus, voor meer informatie zie ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
-#### Voorbeeldgebruik {#example-usage}
+<!--
+#### Example Usage {#example-usage}
 
-#### Bekende problemen {#known-issues}
+#### Known Issues {#known-issues}
 
-[Bestand ophalen](assets/toughday-6_1.jar)
+[Get File](assets/toughday-6_1.jar)
+-->

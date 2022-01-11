@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 1aad655a141fd2137875ae829d1b698298dfe285
+source-git-commit: 7630a6c4d908144e384b705bfce72779803aea93
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3340'
 ht-degree: 0%
 
 ---
@@ -95,18 +95,22 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
   <tr>
    <td><strong>Platform</strong></td>
    <td><strong>Ondersteuningsniveau</strong></td>
+   <td><strong>Koppeling</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bits</td>
    <td>A: Ondersteund [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64-bits</td>
    <td>A: Ondersteund [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64-bits</td>
    <td>A: Ondersteund [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -119,6 +123,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
   <tr>
    <td>Oracle Java SE 8 JDK - 64-bits</td>
    <td>A: Ondersteund [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10<td>
   </tr>
   <tr>
    <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
@@ -131,7 +136,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
  </tbody>
 </table>
 
-1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt rechtstreeks door Adobe ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie de [Azul Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie .
+1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie de [Azul Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie .
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. De steun en de verspreiding van het Oracle Java SE JDK, met inbegrip van alle onderhoudsupdates van LTS versies voorbij het eind van de openbare updates, zullen door Adobe direct voor alle AEM klanten worden gesteund die gebruik maken van de Oracle Java SE technologie **tot december 2022**. Zie de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie .
 
@@ -351,7 +356,7 @@ De verantwoordelijkheid van de WebDav-client onder Windows verbeteren - zie [Mic
 
 ## Aanvullende opmerkingen bij Platforms {#additional-platform-notes}
 
-Deze sectie biedt speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
+Deze sectie bevat speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
 
 ### IPv4 en IPv6 {#ipv-and-ipv}
 

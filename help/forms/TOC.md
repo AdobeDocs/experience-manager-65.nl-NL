@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: d010b2a20e40fabe40f67d60ef0b6fab245be60f
+source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3772'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,9 @@ ht-degree: 1%
 
 + [AEM 6.5 Forms Guide](home.md)
 + Releaseopmerkingen {#release-notes-new-features}
-   + [Releaseopmerkingen](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+   + [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
    + [Overzicht van nieuwe functies](using/whats-new.md)
-   + [Verouderde functies](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+   + [Verouderde functies](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Aan de slag {#getting-started}
    + [Inleiding tot AEM Forms](using/introduction-aem-forms.md)
    + [Inleiding tot het ontwerpen van adaptieve formulieren](using/introduction-forms-authoring.md)
@@ -280,7 +280,7 @@ ht-degree: 1%
    + [Inleiding tot HTML5-formulieren](using/introduction.md)
    + [Aan de slag met HTML5-formulieren](using/get-started.md)
    + [Architectuur van HTML5-formulieren](using/html5-forms-architecture.md)
-   + [Verschil tussen HTML5-formulieren en PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
+   + [Onderscheid tussen HTML5-formulieren en PDF forms](using/feature-differentiation-html5-forms-pdf-forms.md)
    + [Veelgestelde vragen (FAQ) voor HTML5-formulieren](using/faq.md)
    + [Formuliersjablonen ontwerpen voor HTML5-formulieren](using/designing-form-template.md)
    + [Aanbevolen procedures voor HTML5-formulieren](using/best-practices-for-html5-forms.md)
@@ -506,7 +506,7 @@ ht-degree: 1%
    + Uitvoer configureren {#configure-output}
       + [Overzicht van uitvoerservice](/help/forms/using/admin-help/overview-8.md)
       + [XCI-configuratieopties opgeven](/help/forms/using/admin-help/specify-xci-configuration-options.md)
-      + [Caching configureren voor Output](/help/forms/using/admin-help/configuring-caching-output.md)
+      + [caching configureren voor uitvoer](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Lettertypen beschikbaar maken](/help/forms/using/admin-help/make-fonts-available.md)
       + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)

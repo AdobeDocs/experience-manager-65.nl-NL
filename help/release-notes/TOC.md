@@ -7,27 +7,30 @@ breadcrumb-title: Release-opmerkingen
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 63b19027e5b13dfb97fd59145de75fbc6d246b93
+source-git-commit: f04822a4bd55d6bffb1766d42502b1d999eb6947
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 8%
+source-wordcount: '57'
+ht-degree: 22%
 
 ---
 
 
 # Opmerkingen bij de release Adobe Experience Manager 6.5 {#release-notes}
 
-+ [Overzicht AEM 6.5](home.md)
-+ [Algemene opmerkingen bij de release](release-notes.md)
-+ Release-aantekeningen bij Service Pack {#service-pack}
-   + [Wat is er nieuw?](new-features-latest-service-pack.md)
-   + [Opmerkingen bij de release Service Pack 11](sp-release-notes.md)
-   + [Opmerkingen bij de vorige release Service Pack](previous-hotfixes-featurepacks.md)
-+ [Opmerkingen bij de release van AEM Sites](sites.md)
-+ [Opmerkingen bij de release van AEM Assets](assets.md)
++ [AEM 6.5 Opmerkingen bij de release](home.md)
++ [Opmerkingen bij de huidige release](release-notes.md)
++ Opmerkingen bij vorige release {#service-pack}
+   + [6.5.10.](previous/6.5.10.md)
+   + [6,5,9](previous/6.5.9.md)
+   + [6.5.8.](previous/6.5.8.md)
+   + [6,5,7](previous/6.5.7.md)
+   + [6.5.6.](previous/6.5.6.md)
+   + [6.5.5.](previous/6.5.5.md)
+   + [6.5.4.](previous/6.5.4.md)
+   + [6.5.3.](previous/6.5.3.md)
+   + [6.5.2.](previous/6.5.2.md)
+   + [6.5.1.](previous/6.5.1.md)
+   + [6.5.0.](previous/ga.md)
 + [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
-+ [Opmerkingen bij de release van AEM Communities](communities-release-notes.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
-+ [Bekende problemen](known-issues.md)
-+ [AEM stichting en bewaarplaats](wcm-platform.md)
 + [Status van TouchUI-functie](touch-ui-features-status.md)

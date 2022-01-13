@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '9641'
 ht-degree: 3%
@@ -338,7 +338,7 @@ Enkele beperkingen van de functie zijn:
 * Als er op de bestemming een map met dezelfde naam staat, worden de elementen uit het ZIP-bestand geëxtraheerd naar de bestaande map.
 * Als u de extractie annuleert, worden de reeds geëxtraheerde elementen niet verwijderd.
 * U kunt niet twee ZIP-bestanden tegelijk selecteren en extraheren. U kunt slechts één ZIP-archief tegelijk extraheren.
-* Als tijdens het uploaden van een ZIP-archief een serverfout van 500 wordt weergegeven in het dialoogvenster voor uploaden, probeert u het na de installatie opnieuw [het nieuwste Service Pack](/help/release-notes/sp-release-notes.md).
+* Als tijdens het uploaden van een ZIP-archief een serverfout van 500 wordt weergegeven in het dialoogvenster voor uploaden, probeert u het na de installatie opnieuw [het nieuwste Service Pack](/help/release-notes/release-notes.md).
 
 ## Elementen voorvertonen {#previewing-assets}
 

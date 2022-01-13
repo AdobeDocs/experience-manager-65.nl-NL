@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e54d8633aa3b8c1554df90d1b9650713246b95e8
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Neem contact op met ](https://www.adobe.com/account/sign-in.supportportal.html) Ondersteuning voor meer informatie of om de pleister te verkrijgen.
+>[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html) voor meer informatie of om de pleister te verkrijgen.
 
 ## Het installatieprogramma van de patch {#about-the-patch-installer}
 
-Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Raadpleeg de nieuwste [Opmerkingen bij de release van Service Pack](sp-release-notes.md) voor een volledige lijst met opgeloste problemen.
+Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen voor alle componenten van AEM 6.5 Forms JEE die beschikbaar zijn tot de release van deze patch. Zie de nieuwste  [Release-aantekeningen bij Service Pack](release-notes.md) voor een volledige lijst van opgeloste problemen.
 
 ## Vereisten voor de installatie van de patch {#prerequisites-to-installing-the-patch}
 
@@ -33,13 +33,13 @@ Het AEM 6.5 Forms JEE-patchinstallatieprogramma bevat alle opgeloste problemen v
 1. Pak het archiefbestand van het patch-installatieprogramma uit op de vaste schijf.
 1. In de map met de naam volgens het besturingssysteem dat u gebruikt:
 
-   * ****
-Windows: ga naar de juiste map op de installatiemedia of de installatiemap op de vaste schijf waarnaar u het installatieprogramma hebt gekopieerd en dubbelklik op het bestand aemforms65_cfp_install.exe.
+   * **Windows**
+Navigeer naar de juiste map op de installatiemedia of de installatiemap op de vaste schijf waarnaar u het installatieprogramma hebt gekopieerd en dubbelklik op het bestand aemforms65_cfp_install.exe.
 
       * (Windows 32-bits) `Windows\Disk1\InstData\VM`
       * (Windows 64-bits) `Windows_64Bit`\ `Disk1\InstData\VM`
-   * ****
-LinuxNavigate aan de aangewezen folder, en van een bevelherinnering, type 
+   * **Linux**
+Navigeer aan de aangewezen folder, en van een bevelherinnering, type 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -47,24 +47,24 @@ LinuxNavigate aan de aangewezen folder, en van een bevelherinnering, type
    Hiermee wordt een installatiewizard gestart die u door de installatie begeleidt.
 
 1. Klik in het deelvenster Inleiding op **[!UICONTROL Next]**.
-1. Controleer in het scherm Install Folder (Installatiemap kiezen) of de standaardlocatie correct is voor uw bestaande installatie of klik **[!UICONTROL Browse]** om de alternatieve map te selecteren waarin AEM formulieren zijn geïnstalleerd en klik op **[!UICONTROL Next]**.
-1. Lees de informatie van het Overzicht van de Reparatie van de Snelle Moeilijke situatie en klik **[!UICONTROL Next]**.
-1. Lees de informatie over het Pre-Installation Summary en klik op **[!UICONTROL Install]**.
-1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie-updates toe te passen op de geïnstalleerde bestanden.
+1. Controleer in het scherm Installatiemap kiezen of de standaardlocatie die wordt weergegeven correct is voor uw bestaande installatie of klik op **[!UICONTROL Browse]** om de alternatieve map te selecteren waarin AEM formulieren zijn geïnstalleerd en klik op **[!UICONTROL Next]**.
+1. Lees de informatie over het overzicht van reparaties in Snel repareren en klik op **[!UICONTROL Next]**.
+1. Lees de informatie van het Pre-installatieoverzicht en klik **[!UICONTROL Install]**.
+1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie updates op uw geïnstalleerde dossiers toe te passen.
 
-1. Schakel de optie Configuratiebeheer starten uit voordat u op Gereed klikt. Voordat u configuratiebeheer uitvoert met **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeert u naar *&lt;AEMForms_Install_Dir>\configurationManager\bin* en werkt u `ConfigurationManager.lax`- en `ConfigurationManager_IPv6.lax`-bestanden bij met de volgende hernoemingsbewerkingen:
+1. Schakel de optie Configuratiebeheer starten uit voordat u op Gereed klikt. Voordat u configuratiebeheer uitvoert **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *&lt;aemforms_install_dir>\configurationManager\bin* map en update `ConfigurationManager.lax` en `ConfigurationManager_IPv6.lax` bestanden waarvan de naam als volgt wordt gewijzigd:
 
-   * `axis.jar` tot  `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` tot  `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` tot  `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` tot  `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` tot  `xml-apis-2.7.2.jar`
+   * `axis.jar` tot `axis-1.4.1.1.jar`
+   * `serializer-2.7.1.jar` tot `serializer-2.7.2.jar`
+   * `xalan-2.7.1.jar` tot `xalan-2.7.2.jar`
+   * `xercesImpl-2.9.1.jar` tot `xercesImpl-2.12.0.jar`
+   * `xml-apis-2.7.1.jar` tot `xml-apis-2.7.2.jar`
 
-1. Het selectievakje Configuratiebeheer starten is standaard ingeschakeld. Klik **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen.
+1. Het selectievakje Configuratiebeheer starten is standaard ingeschakeld. Klikken **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen.
 
-1. Als u Configuratiebeheer later wilt uitvoeren, schakelt u de optie Configuratiebeheer starten uit voordat u op Gereed klikt. U kunt de Manager van de Configuratie later beginnen gebruikend het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` folder.
+1. Als u Configuratiebeheer later wilt uitvoeren, schakelt u de optie Configuratiebeheer starten uit voordat u op Gereed klikt. U kunt de Manager van de Configuratie later beginnen gebruikend het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
 
-1. Afhankelijk van uw toepassingsserver kiest u een van de volgende documenten en volgt u de instructies in de sectie *AEM formulieren configureren en implementeren*.
+1. Afhankelijk van uw toepassingsserver kiest u een van de volgende documenten en volgt u de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
 
    * [AEM voor JBoss installeren en implementeren](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [AEM voor WebSphere installeren en implementeren](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)

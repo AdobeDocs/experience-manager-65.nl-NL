@@ -1,22 +1,21 @@
 ---
 title: Meer informatie over AEM 6.5-mogelijkheden
-seo-title: Meer informatie over AEM 6.5-mogelijkheden
+seo-title: Learn About AEM 6.5 Capabilities
 description: Een beschrijving van de essentiële capaciteiten van AEM 6.5
-seo-description: Een beschrijving van de essentiële capaciteiten van AEM 6.5
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+seo-description: An description of the essential capabilities of AEM 6.5
+exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '400'
+ht-degree: 2%
 
 ---
-
 
 # Meer informatie over AEM 6.5-mogelijkheden {#learn-about-aem-64-capabilities}
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) meer of  [graaf in enkele van onze nieuwe videofunctiezelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Meer informatie](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) of [Bekijk een aantal van onze nieuwe videozelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -24,7 +23,7 @@ Met AEM Assets kan uw organisatie eenvoudig digitale middelen maken, beheren, le
 
 * [Werken met AEM Assets](/help/assets/manage-assets.md)
 * [Werken met Dynamic Media](/help/assets/dynamic-media.md)
-* [Opmerkingen bij de release van AEM Assets](/help/release-notes/assets.md)
+* [Opmerkingen bij de release AEM](/help/release-notes/release-notes.md)
 
 ## AEM Forms {#aem-forms}
 
@@ -47,8 +46,8 @@ De Gemeenschappen zijn een Adobe Experience Manager-mogelijkheid waarmee u onlin
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre is een geheel nieuwe Adobe Experience Manager-mogelijkheid waarmee u alles kunt aantikken dat op het web wordt gedeeld om een constante stroom nieuwe en kwalitatief hoogwaardige inhoud op uw eigen sites te maken. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) meer of  [sprong recht in onze gidsen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre is een geheel nieuwe Adobe Experience Manager-mogelijkheid waarmee u alles kunt aantikken dat op het web wordt gedeeld om een constante stroom nieuwe en kwalitatief hoogwaardige inhoud op uw eigen sites te maken. [Meer informatie](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) of [sprong recht in onze gidsen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
-## AEM Stichting {#aem-foundation}
+## AEM stichting {#aem-foundation}
 
-Meer informatie over de [Adobe Experience Manager 6.5 foundation](/help/sites-deploying/home.md) en ons model voor beheerde services voor implementatie of duik in een aantal van onze [nieuwe video-introducties voor de functies in deze release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+Meer informatie over de [Adobe Experience Manager 6.5 stichting](/help/sites-deploying/home.md) en ons beheerde model van de de dienstenplaatsing of duik in sommige van ons [nieuwe video-inleidingen over de functies in deze release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)

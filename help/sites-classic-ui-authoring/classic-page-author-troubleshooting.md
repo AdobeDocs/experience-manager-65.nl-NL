@@ -1,40 +1,39 @@
 ---
 title: Problemen met AEM bij ontwerpen oplossen
-seo-title: Problemen met AEM bij ontwerpen oplossen
+seo-title: Troubleshooting AEM when Authoring
 description: De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
-seo-description: De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
+source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 7%
 
 ---
 
-
-# AEM oplossen bij ontwerpen{#troubleshooting-aem-when-authoring}
+# Problemen met AEM bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
 
 De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
 >[!NOTE]
 >
->Wanneer het ervaren van problemen het ook de moeite waard is de lijst van [Bekende Kwesties](/help/release-notes/known-issues.md) voor uw instantie (versie en de dienstpakken) te controleren.
+>Wanneer u problemen ondervindt, is het ook de moeite waard om de lijst met [Bekende problemen](/help/release-notes/release-notes.md) voor uw instantie (release- en servicepacks).
 
 >[!NOTE]
 >
->Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de methoden voor het oplossen van problemen gebruiken die worden beschreven in [AEM voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
+>Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
 
-## Oude paginaversie nog steeds op gepubliceerde site {#old-page-version-still-on-published-site}
+## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
 * **Probleem**:
 
-   * U hebt wijzigingen aangebracht in een pagina en de pagina gekopieerd naar de publicatiesite, maar de *oude*-versie van de pagina wordt nog steeds weergegeven op de publicatiesite.
+   * U hebt wijzigingen aangebracht in een pagina en de pagina gerepliceerd naar de publicatiesite, maar de *oud* Er wordt nog steeds een versie van de pagina weergegeven op de publicatiesite.
 
 * **Reden**:
 
@@ -45,7 +44,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Hier zijn verschillende mogelijkheden:
    * Controleer of de pagina correct is gerepliceerd. Controleer de paginastatus en, indien nodig, de status van de replicatiewachtrij.
    * Wis de cache in uw lokale browser en open de pagina opnieuw.
-   * Voeg `?` aan het eind van pagina URL toe. Bijvoorbeeld:
+   * Toevoegen `?` tot het einde van de pagina-URL. Bijvoorbeeld:
 
       `http://localhost:4502/sites.html/content?`
 
@@ -71,11 +70,11 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 * **Probleem:**
 
-   * Als u de optie **Zoeken en vervangen** gebruikt, kan het voorkomen dat niet alle exemplaren van de term `find` op een pagina worden vervangen.
+   * Wanneer u de **Zoeken en vervangen** kan voorkomen dat niet alle instanties van de `find` worden vervangen op een pagina.
 
 * **Reden**:
 
-   * De mogelijkheid van **Zoeken en vervangen** is afhankelijk van de manier waarop de inhoud wordt opgeslagen en of er kan worden gezocht op de inhoud. Een blogtekst wordt bijvoorbeeld opgeslagen in de eigenschap `jcr:text` die niet is geconfigureerd om te worden doorzocht. Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de volgende eigenschappen:
+   * De capaciteit van **Zoeken en vervangen** is afhankelijk van de manier waarop de inhoud wordt opgeslagen en of deze kan worden doorzocht. Een blogtekst wordt bijvoorbeeld opgeslagen in `jcr:text` eigenschap die niet is geconfigureerd om te worden doorzocht. Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de volgende eigenschappen:
 
       * `jcr:title`
       * `jcr:description`
@@ -84,7 +83,6 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 * **Oplossing**:
 
-   * Deze definities kunnen met de configuratie voor **De Vondst van CQ WCM Servlet vervangen** gebruikend **Webconsole** veranderen; bijvoorbeeld bij
+   * Deze definities kunnen met de configuratie voor **Day CQ WCM-zoekservice vervangen** met de **Webconsole**; bijvoorbeeld bij
 
       `http://localhost:4502/system/console/configMgr`
-

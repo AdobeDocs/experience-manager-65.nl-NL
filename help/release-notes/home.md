@@ -2,11 +2,10 @@
 title: Opmerkingen bij de release Adobe Experience Manager 6.5
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 13%
+source-wordcount: '391'
+ht-degree: 12%
 
 ---
 
@@ -14,10 +13,12 @@ ht-degree: 13%
 
 De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 
+* [Opmerkingen bij de huidige release](/help/release-notes/release-notes.md)
+
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5-gebruikershandleidingen
@@ -51,6 +52,6 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 
-Zie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Zie voor meer informatie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

@@ -2,9 +2,9 @@
 title: Bekende problemen
 description: Opmerkingen bij de release specifiek voor de bekende problemen met Adobe Experience Manager 6.5
 exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
-source-git-commit: e0f024c2e1dc9fc7908382d406844575b4b38363
+source-git-commit: d87e48070329518117f84252ea0cab0471d74a29
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ```
 
 1. Sla het bestand op en start de AEM opnieuw.
+
+## Sites {#sites}
+
+* **Werken met paginaversies**: Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
 
 ## Assets {#assets}
 

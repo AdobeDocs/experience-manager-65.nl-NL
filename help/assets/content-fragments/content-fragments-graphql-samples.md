@@ -2,10 +2,11 @@
 title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
 description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
 feature: Content Fragments,GraphQL API
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
+source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1416'
+ht-degree: 2%
 
 ---
 
@@ -26,9 +27,9 @@ Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud
 
 Zie voor hulp bij dit:
 
-* A [voorbeeld van contentfragmentstructuur](#content-fragment-structure-graphql)
+* A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeelden GraphQL query](#graphql-sample-queries), gebaseerd op de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
 
 ## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
@@ -37,17 +38,17 @@ Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekpr
 
 >[!NOTE]
 >
->Afhankelijk van uw instantie kunt u tot [Grafiek *i* QL interface direct toegang hebben inbegrepen met AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) voor het voorleggen en het testen van vragen.
+>Afhankelijk van uw instantie kunt u rechtstreeks toegang krijgen tot de [GraphiQL-interface inbegrepen bij AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) voor het indienen van en het testen van vragen.
 >
 >Bijvoorbeeld: `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
 >
->De steekproefvragen zijn gebaseerd op de [Structuur van het Fragment van de Inhoud van de Steekproef voor gebruik met GraphQL](#content-fragment-structure-graphql)
+>De steekproefvragen zijn gebaseerd op [Voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](#content-fragment-structure-graphql)
 
 ### Voorbeeldquery - Alle beschikbare schema&#39;s en datatypen {#sample-all-schemes-datatypes}
 
-Hiermee worden alle `types` voor alle beschikbare schema&#39;s geretourneerd.
+Dit alles wordt geretourneerd `types` voor alle beschikbare schema&#39;s.
 
 **Voorbeeldquery**
 
@@ -223,7 +224,7 @@ Wanneer uitgevoerd, zal het systeem automatisch de vraag uitbreiden om alle gebi
 
 ### Voorbeeldquery - Namen van alle steden {#sample-names-all-cities}
 
-Dit is een eenvoudige vraag om `name`van alle ingangen in `city`schema terug te keren.
+Dit is een eenvoudige vraag om terug te keren `name`van alle vermeldingen in de `city`schema.
 
 **Voorbeeldquery**
 
@@ -314,7 +315,7 @@ Dit is een query om de details van één fragmentitem te retourneren op een spec
 
 ### Voorbeeldquery - Alle steden met een benoemde variatie {#sample-cities-named-variation}
 
-Als u een nieuwe variatie, genoemd &quot;Centrum van Berlijn&quot;(`berlin_centre`), voor `city` Berlijn creeert, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
+Als u een nieuwe variatie maakt met de naam &quot;Berlin Center&quot; (`berlin_centre`), voor de `city` Berlijn, dan kunt u een vraag gebruiken om details van de variatie terug te keren.
 
 **Voorbeeldquery**
 
@@ -485,7 +486,7 @@ query {
 
 ### Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot; {#sample-all-persons-jobs-smith}
 
-Hiermee worden alle `persons` gefilterd voor elk bestand met de naam `Jobs`of `Smith`.
+Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -539,7 +540,7 @@ query {
 
 ### Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot; {#sample-all-persons-not-jobs}
 
-Hiermee worden alle `persons` gefilterd voor elk bestand met de naam `Jobs`of `Smith`.
+Hiermee filtert u alles `persons` voor alle bestanden met de naam `Jobs`of `Smith`.
 
 **Voorbeeldquery**
 
@@ -604,9 +605,9 @@ query {
 }
 ```
 
-### Voorbeeldquery - Alle avonturen waarvan `_path` begint met een specifiek voorvoegsel {#sample-wknd-all-adventures-cycling-path-filter}
+### Voorbeeldquery - Alle avonturen waarvan `_path` begint met een bepaald voorvoegsel {#sample-wknd-all-adventures-cycling-path-filter}
 
-Alle `adventures` waarbij `_path` met een specifiek voorvoegsel (`/content/dam/wknd/en/adventures/cycling`) begint.
+Alles `adventures` waar `_path` begint met een bepaald voorvoegsel (`/content/dam/wknd/en/adventures/cycling`).
 
 **Voorbeeldquery**
 
@@ -651,7 +652,7 @@ query {
 
 ### Voorbeeldquery - Alle steden in Duitsland of Zwitserland met een bevolking tussen 400000 en 999999 {#sample-all-cities-d-ch-population}
 
-Hier wordt een combinatie van velden gefilterd. Een `AND` (impliciet) wordt gebruikt om `population`waaier te selecteren, terwijl `OR` (uitdrukkelijk) wordt gebruikt om de vereiste steden te selecteren.
+Hier wordt een combinatie van velden gefilterd. An `AND` (impliciet) wordt gebruikt om `population`bereik, terwijl een `OR` (expliciet) wordt gebruikt om de vereiste steden te selecteren.
 
 **Voorbeeldquery**
 
@@ -714,7 +715,7 @@ query {
 
 ### Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval {#sample-all-cities-san-ignore-case}
 
-Deze vraag ondervraagt voor alle steden die `SAN` in de naam hebben, ongeacht geval.
+Deze vraag ondervraagt voor alle steden die `SAN` in de naam, ongeacht het geval.
 
 **Voorbeeldquery**
 
@@ -765,7 +766,7 @@ query {
 
 ### Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen {#sample-array-item-occur-at-least-once}
 
-Deze query filtert op een array met een item (`city:na`) dat minstens één keer moet plaatsvinden.
+Deze query filtert op een array met een item (`city:na`) die ten minste één keer moet plaatsvinden.
 
 **Voorbeeldquery**
 
@@ -875,7 +876,7 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven met ten minste één werknemer met de naam &quot;Smith&quot; {#sample-companies-employee-smith}
 
-Deze query illustreert het filteren van `person` van `name` &quot;Smith&quot;, het retourneren van informatie van over twee geneste fragmenten - `company` en `employee`.
+Deze vraag illustreert het filtreren voor om het even welk `person` van `name` &quot;Smith&quot;, die informatie van over twee geneste fragmenten terugkeert - `company` en `employee`.
 
 **Voorbeeldquery**
 
@@ -941,7 +942,7 @@ query {
 
 ### Voorbeeldquery voor geneste inhoudsfragmenten - Alle bedrijven waar alle werknemers de &quot;Gamestar&quot;-prijs hebben gewonnen {#sample-all-companies-employee-gamestar-award}
 
-Deze query illustreert het filteren van drie geneste fragmenten: `company`, `employee` en `award`.
+Deze query illustreert het filteren van drie geneste fragmenten - `company`, `employee`, en `award`.
 
 **Voorbeeldquery**
 
@@ -1033,7 +1034,7 @@ query {
 
 ### Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB {#sample-metadata-awards-gb}
 
-Deze query illustreert het filteren van drie geneste fragmenten: `company`, `employee` en `award`.
+Deze query illustreert het filteren van drie geneste fragmenten - `company`, `employee`, en `award`.
 
 **Voorbeeldquery**
 
@@ -1109,8 +1110,8 @@ Deze steekproefvragen zijn gebaseerd op het project WKND. Dit heeft:
 
 Deze voorbeeldquery vraagt om:
 
-* voor alle inhoudsfragmenten van het type `article`
-* met de eigenschappen `path`en `author`.
+* voor alle inhoudfragmenten van het type `article`
+* met de `path`en `author` eigenschappen.
 
 **Voorbeeldquery**
 
@@ -1129,7 +1130,7 @@ Deze voorbeeldquery vraagt om:
 
 Deze query vraagt om:
 
-* voor alle inhoudsfragmenten van het type `adventure`
+* voor alle inhoudfragmenten van het type `adventure`
 * metadata
 
 **Voorbeeldquery**
@@ -1190,7 +1191,7 @@ Deze query vraagt om:
 
 Deze voorbeeldquery vraagt om:
 
-* voor één inhoudsfragment van het type `article` op een specifiek pad
+* voor één inhoudsfragment van type `article` op een bepaald pad
    * alle indelingen van inhoud:
       * HTML
       * Markering
@@ -1244,12 +1245,12 @@ Deze voorbeeldquery vraagt om:
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van het type `article` op een specifiek pad
+* voor één inhoudsfragment van type `article` op een bepaald pad
    * binnen dat, de weg en de auteur van het referenced (genestelde) fragment
 
 >[!NOTE]
 >
->Het veld `referencearticle` heeft het gegevenstype `fragment-reference`.
+>Het veld `referencearticle` heeft het gegevenstype Data `fragment-reference`.
 
 **Voorbeeldquery**
 
@@ -1277,7 +1278,7 @@ Deze query vraagt om:
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype `fragment-reference`, met de modellen `Article`, `Adventure` geselecteerd.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd.
 
 ```xml
 {
@@ -1303,7 +1304,7 @@ Deze query vraagt om:
 Deze query heeft twee voordelen:
 
 1. Alle inhoudsverwijzingen retourneren.
-1. Om de specifieke inhoudsverwijzingen van type `attachments` terug te keren.
+1. De specifieke inhoudsverwijzingen van het type retourneren `attachments`.
 
 Deze vragen worden ondervraagd:
 
@@ -1312,7 +1313,7 @@ Deze vragen worden ondervraagd:
 
 #### Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen {#sample-wknd-multiple-fragments-prefetched-references}
 
-De volgende vraag keert alle inhoudsverwijzingen door `_references` te gebruiken terug:
+De volgende vraag keert alle inhoudsverwijzingen terug door te gebruiken `_references`:
 
 ```xml
 {
@@ -1352,7 +1353,7 @@ De volgende query retourneert alle `attachments` - een specifiek veld (subgroep)
 
 >[!NOTE]
 >
->Het veld `attachments` heeft het gegevenstype `content-reference`, met verschillende formulieren geselecteerd.
+>Het veld `attachments` heeft het gegevenstype Data `content-reference`, waarbij verschillende formulieren zijn geselecteerd.
 
 ```xml
 {
@@ -1389,12 +1390,12 @@ De volgende query retourneert alle `attachments` - een specifiek veld (subgroep)
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van het type `bookmark` op een specifiek pad
+* voor één inhoudsfragment van type `bookmark` op een bepaald pad
    * binnen dat, de gealigneerde verwijzingen van RTE
 
 >[!NOTE]
 >
->De RTE gealigneerde verwijzingen worden gehydrateerd in `_references`.
+>De RTE gealigneerde verwijzingen worden gehydrateerd binnen `_references`.
 
 **Voorbeeldquery**
 
@@ -1435,7 +1436,7 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor één inhoudsfragment van het type `article` op een specifiek pad
+* voor één inhoudsfragment van type `article` op een bepaald pad
    * binnen dat kader de gegevens betreffende de wijziging: `variation1`
 
 **Voorbeeldquery**
@@ -1461,7 +1462,7 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudsfragmenten van het type `article` met een specifieke variatie: `variation1`
+* voor inhoudfragmenten van het type `article` met een specifieke variatie: `variation1`
 
 **Voorbeeldquery**
 
@@ -1486,7 +1487,7 @@ Deze query vraagt om:
 
 Deze query vraagt om:
 
-* voor inhoudsfragmenten van het type `article` binnen de landinstelling `fr`
+* voor inhoudfragmenten van het type `article` binnen de `fr` landinstelling
 
 **Voorbeeldquery**
 
@@ -1511,17 +1512,17 @@ Deze query vraagt om:
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* Een, of meer, [Sample Content Fragment Models](#sample-content-fragment-models-schemas) - vormen de basis voor de GraphQL-schema&#39;s
+* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-schema&#39;s
 
-* [Voorbeeld van ](#sample-content-fragments) fragmentatie van inhoud op basis van de bovenstaande modellen
+* [Voorbeeldinhoudsfragmenten](#sample-content-fragments) op basis van bovenstaande modellen
 
 ### Voorbeeld van modellen van inhoudsfragmenten (schema&#39;s) {#sample-content-fragment-models-schemas}
 
 Voor de steekproefvragen, zullen wij de volgende Modellen van de Inhoud, en hun onderlinge relaties (verwijzingen ->) gebruiken:
 
 * [Bedrijf](#model-company)
-->  [Persoon](#model-person)
-    ->  [Prijs](#model-award)
+-> [Persoon](#model-person)
+    -> [Uitreiking](#model-award)
 
 * [Plaats](#model-city)
 
@@ -1574,7 +1575,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Bedrijfsnaam | CEO | Werknemers |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-|  Little Pony Inc. | Adam Smith | Lara Croft<br>Slade tussenruimte |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### Persoon {#fragment-person}
@@ -1603,9 +1604,9 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 | Naam | Land | Bevolking | Categorieën |
 |--- |--- |--- |--- |
 | Bazel | Zwitserland | 172258 | stad:emea |
-| Berlin | Duitsland | 3669491 | city:capital<br>city:emea |
-| Boekarest | Roemenië | 1821000 |  city:capital<br>city:emea |
-| San Francisco |  VS |  883306 |  stad:strand<br>stad:na |
+| Berlin | Duitsland | 3669491 | stad:hoofdstad<br>stad:emea |
+| Boekarest | Roemenië | 1821000 |  stad:hoofdstad<br>stad:emea |
+| San Francisco |  VS |  883306 |  stad:strand<br>plaats:na |
 | San Jose |  VS |  102635 |  plaats:na |
 | Stuttgart |  Duitsland |  634830 |  stad:emea |
-|  Zurich |  Zwitserland |  415367 |  city:capital<br>city:emea |
+|  Zurich |  Zwitserland |  415367 |  stad:hoofdstad<br>stad:emea |

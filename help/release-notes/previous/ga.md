@@ -1,7 +1,7 @@
 ---
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven.'
-source-git-commit: 9b15215a68495a800e94a58b523e1b7baa0c0203
+source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 1%
@@ -552,9 +552,9 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 1. Sla het bestand op en start de AEM opnieuw.
 
-## Sites {#sites}
+### Sites {#sites}
 
-* **Werken met paginaversies**: Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
+* **Werken met paginaversies**: [Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die zijn gemaakt voor de verplaatsing](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
 ### Assets {#assets}
 

@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 610e37571df168bba91f2c2fe5b41e2f70ba748e
+source-git-commit: ab89683610a896e73c219c1fde4dde16dd8fbec6
 workflow-type: tm+mt
-source-wordcount: '3345'
+source-wordcount: '3358'
 ht-degree: 0%
 
 ---
@@ -165,16 +165,18 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft Azure Blob Storage | Binden | A: Ondersteund |
-| MongoDB Enterprise 4.0 | Bewaarplaats | A: Ondersteund `[2, 3]` |
+| MongoDB Enterprise 4.2 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
-| IBM DB2 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[4]` |
+| IBM DB2 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[5]` |
 | Database van oracle 12c (12.1.x) | Opslagplaats en Forms-database | R: Beperkte ondersteuning |
 | Microsoft SQL Server 2016 | Forms-database | A: Ondersteund |
 | **Apache Lucene (QuickStart ingebouwd)** | Zoekservice | A: Ondersteund |
 | Apache Solr | Zoekservice | A: Ondersteund |
 
 1. &#39;Bestandssysteem&#39; omvat blokopslag die voldoet aan POSIX. Dit omvat netwerkopslagtechnologie. Houd er rekening mee dat de prestaties van het bestandssysteem kunnen variëren en van invloed zijn op de algehele prestaties. U wordt aangeraden AEM te laden in combinatie met het netwerk-/externe bestandssysteem.
+1. Voor MongoDB Enterprise 4.2 is minimaal AEM 6.5 SP9 vereist.
 1. Delen via MongoDB wordt niet ondersteund in AEM.
 1. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
 1. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.

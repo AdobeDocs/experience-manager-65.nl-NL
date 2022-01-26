@@ -1,8 +1,6 @@
 ---
 title: Werken met 3D-elementen in Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Leer hoe u met 3D-middelen werkt in Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -10,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 9f08d529af0ec37d2bd2a4f479a172c6c950c47d
+source-git-commit: a13d6d10dd10605d2cb83a8622fae3a7e2590c93
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2246'
 ht-degree: 2%
 
 ---
@@ -27,7 +25,7 @@ Met Dynamic Media kunt u 3D-middelen uploaden, beheren, weergeven en leveren als
 
 Er is geen aanvullende configuratie vereist voor het gebruik van 3D-elementen in Dynamic Media.
 
-![Schoen in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Schoen in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *De pagina van details van een driedimensionale schoen.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -43,6 +41,10 @@ Zie ook [Ondersteunde 3D-indelingen](/help/assets/assets-formats.md).
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
 | STL | Stereolithografie | application/vnd.ms-pki.stl |  |
 | USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | *Alleen ondersteuning voor inname; er is geen weergave of interactie beschikbaar.* USDZ is een eigen 3D-indeling die door Safari- en iOS-apparaten kan worden weergegeven. |
+
+<!-- >[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
 
 ## Snel starten: 3D-middelen in Dynamic Media {#quick-start-three-d}
 
@@ -68,33 +70,33 @@ Zie [ConfigurE Dynamic Media-Cloud Services](/help/assets/config-dms7.md#configu
       * [Digitale elementen ordenen](/help/assets/organize-assets.md#organize-digital-assets).
       * [3D-middelen zoeken](/help/assets/search-assets.md).
       * [Aangepaste voorspelling gebruiken om zoekresultaten te filteren](/help/assets/search-assets.md#custompredicates).
-   * View 3D assets
+   * 3D-elementen weergeven
 
       * [3D-elementen weergeven en communiceren](#viewing-three-d-assets).
       * [De voorinstelling voor de dimensionale viewer beheren](/help/assets/managing-viewer-presets.md).
    * Werken met metagegevens van 3D-elementen
 
-      * [Manage metadata for digital assets](/help/assets/metadata.md).
-      * [Metadata schemas](/help/assets/metadata-schemas.md).
+      * [Metagegevens voor digitale elementen beheren](/help/assets/metadata.md).
+      * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md).
 
 
 
-1. **Publish 3D assets**
+1. **3D-elementen publiceren**
 
    * [Statische Dynamic Media 3D-elementen publiceren](#publishing-three-d-assets)
    * [Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met de Dimensional-viewer](#alternate-publish-methods)
 
 ## Informatie over het weergeven van en communiceren met 3D-elementen {#viewing-three-d-assets}
 
-In deze sectie wordt beschreven hoe u 3D-elementen op twee verschillende manieren kunt weergeven en gebruiken: vanuit de pagina met elementdetails en vanuit de 3D-mediacomponent in Sites.
+In deze sectie wordt beschreven hoe u 3D-elementen op twee verschillende manieren kunt weergeven en gebruiken: vanuit de pagina met elementdetails en vanuit de 3D-mediacomponent in Experience Manager Sites.
 
-The interactive 3D viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
+De interactieve 3D-viewer bevat onder andere een verzameling interactieve besturingselementen voor camera waarmee u het 3D-element kunt draaien, zoomen en pannen.
 
 De tijd die nodig is om een 3D-element te openen in de weergave Asset Details is afhankelijk van verschillende factoren. Deze factoren zijn onder andere:
 
 * Bandbreedte voor de server.
-* Latencies to the server
-* Complexity of the image.
+* Koppelingen naar de server
+* Complexiteit van de afbeelding.
 
 Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, laptop of mobiel aanraakapparaat, ook belangrijk om te overwegen wanneer u de camera interactief manipuleert. Een redelijk krachtig systeem met goede grafische mogelijkheden kan de interactieve 3D-kijkervaring vloeiender en gunstiger maken.
 
@@ -153,16 +155,16 @@ Een volledig interactief 3D-element zoals weergegeven in **[!UICONTROL Preview]*
 
 1. Tijdens het aanmelden **[!UICONTROL Preview]** Voer een van de volgende handelingen uit in de modus:
 
-   | Weergave | Beschrijving | Mouse action | Handeling op aanraakscherm |
+   | Weergave | Beschrijving | Muishandeling | Handeling op aanraakscherm |
    | --- | --- | --- | --- |
-   | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Druk met één vinger en sleep. |
-   | **Pan your camera** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
+   | **De camera draaien** | Draai de weergave rond de 3D-scène en -objecten. | Klik met de linkermuisknop en sleep. | Druk met één vinger en sleep. |
+   | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
    | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon. |  |  |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
 
-## About working with the 3D Media component {#working-with-three-d-media-component}
+## Informatie over het werken met de 3D-mediacomponent {#working-with-three-d-media-component}
 
 Dynamic Media bevat een Dynamic Media 3D Media-component die u in Adobe Experience Manager Sites kunt gebruiken om interactieve weergave van 3D-modellen op uw webpagina&#39;s mogelijk te maken.
 
@@ -181,15 +183,15 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u in Adobe Experien
    ![3d-media-component-structuur](/help/assets/assets-dm/3d-media-component-structure.png)
 
 1. Een leeg gebied selecteren in het dialoogvenster **[!UICONTROL Layout Container]** gebied zodat selecteert u het en opent u de bijbehorende werkbalk.
-1. On the toolbar, select the **[!UICONTROL Policy]** icon to open the **[!UICONTROL Policy Editor]**.
-1. In the **[!UICONTROL Properties]** section, under the **[!UICONTROL Allowed Components]** tab, scroll to **[!UICONTROL Dynamic Media]**, then expand the list and check **[!UICONTROL 3D Media]**.
+1. Selecteer op de werkbalk de optie **[!UICONTROL Policy]** pictogram om het **[!UICONTROL Policy Editor]**.
+1. In de **[!UICONTROL Properties]** onder **[!UICONTROL Allowed Components]** tab, schuiven naar **[!UICONTROL Dynamic Media]** Vouw vervolgens de lijst uit en controleer **[!UICONTROL 3D Media]**.
 1. Selecteren **[!UICONTROL Done]** om de wijzigingen op te slaan en het dialoogvenster **[!UICONTROL Policy Editor]**.
 
    U kunt de Dynamic Media 3D Media-component nu op alle pagina&#39;s plaatsen die deze sjabloon gebruiken.
 
 ## De 3D-mediacomponent toevoegen aan een webpagina {#adding-the-three-d-media-component-to-a-web-page}
 
-If you use Experience Manager as your web content management system, you can add 3D assets to your web pages by way of the 3D Media component.
+Als u Experience Manager gebruikt als het webcontentbeheersysteem, kunt u 3D-elementen toevoegen aan uw webpagina&#39;s via de 3D Media-component.
 
 Zie ook [Dynamic Media-elementen toevoegen op pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
@@ -200,7 +202,7 @@ Zie ook [Dynamic Media-elementen toevoegen op pagina&#39;s](/help/assets/adding-
 
    ![3d-media-component-add](/help/assets/assets-dm/3d-media-component-edit.png)
 
-1. On the toolbar, select the Side Panel icon to toggle or &quot;turn on&quot; the display of the panel.
+1. Selecteer op de werkbalk het pictogram Zijpaneel om de weergave van het deelvenster in of uit te schakelen.
 
 1. Selecteer in het zijpaneel het pictogram met het plusteken om het dialoogvenster **[!UICONTROL Components]** lijst.
 
@@ -208,7 +210,7 @@ Zie ook [Dynamic Media-elementen toevoegen op pagina&#39;s](/help/assets/adding-
 
 1. Sleep de **[!UICONTROL 3D Media]** uit de **[!UICONTROL Components]** Hiermee geeft u een lijst weer naar de locatie op de pagina waar u de 3D-viewer wilt weergeven.
 
-You are now ready to assign a 3D asset to the component.
+U kunt nu een 3D-element aan de component toewijzen.
 
 Zie [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-asset-to-the-component).
 
@@ -219,7 +221,7 @@ Zie [Een 3D-element toewijzen aan de 3D-mediacomponent](#assigning-a-three-d-ass
 
    ![3d-media-component-config](/help/assets/assets-dm/3d-media-component-config.png)
 
-1. In the 3D Media dialog box, from the Viewer Preset drop-down list, select **[!UICONTROL Dimensional]** to assign the Dimensional viewer preset to the component.
+1. Selecteer in het dialoogvenster 3D-media in de vervolgkeuzelijst Voorinstelling viewer de optie **[!UICONTROL Dimensional]** om de voorinstelling voor de maatviewer toe te wijzen aan de component.
 
    ![3d-media-component-edit-config](/help/assets/assets-dm/3d-media-component-edit-config.png)
 
@@ -231,9 +233,9 @@ Nadat u een 3D-mediacomponent aan een webpagina hebt toegevoegd, kunt u er een 3
 
 Zie [De 3D-mediacomponent toevoegen aan een webpagina](#adding-the-three-d-media-component-to-a-web-page).
 
-**To assign a 3D asset to the 3D Media component:**
+**Een 3D-element toewijzen aan de 3D-mediacomponent:**
 
-1. In the Experience Manager Sites page editor, select the **[!UICONTROL Assets]** icon to open **[!UICONTROL Assets]** in the side panel.
+1. Selecteer in de Experience Manager Sites-pagina-editor de optie **[!UICONTROL Assets]** pictogram om te openen **[!UICONTROL Assets]** in het zijpaneel.
 1. Selecteer in de vervolgkeuzelijst de optie **[!UICONTROL 3D]** om alleen 3D-elementbestandstypen weer te geven.
 1. Zoek in het zijpaneel naar het 3D-element dat u wilt weergeven op de pagina die u bewerkt.
 1. Sleep het 3D-element van het zijpaneel Middelen naar het deelvenster **[!UICONTROL 3D Media]** die u eerder aan de pagina hebt toegevoegd.
@@ -260,7 +262,7 @@ Zie ook [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).
 
 **Statische Dynamic Media 3D-elementen publiceren:**
 
-1. Open a 3D asset (GLB, OBJ, or STL file format) so you can view it in the asset details page.
+1. Open een 3D-element (GLB-, OBJ- of STL-bestandsindeling), zodat u dit kunt bekijken op de pagina met elementdetails.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Quick Publish]**.
 
    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
@@ -279,7 +281,7 @@ Zie ook [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).
 
 1. Selecteren **[!UICONTROL URL]** zodat u de directe productie-URL van het 3D-element kunt weergeven, die u kunt kopiëren en gebruiken op webpagina&#39;s.
 
-### Alternate methods for publishing Dynamic Media 3D assets using the Dimensional viewer {#alternate-publish-methods}
+### Alternatieve methoden voor het publiceren van Dynamic Media 3D-elementen met de Dimensional-viewer {#alternate-publish-methods}
 
 Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-elementen als u dat doet *niet* gebruik Experience Manager als uw WCM.
 
@@ -287,6 +289,6 @@ Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-eleme
 
    Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
-* **[!UICONTROL Embed]** - Use **[!UICONTROL Embed]** when you want to view a Dynamic Media 3D asset embedded on a web page using the Dimensional viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
+* **[!UICONTROL Embed]** - Gebruik **[!UICONTROL Embed]** als u een Dynamic Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
 
-   See [Embed the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+   Zie [De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

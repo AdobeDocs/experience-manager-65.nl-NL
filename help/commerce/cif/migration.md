@@ -1,25 +1,25 @@
 ---
 title: Migratie naar de AEM Commerce Integration Framework (CIF)-invoegtoepassing
 description: Hoe te om aan het AEM Kader van de Integratie van de Handel (CIF) toe:voegen-on van een oude versie te migreren
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-# De Gids van de migratie voor de Experience Manager toe:voegen-aan {#cif-migration}
+# Migratiehandleiding voor de invoegtoepassing Experience Manager {#cif-migration}
 
 Deze handleiding helpt u de gebieden te identificeren die u voor de Experience Manager toe:voegen-op migratie moet bijwerken.
 
 ## CIF-invoegtoepassing
 
-De toe:voegen-on CIF is beschikbaar voor AEM 6.5 via [het portaal van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en verstrekt de zelfde eigenschappen zoals de toe:voegen-on CIF voor Experience Manager als Cloud Service.
+CIF-invoegtoepassing is beschikbaar voor AEM 6.5 via de [Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Het is compatibel en verstrekt de zelfde eigenschappen zoals de toe:voegen-on CIF voor as a Cloud Service Experience Manager.
 
 Zie [Aan de slag met AEM Inhoud en Handel](getting-started.md).
 
-Om projecten te steunen die CIF opstellen, verstrekt Adobe [AEM de Componenten van de Kern van CIF](https://github.com/adobe/aem-core-cif-components).
+Om projecten te steunen die CIF opstellen, verstrekt Adobe [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components).
 
 ## Productcatalogus
 
@@ -27,11 +27,11 @@ Het importeren van productcatalogusgegevens wordt niet ondersteund door de CIF-i
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Magento open-source](https://magento.com/products/magento-open-source).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Magento opensource](https://business.adobe.com/products/magento/open-source.html).
 
 ## Ervaringen met AEM renderen in productcatalogus
 
-Als u catalogusblauwdruk gebruikt met Klassieke CIF, moet u de workflow van de productcatalogus bijwerken. De CIF-invoegtoepassing geeft productcataloguservaringen nu direct weer met behulp van AEM catalogussjablonen. Geen replicatie van productgegevens of productpagina&#39;s meer wordt vereist.
+Als u catalogusblauwdruk gebruikt met Klassieke CIF, moet u de workflow van de productcatalogus bijwerken. Met de invoegtoepassing CIF worden de ervaringen met productcatalogi nu direct weergegeven met AEM catalogussjablonen. Geen replicatie van productgegevens of productpagina&#39;s meer wordt vereist.
 
 ## Interactie voor gegevens en winkelen die niet in cache kunnen worden geplaatst
 

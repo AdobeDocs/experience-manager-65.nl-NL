@@ -2,17 +2,17 @@
 title: AEM en integratie van derde partijen in de handel via het kader voor integratie van de handel
 description: Ondernemingen kunnen aanvullende handelsoplossingen van derden nodig hebben om hun winkel te kunnen bedienen. Het Kader van de Integratie van de Handel (CIF) kan in dergelijke integratiescenario's worden gebruikt om een derdehandelsoplossing met Adobe Experience Manager te verbinden gebruikend I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: e99899a4-df86-4108-991a-8b30d303a279
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
 
-# AEM en integratie van de Handel van de derde die het Kader van de Integratie van de Handel gebruiken {#aem-third-party}
+# AEM en integratie van derde partijen in de handel met behulp van het kader voor integratie van de handel {#aem-third-party}
 
-De integratie van een niet-Adobe Commerce-oplossing is een gemeenschappelijk scenario voor CIF. oplossingen van derden met verschillende API&#39;s en schema&#39;s worden verbonden via een integratielaag.
+De integratie van niet-Adobe Commerce-oplossingen is een algemeen scenario voor CIF. oplossingen van derden met verschillende API&#39;s en schema&#39;s worden verbonden via een integratielaag.
 
 ## Architectuur {#architecture}
 
@@ -28,7 +28,7 @@ Als de Experience Manager op aanvraag gegevens ophaalt, zijn realtime API&#39;s 
 
 >[!TIP]
 >
->Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Magento open-source](https://magento.com/products/magento-open-source).
+>Als er geen real-time API&#39;s beschikbaar zijn, moet een externe productcache met API&#39;s worden gebruikt voor de integratie. Voorbeeld [Magento opensource](https://business.adobe.com/products/magento/open-source.html).
 
 Het is niet nodig om het volledige schema GraphQL uit te voeren, enkel de voorwerpen van het schema om de gewenste gebruik-gevallen toe te laten.
 
@@ -38,16 +38,16 @@ CIF breidt de Experience Manager met de hulpmiddelen van het de productcatalogus
 
 De integratie van de API&#39;s van de productcatalogus is vereist om deze gebruiksgevallen te ontgrendelen.
 
-## Gebruiksscenario&#39;s vooraan
+## Voorste gebruikscenario&#39;s
 
-[AEM CIF Core-](https://github.com/adobe/aem-core-cif-components) componenten halen gegevens op en wisselen deze uit via de door CIF ondersteunde Adobe Commerce-API&#39;s. Om componenten te hergebruiken, moeten de respectieve APIs worden uitgevoerd.
+[AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) gegevens ophalen en uitwisselen via de door CIF ondersteunde Adobe Commerce API&#39;s. Om componenten te hergebruiken, moeten de respectieve APIs worden uitgevoerd.
 
 De aanbeveling voor prestaties kritieke cliënt-zijcomponenten moet direct met de derdeoplossing communiceren om latentie te vermijden.
 
-## Een integratie ontwikkelen {#develop-integration}
+## Ontwikkeling van integratie {#develop-integration}
 
-Wij adviseren gebruikend [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) voor de integratielaag. Zij is opgenomen in de cif-opslagfactor voor derden. Aangezien het met een microdienst-als benadering werkt, is het geschikt om gemakkelijk veelvoudige oplossingen te integreren.
+We raden u aan [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html) voor de integratielaag. Zij is opgenomen in de cif-opslagfactor voor derden. Aangezien het met een microdienst-als benadering werkt, is het geschikt om gemakkelijk veelvoudige oplossingen te integreren.
 
-De [verwijzingsimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel GraphQL wordt ondersteund, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
+De [referentieimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel GraphQL wordt ondersteund, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
 
 Deze integratielaag wordt niet vereist als een derdelaag (zoals Mulesoft) beschikbaar is of de integratie bovenop de derdeoplossing wordt gebouwd.

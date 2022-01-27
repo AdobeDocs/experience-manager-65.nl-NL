@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM2021
 description: Opmerkingen bij de release AEM2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 98ba3edb3b9e93fa13a0f0418f1b17323d5a7233
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1314'
 ht-degree: 7%
 
 ---
@@ -17,7 +17,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
-| CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
+| CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -53,7 +53,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF-pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
 
-* Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten worden gebouwd gebruikend Magento uitbreidbare Peregrine componenten
+* Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten op deze pagina&#39;s worden samengesteld met behulp van uitbreidbare Peregrine-onderdelen van Adobe Commerce
 
 * Handelaars kunnen bepaalde categorieën van de productcatalogus in de navigatie verbergen gebruikend de achtergrond van de Handel. De CIF component van de Kern van de Navigatie eerbiedigt de handel achterste configuratie &quot;omvat in menu&quot;om categorieën in navigatie te tonen/te verbergen
 
@@ -195,7 +195,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw
 
-* Ondersteuning voor Magento 2.4.2
+* Ondersteuning voor Adobe Commerce 2.4.2
 
 ### Verbeterde functies
 

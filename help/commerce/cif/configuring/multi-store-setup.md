@@ -1,44 +1,44 @@
 ---
 title: Multi-Store-installatie voor handel
-description: Leer hoe u meerdere winkelweergaven van Magento tot AEM kunt toewijzen. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
-sub-product: Handel
+description: Leer hoe u meerdere winkelweergaven van Adobe Commerce aan AEM koppelt. Hierdoor kunnen projecten ondersteuning bieden voor meertalige en meertalige gebruiksgevallen.
+sub-product: Commerce
 doc-type: technical-video
 activity: setup
 audience: administrator
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
-# Commerce Multi-Store Setup {#multi-store}
+# Multi-Store-installatie voor handel {#multi-store}
 
-De AEM CIF Core Componenten kunnen op veelvoudige AEM plaatsstructuren worden gebruikt en de onderliggende cliënt GraphQL implementatie kan met verschillende Magento opslag/opslagmeningen verbinden. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
+De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Adobe Commerce-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
-In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Magento Store Views met Adobe Experience Manager Sites.
+In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Adobe Commerce Store Views met Adobe Experience Manager Sites.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
 AEM functies voor beheer van meerdere sites van Live Copy en Language Copy worden in combinatie met het Commerce Integration Framework gebruikt om sites wereldwijd te beheren in verschillende regio&#39;s en regio&#39;s.
 
-De geadviseerde opstelling is een 1:1 verhouding tussen AEM plaats en de opslagmening van de Magento te gebruiken.
+De aanbevolen setup bestaat uit het gebruik van een 1:1-relatie tussen AEM site en de Adobe Commerce-winkelweergave.
 
 Voer de onderstaande stappen uit om een AEM-site aan te sluiten en CIF Core-componenten te AEM aan een speciale winkelweergave:
 
 ## Configuratie {#configuration}
 
-1. Meerdere winkels configureren en weergaven opslaan volgens het patroon dat wordt beschreven in [Magento Websites, Winkels en weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Meerdere winkels configureren en weergaven opslaan volgens het in [Adobe Commerce-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 
-2. Zorg ervoor dat de verbinding tussen AEM &amp; Magento werkt.
+2. Controleer of de verbinding tussen AEM en Adobe Commerce werkt.
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * Ga in AEM naar Extra -> Algemeen -> [Configuratiebrowser](/help/sites-administering/configurations.md#using-configuration-browser)
+   * Ga AEM naar Gereedschappen -> Algemeen -> [Configuratiebrowser](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een nieuwe configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
@@ -46,19 +46,19 @@ Voer de onderstaande stappen uit om een AEM-site aan te sluiten en CIF Core-comp
 
    >[!TIP]
    >
-   > Commerciële catalogi kunnen worden geadresseerd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Magento 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   > Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar AEM Sites-console
-   * Navigeer naar het gebied of de taalhoofdmap van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
+   * Navigeer naar het gebied of de taalhoofdmap van de sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
    * Pagina-eigenschappen selecteren en pagina-eigenschappen openen
    * Selecteer het tabblad Geavanceerd
-   * Selecteer in de sectie `Configuration` de configuratie die u stapsgewijs hebt gemaakt
+   * In de `Configuration` de sectie selecteert de configuratie u bij stap creeerde
 
 ## Aanvullende bronnen
 
-* [Magento-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+* [Adobe Commerce-websites, -winkels en -weergaven](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
 * [AEM CIF Core-componenten - Configuratie van meerdere winkels/sites](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-store--site-configuration)
 * [Beheer van meerdere sites gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](/help/sites-administering/msm.md)

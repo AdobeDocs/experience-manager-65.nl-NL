@@ -1,11 +1,10 @@
 ---
 title: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
 description: AEM - Veelgestelde vragen over integratie van de handel met behulp van het kader voor integratie van de handel
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45,aece1190-9530-4060-9b08-022da7068987
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
@@ -14,13 +13,13 @@ ht-degree: 0%
 
 ## 1. Wordt CIF GraphQL slechts gebruikt voor handel of zal dit voor het vragen van inhoud beschikbaar zijn authored op AEM JCR?
 
-Adobe heeft de GraphQL APIs van Magento als zijn officiële handel API voor alle handel verwante gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Magento en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
+Adobe heeft Adobe Commerce GraphQL APIs als zijn officiële handel API voor alle handelsgerelateerde gegevens goedgekeurd. Daarom gebruikt AEM GraphQL om handelsgegevens met Adobe Commerce en met om het even welke handelingsmotor via I/O Runtime uit te wisselen. Deze GraphQL API is onafhankelijk van AEM GraphQL API om tot Inhoudsfragmenten toegang te hebben.
 
-## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce (Magento) admin worden opgeslagen en van verwijzingen voorzien? Hoe kunnen activa van Dynamic Media worden verbruikt?
+## 2. Kunnen de activa van het Product (beelden) van AEM via Adobe Commerce worden opgeslagen en van verwijzingen voorzien admin? Hoe kunnen activa van Dynamic Media worden verbruikt?
 
-Er is geen officiële AEM Assets - Magento-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+Er is geen officiële AEM Assets - Adobe Commerce-integratie beschikbaar. Er is een partnerschakelaar beschikbaar op [marktplaats](https://marketplace.magento.com/bounteous-dam.html).
 
-Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Magento. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
+Of als tijdelijke oplossing kunt u productelementen (afbeeldingen) opslaan in AEM Assets, maar u moet de URL&#39;s van de middelen handmatig opslaan in Adobe Commerce. Dynamic Media maakt nu deel uit van AEM Assets en zal op dezelfde manier werken.
 
 ## 3. Maakt het uit waar de handelsoplossing wordt ingezet? (Op prem of in de cloud)
 
@@ -40,7 +39,7 @@ Dit hangt af van een paar extra aspecten die u in overweging moet nemen. Wat is 
 
 ## 7. Hoe speelt PIM in dit kader?
 
-PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld. Onze aanbeveling is om PIM te integreren met de motor van de handel (Magento of anderen) zodat PIM gegevens dan van de handelsinrichting kunnen worden teruggewonnen.
+PIM-gegevens worden via GraphQL-verzoeken aan AEM en clients beschikbaar gesteld. Onze aanbeveling is om PIM te integreren met de motor van de handel (Adobe Commerce of anderen) zodat PIM-gegevens kunnen worden opgehaald van de motor van de handel.
 
 ## 8. Verzendt u ook de prijzen en andere gegevens in cache via Dispatcher. Vormt dat een veelvuldige uitdaging voor het ongeldig maken van cache?
 
@@ -48,11 +47,11 @@ Dynamische gegevens zoals prijs of voorraad worden niet in de cache opgeslagen o
 
 ## 9. Hoe werkt cachevervalsing voor AEM Dispatcher met AEM en handel?
 
-We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Raadpleeg [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html) voor meer informatie over op TTL gebaseerde cachedetectie
+We raden u aan op TTL gebaseerde cachevalidatie in te stellen voor pagina&#39;s die in cache zijn geplaatst op de Dispatcher. Voor dynamische informatie zoals prijs of voorraad raden we aan de datumclient-kant weer te geven. Voor meer informatie over op TTL-Gebaseerde geheim voorgeheugenongeldigverklaring, gelieve te verwijzen naar [AEM Dispatcher](https://helpx.adobe.com/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10 Bestaat er een aanbeveling voor een uniforme zoekopdracht in AEM inhoud met Commerce?
 
-Een verwijzingsimplementatie van het productonderzoek wordt verstrekt maar geen verenigd onderzoek met inhoud. Deze eigenschap is gewoonlijk zeer klantspecifiek en beter opgelost op een project-specifiek niveau.
+Er is een verwijzingsimplementatie voor productzoekopdrachten beschikbaar, maar er is geen uniforme zoekopdracht met inhoud. Deze eigenschap is gewoonlijk zeer klantspecifiek en beter opgelost op een project-specifiek niveau.
 
 ## 11. Hoe werkt Search met AEM en handel die CIF gebruiken?
 
@@ -60,7 +59,7 @@ CIF verstrekt de bar van het Onderzoek en de componenten van het Resultaat van h
 
 ## 12. Hoe kunnen productgegevens in MSM of vertalingen worden gebruikt?
 
-Productgegevens worden meestal al vertaald in PIM of in Magento. De integratie AEM - Magento ondersteunt de verbinding met meerdere Magento-winkels en -winkelweergaven. In een MSM-instelling wordt doorgaans één AEM site gekoppeld aan één Magento-winkelweergave.
+Productgegevens worden meestal al vertaald in PIM of in Adobe Commerce. De integratie AEM - Adobe Commerce ondersteunt de verbinding met meerdere Adobe Commerce-winkels en -winkelweergaven. In een MSM-installatie is doorgaans één AEM site gekoppeld aan één Adobe Commerce-winkelweergave.
 
 ## 13. Is er een manier om de productgegevens te verbeteren met commerciële tekst? Waar doe je dit? In AEM of in de handelsoplossing?
 
@@ -68,12 +67,12 @@ We raden u aan marketinggerelateerde gegevens en inhoud in AEM te beheren. Decor
 
 ## 14. Hoe kunnen wij naleving PCI verzekeren wanneer het gebruiken van AEM voor de volledige presentatielaag?
 
-We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Raadpleeg <https://magento.com/pci-compliance> voor meer informatie over Magento PCI-compatibiliteit
+We raden je aan geabstraheerde betalingsmethoden te gebruiken. Dit zet de browser cliënt in directe communicatie met de leverancier van de betaalgateway zodat noch Adobe of de handelsoplossingen kaarthoudende gegevens houden of overgaan. Deze benadering vereist slechts niveau 3 naleving PCI. Nochtans, zijn er extra dingen om als volledig PCI volgzaam te beschouwen zoals hoe de werknemers met het systeem en de gegevens in wisselwerking staan. Voor meer informatie over Adobe Commerce PCI-compatibiliteit raadpleegt u [PCI-compatibiliteit](https://business.adobe.com/products/magento/pci-compliance.html)
 
-## 15. Als ik gebruik van AEM en Magento cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
+## 15. Als ik gebruik van AEM en Adobe Commerce cloud-versies, is deze gezamenlijke oplossing PCI-compatibel?
 
 Ja, de zelfbeoordelingsvragenlijst D en de verklaring van naleving zijn op verzoek beschikbaar.
 
 ## 16. Hoe kan ik om een I/O Runtime proefvergunning verzoeken?
 
-U kunt om een proefvergunning verzoeken om I/O Runtime [hier](https://adobeio.typeform.com/to/obqgRm) te gebruiken.
+U kunt een proeflicentie aanvragen om I/O Runtime te gebruiken [hier](https://adobeio.typeform.com/to/obqgRm).

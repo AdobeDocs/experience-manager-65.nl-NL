@@ -4,8 +4,8 @@ description: AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschap
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
+source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java en JavaScript</li>
      <li>Geen handelsgegevens opgeslagen in JCR-gegevensopslagruimte</li>
     </ul> </td>
@@ -81,12 +81,12 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
   <tr>
    <td>Gestandaardiseerd gegevensmodel</td>
    <td>Nee</td>
-   <td>Ja, Magento GraphQL-schema</td>
+   <td>Ja, Adobe Commerce GraphQL-schema</td>
   </tr>
   <tr>
    <td>Beschikbaarheid</td>
    <td><p>Ja. SAP Commerce Cloud (Extensie bijgewerkt ter ondersteuning van AEM 6.4 en Hybris 5 (standaard) en handhaaft compatibiliteit met Hybris 4</p> <p>Salesforce Commerce Cloud (connector open-sourced voor ondersteuning van AEM 6.4)</p> </td>
-   <td>Ja via open bron via GitHub. Magento Commerce (Ondersteunt Magento 2.3.2 (standaard) en compatibel met Magento 2.3.1).</td>
+   <td>Ja via open bron via GitHub. Adobe Commerce (ondersteunt 2.3.2 (standaard) en compatibel met 2.3.1).</td>
   </tr>
   <tr>
    <td>Wanneer gebruiken</td>
@@ -105,7 +105,7 @@ eCommerce handelt samen met Product Information Management (PIM) de activiteiten
 * Live en gecentraliseerde opslagrecords
 * Webinterfaces
 
-AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context en de marketingstrategieën van de doelbezoeker. bijvoorbeeld:
+AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context en de handelsstrategieën van de doelbezoeker. bijvoorbeeld:
 
 * Productpagina&#39;s
 * Winkelwagentjes
@@ -120,15 +120,15 @@ De implementatie maakt realtime toegang tot productinformatie mogelijk. Dit kan 
 
 >[!NOTE]
 >
->Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Voor meer informatie, zie [Het Opstellen van eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Als u het integratieframework wilt gebruiken met externe eCommerce-providers, moet u eerst de vereiste pakketten installeren. Zie voor meer informatie [eCommerce implementeren](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Voor informatie over het uitbreiden van de mogelijkheden van de eCommerce, zie [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Voor informatie over het uitbreiden van eCommerce-mogelijkheden raadpleegt u [Ontwikkeling van eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
-## Belangrijkste kenmerken {#main-features}
+## Belangrijkste functies {#main-features}
 
 AEM eCommerce biedt:
 
-* Een aantal **out-of-the-box AEM componenten** om te illustreren wat voor uw project kan worden bereikt:
+* Een aantal **out-of-the-box AEM componenten** om te illustreren wat u kunt bereiken voor uw project:
 
    * Productweergave
    * Winkelwagentje
@@ -143,7 +143,7 @@ AEM eCommerce biedt:
    >
    >Met het integratieframework dat AEM biedt, kunt u ook extra AEM maken voor handelsmogelijkheden, onafhankelijk van uw specifieke eCommerce-engine.
 
-* **Zoeken** :
+* **Zoeken** - met gebruikmaking van:
 
    * de AEM
    * het zoeken van het eCommerce-systeem
@@ -152,15 +152,15 @@ AEM eCommerce biedt:
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Gebruikt de AEM mogelijkheid om uw inhoud **op meerdere kanalen te presenteren**, of dat nu het volledige browservenster of het mobiele apparaat is. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
+* Gebruikt de AEM **presenteer uw inhoud op meerdere kanalen**, of dit nu het volledige browservenster of het mobiele apparaat is. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* De mogelijkheid om **uw eigen integratieimplementatie te ontwikkelen op basis van het [AEM eCommerce-framework](#the-framework)**.
+* De mogelijkheid om **uw eigen integratieimplementatie ontwikkelen op basis van de [AEM eCommerce-kader](#the-framework)**.
 
    De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
 
-* De mogelijkheid om **ervaringsgestuurde handel te ontwikkelen op basis van verkoopgegevens en activiteit**. Dit staat u toe om vele scenario&#39;s te realiseren:
+* De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit staat u toe om vele scenario&#39;s te realiseren:
 
    * Een voorbeeld hiervan kan zijn het verlagen van de verzendkosten wanneer de totale bestelling een bepaald bedrag overschrijdt.
    * Een andere mogelijkheid is mogelijk om seizoensgebonden aanbiedingen te doen die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
@@ -179,9 +179,9 @@ AEM eCommerce biedt:
    * Historie van volledige volgorde
    * Catalogusupdate uitvoeren
 
-## Het framework {#the-framework}
+## Het kader {#the-framework}
 
-In de sectie [Concepts](/help/commerce/cif-classic/administering/concepts.md) wordt het framework gedetailleerder beschreven, maar de volgende secties bieden een snelle weergave op hoog niveau van het framework:
+De [Concepten](/help/commerce/cif-classic/administering/concepts.md) In dit hoofdstuk wordt het kader nader beschreven, maar wordt het kader op hoog niveau en snel bekeken:
 
 ### Wat? {#what}
 

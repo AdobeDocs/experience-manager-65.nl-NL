@@ -1,21 +1,21 @@
 ---
-title: Technische vereisten
+title: Technical Requirements
 seo-title: Technical Requirements
-description: Een lijst met de ondersteunde client- en serverplatforms voor AEM.
+description: A list of the supported client and server platforms for AEM.
 seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 07fccc7b34a2d74b6e7837ac2f05e2f9d845fba1
+source-git-commit: cda5e0b545903333d928f14e043a931898d87dc3
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3362'
 ht-degree: 0%
 
 ---
 
 # Technische vereisten{#technical-requirements}
 
-Adobe ondersteunt Adobe Experience Manager (AEM) op de platforms, zoals wordt beschreven in de volgende informatie in dit document.
+Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
 
 Neem contact op met de leverancier van het platform voor alle problemen die specifiek betrekking hebben op het platform.
 
@@ -25,7 +25,7 @@ Neem contact op met de leverancier van het platform voor alle problemen die spec
 
 ## Vereisten {#prerequisites}
 
-Minimumeisen voor de installatie van Adobe Experience Manager:
+Minimum requirements for installing Adobe Experience Manager:
 
 * Geïnstalleerd Java Platform, Standard Edition JDK of andere ondersteunde toepassingen [Java Virtual Machines](#java-virtual-machines)
 * QuickStart-bestand voor Experience Manager (zelfstandige WAR voor JAR- of webtoepassingsimplementatie)
@@ -145,9 +145,9 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
 | Oracle Java SE 9 JDK | Z: Niet ondersteund `[2]` |
 | Oracle Java SE 8 JDK - 64-bits | A: Ondersteund `[2]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[3]` |
-| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[3]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[3]` |
 
-1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie de [Azul Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie .
+1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. See the [Azul Java support for Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) for more information.
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. De steun en de verspreiding van het Oracle Java SE JDK, met inbegrip van alle onderhoudsupdates van LTS versies voorbij het eind van de openbare updates, zullen door Adobe direct voor alle AEM klanten worden gesteund die gebruik maken van de Oracle Java SE technologie **tot december 2022**. Zie de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie .
 
@@ -242,7 +242,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Oracle Solaris 11 | Z: Niet ondersteund |
 | IBM AIX 7.2 | Z: Niet ondersteund |
 
-1. Linux Kernel 2.6, 3.x en 4.x omvat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat Enterprise Linux 7 en Red Hat Enterprise Linux 8. AEM ondersteunt Linux kernel 4.x, dat RHEL8 omvat (kernel versie 4.18). AEM Forms OSGi wordt ook ondersteund op RHEL8.
+1. Linux Kernel 2.6, 3.x en 4.x omvat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat Enterprise Linux 7 en Red Hat Enterprise Linux 8.
 1. AEM Forms wordt alleen ondersteund op Ubuntu 16.04 LTS
 1. Linux-distributie ondersteund door Adobe Managed Services
 1. Microsoft Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
@@ -409,20 +409,20 @@ De volgende hardwarevereisten zijn van toepassing voor zowel Linux als Windows:
 
 #### Linux {#linux}
 
-Als u Dynamic Media op Linux gebruikt, moet aan de volgende voorwaarden worden voldaan:
+If you are using Dynamic Media on Linux, the following prerequisites need to be met:
 
 * RedHat Enterprise 7 of CentOS 7 en hoger met de nieuwste herstelpatches
 * 64-bits besturingssysteem
-* Wisselen uitgeschakeld (aanbevolen)
-* SELinux uitgeschakeld (zie onderstaande opmerking)
+* Swapping disabled (recommended)
+* SELinux disabled (See note that follows)
 
 >[!NOTE]
 >
->Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. Om te zien wat zijn waarde &quot;scène&quot;bij de bevelherinnering is. Als het niet aan dat plaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
+>Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. To see what its value is type &quot;locale&quot; at the command prompt. Als het niet aan dat plaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
 
 >[!NOTE]
 >
->**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
+>**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. This option is enabled by default. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
 >
 >`SELINUX=enforcing` **tot** `SELINUX=disabled`
 
@@ -524,7 +524,7 @@ Voor Windows x86:
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server of Microsoft® Windows® 10
-* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)

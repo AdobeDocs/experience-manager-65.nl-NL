@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: 3cf3a05afd92f2992312ecfb931ef38278c5436c
+source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '658'
 ht-degree: 14%
 
 ---
@@ -56,7 +56,6 @@ ht-degree: 14%
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Dynamic Media-functies aan uw pagina toevoegen](scene7.md)
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
    + [Hotlink-beveiliging activeren in Dynamic Media](hotlink-protection.md)
@@ -75,6 +74,7 @@ ht-degree: 14%
    + [Geoptimaliseerde afbeeldingen leveren voor een responsieve site](responsive-site.md)
    + [Dynamic Media-middelen voorvertonen](previewing-assets.md)
    + [Dynamic Media-elementen toevoegen aan pagina&#39;s](adding-dynamic-media-assets-to-pages.md)
+   + [Dynamic Media Classic-functies toevoegen aan pagina&#39;s](scene7.md)
    + [De dynamische video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md)
    + [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md)
    + [Regelsets gebruiken om URL&#39;s te transformeren](using-rulesets-to-transform-urls.md)
@@ -117,7 +117,7 @@ ht-degree: 14%
    + [[!DNL Assets] en MediaLibrary](medialibrary.md)
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Uploadbeperkingen configureren](configuring-asset-upload-restrictions.md)
-   + [[!DNL Experience Manager] and [!DNL Creative Cloud] integratie](aem-cc-integration-best-practices.md)
+   + [[!DNL Experience Manager] en [!DNL Creative Cloud] integratie](aem-cc-integration-best-practices.md)
    + [Integreren met [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor informatie over elementen](use-demo-package-for-asset-insights.md)

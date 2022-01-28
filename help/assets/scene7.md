@@ -1,6 +1,6 @@
 ---
-title: Klassieke Dynamic Media-functies toevoegen aan uw pagina
-description: Leer hoe u klassieke Dynamic Media-functies en -componenten aan uw Adobe Experience Manager-pagina kunt toevoegen.
+title: Dynamic Media Classic-functies toevoegen aan pagina's
+description: Dynamic Media Classic-functies en -componenten toevoegen aan een pagina in Adobe Experience Manager.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,18 +11,18 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2707'
 ht-degree: 0%
 
 ---
 
-# Klassieke Dynamic Media-functies toevoegen aan uw pagina {#adding-scene-features-to-your-page}
+# Dynamic Media Classic-functies toevoegen aan pagina&#39;s {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) Classics is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media middelen aan Web, mobiel, e-mail, en Internet-verbonden vertoningen en druk.
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media middelen aan Web, mobiel, e-mail, en Internet-verbonden vertoningen en druk.
 
-U kunt Experience Manager-elementen die zijn gepubliceerd in Dynamic Media Classic, in verschillende viewers weergeven:
+U kunt in Dynamic Media Classic gepubliceerde Experience Managers weergeven in verschillende viewers:
 
 * In-/uitzoomen
 * Flyout
@@ -32,15 +32,15 @@ U kunt Experience Manager-elementen die zijn gepubliceerd in Dynamic Media Class
 
 U kunt digitale elementen rechtstreeks van Experience Manager naar Dynamic Media Classic publiceren en u kunt digitale elementen van Dynamic Media Classic naar Experience Manager publiceren.
 
-In dit document wordt beschreven hoe u digitale elementen kunt publiceren van Experience Manager naar Dynamic Media Classic en omgekeerd. Viewers worden ook in detail beschreven. Zie [Dynamic Media Classic integreren met Experience Manager](/help/sites-administering/scene7.md) voor informatie over het configureren van Experience Manager voor Dynamic Media Classic.
+In dit document wordt beschreven hoe u digitale elementen kunt publiceren van Experience Manager naar Dynamic Media Classic en omgekeerd. Viewers worden ook in detail beschreven. Voor informatie over het configureren van Experience Manager voor Dynamic Media Classic raadpleegt u [Dynamic Media Classic integreren met Experience Manager](/help/sites-administering/scene7.md).
 
-Zie ook [Afbeeldingskaarten toevoegen](image-maps.md).
+Zie ook [Afbeeldingen met hyperlinks toevoegen](image-maps.md).
 
-Zie [Video](video.md) voor meer informatie over het gebruik van videocomponenten met Experience Manager.
+Ga voor meer informatie over het gebruik van videocomponenten met Experience Manager naar [Video](video.md).
 
 >[!NOTE]
 >
->Als de Klassieke activa van Dynamic Media niet behoorlijk tonen, zorg ervoor dat Dynamic Media [gehandicapt ](config-dynamic.md#disabling-dynamic-media) is en vernieuw dan de pagina.
+>Als Dynamic Media Classic-middelen niet correct worden weergegeven, controleert u of Dynamic Media [uitgeschakeld](config-dynamic.md#disabling-dynamic-media) en vernieuw vervolgens de pagina.
 
 ## Handmatig publiceren naar Dynamic Media Classic vanuit middelen {#manually-publishing-to-scene-from-assets}
 
@@ -52,12 +52,11 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 
 >[!NOTE]
 >
->Experience Manager publiceert asynchroon naar Dynamic Media Classic. Nadat u **[!UICONTROL Publish]** hebt geselecteerd, duurt het enkele seconden voordat uw element naar Dynamic Media Classic wordt gepubliceerd.
-
+>Experience Manager publiceert asynchroon naar Dynamic Media Classic. Nadat u **[!UICONTROL Publish]**, duurt het enkele seconden voordat uw middelen naar Dynamic Media Classic zijn gepubliceerd.
 
 ## Dynamic Media Classic-componenten {#scene-components}
 
-De volgende Klassieke Dynamic Media-componenten zijn beschikbaar in de Experience Manager:
+De volgende Dynamic Media Classic-componenten zijn beschikbaar in de Experience Manager:
 
 * In-/uitzoomen
 * Flyout (zoomen)
@@ -67,42 +66,42 @@ De volgende Klassieke Dynamic Media-componenten zijn beschikbaar in de Experienc
 
 >[!NOTE]
 >
->Deze componenten zijn niet standaard beschikbaar en moeten in de modus **[!UICONTROL Design]** worden geselecteerd voordat ze kunnen worden gebruikt.
+>Deze componenten zijn niet standaard beschikbaar en moeten worden geselecteerd in **[!UICONTROL Design]** vóór gebruik.
 
-Nadat de componenten in de modus **[!UICONTROL Design]** beschikbaar zijn gemaakt, kunt u de componenten net als alle andere Experience Managers aan de pagina toevoegen. Elementen die nog niet naar Dynamic Media Classic zijn gepubliceerd, worden naar Dynamic Media Classic gepubliceerd als ze zich in een gesynchroniseerde map of op een pagina bevinden of als ze zich in een Classic-cloudconfiguratie van Dynamic Media bevinden.
+Nadat ze beschikbaar zijn gesteld in **[!UICONTROL Design]** kunt u de componenten net als alle andere Experience Managers aan de pagina toevoegen. Elementen die nog niet naar Dynamic Media Classic zijn gepubliceerd, worden naar Dynamic Media Classic gepubliceerd als deze zich in een gesynchroniseerde map of op een pagina of met een Dynamic Media Classic-cloudconfiguratie bevinden.
 
 >[!NOTE]
 >
->Als u aangepaste viewers maakt en ontwikkelt en de Inhoudszoeker gebruikt, moet u expliciet de parameter `allowfullscreen` toevoegen.
+>Als u aangepaste viewers maakt en ontwikkelt en de Inhoudszoeker gebruikt, moet u de opdracht `allowfullscreen` parameter.
 
 ### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
 
-Vanaf 31 januari 2017 is ondersteuning voor het Flash-viewerplatform beëindigd voor Adobe Dynamic Media Classic.
+Adobe Dynamic Media Classic heeft vanaf 31 januari 2017 de ondersteuning voor het Flash-viewerplatform beëindigd.
 
-### Een klassieke Dynamic Media-component (Scene7) aan een pagina toevoegen {#adding-a-scene-component-to-a-page}
+### Een Dynamic Media Classic-component (Scene7) aan een pagina toevoegen {#adding-a-scene-component-to-a-page}
 
-Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina is het zelfde als het toevoegen van een component aan om het even welke pagina. Klassieke Dynamic Media-componenten worden in de volgende secties uitgebreid beschreven.
+Het toevoegen van een Dynamic Media Classic-component (Scene7) aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. Dynamic Media Classic-componenten worden in de volgende secties uitgebreid beschreven.
 
-**Een Dynamic Media Classic (Scene7)-component toevoegen aan een pagina:**
+**Een Dynamic Media Classic-component (Scene7) toevoegen aan een pagina:**
 
-1. Open in Experience Manager de pagina waar u de **[!UICONTROL Dynamic Media Classic (Scene7)]**-component wilt toevoegen.
+1. Open in de Experience Manager de pagina waaraan u de **[!UICONTROL Dynamic Media Classic (Scene7)]** component.
 
-1. Als er geen Klassieke Dynamic Media-componenten beschikbaar zijn, selecteert u **[!UICONTROL Design]**-modus, selecteert u een component met een blauwe rand, selecteert u het pictogram **[!UICONTROL Parent]** en vervolgens het pictogram **[!UICONTROL Configuration]**. Selecteer in **[!UICONTROL Parsys (Design)]** alle Klassieke Dynamic Media-componenten om deze beschikbaar te maken en selecteer **[!UICONTROL OK]**.
+1. Als er geen Dynamic Media Classic-componenten beschikbaar zijn, selecteert u **[!UICONTROL Design]** selecteert u een component met een blauwe rand en selecteert u de optie **[!UICONTROL Parent]** en vervolgens de **[!UICONTROL Configuration]** pictogram. In **[!UICONTROL Parsys (Design)]** selecteert u alle Dynamic Media Classic-componenten die u beschikbaar wilt maken en selecteert u **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Selecteer **[!UICONTROL Edit]** zodat u op **[!UICONTROL Edit]** wijze kunt terugkeren.
+1. Selecteren **[!UICONTROL Edit]** zodat u kunt terugkeren naar **[!UICONTROL Edit]** in.
 
-1. Sleep een component van de Klassieke groep van Dynamic Media in de sidekick op de pagina in de gewenste plaats.
+1. Sleep een component van de groep van Dynamic Media Classic in het hulpstuk op de pagina in de gewenste plaats.
 
-1. Selecteer het pictogram **[!UICONTROL Configuration]** zodat u de component kunt openen.
+1. Selecteer **[!UICONTROL Configuration]** zodat u de component kunt openen.
 
 1. Bewerk de component naar wens en selecteer **[!UICONTROL OK]** om de wijzigingen op te slaan.
-1. Sleep de afbeelding of video van de inhoudbrowser naar de klassieke Dynamic Media-component die u aan de pagina hebt toegevoegd.
+1. Sleep de afbeelding of video van de inhoudbrowser naar het Dynamic Media Classic-onderdeel dat u aan de pagina hebt toegevoegd.
 
    >[!NOTE]
    >
-   >Alleen in de gebruikersinterface moet u de afbeelding of video slepen en neerzetten op het klassieke Dynamic Media-onderdeel dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Klassieke Dynamic Media-component en vervolgens het kiezen van het element wordt niet ondersteund.
+   >Alleen in de gebruikersinterface moet u de afbeelding of video naar het Dynamic Media Classic-onderdeel slepen dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Dynamic Media Classic-component en het kiezen van het element worden niet ondersteund.
 
 ### Een interactieve weergave toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
@@ -112,83 +111,83 @@ Zie ook [Responsief ontwerp voor webpagina&#39;s](/help/sites-developing/respons
 
 **Een interactieve kijkervaring toevoegen aan een responsieve site:**
 
-1. Meld u aan bij de Experience Manager en controleer of u [geconfigureerde Adobe Dynamic Media Classic Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) hebt en of Dynamic Media Classic-componenten beschikbaar zijn.
+1. Meld u aan bij de Experience Manager en zorg ervoor dat u beschikt over [geconfigureerde Adobe Dynamic Media Classic-Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) en dat Dynamic Media Classic-componenten beschikbaar zijn.
 
    >[!NOTE]
    >
-   >Als de Klassieke componenten van Dynamic Media niet beschikbaar zijn, zeker [om hen als wijze van het Ontwerp toe te laten](/help/sites-authoring/default-components-designmode.md).
+   >Als Dynamic Media Classic-componenten niet beschikbaar zijn, moet u [om ze in te schakelen in de ontwerpmodus](/help/sites-authoring/default-components-designmode.md).
 
-1. In een website waarvoor **[!UICONTROL Dynamic Media Classic]**-componenten zijn ingeschakeld, sleept u een **[!UICONTROL Image]**-component naar de pagina.
+1. In een website met de **[!UICONTROL Dynamic Media Classic]** componenten ingeschakeld, sleept u en **[!UICONTROL Image]** naar de pagina.
 1. Selecteer de component en selecteer het configuratiepictogram.
-1. Pas op het tabblad **[!UICONTROL Dynamic Media Classic Settings]** de onderbrekingspunten aan.
+1. In de **[!UICONTROL Dynamic Media Classic Settings]** de onderbrekingspunten aanpassen.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 1. Controleer of de viewers het formaat responsief wijzigen en of alle interacties zijn geoptimaliseerd voor computers, tablets en mobiele apparaten.
 
-### Algemene instellingen voor alle Dynamic Media Classic-componenten {#settings-common-to-all-scene-components}
+### Instellingen die voor alle Dynamic Media Classic-componenten gelden {#settings-common-to-all-scene-components}
 
-Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten:
+Hoewel de configuratieopties variëren, zijn het volgende gemeenschappelijk voor allen [!UICONTROL Dynamic Media Classic] componenten:
 
-* **[!UICONTROL File Reference]** - Blader naar een bestand waarnaar u wilt verwijzen. De verwijzing van het dossier toont de activa URL en niet noodzakelijk de volledige Klassieke URL van Dynamic Media met inbegrip van de bevelen URL en de parameters. U kunt in dit veld geen klassieke URL-opdrachten en -parameters van Dynamic Media toevoegen. In plaats daarvan voegt u ze toe via de bijbehorende functionaliteit in de component.
+* **[!UICONTROL File Reference]** - Blader naar een bestand waarnaar u wilt verwijzen. De bestandsverwijzing toont de element-URL en niet noodzakelijkerwijs de volledige Dynamic Media Classic-URL inclusief de URL-opdrachten en -parameters. U kunt in dit veld geen Dynamic Media Classic URL-opdrachten en -parameters toevoegen. In plaats daarvan voegt u ze toe via de bijbehorende functionaliteit in de component.
 * **[!UICONTROL Width]** - Hiermee kunt u de breedte instellen.
 * **[!UICONTROL Height]** - Hiermee kunt u de hoogte instellen.
 
-U stelt deze configuratieopties in door een klassieke Dynamic Media-component te openen (dubbelklikken), bijvoorbeeld wanneer u een **[!UICONTROL Zoom]**-component opent:
+U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-component te openen (te dubbelklikken) wanneer u een **[!UICONTROL Zoom]** component:
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
 ### In-/uitzoomen {#zoom}
 
-De component HTML5 Zoom geeft een grotere afbeelding weer wanneer u op de knop **[!UICONTROL +]** drukt.
+De HTML5-component Zoom geeft een grotere afbeelding weer wanneer u op de knop **[!UICONTROL +]** knop.
 
-Het element heeft onderaan zoomgereedschappen. Selecteer **[!UICONTROL +]** als u wilt vergroten; Selecteer **[!UICONTROL -]** als u wilt verminderen. Als u op **[!UICONTROL x]** of de zoompijl opnieuw instellen tikt, wordt de oorspronkelijke grootte van de afbeelding hersteld wanneer deze als geïmporteerd werd. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteer **[!UICONTROL Edit]** zodat u de component kunt vormen. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten](#settings-common-to-all-scene-components).
+Het element heeft onderaan zoomgereedschappen. Selecteren **[!UICONTROL +]** als u wilt vergroten; selecteren **[!UICONTROL -]** als u wilt verminderen. Tikken op de knop **[!UICONTROL x]** Als u de zoompijl opnieuw instelt, wordt de oorspronkelijke grootte van de afbeelding hersteld. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [instellingen die voor alle [!UICONTROL Dynamic Media Classic] componenten](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
-In de HTML5 **[!UICONTROL Flyout]**-component wordt het element weergegeven als gesplitst scherm. het element in de opgegeven grootte laten staan; rechts wordt het zoomgedeelte weergegeven. Selecteer **[!UICONTROL Edit]** zodat u de component kunt vormen. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle Klassieke componenten van Dynamic Media](#settings-common-to-all-scene-components).
+In de HTML5 **[!UICONTROL Flyout]** component, wordt het element weergegeven als gesplitst scherm; het element in de opgegeven grootte laten staan; rechts wordt het zoomgedeelte weergegeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic-componenten](#settings-common-to-all-scene-components).
 
 >[!NOTE]
 >
->Als uw **[!UICONTROL Flyout]** component een douanegrootte gebruikt, dan wordt die douanegrootte gebruikt en ontvankelijke opstelling van de component wordt onbruikbaar gemaakt.
+>Als uw **[!UICONTROL Flyout]** gebruikt een aangepaste grootte, dan wordt die aangepaste grootte gebruikt en responsieve opstelling van de component is uitgeschakeld.
 >
->Als uw **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals die in **[!UICONTROL Design View]** wordt geplaatst, dan wordt de standaardgrootte gebruikt en de componentenrek om de grootte van de paginalay-out met ontvankelijke opstelling van de toegelaten component aan te passen. Er geldt een beperking voor de responsieve instelling van de component. Wanneer u de **[!UICONTROL Flyout]** component met ontvankelijke opstelling gebruikt, gebruik het niet met volledige paginalrek. Anders loopt de **[!UICONTROL Flyout]** verder dan de rechterrand van de pagina.
+>Als uw **[!UICONTROL Flyout]** gebruikt de standaardgrootte, zoals ingesteld in **[!UICONTROL Design View]** Vervolgens wordt de standaardgrootte gebruikt en wordt de component uitgerekt om de grootte van de paginalay-out aan te passen met responsieve instelling van de component ingeschakeld. Er geldt een beperking voor de responsieve instelling van de component. Wanneer u de **[!UICONTROL Flyout]** gebruiken met responsieve instelling, niet met volledige paginastrekking. Anders wordt **[!UICONTROL Flyout]** strekt zich voorbij de juiste grens van de pagina uit.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
 ### Afbeelding {#image}
 
-Met de Klassieke Dynamic Media-component **[!UICONTROL Image]** kunt u Klassieke Dynamic Media-functionaliteit aan uw afbeeldingen toevoegen, zoals Klassieke Dynamic Media-wijzigingstoetsen, voorinstellingen voor afbeeldingen of viewers en verscherpen. De Dynamic Media Classic **[!UICONTROL Image]**-component is vergelijkbaar met andere afbeeldingscomponenten in Experience Manager met speciale Dynamic Media Classic-functionaliteit. In dit voorbeeld is de optie `&op_invert=1` van Dynamic Media Classic URL op de afbeelding toegepast.
+De Dynamic Media Classic **[!UICONTROL Image]** kunt u Dynamic Media Classic-functionaliteit aan uw afbeeldingen toevoegen, zoals Dynamic Media Classic-wijzigingstoetsen, voorinstellingen voor afbeeldingen of viewers en verscherpen. De Dynamic Media Classic **[!UICONTROL Image]** is vergelijkbaar met andere afbeeldingscomponenten in Experience Manager met speciale Dynamic Media Classic-functionaliteit. In dit voorbeeld heeft de afbeelding de optie Dynamic Media Classic URL, `&op_invert=1` toegepast.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
-**[!UICONTROL Title, Alt Text]** - Voeg op het  **[!UICONTROL Advanced]** tabblad een titel toe aan de afbeelding en alternatieve tekst voor gebruikers met afbeeldingen uitgeschakeld.
+**[!UICONTROL Title, Alt Text]** - In de **[!UICONTROL Advanced]** , voegt u een titel toe aan de afbeelding en alternatieve tekst voor gebruikers die afbeeldingen hebben uitgeschakeld.
 
-**[!UICONTROL URL, Open in]** - U kunt een element instellen van om een koppeling te openen. Stel **[!UICONTROL URL]** in en **[!UICONTROL Open in]** geef aan of u het venster wilt openen in hetzelfde venster of in een nieuw venster.
+**[!UICONTROL URL, Open in]** - U kunt een element instellen van om een koppeling te openen. Stel de **[!UICONTROL URL]** en in **[!UICONTROL Open in]** Geef aan of u het venster in hetzelfde venster of in een nieuw venster wilt openen.
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Viewervoorinstellingen beheren](/help/assets/managing-viewer-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
+**[!UICONTROL Viewer preset]** - Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
-**[!UICONTROL Dynamic Media Classic Configuration]** - Selecteer de Klassieke Dynamic Media-configuratie die u wilt gebruiken om actieve voorinstellingen voor afbeeldingen op te halen uit SPS.
+**[!UICONTROL Dynamic Media Classic Configuration]** - Selecteer de Dynamic Media Classic-configuratie die u wilt gebruiken om actieve voorinstellingen voor afbeeldingen op te halen uit SPS.
 
-**[!UICONTROL Image preset]** - Selecteer een bestaande voorinstelling voor de afbeelding in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Voorinstellingen voor afbeeldingen beheren](/help/assets/managing-image-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
+**[!UICONTROL Image preset]** - Selecteer een bestaande voorinstelling voor de afbeelding in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie [Voorinstellingen afbeelding beheren](/help/assets/managing-image-presets.md). U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
-**[!UICONTROL Output Format]** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld JPEG. Afhankelijk van de uitvoerindeling die u selecteert, zijn er aanvullende configuratieopties. Zie [Vooraf ingestelde beste werkwijzen voor afbeeldingen](/help/assets/managing-image-presets.md#image-preset-options).
+**[!UICONTROL Output Format]** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld JPEG. Afhankelijk van de uitvoerindeling die u selecteert, zijn er aanvullende configuratieopties. Zie [Aanbevolen werkwijzen voor voorinstellingen afbeelding](/help/assets/managing-image-presets.md#image-preset-options).
 
-**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in [Voorinstellingen voor afbeeldingen met de aanbevolen werkwijzen](/help/assets/managing-image-presets.md#image-preset-options) en [Beste werkwijzen verscherpen](/help/assets/assets/sharpening_images.pdf).
+**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd [Aanbevolen werkwijzen voor voorinstellingen afbeelding](/help/assets/managing-image-presets.md#image-preset-options) en [Aanbevolen werkwijzen verscherpen](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor klassieke Dynamic Media-afbeeldingen op te geven. Deze opdrachten worden beschreven in [Voorinstellingen afbeelding](/help/assets/managing-image-presets.md) en de [Command-referentie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor Dynamic Media Classic-afbeeldingen in te voeren. Deze opdrachten worden beschreven in [Voorinstellingen afbeelding](/help/assets/managing-image-presets.md) en de [Opdrachtverwijzing](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 **[!UICONTROL Breakpoints]** - Als uw website reageert, wilt u de onderbrekingspunten aanpassen. Onderbrekingspunten moeten worden gescheiden door komma&#39;s ( , ).
 
 ### Afbeeldingssjabloon {#image-template}
 
-[Dynamic Media Classic Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) Templatesare gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
+[Dynamic Media Classic-afbeeldingssjablonen](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) zijn gelaagde Photoshop-inhoud die naar Dynamic Media Classic is geïmporteerd, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. De **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Bovendien kunt u vormen **[!UICONTROL Image template]** gebruiken om waarden uit de clientcontext te gebruiken, zodat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
 
-Selecteer **[!UICONTROL Edit]** als u de component wilt vormen. U kunt [instellingen configureren die hetzelfde zijn voor alle klassieke Dynamic Media-componenten](#settings-common-to-all-scene-components) en andere instellingen die in deze sectie worden beschreven.
+Selecteren **[!UICONTROL Edit]** als u de component wilt vormen. U kunt configureren [gemeenschappelijke instellingen voor alle Dynamic Media Classic-componenten](#settings-common-to-all-scene-components) en andere instellingen die in deze sectie worden beschreven.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -196,9 +195,9 @@ Selecteer **[!UICONTROL Edit]** als u de component wilt vormen. U kunt [instelli
 
 >[!NOTE]
 >
->Klassieke URL-opdrachten en -parameters van Dynamic Media kunnen niet rechtstreeks aan de URL van de bestandsverwijzing worden toegevoegd. Ze kunnen alleen worden gedefinieerd in de interface van de component in het **[!UICONTROL Parameter]**-deelvenster.
+>Dynamic Media Classic URL-opdrachten en -parameters kunnen niet rechtstreeks aan de URL van de bestandsverwijzing worden toegevoegd. Deze kunnen alleen worden gedefinieerd in de interface van de component in het dialoogvenster **[!UICONTROL Parameter]** deelvenster.
 
-**[!UICONTROL Title, Alt Text]** - Voeg op het tabblad Klassieke afbeeldingssjabloon van Dynamic Media een titel toe aan de afbeelding en alternatieve tekst voor gebruikers die afbeeldingen hebben uitgeschakeld.
+**[!UICONTROL Title, Alt Text]** - Voeg op het tabblad Dynamic Media Classic-afbeeldingssjabloon een titel toe aan de afbeelding en alternatieve tekst voor gebruikers die afbeeldingen hebben uitgeschakeld.
 
 **[!UICONTROL URL, Open in]** - U kunt een element instellen van om een koppeling te openen. Stel de URL in en kies Openen in om aan te geven of deze in hetzelfde venster of in een nieuw venster moet worden geopend.
 
@@ -210,28 +209,28 @@ Selecteer **[!UICONTROL Edit]** als u de component wilt vormen. U kunt [instelli
 
 #### Tekst dynamisch wijzigen {#changing-text-dynamically}
 
-Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en selecteert u **[!UICONTROL OK]**. In dit voorbeeld is **[!UICONTROL Price]** nu $50 en is de verzending 99 cent.
+Als u de tekst dynamisch wilt wijzigen, voert u nieuwe tekst in de velden in en selecteert u **[!UICONTROL OK]**. In dit voorbeeld wordt **[!UICONTROL Price]** is nu $50 en de verzendkosten zijn 99 cent.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-De tekst in de afbeelding verandert. U kunt de tekst terugzetten naar de oorspronkelijke waarde door **[!UICONTROL Reset]** naast het veld te tikken.
+De tekst in de afbeelding verandert. U kunt de oorspronkelijke waarde van de tekst herstellen door te tikken op **[!UICONTROL Reset]** naast het veld.
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
 #### Tekst wijzigen om de waarde van de context van een client weer te geven {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Als u een veld aan een clientcontextwaarde wilt koppelen, selecteert u **[!UICONTROL Select]** om het contextmenu van de client te openen, selecteert u de clientcontext en selecteert u **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
+Selecteer **[!UICONTROL Select]** om het cliënt-context menu te openen, selecteer de cliëntcontext, en selecteer **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
-De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt de tekst terugzetten naar de oorspronkelijke waarde door op **[!UICONTROL Reset]** naast het veld te klikken.
+De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt de oorspronkelijke waarde van de tekst herstellen door op **[!UICONTROL Reset]** naast het veld.
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Een koppeling maken van de klassieke Dynamic Media-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
+#### Een koppeling maken van de Dynamic Media Classic-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
 
-1. Selecteer **[!UICONTROL Edit]** op de pagina met de klassieke Dynamic Media-component **[!UICONTROL Image Template]**.
-1. Voer in het veld **[!UICONTROL URL]** de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. Selecteer in het veld **[!UICONTROL Open in]** of u het doel wilt openen (een nieuw venster of hetzelfde venster).
+1. Op de pagina met de Dynamic Media Classic **[!UICONTROL Image Template]** component, selecteren **[!UICONTROL Edit]**.
+1. In de **[!UICONTROL URL]** Voer de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt getikt. In de **[!UICONTROL Open in]** , selecteert u of het doel moet worden geopend (een nieuw venster of hetzelfde venster).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -239,11 +238,11 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 ### Video-component {#video-component}
 
-De Klassieke Dynamic Media **[!UICONTROL Video]**-component (beschikbaar in het Klassieke Dynamic Media-gedeelte van het hulpapparaat) gebruikt apparaat- en bandbreedtedetectie om de juiste video voor elk scherm te leveren. Deze component is een HTML5-videospeler; het is één viewer die via meerdere kanalen kan worden gebruikt.
+De Dynamic Media Classic **[!UICONTROL Video]** -component (beschikbaar in het Dynamic Media Classic-gedeelte van het hulpprogramma) gebruikt apparaat- en bandbreedtedetectie voor de juiste video voor elk scherm. Dit onderdeel is een HTML5-videospeler. het is één viewer die via meerdere kanalen kan worden gebruikt.
 
 Deze kan worden gebruikt voor adaptieve videosets, één MP4-video of één F4V-video.
 
-Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de Klassieke integratie van Dynamic Media. Bovendien [de Klassieke Video component van Dynamic Media tegenover de Video component van de Stichting](s7-video.md).
+Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de integratie van Dynamic Media Classic. Zie ook [de Dynamic Media Classic Video-component versus de Foundation Video-component](s7-video.md).
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -251,27 +250,25 @@ Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met de
 
 Adobe DAM en WCM laten zien of een primaire bronvideo is geüpload. Deze proxy-elementen worden niet weergegeven:
 
-* Dynamic Media Classic gecodeerde uitvoeringen
+* Dynamic Media Classic-gecodeerde uitvoeringen
 * Dynamic Media Classic adaptieve videosets
 
-Wanneer u een adaptieve videoset gebruikt met de klassieke Dynamic Media-videocomponent, moet u de grootte van de component aanpassen aan de afmetingen van de video.
+Wanneer u een adaptieve videoset gebruikt met de Dynamic Media Classic-videocomponent, moet u de grootte van de component aanpassen aan de afmetingen van de video.
 
-## Dynamic Media Klassieke inhoudbrowser {#scene-content-browser}
+## Dynamic Media Classic-inhoudbrowser {#scene-content-browser}
 
-Met de Dynamic Media Classic-inhoudbrowser kunt u inhoud van Dynamic Media Classic rechtstreeks in de Experience Manager weergeven. Als u de inhoudbrowser wilt openen, selecteert u **[!UICONTROL Content Finder]** in de gebruikersinterface met geoptimaliseerde aanrakingen of het pictogram **[!UICONTROL S7]** in de klassieke gebruikersinterface. **[!UICONTROL Dynamic Media Classic]** De functionaliteit is identiek tussen beide gebruikersinterfaces.
+Met de Dynamic Media Classic-inhoudbrowser kunt u inhoud van Dynamic Media Classic rechtstreeks in Experience Manager weergeven. Als u toegang wilt tot de inhoudbrowser, gaat u naar **[!UICONTROL Content Finder]**, selecteert u **[!UICONTROL Dynamic Media Classic]** in de aanraakgeoptimaliseerde gebruikersinterface of de **[!UICONTROL S7]** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
 
-Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Dynamic Media Klassieke inhoudbrowser in het vervolgkeuzemenu.
+Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Dynamic Media Classic-inhoudbrowser in de vervolgkeuzelijst.
 
 >[!NOTE]
 >
->* Middelen in de map op aanvraag worden niet weergegeven in de browser voor klassieke inhoud van Dynamic Media.
->* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), worden zowel gepubliceerde als niet-gepubliceerde elementen op Dynamic Media Classic wel weergegeven in de Dynamic Media Classic-inhoudbrowser.
->* Als u **[!UICONTROL Dynamic Media Classic]** of het **[!UICONTROL S7]** pictogram niet als optie in inhoudbrowser ziet, moet u [Dynamic Media Klassiek vormen om met Experience Manager](/help/sites-administering/scene7.md) te werken.
->* De Dynamic Media Classic-inhoudbrowser ondersteunt voor video:
-
+>* Middelen in de map op aanvraag worden niet weergegeven in de Dynamic Media Classic-inhoudbrowser.
+>* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), zowel gepubliceerde als niet-gepubliceerde middelen op Dynamic Media Classic worden wel weergegeven in de Dynamic Media Classic-inhoudbrowser.
+>* Als u niet ziet **[!UICONTROL Dynamic Media Classic]** of de **[!UICONTROL S7]** als optie in de inhoudbrowser, moet u [Dynamic Media Classic configureren voor gebruik met Experience Manager](/help/sites-administering/scene7.md).
+>* Voor video ondersteunt de Dynamic Media Classic-inhoudbrowser:
    >
-   >   
-   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+   >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
    >   * Eén MP4-video
    >   * Single F4V-video
 
@@ -282,7 +279,7 @@ U kunt de inhoudbrowser openen via de geoptimaliseerde interface of via de klass
 
 * FXG- en Flash-elementen van Dynamic Media Classic worden niet ondersteund.
 
-Blader door Klassieke Dynamic Media-elementen door **[!UICONTROL Dynamic Media Classic]** te selecteren in het derde keuzemenu. Dynamic Media Classic wordt niet weergegeven in de lijst als u de integratie van Dynamic Media Classic/Experience Manager niet hebt geconfigureerd.
+Bladeren door Dynamic Media Classic-elementen door **[!UICONTROL Dynamic Media Classic]** in het derde vervolgkeuzemenu. Dynamic Media Classic wordt niet in de lijst weergegeven als u de integratie tussen Dynamic Media Classic en Experience Manager niet hebt geconfigureerd.
 
 >[!NOTE]
 >
@@ -290,7 +287,6 @@ Blader door Klassieke Dynamic Media-elementen door **[!UICONTROL Dynamic Media C
 >* Als u een beveiligde voorvertoningsserver hebt ingesteld, gebruikt de browser die voorvertoningsserver om miniaturen en elementen te renderen.
 
 >
-
 
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
@@ -302,9 +298,9 @@ Bovendien kunt u informatie over de resolutie, de grootte, de dagen sinds de wij
 * Voor adaptieve videosets en sjablonen wordt geen informatie over de grootte gegenereerd voor miniaturen.
 * Voor adaptieve videosets wordt geen resolutie gegenereerd voor miniaturen.
 
-### Dynamic Media Classic-middelen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
+### Dynamic Media Classic-elementen zoeken met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
-Het zoeken naar elementen in Dynamic Media Classic lijkt op het zoeken naar elementen in Experience Manager Assets. Wanneer u echter zoekt, ziet u in feite een externe weergave van de elementen in het klassieke Dynamic Media-systeem in plaats van deze rechtstreeks in de Experience Manager te importeren.
+Het zoeken naar elementen in Dynamic Media Classic lijkt op het zoeken naar elementen in Experience Manager Assets. Wanneer u echter zoekt, ziet u eigenlijk een externe weergave van de elementen in het Dynamic Media Classic-systeem in plaats van deze rechtstreeks in de Experience Manager te importeren.
 
 U kunt zowel de klassieke interface als de interface met geoptimaliseerde aanrakingen gebruiken om elementen weer te geven en te zoeken. Afhankelijk van de interface, is hoe u zoekt lichtjes verschillend.
 
@@ -322,30 +318,28 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-**[!UICONTROL Type of Asset]** - Selecteer deze optie  **[!UICONTROL Dynamic Media Classic]** om door klassieke Dynamic Media-inhoud te bladeren. Deze optie is alleen beschikbaar als Dynamic Media Classic is geconfigureerd.
+**[!UICONTROL Type of Asset]** - Selecteer **[!UICONTROL Dynamic Media Classic]** om door Dynamic Media Classic-inhoud te bladeren. Deze optie is alleen beschikbaar als Dynamic Media Classic is geconfigureerd.
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-**[!UICONTROL Configuration]** - Als u meer dan één Classic Dynamic Media-configuratie hebt gedefinieerd in  [!UICONTROL Cloud Services], kunt u deze hier selecteren. Hierdoor wordt de map gewijzigd op basis van de gekozen configuratie.
+**[!UICONTROL Configuration]** - Als u meer dan één Dynamic Media Classic-configuratie hebt gedefinieerd in [!UICONTROL Cloud Services], kunt u deze hier selecteren. Hierdoor wordt de map gewijzigd op basis van de gekozen configuratie.
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-**[!UICONTROL Asset type]** - In de Klassieke browser van Dynamic Media kunt u de resultaten filteren en de volgende items opnemen: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt de Experience Manager standaard naar alle elementtypen.
+**[!UICONTROL Asset type]** - In de Dynamic Media Classic-browser kunt u de resultaten filteren op een van de volgende items: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt de Experience Manager standaard naar alle elementtypen.
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
 >[!NOTE]
 >
->* In klassieke UI, kunt u ook naar **Flash** en **FXG** zoeken. Filteren voor deze typen in de interface met geoptimaliseerde aanrakingen wordt niet ondersteund.
-   >
-   >
-* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen &amp;ast; .mp4) en de gecodeerde uitvoering.
+>* In de klassieke interface kunt u ook zoeken naar **Flash** en **FXG**. Filteren voor deze typen in de interface met geoptimaliseerde aanrakingen wordt niet ondersteund.
+>
+>* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke vertoning (alleen ast; .mp4) en de gecodeerde uitvoering.
 >* Bij het zoeken naar een adaptieve videoset zoekt u naar de map en naar alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 
 >
 
 
-
-**[!UICONTROL Publish Status]** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus:  **[!UICONTROL Unpublished]** of  **[!UICONTROL Published]**. Als u geen **[!UICONTROL Publish Status]** selecteert, zoekt de Experience Manager standaard alle publicatiestatus.
+**[!UICONTROL Publish Status]** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: **[!UICONTROL Unpublished]** of **[!UICONTROL Published]**. Als u geen **[!UICONTROL Publish Status]** Standaard zoekt Experience Manager in alle publicatiestatussen.
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

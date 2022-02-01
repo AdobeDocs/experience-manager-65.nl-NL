@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
-source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
+source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
 workflow-type: tm+mt
-source-wordcount: '120'
-ht-degree: 8%
+source-wordcount: '121'
+ht-degree: 9%
 
 ---
 
@@ -39,6 +39,7 @@ ht-degree: 8%
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migratie](cif/migration.md)
 + Releaseopmerkingen {#release-notes}
+   + [2022](cif/release-notes/release-notes-2022.md)
    + [2021](cif/release-notes/release-notes-2021.md)
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)

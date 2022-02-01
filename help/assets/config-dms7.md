@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b7762a44d7b572d784dda2220530b21f9c46e7ab
+source-git-commit: 270219c8baedd4b72a256e6318d89154d6dadb0b
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5774'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,7 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
 1. Selecteer **[!UICONTROL Save]**.
-1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de Experience Manager auteur-instantie &#39;lijsten van gewenste personen&#39; om verbinding te maken met Dynamic Media:
+1. Auteur van Experience Managers kan standaard geen voorvertoning van Dynamic Media-inhoud weergeven. Als u dus een beveiligde voorvertoning van Dynamic Media-inhoud wilt weergeven voordat deze wordt gepubliceerd, moet u *lijst van gewenste personen* De Experience Manager Auteur-instantie om verbinding te maken met Dynamic Media. Als u gebruikers bovendien toegang wilt geven tot beveiligde voorvertoningen van inhoud, kunt u *lijst van gewenste personen* extra IP adressen:
 
    * In de wijze van de Auteur van de Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
    * Selecteer in het linkerspoor de optie **[!UICONTROL Tools]** pictogram, ga dan naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.

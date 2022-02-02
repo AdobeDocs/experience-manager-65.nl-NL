@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce
 user-guide-title: AEM Inhoud en Handel
 breadcrumb-title: Handleiding
 user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
-source-git-commit: 9c4edf1d1482923856e56cdadfe1a2a903e782bc
+source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 9%
+source-wordcount: '123'
+ht-degree: 8%
 
 ---
 
@@ -25,6 +25,7 @@ ht-degree: 9%
       + [Ervaringen in de handel](cif/authoring/authoring-commerce-experiences.md)
       + [Product Cockpit](cif/authoring/product-cockpit.md)
       + [Productgegevens verrijken met gekoppelde inhoud](cif/authoring/enrich-product-associated-content.md)
+      + [Product Recommendations](cif/authoring/product-recommendations.md)
    + Beheer {#administering}
       + [Multi-Store instellen](cif/configuring/multi-store-setup.md)
       + [Gebruik van meerdere sjablonen](cif/configuring/multi-template-usage.md)

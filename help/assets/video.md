@@ -12,7 +12,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: e8270ad3f658236184467eda9f25c2ec0e6787ba
+source-git-commit: 128358e17aa6166c81e0979825ee81d029418f22
 workflow-type: tm+mt
 source-wordcount: '11291'
 ht-degree: 4%
@@ -34,12 +34,10 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
 >* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in De modus Dynamic Media configureren - Scene7 en [Problemen met Dynamic Media oplossen - Scene7-modus](/help/assets/troubleshoot-dms7.md).
 >
 >* Zie [Dynamic Media-Cloud Services configureren](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in De modus Dynamic Media configureren - hybride.
-
 >
 >Bekend probleem met het afspelen van video in Dynamic Media *alleen in Experience Manager 6.5.9.0*:
 >
 >* Als een gepubliceerde video wordt bijgewerkt, moet deze opnieuw worden gepubliceerd om wijzigingen in de levering te weerspiegelen.
-
 >
 
 
@@ -56,7 +54,7 @@ De volgende stapsgewijze workflowbeschrijving is ontworpen om u te helpen snel a
       * Meer informatie over [Digitale elementen ordenen](/help/assets/organize-assets.md).
    * Upload uw primaire bronvideo&#39;s naar de mappen. Wanneer u video&#39;s aan de map toevoegt, worden deze gecodeerd volgens het videoverwerkingsprofiel dat u aan de map hebt toegewezen.
 
-      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
+      * Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
       * U kunt videobestanden uploaden van maximaal 15 GB elk.
       * [Uw video&#39;s uploaden](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * Meer informatie over [Ondersteunde bestandsindelingen voor invoer](/help/assets/assets-formats.md#supported-multimedia-formats).
@@ -300,7 +298,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 Wanneer u een videobestand codeert, gebruikt u een videobronbestand van de hoogst mogelijke kwaliteit. Gebruik geen eerder gecodeerde videobestanden omdat deze bestanden al zijn gecomprimeerd en als u verder codeert, wordt een video van subparkwaliteit gemaakt.
 
-* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 50 x 50.
+* Dynamic Media ondersteunt voornamelijk korte video&#39;s met een maximale lengte van 30 minuten en een minimale resolutie van meer dan 25 x 25.
 * U kunt primaire bronvideobestanden uploaden die elk maximaal 15 GB bedragen.
 
 In de volgende tabel worden de aanbevolen grootte, hoogte-breedteverhouding en minimale bitsnelheid beschreven die uw bronvideobestanden moeten hebben voordat u ze codeert:

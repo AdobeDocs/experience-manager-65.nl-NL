@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: cfd08526fd1dccf461b13747b4a7496849243669
+source-git-commit: 2706a069bea731da1f84c15e2da02b53a9db4d28
 workflow-type: tm+mt
 source-wordcount: '5715'
 ht-degree: 2%
@@ -104,6 +104,8 @@ Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](
 1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
    * **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Je hebt meerdere Dynamic Media-accounts. U kunt bijvoorbeeld verschillende submerken, divisies, testomgevingen of productieomgevingen hebben.
+
+   <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
 
    * **[!UICONTROL Company Root Folder Path]**
 

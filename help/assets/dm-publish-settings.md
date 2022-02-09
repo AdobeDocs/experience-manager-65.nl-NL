@@ -8,13 +8,13 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-source-git-commit: 1a410c7b71f0e329b327a7f7f05137fcd220fb6a
+exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
+source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
-source-wordcount: '3216'
+source-wordcount: '3224'
 ht-degree: 0%
 
 ---
-
 
 # Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren
 
@@ -64,6 +64,8 @@ De pagina van de Server van het Beeld vestigt standaardmontages voor het leveren
 ### Het tabblad Beveiliging {#security-tab}
 
 **[!UICONTROL Client address]** - Laat u één of meerdere IP adressen of IP adreswaaiers specificeren. Wanneer gespecificeerd, worden de verzoeken aan deze beeldcatalogus die van een cliënt bij een niet vermeld IP adres voortkomen verworpen. Deze regel geldt zowel voor de levering van afbeeldingen als voor gerenderde afbeeldingen.
+
+![Het tabblad Beveiliging ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Het tabblad Beveiliging dat het veld IP &quot;allow&quot; weergeeft.*
 
 ### Tabblad Catalogusbeheer {#catalog-management-tab}
 

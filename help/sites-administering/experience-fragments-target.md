@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: cc19ddcf032457091ea1341ea37fba93a0e56fc1
+source-git-commit: a33d46bcfcf901fb774b742c0fc972265401a56e
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 0%
@@ -37,8 +37,7 @@ ht-degree: 0%
    >   * een benoemde werkruimte, opgegeven in de Cloud Configuration.
    >   * **Opmerking:** Voor het exporteren naar specifieke werkruimten is Adobe Target Premium vereist.
 >
->* AEM [geïntegreerd met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
-
+>* AEM [geïntegreerd met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 >
 >AEM 6.5.0.0 en 6.5.1.0:
 >
@@ -54,7 +53,7 @@ Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van d
 * JSON: Ondersteuning voor levering van inhoud zonder kop
 * HTML en JSON
 
-AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit gebeurt via Adobe I/O, waarvoor AEM [geïntegreerd met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit gebeurt via Adobe I/O, waarvoor AEM [geïntegreerd met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 
 >[!NOTE]
 >
@@ -70,7 +69,6 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 >
 >* [Adobe Target-ontwikkeling](https://www.adobe.io/apis/experiencecloud/target.html)
 >* [Kernonderdelen - Ervaar fragmenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
-
 >
 
 
@@ -82,7 +80,7 @@ AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte
 
 Er zijn verschillende acties vereist:
 
-1. U moet [AEM integreren met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-ims-adobe-io.md).
+1. U moet [AEM integreren met Adobe Target met behulp van Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
 2. De Fragmenten van de ervaring worden uitgevoerd van de AEM auteurinstantie zodat moet u [Vorm AEM Verbinding Externalzer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) op de auteurinstantie om ervoor te zorgen dat om het even welke verwijzingen binnen het Fragment van de Ervaring voor Weblevering worden geexternaliseerd.
 
    >[!NOTE]

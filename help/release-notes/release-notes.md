@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
+source-git-commit: b36b7b0dafbce3aa75afff60fae3cc714b6ac902
 workflow-type: tm+mt
-source-wordcount: '3823'
+source-wordcount: '3826'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Hieronder volgt een lijst met oplossingen die u vindt in [!DNL Experience Manage
 
 >[!WARNING]
 >
->Er wordt een nieuwe versie van dit pakket ontwikkeld. De koppeling wordt gepubliceerd zodra deze beschikbaar is.
+>Er wordt een nieuwe versie van het pakket &quot;indexdefinitie&quot; ontwikkeld. De onderstaande koppeling wordt gepubliceerd zodra deze beschikbaar is.
 
 Als u toegang wilt tot inhoud zonder kop met gebruik van Content Fragments met GraphQL en de verbeterde mogelijkheden van Content Fragment Models en Editor wilt gebruiken, installeert u het pakket met indexdefinities en herindexeert u de volgende asynchrone AEM indexdefinities:
 

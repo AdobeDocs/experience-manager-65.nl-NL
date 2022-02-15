@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven.'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 1cfa01544ad8bf0adafd55e696a6844a8edf1007
+source-git-commit: 1ca3032063a148293f67c69a941b83b6aa5d48f1
 workflow-type: tm+mt
-source-wordcount: '3833'
+source-wordcount: '3823'
 ht-degree: 0%
 
 ---
@@ -52,14 +52,17 @@ Hieronder volgt een lijst met oplossingen die u vindt in [!DNL Experience Manage
 
 ### [!DNL Sites] {#sites-65110}
 
-Als u toegang wilt tot inhoud zonder kop met gebruik van Content Fragments met GraphQL en de verbeterde mogelijkheden van Content Fragment Models en Editor wilt gebruiken, installeert u de opdracht [indexdefinitiepakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip)en herindexeert de volgende asynchrone AEM indexdefinities:
+>[!WARNING]
+>
+>Er wordt een nieuwe versie van dit pakket ontwikkeld. De koppeling wordt gepubliceerd zodra deze beschikbaar is.
 
-* /oak:index/assetPrefixNodename
+Als u toegang wilt tot inhoud zonder kop met gebruik van Content Fragments met GraphQL en de verbeterde mogelijkheden van Content Fragment Models en Editor wilt gebruiken, installeert u het pakket met indexdefinities en herindexeert u de volgende asynchrone AEM indexdefinities:
 
-* /oak:index/fragmenten
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/graphicConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 De volgende problemen zijn opgelost in [!DNL Sites]:
 

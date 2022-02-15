@@ -8,9 +8,9 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: 7af09e73f40c2d947c9ccce000174155ef67137f
+source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 6%
 
 ---
@@ -142,7 +142,6 @@ ht-degree: 6%
    + [Integratie met de Adobe Marketing Cloud](marketing-cloud.md)
    + [De integratie met Adobe Target handmatig configureren](target-configuring.md)
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
-   + [Integratie met Adobe Target met Adobe I/O](integration-ims-adobe-io.md)
    + [Integratie met Adobe Target met Adobe I/O](integration-target-ims-adobe-io.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)

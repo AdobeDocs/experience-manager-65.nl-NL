@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b4c3f4c393d9b34acaadc375d20738ead42e481d
+source-git-commit: 72b39fd0263347c5bfe98fe2fdaf8999d7d40a96
 workflow-type: tm+mt
-source-wordcount: '2863'
-ht-degree: 25%
+source-wordcount: '3099'
+ht-degree: 23%
 
 ---
 
@@ -197,6 +197,22 @@ Referenties weergeven en beheren op het tabblad [!DNL Assets] implementatie, voe
 1. Gebruikers kunnen het element verplaatsen of verwijderen. Wanneer u een element verplaatst of verwijdert, wordt het totale aantal referenties van alle geselecteerde elementen/mappen weergegeven in een waarschuwingsvenster. Wanneer u een element verwijdert waarvan de referenties nog niet worden weergegeven, wordt een waarschuwingsvenster weergegeven.
 
    ![waarschuwing forceren verwijderen](assets/delete-referenced-asset.png)
+
+### Updates van middelen beheren in externe DAM {#manage-updates-in-remote-dam}
+
+Na [configureren, verbinding](#configure-a-connection-between-sites-and-assets-deployments) tussen externe DAM en [!DNL Sites] implementaties, de middelen op externe DAM worden beschikbaar gesteld op de [!DNL Sites] implementatie. Vervolgens kunt u de bewerkingen bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen. De updates zijn, met enige vertraging, automatisch beschikbaar op de [!DNL Sites] implementatie. Daarnaast als een element op een externe DAM wordt gebruikt op een lokale [!DNL Experience Manager Sites] pagina, worden de updates van het middel op verre DAM getoond op [!DNL Sites] pagina.
+
+Zorg er tijdens het verplaatsen van een element van de ene naar de andere locatie voor dat u [verwijzingen aanpassen](/help/assets/manage-assets.md) zodat het element op het [!DNL Sites] pagina. Als u een element verplaatst naar een locatie die niet toegankelijk is vanuit de lokale [!DNL Sites] implementatie, kan het middel niet worden weergegeven op de implementatie van Sites.
+
+U kunt ook de metagegevenseigenschappen van een element op de externe DAM bijwerken en de wijzigingen zijn beschikbaar op de lokale [!DNL Sites] implementatie.
+
+[!DNL Sites] auteurs kunnen de beschikbare updates voorvertonen op de [!DNL Sites] de implementatie en publiceer de wijzigingen opnieuw om deze beschikbaar te maken op de [!DNL Experience Manager] -instantie publiceren.
+
+[!DNL Experience Manager] geeft een verlopen visuele statusindicator weer voor elementen in `Remote Assets Content Finder` om te voorkomen dat siteauteurs het element op een [!DNL Sites] pagina. Als u een element met een verlopen status gebruikt op een [!DNL Sites] pagina, wordt het element niet weergegeven op de [!DNL Experience Manager] -instantie publiceren.
+
+>[!NOTE]
+>
+>De updates van middelen in verre DAM worden ter beschikking gesteld aan [!DNL Sites] implementatie alleen als externe DAM en [!DNL Sites] implementaties zijn ingeschakeld [!DNL Experience Manager].
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 

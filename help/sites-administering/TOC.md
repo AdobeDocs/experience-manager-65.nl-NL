@@ -8,9 +8,9 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: d4f5cebc76ed9348a17efc07443cd82317f24368
+source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '631'
 ht-degree: 6%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 6%
    + [Koppeling bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
    + [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](adobeanalytics-mapping.md)
    + [Video bijhouden configureren voor Adobe Analytics](adobeanalytics-video.md)
+   + [Integratie met Adobe Analytics met Adobe I/O](integration-analytics-ims-adobe-io.md)
    + [Veelgestelde vragen over HTTP2-levering van content](scene7-http2faq.md)
    + [Problemen met Adobe Campaign-integratie oplossen](troubleshooting-campaignintegration.md)
    + [SharePoint-connectorlicenties, copyrightberichten en Disclaimers](sharepoint-connector-licenses.md)

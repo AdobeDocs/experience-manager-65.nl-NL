@@ -1,7 +1,7 @@
 ---
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
-description: '[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven.'
-source-git-commit: 37f1df9f9421ff18fff45723b6eb081f0192520a
+description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 1%
@@ -129,7 +129,7 @@ Efficiënt ontwerpen, leveren en optimaliseren ervaringen op alle digitale scher
 * Ervaringen en inhoud op digitale en in-store gelijktrekken met verbeterd hergebruik van inhoud
 * Gestroomlijnde workflows voor schrijven en goedkeuren/publiceren met ondersteuning voor Starts
 * Rijke interactieve ervaringen bewerken en leveren met SPA Editor
-* Het gebruiken van Lanceringen om toekomstige inhoudsveranderingen voor signaalinhoud te plannen
+* Using Launches to plan future content changes for signage content
 * Metered playback in een opeenvolgingskanaal
 * Automatisch een projectstructuur maken met een bronbestand, zoals een Excel-werkblad
 * Uitgebreide ondersteuning voor mediaspelers met robuuste online en offline bediening (Smart Sync) die kan worden geschaald naar zelfs de grootste signaalnetwerken.
@@ -238,10 +238,10 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 >
 >* Alleen `at.js 1.x` wordt ondersteund als u Adobe Target gebruikt als de doelengine in AEM Activiteiten-console.
 >
->* Beide `at.js. 1.x` en `at.js 2.x` worden gesteund als u de uitvoer van het Fragment van de Ervaring naar Doel en lopende Activiteiten binnen de console van Target gebruikt.
+>* Both `at.js. 1.x` and `at.js 2.x` are supported if you are using Experience Fragment export to Target and running Activities within Target&#39;s console.
 
 
-* Adobe Target-integratie kan nu de standaard-API van het doel gebruiken. Eerdere versies van AEM gebruiken de Classic HTTP-API van Target, die nu is afgekeurd.
+* Adobe Target integration is can now use the Target Standard API. Eerdere versies van AEM gebruiken de Classic HTTP-API van Target, die nu is afgekeurd.
 * Adobe Target `mbox.js` versie 63 is opgenomen. Adobe beveelt ten zeerste aan om over te schakelen op `at.js` v1.x.
 * `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) aan `at.js` v1.x naar de site.
 

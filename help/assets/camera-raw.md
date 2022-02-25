@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Adobe Camera Raw] ondersteuning voor het verwerken van digitale elementen'
-description: Leer hoe te om [!DNL Adobe Camera Raw] steun in [!DNL Adobe Experience Manager Assets] toe te laten
+title: '"[!DNL Adobe Camera Raw] ondersteuning voor de verwerking van digitale middelen"'
+description: Leer hoe u kunt inschakelen [!DNL Adobe Camera Raw] ondersteuning in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: 9e1eea90945bb77e83e15d25708e47f2f3009fd8
+source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -14,32 +14,32 @@ ht-degree: 0%
 
 # Afbeeldingen verwerken met [!DNL Adobe Camera Raw] {#camera-raw-support}
 
-U kunt de ondersteuning [!DNL Adobe Camera Raw] inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in [!DNL Adobe Experience Manager Assets] met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
+U kunt de [!DNL Adobe Camera Raw] ondersteuning voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in de indeling JPEG. De functionaliteit wordt ondersteund in [!DNL Adobe Experience Manager Assets] met de [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) beschikbaar bij Softwaredistributie.
 
 >[!NOTE]
 >
 >De functionaliteit ondersteunt alleen JPEG-uitvoeringen. Deze functie wordt ondersteund in Windows 64-bits, Mac OS en RHEL 7.x.
 
-Ga als volgt te werk om [!DNL Camera Raw]-ondersteuning in [!DNL Experience Manager Assets] in te schakelen:
+Inschakelen [!DNL Camera Raw] ondersteuning in [!DNL Experience Manager Assets]Voer de volgende stappen uit:
 
-1. Download [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) van [!DNL Software Distribution].
+1. Download de [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) van [!DNL Software Distribution].
 1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
-1. Bewerk de stap **[!UICONTROL Process Thumbnails]**.
-1. Geef de volgende configuratie op het tabblad **[!UICONTROL Thumbnails]** op:
+1. Bewerk de **[!UICONTROL Process Thumbnails]** stap.
+1. Geef de volgende configuratie op in de **[!UICONTROL Thumbnails]** tab:
 
    * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL Skip Mime Types]**:  `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Skip Mime Types]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** in het veld **[!UICONTROL Skip List]** `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)` op.
+1. In de **[!UICONTROL Web Enabled Image]** tabblad, in het dialoogvenster **[!UICONTROL Skip List]** veld, specificeren `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Voeg vanuit het zijpaneel de stap **[!UICONTROL Camera Raw/DNG Handler]** onder de stap **[!UICONTROL Process Thumbnails]** toe.
-1. Voeg in de stap **[!UICONTROL Camera Raw/DNG Handler]** de volgende configuratie toe op het tabblad **[!UICONTROL Arguments]**:
+1. Voeg vanuit het zijpaneel de **[!UICONTROL Camera Raw/DNG Handler]** stap onder de **[!UICONTROL Process Thumbnails]** stap.
+1. In de **[!UICONTROL Camera Raw/DNG Handler]** stap, voeg de volgende configuratie in toe **[!UICONTROL Arguments]** tab:
 
-   * **[!UICONTROL Mime Types]**:  `image/dng` en  `image/x-raw-(.*)`
+   * **[!UICONTROL Mime Types]**: `image/dng` en `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -53,9 +53,9 @@ Ga als volgt te werk om [!DNL Camera Raw]-ondersteuning in [!DNL Experience Mana
 
 >[!NOTE]
 >
->Zorg ervoor dat de bovenstaande configuratie het zelfde als **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie is.
+>Zorg ervoor dat de bovenstaande configuratie gelijk is aan de **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie.
 
-U kunt nu Camera Raw-bestanden importeren in Elementen. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de optie **[!UICONTROL Image Adjust]** weergegeven in de lijst met zijvensters.
+U kunt nu Camera Raw-bestanden importeren in Elementen. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, **[!UICONTROL Image Adjust]** wordt weergegeven in de lijst met zijvensters.
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
@@ -65,7 +65,7 @@ U kunt nu Camera Raw-bestanden importeren in Elementen. Nadat u het Camera Raw p
 
 *Afbeelding: Gebruik deze optie om lichte bewerkingen uit te voeren op uw afbeeldingen.*
 
-Nadat u de bewerkingen hebt opgeslagen in een [!DNL Camera Raw]-afbeelding, wordt een nieuwe uitvoering `AdjustedPreview.jpg` gegenereerd voor de afbeelding. Voor andere afbeeldingstypen, behalve [!DNL Camera Raw], worden de wijzigingen in alle uitvoeringen doorgevoerd.
+Nadat u de bewerkingen hebt opgeslagen in een [!DNL Camera Raw] afbeelding, een nieuwe vertoning `AdjustedPreview.jpg` wordt voor de afbeelding gegenereerd. Voor andere afbeeldingstypen, behalve [!DNL Camera Raw], worden de wijzigingen weerspiegeld in alle uitvoeringen.
 
 ## Beste werkwijzen, bekende problemen en beperkingen {#best-practices}
 
@@ -73,4 +73,4 @@ De functionaliteit heeft de volgende beperkingen:
 
 * De functionaliteit ondersteunt alleen JPEG-uitvoeringen. Deze functie wordt ondersteund in Windows 64-bits, Mac OS en RHEL 7.x.
 * Metagegevensterugname wordt niet ondersteund voor RAW- en DNG-indelingen.
-* De bibliotheek [!DNL Camera Raw] heeft beperkingen rond de totale pixel het in een tijd kan verwerken. Op dit moment kan het maximaal 65000 pixels aan de lange zijde van een bestand of 512 MP verwerken, ongeacht de criteria die het eerst worden aangetroffen.
+* De [!DNL Camera Raw] De bibliotheek heeft beperkingen rond de totale pixel het in een tijd kan verwerken. Op dit moment kan het maximaal 65000 pixels aan de lange zijde van een bestand of 512 MP verwerken, ongeacht de criteria die het eerst worden aangetroffen.

@@ -3,9 +3,9 @@ title: AEM en integratie van derde partijen in de handel via het kader voor inte
 description: Ondernemingen kunnen aanvullende handelsoplossingen van derden nodig hebben om hun winkel te kunnen bedienen. Het Kader van de Integratie van de Handel (CIF) kan in dergelijke integratiescenario's worden gebruikt om een derdehandelsoplossing met Adobe Experience Manager te verbinden gebruikend I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: e99899a4-df86-4108-991a-8b30d303a279
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -51,3 +51,14 @@ We raden u aan [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/
 De [referentieimplementatie](https://github.com/adobe/commerce-cif-graphql-integration-reference) is een groot uitgangspunt om de integratie aan uw handelsoplossing te bouwen. Hoewel GraphQL wordt ondersteund, kan deze ook worden geïntegreerd met elk ander type API, zoals REST.
 
 Deze integratielaag wordt niet vereist als een derdelaag (zoals Mulesoft) beschikbaar is of de integratie bovenop de derdeoplossing wordt gebouwd.
+
+## Vooraf gebouwde connectors {#connectors}
+
+De schakelaars verstrekken een goede aanvang voor projecten. Ze worden geleverd met een specifieke verbinding met een handelsoplossing en standaard-API-toewijzing. Deze schakelaars worden gebouwd door derden en niet door Adobe gehandhaafd. Neem contact op met de betreffende partner voor meer informatie.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), gebouwd door Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), gebouwd door Diconium
+
+>[!TIP]
+>
+>Terwijl de schakelaars projecten helpen om de handelsintegratie te versnellen, zijn zij niet stop-in-spel. De commerciële oplossingen van de onderneming zijn gewoonlijk zwaar aangepast en vereisen een douaneintegratie. Goede kennis van het handelsplatform, de schema&#39;s van Adobe Commerce GraphQL, en Adobe I/O Runtime wordt vereist.

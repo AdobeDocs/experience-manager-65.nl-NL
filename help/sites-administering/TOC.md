@@ -8,9 +8,9 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: 206df4237e0e6959389dd0128c79c8f64bc4a0e4
+source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 6%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 6%
    + [Koppeling bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
    + [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](adobeanalytics-mapping.md)
    + [Video bijhouden configureren voor Adobe Analytics](adobeanalytics-video.md)
-   + [Integratie met Adobe Analytics met Adobe I/O](integration-analytics-ims-adobe-io.md)
+   + [Integratie met Adobe Analytics met IMS](integration-analytics-ims.md)
    + [Veelgestelde vragen over HTTP2-levering van content](scene7-http2faq.md)
    + [Problemen met Adobe Campaign-integratie oplossen](troubleshooting-campaignintegration.md)
    + [SharePoint-connectorlicenties, copyrightberichten en Disclaimers](sharepoint-connector-licenses.md)
@@ -143,7 +143,7 @@ ht-degree: 6%
    + [Integratie met de Adobe Marketing Cloud](marketing-cloud.md)
    + [De integratie met Adobe Target handmatig configureren](target-configuring.md)
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
-   + [Integratie met Adobe Target met Adobe I/O](integration-target-ims-adobe-io.md)
+   + [Integratie met Adobe Target met IMS](integration-target-ims.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)

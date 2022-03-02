@@ -1,25 +1,17 @@
 ---
-title: Integratie met Adobe Target met Adobe I/O
-seo-title: Integration with Adobe Target using Adobe I/O
-description: Meer informatie over het integreren van AEM met Adobe Target met behulp van Adobe I/O
-seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
-uuid: dd4ed638-e182-4d7e-9c98-282431812467
-contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: integration
-discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
-docset: aem65
-source-git-commit: e6f4f3cf31c39853b45450e0c925694fc45f7aec
+title: Integratie met Adobe Target met IMS
+description: Meer informatie over het integreren van AEM met Adobe Target met IMS
+exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
+source-git-commit: e3f99c250934f796be404d947503d9367f2c510d
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
 
-# Integratie met Adobe Target met Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
+# Integratie met Adobe Target met IMS{#integration-with-adobe-target-using-ims}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) en Adobe I/O vereist.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) met de Adobe Developer Console vereist.
 
 >[!NOTE]
 >
@@ -37,13 +29,13 @@ Voordat u met deze procedure begint:
 * [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
 
    * Adobe-console
-   * Adobe I/O
+   * Adobe Developer Console
    * Adobe Target en
    * Adobe IMS (Identity Management-systeem)
 
 * De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
-   * Dit voorziet de specifieke ontwikkelaars van toestemmingen om integratie binnen Adobe I/O toe te laten.
+   * Dit verstrekt de specifieke ontwikkelaars met toestemmingen om integratie binnen de Console van de Ontwikkelaar van de Adobe toe te laten.
    * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -60,7 +52,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    ![](assets/integrate-target-io-01.png)
 
-1. Selecteren **Downloaden** (of **Openbare sleutel downloaden**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [Adobe I/O configureren voor Adobe Target-integratie met AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem).
+1. Selecteren **Downloaden** (of **Openbare sleutel downloaden**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [IMS configureren voor Adobe Target-integratie met AEM](#configuring-ims-for-adobe-target-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -68,21 +60,17 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
    ![](assets/integrate-target-io-02.png)
 
-## Adobe I/O configureren voor Adobe Target-integratie met AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
+## IMS configureren voor Adobe Target-integratie met AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-U moet het Adobe I/O Project (integratie) met Adobe Target tot stand brengen dat AEM zal gebruiken, dan de vereiste voorrechten toewijzen.
+Met behulp van de Adobe Developer Console moet u een project (integratie) maken met Adobe Target dat AEM gebruiken, en vervolgens de vereiste rechten toewijzen.
 
 ### Het project maken {#creating-the-project}
 
-Open de Adobe I/O-console om een I/O-project te maken met Adobe Target dat AEM gebruiken:
+Open de Adobe Developer Console om een project met Adobe Target te maken dat AEM gebruikt:
 
->[!NOTE]
->
->Zie ook de [Adobe I/O-zelfstudies](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
+1. Open de Adobe Developer Console voor Projecten:
 
-1. Open de Adobe I/O console voor Projecten:
-
-   [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
@@ -145,11 +133,11 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
 
-## Details die voor het Project van de Integratie van de Adobe I/O worden opgeslagen {#details-stored-for-the-adobe-io-integration-project}
+## Gegevens opgeslagen voor het Adobe Developer Console Integration-project {#details-stored-for-the-ims-integration-project}
 
-Van de console van de Projecten van Adobe I/O kunt u een lijst van al uw integratieprojecten zien:
+Van de Console van de Ontwikkelaar van Adobe - de Projecten kunt u een lijst van al uw integratieprojecten zien:
 
-* [https://console.adobe.io/projects](https://console.adobe.io/projects)
+* [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 Selecteren **Weergave** (rechts van een specifieke projectvermelding) om verdere details over de configuratie te tonen. Deze omvatten:
 
@@ -162,22 +150,22 @@ Selecteren **Weergave** (rechts van een specifieke projectvermelding) om verdere
 * APIS
    * Bijvoorbeeld Adobe Target
 
-Bij sommige hiervan moet u de Adobe I/O-integratie voor Target in AEM voltooien.
+Bij sommige hiervan moet u de integratie van Adobe Target in AEM op basis van IMS voltooien.
 
 ## De IMS-configuratie voltooien in AEM {#completing-the-ims-configuration-in-aem}
 
-Terugkeren naar AEM kunt u de configuratie voltooien IMS door vereiste waarden van de integratie van Adobe I/O voor Doel toe te voegen:
+Terugkeren naar AEM kunt u de configuratie voltooien IMS door vereiste waarden van de integratie van de Console van de Ontwikkelaar van de Adobe voor Doel toe te voegen:
 
 1. Terugkeren naar de [IMS-configuratie geopend in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecteren **Volgende**.
 
-1. Hier kunt u de [details van Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
+1. Hier kunt u de [details van de projectconfiguratie in de Console van de Ontwikkelaar van de Adobe](#details-stored-for-the-ims-integration-project):
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld
-   * **API-sleutel**: Kopieer deze van de [Overzicht](#details-stored-for-the-adobe-io-integration-project) deel van de integratie van Adobe I/O voor Target
-   * **Clientgeheim**: Dit genereren in het dialoogvenster [Overzicht](#details-stored-for-the-adobe-io-integration-project) sectie van de Adobe I/O integratie voor Doel, en exemplaar
-   * **Payload**: Kopieer deze van de [JWT genereren](#details-stored-for-the-adobe-io-integration-project) deel van de integratie van Adobe I/O voor Target
+   * **API-sleutel**: Kopieer deze van de [Overzicht](#details-stored-for-the-ims-integration-project) sectie
+   * **Clientgeheim**: Dit genereren in het dialoogvenster [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
+   * **Payload**: Kopieer deze van de [JWT genereren](#details-stored-for-the-ims-integration-project) sectie
 
    ![](assets/integrate-target-io-10.png)
 

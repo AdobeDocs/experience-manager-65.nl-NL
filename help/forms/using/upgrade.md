@@ -1,8 +1,8 @@
 ---
 title: Upgrade naar AEM 6,5 Forms
-seo-title: Upgrade naar AEM 6,5 Forms
+seo-title: Upgrade to AEM 6.5 Forms
 description: U kunt een directe upgrade uitvoeren van AEM 6.3 Forms en AEM 6.4 Forms naar AEM 6.5 Forms.
-seo-description: U kunt een directe upgrade uitvoeren van AEM 6.3 Forms en AEM 6.4 Forms naar AEM 6.5 Forms.
+seo-description: You can perform a direct upgrade from AEM 6.3 Forms and AEM 6.4 Forms to AEM 6.5 Forms.
 uuid: 7a38cd72-2d01-4af7-b6a3-00dc34c4f02b
 content-type: reference
 topic-tags: installing
@@ -11,16 +11,16 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Upgrade naar AEM 6,5 Forms{#upgrade-to-aem-forms}
 
-AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Zie [Samenvattingsdocument over nieuwe functies](../../forms/using/whats-new.md) voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms.
+AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Ga voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms naar [Overzicht van nieuwe functies](../../forms/using/whats-new.md).
 
 U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
@@ -47,6 +47,7 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 * AEM 6.3 Forms in juni
 * AEM 6.4 Forms in juni
+* AEM 6.5.x.x op JEE
 
 U kunt een multi-hopverbetering van ook uitvoeren
 
@@ -56,6 +57,16 @@ U kunt een multi-hopverbetering van ook uitvoeren
 * AEM 6,0 Forms in juni
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
+
+AEM 6.5.12.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: Volledig installatieprogramma en Patch-installatieprogramma.
+
+**Volledig installatieprogramma**: Met het volledige installatieprogramma kunt u nieuwe AEM Forms-exemplaren instellen of upgrades uitvoeren van AEM 6.3 Forms op JEE, AEM 6.4 op JEE en een upgrade van AEM 6.5.x.x op JEE naar AEM 6.5.12.0 Forms op JEE.
+
+**Patchinstallatieprogramma**: Patchinstallatieprogramma is bedoeld voor klanten die al AEM 6.5.x.x-versies gebruiken. Met het installatieprogramma van de patch kunt u een upgrade uitvoeren naar de nieuwste versie van AEM Forms.
+
+In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledige installatieprogramma en het patchinstallatieprogramma.
+
+![](assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]

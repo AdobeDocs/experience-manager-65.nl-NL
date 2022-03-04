@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 41fb9099ef81b84bcf9fa7b6f153ab1a27953795
+source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -111,12 +111,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
-   <td>IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)</td>
-   <td>A: Ondersteund</td>
-   <td>Kleine releases en updates</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0)<br /> </td>
+   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
@@ -144,25 +139,20 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.0 </p> </td>
+   <td><p> MongoDB Enterprise 4.0 (afgekeurd) </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td><p>Database van oracles 12c, Release 1</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Ondersteund</p> </td>
-  </tr>
-   <tr>
-   <td><p>Database van het oracle 12c Release 2 (12.2.0.1.0)</p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td>Database van oracles 18c </td>
-   <td>Repository Microkernel</td>
-   <td>Ondersteund</td>
-  </tr> 
+   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0) (Afgekeurd)</p> </td>
+   <td><p>Repository Microkernel</p> </td>
+   <td><p>Ondersteund</p> </td>
+  </tr>
    <tr>
    <td>Database 19c van oracles (Standard, Real Application Clusters (RAC) en Enterprise-edities) </td>
    <td>Repository Microkernal </td>
@@ -179,15 +169,20 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td><p>Ondersteund</p> </td>
   </tr>
   <tr>
-   <td>IBM DB2 11.1</td>
+   <td>IBM DB2 11.1 (afgekeurd)</td>
    <td>Repository Microkernel</td>
    <td>R: Beperkte ondersteuning</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.35 (afgekeurd) </td>
    <td>-</td>
    <td>R: Beperkte ondersteuning</td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R: Beperkte ondersteuning</td>
+  </tr>
  </tbody>
 </table>
 
@@ -218,7 +213,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0 (afgekeurd) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Wordt geleverd bij AEM Forms op JEE-installatie.</p> </td>
   </tr>
   <tr>
@@ -254,7 +249,12 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup></p> </td>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Afgekeurd) </p> </td>
+   <td><p>A: Ondersteund</p> </td>
+   <td><p>Patches en cumulatieve patches voor de ondersteunde EAP-versie</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Ondersteund</p> </td>
    <td><p>Patches en cumulatieve patches voor de ondersteunde EAP-versie</p> </td>
   </tr>
@@ -287,7 +287,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Servicepacks en kritieke updates</td>
   </tr>
   <tr>
-   <td>Microsoft Windows Server 2016 (64-bits) (afgekeurd)</td>
+   <td> Microsoft Windows Server 2016 (64-bits) (afgekeurd)</td>
    <td>A: Ondersteund</td>
    <td>Servicepacks en kritieke updates</td>
   </tr>
@@ -372,10 +372,6 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
   </tr>
   <tr>
-   <td>Oracle Verenigde Folder (OUD) Versie 11g 2</td>
-   <td>Servicepakketten</td>
-  </tr>
-  <tr>
    <td>Microsoft Active Directory 2016</td>
    <td>Onderhoudsrelease en -reparatiepakketten</td>
   </tr>
@@ -390,7 +386,6 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
 
 | Product |
 | ----------------------- |
-| IBM Lotus Domino 9.0 |
 | Microsoft Exchange 2013 |
 | Microsoft Office 365 |
 
@@ -408,18 +403,14 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
   </tr>
   <tr>
    <td>IBM Filenet</td>
-   <td>5,2</td>
-  </tr>
-  <tr>
-   <td>IBM Filenet</td>
    <td>5.5.2.</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Server</td>
+   <td>IBM Content Manager Server (afgekeurd) </td>
    <td>8.5 Fix pack 2</td>
   </tr>
   <tr>
-   <td>IBM Content Manager Client</td>
+   <td> IBM Content Manager-client (afgekeurd)</td>
    <td>8,5 </td>
   </tr>
   <tr>
@@ -463,7 +454,7 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
@@ -683,7 +674,6 @@ Zie voor aanvullende vereisten:
 >
 > Bepaalde browsergerelateerde uitzonderingen voor desktops zijn als volgt:
 >
-> - De meeste moderne browsers bieden geen ondersteuning meer voor op NPAPI gebaseerde plug-ins. Ga voor informatie over de gevolgen van AEM Forms-toepassingen en -workflows naar [Stopzetten van insteekmodules voor NPAPI-browsers en het effect ervan](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari wordt alleen ondersteund op Macintosh OS X.
 > - De werkruimte biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie voor meer informatie over de compatibiliteit met Adobe Reader, Acrobat, Safari 5.1 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Beheerconsole wordt niet ondersteund in Safari.
@@ -735,25 +725,6 @@ De AEM Forms-app is beschikbaar op de volgende platforms:
 | Google Android | Android 5.1 en hoger. De AEM Forms-app is gecertificeerd voor Samsung Galaxy-tablets van 7 en 10 inch en voor populaire smartphones. |
 | Microsoft Windows | Microsoft Surface devices, tablets, notebooks en desktops met Microsoft Windows 10 besturingssysteem. |
 
-### Adobe Flash Player {#adobe-flash-player}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Flash Player (basis)</strong></p> </th>
-   <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
-  </tr>
-  <tr>
-   <td><p>Flash Player nieuwste versie</p> </td>
-   <td><p>Kleine versies en updates</p> </td>
-  </tr>
- </tbody>
-</table>
-
->[!NOTE]
->
-> Adobe will [eind 2020 stoppen met bijwerken en verspreiden van de Flash Player](https://theblog.adobe.com/adobe-flash-update/).
-
 ### Adobe Document Security Extension for Microsoft Office {#adobe-rights-management-extension-for-microsoft-office}
 
 Klikken [hier](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html) om de systeemvereisten voor Adobe Document Security Extension voor Microsoft® Office te bekijken.
@@ -776,33 +747,49 @@ Onder omstandigheden waarop Adobe geen invloed heeft, kunnen patches van derden 
 
 Adobe behoudt zich het recht voor om de referentieplatforms van derden die door een AEM Forms bij JEE-release worden ondersteund, en hun ondersteunde patchdefinities op een bepaald punt te wijzigen.
 
-Aanvullende informatie voor patches van derden kunt u ook vinden op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
+Aanvullende informatie voor patches van derden vindt u ook op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
 
 ## Platform-updates {#platform-updates}
+
+De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.12.0 release op 3 februari 2022:
+
+- MongoDB Enterprise 4.0
+- IBM DB2 11.1
+- Database van oracles 12c, Release 2
+- MySQL 5.7.35
+- Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0
+- JBoss® Enterprise Application Platform (EAP) 7.1.4
+- IBM Content Manager Server 8.5 Fix Pack 2
+- IBM Content Manager Client 8.5
 
 De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 release op 7 september 2021:
 
 - Adobe Acrobat 2017 - [Basisondersteuning voor Adobe Acrobat 2017 eindigt op 6 juni 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
-
 - Microsoft Windows Server 2016 (64-bits)
-
 - Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bits)
-
 - Microsoft® Office 2016
-
 - OpenOffice 4.1.2
 
 >[!NOTE]
 >
-> De platforms die zijn gemarkeerd als [afgekeurd blijven in ondersteuning tot de release van AEM Forms 6.5 Service Pack 15 (6.5.15.0)](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> De platforms die zijn gemarkeerd als [afgekeurd op AEM Forms 6.5.12.0 en 6.5.10.0 blijven in ondersteuning tot AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revisie-overzicht {#revision-history}
 
+- 03 feb. 2022
+
+   - Verwijderde ondersteuning voor het volgende:
+      - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
+      - Database van oracles 12c, Release 2
+      - Database van oracles 18c
+      - Oracle Verenigde Folder (OUD) Versie 11g 2
+      - IBM Lotus Domino 9.0
+      - IBM Filenet 5.2
+      - Adobe Flash Player
 
 - 10 okt. 2021
 
    - Ondersteunde versie van iOS for AEM Forms App is gewijzigd in iOS 15.1. De vorige versie was iOS 12.
-
 
 - 07 sep. 2021
    - **Updates van Platform**: [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
@@ -815,5 +802,3 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
    - 09 sep. 2020
 
       - Ondersteunde versie van iOS for AEM Forms App is gewijzigd in iOS 12. De vorige versie was iOS 11.
-
-

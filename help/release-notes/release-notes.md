@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 7649b9a36fbf47ec92bd4c33cd7590d9934aa169
+source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
 workflow-type: tm+mt
-source-wordcount: '3193'
+source-wordcount: '3143'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,6 @@ De volgende problemen zijn opgelost in [!DNL Assets]:
    * Alleen de laatste selectie van het bovenliggende veld wordt opgeslagen voor het afhankelijke niet-bewerkbare veld (NPR-37858).
    * Het afhankelijke vervolgkeuzemenu (veld met meerdere waarden) geeft periodiek de standaardwaarde weer voor het geselecteerde bovenliggende vervolgkeuzemenu (NPR-37791).
 
-
 ### [!DNL Dynamic Media] {#dynamic-media-65120}
 
 De volgende problemen zijn opgelost in [!DNL Dynamic Media]:
@@ -128,9 +127,7 @@ De volgende problemen zijn opgelost in [!DNL Dynamic Media]:
 
 * Schuiven werkt niet zoals verwacht als u een filter toepast op items in Postvak IN (CQ-4333594).
 
-
 ### [!DNL Forms] {#forms-65120}
-
 
 >[!NOTE]
 >
@@ -200,7 +197,6 @@ De volgende problemen zijn opgelost in [!DNL Dynamic Media]:
 
 * Problemen met XPath/Dot Notation browser met Set Variable step in Workflow in AEM 6.5.9.0 Forms en AEM 6.5.10.0 Forms (CQ-4336582).
 
-
 Voor informatie over beveiligingsupdates raadpleegt u [[!DNL Experience Manager] beveiligingspagina met opsommingstekens](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Installeer 6.5.12.0 {#install}
@@ -266,10 +262,6 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 1. Controleer of u het Adobe Experience Manager Service Pack hebt geïnstalleerd.
 1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
 1. Het Forms-invoegtoepassingspakket installeren zoals beschreven in [AEM Forms-add-onpakketten installeren](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->Experience Manager 6.5.12.0 bevat een nieuwe versie van [AEM Forms-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). Als u een oudere versie van het AEM Forms Compatibility Package gebruikt en een update naar Experience Manager 6.5.10.0 uitvoert, installeert u de nieuwste versie van het pakket na de installatie van het Forms Add-On Package.
 
 ### Adobe Experience Manager Forms installeren op JEE {#install-aem-forms-jee-installer}
 

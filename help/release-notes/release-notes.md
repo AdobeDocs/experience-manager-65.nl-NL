@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 23b5f83e598210f14ee20e8fa5fb01434b93faae
+source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3169'
 ht-degree: 0%
 
 ---
@@ -84,6 +84,7 @@ De volgende problemen zijn opgelost in [!DNL Sites]:
 * [Gemeenschappen] Op de inhoud in de tabel voor groepsleden kan niet worden geklikt (CQ-4334404).
 * [Eik] Het Cold-Standby-synchronisatieproces werkt niet en registreert een fout (CQ-4333868).
 * [UI Platform Foundation] [!DNL Experience Manager] De startpagina wordt opnieuw weergegeven wanneer de gebruiker de optie [!DNL Adobe Experience Manager] pictogram staat al op de startpagina (CQ-4317409).
+* Als een gebruiker (zonder replicatiemachtigingen) pagina&#39;s verwijdert of verplaatst (zelfs als de pagina&#39;s niet zijn geactiveerd), worden de `Page Subtree Activation Check` onder Configuratie `Page Manager Factory` moet worden ingeschakeld (NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 

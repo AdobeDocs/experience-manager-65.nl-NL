@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3169'
+source-wordcount: '3307'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,12 @@ De volgende problemen zijn opgelost in [!DNL Dynamic Media]:
 * Wanneer u het Allow Rich Text bezit voor een tekstvakje toelaat, zijn er kwesties met de maximaal toegestane karakterlengte (NPR-37825).
 
 * CSS-problemen wanneer u een component kopieert in een adaptieve vorm (NPR-37812).
+
+* Tijdens het genereren van de vertaling van adaptieve formulieren bevat het gegenereerde XLIFF-bestand niet dezelfde volgorde van teksten als in het adaptieve formulier. In sommige gevallen moet de context van de teksten worden bekeken. Dit is niet mogelijk als de reeks in XLIFF alfabetisch is. (NPR-37435).
+
+* Wanneer een adaptief formulier wordt vertaald, maken de HTML-tags deel uit van de vertaling. Als een gebruiker een fout maakt en de labels niet geldig zijn, wordt de volledige tekst niet weergegeven in het document met de record. (NPR-37499)
+
+* Wanneer een adaptief formulier wordt gemaakt en voltooid in de basistaal en de vertaling wordt uitgevoerd door een extern team en geïmporteerd. Als er zelfs een kleine tekstwijziging is, zoals toevoeging of ontbrekende punt (.) wordt uitgevoerd in de versie voor de basistaal, de volledige vertaling ontbreekt voor alle andere talen. (NPR-37189)
 
 **Formuliergegevensmodel**
 

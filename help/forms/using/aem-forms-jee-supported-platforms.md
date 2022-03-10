@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 45a26c34ba879e1948ace785e861d38cce71e3a6
+source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3515'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,13 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
- </tbody>
+  <tr>
+   <td> IBM JAVA1.8.0_291(build 8.0.6.30)<br /> </td>
+   <td>A: Ondersteund</td>
+   <td>Kleine releases en updates</td>
+  </tr>
+
+</tbody>
 </table>
 
 >[!NOTE]
@@ -159,7 +165,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Ondersteund</td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft SQL Server 2016 (afgekeurd)</p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Ondersteund</p> </td>
   </tr>
@@ -244,7 +250,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Servicepack en kritieke updates</td>
   </tr>
   <tr>
-   <td>IBM® WebSphere® Application Server 9.0 <sup>[1] [4]</sup><br /> </td>
+   <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: Ondersteund</td>
    <td>Servicepack en kritieke updates</td>
   </tr>
@@ -751,7 +757,7 @@ Aanvullende informatie voor patches van derden vindt u ook op de website van Ado
 
 ## Platform-updates {#platform-updates}
 
-De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.12.0 release op 3 februari 2022:
+De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.12.0 release op 3 maart 2022:
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
@@ -761,6 +767,7 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.12.0 relea
 - JBoss® Enterprise Application Platform (EAP) 7.1.4
 - IBM Content Manager Server 8.5 Fix Pack 2
 - IBM Content Manager Client 8.5
+- Microsoft SQL Server 2016
 
 De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 release op 7 september 2021:
 
@@ -776,11 +783,11 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
 
 ## Revisie-overzicht {#revision-history}
 
-- 03 feb. 2022
+- 03 mrt. 2022
 
    - Verwijderde ondersteuning voor het volgende:
       - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
-      - Database van oracles 12c, Release 2
+      - Database van oracles 12c, Release 1
       - Database van oracles 18c
       - Oracle Verenigde Folder (OUD) Versie 11g 2
       - IBM Lotus Domino 9.0

@@ -6,7 +6,7 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 19eaabb55f11ea8080a545d994795e30817a51fb
+source-git-commit: f4e6a1855fad76df8102751b14e9ac6982315937
 workflow-type: tm+mt
 source-wordcount: '3670'
 ht-degree: 16%
@@ -246,45 +246,65 @@ U kunt ook de metagegevenseigenschappen van een element op de externe DAM bijwer
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 
-### Moet u Connected Assets configureren als u de middelen die beschikbaar zijn op uw [!DNL Sites] implementatie?
++++**Moet u Connected Assets configureren als u de middelen die beschikbaar zijn op uw [!DNL Sites] implementatie?**
 
 In dat geval is het niet nodig om Connected Assets te configureren. U kunt de middelen gebruiken die beschikbaar zijn op de [!DNL Sites] implementatie.
 
-### Wanneer moet u de Connected Assets-functie configureren?
++++
+
++++**Wanneer moet u de Connected Assets-functie configureren?**
 
 Configureer de functie Connected Assets alleen wanneer u de middelen die beschikbaar zijn op een externe DAM-implementatie moet gebruiken op een [!DNL Sites] implementatie.
 
-### Hoeveel [!DNL Sites] implementaties kunt u verbinding maken met een externe DAM-implementatie nadat u Connected Assets hebt geconfigureerd?
++++
+
++++**Hoeveel [!DNL Sites] implementaties kunt u verbinding maken met een externe DAM-implementatie nadat u Connected Assets hebt geconfigureerd?**
 
 U kunt maximaal vier [!DNL Sites] implementaties naar een externe DAM-implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
 
-### Hoeveel verre plaatsingen DAM u met een [!DNL Sites] implementatie na het configureren van Connected Assets?
++++
+
++++**Hoeveel verre plaatsingen DAM u met een [!DNL Sites] implementatie na het configureren van Connected Assets?**
 
 U kunt één externe DAM-implementatie verbinden met een [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Connected Assets-architectuur](#connected-assets-architecture).
 
-### Kunt u Dynamic Media-elementen van uw [!DNL Sites] implementatie na het configureren van Connected Assets?
++++
+
++++**Kunt u Dynamic Media-elementen van uw [!DNL Sites] implementatie na het configureren van Connected Assets?**
 
 Na het configureren van Connected Assets, [!DNL Dynamic Media] elementen zijn beschikbaar op [!DNL Sites] implementatie in de modus Alleen-lezen. U kunt daarom niet [!DNL Dynamic Media] om elementen op de [!DNL Sites] implementatie. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#dynamic-media-assets).
 
-### Kunt u elementen van de indeling Afbeelding en Document gebruiken, van de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets?
++++
+
++++**Kunt u elementen van de indeling Afbeelding en Document gebruiken, van de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets?**
 
 Ja, u kunt middelen van beeld en formaat van het Document types van de verre plaatsing van DAM op [!DNL Sites] implementatie na het configureren van Connected Assets.
 
-### Kan u inhoudsfragmenten en video-elementen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?
++++
+
++++**Kan u inhoudsfragmenten en video-elementen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?**
 
 Nee, u kunt inhoudsfragmenten en video-elementen van de externe DAM-implementatie niet gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets.
 
-### Kunt u Dynamic Media-middelen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?
++++
+
++++**Kunt u Dynamic Media-middelen van de externe DAM-implementatie gebruiken op de [!DNL Sites] implementatie na het configureren van Connected Assets?**
 
 Ja, u kunt Dynamic Media image assets configureren en gebruiken vanaf de externe DAM-implementatie op de [!DNL Sites] implementatie na het configureren van Connected Assets. Zie voor meer informatie [Een verbinding tussen Sites en Dynamic Media-implementaties configureren](#dynamic-media-assets).
 
-### Nadat u Connected Assets hebt geconfigureerd, kunt u de bewerkingen voor bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen?
++++
+
++++**Nadat u Connected Assets hebt geconfigureerd, kunt u de bewerkingen voor bijwerken, verwijderen, hernoemen en verplaatsen op de externe DAM-middelen of -mappen?**
 
 Ja, nadat u Connected Assets hebt geconfigureerd, kunt u de update uitvoeren, verwijderen, hernoemen en bewerkingen verplaatsen op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen. Zie voor meer informatie [Updates van middelen beheren in externe DAM](#handling-updates-to-remote-assets).
 
-### Nadat u Connected Assets hebt geconfigureerd, kunt u elementen aan uw [!DNL Sites] implementatie en beschikbaar stellen voor externe DAM-implementatie?
++++
+
++++**Nadat u Connected Assets hebt geconfigureerd, kunt u elementen aan uw [!DNL Sites] implementatie en beschikbaar stellen voor externe DAM-implementatie?**
 
 U kunt elementen toevoegen aan de [!DNL Sites] implementatie, maar deze middelen kunnen niet beschikbaar worden gemaakt voor de externe DAM-implementatie.
+
++++
 
 ## Beperkingen en aanbevolen procedures {#tip-and-limitations}
 

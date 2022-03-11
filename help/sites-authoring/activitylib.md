@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
-source-git-commit: 10e46fe60edcaa116978173b8c61542653f6a551
+source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
 workflow-type: tm+mt
-source-wordcount: '2001'
-ht-degree: 13%
+source-wordcount: '2000'
+ht-degree: 12%
 
 ---
 
@@ -97,7 +97,7 @@ Voeg een activiteit toe of bewerk een bestaande activiteit om uw marketing inspa
 
 Een activiteit toevoegen:
 
-1. Klik of tik op het merk waarvoor u de activiteit maakt en klik of tik vervolgens op **Maken** en vervolgens op **Activiteit maken**. Als u aan het bewerken bent, selecteert u de activiteit en klikt of tikt u op **Bewerken**.
+1. Klik of tik op het merk waarvoor u de activiteit maakt, klik of tik **Maken** en vervolgens **Activiteit maken**. Als u aan het bewerken bent, selecteert u de activiteit en klikt of tikt u op **Bewerken**.
 1. Geef de volgende informatie op en klik of tik op **Volgende**:
 
    * Een naam voor de activiteit.

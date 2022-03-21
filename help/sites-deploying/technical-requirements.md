@@ -1,21 +1,21 @@
 ---
-title: Technical Requirements
+title: Technische vereisten
 seo-title: Technical Requirements
-description: A list of the supported client and server platforms for AEM.
+description: Een lijst met de ondersteunde client- en serverplatforms voor AEM.
 seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: cda5e0b545903333d928f14e043a931898d87dc3
+source-git-commit: 077540ed65f31f1bb4f0063fb6ac8bddb76595da
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3314'
 ht-degree: 0%
 
 ---
 
 # Technische vereisten{#technical-requirements}
 
-Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
+Adobe ondersteunt Adobe Experience Manager (AEM) op de platforms, zoals wordt beschreven in de volgende informatie in dit document.
 
 Neem contact op met de leverancier van het platform voor alle problemen die specifiek betrekking hebben op het platform.
 
@@ -25,7 +25,7 @@ Neem contact op met de leverancier van het platform voor alle problemen die spec
 
 ## Vereisten {#prerequisites}
 
-Minimum requirements for installing Adobe Experience Manager:
+Minimumeisen voor de installatie van Adobe Experience Manager:
 
 * Geïnstalleerd Java Platform, Standard Edition JDK of andere ondersteunde toepassingen [Java Virtual Machines](#java-virtual-machines)
 * QuickStart-bestand voor Experience Manager (zelfstandige WAR voor JAR- of webtoepassingsimplementatie)
@@ -41,7 +41,6 @@ Minimumvereisten voor Adobe Experience Manager:
 >
 >* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. Zie [Implementeren en onderhouden](/help/sites-deploying/deploy.md#default-local-install) voor meer informatie.
 >* [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md) vereist 15 GB tijdelijke ruimte.
-
 >
 
 
@@ -138,18 +137,18 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
 
 | **Platform** | **Ondersteuningsniveau** | **Koppeling** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64 bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24) |
-| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=18) |
+| Azul Zulu OpenJDK 11 - 64 bits | A: Ondersteund `[1]` |  |
+| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[1]` |  |
 | Oracle Java SE 11 JDK - 64-bits | A: Ondersteund `[2]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: Niet ondersteund `[2]` |
 | Oracle Java SE 9 JDK | Z: Niet ondersteund `[2]` |
 | Oracle Java SE 8 JDK - 64-bits | A: Ondersteund `[2]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[3]` |
-| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[3]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[3]` |
 
-1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. See the [Azul Java support for Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) for more information.
+1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie de [Azul Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie .
 
-1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. De steun en de verspreiding van het Oracle Java SE JDK, met inbegrip van alle onderhoudsupdates van LTS versies voorbij het eind van de openbare updates, zullen door Adobe direct voor alle AEM klanten worden gesteund die gebruik maken van de Oracle Java SE technologie **tot december 2022**. Zie de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie .
+1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Zie de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie .
 
 1. IBM JRE wordt alleen ondersteund samen met WebSphere Application Server.
 
@@ -409,20 +408,20 @@ De volgende hardwarevereisten zijn van toepassing voor zowel Linux als Windows:
 
 #### Linux {#linux}
 
-If you are using Dynamic Media on Linux, the following prerequisites need to be met:
+Als u Dynamic Media op Linux gebruikt, moet aan de volgende voorwaarden worden voldaan:
 
 * RedHat Enterprise 7 of CentOS 7 en hoger met de nieuwste herstelpatches
 * 64-bits besturingssysteem
-* Swapping disabled (recommended)
-* SELinux disabled (See note that follows)
+* Wisselen uitgeschakeld (aanbevolen)
+* SELinux uitgeschakeld (zie onderstaande opmerking)
 
 >[!NOTE]
 >
->Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. To see what its value is type &quot;locale&quot; at the command prompt. Als het niet aan dat plaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
+>Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. Om te zien wat zijn waarde &quot;scène&quot;bij de bevelherinnering is. Als het niet aan dat plaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
 
 >[!NOTE]
 >
->**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. This option is enabled by default. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
+>**SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
 >
 >`SELINUX=enforcing` **tot** `SELINUX=disabled`
 
@@ -517,14 +516,13 @@ Voor Windows x86:
 >* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >* De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
-
 >
 
 
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 
 * Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server of Microsoft® Windows® 10
-* 1 GHz or faster processor with support for PAE, NX, and SSE2.
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
 * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
 * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)

@@ -11,7 +11,7 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 2a6b92ecd40ae108aee019bcba939a470b66d1b5
+source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
 workflow-type: tm+mt
 source-wordcount: '3515'
 ht-degree: 0%
@@ -116,12 +116,11 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Kleine releases en updates</td>
   </tr>
   <tr>
-   <td> IBM JAVA1.8.0_291(build 8.0.6.30)<br /> </td>
+   <td>IBM JAVA1.8.0_291(build 8.0.6.30)<br /> </td>
    <td>A: Ondersteund</td>
    <td>Kleine releases en updates</td>
   </tr>
-
-</tbody>
+ </tbody>
 </table>
 
 >[!NOTE]
@@ -649,7 +648,7 @@ Zie voor aanvullende vereisten:
    <td>Alle updates</td>
   </tr>
   <tr>
-   <td>Microsoft Firefox ESR</td>
+   <td>Mozilla Firefox ESR</td>
    <td>E: Werken verwacht</td>
    <td> Alle updates</td>
   </tr>
@@ -687,7 +686,7 @@ Zie voor aanvullende vereisten:
 > - Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
 
 
-#### Mobiele clients {#mobile-clients}
+#### Mobile-clients {#mobile-clients}
 
 <table>
  <tbody>
@@ -721,7 +720,7 @@ Zie voor aanvullende vereisten:
 
 ### AEM Forms-app {#aem-forms-workspace-app}
 
-#### Ondersteuning voor mobiele apparaten {#mobile-device-support}
+#### Ondersteuning voor Mobile-apparaten {#mobile-device-support}
 
 De AEM Forms-app is beschikbaar op de volgende platforms:
 

@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: b654785af72bbe124f7296ae0f8ecb94e7815234
+source-git-commit: 70280ec60e8bc4cc139a44c379adca7541856997
 workflow-type: tm+mt
 source-wordcount: '3318'
 ht-degree: 0%
@@ -16,33 +16,33 @@ ht-degree: 0%
 | Producten | [!DNL Adobe Experience Manager] 6,5 |
 | -------- | ---------------------------- |
 | Versie | 6.5.12.0. |
-| Type | Service Pack Release |
+| Type | Service Pack-release |
 | Date | 24 februari 2022 |
-| Download URL | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip) |
+| URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip) |
 
 ## Wat is inbegrepen in [!DNL Adobe Experience Manager] 6.5.12.0. {#what-is-included-in-aem}
 
-[!DNL Adobe Experience Manager] 6.5.12.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.12.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen, die sinds de beschikbaarheid van 6.5 versie in April 2019 worden vrijgegeven. Het de dienstpak wordt geïnstalleerd op [!DNL Adobe Experience Manager] 6.5
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
+De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Adobe Experience Manager] 6.5.12.0 zijn:
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the update, delete, rename, and move operations on the remote DAM assets or folders. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen (NPR-37816).
+* Nadat u een verbinding tussen externe DAM- en Sites-implementaties hebt geconfigureerd, worden de middelen op externe DAM beschikbaar gesteld op de implementatie van Sites. U kunt de update uitvoeren, verwijderen, hernoemen en bewerkingen verplaatsen op de externe DAM-middelen of -mappen. De updates zijn, met wat vertraging, automatisch beschikbaar op de plaatsing van Plaatsen (NPR-37816).
 
 * Push-rollouts van een live-kopiebron naar meerdere live kopieën is nu standaard mogelijk, zonder dat een blauwdrukconfiguratie nodig is (CQ-4259951).
-* The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path (NPR-37611).
+* De status van asynchrone bewerkingen in uitvoering wordt nu weergegeven in de gebruikersinterface om te voorkomen dat gebruikers per ongeluk meerdere asynchrone bewerkingen op hetzelfde pad activeren (NPR-37611).
 * Ondersteuning voor op IMS gebaseerde verificatie wordt verleend voor API&#39;s van Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
 * API-ondersteuning voor JSON biedt type Experience-fragment (NPR-37796).
 * Aanbiedingsaanvraag is nu beschikbaar voor de functie Verwijderen (Experience Fragment API) in IMS (NPR-37668).
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) staat nog steeds op 1.22.9.
 
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
+Hieronder volgt een lijst met oplossingen die u vindt in [!DNL Experience Manager] 6.5.12.0-release.
 
 ### [!DNL Sites] {#sites-65120}
 
 De volgende problemen zijn opgelost in [!DNL Sites]:
 
 * De lay-out van de eigenschappen van het inhoudsfragment wordt verbroken omdat de tabbladen Standaard en Geavanceerd links geen marges hebben (SITES-4484).
-* De optie om een banner te sluiten op inhoudsfragmenten waarnaar op verschillende sitepagina&#39;s wordt verwezen, werkt niet. This banner informs the users that the content fragment is referenced on one or more pages (SITES-4173).
+* De optie om een banner te sluiten op inhoudsfragmenten waarnaar op verschillende sitepagina&#39;s wordt verwezen, werkt niet. Deze banner informeert de gebruikers dat er op een of meer pagina&#39;s naar het inhoudsfragment wordt verwezen (SITES-4173).
 * De selectievakjes worden niet uitgelijnd in het dialoogvenster Overerving herstellen (SITES-3514).
 * De malplaatjepagina op wij-kleinhandel en websites is gebroken, aangezien de componenten niet laden en de structuuroptie niet beschikbaar is, aangezien pageinfo.json servlet op LaunchManagerImpl.getLaunchStream (SITES-3489) blijft.
 * Publiceren van gebruikersknooppunten vanuit de omgeving Auteur naar Publiceren werkt niet (NPR-38005).
@@ -65,7 +65,7 @@ De volgende problemen zijn opgelost in [!DNL Sites]:
 * Het gebruik van cq-msm-lockable rijke tekstgebied in paginaeigenschappen maakt niet het gebied bij het opstellen van de pagina onbruikbaar en het kan door de auteurs worden gewijzigd (NPR-37714).
 * Bij het activeren van een ervaringsfragment verzendt de uitgever veel activeringsaanvragen naar Dispatcher (NPR-37707).
 * Op topologieverandering, wordt het Verschuiven baan voor activa verwerking teruggesteld resulterend in de banen die in uitvoering zijn op het tijdstip van topologieverandering die worden genegeerd (NPR-37706).
-* Quotation marks, cross, and dash are not exported to CSV when users of MacOS export sites and assets URLs (NPR-37698).
+* Aanhalingstekens, kruis en streepje worden niet naar CSV geëxporteerd wanneer gebruikers van MacOS-exportsites en -middelen-URL&#39;s (NPR-37698).
 * De container van de lay-out in SPA paginamalplaatje kan niet de aangepaste CSS klassen registreren die in het Beleid van het Malplaatje worden bepaald wanneer het runnen van reacties SPA pagina&#39;s (NPR-37697).
 * Achtergrondafbeelding is niet zichtbaar wanneer de gebruiker een doelfragment selecteert dat een achtergrond heeft in de container (NPR-37662).
 * De vertaalbaan op een ervaringsfragment vertaalt niet alle componenten op dat ervaringsfragment (NPR-37660).
@@ -94,20 +94,20 @@ The following accessibility enhancements are available in [!DNL Assets]:
 * enhancement 1
 -->
 
-The following issues are fixed in [!DNL Assets]:
+De volgende problemen zijn opgelost in [!DNL Assets]:
 
-* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-37712).
+* Bij het toevoegen van een element of map (met `single quote` in the name) in Connected Assets, the reference path failed and results as an exception (NPR-37712).
 * Wanneer u een watermerk aan een element toevoegt, wordt het watermerk altijd in zwarte kleur weergegeven, ongeacht de kleur die door de gebruiker is gedefinieerd (NPR-37720).
-* When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
-* When updating asset metadata using bulk edit, the changes applied to the dropdown fields are not saved and reset to the default values (NPR-37345).
+* Bij gebruik van Connected Assets kan een gebruiker die geen beheerder is, naar een middel zoeken, zelfs als gebruikers die geen beheerder zijn, beperkt zijn tot toegang tot de DAM-gegevensopslagruimte (NPR-37644).
+* Wanneer u metagegevens van elementen bijwerkt met behulp van bulkbewerking, worden de wijzigingen die zijn toegepast op de vervolgkeuzelijsten niet opgeslagen en teruggezet naar de standaardwaarden (NPR-37345).
 * Het verwijderen van een map in een te lange periode die invloed heeft op de algehele prestaties (NPR-37107).
 * Wanneer de gebruiker regels toepast in meta-gegevensschema, kan de gebruiker niet de volledige waarde voor dropdown bekijken `Field Value` en `Field Choices` als de waarde groter is dan het tekstvak (CQ-4338074).
 * Na de upgrade naar versie 6.5.10.0 geeft de pagina met elementeigenschappen een weerspiegeling van een onnodig HTML-renderingbericht (CQ-4336994).
-* Sorting the assets in `List View` does not work effectively (CQ-4335298).
-* When sharing assets using share link, the assets are downloaded in separate folders (CQ-4335000).
-* When verifying the [!DNL Experience Manager] `Inbox` settings, the `Share` and `Out of office` tabs reflect untranslated content (CQ-4334858).
+* Elementen sorteren in `List View` werkt niet effectief (CQ-4335298).
+* Wanneer u elementen deelt via een koppeling voor delen, worden de elementen gedownload in aparte mappen (CQ-4335000).
+* Wanneer u de [!DNL Experience Manager] `Inbox` instellingen, de `Share` en `Out of office` tabbladen weerspiegelen niet-vertaalde inhoud (CQ-4334858).
 
-* The following fixes are related to cascading metadata in asset properties.
+* De volgende correcties hebben betrekking op trapsgewijze metagegevens in eigenschappen van elementen.
    * Een verplichte vervolgkeuzelijst bevat meerdere foutberichten voor elke selectie in het veld met meerdere waarden (NPR-37859).
    * Alleen de laatste selectie van het bovenliggende veld wordt opgeslagen voor het afhankelijke niet-bewerkbare veld (NPR-37858).
    * Het afhankelijke vervolgkeuzemenu (veld met meerdere waarden) geeft periodiek de standaardwaarde weer voor het geselecteerde bovenliggende vervolgkeuzemenu (NPR-37791).
@@ -206,7 +206,7 @@ De volgende problemen zijn opgelost in [!DNL Dynamic Media]:
 
 Voor informatie over beveiligingsupdates raadpleegt u [[!DNL Experience Manager] beveiligingspagina met opsommingstekens](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## Install 6.5.12.0 {#install}
+## Installeer 6.5.12.0 {#install}
 
 **Instellingsvereisten en meer informatie**
 
@@ -316,7 +316,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 
 * Als u de Fragmenten van de Inhoud en GraphQL gebruikt, adviseert men dat u de volgende pakketten bovenop 6.5.12.0 installeert:
 
-   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (dit vervangt SP12 maar kan bovenop SP12 worden geïnstalleerd)
+   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (dit vervangt SP12, maar kan bovenop SP12 worden geïnstalleerd)
 
    * [Inhoudsfragment AEM met GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 

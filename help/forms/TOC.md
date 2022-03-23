@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 7962d076135bcbac821ff85fd1831ee2c444ff00
+source-git-commit: 290ae422e1136ea28ab21c3031ab66fb5405f1d3
 workflow-type: tm+mt
-source-wordcount: '3772'
+source-wordcount: '3775'
 ht-degree: 1%
 
 ---
@@ -173,7 +173,6 @@ ht-degree: 1%
    + [SOM-expressies gebruiken in aangepaste formulieren](using/using-som-expressions-adaptive-forms.md)
    + [Informatie uit gebruikersgegevens toevoegen aan metagegevens voor het verzenden van formulieren](using/form-submission-metadata.md)
    + [XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren](using/xfa-api-supported-in-adaptive-form.md)
-   + [Pagina-nulinhoud wijzigen in Designer](using/changing-page-zero-content-designer.md)
    + [De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen](using/rule-editor-access-user-groups.md)
    + [Aangepaste formulieren en recorddocumenten lokaliseren met AEM vertaalworkflow](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
    + [Testen van adaptieve formulieren automatiseren](using/calvin.md)
@@ -373,6 +372,7 @@ ht-degree: 1%
    + [AEM inschakelen om te zoeken naar met documentbeveiliging beveiligde PDF- en Microsoft Office-documenten](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Een document namens een andere gebruiker Protect](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
+   + [Help bij Forms Designer](using/forms-designer-help.md)
    + [Designer gebruiken](http://www.adobe.com/go/learn_aemforms_designer_65)
    + [Zelfstudies om snel aan de slag te gaan met Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
    + [Voorbeelden in Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -380,6 +380,7 @@ ht-degree: 1%
    + [Scriptreferentie in Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
    + [Referentiehandleiding van FormCalc voor Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Krabbelhandtekening gebruiken in HTML5-formulieren](using/scribble-signature.md)
+   + [Pagina-nulinhoud wijzigen in Designer](using/changing-page-zero-content-designer.md)
 + AEM Forms aanpassen {#customize-aem-forms}
    + [Vormgevingskader voor adaptieve en HTML5-formulieren](using/introduction-widgets.md)
    + [Een aangepaste aangepaste formuliersjabloon maken](using/custom-adaptive-forms-templates.md)
@@ -686,4 +687,3 @@ ht-degree: 1%
          + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
          + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
          + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
-

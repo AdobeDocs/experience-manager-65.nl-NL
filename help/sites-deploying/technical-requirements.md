@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 077540ed65f31f1bb4f0063fb6ac8bddb76595da
+source-git-commit: ec1c8d80fabefdae01fea92fec9cb33bc5779f3c
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3262'
 ht-degree: 0%
 
 ---
@@ -89,64 +89,16 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
 >
 >Het wordt aanbevolen de beveiligingsbulletins van de Java-leverancier bij te houden om de veiligheid en beveiliging van productieomgevingen te garanderen en de nieuwste Java-updates te installeren.
 
-<!--- <table>
- <tbody>
-  <tr>
-   <td><strong>Platform</strong></td>
-   <td><strong>Support Level</strong></td>
-   <td><strong>Link</strong></td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 11 - 64bit</td>
-   <td>A: Supported [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24</td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 8 - 64bit</td>
-   <td>A: Supported [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 11 JDK - 64bit</td>
-   <td>A: Supported [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 10 JDK</td>
-   <td>Z: Not supported [2]</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 9 JDK</td>
-   <td>Z: Not supported [2]</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 8 JDK - 64bit</td>
-   <td>A: Supported [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10<td>
-  </tr>
-  <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
-   <td>A: Supported [3]</td>
-  </tr>
-  <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0</td>
-   <td>A: Supported [3]</td>
-  </tr>
- </tbody>
-</table> --->
-
 | **Platform** | **Ondersteuningsniveau** | **Koppeling** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64 bits | A: Ondersteund `[1]` |  |
-| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[1]` |  |
-| Oracle Java SE 11 JDK - 64-bits | A: Ondersteund `[2]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
-| Oracle Java SE 10 JDK | Z: Niet ondersteund `[2]` |
-| Oracle Java SE 9 JDK | Z: Niet ondersteund `[2]` |
-| Oracle Java SE 8 JDK - 64-bits | A: Ondersteund `[2]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
-| IBM J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[3]` |
-| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[3]` |
-
-1. Ondersteuning en distributie van Azul Zulu Builds van OpenJDK, inclusief alle onderhoudsupdates van LTS releases, wordt door Adobe rechtstreeks ondersteund voor alle AEM klanten die gebruikmaken van de Azul Zulu Builds of OpenJDK, te beginnen met AEM 6.5 SP9 resp. Zie de [Azul Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-azul-openjdk-license-agreement.pdf) voor meer informatie .
+| Azul Zulu OpenJDK 11 - 64 bits | Z: Niet ondersteund |  |
+| Azul Zulu OpenJDK 8 - 64-bits | A: Niet ondersteund |  |
+| Oracle Java SE 11 JDK - 64-bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java SE 10 JDK | Z: Niet ondersteund `[1]` |
+| Oracle Java SE 9 JDK | Z: Niet ondersteund `[1]` |
+| Oracle Java SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| IBM J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Zie de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie .
 

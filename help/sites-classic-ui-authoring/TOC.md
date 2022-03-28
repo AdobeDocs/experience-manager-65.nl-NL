@@ -1,15 +1,15 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 feature: Authoring
 role: User
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '271'
 ht-degree: 20%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 20%
    + [Annotaties bij het bewerken van een pagina](classic-page-author-annotations.md)
    + [Problemen met AEM bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
    + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
-   + [Een pagina ontwerpen voor mobiele apparaten](classic-feature-mobile.md)
+   + [Een pagina ontwerpen voor Mobile-apparaten](classic-feature-mobile.md)
    + [Componenten voor paginaontwerp](classic-page-author-edit-mode.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](classic-page-author-keyboard-shortcuts.md)
 + Site- en paginafuncties {#siteandpage}

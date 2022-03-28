@@ -1,16 +1,16 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Implementatiegids
 breadcrumb-title: Implementatiegids
 user-guide-description: Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5, inclusief de cloudimplementatie van Adobe Managed Services.
-feature: Implementeren
+feature: Deploying
 role: Architect
-source-git-commit: 5536ee27ad51356c2dcd0f0f36b91025bf1d228c
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
    + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
-+ AEM {#deploying} implementeren
++ AEM implementeren {#deploying}
    + [Implementeren en onderhouden](deploy.md)
    + [Aanbevolen implementaties](recommended-deploys.md)
    + [Installeren van toepassingsserver](application-server-install.md)
@@ -40,7 +40,7 @@ ht-degree: 1%
    + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
    + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
    + [Problemen oplossen](troubleshooting.md)
-+ AEM {#configuring} configureren
++ AEM configureren {#configuring}
    + [Basisconfiguratieconcepten](configuring.md)
    + [Logboekregistratie](configure-logging.md)
    + [OSGi configureren](configuring-osgi.md)
@@ -80,7 +80,7 @@ ht-degree: 1%
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
    + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
    + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
-+ Herstructurering van de opslagplaats {#restructuring}
++ Repositoregeling {#restructuring}
    + [Herstructurering van de depositaris in AEM 6.5](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Sites Repositoregeling Herstructurering AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)

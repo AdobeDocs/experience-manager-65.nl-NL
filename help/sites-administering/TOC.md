@@ -1,14 +1,14 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 6%
@@ -128,7 +128,7 @@ ht-degree: 6%
    + [Integreren met Adobe Campaign Standard](campaignstandard.md)
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
    + [Productfeed](product-feed.md)
-   + [Integreren met dynamisch Adobe-tagbeheer](dtm.md)
+   + [Integreren met Adobe Dynamic Tag Management](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic (Scene7)](scene7.md)

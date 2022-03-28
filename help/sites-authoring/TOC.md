@@ -1,17 +1,17 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 feature: Authoring
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 38%
+source-wordcount: '298'
+ht-degree: 37%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 38%
    + [Ervaringsfragmenten](experience-fragments.md)
    + [Exporteren naar CSV](csv-export.md)
    + [Onderdelen](default-components.md)
-   + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
+   + [Een pagina ontwerpen voor Mobile-apparaten](mobile.md)
    + [Problemen met AEM bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
    + [Best practices voor](best-practices.md)

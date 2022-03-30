@@ -3,17 +3,21 @@ title: Installeren [!DNL Workfront for Experience Manager enhanced connector]
 description: Installeren [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
-source-git-commit: 8d39e1c86e5185a181400f10b7822a57c9d3aeae
+exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
+source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Installeren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeert de verbeterde schakelaar. Bekijk voordat u gaat installeren de platformondersteuning en andere [eerste vereisten voor de aansluiting](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+
+>[!TIP]
+>
+>Bent u op zoek naar [!DNL Workfront for Experience Manager enhanced connector] documentatie voor AEM as a Cloud Service? Klikken [hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en).
 
 >[!IMPORTANT]
 >
@@ -56,3 +60,15 @@ Ga als volgt te werk om een verbinding met Workfront te maken:
    ![Verbinden [!DNL Experience Manager] en [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. Als u de verbinding wilt controleren, opent u deze in [!DNL Workfront] en controleert u of de API-sleutel gelijk is en of de verbinding **[!UICONTROL Enabled]**. Selecteer **[!UICONTROL Setup]** > **[!UICONTROL Documents]** > **[!UICONTROL Custom Integrations]** in [!DNL Workfront].
+
+## Bijwerken [!DNL Workfront for Experience Manager enhanced connector] {#update-enhanced-connector-for-workfront}
+
+Met Experience Manager Assets kunt u de [!DNL Workfront for Experience Manager enhanced connector] van een vorige versie naar de meest recente versie.
+
+Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connector] naar de meest recente versie:
+
+1. Download de nieuwste versie van de verbeterde connector van [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. Het pakket installeren met [!UICONTROL Package Manager]. Zie voor informatie over het installeren van pakketten [Documentatie pakketbeheer](/help/sites-administering/package-manager.md).
+
+

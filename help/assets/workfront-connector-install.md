@@ -4,7 +4,7 @@ description: Installeren [!DNL Workfront for Experience Manager enhanced connect
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: a589836c77fd919838dce60a1eaf676683c165c0
+source-git-commit: 679ad8f1fec1abe97dfc90b6318c3f3c4ab85b7f
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -28,11 +28,8 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeer
 Voer de volgende stappen uit om de aansluiting te installeren:
 
 1. Download de connector van [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. [De firewall configureren](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
-
 1. Toestaan dat in de verzender HTTP-headers met de naam `authorization`, `username`, en `apikey`. Toestaan `GET`, `POST`, en `PUT` verzoeken om `/bin/workfront-tools`.
-
 1. Controleer of de volgende paden niet bestaan in [!DNL Experience Manager] opslagplaats:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
@@ -42,7 +39,6 @@ Voer de volgende stappen uit om de aansluiting te installeren:
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
 1. Het pakket installeren met [!UICONTROL Package Manager]. Zie voor informatie over het installeren van pakketten [Documentatie pakketbeheer](/help/sites-administering/package-manager.md).
-
 1. Maken `wf-workfront-users` in [!DNL Experience Manager] Gebruikersgroep en de machtiging toewijzen `jcr:all` tot `/content/dam`.
 
 Een systeemgebruiker `workfront-tools` wordt automatisch gemaakt en de vereiste machtigingen worden automatisch beheerd. Alle gebruikers van [!DNL Workfront] die de schakelaar gebruiken wordt automatisch toegevoegd als deel van deze groep.
@@ -68,7 +64,4 @@ Met Experience Manager Assets kunt u de [!DNL Workfront for Experience Manager e
 Als u het dialoogvenster [!DNL Workfront for Experience Manager enhanced connector] naar de meest recente versie:
 
 1. Download de nieuwste versie van de verbeterde connector van [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. Het pakket installeren met [!UICONTROL Package Manager]. Zie voor informatie over het installeren van pakketten [Documentatie pakketbeheer](/help/sites-administering/package-manager.md).
-
-

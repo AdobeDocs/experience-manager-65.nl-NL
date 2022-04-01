@@ -1,16 +1,14 @@
 ---
 title: AEM 6.5 Gebruikershandleiding implementeren
-seo-title: AEM 6.5 Gebruikershandleiding implementeren
-description: Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren en implementeren van AEM.
-seo-description: Omvat alle AEM die taken opstelt, zoals het installeren van en het opstellen van AEM.
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Deploying User Guide
+description: Meer informatie over de installatie en implementatie van Adobe Experience Manager 6.5 en over de architectuur ervan, inclusief de cloudimplementatie van Adobe Managed Services.
+exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 16%
+source-wordcount: '391'
+ht-degree: 17%
 
 ---
-
 
 # AEM 6.5 Gebruikershandleiding implementeren
 
@@ -39,7 +37,7 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
@@ -55,6 +53,6 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 
-Zie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+Zie voor meer informatie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)

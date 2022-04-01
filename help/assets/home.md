@@ -1,22 +1,22 @@
 ---
 title: Hulplijn voor middelen
-description: Deze handleiding behandelt alle taken voor Experience Manager Assets, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
+description: Digitale middelen maken, beheren, verwerken en distribueren in Experience Manager. In deze handleidingen worden de aanbevolen werkwijzen, toegankelijkheidsfuncties en het gebruik van AEM 6.5-elementen beschreven.
 user-guide-title: Hulplijn voor middelen
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 883c279330b199d4e3a301e240cae02a6e04fd20
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '344'
 ht-degree: 4%
 
 ---
 
 # Hulplijn voor middelen
 
-Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals het maken, beheren, leveren en optimaliseren van digitale elementen.
+Digitale middelen maken, beheren, verwerken en distribueren in Experience Manager. In deze handleidingen worden de aanbevolen werkwijzen, toegankelijkheidsfuncties en het gebruik van AEM 6.5-elementen beschreven.
 
-## Belangrijke [!DNL Experience Manager] artikelen
+## Sleutel [!DNL Experience Manager] artikelen
 
 * [Opmerkingen bij de release Experience Manager 6.5](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
@@ -37,15 +37,15 @@ Deze handleiding behandelt alle [!DNL Experience Manager Assets] taken, zoals he
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u de implementatie van uw Experience Manager kunt ontwikkelen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | Deze gids beschrijft hoe te om een project van de Experience Manager met succes te beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Leer over het Kader van de Integratie van de Handel op Experience Manager. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |
 
-## Belangrijke [!DNL Experience Manager] bronnen
+## Sleutel [!DNL Experience Manager] bronnen
 
 * [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
-* [Forum Experience Manager Assets](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
+* [Experience Manager Assets Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
 * [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)

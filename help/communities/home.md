@@ -1,20 +1,19 @@
 ---
 title: Adobe Experience Manager 6.5 Community Guide
-seo-title: Adobe Experience Manager 6.5 Community Guide
-description: Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
-seo-description: Omvat alle taken van AEM Communities, zoals het creëren van online ervaringen zoals forums, gebruikersgroepen, het leren middelen, en andere sociale eigenschappen.
+seo-title: Adobe Experience Manager 6.5 Communities Guide
+description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door onze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen en auteursgemeenschappen te schrijven.
+seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 16%
+source-wordcount: '381'
+ht-degree: 17%
 
 ---
 
 # Adobe Experience Manager 6.5 Community Guide
 
-Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
+Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door onze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen en auteursgemeenschappen te schrijven.
 
 ## AEM
 
@@ -39,7 +38,7 @@ Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van onlin
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM

@@ -1,20 +1,19 @@
 ---
 title: AEM 6.5 Handboek voor ontwerpen
-seo-title: AEM 6.5 Handboek voor ontwerpen
-description: 'Deze gids verklaart de concepten creatie in AEM. '
-seo-description: 'Verklaart de concepten creatie in AEM. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Authoring User Guide
+description: Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
+seo-description: Explains the concepts of authoring in AEM.
+exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 18%
+source-wordcount: '373'
+ht-degree: 17%
 
 ---
 
-
 # AEM 6.5 Handboek voor ontwerpen
 
-Deze gids verklaart de concepten creatie in AEM.
+Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 
 ## AEM
 
@@ -39,7 +38,7 @@ Deze gids verklaart de concepten creatie in AEM.
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM

@@ -1,25 +1,23 @@
 ---
 title: AEM Inhoud en Handel
-description: De zelfhulp van de Inhoud en van de Handel middelen en documentatiekoppelingen AEM
-translation-type: tm+mt
-source-git-commit: 809789d268deb4d77bbb5101265a1a0d7268b748
+description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met onze nuttige artikelen over integratie en hoe te beginnen te gebruiken AEM Storefront.
+exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 19%
+source-wordcount: '367'
+ht-degree: 17%
 
 ---
 
+# AEM Inhoud en Handel {#commerce-guide}
 
-# Inhoud en handel AEM {#commerce-guide}
-
-Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Handel.
+Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met onze nuttige artikelen over integratie en hoe te beginnen te gebruiken AEM Storefront.
 
 >[!NOTE]
 >
->Voor AEM Inhoud en Handel met AEM als Cloud Service, zie [AEM Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
+>Voor AEM Inhoud en Handel met AEM as a Cloud Service, zie [AEM Inhoud en Handel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
 
-
-## Belangrijke handelsartikelen {#key-articles}
+## Belangrijkste handelsartikelen {#key-articles}
 
 * [Invoering van AEM handel](/help/commerce/cif/introduction.md)
 * [Aan de slag](/help/commerce/cif/getting-started.md)

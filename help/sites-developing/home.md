@@ -1,20 +1,19 @@
 ---
 title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
-seo-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
-seo-description: Omvat hoe te om uw AEM instantie te bouwen.
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Developing User Guide
+description: Leer hoe u uw AEM-exemplaar kunt opbouwen. Meer informatie over het platform en de componenten, en vind informatie over ontwikkelingshulpmiddelen en verpersoonlijking.
+seo-description: Covers how to build out your AEM instance.
+exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '371'
 ht-degree: 18%
 
 ---
 
-
 # AEM 6.5 Handboek voor het ontwikkelen van toepassingen
 
-In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+Leer hoe u uw AEM-exemplaar kunt opbouwen. Meer informatie over het platform en de componenten, en vind informatie over ontwikkelingshulpmiddelen en verpersoonlijking.
 
 ## AEM
 
@@ -39,7 +38,7 @@ In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM

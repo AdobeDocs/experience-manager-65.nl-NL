@@ -1,20 +1,19 @@
 ---
 title: AEM 6.5 Mobiele gebruikershandleiding
-seo-title: AEM 6.5 Mobiele gebruikershandleiding
-description: In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren.
-seo-description: Beschrijft om inhoud voor mobiele toepassingen tot stand te brengen en te beheren.
+seo-title: AEM 6.5 Mobile User Guide
+description: Profiteer van AEM ondersteuning voor het maken en beheren van inhoud voor mobiele apps. Ontdek een inleiding bij en leer hoe u de On-Demand Services App en Adobe PhoneGap Enterprise kunt ontwerpen, ontwikkelen en beheren.
+seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 18%
+source-wordcount: '391'
+ht-degree: 17%
 
 ---
 
 # AEM 6.5 Mobiele gebruikershandleiding
 
-Deze handleiding behandelt alle AEM Mobile-taken, zoals het maken en beheren van inhoud voor mobiele toepassingen.
+Profiteer van AEM ondersteuning voor het maken en beheren van inhoud voor mobiele apps. Ontdek een inleiding bij en leer hoe u de On-Demand Services App en Adobe PhoneGap Enterprise kunt ontwerpen, ontwikkelen en beheren.
 
 ## AEM
 

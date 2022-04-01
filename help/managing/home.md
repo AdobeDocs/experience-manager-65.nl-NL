@@ -1,20 +1,19 @@
 ---
 title: AEM 6.5 Handboek beheren
-seo-title: AEM 6.5 Handboek beheren
-description: 'In deze handleiding wordt uitgelegd hoe u een AEM project kunt beheren '
-seo-description: Omvat hoe te om een AEM project met succes te beheren
+seo-title: AEM 6.5 Managing User Guide
+description: 'Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling van AEM 6.5-gebruikershandleidingen. '
+seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '367'
 ht-degree: 18%
 
 ---
 
 # AEM 6.5 Handboek beheren
 
-In deze handleiding wordt uitgelegd hoe u een AEM project kunt beheren
+Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling van AEM 6.5-gebruikershandleidingen.
 
 ## AEM
 

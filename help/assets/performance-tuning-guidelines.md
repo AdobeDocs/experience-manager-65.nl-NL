@@ -6,7 +6,7 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
 workflow-type: tm+mt
 source-wordcount: '2675'
 ht-degree: 0%
@@ -202,7 +202,7 @@ Als u de [!UICONTROL DAM Update Asset] om uitvoeringen te genereren met ImageMag
 </policymap>
 ```
 
-Stel bovendien het pad in naar de tijdelijke map van ImageMagick in het dialoogvenster `configure.xml` bestand (of door de omgevingsvariabele in te stellen `MAGIC_TEMPORARY_PATH`) naar een schijfpartitie met voldoende ruimte en IOPS.
+Stel bovendien het pad in naar de tijdelijke map van ImageMagick in het dialoogvenster `configure.xml` bestand (of door de omgevingsvariabele in te stellen `MAGICK_TEMPORARY_PATH`) naar een schijfpartitie met voldoende ruimte en IOPS.
 
 >[!CAUTION]
 >

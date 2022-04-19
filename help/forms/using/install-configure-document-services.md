@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 8fcbdb4d00a5ddffadf5b4a099454dc795999769
+source-git-commit: 81008366b7d5edaf1d2f83ccd2ba6237c2e96fad
 workflow-type: tm+mt
-source-wordcount: '4927'
+source-wordcount: '4934'
 ht-degree: 0%
 
 ---
@@ -677,13 +677,23 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 +++
 
-+++HTMLtoPDF
++++HTML naar aanleiding van problemen met PDF-conversie
 
 * Zorg ervoor dat de folders van doopvonten in PDF Generator config UI worden toegevoegd.
 
-+++
+**Linux en Solaris (PhantomJS conversieroute)**
 
-+++Linux® en Solaris™ (WebKit-conversie)
+* Zorg ervoor dat er een 32-bits bibliotheek beschikbaar is (libicudata.so.42) voor HTMLToPDF-conversie op basis van Webkit en 64-bits (libicudata.so.42 libs zijn beschikbaar voor HTMLToPDF-conversie op basis van PhantomJS.
+
+* Voer de volgende opdracht uit om ontbrekende bibliotheken voor fantoomjs weer te geven:
+
+   ```
+   ldd phantomjs | grep not
+   ```
+
+* Zorg ervoor dat de omgevingsvariabele JAVA_HOME_32 naar de juiste locatie verwijst.
+
+**Linux® en Solaris™ (WebKit conversieroute)**
 
 * Controleer of de mappen `/usr/lib/X11/fonts` en `/usr/share/fonts` bestaan. Als de mappen niet bestaan, maakt u een symbolische koppeling op basis van `/usr/share/X11/fonts` tot `/usr/lib/X11/fonts` en een andere symbolische koppeling van `/usr/share/fonts` tot `/usr/share/X11/fonts`.
 
@@ -724,27 +734,13 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 +++
 
-+++Linux® en Solaris(PhantomJS)HTMLtoPDF
-
-* Zorg ervoor dat er een 32-bits bibliotheek beschikbaar is (libicudata.so.42) voor HTMLToPDF-conversie op basis van Webkit en 64-bits (libicudata.so.42 libs zijn beschikbaar voor HTMLToPDF-conversie op basis van PhantomJS.
-
-* Voer de volgende opdracht uit om ontbrekende bibliotheken voor fantoomjs weer te geven:
-
-```
-ldd phantomjs | grep not
-```
-
-* Zorg ervoor dat de omgevingsvariabele JAVA_HOME_32 naar de juiste locatie verwijst.
-
-+++
-
 +++ Kan geen PDF Generator-gebruiker (PDFG) toevoegen
 
 * Zorg ervoor dat Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 en Microsoft® Visual C++ 2013 x86 (32-bits) herdistribueerbaar zijn geïnstalleerd in Windows.
 
 +++
 
-+++Automatiseringstests mislukken
++++Fouten in de automatiseringstest
 
 * Voer voor Microsoft® Office en OpenOffice ten minste één omzetting handmatig uit (als elke gebruiker) om ervoor te zorgen dat er geen dialoogvenster verschijnt tijdens de conversie. Als er een dialoogvenster verschijnt, wordt dit gesloten. Een dergelijk dialoogvenster wordt niet weergegeven tijdens automatische conversie.
 
@@ -752,7 +748,7 @@ ldd phantomjs | grep not
 
 +++
 
-+++omzettingen door meerdere gebruikers zijn mislukt
++++Meerdere omzettingsfouten voor gebruikers
 
 * Verifieer de serverlogboeken om te controleren of de omzetting voor een bepaalde gebruiker ontbreekt.(De Ontdekkingsreiziger van het Proces kan u helpen het lopende proces voor verschillende gebruikers controleren)
 

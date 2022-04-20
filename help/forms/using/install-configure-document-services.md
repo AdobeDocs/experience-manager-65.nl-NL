@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0f4207564645ef7ba7da9064e971248b59f5a9b3
+source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
 workflow-type: tm+mt
-source-wordcount: '5208'
+source-wordcount: '5247'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Als u de PDF Generator-service gaat gebruiken om native bestandsindelingen zoals
 >* Adobe Acrobat, Microsoft® Word, Excel en PowerPoint zijn alleen beschikbaar voor Microsoft® Windows. Als u het op UNIX-Gebaseerde werkende systeem gebruikt, installeer OpenOffice om rijke tekstdossiers en gesteunde dossiers van Microsoft® Office in de documenten van PDF om te zetten.
 >* Sluit alle dialoogvensters die na het installeren van Adobe Acrobat en software van derden worden weergegeven voor alle gebruikers die zijn geconfigureerd om de service PDF Generator te gebruiken.
 >* Start minstens één keer alle geïnstalleerde software. Ontdek alle dialoogvakjes voor alle gebruikers die worden gevormd om de dienst van de Generator van de PDF te gebruiken.
->
+>* [Vervaldatum van je Adobe Acrobat serienummers controleren](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) en een datum voor het bijwerken van de licentie of [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) op basis van de vervaldatum.
 
 
 Open Microsoft® Word nadat u Acrobat hebt geïnstalleerd. Op de **Acrobat** tabblad, klikt u op **PDF maken** en converteert u een .doc- of .docx-bestand dat op uw computer beschikbaar is naar een PDF-document. Als de conversie succesvol is, is AEM Forms klaar om Acrobat te gebruiken met de service PDF Generator.

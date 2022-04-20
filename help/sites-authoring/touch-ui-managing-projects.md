@@ -1,101 +1,68 @@
 ---
 title: Projecten beheren
-seo-title: Projecten beheren
+seo-title: Managing Projects
 description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
-seo-description: De projecten laten u uw project organiseren door middelen in één entiteit te groeperen die in de console van Projecten kan worden betreden en worden geleid
+seo-description: Projects lets you organize your project by grouping resources into one entity which can be acessed and managed intheProjects console
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
+source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 10%
+source-wordcount: '987'
+ht-degree: 0%
 
 ---
 
 
-# Projecten beheren{#managing-projects}
+# Projecten beheren {#managing-projects}
 
-Met projecten kunt u uw project ordenen door bronnen in één entiteit te groeperen.
+In de **Projecten** console, hebt u toegang tot en beheert uw projecten.
 
-In de **Projecten** console, hebt u toegang tot en voert actie op uw projecten:
+![De projectenconsole](assets/projects-console.png)
 
-![chlimage_1-255](assets/chlimage_1-255.png)
+Gebruikend de console, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of middelverbindingen schrappen.
 
-In Projecten, kunt u een project tot stand brengen, middelen met uw project associëren, en ook een project of verbindingen van het Middel schrappen. U kunt een tegel openen om de inhoud van de tegel weer te geven en items aan een tegel toe te voegen. In dit onderwerp worden deze procedures beschreven.
+## Toegangsvereisten {#access-requirements}
 
->[!NOTE]
->
->6.2 introduceerde de capaciteit om Projecten in omslagen te organiseren. Voor de pagina van Projecten, hebt u de capaciteit om een project of een omslag tot stand te brengen.
->
->Als er een map wordt gemaakt, gaat de gebruiker naar die map waar hij of zij een andere map of een project kan maken. Het helpt om projecten in omslagen te organiseren die op categorieën zoals productcampagnes, plaats, vertaaltalen, etc. worden gebaseerd.
->
->De projecten en omslagen kunnen in een lijstmening worden bekeken en ook worden gezocht.
+Projecteert een standaard AEM en vereist geen extra opstelling.
 
->[!CAUTION]
->
->Voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van de functionaliteit van Projecten zoals het creëren van projecten, het creëren van taken/werkschema&#39;s, het zien van en het leiden van het team, die gebruikers moeten lees toegang op **/home/users** en **/home/groups** hebben. De eenvoudigste manier om dit te implementeren is om de groep **projects-users** lees toegang te geven tot **/home/users** en **/home/groups**.
+Nochtans voor gebruikers in projecten om andere gebruikers/groepen te zien terwijl het gebruiken van Projecten zoals wanneer het creëren van projecten, het creëren van taken/werkschema&#39;s of het bekijken van en het leiden van het team, moeten die gebruikers lees toegang hebben op `/home/users` en `/home/groups`.
 
-## Een project {#creating-a-project} maken
+De eenvoudigste manier om dit te doen is de **projecten-gebruikers** groep lees toegang tot `/home/users` en `/home/groups`.
 
-Uit de doos, verstrekt AEM deze malplaatjes om van te kiezen wanneer u een project creeert:
+## Een project maken {#creating-a-project}
 
-* Eenvoudig project
-* Mediaproject
-* Fotoproject van product
-* Omzettingsproject
+Ga als volgt te werk om een nieuw project te maken.
 
-De procedure om een project tot stand te brengen is voor alle projecten hetzelfde. Het verschil tussen de soorten projecten omvat beschikbare [gebruikersrollen](/help/sites-authoring/projects.md) en [workflows](/help/sites-authoring/projects-with-workflows.md).  Een nieuw project maken:
+1. In de **Projecten** console, tikken of klikken **Maken** om de **Project maken** wizard.
+1. Selecteer een sjabloon en klik op **Volgende**. U kunt meer over de standaardprojectmalplaatjes leren [hier.](/help/sites-authoring/projects.md#project-templates)
 
-1. Tik of klik in **Projecten** op **Maken** om de wizard **Project maken** te openen:
-1. Selecteer een sjabloon. Eenvoudig project, mediaproject, [Omzettingsproject](/help/sites-administering/tc-manage.md) en [Product Fotoopname product](/help/sites-authoring/managing-product-information.md) zijn beschikbaar en klik op **Volgende**.
+   ![Wizard Project maken](assets/create-project-wizard.png)
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
+1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding, indien vereist. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren.
 
-1. Definieer de **Titel** en **Beschrijving** en voeg een **Miniatuur** afbeelding toe, indien nodig. U kunt ook gebruikers toevoegen of verwijderen en tot welke groep zij behoren. Klik bovendien op **Geavanceerd** om een naam toe te voegen die wordt gebruikt in de URL.
+   ![stap Eigenschappen van wizard](assets/create-project-wizard-properties.png)
 
-   ![chlimage_1-257](assets/chlimage_1-257.png)
+1. Tikken/klikken **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
 
-1. Tik/klik **Maken**. De bevestiging vraagt of wilt u uw nieuw project openen of aan de console terugkeren.
+De procedure voor het creëren van een project is het zelfde voor alle projectmalplaatjes. Het verschil tussen de soorten projecten heeft betrekking op de beschikbare [gebruikersrollen](/help/sites-authoring/projects.md) en [workflows.](/help/sites-authoring/projects-with-workflows.md)
 
-### Middelen koppelen aan uw project {#associating-resources-with-your-project}
+### Bronnen koppelen aan uw project {#associating-resources-with-your-project}
 
-Aangezien de projecten u toelaten om middelen in één entiteit te groeperen, wilt u middelen aan uw project associëren. Deze bronnen worden **Tegels** genoemd. De typen bronnen die u kunt toevoegen, worden beschreven in [Projecttegels](/help/sites-authoring/projects.md#project-tiles).
+Met projecten kunt u resources groeperen in één entiteit om deze als geheel te beheren. Daarom moet u middelen aan uw project associëren. Deze bronnen worden binnen het project gegroepeerd als **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-authoring/projects.md#project-tiles).
 
 Bronnen aan uw project koppelen:
 
-1. Open uw project van de **console Projecten**.
-1. Tik/klik **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt verbinden. U kunt meerdere typen tegels selecteren.
+1. Open uw project vanuit de **Projecten** console.
+1. Tikken/klikken **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
 
-   ![chlimage_1-258](assets/chlimage_1-258.png)
+   ![Tegel toevoegen](assets/project-add-tile.png)
 
-   >[!NOTE]
-   >
-   >De tegels van het project die met een project kunnen worden geassocieerd worden beschreven in [de tegels van het Project.](/help/sites-authoring/projects.md#project-tiles)
-
-1. Tik/klik **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
-
-### Een project- of bronnenkoppeling {#deleting-a-project-or-resource-link} verwijderen
-
-De zelfde methode wordt gebruikt om een project van de console of een verbonden middel van uw project te schrappen:
-
-1. Navigeer naar de juiste locatie:
-
-   * Om een project te schrappen ga naar het hoogste niveau van **Projecten** console.
-   * Om een middelverbinding binnen een project te schrappen, open uw project in **Projecten** console.
-
-1. Ga selectiemodus door **Select** te klikken en uw project of middelverbinding te selecteren.
-1. Tik/klik **Verwijderen**.
-
-1. U moet de verwijdering bevestigen in een dialoogvenster. Indien bevestigd, wordt het project of de middelverbinding geschrapt. Tik/klik **Deselecteer** om de selectiemodus af te sluiten.
-
->[!NOTE]
->
->Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+1. Tikken/klikken **Maken**. Uw bron is gekoppeld aan uw project en vanaf nu hebt u toegang tot deze bron vanuit uw project.
 
 ### Items toevoegen aan een tegel {#adding-items-to-a-tile}
 
@@ -103,13 +70,17 @@ In sommige tegels wilt u mogelijk meerdere items toevoegen. U kunt bijvoorbeeld 
 
 Items toevoegen aan een tegel:
 
-1. In **Projecten**, navigeer aan het project en klik Add + pictogram op de tegel u een punt aan wilt toevoegen.
+1. In **Projecten**, navigeert u naar het project en klikt u op het pictogram van de neerwaartse chevron rechtsboven in de tegel waaraan u een item wilt toevoegen en selecteert u de gewenste optie.
 
-   ![chlimage_1-259](assets/chlimage_1-259.png)
+   * De optie is afhankelijk van het type tegel. Het kan bijvoorbeeld **Taak maken** voor de **Taken** tegel of **Workflow starten** voor de **Workflows** tegel.
 
-1. Voeg een item aan de tegel toe zoals u dat zou doen bij het maken van een nieuwe tegel. Projectelementen worden [hier](/help/sites-authoring/projects.md#project-tiles) beschreven. In dit voorbeeld is een andere workflow toegevoegd.
+   ![Tile chevron](assets/project-tile-create-task.png)
 
-   ![chlimage_1-260](assets/chlimage_1-260.png)
+1. Voeg het item op dezelfde manier toe aan de tegel als wanneer u een nieuwe tegel maakt. Projectelementen worden beschreven [hier.](/help/sites-authoring/projects.md#project-tiles)
+
+## Projectinformatie weergeven {#viewing-project-info}
+
+Het hoofddoel van de projecten is de bijbehorende informatie op één plaats te groeperen om deze toegankelijker en actiever te maken. U hebt een aantal manieren om deze informatie te openen.
 
 ### Een tegel openen {#opening-a-tile}
 
@@ -117,51 +88,78 @@ Mogelijk wilt u zien welke items zijn opgenomen in een huidige tegel, of wilt u 
 
 Een tegel openen zodat u items kunt weergeven of wijzigen:
 
-1. Tik in de projectenconsole op de ovalen (...) of klik op deze.
+1. Tik of klik op het pictogram met de ellips rechtsonder in de tegel.
 
-   ![chlimage_1-261](assets/chlimage_1-261.png)
+   ![Taken](assets/project-tile-tasks.png)
 
-1. AEM geeft de items in die tegel weer. U kunt de selectiemodus activeren om de items te wijzigen of te verwijderen.
+1. AEM opent de console voor de types van punten verbonden aan de tegel en filters die op het geselecteerde project worden gebaseerd.
 
-   ![chlimage_1-262](assets/chlimage_1-262.png)
+   ![Projecttaken](assets/project-tasks.png)
 
-## Projectstatistieken {#viewing-project-statistics} weergeven
+### Een projecttijdlijn weergeven {#viewing-a-project-timeline}
 
-Om projectstatistieken, in **Projecten** console te bekijken, klik **toon de Mening van Statistieken**. Het voltooiingsniveau voor elk project wordt weergegeven. Klik **Statistische weergave tonen** opnieuw om naar de **Projecten** console te gaan.
+De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Voer de volgende stappen uit om de projecttijdlijn weer te geven.
 
-![chlimage_1-263](assets/chlimage_1-263.png)
+1. In de **Projecten** console, klikken of tikken **Tijdlijn** in de spoorkiezer in de linkerbovenhoek van de console.
+   ![Tijdlijnmodus selecteren](assets/projects-timeline-rail.png)
+2. In de console selecteer het project waarvoor u wenst om zijn chronologie te bekijken.
+   ![Tijdlijnweergave van project](assets/project-timeline-view.png)
 
-### Een projecttijdlijn bekijken {#viewing-a-project-timeline}
+Elementen worden weergegeven in de spoorstaaf. Gebruik de spoorkiezer om terug te keren naar de normale weergave wanneer u klaar bent.
 
-De projecttijdlijn biedt informatie over wanneer de elementen in het project het laatst zijn gebruikt. Als u de projecttijdlijn wilt weergeven, klikt of tikt u op **Tijdlijn**, gaat u naar de selectiemodus en selecteert u het project. Elementen worden weergegeven in het linkervenster. Klik/tik **Chronologie** om aan **Projecten** console terug te keren.
+### Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-![chlimage_1-264](assets/chlimage_1-264.png)
+Tussen uw actieve en [inactieve projecten;](#making-projects-inactive-or-active) in de **Projecten** console, klik **Actieve projecten schakelen** in de werkbalk.
 
-### Actieve/Inactieve projecten weergeven {#viewing-active-inactive-projects}
+![Pictogram Actieve projecten in-/uitschakelen](assets/projects-toggle-active.png)
 
-Om tussen uw actieve en inactieve projecten, in **Projecten** console van een knevel te voorzien, klik **Actieve Projecten** in-/uitschakelen. Als naast het pictogram een vinkje staat, worden de actieve projecten weergegeven.
+Door gebrek toont de console actieve projecten. Klik op de knop **Actieve projecten schakelen** pictogram één keer om naar het bekijken van inactieve projecten over te schakelen. Klik opnieuw het om op actieve projecten terug te schakelen.
 
-![chlimage_1-265](assets/chlimage_1-265.png)
+## Projecten organiseren {#organizing-projects}
 
-Als het pictogram een x naast heeft, toont het de inactieve projecten.
+Er zijn verschillende opties beschikbaar waarmee u uw projecten kunt ordenen om de **Projecten** beheerbaar op de console.
 
-![chlimage_1-266](assets/chlimage_1-266.png)
+### Projectmappen {#project-folders}
 
-## Projecten inactief of actief {#making-projects-inactive-or-active} maken
+U kunt mappen maken in het dialoogvenster **Projecten** console om gelijkaardige projecten te groeperen en te organiseren.
 
-U kunt een project willen inactief maken als u het hebt voltooid maar u wilt nog de informatie over het project houden.
+1. In de **Projecten** consolekraan of klik **Maken** en vervolgens **Map maken**.
 
-Een project inactief (of actief) maken:
+   ![Map maken](assets/project-create-folder.png)
 
-1. In **Projecten** console, open uw project en vind dan de **Tile van de Informatie van het Project**.
+1. Geef uw map een titel en klik op **Maken**.
 
-   >[!NOTE]
-   Mogelijk moet u deze tegel toevoegen als deze nog niet in uw project staat. Zie [Tegels toevoegen](#adding-items-to-a-tile).
+1. De map wordt toegevoegd aan de console.
 
-1. Tik/klik **Bewerken**.
-1. Wijzig de kiezer van **Active** in **Inactief** (of vice versa).
+U kunt nu projecten in de map maken. U kunt meerdere mappen maken en ook mappen nesten.
 
-   ![chlimage_1-267](assets/chlimage_1-267.png)
+### Projecten activeren {#making-projects-inactive-or-active}
 
-1. Tik/klik **Done** om uw wijzigingen op te slaan.
+U kunt een project willen inactief merken als het is voltooid maar u wilt nog de informatie over het project houden. [Inactieve projecten worden nu weergegeven](#viewing-active-inactive-projects) standaard in de **Projecten** console.
 
+Voer de volgende stappen uit om een project inactief te maken.
+
+1. Open de **Projecteigenschappen** venster van het project.
+   * U kunt dit van de console doen door het project of van binnen het project via te selecteren **Projectinfo** tegel.
+1. In de **Projecteigenschappen** venster, wijzigen **Projectstatus** schuifregelaar vanaf **Actief** tot **Inactief**.
+
+   ![Projectstatuskiezer in eigenschappenvenster](assets/project-status.png)
+
+1. Tik of klik op **Opslaan en sluiten** om uw wijzigingen op te slaan.
+
+### Projecten verwijderen {#deleting-a-project}
+
+Voer de volgende stappen uit om een project te verwijderen.
+
+1. Ga naar het hoogste niveau van **Projecten** console.
+1. Het selecteren van uw project in de console.
+1. Tik of klik op **Verwijderen** in de werkbalk.
+1. AEM kan bijbehorende projectgegevens verwijderen/wijzigen bij het verwijderen van een project. Selecteer de opties die u nodig hebt in het dialoogvenster **Project verwijderen** .
+   * Projectgroepen en -rollen verwijderen
+   * Map Projectelementen verwijderen
+   * Projectworkflows beëindigen
+
+   ![Opties voor het verwijderen van projecten](assets/project-delete-options.png)
+1. Tik of klik op **Verwijderen** om het project met de geselecteerde opties te schrappen.
+
+Meer informatie over groepen die automatisch door projecten worden gecreeerd zie [Automatische groep maken](/help/sites-authoring/projects.md#auto-group-creation) voor meer informatie.

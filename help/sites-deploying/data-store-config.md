@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 9d8387934e2eab61191bd66c625a9fa52b686e37
 workflow-type: tm+mt
-source-wordcount: '3461'
+source-wordcount: '3471'
 ht-degree: 0%
 
 ---
@@ -206,7 +206,7 @@ Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de nieuwste versie van het 1.8.x-functiepakket via de [Adobe-opslagplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download de nieuwste versie van het 1.8.x-functiepakket via de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
 1. Pak de inhoud uit en ga vervolgens naar een aparte map `jcr_root/libs/system/install/15`.
 1. De jar-bestanden kopiëren naar **&lt;aem-install>**/crx-quickstart/install/15 in de AEM installatiemap.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
@@ -286,7 +286,7 @@ Het lokale geheime voorgeheugen zal op het verslag van het gevraagde dossier/blo
 
 **Asynchroon uploaden**
 
-De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van het opvoeringsgeheime voorgeheugen. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door te gebruiken `stagingSplitPercentage` parameter. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) *`cacheSize`**.
+De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van het opvoeringsgeheime voorgeheugen. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door te gebruiken `stagingSplitPercentage` parameter. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 De asynchrone uploads zijn multi-threaded en het aantal draden wordt gevormd door te gebruiken `uploadThreads` parameter.
 

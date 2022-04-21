@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a23b3648b2687bcdbb46ea5e0bb42090822e1dd9
+source-git-commit: 4b3327ed46024662813bb538f8338c59e508e10e
 workflow-type: tm+mt
-source-wordcount: '5247'
+source-wordcount: '5157'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 AEM Forms biedt een set OSGi-services voor het uitvoeren van verschillende bewerkingen op documentniveau, zoals services voor het maken, samenstellen, distribueren en archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms. Deze services zijn opgenomen in het invoegpakket voor AEM Forms. Deze services worden gezamenlijk documentservices genoemd. De lijst met beschikbare documentservices en hun belangrijkste mogelijkheden is als volgt:
 
-* **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Het helpt ook PDF documenten in PDF/A norm omzetten en bevestigen, PDF forms, de vormen van XML, en PDF forms omzetten in PDF/A-1b, PDF/A-2b, en PDFA/A-3b. Zie voor meer informatie [Assembler-service](/help/forms/using/assembler-service.md).
+* **Assembler-service:** Hiermee kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. It also helps convert and validate PDF documents to PDF/A standard, transforms PDF forms, XML forms, and PDF forms to PDF/A-1b, PDF/A-2b, and PDFA/A-3b. Zie voor meer informatie [Assembler-service](/help/forms/using/assembler-service.md).
 
-* **ConvertPDF-service:** Hiermee kunt u PDF-documenten omzetten in PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). Zie voor meer informatie [ConvertPDF-service](/help/forms/using/using-convertpdf-service.md).
+* **ConvertPDF-service:** Hiermee kunt u PDF-documenten omzetten in PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF). For more information, see [ConvertPDF Service](/help/forms/using/using-convertpdf-service.md).
 
-* **Barcoded Forms-service:** Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes als invoer bevatten en extraheert de streepjescodegegevens. Zie voor meer informatie [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md).
+* **Barcoded Forms-service:** Hiermee kunt u gegevens extraheren uit elektronische afbeeldingen van streepjescodes. The service accepts TIFF and PDF files that include one or more barcodes as input and extracts the barcode data. For more information, see [Barcoded Forms Service](/help/forms/using/using-barcoded-forms-service.md).
 
-* **DocAssurance-service:** Hiermee kunt u documenten versleutelen en ontsleutelen, de functionaliteit van Adobe Reader uitbreiden met extra gebruiksrechten en digitale handtekeningen toevoegen aan uw documenten. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie voor meer informatie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md).
+* **DocAssurance service:** Enables you to encrypt and decrypt documents, extend the functionality of Adobe Reader with additional usage rights, and add digital signatures to your documents. De dienst van de Verzekering van Doc bevat drie diensten: handtekening, versleuteling en reader-extensie. Zie voor meer informatie [DocAssurance Service](/help/forms/using/overview-aem-document-services.md).
 
 * **Coderingsservice:** Hiermee kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Zie voor meer informatie [Coderingsservice](/help/forms/using/overview-aem-document-services.md#encryption-service).
 
@@ -225,11 +225,6 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
-   <td><p><strong>JDK (32 bits)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
    <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
@@ -249,20 +244,20 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 
 >[!NOTE]
 >
->* Alle omgevingsvariabelen en de respectieve paden zijn hoofdlettergevoelig.
->* JAVA_HOME, JAVA_HOME_32 en Acrobat_PATH (alleen Windows) zijn verplichte omgevingsvariabelen.
+>* All environment variables and respective paths are case-sensitive.
+>* JAVA_HOME, JAVA_HOME_32, and Acrobat_PATH (Windows only) are mandatory environment variables.
 >* De omgevingsvariabele OpenOffice_PATH wordt ingesteld op de installatiemap in plaats van op het pad naar het uitvoerbare bestand.
->* Stel geen omgevingsvariabelen in voor Microsoft® Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server worden geïnstalleerd, genereert de dienst van de PDF automatisch begint deze toepassingen.
+>* Do not set up environment variables for Microsoft® Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. Als deze toepassingen op de server worden geïnstalleerd, genereert de dienst van de PDF automatisch begint deze toepassingen.
 >* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als wortel wordt geïnstalleerd, kan de dienst van de Generator van PDF geen documenten OpenOffice in de documenten van PDF omzetten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
 >* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
 >
 > `export OpenOffice_PATH=/opt/openoffice.org4`
 
-### (Alleen voor IBM® WebSphere®) Configureer IBM® SSL-socketprovider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
+### (Only for IBM® WebSphere®) Configure IBM® SSL socket provider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-Voer de volgende stappen uit om IBM® SSL-socketprovider te configureren:
+Perform the following steps to configure IBM® SSL socket provider:
 
-1. Maak een kopie van het bestand java.security. De standaardlocatie van het bestand is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
+1. Maak een kopie van het bestand java.security. The default location of the file is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. Open het gekopieerde bestand java.security voor bewerking.
 1. Wijzig de standaard SSL-socketfabrieken om de JSSE2-fabrieken te gebruiken in plaats van de standaard IBM® WebSphere®-fabrieken:
 
@@ -287,7 +282,7 @@ Voer de volgende stappen uit om IBM® SSL-socketprovider te configureren:
    #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
    ```
 
-1. Als u wilt dat AEM Forms Server het bijgewerkte bestand java.security kan gebruiken terwijl de AEM Forms-server wordt gestart, voegt u het volgende Java-argument toe:
+1. To enable AEM Forms Server to use the updated java.security file, while starting the AEM Forms server, add the following java argument:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
@@ -343,9 +338,9 @@ U kunt een niet beheerdergebruiker toelaten om de dienst van de Generator van de
 
 Terwijl het omzetten van een document in PDF gebruikend de dienst van de Generator van PDF op de Server van Vensters, soms, meldt de Server van Vensters dat uitvoerbaar een probleem heeft ontmoet en moet sluiten. Het heeft echter geen invloed op de PDF-conversie zoals deze op de achtergrond wordt voortgezet.
 
-Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van fouten in Windows uitschakelen. Voor meer informatie over het uitschakelen van foutmeldingen raadpleegt u [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
+Als u wilt voorkomen dat de fout wordt ontvangen, kunt u de rapportage van fouten in Windows uitschakelen. For more information on disabling error reporting, see [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx).
 
-### (Alleen Windows) Conversie van HTML naar PDF configureren {#configure-html-to-pdf-conversion}
+### (Windows Only) Configure HTML to PDF conversion {#configure-html-to-pdf-conversion}
 
 De dienst van de Generator van PDF verstrekt WebKit, WebCapture, en routes PhantomJS of methodes om de dossiers van HTML in de documenten van PDF om te zetten. Als u in Windows conversie wilt inschakelen voor WebKit- en Acrobat WebCapture-routes, kopieert u het Unicode-font naar de map %windir%\fonts.
 
@@ -357,9 +352,9 @@ De dienst van de Generator van PDF verstrekt WebKit, WebCapture, en routes Phant
 
 Op op UNIX-Gebaseerde platforms, steunt de dienst van de Generator van PDF WebKit en PhantomJS routes om de dossiers van HTML in de documenten van PDF om te zetten. Om HTML aan PDF omzetting toe te laten, voer de volgende configuraties uit, toepasselijk op uw aangewezen omzettingsroute:
 
-### (Alleen op UNIX gebaseerde platforms) Ondersteuning voor Unicode-lettertypen inschakelen (alleen WebKit) {#enable-support-for-unicode-fonts-webkit-only}
+### (UNIX-based platforms only) Enable support for Unicode fonts (WebKit only) {#enable-support-for-unicode-fonts-webkit-only}
 
-Kopieer het Unicode-lettertype naar een van de volgende mappen, afhankelijk van uw systeem:
+Copy the Unicode font to any of the following directories as appropriate for your system:
 
 * /usr/lib/X11/fonts/TrueType
 * /usr/share/fonts/default/TrueType
@@ -439,9 +434,9 @@ Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te vo
 
 ### De time-outinstellingen configureren {#configure-the-time-out-settings}
 
-1. In [AEM](http://localhost:4502/system/console/configMgr), zoekt en opent u de **[!UICONTROL Jacorb ORB Provider]** service.
+1. In [AEM configuration manager](http://localhost:4502/system/console/configMgr), locate and open the **[!UICONTROL Jacorb ORB Provider]** service.
 
-   Voeg het volgende toe aan de **[!UICONTROL Custom Properties.name]** veld en klik op **[!UICONTROL Save]**. De wachtende antwoordtime-out (ook wel CORBA-clienttime-out genoemd) wordt ingesteld op 600 seconden.
+   Add the following to the **[!UICONTROL Custom Properties.name]** field and click **[!UICONTROL Save]**. De wachtende antwoordtime-out (ook wel CORBA-clienttime-out genoemd) wordt ingesteld op 600 seconden.
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
@@ -454,21 +449,21 @@ Er is een lokale gebruikersaccount vereist om de service PDF Generator uit te vo
   <tr>
    <td>Veld</td>
    <td>Beschrijving</td>
-   <td>Standaardwaarde</td>
+   <td>Default Value</td>
   </tr>
   <tr>
-   <td>Time-out serverconversie</td>
+   <td>Server Conversion Timeout</td>
    <td>Een PDFG-conversie blijft actief gedurende het aantal seconden dat is gedefinieerd in de time-out voor serverconversie</td>
-   <td>270 seconden<br /> </td>
+   <td>270 seconds<br /> </td>
   </tr>
   <tr>
-   <td>Seconden van PDFG-opschoning</td>
+   <td>PDFG Cleanup Scan Seconds</td>
    <td>Het aantal seconden dat is vereist om bewerkingen na de conversie uit te voeren.<br /> </td>
    <td>3600 seconden</td>
   </tr>
   <tr>
-   <td>Seconden van taakvervaldatum</td>
-   <td>Duur waarvoor de dienst van de Generator van PDF wordt toegestaan om een omzetting in werking te stellen. Zorg ervoor dat de waarde van de Seconden van de Vervaltijd van de Baan groter is dan de waarde van de Seconden van de Schoonmaakactie PDFG.</td>
+   <td>Job Expiration Seconds</td>
+   <td>Duration for which PDF Generator service is allowed to run a conversion. Ensure that the value of the Job Expiration Seconds is greater than the PDFG Cleanup Scan Seconds value.</td>
    <td>7200 seconden</td>
   </tr>
  </tbody>
@@ -529,7 +524,7 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
 1. Meld u als beheerder aan bij de AEM-auteur-instantie. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 1. Klik op de knop **[!UICONTROL name]** van de gebruikersaccount. De **[!UICONTROL Edit User Settings]** pagina wordt geopend. Voor de instantie van de Auteur AEM, verblijven de certificaten in een KeyStore. Als u nog geen KeyStore hebt gemaakt, klikt u op **[!UICONTROL Create KeyStore]** en stel een nieuw wachtwoord in voor de KeyStore. Als de server al een KeyStore bevat, slaat u deze stap over.  Als u het Adobe Extensions-certificaat gebruikt, is het wachtwoord voor het sleutelarchiefbestand altijd hetzelfde als het wachtwoord voor de persoonlijke sleutel.
-1. Op de **[!UICONTROL Edit User Settings]** pagina, selecteert u de **[!UICONTROL KeyStore]** tab. Breid uit **[!UICONTROL Add Private Key from Key Store file]** en geef een alias op. De alias wordt gebruikt om de bewerking Reader Extensions uit te voeren.
+1. Op de **[!UICONTROL Edit User Settings]** pagina, selecteert u de **[!UICONTROL KeyStore]** tab. Expand the **[!UICONTROL Add Private Key from Key Store file]** option and provide an alias. The alias is used to perform the Reader Extensions operation.
 1. Als u het certificaatbestand wilt uploaden, klikt u op **[!UICONTROL Select Key Store File]** en uploadt u een &lt;filename>.pfx-bestand.
 
    Voeg de **[!UICONTROL Key Store Password]**, **[!UICONTROL Private Key Password]**, en **[!UICONTROL Private Key Alias]** die is gekoppeld aan het certificaat aan de desbetreffende velden. Klik op **[!UICONTROL Submit]**.
@@ -544,7 +539,7 @@ Voer de volgende stappen uit om de certificaten te configureren:
 
 Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Rechtdiction Policy) (Java Cryptography Extension) ophalen en installeren. Vervang de bestanden local_policy.jar en US_export_policy.jar in de map jre/lib/security. Als u bijvoorbeeld Sun JDK gebruikt, kopieert u de gedownloade bestanden naar de `[JAVA_HOME]/jre/lib/security` map.
 
-De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reader, de dienst van de Handtekening, de dienst van Forms, en de dienst van de Output af. Voer de volgende stappen uit om te verifiëren dat de vereiste diensten in gebruik zijn:
+The Assembler service depends on the Reader Extensions service, Signature service, Forms service, and Output service. Voer de volgende stappen uit om te verifiëren dat de vereiste diensten in gebruik zijn:
 
 1. Aanmelden bij URL `https://'[server]:[port]'/system/console/bundles` als beheerder.
 1. Zoek de volgende dienst en zorg ervoor dat de diensten in gebruik zijn:
@@ -596,7 +591,20 @@ De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reade
 
 Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine gevormd behoorlijk om de omzettingen van de Generator van de PDF in werking te stellen. Het hulpmiddel produceert rapport bij de gespecificeerde weg. Het gereedschap uitvoeren:
 
-1. Maak een configuratiebestand voor het hulpprogramma Systeemgereedheid. Bijvoorbeeld srt_config.yaml. De bestandsindeling is:
+1. Opdrachtprompt openen. Ga naar de `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` map.
+
+1. Voer het volgende bevel van de bevelherinnering in werking:
+
+   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
+
+   Het bevel produceert rapport en leidt ook tot het srt_config.yaml- dossier.
+
+   >[!NOTE]
+   >
+   > * Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >
+   > * U kunt het srt_config.yaml- dossier gebruiken om diverse montages van te vormen. De bestandsindeling is:
+
 
    ```
       # =================================================================
@@ -623,19 +631,13 @@ Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine
       outputDir:
    ```
 
-1. Opdrachtprompt openen. Ga naar de `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` map. Voer het volgende bevel van de bevelherinnering in werking:
-
-   `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
-
-   >[!NOTE]
-   >
-   >Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
-
 1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
 ## Problemen oplossen
 
 Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmiddel van SRT wordt gemeld, voer de volgende controles uit:
+
+Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgereedheid](#SRT) geen fout rapporteert.
 
 +++ Adobe Acrobat
 
@@ -644,9 +646,7 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 * Zorg ervoor dat de [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) batchbestand is uitgevoerd met beheerdersrechten.
 * Zorg ervoor dat een gebruiker van de PDF Generator in de configuratie-UI van de PDF wordt toegevoegd.
 * Zorg ervoor dat de [Een token op procesniveau vervangen](#grant-the-replace-a-process-level-token-privilege) Deze machtiging wordt toegevoegd voor de gebruiker van de PDF Generator.
-* (Voor installatie op een toepassingsserver) Controleer of de toepassingsserver als service wordt uitgevoerd.
-* Zorg ervoor dat de gebruikers lees- en schrijfmachtigingen hebben voor de tijdelijke map van PDF Generator en de tijdelijke map van het besturingssysteem. Bijvoorbeeld: `<crx-quickstart-home>\temp` en `C:\Windows\Temp`
-* Zorg ervoor dat de COM-invoegtoepassing Acrobat PDFMaker Office is ingeschakeld voor Microsoft Office-toepassingen. Als de invoegtoepassing niet is ingeschakeld, voert u Adobe Acrobat-reparatie uit en voert u de [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) en start de AEM Forms Server opnieuw.
+* Zorg ervoor dat de COM-invoegtoepassing Acrobat PDFMaker Office is ingeschakeld voor Microsoft Office-toepassingen.
 
 +++
 
@@ -654,18 +654,15 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 **Microsoft® Windows**
 
-* Zorg ervoor dat [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Open Office is geïnstalleerd en het openen van dialoogvensters wordt geannuleerd voor alle toepassingen.
+* Zorg ervoor dat [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft Office is geïnstalleerd en het openen van dialoogvensters wordt voor alle toepassingen geannuleerd.
 * Zorg ervoor dat een gebruiker van de PDF Generator in de configuratie-UI van de PDF wordt toegevoegd.
-* Zorg ervoor dat [Gereedschap Systeemgereedheid](#SRT) geen fout rapporteert.
 * Zorg ervoor dat de gebruiker van de PDF Generator lid is van de beheerdersgroep en de [Een token op procesniveau vervangen](#grant-the-replace-a-process-level-token-privilege) bevoegdheden wordt ingesteld voor de gebruiker.
-* Zorg ervoor dat de `\Windows\SysWOW64\config\systemprofile\Deskop` map bestaat. Als de map niet bestaat, maakt u deze.
-* Volledige controle verlenen op `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, en `\Windows\Temp` mappen naar de gebruiker van de PDF Generator.
 * Zorg ervoor dat de gebruiker in de UI van de Generator van PDF wordt gevormd en voer de volgende acties uit:
    1. Meld u aan bij de Microsoft® Windows met de gebruiker van de PDF Generator.
    1. Open Microsoft® Office- of Open Office-toepassingen en annuleer alle dialoogvensters.
-   1. Stel Adobe PDF in als standaardprinter.
+   1. Set AdobePDF as default printer.
    1. Acrobat instellen als standaardprogramma voor PDF-bestanden.
-   1. Handmatige omzetting uitvoeren met de opties Bestand > Afdrukken en Acrobat in Microsoft Office-toepassingen en alle dialoogvensters annuleren.
+   1. Perform manual conversion using options  File > Print and Acrobat ribbon in Microsoft Office applications and cancel all dialogs.
    1. Beëindig alle processen met betrekking tot omzetting zoals winword.exe, powerpoint.exe, en excel.exe.
    1. Start de AEM Forms-server opnieuw.
 
@@ -673,16 +670,15 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 * Zorg ervoor dat [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Open Office is geïnstalleerd, het openen van dialoogvensters wordt geannuleerd voor alle toepassingen en het starten van kantoortoepassingen is geslaagd.
 * Een omgevingsvariabele maken `OpenOffice_PATH` en stelt u deze zo in dat deze naar de OpenOffice-installatie wijst, is ingesteld in het dialoogvenster [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt-profiel (apparaatstructuur).
-* Gebruik 32-bits Java™ om AEM Forms Server te starten.
 * Als er problemen zijn met de installatie van OpenOffice, controleert u of [32-bits bibliotheken](#extrarequirements) is vereist voor OpenOffice-installatie.
 
 +++
 
-+++HTML naar aanleiding van problemen met PDF-conversie
++++HTML to PDF conversion issues
 
 * Zorg ervoor dat de folders van doopvonten in PDF Generator config UI worden toegevoegd.
 
-**Linux en Solaris (PhantomJS conversieroute)**
+**Linux and Solaris (PhantomJS conversion route)**
 
 * Zorg ervoor dat er een 32-bits bibliotheek beschikbaar is (libicudata.so.42) voor HTMLToPDF-conversie op basis van Webkit en 64-bits (libicudata.so.42 libs zijn beschikbaar voor HTMLToPDF-conversie op basis van PhantomJS.
 
@@ -696,7 +692,7 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 **Linux® en Solaris™ (WebKit conversieroute)**
 
-* Controleer of de mappen `/usr/lib/X11/fonts` en `/usr/share/fonts` bestaan. Als de mappen niet bestaan, maakt u een symbolische koppeling op basis van `/usr/share/X11/fonts` tot `/usr/lib/X11/fonts` en een andere symbolische koppeling van `/usr/share/fonts` tot `/usr/share/X11/fonts`.
+* Controleer of de mappen `/usr/lib/X11/fonts` en `/usr/share/fonts` bestaan. If the directories do not exist, create a symbolic link from `/usr/share/X11/fonts` to `/usr/lib/X11/fonts` and another symbolic link from `/usr/share/fonts` to `/usr/share/X11/fonts`.
 
    ```
    ln -s /usr/share/fonts /usr/share/X11/fonts
@@ -709,7 +705,7 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 * Zorg ervoor dat de nieuwste versies van 32-bits bibliotheken met lib-curl, libcrypto en libssl op het systeem zijn geïnstalleerd. Ook symlinks maken `/usr/lib/libcurl.so` (of libcurl.a voor AIX®), `/usr/lib/libcrypto.so` (of libcrypto.a voor AIX®) en `/usr/lib/libssl.so` (of libssl.a voor AIX®) wijzend naar de recentste versies (32 bits) van respectieve bibliotheken.
 
 * Voer de volgende stappen uit voor IBM® SSL Socket provider:
-   1. Kopieer het bestand java.security van `<WAS_Installed_JAVA>\jre\lib\security` naar een willekeurige locatie op uw AEM Forms-server. De standaardlocatie is = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. Kopieer het bestand java.security van `<WAS_Installed_JAVA>\jre\lib\security` naar een willekeurige locatie op uw AEM Forms-server. De standaardlocatie is = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Bewerk het bestand java.security op de gekopieerde locatie en wijzig de standaard SSL Socket-fabrieken met JSSE2-fabrieken (gebruik JSSE2-fabrieken in plaats van WebSphere®).
 
@@ -737,7 +733,7 @@ Als u problemen zelfs na het bevestigen van alle die problemen door het hulpmidd
 
 +++ Kan geen PDF Generator-gebruiker (PDFG) toevoegen
 
-* Zorg ervoor dat Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86 en Microsoft® Visual C++ 2013 x86 (32-bits) herdistribueerbaar zijn geïnstalleerd in Windows.
+* Zorg ervoor dat Microsoft® Visual C++ 2012 x86 en Microsoft® Visual C++ 2013 x86 (32-bits) opnieuw distribueerbaar zijn geïnstalleerd in Windows.
 
 +++
 

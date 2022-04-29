@@ -1,14 +1,12 @@
 ---
 title: Dag
-seo-title: Tough Day
 description: De test van de Dag van de Stevige simuleert de dagelijkse lading van ongeveer 1000 auteurs in een worstcasescenario met alle verrichtingen die tezelfdertijd gebeuren.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 0b1f28963d9294c7aa9ae45c6b9fc9a9b8b4f6e6
+source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1849'
 ht-degree: 1%
 
 ---
@@ -143,7 +141,7 @@ U vindt de relevante parameters in de onderstaande lijst:
 
 De aanpassing kan op twee manieren worden bereikt: opdrachtregelparameters of normale configuratiebestanden. **De dossiers van de configuratie worden over het algemeen gebruikt voor grote douanereeksen en zij zullen de standaardparameters van Dag 2 van de Hoek met voeten treden. De de lijnparameters van het bevel treden zowel configuratiedossiers als standaardparameters met voeten.**
 
-De enige manier om een testconfiguratie op te slaan is het in uw formaat te kopiëren. Zie deze voor meer informatie [overdag.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) de configuratie en de voorbeelden van de modelconfiguratie in de onderstaande secties.
+De enige manier om een testconfiguratie op te slaan is het in uw formaat te kopiëren.
 
 ### Een nieuwe test toevoegen {#adding-a-new-test}
 
@@ -347,22 +345,22 @@ Langzame Dag 2 output zowel testmetriek als logboeken. Lees de volgende secties 
 
 ### Metrisch testen {#test-metrics}
 
-Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. Statistieken met de ***** Het symbool wordt alleen gemeld na geslaagde uitvoering:
+Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. Statistieken met de **&#42;** Het symbool wordt alleen gemeld na geslaagde uitvoering:
 
 | **Naam** | **Beschrijving** |
 |---|---|
 | Tijdstempel | Tijdstempel van de laatste voltooide testrun. |
 | Geslaagd | Aantal succesvolle looppas. |
 | Mislukt | Aantal mislukte looppas. |
-| Min* | Laagste uitvoeringstijd van de test. |
-| Max* | Hoogste duur van de uitvoering van de test. |
-| Mediaan * | Berekende mediane duur van alle testuitvoeringen. |
-| Gemiddelde* | Berekende gemiddelde duur van alle testuitvoeringen. |
-| StdDev* | De standaardafwijking. |
-| 90p* | 90 percentiel. |
-| 99p* | 99 percentiel. |
-| 99,9p* | 99,9 percentiel. |
-| Reële doorvoer* | Het aantal regels gedeeld door de verstreken uitvoeringstijd. |
+| Min&#42; | Laagste uitvoeringstijd van de test. |
+| Max&#42; | Hoogste duur van de uitvoering van de test. |
+| Mediaan&#42; | Berekende mediane duur van alle testuitvoeringen. |
+| Gemiddelde&#42; | Berekende gemiddelde duur van alle testuitvoeringen. |
+| StdDev&#42; | De standaardafwijking. |
+| 90p&#42; | 90 percentiel. |
+| 99p&#42; | 99 percentiel. |
+| 99,9p&#42; | 99,9 percentiel. |
+| Reële doorvoer&#42; | Het aantal regels gedeeld door de verstreken uitvoeringstijd. |
 
 Deze metriek wordt geschreven met behulp van uitgevers die met de `add` parameter (vergelijkbaar met het toevoegen van tests). Er zijn momenteel twee opties:
 

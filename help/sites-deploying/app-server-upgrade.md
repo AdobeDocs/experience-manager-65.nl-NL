@@ -1,29 +1,22 @@
 ---
 title: Upgradestappen voor installatie van toepassingsservers
 description: Leer hoe te om instanties van AEM te bevorderen die via de Servers van de Toepassing worden opgesteld.
-uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
-docset: aem65
-feature: Bijwerken
+feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 69d960da90176058e8bb8b685325529e6cc10a31
+source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-# De stappen van de verbetering voor de Installaties van de Server van de Toepassing{#upgrade-steps-for-application-server-installations}
+# Upgradestappen voor installatie van toepassingsservers{#upgrade-steps-for-application-server-installations}
 
 Deze sectie beschrijft de procedure die moet worden gevolgd om AEM voor de installaties van de Server van de Toepassing bij te werken.
 
-Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld om upgrades te documenteren die worden uitgevoerd van **AEM versie 6.4 tot 6.5**.
+Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld om upgrades te documenteren die zijn uitgevoerd vanaf **AEM versie 6.4 t/m 6.5**.
 
-1. Start eerst TomCat. In de meeste situaties, kunt u dit doen door het `./catalina.sh` startmanuscript in werking te stellen, door dit bevel van de terminal in werking te stellen:
+1. Start eerst TomCat. In de meeste gevallen kunt u dit doen door de `./catalina.sh` start opstartscript, door dit bevel uit te voeren vanaf de terminal:
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
@@ -37,7 +30,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
 1. Verwijder vervolgens AEM 6.4. Dit kan worden gedaan vanuit de TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Hiervoor downloadt u de nieuwste versie van crx2oak van [deze locatie](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
+1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Download hiervoor de meest recente versie van crx2oak van [deze locatie](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
@@ -66,15 +59,15 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
 1. Verwijder de bestanden en mappen die u niet meer nodig hebt. De items die u specifiek moet verwijderen zijn:
 
-   * De **startmap**. U kunt het schrappen door het volgende bevel in de terminal in werking te stellen: `rm -rf crx-quickstart/launchpad/startup`
+   * De **startblok/startmap**. U kunt het schrappen door het volgende bevel in de terminal in werking te stellen: `rm -rf crx-quickstart/launchpad/startup`
 
-   * Het **base.jar-bestand**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * De **base.jar, bestand**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
-   * Het bestand **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * De **BootstrapCommandFile_timestamp.txt, bestand**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-   * **sling.options.file** verwijderen door uit te voeren: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
+   * Verwijderen **sling.options.file** door uitvoering: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.5 zullen worden gebruikt. U kunt dit doen door twee dossiers met de volgende namen onder `crx-quickstart\install` te creëren:
+1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.5 zullen worden gebruikt. U kunt dit doen door twee bestanden te maken met de volgende namen onder `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
@@ -94,13 +87,13 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
       minRecordLength=4096
       ```
 
-1. U moet nu de uitvoeringswijzen in het AEM 6.5 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de oorlog van AEM 6.5 wordt ondergebracht. De naam van de map in dit voorbeeld is `temp`. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
+1. U moet nu de uitvoeringswijzen in het AEM 6.5 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de oorlog van AEM 6.5 wordt ondergebracht. De naam van de map in dit voorbeeld wordt `temp`. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
 
    ```
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Nadat de inhoud is uitgepakt, gaat u naar de map **WEB-INF** en bewerkt u het bestand web.xml om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar deze in de XML zijn ingesteld, zoekt u de tekenreeks `sling.run.modes`. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
+1. Als de inhoud is geëxtraheerd, gaat u naar de **WEB-INF** en bewerk het bestand web.xml om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar deze in de XML zijn ingesteld, zoekt u de `sling.run.modes` tekenreeks. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
 
    ```bash
    <param-value >author</param-value>

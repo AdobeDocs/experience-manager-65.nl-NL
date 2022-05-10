@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: e3743b7ecbd8266abfaee36dcee94bcd2b260cac
+source-git-commit: fcbfd8b378282d908b68c61ab235e9b80fd6644c
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1741'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 | Ondersteuningsniveau | Beschrijving |
 | :-----------: | ------------------------------ |
 | ✓ | Ondersteund |
-| * | Ondersteund met add-onfuncties |
+| &#42; | Ondersteund met extra functies |
 | - | Niet van toepassing |
 
 ## Ondersteunde rasterafbeeldingsindelingen in [!DNL Experience Manager] {#supported-raster-image-formats}
@@ -121,23 +121,23 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 
 |  | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | MPEG-transcodering |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | * |
-| MIDI | ✓ | ✓ | - | - | * |
-| 3GP | ✓ | ✓ | - | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ | - | - | * |
-| OGA | ✓ | ✓ | - | - | * |
-| OGG | ✓ | ✓ | - | - | * |
-| RA | ✓ | ✓ | - | - | * |
-| WAV | ✓ | ✓ | - | - | * |
-| WMA | ✓ | ✓ | - | - | * |
-| DVI | ✓ | ✓ | - | * | * |
-| FLV | ✓ | ✓ | - | * | * |
-| M4V | ✓ | ✓ | - | * | * |
-| MPEG | ✓ | ✓ | - | * | * |
-| OGV | ✓ | ✓ | - | * | * |
-| MOV | ✓ | ✓ | - | * | * |
-| WMV | ✓ | ✓ | - | * | * |
+| AAC | ✓ | ✓ | - | - | &#42; |
+| MIDI | ✓ | ✓ | - | - | &#42; |
+| 3GP | ✓ | ✓ | - | - | &#42; |
+| MP3 | ✓ | ✓ | ✓ | - | &#42; |
+| MPG | ✓ | ✓ | - | - | &#42; |
+| OGA | ✓ | ✓ | - | - | &#42; |
+| OGG | ✓ | ✓ | - | - | &#42; |
+| RA | ✓ | ✓ | - | - | &#42; |
+| WAV | ✓ | ✓ | - | - | &#42; |
+| WMA | ✓ | ✓ | - | - | &#42; |
+| DVI | ✓ | ✓ | - | &#42; | &#42; |
+| FLV | ✓ | ✓ | - | &#42; | &#42; |
+| M4V | ✓ | ✓ | - | &#42; | &#42; |
+| MPEG | ✓ | ✓ | - | &#42; | &#42; |
+| OGV | ✓ | ✓ | - | &#42; | &#42; |
+| MOV | ✓ | ✓ | - | &#42; | &#42; |
+| WMV | ✓ | ✓ | - | &#42; | &#42; |
 | SWF | ✓ | ✓ | - | - | - |
 
 ## Ondersteunde archiefindelingen {#supported-archive-formats}
@@ -256,7 +256,11 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Zie onderstaande opmerking) | ✓ | ✓ | ✓ | ✓ | ✓ |
+
+>[!NOTE]
+>
+>Voor beveiligde PDF wordt alleen Uploaden ondersteund.
 
 Overweeg het volgende naast de bovenstaande functionaliteit:
 

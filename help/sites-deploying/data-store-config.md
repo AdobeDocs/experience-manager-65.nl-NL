@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 0c9d436d863d55f94e16f5c0f570251e2fb3d805
+source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
 workflow-type: tm+mt
-source-wordcount: '3467'
+source-wordcount: '3455'
 ht-degree: 0%
 
 ---
@@ -199,7 +199,7 @@ Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de nieuwste versie van het 1.8.x-functiepakket via de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
+1. Download de nieuwste versie van het 1.10.x-functiepakket via de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Pak de inhoud uit en ga vervolgens naar een aparte map `jcr_root/libs/system/install/15`.
 1. De jar-bestanden kopiëren naar **&lt;aem-install>**/crx-quickstart/install/15 in de AEM installatiemap.
 1. Start AEM en controleer de verbindingsfunctionaliteit.

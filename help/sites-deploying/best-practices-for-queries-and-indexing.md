@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
+source-git-commit: c9df4b43083376f0110368afe642ec74290a52f8
 workflow-type: tm+mt
 source-wordcount: '4679'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Samen met de overgang aan Eak in AEM 6, werden sommige belangrijke veranderingen
 
 Dit artikel zal schetsen wanneer om indexen tot stand te brengen evenals wanneer zij niet nodig zijn, trucs vermijden gebruikend vragen wanneer zij niet noodzakelijk zijn, en uiteinden voor het optimaliseren van uw indexen en vragen om zo optimaal mogelijk te presteren.
 
-Zorg er bovendien voor dat u de [Documentatie bij het schrijven van query&#39;s en indexen is onduidelijk](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
+Zorg er bovendien voor dat u de [Documentatie bij het schrijven van query&#39;s en indexen is niet goed](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
 
 ## Wanneer moet u query&#39;s gebruiken? {#when-to-use-queries}
 
@@ -215,7 +215,7 @@ Wanneer u een index op een MongoDB-instantie verwijdert, zijn de verwijderingsko
 
 ### Het JCR-querycontroleblad {#jcrquerycheatsheet}
 
-Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR-query - Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie. Het bevat steekproefvragen voor QueryBuilder, XPath en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
+Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR-query - Cheat Sheet](assets/JCR_query_cheatsheet-v1.1.pdf) kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie. Het bevat steekproefvragen voor QueryBuilder, XPath en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
 
 ## Opnieuw indexeren {#re-indexing}
 
@@ -232,7 +232,6 @@ Herindexering van de eiken-indexen moet worden vermeden, tenzij in onderstaande 
 >* de vraag correct is
 >* de query wordt omgezet in de verwachte index (met [Query uitvoeren](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* het indexeringsproces is voltooid
-
 >
 
 
@@ -345,7 +344,7 @@ De volgende details en resoluties zijn mogelijk:
 
       Deze voorwaarde is indicatief van een misconfigured datastore die in OM HET EVEN WELK binair getal (bijvoorbeeld kan resulteren. binaire elementen) om te ontbreken.
 
-      Herstel in dit geval de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
+      In dit geval herstelt u de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
 
 #### Binair Lucene-index is beschadigd {#lucene-index-binary-is-corrupt}
 

@@ -1,11 +1,11 @@
 ---
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
-mini-toc-levels: 4
+mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 3b6671d5ca58aedb43babdd539d182c3a1d06574
+source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
 workflow-type: tm+mt
-source-wordcount: '3523'
+source-wordcount: '3522'
 ht-degree: 0%
 
 ---
@@ -384,7 +384,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 ### UberJar {#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.13.0 is beschikbaar in de [Maven Central-opslagplaats](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
+The UberJar for [!DNL Experience Manager] 6.5.13.0 is beschikbaar in de [Maven Central-opslagplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
 
 Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/help/sites-developing/ht-projects-maven.md) en neem het volgende gebiedsdeel in uw project POM op:
 

@@ -2,28 +2,35 @@
 title: Ondersteuning voor zelfde site-cookie voor AEM 6.5
 description: Ondersteuning voor zelfde site-cookie voor AEM 6.5
 topic-tags: security
-translation-type: tm+mt
-source-git-commit: ac2f3d69fd20d7779120a194c698d6f0dd6e6a84
+exl-id: e1616385-0855-4f70-b787-b01701929bbc
+source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
+# Ondersteuning voor zelfde site-cookie voor AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
-# Ondersteuning voor zelfde sitecookie voor AEM 6.5 {#same-site-cookie-support-for-aem-65}
+Sinds versie 80, introduceerde Chrome, en recentere Safari, een nieuw model voor koekjesveiligheid. Deze wijze wordt ontworpen om veiligheidscontroles rond beschikbaarheid van koekjes aan derdeplaatsen, door het plaatsen te introduceren genoemd `SameSite`. Zie deze voor meer informatie [artikel](https://web.dev/samesite-cookies-explained/).
 
-Sinds versie 80, introduceerde Chrome, en recentere Safari, een nieuw model voor koekjesveiligheid. Deze wijze wordt ontworpen om veiligheidscontroles rond beschikbaarheid van koekjes aan derdeplaatsen, door het plaatsen te introduceren genoemd `SameSite`. Voor meer gedetailleerde informatie, zie dit [artikel](https://web.dev/samesite-cookies-explained/).
+De standaardwaarde van deze instelling (`SameSite=Lax`) kan ervoor zorgen dat verificatie tussen AEM instanties of services niet werkt. Dit komt doordat de domeinen of URL-structuren van deze services mogelijk niet onder de beperkingen van dit cookiebeleid vallen.
 
-De standaardwaarde van dit plaatsen (`SameSite=Lax`) zou authentificatie tussen AEM instanties of de diensten kunnen veroorzaken om niet te werken. Dit komt doordat de domeinen of URL-structuren van deze services mogelijk niet onder de beperkingen van dit cookiebeleid vallen.
+Als u dit wilt omzeilen, moet u de opdracht `SameSite` cookie, kenmerk naar `None` voor het aanmeldingstoken.
 
-Om rond dit te krijgen, moet u het koekjesattribuut SameSite aan `None` voor het login token plaatsen.
+>[!CAUTION]
+>
+>De `SameSite=None` instelling wordt alleen toegepast als het protocol beveiligd is (HTTPS).
+>
+>Als het protocol niet veilig (HTTP) is, dan wordt het plaatsen genegeerd en de server zal dit WARN bericht tonen:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-U kunt dit doen door de volgende stappen te volgen:
+U kunt de instelling toevoegen door de volgende stappen uit te voeren:
 
 1. Ga naar de webconsole op `http://serveraddress:serverport/system/console/configMgr`
-1. Zoek naar en klik **Adobe granite Token Authentication Handler**
-1. Stel het **SameSite-kenmerk voor het cookie** in op `None`, zoals in de onderstaande afbeelding wordt getoond
+1. Zoeken naar en klikken op de knop **Adobe Granite Token Authentication Handler**
+1. Stel de **SameSite-kenmerk voor het cookie met het token** tot `None`, zoals wordt weergegeven in de onderstaande afbeelding
    ![samesite](assets/samesite1.png)
 1. Klik op Opslaan
-1. Als deze instelling eenmaal is bijgewerkt en gebruikers opnieuw zijn afgemeld en aangemeld, worden `login-token`-cookies ingesteld als `None`-kenmerk en worden deze opgenomen in intersite verzoeken.
+1. Zodra dit het plaatsen wordt bijgewerkt en de gebruikers het programma worden geopend en opnieuw het programma geopend, `login-token` cookies hebben de `None` kenmerk ingesteld en wordt opgenomen in aanvragen voor andere sites.

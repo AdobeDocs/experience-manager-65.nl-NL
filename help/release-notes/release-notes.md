@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
+source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3713'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geï
 
 ## [!DNL Forms] {#forms-65130}
 
-* Als u de Prefill-service gebruikt om een adaptief formulier in te vullen dat een fragment bevat en het fragment een tekstvak bevat dat RTF-tekst ondersteunt, wordt het formulier niet verzonden en treedt de volgende fout op:
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * Het keuzerondje, het selectievakje en de onderdelen voor het uploaden van bestanden worden niet correct vertaald van het Duits naar het Engels. (NPR-38527)
 * De PDF417-streepjescodering die wordt geproduceerd door [!DNL Experience Manager] Forms is ongeldig voor een groep keuzerondjes. (NPR-38525)

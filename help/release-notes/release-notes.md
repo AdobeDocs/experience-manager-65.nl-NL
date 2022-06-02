@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
+source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3728'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,22 @@ ht-degree: 0%
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.13.0. {#what-is-included-in-aem}
 
 [!DNL Experience Manager] 6.5.13.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, en prestaties, stabiliteit, en veiligheidsverbeteringen, die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 worden vrijgegeven. [Dit servicepack installeren](#install) op [!DNL Experience Manager] 6.5
+
+De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Adobe Experience Manager] 6.5.13.0 zijn:
+
+* Gebruik onzichtbare CAPTCHA in een adaptieve vorm: U kunt nu een onzichtbare CAPTCHA gebruiken om de CAPTCHA-uitdaging alleen te tonen in het geval van een verdachte activiteit. Als geen verdachte activiteit wordt gevonden, wordt de uitdaging CAPTCHA niet getoond. Het helpt menselijke vormvoltooiing zonder controledoosvereisten beoordelen, aanpassingsinspanningen verminderen, en de eindgebruikerservaring verbeteren. (NPR-38500)
+
+* Extra ondersteuning voor het ophalen van antwoordheaders in de nabewerker van het formuliergegevensmodel voor REST-eindpunten. (NPR-38275)
+
+* Bij het genereren van een adaptief formuliervertaalbestand is nu dezelfde reeks teksten als het gegenereerde XLIFF-bestand identiek aan de reeks componenten in het corresponderende adaptieve formulier. (NPR-37700)
+
+* Wanneer u een adaptief formulier lokaliseert en zelfs een kleine wijziging aanbrengt in de tekst van de basistaal, ontbreekt de volledige vertaling voor alle andere talen. Het probleem is opgelost in [!DNL Experience Manager] 6.5.13.0. (NPR-37189)
+
+* Verbeterde toegankelijkheid voor Forms:
+
+   * Extra ondersteuning voor schermlezers om de koptekst en hoofdtekst van een tabel te herkennen als continue en verbonden entiteiten. Schermlezers kunnen hierdoor gemakkelijker door de tabellen navigeren. (NPR-37139)
+   * Extra ondersteuning voor schermlezers om te stoppen met navigeren door de HTML-werkruimte totdat een dialoogvenster is geopend. (NPR-37134)
+   * Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer.(NPR-36221)
 
 De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geïntroduceerd in [!DNL Experience Manager] 6.5.13.0:
 
@@ -120,20 +136,6 @@ De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geï
 >
 >* [!DNL Experience Manager Forms] geeft toe:voegen-on pakketten één week na gepland vrij [!DNL Experience Manager] Releasedatum van Service Pack.
 
-
-<!-- **Adaptive Forms**
-
-**Form Data Model**
-
-**Interactive Communication**
-
-**Document Services**
-
-**Document Security**
-
-**Foundation JEE**
-
-**Workflow** -->
 
 ## Graniet {#granite-6513}
 

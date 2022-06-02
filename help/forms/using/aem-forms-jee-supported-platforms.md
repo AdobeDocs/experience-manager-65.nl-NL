@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 0%
 
 ---
@@ -419,8 +419,12 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
    <td>8,5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (afgekeurd)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -686,7 +690,7 @@ Zie voor aanvullende vereisten:
 > - Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
 
 
-#### Mobile-clients {#mobile-clients}
+#### Mobiele clients {#mobile-clients}
 
 <table>
  <tbody>
@@ -720,7 +724,7 @@ Zie voor aanvullende vereisten:
 
 ### AEM Forms-app {#aem-forms-workspace-app}
 
-#### Ondersteuning voor Mobile-apparaten {#mobile-device-support}
+#### Ondersteuning voor mobiele apparaten {#mobile-device-support}
 
 De AEM Forms-app is beschikbaar op de volgende platforms:
 
@@ -755,6 +759,10 @@ Adobe behoudt zich het recht voor om de referentieplatforms van derden die door 
 Aanvullende informatie voor patches van derden vindt u ook op de website van Adobe Enterprise Support voor artikelen in de kennisdatabase voor uw product.
 
 ## Platform-updates {#platform-updates}
+
+De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.13.0 release op 2 juni 2022:
+
+- Microsoft SharePoint 2016
 
 De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.12.0 release op 3 maart 2022:
 

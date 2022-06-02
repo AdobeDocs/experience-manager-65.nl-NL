@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 1%
 
 ---
@@ -681,9 +681,12 @@ ht-degree: 1%
          + [Het programmatisch beheren van de Knooppunten van de Voorkeur](developing/programmatically-preferences-nodes.md)
          + [Documenten beveiligen met beleid](developing/protecting-documents-policies.md)
          + [Een DDX-document valideren met de webservice-API](developing/validate-ddx-document-using-web.md)
-      + Oudere documentatie {#legacy-documentation}
-         + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
-         + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)
-         + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
-         + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
-         + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
++ Problemen oplossen {#troubleshooting}
+   + [Kan sommige formulierfuncties niet gebruiken met bepaalde versies van Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Oudere documentatie {#legacy-documentation}
+   + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
+   + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)
+   + [AEM Forms configureren en problemen oplossen in een JEE-servercluster](developing/configure-server-cluster.md)
+   + [Hashes genereren en werken met dynamische PDF forms](developing/hashing-forms.md)
+   + [Gegevens doorgeven met WS-beveiligingskoppen](developing/passing-credentials.md)
+

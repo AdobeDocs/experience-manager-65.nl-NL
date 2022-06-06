@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Authoring User Guide
 description: Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '374'
 ht-degree: 17%
 
 ---
@@ -17,7 +17,7 @@ Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 
 
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
@@ -38,7 +38,7 @@ Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM

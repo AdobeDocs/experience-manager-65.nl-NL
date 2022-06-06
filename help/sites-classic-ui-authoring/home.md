@@ -1,16 +1,15 @@
 ---
 title: AEM 6.5 Klassieke UI Authoring User Guide
-seo-title: AEM 6.5 Klassieke UI Authoring User Guide
-description: 'In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken. '
-seo-description: 'Omvat de concepten creatie in AEM in klassieke UI. '
-translation-type: tm+mt
-source-git-commit: 4dd47341ad1c966e8db6ef7ed1da93bf4e9abb52
+seo-title: AEM 6.5 Classic UI Authoring User Guide
+description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
+seo-description: Covers the concepts of authoring in AEM in the classic UI.
+exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 17%
+source-wordcount: '358'
+ht-degree: 18%
 
 ---
-
 
 # AEM 6.5 Klassieke UI Authoring User Guide
 
@@ -18,7 +17,7 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)

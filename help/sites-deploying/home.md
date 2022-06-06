@@ -3,9 +3,9 @@ title: AEM 6.5 Gebruikershandleiding implementeren
 seo-title: AEM 6.5 Deploying User Guide
 description: Meer informatie over de installatie en implementatie van Adobe Experience Manager 6.5 en over de architectuur ervan, inclusief de cloudimplementatie van Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '392'
 ht-degree: 17%
 
 ---
@@ -16,7 +16,7 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
@@ -37,7 +37,7 @@ Deze handleiding behandelt alle AEM implementerende taken, zoals het installeren
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
-| [Mobile-gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
+| [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM

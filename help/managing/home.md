@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Managing User Guide
 description: 'Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling van AEM 6.5-gebruikershandleidingen. '
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '368'
 ht-degree: 18%
 
 ---
@@ -17,7 +17,7 @@ Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit b
 
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)

@@ -2,9 +2,9 @@
 title: AEM 6.5 Gebruikershandleiding voor het beheer
 description: Meer informatie over het toedienen van AEM 6.5. Deze gidsen behandelen plaatseigenschappen, plaatsingsverrichtingen, veiligheidseigenschappen, verpersoonlijking, integratie, en meer.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: eb00c8004558b8809fb21d6d6e435d8837319b51
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '359'
 ht-degree: 18%
 
 ---
@@ -15,7 +15,7 @@ Meer informatie over het toedienen van AEM 6.5. Deze gidsen behandelen plaatseig
 
 ## Belangrijkste artikelen
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)

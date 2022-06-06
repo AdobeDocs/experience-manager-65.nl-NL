@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
+source-wordcount: '3557'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ De aanbevolen waarde is `-1` aangezien dit de rij aan onbeperkt plaatst; als een
 **Apache Sling GET Servlet** Configureer enkele aspecten van rendering:
 
 * **Automatische index** om het renderen van mappen voor bladeren in- of uit te schakelen.
-* **Inschakelen** (of maak onbruikbaar) standaardvertoningen, zoals **HMTL**, **Onbewerkte tekst**, **JSON** of **XML**.
+* **Inschakelen** (of maak onbruikbaar) standaardvertoningen, zoals **HTML**, **Onbewerkte tekst**, **JSON** of **XML**.
 U moet JSON niet uitschakelen.
 
 >[!NOTE]
@@ -109,7 +109,7 @@ U moet JSON niet uitschakelen.
 
 Bepaalde instellingen kunnen van invloed zijn op de prestaties. Deze instellingen moeten waar mogelijk worden uitgeschakeld, met name voor een productie-instantie.
 
-* S **bron-VM** en **DoelVM**, definieert u de JDK-versie als de versie die wordt gebruikt als de JVM voor de runtime
+* **Bron-VM** en **DoelVM**, definieert u de JDK-versie als de versie die wordt gebruikt als de JVM voor de runtime
 
 * voor productiegevallen:
 
@@ -117,7 +117,7 @@ Bepaalde instellingen kunnen van invloed zijn op de prestaties. Deze instellinge
 
 **Apache Sling JCR Installer** Deze parameters vergen waarschijnlijk geen configuratie, maar kunnen nuttig zijn om te weten wanneer het ontwikkelen of het zuiveren. De installatiemap(s) kan (kunnen) bijvoorbeeld handig zijn voor het in- en uitchecken of voor het maken van een pakket.
 
-* **Naam van installatiemappen regexp** en **Maximale hiërarchiediepte van installatiemappen** - opgeven waar en tot welke diepte de opslagplaats naar bronnen zoekt die moeten worden geïnstalleerd. Wanneer een jokerteken wordt gebruikt (zoals in.*/install) alle geschikte overeenkomsten worden doorzocht, bijvoorbeeld `/libs/sling/install` en `/libs/cq/core/install`.
+* **Naam van installatiemappen regexp** en **Maximale hiërarchiediepte van installatiemappen** - opgeven waar en tot welke diepte de opslagplaats naar bronnen zoekt die moeten worden geïnstalleerd. Wanneer een jokerteken wordt gebruikt (zoals in.&#42;/install) alle aangewezen gelijken zullen worden gezocht, bijvoorbeeld, `/libs/sling/install` en `/libs/cq/core/install`.
 
 * **Zoekpad**, een lijst met paden die worden gezocht naar bronnen die moeten worden geïnstalleerd, samen met een nummer dat de wegingsfactor voor dat pad aangeeft.
 
@@ -320,19 +320,19 @@ Wanneer u [gesloten gebruikersgroepen](/help/sites-administering/cug.md) u kunt 
 Er zijn twee UIs beschikbaar in AEM:
 
 * de interface met aanraakbediening is de standaardinterface
-* en de vervangen klassieke interface nog volledig operationeel is
+* en de verouderde klassieke interface nog volledig operationeel is
 
 Met AEM hoofdmaptoewijzing kunt u de interface configureren die u als standaard voor uw instantie wilt gebruiken:
 
 * Als u de interface met aanraakbediening wilt instellen als de standaardinterface, gaat u naar **Doelpad** wijzen op:
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Om klassieke UI als gebrek UI te hebben **Doelpad** wijzen op:
 
-   ```
+   ```shell
       /welcome.html
    ```
 

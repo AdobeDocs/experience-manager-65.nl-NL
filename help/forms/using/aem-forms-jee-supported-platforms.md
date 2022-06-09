@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
+source-git-commit: f1dade2cb15f98bb7830f6afb27ec493dc182a37
 workflow-type: tm+mt
-source-wordcount: '3533'
+source-wordcount: '3550'
 ht-degree: 0%
 
 ---
@@ -219,6 +219,11 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
   <tr>
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.1.0 (afgekeurd) <br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Wordt geleverd bij AEM Forms op JEE-installatie.</p> </td>
+  </tr>
+    <tr>
+   <td>Microsoft SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC-stuurprogramma 6.2.2.0 <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Wordt geleverd bij AEM Forms op JEE-installatie.</p> </td>
   </tr>
   <tr>

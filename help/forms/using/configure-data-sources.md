@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: c92b5b5dd70e7a4e696d8d75282edbc88a13ba51
+source-git-commit: 98854fa3b852f511cf95adc13b945c06b1afff96
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1834'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
-* Relationele databases - MySQL, Microsoft SQL Server, IBM DB2 en Oracle RDBMS
+* Relationele databases - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS en Sybase
 * Gebruikersprofiel AEM
 * RESTful-webservices
 * SOAP-webservices

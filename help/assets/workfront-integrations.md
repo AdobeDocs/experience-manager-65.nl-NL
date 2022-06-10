@@ -1,15 +1,15 @@
 ---
-title: '"[!DNL Experience Manager Assets] integratie met [!DNL Adobe Workfront]"'
+title: '''[!DNL Experience Manager Assets] integratie met [!DNL Adobe Workfront]'''
 description: Inleiding tot integratie tussen [!DNL Assets] en [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
+source-git-commit: 57304cfb7706377fa5dd7cce0e5863839ffee553
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 2%
+source-wordcount: '967'
+ht-degree: 1%
 
 ---
-
 
 # [!DNL Adobe Experience Manager Assets] integratie met [!DNL Adobe Workfront] {#assets-integration-overview}
 
@@ -29,9 +29,14 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 
 >[!IMPORTANT]
 >
->Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
+>* Adobe vereist plaatsing en configuratie van [!DNL Adobe Workfront for Experience Manager enhanced connector] alleen via gecertificeerde partners of [!DNL Adobe Professional Services]. Indien opgesteld en gevormd zonder een verklaarde partner of [!DNL Adobe Professional Services], wordt deze niet ondersteund door Adobe.
 >
->Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>* Adobe kan updates voor [!DNL Adobe Workfront] en [!DNL Adobe Experience Manager] die deze aansluiting overbodig maken; als dit voorkomt, kunnen de klanten worden vereist om van het gebruik van deze schakelaar over te gaan.
+>
+>* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Navigeer naar de `digital.hoodoo` groep beschikbaar in het linkerdeelvenster in [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
+>
+>* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+
 
 ## Verschillende integraties vergelijken tussen [!DNL Assets] en [!DNL Workfront] {#feature-parity-matrix}
 

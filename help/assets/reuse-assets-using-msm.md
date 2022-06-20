@@ -6,14 +6,20 @@ mini-toc-levels: 1
 role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3292'
 ht-degree: 9%
 
 ---
 
 # Elementen hergebruiken met MSM voor [!DNL Assets] {#reuse-assets-using-msm-for-assets}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
 
 Multisite Manager (MSM)-functionaliteit in [!DNL Adobe Experience Manager] Hiermee kunnen gebruikers inhoud hergebruiken die eenmaal is ontworpen en opnieuw wordt gebruikt op meerdere weblocaties. Hetzelfde geldt voor digitale elementen als MSM voor [!DNL Assets] functionaliteit. MSM gebruiken voor [!DNL Assets]kunt u:
 

@@ -5,14 +5,20 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b9def70b86d3313a5f6d429ae49ba6ef3947a35a
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2277'
 ht-degree: 14%
 
 ---
 
 # Facetten doorzoeken {#search-facets}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Een bedrijfsbrede implementatie van [!DNL Adobe Experience Manager Assets] heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van [!DNL Experience Manager].
 
@@ -176,7 +182,7 @@ Net als bij de manier waarop u een voorspelling van eigenschappen of een voorspe
 
 ## Standaardzoekfacetten herstellen {#restoring-default-search-facets}
 
-Standaard een vergrendelingspictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) verschijnt vóór **[!UICONTROL Assets Admin Search Rail]** in de **[!UICONTROL Search Forms]** pagina. Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet zijn aangepast. Het pictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
+Standaard een vergrendelingspictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) verschijnt vóór **[!UICONTROL Assets Admin Search Rail]** in de **[!UICONTROL Search Forms]** pagina. Het vergrendelingspictogram tegen een optie op de pagina Zoeken in Forms geeft aan dat de standaardinstellingen intact zijn en niet worden aangepast. Het pictogram ![gesloten pictogram vergrendelen](assets/do-not-localize/lock_closed_icon.svg) verdwijnt als u zoekfacetten aan het formulier toevoegt die aangeven dat het standaardformulier is gewijzigd.
 
 ![Vergrendelingspictogram](assets/locked_admin_rail.png)
 

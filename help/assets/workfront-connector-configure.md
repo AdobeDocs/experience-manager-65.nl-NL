@@ -4,14 +4,20 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 00713ea7fe06d4e180232e48a9e3f11b53f4326f
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1633'
 ht-degree: 0%
 
 ---
 
 # Configureren [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] vormt de verbeterde schakelaar na het installeren van het. Voor instructies voor installatie raadpleegt u [De connector installeren](/help/assets/workfront-integrations.md).
 

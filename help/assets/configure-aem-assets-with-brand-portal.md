@@ -12,18 +12,24 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 67e145e250bbe386168ab2c0f8967f91aa9d8a36
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1971'
 ht-degree: 10%
 
 ---
 
 # AEM Assets configureren met Brand Portal {#configure-integration-65}
 
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=en) |
+
 Met Adobe Experience Manager Assets Brand Portal kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets naar Brand Portal publiceren en deze aan Brand Portal-gebruikers distribueren.
 
-AEM Assets wordt gevormd met Brand Portal via de Console van de Ontwikkelaar van Adobe, die een Adobe Identity Management Services (IMS) rekeningsteken voor vergunning van de huurder van Brand Portal aanschaft.
+AEM Assets is geconfigureerd met Brand Portal via Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder.
 
 >[!NOTE]
 >
@@ -31,18 +37,18 @@ AEM Assets wordt gevormd met Brand Portal via de Console van de Ontwikkelaar van
 >
 >Eerder, werd Brand Portal gevormd via erfenis OAuth Gateway, die JSON Web Token (JWT) uitwisseling gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
 >
->Configuratie via de verouderde OAuth Gateway wordt vanaf 6 april 2020 niet meer ondersteund en wordt gewijzigd in Adobe Developer Console.
+>Configuratie via verouderde OAuth Gateway wordt vanaf 6 april 2020 niet meer ondersteund en wordt gewijzigd in Adobe Developer Console.
 
 >[!TIP]
 >
 >***Alleen voor bestaande klanten***
 >
->Het wordt geadviseerd om de bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via de Console van de Ontwikkelaar van Adobe.
+>Het wordt geadviseerd om de bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via de Console van Adobe Developer.
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 
 * [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe Brand Portal-gebruiker bent en uw AEM Assets-auteurinstantie met Brand Portal wilt configureren, kunt u configuratie maken via Adobe Developer Console.
-* [Configuratie](#upgrade-integration-65) upgrade: Als u een bestaande gebruiker van Brand Portal die configuratie op erfenisOAuth Gateway hebt, schrap de bestaande configuratie en creeer nieuwe configuratie via de Console van de Ontwikkelaar van de Adobe.
+* [Upgradeconfiguratie](#upgrade-integration-65): Als u een bestaande Brand Portal-gebruiker bent die configuratie heeft op een verouderde OAuth Gateway, verwijdert u de bestaande configuratie en maakt u een nieuwe configuratie via Adobe Developer Console.
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -66,11 +72,11 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 Het wordt aanbevolen om AEM 6.5 te hebben om een AEM instantie van de auteur in te stellen. Als u niet AEM, download het van de volgende plaatsen:
 
-* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Adobe-licentiewebsite](https://licensing.adobe.com).
+* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Adobe-website voor licentieverlening](https://licensing.adobe.com).
 
-* Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.5 te verzoeken.
+* Als u een partner van de Adobe bent, gebruik [Adobe Partner Training-programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.5.
 
-Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+Nadat u AEM hebt gedownload, vindt u instructies voor het instellen van een AEM instantie van de auteur [implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
 ### Download en installeer AEM nieuwste Service Pack {#servicepack}
 
@@ -78,14 +84,14 @@ Zie voor gedetailleerde instructies
 
 * [Opmerkingen bij de release AEM 6.5 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html)
 
-**Neem contact op met de** ondersteuning als u het nieuwste AEM of Service Pack niet kunt vinden.
+**Contact opnemen met ondersteuning** als u het nieuwste AEM pakket of Service Pack niet kunt vinden.
 
 ## Configuratie maken {#configure-new-integration-65}
 
 Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist in zowel de AEM Assets-auteurinstantie als de Adobe Developer Console.
 
 1. In AEM Assets maakt u een IMS-account en genereert u een openbaar certificaat (openbare sleutel).
-1. In de Console van de Ontwikkelaar van Adobe, creeer een project voor uw huurder van Brand Portal (organisatie).
+1. Maak in Adobe Developer Console een project voor uw Brand Portal-huurder (organisatie).
 1. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen.
 1. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
 1. In AEM Assets configureert u de IMS-account met de gegevens van de serviceaccount en de JWT-payload.
@@ -114,41 +120,41 @@ De IMS-configuratie omvat twee stappen:
 
 ### Openbaar certificaat verkrijgen {#public-certificate}
 
-Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd in de Adobe Developer Console.
+Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd op Adobe Developer Console.
 
 1. Meld u aan bij de AEM Assets-auteur. De standaard-URL is `http://localhost:4502/aem/start.html`.
 
-1. Navigeer in het venster **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
+1. Van de **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) deelvenster, navigeren naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. Klik op **[!UICONTROL Create]** op de pagina Adobe IMS Configurations. Het zal aan de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina opnieuw richten. Standaard wordt het tabblad **Certificaat** geopend.
+1. Klik op de pagina Adobe IMS Configurations op **[!UICONTROL Create]**. Het zal worden omgeleid naar de **[!UICONTROL Adobe IMS Technical Account Configuration]** pagina. Standaard worden de **Certificaat** wordt geopend.
 
-1. Selecteer **[!UICONTROL Adobe Brand Portal]** in **[!UICONTROL Cloud Solution]** dropdown lijst.
+1. Selecteren **[!UICONTROL Adobe Brand Portal]** in de **[!UICONTROL Cloud Solution]** vervolgkeuzelijst.
 
-1. Selecteer het selectievakje **[!UICONTROL Create new certificate]** en geef een **alias** op voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
+1. Selecteer **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
 
-1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te genereren.
+1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te produceren.
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Klik op het pictogram **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op.
+1. Klik op de knop **[!UICONTROL Download Public Key]** en sla het bestand met de openbare sleutel (.crt) op uw computer op.
 
-   De openbare sleutel zal later worden gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van de Ontwikkelaar van Adobe te produceren.
+   De openbare sleutel zal later worden gebruikt om API voor uw Brand Portal huurder te vormen en de geloofsbrieven van de de dienstrekening in de Console van Adobe Developer te produceren.
 
    ![Download Certificate](assets/ims-config3.png)
 
 1. Klik op **[!UICONTROL Next]**.
 
-   Op het tabblad **Account** wordt een Adobe IMS-account gemaakt waarvoor de referenties van de serviceaccount zijn vereist die in de Adobe Developer Console zijn gegenereerd. Laat deze pagina voorlopig open.
+   In de **Account** wordt een Adobe IMS-account gemaakt waarvoor de referenties van de serviceaccount zijn vereist die in Adobe Developer Console worden gegenereerd. Laat deze pagina voorlopig open.
 
-   Open een nieuw lusje en [creeer een verbinding van de de dienstrekening (JWT) in de Console van de Ontwikkelaar van Adobe ](#createnewintegration) om de geloofsbrieven en JWT lading voor het vormen van de rekening te krijgen IMS.
+   Open een nieuw tabblad en [een JWT-verbinding (Service Account) maken in Adobe Developer Console](#createnewintegration) om de referenties en JWT-lading op te halen voor het configureren van de IMS-account.
 
 ### Verbinding voor serviceaccount (JWT) maken {#createnewintegration}
 
-In de Console van de Ontwikkelaar van Adobe, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u AEM Assets wilt configureren met Brand Portal, moet u een openbare sleutel (certificaat) genereren in AEM Assets en referenties maken in de Adobe Developer Console door de openbare sleutel te uploaden. Deze gegevens zijn vereist om de IMS-account in AEM Assets te configureren. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice in AEM Assets configureren.
+In de Console van Adobe Developer, worden de projecten en APIs gevormd op het niveau van de huurder van Brand Portal (organisatie). Als u een API configureert, wordt een JWT-verbinding (Service Account) gemaakt. Er zijn twee methodes om API te vormen, door een zeer belangrijk paar (privé en openbare sleutels) te produceren of door een openbare sleutel te uploaden. Als u AEM Assets wilt configureren met Brand Portal, moet u een openbare sleutel (certificaat) genereren in AEM Assets en referenties maken in Adobe Developer Console door de openbare sleutel te uploaden. Deze gegevens zijn vereist om de IMS-account in AEM Assets te configureren. Zodra de IMS-account is geconfigureerd, kunt u de Brand Portal-cloudservice in AEM Assets configureren.
 
 Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en lading van JWT te produceren:
 
-1. Meld u aan bij de Adobe Developer Console met systeembeheerdersrechten voor de IMS-organisatie (Brand Portal-huurder). De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Meld u aan bij Adobe Developer Console met systeembeheerdersrechten voor de IMS-organisatie (Brand Portal-huurder). De standaard-URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -157,23 +163,23 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
 1. Klik op **[!UICONTROL Create new project]**. Er wordt een leeg project met een door het systeem gegenereerde naam gemaakt voor uw organisatie.
 
-   Klik **[!UICONTROL Edit project]** om **[!UICONTROL Project Title]** en **[!UICONTROL Description]** bij te werken, en **[!UICONTROL Save]** te klikken.
+   Klikken **[!UICONTROL Edit project]** om de **[!UICONTROL Project Title]** en **[!UICONTROL Description]** en klik op **[!UICONTROL Save]**.
 
-1. Klik op het tabblad **[!UICONTROL Project overview]** op **[!UICONTROL Add API]**.
+1. In de **[!UICONTROL Project overview]** tabblad, klikt u op **[!UICONTROL Add API]**.
 
-1. Selecteer **[!UICONTROL Add an API window]** in **[!UICONTROL AEM Brand Portal]** en klik **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Add an API window]**, selecteert u **[!UICONTROL AEM Brand Portal]** en klik op **[!UICONTROL Next]**.
 
    Zorg ervoor dat u toegang hebt tot de AEM Brand Portal-service.
 
-1. Klik in het venster **[!UICONTROL Configure API]** op **[!UICONTROL Upload your public key]**. Klik vervolgens op **[!UICONTROL Select a File]** en upload de openbare sleutel (.crt-bestand) die u hebt gedownload in de sectie [public certificate](#public-certificate).
+1. In de **[!UICONTROL Configure API]** venster, klikt u op **[!UICONTROL Upload your public key]**. Klik vervolgens op **[!UICONTROL Select a File]** en uploadt u de openbare sleutel (.crt-bestand) die u in het dialoogvenster [openbare verklaring verkrijgen](#public-certificate) sectie.
 
    Klik op **[!UICONTROL Next]**.
 
    ![Openbare sleutel uploaden](assets/service-account3.png)
 
-1. Verifieer de openbare sleutel en klik **[!UICONTROL Next]**.
+1. De openbare sleutel controleren en klikken **[!UICONTROL Next]**.
 
-1. Selecteer **[!UICONTROL Assets Brand Portal]** als het standaardproductprofiel en klik **[!UICONTROL Save configured API]**.
+1. Selecteren **[!UICONTROL Assets Brand Portal]** als het standaardproductprofiel en klik op **[!UICONTROL Save configured API]**.
 
    <!-- 
    In Brand Portal, a default profile is created for each organization. The Product Profiles are created in admin console for assigning users to groups (based on the roles and permissions). For configuration with Brand Portal, the OAuth token is created at organization level. Therefore, you must configure the default Product Profile for your organization. 
@@ -181,21 +187,21 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
    ![Productprofiel selecteren](assets/service-account4.png)
 
-1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Klik in de linkernavigatie onder **[!UICONTROL Credentials]** op de optie **[!UICONTROL Service Account (JWT)]**.
+1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** optie.
 
    >[!NOTE]
    >
    >U kunt de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, terugwinnen cliëntgeheim, etc.
 
-1. Kopieer op het tabblad **[!UICONTROL Client Credentials]** de **[!UICONTROL client ID]**.
+1. Van de **[!UICONTROL Client Credentials]** kopiëren **[!UICONTROL client ID]**.
 
-   Klik **[!UICONTROL Retrieve Client Secret]** en kopieer **[!UICONTROL client secret]**.
+   Klikken **[!UICONTROL Retrieve Client Secret]** en kopieert u de **[!UICONTROL client secret]**.
 
    ![Servicerekeningen](assets/service-account5.png)
 
-1. Navigeer naar het tabblad **[!UICONTROL Generate JWT]** en kopieer de informatie **[!UICONTROL JWT Payload]**.
+1. Ga naar de **[!UICONTROL Generate JWT]** en kopieer de **[!UICONTROL JWT Payload]** informatie.
 
-U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruiken om de IMS-account](#create-ims-account-configuration) in AEM Assets te configureren.[
+U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruiken naar [IMS-account configureren](#create-ims-account-configuration) in AEM Assets.
 
 <!--
 ### Create Adobe I/O integration {#createnewintegration}
@@ -250,13 +256,13 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 
 Voer de volgende stappen uit om de IMS-account te configureren.
 
-1. Open de Configuratie IMS en navigeer aan **[!UICONTROL Account]** tabel. U hield de pagina open terwijl [het openbare certificaat verkrijgen](#public-certificate).
+1. Open de IMS-configuratie en navigeer naar de **[!UICONTROL Account]** tab. U hebt de pagina geopend gehouden terwijl [verkrijgen van het openbare certificaat](#public-certificate).
 
 1. Geef een **[!UICONTROL Title]** op voor het IMS-account.
 
-   Geef in het veld **[!UICONTROL Authorization Server]** de URL op: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
+   In de **[!UICONTROL Authorization Server]** -veld, geeft u de URL op: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).
 
-   Geef de client-id op in het veld **[!UICONTROL API key]**, **[!UICONTROL Client Secret]** en **[!UICONTROL Payload]** (JWT-payload) die u hebt gekopieerd tijdens het maken van de JWT-verbinding (Service Account)](#createnewintegration).[
+   Client-id opgeven in het dialoogvenster **[!UICONTROL API key]** veld, **[!UICONTROL Client Secret]**, en **[!UICONTROL Payload]** (JWT-lading) die u hebt gekopieerd terwijl [maken van de verbinding van de serviceaccount (JWT)](#createnewintegration).
 
    Klik op **[!UICONTROL Create]**.
 
@@ -266,7 +272,7 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 
 1. Selecteer de IMS-accountconfiguratie en klik op **[!UICONTROL Check Health]**.
 
-   Klik **[!UICONTROL Check]** in de dialoogdoos. Bij succesvolle configuratie, lijkt een bericht dat *Token met succes* wordt teruggewonnen.
+   Klikken **[!UICONTROL Check]** in het dialoogvenster. Bij een geslaagde configuratie verschijnt het bericht dat de *Token is opgehaald*.
 
    ![](assets/create-new-integration5.png)
 
@@ -282,15 +288,15 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 
 1. Meld u aan bij de AEM Assets-auteur.
 
-1. Navigeer in het venster **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) naar **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
+1. Van de **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) deelvenster, navigeren naar **[!UICONTROL Cloud Services]** > **[!UICONTROL AEM Brand Portal]**.
 
-1. Klik op **[!UICONTROL Create]** op de pagina Brand Portal Configurations.
+1. Klik op de pagina Brand Portal Configurations op **[!UICONTROL Create]**.
 
 1. Geef een **[!UICONTROL Title]** op voor de configuratie.
 
-   Selecteer de IMS-configuratie die u hebt gemaakt terwijl u [de IMS-account](#create-ims-account-configuration) configureert.
+   Selecteer de IMS-configuratie die u hebt gemaakt terwijl u [configureren van IMS-account](#create-ims-account-configuration).
 
-   Geef in het veld **[!UICONTROL Service URL]** de URL van de Brand Portal-huurder (organisatie) op.
+   In de **[!UICONTROL Service URL]** -veld, geeft u de URL van uw Brand Portal-huurder (organisatie) op.
 
    ![](assets/create-cloud-service.png)
 
@@ -304,11 +310,11 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
 1. Meld u aan bij uw AEM Assets-cloudinstantie.
 
-1. Navigeer in het venster **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) naar **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
+1. Van de **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
    ![](assets/test-integration1.png)
 
-1. Klik op **[!UICONTROL Agents on author]** op de pagina Replicatie.
+1. Klik op de pagina Replicatie op **[!UICONTROL Agents on author]**.
 
    ![](assets/test-integration2.png)
 
@@ -322,11 +328,11 @@ Voer de volgende stappen uit om de configuratie te valideren:
    >
    >De replicatieagenten werken parallel en delen de baandistributie gelijk, daardoor verhogend de het publiceren snelheid met vier keer de originele snelheid. Nadat de wolkendienst wordt gevormd, wordt de extra configuratie niet vereist om de replicatieagenten toe te laten die door gebrek worden geactiveerd om parallelle publicatie van veelvoudige activa toe te laten.
 
-1. Als u de verbinding tussen AEM Assets en Brand Portal wilt controleren, klikt u op het pictogram **[!UICONTROL Test Connection]**.
+1. Als u de verbinding tussen AEM Assets en Brand Portal wilt controleren, klikt u op de knop **[!UICONTROL Test Connection]** pictogram.
 
    ![](assets/test-integration4.png)
 
-   Er verschijnt een bericht dat uw *testpakket is geleverd*.
+   Er verschijnt een bericht dat uw *testpakket is afgeleverd*.
 
    ![](assets/test-integration5.png)
 
@@ -337,25 +343,25 @@ Voer de volgende stappen uit om de configuratie te valideren:
    >
    >Vermijd onbruikbaar makend om het even welke replicatieagenten, aangezien het de replicatie van de activa (in werking stellen-in-rij) kan veroorzaken om te ontbreken.
    >
-   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen oplossen in parallelle publicatie naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen met parallelle publicatie naar Brand Portal oplossen](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
    >
    >Wijzig geen automatisch gegenereerde instellingen.
 
 U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
-* [Elementen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html)  - Asset Sourcing in Brand Portal
+* [Elementen publiceren van Brand Portal naar AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Asset Souring in Brand Portal
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)
 * [Voorinstellingen, schema&#39;s en facetten publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [Tags publiceren naar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
 
-Zie [Brand Portal documentation](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor meer informatie.
+Zie [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) voor meer informatie .
 
 
 ## Upgradeconfiguratie {#upgrade-integration-65}
 
-Voer de volgende stappen in de vermelde opeenvolging uit om uw bestaande configuraties aan de Console van de Ontwikkelaar van de Adobe te bevorderen:
+Voer de volgende stappen in de vermelde reeks uit om uw bestaande configuraties bij te werken naar Adobe Developer Console:
 1. [Werken met taken controleren](#verify-jobs)
 1. [Bestaande configuraties verwijderen](#delete-existing-configuration)
 1. [Configuratie maken](#configure-new-integration-65)
@@ -366,15 +372,15 @@ Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerp
 
 1. Meld u aan bij de AEM Assets-auteur.
 
-1. Navigeer in het venster **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) naar **[!UICONTROL Deployment]** > **[!UICONTROL Deployment Replication]**.
+1. Van de **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Deployment Replication]**.
 
-1. Klik op **[!UICONTROL Agents on author]** op de pagina Replicatie.
+1. Klik op de pagina Replicatie op **[!UICONTROL Agents on author]**.
 
    ![](assets/test-integration2.png)
 
 1. Bepaal de plaats van de replicatieagenten van uw huurder van Brand Portal.
 
-   Zorg ervoor dat **Wachtrij Idle** voor alle replicatieagenten is, is geen het publiceren baan actief.
+   Zorg ervoor dat de **Wachtrij is inactief** voor alle replicatieagenten, is geen het publiceren baan actief.
 
    ![](assets/test-integration3.png)
 
@@ -387,20 +393,20 @@ U moet de volgende controlelijst in werking stellen terwijl het schrappen van de
 
 1. Meld u aan bij de AEM Assets-auteur en open CRX Lite als beheerder. De standaard-URL is `http://localhost:4502/crx/de/index.jsp`.
 
-1. Navigeer aan `/etc/replications/agents.author` en schrap alle vier replicatieagenten van uw huurder van Brand Portal.
+1. Navigeren naar `/etc/replications/agents.author` en schrapt alle vier replicatieagenten van uw Brand Portal huurder.
 
    ![](assets/delete-replication-agent.png)
 
-1. Navigeer naar `/etc/cloudservices/mediaportal` en verwijder de configuratie van de Brand Portal-cloudservice.
+1. Navigeren naar `/etc/cloudservices/mediaportal` en verwijder de configuratie van de Brand Portal-cloudservice.
 
    ![](assets/delete-cloud-service.png)
 
-1. Navigeer naar `/home/users/mac` en verwijder **MAC user** van uw Brand Portal-huurder.
+1. Navigeren naar `/home/users/mac` en de **Mac-gebruiker** van je Brand Portal-huurder.
 
    ![](assets/delete-mac-user.png)
 
 
-U kunt nu [configuratie](#configure-new-integration-65) via de Console van de Ontwikkelaar van Adobe op uw AEM 6.5 auteursinstantie tot stand brengen.
+U kunt nu [configuratie maken](#configure-new-integration-65) via Adobe Developer Console op uw AEM 6.5-auteurexemplaar.
 
 
 

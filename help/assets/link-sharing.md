@@ -5,14 +5,20 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: fb9de8a0303edd7e54639f7bb9c8a4f8e9227fa8
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '948'
 ht-degree: 3%
 
 ---
 
 # Middelen delen als koppeling {#asset-link-sharing}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en) |
 
 [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
 

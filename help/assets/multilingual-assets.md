@@ -2,23 +2,29 @@
 title: Meertalige assets en de vertaling van assets
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '202'
+ht-degree: 5%
 
 ---
 
 # Meertalige activa {#multilingual-assets}
 
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/multilingual-assets.html?lang=en) |
+
 [!DNL Adobe Experience Manager Assets] Hiermee kunt u vertaalworkflows op assets (inclusief binaire bestanden, metagegevens en tags) automatiseren om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
-Als u vertaalworkflows wilt automatiseren, integreert u vertaalserviceproviders met [!DNL Experience Manager] en maakt u projecten voor het vertalen van middelen in meerdere talen. [!DNL Experience Manager] ondersteunt workflows voor het vertalen van mensen en machines.
+Om vertaalworkflows te automatiseren, integreert u de leveranciers van vertaaldiensten met [!DNL Experience Manager] en projecten maken voor het vertalen van middelen in meerdere talen. [!DNL Experience Manager] ondersteunt workflows voor het vertalen van mensen en machines.
 
-Menselijke vertaling: De vertaalde elementen worden geretourneerd en geïmporteerd in [!DNL Experience Manager]. Wanneer uw vertaalbureau is geïntegreerd met [!DNL Experience Manager], worden middelen automatisch verzonden tussen [!DNL Experience Manager] en de vertaalprovider.
+Menselijke vertaling: De vertaalde elementen worden geretourneerd en geïmporteerd in [!DNL Experience Manager]. Wanneer uw vertaalprovider is geïntegreerd met [!DNL Experience Manager], elementen worden automatisch verzonden tussen [!DNL Experience Manager] en de vertaalprovider.
 
 Machinevertaling: De vertaalservice zet de metagegevens en tags voor elementen direct om.
 
@@ -32,4 +38,4 @@ Omvat vertaalde activa het volgende:
 
 Als uw vertaalserviceprovider geen aansluiting biedt voor integratie met [!DNL Experience Manager], gebruikt u een [alternatief proces](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
-Zie ook [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md).
+Zie ook: [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md).

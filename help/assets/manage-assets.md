@@ -6,14 +6,20 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9641'
+source-wordcount: '9676'
 ht-degree: 3%
 
 ---
 
 # Uw digitale middelen beheren {#manage-digital-assets}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6,5 | Dit artikel |
+| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
 
 In [!DNL Adobe Experience Manager Assets], kunt u meer doen dan uw elementen opslaan en beheren. [!DNL Experience Manager] biedt mogelijkheden voor middelenbeheer op bedrijfsniveau. U kunt elementen bewerken en delen, geavanceerde zoekopdrachten uitvoeren en meerdere uitvoeringen van tientallen ondersteunde bestandsindelingen maken. U kunt ook versies en digitale rechten beheren, de verwerking van elementen automatiseren, metagegevens beheren en besturen, samenwerken met annotaties en nog veel meer.
 

@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2127'
 ht-degree: 6%
 
 ---
@@ -35,6 +35,15 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 >[!NOTE]
 >
 >Voor informatie over de gebruikersinterface van Middelen raadpleegt u [Elementen beheren](/help/assets/manage-assets.md).
+
+Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+
+| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
+| --- | --- | --- | --- |
+| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
+| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 ## Snel starten: Afbeeldingssets {#quick-start-image-sets}
 
@@ -130,6 +139,15 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 >[!NOTE]
 >
 >Afbeeldingssets worden niet ondersteund voor elementen met &quot;,&quot; (komma) in de bestandsnaam.
+
+Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
+
+| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
+| --- | --- | --- | --- |
+| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
+| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 **Afbeeldingssets maken:**
 

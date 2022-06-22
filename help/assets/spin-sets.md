@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1882'
 ht-degree: 8%
 
 ---
@@ -31,6 +31,14 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 >[!NOTE]
 >
 >Voor informatie over de gebruikersinterface van Middelen raadpleegt u [Elementen beheren](/help/assets/manage-assets.md).
+
+Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
+
+| Type limiet | Beste praktijken | Implementatielimiet |
+| --- | --- | --- |
+| Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 ## Snel starten: Sets draaien {#quick-start-spin-sets}
 
@@ -113,6 +121,14 @@ In deze sectie wordt beschreven hoe u een centrifugeset in Experience Manager ma
 >[!NOTE]
 >
 >De volgorde waarin afbeeldingen worden weergegeven in een draaiset. Zorg ervoor dat u ze zo bestelt dat de centrifuge een vloeiende weergave van 360° heeft.
+
+Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
+
+| Type limiet | Beste praktijken | Implementatielimiet |
+| --- | --- | --- |
+| Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
+
+Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 **Een centrifugeset maken:**
 

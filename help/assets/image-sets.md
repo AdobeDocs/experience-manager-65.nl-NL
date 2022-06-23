@@ -11,9 +11,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2127'
+source-wordcount: '2117'
 ht-degree: 6%
 
 ---
@@ -38,10 +38,10 @@ Stel dat u afbeeldingen van uiteinden met verschillende kleurrekeningen wilt wee
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
@@ -57,7 +57,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Afbeeldingssets maken](#creating-image-sets).
+1. [Een afbeeldingsset maken](#creating-image-sets).
 
    In de Reeksen van het Beeld, selecteren de gebruikers duimnagelbeelden in de Vastgestelde Kijker van het Beeld.
 
@@ -78,12 +78,12 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
    Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** als u voorinstellingen voor viewers wilt maken of bewerken.
 
-1. (Optioneel) [Afbeeldingssets weergeven](/help/assets/image-sets.md#viewing-image-sets) die zijn gemaakt met behulp van voorinstellingen voor batchsets.
+1. (Optioneel) [Een afbeeldingsset weergeven](/help/assets/image-sets.md#viewing-image-sets) die zijn gemaakt met behulp van voorinstellingen voor batchsets.
 1. [Voorvertoning van afbeeldingssets](/help/assets/previewing-assets.md).
 
    Selecteer de Afbeeldingsset en u kunt er een voorvertoning van weergeven. Selecteer de miniatuurpictogrammen zodat u de Afbeeldingsset kunt bekijken in de geselecteerde viewer. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** beschikbaar via het keuzemenu voor de linkertrack.
 
-1. [Afbeeldingssets publiceren](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Een afbeeldingsset publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
    Als u een Afbeeldingsset publiceert, wordt de URL geactiveerd en wordt de code ingesloten. Bovendien moet u [een aangepaste viewervoorinstelling publiceren](/help/assets/managing-viewer-presets.md) die u hebt gemaakt. Voorinstellingen voor viewers buiten de box zijn al gepubliceerd.
 
@@ -125,7 +125,7 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 >* Een zwarte, bruine en groene kleurminiatuur.
 
 
-## Afbeeldingssets maken {#creating-image-sets}
+## Een afbeeldingsset maken {#creating-image-sets}
 
 U kunt Afbeeldingssets maken via de gebruikersinterface of via de API. In deze sectie wordt beschreven hoe u afbeeldingssets maakt in de gebruikersinterface.
 
@@ -142,14 +142,14 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 Wanneer u een Reeks van het Beeld creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grenzen:
 
-| Element - Type limiet | Beste praktijken | Implementatielimiet | Wijzigingen voor limiet 31 december 2022 |
-| --- | --- | --- | --- |
-| **Afbeeldingsset** - Aantal dubbele elementen per set | Geen duplicaten | 100 | 20 |
-| **Afbeeldingsset** - Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal dubbele elementen per set | Geen duplicaten | 20 |
+| Maximumaantal afbeeldingen per set | 5-10 afbeeldingen per set | 1000 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
-**Afbeeldingssets maken:**
+**Een afbeeldingsset maken:**
 
 1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan ga naar **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigeer naar de plaats waar u een Reeks van het Beeld wilt tot stand brengen, dan ga naar **[!UICONTROL Create]** > **[!UICONTROL Image Set]** om de pagina van de Editor van de set Afbeeldingen te openen.
 
@@ -193,7 +193,7 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 1. Selecteer **[!UICONTROL Save]**. De nieuwe afbeeldingsset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
-## Afbeeldingssets weergeven {#viewing-image-sets}
+## Een afbeeldingsset weergeven {#viewing-image-sets}
 
 U kunt afbeeldingssets maken in de gebruikersinterface of automatisch met [voorinstellingen voor batchsets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -221,7 +221,7 @@ sets die zijn gemaakt met voorinstellingen voor batchsets, doen *niet* worden we
 >
 >U kunt sets weergeven in de gebruikersinterface zoals beschreven in [Afbeeldingssets bewerken](#editing-image-sets).
 
-## Afbeeldingssets bewerken {#editing-image-sets}
+## Een afbeeldingsset bewerken {#editing-image-sets}
 
 U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
@@ -231,7 +231,7 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 * Voorinstellingen voor viewers toepassen.
 * Verwijder de afbeeldingsset.
 
-**Afbeeldingssets bewerken:**
+**Een afbeeldingsset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
@@ -259,10 +259,10 @@ U kunt verschillende bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
 
 1. Selecteren **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
-## Voorvertoning van afbeeldingssets {#previewing-image-sets}
+## Een voorvertoning van een afbeeldingsset weergeven {#previewing-image-sets}
 
 Zie [Elementen voorvertonen](/help/assets/previewing-assets.md).
 
-## Afbeeldingssets publiceren {#publishing-image-sets}
+## Een afbeeldingsset publiceren {#publishing-image-sets}
 
 Zie [Middelen publiceren](/help/assets/publishing-dynamicmedia-assets.md).

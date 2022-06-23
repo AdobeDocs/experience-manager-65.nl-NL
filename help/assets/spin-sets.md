@@ -11,9 +11,9 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1888'
 ht-degree: 8%
 
 ---
@@ -34,7 +34,7 @@ De Reeksen van de draaien worden aangewezen door een banner met het woord **[!UI
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Oplegde limiet |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 
@@ -50,7 +50,7 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie [Dynamic Media - Ondersteunde rasterafbeeldingsindelingen](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) voor een lijst met indelingen die worden ondersteund door centrifuges.
 
-1. [Spin-sets maken](#creating-spin-sets).
+1. [Een centrifugeset maken](#creating-spin-sets).
 
    Selecteer **[!UICONTROL Create > Spin Set]** en geeft u de set een naam, kiest u de elementen en kiest u de volgorde waarin de afbeeldingen worden weergegeven.
 
@@ -68,15 +68,15 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie [Voorinstellingen voor viewers toevoegen en bewerken](/help/assets/managing-viewer-presets.md).
 
-1. [Draaiingsets weergeven](#viewing-spin-sets).
+1. [Een centrifugeerset weergeven](#viewing-spin-sets).
 
    U kunt sets die zijn gemaakt met voorinstellingen voor batchsets op drie verschillende manieren weergeven en openen. (Sets die zijn gemaakt met voorinstellingen voor batchsets, doen *niet* worden weergegeven in de gebruikersinterface.)
 
-1. [Voorvertoning van centrifuges](/help/assets/previewing-assets.md).
+1. [Een voorvertoning van een centrifugeset weergeven](/help/assets/previewing-assets.md).
 
    Selecteer de centrifugeset en u kunt er een voorvertoning van weergeven. Roteer de centrifugeset. U kunt verschillende viewers kiezen in het menu **[!UICONTROL Viewers]** beschikbaar via het keuzemenu voor de linkertrack.
 
-1. [Rotatiesets publiceren](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Een centrifugeerset publiceren](/help/assets/publishing-dynamicmedia-assets.md).
 
    Als u een centrifugeerset publiceert, worden de URL- en insluitreeks geactiveerd. Bovendien moet u [De viewervoorinstelling publiceren](/help/assets/managing-viewer-presets.md).
 
@@ -88,9 +88,9 @@ Ga als volgt te werk om snel aan de slag te gaan met centrifuges:
 
    Zie [Een centrifugeerset koppelen aan een webpagina](/help/assets/linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](/help/assets/embed-code.md).
 
-Indien nodig kunt u [Draaiensets bewerken](#editing-spin-sets). Bovendien kunt u bekijken en wijzigen [Eigenschappen van Spin-set](/help/assets/manage-assets.md#editing-properties).
+Indien nodig kunt u [Een centrierset bewerken](#editing-spin-sets). Bovendien kunt u bekijken en wijzigen [Eigenschappen van Spin-set](/help/assets/manage-assets.md#editing-properties).
 
-## Elementen uploaden voor centrifuges {#uploading-assets-for-spin-sets}
+## Elementen uploaden voor een centrifugeset {#uploading-assets-for-spin-sets}
 
 U hebt minstens 8-12 opnamen van een item nodig voor een eendimensionale centrifugeset en 16-24 voor een tweedimensionale centrifugeset. De opnamen moeten regelmatig worden gemaakt om de indruk te wekken dat het item draait en wordt gespiegeld. Als een eendimensionale centrifugeset bijvoorbeeld 12 opnamen bevat, roteert u het item 30° (360/12) voor elke opname.
 
@@ -124,7 +124,7 @@ In deze sectie wordt beschreven hoe u een centrifugeset in Experience Manager ma
 
 Wanneer u een reeks van de Rotatie creeert, adviseert Adobe de volgende beste praktijken en handhaaft de volgende grens:
 
-| Type limiet | Beste praktijken | Implementatielimiet |
+| Type limiet | Beste praktijken | Beperkt |
 | --- | --- | --- |
 | Maximumaantal rijen/kolommen per 2D-set | 12-18 afbeeldingen per set | 1000 |
 

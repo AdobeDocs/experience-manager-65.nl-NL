@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
+source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: '3329'
 ht-degree: 0%
 
 ---
@@ -207,7 +207,9 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 Adobe Experience Manager wordt ondersteund en wordt uitgevoerd in een virtuele machine in cloudcomputeromgevingen, zoals Microsoft Azure en Amazon Web Services (AWS), in overeenstemming met de technische vereisten die op deze pagina worden vermeld en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
-Adobe raadt u aan om Adobe Managed Services te gebruiken om AEM te implementeren in Azure of AWS. Adobe Managed Services biedt experts ervaring en vaardigheden voor het implementeren en gebruiken van AEM in deze cloud computing-omgevingen. Zie [aanvullende documentatie over Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Voor een cloud-native omgeving bekijkt u het nieuwste aanbod via de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) voor meer informatie.
+
+Adobe biedt ook Adobe Managed Services om AEM te implementeren in Azure of AWS. Adobe Managed Services biedt experts ervaring en vaardigheden voor het implementeren en gebruiken van AEM in deze cloud computing-omgevingen. Zie [aanvullende documentatie over Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In alle andere gevallen waarin AEM wordt geïmplementeerd in Azure of AWS, of in elke andere cloudcomputeromgeving, wordt de ondersteuning van Adobe beperkt tot de virtuele computeromgeving in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Alle gemelde problemen met betrekking tot AEM die in een van deze cloudomgevingen worden uitgevoerd, moeten onafhankelijk van eventuele cloudservices die specifiek zijn voor de cloud computing-omgeving kunnen worden gereproduceerd, tenzij de cloudservice specifiek wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
 

@@ -2,7 +2,7 @@
 title: Snelstartgids voor mappen zonder middelenkoppen maken
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: a5cb385aa369a5e59889e77597119358b77b55be
+source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop. Inhoudsfragmenten worden vervolgens in mappen met elementen opgeslagen.
 
-##  Wat is een middelenmap? {#what-is-an-assets-folder}
+## Wat is een middelenmap? {#what-is-an-assets-folder}
 
 [Nu u modellen voor inhoudsfragmenten hebt gemaakt](create-content-model.md) waarmee u de gewenste structuur voor toekomstige inhoudsfragmenten definieert, kunt u waarschijnlijk bepaalde fragmenten maken.
 

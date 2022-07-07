@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
 workflow-type: tm+mt
-source-wordcount: '7343'
+source-wordcount: '7452'
 ht-degree: 0%
 
 ---
@@ -283,6 +283,13 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
 * **Adobe Sign Cloud Configuration**: Kies een Adobe Sign Cloud-configuratie. Als u Adobe Sign for AEM Forms niet hebt geconfigureerd, raadpleegt u [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Selecteer het document dat u wilt ondertekenen:** U kunt een document kiezen op een locatie die relatief is ten opzichte van de lading, de lading als document gebruiken, een absoluut pad van het document opgeven of het document ophalen dat is opgeslagen in een variabele van het documentgegevenstype.
+
+
+* **Selecteer Pad invoerbijlage met:** Pad van de bijlagen. Deze bijlagen worden opgenomen in het ondertekenende document. U kunt de bijlagen op een locatie relatief ten opzichte van de lading houden, een absoluut pad naar de bijlagen opgeven of bijlagen ophalen die zijn opgeslagen in een variabele van het gegevenstype Document.
+
+
+Als u het pad van een map opgeeft, bijvoorbeeld bijlagen, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, als bijlage bij Document ondertekenen gevoegd. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document ondertekenen. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
+
 * **Dagen tot deadline:** Een document is gemarkeerd als opeisbaar (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het dialoogvenster **Dagen tot deadline** veld. Het aantal dagen wordt geteld nadat het document is toegewezen aan een gebruiker voor ondertekening.
 * **E-mailfrequentie herinnering:** U kunt een herinnering per dag of wekelijks e-mail verzenden. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
 * **Handtekeningproces:** U kunt ervoor kiezen om een document in een opeenvolgende of parallelle volgorde te ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.

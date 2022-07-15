@@ -10,8 +10,8 @@ feature: Authoring
 role: User
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 37%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 37%
    + [Ervaringsfragmenten](experience-fragments.md)
    + [Exporteren naar CSV](csv-export.md)
    + [Onderdelen](default-components.md)
-   + [Een pagina ontwerpen voor Mobile-apparaten](mobile.md)
+   + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
    + [Problemen met AEM bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
    + [Best practices voor](best-practices.md)

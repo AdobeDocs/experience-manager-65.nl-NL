@@ -8,8 +8,8 @@ breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

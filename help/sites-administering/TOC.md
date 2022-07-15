@@ -10,8 +10,8 @@ feature: Administering
 role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -129,7 +129,7 @@ ht-degree: 6%
    + [Integreren met Adobe Campaign Standard](campaignstandard.md)
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
    + [Productfeed](product-feed.md)
-   + [Integreren met dynamisch Adobe-tagbeheer](dtm.md)
+   + [Integreren met Adobe Dynamic Tag Management](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic (Scene7)](scene7.md)

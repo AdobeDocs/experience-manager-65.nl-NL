@@ -3,9 +3,9 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
+source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
 workflow-type: tm+mt
-source-wordcount: '3942'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -433,6 +433,10 @@ De `_variations` is geïmplementeerd om het opvragen van variaties in een inhoud
 
 Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
+>[!NOTE]
+>
+>Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -541,38 +545,43 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 
 * Als u logische OR wilt gebruiken:
    * use ` _logOp: OR`
-   * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](#sample-all-persons-jobs-smith)
+   * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
 
 * Logische AND bestaat ook, maar is (vaak) impliciet
 
 * U kunt zoeken naar veldnamen die overeenkomen met de velden in het model van het inhoudsfragment
-   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](#sample-full-details-company-ceos-employees)
+   * Zie [Voorbeeldquery - Volledige details van de CEO en medewerkers van een bedrijf](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
 
 * Naast de velden van uw model zijn er velden die door het systeem worden gegenereerd (voorafgegaan door een onderstrepingsteken):
 
    * Voor inhoud:
 
       * `_locale` : de taal te onthullen; gebaseerd op Taalbeheer
-         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](#sample-wknd-multiple-fragments-given-locale)
+         * Zie [Voorbeeldquery voor meerdere inhoudsfragmenten van een bepaalde landinstelling](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : om metagegevens voor uw fragment weer te geven
-         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](#sample-metadata-awards-gb)
+         * Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
       * `_model` : toestaan dat wordt gezocht naar een inhoudsfragmentmodel (pad en titel)
-         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model](#sample-wknd-content-fragment-model-from-model)
+         * Zie [Voorbeeldquery voor een inhoudsfragmentmodel op basis van een model](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
       * `_path` : het pad naar het inhoudsfragment in de repository
-         * Zie [Voorbeeldquery - één specifiek stedenfragment](#sample-single-specific-city-fragment)
+         * Zie [Voorbeeldquery - één specifiek stedenfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
       * `_reference` : verwijzingen zichtbaar te maken; inline-verwijzingen opnemen in de Rich Text Editor
-         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](#sample-wknd-multiple-fragments-prefetched-references)
+         * Zie [Voorbeeldquery voor meerdere inhoudfragmenten met vooraf ingestelde verwijzingen](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : om specifieke variaties in het inhoudsfragment weer te geven
-         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](#sample-cities-named-variation)
+
+         >[!NOTE]
+         >
+         >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+
+         * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](#sample-all-persons-not-jobs)
-         * Zie [Voorbeeldquery - Alle avonturen waar de `_path` begint met een bepaald voorvoegsel](#sample-wknd-all-adventures-cycling-path-filter)
+         * Zie [Voorbeeldquery - Alle personen die geen naam hebben van &quot;Taken&quot;](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
+         * Zie [Voorbeeldquery - Alle avonturen waar de `_path` begint met een bepaald voorvoegsel](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : specifieke voorwaarden toe te passen; bijvoorbeeld:  `AT_LEAST_ONCE`
-         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](#sample-array-item-occur-at-least-once)
+         * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
-         * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](#sample-all-cities-san-ignore-case)
+         * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -585,7 +594,7 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
 * GraphQL-vaktypen worden ondersteund:
 
    * gebruiken `... on`
-      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](#sample-wknd-fragment-specific-model-content-reference)
+      * Zie [Voorbeeldquery voor een inhoudsfragment van een specifiek model met een inhoudsverwijzing](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Extra fallback bij het opvragen van geneste fragmenten:
 

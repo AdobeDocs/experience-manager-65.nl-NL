@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3778'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 1%
       + [Zelfstudie: Regels toepassen op adaptieve formuliervelden l](using/apply-rules-to-adaptive-form-fields.md)
       + [Zelfstudie: Stijl uw adaptieve formulier](using/style-your-adaptive-form.md)
       + [Zelfstudie: Het aangepaste formulier publiceren](/help/forms/using/publish-your-adaptive-form.md)
-      + [Zelfstudie: Het adaptieve formulier testen](/help/forms/using/testing-your-adaptive-form.md)
    + Zelfstudie: Uw eerste interactieve communicatie maken {#create-first-interactive-communication}
       + [Zelfstudie: Maak uw eerste interactieve communicatie](using/create-your-first-interactive-communication.md)
       + [Zelfstudie: De interactieve communicatie plannen](using/planning-interactive-communications.md)
@@ -175,7 +174,6 @@ ht-degree: 1%
    + [XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren](using/xfa-api-supported-in-adaptive-form.md)
    + [De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen](using/rule-editor-access-user-groups.md)
    + [Aangepaste formulieren en recorddocumenten lokaliseren met AEM vertaalworkflow](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-   + [Testen van adaptieve formulieren automatiseren](using/calvin.md)
    + [Constructies voor stijlen voor adaptieve formulieren](using/styling-constructs-adaptive-forms.md)
    + [Adaptieve Forms synchroniseren met XFA-formuliersjablonen](using/synchronizing-adaptive-forms-xfa.md)
    + [Adobe Sign integreren met AEM Forms](using/adobe-sign-integration-adaptive-forms.md)

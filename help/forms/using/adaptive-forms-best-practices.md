@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
    * Daarnaast kunt u de volgende veldeigenschappen gebruiken:
 
       * `field.value` om de waarde van een veld te wijzigen.
-      * f `ield.enabled` om een veld in of uit te schakelen.
+      * `field.enabled` om een veld in of uit te schakelen.
       * `field.visible` om de zichtbaarheid van een veld te wijzigen.
 
 * Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. JavaScript is weliswaar krachtig en effectief, maar het is waarschijnlijk dat hierdoor de beveiligingsverwachtingen in het gedrang komen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie [De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Een recorddocument (DoR) is een afgevlakte PDF-versie van een adaptief formulier
 * Meer informatie over guideBridge-API&#39;s
 
 Zie voor meer informatie [AEM Chrome-plug-in - Adaptief formulier](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK is een hulpprogramma-API waarmee Adaptive Forms-ontwikkelaars Adaptive Forms kunnen testen. Calvin SDK is bovenop de [Het testframework Hobbes.js](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). U kunt het framework gebruiken om het volgende te testen:
-
-* Uitvoering van een adaptief formulier
-* Vooraf ingevuld met een adaptief formulier
-* Ervaring met een adaptief formulier verzenden
-* Expressieregels
-* Validaties
-* Lazy Loading
-
-Zie voor meer informatie [Testen van adaptieve formulieren automatiseren](/help/forms/using/calvin.md).
 
 ### Aangepaste formulieren op AEM server valideren {#validating-adaptive-forms-on-aem-server}
 

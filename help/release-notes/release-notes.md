@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
+source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3718'
 ht-degree: 0%
 
 ---
@@ -298,10 +298,10 @@ De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geï
 
 ## Gebruikersinterface {#ui-6513}
 
+* Bijwerken naar `favicon.ico` die in de Experience Manager wordt gebruikt. (CQ-4315324)
 * Wanneer u op startpagina > de sectie van Hulpmiddelen bent en klik [!DNL Experience Manager] pictogram, de [!DNL Experience Manager] Navigatievenster moet verschijnen. (NPR-38417)
 * ES6 inschakelen voor `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * ES6 inschakelen voor `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * Datumkiezer in aanraak-UI wordt weergegeven in het Koreaans. (NPR-38079)
 * Dialoogvenster Ontwerpen met meerdere velden, wanneer de velden opnieuw worden gerangschikt waarbij de selectiewaarde van het keuzerondje verloren gaat. (NPR-38063)

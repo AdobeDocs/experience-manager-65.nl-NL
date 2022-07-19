@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM 2022
 description: Opmerkingen bij de release AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
+source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '660'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,26 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 | CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Releasedatum: juni 2022
+
+| Component | Versie | Details |
+|:-------|:-----:|---------------------:|
+| CIF-invoegtoepassing | 2022.06.xx.00 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| CIF Core-componenten | 2.10.0. | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| CIF Venia Reference Site | 2022 07 04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+
+### Wat is er nieuw? {#what-is-new-june}
+
+* De sjabloonnaam die nu zichtbaar is, is Sites-editor tijdens het ontwerpen van de sjabloon voor de productcatalogus
+
+* Verschillende verbeteringen voor CIF Core-componenten
+
+### Bugfixes {#bug-fixes-june}
+
+* Aanmeldingstoken toevoegen aan prijsophaalbewerkingen op de client
+
+* Onjuiste paginacomponent in de datalaag
 
 ## Releasedatum: Mei 2022
 
@@ -63,7 +83,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
    ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Releasedatum: maart 2022
+## Releasedatum: februari 2022
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|

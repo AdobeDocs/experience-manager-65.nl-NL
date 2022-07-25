@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM 2022
 description: Opmerkingen bij de release AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
+source-git-commit: b493e7bd73d679aa46bf41fad105f13215226dd4
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '663'
 ht-degree: 5%
 
 ---
@@ -31,7 +31,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw? {#what-is-new-june}
 
-* De sjabloonnaam die nu zichtbaar is, is Sites-editor tijdens het ontwerpen van de sjabloon voor de productcatalogus
+* Verrijking van productcatalogus ondersteunt nu AEM pagina&#39;s. Hierdoor kunnen auteurs pagina - productkoppeling beheren.
 
 * Verschillende verbeteringen voor CIF Core-componenten
 

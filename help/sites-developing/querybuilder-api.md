@@ -12,9 +12,9 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: bfb02e79d6895be498e6e40888c6d8d4e3a8fcd4
+source-git-commit: 49a74d8c14c79e72f9df1e2ec41652ebc6fe76b6
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2312'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De REST API biedt toegang tot exact dezelfde functies via HTTP, waarbij reacties
 
 ## Gem-sessie {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >

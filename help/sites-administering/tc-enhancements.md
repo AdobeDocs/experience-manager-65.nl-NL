@@ -1,36 +1,35 @@
 ---
 title: Verbeterde vertaling
-seo-title: Verbeterde vertaling
+seo-title: Translation Enhancements
 description: Verbeterde vertaalfuncties in AEM.
-seo-description: Verbeterde vertaalfuncties in AEM.
+seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
+source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-
-# Verbeterde vertalingen{#translation-enhancements}
+# Verbeterde vertaling{#translation-enhancements}
 
 Deze pagina biedt incrementele verbeteringen en verfijningen voor AEM vertaalbeheermogelijkheden.
 
-## Automatisering vertaalproject {#translation-project-automation}
+## Automatisering van vertaalprojecten {#translation-project-automation}
 
 Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbeteren, zoals het automatisch promoten en verwijderen van lanceringen van vertalingen en het plannen van de terugkerende uitvoering van een vertaalproject.
 
-1. In uw vertaalproject, klik of tik de ellips bij de bodem van de **Tile van de Vertaling Summiere**.
+1. Klik of tik in het vertaalproject op de ellips onder aan het **Omzettingsoverzicht** tegel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Schakel over naar het tabblad **Geavanceerd**. Onderaan kunt u **Translation Launches automatisch bevorderen** selecteren.
+1. Naar de **Geavanceerd** tab. Onderaan kunt u **Automatisch introducties voor vertaling bevorderen**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -38,7 +37,7 @@ Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbetere
 
    ![screen_shot_2018-04-19at224033](assets/screen_shot_2018-04-19at224033.jpg)
 
-1. Selecteer de frequentie met de vervolgkeuzelijst onder **Vertaling herhalen** om de terugkerende uitvoering van een vertaalproject te selecteren. Het terugkomen van projectuitvoering zal automatisch vertaalbanen in de gespecificeerde intervallen creëren en uitvoeren.
+1. Selecteer de frequentie met de vervolgkeuzelijst onder om de terugkerende uitvoering van een vertaalproject te selecteren **Vertaling herhalen**. Het terugkomen van projectuitvoering zal automatisch vertaalbanen in de gespecificeerde intervallen creëren en uitvoeren.
 
    ![screen_shot_2018-04-19at223820](assets/screen_shot_2018-04-19at223820.jpg)
 
@@ -46,15 +45,15 @@ Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbetere
 
 Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het totale aantal gecreeerde vertaalprojecten te verminderen.
 
-1. Klik of tik in uw vertaalproject op de puntjes onder aan de tegel **Vertaaloverzicht**.
+1. Klik of tik in uw vertaalproject op de stippen onder aan het **Omzettingsoverzicht** tegel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Schakel over naar het tabblad **Geavanceerd**. U kunt meerdere talen toevoegen onder **Doeltaal**.
+1. Naar de **Geavanceerd** tab. U kunt meerdere talen toevoegen onder **Doeltaal**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
-1. U kunt ook talen toevoegen en **Meertalige vertaalproject maken** selecteren als u vertaling via de verwijzingstag in Sites start.
+1. U kunt ook talen toevoegen en **Vertaalproject voor meerdere talen maken**.
 
    ![screen_shot_2018-04-22at212941](assets/screen_shot_2018-04-22at212941.jpg)
 
@@ -66,7 +65,7 @@ Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het
 
 Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met het TMS (Translation Management System) om het vertaalgeheugen te trainen.
 
-1. Selecteer **Vertaalgeheugen bijwerken** in de Sites-console na het bijwerken van tekstinhoud in een vertaalde pagina.
+1. Selecteer vanuit de Sites-console na het bijwerken van tekstinhoud in een vertaalde pagina de optie **Vertaalgeheugen bijwerken**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
@@ -74,9 +73,12 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-   >[!NOTE]
-   >
-   >AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
+AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
+
+* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde Systemen van het Vertaalbeheer (TMS) bij.
+* Het creëert geen nieuwe vertaalbanen.
+* Het verzendt de waardeparen van koorden en hun vertalingen terug naar TMS, via AEM vertaling API.
+* Deze eigenschap vereist dat een Systeem van het Vertaalbeheer voor gebruik met AEM wordt gevormd.
 
 ## Taalkopieën op meerdere niveaus {#language-copies-on-multiple-levels}
 
@@ -90,32 +92,29 @@ Taalwortels kunnen nu worden gegroepeerd onder knooppunten, bijvoorbeeld per reg
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
-
 >
->
-Dit `es` taalexemplaar zal niet worden ontdekt aangezien het 2 niveaus (americas/centraal-america) vanaf `en` knoop is.
+>Dit `es` taalkopie wordt niet gedetecteerd omdat het zich op twee niveaus (americas/centraal-america) van de `en` knooppunt.
 
 >[!NOTE]
 >
 >Taalwortels kunnen elke paginanaam hebben, in plaats van alleen de ISO-code van de taal. AEM zal altijd het pad en de naam eerst controleren, maar als de paginanaam geen taal identificeert, zal AEM de eigenschap cq:language van de pagina controleren op de taalidentificatie.
 
-## Rapportering vertaalstatus {#translation-status-reporting}
+## Vertaalstatus rapporteren {#translation-status-reporting}
 
 Een eigenschap kan nu worden geselecteerd in de lijstweergave Sites, die aangeeft of een pagina is vertaald, vertaald of nog niet is vertaald. Deze weergeven:
 
-1. Schakel in Sites over op **Lijstweergave.**
+1. Ga in Sites naar **Lijstweergave.**
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Klik of tik **Instellingen weergeven**.
+1. Klikken of tikken **Instellingen weergeven**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Schakel het selectievakje **Vertaald** onder **Vertaling** in en tik op **Bijwerken**.
+1. Controleren **Vertaald** selectievakje onder **Vertaling** en tik/klik **Bijwerken**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 
-U kunt nu een **Vertaalde** kolom zien die de vertaalstatus van de pagina&#39;s toont.
+U kunt nu een **Vertaald** kolom met de vertaalstatus van de pagina&#39;s.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-

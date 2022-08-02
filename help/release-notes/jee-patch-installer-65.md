@@ -5,9 +5,9 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 2c2277f43fe12c4d4fa655c0666519e3608ba3f9
+source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -52,17 +52,12 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type
 1. Lees de informatie van het Pre-installatieoverzicht en klik **[!UICONTROL Install]**.
 1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie updates op uw geïnstalleerde dossiers toe te passen.
 
-1. Schakel de optie Configuratiebeheer starten uit voordat u op Gereed klikt. Voordat u configuratiebeheer uitvoert **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *&lt;aemforms_install_dir>\configurationManager\bin* map en update `ConfigurationManager.lax` en `ConfigurationManager_IPv6.lax` bestanden waarvan de naam als volgt wordt gewijzigd:
+1. **[Alleen Windows]** Voer de volgende stap uit:
 
-   * `axis.jar` tot `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` tot `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` tot `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` tot `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` tot `xml-apis-2.7.2.jar`
-
+   Schakel de optie **Configuratiebeheer starten** optie, voordat u klikt **[!UICONTROL Done]**. Voordat u configuratiebeheer uitvoert **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar `<AEMForms_Install_Dir>\configurationManager\bin` directory en replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) bestand.
 1. Het selectievakje Configuratiebeheer starten is standaard ingeschakeld. Klikken **[!UICONTROL Done]** om de Manager van de Configuratie in werking te stellen.
 
-1. Als u Configuratiebeheer later wilt uitvoeren, schakelt u de optie Configuratiebeheer starten uit voordat u op Gereed klikt. U kunt de Manager van de Configuratie later beginnen gebruikend het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
+1. Als u Configuratiebeheer later wilt uitvoeren, schakelt u de optie Configuratiebeheer starten uit voordat u op **[!UICONTROL Done]**. U kunt de Manager van de Configuratie later beginnen gebruikend het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
 
 1. Afhankelijk van uw toepassingsserver kiest u een van de volgende documenten en volgt u de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
 
@@ -70,9 +65,6 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type
    * [AEM voor WebSphere installeren en implementeren](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Alleen JBoss) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss-toepassingsserver.
-
->[!NOTE]
->Voordat u start **Configuratiebeheer**, downloaden en vervangen [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) bestand.
 
 ## Configuratie na implementatie {#post-deployment-configurations}
 

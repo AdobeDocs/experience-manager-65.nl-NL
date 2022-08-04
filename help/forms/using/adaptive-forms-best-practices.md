@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
+source-wordcount: '4529'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,19 @@ Zie voor meer informatie [Een adaptief formulier maken](/help/forms/using/creati
    * Introduceer aangepaste interactiviteiten door aangepaste widgets of weergaven te maken. Het wordt afgeraden standaardcomponenten te wijzigen. Zie voor meer informatie [Vormgevingskader](/help/forms/using/introduction-widgets.md).
 
 * Zie [Persoonlijke identificeerbare gegevens verwerken](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) voor aanbevelingen voor de verwerking van PII-gegevens.
+
+### Formuliersjablonen maken
+
+U kunt een adaptief formulier maken met behulp van de formuliersjablonen die zijn ingeschakeld in **Configuratiebrowser**. Als u de formuliersjablonen wilt inschakelen, raadpleegt u [Aangepaste formuliersjabloon maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. Formuliersjablonen worden beschikbaar gesteld door te installeren [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Enkele aanbevolen best practices zijn:
+* De **nosamplcontent** De runtime-modus wordt alleen aanbevolen voor de auteur en niet voor de publicatieknooppunten.
+* Elementen zoals adaptieve formulieren, thema&#39;s, sjablonen of cloudconfiguraties worden alleen via auteurknooppunten gemaakt. Deze kunnen worden gepubliceerd op de geconfigureerde publicatieknooppunten.
+Zie voor meer informatie [Formulieren en documenten publiceren en de publicatie ervan opheffen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Forms addon package is vereist voor Authoring en voor Publishing ter ondersteuning van de bewerkingen van de documentservice. daarom kan het als een afhankelijkheid worden beschouwd .
+Als u alleen voorbeeldsjablonen, thema&#39;s en DOR-pakketten voor Forms wilt gebruiken, kunt u deze downloaden van [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Zie voor meer informatie de beste praktijken in [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md).
 
 ## Aangepaste formulieren van auteurs {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 * Gebruik een beveiligde externe opslagruimte, zoals een database, om gegevens op te slaan uit concepten en verzonden formulieren. Zie [Externe opslag voor concepten en verzonden formuliergegevens configureren](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Met de component Voorwaarden en Voorwaarden van het gebruik kunt u expliciete toestemming van de gebruiker nemen voordat u het automatisch opslaan inschakelt. In dit geval schakelt u automatisch opslaan alleen in als de gebruiker akkoord gaat met de voorwaarden in de component Voorwaarden.
+
+

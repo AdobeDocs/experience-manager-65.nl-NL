@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
+source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,20 @@ Handmatige bewerkingen van vertaalde inhoud kunnen worden gesynchroniseerd met h
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-AEM stuurt de geselecteerde tekenreeksen terug naar het vertaalbeheersysteem.
+AEM werkt de vertaling van de bestaande koorden in het vertaalgeheugen van gevormde TMS bij.
 
-* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde Systemen van het Vertaalbeheer (TMS) bij.
+* De actie werkt de vertaling van bestaande koorden in het vertaalgeheugen van gevormde TMS bij.
 * Het creëert geen nieuwe vertaalbanen.
-* Het verzendt de waardeparen van koorden en hun vertalingen terug naar TMS, via AEM vertaling API.
-* Deze eigenschap vereist dat een Systeem van het Vertaalbeheer voor gebruik met AEM wordt gevormd.
+* De vertalingen worden via AEM vertalings-API teruggestuurd naar de TMS (zie hieronder).
+
+Deze functie gebruiken:
+
+* Een TMS moet voor gebruik met AEM worden gevormd.
+* De schakelaar moet de methode uitvoeren [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * De code binnen deze methode bepaalt wat met het verzoek van de vertaalgeheugenupdate gebeurt.
+   * Het AEM vertaalkader verzendt de koordwaardeparen (originele en bijgewerkte vertaling) terug naar TMS via deze methodeimplementatie.
+
+De updates van het vertaalgeheugen kunnen worden onderschept en naar een douanebestemming worden verzonden, voor gevallen waar een merkgebonden vertaalgeheugen wordt gebruikt.
 
 ## Taalkopieën op meerdere niveaus {#language-copies-on-multiple-levels}
 

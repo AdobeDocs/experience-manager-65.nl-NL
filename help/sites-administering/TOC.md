@@ -8,10 +8,10 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
+source-git-commit: 9a164f92b6d5a927d1cb4ead2f119cc094180713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 6%
 
 ---
 
@@ -113,6 +113,7 @@ ht-degree: 0%
    + [Integreren met services van derden](third-party-services.md)
    + [Integratie met Salesforce](salesforce.md)
    + [Integreren met Adobe Target](target.md)
+   + [Integreren met Adobe Learning Manager](adobe-learningmanager.md)
    + [Integreren met Adobe Analytics](adobeanalytics.md)
    + [Verbinding maken met Adobe Analytics en frameworks maken](adobeanalytics-connect.md)
    + [Koppeling bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3718'
+source-wordcount: '3629'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,12 @@ De belangrijkste functies en verbeteringen die zijn geïntroduceerd in [!DNL Ado
 
    * Extra ondersteuning voor schermlezers om de koptekst en hoofdtekst van een tabel te herkennen als continue en verbonden entiteiten. Schermlezers kunnen hierdoor gemakkelijker door de tabellen navigeren. (NPR-37139)
    * Extra ondersteuning voor schermlezers om te stoppen met navigeren door de HTML-werkruimte totdat een dialoogvenster is geopend. (NPR-37134)
-   * Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geïntroduceerd in [!DNL Experience Manager] 6.5.13.0:
 
@@ -123,11 +128,19 @@ De volgende opgeloste problemen, belangrijke functies en verbeteringen zijn geï
 * Wanneer een gebruiker HTML-tags aan de commentaarsectie toevoegt tijdens het uitvoeren van een workflow, worden de HTML-tags weergegeven. (NPR-37591)
 * Bij het importeren en publiceren van een letter die een nieuw XDP-bestand bevat, wordt geen voorvertoning van de letters weergegeven in de instantie Publiceren. Als de letters echter een tweede keer worden geïmporteerd en gepubliceerd met hetzelfde CMP-bestand, wordt een voorvertoning van de letters weergegeven. (CQ-4343599)
 * Een formulier met de eigenschap voor het voorbereiden van het gegevensproces is niet gerenderd in de HTML Workspace. (CQ-4343294)
-* Voor statische PDF forms die zijn gemaakt met Forms 6.5 Designer, mislukt de toegankelijkheid van PDF bij een fout `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * Kan een afbeelding niet converteren naar PDF met gebruik van de PDFG-service met OCR, nadat de patch AEMForms-6.5.0-0038 (log4jv2.16) is toegepast. (CQ-4342450)
-* Er wordt een onjuiste waarde weergegeven voor de streepjescode SSCC-18. Forms-servers laten de waarde in het rechtergedeelte van de streepjescode weg. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * Kan geen Microsoft® Word-bestand importeren naar Forms Designer. Fout aangetroffen door gebruiker `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* Als u in Forms 6.5 Designer een formulier opent dat is gemaakt met Forms 6.1 Designer en een tekstvak bewerkt, overschrijdt de alinea-afstand de opgegeven ruimte. Alle vorige instellingen van de ruimte worden verwijderd en het tekstvak moet handmatig opnieuw worden opgemaakt. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * De gebruiker kan geen aangepaste tijd instellen in de planner voor het leegmaken van taken. (CQ-4339/192)
 * De gebruiker kan geen configuratie onder eindpuntbeheer UI bijwerken en fout ontmoeten ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * Voor ongeldige tags werkt een goede afhandeling van foutberichten niet zoals u had verwacht. (NPR-38106 en CQ-4337173)

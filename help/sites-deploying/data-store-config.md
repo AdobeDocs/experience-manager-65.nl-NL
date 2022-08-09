@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
+source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3447'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,7 @@ Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1
 U kunt het configuratiebestand gebruiken met de volgende opties:
 
 * accessKey: De AWS-toegangstoets.
-* geheimaand: De geheime toegangssleutel van AWS. **Opmerking:** Alternatief, [IAM-rollen](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) kan voor authentificatie worden gebruikt. Als u IAM-rollen gebruikt, hoeft u niet langer de `accessKey` en `secretKey`.
-
+* geheimaand: De geheime toegangssleutel van AWS. **Opmerking:** Wanneer de `accessKey` of `secretKey` wordt niet opgegeven, wordt de [IAM-rol](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) wordt gebruikt voor verificatie.
 * s3Bucket: De naam van het emmertje.
 * s3Region: Het emmergebied.
 * pad: Het pad van de gegevensopslag. De standaardwaarde is **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**

@@ -3,7 +3,7 @@ title: CIF Core-componenten aanpassen
 description: Leer hoe u AEM CIF Core-componenten aanpast. In de zelfstudie wordt uitgelegd hoe u een CIF Core-component veilig kunt uitbreiden om aan bedrijfsspecifieke vereisten te voldoen. Leer hoe te om een vraag uit te breiden GraphQL om een douanekenmerk terug te keren en de nieuwe attributen in een Component van de Kern te tonen CIF.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 0%

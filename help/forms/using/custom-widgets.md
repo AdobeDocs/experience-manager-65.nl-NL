@@ -1,8 +1,8 @@
 ---
 title: Aangepaste weergaven maken in HTML5-formulieren
-seo-title: Aangepaste weergaven maken in HTML5-formulieren
+seo-title: Create custom appearances in HTML5 forms
 description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
-seo-description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
 content-type: reference
@@ -11,18 +11,17 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
 
-
 # Aangepaste weergaven maken in HTML5-formulieren{#create-custom-appearances-in-html-forms}
 
-U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. XFA-engine gebruikt verschillende widgets. Zie [Vormgevingsframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. XFA-engine gebruikt diverse widgets, zie [Vormgevingskader voor adaptieve en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor nadere informatie.
 
 ![Een voorbeeld van de standaard- en aangepaste widget](assets/custom-widgets.jpg)
 
@@ -32,11 +31,11 @@ Een voorbeeld van de standaard- en aangepaste widget
 
 ### Een profiel maken  {#create-a-profile-nbsp}
 
-U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Zie [Aangepast profiel maken](/help/forms/using/custom-profile.md) voor meer informatie over het maken van profielen.
+U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Voor meer informatie over het maken van profielen raadpleegt u [Aangepast profiel maken](/help/forms/using/custom-profile.md).
 
 ### Een widget maken {#create-a-widget}
 
-HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie is een jQuery-widget *abstractWidget* die kan worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
+HTML5-formulieren bieden een implementatie van het widgetframework dat kan worden uitgebreid om nieuwe widgets te maken. De implementatie is een jQuery-widget *abstractWidget* die kunnen worden uitgebreid om een nieuwe widget te schrijven. De nieuwe widget kan alleen functioneel worden gemaakt door de hieronder vermelde functies uit te breiden of te overschrijven.
 
 <table>
  <tbody>
@@ -46,11 +45,11 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
   </tr>
   <tr>
    <td>renderen</td>
-   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaard-HTML-element moet van het brandpunttype zijn. Bijvoorbeeld &lt;a&gt;, &lt;input&gt; en &lt;li&gt;. Het geretourneerde element wordt gebruikt als $userControl. Als $userControl de bovengenoemde beperking specificeert, dan werken de functies van de klasse AbstractWidget zoals verwacht, anders vereisen sommige gemeenschappelijke APIs (nadruk, klik) veranderingen. </td>
+   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld: &lt;a&gt;, &lt;input&gt;, en &lt;li&gt;. Het geretourneerde element wordt gebruikt als $userControl. Als $userControl de bovengenoemde beperking specificeert, dan werken de functies van de klasse AbstractWidget zoals verwacht, anders vereisen sommige gemeenschappelijke APIs (nadruk, klik) veranderingen. </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Retourneert een kaart voor het converteren van HTML-gebeurtenissen naar XFA-gebeurtenissen. <br /> {<br /> vervagen: XFA_EXIT_EVENT,<br /> }<br /> In dit voorbeeld wordt getoond dat de vervaging een HTML-gebeurtenis is en dat XFA_EXIT_EVENT corresponderende XFA-gebeurtenis is. </td>
+   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> {<br /> vervagen: XFA_EXIT_EVENT,<br /> }<br /> In dit voorbeeld wordt getoond dat de vervaging een HTML-gebeurtenis is en dat XFA_EXIT_EVENT corresponderende XFA-gebeurtenis is. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -71,7 +70,7 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
  </tbody>
 </table>
 
-Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. De *sliderNumericFieldWidget* is bijvoorbeeld een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
+Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. De *sliderNumericFieldWidget* is een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -79,7 +78,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine met behulp van `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
+Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine via `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",
@@ -96,8 +95,8 @@ De widgetconfiguratie wordt aangeboden als een JSON-object (een verzameling sleu
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```

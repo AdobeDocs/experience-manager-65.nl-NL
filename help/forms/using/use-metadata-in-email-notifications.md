@@ -8,7 +8,7 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Metagegevens gebruiken in een e-mailmelding {#use-metadata-in-an-email-notification}
 
-Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een typisch [e-mailbericht](../../forms/using/use-custom-email-template-assign-task-step.md) bevat verbinding van de toegewezen taak en informatie met betrekking tot de taak.
+Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een standaard [e-mailmelding](../../forms/using/use-custom-email-template-assign-task-step.md) bevat een koppeling van de toegewezen taak en informatie met betrekking tot de taak.
 
 U kunt metagegevens in een e-mailsjabloon gebruiken om gegevens in een e-mailbericht dynamisch in te vullen. De waarde van de titel, beschrijving, vervaldatum, prioriteit, workflow en laatste datum in het volgende e-mailbericht wordt bijvoorbeeld dynamisch geselecteerd tijdens de runtime (wanneer een e-mailmelding wordt gegenereerd).
 
@@ -155,9 +155,9 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 ### ECMAScript gebruiken om aangepaste metagegevens toe te voegen  {#use-ecmascript-to-add-custom-metadata}
 
-[](https://en.wikipedia.org/wiki/ECMAScript) ECMAScriptis is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
+[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) is een scripttaal. Het wordt gebruikt voor client-side scripting en servertoepassingen. Voer de volgende stappen uit om ECMAScript te gebruiken om douanemetagegevens voor een e-mailmalplaatje toe te voegen:
 
-1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://&#39;[server]:[port]&#39;/crx/de/index.jsp
+1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://&#39;[server]:[poort]&#39;/crx/de/index.jsp
 
 1. Navigeer naar /apps/fd/dashboard/scripts/metadataScripts. Maak een bestand met de extensie .ecma. Bijvoorbeeld usermetadata.ecma
 
@@ -185,8 +185,8 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
    Als u de titel niet opgeeft, wordt in het veld Aangepaste metagegevens het volledige pad van het ECMAScript-bestand weergegeven. Voer de volgende stappen uit om een betekenisvolle titel voor het script op te geven:
 
-   1. Breid de manuscriptknoop uit, klik **[!UICONTROL jcr:content]** knoop met de rechtermuisknop aan, en klik **[!UICONTROL Mixins]**.
-   1. Type mix:titel in Edit Mixins dialoog en klik **+**.
+   1. Breid de manuscriptknoop uit, klik met de rechtermuisknop aan **[!UICONTROL jcr:content]** en klik op **[!UICONTROL Mixins]**.
+   1. Tekstmix:titel in dialoogvenster Mixingen bewerken en klik op **+**.
    1. Voeg een eigenschap met de volgende waarden toe.
 
       | Naam | jcr:titel |
@@ -198,7 +198,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden toe als externe afhankelijkheden aan het OSGi-bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 

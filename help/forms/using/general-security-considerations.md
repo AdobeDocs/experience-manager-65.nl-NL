@@ -1,8 +1,8 @@
 ---
 title: Algemene veiligheidsoverwegingen voor AEM Forms in juni
-seo-title: Algemene veiligheidsoverwegingen voor AEM Forms in juni
+seo-title: General Security Considerations for AEM Forms on JEE
 description: Leer hoe u zich voorbereidt op het verharden van uw AEM Forms in JEE-omgeving.
-seo-description: Leer hoe u zich voorbereidt op het verharden van uw AEM Forms in JEE-omgeving.
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: 4d098731-fc8f-41d7-98b5-5c2e31211614
 content-type: reference
 topic-tags: Security
@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1082'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Zie de bronnen in de tabel voor beveiligingsinformatie over besturingssystemen d
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">Voordelen van IBM AIX-beveiliging</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX-beveiligingsvoordelen</a></p> </td>
   </tr>
   <tr>
    <td><p>Microsoft Windows Server® 2016 </p> </td>
@@ -98,7 +98,7 @@ Zie de bronnen in deze tabel voor beveiligingsinformatie over toepassingsservers
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Zoek naar Begrip van Veiligheid WebLogic op <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Zoek naar Begrip van WebLogic-beveiliging op <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
   </tr>
   <tr>
    <td><p>IBM WebSphere®</p> </td>
@@ -144,12 +144,12 @@ Voor veiligheidsinformatie over gegevensbestanden die AEM Forms op JEE steunt, z
   </tr>
   <tr>
    <td><p>Oracle® 12c</p> </td>
-   <td><p>Zie het hoofdstuk van de Veiligheid in <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g documentatie</a></p> </td>
+   <td><p>Zie het hoofdstuk Beveiliging in het dialoogvenster <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g-documentatie</a></p> </td>
   </tr>
  </tbody>
 </table>
 
-In deze tabel worden de standaardpoorten beschreven die moeten worden geopend tijdens het AEM Forms-configuratieproces in JEE. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Voor meer informatie over het vormen van havens, zie *het Installeren van en het Opstellen van AEM Forms op JEE* document voor uw toepassingsserver.
+In deze tabel worden de standaardpoorten beschreven die moeten worden geopend tijdens het AEM Forms-configuratieproces in JEE. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Voor meer informatie over het vormen van havens, zie *AEM Forms installeren en implementeren op JEE* document voor uw toepassingsserver.
 
 <table>
  <thead>
@@ -212,13 +212,13 @@ JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBo
 
 1. Open het volgende bestand om te bewerken:
 
-   Installatie van één server: [JBoss root]/standalone/configuration/standalone.xml
+   Installatie van één server: [JBoss-root]/standalone/configuration/standalone.xml
 
-   Clusterinstallaties: [JBoss root]/domain/configuration/domain.xml
+   Clusterinstallaties: [JBoss-root]/domain/configuration/domain.xml
 
-1. Wijzig de waarde van **port**-kenmerk in de **&lt;socket-binding>**-tag in een aangepast poortnummer. Het volgende gebruikt bijvoorbeeld poort 8090:
+1. De waarde wijzigen van **poort** in het dialoogvenster **&lt;socket-binding>** -tag aan een aangepast poortnummer. Het volgende gebruikt bijvoorbeeld poort 8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Sla het bestand op en sluit het.
 1. Start de JBoss-toepassingsserver opnieuw.
@@ -239,13 +239,13 @@ AEM Forms on JEE gebruikt de AEM Forms on JEE-database voor het opslaan van gevo
 
 De toepassingsserver die wordt gebruikt om AEM Forms op JEE in werking te stellen vereist zijn eigen configuratie voor toegang tot uw gegevensbestand door een gegevensbron die op de toepassingsserver wordt gevormd. Zorg ervoor dat uw toepassingsserver uw databasewachtwoord niet in duidelijke tekst in het configuratiebestand van de gegevensbron weergeeft.
 
-Het bestand lc_[database].xml mag geen wachtwoord in duidelijke tekstindeling bevatten. Vraag de leverancier van de toepassingsserver hoe u deze wachtwoorden voor uw toepassingsserver kunt coderen.
+De lc_[database].xml-bestand mag geen wachtwoord in duidelijke-tekstindeling bevatten. Vraag de leverancier van de toepassingsserver hoe u deze wachtwoorden voor uw toepassingsserver kunt coderen.
 
 >[!NOTE]
 >
 >Met het AEM Forms on JEE JBoss-installatieprogramma wordt het databasewachtwoord gecodeerd.
 
-De Server van de Toepassing van IBM WebSphere en de Server van Oracle WebLogic kunnen gegevensbronwachtwoorden door gebrek coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
+IBM WebSphere Application Server en WebLogic-server van Oracles kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
 
 ### De persoonlijke sleutel die is opgeslagen in de Trust Store beveiligen {#protecting-the-private-key-stored-in-trust-store}
 

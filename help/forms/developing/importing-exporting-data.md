@@ -1,8 +1,8 @@
 ---
 title: Gegevens importeren en exporteren
-seo-title: Gegevens importeren en exporteren
-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de API voor Java API en Web Service.
-seo-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de API voor Java API en Web Service.
+seo-title: Importing and Exporting Data
+description: Gebruik de dienst van de Integratie van de Gegevens van de Vorm om gegevens in een vorm van de PDF in te voeren en gegevens van een vorm van de PDF uit te voeren gebruikend Java API en de Dienst API van het Web.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API and Web Service API.
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -10,41 +10,40 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '2811'
+source-wordcount: '2778'
 ht-degree: 0%
 
 ---
 
-
-# Gegevens {#importing-and-exporting-data} importeren en exporteren
+# Gegevens importeren en exporteren {#importing-and-exporting-data}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-## Informatie over de service Formuliergegevensintegratie {#about-the-form-data-integration-service}
+## Over de service Formuliergegevensintegratie {#about-the-form-data-integration-service}
 
-Met de service Formuliergegevensintegratie kunt u gegevens importeren in een PDF-formulier en gegevens exporteren uit een PDF-formulier. De import- en exportbewerkingen ondersteunen twee typen PDF forms:
+De dienst van de Integratie van Gegevens van de Vorm kan gegevens in een vorm van PDF invoeren en gegevens van een vorm van PDF uitvoeren. De import- en exportbewerkingen ondersteunen twee typen PDF forms:
 
 * Een Acrobat-formulier (gemaakt in Acrobat) is een PDF-document dat formuliervelden bevat.
 * Een Adobe XML-formulier (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
 
-Afhankelijk van het type PDF-formulier kunnen formuliergegevens in een van de volgende indelingen bestaan:
+Formuliergegevens kunnen afhankelijk van het type PDF-formulier in een van de volgende indelingen bestaan:
 
 * An XFDF file, which is an XML version of the Acrobat form data format.
-* Een XDP-bestand, dat een XML-bestand is dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een door Designer gegenereerd XDP-bestand kan alleen worden gebruikt als het een ingesloten PDF-document met basis 64-codering bevat.
+* Een XDP-bestand, dat een XML-bestand is dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een door Designer gegenereerd XDP-bestand kan alleen worden gebruikt als het een ingesloten basis-64-gecodeerd PDF-document bevat.
 
 U kunt deze taken uitvoeren met de service Formuliergegevensintegratie:
 
-* Gegevens importeren in PDF forms. Zie [Formuliergegevens importeren](importing-exporting-data.md#importing-form-data) voor meer informatie.
-* Gegevens exporteren uit PDF forms. Zie [Formuliergegevens exporteren](importing-exporting-data.md#exporting-form-data) voor meer informatie.
+* Gegevens importeren in PDF forms. Zie voor meer informatie [Formuliergegevens importeren](importing-exporting-data.md#importing-form-data).
+* Gegevens exporteren uit PDF forms. Zie voor meer informatie [Formuliergegevens exporteren](importing-exporting-data.md#exporting-form-data).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Formuliergegevens {#importing-form-data} importeren
+## Formuliergegevens importeren {#importing-form-data}
 
 U kunt formuliergegevens in interactieve PDF forms importeren met de service Formuliergegevensintegratie. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat voor het verzamelen van informatie van een gebruiker of voor het weergeven van aangepaste informatie. De service Formuliergegevensintegratie ondersteunt geen formulierberekeningen, validatie of scripts.
 
@@ -87,9 +86,9 @@ Als u gegevenswaarden wilt importeren in dit formulier, moet u beschikken over e
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om formuliergegevens te importeren in een PDF-formulier:
 
@@ -112,15 +111,15 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
+Voor informatie over de locatie van deze JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een serviceclient voor formuliergegevensintegratie maken**
 
-Voordat u gegevens via programmacode kunt importeren in een PDF-formulier met client-API, moet u een client voor gegevensintegratie maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) voor meer informatie.
+Voordat u via programmacode gegevens kunt importeren in een PDF formulier-client-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Zie voor meer informatie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Verwijzen naar een PDF-formulier**
 
-Als u gegevens wilt importeren in een PDF-formulier, moet u verwijzen naar een XML-formulier dat is gemaakt in Designer of een Acrobat-formulier dat is gemaakt in Acrobat.
+Als u gegevens wilt importeren in een PDF-formulier, moet u verwijzen naar een XML-formulier dat in Designer is gemaakt of naar een Acrobat-formulier dat in Acrobat is gemaakt.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -132,7 +131,7 @@ Nadat u naar een PDF-formulier en een geldige XML-gegevensbron hebt verwezen, ku
 
 **Het PDF-formulier opslaan als een PDF-bestand**
 
-Nadat u gegevens in een formulier hebt geïmporteerd, kunt u het formulier opslaan als een PDF-bestand. Als het formulier eenmaal is opgeslagen als PDF-bestand, kan een gebruiker het formulier openen in Adobe Reader of Acrobat en het formulier bekijken met de geïmporteerde gegevens.
+Nadat u gegevens in een formulier hebt geïmporteerd, kunt u het formulier opslaan als een PDF-bestand. Wanneer een gebruiker het formulier eenmaal heeft opgeslagen als een PDF-bestand, kan hij het formulier openen in Adobe Reader of Acrobat en het formulier bekijken met de geïmporteerde gegevens.
 
 **Zie ook**
 
@@ -158,32 +157,32 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `FormDataIntegrationClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-formulier.
 
-   * Maak een `java.io.FileInputStream`-object met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft.
-   * Maak een `com.adobe.idp.Document`-object waarmee het PDF-formulier wordt opgeslagen met de constructor `com.adobe.idp.Document`. Geef het object `java.io.FileInputStream` dat het PDF-formulier bevat door aan de constructor.
+   * Een `java.io.FileInputStream` object met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft.
+   * Een `com.adobe.idp.Document` object dat het PDF-formulier opslaat met het gereedschap `com.adobe.idp.Document` constructor. Geef de `java.io.FileInputStream` object dat het PDF-formulier bevat voor de constructor.
 
 1. Verwijzen naar een XML-gegevensbron.
 
-   * Maak een `java.io.FileInputStream`-object met de constructor ervan en geef een tekenreekswaarde door die de locatie aangeeft van het XML-bestand dat de gegevens bevat die in het formulier moeten worden geïmporteerd.
-   * Maak een `com.adobe.idp.Document`-object dat formuliergegevens opslaat met de constructor `com.adobe.idp.Document`. Geef het object `java.io.FileInputStream` dat formuliergegevens bevat door aan de constructor.
+   * Een `java.io.FileInputStream` -object door gebruik te maken van de constructor en een tekenreekswaarde door te geven die de locatie aangeeft van het XML-bestand dat de gegevens bevat die in het formulier moeten worden geïmporteerd.
+   * Een `com.adobe.idp.Document` object dat formuliergegevens opslaat met het gereedschap `com.adobe.idp.Document` constructor. Geef de `java.io.FileInputStream` object dat formuliergegevens bevat voor de constructor.
 
 1. Gegevens importeren in het PDF-formulier.
 
-   Importeer gegevens naar een PDF-formulier door de methode `importData` van het object `FormDataIntegrationClient` aan te roepen en de volgende waarden door te geven:
+   Gegevens importeren in een PDF-formulier door het `FormDataIntegrationClient` object `importData` en geeft de volgende waarden door:
 
-   * Het object `com.adobe.idp.Document` dat het PDF-formulier opslaat.
-   * Het object `com.adobe.idp.Document` dat formuliergegevens opslaat.
+   * De `com.adobe.idp.Document` object waarin het PDF-formulier is opgeslagen.
+   * De `com.adobe.idp.Document` -object dat formuliergegevens opslaat.
 
-   De methode `importData` retourneert een object `com.adobe.idp.Document` dat een PDF-formulier opslaat dat de gegevens in de XML-gegevensbron bevat.
+   De `importData` methode retourneert een `com.adobe.idp.Document` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 
-   * Maak een `java.io.File`-object en zorg dat de bestandsextensie .PDF is.
-   * Roep de methode `Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `importData` is geretourneerd).
+   * Een `java.io.File` -object en zorg ervoor dat de bestandsextensie &quot;.PDF&quot; is.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `importData` methode).
 
 **Zie ook**
 
@@ -201,56 +200,56 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
-   * Maak een `FormDataIntegrationClient`-object met de standaardconstructor.
-   * Maak een `FormDataIntegrationClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef `?blob=mtom` echter op om MTOM te gebruiken.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `FormDataIntegrationClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `FormDataIntegrationClient` object met de standaardconstructor.
+   * Een `FormDataIntegrationClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `FormDataIntegrationClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `FormDataIntegrationClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `FormDataIntegrationClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijzen naar een PDF-formulier.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met dit `BLOB`-object wordt het PDF-formulier opgeslagen.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. Dit `BLOB` wordt gebruikt om het PDF-formulier op te slaan.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Verwijzen naar een XML-gegevensbron.
 
-   * Maak een `BLOB`-object met de constructor ervan. Dit `BLOB`-object wordt gebruikt om de gegevens op te slaan die in het formulier worden geïmporteerd.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie aangeeft van het XML-bestand dat de te importeren gegevens bevat en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. Dit `BLOB` wordt gebruikt om de gegevens op te slaan die in het formulier worden geïmporteerd.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie aangeeft van het XML-bestand dat de te importeren gegevens bevat en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Gegevens importeren in het PDF-formulier.
 
-   Importeer gegevens in het PDF-formulier door de methode `FormDataIntegrationClient` van het object `importData` aan te roepen en de volgende waarden door te geven:
+   Gegevens importeren in het PDF-formulier door het `FormDataIntegrationClient` object `importData` en geeft de volgende waarden door:
 
-   * Het object `BLOB` dat het PDF-formulier opslaat.
-   * Het object `BLOB` dat formuliergegevens opslaat.
+   * De `BLOB` object waarin het PDF-formulier is opgeslagen.
+   * De `BLOB` -object dat formuliergegevens opslaat.
 
-   De methode `importData` retourneert een object `BLOB` dat een PDF-formulier opslaat dat de gegevens in de XML-gegevensbron bevat.
+   De `importData` methode retourneert een `BLOB` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-bestand vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `importData` is geretourneerd. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-bestand vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `importData` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
 **Zie ook**
 
@@ -264,16 +263,16 @@ U kunt formuliergegevens vanuit een interactief PDF-formulier exporteren met de 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Integratie van de Gegevens van de Vorm, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om formuliergegevens uit een PDF-formulier te exporteren:
 
 1. Projectbestanden opnemen
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 1. Verwijzen naar een PDF-formulier.
-1. Exporteer gegevens uit het PDF-formulier.
+1. Gegevens exporteren uit het PDF-formulier.
 1. Sla de geëxporteerde gegevens op als een XML-bestand.
 
 **Projectbestanden opnemen**
@@ -290,11 +289,11 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 **Een serviceclient voor formuliergegevensintegratie maken**
 
-Voordat u gegevens via programmacode kunt importeren in een PDF formClient-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties) ter informatie.
+Voordat u gegevens via programmacode kunt importeren in een PDF formClient-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen. Ter informatie: [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 **Verwijzen naar een PDF-formulier**
 
-Als u gegevens uit een PDF-formulier wilt exporteren, moet u verwijzen naar een PDF-formulier dat is gemaakt in Designer of Acrobat en dat formuliergegevens bevat. Als u probeert gegevens uit een leeg PDF-formulier te exporteren, krijgt u een leeg XML-schema.
+Als u gegevens wilt exporteren uit een PDF-formulier, moet u verwijzen naar een PDF-formulier dat is gemaakt in Designer of Acrobat en dat formuliergegevens bevat. Als u probeert gegevens te exporteren uit een leeg PDF-formulier, krijgt u een leeg XML-schema.
 
 **Gegevens exporteren uit het PDF-formulier**
 
@@ -328,22 +327,22 @@ Formuliergegevens exporteren met de API voor formuliergegevensintegratie (Java):
 
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `FormDataIntegrationClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-formulier.
 
-   * Maak een `java.io.FileInputStream`-object met de constructor ervan en geef een tekenreekswaarde door die de locatie aangeeft van het PDF-formulier dat de te exporteren gegevens bevat.
-   * Maak een `com.adobe.idp.Document`-object waarmee het PDF-formulier wordt opgeslagen met de constructor `com.adobe.idp.Document`. Geef het object `java.io.FileInputStream` dat het PDF-formulier bevat door aan de constructor.
+   * Een `java.io.FileInputStream` -object door gebruik te maken van de constructor en een tekenreekswaarde door te geven die de locatie aangeeft van het PDF-formulier dat de te exporteren gegevens bevat.
+   * Een `com.adobe.idp.Document` object dat het PDF-formulier opslaat met het gereedschap `com.adobe.idp.Document` constructor. Geef de `java.io.FileInputStream` object dat het PDF-formulier bevat voor de constructor.
 
-1. Exporteer gegevens uit het PDF-formulier.
+1. Gegevens exporteren uit het PDF-formulier.
 
-   Exporteer formuliergegevens door de methode `exportData` van het object `FormDataIntegrationClient` aan te roepen en geef het object `com.adobe.idp.Document` door dat het PDF-formulier opslaat. Deze methode retourneert een `com.adobe.idp.Document`-object dat formuliergegevens opslaat als een XML-schema.
+   Formuliergegevens exporteren door het `FormDataIntegrationClient` object `exportData` en geeft de `com.adobe.idp.Document` object waarin het PDF-formulier is opgeslagen. Deze methode retourneert een `com.adobe.idp.Document` object dat formuliergegevens opslaat als een XML-schema.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 
-   * Maak een `java.io.File`-object en zorg dat de bestandsextensie XML is.
-   * Roep de methode `Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `exportData` is geretourneerd).
+   * Een `java.io.File` en zorg ervoor dat de bestandsextensie XML is.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `exportData` methode).
 
 **Zie ook**
 
@@ -361,41 +360,41 @@ Formuliergegevens exporteren met de API (webservice) voor formuliergegevensinteg
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
 
-   * Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   * Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
-   * Maak een `FormDataIntegrationClient`-object met de standaardconstructor.
-   * Maak een `FormDataIntegrationClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef `?blob=mtom` echter op om MTOM te gebruiken.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `FormDataIntegrationClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `FormDataIntegrationClient` object met de standaardconstructor.
+   * Een `FormDataIntegrationClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `FormDataIntegrationClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `FormDataIntegrationClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `FormDataIntegrationClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijzen naar een PDF-formulier.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met dit `BLOB`-object wordt het PDF-formulier opgeslagen waaruit gegevens worden geëxporteerd.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. Dit `BLOB` -object wordt gebruikt om het PDF-formulier op te slaan waaruit gegevens worden geëxporteerd.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Exporteer gegevens uit het PDF-formulier.
+1. Gegevens exporteren uit het PDF-formulier.
 
-   Importeer gegevens in een PDF-formulier door de methode `exportData` van het object `FormDataIntegrationClient` aan te roepen en geef het object `BLOB` door dat het PDF-formulier opslaat. Deze methode retourneert een `BLOB`-object dat formuliergegevens opslaat als een XML-schema.
+   Gegevens importeren in een PDF-formulier door het `FormDataIntegrationClient` object `exportData` en geeft de `BLOB` object waarin het PDF-formulier is opgeslagen. Deze methode retourneert een `BLOB` object dat formuliergegevens opslaat als een XML-schema.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de locatie van het XML-bestand vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `exportData` is geretourneerd. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
-   * Schrijf de inhoud van de bytearray naar een XML-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de locatie van het XML-bestand vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `exportData` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
+   * Schrijf de inhoud van de bytearray naar een XML-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
 **Zie ook**
 

@@ -1,8 +1,8 @@
 ---
 title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
-seo-title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
-seo-description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -41,14 +41,14 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
             https://[host name]:'port'/adminui
    ```
 
-1. Klik **Services > Toepassingen en services > Voorkeuren**.
+1. Klikken **Services > Toepassingen en services > Voorkeuren**.
 1. Stel de voorkeuren in om maximaal 200 services en eindpunten op dezelfde pagina weer te geven.
-1. Klik **Services** > **Toepassingen en services** > **Eindpuntbeheer**.
-1. Selecteer **EJB** in de lijst **Provider** en klik vervolgens op **Filter**.
+1. Klikken **Services** > **Toepassingen en services** > **Endpoint Management**.
+1. Selecteren **EJB** van de **Provider** en klik vervolgens op **Filter**.
 1. Als u alle EJB-eindpunten wilt uitschakelen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Uitschakelen**.
-1. Klik **Volgende** en herhaal de vorige stap voor alle EJB eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
-1. Selecteer **SOAP** in de lijst **Provider** en klik vervolgens op **Filter**.
-1. Om de eindpunten van de ZEEP te verwijderen, selecteer de controledoos naast elk in de lijst en klik **Remove**. Verwijder de volgende eindpunten niet:
+1. Klikken **Volgende** en herhaal de vorige stap voor alle EJB-eindpunten. Zorg ervoor dat EJB in de kolom van de Leverancier wordt vermeld alvorens u eindpunten onbruikbaar maakt.
+1. Selecteren **SOAP** van de **Provider** en klik vervolgens op **Filter**.
+1. Als u de eindpunten van de SOAP wilt verwijderen, schakelt u het selectievakje naast elk punt in de lijst in en klikt u op **Verwijderen**. Verwijder de volgende eindpunten niet:
 
    * AuthenticationManagerService
    * DirectoryManagerService
@@ -64,7 +64,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. Klik **Volgende** en herhaal de vorige stap voor de eindpunten van de ZEEP die niet in de bovengenoemde lijst zijn. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
+1. Klikken **Volgende** en herhaal de vorige stap voor SOAP-eindpunten die zich niet in de bovenstaande lijst bevinden. Zorg ervoor dat de ZEEP in de kolom van de Leverancier wordt vermeld alvorens u eindpunten verwijdert.
 
 ## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
 
@@ -76,9 +76,9 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
             https://[host name]:'port'/adminui
    ```
 
-1. Klik op **Services > Toepassingen en services > Servicebeheer**.
+1. Klikken **Services > Toepassingen en services > Servicebeheer**.
 1. Klik de naam van de dienst die u (bijvoorbeeld, AuthenticationManagerService) wilt onbruikbaar maken.
-1. Klik **Het lusje van de Veiligheid**, schrap **Anonieme Toegang Toegestane**, en klik **sparen**.
+1. Klik op de knop **Het tabblad Beveiliging**, deselecteren **Anonieme toegang toegestaan** en klik op **Opslaan**.
 1. Voltooi de stappen 3 en 4 voor de volgende services:
 
    * AuthenticationManagerService
@@ -119,13 +119,13 @@ Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-we
             https://[host name]:'port'/adminui
    ```
 
-1. Klik op **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren**.
-1. Klik **Exporteren** om een config.xml- dossier met de bestaande montages van AEM Forms te produceren.
+1. Klikken **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren**.
+1. Klikken **Exporteren** om een config.xml- dossier met de bestaande montages van AEM Forms te produceren.
 1. Open het XML-bestand in een editor en zoek de volgende gegevens:
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Wijzig de waarde in een waarde groter dan 5 (in minuten) en sla het bestand op.
 1. Navigeer in de beheerconsole naar de pagina Configuration Files importeren en exporteren.
 1. Ga de weg aan het gewijzigde config.xml- dossier in of de klik doorbladert om aan het te navigeren.
-1. Klik **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.
+1. Klikken **Importeren** om het gewijzigde bestand config.xml te uploaden en klik vervolgens op **OK**.

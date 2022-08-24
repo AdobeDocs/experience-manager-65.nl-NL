@@ -1,8 +1,8 @@
 ---
 title: Toegankelijke content maken (WCAG 2.0-compatibiliteit)
-seo-title: Toegankelijke content maken (WCAG 2.0-compatibiliteit)
+seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap.
-seo-description: WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap.
+seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
 uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '9241'
+source-wordcount: '9211'
 ht-degree: 9%
 
 ---
-
 
 # Toegankelijke content maken (WCAG 2.0-compatibiliteit){#creating-accessible-content-wcag-conformance}
 
@@ -38,11 +37,9 @@ WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescr
 >
 >Zie ook:
 >
->* onze [Snelle gids aan WCAG 2.0](/help/managing/qg-wcag.md) voor meer informatie
+>* ons [Snelle gids aan WCAG 2.0](/help/managing/qg-wcag.md) voor nadere bijzonderheden
 >* [De Rich Text Editor configureren voor het produceren van toegankelijke inhoud](/help/sites-administering/rte-accessible-content.md)
-
 >
-
 
 
 Deze worden ingedeeld op basis van drie compatibiliteitsniveaus: Niveau A (laagste), Niveau AA en Niveau AAA (hoogste). De niveaus worden kort samengevat als volgt gedefinieerd:
@@ -53,7 +50,7 @@ Deze worden ingedeeld op basis van drie compatibiliteitsniveaus: Niveau A (laags
 
 Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
-In de volgende sectie worden de [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) met gerelateerde succescriteria voor Niveau A en Niveau AA [conformiteitsniveaus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) gepresenteerd.
+In het volgende gedeelte wordt de [WCAG 2.0-richtsnoeren](https://www.w3.org/TR/WCAG20/#guidelines) met de bijbehorende succescriteria voor niveau A en niveau A [conformiteitsniveaus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html).
 
 >[!NOTE]
 >
@@ -63,14 +60,12 @@ In de volgende sectie worden de [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG
 >
 >In dit document gebruiken we:
 >
->* de korte namen voor [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines).
->* de nummering die wordt gebruikt in de [WCAG 2.0 Guidelines](https://www.w3.org/TR/WCAG20/#guidelines) om kruisverwijzingen naar de WCAG-website te vergemakkelijken.
-
+>* de korte namen van de [WCAG 2.0-richtsnoeren](https://www.w3.org/TR/WCAG20/#guidelines).
+>* de nummering die wordt gebruikt in de [WCAG 2.0-richtsnoeren](https://www.w3.org/TR/WCAG20/#guidelines) kruisverwijzingen met de WCAG-website te ondersteunen.
 >
 
 
-
-## Beginsel 1: Mogelijk {#principle-perceivable}
+## Beginsel 1: Perceerbaar {#principle-perceivable}
 
 [Beginsel 1: Mogelijkheid - De informatie en gebruikersinterfacecomponenten moeten aan gebruikers op manieren presenteerbaar zijn zij kunnen waarnemen.](https://www.w3.org/TR/WCAG20/#perceivable)
 
@@ -90,35 +85,35 @@ De informatie op een webpagina kan in vele verschillende niet-tekstformaten, zoa
 
 Een nuttig extra voordeel is dat tekstopties het mogelijk maken dat niet-tekstuele inhoud wordt geïndexeerd door zoekmachinetechnologie.
 
-#### Hoe kan ik-niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
+#### Ontmoeten - Niet-tekstuele inhoud (1.1.1) {#how-to-meet-non-text-content}
 
-Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan in het **gebied van de Tekst van Alt** worden gedaan:
+Voor statische afbeeldingen is het basisvereiste dat een equivalent tekstalternatief voor de afbeelding wordt geboden. Dit kan worden gedaan in het **Alt-tekst** veld:
 
 >[!NOTE]
 >
 >Sommige standaardcomponenten, zoals **Carrousel** en **Diapresentatie**, bieden geen manier om alternatieve tekstbeschrijvingen aan afbeeldingen toe te voegen. Bij het uitvoeren van versies van deze componenten voor uw AEM-exemplaar zal uw ontwikkelingsteam dergelijke componenten moeten configureren om het kenmerk `alt`[ te ondersteunen zodat auteurs dit aan de content kunnen toevoegen (zie Ondersteuning toevoegen voor aanvullende HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-Het veld **Alt Text** is beschikbaar op het tabblad Afbeeldingseigenschappen **Geavanceerd** van het dialoogvenster **Afbeelding**:
+De **Alt-tekst** veld is beschikbaar in **Geavanceerd** tabblad Eigenschappen van afbeelding van het tabblad **Afbeelding** dialoogvenster component:
 
 ![Dialoogvenster van de component Image in de klassieke UI bewerken; geeft het veld Alt-tekst weer.](assets/chlimage_1-17a.png)
 
-AEM voegt standaard een **Alt-tekst** aan uw afbeeldingen toe. Voor de klassieke UI zijn er twee verschillende scenario&#39;s voor hoe het standaardattribuut wordt gecreeerd (hoewel de standaardwaarde als alternatief kan niet voldoende zijn en hoogstwaarschijnlijk zal moeten worden uitgegeven op het **Geavanceerde** beeldeigenschappen tabel):
+AEM voegt een **Alt-tekst** in uw afbeeldingen. Voor klassieke UI zijn er twee verschillende scenario&#39;s voor hoe het standaardattribuut wordt gecreeerd (hoewel de standaardwaarde als alternatief kan niet voldoende zijn en zeer waarschijnlijk zal moeten in worden uitgegeven **Geavanceerd** afbeelding-eigenschappen, tabblad):
 
 * Bestand:
 
-   Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een afbeeldingscomponent aan een pagina toevoegt en vervolgens een afbeelding op de vaste schijf of een andere bron kiest, is de standaardwaarde voor **Alt Text** `file`. Dit moet worden gewijzigd op het tabblad **Geavanceerde** afbeeldingseigenschappen. Nogmaals, deze waarde wordt niet weergegeven in het veld **Alt Text**, maar wanneer de waarde wordt gewijzigd, wordt de nieuwe waarde weergegeven in het veld.
+   Een afbeelding wordt geüpload vanaf de vaste schijf van de gebruiker. Als u een afbeeldingscomponent aan een pagina toevoegt en vervolgens een afbeelding op de vaste schijf of een andere bron kiest, wordt de standaardwaarde voor **Alt-tekst** is `file`. Dit moet worden gewijzigd in de **Geavanceerd** tabblad Eigenschappen van afbeelding. Deze waarde wordt opnieuw niet weergegeven in het dialoogvenster **Alt-tekst** , maar als de waarde wordt gewijzigd, wordt de nieuwe waarde in het veld weergegeven.
 
 * Element:
 
-   Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een afbeelding van de gegevensopslagruimte voor digitale elementen naar een webpagina sleept, worden de waarden **Title** en **Alt Text** voor die afbeelding ontleend aan de metagegevens voor die afbeelding.
+   Er wordt een afbeelding toegevoegd vanuit de gegevensopslagruimte voor digitale middelen. Als u een afbeelding van de gegevensopslagruimte voor digitale middelen naar een webpagina sleept, **Titel** en **Alt-tekst** De waarden voor die afbeelding worden ontleend aan de metagegevens voor die afbeelding.
 
 >[!NOTE]
 >
->In beide bovenstaande scenario&#39;s is de standaardwaarde **Alt Text** niet zichtbaar op het tabblad **Geavanceerde afbeeldingseigenschappen**. Als u de standaardwaarde wilt wijzigen, voert u een nieuwe waarde in het veld **Alt Text** in.
+>In beide bovenstaande scenario&#39;s wordt de standaardwaarde **Alt-tekst** waarde is niet zichtbaar in het dialoogvenster **Geavanceerde afbeeldingseigenschappen** tab. Als u de standaardwaarde wilt wijzigen, voert u eenvoudig een nieuwe waarde in het dialoogvenster **Alt-tekst** veld.
 
 >[!NOTE]
 >
->Als uw afbeelding zuiver decoratief is (zie [Goede tekstalternatieven maken](#creating-good-text-alternatives)), kunt u een spatie invoeren in het veld **Alt Text** met behulp van de spatiebalk. Hierdoor wordt een leeg `alt`-kenmerk gemaakt, waardoor een schermlezer wordt gevraagd de afbeelding te negeren.
+>Als uw afbeelding zuiver decoratief is (zie [Alternatieven voor goede tekst maken](#creating-good-text-alternatives)), kunt u een spatie invoeren in het dialoogvenster **Alt-tekst** met de spatiebalk. Hiermee maakt u een lege `alt` -kenmerk. Hiermee wordt een schermlezer gevraagd de afbeelding te negeren.
 
 #### Alternatieven voor goede tekst maken {#creating-good-text-alternatives}
 
@@ -135,13 +130,13 @@ Er zijn verschillende vormen van niet-tekstuele inhoud, zodat de waarde van het 
 * Als de niet-tekstuele inhoud zich in een knopelement bevindt en er geen tekst bestaat die deel uitmaakt van dezelfde knop, moet de alternatieve tekst van de afbeelding de functionaliteit van de knop aangeven en de afbeelding niet beschrijven.
 * Het is volkomen aanvaardbaar dat een afbeelding een lege (null) alternatieve tekst krijgt, maar alleen als de afbeelding geen alternatieve tekst heeft (bijvoorbeeld een zuiver decoratieve afbeelding) of als de equivalente tekst al in de paginatekst staat.
 
-Het [W3C-concept: De Technieken van HTML5 voor het verstrekken van nuttige tekstalternatieven](https://dev.w3.org/html5/alt-techniques/) heeft meer details en voorbeelden van aangewezen alternatieve tekstvoorziening voor beelden van verschillende types.
+De [W3C-concept: HTML5 Technieken om nuttige tekstopties te verstrekken](https://dev.w3.org/html5/alt-techniques/) bevat meer details en voorbeelden van geschikte alternatieve tekstvoorzieningen voor afbeeldingen van verschillende typen.
 
 Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn onder meer:
 
 * Illustratieve foto&#39;s:
 
-   Dit zijn afbeeldingen van mensen, objecten of plaatsen. Denk na over de rol van de foto op de pagina. een geschikt tekstequivalent is waarschijnlijk *Foto van [object]*, maar kan afhankelijk zijn van de omringende tekst.
+   Dit zijn afbeeldingen van mensen, objecten of plaatsen. Denk na over de rol van de foto op de pagina. waarschijnlijk een geschikt tekstequivalent *Foto van [object]*, maar kan afhankelijk zijn van de omringende tekst.
 
 * Pictogrammen:
 
@@ -149,11 +144,11 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * Grafieken en grafieken:
 
-   Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef indien nodig ook een gedetailleerdere beschrijving in de tekst op met het veld **Beschrijving** op het tabblad Afbeeldingseigenschappen **Geavanceerd**. Bovendien kunt u de brongegevens elders op de pagina of site in tabelvorm opgeven.
+   Deze vertegenwoordigen meestal numerieke gegevens. U kunt dus een alternatief voor tekst bieden door een korte samenvatting op te nemen van de belangrijkste trends die in de grafiek of afbeelding worden weergegeven. Geef zo nodig ook een meer gedetailleerde beschrijving in de tekst met behulp van de **Beschrijving** in het **Geavanceerd** tabblad Eigenschappen van afbeelding. Bovendien kunt u de brongegevens elders op de pagina of site in tabelvorm opgeven.
 
-   ![Voorbeeld van een grafiek. Hieronder ziet u de beste manier om een alternatief te bieden.](assets/chlimage_1-2a.jpeg)
+   ![Voorbeeld van een grafiek. Hieronder ziet u de beste aanpak om een alternatief te bieden.](assets/chlimage_1-2a.jpeg)
 
-   Als u een alternatief wilt bieden voor dit voorbeelddiagram, voegt u een beknopte `alt`-tekst toe aan de afbeelding zelf en volgt u de afbeelding met een volledig tekstalternatief.
+   Als u een alternatief voor dit voorbeelddiagram wilt opgeven, voegt u een kort `alt` de tekst aan het beeld zelf en dan het beeld met een volledig tekstalternatief te volgen.
 
    ```xml
    <p><img src="figure1.gif" alt="Figure 1" ></p>
@@ -163,9 +158,9 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
    >[!NOTE]
    >
-   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Het wordt aanbevolen de **Image**-component te gebruiken (in plaats van de `img src`-verwijzing die hierboven is gebruikt.
+   >Het bovenstaande fragment wordt alleen gebruikt om de volgorde te illustreren. Het wordt aanbevolen om de **Afbeelding** component (in plaats van de `img src` hierboven gebruikte referentie.
 
-   In AEM kan dit worden gedaan gebruikend een combinatie **Alt Text** en **Description** gebieden in de de configuratiedialoog van het beeld - zoals in [hoe te om - niet-tekstuele Inhoud (1.1.1)](#how-to-meet-non-text-content) te ontmoeten.
+   AEM kan dit worden gedaan met een combinatie van de **Alt-tekst** en **Beschrijving** velden in het configuratiedialoogvenster van de afbeelding - zoals in [Ontmoeten - Niet-tekstuele inhoud (1.1.1)](#how-to-meet-non-text-content).
 
 * Kaarten, diagrammen, stroomdiagrammen:
 
@@ -173,7 +168,7 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
 * CAPTCHA&#39;s:
 
-   Een CAPTCHA is een *Complete Automated Public Turing test om computers en mensen apart te vertellen*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is duidelijk niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus in plaats daarvan moet u alternatieve niet-grafische oplossingen overwegen.
+   Een CAPTCHA is een *Volledig geautomatiseerde openbare trainingstest om computers en mensen te informeren*. Het is een veiligheidscontrole die op webpagina&#39;s wordt gebruikt om mensen van kwaadaardige software te onderscheiden, maar die toegankelijkheidsbarrières kan veroorzaken. Dit zijn afbeeldingen waarvoor gebruikers een beschrijving moeten geven van wat ze zien om een beveiligingstest te kunnen doorstaan. Het is duidelijk niet mogelijk om een tekstalternatief voor de afbeelding te bieden, dus in plaats daarvan moet u alternatieve niet-grafische oplossingen overwegen.
 
    De W3C biedt een aantal suggesties, zoals:Elk van deze benaderingen heeft zijn eigen verdiensten en nadelen.
 
@@ -189,20 +184,20 @@ Specifieke typen niet-tekstuele inhoud waarvoor tekstopties nodig zijn, zijn ond
 
    >[!NOTE]
    >
-   >Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. dit wordt meer in detail besproken in [Contrast (Minimum) (1.4.3)](#contrast-minimum).
+   >Er moet een passend contrastniveau zijn tussen de achtergrond en de voorgrondtekst. dit wordt nader besproken [Contrast (minimaal) (1.4.3)](#contrast-minimum).
 
 #### Meer informatie - Niet-tekstuele inhoud (1.1.1) {#more-information-non-text-content}
 
 * [Werken met succescriteria 1.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html)
 * [Voldoen aan criteria 1.1.1](https://www.w3.org/WAI/WCAG20/quickref/#text-equiv)
-* [W3C: HTML5-technieken voor het bieden van bruikbare tekstalternatieven (concept)](https://dev.w3.org/html5/alt-techniques/)
+* [W3C: HTML5 Technieken voor het aanbieden van nuttige tekstalternatieven (concept)](https://dev.w3.org/html5/alt-techniques/)
 * [W3C-uitleg van en alternatieven voor CAPTCHA&#39;s](https://www.w3.org/TR/turingtest/)
 
 ### Op tijd gebaseerde media (1.2) {#time-based-media}
 
 [Richtsnoer 1.2 Op tijd gebaseerde media: Alternatieven bieden voor tijdgebaseerde media.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-Dit heeft betrekking op webinhoud die *op tijd-gebaseerd* is. Dit geldt voor inhoud die de gebruiker kan afspelen (zoals video, audio en bewegende inhoud) en die vooraf kan worden opgenomen of een live stream.
+Dit heeft betrekking op webinhoud die *op tijd gebaseerd*. Dit geldt voor inhoud die de gebruiker kan afspelen (zoals video, audio en bewegende inhoud) en die vooraf kan worden opgenomen of een live stream.
 
 ### Alleen audio en alleen video (vooraf opgenomen) (1.2.1) {#audio-only-and-video-only-pre-recorded}
 
@@ -276,7 +271,7 @@ Bijschriften kunnen:
 
 Gebruik waar mogelijk ondertiteling sluiten, omdat gebruikers dan de keuze hebben om ondertitels al dan niet weer te geven.
 
-Voor gesloten bijschriften moet u een gesynchroniseerd bijschriftbestand maken en leveren in een geschikte indeling (zoals [SMIL](https://www.w3.org/AudioVideo/)) naast het videobestand (details over hoe dit te doen vallen buiten het bereik van deze handleiding, maar we hebben koppelingen naar enkele zelfstudies verschaft onder [Meer informatie - Bijschriften (vooraf opgenomen) (1.2.2)](#more-information-captions-pre-recorded)). Zorg ervoor dat u een notitie opgeeft om gebruikers te laten weten dat er ondertitels beschikbaar zijn voor de video.
+Voor gesloten bijschriften moet u een gesynchroniseerd bijschriftbestand maken en opgeven in de juiste indeling (bijvoorbeeld [SMIL](https://www.w3.org/AudioVideo/)) naast het videobestand (details over hoe dit te doen vallen buiten het bereik van deze handleiding, maar we hebben koppelingen naar enkele zelfstudies in het kader van [Meer informatie - Bijschriften (vooraf opgenomen) (1.2.2)](#more-information-captions-pre-recorded)). Zorg ervoor dat u een notitie opgeeft om gebruikers te laten weten dat er ondertitels beschikbaar zijn voor de video.
 
 Sluit de tekst in de videotrack in als u open bijschriften moet gebruiken. Dit kan worden bereikt met videobewerkingstoepassingen waarmee titels kunnen worden bedekt op de video.
 
@@ -306,14 +301,14 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
    * Geef tijdens pauzes in het bestaande dialoogvenster informatie over wijzigingen in de scène die niet worden weergegeven als onderdeel van de bestaande audiotrack.
    * Geef een nieuwe, aanvullende en optionele audiotrack met de oorspronkelijke soundtrack op, maar voeg ook extra audiogegevens over wijzigingen in de scène toe.
 
-      * Hierdoor kunnen gebruikers schakelen tussen de bestaande audiotrack (die *geen audiobeschrijving bevat) en de nieuwe audiotrack (die* wel *bevat).*
+      * Hierdoor kunnen gebruikers schakelen tussen de bestaande audiotrack (die *niet* bevat een audiobeschrijving) en de nieuwe audiotrack (die *doet* bevat een audiobeschrijving).
       * Hiermee voorkomt u onderbrekingen voor gebruikers die de aanvullende beschrijving niet nodig hebben.
    * Maak een tweede versie van de video-inhoud voor uitgebreide audiobeschrijvingen. Dit vermindert de moeilijkheden verbonden aan het verstrekken van gedetailleerde audiobeschrijvingen binnen de hiaten tussen bestaande dialoog, door de audio en video op aangewezen punten tijdelijk te pauzeren. Hierdoor kan een veel langere audiobeschrijving worden gegeven voordat de handeling opnieuw wordt gestart. Zoals in het vorige voorbeeld, wordt dit het best verstrekt als facultatieve extra audiospoor om verstoring voor gebruikers te verhinderen die niet de extra beschrijving nodig hebben.
 
 
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. In voorkomend geval moet daarin worden vermeld wie het woord voert, een beschrijving van de instelling, mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
-Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>`.
+Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste plug-in te downloaden en een alternatief voor tekst te bieden via het dialoogvenster `<noscript>` element.
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
@@ -321,7 +316,7 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 * [Voldoen aan criteria 1.2.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
 * [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
 
-### Bijschriften (live) (1.2.4) {#captions-live}
+### Bijschriften (live) (1.2.4)  {#captions-live}
 
 * Succescriterium 1.2.4
 * Niveau AA
@@ -329,11 +324,11 @@ Exacte details over het maken van video met audioverichting vallen buiten het be
 
 #### Doel - Bijschriften (live) (1.2.4) {#purpose-captions-live}
 
-Dit succescriterium is identiek aan [Bijschriften (vooraf opgenomen)](#captions-pre-recorded) in die zin dat het toegankelijkheidsbarrières aanpakt die mensen die doof of slechthorend zijn ervaren, behalve dat dit succescriterium live presentaties zoals webcasts behandelt.
+Dit succescriterium is identiek aan [Bijschriften (vooraf opgenomen)](#captions-pre-recorded) in die zin dat het gaat om toegankelijkheidsbarrières voor doven of slechthorenden, behalve dat dit succescriterium betrekking heeft op live presentaties zoals webcasts.
 
-#### Hoe kan ik-Bijschriften (live) (1.2.4) {#how-to-meet-captions-live}
+#### Hoe kan ik-Bijschriften (live) ontmoeten (1.2.4) {#how-to-meet-captions-live}
 
-Volg de richtlijnen voor [Bijschriften (vooraf opgenomen)](#captions-pre-recorded) hierboven. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
+Volg de aanwijzingen voor [Bijschriften (vooraf opgenomen)](#captions-pre-recorded) hierboven. Gezien de levende aard van de media moet er echter zo snel mogelijk een bijschriftvoorziening worden gecreëerd, als reactie op wat er gebeurt. Daarom zou u het gebruiken van ondertiteling in real time of toespraak-aan-tekst hulpmiddelen moeten overwegen.
 
 Gedetailleerde instructies vallen buiten het bereik van dit document, maar de volgende bronnen bieden nuttige informatie:
 
@@ -345,7 +340,7 @@ Gedetailleerde instructies vallen buiten het bereik van dit document, maar de vo
 * [Werken met succescriteria 1.2.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-real-time-captions.html)
 * [Voldoen aan criteria 1.2.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-real-time-captions)
 
-### Audiobeschrijving (vooraf opgenomen) (1.2.5) {#audio-description-pre-recorded}
+### Audiobeschrijving (vooraf opgenomen) (1.2.5)  {#audio-description-pre-recorded}
 
 * Succescriterium 1.2.5
 * Niveau AA
@@ -353,11 +348,11 @@ Gedetailleerde instructies vallen buiten het bereik van dit document, maar de vo
 
 #### Doel - Audiobeschrijving (vooraf opgenomen) (1.2.5) {#purpose-audio-description-pre-recorded}
 
-Dit succescriterium is identiek aan [Audio-beschrijving of Media-alternatief (vooraf opgenomen)](#audio-description-or-media-alternative-pre-recorded), behalve dat auteurs een veel gedetailleerdere audiobeschrijving moeten geven om te voldoen aan Niveau AA.
+Dit succescriterium is identiek aan [Audiobeschrijving of media-alternatief (vooraf opgenomen)](#audio-description-or-media-alternative-pre-recorded), behalve dat auteurs een veel gedetailleerdere audiobeschrijving moeten verstrekken om te voldoen aan niveau A.
 
 #### Hoe kan ik-audiobeschrijving (vooraf opgenomen) (1.2.5) {#how-to-meet-audio-description-pre-recorded}
 
-Volg de richtlijnen voor [Audio-beschrijving of Media-alternatief (vooraf opgenomen)](#audio-description-or-media-alternative-pre-recorded).
+Volg de aanwijzingen voor [Audiobeschrijving of media-alternatief (vooraf opgenomen)](#audio-description-or-media-alternative-pre-recorded).
 
 #### Meer informatie - Audiobeschrijving (vooraf opgenomen) (1.2.5) {#more-information-audio-description-pre-recorded}
 
@@ -374,7 +369,7 @@ Dit richtsnoer heeft betrekking op de vereisten die nodig zijn ter ondersteuning
 
 * U kunt kiezen voor alleen-audio of een andere visuele weergave, zoals grote tekst of een hoog contrast.
 
-### Informatie en relaties (1.3.1) {#info-and-relationships}
+### Informatie en relaties (1.3.1)  {#info-and-relationships}
 
 * Succescriterium 1.3.1
 * Niveau A
@@ -382,15 +377,15 @@ Dit richtsnoer heeft betrekking op de vereisten die nodig zijn ter ondersteuning
 
 #### Doel - Informatie en relaties (1.3.1) {#purpose-info-and-relationships}
 
-Veel ondersteunende technologieën die door mensen met een handicap worden gebruikt, zijn afhankelijk van structurele informatie om inhoud effectief weer te geven of uit te voeren. Deze structuurinformatie kan de vorm aannemen van paginakoppen, tabelrijen, kolomkoppen en lijsttypen. Een schermlezer kan een gebruiker bijvoorbeeld in staat stellen van kop naar kop door een pagina te navigeren. Wanneer pagina-inhoud echter alleen structuur lijkt te hebben via visuele opmaak in plaats van de onderliggende HTML, is er geen structurele informatie beschikbaar voor ondersteunende hulpmiddelen, waardoor deze minder geschikt zijn om eenvoudiger te kunnen bladeren.
+Veel ondersteunende technologieën die door mensen met een handicap worden gebruikt, zijn afhankelijk van structurele informatie om inhoud effectief weer te geven of uit te voeren. Deze structuurinformatie kan de vorm aannemen van paginakoppen, tabelrijen, kolomkoppen en lijsttypen. Een schermlezer kan een gebruiker bijvoorbeeld in staat stellen van kop naar kop door een pagina te navigeren. Wanneer pagina-inhoud echter alleen via visuele opmaak lijkt te zijn gestructureerd in plaats van via de onderliggende HTML, is er geen structurele informatie beschikbaar voor ondersteunende hulpmiddelen, waardoor deze minder geschikt zijn om eenvoudiger te kunnen bladeren.
 
-Dit succescriterium bestaat om ervoor te zorgen dat dergelijke structurele informatie wordt verstrekt door HTML, zodat browsers en ondersteunende technologieën toegang hebben tot en gebruik kunnen maken van de informatie.
+Dit succescriterium bestaat erin ervoor te zorgen dat dergelijke structurele informatie via HTML wordt verstrekt, zodat browsers en ondersteunende hulpmiddelen toegang hebben tot de informatie en deze kunnen benutten.
 
-#### Hoe kan ik-info en relaties (1.3.1) {#how-to-meet-info-and-relationships}
+#### Hoe te om te ontmoeten - Informatie en Verband (1.3.1) {#how-to-meet-info-and-relationships}
 
-AEM maakt het eenvoudig om webpagina&#39;s samen te stellen met behulp van de juiste HTML-elementen. Open de pagina-inhoud in de RTE (een tekstcomponent) en gebruik het menu **Indeling** om het juiste structuurelement op te geven (bijvoorbeeld alinea, kop, enz.).
+AEM maakt het eenvoudig om webpagina&#39;s samen te stellen met de juiste HTML-elementen. Open de pagina-inhoud in de RTE (een tekstcomponent) en gebruik de component **Indeling** menu om het juiste structuurelement op te geven (bijvoorbeeld alinea, kop, enz.).
 
-In de volgende afbeelding ziet u tekst die is opgemaakt als alineatekst. uit de broncodeweergave die wordt gebruikt, blijkt dat deze de juiste openings- en sluitingstags &lt;p> en &lt;/p> heeft.
+In de volgende afbeelding ziet u tekst die is opgemaakt als alineatekst. de broncodeweergave die wordt gebruikt, toont dat deze de juiste opening en sluiting heeft &lt;p> en &lt;/p> -tags.
 
 ![Een voorbeeld van het element Alinea dat wordt weergegeven in de bronbewerkingsmodus (klassieke UI).](assets/chlimage_1-18a.png)
 
@@ -398,7 +393,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **Koppen gebruiken:**
 
-   Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [AEM en Toegankelijkheid](/help/sites-administering/rte-accessible-content.md)), AEM biedt 3 niveaus van paginakop aan. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
+   Zolang u de toegankelijkheidseigenschappen van toegelaten RTE hebt (zie [AEM en toegankelijkheid](/help/sites-administering/rte-accessible-content.md)), AEM biedt 3 niveaus aan paginakoppen. U kunt deze gebruiken om secties en subsecties van content te identificeren. Kop 1 is het hoogste niveau van koptekst, kop 3 het laagste. De systeembeheerder kan het systeem configureren om het gebruik van meer kopniveaus toe te staan.
 
    In de volgende afbeelding ziet u een voorbeeld van de verschillende typen koppen.
 
@@ -406,63 +401,63 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur hebben door:
 
 * **Gemarkeerde tekst**:
 
-   Gebruik het element &lt;strong> of &lt;em> om de nadruk aan te geven. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
+   Gebruik het element of element om de nadruk aan te geven. Gebruik geen koppen om tekst in alinea&#39;s te markeren.
 
    * Markeer de tekst die u wilt benadrukken.
-   * Klik op het **B**-pictogram (voor &lt;strong>) of het **I**-pictogram (voor &lt;em>) dat wordt weergegeven in het **deelvenster Eigenschappen** (zorg dat HTML is geselecteerd).
+   * Klik op de knop **B** pictogram (voor &lt;strong>) of de **I** pictogram (voor &lt;em>) weergegeven in het dialoogvenster **Eigenschappen** (controleer of HTML is geselecteerd).
 
    >[!NOTE]
    >
    >RTE in een standaard AEM installatie is opstelling aan gebruik:
    >
-   >* &lt;b> for&lt;/b> 
-   * &lt;i> for&lt;/i> 
+   >* &lt;b> for &lt;strong>
+   * &lt;i> for &lt;em>
 
-   Ze zijn in feite hetzelfde, maar &lt;strong> en &lt;em> hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen om &lt;strong> en &lt;em> (in plaats van &lt;b> en &lt;i>) te gebruiken wanneer het ontwikkelen van uw projectinstantie.
+   Ze zijn in feite hetzelfde, maar en hebben de voorkeur omdat ze semantisch correct html zijn. Uw ontwikkelingsteam kan RTE vormen aan gebruik en  (in plaats van en ) wanneer het ontwikkelen van uw projectinstantie.
 
 * **Lijsten gebruiken:** Met HTML kunt u drie verschillende typen lijsten opgeven:
 
-   * Het `<ul>` element wordt gebruikt voor *ongeordende* lijsten (bulleted) lijsten. Afzonderlijke lijstitems worden geïdentificeerd met behulp van het element `<li>`.
+   * De `<ul>` element is gebruikt voor *ongeordend* lijsten (met opsommingstekens). Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element.
 
-      in RTE, gebruik **Bulleted List** pictogram.
+      in RTE, gebruik **Lijst met opsommingstekens** pictogram.
 
-   * Het `<ol>` element wordt gebruikt voor *genummerde* lijsten. Afzonderlijke lijstitems worden geïdentificeerd met behulp van het element `<li>`.
+   * De `<ol>` element is gebruikt voor *genummerd* lijsten. Afzonderlijke lijstitems worden geïdentificeerd aan de hand van de `<li>` element.
 
-      In RTE, gebruik **Genummerde Lijst** pictogram.
+      In RTE, gebruik **Genummerde lijst** pictogram.
    Als u bestaande inhoud wilt wijzigen in een specifiek lijsttype, markeert u de desbetreffende tekst en selecteert u het gewenste lijsttype. Zoals in het vorige voorbeeld wordt getoond hoe alineatekst wordt ingegaan, worden de aangewezen lijstelementen automatisch toegevoegd aan uw HTML, maar u kunt dit in bron bekijken uitgeeft mening.
 
    >[!NOTE]
    `<dl>` wordt niet gesteund door RTE.
 
-* **Tabellen** gebruiken:
+* **Tabellen gebruiken**:
 
    Gegevenstabellen moeten worden geïdentificeerd met behulp van HTML-tabelelementen:
 
-   * één `<table>`-element
-   * a `<tr>` element voor elke rij van de lijst
+   * één `<table>` element
+   * a `<tr>` element voor elke rij van de tabel
    * a `<th>` element voor elke rij en kolomkop
    * a `<td>` element voor elke gegevenscel
 
    >[!NOTE]
-   Tabellen moeten worden uitgevoerd met de component **Table**. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+   Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
    Daarnaast maken toegankelijke tabellen gebruik van de volgende elementen en kenmerken:
 
-   * Het element `<caption>` wordt gebruikt om een zichtbaar bijschrift voor de tabel te verstrekken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
-   * Het element `<h3 class="summary">` helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Dit is met name handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
-   * Het `scope` attribuut van het `<th>` element wordt gebruikt om erop te wijzen of een cel een kopbal voor een bepaalde rij, of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
+   * De `<caption>` -element wordt gebruikt om een zichtbaar bijschrift voor de tabel te maken. Bijschriften worden standaard gecentreerd boven de tabel weergegeven, maar kunnen op de juiste wijze worden geplaatst met CSS. Het bijschrift is via programmacode gekoppeld aan de tabel en is daarom een handige methode om inhoud te introduceren.
+   * De `<h3 class="summary">` het element helpt niet-waargenomen gebruikers om de informatie gemakkelijker te begrijpen die binnen een lijst wordt voorgesteld, door een synopsis van te verstrekken wat een waargenomen gebruiker kan zien. Dit is met name handig wanneer complexe of onconventionele tabellay-outs worden gebruikt (dit kenmerk wordt niet weergegeven in de browser, het wordt alleen voorgelezen naar ondersteunende hulpmiddelen).
+   * De `scope` kenmerk van de `<th>` -element wordt gebruikt om aan te geven of een cel een koptekst voor een bepaalde rij of voor een bepaalde kolom vertegenwoordigt. Een vergelijkbare aanpak is het gebruik van de kenmerken header en id in complexe tabellen, waarbij gegevenscellen aan een of meer kopteksten kunnen worden gekoppeld.
 
    >[!NOTE]
    Deze elementen en kenmerken zijn standaard niet rechtstreeks beschikbaar, maar de systeembeheerder kan wel ondersteuning voor deze waarden toevoegen in het dialoogvenster **Tabeleigenschappen**[ (zie Ondersteuning voor aanvullende HTML-elementen en -kenmerken toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
-   Wanneer u een **Tabel** toevoegt, kunt u **Tabeleigenschappen** configureren met behulp van het dialoogvenster.
+   Bij het toevoegen van een **Tabel** u kunt vormen **Tabeleigenschappen** via het dialoogvenster.
 
-   * een geschikt **Bijschrift**.
+   * passende **Bijschrift**.
    * U kunt het beste standaardwaarden voor **Breedte**, **Hoogte**, **Rand**, **Celopvulling** en **Celafstand** verwijderen aangezien deze eigenschappen in een globaal opmaakmodel kunnen worden ingesteld.
 
    ![Dialoogvenster Tabeleigenschappen.](assets/chlimage_1-20a.png)
 
-   Vervolgens kunt u met de **Celeigenschappen** kiezen of de cel een gegevens- of kopcel is en, in het geval van een kopcel, of deze betrekking heeft op een rij of kolom of op beide:
+   U kunt dan de **Celeigenschappen** om te kiezen of de cel een gegevens- of kopcel is en, in het geval van een kopcel, of het een rij- of kolomcel of beide betreft:
 
    ![Dialoogvenster Eigenschappen van aanroep; het plaatsen van een rij (gewoonlijk eerste) als kopbalrij.](assets/chlimage_1-21a.png)
 
@@ -474,7 +469,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur hebben door:
    Het kenmerk id is niet beschikbaar in een installatie buiten de box. Het kan worden toegelaten door de regels van HTML en serializer in RTE te vormen.
 
    >[!NOTE]
-   Tabellen moeten worden uitgevoerd met de component **Table**. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
+   Tabellen moeten worden gerealiseerd met de **Tabel** component. Hoewel tabellen kunnen worden gemaakt in de component Text, wordt dit niet aanbevolen.
 
    ```xml
    <table>
@@ -513,7 +508,7 @@ U kunt ervoor zorgen dat uw webpagina&#39;s de juiste structuur hebben door:
 * [Werken met succescriteria 1.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html)
 * [Voldoen aan criteria 1.3.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-programmatic)
 
-### Sensorische kenmerken (1.3.3) {#sensory-characteristics}
+### Sensorische kenmerken (1.3.3)  {#sensory-characteristics}
 
 * Correctie 1.3.3
 * Niveau A
@@ -526,35 +521,35 @@ Ontwerpers richten zich vaak op visuele ontwerpfuncties, zoals kleur, vorm, teks
 Ook informatie die onderscheid moet maken tussen verschillende geluiden (bv. mannelijke of vrouwelijke gesproken inhoud) zal toegankelijkheidsbelemmeringen voor mensen met gehoorstoornissen opleveren, als deze informatie niet wordt weerspiegeld in een tekstalternatief voor de audio-inhoud.
 
 >[!NOTE]
-Raadpleeg [Gebruik van kleur](#use-of-color) voor vereisten met betrekking tot alternatieven voor kleur.
+Raadpleeg voor vereisten met betrekking tot alternatieven voor kleur [Gebruik van kleur](#use-of-color).
 
 #### Voldoen aan sensorische kenmerken (1.3.3) {#how-to-meet-sensory-characteristics}
 
 Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pagina-inhoud, ook in een andere indeling wordt weergegeven.
 
-* Vertrouw niet op de visuele positie om informatie te geven. Als u bijvoorbeeld gebruikers naar een menu aan de rechterkant van de pagina wilt verwijzen voor toegang tot meer informatie, verwijst u niet naar *het menu aan de rechterkant*; Geef in plaats daarvan het menu een naam (bijvoorbeeld via een kop) en verwijs naar die naam in de tekst.
+* Vertrouw niet op de visuele positie om informatie te geven. Als u bijvoorbeeld gebruikers naar een menu aan de rechterkant van de pagina wilt verwijzen voor toegang tot meer informatie, verwijst u niet naar *het menu rechts*; Geef in plaats daarvan het menu een naam (bijvoorbeeld via een kop) en verwijs naar die naam in de tekst.
 * Vertrouw niet op tekstopmaak (bijvoorbeeld vette of cursieve tekst) als enige manier om informatie over te brengen.
 
 >[!NOTE]
-Het gebruik van beschrijvende termen is acceptabel als ze in een niet-visuele context betekenis hebben. Het gebruik van *boven* en *onder* zou bijvoorbeeld over het algemeen aanvaardbaar zijn, aangezien het respectievelijk inhoud vóór en na een bepaald inhoudsitem betreft; dit zou nog steeds zinvol zijn wanneer de inhoud hardop wordt gehoord .
+Het gebruik van beschrijvende termen is acceptabel als ze in een niet-visuele context betekenis hebben. Als u bijvoorbeeld *boven* en *onder* in het algemeen aanvaardbaar zou zijn, aangezien zij inhoud vóór en na een bepaald inhoudselement inhouden; dit zou nog steeds zinvol zijn wanneer de inhoud hardop wordt gehoord .
 
 #### Meer informatie - Sensorische kenmerken (1.3.3) {#more-information-sensory-characteristics}
 
 * [Werken met succescriteria 1.3.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-understanding.html)
 * [Voldoen aan criteria 1.3.3](https://www.w3.org/WAI/WCAG20/quickref/#qr-content-structure-separation-understanding)
 
-### Doorschijnbaar (1.4) {#distinguishable}
+### Doorneembaar (1.4) {#distinguishable}
 
 [Richtsnoer 1.4. Te onderscheiden: Het is voor gebruikers gemakkelijker om inhoud te zien en te horen, inclusief het scheiden van voorgrond en achtergrond.](https://www.w3.org/TR/WCAG20/#visual-audio-contrast)
 
-### Gebruik van kleur (1.4.1) {#use-of-color}
+### Gebruik van kleur (1.4.1)  {#use-of-color}
 
 * Succescriterium 1.4.1
 * Niveau A
 * Gebruik van kleur: Kleur wordt niet gebruikt als de enige visuele manier om informatie over te brengen, een handeling aan te geven, een reactie te vragen of een visueel element te onderscheiden.
 
 >[!NOTE]
-Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van waarneming vallen onder [Aanpasbaar (1.3)](#adaptable); inclusief programmatische toegang tot kleur en andere codering van de visuele presentatie.
+Dit succescriterium richt zich specifiek op kleurwaarneming. Andere vormen van perceptie worden behandeld in [Aanpasbaar (1.3)](#adaptable); inclusief programmatische toegang tot kleur en andere codering van de visuele presentatie.
 
 #### Doel - Gebruik van kleur (1.4.1) {#purpose-use-of-color}
 
@@ -564,7 +559,7 @@ Zo kan bijvoorbeeld iemand met een rode-groene kleur een gebrek aan gezichtsverm
 
 Bovendien kan kleur niet worden waargenomen door mensen die alleen tekst weergeven, monochrome weergaveapparaten of een zwart-witafdruk van de pagina gebruiken.
 
-#### Hoe kan ik-gebruik van kleur (1.4.1) {#how-to-meet-use-of-color}
+#### Voldoen aan - gebruik van kleur (1.4.1) {#how-to-meet-use-of-color}
 
 Telkens wanneer kleur wordt gebruikt om informatie over te brengen, zorg ervoor dat de informatie beschikbaar is zonder de behoefte om de kleur te zien.
 
@@ -627,7 +622,7 @@ Zorg ervoor dat de tekst voldoende contrasteert met de achtergrond. Contrastverh
 * Voor tekst die minimaal 18 punten (of 14 punten vet) groot is, moet de contrastverhouding ten minste 3:1 zijn.
 * Als een achtergrond een patroon krijgt, moet de achtergrond rondom elke tekst worden gearceerd, zodat de verhouding van 4,5:1 of 3:1 behouden blijft.
 
-Als u contrastverhoudingen wilt controleren, gebruikt u een kleurencontrastprogramma, zoals de [Analyser ](https://www.paciellogroup.com/resources/contrast-analyser.html) van het contrast van de groepskleur van Paciello of de [Kleurcontrastcontrole van WebAIM](https://www.webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
+Als u contrastverhoudingen wilt controleren, gebruikt u een gereedschap voor kleurcontrast, zoals het gereedschap [Paciello Group Color Contrast Analyse](https://www.paciellogroup.com/resources/contrast-analyser.html) of de [Controle van webAIM-kleurcontrast](https://www.webaim.org/resources/contrastchecker/). Met deze gereedschappen kunt u kleurenparen controleren en contrastproblemen melden.
 
 Als u zich minder zorgen maakt over het opgeven van de vormgeving van de pagina, kunt u er ook voor kiezen geen kleur voor de achtergrond en de voorgrondtekst op te geven. Er is geen controle op het contrast nodig, omdat de browser van de gebruiker de kleuren van de tekst en de achtergrond bepaalt.
 
@@ -652,48 +647,48 @@ Logotypen (tekst die deel uitmaakt van een logo of merknaam) worden als essentie
 
 #### Doel - Afbeeldingen van tekst (1.4.5) {#purpose-images-of-text}
 
-Afbeeldingen van tekst worden vaak gebruikt wanneer een bepaalde tekststijl de voorkeur heeft; bijvoorbeeld een logo of tekst die uit een andere bron is gegenereerd (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken afbeeldingen van tekst echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
+Afbeeldingen van tekst worden vaak gebruikt wanneer een bepaalde tekststijl de voorkeur heeft; bijvoorbeeld een logo of tekst die uit een andere bron is gegenereerd (bijvoorbeeld een scan van een papieren document). In vergelijking met tekst in HTML en opgemaakt met CSS beschikken tekstafbeeldingen echter niet over de flexibiliteit om de grootte of weergave te wijzigen die nodig kan zijn voor mensen met een visuele handicap of leesproblemen.
 
-#### Hoe kan ik-afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
+#### Procedure - Afbeeldingen van tekst (1.4.5) {#how-to-meet-images-of-text}
 
-Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldingen van tekst te vervangen door equivalente tekst in HTML, zodat de tekst op een aanpasbare manier beschikbaar is. Voor een voorbeeld over hoe dit kan worden bereikt, verwijs naar [C30: CSS gebruiken om tekst door beelden van tekst te vervangen en gebruikersinterfacecontroles te verstrekken om ](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30) te schakelen.
+Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldingen van tekst te vervangen door equivalente tekst in HTML, zodat de tekst op een aanpasbare manier beschikbaar is. Voor een voorbeeld van hoe dit kan worden bereikt, raadpleegt u [C30: CSS gebruiken om tekst te vervangen door afbeeldingen van tekst en besturingselementen voor de gebruikersinterface bieden voor het schakelen tussen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C30).
 
 #### Meer informatie - Afbeeldingen van tekst (1.4.5) {#more-information-images-of-text}
 
 * [Werken met succescriteria 1.4.5](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html)
 * [Voldoen aan criteria 1.4.5](https://www.w3.org/WAI/WCAG20/quickref/#qr-visual-audio-contrast-text-presentation)
 
-## Beginsel 2: Bewerkbaar {#principle-operable}
+## Beginsel 2: Werkbaar {#principle-operable}
 
 [Beginsel 2: - De gebruikersinterfacecomponenten en de navigatie moeten kunnen worden bediend.](https://www.w3.org/TR/WCAG20/#operable)
 
-### Pauze, Stoppen, Verbergen (2.2.2) {#pause-stop-hide}
+### Pauzeren, stoppen en verbergen (2.2.2)  {#pause-stop-hide}
 
 * Succescriterium 2.2.2
 * Niveau A
-* Pauze, Stoppen, Verbergen: Voor het verplaatsen, knipperen, schuiven of automatisch bijwerken van gegevens geldt het volgende:
+* Pauzeren, Stoppen en verbergen: Voor het verplaatsen, knipperen, schuiven of automatisch bijwerken van gegevens geldt het volgende:
 
    * Verplaatsen, knipperen, schuiven: Voor elke bewegende, knipperende of schuivende informatie die a) automatisch begint, b) langer dan vijf seconden duurt en c) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen, tenzij de beweging, het knipperen of schuiven deel uitmaakt van een activiteit waar dit essentieel is;
    * Automatisch bijwerken: Voor alle automatisch bij te werken informatie die a) automatisch wordt gestart en b) parallel met andere inhoud wordt weergegeven, is er een mechanisme waarmee de gebruiker deze kan onderbreken, stoppen of verbergen of de frequentie van de update kan bepalen, tenzij de automatisch bij te werken informatie deel uitmaakt van een activiteit waar dit essentieel is.
 
 Opmerkingen zijn:
 
-1. Raadpleeg [Inhoud niet ontwerpen op een manier waarvan bekend is dat deze aanvallen veroorzaakt (2.3)](#seizures) voor vereisten met betrekking tot het flikkeren of knipperen van inhoud.
+1. Voor vereisten met betrekking tot flikkerende of knipperende inhoud raadpleegt u [Inhoud niet ontwerpen op een manier waarvan bekend is dat deze convulsies kan veroorzaken (2.3)](#seizures).
 1. Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (ongeacht of deze wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [Conformiteitseis 5: Niet-interferentie](https://www.w3.org/TR/WCAG20/#cc5).
 1. Inhoud die regelmatig door software wordt bijgewerkt of naar de gebruikersagent wordt gestreamd, is niet verplicht informatie te bewaren of te presenteren die wordt gegenereerd of ontvangen tussen het begin van de pauze- en de hervattingspresentatie, aangezien dit technisch mogelijk is en in veel situaties misleidend kan zijn om dit te doen.
 1. Een animatie die optreedt als onderdeel van een voorlaadfase of een vergelijkbare situatie, kan als essentieel worden beschouwd als er tijdens die fase geen interactie kan optreden voor alle gebruikers en als de voortgang niet wordt aangegeven, gebruikers in verwarring kan brengen of kan leiden tot het vermoeden dat de inhoud is bevroren of gebroken.
 
-#### Doel - Pauze, Stoppen, Verbergen (2.2.2) {#purpose-pause-stop-hide}
+#### Doel - Pauzeren, Stoppen, Verbergen (2.2.2) {#purpose-pause-stop-hide}
 
 Bepaalde gebruikers kunnen vinden dat de inhoud die wordt verplaatst, afleidt en het moeilijk maakt zich op andere delen van de pagina te concentreren. Bovendien kan dergelijke inhoud moeilijk leesbaar zijn voor mensen die moeite hebben met het bijhouden van bewegende tekst.
 
-#### Procedure - Pauze, Stoppen, Verbergen (2.2.2) {#how-to-meet-pause-stop-hide}
+#### Ontmoeten - Pauzeren, Stoppen, Verbergen (2.2.2) {#how-to-meet-pause-stop-hide}
 
 Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggesties toepassen bij het maken van webpagina&#39;s met bewegende, knipperende of knipperende inhoud:
 
 * Biedt een manier om schuivende inhoud te pauzeren zodat gebruikers voldoende tijd hebben om deze te lezen. Bijvoorbeeld nieuwstickers of automatisch bijgewerkte tekst.
 * Zorg ervoor dat de inhoud die knippert na vijf seconden stopt met knipperen.
-* Gebruik de juiste technologieën om knipperende inhoud weer te geven die door de browser kan worden uitgeschakeld. Bijvoorbeeld GIF- (Graphics Interchange Format) of APNG-bestanden (Animated Portable Network Graphics).
+* Gebruik de juiste technologieën om knipperende inhoud weer te geven die door de browser kan worden uitgeschakeld. Bijvoorbeeld Graphics Interchange Format (GIF) of Geanimeerde Portable Network Graphics (APNG)-bestanden.
 * Geef een formulierbesturingselement op de webpagina zodat de gebruiker alle knipperende inhoud op de pagina kan uitschakelen.
 * Als een van de bovenstaande opties niet mogelijk is, geeft u een koppeling op naar een pagina die alle inhoud bevat, maar zonder knippering.
 
@@ -706,7 +701,7 @@ Afhankelijk van de aard van de inhoud kunt u een of meer van de volgende suggest
 
 [Richtsnoer 2.3 Convulsies: Ontwerp de inhoud niet op een manier waarvan bekend is dat deze aanvallen veroorzaakt.](https://www.w3.org/TR/WCAG20/#seizure)
 
-### Drie Flash of onder drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
+### Drie Flash of onder de drempelwaarde (2.3.1) {#three-flashes-or-below-threshold}
 
 * Succescriterium 2.3.1
 * Niveau A
@@ -719,19 +714,19 @@ Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van e
 
 In bepaalde gevallen kan knipperende inhoud fotosensitieve aanvallen veroorzaken. Aan de hand van dit succescriterium kunnen dergelijke gebruikers toegang krijgen tot alle inhoud en deze beleven zonder zich zorgen te maken over knipperende inhoud.
 
-#### Hoe kan ik-drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
+#### Hoe te om te ontmoeten - Drie Flash of onder Drempel (2.3.1) {#how-to-meet-three-flashes-or-below-threshold}
 
 Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toegepast:
 
 * ervoor zorgen dat de onderdelen gedurende een periode van één seconde niet meer dan drie keer knipperen;
-* Als niet aan de bovenstaande voorwaarde kan worden voldaan, kunt u knipperende inhoud weergeven in een *klein veilig gebied* in pixels op het scherm. Dit gebied wordt berekend aan de hand van een complexe formule die onder [G176 valt: Het knipperende gebied klein genoeg houden](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), zodat zou deze techniek slechts moeten worden gevolgd als het knipperen van inhoud *absoluut* noodzakelijk is.
+* Als niet aan de bovenstaande voorwaarde kan worden voldaan, geeft u knipperende inhoud weer binnen een *klein veilig gebied* in pixels op het scherm. Dit areaal wordt berekend aan de hand van een complexe formule, die in [G176: Het knipperende gebied klein genoeg houden](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G176), dus deze techniek dient alleen te worden gevolgd als knipperende inhoud *absoluut* noodzakelijk.
 
-#### Meer informatie - Drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
+#### Meer informatie - drie Flash of onder de drempelwaarde (2.3.1) {#more-information-three-flashes-or-below-threshold}
 
 * [Werken met succescriterium 2.3.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html)
 * [Voldoen aan criterium 2.3.1](https://www.w3.org/WAI/WCAG20/quickref/#seizure)
 
-### Getitelde pagina (2.4.2) {#page-titled}
+### Getitelde pagina (2.4.2)  {#page-titled}
 
 * Correctie 2.4.2
 * Niveau A
@@ -745,14 +740,14 @@ Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud 
 
 Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel de inhoud van de pagina adequaat beschrijft, zodat bezoekers snel kunnen vaststellen of de inhoud al dan niet relevant is voor hun behoeften.
 
-U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina. Deze kan worden geopend met de tab **Sidetrap** - **Pagina** - **Pagina-eigenschappen..**
+U kunt de paginatitel ook bewerken tijdens het bewerken van een pagina, die toegankelijk is via **Sidetrap** - **Pagina** tab - **Pagina-eigenschappen...**
 
 #### Meer informatie - Getitelde pagina (2.4.2) {#more-information-page-titled}
 
 * [Succescriterium 2.4.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html)
 * [Voldoen aan criterium 2.4.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-title)
 
-### Koppelingsdoel (in context) (2.4.4) {#link-purpose-in-context}
+### Koppelingsdoel (in context) (2.4.4)  {#link-purpose-in-context}
 
 * Correctie 2.4.4
 * Niveau A
@@ -776,7 +771,7 @@ Zorg er vooral voor dat het doel van een koppeling duidelijk wordt beschreven in
    * Tekst: Gebeurtenisklassen voor het najaar van 2010 - details.
    * Reden: Door de tekst en de positie van het koppelingselement enigszins aan te passen, kan de koppelingstekst worden verbeterd:
 
-Koppelingen moeten op alle pagina&#39;s consistent worden gephrasd, met name voor navigatiebalken. Als een koppeling naar een specifieke pagina bijvoorbeeld **Publicaties** op één pagina heet, gebruikt u die tekst op andere pagina&#39;s om de consistentie te garanderen.
+Koppelingen moeten op alle pagina&#39;s consistent worden gephrasd, met name voor navigatiebalken. Als bijvoorbeeld een koppeling naar een specifieke pagina een naam heeft **Publicaties** op één pagina, gebruik die tekst op andere pagina&#39;s om consistentie te verzekeren.
 
 Op het moment van schrijven zijn er echter enkele problemen met betrekking tot het gebruik van titels:
 
@@ -786,7 +781,7 @@ Op het moment van schrijven zijn er echter enkele problemen met betrekking tot h
 
 Dus terwijl het titelkenmerk kan worden gebruikt om extra context aan een koppeling te bieden, dient u zich bewust te zijn van de beperkingen ervan en deze niet te gebruiken als alternatief voor de juiste koppelingstekst.
 
-Als de koppeling bestaat uit een afbeelding, controleert u of de alternatieve tekst voor de afbeelding de bestemming van de koppeling beschrijft. Als een afbeelding van een boekenkast bijvoorbeeld is ingesteld als een koppeling naar de publicaties van een persoon, moet de alternatieve tekst **Publicaties van John Smith** lezen en niet **Boekenkast**.
+Als de koppeling bestaat uit een afbeelding, controleert u of de alternatieve tekst voor de afbeelding de bestemming van de koppeling beschrijft. Als een afbeelding van een boekenkast bijvoorbeeld is ingesteld als een koppeling naar de publicaties van een persoon, moet de alternatieve tekst **Publicaties van John Smith** en niet **Boekenkast**.
 
 Als het koppelingsanker echter tekst bevat die het doel van de koppeling naast het afbeeldingselement beschrijft (en de tekst dus naast de afbeelding verschijnt), gebruikt u een leeg alt-kenmerk voor de afbeelding:
 
@@ -798,27 +793,27 @@ John Smith’s publications
 ```
 
 >[!NOTE]
-Het bovenstaande fragment is een illustratie. Het wordt aanbevolen de component **Image** te gebruiken.
+Het bovenstaande fragment is een illustratie. Het wordt aanbevolen de **Afbeelding** component.
 
-Hoewel het raadzaam is om koppelingstekst te verschaffen die het doel van de koppeling aangeeft zonder dat u een extra context nodig hebt, wordt erkend dat dit niet altijd mogelijk is. Contextvrije koppelingen kunnen in de volgende gevallen worden gebruikt. HTML-voorbeelden hiervan zijn te vinden in [Voldoen aan succescriterium 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
+Hoewel het raadzaam is om koppelingstekst te verschaffen die het doel van de koppeling aangeeft zonder dat u een extra context nodig hebt, wordt erkend dat dit niet altijd mogelijk is. U kunt contextvrije koppelingen gebruiken in de volgende gevallen, waarvan HTML-voorbeelden te vinden zijn in [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs).
 
 * Waar de koppelingstekst deel uitmaakt van een lijst met nauw verwante koppelingen en wanneer het lijstitem dat de koppeling omsluit voldoende context biedt.
-* Waar het doel van een koppeling duidelijk kan worden aangegeven met de *voorafgaande* (niet met de volgende alinea) alineatekst.
+* Wanneer het doel van een koppeling duidelijk kan worden vastgesteld aan de hand van de *voorafgaand* (niet de volgende) alineatekst.
 * Indien de koppeling zich in een gegevenstabel bevindt, kan het doel duidelijk worden aangegeven in de desbetreffende rubrieken.
 * Wanneer een lijst met koppelingen zich in een reeks koppen bevindt en de kop zelf een geschikte context biedt.
 * Wanneer een lijst met koppelingen zich in een geneste koppeling bevindt en het bovenliggende lijstitem boven de geneste koppeling een geschikte context biedt.
 
 In sommige gevallen, waar er verscheidene verbindingen op een pagina zijn (elk die de richting van een verbinding in complexe, maar noodzakelijke detail verstrekt), kan het aangewezen zijn om een alternatieve versie van de Web-pagina te verstrekken die de nauwkeurige zelfde inhoud toont maar waar de verbindingstekst niet zo gedetailleerd is.
 
-Alternatief, kunnen de manuscripten worden gebruikt zodat een minimale hoeveelheid tekst binnen de verbinding zelf wordt verstrekt, maar bij het activeren van een aangewezen controle die aan de bovenkant van de pagina wordt geplaatst, is de verbindingstekst *uitgebreid* in meer detail. Een vergelijkbare aanpak is om CSS te gebruiken om *hide* de volledige koppeling van waargenomen gebruikers te verbergen, maar deze toch volledig uit te voeren naar schermlezers. Dit valt buiten het bereik van dit document, maar meer informatie over hoe dit kan worden bereikt, vindt u in de sectie [Meer informatie - Koppelingsdoel (in context) (2.4.4)](#more-information-link-purpose-in-context).
+U kunt ook scripts gebruiken, zodat er een minimale hoeveelheid tekst wordt opgegeven in de koppeling zelf, maar als u een geschikt besturingselement activeert dat zich boven aan de pagina bevindt, is de koppelingstekst *uitgevouwen* meer details. Een vergelijkbare aanpak is het gebruik van CSS voor *verbergen* de volledige koppeling van waargenomen gebruikers, maar deze nog steeds volledig uitvoeren naar schermlezers. Dit valt buiten het toepassingsgebied van dit document, maar meer informatie over hoe dit kan worden bereikt, is te vinden in het [Meer informatie - Koppelingsdoel (in context) (2.4.4)](#more-information-link-purpose-in-context) sectie.
 
-#### Meer informatie - doel van koppeling (in context) (2.4.4) {#more-information-link-purpose-in-context}
+#### Meer informatie - Koppelingsdoel (in context) (2.4.4) {#more-information-link-purpose-in-context}
 
 * [Succescriterium 2.4.4](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html)
 * [Voldoen aan criterium 2.4.4](https://www.w3.org/WAI/WCAG20/quickref/#qr-navigation-mechanisms-refs)
 * [C7: CSS gebruiken om een gedeelte van de koppelingstekst te verbergen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/C7)
 
-## Beginsel 3: Begrijpbaar {#principle-understandable}
+## Beginsel 3: Begrijpelijk {#principle-understandable}
 
 [Beginsel 3: Begrijpelijk - Informatie en de werking van gebruikersinterface moeten begrijpelijk zijn.](https://www.w3.org/TR/WCAG20/#understandable)
 
@@ -838,15 +833,15 @@ Het doel van dit succescriterium is ervoor te zorgen dat tekst en andere taalkun
 
 #### Hoe kan ik-taal van pagina (3.1.1) {#how-to-meet-language-of-page}
 
-Om aan dit succescriterium te voldoen, kan de standaardtaal van een Web-pagina worden geïdentificeerd gebruikend het `lang` attribuut binnen het `<html>` element bij de bovenkant van de pagina. Bijvoorbeeld:
+Om aan dit succescriterium te voldoen, kan de standaardtaal van een webpagina worden geïdentificeerd met behulp van de `lang` attribuut binnen `<html>` -element boven aan de pagina. Bijvoorbeeld:
 
-* Als een pagina in het Engels wordt geschreven, moet het `<html>`-element als volgt worden gelezen:
+* Als een pagina in het Engels (Engels) wordt geschreven, `<html>` Het element moet als volgt worden gelezen:
 
-   `<html lang = “en-gb”>`
+   `<html lang = "en-gb">`
 
 * Overwegende dat een pagina die als Amerikaans Engels moet worden weergegeven, de volgende norm moet aannemen:
 
-   `<html lang = “en-us”>`
+   `<html lang = "en-us">`
 
 In AEM wordt de standaardtaal van uw pagina ingesteld bij het maken van de pagina, maar kan deze ook worden gewijzigd bij het bewerken van een pagina. Deze kan worden geopend via **Sidekick** - tabblad **Pagina** - **Pagina-eigenschappen** - tabblad **Geavanceerd**.
 
@@ -854,9 +849,9 @@ In AEM wordt de standaardtaal van uw pagina ingesteld bij het maken van de pagin
 
 * [Werken met succescriterium 3.1.1](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html)
 * [Voldoen aan criterium 3.1.1](https://www.w3.org/WAI/WCAG20/quickref/#qr-meaning-doc-lang-id)
-* De codes zijn gebaseerd op ISO 639-1. Een uitgebreidere lijst met codes voor elke taal is te vinden op de [W3 Schoolsite](https://www.w3schools.com/tags/ref_language_codes.asp).
+* De codes zijn gebaseerd op ISO 639-1. Een uitgebreidere lijst met codes voor elke taal is te vinden op de website [W3 Schoolsite](https://www.w3schools.com/tags/ref_language_codes.asp).
 
-### Taal van onderdelen (3.1.2) {#language-of-parts}
+### Taal van onderdelen (3.1.2)  {#language-of-parts}
 
 * Succescriterium 3.1.2
 * Niveau AA
@@ -870,11 +865,11 @@ Pagina&#39;s die dit succescriterium toepassen, maken het mogelijk:
 
 * Braille-overgangssoftware voor het invoegen van tekens met accenten.
 * Schermlezers spreken de woorden uit die zich niet correct in de standaardtaal bevinden.
-* Met vertaalprogramma&#39;s zoals Google Translate kunt u inhoud van de ene taal naar de andere vertalen.
+* Vertaalgereedschappen zoals Google Vertalen om inhoud van de ene taal naar de andere te vertalen.
 
 #### Hoe te om te ontmoeten - Taal van Delen (3.1.2) {#how-to-meet-language-of-parts}
 
-Het `lang` attribuut kan worden gebruikt om veranderingen in de taal van inhoud te identificeren. Een citaat in het Duits (ISO 639-1 code &quot;de&quot;) kan bijvoorbeeld als volgt worden weergegeven:
+Tthe `lang` kan worden gebruikt om wijzigingen in de taal van de inhoud te identificeren. Een citaat in het Duits (ISO 639-1 code &quot;de&quot;) kan bijvoorbeeld als volgt worden weergegeven:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -885,16 +880,16 @@ Het `lang` attribuut kan worden gebruikt om veranderingen in de taal van inhoud 
 >[!NOTE]
 Blockquotes worden niet ondersteund in een out-of-the-box-instantie. Een aangepaste component kan worden ontwikkeld ter ondersteuning van de functie.
 
-Op dezelfde manier kan browser een ongebruikelijk leningswoord of een uitdrukking correct teruggeven als `span` element als volgt wordt gebruikt:
+Op dezelfde manier kan de browser een ongewoon woord of een ongewone woordgroep correct weergeven als de `span` element wordt als volgt gebruikt:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</span>.</p>
 ```
 
 >[!NOTE]
-Dit succescriterium hoeft niet te worden gevolgd wanneer namen of steden in verschillende talen worden opgenomen, of wanneer leningswoorden of zinnen worden gebruikt die in de standaardtaal gangbaar zijn geworden (zoals *schadenfreude* in het Engels).
+Dit succescriterium hoeft niet te worden gevolgd wanneer namen of steden in verschillende talen worden opgenomen of wanneer leningswoorden of woordgroepen worden gebruikt die in de standaardtaal gangbaar zijn geworden (zoals *overlijden* in het Engels).
 
-Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-markering handmatig bewerken in de bronbewerkingsmodus van de RTE, zodat deze als hierboven wordt gelezen. Alternatief kan het `lang` attribuut in RTE door een systeembeheerder worden omvat (zie [Steun voor Extra Elementen en Attributen van HTML toevoegen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+Om het spanwijdtelement, met een aangewezen taal toe te voegen, kunt u uw prijsverhoging van HTML op de bron uitgeven wijze van RTE zodat het zoals hierboven leest. Als alternatief `lang` attributen kunnen in RTE door een systeembeheerder worden omvat (zie [Ondersteuning toevoegen voor extra HTML-elementen en -kenmerken](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 #### Meer informatie - Taal van onderdelen (3.1.2) {#more-information-language-of-parts}
 
@@ -915,11 +910,11 @@ Als u het span-element met een geschikte taal wilt toevoegen, kunt u de HTML-mar
 
 Het geven van instructies om mensen te helpen vormen in te vullen is een fundamenteel onderdeel van goede praktijken in interfacebruikbaarheid. Dit is vooral handig voor mensen met een visuele of cognitieve handicap die anders moeite zouden hebben om de indeling van een formulier en het soort gegevens dat in een bepaald formulierveld moet worden verstrekt, te begrijpen.
 
-In AEM wordt een standaardlabel toegevoegd wanneer u een formuliercomponent, zoals een **Tekstveld**, aan de pagina toevoegt. Deze standaardtitel is afhankelijk van het componenttype, u kunt uw eigen titel toevoegen op het tabblad **Titel en Tekst** van het dialoogvenster Bewerken voor dat veld. Het is belangrijk dat labels gebruikers helpen de gegevens te begrijpen die aan elke formuliercomponent zijn gekoppeld.
+In AEM wordt een standaardlabel toegevoegd wanneer u een formuliercomponent, zoals een **Tekstveld**, naar de pagina. Deze standaardtitel is afhankelijk van het componenttype. U kunt uw eigen titel toevoegen in het dialoogvenster **Titel en tekst** van het dialoogvenster Bewerken voor dat veld. Het is belangrijk dat labels gebruikers helpen de gegevens te begrijpen die aan elke formuliercomponent zijn gekoppeld.
 
 ![Tabblad Titel en Tekst (dialoogvenster Bewerken); de titel &quot;Beschrijving&quot; is toegevoegd.](assets/chlimage_1-22a.png)
 
-Dit veld **Title** moet worden gebruikt voor veldelementen omdat het een label biedt dat beschikbaar is voor ondersteunende hulpmiddelen. Alleen het schrijven van een label in tekst naast het veld is niet voldoende.
+Dit **Titel** het veld moet worden gebruikt voor veldelementen omdat het een label verschaft dat beschikbaar is voor ondersteunende hulpmiddelen. Alleen het schrijven van een label in tekst naast het veld is niet voldoende.
 
 Voor sommige formuliercomponenten is het ook mogelijk om labels visueel te verbergen met het selectievakje **Titel verbergen**. Labels die op deze manier zijn verborgen, zijn nog steeds beschikbaar voor ondersteunende technologie, maar worden niet op het scherm weergegeven. Hoewel dit in sommige situaties een goede aanpak kan zijn, is het doorgaans het beste om waar mogelijk een visueel label op te nemen, omdat sommige gebruikers wellicht een zeer klein gedeelte van het scherm bekijken (één veld tegelijk) en de labels nodig hebben om het veld correct te identificeren.
 
@@ -939,7 +934,7 @@ Er is echter geen programmatische koppeling tussen de groepstitel en de keuzeron
 
 #### Aanvullende overwegingen voor Forms {#additional-considerations-for-forms}
 
-Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit duidelijk in de labeltekst. Als bijvoorbeeld een datum moet worden ingevoerd in de notatie `DD-MM-YYYY`, geeft u dit specifiek op als onderdeel van het label. Dit betekent dat wanneer gebruikers van schermlezers het veld tegenkomen, het label automatisch wordt aangekondigd, samen met aanvullende informatie over de indeling.
+Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit duidelijk in de labeltekst. Als bijvoorbeeld een datum moet worden ingevoerd in het dialoogvenster `DD-MM-YYYY` formaat, geeft dit specifiek aan als onderdeel van het label. Dit betekent dat wanneer gebruikers van schermlezers het veld tegenkomen, het label automatisch wordt aangekondigd, samen met aanvullende informatie over de indeling.
 
 Als invoer voor een formulierveld verplicht is, maakt u dit duidelijk door het vereiste woord als onderdeel van het label te gebruiken. AEM voegt een sterretje toe wanneer een veld vereist is, maar het is ideaal om het woord `required`in het label zelf op te nemen (in het veld **Titel** in het dialoogvenster Bewerken).
 
@@ -955,10 +950,9 @@ Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velde
 
    De labels worden direct boven of direct links van het veld geplaatst.
 
-In eenvoudige formulieren met een zeer beperkte functionaliteit kan het correct labelen van een `Submit`-knop als label voor het aangrenzende veld fungeren (bijvoorbeeld `Search`). Dit is handig in situaties waarin het lastig kan zijn om ruimte te zoeken voor de labeltekst.
+In eenvoudige formulieren met een zeer beperkte functionaliteit kunt u op de juiste manier een etiket aanbrengen op `Submit` De knop kan fungeren als een label voor het aangrenzende veld (bijvoorbeeld `Search`). Dit is handig in situaties waarin het lastig kan zijn om ruimte te zoeken voor de labeltekst.
 
 #### Meer informatie - Labels of instructies (3.3.2) {#more-information-labels-or-instructions}
 
 * [Werken met succescriterium 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Voldoen aan criterium 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-

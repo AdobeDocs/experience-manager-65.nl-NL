@@ -1,8 +1,8 @@
 ---
 title: Externe functies in Expression Builder
-seo-title: Expressiebouwer
+seo-title: Expression Builder
 description: Met Expression Builder in Correspondence Management kunt u expressies en externe functies maken.
-seo-description: Met Expression Builder in Correspondence Management kunt u expressies en externe functies maken.
+seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 6afb84c0-ad03-4bb1-a154-d46cc47650ae
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,22 +10,21 @@ topic-tags: correspondence-management
 discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
-
 
 # Externe functies in Expression Builder{#remote-functions-in-expression-builder}
 
 Met de expressiebouwer kunt u expressies of voorwaarden maken waarmee berekeningen worden uitgevoerd op gegevenswaarden die worden geleverd door het gegevenswoordenboek of door eindgebruikers. Het Beheer van de correspondentie gebruikt het resultaat van de uitdrukkingsevaluatie om activa zoals tekst, beelden, lijsten, en voorwaarden te selecteren en hen op te nemen in de correspondentie zoals vereist.
 
-## Expressies en externe functies maken met de expressiebouwer {#creating-expressions-and-remote-functions-with-expression-builder}
+## Expressies en externe functies maken met expressiebuilder {#creating-expressions-and-remote-functions-with-expression-builder}
 
-De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie [Voorbeeldexpressies](#exampleexpressions) voor meer informatie.
+De expressiebouwer gebruikt intern JSP EL-bibliotheken, zodat de expressie voldoet aan de JSPEL-syntaxis. Zie voor meer informatie [Voorbeeldexpressies](#exampleexpressions).
 
 ![Expressiebouwer](assets/expressionbuilder.png)
 
@@ -41,9 +40,9 @@ Hier zijn een paar algemeen gebruikte JSP EL voorbeelden die u in uw oplossing v
 * Twee tekenreeksen aaneenschakelen: ${str1} ${str2}
 * Twee getallen vergelijken: ${age &lt; 18}
 
-U kunt meer informatie in [JSP EL specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf) vinden. De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
+Meer informatie vindt u in het gedeelte [JSP EL-specificatie](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). De client-side expressiemanager biedt geen ondersteuning voor bepaalde variabelen en functies in de JSP EL-specificatie, met name:
 
-* Indexen en kaartsleutels voor verzamelingen (met de notatie []) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
+* Indexen en kaarttoetsen voor verzamelingen (met de [] notatie) worden niet ondersteund in variabelenamen voor expressies die op de client worden geëvalueerd.
 * Hieronder volgen de parametertypen of retourneringstypen van functies die in expressies worden gebruikt:
 
    * java.lang.String
@@ -84,7 +83,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    1. **Ingeschakeld**: Hiermee wordt bepaald of deze methode is ingeschakeld. Expressiebeheer negeert uitgeschakelde methoden.
    1. **familyId**: Geeft de familie (groep) van de methode aan. Als dit leeg is, gaat Expression Manager ervan uit dat de methode tot de standaardfamilie behoort. Er is geen register van families (behalve het standaardregister) waaruit functies worden gekozen. De Manager van de uitdrukking leidt dynamisch tot de registratie door een vereniging van alle familie IDs te nemen die door alle functies wordt gespecificeerd die door de diverse bundels worden uitgevoerd. Zorg ervoor dat de id die ze hier opgeven redelijk leesbaar is, aangezien deze ook wordt weergegeven in de gebruikersinterface voor het schrijven van expressies.
    1. **displayName**: Een door de mens leesbare naam voor de functie. Deze naam wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardnaam samengesteld met het voorvoegsel en de lokale naam van de functie.
-   1. **Omschrijving**: Een uitgebreide beschrijving van de functie. Deze beschrijving wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardbeschrijving gemaakt met het voorvoegsel en de lokale naam van de functie.
+   1. **Beschrijving**: Een uitgebreide beschrijving van de functie. Deze beschrijving wordt gebruikt voor weergavedoeleinden in de ontwerpgebruikersinterface. Als dit leeg is, wordt in Expression Manager een standaardbeschrijving gemaakt met het voorvoegsel en de lokale naam van de functie.
 
    ```java
    package mergeandfuse.com;
@@ -130,7 +129,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-Het item exm.service=true instrueert Expression Manager dat de service externe functies bevat die geschikt zijn voor gebruik in expressies. De waarde &lt;service_id> moet een geldige Java-id zijn (alfanumeriek,$, _ zonder andere speciale tekens). Deze waarde, voorafgegaan door het trefwoord REMOTE_, vormt het voorvoegsel dat in expressies wordt gebruikt. Bijvoorbeeld, kan een interface met een geannoteerde methodebar () en de dienst identiteitskaart foo in de de diensteigenschappen, binnen uitdrukkingen worden van verwijzingen voorzien gebruikend REMOTE_foo:bar ().
+Het item exm.service=true instrueert Expression Manager dat de service externe functies bevat die geschikt zijn voor gebruik in expressies. De &lt;service_id> waarde moet een geldige Java-id zijn (alfanumeriek,$, _ zonder andere speciale tekens). Deze waarde, voorafgegaan door het trefwoord REMOTE_, vormt het voorvoegsel dat in expressies wordt gebruikt. Bijvoorbeeld, kan een interface met een geannoteerde methodebar () en de dienst identiteitskaart foo in de de diensteigenschappen, binnen uitdrukkingen worden van verwijzingen voorzien gebruikend REMOTE_foo:bar ().
 
 ```java
 package mergeandfuse.com;
@@ -158,8 +157,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 Hieronder vindt u voorbeeldarchieven die moeten worden gebruikt:
 
-* **GoodFunctions.jar.** zipis het jar-bestand met bundel dat een voorbeeld van een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
-* **GoodFunctions.** zipis het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
+* **GoodFunctions.jar.zip** Dit is het jar-bestand met een bundel dat een externe functiedefinitie bevat. Download het bestand GoodFunctions.jar.zip en decomprimeer het bestand om het jar-bestand op te halen.
+* **GoodFunctions.zip** is het pakket met broncode voor het definiëren van een aangepaste externe functie en het maken van een bundel daarvoor.
 
 GoodFunctions.jar.zip
 

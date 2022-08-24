@@ -1,8 +1,8 @@
 ---
-title: SharePoint-connector
-seo-title: SharePoint-connector
-description: De Schakelaar van JCR van de dag voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
-seo-description: Leer over de Schakelaar van SharePoint in AEM.
+title: SharePoint Connector
+seo-title: SharePoint Connector
+description: Day JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
+seo-description: Learn about the Sharepoint Connector in AEM.
 uuid: df650476-4e2a-486f-a007-b5ac437ff99f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,35 +10,33 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cc3a2ce7cb3dc020f5466a4b65cf5a9714e7a344
+exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
 
+# SharePoint Connector{#sharepoint-connector}
 
-# SharePoint-connector{#sharepoint-connector}
-
-Dit artikel omvat details rond de Schakelaar van JCR van Adobe voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
+Dit artikel bevat details over de Adobe JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
 
 De SharePoint-connector ondersteunt de volgende basisfuncties:
 
-* Inhoud en metagegevens lezen vanuit SharePoint.
-* SharePoint-beveiligingsinstellingen voor benaderde inhoud bevestigen door native SharePoint-verificatie en -verificatie toe te passen
+* Inhoud en metagegevens lezen uit SharePoint.
+* SharePoint-beveiligingsinstellingen bevestigen voor benaderde inhoud door native SharePoint-verificatie en -autorisatie toe te passen
 * Inhoudsintegratie met Inhoudszoeker
-* Het gebruiken van AEM componenten, zoals Extern Middel om beelden en video&#39;s van SharePoint te tonen
+* Met AEM componenten, zoals External Resource, SharePoint-afbeeldingen en video&#39;s weergeven
 * SharePoint synchroniseren met AEM Assets
 
-Alle functies worden uitgevoerd gebruikend de inheemse Webdiensten van SharePoint als interface aan de inhoud en de diensten van SharePoint.
+Alle functies worden geïmplementeerd met de native SharePoint-webservices als de interface naar SharePoint-inhoud en -services.
 
 >[!NOTE]
 >
->De Schakelaar van SharePoint wordt ook gesteund met AEM 6.1 de dienstpak 2. De connector ondersteunt geen virtuele opslagplaats meer en kan daarom niet worden gemonteerd. Als u toegang wilt krijgen tot de SharePoint-opslagplaats met Java API&#39;s, gebruikt u de JCR-opslagfunctie van de SharePoint-connector in uw project.
+>SharePoint Connector wordt ook ondersteund met AEM 6.1 service pack 2. De connector ondersteunt geen virtuele opslagplaats meer en kan daarom niet worden gemonteerd. Als u toegang wilt krijgen tot de SharePoint-opslagplaats met Java API&#39;s, gebruikt u de JCR-opslagfunctie van de SharePoint-connector in uw project.
 >
->De installatie, configuratie, beheer, en de verrichtingen van IT van de server van SharePoint en verwante infrastructuur van IT zijn buiten het werkingsgebied van dit document. Raadpleeg de documentatie van leveranciers over [SharePoint](https://www.microsoft.com/sharepoint) voor informatie over deze onderwerpen. De aansluiting vereist dat deze delen van de infrastructuur correct worden geïnstalleerd, geconfigureerd en gebruikt.
-
+>Installatie-, configuratie-, beheer- en IT-bewerkingen van de SharePoint-server en de bijbehorende IT-infrastructuur vallen buiten het bereik van dit document. Zie documentatie van leveranciers op [SharePoint](https://www.microsoft.com/sharepoint) voor informatie over deze onderwerpen. De aansluiting vereist dat deze delen van de infrastructuur correct worden geïnstalleerd, geconfigureerd en gebruikt.
 
 ## Aan de slag {#getting-started}
 
@@ -46,28 +44,27 @@ Ga als volgt te werk om aan de slag te gaan met de connector:
 
 * Zorg ervoor dat u ten minste Java 7 hebt geïnstalleerd.
 * Download het distributiebestand van het schakelaarpakket van de Distributie van de Software.
-* Kopieer een geldig *license.properties* dossier aan de folder die *cq-quickstart-6.4.0.jar* dossier bevat.
+* Een geldige kopie maken *license.properties* bestand naar de map die het *cq-quickstart-6.4.0.jar* bestand.
 
 * Dubbelklik op of tik op het .jar-bestand om het te AEM of start het bestand via de opdrachtregel.
 * Installeer het aansluitingspakket via Package Manager.
 * Configureer de verbindingsopties.
 
-## SharePoint-connector {#installing-sharepoint-connector} installeren
+## SharePoint-connector installeren {#installing-sharepoint-connector}
 
-De connector is een inhoudspakket dat eenvoudige installatie mogelijk maakt. Installeer het pakket met behulp van Package Manager en stel vervolgens de URL van de SharePoint-server in
-en andere configuratieopties. De inhoud van SharePoint is beschikbaar in de AEM bewaarplaats.
+De connector is een inhoudspakket dat eenvoudige installatie mogelijk maakt. Installeer het pakket met Package Manager en stel vervolgens de URL van de SharePoint-server en andere configuratieopties in. De SharePoint-inhoud is beschikbaar in de AEM repository.
 
 ### Installatievereisten {#installation-requirements}
 
 De schakelaar vereist het volgende:
 
 * Java Runtime Environment 1.7 of hoger
-* De Diensten van het Web van SharePoint beschikbaar door het netwerk
+* SharePoint Web Services beschikbaar via het netwerk
 * URL SharePoint-server
 * Gebruikersreferenties en machtigingen voor CRX- en SharePoint-opslagruimten
 * [Ondersteunde platforms](#supported-platforms)
 
-De SharePoint-connector is beschikbaar voor downloaden vanaf [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+De SharePoint-aansluiting kan worden gedownload van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
 ### Ondersteunde Platforms {#supported-platforms}
 
@@ -90,7 +87,7 @@ De schakelaar steunt het volgende:
 
 ### Standaardinstallatie {#standard-installation}
 
-Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Zie de [documentatie voor softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution) voor meer informatie.
+Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Zie voor meer informatie de [Documentatie voor softwaredistributie](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
 
 
 #### Integreren met AEM {#integrating-with-aem}
@@ -99,28 +96,28 @@ Om het pakket van de schakelaarinhoud te installeren.
 
 1. Open een Adobe Support-ticket om een aanvraag in te dienen voor het connectorfunctiepakket.
 1. Download het pakket wanneer het beschikbaar is en open dan de Manager van het Pakket voor uw AEM instantie.
-1. Tik/klik op **Installeren** op de pagina met de pakketbeschrijving.
-1. Tik in het dialoogvenster **Pakket installeren** op **Installeren**.
+1. Tikken/klikken **Installeren** op de pagina met pakketbeschrijving.
+1. Van de **Pakket installeren** dialoogvenster, tikken/klikken **Installeren**.
 
    **Opmerking**: Controleer of u bent aangemeld als beheerder.
 
-1. Tik op **Close** wanneer het pakket is geïnstalleerd.
+1. Tik/klik op het moment dat het pakket is geïnstalleerd **Sluiten**.
 
-## SharePoint-connector {#configuring-sharepoint-connector} configureren
+## SharePoint-connector configureren {#configuring-sharepoint-connector}
 
-Nadat u de schakelaar van SharePoint installeert, vorm de toepassing en de lagen van SharePoint voor de schakelaar.
+Nadat u de SharePoint-connector hebt geïnstalleerd, configureert u de toepassing en de SharePoint-lagen voor de connector.
 
-Stel de URL van de SharePoint-server in om de JCR-compatibiliteit van uw SharePoint-opslagruimte te behouden. U kunt extra parameters instellen om de verbinding met de SharePoint-server te configureren. Daarnaast configureert u verificatie met de SharePoint-connector.
+Stel de URL van de SharePoint-server in om de JCR-compatibiliteit van uw SharePoint-opslagruimte te garanderen. U kunt extra parameters instellen om de verbinding met de SharePoint-server te configureren. Configureer bovendien verificatie met de SharePoint-connector.
 
-### De verbinding configureren met de SharePoint-server {#configuring-the-connection-with-the-sharepoint-server}
+### De verbinding met de SharePoint-server configureren {#configuring-the-connection-with-the-sharepoint-server}
 
 Voer de volgende stappen uit om de URL van de SharePoint-server en de geavanceerde opties in te stellen:
 
 1. Navigeer naar de OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Zoek naar de **Day JCR Connector voor Microsoft SharePoint** bundel.
+1. Zoeken naar **Day JCR Connector voor Microsoft Sharepoint** bundel.
 1. Bewerk de configuratiewaarden.
-1. Stel de URL van de SharePoint-server in als de waarde van **Workspaces**.
-1. Tik/klik **Opslaan**.
+1. Stel de URL van de SharePoint-server in als de waarde van **Werkruimten**.
+1. Tikken/klikken **Opslaan**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -129,18 +126,18 @@ Parameters &#39;Werkruimten&#39; en &#39;Standaardnaam werkruimte&#39;:
 Standaard stelt de connector één JCR-werkruimte beschikbaar. De SharePoint-server die door deze werkruimte beschikbaar wordt gemaakt, wordt ingesteld via de configuratieparameter &#39;SharePoint Server URL&#39;.
 
 De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval wordt elke werkruimte gekoppeld aan de URL van de respectievelijke SharePoint-server die via de werkruimte beschikbaar wordt gemaakt. Als u een werkruimte wilt toevoegen, voegt u een werkruimtedefinitie toe aan de parameter Werkruimten. Een werkruimtedefinitie heeft de volgende indeling:
-`<name>`= `<url>` waarbij
+`<name>`= `<url>` waar
 `<name>` is de naam van de JCR-werkruimte en
 `<url>` is de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog een stap uit, apart van de bovenstaande configuratiestappen. Lijst van gewenste personen de bundel &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+Voer in AEM nog een stap uit, apart van de bovenstaande configuratiestappen. Lijst van gewenste personen &#39;**com.day.cq.dam.cq-dam-jcr-connectors** bundel.
 
 Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 
 1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Zoek naar de service &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Selecteer **De whitelist** omzeilen.
-1. `com.day.cq.dam.cq-dam-jcr-connectors` toevoegen in standaardbundels whitelist
+1. Selecteren **De whitelist omzeilen**.
+1. Toevoegen `com.day.cq.dam.cq-dam-jcr-connectors` in whitelist-bundels standaard
 1. Klik op Opslaan.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
@@ -149,19 +146,19 @@ Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 >
 >Als u meerdere werkruimten configureert, geeft u de naam van de standaardwerkruimte op in de parameter Standaardnaam werkruimte.
 
-Voor extra informatie rond authentificatie-verwante parameters, zie [Authentificatie](/help/sites-administering/sharepoint-connector.md#configuring-authentication).
+Zie voor meer informatie over parameters die betrekking hebben op verificatie [Verificatie](/help/sites-administering/sharepoint-connector.md#configuring-authentication).
 
-### De installatie van SharePoint {#verifying-the-sharepoint-setup} controleren
+### De installatie van SharePoint controleren {#verifying-the-sharepoint-setup}
 
 Nadat u de schakelaar vormt, verifieer het volgende:
 
-* De serverlooppas van SharePoint, en de Webdiensten zijn toegankelijk voor de schakelaarinstantie
-* De gebruikersgeloofsbrieven van SharePoint zijn geldig en de gebruiker heeft noodzakelijke toestemmingen van SharePoint
+* SharePoint-server wordt uitgevoerd en de webservices zijn toegankelijk voor de verbindingsinstantie
+* SharePoint-gebruikersgegevens zijn geldig en de gebruiker beschikt over de vereiste SharePoint-machtigingen
 * De schakelaar is geïnstalleerd en behoorlijk gevormd
 
 ### DAM-synchronisatie configureren met de SharePoint-server {#configuring-dam-sync-with-the-sharepoint-server}
 
-Voer de volgende stappen uit om de SharePoint-elementen te synchroniseren met AEM:
+Voer de volgende stappen uit om de SharePoint-middelen te synchroniseren met AEM:
 
 1. Navigeer naar de OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Zoek naar de service &quot;Default DAMAssetSynchronization&quot;.
@@ -183,7 +180,7 @@ Naar keuze, kunt u de vertraging van de Synchronisatie tussen verschillende sync
 1. Stel de waarde van de synchronisatieperiode in (in seconden).
 1. Klik op Opslaan.
 
-### Verificatie {#configuring-authentication} configureren
+### Verificatie configureren {#configuring-authentication}
 
 SharePoint omvat de Klassieke en op eisen gebaseerde authentificatiemethodes, die allebei de volgende authentificatietypen steunen:
 
@@ -197,7 +194,7 @@ Met name zijn de volgende verificatietypen beschikbaar:
 * Vorderingen — Basis
 * Op Forms gebaseerde claims
 
-De AEM JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0. steunt op eisen-gebaseerde authentificatie (die door Microsoft wordt voorgesteld), die op de volgende wijzen werkt:
+De AEM JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0. biedt ondersteuning voor verificatie op basis van claims (wat door Microsoft wordt voorgesteld), die in de volgende modi werkt:
 
 * **Basic-/NTLM-verificatie**: De schakelaar probeert eerst om het gebruiken van basisauthentificatie te verbinden. Als deze optie niet beschikbaar is, wordt overgeschakeld naar verificatie op basis van NTLM.
 * **Op Forms gebaseerde verificatie**: SharePoint valideert gebruikers op geloofsbrieven die de gebruikers in een login vorm (typisch een Web-pagina) typen. Het systeem geeft een teken voor voor authentiek verklaarde verzoeken uit die een sleutel voor het opnieuw vestigen van de identiteit voor verdere verzoeken bevat.
@@ -207,24 +204,24 @@ De AEM JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013
 Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Klik op OSGI -> Configuration
-1. Zoeken naar &quot;Day JCR Connector for Microsoft SharePoint&quot;
+1. Zoeken naar &quot;Day JCR Connector for Microsoft Sharepoint&quot;
 1. Klik op &quot;De configuratiewaarden bewerken&quot;
 1. Stel de waarde van &quot;Sharepoint Connection Factory&quot; in op &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;
-1. Klik **Opslaan**.
+1. Klikken **Opslaan**.
 
 **Basisverificatie configureren (Windows)**
 
-1. [Tokenverificatie](#disable-token-authentication) uitschakelen.
+1. [Tokenverificatie uitschakelen](#disable-token-authentication).
 1. Ga naar [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Klik op OSGI > Configuratie.
-1. Zoeken naar **Day JCR Connector voor Microsoft SharePoint**.
+1. Zoeken naar **Day JCR Connector voor Microsoft Sharepoint**.
 1. Klik op `Edit the configuration values`.
 1. Stel de waarde van SharePoint Connection Factory in op `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
-1. Klik **Opslaan**.
+1. Klikken **Opslaan**.
 
-Slechts kan een gebruiker die op zowel AEM als SharePoint voor authentiek wordt verklaard tot de inhoud van SharePoint door de schakelaar toegang hebben.
+Alleen gebruikers die zijn geverifieerd op zowel AEM als SharePoint hebben via de connector toegang tot de SharePoint-inhoud.
 
-U kunt de schakelaaruitbreiding voor authentificatie ook gebruiken om een module van de douaneauthentificatie tot stand te brengen, die, bijvoorbeeld, toegang door AEM gebruikers aan specifieke gebruikers van SharePoint in kaart brengt. Creeer AEM gebruikers die aan de gebruikers van SharePoint (gebruikersnaam en wachtwoord zouden moeten aanpassen) beantwoorden om de inhoud van SharePoint te kunnen zien die aan de schakelaarinstantie in kaart wordt gebracht.
+U kunt de schakelaaruitbreiding voor authentificatie ook gebruiken om een module van de douaneauthentificatie tot stand te brengen, die, bijvoorbeeld, toegang door AEM gebruikers aan specifieke gebruikers van SharePoint in kaart brengt. Maak AEM gebruikers die overeenkomen met SharePoint-gebruikers (gebruikersnaam en wachtwoord moeten overeenkomen) om SharePoint-inhoud te kunnen zien die is toegewezen aan de connector.
 
 Een gebruiker maken in AEM:
 
@@ -232,7 +229,7 @@ Een gebruiker maken in AEM:
 1. Klik op Gereedschappen.
 1. Klik op Beveiliging.
 1. Klik op Gebruikers.
-1. Klik **Gebruiker maken**.
+1. Klikken **Gebruiker maken**.
 1. Geef de gebruikersnaam op (gebruikersnaam die toegang heeft tot SharePoint).
 1. Geef het bijbehorende wachtwoord op.
 1. Klik op het groene verdeelstreepje om de gebruiker te maken.
@@ -242,30 +239,30 @@ De gebruiker toevoegen in de beheergroep:
 1. Ga naar Groepsbeheer.
 1. Klik op het knooppunt &quot;a&quot;.
 1. Klik op &quot;beheerders&quot;.
-1. Typ de hierboven gemaakte gebruikersnaam in het tekstvak vóór de knop **Bladeren**.
+1. Typ de gebruikers-id die u hierboven hebt gemaakt in het tekstvak ervoor **Bladeren** knop.
 1. Klik op het groene verdeelstreepje om de gebruiker toe te voegen aan de beheergroep.
 
-### Tokenverificatie {#disable-token-authentication} uitschakelen
+### Tokenverificatie uitschakelen {#disable-token-authentication}
 
-1. Download en installeer het pakket `basic auth`. `zip` van Software Distribution.
+1. Het pakket downloaden en installeren `basic auth`. `zip` van Software Distribution.
 
 1. Sluit QuickStart.
-1. Open het bestand *\crx-quickstart\repository\repository.xml*.
-1. De tag `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.` zoeken
-1. Plaats de tag `<param name="disableTokenAuth" value="true"/>` in de tag die in stap 4 wordt vermeld.
+1. Het bestand openen *\crx-quickstart\repository\repository.xml*.
+1. De tag zoeken `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.`
+1. De tag invoegen `<param name="disableTokenAuth" value="true"/>` binnen het in stap 4 vermelde label.
 1. Sla het XML-bestand op en sluit het.
 1. Start QuickStart opnieuw en meld u aan met uw referenties.
 
-#### Verschillende verificatiemethoden van de SharePoint-server {#supporting-different-authentication-methods-of-the-sharepoint-server} worden ondersteund
+#### Verschillende verificatiemethoden van de SharePoint-server worden ondersteund {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-In zijn standaardversie, steunt de schakelaar de standaardIIS **Windows** authentificatie (Basis) en op Forms-Gebaseerde authentificatie (op teken gebaseerd). De [andere verificatiemethoden](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen worden ondersteund via het mechanisme voor uitbreidbaarheid.
+In zijn standaardversie, steunt de schakelaar standaard IIS **Windows** verificatie (Basic) en op Forms gebaseerde verificatie (op basis van token). De [andere verificatiemethoden](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kan worden ondersteund via het uitbreidbaarheidsmechanisme.
 
 De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardverificatie ter ondersteuning van verschillende verificatiemethoden van de SharePoint-server:
 
-1. Implementeer `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` om de clientzijde van uw specifieke verificatieproces af te handelen.
-1. Installeer de `SharepointConnectionFactory`-implementatie als een fragmentbundel met fragmenthost `com.day.crx.spi.crx2sharepoint-bundle`.
+1. Implementeren `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` om de clientzijde van uw specifieke verificatieproces af te handelen.
+1. Installeer de `SharepointConnectionFactory` implementatie als een fragmentbundel met fragmenthost `com.day.crx.spi.crx2sharepoint-bundle`.
 
-   Wanneer het gebruiken van Maven, pas de volgende configuratie van `maven-bundle-plugin` aan de vereisten van uw project aan:
+   Wanneer het gebruiken van Maven, pas de volgende configuratie van aan `maven-bundle-plugin` aan de vereisten van uw project:
 
    ```xml
               <plugin>
@@ -286,7 +283,6 @@ De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardver
               </plugin>
    ```
 
-1. Registreer de `SharepointConnectionFactory` implementatie in de schakelaarconfiguratie. Klik in het configuratievenster van de connector op **Geavanceerde opties**. Geef in het veld for **Sharepoint Connection Factory** de naam van de implementatie `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory` op.
+1. Registreer de `SharepointConnectionFactory` implementatie in de schakelaarconfiguratie. Klik in het configuratievenster van de connector op **Geavanceerde opties**. In de lus for **SharePoint Connection Factory** -veld, geeft u de naam van de implementatie op `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
 
 1. Start de connector opnieuw.
-

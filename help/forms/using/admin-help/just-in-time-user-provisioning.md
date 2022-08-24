@@ -1,28 +1,27 @@
 ---
 title: Just-in-Time gebruikersprovisioning
-seo-title: Just-in-Time gebruikersprovisioning
+seo-title: Just-in-time user provisioning
 description: Gebruik just-in-time levering om gebruikers aan het Beheer van de Gebruiker toe te voegen na succesvolle authentificatie en dynamisch relevante rollen en groepen aan de nieuwe gebruiker toe te wijzen.
-seo-description: Gebruik just-in-time levering om gebruikers aan het Beheer van de Gebruiker toe te voegen na succesvolle authentificatie en dynamisch relevante rollen en groepen aan de nieuwe gebruiker toe te wijzen.
+seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
 uuid: a5ad4698-70bb-487b-a069-7133e2f420c2
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
-
 
 # Just-in-Time gebruikersprovisioning {#just-in-time-user-provisioning}
 
 AEM formulieren ondersteunen de just-in-time levering van gebruikers die nog niet in Gebruikersbeheer bestaan. Met just-in-time levering, worden de gebruikers automatisch toegevoegd aan het Beheer van de Gebruiker nadat hun geloofsbrieven met succes voor authentiek worden verklaard. Daarnaast worden relevante rollen en groepen dynamisch toegewezen aan de nieuwe gebruiker.
 
-## Behoefte aan just-in-time gebruikerslevering {#need-for-just-in-time-user-provisioning}
+## De behoefte aan just-in-time gebruikerslevering {#need-for-just-in-time-user-provisioning}
 
 Zo werkt traditionele verificatie:
 
@@ -30,18 +29,18 @@ Zo werkt traditionele verificatie:
 1. De verificatieprovider valideert de referenties.
 1. De authentificatieleverancier controleert dan of de gebruiker in het gegevensbestand van het Beheer van de Gebruiker bestaat. De volgende resultaten zijn mogelijk:
 
-   **Bestaat:** Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatiesucces terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
+   **Bestaat:** Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
 
-   **Bestaat niet:** gebruikersbeheer retourneert verificatiefout.
+   **Bestaat niet:** Gebruikersbeheer retourneert een verificatiefout.
 
-   **Ongeldig:** gebruikersbeheer retourneert verificatiefout.
+   **Ongeldig:** Gebruikersbeheer retourneert een verificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
 
 Wanneer just-in-time levering wordt uitgevoerd, wordt een nieuwe gebruiker dynamisch gecreeerd in het Beheer van de Gebruiker als één van de authentificatieleveranciers de geloofsbrieven van de gebruiker bevestigt. (Na stap 3 in de traditionele authentificatieprocedure, hierboven.)
 
-## Pas-in-tijd gebruikersinrichting {#implement-just-in-time-user-provisioning} uitvoeren
+## Implementeer just-in-time gebruikersprovisioning {#implement-just-in-time-user-provisioning}
 
 ### API&#39;s voor just-in-time provisioning {#apis-for-just-in-time-provisioning}
 
@@ -82,12 +81,12 @@ public Boolean assign(User user);
 }
 ```
 
-### Overwegingen bij het creëren van een just-in-time-Toegelaten domein {#considerations-while-creating-a-just-in-time-enabled-domain}
+### Overwegingen bij het creëren van een just-in-tijd-toegelaten domein {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* Zorg er tijdens het maken van een aangepaste `IdentityCreator` voor een hybride domein voor dat er een dummywachtwoord is opgegeven voor de lokale gebruiker. Laat dit wachtwoordveld niet leeg.
-* Aanbeveling: Gebruik `DomainSpecificAuthentication` om gebruikersgeloofsbrieven tegen een specifiek domein te bevestigen.
+* Tijdens het maken van een aangepaste `IdentityCreator` voor een hybride domein, zorg ervoor dat een dummywachtwoord voor de lokale gebruiker wordt gespecificeerd. Laat dit wachtwoordveld niet leeg.
+* Aanbeveling: Gebruiken `DomainSpecificAuthentication` om gebruikersgeloofsbrieven tegen een specifiek domein te bevestigen.
 
-### Creeer een enkel-in-tijd-toegelaten domein {#create-a-just-in-time-enabled-domain}
+### Een alleen-in-tijd-geschikt domein maken {#create-a-just-in-time-enabled-domain}
 
 1. Schrijf een DSC die APIs in &quot;APIs voor just-in-time levering&quot;sectie uitvoert.
 1. Implementeer de DSC op de formulierserver.
@@ -99,17 +98,16 @@ public Boolean assign(User user);
 
 1. Sla het nieuwe domein op.
 
-## Achter de scènes {#behind-the-scenes}
+## Achter de schermen {#behind-the-scenes}
 
 Stel dat een gebruiker zich probeert aan te melden bij AEM formulieren en dat een verificatieprovider zijn gebruikersgegevens accepteert. Als de gebruiker nog niet bestaat in de gebruikersbeheerdatabase, mislukt de identiteitscontrole voor de gebruiker. AEM formulieren voeren nu de volgende handelingen uit:
 
-1. Maak een `UserProvisioningBO`-object met de verificatiegegevens en plaats dit in een referentie-overzicht.
-1. Gebaseerd op domeininformatie die door `UserProvisioningBO` is teruggekeerd, haal en haal geregistreerd `IdentityCreator` en `AssignmentProvider` voor het domein aan.
-1. `IdentityCreator` aanroepen. Als het succesvol `AuthResponse` terugkeert, haal `UserInfo` van de referentie kaart. Geef deze door aan `AssignmentProvider` voor groep/rol-toewijzing en elke andere nabewerking nadat de gebruiker is gemaakt.
+1. Een `UserProvisioningBO` -object met de verificatiegegevens en deze in een referentie-overzicht plaatsen.
+1. Gebaseerd op domeininformatie die is geretourneerd door `UserProvisioningBO`, de geregistreerde `IdentityCreator` en `AssignmentProvider` voor het domein.
+1. Invoeden `IdentityCreator`. Als het succesvol is `AuthResponse`, extract `UserInfo` op de referentiekaart. Geef het door aan `AssignmentProvider` voor groep/roltoewijzing en elke andere naverwerking nadat de gebruiker is gemaakt.
 1. Als de gebruiker met succes is gemaakt, retourneert u de aanmeldingspoging van de gebruiker als geslaagd.
 1. Voor hybride domeinen, trek gebruikersinformatie van de authentificatiegegevens die aan de authentificatieleverancier worden verstrekt. Als deze gegevens correct zijn opgehaald, maakt u de gebruiker ter plekke.
 
 >[!NOTE]
 >
->De just-in-time provisioning-functie wordt geleverd met een standaardimplementatie van `IdentityCreator` die u kunt gebruiken om dynamisch gebruikers te maken. De gebruikers worden gecreeerd met de informatie verbonden aan de folders in het domein.
-
+>De just-in-time provisioning-functie wordt geleverd met een standaardimplementatie van `IdentityCreator` die u kunt gebruiken om dynamisch gebruikers te creëren. De gebruikers worden gecreeerd met de informatie verbonden aan de folders in het domein.

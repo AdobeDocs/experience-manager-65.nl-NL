@@ -1,8 +1,8 @@
 ---
 title: Verklarende woordenlijst
-seo-title: Verklarende woordenlijst
+seo-title: Glossary
 description: Deze verklarende woordenlijst maakt (alfabetisch) een lijst van details van alle Geleverde documenten van Checklist van het Project.
-seo-description: Deze verklarende woordenlijst maakt (alfabetisch) een lijst van details van alle Geleverde documenten van Checklist van het Project.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 0%
 
 ---
 
 # Verklarende woordenlijst{#glossary}
 
-Deze verklarende woordenlijst maakt (alpabetisch) een lijst van details van alle Geleverde documenten van [Project Checklist](/help/managing/best-practices-checklist.md).
+In deze woordenlijst worden (alpabetisch) details weergegeven van alle te leveren documenten uit de [Projectchecklist](/help/managing/best-practices-checklist.md).
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
@@ -47,7 +47,7 @@ Zorg ervoor dat de vereiste niveaus van systeemtoegang aan alle rollen zijn verl
 
 ### Beveiligingschecklist Adobe {#adobe-security-checklist}
 
-De [Beveiligingschecklist ](/help/sites-administering/security-checklist.md) is de officiële controlelijst die wordt verstrekt om ervoor te zorgen dat AEM bij de installatie veilig is. Het bevat de beveiligingsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te garanderen.
+De [Beveiligingschecklist Adobe](/help/sites-administering/security-checklist.md) is de officiële controlelijst die wordt verstrekt om ervoor te zorgen dat AEM bij installatie veilig is. Het bevat de beveiligingsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te garanderen.
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
@@ -57,19 +57,19 @@ Gegevens kunnen worden geregistreerd; bijvoorbeeld over de geïmplementeerde tec
 
 ### Beheerderstraining AEM {#aem-administrator-training}
 
-Opleiding voor administratief personeel van de oplossing. Zie [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor administratief personeel van de oplossing. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
 
 ### AEM-auteurstraining {#aem-author-training}
 
-Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie.
+Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
 
 ### Certificeringsexamen AEM {#aem-certification-exam}
 
-Zorg ervoor dat de juiste persoon is geregistreerd om de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager) te nemen.
+Ervoor zorgen dat de juiste persoon geregistreerd is om de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM gecertificeerd {#aem-certified}
 
-Zorg ervoor dat de juiste persoon is geslaagd voor de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Ervoor zorgen dat de juiste persoon met goed gevolg de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### Technische AEM {#aem-technical-training}
 
@@ -93,7 +93,7 @@ De routekaart van de Klant bestaat uit mijlpalen op hoog niveau en bedrijfsdoels
 
 ### Definitie toepassingsarchitectuur {#application-architecture-definition}
 
-De [toepassingsarchitectuur](/help/managing/best-practices.md#development-preparation) zou duidelijk het gedrag van de voorgestelde toepassingen moeten bepalen.
+De [toepassingsarchitectuur](/help/managing/best-practices.md#development-preparation) het gedrag van de voorgestelde toepassingen duidelijk moet omschrijven.
 
 Het is gericht op:
 
@@ -110,8 +110,7 @@ Zorg ervoor dat uw team bestaat uit personeel met de juiste training. Voor proje
 
 * minstens één AEM gecertificeerde lead Developer
 * ten minste één AEM gecertificeerde architect
-* minstens 75% van uw ontwikkelaars AEM gecertificeerd;
-dit maakt het de gecertificeerde ontwikkelaars mogelijk om ondergeschikte ontwikkelaars te begeleiden en zorgt voor kennisuitwisseling en transparantie
+* minstens 75% van uw ontwikkelaars AEM gecertificeerd; dit maakt het de gecertificeerde ontwikkelaars mogelijk om ondergeschikte ontwikkelaars te begeleiden en zorgt voor kennisuitwisseling en transparantie
 
 ### Architectuurdiagram {#architecture-diagram}
 
@@ -208,8 +207,7 @@ Bedrijfs KPIs bepaalt meetbare waarden die aantonen hoe effectief een bedrijf be
 
 Een document van bedrijfsvereisten (BRD) detailleert de bedrijfsoplossing voor een project, die een duidelijke specificatie van de bedrijfsbehoeften en de verwachtingen van de klant verstrekken. In de BRD wordt ook onderscheid gemaakt tussen de bedrijfsoplossing en de technische oplossing.
 
-Bij het onderzoeken van de bedrijfsoplossing moet de BHP de vraag beantwoorden:
-&quot;Wat wil het bedrijf doen?&quot;
+Bij het onderzoeken van de bedrijfsoplossing moet de BHP de vraag beantwoorden: &quot;Wat wil het bedrijf doen?&quot;
 
 ### Zakelijke aanmelding voor alle vereiste aanpassingen van de oplossing of architectuur die zijn geïdentificeerd en zijn uitgelijnd op de verwachtingen van ROI en KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -352,7 +350,7 @@ Alle richtlijnen die de klant heeft met betrekking tot de vorm, de levering en d
 
 Rapporten van de klant aan de Lood van de Kwaliteit tijdens de periode van de Aanvaarding van de Gebruiker van de Test (UAT).
 
-### Aanpassingen en hotfixes die gevolgen hebben voor gedocumenteerde upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
+### Aanpassingen en hotfixes die verbeteringen in documentatie beïnvloeden {#customizations-and-hotfixes-that-affect-upgrades-documented}
 
 Aanpassingen en/of toegepaste hotfixes moeten worden gedocumenteerd, aangezien zij toekomstige verbeteringen kunnen beïnvloeden:
 
@@ -505,7 +503,7 @@ Resultaten van een haalbaarheidsstudie voor zowel AEM als het ontwerp van de opl
 
 ### Eindcontract {#finalized-contract}
 
-Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op [Concept](#contract-draft).
+Een definitief en ondertekend contract is nodig alvorens met het project verder te gaan. Dit is gebaseerd op de [Concept](#contract-draft).
 
 ### Functionaliteit van de door belanghebbenden aanvaarde oplossing {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -904,7 +902,7 @@ Bepaal het communicatie plan voor zowel bedrijfs belanghebbenden als het project
 
 ### Projectinspanningen - definitieve ramingen {#project-efforts-final-estimates}
 
-De [initiële schattingen](#project-efforts-initial-estimates) waren hoog en werden gemaakt volgens de vereisten op hoog niveau voor de implementatie.
+De [initiële ramingen](#project-efforts-initial-estimates) hoog waren en werden uitgevoerd overeenkomstig de hoge eisen voor de uitvoering.
 
 Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te kunnen maken. De ramingen moeten worden opgesteld door elk geschikt projectleider, met inbegrip van projectbeheer, consultancy, architectuur, tests en ontwikkeling.
 
@@ -969,7 +967,7 @@ Deze wordt gebruikt met de Runbook om de installatiestappen en -controles voor e
 
 >[!NOTE]
 >
->Voor een voorbeeld, zie [AEM Nota&#39;s](/help/release-notes/release-notes.md).
+>Zie voor een voorbeeld de [Opmerkingen bij de release AEM](/help/release-notes/release-notes.md).
 
 ### Release die wordt uitgevoerd op productieomgeving {#release-running-on-production-environment}
 
@@ -1288,7 +1286,7 @@ Het testconcept is het kader op zeer hoog niveau voor het testen van het project
 
 ### Testplannen {#testing-plans}
 
-In deze plannen wordt de uitvoering van tests voor elke ontwikkelingsfase gedetailleerder beschreven en worden de tests gebaseerd op de [Teststrategie](#testing-strategy).
+In deze plannen wordt een gedetailleerder overzicht gegeven van de uitvoering van tests voor elke ontwikkelingsfase en wordt uitgegaan van de [Teststrategie](#testing-strategy).
 
 ### Testbereik {#testing-scope}
 

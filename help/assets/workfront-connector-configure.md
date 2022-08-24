@@ -4,7 +4,7 @@ description: Configureren [!DNL Workfront for Experience Manager enhanced connec
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 0%
@@ -130,14 +130,14 @@ Met deze workflowstap kan een gebruiker een eigenschap toewijzen aan een [!DNL W
    * Een AEM-eigenschap. Deze verwijzing moet relatief zijn ten opzichte van de lading van de workflow.
    * Een benoemde waarde. Deze moeten tussen haakjes staan.
    * Een samenvoeging van de bovenstaande drie items. Opgeven met `{+}`.
-   * Een wijziging van de bovenstaande drie posten door de waarde met `{replace(<value>,”old-char”,”new-char”)}`.
+   * Een wijziging van de bovenstaande drie posten door de waarde met `{replace(<value>,"old-char","new-char")}`.
 
 * Voorbeelden zijn:
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL=”https://my-aem-author/assets.html”{+}{path}`
+   * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuratie aan kaarteigenschap](/help/assets/assets/wf-map-property-config.png)
 

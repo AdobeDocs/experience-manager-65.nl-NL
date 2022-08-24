@@ -1,47 +1,46 @@
 ---
 title: Mobiele toepassingen ontwikkelen in AEM
-seo-title: Mobiele toepassingen ontwikkelen in AEM
+seo-title: Developing Mobile Applications in AEM
 description: Volg deze pagina om te beginnen met het ontwikkelen van mobiele toepassingen in AEM met Adobe PhoneGap Enterprise.
-seo-description: Volg deze pagina om te beginnen met het ontwikkelen van mobiele toepassingen in AEM met Adobe PhoneGap Enterprise.
+seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen ontwikkelen in AEM {#developing-mobile-applications-in-aem}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 AEM maakt gebruik van Adobe PhoneGap en Adobe Publishing Solutions, waarmee u zowel content-rich als op toepassingen gebaseerde mobiele toepassingen voor meerdere platforms kunt maken en beheren:
 
 * Beheer al uw bedrijven mobiele apps op één locatie.
 * Bekijk toepassingen in ontwikkelings- en testomgevingen zonder de complexiteit van inrichtingsprofielen en de extra inspanning om uw app te maken en te uploaden voor delen.
 * Gebruik de AEM ontwerpomgeving om rijke inhoud voor uw apps te maken en te beheren.
-* Gebruik HTML5 met Adobe PhoneGap om rijke ervaringen met apparaat-inheemse mogelijkheden tot stand te brengen.
-* Introduceer HTML5 Webviews aan nieuwe of reeds bestaande **inheemse** toepassingen door Cordova WebViews.
+* Gebruik de HTML5 met Adobe PhoneGap om rijke ervaringen met apparaat-inheemse mogelijkheden te creëren.
+* Introduceer HTML5-webweergaven tot nieuwe of reeds bestaande **native** toepassingen door Cordova WebViews.
 * Maak, curseer en deel rijke multimedia-inhoud via alle leveringskanalen, waaronder web, mobiel-web, mobiele-app en drukwerk.
 
-AEM integreert met de Adobe **[PhoneGap Build-service](https://build.phonegap.com/)** om het proces voor het maken en implementeren van toepassingen te vereenvoudigen.
+AEM integreert met de Adobe **[PhoneGap Build](https://build.phonegap.com/)** om het proces voor het maken en implementeren van toepassingen te vereenvoudigen.
 
-**Met Adobe** ContentSyncets kunnen gebruikers eenvoudig pagina- en inhoudsupdates over-the-Air (OTA) downloaden naar hun apparaten zonder dat ze de toepassing opnieuw hoeven te installeren of moeten downloaden van de appStore, Google Play of andere toepassingsbronnen.
+**Adobe ContentSync** Hiermee kunnen gebruikers eenvoudig pagina- en inhoudsupdates over-the-Air (OTA) downloaden naar hun apparaten zonder dat ze de toepassing opnieuw moeten installeren of moeten downloaden van de appStore, Google Play of andere toepassingsbronnen.
 
-**Adobe-** analyse is volledig geïntegreerd in AEM apps en maakt gedetailleerde tracering van distributie, geolocatie, besturingssystemen, apparaten, klikstreams, iBeacon-tracking en meer mogelijk.
+**Adobe Analytics** is volledig geïntegreerd in AEM apps en maakt gedetailleerde tracering van distributie, geolocatie, besturingssystemen, apparaten, klikstreams, iBeacon-tracking en meer mogelijk.
 
 ## Apps maken {#creating-apps}
 
-Ontwikkelaars kunnen de [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra bronnen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) gebruiken om AEM toepassingen met PhoneGap op te starten, inclusief een referentie-native app met Cordova Webviews.
+Ontwikkelaars kunnen de [AEM PhoneGap Starter-kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra bronnen gevonden in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) om AEM toepassingen met PhoneGap op te starten, inclusief een native referentie-app met Cordova Webviews.
 
 De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het gebruik van de startkit:
 
@@ -53,14 +52,14 @@ De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het geb
 
 >[!NOTE]
 >
->De extra bron van de verwijzingsimplementatie, met inbegrip van laboratoria, kan op GitHub [hier ](https://github.com/adobe-marketing-cloud-apps) en, de &quot;keuken-goot&quot;bron [hier](https://github.com/blefebvre/aem-phonegap-kitchen-sink) worden gevonden.
+>De extra bron van de verwijzingsimplementatie, met inbegrip van laboratoria, kan op GitHub worden gevonden [hier](https://github.com/adobe-marketing-cloud-apps) en de &quot;keukenroze&quot;-bron [hier](https://github.com/blefebvre/aem-phonegap-kitchen-sink).
 
-## Ontwikkelen voor IOS 9 en de gastheren van HTTP {#developing-for-ios-and-http-hosts}
+## Ontwikkelen voor IOS 9 en HTTP-hosts {#developing-for-ios-and-http-hosts}
 
-IOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-apps die op iOS 9 worden uitgevoerd. Deze kwestie verhindert verzoeken aan onveilige gastheren (zoals *http://localhost:4502*) worden gemaakt. Dit probleem zal worden opgelost met de komende vrijgave van cordova-ios (verbruikt door de CLI van Cordova), maar ondertussen zijn er twee oplossingen beschikbaar:
+iOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-apps die op iOS 9 worden uitgevoerd. Deze kwestie verhindert verzoeken aan onveilige gastheren (zoals *http://localhost:4502*). Dit probleem zal worden opgelost met de komende vrijgave van cordova-ios (verbruikt door de CLI van Cordova), maar ondertussen zijn er twee oplossingen beschikbaar:
 
-1. Als directe oplossing kunt u nog steeds alle iOS 8-simulators zonder problemen gebruiken.
-1. Als u iOS 9 moet gebruiken, kunt u de toepassingen -Info.plist (gevonden na het uitvoeren van `cordova platform add ios` in &quot;&lt;app root>/platforms/ios/&lt;app name>/&lt;app name>-Info.plist&quot;) handmatig bewerken en de volgende eigenschap opnemen:
+1. Als oplossing kunt u alle iOS 8-simulators zonder problemen gebruiken.
+1. Als u iOS 9 moet gebruiken, kunt u de apps -Info.plist gebruiken (deze vindt u na uitvoering `cordova platform add ios` in &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) kan handmatig worden bewerkt en de volgende eigenschap bevatten:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -74,7 +73,7 @@ IOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-app
 
 >[!NOTE]
 >
->Voor meer informatie over &quot;de Veiligheid van het Vervoer van de app&quot;, zie de volgende sectie van [iOS9 pre-releasedocs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en dit [Stack Overflow besprekings](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Voor meer informatie over &quot;de Veiligheid van het Vervoer van de App&quot;, zie de volgende sectie van [iOS9-prereleasedocumenten van Apple](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en [Stapel overloop, discussie](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Mobiele toepassingen ontwikkelen in AEM {#developing-mobile-applications-in-aem-1}
 

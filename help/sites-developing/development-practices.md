@@ -1,22 +1,21 @@
 ---
 title: Ontwikkelingspraktijken
-seo-title: Ontwikkelingspraktijken
+seo-title: Development Practices
 description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
-seo-description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
+seo-description: Best practices for developing on AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelingspraktijken{#development-practices}
 
@@ -35,11 +34,11 @@ Sommige criteria die algemeen door teams worden gespecificeerd omvatten:
 
 Zonder een welomschreven DoD is het gemakkelijk om in een situatie te belanden waarin veel dingen halverwege worden gedaan en niets echt compleet is.
 
-### Coderings- en opmaakconventies {#define-and-adhere-to-coding-and-formatting-conventions} definiëren en naleven
+### Coderings- en opmaakconventies definiëren en naleven {#define-and-adhere-to-coding-and-formatting-conventions}
 
 Dingen als inspringingsniveaus en witruimte lijken misschien niet belangrijk, maar als de code juist is opgemaakt, gaat het veel verder in de richting van leesbaarheid en onderhoudsgemak. Conventies moeten als team worden besproken en overeengekomen en vervolgens in de code worden gevolgd.
 
-### Doel van hoge testdekking {#aim-for-high-test-coverage}
+### Doel van hoge testdekking  {#aim-for-high-test-coverage}
 
 Naarmate een projectimplementatie groter wordt, zal ook de tijd die nodig is om deze te testen, toenemen. Zonder goede testdekking, zal het testteam niet kunnen schrapen en de ontwikkelaars zullen uiteindelijk begraven in insecten worden.
 
@@ -47,7 +46,7 @@ Ontwikkelaars zouden TDD moeten gebruiken en ontbrekende eenheidstests vóór de
 
 Er zijn aangepaste frameworks beschikbaar, zoals Jackalope en Prosper, om het kopiëren van JCR API&#39;s eenvoudiger te maken om de productiviteit van ontwikkelaars te garanderen terwijl ze eenheidstests schrijven.
 
-### Geschikt voor demo {#stay-demo-ready} blijven
+### Demo gereed houden {#stay-demo-ready}
 
 Het systeem zou aan het eind van elke herhaling voor demo aan de zaken moeten beschikbaar zijn. Door het systeem in een demo-klaar staat te houden, zal het team altijd binnen een herhaling van klaar zijn voor productie en kan de technische schuld op een houdbaar niveau worden gehouden.
 
@@ -63,10 +62,10 @@ Als de eenheidstests lang duren, zullen de ontwikkelaars vermijden lopend hen en
 
 De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun rapporten tot actie van de kant van het ontwikkelingsteam leiden. Zonder de analyse die deze instrumenten opleveren te verfijnen, zullen de aanbevelingen die ze genereren niet relevant zijn en zullen ze hun waarde verliezen.
 
-### Volg de Scout {#follow-the-boy-scout-rule}
+### Volg de Scout voor de jongen {#follow-the-boy-scout-rule}
 
 De Scouten van de Jongen hebben een regel: &quot;Laat het beter staan dan u het hebt gevonden.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opschonen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
 
-### Implementeer geen YAGNI-functies {#avoid-implementing-yagni-features}
+### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 
 YAGNI-functies (of u hebt het niet nodig) worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat belangrijk is en codeblok en eigenschapscrupules voorkomen.

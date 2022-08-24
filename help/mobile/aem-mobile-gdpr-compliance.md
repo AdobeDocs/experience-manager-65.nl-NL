@@ -1,19 +1,18 @@
 ---
 title: AEM Mobile - GDPR-gereedheid
-seo-title: AEM Mobile - GDPR-gereedheid
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile - GDPR Gereedheid"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
-
 
 # AEM Mobile - GDPR-gereedheid {#aem-mobile-gdpr-readiness}
 
@@ -35,7 +34,7 @@ U kunt zich hier aanmelden bij het Digital Publishing Suite-product om ervoor te
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Een GDPR-verzoek {#initiating-a-gdpr-request} starten
+### Een GDPR-verzoek starten {#initiating-a-gdpr-request}
 
 Neem contact op met de klantenservice van Adobe om een GDPR-aanvraag voor de Digital Publishing Suite te starten.
 
@@ -48,8 +47,8 @@ Verplicht:
 Geef ten minste 1 van de volgende gegevens op:
 
 * De klant van de eindgebruiker verstrekte OAuth identiteitskaart (identiteitskaart die in het directe machtigingssysteem van de klant wordt gebruikt): *dpsc-directEntitlementId*
-* Voor gebruikers van de Windows-app gebruikt u de id van de App Store van de eindgebruiker: *dpsc-windowsAppStoreId*
-* Het e-mailadres dat de eindgebruiker heeft gebruikt om te communiceren met de DPS App: *e-mail*
+* Voor gebruikers van de Windows-app gebruikt u de App Store-id van de eindgebruiker: *dpsc-windowsAppStoreId*
+* Het e-mailadres dat de eindgebruiker heeft gebruikt om te communiceren met de DPS App: *email*
 
 ### Veelgestelde vragen (FAQ) {#frequently-asked-questions-faq}
 
@@ -86,10 +85,10 @@ Hier volgt een voorbeeld van de invoer en de resulterende uitvoer van een Digita
 #### Invoer: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Uitvoer {#outputs}
@@ -303,4 +302,3 @@ email = “test@what.com”
 
 }
 ```
-

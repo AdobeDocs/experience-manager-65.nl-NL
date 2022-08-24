@@ -1,8 +1,8 @@
 ---
 title: Documenten beveiligen met beleid
-seo-title: Documenten beveiligen met beleid
-description: Met de Document Security-service kunt u de instellingen voor vertrouwelijkheid dynamisch toepassen op Adobe PDF-documenten en de controle over de documenten behouden. Met de documentbeveiligingsservice kunnen gebruikers ook de controle behouden over de manier waarop ontvangers het met een beleid beveiligde PDF-document gebruiken.
-seo-description: Met de Document Security-service kunt u de instellingen voor vertrouwelijkheid dynamisch toepassen op Adobe PDF-documenten en de controle over de documenten behouden. Met de documentbeveiligingsservice kunnen gebruikers ook de controle behouden over de manier waarop ontvangers het met een beleid beveiligde PDF-document gebruiken.
+seo-title: Protecting Documents with Policies
+description: Met de Document Security-service kunt u de instellingen voor vertrouwelijkheid dynamisch toepassen op Adobe PDF-documenten en de controle over de documenten behouden. De dienst van de Veiligheid van het Document laat de gebruikers ook toe om controle over te handhaven hoe de ontvangers het beleid-beschermde document van de PDF gebruiken.
+seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
 uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '15559'
+source-wordcount: '15514'
 ht-degree: 0%
 
 ---
-
 
 # Documenten beveiligen met beleid {#protecting-documents-with-policies}
 
@@ -27,7 +26,7 @@ ht-degree: 0%
 
 Met de Document Security-service kunnen gebruikers op dynamische wijze instellingen voor vertrouwelijkheid toepassen op Adobe PDF-documenten en de controle houden over de documenten, ongeacht de mate waarin deze worden verspreid.
 
-Met de Document Security-service wordt voorkomen dat informatie buiten het bereik van de gebruiker wordt verspreid doordat gebruikers de controle kunnen behouden over de manier waarop ontvangers het met een beleid beveiligde PDF-document gebruiken. Een gebruiker kan opgeven wie een document mag openen, hoe hij het kan gebruiken en het document na de verspreiding ervan controleren. Een gebruiker kan ook dynamisch de toegang tot een document beheren dat met een beleid is beveiligd en kan de toegang tot het document zelfs dynamisch intrekken.
+De dienst van de Veiligheid van het Document verhindert informatie zich voorbij het bereik van de gebruiker te verspreiden door de gebruikers toe te laten om controle over te houden hoe de ontvangers het beleid-beschermde document van de PDF gebruiken. Een gebruiker kan opgeven wie een document mag openen, hoe hij het kan gebruiken en het document na de verspreiding ervan controleren. Een gebruiker kan ook dynamisch de toegang tot een document beheren dat met een beleid is beveiligd en kan de toegang tot het document zelfs dynamisch intrekken.
 
 De service Documentbeveiliging beschermt ook andere bestandstypen, zoals Microsoft Word-bestanden (DOC-bestanden). U kunt de client-API voor documentbeveiliging gebruiken om met deze bestandstypen te werken. De volgende versies worden ondersteund:
 
@@ -42,24 +41,24 @@ Voor de duidelijkheid bespreken de volgende twee secties hoe te met de documente
 
 U kunt deze taken uitvoeren met de documentbeveiligingsservice:
 
-* Beleid maken. Zie [Beleid maken](protecting-documents-policies.md#creating-policies) voor meer informatie.
-* Beleid wijzigen. Zie [Beleid wijzigen](protecting-documents-policies.md#modifying-policies) voor meer informatie.
-* Beleid verwijderen. Zie [Beleid verwijderen](protecting-documents-policies.md#deleting-policies) voor meer informatie.
-* Beleid toepassen op PDF-documenten. Zie [Beleid toepassen op PDF-documenten](protecting-documents-policies.md#applying-policies-to-pdf-documents) voor meer informatie.
-* Beleid verwijderen uit PDF-documenten. Zie [Beleid verwijderen uit PDF-documenten](protecting-documents-policies.md#removing-policies-from-pdf-documents) voor meer informatie.
-* Met een beleid beveiligde documenten van Inspect. Zie [Met beleid beveiligde PDF-documenten controleren](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents) voor meer informatie.
-* Toegang tot PDF-documenten intrekken. Zie [Toegang tot documenten intrekken](protecting-documents-policies.md#revoking-access-to-documents) voor meer informatie.
-* Toegang tot ingetrokken documenten opnieuw instellen. Zie [Toegang tot ingetrokken documenten opnieuw instellen](protecting-documents-policies.md#reinstating-access-to-revoked-documents) voor meer informatie.
-* Watermerken maken. Zie [Watermerken maken](protecting-documents-policies.md#creating-watermarks) voor meer informatie.
-* Zoeken naar gebeurtenissen. Zie [Zoeken naar gebeurtenissen](protecting-documents-policies.md#searching-for-events) voor meer informatie.
+* Beleid maken. Zie voor meer informatie [Beleid maken](protecting-documents-policies.md#creating-policies).
+* Beleid wijzigen. Zie voor meer informatie [Beleid wijzigen](protecting-documents-policies.md#modifying-policies).
+* Beleid verwijderen. Zie voor meer informatie [Beleid verwijderen](protecting-documents-policies.md#deleting-policies).
+* Beleid toepassen op PDF-documenten. Zie voor meer informatie [Beleid toepassen op PDF-documenten](protecting-documents-policies.md#applying-policies-to-pdf-documents).
+* Beleid verwijderen uit PDF-documenten. Zie voor meer informatie [Beleid verwijderen uit PDF-documenten](protecting-documents-policies.md#removing-policies-from-pdf-documents).
+* Met een beleid beveiligde documenten van Inspect. Zie voor meer informatie [Met beleid beveiligde PDF-documenten controleren](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
+* Toegang tot PDF-documenten intrekken. Zie voor meer informatie [Toegang tot documenten intrekken](protecting-documents-policies.md#revoking-access-to-documents).
+* Toegang tot ingetrokken documenten opnieuw instellen. Zie voor meer informatie [Toegang tot ingetrokken documenten opnieuw instellen](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
+* Watermerken maken. Zie voor meer informatie [Watermerken maken](protecting-documents-policies.md#creating-watermarks).
+* Zoeken naar gebeurtenissen. Zie voor meer informatie [Zoeken naar gebeurtenissen](protecting-documents-policies.md#searching-for-events).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Beleid {#creating-policies} maken
+## Beleid maken {#creating-policies}
 
-U kunt beleid programmatisch maken met de Java API voor documentbeveiliging of de webservice-API. Een *beleid* is een inzameling van informatie die de montages van de documentveiligheid, gemachtigde gebruikers, en gebruiksrechten omvat. U kunt een willekeurig aantal beleidsregels maken en opslaan met de beveiligingsinstellingen die geschikt zijn voor verschillende situaties en gebruikers.
+U kunt beleid programmatisch maken met de Java API voor documentbeveiliging of de webservice-API. A *beleid* is een verzameling gegevens die beveiligingsinstellingen voor documenten, gemachtigde gebruikers en gebruiksrechten bevat. U kunt een willekeurig aantal beleidsregels maken en opslaan met de beveiligingsinstellingen die geschikt zijn voor verschillende situaties en gebruikers.
 
 Het beleid laat u toe om deze taken uit te voeren:
 
@@ -136,9 +135,9 @@ Wanneer u een beleid maakt met de webservice-API, verwijst u naar een bestaand X
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een beleid te maken:
 
@@ -167,7 +166,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar
 * jbossall-client.jar (gebruik een ander JAR-bestand als AEM Forms niet is geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
+Voor informatie over de locatie van deze JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een API-object voor documentbeveiliging maken**
 
@@ -194,11 +193,11 @@ Wanneer u kenmerken instelt die tot een beleid behoren, kunt u ook versleuteling
 * **AES128**: Vertegenwoordigt het AES encryptiealgoritme met een sleutel met 128 bits.
 * **NoEncryption:** Vertegenwoordigt geen encryptie.
 
-Als u de optie `NoEncryption` opgeeft, kunt u de optie `PlaintextMetadata` niet instellen op `false`. Wanneer u dit probeert, wordt een uitzondering gegenereerd.
+Wanneer u de opdracht `NoEncryption` kunt u de optie `PlaintextMetadata` optie voor `false`. Wanneer u dit probeert, wordt een uitzondering gegenereerd.
 
 >[!NOTE]
 >
->Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in [AEM Forms API Verwijzing](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor informatie over andere kenmerken die u kunt instellen, raadpleegt u de `Policy` interfacebeschrijving in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Een beleidsitem maken**
 
@@ -224,39 +223,39 @@ Een beleid maken met de API voor documentbeveiliging (Java):
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Stel de kenmerken van het beleid in.
 
-   * Maak een `Policy`-object door de statische methode `createPolicy` van het object aan te roepen. `InfomodelObjectFactory` Deze methode retourneert een `Policy`-object.
-   * Stel het kenmerk name van het beleid in door de methode `setName` van het object `Policy` aan te roepen en een tekenreekswaarde door te geven die de naam van het beleid aangeeft.
-   * Stel de beschrijving van het beleid in door de methode `setDescription` van het object `Policy` aan te roepen en een tekenreekswaarde door te geven die de beschrijving van het beleid opgeeft.
-   * Stel de beleidsset in waartoe het nieuwe beleid behoort door de methode `setPolicySetName` van het object `Policy` aan te roepen en een tekenreekswaarde door te geven die de naam van de beleidsset opgeeft. (U kunt `null` voor deze parameterwaarde specificeren die in het beleid resulteert dat aan *Mijn Beleid* wordt toegevoegd.)
-   * Maak de geldigheidsperiode van het beleid door de statische methode `createValidityPeriod` van het object `InfomodelObjectFactory` aan te roepen. Deze methode retourneert een `ValidityPeriod`-object.
-   * Stel het aantal dagen in waarvoor een document dat met een beleid is beveiligd, toegankelijk is door de methode `setRelativeExpirationDays` van het object `ValidityPeriod` aan te roepen en een geheel getal door te geven dat het aantal dagen opgeeft.
-   * Stel de geldigheidsperiode van het beleid in door de methode `setValidityPeriod` van het object `Policy` aan te roepen en het object `ValidityPeriod` door te geven.
+   * Een `Policy` door het object aan te roepen `InfomodelObjectFactory` statisch object `createPolicy` methode. Deze methode retourneert een `Policy` object.
+   * Stel het naamkenmerk van het beleid in door het `Policy` object `setName` methode en het overgaan van een koordwaarde die de beleidsnaam specificeert.
+   * Stel de beschrijving van het beleid in door het `Policy` object `setDescription` methode en het overgaan van een koordwaarde die de beschrijving van het beleid specificeert.
+   * Stel de beleidsset in waartoe het nieuwe beleid behoort door de `Policy` object `setPolicySetName` methode en het overgaan van een koordwaarde die de naam van de beleidsreeks specificeert. (U kunt `null` voor deze parameterwaarde die ertoe leidt dat het beleid wordt toegevoegd aan *Mijn beleid* beleidsset.)
+   * Maak de geldigheidsperiode van het beleid door de `InfomodelObjectFactory` statisch object `createValidityPeriod` methode. Deze methode retourneert een `ValidityPeriod` object.
+   * Stel het aantal dagen in waarvoor een document dat met een beleid is beveiligd, toegankelijk is door het `ValidityPeriod` object `setRelativeExpirationDays` methode en het overgaan van een geheelwaarde die het aantal dagen specificeert.
+   * Stel de geldigheidsperiode van het beleid in door de `Policy` object `setValidityPeriod` en het doorgeven van de `ValidityPeriod` object.
 
 1. Maak een beleidsvermelding.
 
-   * Creeer een beleidsingang door de statische methode `createPolicyEntry` van het `InfomodelObjectFactory` voorwerp aan te halen. Deze methode retourneert een `PolicyEntry`-object.
-   * Geef de bevoegdheden van het beleid op door de statische methode `createPermission` van het object `InfomodelObjectFactory` aan te roepen. Geef een statisch gegevenslid door dat tot de `Permission` interface behoort die de toestemming vertegenwoordigt. Deze methode retourneert een `Permission`-object. Als u bijvoorbeeld de machtiging wilt toevoegen waarmee gebruikers gegevens kunnen kopiëren uit een PDF-document dat met een beleid is beveiligd, geeft u `Permission.COPY` door. (Herhaal deze stap voor elke machtiging die u wilt toevoegen.)
-   * Voeg de toestemming aan de beleidsingang toe door de `PolicyEntry` methode van het voorwerp `addPermission` aan te halen en het `Permission` voorwerp over te gaan. (Herhaal deze stap voor elk `Permission`-object dat u hebt gemaakt).
-   * Creeer het beleidshoofd door de statische methode `createSpecialPrincipal` van het `InfomodelObjectFactory` voorwerp aan te halen. Geef een gegevenslid door dat tot het `InfomodelObjectFactory` voorwerp behoort dat het hoofd vertegenwoordigt. Deze methode retourneert een `Principal`-object. Als u bijvoorbeeld de uitgever van het document als hoofd wilt toevoegen, geeft u `InfomodelObjectFactory.PUBLISHER_PRINCIPAL` door.
-   * Voeg de principal aan de beleidsingang toe door de `PolicyEntry` methode van het voorwerp `setPrincipal`aan te halen en het `Principal` voorwerp over te gaan.
-   * Voeg de beleidsingang aan het beleid toe door de `Policy` methode `addPolicyEntry` van objecten aan te halen en het `PolicyEntry` voorwerp over te gaan.
+   * Maak een beleidsitem door het `InfomodelObjectFactory` statisch object `createPolicyEntry` methode. Deze methode retourneert een `PolicyEntry` object.
+   * Geef de bevoegdheden van het beleid op door de `InfomodelObjectFactory` statisch object `createPermission` methode. Geef een statisch gegevenslid door dat tot de `Permission` interface die de toestemming vertegenwoordigt. Deze methode retourneert een `Permission` object. Bijvoorbeeld, om de toestemming toe te voegen die gebruikers toelaat om gegevens van een beleid-beschermd document van de PDF te kopiëren, ga over `Permission.COPY`. (Herhaal deze stap voor elke machtiging die u wilt toevoegen.)
+   * Voeg de toestemming aan de beleidsingang toe door te roepen `PolicyEntry` object `addPermission` en het doorgeven van de `Permission` object. (Herhaal deze stap voor elke stap `Permission` -object dat u hebt gemaakt).
+   * Creeer het beleidshoofd door het `InfomodelObjectFactory` statisch object `createSpecialPrincipal` methode. Geef een gegevenslid door dat tot de `InfomodelObjectFactory` object dat de principal vertegenwoordigt. Deze methode retourneert een `Principal` object. Als u bijvoorbeeld de uitgever van het document als hoofd wilt toevoegen, geeft u `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Voeg het hoofd aan de beleidsingang toe door te roepen `PolicyEntry` object `setPrincipal`en het doorgeven van de `Principal` object.
+   * Voeg de beleidsingang aan het beleid toe door aan te halen `Policy` object `addPolicyEntry` en het doorgeven van de `PolicyEntry` object.
 
 1. Registreer het beleid.
 
-   * Maak een `PolicyManager`-object door de methode `getPolicyManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Registreer het beleid door de methode `registerPolicy` van het `PolicyManager` voorwerp aan te halen en de volgende waarden over te gaan:
+   * Een `PolicyManager` door het object aan te roepen `DocumentSecurityClient` object `getPolicyManager` methode.
+   * Registreer het beleid door de `PolicyManager` object `registerPolicy` en geeft de volgende waarden door:
 
-      * Het `Policy`-object dat het te registreren beleid vertegenwoordigt.
+      * De `Policy` object dat staat voor het beleid dat moet worden geregistreerd.
    * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort.
 
-   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het object `DocumentSecurityClient` te maken, geeft u de naam van de beleidsset op wanneer u de methode `registerPolicy` aanroept. Als u een `null` waarde voor de beleidsreeks doorgeeft, wordt het beleid gecreeerd in de beheerders *Mijn Beleid* beleidsreeks.
+   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om de `DocumentSecurityClient` -object, geeft u vervolgens de naam van de beleidsset op wanneer u het `registerPolicy` methode. Als u een `null` waarde voor de beleidsreeks, wordt het beleid gecreeerd in de beheerders *Mijn beleid* beleidsset.
 
-   Als u een gebruiker van de Veiligheid van het Document binnen verbindingsmontages gebruikt, dan kunt u de overbelaste `registerPolicy` methode aanhalen die slechts het beleid goedkeurt. U hoeft dus geen naam voor de beleidsset op te geven. Nochtans, wordt het beleid toegevoegd aan de beleidsreeks genoemd *Mijn Beleid*. Als u niet het nieuwe beleid aan deze beleidsreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u de `registerPolicy` methode aanhaalt.
+   Als u een gebruiker van de Veiligheid van het Document binnen verbindingsmontages gebruikt, dan kunt u overbelaste aanhalen `registerPolicy` methode die alleen het beleid accepteert. U hoeft dus geen naam voor de beleidsset op te geven. Het beleid wordt echter toegevoegd aan de benoemde beleidsset *Mijn beleid*. Als u het nieuwe beleid niet aan deze beleidsreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u aanhaalt `registerPolicy` methode.
 
    >[!NOTE]
    >
@@ -266,40 +265,40 @@ Zie het volgende voor codevoorbeelden met de Document Security-service:
 
 * &quot;Snel starten (SOAP-modus): Beleid maken met de Java API&quot;
 
-### Een beleid maken met de webservice-API {#create-a-policy-using-the-web-service-api}
+### Beleid maken met de webservice-API {#create-a-policy-using-the-web-service-api}
 
 Een beleid maken met de API voor documentbeveiliging (webservice):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Stel de kenmerken van het beleid in.
 
-   * Maak een `PolicySpec`-object met de constructor ervan.
-   * Stel de naam van het beleid in door een tekenreekswaarde toe te wijzen aan het `name`-gegevenslid van het object.`PolicySpec`
-   * Stel de beschrijving van het beleid in door een tekenreekswaarde toe te wijzen aan het `description`-gegevenslid van het object.`PolicySpec`
-   * Stel de beleidsset in waartoe het beleid behoort door een tekenreekswaarde toe te wijzen aan het `PolicySpec`-gegevenslid van het object. `policySetName` U moet een bestaande naam voor een beleidsset opgeven. (U kunt `null` voor deze parameterwaarde specificeren die in het beleid dat aan *Mijn Beleid* wordt toegevoegd.)
-   * Stel de offline leaseperiode van het beleid in door een geheel-getalwaarde toe te wijzen aan het `offlineLeasePeriod`-gegevenslid van het object `PolicySpec`.
-   * Stel het `PolicySpec`-gegevenslid van het object `policyXml` in met een tekenreekswaarde die PDRL XML-gegevens vertegenwoordigt. Om deze taak uit te voeren, creeer een .NET `StreamReader` voorwerp door zijn aannemer te gebruiken. Geef de locatie van een PDRL XML-bestand dat het beleid vertegenwoordigt, door aan de constructor `StreamReader`. Roep vervolgens de methode `StreamReader` van het object `ReadLine` aan en wijs de geretourneerde waarde toe aan een tekenreeksvariabele. Doorlopen van het object `StreamReader` totdat de methode `ReadLine` null retourneert. Wijs de tekenreeksvariabele toe aan het `PolicySpec`-gegevenslid van het `policyXml`-object.
+   * Een `PolicySpec` object met behulp van de constructor.
+   * Stel de naam van het beleid in door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `name` lid.
+   * Stel de beschrijving van het beleid in door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `description` lid.
+   * Stel de beleidsset in waartoe het beleid behoort door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `policySetName` lid. U moet een bestaande naam voor een beleidsset opgeven. (U kunt `null` voor deze parameterwaarde die ertoe leidt dat het beleid wordt toegevoegd aan *Mijn beleid*.)
+   * Stel de offline leaseperiode van het beleid in door een geheel-getalwaarde toe te wijzen aan de `PolicySpec` object `offlineLeasePeriod` lid.
+   * Stel de `PolicySpec` object `policyXml` gegevenslid met een tekenreekswaarde die PDRL XML-gegevens vertegenwoordigt. Om deze taak uit te voeren, creeer .NET `StreamReader` object met behulp van de constructor. Geef de locatie van een PDRL XML-bestand dat het beleid vertegenwoordigt, door aan de `StreamReader` constructor. Roep vervolgens het `StreamReader` object `ReadLine` en wijs de geretourneerde waarde toe aan een tekenreeksvariabele. Doorlopen `StreamReader` tot de `ReadLine` methode retourneert null. Wijs de tekenreeksvariabele toe aan de `PolicySpec` object `policyXml` lid.
 
 1. Maak een beleidsvermelding.
 
@@ -307,14 +306,14 @@ Een beleid maken met de API voor documentbeveiliging (webservice):
 
 1. Registreer het beleid.
 
-   Registreer het beleid door de methode `registerPolicy` van het `DocumentSecurityServiceClient` voorwerp aan te halen en de volgende waarden over te gaan:
+   Registreer het beleid door de `DocumentSecurityServiceClient` object `registerPolicy` en geeft de volgende waarden door:
 
-   * Het `PolicySpec`-object dat het te registreren beleid vertegenwoordigt.
-   * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in het beleid resulteert dat aan *wordt toegevoegd MyPolicy* beleidsreeks.
+   * De `PolicySpec` object dat staat voor het beleid dat moet worden geregistreerd.
+   * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort. U kunt een `null` waarde die ertoe leidt dat het beleid aan *MijnBeleid* beleidsset.
 
-   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het object `DocumentSecurityClient` te maken, geeft u de naam van de beleidsset op wanneer u de methode `registerPolicy` aanroept.
+   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om de `DocumentSecurityClient` -object, geeft u de naam van de beleidsset op wanneer u het `registerPolicy` methode.
 
-   Als u een gebruiker van de Veiligheid van het Document SecurityDocument binnen verbindingsmontages gebruikt, dan kunt u de overbelaste methode aanhalen `registerPolicy` die slechts het beleid goedkeurt. U hoeft dus geen naam voor de beleidsset op te geven. Nochtans, wordt het beleid toegevoegd aan de beleidsreeks genoemd *Mijn Beleid*. Als u niet het nieuwe beleid aan deze beleidsreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u de `registerPolicy` methode aanhaalt.
+   Als u een gebruiker van de Veiligheid van het Document SecurityDocument binnen verbindingsmontages gebruikt, dan kunt u overbelaste aanhalen `registerPolicy` methode die alleen het beleid accepteert. U hoeft dus geen naam voor de beleidsset op te geven. Het beleid wordt echter toegevoegd aan de benoemde beleidsset *Mijn beleid*. Als u het nieuwe beleid niet aan deze beleidsreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u aanhaalt `registerPolicy` methode.
 
    >[!NOTE]
    >
@@ -325,19 +324,19 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 * &quot;Snel starten (MTOM): Beleid maken met de webservice-API&quot;
 * &quot;Quick Start (SwaRef): Beleid maken met de webservice-API&quot;
 
-## Beleid {#modifying-policies} wijzigen
+## Beleid wijzigen {#modifying-policies}
 
 U kunt een bestaand beleid wijzigen met de Java API voor documentbeveiliging of de webservice-API. Om veranderingen in een bestaand beleid aan te brengen, wint u het terug, wijzigt het, en werkt dan het beleid op de server bij. Stel dat u een bestaand beleid ophaalt en de geldigheidsperiode ervan verlengt. Voordat de wijziging van kracht wordt, moet u het beleid bijwerken.
 
 U kunt een beleid wijzigen wanneer de bedrijfsvereisten veranderen en het beleid niet meer op deze vereisten wijst. In plaats van een nieuw beleid te maken, kunt u gewoon een bestaand beleid bijwerken.
 
-Als u beleidskenmerken wilt wijzigen met behulp van een webservice (bijvoorbeeld met Java-proxyklassen die zijn gemaakt met JAX-WS), moet u ervoor zorgen dat het beleid is geregistreerd bij de Document Security-service. U kunt dan naar het bestaande beleid verwijzen door de `PolicySpec.getPolicyXml` methode te gebruiken en de beleidsattributen te wijzigen door de toepasselijke methodes te gebruiken. U kunt bijvoorbeeld de offline leaseperiode wijzigen door de methode `PolicySpec.setOfflineLeasePeriod` aan te roepen.
+Als u beleidskenmerken wilt wijzigen met behulp van een webservice (bijvoorbeeld met Java-proxyklassen die zijn gemaakt met JAX-WS), moet u ervoor zorgen dat het beleid is geregistreerd bij de Document Security-service. U kunt dan naar het bestaande beleid verwijzen door `PolicySpec.getPolicyXml` en wijzigt u de beleidskenmerken met de toepasselijke methoden. U kunt bijvoorbeeld de offline leaseperiode wijzigen door de `PolicySpec.setOfflineLeasePeriod` methode.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om een bestaand beleid te wijzigen:
 
@@ -353,21 +352,21 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u via programmacode een bewerking voor documentbeveiliging kunt uitvoeren, moet u een client-object voor documentbeveiliging maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService`-object.
+Voordat u via programmacode een bewerking voor documentbeveiliging kunt uitvoeren, moet u een client-object voor documentbeveiliging maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService` object.
 
 **Een bestaand beleid ophalen**
 
-U moet een bestaand beleid terugwinnen om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid plaatste waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsreeks specificeert, wordt het beleid teruggewonnen van *Mijn Beleid* beleidsreeks.
+U moet een bestaand beleid terugwinnen om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid plaatste waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsset, wordt het beleid opgehaald uit de *Mijn beleid* beleidsset.
 
 **De kenmerken van het beleid instellen**
 
 Als u een beleid wilt wijzigen, wijzigt u de waarde van beleidskenmerken. Het enige beleidskenmerk dat u niet kunt wijzigen, is het naamkenmerk. Bijvoorbeeld, om de off-line huurperiode van het beleid te veranderen, kunt u de waarde van de off-line de huurperiode van het beleid attributen wijzigen.
 
-Wanneer u de offline leaseperiode van een beleid wijzigt met behulp van een webservice, wordt het veld `offlineLeasePeriod` in de interface `PolicySpec` genegeerd. Als u de offline leaseperiode wilt bijwerken, wijzigt u het element `OfflineLeasePeriod` in het XML-document PDRL. Verwijs dan naar het bijgewerkte document PDRL van XML door `PolicySpec` het gegevenslid van de interface `policyXML` te gebruiken.
+Wanneer u de offline leaseperiode van een beleid wijzigt met een webservice, wordt de `offlineLeasePeriod` veld op `PolicySpec` interface wordt genegeerd. Als u de offline leaseperiode wilt bijwerken, wijzigt u de `OfflineLeasePeriod` in het PDRL XML-document. Verwijs dan naar het bijgewerkte document PDRL XML door te gebruiken `PolicySpec` interface `policyXML` lid.
 
 >[!NOTE]
 >
->Voor informatie over andere attributen die u kunt plaatsen, zie de `Policy` interfacebeschrijving in [AEM Forms API Verwijzing](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Voor informatie over andere kenmerken die u kunt instellen, raadpleegt u de `Policy` interfacebeschrijving in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Het beleid bijwerken**
 
@@ -383,24 +382,24 @@ Wijzig een bestaand beleid met de API voor documentbeveiliging (Java):
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Een bestaand beleid ophalen.
 
-   * Maak een `PolicyManager`-object door de methode `getPolicyManager` van het object `RightsManagementClient` aan te roepen.
-   * Maak een `Policy`-object dat het beleid vertegenwoordigt dat moet worden bijgewerkt door de methode `getPolicy` van het object `PolicyManager` aan te roepen en de volgende waarden door te geven&quot;
+   * Een `PolicyManager` door het object aan te roepen `RightsManagementClient` object `getPolicyManager` methode.
+   * Een `Policy` object dat het beleid vertegenwoordigt dat moet worden bijgewerkt door het `PolicyManager` object `getPolicy` methode en geeft de volgende waarden door&quot;
 
-      * Een tekenreekswaarde die staat voor de naam van de beleidsset waartoe het beleid behoort. U kunt `null` specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+      * Een tekenreekswaarde die staat voor de naam van de beleidsset waartoe het beleid behoort. U kunt `null` dat leidt tot `MyPolicies` de gebruikte beleidsset.
       * Een tekenreekswaarde die de naam van het beleid vertegenwoordigt.
 
 1. Stel de kenmerken van het beleid in.
 
-   Verander de attributen van het beleid om aan uw bedrijfsvereisten te voldoen. Als u bijvoorbeeld de offline leaseperiode van het beleid wilt wijzigen, roept u de methode `setOfflineLeasePeriod` van het object `Policy` aan.
+   Verander de attributen van het beleid om aan uw bedrijfsvereisten te voldoen. Als u bijvoorbeeld de offline leaseperiode van het beleid wilt wijzigen, roept u de `Policy` object `setOfflineLeasePeriod` methode.
 
 1. Werk het beleid bij.
 
-   Werk het beleid bij door `PolicyManager` methode `updatePolicy` van voorwerp aan te halen. Geef het object `Policy` door dat het beleid vertegenwoordigt dat moet worden bijgewerkt.
+   Werk het beleid bij door aan te halen `PolicyManager` object `updatePolicy` methode. Geef de `Policy` object dat staat voor het beleid dat moet worden bijgewerkt.
 
 **Codevoorbeelden**
 
@@ -412,31 +411,31 @@ Wijzig een bestaand beleid met de API voor documentbeveiliging (webservice):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Een bestaand beleid ophalen.
 
-   Maak een `PolicySpec`-object dat het beleid vertegenwoordigt dat moet worden gewijzigd door de methode `getPolicy` van het object `RightsManagementServiceClient` aan te roepen en de volgende waarden door te geven:
+   Een `PolicySpec` object dat het beleid vertegenwoordigt dat moet worden gewijzigd door het `RightsManagementServiceClient` object `getPolicy` en geeft de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+   * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` dat leidt tot `MyPolicies` de gebruikte beleidsset.
    * Een tekenreekswaarde die de naam van het beleid aangeeft.
 
 1. Stel de kenmerken van het beleid in.
@@ -445,7 +444,7 @@ Wijzig een bestaand beleid met de API voor documentbeveiliging (webservice):
 
 1. Werk het beleid bij.
 
-   Werk het beleid bij door de `RightsManagementServiceClient` methode `updatePolicyFromSDK` van het voorwerp aan te halen en het `PolicySpec` voorwerp over te gaan dat het bij te werken beleid vertegenwoordigt.
+   Werk het beleid bij door het `RightsManagementServiceClient` object `updatePolicyFromSDK` en het doorgeven van de `PolicySpec` object dat staat voor het beleid dat moet worden bijgewerkt.
 
 **Codevoorbeelden**
 
@@ -454,15 +453,15 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 * &quot;Snel starten (MTOM): Een beleid wijzigen met de webservice-API&quot;
 * &quot;Quick Start (SwaRef): Een beleid wijzigen met de webservice-API&quot;
 
-## Verwijderen van beleid {#deleting-policies}
+## Beleid verwijderen {#deleting-policies}
 
 U kunt een bestaand beleid verwijderen met de Java API voor documentbeveiliging of de webservice-API. Nadat een beleid is verwijderd, kan het niet meer worden gebruikt om documenten te beschermen. Bestaande documenten die door het beleid worden beschermd, zijn echter nog steeds beveiligd. U kunt een beleid schrappen wanneer nieuwere beschikbaar wordt.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-2}
+### Overzicht van de stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om een bestaand beleid te verwijderen:
 
@@ -476,7 +475,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService`-object.
+Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService` object.
 
 **Het beleid verwijderen**
 
@@ -492,15 +491,15 @@ Een beleid verwijderen met de API voor documentbeveiliging (Java):
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijder het beleid.
 
-   * Maak een `PolicyManager`-object door de methode `getPolicyManager` van het object `RightsManagementClient` aan te roepen.
-   * Verwijder het beleid door de methode `deletePolicy` van het object `PolicyManager` aan te roepen en de volgende waarden door te geven:
+   * Een `PolicyManager` door het object aan te roepen `RightsManagementClient` object `getPolicyManager` methode.
+   * Verwijder het beleid door het `PolicyManager` object `deletePolicy` en geeft de volgende waarden door:
 
-      * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+      * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` dat leidt tot `MyPolicies` de gebruikte beleidsset.
       * Een tekenreekswaarde die de naam aangeeft van het beleid dat moet worden verwijderd.
 
 **Codevoorbeelden**
@@ -515,31 +514,31 @@ Verwijder een beleid met de API voor documentbeveiliging (webservice):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Verwijder het beleid.
 
-   Verwijder een beleid door de methode `deletePolicy` van het object `RightsManagementServiceClient` aan te roepen en de volgende waarden door te geven:
+   Een beleid verwijderen door het `RightsManagementServiceClient` object `deletePolicy` en geeft de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+   * Een tekenreekswaarde die de naam van de beleidsset opgeeft waartoe het beleid behoort. U kunt `null` dat leidt tot `MyPolicies` de gebruikte beleidsset.
    * Een tekenreekswaarde die de naam aangeeft van het beleid dat moet worden verwijderd.
 
 **Codevoorbeelden**
@@ -551,7 +550,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Beleid toepassen op PDF-documenten {#applying-policies-to-pdf-documents}
 
-U kunt een beleid toepassen op een PDF-document om het document te beveiligen. Als u een beleid toepast op een PDF-document, beperkt u de toegang tot het document. U kunt geen beleid op een document toepassen als het document reeds met een beleid wordt beveiligd.
+U kunt een beleid op een document van de PDF toepassen om het document te beveiligen. Door een beleid op een document van de PDF toe te passen, beperkt u toegang tot het document. U kunt geen beleid op een document toepassen als het document reeds met een beleid wordt beveiligd.
 
 Terwijl het document is geopend, kunt u ook de toegang tot Acrobat- en Adobe Reader-functies beperken, zoals de mogelijkheid om tekst af te drukken en te kopiëren, wijzigingen aan te brengen en handtekeningen en opmerkingen aan een document toe te voegen. Bovendien kunt u een met een beleid beveiligd PDF-document intrekken wanneer u niet langer wilt dat gebruikers het document openen.
 
@@ -559,16 +558,16 @@ U kunt het gebruik van een document dat met een beleid is beveiligd controleren 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-3}
+### Overzicht van de stappen {#summary_of_steps-3}
 
 Voer de volgende stappen uit om een beleid toe te passen op een PDF-document:
 
 1. Inclusief projectbestanden.
 1. Maak een API-object voor Document Security Client.
 1. Hiermee wordt een PDF-document opgehaald waarop een beleid is toegepast.
-1. Pas een bestaand beleid toe op het PDF-document.
+1. Pas een bestaand beleid op het document van de PDF toe.
 1. Sla het met beleid beveiligde PDF-document op.
 
 **Projectbestanden opnemen**
@@ -577,19 +576,19 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u via programmacode een bewerking met de documentbeveiligingsservice kunt uitvoeren, maakt u een clientobject van de documentbeveiligingsservice. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService`-object.
+Voordat u via programmacode een bewerking met de documentbeveiligingsservice kunt uitvoeren, maakt u een clientobject van de documentbeveiligingsservice. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService` object.
 
 **Een PDF-document ophalen**
 
-U kunt een PDF-document ophalen om een beleid toe te passen. Nadat u een beleid op het PDF-document hebt toegepast, worden gebruikers beperkt wanneer ze het document gebruiken. Als het beleid bijvoorbeeld niet toestaat dat het document offline wordt geopend, moeten gebruikers online zijn om het document te openen.
+U kunt een PDF-document ophalen om een beleid toe te passen. Nadat u een beleid op het document van de PDF toepast, worden de gebruikers beperkt wanneer het gebruiken van het document. Als het beleid bijvoorbeeld niet toestaat dat het document offline wordt geopend, moeten gebruikers online zijn om het document te openen.
 
 **Een bestaand beleid toepassen op het PDF-document**
 
-Als u een beleid wilt toepassen op een PDF-document, verwijst u naar een bestaand beleid en geeft u op tot welke beleidsset het beleid behoort. De gebruiker die de verbindingseigenschappen instelt, moet toegang hebben tot het opgegeven beleid. Als dat niet het geval is, treedt een uitzondering op.
+Om een beleid op een document van de PDF toe te passen, verwijs een bestaand beleid en specificeer welk beleid het beleid tot behoort. De gebruiker die de verbindingseigenschappen instelt, moet toegang hebben tot het opgegeven beleid. Als dat niet het geval is, treedt een uitzondering op.
 
 **Het PDF-document opslaan**
 
-Nadat de documentbeveiligingsservice een beleid heeft toegepast op een PDF-document, kunt u het met een beleid beveiligde PDF-document opslaan als een PDF-bestand.
+Nadat de dienst van de Veiligheid van het Document een beleid op een document van de PDF toepast, kunt u het beleid-beschermde document van de PDF als PDF dossier bewaren.
 
 **Zie ook**
 
@@ -609,42 +608,42 @@ Een beleid toepassen op een PDF-document met behulp van de API voor documentbeve
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `java.io.FileInputStream`-object dat het PDF-document vertegenwoordigt met behulp van de bijbehorende constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` object dat het PDF-document vertegenwoordigt met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
-1. Pas een bestaand beleid toe op het PDF-document.
+1. Pas een bestaand beleid op het document van de PDF toe.
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `RightsManagementClient` aan te roepen.
-   * Pas een beleid toe op het PDF-document door de methode `DocumentManager` van het object `protectDocument` aan te roepen en de volgende waarden door te geven:
+   * Een `DocumentManager` door het object aan te roepen `RightsManagementClient` object `getDocumentManager` methode.
+   * Pas een beleid op het document van de PDF toe door aan te halen `DocumentManager` object `protectDocument` en geeft de volgende waarden door:
 
-      * Het `com.adobe.idp.Document`-object dat het PDF-document bevat waarop het beleid wordt toegepast.
+      * De `com.adobe.idp.Document` -object dat het PDF-document bevat waarop het beleid wordt toegepast.
       * Een tekenreekswaarde die de naam van het document aangeeft.
-      * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+      * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde die resulteert in de `MyPolicies` de gebruikte beleidsset.
       * Een tekenreekswaarde die de beleidsnaam opgeeft.
       * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde null zijn).
-      * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` zijn (als deze parameter null is, moet de vorige parameterwaarde `null` zijn).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` die de scène vertegenwoordigt die voor het selecteren van het malplaatje van MS Office wordt gebruikt. Deze parameterwaarde is optioneel en wordt niet gebruikt voor PDF-documenten. Als u een PDF-document wilt beveiligen, geeft u `null` op.
+      * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` (als deze parameter null is, moet de vorige parameterwaarde `null`).
+      * A `com.adobe.livecycle.rightsmanagement.Locale` die de landinstelling vertegenwoordigt die wordt gebruikt voor het selecteren van de sjabloon MS Office. Deze parameterwaarde is optioneel en wordt niet gebruikt voor PDF-documenten. Als u een PDF-document wilt beveiligen, geeft u `null`.
 
-      De methode `protectDocument` retourneert een `RMSecureDocumentResult`-object dat het met een beleid beveiligde PDF-document bevat.
+      De `protectDocument` methode retourneert een `RMSecureDocumentResult` -object dat het met een beleid beveiligde PDF-document bevat.
 
 
 1. Sla het PDF-document op.
 
-   * Roep de methode `RMSecureDocumentResult` van het object `getProtectedDoc` aan om het met een beleid beveiligde PDF-document op te halen. Deze methode retourneert een `com.adobe.idp.Document`-object.
-   * Maak een `java.io.File`-object en controleer of de bestandsextensie PDF is.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `getProtectedDoc` is geretourneerd).
+   * De `RMSecureDocumentResult` object `getProtectedDoc` methode om het document van de beleid-beschermde PDF te krijgen. Deze methode retourneert een `com.adobe.idp.Document` object.
+   * Een `java.io.File` -object en controleer of de bestandsextensie PDF is.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `getProtectedDoc` methode).
 
 **Codevoorbeelden**
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (EJB-modus): Een beleid toepassen op een PDF-document met de Java API&quot;
-* &quot;Snel starten (SOAP-modus): Een beleid toepassen op een PDF-document met de Java API&quot;
+* &quot;Snel starten (EJB-modus): Een beleid toepassen op een PDF-document met behulp van de Java API&quot;
+* &quot;Snel starten (SOAP-modus): Een beleid toepassen op een PDF-document met behulp van de Java API&quot;
 
 **Zie ook**
 
@@ -654,68 +653,68 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ### Een beleid toepassen op een PDF-document met behulp van de webservice-API {#apply-a-policy-to-a-pdf-document-using-the-web-service-api}
 
-Een beleid toepassen op een PDF-document met behulp van de API voor documentbeveiliging (webservice):
+Pas een beleid op een document van de PDF toe door de Veiligheid API van het Document (Webdienst) te gebruiken:
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Een PDF-document ophalen.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen waarop een beleid wordt toegepast.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. Bepaal de grootte van de bytearray door de `System.IO.FileStream`-eigenschap van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om een PDF-document op te slaan waarop een beleid wordt toegepast.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. Bepaal de grootte van de bytearray door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Pas een bestaand beleid toe op het PDF-document.
+1. Pas een bestaand beleid op het document van de PDF toe.
 
-   Pas een beleid toe op het PDF-document door de methode `RightsManagementServiceClient` van het object `protectDocument` aan te roepen en de volgende waarden door te geven:
+   Pas een beleid op het document van de PDF toe door aan te halen `RightsManagementServiceClient` object `protectDocument` en geeft de volgende waarden door:
 
-   * Het `BLOB`-object dat het PDF-document bevat waarop het beleid wordt toegepast.
+   * De `BLOB` -object dat het PDF-document bevat waarop het beleid wordt toegepast.
    * Een tekenreekswaarde die de naam van het document aangeeft.
-   * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+   * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde die resulteert in de `MyPolicies` de gebruikte beleidsset.
    * Een tekenreekswaarde die de beleidsnaam opgeeft.
-   * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde `null` zijn).
-   * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de vorige parameterwaarde `null` zijn).
-   * Een waarde `RMLocale` die de waarde van de landinstelling opgeeft (bijvoorbeeld `RMLocale.en`).
+   * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde `null`).
+   * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de vorige parameterwaarde `null`).
+   * A `RMLocale` waarde die de waarde van de landinstelling opgeeft (bijvoorbeeld `RMLocale.en`).
    * Een parameter van de koordoutput die wordt gebruikt om de waarde van beleidsidentificatie op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om de beleid-beschermde herkenningstekenwaarde op te slaan.
-   * Een parameter van de koordoutput die wordt gebruikt om het mime type (bijvoorbeeld, `application/pdf`) op te slaan.
+   * Een parameter van de koordoutput die wordt gebruikt om het mime type op te slaan (bijvoorbeeld `application/pdf`).
 
-   De methode `protectDocument` retourneert een `BLOB`-object dat het met een beleid beveiligde PDF-document bevat.
+   De `protectDocument` methode retourneert een `BLOB` -object dat het met een beleid beveiligde PDF-document bevat.
 
 1. Sla het PDF-document op.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het met een beleid beveiligde PDF-document vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `protectDocument` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het met een beleid beveiligde PDF-document vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `protectDocument` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` lid.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
 **Codevoorbeelden**
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (MTOM): Een beleid toepassen op een PDF-document met behulp van de webservice-API.&quot;
-* &quot;Quick Start (SwaRef): Een beleid toepassen op een PDF-document met behulp van de webservice-API.&quot;
+* &quot;Snel starten (MTOM): Een beleid toepassen op een PDF-document met behulp van de webservice-API&quot;
+* &quot;Quick Start (SwaRef): Een beleid toepassen op een PDF-document met behulp van de webservice-API &quot;
 
 ## Beleid verwijderen uit PDF-documenten {#removing-policies-from-pdf-documents}
 
@@ -723,16 +722,16 @@ U kunt een beleid verwijderen uit een document dat met een beleid is beveiligd o
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-4}
+### Overzicht van de stappen {#summary_of_steps-4}
 
-Voer de volgende stappen uit om een beleid te verwijderen uit een PDF-document dat met een beleid is beveiligd:
+Voer de volgende stappen uit om een beleid te verwijderen uit een met beleid beveiligd PDF-document:
 
 1. Projectbestanden opnemen
 1. Maak een API-object voor Document Security Client.
-1. Hiermee haalt u een PDF-document op dat met een beleid is beveiligd.
-1. Verwijder het beleid uit het PDF-document.
+1. Hiermee wordt een met beleid beveiligd PDF-document opgehaald.
+1. Verwijder het beleid uit het document van de PDF.
 1. Sla het onbeveiligde PDF-document op.
 
 **Projectbestanden opnemen**
@@ -745,11 +744,11 @@ Voordat u via programmacode een bewerking met de documentbeveiligingsservice kun
 
 **Een met beleid beveiligd PDF-document ophalen**
 
-U kunt een met een beleid beveiligd PDF-document ophalen om een beleid te verwijderen. Als u probeert een beleid te verwijderen uit een PDF-document dat niet wordt beveiligd door een beleid, veroorzaakt u een uitzondering.
+U kunt een met een beleid beveiligd PDF-document ophalen om een beleid te verwijderen. Als u probeert om een beleid uit een document te verwijderen van de PDF dat niet door een beleid wordt beschermd, zult u een uitzondering veroorzaken.
 
 **Het beleid verwijderen uit het PDF-document**
 
-U kunt een beleid uit een beleid-beschermd PDF document verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als dat niet het geval is, moet het beleid waarmee een document wordt beveiligd de `SWITCH_POLICY`-machtiging bevatten om een beleid uit een PDF-document te kunnen verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
+U kunt een beleid uit een beleid-beschermd document van de PDF verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als dat niet het geval is, moet het beleid dat wordt gebruikt om een document te beveiligen het volgende bevatten: `SWITCH_POLICY` toestemming om een beleid uit een document van de PDF te verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
 
 **Het onbeveiligde PDF-document opslaan**
 
@@ -765,7 +764,7 @@ Nadat de documentbeveiligingsservice een beleid uit een PDF-document heeft verwi
 
 ### Een beleid verwijderen uit een PDF-document met de Java API {#remove-a-policy-from-a-pdf-document-using-the-java-api}
 
-Een beleid verwijderen uit een PDF-document dat met een beleid is beveiligd, met de API voor documentbeveiliging (Java):
+Verwijder een beleid uit een beleid-beschermd document van de PDF door de Veiligheid API van het Document (Java) te gebruiken:
 
 1. Inclusief projectbestanden.
 
@@ -773,23 +772,23 @@ Een beleid verwijderen uit een PDF-document dat met een beleid is beveiligd, met
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
-1. Hiermee haalt u een PDF-document op dat met een beleid is beveiligd.
+1. Hiermee wordt een met beleid beveiligd PDF-document opgehaald.
 
-   * Maak een `java.io.FileInputStream`-object dat het met een beleid beveiligde PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` -object dat het met een beleid beveiligde PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
-1. Verwijder het beleid uit het PDF-document.
+1. Verwijder het beleid uit het document van de PDF.
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Verwijder een beleid uit het PDF-document door de methode `DocumentManager` van het object `removeSecurity` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `com.adobe.idp.Document`-object dat een onbeveiligd PDF-document bevat.
+   * Een `DocumentManager` door het object aan te roepen `DocumentSecurityClient` object `getDocumentManager` methode.
+   * Verwijder een beleid uit het document van de PDF door aan te halen `DocumentManager` object `removeSecurity` en het doorgeven van de `com.adobe.idp.Document` -object dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `com.adobe.idp.Document` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het onbeveiligde PDF-document op.
 
-   * Maak een `java.io.File`-object en controleer of de bestandsextensie PDF is.
-   * Roep de methode `Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `removeSecurity` is geretourneerd).
+   * Een `java.io.File` -object en controleer of de bestandsextensie PDF is.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `removeSecurity` methode).
 
 **Codevoorbeelden**
 
@@ -799,54 +798,54 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ### Een beleid verwijderen met de webservice-API {#remove-a-policy-using-the-web-service-api}
 
-Een beleid verwijderen uit een PDF-document dat met een beleid is beveiligd met de API voor documentbeveiliging (webservice):
+Verwijder een beleid uit een beleid-beschermd document van de PDF gebruikend de Veiligheid API van het Document (Webdienst):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
-1. Hiermee haalt u een PDF-document op dat met een beleid is beveiligd.
+1. Hiermee wordt een met beleid beveiligd PDF-document opgehaald.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het met een beleid beveiligde PDF-document opgeslagen waaruit het beleid wordt verwijderd.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om het met een beleid beveiligde PDF-document op te slaan waaruit het beleid wordt verwijderd.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Verwijder het beleid uit het PDF-document.
+1. Verwijder het beleid uit het document van de PDF.
 
-   Verwijder het beleid uit het PDF-document door de methode `DocumentSecurityServiceClient` van het object `removePolicySecurity` aan te roepen en het object `BLOB` door te geven dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `BLOB`-object dat een onbeveiligd PDF-document bevat.
+   Verwijder het beleid uit het document van de PDF door te roepen `DocumentSecurityServiceClient` object `removePolicySecurity` en het doorgeven van de `BLOB` -object dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `BLOB` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het onbeveiligde PDF-document op.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het onbeveiligde PDF-document vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `removePolicySecurity` is geretourneerd. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het onbeveiligde PDF-document vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `removePolicySecurity` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
 
 **Codevoorbeelden**
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (MTOM): Een beleid uit een PDF-document verwijderen met de webservice-API&quot;
-* &quot;Quick Start (SwaRef): Een beleid uit een PDF-document verwijderen met de webservice-API&quot;
+* &quot;Snel starten (MTOM): Een beleid verwijderen uit een PDF-document met de webservice-API &quot;
+* &quot;Quick Start (SwaRef): Een beleid verwijderen uit een PDF-document met de webservice-API&quot;
 
 **Zie ook**
 
@@ -854,23 +853,23 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Toegang tot documenten {#revoking-access-to-documents} intrekken
+## Toegang tot documenten intrekken {#revoking-access-to-documents}
 
-U kunt de toegang tot een PDF-document dat met een beleid is beveiligd, intrekken. Hierdoor zijn alle kopieën van het document niet toegankelijk voor gebruikers. Wanneer een gebruiker een ingetrokken PDF-document probeert te openen, wordt deze doorgestuurd naar een opgegeven URL waar een gereviseerd document kan worden weergegeven. De URL waarnaar de gebruiker is omgeleid, moet via programmacode worden opgegeven. Wanneer u de toegang tot een document intrekt, wordt de wijziging van kracht wanneer de gebruiker opnieuw synchroniseert met de documentbeveiligingsservice door het document dat met een beleid is beveiligd online te openen.
+U kunt de toegang tot een met een beleid beveiligd PDF-document intrekken, waardoor alle kopieën van het document niet toegankelijk zijn voor gebruikers. Wanneer een gebruiker een ingetrokken PDF-document probeert te openen, wordt deze doorgestuurd naar een opgegeven URL waar een gereviseerd document kan worden weergegeven. De URL waarnaar de gebruiker is omgeleid, moet via programmacode worden opgegeven. Wanneer u de toegang tot een document intrekt, wordt de wijziging van kracht wanneer de gebruiker opnieuw synchroniseert met de documentbeveiligingsservice door het document dat met een beleid is beveiligd online te openen.
 
 De mogelijkheid om de toegang tot een document in te trekken biedt extra beveiliging. Stel dat er een nieuwere versie van een document beschikbaar is en dat u niet langer wilt dat iemand de verouderde versie bekijkt. In dit geval kan de toegang tot het oudere document worden ingetrokken en kan niemand het document bekijken tenzij de toegang wordt hersteld.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-5}
+### Overzicht van de stappen {#summary_of_steps-5}
 
 Voer de volgende stappen uit om een document dat met een beleid is beveiligd, in te trekken:
 
 1. Inclusief projectbestanden.
 1. Maak een API-object voor Document Security Client.
-1. Hiermee haalt u een PDF-document op dat met een beleid is beveiligd.
+1. Hiermee wordt een met beleid beveiligd PDF-document opgehaald.
 1. Intrekken van het document dat met een beleid is beveiligd.
 
 **Projectbestanden opnemen**
@@ -883,9 +882,9 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **Een met beleid beveiligd PDF-document ophalen**
 
-U moet een met een beleid beveiligd PDF-document ophalen om het te kunnen intrekken. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
+U moet een document met een door het beleid beveiligde PDF ophalen om het te kunnen intrekken. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
 
-Als u de waarde van de licentie-id van het document weet dat met een beleid is beveiligd, hoeft u het PDF-document dat met een beleid is beveiligd, niet op te halen. In de meeste gevallen zult u het PDF-document echter moeten ophalen om de waarde van de licentie-id te verkrijgen.
+Als u de waarde van de vergunningsidentificatie van het beleid-beschermde document kent, dan is het niet noodzakelijk om het beleid-beschermde document van de PDF terug te winnen. In de meeste gevallen zult u echter het PDF-document moeten ophalen om de waarde van de licentie-id te verkrijgen.
 
 **Intrekken van het document dat met een beleid is beveiligd**
 
@@ -915,24 +914,24 @@ Toegang tot een met beleid beveiligd PDF-document intrekken met de API voor docu
 
 1. Een API-object voor documentbeveiliging maken
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Een met beleid beveiligd PDF-document ophalen
 
-   * Maak een `java.io.FileInputStream`-object dat het met een beleid beveiligde PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` -object dat het met een beleid beveiligde PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Intrekken van het document dat met een beleid is beveiligd
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Haal de waarde van de licentie-id van het document dat door het beleid wordt beveiligd, op door de methode `DocumentManager` van het object `getLicenseId` aan te roepen. Geef het `com.adobe.idp.Document`-object door dat het document vertegenwoordigt dat met een beleid is beveiligd. Deze methode retourneert een tekenreekswaarde die de waarde van de licentie-id vertegenwoordigt.
-   * Maak een `LicenseManager`-object door de methode `getLicenseManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Intrekken van het document dat met een beleid is beveiligd door de methode `LicenseManager` van het object `revokeLicense` aan te roepen en de volgende waarden door te geven:
+   * Een `DocumentManager` door het object aan te roepen `DocumentSecurityClient` object `getDocumentManager` methode.
+   * Haal de waarde van de licentie-id van het document dat met een beleid is beveiligd, op door het `DocumentManager` object `getLicenseId` methode. Geef de `com.adobe.idp.Document` object dat staat voor het document dat met een beleid is beveiligd. Deze methode retourneert een tekenreekswaarde die de waarde van de licentie-id vertegenwoordigt.
+   * Een `LicenseManager` door het object aan te roepen `DocumentSecurityClient` object `getLicenseManager` methode.
+   * Intrekken van het document dat met een beleid is beveiligd door het `LicenseManager` object `revokeLicense` en geeft de volgende waarden door:
 
-      * Een tekenreekswaarde die de waarde van de licentie-id van het document met beleidsbeveiliging opgeeft (geef de geretourneerde waarde op van de methode `DocumentManager` van het object).`getLicenseId`
-      * Een statisch gegevenslid van de interface `License` die de reden specificeert om het document in te trekken. U kunt bijvoorbeeld `License.DOCUMENT_REVISED` opgeven.
-      * Een `java.net.URL`-waarde die de locatie opgeeft waar een gereviseerd document zich bevindt. Als u een gebruiker niet aan een andere URL wilt opnieuw richten, dan kunt u `null` overgaan.
+      * Een tekenreekswaarde die de waarde van de licentie-id van het document met beleidsbeveiliging opgeeft (geef de geretourneerde waarde van het document op `DocumentManager` object `getLicenseId` methode).
+      * Een statisch gegevenslid van de `License` interface die de reden voor intrekking van het document aangeeft. U kunt bijvoorbeeld `License.DOCUMENT_REVISED`.
+      * A `java.net.URL` waarde die de locatie aangeeft waarnaar een gereviseerd document zich bevindt. Als u een gebruiker niet naar een andere URL wilt omleiden, kunt u `null`.
 
 **Codevoorbeelden**
 
@@ -946,42 +945,42 @@ De toegang tot een met beleid beveiligd PDF-document intrekken met de API voor d
 
 1. Projectbestanden opnemen
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een API-object voor documentbeveiliging maken
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Een met beleid beveiligd PDF-document ophalen
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een met een beleid beveiligd PDF-document opgeslagen dat wordt ingetrokken.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat met een beleid is beveiligd en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een met een beleid beveiligd PDF-document op te slaan dat wordt ingetrokken.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document met beveiligingsbeleid dat moet worden ingetrokken en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Intrekken van het document dat met een beleid is beveiligd
 
-   * Haal de waarde van de licentie-id van het document dat door het beleid wordt beveiligd, op door de methode `DocumentSecurityServiceClient` van het object `getLicenseID` aan te roepen en het object `BLOB` door te geven dat het document vertegenwoordigt dat door het beleid wordt beveiligd. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
-   * Intrekken van het document dat met een beleid is beveiligd door de methode `DocumentSecurityServiceClient` van het object `revokeLicense` aan te roepen en de volgende waarden door te geven:
+   * Haal de waarde van de licentie-id van het document dat met een beleid is beveiligd, op door het `DocumentSecurityServiceClient` object `getLicenseID` en het doorgeven van de `BLOB` object dat staat voor het document dat met een beleid is beveiligd. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
+   * Intrekken van het document dat met een beleid is beveiligd door het `DocumentSecurityServiceClient` object `revokeLicense` en geeft de volgende waarden door:
 
-      * Een tekenreekswaarde die de waarde van de licentie-id van het document met beleidsbeveiliging opgeeft (geef de geretourneerde waarde op van de methode `DocumentSecurityServiceService` van het object).`getLicenseId`
-      * Een statisch gegevenslid van de `Reason`-opsomming dat de reden opgeeft om het document in te trekken. U kunt bijvoorbeeld `Reason.DOCUMENT_REVISED` opgeven.
-      * Een `string`-waarde die de URL-locatie opgeeft waarnaar een gereviseerd document zich bevindt. Als u een gebruiker niet aan een andere URL wilt opnieuw richten, dan kunt u `null` overgaan.
+      * Een tekenreekswaarde die de waarde van de licentie-id van het document met beleidsbeveiliging opgeeft (geef de geretourneerde waarde van het document op `DocumentSecurityServiceService` object `getLicenseId` methode).
+      * Een statisch gegevenslid van de `Reason` een opsomming waarin de reden voor intrekking van het document wordt opgegeven. U kunt bijvoorbeeld `Reason.DOCUMENT_REVISED`.
+      * A `string` waarde die de URL-locatie opgeeft waarnaar een gereviseerd document zich bevindt. Als u een gebruiker niet naar een andere URL wilt omleiden, kunt u `null`.
 
 **Codevoorbeelden**
 
@@ -1000,20 +999,20 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Toegang tot ingetrokken documenten opnieuw instellen {#reinstating-access-to-revoked-documents}
 
-U kunt de toegang tot een ingetrokken PDF-document opnieuw instellen, zodat alle kopieën van het ingetrokken document toegankelijk zijn voor gebruikers. Wanneer een gebruiker een hersteld document opent dat werd ingetrokken, kan de gebruiker het document bekijken.
+U kunt de toegang tot een ingetrokken PDF-document opnieuw instellen, zodat alle exemplaren van het ingetrokken document toegankelijk zijn voor gebruikers. Wanneer een gebruiker een hersteld document opent dat werd ingetrokken, kan de gebruiker het document bekijken.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-6}
+### Overzicht van de stappen {#summary_of_steps-6}
 
 Voer de volgende stappen uit om de toegang tot een ingetrokken PDF-document te herstellen:
 
 1. Inclusief projectbestanden.
 1. Maak een API-object voor Document Security Client.
-1. Haal de licentie-id van het ingetrokken PDF-document op.
-1. Toegang tot het ingetrokken PDF-document opnieuw instellen.
+1. Haal de licentiecode van het ingetrokken PDF-document op.
+1. Open het ingetrokken PDF-document opnieuw.
 
 **Projectbestanden opnemen**
 
@@ -1021,11 +1020,11 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService`-object.
+Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService` object.
 
-**De licentie-id van het ingetrokken PDF-document ophalen**
+**De licentiecode van het ingetrokken PDF-document ophalen**
 
-U moet de licentie-id van het ingetrokken PDF-document ophalen om een ingetrokken PDF-document opnieuw in te stellen. Nadat u de waarde van de licentie-id hebt gekregen, kunt u een ingetrokken document opnieuw installeren. Als u probeert een document opnieuw in te voegen dat niet is ingetrokken, veroorzaakt u een uitzondering.
+U moet de licentie-id van het ingetrokken PDF-document ophalen om een ingetrokken PDF-document opnieuw in te voeren. Nadat u de waarde van de licentie-id hebt gekregen, kunt u een ingetrokken document opnieuw installeren. Als u probeert een document opnieuw in te voegen dat niet is ingetrokken, veroorzaakt u een uitzondering.
 
 **Toegang tot het ingetrokken PDF-document opnieuw instellen**
 
@@ -1051,20 +1050,20 @@ Toegang tot een ingetrokken document opnieuw instellen met de API voor documentb
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
-1. Haal de licentie-id van het ingetrokken PDF-document op.
+1. Haal de licentiecode van het ingetrokken PDF-document op.
 
-   * Maak een `java.io.FileInputStream`-object dat het ingetrokken PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Haal de waarde van de licentie-id van het ingetrokken document op door de methode `DocumentManager` van het object `getLicenseId` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het ingetrokken document vertegenwoordigt. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
+   * Een `java.io.FileInputStream` een object dat het ingetrokken PDF-document vertegenwoordigt met de constructor ervan en een tekenreekswaarde doorgeeft die de locatie van het PDF-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `DocumentManager` door het object aan te roepen `DocumentSecurityClient` object `getDocumentManager` methode.
+   * Haal de waarde van de licentie-id van het ingetrokken document op door het `DocumentManager` object `getLicenseId` en het doorgeven van de `com.adobe.idp.Document` object dat staat voor het ingetrokken document. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
 
-1. Toegang tot het ingetrokken PDF-document opnieuw instellen.
+1. Open het ingetrokken PDF-document opnieuw.
 
-   * Maak een `LicenseManager`-object door de methode `getLicenseManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Herstel de toegang tot het ingetrokken PDF-document door de methode `unrevokeLicense` van het object `LicenseManager` aan te roepen en de waarde van de licentie-id van het ingetrokken document door te geven.
+   * Een `LicenseManager` door het object aan te roepen `DocumentSecurityClient` object `getLicenseManager` methode.
+   * Herstel de toegang tot het ingetrokken PDF-document door het `LicenseManager` object `unrevokeLicense` en geeft u de waarde van de licentie-id van het ingetrokken document door.
 
 **Codevoorbeelden**
 
@@ -1078,38 +1077,38 @@ Toegang tot een ingetrokken document opnieuw instellen met de API voor documentb
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
-1. Haal de licentie-id van het ingetrokken PDF-document op.
+1. Haal de licentiecode van het ingetrokken PDF-document op.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een ingetrokken PDF-document opgeslagen waartoe toegang wordt hersteld.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het ingetrokken PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een ingetrokken PDF-document op te slaan dat weer kan worden geopend.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het ingetrokken PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Toegang tot het ingetrokken PDF-document opnieuw instellen.
+1. Open het ingetrokken PDF-document opnieuw.
 
-   * Haal de waarde van de licentie-id van het ingetrokken document op door de methode `DocumentSecurityServiceClient` van het object `getLicenseID` aan te roepen en het object `BLOB` door te geven dat het ingetrokken document vertegenwoordigt. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
-   * Herstel de toegang tot het ingetrokken PDF-document door de methode `unrevokeLicense` van het object `DocumentSecurityServiceClient` aan te roepen en een tekenreekswaarde door te geven die de waarde van de licentie-id van het ingetrokken PDF-document opgeeft (geef de geretourneerde waarde van de methode `getLicenseId` van het object `DocumentSecurityServiceClient` door).
+   * Haal de waarde van de licentie-id van het ingetrokken document op door het `DocumentSecurityServiceClient` object `getLicenseID` en het doorgeven van de `BLOB` object dat staat voor het ingetrokken document. Deze methode retourneert een tekenreekswaarde die de licentie-id vertegenwoordigt.
+   * Herstel de toegang tot het ingetrokken PDF-document door het `DocumentSecurityServiceClient` object `unrevokeLicense` methode en het overgaan van een koordwaarde die de waarde van het vergunningsherkenningsteken van het ingetrokken document van de PDF specificeert (ga de terugkeerwaarde van over `DocumentSecurityServiceClient` object `getLicenseId` methode).
 
 **Codevoorbeelden**
 
@@ -1126,17 +1125,17 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Met beleid beveiligde PDF-documenten controleren {#inspecting-policy-protected-pdf-documents}
 
-U kunt de API (Java en webservice) voor documentbeveiliging gebruiken om PDF-documenten die met een beleid zijn beveiligd, te inspecteren. Als u PDF-documenten inspecteert die met een beleid zijn beveiligd, wordt informatie over het met een beleid beveiligde PDF-document geretourneerd. U kunt bijvoorbeeld bepalen welk beleid is gebruikt om het document te beveiligen en op welke datum het document is beveiligd.
+U kunt de API voor documentbeveiligingsservice (Java en webservice) gebruiken om met beleid beveiligde PDF-documenten te inspecteren. Wanneer u documenten met door een beleid beveiligde PDF controleert, wordt informatie over het document met door een beleid beveiligde PDF geretourneerd. U kunt bijvoorbeeld bepalen welk beleid is gebruikt om het document te beveiligen en op welke datum het document is beveiligd.
 
 U kunt deze taak niet uitvoeren als uw versie van LiveCycle 8.x of een vroegere versie is. Ondersteuning voor het inspecteren van documenten die met een beleid zijn beveiligd, wordt toegevoegd in AEM Forms. Als u probeert een document te inspecteren dat met een beleid is beveiligd met behulp van LiveCycle 8.x (of eerder), wordt een uitzondering gegenereerd.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-7}
+### Overzicht van de stappen {#summary_of_steps-7}
 
-Voer de volgende stappen uit om een PDF-document te inspecteren dat met een beleid is beveiligd:
+Voer de volgende stappen uit om een met beleid beveiligd PDF-document te inspecteren:
 
 1. Inclusief projectbestanden.
 1. Maak een API-object voor Document Security Client.
@@ -1149,7 +1148,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u via programmacode een bewerking met de documentbeveiligingsservice kunt uitvoeren, maakt u een clientobject van de documentbeveiligingsservice. Als u de Java API gebruikt, maakt u een `RightsManagementClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService`-object.
+Voordat u via programmacode een bewerking met de documentbeveiligingsservice kunt uitvoeren, maakt u een clientobject van de documentbeveiligingsservice. Als u de Java API gebruikt, maakt u een `RightsManagementClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService` object.
 
 **Een document ophalen dat met een beleid is beveiligd om te worden geïnspecteerd**
 
@@ -1161,11 +1160,11 @@ Nadat u een document hebt opgehaald dat met een beleid is beveiligd, kunt u het 
 
 **Informatie opvragen over het document dat met een beleid is beveiligd**
 
-Nadat u een PDF-document hebt gecontroleerd dat met een beleid is beveiligd, kunt u er informatie over verkrijgen. U kunt bijvoorbeeld bepalen welk beleid wordt gebruikt om het document te beveiligen.
+Nadat u een beleid-beschermd document van de PDF inspecteert, kunt u informatie over het verkrijgen. U kunt bijvoorbeeld bepalen welk beleid wordt gebruikt om het document te beveiligen.
 
-Als u een document met een beleid beveiligt dat tot Mijn Beleid behoort en dan `RMInspectResult.getPolicysetName` of `RMInspectResult.getPolicysetId` roept, is ongeldig teruggekeerd.
+Als u een document met een beleid beveiligt dat tot Mijn Beleid behoort en dan roept `RMInspectResult.getPolicysetName` of `RMInspectResult.getPolicysetId`, null wordt geretourneerd.
 
-Als het document wordt beveiligd met behulp van een beleid dat in een beleidsreeks (buiten Mijn Beleid) bevat dan `RMInspectResult.getPolicysetName` en `RMInspectResult.getPolicysetId` terugkeer geldige koorden.
+Als het document wordt beveiligd met een beleid dat is opgenomen in een beleidsset (anders dan Mijn beleid) dan `RMInspectResult.getPolicysetName` en `RMInspectResult.getPolicysetId` geldige tekenreeksen retourneren.
 
 **Zie ook**
 
@@ -1173,80 +1172,80 @@ Als het document wordt beveiligd met behulp van een beleid dat in een beleidsree
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Met Inspect Policy beveiligde PDF-documenten met de Java API {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Inspect Policy Protected PDF Documents using the Java API {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-Inspect a policy-protected PDF document by the Document Security Service API (Java):
+Inspect a policy-protected PDF document by using the Document Security Service API (Java):
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze bestanden.
+   Neem client-JAR-bestanden, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Haal een document op dat met een beleid is beveiligd om te inspecteren.
 
-   * Maak een `java.io.FileInputStream`-object dat het met een beleid beveiligde PDF-document vertegenwoordigt met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` object dat het met een beleid beveiligde PDF-document vertegenwoordigt met behulp van de constructor ervan. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Inspect het document.
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `RightsManagementClient` aan te roepen.
-   * Inspect het document met beveiligingsbeleid door de methode `inspectDocument` van het object `LicenseManager` aan te roepen. Geef het `com.adobe.idp.Document`-object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult`-object dat informatie bevat over het document dat met een beleid is beveiligd.
+   * Een `DocumentManager` door het object aan te roepen `RightsManagementClient` object `getDocumentManager` methode.
+   * Inspect het document dat met een beleid is beveiligd door het `LicenseManager` object `inspectDocument` methode. Geef de `com.adobe.idp.Document` -object dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
 
 1. Verkrijg informatie over het beleid-beschermde document.
 
-   Om informatie over het beleid-beschermde document te verkrijgen, haal de aangewezen methode aan die `RMInspectResult` voorwerp behoort. Als u bijvoorbeeld de naam van het beleid wilt ophalen, roept u de methode `getPolicyName` van het object `RMInspectResult` aan.
+   Om informatie over het beleid-beschermde document te verkrijgen, haal de aangewezen methode aan die behoort `RMInspectResult` object. Als u bijvoorbeeld de naam van het beleid wilt ophalen, roept u de `RMInspectResult` object `getPolicyName` methode.
 
 **Codevoorbeelden**
 
 Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): Met beleid beveiligde PDF-documenten controleren met de Java API&quot;
+* &quot;Snel starten (SOAP-modus): Met beleid beveiligde PDF-documenten inspecteren met de Java API&quot;
 
-### Met Inspect Policy beveiligde PDF-documenten met de webservice-API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Inspect Policy Protected PDF Documents using the web service API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-Inspect a policy protected PDF document by the Document Security Service API (webservice):
+Inspect a policy-protected PDF document by the Document Security Service API (webservice):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Haal een document op dat met een beleid is beveiligd om te inspecteren.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen dat moet worden geïnspecteerd.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een PDF-document op te slaan dat moet worden geïnspecteerd.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Inspect het document.
 
-   Inspect het document met beveiligingsbeleid door de methode `inspectDocument` van het object `RightsManagementServiceClient` aan te roepen. Geef het `BLOB`-object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult`-object dat informatie bevat over het document dat met een beleid is beveiligd.
+   Inspect het document dat met een beleid is beveiligd door het `RightsManagementServiceClient` object `inspectDocument` methode. Geef de `BLOB` -object dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
 
 1. Verkrijg informatie over het beleid-beschermde document.
 
-   Om informatie over het beleid-beschermde document te verkrijgen, krijg de waarde van het aangewezen gebied dat tot het `RMInspectResult` voorwerp behoort. Als u bijvoorbeeld de naam van het beleid wilt ophalen, krijgt u de waarde van het veld `RMInspectResult` van het object.`policyName`
+   Om informatie over het beleid beschermde document te verkrijgen, krijg de waarde van het aangewezen gebied dat tot `RMInspectResult` object. Als u bijvoorbeeld de naam van het beleid wilt ophalen, krijgt u de waarde van de knop `RMInspectResult` object `policyName` veld.
 
 **Codevoorbeelden**
 
@@ -1263,7 +1262,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Watermerken maken {#creating-watermarks}
 
-Watermerken helpen de veiligheid van een document te waarborgen door het document op unieke wijze te identificeren en de inbreuk op het auteursrecht te controleren. U kunt bijvoorbeeld een watermerk maken en plaatsen dat op alle pagina&#39;s van een document de tekst Vertrouwelijk aangeeft. Nadat u een watermerk hebt gemaakt, kunt u dit opnemen in een beleid. U kunt dus het watermerkkenmerk van het beleid instellen met het nieuwe watermerk. Nadat een beleid met een watermerk is toegepast op een document, wordt het watermerk weergegeven in het document dat met een beleid is beveiligd.
+Watermerken helpen de veiligheid van een document te waarborgen door het document op unieke wijze te identificeren en de inbreuk op het auteursrecht te controleren. U kunt bijvoorbeeld een watermerk maken en plaatsen dat op alle pagina&#39;s van een document de tekst Vertrouwelijk aangeeft. Nadat u een watermerk hebt gemaakt, kunt u dit opnemen in een beleid. Met andere woorden, u kunt het watermerkkenmerk van het beleid instellen met het nieuwe watermerk. Nadat een beleid met een watermerk is toegepast op een document, wordt het watermerk weergegeven in het document dat met een beleid is beveiligd.
 
 >[!NOTE]
 >
@@ -1271,9 +1270,9 @@ Watermerken helpen de veiligheid van een document te waarborgen door het documen
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-8}
+### Overzicht van de stappen {#summary_of_steps-8}
 
 Voer de volgende stappen uit om een watermerk te maken:
 
@@ -1288,7 +1287,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService`-object.
+Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `RightsManagementClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `RightsManagementServiceService` object.
 
 **De kenmerken van watermerken instellen**
 
@@ -1342,7 +1341,7 @@ De volgende tabel bevat een lijst met sleutel- en waardeparen die zijn vereist v
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>Als deze waarde wordt opgegeven, moet <code>WaterBackCmd:IS_SIZE_ENABLED</code> aanwezig zijn en moet de waarde true zijn. Als dit kenmerk niet is opgegeven, wordt het standaardgedrag aan de pagina aangepast.</p></td>
+   <td><p>Als deze waarde is opgegeven, <code>WaterBackCmd:IS_SIZE_ENABLED</code> moet aanwezig zijn en de waarde moet waar zijn. Als dit kenmerk niet is opgegeven, wordt het standaardgedrag aan de pagina aangepast.</p></td>
    <td><p>Een waarde die groter is dan 0.0 en kleiner dan of gelijk aan 1.0.</p></td>
   </tr>
   <tr>
@@ -1367,7 +1366,7 @@ De volgende tabel bevat een lijst met sleutel- en waardeparen die zijn vereist v
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
-   <td><p>Hiermee wordt de aangepaste tekst voor een watermerk opgegeven. Als deze waarde aanwezig is, moet <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> ook aanwezig zijn en op waar worden geplaatst.</p></td>
+   <td><p>Hiermee wordt de aangepaste tekst voor een watermerk opgegeven. Als deze waarde aanwezig is, dan <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> moet ook aanwezig zijn en op waar worden geplaatst.</p></td>
    <td><p>Waar of Onwaar</p></td>
   </tr>
  </tbody>
@@ -1400,25 +1399,25 @@ Een watermerk maken met de API voor documentbeveiliging (Java):
 
 1. Inclusief projectbestanden.
 
-   Neem JAR-bestanden van de client, zoals de `adobe-rightsmanagement-client.jar`, op in het klassepad van uw Java-project.
+   Inclusief JAR-bestanden voor clients, zoals de `adobe-rightsmanagement-client.jar`, in het klassenpad van uw Java-project.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. De kenmerken van het watermerk instellen
 
-   * Maak een `Watermark`-object door de statische methode `createWatermark` van het object aan te roepen. `InfomodelObjectFactory` Deze methode retourneert een `Watermark`-object.
-   * Stel het naamkenmerk van het watermerk in door de methode `setName` van het object `Watermark` aan te roepen en een tekenreekswaarde door te geven die de naam van het beleid aangeeft.
-   * Stel het achtergrondkenmerk van het watermerk in door de methode `setBackground` van het object `Watermark` aan te roepen en `true` door te geven. Door dit kenmerk in te stellen, verschijnt het watermerk op de achtergrond van het document.
-   * Stel het aangepaste tekstkenmerk van het watermerk in door de methode `setCustomText` van het object `Watermark` aan te roepen en een tekenreekswaarde door te geven die de tekst van het watermerk vertegenwoordigt.
-   * Stel het kenmerk opacity van het watermerk in door de methode `setOpacity` van het object `Watermark` aan te roepen en een geheel-getalwaarde door te geven die het dekkingsniveau opgeeft. De waarde 100 geeft aan dat het watermerk volledig dekkend is en de waarde 0 geeft aan dat het watermerk volledig transparant is.
+   * Een `Watermark` door het object aan te roepen `InfomodelObjectFactory` statisch object `createWatermark` methode. Deze methode retourneert een `Watermark` object.
+   * Stel het naamkenmerk van het watermerk in door het `Watermark` object `setName` methode en het overgaan van een koordwaarde die de beleidsnaam specificeert.
+   * Stel het achtergrondkenmerk van het watermerk in door het `Watermark` object `setBackground` methode en doorgeven `true`. Door dit kenmerk in te stellen, verschijnt het watermerk op de achtergrond van het document.
+   * Stel het aangepaste tekstkenmerk van het watermerk in door het `Watermark` object `setCustomText` en het doorgeven van een tekenreekswaarde die de tekst van het watermerk vertegenwoordigt.
+   * Stel het kenmerk Dekking van het watermerk in door het `Watermark` object `setOpacity` methode en het overgaan van een geheelwaarde die het opaciteitniveau specificeert. De waarde 100 geeft aan dat het watermerk volledig dekkend is en de waarde 0 geeft aan dat het watermerk volledig transparant is.
 
 1. Registreer het watermerk.
 
-   * Maak een `WatermarkManager`-object door de methode `getWatermarkManager` van het object `RightsManagementClient` aan te roepen. Deze methode retourneert een `WatermarkManager`-object.
-   * Registreer het watermerk door de methode `registerWatermark` van het object `WatermarkManager` aan te roepen en het object `Watermark` door te geven dat het te registreren watermerk vertegenwoordigt. Deze methode retourneert een tekenreekswaarde die de identificatiewaarde van het watermerk vertegenwoordigt.
+   * Een `WatermarkManager` door het object aan te roepen `RightsManagementClient` object `getWatermarkManager` methode. Deze methode retourneert een `WatermarkManager` object.
+   * Registreer het watermerk door de `WatermarkManager` object `registerWatermark` en het doorgeven van de `Watermark` object dat staat voor het watermerk dat moet worden geregistreerd. Deze methode retourneert een tekenreekswaarde die de identificatiewaarde van het watermerk vertegenwoordigt.
 
 **Codevoorbeelden**
 
@@ -1432,40 +1431,40 @@ Een watermerk maken met de API voor documentbeveiliging (webservice):
 
 1. Maak een API-object voor Document Security Client.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Stel de kenmerken van het watermerk in.
 
-   * Maak een `WatermarkSpec`-object door de constructor `WatermarkSpec` aan te roepen.
-   * Stel de naam van het watermerk in door een tekenreekswaarde toe te wijzen aan het `WatermarkSpec`-gegevenslid van het object.`name`
-   * Stel het kenmerk `id` van het watermerk in door een tekenreekswaarde toe te wijzen aan het `WatermarkSpec`-gegevenslid van het object `id`.
-   * Voor elke watermerkeigenschap die moet worden ingesteld, maakt u een afzonderlijk `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Stel de hoofdwaarde in door een waarde toe te wijzen aan het `MyMapOf_xsd_string_To_xsd_anyType_Item`-gegevenslid van het object (bijvoorbeeld `WaterBackCmd:OPACITY)`).`key`
-   * Stel de waarde in door een waarde toe te wijzen aan het `MyMapOf_xsd_string_To_xsd_anyType_Item`-gegevenslid van het `value`-object (bijvoorbeeld `.25`).
-   * Maak een `MyArrayOf_xsd_anyType`-object. Roep voor elk `MyMapOf_xsd_string_To_xsd_anyType_Item`-object de methode `Add` van het `MyArrayOf_xsd_anyType`-object aan. Geef het object `MyMapOf_xsd_string_To_xsd_anyType_Item` door.
-   * Wijs het `MyArrayOf_xsd_anyType`-object toe aan het `WatermarkSpec`-gegevenslid van het object.`values`
+   * Een `WatermarkSpec` door het object aan te roepen `WatermarkSpec` constructor.
+   * Stel de naam van het watermerk in door een tekenreekswaarde toe te wijzen aan de `WatermarkSpec` object `name` lid.
+   * De instellingen van het watermerk instellen `id` door een tekenreekswaarde toe te wijzen aan de `WatermarkSpec` object `id` lid.
+   * Voor elke watermerkeigenschap die moet worden ingesteld, maakt u een aparte eigenschap `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Stel de sleutelwaarde in door een waarde toe te wijzen aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` lid van de gegevens (bijvoorbeeld `WaterBackCmd:OPACITY)`.
+   * Stel de waarde in door een waarde toe te wijzen aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` lid van de gegevens (bijvoorbeeld `.25`).
+   * Een `MyArrayOf_xsd_anyType` object. Voor elke `MyMapOf_xsd_string_To_xsd_anyType_Item` object, activeert het `MyArrayOf_xsd_anyType` object `Add` methode. Geef de `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs het `MyArrayOf_xsd_anyType` aan `WatermarkSpec` object `values` lid.
 
 1. Registreer het watermerk.
 
-   Registreer het watermerk door de methode `registerWatermark` van het object `RightsManagementServiceClient` aan te roepen en het object `WatermarkSpec` door te geven dat het te registreren watermerk vertegenwoordigt.
+   Registreer het watermerk door de `RightsManagementServiceClient` object `registerWatermark` en het doorgeven van de `WatermarkSpec` object dat staat voor het watermerk dat moet worden geregistreerd.
 
 **Codevoorbeelden**
 
@@ -1484,7 +1483,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 U kunt een bestaand watermerk wijzigen met de Java API voor documentbeveiliging of de webservice-API. Als u wijzigingen wilt aanbrengen in een bestaand watermerk, haalt u het watermerk op, wijzigt u de kenmerken ervan en werkt u het watermerk vervolgens bij op de server. Stel dat u een watermerk ophaalt en het kenmerk Dekking wijzigt. Voordat de wijziging van kracht wordt, moet u het watermerk bijwerken.
 
-Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige documenten waarop het watermerk is toegepast. Dit betekent dat bestaande PDF-documenten die het watermerk bevatten, niet worden gewijzigd.
+Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige documenten waarop het watermerk is toegepast. Dat wil zeggen dat bestaande PDF-documenten die het watermerk bevatten, niet worden beïnvloed.
 
 >[!NOTE]
 >
@@ -1492,9 +1491,9 @@ Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige docu
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-9}
+### Overzicht van de stappen {#summary_of_steps-9}
 
 Voer de volgende stappen uit om een watermerk te wijzigen:
 
@@ -1510,7 +1509,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een API-object voor documentbeveiliging maken**
 
-Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient`-object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService`-object.
+Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, moet u een Document Security-service-clientobject maken. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de API voor documentbeveiliging gebruikt, maakt u een `DocumentSecurityServiceService` object.
 
 **Het te wijzigen watermerk ophalen**
 
@@ -1518,7 +1517,7 @@ Als u een watermerk wilt wijzigen, moet u een bestaand watermerk ophalen. U kunt
 
 **De kenmerken van watermerken instellen**
 
-Als u een bestaand watermerk wilt wijzigen, wijzigt u de waarde van een of meer kenmerken van het watermerk. Wanneer u via programmacode een watermerk bijwerkt met behulp van een webservice, moet u alle kenmerken instellen die oorspronkelijk zijn ingesteld, zelfs als de waarde niet verandert. Stel bijvoorbeeld dat de volgende watermerkkenmerken zijn ingesteld: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` en `WaterBackCmd:SRCTEXT`. Hoewel het enige attribuut dat u wilt wijzigen `WaterBackCmd:OPACITY` is, moet u de andere waarden plaatsen goed zijn.
+Als u een bestaand watermerk wilt wijzigen, wijzigt u de waarde van een of meer kenmerken van het watermerk. Wanneer u via programmacode een watermerk bijwerkt met behulp van een webservice, moet u alle kenmerken instellen die oorspronkelijk zijn ingesteld, zelfs als de waarde niet verandert. Stel bijvoorbeeld dat de volgende watermerkkenmerken zijn ingesteld: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY`, en `WaterBackCmd:SRCTEXT`. Het enige kenmerk dat u wilt wijzigen, is `WaterBackCmd:OPACITY`, moet u instellen dat de andere waarden goed zijn.
 
 >[!NOTE]
 >
@@ -1526,7 +1525,7 @@ Als u een bestaand watermerk wilt wijzigen, wijzigt u de waarde van een of meer 
 
 >[!NOTE]
 >
->Zie [Watermerken maken](protecting-documents-policies.md#creating-watermarks) voor informatie over de namen van watermerkkenmerken.
+>Voor informatie over de namen van watermerkkenmerken raadpleegt u [Watermerken maken](protecting-documents-policies.md#creating-watermarks).
 
 **Het watermerk bijwerken**
 
@@ -1550,16 +1549,16 @@ Een watermerk wijzigen met de API voor documentbeveiliging (Java):
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Haal het watermerk op dat u wilt wijzigen.
 
-   Maak een `WatermarkManager`-object door de methode `getWatermarkManager` van het object `DocumentSecurityClient` aan te roepen en een tekenreekswaarde door te geven die de naam van het watermerk opgeeft. Deze methode retourneert een `Watermark`-object dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
+   Een `WatermarkManager` door het object aan te roepen `DocumentSecurityClient` object `getWatermarkManager` en geeft een tekenreekswaarde door die de naam van het watermerk aangeeft. Deze methode retourneert een `Watermark` object dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
 
 1. Stel de kenmerken van het watermerk in.
 
-   Stel het kenmerk opacity van het watermerk in door de methode `setOpacity` van het object `Watermark` aan te roepen en een geheel-getalwaarde door te geven die het dekkingsniveau opgeeft. De waarde 100 geeft aan dat het watermerk volledig dekkend is en de waarde 0 geeft aan dat het watermerk volledig transparant is.
+   Stel het kenmerk Dekking van het watermerk in door het `Watermark` object `setOpacity` methode en het overgaan van een geheelwaarde die het opaciteitniveau specificeert. De waarde 100 geeft aan dat het watermerk volledig dekkend is en de waarde 0 geeft aan dat het watermerk volledig transparant is.
 
    >[!NOTE]
    >
@@ -1567,7 +1566,7 @@ Een watermerk wijzigen met de API voor documentbeveiliging (Java):
 
 1. Werk het watermerk bij.
 
-   * Werk het watermerk bij door de methode `updateWatermark` van het object `WatermarkManager` aan te roepen en geef het object `Watermark` door waarvan het kenmerk is gewijzigd.
+   * Werk het watermerk bij door de `WatermarkManager` object `updateWatermark` en geeft de `Watermark` object waarvan het kenmerk is gewijzigd.
 
 **Codevoorbeelden**
 
@@ -1579,41 +1578,41 @@ Wijzig een watermerk met de API voor documentbeveiliging (webservice):
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Haal het watermerk op dat u wilt wijzigen.
 
-   Haal het watermerk op dat u wilt wijzigen door de methode `getWatermarkByName` van het object `DocumentSecurityServiceClient` aan te roepen. Geef een tekenreekswaarde door die de naam van het watermerk aangeeft. Deze methode retourneert een `WatermarkSpec`-object dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
+   Haal het watermerk op dat u wilt wijzigen door het `DocumentSecurityServiceClient` object `getWatermarkByName` methode. Geef een tekenreekswaarde door die de naam van het watermerk aangeeft. Deze methode retourneert een `WatermarkSpec` object dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
 
 1. Stel de kenmerken van het watermerk in.
 
-   * Voor elke watermerkeigenschap die moet worden bijgewerkt, maakt u een afzonderlijk `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Stel de hoofdwaarde in door een waarde toe te wijzen aan het `MyMapOf_xsd_string_To_xsd_anyType_Item`-gegevenslid van het object (bijvoorbeeld `WaterBackCmd:OPACITY)`).`key`
-   * Stel de waarde in door een waarde toe te wijzen aan het `MyMapOf_xsd_string_To_xsd_anyType_Item`-gegevenslid van het `value`-object (bijvoorbeeld `.50`).
-   * Maak een `MyArrayOf_xsd_anyType`-object. Roep voor elk `MyMapOf_xsd_string_To_xsd_anyType_Item`-object de methode `Add` van het `MyArrayOf_xsd_anyType`-object aan. Geef het object `MyMapOf_xsd_string_To_xsd_anyType_Item` door.
-   * Wijs het `MyArrayOf_xsd_anyType`-object toe aan het `WatermarkSpec`-gegevenslid van het object.`values`
+   * Voor elke watermerkeigenschap die moet worden bijgewerkt, maakt u een aparte `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Stel de sleutelwaarde in door een waarde toe te wijzen aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` lid van de gegevens (bijvoorbeeld `WaterBackCmd:OPACITY)`.
+   * Stel de waarde in door een waarde toe te wijzen aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` lid van de gegevens (bijvoorbeeld `.50`).
+   * Een `MyArrayOf_xsd_anyType` object. Voor elke `MyMapOf_xsd_string_To_xsd_anyType_Item` object, activeert het `MyArrayOf_xsd_anyType` object `Add` methode. Geef de `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs het `MyArrayOf_xsd_anyType` aan `WatermarkSpec` object `values` lid.
 
 1. Werk het watermerk bij.
 
-   Werk het watermerk bij door de methode `updateWatermark` van het object `DocumentSecurityServiceClient` aan te roepen en het object `WatermarkSpec` door te geven dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
+   Werk het watermerk bij door de `DocumentSecurityServiceClient` object `updateWatermark` en het doorgeven van de `WatermarkSpec` object dat het watermerk vertegenwoordigt dat moet worden gewijzigd.
 
 **Codevoorbeelden**
 
@@ -1636,9 +1635,9 @@ U kunt zoeken naar specifieke gebeurtenissen met de Rights Management Java API o
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van het Rights Management, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van het Rights Management, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-10}
+### Overzicht van de stappen {#summary_of_steps-10}
 
 Voer de volgende stappen uit om te zoeken naar een Rights Management-gebeurtenis:
 
@@ -1653,7 +1652,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Rights Management Client API-object maken**
 
-Alvorens u een de dienstverrichting van het Rights Management programmatically kunt uitvoeren, moet u een voorwerp van de de dienstcliënt van het Rights Management tot stand brengen. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient`-object. Als u de API van de Webdienst van het Rights Management gebruikt, creeer een `DocumentSecurityServiceService` voorwerp.
+Alvorens u een de dienstverrichting van het Rights Management programmatically kunt uitvoeren, moet u een voorwerp van de de dienstcliënt van het Rights Management tot stand brengen. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de API voor webservices van het Rights Management gebruikt, maakt u een `DocumentSecurityServiceService` object.
 
 **Geef de gebeurtenissen op waarnaar u wilt zoeken**
 
@@ -1679,21 +1678,21 @@ U kunt naar gebeurtenissen zoeken met de API voor Rights Managementen (Java):
 
 1. Een Rights Management Client API-object maken
 
-   Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. Geef de gebeurtenissen op waarnaar u wilt zoeken
 
-   * Maak een `EventManager`-object door de methode `getEventManager` van het object `DocumentSecurityClient` aan te roepen. Deze methode retourneert een `EventManager`-object.
-   * Maak een `EventSearchFilter`-object door de constructor ervan aan te roepen.
-   * Geef de gebeurtenis op waarnaar moet worden gezocht door de methode `setEventCode` van het object `EventSearchFilter` aan te roepen en een lid van een statisch gegeven door te geven dat tot de klasse `EventManager` behoort die de gebeurtenis vertegenwoordigt waarnaar moet worden gezocht. Als u bijvoorbeeld wilt zoeken naar het beleid, maakt u een gebeurtenis door `EventManager.POLICY_CREATE_EVENT` door te geven.
+   * Een `EventManager` door het object aan te roepen `DocumentSecurityClient` object `getEventManager` methode. Deze methode retourneert een `EventManager` object.
+   * Een `EventSearchFilter` object door de constructor ervan aan te roepen.
+   * Geef de gebeurtenis op waarnaar u wilt zoeken door het dialoogvenster `EventSearchFilter` object `setEventCode` methode en het overgaan van een statisch gegevenslid dat tot `EventManager` klasse die de gebeurtenis vertegenwoordigt waarnaar moet worden gezocht. Als u bijvoorbeeld naar het beleid wilt zoeken, moet u `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
-   >U kunt aanvullende zoekcriteria definiëren door objectmethoden `EventSearchFilter` aan te roepen. Roep bijvoorbeeld de methode `setUserName` aan om een gebruiker op te geven die aan de gebeurtenis is gekoppeld.
+   >U kunt aanvullende zoekcriteria definiëren door een aanroep te maken `EventSearchFilter` objectmethoden. Roep bijvoorbeeld het `setUserName` methode om een gebruiker op te geven die aan de gebeurtenis is gekoppeld.
 
 1. Zoeken naar de gebeurtenis
 
-   Zoek naar de gebeurtenis door de methode `searchForEvents` van het `EventManager` voorwerp aan te roepen en het `EventSearchFilter` voorwerp over te gaan dat de criteria van het gebeurtenisonderzoek bepaalt. Deze methode retourneert een array van `Event`-objecten.
+   Zoeken naar de gebeurtenis door de `EventManager` object `searchForEvents` en het doorgeven van de `EventSearchFilter` object dat de zoekcriteria voor gebeurtenissen definieert. Deze methode retourneert een array met `Event` objecten.
 
 **Codevoorbeelden**
 
@@ -1707,34 +1706,34 @@ U kunt naar gebeurtenissen zoeken met de Rights Management-API (webservice):
 
 1. Projectbestanden opnemen
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een Rights Management Client API-object maken
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Geef de gebeurtenissen op waarnaar u wilt zoeken
 
-   * Maak een `EventSpec`-object met de constructor ervan.
-   * Geef het begin op van de tijdsperiode waarin de gebeurtenis heeft plaatsgevonden door het `EventSpec`-gegevenslid van het object `firstTime.date` in te stellen met `DataTime`-instantie die het begin van het datumbereik vertegenwoordigt op het moment dat de gebeurtenis plaatsvond.
-   * Wijs de waarde `true` toe aan het `EventSpec` gegevenslid van het object.`firstTime.dateSpecified`
-   * Geef het einde van de tijdsperiode waarin de gebeurtenis heeft plaatsgevonden op door het `EventSpec`-gegevenslid van het object `lastTime.date` in te stellen met `DataTime`-instantie die het einde van het datumbereik vertegenwoordigt op het moment dat de gebeurtenis plaatsvond.
-   * Wijs de waarde `true` toe aan het `EventSpec` gegevenslid van het object.`lastTime.dateSpecified`
-   * Stel de gebeurtenis waarnaar moet worden gezocht in door een tekenreekswaarde toe te wijzen aan het `eventCode`-gegevenslid van het object. `EventSpec` In de volgende tabel worden de numerieke waarden weergegeven die u aan deze eigenschap kunt toewijzen:
+   * Een `EventSpec` object met behulp van de constructor.
+   * Geef het begin op van de periode waarin de gebeurtenis heeft plaatsgevonden door het instellen van de `EventSpec` object `firstTime.date` lid met gegevens `DataTime` instantie die het begin van het datumbereik vertegenwoordigt wanneer de gebeurtenis plaatsvond.
+   * De waarde toewijzen `true` aan de `EventSpec` object `firstTime.dateSpecified` lid.
+   * Geef het einde op van de periode waarin de gebeurtenis heeft plaatsgevonden door het instellen van de `EventSpec` object `lastTime.date` lid met gegevens `DataTime` instantie die het einde van het datumbereik vertegenwoordigt wanneer de gebeurtenis heeft plaatsgevonden.
+   * De waarde toewijzen `true` aan de `EventSpec` object `lastTime.dateSpecified` lid.
+   * Stel de gebeurtenis waarnaar u wilt zoeken in door een tekenreekswaarde toe te wijzen aan de `EventSpec` object `eventCode` lid. In de volgende tabel worden de numerieke waarden weergegeven die u aan deze eigenschap kunt toewijzen:
 
    <table>
     <thead>
@@ -1937,7 +1936,7 @@ U kunt naar gebeurtenissen zoeken met de Rights Management-API (webservice):
 
 1. Zoeken naar de gebeurtenis
 
-   Zoek naar de gebeurtenis door de `DocumentSecurityServiceClient` methode van objecten `searchForEvents` aan te roepen en het `EventSpec` voorwerp over te gaan dat de gebeurtenis vertegenwoordigt waarvoor om te zoeken en het maximumaantal resultaten. Deze methode keert een `MyArrayOf_xsd_anyType` inzameling terug waar elk element een `AuditSpec` instantie is. Met behulp van een `AuditSpec`-instantie kunt u informatie opvragen over de gebeurtenis, zoals het tijdstip waarop deze heeft plaatsgevonden. De `AuditSpec`-instantie bevat een `timestamp`-gegevenslid dat deze informatie opgeeft.
+   Zoeken naar de gebeurtenis door de `DocumentSecurityServiceClient` object `searchForEvents` en het doorgeven van de `EventSpec` object dat de gebeurtenis vertegenwoordigt waarnaar moet worden gezocht en het maximale aantal resultaten. Deze methode retourneert een `MyArrayOf_xsd_anyType` verzameling waarbij elk element een `AuditSpec` -instantie. Een `AuditSpec` kunt u informatie opvragen over de gebeurtenis, zoals het tijdstip waarop deze heeft plaatsgevonden. De `AuditSpec` instantie bevat een `timestamp` gegevenslid dat deze informatie specificeert.
 
 **Codevoorbeelden**
 
@@ -1954,15 +1953,15 @@ Voor codevoorbeelden die de dienst van het Rights Management gebruiken, zie Snel
 
 ## Beleid toepassen op Word-documenten {#applying-policies-to-word-documents}
 
-Naast PDF-documenten ondersteunt de Rights Management-service extra documentindelingen, zoals een Microsoft Word-document (DOC-bestand) en andere Microsoft Office-bestandsindelingen. U kunt bijvoorbeeld een beleid toepassen op een Word-document om dit te beveiligen. Door een beleid op een document van Word toe te passen, beperkt u toegang tot het document. U kunt geen beleid op een document toepassen als het document reeds met een beleid wordt beveiligd.
+Naast PDF-documenten biedt de Rights Management-service ondersteuning voor aanvullende documentindelingen, zoals een Microsoft Word-document (DOC-bestand) en andere Microsoft Office-bestandsindelingen. U kunt bijvoorbeeld een beleid toepassen op een Word-document om dit te beveiligen. Door een beleid op een document van Word toe te passen, beperkt u toegang tot het document. U kunt geen beleid op een document toepassen als het document reeds met een beleid wordt beveiligd.
 
 U kunt het gebruik van een beleid-beschermd document van Word controleren nadat u het verspreidt. Dat wil zeggen dat u kunt zien hoe het document wordt gebruikt en wie het gebruikt. U kunt bijvoorbeeld zien wanneer iemand het document heeft geopend.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-11}
+### Overzicht van de stappen {#summary_of_steps-11}
 
 Voer de volgende stappen uit om een beleid toe te passen op een Word-document:
 
@@ -2010,35 +2009,35 @@ Een beleid toepassen op een Word-document met behulp van de API voor documentbev
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `DocumentSecurityClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `DocumentSecurityClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Hiermee haalt u een Word-document op.
 
-   * Maak een `java.io.FileInputStream`-object dat het Word-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het Word-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` object dat het Word-document vertegenwoordigt met behulp van de constructor en een tekenreekswaarde doorgeeft die de locatie van het Word-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Pas een bestaand beleid op het document van Word toe.
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `DocumentSecurityClient` aan te roepen.
-   * Pas een beleid op het document van Word toe door de `DocumentManager` methode van objecten `protectDocument` aan te halen en de volgende waarden over te gaan:
+   * Een `DocumentManager` door het object aan te roepen `DocumentSecurityClient` object `getDocumentManager` methode.
+   * Pas een beleid op het document van Word toe door aan te halen `DocumentManager` object `protectDocument` en geeft de volgende waarden door:
 
-      * Het `com.adobe.idp.Document`-object dat het Word-document bevat waarop het beleid wordt toegepast.
+      * De `com.adobe.idp.Document` -object dat het Word-document bevat waarop het beleid wordt toegepast.
       * Een tekenreekswaarde die de naam van het document aangeeft.
-      * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+      * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde die resulteert in de `MyPolicies` de gebruikte beleidsset.
       * Een tekenreekswaarde die de beleidsnaam opgeeft.
       * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde null zijn).
-      * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` zijn (als deze parameter `null` is, moet de vorige parameterwaarde `null` zijn).
-      * A `com.adobe.livecycle.rightsmanagement.Locale` die de scène vertegenwoordigt die voor het selecteren van het malplaatje van MS Office wordt gebruikt. Deze parameterwaarde is optioneel en u kunt `null` opgeven.
+      * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` (als deze parameter `null`moet de vorige parameterwaarde `null`).
+      * A `com.adobe.livecycle.rightsmanagement.Locale` die de landinstelling vertegenwoordigt die wordt gebruikt voor het selecteren van de sjabloon MS Office. Deze parameterwaarde is optioneel en u kunt `null`.
 
-      De methode `protectDocument` retourneert een `RMSecureDocumentResult`-object dat het document bevat dat door het beleid is beveiligd.
+      De `protectDocument` methode retourneert een `RMSecureDocumentResult` -object dat het door het beleid beveiligde Word-document bevat.
 
 
 1. Sla het Word-document op.
 
-   * Roep de methode `RMSecureDocumentResult` van het object `getProtectedDoc` aan om het document van Word met beveiligingsbeleid te verkrijgen. Deze methode retourneert een `com.adobe.idp.Document`-object.
-   * Maak een `java.io.File`-object en zorg dat de bestandsextensie DOC is.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `getProtectedDoc` is geretourneerd).
+   * De `RMSecureDocumentResult` object `getProtectedDoc` om het door het beleid beveiligde Word-document op te halen. Deze methode retourneert een `com.adobe.idp.Document` object.
+   * Een `java.io.File` -object en zorg ervoor dat de bestandsextensie DOC is.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `getProtectedDoc` methode).
 
 **Codevoorbeelden**
 
@@ -2052,63 +2051,63 @@ Pas een beleid op een document van Word toe door de Veiligheid API van het Docum
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een API-object voor Document Security Client.
 
-   * Maak een `DocumentSecurityServiceClient`-object met de standaardconstructor.
-   * Maak een `DocumentSecurityServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DocumentSecurityServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `DocumentSecurityServiceClient` object met de standaardconstructor.
+   * Een `DocumentSecurityServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DocumentSecurityServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Hiermee haalt u een Word-document op.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om een Word-document op te slaan waarop een beleid wordt toegepast.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het Word-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. Bepaal de grootte van de bytearray door de `System.IO.FileStream`-eigenschap van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om een Word-document op te slaan waarop een beleid wordt toegepast.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het Word-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. Bepaal de grootte van de bytearray door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Pas een bestaand beleid op het document van Word toe.
 
-   Pas een beleid op het document van Word toe door de `DocumentSecurityServiceClient` methode van objecten `protectDocument` aan te halen en de volgende waarden over te gaan:
+   Pas een beleid op het document van Word toe door aan te halen `DocumentSecurityServiceClient` object `protectDocument` en geeft de volgende waarden door:
 
-   * Het `BLOB`-object dat het Word-document bevat waarop het beleid wordt toegepast.
+   * De `BLOB` -object dat het Word-document bevat waarop het beleid wordt toegepast.
    * Een tekenreekswaarde die de naam van het document aangeeft.
-   * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in `MyPolicies` gebruikte beleidsreeks resulteert.
+   * Een tekenreekswaarde die de naam opgeeft van de beleidsset waartoe het beleid behoort. U kunt een `null` waarde die resulteert in de `MyPolicies` de gebruikte beleidsset.
    * Een tekenreekswaarde die de beleidsnaam opgeeft.
-   * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde `null` zijn).
-   * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de vorige parameterwaarde `null` zijn).
-   * Een waarde `RMLocale` die de waarde van de landinstelling opgeeft (bijvoorbeeld `RMLocale.en`).
+   * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde `null`).
+   * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de vorige parameterwaarde `null`).
+   * A `RMLocale` waarde die de waarde van de landinstelling opgeeft (bijvoorbeeld `RMLocale.en`).
    * Een parameter van de koordoutput die wordt gebruikt om de waarde van beleidsidentificatie op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om de beleid-beschermde herkenningstekenwaarde op te slaan.
-   * Een parameter van de koordoutput die wordt gebruikt om het mime type (bijvoorbeeld, `application/doc`) op te slaan.
+   * Een parameter van de koordoutput die wordt gebruikt om het mime type op te slaan (bijvoorbeeld `application/doc`).
 
-   De methode `protectDocument` retourneert een `BLOB`-object dat het document bevat dat door het beleid is beveiligd.
+   De `protectDocument` methode retourneert een `BLOB` -object dat het door het beleid beveiligde Word-document bevat.
 
 1. Sla het Word-document op.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het met een beleid beveiligde Word-document vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `protectDocument` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
-   * Schrijf de inhoud van de bytearray naar een Word-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het met een beleid beveiligde Word-document vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `protectDocument` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` lid.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
+   * Schrijf de inhoud van de bytearray naar een Word-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
 **Codevoorbeelden**
 
 Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document Security-service:
 
-* &quot;Snel starten (MTOM): Een beleid toepassen op een Word-document met behulp van de webservice-API&quot;
+* &quot;Snel starten (MTOM): Een beleid toepassen op een Word-document met behulp van de webservice-API &quot;
 
 ## Beleid verwijderen uit Word-documenten {#removing-policies-from-word-documents}
 
@@ -2116,9 +2115,9 @@ U kunt een beleid uit een beleid-beschermd document van Word verwijderen om veil
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Referentie van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Veiligheid van het Document, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-12}
+### Overzicht van de stappen {#summary_of_steps-12}
 
 Voer de volgende stappen uit om een beleid te verwijderen uit een Word-document dat met een beleid is beveiligd:
 
@@ -2142,7 +2141,7 @@ U moet een beleid-beschermd document van Word terugwinnen om een beleid te verwi
 
 **Het beleid verwijderen uit het Word-document**
 
-U kunt een beleid uit een beleid-beschermd document van Word verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als niet, dan moet het beleid dat wordt gebruikt om een document te beveiligen `SWITCH_POLICY` toestemming bevatten om een beleid uit een document van Word te verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
+U kunt een beleid uit een beleid-beschermd document van Word verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als dat niet het geval is, moet het beleid dat wordt gebruikt om een document te beveiligen het volgende bevatten: `SWITCH_POLICY` toestemming om een beleid uit een document van Word te verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
 
 **Het onbeveiligde Word-document opslaan**
 
@@ -2166,29 +2165,29 @@ Verwijder een beleid uit een beleid-beschermd document van Word door de Veilighe
 
 1. Een API-object voor documentbeveiliging maken
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `RightsManagementClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `RightsManagementClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Een met beleid beveiligd Word-document ophalen
 
-   * Maak een `java.io.FileInputStream`-object dat het beleidsbeveiligde Word-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het Word-document aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` -object dat het door een beleid beveiligde Word-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het Word-document aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Het beleid verwijderen uit het Word-document
 
-   * Maak een `DocumentManager`-object door de methode `getDocumentManager` van het object `RightsManagementClient` aan te roepen.
-   * Verwijder een beleid uit het document van Word door de `DocumentManager` methode van objecten `removeSecurity` te roepen en het `com.adobe.idp.Document` voorwerp over te gaan dat het beleid-beschermde document van Word bevat. Deze methode retourneert een `com.adobe.idp.Document`-object dat een onbeveiligd Word-document bevat.
+   * Een `DocumentManager` door het object aan te roepen `RightsManagementClient` object `getDocumentManager` methode.
+   * Verwijder een beleid uit het document van Word door aan te halen `DocumentManager` object `removeSecurity` en het doorgeven van de `com.adobe.idp.Document` -object dat het door het beleid beveiligde Word-document bevat. Deze methode retourneert een `com.adobe.idp.Document` object dat een onbeveiligd Word-document bevat.
 
 1. Het onbeveiligde Word-document opslaan
 
-   * Maak een `java.io.File`-object en zorg dat de bestandsextensie DOC is.
-   * Roep de methode `Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `removeSecurity` is geretourneerd).
+   * Een `java.io.File` -object en zorg ervoor dat de bestandsextensie DOC is.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` object naar het bestand (gebruik de `Document` object dat is geretourneerd door de `removeSecurity` methode).
 
 **Codevoorbeelden**
 
 Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document Security-service:
 
-* &quot;Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API&quot;
+* &quot;Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API &quot;
 
 ### Een beleid verwijderen uit een Word-document met de webservice-API {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2196,43 +2195,43 @@ Verwijder een beleid uit een beleid-beschermd document van Word door de Veilighe
 
 1. Projectbestanden opnemen
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Een API-object voor documentbeveiliging maken
 
-   * Maak een `RightsManagementServiceClient`-object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `RightsManagementServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `RightsManagementServiceClient` object met de standaardconstructor.
+   * Een `RightsManagementServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `RightsManagementServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `RightsManagementServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-   * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 
 1. Een met beleid beveiligd Word-document ophalen
 
-   * Maak een `BLOB`-object met de constructor ervan. Het `BLOB` voorwerp wordt gebruikt om het beleid-beschermde document van Word op te slaan waarvan het beleid wordt verwijderd.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het Word-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om het door het beleid beveiligde Word-document op te slaan waaruit het beleid wordt verwijderd.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het Word-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Het beleid verwijderen uit het Word-document
 
-   Verwijder het beleid uit het document van Word door de `RightsManagementServiceClient` methode van objecten `removePolicySecurity` aan te roepen en het `BLOB` voorwerp over te gaan dat het beleid-beschermde document van Word bevat. Deze methode retourneert een `BLOB`-object dat een onbeveiligd Word-document bevat.
+   Verwijder het beleid uit het document van Word door aan te halen `RightsManagementServiceClient` object `removePolicySecurity` en het doorgeven van de `BLOB` -object dat het door het beleid beveiligde Word-document bevat. Deze methode retourneert een `BLOB` object dat een onbeveiligd Word-document bevat.
 
 1. Het onbeveiligde Word-document opslaan
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het onbeveiligde Word-document vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `removePolicySecurity` is geretourneerd. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Een `System.IO.FileStream` door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het onbeveiligde Word-document vertegenwoordigt.
+   * Maak een bytearray waarin de gegevensinhoud van de `BLOB` object dat is geretourneerd door de `removePolicySecurity` methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
 
 **Codevoorbeelden**
 

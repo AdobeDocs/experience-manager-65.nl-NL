@@ -3,16 +3,17 @@ title: Markering
 description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '522'
+ht-degree: 4%
 
 ---
 
 # Markering {#markdown}
 
-Wanneer u [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud zonder kop kunt schrijven:
+Wanneer u [ontwerpen](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), gebruikt de inhoudfragmenteditor *markeren* syntaxis waarmee u eenvoudig inhoud zonder kop kunt schrijven:
 
 ![markeringseditor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
@@ -58,7 +59,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haken `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -128,7 +129,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-Als u een niet-geordende lijst wilt maken, gebruikt u de optie &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
+&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -164,7 +165,7 @@ U kunt tekst als volgt vet maken:
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&amp;grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
+Als u een bereik van code wilt aangeven, plaatst u de code tussen aanhalingstekens (&grave;). In tegenstelling tot een vooraf opgemaakt codeblok geeft een codebereik code binnen een normale alinea aan.
 
 Bijvoorbeeld:
 

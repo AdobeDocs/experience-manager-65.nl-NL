@@ -1,22 +1,21 @@
 ---
 title: Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies
-seo-title: Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies
+seo-title: Certificate types used by Acrobat Reader DC extensions
 description: Meer informatie over de certificaattypen die worden gebruikt door Acrobat Reader DC-extensies.
-seo-description: Meer informatie over de certificaattypen die worden gebruikt door Acrobat Reader DC-extensies.
+seo-description: Learn about the certificate types used by Acrobat Reader DC extensions.
 uuid: 93c02abc-2d5a-44ed-b93c-981afbd0553d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '936'
 ht-degree: 3%
 
 ---
-
 
 # Certificaattypen die worden gebruikt door Acrobat Reader DC-extensies {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
@@ -31,19 +30,19 @@ De Certificate Viewer biedt de volgende informatie over het certificaat:
 
 De &quot;vriendelijke&quot; naam van een Acrobat Reader DC-extensiecertificaat is een tekenreeks die de eigenschappen van het certificaat beschrijft, zoals in het volgende voorbeeld:
 
-ARE 2D Barcode Volledige productie V6.1 P8 0002054
+2D-streepjescode volledige productie V6.1 P8 0002054
 
 De tekenreeks bevat de volgende elementen:
 
-**Certificaattype:** Beschrijft de AEM formuliermodules die het certificaat activeert en het activeringsniveau, zoals ARE 2D Barcode Full. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
+**Certificaattype:** Beschrijft de AEM vormmodules die het certificaat activeert, en het niveau van activering, zoals ARE 2D Volledige Streepjescode. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
 
-**Implementatietype:** geeft het beoogde gebruik van het certificaat aan, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
+**Type implementatie:** Hiermee wordt het beoogde gebruik van het certificaat aangegeven, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
 
-**Versie van gebruiksrechten:** Beschrijft de versie van het algoritme van gebruiksrechten waarvoor het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
+**Versie gebruiksrechten:** Beschrijft de versie van het algoritme van gebruiksrechten waarvoor het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
 
 **Profielcode:** De profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals bijvoorbeeld P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
 
-**Serienummer:** Aan elk certificaat dat door Adobe wordt uitgegeven, wordt een serienummer toegewezen, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
+**Serienummer:** Aan elk door Adobe afgegeven certificaat wordt een serienummer toegekend, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
 
 ## Certificaatprofielen {#certificate-profiles}
 
@@ -154,13 +153,13 @@ De certificaten van de Integratie van de partner worden uitgegeven aan Adobe bed
 
 Adobe De certificaten van het Intern Gebruik worden gebruikt binnen Adobe om softwareontwikkeling, integratie, prototyping en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximumperiode die door de certificeringsinstantie (CA) is toegestaan, weergegeven als *Max* in de tabel Certificaatprofielen.
+Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximale periode die is toegestaan door de certificeringsinstantie (CA), weergegeven als *Max* in de tabel Certificaatprofielen.
 
-## Gebruiksrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
+## Gebruikersrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
 
 Wanneer u het Acrobat Reader DC-extensiecertificaat in de Certificaat-viewer bekijkt, kunt u het item met gebruiksrechten selecteren op het tabblad Details (indien geconfigureerd) om een gedetailleerde lijst weer te geven van de Adobe Reader-gebruiksrechten die het certificaat kan inschakelen. De gebruiksrechten die op een bepaald document zijn ingeschakeld, kunnen een subset zijn van de gebruiksrechten die door het certificaat worden ingeschakeld.
 
-Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Adobe Support voor meer informatie. De eigenschap Mode komt overeen met het implementatietype en is *production* of *evaluation*.
+Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Adobe Support voor meer informatie. Het bezit van de Wijze past het plaatsingstype aan en is of *productie* of *evaluatie*.
 
 De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een of meer specifieke elementen. Deze elementen worden in verschillende combinaties gebruikt om verschillende productfuncties met een licentie te verkrijgen.
 
@@ -194,7 +193,7 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
   </tr>
   <tr>
    <td><p>Ondertekenen</p></td>
-   <td><p>PDF-documenten digitaal ondertekenen en opslaan, en digitale handtekeningen wissen.</p></td>
+   <td><p>U kunt PDF-documenten digitaal ondertekenen en opslaan en digitale handtekeningen wissen.</p></td>
   </tr>
   <tr>
    <td><p>AnnotModify</p></td>
@@ -202,7 +201,7 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
   </tr>
   <tr>
    <td><p>AnnotImportExport</p></td>
-   <td><p>Sla annotaties zoals opmerkingen op in een afzonderlijk gegevensbestand en laad opmerkingen van een bestand.</p></td>
+   <td><p>Sla notities, zoals opmerkingen, op in een afzonderlijk gegevensbestand en laad opmerkingen uit een bestand.</p></td>
   </tr>
   <tr>
    <td><p>BarcodePlaintext</p></td>
@@ -214,7 +213,7 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
   </tr>
   <tr>
    <td><p>FormOnline</p></td>
-   <td><p>Maak verbinding met webservices of databases die in een PDF-formulier zijn gedefinieerd.</p></td>
+   <td><p>Maak verbinding met webservices of databases die zijn gedefinieerd in een PDF-formulier.</p></td>
   </tr>
   <tr>
    <td><p>EFModif</p></td>
@@ -226,4 +225,3 @@ De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een o
 >[!NOTE]
 >
 >Gebruiksrechten voor Acrobat Reader DC-extensies kunnen alleen in licentie worden gegeven door Adobe in bepaalde combinaties die samenwerken. Het is niet mogelijk om deze mogelijkheden onafhankelijk te verlenen. Neem voor informatie over de beschikbare combinaties van gebruiksrechten contact op met een accountvertegenwoordiger voor AEM formulieren.
-

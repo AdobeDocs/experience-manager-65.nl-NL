@@ -1,8 +1,8 @@
 ---
 title: Sjablonen aanpassen voor componenten van een formulierportal
-seo-title: Sjablonen aanpassen voor componenten van een formulierportal
+seo-title: Customizing templates for forms portal components
 description: Aangepaste metagegevens weergeven in formulierlijst
-seo-description: Aangepaste metagegevens weergeven in formulierlijst
+seo-description: Display custom metadata in form listing
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
-
 
 # Sjablonen aanpassen voor componenten van een formulierportal{#customizing-templates-for-forms-portal-components}
 
@@ -88,28 +87,28 @@ Een douanemalplaatje voor om het even welke component van Forms Portal omvat her
 
 Forms Portal biedt een syntaxis waarmee plaatsaanduidingen aangepaste/OTB-metagegevens kunnen weergeven. De plaatsaanduidingen worden gevuld nadat de resultaten van formulieren, concepten of verzendingen zijn weergegeven.
 
-Om een herhaalbare ingang op te nemen, vorm de waarde van het attribuut **data-repeatable** aan **true**.
+Om een herhaalbare ingang te omvatten, vorm de waarde van de attributen **data-herhaalbaar** tot **true**.
 
-*In het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. Het **data-repeatable**attribuut aanwezig in het element Div heeft de waarde **true**.*
+*In het besproken voorbeeld, zijn twee elementen Div aanwezig bij de bovenkant in het douanemalplaatje. De eerste, met de CSS-klasse &quot;__FP_boxes-container&quot;, werkt als een containerelement voor de formulieren die worden weergegeven. De tweede, met de CSS-klasse &quot;__FP_boxes&quot;, is een sjabloon voor de basisentiteiten, in dit geval een Form. De **data-herhaalbaar**kenmerk aanwezig in Div-element heeft de waarde **true**.*
 
-Elke plaatsaanduiding heeft een exclusieve OTB-metagegevensset. Als u aangepaste metagegevens op een bepaalde plaats in het formulier wilt weergeven, voegt u de eigenschap **${metadata_prop}** op de plaats toe.
+Elke plaatsaanduiding heeft een exclusieve OTB-metagegevensset. Als u aangepaste metagegevens wilt weergeven op een bepaalde plaats op het formulier, voegt u de opdracht **${metadata_prop}, eigenschap** ter plekke.
 
-*In het voorbeeld wordt de eigenschap metadata in meerdere instanties gebruikt. Bijvoorbeeld, wordt het gebruikt in **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en &lt;a 12/>pad **op de voorgeschreven wijze.***
+*In het voorbeeld wordt de eigenschap metadata in meerdere instanties gebruikt. Het wordt bijvoorbeeld gebruikt in **beschrijving**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**, en **pad**op de voorgeschreven wijze.*
 
-## Metagegevens {#out-of-the-box-metadata} uit het vak
+## Metagegevens uit het vak {#out-of-the-box-metadata}
 
 Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens die u voor een aanbieding kunt gebruiken.
 
-### Onderdeel {#search-amp-lister-component} zoeken
+### Onderdeel Zoeken en bibliotheken {#search-amp-lister-component}
 
 * **Titel:** Titel van het formulier
-* **naam**: Naam van het formulier (meestal gelijk aan de titel)
+* **name**: Naam van het formulier (meestal gelijk aan de titel)
 * **beschrijving**: Beschrijving van het formulier
-* **formUrl**: URL om het formulier te genereren als HTML
-* **pdfUrl**: URL om het formulier te genereren als PDF
-* **assetType**: Type van het element. Geldige waarden zijn **Form**,**PDF Form**, **Print Form** en **Adaptive Form**
+* **formUrl**: URL om het formulier weer te geven als HTML
+* **pdfUrl**: URL om het formulier weer te geven als PDF
+* **assetType**: Type van het element. Geldige waarden zijn **Formulier**,**PDF-formulier**, **Formulier afdrukken**, en **Adaptief formulier**
 
-* **htmlStyle**&amp;  **pdfStyle**: Weergavestijl voor respectievelijk HTML- en PDF-pictogrammen die worden gebruikt voor rendering. Geldige waarden zijn &quot;**__FP_display_none**&quot; of leeg.
+* **htmlStyle**&amp; **pdfStyle**: Weergavestijl voor HTML- en PDF-pictogrammen die respectievelijk worden gebruikt voor rendering. Geldige waarden zijn &quot;**__FP_display_none**&quot; of leeg.
 
 >[!NOTE]
 >
@@ -119,24 +118,24 @@ Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens 
 
 Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigenschappen in de gebruikersinterface (alleen zoeken en registreren):
 
-1. **Ondersteuning voor** lokalisatie: Als u statische tekst wilt lokaliseren, gebruikt u het kenmerk  `${localize-YOUR_TEXT}` en stelt u de gelokaliseerde waarde beschikbaar als dat nog niet het geval is.
-   *In het besproken voorbeeld worden de kenmerken  `${localize-Apply}` en  `${localize-Download}` worden gebruikt om de tekst Toepassen en downloaden te lokaliseren.*
+1. **Ondersteuning voor lokalisatie**: Als u statische tekst wilt lokaliseren, gebruikt u het kenmerk `${localize-YOUR_TEXT}` en maak de gelokaliseerde waarde beschikbaar, als reeds niet bestaat.
+   *In het besproken voorbeeld, de attributen `${localize-Apply}` en `${localize-Download}` worden gebruikt om de tekst Toepassen en downloaden te lokaliseren.*
 
-1. **Ondersteuning voor sorteren**: Klik op het HTML-element om de zoekresultaten te sorteren. Als u sorteren in een ingediende lay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
+1. **Ondersteuning voor sorteren**: Klik op het element HTML om de zoekresultaten te sorteren. Als u sorteren in een ingediende lay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
 Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header &#39;data-sortKey&#39; bijvoorbeeld &#39;title&#39;. Klik op de kop om de waarden in een bepaalde kolom te sorteren.
 
-1. **Configuratie-eigenschappen** gebruiken: De component Search &amp; Lister heeft verscheidene configuraties die u op het gebruikersinterface kunt gebruiken. Als u bijvoorbeeld HTML ToolTip-tekst wilt weergeven die is opgeslagen via het dialoogvenster Bewerken, gebruikt u het kenmerk `${config-htmlLinkText}`. **Gebruik ook voor tekst in de knopinfo voor PDF** `${config-pdfLinkText}` het kenmerk.
+1. **Configuratieeigenschappen gebruiken**: De component Search &amp; Lister heeft verscheidene configuraties die u op het gebruikersinterface kunt gebruiken. Als u bijvoorbeeld HTML ToolTip-tekst wilt weergeven die is opgeslagen via het dialoogvenster Bewerken, gebruikt u de opdracht `${config-htmlLinkText}` kenmerk. **Op dezelfde manier kunt u voor knopinfo-tekst de opdracht** `${config-pdfLinkText}` kenmerk.
 
-### Koppelingscomponent {#link-component}
+### Component Koppelen {#link-component}
 
 * **Titel:** Titel van het formulier
-* **formUrl**: URL om het formulier te genereren als HTML
-* **doel**: Doelkenmerk van de koppeling. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
+* **formUrl**: URL om het formulier weer te geven als HTML
+* **target**: Doelkenmerk van de koppeling. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
 * **linkText**: Bijschrift koppelen
 
 ### Component Concepten en verzendingen {#drafts-amp-submissions-component}
 
-* **Pad**: Pad van het metagegevensknooppunt voor concept/verzending. Gebruik deze extensie met de extensie .HTML als een URL om een concept of verzending te openen.
+* **Pad**: Pad van het metagegevensknooppunt voor concept/verzending. Gebruik dit bestand met de extensie .HTML als een URL om een concept of verzending te openen.
 * **contextPath**: Contextpad van AEM instantie
 * **firstLetter**: Eerste letter (hoofdletters) van de titel van het adaptieve formulier, die als concept is opgeslagen of is ingediend.
 * **formName**: De titel van het adaptieve formulier, dat als concept is opgeslagen of is verzonden.
@@ -147,35 +146,35 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 * **diffTime**: Verschil tussen de huidige tijd en de laatste opslagactie voor het concept. U kunt ook een verschil maken tussen de huidige tijd en de laatste verzendactie voor de verzending.
 * **iconClass**: CSS-klasse die wordt gebruikt om de eerste letter van het concept/de verzending weer te geven. Forms Portal bevat de volgende klassen, die verschillende gekleurde achtergronden bieden.
 * **eigenaar**: Gebruiker die het concept/de verzending heeft gemaakt.
-* **Vandaag**: Datum waarop het concept of de verzending is gemaakt in de indeling DD:MM:YYYY.
-* **TijdNu**: Tijdstip van aanmaak of verzending in UU:MM:SS 24-uursnotatie
+* **Vandaag**: Datum van opstelling of indiening in DD:MM:YYYY-indeling.
+* **TimeNow**: Tijdstip van ontwerp of indiening in HH:MM:SS 24-uursnotatie
 
 *Opmerking:*
 
-1. Geef de CSS-klasse &quot;__FP_deleteDraft&quot; een naam voor de verwijderoptie in de sectie Concepten onder de component Concepten en verzendingen. Bovendien omvat het attribuut &quot;draftID&quot;met de waarde **${draftID}**, die conceptidentidentiteitskaart van het overeenkomstige ontwerp is.
+1. Geef de CSS-klasse &quot;__FP_deleteDraft&quot; een naam voor de verwijderoptie in de sectie Concepten onder de component Concepten en verzendingen. Voeg ook het kenmerk &quot;draftID&quot; toe aan de waarde **${conceptID}**, de ontwerp-id van het corresponderende ontwerp.
 
-1. Tijdens het creëren van verbindingen aan open ontwerpen en bijdragen, kunt u **${path}.html** als waarde van **href** attributen voor de ankermarkering specificeren.
+1. Tijdens het maken van koppelingen naar open concepten en verzendingen kunt u **${path}.html** als de waarde van de **href** voor de ankertag.
 
 ![Concepten en verzendknooppunt](assets/raw-image-with-index.png)
 
 **A**. Containerelement
 
-**Metagegevens van B.** &quot;pad&quot; met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
+**B.** &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
 
-**C.** Data-herhaalbaar kenmerk gebruikt voor de sjabloonsectie voor elk formulier
+**C.** Kenmerk dat kan worden herhaald voor de sjabloonsectie voor elk formulier
 
 **D.** De tekenreeks Toepassen lokaliseren
 
-**E.** De configuratie-eigenschap pdfLinkText gebruiken
+**E.** De configuratieeigenschap pdfLinkText gebruiken
 
 **F.** De metagegevens &quot;pdfUrl&quot; gebruiken
 
 ## Tips, trucs en bekende problemen {#tips-tricks-and-known-issues}
 
 1. Gebruik geen enkel aanhalingsteken (&#39;) in enige douanemalplaatje.
-1. Voor aangepaste metagegevens slaat u deze eigenschap alleen op het knooppunt **jcr:content/metadata** op. Als u het op een andere plaats opslaat, kan Forms Portal de meta-gegevens niet tonen.
+1. Voor aangepaste metagegevens slaat u deze eigenschap op het tabblad **jcr:inhoud/metagegevens** alleen knooppunt. Als u het op een andere plaats opslaat, kan Forms Portal de meta-gegevens niet tonen.
 1. Zorg ervoor dat de naam van aangepaste metagegevens of bestaande metagegevens geen dubbele punt bevat ( : ). Als dit het geval is, kunt u het niet weergeven in de gebruikersinterface.
-1. **gegeven-** herhaalbaar heeft geen betekenis voor een  **** Linkcomponent. Adobe raadt u aan deze eigenschap niet te gebruiken in de sjabloon voor een koppelingscomponent.
+1. **data-herhaalbaar** heeft geen betekenis voor een **Koppeling** component. Adobe raadt u aan deze eigenschap niet te gebruiken in de sjabloon voor een koppelingscomponent.
 
 ## Verwante artikelen
 

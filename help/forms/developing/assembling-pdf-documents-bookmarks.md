@@ -1,8 +1,8 @@
 ---
 title: PDF-documenten samenstellen met bladwijzers
-seo-title: PDF-documenten samenstellen met bladwijzers
-description: Met de Assembler-service kunt u een PDF-document wijzigen dat wel bladwijzers bevat, zodat deze bladwijzers kunnen bevatten met de Java API en de webservice-API.
-seo-description: Met de Assembler-service kunt u een PDF-document wijzigen dat wel bladwijzers bevat, zodat deze bladwijzers kunnen bevatten met de Java API en de webservice-API.
+seo-title: Assembling PDF Documents with Bookmarks
+description: Gebruik de dienst van de Assembler om een document te wijzigen van PDF dat geen referenties bevat om referenties te omvatten gebruikend Java API en de Dienst API van het Web.
+seo-description: Use the Assembler service to modify a PDF document that does contain bookmarks to include bookmarks using the Java API and the Web Service API.
 uuid: a306d2a6-0b12-4eb3-bff4-968a33417486
 contentOwner: admin
 content-type: reference
@@ -11,25 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
-source-wordcount: '2589'
+source-wordcount: '2558'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten samenstellen met bladwijzers {#assembling-pdf-documents-with-bookmarks}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een PDF-document samenstellen dat bladwijzers bevat. Stel dat u een PDF-document hebt dat geen bladwijzers bevat en dat u het document wilt wijzigen door bladwijzers op te geven. Met de Assembler-service kunt u een PDF-document zonder bladwijzers doorgeven en een PDF-document met bladwijzers terugkrijgen.
+U kunt een PDF-document samenstellen dat bladwijzers bevat. Stel dat u een PDF-document hebt dat geen bladwijzers bevat en dat u het wilt wijzigen door bladwijzers op te geven. Met de Assembler-service kunt u een PDF-document zonder bladwijzers doorgeven en een PDF-document met bladwijzers terugkrijgen.
 
 Bladwijzers bevatten de volgende eigenschappen:
 
 * Een titel die als tekst op het scherm verschijnt.
-* Een handeling die aangeeft wat er gebeurt wanneer een gebruiker op de bladwijzer klikt. De gebruikelijke actie voor een bladwijzer is het verplaatsen naar een andere locatie in het huidige document of het openen van een ander PDF-document, hoewel u andere handelingen kunt opgeven.
+* Een handeling die aangeeft wat er gebeurt wanneer een gebruiker op de bladwijzer klikt. Een bladwijzer wordt gewoonlijk gebruikt om naar een andere locatie in het huidige document te gaan of een ander PDF-document te openen, maar er kunnen nog andere handelingen worden opgegeven.
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
@@ -44,11 +43,11 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
  </DDX>
 ```
 
-Binnen dit DDX-document ziet u dat aan het bronkenmerk de waarde `Loan.pdf` is toegewezen. Dit DDX-document geeft aan dat één PDF-document wordt doorgegeven aan de Assembler-service. Wanneer u een PDF-document samenstelt met bladwijzers, moet u een XML-bladwijzerdocument opgeven dat de bladwijzers in het resulterende document beschrijft. Als u een XML-bladwijzerdocument wilt opgeven, moet u ervoor zorgen dat het element `Bookmarks` is opgegeven in uw DDX-document.
+Binnen dit DDX-document wordt de waarde toegewezen aan het bronkenmerk `Loan.pdf`. Dit DDX-document geeft aan dat één PDF-document wordt doorgegeven aan de Assembler-service. Wanneer u een PDF-document samenstelt met bladwijzers, moet u een XML-bladwijzerdocument opgeven dat de bladwijzers in het resulterende document beschrijft. Als u een XML-bladwijzerdocument wilt opgeven, moet u ervoor zorgen dat de `Bookmarks` -element wordt opgegeven in uw DDX-document.
 
-In dit voorbeeld-DDX-document geeft het `Bookmarks`-element `doc2` op als de waarde. Deze waarde geeft aan dat de invoerkaart die aan de Assembler-service wordt doorgegeven, een sleutel met de naam `doc2` bevat. De waarde van de `doc2`-toets is een `com.adobe.idp.Document`-waarde die het XML-bladwijzerdocument vertegenwoordigt. (Zie &quot;Taal van Bladwijzers&quot;in [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).)
+In dit voorbeeld-DDX-document worden `Bookmarks` element specifies `doc2` als de waarde. Deze waarde wijst erop dat de inputkaart die tot de dienst van de Assembler wordt overgegaan een sleutel genoemd bevat `doc2`. De waarde van de `doc2` key is a `com.adobe.idp.Document` waarde die staat voor het XML-bladwijzerdocument. (Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).)
 
-In dit onderwerp wordt de volgende taal voor XML-bladwijzers gebruikt om een PDF-document met bladwijzers samen te stellen.
+In dit onderwerp wordt de volgende XML-bladwijzertaal gebruikt om een PDF-document met bladwijzers samen te stellen.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -72,43 +71,43 @@ In dit onderwerp wordt de volgende taal voor XML-bladwijzers gebruikt om een PDF
  </Bookmarks>
 ```
 
-In dit XML-bladwijzerdocument ziet u het element Handeling dat de handeling definieert die wordt uitgevoerd wanneer een gebruiker op de bladwijzer klikt. Onder het element Handeling bevindt zich het element Launch dat toepassingen start, zoals NotePad, en bestanden opent, zoals PDF-bestanden. Als u een PDF-bestand wilt openen, moet u het element Bestand gebruiken dat het bestand aangeeft dat moet worden geopend. In het XML-bladwijzerbestand dat in deze sectie is opgegeven, is LoanDetails.pdf de naam van het bestand dat wordt geopend.
+In dit XML-bladwijzerdocument ziet u het element Handeling dat de handeling definieert die wordt uitgevoerd wanneer een gebruiker op de bladwijzer klikt. Onder het element Handeling bevindt zich het element Launch dat toepassingen start, zoals NotePad, en bestanden opent, zoals PDF-bestanden. Als u een PDF-bestand wilt openen, moet u het File-element gebruiken dat het bestand aangeeft dat moet worden geopend. In het XML-bladwijzerbestand dat in deze sectie is opgegeven, is LoanDetails.pdf de naam van het bestand dat wordt geopend.
 
 >[!NOTE]
 >
->Voor volledige details over gesteunde acties, zie &quot; `Action` element&quot;in [de Dienst van de Assembler en DX Verwijzing ](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor volledige informatie over ondersteunde acties raadpleegt u &quot; `Action` element&quot; in de [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-Gezien het DDX-document dat in deze sectie is opgegeven en het XML-bladwijzerbestand als invoer, stelt de Assembler-service een PDF-document samen dat de volgende bladwijzers bevat.
+Op basis van het DDX-document dat in deze sectie is opgegeven en het XML-bladwijzerbestand als invoer, stelt de Assembler-service een PDF-document samen dat de volgende bladwijzers bevat.
 
 ![aw_aw_bmark](assets/aw_aw_bmark.png)
 
-Wanneer een gebruiker op *Open de referentie van de Lening Details* klikt, wordt LoanDetails.pdf geopend. Op dezelfde manier wordt NotePad gestart wanneer de gebruiker op de bladwijzer *Launch NotePad* klikt.
+Wanneer een gebruiker op de knop *De leningsdetails openen* bladwijzer, LoanDetails.pdf wordt geopend. Op dezelfde manier wanneer de gebruiker op de knop *NotePad starten* bladwijzer, NotePad is gestart.
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, is het raadzaam om vertrouwd te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>Voordat u deze sectie leest, is het raadzaam bekend te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
-Voer de volgende taken uit om een PDF-document met bladwijzers samen te stellen:
+U kunt als volgt een PDF-document met bladwijzers samenstellen:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
 1. Verwijs naar een bestaand DDX-document.
 1. Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd.
 1. Verwijs naar het XML-document van de bladwijzer.
-1. Voeg het PDF-document en het XML-bladwijzerdocument toe aan een Kaartenverzameling.
+1. Voeg het document van de PDF en het referentieXML- document aan een inzameling van de Kaart toe.
 1. Stel runtime-opties in.
-1. Stel het PDF-document samen.
-1. Sla het PDF-document met bladwijzers op.
+1. Zet het PDF-document samen.
+1. Sla het PDF-document op dat bladwijzers bevat.
 
 **Projectbestanden opnemen**
 
@@ -122,7 +121,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van alle AEM Forms JAR-bestanden.
+als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Voor informatie over de locatie van alle AEM Forms JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een PDF Assembler-client maken**
 
@@ -130,11 +129,11 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moe
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Dit DDX-document moet het element `Bookmarks` bevatten, dat de Assembler-service opgeeft een PDF samen te stellen die bladwijzers bevat. (Zie het DDX-document dat eerder in deze sectie wordt weergegeven voor een voorbeeld.)
+Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Dit DDX-document moet de `Bookmarks` element, dat de dienst van de Assembler opdraagt om een PDF samen te stellen die referenties bevat. (Zie het DDX-document dat eerder in deze sectie wordt weergegeven voor een voorbeeld.)
 
 **Verwijzen naar een PDF-document waaraan bladwijzers worden toegevoegd**
 
-Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd. Het maakt niet uit of het PDF-document waarnaar wordt verwezen al bladwijzers bevat. Als het element `Bookmarks` een onderliggend element is van het PDF-bronelement, worden de bladwijzers vervangen die al in de PDF-bron bestaan. Als u echter de bestaande bladwijzers wilt behouden, moet `Bookmarks` een item op hetzelfde niveau als het PDF-bronelement zijn. Neem bijvoorbeeld het volgende voorbeeld:
+Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd. Het maakt niet uit of het document waarnaar wordt verwezen PDF al bladwijzers bevat. Als de `Bookmarks` -element is een onderliggend element van het PDF-bronelement. De bladwijzers vervangen de bladwijzers die al in de PDF-bron bestaan. Als u echter de bestaande bladwijzers wilt behouden, moet u ervoor zorgen dat `Bookmarks` is een vergelijk van het PDF-bronelement. Neem bijvoorbeeld het volgende voorbeeld:
 
 ```xml
  <PDF result="foo">
@@ -149,23 +148,23 @@ Als u een PDF wilt samenstellen die nieuwe bladwijzers bevat, moet u naar een XM
 
 >[!NOTE]
 >
->Zie &quot;Taal van Bladwijzers&quot;in [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 **Het PDF-document en het XML-bladwijzerdocument toevoegen aan een Map-verzameling**
 
-U moet zowel het PDF-document waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Kaartenverzameling toevoegen. Daarom bevat het verzamelingsobject Map twee elementen: een PDF-document en het XML-bladwijzerdocument.
+U moet zowel het PDF-document toevoegen waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Kaartenverzameling. Daarom bevat het verzamelingsobject Map twee elementen: een PDF-document en het XML-bladwijzerdocument.
 
 **Uitvoeringsopties instellen**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec`-klasseverwijzing in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de runtime-opties die u kunt instellen.
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie `AssemblerOptionSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Het PDF-document samenstellen**
 
-Als u een PDF-document met nieuwe bladwijzers wilt samenstellen, gebruikt u de bewerking `invokeDDX` van de Assembler-service. De reden waarom u de `invokeDDX` verrichting in tegenstelling tot andere de dienstverrichtingen van de Assembler zoals `invokeOneDocument` moet gebruiken is omdat de dienst van de Assembler een document van referentieXML vereist dat binnen het de inzamelingsvoorwerp van de Kaart wordt overgegaan. Dit object is een parameter van de bewerking `invokeDDX`.
+Als u een PDF-document wilt samenstellen dat nieuwe bladwijzers bevat, gebruikt u de Assembler-service `invokeDDX` bewerking. De reden waarom u de `invokeDDX` verrichting in tegenstelling tot andere de dienstverrichtingen van de Assembler zoals `invokeOneDocument` is omdat de Assembler dienst een document van referentieXML vereist dat binnen het de inzamelingsvoorwerp van de Kaart wordt overgegaan. Dit object is een parameter van de `invokeDDX` bewerking.
 
-**Het PDF-document met bladwijzers opslaan**
+**PDF-document met bladwijzers opslaan**
 
-U moet de resultaten extraheren uit het geretourneerde object Map en het bijbehorende PDF-document opslaan. (Zie &quot;De resultaten extraheren&quot; in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+U moet de resultaten extraheren uit het geretourneerde kaartobject en het bijbehorende PDF-document opslaan. (Zie &quot;De resultaten extraheren&quot; in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Zie ook**
 
@@ -175,7 +174,7 @@ U moet de resultaten extraheren uit het geretourneerde object Map en het bijbeho
 
 [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## PDF-documenten samenstellen met bladwijzers met de Java API {#assemble-pdf-documents-with-bookmarks-using-the-java-api}
+## PDF-documenten samenstellen met bladwijzers met behulp van de Java API {#assemble-pdf-documents-with-bookmarks-using-the-java-api}
 
 U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java) voor vergaderingsservice:
 
@@ -185,59 +184,59 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd.
 
-   * Maak een `java.io.FileInputStream`-object door de constructor ervan te gebruiken en de locatie van het PDF-document door te geven.
-   * Maak een `com.adobe.idp.Document`-object met de constructor en geef het object `java.io.FileInputStream` met het PDF-document door.
+   * Een `java.io.FileInputStream` object door de constructor ervan te gebruiken en de locatie van het PDF-document door te geven.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object dat het PDF-document bevat.
 
 1. Verwijs naar het XML-document van de bladwijzer.
 
-   * Maak een `java.io.FileInputStream`-object door de constructor ervan te gebruiken en de locatie door te geven van het XML-bestand dat het XML-bladwijzerdocument vertegenwoordigt.
-   * Maak een `com.adobe.idp.Document`-object en geef het `java.io.FileInputStream`-object door dat het PDF-document bevat.
+   * Een `java.io.FileInputStream` object door de constructor ervan te gebruiken en de locatie door te geven van het XML-bestand dat het XML-bladwijzerdocument vertegenwoordigt.
+   * Een `com.adobe.idp.Document` en geeft het `java.io.FileInputStream` object dat het PDF-document bevat.
 
-1. Voeg het PDF-document en het XML-bladwijzerdocument toe aan een Kaartenverzameling.
+1. Voeg het document van de PDF en het referentieXML- document aan een inzameling van de Kaart toe.
 
-   * Maak een `java.util.Map`-object dat wordt gebruikt om zowel het invoer-PDF-document als het XML-document met de bladwijzer op te slaan.
-   * Voeg het invoer-PDF-document toe door de methode `java.util.Map` van het object `put` aan te roepen en de volgende argumenten door te geven:
+   * Een `java.util.Map` -object dat wordt gebruikt voor het opslaan van zowel het invoerdocument als het XML-document met bladwijzers.
+   * Voeg het invoerdocument PDF toe door het `java.util.Map` object `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
-      * Een `com.adobe.idp.Document`-object dat het invoer-PDF-document bevat.
-   * Voeg het XML-bladwijzerdocument toe door de methode `java.util.Map` van het object `put` aan te roepen en de volgende argumenten door te geven:
+      * A `com.adobe.idp.Document` -object dat het invoerdocument PDF bevat.
+   * Voeg het bladwijzerdocument van XML toe door aan te halen `java.util.Map` object `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het bronelement Bladwijzers dat is opgegeven in het DDX-document.
-      * Een object `com.adobe.idp.Document` dat het XML-bladwijzerdocument bevat.
+      * A `com.adobe.idp.Document` object dat het XML-bladwijzerdocument bevat.
 
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt de `AssemblerOptionSpec` methode `setFailOnError` van objecten aan en gaat `false` over.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
-1. Stel het PDF-document samen.
+1. Zet het PDF-document samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het te gebruiken DDX-document vertegenwoordigt
-   * Een `java.util.Map`-object dat zowel het invoer-PDF-document als het XML-bladwijzerdocument bevat.
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-object dat de runtime-opties opgeeft, inclusief het standaardniveau voor lettertypen en taaklogbestanden
+   * A `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
+   * A `java.util.Map` -object dat zowel het invoerdocument als het XML-bladwijzerdocument PDF bevat.
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardfont- en taaklogniveau
 
-   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden.
 
-1. Sla het PDF-document met bladwijzers op.
+1. Sla het PDF-document op dat bladwijzers bevat.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Roep de methode `AssemblerResult` van het object `getDocuments` aan. Dit retourneert een `java.util.Map`-object.
-   * Doorloop het object `java.util.Map` totdat u het resulterende object `com.adobe.idp.Document` hebt gevonden. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het PDF-document uit te pakken.
+   * De `AssemblerResult` object `getDocuments` methode. Dit retourneert een `java.util.Map` object.
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
+   * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-document te extraheren.
 
 **Zie ook**
 
@@ -253,79 +252,79 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het `BLOB`-object wordt gebruikt om de invoer-PDF op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoer-PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om de invoer-PDF op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerdocument PDF en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
 1. Verwijs naar het XML-document van de bladwijzer.
 
-   * Maak een `BLOB`-object met de constructor ervan. In het object `BLOB` wordt het XML-bladwijzerdocument opgeslagen.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoer-PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het XML-bladwijzerdocument op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerdocument PDF en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Voeg het PDF-document en het XML-bladwijzerdocument toe aan een Kaartenverzameling.
+1. Voeg het document van de PDF en het referentieXML- document aan een inzameling van de Kaart toe.
 
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Dit verzamelingsobject wordt gebruikt om de invoer-PDF-documenten en het XML-bladwijzerdocument op te slaan.
-   * Maak voor elk invoer-PDF-document en het XML-bladwijzerdocument een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Wijs een tekenreekswaarde toe die de toetsnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
-   * Wijs het `BLOB`-object toe dat het PDF-document opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object.
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` van het object `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door. (Voer deze taak uit voor elk invoer-PDF-document en voor het XML-bladwijzerdocument.)
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om de invoerdocumenten PDF en het XML-bladwijzerdocument op te slaan.
+   * Maak voor elk invoerdocument en het XML-bladwijzerdocument een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
+   * Wijs het `BLOB` object waarin het PDF-document is opgeslagen in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld.
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object. (Voer deze taak uit voor elk invoer-PDF-document en voor het XML-bladwijzerdocument.)
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs `false` aan `AssemblerOptionSpec` het gegevenslid van `failOnError` van het voorwerp toe.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
-1. Stel het PDF-document samen.
+1. Zet het PDF-document samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt
-   * De `MyMapOf_xsd_string_To_xsd_anyType`-array die de invoerdocumenten bevat
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft
+   * A `BLOB` object dat staat voor het DDX-document
+   * De `MyMapOf_xsd_string_To_xsd_anyType` array die de invoerdocumenten bevat
+   * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `AssemblerResult` -object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
-1. Sla het PDF-document met bladwijzers op.
+1. Sla het PDF-document op dat bladwijzers bevat.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de PDF-documenten van het resultaat bevat.
-   * Doorloop het object `Map` totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet `value` van dat serielid aan `BLOB`.
-   * Haal de binaire gegevens die het PDF-document vertegenwoordigen uit het veld `BLOB` van het object `MTOM`. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
+   * Doorlopen `Map` -object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` veld. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 
 **Zie ook**
 

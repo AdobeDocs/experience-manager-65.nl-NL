@@ -7,10 +7,10 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 8cb016eefc2699ffb3dfa926a289123b96927055
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3802'
-ht-degree: 75%
+ht-degree: 74%
 
 ---
 
@@ -30,7 +30,7 @@ Er zijn enkele algemeen aanvaarde best practices voor URL&#39;s.
 
 Stel uzelf de volgende vragen wanneer u uw URL&#39;s evalueert in uw AEM-project:
 
-&quot;Als een gebruiker deze URL zou zien, maar niet de content op de pagina, zou de gebruiker dan kunnen beschrijven waarover deze pagina gaat?&quot;
+&quot;Als een gebruiker deze URL en geen van de inhoud op de pagina zou zien, konden zij beschrijven wat deze pagina was?&quot;
 
 Als het antwoord &quot;ja&quot; is, zal de URL waarschijnlijk goed werken voor een zoekmachine.
 
@@ -156,7 +156,7 @@ Met **Sling**-servlets kunt u uw servlet op de omgekeerde manier registreren. In
 De SCR-annotatie voor dit type servlet ziet er ongeveer als volgt uit:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 In dit geval is de bron die door de URL wordt aangesproken (een instantie van de bron `myPageType`), automatisch toegankelijk in de servlet. Om toegang te krijgen roept u het volgende aan:
@@ -320,7 +320,7 @@ Voorbeelden:
 Beide zouden de volgende tag op de kop van de pagina toepassen:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 De `href` kan relatief of absoluut zijn. De code moet worden opgenomen in de paginamarkering om de canonieke URL voor de pagina te bepalen en deze tag uit te voeren.

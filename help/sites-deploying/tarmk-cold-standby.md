@@ -12,7 +12,7 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 88e4d8b56aa844e9a264615250971d0afdb68137
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2730'
 ht-degree: 0%
@@ -90,7 +90,6 @@ Bovendien kunt u de reserveinstanties specificeren die worden toegestaan om te v
 >
 >* van org.apache.jackrabbit.oak.**plug-ins**.segment.standby.store.StandbyStoreService naar org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* van org.apache.jackrabbit.oak.**plug-ins**.segment.SegmentNodeStoreService to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
 

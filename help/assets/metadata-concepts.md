@@ -3,11 +3,11 @@ title: Metagegevensconcepten begrijpen
 description: Leer over de behoefte van en de soorten meta-gegevens die voor gemakkelijkere categorisering en organisatie van activa toestaan.
 contentOwner: AG
 role: User, Admin
-feature: Metagegevens
+feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2708'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een
 * Naam van de map waarin deze zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
-Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, zodat gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
+Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -42,7 +42,7 @@ Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element 
 * Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
 * Volledig - asset bevat meer informatie en context met meer metagegevens.
 
-Om deze redenen biedt [!DNL Assets] u de juiste middelen om metagegevens voor uw digitale elementen te maken, te beheren en uit te wisselen.
+Om deze redenen [!DNL Assets] biedt u de juiste middelen voor het maken, beheren en uitwisselen van metagegevens voor uw digitale elementen.
 
 ## Typen metagegevens {#types-of-metadata}
 
@@ -63,14 +63,14 @@ De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er 
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
 
-* XMP: worden gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens in de opslagplaats op te slaan.
+* XMP: gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens op te slaan in de gegevensopslagruimte.
 * ID3: voor audio- en videobestanden.
 * EXIF: voor afbeeldingsbestanden.
 * Overige/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) is een open standaard die door  [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP standaard en van [!DNL Experience Manager Assets] hebben een krachtig platform waarop u kunt bouwen. Zie [XMP](https://www.adobe.com/products/xmp.html) voor meer informatie.
+[!DNL Extensible Metadata Platform] (XMP) is een open standaard die wordt gebruikt door [!DNL Experience Manager Assets] voor alle metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen XMP standaard omdat deze een Rich Content-model biedt. Gebruikers van XMP norm en van [!DNL Experience Manager Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd. Zie voor meer informatie [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -86,15 +86,15 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze meta-gegevens naam-waarde-paren worden ook genoemd markeringen, niet om met het etiketteren in [!DNL Experience Manager] worden verward. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
+Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in een groot aantal bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd en mogen niet worden verward met de tags in [!DNL Experience Manager]. Moderne digitale camera&#39;s maken Exif-metagegevens en de moderne grafische software ondersteunt deze. De EXIF-indeling is de kleinste gemene deler voor het beheer van metagegevens, met name voor afbeeldingen.
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Om deze reden biedt [!DNL Experience Manager Assets] toewijzing van Exif-eigenschappen in [common metadata schemata](metadata-schemas.md) en in [XMP](xmp-writeback.md) aan.
+Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch van aard en worden slechts in beperkte mate gebruikt voor beschrijvend metagegevensbeheer. Daarom [!DNL Experience Manager Assets] biedt toewijzing van EXIF-eigenschappen in [algemene metagegevensschema&#39;s](metadata-schemas.md) en naar [XMP](xmp-writeback.md).
 
 ### Overige metagegevens {#other-metadata}
 
-Andere meta-gegevens die van dossiers kunnen worden ingebed omvatten [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], etc.
+Andere metagegevens die kunnen worden ingesloten vanuit bestanden, zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
 ## Metagegevensschema&#39;s begrijpen {#metadata-schemata}
 
@@ -108,19 +108,19 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
 * DC - [!DNL Dublin Core] is een belangrijke en veelgebruikte reeks metagegevens.
 * DICOM - Digital Imaging and Communications in Medicine.
-* `Iptc4xmpCore` en  `iptc4xmpExt` - International Press Communications Standard bevat veel onderwerpspecifieke metagegevens.
+* `Iptc4xmpCore` en `iptc4xmpExt` - De International Press Communications Standard bevat veel onderwerpspecifieke metagegevens.
 * RDF - Resource Description Framework - voor algemene semantische webmetagegevens.
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpBJ` - Basic Job Ticketing.
 
 ### Toepassingsspecifieke metagegevens {#application-specific-metadata}
 
-De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u dergelijke metagegevens gebruikt, kunnen andere toepassingen de metagegevens mogelijk niet gebruiken. Een andere toepassing voor het renderen van afbeeldingen heeft bijvoorbeeld wellicht geen toegang tot [!DNL Adobe Photoshop]-metagegevens. U kunt een workflowstap maken waarmee een toepassingsspecifieke eigenschap wordt gewijzigd in een standaardeigenschap.
+De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u dergelijke metagegevens gebruikt, kunnen andere toepassingen de metagegevens mogelijk niet gebruiken. Een andere toepassing voor het renderen van afbeeldingen kan bijvoorbeeld geen toegang krijgen tot [!DNL Adobe Photoshop] metagegevens. U kunt een workflowstap maken waarmee een toepassingsspecifieke eigenschap wordt gewijzigd in een standaardeigenschap.
 
-* ACDSee - Metagegevens die door het [!DNL ACDSee] programma worden beheerd. Zie [www.acdsee.com/](https://www.acdsee.com/).
+* ACDSee - Metagegevens beheerd door de [!DNL ACDSee] programma. Zie [www.acdsee.com/](https://www.acdsee.com/).
 * Album - [!DNL Adobe Photoshop Album].
 * CQ - Gebruikt door [!DNL Experience Manager Assets].
-* DAM - Wordt gebruikt door [!DNL Experience Manager Assets].
+* DAM - Gebruikt door [!DNL Experience Manager Assets].
 * DEX - [!DNL Optima SC Description explorer] is een inzameling van hulpmiddelen voor meta-gegevens en dossierbeheer voor werkende systemen van Vensters.
 * CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html).
 * LR - [!DNL Adobe Lightroom].
@@ -133,7 +133,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights].
-* PLUS - [Universal System voor fotolicenties](https://www.useplus.com).
+* PLUS - [Universal System met afbeeldingslicentie](https://www.useplus.com).
 * PRISM - [Publicatievereisten voor industriestandaard metagegevens](https://www.idealliance.org/prism-metadata).
 * PRL - PRISM Rights Language.
 * PUR - PRISM-gebruiksrechten.
@@ -142,7 +142,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 ### Specifieke metagegevens voor fotografie {#photography-specific-metadata}
 
 * EXIF - Technische informatie van camera, inclusief GPS-positie.
-* CRS - schema [!DNL Camera Raw].
+* CRS - [!DNL Camera Raw] schema.
 * `iptc4xmpCore` and `iptc4xmpExt`.
 * TIFF - metagegevens van afbeeldingen (niet alleen voor TIFF-afbeeldingen).
 
@@ -164,11 +164,11 @@ De volgende naslaggids bevat informatie over een bepaald metagegevensschema (in 
 
 ### Dublin Core {#dublin-core}
 
-De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In [!DNL Assets] worden met de Dublin Core digitale elementen beschreven, zoals video, geluid, afbeeldingen en documenten.
+De meta-gegevens van de Kern van Dublin verstrekt een gestandaardiseerde reeks overeenkomsten voor het beschrijven van activa om hen gemakkelijker te maken te vinden. In [!DNL Assets]In de Dublin Core worden digitale elementen beschreven, zoals video, geluid, afbeeldingen en documenten.
 
 De eenvoudige Dublin Core Metadata Element Set (DCMES) bevat 15 metagegevenselementen die in de volgende tabel worden vermeld. Elk Dublin Core-element is optioneel en kan worden herhaald. U kunt Dublin Core-metagegevens toevoegen of verwijderen op dezelfde manier als voor mediatype-specifieke metagegevens.
 
-Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie [Dublin Core-initiatief](https://dublincore.org/) voor meer informatie.
+Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-initiatief zijn gecreëerd. Zie de [Dublin Core-initiatief](https://dublincore.org/) voor meer informatie .
 
 | Eigenschap | Beschrijving |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -177,9 +177,9 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
 | schepper | De persoon of het bedrijf die verantwoordelijk is voor het maken van de inhoud. |
 | date | Datum of periode die aan het element is gekoppeld. |
 | beschrijving | Meer informatie over het element. |
-| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruikt  `dc:format` om het MIME-type van het element aan te duiden. |
+| format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruik `dc:format` om het MIME-type van het element aan te duiden. |
 | id | Een unieke verwijzing naar het element. |
-| language | De taal van het element (bijvoorbeeld `en` voor Engels). |
+| language | De taal van het element (bijvoorbeeld `en` voor het Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |
 | relation | Een gerelateerd actief. |
 | rechten | Informatie over wie de rechten op dit actief heeft. |
@@ -200,15 +200,15 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 
 * De workflow kan controleren of een afbeelding een titel heeft of niet. Als dit niet het geval is, wordt een melding weergegeven om een titel toe te voegen.
 * De workflow kan controleren of een copyrightkennisgeving op een middel distributie toestaat of niet. Het systeem verzendt het middel dus naar de ene of de andere server.
-* Een workflow kan controleren op elementen zonder vooraf gedefinieerde, verplichte metagegevens of elementen met *ongeldige*-metagegevens.
+* Een workflow kan controleren op elementen zonder vooraf gedefinieerde, verplichte metagegevens of elementen *ongeldig* metagegevens.
 
 ## XMP-metadata {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) is de metagegevensstandaard die door [!DNL Adobe Experience Manager Assets] wordt gebruikt voor al het metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
+XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door [!DNL Adobe Experience Manager Assets] voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](#xmp-core-concepts) en [gesteund door Adobe](#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met [!DNL Assets] een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, biedt XMP [inhoudsmodel](#xmp-core-concepts) en is [ondersteund door Adobe](#advantages-of-xmp) en andere ondernemingen, zodat gebruikers van XMP in combinatie met [!DNL Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd.
 
-De [XMP specificatie](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
+De [XMP](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
 
 ### Wat is XMP? {#what-is-xmp}
 
@@ -218,10 +218,9 @@ Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP ondersteuning bi
 
 XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
-Alle oudere meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
+Alle verouderde meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
 
-Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen zijn altijd gekoppeld aan een
-bijzondere entiteit die als bron wordt aangeduid; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het middel.
+Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het middel.
 
 ### XMP ecosysteem {#xmp-ecosystem}
 
@@ -242,7 +241,7 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 
 >[!NOTE]
 >
->XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens wilt meenemen in XMP, bijvoorbeeld miniatuurafbeeldingen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64`.
+>XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Als u binaire gegevens bijvoorbeeld in XMP wilt meenemen, moeten deze worden gecodeerd in een XML-vriendelijke indeling, zoals `Base64`.
 
 ### XMP {#xmp-core-concepts}
 
@@ -250,10 +249,9 @@ De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van names
 
 #### Naamruimten en schema&#39;s {#namespaces-and-schemata}
 
-Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die
-het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
+Een XMP schema is een reeks eigenschapnamen in een gemeenschappelijke XML-naamruimte die het gegevenstype en beschrijvende informatie bevat. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-De eigenschap `Creator` in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
+De `Creator` eigenschap in twee onafhankelijk ontworpen schema&#39;s kan de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
 
 #### Eigenschappen en waarden {#properties-and-values}
 
@@ -266,28 +264,28 @@ XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsub
 
 #### Taalalternatieven {#language-alternatives}
 
-Met XMP kunt u een eigenschap `xml:lang` aan teksteigenschappen toevoegen om de taal van de tekst op te geven.
+XMP kunt u een `xml:lang` eigenschap aan teksteigenschappen om de taal van de tekst op te geven.
 
 ## Werken met IPTC-metagegevens {#support-for-iptc-metadata}
 
-Leer hoe [!DNL Adobe Experience Manager Assets] de IPTC-metagegevens, Creative Classificaties en trefwoorden ondersteunt die via [!DNL Adobe Bridge] en andere [!DNL Adobe Creative Cloud]-toepassingen aan middelen zijn toegevoegd.
+Meer informatie [!DNL Adobe Experience Manager Assets] biedt ondersteuning voor de IPTC-metagegevens, Creative Classificaties en trefwoorden die via [!DNL Adobe Bridge] en andere [!DNL Adobe Creative Cloud] apps.
 
-[!DNL Adobe Experience Manager Assets] ondersteunt de IPTC-metagegevensstandaard die veel wordt gebruikt om elementen te beschrijven. Op deze manier verbetert [!DNL Assets] de acceptatie van de afbeeldingen tussen verschillende partijen, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
+[!DNL Adobe Experience Manager Assets] ondersteunt de IPTC-metagegevensstandaard die veel wordt gebruikt om elementen te beschrijven. Zo, [!DNL Assets] de acceptatie van de afbeeldingen van de foto&#39;s door verschillende partijen wordt verbeterd, zoals fotografen, creatieve bureaus, bibliotheken, musea, enzovoort.
 
 In het standaardmetagegevensschema voor elementen zijn nu de IPTC Core- en IPTC-metagegevensschema&#39;s voor extensies opgenomen om uitgebreide metagegevenseigenschappen te definiëren waarmee gebruikers nauwkeurige en betrouwbare gegevens kunnen toevoegen over personen, locaties en producten die in een afbeelding worden weergegeven. Het steunt ook data, namen, en herkenningstekens betreffende de verwezenlijking van het beeld, en een flexibele manier om rechteninformatie uit te drukken.
 
 De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de metagegevens voor IPTC Core- en IPTC-extensies in bewerkbare velden worden weergegeven.
 
-1. Selecteer een afbeelding in de gebruikersinterface [!DNL Assets].
+1. Van de [!DNL Assets] -interface selecteert u een afbeelding.
 1. Klik op **[!UICONTROL Properties]** op de werkbalk.
-1. Klik op het tabblad **[!UICONTROL IPTC]** om de IPTC-metagegevens voor het element weer te geven.
+1. Klik op de knop **[!UICONTROL IPTC]** om de IPTC-metagegevens voor het element weer te geven.
 1. Bewerk desgewenst de IPTC-metagegevenseigenschappen.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Klik op het tabblad **[!UICONTROL IPTC Extension]** om de metagegevens voor IPTC-extensies voor het element weer te geven.
+1. Klik op de knop **[!UICONTROL IPTC Extension]** om de IPTC Extension-metagegevens voor het element weer te geven.
 1. Bewerk desgewenst de eigenschappen van de IPTC-metagegevens voor extensies.
-1. Klik **[!UICONTROL Save & Close]** om de veranderingen te bewaren.
+1. Klikken **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
 
 ### Ondersteuning voor creatieve beoordelingen {#creative-rating-support}
 
@@ -301,6 +299,6 @@ Deze eigenschap is momenteel echter niet geïndexeerd om conflicten met aangepas
 
 ### Trefwoordondersteuning {#keyword-support}
 
-Op het tabblad **[!UICONTROL IPTC]** van de pagina [!UICONTROL Properties] worden ook trefwoorden weergegeven die via Adobe Bridge en andere Adobe Creative Cloud-toepassingen aan middelen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen op het tabblad **[!UICONTROL IPTC]**.
+De **[!UICONTROL IPTC]** tabblad van het dialoogvenster [!UICONTROL Properties] op de pagina worden ook trefwoorden weergegeven die via Adobe Bridge en andere Adobe Creative Cloud-apps aan middelen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen via het menu **[!UICONTROL IPTC]** tab.
 
 ![keywords](assets/keywords-in-iptc-tab.png)

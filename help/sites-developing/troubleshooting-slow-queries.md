@@ -1,42 +1,41 @@
 ---
 title: Problemen met trage query's oplossen
-seo-title: Problemen met trage query's oplossen
+seo-title: Troubleshooting Slow Queries
 description: Problemen met trage query's oplossen
-seo-description: 'null'
+seo-description: null
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2265'
 ht-degree: 0%
 
 ---
 
-
 # Problemen met trage query&#39;s oplossen{#troubleshooting-slow-queries}
 
-## Trage Query-classificaties {#slow-query-classifications}
+## Trage query-classificaties {#slow-query-classifications}
 
 Er zijn drie belangrijke classificaties van langzame vragen in AEM, die door strengheid worden vermeld:
 
 1. **Vragen zonder index**
 
-   * Vragen die **not** oplossen aan een index en de inhoud van JCR doorlopen om resultaten te verzamelen
+   * Zoekopdrachten die wel **niet** omzetten in een index en de inhoud van het JCR doorlopen om resultaten te verzamelen
 
 1. **Slecht beperkte (of scoped) vragen**
 
-   * Vragen die tot een index worden opgelost, maar alle indexitems moeten doorlopen om resultaten te verzamelen
+   * Vragen die worden omgezet in een index, maar alle indexitems moeten doorlopen om resultaten te verzamelen
 
 1. **Vraagstukken met een grote resultaatset**
 
    * Zoekopdrachten die een zeer groot aantal resultaten opleveren
 
-De eerste 2 classificaties van vragen (index-minder en slecht beperkt) zijn langzaam, omdat zij de de vraagmotor van het Eak dwingen om elk **potentieel** resultaat (inhoudknooppunt of indexingang) te inspecteren om te identificeren die in **werkelijk** resultaatreeks behoren.
+De eerste 2 classificaties van vragen (index-minder en slecht beperkt) zijn langzaam, omdat zij de de vraagmotor van het Eak dwingen om elk te inspecteren **potentieel** result (content node of index entry) om te identificeren welke hoort in het **werkelijk** resultaatset.
 
 Het inspecteren van elk mogelijk resultaat is de zogenaamde &quot;Traversing&quot;.
 
@@ -46,33 +45,33 @@ Door querybeperkingen en tuning-indexen toe te voegen, kunnen de indexgegevens w
 
 In AEM 6.3, door gebrek, wanneer een traversal van 100.000 wordt bereikt, ontbreekt de vraag en werpt een uitzondering. Deze grens bestaat niet door gebrek in AEM versies voorafgaand aan AEM 6.3, maar kan via de Montages OSGi van de Motor van de Vraag van het Jasje van de Vraag van Apache worden geplaatst en Bon QueryEngineSettings JMX (bezit LimitReads).
 
-### Vragen zonder index {#detecting-index-less-queries} detecteren
+### Vragen zonder index detecteren {#detecting-index-less-queries}
 
-#### Tijdens ontwikkeling {#during-development}
+#### Tijdens de ontwikkeling {#during-development}
 
-Verklaar **all** vragen en zorg ervoor hun vraagplannen **/&amp;ast niet bevatten; doorlopen** uitleg erin. Voorbeeld dat queryplan doorloopt:
+Uitleggen **alles** vragen en zorg ervoor hun vraagplannen niet bevatten **/&amp;ast; doorlopen** uitleg. Voorbeeld dat queryplan doorloopt:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
-#### {#post-deployment} na implementatie
+#### Na de implementatie {#post-deployment}
 
-* Controleer `error.log` voor index-less traversal vragen:
+* De `error.log` voor traversal query&#39;s zonder index:
 
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Dit bericht wordt slechts geregistreerd als geen index beschikbaar is, en als de vraag potentieel vele knopen oversteekt. De berichten worden niet geregistreerd als een index beschikbaar is, maar het bedrag aan het oversteken is klein, en zo snel.
 
-* Bezoek de AEM [Query Performance](/help/sites-administering/operations-dashboard.md#query-performance) bewerkingsconsole en [Verklaar](/help/sites-administering/operations-dashboard.md#explain-query) langzame query&#39;s die op doorlopende of geen uitleg voor indexquery zoeken.
+* Bezoek de AEM [Query-prestaties](/help/sites-administering/operations-dashboard.md#query-performance) operatieconsole en [Uitleggen](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die traversal of geen verklaringen van de indexvraag zoeken.
 
-### Slecht beperkte query&#39;s {#detecting-poorly-restricted-queries} detecteren
+### Slecht beperkte query&#39;s detecteren {#detecting-poorly-restricted-queries}
 
-#### Tijdens ontwikkeling {#during-development-1}
+#### Tijdens de ontwikkeling {#during-development-1}
 
 Verklaar alle vragen en zorg ervoor zij aan een index oplossen die wordt afgestemd om de het bezitsbeperkingen van de vraag aan te passen.
 
-* De ideale dekking van het vraagplan heeft `indexRules` voor alle bezitsbeperkingen, en bij een minimum voor de strengste bezitsbeperkingen in de vraag.
-* Vragen die resultaten sorteren, zouden aan een Index van het Bezit van Lucene met indexregels voor de gesorteerde door eigenschappen moeten oplossen die `orderable=true.` plaatsen
+* De ideale dekking van het vraagplan heeft `indexRules` voor alle bezitsbeperkingen, en minstens voor de strengste bezitsbeperkingen in de vraag.
+* De vragen die resultaten sorteren, zouden aan een Index van het Bezit van Lucene met indexregels voor gesorteerd door eigenschappen moeten oplossen die plaatsen `orderable=true.`
 
-#### De standaard `cqPageLucene` heeft bijvoorbeeld geen indexregel voor `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
+#### De standaardinstelling `cqPageLucene` heeft geen indexregel voor `jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}
 
 Voordat u de indexregel cq:tags toevoegt
 
@@ -92,7 +91,7 @@ Voordat u de indexregel cq:tags toevoegt
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-Deze query wordt omgezet in de `cqPageLucene`-index, maar omdat er geen eigenschapsindexregel bestaat voor `jcr:content` of `cq:tags`, wordt bij het evalueren van deze beperking elke record in de `cqPageLucene`-index gecontroleerd om een overeenkomst te bepalen. Dit betekent dat als de index 1 miljoen `cq:Page` knopen bevat, dan 1 miljoen verslagen worden gecontroleerd om de resultaatreeks te bepalen.
+Deze query wordt omgezet in de `cqPageLucene` index, maar omdat er geen eigenschapindex-regel bestaat voor `jcr:content` of `cq:tags`, wanneer deze beperking wordt beoordeeld, elke record in het `cqPageLucene` index wordt gecontroleerd om een gelijke te bepalen. Dit betekent dat als de index 1 miljoen bevat `cq:Page` knooppunten, dan worden 1 miljoen verslagen gecontroleerd om de resultaatreeks te bepalen.
 
 Na het toevoegen van de regel cq:tags index
 
@@ -116,35 +115,35 @@ Na het toevoegen van de regel cq:tags index
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-Door de toevoeging van de indexRule voor `jcr:content/cq:tags` in de `cqPageLucene`-index kunnen `cq:tags`-gegevens op een geoptimaliseerde manier worden opgeslagen.
+De toevoeging van indexRule voor `jcr:content/cq:tags` in de `cqPageLucene` index staat toe `cq:tags` gegevens die op geoptimaliseerde wijze moeten worden opgeslagen.
 
-Wanneer een vraag met de `jcr:content/cq:tags` beperking wordt uitgevoerd, kan de index resultaten door waarde omhoog kijken. Dat betekent dat als 100 `cq:Page` knopen `myTagNamespace:myTag` als waarde hebben, slechts die 100 resultaten zijn teruggekeerd, en de andere 999.000 worden uitgesloten van de beperkingscontroles, die prestaties met een factor van 10.000 verbeteren.
+Wanneer een vraag met `jcr:content/cq:tags` De beperking wordt uitgevoerd, kan de index resultaten door waarde omhoog kijken. Dat betekent dat als 100 `cq:Page` knooppunten hebben `myTagNamespace:myTag` als waarde worden alleen die 100 resultaten geretourneerd en de andere 999.000 worden uitgesloten van de beperkende controles , waardoor de prestaties met een factor 10.000 worden verbeterd .
 
 Natuurlijk, verminderen de verdere vraagbeperkingen de in aanmerking komende resultaatreeksen en optimaliseren verder de vraagoptimalisering.
 
-Op dezelfde manier zonder een extra indexregel voor het `cq:tags` bezit, zelfs zou een fulltext vraag met een beperking op `cq:tags` slecht presteren aangezien de resultaten van de index alle fulltext gelijken zouden terugkeren. De beperking op cq:tags wordt erna gefilterd.
+Op dezelfde manier, zonder een extra indexregel voor `cq:tags` eigenschap, zelfs een fulltext-query met een beperking op `cq:tags` zou slecht presteren aangezien de resultaten van de index alle fullText gelijken zouden terugkeren. De beperking op cq:tags wordt erna gefilterd.
 
 Een andere oorzaak van post-index-filtreren is de Lijsten van het Toegangsbeheer die vaak tijdens ontwikkeling worden gemist. Controleer of de query geen paden retourneert die ontoegankelijk zijn voor de gebruiker. Dit kan gewoonlijk door betere inhoudsstructuur samen met het verstrekken van relevante wegbeperking op de vraag worden gedaan.
 
-Een nuttige manier om te identificeren als de index van Lucene veel resultaten terugkeert om een zeer kleine ondergroep als vraagresultaat terug te keren is het toelaten van logboeken DEBUG voor `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` en te zien hoeveel documenten van de index worden geladen. Het aantal uiteindelijke resultaten in vergelijking met het aantal geladen documenten mag niet onevenredig zijn. Zie [Logboekregistratie](/help/sites-deploying/configure-logging.md) voor meer informatie.
+Een nuttige manier om te identificeren als de index van Lucene veel resultaten terugkeert om een zeer kleine ondergroep als vraagresultaat terug te keren is het toelaten van logboeken DEBUG voor `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` en zie hoeveel documenten vanaf de index worden geladen. Het aantal uiteindelijke resultaten in vergelijking met het aantal geladen documenten mag niet onevenredig zijn. Zie voor meer informatie [Logboekregistratie](/help/sites-deploying/configure-logging.md).
 
-#### {#post-deployment-1} na implementatie
+#### Na de implementatie {#post-deployment-1}
 
-* Controleer `error.log` voor doorlopende vragen:
+* De `error.log` voor traversale zoekopdrachten:
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Bezoek de AEM [Prestaties van de Vraag](/help/sites-administering/operations-dashboard.md#query-performance) verrichtingenconsole en [verklaar](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen zoekend vraagplannen die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.
+* Bezoek de AEM [Query-prestaties](/help/sites-administering/operations-dashboard.md#query-performance) operatieconsole en [Uitleggen](/help/sites-administering/operations-dashboard.md#explain-query) langzame vragen die vraagplannen zoeken die vraagbezitsbeperkingen aan de regels van het indexbezit niet oplossen.
 
 ### Detecteren van query&#39;s voor grote resultaatsets {#detecting-large-result-set-queries}
 
-#### Tijdens ontwikkeling {#during-development-2}
+#### Tijdens de ontwikkeling {#during-development-2}
 
 Stel lage drempelwaarden in voor eak.queryLimitInMemory (bijv. 10000) en oak.queryLimitReads (bijv. 5000) en optimaliseer de dure vraag wanneer het raken van een UnsupportedOperationException die &quot;de vraag leest meer dan x knopen...&quot; zegt
 
 Dit helpt middelintensieve vragen (d.w.z. te vermijden. niet ondersteund door een index of ondersteund door minder dekkende index). Bijvoorbeeld, zou een vraag die 1M knopen leest tot veel IO leiden, en negatief de algemene toepassingsprestaties beïnvloeden. Elke query die vanwege bovenstaande limieten mislukt, moet dus worden geanalyseerd en geoptimaliseerd.
 
-#### {#post-deployment-2} na implementatie
+#### Na de implementatie {#post-deployment-2}
 
 * Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap veroorzaken: &quot;
 
@@ -165,7 +164,7 @@ In AEM 6.3, worden bovengenoemde 2 parameters vooraf gevormd door gebrek, en kun
 
 Meer informatie is beschikbaar onder: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
-## Afstemmen van query-prestaties {#query-performance-tuning}
+## Afstemmen van queryprestaties {#query-performance-tuning}
 
 Het motto van de optimalisering van vraagprestaties in AEM is:
 
@@ -173,7 +172,7 @@ Het motto van de optimalisering van vraagprestaties in AEM is:
 
 De volgende schetsen adviseren aanpassingen om vraagprestaties te verzekeren. Kies eerst de query, een minder opvallende activiteit en pas vervolgens, indien nodig, de indexdefinities aan.
 
-### Het aanpassen van de Verklaring van de Vraag {#adjusting-the-query-statement}
+### De queryinstructie aanpassen {#adjusting-the-query-statement}
 
 AEM ondersteunt de volgende querytalen:
 
@@ -200,9 +199,9 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
    property.value=article-page
    ```
 
-   Zoekopdrachten zonder nodetype-beperking AEM het notatietype `nt:base` aan te nemen. Elk knooppunt in AEM is een subtype van dit type. Dit leidt in feite tot geen nodetype-beperking.
+   Zoekopdrachten waarvoor geen nodetype-beperkende kracht AEM om de `nt:base` nodetype, dat elke knoop in AEM een subtype van is, effectief resulterend in geen nodetype beperking.
 
-   Het plaatsen `type=cq:Page` beperkt deze vraag tot slechts `cq:Page` knopen, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts `cq:Page` knopen) in AEM beperkt.
+   Instelling `type=cq:Page` beperkt deze query tot alleen `cq:Page` knopen, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts) beperkt `cq:Page` knooppunten) in AEM.
 
 1. Pas de nodetype van de vraag beperking zo aan de vraag aan een bestaande Index van het Bezit van Lucene.
 
@@ -222,11 +221,11 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
    property.value=article-page
    ```
 
-   `nt:hierarchyNode` is het bovenliggende nodetype van  `cq:Page`, en als  `jcr:content/contentType=article-page` wordt aangenomen dat dit alleen via onze aangepaste toepassing op  `cq:Page` knooppunten  `cq:Page` wordt toegepast, retourneert deze query alleen  `jcr:content/contentType=article-page`knooppunten waar. Dit is echter een suboptimale beperking, omdat:
+   `nt:hierarchyNode` is het bovenliggende nodetype van `cq:Page`, en `jcr:content/contentType=article-page` wordt alleen toegepast op `cq:Page` knooppunten via onze aangepaste toepassing. Deze query retourneert alleen `cq:Page` knooppunten waar `jcr:content/contentType=article-page`. Dit is echter een suboptimale beperking, omdat:
 
-   * Andere knoop erft van `nt:hierarchyNode` (b.v. `dam:Asset`) onnodig toevoegen aan de reeks potentiële resultaten.
-   * Er bestaat geen AEM-geleverde index voor `nt:hierarchyNode`, maar zoals er een opgegeven index voor `cq:Page` is.
-   Het plaatsen `type=cq:Page` beperkt deze vraag tot slechts `cq:Page` knopen, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts cq:de knopen van de Pagina) in AEM beperkt.
+   * Andere knoop erft van `nt:hierarchyNode` (bijv. `dam:Asset`) onnodig toevoegen aan de reeks potentiële resultaten.
+   * Er bestaat geen AEM index voor `nt:hierarchyNode`, maar er is een index voor `cq:Page`.
+   Instelling `type=cq:Page` beperkt deze query tot alleen `cq:Page` knooppunten, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts cq:de knopen van de Pagina) in AEM beperkt.
 
 1. U kunt ook de eigenschapbeperking(en) aanpassen zodat de query wordt omgezet in een bestaande eigenschappenindex.
 
@@ -244,11 +243,11 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
    property.value=my-site/components/structure/article-page
    ```
 
-   Als u de eigenschapbeperking wijzigt van `jcr:content/contentType` (een aangepaste waarde) in de bekende eigenschap `sling:resourceType`, kan de query worden omgezet in de eigenschapindex `slingResourceType` die alle inhoud indexeert door `sling:resourceType`.
+   De eigenschapsbeperking wijzigen van `jcr:content/contentType` (een aangepaste waarde) naar de bekende eigenschap `sling:resourceType` laat de vraag aan de bezitsindex oplossen `slingResourceType` waarmee alle inhoud wordt geïndexeerd `sling:resourceType`.
 
    De indexen van het bezit (in tegenstelling tot de Indexen van het Bezit van Lucene) worden het best gebruikt wanneer de vraag niet door nodetype ontdekt, en één enkele bezitsbeperking domineert de resultaatreeks.
 
-1. Voeg de strengste padbeperking toe die mogelijk is voor de query. Geef bijvoorbeeld de voorkeur `/content/my-site/us/en` boven `/content/my-site` of `/content/dam` boven `/`.
+1. Voeg de strengste padbeperking toe die mogelijk is voor de query. Voorkeur `/content/my-site/us/en` over `/content/my-site`, of `/content/dam` over `/`.
 
 * **Niet-geoptimaliseerde query**
 
@@ -268,11 +267,11 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
    property.value=article-page
    ```
 
-   Door de padbeperking van `path=/content`tot `path=/content/my-site/us/en` te segmenteren, kunnen de indexen het aantal indexitems verminderen dat moet worden geïnspecteerd. Wanneer de vraag de weg zeer goed kan beperken, voorbij enkel `/content` of `/content/dam`, zorg ervoor de index `evaluatePathRestrictions=true` heeft.
+   De padbeperking van `path=/content`tot `path=/content/my-site/us/en` Hiermee kunnen indexen het aantal indexitems verminderen dat moet worden geïnspecteerd. Wanneer de vraag de weg zeer goed kan beperken, voorbij enkel `/content` of `/content/dam`, controleert u of de index `evaluatePathRestrictions=true`.
 
-   De indexgrootte wordt groter als u `evaluatePathRestrictions` gebruikt.
+   Notitie met `evaluatePathRestrictions` Hiermee wordt de indexgrootte verhoogd.
 
-1. Vermijd, waar mogelijk, vraagfuncties/verrichtingen zoals: `LIKE` en `fn:XXXX` als de kosten worden geschaald met het aantal op beperking gebaseerde resultaten.
+1. Vermijd, waar mogelijk, vraagfuncties/verrichtingen zoals: `LIKE` en `fn:XXXX` als hun kosten worden geschaald met het aantal op beperkingen gebaseerde resultaten.
 
 * **Niet-geoptimaliseerde query**
 
@@ -291,13 +290,13 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
    fulltext.relPath=jcr:content/contentType
    ```
 
-   De voorwaarde LIKE is traag om te evalueren omdat geen index kan worden gebruikt als de tekst met een vervanging (&quot;%...&quot;) begint. Jcr:contains condition staat het gebruiken van een fulltext index toe, en daarom verkiest. Dit vereist de opgeloste Index van het Bezit van Lucene om indexRule voor `jcr:content/contentType` met `analayzed=true` te hebben.
+   De voorwaarde LIKE is traag om te evalueren omdat geen index kan worden gebruikt als de tekst met een vervanging (&quot;%...&quot;) begint. Jcr:contains condition staat het gebruiken van een fulltext index toe, en daarom verkiest. Dit vereist de opgeloste Index van het Bezit van Lucene om indexRule te hebben voor `jcr:content/contentType` with `analayzed=true`.
 
-   Het gebruik van queryfuncties zoals `fn:lowercase(..)` kan moeilijker te optimaliseren zijn omdat er geen snellere equivalenten zijn (buiten complexere en opdringerige indexanalysatorconfiguraties). Het is best om andere bereikbeperkingen te identificeren om de algemene vraagprestaties te verbeteren, die de functies vereisen om op de kleinste reeks potentiële resultaten te werken mogelijk.
+   Query-functies gebruiken als `fn:lowercase(..)` Het kan moeilijker zijn om te optimaliseren omdat er geen snellere equivalenten zijn (buiten complexere en opdringerige configuraties van de indexanalysator). Het is best om andere bereikbeperkingen te identificeren om de algemene vraagprestaties te verbeteren, die de functies vereisen om op de kleinste reeks potentiële resultaten te werken mogelijk.
 
 1. ***Deze aanpassing is specifiek voor Query Builder en is niet van toepassing op JCR-SQL2 of XPath.***
 
-   Gebruik [Query Builder&#39; radenTotal](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) wanneer de volledige reeks resultaten **niet** onmiddellijk nodig is.
+   Gebruiken [adenTotaal van Query Builder](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results) wanneer de volledige reeks resultaten **niet** onmiddellijk nodig.
 
    * **Niet-geoptimaliseerde query**
 
@@ -340,7 +339,7 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
       /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
       ```
 
-1. Verstrek XPath (of JCR-SQL2) aan [de Generator van de Definitie van de Index ](https://oakutils.appspot.com/generate/index) van het Eik om de geoptimaliseerde definitie van de Index van het Bezit van Luceen te produceren.
+1. XPath (of JCR-SQL2) opgeven voor [Generator voor eekindexdefinitie](https://oakutils.appspot.com/generate/index) om de geoptimaliseerde definitie van de Index van het Bezit van Lucene te produceren.
 
    **Gegenereerde definitie van eigenschappen van Luceen**
 
@@ -363,7 +362,7 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
 1. Voeg de gegenereerde definitie handmatig samen in de bestaande index voor Lucene-eigenschappen op een additieve manier. Wees voorzichtig om bestaande configuraties niet te verwijderen aangezien zij kunnen worden gebruikt om aan andere vragen te voldoen.
 
-   1. Bepaal de plaats van de bestaande Index van het Bezit van Lucene die cq:Pagina behandelt (gebruikend de Manager van de Index). In dit geval `/oak:index/cqPageLucene`.
+   1. Bepaal de plaats van de bestaande Index van het Bezit van Lucene die cq:Pagina behandelt (gebruikend de Manager van de Index). In dit geval: `/oak:index/cqPageLucene`.
    1. Identificeer de configuratiedelta tussen de geoptimaliseerde indexdefinitie (Stap 4) en de bestaande index (/eak:index/cqPageLucene), en voeg de ontbrekende configuraties van de geoptimaliseerde Index aan de bestaande indexdefinitie toe.
    1. Per AEM het Opnieuw indexeren Beste praktijken, of verfrist zich of herindexeert is in orde, gebaseerd op als de bestaande inhoud door deze verandering van de indexconfiguratie zal worden uitgevoerd.
 
@@ -386,7 +385,7 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
       //element(*, myApp:Page)[@firstName = 'ira']
       ```
 
-1. Verstrek XPath (of JCR-SQL2) aan [de Generator van de Definitie van de Index ](https://oakutils.appspot.com/generate/index) van het Eik om de geoptimaliseerde definitie van de Index van het Bezit van Luceen te produceren.
+1. XPath (of JCR-SQL2) opgeven voor [Generator voor eekindexdefinitie](https://oakutils.appspot.com/generate/index) om de geoptimaliseerde definitie van de Index van het Bezit van Lucene te produceren.
 
    **Gegenereerde definitie van eigenschappen van Luceen**
 
@@ -415,21 +414,21 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
 Door AEM flexibele inhoudarchitectuur is het moeilijk om te voorspellen en ervoor te zorgen dat de transformaties van inhoudsstructuren in de loop der tijd niet zullen evolueren om onaanvaardbaar groot te zijn.
 
-Zorg er daarom voor dat indexen voldoen aan query&#39;s, behalve als de combinatie van padbeperking en noType-beperking garandeert dat **minder dan 20 knooppunten ooit worden doorlopen.**
+Zorg er daarom voor dat indexen voldoen aan query&#39;s, behalve als de combinatie van padbeperking en geen beperkingen garandeert dat **er worden ooit minder dan 20 knooppunten doorkruist .**
 
-## Hulpprogramma&#39;s voor vraagontwikkeling {#query-development-tools}
+## Hulpprogramma&#39;s voor query-ontwikkeling {#query-development-tools}
 
 ### Adobe ondersteund {#adobe-supported}
 
 * **Foutopsporing voor Query Builder**
 
    * Een WebUI voor het uitvoeren van de vragen van de Bouwer van de Vraag en produceren ondersteunend XPath (voor gebruik in Verklaar de Generator van de Definitie van de Vraag of van de Index).
-   * Op AEM op [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * AEM op [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Query**
 
    * Een WebUI voor het uitvoeren van vragen XPath en JCR-SQL2.
-   * AEM op [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Extra > Query...
+   * AEM op [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Gereedschappen > Query...
 
 * **[Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query)**
 
@@ -456,12 +455,12 @@ Zorg er daarom voor dat indexen voldoen aan query&#39;s, behalve als de combinat
 * **Apache Jackrabbit Query Engine Settings OSGi Config**
 
    * OSGi configuratie die mislukkingsgedrag voor het oversteken van vragen vormt.
-   * Op AEM bevindt zich [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * AEM op [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX-boon**
 
    * JMX MBean gebruikt om het aantal knopen in inhoudbomen in AEM te schatten.
-   * Op AEM op [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * AEM op [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Ondersteunde community {#community-supported}
 
@@ -471,5 +470,5 @@ Zorg er daarom voor dat indexen voldoen aan query&#39;s, behalve als de combinat
 
 * **[AEM Chrome-plug-in](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
 
-   * De Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van uitgevoerde vragen en hun vraagplannen, in de browser ontwikkelt hulpmiddelenconsole beschikbaar stelt.
-   * [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) moet worden geïnstalleerd en ingeschakeld op AEM.
+   * De Webbrowser van Google Chrome uitbreiding die per-verzoeklogboekgegevens, met inbegrip van uitgevoerde vragen en hun vraagplannen, in browser de Dev hulpensconsole van hulpmiddelen blootstelt.
+   * Vereisten [Sling Log Tracker 1.0.2+](https://sling.apache.org/downloads.cgi) worden geïnstalleerd en ingeschakeld op AEM.

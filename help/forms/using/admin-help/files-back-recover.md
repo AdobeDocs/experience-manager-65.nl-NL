@@ -1,24 +1,23 @@
 ---
 title: Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld
-seo-title: Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld
+seo-title: Files to back up and recover
 description: In dit document worden de toepassing en gegevensbestanden beschreven waarvan een back-up moet worden gemaakt.
-seo-description: In dit document worden de toepassing en gegevensbestanden beschreven waarvan een back-up moet worden gemaakt.
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '2187'
+source-wordcount: '2072'
 ht-degree: 0%
 
 ---
 
-
-# Bestanden waarvan een back-up moet worden gemaakt en die {#files-to-back-up-and-recover} moeten worden hersteld
+# Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld {#files-to-back-up-and-recover}
 
 De toepassing en gegevensbestanden waarvan een back-up moet worden gemaakt, worden in de volgende secties nader beschreven.
 
@@ -30,7 +29,7 @@ Overweeg de volgende punten met betrekking tot back-up en herstel:
 
 ## Globale map voor documentopslag {#global-document-storage-directory}
 
-De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur moet een of meer keren worden gestart met een AEM formuliersysteem en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF&#39;s, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden.
+De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur moet een of meer keren worden gestart met een AEM formuliersysteem en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden.
 
 Invoerdocumenten voor asynchrone aanroep van taken worden ook opgeslagen in de GDS en moeten beschikbaar zijn voor het verwerken van aanvragen. Daarom is het belangrijk dat u de betrouwbaarheid van het bestandssysteem dat de GDS host en een redundante array van onafhankelijke schijven (RAID) of andere technologie gebruikt, als geschikt beschouwt voor uw vereisten op het gebied van kwaliteit en serviceniveau.
 
@@ -51,7 +50,7 @@ Als u de GDS-locatie hebt gewijzigd in een andere locatie dan de standaardlocati
 
 In een gegroepeerd milieu, wijst GDS typisch aan een folder die op het netwerk wordt gedeeld en lees/schrijf toegankelijk voor elke clusterknoop is.
 
-De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de oorspronkelijke locatie niet meer beschikbaar is. (Zie [De GDS-locatie wijzigen tijdens herstel](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
+De locatie van de GDS kan tijdens een herstelbewerking worden gewijzigd als de oorspronkelijke locatie niet meer beschikbaar is. (Zie [De GDS-locatie wijzigen tijdens het herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).)
 
 ### Back-upopties wanneer database wordt gebruikt voor documentopslag {#backup-options-when-database-is-used-for-document-storage}
 
@@ -59,7 +58,7 @@ U kunt AEM formulierdocumentopslag inschakelen in de AEM formulierdatabase met b
 
 Wanneer u de optie &quot;Documentopslag in de database inschakelen&quot; selecteert in de Core System Settings in de beheerconsole of door Configuration Manager te gebruiken, staan AEM formulieren de back-upmodus voor momentopnamen en de schuifmodus niet toe. Daarom hoeft u de back-upmodi niet te beheren met AEM formulieren. Als u deze optie gebruikt, dient u slechts eenmaal een back-up van de GDS te maken nadat u de optie hebt ingeschakeld. Wanneer u AEM formulieren herstelt van een back-up, hoeft u de naam van de back-upmap voor de GDS niet te wijzigen of GDS te herstellen.
 
-## AEM opslagplaats {#aem-repository}
+## AEM {#aem-repository}
 
 AEM opslagplaats (crx-gegevensopslagplaats) wordt gecreeerd als crx-bewaarplaats tijdens het installeren van AEM vormen wordt gevormd. De locatie van de crx-repository directory wordt bepaald tijdens het installatieproces van AEM formulieren. AEM back-up en herstel in de opslagplaats is vereist in combinatie met database en GDS voor consistente AEM formuliergegevens in AEM formulieren. AEM opslagplaats bevat gegevens voor Correspondence Management Solution, Forms Manager en AEM Forms Workspace.
 
@@ -93,7 +92,7 @@ Als u een back-up van de database in real-time wilt maken, moet u de modus Momen
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices beheren](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf) voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -103,24 +102,22 @@ Vorm uw DB2 gegevensbestand om op de wijze van het archieflogboek te lopen.
 >
 >Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
 
-IBM beschikt over een pakket hulpmiddelen en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
+IBM beschikt over een reeks tools en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
 
-* IBM DB2 Archive Log Accelerator (zie [IBM DB2 Archive Log Accelerator for z/OS User&#39;s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true).)
-* IBM DB2 Data Archive Expert (Zie [IBM DB2 Data Archive Expert User&#39;s Guide and Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true).)
+* IBM DB2 Archive Log Accelerator
+* IBM DB2-expert op het gebied van gegevensarchivering
 
 DB2 heeft ingebouwde mogelijkheden aan file een gegevensbestand aan de Manager van de Opslag van Tivoli. Met Tivoli Storage Manager kunnen DB2-back-ups worden opgeslagen op andere media of op de lokale vaste schijf.
 
-Voor meer informatie over DB2 gegevensbestandsteun en terugwinning, zie [het Ontwikkelen van een steun en terugwinningsstrategie voor DB2](https://publib.boulder.ibm.com/infocenter/db2luw/v9/index.jsp?topic=/com.ibm.db2.udb.admin.doc/doc/c0005945.htm).
-
 ### Oracle {#oracle}
 
-Gebruik back-ups van momentopnamen of configureer de Oracle-database in de archieflogmodus. (Zie [Oracle Backup: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Ga voor meer informatie over het maken van back-ups en het herstellen van uw Oracle-database naar de volgende sites:
+Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [Back-up van oracle: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
 
-[Oracle Backup and Recovery: ](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) geeft een toelichting op de concepten back-up en herstel en de meest gebruikte technieken voor het gebruik van Recovery Manager (RMAN) voor back-up, herstel en rapportage, en geeft meer informatie over het plannen van een back-up- en herstelstrategie.
+[Back-up en herstel van oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in detail, evenals het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
-[Oracle Database Backup and Recovery User&#39;s Guide:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) biedt uitgebreide informatie over RMAN-architectuur, concepten en mechanismen voor back-up en herstel, geavanceerde hersteltechnieken zoals &#39;point-in-time&#39; herstelmogelijkheden en flashback-functies van databases, en afstemming van back-up- en herstelprestaties. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
+[Gebruikershandleiding voor back-up en herstel van database oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
-[Referentie voor back-up en herstel van oracle-database:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) biedt volledige informatie over syntaxis en semantiek voor alle RMAN-opdrachten en beschrijft de databaseweergaven die beschikbaar zijn voor rapportage over back-up- en herstelactiviteiten.
+[Referentie voor back-up en herstel van database oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Verstrekt volledige informatie over syntaxis en semantiek voor alle bevelen RMAN, en beschrijft de gegevensbestandmeningen die voor het melden van steun en terugwinningsactiviteiten beschikbaar zijn.
 
 ### SQL Server {#sql-server}
 
@@ -131,7 +128,7 @@ SQL de Server verstrekt ook twee steun en terugwinningshulpmiddelen:
 * SQL Server Management Studio (GUI)
 * T-SQL (opdrachtregel)
 
-Zie [Back-up en herstel](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx) voor meer informatie.
+Zie voor meer informatie [Back-up en herstel](https://msdn.microsoft.com/en-us/library/ms187048(v=SQL.90).aspx).
 
 ### MySQL {#mysql}
 
@@ -141,7 +138,7 @@ Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand t
 >
 >De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe: `binlog_format=mixed log-bin=logname`
 
-U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de optie - `log-bin`, zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met het `FLUSH LOGS SQL` bevel dwingen. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de opdracht `flush-logs`, waarmee het volgende logbestand wordt gemaakt.
+U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met dwingen `FLUSH LOGS SQL` gebruiken. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` gebruiken, waarmee het volgende logbestand wordt gemaakt.
 
 Zie [Samenvatting van back-upstrategie](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -172,15 +169,15 @@ Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimt
 
 Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
-### Hoofdlocatie van opslagruimte voor inhoud (geclusterde omgeving) {#content-storage-root-location-clustered-environment}
+### Hoofdlocatie voor opslag van inhoud (geclusterde omgeving) {#content-storage-root-location-clustered-environment}
 
 Wanneer u Content Services (Afgekeurd) installeert in een geclusterde omgeving, wordt de hoofdmap van de inhoudsopslagruimte gesplitst in twee aparte mappen:
 
-**Content Storage Root-map:** doorgaans een gedeelde netwerkmap die lees-/schrijfbaar is en toegankelijk is voor alle knooppunten in de cluster
+**Basismap voor inhoudsopslag:** Gewoonlijk een gedeelde netwerkmap die lees-/schrijftoegankelijk is voor alle knooppunten in de cluster
 
-**Indexhoofdmap:** een map die op elk knooppunt in de cluster is gemaakt en die altijd hetzelfde pad en dezelfde mapnaam heeft
+**Basismap index:** Een map die op elk knooppunt in de cluster is gemaakt en die altijd hetzelfde pad en dezelfde mapnaam heeft
 
-De standaardlocatie voor de hoofdmap voor inhoudsopslag is `[GDS root]/lccs_data`, waarbij `[GDS root]` de locatie is die wordt beschreven in [GDS-locatie](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
+De standaardlocatie voor de hoofdmap van de inhoudsopslag is `[GDS root]/lccs_data`, waarbij `[GDS root]` is de locatie die wordt beschreven in [GDS-locatie](files-back-recover.md#gds-location). Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimte:
 
 /audit.contentstore
 
@@ -192,7 +189,7 @@ De standaardlocatie voor de hoofdmap voor inhoudsopslag is `[GDS root]/lccs_data
 
 Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
-De standaardlocatie voor de hoofdmap van de index is `[aem-forms root]/lucene-indexes` voor elk knooppunt.
+De standaardlocatie voor de hoofdmap van de index is `[aem-forms root]/lucene-indexes` op elk knooppunt.
 
 ## Door de klant geïnstalleerde lettertypen {#customer-installed-fonts}
 
@@ -200,6 +197,6 @@ Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzon
 
 >[!NOTE]
 >
->Standaard bevinden de met AEM formulieren geïnstalleerde Adobe-lettertypen zich in de map `[aem-forms root]/fonts`.
+>Standaard bevinden de met AEM formulieren geïnstalleerde Adobe-lettertypen zich in de `[aem-forms root]/fonts` directory.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

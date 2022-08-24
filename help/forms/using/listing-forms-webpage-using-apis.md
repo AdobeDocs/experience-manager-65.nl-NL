@@ -1,29 +1,28 @@
 ---
 title: Formulieren met API's op een webpagina weergeven
-seo-title: Formulieren met API's op een webpagina weergeven
+seo-title: Listing forms on a web page using APIs
 description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
-seo-description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
+seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
 
-
-# Formulieren op een webpagina weergeven met API&#39;s {#listing-forms-on-a-web-page-using-apis}
+# Formulieren met API&#39;s op een webpagina weergeven {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren op te vragen en op te halen die aan de zoekcriteria voldoet. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
 
-Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
+Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de GET naar de server op `https://'[server]:[port]'/libs/fd/fm/content/manage.json` met query-parameters die hieronder worden beschreven.
 
-## Query-parameters {#query-parameters}
+## Parameters query {#query-parameters}
 
 <table>
  <tbody>
@@ -33,9 +32,9 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET n
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het <code>func </code>kenmerk in op <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
+   <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde in van de optie <code>func </code>kenmerk naar <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking: </strong> <em>deze parameter is verplicht.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -78,8 +77,8 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET n
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>In het bovenstaande voorbeeld: </p>
     <ul>
-     <li><strong>naam</strong>: Hiermee wordt de naam opgegeven van de eigenschap waarnaar moet worden gezocht.</li>
-     <li><strong>waarde</strong>: geeft de waarde aan van de eigenschap waarnaar moet worden gezocht.</li>
+     <li><strong>name</strong>: Hiermee wordt de naam opgegeven van de eigenschap waarnaar moet worden gezocht.</li>
+     <li><strong>value</strong>: geeft de waarde aan van de eigenschap waarnaar moet worden gezocht.</li>
      <li><strong>operator</strong>: geeft de operator aan die moet worden toegepast tijdens het zoeken. De volgende operatoren worden ondersteund:
       <ul>
        <li>EQ - Gelijk aan </li>
@@ -94,11 +93,11 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET n
        <li>ENDSWITH - A eindigt met B als B het einddeel van A is</li>
        <li>LIKE - Implementeert de operator LIKE</li>
        <li>AND - Meerdere instructies combineren</li>
-      </ul> <p><strong>Opmerking:</strong> <em>GT-, LT-, GTEQ- en LTEQ-operatoren zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
+      </ul> <p><strong>Opmerking:</strong> <em>De operatoren GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
-   <td>orders<br /> </td>
+   <td>bestellingen<br /> </td>
    <td><p>Hiermee geeft u de volgordecriteria voor de zoekresultaten op. De criteria worden gedefinieerd in de JSON-indeling. U kunt zoekresultaten sorteren op meerdere velden. De resultaten worden gesorteerd in de volgorde waarin de velden in de query worden weergegeven.</p> <p>Bijvoorbeeld,</p> <p>Voeg de volgende parameter toe om queryresultaten op te halen die zijn geordend door eigenschap title in oplopende volgorde: </p> <p><code class="code">JSONArray orderingsArray=new JSONArray();
        JSONObject orderings=new JSONObject();
        orderings.put("name", "title");
@@ -106,17 +105,17 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een verzoek van de GET n
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>naam</strong>: Hiermee geeft u de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te ordenen.</li>
+     <li><strong>name</strong>: Hiermee geeft u de naam op van de eigenschap die moet worden gebruikt om de zoekresultaten te ordenen.</li>
      <li><strong>criteria</strong>: Hiermee geeft u de volgorde van de resultaten op. Het kenmerk order accepteert de volgende waarden:
       <ul>
-       <li>ASC - Gebruik ASC om de resultaten in oplopende volgorde te rangschikken.<br /> </li>
+       <li>ASC - Gebruik ASC om resultaten in oplopende volgorde te rangschikken.<br /> </li>
        <li>DES - Gebruik DES om resultaten in dalende orde te rangschikken.</li>
       </ul> </li>
     </ul> </td>
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>Geeft aan of de binaire inhoud moet worden opgehaald. Het kenmerk <code>includeXdp</code> is van toepassing op elementen van het type <code>FORM</code>, <code>PDFFORM</code> en <code>PRINTFORM</code>.</td>
+   <td>Geeft aan of de binaire inhoud moet worden opgehaald. De <code>includeXdp</code> kenmerk is van toepassing op activa van het type <code>FORM</code>, <code>PDFFORM</code>, en <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -142,7 +141,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
                 {"name":"status","value":"false","operator":"EQ"},
                 {"name":"lastModifiedDate","value":"01/09/2013","operator":"GTEQ"},
                 {"name":"lastModifiedDate","value":"01/18/2013","operator":"LTEQ"}]
-orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
+orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 ```
 
 ## Monsterreactie {#sample-response}

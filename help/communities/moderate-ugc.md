@@ -12,7 +12,7 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 812b9f3af3ad04343e648a8d07d53f8442978b82
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 2%
@@ -34,7 +34,7 @@ Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wor
 * [QnA](/help/communities/working-with-qna.md): leden maken een vraag of beantwoorden een vraag .
 * [Revisies](/help/communities/reviews.md): leden plaatsen commentaar wanneer ze een object beoordelen.
 
-Moderatie van UGC is nuttig om positieve bijdragen te erkennen en negatieve (zoals spam en misleidende taal) te beperken. UGC kan vanuit verschillende omgevingen worden gemodereerd:
+Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het beperken van negatieve bijdragen (zoals spam en misleidende taal). UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
 * [Opslag van communautaire inhoud](working-with-srp.md)
 
@@ -48,7 +48,7 @@ Moderatie van UGC is nuttig om positieve bijdragen te erkennen en negatieve (zoa
 
 ## Moderatiehandelingen {#moderation-actions}
 
-De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhankelijk van de gebruikersidentiteit en de omgeving. In de onderstaande tabel wordt de volgende terminologie gebruikt om de verschillende rollen te beschrijven op basis van de gebruikersidentiteit:
+De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhankelijk van de gebruikersidentiteit en het milieu. In de onderstaande tabel wordt de volgende terminologie gebruikt om de verschillende rollen te beschrijven op basis van de gebruikersidentiteit:
 
 * `Admin`
 

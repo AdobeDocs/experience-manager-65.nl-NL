@@ -1,8 +1,8 @@
 ---
 title: Aangepaste speciale tekens in Correspondentenbeheer
-seo-title: Aangepaste speciale tekens in Correspondentenbeheer
+seo-title: Custom special characters in Correspondence Management
 description: Leer hoe u aangepaste speciale tekens toevoegt in Correspondentiebeheer.
-seo-description: Leer hoe u aangepaste speciale tekens toevoegt in Correspondentiebeheer.
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '636'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste speciale tekens in Correspondentenbeheer{#custom-special-characters-in-correspondence-management}
 
@@ -29,7 +28,7 @@ U kunt bijvoorbeeld de volgende speciale tekens invoegen:
 
 * Valutasymbolen zoals €, ¥ en £
 * Wiskundige symbolen zoals A, Ö, ∂ en ^
-* Interpunctiesymbolen als ‟ en&quot;
+* Interpunctiesymbolen als ‟ en &quot;
 
 U kunt speciale tekens in letters invoegen:
 
@@ -44,18 +43,18 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
-1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
+1. Maak in de map Apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die vergelijkbaar is met de map Specicharacters (bevindt zich in de map textEditorConfig onder libs):
 
-   1. Klik met de rechtermuisknop op de map **specialcharacters** op het volgende pad en selecteer **Overlay Node**:
+   1. Klik met de rechtermuisknop op de knop **specialiteiten** map op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/gui/configuration/textEditorConfig/specialcharacters
+      **Pad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **Overlay-locatie:** /apps/
+      **Locatie bedekking:** /apps/
 
       **Identieke knooppunttypen:** Ingeschakeld
 
@@ -70,25 +69,23 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
       >    * Een functiepakket installeren
 
 
-   1. Klik **OK** en klik vervolgens op **Alles opslaan**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
+   1. Klikken **OK** en klik vervolgens op **Alles opslaan**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
 
       Controleer na het maken van de overlay de structuurcodes van de knooppunten. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
 
-
-
-1. Zorg ervoor dat het knooppunt **[!UICONTROL textEditorConfig]** de volgende eigenschappen en waarden heeft:
+1. Zorg ervoor dat de **[!UICONTROL textEditorConfig]** node heeft de volgende eigenschappen en waarden:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | cmConfigurationType | Tekenreeks | cmTextEditorConfiguration |
    | cssPath | Tekenreeks | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Klik met de rechtermuisknop op de map **[!UICONTROL specialcharacters]** op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op **Alles opslaan**:
+1. Klik met de rechtermuisknop op de knop **[!UICONTROL specialcharacters]** map op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op **Alles opslaan**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
 
 1. Vernieuw de Teksteditor\Create Correspondence UI page. Het knooppunt dat u hebt toegevoegd, is het laatste in de lijst met speciale tekens in de gebruikersinterface.
-1. Klik **Alles opslaan**.
+1. Klikken **Alles opslaan**.
 1. Breng de gewenste wijzigingen aan in de speciale tekens:
 
 <table>
@@ -149,4 +146,3 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
   </tr>
  </tbody>
 </table>
-

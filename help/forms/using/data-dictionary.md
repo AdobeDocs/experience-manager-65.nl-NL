@@ -1,22 +1,21 @@
 ---
 title: Gegevenswoordenboek
-seo-title: Gegevenswoordenboek
+seo-title: Data Dictionary
 description: Met gegevenswoordenboek in Correspondentiebeheer kunt u back-endgegevens in letters integreren als invoer voor gebruik in klantcorrespondentie.
-seo-description: Met gegevenswoordenboek in Correspondentiebeheer kunt u back-endgegevens in letters integreren als invoer voor gebruik in klantcorrespondentie.
+seo-description: Data dictionary in Correspondence Management lets you integrate back-end data to letters as inputs for use in customer correspondence.
 uuid: 178a285e-b4a4-4a36-a2aa-b43ecb0871ed
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: aaed75e6-8849-46a8-b986-896ad729adda
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '3861'
+source-wordcount: '3838'
 ht-degree: 0%
 
 ---
-
 
 # Gegevenswoordenboek{#data-dictionary}
 
@@ -32,18 +31,18 @@ Het Beheer van de correspondentie gebruikt het achtereind, de klant, of de ontva
 
 Zakelijke gebruikers hebben doorgaans geen kennis nodig van metagegevensrepresentaties zoals XSD (XML-schema) en Java-klassen. Nochtans, vereisen zij gewoonlijk toegang tot deze gegevensstructuren en attributen om oplossingen te bouwen.
 
-### Workflow voor gegevenswoordenboek {#data-dictionary-workflow}
+### Workflow gegevenswoordenboek {#data-dictionary-workflow}
 
 1. Een auteur [maakt het gegevenswoordenboek](#createdatadictionary) door een schema of helemaal opnieuw te uploaden.
 1. De auteur creeert brief en Interactieve Mededelingen die op het gegevenswoordenboek wordt gebaseerd en associeert de elementen van het gegevenswoordenboek in brief en Interactieve Mededelingen waar nodig.
 1. Een auteur kan het XML-bestand met voorbeeldgegevens downloaden. Dit bestand is gebaseerd op het schema van een gegevenswoordenboek. De auteur kan het XML-bestand met voorbeeldgegevens wijzigen. Dit bestand kan als testgegevens worden gekoppeld aan het gegevenswoordenboek. Hetzelfde wordt gebruikt tijdens de lettertypevoorvertoning.
-1. Terwijl [een voorvertoning van een letter](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p) weergeeft, kiest een auteur ervoor de letter met gegevens voor te vertonen (Aangepaste voorvertoning). De brief wordt geopend vooraf gevuld met de gegevens die Auteur heeft verstrekt. Dit opent in creeer correspondentieinterface. De agent die deze brief previewing kan de inhoud, de gegevens, en de gehechtheid in deze brief wijzigen en kan de definitieve brief voorleggen. Zie [Correspondentie maken](../../forms/using/create-letter.md) voor meer informatie over het maken van letters.
+1. while [een brief voorvertonen](../../forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p), kiest een auteur ervoor een voorvertoning van de letter met gegevens weer te geven (Aangepaste voorvertoning). De brief wordt geopend vooraf gevuld met de gegevens die Auteur heeft verstrekt. Dit opent in creeer correspondentieinterface. De agent die deze brief previewing kan de inhoud, de gegevens, en de gehechtheid in deze brief wijzigen en kan de definitieve brief voorleggen. Zie voor meer informatie over het maken van letters [Correspondentie maken](../../forms/using/create-letter.md).
 
 ## Vereiste {#prerequisite}
 
-Installeer [Compatibiliteitspakket](compatibility-package.md) om de optie **Gegevenswoordenboeken** op de pagina **Forms** weer te geven.
+Installeer de [Compatibiliteitspakket](compatibility-package.md) om de **Gegevenswoordenboeken** de optie **Forms** pagina.
 
-## Gegevenswoordenboek {#createdatadictionary} maken
+## Een gegevenswoordenboek maken {#createdatadictionary}
 
 U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of u kunt een XSD-schemabestand uploaden om op basis daarvan een gegevenswoordenboek te maken. U kunt het gegevenswoordenboek vervolgens uitbreiden door meer vereiste informatie toe te voegen, waaronder velden. Ongeacht hoe het gegevenswoordenboek werd gecreeerd, heeft de eigenaar van het bedrijfsproces geen kennis van de achterste deelsystemen nodig. De eigenaar van het bedrijfsproces heeft slechts kennis van de domeinvoorwerpen, en hun definities, voor hun proces nodig.
 
@@ -51,28 +50,28 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 >
 >Voor meerdere letters met vergelijkbare elementen kunt u een algemeen gegevenswoordenboek maken. Een groot gegevenswoordenboek met een groot aantal elementen kan echter prestatieproblemen veroorzaken bij het gebruik van het gegevenswoordenboek en het laden van de elementen, zoals letters en documentfragmenten. Als u problemen ondervindt met de prestaties, kunt u verschillende gegevenswoordenboeken voor verschillende letters maken.
 
-1. Selecteer **Forms** > **Gegevenswoordenboeken**.
-1. Tik **Gegevenswoordenboek maken**.
+1. Selecteren **Forms** > **Gegevenswoordenboeken**.
+1. Tikken **Gegevenswoordenboek maken**.
 1. Voeg het volgende toe in het scherm Eigenschappen:
 
    * **Titel:** (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
-   * **Naam:** de unieke naam voor het gegevenswoordenboek. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel en de speciale tekens, spaties, cijfers en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Naam:** De unieke naam voor het gegevenswoordenboek. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel en de speciale tekens, spaties, cijfers en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
 
-   * **Omschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
-   * **Tags:** (Optioneel) Als u een aangepast label wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
-   * **Uitgebreide eigenschappen**: (Optioneel) Tik op  **Veld** toevoegen om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
+   * **Beschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
+   * **Tags:** (Optioneel) Als u een aangepaste tag wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
+   * **Uitgebreide eigenschappen**: (Optioneel) Tikken **Veld toevoegen** om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
 
    ![Eigenschappen voor gegevenswoordenboeken, zoals in het Duits gespecificeerd](do-not-localize/1_ddproperties.png)
 
-1. (Optioneel) Als u een XSD-schemadefinitie voor uw gegevenswoordenboek wilt uploaden, tikt u onder het deelvenster Structuur gegevenswoordenboek op **XML-schema uploaden**. Blader naar het XSD-bestand, selecteer het en tik op **Open**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
+1. (Optioneel) Als u een XSD-schemadefinitie voor uw gegevenswoordenboek wilt uploaden, tikt u onder het deelvenster Structuur gegevenswoordenboek op **XML-schema uploaden**. Blader naar het XSD-bestand, selecteer het en tik op **Openen**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
 
-   Zie [Gedetailleerde gegevenswoordenboekelementen](#computedddelements) voor meer informatie over Berekende DD-elementen.
+   Voor meer informatie over Berekende DD-elementen raadpleegt u [Berekende gegevenswoordenboekelementen](#computedddelements).
 
    >[!NOTE]
    >
    >U kunt het uploaden van het schemadossier overslaan en uw gegevenswoordenboek van kras bouwen gebruikend het gebruikersinterface. U doet dit door deze stap over te slaan en door te gaan met de volgende stappen.
 
-1. Tik **Volgende**.
+1. Tikken **Volgende**.
 1. Voeg in het scherm Eigenschappen toevoegen de elementen toe aan het gegevenswoordenboek. U kunt ook elementen toevoegen/verwijderen en de details ervan bewerken als u een schema hebt geüpload voor een basisstructuur van het gegevenswoordenboek.
 
    U kunt op de drie punten aan de rechterkant van een element tikken en een element toevoegen aan de gegevenswoordenboekstructuur.
@@ -93,17 +92,17 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * Een ouder DDE (samenstelling) kan twee kinderen met de zelfde naam niet hebben.
    * Cijfers bevatten alleen primitieve tekenreekstypen.
 
-   Zie [Gegevenswoordenboekelementen toewijzen aan XML-schema](#mappingddetoschema) voor meer informatie over samengestelde, verzamel- en primitieve elementen en het werken met gegevenswoordenboekelementen.
+   Voor meer informatie over samengestelde, verzamel- en primitieve elementen en het werken met gegevenswoordenboekelementen raadpleegt u [Gegevenswoordenboekelementen toewijzen aan XML-schema](#mappingddetoschema).
 
-   Zie [Validaties voor gegevenswoordenboeken](#ddvalidations) voor informatie over validaties in gegevenswoordenboek.
+   Voor informatie over validaties in gegevenswoordenboek raadpleegt u [Validaties in gegevenswoordenboekeditor](#ddvalidations).
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook **Veld toevoegen** tikken en de eigenschappen van een DD-element uitbreiden.
+1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook tikken **Veld toevoegen** en breidt de eigenschappen van een DD-element uit.
 
    ![3_addPropertyAdvanced](assets/3_addddpropertiesadvanced.png)
 
-1. (Optioneel) U kunt elk element verwijderen door op de drie punten rechts van een element te tikken en **Delete** te selecteren.
+1. (Optioneel) U kunt elk element verwijderen door op de drie punten aan de rechterkant van een element te tikken en **Verwijderen**.
 
    ![4_deletement](assets/4_deleteelement.png)
 
@@ -112,7 +111,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    >Als u een samengesteld element/verzamelingselement met onderliggende knooppunten verwijdert, worden ook de onderliggende knooppunten verwijderd.
 
 1. (Optioneel) Selecteer een element in het deelvenster Structuur gegevenswoordenboek en in het deelvenster Lijst met velden en variabelen. Wijzig de vereiste kenmerken die aan het element zijn gekoppeld of voeg deze toe.
-1. Tik **Opslaan**.
+1. Tikken **Opslaan**.
 
 ### Kopieën maken van een of meer gegevenswoordenboeken {#create-copies-of-one-or-more-data-dictionary}
 
@@ -124,7 +123,7 @@ Als u snel een of meer gegevenswoordenboeken wilt maken met eigenschappen en ele
 1. Bewerk indien nodig de titel en naam waarmee u de kopie van het gegevenswoordenboek wilt opslaan.
 1. Tik op Plakken. De kopie van het gegevenswoordenboek wordt gemaakt. Nu kunt u de vereiste wijzigingen aanbrengen in het nieuwe gegevenswoordenboek.
 
-## Zie documentfragmenten of documenten die naar een element van het Woordenboek van Gegevens {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element} verwijzen
+## Zie documentfragmenten of documenten die naar een element van het Woordenboek van Gegevens verwijzen {#see-the-document-fragments-or-documents-that-refer-to-a-data-dictionary-element}
 
 Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar welke elementen in het gegevenswoordenboek wordt verwezen in welke teksten, voorwaarden, letters en interactieve communicatie.
 
@@ -153,9 +152,9 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 ## Werken met testgegevens {#working-with-test-data}
 
-1. Tik op de pagina Gegevenswoordenboeken op **Select**.
-1. Tik op een gegevenswoordenboek waarvoor u testgegevens wilt downloaden en tik vervolgens op **Voorbeeldgegevens van XML downloaden**.
-1. Tik **OK** in het waarschuwingsbericht. Een XML-bestand wordt gedownload.
+1. Tik op de pagina Gegevenswoordenboeken op **Selecteren**.
+1. Tik op een gegevenswoordenboek waarvoor u testgegevens wilt downloaden en tik vervolgens op **Voorbeeld-XML-gegevens downloaden**.
+1. Tikken **OK** in het waarschuwingsbericht. Een XML-bestand wordt gedownload.
 1. Open het XML-bestand met Kladblok of een andere XML-editor. Het XML-bestand heeft dezelfde structuur als het gegevenswoordenboek en de plaatsaanduidingstekenreeksen in de elementen. Vervang de tekenreeksen voor plaatsaanduidingen door de gegevens waarmee u een letter wilt testen.
 
    ```xml
@@ -201,14 +200,13 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 1. Nadat u de gegevensinvoer hebt gemaakt, kunt u dit XML-bestand gebruiken wanneer u een voorbeeld van een letter weergeeft met testgegevens.
 
-   U kunt deze testgegevens toevoegen met DD (selecteer DD en tik op Testgegevens uploaden en upload dit XML-bestand)
-Als u dus daarna normaal (niet aangepast) een voorbeeld van een letter bekijkt, worden deze XML-gegevens gebruikt in letters. U kunt ook op Aangepast tikken en deze XML uploaden.
+   U kunt deze testgegevens toevoegen met DD (Selecteer DD en tik op Testgegevens uploaden en upload dit XML-bestand). Als u de standaardvoorvertoning van de brief (niet de aangepaste versie) selecteert, worden deze XML-gegevens gebruikt in letter. U kunt ook op Aangepast tikken en deze XML uploaden.
 
 ## Voorbeelden {#samples}
 
 De volgende codesteekproeven tonen implementatiedetails voor het Woordenboek van Gegevens.
 
-### Voorbeeldschema dat kan worden geüpload naar gegevenswoordenboek {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
+### Voorbeeldschema dat kan worden geüpload naar het gegevenswoordenboek {#sample-schema-that-can-be-uploaded-to-the-data-dictionary}
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -341,7 +339,7 @@ In de volgende tabel worden de algemene kenmerken beschreven die aan een DDE zij
  </tbody>
 </table>
 
-### Elementen van gegevenswoordenboek {#computedddelements}
+### Berekende gegevenswoordenboekelementen {#computedddelements}
 
 Een gegevenswoordenboek kan ook berekende elementen bevatten. Een gegevenswoordenboekelement wordt altijd gekoppeld aan een expressie. Deze expressie wordt geëvalueerd om de waarde van een gegevenswoordenboekelement bij uitvoering op te halen. Een berekende DDE-waarde is een functie van andere DDE-waarden of -literalen. Standaard JSP Expression Language (EL)-expressies worden ondersteund. De EL-expressies gebruiken de ${ }-tekens en geldige expressies kunnen letterlijke tekens, operatoren, variabelen (gegevenswoordenboekelementverwijzingen) en functieaanroepen bevatten. Bij het verwijzen naar een gegevenswoordenboekelement in de expressie wordt de referentienaam van de DDE gebruikt. De referentienaam is uniek voor elk gegevenswoordenboekelement binnen een gegevenswoordenboek.
 
@@ -356,31 +354,31 @@ Voor het exporteren van een XSD-bestand zijn specifieke gegevenstoewijzingen nod
   <tr>
    <td>XSD <br /> </td>
    <td><p>Gegevenswoordenboek <br /> </p> </td>
-   <td>DDI (het Type van Gegevens van de Waarde van de Instantie)<br /> </p> </td>
+   <td>DDI (Gegevenstype Instantiewaarde)<br /> </p> </td>
   </tr>
   <tr>
-   <td><p>xs:element van type - Samengesteld Type<br /> </p> </td>
-   <td>DDE van het type - COMPOSITE<br /> </p> </td>
+   <td><p>xs:element van type - Samengesteld type<br /> </p> </td>
+   <td>DDE van het type - SAMENGESTELD<br /> </p> </td>
    <td>java.util.Map<br /> </td>
   </tr>
   <tr>
    <td><p>xs:element waarbij maxOccurs &gt; 1<br /> </p> </td>
-   <td>DDE van type - COLLECTION-<br /> wordt een knoop DDE gecreeerd naast COLLECTION DDE die informatie van de knoop van de ouderVERZAMELING vangt. Het zelfde wordt gecreeerd voor beide inzameling van eenvoudige/samengestelde gegevenstypes. Wanneer u een VERZAMELING van de typesamenstelling hebt, vangt de boom van het Woordenboek van Gegevens de samenstellende gebieden in de kinderen van DDE die voor het vangen van typeinformatie wordt gecreeerd.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE voor type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
+   <td>DDE van het type - COLLECTION-<br /> Een knoop DDE wordt gecreeerd naast COLLECTION DDE die informatie van de knoop van de ouderVERZAMELING vangt. Het zelfde wordt gecreeerd voor beide inzameling van eenvoudige/samengestelde gegevenstypes. Wanneer u een VERZAMELING van de typesamenstelling hebt, vangt de boom van het Woordenboek van Gegevens de samenstellende gebieden in de kinderen van DDE die voor het vangen van typeinformatie wordt gecreeerd.<br /> - DDE (VERZAMELING)<br /> - DDE(COMPOSITE voor typeinfo)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td>
    <td>java.util.List<br /> </td>
   </tr>
   <tr>
    <td>Kenmerk van type - xs:id <br /> </p> </td>
-   <td>DDE van type - STRING <br /> </td>
+   <td>DDE van het type - STRING <br /> </td>
    <td>java.lang.String<br /> </td>
   </tr>
   <tr>
    <td>xs:attribute /xs:element van type - xs:string</p> </td>
-   <td>DDE van type - STRING<br /> </td>
+   <td>DDE van het type - STRING<br /> </td>
    <td>java.lang.String<br /> </td>
   </tr>
   <tr>
    <td>xs:attribute /xs:element of type - xs: boolean <br /> </td>
-   <td>DDE van type - Boolean <br /> </td>
+   <td>DDE van het type - Boolean <br /> </td>
    <td>java.lang.Boolean<br /> </td>
   </tr>
   <tr>
@@ -411,25 +409,25 @@ Voor het exporteren van een XSD-bestand zijn specifieke gegevenstoewijzingen nod
  </tbody>
 </table>
 
-## Download een bestand met voorbeeldgegevens uit een gegevenswoordenboek {#download-a-sample-data-file-from-a-data-dictionary}
+## Een bestand met voorbeeldgegevens downloaden uit een gegevenswoordenboek {#download-a-sample-data-file-from-a-data-dictionary}
 
 Nadat u een gegevenswoordenboek hebt gemaakt, kunt u dit downloaden als een XML-voorbeeldgegevensbestand om er tekstgegevens in te maken.
 
-1. Tik op de pagina Gegevenswoordenboeken op **Selecteren** en tik vervolgens op een gegevenswoordenboek om het te selecteren.
-1. Selecteer **Voorbeeldgegevens van XML downloaden**.
-1. Tik **OK** in het waarschuwingsbericht.
+1. Tik op de pagina Gegevenswoordenboeken op **Selecteren** tikt u vervolgens op een gegevenswoordenboek om het te selecteren.
+1. Selecteren **Voorbeeld-XML-gegevens downloaden**.
+1. Tikken **OK** in het waarschuwingsbericht.
 
-   Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand naar de computer met de naam &lt;data-dictionary-name>-SampleData. Nu kunt u dit bestand bewerken in een XML- of teksteditor om gegevensinvoer te maken terwijl [een letter](../../forms/using/create-letter.md) wordt gemaakt.
+   Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand met de naam naar de computer &lt;data-dictionary-name>-SampleData. Nu kunt u dit bestand in een XML- of teksteditor bewerken om gegevensinvoer te maken terwijl [een letter maken](../../forms/using/create-letter.md).
 
-## Internationalisatie van metagegevens {#internationalization-of-meta-data}
+## Internationalisatie van meta-gegevens {#internationalization-of-meta-data}
 
 Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden, kunt u de sets met weergavenamen, beschrijvingen en opsommingswaarden van het gegevenswoordenboek en gegevenswoordenboekelementen lokaliseren.
 
-### Gegevenswoordenboek {#localize-data-dictionary} lokaliseren
+### Gegevenswoordenboek lokaliseren {#localize-data-dictionary}
 
-1. Tik op de pagina Gegevenswoordenboeken op **Select** en tik vervolgens op een gegevenswoordenboek om het te selecteren.
-1. Tik **Localisatiegegevens downloaden**.
-1. Tik **OK** in de waarschuwing. Correspondence Management downloadt een zip-bestand met de naam DataDictionary-&lt;DDname>.zip naar de computer.
+1. Tik op de pagina Gegevenswoordenboeken op **Selecteren** tikt u vervolgens op een gegevenswoordenboek om het te selecteren.
+1. Tikken **Locatiegegevens downloaden**.
+1. Tikken **OK** in de waarschuwing. Correspondentenbeheer downloadt een ZIP-bestand naar de computer met de naam DataDictionary-&lt;ddname>.zip.
 1. Het Zip-bestand bevat een .properties-bestand. In dit bestand wordt het gedownloade gegevenswoordenboek gedefinieerd. De inhoud van het eigenschappenbestand is vergelijkbaar met het volgende:
 
    ```ini
@@ -458,10 +456,10 @@ Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden,
 
 1. Archiveer het .properties-bestand (of bestanden voor meerdere landinstellingen) in één zip-bestand.
 
-1. Selecteer **Meer** > **Localisatiegegevens uploaden** op de pagina Gegevenswoordenboeken en selecteer het ZIP-bestand met gelokaliseerde eigenschappenbestanden.
+1. Selecteer op de pagina Gegevenswoordenboeken de optie **Meer** > **Locatiegegevens uploaden** en selecteert u het ZIP-bestand met gelokaliseerde eigenschappenbestanden.
 1. Wijzig de landinstelling van uw browser om de wijzigingen in de lokalisatie weer te geven.
 
-## Validaties voor gegevenswoordenboek {#ddvalidations}
+## Validaties gegevenswoordenboek {#ddvalidations}
 
 De Editor gegevenswoordenboek past de volgende validaties toe bij het maken of bijwerken van een gegevenswoordenboek.
 
@@ -503,7 +501,7 @@ Validaties die worden toegepast op het niveau van het Element van het Woordenboe
 * De band van XML van een inzameling DDE moet niet aan een attribuut in kaart brengen.
 * De syntaxis van de XML-binding moet geldig zijn, zoals er slechts één @ wordt weergegeven. @ is alleen toegestaan als gevolgd door een kenmerknaam.
 
-## Elementen gegevenswoordenboek toewijzen aan XML-schema {#mappingddetoschema}
+## Gegevenswoordenboekelementen toewijzen aan XML-schema {#mappingddetoschema}
 
 U kunt een gegevenswoordenboek van een Schema van XML tot stand brengen of het bouwen gebruikend het gebruikersinterface van het Woordenboek van Gegevens. Alle elementen van het Woordenboek van Gegevens (DDEs) binnen een gegevenswoordenboek hebben een Bindend gebied van XML om de band van DDE aan een element in het schema van XML op te slaan. De binding in elke DDE is relatief ten opzichte van de bovenliggende DDE.
 
@@ -511,7 +509,7 @@ De volgende detailmodellen en codesteekproeven die implementatiedetails voor het
 
 ## Eenvoudige (primitieve) elementen toewijzen {#mapping-simple-primitive-elements}
 
-Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) wordt bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de afbeeldingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
+Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) wordt bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de toewijzingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
 
 * een attribuut
 * een element
@@ -581,7 +579,7 @@ In het volgende voorbeeld ziet u het schema voor een notitie.
  </tbody>
 </table>
 
-### Elementen van verzameling toewijzen {#mapping-collection-elements}
+### Elementen van verzamelingen toewijzen {#mapping-collection-elements}
 
 Een verzamelingselement wordt alleen toegewezen aan een ander verzamelingselement met een kardinaliteit > 1. De onderliggende DDEs van een inzameling DDE heeft relatieve (lokale) Binding van XML met betrekking tot de Binding van XML van zijn ouder. Aangezien onderliggende DDEs van een inzamelingselement de zelfde kardinaliteit moet hebben zoals die van ouder, wordt de relatieve band verplicht om de kardinaliteitsbeperking te verzekeren zodat kind DDEs niet aan een niet herhalend element van het Schema van XML richt. In het onderstaande voorbeeld moet de kardinaliteit van &quot;TokenID&quot; hetzelfde zijn als &quot;Tokens&quot;, de bovenliggende verzameling van DDE.
 
@@ -657,4 +655,3 @@ De Token.xsd verbonden aan deze steekproef zou zijn:
 | TokenText | empty(null) |
 | TokenHeading | TokenText/TextHeading |
 | TokenBody | TokenText/TextBody |
-

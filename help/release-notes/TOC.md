@@ -7,10 +7,10 @@ breadcrumb-title: Release-opmerkingen
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 2fb2ad0936127c06d9ba526d2e27f91aaf546ff1
+source-git-commit: e1b6eaf85d13d0a031dd8a2424490ba2b10a3d52
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 25%
+source-wordcount: '60'
+ht-degree: 26%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 25%
 + [AEM 6.5 Opmerkingen bij de release](home.md)
 + [Opmerkingen bij de huidige release](release-notes.md)
 + Opmerkingen bij vorige release {#service-pack}
+   + [6.5.13.](previous/6.5.13.md)
    + [6.5.12.](previous/6.5.12.md)
    + [6.5.11.](previous/6.5.11.md)
    + [6.5.10.](previous/6.5.10.md)

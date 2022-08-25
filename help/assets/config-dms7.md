@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
+source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
 workflow-type: tm+mt
-source-wordcount: '5717'
+source-wordcount: '5881'
 ht-degree: 2%
 
 ---
@@ -86,11 +86,11 @@ Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](
 
 ## Een Dynamic Media-configuratie maken in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Voordat u Dynamic Media configureert** - Nadat u uw inrichtingse-mail met Dynamic Media-referenties hebt ontvangen, moet u de opdracht [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
-![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**Een Dynamic Media-configuratie maken in Cloud Services:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. Selecteer in de modus Auteur van Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en selecteer het pictogram Gereedschappen. Ga vervolgens naar **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
 1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]** (selecteer het mappictogram niet links van **[!UICONTROL global]**), selecteert u vervolgens **[!UICONTROL Create]**.
@@ -98,8 +98,24 @@ Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](
 
    Selecteer **[!UICONTROL Connect to Dynamic Media]**.
 
-   >[!NOTE]
-   Nadat u uw inrichtingse-mail met de geloofsbrieven van Dynamic Media hebt ontvangen, open [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
+1. In de **[!UICONTROL Change Password]** in het dialoogvenster **[!UICONTROL New Password]** voert u een nieuw wachtwoord in dat uit 8-25 tekens bestaat. Het wachtwoord moet ten minste een van de volgende elementen bevatten:
+
+   * Hoofdletter
+   * Kleine letter
+   * Getal
+   * Speciaal teken: `# $ & . - _ : { }`
+
+   De **[!UICONTROL Current Password]** wordt opzettelijk voorgevuld en verborgen voor interactie.
+
+   Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt of dat u opnieuw hebt getypt door het oogpictogram voor het wachtwoord te selecteren om het wachtwoord weer te geven. Selecteer opnieuw het pictogram om het wachtwoord te verbergen.
+
+1. In de **[!UICONTROL Repeat Password]** veld, typ het nieuwe wachtwoord opnieuw en selecteer vervolgens **[!UICONTROL Done]**.
+
+   Het nieuwe wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Create Dynamic Media Configuration]** pagina.
+
+   Als u **[!UICONTROL Cancel]** in de **[!UICONTROL Change Password]** moet u nog steeds een nieuw wachtwoord invoeren wanneer u de nieuwe Dynamic Media-configuratie opslaat.
+
+   Zie ook [Het wachtwoord wijzigen in Dynamic Media](#change-dm-password).
 
 1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
@@ -147,6 +163,37 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt de Dynamic Media - Scene7-modus gebruiken.
 
 Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke taken voltooien onder [(Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
+### Het wachtwoord wijzigen in Dynamic Media {#change-dm-password}
+
+Het verlopen van wachtwoorden in Dynamic Media is ingesteld op 100 jaar vanaf de huidige systeemdatum.
+
+Het wachtwoord moet ten minste een van de volgende elementen bevatten:
+
+* Hoofdletter
+* Kleine letter
+* Getal
+* Speciaal teken: `# $ & . - _ : { }`
+
+Indien nodig kunt u de spelling controleren van een wachtwoord dat u hebt getypt of dat u opnieuw hebt getypt door het oogpictogram voor het wachtwoord te selecteren om het wachtwoord weer te geven. Selecteer opnieuw het pictogram om het wachtwoord te verbergen.
+
+Het gewijzigde wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Edit Dynamic Media Configuration]** pagina.
+
+**Het wachtwoord wijzigen in Dynamic Media:**
+
+1. In de wijze van de Auteur van de Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
+1. Selecteer links van de console het pictogram Gereedschappen en ga naar **[!UICONTROL Cloud Services]>[!UICONTROL Dynamic Media Configuration]**.
+1. Selecteer in het linkerdeelvenster van de Dynamic Media Configuration Browser-pagina de optie **[!UICONTROL global]**. Selecteer het mappictogram links van **[!UICONTROL global]**. Selecteer vervolgens **[!UICONTROL Edit]**.
+1. Op de **[!UICONTROL Edit Dynamic Media Configuration]** pagina, direct onder de **[!UICONTROL Password]** veld, selecteren **[!UICONTROL Change Password]**.
+1. In de **[!UICONTROL Change Password]** voert u de volgende handelingen uit:
+
+   * In de **[!UICONTROL New Password]** voert u een nieuw wachtwoord in.
+
+      De **[!UICONTROL Current Password]** wordt opzettelijk voorgevuld en verborgen voor interactie.
+
+   * In de **[!UICONTROL Repeat Password]** veld, typ het nieuwe wachtwoord opnieuw en selecteer vervolgens **[!UICONTROL Done]**.
+
+1. In de rechterbovenhoek van het dialoogvenster **[!UICONTROL Edit Dynamic Media Configuration]** pagina, selecteert u **[!UICONTROL Save]** selecteert u vervolgens **[!UICONTROL OK]**.
 
 ## (Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 

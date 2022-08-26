@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Adobe Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 51801dfae47e82f31042f48b113332783464bafb
+source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,23 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
 
 1. Kopieer de URL in het huidige browservenster naar een laptop. Het is vereist om te configureren [!DNL Adobe Sign] toepassing met AEM[!DNL Forms].
 
+1. In de **[!UICONTROL Settings]** de **[!UICONTROL OAuth URL]** bevat de standaard-URL. De opmaak van de URL is:
+
+   `https://<shard>/public/oAuth/v2`
+
+   Bijvoorbeeld:
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   waarbij:
+
+   **nl1** verwijst naar de standaard databasedeelt. U kunt de waarde voor het delen van de database wijzigen. Zorg ervoor dat de [!DNL  Adobe Sign] Cloud Configurations verwijzen naar de [correcte Shard](https://helpx.adobe.com/sign/using/identify-account-shard.html).
+
+   Als u een andere [!DNL Adobe Sign] configuratie voor een Adobe Experience Manager-functie of -component, moet u ervoor zorgen dat alle [!DNL Adobe Sign] Cloud Configurations verwijzen naar hetzelfde segment.
+
+   >[!NOTE]
+   De **Adobe Sign-configuratie maken** pagina geopend. Sluit het bestand niet. U kunt **Client-id** en **Clientgeheim** na het configureren van OAuth-instellingen voor de [!DNL Adobe Sign] zoals beschreven in volgende stappen.
+
+
 1. OAuth-instellingen configureren voor de [!DNL Adobe Sign] toepassing:
 
    1. Open een browservenster en meld u aan bij [!DNL Adobe Sign] ontwikkelaarsaccount.
@@ -92,11 +109,13 @@ Nadat de eerste vereisten op zijn plaats zijn, voer de volgende stappen uit om t
    >[!NOTE]
    Zorg ervoor dat de auteur en de publicatie van instantieconfiguraties naar hetzelfde niveau verwijzen. Als u meerdere Adobe Sign-configuraties voor een organisatie maakt, moet u ervoor zorgen dat alle configuraties hetzelfde segment gebruiken.
 
-1. Geef de **Client-id** (ook toepassings-id genoemd) en **Clientgeheim** opgenomen in stap 8. Selecteer **[!UICONTROL Enable Adobe Sign for attachments also]** aan een aangepast formulier gekoppelde bestanden toevoegen aan de overeenkomstige [!DNL Adobe Sign] document verzonden voor ondertekening.
+1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. In de **[!UICONTROL Settings]** tabblad, geeft u de **Client-id** (ook toepassings-id genoemd) en **Clientgeheim**. Gebruik de [Client-id en clientgeheim van Adobe Sign-toepassing](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) gemaakt voor AEM Forms.
 
-   Tik op **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL Adobe Sign] toepassing.
+1. Selecteer **[!UICONTROL Enable Adobe Sign for attachments also]** aan een aangepast formulier gekoppelde bestanden toevoegen aan de overeenkomstige [!DNL Adobe Sign] document verzonden voor ondertekening.
 
-   Tikken **[!UICONTROL Create]** om de [!DNL Adobe Sign] configuratie.
+1. Tik op **[!UICONTROL Connect to Adobe Sign]**. Geef bij de aanwijzing voor referenties de gebruikersnaam en het wachtwoord op van het account dat wordt gebruikt tijdens het maken van [!DNL Adobe Sign] toepassing.
+
+1. Tikken **[!UICONTROL Create]** om de [!DNL Adobe Sign] configuratie.
 
 1. Open AEM webconsole. De URL is `https://'[server]:[port]'/system/console/configMgr`
 1. Open **[!UICONTROL Forms Common Configuration Service].**

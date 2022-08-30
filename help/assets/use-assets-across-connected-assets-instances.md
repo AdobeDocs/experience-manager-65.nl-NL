@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3687'
 ht-degree: 16%
 
 ---
@@ -40,7 +40,7 @@ Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lok
 Controleer de volgende punten voordat u deze functie gebruikt of configureert:
 
 * De gebruikers maken deel uit van de aangewezen gebruikersgroepen op elke plaatsing.
-* Voor [!DNL Adobe Experience Manager] de plaatsingstypes, één van de gesteunde criteria wordt voldaan. [!DNL Experience Manager] 6,5 [!DNL Assets] werkt met [!DNL Experience Manager] as a Cloud Service. Voor meer informatie over hoe deze functionaliteit werkt in [!DNL Experience Manager] als [!DNL Cloud Service], zie [Verbonden elementen in as a Cloud Service Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/use-assets-across-connected-assets-instances.html).
+* Voor [!DNL Adobe Experience Manager] de plaatsingstypes, één van de gesteunde criteria wordt voldaan. [!DNL Experience Manager] 6,5 [!DNL Assets] werkt met [!DNL Experience Manager] as a Cloud Service. Voor meer informatie over hoe deze functionaliteit werkt in [!DNL Experience Manager] als [!DNL Cloud Service], zie [Verbonden elementen in as a Cloud Service Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] als [!DNL Cloud Service] | [!DNL Experience Manager] 6,5 [!DNL Sites] over AMS | [!DNL Experience Manager] 6,5 [!DNL Sites] op locatie |
    |---|---|---|---|
@@ -63,7 +63,7 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 |---|---|---|---|---|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Instellen [!DNL Experience Manager] en vormt integratie met verre [!DNL Assets] implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | `ksaner` | Eindgebruiker is [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. De auteurs zoeken naar middelen in externe DAM en bladeren deze met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | `ksaner` | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. De auteurs zoeken naar middelen in externe DAM en bladeren deze met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
 | DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand [!DNL Experience Manager] | Auteur-rol op de externe server [!DNL Experience Manager] implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
 | DAM-distributeur (technische gebruiker) | Extern | [!DNL Sites] `Authors` | `ksaner` op afstand [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door [!DNL Experience Manager] lokale server (niet de [!DNL Sites] auteurrol) om de verre activa, namens te halen [!DNL Sites] auteur. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
@@ -158,7 +158,7 @@ Te gebruiken [!DNL Dynamic Media] met verbonden elementen:
 
 Om te vormen [!DNL Dynamic Media] op [!DNL Assets] en [!DNL Sites] implementaties:
 
-1. Inschakelen en configureren [!DNL Dynamic Media] als globale configuratie op afstand [!DNL Assets] implementatie van auteurs. Voor het configureren van Dynamic Media raadpleegt u [Dynamic Media configureren](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).<br/>
+1. Inschakelen en configureren [!DNL Dynamic Media] als globale configuratie op afstand [!DNL Assets] implementatie van auteurs. Voor het configureren van Dynamic Media raadpleegt u [Dynamic Media configureren](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 Op afstand [!DNL Assets] implementatie, in [!UICONTROL Dynamic Media sync mode], selecteert u **[!UICONTROL Enabled by default]**.
 
 1. Configuratie van verbonden elementen maken zoals beschreven in [Verbinding tussen plaatsen en activa plaatsingen vormen](#configure-a-connection-between-sites-and-assets-deployments). Selecteer ook **[!UICONTROL Fetch Original Rendition for Dynamic Media Connected Assets]** optie.
@@ -169,7 +169,7 @@ Op afstand [!DNL Assets] implementatie, in [!UICONTROL Dynamic Media sync mode],
    * Op lokaal niveau [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], selecteert u **[!UICONTROL Disabled by default]**. De [!DNL Sites] de plaatsing moet read-only toegang tot hebben [!DNL Dynamic Media] account.
    * Op lokaal niveau [!DNL Sites]in de **[!UICONTROL Publish Assets]** selecteert u **[!UICONTROL Selective Publish]**. Niet selecteren **[!UICONTROL Sync All Content]**.
 
-1. Inschakelen [[!DNL Dynamic Media] ondersteuning in Image Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Met deze functie wordt de standaardinstelling ingeschakeld [Afbeeldingscomponent](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) om weer te geven [!DNL Dynamic Media] afbeeldingen wanneer [!DNL Dynamic Media] afbeeldingen worden door auteurs gebruikt op lokale webpagina&#39;s [!DNL Sites] implementatie.
+1. Inschakelen [[!DNL Dynamic Media] ondersteuning in Image Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Met deze functie wordt de standaardinstelling ingeschakeld [Afbeeldingscomponent](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) om weer te geven [!DNL Dynamic Media] afbeeldingen wanneer [!DNL Dynamic Media] afbeeldingen worden door auteurs gebruikt op lokale webpagina&#39;s [!DNL Sites] implementatie.
 
 ## Externe assets gebruiken {#use-remote-assets}
 

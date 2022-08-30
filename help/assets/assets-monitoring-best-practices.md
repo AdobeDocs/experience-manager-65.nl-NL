@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 In het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met op te lossen [!DNL Experience Manager] implementaties:
 
 * Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Zie voor meer informatie [De opslagplaats onderhouden](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Controleren `OutOfMemoryError` logboeken. Zie voor meer informatie [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Controleren `OutOfMemoryError` logboeken. Zie voor meer informatie [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Controleer de logboeken om het even welke verwijzingen naar unindexed vragen, boomstamtraversals, of indextraversals. Deze wijzen op unindexed vragen of op ontoereikend geïndexeerde vragen. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [Beste werkwijzen voor vragen en het indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.

@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
+source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
-1. Als u wilt overschakelen op HTTP/2, start u een verzoek voor klantenondersteuning van Adobe. Zie [Toegang tot het Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. Als u wilt overschakelen op HTTP/2, start u een verzoek voor klantenondersteuning van Adobe. Zie [Een ondersteuningsticket openen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. Geef de volgende informatie op in uw supportverzoek:
 
@@ -98,4 +98,4 @@ De inhoud in de cache raakt de servers van Adobe die niet in de cache zijn opges
 
 Omdat in de browser dit feit niet wordt vermeld, is het nodig een extensie te downloaden.
 
-Voor Firefox en Chrome is er een extensie met de naam &quot;HTTP/2 en SPDY Indicator&quot;. Browsers ondersteunen alleen veilig http/2, dus is het nodig een URL met https aan te roepen om te verifiëren. Als http/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een koptekst `X-Firefox-Spdy`: `h2`.
+Voor Firefox en Chrome is er een extensie met de naam &quot;HTTP/2 en SPDY Indicator&quot;. Browsers ondersteunen alleen veilig http/2, dus is het nodig een URL met https aan te roepen om te verifiëren. Als http/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een koptekst `X-Firefox-Spdy` : `h2`.

@@ -5,7 +5,7 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -65,8 +65,8 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type
 
 1. Afhankelijk van uw toepassingsserver kiest u een van de volgende documenten en volgt u de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
 
-   * [AEM voor JBoss installeren en implementeren](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [AEM voor WebSphere installeren en implementeren](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [AEM voor JBoss installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [AEM voor WebSphere installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (Alleen JBoss) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss-toepassingsserver.
 

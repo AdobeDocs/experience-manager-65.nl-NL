@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release Adobe Experience Manager 6.5
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: a2b3cb81fb15a1f03004e42cafbf92c84c9d7b89
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '374'
+ht-degree: 4%
 
 ---
 
@@ -31,27 +31,27 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
 | [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
-| [Gebruikershandleiding voor schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
+| [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
+| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
 
-* [Zelfstudies AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)
-* [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Zelfstudies AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
+* [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
 * [AEM-communityforum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
 
 Zie voor meer informatie [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
-Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
+Kennisgeving van licenties van derden: [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)

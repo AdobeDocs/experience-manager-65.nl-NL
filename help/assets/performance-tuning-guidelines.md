@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2687'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,7 @@ XMP terugschrijven werkt het oorspronkelijke element bij wanneer metagegevens wo
 * Er wordt een versie van het element gemaakt
 * [!UICONTROL DAM Update Asset] wordt uitgevoerd met het element
 
-De vermelde resultaten verbruiken aanzienlijke middelen. Daarom beveelt Adobe aan [XMP terugdraaien uitschakelen](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), indien dit niet vereist is.
+De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan XMP terugschrijven uit te schakelen als dit niet vereist is. Zie voor meer informatie [XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
 
 Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve XMP terugzetactiviteit resulteren als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
@@ -242,7 +242,7 @@ Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoor
 
 ## Indexen zoeken {#search-indexes}
 
-Installeren [de nieuwste servicepacks](/help/release-notes/release-notes.md) en aan prestaties gerelateerde hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [tips voor het afstemmen van prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor sommige indexoptimalisaties.
+Installeren [de nieuwste servicepacks](/help/release-notes/release-notes.md) en aan prestaties gerelateerde hotfixes zoals die vaak updates aan systeemindexen omvatten. Zie [tips voor het afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) voor sommige indexoptimalisaties.
 
 Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Zie voor meer informatie [methodologie voor het analyseren van trage query&#39;s](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en [aangepaste indexen maken](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

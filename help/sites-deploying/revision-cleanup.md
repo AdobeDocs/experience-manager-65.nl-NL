@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
 workflow-type: tm+mt
-source-wordcount: '5904'
+source-wordcount: '5912'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 ### Overwegingen bij AEM 6.5-upgrade {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>Vragen </td>
@@ -143,7 +143,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 ### Migreren naar eiken segmentteer {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vragen</strong></td>
@@ -205,7 +205,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 ### Onlinerevisie opschonen uitvoeren {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Vragen</strong></td>
@@ -368,7 +368,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 ### Onlinerevisie controleren {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Wat moet worden gecontroleerd tijdens Online Revision Cleanup?</strong></td>
@@ -453,7 +453,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 ### Oplossen van problemen met online revisie {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Wat is het ergste dat kan gebeuren als u de Online Opruiming van de Revisie niet in werking stelt?</strong></td>
@@ -507,15 +507,68 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
 
 Error.log zal uitgebreid zijn als er incidenten tijdens het online herzieningsproces schoonmaakbeurt zijn. De volgende matrix is bedoeld om de meest voorkomende boodschappen uit te leggen en mogelijke oplossingen te bieden:
 
-| **Fase** | **Logberichten** | **Toelichting** | **Volgende stappen** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
-|  |  |  |  |
-| Schatting | TarMK GC #2: Schatting overgeslagen omdat de compressie is gepauzeerd | De schattingsfase wordt overgeslagen wanneer de compressie op het systeem door configuratie wordt onbruikbaar gemaakt. | Onlinerevisie opschonen inschakelen. |
-|  | TarMK GC #2: Schatting onderbroken: ${REASON}. Compressie wordt overgeslagen. | De schattingsfase liep voortijdig af. Enkele voorbeelden van gebeurtenissen die de schattingsfase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem. | Afhankelijk van de gegeven reden. |
-| Compactie | TarMK GC #2: verdichting gepauzeerd | Zolang de samenstellingsfase door configuratie wordt gepauzeerd, noch zal de ramingsfase noch de samenstellingsfase worden uitgevoerd. | Opschonen van online revisie inschakelen. |
-|  | TarMK GC #2: verdichting geannuleerd: ${REASON}. | De samenstellingsfase eindigde voortijdig. Enkele voorbeelden van gebeurtenissen die de compactiefase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem. Bovendien kan de vereffening ook worden geannuleerd door het systeem te sluiten of door het expliciet te annuleren via administratieve interfaces zoals het onderhoudvenster binnen de operatiedashobard. | Afhankelijk van de gegeven reden. |
-|  | TarMK GC #2: Verwerking mislukt in 32,902 min (1974140 ms), na 5 cycli | Dit bericht betekent niet dat er een onherstelbare fout is opgetreden, maar alleen dat de compensatie na een bepaalde hoeveelheid pogingen is beëindigd. Lees ook de [volgende alinea](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | Lees het volgende [Oak-documentatie](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes)en de laatste vraag van de [Onlinerevisie opschonen uitvoeren](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) sectie. |
-| Overbodig verwijderen | TarMK GC #2: opruiming onderbroken | Opruiming is geannuleerd door de opslagplaats te sluiten. Er wordt geen invloed op de consistentie verwacht. Bovendien wordt de schijfruimte hoogstwaarschijnlijk niet volledig vrijgemaakt. Deze wordt teruggewonnen tijdens de volgende opschoningscyclus van de revisie. | Onderzoek waarom de opslagplaats is afgesloten en probeer in de toekomst te voorkomen dat de opslagplaats tijdens onderhoudsvensters wordt afgesloten. |
+|   |  |  |  |
+| Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
+|   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
+| Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
+|   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Fase</th>
+    <th>Logberichten</th>
+    <th>Toelichting</th>
+    <th>Volgende stappen</th>
+  </tr>  
+  <tr>
+    <td>Schatting</td>
+    <td>TarMK GC #2: Schatting overgeslagen omdat de compressie is gepauzeerd.</td>
+    <td>De schattingsfase wordt overgeslagen wanneer de compressie op het systeem door configuratie wordt onbruikbaar gemaakt.</td>
+    <td>Onlinerevisie opschonen inschakelen.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N.v.t.</td>
+    <td>TarMK GC #2: Schatting onderbroken: ${REASON}. Compressie wordt overgeslagen.</td>
+    <td>De schattingsfase liep voortijdig af. Enkele voorbeelden van gebeurtenissen die de schattingsfase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem.</td>
+    <td>Afhankelijk van de gegeven reden.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Compactie</td>
+    <td>TarMK GC #2: de compressie is gepauzeerd.</td>
+    <td>Zolang de samenstellingsfase door configuratie wordt gepauzeerd, noch zal de ramingsfase noch de samenstellingsfase worden uitgevoerd.</td>
+    <td>Opschonen van online revisie inschakelen.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>N.v.t.</td>
+    <td>TarMK GC #2: verdichting geannuleerd: ${REASON}.</td>
+    <td>De samenstellingsfase eindigde voortijdig. Enkele voorbeelden van gebeurtenissen die de compactiefase kunnen onderbreken: onvoldoende geheugen of schijfruimte op het hostsysteem. Bovendien kan het samenvoegen ook worden geannuleerd door het systeem te sluiten of door het expliciet te annuleren via administratieve interfaces zoals het onderhoudvenster binnen het vluchthandboek.</td>
+    <td>Afhankelijk van de gegeven reden.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N.v.t.</td>
+    <td>TarMK GC #2: De verdichting is mislukt in 32,902 min (1974140 ms), na 5 cycli.</td>
+    <td>Dit bericht betekent niet dat er een onherstelbare fout is opgetreden, maar alleen dat de compensatie na een bepaalde hoeveelheid pogingen is beëindigd. Lees ook de <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">volgende alinea.</a></td>
+    <td>Lees het volgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-documentatie</a>en de laatste vraag van de sectie Onlinerevisie uitvoeren.</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>Overbodig verwijderen</td>
+    <td>TarMK GC #2: opschoonbewerking onderbroken.</td>
+    <td>Opruiming is geannuleerd door de opslagplaats te sluiten. Er wordt geen invloed op de consistentie verwacht. Bovendien wordt de schijfruimte hoogstwaarschijnlijk niet volledig vrijgemaakt. Deze wordt teruggewonnen tijdens de volgende opschoningscyclus van de revisie.</td>
+    <td>Onderzoek waarom de opslagplaats is afgesloten en probeer in de toekomst te voorkomen dat de opslagplaats tijdens onderhoudsvensters wordt afgesloten.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## Offline revisie opschonen uitvoeren {#how-to-run-offline-revision-cleanup}
 
@@ -601,7 +654,7 @@ Naast de hierboven vermelde methodes, kunt u het mechanisme van de revisieschoon
 
 ### Offline revisie opschonen Veelgestelde vragen {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Wat zijn de factoren die de duur van de Offline Opruiming van de Revisie bepalen?</strong></td>

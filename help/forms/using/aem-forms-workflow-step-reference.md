@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '7452'
 ht-degree: 0%
@@ -442,9 +442,9 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 * **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 
 * **[!UICONTROL Locale]**: Hier geeft u de taal op die wordt gebruikt voor het genereren van het PDF-document. Als u een letterlijke waarde opgeeft, selecteert u een taal in de lijst of selecteert u een van de volgende waarden:
-   * **Als u de standaardinstelling van de server wilt gebruiken**: (Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms-server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij Designer](http://www.adobe.com/go/learn_aemforms_designer_65).)
+   * **Als u de standaardinstelling van de server wilt gebruiken**: (Standaard) Gebruik de landinstelling die is geconfigureerd op de AEM Forms-server. De landinstelling wordt geconfigureerd met de beheerconsole. (Zie [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_65).)
 
-   * **Aangepaste waarde gebruiken**: Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
+   * **Aangepaste waarde gebruiken**: Typ de landinstellingscode in het letterlijke vak of selecteer een tekenreeksvariabele die de landinstellingscode bevat. Ga naar https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html voor een volledige lijst met ondersteunde landinstellingscodes.
 
 * **[!UICONTROL Copies]**: Een geheel getal dat aangeeft hoeveel exemplaren voor de uitvoer moeten worden gegenereerd. De standaardwaarde is 1.
 

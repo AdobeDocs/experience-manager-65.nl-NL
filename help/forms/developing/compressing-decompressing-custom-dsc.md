@@ -1,7 +1,8 @@
 ---
 title: Hoe te om geloofsbrieven over te gaan gebruikend WS-veiligheidskopballen?
 description: Leer hoe u referenties doorgeeft met WS-beveiligingskoppen
-source-git-commit: 730ae7cd6cd04eb6377b37eafe29db597e93cce3
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -127,7 +128,7 @@ Het bestand component.xml wordt hier weergegeven:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
@@ -212,13 +213,10 @@ U kunt deze ZIP-service voor de volgende gebruiksgevallen gebruiken:
 
 * Alle bestanden in een bepaalde map zoeken en de bestanden terugsturen als gecomprimeerd document.
 
-* Geef een ZIP-bestand op dat een aantal PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat deze is gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
+* Geef een ZIP-bestand op dat een aantal PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat deze zijn gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
 
 * Geef een ZIP-bestand op met een heterogeen type document dat kan worden gedecomprimeerd en geconverteerd als PDF-document met de service PDF genereren.
 
 * Met beleid wordt een lijst met documenten beveiligd en geretourneerd als een ZIP-bestand.
 
 * Gebruikers toestaan alle bijlagen van een procesinstantie als één ZIP-bestand te downloaden.
-
-
-

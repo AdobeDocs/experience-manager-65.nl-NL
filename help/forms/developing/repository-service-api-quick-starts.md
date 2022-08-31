@@ -1,8 +1,8 @@
 ---
 title: Repository Service API
-seo-title: Repository Service API
+seo-title: Repository Service API Quick Starts
 description: Gebruik de dienst van de Bewaarplaats van AEM Forms om een omslag tot stand te brengen, een middel, lijstmiddelen te schrijven, een middel te lezen, een middel bij te werken, naar middelen te zoeken, verhoudingen tussen middelen tot stand te brengen, een middel te sluiten, toegangsbeheerlijsten te beheren, en een middel te schrappen.
-seo-description: Gebruik de dienst van de Bewaarplaats van AEM Forms om een omslag tot stand te brengen, een middel, lijstmiddelen te schrijven, een middel te lezen, een middel bij te werken, naar middelen te zoeken, verhoudingen tussen middelen tot stand te brengen, een middel te sluiten, toegangsbeheerlijsten te beheren, en een middel te schrappen.
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 703b6798-d40f-4769-96fc-e440090ca983
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
 
-
-# Repository Service API - Snel starten {#repository-service-api-quick-starts}
+# Repository Service API {#repository-service-api-quick-starts}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
@@ -49,7 +48,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 **Applications/FormsApplication**
 
-De meeste AEM Forms-opslagservices beginnen snel met interactie met een toepassing met de naam `Applications/FormsApplication,`, zoals in de volgende afbeelding wordt getoond.
+De meeste AEM Forms-opslagservice begint snel met interactie met een toepassing met de naam `Applications/FormsApplication,` zoals weergegeven in de volgende afbeelding.
 
 De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
@@ -59,15 +58,15 @@ Het pad naar een bron in de AEM Forms-opslagplaats is:
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser `https://[server name]:[server port]/repository` in. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
+>U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
 
 >[!NOTE]
 >
->Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Zie [Aan de slag met procesontwerp](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html) voor informatie over het maken van een toepassing met Workbench.
+>Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Voor informatie over het maken van een toepassing met Workbench raadpleegt u [Aan de slag met procesontwerp](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Snel starten (SOAP-modus): Een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een map met de naam *FormsFolder* gemaakt op de volgende locatie `/Applications/FormsApplication/1.0/`. (Zie [Mappen maken](/help/forms/developing/aem-forms-repository.md#creating-folders).)
+In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolder* op de volgende locatie `/Applications/FormsApplication/1.0/`. (Zie [Mappen maken](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
 ```java
  /*
@@ -173,7 +172,7 @@ In het volgende Java-codevoorbeeld wordt een map met de naam *FormsFolder* gemaa
 
 ## Snel starten (SOAP-modus): Een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een resource met de naam *loan.xdp* geschreven in de repository. De bron wordt toegevoegd aan de locatie `/Applications/FormsApplication/1.0/FormsFolder`. (Zie [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de repository. De bron wordt toegevoegd aan de `/Applications/FormsApplication/1.0/FormsFolder` locatie. (Zie [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 ```java
  /*
@@ -301,7 +300,7 @@ In het volgende Java-codevoorbeeld wordt een resource met de naam *loan.xdp* ges
 
 ## Snel starten (SOAP-modus): Bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Applications/FormsApplication/1.0/FormsFolder` bevinden. (Zie [Aanbiedingsbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich bevinden in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Aanbiedingsbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*
@@ -400,7 +399,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Appli
 
 ## Snel starten (SOAP-modus): Een bron lezen met de Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een bron met de naam *Loan.xdp* vanuit de opslagplaats gelezen. Het XDP-bestand bevindt zich in `/Applications/FormsApplication/1.0/FormsFolder/`. (Zie [Bronnen lezen](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit de opslagplaats. Het XDP-bestand bevindt zich in `/Applications/FormsApplication/1.0/FormsFolder/`. (Zie [Bronnen lezen](/help/forms/developing/aem-forms-repository.md#reading-resources).)
 
 ```java
  /*
@@ -501,7 +500,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Loan.xdp* vanuit 
 
 ## Snel starten (SOAP-modus): Een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt `/Applications/FormsApplication/1.0/FormsFolder` bijgewerkt door de beschrijving ervan te wijzigen. (Zie [Bronnen bijwerken](/help/forms/developing/aem-forms-repository.md#updating-resources).)
+De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplication/1.0/FormsFolder` door de beschrijving ervan te wijzigen. (Zie [Bronnen bijwerken](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
 ```java
  /*
@@ -1216,4 +1215,3 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
  
  
 ```
-

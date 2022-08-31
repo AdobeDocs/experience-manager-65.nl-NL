@@ -2,20 +2,19 @@
 title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Een Uitnodigingshandler voor externe gebruikers maken
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
-
-# Externe gebruikershandler {#create-invite-external-users-handler} uitnodigen
+# Een Uitnodigingshandler voor externe gebruikers maken {#create-invite-external-users-handler}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een Invite External Users Handler voor de service Rights Management maken. Een Invite External Users Handler stelt de service Rights Management in staat externe gebruikers uit te nodigen Rights Management gebruikers te worden. Nadat een gebruiker een gebruiker van het Rights Management wordt, kan de gebruiker taken uitvoeren, zoals het openen van een beleid-beschermd PDF document. Nadat de Invite External Users Handler wordt opgesteld aan AEM Forms, kunt u beleidsconsole gebruiken om met het in wisselwerking te staan.
+U kunt een Invite External Users Handler voor de service Rights Management maken. Een Invite External Users Handler stelt de service Rights Management in staat externe gebruikers uit te nodigen Rights Management gebruikers te worden. Nadat een gebruiker een gebruiker van het Rights Management wordt, kan de gebruiker taken, zoals het openen van een beleid-beschermd document van de PDF uitvoeren. Nadat de Invite External Users Handler wordt opgesteld aan AEM Forms, kunt u beleidsconsole gebruiken om met het in wisselwerking te staan.
 
 >[!NOTE]
 >
@@ -33,27 +32,27 @@ Als u een Invite External Users Handler wilt ontwikkelen, moet u de volgende sta
 
 ## De ontwikkelomgeving instellen {#setting-up-development-environment}
 
-Als u uw ontwikkelomgeving wilt instellen, moet u een nieuw Java-project maken, zoals een Eclipse-project. De ondersteunde versie van Eclipse is `3.2.1` of hoger.
+Als u uw ontwikkelomgeving wilt instellen, moet u een nieuw Java-project maken, zoals een Eclipse-project. De ondersteunde versie van Eclipse wordt `3.2.1` of hoger.
 
-De Rights Management SPI vereist dat het `edc-server-spi.jar` dossier in de klassenweg van uw project wordt geplaatst. Als u niet naar dit JAR-bestand verwijst, kunt u de Rights Management-SPI niet gebruiken in uw Java-project. Dit JAR-bestand wordt samen met de AEM Forms SDK geïnstalleerd in de map `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`.
+De SPI van het Rights Management vereist `edc-server-spi.jar` bestand dat moet worden ingesteld in het klassenpad van uw project. Als u niet naar dit JAR-bestand verwijst, kunt u de Rights Management-SPI niet gebruiken in uw Java-project. Dit JAR-bestand is geïnstalleerd met de AEM Forms SDK in het dialoogvenster `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` map.
 
-Naast het toevoegen van het `edc-server-spi.jar` dossier aan de klassenweg van uw project, moet u ook de JAR dossiers toevoegen die worden vereist om de Dienst API van het Rights Management te gebruiken. Deze bestanden zijn nodig om de Rights Management Service API in de Uitnodiging External Users Handler te gebruiken.
+Naast het toevoegen van `edc-server-spi.jar` aan de klassenweg van uw project, moet u ook de JAR dossiers toevoegen die worden vereist om de Dienst API van het Rights Management te gebruiken. Deze bestanden zijn nodig om de Rights Management Service API in de Uitnodiging External Users Handler te gebruiken.
 
-## Implementatie {#define-invite-external-users-handler} van de uitnodigen externe gebruikers-handler definiëren
+## De implementatie van de uitnodigen van externe gebruikers definiëren {#define-invite-external-users-handler}
 
-Als u een uitnodigingshandler voor externe gebruikers wilt ontwikkelen, moet u een Java-klasse maken die de `com.adobe.edc.server.spi.ersp.InvitedUserProvider`-interface implementeert. Deze klasse bevat een methode met de naam `invitedUser`, die de service Rights Management aanroept wanneer e-mailadressen worden verzonden met de pagina **Uitgenodigde gebruikers toevoegen** die toegankelijk is via de beheerconsole.
+Als u een uitnodigingshandler voor externe gebruikers wilt ontwikkelen, moet u een Java-klasse maken die de `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Deze klasse bevat een methode met de naam `invitedUser`, die de dienst van het Rights Management aanhaalt wanneer de e-mailadressen gebruikend **Uitgenodigde gebruikers toevoegen** pagina toegankelijk via beheerconsole.
 
-De `invitedUser` methode keurt een `java.util.List` instantie goed, die koord-getypte e-mailadressen bevat die van **Add Uitgenodigde Gebruikers** pagina worden voorgelegd. De methode `invitedUser` retourneert een array van `InvitedUserProviderResult`-objecten. Dit is doorgaans een toewijzing van e-mailadressen aan gebruikersobjecten (retourneert niet null).
+De `invitedUser` methode accepteert een `java.util.List` -instantie, die e-mailadressen met tekenreekstype bevat die vanuit de **Uitgenodigde gebruikers toevoegen** pagina. De `invitedUser` methode retourneert een array `InvitedUserProviderResult` objecten. Dit is doorgaans een toewijzing van e-mailadressen aan gebruikersobjecten (retourneren niet null).
 
 >[!NOTE]
 >
 >In deze sectie wordt niet alleen getoond hoe u een uitnodigen voor externe gebruikers-handler kunt maken, maar ook de AEM Forms API gebruikt.
 
-De implementatie van de uitnodigen externe gebruikers manager bevat een user-defined methode genoemd `createLocalPrincipalAccount`. Deze methode accepteert een tekenreekswaarde die een e-mailadres opgeeft als parameterwaarde. Bij de methode `createLocalPrincipalAccount` wordt ervan uitgegaan dat een lokaal domein met de naam `EDC_EXTERNAL_REGISTERED` al bestaat. U kunt deze domeinnaam om het even wat vormen u wenst; nochtans, voor een productietoepassing, kunt u met een ondernemingsdomein willen integreren.
+De implementatie van de uitnodigen externe gebruikers-handler bevat een door de gebruiker gedefinieerde methode met de naam `createLocalPrincipalAccount`. Deze methode accepteert een tekenreekswaarde die een e-mailadres opgeeft als parameterwaarde. De `createLocalPrincipalAccount` methode gaat ervan uit dat een lokaal domein, genaamd `EDC_EXTERNAL_REGISTERED`. U kunt deze domeinnaam om het even wat vormen u wenst; nochtans, voor een productietoepassing, kunt u met een ondernemingsdomein willen integreren.
 
-De `createUsers` methode herhaalt over elk e-mailadres en leidt tot een overeenkomstig voorwerp van de Gebruiker (een lokale gebruiker in `EDC_EXTERNAL_REGISTERED` domein). Tot slot wordt de methode `doEmails` geroepen. Deze methode wordt opzettelijk als een stoofpot in het monster gelaten. In een productieimplementatie, zou het toepassingslogica bevatten om uitnodigings e-mailberichten naar de pas gecreëerde gebruikers te verzenden. Het wordt in de steekproef verlaten om de stroom van de toepassingslogica van een echte toepassing aan te tonen.
+De `createUsers` methode doorloopt elk e-mailadres en maakt een overeenkomstig object Gebruiker (een lokale gebruiker in het dialoogvenster `EDC_EXTERNAL_REGISTERED` domein). Tot slot `doEmails` wordt aangeroepen. Deze methode wordt opzettelijk als een stoofpot in het monster gelaten. In een productieimplementatie, zou het toepassingslogica bevatten om uitnodigings e-mailberichten naar de pas gecreëerde gebruikers te verzenden. Het wordt in de steekproef verlaten om de stroom van de toepassingslogica van een echte toepassing aan te tonen.
 
-### Implementatie {#user-handler-implementation} van de uitnodigen externe gebruikers-handler definiëren
+### De implementatie van de uitnodigen van externe gebruikers definiëren {#user-handler-implementation}
 
 De volgende uitnodigingsimplementatie van de externe gebruikersmanager keurt e-mailadressen goed die van Add Uitgenodigde pagina van Gebruikers toegankelijk door beleidsconsole worden voorgelegd.
 
@@ -173,12 +172,12 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 U moet een dossier van componentXML bepalen om de uitnodigings externe gebruikersmanagercomponent op te stellen. Er bestaat een XML-componentbestand voor elke component en er worden metagegevens over de component weergegeven.
 
-Het volgende `component.xml` dossier wordt gebruikt voor de uitnodigings externe gebruikersmanager. De servicenaam is `InviteExternalUsersSample` en de bewerking die deze service beschikbaar stelt, krijgt de naam `invitedUser`. De invoerparameter is een `java.util.List`-instantie en de uitvoerwaarde is een array van `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`-instanties.
+Het volgende `component.xml` wordt gebruikt voor de uitnodigen externe gebruikers manager. Merk op dat de de dienstnaam is `InviteExternalUsersSample` en de bewerking die deze service beschikbaar stelt, krijgt een naam `invitedUser`. De invoerparameter is een `java.util.List` -instantie en de uitvoerwaarde een array is van `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instanties.
 
-### Het XML-bestand van de component definiëren voor de handler {#component-xml-invite-external-users-handler} voor externe gebruikers uitnodigen
+### Het XML-bestand van de component definiëren voor de handler voor externe gebruikers uitnodigen {#component-xml-invite-external-users-handler}
 
 ```as3
-<component xmlns="http://adobe.com/idp/dsc/component/document"> 
+<component xmlns="https://adobe.com/idp/dsc/component/document"> 
 <component-id>com.adobe.livecycle.samples.inviteexternalusers</component-id> 
 <version>1.0</version> 
 <bootstrap-class>com.adobe.livecycle.samples.inviteexternalusers.provider.BootstrapImpl</bootstrap-class> 
@@ -202,13 +201,13 @@ Het volgende `component.xml` dossier wordt gebruikt voor de uitnodigings externe
 </component> 
 ```
 
-## De uitnodigen van externe gebruikers-handler {#packaging-invite-external-users-handler} in een pakket plaatsen
+## De uitnodigen van externe gebruikers-handler in een pakket plaatsen {#packaging-invite-external-users-handler}
 
-Als u de uitnodigen van externe gebruikers-handler wilt implementeren in AEM Forms, moet u uw Java-project in een JAR-bestand plaatsen. U moet ervoor zorgen dat de externe JAR-bestanden waarvan de bedrijfslogica van de uitnodigen van externe gebruikers afhankelijk is, zoals de `edc-server-spi.jar`- en `adobe-rightsmanagement-client.jar`-bestanden, ook in het JAR-bestand worden opgenomen. Het XML-bestand van de component moet ook aanwezig zijn. Het `component.xml`-bestand en externe JAR-bestanden moeten zich in de hoofdmap van het JAR-bestand bevinden.
+Als u de uitnodigen van externe gebruikers-handler wilt implementeren in AEM Forms, moet u uw Java-project in een JAR-bestand plaatsen. U moet ervoor zorgen dat de externe JAR-bestanden waarvan de bedrijfslogica van de uitnodigen van externe gebruikers afhankelijk is, zoals de `edc-server-spi.jar` en `adobe-rightsmanagement-client.jar` worden ook opgenomen in het JAR-bestand. Het XML-bestand van de component moet ook aanwezig zijn. De `component.xml` bestand en externe JAR-bestanden moeten zich in de hoofdmap van het JAR-bestand bevinden.
 
 >[!NOTE]
 >
->In de onderstaande afbeelding wordt een klasse `BootstrapImpl` weergegeven. In deze sectie wordt niet besproken hoe u een klasse `BootstrapImpl` kunt maken.
+>In de onderstaande afbeelding wordt een `BootstrapImpl` wordt weergegeven. In deze sectie wordt niet besproken hoe u een `BootstrapImpl` klasse.
 
 In de volgende afbeelding ziet u de inhoud van het Java-project die is verpakt in het JAR-bestand van de uitnodigingshandler voor externe gebruikers.
 
@@ -226,7 +225,7 @@ U moet de uitnodigen externe gebruikers-handler verpakken in een JAR-bestand. In
 >
 >U kunt een component programmatically ook opstellen.
 
-## De uitnodigen van externe gebruikers-handler {#testing-invite-external-users-handler} testen
+## Testen van de Uitnodigings externe gebruikersmanager {#testing-invite-external-users-handler}
 
 Om de uitnodigings externe gebruikersmanager te testen, kunt u externe gebruikers toevoegen om uit te nodigen door beleidsconsole te gebruiken.
 
@@ -235,14 +234,14 @@ Om externe gebruikers toe te voegen om het gebruiken van beleidsconsole uit te n
 1. Implementeer het JAR-bestand van de uitnodigen van externe gebruikers met Workbench.
 1. Start de toepassingsserver opnieuw.
 1. Meld u aan bij de beheerconsole.
-1. Klik **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Uitgenodigd **[!UICONTROL User Registration]**.
-1. Schakel het selectievakje **[!UICONTROL Enable invited user registration]** in om de uitgenodigde gebruiker te registreren. Klik onder **[!UICONTROL Use Built-in registration system]** op **[!UICONTROL No]**. Sla uw instellingen op.
-1. Klik op de startpagina van de beheerconsole op **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domain Management]**.
-1. Klik op **[!UICONTROL New Local Domain]**. Maak op de volgende pagina een domein met de naam en de id-waarde `EDC_EXTERNAL_REGISTERED`. Sla uw wijzigingen op.
-1. Klik op de startpagina van de beheerconsole op **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Invited and Local Users]**. De pagina **[!UICONTROL Add Invited User]** wordt weergegeven.
+1. Klikken **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Uitgenodigd **[!UICONTROL User Registration]**.
+1. Ingenodigde gebruikersregistratie inschakelen door de optie **[!UICONTROL Enable invited user registration]** doos. Onder **[!UICONTROL Use Built-in registration system]**, klikt u op **[!UICONTROL No]**. Sla uw instellingen op.
+1. Van de homepage van de beleidsconsole, klik **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domain Management]**.
+1. Klik op **[!UICONTROL New Local Domain]**. Maak op de volgende pagina een domein met de naam en de id-waarde van `EDC_EXTERNAL_REGISTERED`. Sla uw wijzigingen op.
+1. Van de homepage van de beleidsconsole, klik **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Invited and Local Users]**. De **[!UICONTROL Add Invited User]** wordt weergegeven.
 1. Voer e-mailadressen in (omdat de huidige uitnodigen van externe gebruikers geen e-mailberichten verzendt, hoeft de geadresseerde e-mail niet geldig te zijn). Klik op **[!UICONTROL OK]**. De gebruikers worden uitgenodigd aan het systeem.
-1. Klik op de startpagina van de beheerconsole op **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Users and Groups]**.
-1. Voer in het veld **[!UICONTROL Find]** een e-mailadres in dat u hebt opgegeven. Klik op **[!UICONTROL Find]**. De gebruiker u uitnodigde verschijnt als gebruiker in het lokale `EDC_EXTERNAL_REGISTERED` domein.
+1. Van de homepage van de beleidsconsole, klik **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Users and Groups]**.
+1. In de **[!UICONTROL Find]** Voer een e-mailadres in dat u hebt opgegeven. Klik op **[!UICONTROL Find]**. De gebruiker die u hebt uitgenodigd, wordt als een gebruiker weergegeven in de lokale `EDC_EXTERNAL_REGISTERED` domein.
 
 >[!NOTE]
 >

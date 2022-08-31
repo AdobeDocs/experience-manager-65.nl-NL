@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: 2e6d688818e9cc337444bcda2a49485e9167a113
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Voer de volgende procedure uit om de volledige installateur te gebruiken om best
 1. Zie [Upgrade naar AEM Forms voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) om de taken te leren en uit te voeren die ervoor zorgen de verbetering correct met minimale serveronderbreking loopt.
 1. Afhankelijk van uw bestaande omgeving en toepassingsserver kiest u een van de volgende documenten en volgt u de instructies.
 
-   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms voor JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms voor JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms voor JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms for WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+   * [Upgrade van AEM 6.3 of AEM 6.4 Forms naar AEM 6.5 Forms voor JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
 
 Directe upgrade van LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms, AEM 6.2 Forms naar AEM 6.5 is niet beschikbaar. U kunt een tussentijdse upgrade naar een of meer versies van LiveCycle of AEM Forms uitvoeren en vervolgens upgraden naar AEM 6.5 Forms. Voor de lijst van middenversies en overeenkomstige verbeteringsinstructies, zie [Een upgradepad kiezen](upgrade.md).

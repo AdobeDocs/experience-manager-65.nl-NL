@@ -2,7 +2,7 @@
 title: Hoe te om hakjes in dynamische PDF forms te produceren en te werken?
 description: Hashes genereren en werken met dynamische PDF forms
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1249'
 ht-degree: 0%
@@ -120,5 +120,5 @@ Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken. 
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Hash-botsing](https://en.wikipedia.org/wiki/Hash_collision)
 * [Regenboogtafel](https://en.wikipedia.org/wiki/Rainbow_table)
-* [Introductiepagina van JavaScript MD5-project](http://pajhome.org.uk/crypt/md5/)
+* [Introductiepagina van JavaScript MD5-project](https://pajhome.org.uk/crypt/md5/)
 * [homepage van jsSHA2-project](https://anmar.eu.org/projects/jssha2/)

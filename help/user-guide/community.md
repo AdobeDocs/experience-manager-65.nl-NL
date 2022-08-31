@@ -1,16 +1,15 @@
 ---
 title: De AEM Gemeenschap
-seo-title: De AEM Gemeenschap
+seo-title: The AEM Community
 description: De AEM Gemeenschap
-seo-description: De AEM Gemeenschap
-translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+seo-description: The AEM Community
+exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
-
 
 # De AEM Gemeenschap {#the-aem-community}
 
@@ -22,9 +21,9 @@ De AEM Gemeenschap heeft duizenden leden over de hele wereld. Ze variëren van n
 
 ## Welke gebeurtenissen zijn er voor AEM EU-lidstaten? {#events}
 
-Leden hebben een hele reeks gebeurtenissen! Elke maand houden wij zittingen waar u de deskundige over specifieke AEM onderwerpen kunt vragen. We zullen u ook op de hoogte stellen van belangrijke gebeurtenissen, zoals [Instorse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), of zelfs gebruikersgroepgebeurtenissen in uw gebied.
+Leden hebben een hele reeks gebeurtenissen! Elke maand houden wij zittingen waar u de deskundige over specifieke AEM onderwerpen kunt vragen. We zullen u ook op de hoogte stellen van belangrijke gebeurtenissen zoals [Onderdompelen](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of de [Adobe Summit](https://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)of zelfs gebruikersgroepgebeurtenissen in uw gebied.
 
-Het beste wat u kunt doen, is om [de AEM Community vandaag te bezoeken en te zien wat er aan de hand is.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Het beste wat je kunt doen is [bezoek vandaag de AEM Gemeenschap en kijk wat er aan de hand is.](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Kan ik codevoorbeelden krijgen om me te helpen? {#code-samples}
 

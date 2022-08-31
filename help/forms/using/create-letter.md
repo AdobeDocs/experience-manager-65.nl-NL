@@ -9,7 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3979'
 ht-degree: 1%
@@ -230,7 +230,7 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 * [Compatibiliteitspakket](compatibility-package.md). Installeer het compatibiliteitspakket om het dialoogvenster **Letters** de optie **Forms** pagina.
 * De letter XDP ([layout](/help/forms/using/document-fragments.md)).
-* Overige XDP&#39;s ([lay-outfragmenten](document-fragments.md#document-fragments)) die deel uitmaken van de letter. De XDP&#39;s\Layouts worden gemaakt in [Designer](http://www.adobe.com/go/learn_aemforms_designer_65).
+* Overige XDP&#39;s ([lay-outfragmenten](document-fragments.md#document-fragments)) die deel uitmaken van de letter. De XDP&#39;s\Layouts worden gemaakt in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65).
 * De relevante [gegevenswoordenboek](/help/forms/using/data-dictionary.md) (Optioneel).
 * De [gegevensmodules](/help/forms/using/document-fragments.md) wilt gebruiken in de correspondentie.
 * [Testgegevens](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) Dit is het XML-bestand met de testgegevens die erin worden ondersteund. Testgegevens zijn vereist als u een gegevenswoordenboek gebruikt.

@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
 ht-degree: 0%
@@ -143,7 +143,7 @@ In wezen is JCR een systeem van knooppunten en eigenschappen, waarin knooppunten
 
 JCR heeft een aantal vooraf bepaalde knooptypes en bezitstypes, maar over het algemeen is het typende systeem vrij flexibel, en (inderdaad) één van de sterke punten van JCR is dat het gestructureerde en ongestructureerde inhoud om met gelijk gemak toelaat worden opgeslagen/worden beheerd. Dat wil zeggen dat JCR zeer gestructureerde gegevens kan verwerken, maar ook willekeurige dynamische gegevensstructuren zonder schemabeperkingen kan verwerken.
 
-De JavaDoc voor de Java API van JCR is [hier](http://jackrabbit.apache.org/jcr/jcr-api.html).
+De JavaDoc voor de Java API van JCR is [hier](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, is het verstandig [deze verklaring op hoog niveau](/help/sites-developing/the-basics.md#java-content-repository) van JCR geïmplementeerd door Adobe Experience Services.
 

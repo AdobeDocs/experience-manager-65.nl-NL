@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 4ea49fe6745b23f01f46edfe07ff3dd8c8299729
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -88,7 +88,7 @@ Naast een lijst met bevoegdheden en het machtigingstype op een bepaald pad, kunt
 
 >[!NOTE]
 >
->Voor meer informatie over wat elke beperking betekent, raadpleegt u [de Jackrabbit Oak-documentatie](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Voor meer informatie over wat elke beperking betekent, raadpleegt u [de Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 U kunt beperkingen toevoegen zoals hieronder wordt weergegeven door het type beperking te kiezen, de waarde in te voeren en de **+** pictogram.
 

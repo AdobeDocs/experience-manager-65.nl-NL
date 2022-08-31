@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 0%
@@ -36,11 +36,11 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
   </tr>
   <tr>
    <td><p>Algemene informatie over AEM Forms en de wijze waarop deze kan worden geïntegreerd met andere Adobe-producten</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms - Overzicht</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms - Overzicht</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Alle documentatie die beschikbaar is voor AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-documentatie</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-documentatie</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch updates, technische notities en aanvullende informatie over deze productversie</p> </td>
@@ -98,7 +98,7 @@ De volgende eisen worden minimaal aanbevolen: Schijfruimte voor installatie:
 
 ### Ondersteunde Platforms {#supported-platforms}
 
-Zie de volledige lijst met ondersteunde platforms voor Workbench op [Door AEM Forms ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst met ondersteunde platforms voor Workbench op [Door AEM Forms ondersteunde Platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Installatieoverwegingen voor Designer {#designer-installation-considerations}
 
@@ -173,7 +173,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. De volgende items zijn nu op uw computer geïnstalleerd:
    * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Zie voor meer informatie de <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench gebruiken</a> documentatie.
    * **Designer**: U kunt Designer openen vanuit Workbench. Voor informatie, zie het Aan de slag onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Help bij Designer</a>.
-   * **AEM Forms SDK**: Voor meer informatie over het gebruik van de SDK raadpleegt u <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a>.
+   * **AEM Forms SDK**: Voor meer informatie over het gebruik van de SDK raadpleegt u <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a>.
 
 ## Processen upgraden {#upgrading-processes}
 
@@ -232,7 +232,7 @@ Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheim
 * **SjabloonUID**: Designer voegt in elke sjabloon een unieke id (UUID) voor het formulier en de versie ervan in. Telkens wanneer het formulier wordt bijgewerkt, wordt de ingesloten UUID bijgewerkt. Een XDP-sjabloon kan bijvoorbeeld de volgende inhoud weergeven:
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Renderopties**: In de weergegeven formuliercache wordt de inhoud van de cache afzonderlijk opgeslagen voor elke set unieke renderopties.
 

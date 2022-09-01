@@ -1,10 +1,11 @@
 ---
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
-description: '"Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5."'
+description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 783edcdf0f96426008b6f824a7aa0aa0deb5c613
+exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
+source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2549'
 ht-degree: 0%
 
 ---

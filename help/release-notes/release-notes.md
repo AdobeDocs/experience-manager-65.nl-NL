@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 0bd7c444bf0424b60c11b7171b7ea7ae9d7f3926
+source-git-commit: 21cbb1df659c8ff82170bb953b05260219dc4970
 workflow-type: tm+mt
-source-wordcount: '2549'
+source-wordcount: '3162'
 ht-degree: 0%
 
 ---
@@ -78,9 +78,37 @@ ht-degree: 0%
 
 ## [!DNL Forms] {#forms-6514}
 
->[!NOTE]
->
->* [!DNL Experience Manager Forms] geeft toe:voegen-on pakketten één week na gepland vrij [!DNL Experience Manager] Releasedatum van Service Pack. In dit geval worden de invoegpakketten op donderdag 1 september 2022 uitgebracht. Daarnaast wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie.
+* Wanneer een bestand wordt gekoppeld aan een adaptief formulier voor meerdere vensters en een concept van het adaptieve formulier wordt opgeslagen, treedt een fout op. (NPR-38978)
+* Wanneer een gebruiker een RGB-profiel naar een CMYK-profiel converteert met createPDF2 Java API met Adobe PDF-instellingen, werkt deze optie niet met Java API. De optie werkt prima met een zelfstandige DistillerClient-toepassing. (NPR-38858, CQ-4346181)
+* Na het installeren van AEM 6.5 de dienstpak 12 van Forms (6.5.12.0), worden alle opties behalve om de taak te sluiten niet beschikbaar in de stap van de Taak van AEM Workflows toewijzen. (NPR-38743)
+* In een Document of Record (DoR) worden sommige waarden in een tabel ingekort. (NPR-38657)
+* Als de XDP een zwevend veld bevat en een voorbeeld weergeeft van een FormSet, worden tijdens het voorvertonen van de FormSet met Data XML geen gegevens weergegeven, maar worden gegevens weergegeven wanneer de optie Voorvertoning PDF wordt gebruikt.
+* In Adaptief Forms zijn keuzerondjes en selectievakjes niet in tabvolgorde. (NPR-38645)
+* Wanneer u de `Summary Step` om Document of Record (DoR) te genereren voor een vertaald adaptief formulier na verzending, wordt niet vertaald naar een gelokaliseerde taal. (NPR-38567)
+* De optie Opnieuw proberen uitschakelen in AEM workflowstappen werkt niet zoals verwacht. Het probleem verschijnt periodiek. (NPR-38547)
+* Wanneer het Adaptief formulier wordt verzonden met een RTF-veld, wordt het `an Internal Error while Submitting a Form` Er is een fout opgetreden. Wanneer de gebruiker focus krijgt op het RTF-veld voordat het formulier wordt verzonden, treedt de fout niet op. (NPR-38542)
+* Een fout `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` is geregistreerd. (NPR-38541)
+* Wanneer een gebruiker een PDF naar een adaptief formulier uploadt, reageert de AEM Forms-server niet meer. (NPR-38398)
+* Als u op een AEM Forms op OSGi-server de Document Service API gebruikt om PDF te certificeren, mislukt deze fout: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
+* Bij het verzenden van de conceptbrieven `Could not upload asset from xml input` fout treedt op. Dit heeft geen invloed op de functionaliteit. Bij het openen van een concept wordt de letter op de juiste wijze weergegeven. (CQ-4345979, CQ-4344418)
+* Wanneer een datum in Duitse notatie wordt ingevoerd en `Preview with Data` wordt gebruikt voor een letter, het veld Datum wordt niet weergegeven. (CQ-4345783)
+* Wanneer u een webportal maakt en de streepjescodes genereert op basis van gegevens, worden sommige streepjescodes niet correct gedecodeerd. (CQ-4345743)
+* Met PostScript-conversie naar de PDF wordt het uitvoerdocument niet met de verwachte kleuren weergegeven. (CQ-4345074)
+* Resourceoplosser veroorzaakt intermitterende voorleggingsmislukkingen en resulteert in zelfde stapelspoor om veelvoudige tijden voor één enkele voorlegging te verschijnen. (CQ-4344764)
+* Gebruikers kunnen de gewijzigde conceptbrieven die de `cmDataUrl` parameter. De concepten openen voor het eerst een boete. De problemen worden weergegeven bij volgende pogingen. (CQ-4344418)
+* Wanneer de gebruiker het `&` symbool in een Interactieve Communicatie (IC), ontbreekt het ontwerp van overeenkomstige IC om te laden. (CQ-4343969)
+* Wanneer u stijlopties in AEM Forms Designer gebruikt om PCL-bestanden te genereren, wordt de opgegeven stijl niet toegepast op gegenereerde bestanden. (CQ-4339573)
+* Als het aantal pagina&#39;s hoger is dan 15, mislukt de automatische conversie van dynamische XDP-formulieren naar adaptief formulier. Dit werkt prima als het aantal pagina&#39;s kleiner is dan 15. (NPR-35337)
+* Wanneer de optie Toevoegen aan Favorieten wordt gebruikt, geeft deze de status van de schakeloptie voor de schermlezer niet aan. (NPR-37137)
+* In het Model van de Gegevens van het Vorm, worden de waarden na decimaal in gegevensbestand gesteund Model van de Gegevens van het Vorm beknot voor geld en klein geldgegevenstype. . (CQDOC-19509)
+* Wanneer u een navigatiekoppeling selecteert voor workflow in HTML Workspace, wordt niet aangegeven dat de navigatiekoppeling is geselecteerd. (NPR-37138)
+* De functie Krabbelhandtekening is niet compatibel met toegankelijkheidsrichtlijnen. (NPR-37596)
+* AEM Forms gebruikt log4j 1.x. Ondersteuning voor log4j 1.x is verlopen. (NPR-38273)
+* Wanneer u een MSSQL-database gebruikt als gegevensbron in een formuliergegevensmodel en waarden ophaalt, worden getallen na het decimaalteken in de opgehaalde waarden geactiveerd. (CQ-4346190)
+* Als u in Forms 6.5 Designer een formulier opent dat is gemaakt met Forms 6.1 Designer en een tekstvak bewerkt, overschrijdt de alinea-afstand de opgegeven ruimte. Alle vorige instellingen van de ruimte worden verwijderd en het tekstvak moet handmatig opnieuw worden opgemaakt. (CQ-4341899)
+* Er wordt een onjuiste waarde weergegeven voor de streepjescode SSCC-18. Forms-servers laten de waarde in het rechtergedeelte van de streepjescode weg. (CQ-4342400)
+* Voor statische PDF forms die zijn gemaakt met Forms 6.5 Designer, mislukt de toegankelijkheid van PDF bij een fout `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+* Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer.(NPR-36221)
 
 
 ## Integrations {#integrations-6514}
@@ -208,12 +236,13 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.2.2.12 of hoger (webconsole gebruiken: `/system/console/bundles`). <!-- NPR-38747 -->
 
-
 ### Installeren [!DNL Experience Manager] Forms-invoegtoepassing {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Overslaan als u dit niet gebruikt [!DNL Experience Manager] Forms. Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Service Pack-release.
+>Overslaan als u dit niet gebruikt [!DNL Experience Manager] Forms.
+
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release. -->
 
 1. Controleer of u de [!DNL Experience Manager] Service Pack.
 1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.

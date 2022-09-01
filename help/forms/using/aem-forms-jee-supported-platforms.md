@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3583'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,9 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64-bits)</p> </td>
-   <td><p>Z: Niet ondersteund</p> </td>
-   <td><p> </p> </td>
+   <td><p>Oracle Java™ SE 11 (64-bits) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Ondersteund</p> </td>
+   <td><p>Kleine releases en updates </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64 bits</td>
@@ -361,6 +361,7 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 1. CRX-opslagplaats steunt persistentie van type TarMK, MongoDB, en relationele gegevensbestanden (RDBMK). U kunt geen twee verschillende gegevensbestandsystemen tussen de toepassingsserver en CRX-bewaarplaats hebben. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-gegevensopslagruimte en een ondersteunde relationele database met toepassingsserver.
 1. AEM Forms on JEE biedt geen ondersteuning voor WebSphere-toepassingsserver op CentOS.
 1. AEM Forms on JEE biedt geen ondersteuning voor toegangsbeheer op basis van JBoss-rollen (RBAC).
+1. AEM Forms on JEE biedt alleen ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor JBoss EAP 7.4-toepassingsserver.
 
 Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM Forms bij JEE-implementaties:
 
@@ -794,6 +795,10 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
 > De platforms die zijn gemarkeerd als [afgekeurd op AEM Forms 6.5.12.0 en 6.5.10.0 blijven in ondersteuning tot AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revisie-overzicht {#revision-history}
+
+- 01 sep. 2022
+
+   - Toegevoegde ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss EAP 7.4.
 
 - 03 mrt. 2022
 

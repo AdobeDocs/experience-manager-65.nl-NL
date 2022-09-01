@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3778'
+source-wordcount: '3801'
 ht-degree: 1%
 
 ---
@@ -122,6 +122,7 @@ ht-degree: 1%
       + [Algemene veiligheidsoverwegingen voor AEM Forms in juni](using/general-security-considerations.md)
       + [AEM Forms versterken op JEE-omgeving](using/hardening-aem-forms-jee-environment.md)
       + [Beveiligde beheerinstellingen voor AEM Forms configureren op JEE](using/configuring-secure-administration-settings-aem.md)
+      + [OAuth2 Steun voor de postdienst](using/oauth2-support-for-mail-service.md)
 + Formuliergegevensmodel {#form-data-model}
    + [Inleiding tot AEM Forms Data Integration](using/data-integration.md)
    + [Gegevensbronnen configureren](using/configure-data-sources.md)
@@ -332,6 +333,7 @@ ht-degree: 1%
    + [Analyses en rapporten configureren](using/configure-analytics-forms-documents.md)
    + [AEM Forms-analyserapporten weergeven en begrijpen](using/view-understand-aem-forms-analytics-reports.md)
    + [A/B-test voor adaptieve formulieren maken en beheren](using/ab-testing-adaptive-forms.md)
+   + [Integreren met Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + AEM Forms publiceren en verwerken {#publish-process-aem-forms}
    + [Inleiding tot het publiceren van formulieren op een portal](using/introduction-publishing-forms.md)
    + [Voorbeeld voor het integreren van concepten en verzendingen in de database](using/integrate-draft-submission-database.md)
@@ -681,6 +683,7 @@ ht-degree: 1%
          + [Een DDX-document valideren met de webservice-API](developing/validate-ddx-document-using-web.md)
 + Problemen oplossen {#troubleshooting}
    + [Kan sommige formulierfuncties niet gebruiken met bepaalde versies van Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+   + [Extra stappen voor het ophalen van e-mail met bijlage voor de Adaptive Forms On JEE-versie](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

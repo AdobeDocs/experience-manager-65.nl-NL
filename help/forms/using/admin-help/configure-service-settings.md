@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
 workflow-type: tm+mt
-source-wordcount: '10769'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
@@ -186,16 +186,6 @@ De volgende instellingen zijn beschikbaar voor de e-mailservice.
 **SMTP-gebruiker:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt om zich aan te melden bij de SMTP-server.
 
 **SMTP-wachtwoord:** Het wachtwoord dat aan de SMTP gebruikersrekening wordt geassocieerd.
-
-**0Auth2.0-verificatie:** Auth2.0 de authentificatieservice biedt steun aan zijn geïntegreerde Dienst van de Post aan om organisaties toe te staan om aan veilige e-mailvereisten te voldoen.
-
-**Client-id:** Azure-portal genereert een toepassings-id die wordt gebruikt voor verificatie.
-
-**Clientgeheim:** Azure-portal genereert een geheime sleutel die wordt gebruikt voor verificatie.
-
-**Token vernieuwen:**  OAuth de cliënt gebruikt een koord om een nieuw toegangstoken zonder de interactie van de gebruiker te krijgen.
-
-Voor meer informatie over hoe te om identiteitskaart van de Cliënt terug te winnen en te gebruiken, het geheim van de Cliënt en het Token verfrissen, zie [OAuth2.0-verificatieondersteuning voor e-mailservices](/help/forms/using/oauth2-support-for-mail-service.md).
 
 **SMTP-transportbeveiliging:** Het veiligheidsprotocol voor het verbinden met de server SMTP te gebruiken:
 

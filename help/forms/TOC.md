@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
 workflow-type: tm+mt
-source-wordcount: '3801'
+source-wordcount: '3795'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,6 @@ ht-degree: 1%
       + [Algemene veiligheidsoverwegingen voor AEM Forms in juni](using/general-security-considerations.md)
       + [AEM Forms versterken op JEE-omgeving](using/hardening-aem-forms-jee-environment.md)
       + [Beveiligde beheerinstellingen voor AEM Forms configureren op JEE](using/configuring-secure-administration-settings-aem.md)
-      + [OAuth2 Steun voor de postdienst](using/oauth2-support-for-mail-service.md)
 + Formuliergegevensmodel {#form-data-model}
    + [Inleiding tot AEM Forms Data Integration](using/data-integration.md)
    + [Gegevensbronnen configureren](using/configure-data-sources.md)

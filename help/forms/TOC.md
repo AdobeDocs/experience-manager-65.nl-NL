@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3791'
 ht-degree: 1%
 
 ---
@@ -332,7 +332,6 @@ ht-degree: 1%
    + [Analyses en rapporten configureren](using/configure-analytics-forms-documents.md)
    + [AEM Forms-analyserapporten weergeven en begrijpen](using/view-understand-aem-forms-analytics-reports.md)
    + [A/B-test voor adaptieve formulieren maken en beheren](using/ab-testing-adaptive-forms.md)
-   + [Integreren met Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + AEM Forms publiceren en verwerken {#publish-process-aem-forms}
    + [Inleiding tot het publiceren van formulieren op een portal](using/introduction-publishing-forms.md)
    + [Voorbeeld voor het integreren van concepten en verzendingen in de database](using/integrate-draft-submission-database.md)

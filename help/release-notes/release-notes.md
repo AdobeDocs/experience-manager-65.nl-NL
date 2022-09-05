@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3149'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,6 @@ ht-degree: 0%
 * De tekstcomponent wordt verkeerd uitgelijnd wanneer deze wordt toegevoegd aan geneste lay-outcontainers. (NPR-38193)
 * Een leeg stijllusje werd getoond wanneer er geen configuratie van het Systeem van de Stijl voor een component was. Het tabblad is nu verborgen wanneer er geen configuratie aanwezig is. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * De eigenschap `useLegacyResponsiveBehaviour` werkt alleen wanneer dit is geverifieerd. (NPR-37996)
-* Als u jquery-ui bijwerkte naar de laatste versie, is de Editor verbroken. (SITES-5647)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6514}
 

@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
+source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
 workflow-type: tm+mt
-source-wordcount: '5881'
+source-wordcount: '5910'
 ht-degree: 2%
 
 ---
@@ -119,7 +119,11 @@ Zie [Installeren van functiepak 18912 voor migratie van grote bedrijfsmiddelen](
 
 1. Wanneer de verbinding is gelukt, stelt u het volgende in. Koppen met een sterretje (*) zijn vereist:
 
-   * **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Je kunt één Dynamic Media-account in Experience Manager hebben. <!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL Company]** - de naam van de Dynamic Media-account.
+      >[!IMPORTANT]
+      Slechts één Configuratie van Dynamic Media in Cloud Services wordt gesteund op een geval van Experience Manager; voeg niet meer dan één configuratie toe. Meerdere Dynamic Media-configuraties op een Experience Manager-instantie zijn _niet_ ondersteund of aanbevolen door Adobe.
+
+      <!-- CQDOC-19579 and CQDOC-19612 -->
 
       Zie ook [Dynamic Media-account voor bedrijfalias configureren](/help/assets/dm-alias-account.md).
 

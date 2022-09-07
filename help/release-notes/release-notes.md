@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
+source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
 workflow-type: tm+mt
-source-wordcount: '3149'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 0%
 * Er wordt een onjuiste waarde weergegeven voor de streepjescode SSCC-18. Forms-servers laten de waarde in het rechtergedeelte van de streepjescode weg. (CQ-4342400)
 * Voor statische PDF forms die zijn gemaakt met Forms 6.5 Designer, mislukt de toegankelijkheid van PDF bij een fout `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer.(NPR-36221)
+* Wanneer u een herhaalbaar paneel toevoegt aan een niet-XFA-adaptief formulier en het aantal herhaalbare deelvensters in een niet-XFA-formulier groter is dan 15, kan het toevoegen van een nieuwe instantie 7-8 seconden duren. (NPR-37346)
 
 ## Integrations {#integrations-6514}
 

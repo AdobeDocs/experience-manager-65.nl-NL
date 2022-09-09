@@ -8,9 +8,9 @@ breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 feature: Administering
 role: Admin
-source-git-commit: 8e8c829779e172441605a8abd2ef73623b95462d
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '630'
 ht-degree: 6%
 
 ---
@@ -128,7 +128,6 @@ ht-degree: 6%
    + [Verwante artikelen van de Gemeenschap](related-community-articles.md)
    + [Integreren met Adobe Campaign Standard](campaignstandard.md)
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
-   + [Productfeed](product-feed.md)
    + [Integreren met Adobe Dynamic Tag Management](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
@@ -146,7 +145,6 @@ ht-degree: 6%
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
    + [Integratie met Adobe Target met IMS](integration-target-ims.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
-   + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)
    + [Exporteren van ervaringsfragmenten naar Adobe Target](experience-fragments-target.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)

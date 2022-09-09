@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 085e77b7b831d6be626a46d3de215aedb50f6178
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe 
 
    ![aa-13](assets/aa-13.png)
 
-   Er zijn verschillende standaardcomponentgroepen: **Algemeen**, **Handel**, **Gemeenschappen**, **Search&amp;Promote**, en **Overige**. Uw AEM instantie kan worden gevormd om verschillende groepen en componenten te tonen.
+   Er zijn verschillende standaardcomponentgroepen: **Algemeen**, **Handel**, **Gemeenschappen**, en **Overige**. Uw AEM instantie kan worden gevormd om verschillende groepen en componenten te tonen.
 
 1. Als u Adobe Analytics-variabelen wilt toewijzen aan variabelen die in de component zijn gedefinieerd, sleept u een **Variabele Analytics** van de inhoudszoeker naar een veld op de volgende component. Sleep bijvoorbeeld `Page Name (pageName)` tot `pagedata.title`.
 
@@ -121,10 +121,6 @@ De lijst kan op de volgende manieren worden gemanipuleerd:
    >[!NOTE]
    >
    >Er kan slechts één filterknop tegelijk actief zijn.
-
-   >[!NOTE]
-   >
-   >Search&amp;Promote-variabelen behoren ook tot de sectie Conversie.
 
    1. De lijst bevat ook een zoekfunctie waarmee de elementen worden gefilterd op basis van de tekst die in het zoekveld is ingevoerd.
    1. Als een filteroptie wordt geactiveerd terwijl u naar elementen in de lijst zoekt, worden de weergegeven resultaten ook gefilterd op basis van de actieve knop.

@@ -1,17 +1,17 @@
 ---
 title: Ontwikkelen met SAP Commerce Cloud
-seo-title: Ontwikkelen met SAP Commerce Cloud
+seo-title: Developing with SAP Commerce Cloud
 description: Het SAP Commerce Cloud-integratieframework bevat een integratielaag met een API
-seo-description: Het SAP Commerce Cloud-integratieframework bevat een integratielaag met een API
+seo-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
 uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-translation-type: tm+mt
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+exl-id: b3de1a4a-f334-44bd-addc-463433204c99
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2308'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. Bepaalde details en voorbeelden die hier worden besproken, verwijzen naar de [hybris](https://www.hybris.com/)-oplossing.
+>Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. In bepaalde specifieke en hier behandelde voorbeelden wordt verwezen naar de [hybris](https://www.hybris.com/) oplossing.
 
 Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
@@ -32,7 +32,7 @@ Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
 >[!NOTE]
 >
->[API-](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) documentatie is ook beschikbaar.
+>[API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
 Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
@@ -40,31 +40,31 @@ Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag
 * een winkelwagentje
 * uitchecken
 
-Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, het onderzoek van het eCommerce systeem, een derdenonderzoek (zoals Search&amp;Promote) of een combinatie daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, het onderzoek van het eCommerce systeem, een derdenonderzoek of een combinatie daarvan te gebruiken.
 
-## eCommerce Engine Selection {#ecommerce-engine-selection}
+## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
 Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbij de gebruikte motor moet worden geïdentificeerd aan de hand van AEM:
 
-* eCommerce Engines zijn OSGi-services die de interface `CommerceService` ondersteunen
+* eCommerce Engines zijn OSGi-diensten die de `CommerceService` interface
 
-   * De motoren kunnen door een `commerceProvider` de dienstbezit worden onderscheiden
+   * Motoren kunnen worden onderscheiden door een `commerceProvider` service, eigenschap
 
-* AEM ondersteunt `Resource.adaptTo()` voor `CommerceService` en `Product`
+* AEM `Resource.adaptTo()` for `CommerceService` en `Product`
 
-   * De `adaptTo`-implementatie zoekt naar een `cq:commerceProvider`-eigenschap in de hiërarchie van de bron:
+   * De `adaptTo` de implementatie zoekt naar een `cq:commerceProvider` eigenschap in de hiërarchie van de bron:
 
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
 
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
-   * Er wordt een `cq:Commerce`-mix gebruikt, zodat `cq:commerceProvider` aan sterk getypte bronnen kan worden toegevoegd.
+   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
 
 
-* De eigenschap `cq:commerceProvider` wordt ook gebruikt om naar de juiste definitie van de handelsfabriek te verwijzen.
+* De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
 
-   * Een `cq:commerceProvider`-eigenschap met de waarde `hybris` heeft bijvoorbeeld een correlatie met de OSGi-configuratie voor **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - waarbij de parameter `commerceProvider` ook de waarde `hybris` heeft.
+   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde `hybris` zal correleren met de configuratie OSGi voor **Day CQ Commerce Factory voor Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - waarbij de parameter `commerceProvider` heeft ook de waarde `hybris`.
 
-   * Hier kunnen nog andere eigenschappen worden geconfigureerd, zoals **Catalogusversie** (indien van toepassing en beschikbaar).
+   * Hier komen nog andere eigenschappen, zoals **Catalogusversie** kan worden geconfigureerd (indien van toepassing en beschikbaar).
 
 Zie de volgende voorbeelden:
 
@@ -100,7 +100,7 @@ Zie de volgende voorbeelden:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
-### Ontwikkeling voor hybris 4 {#developing-for-hybris}
+### Ontwikkeling van hybris 4 {#developing-for-hybris}
 
 De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om Hybris 5 te ondersteunen, terwijl achterwaartse compatibiliteit met Hybris 4 behouden blijft.
 
@@ -112,7 +112,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
    `-P hybris4`
 
-   De vooraf geconfigureerde distributie van Hybris 4 wordt gedownload en in de bundel `cq-commerce-hybris-server` ingesloten.
+   Het downloadt de vooraf geconfigureerde distributie van Hybris 4 en sluit het in de bundel in `cq-commerce-hybris-server`.
 
 * In de OSGi configuratiemanager:
 
@@ -120,15 +120,15 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
    * Zorg ervoor dat de dienst van de Handler van de Authentificatie van Hybris Basis een lagere de dienstrangschikking heeft dan de dienst van de Handler van Hybris OAuth.
 
-### Sessieverwerking {#session-handling}
+### Sessieafhandeling {#session-handling}
 
-hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winkelwagentje van de klant . De sessie-id wordt geretourneerd van hybris in een `JSESSIONID`-cookie die moet worden verzonden bij volgende aanvragen naar hybris. Om te voorkomen dat de sessie-id in de opslagplaats wordt opgeslagen, wordt deze gecodeerd in een ander cookie dat in de browser van de winkels wordt opgeslagen. De volgende stappen worden uitgevoerd:
+hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winkelwagentje van de klant . De sessie-id wordt geretourneerd door hybris in een `JSESSIONID` cookie die moet worden verzonden bij volgende verzoeken aan hybris. Om te voorkomen dat de sessie-id in de opslagplaats wordt opgeslagen, wordt deze gecodeerd in een ander cookie dat in de browser van de winkels wordt opgeslagen. De volgende stappen worden uitgevoerd:
 
 * Op het eerste verzoek wordt geen cookie ingesteld op verzoek van de klant; er wordt dus een verzoek naar de instantie hybris verzonden om een sessie te maken.
 
-* De sessiecookies worden uit de reactie geëxtraheerd, gecodeerd in een nieuw cookie (bijvoorbeeld `hybris-session-rest`) en ingesteld op de reactie op de gebruiker. De codering in een nieuwe cookie is vereist, omdat de oorspronkelijke cookie alleen geldig is voor een bepaald pad en anders niet vanuit de browser wordt teruggestuurd in volgende aanvragen. De padgegevens moeten ook worden toegevoegd aan de waarde van het cookie.
+* De sessiecookies worden uit de reactie geëxtraheerd en gecodeerd in een nieuwe cookie (bijvoorbeeld `hybris-session-rest`) en wordt ingesteld op het antwoord op de winkels. De codering in een nieuwe cookie is vereist, omdat de oorspronkelijke cookie alleen geldig is voor een bepaald pad en anders niet vanuit de browser wordt teruggestuurd in volgende aanvragen. De padgegevens moeten ook worden toegevoegd aan de waarde van het cookie.
 
-* Bij volgende aanvragen worden de cookies gedecodeerd uit de `hybris-session-<*xxx*>` cookies en ingesteld op de HTTP-client die wordt gebruikt om gegevens van hybris aan te vragen.
+* Op volgende verzoeken worden de cookies gedecodeerd uit de `hybris-session-<*xxx*>` cookies en ingesteld op de HTTP-client die wordt gebruikt om gegevens van hybris aan te vragen.
 
 >[!NOTE]
 >
@@ -136,7 +136,7 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
 #### CommerceSession {#commercesession}
 
-* Deze sessie &quot;bezit&quot; de **winkelwagentje**
+* Deze sessie &#39;bezit&#39; de **winkelwagentje**
 
    * toevoegen/verwijderen/enz. uitvoeren
 
@@ -144,13 +144,13 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
       `commerceSession.getProductPrice(Product product)`
 
-* Geeft de *opslaglocatie* voor de **order** gegevens
+* Heeft de *opslaglocatie* voor de **bestellen** data
 
    `CommerceSession.getUserContext()`
 
-* Is ook eigenaar van de **payment**-verwerkingsverbinding
+* Eigenaar van **betaling** verwerkingsverbinding
 
-* Is ook eigenaar van de **fulfillment**-verbinding
+* Eigenaar van **vervulling** verbinding
 
 ### Productsynchronisatie en -publicatie {#product-synchronization-and-publishing}
 
@@ -184,21 +184,21 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
         }
    ```
 
-* De catalogusconfiguratie in AEM herkent **Staged** en **Online** catalogusversies.
+* De catalogusconfiguratie in AEM herkent **Staand** en **Online** catalogusversies.
 
 * Voor het synchroniseren van producten tussen catalogusversies moet de bijbehorende AEM (a, c) worden geactiveerd.
 
-   * Als u een product wilt toevoegen aan een catalogusversie **Online**, moet de productpagina worden geactiveerd.
+   * Een product toevoegen aan een **Online** catalogusversie moet op de productpagina worden geactiveerd.
 
    * Voor het verwijderen van een product is deactivering vereist.
 
 * Voor het activeren van een pagina in AEM (c) is een controle (b) vereist. Dit is alleen mogelijk als
 
-   * Het product bevindt zich in een catalogusversie **Online** voor productpagina&#39;s.
+   * Het product bevindt zich in een **Online** catalogusversie voor productpagina&#39;s.
 
-   * De producten waarnaar wordt verwezen, zijn beschikbaar in de catalogusversie **Online** voor andere pagina&#39;s (bijvoorbeeld campagnepagina&#39;s).
+   * De producten waarnaar wordt verwezen, zijn beschikbaar in een **Online** catalogusversie voor andere pagina&#39;s (bijvoorbeeld campagnepagina&#39;s).
 
-* Geactiveerde productpagina&#39;s moeten toegang hebben tot de **Online** versie (d) van de productgegevens.
+* Geactiveerde productpagina&#39;s moeten toegang hebben tot de productgegevens **Online** versie d).
 
 * De AEM publicatie-instantie vereist toegang tot hybris voor het ophalen van product- en gepersonaliseerde gegevens (d).
 
@@ -206,7 +206,7 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 
 #### Architectuur van product en varianten {#architecture-of-product-and-variants}
 
-Eén product kan meerdere variaties hebben; kan bijvoorbeeld variëren per kleur en/of grootte. Een product moet bepalen welke eigenschappen de variatie aansturen; wij noemen deze *variantassen*.
+Eén product kan meerdere variaties hebben; kan bijvoorbeeld variëren per kleur en/of grootte. Een product moet bepalen welke eigenschappen de variatie aansturen; wij noemen deze *Alternatieve assen*.
 
 Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook andere eigenschappen beïnvloeden; de prijs kan bijvoorbeeld afhankelijk zijn van de omvang . Deze eigenschappen kunnen niet door de verkoopster worden geselecteerd en worden daarom niet beschouwd als variantassen.
 
@@ -214,23 +214,21 @@ Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom
 
 De product/variant-bron bevat niet altijd de werkelijke productgegevens. Dit kan een representatie zijn van gegevens die daadwerkelijk op een ander systeem worden opgeslagen (zoals hybris). Productbeschrijvingen, prijzen, enz. worden bijvoorbeeld niet in AEM opgeslagen, maar in real-time opgehaald van de eCommerce-engine.
 
-Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden kunnen overerven van een voorouder), maar er zijn ook aanroepen die de set variaties vermelden ( `getVariantAxes()`, `getVariants()`, enz.).
+Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enz.).
 
 >[!NOTE]
 >
->In feite wordt een variant as bepaald door wat `Product.getVariantAxes()` retourneert:
+>In feite wordt een variantas bepaald door wat dan ook `Product.getVariantAxes()` retourneert:
 >* hybris definieert het voor de implementatie van hybris
 >
->
-Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de uit-van-de-doos productcomponent slechts twee:
+>Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de uit-van-de-doos productcomponent slechts twee:
 >
 >1. `size`
-   >
-   >
-1. plus één of meer
 >
+>1. plus één of meer
+
 >
-Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productverwijzing (gewoonlijk `color` voor Geometrixx Outdoors).
+>Deze extra variant wordt geselecteerd via `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en productgegevens {#product-references-and-product-data}
 
@@ -289,7 +287,7 @@ public interface Product extends Adaptable {
 }
 ```
 
-#### com.adobe.cq.commerce.api.VariantFilter {#com-adobe-cq-commerce-api-variantfilter}
+#### com.adobe.cq.commerce.api.VariantFilter  {#com-adobe-cq-commerce-api-variantfilter}
 
 ```java
 /**
@@ -346,14 +344,14 @@ public class AxisFilter implements VariantFilter {
 
       * Een verwijzing, met de elders opgeslagen productgegevens:
 
-         * De verwijzingen van het product bevatten een `productData` bezit, die aan de productgegevens (typisch onder `/etc/commerce/products`) richt.
+         * Productverwijzingen bevatten een `productData` eigenschap, die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products`).
 
          * De productgegevens zijn hiërarchisch; productkenmerken worden overgenomen van de voorouders van een productgegevensknooppunt.
 
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
       * Een product zelf:
 
-         * Zonder een eigenschap `productData`.
+         * Zonder `productData` eigenschap.
 
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
 
@@ -415,10 +413,10 @@ public class AxisFilter implements VariantFilter {
 
 * Het winkelwagentje is eigendom van de `CommerceSession:`
 
-   * Met `CommerceSession` worden add/remove/etc. uitgevoerd.
-   * De `CommerceSession` voert ook de diverse berekeningen op het karretje uit. &quot;
+   * De `CommerceSession` voegt toe/verwijdert/etc.
+   * De `CommerceSession` voert ook de verschillende berekeningen op het karretje uit. &quot;
 
-* Hoewel de `CommerceSession` niet rechtstreeks met een cart te maken heeft, moet de  ook informatie over catalogusprijzen verstrekken (aangezien deze eigenaar is van prijzen)
+* Hoewel niet rechtstreeks verband houdt met het kart, `CommerceSession` moet ook prijsinformatie voor catalogi verstrekken (aangezien deze eigenaar is van prijzen)
 
    * Prijzen kunnen verschillende opties hebben:
 
@@ -436,24 +434,24 @@ public class AxisFilter implements VariantFilter {
 * Opslag
 
    * In het hybris-geval is de hybris-server eigenaar van het winkelwagentje.
-   * In de AEM-generieke doosjes van worden opgeslagen in [ClientContext](/help/sites-administering/client-context.md).
+   * In het AEM-generieke geval worden carts van [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalisatie**
 
-* Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md) worden geleid.
-* In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
+* Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md).
+* A ClientContext `/version/` van het karretje wordt in alle gevallen gecreëerd:
 
-   * De producten zouden door de `CommerceSession.addCartEntry()` methode moeten worden toegevoegd.
+   * De producten moeten worden toegevoegd door `CommerceSession.addCartEntry()` methode.
 
 * In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext wagen:
 
 ![chlimage_1-13](/help/sites-developing/assets/chlimage_1-13a.png)
 
-#### Architectuur van afhandeling {#architecture-of-checkout}
+#### Architectuur van uitchecken {#architecture-of-checkout}
 
 **Gegevens van winkelwagentjes en bestellingen**
 
-`CommerceSession` bezit de drie elementen:
+De `CommerceSession` eigenaar van de drie elementen:
 
 1. Inhoud winkelwagentje
 1. Prijzen
@@ -484,7 +482,7 @@ public class AxisFilter implements VariantFilter {
 
 1. **Bestelgegevens**
 
-   De ordergegevens zijn echter *niet* vast door de API:
+   Bestelgegevens zijn echter *niet* vast door de API:
 
    ```java
    public void updateOrderDetails(Map<String, String> orderDetails);
@@ -496,10 +494,10 @@ public class AxisFilter implements VariantFilter {
 
 * Vaak moeten bestelformulieren meerdere verzendopties (en prijzen) bieden.
 * De prijzen kunnen gebaseerd zijn op artikelen en gegevens van de bestelling, zoals gewicht en/of bezorgadres.
-* De `CommerceSession` heeft toegang tot alle gebiedsdelen, zodat kan het op een gelijkaardige manier zoals producttarifering worden behandeld:
+* De `CommerceSession` heeft toegang tot alle afhankelijkheden, zodat het op een vergelijkbare manier kan worden behandeld als productprijzen:
 
-   * De `CommerceSession` is eigenaar van de verzendprijs.
-   * Kan leveringsdetails ophalen/bijwerken met `updateOrder(Map<String, Object> delta)`
+   * De `CommerceSession` is eigenaar van verzendprijs.
+   * Kan leveringsdetails ophalen/bijwerken met behulp van `updateOrder(Map<String, Object> delta)`
 
 >[!NOTE]
 >
@@ -507,24 +505,23 @@ public class AxisFilter implements VariantFilter {
 >
 >`yourProject/commerce/components/shippingpicker`:
 >
->* In wezen zou dit een kopie van `foundation/components/form/radio` kunnen zijn, maar met callbacks naar `CommerceSession` voor:
-   >
-   >
-* Controleren of de methode beschikbaar is
+>* Dit kan in wezen een kopie zijn van `foundation/components/form/radio`, maar met terugverwijzing naar de `CommerceSession` voor:
+>
+>* Controleren of de methode beschikbaar is
 >* Prijsinformatie toevoegen
->* Om kopers in staat te stellen de bestelpagina in AEM bij te werken (met inbegrip van de superset van verzendmethoden en de tekst die ze beschrijft), terwijl ze toch de controle hebben om de relevante `CommerceSession`-informatie beschikbaar te maken.
+>* Om kopers in staat te stellen de bestelpagina in AEM bij te werken (met inbegrip van de superset van de verzendmethoden en de beschrijvende tekst), terwijl ze toch de controle hebben om de relevante `CommerceSession` informatie.
 
 
 **Betalingsverwerking**
 
 * De `CommerceSession` is ook eigenaar van de betalingsverwerkingsverbinding.
 
-* Implementatoren moeten specifieke aanroepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession`-implementatie.
+* Implementatoren moeten specifieke oproepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession` uitvoering.
 
 **Afhandeling bestellen**
 
-* `CommerceSession` bezit ook de uitvoeringsverbinding.
-* Implementatoren moeten specifieke aanroepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession`-implementatie.
+* De `CommerceSession` is ook eigenaar van de uitvoeringsverbinding.
+* Implementatoren zullen specifieke oproepen (aan hun gekozen betalingsverwerkingsdienst) moeten toevoegen aan de `CommerceSession` uitvoering.
 
 ### Zoekdefinitie {#search-definition}
 
@@ -542,7 +539,7 @@ Het eCommerce-project bevat een standaardzoekcomponent, die zich bevindt in:
 
 ![chlimage_1-14](/help/sites-developing/assets/chlimage_1-14a.png)
 
-Dit maakt gebruik van onderzoek API om de geselecteerde handelingsmotor (zie [eCommerce Engine Selection](#ecommerce-engine-selection)) te vragen:
+Dit maakt gebruik van de onderzoek API om de geselecteerde handelingsmotor (zie [Selectie van eCommerce-engine](#ecommerce-engine-selection)):
 
 #### Zoeken in API {#search-api}
 
@@ -550,13 +547,13 @@ Het kernproject bevat verschillende algemene klassen/hulpklassen:
 
 1. `CommerceQuery`
 
-   Wordt gebruikt om een zoekquery te beschrijven (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. Een `CommerceQuery` kan van een verzoekvoorwerp ( `HttpServletRequest`) worden geconcretiseerd.
+   Wordt gebruikt om een zoekquery te beschrijven (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. A `CommerceQuery` kan worden geïnstantieerd vanuit een request-object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Is een nutsklasse die één statische methode - `toParams` - verstrekt die voor het produceren van `GET` parameterkoorden van een lijst van facetten en één knevelwaarde wordt gebruikt. Dit is handig aan de UI-zijde, waar u een hyperlink moet weergeven voor elke waarde van elk facet, zodat wanneer de gebruiker op de hyperlink klikt, de desbetreffende waarde wordt in- en uitgeschakeld (als deze is geselecteerd, wordt deze verwijderd uit de query, anders toegevoegd). Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, overschrijvende waarden, enzovoort.
+   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is handig aan de UI-zijde, waar u een hyperlink moet weergeven voor elke waarde van elk facet, zodat wanneer de gebruiker op de hyperlink klikt, de desbetreffende waarde wordt in- en uitgeschakeld (als deze is geselecteerd, wordt deze verwijderd uit de query, anders toegevoegd). Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, overschrijvende waarden, enzovoort.
 
-Het ingangspunt voor onderzoek API is de `CommerceService#search` methode die een `CommerceResult` voorwerp terugkeert. Zie [API Documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
+Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `CommerceResult` object. Zie de [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
 
 ### Gebruikersintegratie {#user-integration}
 
@@ -564,7 +561,7 @@ Er wordt gezorgd voor integratie tussen AEM en verschillende systemen voor e-han
 
 * Verificatie
 
-   AEM wordt verondersteld de *only* Web front-end te zijn en voert daarom *all* authentificatie uit.
+   AEM wordt geacht de *alleen* front-end voor het web en dus *alles* verificatie.
 
 * Rekeningen in hybriden
 
@@ -598,9 +595,9 @@ Een AEM front-end kan vóór een bestaande hybris implementatie worden geplaatst
 
 Uw aangepaste importhandler bouwen op bestaande functionaliteit:
 
-* moet de `ImportHandler` interface uitvoeren
+* moet de `ImportHandler` interface
 
-* kan `DefaultImportHandler` uitbreiden.
+* kan de `DefaultImportHandler`.
 
 ```java
 /**
@@ -662,7 +659,7 @@ public interface ImportHandler {
 }
 ```
 
-Uw aangepaste handler wordt alleen herkend door de importer als deze de eigenschap `service.ranking`opgeeft met een waarde hoger dan 0; bijvoorbeeld.
+Uw aangepaste handler kan alleen door de importer worden herkend als deze de optie `service.ranking`eigenschap met een waarde hoger dan 0; bijvoorbeeld.
 
 ```java
 @Component

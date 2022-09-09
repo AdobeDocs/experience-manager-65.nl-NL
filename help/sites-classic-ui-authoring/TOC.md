@@ -7,10 +7,10 @@ user-guide-title: AEM 6.5 Klassieke UI Authoring User Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 20%
+source-wordcount: '264'
+ht-degree: 21%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 20%
    + [Annotaties bij het bewerken van een pagina](classic-page-author-annotations.md)
    + [Problemen met AEM bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
    + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
-   + [Een pagina ontwerpen voor Mobile-apparaten](classic-feature-mobile.md)
+   + [Een pagina ontwerpen voor mobiele apparaten](classic-feature-mobile.md)
    + [Componenten voor paginaontwerp](classic-page-author-edit-mode.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](classic-page-author-keyboard-shortcuts.md)
 + Site- en paginafuncties {#siteandpage}
@@ -49,7 +49,6 @@ ht-degree: 20%
    + [Tags gebruiken](classic-feature-tags.md)
    + [Basisstructuur](classic-feature-scaffolding.md)
    + [Componenten configureren in ontwerpmodus](classic-page-author-design-mode.md)
-   + [Search&amp;Promote toevoegen aan uw pagina](classic-feature-search-promote.md)
    + [Onderdelen](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Deelnemen aan workflows](classic-workflows-participating.md)
@@ -62,7 +61,7 @@ ht-degree: 20%
    + [Lanceringen promoten](classic-launches-promoting.md)
 + Personalisatie {#personalization}
    + [Inzicht in segmentering](classic-personalization-campaigns-segmentation.md)
-   + [Campagnebeheer](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
    + [Doelaanbiedingen](classic-personalization-campaigns-target-offers.md)
    + [E-mailmarketing](classic-personalization-campaigns-email.md)

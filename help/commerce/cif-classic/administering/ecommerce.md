@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ AEM eCommerce biedt:
 
    * de AEM
    * het zoeken van het eCommerce-systeem
-   * een zoekopdracht van derden (zoals Search&amp;Promote)
+   * een zoekopdracht van derden
    * of een combinatie daarvan.
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)

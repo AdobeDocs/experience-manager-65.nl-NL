@@ -1,16 +1,16 @@
 ---
 title: Algemene eCommerce beheren
-seo-title: Algemene eCommerce beheren
+seo-title: Administering generic eCommerce
 description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
-seo-description: De AEM generische oplossing verstrekt methodes om de handelsinformatie te beheren die binnen de bewaarplaats wordt gehouden.
+seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 812d1a43176a75ff22e3a0bc07bc658cb5070a62
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '3002'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ De AEM generische oplossing verstrekt methodes om de handelsinformatie te behere
 >
 >De volgende procedures zijn van toepassing op zowel producten als productvariaties.
 
-Voordat u producten maakt, moet u een [substraat](/help/sites-authoring/scaffolding.md) definiëren. Hiermee geeft u de velden op die u nodig hebt om de producten te definiëren en hoe deze worden bewerkt.
+Voordat u producten maakt, moet u een [steiger](/help/sites-authoring/scaffolding.md). Hiermee geeft u de velden op die u nodig hebt om de producten te definiëren en hoe deze worden bewerkt.
 
 Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat wordt met de producten geassocieerd door:
 
@@ -62,9 +62,9 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 #### Producten importeren - Voor aanraking geoptimaliseerde interface {#importing-products-touch-optimized-ui}
 
-1. Navigeer naar de **Products** console, via **Commerce**.
-1. Met de **Products**-console navigeert u naar de gewenste locatie.
-1. Gebruik het **pictogram Producten importeren** om de wizard te openen.
+1. Ga naar de **Producten** console, via **Handel**.
+1. Met de **Producten** navigeren naar de gewenste locatie.
+1. Gebruik de **Producten importeren** om de wizard te openen.
 
    ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
@@ -72,7 +72,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    * **Importeur**
 
-      De importer voor de specifieke [commerceprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), standaard `Geometrixx`.
+      De importeur voor de specifieke [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)standaard `Geometrixx`.
 
    * **Bron**
 
@@ -87,7 +87,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
    >
    >Een aangepaste importmodule kan zo worden gedefinieerd dat deze naar wens kan werken.
 
-1. Selecteer **Volgende** om de producten in te voeren, zal een logboek van de genomen acties worden getoond.
+1. Selecteren **Volgende** voor de invoer van de producten zal een logboek van de genomen maatregelen worden weergegeven .
 
    >[!NOTE]
    >
@@ -95,14 +95,14 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    >[!NOTE]
    >
-   >Als u herhaaldelijk **Next** en **Back** gebruikt, worden de productdefinities herhaaldelijk geïmporteerd. Nochtans, aangezien zij zelfde SKUs hebben zal de informatie in de bewaarplaats eenvoudig worden beschreven.
+   >Herhaald gebruik **Volgende** en **Vorige** zal de productdefinities herhaaldelijk importeren. Nochtans, aangezien zij zelfde SKUs hebben zal de informatie in de bewaarplaats eenvoudig worden beschreven.
 
-1. Selecteer **Done** om de wizard te sluiten.
+1. Selecteren **Gereed** om de wizard te sluiten.
 
 #### Producten importeren - Klassieke UI {#importing-products-classic-ui}
 
-1. Met de **Tools**-console opent u de map **Commerce**.
-1. Dubbelklik om de **Product Importer** te openen:
+1. Met de **Gereedschappen** de console opent **Handel** map.
+1. Dubbelklik om het dialoogvenster **Producimporteur**:
 
    ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
@@ -116,7 +116,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    * **Handelsprovider**
 
-      De importer voor uw [commerceprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standaard Geometrixx.
+      De importer voor uw [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standaard Geometrixx.
 
    * **Bronbestand**
 
@@ -126,35 +126,35 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
       Geef aan of dit een incrementele invoer is (in tegenstelling tot volledige invoer).
 
-1. Klik **Producten importeren**.
+1. Klikken **Producten importeren**.
 
 ### Productinformatie maken {#creating-product-information}
 
 >[!NOTE]
 >
->Het standaardproductbeheer is van fundamenteel belang, omdat de set Geometrixx-Outdoor-producten van fundamenteel belang is. De complexiteit is gebaseerd op het product [steigers](/help/sites-authoring/scaffolding.md), dus met uw eigen productsteigers is het mogelijk om geavanceerdere bewerkingen uit te voeren.
+>Het standaardproductbeheer is van fundamenteel belang, omdat de set Geometrixx-Outdoor-producten van fundamenteel belang is. De complexiteit is gebaseerd op het product [steigers](/help/sites-authoring/scaffolding.md)En dus is het met uw eigen productsteigers mogelijk om geavanceerdere bewerkingen uit te voeren.
 
 #### Productinformatie maken - Voor aanraking geoptimaliseerde gebruikersinterface {#creating-product-information-touch-optimized-ui}
 
-1. Met de **Products**-console (via **Commerce**) navigeert u naar de gewenste locatie.
-1. Gebruik het pictogram **Maken** om een van beide te selecteren (afhankelijk van de structuur en locatie):
+1. Met de **Producten** console (via **Handel**) navigeer naar de gewenste locatie.
+1. Gebruik de **Maken** pictogram om een van beide te selecteren (afhankelijk van de structuur en locatie):
 
    * **Product maken**
    * **Productvariatie maken**
 
    ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. De wizard wordt geopend. Gebruik **Basic** en **Product Tabs** om de [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) voor het nieuwe product of de productvariant in te voeren.
+1. De wizard wordt geopend. Gebruik de **Basis** en **Tabs product** om de [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) voor het nieuwe product of de nieuwe productvariant.
 
    >[!NOTE]
    >
-   >**** Titleand  **** SKUare het minimum wordt vereist om een product of een variant tot stand te brengen.
+   >**Titel** en **SKU** minimaal vereist zijn om een product of variant te maken.
 
-1. Selecteer **Maken** om de gegevens op te slaan.
+1. Selecteren **Maken** om de gegevens op te slaan.
 
 >[!NOTE]
 >
->Veel producten worden aangeboden in verschillende kleuren en/of grootten. De informatie over het basisproduct en de verwante productvarianten kan allebei van **Products** console worden beheerd.
+>Veel producten worden aangeboden in verschillende kleuren en/of grootten. De informatie over het basisproduct en de desbetreffende productvarianten kan beide worden beheerd via de **Producten** console.
 >
 >De producten en hun varianten worden opgeslagen als boomstructuur, is de productinformatie bij de bovenkant, met de varianten onderaan (deze structuur wordt afgedwongen door UI).
 
@@ -166,27 +166,27 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 >
 >`/etc/commerce/products/...`
 >
->Dit betekent dat ze standaard worden geblokkeerd door de [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), dus zo nodig configureren.
+>Dit betekent dat ze standaard worden geblokkeerd door de [verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), zo vorm zo zoals vereist.
 
 #### Productinformatie bewerken - Voor aanraking geoptimaliseerde interface {#editing-product-information-touch-optimized-ui}
 
-1. Met de **Products**-console (via **Commerce**) navigeert u naar de productinformatie.
+1. Met de **Producten** console (via **Handel**) navigeer naar de productinformatie.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Selecteer het pictogram **Productgegevens weergeven**:
+   Selecteer **Productgegevens weergeven** pictogram:
 
    ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. De [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) worden weergegeven. Gebruik **Bewerken** en **Gereed** om wijzigingen aan te brengen.
+1. De [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) wordt weergegeven. Gebruiken **Bewerken** en **Gereed** om wijzigingen aan te brengen.
 
 ### Productverwijzingen tonen {#showing-product-references}
 
 #### Productreferenties tonen - Voor aanraking geoptimaliseerde interface {#showing-product-references-touch-optimized-ui}
 
-1. Met de **Products**-console (via **Commerce**) navigeert u naar de productinformatie.
+1. Met de **Producten** console (via **Handel**) navigeer naar de productinformatie.
 1. Open de secundaire rail voor Referenties met het pictogram:
 
    ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
@@ -205,7 +205,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 ### Zoeken naar producten {#search-for-products}
 
-1. Navigeer naar de **Products** console, via **Commerce**.
+1. Ga naar de **Producten** console, via **Handel**.
 1. Open de secundaire rail voor Onderzoek met het pictogram:
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
@@ -224,10 +224,10 @@ U kunt een bestaand facet wijzigen of nieuwe facetten toevoegen met behulp van C
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. U kunt bijvoorbeeld de grootten wijzigen die op de pagina met productzoekopdrachten worden weergegeven. Klik op het knooppunt `sizegroup`.
-1. Klik `items` knoop, dan klik `propertypredicate` knoop.
-1. U kunt `propertyValues` wijzigen. U kunt bijvoorbeeld XS of XXL toevoegen of een grootte verwijderen.
-1. Klik **Alles opslaan** en navigeer naar de pagina met productzoekopdrachten. Uw wijzigingen worden weergegeven.
+1. U kunt bijvoorbeeld de grootten wijzigen die op de pagina met productzoekopdrachten worden weergegeven. Klik op de knop `sizegroup` knooppunt.
+1. Klikken `items` knoop, dan klik `propertypredicate` knooppunt.
+1. U kunt de `propertyValues`. U kunt bijvoorbeeld XS of XXL toevoegen of een grootte verwijderen.
+1. Klikken **Alles opslaan** en navigeer naar de pagina met productzoekopdrachten. Uw wijzigingen worden weergegeven.
 
 ### Meerdere elementen {#multiple-assets}
 
@@ -239,39 +239,39 @@ U kunt meerdere elementen toevoegen aan de productcomponent en vervolgens het el
 
 #### Meerdere elementen toevoegen {#adding-multiple-assets}
 
-1. Navigeer naar de **Products** console, via **Commerce**.
-1. Navigeer met de **Products**-console naar het vereiste product.
+1. Ga naar de **Producten** console, via **Handel**.
+1. Met de **Producten** naar het vereiste product te navigeren.
 
    >[!NOTE]
    >
    >U moet op productniveau zijn, niet op variantniveau.
 
-1. Tik/klik op **Product-gegevens weergeven** pictogram met selectiemodus of snelle handelingen.
+1. Tikken/klikken **Productgegevens weergeven** met de selectiemodus of snelle handelingen.
 1. Tik op het pictogram Bewerken of klik op het pictogram Bewerken.
-1. Schuif naar **Add**.
+1. Schuiven naar **Toevoegen**.
 
    ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
 
-1. Tik/klik **Toevoegen**. Er wordt een nieuwe plaatsaanduiding voor elementen weergegeven.
+1. Tikken/klikken **Toevoegen**. Er wordt een nieuwe plaatsaanduiding voor elementen weergegeven.
 1. Door te tikken of te klikken op **Wijzigen **Hiermee opent u een dialoogvenster waarin u een element kunt kiezen.
 1. Selecteer het element dat u wilt toevoegen.
 
    >[!NOTE]
    >
-   >De elementen die u kunt selecteren, zijn afkomstig uit [Middelen](/help/assets/assets.md).
+   >De elementen die u kunt selecteren, zijn [Activa](/help/assets/assets.md).
 
 1. Tik op het pictogram Gereed/klik op Gereed.
 
 Er worden nu twee elementen in uw productcomponent opgeslagen. U kunt configureren welke op de productpagina wordt weergegeven. Dit werkt met een categoriesysteem. Eerst moet u een categorie toevoegen aan de afzonderlijke elementen:
 
-1. Tik/klik **Productgegevens weergeven**.
-1. Typ een **Middelencategorie** onder de elementen, bijvoorbeeld `cat1` en `cat2`.
+1. Tikken/klikken **Productgegevens weergeven**.
+1. Typ een **Middelencategorie** onder de activa, bijvoorbeeld `cat1` en `cat2`.
 
    >[!NOTE]
    >
    >U kunt ook tags gebruiken voor categorieën.
 
-1. Tik op het pictogram Gereed/klik op Gereed. U moet nu [rollout](#rolling-out-a-catalog) uw veranderingen.
+1. Tik op het pictogram Gereed/klik op Gereed. U moet nu [rollout](#rolling-out-a-catalog) uw wijzigingen.
 
 Uw elementen in de productcomponent hebben nu een categorie. U kunt vormen welke categorie op drie verschillende niveaus zal worden getoond:
 
@@ -296,28 +296,28 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 #### Productpagina {#product-page}
 
 1. Navigeer naar de productpagina.
-1. **De** productcomponent bewerken.
-1. Typ de **Afbeeldingscategorie** die u hebt gekozen (bijvoorbeeld `cat1`).
-1. Tik/klik **Done**. De pagina wordt vernieuwd en het juiste element moet worden weergegeven.
+1. **Bewerken** de productcomponent.
+1. Typ de **Afbeeldingscategorie** je hebt gekozen ( `cat1` bijvoorbeeld).
+1. Tikken/klikken **Gereed**. De pagina wordt vernieuwd en het juiste element moet worden weergegeven.
 
 #### Catalogus  {#catalog}
 
 1. Navigeer naar de catalogus.
-1. Tik/klik **Eigenschappen weergeven**.
-1. Tik/klik **Bewerken**.
-1. Tik/klik op het tabblad **Middelen**.
-1. Typ de vereiste **Productcategorie**.
-1. Tik/klik **Done**.
-1. [](#rolling-out-a-catalog) Rolloutuw wijzigingen.
+1. Tikken/klikken **Eigenschappen weergeven**.
+1. Tikken/klikken **Bewerken**.
+1. Tik/klik op de knop **Activa** tab.
+1. Typ het vereiste **Productcategorie**.
+1. Tikken/klikken **Gereed**.
+1. [Uitrol](#rolling-out-a-catalog) uw wijzigingen.
 
 #### Productconsole {#products-console}
 
-1. Navigeer met de **Products**-console naar het vereiste product.
-1. Tik/klik **Productgegevens weergeven**.
-1. Tik/klik **Bewerken**.
+1. Met de **Producten** navigeer naar het vereiste product.
+1. Tikken/klikken **Productgegevens weergeven**.
+1. Tikken/klikken **Bewerken**.
 1. Typ a **Standaardelementcategorie**.
-1. Tik/klik **Done**.
-1. [](#rolling-out-a-catalog) Rolloutuw wijzigingen.
+1. Tikken/klikken **Gereed**.
+1. [Uitrol](#rolling-out-a-catalog) uw wijzigingen.
 
 ### Productinformatie publiceren/verwijderen {#publishing-unpublishing-product-information}
 
@@ -329,28 +329,28 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 >
 >In speciale gevallen ondersteunt AEM ook het rechtstreeks publiceren van de productgegevens.
 
-1. Met de **Products**-console (via **Commerce**) navigeert u naar de productinformatie.
+1. Met de **Producten** console (via **Handel**) navigeer naar de productinformatie.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Selecteer het pictogram **Publiceren** of **Publiceren** desgewenst:
+   Selecteer **Publiceren** of **Publiceren ongedaan maken** pictogram naar wens:
 
    ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    De productinformatie zal worden gepubliceerd of, indien van toepassing, niet gepubliceerd.
 
-### Productfeed {#product-feed}
+<!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-Dankzij de Search&amp;Promote-integratie kunt u:
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
 
-* gebruik de eCommerce-API, onafhankelijk van de onderliggende structuur van de gegevensopslagruimte en het handelsplatform.
-* hefboomwerking de eigenschap van de Schakelaar van de Index van Search&amp;Promote om een productvoer in formaat van XML te verstrekken.
-* de functie voor afstandsbediening van Search&amp;Promote gebruiken om op aanvraag of geplande aanvragen van de productfeed uit te voeren
-* feed generation voor verschillende Search&amp;Promote-accounts, geconfigureerd als cloudservices configuraties.
+<!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
+<!-- Search&Promote is end of life as of September 1, 2022 * feed generation for different Search&Promote accounts, configured as cloud services configurations. -->
 
-Lees [Productfeed](/help/sites-administering/product-feed.md) voor meer informatie.
+<!-- Search&Promote is end of life as of September 1, 2022 For more information, read [Product Feed](/help/sites-administering/product-feed.md). -->
 
 ### Gebeurtenishandler voor productupdates {#event-handler-for-product-updates}
 
@@ -363,7 +363,7 @@ Er is een gebeurtenishandler die een gebeurtenis registreert wanneer een product
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Voor de gebeurtenissen `PRODUCT_*` wijst het pad naar het basisproduct in `/etc/commerce/products`. Voor de `PRODUCT_PAGE_*` gebeurtenissen, richt de weg aan `cq:Page` knoop.
+Voor de `PRODUCT_*` gebeurtenissen, wijst het pad naar het basisproduct in `/etc/commerce/products`. Voor de `PRODUCT_PAGE_*` gebeurtenissen, wijst het pad naar de `cq:Page` knooppunt.
 
 U kunt hen in de Console van het Web in gebeurtenissen bekijken OSGI ( `/system/console/events`), bijvoorbeeld:
 
@@ -381,7 +381,7 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
 
 1. Navigeer naar de pagina waaraan u de component wilt toevoegen.
 1. Sleep de component naar de pagina.
-1. Sleep een afbeelding in de component vanuit de browser [assets](/help/sites-authoring/author-environment-tools.md#assets-browser).
+1. Sleep een afbeelding in de component vanuit de component [middelenbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. U kunt:
 
    * Klik op de component en klik vervolgens op het pictogram Bewerken
@@ -401,7 +401,7 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
 
 1. Wijzig en verplaats de vorm naar wens.
 1. Klik op de vorm.
-1. Als u op het bladerpictogram klikt, wordt de [Asset Picker](/help/assets/search-assets.md#assetpicker) geopend.
+1. Als u op het bladerpictogram klikt, wordt het dialoogvenster [Asset Picker](/help/assets/search-assets.md#assetpicker).
 
    >[!NOTE]
    >
@@ -414,8 +414,8 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
-1. Schakel over naar de modus [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui).
-1. Klik op + hotspot. Er wordt een dialoogvenster geopend waarin u de grootte en de hoeveelheid van het product kunt kiezen die u hebt ingevoerd in **Pad**.
+1. Overschakelen op [voorvertoning](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) in.
+1. Klik op + hotspot. Er wordt een dialoogvenster geopend waarin u de grootte en de hoeveelheid van het product kunt kiezen die u hebt ingevoerd **Pad**.
 
    ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
 
@@ -431,11 +431,11 @@ U kunt configureren hoe het dialoogvenster eruitziet wanneer u op de hotspot kli
 
    ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
 
-1. Omlaag schuiven. Er is een **ADD TO CART** tabblad.
+1. Omlaag schuiven. Er is een **TOEVOEGEN AAN KAART** tab.
 
    ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
 
-1. Klik **TOEVOEGEN AAN KAART**. Er zijn 3 configuratieopties die u kunt gebruiken.
+1. Klikken **TOEVOEGEN AAN KAART**. Er zijn 3 configuratieopties die u kunt gebruiken.
 
    ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
 
@@ -455,28 +455,28 @@ Een catalogus genereren:
 
 1. Open de Sites-console (bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Als u de lijst met opties wilt openen, gebruikt u het pictogram **Maken**:
+1. Als u de lijst met opties wilt openen, gebruikt u de optie **Maken** pictogram:
 
    ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
-1. Selecteer **Catalogus maken** in de lijst en open de wizard Catalogus maken.
+1. In de lijst selecteert u **Catalogus maken** wordt de wizard Catalogus maken geopend.
 
    ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigeer naar de gewenste blauwdruk van de catalogus.
-1. Tik/klik op **Selecteer** en tik/klik op de vereiste blauwdruk van de catalogus.
-1. Tik/klik **Volgende**.
+1. Tikken/klikken **Selecteren** en tik/klik op de gewenste blauwdruk van de catalogus.
+1. Tikken/klikken **Volgende**.
 
    ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
 
-1. Typ a **Title** en a **Name**.
-1. Tik/klik op de knop **Maken**. De catalogus wordt gemaakt en er wordt een dialoogvenster geopend.
+1. Typ a **Titel** en **Naam**.
+1. Tik/klik op de knop **Maken** knop. De catalogus wordt gemaakt en er wordt een dialoogvenster geopend.
 
    ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
 
-1. Als u op **Done** klikt, keert u terug naar de Sites-console waar u de catalogus kunt zien.
+1. Tapping/klikken **Gereed** brengt u terug naar de console van Plaatsen waar u uw catalogus zult kunnen zien.
 
-   Als u op **Catalogus openen** klikt, wordt de catalogus geopend (bijvoorbeeld `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Tapping/klikken **Catalogus openen** opent u uw catalogus (bijvoorbeeld `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Een catalogus genereren - klassieke gebruikersinterface {#generating-a-catalog-classic-ui}
 
@@ -484,28 +484,28 @@ Een catalogus genereren:
 >
 >De catalogus verwijst naar uw [Productgegevens](#products-and-product-variants).
 
-1. Navigeer met de **Websites**-console naar uw **Catalogusblauwdruk** en vervolgens naar de basiscatalogus.
+1. Met de **Websites** console, navigeer naar uw **Catalogusvervaging** en vervolgens de basiscatalogus.
 
    Bijvoorbeeld:
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
-1. Maak een nieuwe pagina met de sjabloon **Sectie vervagen**.
+1. Een nieuwe pagina maken met de opdracht **Sectie vervagen** sjabloon.
 
    Bijvoorbeeld, `Swimwear`.
 
-1. Open de nieuwe `Swimwear` pagina, dan klik **geef Blauwdruk** uit om **Eigenschappen** dialoog te openen, waar u **Producten** selectie kunt plaatsen.
+1. De nieuwe openen `Swimwear` pagina, en klik vervolgens op **Vervaging bewerken** om de **Eigenschappen** waar u de **Producten** selectie.
 
-   Open bijvoorbeeld het veld **Tags/Trefwoorden** om Activiteit te selecteren en vervolgens te zwemmen in de sectie Geometrixx-Buiten.
+   Open bijvoorbeeld de **Tags/trefwoorden** om Activiteit te selecteren, dan het Zwemmen van de Geometrixx-Buiten sectie.
 
-1. Klik **OK** om uw eigenschappen op te slaan. voorbeeldproducten worden weergegeven onder de **Productselectiecriteria** op de pagina Bladeren.
-1. Klik op **Wijzigingen bij rollout...**, selecteer **Uitrolpagina en alle subpagina&#39;s**, dan klik **Volgende** dan **Uitvoer**. Wanneer de rollout is voltooid, wordt de **Status**-indicator weergegeven als groen.
-1. U kunt nu **Close** klikken en de nieuwe catalogussectie controleren; bijvoorbeeld op en onder :
+1. Klikken **OK** om uw eigenschappen op te slaan; voorbeeldproducten worden onder de **Selectiecriteria voor producten** op de pagina Bladeren.
+1. Klikken op **Wijzigingen in rollout...**, selecteert u **Uitrolpagina en alle subpagina&#39;s** en klik vervolgens op **Volgende** dan **Uitrol**. Als de rollout is voltooid, wordt de opdracht **Status** de indicator zal als groen worden getoond.
+1. U kunt nu **Sluiten** en controleer de nieuwe sectie van de catalogus; bijvoorbeeld op en onder :
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. Klik nogmaals op **Vervaging bewerken** op de pagina Vervagen en open in het dialoogvenster **Eigenschappen** het tabblad **Gegenereerde pagina**. Selecteer in het lijstveld Banner de afbeelding die u wilt weergeven. bijvoorbeeld `summer.jpg`
-1. Klik **OK** om uw eigenschappen op te slaan. bannergegevens worden weergegeven onder de **Productselectiecriteria** op de pagina Bladeren.
+1. Klik nogmaals op de pagina Bladeringen **Vervaging bewerken** en in de **Eigenschappen** wordt geopend **Gegenereerde pagina** tab. Selecteer in het lijstveld Banner de afbeelding die u wilt weergeven. bijvoorbeeld: `summer.jpg`
+1. Klikken **OK** om uw eigenschappen op te slaan; bannergegevens worden weergegeven onder de **Selectiecriteria voor producten** op de pagina Bladeren.
 1. Deze nieuwe wijzigingen uitvoeren.
 
 ### Een catalogus uitrollen {#rolling-out-a-catalog}
@@ -514,19 +514,19 @@ Een catalogus genereren:
 
 Een catalogus uitrollen:
 
-1. Navigeer aan de **console Catalogs**, via **Handel**.
+1. Ga naar de **Catalogi** console, via **Handel**.
 1. Navigeer naar de catalogus die u wilt uitrollen.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Selecteer het pictogram **Wijzigingen bij rollout**:
+   Selecteer **Wijzigingen in rollout** pictogram:
 
    ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Stel in de wizard de rollout zo nodig in en tik op **Wijzigingen bij rollout**.
-1. Er wordt een dialoogvenster geopend. Tik/klik **Done** wanneer het proces is voltooid.
+1. Stel in de wizard de rollout naar wens in en tik/klik op **Wijzigingen in rollout**.
+1. Er wordt een dialoogvenster geopend. Tikken/klikken **Gereed** wanneer het proces is voltooid.
 
 #### Een catalogus uitrollen - klassieke gebruikersinterface {#rolling-out-a-catalog-classic-ui}
 
@@ -536,17 +536,17 @@ Een catalogus uitrollen:
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
-1. Klik **Wijzigingen bij rollout...**
+1. Klikken **Wijzigingen in rollout...**
 1. Stel de rollout naar wens in.
-1. Klik **Uitvoer**.
+1. Klikken **Uitrol**.
 
 ### Blauwdrukimportmodule {#blueprint-importer}
 
 #### Blauwdrukimportmodule - Voor aanraking geoptimaliseerde gebruikersinterface {#blueprint-importer-touch-optimized-ui}
 
-1. Navigeer aan de **console Catalogs**, via **Handel**.
+1. Ga naar de **Catalogi** console, via **Handel**.
 1. Navigeer naar de locatie waar u de blauwdruk van de catalogus wilt importeren.
-1. Tik/klik op het pictogram **Vervagen importeren**.
+1. Tik/klik op de knop **Blauwdrukken importeren** pictogram.
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
@@ -554,19 +554,19 @@ Een catalogus uitrollen:
 
    ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
 
-1. Tik/klik **Done** zodra het importeren is voltooid.
+1. Tikken/klikken **Gereed** zodra het importeren is voltooid.
 
 #### Invoer van blauwdruk - klassieke gebruikersinterface {#blueprint-importer-classic-ui}
 
-1. Navigeer met de **Tools**-console naar **Commerce**.
+1. Met de **Gereedschappen** console, navigeren naar **Handel**.
 
    Bijvoorbeeld:
 
    `http://localhost:4502/miscadmin#/etc/commerce`
 
-1. Open de **Importer van de Blauwdruk van de Catalogus**.
+1. Open de **Importeren van catalogusvervaging**.
 1. Stel de gewenste importbewerking in.
-1. Klik **Catalogusblauwdrukken importeren**.
+1. Klikken **Catalogusblauwdrukken importeren**.
 
 ## Aanbiedingen {#promotions}
 
@@ -576,25 +576,25 @@ Een catalogus uitrollen:
 
 >[!NOTE]
 >
->In het volgende voorbeeld wordt een speciale actie behandeld die rechtstreeks in een [campagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) wordt gehouden. Deze wordt gebruikt voor vouchers.
+>In het volgende voorbeeld wordt een promotie behandeld die rechtstreeks in een [campagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md), wordt dit gebruikt voor vouchers.
 >
->Een bevordering kan ook in [ervaring ](/help/sites-authoring/personalization.md) binnen een campagne zijn.
+>Een promotie kan ook in een [ervaring](/help/sites-authoring/personalization.md) in een campagne.
 >
->Zie [Promoties en vouchers](#promotions-and-vouchers) voor meer informatie.
+>Zie voor meer informatie [Promoties en vouchers](#promotions-and-vouchers).
 
-1. Open de console **Websites** van uw auteurinstantie.
-1. Selecteer in het linkerdeelvenster de gewenste **Campagne**.
-1. Klik op **Nieuw**, selecteer **Bevordering** malplaatje, dan specificeer **Titel** (en **Naam** indien vereist) voor uw nieuwe bon.
-1. Klik **Maken**. De nieuwe pagina voor speciale acties wordt weergegeven in het rechtervenster.
+1. Open de **Websites** console van uw auteurinstantie.
+1. Selecteer in het linkerdeelvenster de gewenste opties **Campagne**.
+1. Klikken op **Nieuw**, selecteert u de **Aanbieding** sjabloon, geef vervolgens een **Titel** (en **Naam** indien vereist) voor uw nieuwe voucher.
+1. Klikken **Maken**. De nieuwe pagina voor speciale acties wordt weergegeven in het rechtervenster.
 
 1. Bewerk de **Eigenschappen** door:
 
    * het openen van de pagina, dan het klikken van de Edit knoop om het dialoogvenster van Eigenschappen te openen
-   * het selecteren van de pagina in de console van Websites, dan gebruikend het contextmenu (gewoonlijk de juiste muisknoop) om **Eigenschappen te selecteren..** en open het dialoogvenster Eigenschappen
+   * het selecteren van de pagina in de console van Websites, dan gebruikend het contextmenu (gewoonlijk de juiste muisknoop) om te selecteren **Eigenschappen...** en opent u het dialoogvenster met eigenschappen
 
-   Geef het **Promotietype**, **Korting Type**, **Korting Waarde** en andere velden op zoals vereist.
+   Geef de **Type aanbieding**, **Type korting**, **Korting** en andere velden naar behoefte.
 
-1. Klik **OK** om op te slaan.
+1. Klikken **OK** om op te slaan.
 
 1. Je kunt je speciale actie nu activeren, zodat kopers deze kunnen bekijken op het publicatieexemplaar.
 
@@ -604,13 +604,13 @@ Een catalogus uitrollen:
 
 #### Een voucher maken - een klassieke gebruikersinterface {#creating-a-voucher-classic-ui}
 
-1. Open de console **Websites** van uw auteurinstantie.
-1. Selecteer in het linkerdeelvenster de gewenste **Campagne**.
-1. Klik op **Nieuw**, selecteer **Voucher** malplaatje, dan specificeer **Titel** (en **Naam** indien vereist) voor uw nieuwe bon.
-1. Klik **Maken**. De nieuwe voucherpagina wordt weergegeven in het rechterdeelvenster.
+1. Open de **Websites** console van uw auteurinstantie.
+1. Selecteer in het linkerdeelvenster de gewenste opties **Campagne**.
+1. Klikken op **Nieuw**, selecteert u de **Voucher** sjabloon, geef vervolgens een **Titel** (en **Naam** indien vereist) voor uw nieuwe voucher.
+1. Klikken **Maken**. De nieuwe voucherpagina wordt weergegeven in het rechterdeelvenster.
 
-1. Open de nieuwe voucherpagina met een dubbelklik en klik op **Bewerken** om de informatie naar wens te configureren.
-1. Klik **OK** om op te slaan.
+1. Open de nieuwe voucherpagina met een dubbelklik en klik op **Bewerken** om de informatie te vormen zoals vereist.
+1. Klikken **OK** om op te slaan.
 
 1. U kunt de voucher nu activeren, zodat kopers deze kunnen gebruiken in hun winkelwagentjes op het publicatieexemplaar.
 
@@ -623,17 +623,17 @@ Als u een voucher niet beschikbaar wilt maken voor klanten, kunt u:
 * Deactiveer de voucher - deze blijft beschikbaar in de auteursomgeving zodat u deze later opnieuw kunt activeren.
 * Verwijder het volledig.
 
-Beide acties kunnen van **Websites** console worden gedaan.
+Beide handelingen kunnen worden uitgevoerd via de **Websites** console.
 
 ### Vouchers wijzigen {#modifying-vouchers}
 
 #### Vouchers wijzigen - Klassieke UI {#modifying-vouchers-classic-ui}
 
-Als u de eigenschappen van een voucher of promotie wilt wijzigen, dubbelklikt u erop op de **Websites**-console en klikt u op **Bewerken**. Nadat u het bestand hebt opgeslagen, activeert u het zo dat de wijzigingen worden doorgevoerd in de publicatie-instantie(s).
+Als u de eigenschappen van een voucher of een promotie wilt wijzigen, dubbelklikt u erop in het dialoogvenster **Websites** console en klik op **Bewerken**. Nadat u het bestand hebt opgeslagen, activeert u het zo dat de wijzigingen worden doorgevoerd in de publicatie-instantie(s).
 
 ### Vouchers toevoegen aan een winkelwagen {#adding-vouchers-to-a-cart}
 
-Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde **Vouchers**-component (categorie Handel) gebruiken. U moet dit toevoegen aan dezelfde pagina als waar de winkelwagen wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
+Als u gebruikers wilt toestaan vouchers aan hun winkelwagentjes toe te voegen, kunt u de ingebouwde **Vouchers** component (categorie Handel). U moet dit toevoegen aan dezelfde pagina als waar de winkelwagen wordt weergegeven (maar dit is niet verplicht). De component vouchers is slechts een formulier waarin de gebruiker een vouchercode kan invoeren. Het is de winkelwagencomponent die de lijst met toegepaste vouchers en de korting daarop weergeeft.
 
 Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de cartpagina, onder het winkelwagentje zelf.
 
@@ -658,28 +658,28 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 
 #### Bestelgegevens maken - Voor aanraking geoptimaliseerde gebruikersinterface {#creating-order-information-touch-optimized-ui}
 
-1. Met de **Bestellingen**-console navigeert u naar de gewenste locatie.
-1. Met het pictogram **Maken** kunt u **Volgorde maken** selecteren.
+1. Met de **Orders** navigeren naar de gewenste locatie.
+1. Gebruik de **Maken** pictogram om te selecteren **Volgorde maken**.
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. De wizard wordt geopend. Gebruik de tabbladen **Basic**, **Content**, **Payment** en **Fulfillment** om de [informatie over de nieuwe bestelling](/help/commerce/cif-classic/administering/concepts.md#order-information) in te voeren.
+1. De wizard wordt geopend. Gebruik de **Basis**, **Inhoud**, **Betaling** en **Afhandeling** tabs om de [informatie over de nieuwe order](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
-1. Selecteer **Maken** om de gegevens op te slaan.
+1. Selecteren **Maken** om de gegevens op te slaan.
 
 ### Bewerkingsordergegevens {#editing-order-information}
 
 #### Bewerkordergegevens - Voor aanraking geoptimaliseerde interface {#editing-order-information-touch-optimized-ui}
 
-1. Met de console **Orders** navigeert u naar de volgorde.
+1. Met de **Orders** navigeren naar de volgorde.
 1. Een van de volgende methoden gebruiken:
 
    * [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [selectiemodus](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   Selecteer het pictogram **Order Data** weergeven:
+   Selecteer **Bestelgegevens weergeven** pictogram:
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. De [orderinformatie](/help/commerce/cif-classic/administering/concepts.md#order-information) wordt weergegeven. Gebruik **Bewerken** en **Gereed** om wijzigingen aan te brengen.
+1. De [ordergegevens](/help/commerce/cif-classic/administering/concepts.md#order-information) wordt weergegeven. Gebruiken **Bewerken** en **Gereed** om wijzigingen aan te brengen.
 

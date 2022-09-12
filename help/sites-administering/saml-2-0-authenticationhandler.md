@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
+source-git-commit: 5df1579a341f70c93a3c4b43a278bc99794a4652
 workflow-type: tm+mt
-source-wordcount: '824'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,8 @@ Het steunt:
 Deze handler slaat het gecodeerde SAML-responsbericht op in het user-node ( `usernode/samlResponse`) om de communicatie met een externe serviceprovider te vergemakkelijken.
 
 >[!NOTE]
+>
+>Zie [een demonstratie van AEM en SAML-integratie](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 >
 >Als u het einde van het communityartikel wilt lezen, klikt u op: [SAML integreren met Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 

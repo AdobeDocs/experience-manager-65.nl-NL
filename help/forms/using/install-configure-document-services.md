@@ -1,16 +1,16 @@
 ---
 title: Documentservices installeren en configureren
 seo-title: Installing and configuring document services
-description: Installeer AEM Forms-documentservices om PDF-documenten te maken, samen te stellen, te verspreiden, te archiveren, digitale handtekeningen toe te voegen om de toegang tot documenten te beperken en Barcoded Forms te decoderen.
+description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms.
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
+source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
 workflow-type: tm+mt
-source-wordcount: '5192'
+source-wordcount: '5196'
 ht-degree: 0%
 
 ---
@@ -654,7 +654,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 **Microsoft® Windows**
 
-* Zorg ervoor dat [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft Office is geïnstalleerd en het openen van dialoogvensters wordt voor alle toepassingen geannuleerd.
+* Zorg ervoor dat 32-bits [ondersteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft Office is geïnstalleerd en het openen van dialoogvensters wordt voor alle toepassingen geannuleerd.
 * Zorg ervoor dat een gebruiker van de PDF Generator in de configuratie-UI van de PDF wordt toegevoegd.
 * Zorg ervoor dat de gebruiker van de PDF Generator lid is van de beheerdersgroep en de [Een token op procesniveau vervangen](#grant-the-replace-a-process-level-token-privilege) bevoegdheden wordt ingesteld voor de gebruiker.
 * Zorg ervoor dat de gebruiker in de UI van de Generator van PDF wordt gevormd en voer de volgende acties uit:
@@ -668,7 +668,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 **Linux®**
 
-* Zorg ervoor dat [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Open Office is geïnstalleerd, het openen van dialoogvensters wordt geannuleerd voor alle toepassingen en het starten van kantoortoepassingen is geslaagd.
+* Zorg ervoor dat 32-bits of 64-bits [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Open Office is geïnstalleerd, het openen van dialoogvensters wordt geannuleerd voor alle toepassingen en het starten van kantoortoepassingen is geslaagd.
 * Een omgevingsvariabele maken `OpenOffice_PATH` en stelt u deze zo in dat deze naar de OpenOffice-installatie wijst, is ingesteld in het dialoogvenster [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt-profiel (apparaatstructuur).
 * Als er problemen zijn met de installatie van OpenOffice, controleert u of [32-bits bibliotheken](#extrarequirements) is vereist voor OpenOffice-installatie.
 

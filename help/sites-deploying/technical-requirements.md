@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 0b1080b99edaa3f0eb21d72bda82774ba3a21703
+source-git-commit: 0194abbdd9da1f89491678e0ad688d392af56423
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 0%
@@ -97,7 +97,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
 | Oracle Java SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |
 | IBM J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bits | A: Ondersteund `[3]` |  |
+| Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` |  |
 | Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` |  |
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9, Java 10 en Java 12 zijn niet-LTS-releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productiemilieu op te stellen, verleent Adobe steun slechts voor de LTS versies van Java. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Zie de [Java-ondersteuningsbeleid voor Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) voor meer informatie .

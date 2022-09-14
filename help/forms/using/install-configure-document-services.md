@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
+source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
 workflow-type: tm+mt
-source-wordcount: '5196'
+source-wordcount: '5216'
 ht-degree: 0%
 
 ---
@@ -650,7 +650,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 +++
 
-+++Office openen
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -668,7 +668,8 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 **Linux®**
 
-* Zorg ervoor dat 32-bits of 64-bits [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Open Office is geïnstalleerd, het openen van dialoogvensters wordt geannuleerd voor alle toepassingen en het starten van kantoortoepassingen is geslaagd.
+* Installeer de [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van OpenOffice. AEM Forms ondersteunt zowel 32-bits als 64-bits versies. Na het installeren, open alle toepassingen OpenOffice, annuleer alle dialoogvensters, en sluit de toepassingen. Open de toepassingen opnieuw en controleer of er geen dialoogvenster wordt weergegeven wanneer u een OpenOffice-toepassing opent.
+
 * Een omgevingsvariabele maken `OpenOffice_PATH` en stelt u deze zo in dat deze naar de OpenOffice-installatie wijst, is ingesteld in het dialoogvenster [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt-profiel (apparaatstructuur).
 * Als er problemen zijn met de installatie van OpenOffice, controleert u of [32-bits bibliotheken](#extrarequirements) is vereist voor OpenOffice-installatie.
 

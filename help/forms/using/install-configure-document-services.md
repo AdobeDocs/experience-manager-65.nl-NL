@@ -1,14 +1,14 @@
 ---
 title: Documentservices installeren en configureren
 seo-title: Installing and configuring document services
-description: Installeer AEM Forms-documentservices om PDF-documenten te maken, samen te stellen, te verspreiden, te archiveren, digitale handtekeningen toe te voegen om de toegang tot documenten te beperken en Barcoded Forms te decoderen.
+description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms.
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5288'
 ht-degree: 0%
@@ -605,11 +605,12 @@ Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine
    >
    > * U kunt het srt_config.yaml- dossier gebruiken om diverse montages van te vormen. De bestandsindeling is:
 
-       ==========================================================================================================================================================================================================================================================
        # SRT-configuratie
-       ==========================================================================================================================================================================================================================================================
-       #Note - volg correct formaat om mislukte parseren te vermijden
-       bijv. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Opmerking - Volg de juiste notatie om mislukte parseren te voorkomen
+       
+       # bijv. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale: (verplicht veld)Landinstelling voor SRT. Ondersteunde landinstellingen [en/fr/de/ja].
        landinstelling: en
        

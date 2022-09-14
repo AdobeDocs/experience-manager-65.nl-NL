@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
+source-git-commit: e5b78a6f84fa0f9de746ca4ae69a8df4f474e305
 workflow-type: tm+mt
-source-wordcount: '5216'
+source-wordcount: '5215'
 ht-degree: 0%
 
 ---
@@ -659,7 +659,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 * Zorg ervoor dat de gebruiker van de PDF Generator lid is van de beheerdersgroep en de [Een token op procesniveau vervangen](#grant-the-replace-a-process-level-token-privilege) bevoegdheden wordt ingesteld voor de gebruiker.
 * Zorg ervoor dat de gebruiker in de UI van de Generator van PDF wordt gevormd en voer de volgende acties uit:
    1. Meld u aan bij de Microsoft® Windows met de gebruiker van de PDF Generator.
-   1. Open Microsoft® Office- of Open Office-toepassingen en annuleer alle dialoogvensters.
+   1. Open Microsoft® Office- of OpenOffice-toepassingen en annuleer alle dialoogvensters.
    1. Stel Adobe PDF in als standaardprinter.
    1. Acrobat instellen als standaardprogramma voor PDF-bestanden.
    1. Handmatige omzetting uitvoeren met de opties Bestand > Afdrukken en Acrobat in Microsoft Office-toepassingen en alle dialoogvensters annuleren.

@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 477e3d6d7e64a86726a71a8c554593441c94d5bc
+source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
 workflow-type: tm+mt
-source-wordcount: '5215'
+source-wordcount: '5288'
 ht-degree: 0%
 
 ---
@@ -605,32 +605,29 @@ Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine
    >
    > * U kunt het srt_config.yaml- dossier gebruiken om diverse montages van te vormen. De bestandsindeling is:
 
-
-   ```
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-   
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-   
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-   
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-   
-      #outputDir: directory where output files will be saved
-      outputDir:
-   ```
-
+       ==========================================================================================================================================================================================================================================================
+       # SRT-configuratie
+       ==========================================================================================================================================================================================================================================================
+       #Note - volg correct formaat om mislukte parseren te vermijden
+       bijv. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       #locale: (verplicht veld)Landinstelling voor SRT. Ondersteunde landinstellingen [en/fr/de/ja].
+       landinstelling: en
+       
+       #aemTempDir: AEM Temp, map
+       aemTempDir:
+       
+       #users: PDF-conversiegebruikerslijst opgeven
+       #users:
+       # - gebruiker1
+       # - gebruiker2
+       gebruikers:
+       
+       #profile: Selecteer profiel om specifieke controles uit te voeren. Kies uit [LCM], er worden binnenkort meer toegevoegd
+       profiel:
+       
+       #outputDir: map waarin uitvoerbestanden worden opgeslagen
+       outputDir:
+   >
 1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
 ## Problemen oplossen

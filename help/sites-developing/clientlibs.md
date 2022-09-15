@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 684474d764ac2a2c187827382e0180e6c0d5259b
+source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
 workflow-type: tm+mt
 source-wordcount: '2861'
 ht-degree: 0%
@@ -224,7 +224,7 @@ Het insluiten van code is handig voor het verschaffen van toegang tot bibliothek
 
 #### Toepassingsspecifieke clientbibliotheekmappen {#app-specific-client-library-folders}
 
-Het wordt aanbevolen alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/apps`. Het is ook aan te raden bezoekers van websites de toegang tot de `/app` map. Om aan beide beste praktijken te voldoen, creeer hieronder een omslag van de cliëntbibliotheek `/apps`en toegankelijk maken via het proxyservlet, zoals beschreven in [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+Het wordt aanbevolen alle toepassingsgerelateerde bestanden in de onderstaande toepassingsmap te houden `/apps`. Het is ook aan te raden bezoekers van websites de toegang tot de `/apps` map. Om aan beide beste praktijken te voldoen, creeer hieronder een omslag van de cliëntbibliotheek `/apps`en toegankelijk maken via het proxyservlet, zoals beschreven in [Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluiten `cq:ClientLibraryFolder` node, met de volgende eigenschapkenmerken:
 

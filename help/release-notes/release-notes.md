@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3206'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 0%
 * Wanneer u een navigatiekoppeling selecteert voor workflow in HTML Workspace, wordt niet aangegeven dat de navigatiekoppeling is geselecteerd. (NPR-37138)
 * De functie Krabbelhandtekening is niet compatibel met toegankelijkheidsrichtlijnen. (NPR-37596)
 * AEM Forms gebruikt log4j 1.x. Ondersteuning voor log4j 1.x is verlopen. (NPR-38273)
-* Wanneer u een MSSQL-database gebruikt als gegevensbron in een formuliergegevensmodel en waarden ophaalt, worden getallen na het decimaalteken in de opgehaalde waarden geactiveerd. (CQ-4346190)
+* Wanneer u de MSSQL-database als gegevensbron gebruikt in een formuliergegevensmodel en waarden ophaalt, worden getallen na het decimaalteken in de opgehaalde waarden afgekapt. (CQ-4346190)
 * Als u in Forms 6.5 Designer een formulier opent dat is gemaakt met Forms 6.1 Designer en een tekstvak bewerkt, overschrijdt de alinea-afstand de opgegeven ruimte. Alle vorige instellingen van de ruimte worden verwijderd en het tekstvak moet handmatig opnieuw worden opgemaakt. (CQ-4341899)
 * Er wordt een onjuiste waarde weergegeven voor de streepjescode SSCC-18. Forms-servers laten de waarde in het rechtergedeelte van de streepjescode weg. (CQ-4342400)
 * Voor statische PDF forms die zijn gemaakt met Forms 6.5 Designer, mislukt de toegankelijkheid van PDF bij een fout `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [Inhoudsfragment AEM met GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [Inhoudsfragment AEM met GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+Dit pakket is nodig voor klanten die GraphQL gebruiken; hierdoor kunnen ze de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
 * Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 

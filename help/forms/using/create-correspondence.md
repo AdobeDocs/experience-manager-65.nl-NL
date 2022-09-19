@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3674'
+source-wordcount: '3805'
 ht-degree: 0%
 
 ---
@@ -288,6 +288,22 @@ Dergelijke exemplaren kunnen alleen worden opgeslagen wanneer de brief in een pu
 1. Open in AEM Adobe Experience Manager Web Console Configuration voor uw server met behulp van de volgende URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Zoeken **[!UICONTROL Correspondence Management Configurations]** en klik erop.
 1. Controleren **[!UICONTROL Manage Letter Instances on Publish]** configuratie en klik vervolgens op **[!UICONTROL Save]**.
+
+### Conceptfunctie opslaan inschakelen {#enable-save-draft-feature}
+
+Voordat u letters publiceert of concepten opslaat op de publicatie-instantie, voert u de volgende stappen uit om de functie Opslaan als concept in te schakelen:
+
+1. Open Webconsoleconfiguratie voor uw server met behulp van de volgende URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+
+1. Zoeken en klikken op de knop **Bewerken** pictogram naast *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* instellen.
+
+1. In de *VersionRestoreManager-auteur-URL* -veld, geeft u de URL op voor de corresponderende instantie van de auteur.
+
+1. Klik op Opslaan .
+
+De *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen worden niet standaard overgedragen om instantie te publiceren. Als u het opnieuw laden van concepten bij een publicatie-instantie wilt inschakelen, zijn deze eigenschappen vereist voor de publicatie-instantie.
+
+Voor de overdracht *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen om instantie te publiceren, schakel de component uit als *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* bij de instantie Auteur die URL gebruikt:`http://server:port/system/console/components`
 
 Wanneer het opslaan van lettervarianten is ingeschakeld, kunt u kiezen waar u de lettervarianten wilt opslaan. Er zijn twee opties om de lettervarianten op te slaan: Lokaal opslaan of Extern opslaan.
 

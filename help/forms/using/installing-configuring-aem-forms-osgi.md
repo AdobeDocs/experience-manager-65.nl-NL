@@ -10,9 +10,9 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -105,6 +105,9 @@ Voordat u de mogelijkheid voor gegevensvastlegging van AEM Forms gaat installere
 
    * libicu
 
+* Installeren [Microsoft Visual Studio 2019 32-bits Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## AEM Forms-invoegtoepassing installeren {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat AEM Forms-gegevensvastlegging en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
@@ -124,7 +127,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
 ### (Vensters slechts) Automatische installatie van Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
-Als u een AEM instantie op opgeheven wijze installeert, zijn de ontbrekende Visual Studio redistributables automatisch geïnstalleerd tijdens de installatie van AEM Forms toe:voegen-op pakket.
+Als u een AEM instantie op opgeheven wijze installeert, zijn redistributables met 32 bits van Visual Studio automatisch geïnstalleerd tijdens de installatie van het toe:voegen-op pakket van AEM Forms.
 
 Om te evalueren als Visual Studio redistributables automatisch geïnstalleerd is, open `error.log` bestand beschikbaar op `/crx-repository/logs/` directory. De logboeken bevatten het volgende bericht:
 

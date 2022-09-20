@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3825'
 ht-degree: 0%
 
 ---
@@ -291,19 +291,29 @@ Dergelijke exemplaren kunnen alleen worden opgeslagen wanneer de brief in een pu
 
 ### Conceptfunctie opslaan inschakelen {#enable-save-draft-feature}
 
-Voordat u letters publiceert of concepten opslaat op de publicatie-instantie, voert u de volgende stappen uit om de functie Opslaan als concept in te schakelen:
+Voordat u letters publiceert of concepten opslaat op de publicatie-instantie, voert u de volgende stappen uit op de auteur- en publicatie-instantie om de functie Opslaan als concept in te schakelen:
 
-1. Open Webconsoleconfiguratie voor uw server met behulp van de volgende URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr.
+De *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen worden niet standaard overgedragen om instantie te publiceren. Voor de overdracht *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen om instantie te publiceren, schakel de [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component. De component uitschakelen:
 
-1. Zoeken en klikken op de knop **Bewerken** pictogram naast *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* instellen.
+1. Open de Adobe Experience Manager Web Console Components Console in de auteurinstantie. De standaard-URL is `http://author-server:port/system/console/components`
 
-1. In de *VersionRestoreManager-auteur-URL* -veld, geeft u de URL op voor de corresponderende instantie van de auteur.
+1. Zoeken naar **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component.
 
-1. Klik op Opslaan .
+1. Klikken ![Knop Uitschakelen](/help/forms/using/assets/enablebutton.png) pictogram om het [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
 
-De *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen worden niet standaard overgedragen om instantie te publiceren. Als u het opnieuw laden van concepten bij een publicatie-instantie wilt inschakelen, zijn deze eigenschappen vereist voor de publicatie-instantie.
+![Instantie van auteur](/help/forms/using/assets/replicationproperties.png)
 
-Voor de overdracht *cq:lastReplicationAction*, *cq:uitgerekt* en *cq:lastReplicatedBy* eigenschappen om instantie te publiceren, schakel de component uit als *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* bij de instantie Auteur die URL gebruikt:`http://server:port/system/console/components`
+Als u de functie Opslaan als concept wilt inschakelen, vervangt u de bestaande URL op [!UICONTROL VersionRestoreManager Author URL] met URL van uw auteurinstantie. De URL vervangen:
+
+1. Openen in de publicatie-instantie [!UICONTROL Aode Manager Web Console Configuration]. De standaard-URL is `https://publish-server:port/system/console/configMgr`
+
+1. Zoeken en openen **[!UICONTROL Correspondence Management - Author instance Version Restore configurations]** component.
+
+1. Zoek de **[!UICONTROL VersionRestoreManager Author URL]** en geeft u de URL voor de instantie van de auteur op.
+
+1. Klik op Opslaan.
+
+![Exemplaar publiceren](/help/forms/using/assets/correspondencemanagement.png)
 
 Wanneer het opslaan van lettervarianten is ingeschakeld, kunt u kiezen waar u de lettervarianten wilt opslaan. Er zijn twee opties om de lettervarianten op te slaan: Lokaal opslaan of Extern opslaan.
 
@@ -323,7 +333,7 @@ Deze optie is beschikbaar voor mensen die zich zorgen maken over het opslaan van
 
 #### Instellingen van de verwerkingsauteur opgeven {#specify-processing-author-settings}
 
-1. Open in AEM Adobe Experience Manager Web Console Configuration voor uw server met behulp van de volgende URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Open in AEM Adobe Experience Manager Web Console Configuration voor uw server met behulp van de volgende URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Configuratie Adobe Experience Manager-webconsole](assets/2configmanager.png)
 

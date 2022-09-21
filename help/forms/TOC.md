@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
+source-wordcount: '3814'
 ht-degree: 1%
 
 ---
@@ -330,7 +330,8 @@ ht-degree: 1%
 + AEM Forms integreren met Experience Cloud-oplossingen {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Gerichte ervaringen maken in AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [De doeltreffendheid en de conversie van formulieren meten en verbeteren](using/measure-improve-performance-forms-documents.md)
-   + [Analyses en rapporten configureren](using/configure-analytics-forms-documents.md)
+   + [Analyse met gebruik van Cloud Service Framework](using/configure-analytics-forms-documents.md)
+   + [Analyse met Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [AEM Forms-analyserapporten weergeven en begrijpen](using/view-understand-aem-forms-analytics-reports.md)
    + [A/B-test voor adaptieve formulieren maken en beheren](using/ab-testing-adaptive-forms.md)
 + AEM Forms publiceren en verwerken {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 1%
 + Problemen oplossen {#troubleshooting}
    + [Kan sommige formulierfuncties niet gebruiken met bepaalde versies van Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Extra stappen voor het ophalen van e-mail met bijlage voor de Adaptive Forms On JEE-versie](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

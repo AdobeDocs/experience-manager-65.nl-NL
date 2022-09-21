@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5288'
+source-wordcount: '5362'
 ht-degree: 0%
 
 ---
@@ -786,6 +786,15 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 * U kunt binnen 7 dagen na de eerste introductie van uw Adobe-product online gaan om een online activering en registratie te voltooien of een apparaat met internetverbinding en het serienummer van uw product gebruiken om dit proces te voltooien. Zie voor gedetailleerde instructies [Offlineactivering](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server
+
+Wanneer de gebruiker Word- of Excel-bestanden naar PDF probeert om te zetten op Microsoft Windows Server, wordt de volgende fout aangetroffen:
+
+*Foutbericht van de primaire converter: ALC-PDG-015-003-Het systeem kan het invoerbestand niet openen. Verzend het bestand opnieuw of neem contact op met de systeembeheerder.*
+
+Als u het probleem wilt oplossen, raadpleegt u [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## Volgende stappen {#next-steps}
 

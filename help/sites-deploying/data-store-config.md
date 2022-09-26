@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
+source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
 workflow-type: tm+mt
 source-wordcount: '3447'
 ht-degree: 0%
@@ -183,7 +183,7 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 1. Bewerk het bestand en voeg de configuratieopties toe die nodig zijn voor de installatie.
 1. Start AEM.
 
-### Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
+## Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
 
 Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
 
@@ -260,7 +260,7 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
  </tbody>
 </table>
 
-**DataStore in cache plaatsen**
+### DataStore in cache plaatsen {#data-store-caching}
 
 >[!NOTE]
 >
@@ -272,11 +272,11 @@ U kunt de cache ook offline upgraden met de `datastorecacheupgrade` opdracht van
 
 Het geheime voorgeheugen heeft een groottegrens en het kan worden gevormd door de cacheSize parameter te gebruiken.
 
-**Downloads**
+#### Downloads {#downloads}
 
 Het lokale geheime voorgeheugen zal op het verslag van het gevraagde dossier/blok worden gecontroleerd alvorens tot het van DataStore toegang te hebben. Wanneer het geheime voorgeheugen de gevormde grens overschrijdt (zie `cacheSize` (parameter) tijdens het toevoegen van een bestand aan de cache, worden een aantal bestanden uitgepakt om ruimte vrij te maken.
 
-**Asynchroon uploaden**
+#### Asynchroon uploaden {#async-upload}
 
 De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van het opvoeringsgeheime voorgeheugen. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door te gebruiken `stagingSplitPercentage` parameter. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 

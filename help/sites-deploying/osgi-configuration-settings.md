@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
+source-wordcount: '3511'
 ht-degree: 0%
 
 ---
@@ -59,8 +59,6 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 * De **Wachtwoord beheerder** moeten na de installatie worden gewijzigd om ervoor te zorgen dat [beveiliging](/help/sites-administering/security-checklist.md) van uw instantie.
 * Andere wijzigingen zouden niet nodig moeten zijn en er moet zorgvuldig op worden gelet dat ze de toegang tot de opslagplaats kunnen beïnvloeden.
-
-**Wiki Mail Service** Configureer de e-mailinstellingen voor e-mailberichten die door een wiki worden verzonden.
 
 **Apache Felix OSGi Management Console** Configureren:
 
@@ -447,10 +445,6 @@ Controls the HTML Parser for the CQ rewriter.
 **Day Commons JDBC-verbindingspool** Vorm toegang tot een extern gegevensbestand dat als bron voor inhoud wordt gebruikt.
 
 Dit is een Configuratie van de Fabriek, zodat kunnen de veelvoudige instanties worden gevormd.
-
-**Adobe CQ Media DPS-sessieservice** DPS-sessies beheren voor gebruik met publicaties.
-
-Met name kunt u de `dps.session.service.url.name`: standaard is ingesteld op [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN Rewriter** De communicatie tussen AEM en een CDN moet worden gewaarborgd zodat de activa/binaire getallen aan het eind - gebruiker op een veilige manier worden geleverd. Dit omvat twee taken:
 

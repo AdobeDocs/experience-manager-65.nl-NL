@@ -12,9 +12,9 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
+source-git-commit: b27a7a1cc2295b1640520dcb56be4f3eb4851499
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ De oak-query-engine ondersteunt de volgende talen:
 
 Met de op Apache Oak gebaseerde backend kunnen verschillende indexen in de repository worden aangesloten.
 
-Eén index is de **Eigenschapindex**, waarvoor de indexdefinitie in de opslagplaats zelf is opgeslagen.
+Eén index is de **Eigenschappenindex**, waarvoor de indexdefinitie is opgeslagen in de dataopslag zelf.
 
-Implementaties voor **Apache Lucene** en **Solr** zijn standaard ook beschikbaar, die allebei fullText indexing steunen.
+Implementaties voor **Apache Lucene** en **Solr** zijn ook beschikbaar door gebrek, die allebei fulltext indexeren steunen.
 
-De **Traversal Index** wordt gebruikt als er geen andere index beschikbaar is. Dit betekent dat de inhoud niet wordt geïndexeerd en de inhoudsknopen worden getransformeerd om gelijken aan de vraag te vinden.
+De **Traversal Index** wordt gebruikt als er geen andere indexeerfunctie beschikbaar is. Dit betekent dat de inhoud niet wordt geïndexeerd en de inhoudsknopen worden getransformeerd om gelijken aan de vraag te vinden.
 
 Als de veelvoudige indexeerders voor een vraag beschikbaar zijn, schat elke beschikbare indexeerder de kosten om de vraag uit te voeren. Eak kiest vervolgens de indexeerder met de laagste geschatte kosten.
 
@@ -68,44 +68,44 @@ Daarna, wordt elke index geraadpleegd om de kosten voor de vraag te schatten. Zo
 
 >[!NOTE]
 >
->Voor een grote opslagplaats is het bouwen van een index een tijdrovende bewerking. Dit geldt zowel voor het eerste ontwerp van een index als voor het opnieuw indexeren (het opnieuw samenstellen van een index nadat de definitie is gewijzigd). Zie ook [Problemen oplossen met eiken-indexen](/help/sites-deploying/troubleshooting-oak-indexes.md) en [Langzame re-indexering voorkomen](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Voor een grote opslagplaats is het bouwen van een index een tijdrovende bewerking. Dit geldt zowel voor het eerste ontwerp van een index als voor het opnieuw indexeren (het opnieuw samenstellen van een index nadat de definitie is gewijzigd). Zie ook [Probleemoplossing voor Oak-indexen](/help/sites-deploying/troubleshooting-oak-indexes.md) en [Langzame re-indexering voorkomen](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Als het opnieuw indexeren in zeer grote bewaarplaatsen nodig is, vooral wanneer het gebruiken van MongoDB en voor full-text indexen, overweeg tekst pre-extractie, en het gebruiken van eiken-looppas om de aanvankelijke index te bouwen en opnieuw te indexeren.
 
-Indexen worden geconfigureerd als knooppunten in de opslagplaats onder het knooppunt **oak:index**.
+De indexen worden gevormd als knopen in de bewaarplaats onder **eiken:index** knooppunt.
 
-Het type van de indexknoop moet **eak zijn:QueryIndexDefinition.** Verschillende configuratieopties zijn beschikbaar voor elke index als knoopeigenschappen. Voor meer informatie, zie de configuratiedetails voor elk hieronder indexeertype.
+Het type van de indexknoop moet zijn **eikel:QueryIndexDefinition.** Verschillende configuratieopties zijn beschikbaar voor elke index als knoopeigenschappen. Voor meer informatie, zie de configuratiedetails voor elk hieronder indexeertype.
 
 ### De eigenschappenindex {#the-property-index}
 
 De index van het Bezit is over het algemeen nuttig voor vragen die bezitsbeperkingen hebben maar niet full-text zijn. Het kan worden gevormd door de hieronder procedure te volgen:
 
-1. CRXDE openen door naar `http://localhost:4502/crx/de/index.jsp` te gaan
-1. Een nieuw knooppunt maken onder **eikel:index**
-1. Geef het knooppunt een naam **PropertyIndex** en stel het knooppunttype in op **oak:QueryIndexDefinition**
+1. CRXDE openen door naar `http://localhost:4502/crx/de/index.jsp`
+1. Een nieuw knooppunt maken onder **eiken:index**
+1. De node een naam geven **PropertyIndex** en stel het knooppunttype in op **eak:QueryIndexDefinition**
 1. Stel de volgende eigenschappen in voor het nieuwe knooppunt:
 
    * **type:**  `property` (van het type String)
-   * **propertyNames:**  `jcr:uuid` (van type Name)
+   * **propertyNames :**  `jcr:uuid` (van het type Name)
 
-   In dit voorbeeld wordt de eigenschap `jcr:uuid` geïndexeerd, waarvan de taak bestaat uit het beschikbaar maken van de universeel unieke id (UUID) van het knooppunt waaraan het is gekoppeld.
+   In dit voorbeeld wordt de index van `jcr:uuid` eigenschap, waarvan de taak is om de universeel unieke id (UUID) weer te geven van het knooppunt waaraan deze is gekoppeld.
 
 1. Sla de wijzigingen op.
 
 De index van het Bezit heeft de volgende configuratieopties:
 
-* De **type** eigenschap zal het type index specificeren, en in dit geval moet het worden geplaatst aan **property**
+* De **type** eigenschap geeft het type index op en in dit geval moet deze worden ingesteld op **eigenschap**
 
-* De **propertyNames** bezit wijst op de lijst van de eigenschappen die in de index zullen worden opgeslagen. Als het ontbreekt, zal de knoopnaam als waarde van de bezitsnaam van de naam worden gebruikt. In dit voorbeeld wordt de eigenschap **jcr:uuid** waarvan de taak is om de unieke id (UUID) van het knooppunt beschikbaar te maken, toegevoegd aan de index.
+* De **propertyNames** Deze eigenschap geeft de lijst met eigenschappen aan die in de index worden opgeslagen. Als het ontbreekt, zal de knoopnaam als waarde van de bezitsnaam van de naam worden gebruikt. In dit voorbeeld wordt **jcr:uuid** eigenschap waarvan de taak bestaat om de unieke id (UUID) van het bijbehorende knooppunt beschikbaar te maken, wordt toegevoegd aan de index.
 
-* De **unique** markering die, indien ingesteld op **true**, een unieke beperking toevoegt aan de eigenschapindex.
+* De **uniek** markering die, indien ingesteld op **true** voegt een unieke restrictie toe aan de eigenschapindex.
 
-* Met de eigenschap **DeclaringNodeTypes** kunt u een bepaald knooppunttype opgeven waarop de index alleen van toepassing is.
-* De **redex**-markering die, indien ingesteld op **true**, een volledige opnieuw indexering van de inhoud activeert.
+* De **declaringNodeTypes** Met eigenschap kunt u een bepaald knooppunttype opgeven waarop de index alleen van toepassing is.
+* De **hergroeperen** markering die indien ingesteld op **true**, wordt een volledige opnieuw indexering van de inhoud geactiveerd.
 
 ### De geordende index {#the-ordered-index}
 
-De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. Indexen van dit type moeten met [de Index van het Bezit van Lucene](#the-lucene-property-index) worden vervangen.
+De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. Indexen van dit type moeten worden vervangen door de [Eigenschappenindex van Lucene](#the-lucene-property-index).
 
 ### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
@@ -119,8 +119,8 @@ Omdat de index via een asynchrone achtergronddraad wordt bijgewerkt, zullen somm
 
 U kunt een volledig-tekstindex van Lucene vormen, door de hieronder procedure te volgen:
 
-1. Open CRXDE en creeer een nieuw knooppunt onder **eikel:index**.
-1. Noem de knoop **LuceneIndex** en plaats het knooptype aan **eak:QueryIndexDefinition**
+1. CRXDE openen en een nieuw knooppunt maken onder **eiken:index**.
+1. De node een naam geven **LuceneIndex** en stel het knooppunttype in op **eak:QueryIndexDefinition**
 1. Voeg de volgende eigenschappen toe aan het knooppunt:
 
    * **type:**  `lucene` (van het type String)
@@ -130,17 +130,17 @@ U kunt een volledig-tekstindex van Lucene vormen, door de hieronder procedure te
 
 De index van Lucene heeft de volgende configuratieopties:
 
-* De eigenschap **type** die het type index aangeeft, moet worden ingesteld op **lucene**
-* De **async** eigenschap die moet worden ingesteld op **async**. Hiermee wordt het indexupdateproces naar een achtergrondthread verzonden.
-* De eigenschap **includePropertyTypes** definieert welke subset van eigenschapstypen in de index wordt opgenomen.
-* De eigenschap **excludePropertyNames** die een lijst met eigenschapsnamen definieert - eigenschappen die van de index moeten worden uitgesloten.
-* De markering **redex** die bij instellen op **true** een volledige inhoudsherindex activeert.
+* De **type** eigenschap die het type index aangeeft, moet worden ingesteld op **luceen**
+* De **asynchroon** eigenschap die moet worden ingesteld op **asynchroon**. Hiermee wordt het indexupdateproces naar een achtergrondthread verzonden.
+* De **includePropertyTypes** eigenschap, die definieert welke subset van eigenschapstypen in de index worden opgenomen.
+* De **excludePropertyNames** eigenschap die een lijst met namen van eigenschappen definieert - eigenschappen die moeten worden uitgesloten van de index.
+* De **hergroeperen** markering die is ingesteld op **true**, wordt een volledige opnieuw indexering van de inhoud geactiveerd.
 
 ### De index van de eigenschap Lucene {#the-lucene-property-index}
 
-Sinds **Eak 1.0.8**, kan Lucene worden gebruikt om indexen tot stand te brengen die bezitsbeperkingen impliceren die niet full-text zijn.
+Sinds **Eik 1.0.8**, Lucene kan worden gebruikt om indexen tot stand te brengen die bezitsbeperkingen impliceren die niet full-text zijn.
 
-Om een Index van het Bezit van Lucene te bereiken moet **fulltextEnabled** bezit altijd aan vals worden geplaatst.
+Voor het verkrijgen van een geluidenindex **fulltextEnabled** eigenschap moet altijd worden ingesteld op false.
 
 Neem de volgende voorbeeldvraag:
 
@@ -148,7 +148,7 @@ Neem de volgende voorbeeldvraag:
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een nieuwe knoop onder **eikel:index:** te creëren
+Om een Index van het Bezit van Lucene voor de bovengenoemde vraag te bepalen, kunt u de volgende definitie toevoegen door een nieuwe knoop onder te creëren **eik:index:**
 
 * **Naam:** `LucenePropertyIndex`
 * **Type:** `oak:QueryIndexDefinition`
@@ -181,7 +181,7 @@ Voeg de volgende eigenschappen toe wanneer het knooppunt is gemaakt:
 
 >[!NOTE]
 >
->Voor specifiekere informatie over de Index van het Bezit van Lucene, zie [Apache Jackrabbit Oak Lucene documentatiepagina](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+>Voor meer specifieke informatie over de Index van het Bezit van de Luidspreker, zie [Documentatiepagina Apache Jackrabbit Oak Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 ### Luceenanalysatoren {#lucene-analyzers}
 
@@ -189,9 +189,9 @@ Sinds versie 1.2.0 ondersteunt eik Lucene-analysatoren.
 
 Analyzers worden zowel gebruikt wanneer een document, als bij vraagtijd wordt geïndexeerd. Een analysator controleert de tekst van gebieden en produceert een symbolische stroom. Luceenanalysatoren bestaan uit een reeks tokenizer- en filterklassen.
 
-De analysatoren kunnen worden geconfigureerd via de `analyzers`-node (van het type `nt:unstructured`) binnen de `oak:index`-definitie.
+De analyseapparatuur kan worden geconfigureerd via de `analyzers` node (type) `nt:unstructured`) in de `oak:index` definitie.
 
-De standaardanalysator voor een index wordt gevormd in `default` kind van de analysatordknoop.
+De standaardanalysator voor een index wordt gevormd in `default` onderliggend element van het knooppunt analyzers.
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -203,9 +203,9 @@ De standaardanalysator voor een index wordt gevormd in `default` kind van de ana
 
 Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens de onderstaande procedure:
 
-1. Zoek de index waarmee u de analysator wilt gebruiken onder het knooppunt `oak:index`.
+1. Zoek de index waarmee u de analysator wilt gebruiken onder de `oak:index` knooppunt.
 
-1. Maak onder de index een onderliggend knooppunt met de naam `default` van het type `nt:unstructured`.
+1. Onder de index maakt u een onderliggend knooppunt met de naam `default` van het type `nt:unstructured`.
 
 1. Voeg een eigenschap toe aan het standaardknooppunt met de volgende eigenschappen:
 
@@ -215,22 +215,22 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
 
    De waarde is de naam van de klasse Analyzer die u wilt gebruiken.
 
-   U kunt de analysator ook plaatsen om met een specifieke lucene versie te gebruiken door facultatieve `luceneMatchVersion` koordbezit te gebruiken. Een geldige synthax voor gebruik met Lucene 4.7 zou zijn:
+   U kunt ook instellen dat de analysator wordt gebruikt met een specifieke lucene-versie door de optionele `luceneMatchVersion` tekenreekseigenschap. Een geldige synthax voor gebruik met Lucene 4.7 zou zijn:
 
    * **Naam:** `luceneMatchVersion`
    * **Type:** `String`
    * **Waarde:** `LUCENE_47`
 
-   Als `luceneMatchVersion` niet wordt verstrekt, zal Oak de versie van Lucene gebruiken het met wordt verscheept.
+   Indien `luceneMatchVersion` niet wordt opgegeven, gebruikt Oak de versie van Lucene waarmee het wordt geleverd.
 
-1. Als u een stopwoordenbestand wilt toevoegen aan de configuraties van de analysator, kunt u onder `default` een nieuw knooppunt maken met de volgende eigenschappen:
+1. Als u een stopwoordenbestand wilt toevoegen aan de configuraties van de analysator, kunt u een nieuw knooppunt maken onder de `default` één met de volgende eigenschappen:
 
    * **Naam:** `stopwords`
    * **Type:** `nt:file`
 
 #### Analysatoren maken via compositie {#creating-analyzers-via-composition}
 
-Analysatoren kunnen ook worden samengesteld op basis van `Tokenizers`, `TokenFilters` en `CharFilters`. U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde zullen worden toegepast. Zie ook [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analysatoren kunnen ook op basis van `Tokenizers`, `TokenFilters` en `CharFilters`. U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde zullen worden toegepast. Zie ook [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Bekijk deze knooppuntstructuur als voorbeeld:
 
@@ -272,15 +272,15 @@ Bekijk deze knooppuntstructuur als voorbeeld:
 
 De naam van de filters, charFilters en tokenizers wordt gevormd door de fabrieksachtervoegsels te verwijderen. Aldus:
 
-* `org.apache.lucene.analysis.standard.StandardTokenizerFactory` wordt  `standard`
+* `org.apache.lucene.analysis.standard.StandardTokenizerFactory` wordt `standard`
 
-* `org.apache.lucene.analysis.charfilter.MappingCharFilterFactory` wordt  `Mapping`
+* `org.apache.lucene.analysis.charfilter.MappingCharFilterFactory` wordt `Mapping`
 
-* `org.apache.lucene.analysis.core.StopFilterFactory` wordt  `Stop`
+* `org.apache.lucene.analysis.core.StopFilterFactory` wordt `Stop`
 
 Elke configuratieparameter die voor de fabriek vereist is, wordt opgegeven als eigenschap van de desbetreffende code.
 
-Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt van het type `nt:file` voor het desbetreffende bestand te maken.
+Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt te maken van `nt:file` type voor het desbetreffende bestand.
 
 ### De zonne-index {#the-solr-index}
 
@@ -288,42 +288,13 @@ Het doel van de Solr-index is voornamelijk zoeken in volledige tekst, maar het k
 
 De integratie in AEM gebeurt op het niveau van de opslagplaats zodat Solr één van de mogelijke indexen is die in Oak kunnen worden gebruikt, de nieuwe opbergingsimplementatie die met AEM wordt verscheept.
 
-Het kan worden gevormd om als ingebedde server met de AEM instantie, of als verre server te werken.
-
-### AEM configureren met een ingesloten Solr-server {#configuring-aem-with-an-embedded-solr-server}
-
->[!CAUTION]
->
->Gebruik geen ingesloten Solr-server in een productieomgeving. Het mag alleen in een ontwikkelomgeving worden gebruikt.
-
-AEM kan met een ingebedde server van Solr worden gebruikt die via de Console van het Web kan worden gevormd. In dit geval wordt de Solr-server uitgevoerd in dezelfde JVM als de AEM-instantie waarin deze is ingesloten.
-
-U kunt de ingesloten Solr-server configureren door:
-
-1. Ga naar de webconsole op `https://serveraddress:4502/system/console/configMgr`
-1. Zoeken naar &quot;**Oak Solr server provider**&quot;.
-1. Druk op de bewerkknop en stel in het volgende venster het servertype in op **Ingesloten Solr** in de vervolgkeuzelijst.
-
-1. Vervolgens bewerkt u &quot;**Ingesloten serverconfiguratie**&quot; en maakt u een configuratie. Voor meer informatie over de configuratieopties gaat u naar de [Apache Solr-website](https://lucene.apache.org/solr/documentation.html).
-
-   >[!NOTE]
-   >
-   >De configuratie Solr home directory (solr.home.path) zoekt naar een map met dezelfde naam in de installatiemap AEM.
-
-1. Open CRXDE en meld u aan als Admin.
-1. Voeg een knooppunt met de naam **solrlndex** van het type **oak:QueryIndexDefinition** onder **eikel:index** toe met de volgende eigenschappen:
-
-   * **type:** `solr`(van het type String)
-   * **async:** `async`(van het type String)
-   * **redex:** `true`(van het type Boolean)
-
-1. Sla de wijzigingen op.
+Het kan worden gevormd om als verre server met de AEM instantie te werken.
 
 ### AEM configureren met één externe Solr-server {#configuring-aem-with-a-single-remote-solr-server}
 
 AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstantie:
 
-1. Download en extraheer de nieuwste versie van Solr. Raadpleeg de [documentatie bij de installatie van Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr) voor meer informatie over hoe u dit kunt doen.
+1. Download en extraheer de nieuwste versie van Solr. Raadpleeg de [Installatiedocumentatie van Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
 1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
 
    * Voor de eerste gedeelde map maakt u de map:
@@ -334,7 +305,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
-1. Zoek de voorbeeldinstantie in het Solr-pakket. De map bevindt zich gewoonlijk in de hoofdmap van het pakket. Deze map wordt &quot; `example`&quot; genoemd.
+1. Zoek de voorbeeldinstantie in het Solr-pakket. Het bevindt zich gewoonlijk in een map met de naam &quot; `example`&quot; in de hoofdmap van het pakket.
 1. Kopieer de volgende mappen van de voorbeeldinstantie naar de twee gedeelde mappen ( `aemsolr1\node1` en `aemsolr2\node2`):
 
    * `contexts`
@@ -346,35 +317,35 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
    * `webapps`
    * `start.jar`
 
-1. Maak in elk van de twee gedeelde mappen een nieuwe map met de naam &quot; `cfg`&quot;.
-1. Plaats uw Solr en Zookeeper configuratiedossiers in de pas gecreëerde `cfg` omslagen.
+1. Een nieuwe map maken met de naam &quot; `cfg`&quot; in elk van de twee gedeelde mappen.
+1. Plaats uw Solr en Zookeeper configuratiedossiers in nieuw gecreeerd `cfg` mappen.
 
    >[!NOTE]
    >
-   >Voor meer informatie over de configuratie van Solr en ZooKeeper, raadpleeg [Solr de documentatie van de Configuratie](https://wiki.apache.org/solr/ConfiguringSolr) en [Aan de slag ZooKeeper Gids](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Voor meer informatie over de configuratie Solr en ZooKeeper, raadpleeg [Solr Configuration-documentatie](https://wiki.apache.org/solr/ConfiguringSolr) en de [Aan de slag met ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
-1. Begin eerste shard met steun ZooKeeper door naar `aemsolr1\node1` te gaan en het volgende bevel in werking te stellen:
+1. Begin eerste shard met steun ZooKeeper door naar `aemsolr1\node1` en het uitvoeren van de volgende opdracht:
 
    ```xml
    java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
    ```
 
-1. Begin tweede shard door naar `aemsolr2\node2` te gaan en het volgende bevel in werking te stellen:
+1. De tweede delen starten door naar `aemsolr2\node2` en het uitvoeren van de volgende opdracht:
 
    ```xml
    java -Xmx2g -Djetty.port=7574 -DzkHost=localhost:9983 -jar start.jar
    ```
 
-1. Nadat beide kaarten zijn begonnen, test dat alles in werking is door met de interface Solr bij `http://localhost:8983/solr/#/` te verbinden
+1. Nadat beide kaarten zijn begonnen, test dat alles in werking is door met de Solr interface bij te verbinden `http://localhost:8983/solr/#/`
 1. AEM starten en naar de webconsole gaan op `http://localhost:4502/system/console/configMgr`
-1. Stel de volgende configuratie in onder **Configuratie externe server van onzichtbaar maken**:
+1. Stel de volgende configuratie in onder **Configuratie externe server van Oak Solr**:
 
    * HTTP-URL kiezen: `http://localhost:8983/solr/`
 
-1. Kies **Remote Solr** in de vervolgkeuzelijst onder **Oak Solr**-serverprovider.
+1. Kies **Externe zonne-energie** in de vervolgkeuzelijst onder **Eak Solr** serverprovider.
 
 1. Ga naar CRXDE en meld u aan als Admin.
-1. Maak een nieuw knooppunt met de naam **solrIndex** onder **eikel:index** en stel de volgende eigenschappen in:
+1. Een nieuw knooppunt maken met de naam **solrIndex** krachtens **eiken:index** en stel de volgende eigenschappen in:
 
    * **type:** solr (van het type String)
    * **async:** async (van het type String)
@@ -396,18 +367,18 @@ Aanbevolen Solr-configuratiebestanden
 
 AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Toolset van de Diensten van de Gemeenschappelijke Onderneming:
 
-1. **Verklaar Vraag**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
-1. **De Manager** van de Index van het eiken, een Gebruikersinterface van het Web voor het handhaven van bestaande indexen.
+1. **Query uitvoeren**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
+1. **Indexbeheer voor onak**, een gebruikersinterface van het Web voor het handhaven van bestaande indexen.
 
-U kunt hen nu bereiken door naar **Hulpmiddelen - Verrichtingen - Dashboard - Diagnose** van het AEM Welkome scherm te gaan.
+Je kunt ze nu bereiken door naar **Gereedschappen - Bewerkingen - Dashboard - Diagnose** in het welkomstscherm AEM.
 
-Voor meer informatie over hoe te om hen te gebruiken, zie [de documentatie van het Dashboard van Verrichtingen](/help/sites-administering/operations-dashboard.md).
+Zie voor meer informatie over het gebruik ervan de [Documentatie van het operatiedashboard](/help/sites-administering/operations-dashboard.md).
 
 #### Eigenschapindexen maken via OSGi {#creating-property-indexes-via-osgi}
 
 Het ACS-gemeenschappelijke pakket stelt ook configuraties OSGi bloot die kunnen worden gebruikt om bezitsindexen tot stand te brengen.
 
-U kunt tot het van de Console van het Web toegang hebben door &quot;**te zoeken verzekert de Index van het Bezit van het Eik**&quot;.
+U kunt het van de Console van het Web toegang hebben door &quot;**Onjuiste eigenschappenindex**&quot;.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -419,19 +390,19 @@ In dit deel wordt een aantal aanbevelingen gedaan over wat er moet gebeuren om d
 
 #### Foutopsporingsinfo voorbereiden voor analyse {#preparing-debugging-info-for-analysis}
 
-De gemakkelijkste manier om vereiste informatie voor de vraag te krijgen die wordt uitgevoerd is via [het hulpmiddel van de Vraag ](/help/sites-administering/operations-dashboard.md#explain-query) verklaren. Dit zal u toelaten om de nauwkeurige informatie te verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
+De eenvoudigste manier om de vereiste informatie voor de uitgevoerde query op te halen is via de [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query). Dit zal u toelaten om de nauwkeurige informatie te verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
 
 Als dit om welke reden dan ook niet mogelijk is, kunt u de indexerende logboeken in één enkel dossier verzamelen en het gebruiken om uw bepaald probleem problemen op te lossen.
 
 #### Logboekregistratie inschakelen {#enable-logging}
 
-Om registreren toe te laten, moet u **DEBUG** niveaulogboeken voor de categorieën toelaten die op het indexeren van eikel en vragen betrekking hebben. Deze categorieën zijn:
+Om registreren toe te laten, moet u toelaten **DEBUG** niveaulogboeken voor de categorieën die betrekking hebben op het indexeren van eikels en vragen. Deze categorieën zijn:
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-De **com.day.cq.search** categorie is slechts van toepassing als u het AEM verstrekte nut QueryBuilder gebruikt.
+De **com.day.cq.search** de categorie is slechts van toepassing als u het AEM verstrekte nut QueryBuilder gebruikt.
 
 >[!NOTE]
 >
@@ -440,18 +411,18 @@ De **com.day.cq.search** categorie is slechts van toepassing als u het AEM verst
 U kunt registreren toelaten door deze procedure te volgen:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/slinglog`
-1. Klik **Nieuwe Logger** knoop in het lagere deel van de console toevoegen.
-1. Voeg de bovenstaande categorieën toe aan de zojuist gemaakte rij. U kunt het **+** teken gebruiken om meer dan één categorie aan één enkel registreerapparaat toe te voegen.
-1. Kies **DEBUG** in de vervolgkeuzelijst **Logniveau**.
-1. Stel het uitvoerbestand in op `logs/queryDebug.log`. Hierdoor worden alle DEBUG-gebeurtenissen samengevoegd tot één logbestand.
+1. Klik op de knop **Nieuwe aanmelding toevoegen** in het onderste gedeelte van de console.
+1. Voeg de bovenstaande categorieën toe aan de zojuist gemaakte rij. U kunt de **+** teken om meer dan één categorie aan één registreerapparaat toe te voegen.
+1. Kies **DEBUG** van de **Logboekniveau** vervolgkeuzelijst.
+1. Het uitvoerbestand instellen op `logs/queryDebug.log`. Hierdoor worden alle DEBUG-gebeurtenissen samengevoegd tot één logbestand.
 1. Voer de query uit of geef de pagina weer die de query gebruikt die u wilt debuggen.
-1. Zodra u de vraag hebt uitgevoerd, ga terug naar de registrerenconsole en verander het logboekniveau van nieuw gecreeerd registreerapparaat in **INFO**.
+1. Zodra u de vraag hebt uitgevoerd, ga terug naar de registrerenconsole en verander het logboekniveau van pas gecreeerd registreerapparaat in **INFO**.
 
 #### Indexconfiguratie {#index-configuration}
 
 De manier de vraag wordt geëvalueerd wordt grotendeels beïnvloed door de indexconfiguratie. Het is belangrijk om de indexconfiguratie te krijgen om worden geanalyseerd of naar steun worden verzonden. U kunt de configuratie ophalen als een inhoudspakket of een JSON-uitvoering ophalen.
 
-Aangezien in de meeste gevallen, de het indexeren configuratie onder de `/oak:index` knoop in CRXDE wordt opgeslagen, kunt u de versie JSON bij krijgen:
+Aangezien in de meeste gevallen, de indexeringsconfiguratie onder wordt opgeslagen `/oak:index` in CRXDE kunt u de JSON-versie ophalen op:
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 
@@ -486,5 +457,5 @@ U kunt ook geconsolideerde JMX-uitvoer opgeven via `https://serveraddress:port/s
 
 U kunt extra details verzamelen helpen het probleem oplossen, zoals:
 
-1. De eikversie waarop uw instantie wordt uitgevoerd. U kunt dit zien door CRXDE te openen en de versie in de lagere juiste hoek van de welkomstpagina te bekijken, of door de versie van `org.apache.jackrabbit.oak-core` bundel te controleren.
+1. De eikversie waarop uw instantie wordt uitgevoerd. U kunt dit zien door CRXDE te openen en de versie in de rechterbenedenhoek van de welkomstpagina te bekijken, of door de versie van de `org.apache.jackrabbit.oak-core` bundel.
 1. De Foutopsporingsoutput QueryBuilder van de lastige vraag. De debugger kan worden betreden bij: `https://serveraddress:port/libs/cq/search/content/querydebug.html`

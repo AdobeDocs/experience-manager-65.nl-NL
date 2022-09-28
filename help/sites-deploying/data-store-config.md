@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
+source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 0%
+source-wordcount: '3583'
+ht-degree: 1%
 
 ---
 
@@ -204,24 +204,55 @@ Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1
 1. De jar-bestanden kopiëren naar **&lt;aem-install>**/crx-quickstart/install/15 in de AEM installatiemap.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
 
-U kunt het configuratiebestand gebruiken met de volgende opties:
+U kunt het configuratiebestand gebruiken met de opties die hieronder worden beschreven.
 
-* accessKey: De AWS-toegangstoets.
-* geheimaand: De geheime toegangssleutel van AWS. **Opmerking:** Wanneer de `accessKey` of `secretKey` wordt niet opgegeven, wordt de [IAM-rol](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) wordt gebruikt voor verificatie.
-* s3Bucket: De naam van het emmertje.
-* s3Region: Het emmergebied.
-* pad: Het pad van de gegevensopslag. De standaardwaarde is **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
-* minRecordLength: De minimale grootte van een object dat in de gegevensopslag moet worden opgeslagen. De minimum/standaard is **16 kB.**
-* maxCachedBinarySize: Binaire bestanden met een grootte kleiner dan of gelijk aan deze grootte worden opgeslagen in de geheugencache. De grootte is in bytes. De standaardwaarde is **17408 **(17 KB).
+<!--
+* accessKey: The AWS access key.
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
+* s3Bucket: The bucket name.
+* s3Region: The bucket region.
+* path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
+* minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
+* maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
+* cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
+* secret: Only to be used if using binaryless replication for shared datastore setup.
+* stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
+* uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
+* stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
+* stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
+-->
 
-* cacheSize: De grootte van de cache. De waarde wordt opgegeven in bytes. De standaardwaarde is **64 GB**.
-* geheim: Slechts te gebruiken als het gebruiken van binaryless replicatie voor gedeelde datastore opstelling.
-* stagingSplitPercentage: Het percentage van geheim voorgeheugengrootte die wordt gevormd om voor het opvoeren van asynchrone uploads te worden gebruikt. De standaardwaarde is **10**.
-* uploadThreads: Het aantal uploadthreads dat wordt gebruikt voor asynchrone uploads. De standaardwaarde is **10**.
-* stagingPurgeInterval: Het interval in seconden voor het leegmaken van voltooide uploads uit het opvoeren geheime voorgeheugen. De standaardwaarde is **300** seconden (5 minuten).
-* stagingRetryInterval: Het interval voor opnieuw proberen in seconden voor mislukte uploads. De standaardwaarde is **600** seconden (10 minuten).
+### Opties voor S3-connectorconfiguratiebestand {#s3-connector-configuration-file-options}
 
-### Opties voor Emmergebied {#bucket-region-options}
+>[!NOTE]
+>
+>De S3 schakelaar steunt zowel IAM gebruikersauthentificatie als IAM rolauthentificatie. Om IAM rolauthentificatie te gebruiken, laat weg `accessKey` en `secretKey` waarden uit het configuratiebestand. De S3 schakelaar zal dan aan [IAM-rol](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) toegewezen aan de instantie.
+
+| Sleutel | Beschrijving | Standaard | Vereist |
+| --- | --- | --- | --- |
+| accessKey | Toegang tot sleutel-id voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
+| geheimeKey | Geheime toegangstoets voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
+| cacheSize | De grootte (in bytes) van de lokale cache. | 64 GB | Nee. |
+| connectionTimeout | Stel de hoeveelheid tijd in die moet worden gewacht (in milliseconden) voordat u de time-out verlaat wanneer u een verbinding maakt. | 10000 | Nee. |
+| maxCachedBinarySize | Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze waarde (in bytes) worden opgeslagen in de geheugencache. | 17408 (17 kB) | Nee. |
+| maxConnections | Stel het maximum aantal toegestane open HTTP-verbindingen in. | 50 | Nee. |
+| maxErrorRetry | Stel het maximumaantal pogingen voor mislukte (opvraagbare) aanvragen in. | 3 | Nee. |
+| minRecordLength | De minimale grootte van een object (in bytes) die moet worden opgeslagen in de gegevensopslag. | 16384 | Nee. |
+| path | Het lokale pad van de AEM datastore. | `crx-quickstart/repository/datastore` | Nee. |
+| proxyHost | Stel de optionele proxyhost in waarmee de client verbinding maakt. |  | Nee. |
+| proxyPort | Stel de optionele proxypoort in waarmee de client verbinding maakt. |  | Nee. |
+| s3Bucket | Naam van het S3 emmertje. |  | Ja |
+| s3EndPoint | S3 REST API-eindpunt. |  | Nee. |
+| s3Region | Regio waar de emmer zich bevindt. Zie dit [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) voor meer informatie . | Regio waar AWS-instantie wordt uitgevoerd. | Nee. |
+| socketTimeout | Stel in hoeveel tijd (in milliseconden) moet worden gewacht voordat gegevens via een gevestigde, open verbinding worden overgebracht en deze verbinding wordt gesloten. | 50000 | Nee. |
+| stagingPurgeInterval | Het interval (in seconden) voor het leegmaken van voltooide uploads vanaf de testcache. | 300 | Nee. |
+| stagingRetryInterval | Het interval (in seconden) om mislukte uploads opnieuw te proberen. | 600 | Nee. |
+| stagingSplitPercentage | Het percentage van `cacheSize` te gebruiken voor het opvoeren van asynchrone uploads. | 10 | Nee. |
+| uploadThreads | Het aantal uploadthreads dat wordt gebruikt voor asynchrone uploads. | 10 | Nee. |
+| writeThreads | Het aantal gezamenlijke draden die voor het schrijven via S3 Manager van de Overdracht worden gebruikt. | 10 | Nee. |
+
+<!---
+### Bucket region options {#bucket-region-options}
 
 <table>
  <tbody>
@@ -230,19 +261,19 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
    <td><code>us-standard</code></td>
   </tr>
   <tr>
-   <td>VS West</td>
+   <td>US West</td>
    <td><code>us-west-2</code></td>
   </tr>
   <tr>
-   <td>US West (Noord-Californië)</td>
+   <td>US West (Northern California)</td>
    <td><code>us-west-1</code></td>
   </tr>
   <tr>
-   <td>EU (Ierland)<br /> </td>
+   <td>EU (Ireland)<br /> </td>
    <td><code>EU</code></td>
   </tr>
   <tr>
-   <td>Azië in de Stille Oceaan (Singapore)<br /> </td>
+   <td>Asia Pacific (Singapore)<br /> </td>
    <td><code>ap-southeast-1</code></td>
   </tr>
   <tr>
@@ -250,15 +281,16 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
    <td><code>ap-southeast-2</code></td>
   </tr>
   <tr>
-   <td>Azië, Stille Oceaan (Tokio)</td>
+   <td>Asia Pacific (Tokyo)</td>
    <td><code>ap-northeast-1</code></td>
   </tr>
   <tr>
-   <td>Zuid-Amerika (Sao Paolo)<br /> </td>
+   <td>South America (Sao Paolo)<br /> </td>
    <td><code>sa-east-1</code></td>
   </tr>
  </tbody>
 </table>
+-->
 
 ### DataStore in cache plaatsen {#data-store-caching}
 

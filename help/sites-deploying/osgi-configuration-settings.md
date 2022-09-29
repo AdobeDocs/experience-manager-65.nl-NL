@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
-source-wordcount: '3511'
+source-wordcount: '3474'
 ht-degree: 0%
 
 ---
@@ -243,11 +243,6 @@ Als een gevormde wegwaarde met een schuine streep beëindigt, wordt de volledige
 * **Scriptgebruiker** - deze optionele eigenschap kan de gegevensopslaggebruikersaccount opgeven die wordt gebruikt voor het lezen van de scripts. Als er geen account is opgegeven, `admin` gebruiker wordt standaard gebruikt.
 
 * **Standaardextensies** De lijst met extensies waarvoor het standaardgedrag wordt gebruikt. Dit betekent dat het laatste wegsegment van het middeltype als manuscriptnaam kan worden gebruikt.
-
-**Day Commons GFX Font Helper** Bij het renderen van afbeeldingen kunt u met DrawText tekst insluiten. Hiervoor kunt u ook uw eigen lettertypen installeren:
-
-* Definieer de **Lettertypepad** om te worden gezocht naar projectspecifieke doopvonten.
-Bijvoorbeeld, `/apps/myapp/fonts`.
 
 **Apache HTTP Components Proxy Configuration** Proxyconfiguratie voor alle code die de Apache HTTP-client gebruikt, die wordt gebruikt wanneer een HTTP wordt gemaakt. bijvoorbeeld bij replicatie.
 

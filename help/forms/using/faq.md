@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
+source-git-commit: a90ea57142110ebd11a8a9580c29df1698b8dce1
 workflow-type: tm+mt
-source-wordcount: '1995'
+source-wordcount: '2005'
 ht-degree: 0%
 
 ---
@@ -103,11 +103,11 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Worden vAlign- en hAlign-kenmerken ondersteund in HTML-formulieren?
 
-   Ja, de kenmerken vAlign en hAlign worden ondersteund. Het kenmerk vAlign wordt niet ondersteund in Internet Explorer en in velden met meerdere regels.
+   Antwoord: Ja, de kenmerken vAlign en hAlign worden ondersteund. Het kenmerk vAlign wordt niet ondersteund in Internet Explorer en in velden met meerdere regels.
 
 1. Ondersteunt HTML5-formulieren Hebreeuwse tekens?
 
-   HTML5-formulieren ondersteunen Hebreeuwse tekens in alle browsers behalve Microsoft Internet Explorer.
+   Antwoord: HTML5-formulieren ondersteunen Hebreeuwse tekens in alle browsers behalve Microsoft Internet Explorer.
 
 1. Hebben HTML5-formulieren enige beperkingen op het numerieke veld?
 
@@ -115,7 +115,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom zijn HTML-formulieren groter dan PDF forms?
 
-   Er zijn veel tussenliggende gegevensstructuren en -objecten vereist, zoals formulierdom, gegevensdom en indelingsdom, om een XDP-bestand naar een HTML-formulier te renderen.
+   Antwoord: Er zijn veel tussenliggende gegevensstructuren en -objecten vereist, zoals formulierdom, gegevensdom en indelingsdom, om een XDP-bestand naar een HTML-formulier te renderen.
 
    Voor PDF forms beschikt Adobe Acrobat over een ingebouwde XTG-engine voor het maken van tussenliggende gegevensstructuren en objecten. Acrobat houdt zich ook bezig met layout en scripts.
 
@@ -142,12 +142,13 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Wat is de leesvolgorde van knopinfo en bijschrift voor schermlezers?
 
+   Antwoord:
    * Als zowel het bijschrift als de knopinfo aanwezig zijn, wordt het enige bijschrift gelezen. Als het bijschrift niet beschikbaar is, wordt de knopinfo gelezen. U kunt ook de prioriteit voor het lezen in een XDP opgeven met behulp van formulierontwerper
    * Wanneer u de muisaanwijzer op een element plaatst, wordt knopinfo weergegeven. Als knopinfo niet beschikbaar is, wordt spraaktekst weergegeven. Als de spraaktekst niet beschikbaar is, wordt de veldnaam weergegeven.
 
 1. Wanneer u de cursor op een veld plaatst, wordt knopinfo weergegeven. Hoe kan ik het uitschakelen?
 
-   Als u knopinfo wilt uitschakelen wanneer u de muisaanwijzer aanwijst, selecteert u Geen in het deelvenster Toegankelijkheid van Designer.
+   Antwoord: Als u knopinfo wilt uitschakelen wanneer u de muisaanwijzer aanwijst, selecteert u Geen in het deelvenster Toegankelijkheid van Designer.
 
 1. In Designer kan een gebruiker aangepaste weergave-eigenschappen van keuzerondjes en selectievakjes configureren. Wordt bij het weergeven van formulieren rekening gehouden met dergelijke aangepaste weergave-eigenschappen in HTML5-formulieren?
 
@@ -155,7 +156,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Wanneer een HTML5-formulier wordt geopend in een ondersteunde browser, wordt de rand van de aangrenzende velden niet goed uitgelijnd of lijken subformulieren elkaar te overlappen. Als in Forms Designer een voorbeeld wordt weergegeven van hetzelfde HTML5-formulier, worden de velden en indeling niet verkeerd uitgelijnd weergegeven en worden de subformulieren op de juiste positie weergegeven. Hoe los je het probleem op?
 
-   Wanneer een subformulier is ingesteld op Stroominhoud en het subformulier heeft een verborgen randelement, wordt de rand van de velden die ernaast worden geplaatst, niet correct uitgelijnd of worden subformulieren overlapt. Als u het probleem wilt verhelpen, kunt u de verborgen &lt;border> elementen van de overeenkomstige XDP. Het volgende wordt bijvoorbeeld &lt;border> element is gemarkeerd als opmerking:
+   Antwoord: Wanneer een subformulier is ingesteld op Stroominhoud en het subformulier heeft een verborgen randelement, wordt de rand van de velden die ernaast worden geplaatst, niet correct uitgelijnd of worden subformulieren overlapt. Als u het probleem wilt verhelpen, kunt u de verborgen &lt;border> elementen van de overeenkomstige XDP. Het volgende wordt bijvoorbeeld &lt;border> element is gemarkeerd als opmerking:
 
    ```xml
                <!--<border>
@@ -166,7 +167,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom schermlezers niet correct werken met het datum-/tijdveldobject?
 
-   Schermlezers ondersteunen geen datum-/tijdvelden. U kunt echter handmatig datum/tijd invoeren in het veld om de schermlezer de datum/tijd te laten lezen. Gebruik knopinfo of schermlezertekst om de gebruiker op te dragen handmatig datum/tijd voor het veld te selecteren.
+   Antwoord: Schermlezers ondersteunen geen datum-/tijdvelden. U kunt echter handmatig datum/tijd invoeren in het veld om de schermlezer de datum/tijd te laten lezen. Gebruik knopinfo of schermlezertekst om de gebruiker op te dragen handmatig datum/tijd voor het veld te selecteren.
 
 1. Ondersteunt HTML5-formulieren weergavepatronen voor zwevende velden?
 
@@ -192,12 +193,13 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
 1. Is er een aanbevolen naamgevingsconventie en zijn er gereserveerde trefwoorden die moeten worden vermeden?
 
+   Antwoord:
    * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet te laten beginnen met een onderstrepingsteken (_). Als u het onderstrepingsteken aan het begin van de naam wilt gebruiken, voegt u een voorvoegsel toe na het onderstrepingsteken._&lt;prefix>&lt;objectname>.
    * Alle HTML5 formulieren-API&#39;s zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [API&#39;s voor HTML5-formulieren](/help/forms/using/scripting-support.md).
 
 1. Biedt HTML5-formulieren ondersteuning voor zwevende velden?
 
-   Ja, HTML5 Forms ondersteunt zwevende velden. Als u zwevende velden wilt inschakelen, voegt u de volgende eigenschap toe aan het renderprofiel:
+   Antwoord: Ja, HTML5 Forms ondersteunt zwevende velden. Als u zwevende velden wilt inschakelen, voegt u de volgende eigenschap toe aan het renderprofiel:
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ Antwoord: Het veld Datum accepteert de ISO-indeling YYYY-MM-DD. Als u een datum 
 
 1. Voeren HTML5-formulieren het initialisatiescript en de gebeurtenis form ready meerdere keren uit?
 
-   Ja, de initialisatiescripts en form ready-gebeurtenissen worden meerdere keren uitgevoerd, ten minste één keer op de server en één keer op de client. Er wordt voorgesteld om scripts als initialize of form:ready-gebeurtenissen te schrijven op basis van bepaalde bedrijfslogica (formulier- of veldgegevens), zodat de actie wordt uitgevoerd op basis van de status van de gegevens en de epidemische waarde (als de gegevens identiek zijn).
+   Antwoord: Ja, de initialisatiescripts en form ready-gebeurtenissen worden meerdere keren uitgevoerd, ten minste één keer op de server en één keer op de client. Er wordt voorgesteld om scripts als initialize of form:ready-gebeurtenissen te schrijven op basis van bepaalde bedrijfslogica (formulier- of veldgegevens), zodat de actie wordt uitgevoerd op basis van de status van de gegevens en de epidemische waarde (als de gegevens identiek zijn).
 
 ### XDP ontwerpen {#designing-xdp}
 

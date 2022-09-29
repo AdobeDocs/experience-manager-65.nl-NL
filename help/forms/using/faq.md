@@ -12,7 +12,7 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 0%
@@ -99,7 +99,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom worden sommige lettertypen in het HTML-formulier anders weergegeven dan de lettertypen die bij het ontwerpen van het formulier worden gebruikt?
 
-   Antwoord: In HTML5-formulieren worden geen fonts ingesloten (in tegenstelling tot PDF forms waarin fonts in het formulier zijn ingesloten). Zorg ervoor dat de in de XDP opgegeven fonts beschikbaar zijn op de server en op de clientcomputer, zodat de HTML-versie van het formulier naar behoren wordt weergegeven. Als de vereiste lettertypen niet beschikbaar zijn op de server, worden er vervangende lettertypen gebruikt. Bovendien worden standaardlettertypen van de browser gebruikt om de tekst weer te geven als u lettertypen in formuliersjablonen gebruikt die niet beschikbaar zijn op het clientapparaat.
+   Antwoord: HTML5 Forms staat het insluiten van fonts niet toe (in tegenstelling tot PDF forms waarin fonts in het formulier zijn ingesloten). Zorg ervoor dat de HTML-versie van een formulier beschikbaar is in de CRX Repository (AEM Content Repository) van de AEM Forms-server en op de computer waarop Designer is AEM geïnstalleerd, zodat de-versie van het formulier naar behoren wordt weergegeven. Als de lettertypen niet beschikbaar zijn in de CRX-opslagruimte van uw AEM Forms-server of op de locatie waar AEM Designer is geïnstalleerd, wordt het formulier weergegeven met terugvallettertypen.
 
 1. Worden vAlign- en hAlign-kenmerken ondersteund in HTML-formulieren?
 

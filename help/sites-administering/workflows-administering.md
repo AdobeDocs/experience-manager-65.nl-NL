@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
+source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    * Workflowmodel: Een workflowmodel selecteren
    * Geadresseerde: Een werkstroomontvanger selecteren
    * Type: Taak, workflowitem of workflowfout
-   * Taakstatus: Actief, volledig of beëindigd
+   * Taakstatus: Actief, Volledig of Beëindigd
    * Waar ik ben: Eigenaar EN gemachtigde, alleen eigenaar, alleen gevolmachtigde
    * Begindatum: Begindatum voor of na een opgegeven datum
    * Einddatum: Einddatum voor of na een opgegeven datum
@@ -98,13 +98,13 @@ Wanneer een werkstroom mislukt, AEM de **Mislukt** console om u toe te staan om 
 
 * **Foutgegevens**
 Hiermee opent u een venster waarin de 
-**Foutbericht**, **Stap** en **Stapel mislukt**.
+**Foutbericht**, **Stap**, en **Stapel mislukt**.
 
 * **Historie openen**
 Geeft details van de workflowgeschiedenis weer.
 
 * **Stap opnieuw proberen** Hiermee wordt de componentinstantie Scriptstap opnieuw uitgevoerd. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindigen** Beëindig de workflow als de fout heeft geleid tot een onherstelbare situatie voor de workflow. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagruimte die niet langer geldig is voor de werkstroominstantie.
+* **Beëindigen** Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
 * **Beëindigen en opnieuw proberen** Vergelijkbaar met **Beëindigen** behalve dat een nieuwe werkschemainstantie gebruikend de originele lading, de titel, en de beschrijving is begonnen.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
@@ -159,7 +159,7 @@ Om de dienst te vormen, kunt u gebruiken [Webconsole](/help/sites-deploying/conf
   <tr>
    <td>Te wissen modellen</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>De id van de workflowmodellen die moeten worden gewist. De id is het pad naar het modelknooppunt, bijvoorbeeld:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Geef geen waarde op om instanties van alle workflowmodellen leeg te maken.</p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> </td>
+   <td><p>De id van de workflowmodellen die moeten worden gewist. De id is het pad naar het modelknooppunt, bijvoorbeeld:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> <p>Geef geen waarde op om instanties van alle workflowmodellen leeg te maken.</p> </td>
   </tr>
   <tr>
    <td>Werkstroomleeftijd</td>
@@ -193,7 +193,7 @@ Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft d
 
 De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering blijft behouden in de metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
 
-In de onderstaande afbeelding ziet u hoe u de markering op een workflow moet instellen.
+In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 

@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
+source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
 workflow-type: tm+mt
-source-wordcount: '5868'
+source-wordcount: '5901'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,12 @@ Ga als volgt te werk om versies van een website te wissen:
 Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld 
 `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >Het wordt ten zeerste aanbevolen dat u voor elk van uw websites meerdere paden definieert.
+      >
+      >Als u een pad met te veel onderliggende items definieert, duurt het langer om het pad leeg te maken.
+
    * **Versies recursief wissen**
 
       * Schakel deze optie uit als u alleen het knooppunt dat door het pad wordt gedefinieerd, wilt leegmaken.
@@ -173,7 +179,7 @@ In dit proces worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het
 Bovendien verstrekt de console nuttige informatie over de versies:
 
 * `V 1.0`: het versienummer.
-* `V 1.0.1`&#42;: de ster geeft aan dat de versie de huidige versie is.
+* `V 1.0.1`&#42;: de ster geeft aan dat de versie de huidige (basis)versie is en niet kan worden gewist.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: de datum van de versie.
 

@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
 workflow-type: tm+mt
-source-wordcount: '5866'
+source-wordcount: '5868'
 ht-degree: 0%
 
 ---
@@ -100,48 +100,68 @@ Deze sectie behandelt onderhoudswerkzaamheden met betrekking tot de versieeigens
 
 ### Overzicht {#overview}
 
-De **Purperen** is beschikbaar in het dialoogvenster **[Gereedschappen](/help/sites-administering/tools-consoles.md) console** krachtens **Versioning** of rechtstreeks bij:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Startpad** Een absoluut pad waarop moet worden gewist. U kunt het Startpad selecteren door op de boomnavigator in de repository te klikken.
-
-**Recursief** Bij het wissen van gegevens kunt u kiezen tussen het uitvoeren van de bewerking op één knooppunt of op een hele hiërarchie door Recursive te selecteren. In het laatste geval definieert het opgegeven pad het basisknooppunt van de hiërarchie.
-
-**Maximale aantal versies om te behouden** Het maximum aantal versies dat voor een knooppunt moet worden bewaard. Wanneer dit getal deze waarde overschrijdt, worden de oudste versies gewist.
-
-**Maximale versieleeftijd** De maximumleeftijd van de versie van een knooppunt. Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt het leeggemaakt.
-
-**Droog** Omdat het verwijderen van versies van uw inhoud definitief is en niet kan worden hersteld zonder een back-up te herstellen, biedt het gereedschap Versies wissen een modus voor droog uitvoeren waarmee u een voorvertoning van de gezuiverde versies kunt weergeven. Klik op Droog uitvoeren om een droge run van het zuiveringsproces te starten.
-
-**Leegmaken** Start het leegmaken van de versies op het knooppunt dat wordt gedefinieerd door het beginpad.
+De **Purperen** is beschikbaar als wekelijkse onderhoudstaak. Alvorens het voor het eerst te gebruiken moet het worden toegevoegd, dan gevormd. Daarna kan het op verzoek of wekelijks worden uitgevoerd.
 
 ### Versies van een website wissen {#purging-versions-of-a-web-site}
 
 Ga als volgt te werk om versies van een website te wissen:
 
-1. Ga naar de **[Gereedschappen](/help/sites-administering/tools-consoles.md)** **console**, selecteert u **Versioning** en dubbelklikken **Leeg versies.**
-1. Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld `/content/geometrixx-outdoors`).
+1. Ga naar de **[Gereedschappen](/help/sites-administering/tools-consoles.md)** **console**, selecteert u **Bewerking**, **Onderhoud** vervolgens **Wekelijks onderhoudvenster**.
 
-   * Als u het knooppunt dat door het pad wordt gedefinieerd alleen wilt leegmaken, schakelt u de optie **Recursief**.
-   * Als u het knooppunt dat door het pad en de onderliggende knooppunten wordt gedefinieerd, wilt leegmaken, selecteert u **Recursief**.
+1. Selecteren **+ Toevoegen** in de bovenste werkbalk.
 
-1. Stel het maximumaantal versies (voor elk knooppunt) in dat u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
+   ![Versie wissen toevoegen](assets/version-purge-add.png)
 
-1. Stel de maximale versiepagina in dagen in (voor elk knooppunt) die u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
+1. Selecteren **Versie wissen** in de vervolgkeuzelijst in het dialoogvenster **Nieuwe taak toevoegen** . Vervolgens **Opslaan**.
 
-1. Klikken **Droog** om te bekijken wat het leegmaken zou doen.
-1. Klikken **Leegmaken** om het proces te starten.
+   ![Versie wissen toevoegen](assets/version-purge-add-new-task.png)
+
+1. De **Versie wissen** taak wordt toegevoegd. Met de kaartacties kunt u:
+   * Selecteren - extra acties worden weergegeven op de bovenste werkbalk
+   * Uitvoeren - om de gevormde zuivering onmiddellijk in werking te stellen
+   * Configureren - voor het configureren van de wekelijkse zuiveringstaak
+
+   ![Handelingen voor wissen van versie](assets/version-purge-actions.png)
+
+1. Selecteer **Configureren** handeling om de webconsole te openen voor **Taak voor het opruimen van WCM-versie op dag-CQ**, waar u kunt configureren:
+
+   ![Configuratie versieverwijdering](assets/version-purge-configuration.png)
+
+   * **Paden wissen**
+Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld 
+`/content/geometrixx-outdoors`).
+
+   * **Versies recursief wissen**
+
+      * Schakel deze optie uit als u alleen het knooppunt dat door het pad wordt gedefinieerd, wilt leegmaken.
+      * Selecteer deze optie als u het knooppunt dat door het pad en de onderliggende knooppunten wordt gedefinieerd, wilt leegmaken.
+   * **Maximum aantal versies**
+Stel het maximumaantal versies (voor elk knooppunt) in dat u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
+
+   * **Minimum aantal versies**
+Stel het minimale aantal versies (voor elk knooppunt) in dat u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
+
+   * **Maximale versieleeftijd**
+Stel de maximale versiepagina in dagen in (voor elk knooppunt) die u wilt behouden. Laat leeg om deze instelling niet te gebruiken.
+   Vervolgens **Opslaan**.
+
+1. Navigeren naar/terugkeren naar de **Wekelijks onderhoudvenster** venster en selecteer **Uitvoeren** om het proces onmiddellijk te starten.
 
 >[!CAUTION]
 >
+>U kunt het dialoogvenster Klassieke UI gebruiken om een [Droog](#analyzing-the-console) van uw configuratie:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Opgeloste knooppunten kunnen niet worden hersteld zonder de opslagplaats te herstellen. Zorg voor uw configuratie, dus raden we u aan altijd een droge run uit te voeren voordat u gaat leegmaken.
 
-### De console analyseren {#analyzing-the-console}
+#### Droog uitvoeren - De console analyseren {#analyzing-the-console}
 
-De **Droog** en **Leegmaken** in processen worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
+De klassieke interface biedt een **Droog** optie van:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+In dit proces worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
 
 * `ignore (not versionnable)`: het knooppunt ondersteunt geen versiebeheer en wordt tijdens het proces genegeerd.
 
@@ -650,7 +670,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
 
 ### Het interpreteren van request.log {#interpreting-the-request-log}
 
-In dit bestand wordt basisinformatie geregistreerd over elk verzoek aan AEM. Uit deze waardevolle conclusies kunnen we lering trekken.
+In dit bestand wordt basisinformatie geregistreerd over elk verzoek aan AEM. Hieruit kunnen waardevolle conclusies worden getrokken.
 
 De `request.log` biedt een ingebouwde manier om te zien hoe lang verzoeken duren. Voor ontwikkelingsdoeleinden is het nuttig om `tail -f` de `request.log` en let op langzame reactietijden. Een groter object analyseren `request.log` wij bevelen de [gebruik van `rlog.jar` waarmee u kunt sorteren en filteren op responstijden](#using-rlog-jar-to-find-requests-with-long-duration-times).
 

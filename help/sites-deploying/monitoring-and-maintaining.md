@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 0%
 
 ---
@@ -128,14 +128,14 @@ Ga als volgt te werk om versies van een website te wissen:
    ![Configuratie versieverwijdering](assets/version-purge-configuration.png)
 
    * **Paden wissen**
-Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld 
-`/content/wknd`).
+Stelt het beginpad in van de inhoud die moet worden gewist; bijvoorbeeld: 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >Het wordt ten zeerste aanbevolen dat u voor elk van uw websites meerdere paden definieert.
+      >Het wordt ten zeerste aanbevolen voor elk van uw websites meerdere paden te definiëren.
       >
-      >Als u een pad met te veel onderliggende items definieert, duurt het langer om het pad leeg te maken.
+      >Als u een pad met te veel kinderen definieert, kan dit de tijd die nodig is om het leegmaken uit te voeren aanzienlijk langer maken.
 
    * **Versies recursief wissen**
 

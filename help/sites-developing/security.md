@@ -1,30 +1,23 @@
 ---
 title: Beveiliging
-seo-title: Beveiliging
+seo-title: Security
 description: De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase
-seo-description: De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
-translation-type: tm+mt
-source-git-commit: ea4de28525ec4c2094e84d98aad6a518b03f011e
+seo-description: Application Security starts during the development phase
+exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
-
 
 # Beveiliging{#security}
 
 De Veiligheid van de toepassing begint tijdens de ontwikkelingsfase. Adobe raadt aan de volgende best practices op het gebied van beveiliging toe te passen.
 
-## Aanvraagsessie {#use-request-session} gebruiken
+## Aanvraagsessie gebruiken {#use-request-session}
 
-Volgens het beginsel van minste privileges raadt Adobe aan dat elke opslagplaats toegang krijgt door de sessie te gebruiken die gebonden is aan de gebruikersaanvraag en een juiste toegangscontrole.
+Na het beginsel van minste voorrecht, adviseert Adobe dat elke bewaarplaatstoegang door de zitting te gebruiken verbindend aan het gebruikersverzoek en behoorlijk toegangsbeheer wordt gedaan.
 
 ## Protect tegen XSS (Cross-Site Scripting) {#protect-against-cross-site-scripting-xss}
 
@@ -32,25 +25,25 @@ Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#3
 
 AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Het XSS-beveiligingsmechanisme dat door AEM wordt geboden, is gebaseerd op de [AntiSamy Java Library](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) die wordt geleverd door [OWASP (het Open Web Application Security Project)](https://www.owasp.org/). De standaardconfiguratie van AntiSamy vindt u op
+Het door AEM geboden XSS-beveiligingsmechanisme is gebaseerd op [AntiSamy Java-bibliotheek](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) verstrekt door [EIWASP (het Open Project van de Veiligheid van de Toepassing van het Web)](https://www.owasp.org/). De standaardconfiguratie van AntiSamy vindt u op
 
 `/libs/cq/xssprotection/config.xml`
 
-Het is belangrijk dat u deze configuratie aanpast aan uw eigen veiligheidsbehoeften door het configuratiedossier te bedekken. De officiële [AntiSamy documentatie](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) zal u van alle informatie voorzien u nodig hebt om uw veiligheidsvereisten uit te voeren.
+Het is belangrijk dat u deze configuratie aan uw eigen veiligheidsbehoeften aanpast door het configuratiedossier te bedekken. De ambtenaar [AntiSamy-documentatie](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) zal u van alle informatie voorzien u nodig hebt om uw veiligheidsvereisten uit te voeren.
 
 >[!NOTE]
 >
->We raden u ten zeerste aan om altijd toegang te krijgen tot de XSS-beveiligings-API met behulp van de [XSSAPI-API van AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>We raden u ten zeerste aan om altijd toegang te krijgen tot de XSS-API via de [XSSAPI verstrekt door AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-Bovendien, kan een firewall van de Webtoepassing, zoals [mod_security voor Apache](https://www.modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder niet ontdekte dwars-plaats scripting aanvallen beschermen.
+Daarnaast is er een webtoepassingsfirewall, zoals [mod_security voor Apache](https://www.modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
-## Toegang tot Cloud Service-informatie {#access-to-cloud-service-information}
+## Toegang tot informatie over Cloud Servicen {#access-to-cloud-service-information}
 
 >[!NOTE]
 >
->ACLs voor de Informatie van de Cloud Service evenals de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van [Productie Klaar Modus](/help/sites-administering/production-ready.md). Terwijl dit betekent dat u niet de configuratieveranderingen manueel hoeft aan te brengen, wordt het nog geadviseerd dat u hen herzien alvorens u met uw plaatsing gaat leven.
+>ACLs voor de Informatie van de Cloud Service evenals de montages OSGi die worden vereist om uw instantie te beveiligen worden geautomatiseerd als deel van [Productie-klaar-modus](/help/sites-administering/production-ready.md). Terwijl dit betekent dat u niet de configuratieveranderingen manueel hoeft aan te brengen, wordt het nog geadviseerd dat u hen herzien alvorens u met uw plaatsing gaat leven.
 
-Wanneer u [uw AEM instantie met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) integreert gebruikt u [Cloud Service configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Wij adviseren dat, als u deze functionaliteit gebruikt, u controleert of de standaardveiligheid op deze informatie uw vereisten aanpast.
+Wanneer u [uw AEM-exemplaar integreren met de Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md) u gebruikt [Cloud Service configuraties](/help/sites-developing/extending-cloud-config.md). Informatie over deze configuraties, samen met alle verzamelde statistieken, wordt opgeslagen in de gegevensopslagruimte. Wij adviseren dat, als u deze functionaliteit gebruikt, u controleert of de standaardveiligheid op deze informatie uw vereisten aanpast.
 
 De module webservicesSupport schrijft statistieken en configuratiegegevens onder:
 
@@ -58,10 +51,10 @@ De module webservicesSupport schrijft statistieken en configuratiegegevens onder
 
 Met de standaardmachtigingen:
 
-* Auteursomgeving: `read` voor `contributors`
+* Auteursomgeving: `read` for `contributors`
 
-* Publicatie-omgeving: `read` voor `everyone`
+* Publicatie-omgeving: `read` for `everyone`
 
-## Protect tegen aanvallen van smeedmachines voor aanvragen voor andere sites {#protect-against-cross-site-request-forgery-attacks}
+## Protect tegen aanvallen van smeedmachines voor aanvragen voor meerdere sites {#protect-against-cross-site-request-forgery-attacks}
 
-Voor meer informatie over de veiligheidsmechanismen AEM aanwenden om aanvallen te verlichten CSRF, zie [het Verkopen van Filter van de Referateur](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) sectie van de Controlelijst van de Veiligheid en [CSRF de documentatie van het Kader](/help/sites-developing/csrf-protection.md).
+Voor meer informatie over de veiligheidsmechanismen AEM tewerkstellen om aanvallen te verlichten CSRF, zie [Filter Verschuivingsverwijzing](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) van de lijst van beveiligingscontroles en de [CSRF-beschermingskaderdocumentatie](/help/sites-developing/csrf-protection.md).

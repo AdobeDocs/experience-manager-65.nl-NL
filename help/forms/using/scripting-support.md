@@ -1,8 +1,8 @@
 ---
 title: Scriptondersteuning voor HTML5-formulieren
-seo-title: Scriptondersteuning voor HTML5-formulieren
+seo-title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc-eigenschappen en andere methoden die worden ondersteund in HTML5 Forms.
-seo-description: JavaScript, FormCalc-eigenschappen en andere methoden die worden ondersteund in HTML5 Forms.
+seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
 uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
+source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
 workflow-type: tm+mt
-source-wordcount: '3911'
+source-wordcount: '3892'
 ht-degree: 35%
 
 ---
-
 
 # Scriptondersteuning voor HTML5-formulieren {#scripting-support-for-html-forms}
 
@@ -38,7 +37,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code>werkt niet correct in de volgende gevallen:</p>
     <ul>
      <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden op de iPad, en </li>
-     <li>Voor het gebied van de Datum (wanneer de datum door kalender is ingegaan).<br /> </li>
+     <li>Voor het veld Datum (wanneer de datum door de kalender wordt ingevoerd).<br /> </li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
   </tr>
   <tr>
@@ -49,7 +48,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>newtext</code></td>
    <td>Hiermee geeft u de inhoud van het veld aan nadat deze is gewijzigd door de actie van een gebruiker.</td>
-   <td><p>De eigenschap <code>newText</code> werkt niet goed voor de volgende gevallen:</p>
+   <td><p>De <code>newText</code> De eigenschap werkt niet goed voor de volgende gevallen:</p>
     <ul>
      <li>Bij het selecteren van teksten</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
@@ -108,7 +107,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>numPages</code></td>
    <td>Retourneert het aantal pagina's in het document.</td>
-   <td>Pagineringsbeleid van HTML5-formulieren is niet hetzelfde als pagineringsbeleid voor PDF forms. De numPages-API kan dus in beide gevallen een andere waarde retourneren.</td>
+   <td>Pagineringsbeleid voor HTML5-formulieren is niet hetzelfde als pagineringsbeleid voor PDF forms. De numPages-API kan dus in beide gevallen een andere waarde retourneren.</td>
   </tr>
   <tr>
    <td><code>platform</code></td>
@@ -118,7 +117,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>title</code></td>
    <td>Hiermee geeft u de titel van het document op. Deze optie is alleen beschikbaar voor clienttoepassingen.</td>
-   <td>Er wordt een titel van een HTML-document in formulier geretourneerd, in plaats van de titel van de metagegevens van het formulier, zoals in het geval van PDF forms.</td>
+   <td>Er wordt een titel van een HTML-document in het formulier geretourneerd, in plaats van de titel van de metagegevens van het formulier, zoals in het geval van PDF forms.</td>
   </tr>
   <tr>
    <td><code>version</code></td>
@@ -132,13 +131,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>validationsEnabled</code></td>
-   <td>Geeft aan of validatiescripts worden uitgevoerd.<br /> </td>
+   <td>Hiermee wordt opgegeven of validatiescripts worden uitgevoerd.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
    <td><code>pageUp</code></td>
    <td>Ga naar de vorige pagina.</td>
-   <td>HTML5-formulieren volgen niet hetzelfde pagineringsbeleid als PDF-formulier, dus de vorige pagina van een HTML5-formulier is anders dan de vorige pagina van een PDF-formulier.</td>
+   <td>Voor HTML5-formulieren wordt niet hetzelfde pagineringsbeleid gevolgd als voor PDF-formulieren. De vorige pagina van een HTML5-formulier is dus anders dan de vorige pagina van een PDF-formulier.</td>
   </tr>
   <tr>
    <td><code>pageDown</code></td>
@@ -185,12 +184,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>access</code></td>
    <td>Controls user access to the contents.</td>
-   <td>Werkt niet voor de uitsluitingsgroep. Bovendien worden in HTML5-formulieren niet-interactieve en beveiligde objecten op dezelfde manier behandeld.<br /> </td>
+   <td>Werkt niet voor de uitsluitingsgroep. Bovendien bieden HTML5-formulieren dezelfde behandeling voor niet-interactieve en beschermde objecten.<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
    <td>An identifier that is used to identify this element in script expressions.</td>
-   <td>In HTML5-formulieren is het niet toegestaan een eigenschap name voor objecten in te stellen. Dit is een alleen-lezen-eigenschap voor HTML5-formulieren.</td>
+   <td>HTML5-formulieren staan het instellen van de eigenschap name voor objecten niet toe. Het is alleen-lezen eigenschap voor HTML5-formulieren.</td>
   </tr>
   <tr>
    <td><code>value</code></td>
@@ -205,17 +204,17 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>formattedValue</code></td>
    <td>Specifies the formatted value for this field.</td>
-   <td>Het instellen van <code>formattedValue</code> via script wordt niet ondersteund.</td>
+   <td>Instelling <code>formattedValue</code> via script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>editValue</code></td>
    <td>Specifies the edit value for this field.</td>
-   <td>Het instellen van <code>editValue </code>via-script wordt niet ondersteund.</td>
+   <td>Instelling <code>editValue </code>via script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
    <td>Hiermee wordt de tekenreeks van het validatiebericht voor opmaak voor dit veld aangegeven.</td>
-   <td>Het instellen van <code>formatMessage </code>via-script wordt niet ondersteund.</td>
+   <td>Instelling <code>formatMessage </code>via script wordt niet ondersteund.</td>
   </tr>
   <tr>
    <td><code>fillcolor</code></td>
@@ -381,7 +380,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 | `remove` | Hiermee wordt een knooppunt uit de lijst met knooppunten verwijderd. |
 | `insert` | Hiermee wordt een knooppunt ingevoegd vóór een specifiek knooppunt in de lijst met knooppunten. |
 
-## knooppunt {#node}
+## node {#node}
 
 | Eigenschap | Beschrijving | Uitzondering |
 |---|---|---|
@@ -509,7 +508,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>Niet ondersteund voor xfa.nodes, desc</li>
-     <li>Het aantal knooppunten dat voor PDF en HTML wordt gerapporteerd, is anders. </li>
+     <li>Het aantal knooppunten dat voor PDF en HTML wordt gerapporteerd, is verschillend. </li>
     </ul> </td>
   </tr>
   <tr>
@@ -578,7 +577,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>De standaardwaarde kan niet worden opgehaald. </li>
-     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
+     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -599,7 +598,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>De standaardwaarde kan niet worden opgehaald. </li>
-     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
+     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -620,13 +619,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>De standaardwaarde kan niet worden opgehaald. </li>
-     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
+     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-## regel {#line}
+## line {#line}
 
 <table>
  <tbody>
@@ -658,7 +657,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>De standaardwaarde kan niet worden opgehaald. </li>
-     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
+     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -679,7 +678,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>
     <ul>
      <li>De standaardwaarde kan niet worden opgehaald. </li>
-     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
+     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -776,7 +775,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td>border</td>
    <td>Het object border beschrijft de rand rondom het object checkButton. </td>
-   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden daarom niet weerspiegeld in de gebruikersinterface.<br /> </td>
+   <td>De wijzigingen worden weerspiegeld in het model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -826,7 +825,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## imageEdit  {#imageedit}
+## imageEdit {#imageedit}
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
@@ -1001,7 +1000,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## boog {#arc}
+## arc {#arc}
 
 <table>
  <tbody>
@@ -1118,7 +1117,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
 
 ### Ondersteunde functies van FormCalc {#formcalc-supported-functions}
 
-### Ondersteuning voor FormCalc-expressie {#formcalc-expression-support}
+### Ondersteuning voor FormCalc-expressies {#formcalc-expression-support}
 
 <table>
  <tbody>
@@ -1159,7 +1158,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   <tr>
    <td>for</td>
    <td><br type="_moz" /> </td>
-   <td>for i = 100 tot 1 <br /> do s = s + i endfor</td>
+   <td>voor i = 100 tot 1 <br /> do s = s + i endfor</td>
   </tr>
   <tr>
    <td>voor elke</td>
@@ -1354,4 +1353,4 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 
 >[!NOTE]
 >
->HTML5-formulieren worden weergegeven op de client (browser). Aanbevolen wordt om clientscripts **validate** en **calculate** te gebruiken in plaats van serverscripts.
+>HTML5-formulieren worden weergegeven op de client (browser). Aanbevolen wordt om de clientzijde te gebruiken **validate** en **berekenen** scripts in plaats van serverscripts.

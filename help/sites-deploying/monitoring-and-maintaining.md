@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
+source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
 workflow-type: tm+mt
-source-wordcount: '5905'
+source-wordcount: '5972'
 ht-degree: 0%
 
 ---
@@ -609,12 +609,12 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Draad-dumpen</td>
    <td>Bekijk JVM-threads. Identificeer contouren, sluizen en lange looptijden.</td>
-   <td><p>Afhankelijk van het besturingssysteem:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>Er zijn ook analyseprogramma's beschikbaar, zoals <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Afhankelijk van het besturingssysteem:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (consolemodus): Ctrl-einde<br /> </p> <p>Er zijn ook analyseprogramma's beschikbaar, zoals <a href="https://github.com/irockel/tda">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap Dumps</td>
    <td>Onvoldoende geheugen, wat langzame prestaties tot gevolg heeft.</td>
-   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie aan de vraag van java aan AEM.</p> <p>Zie de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td>
+   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie aan de vraag van java aan AEM.</p> <p>Zie de <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">Opties/vlaggen voor JVM-pagina voor probleemoplossing</a>.</p> </td>
   </tr>
   <tr>
    <td>Systeemaanroepen</td>
@@ -624,7 +624,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Apache Bench</td>
    <td>Identificeer geheugenlekken, selectief analyseer reactietijd.</td>
-   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">Ab man page</a> voor volledige informatie.</p> </td>
+   <td><p>basisgebruik is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Zie <a href="#apache-bench">Apache Bench</a> en de <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">Ab man page</a> voor volledige informatie.</p> </td>
   </tr>
   <tr>
    <td>Zoekanalyse</td>
@@ -634,7 +634,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>JMeter</td>
    <td>Belastings- en functionele tests.</td>
-   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td>
+   <td><a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></td>
   </tr>
   <tr>
    <td>JProfiler</td>
@@ -642,14 +642,19 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
+   <td>Java Flight Recorder</td>
+   <td>Java Flight Recorder (JFR) is een hulpmiddel voor het verzamelen van diagnostische en profilerende gegevens over een lopende toepassing van Java.</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
+  </tr>
+  <tr>
    <td>JConsole</td>
    <td>Bekijk JVM-metriek en -threads.</td>
-   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Prestaties controleren met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6 is JConsole uitbreidbaar met plug-ins. bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Gebruik: jconsole</p> <p>Zie <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> en <a href="#monitoring-performance-using-jconsole">Prestaties controleren met behulp van JConsole</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.8 is JConsole uitbreidbaar met plug-ins; bijvoorbeeld Top of TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Bekijk JVM-metriek, threads, geheugen en profilering.</td>
-   <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> en <a href="#monitoring-performance-using-j-visualvm">Prestaties bewaken met behulp van (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td>
+   <td><p>Gebruik: visualvm of visualvm<br /> </p> <p>Zie <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> en <a href="#monitoring-performance-using-j-visualvm">Prestaties bewaken met behulp van (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.8, is VisualVM verlengbaar met stop-ins. VisualVM wordt stopgezet na JDK 9. Gebruik in plaats hiervan de Java-vluchtrecorder.</p> </td>
   </tr>
   <tr>
    <td>worstjes/resten, laatste</td>
@@ -664,7 +669,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr>
    <td>Hulpprogramma voor CPU- en geheugenanalyse<br /> </td>
    <td><a href="#interpreting-the-request-log">Wordt gebruikt bij het analyseren van langzame aanvragen tijdens de ontwikkeling</a>.</td>
-   <td>Bijvoorbeeld: <a href="https://www.yourkit.com/">YourKit</a>.</td>
+   <td>Bijvoorbeeld: <a href="https://www.yourkit.com/">YourKit</a>. of de <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java Flight Recorder</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">Informatie verzamelen</a></td>
@@ -810,7 +815,7 @@ Mogelijk moet u de afzonderlijke `request.log` bestanden als u deze bewerking wi
 
 ### Apache Bench {#apache-bench}
 
-Om het effect van speciale gevallen (zoals afvalophaling, enz.) tot een minimum te beperken, wordt aangeraden een hulpmiddel te gebruiken zoals `apachebench` (zie bijvoorbeeld [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) voor verdere documentatie) om geheugenlekken te helpen identificeren en selectief reactietijd te analyseren.
+Om het effect van speciale gevallen (zoals afvalophaling, enz.) tot een minimum te beperken, wordt aangeraden een hulpmiddel te gebruiken zoals `apachebench` (zie bijvoorbeeld [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) voor verdere documentatie) om geheugenlekken te helpen identificeren en selectief reactietijd te analyseren.
 
 Apache Bench kan als volgt worden gebruikt:
 
@@ -921,7 +926,7 @@ De opdracht Gereedschap `jconsole` is beschikbaar bij de JDK.
 
 ### Prestaties bewaken met behulp van (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Sinds JDK 1.6, de hulpmiddelbevel `jvisualvm` is beschikbaar. Nadat u JDK 1.6 hebt geïnstalleerd, kunt u:
+Voor JDK 6-8, de hulpmiddelbevel `visualvm` is beschikbaar. Nadat u een JDK hebt geïnstalleerd kunt u:
 
 1. Start de AEM.
 
@@ -932,7 +937,7 @@ Sinds JDK 1.6, de hulpmiddelbevel `jvisualvm` is beschikbaar. Nadat u JDK 1.6 he
 1. Voer een van beide uit:
 
    * `jvisualvm`: in de map JDK 1.6 bin (geteste versie)
-   * `visualvm`: kan worden gedownload van [VisualVM](https://visualvm.dev.java.net/) (versie met bloeding)
+   * `visualvm`: kan worden gedownload van [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (versie met bloeding)
 
 1. Van binnen `Local` toepassing, dubbelklikken `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
 
@@ -1185,7 +1190,7 @@ Of JConsole:
    ```
 
 * Maak vervolgens verbinding met de JVM met de JConsole; zie:
-   ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
+   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebruikt, hoe lang het duurt om te werken en welk effect dit heeft op de prestaties van uw toepassing. Zonder dit, is het stemmen enkel &quot;willekeurig het draaien knopen&quot;.
 
@@ -1193,4 +1198,4 @@ Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebru
 >
 >Voor VM van Oracle is er ook informatie op:
 >
->[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

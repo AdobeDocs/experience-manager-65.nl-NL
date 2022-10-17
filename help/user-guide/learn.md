@@ -4,7 +4,7 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: Een beschrijving van de essentiële capaciteiten van AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 52385af23b04cda33a88ec42bb150650eb58fe4e
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Meer informatie](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) of [Bekijk een aantal van onze nieuwe videozelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites is een contentbeheersysteem in Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op verschillende websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Meer informatie](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) of [Bekijk een aantal van onze nieuwe videozelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 

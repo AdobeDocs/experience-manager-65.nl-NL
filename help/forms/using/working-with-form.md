@@ -1,21 +1,20 @@
 ---
 title: Werken met een formulier
-seo-title: Werken met een formulier
+seo-title: Working with a Form
 description: Het formulier weergeven en bijwerken dat is gekoppeld aan een taak of beginpunt in de AEM Forms-app
-seo-description: Het formulier weergeven en bijwerken dat is gekoppeld aan een taak of beginpunt in de AEM Forms-app
+seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
 uuid: 7481ca5c-a2c0-4697-9008-1e51bce2012e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: adff5339-e026-4924-a401-f249f37fc6e6
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
-
 
 # Werken met een formulier {#working-with-a-form}
 
@@ -25,11 +24,20 @@ De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert 
 
 Uw formulier synchroniseren in AEM Forms-app:
 
-1. Selecteer een formulier in de auteur en klik op **Eigenschappen weergeven**.
-1. Klik in de eigenschappenpagina op **Geavanceerd.**
-1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en tikken op **Opslaan**.
+1. Selecteer een formulier in de ontwerpversie en klik op **Eigenschappen weergeven**.
+1. Klik op de pagina met eigenschappen **Geavanceerd.**
+1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en tikken **Opslaan**.
 
 Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **Synchroniseren met AEM Forms App**. Wanneer het formulier wordt gepubliceerd, kan de AEM Forms-toepassing verbinding maken met de publicatieserver en de formulieren ophalen.
+
+Als uw Android-app voor AFA (AEM Form Application) niet synchroniseert, voert u de volgende stappen uit om het synchronisatieprobleem op te lossen:
+
+1. Ga naar de **https://&#39;[server]:[poort]&#39;system/console/configMgr**.
+1. Zoeken naar **[!UICONTROL Adobe Granite Token Authentication Handler]** en klik op **[!UICONTROL Edit]**.
+1. Selecteer **[!UICONTROL None]** in het vervolgkeuzemenu voor het dialoogvenster **[!UICONTROL SameSite attribute for the login-token cookie]** kenmerk.
+1. Klik op **[!UICONTROL Save]**.
+
+![Afbeelding synchroniseren met AFA Android-app](/help/forms/using/assets/afaandroid.png)
 
 >[!NOTE]
 >
@@ -37,12 +45,11 @@ Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerde
 >
 >* Adaptieve formulieren (zonder wazig laden)
 >* Mobiele formulieren
+>
+>Bijlagen op formulierniveau worden niet ondersteund in de adaptieve formulieren die worden opgehaald in de AEM Forms-app die is gesynchroniseerd met de AEM Forms OSGi-server. Gebruikers kunnen bestanden in een veld bijvoegen als de auteur op het moment van het ontwerpen van het formulier bijlagen op veldniveau heeft ingeschakeld.
 
->
->
-Bijlagen op formulierniveau worden niet ondersteund in de adaptieve formulieren die worden opgehaald in de AEM Forms-app die is gesynchroniseerd met de AEM Forms OSGi-server. Gebruikers kunnen bestanden in een veld bijvoegen als de auteur op het moment van het ontwerpen van het formulier bijlagen op veldniveau heeft ingeschakeld.
 
 **Een formulier openen en bijwerken**
 
-1. Tik op het formulier in het beginscherm om een formulier te openen.
+1. Tik op de knop **[!UICONTROL Form]** in het beginscherm.
 1. U kunt de velden van het formulier bijwerken, bijlagen toevoegen, opslaan als concept en het verzenden.

@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 0%
 
 ---
@@ -40,16 +40,16 @@ U kunt bepaalde handelingen uitvoeren zonder de taak te openen door op de pictog
 
 Wanneer u een taak opent en bewerkt, zijn de gereedschappen die beschikbaar zijn, afhankelijk van de taak. Voor verschillende taken is het nodig verschillende handelingen uit te voeren, zodat bepaalde gereedschappen al dan niet beschikbaar zijn. De typische taken die u kunt ontvangen worden hieronder beschreven.
 
-**Geef informatie**: U ontvangt een taak waarvoor u een formulier moet invullen en verzenden.
+* **Geef informatie**: U ontvangt een taak waarvoor u een formulier moet invullen en verzenden.
 
-**Informatie controleren**: U ontvangt een taak waarvoor u de gegevens moet controleren en zich op de inhoud moet aanmelden.
+* **Informatie controleren**: U ontvangt een taak waarvoor u de gegevens moet controleren en zich op de inhoud moet aanmelden.
 
-**Multiuser review**: U ontvangt een taak op hetzelfde moment dat andere gebruikers de taak ontvangen. U en de andere gebruikers moeten informatie verstrekken of de inhoud, of allebei herzien. Bij dit type taken kunnen de volgende gereedschappen beschikbaar zijn:
+* **Multiuser review**: U ontvangt een taak op hetzelfde moment dat andere gebruikers de taak ontvangen. U en de andere gebruikers moeten informatie verstrekken of de inhoud, of allebei herzien. Bij dit type taken kunnen de volgende gereedschappen beschikbaar zijn:
 
-* De instructies voor de taak weergeven
-* De voltooiingsstatus weergeven van alle gebruikers aan wie de taak is toegewezen
-* De opmerkingen weergeven van alle gebruikers aan wie de taak is toegewezen
-* Opmerkingen aan de taak zelf toevoegen
+   * De instructies voor de taak weergeven
+   * De voltooiingsstatus weergeven van alle gebruikers aan wie de taak is toegewezen
+   * De opmerkingen weergeven van alle gebruikers aan wie de taak is toegewezen
+   * Opmerkingen aan de taak zelf toevoegen
 
 De extra hulpmiddelen die met om het even welke bovengenoemde taken beschikbaar kunnen zijn omvatten het volgende:
 
@@ -106,17 +106,17 @@ Wanneer u een taak opent en claimt vanuit een groep of gedeelde lijst, wordt de 
 
 Nadat u een taak hebt geopend, zijn de tabbladen die in het hoofdvenster worden weergegeven en de gereedschappen die beschikbaar zijn, afhankelijk van de taak. De tabbladen die u kunt zien, worden hieronder beschreven:
 
-**Taakoverzicht**: Wanneer een taak opent, staat de ruit van het Overzicht van de Taak u toe om informatie over de taak te tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Als u het venster Taakoverzicht gebruikt, kan aanvullende en relevante informatie voor een taak worden weergegeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
+* **Taakoverzicht**: Wanneer een taak opent, staat de ruit van het Overzicht van de Taak u toe om informatie over de taak te tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Als u het venster Taakoverzicht gebruikt, kan aanvullende en relevante informatie voor een taak worden weergegeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
 
-**Details**: Verstrekt wat informatie over de huidige taak en het proces dat het tot behoort.
+* **Details**: Verstrekt wat informatie over de huidige taak en het proces dat het tot behoort.
 
-**Formulier**: Hiermee geeft u het formulier weer dat aan de taak is gekoppeld. Het formulier kan vele bestandstypen bevatten, zoals PDF, HTML, Guide en SWF-bestand. Het formulier kan er uitzien als een standaardformulier voor afdrukken of voor het web, of kan u door een reeks wizardstijldeelvensters leiden om informatie te verzamelen.
+* **Formulier**: Hiermee geeft u het formulier weer dat aan de taak is gekoppeld. Het formulier kan vele bestandstypen bevatten, zoals PDF, HTML, Guide en SWF-bestand. Het formulier kan er uitzien als een standaardformulier voor afdrukken of voor het web, of kan u door een reeks wizardstijldeelvensters leiden om informatie te verzamelen.
 
-**Historie**: Hier worden de taken weergegeven die deel uitmaken van de procesinstantie en de bijbehorende vorm, taaktoewijzingen en bijlagen voor elke taak.
+* **Historie**: Hier worden de taken weergegeven die deel uitmaken van de procesinstantie en de bijbehorende vorm, taaktoewijzingen en bijlagen voor elke taak.
 
-**Bijlagen**: Toont bestaande gehechtheid die met de taak wordt geassocieerd en voegt gehechtheid, indien nodig toe.
+* **Bijlagen**: Toont bestaande gehechtheid die met de taak wordt geassocieerd en voegt gehechtheid, indien nodig toe.
 
-**Notities**: Toont de bestaande nota&#39;s verbonden aan de taak en voeg nota&#39;s toe, indien nodig.
+* **Notities**: Toont de bestaande nota&#39;s verbonden aan de taak en voeg nota&#39;s toe, indien nodig.
 
 Wanneer u aan een taak werkt, worden de gereedschappen die u ziet en de handelingen die u kunt uitvoeren hieronder beschreven.
 
@@ -283,7 +283,7 @@ De e-mailberichten kunnen een koppeling bevatten waarmee de taak in de AEM Forms
 >
 >* Als u de werkruimte zodanig wilt configureren dat de juiste e-mailsjablonen worden gebruikt, raadpleegt u de [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
->* Als concepten worden doorgestuurd nadat de taak in de AEM Forms-werkruimte is verzonden, worden e-mailmeldingen verzonden. Als de concepten vanuit het startpunt van de AEM Forms-werkruimte worden doorgestuurd, worden geen e-mailmeldingen verzonden.
+>* Als concepten worden doorgestuurd nadat de taak in de AEM Forms-werkruimte is verzonden, worden e-mailmeldingen verzonden. Als concepten vanuit het startpunt van de AEM Forms-werkruimte worden doorgestuurd, worden geen e-mailmeldingen verzonden.
 
 
 Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aan-taak in de AEM Forms-werkruimte.

@@ -1,8 +1,8 @@
 ---
 title: Werken met to-do-lijsten
-seo-title: Werken met to-do-lijsten
+seo-title: Working with To-do lists
 description: Hoe te, werk aan, en voltooi de taken zoals het goedkeuren van of het verwerpen van een verzoek of het toevoegen van meer informatie.
-seo-description: Hoe te, werk aan, en voltooi de taken zoals het goedkeuren van of het verwerpen van een verzoek of het toevoegen van meer informatie.
+seo-description: How to open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information.
 uuid: f9cfad8e-5d0c-4a30-8153-2a03bf7dd986
 contentOwner: robhagat
 content-type: reference
@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
+source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
 workflow-type: tm+mt
-source-wordcount: '4025'
+source-wordcount: '4034'
 ht-degree: 0%
 
 ---
 
-
-# Werken met to-do lijsten{#working-with-to-do-lists}
+# Werken met to-do-lijsten{#working-with-to-do-lists}
 
 Wanneer u uw lijst te doen bekijkt, kunt u taken van een bedrijfsproces zien die aan u, of aan om het even welke groepen worden toegewezen die u tot behoort, of de gedeelde taken van andere gebruikers zijn. U kunt de vereiste taken openen, bewerken en uitvoeren, zoals een verzoek goedkeuren of afwijzen of meer informatie toevoegen. Nadat u een taak voltooit, wordt het verzonden naar de volgende persoon in het bedrijfsproces,
 
-## Informatie over te maken lijsten {#about-todo-lists}
+## Lijsten van taken {#about-todo-lists}
 
 De werkruimte van AEM Forms heeft de volgende drie soorten lijsten van te doen:
 
@@ -43,9 +42,9 @@ Wanneer u een taak opent en bewerkt, zijn de gereedschappen die beschikbaar zijn
 
 **Geef informatie**: U ontvangt een taak waarvoor u een formulier moet invullen en verzenden.
 
-**Informatie** bekijken: U ontvangt een taak waarvoor u de gegevens moet controleren en zich op de inhoud moet aanmelden.
+**Informatie controleren**: U ontvangt een taak waarvoor u de gegevens moet controleren en zich op de inhoud moet aanmelden.
 
-**Revisie** voor meerdere gebruikers: U ontvangt een taak op hetzelfde moment dat andere gebruikers de taak ontvangen. U en de andere gebruikers moeten informatie verstrekken of de inhoud, of allebei herzien. Bij dit type taken kunnen de volgende gereedschappen beschikbaar zijn:
+**Multiuser review**: U ontvangt een taak op hetzelfde moment dat andere gebruikers de taak ontvangen. U en de andere gebruikers moeten informatie verstrekken of de inhoud, of allebei herzien. Bij dit type taken kunnen de volgende gereedschappen beschikbaar zijn:
 
 * De instructies voor de taak weergeven
 * De voltooiingsstatus weergeven van alle gebruikers aan wie de taak is toegewezen
@@ -61,7 +60,7 @@ De extra hulpmiddelen die met om het even welke bovengenoemde taken beschikbaar 
 * Opmerkingen
 * Bijlagen
 
-## Taken {#opening-tasks} openen
+## Taken openen {#opening-tasks}
 
 U kunt taken openen en vergrendelen vanuit de lijst Aan/Uit en/of claim en taken openen vanuit een groep of gedeelde Aan/Uit-lijst. Wanneer u een taak opent, wordt deze weergegeven in het hoofdvenster. De andere taken worden weergegeven in de takenlijst naast de lijst Aan.
 
@@ -71,7 +70,7 @@ Als er een Taakoverzicht-URL bestaat, wordt de Taakoverzicht standaard geopend i
 >
 >Als u een taak opent, is het mogelijk dat het gekoppelde formulier volledig wordt weergegeven, afhankelijk van de standaardinstellingen van de taak.
 
-### Een taak in uw lijst openen en vergrendelen{#open-and-lock-a-task-from-your-list}
+### Een taak in uw lijst openen en vergrendelen {#open-and-lock-a-task-from-your-list}
 
 Wanneer u een taak opent vanuit uw lijst Aan-doe, als uw lijst wordt gedeeld, kunt u de taak vergrendelen om te voorkomen dat een andere gebruiker die toegang heeft tot uw lijst, aan de taak werkt.
 
@@ -100,8 +99,8 @@ Wanneer u een taak opent en claimt vanuit een groep of gedeelde lijst, wordt de 
 1. Selecteer in het linkerdeelvenster op de pagina Aan/Uit een groep of de lijst Gedeelde taak. Alle taken worden weergegeven in het middelste venster.
 1. Voer een van de volgende stappen uit:
 
-   * Als u een taak wilt claimen, zonder deze te openen, vanuit een groep of gedeelde aan-do-lijst, klikt u op **Claim** door de aanwijzer boven de taak te plaatsen. Als de taak is geopend, is de knop Claim beschikbaar in de actiebalk onder het taakvenster. Bij het opeisen, beweegt een taak zich van de groep of gedeelde aan-doe lijst aan uw lijst.
-   * Als u een taak wilt opeisen en openen vanuit een groep of een gedeelde lijst voor taken, klikt u op **Claim en opent u**.
+   * Als u een taak wilt claimen vanuit een groep of gedeelde lijst Aan-taak zonder deze te openen, klikt u op  **Claim** door de aanwijzer boven de taak te plaatsen. Als de taak is geopend, is de knop Claim beschikbaar in de actiebalk onder het taakvenster. Bij het opeisen, beweegt een taak zich van de groep of gedeelde aan-doe lijst aan uw lijst.
+   * Als u een taak wilt claimen en openen vanuit een groep of gedeelde lijst Aan-taak, klikt u op **Claim en open**.
 
 ## Werken met taken {#working-with-tasks}
 
@@ -111,13 +110,13 @@ Nadat u een taak hebt geopend, zijn de tabbladen die in het hoofdvenster worden 
 
 **Details**: Verstrekt wat informatie over de huidige taak en het proces dat het tot behoort.
 
-**Formulier**: Hiermee geeft u het formulier weer dat aan de taak is gekoppeld. Het formulier kan vele bestandstypen bevatten, zoals PDF-, HTML-, Guide- en SWF-bestanden. Het formulier kan er uitzien als een standaardformulier voor afdrukken of voor het web, of kan u door een reeks wizardstijldeelvensters leiden om informatie te verzamelen.
+**Formulier**: Hiermee geeft u het formulier weer dat aan de taak is gekoppeld. Het formulier kan vele bestandstypen bevatten, zoals PDF, HTML, Guide en SWF-bestand. Het formulier kan er uitzien als een standaardformulier voor afdrukken of voor het web, of kan u door een reeks wizardstijldeelvensters leiden om informatie te verzamelen.
 
 **Historie**: Hier worden de taken weergegeven die deel uitmaken van de procesinstantie en de bijbehorende vorm, taaktoewijzingen en bijlagen voor elke taak.
 
 **Bijlagen**: Toont bestaande gehechtheid die met de taak wordt geassocieerd en voegt gehechtheid, indien nodig toe.
 
-**Opmerkingen**: Toont de bestaande nota&#39;s verbonden aan de taak en voeg nota&#39;s toe, indien nodig.
+**Notities**: Toont de bestaande nota&#39;s verbonden aan de taak en voeg nota&#39;s toe, indien nodig.
 
 Wanneer u aan een taak werkt, worden de gereedschappen die u ziet en de handelingen die u kunt uitvoeren hieronder beschreven.
 
@@ -143,15 +142,15 @@ U kunt een taak samen met om het even welke nota&#39;s of gehechtheid aan een an
 
 1. Zoek in het pop-upvenster de naam van de gebruiker waarmee u de taak wilt doorsturen, delen of raadplegen.
 
-### Een taak {#return-a-task} retourneren
+### Een taak retourneren {#return-a-task}
 
-1. Voor om het even welk lusje, klik **Terugkeer**. De taak is teruggekeerd aan de te doen lijst van de gebruiker die eerder de taak aan u, of deelde of raadpleegde de taak met u door:sturen.
+1. Klik op een willekeurig tabblad **Return**. De taak is teruggekeerd aan de te doen lijst van de gebruiker die eerder de taak aan u, of deelde of raadpleegde de taak met u door:sturen.
 
 ### Een taak offline uitvoeren {#take-a-task-offline}
 
 U mag mogelijk offline aan een taak werken en het formulier later verzenden vanuit Adobe® Reader® of Adobe® Acrobat® Professional of Adobe® Acrobat® Standard. Wanneer het formulier wordt verzonden, wordt de e-mailclient gestart met het juiste e-mailadres van de server. U kunt het ingevulde formulier vervolgens via e-mail naar de server verzenden.
 
-1. Op om het even welk lusje, klik **Off line**.
+1. Klik op een willekeurig tabblad **Off line**.
 1. Geef een bestandsnaam op om het formulier onder op te slaan en klik op **Opslaan**. Het formulier dat aan de taak is gekoppeld, wordt lokaal opgeslagen en de taak blijft in de lijst Aan/uit totdat het formulier wordt verzonden.
 
 ### Werken met bijlagen {#work-with-attachments}
@@ -160,18 +159,18 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
 **Een bijlage toevoegen**
 
-1. Klik op het tabblad **Bijlagen** op **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
-1. Selecteer het niveau **Machtigingen** voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Read** selecteert, kunnen andere gebruikers het dossier plaatselijk bewaren. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
+1. In de **Bijlagen** tab, klik op **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
+1. Selecteer **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
 
    >[!NOTE]
    >
    >U kunt ook opmerkingen toevoegen naast de bijlagen.
 
-1. Klik **Uploaden**. Het bestand wordt aan het formulier gekoppeld.
+1. Klikken **Uploaden**. Het bestand wordt aan het formulier gekoppeld.
 
 **Een bijlage weergeven**
 
-1. Klik op het tabblad **Bijlagen** op de bestandsnaam van de bijlage die u wilt weergeven.
+1. Op de **Bijlagen** klikt u op de bestandsnaam van de bijlage die u wilt weergeven.
 
 **Een bijlage lokaal opslaan**
 
@@ -179,15 +178,15 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
 **Een bijlage bijwerken**
 
-1. Klik **Bewerken** voor de bijlage. Selecteer het bestand waarmee u de bestaande bijlage wilt vervangen door te klikken op **Bladeren**.
+1. Klikken **Bewerken** voor de bijlage. Selecteer het bestand waarmee u de bestaande bijlage wilt vervangen door. Klik op **Bladeren**.
 
 **Een bijlage verwijderen**
 
-1. Klik **Delete** voor een gehechtheid.
+1. Klikken **Verwijderen** voor een bijlage.
 
-### Sla uw werk op zonder de taak {#save-your-work-without-completing-the-task} te voltooien
+### Uw werk opslaan zonder de taak te voltooien {#save-your-work-without-completing-the-task}
 
-1. Tik op elk tabblad op **Opslaan**.
+1. Tik op een willekeurig tabblad **Opslaan**.
 
    Het dialoogvenster Opslaan als concept wordt geopend. De standaardnaam van het concept is de taaknaam uit de taaksjabloon.
 
@@ -198,9 +197,9 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
    >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. In het geval van automatisch opslaan wordt de standaardnaam van de taak automatisch gebruikt.
    >
    >
-   >Zie Concept periodiek opslaan in [Voorkeuren beheren](/help/forms/using/getting-started-livecycle-html-workspace.md) voor meer informatie.
+   >Zie Concept periodiek opslaan voor meer informatie in [Voorkeuren beheren](/help/forms/using/getting-started-livecycle-html-workspace.md).
 
-1. Geef in het dialoogvenster Opslaan als concept een unieke naam voor de taak op en tik op **OK**.
+1. Geef in het dialoogvenster Opslaan als concept een unieke naam op voor de taak en tik op **OK**.
 
    ![saveasconceptDialog_name](assets/saveasdraftdialog_name.png)
 
@@ -208,7 +207,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
    ![zoekopdracht](assets/searchfortask.png)
 
-## Taken {#completing-tasks} uitvoeren
+## Taken voltooien {#completing-tasks}
 
 Hoe u een taak voltooit, is afhankelijk van de taak zelf en uw rol in het proces. Mogelijk wordt u gevraagd een verzoek goed te keuren of te weigeren, inhoud op te geven, informatie te controleren en te verifiëren of aan te geven dat u hebt gehandeld.
 
@@ -220,7 +219,7 @@ U kunt een taak op verschillende manieren voltooien:
 
 >[!NOTE]
 >
->Deze optie is beschikbaar als het veld `isMustOpenToComplete` niet is geselecteerd in de stap `Assign Task` in Workbench tijdens het ontwerpen van een proces.
+>Deze optie is beschikbaar als `isMustOpenToComplete` veld is niet geselecteerd in het dialoogvenster `Assign Task` stap in Workbench tijdens het ontwerpen van een proces.
 
 * Als u e-mailberichten ontvangt
 
@@ -235,21 +234,21 @@ Wanneer u een taak voltooit, afhankelijk van de taak, kan een bevestigingsvenste
 1. Voer een van de volgende stappen uit:
 
    * Selecteer de taak en klik de aangewezen knoop voor de volgende stap die in het proces bij de bodem van de lijst wordt vereist.
-   * Als het formulier geen knoppen heeft en de knop Voltooien in de AEM Forms-werkruimte beschikbaar is, klikt u op **Voltooien**.
+   * Als het formulier geen knoppen heeft en de knop Voltooien in de AEM Forms-werkruimte beschikbaar is, klikt u op **Voltooid**.
    * Als het formulier knoppen bevat en de knop Voltooien in de AEM Forms-werkruimte niet beschikbaar is, klikt u op de desbetreffende knop in het formulier voor de volgende vereiste stap in het proces.
 
    Als het formulier geen knoppen heeft en de knop Voltooien in de AEM Forms-werkruimte niet beschikbaar is, wordt een bericht weergegeven dat het formulier niet kan worden verzonden.
 
 1. Voer een van de volgende handelingen uit als er een bevestigingsvenster verschijnt:
 
-   * Klik **OK** als u de taak hebt voltooid en klaar bent om u er af te melden.
-   * Klik op **Annuleren** als u wilt terugkeren naar de taak en niet klaar bent om u er af te melden.
+   * Klikken **OK** als u de taak hebt voltooid en klaar bent om u ervan af te melden.
+   * Klikken **Annuleren** als u wilt terugkeren naar de taak en niet klaar bent om u ervan af te melden.
 
 >[!NOTE]
 >
 >U ziet mogelijk een knop Verzenden in HTML-formulieren als de proceseigenschappen in een formulier worden gebruikt. Deze knop is niet zichtbaar wanneer hetzelfde formulier wordt weergegeven als PDF. Als u een taak wilt voltooien, klikt u op de knop Verzenden onder aan de AEM Forms-werkruimte, buiten het formulier en niet op de knop Verzenden in het formulier.
 
-### Taken {#bulk-approve-tasks} bulksgewijs goedkeuren
+### Taken voor bulksgewijs goedkeuren {#bulk-approve-tasks}
 
 U kunt meerdere taken verzenden vanuit de lijst Aan taak. Slechts kunnen de taken van het zelfde proces, met de zelfde taaknamen, en de zelfde routeopties samen worden voorgelegd.
 
@@ -258,7 +257,7 @@ U kunt meerdere taken verzenden vanuit de lijst Aan taak. Slechts kunnen de take
 >Deze optie is beschikbaar als het veld isMustOpenToComplete niet is geselecteerd in de stap Taak toewijzen in Workbench tijdens het ontwerpen van een proces.
 
 1. Selecteer op de pagina Aan-bewerking in het linkerdeelvenster de lijst Eén taak. Alle taken worden weergegeven in het middelste venster.
-1. Selecteer **Bulkmodus inschakelen**. Selectievakjes worden vóór de taken in de lijst weergegeven.
+1. Selecteren **Bulkmodus inschakelen**. Selectievakjes worden vóór de taken in de lijst weergegeven.
 
    >[!NOTE]
    >
@@ -282,7 +281,10 @@ De e-mailberichten kunnen een koppeling bevatten waarmee de taak in de AEM Forms
 
 >[!NOTE]
 >
->Zie [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/) om de werkruimte zodanig te configureren dat de juiste e-mailsjablonen worden gebruikt.
+>* Als u de werkruimte zodanig wilt configureren dat de juiste e-mailsjablonen worden gebruikt, raadpleegt u de [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>
+>* Als concepten worden doorgestuurd nadat de taak in de AEM Forms-werkruimte is verzonden, worden e-mailmeldingen verzonden. Als de concepten vanuit het startpunt van de AEM Forms-werkruimte worden doorgestuurd, worden geen e-mailmeldingen verzonden.
+
 
 Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aan-taak in de AEM Forms-werkruimte.
 
@@ -296,9 +298,9 @@ Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aa
 
 ### E-mailberichten ontvangen {#receive-email-notification-messages}
 
-1. Klik **Voorkeuren**.
-1. Selecteer **Ja** in de lijst **Taakgebeurtenissen via e-mail melden.**
-1. Als u het formulier en de gegevens in het e-mailbericht wilt opnemen, selecteert u **Yes** in de lijst **Forms bijvoegen in e-mail**.
+1. Klikken **Voorkeuren**.
+1. In de **Taakgebeurtenissen via e-mail op de hoogte stellen** list, selecteer **Ja**.
+1. Als u het formulier en de gegevens wilt opnemen in het e-mailbericht, gaat u naar **Forms bijvoegen in e-mail** list, selecteer **Ja**.
 
 ## Deelnemen aan taken via mobiele apparaten {#participating-in-tasks-through-mobile-devices}
 
@@ -306,9 +308,9 @@ U kunt de AEM Forms-werkruimte-app gebruiken om deel te nemen aan taken vanaf uw
 
 ## Informatie over deadlines en herinneringen {#about-deadlines-and-reminders}
 
-Een *deadline* bepaalt de datum en de tijd dat u een taak tegen moet voltooien. Wanneer een deadline overgaat, leidt de server de taak naar de volgende stap in het proces (die een lijst kan zijn van een andere gebruiker te doen) en dan verschijnt het tijdspictogram op de taak. Het tijdlijnpictogram wordt weergegeven, ongeacht de regels die aan het proces zijn gekoppeld.
+A *deadline* bepaalt de datum en de tijd dat u een taak tegen moet voltooien. Wanneer een deadline overgaat, leidt de server de taak naar de volgende stap in het proces (die een lijst kan zijn van een andere gebruiker te doen) en dan verschijnt het tijdspictogram op de taak. Het tijdlijnpictogram wordt weergegeven, ongeacht de regels die aan het proces zijn gekoppeld.
 
-Een *herinnering* brengt u op de hoogte van een taak die uw aandacht vereist. Herinneringen vinden plaats op een vooraf bepaald tijdstip en dan met regelmatige intervallen tot u de bijbehorende taak voltooit. Wanneer u een herinnering ontvangt, verschijnt het herinneringspictogram op de taak.
+A *herinnering* brengt u op de hoogte van een taak die uw aandacht vereist. Herinneringen vinden plaats op een vooraf bepaald tijdstip en dan met regelmatige intervallen tot u de bijbehorende taak voltooit. Wanneer u een herinnering ontvangt, verschijnt het herinneringspictogram op de taak.
 
 Het bedrijfsproces bepaalt het gedrag en de timing van termijnen en herinneringen. Niet alle processen hebben deadlines en herinneringen. De beheerder geeft aan of e-mailmeldingen worden verzonden voor deadlines en herinneringen. U kunt uw voorkeuren instellen voor het ontvangen van e-mailberichten.
 
@@ -342,16 +344,16 @@ Houd in mening dat voor een gebruiker om een taak in een gedeelde rij te zien, d
 
 **Uw wachtrij delen**
 
-1. Klik op het tabblad **Wachtrijen** op het tabblad **Voorkeuren** op het pictogram ‘+’ voor &#39;Gebruikers die mijn wachtrij momenteel delen&#39;.
+1. In de **Queues** in de **Voorkeuren** Klik op het plusteken (+) voor &#39;Gebruikers die mijn wachtrij momenteel delen&#39;.
 1. Zoek en selecteer de naam van de gebruiker.
-1. Klik **Share** knoop, om uw Rij met de geselecteerde gebruiker te delen.
-1. Selecteer de naam van de gebruiker en klik **Delen**.
+1. Klikken **Delen** om de wachtrij te delen met de geselecteerde gebruiker.
+1. Selecteer de naam van de gebruiker en klik op **Delen**.
 
    >[!NOTE]
    >
-   >U kunt een gebruiker verwijderen uit het delen van uw lijst Aan-doe door **X** pictogram aan het eind van de rij te klikken waarin de gebruiker vermeld is.
+   >U kunt een gebruiker verwijderen uit het delen van uw lijst Aan-doe door te klikken **X** aan het einde van de rij waarin de gebruiker wordt weergegeven.
 
-### Andere wachtrijen {#accessing-other-queues} openen
+### Andere wachtrijen openen {#accessing-other-queues}
 
 U kunt toegang tot een lijst van te doen van een andere gebruiker verzoeken om om het even welke nieuwe taken in de te doen lijst van de gebruiker te bekijken en te eisen.
 
@@ -361,15 +363,15 @@ Als u toegang krijgt tot de lijst Aan-doe van een andere gebruiker, kunt u geen 
 
 **Andere wachtrij openen**
 
-1. Open op het tabblad **Voorkeuren** het tabblad **Wachtrijen**.
+1. In de **Voorkeuren** tabblad, opent u de **Queues** tab.
 1. Klik op &#39;+&#39; voor de gebruikerswachtrijen waartoe ik toegang heb. Zoek de naam van de gebruiker in het pop-updialoogvenster.
-1. Selecteer de naam van de gebruiker en klik **Verzoek**.
+1. Selecteer de naam van de gebruiker en klik op **Verzoek**.
 
    >[!NOTE]
    >
-   >U kunt uw toegang tot een andere te doen lijst verwijderen door de gebruikersnaam van de Gebruikerslijsten te selecteren die ik Toegang tot lijst heb en **X** aan het eind van de rij te klikken die de naam van de gebruiker noemt. U kunt uw toegang tot een andere lijst van te doen niet verwijderen wanneer het verzoek om tot de lijst van te doen nog hangend is.
+   >U kunt uw toegang tot een andere te doen lijst verwijderen door de gebruikersnaam van de Gebruikerslijsten te selecteren die ik Toegang tot lijst heb en te klikken **X** aan het einde van de rij waarin de naam van de gebruiker wordt vermeld. U kunt uw toegang tot een andere lijst van te doen niet verwijderen wanneer het verzoek om tot de lijst van te doen nog hangend is.
 
-## Voorkeuren voor buiten het kantoor instellen {#setting-out-of-office-preferences}
+## Voorkeuren instellen voor Buiten het kantoor {#setting-out-of-office-preferences}
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan taken gebeurt die aan u voor die periode worden toegewezen.
 
@@ -383,18 +385,18 @@ U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U k
 
 ### Voorkeuren voor buiten het kantoor instellen {#set-out-of-office-preferences}
 
-1. Klik **Voorkeuren** en klik **Uit Bureau**.
+1. Klikken **Voorkeuren** en klik op **Buiten kantoor**.
 1. Voer een van de volgende stappen uit om op te geven wanneer u buiten het kantoor bent:
 
-   * Om te specificeren dat u nu uit het bureau voor een onbepaalde tijdspanne, in **I momenteel** lijst bent, uitgezocht **uit het Bureau** maar voeg geen datumwaaier toe.
-   * Om een begindatum en een tijd te specificeren dat u uit het bureau en &quot;+&quot;voor **Buiten Bureau Programma** bent. Gebruik de kalender en de tijdlijst om de begindatum en de tijd te specificeren. Als u geen einddatum en -tijd opgeeft, wordt u geacht eindeloos uit het kantoor te zijn vanaf de begindatum en -tijd totdat u uw voorkeuren wijzigt.
+   * Om aan te geven dat u nu voor onbepaalde tijd buiten het kantoor bent, kunt u **Ik ben momenteel** list, selecteer **Buiten het Bureau** maar voeg geen datumbereik toe.
+   * Als u een begindatum en -tijd wilt opgeven die buiten het kantoor vallen, klikt u op &#39;+&#39; voor **Buiten kantoorplanning**. Gebruik de kalender en de tijdlijst om de begindatum en de tijd te specificeren. Als u geen einddatum en -tijd opgeeft, wordt u geacht eindeloos uit het kantoor te zijn vanaf de begindatum en -tijd totdat u uw voorkeuren wijzigt.
 
-1. Om te specificeren hoe uw taken door gebrek moeten worden behandeld, selecteer één van deze opties van **wanneer uit het Bureau: Standaard Gebruiker voor uit de taken van het Bureau** lijst:
+1. Om te specificeren hoe uw taken door gebrek moeten worden behandeld, selecteer één van deze opties van **Wanneer uit het Bureau: Standaardgebruiker voor taken buiten Office** lijst:
 
-   * Selecteer **Wijs niet** toe om taken in uw te houden lijst te doen tot u terugkeert.
-   * Selecteer **Gebruiker zoeken** om naar een gebruiker te zoeken om uw taken aan toe te wijzen. Wanneer u een gebruiker selecteert, kunt u hun uit-van-bureauprogramma ook bekijken.
+   * Selecteren **Niet toewijzen** om taken in uw lijst te houden Aan-doet tot u terugkeert.
+   * Selecteren **Gebruiker zoeken** om te zoeken naar een gebruiker waaraan uw taken moeten worden toegewezen. Wanneer u een gebruiker selecteert, kunt u hun uit-van-bureauprogramma ook bekijken.
 
-1. Om uitzonderingen op het gebrek te plaatsen, klik + voor **Uitzonderingen van het Proces**, selecteer het proces om een uitzondering tot stand te brengen voor, en dan een verschillende gebruiker te selecteren of **wijs** van **niet toe wordt toegewezen aan** lijst.
+1. Als u uitzonderingen op de standaardwaarde wilt instellen, klikt u op + for **Uitzonderingen verwerken** selecteert u het proces waarvoor u een uitzondering wilt maken en selecteert u een andere gebruiker of selecteert u **Niet toewijzen** van de **is toegewezen aan** lijst.
 
    >[!NOTE]
    >

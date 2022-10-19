@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
+source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
 workflow-type: tm+mt
-source-wordcount: '3525'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ Wanneer u filters maakt, kunt u een pad definiëren of een reguliere expressie g
 
 | Type regel | Beschrijving |
 |---|---|
-| include | Als een map wordt opgenomen, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
+| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
 | uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten. |
 
 Pakketfilters worden meestal gedefinieerd wanneer u het eerst [Maak het pakket.](#creating-a-new-package) U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
@@ -485,7 +485,7 @@ Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats t
 
 >[!CAUTION]
 >
->Als u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
+>Wanneer u een pakket installeert, kan bestaande inhoud worden overschreven of verwijderd. Upload een pakket alleen als u zeker weet dat de benodigde inhoud niet wordt verwijderd of overschreven.
 
 Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de inhoud bevat die wordt overschreven. Deze momentopname wordt opnieuw geïnstalleerd als u het pakket verwijdert.
 
@@ -506,6 +506,16 @@ Voordat u het pakket installeert, maakt Package Manager automatisch een pakket m
 1. Klikken **Installeren**.
 
 1. In het activiteitenlog wordt de voortgang van de installatie beschreven.
+
+>[!CAUTION]
+>
+>* Als u digitale elementen installeert, moet u:
+   >  Deactiveer eerst de WorkflowLauncher.
+   >  Gebruik de het menuoptie van Componenten van de console OSGi om te deactiveren
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Vervolgens activeert u de WorkflowLauncher opnieuw wanneer de installatie is voltooid.
+>
+>Als u de WorkflowLauncher deactiveert, zorgt u ervoor dat het framework voor het importeren van middelen de elementen niet (onbedoeld) manipuleert bij de installatie.
 
 Nadat de installatie is voltooid en voltooid, wordt de pakketlijst bijgewerkt en wordt het woord **Geïnstalleerd** wordt weergegeven in de pakketstatus.
 
@@ -551,7 +561,7 @@ Als u een pakket verwijdert, worden alleen de gegevens uit Package Manager verwi
 
 1. Pakketbeheer vraagt om bevestiging dat u het pakket wilt verwijderen. Klikken **OK** om de schrapping te bevestigen.
 
-1. De pakketinformatie wordt verwijderd en de details worden vermeld in het activiteitenlog.
+1. De pakketinformatie wordt verwijderd en de details worden gerapporteerd in het activiteitenlog.
 
 ### Pakketten repliceren {#replicating-packages}
 

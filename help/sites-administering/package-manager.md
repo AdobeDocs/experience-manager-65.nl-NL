@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
+source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 0%
@@ -489,6 +489,16 @@ Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats t
 
 Voordat u het pakket installeert, maakt Package Manager automatisch een pakket met momentopnamen dat de inhoud bevat die wordt overschreven. Deze momentopname wordt opnieuw geïnstalleerd als u het pakket verwijdert.
 
+>[!CAUTION]
+>
+>* Als u digitale elementen installeert, moet u:
+   >  Deactiveer eerst de WorkflowLauncher.
+   >  Gebruik de het menuoptie van Componenten van de console OSGi om te deactiveren
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Vervolgens activeert u de WorkflowLauncher opnieuw wanneer de installatie is voltooid.
+>
+>Als u de WorkflowLauncher deactiveert, zorgt u ervoor dat het framework voor het importeren van middelen de elementen niet (onbedoeld) manipuleert bij de installatie.
+
 1. [Access Package Manager.](#accessing)
 
 1. Open in de pakketlijst de pakketdetails van het pakket dat u wilt installeren door op de pakketnaam te klikken.
@@ -506,16 +516,6 @@ Voordat u het pakket installeert, maakt Package Manager automatisch een pakket m
 1. Klikken **Installeren**.
 
 1. In het activiteitenlog wordt de voortgang van de installatie beschreven.
-
->[!CAUTION]
->
->* Als u digitale elementen installeert, moet u:
-   >  Deactiveer eerst de WorkflowLauncher.
-   >  Gebruik de het menuoptie van Componenten van de console OSGi om te deactiveren
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* Vervolgens activeert u de WorkflowLauncher opnieuw wanneer de installatie is voltooid.
->
->Als u de WorkflowLauncher deactiveert, zorgt u ervoor dat het framework voor het importeren van middelen de elementen niet (onbedoeld) manipuleert bij de installatie.
 
 Nadat de installatie is voltooid en voltooid, wordt de pakketlijst bijgewerkt en wordt het woord **Geïnstalleerd** wordt weergegeven in de pakketstatus.
 

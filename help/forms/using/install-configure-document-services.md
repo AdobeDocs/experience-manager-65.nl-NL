@@ -1,19 +1,20 @@
 ---
 title: Documentservices installeren en configureren
 seo-title: Installing and configuring document services
-description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms.
+description: Installeer AEM Forms-documentservices om PDF-documenten te maken, samen te stellen, te verspreiden, te archiveren, digitale handtekeningen toe te voegen om de toegang tot documenten te beperken en Barcoded Forms te decoderen.
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
+source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
 workflow-type: tm+mt
-source-wordcount: '5362'
+source-wordcount: '5372'
 ht-degree: 0%
 
 ---
+
 
 # Documentservices installeren en configureren {#installing-and-configuring-document-services}
 
@@ -286,14 +287,6 @@ Voer de volgende stappen uit om IBM® SSL-socketprovider te configureren:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Alleen Windows) Configureer de service Inkt en handschrift installeren {#configure-install-ink-and-handwriting-service}
-
-Als u Microsoft® Windows Server gebruikt, configureert u de inkt- en handschriftenservice. De service is vereist voor het openen van Microsoft® PowerPoint-bestanden die inktmogelijkheden van Microsoft® Office gebruiken:
-
-1. Open Serverbeheer. Klik op de knop **[!UICONTROL Server Manager]** op de snelstartlade.
-1. Klikken **[!UICONTROL Add Features]** in de **[!UICONTROL Features]** -menu. Selecteer **[!UICONTROL Ink and Handwriting Services]** selectievakje.
-1. **[!UICONTROL Select Features]** dialoogvenster met **[!UICONTROL Ink and Handwriting Services]** geselecteerd. Klikken **[!UICONTROL Install]** en de service is geïnstalleerd.
-
 ### (Alleen Windows) Configureer de instellingen voor bestandsblokken voor Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Wijzig de instellingen van het Microsoft® Office-vertrouwenscentrum om de service PDF Generator in staat te stellen bestanden die zijn gemaakt met oudere versies van Microsoft® Office, om te zetten.
@@ -479,7 +472,9 @@ In Microsoft® Windows gebruikt de service PDF Generator Adobe Acrobat om onders
 
    1. Openen [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) en download de `adobe-aemfd-pdfg-common-pkg-[version].zip` in Package Manager.
    1. Pak het gedownloade .zip-bestand uit. Open de opdrachtprompt met beheerdersrechten.
-   1. Ga naar de [uitgepakt-zip-bestand]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Voer het volgende batchbestand uit:
+   1. Ga naar de `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+   1. De `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Ga naar de `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Voer het volgende batchbestand uit:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
@@ -589,7 +584,7 @@ De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reade
 
 ## Systeemgereedheid (SRT) {#SRT}
 
-Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine gevormd behoorlijk om de omzettingen van de Generator van de PDF in werking te stellen. Het hulpmiddel produceert rapport bij de gespecificeerde weg. Het gereedschap uitvoeren:
+De [Gereedschap Systeemgereedheid](#srt-configuration) controleert of de computer correct is geconfigureerd om conversies van PDF Generator uit te voeren. Het hulpmiddel produceert rapport bij de gespecificeerde weg. Het gereedschap uitvoeren:
 
 1. Opdrachtprompt openen. Ga naar de `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` map.
 
@@ -597,39 +592,47 @@ Het hulpmiddel van de Gereedheid van het Systeem controleert of wordt de machine
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   Het bevel produceert rapport en leidt ook tot het srt_config.yaml- dossier.
+   Het bevel produceert rapport en leidt ook tot het srt_config.yaml- dossier. U kunt het gebruiken om opties voor het hulpmiddel te vormen SRT. Het is facultatief om opties voor het hulpmiddel te vormen SRT.
 
    >[!NOTE]
    >
    > * Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
-   >
-   > * U kunt het srt_config.yaml- dossier gebruiken om diverse montages van te vormen. De bestandsindeling is:
 
-       # SRT-configuratie
-       
-       # Opmerking - Volg de juiste notatie om mislukte parseren te voorkomen
-       
-       # bijv. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
-       
-       #locale: (verplicht veld)Landinstelling voor SRT. Ondersteunde landinstellingen [en/fr/de/ja].
-       landinstelling: en
-       
-       #aemTempDir: AEM Temp, map
-       aemTempDir:
-       
-       #users: PDF-conversiegebruikerslijst opgeven
-       #users:
-       # - gebruiker1
-       # - gebruiker2
-       gebruikers:
-       
-       #profile: Selecteer profiel om specifieke controles uit te voeren. Kies uit [LCM], er worden binnenkort meer toegevoegd
-       profiel:
-       
-       #outputDir: map waarin uitvoerbestanden worden opgeslagen
-       outputDir:
-   >
 1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
+
+### Opties configureren voor het SRT-gereedschap {#srt-configuration}
+
+U kunt het srt_config.yaml- dossier gebruiken om diverse montages voor het hulpmiddel te vormen SRT. De bestandsindeling is:
+
+```shell
+   # =================================================================
+   # SRT Configuration
+   # =================================================================
+   #Note - follow correct format to avoid parsing failures
+   #e.g. <param name>:<space><param value> 
+   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+   locale: en
+   
+   #aemTempDir: AEM Temp direcotry
+   aemTempDir:
+   
+   #users: provide PDFG converting users list
+   #users:
+   # - user1
+   # - user2
+   users:
+   
+   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+   profile:
+   
+   #outputDir: directory where output files will be saved
+   outputDir:
+```
+
+* **Landinstelling:** Het is een verplichte parameter. De klasse biedt ondersteuning voor Engels(en), Duits (de), Frans (fr) en Japans(ja). De standaardwaarde is en. Het heeft geen gevolgen voor de diensten van de Generator van PDF die op AEM Forms op OSGi lopen.
+* **aemTempDir:** Het is een optionele parameter. Hiermee wordt de tijdelijke opslaglocatie van Adobe Experience Manager opgegeven.
+* **gebruikers:** Het is een optionele parameter. U kunt een gebruiker specificeren om te controleren of de gebruiker toestemmingen en lees/schrijf toegang op folders heeft die worden vereist om de Generator van de PDF in werking te stellen. Als geen gebruiker wordt gespecificeerd, worden de gebruiker-specifieke controles overgeslagen en getoond zoals ontbroken in het rapport.
+* **outputDir:** Specificeer de plaats om het SRT- rapport te bewaren. De standaardplaats is de huidige het werk folder van het hulpmiddel SRT.
 
 ## Problemen oplossen
 
@@ -655,7 +658,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 * Zorg ervoor dat 32-bits [ondersteunde versie ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van Microsoft Office is geïnstalleerd en het openen van dialoogvensters wordt voor alle toepassingen geannuleerd.
 * Zorg ervoor dat een gebruiker van de PDF Generator in de configuratie-UI van de PDF wordt toegevoegd.
 * Zorg ervoor dat de gebruiker van de PDF Generator lid is van de beheerdersgroep en de [Een token op procesniveau vervangen](#grant-the-replace-a-process-level-token-privilege) bevoegdheden wordt ingesteld voor de gebruiker.
-* Zorg ervoor dat de gebruiker in de UI van de Generator van PDF wordt gevormd en voer de volgende acties uit:
+* Zorg ervoor dat de gebruiker in de UI van de Generator van PDF wordt gevormd en voert de volgende acties uit:
    1. Meld u aan bij de Microsoft® Windows met de gebruiker van de PDF Generator.
    1. Open Microsoft® Office- of OpenOffice-toepassingen en annuleer alle dialoogvensters.
    1. Stel Adobe PDF in als standaardprinter.
@@ -668,7 +671,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 * Installeer de [ondersteunde versie](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) van OpenOffice. AEM Forms ondersteunt zowel 32-bits als 64-bits versies. Na het installeren, open alle toepassingen OpenOffice, annuleer alle dialoogvensters, en sluit de toepassingen. Open de toepassingen opnieuw en controleer of er geen dialoogvenster wordt weergegeven wanneer u een OpenOffice-toepassing opent.
 
-* Een omgevingsvariabele maken `OpenOffice_PATH` en stelt u deze zo in dat deze naar de OpenOffice-installatie wijst, is ingesteld in het dialoogvenster [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt-profiel (apparaatstructuur).
+* Een omgevingsvariabele maken `OpenOffice_PATH` en deze zo instellen dat deze naar de OpenOffice-installatie wijst, is ingesteld in het dialoogvenster [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) of het dt-profiel (apparaatstructuur).
 * Als er problemen zijn met de installatie van OpenOffice, controleert u of [32-bits bibliotheken](#extrarequirements) is vereist voor OpenOffice-installatie.
 
 +++
@@ -762,7 +765,7 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeemgeree
 
 * Als u een bestaande licentie van Adobe Acrobat hebt en deze is verlopen, [Download de nieuwste versie van Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html)en het migreren van uw serienummer. Voor [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Gebruik de volgende opdrachten om prov.xml te genereren en de bestaande installatie opnieuw te serialiseren met behulp van het bestand prov.xml in plaats van de opdrachten in [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) nummerartikel.
+   * Gebruik de volgende opdrachten om prov.xml te genereren en de bestaande installatie opnieuw te erialiseren met behulp van het bestand prov.xml in plaats van de opdrachten in [serienummer migreren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) nummerartikel.
 
           &quot;
           

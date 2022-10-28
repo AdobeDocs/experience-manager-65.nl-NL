@@ -4,9 +4,9 @@ description: Leer hoe u een upgrade op locatie kunt uitvoeren.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
-source-wordcount: '1256'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -116,8 +116,6 @@ Wanneer `<<YOUR_PROFILE>>` en `<<ADDITIONAL_FLAGS>>` worden vervangen door het p
 
 * Als u de upgrade uitvoert op een Windows-systeem waar Java-geheugentoewijzing niet correct wordt verwerkt, voegt u de opdracht `--disable-mmap` aan het bevel.
 
-* Als u Java 7 gebruikt, voegt u de opdracht `-XX:MaxPermSize=2048m` parameter net na de `-Xmx` parameter.
-
 Voor meer instructies over het gebruik van het crx2oak-gereedschap raadpleegt u het dialoogvenster [CRX2Oak-migratiehulpmiddel](/help/sites-deploying/using-crx2oak.md). U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De installatiemap van AEM bevindt zich op de volgende locatie: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. De nieuwste versie van het CRX2Oak-migratiehulpprogramma kan worden gedownload van de Adobe Repository op: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Als de migratie is voltooid, wordt het gereedschap afgesloten met de afsluitcode nul. Controleer bovendien op WAARSCHUWING- en FOUTberichten in het dialoogvenster `upgrade.log` bestand, zich onder `crx-quickstart/logs` in de AEM installatiemap, aangezien deze kunnen wijzen op niet-fatale fouten die zich tijdens de migratie hebben voorgedaan.
@@ -181,7 +179,7 @@ Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal
 1. Zoek het AEM. Het zal er ongeveer als volgt uitzien:
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
 1. Wijzig het bevel door de weg aan het bestaande kruis te vervangen ( `crx-quickstart/app/aem-quickstart*.jar` in dit geval ) met de nieuwe jar die een zusterbeweging is van de `crx-quickstart` map. Gebruikend ons vorige bevel als voorbeeld, zou ons bevel zijn:

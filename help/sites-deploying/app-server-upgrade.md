@@ -3,7 +3,7 @@ title: Upgradestappen voor installatie van toepassingsservers
 description: Leer hoe te om instanties van AEM te bevorderen die via de Servers van de Toepassing worden opgesteld.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 5e875e0420540ca209e7d677046e8d010ae4e145
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 1. Migreer nu de opslagplaats met het crx2oak-migratiehulpprogramma. Download hiervoor de meest recente versie van crx2oak van [deze locatie](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
 1. Verwijder de benodigde eigenschappen in het bestand sling.properties door het volgende te doen:

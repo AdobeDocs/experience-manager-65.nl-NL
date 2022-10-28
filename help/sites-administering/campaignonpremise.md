@@ -1,381 +1,252 @@
 ---
 title: Integreren met Adobe Campaign Classic
-seo-title: Integreren met Adobe Campaign Classic
+seo-title: Integrating with Adobe Campaign Classic
 description: Leer hoe u AEM met Adobe Campaign Classic kunt integreren
-seo-description: Leer hoe u AEM met Adobe Campaign Classic kunt integreren
+seo-description: Learn how to integrate AEM with Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
-translation-type: tm+mt
-source-git-commit: 684d2d5f73d571a15c8155e7870134c28dc892b7
+exl-id: a7281ca0-461f-4762-a631-6bb539596200
+source-git-commit: 7fed5ce55f6ee7638d2578ee7ef2d84deb24277f
 workflow-type: tm+mt
-source-wordcount: '2270'
+source-wordcount: '1554'
 ht-degree: 0%
 
 ---
 
 
-# Integreren met Adobe Campaign Classic{#integrating-with-adobe-campaign-classic}
+# Integreren met Adobe Campaign Classic {#integrating-campaign-classic}
 
->[!NOTE]
->
->In deze documentatie wordt beschreven hoe u AEM kunt integreren met Adobe Campaign Classic, de on-premise oplossing. Als u Adobe Campaign Standard gebruikt, zie [Integratie met Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) voor die instructies.
+Door AEM met Adobe Campaign te integreren, kunt u de levering van e-mail, inhoud en formulieren direct in AEM beheren. De stappen van de configuratie in zowel Adobe Campaign Classic als AEM zijn nodig om bidirectionele communicatie tussen oplossingen toe te laten.
 
-Met Adobe Campaign kunt u inhoud en formulieren voor e-maillevering rechtstreeks in Adobe Experience Manager beheren.
+Dankzij deze integratie kunnen AEM en Adobe Campaign Classic onafhankelijk worden gebruikt. Marketers kunnen campagnes maken en doelgericht gebruik maken in Adobe Campaign, terwijl makers van inhoud tegelijkertijd in AEM aan het ontwerpen van inhoud kunnen werken. Dankzij de integratie kunnen de inhoud en het ontwerp van de campagne in AEM door Adobe Campaign worden gericht en geleverd.
 
-Om beide oplossingen samen tezelfdertijd te gebruiken, moet u hen eerst vormen om met elkaar te verbinden. Dit omvat configuratiestappen in zowel Adobe Campaign als Adobe Experience Manager. Deze stappen worden in dit document uitgebreid beschreven.
+## Integratiestappen {#integration-steps}
 
-Het werken met Adobe Campaign in AEM omvat de capaciteit om e-mail via Adobe Campaign te verzenden en wordt beschreven bij [Werken met Adobe Campaign](/help/sites-authoring/campaign.md). Dit omvat ook het gebruik van formulieren op AEM pagina&#39;s voor het bewerken van gegevens.
+De integratie tussen AEM en Campagne vereist een aantal stappen in beide oplossingen.
 
-Bovendien kunnen de volgende onderwerpen van belang zijn wanneer het integreren van AEM met [Adobe Campaign](https://helpx.adobe.com/support/campaign/classic.html):
+1. [Installeer het AEM integratiepakket in de campagne.](#install-package)
+1. [Een operator maken voor AEM in campagne](#create-operator)
+1. [Integratie van campagnes configureren in AEM](#campaign-integration)
+1. [De AEM ExternalAlizer configureren](#externalizer)
+1. [De externe gebruiker van de campagne configureren in AEM](#configure-user)
+1. [De externe AEM-account configureren in Campagne](#acc-setup)
 
-* [Aanbevolen procedures voor e-mailsjablonen](/help/sites-administering/best-practices-for-email-templates.md)
-* [Problemen met Adobe Campaign-integratie oplossen](/help/sites-administering/troubleshooting-campaignintegration.md)
+Dit document leidt u door elk van deze stappen in detail.
 
-Als u uw integratie met Adobe Campaign uitbreidt, wilt u wellicht de volgende pagina&#39;s zien:
+## Vereisten {#prerequisites}
 
-* [Aangepaste extensies maken](/help/sites-developing/extending-campaign-extensions.md)
-* [Aangepaste formuliertoewijzingen maken](/help/sites-developing/extending-campaign-form-mapping.md)
+* Toegang tot Adobe Campaign Classic voor beheerders
+   * Om de integratie uit te voeren, hebt u een werkende instantie van Adobe Campaign Classic, met inbegrip van een gevormd gegevensbestand nodig.
+   * Raadpleeg voor meer informatie over het instellen en configureren van Adobe Campaign Classic de [Adobe Campaign Classic-documentatie;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) met name de gids Installatie en Configuratie.
+* Toegang van beheerders tot AEM
 
-## AEM en Adobe Campaign Integration Workflow {#aem-and-adobe-campaign-integration-workflow}
+## Het AEM integratiepakket installeren in een campagne {#install-package}
 
-In deze sectie wordt een typische workflow beschreven tussen AEM en Adobe Campaign bij het maken van campagnes en het leveren van inhoud.
+De **AEM integratie** -pakket in Adobe Campaign bevat een aantal standaardconfiguraties die nodig zijn om verbinding te maken met AEM.
 
-De typische werkstroom omvat het volgende en wordt in detail beschreven:
+1. Meld u als beheerder aan bij de Adobe Campaign-instantie met de clientconsole.
 
-1. Begin uw campagne te ontwikkelen (zowel in Adobe Campaign als AEM).
-1. Voordat u de inhoud en levering koppelt, past u de inhoud aan in AEM en maakt u een levering in Adobe Campaign.
-1. Inhoud en levering koppelen in Adobe Campaign.
+1. Selecteren **Gereedschappen** > **Geavanceerd** > **Pakket importeren...**.
 
-### Uw campagne starten {#start-building-your-campaign}
+   ![Pakket importeren](assets/import-package.png)
 
-Je begint op elk moment een campagne te ontwikkelen. Voordat u de inhoud met elkaar verbindt, zijn AEM en AC onafhankelijk. Dit betekent dat marketers hun campagnes kunnen starten en zich kunnen richten in Adobe Campaign, terwijl makers van inhoud aan het ontwerp werken in AEM.
+1. Klikken **Een standaardpakket installeren** en klik vervolgens op **Volgende**.
 
-### Vóór het koppelen van inhoud en levering {#before-linking-content-and-delivery}
+1. Controleer de **AEM integratie** pakket.
 
-Voordat u de inhoud koppelt en een leveringsmechanisme maakt, moet u het volgende doen:
+   ![Een standaardpakket installeren](assets/select-package.png)
 
-**In AEM**
+1. Klikken **Volgende** en vervolgens **Start** om de installatie te starten.
 
-* Personaliseer gebruikend de verpersoonlijkingsgebieden in **Tekst &amp; Personalisatie** component
+   ![Voortgang van installatie](assets/installation.png)
 
-**In Adobe Campaign**
+1. Klikken **Sluiten** als de installatie is voltooid.
 
-* Een levering maken van het type **aemContent**
+Het integratiepakket is nu geïnstalleerd.
 
-### Inhoud koppelen en levering instellen {#linking-content-and-setting-delivery}
+## Operator for AEM in Campaign maken {#create-operator}
 
-Nadat u de inhoud voor het verbinden en levering hebt voorbereid, bepaalt u precies hoe en waar om inhoud te verbinden.
+Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt om verbinding te maken met Adobe Campaign. U moet een veiligheidsstreek voor deze exploitant bepalen en zijn wachtwoord plaatsen.
 
-Al deze stappen zijn voltooid in Adobe Campaign.
+1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
-1. Geef op welke AEM instantie moet worden gebruikt.
-1. Synchroniseer de inhoud door op de knop Synchroniseren te klikken.
-1. Open de inhoudkiezer om de inhoud te kiezen.
+1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
 
-### Als u nog niet eerder {#if-you-are-new-to-aem} hebt AEM
+1. Navigeer in de verkenner naar de **Beheer** > **Toegangsbeheer** > **Operatoren** knooppunt.
 
-Als u nog niet eerder AEM, zijn de volgende koppelingen wellicht handig voor AEM:
+1. Selecteer `aemserver` operator.
 
-* [AEM starten](/help/sites-deploying/deploy.md)
-* [Replicatieagents begrijpen](/help/sites-deploying/replication.md)
-* [Logbestanden zoeken en gebruiken](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
-* [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
+1. Op de **Bewerken** selecteert u de **Toegangsrechten** subtab en klik vervolgens op de knop **Bewerk de toegangsparameters...** koppeling.
 
-## Adobe Campaign {#configuring-adobe-campaign} configureren
+   ![Beveiligingszone instellen](assets/access-rights.png)
 
-Bij het configureren van Adobe Campaign gaat het om het volgende:
+1. Selecteer de aangewezen veiligheidsstreek en bepaal zonodig het vertrouwde op IP masker.
 
-1. Het integratiepakket voor AEM installeren in Adobe Campaign.
-1. Een externe account configureren.
-1. Controleren of AEMResourceTypeFilter correct is geconfigureerd.
+1. Klikken **Opslaan**.
 
-Bovendien zijn er geavanceerde configuraties die u kunt maken, die omvatten:
+1. Afmelden bij de Adobe Campaign-client.
 
-* Inhoudsblokken beheren
-* Verpersoonlijkingsvelden beheren
+1. Navigeer in het bestandssysteem van de Adobe Campaign-server naar de installatielocatie voor Campagne en bewerk de `serverConf.xml` als beheerder. Dit bestand bevindt zich doorgaans onder:
+   * `C:\Program Files\Adobe\Adobe Campaign Classic v7\conf` in Windows.
+   * `/usr/local/neolane/nl6/conf/eng` in Linux.
 
-Zie [Geavanceerde configuraties](#advanced-configurations).
+1. Zoeken naar `securityZone` en ervoor zorgen dat de volgende parameters worden ingesteld voor de beveiligingszone van de AEM.
 
->[!NOTE]
->
->Als u deze bewerkingen wilt uitvoeren, moet u de rol **administration** in Adobe Campaign hebben.
+   * `allowHTTP="true"`
+   * `sessionTokenOnly="true"`
+   * `allowUserPassword="true"`.
 
-### Vereisten {#prerequisites}
+1. Sla het bestand op.
 
-Zorg ervoor dat u de volgende elementen vooraf hebt:
+1. Zorg ervoor dat de beveiligingszone niet wordt overschreven door de desbetreffende instelling in het dialoogvenster `config-<server name>.xml` bestand.
 
-* [Een AEM-ontwerpinstantie](/help/sites-deploying/deploy.md#getting-started)
-* [Een AEM-publicatie-instantie](/help/sites-deploying/deploy.md#author-and-publish-installs)
-* [Een Adobe Campaign Classic-instantie](https://helpx.adobe.com/support/campaign/classic.html)  - inclusief een client en een server
-* Internet Explorer 11
+   * Als het configuratiebestand een afzonderlijke instelling voor de beveiligingszone bevat, wijzigt u de instelling `allowUserPassword` kenmerk naar `true`.
 
->[!NOTE]
->
->Als u een versie vroeger dan Adobe Campaign Classic bouwt 8640 in werking stelt, zie [verbeteringsdocumentatie](https://docs.campaign.adobe.com/doc/AC6.1/en/PRO_Updating_Adobe_Campaign_Upgrading.html) voor meer informatie. Merk op dat zowel de cliënt als het gegevensbestand aan zelfde bouwstijl moeten worden bevorderd.
-
->[!CAUTION]
->
->Bewerkingen die worden beschreven in de secties [Adobe Campaign configureren](#configuring-adobe-campaign) en [Adobe Experience Manager configureren](#configuring-adobe-experience-manager) zijn nodig om de integratiefuncties tussen AEM en Adobe Campaign correct te laten werken.
-
-### Installatie van het AEM integratiepakket {#installing-the-aem-integration-package}
-
-U moet **AEM Integratie** pakket in Adobe Campaign installeren. Dit doet u als volgt:
-
-1. Ga naar de Adobe Campaign-instantie die u wilt koppelen aan AEM.
-1. Selecteer *Gereedschappen* > *Geavanceerd* > *Pakket importeren..*.
-
-   ![chlimage_1-132](assets/chlimage_1-132a.png)
-
-1. Klik **Installeer een standaardpakket**, dan selecteer **AEM Integratie** pakket.
-
-   ![chlimage_1-133](assets/chlimage_1-133a.png)
-
-1. Klik **Volgende**, en dan **Begin**.
-
-   Dit pakket bevat de **aemserver** operator die wordt gebruikt om de AEM server aan te sluiten op Adobe Campaign.
+1. Als u de Adobe Campaign Classic-serverpoort wilt wijzigen, vervangt u `8080` met de gewenste poort.
 
    >[!CAUTION]
    >
-   >Door gebrek, wordt geen veiligheidsstreek gevormd voor deze exploitant. Als u via AEM verbinding wilt maken met Adobe Campaign, moet u er een selecteren.
+   >Door gebrek, is er geen veiligheidsstreek die voor de exploitant wordt gevormd. Als u AEM verbinding wilt maken met Adobe Campaign, moet u een zone selecteren zoals in de vorige stappen wordt beschreven.
    >
-   >In het **serverConf.xml**-bestand moet het **allowUserPassword**-kenmerk van de geselecteerde beveiligingszone zijn ingesteld op **true** om AEM te machtigen om Adobe Campaign via aanmelding/wachtwoord te verbinden.
-   >
-   >We raden u ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg voor meer informatie de [Installatiegids](https://docs.campaign.adobe.com/doc/AC/en/INS_Additional_configurations_Configuring_Campaign_server.html).
+   >Adobe beveelt ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg voor meer informatie over dit onderwerp de [Adobe Campaign Classic-documentatie.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
-   ![chlimage_1-134](assets/chlimage_1-134a.png)
+1. Ga in de Campagne-client terug naar de `aemserver` en selecteert u de **Algemeen** tab.
 
-### Een AEM externe account {#configuring-an-aem-external-account} configureren
+1. Klik op de knop **Wachtwoord opnieuw instellen...** koppeling.
 
-U moet een externe account configureren waarmee u Adobe Campaign kunt verbinden met uw AEM.
+1. Geef een wachtwoord op en bewaar dit op een veilige locatie voor toekomstig gebruik.
+
+1. Klikken **OK** om het wachtwoord voor de `aemserver` operator.
+
+## Campagne-integratie configureren in AEM {#campaign-integration}
+
+AEM [de operator die u al hebt ingesteld in Campagne](#create-operator) om te communiceren met Campagne
+
+1. Meld u als beheerder aan bij de AEM ontwerpinstantie.
+
+1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Cloud Services** > **Oudere Cloud Services** > **Adobe Campaign** en klik vervolgens op **Nu configureren**.
+
+   ![Adobe Campaign configureren](assets/configure-campaign-service.png)
+
+1. In de dialoog, creeer een de dienstconfiguratie van de Campagne door een **Titel** en klik op **Maken**.
+
+   ![Het dialoogvenster Campagne configureren](assets/configure-campaign-dialog.png)
+
+1. Er wordt een nieuw venster en dialoogvenster geopend om de configuratie te bewerken. Verstrek de noodzakelijke informatie.
+
+   * **Gebruikersnaam** - Dit is [de Adobe Campaign AEM Integration package operator gemaakt in de vorige stap.](#create-operator) Standaard is dit `aemserver`.
+   * **Wachtwoord** - Dit is het wachtwoord voor [de Adobe Campaign AEM Integration package operator gemaakt in de vorige stap.](#create-operator)
+   * **API-eindpunt** - Dit is de URL van de Adobe Campaign-instantie.
+
+   ![Adobe Campaign configureren in AEM](assets/configure-campaign.png)
+
+1. Selecteren **Verbinding maken met Adobe Campaign** om de verbinding te verifiëren en klik vervolgens op **OK**.
+
+AEM kan nu communiceren met Adobe Campaign.
 
 >[!NOTE]
 >
->* Wanneer u het pakket **AEM Integration** installeert, wordt een externe AEM account gemaakt. U kunt de verbinding met uw AEM instantie van het vormen of nieuwe tot stand brengen.
->* Zorg er AEM voor dat u het wachtwoord voor de externe gebruiker van de campagne instelt. U moet dit wachtwoord instellen om Adobe Campaign te verbinden met AEM. Login als beheerder en in de console van het gebruikersbeleid, onderzoek naar de campagne-verre gebruiker en klik **Reeks Wachtwoord**.
+>Zorg ervoor dat uw Adobe Campaign-server via internet bereikbaar is. AEM heeft geen toegang tot particuliere netwerken.
 
->
+## Replicatie naar publicatie-instantie van AEM configureren {#replication}
 
+Campagne-inhoud wordt gemaakt door de auteurs van de inhoud op de AEM ontwerpinstantie. Dit exemplaar is typisch slechts intern beschikbaar bij uw organisatie. Als u inhoud, zoals afbeeldingen en elementen, toegankelijk wilt maken voor de ontvangers van uw campagne, moet u die inhoud publiceren.
 
+De replicatieagent is verantwoordelijk voor het publiceren van uw inhoud van de AEM auteurinstantie aan de publicatieinstantie en moet opstelling voor de integratie zijn behoorlijk te werken. Deze stap is ook nodig om bepaalde configuraties van ontwerpinstanties te repliceren in de publicatieinstantie.
 
-Een externe AEM-account configureren:
+Om replicatie van uw AEM auteursinstantie aan te vormen publiceer instantie:
 
-1. Ga naar **Beheer** > **Platform** > **Externe accounts**.
-1. Maak een nieuwe externe account en selecteer het type **AEM**.
-1. Voer de toegangsparameters voor de AEM ontwerpinstantie in: het serveradres en de id en het wachtwoord waarmee u verbinding maakt met deze instantie. Het wachtwoord van de campagne-api-gebruikersrekening is het zelfde als de campagne-verre gebruiker die u een wachtwoord voor in AEM plaatst.
+1. Meld u als beheerder aan bij de AEM ontwerpinstantie.
 
-   >[!NOTE]
-   >
-   >Zorg ervoor dat het serveradres **niet** eindigt in een sluitslash. Typ bijvoorbeeld `https://yourserver:4502` in plaats van `https://yourserver:4502/`
+1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Implementatie** > **Replicatie** > **Medewerkers op auteur** tikken of klikken **Standaardagent (publiceren)**.
 
-   ![chlimage_1-135](assets/chlimage_1-135a.png) ![chlimage_1-136](assets/chlimage_1-136a.png)
+   ![Replicatieagent configureren](assets/acc-replication-config.png)
 
-1. Zorg ervoor dat **Enabled** checkbox wordt geselecteerd.
+1. Tik of klik op **Bewerken** Selecteer vervolgens de **Vervoer** tab.
 
-### De optie AEMResourceTypeFilter {#verifying-the-aemresourcetypefilter-option} controleren
+1. Configureer de **URI** veld door de standaardwaarde te vervangen `localhost` waarde met het IP adres van de AEM het publiceren instantie.
 
-De optie **AEMResourceTypeFilter** wordt gebruikt om typen AEM te filteren die in Adobe Campaign kunnen worden gebruikt. Op deze manier kan Adobe Campaign AEM inhoud ophalen die specifiek is ontworpen voor gebruik in alleen Adobe Campaign.
+   ![Tabblad Vervoer](assets/acc-transport-tab.png)
 
-Deze optie moet vooraf worden geconfigureerd; als u deze optie wijzigt, kan dit echter tot een niet-functionerende integratie leiden.
+1. Tik of klik op **OK** om de veranderingen in de agentenmontages te bewaren.
 
-Om te verifiëren wordt de **optie AEMResourceTypeFilter** gevormd:
-
-1. Ga naar **Platform** >**Opties**.
-1. Controleer in de optie **AEMResourceTypeFilter** of de paden juist zijn. Dit veld moet de waarde bevatten:
-
-   **mcm/campagne/componenten/nieuwsbrief,mcm/campagne/componenten/campagne_newsletterpage,mcm/neolane/components/nieuwsbrief**
-
-   In sommige gevallen is de waarde als volgt:
-
-   **mcm/campagne/componenten/nieuwsbrief**
-
-   ![chlimage_1-137](assets/chlimage_1-137a.png)
-
-## Adobe Experience Manager {#configuring-adobe-experience-manager} configureren
-
-Om AEM te vormen, moet u het volgende doen:
-
-* Configureer replicatie tussen instanties.
-* Verbind AEM met Adobe Campaign via Cloud Services.
-* Configureer de externalizer.
-
-### Het vormen replicatie tussen AEM instanties {#configuring-replication-between-aem-instances}
-
-Inhoud die is gemaakt van de AEM authoring instantie wordt eerst naar de publishing-instantie verzonden. U moet publiceren zodat de afbeeldingen in de nieuwsbrief beschikbaar zijn op het publicatieexemplaar en aan ontvangers voor de nieuwsbrief. De replicatieagent moet daarom worden gevormd om van de AEM auteursinstantie aan de AEM het publiceren instantie te herhalen.
+U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagneontvangers tot uw inhoud toegang hebben.
 
 >[!NOTE]
 >
->Als u de replicatie-URL niet wilt gebruiken maar in plaats daarvan de publieksgerichte URL, kunt u **Openbare URL** in de volgende configuratie plaatsen die in OSGi (**AEM logo** > **Hulpmiddelen** pictogram > **Verrichtingen** > **Webconsole** > &lt;a 10/>OSGi Configuration **>** AEM Campagne Integration - Configuration **):**
-**Openbare URL:** com.day.cq.mcm.campagne.impl.IntegrationConfigImpl#aem.mcm.campagne.publicUrl
+>Als u niet replicatie URL wilt gebruiken maar in plaats daarvan openbaar-onder ogen ziet URL gebruiken, kunt u openbare URL in de volgende configuratie plaatsen die via OSGi plaatst
+>
+>Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Bewerkingen** > **Webconsole** > **OSGi-configuratie** en zoek naar **AEM Campagne-integratie - Configuratie**. De configuratie bewerken en het veld wijzigen **Openbare URL** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
 
-Deze stap is ook nodig om bepaalde configuraties van ontwerpinstanties te repliceren in de publicatieinstantie.
+## Het vormen van de AEM ExternalAlizer {#externalizer}
 
-Om replicatie tussen AEM instanties te vormen:
+[De externalizer](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. U moet het vormen opdat de integratie van de Campagne werkt.
 
-1. Selecteer **AEM logo** **Tools** pictogram > **Implementatie** > **Replication** > **Agents op auteur** en klik vervolgens op **Default Agent**.
+1. Meld u als beheerder aan bij de AEM-ontwerpinstantie.
+1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Bewerkingen** > **Webconsole** > **OSGi-configuratie** en zoek naar **Day CQ-koppeling ExternalAlizer**.
+1. Standaard wordt de laatste vermelding in het dialoogvenster **Domeinen** is bestemd voor de publicatie-instantie. De URL wijzigen vanuit de standaardinstelling `http://localhost:4503` naar uw openbaar beschikbare publicatie-instantie.
 
-   ![chlimage_1-138](assets/chlimage_1-138a.png)
+   ![Het vormen van Externalzer](assets/acc-externalizer-config.png)
 
-   >[!NOTE]
-   Vermijd het gebruik van localhost (een lokale kopie van AEM) bij het configureren van uw integratie met Adobe Campaign, tenzij de publicatie- en auteurinstantie beide op dezelfde computer staan.
+1. Tik of klik op **Opslaan**.
 
-1. Tik of klik op **Bewerken** en selecteer vervolgens het tabblad **Vervoer**.
-1. Vorm URI door **localhost** met het IP adres of het adres van de AEM het publiceren instantie te vervangen.
-
-   ![chlimage_1-139](assets/chlimage_1-139a.png)
-
-### AEM aansluiten op Adobe Campaign {#connecting-aem-to-adobe-campaign}
-
-Voordat u AEM en Adobe Campaign samen kunt gebruiken, moet u het verband tussen beide oplossingen tot stand brengen zodat zij kunnen communiceren.
-
-1. Verbind met uw AEM authoring instantie.
-1. Selecteer **AEM logo** > **Gereedschappen** pictogram > **Implementatie** > **Cloud Services** en **Configureer nu** in de sectie Adobe Campaign.
-
-   ![chlimage_1-140](assets/chlimage_1-140a.png)
-
-1. Maak een nieuwe configuratie door een **Titel** in te voeren en op **Maken** te klikken, of kies de bestaande configuratie die u met uw Adobe Campaign-instantie wilt koppelen.
-1. Bewerk de configuratie zodat deze overeenkomt met de parameters van uw Adobe Campaign-instantie.
-
-   * **Gebruikersnaam**:  **aemserver**, de Adobe Campaign AEM Integration package operator gebruikt om het verband tussen de twee oplossingen tot stand te brengen.
-   * **Wachtwoord**: Wachtwoord Adobe Campaign-beheerder. U moet het wachtwoord voor deze operator mogelijk rechtstreeks in Adobe Campaign opnieuw opgeven.
-   * **API-eindpunt**: Adobe Campaign-instantie-URL.
-
-1. Selecteer **Verbinding maken met Adobe Campaign** en klik op **OK**.
-
-   ![chlimage_1-141](assets/chlimage_1-141a.png)
-
-   >[!NOTE]
-   Nadat u [uw e-mail creeert en het publiceert](/help/sites-authoring/campaign.md), moet u de configuratie op uw publiceren instantie opnieuw publiceren.
-
-   ![chlimage_1-142](assets/chlimage_1-142a.png)
+U hebt de Externalzer geconfigureerd en Adobe Campaign heeft geen toegang tot uw inhoud.
 
 >[!NOTE]
-Als de verbinding ontbreekt, zorg ervoor u het volgende controleert:
-* Er kan een certificaatprobleem optreden wanneer u een beveiligde verbinding met een Adobe Campaign-instantie (https) gebruikt. U moet het Adobe Campaign-instantiecertificaat toevoegen aan het **cacerts**-bestand van de JDK van uw AEM-instantie.
-* Een veiligheidsstreek moet voor [aemserver exploitant](#connecting-aem-to-adobe-campaign) in Adobe Campaign worden gevormd. Bovendien moet in het **serverConf.xml**-bestand het **allowUserPassword**-kenmerk van de beveiligingszone zijn ingesteld op **true** om AEM verbinding met Adobe Campaign te autoriseren met de modus voor aanmelding/wachtwoord.
+De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als deze naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
 
-Daarnaast raadpleegt u [Problemen met uw integratie tussen AEM en Adobe Campaign oplossen](/help/sites-administering/troubleshooting-campaignintegration.md).
+## Het vormen van de campagne-verre Gebruiker in AEM {#configure-user}
 
-### De externalizer {#configuring-the-externalizer} configureren
+Als campagne moet communiceren met AEM, moet u een wachtwoord instellen voor de `campaign-remote` gebruiker in AEM.
 
-U moet [externalizer](/help/sites-developing/externalizer.md) in AEM op uw auteursinstantie vormen. ExternalAlizer is de dienst OSGi die u een middelweg in een externe en absolute URL laat omzetten. Deze service biedt een centrale plaats om die externe URL&#39;s te configureren en samen te stellen.
+1. Meld u aan bij AEM als beheerder.
+1. Klik op de hoofdnavigatieconsole op **Gereedschappen** in het linkerspoor.
+1. Klik vervolgens op **Beveiliging** -> **Gebruikers** om de gebruikersbeheerconsole te openen.
+1. Zoek de `campaign-remote` gebruiker.
+1. Selecteer `campaign-remote` gebruiker en klik op **Eigenschappen** om de gebruiker te bewerken.
+1. In de **Gebruikersinstellingen bewerken** venster, klikt u op **Wachtwoord wijzigen**.
+1. Geef de gebruiker een nieuw wachtwoord op en noteer het wachtwoord op een veilige locatie voor toekomstig gebruik.
+1. Klikken **Opslaan** om de wachtwoordwijziging op te slaan.
+1. Klikken **Opslaan en sluiten** om de wijzigingen in de `campaign-remote` gebruiker.
 
-Zie [De externalizer](/help/sites-developing/externalizer.md) voor algemene instructies configureren. Voor de integratie van Adobe Campaign moet u de publicatieserver op `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`niet richten naar `localhost:4503` maar naar een server die bereikbaar is door de Adobe Campaign-console.
+## De externe AEM-account configureren in campagne {#acc-setup}
 
-Als het verwijst naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden uw afbeeldingen niet weergegeven op de Adobe Campaign-console.
+Wanneer [installeren **AEM integratie** pakket in Campaign,](#install-package) er wordt een externe account voor AEM gemaakt. Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk is.
 
-![chlimage_1-143](assets/chlimage_1-143a.png)
+1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
-## Geavanceerde configuraties {#advanced-configurations}
+1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
 
-U kunt ook een aantal geavanceerde configuraties uitvoeren, namelijk:
+1. Navigeer in de verkenner naar de **Beheer** > **Platform** > **Externe rekeningen** knooppunt.
 
-* U kunt aanpassingsvelden en -blokken beheren.
-* Deactiveer een verpersoonlijkingsblok.
-* Doelextensiegegevens beheren.
+   ![Externe rekeningen](assets/external-accounts.png)
 
-### Beheren van verpersoonlijkingsgebieden en blokken {#managing-personalization-fields-and-blocks}
+1. Zoek de externe AEM. Standaard heeft het de volgende waarden:
 
-De velden en blokken die beschikbaar zijn om personalisatie aan uw e-mailinhoud in AEM toe te voegen, worden beheerd door Adobe Campaign.
+   * **Type** - `AEM`
+   * **Label** - `AEM Instance`
+   * **Interne naam** - `aemInstance`
 
-Er is een standaardlijst opgegeven, maar deze kan worden gewijzigd. U kunt ook aanpassingsvelden en blokken toevoegen of verbergen.
+1. Op de **Algemeen** van dit account, voert u de gebruikersgegevens in die u in het [Wachtwoord voor externe gebruiker voor campagne instellen](#set-campaign-remote-password) stap.
 
-#### Een aanpassingsveld {#adding-a-personalization-field} toevoegen
+   * **Server** - Het AEM serveradres van de auteur
+      * De AEM auteurserver moet van de de serverinstantie van Adobe Campaign Classic bereikbaar zijn.
+      * Controleer of het serveradres **niet** eindigt in een slash.
+   * **Account** - Standaard is dit de `campaign-remote` gebruiker die u instelt in AEM in het dialoogvenster [Wachtwoord voor externe gebruiker voor campagne instellen](#set-campaign-remote-password) stap.
+   * **Wachtwoord** - Dit wachtwoord is hetzelfde als het `campaign-remote` gebruiker die u instelt in AEM in het dialoogvenster [Wachtwoord voor externe gebruiker voor campagne instellen](#set-campaign-remote-password) stap.
 
-Om een nieuw verpersoonlijkingsgebied aan die toe te voegen die reeds beschikbaar zijn, moet u het schema van Adobe Campaign **nms:seedMember** als volgt uitbreiden:
+1. Selecteer **Ingeschakeld** selectievakje.
 
->[!CAUTION]
-Het gebied dat u moet toevoegen moet reeds via een ontvankelijke schemauitbreiding (**nms:ontvanger**) zijn toegevoegd. Voor meer informatie, zie [Configuratie](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Editing_schemas.html) gids.
+1. Klikken **Opslaan**.
 
-1. Ga naar **Beheer** > **Configuratie** > **Gegevensschema&#39;s** in de navigatie van Adobe Campaign.
-1. Selecteer **Nieuw**.
+Adobe Campaign kan nu communiceren met AEM.
 
-   ![chlimage_1-144](assets/chlimage_1-144a.png)
+## Volgende stappen {#next-steps}
 
-1. Selecteer **De gegevens in de tabel uitbreiden met een extensieschema** in het pop-upvenster en klik op **Volgende**.
+Met zowel Adobe Campaign Classic als AEM geconfigureerd is de integratie nu voltooid.
 
-   ![chlimage_1-145](assets/chlimage_1-145a.png)
-
-1. Voer de verschillende parameters van het uitgebreide schema in:
-
-   * **Schema**: Selecteer de  **nms:** seedMemberschema. De overige velden in het venster worden automatisch ingevuld.
-   * **Naamruimte**: pas namespace van het uitgebreide schema aan.
-
-1. Bewerk de XML-code van het schema om het veld op te geven dat u daar wilt toevoegen. Voor meer informatie bij het uitbreiden van schema&#39;s in Adobe Campaign, verwijs naar [de gids van de Configuratie](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Extending_a_schema.html).
-1. Sla uw schema op en werk vervolgens de Adobe Campaign-databasestructuur bij via het menu **Tools** > **Advanced** > **Update databasestructuur** in de console.
-1. Verbinding verbreken en vervolgens opnieuw verbinding maken met de Adobe Campaign-console om uw wijzigingen op te slaan. Het nieuwe veld wordt nu weergegeven in de lijst met aanpassingsvelden die beschikbaar zijn in AEM.
-
-#### Voorbeeld {#example}
-
-Als u een veld **Registratienummer** wilt toevoegen, moet u de volgende elementen hebben:
-
-* De **nms:receiving** schemaversie genoemd **cus:recei** bevat:
-
-```xml
-<element desc="Recipient table (profiles)" img="nms:recipient.png" label="Recipients" labelSingular="Recipient" name="recipient">
-
-  <attribute dataPolicy="smartCase" desc="Recipient registration number"
-  label="Registration Number"
-  length="50" name="registrationNumber" type="string"/>
-
-</element>
-```
-
-De schema-extensie **nms:seedMember** met de naam **cus:seedMember** bevat:
-
-```xml
-<element desc="Seed to insert in the export files" img="nms:unknownad.png" label="Seed addresses" labelSingular="Seed" name="seedMember">
-
-  <element name="custom_nms_recipient">
-    <attribute name="registrationNumber"
-    template="cus:recipient:recipient/@registrationNumber"/>
-  </element>
-
-</element>
-```
-
-Het veld **Registratienummer** maakt nu deel uit van de beschikbare verpersoonlijkingsvelden:
-
-![chlimage_1-146](assets/chlimage_1-146.png)
-
-#### Een personalisatieveld {#hiding-a-personalization-field} verbergen
-
-Om een verpersoonlijkingsgebied onder die te verbergen die reeds beschikbaar zijn, moet u het schema van Adobe Campaign **nms uitbreiden &lt;a0/>nms:seedMember** zoals die in [een verpersoonlijkingsgebied](#adding-a-personalization-field) wordt gedetailleerd. Voer de volgende stappen uit:
-
-1. Kopieer het veld dat u wilt ophalen uit het schema **nms:seedMember** in het uitgebreide schema (**cus:seedMember** bijvoorbeeld).
-1. Voeg het **advanced=&quot;true&quot;** attribuut van XML aan het gebied toe. Deze wordt niet meer weergegeven in de lijst met personalisatievelden die beschikbaar zijn in AEM.
-
-   Als u bijvoorbeeld het veld **Middennaam** wilt verbergen, moet het schema **cud:seedMember** het volgende element bevatten:
-
-   ```xml
-   <element desc="Seed to insert in the export files" img="nms:unknownad.png" label="Seed addresses" labelSingular="Seed" name="seedMember">
-   
-     <element name="custom_nms_recipient">
-       <attribute advanced="true" name="middleName"/>
-     </element>
-   
-   </element>
-   ```
-
-### Een aanpassingsblok {#deactivating-a-personalization-block} deactiveren
-
-Een van de beschikbare personalisatieklokken deactiveren:
-
-1. Ga naar **Bronnen** > **Campagnebeheer** > **Personalisatieblokken** in de navigatie van Adobe Campaign.
-1. Selecteer het verpersoonlijkingsblok dat u in AEM wilt deactiveren.
-1. Schakel het selectievakje **Zichtbaar in de aanpassingsmenu&#39;s** uit en sla uw wijzigingen op. Het blok wordt niet meer weergegeven in de lijst met aanpassingsblokken die beschikbaar zijn in Adobe Campaign.
-
-   ![chlimage_1-147](assets/chlimage_1-147a.png)
-
-### Doelextensiegegevens beheren {#managing-target-extension-data}
-
-U kunt de gegevens van de doeluitbreiding voor verpersoonlijking ook opnemen. De gegevens van de uitbreiding van het doel (ook genoemd &quot;Gegevens van het Doel&quot;), komen uit het verrijken van of het toevoegen van gegevens in een vraag in een campagnewerkschema bijvoorbeeld. Raadpleeg de secties [Query&#39;s maken](https://docs.campaign.adobe.com/doc/AC/en/PTF_Creating_queries_About_queries_in_Campaign.html) en [Gegevens verrijken](https://docs.campaign.adobe.com/doc/AC/en/WKF_Use_cases_Enriching_data.html) voor meer informatie.
-
->[!NOTE]
-De gegevens in het doel zijn alleen beschikbaar als de AEM inhoud is gesynchroniseerd met een Adobe Campaign-levering. Zie [In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign](/help/sites-authoring/campaign.md#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic).
-
-![chlimage_1-148](assets/chlimage_1-148a.png)
-
+Je kunt nu leren hoe je een nieuwsbrief kunt maken in Adobe Experience Manager door door te gaan met [dit document.](/help/sites-authoring/campaign.md)

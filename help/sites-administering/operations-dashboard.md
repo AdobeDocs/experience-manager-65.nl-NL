@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 891cb5bb8cc9b7114d23617c9164fd428718b302
+source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6230'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Het kan worden betreden door naar **Gereedschappen** - **Bewerkingen** in het we
 
 ## Gezondheidsrapportage {#health-reports}
 
-Het systeem van het Gezondheidsrapport verstrekt informatie over de gezondheid van een AEM instantie door Sling Health Checks. Dit kan via OSGI-, JMX- en HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
+Het systeem van het Gezondheidsrapport verstrekt informatie over de gezondheid van een AEM instantie door Sling Health Checks. Dit kan via OSGI, JMX, HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
 
 Het heeft verschillende functies, die hieronder worden beschreven.
 
@@ -79,7 +79,7 @@ In het Operations-dashboard kunt u het resultaat van zowel individuele als samen
 
 Voor het maken van een individuele health check zijn twee stappen nodig: een Sling Health Check uitvoeren en een item voor de Health Check toevoegen in de configuratieknooppunten van het dashboard.
 
-1. Als u een Sling Health Check wilt maken, moet u een OSGI-component maken die de Sling HealthCheck-interface implementeert. U voegt deze component in een bundel toe. De eigenschappen van de component zullen de Health Check volledig identificeren. Nadat de component is geïnstalleerd, wordt automatisch een JMX MBean voor de Health Check gemaakt. Zie de [Documentatie voor de verkoopcontrole](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) voor meer informatie .
+1. Als u een Sling Health Check wilt maken, moet u een OSGI-component maken die de Sling HealthCheck-interface implementeert. U voegt deze component in een bundel toe. De eigenschappen van de component zullen de Health Check volledig identificeren. Nadat de component is geïnstalleerd, wordt automatisch een JMX MBean voor de Health Check gemaakt. Zie de [Documentatie over de verkoopcontrole](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) voor meer informatie .
 
    Voorbeeld van een component Sling Health Check, geschreven met aantekeningen van de component OSGI-service:
 
@@ -311,7 +311,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    <td>Cachecontrole code</td>
    <td><p>Dit is een Health Check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java 7 kunnen activeren:</p>
     <ul>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cacheblozen voor code is ingeschakeld</li>
+     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
      <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7 en de grootte van de gereserveerde codecache is kleiner dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
     </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Voor meer informatie over de bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">controleren</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> deze pagina</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
@@ -325,11 +325,17 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
  </tbody>
 </table>
 
+### Configuratie van health check {#health-check-configuration}
+
+Door gebrek, voor een uit-van-de-doos AEM instantie, lopen de gezondheidscontroles om de 60 seconden.
+
+U kunt de **Periode** met de [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) **Configuratie van Query Health Check** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
+
 ## Toezicht met Nagios {#monitoring-with-nagios}
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de bewakingsserver.
+1. Stel Nagios in en installeer deze op de controleserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]
@@ -439,7 +445,7 @@ Voorbeelden:
 
 >[!NOTE]
 >
->**Met AEM 6.4**, worden de onderhoudstaken geregistreerd uit de doos in een meer informatie rijke formaat op het niveau INFO. Dit maakt een betere zichtbaarheid in de staat van de onderhoudstaken mogelijk.
+>**Met AEM 6.4**, worden de onderhoudstaken geregistreerd uit de doos in een meer informatie rijke formaat op het niveau INFO. Hierdoor wordt een beter inzicht in de staat van de onderhoudstaken mogelijk.
 >
 >Als u hulpmiddelen van derden (zoals Splunk) gebruikt om de activiteit van de onderhoudstaak te controleren en erop te reageren, kunt u de volgende logboekverklaringen gebruiken:
 
@@ -552,7 +558,7 @@ De volgende taken zijn beschikbaar in het Dashboard van Verrichtingen:
 1. De **Controle van logboekonderhoud** taak, die onder **Wekelijks onderhoudvenster** -menu.
 1. De **Onderhoud versiewissing** taak, die onder **Wekelijks onderhoudvenster** -menu.
 
-De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die in het wekelijkse onderhoudsvenster worden gevormd zullen tussen 1 en 2 AM op Verzadigdagen uitvoeren.
+De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die worden geconfigureerd om te worden uitgevoerd in het wekelijkse onderhoudsvenster, worden uitgevoerd tussen 1 en 2 uur &#39;s nachts.
 
 U kunt de timing ook configureren door op het tandwielpictogram te drukken op een van de twee onderhoudskaarten:
 
@@ -624,7 +630,7 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 
 ## Aangepaste onderhoudstaken {#custom-maintenance-tasks}
 
-De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur voor onderhoudstaken is gebaseerd op de taakafhandeling van Apache Sling, moet een onderhoudstaak de Java-interface implementeren ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder vermeld:
+De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur voor onderhoudstaken is gebaseerd op de taakafhandeling van Apache Sling, moet een onderhoudstaak de Java-interface implementeren ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder wordt vermeld:
 
 <table>
  <tbody>

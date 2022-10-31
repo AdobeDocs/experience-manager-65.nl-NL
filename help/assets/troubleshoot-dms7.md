@@ -12,7 +12,7 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: d5824078ca3e1ff2b48874446aaebe3fdd60cfdc
+source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
 workflow-type: tm+mt
 source-wordcount: '1378'
 ht-degree: 0%
@@ -48,7 +48,7 @@ De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleer
 
 | **Eigenschap** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a|364266`** | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Algemene indicator dat de knoop met Dynamic Media wordt verbonden. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** of fouttekst | Status van het uploaden van middelen naar Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Moet worden gevuld om URL&#39;s te genereren naar externe middelen van Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **succes** of **mislukt:`<error text>`** | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |

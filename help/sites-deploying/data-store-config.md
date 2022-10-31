@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 1%
@@ -493,11 +493,12 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 >Wanneer het uitvoeren van huisvuilinzameling in een gegroepeerde of gedeelde opstelling van de gegevensopslag (met Mongo of Tar van het Segment) zou het logboek waarschuwingen over de onmogelijkheid kunnen tonen om bepaalde blob IDs te schrappen. Dit gebeurt omdat de blob IDs die in een vorige huisvuilinzameling worden geschrapt verkeerd opnieuw van verwijzingen wordt voorzien door andere cluster of gedeelde knopen die geen informatie over de schrappingen van identiteitskaart hebben. Dientengevolge, wanneer de huisvuilinzameling wordt uitgevoerd registreert het een waarschuwing wanneer het probeert om identiteitskaart te schrappen die reeds in de laatste looppas is geschrapt. Dit gedrag heeft geen invloed op prestaties of functionaliteit.
 
 >[!NOTE]
-> Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. Om dit te voorkomen, moet u BlobTracker op alle auteur onbruikbaar maken en instanties publiceren als volgt:
 >
-> 1. Stop de AEM Instance.
-> 2. Voeg de `blobTrackSnapshotIntervalInSecs=L"0"` in de `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` bestand. Deze parameter vereist eik 1.12.0, 1.10.2 of later.
-> 3. Start de AEM opnieuw.
+>Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. Om dit te voorkomen, moet u BlobTracker op alle auteur onbruikbaar maken en instanties publiceren als volgt:
+>
+>1. Stop de AEM Instance.
+>2. Voeg de `blobTrackSnapshotIntervalInSecs=L"0"` in de `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` bestand. Deze parameter vereist eik 1.12.0, 1.10.2 of later.
+>3. Start de AEM opnieuw.
 
 
 Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoning van gegevens op te slaan in een gedeelde gegevensopslag te kunnen uitvoeren:

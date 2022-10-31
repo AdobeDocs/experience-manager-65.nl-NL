@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 0%
@@ -448,11 +448,12 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >| `'.'yyyy-MM-dd-HH-mm` | Rotatie aan het begin van elke minuut. |
    >
    >Opmerking: Wanneer u een tijd/datum opgeeft:
-   > 1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
-      >
-      >     dit om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
    >
-   >  1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
+   >1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
+      >
+      >    dit om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
+   >
+   >1. Gebruik alleen tekens die zijn toegestaan voor een geldige bestandsnaam op een willekeurige plaats in de optie.
 
 
 1. Lees het nieuwe logbestand met het gekozen gereedschap.

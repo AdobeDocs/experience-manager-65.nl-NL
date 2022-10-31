@@ -1,14 +1,14 @@
 ---
 title: Documentservices installeren en configureren
 seo-title: Installing and configuring document services
-description: Installeer AEM Forms-documentservices om PDF-documenten te maken, samen te stellen, te verspreiden, te archiveren, digitale handtekeningen toe te voegen om de toegang tot documenten te beperken en Barcoded Forms te decoderen.
+description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms.
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5372'
 ht-degree: 0%
@@ -252,7 +252,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 >* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als wortel wordt geïnstalleerd, kan de dienst van de Generator van PDF geen documenten OpenOffice in de documenten van PDF omzetten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
 >* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Alleen voor IBM® WebSphere®) Configureer IBM® SSL-socketprovider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -415,7 +415,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    >[!NOTE]
    >
    >Uw recht om lettertypen te gebruiken die door andere partijen dan Adobe zijn verschaft, wordt beheerst door de licentieovereenkomsten die deze partijen u met deze lettertypen hebben verstrekt, en wordt niet gedekt door uw licentie voor het gebruik van Adobe-software. Adobe raadt u aan na te gaan of u voldoet aan alle van toepassing zijnde niet-Adobe-licentieovereenkomsten voordat u niet-Adobe-lettertypen gebruikt met Adobe-software, met name voor het gebruik van lettertypen in een serveromgeving.
-   > Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
+   >Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het AEM Forms-exemplaar opnieuw.
 
 ### Vorm een lokale gebruikersrekening om de dienst van de Generator van de PDF in werking te stellen  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -596,7 +596,8 @@ De [Gereedschap Systeemgereedheid](#srt-configuration) controleert of de compute
 
    >[!NOTE]
    >
-   > * Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >* Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
+
 
 1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadinessTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 

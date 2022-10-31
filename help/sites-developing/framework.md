@@ -12,7 +12,7 @@ discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 4db9279f2d15f2e08939ba453ae8ddbbc3c3d69f
+source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 0%
@@ -183,7 +183,6 @@ De `cq:OwnerTaggable` mixin, dat overerft van `cq:Taggable`, is bedoeld om aan t
 >* pagina&#39;s ( `cq:Page`) waarbij de `jcr:content`node is type `cq:PageContent` die de `cq:Taggable` mixin.
 >
 >* activa ( `cq:Asset`) waarbij de `jcr:content/metadata` node heeft altijd de `cq:Taggable` mixin.
-
 >
 
 
@@ -231,8 +230,9 @@ Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepas
    >[!NOTE]
    >
    >De `cq:movedTo` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
-   > 1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) OR
-   > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
+   >
+   >1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) OR
+   >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
 
 * `cq:backlinks` houdt de verwijzingen in de andere richting, d.w.z. het houdt een lijst bij van alle markeringen die zijn verplaatst naar of samengevoegd met markering B. Dit is meestal vereist om te behouden `cq:movedTo`eigenschappen zijn up-to-date wanneer tag B wordt verplaatst/samengevoegd/verwijderd of wanneer tag B wordt geactiveerd; in dat geval moeten ook alle tags met de achtergrond worden geactiveerd.
@@ -241,8 +241,8 @@ Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepas
    >
    >De `cq:backlinks` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
    >
-   > 1. De tag wordt gebruikt in inhoud (dit betekent dat deze een referentie heeft) OF >
-   > 1. De tag bevat onderliggende elementen die al zijn verplaatst.
+   >1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) OR
+   >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
 
 * Een `cq:tags` De eigenschap van een inhoudsknooppunt omvat het volgende oplossen:

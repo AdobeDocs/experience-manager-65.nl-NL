@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2604'
 ht-degree: 0%
@@ -24,7 +24,7 @@ De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een ref
 
 >[!TIP]
 >
-> Gebruik de [Project archetype AEM](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
+>Gebruik de [Project archetype AEM](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
 
 ## Wat u gaat maken
 
@@ -44,7 +44,7 @@ We klonen de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en o
 
 >[!NOTE]
 >
-> **Voel u vrij om een bestaand project te gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
+>**Voel u vrij om een bestaand project te gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
 
 1. Voer de volgende git-opdracht uit om het project te klonen:
 
@@ -83,7 +83,7 @@ De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste
 
    >[!NOTE]
    >
-   > Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend _moersleutel_ pictogram).
+   >Nota, kunt u het getoonde product ook vormen door de component te vormen gebruikend de dialoog (klikkend _moersleutel_ pictogram).
 
 4. Er wordt nu een product weergegeven door de Product Teaser. De naam van het product en de prijs van het product zijn standaardkenmerken die worden weergegeven.
 
@@ -95,7 +95,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
 >[!TIP]
 >
-> Hebt u al een aangepaste **Ja/Nee** kenmerk als onderdeel van de set productkenmerken? Voel u vrij om het te gebruiken en sla deze sectie over.
+>Hebt u al een aangepaste **Ja/Nee** kenmerk als onderdeel van de set productkenmerken? Voel u vrij om het te gebruiken en sla deze sectie over.
 
 1. Meld u aan bij uw Adobe Commerce-exemplaar.
 1. Navigeren naar **Catalogus** > **Producten**.
@@ -124,7 +124,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
    >[!TIP]
    >
-   > Meer informatie over het beheren [Productkenmerken vindt u in de gebruikershandleiding van Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   >Meer informatie over het beheren [Productkenmerken vindt u in de gebruikershandleiding van Adobe Commerce](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
 1. Navigeren naar **Systeem** > **Gereedschappen** > **Cachebeheer**. Aangezien een update aan het gegevensschema is gemaakt moeten wij sommige Types van Geheime voorgeheugen in Adobe Commerce ongeldig maken.
 1. Schakel het selectievakje naast **Configuratie** en verzend het cachetype voor **Vernieuwen**
@@ -133,7 +133,7 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
 
    >[!TIP]
    >
-   > Meer informatie over [Cache Management vindt u in de Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/system/cache-management.html).
+   >Meer informatie over [Cache Management vindt u in de Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## Gebruik een GrafiekQL winde om Attribuut te verifiëren {#use-graphql-ide}
 
@@ -182,7 +182,7 @@ Daarna, gebruik een IDE GraphQL om te verifiëren dat `eco_friendly` kenmerk is 
 
    >[!TIP]
    >
-   > Meer gedetailleerde documentatie over [Adobe Commerce GraphQL vindt u hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >Meer gedetailleerde documentatie over [Adobe Commerce GraphQL vindt u hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -289,7 +289,7 @@ Gebruiken [de IDE van uw keuze](https://docs.adobe.com/content/help/en/experienc
 
    >[!NOTE]
    >
-   > De `createdAt()` de methode is daadwerkelijk uitgevoerd als onderdeel van de [Productinterface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). De meeste algemeen gevonden schemakenmerken zijn uitgevoerd, zo slechts gebruik `addCustomSimpleField` voor werkelijk aangepaste kenmerken.
+   >De `createdAt()` de methode is daadwerkelijk uitgevoerd als onderdeel van de [Productinterface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). De meeste algemeen gevonden schemakenmerken zijn uitgevoerd, zo slechts gebruik `addCustomSimpleField` voor werkelijk aangepaste kenmerken.
 
 1. Voeg een registreerapparaat toe voor foutopsporing in de Java-code:
 
@@ -336,7 +336,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
 >[!NOTE]
 >
-> Als u een component aanpast met gebruik van de CIF product &amp; categoriekiezers zoals deze Teaser van het Product of de CIF paginacomponent zorg ervoor u de vereiste omvat `cif.shell.picker` clientlib voor de componentdialoogvensters. Zie [Gebruik van CIF-product en rubriekkiezer](use-cif-pickers.md) voor meer informatie.
+>Als u een component aanpast met gebruik van de CIF product &amp; categoriekiezers zoals deze Teaser van het Product of de CIF paginacomponent zorg ervoor u de vereiste omvat `cif.shell.picker` clientlib voor de componentdialoogvensters. Zie [Gebruik van CIF-product en rubriekkiezer](use-cif-pickers.md) voor meer informatie.
 
 1. In winde, navigeer en breid uit `ui.apps` en breid de maphiërarchie uit naar: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` en inspecteer de `.content.xml` bestand.
 
@@ -430,7 +430,7 @@ In ons geval willen we een banner boven op het gummetje weergeven om aan te geve
 
    >[!CAUTION]
    >
-   > Het kan ook voorkomen dat er enkele stapelsporen worden weergegeven als het in de teaser gebruikte product niet de `eco_friendly` kenmerk als onderdeel van de kenmerkenset van het object.
+   >Het kan ook voorkomen dat er enkele stapelsporen worden weergegeven als het in de teaser gebruikte product niet de `eco_friendly` kenmerk als onderdeel van de kenmerkenset van het object.
 
 ## Stijlen toevoegen voor de milieuvriendelijke badge {#add-styles}
 
@@ -471,7 +471,7 @@ Op dit punt is de logica voor wanneer de **Eco Friendly** badge werkt al, maar d
 
    >[!NOTE]
    >
-   > Uitchecken [Stijlvolle CIF Core-componenten](./style-cif-component.md) voor meer informatie over front-end workflows.
+   >Uitchecken [Stijlvolle CIF Core-componenten](./style-cif-component.md) voor meer informatie over front-end workflows.
 
 1. Sparen de veranderingen en stel de updates in om het gebruiken van uw Maven vaardigheden, van een terminal van de bevellijn te AEM:
 

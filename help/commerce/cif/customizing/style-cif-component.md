@@ -9,7 +9,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2567'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een ref
 
 >[!TIP]
 >
-> Gebruik de [Project archetype AEM](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
+>Gebruik de [Project archetype AEM](https://github.com/adobe/aem-project-archetype) wanneer het beginnen van uw eigen handelsimplementatie.
 
 ## Wat u gaat maken
 
@@ -40,7 +40,7 @@ We klonen de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en o
 
 >[!NOTE]
 >
-> **Voel u vrij om een bestaand project te gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
+>**Voel u vrij om een bestaand project te gebruiken** (gebaseerd op het AEM Projectarchetype met CIF inbegrepen) en sla deze sectie over.
 
 1. Voer de volgende git-opdracht uit om het project te klonen:
 
@@ -137,7 +137,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    >[!NOTE]
    >
-   > Bestanden als deze worden genegeerd vanuit de broncontrole omdat deze tijdens de ontwikkeltijd moeten worden gegenereerd.
+   >Bestanden als deze worden genegeerd vanuit de broncontrole omdat deze tijdens de ontwikkeltijd moeten worden gegenereerd.
 
 1. Het bestand Inspect `ui.frontend/clientlib.config.js`.
 
@@ -168,7 +168,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    >[!NOTE]
    >
-   > Bestanden als deze worden ook genegeerd vanuit de broncontrole omdat deze tijdens de ontwikkeltijd moeten worden gegenereerd.
+   >Bestanden als deze worden ook genegeerd vanuit de broncontrole omdat deze tijdens de ontwikkeltijd moeten worden gegenereerd.
 
 1. Inspecteer dan de andere cliëntbibliotheken die door het project worden geproduceerd:
 
@@ -190,7 +190,7 @@ Breng vervolgens een kleine wijziging aan in de stijl Taser om te zien hoe de `u
 
    >[!NOTE]
    >
-   > Alleen de basisbibliotheken zijn &#39;hard-coded&#39; als onderdeel van de paginascripts. `venia.site` is niet opgenomen in deze bestanden en wordt in plaats daarvan opgenomen als onderdeel van de paginasjabloon voor meer flexibiliteit. Dit wordt later geïnspecteerd.
+   >Alleen de basisbibliotheken zijn &#39;hard-coded&#39; als onderdeel van de paginascripts. `venia.site` is niet opgenomen in deze bestanden en wordt in plaats daarvan opgenomen als onderdeel van de paginasjabloon voor meer flexibiliteit. Dit wordt later geïnspecteerd.
 
 1. Van de terminal, bouw en stel het volledige project aan een lokaal geval van AEM op:
 
@@ -265,7 +265,7 @@ Er zijn verschillende opties voor het opnemen van een bibliotheek aan de clientz
 
    >[!NOTE]
    >
-   > Als u alle beschikbare sjablonen wilt weergeven vanuit het scherm AEM starten, navigeert u naar **Gereedschappen** > **Algemeen** > **Sjablonen**.
+   >Als u alle beschikbare sjablonen wilt weergeven vanuit het scherm AEM starten, navigeert u naar **Gereedschappen** > **Algemeen** > **Sjablonen**.
 
 1. Selecteer in de linkerbovenhoek de optie **Pagina-informatie** pictogram en klik **Paginabeleid**.
 
@@ -328,7 +328,7 @@ Met de webpack-dev-server worden afbeeldingen en sommige van de CSS/JavaScript-c
 
    >[!CAUTION]
    >
-   > Als u een fout hebt met betrekking tot de klasse Sass, stopt u de server en voert u de opdracht uit `npm rebuild node-sass` en herhaal de bovenstaande stappen. Dit kan gebeuren als u een andere versie van `npm` en `node` vervolgens opgegeven in het project `aem-cif-guides-venia/pom.xml`.
+   >Als u een fout hebt met betrekking tot de klasse Sass, stopt u de server en voert u de opdracht uit `npm rebuild node-sass` en herhaal de bovenstaande stappen. Dit kan gebeuren als u een andere versie van `npm` en `node` vervolgens opgegeven in het project `aem-cif-guides-venia/pom.xml`.
 
 1. Ga naar de [http://localhost:8080/](http://localhost:8080/) in een nieuw tabblad met dezelfde browser als een AEM die u hebt aangemeld. U moet de startpagina van Venia zien via de webpack-dev-server:
 

@@ -5,22 +5,21 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-translation-type: tm+mt
-source-git-commit: b7be1ff0e842794511ffeb4fed60eed60796b4ff
+exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
 
 ---
 
-
 # Zoekformulieren configureren{#configuring-search-forms}
 
-Gebruik **Zoeken in Forms** om de selectie van zoekvoorspelden aan te passen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM consoles en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
+Gebruiken **Zoeken in Forms** om de selectie aan te passen van zoekvoorspelden die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
-Een [bereik van voorspellingen](#predicates-and-their-settings)s is beschikbaar buiten de box. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder andere) het voorspel van het Bezit om naar activa te zoeken die één enkel bezit aanpassen dat door u wordt gespecificeerd, of de Opties voorspellen om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
+A [voorspelbare](#predicates-and-their-settings)s is beschikbaar buiten de doos. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder andere) het voorspel van het Bezit om naar activa te zoeken die één enkel bezit aanpassen dat door u wordt gespecificeerd, of de Opties voorspellen om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
 
-U kunt de zoekformulieren [configureren die worden gebruikt in verschillende consoles en de elementenbrowser (bij het bewerken van pagina&#39;s). ](#configuring-your-search-forms) De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
+U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden gebruikt in verschillende consoles en de middelenbrowser (bij het bewerken van pagina&#39;s). De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) kan worden geraadpleegd via:
 
 * **Opties**
 
@@ -28,7 +27,7 @@ U kunt de zoekformulieren [configureren die worden gebruikt in verschillende con
 
       * **Zoeken in formulieren**
 
-Wanneer u eerst tot deze console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u de configuratie hebt aangepast zal het slot verdwijnen - tenzij u [uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default) schrapt, in welk geval het gebrek (en de hangslotindicator) zal worden hersteld.
+Wanneer u eerst tot deze console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u de configuratie hebt aangepast zal het slot - tenzij u verdwijnen [verwijder uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default), in welk geval de standaardwaarde (en de hangslotindicator) opnieuw worden ingevoerd.
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
@@ -60,7 +59,7 @@ De beschikbare standaardconfiguraties zijn:
 
    Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
-* **Pagina-editor (Dynamic Media Classic  [voorheen Scene7] zoeken)**:
+* **Pagina-editor (Dynamic Media Classic [voorheen Scene7] zoeken)**:
 
    Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
 
@@ -96,9 +95,9 @@ De beschikbare standaardconfiguraties zijn:
 
    Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van projecten.
 
-## Voorspellen en hun instellingen {#predicates-and-their-settings}
+## Voorspellen en instellingen {#predicates-and-their-settings}
 
-### Voorspeld {#predicates}
+### Voorspellen {#predicates}
 
 De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 
@@ -191,7 +190,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Opties </td>
-   <td><p>De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt.</p> <p>Zie <a href="#addinganoptionspredicate">Een voorspelling van opties toevoegen</a> voor meer informatie.</p> </td>
+   <td><p>De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt.</p> <p>Zie <a href="#addinganoptionspredicate">Vooraf ingestelde opties toevoegen</a> voor meer informatie .</p> </td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -209,7 +208,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
     <ul>
      <li>Veldlabel</li>
      <li>Eigenschapnaam*</li>
-     <li>Pad van optieknooppunt<br /> </li>
+     <li>Pad naar knooppunt Opties<br /> </li>
      <li>Enkel selecteren</li>
      <li>Beschrijving</li>
     </ul> </td>
@@ -331,17 +330,12 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 >
 >* De algemene zoekvoorspelling wordt gedefinieerd in:
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
-   >
-   >
-   >
-
-* Zoekvoorspellingen die alleen betrekking hebben op sitebeheer (klassieke UI) bevinden zich onder:
-   > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>
+>* Zoekvoorspellingen die alleen betrekking hebben op sitebeheer (klassieke UI) bevinden zich onder:
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Deze zijn verouderd en zijn alleen beschikbaar voor achterwaartse compatibiliteit.
-
 >
->
-Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
+>Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
 
 ### Voorspelinstellingen {#predicate-settings}
 
@@ -361,9 +355,9 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
 * **Eigenschapnaam**
 
-   De eigenschap waarop moet worden gezocht. Het gebruikt een relatieve weg en de vervangingskaarten `*/*/*` specificeren de diepte van het bezit met betrekking tot `jcr:content` knoop (elke asterisk vertegenwoordigt één knooppuntniveau).
+   De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
 
-   Als u slechts op een eerste niveaukindknoop van de bron wilt zoeken die `x` bezit op `jcr:content` knoopgebruik `*/jcr:content/x` heeft
+   Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
 
 * **Diepte van eigenschap**
 
@@ -371,44 +365,44 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
 * **Waarde van eigenschap**
 
-   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld `cq:Page` of
+   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
 
    `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereik tekst**
 
-   Het label van het bereikveld in het **Datumbereik** voorspellen.
+   Het label van het bereikveld in het dialoogvenster **Datumbereik** voorspellen.
 
 * **Optiepad**
 
-   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Nadat u het pictogram **+** hebt geselecteerd, wordt de selectie toegevoegd aan de lijst met geldige opties (en vervolgens het pictogram **-** om indien nodig te verwijderen).
+   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
 
    De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Het knooppunt Options**
-pathIn feite is hetzelfde als het 
-**Het Weg** van opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
+* **Pad naar knooppunt Opties**
+In feite hetzelfde als 
+**Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
 
-* **Enkel**
-selecterenAls ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
+* **Enkel selecteren**
+Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
 
-* **Naam(s) van eigenschap(pen) publiceren en live kopiëren**
-De labels voor de selectievakjes Publiceren en Live kopie voor de specifieke voorspelling van sites.
+* **Naam/namen van eigenschappen van live-kopie publiceren en kopiëren**
+De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifieke predikaat van Plaatsen.
 
-* The&amp;ast; op de veldlabels op het tabblad **Instellingen** betekent dat de velden vereist zijn en dat er een foutbericht wordt weergegeven als deze leeg zijn gelaten
+* De &amp;laatste; op de veldlabels in de **Instellingen** tab betekent dat de velden vereist zijn en dat er een foutbericht verschijnt als deze leeg zijn gelaten
 
-## Uw zoekopdracht in Forms {#configuring-your-search-forms} configureren
+## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
 ### Een aangepaste configuratie maken/openen {#creating-opening-a-customized-configuration}
 
-1. Navigeer naar **Tools**, **General**, **Search Forms**.
+1. Navigeren naar **Gereedschappen**, **Algemeen**, **Zoeken in Forms**.
 
 1. Selecteer de configuratie die u wilt aanpassen.
-1. Gebruik het **pictogram Edit** om de configuratie voor het bijwerken te openen.
-1. Als een nieuwe aanpassing u waarschijnlijk [nieuwe voorspelbare gebieden zult willen toevoegen en montages ](#add-edit-a-predicate-field-and-define-field-settings) zonodig bepalen. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [de montages ](#add-edit-a-predicate-field-and-define-field-settings) bijwerken.
-1. Selecteer **Done** om de configuratie op te slaan.
+1. Gebruik de **Bewerken** pictogram om de configuratie voor het bijwerken te openen.
+1. Als u een nieuwe aanpassing wilt maken, zult u waarschijnlijk [nieuwe basisvelden toevoegen en de instellingen definiëren](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist. Als een bestaande aanpassing u een bestaand gebied kunt selecteren en [de instellingen bijwerken](#add-edit-a-predicate-field-and-define-field-settings).
+1. Selecteren **Gereed** om de configuratie op te slaan.
 
    >[!NOTE]
    >
@@ -422,8 +416,8 @@ De labels voor de selectievakjes Publiceren en Live kopie voor de specifieke voo
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
-1. [Open de aangepaste ](#creating-opening-a-customized-configuration) configuratie voor bijwerken.
-1. Als u een nieuw gebied wilt toevoegen, open **Uitgezochte Predicate** tabel en sleep het vereiste voorspel aan de vereiste plaats. Bijvoorbeeld het **Datumbereik voorspellen**:
+1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
+1. Als u een nieuw veld wilt toevoegen, opent u het dialoogvenster **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. De **Datumbereik**:
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -431,16 +425,16 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    * U voegt een nieuw veld toe:
 
-      Nadat u de voorspelling hebt toegevoegd, wordt het tabblad **Instellingen** geopend en worden de eigenschappen weergegeven die kunnen worden gedefinieerd.
+      Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
 
    * U wilt een bestaande voorspelling bijwerken:
 
-      Selecteer het voorloopgebied (op het recht), dan open **Montages** tabel.
-   Bijvoorbeeld, de montages voor **Datumbereik Predicate**:
+      Selecteer het voorloopveld (rechts) en open vervolgens het **Instellingen** tab.
+   De instellingen voor de **Datumbereik**:
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
-1. Breng de gewenste wijzigingen aan en bevestig deze met **Done**.
+1. Breng de gewenste wijzigingen aan en bevestig deze met **Gereed**.
 
 ### Een voorvertoning weergeven van de zoekconfiguratie {#previewing-the-search-configuration}
 
@@ -452,18 +446,18 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    ![chlimage_1-377](assets/chlimage_1-377.png)
 
-1. **** Sluit de voorvertoning om de configuratie te retourneren en te voltooien.
+1. **Sluiten** de voorvertoning om de configuratie te retourneren en te voltooien.
 
-### Een voorspelbaar veld {#deleting-a-predicate-field} verwijderen
+### Een voorspelbaar veld verwijderen {#deleting-a-predicate-field}
 
-1. [Open de aangepaste ](#creating-opening-a-customized-configuration) configuratie voor bijwerken.
-1. Selecteer het voorloopveld (rechts), open het tabblad **Instellingen** en selecteer vervolgens het pictogram **Delete** (linksonder).
+1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
+1. Selecteer het voorloopveld (rechts) en open het dialoogvenster **Instellingen** en selecteert u vervolgens de **Verwijderen** pictogram (linksonder).
 
    ![](do-not-localize/chlimage_1-32.png)
 
 1. In een dialoogvenster wordt bevestiging van de verwijderactie gevraagd.
 
-1. Bevestig dit en alle andere wijzigingen met **Done**.
+1. Bevestig dit en eventuele andere wijzigingen met **Gereed**.
 
 ### Een configuratie verwijderen (om de standaardinstelling te herstellen) {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -475,7 +469,7 @@ Zodra u een configuratie hebt aangepast zal dit de gebreken met voeten treden. U
 
 Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
-1. Selecteer de vereiste configuratie (bijvoorbeeld **Pagina-editor (zoeken naar alinea&#39;s)**) en vervolgens het pictogram **Delete** op de werkbalk:
+1. Selecteer de vereiste configuratie (bijvoorbeeld **Pagina-editor (zoeken in alinea&#39;s)**) en vervolgens de **Verwijderen** pictogram in de werkbalk:
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
@@ -500,22 +494,22 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    >[!NOTE]
    >
-   >U ***must*** verandert niets in `/libs` weg.
+   >U ***moet*** niets wijzigen in de `/libs` pad.
    >
-   >Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >1. Herstel het vereiste item, zoals dit voorkomt in `/libs`, onder `/apps`. In dit geval:
+   >1. Het vereiste item opnieuw maken, zoals dit bestaat in `/libs`, onder `/apps`. In dit geval:
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. Wijzigingen aanbrengen binnen `/apps.`
+   >1. Breng wijzigingen aan in `/apps.`
 
 
-1. Open de **Search Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld **Sites Admin Search Rail**.
+1. Open de **Zoeken in Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld: **Sites Admin Search Rail**.
 
-   Klik vervolgens op het pictogram **Zoekformulieren bewerken**.
+   Klik vervolgens op **Zoekformulieren bewerken** pictogram.
 
-1. Afhankelijk van de configuratie voegt **Options** of **Options Property** aan de configuratie toe.
+1. Afhankelijk van de configuratie voegt u een **Opties** of **Opties, eigenschap** naar de configuratie.
 1. Werk de velden bij, met name:
 
    * **Eigenschapnaam**
@@ -531,8 +525,8 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
       `/apps/cq/gui/content/common/options/predicates/templatetype`
    ![chlimage_1-380](assets/chlimage_1-380.png)
 
-1. Selecteer **Done** om uw configuratie op te slaan.
-1. Navigeer naar de juiste console (in dit voorbeeld **Sites**) en open **Search** rail. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven:
+1. Selecteren **Gereed** om uw configuratie op te slaan.
+1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken** spoorwegen. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven:
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
@@ -548,16 +542,15 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
   </tr>
   <tr>
    <td>Bewerken </td>
-   <td>Lees, schrijf toestemmingen op <code>/apps </code>knoop.</td>
+   <td>Lezen, schrijven toestemmingen op <code>/apps </code>knooppunt.</td>
   </tr>
   <tr>
    <td>Verwijderen</td>
-   <td>Rechten op de <code>/apps</code>-node lezen, schrijven, verwijderen</td>
+   <td>De machtigingen Lezen, Schrijven en Verwijderen voor de <code>/apps</code> node</td>
   </tr>
   <tr>
    <td>Voorvertoning</td>
-   <td>De lees, schrijft, schrapt toestemmingen op de <code>/var/dam/content</code> knoop.<br /> Lezen, schrijven toestemmingen op de  <code>/apps</code> knoop.</td>
+   <td>De machtigingen Lezen, Schrijven en Verwijderen voor de <code>/var/dam/content</code> knooppunt.<br /> Lezen, schrijven toestemmingen op <code>/apps</code> knooppunt.</td>
   </tr>
  </tbody>
 </table>
-

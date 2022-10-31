@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -295,15 +295,17 @@ Voer de volgende stappen uit om de component van de Stap van de Handtekening te 
 
    >[!NOTE]
    >
-   > * Wanneer u de **[!UICONTROL Signature Step]** aan het formulier, de **[!UICONTROL Is the signer and the person filling the form same?]** optie wordt automatisch ingesteld op **Ja**. U moet het formulier blijven gebruiken.
+   >* Wanneer u de **[!UICONTROL Signature Step]** aan het formulier, de **[!UICONTROL Is the signer and the person filling the form same?]** optie wordt automatisch ingesteld op **Ja**. U moet het formulier blijven gebruiken.
+   >* Gebruik de component Samenvattingsstap na de component Handtekeningstap voor een optimale ervaring. De stap Overzicht verzendt het formulier automatisch en direct nadat u het ondertekenen van een formulier hebt voltooid in de component Stap handtekening. Als u de overzichtsstap niet gebruikt, wordt een automatische voorlegging teweeggebracht slechts na het interval dat wordt geplaatst gebruikend [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
-   > * Gebruik de component Samenvattingsstap na de component Handtekeningstap voor een optimale ervaring. De stap Overzicht verzendt het formulier automatisch en direct nadat u het ondertekenen van een formulier hebt voltooid in de component Stap handtekening. Als u de overzichtsstap niet gebruikt, wordt een automatische voorlegging teweeggebracht slechts na het interval dat wordt geplaatst gebruikend [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-      > Enkele aanbevolen procedures zijn:
-   > * Het deelvenster Adaptief formulier met de stap Handtekening bevindt zich altijd in het laatste of tweede laatste deelvenster van een adaptief formulier. Dit kan alleen het tweede laatste deelvenster zijn wanneer het laatste deelvenster de stap Overzicht bevat.
-   > * Het deelvenster met de stapcomponent Handtekening of Samenvatting mag geen andere component bevatten.
-   > * Adaptieve formulieren met de stap Handtekening kunnen niet worden verzonden.
-   > * De verzending van de adaptieve formulieren met de stap Handtekening wordt afgehandeld via een achtergrondservice of de stap Samenvatting. Als er één geconfigureerde ondertekenaar is die het formulier ook invult, heeft de verwerking van het adaptieve formulier via de stap Samenvatting als voordeel dat deze direct evalueert dat de ondertekenaar het formulier heeft ondertekend en de actie Verzenden heeft geactiveerd. Een achtergrondservice heeft meer tijd nodig om te beoordelen of alle geconfigureerde ondertekenaars het formulier hebben ondertekend en de verzending van het adaptieve formulier vertragen.
-   > * Ontwerp het formulier zodanig dat een gebruiker niet kan terugnavigeren vanuit een deelvenster dat de stap Handtekening of Overzicht bevat.
+   >Enkele aanbevolen procedures zijn:
+   >
+   >* Het deelvenster Adaptief formulier met de stap Handtekening bevindt zich altijd in het laatste of tweede laatste deelvenster van een adaptief formulier. Dit kan alleen het tweede laatste deelvenster zijn wanneer het laatste deelvenster de stap Overzicht bevat.
+   >* Het deelvenster met de stapcomponent Handtekening of Samenvatting mag geen andere component bevatten.
+   >* Adaptieve formulieren met de stap Handtekening kunnen niet worden verzonden.
+   >* De verzending van de adaptieve formulieren met de stap Handtekening wordt afgehandeld via een achtergrondservice of de stap Samenvatting. Als er één geconfigureerde ondertekenaar is die het formulier ook invult, heeft de verwerking van het adaptieve formulier via de stap Samenvatting als voordeel dat deze direct evalueert dat de ondertekenaar het formulier heeft ondertekend en de actie Verzenden heeft geactiveerd. Een achtergrondservice heeft meer tijd nodig om te beoordelen of alle geconfigureerde ondertekenaars het formulier hebben ondertekend en de verzending van het adaptieve formulier vertragen.
+   >* Ontwerp het formulier zodanig dat een gebruiker niet kan terugnavigeren vanuit een deelvenster dat de stap Handtekening of Overzicht bevat.
 
 
 

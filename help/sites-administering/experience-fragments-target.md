@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 72012fa441edb01deb7e557b707fb068d8e9892e
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 0%
@@ -53,11 +53,11 @@ Er zijn drie formaatopties beschikbaar voor het uitvoeren van een Fragment van d
 * JSON: Ondersteuning voor levering van inhoud zonder kop
 * HTML en JSON
 
-AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit doet u met de Adobe Developer Console, waarvoor AEM nodig is [geïntegreerd met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments kunnen worden geëxporteerd naar de standaardwerkruimte in Adobe Target of naar door de gebruiker gedefinieerde werkruimten voor Adobe Target. Dit doet u met de Adobe Developer-console, waarvoor AEM [geïntegreerd met Adobe Target met IMS](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
->De Adobe Target-werkruimten bestaan niet in Adobe Target zelf. Ze worden gedefinieerd en beheerd in Adobe IMS (Identity Management System) en vervolgens geselecteerd voor gebruik op verschillende oplossingen met behulp van integraties uit de Adobe Developer Console.
+>De Adobe Target-werkruimten bestaan niet in Adobe Target zelf. Deze worden gedefinieerd en beheerd in Adobe IMS (Identity Management System) en vervolgens geselecteerd voor gebruik in alle oplossingen met behulp van integratie in de Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -131,9 +131,9 @@ U kunt de vereiste opties selecteren in **Pagina-eigenschappen** van de vereiste
    >
    >Het externalizer-domein is optioneel.
    >
-   > Er is een AEM-externalizer geconfigureerd wanneer u wilt dat de geëxporteerde inhoud naar een specifieke map verwijst *publish* domein. Zie voor meer informatie [Het vormen van de Verbinding Externalzer van de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >Er is een AEM-externalizer geconfigureerd wanneer u wilt dat de geëxporteerde inhoud naar een specifieke map verwijst *publish* domein. Zie voor meer informatie [Het vormen van de Verbinding Externalzer van de AEM](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
    >
-   > Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
+   >Houd er ook rekening mee dat Externe domeinen alleen relevant zijn voor de inhoud van het ervaringsfragment dat naar Doel wordt verzonden, en niet voor metagegevens zoals Inhoud weergaveaanbod.
 
    Bijvoorbeeld voor een map:
 

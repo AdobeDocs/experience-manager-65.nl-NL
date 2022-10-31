@@ -4,9 +4,9 @@ description: Zoek naar beste praktijken die door Adobe engineering en consultanc
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: c6ccd204dbd514d6195424aff495bc38f1f31bce
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -56,9 +56,9 @@ Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts allee
 
 Wanneer het creëren van een nieuwe plaats met levende kopie, is het voordelig om blauwdrukconfiguraties tot stand te brengen om de beschikbaarheid van de volledige MSM eigenschapreeks te verzekeren.
 
->[OPMERKING!]
+>[!NOTE]
 >
-> CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
+>CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
 
 ## Componenten en containersynchronisatie {#components-and-container-synchronization}
 

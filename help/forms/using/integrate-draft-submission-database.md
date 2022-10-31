@@ -1,23 +1,22 @@
 ---
 title: Voorbeeld voor het integreren van concepten en verzendingen in de database
-seo-title: Voorbeeld voor het integreren van concepten en verzendingen in de database
+seo-title: Sample for integrating drafts & submissions component with database
 description: Referentie-implementatie van aangepaste gegevens- en metagegevensservices om concepten en verzendingscomponenten te integreren in een database.
-seo-description: Referentie-implementatie van aangepaste gegevens- en metagegevensservices om concepten en verzendingscomponenten te integreren in een database.
+seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
 uuid: ccdb900e-2c2e-4ed3-8a88-5c97aa0092a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1413'
 ht-degree: 1%
 
 ---
 
-
-# Voorbeeld voor het integreren van concepten en verzendingscomponenten met database {#sample-for-integrating-drafts-submissions-component-with-database}
+# Voorbeeld voor het integreren van concepten en verzendingen in de database {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Voorbeeldoverzicht {#sample-overview}
 
@@ -28,7 +27,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Raadpleeg het [AEM Forms-artikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor een lijst met beschikbare pakketten.
+>* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Voor de lijst met beschikbare pakketten raadpleegt u de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
 >* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
 
@@ -36,20 +35,20 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 
 Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de steekproef te installeren en te vormen:
 
-1. Download het volgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-pakket naar uw bestandssysteem.
+1. Download het volgende **aem-fp-db-integration-sample-pkg-6.1.2.zip** aan uw bestandssysteem te verpakken.
 
    Voorbeeldpakket voor databaseintegratie
 
-   [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Ga naar AEM pakketbeheer op https://[*host*]:[*port*]/crx/packmgr/.
+1. Ga naar AEM pakketbeheer op https://[*host*]:[*poort*]/crx/packmgr/.
 1. Klik op **[!UICONTROL Upload Package]**.
 
-1. Blader naar het **aem-fp-db-integration-sample-pkg-6.1.2.zip**-pakket en klik op **[!UICONTROL OK]**.
-1. Klik **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
+1. Bladeren om de **aem-fp-db-integration-sample-pkg-6.1.2.zip** verpakken en klikken **[!UICONTROL OK]**.
+1. Klikken **[!UICONTROL Install]** naast het pakket om het pakket te installeren.
 1. Ga naar **[!UICONTROL AEM Web Console Configuration]**
-pagina op https://[*host*]:[*port*]/system/console/configMgr.
-1. Klik om **[!UICONTROL Forms Portal Draft and Submission Configuration]** te openen in bewerkingsmodus.
+pagina op https://[*host*]:[*poort*]/system/console/configMgr.
+1. Klik om te openen **[!UICONTROL Forms Portal Draft and Submission Configuration]** in bewerkingsmodus.
 
 1. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
@@ -64,7 +63,7 @@ pagina op https://[*host*]:[*port*]/system/console/configMgr.
 
    >[!NOTE]
    >
-   >De services worden als volgt opgelost door hun namen die als waarde voor de `aem.formsportal.impl.prop`-sleutel worden vermeld:
+   >De diensten worden opgelost door hun namen die als waarde voor `aem.formsportal.impl.prop` sleutel als volgt:
 
    ```java
    @Service(value = {SubmitDataService.class, DraftDataService.class})
@@ -86,10 +85,10 @@ pagina op https://[*host*]:[*port*]/system/console/configMgr.
    >
    >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
 
-1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Save]** klikken.
+1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
 
 1. De databaseverbinding kan worden uitgevoerd via de gegevensbron van Apache Sling Connection Pooled.
-1. Voor Apache Sling-verbinding zoekt en klikt u om **[!UICONTROL Apache Sling Connection Pooled DataSource]** te openen in de bewerkingsmodus in de webconsoleconfiguratie. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
+1. Voor Apache Sling-verbinding zoekt en klikt u om te openen **[!UICONTROL Apache Sling Connection Pooled DataSource]** in geef wijze in de Configuratie van de Console van het Web uit. Geef de waarden voor de eigenschappen op zoals in de volgende tabel wordt beschreven:
 
 <table>
  <tbody>
@@ -99,14 +98,14 @@ pagina op https://[*host*]:[*port*]/system/console/configMgr.
   </tr>
   <tr>
    <td>Naam gegevensbron</td>
-   <td><p>Een gegevensbronnaam voor het filtreren bestuurders van de gegevensbronpool</p> <p><strong>Opmerking:  </strong><em>De steekproefimplementatie gebruikt FormsPortal als naam van de gegevensbron.</em></p> </td>
+   <td><p>Een gegevensbronnaam voor het filtreren bestuurders van de gegevensbronpool</p> <p><strong>Opmerking: </strong><em>De steekproefimplementatie gebruikt FormsPortal als naam van de gegevensbron.</em></p> </td>
   </tr>
   <tr>
    <td>JDBC-stuurprogrammaklasse</td>
    <td>com.mysql.jdbc.Driver</td>
   </tr>
   <tr>
-   <td>JDBC-verbinding URI<br /> </td>
+   <td>URI voor JDBC-verbinding<br /> </td>
    <td>jdbc:mysql://[<em>host</em>]:[<em>poort</em>]/[<em>schema_name</em>]</td>
   </tr>
   <tr>
@@ -162,14 +161,11 @@ pagina op https://[*host*]:[*port*]/system/console/configMgr.
 
 >[!NOTE]
 >
-> * Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
-> * Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
-
->
+>* Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
+>* Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
 
 
-
-1. Andere configuraties ongewijzigd laten en op **[!UICONTROL Save]** klikken.
+1. Andere configuraties ongewijzigd laten en klikken **[!UICONTROL Save]**.
 
 1. Als u al een lijst in het gegevensbestandschema hebt, sla aan de volgende stap over.
 
@@ -309,43 +305,43 @@ De voorbeeldimplementatie is nu geconfigureerd, waarmee u concepten en verzendin
 
 Voer de volgende stappen uit op alle auteur- en publicatieinstanties om het bestand mysql-connector-java-5.1.39-bin.jar te installeren:
 
-1. Navigeer naar `https://'[server]:[port]'/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
+1. Navigeren naar `https://'[server]:[port]'/system/console/depfinder` en zoek naar het pakket com.mysql.jdbc.
 1. Controleer in de kolom Geëxporteerd door of het pakket wordt geëxporteerd door een willekeurige bundel.
 
    Ga door als het pakket niet door enige bundel wordt uitgevoerd.
 
-1. Navigeer naar `https://'[server]:[port]'/system/console/bundles` en klik **[!UICONTROL Install/Update]**.
-1. Klik **[!UICONTROL Choose File]** en blader om het mysql-connector-java-5.1.39-bin.jar dossier te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
+1. Navigeren naar `https://'[server]:[port]'/system/console/bundles` en klik op **[!UICONTROL Install/Update]**.
+1. Klikken **[!UICONTROL Choose File]** en bladert u om het bestand mysql-connector-java-5.1.39-bin.jar te selecteren. Selecteer ook **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** selectievakjes.
 1. Klik op **[!UICONTROL Install or Update]**. Start de server opnieuw als de bewerking is voltooid.
-1. (*Alleen Windows*) Schakel de systeemfirewall voor uw besturingssysteem uit.
+1. (*Alleen Windows*) Schakel de systeemfirewall van uw besturingssysteem uit.
 
-## Voorbeeldcode voor de gegevens- en metagegevensservice {#sample-code-for-forms-portal-data-and-metadata-service} van een formulierportal
+## Voorbeeldcode voor poortgegevens en metagegevensservice voor formulieren {#sample-code-for-forms-portal-data-and-metadata-service}
 
-De volgende ZIP bevat `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleMetadataServiceImpl` (implementatieklassen) voor gegevens en meta-gegevensdienstinterfaces. Bovendien bevat deze klasse alle klassen die vereist zijn voor de compilatie van de bovengenoemde implementatieklassen.
+De volgende ZIP bevat: `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleMetadataServiceImpl` (implementatieklassen) voor gegevens en meta-gegevensdienstinterfaces. Bovendien bevat deze klasse alle klassen die vereist zijn voor de compilatie van de bovengenoemde implementatieklassen.
 
 [Bestand ophalen](assets/sample_package.zip)
 
-## Lengte van bestandsnaam {#verify-length-of-the-file-name} controleren
+## De lengte van de bestandsnaam controleren  {#verify-length-of-the-file-name}
 
 De implementatie van de database van Forms Portal maakt gebruik van extra metagegevenstabel. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
 
-Voer de volgende stappen uit om [een cliëntbibliotheek](/help/sites-developing/clientlibs.md) te creëren en het manuscript te gebruiken:
+Voer de volgende stappen uit om te maken [een clientbibliotheek](/help/sites-developing/clientlibs.md) en gebruik het script:
 
 1. Meld u aan bij CRXDE en navigeer naar /etc/clientlibs/
-1. Maak een knooppunt van het type **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld, `validation`.
+1. Een knooppunt van het type maken **cq:ClientLibraryFolder** en geef de naam van het knooppunt op. Bijvoorbeeld, `validation`.
 
    Klik op **[!UICONTROL Save All]**.
 
-1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maak een bestand met de extensie .txt. Voeg bijvoorbeeld `js.txt`de volgende code toe aan het nieuwe .txt-bestand en klik op **[!UICONTROL Save All]**.
+1. Klik met de rechtermuisknop op het knooppunt, klik op **[!UICONTROL create new file]** en maakt u een bestand met de extensie .txt. Bijvoorbeeld: `js.txt`Voeg de volgende code toe aan het nieuwe .txt-bestand en klik op **[!UICONTROL Save All]**.
 
    ```javascript
    #base=util
     util.js
    ```
 
-   In de bovenstaande code is `util` de naam van de map en `util.js` de naam van het bestand in de map `util`. De map `util` en het bestand `util.js` worden in volgende stappen gemaakt.
+   In de bovenstaande code: `util` de naam van de map is en `util.js` naam van het bestand in het dialoogvenster `util` map. De `util` map en `util.js` bestanden worden gemaakt in volgende stappen.
 
-1. Klik met de rechtermuisknop op het knooppunt `cq:ClientLibraryFolder` dat in stap 2 is gemaakt, en selecteer Maken > Map maken. Maak een map met de naam `util`. Klik op **[!UICONTROL Save All]**. Klik met de rechtermuisknop op de map `util` en selecteer Maken > Bestand maken. Maak een bestand met de naam `util.js`. Klik op **[!UICONTROL Save All]**.
+1. Klik met de rechtermuisknop op de knop `cq:ClientLibraryFolder` knooppunt dat is gemaakt in stap 2, selecteert u Maken > Map maken. Een map maken met de naam `util`. Klik op **[!UICONTROL Save All]**. Klik met de rechtermuisknop op de knop `util` Selecteer Maken > Bestand maken. Een bestand met de naam `util.js`. Klik op **[!UICONTROL Save All]**.
 
 1. Voeg de volgende code toe aan het bestand util.js en klik op **[!UICONTROL Save All]**. De code valideert de lengte van de bestandsnaam.
 
@@ -414,13 +410,12 @@ Voer de volgende stappen uit om [een cliëntbibliotheek](/help/sites-developing/
 
    * **[!UICONTROL multi option:]** Ingeschakeld
 
-1. Navigeer naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de waarde `fp.validation` aan het inbedbezit toe.
+1. Navigeren naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de `fp.validation` waarde voor de eigenschap embed.
 
-1. Navigeer naar /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA en voeg de waarde `fp.validation` toe aan insluiteigenschap.
+1. Navigeer naar /libs/fd/af/runtime/clientlibs/guideRuntimeWithXFA en voeg de `fp.validation` waarde die moet worden ingesloten.
 
    >[!NOTE]
    >
    >Als u aangepaste clientbibliotheken gebruikt in plaats van guideRuntime en guideRuntimeWithXfa-clientbibliotheken, gebruikt u de categorienaam om de clientbibliotheek die in deze procedure is gemaakt, in te sluiten in uw aangepaste bibliotheken die tijdens runtime worden geladen.
 
-1. Klik **[!UICONTROL Save All.]** Nu, wanneer filename groter is dan 150 (met inbegrip van uitbreiding) karakters wordt een bericht getoond.
-
+1. Klikken **[!UICONTROL Save All.]** Wanneer de bestandsnaam groter is dan 150 tekens (inclusief de extensie), wordt nu een bericht weergegeven.

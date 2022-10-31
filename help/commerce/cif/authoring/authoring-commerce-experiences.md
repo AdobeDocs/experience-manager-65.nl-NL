@@ -1,7 +1,8 @@
 ---
 title: Ervaringen op het gebied van authoringhandel
 description: Werkopdrachten
-source-git-commit: f3e286c7b5404812655f3b257de17be7bfde7487
+exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -70,7 +71,7 @@ CCIF-productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden w
 
     >[!OPMERKING]
     >
-    > Als zowel de categorie als het product wordt geselecteerd, wordt het product gebruikt.
+    >Als zowel de categorie als het product wordt geselecteerd, wordt het product gebruikt.
 
 Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen door een echte koppeling wanneer de pagina wordt weergegeven.
 
@@ -100,4 +101,4 @@ Het resultaat wordt gegroepeerd op type.
 
     >[!OPMERKING]
     >
-    > Full-text zoeken in Omnsearch biedt geen ondersteuning voor gekoppelde inhoudsfragmenten. Gebruik SKU of UID om bijbehorende inhoudsfragmenten te zoeken.
+    >Full-text zoeken in Omnsearch biedt geen ondersteuning voor gekoppelde inhoudsfragmenten. Gebruik SKU of UID om bijbehorende inhoudsfragmenten te zoeken.

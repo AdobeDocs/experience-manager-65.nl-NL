@@ -1,7 +1,8 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM CMS-documentatie zonder kop. Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -32,7 +33,7 @@ Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te los
 
 >[!TIP]
 >
-> Als u liever **leren door** en technisch gezien zijn, gaat u naar de AEM headless lesbestanden, die zijn georganiseerd door API en framework en beschikbaar zijn in het [Sectie Aanvullende bronnen](#additional-resources) aan het einde van dit document.
+>Als u liever **leren door** en technisch gezien zijn, gaat u naar de AEM headless lesbestanden, die zijn georganiseerd door API en framework en beschikbaar zijn in het [Sectie Aanvullende bronnen](#additional-resources) aan het einde van dit document.
 
 ## Publiek {#audience}
 

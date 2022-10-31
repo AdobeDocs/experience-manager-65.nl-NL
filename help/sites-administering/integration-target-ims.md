@@ -2,7 +2,7 @@
 title: Integratie met Adobe Target met IMS
 description: Meer informatie over het integreren van AEM met Adobe Target met IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: eb05fb92491932e4c2489c5adb533bbbae1d2870
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Integratie met Adobe Target met IMS{#integration-with-adobe-target-using-ims}
 
-Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) met de Adobe Developer Console vereist.
+Voor de integratie van AEM met Adobe Target via de Target Standard API is de configuratie van Adobe IMS (Identity Management System) met behulp van de Adobe Developer Console vereist.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Voordat u met deze procedure begint:
 
 * De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
-   * Dit verstrekt de specifieke ontwikkelaars met toestemmingen om integratie binnen de Console van de Ontwikkelaar van de Adobe toe te laten.
+   * Hierdoor beschikken de specifieke ontwikkelaars over machtigingen om integratie in de Adobe Developer-console mogelijk te maken.
    * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -62,13 +62,13 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 
 ## IMS configureren voor Adobe Target-integratie met AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Met behulp van de Adobe Developer Console moet u een project (integratie) maken met Adobe Target dat AEM gebruiken, en vervolgens de vereiste rechten toewijzen.
+Met de Adobe Developer-console moet u een project (integratie) maken met Adobe Target dat AEM gebruiken en vervolgens de vereiste rechten toewijzen.
 
 ### Het project maken {#creating-the-project}
 
-Open de Adobe Developer Console om een project met Adobe Target te maken dat AEM gebruikt:
+Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM gebruiken:
 
-1. Open de Adobe Developer Console voor Projecten:
+1. Open de Adobe Developer-console voor projecten:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -133,9 +133,9 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
 
-## Gegevens opgeslagen voor het Adobe Developer Console Integration-project {#details-stored-for-the-ims-integration-project}
+## Gegevens opgeslagen voor het Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-Van de Console van de Ontwikkelaar van Adobe - de Projecten kunt u een lijst van al uw integratieprojecten zien:
+Vanuit de Adobe Developer Console - Projecten kunt u een lijst met al uw integratieprojecten zien:
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -154,12 +154,12 @@ Bij sommige hiervan moet u de integratie van Adobe Target in AEM op basis van IM
 
 ## De IMS-configuratie voltooien in AEM {#completing-the-ims-configuration-in-aem}
 
-Terugkeren naar AEM kunt u de configuratie voltooien IMS door vereiste waarden van de integratie van de Console van de Ontwikkelaar van de Adobe voor Doel toe te voegen:
+Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste waarden van de integratie van de Adobe Developer-console voor Target toe te voegen:
 
 1. Terugkeren naar de [IMS-configuratie geopend in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecteren **Volgende**.
 
-1. Hier kunt u de [details van de projectconfiguratie in de Console van de Ontwikkelaar van de Adobe](#details-stored-for-the-ims-integration-project):
+1. Hier kunt u de [details van de projectconfiguratie in de Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld
@@ -244,9 +244,9 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    * **Clientbibliotheek**: Selecteer of u de AT.js cliëntbibliotheek, of mbox.js (afgekeurd) wilt.
 
-   * **Tagbeheersysteem gebruiken om clientbibliotheek te leveren**: Gebruik DTM (afgekeurd), Adobe Launch of een ander systeem voor tagbeheer.
+   * **Tag Management System gebruiken om clientbibliotheek te leveren**: Gebruik DTM (afgekeurd), Adobe Launch of een ander systeem voor tagbeheer.
 
-   * **Aangepaste AT.js**: Laat leeg als u het vak Tagbeheer hebt ingeschakeld of als u de standaard-AT.js wilt gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
+   * **Aangepaste AT.js**: Laat leeg als u het vak Tag Management hebt ingeschakeld of als u de standaard-AT.js wilt gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
    >[!NOTE]
    >
    >[Configuratie van een Cloud Service om de Klassieke API van het Doel te gebruiken](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) is vervangen (gebruikt het tabblad Adobe Recommendations-instellingen).
@@ -278,9 +278,9 @@ Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM 6.5. Hoe d
 
 >[!NOTE]
 >
-> Als u een bestaande Configuratie van het Doel wilt veranderen:
+>Als u een bestaande Configuratie van het Doel wilt veranderen:
 >
-> 1. Voer de huurder-id opnieuw in.
-> 2. Maak opnieuw verbinding met Doel.
-> 3. Sla de configuratie op.
+>1. Voer de huurder-id opnieuw in.
+>2. Maak opnieuw verbinding met Doel.
+>3. Sla de configuratie op.
 

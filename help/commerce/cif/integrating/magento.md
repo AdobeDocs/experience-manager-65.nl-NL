@@ -3,7 +3,7 @@ title: AEM- en Adobe Commerce-integratie met behulp van Commerce Integration Fra
 description: AEM en Adobe Commerce zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van Adobe Commerce toegang te hebben en met Adobe Commerce via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om producten- en categoriegegevens op aanvraag van Adobe Commerce te doorzoeken. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
@@ -16,7 +16,7 @@ De Experience Manager en Adobe Commerce zijn naadloos geïntegreerd met behulp v
 
 >[!NOTE]
 >
-> De minimaal ondersteunde GraphQL API-versie is 2.3.5. Bepaalde functies worden alleen ondersteund in nieuwere versies of alleen in de Adobe Commerce-editie.
+>De minimaal ondersteunde GraphQL API-versie is 2.3.5. Bepaalde functies worden alleen ondersteund in nieuwere versies of alleen in de Adobe Commerce-editie.
 
 ## Overzicht van architectuur {#overview}
 

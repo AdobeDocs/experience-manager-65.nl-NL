@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -204,9 +204,11 @@ Volg de onderstaande instructies om de toepassingsserver uit te voeren waarop AE
 
    >[!NOTE]
    >
-   > De standaardinstallatielocatie van JBoss Application Server:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jreliëf/
+   >De standaardinstallatielocatie van JBoss Application Server:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jreliëf/
+
 
 1. Start de toepassingsserver.
 
@@ -1024,9 +1026,10 @@ Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccou
 
    >[!NOTE]
    >
-   > De standaardinstallatielocatie van JBoss Application Server:
-   > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-   > * Linux: /opt/jreliëf/.
+   >De standaardinstallatielocatie van JBoss Application Server:
+   >
+   >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+   >* Linux: /opt/jreliëf/.
 
 
 1. Start de service van de toepassingsserver.

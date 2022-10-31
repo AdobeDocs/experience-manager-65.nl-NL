@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 0%
@@ -487,18 +487,18 @@ Voor Windows x86:
 
 >[!NOTE]
 >
-> PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+>PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
 >
-> Daarnaast:
+>Daarnaast:
 >
-> * PDF Generator vereist 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
-> * PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux.
-> * PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft Office Professional Plus en andere software die vereist is voor conversie op Windows-besturingssystemen.
-> * PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op Linux-besturingssystemen.
-> * PDF Generator ondersteunt Microsoft Office 365 niet.
-> * De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
-> * Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-> * De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
+>* PDF Generator vereist 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
+>* PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux.
+>* PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft Office Professional Plus en andere software die vereist is voor conversie op Windows-besturingssystemen.
+>* PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op Linux-besturingssystemen.
+>* PDF Generator ondersteunt Microsoft Office 365 niet.
+>* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
+>* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
 >
 
 

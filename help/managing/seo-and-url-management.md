@@ -7,7 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 74%
@@ -366,9 +366,9 @@ AEM gebruikt de [Apache Sling Sitemap-module](https://github.com/apache/sling-or
 
 >[!NOTE]
 >
-> Dit is beschikbaar als productfunctie sinds Adobe Experience Manager versie 6.5.11.0.
+>Dit is beschikbaar als productfunctie sinds Adobe Experience Manager versie 6.5.11.0.
 > 
-> Voor oudere versies kunt u een Sling Servlet zelf registreren, om te luisteren naar een `sitemap.xml` roep en gebruik de bron die via de servlet API wordt geleverd om de huidige pagina en de afstammelingen te zoeken en een sitemap.xml-bestand uit te voeren.
+>Voor oudere versies kunt u een Sling Servlet zelf registreren, om te luisteren naar een `sitemap.xml` roep en gebruik de bron die via de servlet API wordt geleverd om de huidige pagina en de afstammelingen te zoeken en een sitemap.xml-bestand uit te voeren.
 
 In de module Apache Sling Sitemap wordt onderscheid gemaakt tussen een sitemap op hoofdniveau en een geneste sitemap. Beide methoden worden gegenereerd voor elke bron met de `sling:sitemapRoot` eigenschap ingesteld op `true`. Over het algemeen worden sitemaps weergegeven met behulp van kiezers op het pad van de sitemap op hoofdniveau van de structuur. Dit is de bron die geen andere voorouder van de sitemap-hoofdmap heeft. Deze sitemaproot op hoofdniveau stelt ook de sitemap-index beschikbaar, wat normaal is wat een site-eigenaar zou configureren in het configuratieportaal van de zoekmachine of zou toevoegen aan de site `robots.txt`.
 
@@ -380,7 +380,7 @@ Neem bijvoorbeeld een site die een sitemap-hoofdmap op hoofdniveau definieert op
 
 >[!NOTE]
 >
-> De kiezers `sitemap` en `sitemap-index` kan problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet die deze kiezers bedient met een `service.ranking` hoger dan 0.
+>De kiezers `sitemap` en `sitemap-index` kan problemen opleveren met aangepaste implementaties. Als u de productfunctie niet wilt gebruiken, configureert u uw eigen servlet die deze kiezers bedient met een `service.ranking` hoger dan 0.
 
 In de standaardconfiguratie biedt het dialoogvenster Pagina-eigenschappen een optie om een pagina te markeren als een sitemaproot en genereert u dus, zoals hierboven beschreven, een sitemap van zichzelf en de onderliggende elementen. Dit gedrag wordt geïmplementeerd door implementaties van de `SitemapGenerator` en kan worden uitgebreid door alternatieve implementaties toe te voegen. Aangezien de frequentie waarop de XML-sitemaps opnieuw moeten worden gegenereerd sterk afhankelijk is van de workflows en werklasten voor het schrijven van inhoud, wordt het product echter niet verzonden `SitemapScheduler` configuratie. Dit maakt de functie effectief opt-in.
 

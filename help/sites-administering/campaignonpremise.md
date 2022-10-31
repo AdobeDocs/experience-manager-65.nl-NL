@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 7fed5ce55f6ee7638d2578ee7ef2d84deb24277f
+source-git-commit: 4712f57808ae769646b00d1098648686815121b6
 workflow-type: tm+mt
-source-wordcount: '1554'
+source-wordcount: '1556'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Door AEM met Adobe Campaign te integreren, kunt u de levering van e-mail, inhoud en formulieren direct in AEM beheren. De stappen van de configuratie in zowel Adobe Campaign Classic als AEM zijn nodig om bidirectionele communicatie tussen oplossingen toe te laten.
 
-Dankzij deze integratie kunnen AEM en Adobe Campaign Classic onafhankelijk worden gebruikt. Marketers kunnen campagnes maken en doelgericht gebruik maken in Adobe Campaign, terwijl makers van inhoud tegelijkertijd in AEM aan het ontwerpen van inhoud kunnen werken. Dankzij de integratie kunnen de inhoud en het ontwerp van de campagne in AEM door Adobe Campaign worden gericht en geleverd.
+Dankzij deze integratie kunnen AEM en Adobe Campaign Classic onafhankelijk worden gebruikt. Marketers kunnen campagnes maken en doelgericht gebruik maken in Adobe Campaign, terwijl makers van inhoud tegelijkertijd in AEM aan het ontwerpen van inhoud kunnen werken. Met behulp van de integratie kunnen de inhoud en het ontwerp van de in AEM gemaakte campagne door Adobe Campaign worden aangesproken en geleverd.
 
 ## Integratiestappen {#integration-steps}
 
@@ -44,7 +44,7 @@ Dit document leidt u door elk van deze stappen in detail.
    * Raadpleeg voor meer informatie over het instellen en configureren van Adobe Campaign Classic de [Adobe Campaign Classic-documentatie;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) met name de gids Installatie en Configuratie.
 * Toegang van beheerders tot AEM
 
-## Het AEM integratiepakket installeren in een campagne {#install-package}
+## Het AEM integratiepakket in de campagne installeren {#install-package}
 
 De **AEM integratie** -pakket in Adobe Campaign bevat een aantal standaardconfiguraties die nodig zijn om verbinding te maken met AEM.
 
@@ -68,7 +68,7 @@ De **AEM integratie** -pakket in Adobe Campaign bevat een aantal standaardconfig
 
 Het integratiepakket is nu geïnstalleerd.
 
-## Operator for AEM in Campaign maken {#create-operator}
+## De operator voor AEM in campagne maken {#create-operator}
 
 Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt om verbinding te maken met Adobe Campaign. U moet een veiligheidsstreek voor deze exploitant bepalen en zijn wachtwoord plaatsen.
 
@@ -152,7 +152,7 @@ AEM kan nu communiceren met Adobe Campaign.
 >
 >Zorg ervoor dat uw Adobe Campaign-server via internet bereikbaar is. AEM heeft geen toegang tot particuliere netwerken.
 
-## Replicatie naar publicatie-instantie van AEM configureren {#replication}
+## Replicatie naar AEM-publicatie-instantie configureren {#replication}
 
 Campagne-inhoud wordt gemaakt door de auteurs van de inhoud op de AEM ontwerpinstantie. Dit exemplaar is typisch slechts intern beschikbaar bij uw organisatie. Als u inhoud, zoals afbeeldingen en elementen, toegankelijk wilt maken voor de ontvangers van uw campagne, moet u die inhoud publiceren.
 
@@ -182,7 +182,7 @@ U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagn
 >
 >Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Bewerkingen** > **Webconsole** > **OSGi-configuratie** en zoek naar **AEM Campagne-integratie - Configuratie**. De configuratie bewerken en het veld wijzigen **Openbare URL** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
 
-## Het vormen van de AEM ExternalAlizer {#externalizer}
+## De AEM ExternalAlizer configureren {#externalizer}
 
 [De externalizer](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. U moet het vormen opdat de integratie van de Campagne werkt.
 
@@ -194,12 +194,12 @@ U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagn
 
 1. Tik of klik op **Opslaan**.
 
-U hebt de Externalzer geconfigureerd en Adobe Campaign heeft geen toegang tot uw inhoud.
+U hebt de Externalzer geconfigureerd en Adobe Campaign heeft nu toegang tot uw inhoud.
 
 >[!NOTE]
 De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als deze naar `localhost:4503` of een andere server die Adobe Campaign niet kan bereiken, worden afbeeldingen van AEM niet weergegeven in de Adobe Campaign-console.
 
-## Het vormen van de campagne-verre Gebruiker in AEM {#configure-user}
+## Vorm de campagne-verre Gebruiker in AEM {#configure-user}
 
 Als campagne moet communiceren met AEM, moet u een wachtwoord instellen voor de `campaign-remote` gebruiker in AEM.
 

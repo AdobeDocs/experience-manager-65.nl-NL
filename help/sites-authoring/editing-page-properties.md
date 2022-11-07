@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
+source-git-commit: 1cd63d2ce5c5caf408b11eb6bac9b1a54dae0b25
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1886'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Titel**
 
-   De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
+   De titel van de pagina wordt op verschillende locaties weergegeven. De **Websites** en de **Sites** kaart-/lijstweergaven.
 
    Dit is een verplicht veld.
 
@@ -46,7 +46,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
 
-   Zie [Codes gebruiken](/help/sites-authoring/tags.md) voor meer informatie over tags.
+   Zie voor meer informatie over tags [Tags gebruiken](/help/sites-authoring/tags.md).
 
 * **Verbergen in navigatie**
 
@@ -54,19 +54,19 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Branding**
 
-   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de paginacomponent vanaf versie 2.14.0 of hoger van de [kerncomponenten vereist.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de component Pagina vanaf versie 2.14.0 of hoger van het dialoogvenster [Core Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
-   * **Overschrijven**  - Schakel deze optie in om de witruimte op deze pagina te definiëren.
-      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij de waarden **Override** zijn ingesteld.
-   * **Waarde**  overschrijven - De tekst van de gloedmarkering die aan de paginatitel moet worden toegevoegd.
+   * **Negeren** - Schakel dit selectievakje in om de merkwitruimte op deze pagina te definiëren.
+      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij deze ook hun **Negeren** ingestelde waarden.
+   * **Waarde overschrijven** - De tekst van de merkmarkering die aan de paginatitel moet worden toegevoegd.
       * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
 * **Paginatitel**
 
-   Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
+   Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** wordt gebruikt.
 
 * **Navigatietitel**
 
-   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
+   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
 
 * **Ondertitel**
 
@@ -78,7 +78,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
@@ -92,7 +92,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Hiermee kunt u een vanity-URL voor deze pagina invoeren, waarmee u een kortere en/of expressieve URL kunt hebben.
 
-   Als de URL vanity bijvoorbeeld is ingesteld op `welcome`op de pagina die wordt aangegeven door het pad `/v1.0/startpage`voor de website `http://example.com,`, is `http://example.com/welcome`de vanity URL van `http://example.com/content/v1.0/startpage`
+   Als bijvoorbeeld de URL voor Vanity is ingesteld op `welcome`naar de pagina die wordt aangeduid door het pad `/v1.0/startpage`voor de website `http://example.com,` dan `http://example.com/welcome`zou de vanzelf-URL zijn van `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -103,7 +103,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    >* Deze mag niet op een bestaande pagina worden ingesteld.
 
 
-   U moet ook Dispatcher configureren om toegang tot vanity URL&#39;s in te schakelen. Zie [Toegang tot URL&#39;s met Vanity inschakelen](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer informatie.
+   U moet ook Dispatcher configureren om toegang tot vanity URL&#39;s in te schakelen. Zie [Toegang tot URL&#39;s met Vanity inschakelen](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer informatie .
 
 * **Redirect Vanity URL**
 
@@ -125,18 +125,18 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Ontwerp**
 
-   Geef het [ontwerp](/help/sites-developing/designer.md) aan dat voor deze pagina moet worden gebruikt.
+   Geef de [ontwerp](/help/sites-developing/designer.md) die voor deze pagina moet worden gebruikt.
 
 * **Alias**
 
    Geef een alias op die voor deze pagina moet worden gebruikt.
 
-   * Als u bijvoorbeeld een alias van `private` definieert voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`
-   * Als u een alias maakt, wordt de eigenschap `sling:alias` op het paginaknooppunt ingesteld, die alleen van invloed is op de bron, niet op het pad naar de opslagplaats.
-   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties ](/help/sites-authoring/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
-   * Zie [Gelokaliseerde paginanamen onder SEO en URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names) voor meer informatie.
+   * Als u bijvoorbeeld een alias definieert van `private` voor de pagina `/content/wknd/us/en/magazine/members-only`, kan deze pagina ook worden geopend via `/content/wknd/us/en/magazine/private`
+   * Het creëren van een aliasreeksen `sling:alias` eigenschap op het paginaknooppunt, die alleen invloed heeft op de bron, niet op het pad naar de opslagplaats.
+   * Pagina&#39;s die door aliassen in de editor worden benaderd, kunnen niet worden gepubliceerd. [Publicatieopties](/help/sites-authoring/publishing-pages.md) in de editor zijn alleen beschikbaar voor pagina&#39;s die via hun werkelijke paden worden benaderd.
+   * Zie voor meer informatie [Gelokaliseerde paginanamen onder SEO- en URL-beheertips](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Overgenomen van  &lt;>pad *>***
+* **Overgenomen van &lt;*pad*>**
 
    Geeft aan of de pagina wordt overgeërfd. en waar van.
 
@@ -146,22 +146,22 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Toegestane sjablonen**
 
-   [Definieer de lijst met sjablonen die binnen deze subvertakking ](/help/sites-authoring/templates.md#allowingatemplate) beschikbaar zullen zijn.
+   [De lijst met beschikbare sjablonen definiëren](/help/sites-authoring/templates.md#allowingatemplate) binnen dit subbijkantoor.
 
-* **Inschakelen**  (verificatievereiste)
+* **Inschakelen** (Verificatievereiste)
 
    Schakel het gebruik van verificatie in (of uit) om toegang te krijgen tot de pagina.
 
    >[!NOTE]
    >
-   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#permissions)**.
+   >Gesloten gebruikersgroepen voor de pagina worden gedefinieerd op de **[Machtigingen](/help/sites-authoring/editing-page-properties.md#permissions)** tab.
 
    >[!CAUTION]
    >
-   >Met het tabblad **[Machtigingen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired`-mix. Als de paginamachtigingen worden gevormd gebruikend verouderde configuraties van CUG, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, zal een waarschuwingsbericht onder **Eis van de Authentificatie** worden getoond en de optie zal niet editable zijn, noch [Toestemmingen](/help/sites-authoring/editing-page-properties.md#permissions) zal editable zijn.
+   >De **[Machtigingen](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired` mixin. Als de paginamachtigingen gebruikend verouderde configuraties van de KUG worden gevormd, gebaseerd op de aanwezigheid van `cq:cugEnabled` eigenschap, wordt een waarschuwingsbericht weergegeven onder **Verificatievereiste** en de optie zal niet bewerkbaar zijn, en de [Machtigingen](/help/sites-authoring/editing-page-properties.md#permissions) bewerkbaar zijn.
    >
    >
-   >In een dergelijk geval moeten de toestemmingen van de KUG in [klassieke UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
+   >In dat geval moeten de CUG-machtigingen worden bewerkt in het dialoogvenster [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
 * **Aanmeldingspagina**
 
@@ -195,31 +195,31 @@ Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
 * **Delen via sociale media**
 
-   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor [De kerncomponent delen](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+   Definieert de opties voor delen die beschikbaar zijn op de pagina. Hiermee geeft u de opties weer die beschikbaar zijn voor de [De kerncomponent delen](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
 
    * **Delen door gebruikers voor Facebook inschakelen**
    * **Delen door gebruikers voor Pinterest inschakelen**
-   * **Voorkeur voor XF-**
-variatieDefinieer de fragmentvariatie die wordt gebruikt voor het genereren van metagegevens voor de pagina
+   * **Voorkeurswijziging XF**
+De fragmentvariatie definiëren die wordt gebruikt voor het genereren van metagegevens voor de pagina
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
-   Definieer eigenschappen voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
+   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisatie {#personalization}
 
 * **ContextHub-configuraties**
 
-   Selecteer [Configuratie ContextHub](/help/sites-developing/ch-configuring.md) en [Pad van Segmenten](/help/sites-administering/segmentation.md).
+   Selecteer [ContextHub-configuratie](/help/sites-developing/ch-configuring.md) en [Segmentpad](/help/sites-administering/segmentation.md).
 
 * **Doelconfiguratie**
 
-   Selecteer een [Merk om een werkingsgebied voor het richten ](/help/sites-authoring/target-adobe-campaign.md) te specificeren.
+   Selecteer een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-authoring/target-adobe-campaign.md).
 
    >[!NOTE]
-   >Voor deze optie moet de gebruikersaccount deel uitmaken van de `Target Adminstrators`groep.
+   >Deze optie vereist dat de gebruikersaccount zich in de `Target Adminstrators`groep.
 
 ### Machtigingen {#permissions}
 
@@ -230,43 +230,43 @@ variatieDefinieer de fragmentvariatie die wordt gebruikt voor het genereren van 
    * [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
    * [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
 
-   * [Effectieve machtigingen](/help/sites-administering/user-group-ac-admin.md) weergeven
+   * De weergave van [Effectieve machtigingen](/help/sites-administering/user-group-ac-admin.md)
    >[!CAUTION]
    >
-   >Met het tabblad **Machtigingen** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired`-mix. Als de paginamachtigingen worden gevormd gebruikend verouderde configuraties van de GIDS, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, zal een waarschuwingsbericht worden getoond en de toestemmingen van de GIDS zullen niet editable zijn, noch zal de Vereiste van de Authentificatie op [Geavanceerd](/help/sites-authoring/editing-page-properties.md#advanced) tabel editable zijn.
+   >De **Machtigingen** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired` mixin. Als de paginamachtigingen gebruikend verouderde configuraties van de KUG worden gevormd, gebaseerd op de aanwezigheid van `cq:cugEnabled` eigenschap, wordt een waarschuwingsbericht weergegeven en zijn de CUG-machtigingen niet bewerkbaar. Ook is het vereiste voor verificatie niet van toepassing op de [Geavanceerd](/help/sites-authoring/editing-page-properties.md#advanced) te bewerken.
    >
    >
-   >In een dergelijk geval moeten de toestemmingen van de KUG in [klassieke UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md) worden uitgegeven.
+   >In dat geval moeten de CUG-machtigingen worden bewerkt in het dialoogvenster [klassieke gebruikersinterface](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
    >[!NOTE]
    >
-   >Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Om dit te doen moet de Ontdekkingsreiziger van CRX worden gebruikt. Zie het document [User, Group and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) voor meer informatie.
+   >Het lusje van Toestemmingen staat niet de verwezenlijking van lege groepen CUG toe, die als eenvoudige manier kunnen nuttig zijn om toegang tot elke gebruiker te ontkennen. Om dit te doen moet de Ontdekkingsreiziger van CRX worden gebruikt. Zie het document [Beheer van gebruikers-, groep- en toegangsrechten](/help/sites-administering/user-group-ac-admin.md) voor meer informatie .
 
 ### Blauwdruk {#blueprint}
 
 * **Blauwdruk**
 
-   Definieer eigenschappen voor een pagina Vervagen binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+   Eigenschappen definiëren voor een pagina Vervagen in [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-   Definieer eigenschappen voor een pagina van Live kopie binnen [beheer met meerdere sites](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+   Eigenschappen definiëren voor een pagina van Live kopie binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 
-* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmelden van pagina**, **Offlinepagina**, onder andere.
+* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmeldingspagina**, **Offline pagina**, onder andere.
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-1}
 
 U kunt pagina-eigenschappen definiëren:
 
-* Vanuit de **Sites**-console:
+* Van de **Sites** console:
 
-   * [Een nieuwe pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page)  maken (een subset van de eigenschappen)
+   * [Een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) (een subset van de eigenschappen)
 
-   * **Eigenschappen** klikken of tikken
+   * Klikken of tikken **Eigenschappen**
 
       * Voor één pagina
       * Voor meerdere pagina&#39;s (alleen een subset van de eigenschappen is beschikbaar voor massabewerking)
@@ -277,11 +277,11 @@ U kunt pagina-eigenschappen definiëren:
 
 ### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
-Klik op **Eigenschappen** of tikken om de pagina-eigenschappen te definiëren:
+Klikken of tikken **Eigenschappen** om de pagina-eigenschappen te definiëren:
 
-1. Navigeer met de console **Sites** naar de locatie van de pagina waarvoor u eigenschappen wilt weergeven en bewerken.
+1. Met de **Sites** navigeer naar de locatie van de pagina waarvan u de eigenschappen wilt weergeven en bewerken.
 
-1. Selecteer de optie **Eigenschappen** voor de vereiste pagina met behulp van:
+1. Selecteer **Eigenschappen** optie voor de vereiste pagina met behulp van:
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#selectionmode)
@@ -290,24 +290,24 @@ Klik op **Eigenschappen** of tikken om de pagina-eigenschappen te definiëren:
 
 1. Bekijk of bewerk de eigenschappen naar wens.
 
-1. Gebruik vervolgens **Opslaan** om uw updates op te slaan, gevolgd door **Close** om terug te keren naar de console.
+1. Gebruik vervolgens **Opslaan** om uw updates op te slaan, gevolgd door **Sluiten** om naar de console terug te keren.
 
 ### Bij het bewerken van een pagina {#when-editing-a-page}
 
-Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** gebruiken om de pagina-eigenschappen te definiëren:
+Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** om de pagina-eigenschappen te definiëren:
 
 1. Open de pagina waarvan u de eigenschappen wilt bewerken.
 
-1. Selecteer het pictogram **Pagina-informatie** om het selectiemenu te openen:
+1. Selecteer **Pagina-informatie** pictogram om het selectiemenu te openen:
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selecteer **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
+1. Selecteren **Eigenschappen openen** en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
 
    * **Annuleren**
    * **Opslaan en sluiten**
 
-1. Met de knop **Opslaan en sluiten** kunt u de wijzigingen opslaan.
+1. Gebruik de **Opslaan en sluiten** om de wijzigingen op te slaan.
 
 ### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
@@ -317,12 +317,12 @@ Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgen
 >
 >Bulkbewerking van eigenschappen is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [Eigenschappen van meerdere elementen bewerken](/help/assets/metadata.md) voor meer informatie.
 >
->Er is ook de [Bulk Editor](/help/sites-administering/bulk-editor.md), waarmee u naar inhoud van meerdere pagina&#39;s kunt zoeken met GQL (Google Query Language) en de inhoud vervolgens rechtstreeks in de bulkeditor kunt bewerken voordat u de wijzigingen in de oorspronkelijke pagina&#39;s opslaat.
+>Er is ook [Bulkeditor](/help/sites-administering/bulk-editor.md), waarmee u naar inhoud van meerdere pagina&#39;s kunt zoeken met GQL (Google Query Language) en de inhoud vervolgens rechtstreeks in de grote editor kunt bewerken voordat u de wijzigingen opslaat op de pagina&#39;s die beginnen.
 
 U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende manieren, zoals:
 
-* Tijdens het bladeren door de **Sites** console
-* Nadat u **Zoeken** hebt gebruikt om een set pagina&#39;s te zoeken
+* Wanneer u door de **Sites** console
+* Na gebruik van **Zoeken** om een set pagina&#39;s te zoeken
 
 ![epp-01](assets/epp-01.png)
 
@@ -356,7 +356,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
    * Algemene eigenschappen met een gemeenschappelijke waarde
 
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Als het veld meerdere waarden heeft (bijvoorbeeld Tags), worden waarden alleen weergegeven als *all* algemeen zijn. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alles* vaak voorkomen. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
 
    Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
@@ -366,11 +366,11 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 
    * U kunt de waarden in de beschikbare velden bijwerken.
 
-      * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Done** selecteert.
+      * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed**.
       * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
-   * Velden die algemeen zijn, maar verschillende waarden hebben op de verschillende pagina&#39;s, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`. Bij het bewerken van dergelijke velden moet de nodige aandacht worden besteed om gegevensverlies te voorkomen.
+   * Velden die veel voorkomen, maar verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.
 
 
 >[!NOTE]
 >
->De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie [Uw pagina configureren voor bulkbewerking van pagina-eigenschappen](/help/sites-developing/bulk-editing.md).
+>De paginacomponent kan worden gevormd om de gebieden te specificeren beschikbaar voor bulkbewerking. Zie [De pagina configureren voor het bulksgewijs bewerken van pagina-eigenschappen](/help/sites-developing/bulk-editing.md).

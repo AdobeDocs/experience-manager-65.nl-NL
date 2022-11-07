@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 40434fc8f2e0fd4b66102cdd5779dc578330d7b4
+source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
 workflow-type: tm+mt
-source-wordcount: '3808'
+source-wordcount: '3811'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 1%
 + Releaseopmerkingen {#release-notes-new-features}
    + [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
    + [Overzicht van nieuwe functies](using/whats-new.md)
+   + [Veelgestelde vragen](/help/forms/using/frequently-asked-questions-faq.md)
    + [Verouderde functies](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Aan de slag {#getting-started}
    + [Inleiding tot AEM Forms](using/introduction-aem-forms.md)

@@ -1,0 +1,21 @@
+---
+title: Veelgestelde vragen (FAQ) voor Adaptive Forms, HTML5-formulieren en AEM Forms
+seo-title: Frequently asked questions (FAQ) for Adaptive Forms, HTML5 forms, and AEM Forms
+description: Veelgestelde vragen (FAQ) over lay-out, scripting steun, en werkingsgebied van Aangepast Forms, HTML5 vormen, en AEM Forms.
+seo-description: Frequently Asked Questions (FAQ) about layout, scripting support, and scope of Adaptive Forms, HTML5 forms, and AEM Forms.
+docset: aem65
+source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+workflow-type: tm+mt
+source-wordcount: '97'
+ht-degree: 0%
+
+---
+
+
+# Veelgestelde vragen (FAQ) {#frequently-asked-questions-faq}
+
+1. Waarom worden streepjescodes en handtekeningvelden niet weergegeven in mijn HTML 5-formulier?
+
+   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in scenario&#39;s voor HTML of mobiele apparaten. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw scriptveld voor handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. U kunt ook een [aangepaste widget](../../forms/using/custom-widgets.md) voor streepjescodes en deze integreren.
+
+

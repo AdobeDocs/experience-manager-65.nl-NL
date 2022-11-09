@@ -1,27 +1,26 @@
 ---
 title: Console voor live kopiëren
-seo-title: Console voor live kopiëren
+seo-title: Live Copy Overview Console
 description: Leer meer over de grondbeginselen van de Live Copy-overzichtsconsole.
-seo-description: Leer meer over de grondbeginselen van de Live Copy-overzichtsconsole.
+seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
+# Console voor live kopiëren{#live-copy-overview-console}
 
-# Live Copy-overzichtsconsole{#live-copy-overview-console}
-
-Met het **Live Copy-overzicht** kunt u:
+De **Overzicht van live kopiëren** biedt de volgende mogelijkheden:
 
 * Overerving op een site weergeven/beheren:
 
@@ -38,12 +37,12 @@ U kunt het Live Copy-overzicht openen via het volgende:
 * [Referenties in het zijpaneel van een blauwdrukpagina (Sites-console)](#opening-live-copy-overview-references-for-a-blueprint-page)
 * [Eigenschappen van een blauwdrukpagina](#opening-live-copy-overview-properties-of-a-blueprint-page)
 
-### Overzicht van live kopie openen - verwijzingen voor een vervagingspagina {#opening-live-copy-overview-references-for-a-blueprint-page}
+### Overzicht van Live kopie openen - verwijzingen voor een vervagingspagina {#opening-live-copy-overview-references-for-a-blueprint-page}
 
-Het **Live Copy-overzicht** kan worden geopend vanuit het zijpaneel **References** van de **Sites**-console:
+De **Overzicht van live kopiëren** kan worden geopend vanuit de **Verwijzingen** zijpaneel van **Sites** console:
 
-1. In **Sites** console, [navigeer aan uw blauwdrukpagina en selecteer het ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open het venster **[Referenties](/help/sites-authoring/basic-handling.md#references)** en selecteer **Actieve kopieën**.
+1. In de **Sites** console, [navigeer naar uw blauwdrukpagina en selecteer deze](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteert u **Actieve kopieën**.
 
    ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -51,34 +50,34 @@ Het **Live Copy-overzicht** kan worden geopend vanuit het zijpaneel **References
    >
    >U kunt Referenties ook eerst openen en vervolgens de blauwdruk selecteren.
 
-1. Selecteer **Overzicht van actieve kopie** om het overzicht van alle live kopieën met betrekking tot de geselecteerde blauwdruk weer te geven en te gebruiken.
-1. Gebruik **Close** om af te sluiten en terug te keren naar de **Sites**-console.
+1. Selecteren **Overzicht van live kopiëren** om het overzicht van alle live kopieën met betrekking tot de geselecteerde blauwdruk weer te geven en te gebruiken.
+1. Gebruiken **Sluiten** om te vertrekken en terug te keren naar de **Sites** console.
 
-### Overzicht van live kopie openen - eigenschappen van een vervagingspagina {#opening-live-copy-overview-properties-of-a-blueprint-page}
+### Live Copy-overzicht openen - Eigenschappen van een vervagingspagina {#opening-live-copy-overview-properties-of-a-blueprint-page}
 
-Het **Live Copy-overzicht** kan worden geopend wanneer u eigenschappen van een blauwdrukpagina bekijkt:
+De **Overzicht van live kopiëren** kan worden geopend wanneer u de eigenschappen van een pagina met een blauwdruk bekijkt:
 
-1. Open **Eigenschappen** voor de aangewezen blauwdrukpagina.
-1. Open het tabblad **Vervagen** - de optie **Live kopie overzicht** wordt weergegeven op de bovenste werkbalk:
+1. Openen **Eigenschappen** voor de juiste blauwdrukpagina.
+1. Open de **Blauwdruk** tab - the **Overzicht van live kopiëren** Deze optie wordt weergegeven in de bovenste werkbalk:
 
    ![chlimage_1-360](assets/chlimage_1-360.png)
 
-1. Selecteer **Overzicht van actieve kopie** om het overzicht van alle actieve kopieën met betrekking tot de huidige blauwdruk weer te geven en te gebruiken.
+1. Selecteren **Overzicht van live kopiëren** om het overzicht van alle actieve kopieën met betrekking tot de huidige blauwdruk weer te geven en te gebruiken.
 
    >[!NOTE]
    >
-   >Zie ook het Knowledge Base-artikel [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) voor meer informatie.
+   >Zie ook het artikel in de Knowledge Base voor meer informatie [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
 
-1. Gebruik **Close** om af te sluiten en terug te keren naar de **Sites**-console.
+1. Gebruiken **Sluiten** om te vertrekken en terug te keren naar de **Sites** console.
 
-## Het gebruiken van het Levende Overzicht van het Exemplaar {#using-the-live-copy-overview}
+## Het Live Copy-overzicht gebruiken {#using-the-live-copy-overview}
 
-Het **Live Copy-overzicht** kan ook worden gebruikt om handelingen uit te voeren op de actieve kopie:
+De **Overzicht van live kopiëren** kan ook worden gebruikt om acties op het levende exemplaar uit te voeren:
 
-1. Open **Live Copy Overview**.
-1. Selecteer de vereiste blauwdruk of pagina voor live kopiëren. De werkbalk wordt bijgewerkt en toont de beschikbare acties. De [beschikbare acties](/help/sites-administering/msm.md#terms-used) hangen af van het feit of u een [blauwdruk](#actions-for-a-blueprint-page) of [live kopie](#actions-for-a-live-copy-page) pagina selecteert:
+1. Open de **Overzicht van live kopiëren**.
+1. Selecteer de vereiste blauwdruk of pagina voor live kopiëren. De werkbalk wordt bijgewerkt en toont de beschikbare acties. De [handelingen](/help/sites-administering/msm.md#terms-used) afhankelijk van de vraag of u een [blauwdruk](#actions-for-a-blueprint-page) of [live kopie](#actions-for-a-live-copy-page) pagina:
 
-### Handelingen voor een blauwdrukpagina {#actions-for-a-blueprint-page}
+### Handelingen voor een vervagingspagina {#actions-for-a-blueprint-page}
 
 Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
@@ -92,7 +91,7 @@ Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
    * Voer een rollout uit om wijzigingen van de bron naar de livecopy te duwen.
 
-### Handelingen voor een pagina {#actions-for-a-live-copy-page} van Actieve kopie
+### Handelingen voor een Live Copy-pagina {#actions-for-a-live-copy-page}
 
 Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties beschikbaar:
 
@@ -126,14 +125,14 @@ Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties bes
 
    * Hiermee verwijdert u permanent de live relatie tussen een live kopie en de bijbehorende blauwdrukpagina.
 
-## Relatiestatus {#relationship-status}
+## Relationistatiestatus {#relationship-status}
 
-De **Relationship Status** console heeft twee lusjes die een waaier van functionaliteit verstrekken:
+De **Relationistatiestatus** console heeft twee tabbladen die een reeks functies bieden:
 
 * [Relatie statusinformatie](#relationship-status-information)
 * [Informatie over live kopiëren](#live-copy-information)
 
-### Informatie over verbindingsstatus {#relationship-status-information}
+### Relatie statusinformatie {#relationship-status-information}
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en de live kopie:
 
@@ -144,4 +143,3 @@ Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen
 Op dit tabblad kunt u de configuratie van de live kopie weergeven en bewerken:
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
-

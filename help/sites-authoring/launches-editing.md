@@ -1,24 +1,23 @@
 ---
 title: Lanceringen bewerken
-seo-title: Lanceringen bewerken
-description: 'Nadat u een opstartafbeelding voor de pagina (of set pagina''s) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(''s). '
-seo-description: 'Nadat u een opstartafbeelding voor de pagina (of set pagina''s) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(''s). '
+seo-title: Editing Launches
+description: Nadat u een opstartafbeelding voor de pagina (of set pagina's) hebt gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina('s).
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: 6f1f4fbaf9ee4b5ab073a27a58cb040c76230ebd
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 18%
 
 ---
-
 
 # Lanceringen bewerken{#editing-launches}
 
@@ -26,8 +25,8 @@ ht-degree: 18%
 
 Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud bewerken in de opstartafbeelding van de pagina(&#39;s).
 
-1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
-1. Selecteer **Ga naar de pagina** om de pagina te openen voor bewerking.
+1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
+1. Selecteren **Ga naar de pagina** om de pagina voor bewerking te openen.
 
 >[!NOTE]
 >
@@ -36,35 +35,35 @@ Wanneer een startpagina (of een set pagina&#39;s) is gemaakt, kunt u de inhoud b
 >* Waarschuwing: Deze pagina is de bron van een opstart. Het verplaatsen van de pagina is niet toegestaan.
 
 
-### Starten van pagina&#39;s bewerken waarop een actieve kopie {#editing-launch-pages-subject-to-a-live-copy} van toepassing is
+### Pagina&#39;s starten bewerken die zijn onderworpen aan een live kopie {#editing-launch-pages-subject-to-a-live-copy}
 
-Als uw lancering op een [levende exemplaar](/help/sites-administering/msm.md) gebaseerd is, dan zult u:
+Als uw lancering op a gebaseerd is [live kopie](/help/sites-administering/msm.md) dan zult u:
 
 * zie vergrendelingssymbolen (kleine hangsloten) wanneer u een component (inhoud en/of eigenschappen) bewerkt.
-* zie het **tabblad Live kopie** in **Pagina-eigenschappen**
+* zie **Live kopie** tab in **Pagina-eigenschappen**
 
 Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 
-U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een live standaardkopie kunt bewerken. bijvoorbeeld:
+U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een standaard live kopie kunt bewerken. bijvoorbeeld:
 
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
 * **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
 
-Zie [Inhoud van actieve kopie wijzigen](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) voor meer informatie.
+Zie [Live kopie van inhoud wijzigen](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) voor nadere informatie.
 
 ## Een startpagina vergelijken met de bijbehorende bronpagina {#comparing-a-launch-page-to-its-source-page}
 
 Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
-1. In **Sites** console, [navigeer aan de bronpagina van uw lancering en selecteer het ](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Open het venster **[Referenties](/help/sites-authoring/basic-handling.md#references)** en selecteer **Launches**.
-1. Selecteer uw specifieke lancering toen **Vergelijk met Bron**:
+1. In de **Sites** console, [navigeer naar de bronpagina van uw lancering en selecteer het](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteert u **Starten**.
+1. Selecteer vervolgens uw specifieke startpagina **Vergelijken met bron**:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor volledige informatie over het gebruik van deze functie.
+   Voor volledige informatie over het gebruik van deze functie raadpleegt u [Pagina grijs](/help/sites-authoring/page-diff.md).
 
 ## De gebruikte bronpagina&#39;s wijzigen {#changing-the-source-pages-used}
 
@@ -74,10 +73,10 @@ U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het b
 
    * de [Startconsole](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecteer **Bewerken**.
+      * Selecteren **Bewerken**.
    * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
 
-      * Selecteer **Starten bewerken**.
+      * Selecteren **Starten bewerken**.
 
    De bronpagina&#39;s worden weergegeven.
 
@@ -95,10 +94,10 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
    * de [Startconsole](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Selecteer **Eigenschappen**.
+      * Selecteren **Eigenschappen**.
    * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
 
-      * Selecteer **Eigenschappen bewerken**.
+      * Selecteren **Eigenschappen bewerken**.
 
    De details worden weergegeven.
 
@@ -106,8 +105,8 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
 
    Zie [Lanceringen - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van de velden **Startdatum** en **Geschikt voor productie**.
 
-## De opstartstatus van een pagina {#discovering-the-launch-status-of-a-page} opzoeken
+## De opstartstatus van een pagina vaststellen {#discovering-the-launch-status-of-a-page}
 
-De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in Referenties (Sites Console)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
+De status wordt weergegeven wanneer u een specifieke start selecteert op het tabblad Referenties (zie [Starten in verwijzingen (siteconsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 
 ![screen-shot_2019-03-05at121901](assets/screen-shot_2019-03-05at121901.png)

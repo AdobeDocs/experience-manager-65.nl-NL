@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
 workflow-type: tm+mt
-source-wordcount: '4679'
+source-wordcount: '4664'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Solr indexen kunnen worden gevormd om ingebed op de AEM server voor ontwikkeling
 
 >[!NOTE]
 >
->Terwijl het nemen van de geïntegreerde Solr onderzoeksbenadering zou voor het ontladen van indexeren aan een Solr server toestaan. Als de geavanceerdere eigenschappen van de server van Solr door een kruipende gebaseerde benadering worden gebruikt, zal het extra configuratiewerk worden vereist. Headwire heeft een [opensource-connector](https://www.aemsolrsearch.com/#/) deze typen implementaties te versnellen.
+>Terwijl het nemen van de geïntegreerde Solr onderzoeksbenadering zou voor het ontladen van indexeren aan een Solr server toestaan. Als de geavanceerdere eigenschappen van de server van Solr door een kruipende gebaseerde benadering worden gebruikt, zal het extra configuratiewerk worden vereist.
 
 Het nadeel aan het nemen van deze benadering is dat terwijl door gebrek, AEM vragen ACLs zullen respecteren en zo resultaten verbergen die een gebruiker geen toegang tot heeft, het externaliseren van onderzoek aan een Solr server zal niet deze eigenschap steunen. Als de zoekactie op deze manier extern moet worden uitgevoerd, moet er extra op worden gelet dat de gebruikers geen resultaten krijgen die ze niet zouden moeten zien.
 

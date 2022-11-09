@@ -1,30 +1,29 @@
 ---
 title: Forms-toepassingen en -taken beheren in AEM Postvak In
-seo-title: Forms-toepassingen en -taken beheren in AEM Postvak In
+seo-title: Manage Forms applications and tasks in AEM Inbox
 description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
-seo-description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
+seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d324586eb1d4fb809bf87641001b92a1941e6548
+exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1115'
-ht-degree: 0%
+source-wordcount: '1089'
+ht-degree: 1%
 
 ---
 
+# Forms-toepassingen en -taken beheren in AEM Postvak In{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-# Forms-toepassingen en -taken beheren in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
-
-Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. U moet een workflowtoepassing maken om een Forms-workflow als toepassing beschikbaar te maken in Inbox. Voor meer informatie over werkschematoepassing en andere manieren om de werkschema&#39;s van Forms te lanceren, zie [Een Forms-centric werkschema op OSGi](../../forms/using/aem-forms-workflow.md#launch) lanceren.
+Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. U moet een workflowtoepassing maken om een Forms-workflow als toepassing beschikbaar te maken in Inbox. Ga voor meer informatie over workflowtoepassingen en andere manieren om Forms-workflows te starten naar [Een Forms-centric workflow starten op OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
-De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over mening en filters, zie [Uw Inbox](/help/sites-authoring/inbox.md).
+De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over weergave en filters raadpleegt u [Uw Postvak IN](/help/sites-authoring/inbox.md).
 
 Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken beheren.
 
@@ -32,17 +31,17 @@ Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken be
 >
 >U moet lid van de werkstroom-gebruikers groep zijn om AEM Inbox te kunnen gebruiken.
 
-## Toepassing {#create-application} maken
+## Toepassing maken {#create-application}
 
-1. Ga naar AEM Inbox op https://&#39;[server]:[port]&#39;/aem/inbox.
+1. Ga naar AEM Postvak IN op https://&#39;[server]:[poort]&#39;/aem/inbox.
 1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
-1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het adaptieve formulier in en tik **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
+1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het adaptieve formulier in en tik op **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 
 ## Taken beheren {#manage-tasks}
 
 Wanneer een Forms-workflow wordt geactiveerd en u bent een ontvanger of onderdeel van de groep waaraan u bent toegewezen, wordt een taak weergegeven in uw Postvak In. U kunt taakdetails bekijken en beschikbare acties op de taak van binnen Inbox uitvoeren.
 
-### Taken aanvragen of delegeren {#claim-or-delegate-tasks}
+### Vorderingen of gedelegeerde taken {#claim-or-delegate-tasks}
 
 De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groepsleden. Om het even welk groepslid kan die taak beweren of het aan een ander groepslid delegeren. Daartoe:
 
@@ -52,20 +51,20 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Delegate]** om de taak te delegeren. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
+   * Tik op **[!UICONTROL Delegate]**. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
 
    ![gedelegeerde](assets/delegate.png)
 
-   * Tik **[!UICONTROL Open]** om de taak op te eisen. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tik **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
+   * Tik op **[!UICONTROL Open]**. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tikken **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
 
    ![vordering](assets/claim.png)
 
-### Details weergeven en handelingen uitvoeren op taken {#view-details-and-perform-actions-on-tasks}
+### Details weergeven en handelingen uitvoeren voor taken {#view-details-and-perform-actions-on-tasks}
 
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
 1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
-1. Tik **Open** om taakdetails weer te geven en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
+1. Tikken **Openen** om taakdetails te bekijken en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
 
    >[!NOTE]
    >
@@ -90,36 +89,36 @@ Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulie
 
 #### Workflowdetails {#workflow-details}
 
-Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De stadia voor een werkschema worden bepaald in [Wijs taakstap](/help/sites-developing/workflows-step-ref.md) van het bijbehorende werkschema toe.
+Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De fasen van een workflow worden gedefinieerd in het dialoogvenster [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md) van de bijbehorende workflow.
 
-Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt **[!UICONTROL View Details]** voor een voltooid stadium tikken om details over dat stadium te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
+Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt tikken **[!UICONTROL View Details]** voor een voltooide fase om details over die fase te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
 
 ![workflowdetails](assets/workflow-details.png)
 
 #### Werkbalk Handelingen {#actions-toolbar}
 
-Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Afgevaardigde standaardacties zijn, worden andere beschikbare acties gevormd in [taakstap toewijzen](/help/sites-developing/workflows-step-ref.md). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
+Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Delegatie standaardacties zijn, worden andere beschikbare acties gevormd in [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
 
 Wanneer u de taak uitvoert, gaat deze verder in de workflow.
 
-### Voltooide taken {#view-completed-tasks} weergeven
+### Voltooide taken weergeven {#view-completed-tasks}
 
 AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status, begin- en einddatum enzovoort. Voltooide taken weergeven:
 
-1. Tik in AEM Inbox op ![toggle-side-panel1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
-1. Tik op **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
+1. Tik in AEM Postvak IN ![aan de zijkant schakelen1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
+1. Tikken **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
 
    ![filter](assets/filter.png)
 
 1. Tik om een taak te selecteren en klik op **[!UICONTROL Open]**.
 
-De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor een adaptief formulier geeft de taak het alleen-lezen adaptieve formulier of het bijbehorende PDF-document met record weer, zoals geconfigureerd op het tabblad Formulier/Document van de stappen [Taakworkflow toewijzen](/help/sites-developing/workflows-step-ref.md).
+De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor een adaptief formulier wordt het alleen-lezen adaptieve formulier of het bijbehorende PDF-document met record weergegeven, zoals geconfigureerd op het tabblad Formulier/Document van het dialoogvenster [Workflowstap Toewijzen](/help/sites-developing/workflows-step-ref.md).
 
 In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen actie, taakstatus, begindatum en einddatum.
 
 ![voltooide taak](assets/completed-task.png)
 
-Op het tabblad **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Tik **[!UICONTROL View details]** voor een stap voor gedetailleerde informatie.
+De **[!UICONTROL Workflow Details]** wordt elke stap van de workflow weergegeven. Tikken **[!UICONTROL View details]** voor een stap voor gedetailleerde informatie.
 
 ![voltooid-taak-werkschema](assets/completed-task-workflow.png)
 
@@ -131,7 +130,7 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
 
 1. Gebruik een van de volgende methoden om indexen toe te voegen:
 
-   * Maak de volgende knooppunten in CRX DE op `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` met respectievelijke eigenschappen zoals gespecificeerd in de volgende lijst:
+   * De volgende knooppunten maken in CRX DE op `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` met de respectieve eigenschappen zoals gespecificeerd in de volgende tabel:
 
       | Knooppunt | Eigenschap | Type |
       |---|---|---|
@@ -142,7 +141,7 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
       | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project gebruiken om een plaatsbaar AEM pakket tot stand te brengen. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
+   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project om een implementeerbaar AEM pakket te maken. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -152,8 +151,8 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Maak een index met eigenschappen en stel deze in op true](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Een index voor eigenschappen maken en instellen op true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
 
-1. Na het vormen van indexen in CRX DE of het opstellen via een pakket, [herindexeer de bewaarplaats](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+1. Na het configureren van indices in CRX DE of het implementeren via een pakket, [de gegevensopslagplaats opnieuw indexeren](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html

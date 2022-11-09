@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 4%
+source-wordcount: '667'
+ht-degree: 2%
 
 ---
 
@@ -137,8 +137,8 @@ U kunt ook de consoles aanpassen:
 Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface, zijn er verwante problemen die u tegelijkertijd moet overwegen, zoals ook aanbevolen wordt:
 
 * [Sjablonen](/help/sites-developing/templates.md) - [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md)
-* [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middele
 
 * [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md)
 * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Tutorials en video&#39;s van sites](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [AEM 6.5 Tutorials en video&#39;s van sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)

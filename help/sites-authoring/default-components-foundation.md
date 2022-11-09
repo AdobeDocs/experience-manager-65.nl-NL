@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '7362'
-ht-degree: 3%
+source-wordcount: '7272'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 >
 >De meeste Componenten van de Stichting zijn nu verouderd met AEM 6.5. Zie de [releaseopmerkingen](/help/release-notes/deprecated-removed-features.md) voor nadere informatie.
 >
->Adobe beveelt aan gebruik te maken van de modernere en uitbreidbare [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in AEM projecten. Deze maken deel uit van de [Wij.Handelsversie van voorbeeldinhoud](/help/sites-developing/we-retail.md) en kan ook [afzonderlijk geïnstalleerd en gebruikt voor ontwikkeling](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) door uw beheerder.
+>Adobe beveelt aan gebruik te maken van de modernere en uitbreidbare [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projecten. Deze maken deel uit van de [Wij.Handelsversie van voorbeeldinhoud](/help/sites-developing/we-retail.md) en kan ook [afzonderlijk geïnstalleerd en gebruikt voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) door uw beheerder.
 >
 >U kunt de [AEM Tools Suite moderniseren](https://opensource.adobe.com/aem-modernize-tools/) om uw op componenten-Gebaseerde plaats van de Stichting aan te passen om de Componenten van de Kern te gebruiken.
 
@@ -65,7 +65,7 @@ De algemene componenten zijn de basiscomponenten die u gebruikt om inhoud te mak
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 U kunt een koppeling definiëren met een titel en beschrijving.
 
@@ -75,7 +75,7 @@ U kunt een koppeling definiëren met een titel en beschrijving.
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Image Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in plaats daarvan.
 
 De stichtingscomponent Adaptive Image genereert afbeeldingen die zo zijn geschaald dat ze passen in het venster waarin de webpagina wordt geopend. Om de component te gebruiken, verstrekt u een beeldmiddel of van het dossiersysteem of DAM. Wanneer de webpagina wordt geopend, downloadt de webbrowser een kopie van de afbeelding waarvan het formaat is gewijzigd, zodat deze geschikt is voor het huidige venster.
 
@@ -158,7 +158,7 @@ Voor informatie over het aanpassen van de component Adaptief beeld raadpleegt u 
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Carousel Core-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Carousel Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) in plaats daarvan.
 
 Met de Carousel-component kunt u afbeeldingen weergeven die aan afzonderlijke pagina&#39;s zijn gekoppeld:
 
@@ -229,7 +229,7 @@ Het maximumaantal items dat u in de carrousel wilt gebruiken; dit is optioneel.
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Met de component Diagram kunt u een balk, lijn of cirkeldiagram toevoegen. AEM maakt een grafiek op basis van de gegevens die u opgeeft. U geeft gegevens op door rechtstreeks in het tabblad Gegevens te typen of door een spreadsheet te kopiëren en te plakken.
 
@@ -264,7 +264,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Content Fragment Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) in plaats daarvan.
 
 [Inhoudsfragmenten](/help/sites-authoring/content-fragments.md) worden gemaakt en beheerd als paginaonafhankelijke elementen. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
@@ -272,7 +272,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Hierdoor kunt u een ZIP-bestand met een ontwerppakket uploaden.
 
@@ -280,7 +280,7 @@ Hierdoor kunt u een ZIP-bestand met een ontwerppakket uploaden.
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component Download maakt een koppeling op de geselecteerde webpagina om een specifiek bestand te downloaden. U kunt middelen van de Vinder van de Inhoud slepen of een dossier uploaden.
 
@@ -300,7 +300,7 @@ In het volgende voorbeeld wordt de component Download getoond in Geometrixx:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De integratiecomponent van de externe toepassing (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM.
 
@@ -330,7 +330,7 @@ De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorb
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -378,7 +378,7 @@ Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Image Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) in plaats daarvan.
 
 De component image geeft een afbeelding weer en de bijbehorende tekst volgens de opgegeven parameters.
 
@@ -464,13 +464,13 @@ Deze component biedt een rasteralinea-systeem waarmee u componenten kunt toevoeg
 
 >[!NOTE]
 >
->Deze component is geïmplementeerd met [HTML Sjabloontaal (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html).
+>Deze component is geïmplementeerd met [HTML Sjabloontaal (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 ### Lijst {#list}
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component weergeven](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component weergeven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) in plaats daarvan.
 
 Met de component List kunt u zoekcriteria configureren voor het weergeven van een lijst:
 
@@ -544,7 +544,7 @@ In het volgende voorbeeld wordt een **Lijst** de manier waarop een lijst met ond
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -610,7 +610,7 @@ U kunt configureren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Content Fragment Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) in plaats daarvan.
 
 De **Referentie** kunt u tekst van een andere pagina van uw AEM website (in de huidige instantie) gebruiken. De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
 
@@ -644,7 +644,7 @@ Zodra gevormd zal de inhoud precies zoals op de bronpagina verschijnen. Het feit
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component Snel zoeken](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component Snel zoeken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) in plaats daarvan.
 
 De component van het Onderzoek voegt onderzoeksmogelijkheden aan uw pagina toe.
 
@@ -713,7 +713,7 @@ In het volgende voorbeeld wordt een zoekterm getoond die verkeerd is gespeld en 
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Navigatie](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/navigation.html), [Taalnavigatie](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/language-navigation.html), en [Breadcrumb Core-componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/breadcrumb.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Navigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html), [Taalnavigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html), en [Breadcrumb Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html) in plaats daarvan.
 
 Een automatische sitemapvermelding die (met de standaardinstellingen) alle pagina&#39;s (als actieve koppelingen) op de huidige website weergeeft. Een extract toont bijvoorbeeld:
 
@@ -765,7 +765,7 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen ge
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Tekstkerncomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in plaats daarvan.
 
 >[!NOTE]
 >
@@ -814,7 +814,7 @@ Ga voor meer informatie over het toepassen van tags naar [Tags gebruiken](/help/
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Tekstkerncomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in plaats daarvan.
 
 >[!NOTE]
 >
@@ -843,7 +843,7 @@ Naast de op een dialoogvenster gebaseerde bewerkingsmodus voor RTF-tekst, biedt 
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Afbeelding](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html) en [Tekstkerncomponent](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Afbeelding](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) en [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html) in plaats daarvan.
 
 De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [Tekst](#text) en [Afbeelding](#image) voor meer informatie.
 
@@ -891,7 +891,7 @@ In het volgende voorbeeld ziet u een component Tekstafbeelding waarin de afbeeld
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Title Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/list.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Title Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=en) in plaats daarvan.
 
 De component title kan:
 
@@ -981,7 +981,7 @@ Met de component Kolombeheer kunnen gebruikers selecteren hoe ze de inhoud in he
 
 >[!CAUTION]
 >
->De component Foundation van componenten is afgekeurd. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>De component Foundation van componenten is afgekeurd. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Forms en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
 
@@ -1101,7 +1101,7 @@ Dit is een verplicht veld en mag alleen de volgende tekens bevatten:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component van formuliercontainer](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-container.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Core-component van formuliercontainer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html) in plaats daarvan.
 
 De component Form definieert zowel het begin als het einde van een formulier met behulp van de **Begin formulier** en **Einde formulier** elementen. Deze worden altijd gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
 
@@ -1111,7 +1111,7 @@ Tussen het begin en het einde van een formulier kunt u formuliercomponenten toev
 
 >[!NOTE]
 >
->De basiscomponenten van een component ondersteunen alleen het gebruik van andere basiscomponenten van componenten (knop, tekst, verborgen enz.). Gebruiken [kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) formuliercomponenten in een formulier met een basiscomponent (en andersom) worden niet ondersteund.
+>De basiscomponenten van een component ondersteunen alleen het gebruik van andere basiscomponenten van componenten (knop, tekst, verborgen enz.). Gebruiken [kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) formuliercomponenten in een formulier met een basiscomponent (en andersom) worden niet ondersteund.
 
 #### Begin van formulier {#start-of-form}
 
@@ -1329,7 +1329,7 @@ Dit geeft het einde van het formulier aan. U kunt configureren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
 
 Hierdoor kan de gebruiker een accountnaam invoeren:
 
@@ -1339,7 +1339,7 @@ Hierdoor kan de gebruiker een accountnaam invoeren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
 
 Zo kunt u een internationaal adresveld met de volgende indeling toevoegen:
 
@@ -1351,7 +1351,7 @@ De component wordt gevormd voor onmiddellijk gebruik, maar u kunt de configurati
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -1367,7 +1367,7 @@ U kunt diverse parameters voor deze component vormen, met inbegrip van een beric
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
 
 Met een selectievakje kunt u een lijst maken van een of meer selectievakjes, waarvan er meerdere tegelijk kunnen worden geselecteerd.
 
@@ -1385,7 +1385,7 @@ U kunt verschillende parameters opgeven, zoals een titel, beschrijving en elemen
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Zo kunt u de velden opgeven die nodig zijn voor het invoeren van creditcardgegevens. U kunt het vormen om de types van toegelaten kaart en de vereiste informatie (bijvoorbeeld, veiligheidscode) te specificeren.
 
@@ -1395,7 +1395,7 @@ Zo kunt u de velden opgeven die nodig zijn voor het invoeren van creditcardgegev
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
 
 Een vervolgkeuzelijst kan worden geconfigureerd om een reeks waarden voor selectie aan uw gebruik te bieden:
 
@@ -1413,7 +1413,7 @@ U kunt een titel en items opgeven die in de lijst moeten worden weergegeven. Met
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component voor het uploaden van bestanden biedt de gebruiker een mechanisme voor het selecteren en uploaden van een bestand.
 
@@ -1427,7 +1427,7 @@ De component voor het uploaden van bestanden biedt de gebruiker een mechanisme v
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Verborgen kerncomponent van formulier](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-hidden.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Verborgen kerncomponent van formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-hidden.html) in plaats daarvan.
 
 Met deze component kunt u een verborgen veld maken. Deze kunnen voor verschillende doeleinden worden gebruikt; bijvoorbeeld wanneer u een handeling moet uitvoeren nadat u het formulier hebt verzonden of wanneer verborgen gegevens vereist zijn tijdens de naverwerking.
 
@@ -1443,7 +1443,7 @@ Met deze component kunt u een verborgen veld maken. Deze kunnen voor verschillen
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
 
 Met een afbeeldingsknop kunt u een knop maken met uw eigen afbeelding en tekst:
 
@@ -1453,7 +1453,7 @@ Met een afbeeldingsknop kunt u een knop maken met uw eigen afbeelding en tekst:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component voor het uploaden van afbeeldingen biedt de gebruiker een mechanisme voor het selecteren en uploaden van een afbeeldingsbestand.
 
@@ -1463,7 +1463,7 @@ De component voor het uploaden van afbeeldingen biedt de gebruiker een mechanism
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 In het koppelingsveld kan de gebruiker een URL opgeven:
 
@@ -1475,7 +1475,7 @@ Wordt meestal gebruikt voor het agendagebeurtenis, waar dit wordt gebruikt voor 
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Dit wordt gebruikt om de gebruiker toe te staan om hun wachtwoord in te voeren:
 
@@ -1485,7 +1485,7 @@ Dit wordt gebruikt om de gebruiker toe te staan om hun wachtwoord in te voeren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Deze component voorziet uw gebruiker van twee gebieden voor:
 
@@ -1500,7 +1500,7 @@ Met standaardinstellingen wordt de component weergegeven als:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html) in plaats daarvan.
 
 Een groep keuzerondjes bevat een lijst met een of meer keuzerondjes, waarvan er slechts één op een bepaald moment kan worden geselecteerd.
 
@@ -1518,7 +1518,7 @@ U kunt de elementnaam samen met een titel en een beschrijving opgeven Met de kno
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
 
 Met deze component kunt u een verzendknop maken met de standaardtekst:
 
@@ -1532,7 +1532,7 @@ Of met uw eigen tekst:
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 In dit veld kunt u tags selecteren:
 
@@ -1559,7 +1559,7 @@ U kunt verschillende parameters opgeven, waaronder de naamruimten die kunnen wor
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) in plaats daarvan.
 
 Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met uw eigen lead in een bericht:
 
@@ -1569,7 +1569,7 @@ Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met u
 
 >[!CAUTION]
 >
->Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) in plaats daarvan.
 
 Zo kunt u een knop Verzenden maken voor gebruik in een workflow.
 

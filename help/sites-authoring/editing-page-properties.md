@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 1cd63d2ce5c5caf408b11eb6bac9b1a54dae0b25
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1884'
 ht-degree: 4%
 
 ---
@@ -103,7 +103,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    >* Deze mag niet op een bestaande pagina worden ingesteld.
 
 
-   U moet ook Dispatcher configureren om toegang tot vanity URL&#39;s in te schakelen. Zie [Toegang tot URL&#39;s met Vanity inschakelen](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer informatie .
+   U moet ook Dispatcher configureren om toegang tot vanity URL&#39;s in te schakelen. Zie [Toegang tot URL&#39;s met Vanity inschakelen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) voor meer informatie .
 
 * **Redirect Vanity URL**
 

@@ -4,9 +4,9 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: Een beschrijving van de essentiële capaciteiten van AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: 52385af23b04cda33a88ec42bb150650eb58fe4e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '398'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie
 
 ## AEM Screens {#aem-screens}
 
-Schermen is een Adobe Experience Manager-mogelijkheid waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren waarbij verschillende soorten schermen betrokken zijn, in combinatie met een uitgebreid digitaal marketingplatform.  [Meer weten?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Schermen is een Adobe Experience Manager-mogelijkheid waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren waarbij verschillende soorten schermen betrokken zijn, in combinatie met een uitgebreid digitaal marketingplatform.  [Meer weten?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 

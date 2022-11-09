@@ -1,21 +1,20 @@
 ---
 title: Decoratietag
-description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
-translation-type: tm+mt
-source-git-commit: be1c0e21216b1014a36f88d13557f6e1d7a87c0a
+description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
+exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
 
-
 # Decoratietag{#decoration-tag}
 
-Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Dit heeft hoofdzakelijk twee doelen:
+Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Dit heeft hoofdzakelijk twee doelen:
 
 * Een component kan alleen worden bewerkt wanneer deze is verpakt met een HTML-element.
-* Het element wrapping wordt gebruikt om HTML-klassen toe te passen die het volgende bieden:
+* Het element wrapping wordt gebruikt om de klassen van HTML toe te passen die verstrekken:
 
    * indelingsgegevens
    * opmaakgegevens
@@ -39,17 +38,17 @@ De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om
 
 * **`cq:noDecoration {boolean}`:** Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
 
-* **`cq:htmlTag`node:** Dit knooppunt kan worden toegevoegd onder een component en kan de volgende eigenschappen hebben:
+* **`cq:htmlTag`node:** Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
 
-   * **`cq:tagName {String}`:** Dit kan worden gebruikt om een markering van douaneHTML te specificeren die voor het verpakken van de componenten in plaats van het standaardDIV element moet worden gebruikt.
+   * **`cq:tagName {String}`:** Hiermee kunt u een aangepaste HTML-tag opgeven die moet worden gebruikt voor de omloop van de componenten in plaats van het standaard DIV-element.
    * **`class {String}`:** Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
    * Andere eigenschapnamen worden toegevoegd als HTML-kenmerken met dezelfde tekenreekswaarde als opgegeven.
 
 ## Scriptbesturingselementen {#script-controls}
 
-Het gedrag van de omslag verschilt echter, afhankelijk van de vraag of [HTL](/help/sites-developing/decoration-tag.md#htl) of [JSP](/help/sites-developing/decoration-tag.md#jsp) wordt gebruikt om het element op te nemen.
+Het gedrag van de omslag verschilt echter, afhankelijk van of [HTL](/help/sites-developing/decoration-tag.md#htl) of [JSP](/help/sites-developing/decoration-tag.md#jsp) wordt gebruikt om het element op te nemen.
 
-### HTML {#htl}
+### HTL {#htl}
 
 In het algemeen kan het gedrag van de omslag in HTML als volgt worden samengevat:
 
@@ -59,19 +58,19 @@ In het algemeen kan het gedrag van de omslag in HTML als volgt worden samengevat
 Het gedrag van de omslag kan ook volledig worden geregeld.
 
 * Het HTML-script heeft volledige controle over het resulterende gedrag van de omvattende tag.
-* Componenteigenschappen (zoals `cq:noDecoration` en `cq:tagName`) kunnen ook de omvattende tag definiëren.
+* Componenteigenschappen (zoals `cq:noDecoration` en `cq:tagName`) kunt u ook de omsluitende tag definiëren.
 
 Het is mogelijk het gedrag van de omvattende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Zie de [HTML-documentatie](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) voor meer informatie over het ontwikkelen in HTML.
+Voor meer informatie over het ontwikkelen in HTML raadpleegt u de [HTML-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
-#### Beslissingsstructuur {#decision-tree}
+#### Beslissingsboom {#decision-tree}
 
 Deze beslissingsstructuur geeft een overzicht van de logica die het gedrag van de omsluitende tags bepaalt.
 
 ![chlimage_1-75](assets/chlimage_1-75a.png)
 
-#### Gevallen {#use-cases} gebruiken
+#### Gevallen gebruiken {#use-cases}
 
 In de volgende drie gebruiksgevallen ziet u voorbeelden van de manier waarop de labels van de omloop worden verwerkt. Ook ziet u hoe eenvoudig het is om het gewenste gedrag van de labels van de omloop te bepalen.
 
@@ -97,7 +96,7 @@ Alle volgende voorbeelden nemen de volgende inhoudsstructuur, en componenten aan
 
 #### Hoofdlettergebruik 1: Component opnemen voor hergebruik van code {#use-case-include-a-component-for-code-reuse}
 
-Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik. In dat geval, wordt de inbegrepen component niet editable met zijn eigen toolbar en dialoog, zodat is geen omslag nodig, en `cq:htmlTag` van de component zal worden genegeerd. Dit kan als standaardgedrag worden beschouwd.
+Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik. In dat geval is het niet de bedoeling dat de opgenomen component bewerkbaar is met een eigen werkbalk en dialoogvenster, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -109,11 +108,11 @@ Resulterende uitvoer op `/content/test.html`:
 
 Een voorbeeld zou een component zijn die een component van het kernbeeld omvat om een beeld te tonen, typisch in dat geval door een synthetisch middel te gebruiken, dat in het omvatten van een virtuele kindcomponent bestaat door tot gegeven-slim-middel een voorwerp van de Kaart over te gaan dat alle eigenschappen vertegenwoordigt die de component zou hebben.
 
-#### Hoofdlettergebruik 2: Inclusief bewerkbare component {#use-case-include-an-editable-component}
+#### Hoofdlettergebruik 2: Een bewerkbare component opnemen {#use-case-include-an-editable-component}
 
-Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval, heeft elk inbegrepen kind impliciet een omslag voor de redacteur om te werken (tenzij uitdrukkelijk gehandicapt met het `cq:noDecoration` bezit) nodig.
+Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval heeft elk inbegrepen kind een omslag ondoordringbaar voor de redacteur nodig om te werken (tenzij uitdrukkelijk gehandicapt met `cq:noDecoration` eigenschap).
 
-Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag teweeg te brengen, is er de `decoration=true` optie.
+Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag te activeren, is er de `decoration=true` optie.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -140,14 +139,13 @@ Resulterende uitvoer `/content/test.html`:
 
 ## JSP {#jsp}
 
-Bij het opnemen van een component met behulp van `cq:includ`e of `sling:include`, is het standaardgedrag in AEM dat een DIV wordt gebruikt om het element te verpakken. Nochtans, kan dit verpakken op twee manieren worden aangepast:
+Wanneer een component wordt opgenomen met `cq:includ`e of `sling:include`Het standaardgedrag in AEM is dat een div-element wordt gebruikt om het element te omsluiten. Nochtans, kan dit verpakken op twee manieren worden aangepast:
 
-* Geef AEM expliciet op om de component niet te laten omlopen met `cq:noDecoration`.
-* Gebruik een aangepaste HTML-tag om de component te laten omlopen met `cq:htmlTag`/ `cq:tagName` of `decorationTagName`.
+* Geef AEM expliciet op om de component niet te laten omlopen met behulp van `cq:noDecoration`.
+* Een aangepaste HTML-tag gebruiken om de component te verpakken met `cq:htmlTag`/ `cq:tagName` of `decorationTagName`.
 
-### Beslissingsstructuur {#decision-tree-1}
+### Beslissingsboom {#decision-tree-1}
 
-De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, en `decorationTagName` het omslaggedrag beïnvloeden.
+De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, en `decorationTagName` het gedrag van de omslag beïnvloeden.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)
-

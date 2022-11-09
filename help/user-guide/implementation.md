@@ -1,16 +1,15 @@
 ---
 title: Gebruikershandleiding voor implementatie AEM 6.5
-seo-title: Gebruikershandleiding voor implementatie AEM 6.5
+seo-title: AEM 6.5 Implementation User Guide
 description: Een overzicht van de wijze waarop AEM 6.5 moet worden geïmplementeerd
-seo-description: Een overzicht van de wijze waarop AEM 6.5 moet worden geïmplementeerd
-translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+seo-description: An overview of how to implement AEM 6.5
+exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '119'
-ht-degree: 26%
+source-wordcount: '100'
+ht-degree: 0%
 
 ---
-
 
 # AEM 6.5 Gebruikershandleidingen voor implementatie {#aem-65-implementation-user-guides}
 
@@ -18,18 +17,18 @@ ht-degree: 26%
 
 Ben je een AEM ontwikkelaar? [Ga aan de slag met het ontwikkelen van AEM.](/help/sites-developing/home.md)
 
-## Kerncomponenten voor AEM {#core-components-for-aem}
+## Core Components for AEM {#core-components-for-aem}
 
-[Met de uitbreidbare Core Components kunnen auteurs eenvoudig inhoud maken.](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+[Met de uitbreidbare Core Components kunnen auteurs eenvoudig inhoud maken.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 
 ## HTML (HTML Template Language) voor AEM {#htl-for-aem}
 
-[Gebruik de Taal van het Malplaatje van HTML om voor AEM te ontwikkelen.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[Gebruik Sjabloontaal HTML om te ontwikkelen voor AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
-## Cloudbeheer voor AEM {#cloud-manager-for-aem}
+## Cloud Manager voor AEM {#cloud-manager-for-aem}
 
-[Begrijp hoe u Cloud Manager kunt gebruiken met AEM.](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Begrijp hoe u Cloud Manager kunt gebruiken met AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
-## Configuratie {#dispatcher-configuration}
+## Dispatcher Configuration {#dispatcher-configuration}
 
-[Uw verzender configureren met AEM](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+[Uw verzender configureren met AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: f64319e88687ba1f53c98d4768492a0b4f4b08b8
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2204'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 
 >[!NOTE]
 >
->In AEM 6.3 kunt u het doelbibliotheekbestand selecteren. [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel standaard webimplementaties als toepassingen van één pagina.
+>In AEM 6.3 kunt u het doelbibliotheekbestand selecteren. [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel standaard webimplementaties als toepassingen van één pagina.
 >
 >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 >
@@ -107,7 +107,7 @@ Klikken **OK**. Wanneer u inhoud aanwijst met Adobe Target, kunt u [selecteer uw
 Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 
 >[!NOTE]
-het doelbibliotheekbestand, [AT.JS](https://docs.adobe.com/content/help/en/target/using/implement-target/client-side/mbox-implement/mbox-download.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan. Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
+het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan. Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
 AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 * Verbeterde laadtijden voor webimplementaties
 * Verbeterde beveiliging
@@ -209,7 +209,7 @@ Uw framework is gemaakt. Als u het framework wilt repliceren naar de publicatie-
 
 ### Activiteiten koppelen aan de doelcloud-configuratie  {#associating-activities-with-the-target-cloud-configuration}
 
-Koppel uw [AEM](/help/sites-authoring/activitylib.md) met uw doelwolkenconfiguratie zodat u de activiteiten in [Adobe Target](https://docs.adobe.com/content/help/en/target/using/experiences/offers/manage-content.html).
+Koppel uw [AEM](/help/sites-authoring/activitylib.md) met uw doelwolkenconfiguratie zodat u de activiteiten in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
 Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:

@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1341'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ U wordt aangeraden het productiesysteem te klonen en de offline index te maken m
 
 ### Een runbook en proefversie voorbereiden {#prepare-a-runbook-and-trial-run}
 
-Aanbevolen wordt een [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) en voer een paar proeven uit alvorens de verbetering in productie in werking te stellen.
+Aanbevolen wordt een [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) en voer een paar proeven uit alvorens de verbetering in productie in werking te stellen.
 
 ### Doc Traversal Mode with Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

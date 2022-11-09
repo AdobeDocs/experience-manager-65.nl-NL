@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: d31fef1fe7023dfa5129bb8d136550b43ef197d1
 workflow-type: tm+mt
-source-wordcount: '3206'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
@@ -93,28 +93,28 @@ ht-degree: 0%
 -->
 
 * Wanneer een bestand wordt gekoppeld aan een adaptief formulier voor meerdere vensters en een concept van het adaptieve formulier wordt opgeslagen, treedt een fout op. (NPR-38978)
-* Wanneer een gebruiker een RGB-profiel naar een CMYK-profiel converteert met createPDF2 Java API met Adobe PDF-instellingen, werkt deze optie niet met Java API. De optie werkt prima met een zelfstandige DistillerClient-toepassing. (NPR-38858, CQ-4346181)
+* Wanneer een gebruiker een RGB-profiel naar CMYK-profiel converteert met createPDF2 Java™ API met Adobe PDF-instellingen, werkt deze optie niet met Java™ API. De optie werkt prima met een zelfstandige DistillerClient-toepassing. (NPR-38858, CQ-4346181)
 * Na het installeren van AEM 6.5 de dienstpak 12 van Forms (6.5.12.0), worden alle opties behalve om de taak te sluiten niet beschikbaar in de stap van de Taak van AEM Workflows toewijzen. (NPR-38743)
 * In een Document of Record (DoR) worden sommige waarden in een tabel ingekort. (NPR-38657)
 * Als de XDP een zwevend veld bevat en een voorbeeld weergeeft van een FormSet, worden tijdens het voorvertonen van de FormSet met Data XML geen gegevens weergegeven, maar worden gegevens weergegeven wanneer de optie Voorvertoning PDF wordt gebruikt.
 * In Adaptief Forms zijn keuzerondjes en selectievakjes niet in tabvolgorde. (NPR-38645)
 * Wanneer u de `Summary Step` om Document of Record (DoR) te genereren voor een vertaald adaptief formulier na verzending, wordt niet vertaald naar een gelokaliseerde taal. (NPR-38567)
 * De optie Opnieuw proberen uitschakelen in AEM workflowstappen werkt niet zoals verwacht. Het probleem verschijnt periodiek. (NPR-38547)
-* Wanneer het Adaptief formulier wordt verzonden met een RTF-veld, wordt het `an Internal Error while Submitting a Form` Er is een fout opgetreden. Wanneer de gebruiker focus krijgt op het RTF-veld voordat het formulier wordt verzonden, treedt de fout niet op. (NPR-38542)
+* Wanneer het Adaptief formulier wordt verzonden met een RTF-veld, wordt het `an Internal Error while Submitting a Form` fout treedt op. Wanneer de gebruiker focus krijgt op het RTF-veld, treedt de fout niet op voordat het formulier wordt verzonden. (NPR-38542)
 * Een fout `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` is geregistreerd. (NPR-38541)
 * Wanneer een gebruiker een PDF naar een adaptief formulier uploadt, reageert de AEM Forms-server niet meer. (NPR-38398)
 * Als u op een AEM Forms op OSGi-server de Document Service API gebruikt om PDF te certificeren, mislukt deze fout: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
 * Bij het verzenden van de conceptbrieven `Could not upload asset from xml input` fout treedt op. Dit heeft geen invloed op de functionaliteit. Bij het openen van een concept wordt de letter op de juiste wijze weergegeven. (CQ-4345979, CQ-4344418)
 * Wanneer een datum in Duitse notatie wordt ingevoerd en `Preview with Data` wordt gebruikt voor een letter, het veld Datum wordt niet weergegeven. (CQ-4345783)
 * Wanneer u een webportal maakt en de streepjescodes genereert op basis van gegevens, worden sommige streepjescodes niet correct gedecodeerd. (CQ-4345743)
-* Met PostScript-conversie naar de PDF wordt het uitvoerdocument niet met de verwachte kleuren weergegeven. (CQ-4345074)
+* Met PostScript-conversie naar de PDF wordt het uitvoerdocument met de verwachte kleuren niet weergegeven. (CQ-4345074)
 * Resourceoplosser veroorzaakt intermitterende voorleggingsmislukkingen en resulteert in zelfde stapelspoor om veelvoudige tijden voor één enkele voorlegging te verschijnen. (CQ-4344764)
-* Gebruikers kunnen de gewijzigde conceptbrieven die de `cmDataUrl` parameter. De concepten openen voor het eerst een boete. De problemen worden weergegeven bij volgende pogingen. (CQ-4344418)
+* Gebruikers kunnen de gewijzigde conceptbrieven die de `cmDataUrl` parameter. Het concept opent voor het eerst een boete. De problemen verschijnen bij volgende pogingen. (CQ-4344418)
 * Wanneer de gebruiker het `&` symbool in een Interactieve Communicatie (IC), ontbreekt het ontwerp van overeenkomstige IC om te laden. (CQ-4343969)
 * Wanneer u stijlopties in AEM Forms Designer gebruikt om PCL-bestanden te genereren, wordt de opgegeven stijl niet toegepast op gegenereerde bestanden. (CQ-4339573)
 * Als het aantal pagina&#39;s hoger is dan 15, mislukt de automatische conversie van dynamische XDP-formulieren naar adaptief formulier. Dit werkt prima als het aantal pagina&#39;s kleiner is dan 15. (NPR-35337)
 * Wanneer de optie Toevoegen aan Favorieten wordt gebruikt, geeft deze de status van de schakeloptie voor de schermlezer niet aan. (NPR-37137)
-* In het Model van de Gegevens van het Vorm, worden de waarden na decimaal in gegevensbestand gesteund Model van de Gegevens van het Vorm beknot voor geld en klein geldgegevenstype. . (CQDOC-19509)
+* In het Model van de Gegevens van het Vorm, worden de waarden na decimaal in gegevensbestand gesteund Model van de Gegevens van het Vorm beknot voor geld en klein geldgegevenstype. (CQDOC-19509)
 * Wanneer u een navigatiekoppeling selecteert voor workflow in HTML Workspace, wordt niet aangegeven dat de navigatiekoppeling is geselecteerd. (NPR-37138)
 * De functie Krabbelhandtekening is niet compatibel met toegankelijkheidsrichtlijnen. (NPR-37596)
 * AEM Forms gebruikt log4j 1.x. Ondersteuning voor log4j 1.x is verlopen. (NPR-38273)
@@ -122,8 +122,8 @@ ht-degree: 0%
 * Als u in Forms 6.5 Designer een formulier opent dat is gemaakt met Forms 6.1 Designer en een tekstvak bewerkt, overschrijdt de alinea-afstand de opgegeven ruimte. Alle vorige instellingen van de ruimte worden verwijderd en het tekstvak moet handmatig opnieuw worden opgemaakt. (CQ-4341899)
 * Er wordt een onjuiste waarde weergegeven voor de streepjescode SSCC-18. Forms-servers laten de waarde in het rechtergedeelte van de streepjescode weg. (CQ-4342400)
 * Voor statische PDF forms die zijn gemaakt met Forms 6.5 Designer, mislukt de toegankelijkheid van PDF bij een fout `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer.(NPR-36221)
-* Wanneer u een herhaalbaar paneel toevoegt aan een niet-XFA-adaptief formulier en het aantal herhaalbare deelvensters in een niet-XFA-formulier groter is dan 15, kan het toevoegen van een nieuwe instantie 7-8 seconden duren. (NPR-37346)
+* Mogelijkheid toegevoegd om schermtekst voor hyperlinks op te geven in Forms Designer. (NPR-36221)
+* Wanneer u een herhaalbaar paneel toevoegt aan een niet-XFA-adaptief formulier en het aantal herhaalbare deelvensters in een niet-XFA-formulier groter is dan 15, kan het toevoegen van een instantie 7-8 seconden duren. (NPR-37346)
 
 ## Integrations {#integrations-6514}
 
@@ -206,9 +206,9 @@ ht-degree: 0%
 * De download van het de dienstpak is beschikbaar op Adobe [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 * Bij een implementatie met MongoDB en meerdere exemplaren, installeert u [!DNL Experience Manager] 6.5.14.0 op één van de instanties van de Auteur die de Manager van het Pakket gebruiken.<!-- UPDATE FOR EACH NEW RELEASE -->
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Adobe raadt u niet aan de installatie van de [!DNL Experience Manager] 6.5.14.0-pakket. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Adobe raadt u niet aan de [!DNL Experience Manager] 6.5.14.0-pakket. Als dusdanig, alvorens u het de dienstpak installeert, zou u een steun van moeten creëren `crx-repository` voor het geval u het terug moet rollen. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ### Installeer het de dienstpak op [!DNL Experience Manager] 6,5 {#install-service-pack}
 
@@ -284,7 +284,7 @@ The UberJar for [!DNL Experience Manager] 6.5.13.0 is beschikbaar in de [Maven C
 
 >[!NOTE]
 >
->Houd er in Experience Manager 6.5.14.0 rekening mee dat de UberJar-versie (6.5.13.0) hetzelfde blijft als de vorige versie.
+>In Experience Manager 6.5.14.0, blijft de versie UberJar (6.5.13.0) het zelfde als de vorige versie.
 
 Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/help/sites-developing/ht-projects-maven.md) en neem het volgende gebiedsdeel in uw project POM op: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 

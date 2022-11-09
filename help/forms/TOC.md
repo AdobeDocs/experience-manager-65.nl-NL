@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 1%
+source-wordcount: '3801'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 1%
    + [Inleiding tot het ontwerpen van adaptieve formulieren](using/introduction-forms-authoring.md)
    + [Inleiding tot Interactieve Mededelingen](using/interactive-communications-overview.md)
    + [Inleiding tot het beheren van formulieren](using/introduction-managing-forms.md)
-   + [Inleiding tot de service voor automatische conversie van formulieren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [Inleiding tot de service voor automatische conversie van formulieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Zelfstudie: Uw eerste adaptieve formulier maken {#create-first-adaptive-form}
       + [Zelfstudie: Uw eerste adaptieve formulier maken](using/create-your-first-adaptive-form.md)
       + [Zelfstudie: Een adaptief formulier maken](using/create-adaptive-form.md)
@@ -57,12 +57,12 @@ ht-degree: 1%
    + [Architectuur en plaatsingstopologieën voor AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Een type persistentie kiezen voor een AEM Forms-installatie](using/choosing-persistence-type-for-aem-forms.md)
    + AEM Forms installeren op OSGi {#osgi-installation}
-      + [Ondersteunde platforms voor AEM formulieren op OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Ondersteunde platforms voor AEM formulieren op OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html)
       + [Documentservices installeren en configureren](using/install-configure-document-services.md)
       + [Mogelijkheden voor gegevensvastlegging installeren en configureren](using/installing-configuring-aem-forms-osgi.md)
       + [Forms-centric workflow installeren en configureren op OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Interactieve communicatie installeren en configureren](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [De Automatede form conversion-service installeren en configureren](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [De Automatede form conversion-service installeren en configureren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + AEM Forms installeren op JEE {#jee-installation}
       + [Ondersteunde platforms voor AEM formulieren op JEE](using/aem-forms-jee-supported-platforms.md)
       + [AEM Forms installeren en implementeren op JEE met JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -578,8 +578,8 @@ ht-degree: 1%
    + [Ad hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Problemen met procesrapportage oplossen](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Referentie ontwikkelaar {#developer-reference}
-   + [Grondbeginselen van ontwikkelaars](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-   + [HTML Sjabloontaal](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+   + [Grondbeginselen van ontwikkelaars](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+   + [HTML Sjabloontaal](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
    + [AEM insteekmodule voor het opsporen van fouten in adaptieve formulieren](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)

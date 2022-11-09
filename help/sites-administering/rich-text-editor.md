@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Ex
 description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3022'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,6 @@ De [wijze van het uitgeven van RTE (en UI)](#editingmodes) die u voor uw auteurs
 >* **Naam**: `configPath`
 >* **Type**: `String`
 >* **Waarde**: pad van het knooppunt met de feitelijke configuratie
-
 >
 >Noem niet de knoop van de configuratie RTE als `config`. Anders, worden de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
@@ -182,9 +181,9 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de sto
 
 >[!NOTE]
 >
->De [Tekstcomponent Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties zoals in dit document wordt beschreven.
+>De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties zoals in dit document wordt beschreven.
 >
->Zie voor meer informatie de [De montages van de UI van RTE en inhoudsbeleid](/help/sites-administering/rich-text-editor.md) en [Paginasjablonen maken](/help/sites-authoring/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+>Zie voor meer informatie de [De montages van de UI van RTE en inhoudsbeleid](/help/sites-administering/rich-text-editor.md) en [Paginasjablonen maken](/help/sites-authoring/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >
@@ -192,7 +191,6 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de sto
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
 

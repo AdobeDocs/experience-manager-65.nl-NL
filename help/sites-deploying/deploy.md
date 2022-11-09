@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1808'
+source-wordcount: '1802'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basisconcepten {#basic-concepts}
 
@@ -127,7 +127,7 @@ Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
 
 **Cloud Manager**: Cloud Manager, een onderdeel van de Adobe Experience Manager Managed Services-aanbieding, is een zelfbedieningsportaal waarmee organisaties Adobe Experience Manager in de cloud verder kunnen beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
 
-Voor meer informatie over Cloud Manager en zijn bronnen raadpleegt u [**Gebruikershandleiding voor Cloud Manager**](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+Voor meer informatie over Cloud Manager en zijn bronnen raadpleegt u [**Gebruikershandleiding voor Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
 
 ## Aan de slag {#getting-started}
 
@@ -313,4 +313,4 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Wat is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)

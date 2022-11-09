@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWij.Ret
 >
 >In dit document worden de [We.Retail Journal-app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) uitsluitend voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Elk AEM project moet [Projectarchetype AEM](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
+>Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -104,7 +104,6 @@ Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur va
 >
 >* [AEM versie 6.4 met servicepack 2](/help/release-notes/release-notes.md)
 >* [Installeer de steekproefWij.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

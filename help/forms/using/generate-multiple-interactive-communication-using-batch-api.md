@@ -6,24 +6,23 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2188'
 ht-degree: 1%
 
 ---
-
 
 # Meerdere interactieve communicatie genereren met de Batch-API {#use-batch-api-to-generate-multiple-ic}
 
 U kunt de batch-API gebruiken om meerdere interactieve communicatie van een sjabloon te maken. De sjabloon is een interactieve communicatie zonder gegevens. De batch-API combineert gegevens met een sjabloon voor interactieve communicatie. De API is nuttig bij de massaproductie van interactieve communicatie. Bijvoorbeeld telefoonrekeningen, creditcardoverzichten voor meerdere klanten.
 
-De batch-API accepteert records (gegevens) in JSON-indeling en vanuit een formuliergegevensmodel. Het aantal geproduceerde interactieve mededelingen is gelijk aan de verslagen die in het inputJSON dossier in het gevormde Model van de Gegevens van de Vorm worden gespecificeerd. U kunt de API gebruiken om zowel de output van de Druk als van het Web te produceren. Met de optie AFDRUKKEN maakt u een PDF-document en met de optie WEB maakt u gegevens in de JSON-indeling voor elke afzonderlijke record.
+De batch-API accepteert records (gegevens) in JSON-indeling en vanuit een formuliergegevensmodel. Het aantal geproduceerde interactieve mededelingen is gelijk aan de verslagen die in het inputJSON dossier in het gevormde Model van de Gegevens van de Vorm worden gespecificeerd. U kunt de API gebruiken om zowel de output van de Druk als van het Web te produceren. Met de optie AFDRUKKEN wordt een PDF-document gemaakt en met de optie WEB worden gegevens in JSON-indeling voor elke afzonderlijke record gegenereerd.
 
-## De batch-API {#using-the-batch-api} gebruiken
+## De batch-API gebruiken {#using-the-batch-api}
 
-U kunt de batch-API gebruiken in combinatie met Gecontroleerde mappen of als zelfstandige Rest-API. U configureert een sjabloon, uitvoertype (HTML, PRINT of Beide), landinstelling, Prefill-service en naam voor de gegenereerde interactieve communicatie om de batch-API te gebruiken.
+U kunt de batch-API gebruiken in combinatie met Gecontroleerde mappen of als zelfstandige Rest-API. U vormt een malplaatje, outputtype (HTML, DRUKKEN, of allebei), scène, prefill dienst, en naam voor de geproduceerde interactieve mededelingen om de Band API te gebruiken.
 
 U combineert een record met een interactieve communicatiesjabloon om een interactieve communicatie tot stand te brengen. Batch-API&#39;s kunnen records (gegevens voor interactieve communicatiesjablonen) rechtstreeks lezen vanuit een JSON-bestand of vanuit een externe gegevensbron die via het formuliergegevensmodel wordt benaderd. U kunt elke record in een afzonderlijk JSON-bestand bewaren of een JSON-array maken om alle records in één bestand te houden.
 
@@ -80,37 +79,37 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 
 Interactieve communicatie maken op basis van records die zijn opgeslagen in een JSON-bestand:
 
-1. Maak een [Gecontroleerde map](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de batch-API:
+1. Een [Gecontroleerde map](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de Batch-API:
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
-   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]**.
-   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dienst in het **[!UICONTROL Service Name]** gebied.
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Met de %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) wordt bijvoorbeeld aangegeven dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap \ van de gecontroleerde map.
+   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Selecteer **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
+   1. Selecteer **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
+   1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
-   1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
+   1. Open de **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
       | templatePath | Tekenreeks | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
-      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is een willekeurige [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Boolean | Stel de waarde in op Onwaar. U kunt de parameter usePrefillService gebruiken om interactieve communicatie met gegevens vooraf te vullen die van prefill dienst worden gehaald die voor overeenkomstige interactieve mededeling wordt gevormd. Wanneer usePrefillService is ingesteld op true, worden JSON-invoergegevens (voor elke record) beschouwd als FDM-argumenten. De standaardwaarde is false. |
       | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | locale | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL |
 
-   1. Tik **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
+   1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap en plaats het JSON-bestand in de nieuwe map.
    1. Wacht tot de gecontroleerde map het bestand heeft verwerkt. Wanneer de verwerking start, worden het invoerbestand en de submap met het bestand naar de testmap verplaatst.
    1. Open de uitvoermap om de uitvoer weer te geven:
-      * Wanneer u de optie PRINT opgeeft in Gecontroleerde mapconfiguratie, wordt PDF-uitvoer voor de interactieve communicatie gegenereerd.
-      * Wanneer u de optie WEB opgeeft in Gecontroleerde mapconfiguratie, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om een websjabloon [vooraf in te vullen.](#web-template)
-      * Wanneer u zowel de opties AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
+      * Wanneer u de optie PRINT opgeeft in Gecontroleerde mapconfiguratie, wordt de PDF-uitvoer voor de interactieve communicatie gegenereerd.
+      * Wanneer u de optie WEB opgeeft in Gecontroleerde mapconfiguratie, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om [Een websjabloon vooraf invullen](#web-template).
+      * Wanneer u zowel de optie AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
 
 #### Invoergegevens gebruiken die zijn opgeslagen in een externe gegevensbron en die via het formuliergegevensmodel kunnen worden benaderd om een interactieve communicatie te produceren {#use-fdm-as-data-source}
 
-U combineert gegevens (verslagen) die in een externe gegevensbron met een interactieve communicatie malplaatje worden bewaard om een interactieve mededeling te produceren. Wanneer u een interactieve mededeling creeert, verbindt u het met een externe gegevensbron via een Model van de Gegevens van het Vorm (FDM) om tot gegevens toegang te hebben. U kunt de Gecontroleerde service Mappen in batch verwerken om gegevens op te halen met hetzelfde formuliergegevensmodel van een externe gegevensbron. Als u [een interactieve communicatie wilt maken op basis van records die zijn opgeslagen in een externe gegevensbron](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+U combineert gegevens (verslagen) die in een externe gegevensbron met een interactieve communicatie malplaatje worden bewaard om een interactieve mededeling te produceren. Wanneer u een interactieve mededeling creeert, verbindt u het met een externe gegevensbron via een Model van de Gegevens van het Vorm (FDM) om tot gegevens toegang te hebben. U kunt de Gecontroleerde service Mappen in batch verwerken om gegevens op te halen met hetzelfde formuliergegevensmodel van een externe gegevensbron. Naar [een interactieve communicatie maken op basis van records die zijn opgeslagen in een externe gegevensbron](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
 
 1. Configureer het formuliergegevensmodel van de sjabloon:
    1. Open het formuliergegevensmodel dat is gekoppeld aan de interactieve communicatiesjabloon.
@@ -142,43 +141,43 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
    1. Sla het bestand op en sluit het.
 
-1. Maak een [Gecontroleerde map](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de service Batch API:
+1. Een [Gecontroleerde map](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze zo dat de Batch API-service wordt gebruikt:
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
-   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map op. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer de optie **[!UICONTROL Service]** in het veld **[!UICONTROL Process File Using]**.
-   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** dienst in het **[!UICONTROL Service Name]** gebied.
-   1. Geef een **[!UICONTROL Output File Pattern]** op. Met de %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) wordt bijvoorbeeld aangegeven dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap \ van de gecontroleerde map.
+   1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
+   1. Selecteer **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
+   1. Selecteer **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
+   1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
-   1. Open het tabblad **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
+   1. Open de **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
       | templatePath | Tekenreeks | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
-      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is een willekeurige [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
       | usePrefillService | Boolean | Stel de waarde in op Waar. De standaardwaarde is false.  Als de waarde is ingesteld op true, leest de batch-API gegevens uit het geconfigureerde formuliergegevensmodel en wordt deze gevuld naar de interactieve communicatie. Wanneer usePrefillService is ingesteld op true, worden JSON-invoergegevens (voor elke record) beschouwd als FDM-argumenten. |
       | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
       | landinstelling | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL. |
 
-   1. Tik **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
+   1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
    1. Open de gecontroleerde map. Navigeer naar de invoermap.
    1. Maak een map in de invoermap. Plaats het JSON-bestand dat in Stap 2 is gemaakt in de nieuwe map.
    1. Wacht tot de gecontroleerde map het bestand heeft verwerkt. Wanneer de verwerking start, worden het invoerbestand en de submap met het bestand naar de testmap verplaatst.
    1. Open de uitvoermap om de uitvoer weer te geven:
-      * Wanneer u de optie PRINT opgeeft in Gecontroleerde mapconfiguratie, wordt PDF-uitvoer voor de interactieve communicatie gegenereerd.
-      * Wanneer u de optie WEB opgeeft in Gecontroleerde mapconfiguratie, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om een websjabloon [vooraf in te vullen.](#web-template)
-      * Wanneer u zowel de opties AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
+      * Wanneer u de optie PRINT opgeeft in Gecontroleerde mapconfiguratie, wordt de PDF-uitvoer voor de interactieve communicatie gegenereerd.
+      * Wanneer u de optie WEB opgeeft in Gecontroleerde mapconfiguratie, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om [Een websjabloon vooraf invullen](#web-template).
+      * Wanneer u zowel de optie AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
 
 ## De batch-API aanroepen met REST-aanvragen
 
-U kunt [de Partij API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) door de verzoeken van de Overdracht van de Staat van de Vertegenwoordiging (REST) aanhalen. Het staat u toe om een REST eindpunt aan andere gebruikers te verstrekken om tot API toegang te hebben en uw eigen methodes voor verwerking, het opslaan, en het aanpassen van interactieve mededeling te vormen. U kunt uw eigen aangepaste Java-servlet ontwikkelen om de API op uw AEM te implementeren.
+U kunt [de Batch-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) via verzoeken tot overdracht van vertegenwoordigingsstaten (REST). Het staat u toe om een REST eindpunt aan andere gebruikers te verstrekken om tot API toegang te hebben en uw eigen methodes voor verwerking, het opslaan, en het aanpassen van interactieve mededeling te vormen. U kunt uw eigen aangepaste Java-servlet ontwikkelen om de API op uw AEM te implementeren.
 
 Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interactieve communicatie hebt en dat de bijbehorende gegevensbestanden gereed zijn. Voer de volgende stappen uit om het Java-servlet te maken en te implementeren:
 
-1. Meld u aan bij uw AEM en maak een interactieve communicatie. Als u de interactieve communicatie wilt gebruiken die in de voorbeeldcode hieronder wordt vermeld, [klikt u hier](assets/SimpleMediumIC.zip).
-1. [Ontwikkel en implementeer een AEM Project met Apache ](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) Mavenon uw AEM-exemplaar.
-1. Voeg [AEM Forms Client SDK versie 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) of later toe in de lijst met afhankelijkheden van het POM-bestand van uw AEM project. Bijvoorbeeld,
+1. Meld u aan bij uw AEM en maak een interactieve communicatie. De interactieve communicatie in de voorbeeldcode hieronder gebruiken: [klik hier](assets/SimpleMediumIC.zip).
+1. [Een AEM project maken en implementeren met Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) op uw AEM.
+1. Toevoegen [AEM Forms Client SDK versie 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) of later in gebiedenlijst van POM- dossier van uw AEM project. Bijvoorbeeld,
 
    ```xml
        <dependency>
@@ -324,12 +323,12 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
    ```
 
 1. Vervang in de bovenstaande code het sjabloonpad (setTemplatePath) door het pad van uw sjabloon en stel de waarde van de setBatchType-API in:
-   * Wanneer u de optie AFDRUKKEN opgeeft, wordt PDF-uitvoer voor de interactieve communicatie gegenereerd.
-   * Wanneer u de optie WEB opgeeft, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om een websjabloon [vooraf in te vullen.](#web-template)
-   * Wanneer u zowel de opties AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
+   * Wanneer u de optie PRINT opgeeft, wordt de PDF-uitvoer voor de interactieve communicatie gegenereerd.
+   * Wanneer u de optie WEB opgeeft, wordt een JSON-bestand per record gegenereerd. U kunt het JSON-bestand gebruiken om [Een websjabloon vooraf invullen](#web-template).
+   * Wanneer u zowel de optie AFDRUKKEN als WEB opgeeft, worden zowel PDF-documenten als een JSON-bestand per record gegenereerd.
 
-1. [Gebruik maven om de bijgewerkte code op te stellen aan uw AEM instantie](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
-1. Roep de batch-API aan om de interactieve communicatie te genereren. Afhankelijk van het aantal records retourneert de batch-API een stroom PDF- en .json-bestanden. U kunt het JSON-bestand gebruiken om een websjabloon [vooraf in te vullen. ](#web-template) Als u de bovenstaande code gebruikt, wordt de API geïmplementeerd op `http://localhost:4502/bin/batchServlet`. De code drukt en retourneert een stroom van een PDF- en JSON-bestand.
+1. [Gemaakt gebruiken om de bijgewerkte code te implementeren in uw AEM-exemplaar](https://helpx.adobe.com/experience-manager/using/maven_arch13.html#BuildtheOSGibundleusingMaven).
+1. Roep de batch-API aan om de interactieve communicatie te genereren. De batch-API drukt een stroom PDF- en .json-bestanden af, afhankelijk van het aantal records. U kunt het JSON-bestand gebruiken om [Een websjabloon vooraf invullen](#web-template). Als u de bovenstaande code gebruikt, wordt de API geïmplementeerd op `http://localhost:4502/bin/batchServlet`. De code drukt een stream van een PDF- en JSON-bestand af en retourneert deze.
 
 ### Een websjabloon vooraf invullen {#web-template}
 
@@ -338,8 +337,8 @@ Wanneer u batchType plaatst om het Kanaal van het Web terug te geven, produceert
 **Syntaxis**
 `http://host:port/<template-path>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=<guide-merged-json-path>`
 
-****
-VoorbeeldAls uw JSON-bestand zich op  `C:\batch\mergedJsonPath.json` en u de onderstaande interactieve communicatiesjabloon gebruikt:  `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
+**Voorbeeld**
+Als uw JSON-bestand zich op `C:\batch\mergedJsonPath.json` en u gebruikt het onderstaande interactieve communicatiesjabloon: `http://host:port/content/dam/formsanddocuments/testsample/mediumic/jcr:content?channel=web`
 
 Dan toont volgende URL op de publicatieknoop het Kanaal van het Web van de interactieve mededeling
 `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/batch/mergedJsonData.json`
@@ -368,4 +367,4 @@ U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bes
 
 >[!NOTE]
 >
->Alleen het CRX-protocol is standaard ingeschakeld. Om andere gesteunde protocollen toe te laten, zie [Vormend prefill de dienst gebruikend de Manager van de Configuratie](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).
+>Alleen het CRX-protocol is standaard ingeschakeld. Als u andere ondersteunde protocollen wilt inschakelen, raadpleegt u [Prefill-service configureren met Configuratiebeheer](https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#ConfiguringprefillserviceusingConfigurationManager).

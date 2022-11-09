@@ -1,28 +1,27 @@
 ---
 title: Apps maken en bewerken met de toepassingsconsole
-seo-title: Apps maken en bewerken met de toepassingsconsole
+seo-title: Creating and Editing Apps Using the Apps Console
 description: Volg deze pagina voor meer informatie over het maken en bewerken van apps met de toepassingsconsole.
-seo-description: Volg deze pagina voor meer informatie over het maken en bewerken van apps met de toepassingsconsole.
+seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
-translation-type: tm+mt
-source-git-commit: 70b18dbe351901abb333d491dd06a6c1c1c569d6
+exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2615'
 ht-degree: 0%
 
 ---
-
 
 # Apps maken en bewerken met de toepassingsconsole{#creating-and-editing-apps-using-the-apps-console}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In het AEM ontwikkelingsproces voor mobiele toepassingen wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
 
@@ -42,15 +41,15 @@ AEM Mobile biedt de blauwdruk van de PhoneGap App voor het maken van mobiele toe
 
 De hoofdpagina van de mobiele toepassingen die u in AEM maakt, wordt weergegeven in de toepassingsconsole.
 
-De basispagina wordt opgeslagen onder de eigenschap Doelpad van de toepassing die is opgegeven bij het maken van de toepassing (het standaardpad is /content/phonegap/apps). De paginanaam is het bezit van de Naam van de toepassing. De standaard-URL van de hoofdpagina van de site met de naam `myphonegapapp` is bijvoorbeeld `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+De basispagina wordt opgeslagen onder de eigenschap Doelpad van de toepassing die is opgegeven bij het maken van de toepassing (het standaardpad is /content/phonegap/apps). De paginanaam is het bezit van de Naam van de toepassing. De standaard-URL van de hoofdpagina van de site met de naam `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
-### De taalvariatie van een PhoneGap-toepassing {#the-language-variation-of-a-phonegap-app}
+### De taalvariatie van een PhoneGap-app {#the-language-variation-of-a-phonegap-app}
 
 De eerste onderliggende pagina&#39;s van de basispagina zijn de taalvariaties van de toepassing. De naam van elke pagina is de taal waarvoor de toepassing wordt gemaakt. Engels is bijvoorbeeld de naam van de Engelse variatie van de toepassing.
 
-**Opmerking:** de standaardblauwdruk PhoneGap maakt alleen een Engelse toepassing. Uw ontwikkelaar kan de blauwdruk aanpassen zodat deze meer taalvariaties kan maken.
+**Opmerking:** De standaardblauwdruk van PhoneGap leidt slechts tot een Engelse toepassing. Uw ontwikkelaar kan de blauwdruk aanpassen zodat deze meer taalvariaties kan maken.
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -69,19 +68,19 @@ De pagina Home of index.html van een taalvariatie van een toepassing wordt weerg
 
 Mobiele toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en eigenschappen definieert. U kunt de volgende toepassingseigenschappen configureren:
 
-* **Titel:** de toepassingstitel.
-* **Doelpad:** de locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
+* **Titel:** De toepassingstitel.
+* **Doelpad:** De locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
 
 * **Naam:** De standaardwaarde is de waarde van de eigenschap Titel, waarbij spatietekens zijn verwijderd. De naam wordt gebruikt binnen CQ om naar de toepassing te verwijzen, bijvoorbeeld voor de opslagplaats knoop die de toepassing vertegenwoordigt.
-* **Beschrijving:** een beschrijving van de toepassing.
-* **Server-URL:** de URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
+* **Omschrijving:** Een beschrijving van de aanvraag.
+* **Server-URL:** De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
 
 U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing wilt gebruiken, de configuratie van de PhoneGap Build selecteren en de analytische configuratie voor de mobiele app selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Opbouwen: Klik hier op Configuraties beheren en stel de build.phonegap.com-service in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analyse: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html)-cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analyse: Klik op Configuraties beheren en stel uw [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) cloudservice. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 >[!NOTE]
 >
@@ -106,11 +105,11 @@ In de volgende procedure wordt de Touch UI gebruikt om een mobiele toepassing te
 1. (Optioneel) Als u een toepassingspictogram wilt maken, klikt u op de knop Bladeren, selecteert u het afbeeldingsbestand in uw bestandssysteem en klikt u op Openen.
 1. Klik op Maken.
 
-### De eigenschappen wijzigen van een mobiele toepassing {#changing-the-properties-of-a-mobile-application}
+### De eigenschappen van een mobiele toepassing wijzigen {#changing-the-properties-of-a-mobile-application}
 
 Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
-#### De titel, beschrijving en het pictogram {#change-the-title-description-and-icon} wijzigen
+#### De titel, beschrijving en het pictogram wijzigen {#change-the-title-description-and-icon}
 
 1. Klik of tik op Apps op de rail.
 1. Selecteer de toepassing die u wilt configureren en klik op het pictogram Pagina-eigenschappen weergeven.
@@ -212,13 +211,13 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 >
 >Als u de Geometrixx Outdoors-referentie-app verwijdert van AEM en een app hebt gemaakt op basis van de sjabloon, werkt die app niet meer. De app Geometrixx Outdoors kan worden verwijderd, maar de toepassingssjabloon moet blijven staan als deze wordt gebruikt door andere mobiele toepassingen.
 
-## De Sample Geometrixx Outdoors-app {#exploring-the-sample-geometrixx-outdoors-app} verkennen
+## De voorbeeldtoepassing Geometrixx Outdoors verkennen {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors App is een voorbeeld van een PhoneGap-toepassing die de functies van de standaardblauwdruk van de PhoneGap-toepassing en de mobiele voorbeeldcomponenten demonstreert.
 
 Als u de toepassing wilt openen, klikt u in de track op Mobiele toepassingen en selecteert u vervolgens Geometrixx Outdoors App.
 
-### Algemene paginafuncties - Mobiele Geometrixx-app {#common-page-features-geometrixx-mobile-app}
+### Functies voor algemene pagina&#39;s - mobiele Geometrixx-app {#common-page-features-geometrixx-mobile-app}
 
 Elke pagina van de mobiele app bevat de volgende functies:
 
@@ -232,7 +231,7 @@ Elke pagina van de mobiele app bevat de volgende functies:
 
 * Het alineasysteem voor het toevoegen van componenten en het maken van inhoud.
 
-### De startpagina - Mobiele Geometrixx-app {#the-home-page-geometrixx-mobile-app}
+### De startpagina - de mobiele toepassing Geometrixx {#the-home-page-geometrixx-mobile-app}
 
 De inhoud van de startpagina bestaat uit de volgende navigatiegereedschappen:
 
@@ -256,25 +255,25 @@ Op de pagina Producten en de bijbehorende hiërarchie van onderliggende pagina&#
 
 De pagina Producten is niet beschikbaar voor gebruikers van de toepassing. De pagina Gear biedt toegang tot elke productpagina.
 
-### De pagina Revisies - Mobiele app {#the-reviews-page-geometrixx-mobile-app} Geometrixx
+### De pagina Revisies - Geometrixx Mobile-app {#the-reviews-page-geometrixx-mobile-app}
 
 Bevat een knop Terug. Met het alineasysteem kunt u componenten toevoegen.
 
 Als u de toepassing gebruikt, is de pagina Revisies beschikbaar via de carrousel op de pagina Engels.
 
-### De nieuwspagina - de Mobiele app van Geometrixx {#the-news-page-geometrixx-mobile-app}
+### De nieuwspagina - Geometrixx Mobile-app {#the-news-page-geometrixx-mobile-app}
 
 Bevat een knop Terug. Met het alineasysteem kunt u componenten toevoegen.
 
 Wanneer u de toepassing gebruikt, is de pagina News beschikbaar via de carrousel op de Engelse pagina.
 
-### De pagina Over ons - Mobiele toepassing Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### De pagina Over ons - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
 De pagina Over ons bevat een aantal twee kolomrijcomponenten. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en in het alineasysteem kunt u componenten toevoegen.
 
 Wanneer u de toepassing gebruikt, is de pagina Over gebruikers beschikbaar via de carrousel op de Engelse pagina.
 
-### De locatiepagina - Mobiele toepassing Geometrixx {#the-locations-page-geometrixx-mobile-app}
+### De locatiepagina - Geometrixx Mobile-toepassing {#the-locations-page-geometrixx-mobile-app}
 
 De pagina Locations bevat een component Locations.
 
@@ -284,7 +283,7 @@ Wanneer u de toepassing gebruikt, is de pagina Locaties beschikbaar in de menuli
 
 Verschillende componenten zijn direct beschikbaar in Sidetrap wanneer u de pagina&#39;s van een mobiele toepassing ontwerpt. De componenten behoren tot de PhoneGap-componentgroep.
 
-### Veeggebaar {#swipe-carousel}
+### Swipe Carousel {#swipe-carousel}
 
 De component VeegCarrousel is een hulpmiddel om sitepagina&#39;s weer te geven en te navigeren. De component bevat een carrousel die de afbeeldingen doorloopt voor de pagina&#39;s boven een lijst met paginakoppelingen. Bewerk de component om de pagina&#39;s op te geven die u wilt weergeven en het gedrag van de carrousel.
 
@@ -308,7 +307,7 @@ Geef op hoe de paginalijst wordt gegenereerd:
 * Volgorde van: Selecteer een pagina-eigenschap die u wilt gebruiken voor het sorteren van de paginalijst. Selecteer bijvoorbeeld jcr:title om pagina&#39;s alfabetisch op titel te sorteren.
 * Limiet: Het maximumaantal pagina&#39;s dat moet worden opgenomen. Deze eigenschap is geschikt voor op zoeken gebaseerde methoden om de paginalijst samen te stellen.
 
-#### De paginalijst {#building-the-page-list} samenstellen
+#### De paginalijst samenstellen {#building-the-page-list}
 
 De component van Carrousel van de Veeggebaar verstrekt de volgende waarden voor de Bouwstijl Lijst Gebruikend bezit. Het dialoogvenster Bewerken verandert op basis van de waarde die u selecteert:
 
@@ -335,7 +334,7 @@ Vul de lijst met de resultaten van een trefwoordzoekopdracht. De zoekopdracht wo
 
 **Geavanceerd zoeken**
 
-Vul de lijst met een query [Querybuilder](/help/sites-developing/querybuilder-api.md).
+De lijst vullen met een [Querybuilder](/help/sites-developing/querybuilder-api.md) query.
 
 ### Afbeelding {#image}
 
@@ -354,7 +353,7 @@ De component Locaties van de Opslag voorziet gebruikers van hulpmiddelen om bedr
 
 De component vereist dat de gegevensopslagruimte locatie locatie-informatie voor elke opslagruimte bevat. De plaatsen van de steekproef zijn geïnstalleerd bij de /etc/commerce/locations/adobe knoop. ![chlimage_1-152](assets/chlimage_1-152.png)
 
-### Twee kolomrijen {#two-column-row}
+### Twee kolommen, rij {#two-column-row}
 
 Hiermee kunt u componenten naast elkaar aan een pagina toevoegen.
 

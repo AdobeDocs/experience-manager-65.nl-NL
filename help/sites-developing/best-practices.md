@@ -1,28 +1,27 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
-seo-description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
+seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
-translation-type: tm+mt
-source-git-commit: e562939f1c64d8345b4c2a28e4b882200d9e4c07
+exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 3%
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
-
 
 # Best practices voor{#best-practices}
 
 ## Aanbevolen procedures voor ontwikkelaars - Aan de slag {#best-practices-for-developers-getting-started}
 
-Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars. Adobe ontwikkelaars volgen deze beste praktijken aangezien zij kern AEM productupdates en klantencode voor klantenimplementaties ontwikkelen.
+De teams van de Techniek en van het Raadpleging van Adobe hebben een uitvoerige reeks beste praktijken voor AEM ontwikkelaars ontwikkeld. Adobe ontwikkelaars volgen deze beste praktijken aangezien zij kern AEM productupdates en klantencode voor klantenimplementaties ontwikkelen.
 
 Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
 
@@ -33,7 +32,7 @@ Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
-* [Aanbevolen werkwijzen voor Java API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Aanbevolen werkwijzen voor Java API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -82,26 +81,25 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 ## Gemeenschappen {#communities}
 
-[AEM ](/help/communities/overview.md) communautarisering vergemakkelijkt de oprichting en het beheer van niet-lokale gemeenschappen.
+[AEM Communities](/help/communities/overview.md) vereenvoudigt de oprichting en het beheer van on-premise Gemeenschappen.
 
 Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
 |  |  |  |
 |---|---|---|
-| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtlijnen voor de ontwikkeling van flexibele, draagbare code voor het [sociale-componentframework](/help/communities/scf.md) (SCF). |
+| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtsnoeren voor de ontwikkeling van flexibele, draagbare code voor de [sociale component](/help/communities/scf.md) (SCF). |
 | Voorbeeld van het gebruik van communautaire componenten | [Community Components Guide](/help/communities/components-guide.md) | Een interactief ontwikkelingsprogramma. |
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als het voorkeurssjabloonsysteem voor AEM.
+HTML Sjabloontaal (HTL) is een nieuw sjabloonsysteem voor HTML, dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als het voorkeurssjabloonsysteem voor AEM.
 
 |  |  |  |
 |---|---|---|
-| HTML-overzicht | [HTML-overzicht en -syntaxis](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
+| HTML-overzicht | [HTML-overzicht en -syntaxis](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In dit document wordt beschreven wat HTML is, hoe u naar HTML kunt gaan, een voorbeeldproject, syntaxis, expressies en instructies |
 | API gebruiken in Java | [HTML Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse. |
 
 >[!NOTE]
 >
 >De volgende meerdelige zelfstudie kan van belang zijn voor de beste praktijken om een nieuw AEM project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:
 >[Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
-

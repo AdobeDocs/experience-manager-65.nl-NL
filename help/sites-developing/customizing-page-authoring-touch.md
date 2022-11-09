@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 273836ad0afd6466eac437bf7711e7dbabc1d5e9
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1354'
 ht-degree: 0%
 
 ---
@@ -23,22 +23,22 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe u het ontwerpen van pagina&#39;s kunt aanpassen in de moderne interface met aanraakbediening. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie kunt aanpassen.
+AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s kunt aanpassen (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie.
 
 * Clientlibs
 
-   Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Wanneer het aanpassen, kunt u uw eigen clientlib onder `/apps.` tot stand brengen de nieuwe clientlib moet:
+   Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
 
-   * afhankelijk zijn van de creatieve clientlib `cq.authoring.editor.sites.page`
-   * deel uitmaken van de desbetreffende categorie `cq.authoring.editor.sites.page.hook`
+   * afhankelijk van de creatie clientlib `cq.authoring.editor.sites.page`
+   * deel uitmaken van de `cq.authoring.editor.sites.page.hook` categorie
 
 * Bedekkingen
 
-   Bedekkingen zijn gebaseerd op knooppuntdefinities en staan u toe om de standaardfunctionaliteit (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`) te bedekken. Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de [sling resource merge](/help/sites-developing/sling-resource-merger.md) overerving toestaat.
+   Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid de standaardfunctionaliteit te bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
 
 >[!NOTE]
 >
->Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor meer informatie.
+>Zie voor meer informatie [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
 
 Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor het schrijven van pagina&#39;s in uw AEM uit te breiden. Een selectie wordt hieronder behandeld (op een hoog niveau).
 
@@ -46,35 +46,35 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >
 >Zie voor meer informatie:
 >
->* Het gebruiken en het creëren van [clientlibs](/help/sites-developing/clientlibs.md).
->* [overlays](/help/sites-developing/overlays.md) gebruiken en maken.
+>* Gebruiken en maken [clientlibs](/help/sites-developing/clientlibs.md).
+>* Gebruiken en maken [bedekkingen](/help/sites-developing/overlays.md).
 >* [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Structuur van de ](/help/sites-developing/touch-ui-structure.md) UI voor het maken van AEM aanraakfuncties voor meer informatie over de structurele gebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
-
+>* [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md) voor meer informatie over de structuurgebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
 >
->Dit onderwerp wordt ook behandeld in [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) zitting - [Gebruikersinterfaceaanpassing voor AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+
+
 
 >[!CAUTION]
 >
->U ***must*** verandert niets in `/libs` weg.
+>U ***moet*** niets wijzigen in de `/libs` pad.
 >
->Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in `/libs`) onder `/apps`
->1. Wijzigingen aanbrengen binnen `/apps`
+>1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+>1. Breng wijzigingen aan in `/apps`
 
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 
-Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met behulp van [layers](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelen en aanwijzen.
+Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelen en aanwijzen.
 
 ### Voorbeeld van laag: Status van live kopiëren {#layer-example-live-copy-status}
 
-Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens met betrekking tot [beheer op meerdere locaties](/help/sites-administering/msm.md) en markeert u deze in de laag.
+Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [beheer van meerdere sites](/help/sites-administering/msm.md) en markeert deze in de laag.
 
-Om het in actie te zien kunt u om het even welke [Wij.Retail taalexemplaar](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere levende exemplaarpagina) uitgeven en **Live de Status van het Exemplaar** wijze selecteren.
+Als u deze in actie wilt zien, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** in.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -97,7 +97,7 @@ In de middelenbrowser worden elementen van verschillende typen/categorieën weer
 
 ### Codevoorbeeld {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een nieuwe groep aan de zoeker van elementen kunt toevoegen. Dit voorbeeld verbindt met [de openbare stroom van Flickr](https://www.flickr.com) en toont hen in sidepanel.
+`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een nieuwe groep aan de zoeker van elementen kunt toevoegen. In dit voorbeeld wordt verbinding gemaakt met [Flickr](https://www.flickr.com)De openbare stroom en toont ze in het sidepanel.
 
 CODE VOOR GITHUB
 
@@ -110,18 +110,18 @@ U kunt de code van deze pagina op GitHub vinden
 
 Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (zoals pagina&#39;s, componenten, elementen, enz.). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
 
-Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Als bijvoorbeeld de [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component wordt gebruikt om de gebruiker toe te staan het pad naar een bepaalde bron te selecteren, kunnen de voorgestelde paden op de volgende manier worden gefilterd:
+Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Als de [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Graniet](/help/sites-developing/touch-ui-concepts.md#granite-ui) wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaalde middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefilterd:
 
-* Implementeer de aangepaste voorspelling door de interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) te implementeren.
-* Geef een naam voor de voorspelling op en verwijs deze naam bij gebruik van de `pathbrowser`.
+* Implementeer de aangepaste voorspelling door deze te implementeren [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
+* Geef een naam voor de voorspelling op en verwijs deze naam naar het tabblad `pathbrowser`.
 
-Zie [dit artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md) voor meer informatie over het maken van een aangepaste voorspelling.
+Zie voor meer informatie over het maken van een aangepaste predikaat [dit artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md).
 
 >[!NOTE]
 >
->Het uitvoeren van een douanevoorspelling door `com.day.cq.commons.predicate.AbstractNodePredicate` interface uit te voeren werkt ook in klassieke UI.
+>Een aangepaste voorspelling implementeren door `com.day.cq.commons.predicate.AbstractNodePredicate` de interface werkt ook in klassieke UI.
 >
->Zie [dit kennisbasisartikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) voor een voorbeeld van het uitvoeren van een douanevoorspelling in klassieke UI.
+>Zie [dit kennisbasisartikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) voor een voorbeeld van het uitvoeren van een douane predikaat in klassieke UI.
 
 ## Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
 
@@ -161,7 +161,7 @@ In een standaard AEM-installatie:
 
             Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijv. `text`, `textimage`, `image`, `title`.
 
-1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knoop die configuraties evenals een verdere `plugin` knoop bevat om noodzakelijke plugin configuratiedetails te bevatten.
+1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunten met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
 
    Hieronder ziet u een voorbeeld van het definiëren van hoogte-breedteverhoudingen voor de uitsnijdplug-in van de afbeeldingscomponent. De hoogte-breedteverhouding van het uitsnijdvak is vanwege de mogelijkheid van een zeer beperkte schermgrootte verplaatst naar de volledige schermeditor en kan daar alleen worden weergegeven.
 
@@ -187,7 +187,7 @@ In een standaard AEM-installatie:
 
    >[!CAUTION]
    >
-   >In AEM uitsnijdverhoudingen, zoals ingesteld door de eigenschap `ratio`, worden gedefinieerd als **height/width**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De auteursgebruikers zullen zich van geen verschil bewust zijn op voorwaarde dat u het `name` bezit duidelijk bepaalt aangezien dit is wat in UI wordt getoond.
+   >Let op: in AEM uitsnijdverhoudingen, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De gebruikers van de auteur zullen zich niet van enig verschil bewust zijn op voorwaarde dat u bepaalt `name` duidelijk bezit aangezien dit is wat in UI wordt getoond.
 
 #### Een nieuwe plaatseditor maken {#creating-a-new-in-place-editor}
 
@@ -222,11 +222,11 @@ U kunt de code van deze pagina op GitHub vinden
 
 #### Meerdere lokale editors configureren {#configuring-multiple-in-place-editors}
 
-Het is mogelijk om een component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft. Wanneer er meerdere editors op locatie zijn geconfigureerd, kunt u de juiste inhoud selecteren en de juiste editor openen. Zie [Veelvoudige In-Place Redacteurs](/help/sites-developing/multiple-inplace-editors.md) documentatie voor meer informatie vormen.
+Het is mogelijk om een component te vormen zodat het veelvoudige op zijn plaats redacteurs heeft. Wanneer er meerdere editors op locatie zijn geconfigureerd, kunt u de juiste inhoud selecteren en de juiste editor openen. Zie de [Meerdere lokale editors configureren](/help/sites-developing/multiple-inplace-editors.md) documentatie voor meer informatie.
 
 ## Handeling Nieuwe pagina toevoegen {#add-a-new-page-action}
 
-Om een nieuwe paginaactie aan de paginagtoolbar toe te voegen, bijvoorbeeld een **Terug naar Plaatsen** (console) actie.
+Als u een nieuwe paginahandeling wilt toevoegen aan de paginawerkbalk, bijvoorbeeld een **Terug naar sites** (console) handeling.
 
 ### Codevoorbeeld {#code-sample-3}
 
@@ -241,15 +241,15 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## De workflow voor het aanvragen van activering aanpassen {#customizing-the-request-for-activation-workflow}
 
-De out-of-the-box workflow, **Verzoek om activering**:
+De out-of-the-box workflow **Verzoek om activering**:
 
-* Wordt automatisch weergegeven in het juiste menu wanneer een auteur van inhoud **niet over** de juiste replicatierechten beschikt, maar **wel** lidmaatschap van DAM-Users en Auteurs heeft.
+* Wordt automatisch weergegeven in het juiste menu wanneer een inhoudsauteur **heeft geen** de juiste replicatierechten, maar **heeft** lidmaatschap van DAM-gebruikers en auteurs.
 
 * Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
-Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoek om activering**-workflow bedekken:
+Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoek om activering** workflow:
 
-1. In `/apps` bedek de wizard **Sites**:
+1. In `/apps` bedekken de **Sites** wizard:
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -259,5 +259,5 @@ Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoe
    >
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
-1. Werk het [workflowmodel](/help/sites-developing/workflows-models.md) en de bijbehorende configuraties/scripts naar wens bij.
-1. Het recht op de [ `replicate` actie](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s verwijderen; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).
+1. Werk de [workflowmodel](/help/sites-developing/workflows-models.md) en gerelateerde configuraties/scripts, indien vereist.
+1. Rechts van de [ `replicate` action](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).

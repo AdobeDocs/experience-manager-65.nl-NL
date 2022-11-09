@@ -1,16 +1,15 @@
 ---
 title: Insteekmodule Adobe-inhoudspakket
 description: Gebruik de Content Package Maven plug-in om AEM toepassingen te implementeren
-translation-type: tm+mt
-source-git-commit: 7bbafbd96ec92ed4278f6fa1d9899a3d59ee69ad
+exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 5%
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
-
-# Insteekmodule voor Adobe-inhoudspakket {#adobe-content-package-maven-plugin}
+# Insteekmodule Adobe-inhoudspakket {#adobe-content-package-maven-plugin}
 
 Met de plug-in Adobe Content Package Maven kunt u taken voor pakketimplementatie en -beheer integreren in uw Maven-projecten.
 
@@ -20,10 +19,8 @@ De plaatsing van de geconstrueerde pakketten aan AEM wordt uitgevoerd door de Ad
 >
 >Zie voor meer informatie:
 >
->* Het [Inhoudspakket van de Adobe inhoud Gemaakt Insteekmodule](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) artikel in de AEM als documentatie van de Cloud Service voor hoe te om AEM toepassingen op te stellen.
->* Het [AEM artikel van de Structuur van het Project](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in de AEM als documentatie van de Cloud Service voor hoe te om moderne AEM projecten te structureren.
->* De [AEM documentatie van Archetype van het Project](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html) voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
-
+>* De [Insteekmodule Adobe-inhoudspakket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) artikel in de AEM as a Cloud Service documentatie voor hoe te om AEM toepassingen op te stellen.
+>* De [AEM projectstructuur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) artikel in de AEM as a Cloud Service documentatie over de structuur van moderne AEM .
+>* De [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentatie voor hoe te om een nieuw AEM project te beginnen gebruikend archetype.
 >
->
-Alle drie de documenten zijn van toepassing op AEM 6.5.
+>Alle drie de documenten zijn van toepassing op AEM 6.5.

@@ -1,30 +1,29 @@
 ---
 title: Core Components uitproberen in We.Retail
-seo-title: Core Components uitproberen in We.Retail
+seo-title: Trying out Core Components in We.Retail
 description: Core Components uitproberen in We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 1%
+source-wordcount: '535'
+ht-degree: 0%
 
 ---
 
-
-# Kernonderdelen uitproberen in We.Retail{#trying-out-core-components-in-we-retail}
+# Core Components uitproberen in We.Retail{#trying-out-core-components-in-we-retail}
 
 De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaar zijn en eenvoudige integratie in uw projecten mogelijk maken. De kerncomponenten zijn gebouwd rond verscheidene belangrijke ontwerpprincipes zoals HTML, bruikbaarheid out-of-the-box, configureerbaarheid, versioning, en rekbaarheid. We.Retail is gebaseerd op kerncomponenten.
 
 ## Uitproberen {#trying-it-out}
 
-1. Start AEM met de voorbeeldinhoud Web.Retail en open de [Componentenconsole](/help/sites-authoring/default-components-console.md).
+1. Start AEM met de inhoud van het monster We.Retail en open de [Componentenconsole](/help/sites-authoring/default-components-console.md).
 
    **Algemene navigatie -> Gereedschappen -> Componenten**
 
@@ -37,33 +36,33 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Merk op dat alle kerncomponenten **v1** worden genoemd, erop wijzend dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
-1. Klik **Tekst (v1)**.
+1. Alle kerncomponenten krijgen een naam **v1**, waaruit blijkt dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
+1. Klikken **Tekst (v1)**.
 
-   Zie dat **Het Type van Middel** van de component `/apps/core/wcm/components/text/v1/text` is. De componenten van de kern worden gevonden onder `/apps/core/wcm/components` en zijn versioned per component.
+   Zie de **Type bron** van de component `/apps/core/wcm/components/text/v1/text`. Kerncomponenten vindt u onder `/apps/core/wcm/components` en zijn versioned per component.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. Klik op het tabblad **Documentatie** om de documentatie voor ontwikkelaars voor de component te bekijken.
+1. Klik op de knop **Documentatie** om de documentatie voor ontwikkelaars voor de component te zien.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. Ga terug naar de componentconsole. Filter voor de groep **We.Retail** en selecteer de **component Text**.
-1. Zie dat **Resourcetype** verwijst naar een component zoals verwacht onder `/apps/weretail`, maar **Resourcesupertype** verwijst naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
+1. Ga terug naar de componentconsole. Filter voor de groep **Wij.Detailhandel** en selecteert u de **Tekst** component.
+1. Zie de **Type bron** punten naar een component zoals verwacht onder `/apps/weretail` maar de **Super Type resource** verwijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Klik op het tabblad **Actief gebruik** om te zien op welke pagina&#39;s deze component momenteel wordt gebruikt. Klik op de eerste pagina **Bedankt** om de pagina te bewerken.
+1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component momenteel wordt gebruikt. Klik op de eerste knop **Bedankt** pagina om de pagina te bewerken.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. Selecteer op de pagina Hartelijk dank de tekstcomponent en klik in het bewerkingsmenu van de component op het pictogram Overerving annuleren.
 
-   [We.Retail heeft een geglobaliseerde site-](/help/sites-developing/we-retail-globalized-site-structure.md) structuur waarbij content van taalstramienen naar  [live kopieën wordt gestuurd via een mechanisme dat overerving](/help/sites-administering/msm.md) wordt genoemd. Daarom moet overerving worden geannuleerd om een gebruiker in staat te stellen tekst handmatig te bewerken.
+   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [live kopieën via een mechanisme dat overerving wordt genoemd](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd om een gebruiker in staat te stellen tekst handmatig te bewerken.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Bevestig de annulering door te klikken **Yes**.
+1. De annulering bevestigen door op **Ja**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -75,8 +74,8 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Selecteer **Sjabloon bewerken** in het menu **Pagina-informatie**.
-1. In de Redacteur van het Malplaatje van de pagina, klik op **Beleid** pictogram van de component van de Tekst in **de Container van de Lay-out** van de pagina.
+1. Van de **Pagina-informatie** menu selecteren **Sjabloon bewerken**.
+1. Klik in de Sjablooneditor van de pagina op de knop **Beleid** pictogram van de component Text in het deelvenster **Layout Container** van de pagina.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -88,6 +87,6 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg voor meer informatie over de kerncomponenten het ontwerpdocument [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
 
-Ook kunt u [bewerkbare sjablonen](/help/sites-developing/we-retail-editable-templates.md) nader onderzoeken. Raadpleeg het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of het ontwikkelaarsdocument Pagina [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige informatie over bewerkbare sjablonen.
+Mogelijk wilt u verder onderzoek uitvoeren [bewerkbare sjablonen](/help/sites-developing/we-retail-editable-templates.md). Verwijs naar het auteursdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige details over bewerkbare sjablonen.

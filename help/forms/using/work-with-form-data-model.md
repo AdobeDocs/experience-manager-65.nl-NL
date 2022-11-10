@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4014'
+source-wordcount: '4051'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,10 @@ Objecten en services voor gegevensmodellen toevoegen:
    ![selected-objects](assets/selected-objects.png)
 
    Geselecteerde gegevensmodelobjecten en services
+
+   >[!NOTE]
+   >
+   > Als uw Forms-gegevensmodel een object bevat dat een gereserveerd trefwoord is voor uw relationele database, kan dit leiden tot problemen met het toevoegen, bijwerken of ophalen van gegevens. Vermijd dus het gebruik van dergelijke objecten in uw formuliergegevensmodel.
 
    Op het tabblad Model wordt een grafische weergave weergegeven van alle gegevensmodelobjecten en de bijbehorende eigenschappen die aan het formuliergegevensmodel zijn toegevoegd. Elk gegevensmodelobject wordt vertegenwoordigd door een vak in het formuliergegevensmodel.
 

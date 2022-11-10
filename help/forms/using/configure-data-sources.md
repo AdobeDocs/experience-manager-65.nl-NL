@@ -10,16 +10,16 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
 
 # Gegevensbronnen configureren{#configure-data-sources}
 
-![](do-not-localize/data-integeration.png)
+![Gegevensintegratie](do-not-localize/data-integeration.png)
 
 Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren en verbinden. De volgende types worden gesteund uit-van-de-doos. Met weinig aanpassing kunt u echter ook andere gegevensbronnen integreren.
 
@@ -35,7 +35,7 @@ De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer be
 
 U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van de Console van het Web. Ga als volgt te werk:
 
-1. Ga naar AEM webconsole op https://server:host/system/console/configMgr.
+1. Ga naar AEM webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken naar **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
 1. In de configuratiedialoog, specificeer de details voor het gegevensbestand u, zoals wilt vormen:
 
@@ -49,14 +49,10 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    >
    >Zorg ervoor dat u gevoelige informatie zoals wachtwoorden codeert alvorens de gegevensbron te vormen. Coderen:
    >
-   >    
-   >    
-   >    1. Ga naar https://&#39;[server]:[poort]&quot;/systeem/console/crypto.
-   >    1. In de **[!UICONTROL Plain Text]** veld, geeft u het wachtwoord of een willekeurige tekenreeks op die u wilt versleutelen en tikken **[!UICONTROL Protect]**.
+   > 1. Ga naar https://&#39;[server]:[poort]&quot;/systeem/console/crypto.
+   > 1. In de **[!UICONTROL Plain Text]** veld, geeft u het wachtwoord of een willekeurige tekenreeks op die u wilt versleutelen en tikken **[!UICONTROL Protect]**.
 
-   >    
-   >    
-   >    
+   >
    >De gecodeerde tekst wordt weergegeven in het veld Beveiligde tekst dat u in de configuratie kunt opgeven.
 
 1. Inschakelen **[!UICONTROL Test on Borrow]** of **[!UICONTROL Test on Return]** om te specificeren dat de voorwerpen alvorens worden geleend of van en aan de pool teruggegeven, worden gevalideerd.
@@ -66,6 +62,10 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    * SELECTEER 1 uit twee items (Oracle)
 
 1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
+
+   >[!NOTE]
+   >
+   > Als uw Forms-gegevensmodel een object bevat dat een gereserveerd trefwoord is voor uw relationele database, kan dit leiden tot problemen met het toevoegen, bijwerken of ophalen van gegevens. Vermijd dus het gebruik van dergelijke objecten in uw formuliergegevensmodel.
 
 ## Gebruikersprofiel AEM configureren {#configure-aem-user-profile}
 
@@ -161,7 +161,6 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
    * Geef de maximale periode voor inactiviteit op tussen twee gegevenspakketten in het dialoogvenster **[!UICONTROL Socket timeout]** veld. De standaardwaarde is 30 seconden.
 
-
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
 SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). Als u op SOAP gebaseerde webservice wilt configureren in AEM-cloudservices, moet u de WSDL-URL voor de webservice hebben en het volgende doen:
@@ -224,4 +223,4 @@ Wanneer u wederzijdse verificatie inschakelt voor het gegevensmodel van het form
 
 ## Volgende stappen {#next-steps}
 
-U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de zojuist geconfigureerde gegevensbronnen. Zie [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md) voor meer informatie.
+U hebt de gegevensbronnen geconfigureerd. Vervolgens kunt u een formuliergegevensmodel maken of als u al een formuliergegevensmodel zonder gegevensbron hebt gemaakt, kunt u dit koppelen aan de gegevensbronnen die u hebt geconfigureerd. Zie [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md) voor meer informatie.

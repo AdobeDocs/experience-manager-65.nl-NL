@@ -10,7 +10,7 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
+source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
 workflow-type: tm+mt
 source-wordcount: '2742'
 ht-degree: 7%
@@ -21,13 +21,10 @@ ht-degree: 7%
 
 Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automatisch uitsnijden door een afbeeldingsprofiel toe te passen op de map.
 
->[!NOTE]
->
->Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
-
 >[!IMPORTANT]
 >
->Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerd GIF- of INDD-bestanden (Adobe InDesign).
+>・ Slim uitsnijden is alleen beschikbaar in de Dynamic Media-Scene7-modus.
+・ Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerd GIF- of INDD-bestanden (Adobe InDesign).
 
 ## Opties voor uitsnijden {#crop-options}
 
@@ -58,8 +55,7 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
 U gebruikt **[!UICONTROL Unsharp mask]** om een verscherpingsfiltereffect op de definitieve gedownsampelde afbeelding nauwkeurig af te stemmen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor Adobe Photoshop *Onscherp masker* filter.
 
 >[!NOTE]
->
->Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen de titel niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
+Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen binnen de titel niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
 
 In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 
@@ -163,9 +159,8 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 ## Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
->
->Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
+>[!IMPORTANT]
+Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 

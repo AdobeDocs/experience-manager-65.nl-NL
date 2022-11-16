@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2746'
 ht-degree: 7%
 
 ---
@@ -23,16 +23,16 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 >[!IMPORTANT]
 >
->・ Slim uitsnijden is alleen beschikbaar in de Dynamic Media-Scene7-modus.
+>・ Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
 ・ Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerd GIF- of INDD-bestanden (Adobe InDesign).
 
 ## Opties voor uitsnijden {#crop-options}
 
 Wanneer u Slim uitsnijden op afbeeldingen implementeert, raadt Adobe de volgende aanbevolen procedures aan en wordt de volgende limiet toegepast:
 
-| Type limiet | Beste praktijken | Oplegde limiet | Wijziging tot limiet op 31 december 2022 |
-| --- | --- | --- | --- |
-| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 | 20 |
+| Type limiet | Beste praktijken | Oplegde limiet |
+| --- | --- | --- |
+| Aantal slimme uitsnijdingen per afbeelding | 5 | 100 |
 
 Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 ## Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
+・ Slim uitsnijden is alleen beschikbaar in de Dynamic Media-Scene7-modus.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
@@ -188,6 +188,9 @@ Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen 
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]** selecteert u vervolgens **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
 ## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Slim uitsnijden is alleen beschikbaar in de Dynamic Media-Scene7-modus.
 
 Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Indien gewenst kunt u *handmatig* U kunt het venster voor slimme uitsnijden in meerdere afbeeldingen opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 

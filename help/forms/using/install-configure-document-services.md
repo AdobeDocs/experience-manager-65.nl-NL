@@ -1,16 +1,16 @@
 ---
 title: Documentservices installeren en configureren
 seo-title: Installing and configuring document services
-description: Installeer AEM Forms-documentservices om PDF-documenten te maken, samen te stellen, te verspreiden, te archiveren, digitale handtekeningen toe te voegen om de toegang tot documenten te beperken en Barcoded Forms te decoderen.
+description: Installeer AEM Forms-documentservices voor het maken, samenstellen, distribueren, archiveren van PDF-documenten, het toevoegen van digitale handtekeningen om de toegang tot documenten te beperken en het decoderen van Barcoded Forms.
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 3a745e8255580778e30abaa72d7d0453e574f341
+source-git-commit: 420b7f83939aef548501b4676ddca1ec9fc2aa03
 workflow-type: tm+mt
-source-wordcount: '5374'
+source-wordcount: '5373'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,7 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 
 ### Extra eisen voor het op UNIX gebaseerde besturingssysteem {#extrarequirements}
 
-Als u een op UNIX gebaseerd besturingssysteem gebruikt, installeert u de volgende 32-bits versiepakketten van de installatiemedia van het desbetreffende besturingssysteem:
-
+Als u een op UNIX gebaseerd besturingssysteem gebruikt, installeert u de volgende 32-bits pakketten via de installatiemedia van het desbetreffende besturingssysteem:
 <table>
  <tbody>
   <tr>

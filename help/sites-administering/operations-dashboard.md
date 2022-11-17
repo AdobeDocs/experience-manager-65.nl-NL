@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
+source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
 workflow-type: tm+mt
 source-wordcount: '6230'
 ht-degree: 0%
@@ -335,7 +335,7 @@ U kunt de **Periode** met de [OSGi-configuratie](/help/sites-deploying/configuri
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de controleserver.
+1. Stel Nagios in en installeer deze op de bewakingsserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]
@@ -521,7 +521,7 @@ Het kan worden betreden door naar **Hulpmiddelen - Verrichtingen - Diagnose **va
 
 U kunt de URL ook rechtstreeks openen via de volgende URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![index_manager](assets/index_manager.png)
 
 De interface kan worden gebruikt om indexen in de tabel te filteren door de filtercriteria in het zoekvak linksboven in het scherm te typen.
 

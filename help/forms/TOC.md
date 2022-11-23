@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 role: User
-source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
+source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3824'
 ht-degree: 0%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 0%
    + [Extra stappen voor het ophalen van e-mail met bijlage voor de Adaptive Forms On JEE-versie](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [Kan op XFA gebaseerde PDF forms niet openen in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer of Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+   + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

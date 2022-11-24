@@ -3,9 +3,9 @@ title: AEM GraphQL API voor gebruik met Content Fragments
 description: Leer hoe u Content Fragments in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
+source-wordcount: '4089'
 ht-degree: 0%
 
 ---
@@ -543,6 +543,11 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
    * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
 
+* Het filter `includeVariations` is opgenomen in de `List` querytype.  Als u Variaties in inhoudsfragmenten wilt ophalen in de queryresultaten, voert u de opdracht `includeVariations` filter moet worden ingesteld op `true`.
+
+   >[!CAUTION]
+   >Het filter `includeVariations` kan niet samen met het door het systeem gegenereerde veld worden gebruikt `_variation`.
+
 * Als u logische OR wilt gebruiken:
    * use ` _logOp: OR`
    * Zie [Voorbeeldquery - Alle personen met de naam &quot;Jobs&quot; of &quot;Smith&quot;](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -572,7 +577,18 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
          >
          >Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
 
+         >[!CAUTION]
+         >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter worden gebruikt `includeVariations`.
+
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die codes bevatten; this is an array of `cq:tags` id&#39;s.
+
+         * Zie [Voorbeeldquery - Namen van alle steden die zijn getagd als stadseinden](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Zie [Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >Tags kunnen ook worden opgevraagd door de metagegevens van een inhoudsfragment weer te geven.
    * En bewerkingen:
 
       * `_operator` : specifieke exploitanten toepassen; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ De basisverrichting van vragen met GraphQL voor AEM houdt zich aan de standaards
          * Zie [Voorbeeldquery - Filter op een array met een item dat minstens één keer moet voorkomen](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : om de zaak te negeren bij het vragen
          * Zie [Voorbeeldquery - Alle steden met SAN in naam, ongeacht het geval](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+
+
 
 
 

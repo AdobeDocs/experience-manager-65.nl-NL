@@ -3,31 +3,32 @@ title: Variaties - Authoring van content voor fragmenten
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2426'
+ht-degree: 10%
 
 ---
 
 # Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
 
-[](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) Variaties zijn een belangrijk kenmerk van AEM inhoudsfragmenten, omdat u hiermee kopieën van de master inhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s, waardoor de levering van inhoud zonder kop nog flexibeler wordt.
+[Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van AEM inhoudsfragmenten, aangezien u hiermee kopieën van de master inhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s, waardoor de levering van inhoud zonder kop nog flexibeler wordt.
 
-Op het tabblad **Variaties** kunt u:
+Van de **Variaties** tabblad kunt u:
 
-* [Voer de ](#authoring-your-content) inhoud voor het fragment in.
-* [Creeer en beheer ](#managing-variations) variaties van de  **** Mastercontent,
+* [Voer de inhoud in](#authoring-your-content) voor het fragment,
+* [Variaties maken en beheren](#managing-variations) van de **Master** inhoud,
 
 Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitgegeven; bijvoorbeeld:
 
-* [Visuele elementen in het fragment](#inserting-assets-into-your-fragment)  invoegen (afbeeldingen)
+* [Visuele elementen in een fragment invoegen](#inserting-assets-into-your-fragment) (afbeeldingen)
 
-* Selecteer tussen [RTF](#rich-text), [Onbewerkte tekst](#plain-text) en [Markdown](#markdown) voor bewerking
+* Selecteren tussen [RTF](#rich-text), [Onbewerkte tekst](#plain-text) en [Markering](#markdown) voor bewerking
 
 * [Inhoud uploaden](#uploading-content)
 
-* [Belangrijke statistieken](#viewing-key-statistics)  weergeven (over tekst met meerdere regels)
+* [Belangrijkste statistieken weergeven](#viewing-key-statistics) (over tekst met meerdere regels)
 
 * [Tekst samenvatten](#summarizing-text)
 
@@ -39,24 +40,37 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 
 ## Inhoud ontwerpen {#authoring-your-content}
 
-Wanneer u het inhoudsfragment opent voor bewerking, wordt het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat verschillende velden van diverse gegevenstypen die zijn gedefinieerd in het inhoudsmodel.
+Wanneer u het inhoudsfragment opent voor bewerking, worden de **Variaties** is standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. Het gestructureerde fragment bevat diverse velden, van verschillende gegevenstypen, die zijn gedefinieerd in het inhoudsmodel.
 
 Bijvoorbeeld:
 
-![full screen ](assets/cfm-variations-02.png)
-editorU kunt:
+![volledige schermeditor](assets/cfm-variations-02.png)
 
-* direct wijzigingen aanbrengen op het tabblad **Variaties**
+U kunt:
 
-   * elk gegevenstype biedt verschillende bewerkingsopties
+* Bewerk de inhoud rechtstreeks in het dialoogvenster **Variaties** tab; elk gegevenstype biedt verschillende bewerkingsopties , bijvoorbeeld :
 
-* voor **Meerdere-regeltekst**-velden kunt u ook de [volledige-schermeditor](#full-screen-editor) openen om:
+   * for **Tekst met meerdere regels** velden die u ook kunt openen [full-screen redacteur](#full-screen-editor) tot:
 
-   * Selecteer [Format](#formats)
-   * zie meer het uitgeven opties (voor [Rich Text](#rich-text) formaat)
-   * toegang tot een waaier van [acties](#actions)
+      * Selecteer de [Indeling](#formats)
+      * zie meer bewerkingsopties (voor [RTF](#rich-text) bestandsindeling)
+      * toegang tot een reeks [handelingen](#actions)
+   * Voor **Fragmentverwijzing** velden [Inhoudsfragment bewerken](#fragment-references-edit-content-fragment) Deze optie kan beschikbaar zijn, afhankelijk van de modeldefinitie.
 
-* Voor **Fragmentverwijzing**-velden kan de optie **[Inhoudsfragment bewerken](#fragment-references-edit-content-fragment)** beschikbaar zijn, afhankelijk van de modeldefinitie.
+
+* Toewijzen **Tags** de huidige wijziging; de tags kunnen worden toegevoegd, bijgewerkt en verwijderd
+
+   * [Tags](/help/sites-authoring/tags.md) bijzonder krachtig zijn wanneer het organiseren van uw fragmenten aangezien zij voor inhoudclassificatie en taxonomie kunnen worden gebruikt. Tags kunnen worden gebruikt om inhoud (door tags) te zoeken en om bewerkingen in bulk toe te passen.
+
+      * Als u zoekt naar een tag, wordt het fragment geretourneerd, met de gemarkeerde variatie.
+      * Variatietags kunnen ook worden gebruikt om variaties te groeperen voor een specifiek CDN-profiel (Content Delivery Network) (voor CDN-caching) in plaats van de variatienaam te gebruiken.
+
+      U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om alleen deze fragmenten als een subset te kunnen doorbladeren, of om ze te kopiëren voor gebruik met een andere toekomstige start in een nieuwe map.
+   >[!NOTE]
+   >
+   >**Tags** kan ook worden toegevoegd (aan **Master** wijziging) als onderdeel van de [Metagegevens](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Variaties maken en beheren](#managing-variations) van de **Master** inhoud.
 
 ### Volledige schermeditor {#full-screen-editor}
 
@@ -70,20 +84,20 @@ Hiermee wordt de teksteditor voor het volledige scherm geopend:
 
 De teksteditor voor volledig scherm biedt:
 
-* Toegang tot verschillende [acties](#actions)
-* Afhankelijk van de [indeling](#formats), aanvullende opmaakopties ([RTF](#rich-text))
+* Toegang tot verschillende [handelingen](#actions)
+* Afhankelijk van de [format](#formats), aanvullende opmaakopties ([RTF](#rich-text))
 
 ### Acties {#actions}
 
-De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) wanneer de volledige het schermredacteur (d.w.z. multi-line tekst) open is:
+De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) als de volledige-schermeditor (d.w.z. tekst met meerdere regels) is geopend:
 
-* Selecteer de [indeling](#formats) ([RTF-tekst](#rich-text), [Onbewerkte tekst,](#plain-text) [Markering](#markdown))
+* Selecteer [format](#formats) ([RTF](#rich-text), [Onbewerkte tekst,](#plain-text) [Markering](#markdown))
 
 * [Inhoud uploaden](#uploading-content)
 
 * [Tekststatistieken tonen](#viewing-key-statistics)
 
-* [Synchroniseren met Master](#synchronizing-with-master)  (bij het bewerken van een variatie)
+* [Synchroniseren met Master](#synchronizing-with-master) (bij het bewerken van een variatie)
 
 * [Tekst samenvatten](#summarizing-text)
 
@@ -118,13 +132,13 @@ Met RTF-bewerkingen kunt u de volgende opmaken:
    * Zoeken/vervangen
    * Spellingcontrole
    * [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
-* [Inhoudsfragment](#inserting-content-fragment-into-your-fragment) invoegen; beschikbaar als uw  **tekstveld met meerdere regels is geconfigureerd met** Fragmentverwijzing **** toestaan.
+* [Inhoudsfragment invoegen](#inserting-content-fragment-into-your-fragment); beschikbaar als uw **Tekst met meerdere regels** veld is geconfigureerd met **Fragmentverwijzing toestaan**.
 
-De [acties](#actions) zijn ook toegankelijk van de volledig-schermredacteur.
+De [handelingen](#actions) zijn ook toegankelijk van de volledig-schermredacteur.
 
 ### Onbewerkte tekst {#plain-text}
 
-Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegevens. U kunt de volledige het schermredacteur voor verdere [acties](#actions) ook openen.
+Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegevens. U kunt de volledige-schermeditor ook voor meer informatie openen [handelingen](#actions).
 
 >[!CAUTION]
 >
@@ -134,7 +148,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!NOTE]
 >
->Zie de documentatie [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) voor volledige informatie.
+>Zie voor meer informatie de [Markering](/help/assets/content-fragments/content-fragments-markdown.md) documentatie.
 
 Hierdoor kunt u de tekst opmaken met behulp van een markering. U kunt het volgende definiëren:
 
@@ -148,7 +162,7 @@ Hierdoor kunt u de tekst opmaken met behulp van een markering. U kunt het volgen
 * Codeblokken
 * backslash-eces
 
-U kunt de volledige het schermredacteur voor verdere [acties](#actions) ook openen.
+U kunt de volledige-schermeditor ook voor meer informatie openen [handelingen](#actions).
 
 >[!CAUTION]
 >
@@ -165,7 +179,7 @@ Als het Content Fragment-model fragmentverwijzingen bevat, hebben de auteurs van
 
 #### Inhoudsfragment bewerken {#fragment-references-edit-content-fragment}
 
-Met de optie **Inhoudsfragment bewerken** wordt dat fragment geopend in een nieuw venstertabblad.
+De optie **Inhoudsfragment bewerken** wordt dat fragment geopend in een nieuw venstertabblad.
 
 <!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
@@ -177,17 +191,17 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### Nieuw inhoudsfragment {#fragment-references-new-content-fragment}
 
-Met de optie **Nieuw inhoudsfragment** kunt u een volledig nieuw fragment maken. Hiervoor wordt een variant van de wizard voor het maken van inhoudsfragmenten geopend in de editor.
+De optie **Nieuw inhoudsfragment** Hiermee kunt u een volledig nieuw fragment maken. Hiervoor wordt een variant van de wizard voor het maken van inhoudsfragmenten geopend in de editor.
 
 U kunt dan een nieuw fragment maken door:
 
 1. Navigeer naar en selecteer de gewenste map.
-1. Selecteren **Next**.
-1. Eigenschappen specificeren; bijvoorbeeld **Title**.
-1. Selecteren **Create**.
+1. Selecteren **Volgende**.
+1. Eigenschappen specificeren; bijvoorbeeld **Titel**.
+1. Selecteren **Maken**.
 1. Tot slot:
-   1. **Hiermee** wordt het oorspronkelijke fragment hersteld en wordt naar het nieuwe fragment verwezen.
-   1. **Met** Openwill wordt naar het nieuwe fragment verwezen en wordt het nieuwe fragment geopend voor bewerking op een nieuw browsertabblad.
+   1. **Gereed** wordt teruggezet (naar het oorspronkelijke fragment) en verwijst naar het nieuwe fragment.
+   1. **Openen** verwijst naar het nieuwe fragment en opent het nieuwe fragment, voor bewerking, op een nieuw browsertabblad.
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
@@ -207,13 +221,13 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 
 >[!NOTE]
 >
->Op technisch niveau houdt het systeem de zinnen bij die het als het verstrekken van *beste verhouding van informatiedichtheid en uniciteit* volgens specifieke algoritmen beschouwt.
+>Op technisch niveau handhaaft het systeem de zinnen die het beschouwt als het leveren van de *beste verhouding tussen informatiedichtheid en uniciteit* volgens specifieke algoritmen.
 
 >[!CAUTION]
 >
 >Het inhoudsfragment moet een geldige taalmap (ISO-code) hebben als voorouder. dit wordt gebruikt om het te gebruiken taalmodel te bepalen.
 >
->Bijvoorbeeld `en/` zoals in het volgende pad:
+>Bijvoorbeeld: `en/` zoals in het volgende pad:
 >
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
@@ -224,12 +238,13 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
 * [Duits (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 * [Italiaans (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Spaans (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
-1. Selecteer **Master** of de vereiste variatie.
+1. Selecteren **Master** of de vereiste wijziging.
 1. Open de editor voor het volledige scherm.
 
-1. Selecteer **Samenvatting tekst** van de toolbar.
+1. Selecteren **Tekst samenvatten** op de werkbalk.
 
    ![samenvatting](assets/cfm-variations-05.png)
 
@@ -240,7 +255,7 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
    * Klik op een gemarkeerde zin om deze in de samengevatte inhoud te houden.
    * Klik op een niet-gemarkeerde zin om deze te verwijderen.
 
-1. Selecteer **Samenvatten** om de veranderingen te bevestigen.
+1. Selecteren **Samenvatten** om de wijzigingen te bevestigen.
 
 1. De oorspronkelijke tekst wordt naast de voorgestelde samenvatting weergegeven:
 
@@ -248,7 +263,7 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
    * Klik op een gemarkeerde zin om deze in de samengevatte inhoud te houden.
    * Klik op een niet-gemarkeerde zin om deze te verwijderen.
    * De samenvattingsstatistieken worden weergegeven: **Werkelijk** en **Doel**-
-   * U kunt de wijzigingen **Voorvertoning**.
+   * U kunt **Voorvertoning** de wijzigingen.
 
    ![samenvattingsvergelijking](assets/cfm-variations-06.png)
 
@@ -256,11 +271,11 @@ Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aa
 
 Een fragment annoteren:
 
-1. Selecteer **Master** of de vereiste variatie.
+1. Selecteren **Master** of de vereiste wijziging.
 
 1. Open de editor voor het volledige scherm.
 
-1. Het pictogram **Annoteren** is beschikbaar in de bovenste werkbalk. U kunt desgewenst tekst selecteren.
+1. De **Annoteren** is beschikbaar in de bovenste werkbalk. U kunt desgewenst tekst selecteren.
 
    ![annoteren](assets/cfm-variations-07.png)
 
@@ -268,7 +283,7 @@ Een fragment annoteren:
 
    ![annoteren](assets/cfm-variations-07a.png)
 
-1. Selecteer **Toepassen** in het dialoogvenster.
+1. Selecteren **Toepassen** in het dialoogvenster.
 
    ![annoteren](assets/cfm-variations-annotations-apply-icon.png)
 
@@ -278,7 +293,7 @@ Een fragment annoteren:
 
 1. Sluit de volledige-schermredacteur, de annotaties worden nog benadrukt. Als deze optie is geselecteerd, wordt een dialoogvenster geopend waarin u de annotatie verder kunt bewerken.
 
-1. Selecteer **Opslaan**.
+1. Selecteren **Opslaan**.
 
 1. Sluit de volledige-schermredacteur, de annotaties worden nog benadrukt. Als deze optie is geselecteerd, wordt een dialoogvenster geopend waarin u de annotatie verder kunt bewerken.
 
@@ -295,7 +310,7 @@ Annotaties:
 
 * Wanneer u de volledige tekst verwijdert waarop de annotatie is toegepast, wordt de annotatie ook verwijderd.
 
-* Kan worden vermeld en verwijderd door het tabblad **Annotaties** in de fragmenteditor te selecteren.
+* Kan worden weergegeven en verwijderd door het selectievakje **Annotaties** in de fragmenteditor.
 
    ![annotaties](assets/cfm-variations-08.png)
 
@@ -303,16 +318,16 @@ Annotaties:
 
 ### Elementen invoegen in uw fragment {#inserting-assets-into-your-fragment}
 
-Als u het ontwerpen van inhoudsfragmenten wilt vereenvoudigen, kunt u [Middelen](/help/assets/manage-assets.md) (afbeeldingen) rechtstreeks aan het fragment toevoegen.
+U kunt toevoegen om het ontwerpen van inhoudsfragmenten te vereenvoudigen [Activa](/help/assets/manage-assets.md) (afbeeldingen) rechtstreeks naar het fragment.
 
-Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. opmaak kan worden toegepast wanneer het [fragment wordt gebruikt/ernaar wordt verwezen op een pagina](/help/sites-authoring/content-fragments.md).
+Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. de opmaak kan worden uitgevoerd wanneer de [fragment wordt gebruikt of er wordt naar verwezen op een pagina](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
-Opmaak van het element (bijvoorbeeld grootte) moet echter worden uitgevoerd in de [pagina-editor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+Opmaak van het element (bv. grootte) moet echter plaatsvinden in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
-Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
 1. Gebruik het pictogram **Asset invoegen** om het zoekdialoogvenster te openen.
@@ -341,17 +356,17 @@ U kunt ook een ander inhoudsfragment aan het fragment toevoegen om het maken van
 Deze worden als referentie toegevoegd op de huidige locatie in het fragment.
 
 >[!NOTE]
-Deze optie is beschikbaar wanneer uw **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
+Deze optie is beschikbaar als **Tekst met meerdere regels** is geconfigureerd met **Fragmentverwijzing toestaan**.
 
 >[!CAUTION]
 Deze elementen kunnen niet worden verplaatst of verwijderd op een pagina waarnaar wordt verwezen. Dit moet gebeuren in de fragmenteditor.
-Opmaak van het element (bijvoorbeeld grootte) moet echter worden uitgevoerd in de [pagina-editor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
+Opmaak van het element (bv. grootte) moet echter plaatsvinden in het dialoogvenster [paginaeditor](/help/sites-authoring/content-fragments.md). De representatie van het element in de fragmenteditor is uitsluitend bedoeld voor het ontwerpen van de inhoudsstroom.
 
 >[!NOTE]
-Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
+Er zijn verschillende methoden om toe te voegen [afbeeldingen](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u het fragment wilt toevoegen.
-1. Gebruik het pictogram **Inhoudsfragment invoegen** om het dialoogvenster Zoeken te openen.
+1. Gebruik de **Inhoudsfragment invoegen** om het zoekdialoogvenster te openen.
 
    ![pictogram Inhoudsfragment invoegen](assets/cfm-variations-13.png)
 
@@ -362,7 +377,7 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
 
    Selecteer het gewenste fragment door op de miniatuur te klikken.
 
-1. Gebruik **Selecteer** om een verwijzing naar het geselecteerde inhoudsfragment toe te voegen aan het huidige inhoudsfragment (op de huidige locatie).
+1. Gebruiken **Selecteren** om een verwijzing naar het geselecteerde inhoudsfragment toe te voegen aan het huidige inhoudsfragment (op de huidige locatie).
 
    >[!CAUTION]
    Als u na het toevoegen van een verwijzing naar een ander fragment de opmaak wijzigt in:
@@ -374,24 +389,27 @@ Er zijn verschillende methoden om [afbeeldingen](/help/assets/content-fragments/
 
 ### Een variatie maken {#creating-a-variation}
 
-Met behulp van variaties kunt u de **Master**-inhoud innemen en deze afhankelijk van het doel variëren (indien nodig).
+Met variaties kunt u de **Master** inhoud en variëren naar gelang van het doel (indien vereist).
 
 Een nieuwe variatie maken:
 
 1. Open het fragment en controleer of het zijpaneel zichtbaar is.
-1. Selecteer **Variaties** in de pictogrambalk in het zijpaneel.
-1. Selecteer **Variatie maken**.
+1. Selecteren **Variaties** in de pictogrambalk in het zijpaneel.
+1. Selecteren **Variatie maken**.
 1. Er wordt een dialoogvenster geopend waarin u de **titel** en de **beschrijving** voor de nieuwe variatie kunt opgeven.
 1. Selecteer **Toevoegen**. De **fragmentmaster** wordt gekopieerd naar de nieuwe variatie, die nu kan worden [bewerkt](#editing-a-variation).
 
    >[!NOTE]
-   Wanneer u een nieuwe variant maakt, wordt deze altijd **Master** gekopieerd en niet de variant die momenteel is geopend.
+   Bij het maken van een nieuwe variatie is dit altijd **Master** dat wordt gekopieerd, niet de variatie die momenteel open is.
+
+   >[!NOTE]
+   Wanneer u een nieuwe variatie maakt, alles **Tags** momenteel toegewezen aan **Master** variatie wordt naar de nieuwe variatie gekopieerd.
 
 ### Een variatie bewerken {#editing-a-variation}
 
 U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
-* [Uw variatie](#creating-a-variation) maken.
+* [Uw variatie maken](#creating-a-variation).
 * Een bestaand fragment openen en vervolgens de gewenste variant in het zijpaneel selecteren.
 
 ![bewerken van een variatie](assets/cfm-variations-10.png)
@@ -402,14 +420,14 @@ Een bestaande variatie een andere naam geven:
 
 1. Open het fragment en selecteer **Variaties** in het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **Naam wijzigen** in de vervolgkeuzelijst **Acties**.
+1. Selecteren **Naam wijzigen** van de **Handelingen** vervolgkeuzelijst.
 
 1. Voer in het dialoogvenster dat verschijnt de nieuwe **titel** en/of **beschrijving** in.
 
-1. Bevestig de handeling **Naam wijzigen**.
+1. Bevestig de **Naam wijzigen** handeling.
 
 >[!NOTE]
-Dit beïnvloedt slechts de variatie **Titel**.
+Dit heeft alleen invloed op de variatie **Titel**.
 
 ### Een variatie verwijderen {#deleting-a-variation}
 
@@ -417,28 +435,28 @@ Een bestaande wijziging verwijderen:
 
 1. Open het fragment en selecteer **Variaties** in het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **Delete** van **Acties** drop down.
+1. Selecteren **Verwijderen** van de **Handelingen** vervolgkeuzelijst.
 
-1. Bevestig de handeling **Delete** in het dialoogvenster.
+1. Bevestig de **Verwijderen** in het dialoogvenster.
 
 >[!NOTE]
-U kunt **Master** niet schrappen.
+U kunt niet verwijderen **Master**.
 
 ### Synchroniseren met Master {#synchronizing-with-master}
 
-**** Masteris is een integraal onderdeel van een inhoudsfragment en bevat per definitie de master kopie van de inhoud, terwijl de variaties de afzonderlijke bijgewerkte en op maat gemaakte versies van die inhoud bevatten. Wanneer Master wordt bijgewerkt, is het mogelijk dat deze wijzigingen ook relevant zijn voor de variaties en daarom aan hen moeten worden doorgegeven.
+**Master** maakt integraal deel uit van een inhoudsfragment en bevat per definitie de master kopie van de inhoud, terwijl de variaties de afzonderlijke bijgewerkte en op maat gemaakte versies van die inhoud bevatten. Wanneer Master wordt bijgewerkt, is het mogelijk dat deze wijzigingen ook relevant zijn voor de variaties en daarom aan hen moeten worden doorgegeven.
 
 Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met Master. Op deze manier kunt u automatisch wijzigingen kopiëren die u hebt aangebracht in de Master variatie.
 
 >[!CAUTION]
 De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 Alleen het huidige element van de variatie wordt gesynchroniseerd.
-Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
+Synchronisatie werkt alleen op de **Tekst met meerdere regels** gegevenstype.
 Het overbrengen van wijzigingen *van een variatie naar **master*** is niet beschikbaar als optie.
 
 <!-- needs new screenshot for synchronize effect -->
 
-1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat **Master** is uitgegeven.
+1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat de **Master** is bewerkt.
 
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
 
@@ -446,7 +464,7 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
       ![synchroniseren met master](assets/cfm-variations-11a.png)
 
-   * de werkbalk van de schermvullende editor - **Synchroniseren met master**
+   * de werkbalk van de volledige schermweergave - **Synchroniseren met master**
 
       ![synchroniseren met master](assets/cfm-variations-11b.png)
 
@@ -458,4 +476,4 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
    ![synchroniseren met master](assets/cfm-variations-11c.png)
 
-1. Selecteer **Synchronize**, zal de variatie worden bijgewerkt en getoond.
+1. Selecteren **Synchroniseren**, wordt de wijziging bijgewerkt en weergegeven.

@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: b33c42edb44617d26ead0df3a9de7bdb39c2e9f4
+source-git-commit: 89bb9223bb5e1e1d8719c5d957ec380872ed3e96
 workflow-type: tm+mt
-source-wordcount: '5910'
+source-wordcount: '6102'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,9 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
    Nadat een middel wordt geactiveerd, worden om het even welke updates onmiddellijk gepubliceerd live aan S7 Levering.
 
 1. Selecteer **[!UICONTROL Save]**.
-1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de auteur van de Experience Manager de op token gebaseerde validatie en daarom geeft de auteur van de Experience Manager standaard een voorvertoning van Dynamic Media-inhoud weer. Nochtans, kunt u lijst van gewenste personen meer IPs om gebruikers toegang tot veilig voorproefinhoud te verlenen. Ga naar [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren - tabblad Beveiliging](/help/assets/dm-publish-settings.md#security-tab).
+1. Om Dynamic Media-inhoud veilig voor te vertonen voordat deze wordt gepubliceerd, gebruikt de auteur van de Experience Manager de op token gebaseerde validatie en daarom geeft de auteur van de Experience Manager standaard een voorvertoning van Dynamic Media-inhoud weer. Nochtans, kunt u &quot;lijst van gewenste personen&quot;meer IPs om gebruikers toegang tot veilig voorproefinhoud te verlenen. Ga naar [Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren - tabblad Beveiliging](/help/assets/dm-publish-settings.md#security-tab).
+
+Als u uw configuratie verder wilt aanpassen, zoals toelatend ACL (de Lijst van het Toegangsbeheer) toestemmingen, kunt u naar keuze om het even welke taken voltooien onder [(Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -165,8 +167,6 @@ Als u een geselecteerde map voor synchronisatie met Dynamic Media wilt markeren,
     * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
 
 U wordt nu gebeëindigd met de basisconfiguratie; U kunt de Dynamic Media - Scene7-modus gebruiken.
-
-Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke taken voltooien onder [(Optioneel) Geavanceerde instellingen configureren in de modus Dynamic Media - Scene7](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Het wachtwoord wijzigen in Dynamic Media {#change-dm-password}
 
@@ -203,6 +203,8 @@ Het gewijzigde wachtwoord wordt opgeslagen wanneer u **[!UICONTROL Save]** in de
 
 Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder wilt aanpassen of de prestaties ervan wilt optimaliseren, kunt u een of meer van de volgende handelingen uitvoeren *optioneel* taken:
 
+* [(Optioneel) ACL-machtigingen inschakelen in de modus Dynamic Media - Scene7](#optional-enable-acl)
+
 * [(Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB](#optional-config-dms7-assets-larger-than-2gb)
 
 * [(Optioneel) Instellingen voor Dynamic Media - Scene7-modus instellen en configureren](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
@@ -210,6 +212,33 @@ Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder w
 * [(Optioneel) Pas de prestaties van de Dynamic Media-Scene7-modus aan](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
+
+### (Optioneel) Schakel toegangsbeheerlijstmachtigingen in in de modus Dynamic Media - Scene7 {#optional-enable-acl}
+
+Als u Dynamic Media - Scene7-modus uitvoert op AEM, gaat deze momenteel door `/is/image` verzoeken om het Beeld van de Voorproef te beveiligen die zonder ACL (de Lijst van het Toegangsbeheer) toestemmingen op PlatformServerServlet te controleren. U kunt *enable* ACL toestemmingen. De bevoegde autoriteit `/is/image` verzoeken. Als een gebruiker niet gemachtigd is om toegang te krijgen tot het middel, wordt de fout &quot;403 - Verboden&quot; weergegeven.
+
+**Om ACL toestemmingen in Dynamic Media toe te laten - de wijze van Scene7:**
+
+1. Navigeer vanuit Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. Er wordt een nieuw browsertabblad geopend voor de **[!UICONTROL Adobe Experience Manager Web Console Configuration]** pagina.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. Schuif op de pagina naar de naam *Adobe CQ Scene7 PlatformServer*.
+
+1. Rechts van de naam selecteert u het potloodpictogram (**[!UICONTROL Edit the configuration values]**).
+
+1. Op de **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** Selecteer het selectievakje voor de volgende twee instellingen:
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Als deze instelling is ingeschakeld, worden de resultaten van de machtiging voor twee minuten (standaard) in cache opgeslagen.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Als deze instelling is ingeschakeld, wordt de toegang van een gebruiker gevalideerd terwijl deze via Dynamic Media Image Server een voorvertoning van de elementen weergeeft.
+
+   ![Instellingen van toegangsbeheerlijst inschakelen in de modus Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
+
+1. Selecteer in de rechterbenedenhoek van de pagina de optie **[!UICONTROL Save]**.
 
 ### (Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 

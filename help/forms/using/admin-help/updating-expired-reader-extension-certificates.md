@@ -2,9 +2,9 @@
 title: Verlopen van Reader Extensions-certificaten en de gevolgen ervan
 description: Verlopen van Reader Extensions-certificaten en de gevolgen ervan
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
+source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,7 @@ A. Adobe Root CA is de certificeringsinstantie waaruit een Acrobat Reader Extens
 
 **V. Adobe heeft al eerder een mededeling gedaan over het verlopen van certificaten en de gevolgen voor het gebruik/openen van PDF-documenten. Moet deze mededeling genegeerd worden?**
 
-A. Op basis van de herbeoordeling van de situatie blijven alle documenten van de PDF die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die vóór 7 januari 2023 van de oude &quot;Adobe Root CA&quot; zijn uitgegeven, ongewijzigd na 7 januari 2023. Als u uw PDF al hebt bijgewerkt, is er geen wijziging in de ervaring.
-
+A. Op basis van de herbeoordeling van de situatie blijven alle documenten van de PDF die vóór 7 januari 2023 zijn uitgebreid met productiecertificaten die vóór 7 januari 2023 van de oude &quot;Adobe Root CA&quot; zijn uitgegeven, ongewijzigd na 7 januari 2023. Als u uw PDF-documenten al hebt bijgewerkt, is er geen wijziging in de ervaring.
 
 **V. Met wie moet ik contact opnemen als ik nog meer vragen heb?**
 

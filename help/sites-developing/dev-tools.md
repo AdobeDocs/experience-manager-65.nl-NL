@@ -1,28 +1,27 @@
 ---
 title: Ontwikkelingsinstrumenten
-seo-title: Ontwikkelingsinstrumenten
+seo-title: Development Tools
 description: Voor het ontwikkelen van uw JCR-, Apache Sling- of AEM-toepassingen zijn een aantal gereedschapssets beschikbaar
-seo-description: Voor het ontwikkelen van uw JCR-, Apache Sling- of AEM-toepassingen zijn een aantal gereedschapssets beschikbaar
+seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
-translation-type: tm+mt
-source-git-commit: 7035c19a109ff67655ee0419aa37d1723e2189cc
+exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
+source-git-commit: 4967a6d9ad92272a1ff442456fe65de51cc46a73
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
-# Ontwikkelingshulpmiddelen{#development-tools}
+# Ontwikkelingsinstrumenten{#development-tools}
 
 Voor het ontwikkelen van uw JCR-, Apache Sling- of AEM-toepassingen zijn de volgende gereedschapssets beschikbaar:
 
-* één set bestaande uit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV. CRXDE Lite is ingebed in CRX/AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken terwijl u zich aanmeldt en integreert met SVN.
+* één stel bestaande uit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV. CRXDE Lite is ingebed in CRX/AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken terwijl u zich aanmeldt en integreert met SVN.
 
    CRXDE Lite wordt aanbevolen wanneer u geen directe toegang hebt tot de CRX/AEM-server, wanneer u een toepassing ontwikkelt door de out-of-the-box componenten en Java-bundels uit te breiden of te wijzigen of wanneer u geen speciale debugger, codevoltooiing en syntaxismarkering nodig hebt.
 
@@ -36,7 +35,6 @@ Adobe heeft de volgende extensies uitgebracht:
 
 * [Extensie Eclipse AEM](/help/sites-developing/aem-eclipse.md)
 * [Extensie AEM](/help/sites-developing/aem-brackets.md)
-* [AEM IntelliJ Extension](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  (van Headwire)
 
 ### Overige gereedschappen {#other-tools}
 
@@ -61,5 +59,4 @@ Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:
 >[!NOTE]
 >
 >De volgende zelfstudie kan van belang zijn voor het starten van een nieuw AEM-project:
->[Aan de slag met AEM Sites Deel 1 - de Opstelling van het Project](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
-
+>[Aan de slag met AEM Sites Deel 1 - Projectinstelling](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

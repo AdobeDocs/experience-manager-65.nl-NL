@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3821'
 ht-degree: 0%
 
 ---
@@ -107,9 +107,9 @@ ht-degree: 0%
 
 ### Belangrijkste kenmerken {#keyfeatures}
 
-* AEM Forms Designer is nu beschikbaar in de landinstelling Spaans. (LC-3920051)
-* U kunt OAuth2 nu gebruiken om met de protocollen van de de postserver van Microsoft Office 365 (SMTP en IMAP) voor authentiek te verklaren. (NPR-35177)
-* U kunt instellen [Revalidate op server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) eigenschap in op true om de verborgen velden te identificeren voor uitsluiting van een document of record op de server. (NPR-38149)
+* AEM Forms Designer is nu beschikbaar in [Landinstelling Spaans](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
+* U kunt nu [OAuth2 om met de protocollen van de de postserver van Microsoft Office 365 (SMTP en IMAP) voor authentiek te verklaren](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* U kunt instellen [Revalidate op server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) eigenschap in op true om de verborgen velden te identificeren voor uitsluiting van een document of record op de server. (NPR-38149)
 * AEM Forms Designer vereist een 32-bits versie van Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
 ### Oplossingen {#fixes}
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL heft een uitzondering op. U kunt bijvoorbeeld geen variatietags ophalen uit een inhoudsfragment. Er is geen variatie met de naam &#39;elektrisch&#39;. Dit probleem is te wijten aan het aanroepen van `getVariationTags` voor een niet-bestaande wijziging die een uitzondering doet ontstaan. (SITES-8898)
+* GraphQL maakt een uitzondering. U kunt bijvoorbeeld geen variatietags ophalen uit een inhoudsfragment. Er is geen variatie met de naam &#39;elektrisch&#39;. Dit probleem is te wijten aan het aanroepen van `getVariationTags` voor een niet-bestaande wijziging die een uitzondering doet ontstaan. (SITES-8898)
 * Bezig met het sorteren van titelorders in de lijstweergave, zowel oplopend als aflopend, van de titels met de volgorde A, C, B. (SITES-7585)
 * Ondersteuning voor extra tags voor variaties van inhoudsfragmenten. (SITES-8168)
 * Identificeerde en verwijderde Odin-specifieke code uit Experience Manager 6.5 die onnodig was. (SITES-3574)

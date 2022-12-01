@@ -1,18 +1,16 @@
 ---
-title: OAuth2-ondersteuning voor Microsoft® Office 365-mailserverprotocollen
-description: Oauth2-ondersteuning voor Microsoft® Office 365-mailserverprotocollen
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+title: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® Office 365-mailserverprotocollen
+description: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® Office 365-mailserverprotocollen
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
 
-# OAuth 2.0 Steun voor Microsoft® Office 365 de protocollen van de postserver {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integreer met Microsoft® Office 365-mailserverprotocollen {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms biedt OAuth 2.0-ondersteuning voor integratie met Microsoft® Office 365-mailserverprotocollen, zodat organisaties zich aan veilige e-mailvereisten kunnen houden. Azure Active Directory (Azure AD) biedt OAuth 2.0-verificatieservice, waarmee uw toepassing verbinding kan maken met verschillende protocollen zoals IMAP, POP of SMTP en toegang kan krijgen tot e-mailgegevens voor Office 365-gebruikers.
-
-Hieronder vindt u stapsgewijze instructies voor het configureren van de Microsoft® Office 365-mailserverprotocollen voor verificatie via OAuth 2.0-service:
+AEM Forms biedt OAuth 2.0-ondersteuning voor integratie met Microsoft® Office 365-mailserverprotocollen zodat organisaties zich kunnen houden aan de vereisten voor e-mail. U kunt de Azure Actieve Folder (Azure AD) OAuth 2.0 authentificatieservice gebruiken, om met diverse protocollen zoals IMAP, POP of SMTP en toegangs e-mailgegevens voor Bureau 365 te verbinden gebruikers. Hieronder vindt u stapsgewijze instructies voor het configureren van de Microsoft® Office 365-mailserverprotocollen voor verificatie via OAuth 2.0-service:
 
 1. Aanmelden [https://portal.azure.com/](https://portal.azure.com/) en zoek naar **Azure Active Directory** in de zoekbalk en klik op het resultaat.
 U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -22,9 +20,8 @@ U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft
 
 1. Vul de gegevens naar wens in en klik op **Registreren**.
    ![Ondersteunde account](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
-   In het bovenstaande geval **Accounts in any organizational directory (Any Azure AD directory - Multihuurder) en persoonlijke Microsoft® accounts (bijvoorbeeld Skype, Xbox)** is geselecteerd.
+In het bovenstaande geval 
+**Accounts in any organizational directory (Any Azure AD directory - Multihuurder) en persoonlijke Microsoft® accounts (bijvoorbeeld Skype, Xbox)** is geselecteerd.
 
    >[!NOTE]
    >
@@ -88,7 +85,9 @@ Vervolgens moet u de machtigingscode genereren, zoals in de volgende stappen wor
 ## Het genereren van het token Vernieuwen {#generating-the-refresh-token}
 
 Vervolgens moet u het vernieuwingstoken genereren. Dit wordt in de volgende stappen uitgelegd:
+
 1. Open de bevelherinnering en gebruik het volgende cURL bevel om te verfrissen Token.
+
 1. Vervang de `clientID`, `client_secret` en `redirect_uri` met de waarden voor uw toepassing samen met de waarde van `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -163,9 +162,4 @@ Nu moet u de e-mailservice op de nieuwste JEE-server configureren door u aan te 
 * Als de e-mailservice niet goed werkt. Probeer de `Refresh Token` zoals hierboven beschreven. Het duurt een paar minuten voordat de nieuwe waarde is geïmplementeerd.
 
 * Fout bij het configureren van de gegevens van de e-mailserver in het eindpunt van de e-mailserver met Workbench.Probeer het eindpunt te configureren via Admin UI in plaats van Workbench.
-
-
-
-
-
 

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3816'
 ht-degree: 0%
 
 ---
@@ -105,9 +105,44 @@ ht-degree: 0%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Releasedatum van Service Pack. In dit geval worden de invoegpakketten op donderdag 1 december 2022 uitgebracht. Daarnaast wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie.
+### Belangrijkste kenmerken {#keyfeatures}
+
+* AEM Forms Designer is nu beschikbaar in de landinstelling Spaans. (LC-3920051)
+* U kunt OAuth2 nu gebruiken om met de protocollen van de de postserver van Microsoft Office 365 (SMTP en IMAP) voor authentiek te verklaren. (NPR-35177)
+* U kunt instellen [Revalidate op server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) eigenschap in op true om de verborgen velden te identificeren voor uitsluiting van een document of record op de server. (NPR-38149)
+* AEM Forms Designer vereist een 32-bits versie van Visual C++ 2019 Redistributable (x86).  (NPR-36690)
+
+### Oplossingen {#fixes}
+
+* Wanneer de eigenschap data-disabled van een adaptief formulier wordt geschakeld, verandert de weergave van keuzerondjes en selectievakjes niet. (NPR-39368)
+* Wanneer een adaptief formulier wordt vertaald, worden sommige vertalingen overgeslagen en niet correct weergegeven. (NPR-39367)
+* Wanneer de eigenschap van een pagina is ingesteld op verborgen, wordt de pagina niet verwijderd uit de formulierset. (NPR-39325)
+* In een Document of Record is de dynamische voetnootsectie aan het einde van de pagina niet aanwezig. (NPR-39322)
+* Wanneer een Document of Record wordt gegenereerd voor een adaptief formulier, is alleen de verticale uitlijning toegestaan voor keuzerondjes en selectievakjes. De gebruiker kan de horizontale uitlijning voor keuzerondjes en selectievakjes niet instellen. (NPR-39321)
+* Als meerdere gebruikers na de implementatie van Correspondence Management toegang proberen te krijgen tot een formulier, wordt org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots een knelpunt en wordt een meerderheid van de threads geraakt. Diverse paginaverzoeken voor formulieren duurden vaak langer dan 1 minuut om elke pagina te laden, zelfs als de server een zeer lage belasting heeft. (NPR-39176, CQ-4347710)
+* Wanneer u in een adaptief formulier een veld met RTF-opmaak gebruikt in een lazy geladen adaptief formulierfragment, worden enkele van de volgende fouten aangetroffen:
+   * U kunt de inhoud niet bewerken en niets toevoegen aan het veld RTF.
+   * Het weergavepatroon dat op de RTF-tekst wordt toegepast, wordt niet toegepast. 
+   * Het foutbericht voor de minimale veldlengte wordt niet weergegeven bij het verzenden van het formulier.
+   * De inhoud van dit rijke-tekstgebied is inbegrepen verscheidene tijden in geproduceerde voorlegt-XML. (NPR-39168)
+* Wanneer de optie Datumkiezer wordt gebruikt in een adaptief formulier, wordt de waarde niet geconverteerd naar de juiste notatie. (NPR-39156)
+* Een adaptief formulier wordt tijdens de voorbeeldweergave als een HTML-formulier niet correct weergegeven, omdat sommige subformulieren overlappen met het bovenliggende formulier. (NPR-39046)
+* Als het deelvenster een tabel heeft verborgen en het aangepaste formulier wordt weergegeven in de tabelweergave, worden de velden op het eerste tabblad niet correct weergegeven. (NPR-39025)
+* De `Body` -tag ontbreekt voor de sjabloon OOTB (Out-of-the-Box). (NPR-39022)
+* Het document met records wordt niet gegenereerd in de taal van het adaptieve formulier. Het wordt altijd gegenereerd in het Engels. (NPR-39020)
+* Als een adaptief formulier meerdere deelvensters heeft en in sommige deelvensters de optie Out-of-the-box wordt gebruikt **Bestandsbijlage** de `Error occurred while draft saving` Er is een fout opgetreden. (NPR-38978)
+* Wanneer `=` wordt gebruikt in het selectievakje, de vervolgkeuzelijst of de keuzerondjesvelden van een adaptief formulier en het document of record wordt gegenereerd. `=` Het teken is niet zichtbaar in het gegenereerde document of record.(NPR-38859)
+* Er is een veelvoudige verhoging van het aantal fouten van de Verwerking van de Partij van de Bericht na de verbetering van het de dienstpak van 6.5.11.0. (NPR-39636)
+* Wanneer u geen testgegevens verstrekt, kunnen de brieven van het Beheer van de Correspondentie niet in de Agent UI laden. (CQ-4348702)
+* Wanneer de gebruiker AEM Forms Service Pack 14 (SP14) van AEM Forms toepast die gebruikend IBM® WebSphere® wordt opgesteld, ontbreekt bootstrapping terwijl het initialiseren van een gegevensbestand en `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` fout treedt op.(NPR-39414)
+* Op een AEM Form op OSGi server, wanneer u de Dienst API van het Document gebruikt om PDF te verklaren, ontbreekt het met fout: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* Wanneer de gebruiker de wrapperservice probeert te gebruiken voor het renderen van letters met AEM 6.3 Forms, wordt `java.lang.reflect.UndeclaredThrowableException` fout treedt op. (CQ-4347259)
+* Wanneer een XDP wordt weergegeven als een HTML5-formulier, wordt de inhoud van de master pagina eerst gerenderd, ongeacht de plaatsing van de objecten in een adaptief formulier. (CQ-4345218)
+* De configuratie van de toepassing bij de bestemmingsserver verandert in de montages die bij de bronserver worden bepaald alhoewel **Configuratie overschrijven wanneer het importeren is voltooid** Deze optie is niet ingeschakeld op het moment dat de toepassing wordt geïmporteerd. (NPR-39044)
+* Wanneer een gebruiker probeert om schakelaarconfiguratie bij te werken gebruikend de Manager van de Configuratie, ontbreekt het.(CQ-4347077)
+* Wanneer de gebruiker een AEM Forms op JEE flard na het veranderen van het standaardwachtwoord van de beheerdergebruiker probeert in werking te stellen, een uitzondering `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` voorkomt. (CQ-4348277)
+* In AEM Designer worden formuliervelden zonder bijschriften in tabelcellen geplaatst, inclusief selectievakjes.(LC-3920410)
+* Wanneer de gebruiker de Help probeert te openen in AEM Forms Designer, wordt deze niet correct weergegeven. (CQ-434/1996)
 
 ## [!DNL Sites] {#sites-6515}
 

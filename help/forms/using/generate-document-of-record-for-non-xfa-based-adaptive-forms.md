@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3360'
+source-wordcount: '3337'
 ht-degree: 1%
 
 ---
@@ -298,10 +298,10 @@ Tijdens het genereren van een recorddocument kunt u de brandinggegevens voor het
 Als u de brandinggegevens die u opgeeft op het tabblad Document of Record wilt lokaliseren, moet u ervoor zorgen dat de landinstelling van de browser correct is ingesteld. Voer de volgende stappen uit als u de brandinggegevens van een recorddocument wilt aanpassen:
 
 1. Selecteer een deelvenster (hoofddeelvenster) in het document met records en tik vervolgens op ![vormen](assets/configure.png).
-1. Tikken ![dortab](assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
+1. Tikken ![dortab](/help/forms/using/assets/dortab.png). Het tabblad Document of Record wordt weergegeven.
 1. Selecteer de standaardsjabloon of een aangepaste sjabloon voor het weergeven van het document met records. Als u de standaardsjabloon selecteert, wordt een miniatuurvoorvertoning van het recorddocument weergegeven onder de vervolgkeuzelijst Sjabloon.
 
-   ![brandingsjabloon](assets/brandingtemplate.png)
+   ![brandingsjabloon](/help/forms/using/assets/brandingtemplate.png)
 
    Als u een aangepaste sjabloon wilt selecteren, bladert u door een selectie van een XDP op uw AEM Forms-server. Als u een sjabloon wilt gebruiken die nog niet op uw AEM Forms-server staat, moet u de XDP eerst uploaden naar uw AEM Forms-server.
 
@@ -396,7 +396,7 @@ Voor informatie over het toepassen van pagina-einden en het toepassen van meerde
 **Instellingen voor formulierniveau**
 
 * **Inclusief niet-gebonden velden in DoR:** Als u de eigenschap instelt, worden niet-gebonden velden van het op schema gebaseerde adaptieve formulier in het document of record opgenomen. Standaard is dit waar.
-* **Velden uitsluiten van DoR indien verborgen:** Als u de eigenschap instelt, wordt de werking van de veldeigenschap &#39;Uitsluiten van document van record&#39; genegeerd als deze niet true is. Als velden verborgen zijn op het moment dat het formulier wordt verzonden, worden ze uitgesloten van het document met record als de eigenschap is ingesteld op true, mits de eigenschap &#39;Uitsluiten van document van record&#39; niet is ingesteld.
+* **Velden uitsluiten van DoR indien verborgen:** De eigenschap instellen om de verborgen velden uit te sluiten [!UICONTROL Document of Record] bij het indienen van het formulier. Wanneer u [Revalidate op server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), worden de verborgen velden opnieuw berekend voordat deze worden uitgesloten van de [!UICONTROL Document of Record].
 
 ## Een pagina-einde toepassen in een document van record {#apply-page-breaks-in-dor}
 
@@ -404,13 +404,12 @@ U kunt pagina-einden in een Document van Verslag toepassen gebruikend veelvoudig
 
 Een pagina-einde toepassen op een document met records:
 
-1. Tik op het deelvenster en selecteer ![Configureren](assets/configure-icon.svg).
-
+1. Tik op het deelvenster en selecteer ![Configureren](/help/forms/using/assets/configure.png)
 1. Uitbreiden **[!UICONTROL Document of Record]** om de eigenschappen weer te geven.
 
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](assets/folder-icon.svg) in de **[!UICONTROL Place]** veld.
+1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
 1. Tikken **[!UICONTROL Top of Next page]** en tikken **[!UICONTROL Select]**. U kunt ook tikken **[!UICONTROL Top of Page]** selecteert u de master pagina en tikt u op **[!UICONTROL Select]** om het pagina-einde toe te passen.
-1. Tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Tikken ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
 
 Het geselecteerde deelvenster gaat naar de volgende pagina.
 
@@ -424,13 +423,13 @@ Hieronder ziet u hoe u meerdere master pagina&#39;s kunt toepassen op een docume
 
 Voer de volgende stappen uit om de tweede master pagina-eigenschappen toe te passen op een deelvenster en de derde master pagina-eigenschappen op de volgende deelvensters:
 
-1. Tik op het deelvenster om de tweede master pagina toe te passen en selecteer ![Configureren](assets/configure-icon.svg).
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](assets/folder-icon.svg) in de **[!UICONTROL Place]** veld.
+1. Tik op het deelvenster om de tweede master pagina toe te passen en selecteer ![Configureren](assets/cmppr.png).
+1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL Place]** veld.
 1. Tikken **[!UICONTROL On page]**, selecteert u de tweede master pagina en tikt u op **[!UICONTROL Select]**.
 AEM Forms past de tweede master pagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
-1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](assets/folder-icon.svg) in de **[!UICONTROL After]** veld.
+1. In de **[!UICONTROL Pagination]** sectie, tikken ![Map](/help/forms/using/assets/folder-icon.png) in de **[!UICONTROL After]** veld.
 1. Tikken **[!UICONTROL Go To page]**, selecteert u de derde master pagina en tikt u op **[!UICONTROL Select]**.
-1. Tikken ![Opslaan](assets/save_icon.svg) om de eigenschappen op te slaan.
+1. Tikken ![Opslaan](/help/forms/using/assets/save_icon.png) om de eigenschappen op te slaan.
 AEM Forms past de derde master pagina toe op het deelvenster en alle volgende deelvensters in het adaptieve formulier.
 
 

@@ -1,22 +1,21 @@
 ---
 title: Het CSRF-beschermingskader
-seo-title: Het CSRF-beschermingskader
+seo-title: The CSRF Protection Framework
 description: Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de klant legitiem is
-seo-description: Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de klant legitiem is
+seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
-translation-type: tm+mt
-source-git-commit: c83c77c5c313099944dd73c8cbe63d429d84a518
+exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
+source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
-
 
 # Het CSRF-beschermingskader{#the-csrf-protection-framework}
 
@@ -32,18 +31,18 @@ Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de k
 
 ### Afhankelijkheden {#dependencies}
 
-Om het even welke component die op `granite.jquery` gebiedsdeel baseert zal automatisch van het Kader van de Bescherming CSRF profiteren. Als dit niet het geval voor om het even welk van uw componenten is, moet u een gebiedsdeel aan `granite.csrf.standalone` verklaren alvorens u het kader kunt gebruiken.
+Elke component die afhankelijk is van de component `granite.jquery` de afhankelijkheid zal automatisch profiteren van het CSRF-beschermingskader. Als dit niet het geval voor om het even welk van uw componenten is, moet u een gebiedsdeel verklaren aan `granite.csrf.standalone` voordat u het framework kunt gebruiken.
 
-### De crypto-sleutel {#replicating-crypto-keys} repliceren
+### De crypto-sleutel repliceren {#replicating-crypto-keys}
 
-Om van de tokens gebruik te maken, moet u `/etc/keys/hmac` binair aan alle instanties in uw plaatsing herhalen. Een handige manier om de HMAC-sleutel naar alle instanties te kopiëren, is door een pakket met de sleutel te maken en deze via Package Manager op alle instanties te installeren.
-
->[!NOTE]
->
->Zorg ervoor u ook de noodzakelijke [veranderingen van de de configuratieveranderingen van de Verzender ](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) aanbrengt om het Kader van de Bescherming te gebruiken CSRF.
+Om van de tokens gebruik te maken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [Replicatie van de HMAC-sleutel](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer informatie .
 
 >[!NOTE]
 >
->Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast;**&quot;aan manifest toevoegt om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Raadpleeg deze [link](https://www.w3.org/TR/offline-webapps/) voor meer informatie.
+>Zorg ervoor dat u ook de vereiste [Wijzigingen in de configuratie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) om gebruik te maken van het CSRF-beschermingskader.
+
+>[!NOTE]
 >
->Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie [de pagina van OWASP van het Verzoek van de Vervalsmachine van de Depositovergangen](https://owasp.org/www-community/attacks/csrf).
+>Als u het manifestgeheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;asteren;**&quot; aan manifest om ervoor te zorgen neemt het teken niet de CSRF symbolische generatievraag offline. Raadpleeg deze voor meer informatie [link](https://www.w3.org/TR/offline-webapps/).
+>
+>Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie [OWASP-pagina voor XSS-aanvragen voor andere sites](https://owasp.org/www-community/attacks/csrf).

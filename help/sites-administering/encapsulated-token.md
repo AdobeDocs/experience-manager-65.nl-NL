@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Dit is van bijzonder belang voor horizontale schaalbaarheid. In een opstelling v
 
 Neem het volgende scenario als voorbeeld:
 
-Een gebruiker kan bij publicatie-instantie één worden geverifieerd, maar als een volgende aanvraag naar publicatie-instantie twee gaat, heeft die instantie niet de status persisted authentication, omdat die status in de opslagplaats van publicatie één werd aangehouden en twee een eigen opslagplaats heeft.
+Een gebruiker kan bij publicatieinstantie één voor authentiek worden verklaard, maar als een verder verzoek instantie twee gaat publiceren, heeft die instantie niet die persisted authentificatiestatus, omdat die staat in de bewaarplaats van publiceert werd voortgeduurd en twee zijn eigen bewaarplaats publiceert.
 
 De oplossing voor dit is kleverige verbindingen op het niveau van het taakverdelingsmechanisme te vormen. Met kleverige verbindingen zou een gebruiker altijd naar hetzelfde publicatie-exemplaar worden geleid. Als gevolg hiervan is een werkelijk optimale taakverdeling niet mogelijk.
 
@@ -58,7 +58,7 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >* Vaste sessies zijn ingeschakeld, of
 >
->* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet zullen worden gesteund in situaties waar de managers **create** gebruikers tijdens het synchronisatieproces.
+>* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **maken** gebruikers tijdens het synchronisatieproces.
 
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
@@ -68,18 +68,14 @@ Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encaps
 
 ### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
 
-De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. U kunt het afzonderlijk downloaden door de **mening** verbinding naast het te drukken:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
 1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
-1. Zoek de `com.adobe.granite.crypto.file`-bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
+1. Zoek de `com.adobe.granite.crypto.file` in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
-   * &lt;author-aem-install-dir>/crx-quickstart/launch/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
-   In het `bundle.info`-bestand in elke map wordt de bundelnaam weergegeven.
+   De `bundle.info` in elke map wordt de bundelnaam weergegeven.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
@@ -91,7 +87,7 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Plak de twee bestanden die u eerder hebt gekopieerd.
-1. [Vernieuw de Crypto-](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) bundel als de doelinstantie al wordt uitgevoerd.
+1. [De Cryptobundel vernieuwen](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie al actief is.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
 
@@ -100,5 +96,5 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van het Web toelaten:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
-1. Zoek een ingang genoemd **Adobe granite Token de Handler van de Authentificatie** en klik het.
-1. Schakel in het volgende venster het vakje **Ingekapselde tokenondersteuning inschakelen** in en druk op **Save**.
+1. Zoek een vermelding die **Adobe Granite Token Authentication Handler** en klik erop.
+1. Tik in het volgende venster op de knop **Ondersteuning voor ingekapselde token inschakelen** doos en druk op **Opslaan**.

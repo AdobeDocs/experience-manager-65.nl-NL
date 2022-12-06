@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1784'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,19 @@ Bijvoorbeeld:
 De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts. de [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### De generatie van de HTML-uitvoering configureren {#configuring-html-rendition-generation}
+
+De uitvoering van de HTML wordt gegenereerd met behulp van de Sling Rewriter Pipelines. De pijpleiding wordt bepaald bij `/libs/experience-fragments/config/rewriter/experiencefragments`. De transformator van de HTML steunt de volgende opties:
+
+* `allowedCssClasses`
+   * Een RegEx-expressie die overeenkomt met de CSS-klassen die in de uiteindelijke uitvoering moeten blijven staan.
+   * Dit is handig als de klant bepaalde CSS-klassen wil verwijderen
+* `allowedTags`
+   * Een lijst met HTML-tags die moeten worden toegestaan in de uiteindelijke uitvoering.
+   * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link and script
+
+Het wordt geadviseerd om rewriter te vormen gebruikend een bekleding. Zie [Bedekkingen in AEM as a Cloud Service](/help/sites-developing/overlays.md)
 
 ## Sociale variaties {#social-variations}
 

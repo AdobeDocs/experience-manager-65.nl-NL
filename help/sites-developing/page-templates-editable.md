@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
+source-wordcount: '3252'
 ht-degree: 0%
 
 ---
@@ -435,7 +435,7 @@ Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, 
 1. Een sjabloon maken zoals elke bewerkbare sjabloon [zoals hier beschreven](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
 1. Kopieer de nieuwe sjabloon met CRXDE Lite van de `templates` aan de `template-types` knooppunt onder [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
 1. De sjabloon verwijderen uit het dialoogvenster `templates` knooppunt onder [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
-1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` `jcr:content` eigenschappen.
+1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` eigenschappen van alle `jcr:content` knooppunten.
 
 U kunt uw eigen malplaatjetype ook ontwikkelen gebruikend een voorbeeld editable malplaatje als basis, beschikbaar op GitHub.
 

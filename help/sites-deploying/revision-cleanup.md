@@ -1,8 +1,8 @@
 ---
 title: Revisie opschonen
 seo-title: Revision Cleanup
-description: Leer hoe u de Revision Cleanup-functionaliteit in AEM 6.3 kunt gebruiken.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Leer hoe u de Revision Cleanup-functionaliteit in AEM 6.5 kunt gebruiken.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
+source-wordcount: '5918'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Bij elke update van de opslagplaats wordt een nieuwe inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van opslagplaatsen te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het is sinds AEM 6.0 als offline routine beschikbaar.
 
-Met AEM 6.3 is een online versie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
+Met AEM 6.3 en hoger werd een onlineversie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
 
 **Opmerking**: [Bekijk de video](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) voor een inleiding en hoe te om Online Correctie van de Revisie te gebruiken.
 
@@ -162,7 +162,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
   </tr>
   <tr>
    <td><strong>Wordt de vorige opmaak van de Tar nog steeds ondersteund?</strong></td>
-   <td>Alleen de nieuwe kleurensegmentstrip wordt ondersteund met AEM 6.3.</td>
+   <td>Alleen de nieuwe kleurensegmentstrip wordt ondersteund met AEM 6.3 of hoger.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Kan ik upgraden naar 6.3 en de migratie later uitvoeren (bijvoorbeeld met een ander onderhoudsvenster)?</strong></td>
+   <td><strong>Kan ik upgraden naar 6.3 of hoger en de migratie later uitvoeren (bijvoorbeeld met een ander onderhoudsvenster)?</strong></td>
    <td>Nee, zoals hierboven is uiteengezet, is migratie van inhoud verplicht.</td>
    <td> </td>
   </tr>
@@ -410,7 +410,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Hoe te om te controleren hoeveel ruimte werd teruggewonnen nadat de Online Opruiming van de Revisie heeft voltooid?</strong></td>
+   <td><strong>Hoe te om te controleren hoeveel ruimte werd teruggewonnen nadat de Online Opschoning van de Revisie heeft voltooid?</strong></td>
    <td>Er staat een bericht in het logbestand aan het einde van de opschooncyclus: "<code>TarMK GC #3: cleanup completed</code>" die de grootte van de opslagplaats en de hoeveelheid geregenereerd afval omvat.</td>
    <td> </td>
   </tr>

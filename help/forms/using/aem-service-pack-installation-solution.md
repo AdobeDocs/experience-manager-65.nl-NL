@@ -1,7 +1,7 @@
 ---
 title: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
 description: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 1%
@@ -31,9 +31,9 @@ Na installatie [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloa
 1. Zoek de `bundle.info` bestand.
 1. Open de `bundle.info` bestand in een teksteditor en zoek naar de bundelnaam als `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->Als de `bundle.info` krachtens `bundle52` bevat niet de `org.apache.felix.http.bridge` bundel, controleer het bundelaantal in vierkant haakje naast `org.apache.felix.http.bridge`. Navigeer vervolgens naar [basis van em-formulieren]\crx-repository\launchpad\felix\bundle[x] en voer de volgende stappen uit op deze locatie.
+   >[!NOTE]
+   >
+   >Als de `bundle.info` krachtens `bundle52` bevat niet de `org.apache.felix.http.bridge` bundel, controleer het bundelaantal in vierkant haakje naast `org.apache.felix.http.bridge`. Navigeer vervolgens naar [basis van em-formulieren]\crx-repository\launchpad\felix\bundle[x] en voer de volgende stappen uit op deze locatie.
 
 1. Ga naar URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Zoeken naar `bundle.jar` en wijzigt u de naam van de `bundle.jar` tot `bundle.jar.bak`.

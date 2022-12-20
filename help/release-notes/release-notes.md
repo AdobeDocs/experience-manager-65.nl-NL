@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
+source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
 workflow-type: tm+mt
-source-wordcount: '3952'
+source-wordcount: '3909'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ ht-degree: 0%
 ### Belangrijkste kenmerken {#keyfeatures}
 
 * AEM Forms Designer is nu beschikbaar in [Landinstelling Spaans](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
-* U kunt nu [OAuth2 om met de protocollen van de de postserver van Microsoft Office 365 (SMTP en IMAP) voor authentiek te verklaren](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* U kunt nu [OAuth2 voor verificatie met Microsoft® Office 365-mailserverprotocollen (SMTP en IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
 * U kunt instellen [Revalidate op server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) eigenschap in op true om de verborgen velden te identificeren voor uitsluiting van een document of record op de server. (NPR-38149)
 * AEM Forms Designer vereist een 32-bits versie van Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 * Wanneer een XDP wordt weergegeven als een HTML5-formulier, wordt de inhoud van de master pagina eerst gerenderd, ongeacht de plaatsing van de objecten in een adaptief formulier. (CQ-4345218)
 * De configuratie van de toepassing bij de bestemmingsserver verandert in de montages die bij de bronserver worden bepaald alhoewel **Configuratie overschrijven wanneer het importeren is voltooid** Deze optie is niet ingeschakeld op het moment dat de toepassing wordt geïmporteerd. (NPR-39044)
 * Wanneer een gebruiker probeert om schakelaarconfiguratie bij te werken gebruikend de Manager van de Configuratie, ontbreekt het.(CQ-4347077)
-* Wanneer de gebruiker een AEM Forms op JEE flard na het veranderen van het standaardwachtwoord van de beheerdergebruiker probeert in werking te stellen, een uitzondering `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` voorkomt. (CQ-4348277)
+* Wanneer de gebruiker een AEM Formulier op het flard JEE na het veranderen van het standaardwachtwoord van de beheerdergebruiker probeert in werking te stellen, een uitzondering `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` voorkomt. (CQ-4348277)
 * In AEM Designer worden formuliervelden zonder bijschriften in tabelcellen geplaatst, inclusief selectievakjes.(LC-3920410)
 * Wanneer de gebruiker de Help probeert te openen in AEM Forms Designer, wordt deze niet correct weergegeven. (CQ-434/1996)
 
@@ -221,15 +221,6 @@ ht-degree: 0%
 
 ### Installeer het de dienstpak op [!DNL Experience Manager] 6,5 {#install-service-pack}
 
->[!NOTE]
->
-> Voordat u de nieuwste [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)Voer de volgende stappen uit:
-> 1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet-fragment.
-> 1. Wacht tot de toepassingsserver is gestabiliseerd.
-> 1. Installeren [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
-
-
-
 1. Start de instantie opnieuw vóór de installatie als de updatemodus voor de instantie is geactiveerd (wanneer de instantie is bijgewerkt vanaf een eerdere versie). Adobe raadt aan de toepassing opnieuw te starten als de huidige uptime voor een instantie hoog is.
 
 1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van uw [!DNL Experience Manager] -instantie.
@@ -269,7 +260,7 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 >[!NOTE]
 >
->Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), de CRX/bundle en de startpagina tonen niet-beschikbare fouten in de service, [klik hier](/help/forms/using/aem-service-pack-installation-solution.md).
+>Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), de CRX/bundle en de startpagina tonen niet-beschikbare fouten in de service, [klik hier](/help/forms/using/aem-service-pack-installation-solution.md) om de het oplossen van problemenstappen te kennen.
 
 
 ### Installeren [!DNL Experience Manager] Forms-invoegtoepassing {#install-aem-forms-add-on-package}
@@ -293,11 +284,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >
 >Sla dit over als u AEM Forms niet gebruikt op JEE. Oplossingen in [!DNL Experience Manager] Forms op JEE wordt via een afzonderlijk installatieprogramma geleverd.
 
-Voor informatie over het installeren van het cumulatieve installatieprogramma voor [!DNL Experience Manager] Forms op JEE en configuratie na implementatie, zie [releaseopmerkingen](jee-patch-installer-65.md).
+Voer de volgende stappen uit voor alle AEM Forms in JEE-omgevingen met andere toepassingsservers dan JBoss EAP 7.4.0.
 
->[!NOTE]
->
->Na installatie van het cumulatieve installatieprogramma voor [!DNL Experience Manager] Forms op JEE, installeer het nieuwste Service Pack. Nadat Service Pack met succes is geïnstalleerd, installeert u het nieuwste Forms add-on pakket en verwijdert u het Forms add-on pakket uit het `crx-repository\install` en start de server opnieuw op.
+1. Het cumulatieve installatieprogramma installeren voor [!DNL Experience Manager] Forms op JEE en configuratie na implementatie, zie [releaseopmerkingen](jee-patch-installer-65.md).
+
+1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet-fragment en wacht tot de toepassingsserver is gestabiliseerd.
+1. Installeren [AEM 6.5.15.0 servicepack](#install-service-pack).
+1. Installeer de [nieuwste Forms add-on-pakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), verwijdert u het invoegpakket voor Forms uit het dialoogvenster `crx-repository\install` en start de server opnieuw op.
 
 ### UberJar {#uber-jar}
 

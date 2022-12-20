@@ -2,9 +2,10 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
+source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
 workflow-type: tm+mt
-source-wordcount: '3821'
+source-wordcount: '3952'
 ht-degree: 0%
 
 ---
@@ -15,9 +16,9 @@ ht-degree: 0%
 
 ## Gegevens vrijgeven {#release-information}
 
-| Product | [!DNL Adobe Experience Manager] 6,5 |
+| Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versie | 6.5.15.0. <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versie | 6.5.15.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
 | Date | 24 november 2022 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
@@ -165,7 +166,7 @@ ht-degree: 0%
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* GraphQL maakt een uitzondering. U kunt bijvoorbeeld geen variatietags ophalen uit een inhoudsfragment. Er is geen variatie met de naam &#39;elektrisch&#39;. Dit probleem is te wijten aan het aanroepen van `getVariationTags` voor een niet-bestaande wijziging die een uitzondering doet ontstaan. (SITES-8898)
+* GraphQL heft een uitzondering op. U kunt bijvoorbeeld geen variatietags ophalen uit een inhoudsfragment. Er is geen variatie met de naam &#39;elektrisch&#39;. Dit probleem is te wijten aan het aanroepen van `getVariationTags` voor een niet-bestaande wijziging die een uitzondering doet ontstaan. (SITES-8898)
 * Bezig met het sorteren van titelorders in de lijstweergave, zowel oplopend als aflopend, van de titels met de volgorde A, C, B. (SITES-7585)
 * Ondersteuning voor extra tags voor variaties van inhoudsfragmenten. (SITES-8168)
 * Identificeerde en verwijderde Odin-specifieke code uit Experience Manager 6.5 die onnodig was. (SITES-3574)
@@ -220,6 +221,15 @@ ht-degree: 0%
 
 ### Installeer het de dienstpak op [!DNL Experience Manager] 6,5 {#install-service-pack}
 
+>[!NOTE]
+>
+> Voordat u de nieuwste [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)Voer de volgende stappen uit:
+> 1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet-fragment.
+> 1. Wacht tot de toepassingsserver is gestabiliseerd.
+> 1. Installeren [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
+
+
+
 1. Start de instantie opnieuw vóór de installatie als de updatemodus voor de instantie is geactiveerd (wanneer de instantie is bijgewerkt vanaf een eerdere versie). Adobe raadt aan de toepassing opnieuw te starten als de huidige uptime voor een instantie hoog is.
 
 1. Maak voordat u gaat installeren een momentopname of een nieuwe back-up van uw [!DNL Experience Manager] -instantie.
@@ -257,6 +267,11 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.13 of hoger (webconsole gebruiken: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
+>[!NOTE]
+>
+>Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), de CRX/bundle en de startpagina tonen niet-beschikbare fouten in de service, [klik hier](/help/forms/using/aem-service-pack-installation-solution.md).
+
+
 ### Installeren [!DNL Experience Manager] Forms-invoegtoepassing {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -282,7 +297,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 >[!NOTE]
 >
->Na installatie van het cumulatieve installatieprogramma voor [!DNL Experience Manager] Forms on JEE, installeer het nieuwste Forms add-on pakket, verwijder het Forms add-on pakket uit het `crx-repository\install` en start de server opnieuw op.
+>Na installatie van het cumulatieve installatieprogramma voor [!DNL Experience Manager] Forms op JEE, installeer het nieuwste Service Pack. Nadat Service Pack met succes is geïnstalleerd, installeert u het nieuwste Forms add-on pakket en verwijdert u het Forms add-on pakket uit het `crx-repository\install` en start de server opnieuw op.
 
 ### UberJar {#uber-jar}
 

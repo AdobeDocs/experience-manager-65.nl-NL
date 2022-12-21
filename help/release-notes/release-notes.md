@@ -3,7 +3,7 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
+source-git-commit: 5d04a479001c5ea6423599969b39a4697a2da590
 workflow-type: tm+mt
 source-wordcount: '3937'
 ht-degree: 0%
@@ -287,7 +287,7 @@ Voer de volgende stappen uit voor alle AEM Forms in JEE-omgevingen met andere to
 
 1. Het cumulatieve installatieprogramma installeren voor [!DNL Experience Manager] Forms op JEE en configuratie na implementatie, zie [releaseopmerkingen](jee-patch-installer-65.md).
 
-1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) serverfragment en wacht tot de toepassingsserver zich heeft gestabiliseerd. —>
+1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) serverfragment en wacht tot de toepassingsserver zich heeft gestabiliseerd.
 1. Installeren [AEM 6.5.15.0 servicepack](#install-service-pack).
 1. Installeer de [nieuwste Forms add-on-pakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), verwijdert u het invoegpakket voor Forms uit het dialoogvenster `crx-repository\install` en start de server opnieuw op.
 

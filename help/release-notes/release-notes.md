@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
+source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '3937'
 ht-degree: 0%
 
 ---
@@ -260,8 +260,7 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 >[!NOTE]
 >
->Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), de CRX/bundle en de startpagina tonen niet-beschikbare fouten in de service, [klik hier](/help/forms/using/aem-service-pack-installation-solution.md) om de het oplossen van problemenstappen te kennen.
-
+>Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), voorafgaand aan de fragmentserver `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` voor de AEM Forms on JEE-omgeving tonen de CRX/bundle en de startpagina niet-beschikbare fouten in de service. [klik hier](/help/forms/using/aem-service-pack-installation-solution.md) om de het oplossen van problemenstappen te kennen.
 
 ### Installeren [!DNL Experience Manager] Forms-invoegtoepassing {#install-aem-forms-add-on-package}
 
@@ -273,7 +272,7 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 -->
 
-1. Controleer of u de [!DNL Experience Manager] Service Pack.
+1. Controleer of u de [!DNL Experience Manager] service pack.
 1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
 1. Het Forms-invoegtoepassingspakket installeren zoals beschreven in [AEM Forms-add-onpakketten installeren](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 1. Als u letters gebruikt in Experience Manager 6.5 Forms, installeert u de [nieuwste AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
@@ -288,7 +287,7 @@ Voer de volgende stappen uit voor alle AEM Forms in JEE-omgevingen met andere to
 
 1. Het cumulatieve installatieprogramma installeren voor [!DNL Experience Manager] Forms op JEE en configuratie na implementatie, zie [releaseopmerkingen](jee-patch-installer-65.md).
 
-1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet-fragment en wacht tot de toepassingsserver is gestabiliseerd.
+1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) serverfragment en wacht tot de toepassingsserver zich heeft gestabiliseerd. —>
 1. Installeren [AEM 6.5.15.0 servicepack](#install-service-pack).
 1. Installeer de [nieuwste Forms add-on-pakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), verwijdert u het invoegpakket voor Forms uit het dialoogvenster `crx-repository\install` en start de server opnieuw op.
 

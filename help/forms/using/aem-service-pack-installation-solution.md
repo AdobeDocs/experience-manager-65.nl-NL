@@ -1,9 +1,9 @@
 ---
 title: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
 description: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
-source-git-commit: 813d8ffc53dc1928674367c9568b6269642cecb7
+source-git-commit: 3c04322ef2801246044f9b316962d4d37b972213
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Na installatie [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloa
 1. Zoeken naar `bundle.jar` en wijzigt u de naam van de `bundle.jar` tot `bundle.jar.bak`.
 1. Kopiëren `bundle.jar` op deze locatie vanuit de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Start de toepassingsserver, wacht tot de logbestanden zijn gestabiliseerd en controleer de toestand van de bundel.
-1. Wanneer alle bundels in de geactiveerde staat zijn, installeert u de `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` servlet-fragment uit de `system/console/bundles` gedownload van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) en wacht tot de toepassingsserver is gestabiliseerd.
+1. Wanneer alle bundels zich in de actieve staat bevinden, installeert u de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet-fragment uit de `system/console/bundles` en wacht tot de toepassingsserver is gestabiliseerd.
 1. Stop de toepassingsserver.
 1. Navigeren naar `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` en de `bundle.jar`.
 1. De naam van de `bundle.jar.bak` aan de `bundle.jar`.

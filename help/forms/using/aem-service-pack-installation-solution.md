@@ -1,9 +1,9 @@
 ---
 title: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
 description: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
-source-git-commit: cae425c7dbf315d0fb51ebc745b047d894328d5b
+source-git-commit: 974796a6b9e921f8c2f40d72a4764eb9f4d8b92b
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '348'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Na installatie [AEM 6.5.15.0 servicepack](https://experience.adobe.com/#/downloa
 
 1. Ga naar URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Zoeken naar `bundle.jar` en wijzigt u de naam van de `bundle.jar` tot `bundle.jar.bak`.
-1. Kopiëren `Bundle for AEM 6.5 Forms on JEE Service Pack 15` op deze locatie vanuit de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. Kopieer de `Bundle for AEM 6.5 Forms on JEE Service Pack 15` op deze locatie vanuit de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Start de toepassingsserver, wacht tot de logbestanden zijn gestabiliseerd en controleer de toestand van de bundel.
 1. Wanneer alle bundels zich in de actieve staat bevinden, installeert u de [Fragment voor AEM 6.5 Forms op JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) van de `system/console/bundles` en wacht tot de toepassingsserver is gestabiliseerd.
 1. Stop de toepassingsserver.

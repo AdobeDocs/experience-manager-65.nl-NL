@@ -12,7 +12,7 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 58c89e0b96da0f36d233cb8c14e259cc595ddda7
+source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 0%
@@ -409,18 +409,18 @@ Meer specifiek, moet u:
 1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
 1. Zoek de bundel com.adobe.granite.crypto.file in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    De `bundle.info` in elke map wordt de bundelnaam weergegeven.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Kopieer de HMAC- en master bestanden.
 1. Dan, ga naar de doelinstantie u de sleutel HMAC aan wilt dupliceren, en aan de gegevensomslag navigeren. Bijvoorbeeld:
 
-   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Plak de twee bestanden die u eerder hebt gekopieerd.
 1. [De Cryptobundel vernieuwen](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie al actief is.

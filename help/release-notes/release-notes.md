@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 3e0380e85c300305cbb97e4d0a0918a60542610b
+source-git-commit: b383f9c55e1066666254f9fa788fd19fe23a4d41
 workflow-type: tm+mt
-source-wordcount: '3933'
+source-wordcount: '3937'
 ht-degree: 0%
 
 ---
@@ -283,12 +283,12 @@ Voer de volgende stappen uit voor alle AEM Forms in JEE-omgevingen met andere to
 
 1. Het cumulatieve installatieprogramma installeren voor [!DNL Experience Manager] Forms op JEE en configuratie na implementatie, zie [releaseopmerkingen](jee-patch-installer-65.md).
 
-1. Installeer de [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) serverfragment en wacht tot de toepassingsserver zich heeft gestabiliseerd.
+1. Installeer de [Fragment voor AEM 6.5 Forms op JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) serverfragment en wacht tot de toepassingsserver zich heeft gestabiliseerd.
 1. Installeren [AEM 6.5.15.0 servicepack](#install-service-pack).
 
    >[!NOTE]
    >
-   >Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), voorafgaand aan de fragmentserver `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` in JEE-omgeving tonen de CRX/bundle en de startpagina niet-beschikbare servicefouten; [klik hier](/help/forms/using/aem-service-pack-installation-solution.md) om de het oplossen van problemenstappen te kennen.
+   >Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)vóór de `Fragment for AEM 6.5 Forms on JEE Service Pack 15` in JEE-omgeving tonen de CRX/bundle en de startpagina niet-beschikbare servicefouten; [klik hier](/help/forms/using/aem-service-pack-installation-solution.md) om de het oplossen van problemenstappen te kennen.
 
 1. Installeer de [nieuwste Forms add-on-pakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), verwijdert u het invoegpakket voor Forms uit het dialoogvenster `crx-repository\install` en start de server opnieuw op.
 

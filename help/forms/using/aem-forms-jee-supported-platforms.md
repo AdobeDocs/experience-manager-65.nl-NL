@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3683'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -419,11 +419,11 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
   </tr>
   <tr>
    <td>EMC Documentum</td>
-   <td>7,3</td>
+   <td>7.3</td>
   </tr>
   <tr>
    <td>IBM Filenet</td>
-   <td>5.5.2.</td>
+   <td>5.5.2</td>
   </tr>
   <tr>
    <td>IBM Content Manager Server (afgekeurd) </td>
@@ -431,7 +431,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
   </tr>
   <tr>
    <td> IBM Content Manager-client (afgekeurd)</td>
-   <td>8,5 </td>
+   <td>8.5 </td>
   </tr>
   <tr>
    <td>Microsoft Sharepoint </td>
@@ -482,10 +482,6 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (afgekeurd)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -530,6 +526,9 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 >- Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
+>- PDF Generator kan bestanden niet converteren met Microsoft Visio 2019. U kunt Microsoft Visio 2016 blijven gebruiken om VSD- en VSDX-bestanden om te zetten.
+>- PDF Generator kan bestanden niet converteren met Microsoft Project 2019. U kunt Microsoft Project 2016 blijven gebruiken om .MPP-bestanden om te zetten.
+>
 
 
 ### Uitzonderingen op toegankelijkheidsondersteuning {#exceptions-to-accessibility-support}

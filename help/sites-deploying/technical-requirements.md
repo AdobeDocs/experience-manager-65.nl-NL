@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
+source-wordcount: '3488'
 ht-degree: 0%
 
 ---
@@ -451,10 +451,6 @@ Voor Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (afgekeurd)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -465,10 +461,6 @@ Voor Windows x86:
   <tr>
    <td>Microsoft® Publisher 2016 (afgekeurd)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Microsoft® Project 2016 (afgekeurd)<br /> </td>
@@ -499,6 +491,8 @@ Voor Windows x86:
 >* De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
 >* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
+>* PDF Generator kan bestanden niet converteren met Microsoft Visio 2019. U kunt Microsoft Visio 2016 blijven gebruiken om VSD- en VSDX-bestanden om te zetten.
+>* PDF Generator kan bestanden niet converteren met Microsoft Project 2019. U kunt Microsoft Project 2016 blijven gebruiken om VSD- en VSDX-bestanden om te zetten.
 >
 
 

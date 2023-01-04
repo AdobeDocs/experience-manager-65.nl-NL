@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4009'
 ht-degree: 0%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 0%
 * Wanneer de gebruiker een AEM Formulier op het flard JEE na het veranderen van het standaardwachtwoord van de beheerdergebruiker probeert in werking te stellen, een uitzondering `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` voorkomt. (CQ-4348277)
 * In AEM Designer worden formuliervelden zonder bijschriften in tabelcellen geplaatst, inclusief selectievakjes.(LC-3920410)
 * Wanneer de gebruiker de Help probeert te openen in AEM Forms Designer, wordt deze niet correct weergegeven. (CQ-434/1996)
+* Adaptieve Forms met meerdere landinstellingen worden langzaam geladen. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 

@@ -2,9 +2,9 @@
 title: Verlopen van Reader Extensions-certificaten en de gevolgen ervan
 description: Verlopen van Reader Extensions-certificaten en de gevolgen ervan
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
+source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,9 @@ ht-degree: 0%
 
 Adobe Experience Manager Forms (AEM Forms)-klanten met Adobe Managed Services of On-premise Enterprise Base-licenties hebben het recht om de Acrobat Reader DC Extensions-service te gebruiken. Met deze service kan een organisatie eenvoudig interactieve PDF-documenten delen door de functionaliteit van Acrobat Reader uit te breiden met extra gebruiksrechten. De service voegt gebruiksrechten toe aan een PDF-document en activeert functies die niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Acrobat Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken. PDF-documenten waaraan gebruiksrechten zijn toegevoegd, worden documenten waarvoor rechten zijn ingeschakeld genoemd. Een gebruiker die een voor rechten geschikt PDF-document in Acrobat Reader opent, kan de bewerkingen uitvoeren die voor dat document zijn ingeschakeld.
 
-Adobe maakt gebruik van een PKI (Public Key Infrastructure) om digitale certificaten uit te geven voor gebruik in licenties en functionaliteit. Adobe heeft certificaten uitgegeven onder de certificeringsinstantie &quot;Adobe Root CA&quot;, die op 7 januari 2023 afloopt. Er zijn nu een nieuwe certificeringsinstantie, &quot;Adobe Root CA G2&quot;, en certificaten die zijn gebaseerd op de nieuwe certificeringsinstantie beschikbaar.
+Adobe maakt gebruik van een PKI (Public Key Infrastructure) om digitale certificaten uit te geven voor gebruik in licenties en functionaliteit. Adobe heeft certificaten afgegeven onder de certificeringsinstantie **Adobe Root CA**, die op 7 januari 2023 afloopt. Het verstrijken van het certificaat heeft geen gevolgen voor PDF-documenten die zijn uitgebreid met productiecertificaten die zijn afgegeven op basis van de **Adobe Root CA** gebaseerde certificaten (oude certificaten). Alle documenten van de PDF, Reader die met de oude certificaten vóór 7 Januari 2023, met inbegrip van die werden uitgebreid die door uw klanten worden gedownload, zou met alle gebruiksrechten blijven werken die op hen worden toegepast, en vereist geen updates.
 
-Oude certificaten (certificaten op basis van &quot;Adobe Root CA&quot;) werken niet meer na 7 januari 2023. Adobe raadt u aan om de nieuwe certificaten, die gebaseerd zijn op &quot;Adobe Root CA G2&quot;, te gebruiken om uw PDF-documenten te Readers op of vóór 7 januari 2023.  U kunt [nieuwe certificaten verkrijgen van de Adobe Licensing Website](https://licensing.adobe.com/) of Adobe-ondersteuning.
-
-Alle PDF documenten, Reader die vóór 7 januari 2023 met de oudere certificaten is uitgebreid, inclusief de documenten die door uw klanten zijn gedownload, blijven werken met alle gebruiksrechten die op deze documenten zijn toegepast en hoeven niet te worden bijgewerkt.
+een nieuwe certificeringsinstantie, **Adobe Root CA G2** en certificaten die zijn gebaseerd op de nieuwe certificeringsinstantie zijn nu beschikbaar. Begin op of voor 7 januari 2023 met het gebruik van de nieuwe certificaten — die gebaseerd op **Adobe Root CA G2** — om uw nieuwe PDF-documenten uit te breiden met Reader.  U kunt [nieuwe certificaten verkrijgen van de Adobe Licensing Website](https://licensing.adobe.com/) of Adobe-ondersteuning.
 
 ## Veelgestelde vragen
 

@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
+source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
 workflow-type: tm+mt
-source-wordcount: '2746'
-ht-degree: 7%
+source-wordcount: '2916'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,20 @@ De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverho
 
 Voor elke SmartCrop-generatie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het veroorzaakt ook een verhoogde belasting op systemen. Omdat u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap in mappen te gebruiken *alleen* waar dat nodig is.
 
-U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt ook het maken van kleuren- en afbeeldingsstalen automatiseren.
+**Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
+Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
+
+* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
+* Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
+* Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
+* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
+* In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
+
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
+
+>[!IMPORTANT]
+・ Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat ze geschikt en relevant zijn voor uw merk en waarden.
+・ CMYK-afbeeldingsindeling wordt niet ondersteund bij slim uitsnijden.
 
 | Optie | Wanneer gebruiken | Beschrijving |
 | --- | --- | --- |

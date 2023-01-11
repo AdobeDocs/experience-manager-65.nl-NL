@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
+source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3761'
 ht-degree: 16%
 
 ---
@@ -356,6 +356,13 @@ Ga als volgt te werk om algemene fouten op te lossen:
 * Als u geen toegang hebt tot de externe DAM-implementatie vanaf de lokale [!DNL Sites] implementatie, zorgen ervoor dat cookies die naar andere sites verwijzen, zijn toegestaan en [zelfde ondersteuning voor sitecookies](/help/sites-administering/same-site-cookie-support.md) is geconfigureerd. Als cookies die naar andere sites worden verzonden, worden geblokkeerd, worden de implementaties van [!DNL Experience Manager] mag niet worden geverifieerd. Bijvoorbeeld: [!DNL Google Chrome] in de Incognito-modus cookies van derden kunnen blokkeren. Cookies toestaan in [!DNL Chrome] browser, klik het &quot;oogpictogram&quot;in de adresbar, navigeer aan **Site werkt niet** > **Geblokkeerd**, selecteert u de externe DAM-URL en staat u aanmeldings-token cookie toe. Alternatief, zie [hoe cookies van derden kunnen worden ingeschakeld](https://support.google.com/chrome/answer/95647).
 
    ![Cookie-fout in Chrome-browser in Incognito-modus](assets/chrome-cookies-incognito-dialog.png)
+
+* Als u geen toegang hebt tot de externe DAM-implementatie van Adobe Managed Services vanaf de implementatie van Experience Manager Sites as a Cloud Service sites, werkt u de `aem_author.vhost` bestand, beschikbaar op `"/etc/httpd/conf.d/available_vhosts`, voor verre DAM om de volgende kopballen in de configuratie van de Verzender op te nemen:
+
+   ```xml
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
 
 * Als er geen externe referenties worden opgehaald en dit resulteert in een foutbericht, controleert u of [!DNL Sites] de implementatie is beschikbaar en controleert op netwerkconnectiviteitsproblemen. Probeer het later opnieuw om te controleren. [!DNL Assets] implementatiepogingen om tweemaal verbinding te maken met [!DNL Sites] implementatie en rapporteert vervolgens een fout.
 

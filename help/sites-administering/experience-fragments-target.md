@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 88763b318e25efb16f61bc16530082877392c588
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1553'
 ht-degree: 0%
 
 ---
@@ -210,3 +210,85 @@ Om dergelijke situaties te voorkomen:
       * Het aanbod wordt waarschijnlijk nog steeds weergegeven, aangezien de HTML van het ervaringsfragment naar Target is geduwd
       * Eventuele verwijzingen in het ervaringsfragment werken mogelijk niet correct als middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
    * Uiteraard zijn verdere wijzigingen van het ervaringsfragment niet mogelijk omdat het ervaringsfragment niet meer in AEM bestaat.
+
+
+
+## ClientLibs verwijderen uit Experience Fragments geëxporteerd naar Target {#removing-clientlibs-from-fragments-exported-target}
+
+De Fragmenten van de ervaring bevatten volledige HTML- markeringen en alle noodzakelijke Bibliotheken van de Cliënt (CSS/JS) om het fragment precies terug te geven aangezien het door de Inhoudsauteur van het Fragment van de Ervaring werd gecreeerd. Dit is bijontwerp.
+
+Wanneer u een Experience Fragment-aanbieding met Adobe Target gebruikt op een pagina die door AEM wordt geleverd, bevat de doelpagina al alle benodigde clientbibliotheken. Bovendien is de externe html in de Geniet van het Fragment van de Ervaring ook niet nodig (zie [Overwegingen](#considerations)).
+
+Hier volgt een pseudo-voorbeeld van de HTML in een Experience Fragment-aanbieding:
+
+```html
+<!DOCTYPE>
+<html>
+   <head>
+      <title>…</title>
+      <!-- all of the client libraries (css/js) -->
+      …
+   </head>
+   <body>
+        <!--/* Actual XF Offer content would appear here... */-->
+   </body>
+</html>
+```
+
+Op hoog niveau doet AEM een Experience Fragment naar Adobe Target, dit met behulp van verschillende extra Sling Selectors. De URL voor het geëxporteerde ervaringsfragment ziet er bijvoorbeeld als volgt uit (opmerking) `nocloudconfigs.atoffer`):
+
+* http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
+
+De `nocloudconfigs` selector wordt gedefinieerd door het gebruik van HTML en kan worden overschreven door het te kopiëren uit:
+
+* /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
+
+De `atoffer` kiezer is na verwerking daadwerkelijk toegepast met [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Of kan worden gebruikt om de Bibliotheken van de Cliënt te verwijderen.
+
+### Voorbeeld {#example}
+
+In dit verband zullen we laten zien hoe we dit kunnen doen `nocloudconfigs`.
+
+>[!NOTE]
+>
+>Zie [Bewerkbare sjablonen](/help/sites-developing/templates.md#editable-templates) voor nadere bijzonderheden.
+
+#### Bedekkingen {#overlays}
+
+In dit specifieke voorbeeld wordt [bedekkingen](/help/sites-developing/overlays.md) die worden opgenomen, verwijdert de clientbibliotheken *en* de vreemde html. Aangenomen wordt dat u al het Sjabloontype voor fragmenten uit ervaring hebt gemaakt. De benodigde bestanden die moeten worden gekopieerd `/libs/cq/experience-fragments/components/xfpage/` omvatten:
+
+* `nocloudconfigs.html`
+* `head.nocloudconfigs.html`
+* `body.nocloudconfigs.html`
+
+#### Sjabloonoverlays {#template-type-overlays}
+
+In dit voorbeeld gebruiken we de volgende structuur:
+
+![Sjabloonoverlays](assets/xf-target-integration-02.png "Sjabloonoverlays")
+
+De inhoud van deze bestanden is als volgt:
+
+* `body.nocloudconfigs.html`
+
+   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+
+* `head.nocloudconfigs.html`
+
+   ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
+
+* `nocloudconfigs.html`
+
+   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+
+>[!NOTE]
+>
+>Te gebruiken `data-sly-unwrap` om de benodigde tag body te verwijderen `nocloudconfigs.html`.
+
+### Overwegingen {#considerations}
+
+Als u zowel AEM plaatsen als niet AEM plaatsen moet steunen gebruikend de Aanbiedingen van het Fragment van de Ervaring in Adobe Target, zult u twee Fragments van de Ervaring (twee verschillende malplaatjetypes) moeten creëren:
+
+* Eén met de overlay om clientlibs/extra html te verwijderen
+
+* Een die niet de overlay heeft en daarom de vereiste clientlibs bevat

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
+source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 7%
@@ -219,7 +219,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 1. **Maken** kunt u maken:
 
    * **Variatie**
-   * **Variatie als live-kopie**.
+   * **Variatie als [live-kopie](/help/sites-administering/msm.md#live-copies)**.
 
 1. Definieer de vereiste eigenschappen:
 

@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85a0c578a2cf57e2b4d65123cffe3816624211c8
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 1%
@@ -165,7 +165,7 @@ In de volgende sectie beschrijven we de **zelfstandige installatie**. Zie voor m
 
    *Het pad van de bestandsmap mag alleen uit ASCII-tekens van de Verenigde Staten bestaan.*
 
-1. Plaats de **jar** en **licentie **bestanden in deze directory:
+1. Plaats de **jar** en **licentie** bestanden in deze map:
 
    ```shell
    <aem-install>/

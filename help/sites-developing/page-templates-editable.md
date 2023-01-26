@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
 ht-degree: 0%
@@ -284,7 +284,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -295,7 +295,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen.</td>
   </tr>
   <tr>
@@ -328,7 +328,7 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>De anonieme Gebruiker van het Web moet malplaatjes lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -344,7 +344,7 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -355,7 +355,7 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
   <tr>
    <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>lezen</td>
+   <td>read</td>
    <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen</td>
   </tr>
   <tr>
@@ -539,7 +539,7 @@ Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-authoring
 
 ### Inhoudsbeleid {#content-policies}
 
-Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
+Het inhoudsbeleid (of het ontwerpbeleid) definieert de ontwerpeigenschappen van een component, zoals de beschikbaarheid van de component of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
 
 * De eigenschap `cq:policy`over de `root` node
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

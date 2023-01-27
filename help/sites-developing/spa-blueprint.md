@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 0%
@@ -150,7 +150,7 @@ Elke component moet worden uitgebreid met een functionaliteit waarmee het buiten
 
 Een container is een component die onderliggende componenten bevat en rendert. Om dit te doen, herhaalt de container over `:itemsOrder`, `:items` en `:children` eigenschappen van zijn model.
 
-De container krijgt dynamisch de kindcomponenten van de opslag van ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` bibliotheek. De container breidt vervolgens de onderliggende component uit met de mogelijkheden van de ModelProvider en instantieert deze ten slotte.
+De container krijgt dynamisch de kindcomponenten van de opslag van [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek. De container breidt vervolgens de onderliggende component uit met de mogelijkheden van de ModelProvider en instantieert deze ten slotte.
 
 ### Pagina {#page}
 

@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 72ed4ceee560839c6573461cb5d4d6cbccfd696f
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3525'
+source-wordcount: '3529'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Oracle Solaris 11 | Z: Niet ondersteund |
 | IBM AIX 7.2 | Z: Niet ondersteund |
 
-1. Linux Kernel 2.6, 3.x, 4.x en 5.x omvat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat Enterprise Linux 7 en Red Hat Enterprise Linux 8.
+1. Linux Kernel 2.6, 3. x, 4. x en 5. x bevat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8 en Red Hat Enterprise Linux 9.
 1. AEM Forms wordt ondersteund op Ubuntu 20.04 LTS.
 1. Linux-distributie ondersteund door Adobe Managed Services.
 1. Microsoft Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe implementaties zijn op aanvraag voor AEM Sites en Assets.
@@ -215,7 +215,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 
 ### Virtuele en Cloud Computing-omgevingen {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager wordt ondersteund en wordt uitgevoerd in een virtuele machine in cloudcomputeromgevingen, zoals Microsoft Azure en Amazon Web Services (AWS), in overeenstemming met de technische vereisten die op deze pagina worden vermeld en volgens de standaardondersteuningsvoorwaarden van Adobe.
+Adobe Experience Manager wordt ondersteund en wordt uitgevoerd in een virtuele machine in cloudcomputeromgevingen zoals Microsoft Azure en Amazon Web Services (AWS), in overeenstemming met de technische vereisten die op deze pagina worden vermeld en volgens de standaardondersteuningsvoorwaarden van Adobe.
 
 Voor een cloud-native omgeving bekijkt u het nieuwste aanbod via de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) voor meer informatie.
 

@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b2c8cf2fbc4db1d9f1b013fb93d71ed5c08eab59
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3717'
+source-wordcount: '3699'
 ht-degree: 0%
 
 ---
@@ -365,7 +365,7 @@ Houd rekening met de volgende uitzonderingen wanneer u een platform kiest voor h
 
 1. AEM Forms on JEE biedt geen ondersteuning voor IBM® WebSphere® met MySQL.
 1. AEM Forms op JEE biedt geen ondersteuning voor JBoss op SUSE Linux Enterprise Server 12. Alleen IBM WebSphere wordt ondersteund op SUSE Linux Enterprise Server 12.
-1. AEM Forms op JEE biedt geen ondersteuning voor JDK met JBoss® anders dan Oracle Java™ SE.
+1. AEM Forms on JEE biedt geen ondersteuning voor JDK met JBoss® anders dan Oracle Java™ SE.
 1. AEM Forms on JEE biedt geen ondersteuning voor JDK met IBM® WebSphere® anders dan IBM® JDK.
 1. CRX-opslagplaats steunt persistentie van type TarMK, MongoDB, en relationele gegevensbestanden (RDBMK). U kunt geen twee verschillende gegevensbestandsystemen tussen de toepassingsserver en CRX-bewaarplaats hebben. Op een AEM Forms op JEE-omgeving kunt u echter MongoMK gebruiken met CRX-gegevensopslagruimte en een ondersteunde relationele database met toepassingsserver.
 1. AEM Forms on JEE biedt geen ondersteuning voor WebSphere-toepassingsserver op CentOS.
@@ -509,21 +509,17 @@ AEM Forms App ondersteunt nu de Apache Cordova. Hier volgen de platformspecifiek
 </table>
 
 >[!NOTE]
->
->PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
->
->Daarnaast:
->
->- PDF Generator vereist 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
->- PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft Office Professional Plus en andere software die vereist is voor conversie.
->- PDF Generator ondersteunt Microsoft Office 365 niet.
->- PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux.
->- De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
->- Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->
->- De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
->- PDF Generator kan bestanden niet converteren met Microsoft Visio 2019. U kunt Microsoft Visio 2016 blijven gebruiken om VSD- en VSDX-bestanden om te zetten.
->- PDF Generator kan bestanden niet converteren met Microsoft Project 2019. U kunt Microsoft Project 2016 blijven gebruiken om .MPP-bestanden om te zetten.
+PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+Daarnaast:
+- PDF Generator vereist 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
+- PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft Office Professional Plus en andere software die vereist is voor conversie.
+- PDF Generator ondersteunt Microsoft Office 365 niet.
+- PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux.
+- De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
+- Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. De gebundelde versie zou slechts programmatically met AEM Forms, tijdens de termijn van de vergunning van AEM Forms, voor gebruik met de Generator van de PDF van AEM Forms moeten worden betreden. Raadpleeg voor meer informatie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- De service PDF Generator biedt geen ondersteuning voor Microsoft Windows 10.
+- PDF Generator kan bestanden niet converteren met Microsoft Visio 2019. U kunt Microsoft Visio 2016 blijven gebruiken om VSD- en VSDX-bestanden om te zetten.
+- PDF Generator kan bestanden niet converteren met Microsoft Project 2019. U kunt Microsoft Project 2016 blijven gebruiken om .MPP-bestanden om te zetten.
 >
 
 
@@ -637,8 +633,7 @@ Zie voor aanvullende vereisten:
 </table>
 
 >[!NOTE]
->
->De Acrobat DC-productfamilie introduceert twee sporen voor zowel Acrobat als Reader, die in wezen verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Voor meer informatie en een vergelijking van de twee sporen raadpleegt u [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+De Acrobat DC-productfamilie introduceert twee sporen voor zowel Acrobat als Reader, die in wezen verschillende producten zijn: &quot;Klassiek&quot; en &quot;Doorlopend&quot;. Voor meer informatie en een vergelijking van de twee sporen raadpleegt u [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Browsers {#browsers}
 
@@ -672,17 +667,7 @@ Zie voor aanvullende vereisten:
    <td>Alle updates</td>
   </tr>
   <tr>
-   <td>Google Chrome en Firefox op MAC OS X</td>
-   <td>A: Ondersteund<br /> <br /> </td>
-   <td>Alle updates</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 11.x</td>
-   <td>A: Ondersteund</td>
-   <td>Alle updates</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 12.x<br /> <br /> </td>
+   <td>Apple Safari op macOS</td>
    <td>A: Ondersteund</td>
    <td>Alle updates</td>
   </tr>
@@ -690,14 +675,12 @@ Zie voor aanvullende vereisten:
 </table>
 
 >[!NOTE]
->
->Bepaalde browsergerelateerde uitzonderingen voor desktops zijn als volgt:
->
->- Safari wordt alleen ondersteund op Macintosh OS X.
->- De werkruimte biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie voor meer informatie over de compatibiliteit met Adobe Reader, Acrobat, Safari 5.1 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
->- Beheerconsole wordt niet ondersteund in Safari.
->- Correspondence Management biedt geen ondersteuning voor Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
->- Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
+Bepaalde browsergerelateerde uitzonderingen voor desktops zijn als volgt:
+- Safari wordt alleen ondersteund op Macintosh OS X.
+- De werkruimte biedt ondersteuning voor Safari 5.1 op Macintosh OS X 10.6 en 10.7 met Acrobat DC of latere versies. Zie voor meer informatie over de compatibiliteit met Adobe Reader, Acrobat, Safari 5.1 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+- Beheerconsole wordt niet ondersteund in Safari.
+- Correspondence Management biedt geen ondersteuning voor Windows® Internet Explorer 9.0 voor AEM 6.1-formulieren.
+- Forms Portal ondersteunt JAWS 14.0-schermlezersoftware in Internet Explorer 11 voor toegankelijkheid.
 
 
 #### Mobiele clients {#mobile-clients}
@@ -728,8 +711,7 @@ Zie voor aanvullende vereisten:
 </table>
 
 >[!NOTE]
->
->- Forms Portal wordt alleen ondersteund op Safari op iPad.
+- Forms Portal wordt alleen ondersteund op Safari op iPad.
 
 
 ### AEM Forms-app {#aem-forms-workspace-app}
@@ -762,7 +744,7 @@ Adobe steunt dringende of geadviseerde flarden die door derdeverkopers bij hun v
 
 In sommige gevallen biedt Adobe geen ondersteuning voor updates van derden die belangrijke functionaliteit wijzigen en dus geen ondersteuning bieden voor volledige achterwaartse compatibiliteit. Zie voor meer informatie over de ondersteunde updates [Ondersteunde patchdefinities](https://helpx.adobe.com/aem-forms/aem-forms-third-party-software-patch.html) voor specifieke verkopersproducten en de flardtypes steunt Adobe.
 
-Onder omstandigheden waarop Adobe geen invloed heeft, kunnen patches van derden die zich beroepen op achterwaartse compatibiliteit, negatieve gevolgen hebben voor de producten van de Adobe of de omgeving van de klant. In dergelijke gevallen raadt Adobe klanten aan de gevolgen van een noodpatch van een derde te beoordelen voordat ze deze op kritieke systemen toepassen. Adobe zal met derden samenwerken om dergelijke problemen op te lossen door middel van normale Adobe-ondersteuningsprogramma&#39;s of door derden die het probleem in hun patch verhelpen. Dit garandeert niet dat een nieuw vrijgegeven patch van derden die door Adobe wordt ondersteund, werkt zoals wordt beschreven door de leverancier of met AEM Forms op JEE.
+Onder omstandigheden buiten de controle van Adobe, kunnen de derdepatches die achterwaartse verenigbaarheid beweren negatieve gevolgen voor de producten van de Adobe of klantenmilieu&#39;s hebben. In dergelijke gevallen raadt Adobe klanten aan de gevolgen van een noodpatch van een derde te beoordelen voordat ze deze op kritieke systemen toepassen. Adobe zal met derden samenwerken om dergelijke problemen op te lossen door middel van normale Adobe-ondersteuningsprogramma&#39;s of door derden die het probleem in hun patch verhelpen. Dit garandeert niet dat een nieuw vrijgegeven patch van derden die door Adobe wordt ondersteund, werkt zoals wordt beschreven door de leverancier of met AEM Forms op JEE.
 
 Adobe behoudt zich het recht voor om de referentieplatforms van derden die door een AEM Forms bij JEE-release worden ondersteund, en hun ondersteunde patchdefinities op een bepaald punt te wijzigen.
 
@@ -795,8 +777,7 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
 - OpenOffice 4.1.2
 
 >[!NOTE]
->
->De platforms die zijn gemarkeerd als [afgekeurd op AEM Forms 6.5.12.0 en 6.5.10.0 blijven in ondersteuning tot AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
+De platforms die zijn gemarkeerd als [afgekeurd op AEM Forms 6.5.12.0 en 6.5.10.0 blijven in ondersteuning tot AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revisie-overzicht {#revision-history}
 

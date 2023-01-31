@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 2a889134943d75d147af6d06ea67397f75158d40
+source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,15 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 >
 >De onderstaande stappen zijn alleen vereist als de handler berichten kan ondertekenen of ontsleutelen.
 
-1. Upload het bestand met de persoonlijke sleutel door op **Bestand met persoonlijke sleutel selecteren**. De sleutel moet in PKCS#8 formaat met DER het coderen zijn.
+1. Maak het certificaat/sleutelpaar voor AEM. Het bevel om het via open te produceren zou op het onderstaande voorbeeld moeten lijken:
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. Zet de sleutel in PKCS#8 formaat met DER het coderen om. Dit is de indeling die wordt vereist door het AEM sleutelarchief.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. Upload het bestand met de persoonlijke sleutel door op **Bestand met persoonlijke sleutel selecteren**.
 1. Het certificaatbestand uploaden door op **Certificaatketenbestanden selecteren**.
 1. Een alias toewijzen, zoals hieronder wordt getoond:
 

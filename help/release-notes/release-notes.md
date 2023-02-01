@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
+source-git-commit: ec9094f25cfbcd1497a6bbc87cce9754e247a770
 workflow-type: tm+mt
-source-wordcount: '4009'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe raadt u niet aan de [!DNL Experience Manager] 6.5.15.0-pakket. Voordat u het pakket installeert, moet u daarom een back-up maken van het `crx-repository` voor het geval u het terug moet rollen. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Adobe raadt u niet aan de [!DNL Experience Manager] 6.5.15.0-pakket. Voordat u het pakket installeert, moet u daarom een back-up maken van het `crx-repository` voor het geval u het terug moet rollen. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Voor instructies voor het installeren van Service Pack voor AEM Forms raadpleegt u [Installatie-instructies voor AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+
 
 ### Installeer het de dienstpak op [!DNL Experience Manager] 6,5 {#install-service-pack}
 
@@ -259,38 +261,9 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 1. De OSGi-bundel `org.apache.jackrabbit.oak-core` is versie 1.22.13 of hoger (webconsole gebruiken: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### Installeren [!DNL Experience Manager] Forms-invoegtoepassing {#install-aem-forms-add-on-package}
+### Service Pack installeren op [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
->[!NOTE]
->
->Overslaan als u dit niet gebruikt [!DNL Experience Manager] Forms.
-
-<!-- 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
--->
-
-1. Controleer of u de [!DNL Experience Manager] service pack.
-1. Download het overeenkomstige Forms-add-on-pakket dat is vermeld op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) voor uw besturingssysteem.
-1. Het Forms-invoegtoepassingspakket installeren zoals beschreven in [AEM Forms-add-onpakketten installeren](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-1. Als u letters gebruikt in Experience Manager 6.5 Forms, installeert u de [nieuwste AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
-
-### Installeren [!DNL Experience Manager] Forms op JEE {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->Sla dit over als u AEM Forms niet gebruikt op JEE. Oplossingen in [!DNL Experience Manager] Forms op JEE wordt via een afzonderlijk installatieprogramma geleverd.
-
-Voer de volgende stappen uit voor alle AEM Forms in JEE-omgevingen met andere toepassingsservers dan JBoss EAP 7.4.0.
-1. Installeren [AEM Forms JEE Patch](jee-patch-installer-65.md). Het omvat alle vaste kwesties voor alle componenten van AEM 6.5 Forms op JEE.
-1. Installeer de [Fragment voor AEM 6.5 Forms op JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). Het fragment voegt de gebiedsdelen toe die worden vereist om AEM Service Pack 15 (6.5.15.0) te installeren.
-1. Wacht na het installeren van het fragment tot de toepassingsserver is gestabiliseerd.
-1. [Installeer het de dienstpak op Experience Manager 6.5](#install-service-pack).
-
-   >[!NOTE]
-   >
-   >Als u de nieuwste [AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), voordat u de [Fragment voor AEM 6.5 Forms op JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) op uw AEM 6.5 Forms op JEE milieu, kunnen CRX/bundle en de beginpagina ophouden werkend en u ontmoet de dienst niet beschikbare fout. Voer de handelingen uit om het probleem op te lossen [vermeld hier](/help/forms/using/aem-service-pack-installation-solution.md).
-
-1. Installeer de [nieuwste Forms add-on-pakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), verwijdert u het invoegpakket voor Forms uit het dialoogvenster `crx-repository\install` en start de server opnieuw op.
+Voor instructies voor het installeren van het servicepakket op AEM Forms raadpleegt u [AEM Forms Service Pack-installatie-instructies](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -328,7 +301,7 @@ Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben 
  -->
 
 * [Inhoudsfragment AEM met GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Dit pakket is nodig voor klanten die GraphQL gebruiken; hierdoor kunnen ze de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
+Dit pakket is nodig voor klanten die GraphQL gebruiken. hierdoor kunnen ze de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
 * Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 

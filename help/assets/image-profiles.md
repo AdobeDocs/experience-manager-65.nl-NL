@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '2916'
+source-wordcount: '2911'
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ In **[!UICONTROL Unsharp Mask]** hebt u de volgende filteropties:
 | Radius | Hiermee bepaalt u het aantal pixels rondom de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een waarde in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding. De standaardwaarde is 0,2. Bereik is 0-250. |
 | Drempel | Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met waarden tussen 0 en 255 om ruis te voorkomen. |
 
-Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/sharpening_images.pdf.
+Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/sharpening_images.pdf).
 
 ## Dynamic Media-afbeeldingsprofielen maken {#creating-image-profiles}
 

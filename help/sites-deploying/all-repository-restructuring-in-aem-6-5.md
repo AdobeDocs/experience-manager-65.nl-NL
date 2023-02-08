@@ -1,26 +1,25 @@
 ---
 title: Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5
-seo-title: Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5
+seo-title: Common Repository Restructuring in AEM 6.5
 description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 die algemeen gelden voor alle AEM.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 die algemeen gelden voor alle AEM.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
-translation-type: tm+mt
-source-git-commit: 8d6818d0f2d90482f930f8e98682670ed6d0dd28
+exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
+source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2693'
 ht-degree: 1%
 
 ---
 
-
 # Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5 {#common-repository-restructuring-in-aem}
 
-Zoals beschreven op de moederpagina [Herstructurering van opslagplaats in AEM 6.5](/help/sites-deploying/repository-restructuring.md), moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in opslagplaatsen die mogelijk van invloed zijn op alle oplossingen. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die aan AEM 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan veranderingen in bewaarplaats die potentieel invloed hebben op alle oplossingen. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **Met 6,5-upgrade**
 
@@ -52,22 +51,22 @@ Zoals beschreven op de moederpagina [Herstructurering van opslagplaats in AEM 6.
 * [Cloud Services van leverancier-vertalingsconnector](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [E-mailsjablonen voor workflowmeldingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
-## Met 6.5-upgrade {#with-upgrade}
+## Met 6,5-upgrade {#with-upgrade}
 
-### ContextHub Configurations {#contexthub-6.5}
+### ContextHub-configuraties {#contexthub-6.5}
 
-Vanaf AEM 6.4, is er geen standaardconfiguratie ContextHub. Daarom op het wortelniveau van de plaats zou een `cq:contextHubPathproperty` moeten worden geplaatst om te wijzen op welke configuratie zou moeten worden gebruikt.
+Vanaf AEM 6.4, is er geen standaardconfiguratie ContextHub. Daarom op het wortelniveau van de plaats a `cq:contextHubPathproperty` moet worden ingesteld om aan te geven welke configuratie moet worden gebruikt.
 
 1. Navigeer naar de hoofdmap van de site.
 1. Open de pagina-eigenschappen van de basispagina en selecteer het tabblad Aanpassing.
 1. Op het gebied van de Weg Contexthub ga uw eigen ContextHub configuratiepad in.
 
-Bovendien op de configuratie ContextHub, moet `sling:resourceType` worden bijgewerkt om relatief en niet absoluut te zijn.
+Bovendien op de configuratie ContextHub, `sling:resourceType` moet worden bijgewerkt om relatief en niet absoluut te zijn.
 
 1. Open de eigenschappen van de ContextHub configuratieknooppunt in CRX DE Lite, bijvoorbeeld `/apps/settings/cloudsettings/legacy/contexthub`
-1. Wijzigen `sling:resourceType` van `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` in `granite/contexthub/cloudsettings/components/baseconfiguration`
+1. Wijzigen `sling:resourceType` van `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` tot `granite/contexthub/cloudsettings/components/baseconfiguration`
 
-D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan absoluut zijn.
+De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan absoluut zijn.
 
 ### Workflowmodellen {#workflow-models}
 
@@ -91,16 +90,16 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
       <ol>
        <li>Met de open Redacteur van het Model van het Werkschema, wijzig het browser adres URL, en vervang het wegsegment /libs/settings/workflow/modellen met /etc/workflow/modellen.
         <ul>
-         <li>Bijvoorbeeld: change: <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> naar <em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
+         <li>Bijvoorbeeld: change: <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> tot <em>http://localhost:4502/editor.html<strong>/etc/workflow/modellen</strong>/dam/update_asset.html</em></li>
         </ul> </li>
       </ol> </li>
      <li>Schakel de modus Bewerken in de Workflowmodeleditor in, waarmee de definitie van het workflowmodel wordt gekopieerd naar /conf/global/workflow/models.</li>
      <li>Tik op de knop Sync om de wijzigingen in het workflowmodel voor uitvoering te synchroniseren onder /var/workflow/modellen.</li>
-     <li>Exporteer zowel het workflowmodel (/conf/global/workflow/models/&lt;workflow-model&gt;) als het workflowmodel voor uitvoering (/var/workflow/models/&lt;workflow-model&gt;) en integreer het in het AEM project.
+     <li>Exporteer beide workflowmodellen (/conf/global/workflow/models/&lt;workflow-model&gt;) en Runtime Workflowmodel (/var/workflow/modellen/&lt;workflow-model&gt;) en in het AEM-project te integreren.
       <ol>
        <li>Bijvoorbeeld exporteren:
         <ul>
-         <li><code>/config/settings/workflow/models/dam/my_workflow_model</code> and </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> and </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>
@@ -139,12 +138,12 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td>Alle expliciete padverwijzingen in
     <code>
      custom
-    </code> code aan de Vorige Plaats zou ook met de Nieuwe Plaats moeten rekening houden. Het wordt geadviseerd dat deze code refactored is om de AEM Werkstroom APIs te gebruiken.</td>
+    </code> in de code naar de vorige locatie moet ook rekening worden gehouden met de nieuwe locatie. Het wordt geadviseerd dat deze code refactored is om de AEM Werkstroom APIs te gebruiken.</td>
   </tr>
  </tbody>
 </table>
 
-### Workflow Launchers {#workflow-launchers}
+### Workflowstartprogramma&#39;s {#workflow-launchers}
 
 <table style="table-layout:auto">
  <tbody>
@@ -160,7 +159,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde werkstroomopstarters moeten worden gemigreerd naar <code>/conf/global/workflow/launcher/config</code>.</p>
     <ol>
-     <li>Kopieer om het even welke nieuwe of gewijzigde configuraties van de Lanceerinrichting van het Werkschema van de Vorige Plaats aan Nieuwe Plaats (<code>/conf/global</code>).</li>
+     <li>Kopieer alle nieuwe of gewijzigde configuraties van de Start van de workflow van de vorige locatie naar de nieuwe locatie (<code>/conf/global</code>).</li>
     </ol> </td>
   </tr>
   <tr>
@@ -170,7 +169,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li><code>/conf/global/settings/workflow/launcher</code></li>
      <li><code>/libs/settings/workflow/launcher</code></li>
      <li><code>/etc/workflow/launcher</code></li>
-    </ol> <p>Aldus, moeten om het even welke aanpassingen van AEM-Geleverde Startprogramma van het Werkschema in de Vorige plaats worden voortgeduurd naar de Nieuwe Plaats (<code>/conf/global/settings/workflow/launcher</code> als zij moeten worden behouden, anders zullen zij door de AEM-Geleverde definitie van de Lanceerinrichting van het Werkschema in <code>/libs/settings/workflow/launcher</code> worden vervangen.</p> </td>
+    </ol> <p>Om die reden, moeten om het even welke aanpassingen van AEM-Geleverde Startprogramma van het Werkschema in de Vorige plaats worden voortgeduurd naar de Nieuwe Plaats (<code>/conf/global/settings/workflow/launcher</code> als zij moeten worden behouden, anders zullen zij door de AEM-verstrekte definitie van de Lanceerfunctie van het Werkschema in worden vervangen <code>/libs/settings/workflow/launcher</code>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -191,7 +190,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde workflowscripts moeten worden gemigreerd naar de nieuwe locatie en de referentiestroommodellen moeten worden bijgewerkt om de nieuwe locatie te weerspiegelen.</p>
     <ol>
-     <li>Kopieer alle nieuwe of gewijzigde workflowscripts van de vorige locatie naar de nieuwe locatie.<br />
+     <li>Kopieer eventuele nieuwe of gewijzigde workflowscripts van de vorige locatie naar de nieuwe locatie.<br />
       <ul>
        <li><code>/apps/workflow/scripts</code> dient in de SCM te worden gehandhaafd.</li>
       </ul> </li>
@@ -208,9 +207,9 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-## Vóór toekomstige upgrade {#prior-to-upgrade}
+## Voorafgaand aan toekomstige upgrade {#prior-to-upgrade}
 
-### ContextHub Configurations {#contexthub-configurations}
+### ContextHub-configuraties {#contexthub-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -229,7 +228,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Kopieer om het even welke nieuwe of gewijzigde Configuraties ContextHub van de vorige plaats aan de nieuwe plaats.</li>
      <li>Koppel de toepasselijke AEM configuraties aan de hiërarchieën van AEM inhoud.
       <ol>
-       <li><strong>AEM Sites-paginabereiken via AEM Sites &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Cloudinstellingen</strong>.</li>
+       <li><strong>AEM Sites page hiërarchieën via AEM Sites &gt; Page Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
      <li>Koppel om het even welke gemigreerde configuraties van de erfenis ContextHub van de bovengenoemde AEM inhoudshiërarchieën los.</li>
     </ol> </td>
@@ -257,9 +256,9 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
-     <li>Kopieer de ontwerpen van de Vorige Plaats aan de Nieuwe Plaats (<code>/apps</code>).</li>
-     <li>Converteer alle CSS-, JavaScript- en statische bronnen in het ontwerp naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client Library</a> met <code>allowProxy = true</code>.</li>
-     <li>Verwijzingen naar de vorige locatie bijwerken in <span class="code">
+     <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
+     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
+     <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster <span class="code">
        <code>
         cq
        </code>:
@@ -270,7 +269,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken toe te staan via de map /etc.clientlibs/.. proxyservlet.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde.</p>
     <ul>
-     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -297,7 +296,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (/apps).</li>
-     <li>Converteer alle CSS-, JavaScript- en statische bronnen in het ontwerp naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client Library</a> met <code>allowProxy = true</code>.</li>
+     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
      <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster
       <code>
        cq
@@ -309,7 +308,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken toe te staan via de map /etc.clientlibs/.. proxyservlet.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde.</p>
     <ul>
-     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -336,7 +335,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (/apps).</li>
-     <li>Converteer alle CSS-, JavaScript- en statische bronnen in het ontwerp naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client Library</a> met <code>allowProxy = true</code>.</li>
+     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
      <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster
       <code>
        cq
@@ -348,7 +347,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken toe te staan via de map /etc.clientlibs/.. proxyservlet.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde.</p>
     <ul>
-     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -375,7 +374,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (/apps).</li>
-     <li>Converteer alle CSS-, JavaScript- en statische bronnen in het ontwerp naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client Library</a> met <code>allowProxy = true</code>.</li>
+     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
      <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster
       <code>
        cq
@@ -387,7 +386,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken toe te staan via de map /etc.clientlibs/.. proxyservlet.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde.</p>
     <ul>
-     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -443,7 +442,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### Inbox Taken {#inbox-tasks}
+### Inbox-taken {#inbox-tasks}
 
 <table style="table-layout:auto">
  <tbody>
@@ -457,7 +456,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td>Met de <strong>Inbox Purge Maintenance Task</strong> kunt u zo nodig oude taken verwijderen van de vorige locatie.</td>
+   <td>Gebruik de <strong>Onderhoudstaken in postvak wissen</strong> om oude taken zo nodig van de vorige locatie te verwijderen.</td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -470,7 +469,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### Configuraties {#multi-site-manager-blueprint-configurations} voor beheer van meerdere locaties
+### Configuraties van blauwdruk voor beheer op meerdere locaties {#multi-site-manager-blueprint-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -486,7 +485,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td>
     <ol>
-     <li>Kopieer aangepaste configuraties van <code>/etc/blueprints</code> naar <code>/apps/msm</code>.</li>
+     <li>Aangepaste configuraties kopiëren van <code>/etc/blueprints</code> tot <code>/apps/msm</code>.</li>
      <li>Verwijderen <code>/etc/blueprints</code>.</li>
     </ol> </td>
   </tr>
@@ -497,7 +496,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### Gadget-configuraties voor AEM projecten {#aem-projects-dashboard-gadget-configurations}
+### Gadget-configuraties AEM projecten {#aem-projects-dashboard-gadget-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -513,9 +512,9 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde AEM Projecten moeten worden gemigreerd naar de nieuwe locatie (<code>/apps</code>).</p>
     <ol>
-     <li>Kopieer eventuele nieuwe of gewijzigde AEM Gadget-configuraties van het dashboard voor projecten van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).
+     <li>Kopieer alle nieuwe of gewijzigde AEM Gadget-configuraties van het dashboard voor projecten van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).
       <ol>
-       <li>Kopieer niet ongewijzigde AEM Gadget-configuraties van het dashboard van projecten, omdat deze nu bestaan op de nieuwe locatie (<code>/libs</code>).</li>
+       <li>Kopieer niet ongewijzigde AEM Gadget-configuraties van het dashboard Projecten, omdat deze nu op de nieuwe locatie staan (<code>/libs</code>).</li>
       </ol> </li>
      <li>Werk om het even welke AEM malplaatjes bij van Projecten die de Vorige Plaats van verwijzingen voorzien om aan de aangewezen nieuwe plaats te richten.</li>
     </ol> </td>
@@ -543,7 +542,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Nieuwe of gewijzigde E-mailsjablonen voor replicatiemeldingen moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>)</p>
     <ol>
-     <li>Kopieer om het even welke nieuwe of gewijzigde E-mailMalplaatjes van het Bericht van de Replicatie van de vorige plaats aan nieuwe plaats (<code>/apps</code>).</li>
+     <li>Kopieer nieuwe of gewijzigde E-mailsjablonen voor replicatiemeldingen van de vorige locatie naar een nieuwe locatie (<code>/apps</code>).</li>
      <li>Verwijder om het even welke gemigreerde E-mailMalplaatjes van het Bericht van de Replicatie van de vorige plaats.</li>
     </ol> </td>
   </tr>
@@ -560,7 +559,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### Labels {#tags}
+### Tags {#tags}
 
 <table style="table-layout:auto">
  <tbody>
@@ -574,22 +573,22 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Alle labels moeten worden gemigreerd naar <code>/content/cq:tags</code>.</p>
+   <td><p>Alle tags moeten worden gemigreerd naar <code>/content/cq:tags</code>.</p>
     <ol>
      <li>Kopieer alle tags van de vorige locatie naar de nieuwe locatie.</li>
      <li>Alle tags verwijderen van de vorige locatie.</li>
-     <li>Via de AEM webconsole start u de bundel Day Communique 5 Tagging OSGi op <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> opnieuw om AEM te herkennen dat de nieuwe locatie inhoud bevat en moet worden gebruikt.</li>
+     <li>Via de AEM webconsole start u de bundel Day Communique 5 Tagging OSGi opnieuw op <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> AEM om de nieuwe locatie te herkennen bevat inhoud en moet worden gebruikt.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
-   <td><p>Als u de bundel Dagcommunique Tagging OSGi opnieuw start, wordt de nieuwe locatie alleen geregistreerd als de hoofdcode als de vorige locatie leeg is.</p> <p>Verwijzingen naar de vorige locatie blijven werken na het migreren naar nieuwe locatie voor alle functies die gebruikmaken van AEM API voor tagbeheer voor het oplossen van tags.</p> <p>Elke aangepaste code die expliciet naar het pad <code>/etc/tags</code> verwijst, moet worden bijgewerkt naar <span class="code">/content/
+   <td><p>Als u de bundel Dagcommunique Tagging OSGi opnieuw start, wordt de nieuwe locatie alleen geregistreerd als de hoofdcode als de vorige locatie leeg is.</p> <p>Verwijzingen naar de vorige locatie blijven werken na het migreren naar nieuwe locatie voor alle functies die gebruikmaken van AEM API voor tagbeheer voor het oplossen van tags.</p> <p>Elke aangepaste code die expliciet naar het pad verwijst <code>/etc/tags</code> moet worden bijgewerkt tot <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, of bij voorkeur herschreven om de Java API van TagManager te gebruiken, in combinatie met deze migratie.</p> </td>
+      </code></span>of bij voorkeur herschreven om de Java API van TagManager te gebruiken, in combinatie met deze migratie.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -608,20 +607,20 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Nieuwe Cloud Services voor vertaling moeten worden gemigreerd naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Nieuwe Cloud Services voor vertaling moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ul>
-       <li>Maak handmatig nieuwe configuraties van Cloud Services voor vertaling opnieuw via de AEM ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Cloud Services voor vertaling</strong>.<br /> OF </li>
-       <li>Kopieer eventuele nieuwe configuraties van Cloud Services voor vertaling van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Creëer handmatig nieuwe configuraties van Cloud Services voor vertaling via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Cloud Services voor vertaling</strong>.<br /> OF </li>
+       <li>Kopieer alle nieuwe configuraties van Cloud Services voor vertaling van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Koppel de toepasselijke AEM configuraties aan de hiërarchieën van AEM inhoud.
       <ol>
-       <li>AEM Sites page hiërarchies via <strong>AEM Sites &gt; Page Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
-       <li>AEM de hiërarchieën van het Fragment van de Ervaring via <strong>AEM de Fragmenten van de Ervaring &gt; het Fragment van de Ervaring &gt; Eigenschappen &gt; het Lusje van Cloud Services &gt; de Configuratie van de Wolk</strong>.</li>
-       <li>AEM de hiërarchieën van de Omslagen van het Fragment van de Ervaring via <strong>AEM de Fragmenten van de Ervaring &gt; Omslag &gt; Eigenschappen &gt; het Lusje van Cloud Services &gt; de Configuratie van de Wolk</strong>.<br /> </li>
-       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Mapeigenschappen &gt; Tabblad Cloud Services &gt; Configuration</strong>.</li>
-       <li>AEM Projecten via <strong>AEM Projecten &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloudinstellingen</strong>.</li>
+       <li>AEM Sites-paginamanager via <strong>AEM Sites &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Ervaar fragmenthiërarchieën via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.<br /> </li>
+       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Services Tab &gt; Configuration</strong>.</li>
+       <li>Projecten AEM via <strong>AEM Projecten &gt; Project &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
      <li>Koppel eventuele gemigreerde verouderde Cloud Services voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
     </ol> </td>
@@ -639,7 +638,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### Vertaal talen {#translation-languages}
+### Talen voor vertaling {#translation-languages}
 
 <table style="table-layout:auto">
  <tbody>
@@ -684,7 +683,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Een gewijzigd XML-bestand met vertaalregels moet naar de nieuwe locatie (<code>/apps</code> of <code>/conf/global</code>) worden gemigreerd.</p> <p>1. Kopieer het XML-bestand met gewijzigde vertaalregels van de vorige locatie naar de nieuwe locatie.</p> </td>
+   <td><p>Een gewijzigd XML-bestand met vertaalregels moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, of <code>/conf/global</code>).</p> <p>1. Kopieer het XML-bestand met gewijzigde vertaalregels van de vorige locatie naar de nieuwe locatie.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -718,7 +717,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
    <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven.</p>
     <ol>
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie (/apps).</li>
-     <li>Converteer alle CSS-, JavaScript- en statische bronnen in het ontwerp naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client Library</a> met <code>allowProxy = true</code>.</li>
+     <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
      <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster
       <code>
        cq
@@ -730,7 +729,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
      <li>Werk AEM Dispatcher-regels bij om het serveren van clientbibliotheken toe te staan via de map /etc.clientlibs/.. proxyservlet.</li>
     </ol> <p>Voor om het even welke Ontwerpen die NIET in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp beheerde.</p>
     <ul>
-     <li>Verplaats ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
+     <li>Ontwerpbare ontwerpen niet uit <code>/etc</code>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -746,11 +745,11 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
 |---|---|
 | **Nieuwe locatie(s)** | `/libs/replication/treeactivation` |
 | **Herstructureringsrichtsnoeren** | Geen actie vereist. |
-| **Opmerkingen** | De Web-console van de Activering van de Boom is nu beschikbaar via **Hulpmiddelen > Plaatsing > Replicatie > Activate Tree**. |
+| **Opmerkingen** | De webconsole voor activering van de structuur is nu beschikbaar via **Extra > Implementatie > Replicatie > Boom activeren**. |
 
 {style=&quot;table-layout:auto&quot;}
 
-### Cloud Services Vertaalaansluiting leverancier {#vendor-translation-connector-cloud-services}
+### Cloud Services van leverancier-vertalingsconnector {#vendor-translation-connector-cloud-services}
 
 <table style="table-layout:auto">
  <tbody>
@@ -766,20 +765,20 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Nieuwe Cloud Services voor de vertalingsconnector van de leverancier moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Elke nieuwe Cloud Services voor de vertalingsconnector van de leverancier moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ul>
-       <li>Creëer manueel netto-nieuwe Cloud Services van de Schakelaar van de Vertaling van de Leverancier via <strong>AEM auteursUI bij Hulpmiddelen &gt; Cloud Services &gt; Vertaling Cloud Services</strong>.<br /> OF </li>
-       <li>Kopieer eventuele nieuwe configuraties van Cloud Services voor de vertaalaansluiting van leveranciers van vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global </code>of <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Creëer manueel netto-nieuwe Cloud Services van de Schakelaar van de Vertaling van de Leverancier via <strong>AEM creatieve gebruikersinterface via Gereedschappen &gt; Cloud Services &gt; Cloud Services voor vertaling</strong>.<br /> OF </li>
+       <li>Kopieer alle nieuwe configuraties van de Cloud Services van de Vertaalverbinding van de Leverancier van vorige plaats aan de nieuwe plaats (<code>/apps</code>, <code>/conf/global </code>of <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Koppel de toepasselijke AEM configuraties aan de hiërarchieën van AEM inhoud.
       <ol>
-       <li>AEM Sites page hiërarchies via <strong>AEM Sites &gt; Page Properties &gt; Advanced Tab &gt; Cloud Configuration</strong>.</li>
-       <li>AEM de hiërarchieën van het Fragment van de Ervaring via <strong>AEM de Fragmenten van de Ervaring &gt; het Fragment van de Ervaring &gt; Eigenschappen &gt; het Lusje van Cloud Services &gt; de Configuratie van de Wolk</strong>.</li>
-       <li>AEM Ervaar de hiërarchieën van de Omslagen van het Fragment via <strong>AEM Ervaar Fragmenten &gt; Omslag &gt; Eigenschappen &gt; Lusje van Cloud Services &gt; de Configuratie van de Wolk</strong>.</li>
-       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Mapeigenschappen &gt; Tabblad Cloud Services &gt; Configuration</strong>.</li>
-       <li>AEM Projecten via <strong>AEM Projecten &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloudinstellingen</strong>.</li>
+       <li>AEM Sites-paginamanager via <strong>AEM Sites &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Ervaar fragmenthiërarchieën via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Services Tab &gt; Configuration</strong>.</li>
+       <li>Projecten AEM via <strong>AEM Projecten &gt; Project &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
      <li>Koppel eventuele gemigreerde verouderde Cloud Services voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
     </ol> </td>
@@ -797,7 +796,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
  </tbody>
 </table>
 
-### E-mailsjablonen voor workflowmelding {#workflow-notification-email-templates}
+### E-mailsjablonen voor workflowmeldingen {#workflow-notification-email-templates}
 
 <table style="table-layout:auto">
  <tbody>
@@ -811,7 +810,7 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Elke gewijzigde e-mailsjablonen voor workflowmeldingen moeten naar de nieuwe locatie (<code>/conf/global</code>) worden gemigreerd.</p>
+   <td><p>Eventuele e-mailsjablonen voor gewijzigde workflowmeldingen moeten worden gemigreerd naar de nieuwe locatie (<code>/conf/global</code>).</p>
     <ol>
      <li>Kopieer eventuele gewijzigde e-mailsjablonen voor workflowmeldingen van de vorige locatie naar de nieuwe locatie.</li>
      <li>E-mailsjablonen voor gemigreerde workflowmeldingen verwijderen van de vorige locatie.</li>
@@ -856,4 +855,3 @@ D.w.z. `sling:resourceType` van de configuratie ContextHub moet relatief eerder 
   </tr>
  </tbody>
 </table>
-

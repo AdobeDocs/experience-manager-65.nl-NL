@@ -1,8 +1,8 @@
 ---
 title: Synchronisatie van actieve kopie configureren
-seo-title: Synchronisatie van actieve kopie configureren
+seo-title: Configuring Live Copy Synchronization
 description: Meer informatie over het configureren van Live Copy-synchronisatie.
-seo-description: Meer informatie over het configureren van Live Copy-synchronisatie.
+seo-description: Learn about configuring Live Copy Synchronization.
 uuid: a5db0bee-a761-4cff-81dc-31b374525f47
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
+source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2696'
 ht-degree: 0%
 
 ---
-
 
 # Synchronisatie van actieve kopie configureren{#configuring-live-copy-synchronization}
 
@@ -27,19 +26,19 @@ Voer de volgende taken uit om te controleren hoe en wanneer de levende exemplare
 * Bepaal of de bestaande rollout configuraties aan uw vereisten voldoen, of u één of meerdere moet tot stand brengen.
 * Geef de rollout-configuraties op die u wilt gebruiken voor uw live kopieën.
 
-## Geïnstalleerde en Aangepaste rollout Configuraties {#installed-and-custom-rollout-configurations}
+## Geïnstalleerde en Aangepaste implementatieconfiguraties {#installed-and-custom-rollout-configurations}
 
 Deze sectie verstrekt informatie over de geïnstalleerde rollout configuraties en de synchronisatieacties die zij gebruiken, en hoe te om douaneconfiguraties tot stand te brengen indien vereist.
 
 >[!CAUTION]
 >
->Het bijwerken van of het veranderen van een uit de doos (geïnstalleerde) rollout configuratie is **niet** geadviseerd. Als er een vereiste voor een douanelevende actie is dan zou het in een aangepaste rollout configuratie moeten worden toegevoegd.
+>Het bijwerken van of het veranderen van een uit de doos (geïnstalleerde) rollout configuratie is **niet** aanbevolen. Als er een vereiste voor een douanelevende actie is dan zou het in een aangepaste rollout configuratie moeten worden toegevoegd.
 
-### Uitroltriggers {#rollout-triggers}
+### Rollouttriggers {#rollout-triggers}
 
 Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaakt om voor te komen. Rolloutconfiguraties kunnen een van de volgende triggers gebruiken:
 
-* **Bij rollout**: De opdracht  **** Rolloutbestand wordt gebruikt op de blauwe afdrukpagina of de  **** opdracht Synchroniseren wordt gebruikt op de actieve kopieerpagina.
+* **Bij rollout**: De **Uitrol** wordt gebruikt op de blauwe afdrukpagina, of **Synchroniseren** wordt gebruikt op de pagina voor live kopiëren.
 
 * **Bij wijziging**: De bronpagina wordt gewijzigd.
 
@@ -49,11 +48,11 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 >[!NOTE]
 >
->Het gebruik van de trigger Bij wijziging kan van invloed zijn op de prestaties. Zie [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md#onmodify) voor meer informatie.
+>Het gebruik van de trigger Bij wijziging kan van invloed zijn op de prestaties. Zie [MSM best practices](/help/sites-administering/msm-best-practices.md#onmodify) voor meer informatie .
 
 ### Geïnstalleerde uitrolconfiguraties {#installed-rollout-configurations}
 
-De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een nieuwe rollout configuratie](#creating-a-rollout-configuration) tot stand brengen.
+De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een nieuwe rollout-configuratie maken](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -128,7 +127,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
 
 ### Geïnstalleerde synchronisatiehandelingen {#installed-synchronization-actions}
 
-De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïnstalleerd zijn. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [Nieuwe Synchronisatie-actie maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïnstalleerd zijn. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u [Nieuwe synchronisatiehandeling maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -139,27 +138,27 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>contentCopy</td>
-   <td>Wanneer knooppunten van de bron niet op de live kopie bestaan, worden de knooppunten naar de live kopie gekopieerd. <a href="#excluding-properties-and-node-types-from-synchronization">Configureer de CQ MSM Content Copy Action </a> service om de knooppunttypen, alinea-items en pagina-eigenschappen op te geven die u wilt uitsluiten.  <br /> </td>
+   <td>Wanneer knooppunten van de bron niet op de live kopie bestaan, worden de knooppunten naar de live kopie gekopieerd. <a href="#excluding-properties-and-node-types-from-synchronization">De CQ MSM Content Copy Action-service configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Verwijdert knooppunten van de live kopie die niet op de bron bestaan. <a href="#excluding-properties-and-node-types-from-synchronization">Configureer de CQ MSM-inhoud Handeling verwijderen </a> om de knooppunttypen, alinea-items en pagina-eigenschappen op te geven die u wilt uitsluiten. </p> </td>
+   <td><p>Verwijdert knooppunten van de live kopie die niet op de bron bestaan. <a href="#excluding-properties-and-node-types-from-synchronization">De CQ MSM-service Handeling voor verwijderen van inhoud configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. </p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>contentUpdate</td>
-   <td>Hiermee werkt u de inhoud van de live kopie bij met de wijzigingen van de bron. <a href="#excluding-properties-and-node-types-from-synchronization">Configureer de CQ MSM Content Update Action </a> service om de knooppunttypen, alinea-items en pagina-eigenschappen op te geven die u wilt uitsluiten.  <br /> </td>
+   <td>Hiermee werkt u de inhoud van de live kopie bij met de wijzigingen van de bron. <a href="#excluding-properties-and-node-types-from-synchronization">De CQ MSM-service Handeling voor bijwerken van inhoud configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. <br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Hiermee bewerkt u de eigenschappen van de actieve kopie. De eigenschap editMap bepaalt welke eigenschappen worden bewerkt en de waarde ervan. De waarde van de eigenschap editMap moet de volgende indeling gebruiken:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>De <code>current_value</code> en <code>new_value</code> punten zijn regelmatige uitdrukkingen. <br /> </p> <p>Neem bijvoorbeeld de volgende waarde voor editMap:</p> <p><code>sling:resourceType#/</code>(contentPage|homepage)#/<br /> mobileContentPage,<br /> cq:template#/contentPage#/mobileContentPage</p> <p>Met deze waarde worden de eigenschappen van de knooppunten van de live kopie als volgt bewerkt:</p>
+   <td><p>Hiermee bewerkt u de eigenschappen van de actieve kopie. De eigenschap editMap bepaalt welke eigenschappen worden bewerkt en de waarde ervan. De waarde van de eigenschap editMap moet de volgende indeling gebruiken:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>De <code>current_value</code> en <code>new_value</code> items zijn reguliere expressies. <br /> </p> <p>Neem bijvoorbeeld de volgende waarde voor editMap:</p> <p><code>sling:resourceType#/</code>(contentPage|homepage)#/<br /> MobilinhoudPage<br /> cq:template#/contentPage#/mobileContentPage</p> <p>Met deze waarde worden de eigenschappen van de knooppunten van de live kopie als volgt bewerkt:</p>
     <ul>
-     <li>De <code>sling:resourceType</code> eigenschappen die of aan <code>contentpage</code> of aan <code>homepage</code> worden geplaatst worden geplaatst aan <code>mobilecontentpage.</code></li>
-     <li>De <code>cq:template</code>-eigenschappen die zijn ingesteld op <code>contentpage</code> worden ingesteld op <code>mobilecontentpage.</code></li>
+     <li>De <code>sling:resourceType</code> eigenschappen die zijn ingesteld op <code>contentpage</code> of aan <code>homepage</code> zijn ingesteld op <code>mobilecontentpage.</code></li>
+     <li>De <code>cq:template</code> eigenschappen die zijn ingesteld op <code>contentpage</code> zijn ingesteld op <code>mobilecontentpage.</code></li>
     </ul> </td>
-   <td><p> </p> <p>editMap: (String) Hiermee worden de eigenschap, de huidige waarde en de nieuwe waarde aangegeven. Zie de Beschrijving voor informatie.<br /> </p> </td>
+   <td><p> </p> <p>editMap: (String) Hiermee worden de eigenschap, de huidige waarde en de nieuwe waarde aangegeven. Zie de Beschrijving voor meer informatie.<br /> </p> </td>
   </tr>
   <tr>
    <td>meedelen</td>
@@ -168,12 +167,12 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>orderChildren</td>
-   <td>Op het levende exemplaar, orden het de kinderen (knopen), die op de orde op blauwdruk<br /> worden gebaseerd </td>
+   <td>Op het levende exemplaar, orden het de kinderen (knopen), die op de orde op de blauwdruk worden gebaseerd<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Voor de live kopie werkt deze synchronisatiehandeling verwijzingen bij, zoals koppelingen.<br /> Er wordt gezocht naar paden op de pagina's met live kopieën die naar een bron in de blauwdruk verwijzen. Wanneer gevonden, werkt het de weg bij om aan het verwante middel binnen het levende exemplaar (in plaats van het blauwdruk) te richten. Verwijzingen met doelen buiten de blauwdruk worden niet gewijzigd.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Vorm de </a> dienst van de Actie van de Update van de Verwijzingen CQ MSM om de knooptypes, paragraafpunten, en paginaeigenschappen te specificeren om uit te sluiten. </p> </td>
+   <td><p>Voor de live kopie werkt deze synchronisatiehandeling verwijzingen zoals koppelingen bij.<br /> Er wordt gezocht naar paden op de pagina's met live kopieën die naar een bron in de blauwdruk verwijzen. Wanneer gevonden, werkt het de weg bij om aan het verwante middel binnen het levende exemplaar (in plaats van het blauwdruk) te richten. Verwijzingen met doelen buiten de blauwdruk worden niet gewijzigd.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">De service Actie bijwerken van CQ MSM-verwijzingen configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -194,7 +193,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   <tr>
    <td>werkstroom</td>
    <td><p>Hiermee wordt de workflow gestart die door de eigenschap target (alleen voor pagina's) wordt gedefinieerd en wordt de live kopie als een payload ingesteld.</p> <p>Het doelpad is het pad van het modelknooppunt.</p> </td>
-   <td>doel: (Tekenreeks) Het pad naar het workflowmodel.<br /> </td>
+   <td>doel: (String) Het pad naar het workflowmodel.<br /> </td>
   </tr>
   <tr>
    <td>mandatory</td>
@@ -227,7 +226,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>PageMoveAction</td>
-   <td><p>De PageMoveAction is van toepassing wanneer een pagina in de blauwdruk is verplaatst.</p> <p>De actie kopieert eerder dan verplaatst de (verwante) pagina LiveCopy van de plaats vóór de beweging aan de plaats na.</p> <p>De PageMoveAction verandert niet de pagina LiveCopy bij de plaats vóór de beweging. Daarom voor opeenvolgende RolloutConfigurations heeft het de status van een LiveRelationship zonder Blauwdruk.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configureer de CQ MSM Page Move Action </a> Service om de knooppunttypen, alinea-items en pagina-eigenschappen op te geven die moeten worden uitgesloten. </p> <p>Deze actie moet de enige synchronisatieactie inbegrepen in een rollout configuratie zijn.</p> </td>
+   <td><p>De PageMoveAction is van toepassing wanneer een pagina in de blauwdruk is verplaatst.</p> <p>De actie kopieert eerder dan verplaatst de (verwante) pagina LiveCopy van de plaats vóór de beweging aan de plaats na.</p> <p>De PageMoveAction verandert niet de pagina LiveCopy bij de plaats vóór de beweging. Daarom voor opeenvolgende RolloutConfigurations heeft het de status van een LiveRelationship zonder Blauwdruk.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">De CQ MSM Page Move Action-service configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. </p> <p>Deze actie moet de enige synchronisatieactie inbegrepen in een rollout configuratie zijn.</p> </td>
    <td><p>prop_referenceUpdate: (Boolean) Ingesteld op true om verwijzingen bij te werken. De standaardwaarde is true.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -259,9 +258,9 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
 
 ### Een rollout-configuratie maken {#creating-a-rollout-configuration}
 
-U kunt [een rollout configuratie](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) tot stand brengen wanneer de geïnstalleerde rollout configuraties niet aan uw toepassingsvereisten voldoen:
+U kunt [een rollout-configuratie maken](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration) als de geïnstalleerde implementatieconfiguraties niet voldoen aan uw toepassingsvereisten:
 
-* [Maak de rollout-configuratie](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
+* [De rollout-configuratie maken](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
 * [Synchronisatiehandelingen toevoegen aan de rollout-configuratie](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van rollout configuraties op een blauwdruk of een levende exemplaarpagina.
@@ -270,7 +269,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties steunen zodat zij geen specifieke knooptypes en eigenschappen beïnvloeden. Veel eigenschappen en subknooppunten die bijvoorbeeld betrekking hebben op de interne werking van AEM, mogen niet in een live kopie worden opgenomen. Alleen de inhoud die relevant is voor de gebruiker van de pagina moet worden gekopieerd.
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 In de volgende tabel staan de synchronisatiehandelingen waarvoor u de knooppunten kunt opgeven die moeten worden uitgesloten. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -315,11 +314,11 @@ In de volgende tabel worden de eigenschappen beschreven die u kunt configureren:
 
 >[!NOTE]
 >
->Zie [MSM-vergrendelingen configureren op pagina-eigenschappen (Touch-Optimized UI)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui) in de interface voor het optimaliseren van aanrakingen.
+>Zie ook in de interface voor geoptimaliseerde aanrakingen [MSM-vergrendelingen configureren op pagina-eigenschappen (aanraakgeoptimaliseerde interface)](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-pagep-roperties-touch-optimized-ui).
 
 #### Actie voor bijwerken van CQ MSM-inhoud - Uitsluitingen {#cq-msm-content-update-action-exclusions}
 
-Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden deze bepaald in de configuratie OSGi van **CQ MSM Content Update Action**, onder **Uitgesloten Pagina-eigenschappen**.
+Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden deze bepaald in de configuratie OSGi van **Update-actie CQ MSM-inhoud**, onder **Eigenschappen van uitgesloten pagina**.
 
 Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (d.w.z. niet bijgewerkt) bij rollout:
 
@@ -327,7 +326,7 @@ Standaard worden eigenschappen die overeenkomen met de volgende reguliere expres
 
 U kunt de expressies wijzigen die de uitsluitingslijst naar wens definiëren.
 
-Als u bijvoorbeeld wilt dat de pagina **Title** wordt opgenomen in de wijzigingen die worden overwogen voor rollout, verwijdert u `jcr:title` uit de uitsluitingen. Bijvoorbeeld met regex:
+Als u bijvoorbeeld de pagina wilt **Titel** om te worden opgenomen in de wijzigingen die voor de uitrol worden overwogen, `jcr:title` van de uitsluitingen. Bijvoorbeeld met regex:
 
 `jcr:(?!(title)$).*`
 
@@ -335,7 +334,7 @@ Als u bijvoorbeeld wilt dat de pagina **Title** wordt opgenomen in de wijziginge
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties met betrekking tot het bijwerken van verwijzingen steunen.
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 In de volgende tabel staan de synchronisatiehandelingen waarvoor u de update van de verwijzing kunt opgeven. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -351,7 +350,7 @@ In de volgende tabel staan de synchronisatiehandelingen waarvoor u de update van
   </tr>
   <tr>
    <td><p>Referentiepagina's bijwerken</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
-   <td>Alleen beschikbaar voor CQ MSM Page Move Action. Selecteer deze optie (Webconsole) of stel deze Booleaanse eigenschap in op <code>true</code> (configuratie opslagplaats) om verwijzingen bij te werken naar de oorspronkelijke pagina en te verwijzen naar de LiveCopy-pagina.</td>
+   <td>Alleen beschikbaar voor CQ MSM Page Move Action. Selecteer deze optie (Webconsole) of stel deze Booleaanse eigenschap in op <code>true</code> (configuratie opslagplaats) om verwijzingen bij te werken om de originele pagina te gebruiken in plaats daarvan naar de LiveCopy-pagina te verwijzen.</td>
   </tr>
  </tbody>
 </table>
@@ -362,10 +361,10 @@ MSM laat u toe om reeksen rollout configuraties te specificeren die algemeen wor
 
 De volgende lijst van plaatsen waar u de rollout configuraties kunt specificeren om te gebruiken beschrijft hoe MSM bepaalt welke rollout configuraties aan gebruik voor een levende kopie:
 
-* **[Eigenschappen](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) van pagina voor live kopiëren:** Wanneer een pagina voor live kopiëren is geconfigureerd voor het gebruik van een of meer rollout-configuraties, gebruikt MSM die rollout-configuraties.
-* **[Eigenschappen](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) van de pagina van de blauwdruk:** Wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de de bronpagina van de blauwdruk wordt geassocieerd gebruikt.
-* **Eigenschappen van bovenliggende pagina&#39;s voor live kopieën:** Wanneer noch de pagina voor live kopieën noch de bronpagina voor blauwdrukken zijn geconfigureerd met een rollout-configuratie, wordt de rollout-configuratie gebruikt die van toepassing is op de bovenliggende pagina van de live kopie-pagina.
-* **[Systeemstandaard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Wanneer de rollout-configuratie van de bovenliggende pagina van de live kopie niet kan worden bepaald, wordt de standaardrollout-configuratie van het systeem gebruikt.
+* **[Eigenschappen van pagina&#39;s voor live kopiëren](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** Wanneer een levende exemplaarpagina wordt gevormd om één of meerdere rollout configuraties te gebruiken, gebruikt MSM die rollout configuraties.
+* **[Eigenschappen van vervagingspagina](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** Wanneer een levend exemplaar op een blauwdruk gebaseerd is, en de levende exemplaarpagina niet met een rollout configuratie wordt gevormd, wordt de rollout configuratie die met de de bronpagina van de blauwdruk wordt geassocieerd gebruikt.
+* **Eigenschappen van bovenliggende pagina voor live kopiëren:** Wanneer noch de levende exemplaarpagina noch de de bronpagina van de blauwdruk met een rollout configuratie worden gevormd, wordt de rollout configuratie die op de levende de ouderpagina van de exemplaarpagina van toepassing is gebruikt.
+* **[Systeemstandaard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Wanneer de rollout configuratie van de levende ouderpagina van het exemplaar niet kan worden bepaald, wordt de systeem standaardrollout configuratie gebruikt.
 
 Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als broninhoud. Op basis van de blauwdruk wordt een site gemaakt. Elk punt in de volgende lijst beschrijft een verschillend scenario betreffende het gebruik van rollout configuraties:
 
@@ -377,49 +376,49 @@ Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als br
 
 Vorm een levende exemplaarpagina met de rollout configuraties aan gebruik wanneer de bronpagina uit wordt opgerold. De pagina&#39;s van het kind erven de configuratie door gebrek. Wanneer u de rollout configuratie aan gebruik vormt, treedt u de configuratie met voeten die de levende exemplaarpagina van zijn ouder erft.
 
-U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wanneer u [creeert levende exemplaar](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
+U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wanneer u [de live kopie maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 
-1. Gebruik de console **Sites** om de pagina van het levende exemplaar te selecteren.
-1. Selecteer **Eigenschappen** van de toolbar.
-1. Open het tabblad **Live kopie**.
+1. Gebruik de **Sites** -console om de pagina voor live kopiëren te selecteren.
+1. Selecteren **Eigenschappen** op de werkbalk.
+1. Open de **Live kopie** tab.
 
-   De **Configuratie** sectie toont de rollout configuraties die de pagina erft.
+   De **Configuratie** toont de rollout configuraties die de pagina erft.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Pas indien nodig de markering **Overerving van actieve kopie** aan. Als deze optie is ingeschakeld, is de configuratie van de live kopie effectief voor alle onderliggende elementen.
+1. Pas indien nodig de **Overerving van Actieve kopie** markering. Als deze optie is ingeschakeld, is de configuratie van de live kopie effectief voor alle onderliggende elementen.
 
-1. Ontruim **erf de Configuratie van de Output van Ouder** bezit, dan selecteer één of meerdere rollout configuraties van de lijst.
+1. Wis de **De configuratie van de Overerving van de Uitvoer van Bovenliggend** eigenschap, selecteert u vervolgens een of meer rollout-configuraties in de lijst.
 
    De geselecteerde rollout configuraties verschijnen onder de drop-down lijst.
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
-1. Klik of tik **Save**.
+1. Klikken of tikken **Opslaan**.
 
-### De configuratie van de Output instellen voor een pagina van de Vervaging {#setting-the-rollout-configuration-for-a-blueprint-page}
+### De configuratie van de Output instellen voor een vervagingspagina {#setting-the-rollout-configuration-for-a-blueprint-page}
 
 Configureer een blauwdrukpagina met de rollout-configuraties die moeten worden gebruikt wanneer de blauwdrukpagina wordt uitgevouwen.
 
 De onderliggende pagina&#39;s van de blauwdrukpagina nemen de configuratie over. Wanneer u de rollout configuratie aan gebruik vormt, zou u de configuratie kunnen met voeten treden die de pagina van zijn ouder erft.
 
-1. Gebruik de **Sites** console om de wortelpagina van de blauwdruk te selecteren.
-1. Selecteer **Eigenschappen** van de toolbar.
-1. Open het tabblad **Vervagen**.
-1. Selecteer een of meer **Rollout Configurations** gebruikend de drop-down selecteur.
-1. Zet uw updates voort met **Save**.
+1. Gebruik de **Sites** -console om de basispagina van de blauwdruk te selecteren.
+1. Selecteren **Eigenschappen** op de werkbalk.
+1. Open de **Blauwdruk** tab.
+1. Selecteer een of meer **Uitrolconfiguraties** de keuzelijst gebruiken.
+1. Updates blijven gebruiken met **Opslaan**.
 
 ### De standaardconfiguratie van de systeemuitrol instellen {#setting-the-system-default-rollout-configuration}
 
 Geef een rollout-configuratie op die u als systeemstandaard wilt gebruiken. Om het gebrek te specificeren, vorm de dienst OSGi:
 
-* **Day CQ WCM Live Relationship**
-Managerthe service PID is 
+* **Day CQ WCM Live Relationship Manager**
+de service-PID is 
 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configureer de service met de [webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [opslagknooppunt](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+Vorm de dienst gebruikend of [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [opslagknooppunt](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * In de Webconsole, is de naam van het bezit om te vormen Standaardrollout config.
-* Met behulp van een opslagplaats-knooppunt is de naam van de eigenschap die moet worden geconfigureerd `liverelationshipmgr.relationsconfig.default`.
+* Gebruikend een gegevensopslaggegevensopslagknoop, is de naam van het bezit te vormen `liverelationshipmgr.relationsconfig.default`.
 
-Plaats deze bezitswaarde aan de weg van de rollout configuratie aan gebruik als systeemgebrek. De standaardwaarde is `/libs/msm/wcm/rolloutconfigs/default`, die **StandaardConfiguratie van de Uitvoer** is.
+Plaats deze bezitswaarde aan de weg van de rollout configuratie aan gebruik als systeemgebrek. De standaardwaarde is `/libs/msm/wcm/rolloutconfigs/default`, die **Standaardconfiguratie voor rollout**.

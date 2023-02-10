@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6102'
 ht-degree: 2%
@@ -56,7 +56,7 @@ Met de nieuwe architectuur is Experience Manager verantwoordelijk voor primaire 
 
 Als u Dynamic Media wilt inschakelen, start u Experience Manager op met `dynamicmedia_scene7` run mode van de bevellijn door het volgende in een eindvenster in te gaan (de gebruikte voorbeeldhaven is 4502):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -533,7 +533,7 @@ U kunt het type Batch-set gebruiken **[!UICONTROL Multi-Axis Spin Set]** om een 
 
 Stel dat u een spin-set met meerdere assen wilt maken met de naam `spin-2dspin`. U hebt een set afbeeldingen met een set centrifuges die drie rijen bevatten, met 12 afbeeldingen per rij. De afbeeldingen krijgen de volgende naam:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …
@@ -588,7 +588,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
    `\w+-\w+-C([0-9]+)`
 
-   of
+   or
 
    `\w+-\w+-C(\d+)`
 

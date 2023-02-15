@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatieinstructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1773'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,8 @@ Navigeer naar de juiste map en van een shell en type
 
       >[!NOTE]
       >
-      > Met de **ConfigurationManager.bat** kunt u voorkomen dat de naam van de .lax-bestanden handmatig wordt bijgewerkt.
+      >* Het bijwerken van of het vervangen van **ConfigurationManager.bat** kunt u voorkomen dat de naam van de .lax-bestanden handmatig wordt bijgewerkt.
+
 
 1. **[Alleen voor Unix]:** De **Configuratiebeheer starten** selectievakje is standaard ingeschakeld. Klikken **[!UICONTROL Done]** om de Manager van de Configuratie onmiddellijk in werking te stellen of in werking te stellen **Configuratiebeheer** later, schrap **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. U kunt beginnen **Configuratiebeheer** later het gebruiken van het aangewezen manuscript in `[AEM_forms_root]/configurationManager/bin` directory.
 
@@ -104,7 +105,6 @@ Navigeer naar de juiste map en van een shell en type
    * [AEM voor WebSphere®-cluster installeren en implementeren](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [AEM Forms for WebLogic-cluster installeren en implementeren](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-Het is
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 +++
 
 ## Problemen oplossen
-
-* Installeer de AEM Forms-servicepacks opnieuw als er een fout optreedt tijdens de installatie. Neem contact op met de Adobe Support als het probleem zich blijft voordoen.
 
 * Indien **Dialoogvenster over interface van pakketbeheer** Sluit tijdens de installatie van het de dienstpak af, wacht op foutenlogboeken om zich te stabiliseren alvorens tot de plaatsing toegang te hebben. Wacht op de specifieke logboeken met betrekking tot het verwijderen van de updaterbundel alvorens wordt verzekerd dat de installaties succesvol zijn. Dit probleem doet zich doorgaans voor in de Safari-browser, maar kan soms ook in elke browser optreden.
 

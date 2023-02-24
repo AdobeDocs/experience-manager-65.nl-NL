@@ -3,18 +3,18 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
 audience: end-user
-user-guide-title: Hulplijn voor middelen
-breadcrumb-title: Hulplijn voor middelen
-user-guide-description: Digitale middelen maken, beheren, verwerken en distribueren.
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+user-guide-title: Handleiding voor assets
+breadcrumb-title: Handleiding voor assets
+user-guide-description: Maak, beheer, verwerk en distribueer digitale middelen.
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '681'
+ht-degree: 16%
 
 ---
 
 
-# Hulplijn voor middelen {#assets}
+# Handleiding voor assets {#assets}
 
 + [[!DNL Assets] gebruikershandleiding](home.md)
 + [[!DNL Experience Manager] 6.5 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html)
@@ -97,8 +97,10 @@ ht-degree: 0%
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
    + [Ondersteuning voor inhoudsfragmenten in [!DNL Assets] HTTP-API](assets-api-content-fragments.md)
    + [GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
+   + [GraphiQL IDE gebruiken](content-fragments/graphiql-ide.md)
+   + [Blijvende query&#39;s](content-fragments/persisted-queries.md)
    + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
-   + [GraphQL API met inhoudfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [GraphQL API met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)

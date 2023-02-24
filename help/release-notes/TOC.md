@@ -7,10 +7,10 @@ breadcrumb-title: Release-opmerkingen
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b52e050ffbda8c38a5ba53d1c72218c21a64d0b9
+source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
 workflow-type: tm+mt
-source-wordcount: '67'
-ht-degree: 25%
+source-wordcount: '68'
+ht-degree: 26%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 25%
 + [Opmerkingen bij de huidige release](release-notes.md)
 + [Installatie-instructies voor AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
 + [Opmerkingen bij vorige release]{#service-pack}
+   + [6.5.15](previous/6.5.15.md)
    + [6.5.14](previous/6.5.14.md)
    + [6.5.13](previous/6.5.13.md)
    + [6.5.12](previous/6.5.12.md)

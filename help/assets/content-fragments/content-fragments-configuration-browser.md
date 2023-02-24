@@ -4,10 +4,10 @@ description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inh
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
+source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 17%
+source-wordcount: '271'
+ht-degree: 19%
 
 ---
 
@@ -20,7 +20,7 @@ Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browse
 Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebrowser** inschakelen:
 
 * **Modellen van inhoudsfragmenten** - verplicht
-* **GrafiekQL blijvende vragen** - facultatief
+* **Blijvende GraphQL-query&#39;s** - facultatief
 
 >[!CAUTION]
 >
@@ -43,10 +43,6 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 >
 >Zie ook voor meer informatie [Configuratiebrowser:](/help/sites-administering/configurations.md#using-configuration-browser).
 
->[!CAUTION]
->
->Subconfiguraties (een configuratie die binnen een configuratie wordt genest) worden gesteund voor gebruik met de Fragmenten van de Inhoud, maar kunnen niet voor vragen worden gebruikt GraphQL.
-
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
 1. Gebruiken **Maken** om het dialoogvenster te openen, waarin u:
@@ -54,7 +50,7 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
    1. Geef een **Titel**.
    1. Selecteer
       * **Modellen van contentfragmenten**
-      * **GrafiekQL blijvende vragen**
+      * **Blijvende GraphQL-query&#39;s**
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
 

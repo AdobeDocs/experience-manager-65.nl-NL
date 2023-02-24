@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
 workflow-type: tm+mt
-source-wordcount: '4223'
+source-wordcount: '4391'
 ht-degree: 8%
 
 ---
@@ -140,7 +140,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
    <td><strong>Verticaal zoomen</strong></td>
    <td><p>Met de verticale zoomviewer kunt u een productafbeeldingsweergave maximaliseren, zodat uw gebruikers de beste weergave van een product krijgen. De verticale locatie van stalen doet het volgende:</p>
     <ul>
-     <li>Hiermee zorgt u ervoor dat stalen zich boven de vouw bevinden.<br/> In horizontale stalen zijn deze, afhankelijk van de grootte van het bureaublad van de gebruiker, pas zichtbaar wanneer de gebruiker de pagina omlaag schuift. Door de stalen verticaal in de viewer te plaatsen, weet u zeker dat ze zichtbaar zijn, ongeacht de schermgrootte van de gebruiker.</li>
+     <li>Hiermee zorgt u ervoor dat stalen zich boven de vouw bevinden.<br/> Bij horizontale stalen zijn deze, afhankelijk van de grootte van het bureaublad van de gebruiker, pas zichtbaar wanneer de gebruiker de pagina omlaag schuift. Door de stalen verticaal in de viewer te plaatsen, weet u zeker dat ze zichtbaar zijn, ongeacht de schermgrootte van de gebruiker.</li>
      <li>Maximaliseert de hoofdafbeeldingsgrootte.<br /> Met horizontale stalen is het nodig ruimte op de pagina te reserveren om ervoor te zorgen dat deze zichtbaar zijn. Hierdoor nam de grootte van de hoofdafbeelding af. Met een verticale staallay-out hoeft u deze ruimte echter niet toe te wijzen. Op die manier kunt u de grootte van de hoofdafbeelding maximaliseren.</li>
     </ul> </td>
   </tr>
@@ -459,6 +459,19 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 
 1. (Optioneel) Selecteer boven aan de pagina Voorinstelling viewer bewerken de optie **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, of **[!UICONTROL Phone]** Hiermee definieert u unieke visuele stijlen voor verschillende apparaat- en schermtypen.
 1. Selecteer op de pagina Viewer Preset Editor de optie **[!UICONTROL Behavior]** tab. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
+Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve streamingopties:
+
+   * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd.
+   * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
+   * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden als strepen, hls of progressief gestreamd, zoals in het volgende voorbeeld:
+      * Als de browser DASH ondersteunt, wordt eerst DASH-streaming gebruikt.
+      * Als de browser geen ondersteuning biedt voor DASH, wordt vervolgens HLS-streaming gebruikt.
+      * Als de browser DASH of HLS niet ondersteunt, wordt progressief afspelen gebruikt, tot slot.
+
+   >[!NOTE]
+   >
+   >Om de **[!UICONTROL dash]** moet deze optie eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
+
 1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Selected Type]** een component waarvan u het gedrag wilt wijzigen.
 
    Veel componenten in de visuele editor hebben een gedetailleerde beschrijving. Deze beschrijvingen worden weergegeven in blauwe vakken wanneer u een component uitbreidt om de bijbehorende parameters weer te geven.
@@ -476,6 +489,10 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 1. Publiceer uw nieuwe viewervoorinstelling zodat u deze op uw website kunt gebruiken.
 
    Zie [Voorinstellingen van viewer publiceren](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Voor oude video&#39;s die een adaptief streamingprofiel gebruiken, blijft de URL op de gebruikelijke manier — met HLS-streaming — worden afgespeeld totdat u [de video-elementen opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets). Na de verwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
 
 ### Speciale overwegingen voor het maken van een voorinstelling voor een interactieve viewer {#special-considerations-for-creating-an-interactive-viewer-preset}
 

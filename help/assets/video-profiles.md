@@ -12,9 +12,9 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
 workflow-type: tm+mt
-source-wordcount: '3508'
+source-wordcount: '3546'
 ht-degree: 8%
 
 ---
@@ -284,7 +284,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
    <td><code>keyframe</code></td>
    <td>Het doelaantal frames tussen hoofdframes. Bereken deze waarde, zodat elke 2-10 seconden een hoofdframe kan worden gegenereerd. Bijvoorbeeld, bij 30 kaders per seconde, zou het keyframe interval 60-300 moeten zijn.<br /> <br /> De lagere keyframe intervallen verbeteren stroom het zoeken en stroom omschakelingsgedrag voor adaptieve videocoderingen en kunnen de kwaliteit voor video's ook verbeteren die veel motie hebben. Omdat hoofdframes de grootte van een bestand echter vergroten, resulteert een lager hoofdframe-interval meestal in een lagere algemene videokwaliteit bij een bepaalde bitsnelheid.</td>
    <td><code>String</code></td>
-   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor HLS (Live HTTP-streaming) is 60-90.</p> </td>
+   <td><p>Positief getal.</p> <p>De standaardwaarde is 300.</p> <p>De aanbevolen waarde voor DASH of HLS is 60-90. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst zijn ingeschakeld op uw account. Zie <a href="/help/assets/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ U kunt een bestaand videocoderingsprofiel bewerken om te profiteren van geavance
    <td><code>audioBitrateCustom</code></td>
    <td>Waarde instellen op <code>true</code> om een constante bitsnelheid voor de audiostream te forceren, indien ondersteund door audiocodec.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor HLS (Live HTTP-streaming) is <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Standaard is <code>false</code>.</p> <p>Aanbevolen waarde voor DASH of HLS is <code>false</code>. (Als u DASH wilt gebruiken voor uw video's, moet deze eerst zijn ingeschakeld op uw account. Zie <a href="/help/assets/video.md#enable-dash">DASH inschakelen voor uw account</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

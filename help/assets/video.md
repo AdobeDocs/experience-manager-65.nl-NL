@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 2c4be989decbac2a4109e7c02cd9d6231c1d0753
+source-git-commit: 86394ab7e7de89615218d6ddd6843ec9276275cd
 workflow-type: tm+mt
-source-wordcount: '12065'
+source-wordcount: '12257'
 ht-degree: 4%
 
 ---
@@ -132,7 +132,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -231,17 +231,17 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 of hoger</td>
-   <td>DASH* of HLS</td>
+   <td>Aangepaste streaming van DASH* of HLS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chroom</td>
-   <td>DASH* of HLS</td>
+   <td>Aangepaste streaming van DASH* of HLS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>Aangepaste streaming voor HLS.</td>
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -251,7 +251,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Mobiel</td>
    <td>Chrome (Android™ 7 of hoger)</td>
-   <td>DASH* of HLS</td>
+   <td>Aangepaste streaming van DASH* of HLS.</td>
   </tr>
   <tr>
    <td>Mobiel</td>
@@ -261,17 +261,17 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
   <tr>
    <td>Mobiel</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>Aangepaste streaming voor HLS.</td>
   </tr>
   <tr>
    <td>Mobiel</td>
    <td>Chrome (iOS)</td>
-   <td>DASH* of HLS</td>
+   <td>Aangepaste streaming voor HLS.</td>
   </tr>
   <tr>
    <td>Mobiel</td>
    <td>BlackBerry®</td>
-   <td>DASH* of HLS</td>
+   <td>Aangepaste streaming van DASH* of HLS./td&gt;
   </tr>
  </tbody>
 </table>
@@ -432,7 +432,7 @@ Dynamic Media raadt u aan voorinstellingen voor MP4 H.264-videocodering te gebru
 
 ### DASH inschakelen voor uw account {#enable-dash}
 
-DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Wanneer u DASH inschakelt, kunt u kiezen uit HLS of DASH voor adaptieve videostreaming. U kunt ook voor beide kiezen met automatische omschakeling tussen spelers.
+DASH (Digital Adaptive Streaming via HTTP) is de internationale standaard voor videostreaming en wordt op grote schaal toegepast door verschillende videoviewers. Als DASH op uw account is ingeschakeld, kunt u kiezen uit DASH of HLS voor adaptieve videostreaming. Of u kunt kiezen voor beide opties met automatische schakeling tussen spelers wanneer **[!UICONTROL auto]** is geselecteerd als het afspeeltype in de voorinstelling Viewer.
 
 Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 
@@ -447,12 +447,28 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
    >
    >Het inschakelen van DASH op uw account is momenteel alleen beschikbaar in Noord-Amerika.
 
+Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
+
+* Dynamic Media configureren voor gebruik van DASH, wat u eenvoudig kunt doen.
+* Het vormen van Experience Manager 6.5 om DASH te gebruiken die door een geval van de Steun van de Klant van Adobe wordt gedaan die u creeert en voorlegt.
+
 **DASH inschakelen voor uw account:**
 
-1. Navigeren naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. **Dynamic Media configureren** - Ga in Dynamic Media op Experience Manager 6.5 naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Zoeken naar **AEM Assets Dynamic Media Video Advanced Streaming** markering functie.
 1. Schakel het selectievakje in om DASH in te schakelen (inschakelen).
 1. Selecteer **[!UICONTROL Save]**.
+1. **Experience Manager 6.5 configureren** - [Gebruik de Admin Console om een nieuwe steungeval te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Volg de instructies om een steungeval tot stand te brengen terwijl het verzekeren van u de volgende informatie verstrekt:
+
+   * Primaire contactpersoon, e-mail, telefoon.
+   * Naam van je Dynamic Media-account.
+   * Geef op of u DASH wilt inschakelen bij Experience Manager 6.5.
+
+1. De Steun van de Klant van Adobe voegt u aan de DASH klant toe wachtlijst die op de orde wordt gebaseerd waarin de verzoeken worden voorgelegd.
+1. Wanneer Adobe klaar is om uw verzoek te behandelen, contacteert de Steun van de Klant u om een doeldatum voor DASH toe te voegen te coördineren en te plaatsen.
+1. Klantenondersteuning stuurt u een melding nadat deze is voltooid.
+1. Maak uw [videoviewervoorinstelling](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) zoals gebruikelijk.
 
 ## Video&#39;s publiceren naar YouTube {#publishing-videos-to-youtube}
 

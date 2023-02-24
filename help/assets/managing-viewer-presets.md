@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
+source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
 workflow-type: tm+mt
-source-wordcount: '4391'
+source-wordcount: '4403'
 ht-degree: 8%
 
 ---
@@ -461,7 +461,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 1. Selecteer op de pagina Viewer Preset Editor de optie **[!UICONTROL Behavior]** tab. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
 Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve streamingopties:
 
-   * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd.
+   * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd. Op Safari/iOS-apparaten moet u echter **[!UICONTROL hls]** als het type.
    * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
    * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden als strepen, hls of progressief gestreamd, zoals in het volgende voorbeeld:
       * Als de browser DASH ondersteunt, wordt eerst DASH-streaming gebruikt.

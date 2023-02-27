@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
+source-git-commit: 93de94bb17ea898f0fe15e62fb031cab239a3682
 workflow-type: tm+mt
-source-wordcount: '3529'
+source-wordcount: '3534'
 ht-degree: 0%
 
 ---
@@ -119,6 +119,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | Binaire bestanden opslaan in TAR-bestanden op bestandssysteem `[1]` | Binden | Z: Niet ondersteund voor productie |
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft Azure Blob Storage | Binden | A: Ondersteund |
+| MongoDB Enterprise 4.4 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
 | MongoDB Enterprise 4.2 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |

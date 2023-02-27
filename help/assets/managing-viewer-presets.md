@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4403'
+source-wordcount: '4405'
 ht-degree: 8%
 
 ---
@@ -459,7 +459,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor de Carouse
 
 1. (Optioneel) Selecteer boven aan de pagina Voorinstelling viewer bewerken de optie **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, of **[!UICONTROL Phone]** Hiermee definieert u unieke visuele stijlen voor verschillende apparaat- en schermtypen.
 1. Selecteer op de pagina Viewer Preset Editor de optie **[!UICONTROL Behavior]** tab. U kunt ook elk visueel element in de viewer selecteren om het te selecteren voor configuratie.
-Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve streamingopties:
+Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]** kunt u kiezen uit een van de drie adaptieve opties voor bitsnelheidstreaming:
 
    * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd. Op Safari/iOS-apparaten moet u echter **[!UICONTROL hls]** als het type.
    * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
@@ -492,7 +492,7 @@ Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UI
 
    >[!IMPORTANT]
    >
-   >Voor oude video&#39;s die een adaptief streamingprofiel gebruiken, blijft de URL op de gebruikelijke manier — met HLS-streaming — worden afgespeeld totdat u [de video-elementen opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets). Na de verwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
+   >Voor oude video&#39;s die een adaptief streamingprofiel voor bitsnelheid gebruiken, wordt de URL verder op de gebruikelijke wijze afgespeeld — met HLS-streaming — totdat u [de video-elementen opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets). Na de verwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
 
 ### Speciale overwegingen voor het maken van een voorinstelling voor een interactieve viewer {#special-considerations-for-creating-an-interactive-viewer-preset}
 

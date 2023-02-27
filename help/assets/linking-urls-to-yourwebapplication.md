@@ -10,9 +10,9 @@ discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
-source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1215'
 ht-degree: 4%
 
 ---
@@ -158,7 +158,7 @@ Dynamic Media ondersteunt de levering van statische elementen. Dit zijn aanvulle
 
    Dit voorbeeld is de volledige video-URL voor een gepubliceerde video-uitvoering.
 
-## Een video-URL verkrijgen voor adaptieve streaming (DASH of HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Een video-URL verkrijgen voor adaptieve bitsnelheidstreaming (DASH of HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Navigeer in Experience Manager naar **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. Op de **[!UICONTROL Cloud Services]** pagina, omlaag schuiven naar de **[!UICONTROL Dynamic Media Cloud Services]** kop selecteert u vervolgens **[!UICONTROL Show Configurations]**.

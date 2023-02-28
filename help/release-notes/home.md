@@ -1,17 +1,17 @@
 ---
 title: Opmerkingen bij de release Adobe Experience Manager 6.5
-description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
+description: De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 4%
+ht-degree: 24%
 
 ---
 
 # Opmerkingen bij de release Adobe Experience Manager 6.5
 
-De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
+De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 
 * [Opmerkingen bij de huidige release](/help/release-notes/release-notes.md)
 
@@ -25,11 +25,11 @@ De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie 
 
 | Handboek | Beschrijving |
 |--- |---|
-| [Handboek voor Assets](/help/assets/home.md) | Digitale middelen maken, beheren, leveren en optimaliseren. |
+| [Handboek voor Assets](/help/assets/home.md) | Digitale assets maken, beheren, leveren en optimaliseren. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

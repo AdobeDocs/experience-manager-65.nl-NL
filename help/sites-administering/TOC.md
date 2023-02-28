@@ -3,19 +3,19 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: admin-user
-user-guide-title: AEM 6.5 Gebruikershandleiding voor het beheer
-breadcrumb-title: Beheerdershandleiding
-user-guide-description: Meer informatie over het AEM.
+user-guide-title: AEM 6.5 Beheerdershandleiding
+breadcrumb-title: Gids voor beheerders
+user-guide-description: Meer informatie over het beheren van AEM.
 feature: Administering
 role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-# AEM 6.5 Gebruikershandleiding voor het beheer {#administering}
+# AEM 6.5 Beheerdershandleiding {#administering}
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
 + Sitefuncties {#introduction}

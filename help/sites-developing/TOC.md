@@ -3,20 +3,20 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.5 Handboek voor het ontwikkelen van toepassingen
-breadcrumb-title: Handleiding voor ontwikkelen
-user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
+user-guide-title: AEM 6.5 Gebruikershandleiding voor ontwikkeling
+breadcrumb-title: Handleiding voor ontwikkeling
+user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
-# AEM 6.5 Handboek voor het ontwikkelen van toepassingen {#developing}
+# AEM 6.5 Gebruikershandleiding voor ontwikkeling {#developing}
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
@@ -139,7 +139,7 @@ ht-degree: 5%
       + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [AEM GraphQL API met inhoudfragmenten - Inhoud en query&#39;s als voorbeeld](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
       + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
 + Ontwikkeling van hybride en SPA AEM{#spas}
    + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)

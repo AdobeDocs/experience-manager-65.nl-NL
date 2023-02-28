@@ -1,19 +1,19 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: AEM Inhoud en Handel
-breadcrumb-title: Handleiding
-user-guide-description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren.
+user-guide-title: AEM Content en Commerce
+breadcrumb-title: Gids voor Commerce
+user-guide-description: Begrijp hoe u AEM Content en Commerce kunt gebruiken en beheren.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '123'
+ht-degree: 25%
 
 ---
 
 
 # Handel {#commerce}
 
-+ [AEM Inhoud en Handel](/help/commerce/home.md)
++ [AEM Content en Commerce](/help/commerce/home.md)
 + [Opvallende wijzigingen in AEM inhoud en handel](cif/changes.md)
 + [Inleiding en overzicht](cif/introduction.md)
 + Integrations {#integrations}

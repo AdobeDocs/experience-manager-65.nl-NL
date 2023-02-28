@@ -4,18 +4,18 @@ product: adobe experience manager
 sub-product: forms
 solution: Experience Manager, Experience Manager Forms
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.5 Forms Guide
-breadcrumb-title: Forms Guide
-user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
+user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
+breadcrumb-title: Gids voor formulieren
+user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
 workflow-type: tm+mt
 source-wordcount: '3835'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager 6.5 Forms Guide {#forms}
+# Adobe Experience Manager 6.5 Handleiding voor formulieren {#forms}
 
 + [AEM 6.5 Forms Guide](home.md)
 + Releaseopmerkingen {#release-notes-new-features}

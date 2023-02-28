@@ -1,25 +1,25 @@
 ---
 sub-product: AEM Headless Journeys
-user-guide-title: Reizen zonder kop AEM
-breadcrumb-title: Reizen zonder kop AEM
-user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
+user-guide-title: AEM Headless Journeys
+breadcrumb-title: AEM Headless Journeys
+user-guide-description: Begin hier voor een begeleide journey door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden en hoe u ze kunt gebruiken voor uw project.
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '225'
+ht-degree: 18%
 
 ---
 
 
-# Reizen zonder kop AEM {#headless-journey}
+# AEM Headless Journeys {#headless-journey}
 
-+ [Reizen zonder kop AEM](/help/journey-headless/home.md)
++ [AEM Headless Journeys](/help/journey-headless/home.md)
 + AEM Headless Developer Journey {#developer}
    + [Doorschijnend begrijpen in AEM](developer/overview.md)
    + [Meer informatie over CMS Headless Development](developer/learn-about.md)
-   + [Aan de slag met AEM headless](developer/getting-started.md)
+   + [Aan de slag met AEM Headless](developer/getting-started.md)
    + [Pad naar uw eerste ervaring met AEM zonder kop](developer/path-to-first-experience.md)
    + [Hoe te om uw inhoud als Modellen van de Inhoud te modelleren AEM](developer/model-your-content.md)
    + [Toegang krijgen tot uw inhoud via AEM API&#39;s voor levering](developer/access-your-content.md)

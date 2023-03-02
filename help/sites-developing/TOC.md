@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkeling
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1317'
 ht-degree: 6%
 
 ---
@@ -139,8 +139,10 @@ ht-degree: 6%
       + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
       + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
+      + [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
       + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
+      + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
 + Ontwikkeling van hybride en SPA AEM{#spas}
    + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [SPA Inleiding en Analyse](spa-walkthrough.md)

@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
+source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3846'
 ht-degree: 1%
 
 ---
@@ -689,6 +689,7 @@ ht-degree: 1%
    + [Kan op XFA gebaseerde PDF forms niet openen in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer of Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
    + [Service niet-beschikbare fouten na installatie van AEM servicepack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

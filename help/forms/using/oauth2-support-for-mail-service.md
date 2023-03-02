@@ -1,9 +1,10 @@
 ---
 title: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® Office 365-mailserverprotocollen
 description: Op OAuth2 gebaseerde verificatie configureren voor Microsoft® Office 365-mailserverprotocollen
-source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
+exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
+source-git-commit: d19de2955adef56570378a6d62ec0015718f9039
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ In het bovenstaande geval
    >[!NOTE]
    >
    > * Voor **Accounts in any organizational directory (Any Azure AD directory - Multihuurder)** toepassing, wordt aangeraden om een werkaccount te gebruiken in plaats van een persoonlijke e-mailaccount.
-   > * **Alleen persoonlijke Microsoft®-accounts** en **Enkelvoudige huurder** toepassingen worden niet ondersteund.
+   > * **Alleen persoonlijke Microsoft®-accounts** toepassing wordt niet ondersteund.
    > * Het wordt aanbevolen **Microsoft®-account voor meerdere gebruikers** toepassing.
 
 
@@ -71,6 +72,10 @@ Vervolgens moet u de machtigingscode genereren, zoals in de volgende stappen wor
 
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
 
+   >[!NOTE]
+   >
+   > In het geval van de enige huurdersaanvraag vervangt u `common` met uw `[tenantid]` in de volgende URL voor het genereren van machtigingscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+
 1. Als u de bovenstaande URL typt, wordt u omgeleid naar het aanmeldingsscherm:
    ![Aanmeldingsscherm](/help/forms/using/assets/azure_loginscreen.png)
 
@@ -91,6 +96,11 @@ Vervolgens moet u het vernieuwingstoken genereren. Dit wordt in de volgende stap
 1. Vervang de `clientID`, `client_secret` en `redirect_uri` met de waarden voor uw toepassing samen met de waarde van `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
+
+   >[!NOTE]
+   >
+   > In één huurderstoepassing, om te produceren verfrist me gebruik het volgende cURL bevel en vervangt `common` met de `[tenantid]` in:
+   >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Noteer het token voor vernieuwen.
 
@@ -116,7 +126,7 @@ Nu moet u de e-mailservice op de nieuwste JEE-server configureren door u aan te 
    >[!NOTE]
    >
    >* Het protocol van de Veiligheid van het vervoer heeft geldige waarden zoals: &#39;blank&#39;, &#39;SSL&#39; of &#39;TLS&#39;. U moet waarden instellen voor **SMTP-transportbeveiliging** en **Vervoersbeveiliging ontvangen** tot **TLS** voor het inschakelen van Auth Authentication Service.
-   >* **POP3-protocol** wordt niet ondersteund voor OAuth.
+   >* **POP3-protocol** wordt niet ondersteund voor OAuth bij het gebruik van e-maileindpunten.
 
 
    ![Verbindingsinstellingen](/help/forms/using/assets/oauth_connectionsettings.png)
@@ -162,4 +172,3 @@ Nu moet u de e-mailservice op de nieuwste JEE-server configureren door u aan te 
 * Als de e-mailservice niet goed werkt. Probeer de `Refresh Token` zoals hierboven beschreven. Het duurt een paar minuten voordat de nieuwe waarde is geïmplementeerd.
 
 * Fout bij het configureren van de gegevens van de e-mailserver in het eindpunt van de e-mailserver met Workbench.Probeer het eindpunt te configureren via Admin UI in plaats van Workbench.
-

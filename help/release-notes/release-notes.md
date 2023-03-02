@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 676472125cf472d42b792fae87dffe263e499014
 workflow-type: tm+mt
-source-wordcount: '2172'
+source-wordcount: '2581'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,30 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
 
 ## [!DNL Forms] {#forms-6516}
 
->[!NOTE]
->
->Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Releasedatum van Service Pack. In dit geval worden de invoegpakketten op donderdag 2 maart 2023 uitgebracht. Daarnaast wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie.
+### [!DNL Forms] Belangrijkste kenmerken {#forms-features-6516}
 
-<!--
-### [!DNL Forms] Fixes {#forms-fixes-6516}
--->
+* [Forms zonder hoofdadapter](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) stelt u uw ontwikkelaars in staat om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface.
+
+* [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) zijn 24 open-source, BEM-compatibele componenten die op de basis van de Adobe Experience Manager WCM Core Components zijn gebouwd. Deze componenten zijn open-source en bieden ontwikkelaars de mogelijkheid om deze componenten eenvoudig aan te passen en uit te breiden, zodat ze voldoen aan de specifieke behoeften van hun organisatie. Iedereen met bestaande vaardigheden om zich aan te passen [WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) U kunt deze componenten eenvoudig aanpassen en opmaken.
+
+* De dienst van de Uitbreiding van de Reader op OSGi verstrekt nu afzonderlijke opties om de invoer en de uitvoergebruiksrechten op een PDF toe te laten om gegevens in Adobe Acrobat Reader in te voeren of uit te voeren. (NPR-39909)
+
+### [!DNL Forms] Oplossingen {#forms-fixes-6516}
+
+* Wanneer u een stap Taak toewijzen** gebruikt om een melding voor een toegewezen taak te verzenden, worden twee e-mails verzonden in plaats van één naar de toegewezen persoon. (NPR-40078)
+* Wanneer een gebruiker de tabelkoppen verbergt, wordt de eerder ingestelde kolombreedte gedeactiveerd en behouden alle kolommen dezelfde breedte. (NPR-40063)
+* Als u het standaardwachtwoord van de beheerder wijzigt van `admin`, tijdens de uitvoering van de `Prepare Adobe Experience Manager Server For DSC deployment` controleer het AEM Forms JEE de dienstpak het ontbreekt. (NPR-40062), (NPR-39387)
+* De OutputService- en AssemblerService-API&#39;s converteren het PDF-formulier niet naar PDF/A. (NPR-39990)
+* De AssemblerService kan PDF niet in PDF/A omzetten. Wanneer een gebruiker PDF in PDF/A omzet, komt de volgende fout voor: `PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
+* Wanneer validatie aan de serverzijde mislukt voor een API-aanroep van GuideSubmitServlet, worden de fouten niet geretourneerd in de reactie die naar de client is verzonden. (NPR-39925)
+* Na bevordering aan AEM 6.5.15.0 Service Pack op de server van Vensters, ontmoet de gebruiker veelvoudige foutenmeldingen, en de e-maildienst werkt niet.(NPR-39919)
+* Wanneer u aan AEM 6.5.14.0 bevordert en de dienst importData gebruikt om PDF met XML samen te voegen, komt de volgende fout voor: `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
+* Wanneer de gebruiker installeert **Documentbeveiligingsbureau** voor extensie, doen zich de volgende problemen voor:
+   * Microsoft® Excel crasht vaak.
+   * Tijdens het openen van een beveiligd document **Documentbeveiligingsbureau** extensie is niet gedetecteerd als geïnstalleerd op een computer. Geeft de gebruiker de opdracht de beveiligingsextensie te downloaden en installeren. (NPR-39768)
+* Nadat een gebruiker aan AEM 6.5.15.0 Service Pack upgradet, werkt de omzetting van PostScript aan PDF niet. (NPR-39765), (NPR-39764)
+* Wanneer de gebruiker het touroperscherm probeert te openen nadat een adaptief formulier is geopend, mislukt dit met een NullPointer-uitzondering:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* Wanneer de gebruiker in Windows zwarte instellingen met hoog contrast inschakelt, wordt de HTML5 Forms-inhoud onduidelijk wanneer deze als een HTML-voorvertoning in de browser wordt weergegeven. (NPR-39018)
 
 ## Integrations {#integrations-6516}
 
@@ -205,16 +222,7 @@ Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadple
 
 ### Service Pack installeren voor [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
->[!NOTE]
->
->Overslaan als u dit niet gebruikt [!DNL Experience Manager] Forms.
-
-Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Service Pack-release.
-
-<!-- 
-
-For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
--->
+Voor instructies voor het installeren van het servicepakket op AEM Forms raadpleegt u [Installatie-instructies voor AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -264,7 +272,7 @@ Dit pakket is nodig voor klanten die GraphQL gebruiken. hierdoor kunnen ze de ve
 
 * Werk uw GraphQL-query&#39;s die mogelijk een aangepaste API-naam voor uw inhoudsmodel hebben gebruikt bij om in plaats daarvan de standaardnaam van het inhoudsmodel te gebruiken.
 
-* Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
+* Als [!DNL Microsoft®® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 
 * Als u uw [!DNL Experience Manager] -exemplaar van 6.5.0 - 6.5.4 naar het nieuwste servicepakket op Java™ 11, zie `RRD4JReporter` uitzonderingen in de `error.log` bestand. Start de instantie van [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
@@ -289,6 +297,9 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
      ]
    "refresh": true
    ```
+
+* In AEM Forms werkt het POP3-protocol niet met e-maileindpunten voor Microsoft® Office 365.
+* Op JBoss® 7.1.4-platform, wanneer de gebruiker AEM 6.5.16.0-servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen {#osgi-bundles-and-content-packages-included}
 

@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: eb7051582a51d983851c876025770668b258bff5
+source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '5993'
 ht-degree: 2%
@@ -47,7 +47,7 @@ Selecteer [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2
 Doorloop afspelen ingeschakeld [hoe interactieve video&#39;s worden gemaakt](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo) (7 minuten en 30 seconden).
 Hoewel de videoanalyse met Activa op bestelling wordt gemerkt, zijn de principes en de stappen nog van toepassing op Interactive Video in Adobe Experience Manager Assets.
 
-### Adobe Klantsucces Webinar {#adobe-customer-success-webinar}
+### Adobe-oplossingen voor klanten Webinar {#adobe-customer-success-webinar}
 
 De webinar ‘Interactive Video, Link Sharing en YouTube sharing gebruiken in Experience Manager Assets’ leert u hoe u interactieve video en andere functies kunt gebruiken om conversie-gebeurtenissen te koppelen aan uw video marketing inhoud.
 
@@ -72,8 +72,9 @@ Wanneer u de zelfstudie voltooit in de laatste voorbeeldsectie, ziet de laatste 
 Interactieve videostappen:
 
 1. **(Optioneel) Quickview-variabelen identificeren** - Begin door dynamische variabelen te identificeren die door uw bestaande implementatie worden gebruikt Quickview. U gebruikt de variabelen om productminiaturen toe te wijzen aan hun overeenkomstige productQuickView wanneer u uw interactieve video creeert. Zie [(Optioneel) Quickview-variabelen identificeren](#optional-identifying-quickview-variables).
-   *Deze stap is alleen vereist als aan alle volgende voorwaarden is voldaan*: ・ U wilt interactiviteit aan uw video toevoegen door aan Snelle mening te teweegbrengen.
-・ Uw implementatie van Experience Manager doet dit *niet* gebruik een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, Hybris of Intershop, in de Experience Manager te krijgen. Zie [Concepten van e-handel in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+   *Deze stap is alleen vereist als aan alle volgende voorwaarden is voldaan*:
+   * U wilt interactiviteit aan uw video toevoegen door aan Snelle mening te teweegbrengen.
+   * Uw implementatie van Experience Manager doet *niet* gebruik een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, Hybris of Intershop, in de Experience Manager te krijgen. Zie [Concepten van e-handel in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optioneel) Een voorinstelling voor een interactieve videoviewer maken** - Pas de weergave en het gedrag aan van verschillende componenten waaruit de speler bestaat, zoals de videoscrubber en de interactieve miniaturen.
 Het is niet nodig een eigen voorinstelling voor een interactieve videoviewer te maken als u de voorinstellingen voor de externe interactieve videoviewer wilt gebruiken. `Shoppable_Video_Light` of `Shoppable_Video_Dark` in plaats daarvan.
@@ -104,9 +105,8 @@ Als u een externe WCM (Web Content Manager) gebruikt, moet u de nieuwe interacti
 >
 >* U wilt interactiviteit aan uw video toevoegen door aan Snelle mening te teweegbrengen.
 >* Uw implementatie van Experience Manager doet *niet* gebruik een eCommerce-integratieframework om productgegevens vanuit elke eCommerce-oplossing, zoals IBM® WebSphere® Commerce, Elastic Path, Hybris of Intershop, in de Experience Manager te krijgen. Zie [Concepten van e-handel in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
 >
->Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
+Als uw implementatie van Experience Manager eCommerce gebruikt, kunt u deze taak overslaan en aan de volgende taak te werk gaan.
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u productduimnagels aan hun overeenkomstige productSnelle mening tijdens het interactieve videoaanmaakproces kunt in kaart brengen.
 
@@ -246,8 +246,7 @@ Zie [Een nieuwe voorinstelling voor viewers maken](/help/assets/managing-viewer-
 Als u de video en miniatuurelementen al hebt geüpload, gaat u verder met [Interactiviteit toevoegen aan uw video](#adding-interactivity-to-your-video).
 
 >[!NOTE]
->
->De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media.
+De MXF-video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media.
 
 Als u de verkeerde video&#39;s of afbeeldingen hebt geüpload of als u geüploade video&#39;s of afbeeldingen wilt verwijderen die u niet meer nodig hebt, raadpleegt u [Elementen verwijderen](/help/assets/manage-assets.md#deleting-assets).
 
@@ -269,12 +268,10 @@ Nadat u tijdlijnsegmenten hebt toegevoegd, voegt u miniatuurafbeeldingen toe bin
 Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
->
->De gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Om dit probleem te verhelpen, kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
+De gereedschappen voor het delen van sociale media in interactieve video worden niet ondersteund wanneer u de viewer insluit in een ervaringsfragment. Om dit probleem te verhelpen, kunt u voorinstellingen voor viewers gebruiken of maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
 >[!NOTE]
->
->De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
+De op URL gebaseerde methode van het verbinden is niet mogelijk als uw interactieve inhoud verbindingen met relatieve URLs, in het bijzonder verbindingen met Experience Manager Sites pagina&#39;s heeft.
 
 Opties voor Ongedaan maken en Opnieuw worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
@@ -495,8 +492,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    Als u klaar bent, selecteert u **[!UICONTROL Save]**.
 
    >[!NOTE]
-   >
-   >Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. De `.vtt` bestand wordt opgeslagen in de `_VTT` map in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
+   Wanneer u uw interactieve video opslaat, wordt er automatisch een gekoppeld `.vtt`-bestand bij opgeslagen. De `.vtt` bestand wordt opgeslagen in de `_VTT` map in de hoofdmap van **[!UICONTROL Assets]**. Uw interactieve video kan alleen correct worden afgespeeld op uw website als het bestand en de map aanwezig zijn. Verplaats, bewerk of verwijder daarom de map `_VTT` of de content ervan niet.
 
 1. Publiceer de interactieve video. Met Publiceren maakt u de insluitcode of URL die u uiteindelijk kopieert en plakt naar uw website.
 
@@ -505,8 +501,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
    Zie [Elementen publiceren](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
-   >
-   >Als u een schokkbare video wilt publiceren met QuickView, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
+   Als u een schokkbare video wilt publiceren met QuickView, moet u ook elk van de verwante afbeeldingselementen van de video afzonderlijk publiceren vanuit uw handelsgebied.
 
    Nadat u tijdlijnsegmenten hebt toegevoegd en de interactieve video hebt gepubliceerd, kunt u deze toevoegen aan de openingspagina van uw bestaande website. Zie [Een interactieve video integreren met uw website](#integrating-an-interactive-video-with-your-website).
 
@@ -531,10 +526,8 @@ Als u interactiviteit met Snelle mening toevoegde, gebruik slechts de ingebedcod
 De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat deze automatisch past in het gebied dat eerder werd ingenomen door de statische video.
 
 >[!NOTE]
->
->Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
->
->Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. ze zijn nog niet geïntegreerd met uw bestaande QuickView. In dat geval moet u de interactieve video nu integreren met de bestaande QuickView op uw website.
+Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
+Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, gelden de miniaturen naast de interactieve video alleen voor weergavedoeleinden. ze zijn nog niet geïntegreerd met uw bestaande QuickView. In dat geval moet u de interactieve video nu integreren met de bestaande QuickView op uw website.
 
 **Voorbeeld**
 
@@ -576,8 +569,7 @@ Integratie is zo eenvoudig als het verwijderen van de video-insluitcode en het v
 ## Een interactieve video integreren met een bestaande QuickView {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
->
->Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
+Deze taak is alleen van toepassing als u een zelfstandige Experience Manager Assets-klant bent.
 
 De laatste stap in dit proces is uw interactieve video te integreren met een bestaande implementatie van de Snelle mening die op uw website wordt gebruikt. Er is geen oplossing voor de integratie die in alle gevallen werkt. Elke Quickview-implementatie is uniek. Daarom is een specifieke aanpak nodig waarbij een front-end IT-persoon wordt bijgestaan.
 

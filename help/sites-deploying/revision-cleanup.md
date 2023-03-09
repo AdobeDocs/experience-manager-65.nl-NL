@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
+source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
 workflow-type: tm+mt
-source-wordcount: '5918'
+source-wordcount: '5898'
 ht-degree: 0%
 
 ---
@@ -574,15 +574,9 @@ Error.log zal uitgebreid zijn als er incidenten tijdens het online herzieningspr
 
 >[!CAUTION]
 >
->Afhankelijk van de eikenversie die u gebruikt bij de installatie van de AEM, moeten verschillende versies van het gereedschap voor het uitvoeren van de eek worden gebruikt. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
->
->* Voor eiken-versies **1.0.0 tot en met 1.0.11** of **1.1.0 tot en met 1.1.6**, gebruik Oak-run versie** 1.0.11**
->
->* Voor eiken-versies **nieuwer dan bovenstaande**, gebruikt u de versie van de eik-run die overeenkomt met de eik-kern van de AEM-installatie.
->
+>Gebruik een release van een gereedschap dat wordt uitgevoerd met een versienummer (zowel primair als secundair) dat overeenkomt met de kernversie van de AEM. Als uw AEM-instantie bijvoorbeeld Oak-kernversie 1.22.x heeft, moet u Eak-run-gereedschapversie 1.22.x gebruiken.
 
-
-Adobe biedt een hulpprogramma met de naam **Eak-run** voor het uitvoeren van revisie opschonen. U kunt het downloaden op de volgende locatie:
+Adobe biedt een hulpprogramma met de naam **Eak-run** om de revisie op te schonen. U kunt het downloaden op de volgende locatie:
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 

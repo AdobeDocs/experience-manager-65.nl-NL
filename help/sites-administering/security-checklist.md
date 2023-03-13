@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
+source-git-commit: 7efe4a011d831c34f6aafd877654e8b41fec96e0
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2889'
 ht-degree: 0%
 
 ---
@@ -86,19 +86,25 @@ Voor meer informatie bij het veranderen van het wachtwoord van de Webconsole, zi
 
 #### Het beheerwachtwoord voor de OSGi-webconsole wijzigen {#changing-the-osgi-web-console-admin-password}
 
-U moet het wachtwoord ook veranderen dat voor de toegang tot van de console van het Web wordt gebruikt. Dit wordt gedaan door de volgende eigenschappen van te vormen [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
+U moet het wachtwoord ook veranderen dat voor de toegang tot van de console van het Web wordt gebruikt. Dit gebeurt met een [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) om de volgende eigenschappen van **Apache Felix OSGi Management Console**:
 
-**Gebruikersnaam** en **Wachtwoord**, de referenties voor toegang tot de Apache Felix Web Management Console zelf.
-Het wachtwoord moet na de eerste installatie worden gewijzigd om de beveiliging van uw exemplaar te garanderen.
+* **Gebruikersnaam** en **Wachtwoord**, de referenties voor toegang tot de Apache Felix Web Management Console zelf.
+Het wachtwoord moet worden gewijzigd *na* de eerste installatie om de veiligheid van uw instantie te verzekeren.
 
 Dit doet u als volgt:
 
-1. Ga naar de webconsole op `<server>:<port>/system/console/configMgr`.
-1. Navigeren naar **Apache Felix OSGi Management Console** en wijzigt u de **gebruikersnaam** en **password**.
+>[!NOTE]
+>
+>Zie [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) voor volledige details van het vormen van montages OSGi.
+
+1. Met de **Gereedschappen**, **Bewerkingen** menu, opent u de **Webconsole** en navigeer naar de **Configuratie** sectie.
+Bijvoorbeeld bij `<server>:<port>/system/console/configMgr`.
+1. Navigeer naar en open het item voor **Apache Felix OSGi Management Console**.
+1. Wijzig de **gebruikersnaam** en **password**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. Klikken **Opslaan**.
+1. Selecteren **Opslaan**.
 
 ### Aangepaste fouthandler implementeren {#implement-custom-error-handler}
 

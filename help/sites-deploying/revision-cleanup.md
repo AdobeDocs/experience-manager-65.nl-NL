@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
+source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5903'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Bij elke update van de opslagplaats wordt een nieuwe inhoudsrevisie gemaakt. Als gevolg hiervan neemt de grootte van de gegevensopslagruimte bij elke update toe. Om ongecontroleerde groei van opslagplaatsen te voorkomen, moeten oude revisies worden opgeschoond tot vrije schijfmiddelen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het is sinds AEM 6.0 als offline routine beschikbaar.
+Bij elke update van de opslagplaats wordt een nieuwe inhoudsrevisie gemaakt. Als gevolg hiervan neemt bij elke update de grootte van de gegevensopslagruimte toe. Oude revisies moeten worden opgeruimd tot vrije schijfbronnen - dit is belangrijk om ongecontroleerde groei van de opslagplaats te voorkomen. Deze onderhoudsfunctionaliteit wordt Revision Cleanup genoemd. Het is sinds AEM 6.0 als offline routine beschikbaar.
 
 Met AEM 6.3 en hoger werd een onlineversie van deze functie genaamd Online Revision Cleanup geïntroduceerd. In vergelijking met de offlinerevisie Cleanup, waarbij de AEM instantie moet worden afgesloten, kan Online revisie Cleanup worden uitgevoerd terwijl de AEM online is. Onlinerevisie opschonen is standaard ingeschakeld en is de aanbevolen manier om een revisie op te schonen.
 

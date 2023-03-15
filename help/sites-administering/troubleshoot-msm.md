@@ -4,9 +4,9 @@ description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwestie
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: 289c4644063504ec3c8e02d930933ad7260600f0
+source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,14 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Gebruik deze optie op een blauwdrukpagina om de lijst op te halen met alle Live-kopieën die eraan zijn gekoppeld, met extra statusinformatie voor Live Copy.
+   * bijvoorbeeld:
+      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+
+
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Gebruik deze optie op Live Copy-pagina&#39;s om geavanceerde informatie op te halen over de verbinding met de bijbehorende pagina&#39;s. Als de pagina geen live kopie is, wordt er niets geretourneerd.
+   * bijvoorbeeld:
+      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Deze servers genereren FOUTOPSPORING-logberichten via de `com.day.cq.wcm.msm` registreerapparaat dat ook nuttig kan zijn.
 

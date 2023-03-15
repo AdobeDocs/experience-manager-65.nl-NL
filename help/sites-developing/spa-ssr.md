@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: 1ee82589ca9284a8ad5ecf3ca156fe10f314846a
+source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1751'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ In de volgende secties wordt beschreven hoe Adobe I/O Runtime kan worden gebruik
 
 >[!NOTE]
 >
->Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor de Toepassingen van de Vuurwerk van het Project](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) voor meer informatie .
+>Adobe beveelt een aparte Adobe I/O Runtime-werkruimte aan per omgeving (werkgebied, proefperiode, testen, enz.). Dit staat voor typische patronen van de het levenscyclus van de systeemontwikkeling (SDLC) met verschillende versies van één enkele toepassing toe die aan verschillende milieu&#39;s worden opgesteld. Zie het document [CI/CD voor de Toepassingen van de Bouwer van de Project](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) voor meer informatie .
 >
 >Er is geen aparte werkruimte nodig per instantie (auteur, publiceren), tenzij er verschillen zijn in de runtimplementatie per instantietype.
 

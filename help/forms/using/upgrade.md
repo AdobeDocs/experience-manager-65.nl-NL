@@ -11,9 +11,9 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 879855af80ffdaa9c5f40e43f8b1543ed9305c13
+source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ U kunt een multi-hopverbetering van ook uitvoeren
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
 
-AEM 6.5.12.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: [Volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) en [Patchinstallatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
+AEM 6.5.12.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: [Volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [Patchinstallatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 **Volledig installatieprogramma**: U kunt het volledige installatieprogramma gebruiken om nieuwe AEM Forms-exemplaren in te stellen of upgrades uit te voeren van AEM 6.3 Forms op JEE, AEM 6.4 op JEE en een upgrade van AEM 6.5.x.x Forms op JEE naar AEM 6.5.12.0 Forms op JEE.
 
@@ -66,7 +66,7 @@ AEM 6.5.12.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: [Volledig
 
 In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledige installatieprogramma en het patchinstallatieprogramma.
 
-![](assets/full-and-patch-installer.png)
+![Volledig installatieprogramma en patchinstallatieprogramma](/help/forms/using/assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]

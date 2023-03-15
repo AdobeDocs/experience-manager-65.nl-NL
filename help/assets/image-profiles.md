@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
+source-git-commit: f93e57c861ceda20ee82019da38b3b16791dbd0d
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 6%
+source-wordcount: '2922'
+ht-degree: 4%
 
 ---
 
@@ -38,18 +38,21 @@ Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md).
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Dit zorgt ervoor dat er geen invloed is op de verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
+De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel de hoogte-breedteverhouding voor de toegevoegde afmetingen in het afbeeldingsprofiel gelijk is, wordt dezelfde hoogte-breedteverhouding naar Dynamic Media verzonden. Adobe raadt u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat er invloed optreedt op verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt.
 
 Voor elke SmartCrop-generatie die u maakt, is extra verwerkingstijd nodig. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het veroorzaakt ook een verhoogde belasting op systemen. Omdat u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap in mappen te gebruiken *alleen* waar dat nodig is.
 
 **Richtlijnen voor het definiëren van SmartCrop in een afbeeldingsprofiel**
 Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop onder controle te houden en de verwerkingstijd en opslag van gewassen te optimaliseren:
 
-* Maak geen dubbele slimme uitsnijdprofielen met dezelfde breedte- en hoogtewaarden.
-* Noem slimme gewassen die op gewassenafmetingen worden gebaseerd, niet op eindgebruik. Dit helpt u te optimaliseren voor duplicaten waarbij één dimensie op meerdere pagina&#39;s wordt gebruikt.
+* Op afbeeldingselementen waarop een slimme uitsnijding wordt toegepast, moet minimaal 50 x 50 pixels of groter zijn. &lt;!— CQDOC-20087>
+* Een afbeeldingsprofiel dat dubbele slimme-uitsnijdafmetingen bevat, is niet toegestaan. &lt;!— CQDOC-20087>
+* Dubbele benoemde afbeeldingsprofielen waarvoor opties voor slim uitsnijden zijn ingesteld, zijn niet toegestaan. &lt;!— CQDOC-20087>
 * Maak paginagewijs/middelengewijs afbeeldingsprofielen voor specifieke mappen en submappen in plaats van een algemeen profiel voor slimme uitsnijdingen dat wordt toegepast op alle mappen of alle elementen.
-* Een afbeeldingsprofiel dat u op submappen toepast, overschrijft een afbeeldingsprofiel dat op de map is toegepast.
+* Een afbeeldingsprofiel dat u toepast op submappen, overschrijft een afbeeldingsprofiel dat is toegepast op de map.
 * In het ideale geval hebt u 10-15 slimme gewassen per afbeelding om de beeldverhoudingen en de verwerkingstijd te optimaliseren.
+<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
 
 U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
 
@@ -111,7 +114,7 @@ Zie ook [Aanbevolen procedures voor het ordenen van uw digitale middelen voor he
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Een Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
+## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één afbeeldingsprofiel aan een map kunt toewijzen. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -119,7 +122,7 @@ Als u een ander afbeeldingsprofiel aan een map hebt toegewezen, overschrijft het
 
 Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangegeven met de profielnaam die op de kaart wordt weergegeven.
 
-<!-- When you add smart crop to an existing image profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
+<!-- When you add smart crop to an existing Image Profile, you need to re-trigger the [DAM Update Asset workflow](assets-workflow.md) if you want to generate crops for existing assets in your asset repository. -->
 
 U kunt afbeeldingsprofielen toepassen op specifieke mappen of op alle elementen.
 
@@ -127,7 +130,7 @@ U kunt elementen opnieuw verwerken in een map die al een bestaand afbeeldingspro
 
 ### Dynamic Media-afbeeldingsprofielen toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
 
-U kunt een afbeeldingsprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren op mappen kunt toepassen.
+U kunt een afbeeldingsprofiel toepassen op een map vanuit de **[!UICONTROL Tools]** of als u zich in de map bevindt, vanuit **[!UICONTROL Properties]**. In deze sectie wordt beschreven hoe u op beide manieren afbeeldingsprofielen kunt toepassen op mappen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
@@ -142,7 +145,7 @@ U kunt elementen in een map opnieuw verwerken die al een bestaand videoprofiel h
 
 1. Selecteren **[!UICONTROL Apply Processing Profile to Folders]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en selecteer **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit Eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
 1. Selecteer het logo van het Experience League en navigeer naar **[!UICONTROL Assets]**. Navigeer vervolgens naar de bovenliggende map van de map waarop u een afbeeldingsprofiel wilt toepassen.
 1. Selecteer in de map het vinkje om het te selecteren en selecteer vervolgens **[!UICONTROL Properties]**.
@@ -254,11 +257,11 @@ U kunt slimme uitsnijdingen opnieuw uitvoeren als u de extra uitsnijdingen opnie
 
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Save]** selecteert u vervolgens **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Een Dynamic Media-afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
+## Dynamic Media-afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
 Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
-U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
+U kunt een afbeeldingsprofiel uit een map verwijderen vanuit de map **[!UICONTROL Tools]** of als u zich in de map bevindt, vanuit **[!UICONTROL Properties]**. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
 
 ### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
@@ -268,9 +271,9 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Eigenschappen Dynamic Media-afbeeldingsprofielen uit mappen verwijderen {#removing-image-profiles-from-folders-via-properties}
 
-1. Selecteer het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** en vervolgens naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
+1. Selecteer het logo van de Experience Manager en navigeer **[!UICONTROL Assets]** en vervolgens naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Selecteer in de map het vinkje om het te selecteren en selecteer vervolgens **[!UICONTROL Properties]**.
 1. Selecteer **[!UICONTROL Image Profiles]** tab.
 1. Van de **[!UICONTROL Profile Name]** vervolgkeuzelijst, selecteert u **[!UICONTROL None]** selecteert u vervolgens **[!UICONTROL Save & Close]**.

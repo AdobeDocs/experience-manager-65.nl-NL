@@ -1,16 +1,15 @@
 ---
 title: Opvallende wijzigingen van de add-on van het kader voor de integratie van de handel (CIF)
 description: Opvallende wijzigingen van de add-on van het Commerce Integration Framework (CIF) in vergelijking met de oude CIF-versies.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
-# Opvallende veranderingen in de toe:voegen-on{#notable-changes} van het Kader van de Integratie van de Handel (CIF)
+# Opvallende wijzigingen in de add-on van het kader voor de integratie van de handel (CIF){#notable-changes}
 
 In dit document worden de belangrijke verschillen tussen de add-on en oude CIF-versies van het kader voor de integratie van de handel (Commerce Integration Framework, CIF) belicht, die voornamelijk CIF Classic (Quickstart) en CIF Open-source worden genoemd.
 
@@ -34,7 +33,7 @@ Het eindpunt wordt gevormd via console OSGi.
 
 ## Plaatsing van het CIF-project van Venia
 
-Project beschikbaar op [GitHub AEM Gidsen - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) en plaatsing die via AEM de Manager van het Pakket wordt gedaan.
+Project beschikbaar op [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) en implementatie via AEM Package Manager.
 
 **Vorige CIF-versies**
 
@@ -58,4 +57,4 @@ AEM geeft de ervaringen van de productcatalogus direct weer met behulp van AEM c
 
 >[!NOTE]
 >
->Raadpleeg [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) voor aanvullende documentatie over het gebruik van CIF met AEM Beheerde Service of AEM On-Premise
+>Voor extra documentatie over hoe te om CIF met AEM Beheerde Dienst of AEM Op locatie te gebruiken, verwijs naar [Kader voor integratie in de handel](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

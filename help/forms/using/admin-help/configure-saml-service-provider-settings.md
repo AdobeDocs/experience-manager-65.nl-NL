@@ -1,31 +1,30 @@
 ---
 title: SAML-serviceleverinstellingen configureren
-seo-title: SAML-serviceleverinstellingen configureren
+seo-title: Configure SAML service provider settings
 description: U kunt de instellingen van SAML-serviceproviders zodanig configureren dat gebruikers zich kunnen aanmelden en zich kunnen verifiëren bij AEM formulieren via een opgegeven externe identiteitsprovider (IDP).
-seo-description: U kunt de instellingen van SAML-serviceproviders zodanig configureren dat gebruikers zich kunnen aanmelden en zich kunnen verifiëren bij AEM formulieren via een opgegeven externe identiteitsprovider (IDP).
+seo-description: You can configure SAML service provider settings to allow users to login and authenticate to AEM forms via a specified third-party identity provider (IDP).
 uuid: 14c706ad-8b1c-4c03-9cd4-97424f2162bc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
 
-
-# SAML-serviceprovider-instellingen configureren{#configure-saml-service-provider-settings}
+# SAML-serviceleverinstellingen configureren{#configure-saml-service-provider-settings}
 
 SAML (Security Assertion Markup Language) is een van de opties die u kunt selecteren wanneer u een machtiging voor een onderneming of hybride domein configureert. SAML wordt hoofdzakelijk gebruikt om SSO over veelvoudige domeinen te steunen. Wanneer SAML als uw authentificatieleverancier wordt gevormd, registreren de gebruikers en voor authentiek verklaren aan AEM vormen via een gespecificeerde derde identiteitsleverancier (IDP).
 
-Voor een verklaring van SAML, zie [de Taal van de Prijsverhoging van de Bevestiging van de Veiligheid (SAML) V2.0 Technisch Overzicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
+Voor een uitleg van SAML, zie [SAML (Security Assertion Markup Language) V2.0 - Technisch overzicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > SAML Service Provider Settings.
-1. Typ in het vak Id van Service Provider-entiteit een unieke id die u wilt gebruiken als id voor de implementatie van de AEM-provider. U specificeert ook deze unieke identiteitskaart wanneer het vormen van uw IDP (bijvoorbeeld, `um.lc.com`.) U kunt ook de URL gebruiken die wordt gebruikt om toegang te krijgen tot AEM formulieren (bijvoorbeeld `https://AEMformsserver`).
+1. Typ in het vak Id van Service Provider-entiteit een unieke id die u wilt gebruiken als id voor de implementatie van de AEM-provider. U geeft deze unieke id ook op wanneer u uw IDP configureert (bijvoorbeeld `um.lc.com`.) U kunt ook de URL gebruiken die wordt gebruikt om toegang te krijgen tot AEM formulieren (bijvoorbeeld `https://AEMformsserver`).
 1. Typ in het vak Basis-URL van serviceprovider de basis-URL voor uw formulierserver (bijvoorbeeld `https://AEMformsserver:8080`).
 1. (Optioneel) Als u wilt dat AEM formulieren ondertekende verificatieaanvragen naar de IDP kunnen verzenden, voert u de volgende taken uit:
 
@@ -63,4 +62,3 @@ Voor een verklaring van SAML, zie [de Taal van de Prijsverhoging van de Bevestig
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Klik op Opslaan.
-

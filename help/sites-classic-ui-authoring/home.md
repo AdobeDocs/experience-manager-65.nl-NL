@@ -7,7 +7,7 @@ exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '346'
-ht-degree: 10%
+ht-degree: 15%
 
 ---
 
@@ -30,8 +30,8 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

@@ -1,22 +1,21 @@
 ---
 title: Werken met Adobe Campaign
-seo-title: Werken met Adobe Campaign
+seo-title: Working with Adobe Campaign
 description: Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren en leveren op al uw online en offline kanalen
-seo-description: Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren en leveren op al uw online en offline kanalen
+seo-description: Adobe Campaign is a set of solutions that lets you personalize and deliver campaigns across all of your online and offline channels
 uuid: 1f7b48e2-9ec2-4ee8-b017-78c9d2cac48e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
-
 
 # Werken met Adobe Campaign{#working-with-adobe-campaign}
 
@@ -34,10 +33,9 @@ Zie het volgende:
 * [Adobe Campaign Forms maken in AEM](/help/sites-authoring/adobe-campaign-forms.md)
 * [Je Adobe Campaign als doelgroep instellen](/help/sites-authoring/target-adobe-campaign.md)
 
-U moet [geïntegreerde AEM met Adobe Campaign](/help/sites-administering/campaign.md) hebben.
+U moet eerder [geïntegreerde AEM met Adobe Campaign](/help/sites-administering/campaign.md).
 
 Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 
 * [Aangepaste extensies maken](/help/sites-developing/extending-campaign-extensions.md)
 * [Aangepaste formuliertoewijzingen maken](/help/sites-developing/extending-campaign-form-mapping.md)
-

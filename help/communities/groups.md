@@ -170,7 +170,7 @@ Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren o
 
 * **Vereist lidmaatschap**
 
-   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten lid worden van de groep om inhoud te posten. De leden voegen zich bij door te selecteren `Join` in de publicatieomgeving. Standaard is niet geselecteerd.
+   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. De leden voegen zich bij door te selecteren `Join` in de publicatieomgeving. Standaard is niet geselecteerd.
 
 * **Beperkt lidmaatschap**
 

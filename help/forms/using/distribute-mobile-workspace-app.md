@@ -1,23 +1,22 @@
 ---
 title: AEM Forms-app distribueren
-seo-title: AEM Forms-app distribueren
+seo-title: Distribute AEM Forms app
 description: Gebruik MDM (Mobile Device Management) voor de grootschalige implementatie van apps op mobiele apparaten.
-seo-description: Gebruik MDM (Mobile Device Management) voor de grootschalige implementatie van apps op mobiele apparaten.
+seo-description: Use Mobile Device Management (MDM) for the large-scale deployment of apps on mobile devices.
 uuid: 8a2ce42b-5e9b-42c1-a945-c069f6152f6e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-
-# AEM Forms-app {#distribute-aem-forms-app} distribueren
+# AEM Forms-app distribueren {#distribute-aem-forms-app}
 
 Met MDM (Mobile Device Management) kunnen toepassingen op grote schaal worden geïmplementeerd op mobiele apparaten.
 
@@ -40,10 +39,10 @@ De beheerder MDM kan zowel ipa als apk dossiers aan de server uploaden MDM en de
 
 De volgende profielinstellingen op uw apparaat zijn van invloed op de werking van de AEM Forms-toepassing op uw apparaat:
 
-* **Gebruik van** camerain toestaan in de sectie  **Apparaatfunctionaliteit** 
+* **Gebruik van camera toestaan** in de **Apparaatfunctionaliteit** sectie
 
-Als u **Gebruik van camera toestaan** onbruikbaar maakt, zal de camerafunctie van [Fotografieannotatie](/help/forms/using/add-attachments.md) niet functioneren. U moet deze optie inschakelen als u de camera in de app wilt gebruiken.
+Als u **Gebruik van camera toestaan**, de camerafunctie van de [Fotoaantekening](/help/forms/using/add-attachments.md) werkt niet. U moet deze optie inschakelen als u de camera in de app wilt gebruiken.
 
-* **Wachtwoord vereisen op** apparaten in de sectie Wachtwoordbeleid
+* **Wachtwoord vereisen op apparaat** in de sectie Wachtwoordbeleid
 
-Als u **codering van toepassingsgegevens** wilt inschakelen, wordt u aangeraden **wachtwoordcode** op uw apparaat in te schakelen. Als wachtwoord niet is ingesteld op het apparaat, worden de toepassingsgegevens die op het apparaat zijn opgeslagen, niet gecodeerd.
+Inschakelen **codering van toepassingsgegevens** wordt u aangeraden de **wachtwoord** op uw apparaat. Als wachtwoord niet is ingesteld op het apparaat, worden de toepassingsgegevens die op het apparaat zijn opgeslagen, niet gecodeerd.

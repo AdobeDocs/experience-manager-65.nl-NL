@@ -1,30 +1,29 @@
 ---
 title: Aan de slag met Process Reporting
-seo-title: Aan de slag met Process Reporting
+seo-title: Getting Started with Process Reporting
 description: De stappen die u moet volgen om aan de slag te gaan met AEM Forms over JEE Process Reporting
-seo-description: De stappen die u moet volgen om aan de slag te gaan met AEM Forms over JEE Process Reporting
+seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
 uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1706'
 ht-degree: 0%
 
 ---
 
-
 # Aan de slag met Process Reporting{#getting-started-with-process-reporting}
 
-De Rapportering van het proces geeft de gebruikers van AEM Forms de capaciteit om informatie over de processen van AEM Forms te vragen die momenteel in de implementatie van AEM Forms worden bepaald. Procesrapportage heeft echter niet rechtstreeks toegang tot gegevens van de AEM Forms-opslagplaats. De gegevens worden eerst gepubliceerd naar de Process Reporting repository op een geplande basis (*door de ProcessDataPublisher &amp; ProcessDataStorage service* s). De rapporten en vragen in de Rapportering van het Proces worden dan geproduceerd uit het Proces Meldend gegevens die aan de bewaarplaats worden gepubliceerd. De Rapportering van het proces is geïnstalleerd als deel van de module van de Forms Workflow.
+De Rapportering van het proces geeft de gebruikers van AEM Forms de capaciteit om informatie over de processen van AEM Forms te vragen die momenteel in de implementatie van AEM Forms worden bepaald. Procesrapportage heeft echter niet rechtstreeks toegang tot gegevens van de AEM Forms-opslagplaats. De gegevens worden voor het eerst gepubliceerd naar de Process Reporting repository (*door de ProcessDataPublisher &amp; ProcessDataStorage-service* s). De rapporten en vragen in de Rapportering van het Proces worden dan geproduceerd uit het Proces Meldend gegevens die aan de bewaarplaats worden gepubliceerd. De Rapportering van het proces is geïnstalleerd als deel van de module van de Forms Workflow.
 
 In dit artikel worden de stappen beschreven die het publiceren van AEM Forms-gegevens naar de Process Reporting repository mogelijk maken. Daarna, zult u het Rapport van het Proces kunnen gebruiken om rapporten en vragen in werking te stellen. Het artikel behandelt ook de opties beschikbaar om de diensten van de Rapportering van het Proces te vormen.
 
-## Voorwaarden {#process-reporting-pre-requisites} voor procesrapportage
+## Voorwaarden voor procesrapportage {#process-reporting-pre-requisites}
 
 ### Niet-essentiële processen zuiveren {#purge-non-essential-processes}
 
@@ -32,15 +31,15 @@ Als u momenteel Forms Workflow gebruikt, kan de AEM Forms-database mogelijk een 
 
 De publicatieservices voor Process Reporting publiceren alle AEM Forms-gegevens die momenteel in de database beschikbaar zijn. Dit houdt in dat als de database verouderde gegevens bevat waarop u geen rapporten en query&#39;s wilt uitvoeren, alle gegevens ook naar de gegevensopslagruimte worden gepubliceerd, ook al is dit niet vereist voor rapportage. U wordt aangeraden deze gegevens te wissen voordat u de services uitvoert om de gegevens naar de Process Reporting-opslagplaats te publiceren. Dit zal de prestaties van zowel de uitgeversdienst als de dienst verbeteren die de gegevens voor rapportering vraagt.
 
-Zie [Procesgegevens wissen](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html) voor meer informatie over het wissen van AEM Forms-procesgegevens.
+Voor meer informatie over het wissen van AEM Forms-procesgegevens raadpleegt u [Procesgegevens wissen](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
 
 >[!NOTE]
 >
->Zie het Adobe Developer Connection-artikel over [Opschoonprocessen en taken](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf) voor de tips en trucs van het hulpprogramma Leegmaken.
+>Raadpleeg het Adobe Developer Connection-artikel over het gebruik van het gereedschap Leegmaken voor de tips en trucs van het hulpprogramma [Leegmaken en banen](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
 
-## Services {#configuring-process-reporting-services} voor procesrapportage configureren
+## Services voor Process Reporting configureren {#configuring-process-reporting-services}
 
-### Publicatie van procesgegevens plannen {#schedule-process-data-publishing}
+### Publiceren van procesgegevens plannen {#schedule-process-data-publishing}
 
 De Process Reporting Services publiceren op geregelde basis gegevens van de AEM Forms-database naar de Process Reporting repository.
 
@@ -57,46 +56,46 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 1. Stop de AEM Forms-serverinstantie.
 1. &#x200B;
 
-   * (Voor Vensters) open het `[JBoss root]/bin/run.conf.bat` dossier in een redacteur.
-   * (Voor Linux, AIX en Solaris) `[JBoss root]/bin/run.conf.sh` dossier in een redacteur.
+   * (Voor Windows) Open het dialoogvenster `[JBoss root]/bin/run.conf.bat` in een editor.
+   * (Voor Linux, AIX en Solaris) `[JBoss root]/bin/run.conf.sh` in een editor.
 
-1. Het JVM-argument `-Dreporting.publisher.cron = <expression>.` toevoegen
+1. Het JVM-argument toevoegen `-Dreporting.publisher.cron = <expression>.`
 
    Voorbeeld: Met de volgende uitsnijdexpressie worden bij Process Reporting om de vijf uur AEM Forms-gegevens naar de Process Reporting-opslagplaats gepubliceerd:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Sla het `run.conf.bat`-bestand op en sluit het.
+1. Sla het bestand op en sluit het `run.conf.bat` bestand.
 
 1. Start de AEM Forms-serverinstantie opnieuw.
 
 1. Stop de AEM Forms-serverinstantie.
 1. Meld u aan bij de beheerconsole van WebSphere. Klik in de navigatiestructuur op **Servers** > **Toepassingsservers** en klik vervolgens in het rechterdeelvenster op de servernaam.
 
-1. Klik onder Serverinfrastructuur op **Java en Process Management** > **Process Definition**.
+1. Klik onder Serverinfrastructuur op **Java en Process Management** > **Procesdefinitie**.
 
 1. Klik onder Extra eigenschappen op **Java Virtual Machine**.
 
-   Voeg in het vak Algemene JVM-argumenten het argument `-Dreporting.publisher.cron = <expression>.` toe
+   Voeg het argument toe in het vak Generic JVM-argumenten `-Dreporting.publisher.cron = <expression>.`
 
    **Voorbeeld**: Met de volgende uitsnijdexpressie worden bij Process Reporting om de vijf uur AEM Forms-gegevens naar de Process Reporting-opslagplaats gepubliceerd:
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Klik **Toepassen**, klik O.K., en klik dan **sparen direct aan de master configuratie**.
+1. Klikken **Toepassen**, klikt u op OK en vervolgens op **Direct opslaan in de master configuratie**.
 1. Start de AEM Forms-serverinstantie opnieuw.
 1. Stop de AEM Forms-serverinstantie.
-1. Meld u aan bij de WebLogic-beheerconsole. Het standaardadres van de Console van het Beleid WebLogic is `https://[hostname]:[port]/console`.
-1. Klik onder Wijzigen midden op **Vergrendelen en bewerken**.
+1. Meld u aan bij de WebLogic-beheerconsole. Het standaardadres van de WebLogic-beheerconsole is `https://[hostname]:[port]/console`.
+1. Klik onder Wijzigen in midden op **Vergrendelen en bewerken**.
 1. Klik onder Domeinstructuur op **Omgeving** > **Servers** en klik in het rechterdeelvenster op de naam van de beheerde server.
-1. Klik in het volgende scherm op de tab **Configuration** > **Server Start**.
-1. Voeg in het tekstvak Argumenten het JVM-argument `-Dreporting.publisher.cron = <expression>` toe.
+1. Klik in het volgende scherm op de knop **Configuratie** tab > **Start server** tab.
+1. Voeg in het vak Argumenten het JVM-argument toe `-Dreporting.publisher.cron = <expression>`.
 
    **Voorbeeld**: Met de volgende uitsnijdexpressie worden bij Process Reporting om de vijf uur AEM Forms-gegevens naar de Process Reporting-opslagplaats gepubliceerd:
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
-1. Klik **Opslaan** en klik vervolgens op **Wijzigingen activeren**.
+1. Klikken **Opslaan** en klik vervolgens op **Wijzigingen activeren**.
 1. Start de AEM Forms-serverinstantie opnieuw.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
@@ -107,12 +106,12 @@ De dienst ProcessDataStorageProvider ontvangt procesgegevens van de dienst Proce
 
 Bij elke publicatiecyclus worden de gegevens opgeslagen in submappen van een vooraf gedefinieerde hoofdmap.
 
-U kunt de console van het Beleid gebruiken om de wortel (**default** te vormen: `/content/reporting/pm`) locatie en submap (**default**: `/yyyy/mm/dd/hh/mi/ss`) hiërarchie-indeling waarin de procesgegevens worden opgeslagen.
+U kunt de console van het Beleid gebruiken om de wortel te vormen (**default**: `/content/reporting/pm`) locatie en submap (**default**: `/yyyy/mm/dd/hh/mi/ss`) hiërarchieopmaak waarin de procesgegevens worden opgeslagen.
 
 #### De locaties van de Process Reporting repository configureren {#to-configure-the-process-reporting-repository-locations}
 
-1. Meld u aan bij **Beheerconsole** met beheerdersreferenties. De standaard-URL van de beheerconsole is `https://'[server]:[port]'/adminui`
-1. Navigeer naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en open de service **ProcessDataStorageProvider**.
+1. Aanmelden bij **Beheerconsole** met beheerdersreferenties. De standaard-URL van de beheerconsole is `https://'[server]:[port]'/adminui`
+1. Navigeren naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en opent u de **ProcessDataStorageProvider** service.
 
    ![process-data-storage-service](assets/process-data-storage-service.png)
 
@@ -126,9 +125,9 @@ U kunt de console van het Beleid gebruiken om de wortel (**default** te vormen: 
 
    De mappenhiërarchie waarin de procesgegevens worden opgeslagen op basis van de aanmaaktijd van het proces.
 
-   `Default`:  `/yyyy/mm/dd/hh/mi/ss`
+   `Default`: `/yyyy/mm/dd/hh/mi/ss`
 
-1. Klik **Opslaan**.
+1. Klikken **Opslaan**.
 
 ### ReportConfiguration-service {#reportconfiguration-service}
 
@@ -136,30 +135,30 @@ De dienst ReportConfiguration wordt gebruikt door Proces dat voor het vormen van
 
 #### Om de dienst te vormen ReportingConfiguration {#to-configure-the-reportingconfiguration-service}
 
-1. Meld u aan bij **Configuratiebeheer** met CRX-beheerdersreferenties. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
-1. Open de **ReportingConfiguration** dienst.
+1. Aanmelden bij **Configuratiebeheer** met CRX-beheerdersreferenties. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
+1. Open de **ReportingConfiguration** service.
 1. **Aantal records**
 
    Wanneer het runnen van een vraag op de bewaarplaats, kan een resultaat een groot aantal verslagen potentieel bevatten. Als de resultaatreeks groot is, kan de vraaguitvoering servermiddelen verbruiken.
 
    Om grote resultaatsets te behandelen, splitst de dienst ReportConfiguration de vraagverwerking in partijen verslagen. Hierdoor wordt de systeembelasting verminderd.
 
-   `Default`:  `1000`
+   `Default`: `1000`
 
    **CRX-opslagpad**
 
    De CRX-locatie waarin de procesgegevens moeten worden opgeslagen voor rapportage.
 
-   `Default`:  `/content/reporting/pm`
+   `Default`: `/content/reporting/pm`
 
    >[!NOTE]
    >
-   >Dit is dezelfde locatie als opgegeven in de configuratieoptie **Hoofdmap** ProcessDataStorage.
+   >Dit is dezelfde locatie als opgegeven in de configuratieoptie ProcessDataStorage **Hoofdmap**.
    >
    >
    >Als u de optie van de Omslag van de Wortel in de configuratie ProcessDataStorage bijwerkt, moet u de plaats van de Weg van de Opslag CRX in de dienst ReportConfiguration bijwerken.
 
-1. Klik **Opslaan** en sluit **CQ Configuration Manager**.
+1. Klikken **Opslaan** en sluiten **Configuratiebeheer CQ**.
 
 ### ProcessDataPublisher-service {#processdatapublisher-service}
 
@@ -167,11 +166,11 @@ De service ProcessDataPublisher importeert procesgegevens uit de AEM Forms-datab
 
 #### De service ProcessDataPublisher configureren   {#to-configure-processdatapublisher-service-nbsp}
 
-1. Meld u aan bij **Beheerconsole** met beheerdersreferenties.
+1. Aanmelden bij **Beheerconsole** met beheerdersreferenties.
 
    De standaard-URL is `https://'server':port]/adminui/`.
 
-1. Navigeer naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en open de service **ProcessDataPublisher**.
+1. Navigeren naar **Home** > **Services** > **Toepassingen en services** >**Servicebeheer** en opent u de **ProcessDataPublisher** service.
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
@@ -183,7 +182,7 @@ Schakel Process Reporting alleen in als alle configuraties met betrekking tot Pr
 
 U kunt deze optie ook gebruiken om het publiceren van procesgegevens uit te schakelen wanneer dit niet langer verplicht is.
 
-`Default`:  `Off`
+`Default`: `Off`
 
 **Batchinterval (sec)**
 
@@ -193,9 +192,9 @@ Zo kunt u de grootte bepalen van de gegevens die de uitgever verwerkt tijdens el
 
 Bijvoorbeeld, als de uitgever elke dag in werking stelt, dan in plaats van het verwerken van de volledige gegevens één dag in één enkele looppas, door gebrek, wordt het de verwerking in 24 partijen van elk één uur verdeeld.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Time-out vergrendelen (sec)**
 
@@ -203,9 +202,9 @@ De uitgeversservice verkrijgt een vergrendeling wanneer de verwerking van gegeve
 
 Als een uitgeversdienst die een slot heeft verworven, nutteloos voor het aantal seconden is die door de waarde van de Onderbreking van het Slot wordt bepaald, dan wordt zijn slot vrijgegeven zodat andere instanties van de uitgeversdienst kunnen blijven verwerken.
 
-`Default`:  `3600`
+`Default`: `3600`
 
-`Unit`:  `Seconds`
+`Unit`: `Seconds`
 
 **Gegevens publiceren vanuit**
 
@@ -215,21 +214,21 @@ Standaard importeert de ProcessDataPublisher-service alle gegevens uit de AEM Fo
 
 Afhankelijk van uw rapporteringsbehoeften, als u van plan bent om rapporten en vragen over gegevens na een bepaalde datum en een tijd in werking te stellen, adviseert men dat u de datum en de tijd specificeert. De publicatieservice publiceert vervolgens de datum vanaf die datum.
 
-`Default`:  `01-01-1970 00:00:00`
+`Default`: `01-01-1970 00:00:00`
 
-`Format`:  `dd-MM-yyyy HH:mm:ss`
+`Format`: `dd-MM-yyyy HH:mm:ss`
 
-## Toegang tot de gebruikersinterface van de Rapportering van het Proces {#accessing-the-process-reporting-user-interface}
+## Toegang tot de gebruikersinterface Process Reporting {#accessing-the-process-reporting-user-interface}
 
 De gebruikersinterface voor Process Reporting is browsergebaseerd.
 
-Nadat u de Rapportering van het Proces van de opstelling hebt, kunt u beginnen met het Proces Meldend bij de volgende plaats in uw installatie van AEM Forms te werken:
+Nadat u Procesrapportage hebt ingesteld, kunt u beginnen te werken met Process Reporting op de volgende locatie in uw AEM Forms-installatie:
 
 `https://<server>:<port>/lc/pr`
 
 ### Aanmelden bij procesrapportage {#log-in-to-process-reporting}
 
-Wanneer u naar de URL voor Process Reporting (https://&lt;server>:&lt;port>/lc/pr) navigeert, wordt het aanmeldingsscherm weergegeven.
+Wanneer u naar de URL voor procesrapportage navigeert (https://&lt;server>:&lt;port>/lc/pr), wordt het aanmeldingsscherm weergegeven.
 
 Specificeer uw geloofsbrieven aan login aan de module van de Rapportering van het Proces.
 
@@ -241,43 +240,43 @@ Specificeer uw geloofsbrieven aan login aan de module van de Rapportering van he
 
 ![Aanmelden bij Process Reporting](assets/capture1_new.png)
 
-Als u zich aanmeldt bij Process Reporting, wordt het scherm **[!UICONTROL Home]** weergegeven.
+Wanneer u zich bij het Proces meldt, **[!UICONTROL Home]** weergegeven.
 
-### Rapportagescherm {#process-reporting-home-screen} verwerken
+### Process Reporting Home-scherm {#process-reporting-home-screen}
 
 ![proces-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**De het Melden van het proces boommening:** de boommening op de linkerkant van het scherm van het Huis bevat de punten voor het Proces Meldend modules.
+**De mening van de boom van de Rapportering van het proces:** De boomstructuurweergave aan de linkerkant van het Homescherm bevat de items voor de modules Procesrapportage.
 
 De boomstructuurweergave bestaat uit de volgende items op hoofdniveau:
 
-**Rapporten:** Dit punt bevat de uit-van-de-doos rapporten die met het Rapporteren van het Proces verschepen.
+**Rapporten:** Dit item bevat de out-of-the-box rapporten die worden verzonden met Process Reporting.
 
-Zie [Vooraf gedefinieerde rapporten in Process Reporting](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md) voor meer informatie over de vooraf gedefinieerde rapporten.
+Voor meer informatie over de vooraf gedefinieerde rapporten raadpleegt u [Vooraf gedefinieerde rapporten in procesrapportage](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md).
 
-**Adhoc Vragen:** Dit punt bevat opties om op filter-gebaseerd onderzoek naar processen en taken uit te voeren.
+**Adhoc-query&#39;s:** Dit item bevat opties voor het uitvoeren van op filters gebaseerde zoekopdrachten naar processen en taken.
 
-Voor details op ad-hoc vragen, zie [Ad-hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
+Voor meer informatie over ad-hocquery&#39;s raadpleegt u [Ad hoc Vragen in Proces het Melden](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md).
 
-**Aangepast:** het knooppunt Aangepast toont aangepaste rapporten die u maakt.
+**Aangepast:** Het knooppunt Aangepast geeft aangepaste rapporten weer die u maakt.
 
-Voor de procedure om douanerapporten tot stand te brengen en te tonen, zie [Eigen Rapporten in Proces het Melden](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Voor de procedure om douanerapporten tot stand te brengen en te tonen, zie [Aangepaste rapporten in procesrapportage](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
 
-**De titelbar van de Rapportering van het proces:** De bar van de Titel van de Rapportering van het Proces bevat sommige generische opties die u kunt gebruiken wanneer het werken in het gebruikersinterface.
+**Procesrapportage, titelbalk:** De de titelbar van de Rapportering van het Proces bevat sommige generische opties die u wanneer het werken in het gebruikersinterface kunt gebruiken.
 
-**Titel Process Reporting:** De titel Process Reporting wordt in de linkerhoek van de titelbalk weergegeven.
+**Titel van procesrapportage:** De titel Procesrapportage wordt in de linkerhoek van de titelbalk weergegeven.
 
 Klik op de titel om terug te keren naar het scherm Home.
 
-**Tijdstip laatste update:** De procesgegevens worden op geplande basis gepubliceerd vanuit de AEM Forms-database naar de Process Reporting repository.
+**Tijd laatste update:** De procesgegevens worden op een geplande basis gepubliceerd van de AEM Forms-database naar de Process Reporting repository.
 
 De laatste tijd van de Update toont de laatste datum en de tijd tot waarvan de gegevensupdates aan de bewaarplaats van de Rapportering van het Proces werden geduwd.
 
-Zie [Procesgegevens publiceren plannen](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in het artikel Getting Started with Process Reporting voor meer informatie over de service voor het publiceren van gegevens en het plannen van deze service.
+Voor meer informatie over de service voor het publiceren van gegevens en hoe u deze service wilt plannen, raadpleegt u [Publiceren van procesgegevens plannen](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) in het artikel Aan de slag met Process Reporting.
 
-**Procesrapporteringsgebruiker:** De aangemelde gebruikersnaam wordt rechts van de laatste update weergegeven.
+**Gebruiker voor procesrapportage:** De aangemelde gebruikersnaam wordt rechts van de laatste update weergegeven.
 
-**Verwerkt het drop-down lijst van de Titel van de Rapportering van het Proces:** De drop-down lijst bij de juiste hoek van de de titelbar van de Rapportering van het Proces bevat de volgende opties:
+**Verwerking van vervolgkeuzelijst titelbalk rapportage:** De vervolgkeuzelijst in de rechterhoek van de titelbalk van Procesrapportage bevat de volgende opties:
 
 * **[!UICONTROL Sync]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: Raadpleeg de Help-documentatie bij Process Reporting.

@@ -1,8 +1,8 @@
 ---
 title: Werken met paginaversies
-seo-title: Werken met paginaversies
+seo-title: Working with Page Versions
 description: Met Versioning maakt u een "momentopname" van een pagina op een bepaald tijdstip.
-seo-description: Met Versioning maakt u een "momentopname" van een pagina op een bepaald tijdstip.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 0%
 
 ---
-
 
 # Werken met paginaversies{#working-with-page-versions}
 
@@ -27,19 +26,18 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
 * Herstel een pagina naar een vorige versie om bijvoorbeeld een wijziging in een pagina ongedaan te maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie met verschillen in de gemarkeerde tekst en afbeeldingen.
 
-## Nieuwe versie maken {#creating-a-new-version}
+## Een nieuwe versie maken {#creating-a-new-version}
 
 Een nieuwe versie van een pagina maken:
 
 1. Open in uw browser de pagina waarvoor u een nieuwe versie wilt maken.
-1. Selecteer in de Sidetrap de tab **Versioning** en vervolgens de tab **Versie maken**.
+1. Selecteer in de Sidetrap de optie **Versioning** en vervolgens de **Versie maken** subtabblad.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
-1. Voer een **opmerking** (optioneel) in.
-1. Als u een label wilt instellen op de versie (optioneel), klikt u op de knop **Meer >>** en stelt u **Label** in om de versie een naam te geven. Als het label niet is ingesteld, wordt de versie automatisch verhoogd.
-1. Klik **Versie maken**. Er wordt een grijs bericht weergegeven op de pagina. bijvoorbeeld:
-Versie 1.2 gemaakt voor: Hemden.
+1. Voer een **Opmerking** (optioneel).
+1. Als u een label wilt instellen op de versie (optioneel), klikt u op de knop **Meer >>** en stelt de **Label** om de versie een naam te geven. Als het label niet is ingesteld, wordt de versie automatisch verhoogd.
+1. Klikken **Versie maken**. Er wordt een grijs bericht weergegeven op de pagina. bijvoorbeeld: Versie 1.2 gemaakt voor: Hemden.
 
 >[!NOTE]
 >
@@ -50,7 +48,7 @@ Versie 1.2 gemaakt voor: Hemden.
 De pagina herstellen naar een vorige versie:
 
 1. Open de pagina waarvoor u een vorige versie wilt herstellen.
-1. Selecteer in de assistent de tab **Versioning** en vervolgens de tab **Versie herstellen**.
+1. Selecteer in het zijpaneel de optie **Versioning** en vervolgens de **Versie herstellen** subtab.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
@@ -60,12 +58,12 @@ De pagina herstellen naar een vorige versie:
 
 Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook worden gebruikt om eerder verwijderde pagina&#39;s te herstellen:
 
-1. Navigeer in de **console Websites** naar de pagina die u wilt herstellen en selecteer deze.
-1. Selecteer **Gereedschappen** in het bovenste menu en **Herstellen**:
+1. In de **Websites** navigeer naar de pagina die u wilt herstellen en selecteer deze.
+1. Selecteer in het bovenste menu **Gereedschappen** vervolgens **Herstellen**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Bezig met selecteren van **Versie herstellen..** bevat een lijst met versies van documenten in de huidige map. Zelfs als een pagina is verwijderd, wordt de laatste versie weergegeven:
+1. Selecteren **Versie herstellen...** Hiermee worden versies van documenten in de huidige map weergegeven. Zelfs als een pagina is verwijderd, wordt de laatste versie weergegeven:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
@@ -75,24 +73,24 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 
 Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook worden gebruikt om eerder verwijderde pagina&#39;s te herstellen:
 
-1. Navigeer in de **Websites**-console naar de map die u wilt herstellen en selecteer deze.
-1. Selecteer **Gereedschappen** in het bovenste menu en **Herstellen**.
-1. **Boom herstellen selecteren..** opent het dialoogvenster waarin u de structuur kunt selecteren die u wilt herstellen:
+1. In de **Websites** navigeer naar de map die u wilt herstellen en selecteer deze.
+1. Selecteer in het bovenste menu **Gereedschappen** vervolgens **Herstellen**.
+1. Selecteren **Boom herstellen...** Hiermee opent u het dialoogvenster waarin u de structuur kunt selecteren die u wilt herstellen:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Klik **Herstellen**. AEM herstelt de structuur die u hebt geselecteerd.
+1. Klikken **Herstellen**. AEM herstelt de structuur die u hebt geselecteerd.
 
 ## Vergelijken met een vorige versie {#comparing-with-a-previous-version}
 
 De huidige versie van de pagina vergelijken met een vorige versie:
 
 1. Open in uw browser de pagina die u met een vorige versie wilt vergelijken.
-1. Selecteer in de Sidetrap de tab **Versioning** en vervolgens de tab **Versio** n herstellen.
+1. Selecteer in de Sidetrap de optie **Versioning** en vervolgens de **Versie herstellen** n subtabblad.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Selecteer de versie die u wilt vergelijken en klik **Diff** knoop.
+1. Selecteer de versie die u wilt vergelijken en klik op de knop **Diff** knop.
 1. De verschillen tussen de huidige versie en de geselecteerde versie worden als volgt weergegeven:
 
    * Tekst die is verwijderd, is rood en doorgehaald.
@@ -101,18 +99,18 @@ De huidige versie van de pagina vergelijken met een vorige versie:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Selecteer in de schop het subtabblad **Versie herstellen** en klik op de knop **&lt;&lt;Back** om de huidige versie weer te geven.
+1. Selecteer in de Sidetrap de optie **Versie herstellen** subtab en klik op de knop **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> om de huidige versie weer te geven.**
 
-## Timewaring {#timewarp}
+## Timewarp {#timewarp}
 
-Timewarp is een eigenschap die wordt ontworpen om de ***gepubliceerde*** staat van een pagina op specifieke tijden in het verleden te simuleren.
+Timewarp is een eigenschap die wordt ontworpen om het ***gepubliceerd*** staat van een pagina op specifieke tijden in het verleden.
 
-Het doel is om u toe te staan om de gepubliceerde website op het geselecteerde punt in tijd te volgen. Hiermee wordt de status van de publicatieomgeving bepaald aan de hand van de paginabactivering.
+Het doel is om u toe te staan om de gepubliceerde website op het geselecteerde punt in tijd te volgen. Hiermee wordt de status van de publicatieomgeving bepaald door de paginabactivering.
 
 Dit doet u als volgt:
 
 * Het systeem zoekt naar de paginaversie die op het geselecteerde tijdstip actief was.
-* Dit betekent de getoonde versie werd gecreeerd/geactiveerd *before* het punt in tijd die in Timewarp wordt geselecteerd.
+* Dit betekent dat de weergegeven versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
 * Wanneer u naar een pagina navigeert die is verwijderd, wordt dit ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
 * Als geen gepubliceerde versie wordt gevonden, dan zal Timewarp aan de huidige staat van de pagina op het auteursmilieu terugkeren (dit moet een fout/404 pagina verhinderen, wat zou betekenen dat u niet meer kunt doorbladeren).
 
@@ -120,17 +118,17 @@ Dit doet u als volgt:
 >
 >Als versies uit de dataopslag worden verwijderd, kan Timewarp niet de correcte mening tonen. Als elementen (zoals code, css, afbeeldingen, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave ook verschillen van wat deze oorspronkelijk was, aangezien deze items niet zijn geversileerd in de opslagplaats.
 
-### De tijdverdraaiingskalender {#using-the-timewarp-calendar} gebruiken
+### De tijdverdraaiingskalender gebruiken {#using-the-timewarp-calendar}
 
 Timewarp is beschikbaar bij sidekick.
 
 De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
-1. Open het tabblad **Versioning** en klik vervolgens op **Timewarp** (bij de onderkant van het hulpgedeelte). Het volgende dialoogvenster wordt weergegeven:
+1. Open de **Versioning** en klik vervolgens op **Timewarp** (vlakbij de onderkant van het hulpje). Het volgende dialoogvenster wordt weergegeven:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Met de datum- en tijdkiezers geeft u de gewenste datum/tijd op en klikt u op **Go**.
+1. Met de datum- en tijdkiezers geeft u de gewenste datum/tijd op en klikt u op **Ga**.
 
    Met Timewarp wordt de pagina weergegeven zoals deze was gepubliceerd vóór/op de datum die u hebt gekozen.
 
@@ -144,16 +142,16 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
    >[!NOTE]
    >
-   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [restore](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Klik wanneer u de pagina hebt bekeken:
 
-   * **Sluit** Time-warpto af en ga terug naar de huidige auteurspagina.
-   * [Tijdlijn tonen ](#using-the-timewarp-timeline) om de tijdlijn weer te geven.
+   * **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
+   * [Tijdlijn tonen](#using-the-timewarp-timeline) om de tijdlijn weer te geven.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### De tijdlijn {#using-the-timewarp-timeline} gebruiken
+### De tijdlijn Tijdlijn Tijdlijn gebruiken {#using-the-timewarp-timeline}
 
 De tijdlijnversie wordt gebruikt als u een overzicht wilt zien van de publicatieactiviteiten op de pagina.
 
@@ -161,11 +159,11 @@ Als u de tijdlijn van het document wilt weergeven:
 
 1. U kunt de tijdlijn als volgt weergeven:
 
-   1. Open het tabblad **Versioning** en klik vervolgens op **Timewarp** (bij de onderkant van het hulpgedeelte).
+   1. Open de **Versioning** en klik vervolgens op **Timewarp** (vlakbij de onderkant van het hulpje).
 
-   1. Gebruik het dialoogvenster sidekick dat wordt weergegeven na [gebruik de tijdlijnkalender](#using-the-timewarp-calendar).
+   1. Het dialoogvenster sidekick gebruiken dat wordt weergegeven na [gebruiken van de Kalender Timewarp](#using-the-timewarp-calendar).
 
-1. Klik op **Tijdlijn tonen** - de tijdlijn van het document zal verschijnen; bijvoorbeeld:
+1. Klikken op **Tijdlijn tonen** - de tijdlijn van het document wordt weergegeven; bijvoorbeeld:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -179,20 +177,20 @@ In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt ti
 
 1. Klik op:
 
-   1. **** Ga naar om de inhoud van de gepubliceerde pagina op het geselecteerde tijdpunt weer te geven.
-   1. Wanneer het tonen van die inhoud dan gebruik **Onderbreking** om aan de huidige auteurspagina weg te gaan en terug te keren.
+   1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdpunt weer te geven.
+   1. Wanneer u die inhoud weergeeft, gebruikt u **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
 
-### Beperkingen voor tijdwijziging {#timewarp-limitations}
+### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
-* **Tijdlijnverdraaiing werkt op basis van gepubliceerde pagina** &#39;s. Tijdverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
-* **Tijdverdraaiing gebruikt paginaversies**  - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
-* **Verwijderde versies hebben invloed op Timewarp** . Als versies uit de opslagplaats worden verwijderd, kan Timewarp de juiste weergave niet weergeven.
+* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn-verdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
+* **Timewaring gebruikt paginaversies** - Als u navigeert naar een pagina die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
+* **Verwijderde versies beïnvloeden Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp niet de juiste weergave tonen.
 
-* **Tijdlijnverdraaiing is alleen** -lezen. U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [restore](#main-pars-title-1).
+* **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#main-pars-title-1).
 
-* **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat deze oorspronkelijk was, aangezien deze items niet zijn geversieerd in de opslagplaats.
+* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave afwijken van wat oorspronkelijk het geval was, aangezien deze items niet zijn geversieerd in de opslagplaats.
 
 >[!CAUTION]
 >

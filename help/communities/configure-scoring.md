@@ -1,8 +1,8 @@
 ---
 title: Scores en Badges Essentials
-seo-title: Scores en Badges Essentials
+seo-title: Scoring and Badges Essentials
 description: Overzicht van de functie Scores en Badges
-seo-description: Overzicht van de functie Scores en Badges
+seo-description: Scoring and Badges feature overview
 uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
-
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
@@ -29,15 +28,15 @@ De details van het instellen van de functie worden beschreven op
 
 Deze pagina bevat aanvullende technische gegevens:
 
-* Hoe kan ik [een badge](#displaying-badges) weergeven als afbeelding of tekst?
-* Hoe u uitgebreide [foutopsporingslogbestand](#debug-log-for-scoring-and-badging) kunt inschakelen
-* Hoe te om [toegang tot UGC](#ugc-for-scoring-and-badging) met betrekking tot het scoring en het badging
+* Procedure [een badge weergeven](#displaying-badges) als afbeelding of tekst
+* Uitgebreid inschakelen [foutopsporing](#debug-log-for-scoring-and-badging)
+* Procedure [toegang tot UGC](#ugc-for-scoring-and-badging) met betrekking tot scoring en badging
 
 >[!CAUTION]
 >
 >De in CRXDE Lite zichtbare implementatiestructuur kan worden gewijzigd.
 
-## Badges {#displaying-badges} weergeven
+## Badges weergeven {#displaying-badges}
 
 Of een badge als tekst of beeld wordt getoond wordt gecontroleerd op de cliëntkant in het malplaatje van GB.
 
@@ -75,30 +74,30 @@ Indien onwaar (false), wordt bij Toewijzen aangegeven dat de badge is toegekend 
 
 Wijzigingen in dit gedrag moeten worden aangebracht in een aangepast script (overschrijven of bedekken). Zie [Aanpassing aan clientzijde](/help/communities/client-customize.md).
 
-## Foutopsporingslogbestand voor scores en Badging {#debug-log-for-scoring-and-badging}
+## Foutopsporingslogboek voor score en Badging {#debug-log-for-scoring-and-badging}
 
 Voor foutopsporing in scores en badging kan een aangepast logbestand worden ingesteld. De inhoud van dit logbestand kan dan aan de klantenondersteuning worden verstrekt als er problemen met de functie worden ondervonden.
 
-Voor gedetailleerde instructies gaat u naar [Aangepast logbestand maken](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
+Ga voor gedetailleerde instructies naar [Een aangepast logbestand maken](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
 U kunt als volgt snel een logbestand instellen:
 
-1. Open bijvoorbeeld **Adobe Experience Manager Web Console Log Support**
+1. Toegang krijgen tot **Adobe Experience Manager Web Console Log Support** bijvoorbeeld
 
    * https://localhost:4502/system/console/slinglog
 
-1. Selecteer **Nieuw logger toevoegen**
+1. Selecteren **Nieuwe logboekregistratie toevoegen**
 
-   1. Selecteer `DEBUG` voor **Logniveau**
+   1. Selecteren `DEBUG` for **Logboekniveau**
 
-   1. Voer bijvoorbeeld een naam in voor **Logbestand**
+   1. Voer een naam in voor **Logbestand** bijvoorbeeld
 
       * logs/scoring-debug.log
-   1. Voer twee **Logger** (klasse)-items in (met pictogram `+`)
+   1. Twee invoeren **Aanmelder** (klasse) items (gebruiken `+` pictogram)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. Selecteer **Opslaan**
+   1. Selecteren **Opslaan**
 
 
 
@@ -108,8 +107,8 @@ Logboekvermeldingen weergeven:
 
 * Vanuit de webconsole
 
-   * Onder het menu **Status**
-   * Selecteer **Logbestanden**
+   * Onder de **Status** menu
+   * Selecteren **Logbestanden**
    * Zoek naar uw naam van het Logdossier, zoals `scoring-debug`
 
 * Op de lokale schijf van de server
@@ -120,15 +119,15 @@ Logboekvermeldingen weergeven:
 
 ![scoring-log](assets/scoring-log.png)
 
-## UGC voor Scores en Badging {#ugc-for-scoring-and-badging}
+## UGC voor scores en Badging {#ugc-for-scoring-and-badging}
 
-Het is mogelijk om UGC met betrekking tot het scoring en het aanbrengen van merktekens te bekijken wanneer gekozen SRP of JSRP of MSRP, maar niet ASRP is. (Zie [Community Content Storage](/help/communities/working-with-srp.md) en [Storage Resource Provider Overview](/help/communities/srp.md) als u niet bekend bent met deze termen.)
+Het is mogelijk om UGC met betrekking tot het scoring en het aanbrengen van merktekens te bekijken wanneer gekozen SRP of JSRP of MSRP, maar niet ASRP is. (Als u deze termen niet kent, raadpleegt u [Opslag van communautaire inhoud](/help/communities/working-with-srp.md) en [Overzicht opslagbronprovider](/help/communities/srp.md).)
 
-In de beschrijvingen voor toegang tot scoring- en merkgegevens wordt JSRP gebruikt, omdat de UGC gemakkelijk toegankelijk is met [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+In de beschrijvingen voor toegang tot scoring- en badinggegevens wordt JSRP gebruikt, omdat de UGC gemakkelijk toegankelijk is via [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 **JSRP bij auteur**: experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
 
-**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatie - instantie . Als de publicatie-instantie wordt uitgevoerd in [productiemodus](/help/sites-administering/production-ready.md) (no samplcontent runmode), is het nodig om CRXDE Lite [in te schakelen.](/help/sites-administering/enabling-crxde-lite.md)
+**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatie - instantie . Als de publicatie-instantie wordt uitgevoerd in [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig dat [CRXDE Lite inschakelen](/help/sites-administering/enabling-crxde-lite.md).
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -141,15 +140,15 @@ De volgende API&#39;s zijn beschikbaar voor gebruik:
 
 De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](/help/communities/maven.md#javadocs).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
-### Voorbeeld-instelling {#example-setup}
+### Voorbeeld instellen {#example-setup}
 
 De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen van scoring en badging voor een forum op twee verschillende AEM sites:
 
-1. Een AEM site *met* een unieke id (een communitysite die met een wizard is gemaakt):
+1. Een AEM *with* een unieke id (een communitysite die is gemaakt met een wizard):
 
-   * De Aan de slag-zelfstudie (Inschakelen) gebruiken die is gemaakt tijdens de [zelfstudie om aan de slag te gaan](/help/communities/getting-started.md)
+   * Met behulp van de site Aan de slag met zelfstudies (engineers) die tijdens de [aan de slag - zelfstudie](/help/communities/getting-started.md)
    * Zoek het knooppunt voor forumpagina
 
       `/content/sites/engage/en/forum/jcr:content`
@@ -178,9 +177,9 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Een gebruiker ondertekent in, maakt een forumonderwerp en krijgt een bronzen badge toegewezen
 
 
-1. Een AEM site *zonder* een unieke id:
+1. Een AEM *zonder* een unieke id:
 
-   * Gebruikend [Community Components guide](/help/communities/components-guide.md)
+   * Met de [Community Components Guide](/help/communities/components-guide.md)
    * Zoek het knooppunt voor forumpagina
 
       `/content/community-components/en/forum/jcr:content`
@@ -200,7 +199,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Zoek het knooppunt voor de forumcomponent
 
       `/content/community-components/en/forum/jcr:content/content/forum`
-(  `sling:resourceType = social/forum/components/hbs/forum`)
+( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Eigenschap toevoegen aan weergaveknoppen
 
@@ -225,8 +224,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 >
 >* Namen van scoreregelregels moeten globaal uniek zijn. ze mogen niet met dezelfde naam eindigen.
 >
->  
-Een voorbeeld van wat *not* moet doen:
+>  Een voorbeeld van wat *niet* om te doen:
 >
 >  /libs/settings/community/scoring/rules/site1/forums-scoring
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
@@ -234,31 +232,31 @@ Een voorbeeld van wat *not* moet doen:
 >* Unieke badge-afbeeldingen maken voor verschillende AEM sites
 
 
-### Toegang tot UGC {#access-scoring-ugc}
+### Toegang tot UGC-score {#access-scoring-ugc}
 
-Het gebruik van de [APIs](#scoring-and-badging-apis) heeft de voorkeur.
+Gebruik van de [API&#39;s](#scoring-and-badging-apis) heeft de voorkeur.
 
 Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die scores bevat
 
 * `/content/usergenerated/asi/jcr/scoring`
 
-Het onderliggende knooppunt van `scoring` is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
+De onderliggende node van `scoring` is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
 
-Voor de Geometrixx Engage-site bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, site-id van de community ( `engage-ba81p`), een unieke id en de id van de gebruiker:
+Voor de plaats van de Ingenieur van de Geometrixx, zijn de gebruiker en hun score in een weg geconstrueerd met de het schrapen regelnaam, plaatsidentiteitskaart van de gemeenschap ( `engage-ba81p`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Voor de Community Components-hulplijnsite bevinden de gebruiker en hun score zich in een pad dat is samengesteld met de naam van de scoreregel, een standaard-id ( `default-site`), een unieke id en de id van de gebruiker:
+Voor de Community Components Guide-site bevinden de gebruiker en hun score zich in een pad dat is opgebouwd met de naam van de scoreregel, een standaard-id ( `default-site`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-De score wordt opgeslagen in de eigenschap `scoreValue_tl` die direct alleen een waarde kan bevatten of indirect naar een atomicCounter kan verwijzen.
+De score wordt opgeslagen in de eigenschap `scoreValue_tl` die direct alleen een waarde kunnen bevatten of indirect naar een atomicCounter kunnen verwijzen.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
 ### Access Badging UGC {#access-badging-ugc}
 
-Het gebruik van de [APIs](#scoring-and-badging-apis) heeft de voorkeur.
+Gebruik van de [API&#39;s](#scoring-and-badging-apis) heeft de voorkeur.
 
 Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die informatie over toegewezen of toegekende badges bevat
 
@@ -280,6 +278,5 @@ Wordt gevolgd door het pad naar het gebruikersprofiel en eindigt in een map met 
 
 Een gesorteerde lijst met leden weergeven op basis van punten:
 
-* [Leaderboard-](/help/communities/functions.md#leaderboard-function) functionaliteit voor opname in een community-site of groepssjabloon.
+* [Leaderboard, functie](/help/communities/functions.md#leaderboard-function) voor opname in een community- of groepssjabloon.
 * [Leaderboard-component](/help/communities/enabling-leaderboard.md), de aanbevolen component van de Leaderboard-functie, voor het ontwerpen van pagina&#39;s.
-

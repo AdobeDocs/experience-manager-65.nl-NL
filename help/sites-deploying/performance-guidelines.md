@@ -127,7 +127,7 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
-   <td><p>Activa</p> </td>
+   <td><p>Assets</p> </td>
   </tr>
   <tr>
    <td><p>Handel</p> </td>
@@ -497,10 +497,10 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 | Server | Hardware voor onbewerkte metalen (HP) |
 | Besturingssysteem | RedHat Linux |
 | CPU/kernen | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 kernen |
-| RAM | 32 GB |
+| RAM | 32GB |
 | Schijf | Magnetisch |
 | Java | Oracle JRE versie 8 |
-| JVM Heap | 16 GB |
+| JVM Heap | 16GB |
 | Product | AEM 6,2 |
 | Nodestore | TarMK |
 | Datastore | Bestand DS |
@@ -584,7 +584,7 @@ Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moet
   <tr>
    <td>DocumentNodeStoreService</td>
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td>
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30</p> <p>10</p> <p>4</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td>
    <td><p>De standaardgrootte van de cache is ingesteld op 256 MB.</p> <p>Heeft invloed op de tijd die nodig is om cachevalidatie uit te voeren.</p> </td>
   </tr>
   <tr>
@@ -607,10 +607,10 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 | Server | Hardware voor onbewerkte metalen (HP) | Hardware voor onbewerkte metalen (HP) |
 | Besturingssysteem | RedHat Linux | RedHat Linux |
 | CPU/kernen | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 kernen | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 kernen |
-| RAM | 32 GB | 32 GB |
+| RAM | 32GB | 32GB |
 | Schijf | Magnetisch - >1k IOPS | Magnetisch - >1k IOPS |
 | Java | Oracle JRE versie 8 | N.v.t. |
-| JVM Heap | 16 GB | N.v.t. |
+| JVM Heap | 16GB | N.v.t. |
 | Product | AEM 6,2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | N.v.t. |
 | Datastore | Bestand DS | N.v.t. |
@@ -686,8 +686,8 @@ Voor meer informatie over TarMK vs MongoMK, zie [Aanbevolen implementaties](/hel
   </tr>
   <tr>
    <td>RAM</td>
-   <td>32 GB</td>
-   <td>32 GB</td>
+   <td>32GB</td>
+   <td>32GB</td>
    <td> </td>
   </tr>
   <tr>
@@ -704,7 +704,7 @@ Voor meer informatie over TarMK vs MongoMK, zie [Aanbevolen implementaties](/hel
   </tr>
   <tr>
    <td>JVM Heap16 GB</td>
-   <td>16 GB</td>
+   <td>16GB</td>
    <td>N.v.t.</td>
    <td> </td>
   </tr>
@@ -773,9 +773,9 @@ Voor meer informatie over TarMK vs MongoMK, zie [Aanbevolen implementaties](/hel
   </tr>
   <tr>
    <td>RAM</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
-   <td>60 GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
+   <td>60GB</td>
   </tr>
   <tr>
    <td>Schijf</td>
@@ -791,8 +791,8 @@ Voor meer informatie over TarMK vs MongoMK, zie [Aanbevolen implementaties](/hel
   </tr>
   <tr>
    <td>JVM Heap16 GB</td>
-   <td>30 GB</td>
-   <td>30 GB</td>
+   <td>30GB</td>
+   <td>30GB</td>
    <td>N.v.t.</td>
   </tr>
   <tr>

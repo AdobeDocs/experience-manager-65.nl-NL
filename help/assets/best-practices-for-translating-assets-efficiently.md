@@ -3,20 +3,20 @@ title: Aanbevolen procedures voor het vertalen van middelen
 description: Aanbevolen procedures voor efficiënt beheer van middelen om verschillende vertaalde versies te synchroniseren en vertaalworkflows te stroomlijnen.
 contentOwner: AG
 role: Admin
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
 # Aanbevolen procedures voor het vertalen van middelen {#best-practices-for-translating-assets-efficiently}
 
-[!DNL Adobe Experience Manager Assets] biedt ondersteuning voor meertalige workflows voor het vertalen van binaire bestanden, metagegevens en tags voor digitale elementen naar meerdere landinstellingen en het beheren van de vertaalde middelen. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
+[!DNL Adobe Experience Manager Assets] biedt ondersteuning voor meertalige workflows voor het vertalen van binaire bestanden, metagegevens en tags voor digitale elementen naar meerdere landinstellingen en het beheren van de vertaalde middelen. Zie voor meer informatie [Meertalige activa](multilingual-assets.md).
 
-Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
+Voor een efficiënt beheer van middelen, zodat verschillende vertaalde versies gesynchroniseerd blijven, kunt u [taalkopieën](preparing-assets-for-translation.md) van elementen voordat u vertaalworkflows uitvoert.
 
 Een taalkopie van een element of een groep elementen is een op hetzelfde niveau staande taal (of een versie van het element of de elementen in een cognattaal) met een vergelijkbare inhoudshiërarchie.
 
@@ -43,9 +43,9 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
    >Disabling the [!UICONTROL DAM MetaData Writeback] workflow turns off XMP metadata write-back on asset binaries. Consequently, future metadata changes are no longer be saved within the assets. Evaluate the consequences before disabling this workflow.
 -->
 
-1. Schakel de [!UICONTROL Set last modified date]-workflow in.
+1. De optie [!UICONTROL Set last modified date] workflow.
 
-   Met de [!UICONTROL DAM MetaData Writeback]-workflow configureert u de datum van de laatste wijziging voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan [!DNL Assets] de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de *Laatste gewijzigde datum instellen*-workflow in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   De [!UICONTROL DAM MetaData Writeback] wordt de datum van de laatste wijziging voor een element geconfigureerd. Omdat u deze workflow in stap 2 uitschakelt, [!DNL Assets] kan de laatste gewijzigde datum van de activa niet meer actueel houden. Daarom moet de *Laatst gewijzigde datum instellen* workflow om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
-1. [Configureer het ](/help/sites-administering/tc-tic.md) framework voor vertaalintegratie om het vertalen van binaire bestanden met middelen te stoppen. Schakel de optie **[!UICONTROL Translate Assets]** onder het tabblad [!UICONTROL Assets] uit om de vertaling van binaire elementen te stoppen.
-1. Metagegevens/tags van elementen vertalen met behulp van [Workflows met meerdere bedrijfsmiddelen](multilingual-assets.md).
+1. [Het vertaalintegratieframework configureren](/help/sites-administering/tc-tic.md) om het vertalen van binaire elementen te stoppen. De selectie van **[!UICONTROL Translate Assets]** optie onder de [!UICONTROL Assets] om de vertaling van binaire elementen te stoppen.
+1. Metagegevens/tags van elementen vertalen met [Meertalige workflows voor bedrijfsmiddelen](multilingual-assets.md).

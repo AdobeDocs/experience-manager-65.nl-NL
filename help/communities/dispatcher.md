@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## AEM Communities {#aem-communities}
 
-Voor AEM Communities is het nodig de Dispatcher te configureren om ervoor te zorgen dat [communitysites](overview.md#community-sites) goed functioneren. Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
+Voor AEM Communities is het nodig de Dispatcher te configureren om ervoor te zorgen dat de [communitysites](overview.md#community-sites). Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
 * Contact [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
-Zie ook de belangrijkste [Dispatcher documentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Zie ook het hoofdgedeelte [Documentatie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 ## Caching van Dispatcher {#dispatcher-caching}
 
@@ -43,7 +43,7 @@ Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &qu
 
 ### Vereisten {#requirements}
 
-* Dispatcher versie 4.1.2 of hoger (zie [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) voor de nieuwste versie)
+* Dispatcher versie 4.1.2 of hoger (zie [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) voor de meest recente versie)
 * [ACS AEM Commons-pakket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versie 3.3.2 of hoger
@@ -51,13 +51,13 @@ Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &qu
 
 ### Configuratie {#configuration}
 
-De configuratie OSGi **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Verzender - Max Leeftijd** plaatst de afloop van caching pagina&#39;s die onder een gespecificeerd weg verschijnen.
+De OSGi-configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Dispatcher - Maximale Leeftijd** Hiermee stelt u de vervaldatum in van pagina&#39;s in de cache die onder een opgegeven pad worden weergegeven.
 
-* Van [Webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Van de [Webconsole](../../help/sites-deploying/configuring-osgi.md)
 
-   * Bijvoorbeeld [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` zoeken
+* Zoeken `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * Selecteer het plusteken (+) om een nieuwe verbindingsconfiguratie tot stand te brengen
 
    ![verzender](assets/dispatcher.png)
@@ -68,15 +68,15 @@ De configuratie OSGi **ACS AEM Commons - de Kopbal van de Controle van het Gehei
 
 * **Besturingselement voor cache maximaal pagina**
 
-   *(vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan nul (0).
+   *(vereist)* De maximale pagina (in seconden) die moet worden toegevoegd aan de koptekst voor de cachebesturing. De waarde moet groter zijn dan nul (0).
 
 ## Clientkoppen van Dispatcher {#dispatcher-client-headers}
 
-In de /clientheaders sectie van `dispatcher.any`, als het een lijst maken van een specifieke reeks kopballen, is het noodzakelijk om `"CSRF-Token"` te omvatten om [eigenschap van Enablement](enablement.md) behoorlijk te laten werken.
+In de sectie /clientheaders van `dispatcher.any`Als een specifieke reeks kopteksten wordt vermeld, moet `"CSRF-Token"` om [Functie Enablement](enablement.md) naar behoren te werken.
 
 ## Verzendfilters {#dispatcher-filters}
 
-De /filter sectie van het `dispatcher.any` dossier wordt gedocumenteerd in [het Vormen Toegang tot Inhoud - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+Het gedeelte /filter van het dialoogvenster `dispatcher.any` bestand wordt gedocumenteerd in [Toegang tot inhoud configureren - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
 
 In deze sectie worden vermeldingen beschreven die waarschijnlijk nodig zijn voor een goede werking van de functies van de Gemeenschappen.
 
@@ -91,11 +91,11 @@ Zie ook:
 >[!NOTE]
 >
 >**Voorbeelden van eigenschapnamen**
->Alle getoonde bezitsnamen, zoals **/0050** en **/0170**, zouden moeten worden aangepast om binnen een bestaand dispatcher.om het even welk configuratiedossier te passen.
+>Alle getoonde eigenschapnamen, zoals **/0050** en **/0170**, moet worden aangepast aan een bestaande dispatcher.elk configuratiebestand.
 
 >[!CAUTION]
 >
->Zie [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voor verdere overwegingen bij het beperken van toegang met behulp van Dispatcher. Lees ook [AEM Beveiligingslijst](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) voor aanvullende beveiligingsdetails met betrekking tot de installatie van uw AEM.
+>Zie de [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voor verdere overwegingen wanneer het beperken van toegang gebruikend Dispatcher. Lees ook de [Beveiligingslijst AEM](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) voor extra veiligheidsdetails betreffende uw AEM installatie.
 
 De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toegevoegd, vooral nadat allen ingangen ontkent.
 
@@ -249,7 +249,7 @@ De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toe
 
 ## Regels voor verzending {#dispatcher-rules}
 
-In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de cache moeten worden geplaatst op basis van de aangevraagde URL. Voor Gemeenschappen wordt de sectie Regels gebruikt om te bepalen wat nooit in cache mag worden geplaatst.
+De sectie Regels van `dispatcher.any` definieert welke reacties in de cache moeten worden geplaatst op basis van de aangevraagde URL. Voor Gemeenschappen wordt de sectie Regels gebruikt om te bepalen wat nooit in cache mag worden geplaatst.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -299,11 +299,11 @@ In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 
-Hier volgt een voorbeeld van een `dispatcher.any`-bestand dat de Gemeenschappen /filters en /rules bevat.
+Hier volgt een voorbeeld `dispatcher.any` dossier dat de Gemeenschappen /filters en /rules omvat.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

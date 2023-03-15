@@ -58,7 +58,7 @@ De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het geb
 
 iOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-apps die op iOS 9 worden uitgevoerd. Deze kwestie verhindert verzoeken aan onveilige gastheren (zoals *http://localhost:4502*). Dit probleem zal worden opgelost met de komende vrijgave van cordova-ios (verbruikt door de CLI van Cordova), maar ondertussen zijn er twee oplossingen beschikbaar:
 
-1. Als oplossing kunt u alle iOS 8-simulators zonder problemen gebruiken.
+1. U kunt nu alle iOS 8-simulators zonder problemen gebruiken.
 1. Als u iOS 9 moet gebruiken, kunt u de apps -Info.plist gebruiken (deze vindt u na uitvoering `cordova platform add ios` in &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) kan handmatig worden bewerkt en de volgende eigenschap bevatten:
 
 ```

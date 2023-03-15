@@ -1,8 +1,8 @@
 ---
 title: AEM Forms for Backup voorbereiden
-seo-title: AEM Forms for Backup voorbereiden
+seo-title: Preparing AEM Forms for Backup
 description: Leer hoe u de service Back-up en herstel kunt gebruiken om de back-upmodus voor de AEM Forms-server in te schakelen en te verlaten met de Java API en de webservice-API.
-seo-description: Leer hoe u de service Back-up en herstel kunt gebruiken om de back-upmodus voor de AEM Forms-server in te schakelen en te verlaten met de Java API en de webservice-API.
+seo-description: Learn how to use the Backup and Restore service to enter and leave the Backup mode for AEM Forms server using the Java API and the Web Service API.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -10,22 +10,21 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2555'
+source-wordcount: '2520'
 ht-degree: 0%
 
 ---
 
-
-# AEM Forms for Backup {#preparing-aem-forms-for-backup} voorbereiden
+# AEM Forms for Backup voorbereiden {#preparing-aem-forms-for-backup}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 ## Over de service Back-up en herstel {#about-the-backup-and-restore-service}
 
-Met de service Back-up en herstel kunt u AEM Forms in de back-upmodus *zetten, zodat hot back-ups kunnen worden uitgevoerd.* De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem niet. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de formulierserver. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
+Met de service Back-up en Herstellen kunt u AEM Forms in *back-upmodus*, waardoor hot back-ups kunnen worden uitgevoerd. De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem niet. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de formulierserver. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
 
 De back-upmodus is een toestand die de server invoert zodat bestanden in de GDS niet worden gewist terwijl een back-upprocedure plaatsvindt. In plaats daarvan worden submappen gemaakt onder de GDS-map om een record bij te houden van bestanden die moeten worden gewist nadat de back-upmodus is beëindigd. Een bestand is bedoeld om het systeem opnieuw te laten opstarten en kan dagen, of zelfs jaren, beslaan. Deze bestanden vormen een essentieel onderdeel van de algemene status van de formulierserver en kunnen PDF-bestanden, beleidsregels of formuliersjablonen bevatten. Als een van deze bestanden verloren gaat of beschadigd raakt, kunnen de processen op de formulierserver instabiel worden en kunnen er gegevens verloren gaan.
 
@@ -46,11 +45,11 @@ U kunt deze taken uitvoeren met behulp van de service Back-up en herstel:
 
 >[!NOTE]
 >
->Zie [Beheerhelp](https://www.adobe.com/go/learn_aemforms_admin_63) voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
+>Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Back-up en herstel.
+>Ga voor meer informatie over de service Back-up en herstel naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Back-upmodus invoeren op de formulierserver {#entering-backup-mode-on-the-forms-server}
 
@@ -60,13 +59,13 @@ U gaat reservewijze in om voor hete steunen van een vormenserver toe te staan. A
 * De tijd voor de reserveprocedure om te voltooien.
 * Een vlag om erop te wijzen of om op ononderbroken reservewijze te zijn, die slechts nuttig is als u het rollen steunen uitvoert.
 
-Voordat u toepassingen gaat schrijven om de back-upmodus te activeren, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de formulierserver in de back-upmodus hebt gezet. Zie [Beheerhelp](https://www.adobe.com/go/learn_aemforms_admin_63) voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
+Voordat u toepassingen gaat schrijven om de back-upmodus te activeren, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de formulierserver in de back-upmodus hebt gezet. Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Back-up en herstel.
+>Ga voor meer informatie over de service Back-up en herstel naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een toepassing te maken die de back-upmodus activeert:
 
@@ -81,7 +80,7 @@ Voer de volgende stappen uit om een toepassing te maken die de back-upmodus acti
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk om in uw project op te nemen voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze bestanden.
+Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een BackupService Client API-object maken**
 
@@ -89,7 +88,7 @@ Als u de back-upmodus programmatisch wilt verlaten, maakt u een BackupService-cl
 
 **Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn**
 
-Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of de formulierserver in de back-upmodus moet blijven. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of de formulierserver in de back-upmodus moet blijven. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Back-upmodus openen**
 
@@ -103,7 +102,7 @@ Nadat u de back-upmodus hebt geactiveerd, kunt u informatie over de sessie ophal
 
 Nadat u de back-upmodus hebt geactiveerd, kunt u een back-up maken van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. Deze stap is specifiek voor uw organisatie, aangezien u deze stap manueel kunt uitvoeren of u andere hulpmiddelen kunt in werking stellen om de reserveprocedure uit te voeren.
 
-### Back-upmodus activeren met de Java API {#enter-backup-mode-using-the-java-api}
+### Back-upmodus starten met de Java API {#enter-backup-mode-using-the-java-api}
 
 Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
@@ -119,10 +118,10 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
 1. Een BackupService Client API-object maken
 
-   U gebruikt een `ServiceClientFactory`-object en het BackupService client-API-object samen.
+   U gebruikt een `ServiceClientFactory` -object en het BackupService client-API-object samen.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Maak een `BackupService`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Een `BackupService` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn
 
@@ -130,34 +129,34 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
 1. Back-upmodus openen
 
-   Ga reservewijze door de `enterBackupMode` methode met de volgende parameters aan te halen:
+   Ga reservewijze door aan te halen binnen `enterBackupMode` methode met de volgende parameters:
 
-   * Een waarde `String` die een uniek, leesbaar label opgeeft dat de back-upmodussessie identificeert. U wordt aangeraden geen spaties of tekens te gebruiken die niet in XML-indeling kunnen worden gecodeerd.
-   * Een `int` waarde die het aantal minuten specificeert om in reservewijze te blijven. U kunt een waarde opgeven van `1` tot `10080` (het aantal minuten in een week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
-   * Een `Boolean`-waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. De waarde `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd.
+   * A `String` waarde die een uniek, leesbaar label opgeeft dat de back-upmodussessie identificeert. U wordt aangeraden geen spaties of tekens te gebruiken die niet in XML-indeling kunnen worden gecodeerd.
+   * An `int` waarde die het aantal minuten aangeeft dat moet worden bewaard in de back-upmodus. U kunt een waarde opgeven vanuit `1` tot `10080` (het aantal minuten in een week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
+   * A `Boolean` waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. Een waarde van `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd.
 
-      In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid. De waarde `False` houdt in dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
+      In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid. Een waarde van `False` betekent dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden gezuiverd.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 
-   Haal informatie op met het object `BackupModeEntryResult` dat wordt geretourneerd nadat de methode `enterBackupMode` is aangeroepen. De informatie die u kunt terugwinnen nadat u reservewijze ingaat kan nuttig zijn om met uw reserveprocedures te integreren. Het label, de back-up-id en de begintijd kunnen bijvoorbeeld handig zijn als invoer voor bestandsnamen voor de back-upprocedure.
+   Gegevens ophalen met de opdracht `BackupModeEntryResult` object dat wordt geretourneerd nadat het object is aangeroepen `enterBackupMode` methode. De informatie die u kunt terugwinnen nadat u reservewijze ingaat kan nuttig zijn om met uw reserveprocedures te integreren. Het label, de back-up-id en de begintijd kunnen bijvoorbeeld handig zijn als invoer voor bestandsnamen voor de back-upprocedure.
 
 1. Maak een back-up van de GDS en de database
 
    Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
-### Back-upmodus activeren met de webservice-API {#enter-backup-mode-using-the-web-service-api}
+### Back-upmodus starten met de webservice-API {#enter-backup-mode-using-the-web-service-api}
 
 Voer de back-upmodus in met behulp van de webservice van de API voor back-up en herstel:
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Steun en herstelt de Dienst API WSDL gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Reserve en Terugzetdienst API WSDL verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. Een BackupService Client API-object maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `BackupServiceService` voorwerp door zijn standaardaannemer aan te halen en specificeer de geloofsbrieven gebruikend de `Credentials` methode.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `BackupServiceService` object door de standaardconstructor aan te roepen en de referenties op te geven met de `Credentials` methode.
 
 1. Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn
 
@@ -167,11 +166,11 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
    Als u de back-upmodus wilt inschakelen, roept u de methode enterBackupMode aan en geeft u de volgende waarden door:
 
-   * Een waarde `String` die een uniek, leesbaar label opgeeft dat de back-upmodussessie identificeert. U wordt aangeraden geen spaties of tekens te gebruiken die niet in XML-indeling kunnen worden gecodeerd.
-   * Een waarde `Uint32` die het aantal minuten specificeert om in reservewijze te blijven. U kunt een waarde opgeven van `1` tot `10080` (aantal minuten in een week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
-   * Een `Boolean`-waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. De waarde `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd. In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid.
+   * A `String` waarde die een uniek, leesbaar label opgeeft dat de back-upmodussessie identificeert. U wordt aangeraden geen spaties of tekens te gebruiken die niet in XML-indeling kunnen worden gecodeerd.
+   * A `Uint32` waarde die het aantal minuten aangeeft dat moet worden bewaard in de back-upmodus. U kunt een waarde opgeven vanuit `1` tot `10080` (aantal minuten in één week). Deze waarde wordt genegeerd bij gebruik van de modus voor continue back-up.
+   * A `Boolean` waarde die aangeeft of de modus voor continue back-up moet worden geactiveerd. Een waarde van `True` geeft aan dat de modus voor continue back-up moet worden geactiveerd. In de modus voor continue back-up wordt de waarde die u opgeeft voor het aantal minuten dat u in de back-upmodus wilt blijven, genegeerd. In de modus Continue back-up wordt een nieuwe back-upmodus gestart nadat de huidige sessie is voltooid.
 
-      De waarde `False` houdt in dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden verwijderd.
+      Een waarde van `False` betekent dat de continue back-upmodus niet wordt gebruikt en dat, nadat de back-upmodus is verlaten, de bestanden uit de GDS opnieuw worden gezuiverd.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 
@@ -181,17 +180,17 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
    Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
-## Back-upmodus op de formulierserver laten {#leaving-backup-mode-on-the-forms-server}
+## Back-upmodus op de formulierserver laten staan {#leaving-backup-mode-on-the-forms-server}
 
 U verlaat de back-upmodus, zodat de formulierserver bestanden hervat van de GDS (Global Document Storage) op de formulierserver.
 
-Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Zie [Beheerhelp](https://www.adobe.com/go/learn_aemforms_admin_63) voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
+Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Back-up en herstel.
+>Ga voor meer informatie over de service Back-up en herstel naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om de back-upmodus te verlaten:
 
@@ -204,7 +203,7 @@ Voer de volgende stappen uit om de back-upmodus te verlaten:
 
 Neem alle benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze bestanden.
+Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een BackupService Client API-object maken**
 
@@ -234,18 +233,18 @@ Maak een back-upmodus met de API voor back-up en herstel (Java):
 
 1. Een BackupService Client API-object maken
 
-   U gebruikt een `ServiceClientFactory`-object en het BackupService client-API-object samen.
+   U gebruikt een `ServiceClientFactory` -object en het BackupService client-API-object samen.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Maak een `BackupService`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` als parameter door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+   * Een `BackupService` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object als parameter.
 
 1. Back-upmodus openen
 
-   Laat de back-upmodus staan door de methode `leaveBackupMode` aan te roepen.
+   De back-upmodus verlaten door de `leaveBackupMode` methode.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 
-   Haal informatie op over de bewerking met het object `BackupModeResult` dat wordt geretourneerd. De informatie die u kunt terugwinnen nadat u reservewijze ingaat kan nuttig zijn om met uw reserveprocedures te integreren. Het label, de back-up-id en de begintijd kunnen bijvoorbeeld handig zijn als invoer voor bestandsnamen voor de back-upprocedure.
+   Hiermee wordt informatie over de bewerking opgehaald met de opdracht `BackupModeResult` object dat wordt geretourneerd. De informatie die u kunt terugwinnen nadat u reservewijze ingaat kan nuttig zijn om met uw reserveprocedures te integreren. Het label, de back-up-id en de begintijd kunnen bijvoorbeeld handig zijn als invoer voor bestandsnamen voor de back-upprocedure.
 
 ### Back-upmodus verlaten met de webservice-API {#leave-backup-mode-using-the-web-service-api}
 
@@ -255,18 +254,17 @@ Maak een back-upmodus met de API voor back-up en herstel (webservice):
 
    Als u webservices wilt gebruiken, moet u ervoor zorgen dat u de proxybestanden opneemt. Voer de volgende stappen uit om uw project te configureren voor het gebruik van de API voor back-up en herstel als webservice.
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Steun en herstelt de Dienst API WSDL gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Reserve en Terugzetdienst API WSDL verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. Een BackupService Client API-object maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `BackupServiceService` voorwerp door zijn standaardaannemer aan te halen.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `BackupServiceService` object door de standaardconstructor aan te roepen.
 
 1. Back-upmodus openen
 
-   Maak een back-upmodus door de webservicebewerking `leaveBackupMode` aan te roepen.
+   De back-upmodus verlaten door de `leaveBackupMode` bewerking met webservices.
 
 1. Informatie ophalen over de back-upmodussessie op de server
 
    Haal de id van de back-upmodus na de bewerking op om te controleren of deze is gelukt. De informatie die u kunt terugwinnen nadat u reservewijze verlaat kan nuttig zijn om met uw reserveprocedures te integreren.
-

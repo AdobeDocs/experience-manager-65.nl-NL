@@ -1,14 +1,15 @@
 ---
-title: Reizen zonder kop AEM
+title: AEM Headless Journeys
 description: Een verzameling documentatietrajecten waarin wordt beschreven hoe u Adobe Experience Manager als een CMS zonder koptekst kunt gebruiken.
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# Reizen zonder kop AEM {#aem-headless-journeys}
+# AEM Headless Journeys {#aem-headless-journeys}
 
 Begin hier voor een overzicht van de begeleide reizen beschikbaar om AEM krachtige headless eigenschappen te begrijpen.
 

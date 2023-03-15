@@ -1,8 +1,8 @@
 ---
 title: JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens
-seo-title: JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens
-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de Java API.
-seo-description: Met de service Formuliergegevensintegratie kunt u gegevens in een PDF-formulier importeren en gegevens uit een PDF-formulier exporteren met de Java API.
+seo-title: Form Data Integration Service JavaAPI Quick Start(SOAP)
+description: Met de service Formuliergegevensintegratie kunt u gegevens importeren in een PDF-formulier en gegevens exporteren uit een PDF-formulier met de Java API.
+seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API.
 uuid: bde8e83d-56d3-4331-a025-82b327c219b7
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-
-# Java API Quick Start (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
+# Java API Quick Start (SOAP), service voor integratie van formuliergegevens {#form-data-integration-service-javaapi-quick-start-soap}
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Integratie van de Gegevens van de Vorm.
 
@@ -137,7 +136,7 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
 
 ## Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gegevens uit een PDF-formulier geëxporteerd. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
+In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
 ```java
  /*
@@ -231,4 +230,3 @@ In het volgende Java-codevoorbeeld worden gegevens uit een PDF-formulier geëxpo
      }
  }
 ```
-

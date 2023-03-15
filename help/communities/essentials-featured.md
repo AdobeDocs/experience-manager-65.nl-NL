@@ -1,31 +1,30 @@
 ---
 title: Essentiële inhoud
-seo-title: Essentiële inhoud
+seo-title: Featured Content Essentials
 description: Werken met inhoud van functies
-seo-description: Werken met inhoud van functies
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 70b0ad6a-c891-4588-8515-449aed206805
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '106'
 ht-degree: 2%
 
 ---
 
-
-# Essentiële inhoud {#featured-content-essentials}
+# Essentiële inhoud  {#featured-content-essentials}
 
 Deze pagina bevat de essentiële informatie voor het werken met aanbevolen inhoud.
 
 In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u met deze functie inhoud overal op de site van de community markeren.
 
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -58,6 +57,6 @@ In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u 
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 
-### Bestandsbibliotheekfunctie {#file-library-function}
+### Functie bestandsbibliotheek {#file-library-function}
 
-Een community-sitestructuur die de functie [Aanbevolen inhoud](functions.md#featured-content-function) bevat, bevat een geconfigureerde `featured content`-component.
+Een community-sitestructuur die de [Functie Aanbevolen inhoud](functions.md#featured-content-function)bevat een configuratie `featured content` component.

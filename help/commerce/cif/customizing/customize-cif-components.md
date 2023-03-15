@@ -1,6 +1,6 @@
 ---
 title: CIF Core-componenten aanpassen
-description: Leer hoe u AEM CIF Core-componenten aanpast. In de zelfstudie wordt uitgelegd hoe u een CIF Core-component veilig kunt uitbreiden om aan bedrijfsspecifieke vereisten te voldoen. Leer hoe te om een vraag uit te breiden GraphQL om een douanekenmerk terug te keren en de nieuwe attributen in een Component van de Kern te tonen CIF.
+description: Leer hoe u AEM CIF Core-componenten aanpast. In de zelfstudie wordt uitgelegd hoe u een CIF Core-component veilig kunt uitbreiden om aan bedrijfsspecifieke vereisten te voldoen. Leer hoe te om een vraag van GraphQL uit te breiden om een douanekenmerk terug te keren en de nieuwe attributen in een Component van de Kern van CIF te tonen.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM CIF Core-componenten aanpassen {#customize-cif-components}
 
-De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U zult ook meer over de integratie GraphQL tussen AEM en Adobe Commerce en de uitbreidingshaken leren die door de Componenten van de Kern CIF worden verstrekt.
+De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een referentiecode die als basis kan dienen voor [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components). In deze zelfstudie breidt u de [Productteam](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) om een aangepast kenmerk van Adobe Commerce weer te geven. U leert ook meer over de GraphQL-integratie tussen AEM en Adobe Commerce en de extensiekoppels die door de CIF Core Components worden geleverd.
 
 >[!TIP]
 >
@@ -28,7 +28,7 @@ De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een ref
 
 ## Wat u gaat maken
 
-Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk zal dan als deel van de vraag GraphQL worden toegevoegd en op de Teaser van het Product voor gespecificeerde producten getoond.
+Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk zal dan als deel van de vraag van GraphQL worden toegevoegd en op de Teaser van het Product voor gespecificeerde producten getoond.
 
 ![Eco-vriendelijke badge - definitieve implementatie](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -36,7 +36,7 @@ Het merk Venia is onlangs begonnen met de productie van bepaalde producten met b
 
 U hebt een lokale ontwikkelomgeving nodig om deze zelfstudie te voltooien. Dit omvat een lopende instantie van AEM die wordt gevormd en met een instantie van Adobe Commerce verbonden. De vereisten en stappen voor [een plaatselijke ontwikkeling opzetten met AEM](../develop.md). Als u de zelfstudie volledig wilt volgen, hebt u machtigingen nodig om toe te voegen [Kenmerken van een product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-U zult ook GrafiekQL winde zoals nodig hebben [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u ervoor zorgen dat deze de mogelijkheid heeft om aanvraagheaders in te stellen. In Google Chrome: [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is één extensie die de taak kan uitvoeren.
+U hebt ook GraphQL IDE nodig, zoals [GraphiQL](https://github.com/graphql/graphiql) of een browserextensie om de codevoorbeelden en zelfstudies uit te voeren. Als u een browserextensie installeert, moet u ervoor zorgen dat deze de mogelijkheid heeft om aanvraagheaders in te stellen. In Google Chrome: [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is één extensie die de taak kan uitvoeren.
 
 ## Het Venia-project klonen {#clone-venia-project}
 
@@ -135,13 +135,13 @@ De in AEM weergegeven producten en productgegevens worden opgeslagen in Adobe Co
    >
    >Meer informatie over [Cache Management vindt u in de Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/system/cache-management.html).
 
-## Gebruik een GrafiekQL winde om Attribuut te verifiëren {#use-graphql-ide}
+## GraphQL IDE gebruiken om kenmerk te verifiëren {#use-graphql-ide}
 
-Voordat u in AEM code gaat, is het handig om de [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) het gebruiken van een IDE GraphQL. De integratie van Adobe Commerce met AEM wordt hoofdzakelijk gedaan via een reeks vragen GraphQL. Het begrip van en het wijzigen van de vragen GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
+Voordat u in AEM code gaat, is het handig om de [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) een GraphQL-IDE gebruiken. De Adobe Commerce-integratie met AEM gebeurt voornamelijk via een reeks GraphQL-query&#39;s. Het begrip van en het wijzigen van de vragen van GraphQL is één van de belangrijkste manieren waarin de Componenten van de Kern CIF kunnen worden uitgebreid.
 
-Daarna, gebruik een IDE GraphQL om te verifiëren dat `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmerk is toegevoegd aan de set productkenmerken. Screenshots in deze zelfstudie gebruiken de [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. Open GrafiekQL winde en ga URL in `http://<server>/graphql` in de bar URL van uw winde of uitbreiding.
+1. GraphQL-IDE openen en URL invoeren `http://<server>/graphql` in de bar URL van uw winde of uitbreiding.
 2. Voeg het volgende toe [productquery](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) waar `YOUR_SKU` is de **SKU** van het product dat bij de vorige exercitie werd gebruikt:
 
    ```json
@@ -176,13 +176,13 @@ Daarna, gebruik een IDE GraphQL om te verifiëren dat `eco_friendly` kenmerk is 
    }
    ```
 
-   ![Sample GraphQL-respons](../assets/customize-cif-components/sample-graphql-query.png)
+   ![Voorbeeld GraphQL-reactie](../assets/customize-cif-components/sample-graphql-query.png)
 
-   De waarde van **Ja** is een geheel getal van **1**. Dit zal nuttig zijn wanneer wij de vraag GraphQL in Java schrijven.
+   De waarde van **Ja** is een geheel getal van **1**. Dit is handig wanneer we de GraphQL-query in Java schrijven.
 
    >[!TIP]
    >
-   >Meer gedetailleerde documentatie over [Adobe Commerce GraphQL vindt u hier](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   >Meer gedetailleerde documentatie over [Adobe Commerce GraphQL is hier te vinden](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -261,9 +261,9 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
 
    De `@PostConstruct` De aantekening zorgt ervoor dat deze methode wordt geroepen zodra het het Verdelen Model wordt geïnitialiseerd.
 
-   Merk op dat de vraag van het product GraphQL reeds gebruikend is uitgebreid `extendProductQueryWith` methode om de extra `created_at` kenmerk. Dit kenmerk wordt later gebruikt als onderdeel van het dialoogvenster `isShowBadge()` methode.
+   De productvraag van GraphQL is al uitgebreid via de `extendProductQueryWith` methode om de extra `created_at` kenmerk. Dit kenmerk wordt later gebruikt als onderdeel van het dialoogvenster `isShowBadge()` methode.
 
-1. Werk de vraag GraphQL bij om te omvatten `eco_friendly` kenmerk in de gedeeltelijke query:
+1. Werk de GraphQL-query bij en voeg de `eco_friendly` kenmerk in de gedeeltelijke query:
 
    ```java
    //MyProductTeaserImpl.java
@@ -324,7 +324,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    }
    ```
 
-   In de bovenstaande methode wordt `productRetriever` wordt gebruikt om het product en de `getAsInteger()` wordt gebruikt om de waarde van `eco_friendly` kenmerk. Gebaseerd op de vragen GraphQL wij vroeger in werking stelden weten wij dat de verwachte waarde wanneer `eco_friendly` kenmerk is ingesteld op &quot;**Ja**&quot; is eigenlijk een geheel getal van **1**.
+   In de bovenstaande methode wordt `productRetriever` wordt gebruikt om het product en de `getAsInteger()` wordt gebruikt om de waarde van `eco_friendly` kenmerk. Op basis van de GraphQL query&#39;s die we eerder hebben uitgevoerd, weten we dat de verwachte waarde `eco_friendly` kenmerk is ingesteld op &quot;**Ja**&quot; is eigenlijk een geheel getal van **1**.
 
    Nu het Sling Model is bijgewerkt, moet de prijsverhoging van de Component worden bijgewerkt om daadwerkelijk een indicator van te tonen van **Eco Friendly** op basis van het verkoopmodel.
 

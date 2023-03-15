@@ -1,22 +1,21 @@
 ---
 title: Werken met workflows
-seo-title: Werken met workflows
+seo-title: Working with Workflows
 description: Met workflows in AEM kunt u een reeks stappen automatiseren die worden uitgevoerd op een pagina of element.
-seo-description: Met workflows in AEM kunt u een reeks stappen automatiseren die worden uitgevoerd op een pagina of element.
+seo-description: Workflows in AEM allow you to automate a series of steps that are performed on a page or asset.
 uuid: c4442d2a-c6b0-49d4-a1ce-384017c45bf0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
-translation-type: tm+mt
-source-git-commit: 48d18de8c982ab3b92cad4df030cb1e4a1a8dfc4
+exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '180'
 ht-degree: 7%
 
 ---
-
 
 # Werken met workflows{#working-with-workflows}
 
@@ -37,4 +36,3 @@ De volgende pagina&#39;s omvatten:
 
 * [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
 * [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
-

@@ -1,8 +1,8 @@
 ---
 title: Gereedschapsconsoles
-seo-title: Gereedschapsconsoles
+seo-title: Tools Consoles
 description: Leer meer over de verschillende gereedschapsconsoles in AEM.
-seo-description: Leer meer over de verschillende gereedschapsconsoles in AEM.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,23 +10,22 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 801d57bbe8a1bede6dcb4bf7884e5f71ddea1e83
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 26%
+source-wordcount: '609'
+ht-degree: 25%
 
 ---
 
-
 # Gereedschapsconsoles{#tools-consoles}
 
-Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de **console Tools** afhankelijk van UI u gebruikt:
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flauwvallen van de **Gereedschappen** console afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
 
-## Gereedschappen - Voor aanraking geoptimaliseerde gebruikersinterface {#tools-touch-optimized-ui}
+## Gereedschappen - Touch-Optimized UI {#tools-touch-optimized-ui}
 
 >[!NOTE]
 >
@@ -48,7 +47,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -312,15 +311,15 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie sociale aanmelding bij Facebook<br /> </td>
+   <td>Configuratie sociale aanmelding voor facebook<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie sociale aanmelding voor Twitter<br /> </td>
+   <td>Configuratie sociale aanmelding voor twitter<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Pinterest Social Login Configuration<br /> </td>
+   <td>Configuratie sociale aanmelding voor pinterest<br /> </td>
   </tr>
   <tr>
    <td>Gemeenschappen</td>
@@ -340,7 +339,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>Groepsjablonen<br /> </td>
+   <td>Groepssjablonen<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -365,7 +364,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
  </tbody>
 </table>
 
-## Gereedschappen - Klassieke UI {#tools-classic-ui}
+## Gereedschappen - Klassieke gebruikersinterface {#tools-classic-ui}
 
 <table>
  <tbody>
@@ -378,15 +377,15 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Gecentraliseerd punt voor het beheer van uw meerdere sites.</td>
   </tr>
   <tr>
-   <td>Clientcontextconfiguraties<br /> </td>
-   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden hier gehouden.<br /> </td>
+   <td>Contextconfiguraties voor clients<br /> </td>
+   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden gehouden hier.<br /> </td>
   </tr>
   <tr>
-   <td>Cloud Services Configurations<br /> </td>
+   <td>Configuraties van Cloud Services<br /> </td>
    <td>Bevat configuraties met betrekking tot Integratie met de Adobe Marketing Cloud.</td>
   </tr>
   <tr>
-   <td>Cloud Settings<br /> </td>
+   <td>Cloud-instellingen<br /> </td>
    <td>Configuratiebeheerinstellingen.</td>
   </tr>
   <tr>
@@ -467,4 +466,3 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
  </tbody>
 </table>
-

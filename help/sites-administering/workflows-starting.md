@@ -23,12 +23,12 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 
 * Handmatig:
 
-   * Van een [Werkstroommodel](#workflow-models).
-   * Een workflowpakket gebruiken voor [batchverwerking](#workflow-packages-for-batch-processing).
+   * Van een [Workflowmodel](#workflow-models).
+   * Workflowpakket gebruiken voor [batchverwerking](#workflow-packages-for-batch-processing).
 
 * Automatisch:
 
-   * Als reactie op wijzigingen in knooppunten; [een Launcher](#workflows-launchers) gebruiken.
+   * Als reactie op wijzigingen in knooppunten; [met behulp van een Launcher](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -38,19 +38,18 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 >* [Workflows toepassen op DAM-elementen](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Omzettingsprojecten](/help/sites-administering/tc-manage.md)
-
 >
 
 
 ## Workflowmodellen {#workflow-models}
 
-U kunt een werkschema [beginnen op één van de modellen](/help/sites-administering/workflows.md#workflow-models-and-instances) die op de console van de Modellen van het Werkschema worden vermeld. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
+U kunt een workflow starten [op basis van een van de modellen](/help/sites-administering/workflows.md#workflow-models-and-instances) vermeld op de console van de Modellen van het Werkschema. De enige verplichte informatie is de lading, hoewel een titel en/of commentaar ook kan worden toegevoegd.
 
 ## Startprogramma&#39;s voor workflows {#workflows-launchers}
 
 De Workflow Launcher controleert wijzigingen in de inhoudsopslagruimte om workflows te starten afhankelijk van de locatie en het type bron van het gewijzigde knooppunt.
 
-Met de **Launcher** kunt u:
+Met de **Launcher** u kunt:
 
 * Zie de workflows die al zijn gestart voor specifieke knooppunten.
 * Selecteer een workflow die moet worden gestart wanneer een bepaald knooppunt/knooppunttype is gemaakt/gewijzigd/verwijderd.
@@ -59,7 +58,7 @@ Met de **Launcher** kunt u:
 Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaalde knooppunten leiden echter niet tot workflows. Als u knooppunten wijzigt die onder de volgende paden liggen, worden workflows niet gestart:
 
 * `/var/workflow/instances`
-* Om het even welk werkschema-inbox knoop die overal in `/home/users` tak wordt gevestigd
+* Willekeurig workflowinbox-knooppunt ergens in het dialoogvenster `/home/users` vertakking
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -68,7 +67,7 @@ Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaald
 * `/var/mobile`
 * `/var/statistics`
 
-   * Uitzondering: Wijzigingen in knooppunten onder `/var/statistics/tracking` *do* zorgen ervoor dat workflows worden gestart.
+   * Uitzondering: Wijzigingen in onderstaande knooppunten `/var/statistics/tracking` *do* zorgt ervoor dat werkstromen worden gestart.
 
 De standaardinstallatie bevat verschillende definities. Deze worden gebruikt voor taken op het gebied van digitaal middelenbeheer en sociale samenwerking:
 
@@ -88,16 +87,16 @@ Een workflowpakket:
 
 ## Een workflow starten vanuit de Modellen-console {#starting-a-workflow-from-the-models-console}
 
-1. Navigeer naar de **Modellen** console met **Tools**, **Workflow**, dan **Models**.
+1. Ga naar de **Modellen** console gebruiken **Gereedschappen**, **Workflow** vervolgens **Modellen**.
 1. Selecteer de werkstroom (volgens de consolemening); U kunt ook Zoeken (linksboven) gebruiken als dat nodig is:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >De indicator **[Transient](/help/sites-developing/workflows.md#transient-workflows)** toont werkschema&#39;s waarvoor de werkschemageschiedenis niet zal worden voortgeduurd.
+   >De **[Voorzichtig](/help/sites-developing/workflows.md#transient-workflows)** de indicator toont werkschema&#39;s waarvoor de werkschemageschiedenis niet zal voortzetten.
 
-1. Selecteer **Workflow starten** op de werkbalk.
+1. Selecteren **Workflow starten** op de werkbalk.
 1. Het dialoogvenster Werkstroom uitvoeren wordt geopend, zodat u het volgende kunt opgeven:
 
    * **Payload**
@@ -115,8 +114,8 @@ Een workflowpakket:
 
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
-1. Navigeer naar de **Workflow Launchers**-console met **Tools**, **Workflow** en **Launchers**.
-1. Selecteer **Maken** en **Startpagina toevoegen** om het dialoogvenster te openen:
+1. Ga naar de **Workflowstartprogramma&#39;s** console gebruiken **Gereedschappen**, **Workflow** vervolgens **Launchers**.
+1. Selecteren **Maken** vervolgens **Launcher toevoegen** om het dialoogvenster te openen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -137,7 +136,7 @@ Een workflowpakket:
 
    * **Run-modus(s)**
 
-      Het type server waarop de workflow wordt gestart. Selecteer **Auteur**, **Publiceren** of **Auteur en publiceren**.
+      Het type server waarop de workflow wordt gestart. Selecteren **Auteur**, **Publiceren**, of **Auteur en publicatie**.
 
    * **Voorwaarden**
 
@@ -165,16 +164,16 @@ Een workflowpakket:
 
       Bepaalt of de workflow wordt gestart:
 
-      * Selecteer **Inschakelen** om workflows te starten wanneer aan de configuratie-eigenschappen wordt voldaan.
-      * Selecteer **Uitschakelen** wanneer de workflow niet moet worden uitgevoerd (zelfs niet wanneer aan de configuratie-eigenschappen wordt voldaan).
+      * Selecteren **Inschakelen** om workflows te starten wanneer aan de configuratie-eigenschappen wordt voldaan.
+      * Selecteren **Uitschakelen** wanneer de workflow niet moet worden uitgevoerd (zelfs niet wanneer aan de configuratie-eigenschappen wordt voldaan).
    * **Lijst uitsluiten**
 
       Hiermee worden JCR-gebeurtenissen opgegeven die moeten worden uitgesloten (negeren) wanneer wordt bepaald of een workflow moet worden geactiveerd.
 
       Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
 
-      * `property-name` negeert om het even welke  `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
-      * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die  `*<someValue*`>  `user-data` via de  [ `ObservationManager` API] heeft ingesteld (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `property-name` alle `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
+      * `event-user-data:<*someValue*>` negeert elke gebeurtenis die het `*<someValue*`> `user-data` door de [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
       Bijvoorbeeld:
 
@@ -188,10 +187,10 @@ Een workflowpakket:
 
 
 
-1. Selecteer **Maken** om de draagtas te maken en terug te keren naar de console.
+1. Selecteren **Maken**, om de lanceerinrichting te creëren en aan de console terug te keren.
 
    Zodra de juiste gebeurtenis plaatsvindt, wordt de starter geactiveerd en wordt de workflow gestart.
 
 ## Een opstartconfiguratie beheren {#managing-a-launcher-configuration}
 
-Nadat u uw lanceringsconfiguratie hebt gecreeerd kunt u de zelfde console gebruiken om de instantie te selecteren, dan **Eigenschappen van de Mening** (en hen uit te geven) of **Schrapping**.
+Nadat u uw lanceringsconfiguratie hebt gecreeerd kunt u de zelfde console gebruiken om de instantie te selecteren, dan **Eigenschappen weergeven** (en deze bewerken) of **Verwijderen**.

@@ -143,7 +143,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>vereist</p> </td>
+     <td><p><code>Long</code></p> <p>required</p> </td>
      <td><p>Versie van de inhoudsstructuur; momenteel ondersteund:</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -160,7 +160,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>vereist</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
      <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet ten minste één onderliggend knooppunt voor het <strong>Hoofd</strong> element, but can contain [1..n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het eerste element <i>hoofd</i> element; de knooppuntnaam is irrelevant en het knooppunt zelf heeft geen speciale betekenis, afgezien van het feit dat het wordt vertegenwoordigd door het hoofdactief; de overige elementen worden behandeld als subactiva.</p> </td>
     </tr>
    </tbody>
@@ -182,7 +182,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>vereist</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>De titel van het element (wordt weergegeven in de elementenkiezer van de fragmenteditor).</td>
     </tr>
     <tr>
@@ -202,7 +202,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>vereist</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>De interne naam van het element; moet uniek zijn voor het fragmenttype.</td>
     </tr>
    </tbody>
@@ -242,12 +242,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>vereist</p> </td>
+     <td><p><code>String</code></p> <p>required</p> </td>
      <td>De titel van de variatie (weergegeven in de fragmenteditor) <strong>Variatie</strong> tab (linkerspoor).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
      <td>Een tekst die een beschrijving van de wijziging bevat <span>(weergegeven in de <strong>Variatie</strong> tab (linkerspoor).</code></td>
     </tr>
    </tbody>

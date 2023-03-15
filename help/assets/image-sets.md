@@ -18,7 +18,7 @@ ht-degree: 6%
 
 ---
 
-# Afbeeldingssets {#image-sets}
+# Image Sets {#image-sets}
 
 Afbeeldingssets bieden gebruikers een geïntegreerde weergave, waarbij gebruikers verschillende weergaven van een item kunnen zien door een miniatuurafbeelding te selecteren. Met Afbeeldingssets kunt u alternatieve weergaven van een item presenteren en de viewer beschikt over zoomgereedschappen waarmee u afbeeldingen op de juiste wijze kunt bekijken.
 

@@ -29,7 +29,7 @@ De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de ass
 
 Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
-- De integratie van buiten-de-doos met het model van vormgegevens om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
+- De integratie van buiten de doos met vormgegevensmodel om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
 - Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
 - Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
 - Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel

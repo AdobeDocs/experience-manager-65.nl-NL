@@ -2,21 +2,20 @@
 title: Component Sideloading
 seo-title: Component Sideloading
 description: sideloading in een Community-component is handig wanneer een webpagina is ontworpen als een eenvoudige app van één pagina die dynamisch wijzigt wat wordt weergegeven, afhankelijk van wat de bezoeker van de site heeft geselecteerd
-seo-description: sideloading in een Community-component is handig wanneer een webpagina is ontworpen als een eenvoudige app van één pagina die dynamisch wijzigt wat wordt weergegeven, afhankelijk van wat de bezoeker van de site heeft geselecteerd
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # Component Sideloading {#component-sideloading}
 
@@ -34,7 +33,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 1. [De component toevoegen aan de DOM](#dynamically-add-component-to-dom)
 
-1. [Laad de ](#sideload-by-invoking-scf) component met een van de volgende twee methoden:
+1. [De component laden](#sideload-by-invoking-scf) met behulp van een van de volgende twee methoden:
 
 * [Dynamische insluiting](#dynamic-inclusion)
    * Alle dynamisch toegevoegde componenten versterken
@@ -43,7 +42,7 @@ De stappen om componenten dynamisch toe te voegen SCF zijn:
 
 >[!NOTE]
 >
->Sideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet gesteund.
+>Tideloading van [niet-bestaande middelen](scf.md#add-or-include-a-communities-component) wordt niet ondersteund.
 
 ## Component dynamisch toevoegen aan DOM {#dynamically-add-component-to-dom}
 
@@ -72,9 +71,9 @@ Hieronder ziet u een voorbeeld van een component voor toegevoegde opmerkingen:
 </div>
 ```
 
-## Sideload door SCF {#sideload-by-invoking-scf} aan te roepen
+## Sideload door SCF aan te roepen {#sideload-by-invoking-scf}
 
-### Dynamische integratie {#dynamic-inclusion}
+### Dynamische insluiting {#dynamic-inclusion}
 
 De dynamische opneming gebruikt een laarzentrekkerverzoek dat in SCF onderzoek DOM resulteert en bootsrapping alle componenten SCF die op de pagina worden gevonden.
 
@@ -90,4 +89,4 @@ In plaats van alle SCF-componenten die in het DOM worden gevonden, te bootstrapp
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Hierbij is `someId` de waarde van het `data-component-id`-kenmerk.
+Wanneer `someId` is de waarde van de `data-component-id` kenmerk.

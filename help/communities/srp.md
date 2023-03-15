@@ -1,32 +1,31 @@
 ---
 title: Overzicht opslagbronprovider
-seo-title: Overzicht opslagbronprovider
+seo-title: Storage Resource Provider Overview
 description: Gemeenschappelijke opslag voor de Gemeenschappen
-seo-description: Gemeenschappelijke opslag voor de Gemeenschappen
+seo-description: Common storage for Communities
 uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1133'
 ht-degree: 0%
 
 ---
 
-
-# Overzicht van opslagbronprovider {#storage-resource-provider-overview}
+# Overzicht opslagbronprovider {#storage-resource-provider-overview}
 
 ## Inleiding {#introduction}
 
-Vanaf AEM Communities 6.1 wordt community-inhoud, die doorgaans door gebruikers gegenereerde inhoud (UGC) wordt genoemd, opgeslagen in één gemeenschappelijke opslagruimte die wordt geleverd door een [opslagbronprovider](working-with-srp.md) (SRP).
+Vanaf AEM Communities 6.1 wordt community-inhoud, die doorgaans door gebruikers gegenereerde inhoud (UGC) wordt genoemd, opgeslagen in één gemeenschappelijke winkel die wordt geleverd door een [opslagbronprovider](working-with-srp.md) (SRP).
 
-Er zijn verscheidene opties SRP, die allen tot UGC door een nieuwe interface van AEM Communities toegang hebben, [SocialResourceProvider API](srp-and-ugc.md) (SRP API), die allen creeer, lezen, update, en schrapt (CRUD) verrichtingen omvat.
+Er zijn verscheidene opties SRP, die allen tot UGC door een nieuwe interface van AEM Communities toegang hebben, [API voor SocialResourceProvider](srp-and-ugc.md) (SRP API), die alle (CRUD)-bewerkingen (create, read, update and delete) omvat.
 
-Alle componenten SCF worden uitgevoerd gebruikend SRP API, toestaand code om zonder kennis van of [onderliggende topologie](topologies.md) of plaats van UGC worden ontwikkeld.
+Alle SCF componenten worden uitgevoerd gebruikend SRP API, toestaand code om zonder kennis van of te worden ontwikkeld [onderliggende topologie](topologies.md) of locatie van UGC.
 
 ***De API voor SocialResourceProvider is alleen beschikbaar voor klanten met een licentie van AEM Communities.***
 
@@ -36,37 +35,37 @@ Alle componenten SCF worden uitgevoerd gebruikend SRP API, toestaand code om zon
 
 Zie ook:
 
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
 
 ## Informatie over de opslagplaats {#about-the-repository}
 
 Om SRP te begrijpen, is het nuttig om de rol van de AEM bewaarplaats (OAK) in een AEM communautaire plaats te begrijpen.
 
 **Java Content Repository (JCR)**
-Deze standaard definieert een gegevensmodel en een programmeerinterface voor toepassingen ([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)) voor opslagruimten voor inhoud. Het combineert kenmerken van conventionele dossiersystemen met die van relationele gegevensbestanden, en voegt een aantal extra eigenschappen toe die inhoudstoepassingen vaak nodig hebben.
+Deze standaard definieert een gegevensmodel en een programmeerinterface voor toepassingen ([JCR-API](https://jackrabbit.apache.org/jcr/jcr-api.html)) voor opslagplaatsen voor inhoud. Het combineert kenmerken van conventionele dossiersystemen met die van relationele gegevensbestanden, en voegt een aantal extra eigenschappen toe die inhoudstoepassingen vaak nodig hebben.
 
 Eén implementatie van JCR is de AEM opslagplaats, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[](../../help/sites-deploying/platform.md) OAK is een implementatie van JCR 2.0. Dit is een gegevensopslagsysteem dat speciaal is ontworpen voor inhoudsgerichte toepassingen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De UI voor de toegang tot van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[OAK](../../help/sites-deploying/platform.md) is een implementatie van JCR 2.0 die een gegevensopslagsysteem specifiek voor inhoud-centric toepassingen wordt ontworpen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De interface voor het benaderen van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 Zowel JCR als OAK worden typisch gebruikt om naar de AEM bewaarplaats te verwijzen.
 
-Nadat u site-inhoud hebt ontwikkeld in de omgeving van de privéauteur, moet u deze kopiëren naar de openbare publicatieomgeving. Dit wordt vaak gedaan door een verrichting genoemd *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
+Nadat u site-inhoud hebt ontwikkeld in de omgeving van de privéauteur, moet u deze kopiëren naar de openbare publicatieomgeving. Dit gebeurt vaak via een bewerking die *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
 
 Voor UGC wordt de inhoud ingevoerd door geregistreerde sitebezoekers (leden van de community) in de publicatieomgeving van het publiek. Dit gebeurt willekeurig.
 
 Voor beheer en rapportage is het nuttig om vanuit de omgeving van de particuliere auteur toegang tot UGC te hebben. Met SRP, is de toegang tot UGC van auteur consistenter en uitvoerender aangezien de omgekeerde replicatie van publiceren aan auteur niet noodzakelijk is.
 
-## Informatie over SRP {#about-srp}
+## SRP {#about-srp}
 
 Wanneer UGC aan gedeelde opslag wordt bewaard, is er één enkel geval van lidinhoud die, in de meeste plaatsingen, van zowel de auteur als publicatiemilieu&#39;s kan worden betreden. Ongeacht de keus SRP (MSRP, ASRP, JSRP), moeten allen programmatically met SRP API worden betreden.
 
 >[!NOTE]
 >
->Zie [SRP en UGC Essentials](srp-and-ugc.md) voor steekproefcode en extra details.
+>Zie [SRP en UGC Essentials](srp-and-ugc.md) voor de voorbeeldcode en aanvullende gegevens.
 >
 >Zie [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) voor beste praktijken wanneer het coderen.
 
@@ -119,21 +118,21 @@ Met de SRP API voeren alle SRP-opties dezelfde controle uit op de schaduwlocatie
 
 De ACL controle gebruikt een nutsmethode die een weg geschikt voor het controleren van de toestemmingen terugkeert die op UGC van het middel worden toegepast.
 
-Zie [SRP en UGC Essentials](srp-and-ugc.md) voor steekproefcode.
+Zie [SRP en UGC Essentials](srp-and-ugc.md) voor voorbeeldcode.
 
-### Voor niet-bestaande Middelen (NERs) {#for-non-existing-resources-ners}
+### Voor niet-bestaande bronnen (NER&#39;s) {#for-non-existing-resources-ners}
 
-Sommige componenten van Gemeenschappen zijn inbegrepen binnen een manuscript en vereisen daarom een Sling adressable knoop om de eigenschappen van Gemeenschappen te steunen. [Opgenomen ](scf.md#add-or-include-a-communities-component) componenten worden bedoeld als niet-bestaande middelen (NERs).
+Sommige componenten van Gemeenschappen zijn inbegrepen binnen een manuscript en vereisen daarom een Sling adressable knoop om de eigenschappen van Gemeenschappen te steunen. [Opgenomen onderdelen](scf.md#add-or-include-a-communities-component) worden niet-bestaande middelen (NER&#39;s) genoemd.
 
 Schaduwknooppunten bieden een adresseerbare locatie in de opslagplaats.
 
 >[!CAUTION]
 >
->Aangezien de schaduwknoop veelvoudige toepassingen heeft, impliceert de aanwezigheid van een schaduwknoop *not* dat de component NER is.
+>Aangezien het schaduwknooppunt meerdere toepassingen heeft, doet de aanwezigheid van een schaduwknooppunt dat *niet* impliceren dat de component NER is.
 
 ### Opslaglocatie {#storage-location}
 
-Hieronder ziet u een voorbeeld van een schaduwknooppunt, waarbij de [component Comments](http://localhost:4502/content/community-components/en/comments.html) in de [Community Components Guide](components-guide.md) wordt gebruikt:
+Hieronder ziet u een voorbeeld van een schaduwknooppunt, waarbij u de opdracht [Component Opmerkingen](http://localhost:4502/content/community-components/en/comments.html) in de [Community Components Guide](components-guide.md):
 
 * De component bestaat in de lokale opslagplaats op:
 
@@ -147,10 +146,10 @@ Er wordt geen UGC gevonden onder het schaduwknooppunt.
 
 Standaard worden schaduwknooppunten ingesteld op een publicatie-instantie wanneer naar de relevante substructuur wordt verwezen voor lezen of schrijven.
 
-Als voorbeeld, veronderstel de plaatsing [MSRP](msrp.md) met een TarMK publiceert landbouwbedrijf is.
+Als voorbeeld, veronderstel de plaatsing [MSRP](msrp.md) met een TarMK-publicatiebedrijf.
 
-Wanneer een [lid](users.md) UGC op pub1 (opgeslagen in MongoDB) plaatst, worden de schaduwknopen gecreeerd in JCR op pub1.
+Wanneer een [lid](users.md) Hiermee wordt UGC op pub1 geplaatst (opgeslagen in MongoDB), worden schaduwknooppunten gemaakt in JCR op pub1.
 
 De eerste keer dat de UGC op pub2 wordt gelezen, als er niets is ingesteld, is het standaardgedrag dat de schaduwknooppunten worden gemaakt.
 
-Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatieinstanties. Dit is doorgaans een handmatig proces.
+Als u een ander gedrag wilt gebruiken dan het standaardgedrag, moet u dit instellen voor de instantie van de auteur en doorsturen naar alle publicatie-instanties. Dit is doorgaans een handmatig proces.

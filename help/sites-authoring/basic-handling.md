@@ -71,7 +71,7 @@ U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluit
 >
 >Wanneer u zich voor het eerst aanmeldt, hebt u de **Navigatie** deelvenster.
 
-Globale navigatie heeft twee deelvensters, die door pictogrammen bij de linkermarge van het scherm worden vertegenwoordigd:
+Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
 
 * **[Navigatie](/help/sites-authoring/basic-handling.md#navigation-panel)** - Vertegenwoordigd door een kompas
 * **[Gereedschappen](/help/sites-authoring/basic-handling.md#tools-panel)** - Vertegenwoordigd door een hamer

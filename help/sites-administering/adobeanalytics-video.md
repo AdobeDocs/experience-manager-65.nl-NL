@@ -321,7 +321,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, met het verschil dat de 
 
    **Voorbeeldaanroepen** aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
-   ![mijlpalen1](assets/lmilestones1.png)
+   ![lmilestones1](assets/lmilestones1.png)
 
    *De **pev3**De variabele die in de vraag wordt verzonden bevat de volgende informatie:*
 

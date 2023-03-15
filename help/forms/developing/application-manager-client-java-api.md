@@ -1,6 +1,6 @@
 ---
 title: Application Manager Client JavaAPI Quick Start (SOAP)
-seo-title: Application Manager Client JavaAPI Quick Start (SOAP)
+seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
 description: Application Manager Client JavaAPI Quick Start (SOAP)
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
-
 
 # Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
@@ -444,7 +443,7 @@ public class GetApplication_SOAP {
 
 In het volgende Java-codevoorbeeld worden de toepassingen opgehaald met de Java API.
 
-**opmerking**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd.
+**notitie**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd.
 
 ```java
 /*
@@ -818,4 +817,3 @@ public class DeleteApplication_SOAP {
     }
 }
 ```
-

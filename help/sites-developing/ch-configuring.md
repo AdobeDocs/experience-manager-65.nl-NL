@@ -286,5 +286,5 @@ De `yyyymmdd` Het gedeelte van de knooppuntnaam is de datum toen de verbetering 
 
 Om uw configuraties te herstellen ContextHub, gebruik CRXDE Lite om de knopen te kopiëren die uw opslag, wijzen UI, en modules UI van onder vertegenwoordigen `default-pre-upgrade_yyyymmdd_xxxxxx` knooppunt tot hieronder:
 
-* `/conf/global/settings/cloudsettings` of
+* `/conf/global/settings/cloudsettings` or
 * `/conf/<tenant>/settings/cloudsettings`

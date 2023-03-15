@@ -1,33 +1,32 @@
 ---
 title: Inline styling van adaptieve formuliercomponenten
-seo-title: Inline CSS-eigenschappen voor adaptieve formuliercomponenten
+seo-title: Inline CSS properties for adaptive form components
 description: U kunt aangepaste stijlen toepassen op een adaptief formulier, maar u kunt ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
-seo-description: U kunt aangepaste stijlen toepassen op een adaptief formulier, maar u kunt ook inline CSS-eigenschappen toepassen op afzonderlijke componenten van een adaptief formulier.
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: e863780e-2250-4bea-9569-22be5638d54e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '525'
 ht-degree: 1%
 
 ---
 
-
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de themaeditor](../../forms/using/themes.md). [ Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met [themaeditor](../../forms/using/themes.md). Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
 Inline stijlen toevoegen aan een component:
 
-1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl** om de modus te wijzigen in de opmaakmodus.
-1. Selecteer een component op de pagina en tik op de bewerkknop ![edit-button](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
+1. Open het formulier in de formuliereditor en wijzig de modus in opmaakmodus. Tik op de pagina op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. Selecteer een component op de pagina en tik op de knop Bewerken ![bewerken, knop](assets/edit-button.png). Stijleigenschappen worden geopend in de zijbalk.
 
    U kunt ook componenten selecteren in de boomstructuur van de formulierhiërarchie in het zijpaneel. De boomstructuur in de formulierhiërarchie is beschikbaar als formulierobjecten op de zijbalk.
 
@@ -45,7 +44,7 @@ Inline stijlen toevoegen aan een component:
    * Geavanceerd (hiermee kunt u aangepaste CSS voor de component schrijven)
 
 1. Op dezelfde manier kunt u stijlen toepassen op andere delen van een component, zoals Widget, Bijschrift en Help.
-1. Tik **Done** om de wijzigingen te bevestigen of **Cancel** om de wijzigingen te verwijderen.
+1. Tikken **Gereed** om de wijzigingen te bevestigen of **Annuleren** om de wijzigingen te verwijderen.
 
 ## Voorbeeld: inline stijlen voor een veldcomponent {#example-inline-styles-for-a-field-component}
 
@@ -80,7 +79,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr>
    <td><p>Label</p> </td>
    <td><p>Afmetingen en positie &gt; breedte</p> </td>
-   <td><p>100 px</p> </td>
+   <td><p>100px</p> </td>
    <td><p>Hiermee stelt u de breedte in op 100 px voor het label</p> </td>
   </tr>
   <tr>
@@ -107,4 +106,3 @@ Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoal
 >[!NOTE]
 >
 >De stijleigenschappen variëren op basis van de component die u selecteert.
-

@@ -1,17 +1,17 @@
 ---
-title: 'Ontwikkeling zonder hoofd voor AEM 6.5 sites '
-description: Leer hoe AEM 6.5 krachtige headless mogelijkheden zoals Content Models, Content Fragments, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
-source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
+title: Ontwikkeling zonder hoofd voor AEM 6.5 sites
+description: Leer hoe AEM 6.5 krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments, en de GraphQL API samenwerken om u in staat te stellen uw ervaringen centraal te beheren en hen te dienen over kanalen.
+exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 1%
 
 ---
 
-
 # Ontwikkeling zonder hoofd voor AEM 6.5 sites {#headless-development}
 
-Leer hoe AEM 6.5 krachtige headless mogelijkheden zoals Content Models, Content Fragments, en GraphQL API samenwerken om u toe te laten om uw ervaringen centraal te beheren en hen te dienen over kanalen.
+Leer hoe AEM 6.5 krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments, en de GraphQL API samenwerken om u in staat te stellen uw ervaringen centraal te beheren en hen te dienen over kanalen.
 
 ## Overzicht {#overview}
 
@@ -42,7 +42,7 @@ AEM 6.5 is een flexibel instrument voor het model van de implementatie zonder ko
    * Deze worden gemaakt door auteurs van inhoud met de AEM Content Fragment-editor.
    * Ze worden opgeslagen in AEM Assets en beheerd in de interface voor middelenbeheer.
 1. Inhoud-API voor levering
-   * De AEM GraphQL API ondersteunt de levering van contentfragmenten.
+   * De AEM GraphQL API ondersteunt de levering van inhoudsfragmenten.
    * De AEM Assets REST-API ondersteunt CRUD-bewerkingen voor inhoudsfragmenten.
    * Directe levering van inhoud is ook mogelijk met de [JSON-export van Content Fragment Core Component.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
 
@@ -52,6 +52,6 @@ Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functi
 
 | Resource | Beschrijving | Type | Publiek | Oost. Time |
 |---|---|---|---|---|
-| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **Voor gebruikers die nog niet zijn AEM en zonder kop** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste hoofdloze project te leven. | Hulplijn | Ontwikkelaars **nieuw tot AEM en zonder kop** | 1 uur |
+| [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **Voor gebruikers die nog niet zijn AEM en zonder kop** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste hoofdloze project te leven. | Handleiding | Ontwikkelaars **nieuw tot AEM en zonder kop** | 1 uur |
 | [Aan de slag met koppen](/help/sites-developing/headless/getting-started/introduction.md) | **Voor ervaren AEM** Voor een kort overzicht van de belangrijkste functies voor het AEM zonder kop, bekijkt u dit snelstartoverzicht. | Snel starten | Ontwikkelaars, beheerders **met AEM ervaring** | 20 minuten |
 | [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Als u een hands-on benadering verkiest en met AEM vertrouwd bent** Deze zelfstudie duikt rechtstreeks in het maken van een eenvoudig project zonder kop. | Zelfstudie | Ontwikkelaars | 2 uur |

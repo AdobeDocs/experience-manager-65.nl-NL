@@ -1,8 +1,8 @@
 ---
 title: Ideatiefunctie
-seo-title: Ideatiefunctie
+seo-title: Ideation Feature
 description: De functie Ideatie toevoegen en configureren
-seo-description: De functie Ideatie toevoegen en configureren
+seo-description: Adding and configuring the Ideation feature
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,16 +10,15 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f62fb1eb760ddd7baee9ba5a631ff4b921e2d08b
+exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1105'
 ht-degree: 0%
 
 ---
 
-
-# Ideeigenschap {#ideation-feature}
+# Ideatiefunctie {#ideation-feature}
 
 ## Inleiding {#introduction}
 
@@ -37,29 +36,29 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 ### Een idee toevoegen aan een pagina {#adding-a-ideation-to-a-page}
 
-Als u een `Ideation`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Ideation` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van
 
 * `Communities / Ideation`
 
 en sleep het naar de gewenste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/ideation.md#essentials-for-client-side) worden opgenomen, wordt de `Ideation`-component op deze manier weergegeven:
+Wanneer de [vereiste clientbibliotheken](/help/communities/ideation.md#essentials-for-client-side) worden opgenomen, is dit hoe `Ideation` wordt weergegeven:
 
 ![ideatie](assets/ideation.png)
 
-### Een idee {#configuring-an-ideation} configureren
+### Een idee configureren {#configuring-an-ideation}
 
-Selecteer de geplaatste `Ideation` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `Ideation` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
 ![video-instellingen](assets/ideation-settings.png)
 
-#### Tabblad Instellingen {#settings-tab}
+#### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en opmerkingen op:
+Onder de **[!UICONTROL Settings]** tabblad, geeft u instellingen voor ideeën en opmerkingen op:
 
 * **Miniatuur van bijlage toestaan**
 * **Maximale grootte miniatuur bijvoegen**
@@ -70,7 +69,7 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 * **Door gebruiker gegenereerde inhoud blokkeren in de bewerkingsmodus van auteur**
 * **Titel van idee**
 
-* De weergavetitel voor het idee. De standaardwaarde is `Ideation`.
+* De weergavetitel voor het idee. Standaard is `Ideation`.
 * **Beschrijving van idee**
 
    Een beschrijving die als ondertitel voor het idee moet worden weergegeven. Standaard is geen beschrijving.
@@ -93,7 +92,7 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan hun advertentie (zie **[!UICONTROL Tag field]** ). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -125,11 +124,11 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 * **Volgen toestaan**
 
-   Als deze optie is ingeschakeld, neemt u de volgende functie op voor ideeënposts, waardoor leden [op de hoogte kunnen worden gesteld](/help/communities/notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, neemt u de volgende functie op voor ideeënposts, waardoor leden kunnen worden [aangemeld](/help/communities/notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **E-mailabonnementen toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
+   Als deze optie ingeschakeld is, kunnen leden per e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Vereisten `Allow Following` te controleren en [e-mail geconfigureerd](/help/communities/email.md). De optie Standaard is uitgeschakeld.
 
 * **Stemmen toestaan**
 
@@ -137,13 +136,13 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 * **Badges weergeven**
 
-   Als deze optie is ingeschakeld, wordt de weergave verdiend en [badges](/help/communities/implementing-scoring.md) toegewezen aan het idee van een lid. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, verdiende en toegewezen weergave [badges](/help/communities/implementing-scoring.md) met het idee van een lid. De optie Standaard is uitgeschakeld.
 
 * **Geen reacties ophalen op aanbiedingspagina**
 
 * **Aanbevolen inhoud toestaan**
 
-   Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
+   Indien deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). De optie Standaard is uitgeschakeld.
 
 * **Menu inschakelen**
 * **Max. aantal meldingen**
@@ -151,7 +150,7 @@ Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en op
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor meer informatie.
+Onder de **[!UICONTROL User Moderation]** , geeft u op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Zie voor meer informatie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
 * **Posten weigeren**
 
@@ -181,37 +180,37 @@ Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte ideeë
 
    Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad {#tag-field-tab} voor tagveld
+#### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **[!UICONTROL Tag field]** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **[!UICONTROL Settings]**, beperkt op basis van de gekozen naamruimten.
+Onder de **[!UICONTROL Tag field]** , de tags die kunnen worden toegepast, indien toegestaan onder de **[!UICONTROL Settings]** zijn beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` wordt gecontroleerd onder **[!UICONTROL Settings]** tabel. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant indien `Allow Tagging` wordt gecontroleerd onder de **[!UICONTROL Settings]** tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
-   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **-1** betekent geen limiet. De standaardwaarde is 0.
+   Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. Een waarde van **-1** betekent geen limiet. De standaardwaarde is 0.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het tabblad **[!UICONTROL Sort Settings]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Onder de **[!UICONTROL Sort Settings]** , geeft u op hoe de geposte opmerkingen worden gesorteerd wanneer deze worden weergegeven.
 
 * **Sorteren op**
 
-   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. De standaardwaarde is `Newest, Oldest, Last Updated`.
+   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is `Newest, Oldest, Last Updated`.
 
 * **Instellen als standaard**
 
-   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. De standaardwaarde is `Newest`.
+   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is `Newest`.
 
 * **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
 
-   Trek naar beneden om een van `All, Last 24 Hours, Last 7 Days, Last 30 Days` te selecteren. De standaardwaarde is `All`.
+   Omlaag trekken om een van de volgende opties te selecteren `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is `All`.
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
-### Ideaal maken {#creating-idea}
+### Idea maken {#creating-idea}
 
 Net als bij alle andere communautaire kenmerken kan een bezoeker van de site alleen ideeën lezen en andere meningen bekijken (door opmerkingen en stemmen/houden) als hij niet is aangemeld.
 
@@ -221,24 +220,24 @@ Na aanmelding kan een lid een nieuw idee maken.
 
 Voordat het idee wordt verzonden, kan het lid een concept opslaan.
 
-Als u de knop `Save as Draft` selecteert, wordt een concept opgeslagen.
+Als u `Save as Draft` wordt een concept opgeslagen.
 
 ![sparen-idee](assets/save-idea.png)
 
-Als u opgeslagen concepten weergeeft op het tabblad `My Drafts`, selecteert u `Read More` om de bewerkingsmodus opnieuw in te schakelen:
+Bij weergave van opgeslagen concepten in de `My Drafts` tab, selecteert u `Read More` om de bewerkingsmodus opnieuw te activeren:
 
 ![bewerken-idee](assets/edit-idea.png)
 
 #### Feedback geven {#providing-feedback}
 
-Als het idee eenmaal is gepubliceerd, kunnen andere leden zich aanmelden, het idee openen ( `Read More`) en het idee zo weergeven, waardoor het aantal stemmen wordt vergroot en opmerkingen worden gemaakt.
+Als het idee eenmaal is gepubliceerd, kunnen andere leden zich aanmelden, het idee openen ( `Read More`) en het idee, waardoor het aantal stemmen wordt vergroot en er opmerkingen over worden gemaakt.
 
 ![feedback](assets/feedback-idea.png)
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Essentiële elementen voor ideeën](/help/communities/ideation.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen voor ideeën](/help/communities/ideation.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
+Voor moderatie van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md).

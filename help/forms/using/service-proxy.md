@@ -1,8 +1,8 @@
 ---
-title: HTML5-formulierserviceproxy
-seo-title: HTML5-formulierserviceproxy
-description: De Proxy van de Dienst van HTML5-formulieren is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door request parameter submissionServiceProxy.
-seo-description: De Proxy van de Dienst van HTML5-formulieren is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door request parameter submissionServiceProxy.
+title: HTML5-serviceproxy voor formulieren
+seo-title: HTML5 forms service proxy
+description: De Proxy van de Dienst van HTML5 vormen is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door request parameter submissionServiceProxy.
+seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 42d6c1da-3945-469d-b429-c33e563ed70c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,42 +10,41 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '697'
 ht-degree: 1%
 
 ---
 
+# HTML5-serviceproxy voor formulieren{#html-forms-service-proxy}
 
-# HTML5-formulierservice-proxy{#html-forms-service-proxy}
+De Proxy van de Dienst van HTML5 vormen is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door verzoekparameter *submissionServiceProxy*.
 
-De Proxy van de Dienst van HTML5-formulieren is een configuratie om een volmacht voor de voorleggingsdienst te registreren. Om de Volmacht van de Dienst te vormen, specificeer URL van de voorleggingsdienst door verzoekparameter *submissionServiceProxy*.
-
-## Voordelen van serviceproxy {#benefits-of-service-proxy-br}
+## Voordelen van de Volmacht van de Dienst {#benefits-of-service-proxy-br}
 
 De serviceproxy verwijdert het volgende:
 
-* Voor de workflow voor HTML5-formulieren moet de verzendservice &quot;/content/xfaforms/submission/default&quot; worden geopend voor gebruikers van HTML5-formulieren. Het stelt AEM servers aan een breder onbedoeld publiek bloot.
+* Voor de workflow voor HTML5-formulieren moet de verzendservice &quot;/content/xfaforms/submission/default&quot; worden geopend voor gebruikers van HTML-5-formulieren. Het stelt AEM servers aan een breder onbedoeld publiek bloot.
 * De service-URL is ingesloten in het runtimemodel van het formulier. Het is niet mogelijk om dienstURL weg te veranderen.
 * De verzending bestaat uit twee stappen. Voor het verzenden van de formuliergegevens zijn ten minste twee ritten naar de server vereist. Hierdoor wordt de belasting op de server verhoogd.
-* In HTML5-formulieren worden gegevens in de aanvraag voor POST verzonden in plaats van in de PDF-aanvraag. Voor werkstromen waarbij zowel PDF- als HTML5-formulieren worden gebruikt, zijn twee verschillende verwerkingsmethoden voor de verzending vereist.
+* HTML5-formulieren verzenden gegevens in de aanvraag van de POST in plaats van PDF. Voor werkstromen waarbij zowel PDF- als HTML5-formulieren worden gebruikt, zijn twee verschillende verwerkingsmethoden vereist.
 
 ### Topologieën {#topologies-br}
 
-HTML5-formulieren kunnen de volgende topologieën gebruiken om verbinding te maken met de AEM.
+HTML5 vormen kunnen volgende topologieën gebruiken om met de AEM servers te verbinden.
 
-* Een topologie waarbij AEM Server- of HTML5-formulieren gegevens via POST naar de server verzenden.
+* Een topologie waar AEM Server of HTML5 vormen gegevens via POST naar de server verzenden.
 * Een topologie waar de volmachtsserver de gegevens van de POST naar de server verzendt.
 
-![HTML5 Forms service proxy topologieën](assets/topology.png)
+![HTML5 de volmachtstopologieën van de vormendienst](assets/topology.png)
 
-HTML5 Forms service proxy topologieën
+HTML5 de volmachtstopologieën van de vormendienst
 
-HTML5-formulieren maken verbinding met de AEM servers om serverscripts, webservices en verzendingen uit te voeren. De XFA-runtime van de HTML5-formulieren gebruikt Ajax-aanroepen naar het eindpunt &quot;/bin/xfaforms/submit&quot; met verschillende parameters om verbinding te maken met de AEM. HTML5-formulieren verbinden AEM servers om de volgende bewerkingen uit te voeren:
+HTML5-formulieren maken verbinding met de AEM servers om serverscripts, webservices en verzendingen uit te voeren. De XFA-runtime van de HTML5-formulieren gebruikt Ajax-aanroepen van het eindpunt &quot;/bin/xfaforms/submit&quot; met verschillende parameters om verbinding te maken met de AEM. HTML5-formulieren verbinden AEM servers om de volgende bewerkingen uit te voeren:
 
-#### Voer Server-kant manuscripten en de Diensten van het Web {#execute-server-sided-scripts-and-web-services} uit
+#### Voer Server-zijdig manuscripten en de Diensten van het Web uit {#execute-server-sided-scripts-and-web-services}
 
 De scripts die zijn gemarkeerd om op de server te worden uitgevoerd, worden serverscripts genoemd. De volgende lijst maakt een lijst van alle parameters die in Server-zijde manuscripten en de Diensten van het Web worden gebruikt.
 
@@ -90,9 +89,9 @@ De scripts die zijn gemarkeerd om op de server te worden uitgevoerd, worden serv
  </tbody>
 </table>
 
-#### Gegevens {#submit-data} verzenden
+#### Gegevens verzenden {#submit-data}
 
-Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de server. In de volgende tabel worden alle parameters weergegeven die HTML5-formulieren naar de server verzenden.
+Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de server. De volgende tabel bevat een lijst met alle parameters die HTML5-formulieren naar de server verzenden.
 
 <table>
  <tbody>
@@ -109,7 +108,7 @@ Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de serv
    <td><p>de hoofdmap van de sjabloon die wordt gebruikt om het formulier te genereren.</p> </td>
   </tr>
   <tr>
-   <td><p>Gegevens</p> </td>
+   <td><p>Data</p> </td>
    <td><p>batchbytes die worden gebruikt om het formulier weer te geven.</p> </td>
   </tr>
   <tr>
@@ -129,11 +128,11 @@ Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de serv
 
 #### Hoe werkt de verzendproxy? {#how-nbsp-the-nbsp-submit-proxy-works}
 
-De verzendserviceproxy fungeert als een pass through als de verzender niet aanwezig is in de parameter request. Het fungeert als een doorbraak. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar runtime XFA.
+De verzendserviceproxy fungeert als een pass through als de verzender niet aanwezig is in de parameter request. Het fungeert als een doorbraak. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar XFA runtime.
 
 De voorgelegde de dienstvolmacht selecteert een topologie als voorlegger in de verzoekparameter aanwezig is.
 
-* Als AEM servers de gegevens posten, dienst van de volmacht als ervaart. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar runtime XFA.
-* Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot */bin/xfaforms/submitAction* eindpunt over en ontvangt xml bytes in reactiestream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
+* Als AEM servers de gegevens posten, dienst van de volmacht als ervaart. Het verzendt het verzoek naar het /bin/xfaforms/submitAction eindpunt en verzendt de reactie naar XFA runtime.
+* Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot over */bin/xfaforms/submit* eindpunt en ontvangt xml bytes in response stream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
 
-* Voordat gegevens (verzoek om POST) naar een server worden verzonden, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. HTML-formulieren verzenden een lege hoofdaanvraag naar de server om de connectiviteit en beschikbaarheid te controleren. Als de server beschikbaar is, verzendt het HTML5-formulier gegevens (verzoek om POST) naar de server. Als de server niet beschikbaar is, wordt een foutbericht *Kan geen verbinding maken met de server,* weergegeven. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.
+* Voordat u gegevens (verzoek om POST) naar een server verzendt, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. Om connectiviteit en beschikbaarheid te verifiëren, verzenden de vormen van HTML een leeg hoofdverzoek naar de server. Als de server beschikbaar is, verzendt het formulier HTML5 gegevens (verzoek van de POST) naar de server. Als de server niet beschikbaar is, een foutbericht *Kan geen verbinding maken met de server.* wordt weergegeven. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.

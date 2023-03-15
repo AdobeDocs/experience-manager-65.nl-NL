@@ -1,28 +1,27 @@
 ---
 title: Essentiële elementen van agenda
-seo-title: Essentiële elementen van agenda
+seo-title: Calendar Essentials
 description: Overzicht van de functie Kalender
-seo-description: Overzicht van de functie Kalender
+seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
-translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '215'
 ht-degree: 1%
 
 ---
 
-
-# Essentiële elementen voor kalender {#calendar-essentials}
+# Essentiële elementen van agenda {#calendar-essentials}
 
 Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -66,18 +65,17 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
 
 ### Kalenderfunctie {#calendar-function}
 
-Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) bevat, heeft een geconfigureerde `calendar`-component. De functie van de Kalender steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group).
+Een community-sitestructuur die de [Kalenderfunctie](functions.md#calendar-function) zal gevormd hebben `calendar` component. De functie Kalender ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
 
 ### Toegang tot agendaberichten (UGC) {#accessing-calendar-posts-ugc}
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
+* [Overzicht opslagbronprovider](srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
-
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

@@ -1,26 +1,25 @@
 ---
 title: We.Gov-referentiesite FOIA-doortocht
-seo-title: We.Gov-referentiesite FOIA-doortocht
+seo-title: We.Gov reference site FOIA walkthrough
 description: Zie de website van de website We.Gov om te begrijpen hoe AEM Forms regeringen helpt om informatie te ontvangen en te verstrekken die door individuen wordt gevraagd op grond van de Freedom of Information Act.
-seo-description: Zie de website van de website We.Gov om te begrijpen hoe AEM Forms regeringen helpt om informatie te ontvangen en te verstrekken die door individuen wordt gevraagd op grond van de Freedom of Information Act.
+seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
 uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
-translation-type: tm+mt
-source-git-commit: af326f2d2b278fe36df05afc8c172f74c99a064c
+exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
 
+# We.Gov-referentiesite FOIA-doortocht {#we-gov-reference-site-foia-walkthrough}
 
-# We.Gov-referentiesite FOIA doorloopt {#we-gov-reference-site-foia-walkthrough}
+## Referentiescenario voor de Freedom of Information Act {#reference-site-freedom-of-information-act-scenario}
 
-## Referentiescenario Freedom of Information Act {#reference-site-freedom-of-information-act-scenario}
-
-We.Gov is een overheidsorganisatie die adoptieve ouders de mogelijkheid biedt om in te schrijven voor kinderopvang als ze een kind adopteren. We.Gov staat ouders ook toe om informatie te vragen van de volgende regeringsdepartementen in het kader van de wet op de vrijheid van informatie:
+We.Gov is een overheidsorganisatie die adoptieve ouders de mogelijkheid biedt om zich in te schrijven voor kinderopvang als ze een kind adopteren. We.Gov staat ouders ook toe om informatie te vragen van de volgende regeringsdepartementen in het kader van de wet op de vrijheid van informatie:
 
 * Defense Logistics Agency
 * Department of Defense Office of Inspector General
@@ -28,7 +27,7 @@ We.Gov is een overheidsorganisatie die adoptieve ouders de mogelijkheid biedt om
 * Departement marine
 * Agentschap voor milieubescherming
 
-Zie [www.foia.gov](https://www.foia.gov) voor meer informatie over de Freedom of Information Act.
+Zie voor meer informatie over de Freedom of Information Act [www.foia.gov](https://www.foia.gov).
 
 Het scenario omvat de volgende personen:
 
@@ -40,15 +39,15 @@ Het scenario omvat de volgende personen:
 
 In het kader van de Freedom of Information Act vraagt Sarah om een kopie van de &quot;Administration for Children and Families case logs&quot; (FY) voor de jaren 2013 tot en met 2016. Sarah legt dit verzoek voor aan het Ministerie van Justitie - Office of Information Policy en geeft ook aan dat ze bereid is tot 100 dollar te betalen voor de druk- en postkosten.
 
-### Hoe werkt {#how-it-works}
+### Hoe werkt het {#how-it-works}
 
 ### Zie het zelf {#see-it-yourself}
 
-Open `https://<hostname>:<PublishPort>/wegov` in uw browser. Tik op de website Web.Gov op Toepassingen > Alle toepassingen. Tik op de pagina Alle toepassingen op Toepassen onder Toepassing voor FOIA-verzoek.
+In uw browser, open `https://<hostname>:<PublishPort>/wegov`. Tik op de website Web.Gov op Toepassingen > Alle toepassingen. Tik op de pagina Alle toepassingen op Toepassen onder Toepassing voor FOIA-verzoek.
 
 ## Sarah start haar verzoek om informatie onder FOIA {#sarah-starts-her-application-for-information-under-foia}
 
-Sarah klikt **Apply** en in de pagina van het Verzoek van het Formulier van de Wet van de Vrijheid van Informatie, gaat Sarah informatie met inbegrip van het volgende in:
+Sarah kliks **Toepassen** en op de pagina &quot;Freedom of Information Act Request Form&quot; voert Sarah informatie in, waaronder:
 
 * **Bureau:** Sarah geeft aan tot welk agentschap het verzoek is gericht als Department of Justice - Office of Information Policy.
 
@@ -63,19 +62,19 @@ Sarah kan op elk gewenst moment op Opslaan tikken om het concept van het formuli
 
 >[!NOTE]
 >
->De workflow voor het hervatten van e-mailberichten werkt alleen met aangemelde gebruikers. In het scenario van de verwijzingsplaats, zorg ervoor dat de gebruiker Sarah Rose wordt toegevoegd. De aanmeldingsgegevens van Sarah zijn `srose/password`.
+>De workflow voor het hervatten van e-mailberichten werkt alleen met aangemelde gebruikers. In het scenario van de verwijzingsplaats, zorg ervoor dat de gebruiker Sarah Rose wordt toegevoegd. Sarah&#39;s aanmeldgegevens zijn `srose/password`.
 
-## John Jacobs ontvangt en keurt de aanvraag {#john-jacobs-receives-and-approves-the-application} goed
+## John Jacobs ontvangt de aanvraag en keurt deze goed {#john-jacobs-receives-and-approves-the-application}
 
 John Jacobs ontvangt de verzoeken en leidt ze naar de juiste persoon. AEM Inbox laat haar alle ingediende aanvragen op één plaats zien.
 
-### Hoe werkt {#how-it-works-1}
+### Hoe werkt het {#how-it-works-1}
 
 Wanneer Sarah de FOIA-toepassing invult en verzendt, wordt een record van de toepassing verzonden naar de inbox van John Jacobs. John Jacobs kan de ingediende aanvraag bekijken en deze accepteren of afwijzen.
 
 ### Zie het zelf {#see-it-yourself-1}
 
-U kunt tot AEM inbox op https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html toegang hebben?resource=/aem/inbox.html. Meld u aan bij de AEM inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Zie [Forms-toepassingen en -taken beheren in AEM Inbox](/help/forms/using/manage-applications-inbox.md) voor informatie over het gebruik van AEM Inbox voor op formulieren gerichte workflowtaken.
+U kunt het AEM inbox openen op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Voor informatie over het gebruik van AEM Inbox voor op formulieren gerichte workflowtaken raadpleegt u [Forms-toepassingen en -taken beheren in AEM Postvak In](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -95,13 +94,13 @@ Nadat John Jacobs de vereiste informatie heeft ingevuld en het verzoek van Sarah
 
 ![gloriariosinbox](assets/gloriariosinbox.png)
 
-### Hoe werkt {#how-it-works-2}
+### Hoe werkt het {#how-it-works-2}
 
-Wanneer John Jacobs het FOIA-verzoek goedkeurt, wordt een PDF- of Document of Record-bestand van de toepassing gemaakt en naar Gloria Rios&#39; inbox verzonden. Gloria kan het ingediende verzoek bekijken en het goedkeuren of afwijzen.
+Wanneer John Jacobs het FOIA-verzoek goedkeurt, wordt een PDF of Document of Record van de aanvraag gemaakt en naar Gloria Rios&#39; inbox verzonden. Gloria kan het ingediende verzoek bekijken en het goedkeuren of afwijzen.
 
 ### Zie voor uzelf {#see-for-yourself}
 
-U kunt tot AEM inbox op https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html toegang hebben?resource=/aem/inbox.html. Meld u aan bij de AEM-inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios, en raadpleeg de FOIS-aanvraag.
+U kunt het AEM inbox openen op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM-inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios, en raadpleeg de FOIS-aanvraag.
 
 Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. Na bestudering van de bijzonderheden van het verzoek en na te gaan of het haalbaar is de vereiste documenten over te leggen, keurt Gloria het verzoek goed.
 
@@ -112,4 +111,3 @@ Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. N
 Nadat Gloria het FOIA-verzoek heeft goedgekeurd, ontvangt Sarah een e-mail met de kennisgeving dat haar verzoek is goedgekeurd. De e-mail bevat ook de informatie over de voorlopige tijdlijn voor het verzenden van het document en contactgegevens voor de follow-up van het verzoek.
 
 ![sarahroseemaily](assets/sarahroseemailapproval.png)
-

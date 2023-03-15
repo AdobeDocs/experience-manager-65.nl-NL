@@ -1,29 +1,28 @@
 ---
 title: Rendering en levering
-seo-title: Rendering en levering
+seo-title: Rendering and Delivery
 description: Rendering en levering
-seo-description: 'null'
+seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '573'
 ht-degree: 3%
 
 ---
 
-
-# Renderen en leveren{#rendering-and-delivery}
+# Rendering en levering{#rendering-and-delivery}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-AEM inhoud kan eenvoudig worden gerenderd via [Standaardservers verkopen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) om [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen te renderen.
+AEM inhoud kan eenvoudig worden gerenderd via [Standaardservers splitsen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) renderen [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen.
 
 Die buiten-de-box-renders lopen doorgaans de repository en retourneren inhoud zoals ze is.
 
@@ -35,23 +34,23 @@ Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-## JSON {#requesting-json} aanvragen
+## JSON aanvragen {#requesting-json}
 
-Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto request JSON.]
+Gebruiken **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** om JSON aan te vragen.]
 
 <table>
  <tbody>
   <tr>
    <td>BRON</td>
-   <td>een entiteitsmiddel onder /content/entities<br /> of <br /> een inhoudsmiddel onder /content</td>
+   <td>een entiteitsmiddel onder /content/entities<br /> of <br /> een inhoudsbron onder /content</td>
   </tr>
   <tr>
    <td>EXPORTCONFIG</td>
-   <td><p><strong>OPTIONEEL</strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Als u dit weglaat, wordt de standaardexportconfiguratie toegepast </p> </td>
+   <td><p><strong>OPTIONEEL</strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Als u deze weglaat, wordt de standaardexportconfiguratie toegepast </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> OPTIONALdepth recursion for rendering children as used in Sling rendering</td>
+   <td><strong>OPTIONEEL</strong><br /> <br /> diepteherhaling voor renderen van kinderen zoals gebruikt bij rendering van elementen</td>
   </tr>
  </tbody>
 </table>
@@ -60,7 +59,7 @@ Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto r
 
 U kunt exportconfiguraties maken om JSON-rendering aan te passen.
 
-U kunt een configuratieknooppunt maken onder */apps/mobileapps/caas/exportConfigs.*
+U kunt een configuratieknoop tot stand brengen onder */apps/mobileapps/caas/exportConfigs.*
 
 | Node Name | Naam van de configuratie (voor renderingkiezer) |
 |---|---|
@@ -110,7 +109,7 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
    <td>Tekenreeks[]</td>
    <td>alles opnemen</td>
    <td>Namen van eigenschappen</td>
-   <td><p>if excludePropertyPrefixes set<br /> this includes specified properties while matching the prefix being exclude,</p> <p>else (eigenschappen uitsluiten genegeerd) bevatten alleen deze eigenschappen</p> </td>
+   <td><p>if excludePropertyPrefixes set<br /> dit omvat opgegeven eigenschappen, ook al komen deze overeen met het voorvoegsel dat wordt uitgesloten,</p> <p>else (eigenschappen uitsluiten genegeerd) bevatten alleen deze eigenschappen</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -136,9 +135,9 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
  </tbody>
 </table>
 
-### Overschrijvingen {#resource-type-export-overrides} van het type resource
+### Exportoverschrijvingen van het type resource {#resource-type-export-overrides}
 
-Een configuratienode maken onder */apps/mobileapps/caas/exportConfigs.*
+Een configuratieknooppunt maken onder */apps/mobileapps/caas/exportConfigs.*
 
 | name | resourceTypeOverrides |
 |---|---|
@@ -156,16 +155,16 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
-   <td>&lt;selector_to_inc&gt;</td>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
    <td>Tekenreeks[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als weer te geven;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Existing Content Services Export Configs {#existing-content-services-export-configs}
+### Bestaande Content Services Exportconfiguraties {#existing-content-services-export-configs}
 
 De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 
@@ -194,7 +193,7 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud zal worden toe
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:tekst,tekst<br /> jcr:title,title<br /> jcr:description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -214,12 +213,12 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud zal worden toe
   </tr>
   <tr>
    <td>Sling JSON-overschrijvingen</td>
-   <td>foundation/components/image<br /> wcm/foundation/components/image<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
+   <td>basis/componenten/afbeelding<br /> wcm/stichting/componenten/afbeelding<br /> mobileapps/caas/components/data/contentReference<br /> mobileapps/caas/components/data/assetlist</td>
   </tr>
  </tbody>
 </table>
 
-#### Configuratie voor exporteren van pagina {#page-export-configuration}
+#### Configuratie pagina exporteren {#page-export-configuration}
 
 Deze configuratie breidt het gebrek uit om groeperende kinderen onder een kindknoop te omvatten.
 
@@ -232,4 +231,3 @@ Zie hieronder de middelen om over extra onderwerpen in de Diensten van de Inhoud
 * [Modellen ontwikkelen](/help/mobile/administer-mobile-apps.md)
 * [Services voor het ontwerpen van inhoud](/help/mobile/develop-content-as-a-service.md)
 * [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
-

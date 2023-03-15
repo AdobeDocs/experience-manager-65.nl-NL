@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Beveiliging van hot-links activeren in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
-Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *protection* is een methode om te voorkomen dat andere websites rechtstreeks een koppeling maken naar afbeeldingen, CSS of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
+Hot linking wordt gebruikt wanneer een externe website HTML-code gebruikt om een afbeelding van uw website weer te geven. Ze gebruiken uw bandbreedte telkens wanneer de afbeelding wordt opgevraagd, omdat de browser van de bezoeker deze rechtstreeks vanaf uw server opent. Hotlink *bescherming* is een methode om te voorkomen dat andere websites rechtstreeks koppelingen maken naar afbeeldingen, CSS of JavaScript op uw webpagina&#39;s. Met dit soort schermen vermindert u onnodig bandbreedtegebruik onder uw Dynamic Media-account.
 
-[De ](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) Steun van de Klant van de Experience Manager kan een verwijzingsfilter op het niveau van CDN (het Netwerk van de Levering van de Inhoud) vormen zodat de inhoud van Dynamic Media slechts aan websites op uw lijst van toegelaten websites voor het domein wordt gediend.
+[Klantenondersteuning Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) U kunt een verwijzingsfilter op het niveau van CDN (het Netwerk van de Levering van de Inhoud) vormen zodat de inhoud van Dynamic Media slechts aan websites op uw lijst van toegelaten websites voor het domein wordt gediend.
 
 >[!NOTE]
 >

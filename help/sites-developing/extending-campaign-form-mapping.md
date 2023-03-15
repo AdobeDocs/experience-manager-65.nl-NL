@@ -1,22 +1,21 @@
 ---
 title: Aangepaste formuliertoewijzingen maken
-seo-title: Aangepaste formuliertoewijzingen maken
+seo-title: Creating Custom Form Mappings
 description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u beter een formulier maken in AEM dat is toegewezen aan die aangepaste tabel
-seo-description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u beter een formulier maken in AEM dat is toegewezen aan die aangepaste tabel
+seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bce6c586-9962-4217-82cb-c837e479abc0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste formuliertoewijzingen maken{#creating-custom-form-mappings}
 
@@ -31,14 +30,14 @@ U moet het volgende installeren:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Zie [AEM integreren met Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) voor meer informatie.
+Zie [AEM integreren met Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) voor meer informatie .
 
 ## Aangepaste formuliertoewijzingen maken {#creating-custom-form-mappings-2}
 
 Als u aangepaste formuliertoewijzingen wilt maken, moet u de volgende stappen op hoog niveau uitvoeren. Deze worden in de volgende secties uitgebreid beschreven:
 
 1. Een aangepaste tabel maken.
-1. Breid **zaadlijst** uit.
+1. Breid uit **zaad** tabel.
 1. Een aangepaste toewijzing maken.
 1. Maak een levering op basis van de aangepaste toewijzing.
 1. Het formulier samenstellen in AEM, waarbij de gemaakte levering wordt gebruikt.
@@ -57,15 +56,15 @@ Begin door een douanetabel in Adobe Campaign te creëren. In dit voorbeeld gebru
 </element>
 ```
 
-Nadat u de gebeurtenislijst creeert, stel **de tovenaar van de de gegevensbestandstructuur van de Update** in werking om de lijst tot stand te brengen.
+Nadat u de gebeurtenissentabel hebt gemaakt, voert u de **Wizard Databasestructuur bijwerken** om de tabel te maken.
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-Tik/klik in Adobe Campaign op **Toevoegen** om een nieuwe extensie van de tabel **Zaadadressen (nms)** te maken.
+Tik/klik in Adobe Campaign op **Toevoegen** om een nieuwe uitbreiding van **Zaadadressen (nms)** tabel.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Gebruik nu de velden uit de tabel **event** om de tabel **seed** uit te breiden:
+Gebruik nu de velden van de **event** tabel om de **zaad** tabel:
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -76,11 +75,11 @@ Gebruik nu de velden uit de tabel **event** om de tabel **seed** uit te breiden:
  </element>
 ```
 
-Daarna, looppas **de gegevensbestandtovenaar van de Update** om de veranderingen toe te passen.
+Hierna voert u **Databasewizard bijwerken** om de wijzigingen toe te passen.
 
 ### Aangepaste doeltoewijzing maken {#creating-custom-target-mapping}
 
-Ga in **Beheer/Campagne** t, naar **Doeltoewijzingen** en voeg een nieuwe T **Doeltoewijzing toe.**
+In **Beheer/Campagne** t, ga naar **Doeltoewijzingen** en voeg een nieuwe T toe **Doeltoewijzing.**
 
 >[!NOTE]
 >
@@ -90,17 +89,17 @@ Ga in **Beheer/Campagne** t, naar **Doeltoewijzingen** en voeg een nieuwe T **Do
 
 ### Een aangepaste leveringssjabloon maken {#creating-a-custom-delivery-template}
 
-In deze stap, voegt u een leveringsmalplaatje toe dat gecreeerde **afbeelding** van het Doel gebruikt.
+In deze stap voegt u een leveringsmalplaatje toe dat gecreeerde gebruikt **Doeltoewijzing**.
 
-In **Middelen/Malplaatjes**, navigeer aan het Malplaatje van de Levering en dupliceer de bestaande AEM levering. Wanneer u **Aan** klikt, selecteer creeer gebeurtenis **richt afbeelding**.
+In **Bronnen/sjablonen**, navigeer naar de leveringssjabloon en dupliceer de bestaande AEM levering. Wanneer u op **Naar**, selecteert u de gebeurtenis create **Doeltoewijzing**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Het formulier samenstellen in AEM {#building-the-form-in-aem}
 
-In AEM, zorg ervoor u een Cloud Service in **Pagina Eigenschappen** hebt gevormd.
+In AEM, zorg ervoor u een Cloud Service binnen hebt gevormd **Pagina-eigenschappen**.
 
-Selecteer vervolgens op het tabblad **Adobe Campaign** de levering die is gemaakt in [Een aangepaste leveringssjabloon maken](#creating-a-custom-delivery-template).
+Dan, in **Adobe Campaign** selecteert u de levering waarin [Een aangepaste leveringssjabloon maken](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -108,7 +107,7 @@ Wanneer u de velden configureert, moet u unieke elementnamen opgeven voor de for
 
 Nadat de gebieden worden gevormd, moet u de afbeelding manueel veranderen.
 
-Ga in CRXDE-lite naar het knooppunt **jcr:content** (van de pagina) en wijzig de waarde **acMapping** in de interne naam van de **Target mapping**.
+Ga in CRXDE-lite naar de **jcr:inhoud** (van de pagina) en wijzig de **acMapping** aan de interne naam van de **Doeltoewijzing**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -116,7 +115,7 @@ Controleer in de configuratie van het formulier of u het selectievakje inschakel
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-### Het formulier {#submitting-the-form} verzenden
+### Het formulier verzenden {#submitting-the-form}
 
 U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarden zijn opgeslagen.
 
@@ -126,7 +125,6 @@ U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarde
 
 **&quot;Ongeldig type voor waarde &#39;02/02/2015&#39; van element &#39;@eventdate&#39; (document van type &#39;Event ([adb:event])&#39;)&quot;**
 
-Bij het verzenden van het formulier wordt deze fout in AEM aangemeld bij **error.log**.
+Bij het verzenden van het formulier wordt deze fout in het dialoogvenster **error.log** in AEM.
 
-Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. De oplossing is om **jjjj-mm-dd** als waarde te leveren.
-
+Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. De oplossing is om **jjjj-mm-dd** als de waarde.

@@ -13,7 +13,7 @@ exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -102,4 +102,4 @@ HTML Sjabloontaal (HTL) is een nieuw sjabloonsysteem voor HTML, dat is geïntrod
 >[!NOTE]
 >
 >De volgende meerdelige zelfstudie kan van belang zijn voor de beste praktijken om een nieuw AEM project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:
->[Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Aan de slag met AEM Sites - WKND-tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)

@@ -1,6 +1,6 @@
 ---
 title: Back-up- en herstelservice APIQuick start
-seo-title: Back-up- en herstelservice APIQuick start
+seo-title: Backup and Restore Service APIQuick Starts
 description: Back-up- en herstelservice APIQuick start
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
 
-
-# Snel starten met service-API voor back-up en herstel{#backup-and-restore-service-apiquick-starts}
+# API voor back-up en herstel: snel aan de slag {#backup-and-restore-service-apiquick-starts}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
@@ -36,7 +35,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Back-upmodus starten met de Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geactiveerd met een uniek label. Nadat de back-uptijd is verlopen of als de back-upmodus expliciet is afgesloten, keert de formulierserver terug naar het opschonen van bestanden in de algemene documentopslag. (Zie [Back-upmodus activeren op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geactiveerd met een uniek label. Nadat de back-uptijd is verlopen of als de back-upmodus expliciet is afgesloten, keert de formulierserver terug naar het opschonen van bestanden in de algemene documentopslag. (Zie [Back-upmodus invoeren op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -151,7 +150,7 @@ In het volgende Java-codevoorbeeld wordt gedurende twee uur de back-upmodus geac
 
 ## Snel starten (SOAP-modus): Back-upmodus verlaten met de Java API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms-server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden van de algemene documentopslag. (Zie [Back-upmodus verlaten op de formulierserver](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms-server de back-upmodus verlaat en terugkeert naar het leegmaken van bestanden van de algemene documentopslag. (Zie [Back-upmodus op de formulierserver laten staan](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -253,4 +252,3 @@ In het volgende Java-codevoorbeeld wordt expliciet aangegeven dat een Forms-serv
  }
  
 ```
-

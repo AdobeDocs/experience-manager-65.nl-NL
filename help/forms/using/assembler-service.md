@@ -1,32 +1,31 @@
 ---
 title: De Assembler-service gebruiken
-seo-title: De Assembler-service gebruiken
-description: Met de Assembler-service kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten.
-seo-description: Met de Assembler-service kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten.
+seo-title: Using Assembler Service
+description: Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen.
+seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
 uuid: 1efce50b-2d98-408e-aa43-ac4999de41a8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
-translation-type: tm+mt
-source-git-commit: d9975c0dcc02ae71ac64aadb6b4f82f7c993f32c
+exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
 
+# De Assembler-service gebruiken{#using-assembler-service}
 
-# Assembler Service{#using-assembler-service} gebruiken
-
-Met de Assembler-service kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over assembleerdienst, zie [Overzicht van de Dienst van de Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Voor meer informatie over de assembleerdienst, zie [Overzicht van de Assembler Service](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 U kunt de verzamelservice gebruiken voor de volgende bewerkingen:
 
-## PDF-documenten {#assemble-pdf-documents} samenstellen
+## PDF-documenten samenstellen {#assemble-pdf-documents}
 
-Met de Assembler-service kunt u twee of meer PDF-documenten samenvoegen tot één PDF-document of PDF-Portfolio. U kunt ook functies toepassen op het PDF-document die navigatie ondersteunen of de beveiliging verbeteren. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
+U kunt de dienst van de Assembler gebruiken om twee of meer documenten van de PDF in één enkel document van de PDF of Portfolio van de PDF samen te stellen. U kunt ook functies toepassen op het PDF-document die navigatie ondersteunen of de beveiliging verbeteren. Hier volgen enkele voorbeelden van manieren waarop u PDF-documenten kunt samenstellen:
 
 ### Een eenvoudig PDF-document samenstellen {#assemble-a-simple-pdf-document}
 
@@ -56,9 +55,9 @@ kenmerken:
 
 ### Een PDF-Portfolio maken {#create-a-pdf-portfolio}
 
-Met de Assembler-service kunt u PDF-Portfolio maken die een verzameling documenten en een op zichzelf staande gebruikersinterface bevatten. De interface wordt een PDF-Portfolio-indeling of een PDF-Portfolio-navigator (navigator) genoemd. PDF-Portfolio breiden de mogelijkheden van PDF-pakketten uit door een navigator, mappen en welkomstpagina&#39;s toe te voegen. De interface kan de gebruikerservaring verbeteren door gebruik te maken van gelokaliseerde tekst, aangepaste kleurenschema&#39;s en grafische bronnen. De PDF-Portfolio kan ook mappen bevatten voor het ordenen van de bestanden in het portfolio.
+De dienst van de Assembler kan PDF Portfolio tot stand brengen die een inzameling van documenten en een selfbevat gebruikersinterface bevatten. De interface wordt genoemd een Lay-out van de Portfolio van de PDF of een navigator van de Portfolio van de PDF (navigator). PDF Portfolio vergroten de mogelijkheden van PDF-pakketten door een navigator, mappen en welkomstpagina&#39;s toe te voegen. De interface kan de gebruikerservaring verbeteren door gebruik te maken van gelokaliseerde tekst, aangepaste kleurenschema&#39;s en grafische bronnen. De PDF-Portfolio kan ook mappen bevatten voor het ordenen van de bestanden in het portfolio.
 
-Wanneer de Assembler-service het volgende DDX-document interpreteert, wordt een PDF-Portfolio geassembleerd met daarin een PDF-Portfolio-navigator en een pakket van twee bestanden. De dienst verkrijgt de navigator van de plaats die door myNavigator bron wordt gespecificeerd. Hiermee wordt het standaardkleurenschema van de navigator gewijzigd in het rozeScheme-kleurenschema.
+Wanneer de dienst van de Assembler het volgende DX- document interpreteert, assembleert het een Portfolio van PDF die een PDF Portfolio navigator en een pakket van twee dossiers omvat. De dienst verkrijgt de navigator van de plaats die door myNavigator bron wordt gespecificeerd. Hiermee wordt het standaardkleurenschema van de navigator gewijzigd in het rozeScheme-kleurenschema.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -75,15 +74,15 @@ Wanneer de Assembler-service het volgende DDX-document interpreteert, wordt een 
 </DDX>
 ```
 
-### Gecodeerde documenten {#assemble-encrypted-documents} samenstellen
+### Gecodeerde documenten samenstellen {#assemble-encrypted-documents}
 
-Wanneer u een document samenstelt, kunt u het PDF-document ook versleutelen met een wachtwoord. Nadat een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord opgeven om het PDF-document in Adobe Reader of Acrobat weer te geven. Als u een PDF-document met een wachtwoord wilt versleutelen, moet het DDX-document waarden voor versleutelingselementen bevatten die vereist zijn om een PDF-document te versleutelen.
+Wanneer u een document samenstelt, kunt u het PDF-document ook versleutelen met een wachtwoord. Nadat een PDF-document met een wachtwoord is versleuteld, moet een gebruiker het wachtwoord opgeven om het PDF-document in Adobe Reader of Acrobat weer te geven. Als u een PDF-document met een wachtwoord wilt versleutelen, moet het DDX-document waarden voor versleuteling bevatten die vereist zijn voor het versleutelen van een PDF-document.
 
-De coderingsservice hoeft geen deel uit te maken van de LiveCycle-installatie als u een PDF-document met een wachtwoord wilt versleutelen.
+De versleutelingsservice hoeft geen deel uit te maken van de LiveCycle-installatie om een PDF-document met een wachtwoord te versleutelen.
 
 Als een of meer invoerdocumenten zijn versleuteld, geeft u een wachtwoord op om het document te openen als onderdeel van de DDX.
 
-### Documenten samenstellen met gebruik van Bates-nummering {#assemble-documents-using-bates-numbering}
+### Documenten samenstellen met Bates-nummering {#assemble-documents-using-bates-numbering}
 
 Wanneer u een document samenstelt, kunt u Bates-nummering gebruiken om een unieke pagina-id toe te passen op elke pagina. Wanneer u Bates-nummering gebruikt, wordt aan elke pagina in het document (of in een set documenten) een nummer toegewezen dat de pagina op unieke wijze identificeert. Bijvoorbeeld, kunnen de productiedocumenten die rekening van materiaalinformatie bevatten en met de productie van een assemblage worden geassocieerd een herkenningsteken bevatten. Een Bates-nummer bevat een opeenvolgend verhoogde numerieke waarde en een optioneel voor- en achtervoegsel. Het voorvoegsel + de numerieke waarde + achtervoegsel wordt een bonepatroon genoemd.
 
@@ -93,19 +92,19 @@ In de volgende afbeelding ziet u een PDF-document dat een unieke id bevat die zi
 
 Een PDF-document dat een unieke id bevat die zich in de koptekst van het document bevindt
 
-### Documenten {#flatten-and-assemble-documents} samenvoegen en samenvoegen
+### Documenten samenvoegen en samenvoegen {#flatten-and-assemble-documents}
 
-Met de Assembler-service kunt u een interactief PDF-document (bijvoorbeeld een formulier) transformeren naar een niet-interactief PDF-document. Met een interactief PDF-document kunnen gebruikers gegevens in de PDF-documentvelden invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt afvlakking genoemd. Wanneer een PDF-document wordt afgevlakt, behouden formuliervelden hun grafische weergave maar zijn ze niet meer interactief. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd. Daarnaast werken scripts die aan de velden zijn gekoppeld niet meer.
+Met de Assembler-service kunt u een interactief PDF-document (bijvoorbeeld een formulier) transformeren naar een niet-interactief PDF-document. Met een interactief PDF-document kunnen gebruikers gegevens in de documentvelden van het PDF-document invoeren of wijzigen. Het transformeren van een interactief PDF-document naar een niet-interactief PDF-document wordt afvlakking genoemd. Wanneer een PDF-document wordt afgevlakt, behouden formuliervelden hun grafische weergave maar zijn ze niet meer interactief. Een reden om een PDF-document af te vlakken is ervoor te zorgen dat gegevens niet kunnen worden gewijzigd. Daarnaast werken scripts die aan de velden zijn gekoppeld niet meer.
 
-Wanneer u een PDF-document maakt dat is samengesteld op basis van interactieve PDF-documenten, voegt de Assembler-service deze formulieren samen voordat u ze samenvoegt tot het resulterende document.
+Wanneer u een document van de PDF creeert dat van interactieve documenten van de PDF wordt samengesteld, voegt de dienst van de Assembler die vormen samen alvorens hen in het resulterende document te assembleren.
 
 >[!NOTE]
 >
 >De Assembler-service gebruikt de Output-service om dynamische XFA-formulieren af te vlakken. Als de dienst van de Assembler een DDX verwerkt die het vereist om een XFA dynamische vorm af te vlakken en de dienst van de Output niet beschikbaar is, wordt een uitzondering geworpen. De Assembler-service kan een Acrobat-formulier of een statisch XFA-formulier afvlakken zonder de Output-service te gebruiken.
 
-## XDP-documenten {#assemble-xdp-documents} samenstellen
+## XDP-documenten samenstellen {#assemble-xdp-documents}
 
-Met de Assembler-service kunt u meerdere XDP-documenten samenvoegen tot één XDP-document of tot één PDF-document. Voor XDP-bronbestanden die invoegpunten bevatten, kunt u opgeven welke fragmenten moeten worden ingevoegd.
+Met de Assembler-service kunt u meerdere XDP-documenten samenvoegen in één XDP-document of in een PDF-document. Voor XDP-bronbestanden die invoegpunten bevatten, kunt u opgeven welke fragmenten moeten worden ingevoegd.
 
 Hier volgen enkele voorbeelden van manieren waarop u XDP-documenten kunt samenstellen:
 
@@ -151,18 +150,18 @@ U kunt specificeren hoe de dienst van de Assembler de beelden die in de bronXDP 
   </tr> 
   <tr> 
    <td>relatief</td> 
-   <td>Hiermee worden alle afbeeldingen ingesloten waarnaar wordt verwezen door relatieve verwijzingen in het bron-XDP<br />-document.</td> 
+   <td>Hiermee worden alle afbeeldingen ingesloten waarnaar wordt verwezen door relatieve verwijzingen in de bron-XDP<br /> document.</td> 
   </tr> 
   <tr> 
    <td>absoluut</td> 
-   <td>Hiermee worden alle afbeeldingen waarnaar wordt verwezen door absolute verwijzingen ingesloten in het XDP<br />-brondocument.</td> 
+   <td>Hiermee worden alle afbeeldingen ingesloten waarnaar wordt verwezen door absolute referenties in de bron-XDP<br /> document.</td> 
   </tr> 
  </tbody> 
 </table>
 
 U kunt de waarde van het kenmerk resolveAssets opgeven in de XDP-brontag of in de bovenliggende XDP-resultaattag. Als het attribuut aan de XDP resultaatmarkering wordt gespecificeerd, zal het door alle XDP bronelementen worden geërft die kinderen van XDP resultaat zijn. Nochtans, treedt uitdrukkelijk het specificeren van de attributen voor een bronelement met voeten het plaatsen van het resultaatelement voor dat brondocument alleen.
 
-#### Alle bronverwijzingen in een XDP-document {#resolve-all-source-references-in-an-xdp-document} omzetten
+#### Alle bronverwijzingen in een XDP-document omzetten {#resolve-all-source-references-in-an-xdp-document}
 
 Als u alle verwijzingen in de bron-XDP-documenten wilt oplossen, geeft u het kenmerk resolveAssets op voor de\
 resulterend document aan allen, zoals in het onderstaande voorbeeld:
@@ -248,7 +247,7 @@ source="myFragmentSource"/>
 
 ### Een XDP-document verpakken als PDF {#package-an-xdp-document-as-pdf}
 
-Met de Assembler-service kunt u een XDP-document verpakken als een PDF-document, zoals in dit DDX-document wordt getoond.
+Met de Assembler-service kunt u een XDP-document verpakken als een PDF-document, zoals wordt weergegeven in dit DDX-document.
 
 ```xml
 <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -261,13 +260,13 @@ Met de Assembler-service kunt u een XDP-document verpakken als een PDF-document,
 </DDX>
 ```
 
-## PDF-documenten {#disassemble-pdf-documents} uitschakelen
+## PDF-documenten demonteren {#disassemble-pdf-documents}
 
-U kunt de Assembler-service gebruiken om een PDF-document te demonteren. De service kan pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
+U kunt de dienst van de Assembler gebruiken om een document van de PDF te demonteren. De service kan pagina&#39;s uitnemen uit het brondocument of een brondocument splitsen op basis van bladwijzers. Deze taak is meestal handig als het PDF-document oorspronkelijk is gemaakt op basis van veel afzonderlijke documenten, zoals een verzameling instructies.
 
-### Pagina&#39;s uitnemen uit een brondocument {#extract-pages-from-a-source-document}
+### Pagina&#39;s uit een brondocument extraheren {#extract-pages-from-a-source-document}
 
-In de volgende afbeelding worden pagina&#39;s 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
+In de volgende afbeelding worden pagina 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
 
 ![Specifieke pagina&#39;s uit een brondocument extraheren](assets/as_intro_page_extraction.png)
 
@@ -281,7 +280,7 @@ Het volgende voorbeeld is een DDX-document dat wordt gebruikt om het document te
 </PDF>
 ```
 
-### Een brondocument opsplitsen op basis van bladwijzers {#divide-a-source-document-based-on-bookmarks}
+### Een brondocument splitsen op basis van bladwijzers {#divide-a-source-document-based-on-bookmarks}
 
 In de volgende afbeelding wordt DocA verdeeld in meerdere resulterende documenten. De eerste bladwijzer van niveau 1 op een pagina identificeert het begin van een nieuw resulterend document.
 
@@ -299,11 +298,11 @@ Het volgende voorbeeld is een DDX-document dat bladwijzers gebruikt om een brond
 
 ## Bepalen of documenten PDF/A-compatibel zijn {#determine-whether-documents-are-pdf-a-compliant}
 
-U kunt met de Assembler-service bepalen of een PDF-document compatibel is met PDF/A. PDF/A is een archiefindeling die is bedoeld voor langdurige bewaring van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
+U kunt de dienst van de Assembler gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. PDF/A is een archiefindeling die is bedoeld voor het op lange termijn bewaren van de inhoud van het document. De lettertypen worden ingesloten in het document en het bestand wordt niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud.
 
 ## Informatie opvragen over een PDF-document {#obtain-information-about-a-pdf-document}
 
-Met de Assembler-service kunt u de volgende informatie over een PDF-document opvragen:
+U kunt de dienst van de Assembler gebruiken om de volgende informatie over een document van de PDF te verkrijgen:
 
 * Tekstgegevens.
 
@@ -318,13 +317,13 @@ Met de Assembler-service kunt u de volgende informatie over een PDF-document opv
    locatie van de annotatie voor bestandsbijlagen. U kunt deze gegevens exporteren uit een PDF-document en\
    importeert u het bestand in een PDF-document.
 
-* Pakketbestanden, waaronder bestandsinformatie, mappen, pakket, schema en veldgegevens. U kunt deze gegevens uit een PDF-document exporteren en importeren in een PDF-document.
+* Pakketbestanden, waaronder bestandsinformatie, mappen, pakket, schema en veldgegevens. U kunt deze gegevens exporteren uit een PDF-document en deze importeren in een PDF-document.
 
-## DDX-documenten {#validate-ddx-documents} valideren
+## DDX-documenten valideren {#validate-ddx-documents}
 
 U kunt de dienst van de Assembler gebruiken om te bepalen of een Dx- document geldig is. Als u bijvoorbeeld een upgrade hebt uitgevoerd vanaf een vorige LiveCycle-versie, zorgt validatie ervoor dat uw DDX-document geldig is.
 
-## Andere services {#call-other-services} bellen
+## Andere services bellen {#call-other-services}
 
 U kunt DX- documenten gebruiken die de dienst van de Assembler veroorzaken om de volgende LiveC cyclusdiensten te roepen. De dienst van de Assembler kan slechts die diensten roepen die met LiveCycle worden geïnstalleerd.
 

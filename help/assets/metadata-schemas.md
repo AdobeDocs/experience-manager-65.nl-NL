@@ -1,5 +1,5 @@
 ---
-title: 'Metagegevensschema''s definiëren de indeling van de pagina met eigenschappen van metagegevens '
+title: Metagegevensschema's definiëren de indeling van de pagina met eigenschappen van metagegevens
 description: Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.
 contentOwner: AG
 mini-toc-levels: 1
@@ -125,7 +125,7 @@ Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevenssch
 * **Vereist**: Gebruik deze eigenschap om een eigenschap metadata als verplicht op de eigenschappenpagina te markeren.
 * **Bewerken uitschakelen**: Met deze eigenschap kunt u bewerkingen van een eigenschap op de eigenschappenpagina niet toestaan.
 * **Leeg veld alleen-lezen tonen**: Mark this property to display a metadata property on the properties page even if it has no value. Wanneer een eigenschap metadata geen waarde heeft, wordt deze standaard niet vermeld op de eigenschappenpagina.
-* **Genummerde lijst tonen**: Gebruik deze eigenschap om een geordende lijst met keuzen weer te geven.
+* **Genummerde lijst tonen**: Gebruik deze eigenschap om een geordende keuzelijst weer te geven.
 * **Keuzen**: Gebruik deze eigenschap om keuzen in een lijst op te geven.
 * **Beschrijving** : Gebruik deze eigenschap om een korte beschrijving toe te voegen voor de metagegevenscomponent.
 * **Klasse**: Objectklasse waaraan de eigenschap is gekoppeld.

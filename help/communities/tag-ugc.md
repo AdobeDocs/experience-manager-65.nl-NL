@@ -1,8 +1,8 @@
 ---
 title: Door gebruiker gegenereerde inhoud labelen
-seo-title: Door gebruiker gegenereerde inhoud labelen
+seo-title: Tagging User Generated Content
 description: Door tags toe te wijzen aan door gebruikers gegenereerde inhoud (UGC) kunnen leden van de gebruikersgemeenschap andere leden helpen bij het zoeken naar inhoud
-seo-description: Door tags toe te wijzen aan door gebruikers gegenereerde inhoud (UGC) kunnen leden van de gebruikersgemeenschap andere leden helpen bij het zoeken naar inhoud
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,9 @@ De AEM Communities-functies die kunnen worden geconfigureerd om tags toe te staa
 
 Zie [Tags beheren](../../help/sites-administering/tags.md#tagging-console) voor het maken en beheren van tagnaamruimten en -taxonomieën.
 
-Zie [Tagelementen](tag.md) voor informatie over ontwikkelaars.
+Zie [Grondbeginselen van tags](tag.md) voor informatie over ontwikkelaars.
 
-Zie [Cloud van sociale tag gebruiken](tagcloud.md) voor het toevoegen van een component van de sociale tag Cloud aan een pagina om het zoeken naar geposte UGC met behulp van de toegepaste tags te vergemakkelijken.
+Zie [Sociale tagcloud gebruiken](tagcloud.md) voor het toevoegen van een component Social Tag Cloud aan een pagina om het zoeken naar geposte UGC te vergemakkelijken met behulp van de toegepaste tags.
 
 ### Tagmachtigingen {#tag-permissions}
 
@@ -54,6 +54,6 @@ Omdat tags worden toegepast op UGC in de publicatieomgeving, moet leesmachtiging
 
 Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members`.
+Hieronder wordt beschreven hoe het wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `Community Engage Members`.
 
 ![tagmachtigingen](assets/tag-permissions.png)

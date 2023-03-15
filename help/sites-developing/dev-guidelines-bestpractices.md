@@ -1,24 +1,23 @@
 ---
 title: AEM ontwikkeling - Richtsnoeren en beste praktijken
-seo-title: AEM ontwikkeling - Richtsnoeren en beste praktijken
+seo-title: AEM Development - Guidelines and Best Practices
 description: Richtsnoeren en beste praktijken voor de ontwikkeling van AEM
-seo-description: Richtsnoeren en beste praktijken voor de ontwikkeling van AEM
+seo-description: Guidelines and best practices for developing on AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
 
-
-# AEM ontwikkeling - Richtlijnen en beste praktijken{#aem-development-guidelines-and-best-practices}
+# AEM ontwikkeling - Richtsnoeren en beste praktijken{#aem-development-guidelines-and-best-practices}
 
 ## Richtlijnen voor het gebruik van sjablonen en componenten {#guidelines-for-using-templates-and-components}
 
@@ -53,11 +52,11 @@ De volgende algemene regels voor ontwikkelaars zijn in de meeste gebruikelijke p
 
 Wanneer u uw eigen componenten maakt of een bestaande component aanpast, is het vaak het eenvoudigst (en veiligst) om bestaande definities opnieuw te gebruiken. Dezelfde beginselen gelden ook voor andere elementen binnen AEM, bijvoorbeeld de fouthandler.
 
-Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>`. Deze nieuwe definitie, in `/apps`, kan volgens uw vereisten worden bijgewerkt.
+Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie uit `/libs` tot `/apps/<your-project>`. Deze nieuwe definitie, in `/apps`, kan worden bijgewerkt naar wens.
 
 >[!NOTE]
 >
->Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
+>Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie .
 
 Bijvoorbeeld:
 
@@ -65,7 +64,7 @@ Bijvoorbeeld:
 
    Hiervoor moest een componentdefinitie worden bedekt:
 
-   * Maak een nieuwe componentmap in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
+   * Een nieuwe componentmap maken in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
 
       * Bijvoorbeeld om het de componentenexemplaar van de Tekst aan te passen:
 
@@ -83,17 +82,17 @@ Bijvoorbeeld:
 
 >[!CAUTION]
 >
->U **mag niets** veranderen in `/libs` weg.
+>U **mogen** om het even wat in `/libs` pad.
 >
->Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >Voor configuratie en andere wijzigingen:
 >
->1. het item in `/libs` kopiëren naar `/apps`
->1. eventuele wijzigingen aanbrengen binnen `/apps`
+>1. het item kopiëren in `/libs` tot `/apps`
+>1. wijzigingen aanbrengen in `/apps`
 
 
-## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt? {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Zij zijn geschikt voor:
 
@@ -112,14 +111,13 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 
 >[!NOTE]
 >
->Als u [de Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u Vragen JCR, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
+>Als u het [Query Builder](/help/sites-developing/querybuilder-api.md)U kunt ook JCR-query&#39;s gebruiken terwijl de Query Builder JCR-query&#39;s onder de kap genereert.
 
-
-## Veiligheidsoverwegingen {#security-considerations}
+## Beveiligingsoverwegingen {#security-considerations}
 
 >[!NOTE]
 >
->Het is ook nuttig om [veiligheidscontrolelijst](/help/sites-administering/security-checklist.md) van verwijzingen te voorzien.
+>Het is ook de moeite waard te verwijzen naar de [beveiligingscontrolelijst](/help/sites-administering/security-checklist.md).
 
 ### JCR-sessies (Repository) {#jcr-repository-sessions}
 
@@ -135,7 +133,7 @@ Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#3
 
 AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Bovendien, kan een firewall van de Webtoepassing, zoals [mod_security voor Apache](https://modsecurity.org), betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder niet ontdekte dwars-plaats scripting aanvallen beschermen.
+Daarnaast is er een webtoepassingsfirewall, zoals [mod_security voor Apache](https://modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
 >[!CAUTION]
 >
@@ -162,10 +160,10 @@ Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configura
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [Foutpagina&#39;s aanpassen die door de fouthandler worden weergegeven](/help/sites-developing/customizing-errorhandler-pages.md) voor meer informatie.
+Zie [Foutpagina&#39;s aanpassen die worden weergegeven door de foutafhandeling](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige informatie.
 
-### Bestanden openen in Java-proces {#open-files-in-the-java-process}
+### Bestanden openen in het Java-proces {#open-files-in-the-java-process}
 
-Omdat AEM tot een groot aantal dossiers kan toegang hebben wordt het geadviseerd dat het aantal [open dossiers voor een proces van Java ](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM wordt gevormd.
+Omdat AEM toegang heeft tot een groot aantal bestanden, wordt aanbevolen het aantal [bestanden openen voor een Java-proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk worden gevormd voor AEM.
 
 Om dit probleem tot een minimum te beperken, moet de ontwikkeling ervoor zorgen dat geopende bestanden zo snel (zinvol) mogelijk correct worden gesloten.

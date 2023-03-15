@@ -1,21 +1,20 @@
 ---
 title: Webconsole
-seo-title: Webconsole
+seo-title: Web Console
 description: Leer hoe u de webconsole in AEM gebruikt.
-seo-description: Leer hoe u de webconsole in AEM gebruikt.
+seo-description: Learn how to use the web console in AEM.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '719'
 ht-degree: 1%
 
 ---
-
 
 # Webconsole{#web-console}
 
@@ -41,13 +40,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
+De **Configuratie** tab wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor nadere bijzonderheden.
 
-De **tab Configuration** kan worden benaderd door:
+De **Configuratie** tab kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -106,7 +105,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
+De **Bundels** tab is het mechanisme voor het installeren van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -124,7 +123,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
+   U kunt **Bladeren** om het bestand te zoeken dat uw bundel bevat en op te geven of dit nodig is **Start** onmiddellijk **Beginniveau**.
 
 * **Opnieuw laden**
 
@@ -154,11 +153,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
+>Na **Bijwerken** het wordt aanbevolen een **Pakketten vernieuwen**.
 
 ## Onderdelen {#components}
 
-Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+De **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -181,4 +180,3 @@ Als u op de naam van een bepaalde component klikt, wordt meer informatie over de
 >Als u een component inschakelt of uitschakelt, wordt deze alleen van toepassing tot AEM/CRX opnieuw wordt gestart.
 >
 >De begintoestand wordt gedefinieerd binnen de componentdescriptor, die tijdens de ontwikkeling wordt gegenereerd en in de bundel wordt opgeslagen op het moment dat de bundel wordt gemaakt.
-

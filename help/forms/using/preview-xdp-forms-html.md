@@ -1,28 +1,27 @@
 ---
 title: HTML5-voorbeeld van een XDP-formulier genereren
-seo-title: HTML5-voorbeeld van een XDP-formulier genereren
-description: Het tabblad Voorbeeld-HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
-seo-description: Het tabblad Voorbeeld-HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
+seo-title: Generate HTML5 preview of an XDP form
+description: Het tabblad Voorbeeld van HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
+seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
 uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 14%
+source-wordcount: '822'
+ht-degree: 15%
 
 ---
 
-
 # HTML5-voorbeeld van een XDP-formulier genereren{#generate-html-preview-of-an-xdp-form}
 
-Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u, naast een voorbeeld van de PDF-uitvoering van een formulier, ook een voorbeeld van een HTML5-uitvoering bekijken. Met het tabblad **Voorvertoning van HTML** kunt u een voorbeeld van een formulier bekijken zoals het in een browser wordt weergegeven.
+Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u niet alleen een voorbeeld bekijken van de PDF-uitvoering van een formulier, maar ook een voorbeeld bekijken van een HTML5-uitvoering. U kunt de **Voorvertoning HTML** gebruiken om een voorbeeld van een formulier weer te geven zoals het in een browser wordt weergegeven.
 
-## HTML-voorvertoning voor XDP-formulieren inschakelen in Designer {#html-preview-of-forms-in-forms-designer}
+## Voorvertoning van HTML inschakelen voor XDP-formulieren in Designer {#html-preview-of-forms-in-forms-designer}
 
 Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voorbeeld van XDP-formulieren te genereren:
 
@@ -30,13 +29,13 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 * Beveiligde modus uitschakelen
 * Geef details van de AEM Forms-server op
 
-### Apache Sling Authentication Service {#configure-apache-sling-authentication-service} configureren
+### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr` op AEM Forms die op OSGi loopt of
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr` op AEM Forms, die wordt uitgevoerd op OSGi of
    `https://'[server]:[port]'/lc/system/console/configMgr` op AEM Forms in werking gesteld op JEE.
-1. Zoek en klik op **Apache Sling Authentication Service** configuratie om deze te openen in bewerkingsmodus.
+1. Zoeken en klikken **Apache Sling Authentication Service** configuratie om het in Edit wijze te openen.
 
-1. Afhankelijk van of u AEM Forms op OSGi of JEE in werking stelt, voeg het volgende op **de Vereisten van de Authentificatie** gebied toe:
+1. Afhankelijk van of u AEM Forms op OSGi of JEE in werking stelt, voeg het volgende in toe **Verificatievereisten** veld:
 
    * AEM Forms op JEE
 
@@ -51,61 +50,61 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
    >
    >Kopieer en plak de opgegeven waarde niet in het veld Verificatievereisten omdat de speciale tekens in de waarde hierdoor kunnen beschadigd raken. Typ in plaats daarvan de opgegeven waarde in het veld.
 
-1. Geef een gebruikersnaam en wachtwoord op in respectievelijk **[!UICONTROL Anonymous User Name]** en **[!UICONTROL Anonymous User Password]** velden. De gespecificeerde geloofsbrieven worden gebruikt om anonieme authentificatie te behandelen en toegang tot anonieme gebruikers toe te staan.
-1. Klik **sparen** om de configuratie te bewaren.
+1. Geef een gebruikersnaam en wachtwoord op in **[!UICONTROL Anonymous User Name]** en **[!UICONTROL Anonymous User Password]** respectievelijk velden. De gespecificeerde geloofsbrieven worden gebruikt om anonieme authentificatie te behandelen en toegang tot anonieme gebruikers toe te staan.
+1. Klikken **Opslaan** om de configuratie op te slaan.
 
-### Beveiligde modus {#disable-protected-mode} uitschakelen
+### Beveiligde modus uitschakelen {#disable-protected-mode}
 
-De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaard ingeschakeld. Houd het ingeschakeld voor de productieomgevingen. U kunt dit uitschakelen voor een ontwikkelomgeving om HTML5 Forms in Designer voor te vertonen. Voer de volgende stappen uit om het uit te schakelen:
+De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaard ingeschakeld. Houd het ingeschakeld voor de productieomgevingen. U kunt deze uitschakelen voor een ontwikkelomgeving om een voorvertoning van HTML5 Forms weer te geven in Designer. Voer de volgende stappen uit om het uit te schakelen:
 
 1. Meld u als beheerder aan bij AEM webconsole.
 
    * URL voor AEM Forms op OSGi is `https://'[server]:[port]'/system/console/configMgr`
    * URL voor AEM Forms op JEE is `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Open **[!UICONTROL Mobile Forms Configurations]** voor bewerking.
-1. Schakel de optie **[!UICONTROL Protected Mode]** uit en klik **[!UICONTROL Save]**.
+1. Openen **[!UICONTROL Mobile Forms Configurations]** voor bewerken.
+1. Schakel de optie **[!UICONTROL Protected Mode]** en klik op **[!UICONTROL Save]**.
 
-### Geef details van de AEM Forms-server {#provide-details-of-aem-forms-server}
+### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
 
-1. Ga in Designer naar **Extra** > **Opties**.
-1. Selecteer in het venster Opties de pagina **Serveropties**, geef de volgende gegevens op en klik op **OK**.
+1. Ga in Designer naar **Gereedschappen** > **Opties**.
+1. Selecteer in het venster Opties de optie **Serveropties** pagina, geef de volgende gegevens op en klik op **OK**.
 
    * **Server-URL**: URL AEM Forms-server.
 
    * **HTTP-poortnummer**: AEM serverpoort. De standaardwaarde is 4502.
-   * **Context HTML-voorbeeld:** pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context voorvertoning HTML:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms op OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms op JEE)
-   * **Context van Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
+   * **Context Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
       * `/aem/forms` (AEM Forms op OSGi)
       * `/lc/forms` (AEM Forms op JEE)
 
    >[!NOTE]
    >
-   >Zorg ervoor dat de AEM Forms-server actief is. De HTML-voorvertoning maakt verbinding met de CRX-server om een voorvertoning te *genereren*.
+   >Zorg ervoor dat de AEM Forms-server actief is. De voorvertoning van de HTML maakt verbinding met de CRX-server met *genereren* een voorvertoning.
 
-   ![Opties voor AEM Forms Designer  ](assets/server_options.png)
+   ![Opties voor AEM Forms Designer ](assets/server_options.png)
 
    Opties voor AEM Forms Designer
 
-1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorbeeld-HTML**.
+1. Als u een voorbeeld van een formulier in HTML wilt weergeven, klikt u op de knop **Voorvertoning HTML** tab.
 
    >[!NOTE]
    >
    >
    >
    >
-   >    * Als het tabblad HTML-voorbeeld is gesloten, drukt u op F4 om het tabblad Voorbeeld-HTML te openen. U kunt ook Voorvertoning HTML selecteren in het menu Weergave om het tabblad Voorbeeld-HTML te openen.
+   >    * Als het tabblad Voorvertoning HTML is gesloten, drukt u op F4 om het tabblad Voorvertoning HTML te openen. U kunt ook Voorvertoning HTML selecteren in het menu Weergave om het tabblad Voorbeeld-HTML te openen.
    >    * De HTML-voorvertoning ondersteunt geen PDF-documenten, de HTML-voorvertoning is alleen voor XDP-documenten.
 
 
    >[!CAUTION]
    >
-   >Als u de echte ervaring van eindgebruikers wilt testen, kunt u ook een voorbeeld van uw formulieren weergeven in externe browsers (Google Chrome, Microsoft Edge, Mozilla Firefox en meer). Elke browser gebruikt een aparte engine voor het weergeven van HTML. Er kunnen dus enkele verschillen zijn in de manier waarop een voorbeeld van een formulier wordt weergegeven in Designer en de externe browser.
+   >Als u de echte ervaring van eindgebruikers wilt testen, kunt u ook een voorbeeld van uw formulieren weergeven in externe browsers (Google Chrome, Microsoft Edge, Mozilla Firefox en meer). Elke browser gebruikt een aparte engine om HTML te renderen. Er kunnen dus enkele verschillen zijn in de manier waarop een voorbeeld van een formulier wordt weergegeven in Designer en de externe browser.
 
 ## Een voorbeeld van een formulier weergeven met behulp van voorbeeldgegevens {#to-preview-a-form-using-sample-data}
 
@@ -115,11 +114,11 @@ Als u geen voorbeeldgegevens hebt, kunt u die laten maken in Designer of deze ze
 
 Als u een formulier test met een bron voor voorbeeldgegevens, weer u zeker dat de gegevens en de velden zijn gekoppeld en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken met voldoende ruimte voor elk object om de samengevoegde gegevens weer te geven.
 
-1. Selecteer **Bestand > Formuliereigenschappen**.
+1. Selecteren **Bestand > Formuliereigenschappen**.
 
-1. Klik op het tabblad **Voorvertoning** en typ in het vak Gegevensbestand het volledige pad naar het bestand met de testgegevens. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
+1. Klik op de knop **Voorvertoning** en typt u in het vak Gegevensbestand het volledige pad naar het bestand met testgegevens. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
 
-1. Klik **OK**. De volgende keer dat u een voorbeeld van het formulier weergeeft op het tabblad **Voorbeeld-HTML**, worden de gegevenswaarden uit het XML-voorbeeldbestand weergegeven in de desbetreffende objecten.
+1. Klikken **OK**. De volgende keer dat u een voorbeeld van het formulier in het dialoogvenster **Voorvertoning HTML** worden de gegevenswaarden van het XML-voorbeeldbestand weergegeven in de desbetreffende objecten.
 
 ## Formulieren voorvertonen in een gegevensopslagruimte {#html-preview-of-forms-in-forms-manager}
 

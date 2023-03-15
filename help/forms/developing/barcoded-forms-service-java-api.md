@@ -1,6 +1,6 @@
 ---
 title: Barcoded Forms Service Java APIQuick Start (SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Start (SOAP)
+seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Barcoded Forms Service Java APIQuick Start (SOAP)
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
-
 
 # Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
@@ -28,11 +27,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle Beginnen die in Programmering met AEM Forms worden gevestigd zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document`-object omgezet in een `com.adobe.idp.Document`-object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -221,5 +220,4 @@ De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-f
 
 >[!NOTE]
 >
->Wanneer u zowel een `org.w3c.dom.Document`-object als een `com.adobe.idp.Document`-object in dezelfde toepassingslogica gebruikt, is het aan te raden beide objecten volledig te kwalificeren.
-
+>Wanneer u zowel een `org.w3c.dom.Document` en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.

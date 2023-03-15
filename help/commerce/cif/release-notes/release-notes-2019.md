@@ -15,9 +15,9 @@ ht-degree: 7%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,7,1 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,6,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,6,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.7.1 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.6.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.6.2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-november}
 
@@ -35,15 +35,15 @@ ht-degree: 7%
 
 * React-gebaseerde componenten beschikbaar als npm pakket. Dit staat ontwikkelaars toe om het pakket van Componenten van de Reactie als gebiedsdeel voor een nieuw project van de Reactie te gebruiken om aanpassing van bestaande componenten toe te staan of nieuwe React-based componenten te ontwikkelen.
 
-* GraphQL-query-aanpassing vereenvoudigd. Dit staat ontwikkelaars toe om de kerncomponenten van CIF met minder code aan te passen.
+* Aanpassing GraphQL-query vereenvoudigd. Dit staat ontwikkelaars toe om de kerncomponenten van CIF met minder code aan te passen.
 
 ## Releasedatum: Oktober 2019
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,6,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.6.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-october}
 
@@ -63,9 +63,9 @@ ht-degree: 7%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,5,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.5.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-september}
 
@@ -73,7 +73,7 @@ ht-degree: 7%
 
 * Binding van meerdere catalogi zodat auteurs meerdere catalogi in de AEM productconsole kunnen binden. Auteurs kunnen de eigenschappen voor de catalogusbinding ook bewerken en weergeven nadat ze de binding hebben gemaakt.
 
-* React-based cliënt-zijAfhandeling en MiniKart die GraphQL gebruiken om een volledige basis het winkelen reis te steunen.
+* React-based cliënt-zijAfhandeling en Mini Cart die GraphQL gebruiken om een volledige basis het winkelen reis te steunen.
 
 * Afhandelingscomponent bevat adresformulieren, selectie van betalingen en selectie van verzendmethoden.
 
@@ -85,9 +85,9 @@ ht-degree: 7%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,4,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.4.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-august}
 
@@ -95,9 +95,9 @@ ht-degree: 7%
 
 * CIF-componenten losgekoppeld van &quot;Venia&quot;-specifieke CSS-stijlen, zodat ontwikkelaars naar keuze CSS-stijlen kunnen toepassen.
 
-* Multistore/site eigenschap om gebruik van de Componenten van de Kern van CIF op veelvoudige AEM plaatsstructuren toe te staan en de onderliggende cliënt GraphQL toe te laten om met verschillende opslag/opslagmeningen van Adobe Commerce te verbinden.
+* Multistore/site functie om gebruik van CIF Core Components op meerdere AEM sitestructuren toe te staan en de onderliggende GraphQL client-implementatie in staat te stellen verbinding te maken met verschillende Adobe Commerce store/store-weergaven.
 
-* GraphQL caching die voor bepaalde vragen GraphQL via HTTP GET wordt toegelaten om reactietijd te verminderen.
+* GraphQL caching ingeschakeld voor bepaalde GraphQL query&#39;s via HTTP GET om de reactietijd te verminderen.
 
 * Weergave van de productbeschrijving ingeschakeld in AEM Producten-console.
 
@@ -113,9 +113,9 @@ ht-degree: 7%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,3,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.3.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-july}
 
@@ -139,8 +139,8 @@ ht-degree: 7%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,2,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,1,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF-aansluiting | 0.2.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.1.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
 
 ### Wat is er nieuw? {#what-is-new-june}
 

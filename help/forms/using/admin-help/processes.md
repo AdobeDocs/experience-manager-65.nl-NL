@@ -1,36 +1,35 @@
 ---
 title: Processen beheren
-seo-title: Processen beheren
+seo-title: Managing Processes
 description: De pagina van de Lijst van het Proces toont de processen die een gebruiker in werking heeft gesteld of die automatisch begonnen zijn. Meer informatie over het beheren van de processen.
-seo-description: De pagina van de Lijst van het Proces toont de processen die een gebruiker in werking heeft gesteld of die automatisch begonnen zijn. Meer informatie over het beheren van de processen.
+seo-description: The Process List page shows the processes that a user has initiated or that were started automatically. Learn more about managing the processes.
 uuid: 4cd17400-681a-4e40-996c-7dda57ce449a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1631'
 ht-degree: 0%
 
 ---
 
-
-# Processen {#managing-processes} beheren
+# Processen beheren {#managing-processes}
 
 De pagina van de Lijst van het Proces toont de processen die een gebruiker in werking heeft gesteld of die automatisch begonnen zijn.
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow. De proceslijst bevat de volgende informatie:
 
-   **Procesnaam - Versie:** de naam van het proces, zoals gedefinieerd in Workbench.
+   **Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
 
-   **Toepassing:** de toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
+   **Toepassing:** De toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
 
    **Status:** Actief betekent dat het proces wordt geactiveerd voor de procesversie. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
 
-   **Aanmaakdatum:** de datum en tijd waarop het proces is geïmplementeerd.
+   **Aanmaakdatum:** De datum en het tijdstip waarop het proces is geïmplementeerd.
 
 1. Klik op een procesnaam om de procesinstanties ervan op de pagina Procesinstantie weer te geven.
 
@@ -40,15 +39,15 @@ Als u de pagina van de Instantie van het Proces van de pagina van de Lijst van h
 
 Voor elke procesinstantie bevat de lijst de volgende informatie:
 
-**Proces-id:** de id die tijdens de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (dat wil zeggen wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
+**Proces-id:** De id die aan de werkstroom voor formulieren wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
 
-**Procesnaam - Versie:** de naam van het proces, zoals gedefinieerd in Workbench.
+**Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
 
-**Status:** Geeft aan of de procesinstantie normaal wordt uitgevoerd, de status wijzigt of is gestopt. (Zie Over status van procesinstanties.)
+**Status:** Geeft aan of de procesinstantie normaal wordt uitgevoerd, de status wordt gewijzigd of is gestopt. (Zie Over status van procesinstanties.)
 
-**Aanmaakdatum:** de datum en tijd waarop de procesinstantie is gemaakt.
+**Aanmaakdatum:** De datum en tijd waarop de procesinstantie is gemaakt.
 
-**Datum bijwerken:** de datum en tijd waarop de status van de procesinstantie voor het laatst is gewijzigd.
+**Datum van update:** De datum en tijd waarop de status van de procesinstantie voor het laatst is gewijzigd.
 
 U kunt de volgende taken uitvoeren op de pagina van de Instantie van het Proces:
 
@@ -56,33 +55,33 @@ U kunt de volgende taken uitvoeren op de pagina van de Instantie van het Proces:
 * Procesinstanties onderbreken, opschorten of beëindigen.
 * Zoeken naar een procesvariant. Klik op Zoeken om een zoekopdracht te starten.
 
-### Over de status van procesinstanties {#about-process-instance-statuses}
+### Over procesinstantiestatussen {#about-process-instance-statuses}
 
 Een procesinstantie, inclusief subprocessen, kan de volgende statussen hebben:
 
-**COMPLETE:** Alle vertakkingen en bewerkingen in de procesinstantie zijn voltooid. COMPLETE is de definitieve status van een procesinstantie.
+**VOLTOOID:** Alle vertakkingen en bewerkingen in het procesexemplaar zijn voltooid. COMPLETE is de definitieve status van een procesinstantie.
 
-**COMPLETING:** De status van de procesinstantie staat op het punt te veranderen in COMPLETE.
+**VOLTOOIEN:** De status van de procesinstantie wordt gewijzigd in COMPLETE.
 
-**GEÏNITIEERD:** De procesinstantie is gemaakt maar is nog niet actief. INITIATED is de eerste status van een procesinstantie.
+**GESTART:** De procesinstantie is gemaakt, maar is nog niet actief. INITIATED is de eerste status van een procesinstantie.
 
 **UITVOEREN:** De procesinstantie wordt normaal uitgevoerd. Er kan een geautomatiseerde stap worden uitgevoerd of de procesinstantie ontvangt gebruikersinvoer of wacht op gebruikersinteractie.
 
 **GESCHORST:** De procesinstantie is opgeschort door een beheerder of door een stap in het proces. Er vinden geen verdere bewerkingen plaats totdat de status wordt gewijzigd.
 
-**SCHORSING:** De status wordt gewijzigd in GESCHORST. Als een verrichting is ontworpen om schorsingsverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt opgeschort.
+**OPSCHORTING:** De status wordt gewijzigd in SUSPENDED. Als een verrichting is ontworpen om schorsingsverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt opgeschort.
 
-**BEËINDIGD:** de procesinstantie is geëindigd door een beheerder.
+**BEËINDIGD:** De procesinstantie is geëindigd door een beheerder.
 
-**BEËINDIGEN:** De status wordt bijna gewijzigd in BEËINDIGD. Als een verrichting is ontworpen om eindeverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt geëindigd.
+**BEËINDIGEN:** De status wordt gewijzigd in BEËINDIGD. Als een verrichting is ontworpen om eindeverzoeken te negeren en nog niet voltooid, moet die verrichting voltooien alvorens de procesinstantie wordt geëindigd.
 
-**ONSUSPENDING:** De status verandert op het punt van RUNNING nadat deze is opgeschort.
+**ONVERSCHORMD:** De status verandert bijna in RUNNING nadat deze is opgeschort.
 
 >[!NOTE]
 >
 >Wanneer wordt gevraagd om de status van een procesinstantie te wijzigen (bijvoorbeeld om te onderbreken of te beëindigen), voert het verzoek de opdrachtwachtrij voor de formulierwerkstroom in. Afhankelijk van de grootte van de wachtrij en de totale verwerkingssnelheid verandert de weergegeven status pas wanneer de pagina een of meer keren opnieuw wordt geladen.
 
-### Procesinstanties {#suspend-or-unsuspend-process-instances} onderbreken of opheffen
+### Procesinstanties onderbreken of opheffen {#suspend-or-unsuspend-process-instances}
 
 Als u een probleem moet oplossen of als u weet dat een procesinstantie een probleem bij een recentere stap wegens één of andere externe voorwaarde zal ontmoeten, kunt u de procesinstantie tijdelijk opschorten.
 
@@ -99,7 +98,7 @@ Wanneer u een procesinstantie opheft die andere processen (kindprocessen) gebrui
 1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow.
 1. Selecteer het proces op de pagina Procesinstantie en klik op Onderbreken of Opschorten.
 
-### Een procesinstantie {#terminate-a-process-instances} beëindigen
+### Een procesinstantie beëindigen {#terminate-a-process-instances}
 
 Als een bewerking van een procesinstantie is gestopt of een andere fout heeft aangetroffen, of als u een procesinstantie moet dwingen om de uitvoering te stoppen, kunt u de procesinstantie beëindigen.
 
@@ -118,27 +117,27 @@ In het gebied Samenvatting wordt basisinformatie over de procesinstantie weergeg
 
 Op het tabblad Bewerkingen wordt elke bewerking voor de procesinstantie weergegeven in volgorde van voltooiing, van de eerste naar de laatste met de volgende informatie:
 
-**Bewerkingsnaam:** de naam van de bewerking, zoals gedefinieerd in Workbench.
+**Bedrijfsnaam:** De naam van de bewerking, zoals gedefinieerd in Workbench.
 
-**Status:** geeft aan of de bewerking normaal wordt uitgevoerd of is gestopt. (Zie Over status van procesinstanties.)
+**Status:** Geeft aan of de bewerking normaal wordt uitgevoerd of is gestopt. (Zie Over status van procesinstanties.)
 
-**Branch Name:** de naam van de vertakking, zoals gedefinieerd in Workbench.
+**Naam vertakking:** De naam van de vertakking, zoals gedefinieerd in Workbench.
 
-**Begindatum:** de datum en tijd waarop de bewerking is gestart.
+**Begindatum:** De datum en tijd waarop de bewerking is gestart.
 
-**Datum voltooid:** de datum en tijd waarop de bewerking is voltooid.
+**Voltooide datum:** De datum en het tijdstip waarop de bewerking is voltooid.
 
 Een subproces is een procesinstantie die door een ander proces is begonnen en onafhankelijk van dat andere proces loopt. Subprocessen worden alleen weergegeven als ze zijn ontworpen als onderdeel van het proces in Workbench. Op het tabblad Subprocessen wordt elk subproces weergegeven met de volgende informatie:
 
-**Proces-id:** Dit positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (dat wil zeggen wanneer een gebruiker of een geautomatiseerde stap het proces start). Met deze id kunt u de procesinstantie gedurende de levenscyclus volgen.
+**Proces-id:** Dit positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap het proces start). Met deze id kunt u de procesinstantie gedurende de levenscyclus volgen.
 
-**Procesnaam - Versie:** de naam van het proces, zoals gedefinieerd in Designer.
+**Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Designer.
 
 **Status:** Geeft aan of de procesinstantie normaal wordt uitgevoerd, de status wordt gewijzigd of wordt gestopt. (Zie Over status van procesinstanties.)
 
-**Aanmaakdatum:** de datum en tijd waarop het subproces is gemaakt.
+**Aanmaakdatum:** De datum en tijd waarop het subproces is gemaakt.
 
-**Datum bijwerken:** de datum en tijd waarop de status van het subproces voor het laatst is gewijzigd.
+**Datum van update:** De datum en tijd waarop de status van het subproces voor het laatst is gewijzigd.
 
 U kunt de volgende taken uitvoeren op de pagina Details van de Instantie van het Proces:
 
@@ -150,15 +149,15 @@ U kunt de volgende taken uitvoeren op de pagina Details van de Instantie van het
 
 Een bewerking (een stap in een proces) kan de volgende statussen hebben:
 
-**VOLTOOID:** de bewerking is voltooid.
+**VOLTOOID:** De bewerking is voltooid.
 
-**UITVOEREN:** de bewerking wordt normaal uitgevoerd. Het kan gebruikersinvoer ontvangen of op gebruikersinteractie wachten, of een geautomatiseerde stap kan lopend zijn.
+**UITVOEREN:** De bewerking wordt normaal uitgevoerd. Het kan gebruikersinvoer ontvangen of op gebruikersinteractie wachten, of een geautomatiseerde stap kan lopend zijn.
 
-**STALLED:** Er is een probleem opgetreden tijdens de verwerking. Controle voor de fout of de uitzondering in de Geroepen pagina van Verrichtingen.
+**GESTALLEERD:** Er is een probleem opgetreden tijdens het verwerken van de bewerking. Controle voor de fout of de uitzondering in de Geroepen pagina van Verrichtingen.
 
 **BEËINDIGD:** De bewerking is beëindigd door een beheerder.
 
-### Bewerkingen of subprocessen {#terminate-operations-or-subprocesses} beëindigen
+### Bewerkingen of subprocessen beëindigen {#terminate-operations-or-subprocesses}
 
 Als een bewerking of een subproces is gestopt of een andere foutvoorwaarde heeft aangetroffen, of als u een bewerking of subproces moet forceren om te stoppen met uitvoeren, kunt u deze beëindigen.
 
@@ -175,7 +174,7 @@ U kunt geen processen beëindigen die gatewayelementen in het procesdiagram hebb
 1. Voor de pagina van de Details van de Instantie van het Proces, klik het lusje van Verrichtingen of het Subprocess tabel.
 1. Selecteer de bewerking of het subproces en klik op Beëindigen.
 
-### Een bewerking {#retry-an-operation} opnieuw proberen
+### Een bewerking opnieuw uitvoeren {#retry-an-operation}
 
 U kunt een bewerking met de status STALLED opnieuw proberen.
 
@@ -193,11 +192,10 @@ De pagina van de Details van de Verrichting toont een overzicht van één verric
 
    Voor elke taak, toont de lijst de volgende informatie:
 
-   **Procesnaam - Versie:** de naam van het proces, zoals gedefinieerd in Workbench.
+   **Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
 
-   **Toepassing:** de toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
+   **Toepassing:** De toepassing waartoe het proces behoort, zoals gedefinieerd in Workbench.
 
    **Status:** Actief betekent dat het proces wordt geactiveerd voor de procesversie. Inactief betekent dat het proces een oude versie is die nog procesinstanties heeft.
 
-   **Aanmaakdatum:** de datum en tijd waarop het proces is geïmplementeerd.
-
+   **Aanmaakdatum:** De datum en het tijdstip waarop het proces is geïmplementeerd.

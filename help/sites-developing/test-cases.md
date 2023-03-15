@@ -1,8 +1,8 @@
 ---
 title: De testcase definiëren
-seo-title: De testcase definiëren
+seo-title: Defining your Test Cases
 description: Uw testgevallen moeten gebaseerd zijn op de gebruiksgevallen en de gedetailleerde specificaties van de eisen
-seo-description: Uw testgevallen moeten gebaseerd zijn op de gebruiksgevallen en de gedetailleerde specificaties van de eisen
+seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
-translation-type: tm+mt
-source-git-commit: da08613be784f43ad3e3c3652b7e015640a48a9d
+exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-
-# Het bepalen van uw Gevallen van de Test{#defining-your-test-cases}
+# De testcase definiëren{#defining-your-test-cases}
 
 Uw testgevallen moeten gebaseerd zijn op:
 
@@ -41,7 +40,7 @@ De tests moeten duidelijk omschrijven:
 
 Het vooruitzicht om testgevallen te automatiseren is duidelijk aantrekkelijk, aangezien het herhalende taken kan elimineren.
 
-## Handmatige versus geautomatiseerde tests {#manual-versus-automated-tests}
+## Handmatige en geautomatiseerde tests {#manual-versus-automated-tests}
 
 Het automatiseren van testgevallen is echter een belangrijke investering, dus moeten bepaalde aspecten in overweging worden genomen:
 
@@ -56,16 +55,14 @@ Bij het testen AEM zijn enkele specifieke details van bijzonder belang:
 
 **Auteur- en publicatie-omgevingen**
 
-Hoewel het in [Omgevingen](/help/sites-developing/the-basics.md#environments) wordt behandeld, is het de moeite waard om een beslissende factor van AEM met betrekking tot het testen te benadrukken.
+Hoewel, [Omgevingen](/help/sites-developing/the-basics.md#environments) er moet worden gewezen op een doorslaggevende factor van AEM met betrekking tot tests .
 
 U moet AEM als twee toepassingen beschouwen:
 
-* de *Auteur*-omgeving
-Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
+* de *Auteur* omgeving Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
 Dit heeft een kleine (er), voorspelbare reeks gebruikers, voor wie specifieke functionaliteit en prestaties cruciaal zijn.
 
-* de *Publicatie*-omgeving
-Dit exemplaar presenteert de website in zijn gepubliceerde vorm voor toegang van bezoekers.
+* de *Publiceren* omgeving Deze instantie presenteert de website in de gepubliceerde vorm voor toegang door bezoekers.
 Dit heeft gewoonlijk een grotere reeks gebruikers, waar het volume van verkeer niet altijd 100% voorspelbaar is. Prestaties zijn nog steeds van cruciaal belang - bij het beantwoorden van verzoeken. Er moet ook rekening worden gehouden met caching en taakverdeling.
 
 Alhoewel dezelfde software als dusdanig:
@@ -86,24 +83,24 @@ Het cachegeheugen moet ook op correct gedrag worden gecontroleerd.
 
 **De verzender**
 
-De meeste projecten installeren de Dispatcher voor caching en lading het in evenwicht brengen.
+De meeste projecten zullen Dispatcher voor caching en lading het in evenwicht brengen installeren.
 
 Testen is moeilijk (caching vindt plaats op verschillende niveaus en op verschillende locaties) en moet gebeuren op basis van een zwarte doos. De belangrijkste aspecten waarop u wilt testen zijn:
 
-* **Zorg**
-ervoor dat de bezoeker van de website de inhoud kan bijwerken.
+* **Nauwkeurigheid**
+zorgt ervoor dat de websitebezoeker de inhoud kan bijwerken.
 
-* **Zorg er**
-voortdurend voor dat de website beschikbaar blijft wanneer één server wordt afgesloten.
+* **Continuïteit**
+zorgt u ervoor dat de website beschikbaar blijft wanneer één server wordt afgesloten.
 
 * **Clusters**
 Clusters worden gebruikt voor:
 
-   * ****
-FailoverAls één server uitvalt, nemen andere servers in de cluster de verwerking over.
+   * **Failover**
+Als één server uitvalt, nemen andere servers in de cluster de verwerking over.
 
-   * ****
-PerformanceLoad-taakverdeling met volledige failover verbetert de prestaties van een cluster.
+   * **Prestaties**
+Het in evenwicht brengen van de lading met volledige failover verhoogt de prestaties van een cluster.
 Wanneer gebruikt voor een klantenproject moet de cluster worden getest om correcte verrichting van de configuratie te bevestigen.
 
 ## Software van derden testen {#testing-third-party-software}

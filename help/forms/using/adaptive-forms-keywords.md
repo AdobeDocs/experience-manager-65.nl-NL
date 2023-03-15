@@ -1,21 +1,20 @@
 ---
 title: Trefwoorden voor adaptieve formulieren
-seo-title: Trefwoorden voor adaptieve formulieren
+seo-title: Adaptive forms keywords
 description: U kunt deze gereserveerde woorden niet als id's gebruiken in adaptieve formulieren.
-seo-description: U kunt deze gereserveerde woorden niet als id's gebruiken in adaptieve formulieren.
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 13%
+source-wordcount: '208'
+ht-degree: 14%
 
 ---
-
 
 # Trefwoorden voor adaptieve formulieren {#adaptive-forms-keywords}
 
@@ -241,4 +240,4 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
  </tbody>
 </table>
 
-Gebruik, naast de bovenstaande trefwoorden, geen namen die lijken op [adaptieve formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Gebruik niet alleen de bovenstaande trefwoorden, maar gebruik ook namen die vergelijkbaar zijn met [adaptieve formulieren JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).

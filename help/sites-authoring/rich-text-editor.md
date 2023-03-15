@@ -1,23 +1,22 @@
 ---
 title: De Rich Text Editor gebruiken om inhoud te ontwerpen
-seo-title: De Rich Text Editor gebruiken om inhoud te ontwerpen
+seo-title: Using the Rich Text Editor to Author Content
 description: De Rich Text Editor gebruiken om inhoud te ontwerpen
-seo-description: De Rich Text Editor gebruiken om inhoud te ontwerpen
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: df992fc0204519509c4662a7d4315939af2fc92c
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
 
-
-# De Rich Text Editor gebruiken om inhoud {#use-rich-text-editor-to-author-content} te schrijven
+# De Rich Text Editor gebruiken om inhoud te ontwerpen {#use-rich-text-editor-to-author-content}
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele inhoud in AEM. Het vormt de basis van verschillende componenten, waaronder:
 
@@ -27,7 +26,7 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele 
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de werkbalk [component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) weergegeven, net als bij elke component.
+Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de knop [componentwerkbalk](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals bij elke component.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -47,7 +46,7 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Als u voor op tekst gebaseerde componenten op de modus Volledig scherm tikt op de werkbalk ![](do-not-localize/screen_shot_2018-03-21at163236.png), wordt de teksteditor met tekstopmaak geopend en wordt de rest van de pagina-inhoud verborgen.
+Tik voor op tekst gebaseerde componenten op de modus Volledig scherm op de werkbalk ![](do-not-localize/screen_shot_2018-03-21at163236.png) Hiermee opent u de RTF-editor en verbergt u de rest van de pagina-inhoud.
 
 In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md).
 
@@ -66,4 +65,4 @@ Sluit de modus Volledig scherm door op het pictogram Minimaliseren te klikken.
 
 >[!NOTE]
 >
->Het kopiëren van genestelde lijsten van Microsoft Word in RTE kan inconsistente resultaten geven en kan handaanpassing vereisen na het kleven van de tekst in RTE.
+>Het kopiëren van genestelde lijsten van Word van Microsoft in RTE kan inconsistente resultaten geven en kan handaanpassing vereisen na het kleven van de tekst in RTE.

@@ -1,22 +1,21 @@
 ---
 title: Zoeksjablonen aanpassen
-seo-title: Zoeksjablonen aanpassen
+seo-title: Customizing search templates
 description: U kunt zoeksjablonen maken die in Workspace worden gebruikt om te zoeken naar varianten van processen op de pagina's Aan en Volgen. U kunt ook bestaande zoeksjablonen bewerken of verwijderen.
-seo-description: U kunt zoeksjablonen maken die in Workspace worden gebruikt om te zoeken naar varianten van processen op de pagina's Aan en Volgen. U kunt ook bestaande zoeksjablonen bewerken of verwijderen.
+seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
 uuid: 2043ba8a-07f0-4054-af3c-f3a14c2183ab
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
-translation-type: tm+mt
-source-git-commit: 2cf9dcf2e9cf71c54e19e2c6ee825c9a8f00a9b7
+exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
-
 
 # Zoeksjablonen aanpassen {#customizing-search-templates}
 
@@ -47,9 +46,9 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
    * Selecteer boven aan het tabblad Criteria een proceselement of taakelement.
 
-      **Tip**:  *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
+      **Tip**: *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
 
-      **Tip**:  *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
+      **Tip**: *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
 
       De velden met zoekcriteria voor het geselecteerde element staan onder aan het tabblad Criteria.
 
@@ -59,9 +58,9 @@ U kunt zo veel zoeksjablonen maken als u wilt.
       * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
 
-      **Tip**:  *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Na het selecteren van een proces, zijn om het even welke procesvariabelen die in dat proces worden bepaald beschikbaar voor selectie onder de Variabelen van het Proces in de hoogste sectie van het lusje van Criteria.*
+      **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Na het selecteren van een proces, zijn om het even welke procesvariabelen die in dat proces worden bepaald beschikbaar voor selectie onder de Variabelen van het Proces in de hoogste sectie van het lusje van Criteria.*
 
-      **Tip**:  *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
+      **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
 
 
 1. (Optioneel) Klik op het tabblad Lay-out voor elke kolomkop die in de zoekresultaten moet worden weergegeven en voer de volgende stappen uit:
@@ -88,4 +87,3 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
 1. Selecteer op het tabblad Identificatie een naam in de lijst Naam zoeksjabloon.
 1. Klik op Deze sjabloon verwijderen en klik op OK.
-

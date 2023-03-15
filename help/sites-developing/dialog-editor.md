@@ -1,49 +1,48 @@
 ---
 title: Dialoogvenster-editor
-seo-title: Dialoogvenster-editor
+seo-title: Dialog Editor
 description: De dialoogvenster-editor biedt een grafische interface voor het eenvoudig maken en bewerken van dialoogvensters en subformulieren
-seo-description: De dialoogvenster-editor biedt een grafische interface voor het eenvoudig maken en bewerken van dialoogvensters en subformulieren
+seo-description: The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds
 uuid: 64d3fb12-8638-441b-8595-c590d48f3072
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
-translation-type: tm+mt
-source-git-commit: 58fa0f05bae7ab5ba51491be3171b5c6ffbe870d
+exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
-
 
 # Dialoogvenster-editor{#dialog-editor}
 
 De dialoogeditor biedt een grafische interface voor het eenvoudig maken en bewerken van dialoogvensters en subformulieren.
 
-Als u wilt zien hoe het werkt, gaat u naar CRXDE Lite, opent u de verkenner-boomstructuur naar `/libs/foundation/components/chart` en dubbelklikt u op het knooppunt `dialog`:
+Ga naar CRXDE Lite en open de verkenner-boomstructuur om te zien hoe het werkt `/libs/foundation/components/chart` en dubbelklik op het knooppunt `dialog`:
 
-![chlimage_1-248](assets/chlimage_1-247.png)
+![chlimage_1-247](assets/chlimage_1-247.png)
 
-Het dialoogknooppunt wordt geopend in de **dialoogeditor**:
+Het dialoogvenster wordt geopend in het dialoogvenster **dialoogeditor**:
 
 ![screen_shot_2012-02-01at25033pm](assets/screen_shot_2012-02-01at25033pm.png)
 
-## Overzicht gebruikersinterface {#user-interface-overview}
+## Overzicht van gebruikersinterface {#user-interface-overview}
 
 De interface van de dialoogeditor bestaat uit vier deelvensters:
 
-* Het **palet**, in de linkerbovenhoek. In dit deelvenster staan de widgets die beschikbaar zijn voor het samenstellen van een dialoogvenster, zoals tabdeelvensters, tekstvelden, selectielijsten en knoppen. U kunt de verschillende categorieën in het palet uitbreiden door op de gewenste scheidingsbalk te klikken.
-* Het deelvenster **structure**, linksonder. In dit deelvenster ziet u de hiërarchische structuur van knooppunten die de dialoogdefinitie vormen. U kunt dezelfde structuur zien door het dialoogvenster uit te vouwen in CRXDE Lite of CRX Content Explorer.
-* Het **renderen** deelvenster, in het midden van het venster. In dit deelvenster ziet u hoe de in het structuurvenster gedefinieerde dialoogdefinitie wordt weergegeven als een echt dialoogvenster.
-* Het deelvenster **eigenschappen**. In dit deelvenster worden de eigenschappen weergegeven van het knooppunt dat momenteel is gemarkeerd in het structuurvenster.
+* De **palet** in de linkerbovenhoek. In dit deelvenster staan de widgets die beschikbaar zijn voor het samenstellen van een dialoogvenster, zoals tabdeelvensters, tekstvelden, selectielijsten en knoppen. U kunt de verschillende categorieën in het palet uitbreiden door op de gewenste scheidingsbalk te klikken.
+* De **structuur** in de linkerbenedenhoek. In dit deelvenster ziet u de hiërarchische structuur van knooppunten die de dialoogdefinitie vormen. U kunt dezelfde structuur zien door het dialoogvenster uit te vouwen in CRXDE Lite of CRX Content Explorer.
+* De **renderen** in het midden van het venster. In dit deelvenster ziet u hoe de in het structuurvenster gedefinieerde dialoogdefinitie wordt weergegeven als een echt dialoogvenster.
+* De **eigenschappen** venster. In dit deelvenster worden de eigenschappen weergegeven van het knooppunt dat momenteel is gemarkeerd in het structuurvenster.
 
-### Dialoogeditor {#using-the-dialog-editor} gebruiken
+### De Dialoogeditor gebruiken {#using-the-dialog-editor}
 
 Om een dialoogvenster te maken, sleept de gebruiker elementen van het palet naar het structuurvenster en zet deze neer op de positie in de hiërarchie van de dialoogdefinitie.
 
-Nadat de gewenste structuur is voltooid, klikt de gebruiker op **Opslaan** boven aan het rendervenster.
+Nadat de gewenste structuur is voltooid, klikt de gebruiker op **Opslaan**, boven aan het rendervenster.
 
 >[!CAUTION]
 >
@@ -51,9 +50,9 @@ Nadat de gewenste structuur is voltooid, klikt de gebruiker op **Opslaan** boven
 
 ### Een nieuw dialoogvenster maken {#creating-a-new-dialog}
 
-Als u een nieuw dialoogvenster wilt maken, selecteert u de gewenste component en klikt u op **Maken...** en **Dialoogvenster maken...**.
+Als u een nieuw dialoogvenster wilt maken, selecteert u de gewenste component en klikt u op **Maken...** en vervolgens **Dialoogvenster maken...**.
 
-Voer de vereiste details in en klik op **Alles opslaan** - nu kunt u dubbelklikken op het dialoogvenster om het te openen met de editor.
+Voer de vereiste gegevens in en klik op **Alles opslaan** - nu kunt u dubbelklikken op het dialoogvenster om het te openen met de editor.
 
 ### De Dialoogeditor voor subklassen gebruiken {#using-the-dialog-editor-for-scaffolds}
 

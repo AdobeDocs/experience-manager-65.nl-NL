@@ -1,13 +1,13 @@
 ---
 title: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
 description: CRX/bundle en de dienst van de pagina van het Begin niet beschikbare fouten zodra laatste 6.5.15.0 de dienstpak wordt geïnstalleerd
-source-git-commit: 974796a6b9e921f8c2f40d72a4764eb9f4d8b92b
+exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
+source-git-commit: e961f0c7107b4eacb0d5e50565cb64f5fa30e265
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 1%
 
 ---
-
 
 # Service niet beschikbaar na installatie van AEM (6.5.15.0) servicepack {#steps-to-resolve-error-after-installing-service-pack}
 

@@ -1,22 +1,21 @@
 ---
 title: Resultaten bijhouden en feedback geven
-seo-title: Resultaten bijhouden en feedback geven
+seo-title: Tracking results and providing feedback
 description: Hoe en waar u de testgevallen, en het resulterende testplan bepaalt is bij uw eigen discretie
-seo-description: Hoe en waar u de testgevallen, en het resulterende testplan bepaalt is bij uw eigen discretie
+seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
 uuid: b4b811d4-4ca0-4477-a866-b262f9a698f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '159'
 ht-degree: 0%
 
 ---
-
 
 # Resultaten bijhouden en feedback geven{#tracking-results-and-providing-feedback}
 
@@ -33,4 +32,3 @@ Ongeacht de methode of het gereedschap dat u kiest, worden de opgeslagen gegeven
 * Moet niet:
 
    * Uitgebreid tot traceringsinformatie - geen bugs, nieuwe functies of vervolghandelingen. Deze informatie moet elders worden bewaard, ook hier zijn er veel instrumenten beschikbaar.
-

@@ -445,7 +445,7 @@ Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor
 
 U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of om de inhoud te herzien.
 
-1. Klik of tik op Exporteren in het keuzemenu van het onderdeel Vertaal taak.
+1. Klik of tik op Exporteren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
 1. Klik of tik in het dialoogvenster Exporteren op Geëxporteerd bestand downloaden en gebruik indien nodig het dialoogvenster van de webbrowser om het bestand op te slaan.
 1. Klik of tik op Sluiten in het dialoogvenster Exporteren.
 

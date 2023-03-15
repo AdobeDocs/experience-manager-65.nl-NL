@@ -1,8 +1,8 @@
 ---
 title: Community-componenten
-seo-title: Community-componenten
+seo-title: Communities Components
 description: Gebruikersfuncties toevoegen aan elke AEM site
-seo-description: Gebruikersfuncties toevoegen aan elke AEM site
+seo-description: Adding community features to any AEM site
 uuid: 76824820-81e9-4192-8df3-dff55eaf144e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
-
 
 # Community-componenten {#communities-components}
 
@@ -33,17 +32,17 @@ Ga voor meer informatie over het maken van een site op de website van de gemeens
 
 >[!NOTE]
 >
->Als u niet bekend bent met de ontwerpomgeving, bekijkt u de documentatie over [basisverwerking](/help/sites-authoring/basic-handling.md) en een [snelle handleiding voor het schrijven van pagina&#39;s](/help/sites-authoring/qg-page-authoring.md).
+>Als u niet bekend bent met de ontwerpomgeving, kunt u de documentatie raadplegen op [basisbehandeling](/help/sites-authoring/basic-handling.md) en [snelle handleiding voor het ontwerpen van pagina&#39;s](/help/sites-authoring/qg-page-authoring.md).
 
 ## Beschikbare onderdelen van Gemeenschappen {#available-communities-components}
 
 De volgende lijst maakt een lijst van de componenten van Gemeenschappen zichtbaar aan auteurs wanneer toegelaten in componentenbrowser (sidekick).
 
-Zie ook de interactieve [Community Components guide](/help/communities/components-guide.md).
+Zie ook de interactieve [Community Components Guide](/help/communities/components-guide.md).
 
 >[!NOTE]
 >
->Lees [Community Components Basics](/help/communities/basics.md) omdat deze informatie bevat die nodig is voor het ontwerpen met Community-componenten.
+>Lezen [Grondbeginselen van Community-componenten](/help/communities/basics.md) omdat het informatie bevat die nodig is voor het ontwerpen met communautaire componenten.
 
 | **Componenttitel** | **Functie** |
 |---|---|
@@ -82,11 +81,10 @@ Zie ook de interactieve [Community Components guide](/help/communities/component
 >
 >De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager Communities.
 
-## Documentatie van verwante gemeenschappen {#related-communities-documentation}
+## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Gemeenschappen implementeren](/help/communities/deploy-communities.md) voor meer informatie over aanbevolen implementaties.
+* Bezoek [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 
-* Bezoek [Communitysites beheren](/help/communities/administer-landing.md) voor meer informatie over het maken van een communitysite, het configureren van sjablonen voor communitysites, het moderniseren van community-inhoud, het beheren van leden en het configureren van berichten.
+* Bezoek [Communitysites beheren](/help/communities/administer-landing.md) om over het creëren van een communautaire plaats te leren, vormend communautaire plaatssjablonen, het modereren van communautaire inhoud, het leiden van leden, en het vormen overseinen.
 
-* Bezoek [Developing Communities](/help/communities/communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
-
+* Bezoek [Ontwikkelingsgemeenschappen](/help/communities/communities.md) voor meer informatie over het raamwerk voor sociale componenten (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.

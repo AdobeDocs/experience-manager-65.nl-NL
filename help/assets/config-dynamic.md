@@ -544,7 +544,7 @@ Wanneer u deze taak hebt voltooid, hebt u een pakketbestand dat de voorinstellin
    In Experience Manager: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. Maak het pakket.
-1. Download of deel het voorinstellingspakket voor Video Analytics, zodat het kan worden gedeeld met de volgende nieuwe auteurknooppunten.
+1. Download of deel het voorinstellingspakket voor Video Analytics, zodat dit kan worden gedeeld met de volgende nieuwe auteurknooppunten.
 
 ### Installeer het voorinstellingspakket voor Video Analytics voordat u meer Auteur-knooppunten configureert {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 

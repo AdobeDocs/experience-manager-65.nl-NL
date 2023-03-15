@@ -1,26 +1,25 @@
 ---
 title: Responsieve lay-out uitproberen in We.Detailhandel
-seo-title: Responsieve lay-out uitproberen in We.Detailhandel
+seo-title: Trying out Responsive Layout in We.Retail
 description: Responsieve lay-out uitproberen in We.Detailhandel
-seo-description: 'null'
+seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
 
+# Responsieve lay-out uitproberen in We.Detailhandel{#trying-out-responsive-layout-in-we-retail}
 
-# Responsieve lay-out uitproberen in We.Retail{#trying-out-responsive-layout-in-we-retail}
-
-Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de wijze **Layout** in de paginaredacteur, die u toestaat om uw ontvankelijke lay-out afhankelijk van apparaat tot stand te brengen en uit te geven.
+Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de **Layout** in de pagina-editor. Hiermee kunt u afhankelijk van het apparaat een responsieve indeling maken en bewerken.
 
 ## Uitproberen {#trying-it-out}
 
@@ -28,7 +27,7 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Schakel over naar **Voorvertoning** om de pagina weer te geven zoals deze wordt weergegeven aan een bezoeker van de website. Schuif omlaag naar de inhoud van het artikel *Aloha spirits in Norther Norway*.
+1. Overschakelen op **Voorvertoning** om te zien hoe de pagina wordt weergegeven aan een bezoeker van de website. Omlaag schuiven naar de inhoud van het artikel *Aloha spirits in Noord-Noorwegen*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -48,4 +47,4 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg voor meer informatie het ontwerpdocument [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [Container voor lay-out en lay-outmodus configureren](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.
+Raadpleeg het ontwerpdocument voor meer informatie [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [Container en lay-outmodus voor lay-out configureren](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.

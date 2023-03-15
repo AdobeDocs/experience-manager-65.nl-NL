@@ -1,8 +1,8 @@
 ---
 title: Onderdelenconsole
-seo-title: Onderdelenconsole
+seo-title: Components Console
 description: Onderdelenconsole
-seo-description: 'null'
+seo-description: null
 uuid: a4e34d81-7875-4e26-8b48-4473e2905c37
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 23%
+source-wordcount: '262'
+ht-degree: 22%
 
 ---
-
 
 # Onderdelenconsole{#components-console}
 
@@ -29,7 +28,7 @@ U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. In
 
 >[!NOTE]
 >
->In de componentconsole worden alle componenten in het systeem weergegeven. In de [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) worden componenten weergegeven die beschikbaar zijn voor auteurs en worden componentgroepen verborgen die met een punt ( `.`) beginnen.
+>In de componentconsole worden alle componenten in het systeem weergegeven. De [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) toont componenten die aan auteurs beschikbaar zijn en verbergt om het even welke componentengroepen die met een periode beginnen ( `.`).
 
 ## Zoeken {#searching}
 
@@ -48,15 +47,15 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
    Op het tabblad Eigenschappen kunt u het volgende doen:
 
    * De algemene eigenschappen van de component weergeven.
-   * Bekijk hoe het pictogram of de afkorting [is gedefinieerd](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) voor de component.
+   * Weergeven hoe de [pictogram of afkorting is gedefinieerd](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) voor de component.
 
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
-   * Bekijk **Resourcetype** en **Resourcesupertype** (indien gedefinieerd) voor de component.
+   * De weergave van **Type bron** en **Super Type resource** (indien gedefinieerd) voor de component.
 
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
    >[!NOTE]
    >
-   >Omdat `/apps` niet bewerkbaar is bij uitvoering, is de Componentenconsole alleen-lezen.
+   >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
 
 * **Beleid**
 
@@ -72,7 +71,6 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Documentatie**
 
-   Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component) heeft verstrekt, zal het op **Documentatie** tabel verschijnen. Als er geen documentatie beschikbaar is, zal **Documentatie** tabel niet worden getoond.
+   Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component), verschijnt het op de **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
-

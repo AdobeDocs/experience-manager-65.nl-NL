@@ -1,24 +1,23 @@
 ---
 title: Internationalisatie van UI-tekenreeksen
-seo-title: Internationalisatie van UI-tekenreeksen
+seo-title: Internationalizing UI Strings
 description: Met Java- en Javascript-API's kunt u tekenreeksen internationaliseren
-seo-description: Met Java- en Javascript-API's kunt u tekenreeksen internationaliseren
+seo-description: Java and Javascript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
-translation-type: tm+mt
-source-git-commit: b3e1493811176271ead54bae55b1cd0cf759fe71
+exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
 
-
-# Internationalisatie UI-tekenreeksen {#internationalizing-ui-strings}
+# Internationalisatie van UI-tekenreeksen {#internationalizing-ui-strings}
 
 Met Java- en Javascript-API&#39;s kunt u tekenreeksen internationaliseren in de volgende typen bronnen:
 
@@ -27,11 +26,11 @@ Met Java- en Javascript-API&#39;s kunt u tekenreeksen internationaliseren in de 
 * Javascript in client-side bibliotheken of in paginabron.
 * Waarden van eigenschappen van JCR-knooppunten worden gebruikt in dialoogvensters en componentconfiguratie-eigenschappen.
 
-Zie [Componenten internationaliseren](/help/sites-developing/i18n.md) voor een overzicht van het internationalisatie- en lokalisatieproces.
+Voor een overzicht van het internationalisatie- en lokalisatieproces gaat u naar [Internationaliserende componenten](/help/sites-developing/i18n.md).
 
 ## Internationalisatie van tekenreeksen in Java en JSP-code {#internationalizing-strings-in-java-and-jsp-code}
 
-Met het Java-pakket `com.day.cq.i18n` kunt u gelokaliseerde tekenreeksen weergeven in uw gebruikersinterface. De klasse `I18n` biedt de methode `get` waarmee gelokaliseerde tekenreeksen uit het AEM-woordenboek worden opgehaald. De enige vereiste parameter van de methode `get` is het letterlijke koord in de Engelse taal. Engels is de standaardtaal voor UI. In het volgende voorbeeld wordt het woord `Search` gelokaliseerd:
+De `com.day.cq.i18n` Met het Java-pakket kunt u gelokaliseerde tekenreeksen weergeven in uw gebruikersinterface. De `I18n` klasse biedt de `get` methode die gelokaliseerde tekenreeksen uit het AEM-woordenboek ophaalt. De enige vereiste parameter van de `get` method is the string literal in the English language. Engels is de standaardtaal voor UI. In het volgende voorbeeld wordt het woord gelokaliseerd `Search`:
 
 `i18n.get("Search");`
 
@@ -49,17 +48,17 @@ Er zijn twee manieren om de taal te bepalen die de gebruiker verkiest:
 
 Het taalbezit van de gebruikersrekening is de aangewezen methode omdat het betrouwbaarder is. Nochtans, moet de gebruiker worden het programma geopend om deze methode te gebruiken.
 
-#### Het I18n Java-object {#creating-the-i-n-java-object} maken
+#### Het I18n Java-object maken {#creating-the-i-n-java-object}
 
 De klasse I18n biedt twee constructors. Hoe u de aangewezen taal van de gebruiker bepaalt de te gebruiken aannemer.
 
-Als u de tekenreeks wilt presenteren in de taal die in de gebruikersaccount is opgegeven, gebruikt u de volgende constructor (na het importeren van `com.day.cq.i18n.I18n)`:
+Gebruik de volgende constructor (na het importeren) om de tekenreeks weer te geven in de taal die is opgegeven in de gebruikersaccount `com.day.cq.i18n.I18n)`:
 
 ```java
 I18n i18n = new I18n(slingRequest);
 ```
 
-De constructor gebruikt `SlingHTTPRequest` om de taalinstelling van de gebruiker op te halen.
+De constructor gebruikt de `SlingHTTPRequest` om de taalinstelling van de gebruiker op te halen.
 
 Om de paginalandaal te gebruiken om de taal te bepalen, moet u eerst ResourceBundle voor de taal van de gevraagde pagina verkrijgen:
 
@@ -69,11 +68,11 @@ ResourceBundle resourceBundle = slingRequest.getResourceBundle(pageLang);
 I18n i18n = new I18n(resourceBundle);
 ```
 
-#### Een tekenreeks {#internationalizing-a-string} internationaliseren
+#### Een tekenreeks internationaliseren {#internationalizing-a-string}
 
-Gebruik de methode `get` van het object `I18n` om een tekenreeks te internationaliseren. De enige vereiste parameter van de methode `get` is de tekenreeks die moet worden geïnternationaliseerd. De tekenreeks komt overeen met een tekenreeks in een Vertaalwoordenboek. De methode get zoekt de tekenreeks op in het woordenboek en retourneert de vertaling voor de huidige taal.
+Gebruik de `get` methode `I18n` object gebruiken om een tekenreeks te internationaliseren. De enige vereiste parameter van de `get` methode is de tekenreeks die geïnternationaliseerd moet worden. De tekenreeks komt overeen met een tekenreeks in een Vertaalwoordenboek. De methode get zoekt de tekenreeks op in het woordenboek en retourneert de vertaling voor de huidige taal.
 
-Het eerste argument van de methode `get` moet aan de volgende regels voldoen:
+Het eerste argument van het `get` de methode moet aan de volgende regels voldoen:
 
 * De waarde moet een letterlijke tekenreeks zijn. Een variabele van het type `String` is niet aanvaardbaar.
 * De letterlijke tekenreeks moet op één regel worden uitgedrukt.
@@ -83,31 +82,31 @@ Het eerste argument van de methode `get` moet aan de volgende regels voldoen:
 i18n.get("Enter a search keyword");
 ```
 
-#### Vertaalhints {#using-translation-hints} gebruiken
+#### Vertaalhints gebruiken {#using-translation-hints}
 
-Geef de [vertaalhint](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) van de geïnternationaliseerde tekenreeks op om onderscheid te maken tussen dubbele tekenreeksen in het woordenboek. Gebruik de tweede, optionele parameter van de methode `get` om de vertaalhint op te geven. De vertaalhint moet exact overeenkomen met de eigenschap Opmerking van het item in het woordenboek.
+Geef de [vertaalhint](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) van de geïnternationaliseerde tekenreeks om onderscheid te maken tussen dubbele tekenreeksen in het woordenboek. Gebruik de tweede, optionele parameter van de `get` methode om de vertaalhint op te geven. De vertaalhint moet exact overeenkomen met de eigenschap Opmerking van het item in het woordenboek.
 
-De woordenlijst bevat bijvoorbeeld de tekenreeks `Request` tweemaal: eenmaal als werkwoord en eenmaal als zelfstandig naamwoord. De volgende code omvat de vertaalwenk als argument in de `get` methode:
+Het woordenboek bevat bijvoorbeeld de tekenreeks `Request` tweemaal: eenmaal als werkwoord en eenmaal als zelfstandig naamwoord. De volgende code bevat de vertaalhint als een argument in het dialoogvenster `get` methode:
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
 ```
 
-#### Variabelen opnemen in gelokaliseerde zinnen {#including-variables-in-localized-sentences}
+#### Inclusief variabelen in gelokaliseerde zinnen {#including-variables-in-localized-sentences}
 
 Neem variabelen op in de gelokaliseerde tekenreeks om contextuele betekenis in een zin op te nemen. Nadat u zich bijvoorbeeld hebt aangemeld bij een webtoepassing, wordt op de homepage het bericht &quot;Welkom terug Administrator&quot; weergegeven. U hebt 2 berichten in uw Postvak IN.&quot; De paginacontext bepaalt de gebruikersnaam en het aantal berichten.
 
-[In het woordenboek](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) worden de variabelen in tekenreeksen weergegeven als gehaakte indexen. Geef de waarden van de variabelen op als argumenten van de methode `get`. De argumenten worden na de vertaalhint geplaatst, en de indexen beantwoorden aan de orde van de argumenten:
+[In het woordenboek](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), worden de variabelen vertegenwoordigd in koorden als gehaakte indexen. Geef de waarden van de variabelen op als argumenten van de `get` methode. De argumenten worden na de vertaalhint geplaatst, en de indexen beantwoorden aan de orde van de argumenten:
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-De geïnternationaliseerde tekenreeks en de vertaalhint moeten exact overeenkomen met de tekenreeks en de opmerking in het woordenboek. U kunt de lokalisatietip weglaten door als tweede argument een `null`-waarde op te geven.
+De geïnternationaliseerde tekenreeks en de vertaalhint moeten exact overeenkomen met de tekenreeks en de opmerking in het woordenboek. U kunt de lokalisatiehint weglaten door een `null` waarde als het tweede argument.
 
 #### Het gebruiken van Statische krijgt methode {#using-the-static-get-method}
 
-De klasse `I18N` definieert een statische methode `get` die nuttig is wanneer u een klein aantal tekenreeksen moet lokaliseren. Naast de parameters van de methode `get` van een voorwerp, vereist de statische methode `SlingHttpRequest` of `ResourceBundle` die u gebruikt, volgens hoe u de aangewezen taal van de gebruiker bepaalt:
+De `I18N` klasse definieert een statische klasse `get` Deze methode is handig wanneer u een klein aantal tekenreeksen moet lokaliseren. Naast de parameters van de `get` methode, vereist de statische methode `SlingHttpRequest` of `ResourceBundle` die u gebruikt, op basis van hoe u de voorkeurstaal van de gebruiker bepaalt:
 
 * Gebruik de taalvoorkeur van de gebruiker: Verstrek SlingHttpRequest als eerste parameter.
 
@@ -118,17 +117,17 @@ De klasse `I18N` definieert een statische methode `get` die nuttig is wanneer u 
 
 ### Tekenreeksen internationaliseren in JavaScript-code {#internationalizing-strings-in-javascript-code}
 
-Met de Javascript-API kunt u tekenreeksen lokaliseren op de client. Net als met [Java- en JSP](#internationalizing-strings-in-java-and-jsp-code)-code, kunt u met de Javascript API tekenreeksen identificeren die u kunt lokaliseren, lokalisatietips opgeven en variabelen opnemen in de gelokaliseerde tekenreeksen.
+Met de Javascript-API kunt u tekenreeksen lokaliseren op de client. Zoals met [Java en JSP](#internationalizing-strings-in-java-and-jsp-code) Met de Javascript-API kunt u tekenreeksen identificeren die u wilt lokaliseren, lokalisatietips opgeven en variabelen opnemen in de gelokaliseerde tekenreeksen.
 
-De `granite.utils` [clientbibliotheekmap](/help/sites-developing/clientlibs.md) biedt de Javascript-API. Als u de API wilt gebruiken, neemt u deze clientbibliotheekmap op de pagina op. Localisatiefuncties gebruiken de naamruimte `Granite.I18n`.
+De `granite.utils` [clientbibliotheekmap](/help/sites-developing/clientlibs.md) bevat de Javascript API. Als u de API wilt gebruiken, neemt u deze clientbibliotheekmap op de pagina op. De lokalisatiefuncties gebruiken de `Granite.I18n` naamruimte.
 
-Voordat u gelokaliseerde tekenreeksen aanbiedt, moet u de landinstelling instellen met de functie `Granite.I18n.setLocale`. De functie vereist de taalcode van de landinstelling als argument:
+Voordat u gelokaliseerde tekenreeksen presenteert, moet u de landinstelling instellen met de `Granite.I18n.setLocale` functie. De functie vereist de taalcode van de landinstelling als argument:
 
 ```
 Granite.I18n.setLocale("fr");
 ```
 
-Als u een gelokaliseerde tekenreeks wilt presenteren, gebruikt u de functie `Granite.I18n.get`:
+Als u een gelokaliseerde tekenreeks wilt presenteren, gebruikt u de opdracht `Granite.I18n.get` functie:
 
 ```
 Granite.I18n.get("string to localize");
@@ -154,11 +153,11 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [username, numMsg], "user name, number of messages");
 ```
 
-### Internationalisatie van tekenreeksen van JCR-knooppunten {#internationalizing-strings-from-jcr-nodes}
+### Internationalisatie tekenreeksen van JCR-knooppunten {#internationalizing-strings-from-jcr-nodes}
 
-UI-tekenreeksen zijn vaak gebaseerd op eigenschappen van JCR-knooppunten. De eigenschap `jcr:title` van een pagina wordt bijvoorbeeld doorgaans gebruikt als de inhoud van het element `h1` in de paginacode. De klasse `I18n` biedt de methode `getVar` voor het lokaliseren van deze tekenreeksen.
+UI-tekenreeksen zijn vaak gebaseerd op eigenschappen van JCR-knooppunten. De `jcr:title` eigenschap van een pagina wordt doorgaans gebruikt als de inhoud van de `h1` -element in de paginacode. De `I18n` klasse biedt de `getVar` methode voor het lokaliseren van deze tekenreeksen.
 
-In het volgende voorbeeld haalt het JSP-script de eigenschap `jcr:title` op uit de gegevensopslagruimte en wordt de gelokaliseerde tekenreeks op de pagina weergegeven:
+Het volgende JSP-voorbeeldscript haalt het `jcr:title` eigenschap van de opslagplaats en geeft de gelokaliseerde tekenreeks op de pagina weer:
 
 ```java
 <% title = properties.get("jcr:title", String.class);%>
@@ -167,11 +166,11 @@ In het volgende voorbeeld haalt het JSP-script de eigenschap `jcr:title` op uit 
 
 #### Vertaaltips opgeven voor JCR-knooppunten {#specifying-translation-hints-for-jcr-nodes}
 
-Net als [vertaalhints in de Java API](#using-translation-hints) kunt u vertaalhints opgeven om dubbele tekenreeksen in het woordenboek te onderscheiden. Geef de vertaaltip op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met het achtervoegsel `_commentI18n`:
+Vergelijkbaar met [vertaalhints in de Java API](#using-translation-hints)kunt u vertaaltips opgeven om dubbele tekenreeksen in het woordenboek te onderscheiden. Geef de vertaaltip op als een eigenschap van het knooppunt dat de geïnternationaliseerde eigenschap bevat. De naam van de eigenschap hint bestaat uit de naam van de geïnternationaliseerde eigenschapnaam met de naam `_commentI18n` achtervoegsel:
 
 `${prop}_commentI18n`
 
-Een `cq:page`-knooppunt bevat bijvoorbeeld de eigenschap jcr:title die wordt gelokaliseerd. De hint wordt opgegeven als de waarde van de eigenschap met de naam jcr:title_commentI18n.
+Bijvoorbeeld een `cq:page` de node bevat de eigenschap jcr:title die wordt gelokaliseerd. De hint wordt opgegeven als de waarde van de eigenschap met de naam jcr:title_commentI18n.
 
 ### Bedekking voor internationalisatie testen {#testing-internationalization-coverage}
 
@@ -190,4 +189,3 @@ Het voorkeurenknooppunt van een gebruiker heeft een pad als volgt:
 `/home/users/<letter>/<hash>/preferences`
 
 ![chlimage_1-1](assets/chlimage_1-1a.jpeg)
-

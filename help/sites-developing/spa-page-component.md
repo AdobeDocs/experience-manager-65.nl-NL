@@ -1,7 +1,7 @@
 ---
 title: SPA
 seo-title: SPA Page Component
-description: In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
+description: In een SPA verstrekt de paginacomponent niet de HTML elementen van zijn kindcomponenten, maar in plaats daarvan delegeert dit aan het kader van de SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
 seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
 uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # SPA{#spa-page-component}
 
-In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende componenten, maar delegeert deze aan het SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
+In een SPA verstrekt de paginacomponent niet de HTML elementen van zijn kindcomponenten, maar in plaats daarvan delegeert dit aan het kader van de SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
 
 >[!NOTE]
 >
@@ -28,22 +28,22 @@ In een SPA biedt de paginacomponent niet de HTML-elementen van de onderliggende 
 
 ## Inleiding {#introduction}
 
-De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn kindcomponenten via een JSP of HTML- dossier en middelvoorwerpen. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten wordt opgehaald als een JSON-gegevensstructuur (dat wil zeggen het model). De SPA componenten worden vervolgens aan de pagina toegevoegd volgens het opgegeven JSON-model. De oorspronkelijke compositie van de hoofdtekst van de paginacomponent verschilt daarom van de vooraf weergegeven HTML-tegenhangers.
+De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindcomponenten via een JSP of HTML- dossier en middelvoorwerpen. Deze bewerking wordt gedelegeerd aan het SPA. De representatie van onderliggende componenten wordt opgehaald als een JSON-gegevensstructuur (dat wil zeggen het model). De SPA componenten worden vervolgens aan de pagina toegevoegd volgens het opgegeven JSON-model. Als zodanig verschilt de oorspronkelijke compositie van de hoofdtekst van de paginacomponent van de bovenliggende HTML.
 
 ## Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een meegeleverde [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. De SPA moet communiceren met de module `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates - meestal geproduceerd wanneer de auteur de pagina bewerkt via de Pagina-editor. `PageModelManager` is toegankelijk door SPA project als npm pakket. Als tolk tussen AEM en de SPA is `PageModelManager` bedoeld om de SPA te begeleiden.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. De SPA moet `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates, meestal gemaakt wanneer de auteur de pagina bewerkt via de Pagina-editor. De `PageModelManager` is toegankelijk via SPA project als een npm-pakket. Als tolk tussen AEM en de SPA `PageModelManager` is bedoeld om de SPA te vergezellen.
 
-Als u het schrijven van de pagina wilt toestaan, moet een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` worden toegevoegd voor een communicatiekanaal tussen de SPA en de pagina-editor. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de clientbibliotheekcategorie `cq.authoring.pagemodel.messaging` beschikbaar te maken:
+Als u het schrijven van de pagina wilt toestaan, wordt een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` moet worden toegevoegd om een communicatiekanaal tussen de SPA en de pagina-editor te bieden. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
 * Als de sjabloon bewerkbaar is, voegt u de categorie van de clientbibliotheek toe aan het paginabeleid.
 * Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de paginacomponent.
 
-Vergeet niet de opname van de categorie `cq.authoring.pagemodel.messaging` te beperken tot de context van de pagina-editor.
+Vergeet niet de opname van de `cq.authoring.pagemodel.messaging` in de context van de pagina-editor.
 
 ## Gegevenstype communicatie {#communication-data-type}
 
-Het gegevenstype voor communicatie wordt ingesteld als een HTML-element binnen de component AEM pagina met het kenmerk `data-cq-datatype`. Wanneer het gegevenstype van communicatiegegevens is ingesteld op JSON, bereiken de aanvragen van de GET de eindpunten van het verzendmodel van een component. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. In de bibliotheek Paginamodel wordt vervolgens een waarschuwing voor de SPA van updates weergegeven.
+Het gegevenstype van de communicatie wordt ingesteld als een HTML-element binnen de component AEM pagina met behulp van `data-cq-datatype` kenmerk. Wanneer het gegevenstype van communicatiegegevens is ingesteld op JSON, bereiken de aanvragen van de GET de eindpunten van het verzendmodel van een component. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. In de bibliotheek Paginamodel wordt vervolgens een waarschuwing voor de SPA van updates weergegeven.
 
 **SPA pagina-component -`body.html`**
 
@@ -83,21 +83,21 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 ## Eigenschappen van meta {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
-* `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. ` [PageModelManager](/help/sites-developing/spa-page-component.md)` stelt dan systematisch het aanvankelijke model van de toepassing opnieuw samen zoals ingaand de toepassing van zijn wortelingangspunt.
+* `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. De ` [PageModelManager](/help/sites-developing/spa-page-component.md)` vervolgens wordt het oorspronkelijke toepassingsmodel systematisch opnieuw samengesteld zodat de toepassing wordt ingevoerd vanaf het beginpunt van de toepassing.
 
-* `cq:pagemodel_router`: De  ` [ModelRouter](/help/sites-developing/spa-routing.md)`   `PageModelManager` bibliotheek in- of uitschakelen
+* `cq:pagemodel_router`: Schakel de ` [ModelRouter](/help/sites-developing/spa-routing.md)` van de `PageModelManager` bibliotheek
 
-* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijsten of reguliere expressies om routes te bieden die de gebruiker  ` [ModelRouter](/help/sites-developing/spa-routing.md)` moet negeren.
+* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijsten of reguliere expressies om routes te bieden ` [ModelRouter](/help/sites-developing/spa-routing.md)` moet worden genegeerd.
 
 >[!CAUTION]
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Elk AEM project zou hefboomwerking [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK.Alle SPA projecten op AEM zouden op het Maven Archetype voor SPA Starter Kit moeten worden gebaseerd.
+>Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die ondersteuning biedt voor SPA projecten die gebruikmaken van React of Angular en de SPA SDK als hefboom gebruikt. Alle SPA projecten op AEM moeten gebaseerd zijn op het Maven Archetype voor SPA Starter Kit.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
-De synchronisatie van de overlays wordt gegarandeerd door dezelfde Mutation Observer die door de categorie `cq.authoring.page` wordt geboden.
+De synchronisatie van de overlays wordt gegarandeerd door dezelfde Mutation Observer die door de `cq.authoring.page` categorie.
 
 ## Sling Model JSON Geëxporteerde structuurconfiguratie {#sling-model-json-exported-structure-configuration}
 
@@ -106,4 +106,4 @@ Wanneer de verpletterende mogelijkheden worden toegelaten, is de veronderstellin
 * `structureDepth`: Aantal dat overeenkomt met de diepte van de geëxporteerde structuur
 * `structurePatterns`: Regex van array van regexes die overeenkomt met de pagina die geëxporteerd moet worden
 
-Dit kan in de SPA steekproefinhoud in `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root` worden getoond.
+Dit kan worden weergegeven in de inhoud van het SPA monster in `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

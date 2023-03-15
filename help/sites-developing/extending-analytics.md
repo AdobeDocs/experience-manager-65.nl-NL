@@ -1,36 +1,35 @@
 ---
 title: Gebeurtenistracking uitbreiden
-seo-title: Gebeurtenistracking uitbreiden
+seo-title: Extending Event Tracking
 description: Met AEM Analytics kunt u gebruikersinteractie op uw website volgen
-seo-description: Met AEM Analytics kunt u gebruikersinteractie op uw website volgen
+seo-description: AEM Analytics allows you to track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
-translation-type: tm+mt
-source-git-commit: 5128a08d4db21cda821de0698b0ac63ceed24379
+exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
-
-# Gebeurtenissenreeksspatiëring uitbreiden{#extending-event-tracking}
+# Gebeurtenistracking uitbreiden{#extending-event-tracking}
 
 Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikkelaar moet u mogelijk:
 
-* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan worden gedaan met [Aangepaste gebeurtenissen.](#custom-events)
+* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan gebeuren met [Aangepaste gebeurtenissen.](#custom-events)
 * [De waarden van de toegang in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
-* [Voeg recordcallbacks](#adding-record-callbacks) toe.
+* [Recordcallbacks toevoegen](#adding-record-callbacks).
 
 >[!NOTE]
 >
 >Deze informatie is eigenlijk algemeen, maar het gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
 >
->Zie [Componenten ontwikkelen](/help/sites-developing/components.md) voor algemene informatie over het ontwikkelen van componenten en dialoogvensters.
+>Voor algemene informatie over het ontwikkelen van componenten en dialoogvensters raadpleegt u [Componenten ontwikkelen](/help/sites-developing/components.md).
 
 ## Aangepaste gebeurtenissen {#custom-events}
 
@@ -38,7 +37,7 @@ Aangepaste gebeurtenissen volgen alles wat afhankelijk is van de beschikbaarheid
 
 ### Aangepaste gebeurtenissen bijhouden bij laden van pagina {#tracking-custom-events-on-page-load}
 
-Dit kan worden gedaan gebruikend pseudo-attribuut `data-tracking` (het oudere verslagattribuut wordt nog gesteund voor achterwaartse verenigbaarheid). U kunt dit toevoegen aan elke HTML-tag.
+Dit kan worden gedaan gebruikend pseudo-attribuut `data-tracking` (Het oudere recordkenmerk wordt nog steeds ondersteund voor achterwaartse compatibiliteit). U kunt dit toevoegen aan elke HTML-tag.
 
 De syntaxis voor `data-tracking` is
 
@@ -61,11 +60,11 @@ Een voorbeeld zou als kunnen kijken:
 </span>
 ```
 
-Bij paginading, zullen alle `data-tracking` attributen worden verzameld en aan de gebeurtenisopslag van ContextHub toegevoegd, waar zij aan de gebeurtenissen van Adobe Analytics kunnen worden in kaart gebracht. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
+Tijdens het laden van de pagina, alles `data-tracking` attributen zullen worden verzameld en aan de gebeurtenisopslag van ContextHub toegevoegd, waar zij aan de gebeurtenissen van Adobe Analytics kunnen worden in kaart gebracht. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
 
 ### Aangepaste gebeurtenissen bijhouden na laden van pagina {#tracking-custom-events-after-page-load}
 
-Als u gebeurtenissen wilt bijhouden die plaatsvinden nadat een pagina is geladen (zoals gebruikersinteracties), gebruikt u de JavaScript-functie `CQ_Analytics.record`:
+Als u gebeurtenissen wilt bijhouden die plaatsvinden nadat een pagina is geladen (zoals gebruikersinteracties), gebruikt u de opdracht `CQ_Analytics.record` JavaScript-functie:
 
 * `CQ_Analytics.record({event: 'eventName', values: { valueName: 'VALUE' }, collect: false, options: { obj: this, defaultLinkType: 'X' }, componentPath: '<%=resource.getResourceType()%>'})`
 
@@ -75,11 +74,11 @@ Wanneer
 
 * `values` bevat alle waarden die moeten worden bijgehouden
 * `collect` is optioneel en retourneert een array met de gebeurtenis en het gegevensobject.
-* `options` is optioneel en bevat opties voor het bijhouden van koppelingen, zoals HTML-element  `obj` en  ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` is optioneel en bevat opties voor het bijhouden van koppelingen, zoals het HTML-element `obj` en ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` is een noodzakelijk attribuut en het wordt geadviseerd om het te plaatsen aan  `<%=resource.getResourceType()%>`
+* `componentPath` is een noodzakelijk attribuut en het wordt geadviseerd om het te plaatsen aan `<%=resource.getResourceType()%>`
 
-Als een gebruiker bijvoorbeeld op de koppeling **Springen naar boven** klikt, worden de twee gebeurtenissen `jumptop` en `headlineclick` geactiveerd:
+Met de volgende definitie klikt een gebruiker bijvoorbeeld op de knop **Springen naar boven** de koppeling zal beide gebeurtenissen veroorzaken, `jumptop` en `headlineclick`, te branden:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">
@@ -87,13 +86,13 @@ Als een gebruiker bijvoorbeeld op de koppeling **Springen naar boven** klikt, wo
 </h1>
 ```
 
-## Toegang tot van Waarden in ContextHub {#accessing-values-in-the-contexthub}
+## Toegang tot Waarden in ContextHub {#accessing-values-in-the-contexthub}
 
-De JavaScript-API van ContextHub heeft een functie `getStore(name)` die de opgegeven opslag retourneert, indien beschikbaar. De opslag heeft een functie `getItem(key)` die de waarde van de gespecificeerde sleutel, indien beschikbaar terugkeert. Met de functie `getKeys()` kunt u een array met gedefinieerde sleutels voor de specifieke opslag ophalen.
+De JavaScript-API van ContextHub heeft een `getStore(name)` functie die de opgegeven store retourneert, indien beschikbaar. De winkel heeft een `getItem(key)` functie die de waarde van de opgegeven toets retourneert, indien beschikbaar. Met de `getKeys()` als het mogelijk is een array met gedefinieerde sleutels voor de specifieke winkel op te halen.
 
-U kunt op de hoogte worden gesteld van waardeveranderingen op een opslag door een functie te binden gebruikend de `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` functie.
+U kunt op de hoogte worden gesteld van waardewijzigingen in een winkel door een functie te binden met de `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` functie.
 
-De beste manier om van aanvankelijke beschikbaarheid van ContextHub op de hoogte te worden gebracht is de `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` functie te gebruiken.
+De beste manier om van aanvankelijke beschikbaarheid te worden op de hoogte gebracht ContextHub is het gebruiken van `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` functie.
 
 **Aanvullende gebeurtenissen voor ContextHub:**
 
@@ -107,9 +106,9 @@ Opslagspecifiek:
 
 >[!NOTE]
 >
->Zie ook de volledige [ContextHub API Reference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Zie ook het volledige [ContextHub API-naslaggids](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
-## Recordcallbacks {#adding-record-callbacks} toevoegen
+## Recordcallbacks toevoegen {#adding-record-callbacks}
 
 Voor en na callbacks worden geregistreerd gebruikend de functies `CQ_Analytics.registerBeforeCallback(callback,rank)` en `CQ_Analytics.registerAfterCallback(callback,rank)`.
 

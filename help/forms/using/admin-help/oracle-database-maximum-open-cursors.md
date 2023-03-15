@@ -1,23 +1,22 @@
 ---
-title: Oracle database maximum open cursors drempel
-seo-title: Oracle database maximum open cursors drempel
+title: Maximale drempel voor open cursors in de database oracle
+seo-title: Oracle database maximum open cursors threshold
 description: Meer informatie over het configureren van een maximumwaarde voor open cursors in Oracle.
-seo-description: Meer informatie over het configureren van een maximumwaarde voor open cursors in Oracle.
+seo-description: Learn about configuring a maximum value for open cursors in Oracle.
 uuid: c1d20997-f853-4772-b1c6-8cea73221d0a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d3565776-1b7d-498c-9840-b17f80170d9b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5be26485-afe5-47ac-918c-e2fff4f394b2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
 
+# Maximale drempel voor open cursors in de database oracle {#oracle-database-maximum-open-cursors-threshold}
 
-# Oracle database maximum open cursors drempel {#oracle-database-maximum-open-cursors-threshold}
-
-Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten aanpassen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde open cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Ga voor meer informatie naar [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten stemmen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde openstaande cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Ga voor meer informatie naar [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).

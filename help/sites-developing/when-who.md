@@ -1,22 +1,21 @@
 ---
 title: Testen - wanneer en met wie?
-seo-title: Testen - wanneer en met wie?
+seo-title: Testing - when and with whom?
 description: Verschillende rollen kunnen bij het testen en in diverse stadia van de projectontwikkeling worden betrokken
-seo-description: Verschillende rollen kunnen bij het testen en in diverse stadia van de projectontwikkeling worden betrokken
+seo-description: Various roles can be involved in testing and at various stages of project development
 uuid: 431e8f06-80eb-4fb3-a4c7-2580608b0a1c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
-
 
 # Testen - wanneer en met wie?{#testing-when-and-with-whom}
 
@@ -45,10 +44,9 @@ Verschillende rollen kunnen bij het testen en in diverse stadia van de projecton
     <ul>
      <li><p>Verstrekt de klant van ervaring van het project dat wordt ontwikkeld.</p> </li>
      <li><p>Biedt vroege feedback van de klant.</p> </li>
-     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; Als de klanten zo vroeg mogelijk worden betrokken bij het testen, wordt hun ervaring met het nieuwe project in termen van <i>hands-on</i>-ervaring vergroot.</p> </li>
+     <li><p>Gebruikers geven vaak hun eisen uit in termen van ervaring uit het verleden; het zo vroeg mogelijk betrekken van de klanten bij het testen vergroot hun ervaring met het nieuwe project in termen van <i>hands-on</i> ervaring.</p> </li>
     </ul> </td>
    <td><p>Opnieuw is vroege betrokkenheid goed, hoewel om het even welke versie de klanten gebruiken stabiel zou moeten zijn, met redelijke functionaliteit.</p> <p>Eerste indrukken zijn altijd belangrijk.</p> </td>
   </tr>
  </tbody>
 </table>
-

@@ -1,8 +1,8 @@
 ---
 title: Componenten van overlaygemeenschappen
-seo-title: Componenten van overlaygemeenschappen
+seo-title: Overlay communities components
 description: Componenten van overlaygemeenschappen
-seo-description: Componenten van overlaygemeenschappen
+seo-description: Overlay communities components
 uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,24 +10,23 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 48afa2146d0dcbab4beaa1044645c269b49fd7ff
+exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
+# Componenten van overlaygemeenschappen {#overlay-communities-components}
 
-# Componenten {#overlay-communities-components} voor overlaygemeenschappen
-
-De bedoeling van [het bedekken van](/help/communities/client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
+De bedoeling van [bedekken](/help/communities/client-customize.md#overlays) een standaardcomponent is het wijzigen van de weergave of het gedrag van een component in het algemeen voor alle relatieve verwijzingen naar de component. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
 ## Voorbeeld {#example}
 
 **Component Overlay-opmerkingen**
 
-Stel dat u de commentaarfunctie wilt wijzigen zodat deze overeenkomt met het ontwerp van uw website, door de koptekst van de opmerking te wijzigen zodat de avatar niet meer wordt weergegeven voor opmerkingen. De oplossingen voor het verbergen van de avatar maken gebruik van CSS of bedekken, zoals hier beschreven, header.jsp in de map apps, zodat de HTML die de avatar bevat nooit naar de client wordt verzonden.
+Stel dat u de commentaarfunctie wilt wijzigen zodat deze overeenkomt met het ontwerp van uw website, door de koptekst van de opmerking te wijzigen zodat de avatar niet meer wordt weergegeven voor opmerkingen. De oplossingen voor het verbergen van de avatar maken gebruik van CSS of, zoals hier wordt beschreven, van de header.jsp in de map apps, zodat de HTML die de avatar bevat nooit naar de client wordt verzonden.
 
 Als u opmerkingen wilt bedekken, moet u:
 
@@ -37,9 +36,9 @@ Als u opmerkingen wilt bedekken, moet u:
 
 **E-mails met overlaymeldingen**
 
-Stel dat u het bericht van e-mailberichten wilt aanpassen, kunt u dit doen door [de sjablonen op **/libs/settings/community/templates/email/html** te bedekken.](/help/communities/client-customize.md#overlays)
+Stel dat u het bericht van e-mailberichten wilt aanpassen, dat kunt u doen door [bedekken](/help/communities/client-customize.md#overlays) de sjablonen op **/libs/settings/community/templates/email/html**.
 
-Als u bijvoorbeeld de e-mailmeldingen voor vermeldingen wilt wijzigen (voor een specifieke component van een gemeenschap waarin ugc is gemaakt), voegt u een **if** voorwaarde voor werkwoord **specify** toe in de sjablonen van de componenten waarvoor u de ondersteuning **@mtations** hebt ingeschakeld.
+Als u bijvoorbeeld de meldingen in e-mails over vermeldingen wilt wijzigen (voor een specifieke component van een gemeenschap waarin ugc is gemaakt), voegt u een **indien** voorwaarde voor werkwoord **noemen** in de malplaatjes van de componenten waarvoor u toeliet **@mnotices** ondersteuning.
 
 ```java
 {{#equals this.verb "mention"}}\

@@ -1,24 +1,23 @@
 ---
 title: Aanpassing aan clientzijde
-seo-title: Aanpassing aan clientzijde
+seo-title: Client-side Customization
 description: Gedrag of weergave van de client in AEM Communities aanpassen
-seo-description: Gedrag of weergave van de client in AEM Communities aanpassen
+seo-description: Customizing behavior or appearance client-side in AEM Communities
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
 
-
-# Aanpassing aan clientzijde {#client-side-customization}
+# Aanpassing aan clientzijde  {#client-side-customization}
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
@@ -28,39 +27,39 @@ Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Commu
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
-[Als u een component ](#overlays) overschrijft, wordt de standaardcomponent gewijzigd en wordt elke verwijzing naar de component gewijzigd.
+[Bedekken](#overlays) een component verandert de standaardcomponent en beïnvloedt elke verwijzing naar de component.
 
-[Als u een component ](#extensions) uitbreidt met een unieke naam, beperkt u het bereik van wijzigingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
+[Uitbreiden](#extensions) een component, die uniek wordt genoemd, beperkt het werkingsgebied van veranderingen. De term &#39;extend&#39; wordt door elkaar gebruikt met &#39;override&#39;.
 
 ## Bedekkingen {#overlays}
 
 Het bedekken van een component is een methode om wijzigingen aan een standaardcomponent aan te brengen en alle instanties te beïnvloeden die het gebrek gebruiken.
 
-De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in de folder te wijzigen /**apps**, eerder dan het wijzigen van de originele component in /**libs** folder. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
+De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** map, in plaats van de oorspronkelijke component in de map / te wijzigen **libben** directory. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
 
 De map /apps is de eerste plaats die wordt gezocht om aanvragen op te lossen. Als deze niet wordt gevonden, wordt de standaardversie in de map /libs gebruikt.
 
 De standaardcomponent in de /libs folder moet nooit worden gewijzigd aangezien de toekomstige flarden en de verbeteringen vrij zijn om de /libs folder op om het even welke manier noodzakelijk te veranderen terwijl het handhaven van openbare interfaces.
 
-Dit is verschillend van [het uitbreiden van](#extensions) een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een uniek weg aan de component leiden en zich baserend op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als supermiddeltype baseren.
+Dit verschilt van [verlenging](#extensions) een standaardcomponent waar het verlangen wijzigingen voor een specifiek gebruik moet maken, die tot een uniek weg aan de component leidt en zich baseert op het van verwijzingen voorzien van de originele standaardcomponent in de /libs folder als super middeltype.
 
-Voor een snel voorbeeld van het bedekken van de commentaarcomponent, probeer [de Onderzelfstudie van de Component van Commentaren van de Bedekking](overlay-comments.md).
+Voor een snel voorbeeld van het bedekken van de commentaarcomponent, probeer [Zelfstudie van de component Overlay Comments](overlay-comments.md).
 
 ## Extensies {#extensions}
 
 Het uitbreiden (met voeten treden) van een component is een methode om wijzigingen voor een specifiek gebruik aan te brengen zonder alle instanties te beïnvloeden die het gebrek gebruiken. De uitgebreide component krijgt een unieke naam in de map /apps en verwijst naar de standaardcomponent in de map /libs, zodat het standaardontwerp en de standaardwerking van een component niet worden gewijzigd.
 
-Dit verschilt van [het bedekken](#overlays) de standaardcomponent waar de aard van het Sling relatieve verwijzingen naar apps/omslag alvorens in de libs/ omslag te zoeken oplost, zodat wordt het ontwerp of het gedrag van een component globaal gewijzigd.
+Dit verschilt van [bedekken](#overlays) De standaardcomponent waarin de aard van Sling relatieve verwijzingen naar apps/omslag alvorens in de libs/ omslag te zoeken oplost, zodat wordt het ontwerp of het gedrag van een component globaal gewijzigd.
 
-Voor een snel voorbeeld van het uitbreiden van de commentaarcomponent, probeer [breid de Component van Commentaren uit leerprogramma](extend-comments.md).
+Voor een kort voorbeeld van het uitbreiden van de commentaarcomponent, probeer [Zelfstudie opmerkingencomponent uitbreiden](extend-comments.md).
 
 ## JavaScript-binding {#javascript-binding}
 
 Het HBS-script voor de component moet zijn gebonden aan de JavaScript-objecten, -modellen en -weergaven, die deze functie implementeren.
 
-De waarde van het kenmerk `data-scf-component` kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`**, of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/components/hbs/rating**.
+De waarde van de `data-scf-component` kenmerk kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`** of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/componenten/hbs/rating**.
 
-Om een component te binden, moet het volledige componentenmanuscript binnen een &lt;div> element met de volgende attributen worden ingesloten:
+Om een component te binden, moet het volledige componentenmanuscript binnen een worden ingesloten &lt;div> element met de volgende kenmerken:
 
 * `data-component-id`=&quot;{{id}}&quot;
 
@@ -68,7 +67,7 @@ Om een component te binden, moet het volledige componentenmanuscript binnen een 
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
-Bijvoorbeeld uit `/apps/weretail/components/hbs/rating/rating.hbs`:
+Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
 <div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
@@ -86,7 +85,7 @@ Alle eigenschappen die op een component/een middel worden geplaatst kunnen worde
 
 `{{properties.<property_name>}}`
 
-## CSS {#skinning-css} schuintrekken
+## CSS schuintrekken {#skinning-css}
 
 Componenten aanpassen aan het algemene thema van de website kan worden bereikt door &#39;skins&#39; toe te wijzen. Kleuren, lettertypen, afbeeldingen, knoppen, koppelingen, afstand en zelfs positionering worden in zekere mate gewijzigd.
 
@@ -97,7 +96,7 @@ Een skin toewijzen aan een component:
 1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: compositiegebied, werkbalkknoppen, berichtlettertype, enz.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
-1. Neem het opmaakmodel op in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat dit opneemt vanuit uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Het stijlblad opnemen in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat deze wordt opgenomen in uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Definieer de CSS-klassen en -regels die u hebt geïdentificeerd (#2) in uw stijlpagina opnieuw en voeg stijlen toe.
 
@@ -105,11 +104,11 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->Elke CSS-klassenaam die wordt voorafgegaan door `scf-js`, heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Elke CSS-klassennaam die vooraf is voorzien van `scf-js` heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
->Hoewel de `scf-js`-klassen geen invloed hebben op stijlen, kunnen de klassennamen in stijlpagina&#39;s worden gebruikt met het voorbehoud dat er, aangezien ze de status van elementen bepalen, bijwerkingen kunnen optreden.
+>Terwijl de `scf-js` klassen zijn niet van invloed op stijlen, de klassennamen kunnen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
 
-## JavaScript {#extending-javascript} uitbreiden
+## JavaScript uitbreiden {#extending-javascript}
 
 Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
@@ -119,7 +118,7 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
-### forum.js: Voorbeeld van uitbreiding van forum - GB {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Voorbeeld van uitbreiding van forum - GB  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -152,14 +151,14 @@ Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worde
 
 ## Clientlibs voor SCF {#clientlibs-for-scf}
 
-Het gebruik van [client-side bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) biedt een manier om de JavaScript en CSS die worden gebruikt om inhoud op de client te renderen, te organiseren en te optimaliseren.
+Het gebruik van [clientbibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs), biedt een manier om de JavaScript en CSS die worden gebruikt voor het renderen van inhoud op de client, te organiseren en te optimaliseren.
 
 De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varianten, die slechts door de aanwezigheid van &quot;auteur&quot;in de categorienaam variëren:
 
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
-| complete clientlib | cq.social.hbs.&lt;component name=&quot;&quot;> |
-| auteur-clientlib | cq.social.author.hbs.&lt;component name=&quot;&quot;> |
+| complete clientlib | cq.social.hbs.&lt;component name> |
+| auteur-clientlib | cq.social.author.hbs.&lt;component name> |
 
 ### Volledige Clientlibs {#complete-clientlibs}
 
@@ -174,11 +173,11 @@ Bijvoorbeeld:
 * Clientmapknooppunt: `/etc/clientlibs/social/hbs/forum`
 * Eigenschap Categorieën: `cq.social.hbs.forum`
 
-De [Community Components guide](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke SCF component worden vereist.
+De [Community Components Guide](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke component SCF wordt vereist.
 
-[Clientlibs voor Community ](clientlibs.md) Componenten beschrijft hoe u clientlibs aan een pagina kunt toevoegen.
+[Clientlibs voor Community-componenten](clientlibs.md) beschrijft hoe u clientlibs aan een pagina kunt toevoegen.
 
-### Clientlibs {#author-clientlibs}
+### Auteur Clientlibs {#author-clientlibs}
 
 De clientlibs van de auteurversie worden gestript neer aan minimale JavaScript noodzakelijk om de component uit te voeren.
 
@@ -195,7 +194,7 @@ Bijvoorbeeld:
 
 Opmerking: hoewel auteur clientlibs geen andere bibliotheken inbedden , maken ze een lijst van hun afhankelijkheden . Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
 
-De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in [Community Components guide](components-guide.md) worden vermeld.
+De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in SCF worden vermeld [Community Components Guide](components-guide.md).
 
 ### Overwegingen bij gebruik {#usage-considerations}
 
@@ -208,4 +207,3 @@ Elke site is anders in de manier waarop ze clientbibliotheken beheren. Enkele fa
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
-

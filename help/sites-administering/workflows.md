@@ -1,22 +1,21 @@
 ---
 title: Workflows beheren
-seo-title: Workflows beheren
+seo-title: Administering Workflows
 description: Leer hoe u workflows in AEM beheert.
-seo-description: Leer hoe u workflows in AEM beheert.
+seo-description: Learn how to administer workflows in AEM.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
-translation-type: tm+mt
-source-git-commit: 5a99daa208d1d109d2736525fdca3accdcfb4dd1
+exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
-
 
 # Workflows beheren{#administering-workflows}
 
@@ -39,17 +38,15 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >
 >Zie voor meer informatie:
 >
->* Workflows toepassen en deelnemen aan workflows: [Werken met Workflows](/help/sites-authoring/workflows.md).
+>* Workflows toepassen en deelnemen aan workflows: [Werken met workflows](/help/sites-authoring/workflows.md).
 >* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows ontwikkelen en uitbreiden](/help/sites-developing/workflows.md).
 >* De prestaties verbeteren van workflows die gebruikmaken van aanzienlijke serverresources: [Gelijktijdige workflowverwerking](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
-
 >
 
 
+## Workflowmodellen en -instanties {#workflow-models-and-instances}
 
-## Workflowmodellen en instanties {#workflow-models-and-instances}
-
-[De ](/help/sites-developing/workflows.md#model) modellen van het werkschema in AEM zijn de vertegenwoordiging en de implementatie van bedrijfsprocessen:
+[Workflowmodellen](/help/sites-developing/workflows.md#model) AEM zijn de vertegenwoordiging en uitvoering van bedrijfsprocessen:
 
 * Doorgaans handelen ze op pagina&#39;s of elementen om een specifiek resultaat te bereiken.
 * Deze pagina&#39;s en/of middelen worden de werkstroomlading genoemd.
@@ -60,7 +57,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die die door het werkschemamodel *op het tijdstip worden bepaald de instantie wordt geproduceerd*. Zie [Workflows ontwikkelen](/help/sites-developing/workflows.md#model) voor meer informatie.
+>De uitgevoerde stappen zijn die welke door het werkschemamodel worden bepaald *op het moment dat de instantie wordt gegenereerd*. Zie [Workflows ontwikkelen](/help/sites-developing/workflows.md#model) voor nadere bijzonderheden.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 
@@ -103,7 +100,7 @@ Een werkstroom kan een van de volgende status hebben:
 
 >[!NOTE]
 >
->Wanneer de uitvoering van een Stap van het Proces in fouten resulteert, verschijnt de stap in Inbox van de beheerder en de werkschemastatus is **RUNNING**.
+>Wanneer de uitvoering van een Stap van het Proces in fouten resulteert, verschijnt de stap in Inbox van de beheerder en de werkschemastatus is **UITVOEREN**.
 
 Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van workflowinstanties wanneer u moet ingrijpen in de normale voortgang van een workflowinstantie:
 
@@ -114,5 +111,4 @@ Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van w
 >Het markeren van een workflowstatus op &quot;Suspend&quot; heeft een bekende kwestie. In deze status is het mogelijk om acties uit te voeren voor geschorste workflowitems in een Postvak IN.
 
 * **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
-* **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in  **ABORTED**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
-
+* **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in **GEABORTEERD**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.

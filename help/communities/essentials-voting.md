@@ -1,32 +1,31 @@
 ---
 title: Grondbeginselen van de stemming
-seo-title: Grondbeginselen van de stemming
+seo-title: Voting Essentials
 description: Overzicht van de stemcomponent
-seo-description: Overzicht van de stemcomponent
+seo-description: Voting component overview
 uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
-
 # Grondbeginselen van de stemming {#voting-essentials}
 
-De stemcomponent, een [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een bepaald stuk van inhoud te schatten door eenvoudig omhoog of onderaan pijlen te selecteren om hun mening te wijzen.
+De stemcomponent, a [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een bepaald stuk van inhoud te schatten door eenvoudig pijlen omhoog of onderaan te selecteren om hun mening te wijzen.
 
-Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan; elke instantie moet met een uniek `tally name` bezit worden gevormd.
+Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan; elke instantie moet met een uniek `tally name` eigenschap.
 
 Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten zich slechts eenmaal registreren en aanmelden om aan de stemming deel te nemen. De ondertekenaar (lid) kan te allen tijde zijn stem wijzigen.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +35,7 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td>
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -67,19 +66,18 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Toegang tot Geposte Stemming (UGC) {#accessing-posted-voting-ugc}
+### Toegang tot gebste stemmen (UGC) {#accessing-posted-voting-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
+* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de repository.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes.
-
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.

@@ -1,8 +1,8 @@
 ---
 title: Functie bestandsbibliotheek
-seo-title: Functie bestandsbibliotheek
+seo-title: File Library Feature
 description: Met de functie Bestandsbibliotheek kunnen aangemelde sitebezoekers bestanden uploaden, beheren en downloaden
-seo-description: Met de functie Bestandsbibliotheek kunnen aangemelde sitebezoekers bestanden uploaden, beheren en downloaden
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
-translation-type: tm+mt
-source-git-commit: cdbe098ada0b6c50952284f92cc2063435034a38
+exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
-
 
 # Functie bestandsbibliotheek{#file-library-feature}
 
@@ -28,25 +27,25 @@ De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoek
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 * De functie voor de bestandsbibliotheek toevoegen aan een AEM site.
-* De montages van de configuratie voor `File Library` component.
+* De montages van de configuratie voor de `File Library` component.
 
 ### Een bestandsbibliotheek toevoegen aan een pagina {#adding-a-file-library-to-a-page}
 
-Als u een `File Library`-component wilt toevoegen aan een pagina in de modus Ontwerpen, zoekt u de component:
+Als u een `File Library` naar een pagina in de auteursmodus, zoek de component:
 
 * `Communities / File Library`
 
 en sleep het naar de juiste plaats op een pagina.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, wordt de `File Library`-component op deze manier weergegeven:
+Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, is dit hoe `File Library` wordt weergegeven:
 
 ![file-library1](assets/file-library1.png)
 
-### Bestandsbibliotheek {#configuring-file-library} configureren
+### Bestandsbibliotheek configureren {#configuring-file-library}
 
-Selecteer de geplaatste `File Library` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `File Library` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
@@ -54,7 +53,7 @@ Selecteer de geplaatste `File Library` component en selecteer `Configure` pictog
 
 #### Tabblad Opmerkingen {#comments-tab}
 
-Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
+Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade bestanden worden weergegeven:
 
 * **Opmerkingen bij bestanden toestaan**
 
@@ -62,7 +61,7 @@ Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade 
 
 * **Opmerkingen per pagina**
 
-   Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is **10**.
+   Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. Standaard is **10**.
 
 * **Max. bestandsgrootte**
 
@@ -74,7 +73,7 @@ Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade 
 
 * **Toegestane bestandstypen**
 
-   Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zo opgegeven dat alle bestandstypen zijn toegestaan.
+   Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zodanig opgegeven dat alle bestandstypen zijn toegestaan.
 
 * **RTF-editor**
 
@@ -102,7 +101,7 @@ Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade 
 
 * **Volgen toestaan**
 
-   Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen. Hiermee kunnen leden [op de hoogte worden gesteld](/help/communities/notifications.md) van nieuwe berichten. De optie Standaard is uitgeschakeld.
+   Indien ingeschakeld, neemt u de volgende functie voor blogartikelen op, waardoor leden kunnen worden [aangemeld](/help/communities/notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **Menu inschakelen**
 
@@ -122,7 +121,7 @@ Geef onder het tabblad **Opmerkingen** op of en hoe opmerkingen voor geüploade 
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Configureer onder het tabblad **Moderatie van gebruiker** de moderatie van opmerkingen als opmerkingen zijn toegestaan:
+Onder de **Moderatie gebruiker** tab, configureer de moderatie van opmerkingen als opmerkingen zijn toegestaan:
 
 * **Pre-moderatie**
 
@@ -154,11 +153,11 @@ Configureer onder het tabblad **Moderatie van gebruiker** de moderatie van opmer
 
 * **Moderniseringsdrempel**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd door bezoekers voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (**1**).
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd door bezoekers voordat moderatoren op de hoogte worden gesteld. Standaard is dit één keer (**1**).
 
 * **Limiet voor markering**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter dan of gelijk zijn aan de **Moderatiedrempel**. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **Moderniseringsdrempel**. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
@@ -168,8 +167,8 @@ Instellen als standaard
 
 ### Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Essentiële elementen bestandsbibliotheek](/help/communities/essentials-file-library.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen bestandsbibliotheek](/help/communities/essentials-file-library.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
+Voor moderatie van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md).

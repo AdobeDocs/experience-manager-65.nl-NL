@@ -83,11 +83,11 @@ Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 
 1. Selecteer in de wizard App Packages maken het weer of u uw app niet wilt uploaden naar de Windows Store en klik vervolgens op **Volgende**.
 
-   ![createAppPackageswizard1](assets/createapppackageswizard1.png)
+   ![createapppackageswizard1](assets/createapppackageswizard1.png)
 
 1. Breng de gewenste wijzigingen aan in de parameters, zoals de versie en uitvoerlocatie van de build van de app.
 
-   ![createAppPackageswizard2](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. Nadat het project is gemaakt, kunt u de app installeren met:
 

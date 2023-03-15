@@ -1,59 +1,58 @@
 ---
 title: Een aangepaste werkbalkactie maken
-seo-title: Een aangepaste werkbalkactie maken
+seo-title: Creating a custom toolbar action
 description: Formulierontwikkelaars kunnen aangepaste werkbalkacties maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
-seo-description: Formulierontwikkelaars kunnen aangepaste werkbalkacties maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
+seo-description: Form developers can create custom toolbar actions for adaptive forms in AEM Forms. Using custom actions form authors can provide more workflows and options to their end users.
 uuid: cd785cfb-e1bb-4158-be9b-d99e04eccc02
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 4beca23f-dbb0-4e56-8047-93e4f1775418
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 17f7f0e1-09d8-45cd-a4f6-0846bdb079b6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
-
 
 # Een aangepaste werkbalkactie maken{#creating-a-custom-toolbar-action}
 
 ## Vereisten {#prerequisite}
 
-Voordat u een aangepaste werkbalkactie maakt, moet u bekend zijn met [Client Side Libraries](/help/sites-developing/clientlibs.md) en [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+Voordat u een aangepaste werkbalkactie maakt, moet u [Clientzijbibliotheken gebruiken](/help/sites-developing/clientlibs.md) en [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Wat is een handeling {#what-is-an-action-br}
+## Wat is een handeling? {#what-is-an-action-br}
 
 Een adaptief formulier biedt een werkbalk waarmee een auteur van een formulier een set opties kan configureren. Deze opties worden gedefinieerd als handelingen voor het aangepaste formulier. Klik op de knop Bewerken op de werkbalk voor het deelvenster om de acties in te stellen die worden ondersteund door adaptieve formulieren.
 
 ![Standaardwerkbalkhandelingen](assets/default_toolbar_actions.png)
 
-Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een handeling toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
+Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een actie toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
 
-## Stappen om een aangepaste handeling in een adaptieve vorm te maken {#steps}
+## Stappen voor het maken van een aangepaste handeling in een adaptieve vorm {#steps}
 
-Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalkactie illustreren. Zo kunt u een knop maken waarmee eindgebruikers alle aangepaste formuliervelden kunnen bekijken voordat ze een ingevuld formulier indienen.
+Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalkactie illustreren door een knop te maken waarmee eindgebruikers alle adaptieve formuliervelden kunnen bekijken voordat ze een ingevuld formulier indienen.
 
-1. Alle standaardacties die door adaptieve formulieren worden ondersteund, bevinden zich in de map `/libs/fd/af/components/actions`. Kopieer in CRXDE de `fileattachmentlisting` knoop van `/libs/fd/af/components/actions/fileattachmentlisting` aan `/apps/customaction`.
+1. Alle standaardacties die door adaptieve formulieren worden ondersteund, zijn aanwezig in `/libs/fd/af/components/actions` map. Kopieer in CRXDE de `fileattachmentlisting` knooppunt van `/libs/fd/af/components/actions/fileattachmentlisting` tot `/apps/customaction`.
 
-1. Nadat het knooppunt naar de map `apps/customaction` is gekopieerd, wijzigt u de naam van het knooppunt in `reviewbeforesubmit`. Wijzig ook de eigenschappen `jcr:title` en `jcr:description` van het knooppunt.
+1. Na het kopiëren van het knooppunt naar `apps/customaction` map, naam van knooppunt wijzigen in `reviewbeforesubmit`. Wijzig ook de `jcr:title` en `jcr:description` eigenschappen van het knooppunt.
 
-   De eigenschap `jcr:title` bevat de naam van de handeling die wordt weergegeven in het werkbalkdialoogvenster. De eigenschap `jcr:description` bevat meer informatie die wordt weergegeven wanneer een gebruiker de aanwijzer op de handeling plaatst.
+   De `jcr:title` bevat de naam van de handeling die wordt weergegeven in het werkbalkdialoogvenster. De `jcr:description` eigenschap bevat meer informatie die wordt weergegeven wanneer een gebruiker de aanwijzer boven de handeling plaatst.
 
    ![Hiërarchie van knooppunten voor aanpassing werkbalk](assets/action3.png)
 
-1. Selecteer `cq:template` knoop in `reviewbeforesubmit` knoop. Zorg ervoor dat de waarde van `guideNodeClass` eigenschap `guideButton` is en wijzig `jcr:title` eigenschap dienovereenkomstig.
-1. Wijzig de eigenschap type in het knooppunt `cq:Template`. In het huidige voorbeeld wijzigt u de eigenschap type in button.
+1. Selecteren `cq:template` node in `reviewbeforesubmit` knooppunt. Zorg ervoor dat de waarde van `guideNodeClass` eigenschap is `guideButton` en wijzigen `jcr:title` eigenschap dienovereenkomstig.
+1. Wijzig de eigenschap type in het dialoogvenster `cq:Template` knooppunt. In het huidige voorbeeld wijzigt u de eigenschap type in button.
 
-   De typewaarde wordt toegevoegd als CSS klasse in geproduceerde HTML voor de component. Gebruikers kunnen die CSS-klasse gebruiken om hun handelingen op te maken. De standaardstijl voor zowel mobiele als desktopapparaten is beschikbaar voor het verzenden, verzenden, opnieuw instellen en opslaan van tekstwaarden.
+   De typewaarde wordt toegevoegd als CSS klasse in de geproduceerde HTML voor de component. Gebruikers kunnen die CSS-klasse gebruiken om hun handelingen op te maken. De standaardstijl voor zowel mobiele als desktopapparaten is beschikbaar voor het verzenden, verzenden, opnieuw instellen en opslaan van tekstwaarden.
 
 1. Selecteer de aangepaste handeling in het dialoogvenster van de werkbalk voor het bewerken van het aangepaste formulier. De knop Revisie wordt weergegeven op de werkbalk voor het deelvenster.
 
-   ![Aangepaste actie is beschikbaar op de ](assets/custom_action_available_in_toolbar.png) ![werkbalkDe aangepaste werkbalkactie weergeven](assets/action7.png)
+   ![Aangepaste actie is beschikbaar op de werkbalk](assets/custom_action_available_in_toolbar.png) ![De aangepaste werkbalkactie weergeven](assets/action7.png)
 
-1. Om functionaliteit aan de knoop van het Overzicht te verstrekken, voeg sommige code JavaScript en CSS en server-zijcode in het init.jsp- dossier toe, aanwezig binnen `reviewbeforesubmit` knoop.
+1. Om functionaliteit aan de knoop van het Overzicht te verstrekken, voeg sommige code JavaScript en CSS en server-zijcode in het init.jsp- dossier, aanwezig binnen toe `reviewbeforesubmit` knooppunt.
 
    Voeg de volgende code toe in `init.jsp`.
 
@@ -113,7 +112,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
    </div><!-- /.modal -->
    ```
 
-   Voeg de volgende code in het `ReviewBeforeSubmit.js` dossier toe.
+   Voeg de volgende code toe in de `ReviewBeforeSubmit.js` bestand.
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -148,7 +147,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
    });
    ```
 
-   Voeg de volgende code aan `ReviewBeforeSubmit.css` dossier toe.
+   De volgende code toevoegen aan `ReviewBeforeSubmit.css` bestand.
 
    ```css
    .modal-list .reviewlabel {
@@ -181,7 +180,7 @@ Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalk
 
    >[!NOTE]
    >
-   >De bibliotheek `GuideBridge` is niet geladen in de ontwerpmodus. Deze aangepaste handeling werkt dus niet in de ontwerpmodus.
+   >De `GuideBridge` bibliotheek wordt niet geladen in ontwerpmodus. Deze aangepaste handeling werkt dus niet in de ontwerpmodus.
 
    ![Demonstratie van de actie van de aangepaste revisieknop](assets/action9.png)
 

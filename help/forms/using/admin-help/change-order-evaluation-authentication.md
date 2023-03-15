@@ -1,22 +1,21 @@
 ---
 title: De volgorde van de evaluatie voor verificatie wijzigen
-seo-title: De volgorde van de evaluatie voor verificatie wijzigen
+seo-title: Change the order of evaluation for authentication
 description: U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren.
-seo-description: U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren.
+seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
-
 
 # De volgorde van de evaluatie voor verificatie wijzigen {#change-the-order-of-evaluation-for-authentication}
 
@@ -44,8 +43,7 @@ Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijz
     </node>
    ```
 
-   Bewerk in `<entry key="order" value="3" />` de waarde voor elk knooppunt om de volgorde van de verificatiebeoordeling in te stellen.
+   In `<entry key="order" value="3" />`, geef de waarde voor elke knoop uit om de orde van de authentificatieevaluatie te plaatsen.
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.
-

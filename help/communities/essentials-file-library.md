@@ -1,28 +1,27 @@
 ---
 title: Essentiële elementen bestandsbibliotheek
-seo-title: Essentiële elementen bestandsbibliotheek
+seo-title: File Library Essentials
 description: Werken met de bestandsbibliotheekfunctie
-seo-description: Werken met de bestandsbibliotheekfunctie
+seo-description: Working with the file library feature
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
-
 
 # Essentiële elementen bestandsbibliotheek {#file-library-essentials}
 
 Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibliotheekfunctie.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +35,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.ckeditor<br /> cq.social.hbs.stem<br /> cq.social.hbs.filelibrary</td>
+   <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -48,7 +47,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td>
-   <td>Zie <a href="file-library.md">Bestandsbibliotheekfunctie</a></td>
+   <td>Zie <a href="file-library.md">Functie bestandsbibliotheek</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,23 +62,22 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Bestandsbibliotheekfunctie {#file-library-function}
+### Functie bestandsbibliotheek {#file-library-function}
 
-Een community-sitestructuur die de functie [File Library](functions.md#file-library-function) bevat, bevat een geconfigureerde `file library`-component.
+Een community-sitestructuur die de [File Library, functie](functions.md#file-library-function)bevat een configuratie `file library` component.
 
 ### Opmerkingen benaderen die zijn gepost voor bestandsbibliotheken (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - introductie en overzicht van het gebruik van opslagruimten.
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
+* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de repository.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes.
-
+* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.

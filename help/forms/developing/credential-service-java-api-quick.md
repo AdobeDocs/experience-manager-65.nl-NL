@@ -1,6 +1,6 @@
 ---
 title: Credential Service Java API QuickStart (SOAP)
-seo-title: Credential Service Java API QuickStart (SOAP)
+seo-title: Credential Service Java API QuickStart(SOAP)
 description: Credential Service Java API QuickStart (SOAP)
 uuid: a00eabfa-3a52-41dd-bcba-c60d00394384
 contentOwner: admin
@@ -9,16 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
-
-# Referentieservice Java API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) van Credential Service {#credential-service-java-api-quickstart-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de Credential-service.
 
@@ -38,7 +37,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Referenties importeren met de Java API {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van een bestand met de naam *cred.p12*. De aliaswaarde die wordt gebruikt om de referentie te importeren, is `Secure`. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van een bestand met de naam *cred.p12*. De aliaswaarde die wordt gebruikt voor het importeren van de referentie is `Secure`. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -137,9 +136,9 @@ In het volgende codevoorbeeld wordt een referentie geïmporteerd op basis van ee
  
 ```
 
-## Snel starten (SOAP-modus): Bevoegdheden verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## Snel starten (SOAP-modus): Referenties verwijderen met de Java API {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een aliaswaarde *secure*. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
+In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een aliaswaarde *beveiligen*. (Zie [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 
 ```java
  /*
@@ -229,4 +228,3 @@ In het volgende codevoorbeeld wordt een referentie verwijderd op basis van een a
  }
  
 ```
-

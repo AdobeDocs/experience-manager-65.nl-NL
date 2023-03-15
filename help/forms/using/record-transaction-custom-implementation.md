@@ -1,31 +1,30 @@
 ---
 title: Een transactie opnemen voor aangepaste implementaties
-seo-title: Een transactie opnemen voor aangepaste implementaties
+seo-title: Record a transaction for custom implementations
 description: Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
-seo-description: Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
+seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
-
 
 # Een transactie opnemen voor aangepaste implementaties {#record-a-transaction-for-custom-implementations}
 
 Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 
-U kunt een aangepaste code gebruiken om een PDF-formulier te verzenden, om een voorbeeld-URL voor de gebruikersinterface van de agent te verzenden naar eindgebruikers voor een interactieve communicatie of om een formulier te verzenden met behulp van aangepaste methoden in plaats van verzendmethoden die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms biedt een API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen op te nemen als transacties.
+U kunt een aangepaste code gebruiken om een PDF-formulier te verzenden, om de gebruikersinterface van de agent naar eindgebruikers te sturen voor een voorvertoning van een interactieve communicatie of om een formulier te verzenden met behulp van aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms beschikt over een API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen op te nemen als transacties.
 
-Om een transactie te registreren, schrijf [standaard sling servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
+Om een transactie op te nemen, schrijf [standaardslingerservlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) en roep het servlet van een cliënt aan om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
 
-## Voorbeeld van code {#sample-server-sided-code} op de server
+## Voorbeeld van code op de server {#sample-server-sided-code}
 
 U kunt de onderstaande voorbeeldcode gebruiken om de API TransactionRecorder uit te voeren vanuit een JAVA-klasse met behulp van een aangepaste OSGi-bundel.
 
@@ -73,9 +72,9 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 }
 ```
 
-## Voorbeeld van code {#sample-client-side-code} op de client
+## Voorbeeld van code aan clientzijde {#sample-client-side-code}
 
-U kunt de onderstaande voorbeeldcode gebruiken om de servlet aan te roepen die de `TransactionRecorder`API heeft.
+U kunt de onderstaande voorbeeldcode gebruiken om de servlet aan te roepen die de `TransactionRecorder`API.
 
 ```javascript
 $.ajax({
@@ -96,4 +95,3 @@ $.ajax({
 * [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
 * [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transactierapporten Billable API&#39;s](/help/forms/using/transaction-reports-billable-apis.md)
-

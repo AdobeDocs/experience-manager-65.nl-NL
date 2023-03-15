@@ -1,15 +1,15 @@
 ---
-title: AEM Inhoud en Handel
+title: AEM Content en Commerce
 description: Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met onze nuttige artikelen over integratie en hoe te beginnen te gebruiken AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 source-git-commit: 3ac32e5a2a1b2b266e2fc9f4ba8c7393a0566ff4
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 9%
+ht-degree: 16%
 
 ---
 
-# AEM Inhoud en Handel {#commerce-guide}
+# AEM Content en Commerce {#commerce-guide}
 
 Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met onze nuttige artikelen over integratie en hoe te beginnen te gebruiken AEM Storefront.
 
@@ -30,8 +30,8 @@ Begrijp hoe te om AEM Inhoud en Handel te gebruiken en te beheren, met onze nutt
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

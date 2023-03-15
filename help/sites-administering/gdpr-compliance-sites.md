@@ -25,7 +25,7 @@ ht-degree: 0%
 
 De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018.
 
-AEM Sites is klaar om klanten te helpen bij het nakomen van hun GDPR-verplichtingen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
+AEM Sites is klaar om klanten te helpen hun verplichtingen op het gebied van GDPR-naleving na te komen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
 Zie voor meer informatie [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 

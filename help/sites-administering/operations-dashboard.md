@@ -335,7 +335,7 @@ U kunt de **Periode** met de [OSGi-configuratie](/help/sites-deploying/configuri
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de bewakingsserver.
+1. Stel Nagios in en installeer deze op de controleserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]

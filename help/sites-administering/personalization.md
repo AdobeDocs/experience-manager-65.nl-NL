@@ -80,7 +80,7 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 * Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name wat betreft het weergeven van advertenties.
 
-### Sterke punten van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
+### Sterkte van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
 
 De volgende redenen waarom personalisatie moet worden gebruikt:
 

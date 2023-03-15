@@ -1,14 +1,15 @@
 ---
-title: Aan de slag met AEM headless
+title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met AEM headless {#getting-started}
+# Aan de slag met AEM Headless {#getting-started}
 
 In dit deel van het [AEM Headless Developer Journey,](overview.md) Meer informatie over wat nodig is om uw eigen project met AEM Headless te starten.
 
@@ -96,7 +97,7 @@ Laten we ervan uitgaan dat uw basisvereiste minimaal is om inhoud te leveren van
 
 #### Niveau 1: Integratie van inhoudsfragmenten - traditioneel headless-model {#level-1}
 
-Dit integratieniveau is het traditionele model zonder kop en stelt uw inhoudsauteurs in staat om inhoud in AEM te creëren en het aan om het even welk aantal externe diensten te leveren gebruikend GraphQL of om hen van externe diensten uit te geven gebruikend de activa API. In AEM is geen codering vereist.
+Dit integratieniveau is het traditionele model zonder kop en stelt de auteurs van uw inhoud in staat inhoud in AEM te maken en deze zonder dralen te leveren aan een aantal externe services met behulp van GraphQL of deze te bewerken van externe services met behulp van de API voor middelen. In AEM is geen codering vereist.
 
 In dit model wordt AEM alleen gebruikt voor het maken en serveren van de inhoud met behulp van AEM Content Fragments. Rendering en interactie met de inhoud worden gedelegeerd aan de verbruikende externe toepassing, vaak een toepassing van één pagina (SPA).
 
@@ -219,11 +220,11 @@ Een handige methode bij het definiëren van modellen van inhoudsfragmenten is he
 
 Omdat de makers van de inhoud voortdurend met de modellen werken terwijl ze nieuwe inhoud maken, kunnen ze de resulterende digitale ervaring visualiseren door de modellen op de UX uit te lijnen. Als u deze uitlijning verder uitlijnt, kunt u pictogrammen toewijzen aan de modellen van inhoudsfragmenten die het UX-element vertegenwoordigen, zodat de auteurs op intuïtieve wijze het juiste model kunnen selecteren op basis van visuele aanwijzingen.
 
-#### Ontwikkelaar {#developer}
+#### Developer {#developer}
 
 Ontwikkelaars zijn verantwoordelijk voor het samenvoegen van de inhoud die wordt gemaakt zonder enig AEM voor de consument van die inhoud. Dit kan vaak een toepassing van één pagina (SPA), een progressieve webapp (PWA), een webshop of een andere service buiten AEM zijn.
 
-GraphQL fungeert als de &quot;lijm&quot; tussen AEM en de consumenten van inhoud zonder kop. GraphQL is de taal die voor de noodzakelijke inhoud AEM vragen.
+GraphQL fungeert als de &quot;lijm&quot; tussen AEM en de consument van inhoud zonder kop. GraphQL is de taal die AEM zoekt naar de benodigde inhoud.
 
 De ontwikkelaars zouden een paar basisaanbevelingen in mening moeten houden aangezien zij hun vragen plannen:
 
@@ -231,7 +232,7 @@ De ontwikkelaars zouden een paar basisaanbevelingen in mening moeten houden aang
    * [Inhoudsauteurs hebben volledige controle over de hiërarchie van inhoudsfragmenten](#content-hierarchy) en kan wijzigingen aanbrengen die een dergelijke query zouden onderbreken.
    * De vragen zouden in plaats daarvan voor de modelverwijzingen van het inhoudsfragment met dynamische vraagparameters moeten kiezen om de resultaten te filtreren om de gewenste nuttige lading te produceren.
 * Voor beste vraagprestaties, gebruik altijd voortgeduurde vragen in AEM. Deze worden later op de reis besproken.
-* GraphQL is declaratief na het motto &quot;Vraag precies wat u nodig hebt, en krijg precies dat.&quot; Dit betekent dat wanneer het creëren van vragen GraphQL altijd vermijdt `select *`-type vragen die u in een relationele gegevensbestand zou kunnen creëren.
+* GraphQL is declaratief na het motto &quot;Vraag precies wat u nodig hebt, en krijg precies dat.&quot; Dit betekent dat u bij het maken van GraphQL-query&#39;s altijd `select *`-type vragen die u in een relationele gegevensbestand zou kunnen creëren.
 
 Voor een [een typische implementatie zonder kop met AEM;](#level-1) de ontwikkelaar vereist geen coderingskennis van AEM.
 
@@ -276,8 +277,8 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 
 * [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
-* [Beheer van inhoud zonder kop met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
-* [AEM Hulplijnen WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
+* [Beheer van inhoud zonder koppen met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM is geïmplementeerd. Verificatie via AdobeID is vereist.
+* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit GitHub-project bevat voorbeeldtoepassingen die AEM GraphQL API&#39;s markeren.
 * [Concepten ontwerpen](/help/sites-authoring/author.md) - Technische documentatie voor de ontwerpomgeving van AEM, met inbegrip van details over de ontwerper-publicatieopstelling
 * [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md) - Technische documentatie voor het publiceren van inhoud op AEM
 * [Naamgevingsconventies](/help/sites-developing/naming-conventions.md) - Technische documentatie van beperkingen voor paginanummering in AEM
@@ -285,7 +286,7 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Workflows AEM](/help/sites-authoring/workflows.md) - Technische documentatie over de automatisering van workflows in AEM
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - Technische documentatie voor inhoudsfragmenten.
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
-* [GraphQL - Technische documentatie](https://graphql.org) - De definitie GraphQL (externe koppeling)
+* [GraphQL - Technische documentatie](https://graphql.org) - De GraphQL-definitie (externe koppeling)
 * [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en inhoudsfragmenten te leveren
 * [REST-API voor middelen](/help/assets/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) tot stand te brengen en te wijzigen
 * [Blijvende query&#39;s](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technische documentatie over gepresteerde vragen in AEM

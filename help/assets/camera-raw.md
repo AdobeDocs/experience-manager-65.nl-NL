@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Adobe Camera Raw] ondersteuning voor de verwerking van digitale middelen"'
+title: "[!DNL Adobe Camera Raw] ondersteuning voor de verwerking van digitale middelen"
 description: Leer hoe u kunt inschakelen [!DNL Adobe Camera Raw] ondersteuning in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin

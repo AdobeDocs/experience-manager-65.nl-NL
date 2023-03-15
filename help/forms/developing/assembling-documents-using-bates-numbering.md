@@ -1,8 +1,8 @@
 ---
 title: Documenten samenstellen met gebruik van Bates-nummering
-seo-title: Documenten samenstellen met gebruik van Bates-nummering
-description: 'Gebruik Bates-nummering om PDF-documenten samen te stellen met de API voor Java en Web Service. '
-seo-description: 'Gebruik Bates-nummering om PDF-documenten samen te stellen met de API voor Java en Web Service. '
+seo-title: Assembling Documents Using Bates Numbering
+description: Gebruik Bates-nummering om PDF-documenten samen te stellen met de API voor Java en Web Service.
+seo-description: Use Bates numbering to assemble PDF documents using the Java and Web Service API.
 uuid: 28d5faeb-6915-41a2-b6a0-78d255df024f
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1922'
 ht-degree: 0%
 
 ---
-
 
 # Documenten samenstellen met gebruik van Bates-nummering {#assembling-documents-using-bates-numbering}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt PDF-documenten die unieke pagina-id&#39;s bevatten, samenstellen met Bates-nummering. *Bates-* nummering is een methode voor het toepassen van unieke identificaties op een batch gerelateerde documenten. Aan elke pagina in het document (of elke set documenten) wordt een Bates-nummer toegewezen dat de pagina op unieke wijze identificeert. Bijvoorbeeld, kunnen de productiedocumenten die rekening van materiaalinformatie bevatten en met de productie van een assemblage worden geassocieerd een herkenningsteken bevatten. Een Bates-nummer bevat een opeenvolgend verhoogde numerieke waarde en een optioneel voor- en achtervoegsel. Het voorvoegsel + numeriek + achtervoegsel wordt bedoeld als *bates-patroon*.
+Met Bates-nummering kunt u PDF-documenten samenstellen die unieke pagina-id&#39;s bevatten. *Bates-nummering* is een methode om unieke identificaties toe te passen op een batch gerelateerde documenten. Aan elke pagina in het document (of elke set documenten) wordt een Bates-nummer toegewezen dat de pagina op unieke wijze identificeert. Bijvoorbeeld, kunnen de productiedocumenten die rekening van materiaalinformatie bevatten en met de productie van een assemblage worden geassocieerd een herkenningsteken bevatten. Een Bates-nummer bevat een opeenvolgend verhoogde numerieke waarde en een optioneel voor- en achtervoegsel. Het voorvoegsel + het numerieke + achtervoegsel wordt een *bates-patroon*.
 
 In de volgende afbeelding ziet u een PDF-document dat een unieke id bevat die zich in de koptekst van het document bevindt.
 
@@ -49,30 +48,30 @@ In het kader van deze beschrijving wordt de unieke pagina-id in de koptekst van 
  </DDX>
 ```
 
-Dit DDX-document voegt twee PDF-documenten met de naam *map.pdf* en *direction.pdf* samen tot één PDF-document. Het resulterende PDF-document bevat een koptekst die bestaat uit een unieke pagina-id. Het document in de bovenstaande afbeelding toont bijvoorbeeld 000016.
+In dit DDX-document worden twee PDF-documenten samengevoegd met de naam *map.pdf* en *direction.pdf* in één PDF-document. Het resulterende PDF-document bevat een koptekst die bestaat uit een unieke pagina-id. Het document in de bovenstaande afbeelding toont bijvoorbeeld 000016.
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, is het raadzaam om vertrouwd te zijn met het samenstellen van PDF-documenten met de Assembler-service. In deze sectie worden de concepten niet besproken, zoals het maken van een verzamelingsobject dat invoerdocumenten bevat of het extraheren van de resultaten van het geretourneerde verzamelingsobject. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Voordat u deze sectie leest, is het raadzaam bekend te zijn met het samenstellen van PDF-documenten met de Assembler-service. In deze sectie worden de concepten niet besproken, zoals het maken van een verzamelingsobject dat invoerdocumenten bevat of het extraheren van de resultaten van het geretourneerde verzamelingsobject. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
 U kunt als volgt een PDF-document samenstellen dat een unieke pagina-id (Bates-nummering) bevat:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
 1. Verwijs naar een bestaand DDX-document.
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 1. Stel de oorspronkelijke waarde voor Bates-nummer in.
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 1. Extraheer de resultaten.
 
 **Projectbestanden opnemen**
@@ -87,7 +86,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van alle AEM Forms JAR-bestanden.
+Als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de locatie van alle AEM Forms JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een PDF Assembler-client maken**
 
@@ -95,27 +94,27 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moe
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Als u een PDF-document wilt samenstellen dat unieke pagina-id&#39;s bevat, moet het DDX-document het element `BatesNumber` bevatten.
+Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Als u een PDF-document wilt samenstellen dat unieke pagina-id&#39;s bevat, moet het DDX-document het `BatesNumber` element.
 
-**Referentie-invoer-PDF-documenten**
+**Referentie-invoer PDF-documenten**
 
-Er moet worden verwezen naar invoer-PDF-documenten om een PDF-document samen te stellen. Er moet bijvoorbeeld naar de documenten map.pdf en direction.pdf worden verwezen om deze PDF-documenten samen te voegen tot één PDF-document.
+Er moet worden verwezen naar invoerdocumenten voor PDF om een PDF-document samen te stellen. Er moet bijvoorbeeld naar de documenten map.pdf en direction.pdf worden verwezen om deze PDF-documenten samen te voegen tot één PDF-document.
 
 **Stel de oorspronkelijke waarde voor het Bates-nummer in**
 
 U kunt de aanvankelijke waarde van Bates aantal plaatsen om aan uw bedrijfsvereisten te voldoen. Stel bijvoorbeeld dat het een vereiste is om de beginwaarde in te stellen op 000100. Als u de beginwaarde niet instelt, is de waarde van de eerste pagina 000000.
 
-**PDF-invoerdocumenten samenstellen**
+**De invoerdocumenten PDF samenstellen**
 
-Nadat u de Assembler-serviceclient hebt gemaakt, verwijst u naar het DDX-document met `BatesNumber`-elementgegevens, verwijst u naar een invoer-PDF-document en stelt u runtime-opties in. Hiervoor activeert u de bewerking `invokeDDX`, die ertoe leidt dat de Assembler-service een PDF-document samenstelt dat unieke pagina-id&#39;s bevat.
+Nadat u de de dienstcliënt van de Assembler creeert, verwijs het DX- document dat bevat `BatesNumber` elementgegevens, verwijzingen naar een invoerdocument en PDF-uitvoeringsopties instellen, kunt u de `invokeDDX` bewerking die resulteert in het samenstellen van een PDF-document dat unieke pagina-id&#39;s bevat door de Assembler-service.
 
 **De resultaten extraheren**
 
-De dienst van de Assembler keert een inzamelingsvoorwerp terug dat de baanresultaten bevat. U kunt het resulterende PDF-document en eventuele uitzonderingen extraheren. In dit geval bevindt een versleuteld PDF-document zich in het verzamelingsobject.
+De dienst van de Assembler keert een inzamelingsvoorwerp terug dat de baanresultaten bevat. U kunt het resulterende PDF-document extraheren en eventuele uitzonderingen die worden gegenereerd. In dit geval bevindt een versleuteld PDF-document zich in het verzamelingsobject.
 
 >[!NOTE]
 >
->Een inzamelingsvoorwerp is teruggekeerd als u `invokeDDX` verrichting aanhaalt. Deze bewerking wordt gebruikt wanneer twee of meer invoer-PDF-documenten worden doorgegeven aan de Assembler-service. Als u echter slechts één invoer-PDF-document doorgeeft aan de Assembler-service, moet u de bewerking `invokeOneDocument` aanroepen. Zie [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md) voor informatie over het gebruik van deze bewerking.
+>Er wordt een verzamelingsobject geretourneerd als u het dialoogvenster `invokeDDX` bewerking. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van de PDF doorgeeft aan de Assembler-service. Als u echter slechts één invoerdocument van de PDF doorgeeft aan de Assembler-service, moet u de instelling `invokeOneDocument` bewerking. Voor informatie over het gebruik van deze bewerking raadpleegt u [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md).
 
 **Zie ook**
 
@@ -127,7 +126,7 @@ De dienst van de Assembler keert een inzamelingsvoorwerp terug dat de baanresult
 
 ## Documenten samenstellen met Bates-nummering met de Java API {#assemble-documents-with-bates-numbering-using-the-java-api}
 
-U kunt een PDF-document samenstellen dat gebruikmaakt van unieke pagina-id&#39;s (Bates-nummering) met de API (Java) van de Assembler Service:
+U kunt een PDF-document samenstellen dat unieke pagina-id&#39;s (Bates-nummering) gebruikt met de API (Java) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
@@ -135,50 +134,50 @@ U kunt een PDF-document samenstellen dat gebruikmaakt van unieke pagina-id&#39;s
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 
-   * Maak een `java.util.Map`-object dat wordt gebruikt om invoer-PDF-documenten op te slaan met behulp van een `HashMap`-constructor.
-   * Maak voor elk invoer-PDF-document een `java.io.FileInputStream`-object door de constructor ervan te gebruiken en de locatie van het invoer-PDF-document door te geven. Geef dan de locatie van een onbeveiligd PDF-document door.
-   * Maak voor elk invoer-PDF-document een `com.adobe.idp.Document`-object en geef het `java.io.FileInputStream`-object door dat het PDF-document bevat.
-   * Voeg een item aan het object `java.util.Map` toe door de methode `put` ervan aan te roepen en de volgende argumenten door te geven:
+   * Een `java.util.Map` object dat wordt gebruikt voor het opslaan van PDF-invoerdocumenten met behulp van een `HashMap` constructor.
+   * Maak voor elk invoerdocument een PDF `java.io.FileInputStream` object door de constructor ervan te gebruiken en de locatie van het invoerdocument PDF door te geven. In dit geval geeft u de locatie van een onbeveiligd PDF-document door.
+   * Maak voor elk invoerdocument een PDF `com.adobe.idp.Document` en geeft het `java.io.FileInputStream` object dat het PDF-document bevat.
+   * Een item toevoegen aan de `java.util.Map` object aanroepen `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document. De naam van het PDF-bronbestand dat is opgegeven in het DDX-document dat in deze sectie wordt geïntroduceerd, is bijvoorbeeld Loan.pdf.
-      * Een `com.adobe.idp.Document`-object dat het onbeveiligde PDF-document bevat.
+      * A `com.adobe.idp.Document` object dat het onbeveiligde PDF-document bevat.
 
 1. Stel de oorspronkelijke waarde voor Bates-nummer in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel het eerste Bates-nummer in door het `AssemblerOptionSpec`-object `setFirstBatesNumber` aan te roepen en een numerieke waarde door te geven die de oorspronkelijke waarde opgeeft.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel het aanvankelijke Bates-nummer in door het `AssemblerOptionSpec` object `setFirstBatesNumber` en door een numerieke waarde te geven die de beginwaarde opgeeft.
 
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het DDX-document vertegenwoordigt.
-   * Een `java.util.Map`-object dat het invoer-onbeveiligde PDF-bestand bevat.
-   * Een object `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` dat de runtime-opties opgeeft, inclusief het standaardniveau voor lettertypen en taaklogbestanden.
+   * A `com.adobe.idp.Document` object dat het DDX-document vertegenwoordigt.
+   * A `java.util.Map` -object dat het onbeveiligde invoerbestand PDF bevat.
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` -object dat de runtime-opties opgeeft, inclusief het standaardniveau voor fonts en taaklogbestanden.
 
-   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult`-object dat een met wachtwoord gecodeerd PDF-document bevat.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat een met wachtwoord gecodeerd PDF-document bevat.
 
 1. Extraheer de resultaten.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Roep de methode `AssemblerResult` van het object `getDocuments` aan. Deze handeling retourneert een `java.util.Map`-object.
-   * Doorloop het object `java.util.Map` totdat u het object `com.adobe.idp.Document` hebt gevonden.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het PDF-document uit te pakken.
+   * De `AssemblerResult` object `getDocuments` methode. Deze handeling retourneert een `java.util.Map` object.
+   * Doorlopen `java.util.Map` object tot u het object hebt gevonden `com.adobe.idp.Document` object.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-document te extraheren.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een PDF-document samenstellen met Bates-nummering met behulp van de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Snel starten (SOAP-modus): Een PDF-document samenstellen met een Bates-nummering met behulp van de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -190,68 +189,68 @@ U kunt een PDF-document samenstellen dat gebruikmaakt van unieke pagina-id&#39;s
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 
-   * Maak voor elk invoer-PDF-document een `BLOB`-object met behulp van de constructor. Met het object `BLOB` wordt het invoer-PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het invoer-PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Dit verzamelingsobject wordt gebruikt om de invoer-PDF-documenten op te slaan.
-   * Maak voor elk invoer-PDF-document een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Als bijvoorbeeld twee invoer-PDF-documenten worden gebruikt, maakt u twee `MyMapOf_xsd_string_To_xsd_anyType_Item`-objecten.
-   * Wijs een tekenreekswaarde toe die de toetsnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoer-PDF-document.)
-   * Wijs het `BLOB`-object toe dat het PDF-document opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object. (Voer deze taak uit voor elk invoer-PDF-document.)
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` van het object `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door. (Voer deze taak uit voor elk invoer-PDF-document.)
+   * Maak voor elk invoerdocument een PDF `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het invoerdocument PDF op te slaan.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het invoerdocument en de modus waarin het PDF-bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om de invoerdocumenten PDF op te slaan.
+   * Maak voor elk invoerdocument een PDF `MyMapOf_xsd_string_To_xsd_anyType_Item` object. Als bijvoorbeeld twee invoerdocumenten PDF worden gebruikt, maakt u twee invoerdocumenten `MyMapOf_xsd_string_To_xsd_anyType_Item` objecten.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerdocument van de PDF.)
+   * Wijs het `BLOB` object waarin het PDF-document is opgeslagen in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld. (Voer deze taak uit voor elk invoerdocument van de PDF.)
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object. (Voer deze taak uit voor elk invoerdocument van de PDF.)
 
 1. Stel de oorspronkelijke waarde voor Bates-nummer in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel het eerste Bates-nummer in door een numerieke waarde toe te wijzen aan het `firstBatesNumber`-gegevenslid dat tot het `AssemblerOptionSpec`-object behoort.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel het initiële Bates-nummer in door een numerieke waarde toe te wijzen aan de `firstBatesNumber` gegevenslid dat tot `AssemblerOptionSpec` object.
 
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 
-   Roep de methode `invoke` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invoke` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt.
-   * Het `MyMapOf_xsd_string_To_xsd_anyType`-object dat de invoer-PDF-documenten bevat. De sleutels moeten overeenkomen met de namen van de PDF-bronbestanden en de waarden ervan moeten de `BLOB`-objecten zijn die overeenkomen met die bestanden.
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft.
+   * A `BLOB` object dat het DDX-document vertegenwoordigt.
+   * De `MyMapOf_xsd_string_To_xsd_anyType` -object dat de invoerdocumenten PDF bevat. Zijn sleutels moeten de namen van de PDF brondossiers aanpassen, en zijn waarden moeten zijn `BLOB` objecten die overeenkomen met die bestanden.
+   * An `AssemblerOptionSpec` -object dat uitvoeringsopties opgeeft.
 
-   De methode `invoke` retourneert een `AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invoke` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Extraheer de resultaten.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de PDF-documenten van het resultaat bevat.
-   * Doorloop het object `Map` totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet `value` van dat serielid aan `BLOB`.
-   * Pak de binaire gegevens die het PDF-document vertegenwoordigen uit door de eigenschap `MTOM` van het object `BLOB` te openen. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
+   * Doorlopen `Map` -object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 
 **Zie ook**
 

@@ -1,17 +1,15 @@
 ---
 title: Vorm uit de montages van het Bureau
-seo-title: Vorm uit de montages van het Bureau
+seo-title: Configure Out of Office settings
 description: RConfiguring uit de montages van het Bureau
-seo-description: Vorm uit de montages van het Bureau
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+seo-description: Configure Out of Office settings
+exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '766'
 ht-degree: 0%
 
 ---
-
-
 
 # Vorm uit Bureau het plaatsen {#configure-out-of-office-settings}
 
@@ -32,21 +30,21 @@ U kunt item-delegatie scheiden op basis van de workflowmodellen. Bijvoorbeeld, k
 >* Wanneer er een lus in taak is, blijven de taken bij de originele gebruiker. Bijvoorbeeld, wanneer Gebruiker A punten aan Gebruiker B van de Gebruiker B afgevaardigden aan Gebruiker C delegeert, delegeert de Gebruiker C aan Gebruiker D, en de afgevaardigden van Gebruiker D aan Gebruiker B, een lijn in gecreeerd. In een dergelijke situatie blijft het item bij de oorspronkelijke gebruiker. Gebruiker A is de oorspronkelijke gebruiker in het bovenstaande voorbeeld.
 
 
-## De instelling Buiten Office inschakelen voor uw account {#enable-out-of-office}
+## De instelling Buiten Office voor uw account inschakelen {#enable-out-of-office}
 
 Voer de volgende stappen uit om de instelling Buiten-Office voor uw account in te schakelen en uw Inbox-items te delegeren aan een andere gebruiker:
 
-1. Meld u aan bij uw AEM. Tik op het pictogram ![Inbox](assets/bell.svg) en tik **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
-1. Tik op het pictogram ![Weergavekiezer](assets/viewlist.svg) of ![Weergavekiezer](assets/calendar.svg) naast de knop **[!UICONTROL Create]** en tik **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
-1. Open het tabblad **[!UICONTROL Out of Office]** in het dialoogvenster met instellingen.
-1. Tik op de knop **[!UICONTROL Enable/Disable]** om de instelling Buiten Office in te schakelen.
-1. Geef **[!UICONTROL Start Time]** en **[!UICONTROL End Time]** op voor de instelling. De items worden alleen gedelegeerd tijdens de opgegeven periode. Laat het veld **[!UICONTROL End Time]** leeg om items voor onbepaalde tijd te delegeren.
-1. Schakel het selectievakje **[!UICONTROL Forward my items during this period]** in. Als je de optie niet selecteert en geen ontvanger opgeeft, worden je objecten niet doorgestuurd naar een gebruiker. Hoewel u weg bent en het plaatsen wordt toegelaten, blijven de punten in uw Inbox.
-1. Tik op **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het veld **[!UICONTROL Assignee]** om de items te delegeren. Geef **[!UICONTROL Workflow Model]** op om te delegeren aan de opgegeven gebruiker. U kunt meerdere workflowmodellen selecteren.
+1. Meld u aan bij uw AEM. Tik op de knop ![Inbox](assets/bell.svg) pictogram en tik **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
+1. Tik op de knop ![Kiezer weergeven](assets/viewlist.svg) of ![Kiezer weergeven](assets/calendar.svg) pictogram naast **[!UICONTROL Create]** knop en tik **[!UICONTROL Settings]**. Het dialoogvenster Instellingen wordt weergegeven.
+1. Open de **[!UICONTROL Out of Office]** in het dialoogvenster Instellingen.
+1. Tik op de knop **[!UICONTROL Enable/Disable]** knoop om uit Bureau het plaatsen toe te laten.
+1. Geef de **[!UICONTROL Start Time]**  en **[!UICONTROL End Time]** voor de instelling. De items worden alleen gedelegeerd tijdens de opgegeven periode. Laat de **[!UICONTROL End Time]** veld leeg om items voor onbepaalde tijd te delegeren.
+1. Selecteer **[!UICONTROL Forward my items during this period]** selectievakje. Als je de optie niet selecteert en geen ontvanger opgeeft, worden je objecten niet doorgestuurd naar een gebruiker. Hoewel u weg bent en het plaatsen wordt toegelaten, blijven de punten in uw Inbox.
+1. Tik op **[!UICONTROL Add Assignee]**. Geef een gebruiker op in het dialoogvenster **[!UICONTROL Assignee]** veld waarin u de items wilt delegeren. Geef de **[!UICONTROL Workflow Model]** aan afgevaardigde aan de gespecificeerde gebruiker. U kunt meerdere workflowmodellen selecteren.
 
-   Bovendien om alle punten, ongeacht het werkschemamodel, aan een bepaalde gebruiker toe te wijzen, uitgezocht **[!UICONTROL All Workflows]** van de drop-down lijst van het Model van het Werkschema. <br>
+   Als u bovendien alle items, ongeacht het workflowmodel, aan een bepaalde gebruiker wilt toewijzen, selecteert u **[!UICONTROL All Workflows]** in de vervolgkeuzelijst Werkstroommodel. <br>
 
-   Om punten aan een bepaalde gebruiker voor alle werkschemamodellen behalve een paar toe te wijzen, selecteer **[!UICONTROL All Workflows]** van de drop-down lijst van het Model van het Werkschema, tik **[!UICONTROL + Add Exceptions]**, en specificeer de werkschemamodellen om worden verlaten.
+   Als u items wilt toewijzen aan een bepaalde gebruiker voor alle workflowmodellen, behalve een paar, selecteert u **[!UICONTROL All Workflows]** tikken in de vervolgkeuzelijst Werkstroommodel **[!UICONTROL + Add Exceptions]**en geeft u de workflowmodellen op die u wilt uitsluiten.
    <br>
 
    Herhaal de stap om meer toewijzingen toe te voegen. <br>
@@ -62,7 +60,7 @@ Nu, worden de punten die aan u tijdens uit de periode van het Bureau worden toeg
 
 >[!NOTE]
 >
->(Alleen voor Forms-centric workflow-items) Schakel **Toestaan dat een toegewezen persoon kan delegeren met de optie &#39;Buiten-kantoor&#39;-instellingen** van de stap **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden gedelegeerd aan andere gebruikers.
+>(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **Toestaan dat de geadresseerde kan delegeren met behulp van de instellingen &#39;Buiten het Bureau&#39;** de **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden gedelegeerd aan andere gebruikers.
 
 ## Beperkingen {#limitations}
 

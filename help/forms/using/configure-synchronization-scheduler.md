@@ -1,8 +1,8 @@
 ---
 title: De synchronisatieplanner configureren
-seo-title: De synchronisatieplanner configureren
+seo-title: Configuring the synchronization scheduler
 description: Leer hoe u elementen kunt migreren en synchroniseren, synchronisatieplanner kunt configureren en mappen kunt gebruiken om elementen te rangschikken.
-seo-description: Leer hoe u elementen kunt migreren en synchroniseren, synchronisatieplanner kunt configureren en mappen kunt gebruiken om elementen te rangschikken.
+seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
 uuid: b2c89feb-2947-418a-b343-4c01e453602b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Voer de volgende stappen uit om het interval van de synchronisatieplanner te ver
 
 1. Meld u aan bij AEM Configuratiebeheer. De URL van Configuration Manager is `https://'[server]:[port]'/lc/system/console/configMgr`
 
-1. Zoek en open de bundel **FormsManagerConfiguration**.
+1. Zoek en open de **FormsManagerConfiguration** bundel.
 
-1. Geef een nieuwe waarde op voor de optie **Frequentie synchronisatieplanning**.
+1. Geef een nieuwe waarde op voor de **Frequentie synchronisatieplanning** optie.
 
    De eenheid van de frequentie is minuten. Bijvoorbeeld, om de planner te vormen om na elke 60 minuten te lopen, specificeer 60.
 
 ## Elementen synchroniseren {#synchronizing-assets}
 
-Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de elementen handmatig synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
+U kunt de **Elementen synchroniseren vanuit gegevensopslagruimte** om de elementen handmatig te synchroniseren. Voer de volgende stappen uit om de elementen handmatig te synchroniseren:
 
 1. Meld u aan bij AEM Forms. De standaard-URL is `https://'[server]:[port]'/lc/aem/forms/`.
 
@@ -44,7 +44,7 @@ Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de 
 
    **Afbeelding:** *AEM Forms-gebruikersinterface*
 
-1. Klik op het pictogram ![aem6forms_sync](assets/aem6forms_sync.png) op de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klik **Begin** om de synchronisatie in werking te stellen.
+1. Klik op de knop ![aem6forms_sync](assets/aem6forms_sync.png) in de werkbalk. Als u geen elementen hebt bij het laatste geconfigureerde pad, wordt het dialoogvenster weergegeven zoals hieronder. Klikken **Start** om de synchronisatie te starten.
 
    ![Synchronisatie, dialoogvenster](assets/migrate-and-syncronize.png)
 
@@ -54,10 +54,10 @@ Met de optie **Elementen synchroniseren vanuit gegevensopslagruimte** kunt u de 
 
 U kunt nieuwe toepassingen maken in de werkstroomontwerper (LiveCycle Workbench).
 
-Als de nieuwe toepassing en een map op /content/dam/formsanddocuments dezelfde naam hebben, treedt er een fout op &quot;*Er bestaat al een element met dezelfde naam als deze toepassing op het hoofdniveau.*&quot; is geregistreerd.
+Als de nieuwe toepassing en een map in /content/dam/formsanddocuments dezelfde naam hebben, wordt een fout &quot;*Middelen met dezelfde naam als deze toepassing bestaan al op hoofdniveau.*&quot; is geregistreerd.
 
 U lost het conflict op door de naam van de toepassing te wijzigen en de elementen handmatig te synchroniseren.
 
 ![Conflicten in dialoogvenster voor synchronisatie van elementen](assets/sync-conflict.png)
 
-**Afbeelding:** *Conflicten in dialoogvenster voor middelensynchronisatie*
+**Afbeelding:** *Conflicten in dialoogvenster voor synchronisatie van elementen*

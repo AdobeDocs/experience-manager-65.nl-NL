@@ -1,27 +1,26 @@
 ---
 title: Inhoudsservices
-seo-title: Inhoudsservices
+seo-title: Content Services
 description: Inhoudsservices
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
-
-# Content Services{#content-services}
+# Inhoudsservices{#content-services}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -43,7 +42,7 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 >
 >Voordat u aan de slag gaat met Content Services, moet u ervoor zorgen dat de vlag Content Services is ingeschakeld. Als u het maken en beheren van modellen in uw app wilt inschakelen, moet u gegevensmodellen inschakelen in de configuratiegrowser.
 >
->Zie **[Inhoudsservices beheren](/help/mobile/developing-content-services.md)** en de documentatie [Configuratiebrowser](/help/sites-administering/configurations.md) voor meer informatie.
+>Zie **[Inhoudsservices beheren](/help/mobile/developing-content-services.md)** en de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

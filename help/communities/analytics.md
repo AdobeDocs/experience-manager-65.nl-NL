@@ -134,7 +134,6 @@ Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met bet
 >* **`evar1`** doorheen **`evar11`**
 >
 >* **`event1`** doorheen **`event7`**
-
 >
 >**Voordat de site van de community wordt gepubliceerd,** Het is belangrijk om de reeds bestaande afbeelding te herstellen door de AEM variabelen te verplaatsen die automatisch aan de variabelen van de Analyse werden toegewezen toen Analytics voor een communautaire plaats werd toegelaten.
 >
@@ -439,7 +438,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>a)</em></td>
+   <td><em>(a)</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
    <td><em>(d)</em></td>
@@ -455,11 +454,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
+   <td><em>(d)</em></td>
    <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -468,11 +467,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
+   <td><em>(d)</em></td>
    <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -481,11 +480,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
+   <td><em>(d)</em></td>
    <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -494,11 +493,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
+   <td><em>(d)</em></td>
    <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -507,11 +506,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>d)</em></td>
+   <td><em>(d)</em></td>
    <td><em>e)</em></td>
-   <td><em>f)</em></td>
-   <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(f)</em></td>
+   <td><em>(g)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -578,7 +577,6 @@ Zie secties:
 >* **`evar1`** doorheen **`evar11`**
 >
 >* **`event1`** doorheen **`event7`**
-
 >
 >**Voordat de site van de community wordt gepubliceerd,** Het is belangrijk om de reeds bestaande mapping te herstellen en de Gemeenschappen AEM variabelen die automatisch werden toegewezen (toen Analytics voor de communautaire plaats werd toegelaten) te verplaatsen naar andere analytische variabelen. Deze nieuwe toewijzing moet voor alle onderdelen van de Gemeenschappen consistent zijn.
 >

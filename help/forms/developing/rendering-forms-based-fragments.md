@@ -1,8 +1,8 @@
 ---
 title: Forms renderen op basis van fragmenten
-seo-title: Forms renderen op basis van fragmenten
+seo-title: Rendering Forms Based on Fragments
 description: Met de Forms-service kunt u formulieren genereren die zijn gebaseerd op fragmenten die zijn gemaakt met Designer.
-seo-description: Met de Forms-service kunt u formulieren genereren die zijn gebaseerd op fragmenten die zijn gemaakt met Designer.
+seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
 uuid: 9c9a730d-f970-41f8-afed-4e6b6d3d393d
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2209'
 ht-degree: 7%
 
 ---
-
 
 # Forms renderen op basis van fragmenten {#rendering-forms-based-on-fragments}
 
@@ -26,13 +25,13 @@ ht-degree: 7%
 
 ## Forms renderen op basis van fragmenten {#rendering-forms-based-on-fragments-inner}
 
-De Forms-service kan formulieren weergeven die zijn gebaseerd op fragmenten die u met Designer maakt. Een *fragment* is een herbruikbaar onderdeel van een formulier en wordt opgeslagen als een afzonderlijk XDP-bestand dat in meerdere formulierontwerpen kan worden ingevoegd. Een fragment kan bijvoorbeeld een adresblok of juridische tekst bevatten.
+De Forms-service kan formulieren weergeven die zijn gebaseerd op fragmenten die u met Designer maakt. A *fragment* is een herbruikbaar onderdeel van een formulier en wordt opgeslagen als een afzonderlijk XDP-bestand dat in meerdere formulierontwerpen kan worden ingevoegd. Een fragment kan bijvoorbeeld een adresblok of juridische tekst bevatten.
 
-Met fragmenten kunt u het maken en beheren van grote aantallen formulieren vereenvoudigen en versnellen. Wanneer u een nieuw formulier maakt, voegt u een verwijzing in naar het gewenste fragment en het fragment wordt in het formulier weergegeven. De fragmentverwijzing bevat een subformulier dat naar het fysieke XDP-bestand wijst. Zie [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) voor informatie over het maken van formulierontwerpen op basis van fragmenten
+Met fragmenten kunt u het maken en beheren van grote aantallen formulieren vereenvoudigen en versnellen. Wanneer u een nieuw formulier maakt, voegt u een verwijzing in naar het gewenste fragment en het fragment wordt in het formulier weergegeven. De fragmentverwijzing bevat een subformulier dat naar het fysieke XDP-bestand wijst. Voor informatie over het maken van formulierontwerpen op basis van fragmenten raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 Een fragment kan meerdere subformulieren bevatten die zijn ondergebracht in een gekozen subformulierset. De gekozen subformuliersets bepalen de weergave van subformulieren op basis van de gegevensstroom van een gegevensverbinding. U gebruikt voorwaardelijke instructies om te bepalen welk subformulier in de set in het resulterende formulier wordt weergegeven. Elk subformulier in een set kan bijvoorbeeld informatie voor een bepaalde geografische locatie bevatten en het weergegeven subformulier kan worden bepaald op basis van de locatie van de gebruiker.
 
-Een *scriptfragment* bevat herbruikbare JavaScript-functies of waarden die afzonderlijk van een bepaald object worden opgeslagen, zoals een datumparser of een aanroep van een webservice. Deze fragmenten omvatten een enkel scriptobject dat als onderliggend element van variabelen in het palet Hiërarchie voorkomt. Fragmenten kunnen niet worden gemaakt op basis van scripts die eigenschappen zijn van andere objecten, zoals gebeurtenisscripts als valideren, berekenen of initialiseren.
+A *scriptfragment* bevat herbruikbare JavaScript-functies of waarden die afzonderlijk van een bepaald object worden opgeslagen, zoals datumparsering of aanroep van een webservice. Deze fragmenten omvatten een enkel scriptobject dat als onderliggend element van variabelen in het palet Hiërarchie voorkomt. Fragmenten kunnen niet worden gemaakt op basis van scripts die eigenschappen zijn van andere objecten, zoals gebeurtenisscripts als valideren, berekenen of initialiseren.
 
 Hier volgen enkele voordelen van het gebruik van fragmenten:
 
@@ -44,19 +43,19 @@ Hier volgen enkele voordelen van het gebruik van fragmenten:
 
 ### Een formulierontwerp samenstellen dat is samengesteld met fragmenten {#assembling-a-form-design-assembled-using-fragments}
 
-U kunt een formulierontwerp samenstellen om aan de Forms-service door te geven op basis van meerdere fragmenten. Als u meerdere fragmenten wilt samenstellen, gebruikt u de Assembler-service. Zie [PDF-documenten maken met behulp van fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments) voor een voorbeeld van het gebruik van de service Samenstellen om een formulierontwerp te maken dat wordt gebruikt door andere Forms-services (de service Uitvoer). In plaats van de service Uitvoer te gebruiken, kunt u dezelfde workflow uitvoeren met de Forms-service.
+U kunt een formulierontwerp samenstellen om aan de Forms-service door te geven op basis van meerdere fragmenten. Als u meerdere fragmenten wilt samenstellen, gebruikt u de Assembler-service. Als u een voorbeeld wilt zien van het gebruik van de Assemble-service voor het maken van een formulierontwerp dat wordt gebruikt door een andere Forms-service (de Output-service), raadpleegt u [PDF-documenten maken met behulp van fragmenten](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments). In plaats van de service Uitvoer te gebruiken, kunt u dezelfde workflow uitvoeren met de Forms-service.
 
 Wanneer u de Assembler-service gebruikt, geeft u een formulierontwerp door dat is samengesteld met fragmenten. Het formulierontwerp dat is gemaakt, verwijst niet naar andere fragmenten. In dit onderwerp wordt daarentegen het doorgeven van een formulierontwerp besproken dat naar andere fragmenten verwijst naar de Forms-service. Het formulierontwerp is echter niet samengesteld door Assembler. Het is gemaakt in Designer.
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
+>Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Zie [Webtoepassingen maken die Forms](/help/forms/developing/creating-web-applications-renders-forms.md) renderen voor informatie over het maken van een webtoepassing die formulieren rendert op basis van fragmenten.
+>Voor informatie over het maken van een webtoepassing die formulieren weergeeft op basis van fragmenten raadpleegt u [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Als u een formulier wilt genereren op basis van fragmenten, voert u de volgende taken uit:
 
@@ -78,7 +77,7 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 Als u een formulier wilt genereren op basis van fragmenten, moet u ervoor zorgen dat de Forms-service zowel het formulier als de fragmenten (de XDP-bestanden) kan vinden waarnaar het formulierontwerp verwijst. Stel bijvoorbeeld dat het formulier de naam PO.xdp heeft en dat in dit formulier twee fragmenten worden gebruikt: FooterUS.xdp en FooterCanada.xdp. In dit geval moet de Forms-service alle drie XDP-bestanden kunnen vinden.
 
-U kunt een formulier en de bijbehorende fragmenten ordenen door het formulier op één locatie en de fragmenten op een andere locatie te plaatsen, of u kunt alle XDP-bestanden op dezelfde locatie plaatsen. In deze sectie wordt ervan uitgegaan dat alle XDP-bestanden zich in de AEM Forms-opslagplaats bevinden. Zie [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources) voor informatie over het plaatsen van XDP-bestanden in de AEM Forms-opslagplaats.
+U kunt een formulier en de bijbehorende fragmenten ordenen door het formulier op één locatie en de fragmenten op een andere locatie te plaatsen, of u kunt alle XDP-bestanden op dezelfde locatie plaatsen. In deze sectie wordt ervan uitgegaan dat alle XDP-bestanden zich in de AEM Forms-opslagplaats bevinden. Voor informatie over het plaatsen van XDP-bestanden in de AEM Forms-opslagplaats raadpleegt u [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).
 
 Bij het genereren van een formulier op basis van fragmenten moet u alleen naar het formulier zelf verwijzen en niet naar de fragmenten. U moet bijvoorbeeld naar PO.xdp verwijzen en niet naar FooterUS.xdp of FooterCanada.xdp. Plaats de fragmenten op een locatie waar de Forms-service ze kan vinden.
 
@@ -116,37 +115,37 @@ Een formulier renderen op basis van fragmenten met de Forms API (Java):
 
 1. Een Forms Client API-object maken
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. URI-waarden opgeven
 
-   * Maak een object `URLSpec` waarin URI-waarden worden opgeslagen met behulp van de constructor.
-   * Roep de methode `URLSpec` van het object `setApplicationWebRoot` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-   * Roep de methode `setContentRootURI` van het object `URLSpec` aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Geef `repository://` op om naar de gegevensopslagruimte te verwijzen.
-   * Roep de methode `setTargetURL` van het object `URLSpec` aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waar de formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
+   * Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
+   * De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
+   * De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de gegevensopslagruimte wilt verwijzen, geeft u `repository://`.
+   * De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 
 1. Het formulier renderen
 
-   Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+   De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Een object `com.adobe.idp.Document` dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een leeg `com.adobe.idp.Document`-object door.
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * A `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een lege waarde door `com.adobe.idp.Document` object.
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
 
-   De methode `renderPDFForm` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object aan te roepen.`FormsResult`
-   * Hiermee wordt het inhoudstype van het object `com.adobe.idp.Document` opgehaald door de methode `getContentType` ervan aan te roepen.
-   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `com.adobe.idp.Document` door te geven.
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
-   * Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `com.adobe.idp.Document` aan te roepen.
-   * Maak een bytearray die deze met de formuliergegevensstroom vult door de methode `read`van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
-   * Roep de methode `javax.servlet.ServletOutputStream` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
+   * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
+   * Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` object `read`en de bytearray doorgeven als een argument.
+   * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 
@@ -158,7 +157,7 @@ Een formulier renderen op basis van fragmenten met de Forms API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Formulieren weergeven op basis van fragmenten met de API {#render-forms-based-on-fragments-using-the-web-service-api} van de webservice
+### Formulieren weergeven op basis van fragmenten met de webservice-API {#render-forms-based-on-fragments-using-the-web-service-api}
 
 Een formulier weergeven op basis van fragmenten met de Forms API (webservice):
 
@@ -169,40 +168,40 @@ Een formulier weergeven op basis van fragmenten met de Forms API (webservice):
 
 1. Een Forms Client API-object maken
 
-   Maak een `FormsService`-object en stel de verificatiewaarden in.
+   Een `FormsService` -object en stel verificatiewaarden in.
 
 1. URI-waarden opgeven
 
-   * Maak een object `URLSpec` waarin URI-waarden worden opgeslagen met behulp van de constructor.
-   * Roep de methode `URLSpec` van het object `setApplicationWebRoot` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-   * Roep de methode `setContentRootURI` van het object `URLSpec` aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Geef `repository://` op om naar de gegevensopslagruimte te verwijzen.
-   * Roep de methode `setTargetURL` van het object `URLSpec` aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waar de formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
+   * Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
+   * De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
+   * De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp zich in de URI van de inhoudsbasis bevindt. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de gegevensopslagruimte wilt verwijzen, geeft u `repository://`.
+   * De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 
 1. Het formulier renderen
 
-   Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
+   De `FormsService` object `renderPDFForm` en geeft de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Een object `BLOB` dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null` door.
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. De optie Gecodeerde PDF kan niet worden ingesteld als het invoerdocument een PDF-document is. Als het invoerbestand een XDP-bestand is, kunt u de optie Gecodeerde PDF instellen.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
-   * Een leeg object `com.adobe.idp.services.holders.BLOBHolder` dat door de methode is gevuld. Met deze parameter wordt het gegenereerde formulier opgeslagen.
-   * Een leeg object `javax.xml.rpc.holders.LongHolder` dat door de methode is gevuld. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
-   * Een leeg object `javax.xml.rpc.holders.StringHolder` dat door de methode is gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder`-object dat de resultaten van deze bewerking zal bevatten.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`.
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. De optie Gelabelde PDF kan niet worden ingesteld als het invoerdocument een PDF-document is. Als het invoerbestand een XDP-bestand is, kunt u de optie voor gecodeerde PDF instellen.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Met deze parameter wordt het gegenereerde formulier opgeslagen.
+   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
+   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
 
-   Met de methode `renderPDFForm` wordt het object `com.adobe.idp.services.holders.FormsResultHolder` dat als laatste argumentwaarde is doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `FormResult`-object door de waarde op te halen van het `com.adobe.idp.services.holders.FormsResultHolder`-gegevenslid van het object.`value`
-   * Maak een `BLOB`-object dat formuliergegevens bevat door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
-   * Hiermee wordt het inhoudstype van het object `BLOB` opgehaald door de methode `getContentType` ervan aan te roepen.
-   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `BLOB` door te geven.
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
-   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Deze taak wijst de inhoud van het `FormsResult` voorwerp aan de byteserie toe.
-   * Roep de methode `javax.servlet.http.HttpServletResponse` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
+   * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
+   * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
+   * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
+   * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 

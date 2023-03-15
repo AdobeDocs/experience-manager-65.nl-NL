@@ -1,8 +1,8 @@
 ---
 title: AEM Forms-gegevensintegratie
-seo-title: AEM Forms-gegevensintegratie
+seo-title: AEM Forms Data Integration
 description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
-seo-description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 01df045e-1b26-437c-9674-fd223ecd5097
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: integration
 discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
-
-# [!DNL AEM Forms] Gegevensintegratie  {#aem-forms-data-integration}
+# [!DNL AEM Forms] Gegevensintegratie {#aem-forms-data-integration}
 
 ![](do-not-localize/data-integeration.png)
 
@@ -33,7 +32,7 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 ![aem-forms-data-integer](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] Met gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met  [!DNL AEM Forms]. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is genoemd geworden vormgegevensmodel, een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel kunt u:
+[!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms]. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is genoemd geworden vormgegevensmodel, een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel kunt u:
 
 * Toegang tot gegevensmodelvoorwerpen, eigenschappen, en de diensten van verbonden gegevensbronnen.
 * Objecten en eigenschappen van een aangepast gegevensmodel maken
@@ -59,4 +58,3 @@ Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te vo
 * [Formuliergegevensmodel maken](../../forms/using/create-form-data-models.md)
 * [Werken met formuliergegevensmodel](../../forms/using/work-with-form-data-model.md)
 * [Formuliergegevensmodel gebruiken](../../forms/using/using-form-data-model.md)
-

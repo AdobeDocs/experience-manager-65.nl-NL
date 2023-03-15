@@ -1,8 +1,8 @@
 ---
 title: Uitgenodigde en lokale gebruikersaccounts beheren
-seo-title: Uitgenodigde en lokale gebruikersaccounts beheren
+seo-title: Managing invited and local user accounts
 description: Met documentbeveiliging kunt u uitgenodigde en lokale gebruikersaccounts zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
-seo-description: Met documentbeveiliging kunt u uitgenodigde en lokale gebruikersaccounts zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
+seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
 uuid: 0d0c717a-6e6e-4e42-96eb-3a7166e215ab
 contentOwner: admin
 content-type: reference
@@ -10,21 +10,20 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1196'
 ht-degree: 0%
 
 ---
-
 
 # Uitgenodigde en lokale gebruikersaccounts beheren {#managing-invited-and-local-user-accounts}
 
 Gebruik de pagina Uitgenodigde en lokale gebruikers om uw uitgenodigde en lokale gebruikers te beheren. Deze pagina wordt alleen weergegeven als aan de volgende voorwaarden is voldaan:
 
 * U bent een beheerder aan wie de rol Uitgenodigde van het Beheer van de documentveiligheid en Lokale Gebruikers en de rol van de Gebruiker van de beleidsconsole wordt toegewezen. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* Uitgenodigde gebruikersregistratie is ingeschakeld. (Zie [Uitgenodigde gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+* Uitgenodigde gebruikersregistratie is ingeschakeld. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 De pagina Uitgenodigde en Lokale gebruikers bevat twee tabbladen waarmee u uitgenodigde en lokale gebruikersaccounts kunt zoeken, weergeven, bewerken, vergrendelen, ontgrendelen en verwijderen.
 
@@ -34,14 +33,14 @@ U kunt ook handmatig e-mails sturen naar uitgenodigde gebruikers. U kunt dit bij
 >
 >Uitgenodigde gebruikers kunnen ook rechtstreeks via de LDAP-directory worden toegevoegd die beveiligingsreferenties documenteert, of wanneer een gebruiker of beheerder een nieuwe gebruiker uitnodigt bij het maken of bewerken van een beleid en daarom een e-mail met een registratieuitnodiging start. Gebruikers kunnen nieuwe uitgenodigde gebruikers aan beleid toevoegen als u de optie Uitgenodigde gebruikersregistratie inschakelen op de Uitgenodigde pagina Gebruikersregistratie inschakelt.
 
-## Voeg een uitgenodigde gebruiker {#add-an-invited-user} toe
+## Een uitgenodigde gebruiker toevoegen {#add-an-invited-user}
 
 U kunt een of meer uitgenodigde gebruikersaccounts tegelijk toevoegen aan de documentbeveiliging. Als u een uitgenodigde gebruikersaccount wilt toevoegen, hebt u het e-mailadres van de gebruiker nodig. Wanneer u een gebruiker toevoegt, verzendt de documentbeveiliging een registratie-e-mail waarin de gebruiker wordt uitgenodigd zich te registreren.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik vervolgens op Nieuwe gebruiker uitnodigen.
 1. Typ het e-mailadres van de gebruikers die u wilt uitnodigen. Voer meerdere adressen op een regel in, gescheiden door een komma.
 
-   Het bericht dat u hebt gemaakt toen u de uitgenodigde gebruikersregistratie inschakelde, wordt naar de gebruikers verzonden. (Zie [Uitgenodigde gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+   Het bericht dat u hebt gemaakt toen u de uitgenodigde gebruikersregistratie inschakelde, wordt naar de gebruikers verzonden. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Klik op OK.
 
@@ -50,11 +49,11 @@ U kunt een of meer uitgenodigde gebruikersaccounts tegelijk toevoegen aan de doc
 U kunt informatie weergeven over lokale gebruikers, zoals naam, e-mailadres, organisatie, registratiestatus en domein.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik vervolgens op Nieuwe gebruiker uitnodigen.
-1. Klik op het tabblad Lokale gebruikers en klik op het e-mailadres van de gebruiker die u wilt weergeven op de pagina Lokale gebruikers beheren.
+1. Klik op het tabblad Lokale gebruikers en klik op de pagina Lokale gebruikers beheren op het e-mailadres voor de gebruiker die u wilt weergeven.
 
    De gebruikersgegevens worden weergegeven en u kunt het wachtwoord van de gebruiker opnieuw instellen en het account deactiveren.
 
-## Verzend een e-mail naar een niet-geregistreerde externe gebruiker {#send-an-email-to-an-unregistered-external-user}
+## Een e-mail verzenden naar een niet-geregistreerde externe gebruiker {#send-an-email-to-an-unregistered-external-user}
 
 Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid automatisch een registratie-e-mailverzoek. U kunt ook handmatig een registratie-e-mail genereren om te verzenden naar een uitgenodigde gebruiker die zich nog niet heeft geregistreerd. U kunt dit bijvoorbeeld doen om een nieuwe uitnodiging te verzenden als de registratie-e-mail van een uitgenodigde gebruiker verloopt.
 
@@ -66,13 +65,13 @@ Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid au
 
 U kunt wachtwoorden opnieuw instellen voor geactiveerde uitgenodigde gebruikers die zich bij documentveiligheid hebben geregistreerd maar hun wachtwoord vergeten. Wanneer u een wachtwoord opnieuw instelt, wordt een e-mail geproduceerd die een nieuw, tijdelijk wachtwoord voor de gebruiker bevat.
 
-Wanneer u het registratieproces voor uitgenodigde gebruikers hebt ingeschakeld, hebt u een e-mailbericht gemaakt dat wordt verzonden naar gebruikers die hen vragen hun wachtwoorden opnieuw in te stellen. (Zie [Uitgenodigde gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+Wanneer u het registratieproces voor uitgenodigde gebruikers hebt ingeschakeld, hebt u een e-mailbericht gemaakt dat wordt verzonden naar gebruikers die hen vragen hun wachtwoorden opnieuw in te stellen. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik op het tabblad Lokale gebruikers.
 1. Selecteer de gewenste gebruiker in de gebruikerslijst.
 1. Klik op de pagina Lokale gebruiker beheren op Wachtwoord opnieuw instellen en klik op OK. Er wordt een e-mail met het wachtwoord voor opnieuw instellen met het nieuwe wachtwoord verzonden naar de gebruiker.
 
-## Een gebruikersaccount {#enable-or-disable-a-user-account} in- of uitschakelen
+## Gebruikersaccounts in- of uitschakelen {#enable-or-disable-a-user-account}
 
 U kunt lokale gebruikersaccounts uitschakelen om tijdelijk te voorkomen dat een gebruiker zich aanmeldt bij de documentbeveiliging. Wanneer u de account uitschakelt, kan de gebruiker geen documenten met een beleid gebruiken of beleidsregels maken of toepassen.
 
@@ -124,7 +123,7 @@ U kunt lokale gebruikersaccounts verwijderen uit de documentbeveiliging. U kunt 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik op het tabblad Lokale gebruikers.
 1. Schakel het selectievakje naast een of meer gebruikers in, klik op Verwijderen en klik op OK.
 
-## De gebruikerslijst {#sort-the-user-list} sorteren
+## De gebruikerslijst sorteren {#sort-the-user-list}
 
 U kunt gebruikers gemakkelijker vinden door de gebruikerslijst door kolomrubriek te sorteren. Driehoekpictogrammen naast de kolomkop geven aan welke kolom momenteel wordt gebruikt voor sorteren:
 
@@ -134,4 +133,3 @@ U kunt gebruikers gemakkelijker vinden door de gebruikerslijst door kolomrubriek
    1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers.
    1. Als u uitgenodigde gebruikers wilt sorteren, klikt u op het tabblad Uitgenodigde gebruikers en klikt u op de gewenste kolomkop.
    1. Als u lokale gebruikers wilt sorteren, klikt u op het tabblad Lokale gebruikers en klikt u op de gewenste kolomkop.
-

@@ -1,8 +1,8 @@
 ---
 title: Webconsole
-seo-title: Webconsole
+seo-title: Web Console
 description: Leer hoe u de AEM webconsole kunt gebruiken.
-seo-description: Leer hoe u de AEM webconsole kunt gebruiken.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
-
 
 # Webconsole{#web-console}
 
@@ -43,13 +42,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
+De **Configuratie** tab wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md) voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md) voor nadere bijzonderheden.
 
-De **tab Configuration** kan worden benaderd door:
+De **Configuratie** tab kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -65,14 +64,14 @@ Er wordt een lijst met configuraties weergegeven:
 
 Er zijn twee soorten configuraties beschikbaar bij de drop-down lijsten op dit scherm:
 
-* ****
-ConfigurationsHiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
+* **Configuraties**
+Hiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
 
    * standaard en integraal van AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
    * instanties die zijn gemaakt op basis van fabrieksconfiguraties; Deze instanties worden gemaakt door de gebruiker. Verwijderen verwijdert de instantie.
 
 * **Fabrieksconfiguraties**
-Hiermee kunt u een instantie van het vereiste functieobject maken.
+Hiermee kunt u een instantie maken van het vereiste functionaliteit-object.
 
    Dit krijgt een blijvende identiteit toegewezen en wordt vervolgens vermeld in de vervolgkeuzelijst Configuraties.
 
@@ -106,7 +105,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
+De **Bundels** tab is het mechanisme voor het installeren van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -124,7 +123,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
+   U kunt **Bladeren** om het bestand te zoeken dat uw bundel bevat en op te geven of dit nodig is **Start** onmiddellijk **Beginniveau**.
 
 * **Opnieuw laden**
 
@@ -154,11 +153,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
+>Na **Bijwerken** het wordt aanbevolen een **Pakketten vernieuwen**.
 
 ## Onderdelen {#components}
 
-Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+De **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -181,4 +180,3 @@ Als u op de naam van een bepaalde component klikt, wordt meer informatie over de
 >Als u een component inschakelt of uitschakelt, wordt deze alleen van toepassing tot AEM/CRX opnieuw wordt gestart.
 >
 >De begintoestand wordt gedefinieerd binnen de componentdescriptor, die tijdens de ontwikkeling wordt gegenereerd en in de bundel wordt opgeslagen op het moment dat de bundel wordt gemaakt.
-

@@ -179,7 +179,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke interface:
+   * Klassieke gebruikersinterface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.

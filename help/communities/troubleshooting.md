@@ -1,41 +1,39 @@
 ---
 title: Problemen oplossen
-seo-title: Problemen oplossen
+seo-title: Troubleshooting
 description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
-seo-description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
-translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
 
-
 # Problemen oplossen {#troubleshooting}
 
-Deze paragraaf bevat gemeenschappelijke zorgen en bekende problemen.
+Deze paragraaf bevat gemeenschappelijke punten van zorg en bekende punten.
 
 ## Bekende problemen {#known-issues}
 
-### Terugzetfout verzending {#dispatcher-refetch-fails}
+### Terugzetfout verzender mislukt {#dispatcher-refetch-fails}
 
 Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
 
 Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
-### Kan tot de Post van het Forum na Bevordering van CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} toegang hebben
+### Kan de Post van het Forum na Bevordering van CQ 5.4 niet openen {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
-Ongeldig patroonteken &#39;a&#39;
-Kan aanvraag niet verzenden aan `/content/demoforums/forum-test.html` op deze server en de logboeken bevatten het volgende:
+Ongeldig patroonteken &#39;a&#39; kan aanvraag niet verzenden aan `/content/demoforums/forum-test.html` op deze server en de logboeken bevatten het volgende:
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -53,17 +51,17 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 
 De fout is anders bij auteur en publiceren. Op auteur ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
 
-Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
-## Algemene bezorgdheid {#common-concerns}
+## Algemene problemen {#common-concerns}
 
-### Waarschuwing bij logbestanden: Afgekeurde handgrepen {#warning-in-logs-handlebars-deprecated}
+### Waarschuwing bij logbestanden: Afgekeurde kleurenbalken {#warning-in-logs-handlebars-deprecated}
 
 Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Deze waarschuwing kan veilig worden genegeerd aangezien `jknack.handlebars.Handlebars`, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut wordt geleverd. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd als `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

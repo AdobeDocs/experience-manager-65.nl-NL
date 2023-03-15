@@ -12,7 +12,7 @@ discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -747,7 +747,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
 | **Herstructureringsrichtsnoeren** | Geen actie vereist. |
 | **Opmerkingen** | De webconsole voor activering van de structuur is nu beschikbaar via **Extra > Implementatie > Replicatie > Boom activeren**. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ### Cloud Services van leverancier-vertalingsconnector {#vendor-translation-connector-cloud-services}
 

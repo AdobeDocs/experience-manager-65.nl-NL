@@ -1,28 +1,27 @@
 ---
 title: Tijdelijk beheer en vertraging
-seo-title: Tijdelijk beheer en vertraging
+seo-title: Work Manager and throttling
 description: Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
-seo-description: Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
+seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
 uuid: b90998bc-e3d4-493a-9371-55ccb44da20d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
-
 
 # Tijdelijk beheer en vertraging{#work-manager-and-throttling}
 
 AEM formulieren (en eerdere versies) hebben JMS-wachtrijen gebruikt om bewerkingen asynchroon uit te voeren. In AEM formulieren zijn JMS-wachtrijen vervangen door Werkbeheer. Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
 
-## Informatie over langlevende (asynchrone) bewerkingen {#about-long-lived-asynchronous-operations}
+## Over langlevende (asynchrone) bewerkingen {#about-long-lived-asynchronous-operations}
 
 In AEM vormen, kunnen de verrichtingen door de diensten of kortstondig (synchroon) of langdurig (asynchroon) worden uitgevoerd. Korte-levende verrichtingen voltooien synchroon op de zelfde draad waarvan zij werden aangehaald. Deze bewerkingen wachten op een reactie voordat u verdergaat.
 
@@ -38,9 +37,9 @@ Asynchrone bewerkingen worden op deze manier afgehandeld:
 1. De Manager van het werk slaat het het werkpunt in een gegevensbestandlijst op en wijst een uniek herkenningsteken aan het het werkpunt toe. De databaserecord bevat alle informatie die nodig is om het werkitem uit te voeren.
 1. De draden van de Manager van het werk trekken in het werkpunten wanneer de draden vrij worden. Alvorens in de het werkpunten te trekken, kunnen de draden controleren of de vereiste diensten zijn begonnen, of er genoeg heapgrootte om in het volgende het werkpunt te trekken is, en of er genoeg cycli van cpu zijn om het het werkpunt te verwerken. De Manager van het werk evalueert ook attributen van het het werkpunt (zoals zijn prioriteit) wanneer het plannen van zijn uitvoering.
 
-AEM formulierbeheerders kunnen Health Monitor gebruiken om de statistieken van de Manager van het Werk te controleren, zoals het aantal werkpunten in de rij en hun status. U kunt Health Monitor ook gebruiken om het werkpunten te pauzeren, te hervatten, opnieuw te proberen of te schrappen. (Zie [Statistieken weergeven met betrekking tot Werkmanager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+AEM formulierbeheerders kunnen Health Monitor gebruiken om de statistieken van de Manager van het Werk te controleren, zoals het aantal werkpunten in de rij en hun status. U kunt Health Monitor ook gebruiken om het werkpunten te pauzeren, te hervatten, opnieuw te proberen of te schrappen. (Zie [Statistieken weergeven met betrekking tot Werkbeheer](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
-## Opties {#configuring-work-manager-throttling-options} voor het wijzigen van de snelheid van de werkmanager
+## Opties voor het wijzigen van de snelheid van het werkbeheer configureren {#configuring-work-manager-throttling-options}
 
 U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunten slechts gepland zijn wanneer er genoeg geheugenmiddelen beschikbaar zijn. U configureert vertraging door de volgende JVM-opties in te stellen in uw toepassingsserver.
 
@@ -58,11 +57,11 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>Stel deze optie in op <code>true</code> om de foutopsporingsmodus in te schakelen of op false om deze uit te schakelen. </p><p>In zuivert wijze, worden de berichten betreffende de beleidsschendingen van de Manager van het Werk en de pauze/hervat acties van de Manager van het Werk geregistreerd. Stel deze optie alleen in op true wanneer problemen worden opgelost.</p></td>
+   <td><p>Deze optie instellen op <code>true</code> om toe te laten zuivert wijze, of aan vals om het onbruikbaar te maken. </p><p>In zuivert wijze, worden de berichten betreffende de beleidsschendingen van de Manager van het Werk en de pauze/hervat acties van de Manager van het Werk geregistreerd. Stel deze optie alleen in op true wanneer problemen worden opgelost.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>Stel deze optie in op <code>true</code> om vertraging in te schakelen op basis van de instellingen voor geheugenbeheer die hieronder worden beschreven, of op <code>false</code> om vertraging uit te schakelen.</p></td>
+   <td><p>Deze optie instellen op <code>true</code> om throttling toe te laten op basis van de hieronder beschreven geheugen-controle montages, of aan <code>false</code> om vertraging uit te schakelen.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
@@ -82,12 +81,12 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
 **Java-opties toevoegen aan JBoss**
 
 1. Stop de JBoss-toepassingsserver.
-1. Open *[appserver root]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een redacteur en voeg om het even welke opties van Java toe zoals vereist, in formaat `-Dproperty=value`.
+1. Open de *[appserver-hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een editor en voeg zo nodig Java-opties toe in de indeling `-Dproperty=value`.
 1. Start de server opnieuw.
 
 **Java-opties toevoegen aan WebLogic**
 
-1. Start de WebLogic-beheerconsole door `https://[host name]:[port]/console` in een webbrowser te typen.
+1. Start de WebLogic-beheerconsole door te typen `https://[host name]:[port]/console` in een webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.
@@ -106,4 +105,3 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
 1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
-

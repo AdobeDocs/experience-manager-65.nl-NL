@@ -364,7 +364,7 @@ De volgende gegevenspatronen worden niet volledig ondersteund in de formulierset
   </tr>
   <tr>
    <td>Invoergrootte en patroongrootte komen niet overeen</td>
-   <td><p>When pattern= num{z,zzz}</p> <p>En input=</p> <p>12,345 of</p> <p>1 23</p> </td>
+   <td><p>When pattern= num{z,zzz}</p> <p>En input=</p> <p>12,345 of</p> <p>1,23</p> </td>
   </tr>
   <tr>
    <td>Figuurpatronen met haakjes "(" ")"</td>

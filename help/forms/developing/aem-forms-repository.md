@@ -1,8 +1,8 @@
 ---
 title: Werken met AEM Forms Repository
-seo-title: Werken met AEM Forms Repository
+seo-title: Working with AEM Forms Repository
 description: Beheer de AEM Forms-opslagplaats om mappen te maken, mappen te schrijven, weer te geven, te lezen, bij te werken en te zoeken met behulp van de Java API en Web Service API. Bovendien leren hoe te om middelverhoudingen tot stand te brengen, middelen te sluiten en te schrappen.
-seo-description: Beheer de AEM Forms-opslagplaats om mappen te maken, mappen te schrijven, te maken, te lezen, bronnen bij te werken en bronnen te zoeken met behulp van de Java API en Web Service API. Bovendien leren hoe te om middelverhoudingen tot stand te brengen, middelen te sluiten en te schrappen.
+seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
 uuid: 6ead49f9-ca0d-4ee4-86a6-0a9ced6ec4f8
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '9158'
+source-wordcount: '9117'
 ht-degree: 0%
 
 ---
-
 
 # Werken met AEM Forms Repository {#working-with-aem-forms-repository}
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 **Over de Repository Service**
 
-De Repository-service biedt AEM Forms opslagservices en beheerservices voor resources. Wanneer ontwikkelaars een *AEM Forms*-toepassing maken, kunnen ze de middelen in de opslagplaats implementeren in plaats van in het bestandssysteem. De elementen kunnen elk type onderpand bevatten, zoals XML-formulieren, PDF forms (inclusief Acrobat-formulieren), formulierfragmenten, afbeeldingen, profielen, beleid, SWF-bestanden, DDX-bestanden, XML-schema&#39;s, WSDL-bestanden en testgegevens.
+De Repository-service biedt AEM Forms opslagservices en beheerservices voor resources. Wanneer ontwikkelaars een *AEM Forms* kunnen ze de middelen in de opslagplaats implementeren in plaats van in het bestandssysteem. De elementen kunnen elk type onderpand bevatten, zoals XML-formulieren, PDF forms (inclusief Acrobat-formulieren), formulierfragmenten, afbeeldingen, profielen, beleid, SWF-bestanden, DDX-bestanden, XML-schema&#39;s, WSDL-bestanden en testgegevens.
 
 Neem bijvoorbeeld de volgende Forms-toepassing met de naam *Applications/FormsApplication*:
 
@@ -35,7 +34,7 @@ Er bevindt zich een bestand met de naam Loan.xdp in de FormsFolder. Als u dit fo
 
 >[!NOTE]
 >
->Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) voor informatie over het maken van een Forms-toepassing met Workbench.
+>Voor informatie over het maken van een Forms-toepassing met Workbench gaat u naar [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 Het pad naar een bron in de AEM Forms-opslagplaats is:
 
@@ -49,7 +48,7 @@ De volgende waarden tonen enkele voorbeelden van URI-waarden:
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser `https://[server name]:[server port]/repository` in. U kunt via een webbrowser controleren welke snelstartresultaten worden gekoppeld aan de sectie Werken met AEM Forms Repository. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser. (Zie [Snel starten (SOAP-modus): Een bron schrijven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. U kunt via een webbrowser controleren welke snelstartresultaten worden gekoppeld aan de sectie Werken met AEM Forms Repository. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser. (Zie [Snel starten (SOAP-modus): Een bron schrijven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 De API van de dataopslag biedt een aantal bewerkingen die u kunt gebruiken om gegevens op te slaan en op te halen uit de dataopslag. Bijvoorbeeld, kunt u een lijst van middelen verkrijgen of specifieke middelen terugwinnen die in de bewaarplaats worden opgeslagen wanneer een middel als deel van de verwerking van een toepassing nodig is.
 
@@ -75,13 +74,13 @@ Met de Repository-service-API kunt u de volgende taken uitvoeren:
 
 >[!NOTE]
 >
->Wanneer een gecodeerde PDF naar de opslagplaats wordt geschreven, kan de functie voor automatische relatie-extractie niet worden gebruikt. Anders kan een gecodeerde PDF worden opgeslagen in de opslagplaats en later worden opgehaald. De opzoeker kan ervoor kiezen de PDF te decoderen nadat deze uit de opslagplaats is opgehaald.
+>Wanneer een gecodeerde PDF naar de opslagplaats wordt geschreven, kan de functie voor automatische relatieextractie niet worden gebruikt. Anders kan een gecodeerde PDF worden opgeslagen in de opslagplaats en later worden opgehaald. De terugwader kan verkiezen om de PDF te decrypteren nadat het van de bewaarplaats wordt teruggewonnen.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Mappen {#creating-folders} maken
+## Mappen maken {#creating-folders}
 
 De omslagen (middelinzamelingen) worden gebruikt om voorwerpen (dossiers of middelen) in georganiseerde groepen op te slaan. Mappen kunnen bronnen en andere mappen bevatten, ook wel submappen genoemd. Bronnen kunnen slechts in één map tegelijk worden opgeslagen.
 
@@ -89,9 +88,9 @@ De dossiers erven toegangsbeheerlijsten (ACLs) van omslagen, en subfolders erven
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Ga als volgt te werk om een map te maken:
 
@@ -138,30 +137,30 @@ Een map maken met de API voor opslagplaats (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De map maken
 
-   Als u een bronverzameling wilt maken, moet u eerst een `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-object maken.
+   Als u een bronverzameling wilt maken, moet u eerst een `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` object.
 
-   Roep de methode `repositoryInfomodelFactoryBean` van het object `newResourceCollection` aan en geef de volgende parameters door:
+   De `repositoryInfomodelFactoryBean` object `newResourceCollection` en geeft de volgende parameters door:
 
-   * A `com.adobe.repository.infomodel.Id` UUID identifier to be assigned to the resource.
-   * A `com.adobe.repository.infomodel.Lid` UUID identifier to be assigned to the resource.
-   * A `java.lang.String` bevattende de naam van de middelinzameling. Bijvoorbeeld, `FormsFolder`.
+   * A `com.adobe.repository.infomodel.Id` UUID-id die aan de bron moet worden toegewezen.
+   * A `com.adobe.repository.infomodel.Lid` UUID-id die aan de bron moet worden toegewezen.
+   * A `java.lang.String` met de naam van de bronverzameling. Bijvoorbeeld, `FormsFolder`.
 
-   De methode retourneert een `com.adobe.repository.infomodel.bean.ResourceCollection`-object dat de nieuwe map vertegenwoordigt.
+   De methode retourneert een `com.adobe.repository.infomodel.bean.ResourceCollection` object dat de nieuwe map vertegenwoordigt.
 
-   Stel de beschrijving van de map in met de methode `setDescription` en geef de volgende parameter door:
+   De beschrijving van de map instellen met de opdracht `setDescription` methode en geef de volgende parameter door:
 
-   * A `String` die de middelinzameling beschrijft. In dit voorbeeld wordt `"test Folder"` gebruikt `.`
+   * A `String` dat de middelinzameling beschrijft. In dit voorbeeld: `"test Folder"` wordt gebruikt `.`
 
 
 1. De map naar de opslagplaats schrijven
 
-   Roep de methode `ResourceRepositoryClient` van het object `writeResource` aan en geef de URI van de map en het object `ResourceCollection` door. De URI naar de map kan bijvoorbeeld de volgende waarde `/Applications/FormsApplication/1.0/` zijn.
+   De `ResourceRepositoryClient` object `writeResource` en geeft u de URI van de map en de `ResourceCollection` object. De URI naar de map kan bijvoorbeeld de volgende waarde zijn `/Applications/FormsApplication/1.0/`.
 
-   De methode retourneert een instantie van het nieuwe `com.adobe.repository.infomodel.bean.Resource`-object. U kunt bijvoorbeeld de id-waarde van de nieuwe bron ophalen door de methode `com.adobe.repository.infomodel.bean.Resource` van het object `getId` aan te roepen.
+   De methode retourneert een instantie van het zojuist gemaakte `com.adobe.repository.infomodel.bean.Resource` object. U kunt, bijvoorbeeld, de herkenningstekenwaarde van de nieuwe bron terugwinnen door het `com.adobe.repository.infomodel.bean.Resource` object `getId` methode.
 
 **Zie ook**
 
@@ -179,29 +178,29 @@ Een map maken met de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die Repository WSDL gebruikend base64 gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL gebruikend base64 verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` -object dat de gebruikersnaam en het wachtwoord bevat.
 
 1. De map maken
 
-   Maak de map met de standaardconstructor voor de klasse `ResourceCollection` en geef de volgende parameters door:
+   Maak de map met de standaardconstructor voor de `ResourceCollection` klasse en geef de volgende parameters door:
 
-   * Een `Id`-object, dat wordt gemaakt door de standaardconstructor voor de klasse `Id` aan te roepen en toegewezen aan het veld `Resource` van het object `id`.
-   * Een `Lid`-object, dat wordt gemaakt door de standaardconstructor voor de klasse `Lid` aan te roepen en toegewezen aan het veld `Resource` van het object `lid`.
-   * Een tekenreeks met de naam van de bronverzameling, die wordt toegewezen aan het veld `name` van het object. `Resource` De naam die in dit voorbeeld wordt gebruikt, is `"testfolder"`.
-   * Een tekenreeks met de beschrijving van de bronverzameling, die wordt toegewezen aan het veld `Resource` van het object `description`. De beschrijving die in dit voorbeeld wordt gebruikt is `"test folder"`.
+   * An `Id` object, dat wordt gemaakt door de standaardconstructor voor het `Id` klasse en toegewezen aan de `Resource` object `id` veld.
+   * An `Lid` object, dat wordt gemaakt door de standaardconstructor voor het `Lid` klasse en toegewezen aan de `Resource` object `lid` veld.
+   * Een tekenreeks met de naam van de bronverzameling die is toegewezen aan de `Resource` object `name` veld. De in dit voorbeeld gebruikte naam is `"testfolder"`.
+   * Een tekenreeks die de beschrijving bevat van de bronverzameling die is toegewezen aan de `Resource` object `description` veld. In dit voorbeeld wordt de volgende beschrijving gebruikt: `"test folder"`.
 
 1. De map naar de opslagplaats schrijven
 
-   Roep de methode `RepositoryServiceService` van het object `writeResource` aan en geef de volgende parameters door:
+   De `RepositoryServiceService` object `writeResource` methode en geef de volgende parameters door:
 
    * Het pad waar de map moet worden gemaakt.
-   * Het `ResourceCollection`-object dat de map vertegenwoordigt.
-   * Geef `null` door voor de andere twee parameters.
+   * De `ResourceCollection` object dat de map vertegenwoordigt.
+   * Voldoende `null` voor de andere twee parameters.
 
 **Zie ook**
 
@@ -209,7 +208,7 @@ Een map maken met de Repository Service API (webservice):
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## wegschrijven van bronnen {#writing-resources}
+## Bronnen schrijven {#writing-resources}
 
 U kunt bronnen maken op een bepaalde locatie in de opslagplaats. De natuurlijke dossiergrootte is onderworpen aan gegevensbestandbeperkingen en zittingsonderbreking. Voor de standaardconfiguratie, zijn de dossiers beperkt tot 25 MB. Als u de maximale bestandsgrootte wilt verhogen of verlagen, moet u de databaseconfiguratie wijzigen.
 
@@ -221,9 +220,9 @@ U kunt bronnen programmatisch schrijven met de Java API of webservice van de Rep
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-1}
+### Overzicht van de stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om een resource te schrijven:
 
@@ -242,7 +241,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De URI van de doelmap voor de bron opgeven**
 
-Maak een tekenreeks met de URI van de bron die moet worden gelezen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*folder*&quot;.
+Maak een tekenreeks met de URI van de bron die moet worden gelezen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*map*&quot;.
 
 **De bron maken**
 
@@ -278,36 +277,36 @@ Schrijf een bron met behulp van de Repository Service API (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De URI van de doelmap voor de bron opgeven
 
-   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron `"/testFolder"` wordt opgeslagen in de map met de naam `testFolder`. De URI wordt opgeslagen als een `java.lang.String`-object.
+   Geef de URI van de doelmap voor de bron op. In dit geval omdat de resource `testResource` wordt opgeslagen in de map met de naam `testFolder`, de URI van de map is `"/testFolder"`. De URI wordt opgeslagen als een `java.lang.String` object.
 
 1. De bron maken
 
-   Als u een bron wilt maken, moet u eerst een `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`-object maken.
+   Als u een bron wilt maken, moet u eerst een `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` object.
 
-   Roep de methode `RepositoryInfomodelFactoryBean` van het object `newResource` aan, die een object `com.adobe.repository.infomodel.bean.Resource` maakt. In dit voorbeeld worden de volgende parameters opgegeven:
+   De `RepositoryInfomodelFactoryBean` object `newResource` methode, die een `com.adobe.repository.infomodel.bean.Resource` object. In dit voorbeeld worden de volgende parameters opgegeven:
 
-   * Een object `com.adobe.repository.infomodel.Id`, dat wordt gemaakt door de standaardconstructor voor de klasse `Id` aan te roepen.
-   * Een object `com.adobe.repository.infomodel.Lid`, dat wordt gemaakt door de standaardconstructor voor de klasse `Lid` aan te roepen.
-   * Een `java.lang.String` met de bestandsnaam van de bron.
+   * A `com.adobe.repository.infomodel.Id` object, dat wordt gemaakt door de standaardconstructor voor het `Id` klasse.
+   * A `com.adobe.repository.infomodel.Lid` object, dat wordt gemaakt door de standaardconstructor voor het `Lid` klasse.
+   * A `java.lang.String` met de bestandsnaam van de bron.
 
-   Als u de beschrijving van de bron wilt opgeven, roept u de methode `setDescription` van het object `Resource` aan en geeft u een tekenreeks met de beschrijving door. In dit voorbeeld is de beschrijving `"test resource"`.
+   Als u de beschrijving van de bron wilt opgeven, roept u de `Resource` object `setDescription` en geeft u een tekenreeks met de beschrijving door. In dit voorbeeld is de beschrijving `"test resource"`.
 
 1. De inhoud van de bron opgeven
 
-   Als u inhoud voor de bron wilt maken, roept u de methode `newResourceContent` van het object `RepositoryInfomodelFactoryBean` aan, die een object `com.adobe.repository.infomodel.bean.ResourceContent` retourneert. Voeg inhoud toe aan het `ResourceContent`-object. In dit voorbeeld worden de volgende taken uitgevoerd:
+   Als u inhoud voor de bron wilt maken, roept u de `RepositoryInfomodelFactoryBean` object `newResourceContent` methode, die een `com.adobe.repository.infomodel.bean.ResourceContent` object. Inhoud toevoegen aan de `ResourceContent` object. In dit voorbeeld worden de volgende taken uitgevoerd:
 
-   * De methode `setDataDocument` van het object `ResourceContent` aanroepen en een object `com.adobe.idp.Document` doorgeven
-   * De methode `setSize` van het object `ResourceContent` aanroepen en de grootte van het object `Document` in bytes doorgeven
+   * De `ResourceContent` object `setDataDocument` methode en doorgeven als `com.adobe.idp.Document` object
+   * De `ResourceContent` object `setSize` en het doorgeven van de grootte in bytes van de `Document` object
 
-   Voeg de inhoud aan de bron toe door de methode `Resource` van het object `setContent` aan te roepen en het object `ResourceContent` door te geven. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie.
+   Voeg de inhoud aan de bron toe door de `Resource` object `setContent` en geeft de `ResourceContent` object. Zie voor meer informatie [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. De bron naar de doelmap schrijven
 
-   Roep de methode `ResourceRepositoryClient` van het object `writeResource` aan en geef de URI van de map en het object `Resource` door.
+   De `ResourceRepositoryClient` object `writeResource` en geeft de URI van de map en de `Resource` object.
 
 **Zie ook**
 
@@ -325,38 +324,38 @@ Schrijf een bron met behulp van de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die Repository WSDL gebruikend base64 gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL gebruikend base64 verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De URI van de doelmap voor de bron opgeven
 
-   Geef de URI van de doelmap voor de bron op. In dit geval is de URI van de map `testResource`, omdat de bron `"/testFolder"` wordt opgeslagen in de map met de naam `testFolder`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
+   Geef de URI van de doelmap voor de bron op. In dit geval omdat de resource `testResource` wordt opgeslagen in de map met de naam `testFolder`, de URI van de map is `"/testFolder"`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in a op `System.String` object.
 
 1. De bron maken
 
-   Om een middel tot stand te brengen, haal de standaardaannemer voor de `Resource` klasse aan. In dit voorbeeld wordt de volgende informatie opgeslagen in het object `Resource`:
+   Als u een bron wilt maken, roept u de standaardconstructor voor de `Resource` klasse. In dit voorbeeld wordt de volgende informatie opgeslagen in de `Resource` object:
 
-   * Een object `com.adobe.repository.infomodel.Id`, dat wordt gemaakt door de standaardconstructor voor de klasse `Id` aan te roepen en toegewezen aan het veld `Resource` van het object `id`.
-   * Een object `com.adobe.repository.infomodel.Lid`, dat wordt gemaakt door de standaardconstructor voor de klasse `Lid` aan te roepen en toegewezen aan het veld `Resource` van het object `lid`.
-   * Een tekenreeks die de bestandsnaam van de bron bevat. Deze wordt toegewezen aan het veld `name` van het object. `Resource` De naam die in dit voorbeeld wordt gebruikt, is `"testResource"`.
-   * Een tekenreeks met de beschrijving van de bron, die wordt toegewezen aan het veld `description` van het object. `Resource` De beschrijving die in dit voorbeeld wordt gebruikt is `"test resource"`.
+   * A `com.adobe.repository.infomodel.Id` object, dat wordt gemaakt door de standaardconstructor voor het `Id` klasse en toegewezen aan de `Resource` object `id` veld.
+   * A `com.adobe.repository.infomodel.Lid` object, dat wordt gemaakt door de standaardconstructor voor het `Lid` klasse en toegewezen aan de `Resource` object `lid` veld.
+   * Een tekenreeks met de bestandsnaam van de bron die is toegewezen aan de `Resource` object `name` veld. De in dit voorbeeld gebruikte naam is `"testResource"`.
+   * Een tekenreeks met de beschrijving van de bron die is toegewezen aan de `Resource` object `description` veld. In dit voorbeeld wordt de volgende beschrijving gebruikt: `"test resource"`.
 
 1. De inhoud van de bron opgeven
 
-   Als u inhoud voor de bron wilt maken, roept u de standaardconstructor voor de klasse `ResourceContent` aan. Voeg vervolgens inhoud toe aan het object `ResourceContent`. In dit voorbeeld worden de volgende taken uitgevoerd:
+   Als u inhoud voor de bron wilt maken, roept u de standaardconstructor voor de `ResourceContent` klasse. Voeg vervolgens inhoud toe aan de `ResourceContent` object. In dit voorbeeld worden de volgende taken uitgevoerd:
 
-   * Een `BLOB`-object dat een document bevat, toewijzen aan het veld `dataDocument` van het object.`ResourceContent`
-   * De grootte van het `BLOB`-object in bytes toewijzen aan het veld `size` van het `ResourceContent`-object.
+   * Een `BLOB` object met een document naar het `ResourceContent` object `dataDocument` veld.
+   * Wijs de grootte in bytes van de `BLOB` aan `ResourceContent` object `size` veld.
 
-   Voeg de inhoud aan de bron toe door het object `ResourceContent` toe te wijzen aan het veld `Resource` van het object `content`.
+   Voeg de inhoud aan de bron toe door de `ResourceContent` aan `Resource` object `content` veld.
 
 1. De bron naar de doelmap schrijven
 
-   Roep de methode `RepositoryServiceService` van het object `writeResource` aan en geef de URI van de map en het object `Resource` door. Geef `null` door voor de andere twee parameters.
+   De `RepositoryServiceService` object `writeResource` en geeft de URI van de map en de `Resource` object. Voldoende `null` voor de andere twee parameters.
 
 **Zie ook**
 
@@ -364,7 +363,7 @@ Schrijf een bron met behulp van de Repository Service API (webservice):
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Verkoopbronnen {#listing-resources}
+## Aanbiedingsbronnen {#listing-resources}
 
 Je kunt bronnen vinden door bronnen aan te bieden. Een vraag wordt uitgevoerd tegen de bewaarplaats om alle middelen te vinden die met een bepaalde middelinzameling verwant zijn.
 
@@ -374,9 +373,9 @@ Bronnen voor lijsten werken op basis van relatie: bronnen zijn leden van mappen.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-2}
+### Overzicht van de stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om bronnen weer te geven:
 
@@ -395,7 +394,7 @@ Alvorens u een middelinzameling programmatically kunt tot stand brengen, moet u 
 
 **Het mappad opgeven**
 
-Maak een tekenreeks met het pad van de map met de bronnen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*folder*&quot;.
+Maak een tekenreeks met het pad van de map met de bronnen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*map*&quot;.
 
 **De lijst met bronnen ophalen**
 
@@ -423,17 +422,17 @@ Bronnen weergeven met behulp van de Repository Service API (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. Het mappad opgeven
 
-   Geef de URI op van de bronverzameling die moet worden opgevraagd. In dit geval is de URI `"/testFolder"`. De URI wordt opgeslagen als een `java.lang.String`-object.
+   Geef de URI op van de bronverzameling die moet worden opgevraagd. In dit geval is de URI `"/testFolder"`. De URI wordt opgeslagen als een `java.lang.String` object.
 
 1. De lijst met bronnen ophalen
 
-   Roep de methode `ResourceRepositoryClient` van het object `listMembers` aan en geef de URI van de map door.
+   De `ResourceRepositoryClient` object `listMembers` en geeft u de URI van de map door.
 
-   De methode retourneert een `java.util.List` van `com.adobe.repository.infomodel.bean.Resource`-objecten die de bron zijn van een `com.adobe.repository.infomodel.bean.Relation` van het type `Relation.TYPE_MEMBER_OF` en de URI van de bronverzameling als doel hebben. U kunt dit `List` herhalen om elk van de middelen terug te winnen. In dit voorbeeld worden de naam en beschrijving van elke bron weergegeven.
+   De methode retourneert een `java.util.List` van `com.adobe.repository.infomodel.bean.Resource` objecten die de bron zijn van een `com.adobe.repository.infomodel.bean.Relation` van het type `Relation.TYPE_MEMBER_OF` en hebben de broninzamelings URI als doel. U kunt dit doorlopen `List` om elk van de middelen terug te winnen. In dit voorbeeld worden de naam en beschrijving van elke bron weergegeven.
 
 **Zie ook**
 
@@ -451,22 +450,22 @@ Bronnen weergeven met de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL verbruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. Het mappad opgeven
 
-   Geef een tekenreeks op die de URI bevat van de map waarnaar wordt gevraagd. In dit geval is de URI `"/testFolder"`. Wanneer het gebruiken van een taal die met het Kader van Microsoft .NET (bijvoorbeeld, C#) volgzaam is, sla URI in een `System.String` voorwerp op.
+   Geef een tekenreeks op die de URI bevat van de map waarnaar wordt gevraagd. In dit geval is de URI `"/testFolder"`. Wanneer het gebruiken van een taal die met het Kader van Microsoft .NET (bijvoorbeeld, C#) volgzaam is, sla URI in a op `System.String` object.
 
 1. De lijst met bronnen ophalen
 
-   Roep de methode `RepositoryServiceService` van het object `listMembers` aan en geef de URI van de map als eerste parameter door. Geef `null` door voor de andere twee parameters.
+   De `RepositoryServiceService` object `listMembers` en geeft de URI van de map door als de eerste parameter. Voldoende `null` voor de andere twee parameters.
 
-   De methode keert een serie van voorwerpen terug die aan `Resource` voorwerpen kunnen worden gegoten. U kunt de objectarray doorlopen om elk van de gerelateerde bronnen op te halen. In dit voorbeeld worden de naam en beschrijving van elke bron weergegeven.
+   De methode retourneert een array met objecten waarnaar gecast kan worden `Resource` objecten. U kunt de objectarray doorlopen om elk van de gerelateerde bronnen op te halen. In dit voorbeeld worden de naam en beschrijving van elke bron weergegeven.
 
 **Zie ook**
 
@@ -491,9 +490,9 @@ U kunt bronnen programmatisch lezen met de Java API of webservice van de Reposit
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-3}
+### Overzicht van de stappen {#summary_of_steps-3}
 
 Voer de volgende stappen uit om een bron te lezen:
 
@@ -512,7 +511,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De URI opgeven van de bron die moet worden gelezen**
 
-Maak een tekenreeks met de URI van de bron die moet worden gelezen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*resource*&quot;.
+Maak een tekenreeks met de URI van de bron die moet worden gelezen. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*resource*&quot;.
 
 **De bron lezen**
 
@@ -540,15 +539,15 @@ Een bron lezen met de API voor opslagplaats (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De URI opgeven van de bron die moet worden gelezen
 
-   Geef een tekenreekswaarde op die de URI vertegenwoordigt van de bron die moet worden opgehaald. Als de bron bijvoorbeeld *testResource* heet en zich in een map met de naam *testFolder* bevindt, geeft u `/testFolder/testResource` op.
+   Geef een tekenreekswaarde op die de URI vertegenwoordigt van de bron die moet worden opgehaald. Bijvoorbeeld, veronderstellend wordt het middel genoemd *testResource* die zich in een map met de naam *testFolder*, specificeren `/testFolder/testResource`.
 
 1. De bron lezen
 
-   Roep de methode `ResourceRepositoryClient` van het object `readResource` aan en geef de URI van de bron als parameter door. Deze methode retourneert een `Resource`-instantie die de bron vertegenwoordigt.
+   De `ResourceRepositoryClient` object `readResource` en geeft de URI van de bron door als een parameter. Deze methode retourneert een `Resource` instantie die de bron vertegenwoordigt.
 
 **Zie ook**
 
@@ -560,26 +559,26 @@ Een bron lezen met de API voor opslagplaats (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Bronnen lezen met de API {#reading-resources-using-the-web-service-api} van de webservice
+### Bronnen lezen met de webservice-API {#reading-resources-using-the-web-service-api}
 
 Een bron lezen met de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL verbruikt. (Zie [Creërend een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie [Creërend een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt. (Zie [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * Verwijs naar de Microsoft .NET cliëntassemblage. (Zie [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De URI opgeven van de bron die moet worden gelezen
 
-   Geef een tekenreeks op met de URI van de bron die moet worden opgehaald. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResource"` bevindt. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
+   Geef een tekenreeks op met de URI van de bron die moet worden opgehaald. In dit geval omdat de resource `testResource` bevindt zich in de map met de naam `testFolder`, de URI ervan is `"/testFolder/testResource"`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in a op `System.String` object.
 
 1. De bron lezen
 
-   Roep de methode `RepositoryServiceService` van het object `readResource` aan en geef de URI van de bron als eerste parameter door. Geef `null` door voor de andere twee parameters.
+   De `RepositoryServiceService` object `readResource` en geeft de URI van de bron door als de eerste parameter. Voldoende `null` voor de andere twee parameters.
 
 **Zie ook**
 
@@ -587,7 +586,7 @@ Een bron lezen met de Repository Service API (webservice):
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Bronnen {#updating-resources} bijwerken
+## Bronnen bijwerken {#updating-resources}
 
 U kunt de inhoud van bronnen in de opslagplaats ophalen en bijwerken. Wanneer u middelen bijwerkt, blijft het toegangsbeheer tot die middelen onveranderd tussen versies. Wanneer u een update uitvoert, kunt u de hoofdversie verhogen. Als u er niet voor kiest de hoofdversie te verhogen, wordt de kleine versie automatisch bijgewerkt.
 
@@ -601,9 +600,9 @@ U kunt bronnen programmatisch bijwerken met de Java API of webservice van de Rep
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-4}
+### Overzicht van de stappen {#summary_of_steps-4}
 
 Voer de volgende stappen uit om een bron bij te werken:
 
@@ -622,7 +621,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De bron ophalen die moet worden bijgewerkt**
 
-Lees de bron. Zie [Bronnen lezen](aem-forms-repository.md#reading-resources) voor meer informatie.
+Lees de bron. Zie voor meer informatie [Bronnen lezen](aem-forms-repository.md#reading-resources).
 
 **De bron bijwerken**
 
@@ -650,7 +649,7 @@ Werk een bron bij met behulp van de Repository Service API (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De bron ophalen die moet worden bijgewerkt
 
@@ -658,13 +657,13 @@ Werk een bron bij met behulp van de Repository Service API (Java):
 
 1. De bron bijwerken
 
-   Werk de gegevens van het object `Resource` bij. In dit voorbeeld roept u de methode `setDescription` van het object `Resource` op en geeft u de nieuwe beschrijvende tekenreeks als een parameter door.
+   Werk de `Resource` objectgegevens. Als u in dit voorbeeld de beschrijving wilt bijwerken, roept u de `Resource` object `setDescription` en geeft u de nieuwe beschrijvingstekenreeks door als een parameter.
 
-   Roep vervolgens de methode `ServiceClientFactory` van het object `updateResource` aan en geef de volgende parameters door:
+   Roep vervolgens het `ServiceClientFactory` object `updateResource` en geeft de volgende parameters door:
 
-   * Een `java.lang.String`-object dat de URI van de bron bevat.
-   * Het `Resource`-object dat de bijgewerkte broninformatie bevat.
-   * Een waarde `boolean` die aangeeft of de primaire of secundaire versie moet worden bijgewerkt. In dit voorbeeld wordt een waarde van `true` doorgegeven om aan te geven dat de hoofdversie moet worden verhoogd.
+   * A `java.lang.String` object met de URI van de bron.
+   * De `Resource` object met de bijgewerkte broninformatie.
+   * A `boolean` waarde die aangeeft of de hoofdversie of de secundaire versie moet worden bijgewerkt. In dit voorbeeld is een waarde van `true` wordt doorgegeven om aan te geven dat de hoofdversie moet worden verhoogd.
 
 **Zie ook**
 
@@ -682,27 +681,27 @@ Een bron bijwerken met de Repository API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL verbruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De bron ophalen die moet worden bijgewerkt
 
-   Geef de URI op van de bron die moet worden opgehaald en lees de bron. In dit voorbeeld is de URI van de bron `"/testFolder/testResource"`. Zie [Bronnen lezen](aem-forms-repository.md#reading-resources) voor meer informatie.
+   Geef de URI op van de bron die moet worden opgehaald en lees de bron. In dit voorbeeld is de URI van de bron `"/testFolder/testResource"`. Zie voor meer informatie [Bronnen lezen](aem-forms-repository.md#reading-resources).
 
 1. De bron bijwerken
 
-   Werk de gegevens van het object `Resource` bij. In dit voorbeeld wijst u een nieuwe waarde toe aan het veld `description` van het object om de beschrijving bij te werken.`Resource`
+   Werk de `Resource` objectgegevens. Als u in dit voorbeeld de beschrijving wilt bijwerken, wijst u een nieuwe waarde toe aan de `Resource` object `description` veld.
 
-1. Roep de methode `RepositoryServiceService` van het object `updateResource` aan en geef de volgende parameters door:
+1. De `RepositoryServiceService` object `updateResource` en geeft de volgende parameters door:
 
-   * Een `System.String`-object dat de URI van de bron bevat.
-   * Het `Resource`-object dat de bijgewerkte broninformatie bevat.
-   * Een waarde `boolean` die aangeeft of de primaire of secundaire versie moet worden bijgewerkt. In dit voorbeeld wordt een waarde van `true` doorgegeven om aan te geven dat de hoofdversie moet worden verhoogd.
-   * Geef `null` door voor de resterende twee parameters.
+   * A `System.String` object met de URI van de bron.
+   * De `Resource` object met de bijgewerkte broninformatie.
+   * A `boolean` waarde die aangeeft of de hoofdversie of de secundaire versie moet worden bijgewerkt. In dit voorbeeld is een waarde van `true` wordt doorgegeven om aan te geven dat de hoofdversie moet worden verhoogd.
+   * Voldoende `null` voor de overige twee parameters.
 
 **Zie ook**
 
@@ -718,21 +717,21 @@ U kunt gerelateerde bronnen ophalen om de afhankelijkheden tussen een formulier 
 
 **Query-instructies**
 
-Een *query* bevat een of meer instructies die logisch gezien zijn gekoppeld aan voorwaarden. Een *statement* bestaat uit een linkeroperand, een operator en een rechteroperand. Bovendien kunt u de sorteervolgorde opgeven die voor de zoekresultaten moet worden gebruikt. De *sorteervolgorde* bevat informatie die equivalent is aan een SQL `ORDER BY`-component en bestaat uit elementen die de kenmerken bevatten waarop de zoekopdracht is gebaseerd, en een waarde die aangeeft of oplopende of aflopende volgorde moet worden gebruikt.
+A *query* bevat een of meer instructies die logisch worden gekoppeld aan voorwaarden. A *statement* bestaat uit een linkeroperand, een operator en een rechteroperand. Bovendien kunt u de sorteervolgorde opgeven die voor de zoekresultaten moet worden gebruikt. De *sorteervolgorde* bevat informatie die gelijk is aan een SQL `ORDER BY` component en bestaat uit elementen die de kenmerken bevatten waarop de zoekopdracht is gebaseerd en een waarde die aangeeft of oplopende of aflopende volgorde moet worden gebruikt.
 
 U kunt programmatically naar middelen zoeken door de dienstJava API van de Bewaarplaats te gebruiken. Op dit moment is het niet mogelijk om met de webservice-API naar bronnen te zoeken.
 
 **Sorteergedrag**
 
-De sorteervolgorde wordt niet gerespecteerd wanneer de methode `searchProperties` van het object `ResourceRepositoryClient` wordt aangeroepen en een sorteervolgorde wordt opgegeven. Stel bijvoorbeeld dat u een bron maakt met drie aangepaste eigenschappen, waarbij kenmerknamen `name`, `secondName` en `asecondName` zijn. Vervolgens maakt u een sorteervolgordelement op de kenmerknaam en stelt u de waarde `ascending` in op `true`.
+De orde van de soort wordt niet gerespecteerd wanneer het aanhalen van `ResourceRepositoryClient` object `searchProperties` en geeft u een sorteervolgorde op. Stel dat u een bron maakt met drie aangepaste eigenschappen, waarbij kenmerknamen `name`, `secondName`, en `asecondName`. Vervolgens maakt u een sorteervolgordelement op de kenmerknaam en stelt u de optie `ascending` waarde aan `true`.
 
-Vervolgens roept u de methode `ResourceRepositoryClient` van het object `searchProperties` aan en geeft u de sorteervolgorde door. De zoekopdracht retourneert de juiste bron, met de drie eigenschappen. De eigenschappen worden echter niet gesorteerd op kenmerknaam. Ze worden geretourneerd in de volgorde waarin ze zijn toegevoegd: `name`, `secondName` en `asecondName`.
+Vervolgens roept u de `ResourceRepositoryClient` object `searchProperties` en geeft u de sorteervolgorde door. De zoekopdracht retourneert de juiste bron, met de drie eigenschappen. De eigenschappen worden echter niet gesorteerd op kenmerknaam. Ze worden geretourneerd in de volgorde waarin ze zijn toegevoegd: `name`, `secondName`, en `asecondName`.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-5}
+### Overzicht van de stappen {#summary_of_steps-5}
 
 Ga als volgt te werk om naar bronnen te zoeken:
 
@@ -755,7 +754,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De doelmap voor de zoekopdracht opgeven**
 
-Maak een tekenreeks met het basispad waaruit de zoekopdracht moet worden uitgevoerd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*folder*&quot;.
+Maak een tekenreeks met het basispad waaruit de zoekopdracht moet worden uitgevoerd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*map*&quot;.
 
 **De kenmerken opgeven die in de zoekopdracht worden gebruikt**
 
@@ -797,7 +796,7 @@ Zoek naar een bron met behulp van de Repository Service API (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De doelmap voor de zoekopdracht opgeven
 
@@ -805,46 +804,46 @@ Zoek naar een bron met behulp van de Repository Service API (Java):
 
 1. De kenmerken opgeven die in de zoekopdracht worden gebruikt
 
-   Geef de waarden op voor de kenmerken waarop de zoekopdracht moet worden uitgevoerd. De attributen bestaan binnen een `com.adobe.repository.infomodel.bean.Resource` voorwerp. In dit voorbeeld wordt de zoekopdracht uitgevoerd op het kenmerk name. Daarom wordt een `java.lang.String` met de naam van het object `Resource` gebruikt, in dit geval `testResource`.
+   Geef de waarden op voor de kenmerken waarop de zoekopdracht moet worden uitgevoerd. De kenmerken bestaan binnen een `com.adobe.repository.infomodel.bean.Resource` object. In dit voorbeeld wordt de zoekopdracht uitgevoerd op het kenmerk name. derhalve `java.lang.String` met de `Resource` de naam van het object wordt gebruikt, namelijk `testResource` in dit geval.
 
 1. De query maken die wordt gebruikt in de zoekopdracht
 
-   Als u een query wilt maken, maakt u een `com.adobe.repository.query.Query`-object door de standaardconstructor voor de klasse `Query` aan te roepen en instructies toe te voegen aan de query.
+   Als u een query wilt maken, maakt u een `com.adobe.repository.query.Query` object door de standaardconstructor voor het `Query` en voegt instructies toe aan de query.
 
-   Als u een instructie wilt maken, roept u de constructor voor de klasse `com.adobe.repository.query.Query.Statement` aan en geeft u de volgende parameters door:
+   Als u een instructie wilt maken, roept u de constructor voor de `com.adobe.repository.query.Query.Statement` klasse en geef de volgende parameters door:
 
-   * Een linkeroperand die de constante van het middelattribuut bevat. In dit voorbeeld wordt de statische waarde `Resource.ATTRIBUTE_NAME` gebruikt, omdat de naam van de bron wordt gebruikt als basis voor de zoekopdracht.
-   * Een operator die de voorwaarde bevat die wordt gebruikt in de zoekopdracht naar het kenmerk. De operator moet een van de statische constanten in de klasse `Query.Statement` zijn. In dit voorbeeld wordt de statische waarde `Query.Statement.OPERATOR_BEGINS_WITH` gebruikt.
-   * Een rechteroperand die de kenmerkwaarde bevat waarop de zoekopdracht moet worden uitgevoerd. In dit voorbeeld wordt het kenmerk name gebruikt, een `String` met de waarde `"testResource"`.
+   * Een linkeroperand die de constante van het middelattribuut bevat. In dit voorbeeld, omdat de naam van het middel als basis voor het onderzoek wordt gebruikt, de statische waarde `Resource.ATTRIBUTE_NAME` wordt gebruikt.
+   * Een operator die de voorwaarde bevat die wordt gebruikt in de zoekopdracht naar het kenmerk. De operator moet een van de statische constanten in het dialoogvenster `Query.Statement` klasse. In dit voorbeeld wordt de statische waarde `Query.Statement.OPERATOR_BEGINS_WITH` wordt gebruikt.
+   * Een rechteroperand die de kenmerkwaarde bevat waarop de zoekopdracht moet worden uitgevoerd. In dit voorbeeld wordt het kenmerk name, a `String` met de waarde `"testResource"`, wordt gebruikt.
 
-   Geef de naamruimte van de linkeroperand op door de methode `Query.Statement` van het object `setNamespace` aan te roepen en een van de statische waarden in de klasse `com.adobe.repository.infomodel.bean.ResourceProperty` door te geven. In dit voorbeeld wordt `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` gebruikt.
+   Geef de naamruimte van de linkeroperand op door de `Query.Statement` object `setNamespace` en geeft u een van de statische waarden in de `com.adobe.repository.infomodel.bean.ResourceProperty` klasse. In dit voorbeeld: `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` wordt gebruikt.
 
-   Voeg elke verklaring aan de vraag toe door de `Query` methode van het voorwerp `addStatement` aan te halen en in het `Query.Statement` voorwerp over te gaan.
+   Voeg elke verklaring aan de vraag toe door aan te halen `Query` object `addStatement` en geeft de `Query.Statement` object.
 
 1. De sorteervolgorde voor de zoekresultaten maken
 
-   Als u de sorteervolgorde wilt opgeven die in de zoekresultaten wordt gebruikt, maakt u een `com.adobe.repository.query.sort.SortOrder`-object door de standaardconstructor voor de klasse `SortOrder` aan te roepen en voegt u elementen toe aan de sorteervolgorde.
+   Als u de sorteervolgorde wilt opgeven die in de zoekresultaten wordt gebruikt, maakt u een `com.adobe.repository.query.sort.SortOrder` object door de standaardconstructor voor het `SortOrder` en voegt elementen toe aan de sorteervolgorde.
 
-   Als u een element voor de sorteervolgorde wilt maken, roept u een van de constructors voor de klasse `com.adobe.repository.query.sort.SortOrder.Element` aan. In dit voorbeeld wordt de statische waarde `Resource.ATTRIBUTE_NAME` gebruikt als de eerste parameter, en de oplopende volgorde (een `boolean` waarde `true`) wordt opgegeven als de tweede parameter, omdat de naam van de bron wordt gebruikt als de basis voor de zoekopdracht.
+   Als u een element voor de sorteervolgorde wilt maken, roept u een van de constructors voor de opdracht `com.adobe.repository.query.sort.SortOrder.Element` klasse. In dit voorbeeld, omdat de naam van het middel als basis voor het onderzoek wordt gebruikt, de statische waarde `Resource.ATTRIBUTE_NAME` wordt gebruikt als de eerste parameter en oplopende volgorde (a `boolean` waarde van `true`) wordt opgegeven als de tweede parameter.
 
-   Voeg elk element aan de sorteervolgorde toe door de methode `addSortElement` van het `SortOrder`-object aan te roepen en het object `SortOrder.Element` door te geven.
+   Voeg elk element aan de soortorde toe door aan te halen `SortOrder` object `addSortElement` en geeft de `SortOrder.Element` object.
 
 1. Zoeken naar de bronnen
 
-   Als u naar `resources` wilt zoeken op basis van kenmerkeigenschappen, roept u de methode `searchProperties` van het object `ResourceRepositoryClient` aan en geeft u de volgende parameters door:
+   Als u wilt zoeken naar `resources` op basis van kenmerkeigenschappen, activeert u de `ResourceRepositoryClient` object `searchProperties` methode en geef de volgende parameters door:
 
-   * Een `String` met het basispad waaruit de zoekopdracht moet worden uitgevoerd. In dit geval wordt `"/testFolder"` gebruikt.
+   * A `String` met het basispad waaruit de zoekopdracht moet worden uitgevoerd. In dit geval: `"/testFolder"` wordt gebruikt.
    * De query die wordt gebruikt in de zoekopdracht.
-   * De diepte van de zoekopdracht. In dit geval wordt `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` gebruikt om aan te geven dat het basispad en alle bijbehorende mappen moeten worden gebruikt.
-   * Een waarde `int` die de eerste rij aangeeft waarvan de niet-gepagineerde resultatenset moet worden geselecteerd. In dit voorbeeld wordt `0` opgegeven.
-   * Een waarde `int` die het maximumaantal resultaten aangeeft dat moet worden geretourneerd. In dit voorbeeld wordt `10` opgegeven.
+   * De diepte van de zoekopdracht. In dit geval: `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` wordt gebruikt om aan te geven dat het basispad en alle bijbehorende mappen moeten worden gebruikt.
+   * An `int` waarde die de eerste rij aangeeft waaruit de niet-gepagineerde resultatenset moet worden geselecteerd. In dit voorbeeld: `0` wordt opgegeven.
+   * An `int` waarde die het maximumaantal resultaten aangeeft dat moet worden geretourneerd. In dit voorbeeld: `10` wordt opgegeven.
    * De sorteervolgorde die in de zoekopdracht wordt gebruikt.
 
-   De methode retourneert een `java.util.List` van `Resource`-objecten in de opgegeven sorteervolgorde.
+   De methode retourneert een `java.util.List` van `Resource` objecten in de opgegeven sorteervolgorde.
 
 1. De bronnen ophalen uit het zoekresultaat
 
-   Om de middelen terug te winnen in het onderzoeksresultaat, doorloopt `List` en giet elk voorwerp aan `Resource` om zijn informatie te halen. In dit voorbeeld wordt de naam van elke bron weergegeven.
+   Doorloop de `List` en elk object naar een `Resource` om haar informatie op te vragen. In dit voorbeeld wordt de naam van elke bron weergegeven.
 
 **Zie ook**
 
@@ -864,15 +863,15 @@ U kunt relaties tussen bronnen in de opslagplaats opgeven. Er zijn drie soorten 
 * **Lidmaatschap (bestandssysteem)**: een relatie waarin een bron zich in een bepaalde map bevindt.
 * **Aangepast**: een relatie die u opgeeft tussen bronnen. Bijvoorbeeld, als één middel is afgekeurd en een andere middel in de bewaarplaats is geïntroduceerd, kon u uw eigen vervangingsverhouding specificeren.
 
-U kunt uw eigen aangepaste relaties maken. Als u bijvoorbeeld een HTML-bestand opslaat in de opslagplaats en een afbeelding gebruikt, kunt u een aangepaste relatie opgeven om het HTML-bestand te koppelen aan de afbeelding (aangezien gewoonlijk alleen XML-bestanden worden gekoppeld aan afbeeldingen met behulp van een door de opslagplaats gedefinieerde afhankelijkheidsrelatie). Een ander voorbeeld van een aangepaste relatie is als u een andere weergave van de opslagplaats wilt maken met een cyclische grafiekstructuur in plaats van een boomstructuur. U kunt een cirkelvormige grafiek samen met een kijker definiëren om die relaties te doorlopen. Tot slot kon u erop wijzen dat een middel een andere middel vervangt alhoewel de twee middelen volledig verschillend zijn. In dat geval zou u een relatietype buiten de gereserveerde waaier kunnen bepalen en een verhouding tussen die twee middelen tot stand brengen. Uw toepassing zou de enige cliënt zijn die de verhouding kon ontdekken en verwerken, en het zou kunnen worden gebruikt om onderzoeken op die verhouding te voeren.
+U kunt uw eigen aangepaste relaties maken. Als u bijvoorbeeld een HTML-bestand opslaat in de opslagplaats en een afbeelding gebruikt, kunt u een aangepaste relatie opgeven om het HTML-bestand te koppelen aan de afbeelding (aangezien doorgaans alleen XML-bestanden worden gekoppeld aan afbeeldingen die een door de opslagplaats gedefinieerde afhankelijkheidsrelatie gebruiken). Een ander voorbeeld van een aangepaste relatie is als u een andere weergave van de opslagplaats wilt maken met een cyclische grafiekstructuur in plaats van een boomstructuur. U kunt een cirkelvormige grafiek samen met een kijker definiëren om die relaties te doorlopen. Tot slot kon u erop wijzen dat een middel een andere middel vervangt alhoewel de twee middelen volledig verschillend zijn. In dat geval zou u een relatietype buiten de gereserveerde waaier kunnen bepalen en een verhouding tussen die twee middelen tot stand brengen. Uw toepassing zou de enige cliënt zijn die de verhouding kon ontdekken en verwerken, en het zou kunnen worden gebruikt om onderzoeken op die verhouding te voeren.
 
 U kunt via programmacode relaties tussen bronnen opgeven met de Java API of webservice van de Repository-service.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-6}
+### Overzicht van de stappen {#summary_of_steps-6}
 
 Voer de volgende stappen uit om een relatie tussen twee bronnen op te geven:
 
@@ -891,7 +890,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De URI&#39;s opgeven van de bronnen die moeten worden gekoppeld**
 
-Maak tekenreeksen die de URI&#39;s bevatten van de bron die moet worden gerelateerd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*resource*&quot;.
+Maak tekenreeksen die de URI&#39;s bevatten van de bron die moet worden gerelateerd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*resource*&quot;.
 
 **De relatie maken**
 
@@ -919,28 +918,28 @@ Relatiebronnen maken met de Java API van Repository-service en de volgende taken
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De URI&#39;s opgeven van de bronnen die moeten worden gekoppeld
 
-   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval, omdat de middelen `testResource1` en `testResource2` worden genoemd en in de omslag genoemd `testFolder` worden gevestigd, zijn hun URIs `"/testFolder/testResource1"` en `"/testFolder/testResource2"`. De URI&#39;s worden opgeslagen als een `java.lang.String`-object. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
+   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval, omdat de bronnen een naam hebben `testResource1` en `testResource2` en bevinden zich in de map met de naam `testFolder`, hun URI&#39;s zijn `"/testFolder/testResource1"` en `"/testFolder/testResource2"`. De URI&#39;s worden opgeslagen als een `java.lang.String` objecten. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [Bronnen schrijven](aem-forms-repository.md#writing-resources).
 
 1. De relatie maken
 
-   Roep de methode `ResourceRepositoryClient` van het object `createRelationship` aan en geef de volgende parameters door:
+   De `ResourceRepositoryClient` object `createRelationship` methode en geef de volgende parameters door:
 
    * De URI van de bronbron.
    * De URI van de doelbron.
-   * Het type relatie. Dit is een van de statische constanten in de klasse `com.adobe.repository.infomodel.bean.Relation`. In dit voorbeeld wordt een afhankelijkheidsrelatie tot stand gebracht door de waarde `Relation.TYPE_DEPENDANT_OF` op te geven.
-   * Een waarde `boolean` die erop wijst of de doelmiddel automatisch aan `com.adobe.repository.infomodel.Id`-Gebaseerde herkenningsteken van de nieuwe hoofdmiddel wordt bijgewerkt. In dit voorbeeld wordt vanwege de afhankelijkheidsrelatie de waarde `true` opgegeven.
+   * Het type relatie, dat een van de statische constanten is in de `com.adobe.repository.infomodel.bean.Relation` klasse. In dit voorbeeld wordt een afhankelijkheidsrelatie tot stand gebracht door de waarde op te geven `Relation.TYPE_DEPENDANT_OF`.
+   * A `boolean` waarde die aangeeft of de doelbron automatisch wordt bijgewerkt naar de `com.adobe.repository.infomodel.Id`-based identifier van de nieuwe hoofdbron. In dit voorbeeld, wegens de afhankelijkheidsrelatie, de waarde `true` wordt opgegeven.
 
-   U kunt ook een lijst met verwante bronnen voor een bepaalde bron ophalen door de methode `getRelated` van het object `ResourceRepositoryClient` aan te roepen en de volgende parameters door te geven:
+   U kunt ook een lijst met verwante bronnen voor een bepaalde bron ophalen door het `ResourceRepositoryClient` object `getRelated` en geeft de volgende parameters door:
 
-   * De URI van de bron waarvoor gerelateerde bronnen moeten worden opgehaald. In dit voorbeeld wordt de bronbron ( `"/testFolder/testResource1"`) opgegeven.
-   * Een waarde `boolean` die erop wijst of het gespecificeerde middel de bronmiddel in de verhouding is. In dit voorbeeld wordt de waarde `true` opgegeven omdat dit het geval is.
-   * Het relatietype, dat een van de statische constanten in de klasse `Relation` is. In dit voorbeeld wordt een afhankelijkheidsrelatie opgegeven door dezelfde waarde te gebruiken die eerder is gebruikt: `Relation.TYPE_DEPENDANT_OF`.
+   * De URI van de bron waarvoor gerelateerde bronnen moeten worden opgehaald. In dit voorbeeld wordt de bronbron ( `"/testFolder/testResource1"`) is opgegeven.
+   * A `boolean` waarde die aangeeft of de opgegeven bron de bronbron in de relatie is. In dit voorbeeld wordt de waarde `true` is opgegeven, omdat dit het geval is.
+   * Het relatietype, dat een van de statische constanten is in het dialoogvenster `Relation` klasse. In dit voorbeeld wordt een afhankelijkheidsrelatie opgegeven door dezelfde waarde te gebruiken die eerder is gebruikt: `Relation.TYPE_DEPENDANT_OF`.
 
-   De `getRelated` methode keert `java.util.List` van `Resource` voorwerpen terug waardoor u kunt herhalen om elk van de verwante middelen terug te winnen, gietend de voorwerpen in `List` aan `Resource` aangezien u dit doet. In dit voorbeeld wordt verwacht dat `testResource2` voorkomt in de lijst met geretourneerde bronnen.
+   De `getRelated` methode retourneert een `java.util.List` van `Resource` objecten waardoor u kunt herhalen om elk van de gerelateerde bronnen op te halen, waarbij de objecten in de `List` tot `Resource` zoals u doet. In dit voorbeeld: `testResource2` naar verwachting in de lijst met geretourneerde bronnen staan.
 
 **Zie ook**
 
@@ -958,38 +957,38 @@ Relatiebronnen maken met de Repository API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL verbruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL verbruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De URI&#39;s opgeven van de bronnen die moeten worden gekoppeld
 
-   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval, omdat de middelen `testResource1` en `testResource2` worden genoemd en in de omslag genoemd `testFolder` worden gevestigd, zijn hun URIs `"/testFolder/testResource1"` en `"/testFolder/testResource2"`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), worden URIs opgeslagen als `System.String` voorwerpen. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
+   Geef de URI&#39;s op van de bronnen die moeten worden gerelateerd. In dit geval, omdat de bronnen een naam hebben `testResource1` en `testResource2` en bevinden zich in de map met de naam `testFolder`, hun URI&#39;s zijn `"/testFolder/testResource1"` en `"/testFolder/testResource2"`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), worden URIs opgeslagen als a `System.String` objecten. In dit voorbeeld worden de bronnen eerst naar de opslagplaats geschreven en worden hun URI&#39;s opgehaald. Voor meer informatie over het schrijven van een middel, zie [Bronnen schrijven](aem-forms-repository.md#writing-resources).
 
 1. De relatie maken
 
-   Roep de methode `RepositoryServiceService` van het object `createRelationship` aan en geef de volgende parameters door:
+   De `RepositoryServiceService` object `createRelationship` methode en geef de volgende parameters door:
 
    * De URI van de bronbron.
    * De URI van de doelbron.
-   * Het type relatie. In dit voorbeeld wordt een afhankelijkheidsrelatie tot stand gebracht door de waarde `3` op te geven.
-   * Een waarde `boolean` die erop wijst of het relatietype werd gespecificeerd. In dit voorbeeld wordt de waarde `true` opgegeven.
-   * Een waarde `boolean` die erop wijst of de doelmiddel automatisch aan `Id`-Gebaseerde herkenningsteken van de nieuwe hoofdmiddel wordt bijgewerkt. In dit voorbeeld wordt vanwege de afhankelijkheidsrelatie de waarde `true` opgegeven.
-   * Een waarde `boolean` die erop wijst of het doelhoofd werd gespecificeerd. In dit voorbeeld wordt de waarde `true` opgegeven.
-   * Geef `null` door voor de laatste parameter.
+   * Het type relatie. In dit voorbeeld wordt een afhankelijkheidsrelatie tot stand gebracht door de waarde op te geven `3`.
+   * A `boolean` waarde die aangeeft of het relatietype is opgegeven. In dit voorbeeld wordt de waarde `true` wordt opgegeven.
+   * A `boolean` waarde die aangeeft of de doelbron automatisch wordt bijgewerkt naar de `Id`-based identifier van de nieuwe hoofdbron. In dit voorbeeld, wegens de afhankelijkheidsrelatie, de waarde `true` wordt opgegeven.
+   * A `boolean` waarde die aangeeft of de doelkop is opgegeven. In dit voorbeeld wordt de waarde `true` wordt opgegeven.
+   * Voldoende `null` voor de laatste parameter.
 
-   U kunt ook een lijst met verwante bronnen voor een bepaalde bron ophalen door de methode `getRelated` van het object `RepositoryServiceService` aan te roepen en de volgende parameters door te geven:
+   U kunt ook een lijst met verwante bronnen voor een bepaalde bron ophalen door het `RepositoryServiceService` object `getRelated` en geeft de volgende parameters door:
 
-   * De URI van de bron waarvoor gerelateerde bronnen moeten worden opgehaald. In dit voorbeeld wordt de bronbron ( `"/testFolder/testResource1"`) opgegeven.
-   * Een waarde `boolean` die erop wijst of het gespecificeerde middel de bronmiddel in de verhouding is. In dit voorbeeld wordt de waarde `true` opgegeven omdat dit het geval is.
-   * Een waarde `boolean` die erop wijst of de bronbron werd gespecificeerd. In dit voorbeeld wordt de waarde `true` opgegeven.
+   * De URI van de bron waarvoor gerelateerde bronnen moeten worden opgehaald. In dit voorbeeld wordt de bronbron ( `"/testFolder/testResource1"`) is opgegeven.
+   * A `boolean` waarde die aangeeft of de opgegeven bron de bronbron in de relatie is. In dit voorbeeld wordt de waarde `true` is opgegeven, omdat dit het geval is.
+   * A `boolean` waarde die aangeeft of de bronbron is opgegeven. In dit voorbeeld wordt de waarde `true` wordt opgegeven.
    * Een array van gehele getallen die de relatietypen bevatten. In dit voorbeeld wordt een afhankelijkheidsrelatie opgegeven door dezelfde waarde in de array te gebruiken als eerder werd gebruikt: `3`.
-   * Geef `null` door voor de resterende twee parameters.
+   * Voldoende `null` voor de overige twee parameters.
 
-   De `getRelated` methode keert een serie van voorwerpen terug die aan `Resource` voorwerpen kunnen worden gegoten waardoor u kunt herhalen om elk van de verwante middelen terug te winnen. In dit voorbeeld wordt verwacht dat `testResource2` voorkomt in de lijst met geretourneerde bronnen.
+   De `getRelated` methode retourneert een array met objecten waarop kan worden gecast `Resource` objecten waarmee u kunt herhalen om elk van de gerelateerde bronnen op te halen. In dit voorbeeld: `testResource2` naar verwachting in de lijst met geretourneerde bronnen staan.
 
 **Zie ook**
 
@@ -997,7 +996,7 @@ Relatiebronnen maken met de Repository API (webservice):
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Bronnen {#locking-resources} vergrendelen
+## Bronnen vergrendelen {#locking-resources}
 
 U kunt een bron of reeks bronnen vergrendelen voor exclusief gebruik door een bepaalde gebruiker of voor gedeeld gebruik door meerdere gebruikers. Een gedeelde vergrendeling is een indicatie dat er iets met de bron zal gebeuren, maar het belet niemand anders om acties met die bron te ondernemen. Een gedeeld slot zou als signalerend mechanisme moeten worden beschouwd. Een exclusief slot betekent dat de gebruiker die het middel sloot de middel zal veranderen, en het slot zorgt ervoor dat niemand anders dit kan doen tot de gebruiker niet meer toegang tot het middel nodig heeft en het slot heeft vrijgegeven. Als een bewaarnemerbeheerder een middel ontgrendelt, zullen alle exclusieve en gedeelde sloten op dat middel automatisch worden verwijderd. Dit type actie is bedoeld voor situaties waarin een gebruiker niet meer beschikbaar is en de bron niet heeft ontgrendeld.
 
@@ -1009,9 +1008,9 @@ U kunt de toegang tot bronnen programmatisch beheren met de Java API of webservi
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-7}
+### Overzicht van de stappen {#summary_of_steps-7}
 
 Voer de volgende stappen uit om bronnen te vergrendelen en te ontgrendelen:
 
@@ -1032,7 +1031,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De URI opgeven van de bron die moet worden vergrendeld**
 
-Maak een tekenreeks met de URI van de bron die moet worden vergrendeld. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*resource*&quot;.
+Maak een tekenreeks met de URI van de bron die moet worden vergrendeld. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*resource*&quot;.
 
 **De bron vergrendelen**
 
@@ -1068,31 +1067,31 @@ Bronnen vergrendelen met de API voor opslagplaats (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De URI opgeven van de bron die moet worden vergrendeld
 
-   Geef de URI op van de bron die moet worden vergrendeld. In dit geval is de URI `testResource` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResource"` bevindt. De URI wordt opgeslagen als een `java.lang.String`-object.
+   Geef de URI op van de bron die moet worden vergrendeld. In dit geval omdat de resource `testResource` bevindt zich in de map met de naam `testFolder`, de URI ervan is `"/testFolder/testResource"`. De URI wordt opgeslagen als een `java.lang.String` object.
 
 1. De bron vergrendelen
 
-   Roep de methode `ResourceRepositoryClient` van het object `lockResource` aan en geef de volgende parameters door:
+   De `ResourceRepositoryClient` object `lockResource` methode en geef de volgende parameters door:
 
    * De URI van de resource.
-   * Het vergrendelingsbereik. In dit voorbeeld wordt het vergrendelingsbereik opgegeven als `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`, omdat de bron wordt vergrendeld voor exclusief gebruik.
-   * De vergrendelingsdiepte. In dit voorbeeld wordt de vergrendelingsdiepte opgegeven als `Lock.DEPTH_ZERO`, omdat de vergrendeling alleen van toepassing is op de specifieke bron en geen van de leden of onderliggende elementen.
+   * Het vergrendelingsbereik. In dit voorbeeld wordt het vergrendelingsbereik opgegeven zoals in `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
+   * De vergrendelingsdiepte. In dit voorbeeld wordt de vergrendelingsdiepte opgegeven als: omdat de vergrendeling alleen van toepassing is op de specifieke bron en geen van de leden of onderliggende elementen ervan `Lock.DEPTH_ZERO`.
 
    >[!NOTE]
    >
-   >De overbelaste versie van de methode `lockResource` die vier parameters vereist werpt een uitzondering. Zorg ervoor om de `lockResource` methode te gebruiken die drie parameters zoals aangetoond in deze analyse vereist.
+   >De overbelaste versie van de `lockResource` methode die vier parameters vereist werpt een uitzondering. Zorg ervoor dat u de `lockResource` methode die drie parameters zoals aangetoond in deze analyse vereist.
 
 1. Haalt de vergrendelingen voor de bron op
 
-   Roep de methode `ResourceRepositoryClient` van het object `getLocks` aan en geef de URI van de bron als parameter door. De methode retourneert een lijst met vergrendelingsobjecten waarmee u kunt herhalen. In dit voorbeeld worden de eigenaar, diepte en bereik van de vergrendeling voor elk object afgedrukt door respectievelijk de methoden `getOwnerUserId`, `getDepth` en `getType` van elk Lock-object aan te roepen.
+   De `ResourceRepositoryClient` object `getLocks` en geeft de URI van de bron door als een parameter. De methode retourneert een lijst met vergrendelingsobjecten waarmee u kunt herhalen. In dit voorbeeld worden de eigenaar van de vergrendeling, de diepte en het bereik voor elk object afgedrukt door het aanroepen van het object Lock `getOwnerUserId`, `getDepth`, en `getType` methoden, respectievelijk.
 
 1. De bron ontgrendelen
 
-   Roep de methode `ResourceRepositoryClient` van het object `unlockResource` aan en geef de URI van de bron als parameter door. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie.
+   De `ResourceRepositoryClient` object `unlockResource` en geeft de URI van de bron door als een parameter. Zie voor meer informatie de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Zie ook**
 
@@ -1110,34 +1109,34 @@ Bronnen vergrendelen met behulp van de Repository Service API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL gebruikend Base64 gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL gebruikend Base64 gebruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De URI opgeven van de bron die moet worden vergrendeld
 
-   Geef een tekenreeks op die de URI bevat van de bron die moet worden vergrendeld. In dit geval is de URI `testResource` in de map `testFolder`. `"/testFolder/testResource"` Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in een `System.String` voorwerp op.
+   Geef een tekenreeks op die de URI bevat van de bron die moet worden vergrendeld. In dit geval omdat de resource `testResource` bevindt zich in de map `testFolder`, de URI ervan is `"/testFolder/testResource"`. Wanneer het gebruiken van een taal volgzaam met het Kader van Microsoft .NET (bijvoorbeeld, C#), sla URI in a op `System.String` object.
 
 1. De bron vergrendelen
 
-   Roep de methode `RepositoryServiceService` van het object `lockResource` aan en geef de volgende parameters door:
+   De `RepositoryServiceService` object `lockResource` methode en geef de volgende parameters door:
 
    * De URI van de resource.
-   * Het vergrendelingsbereik. In dit voorbeeld wordt het vergrendelingsbereik opgegeven als `11`, omdat de bron wordt vergrendeld voor exclusief gebruik.
-   * De vergrendelingsdiepte. In dit voorbeeld wordt de vergrendelingsdiepte opgegeven als `2`, omdat de vergrendeling alleen van toepassing is op de specifieke bron en geen van de leden of onderliggende elementen.
-   * Een waarde `int` die op het aantal seconden wijst tot het slot verloopt. In dit voorbeeld wordt de waarde van `1000` gebruikt.
-   * Geef `null` door voor de laatste parameter.
+   * Het vergrendelingsbereik. In dit voorbeeld wordt het vergrendelingsbereik opgegeven zoals in `11`.
+   * De vergrendelingsdiepte. In dit voorbeeld wordt de vergrendelingsdiepte opgegeven als: omdat de vergrendeling alleen van toepassing is op de specifieke bron en geen van de leden of onderliggende elementen ervan `2`.
+   * An `int` waarde die op het aantal seconden wijst tot het slot verloopt. In dit voorbeeld wordt de waarde van `1000` wordt gebruikt.
+   * Voldoende `null` voor de laatste parameter.
 
 1. Haalt de vergrendelingen voor de bron op
 
-   Roep de methode `RepositoryServiceService` van het object `getLocks` aan en geef de URI van de bron door als de eerste parameter en `null` voor de tweede parameter. De methode retourneert een `object`-array met `Lock`-objecten waardoor u kunt herhalen. In dit voorbeeld worden de eigenaar, diepte en bereik van de vergrendeling voor elk object afgedrukt door toegang te krijgen tot de velden `ownerUserId`, `depth` en `type` van elk object.`Lock`
+   De `RepositoryServiceService` object `getLocks` en geeft de URI van de bron door als de eerste parameter en `null` voor de tweede parameter. De methode retourneert een `object` array met `Lock` objecten waarmee u kunt herhalen. In dit voorbeeld worden de eigenaar, diepte en bereik van de vergrendeling voor elk object afgedrukt door toegang te krijgen tot elk object `Lock` object `ownerUserId`, `depth`, en `type` respectievelijk velden.
 
 1. De bron ontgrendelen
 
-   Roep de methode `RepositoryServiceService` van het object `unlockResource` aan en geef de URI van de bron door als de eerste parameter en `null` voor de tweede parameter.
+   De `RepositoryServiceService` object `unlockResource` en geeft de URI van de bron door als de eerste parameter en `null` voor de tweede parameter.
 
 **Zie ook**
 
@@ -1145,7 +1144,7 @@ Bronnen vergrendelen met behulp van de Repository Service API (webservice):
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
-## Bronnen {#deleting-resources} verwijderen
+## Bronnen verwijderen {#deleting-resources}
 
 U kunt bronnen programmatisch verwijderen van een bepaalde locatie in de opslagplaats met behulp van de Java API (SOAP) van de Repository-service.
 
@@ -1157,13 +1156,13 @@ Een schrappingsverrichting is niet transactie-veilig in systemen ECM. Als u bijv
 
 >[!NOTE]
 >
->Wanneer u de `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()`-methode gebruikt met ECM-opslagplaats (EMC Documentum Content Server en IBM FileNet P8 Content Manager), wordt de transactie niet teruggedraaid als de verwijdering mislukt voor een van de opgegeven bronnen, wat betekent dat bestanden die zijn verwijderd, niet kunnen worden verwijderd.
+>Wanneer u de `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` methode met ECM-opslagplaats (EMC Documentum Content Server en IBM FileNet P8 Content Manager), wordt de transactie niet teruggedraaid als de verwijdering mislukt voor een van de opgegeven bronnen, wat betekent dat bestanden die zijn verwijderd, niet kunnen worden verwijderd.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Bewaarplaats, zie [Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Bewaarplaats, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary_of_steps-8}
+### Overzicht van de stappen {#summary_of_steps-8}
 
 Ga als volgt te werk om een bron te verwijderen:
 
@@ -1182,7 +1181,7 @@ Voordat u een bron via programmacode kunt lezen, moet u een verbinding tot stand
 
 **De URI opgeven van de bron die moet worden verwijderd**
 
-Maak een tekenreeks met de URI van de bron die moet worden verwijderd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*path*/*resource*&quot;. Als de te schrappen bron een omslag is, zal de schrapping recursief zijn.
+Maak een tekenreeks met de URI van de bron die moet worden verwijderd. De syntaxis bevat slashes, zoals in dit voorbeeld: &quot;/*pad*/*resource*&quot;. Als de te schrappen bron een omslag is, zal de schrapping recursief zijn.
 
 **De bron verwijderen**
 
@@ -1210,15 +1209,15 @@ Verwijder een bron met de Repository API (Java):
 
 1. De serviceclient maken
 
-   Maak een `ResourceRepositoryClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
+   Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De URI opgeven van de bron die moet worden verwijderd
 
-   Geef de URI op van de bron die moet worden opgehaald. In dit geval, omdat het middel genoemd testResourceToBeDelette in de omslag genoemd testFolder is, is zijn URI `/testFolder/testResourceToBeDeleted`. De URI wordt opgeslagen als een `java.lang.String`-object. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
+   Geef de URI op van de bron die moet worden opgehaald. In dit geval, omdat de bron met de naam testResourceToBeDelette zich in de map met de naam testFolder bevindt, is zijn URI `/testFolder/testResourceToBeDeleted`. De URI wordt opgeslagen als een `java.lang.String` object. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [Bronnen schrijven](aem-forms-repository.md#writing-resources).
 
 1. De bron verwijderen
 
-   Roep de methode `ResourceRepositoryClient` van het object `deleteResource` aan en geef de URI van de bron als parameter door.
+   De `ResourceRepositoryClient` object `deleteResource` en geeft de URI van de bron door als een parameter.
 
 **Zie ook**
 
@@ -1236,20 +1235,20 @@ Verwijder een bron met de Repository API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Bewaarplaats WSDL gebruikend Base64 gebruikt.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET.
+   * Creeer een Microsoft .NET cliëntassemblage die de Bewaarplaats WSDL gebruikend Base64 gebruikt.
+   * Verwijs naar de Microsoft .NET cliëntassemblage.
 
 1. De serviceclient maken
 
-   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` voorwerp door zijn standaardaannemer aan te halen. Plaats zijn `Credentials` bezit gebruikend een `System.Net.NetworkCredential` voorwerp dat de gebruikersnaam en het wachtwoord bevat.
+   Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `RepositoryServiceService` object door de standaardconstructor aan te roepen. Stel zijn `Credentials` eigenschap met een `System.Net.NetworkCredential` object met de gebruikersnaam en het wachtwoord.
 
 1. De URI opgeven van de bron die moet worden verwijderd
 
-   Geef de URI op van de bron die moet worden opgehaald. In dit geval is de URI `testResourceToBeDeleted` omdat de bron `testFolder` zich in de map met de naam `"/testFolder/testResourceToBeDeleted"` bevindt. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [het Schrijven van Middelen](aem-forms-repository.md#writing-resources).
+   Geef de URI op van de bron die moet worden opgehaald. In dit geval omdat de resource `testResourceToBeDeleted` bevindt zich in de map met de naam `testFolder`, de URI ervan is `"/testFolder/testResourceToBeDeleted"`. In dit voorbeeld wordt de bron eerst naar de opslagplaats geschreven en wordt de URI ervan opgehaald. Voor meer informatie over het schrijven van een middel, zie [Bronnen schrijven](aem-forms-repository.md#writing-resources).
 
 1. De bron verwijderen
 
-   Roep de methode `deleteResources` van het object `RepositoryServiceService` aan en geef een `System.String`-array door die de URI van de bron als eerste parameter bevat. Geef `null` door voor de tweede parameter.
+   De `RepositoryServiceService` object `deleteResources` methode en een `System.String` array met de URI van de resource als eerste parameter. Voldoende `null` voor de tweede parameter.
 
 **Zie ook**
 

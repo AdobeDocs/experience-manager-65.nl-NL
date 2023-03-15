@@ -18,7 +18,7 @@ ht-degree: 8%
 
 ---
 
-# Sets draaien{#spin-sets}
+# Spin Sets{#spin-sets}
 
 Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
 

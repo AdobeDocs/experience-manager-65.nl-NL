@@ -1,8 +1,8 @@
 ---
 title: WebLogic Server starten en stoppen
-seo-title: WebLogic Server starten en stoppen
+seo-title: Starting and stopping WebLogic Server
 description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
-seo-description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
+seo-description: Several procedures require you to start or stop the instance of WebLogic Server where you want to deploy AEM forms modules. This document describes how to start and stop the WebLogic Server.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Bij verschillende procedures moet u de instantie van WebLogic Server starten of 
 
 >[!NOTE]
 >
->Als u WebLogic Server op Red Hat® Enterprise Linux Advanced Server 4.0 uitvoert, stelt u de `LD_ASSUME_KERNEL`-omgevingsvariabele in op 2.4.19 met de opdracht `export LD_ASSUME_KERNEL=2.4.19`. Voer vervolgens WebLogic Server uit vanuit dezelfde shell waarin u deze omgevingsvariabele instelt.
+>Als u WebLogic Server uitvoert op Red Hat® Enterprise Linux Advanced Server 4.0, stelt u de `LD_ASSUME_KERNEL` omgevingsvariabele tot 2.4.19 met behulp van de `export LD_ASSUME_KERNEL=2.4.19` gebruiken. Voer vervolgens WebLogic Server uit vanuit dezelfde shell waarin u deze omgevingsvariabele instelt.
 
-## WebLogic-server {#start-weblogic-server} starten
+## WebLogic-server starten {#start-weblogic-server}
 
-1. Van een bevelherinnering, ga naar *[appserver wortel]*/user_projects/domain/*[appserverdomain]*.
+1. Van een bevelherinnering, ga naar *[appserver-hoofdmap]*/user_projects/domain/*[appserverdomein]*.
 1. Voer de volgende opdracht in:
 
    * (Windows) `startWebLogic.cmd`
@@ -62,7 +62,7 @@ Bij verschillende procedures moet u de instantie van WebLogic Server starten of 
 
 ## WebLogic-server stoppen {#stop-weblogic-server}
 
-1. Start WebLogic Server Administration Console door `https://[host name]:7001/console` in te voeren op de URL-regel van een webbrowser.
+1. Start WebLogic Server Administration Console door te typen `https://[host name]:7001/console` in de URL-regel van een webbrowser.
 1. Meld u aan door de gebruikersnaam en het wachtwoord te typen die u hebt gebruikt bij het maken van deze WebLogic-configuratie en klik vervolgens op Aanmelden.
 1. Klik onder Midden wijzigen op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers.
@@ -75,18 +75,18 @@ De WebLogic Server-beheerconsole is niet meer beschikbaar en de opdrachtprompt w
 
 ## WebLogic-beheerconsole starten {#start-weblogic-administration-console}
 
-1. Als WebLogic Admin Server niet reeds loopt, van een bevelherinnering, ga naar *[appserver wortel]\user_projects\domains\[domeinnaam]* folder, en ga het volgende bevel in:
+1. Als WebLogic Admin Server nog niet actief is, gaat u vanaf een opdrachtprompt naar *[appserver-hoofdmap]\user_projects\domains\[domeinnaam]* en voert u de volgende opdracht in:
 
    * (Windows) `startWebLogic.cmd`
    * (Linux, UNIX) ./ `startWebLogic.sh`
 
-1. Toegang tot de WebLogic Server-beheerconsole door `https://[host name]:[port]/console` te typen in de URL-regel van een webbrowser, waarbij *[port]* de niet-beveiligde luisterpoort is. Deze poortwaarde is standaard 7001.
+1. Toegang tot de WebLogic Server-beheerconsole door te typen `https://[host name]:[port]/console` in de URL-regel van een webbrowser, waarbij *[poort]* is de onveilige luisterpoort. Deze poortwaarde is standaard 7001.
 1. Typ in het aanmeldingsscherm uw gebruikersnaam en wachtwoord voor de beheerder en klik op Aanmelden.
 
-## Knooppuntbeheer starten {#start-node-manager}
+## Notitiebeheer starten {#start-node-manager}
 
 1. Zorg ervoor dat WebLogic Server wordt uitgevoerd.
-1. Van een nieuwe bevelherinnering, ga naar *[appserver wortel]*/server/bin.
+1. Van een nieuwe bevelherinnering, ga naar *[appserver-hoofdmap]*/server/bin.
 1. Voer de volgende opdracht in:
 
    * (Windows) `startNodeManager.cmd`
@@ -96,22 +96,22 @@ De WebLogic Server-beheerconsole is niet meer beschikbaar en de opdrachtprompt w
 
 Nadat u WebLogic Server sluit, kunt u de bevelherinnering sluiten waarvan u de Manager van de Knoop riep.
 
-## Een WebLogic beheerde server {#start-a-weblogic-managed-server} starten
+## Een door WebLogic beheerde server starten {#start-a-weblogic-managed-server}
 
 >[!NOTE]
 >
 >Deze taak kan alleen worden uitgevoerd nadat u een WebLogic-domein en een beheerde server hebt gemaakt.
 
 1. Zorg ervoor dat WebLogic Server en Node Manager lopen.
-1. Start WebLogic Server Administration Console door `https://host name]:[port]/console` in te voeren op de URL-regel van een webbrowser.
+1. Start WebLogic Server Administration Console door te typen `https://host name]:[port]/console` in de URL-regel van een webbrowser.
 1. Klik onder Domeinstructuur op Omgeving > Servers.
 1. Klik in het rechterdeelvenster op het tabblad Beheer.
 1. Selecteer de beheerde server die u wilt starten.
 1. Klik op de knop Start onder de beheerde server die u wilt starten.
 
-## Een door WebLogic beheerde server {#stop-a-weblogic-managed-server} stoppen
+## Een door WebLogic beheerde server stoppen {#stop-a-weblogic-managed-server}
 
-1. Start WebLogic Server Administration Console door `https://`*[hostnaam]:[poort ]*`/console` te typen in de URL-regel van een webbrowser.
+1. Start WebLogic Server Administration Console door te typen `https://`*[hostnaam]:[poort ]*`/console` in de URL-regel van een webbrowser.
 1. Klik onder Domeinstructuur op Omgeving > Servers.
 1. Klik in het rechterdeelvenster op het tabblad Beheer.
 1. Selecteer de beheerde server die u wilt stoppen.

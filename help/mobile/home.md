@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5 Mobiele gebruikershandleiding
+title: AEM 6.5 Handleiding voor mobiele gebruikers
 seo-title: AEM 6.5 Mobile User Guide
 description: Profiteer van AEM ondersteuning voor het maken en beheren van inhoud voor mobiele apps. Ontdek een inleiding bij en leer hoe u de On-Demand Services App en Adobe PhoneGap Enterprise kunt ontwerpen, ontwikkelen en beheren.
 seo-description: Describes how to create and manage content for mobile applications.
@@ -7,11 +7,11 @@ exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '380'
-ht-degree: 9%
+ht-degree: 16%
 
 ---
 
-# AEM 6.5 Mobiele gebruikershandleiding
+# AEM 6.5 Handleiding voor mobiele gebruikers
 
 Profiteer van AEM ondersteuning voor het maken en beheren van inhoud voor mobiele apps. Ontdek een inleiding bij en leer hoe u de On-Demand Services App en Adobe PhoneGap Enterprise kunt ontwerpen, ontwikkelen en beheren.
 
@@ -30,8 +30,8 @@ Profiteer van AEM ondersteuning voor het maken en beheren van inhoud voor mobiel
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

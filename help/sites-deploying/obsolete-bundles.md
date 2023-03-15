@@ -1,8 +1,8 @@
 ---
 title: Lijst met verouderde bundels die na de upgrade zijn verwijderd
-seo-title: Lijst met verouderde bundels die na de upgrade zijn verwijderd
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: Een lijst met de bundels die automatisch worden verwijderd bij de upgrade naar AEM 6.3.
-seo-description: Een lijst met de bundels die automatisch worden verwijderd bij de upgrade naar AEM 6.3.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
-
 
 # Lijst met verouderde bundels die na de upgrade zijn verwijderd{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
@@ -68,4 +67,3 @@ Bij de upgrade naar AEM 6.3 worden de volgende bundels automatisch verwijderd, a
 * com.day.cq.cq-pinauthhandler, versie 1.0.0, Actief
 * com.day.cq.dam.commons.nekohtml, versie 0.9.5, Actief
 * com.day.crx.crxde-support, versie 2.3.14, geïnstalleerd
-

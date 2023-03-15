@@ -1,8 +1,8 @@
 ---
 title: De app synchroniseren
-seo-title: De app synchroniseren
+seo-title: Synchronizing the app
 description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
-seo-description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
+seo-description: Synchronize the AEM Forms app on your mobile device with the AEM Forms server.
 uuid: 3a6fb2d5-2ec4-4f78-a42a-fc921b66238e
 contentOwner: robhagat
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 393e4332-a2cc-42c8-a18f-3035addbcfaa
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 6bb1d6df-b322-4112-bc25-6300877ee146
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-
 # De app synchroniseren{#synchronizing-the-app}
 
-## De app {#synchronizing-the-app-1} synchroniseren
+## De app synchroniseren {#synchronizing-the-app-1}
 
 De formulieren in uw app worden gedownload van de AEM Forms-server. De formulieren worden gedownload onder Taken en op de tabbladen Forms. Concepten die zijn gemaakt op basis van formulieren, worden gedownload op het tabblad Concepten en concepten die zijn gemaakt op basis van taken, worden gedownload op het tabblad Taken. Voor een zelfstandig formulier op de OSGi-server worden formulieren en concepten gedownload in respectievelijk Forms en Concept tabbladen.
 
@@ -35,7 +34,7 @@ Tik op de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbene
 
 **De synchronisatiefrequentie wijzigen**
 
-1. Tik op de menuknop linksboven in het scherm Home om naar het scherm Instelling te gaan en tik vervolgens op **Instellingen**.
+1. Tik op de menuknop linksboven in het scherm Home om naar het scherm Instelling te gaan. Tik vervolgens op **Instellingen**.
 1. Tik in het scherm Instellingen op het tabblad Algemeen.
 
    ![Frequentie-instelling synchroniseren in venster Algemene instellingen](assets/gen-settings-2.png)

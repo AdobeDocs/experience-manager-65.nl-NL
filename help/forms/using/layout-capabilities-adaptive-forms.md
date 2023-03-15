@@ -1,22 +1,21 @@
 ---
 title: Indelingsmogelijkheden van adaptieve formulieren
-seo-title: Indelingsmogelijkheden van adaptieve formulieren
+seo-title: Layout capabilities of adaptive forms
 description: De indeling en vormgeving van adaptieve formulieren op verschillende apparaten worden bepaald door de indelingsinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
-seo-description: De indeling en vormgeving van adaptieve formulieren op verschillende apparaten worden bepaald door de indelingsinstellingen. Begrijp de verschillende lay-outs en hoe te om hen toe te passen.
+seo-description: Layout and appearances of adaptive forms on various devices are governed by the layout settings. Understand the various layouts and how to apply them.
 uuid: 79022ac2-1aa3-47c5-b094-cbe83334ea62
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
-
 
 # Indelingsmogelijkheden van adaptieve formulieren{#layout-capabilities-of-adaptive-forms}
 
@@ -30,15 +29,15 @@ Lees de volgende artikelen voor meer informatie over adaptieve formulieren voord
 
 [Inleiding tot ontwerpformulieren](../../forms/using/introduction-forms-authoring.md)
 
-## Typen indelingen {#types-of-layouts}
+## Typen lay-outs {#types-of-layouts}
 
 Een adaptief formulier biedt u de volgende typen indelingen:
 
-**Panel** LayoutControls how de punten of de componenten binnen een paneel op een apparaat worden getoond.
+**Layout deelvenster** Bepaalt hoe items of componenten in een deelvenster op een apparaat worden weergegeven.
 
-**Mobile** LayoutHiermee bepaalt u de navigatie van een formulier op een mobiel apparaat. Als de apparaatbreedte 768 pixels of meer is, wordt de lay-out beschouwd als een mobiele lay-out en geoptimaliseerd voor een mobiel apparaat.
+**Mobiele lay-out** Hiermee regelt u de navigatie van een formulier op een mobiel apparaat. Als de apparaatbreedte 768 pixels of meer is, wordt de lay-out beschouwd als een mobiele lay-out en geoptimaliseerd voor een mobiel apparaat.
 
-**Werkbalk** LayoutHiermee bepaalt u de plaatsing van de knoppen Handeling op de werkbalk of de werkbalk van het deelvenster in een formulier.
+**Werkbalklay-out** Hiermee bepaalt u de plaatsing van de knoppen Handeling op de werkbalk of de werkbalk van het deelvenster in een formulier.
 
 Al deze paneellay-outs worden bepaald in de volgende plaats:
 
@@ -54,7 +53,7 @@ Al deze paneellay-outs worden bepaald in de volgende plaats:
 
 Een auteur van een formulier kan een indeling koppelen aan elk deelvenster van een adaptief formulier, inclusief het hoofddeelvenster.
 
-De lay-outs voor deelvensters zijn beschikbaar op de locatie `/libs/fd/af/layouts/panel`.
+De schermindelingen van het deelvenster zijn beschikbaar op `/libs/fd/af/layouts/panel` locatie.
 
 ![Lijst met deelvensterindelingen voor het hoofdvenster van een adaptief formulier](assets/layouts.png)
 
@@ -64,7 +63,7 @@ Lijst met deelvensterindelingen in adaptieve formulieren
 
 Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan de schermgrootte van uw apparaat zonder dat u hiervoor speciale navigatie nodig hebt.
 
-Met deze lay-out kunt u meerdere **[!UICONTROL Panel adaptive form]** componenten achter elkaar in het deelvenster plaatsen.
+Met deze lay-out kunt u meerdere plaatsen **[!UICONTROL Panel adaptive form]** in het deelvenster achter elkaar.
 
 ![Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm](assets/responsive_layout_seen_on_small_screen.png)
 
@@ -74,11 +73,11 @@ Een formulier met een responsieve indeling zoals wordt weergegeven op een klein 
 
 Een formulier met een responsieve indeling zoals weergegeven op een groot scherm
 
-### Wizard - een formulier dat uit meerdere stappen bestaat en één stap per keer {#wizard-a-multi-step-form-showing-one-step-at-a-time} weergeeft
+### Wizard - Een formulier dat uit meerdere stappen bestaat en één stap tegelijk weergeeft {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
 Met deze deelvensterindeling kunt u navigatie met instructies in een formulier bieden. Gebruik deze indeling bijvoorbeeld wanneer u verplichte gegevens in een formulier wilt vastleggen en gebruikers stapsgewijs wilt begeleiden.
 
-Met de component `Panel adaptive form` kunt u stap voor stap navigeren in een deelvenster. Als u deze lay-out gebruikt, gaat een gebruiker pas naar de volgende stap nadat de huidige stap is voltooid
+Gebruik de `Panel adaptive form` voor stapsgewijze navigatie binnen een deelvenster. Als u deze lay-out gebruikt, gaat een gebruiker pas naar de volgende stap nadat de huidige stap is voltooid
 
 ```javascript
 window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpression)
@@ -94,7 +93,7 @@ Een formulier met wizard
 
 ### Layout voor accordeonontwerp {#layout-for-accordion-design}
 
-Met deze lay-out kunt u de component `Panel adaptive form` plaatsen in een deelvenster met accordeonstijlnavigatie. Met deze indeling kunt u ook herhaalbare deelvensters maken. Met herhalende deelvensters kunt u, indien nodig, deelvensters dynamisch toevoegen of verwijderen. U kunt het minimum en het maximum aantal keren bepalen dat een paneel herhaalt. De titel van het deelvenster kan ook dynamisch worden bepaald op basis van de informatie in de deelvensteritems.
+Met deze lay-out kunt u de `Panel adaptive form` in een deelvenster met accordeonstijlnavigatie. Met deze indeling kunt u ook herhaalbare deelvensters maken. Met herhalende deelvensters kunt u, indien nodig, deelvensters dynamisch toevoegen of verwijderen. U kunt het minimum en het maximum aantal keren bepalen dat een paneel herhaalt. De titel van het deelvenster kan ook dynamisch worden bepaald op basis van de informatie in de deelvensteritems.
 
 De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de eindgebruiker in de titel van het geminimaliseerde paneel worden verstrekt.
 
@@ -102,17 +101,17 @@ De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de e
 
 Herhaalbare deelvensters die zijn gemaakt met de accordeonindeling
 
-### Lay-out met tabs - tabs worden links {#tabbed-layout-tabs-appear-on-the-left} weergegeven
+### Lay-out met tabs - links worden tabs weergegeven {#tabbed-layout-tabs-appear-on-the-left}
 
-Met deze indeling kunt u de component `Panel adaptive form` in een deelvenster met tabnavigatie plaatsen. De tabbladen worden links van de inhoud van het deelvenster geplaatst.
+Met deze lay-out kunt u de `Panel adaptive form` in een deelvenster met tabnavigatie. De tabbladen worden links van de inhoud van het deelvenster geplaatst.
 
 ![In de lay-out Tabbed, verschijnen de lusjes op de linkerzijde](assets/tabbed_layout_left.png)
 
 Tabs die links van een deelvenster worden weergegeven
 
-### Lay-out met tabs - tabs worden boven {#tabbed-layout-tabs-appear-on-the-top} weergegeven
+### Lay-out met tabs - tabs worden boven aan het scherm weergegeven {#tabbed-layout-tabs-appear-on-the-top}
 
-Met deze indeling kunt u de `Panel adaptive form`-component in een deelvenster met tabnavigatie plaatsen. De tabbladen worden boven op de inhoud van het deelvenster geplaatst.
+Met deze lay-out kunt u de `Panel adaptive form` Component in a panel with tab navigation. De tabbladen worden boven op de inhoud van het deelvenster geplaatst.
 
 ![Lay-out met tabs in adaptieve formulieren met bovenaan tabs](assets/tabbed_layout_top.png)
 
@@ -122,15 +121,15 @@ Tabs die boven in een deelvenster worden weergegeven
 
 Mobiele lay-outs maken gebruikersvriendelijke navigatie op mobiele apparaten met relatief kleinere schermen mogelijk. Mobiele lay-outs maken gebruik van tabbladen of wizards voor formuliernavigatie. Als u een mobiele indeling toepast, beschikt u over één indeling voor het hele formulier.
 
-Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navigatiemenu. Op de navigatiebalk ziet u het pictogram **&lt;** en **** om de navigatiestappen **next** en **previous** in het formulier aan te geven.
+Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navigatiemenu. De navigatiebalk toont **&lt;** en **>** pictogram om aan te geven **next** en **vorige** navigatiestappen in het formulier.
 
-De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` plaats. De volgende mobiele lay-outs zijn standaard beschikbaar in adaptieve formulieren.
+De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. De volgende mobiele lay-outs zijn standaard beschikbaar in adaptieve formulieren.
 
 ![Lijst met mobiele lay-outs in adaptieve formulieren](assets/mobile-navigation.png)
 
 Lijst met mobiele lay-outs in adaptieve formulieren
 
-Als u een mobiele indeling gebruikt, kunt u via het formuliermenu toegang krijgen tot verschillende formulierdeelvensters. U kunt hier op het pictogram ![aem6forms_form_menu](assets/aem6forms_form_menu.png) tikken.
+Als u een mobiele indeling gebruikt, kunt u het formuliermenu gebruiken om verschillende formulierdeelvensters te openen door op ![aem6forms_form_menu](assets/aem6forms_form_menu.png) pictogram.
 
 ### Indeling met titels van deelvensters in de formulierkoptekst {#layout-with-panel-titles-in-the-form-header}
 
@@ -140,7 +139,7 @@ In deze indeling worden, zoals in de naam wordt gesuggereerd, deelvenstertitels 
 
 Mobiele lay-outs met titels van deelvensters in de formulierkoppen
 
-### Indeling zonder titels in de formulierkoptekst {#layout-without-panel-titles-in-the-form-header}
+### Indeling zonder deelvenstertitels in de koptekst van het formulier {#layout-without-panel-titles-in-the-form-header}
 
 In deze indeling worden, zoals in de naam wordt gesuggereerd, alleen het navigatiemenu en de navigatiebalk zonder venstertitels weergegeven. Deze indeling biedt ook de pictogrammen Volgende en Vorige voor navigatie.
 
@@ -156,9 +155,9 @@ Met een werkbalkindeling bepaalt u de positie en weergave van alle actieknoppen 
 
 Een lijst met werkbalkindelingen in adaptieve formulieren
 
-De lay-outs van de toolbar zijn beschikbaar bij `/libs/fd/af/layouts/toolbar` plaats. Aangepaste formulieren bieden standaard de volgende werkbalkopmaak.
+Werkbalklay-outs zijn beschikbaar op `/libs/fd/af/layouts/toolbar` locatie. Aangepaste formulieren bieden standaard de volgende werkbalkopmaak.
 
-### Standaardlay-out voor werkbalk {#default-layout-for-toolbar}
+### Standaardindeling voor werkbalk {#default-layout-for-toolbar}
 
 Deze indeling wordt geselecteerd als de standaardindeling wanneer u actieknoppen toevoegt in een adaptief formulier. Als u deze lay-out selecteert, wordt dezelfde lay-out weergegeven voor zowel mobiele als desktopapparaten.
 
@@ -179,4 +178,3 @@ Voor de mobiele lay-out kunt u actieknoppen toevoegen met behulp van pictogramme
 ![Vaste mobiele lay-out voor werkbalk](assets/toolbar_layout_mobile_fixed.png)
 
 Vaste mobiele lay-out voor werkbalk
-

@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] sizing guide"'
+title: "[!DNL Assets] sizing guide"
 description: Beste praktijken om efficiënte metriek te bepalen om de infrastructuur en de middelen te schatten die worden vereist om op te stellen [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Admin

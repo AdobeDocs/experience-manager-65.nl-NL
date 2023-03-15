@@ -128,7 +128,6 @@ De Dynamic Media-component is slim. U hebt verschillende opties, of u nu een afb
 >
 >* Meerdere instanties van de Dynamic Media-component die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
-
 >
 >Het toewijzen van een andere viewervoorinstelling aan elke Dynamic Media-component op die pagina wordt niet ondersteund.
 >
@@ -284,7 +283,6 @@ De component Interactieve media is slim. U hebt verschillende opties, of u nu ee
 >
 >* Meerdere instanties van de component Interactive Media die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
-
 >
 >Het toewijzen van een andere viewervoorinstelling aan elke interactieve mediacomponent op die pagina wordt niet ondersteund.
 >
@@ -325,7 +323,6 @@ Zowel de criteria voor hoogte-breedteverhouding als voor trefwoorden zijn van to
 >
 >* Meerdere instanties van de **[!UICONTROL Panoramic Media]** die op dezelfde pagina worden gebruikt.
 >* Elke instantie gebruikt hetzelfde elementtype.
-
 >
 >Een andere viewervoorinstelling toewijzen aan elke **[!UICONTROL Panoramic Media]** wordt niet ondersteund.
 >

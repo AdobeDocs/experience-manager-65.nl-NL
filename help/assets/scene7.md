@@ -285,7 +285,6 @@ Bladeren door Dynamic Media Classic-elementen door **[!UICONTROL Dynamic Media C
 >
 >* In de Dynamic Media Classic-inhoudbrowser worden ongeveer 100 elementen geladen en op naam gesorteerd.
 >* Als u een beveiligde voorvertoningsserver hebt ingesteld, gebruikt de browser die voorvertoningsserver om miniaturen en elementen te renderen.
-
 >
 
 
@@ -336,7 +335,6 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 >
 >* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke vertoning (alleen ast; .mp4) en de gecodeerde uitvoering.
 >* Bij het zoeken naar een adaptieve videoset zoekt u naar de map en naar alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
-
 >
 
 

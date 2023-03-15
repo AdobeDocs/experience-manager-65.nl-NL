@@ -1,30 +1,29 @@
 ---
 title: Het kleurenschema van de interface wijzigen
-seo-title: Het kleurenschema van de interface wijzigen
+seo-title: Changing the color scheme of the interface
 description: Het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte selectief aanpassen.
-seo-description: Het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte selectief aanpassen.
+seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
-
 # Het kleurenschema van de interface wijzigen {#changing-the-color-scheme-of-the-interface}
 
-U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, zie [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, raadpleegt u [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
 
 ## Bovenste navigatiebalk {#top-navigation-bar}
 
-### Achtergrondafbeelding {#using-background-image} gebruiken
+### Achtergrondafbeelding gebruiken {#using-background-image}
 
 De navigatiebalk boven in de AEM Forms-werkruimte bijwerken.
 
@@ -33,7 +32,7 @@ De navigatiebalk boven in de AEM Forms-werkruimte bijwerken.
 
    >[!NOTE]
    >
-   >Zie [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html) voor meer informatie over WebDAV-toegang.
+   >Voor meer informatie over WebDAV toegang, zie [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
 1. Verwijs naar de nieuwe achtergrondafbeelding in /apps/ws/css/newStyle.css door de volgende stijl toe te voegen.
 
@@ -54,9 +53,9 @@ De navigatiebalk boven in de AEM Forms-werkruimte bijwerken.
    }
    ```
 
-## Categoriecomponent {#category-component}
+## Categorieonderdeel {#category-component}
 
-De component van de categorie toont de diverse categorieën van uw taken in het linkerpaneel. Als u de kleur wilt wijzigen, definieert u de achtergrondkleur in het element `.category` van het CSS-bestand.
+De component van de categorie toont de diverse categorieën van uw taken in het linkerpaneel. Als u de kleur wilt wijzigen, definieert u de achtergrondkleur in `.category` -element van het CSS-bestand.
 
 ## Taakcomponent {#task-component}
 

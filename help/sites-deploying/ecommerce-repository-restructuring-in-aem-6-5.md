@@ -1,28 +1,27 @@
 ---
 title: Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5
-seo-title: Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5
+seo-title: E-Commerce Repository Restructuring in AEM 6.5
 description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.5 voor e-commerce.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.5 voor e-commerce.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
 
-
 # Herstructurering van de opslagplaats voor elektronische handel in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
-Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die van invloed zijn op de AEM E-Commerce-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, zouden de klanten die aan AEM 6.5 bevorderen deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan bewaarplaatsveranderingen die de AEM E-Commerce Oplossing beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
-## Met 6.5-upgrade {#with-upgrade}
+## Met 6,5-upgrade {#with-upgrade}
 
 ### Gegevens over producten, bestellingen, verzamelingen, classificaties, verzendmethoden en betalingsmethoden {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
@@ -38,7 +37,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migratie</a> taak gebruiken om E-Commerce-gegevens te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
+   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> taak om gegevens over e-handel te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p>
     <ul>
      <li>Hiermee wijzigt u verwijzingen naar oude locatie zodat deze naar een nieuwe locatie verwijzen</li>
      <li>Hiermee wordt inhoud van de oude locatie naar de nieuwe locatie verplaatst</li>
@@ -58,4 +57,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.5](/help/sites-
   </tr>
  </tbody>
 </table>
-

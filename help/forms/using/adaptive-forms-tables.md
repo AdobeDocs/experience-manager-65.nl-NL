@@ -1,18 +1,18 @@
 ---
 title: Tabellen in adaptieve formulieren
-seo-title: Tabellen in adaptieve formulieren
+seo-title: Tables in adaptive forms
 description: Met de component Tabel in AEM Forms kunt u tabellen maken in adaptieve formulieren die reageren op mobiele lay-outs en kunt u ook XDP-tabelcomponenten gebruiken.
-seo-description: Met de component Tabel in AEM Forms kunt u tabellen maken in adaptieve formulieren die reageren op mobiele lay-outs en kunt u ook XDP-tabelcomponenten gebruiken.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-feature: Adaptieve Forms
+feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '2424'
+source-wordcount: '2392'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser 
 
 ### Over kop- en lichaamscellen {#about-header-and-body-cells}
 
-De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label bij in het veld **Waarde** en klik op **OK**.
+De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label in het dialoogvenster **Waarde** veld en klik op **OK**.
 
 De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen door elke andere adaptieve formuliercomponent die beschikbaar is in het hulpgedeelte, zoals een numeriek vak, een datumkiezer of een vervolgkeuzelijst.
 
@@ -49,7 +49,7 @@ De eerste tekstrij in de volgende tabel bevat bijvoorbeeld tekstvak, datumkiezer
 
 ![rijceltypen](assets/row-cell-types.png)
 
-U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop klikken, en **Fusie** selecteren. U kunt ook een samengevoegde cel splitsen door er met de rechtermuisknop op te klikken en **Cellen splitsen** te selecteren.
+U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop klikken, en selecteren **Samenvoegen**. U kunt ook een samengevoegde cel splitsen door er met de rechtermuisknop op te klikken en selecteren **Cellen splitsen**.
 
 ### Rijen en kolommen toevoegen, verwijderen, verplaatsen {#add-delete-move-rows-and-columns}
 
@@ -73,9 +73,9 @@ Het vervolgkeuzemenu voor de rij bevat ook de bewerking Bewerken waarmee u rijei
 
 U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informatie is ingedeeld die schermlezers kunnen interpreteren en lezen. De beschrijving toevoegen:
 
-1. Selecteer de tabel en tik ![cmppr](assets/cmppr.png) om de eigenschappen ervan in het zijpaneel weer te geven.
+1. Selecteer de tabel en tik op ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk weer te geven.
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
-1. Klik **Done**.
+1. Klikken **Gereed**.
 
 ### Kolommen in een tabel sorteren {#sortcolumnstable}
 
@@ -91,13 +91,13 @@ Als u sortering wilt toepassen op tabelkolommen, moeten de cellen in de tabelkol
 
 Sorteren inschakelen:
 
-1. Selecteer de tabel en tik ![configure_icon](assets/configure_icon.png) (Configure). U kunt de lijst ook selecteren gebruikend **Content** browser in het hulpje van de Interactieve Mededeling.
-1. Selecteer **Sorteren inschakelen**.
-1. Tik ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
+1. Selecteer de tabel en tik op ![configure_icon](assets/configure_icon.png) (Configureren). U kunt de tabel ook selecteren met de **Inhoud** browser in het hulpje van de Interactieve Communicatie.
+1. Selecteren **Sorteren inschakelen**.
+1. Tikken ![done_icon](assets/done_icon.png) om de tabeleigenschappen op te slaan. De sorteerpictogrammen, pijlen omhoog en omlaag, in kolomkoppen geven aan dat het sorteren is ingeschakeld.
 
    ![Sorteren inschakelen](assets/enable_sorting_new.png)
 
-1. Schakel over naar de modus **Voorvertoning** om de uitvoer weer te geven. De tabel wordt automatisch gesorteerd op basis van de eerste kolom van de tabel.
+1. Naar de **Voorvertoning** om de uitvoer weer te geven. De tabel wordt automatisch gesorteerd op basis van de eerste kolom van de tabel.
 1. Klik op de kolomkop om de waarden te sorteren op basis van de kolom.
 
    Een kolomkop met een pijl-omhoog geeft aan dat de tabel is gesorteerd op basis van die kolom. Bovendien worden de waarden in de kolom in oplopende volgorde weergegeven.
@@ -106,30 +106,30 @@ Sorteren inschakelen:
 
    Op dezelfde manier vertegenwoordigt een kolomkopbal met een benedenpijl dat de waarden in de kolom in dalende orde worden getoond.
 
-   U kunt ook wijzigingen aanbrengen in de tabel in de modus **Voorvertoning** en nogmaals op de kolomkop klikken om de kolomwaarden te sorteren.
+   U kunt ook wijzigingen aanbrengen in de tabel in het dialoogvenster **Voorvertoning** en klik nogmaals op de kolomkop om de kolomwaarden te sorteren.
 
 ## Kolombreedte instellen voor een tabel {#set-column-width}
 
 Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
 
-1. Tik op het tabblad **[!UICONTROL Content]** op de **[!UICONTROL Table]**-component en tik op het pictogram Configure (![Configure](assets/configure-icon.svg)).
+1. In de **[!UICONTROL Content]** tikt u op de **[!UICONTROL Table]** component en tik Configure (![Configureren](assets/configure-icon.svg)).
 
-1. Voer in het veld **[!UICONTROL Column Width]** de lijst met door komma&#39;s gescheiden waarden in om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld, voor een lijst die 3 kolommen omvat, die 2.4.6 als waarde in **[!UICONTROL Column Width]** gebied specificeren resulteert in het plaatsen van de breedte van kolommen als 2/12 voor eerste kolom, 4/12 voor tweede kolom, en 6/12 voor derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
+1. Voer de lijst met door komma&#39;s gescheiden waarden in het dialoogvenster **[!UICONTROL Column Width]** veld om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld voor een tabel die 3 kolommen bevat en die 2,4,6 opgeeft als de waarde in het dialoogvenster **[!UICONTROL Column Width]** resulteert in het instellen van de breedte van kolommen op 2/12 voor de eerste kolom, op 4/12 voor de tweede kolom en op 6/12 voor de derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
 ## Tabelstijl configureren {#configure}
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
 
-1. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl** op de pagina-werkbalk vóór Voorvertoning.
+1. Tik vóór Voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
 
-1. Selecteer in het zijpaneel een tabel en tik op de bewerkknop ![edit-button](assets/edit-button.png).
+1. Selecteer de tabel in de zijbalk en tik op de knop Bewerken ![bewerken, knop](assets/edit-button.png).
 De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
 ![Stijleigenschappen van een tabel](assets/style-table.png)
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie voor meer informatie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md).
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
@@ -137,9 +137,9 @@ Tabellen bieden ondersteuning voor het dynamisch toevoegen of verwijderen van ri
 
 1. Selecteer een tabelrij en tik op ![cmppr](assets/cmppr.png).
 1. Geef op het tabblad Herhalingsinstellingen het minimale en maximale aantal rijen op om het aantal rijen in de tabel te beperken.
-1. Klik **Done**.
+1. Klikken **Gereed**.
 
-Tijdens runtime ziet u de knoppen **+** en *-* om een rij toe te voegen of te verwijderen.
+Tijdens runtime wordt **+** en *-* knoppen om een rij toe te voegen of te verwijderen.
 
 ![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
@@ -153,21 +153,21 @@ Met tabellen in adaptieve formulieren kunt u expressies schrijven in JavaScript 
 
 Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om de zichtbaarheid ervan te bepalen op basis van de waarde die door een expressie wordt geretourneerd, terwijl cellen de volgende expressies ondersteunen:
 
-* **Initialisatiescript:een handeling** voor initialisatie van een veld uitvoeren.
+* **Initialisatiescript:** om een handeling uit te voeren bij initialisatie van een veld.
 * **Waarde script vastleggen:** om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 
 >[!NOTE]
 >
 >Als het XFA change/exit-script ook op hetzelfde veld wordt toegepast, wordt het XFA change/exit-script uitgevoerd vóór het Value Commit-script.
 
-* **Expressies** berekenen: om de waarde van een veld automatisch te berekenen.
+* **Expressies berekenen**: om de waarde van een veld automatisch te berekenen.
 * **Validatie-expressies**: om een veld te valideren.
 * **Toegang tot expressies**: om een veld in of uit te schakelen.
 * **Visibility expression**: om de zichtbaarheid van een veld en deelvenster te regelen.
 
 De zichtbaarheidsexpressie voor een tabel of rij kan worden gedefinieerd op het tabblad Eigenschappen van deelvenster van het corresponderende dialoogvenster van de component Bewerken. De expressies voor een cel kunnen worden gedefinieerd op het tabblad Script van het dialoogvenster dat de component Edit bevat.
 
-Zie [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html) voor de volledige lijst met adaptieve formulierklassen, -gebeurtenissen, -objecten en openbare API&#39;s.
+Voor de volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s raadpleegt u [JavaScript Library API-referentie voor adaptieve formulieren](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -216,10 +216,10 @@ Neem bijvoorbeeld de volgende overzichtstabel met banktransacties die we willen 
 In dit voorbeeld, het bezit van de Naam van het Element voor:
 
 * de rij is **Rij1**
-* de lichaamscel onder de datum van de Transactie is **tableItem1**
+* de cel van het lichaam onder de transactiedatum is **tableItem1**
 * de lichaamscel onder Beschrijving is **tableItem2**
-* de lichaamscel onder het type van Transactie is **type**
-* de lichaamscel onder Bedrag in USD is **tableItem3**
+* de cel van het lichaam onder het transactietype is **type**
+* de lichtheidscel onder Bedrag in USD is **tableItem3**
 
 Het XML-bestand dat gegevens in de volgende indeling bevat:
 
@@ -279,9 +279,9 @@ Het XML-bestand dat gegevens in de volgende indeling bevat:
 </afData>
 ```
 
-In de voorbeeld-XML worden de gegevens voor een rij gedefinieerd door de `<Row1>`-tags. Dit is de elementnaam voor de rij in de tabel. Binnen de tag `<Row1>` worden de gegevens voor elke cel gedefinieerd binnen de tag voor de elementnaam, zoals `<tableItem1>`, `<tableItem2>`, `<tableItem3>` en `<type>`.
+In de voorbeeld-XML worden de gegevens voor een rij gedefinieerd door de `<Row1>` -tags. Dit is de elementnaam voor de rij in de tabel. Binnen de `<Row1>` -tag, worden de gegevens voor elke cel binnen de -tag gedefinieerd voor de elementnaam, zoals `<tableItem1>`, `<tableItem2>`, `<tableItem3>`, en `<type>`.
 
-Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aangepaste formulier met de tabel verwijzen naar de absolute XML-locatie met Wcmmode uitgeschakeld. Als het adaptieve formulier bijvoorbeeld op *https://localhost:4502/myForms/bankTransaction.html* staat en het XML-bestand met gegevens is opgeslagen op *C:/myTransactions/bankSummary.xml*, kunt u de tabel weergeven met gegevens op de volgende URL:
+Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aangepaste formulier met de tabel verwijzen naar de absolute XML-locatie met Wcmmode uitgeschakeld. Bijvoorbeeld als het adaptieve formulier zich op *https://localhost:4502/myForms/bankTransaction.html* en het XML-bestand met gegevens wordt opgeslagen op *C:/myTransactions/bankSummary.xml* kunt u de tabel weergeven met gegevens op de volgende URL:
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

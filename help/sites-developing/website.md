@@ -1,8 +1,8 @@
 ---
 title: Een volledig functionele website (JSP) maken
-seo-title: Een volledig functionele website (JSP) maken
+seo-title: Create a Fully-Featured Website (JSP)
 description: Met deze zelfstudie kunt u een volledig uitgeruste website maken met AEM
-seo-description: Met deze zelfstudie kunt u een volledig uitgeruste website maken met AEM
+seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '4952'
+source-wordcount: '4935'
 ht-degree: 1%
 
 ---
 
-
-# Creeer een volledig-gekenmerkte Website (JSP){#create-a-fully-featured-website-jsp}
+# Een volledig functionele website (JSP) maken{#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
 >
->In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals in detail wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
 
 Met deze zelfstudie kunt u een volledig uitgeruste website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
 
@@ -51,17 +50,17 @@ Nadat u alle stappen hebt uitgevoerd, zien de pagina&#39;s er als volgt uit:
 
 **Het uiteindelijke resultaat downloaden**
 
-Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruik [Pakketbeheer](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteurinstantie.
+Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruiken [Pakketbeheer](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteur.
 
-**NOTA:** Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
+**OPMERKING:** Als u dit pakket installeert, worden alle bronnen op de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
 
 Inhoud van website
 
 [Bestand ophalen](assets/website-1_0.zip)
 
-## Adobe Experience Manager {#installing-adobe-experience-manager} installeren
+## Adobe Experience Manager installeren {#installing-adobe-experience-manager}
 
-Als u een AEM voor het ontwikkelen van uw website wilt installeren, volgt u de instructies voor het instellen van een [implementatieomgeving met auteur en het publiceren van instanties](/help/sites-deploying/deploy.md#author-and-publish-installs), of voert u een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install) uit. De algemene installatie omvat het downloaden van het AEM QuickStart JAR-bestand, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
+Als u een AEM voor het ontwikkelen van uw website wilt installeren, volgt u de instructies voor het instellen van een [implementatieomgeving met auteur- en publicatieinstanties](/help/sites-deploying/deploy.md#author-and-publish-installs)of voert een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install). De algemene installatie omvat het downloaden van het AEM QuickStart JAR-bestand, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
 
 Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van de CRXDE Lite door de verbinding van de CRXDE Lite op de Welkome pagina te klikken:
 
@@ -69,21 +68,21 @@ Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van de CRXDE L
 
 >[!NOTE]
 >
->De URL van CRXDE Lite voor een AEM ontwerpinstantie die lokaal wordt geïnstalleerd met de standaardpoort, is [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
+>De URL van CRXDE Lite voor een AEM ontwerpinstantie die lokaal is geïnstalleerd met de standaardpoort is [https://localhost:4502/crx/de/](https://localhost:4502/crx/de/).
 
 ### De projectstructuur instellen in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
 Gebruik CRXDE Lite om de structuur van de mywebsite-toepassing in de opslagplaats te maken:
 
-1. Klik in de structuur aan de linkerkant van CRXDE Lite met de rechtermuisknop op de map **`/apps`** en klik op **Maken** > **Maken** **Map**. Typ `mywebsite` als mapnaam in het dialoogvenster **Map maken** en klik op **OK**.
-1. Klik met de rechtermuisknop op de map **`/apps/mywebsite`** en klik op **Maken** > **Map maken**. Typ `components` als mapnaam in het dialoogvenster **Map maken** en klik op **OK**.
-1. Klik met de rechtermuisknop op de map **`/apps/mywebsite`** en klik op **Maken** > **Map maken**. Typ `templates` als mapnaam in het dialoogvenster **Map maken** en klik op **OK**.
+1. Klik in de boomstructuur links van CRXDE Lite met de rechtermuisknop op de knop **`/apps`** map en klik op **Maken** > **Maken** **Map**. In de **Map maken** dialoogvenster, type `mywebsite` als mapnaam en klik op **OK**.
+1. Klik met de rechtermuisknop op de knop **`/apps/mywebsite`** map en klik op **Maken** > **Map maken**. In de **Map maken** dialoogvenster, type `components` als mapnaam en klik op **OK**.
+1. Klik met de rechtermuisknop op de knop **`/apps/mywebsite`** map en klik op **Maken** > **Map maken**. In de **Map maken** dialoogvenster, type `templates` als mapnaam en klik op **OK**.
 
    De structuur in de boom moet er nu ongeveer als volgt uitzien:
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-1. Klik **Alles opslaan**.
+1. Klikken **Alles opslaan**.
 
 ### Het ontwerp instellen {#setting-up-the-design}
 
@@ -97,19 +96,19 @@ Voorbeeld van bestand static.css en afbeeldingen
 
 [Bestand ophalen](assets/mywebsite.zip)
 
-1. Voor de AEM Welkome pagina, klik **Hulpmiddelen**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
+1. Klik op de AEM welkomstpagina op **Gereedschappen**. ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-1. Selecteer in de mappenstructuur de map **Ontwerpen** en klik vervolgens op **Nieuw** > **Nieuwe pagina**. Typ `mywebsite` als de titel en klik **Maken**.
+1. Selecteer in de mappenstructuur de optie **Ontwerpen** en klik vervolgens op **Nieuw** > **Nieuwe pagina**. Type `mywebsite` als de titel en klik op **Maken**.
 
 1. Als het mijnwebsite-item niet in de tabel wordt weergegeven, vernieuwt u de structuur of de tabel.
 
-1. [Kopieer het voorbeeldbestand en de ](/help/sites-administering/webdav-access.md) map vanuit het gedownloade bestand mywebsite.zip naar de  `static.css`   `images`   `/etc/designs/mywebsite` map met WebDAV-toegang naar de URL op https://localhost:4502.
+1. [WebDAV gebruiken](/help/sites-administering/webdav-access.md) toegang tot de URL op https://localhost:4502, kopieer het voorbeeld `static.css` en `images` van het gedownloade bestand mywebsite.zip naar de `/etc/designs/mywebsite` map.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-### Sjabloon, component en script voor inhoudspagina maken {#creating-the-contentpage-template-component-and-script}
+### Sjabloon, component en script voor de inhoudspagina maken {#creating-the-contentpage-template-component-and-script}
 
 In deze sectie maakt u het volgende:
 
@@ -117,67 +116,67 @@ In deze sectie maakt u het volgende:
 * De component contentPage die wordt gebruikt om pagina&#39;s met inhoud te renderen
 * Het script contentPage
 
-#### Sjabloon voor inhoudspagina {#creating-the-contentpage-template} maken
+#### De sjabloon voor de inhoudspagina maken {#creating-the-contentpage-template}
 
 Maak een sjabloon die u als basis voor de webpagina&#39;s van uw site wilt gebruiken.
 
 Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websites kunnen verschillende sjablonen gebruiken om de verschillende typen pagina&#39;s op de site te maken. In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
-1. Klik in de mappenstructuur van CRXDE Lite met de rechtermuisknop `/apps/mywebsite/templates` en klik op **Maken** > **Sjabloon maken**.
+1. Klik met de rechtermuisknop in de mappenstructuur van CRXDE Lite `/apps/mywebsite/templates` en klik op **Maken** > **Sjabloon maken**.
 
-1. Typ in het dialoogvenster Sjabloon maken de volgende waarden en klik op **Volgende**:
+1. Typ in het dialoogvenster Sjabloon maken de volgende waarden en klik vervolgens op **Volgende**:
 
    * **Label**: contentpagina
    * **Titel**: Sjabloon voor pagina met inhoud van mijn website
-   * **Omschrijving**: Dit is mijn pagina-sjabloon voor website-inhoud
+   * **Beschrijving**: Dit is mijn pagina-sjabloon voor website-inhoud
    * **Type bron:** mywebsite/componenten/contentPage
 
    Gebruik de standaardwaarde voor het Rangschikken bezit.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-   Het middeltype identificeert de component die de pagina teruggeeft. In dit geval worden alle pagina&#39;s die zijn gemaakt met de sjabloon contentPage weergegeven door de component `mywebsite/components/contentpage`.
+   Het middeltype identificeert de component die de pagina teruggeeft. In dit geval worden alle pagina&#39;s die met de sjabloon voor de inhoudspagina zijn gemaakt, gerenderd door de `mywebsite/components/contentpage` component.
 
-1. Als u de paden wilt opgeven van de pagina&#39;s waarop deze sjabloon kan worden gebruikt, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **Volgende**.
+1. Als u de paden wilt opgeven van de pagina&#39;s die deze sjabloon kunnen gebruiken, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **Volgende**.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   De waarde van de toegestane padeigenschap is een *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map **/content** en alle subpagina&#39;s.
+   De waarde van de eigenschap allowed path is a *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van het **/content** en alle subpagina&#39;s.
 
-   Wanneer een auteur een pagina onder /content creeert, **contentPage** malplaatje verschijnt in een lijst van beschikbare malplaatjes aan gebruik.
+   Wanneer een auteur een pagina onder /content maakt, wordt **contentpagina** De sjabloon wordt weergegeven in een lijst met beschikbare sjablonen.
 
-1. Klik **Next** in **Allowed Parents** en **Allowed Children** panelen en klik **OK**. Klik in CRXDE Lite op **Alles opslaan**.
+1. Klikken **Volgende** in de **Toegestane bovenliggende elementen** en **Toegestane kinderen** deelvensters en klikken **OK**. Klik in CRXDE Lite op **Alles opslaan**.
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
-#### De component ContentPage {#creating-the-contentpage-component} maken
+#### De component ContentPage maken {#creating-the-contentpage-component}
 
-Creeer *component* die de inhoud bepaalt en de pagina&#39;s teruggeeft die het malplaatje van de inhoudspagina gebruiken. De plaats van de component moet met de waarde van het bezit van het Type van Middel van het contentpage malplaatje beantwoorden.
+Maak de *component* Hiermee definieert u de inhoud en geeft u de pagina&#39;s weer die de sjabloon voor de inhoudspagina gebruiken. De plaats van de component moet met de waarde van het bezit van het Type van Middel van het contentpage malplaatje beantwoorden.
 
-1. Klik in CRXDE Lite met de rechtermuisknop op `/apps/mywebsite/components` en klik op **Maken** > **Component**.
-1. Typ in het dialoogvenster **Component maken** de volgende eigenschapswaarden:
+1. In CRXDE Lite klikt u met de rechtermuisknop `/apps/mywebsite/components` en klik op **Maken** > **Component**.
+1. In de **Component maken** typt u de volgende eigenschapswaarden:
 
    * **Label**: contentpagina
    * **Titel**: Inhoud pagina Mijn website
-   * **Omschrijving**: Dit is de inhoud van mijn website
+   * **Beschrijving**: Dit is de inhoud van mijn website
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
-   De locatie van de nieuwe component is `/apps/mywebsite/components/contentpage`. Dit pad komt overeen met het middeltype van de sjabloon voor de inhoudspagina (min het oorspronkelijke **`/apps/`**-gedeelte van het pad).
+   De locatie van de nieuwe component is `/apps/mywebsite/components/contentpage`. Dit pad komt overeen met het middeltype van de sjabloon voor de inhoudspagina (min het eerste **`/apps/`** deel van het pad).
 
    Deze correspondentie verbindt het malplaatje met de component en is kritiek aan het correcte functioneren van de website.
 
-1. Klik op **Volgende** totdat het deelvenster Toegestane onderliggende items van het dialoogvenster wordt weergegeven en klik vervolgens op **OK**. Klik in CRXDE Lite op **Alles opslaan**.
+1. Klikken **Volgende** totdat het deelvenster Toegestane onderliggende items van het dialoogvenster wordt weergegeven en klikt u vervolgens op **OK**. Klik in CRXDE Lite op **Alles opslaan**.
 
    De structuur ziet er nu als volgt uit:
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-#### Het script voor de component ContentPage {#developing-the-contentpage-component-script} ontwikkelen
+#### Het script voor de component ContentPage ontwikkelen {#developing-the-contentpage-component-script}
 
 Voeg code toe aan het script contentPage.jsp om de pagina-inhoud te definiëren.
 
-1. Open in CRXDE Lite het bestand `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. Het bestand bevat standaard de volgende code:
+1. Open het bestand in CRXDE Lite `contentpage.jsp` in `/apps/mywebsite/components/contentpage`. Het bestand bevat standaard de volgende code:
 
    ```java
    <%--
@@ -212,18 +211,18 @@ Voeg code toe aan het script contentPage.jsp om de pagina-inhoud te definiëren.
    </html>
    ```
 
-1. Klik **Alles opslaan** om uw wijzigingen op te slaan.
+1. Klikken **Alles opslaan** om uw wijzigingen op te slaan.
 
 ### Websitepagina&#39;s en inhoudspagina&#39;s maken {#creating-your-website-page-and-content-pages}
 
 In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de inhoudspagina gebruiken: Mijn Website, Engels, Producten, de Diensten, en Klanten.
 
-1. Voor de AEM Welkome pagina ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), klik Websites.
+1. Op de AEM Welkomstpagina ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), klikt u op Websites.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Selecteer in de mappenstructuur de map **Websites** en klik vervolgens op **Nieuw** > **Nieuwe pagina**.
-1. Voer in het venster **Pagina maken** het volgende in:
+1. Selecteer in de mappenstructuur de optie **Websites** en klik vervolgens op **Nieuw** > **Nieuwe pagina**.
+1. In de **Pagina maken** voert u het volgende in:
 
    * Titel: `My Website`
    * Naam: `mywebsite`
@@ -231,27 +230,27 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
-1. Klik **Maken**. Selecteer in de mappenstructuur de pagina **/Websites/My Website** en klik **Nieuw** > **Nieuwe pagina**.
+1. Klikken **Maken**. Selecteer in de mappenstructuur de optie **/Websites/Mijn website** pagina en klik op **Nieuw** > **Nieuwe pagina**.
 1. Voer in het dialoogvenster Pagina maken de volgende eigenschapswaarden in en klik op Maken:
 
    * Titel: Engels
    * Naam: en
    * Sjabloon voor de pagina Mijn website-inhoud selecteren
 
-1. Selecteer in de mappenstructuur de pagina **/Websites/My Website/English** en klik **New**> **New Page**.
-1. Voer in het dialoogvenster **Pagina maken** de volgende eigenschapswaarden in en klik vervolgens op **Maken**:
+1. Selecteer in de mappenstructuur de optie **/Websites/Mijn website/Engels** pagina en klik op **Nieuw**> **Nieuwe pagina**.
+1. In de **Pagina maken** voert u de volgende eigenschapwaarden in en klikt u op **Maken**:
 
    * Titel: Producten
    * Sjabloon voor de pagina Mijn website-inhoud selecteren
 
-1. Selecteer in de mappenstructuur de pagina **/Websites/My Website/English** en klik **New** > **New Page**.
-1. Voer in het dialoogvenster **Pagina maken** de volgende eigenschapswaarden in en klik vervolgens op **Maken**:
+1. Selecteer in de mappenstructuur de optie **/Websites/Mijn website/Engels** pagina en klik op **Nieuw** > **Nieuwe pagina**.
+1. In de **Pagina maken** voert u de volgende eigenschapwaarden in en klikt u op **Maken**:
 
    * Titel: Services
    * Sjabloon voor de pagina Mijn website-inhoud selecteren
 
-1. Selecteer in de mappenstructuur de pagina **/Websites/My Website/English** en klik **New** > **New Page**.
-1. Voer in het dialoogvenster **Pagina maken** de volgende eigenschapswaarden in en klik vervolgens op **Maken**:
+1. Selecteer in de mappenstructuur de optie **/Websites/Mijn website/Engels** pagina en klik op **Nieuw** > **Nieuwe pagina**.
+1. In de **Pagina maken** voert u de volgende eigenschapwaarden in en klikt u op **Maken**:
 
    * Titel: Klanten
    * Sjabloon voor de pagina Mijn website-inhoud selecteren
@@ -260,7 +259,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. Als u uw pagina&#39;s wilt koppelen aan het ontwerp van mijn website, selecteert u in CRXDE Lite het knooppunt `/content/mywebsite/en/jcr:content`. Typ op het tabblad Eigenschappen de volgende waarden voor een nieuwe eigenschap en klik vervolgens op Toevoegen:
+1. Als u uw pagina&#39;s wilt koppelen aan het mywebsite-ontwerp, selecteert u in CRXDE Lite de optie `/content/mywebsite/en/jcr:content` knooppunt. Typ op het tabblad Eigenschappen de volgende waarden voor een nieuwe eigenschap en klik vervolgens op Toevoegen:
 
    * Naam: cq:designPath
    * Type: String
@@ -268,15 +267,15 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. Open [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) in een nieuw webbrowsertabblad of -venster om de pagina Producten weer te geven:
+1. Open in een nieuw webbrowsertabblad of -venster [https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html) om de pagina Producten te bekijken:
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-### Het script voor de inhoudspagina {#enhancing-the-contentpage-script} verbeteren
+### Het script voor de inhoudspagina verbeteren {#enhancing-the-contentpage-script}
 
 In deze sectie wordt beschreven hoe u het script voor de inhoudspagina kunt verbeteren met behulp van de scripts van de AEM basis en door uw eigen scripts te schrijven.
 
-De pagina **Products** ziet er als volgt uit:
+De **Producten** De pagina ziet er als volgt uit:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -286,18 +285,18 @@ In deze oefening, vormt u uw paginaContent component zodat zijn supertype de AEM
 
 In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen die de supertype-component biedt, alsof deze in de component zijn opgenomen.
 
-1. Voeg in CRXDE Lite een eigenschap toe aan het knooppunt `/apps/mywebsite/components/contentpage`.
+1. Voeg in CRXDE Lite een eigenschap toe aan de `/apps/mywebsite/components/contentpage` knooppunt.
 
-   1. Selecteer de `/apps/mywebsite/components/contentpage` knoop.
+   1. Selecteer `/apps/mywebsite/components/contentpage` knooppunt.
    1. Typ onder aan het tabblad Eigenschappen de volgende eigenschapswaarden en klik op Toevoegen:
 
       * **Naam:** sling:resourceSuperType
-      * **type:** String
+      * **Type:** String
       * **Waarde:** basis/componenten/pagina
    1. Klik op Alles opslaan.
 
 
-1. Open het `contentpage.jsp`-bestand onder `/apps/mywebsite/components/contentpage` en vervang de bestaande code door de volgende code:
+1. Open de `contentpage.jsp` bestand onder `/apps/mywebsite/components/contentpage` en vervang de bestaande code door de volgende code:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -314,7 +313,7 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Open de paginabron om de elementen javascript en HTML te zien die de manuscripten head.jsp en body.jsp produceerden. Het volgende scriptfragment opent Sidetrap wanneer u de pagina opent:
+   Open de paginabron om de elementen javascript en HTML te zien die de scripts head.jsp en body.jsp genereerden. Het volgende scriptfragment opent Sidetrap wanneer u de pagina opent:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -327,15 +326,15 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
 
 In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst van de pagina genereren. Vervolgens maakt u het bestand body.jsp in de component pageContent om het body.jsp van de component AEM Page te overschrijven. In uw body.jsp- dossier, omvat u uw manuscripten die de verschillende delen van de paginakleurtekst produceren.
 
-**Tip:** Wanneer een component een bestand bevat dat dezelfde naam en relatieve locatie heeft als een bestand in het supertype van de component, wordt dit  *bedekken* genoemd.
+**Tip:** Wanneer een component een bestand bevat dat dezelfde naam en relatieve locatie heeft als een bestand in het supertype van de component, wordt het aangeroepen *bedekken*.
 
-1. Maak in CRXDE Lite het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `left.jsp` krachtens `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage` en selecteer **Maken **en **Bestand maken**.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`Selecteer vervolgens **Maken **dan **Bestand maken**.
 
-   1. Typ `left.jsp` in het venster als **Naam** en klik **OK**.
+   1. Typ in het venster `left.jsp` als de **Naam** en klik op **OK**.
 
-1. Bewerk het bestand `left.jsp` om de bestaande inhoud te verwijderen en te vervangen door de volgende code:
+1. Het bestand bewerken `left.jsp` om de bestaande inhoud te verwijderen en door de volgende code te vervangen:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -347,13 +346,13 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. Maak in CRXDE Lite het bestand `center.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `center.jsp` krachtens `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **Maken** en **Bestand maken**.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteert u **Maken** vervolgens **Bestand maken**.
 
-   1. Typ `center.jsp` als **Naam** in het dialoogvenster en klik op **OK**.
+   1. Typ in het dialoogvenster `center.jsp` als **Naam** en klik op **OK**.
 
-1. Bewerk het bestand `center.jsp` om de bestaande inhoud te verwijderen en vervang het door de volgende code:
+1. Het bestand bewerken `center.jsp` om de bestaande inhoud te verwijderen en te vervangen door de volgende code:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -365,13 +364,13 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. Maak in CRXDE Lite het bestand `right.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `right.jsp` krachtens `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **Maken** en **Bestand maken**.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteert u **Maken** vervolgens **Bestand maken**.
 
-   1. Typ `right.jsp` als **Naam** in het dialoogvenster en klik op **OK**.
+   1. Typ in het dialoogvenster `right.jsp` als **Naam** en klik op **OK**.
 
-1. Bewerk het bestand `right.jsp` om de bestaande inhoud te verwijderen en te vervangen door de volgende code:
+1. Het bestand bewerken `right.jsp` om de bestaande inhoud te verwijderen en door de volgende code te vervangen:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -381,8 +380,8 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. Maak in CRXDE Lite het bestand `body.jsp` onder `/apps/mywebsite/components/contentpage`:
-1. Bewerk het bestand `body.jsp` om de bestaande inhoud te verwijderen en te vervangen door de volgende code:
+1. Maak het bestand in CRXDE Lite `body.jsp` krachtens `/apps/mywebsite/components/contentpage`:
+1. Het bestand bewerken `body.jsp` om de bestaande inhoud te verwijderen en door de volgende code te vervangen:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -406,7 +405,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### De bovenste navigatiecomponent {#creating-the-top-navigation-component} maken
+### De bovenste navigatiecomponent maken {#creating-the-top-navigation-component}
 
 In deze sectie maakt u een component die koppelingen naar alle pagina&#39;s op hoofdniveau van de website weergeeft om de navigatie te vereenvoudigen. Deze componentinhoud wordt boven aan alle pagina&#39;s weergegeven die zijn gemaakt met de sjabloon voor de inhoudspagina.
 
@@ -416,24 +415,24 @@ Uw topnavigatie ziet er als volgt uit:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-#### De bovenste navigatiecomponent {#creating-the-top-navigation-component-1} maken
+#### De bovenste navigatiecomponent maken {#creating-the-top-navigation-component-1}
 
-1. Klik met de rechtermuisknop in CRXDE Lite op `/apps/mywebsite/components`, selecteer **Maken** en **Component maken**.
-1. Voer in het venster **Component maken** het volgende in:
+1. In CRXDE Lite klikt u met de rechtermuisknop `/apps/mywebsite/components`, selecteert u **Maken** vervolgens **Component maken**.
+1. In de **Component maken** voert u het volgende in:
 
-   * **Label**:  `topnav`
+   * **Label**: `topnav`
 
-   * **Titel**:  `My Top Navigation Component`
+   * **Titel**: `My Top Navigation Component`
 
-   * **Omschrijving**:  `This is My Top Navigation Component`
+   * **Beschrijving**: `This is My Top Navigation Component`
 
-1. Klik **Volgende** tot u bij het laatste venster komt waar u **OK** klikt. Sla uw wijzigingen op.
+1. Klikken **Volgende** totdat u naar het laatste venster komt waar u klikt **OK**. Sla uw wijzigingen op.
 
 #### Het bovenste navigatiescript maken met tekstkoppelingen {#creating-the-top-navigation-script-with-textual-links}
 
 Voeg het renderscript toe aan bovenliggend item om tekstkoppelingen naar onderliggende pagina&#39;s te genereren:
 
-1. Open in CRXDE Lite het bestand `topnav.jsp` onder `/apps/mywebsite/components/topnav`.
+1. Open het bestand in CRXDE Lite `topnav.jsp` krachtens `/apps/mywebsite/components/topnav`.
 1. Vervang de desbetreffende code door de volgende code te kopiëren en te plakken:
 
    ```xml
@@ -456,11 +455,11 @@ Voeg het renderscript toe aan bovenliggend item om tekstkoppelingen naar onderli
    %>
    ```
 
-#### De bovenste navigatie opnemen in de component ContentPage {#including-top-navigation-in-the-contentpage-component}
+#### Inclusief bovenste navigatie in de component ContentPage {#including-top-navigation-in-the-contentpage-component}
 
 Het onderwerp opnemen in de component ContentPage:
 
-1. Open in CRXDE Lite de `body.jsp` onder `/apps/mywebsite/components/contentpage`en vervang:
+1. Open in CRXDE Lite de `body.jsp` krachtens `/apps/mywebsite/components/contentpage`en vervangen:
 
    ```xml
    <div class="topnav">topnav</div>
@@ -481,11 +480,11 @@ Het onderwerp opnemen in de component ContentPage:
 
 De component Pagina definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
 
-1. Open in uw browser de pagina **Products**.
-1. Klik op de tab **Pagina** op **Pagina-eigenschappen**.
-1. Vouw op het tabblad Standaard van het dialoogvenster **Meer titels en beschrijving,** uit en typ **Subtitle** voor de eigenschap **Wat wij doen**. Klik **OK**.
-1. Herhaal de vorige stappen om de ondertitel **over onze services** toe te voegen aan de pagina **Services**.
-1. Herhaal de vorige stappen om de ondertitel **het vertrouwen toe te voegen wij** aan **Klanten** pagina verdienen.
+1. Open in uw browser de **Producten** pagina.
+1. Op de Sidetrap **Pagina** tabblad, klikt u op **Pagina-eigenschappen**.
+1. Vouw op het tabblad Standaard van het dialoogvenster de optie **Meer titels en beschrijvingen,** en voor de **Ondertitel** eigenschap, type **wat wij doen**. Klikken **OK**.
+1. Herhaal de vorige stappen om de ondertitel toe te voegen **over onze services** aan de **Services** pagina.
+1. Herhaal de vorige stappen om de ondertitel toe te voegen **het vertrouwen dat we verdienen** aan de **Klanten** pagina.
 
    **Tip:** Selecteer in CRXDE Lite het knooppunt /content/mywebsite/nl/products/jcr:content om te controleren of de eigenschap subtitle is toegevoegd.
 
@@ -493,19 +492,19 @@ De component Pagina definieert eigenschappen waarmee u ondertitels voor pagina&#
 
 Verbeter het teruggevende manuscript van de hoogste component om beeldverbindingen in plaats van hypertext voor de navigatiecontroles te gebruiken. De afbeelding bevat de titel en de ondertitel van het doel van de koppeling.
 
-Deze oefening toont [Het verkopen verzoekverwerking](/help/sites-developing/the-basics.md#sling-request-processing) aan. Het script topnav.jsp wordt gewijzigd om een script aan te roepen waarmee dynamisch afbeeldingen worden gegenereerd die voor de paginanavigatiekoppelingen kunnen worden gebruikt. Bij deze exercitie wordt met Sling de URL van afbeeldingsbronbestanden geparseerd om te bepalen welk script moet worden gebruikt om de afbeeldingen te renderen.
+Deze oefening laat zien [Verwerking van verkoopaanvraag](/help/sites-developing/the-basics.md#sling-request-processing). Het script topnav.jsp wordt gewijzigd om een script aan te roepen waarmee dynamisch afbeeldingen worden gegenereerd die voor de paginanavigatiekoppelingen kunnen worden gebruikt. Bij deze exercitie wordt met Sling de URL van afbeeldingsbronbestanden geparseerd om te bepalen welk script moet worden gebruikt om de afbeeldingen te renderen.
 
 De bron voor de afbeeldingskoppeling naar de pagina Producten kan bijvoorbeeld https://localhost:4502/content/mywebsite/en/products.navimage.png zijn. Sling ontleedt dit URL om het middeltype en het manuscript te bepalen om het middel terug te geven:
 
-1. Sling bepaalt het pad van de bron die `/content/mwebysite/en/products.png.` moet worden
-1. De verkoop past dit weg met de `/content/mywebsite/en/products` knoop aan.
-1. Sling bepaalt `sling:resourceType` van deze knoop om `mywebsite/components/contentpage` te zijn.
+1. Sling bepaalt het pad van de bron die moet worden gebruikt `/content/mwebysite/en/products.png.`
+1. De verkoop stemt met dit pad overeen met `/content/mywebsite/en/products` knooppunt.
+1. De schuifregelaar bepaalt de `sling:resourceType` van dit knooppunt dat moet worden `mywebsite/components/contentpage`.
 
-1. Bij Sling wordt het script in deze component gevonden dat het meest overeenkomt met de URL-kiezer ( `navimage`) en de bestandsextensie ( `png`).
+1. Bij Sling wordt het script in deze component gevonden dat het beste overeenkomt met de URL-kiezer ( `navimage`) en bestandsextensie ( `png`).
 
 In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/components/contentpage/navimage.png.java aan dat u creeert.
 
-1. Open in CRXDE Lite de `topnav.jsp` onder `/apps/mywebsite/components/topnav.`De inhoud van het ankerelement zoeken (regel 14):
+1. Open in CRXDE Lite de `topnav.jsp` krachtens `/apps/mywebsite/components/topnav.`De inhoud van het ankerelement zoeken (regel 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -518,16 +517,16 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
    ```
 
 1. Sla de wijzigingen op.
-1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage` en klik op **Maken** > **Bestand maken**.
-1. Typ `navimage.png.java` in het venster **Bestand maken als** Naam **.**
+1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components/contentpage` knoop en klik **Maken** > **Bestand maken**.
+1. In de **Bestand maken** venster, als **Naam**, type `navimage.png.java`.
 
    De .java-bestandsnaamextensie geeft aan Sling aan dat de Apache Sling Scripting Java Support moet worden gebruikt om het script te compileren en een servlet te maken.
 
-1. Kopieer de volgende code naar `navimage.png.java.`De code breidt de klasse AbstractImageServlet uit:
+1. De volgende code kopiëren naar `navimage.png.java.`De code breidt de klasse AbstractImageServlet uit:
 
-   * [](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) AbstractImageServletcreate een voorwerp ImageContext dat de eigenschappen van het huidige middel opslaat.
+   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Maakt een ImageContext-object dat de eigenschappen van de huidige bron opslaat.
    * De bovenliggende pagina van de bron wordt geëxtraheerd uit het ImageContext-object. De paginatitel en -ondertitel worden vervolgens opgehaald.
-   * [Met ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) ImageHelperis kunt u de afbeelding genereren op basis van het bestand navimage_bg.jpg van het siteontwerp, de paginatitel en de ondertitel van de pagina.
+   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) wordt gebruikt om de afbeelding te genereren op basis van het bestand navimage_bg.jpg van het siteontwerp, de paginatitel en de subtitel van de pagina.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -649,7 +648,7 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### De component List Children {#creating-the-list-children-component} maken
+### De component List Children maken {#creating-the-list-children-component}
 
 Maak de component listchildren die een lijst met paginakoppelingen genereert die de titel, beschrijving en datum van pagina&#39;s bevatten (bijvoorbeeld productpagina&#39;s). De koppelingen zijn gericht op de onderliggende pagina&#39;s van de huidige pagina of van een basispagina die is opgegeven in het dialoogvenster van de component.
 
@@ -674,14 +673,14 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
 
 1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 1:
 
-   1. Selecteer de `/content/mywebsite/en/products/product1/jcr:content` knoop.
-   1. Voer op het tabblad **Eigenschappen** de volgende waarden in:
+   1. Selecteer `/content/mywebsite/en/products/product1/jcr:content` knooppunt.
+   1. In de **Eigenschappen** voert u de volgende waarden in:
 
       * Naam: `jcr:description`
       * Type: `String`
       * Waarde: `This is a description of the Product 1!.`
-   1. Klik **Add**.
-   1. Maak op het tabblad **Eigenschappen** een andere eigenschap met de volgende waarden:
+   1. Klikken **Toevoegen**.
+   1. In de **Eigenschappen** kunt u een andere eigenschap maken met de volgende waarden:
 
       * Naam: date
       * Type: String
@@ -694,12 +693,12 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
 1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 2:
 
    1. Selecteer het knooppunt /content/mywebsite/nl/products/product2/jcr:content.
-   1. Voer op het tabblad **Eigenschappen** de volgende waarden in:
+   1. In de **Eigenschappen** voert u de volgende waarden in:
 
       * Naam: jcr:beschrijving
       * Type: String
       * Waarde: Dit is een beschrijving van Product 2!
-   1. Klik **Add**.
+   1. Klikken **Toevoegen**.
    1. Vervang in dezelfde tekstvakken de vorige waarden door de volgende waarden:
 
       * Naam: date
@@ -710,11 +709,11 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
 
 
 
-#### De component List Children {#creating-the-list-children-component-1} maken
+#### De component List Children maken {#creating-the-list-children-component-1}
 
 De component listchildren maken:
 
-1. Klik met de rechtermuisknop in CRXDE Lite op `/apps/mywebsite/components`, selecteer **Maken** en **Component maken**.
+1. In CRXDE Lite klikt u met de rechtermuisknop `/apps/mywebsite/components`, selecteert u **Maken** vervolgens **Component maken**.
 1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op Volgende:
 
    * Label: listchildren.
@@ -723,11 +722,11 @@ De component listchildren maken:
 
 1. Klik op Volgende totdat het deelvenster Toegestane onderliggende items wordt weergegeven en klik op OK.
 
-#### Het creëren van het Manuscript van de Kinderen van de Lijst {#creating-the-list-children-script}
+#### Het script List Children maken {#creating-the-list-children-script}
 
 Ontwikkel het manuscript voor de component listchildren.
 
-1. Open in CRXDE Lite het bestand `listchildren.jsp` onder `/apps/mywebsite/components/listchildren`.
+1. Open het bestand in CRXDE Lite `listchildren.jsp` krachtens `/apps/mywebsite/components/listchildren`.
 1. Vervang de standaardcode door de volgende code:
 
    ```xml
@@ -756,19 +755,19 @@ Ontwikkel het manuscript voor de component listchildren.
 
 1. Sla de wijzigingen op.
 
-#### Het creëren van de Dialoogvenster van de Kinderen van de Lijst {#creating-the-list-children-dialog}
+#### Het maken van het dialoogvenster Onderliggende items weergeven {#creating-the-list-children-dialog}
 
 Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listchildren te vormen.
 
 1. Maak het dialoogknooppunt onder de component listchildren:
 
-   1. Klik in CRXDE Lite met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/listchildren`en klik op **Maken** > **Dialoogvenster maken**.
+   1. Klik in CRXDE Lite met de rechtermuisknop op de knop `/apps/mywebsite/components/listchildren`knoop en klik **Maken** > **Dialoogvenster maken**.
 
    1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op OK
 
-      * **Label**:  `dialog`
+      * **Label**: `dialog`
 
-      * **Titel**:  `Edit Component` en klik op  **OK**.
+      * **Titel**: `Edit Component` en klik op **OK**.
 
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
@@ -776,8 +775,8 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. Selecteer de `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` knoop.
-1. Wijzig op het tabblad Eigenschappen de waarde van de eigenschap **title** in `List Children`
+1. Selecteer `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` knooppunt.
+1. Wijzig op het tabblad Eigenschappen de waarde van het dialoogvenster **titel** eigenschap aan `List Children`
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -809,7 +808,7 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
 Ga als volgt te werk om de component listchildren in uw component contentPage op te nemen:
 
-1. Open in CRXDE Lite het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 4):
+1. Open het bestand in CRXDE Lite `left.jsp` krachtens `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 4):
 
    ```xml
    <div>newslist</div>
@@ -840,7 +839,7 @@ Als u de volledige werking van deze component wilt zien, kunt u de pagina Produc
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-### De component Logo {#creating-the-logo-component} maken
+### De component Logo maken {#creating-the-logo-component}
 
 Maak een component die het bedrijfslogo weergeeft en een koppeling naar de startpagina van de site bevat. De component bevat een dialoogvenster voor de ontwerpmodus, zodat de eigenschapswaarden worden opgeslagen in het siteontwerp (/etc/designs/mywebsite):
 
@@ -855,27 +854,27 @@ Het ziet er als volgt uit:
 
 >[!NOTE]
 >
->Adobe Experience Manager biedt een logo met meer volledige functionaliteit ( `/libs/foundation/components/logo`).
+>Adobe Experience Manager biedt een logo met meer functies ( `/libs/foundation/components/logo`).
 
-#### Het creëren van de Node van de Component van het Logo {#creating-the-logo-component-node}
+#### Het knooppunt Logo-component maken {#creating-the-logo-component-node}
 
 Voer de volgende stappen uit om het logo-onderdeel te maken:
 
-1. Klik in CRXDE Lite met de rechtermuisknop op /apps/mywebsite/components en selecteer **Maken** en **Component maken**.
+1. Klik in CRXDE Lite met de rechtermuisknop op /apps/mywebsite/components en selecteer **Maken** vervolgens **Component maken**.
 1. Voer in het dialoogvenster Component maken de volgende eigenschapswaarden in en klik op Volgende:
 
    * Label: `logo`.
    * Titel: `My Logo Component`.
    * Beschrijving: `This is My Logo Component`.
 
-1. Klik op Volgende totdat u het laatste venster van het dialoogvenster bereikt en klik op **OK**.
+1. Klik op Volgende totdat u het laatste deelvenster van het dialoogvenster bereikt en klik vervolgens op **OK**.
 
-#### Het creëren van het Manuscript van het Logo {#creating-the-logo-script}
+#### Logoscript maken {#creating-the-logo-script}
 
 In deze sectie wordt beschreven hoe u het script maakt om de logoafbeelding weer te geven met een koppeling naar de startpagina.
 
-1. Open in CRXDE Lite het bestand `logo.jsp` onder `/apps/mywebsite/components/logo`.
-1. De volgende code maakt de koppeling naar de homepage van de site en voegt een verwijzing naar de logoafbeelding toe. Kopieer de code naar `logo.jsp`:
+1. Open het bestand in CRXDE Lite `logo.jsp` krachtens `/apps/mywebsite/components/logo`.
+1. De volgende code maakt de koppeling naar de homepage van de site en voegt een verwijzing naar de logoafbeelding toe. De code kopiëren naar `logo.jsp`:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -909,13 +908,13 @@ In deze sectie wordt beschreven hoe u het script maakt om de logoafbeelding weer
 
 1. Sla de wijzigingen op.
 
-#### Het maken van het Dialoogvenster van het Ontwerp van het Logo {#creating-the-logo-design-dialog}
+#### Het dialoogvenster Logoontwerp maken {#creating-the-logo-design-dialog}
 
-Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerpmodus. Dialoogvensterknooppunten in ontwerpmodus moeten de naam `design_dialog` hebben.
+Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerpmodus. Dialoogvensterknooppunten in ontwerpmodus moeten een naam hebben `design_dialog`.
 
 1. Maak het dialoogvenster onder de logocomponent:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/logo` en klik op **Maken** > **Dialoogvenster maken**.
+   1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components/logo` knoop en klik **Maken** > **Dialoogvenster maken**.
 
    1. Typ de volgende eigenschapswaarden en klik op OK:
 
@@ -924,7 +923,7 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
       * **Titel:** `Logo (Design)`
 
 1. Klik met de rechtermuisknop op het knooppunt tab1 in de vertakking design_dialog en klik op Verwijderen. Klik op Alles opslaan.
-1. Maak onder het knooppunt `design_dialog/items/items`een nieuw knooppunt met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik vervolgens op Alles opslaan:
+1. Onder de `design_dialog/items/items`knooppunt, nieuw knooppunt maken met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik vervolgens op Alles opslaan:
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -932,11 +931,11 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
    | fileReferenceParameter | Tekenreeks | ./imageReference |
    | name | Tekenreeks | ./afbeelding |
    | title | Tekenreeks | Afbeelding |
-   | xtype | Tekenreeks | html5smartImage |
+   | xtype | Tekenreeks | html5smartimage |
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-#### Het logo-renderscript {#creating-the-logo-render-script} maken
+#### Het renderscript voor het logo maken {#creating-the-logo-render-script}
 
 Maak het script waarmee de logoafbeelding wordt opgehaald en naar de pagina wordt geschreven.
 
@@ -1011,7 +1010,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### De component Logo toevoegen aan de component ContentPage {#adding-the-logo-component-to-the-contentpage-component}
 
-1. Open in CRXDE Lite de `left.jsp` onder `/apps/mywebsite/components/contentpage file` en zoek de volgende coderegel:
+1. Open in CRXDE Lite de `left.jsp` krachtens `/apps/mywebsite/components/contentpage file` en zoek de volgende coderegel:
 
    ```xml
    <div>logo</div>
@@ -1028,7 +1027,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-#### Het plaatsen van het Beeld van het Logo in een Pagina {#setting-the-logo-image-in-a-page}
+#### De afbeelding van het logo op een pagina instellen {#setting-the-logo-image-in-a-page}
 
 In deze sectie wordt beschreven hoe u een afbeelding instelt als uw logo in het dialoogvenster Ontwerpmodus.
 
@@ -1049,11 +1048,11 @@ In deze sectie wordt beschreven hoe u een afbeelding instelt als uw logo in het 
 
    `/etc/designs/mywebsite/jcr:content/contentpage/logo`
 
-### Inclusief de component Breadcrumb {#including-the-breadcrumb-component}
+### Met inbegrip van de component Breadcrumb {#including-the-breadcrumb-component}
 
 In deze sectie neemt u de component breadcrumb (trail) op. Dit is een van de basiscomponenten.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `center.jsp` en vervang:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en vervangen:
 
    ```java
    <div>trail</div>
@@ -1066,15 +1065,15 @@ In deze sectie neemt u de component breadcrumb (trail) op. Dit is een van de bas
    ```
 
 1. Sla de wijzigingen op.
-1. Laad in uw browser de pagina **Producten 1** opnieuw. De trailcomponent ziet er als volgt uit:
+1. Laad in uw browser de **Producten 1** pagina. De trailcomponent ziet er als volgt uit:
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-### De component Titel {#including-the-title-component} opnemen
+### De component Titel opnemen {#including-the-title-component}
 
 In deze sectie neemt u de component title op. Dit is een van de basiscomponenten.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `center.jsp` en vervang:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en vervangen:
 
    ```xml
    <div>title</div>
@@ -1099,7 +1098,7 @@ Het alineasysteem (parsys) is een belangrijk onderdeel van een website omdat het
 
 Voeg de component parsys (één van de stichtingscomponenten) aan uw component van de inhoudspagina toe.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `center.jsp` en zoek de volgende coderegel:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en zoek de volgende coderegel:
 
    ```xml
    <div>parsys</div>
@@ -1115,40 +1114,40 @@ Voeg de component parsys (één van de stichtingscomponenten) aan uw component v
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### Afbeeldingscomponent {#creating-the-image-component} maken
+### De afbeeldingscomponent maken {#creating-the-image-component}
 
 Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te besparen, wordt de afbeeldingscomponent gemaakt als een kopie van de logocomponent met enkele eigenschapswijzigingen.
 
 >[!NOTE]
 >
->Adobe Experience Manager biedt een imageonderdeel met meer volledige functionaliteit ( `/libs/foundation/components/image`).
+>Adobe Experience Manager biedt een meer volledige afbeeldingscomponent ( `/libs/foundation/components/image`).
 
-#### Afbeeldingscomponent {#creating-the-image-component-1} maken
+#### De afbeeldingscomponent maken {#creating-the-image-component-1}
 
-1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/logo` en klik op Kopiëren.
-1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components` en klik op Plakken.
-1. Klik met de rechtermuisknop op het knooppunt `Copy of logo`, klik op Naam wijzigen, verwijder de bestaande tekst en typ `image`.
+1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components/logo` en klik op Kopiëren.
+1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components` en klik op Plakken.
+1. Klik met de rechtermuisknop op de knop `Copy of logo` knoop, klikt anders noemen, schrapt de bestaande tekst en type `image`.
 
-1. Selecteer het componentknooppunt `image` en wijzig de volgende eigenschapswaarden:
+1. Selecteer `image` componentknooppunt en wijzig de volgende eigenschapswaarden:
 
    * `jcr:title:` Mijn afbeeldingscomponent.
    * `jcr:description`: Dit is de component Mijn afbeelding.
 
-1. Voeg een bezit aan de `image` knoop met de volgende bezitswaarden toe:
+1. Een eigenschap toevoegen aan de `image` knooppunt met de volgende eigenschapswaarden:
 
    * Naam: componentGroup
    * Type: String
    * Waarde: MyWebsite
 
-1. Wijzig onder het knooppunt `image` de naam van het knooppunt `design_dialog` in `dialog`.
+1. Onder de `image` knooppunt, naam wijzigen `design_dialog` knooppunt naar `dialog`.
 
-1. Naam van `logo.jsp` wijzigen in `image.jsp.`
+1. Naam wijzigen `logo.jsp` tot `image.jsp.`
 
-1. Open img.GET.java en verander het pakket in `apps.mywebsite.components.image`.
+1. Open img.GET.java en wijzig het pakket in `apps.mywebsite.components.image`.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-#### Afbeeldingsscript {#creating-the-image-script} maken
+#### Afbeeldingsscript maken {#creating-the-image-script}
 
 In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
@@ -1174,9 +1173,9 @@ In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
 1. Sla de wijzigingen op.
 
-#### Image cq:editConfig Node {#creating-the-image-cq-editconfig-node} maken
+#### Afbeelding-cq:bewerkingsconfiguratie-knooppunt maken {#creating-the-image-cq-editconfig-node}
 
-Met het knooppunttype `cq:editConfig` kunt u bepaalde gedragingen van componenten configureren tijdens het bewerken van hun eigenschappen.
+De `cq:editConfig` het knooptype laat u toe om bepaald gedrag van componenten te vormen wanneer het uitgeven van hun eigenschappen.
 
 In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
 
@@ -1205,23 +1204,23 @@ In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen e
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
-#### Het pictogram {#adding-the-icon} toevoegen
+#### Het pictogram toevoegen {#adding-the-icon}
 
 In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt weergegeven wanneer deze in Sidetrap wordt weergegeven:
 
-1. Klik in CRXDE Lite met de rechtermuisknop op het bestand `/libs/foundation/components/image/icon.png` en selecteer **Kopiëren.**
+1. Klik in CRXDE Lite met de rechtermuisknop op het bestand `/libs/foundation/components/image/icon.png` en selecteert u **Kopiëren.**
 1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/image` en klik op **Plakken** en klik vervolgens op **Alles opslaan**.
 
-#### Afbeeldingscomponent {#using-the-image-component} gebruiken
+#### De afbeeldingscomponent gebruiken {#using-the-image-component}
 
-In deze sectie ziet u de pagina **Products** en voegt u de afbeeldingscomponent toe aan het alineasysteem.
+In deze sectie ziet u de **Producten** en voeg de afbeeldingscomponent toe aan het alineasysteem.
 
-1. Laad in uw browser de pagina **Products** opnieuw.
-1. Klik in de Sidetrap op het pictogram **ontwerpmodus**.
+1. Laad in uw browser de **Producten** pagina.
+1. Klik op de knop **ontwerpmodus** pictogram.
 1. Klik op de knop Bewerken om het ontwerpdialoogvenster van par te bewerken.
-1. In de dialoog, wordt een lijst van **Toegestane Componenten** getoond; navigeer naar **MyWebsite**, selecteer **My Image Component** en klik **OK.**
-1. Terugkeren naar **bewerkingsmodus.**
-1. Dubbelklik op het parsys-frame (op **Sleep componenten of elementen hier**). De selectoren **Nieuwe component invoegen** en **Sidetrap** zien er als volgt uit:
+1. In het dialoogvenster wordt een lijst met **Toegestane componenten** wordt getoond; navigeren naar **MyWebsite**, selecteert u de **Mijn afbeeldingscomponent** en klik op **OK.**
+1. Terug naar **bewerkingsmodus.**
+1. Dubbelklik op het parsys-frame (ingeschakeld) **Componenten of elementen hierheen slepen**). De **Nieuwe component invoegen** en **Sidetrap** kiezers zien er als volgt uit:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1231,7 +1230,7 @@ In deze sectie neemt u de werkbalkcomponent op. Dit is een van de basiscomponent
 
 U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
 
-1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `body.jsp` en zoek de volgende code:
+1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u de `body.jsp` en zoek de volgende code:
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1263,17 +1262,17 @@ U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-### De zoekcomponent {#creating-the-search-component} maken
+### De zoekcomponent maken {#creating-the-search-component}
 
 In deze sectie maakt u de component om te zoeken naar inhoud op de website. Deze zoekcomponent kan in het alineasysteem van elke pagina worden geplaatst (bijvoorbeeld op een gespecialiseerde pagina met zoekresultaten).
 
-Uw zoekinvoervak ziet er als volgt uit op de pagina **English**:
+Het invoervak voor de zoekopdracht ziet er als volgt uit **Engels** pagina:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-#### De zoekcomponent {#creating-the-search-component-1} maken
+#### De zoekcomponent maken {#creating-the-search-component-1}
 
-1. Klik met de rechtermuisknop in CRXDE Lite op `/apps/mywebsite/components`, selecteer **Maken** en **Component maken**.
+1. In CRXDE Lite klikt u met de rechtermuisknop `/apps/mywebsite/components`, selecteert u **Maken** vervolgens **Component maken**.
 1. Gebruik het dialoogvenster om de component te configureren:
 
    1. Geef in één eerste deelvenster de volgende eigenschapswaarden op:
@@ -1297,12 +1296,12 @@ Uw zoekinvoervak ziet er als volgt uit op de pagina **English**:
 
 1. Klik op Alles opslaan.
 
-#### Zoekscript {#creating-the-search-script} maken
+#### Zoekscript maken {#creating-the-search-script}
 
 In deze sectie wordt beschreven hoe u het zoekscript maakt:
 
-1. Open het `/apps/mywebsite/components/search/search.jsp` dossier.
-1. Kopieer de volgende code naar `search.jsp`:
+1. Open de `/apps/mywebsite/components/search/search.jsp` bestand.
+1. De volgende code kopiëren naar `search.jsp`:
 
    ```java
    <%@ page import="com.day.cq.wcm.foundation.Search,com.day.cq.tagging.TagManager" %>
@@ -1459,13 +1458,13 @@ In deze sectie wordt beschreven hoe u het zoekscript maakt:
 
 Ga als volgt te werk om een invoervak voor zoekopdrachten op te nemen in de linkersectie van uw inhoudspagina:
 
-1. Open in CRXDE Lite het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 2):
+1. Open het bestand in CRXDE Lite `left.jsp` krachtens `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 2):
 
    ```xml
    %><div class="left">
    ```
 
-1. Voeg de volgende code **voor** die regel in:
+1. De volgende code invoegen **voor** die regel:
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1503,7 +1502,7 @@ In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 1. Open de zoekpagina in uw browser.
 1. Klik in de Sidetrap op het pictogram van de ontwerpmodus.
 1. Klik op Bewerken in het ontwerpblok van het par-blok (onder de titel Zoeken).
-1. Blader in het dialoogvenster omlaag naar de groep **Mijn websites**, selecteer **Mijn zoekcomponent** en klik op **OK**.
+1. Blader in het dialoogvenster omlaag naar de  **Mijn websites** groep, selecteren **Mijn zoekcomponent** en klik op **OK**.
 1. Klik op het driehoekje bij Sidetrap om terug te keren naar de bewerkingsmodus.
 1. Sleep de Mijn Component van het Onderzoek van Sidetrap in het parsys kader. Het ziet er als volgt uit:
 
@@ -1519,7 +1518,7 @@ In deze sectie, omvat u de component van het Systeem van de Paragraaf van de Ove
 
 Voor deze component kunt u verschillende parameters instellen in zowel de bewerkingsmodus als de ontwerpmodus.
 
-1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `right.jsp` en vervang:
+1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `right.jsp` en vervangen:
 
    ```java
    <div>iparsys</div>

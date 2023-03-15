@@ -23,7 +23,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 | :-----------: | ------------------------------ |
 | ✓ | Ondersteund |
 | &#42; | Ondersteund met extra functies |
-| - | Niet van toepassing |
+| − | Niet van toepassing |
 
 ## Ondersteunde rasterafbeeldingsindelingen in [!DNL Experience Manager] {#supported-raster-image-formats}
 
@@ -32,18 +32,18 @@ Ondersteunde rasterafbeeldingsindelingen in [!DNL Assets] zijn:
 | Format | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | Bewerken | Metagegevens terugschrijven | Inzichten |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| TIFF | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| TIFF | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| PNM | ✓ | ✓ | - | - | - | - | ✓ |
-| PGM | ✓ | ✓ | - | - | - | - | ✓ |
-| PBM | ✓ | ✓ | - | - | - | - | ✓ |
-| PPM | ✓ | ✓ | - | - | - | - | ✓ |
-| PSD ‡ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | - | ✓ | - |
-| PICT | - | - | - | - | - | - | ✓ |
-| PSB | ✓ | ✓ | ✓ | ✓ | - | - | - |
+| BMP | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PNM | ✓ | ✓ | − | − | − | − | ✓ |
+| PGM | ✓ | ✓ | − | − | − | − | ✓ |
+| PBM | ✓ | ✓ | − | − | − | − | ✓ |
+| PPM | ✓ | ✓ | − | − | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
+| PICT | − | − | − | − | − | − | ✓ |
+| PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
@@ -61,14 +61,14 @@ De volgende lijst met 3D-indelingen wordt ondersteund.
 
 Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| gLTF | ✓ | ✓ | ✓ |  | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| gLTF | ✓ | ✓ | ✓ |  | ✓ | − | ✓ | − |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
 ## Ondersteunde PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
 
@@ -96,49 +96,49 @@ De [!DNL Adobe Camera Raw] library enable [!DNL Assets] om Raw-afbeeldingen in t
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
-| Indeling | Opslag | [Metagegevensbeheer](metadata.md) | Volledige tekst<br> extractie | [Metagegevensextractie](metadata.md) | Miniatuur<br> opwekking | [Extractie van subactiva](managing-linked-subassets.md) | [Metagegevens terugschrijven](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| Format | Opslag | [Metagegevensbeheer](metadata.md) | Volledige tekst<br> extractie | [Metagegevensextractie](metadata.md) | Miniatuur<br> opwekking | [Extractie van subactiva](managing-linked-subassets.md) | [Metagegevens terugschrijven](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| DOC | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| ODT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| HTML | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| RTF | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| TXT | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| XLS | ✓ | ✓ | ✓ | - | - | - | - | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | - | - | - | ✓ |
-| ODS | ✓ | ✓ | ✓ | - | - | - | - | - |
-| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
-| ODP | ✓ | ✓ | ✓ | - | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | - | ✓ | ✓ | ✓ | ✓ | - |
-| PS | ✓ | ✓ | - | - | - | - | - | - |
-| QXP | ✓ | ✓ | - | - | - | - | - | - |
-| ePub | ✓ | ✓ | - | ✓ | ✓ | - | - | - |
+| HTML | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| RTF | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| TXT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLS | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
+| ODS | ✓ | ✓ | ✓ | − | − | − | − | − |
+| PPT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
+| ODP | ✓ | ✓ | ✓ | − | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| PS | ✓ | ✓ | − | − | − | − | − | − |
+| QXP | ✓ | ✓ | − | − | − | − | − | − |
+| ePub | ✓ | ✓ | − | ✓ | ✓ | − | − | − |
 
 ## Ondersteunde multimedia-indelingen {#supported-multimedia-formats}
 
 |  | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | MPEG-transcodering |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ | - | - | &#42; |
-| MIDI | ✓ | ✓ | - | - | &#42; |
-| 3GP | ✓ | ✓ | - | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ | - | - | &#42; |
-| OGA | ✓ | ✓ | - | - | &#42; |
-| OGG | ✓ | ✓ | - | - | &#42; |
-| RA | ✓ | ✓ | - | - | &#42; |
-| WAV | ✓ | ✓ | - | - | &#42; |
-| WMA | ✓ | ✓ | - | - | &#42; |
-| DVI | ✓ | ✓ | - | &#42; | &#42; |
-| FLV | ✓ | ✓ | - | &#42; | &#42; |
-| M4V | ✓ | ✓ | - | &#42; | &#42; |
-| MPEG | ✓ | ✓ | - | &#42; | &#42; |
-| OGV | ✓ | ✓ | - | &#42; | &#42; |
-| MOV | ✓ | ✓ | - | &#42; | &#42; |
-| WMV | ✓ | ✓ | - | &#42; | &#42; |
-| SWF | ✓ | ✓ | - | - | - |
+| AAC | ✓ | ✓ | − | − | &#42; |
+| MIDI | ✓ | ✓ | − | − | &#42; |
+| 3GP | ✓ | ✓ | − | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ | − | − | &#42; |
+| OGA | ✓ | ✓ | − | − | &#42; |
+| OGG | ✓ | ✓ | − | − | &#42; |
+| RA | ✓ | ✓ | − | − | &#42; |
+| WAV | ✓ | ✓ | − | − | &#42; |
+| WMA | ✓ | ✓ | − | − | &#42; |
+| DVI | ✓ | ✓ | − | &#42; | &#42; |
+| FLV | ✓ | ✓ | − | &#42; | &#42; |
+| M4V | ✓ | ✓ | − | &#42; | &#42; |
+| MPEG | ✓ | ✓ | − | &#42; | &#42; |
+| OGV | ✓ | ✓ | − | &#42; | &#42; |
+| MOV | ✓ | ✓ | − | &#42; | &#42; |
+| WMV | ✓ | ✓ | − | &#42; | &#42; |
+| SWF | ✓ | ✓ | − | − | − |
 
 ## Ondersteunde archiefindelingen {#supported-archive-formats}
 
@@ -146,10 +146,10 @@ De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workf
 
 | Indelingen | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| RAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| TAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | ZIP | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 ## Overige ondersteunde indelingen {#other-supported-formats}
@@ -158,11 +158,11 @@ De toepasbaarheid van de gebruikelijke DAM-functies voor een paar specifieke bes
 
 | Indelingen | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript (indien geconfigureerd met eigen leveringsdomein) | - | - | - | - | - | ✓ |
+| JavaScript (indien geconfigureerd met eigen leveringsdomein) | − | − | − | − | − | ✓ |
 
 >[!NOTE]
 >
@@ -238,24 +238,24 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 |---|---|---|---|
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vectoranimatiebestanden) |
-| M4V | Apple iTunes | H264/AVC | - |
-| MKV | Matroska | H264/AVC | - |
+| M4V | Apple iTunes | H264/AVC | − |
+| MKV | Matroska | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 &amp; HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| MP4 | MPEG-4 | H264/AVC (alle profielen) | - |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | - |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | - |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | - |
-| WebM | WebM | Google VP8 | - |
+| MP4 | MPEG-4 | H264/AVC (alle profielen) | − |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Deze video-indeling wordt nog niet ondersteund voor gebruik met interactieve video&#39;s in Dynamic Media of voor gebruik met annotatie in Experience Manager Assets.
 
 ## Dynamic Media - Ondersteunde documentindelingen {#supported-document-formats-dynamic-media}
 
-| Indeling | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering |
+| Format | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | - | - | - | - |
-| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | - | - | - | - |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
+| [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (Zie onderstaande opmerking) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
@@ -272,16 +272,16 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 ## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#supported-raster-image-formats-dynamic-media}
 
-| Indeling | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering | Typen instellen die deze indeling ondersteunen |
+| Format | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
-| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
-| BMP | ✓ | - | - | - | - | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
-| PSD ‡ | ✓ | - | - | - | - | - |
-| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| PICT | ✓ | - | - | - | - | - |
+| BMP | ✓ | − | − | − | − | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
+| PSD ‡ | ✓ | − | − | − | − | − |
+| [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
+| PICT | ✓ | − | − | − | − | − |
 
 ‡ De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 

@@ -1,8 +1,8 @@
 ---
 title: Conflicten MSM-rollout
-seo-title: Conflicten MSM-rollout
+seo-title: MSM Rollout Conflicts
 description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt oplossen.
-seo-description: Leer hoe u problemen met de uitrol van meerdere sitebeheer kunt oplossen.
+seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,21 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
 
-
-# MSM-uitrolconflicten{#msm-rollout-conflicts}
+# Conflicten MSM-rollout{#msm-rollout-conflicts}
 
 Conflicten kunnen optreden als er nieuwe pagina&#39;s met dezelfde paginanaam worden gemaakt in zowel de vertakking Verblauwdrukken als een afhankelijke vertakking voor live kopieën.
 
 Dergelijke conflicten moeten bij de uitrol worden afgehandeld en opgelost.
 
-## Conflictverwerking {#conflict-handling}
+## Conflictbehandeling {#conflict-handling}
 
 Wanneer conflicterende pagina&#39;s bestaan (in de blauwdruk en de levende exemplaartakken), staat MSM u toe om te bepalen hoe (of zelfs als) zij zouden moeten worden behandeld.
 
@@ -41,7 +40,7 @@ Naast de standaardfunctionaliteit, kunnen de aangepaste conflicthandlers worden 
 
 ### Voorbeeldscenario {#example-scenario}
 
-In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, die in zowel de blauwdruk als de levende exemplaartak (manueel gecreeerd) wordt gecreeerd, om de diverse methodes van conflictoplossing te illustreren:
+In de volgende secties gebruiken we het voorbeeld van een nieuwe pagina `b`, die zowel in de blauwdruk als in de actieve (handmatig gemaakte) kopieervertakking zijn gemaakt, om de verschillende methoden voor het oplossen van conflicten te illustreren:
 
 * blauwdruk: `/b`
 
@@ -51,7 +50,7 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
 
    Een pagina die handmatig in de actieve kopieervertakking is gemaakt. met 1 onderliggende pagina, `lc-level-1`.
 
-   * Geactiveerd bij publiceren als `/b`, samen met de kindpagina.
+   * Geactiveerd bij publiceren als `/b`, samen met de onderliggende pagina.
 
 **Voor rollout**
 
@@ -70,24 +69,24 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (handmatig gemaakt in actieve kopie-vertakking)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (bevat de inhoud van pagina<br /> kind-niveau-1 die manueel in de levende exemplaartak werd gecreeerd)</td>
+   <td><code> /lc-level-1</code> <br /> (bevat de inhoud van de pagina<br /> kind-niveau-1 dat manueel in de levende exemplaartak) werd gecreeerd</td>
   </tr>
  </tbody>
 </table>
 
-## Uitrolbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
+## Rolloutbeheer en Conflict-verwerking {#rollout-manager-and-conflict-handling}
 
 Met de rollout Manager kunt u conflictbeheer activeren of deactiveren.
 
-Dit wordt gedaan gebruikend [OSGi configuratie](/help/sites-deploying/configuring-osgi.md) van **Dag CQ WCM Rollout Manager**:
+Dit gebeurt met [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) van **Day CQ WCM-implementatiebeheer**:
 
-* **Conflict verwerken met handmatig gemaakte pagina**&#39;s:
+* **Conflict met handmatig gemaakte pagina&#39;s afhandelen**:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
    Ingesteld op true als de rollout manager conflicten moet verwerken van een pagina die in de live kopie is gemaakt met een naam die in de blauwdruk voorkomt.
 
-AEM heeft [vooraf gedefinieerd gedrag wanneer het conflictbeheer is gedeactiveerd](#behavior-when-conflict-handling-deactivated).
+AEM heeft [vooraf gedefinieerd gedrag wanneer conflictbeheer is gedeactiveerd](#behavior-when-conflict-handling-deactivated).
 
 ## Conflicthandlers {#conflict-handlers}
 
@@ -95,33 +94,33 @@ AEM gebruikt conflicthandlers om eventuele paginaconflicten op te lossen die bes
 
 AEM biedt:
 
-* De [standaardconflicthandler](#default-conflict-handler):
+* De [default conflict handler](#default-conflict-handler):
 
    * `ResourceNameRolloutConflictHandler`
 
-* De mogelijkheid om een [aangepaste manager](#customized-handlers) uit te voeren.
+* De mogelijkheid om een [aangepaste handler](#customized-handlers).
 * Het de dienstrangschikkingsmechanisme dat u toestaat om de prioriteit van elke individuele manager te plaatsen. De dienst met het hoogste rangschikken wordt gebruikt.
 
 ### Standaardconflicthandler {#default-conflict-handler}
 
 De standaardconflicthandler:
 
-* Wordt `ResourceNameRolloutConflictHandler` genoemd
+* Wordt aangeroepen `ResourceNameRolloutConflictHandler`
 
 * Met deze handler krijgt de blauwdrukpagina prioriteit.
-* De dienst die voor deze manager rangschikt wordt geplaatst laag ( &quot;d.w.z. onder de standaardwaarde voor het `service.ranking` bezit) aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
+* De dienst die voor deze manager rangschikt wordt geplaatst laag ( &quot;d.w.z. onder de standaardwaarde voor de `service.ranking` eigenschap) aangezien de veronderstelling is dat de aangepaste managers een hogere rangschikking zullen vereisen. De rangorde is echter niet het absolute minimum om zo nodig flexibiliteit te garanderen.
 
-Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina `/b` voor live kopiëren wordt verplaatst (binnen de actieve kopieervertakking) naar `/b_msm_moved`.
+Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina Live kopiëren `/b` wordt verplaatst (binnen de actieve kopieervertakking) naar `/b_msm_moved`.
 
 * live kopie: `/b`
 
-   Wordt verplaatst (binnen de actieve kopie) naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
+   Wordt verplaatst (binnen de live kopie) naar `/b_msm_moved`. Dit fungeert als back-up en zorgt ervoor dat er geen inhoud verloren gaat.
 
    * `lc-level-1` wordt niet verplaatst.
 
 * blauwdruk: `/b`
 
-   Wordt uitgerold naar de live kopieerpagina `/b`.
+   Is uitgerekt aan de levende exemplaarpagina `/b`.
 
    * `bp-level-1` wordt uitgerold naar de livecopy.
 
@@ -161,23 +160,23 @@ Aangepaste conflicthandlers kunnen:
 
 * Geef een naam op basis van uw vereisten.
 * worden ontwikkeld/geconfigureerd volgens uw vereisten; bijvoorbeeld, kunt u een manager ontwikkelen zodat de levende exemplaarpagina voorrang wordt gegeven.
-* Kan worden ontworpen om worden gevormd gebruikend [OSGi configuratie](/help/sites-deploying/configuring-osgi.md); met name:
+* Kan worden ontworpen om te worden gevormd gebruikend [OSGi-configuratie](/help/sites-deploying/configuring-osgi.md); met name:
 
-   * **Serviceklasse**:
+   * **Servicereeks**:
 
-      Bepaalt de orde met betrekking tot andere conflictmanagers ( `service.ranking`).
+      Definieert de volgorde voor andere conflicthandlers ( `service.ranking`).
 
       De standaardwaarde is 0.
 
-### Gedrag bij conflictafhandeling gedeactiveerd {#behavior-when-conflict-handling-deactivated}
+### Gedrag wanneer Conflict afhandelen gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u handmatig [conflictafhandeling](#rollout-manager-and-conflict-handling) deactiveert, onderneemt AEM geen actie op conflicterende pagina&#39;s (pagina&#39;s die niet-conflicterend zijn, worden naar behoren geïmplementeerd).
+Als u handmatig [conflictoplossing deactiveren](#rollout-manager-and-conflict-handling) dan onderneemt AEM geen actie op om het even welke conflicterende pagina&#39;s (de niet-conflicterende pagina&#39;s worden uitgevoerd zoals verwacht).
 
 >[!CAUTION]
 >
 >AEM geeft geen aanwijzing dat conflicten worden genegeerd omdat dit gedrag expliciet moet worden geconfigureerd, zodat wordt aangenomen dat het vereiste gedrag is.
 
-In dit geval heeft de live kopie in feite voorrang. De blauwdrukpagina `/b` wordt niet gekopieerd en de pagina `/b` voor live kopiëren wordt ongewijzigd gelaten.
+In dit geval heeft de live kopie in feite voorrang. De blauwdrukpagina `/b` niet is gekopieerd en de pagina voor live kopiëren `/b` ongewijzigd blijft.
 
 * blauwdruk: `/b`
 
@@ -210,6 +209,6 @@ In dit geval heeft de live kopie in feite voorrang. De blauwdrukpagina `/b` word
  </tbody>
 </table>
 
-### Servicerendeclaraties {#service-rankings}
+### Servicebeoordelingen {#service-rankings}
 
-De [OSGi](https://www.osgi.org/) de dienstrangschikking kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.
+De [OSGi](https://www.osgi.org/) de dienst rangschikt kan worden gebruikt om de prioriteit van individuele conflictmanagers te bepalen.

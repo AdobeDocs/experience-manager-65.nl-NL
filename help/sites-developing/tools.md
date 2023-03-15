@@ -1,8 +1,8 @@
 ---
 title: Gereedschappen voor testen en bijhouden
-seo-title: Gereedschappen voor testen en bijhouden
+seo-title: Testing and Tracking Tools
 description: AEM biedt een raamwerk voor het testen van de interface van componenten en een mechanisme voor het testen en opsporen van fouten in componenten
-seo-description: AEM biedt een raamwerk voor het testen van de interface van componenten en een mechanisme voor het testen en opsporen van fouten in componenten
+seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
-
 
 # Gereedschappen voor testen en bijhouden{#testing-and-tracking-tools}
 
@@ -25,7 +24,7 @@ ht-degree: 0%
 
 AEM biedt:
 
-* [een framework voor het testen van de gebruikersinterface](/help/sites-developing/hobbes.md) van componenten.
+* [een raamwerk voor het testen van de gebruikersinterface voor componenten](/help/sites-developing/hobbes.md).
 * [een mechanisme voor het testen van en het opsporen van fouten in componenten](/help/sites-developing/developer-mode.md).
 
 Hieronder vindt u twee Open Source Testing-gereedschappen:
@@ -34,17 +33,17 @@ Hieronder vindt u twee Open Source Testing-gereedschappen:
 
 Selenium wordt gebruikt voor functietests in een browser met één gebruiker per activiteit. Hierbij worden teststappen (klikken) vastgelegd als HTML-tabellen of Java-klassen.
 
-Zie [https://www.seleniumhq.org/](https://www.seleniumhq.org/) voor meer informatie.
+Zie voor meer informatie [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter wordt gebruikt om aanvragen te volgen en kan worden gebruikt voor functionele, prestatie- en stresstests.
 
-Zie [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter) voor meer informatie.
+Zie voor meer informatie [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
 Er zijn ook veel bedrijfseigen instrumenten om tests te automatiseren en testplannen te beheren.
 
-### {#tracking} bijhouden
+### Tekstspatiëring {#tracking}
 
 De volgende gereedschappen zijn gemakkelijk beschikbaar. Nochtans is een zeer belangrijke kwestie in alle gevallen de beschikbaarheid van de gegevens aan alle leden van het projectteam - partner en klant.
 
@@ -54,7 +53,7 @@ Een bug-volgsysteem dat aan uw eigen vereisten kan worden gevormd.
 
 **Werkbladen**
 
-Hoewel spreadsheets niet specifiek voor het opsporen van fouten worden gebruikt, worden spreadsheets vaak *mis* voor dit doel gebruikt, omdat ze gemakkelijk te begrijpen zijn en de meeste gebruikers ervaring hebben met hun functionaliteit.
+Hoewel spreadsheets niet specifiek een tool voor het bijhouden van fouten zijn, *mis* gebruikt voor dit doel omdat zij gemakkelijk te begrijpen zijn en de meeste gebruikers ervaring met hun functionaliteit hebben.
 
 Als deze voor het volgen dan worden gebruikt:
 

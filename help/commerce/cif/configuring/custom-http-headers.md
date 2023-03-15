@@ -17,7 +17,7 @@ Om meer controle over hun achterkant te verkrijgen, kunnen de auteurs de kopball
 
 >[!NOTE]
 >
->De ontwikkelaars kunnen de kopballen van douaneHTTP altijd vormen gebruikend de de cliëntconfiguratie GraphQL.
+>Ontwikkelaars kunnen aangepaste HTTP-headers altijd configureren met de GraphQL-clientconfiguratie.
 
 ## Configuratie {#configuration}
 
@@ -29,7 +29,7 @@ U kunt de waarden van de kopballen van HTTP in de pagina van de Configuratie van
 1. Een bestaande configuratie openen of een nieuwe configuratie maken
 1. Ga naar het tabblad &quot;Geavanceerd&quot; en zoek het multiveld &quot;Aangepaste HTTP-headers&quot;. U kunt de eerder gedefinieerde kopteksten selecteren en er waarden aan toewijzen.
 
-De componenten die de bovengenoemde configuratie van de wolkendienst gebruiken zullen deze kopballen van HTTP met elk verzoek GraphQL verzenden.
+De componenten die de bovenstaande cloudserviceconfiguratie gebruiken, verzenden deze HTTP-headers met elke GraphQL-aanvraag.
 
 ## Beperkingen {#restrictions}
 

@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot het ontwerpen van adaptieve formulieren
-seo-title: Inleiding tot het ontwerpen van adaptieve formulieren
+seo-title: Introduction to authoring adaptive forms
 description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
-seo-description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
+seo-description: AEM Forms provide easy-to-use yet powerful interface for authoring adaptive forms. It provides a host of components and tools that you can use to build forms.
 uuid: 3b150507-41b9-47c2-a94c-f85b903b2274
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: introduction, author
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3123'
+source-wordcount: '3082'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot het ontwerpen van adaptieve formulieren {#introduction-to-authoring-adaptive-forms}
 
@@ -26,18 +25,18 @@ ht-degree: 0%
 Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Een formuliergegevensmodel gebruiken**
-   [Met ](../../forms/using/data-integration.md) gegevensintegratie kunt u entiteiten en services van verschillende gegevensbronnen integreren in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+   [Gegevensintegratie](../../forms/using/data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
-* **Een XDP-**
-formuliersjabloonDit is een ideaal formuliermodel als u investeert in XFA-formulieren of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
+* **Een XDP-formuliersjabloon gebruiken**
+Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
 
-* **Het gebruiken van een Definitie van het Schema van XML (XSD) of een schema JSON**
-SchemaXML en JSON vertegenwoordigen de structuur waarin het gegeven wordt geproduceerd of door het achterste deelsysteem in uw organisatie verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
+* **Een XML-schemadefinitie (XSD) of een JSON-schema gebruiken**
+De schema&#39;s van XML en JSON vertegenwoordigen de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt. U kunt het schema koppelen aan een adaptief formulier en de elementen ervan gebruiken om dynamische inhoud toe te voegen aan het aangepaste formulier. De elementen van het schema zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten van de browser Inhoud wanneer u adaptieve formulieren maakt.
 
-* **Geen of geen**
-formuliermodel gebruikenAangepaste formulieren die met deze optie zijn gemaakt, gebruiken geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
+* **Geen of geen formuliermodel gebruiken**
+Voor adaptieve formulieren die met deze optie worden gemaakt, wordt geen formuliermodel gebruikt. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
 
-Zie [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md) voor meer informatie over het maken van een adaptief formulier.
+Ga voor meer informatie over het maken van een adaptief formulier naar [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md).
 
 ## UI voor het schrijven van adaptieve formulieren {#adaptive-form-authoring-ui}
 
@@ -56,7 +55,7 @@ Wanneer u een nieuw formulier maakt of een bestaand adaptief formulier bewerkt, 
 
 ![UI voor het schrijven van adaptieve formulieren](assets/formeditor.png)
 
-**A.** Zijbalk  **B.** Pagina, werkbalk  **C.** Aangepaste formulierpagina
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Aangepaste formulierpagina
 
 ### Zijbalk {#sidebar}
 
@@ -69,7 +68,7 @@ Met de zijbalk kunt u
 
 ![Zijbalk](assets/sidebar-comps.png)
 
-**A.** Content browser  **B.** Properties browser  **C.** Assets browser  **D.** Components browser
+**A.** Inhoudsbrowser **B.** Eigenschappenbrowser **C.** Bandenbrowser **D.** Browser voor componenten
 
 <!--Click to enlarge
 
@@ -77,11 +76,11 @@ Met de zijbalk kunt u
 
 De zijbalk bestaat uit de volgende browsers:
 
-* **Content**
-browserIn de inhoudbrowser kunt u zien
+* **Inhoudsbrowser**
+In de inhoudbrowser kunt u zien
 
-   * **FormulierobjectenHiermee geeft u de objecthiërarchie van het formulier**
-weer. Auteurs kunnen naar specifieke formuliercomponenten navigeren door op dat element te tikken in de formulierobjectstructuur. Auteur kan objecten zoeken en opnieuw rangschikken vanuit deze structuur.
+   * **Formulierobjecten**
+Hiermee geeft u de objecthiërarchie van het formulier weer. Auteurs kunnen naar specifieke formuliercomponenten navigeren door op dat element te tikken in de formulierobjectstructuur. Auteur kan objecten zoeken en opnieuw rangschikken vanuit deze structuur.
 
    * **Gegevensmodelobjecten**
 Hiermee kunt u de hiërarchie van het formuliermodel bekijken.
@@ -91,7 +90,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
    Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de adaptieve formuliercontainer weergeven:
 
-   Selecteer een component, tik dan ![field-level](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]**, en tik dan ![cmppr](assets/cmppr.png).
+   Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 
@@ -117,7 +116,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Captcha</td>
-   <td>Voegt CAPTCHA-validatie toe met Google reCAPTCHA-service. Zie <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">CAPTCHA gebruiken in adaptieve formulieren</a> voor meer informatie.</td>
+   <td>Voegt CAPTCHA-validatie toe met de Google reCAPTCHA-service. Zie voor meer informatie <a href="../../forms/using/captcha-adaptive-forms.md" target="_blank">CAPTCHA gebruiken in aangepaste vormen</a>.</td>
   </tr>
   <tr>
    <td>Diagram</td>
@@ -153,7 +152,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen. U kunt meerdere bestanden koppelen aan een component Bestandsbijlage. U kunt ook de **[!UICONTROL Maximale bestandsgrootte]* en **[!UICONTROL Ondersteunde bestandstypen]* opgeven voor de bijlagen in de eigenschappenbrowser van de component. </p> <p><strong> Opmerking: </strong><ul> <li> De component ondersteunt het bijvoegen van bestanden met een bestandsnaam die begint met tekens (.) en die tekens bevatten \ / : * ? " &lt; &gt; | ; % $, of met speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen zoals null, prn, con, lpt of com. </li> <li> Als u meerdere bestanden wilt koppelen aan een bestandsbijlage die is geopend in de Apple Safari-browser, selecteert u de bestanden één voor één en voegt u ze toe. U kunt niet meerdere bestanden tegelijk selecteren en koppelen.</li> <li>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a> voor meer informatie. </li></ul></p> </td>
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen. U kunt meerdere bestanden koppelen aan een component Bestandsbijlage. U kunt ook de **[!UICONTROL Maximum File Size]** en **[!UICONTROL Supported File Types]** voor de bijlagen in de eigenschappenbrowser van de component. </p> <p><strong> Opmerking: </strong><ul> <li> De component ondersteunt het bijvoegen van bestanden met een bestandsnaam die begint met tekens (.) en die tekens bevatten \ / : * ? " &lt; &gt; | ; % $, of met speciale bestandsnamen die zijn gereserveerd voor Windows-besturingssystemen zoals null, prn, con, lpt of com. </li> <li> Als u meerdere bestanden wilt koppelen aan een bestandsbijlage die is geopend in de Apple Safari-browser, selecteert u de bestanden één voor één en voegt u ze toe. U kunt niet meerdere bestanden tegelijk selecteren en koppelen.</li> <li>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie voor meer informatie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Ondersteunde bestandsindelingen</a>. </li></ul></p> </td>
   </tr>
   <tr>
    <td>Lijst met bestandsbijlagen</td>
@@ -161,7 +160,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Koptekst<br /> </td>
-   <td>Voegt de paginakoptekst toe die doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht bevat.<br /> </td>
+   <td>Hiermee voegt u de koptekst van de pagina toe, die doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht bevat.<br /> </td>
   </tr>
   <tr>
    <td>Voettekst</td>
@@ -189,7 +188,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de knop <span class="uicontrol">Onderliggend deelvenster toevoegen</code>. U kunt ook een paneelspecifieke werkbalk toevoegen met de knop <span class="uicontrol">Werkbalk van deelvenster toevoegen</code>. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
+   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de opdracht <span class="uicontrol">Deelvenster Onderliggend element toevoegen</code> knop. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend <span class="uicontrol">Werkbalk Deelvenster toevoegen</code> knop. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
   </tr>
   <tr>
    <td>Wachtwoordvak</td>
@@ -248,18 +247,18 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
    <td><p>Hiermee voegt u een veld toe waarin u het telefoonnummer kunt vastleggen. De component van de Telefoon staat auteurs toe om één van de volgende types van telefoonaantal te vormen. Elk type is gekoppeld aan een standaardreguliere expressie voor validatie.</p>
     <ul>
      <li>Type International wordt gevalideerd door <code>^[+][0-9]{0,14}$</code>.</li>
-     <li>Het type USPhoneNumber wordt gevalideerd door <code>{'+1 ('999') '999-9999}</code>.</li>
+     <li>Type USPhoneNumber wordt gevalideerd door <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>Type UKPhoneNumber wordt gevalideerd door <code>text{'+'99 999 999 9999}</code>.</li>
      <li>Aangepast type biedt geen standaard validatiepatroon. Het neemt de waarde van het laatste geselecteerde type van telefoonaantal. U kunt ook uw eigen aangepaste validatiepatroon opgeven.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Algemene voorwaarden<br /> </td>
+   <td>Voorwaarden en bepalingen<br /> </td>
    <td>Hiermee voegt u een veld toe waarin auteurs de voorwaarden kunnen opgeven die gebruikers kunnen bekijken voordat ze het formulier invullen.</td>
   </tr>
   <tr>
    <td>Tekstvak </td>
-   <td><p>Voegt een tekstvak toe waarin een gebruiker de vereiste informatie kan opgeven. </p> <p>Standaard accepteert de component Tekstvak alleen onbewerkte tekst. U kunt een component van de Doos van de Tekst toelaten om RTF goed te keuren. Een tekstcomponent met RTF-functionaliteit biedt opties voor het toevoegen van kopteksten, het wijzigen van tekenstijlen (vet, cursief, onderstrepen van tekens), het maken van geordende en ongeordende lijsten, het wijzigen van de tekstachtergrond en tekstkleur en het toevoegen van hyperlinks. Als u RTF-tekst voor een tekstvak wilt inschakelen, schakelt u de optie <strong> RTF-tekst toestaan in de componenteigenschappen in.</strong></p> </td>
+   <td><p>Voegt een tekstvak toe waarin een gebruiker de vereiste informatie kan opgeven. </p> <p>Standaard accepteert de component Tekstvak alleen onbewerkte tekst. U kunt een component van de Doos van de Tekst toelaten om RTF goed te keuren. Een tekstcomponent met RTF-functionaliteit biedt opties voor het toevoegen van kopteksten, het wijzigen van tekenstijlen (vet, cursief, onderstrepen van tekens), het maken van geordende en ongeordende lijsten, het wijzigen van de tekstachtergrond en tekstkleur en het toevoegen van hyperlinks. Als u RTF-tekst wilt inschakelen voor een tekstvak, schakelt u de optie<strong> RTF-tekst toestaan</strong> in de componenteigenschappen.</p> </td>
   </tr>
   <tr>
    <td>Titel</td>
@@ -276,35 +275,35 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
 U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formuliercomponenten:
 
-* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Als u de eigenschappen van een component wilt configureren, tikt u op de component en vervolgens op ![cmp](assets/cmppr.png) om de eigenschappen van de component te openen in de eigenschappenbrowser.
-* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u ![cmppr](assets/cmppr.png) tikt, kunt u de naam van de component veranderen door de **[!UICONTROL Element Name]** gebiedswaarde in eigenschappen browser te veranderen. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
+* Elke component heeft bijbehorende eigenschappen die de weergave en functionaliteit ervan bepalen. Tik op de component en tik om de eigenschappen van een component te configureren ![cmppr](assets/cmppr.png) om de componenteigenschappen in de browser van Eigenschappen te openen.
+* Een component wordt geïdentificeerd met zijn elementnaam. Wanneer u tikt ![cmppr](assets/cmppr.png)kunt u de naam van de component wijzigen door de **[!UICONTROL Element Name]** veldwaarde in de eigenschappenbrowser. Het veld Elementnaam accepteert alleen letters, cijfers, koppeltekens (-) en onderstrepingstekens (_). Andere speciale tekens zijn niet toegestaan en de elementnaam moet met een letter beginnen.
 
 * U kunt de eigenschap Titel van een adaptieve formuliercomponent inline wijzigen in de formuliereditor zonder de browser Eigenschappen te openen, zolang de titel maar zichtbaar is op het formulier. Daartoe:
 
-   1. Tik om een component te selecteren die een eigenschap **[!UICONTROL Title]** heeft en waarvan de eigenschap **[!UICONTROL Hide title]** is uitgeschakeld.
+   1. Tik om een component te selecteren die een **[!UICONTROL Title]** eigendom en waarvan **[!UICONTROL Hide title]** eigenschap is uitgeschakeld.
 
-   1. Tik ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
+   1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
 
    1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op Esc om de wijzigingen te verwijderen.
 
-* Sommige adaptieve formuliercomponenten, zoals E-mail en Telefoon, bevatten validatiepatronen die niet in de verpakking staan. U kunt echter aangepaste validatie opgeven door het veld **[!UICONTROL Validation Pattern]** onder de accordeon Patronen in de componenteigenschappen bij te werken. Zie de componentbeschrijvingen in de bovenstaande tabel voor meer informatie over standaardvalidaties.
+* Sommige adaptieve formuliercomponenten, zoals E-mail en Telefoon, bevatten validatiepatronen die niet in de verpakking staan. U kunt echter aangepaste validatie opgeven door het dialoogvenster **[!UICONTROL Validation Pattern]** onder de accordeon Patronen in de eigenschappen van de component. Zie de componentbeschrijvingen in de bovenstaande tabel voor meer informatie over standaardvalidaties.
 
-* Adaptieve formuliervelden, zoals Numeriek vak en E-mail, kunnen zo worden geconfigureerd dat ze speciale HTML5-invoertypen bevatten. Wanneer deze velden de focus hebben op mobiele apparaten en tablets, worden op het toetsenblok specifieke alfabet, getallen en tekens vóór weergegeven die doorgaans worden gebruikt voor het invoeren van informatie in de velden. Het helpt gebruikers informatie snel ingaan zonder het moeten tussen karakterreeksen op het toetsenbord van een knevel voorzien. Als u gespecialiseerde invoer voor een component wilt toestaan, schakelt u het selectievakje **[!UICONTROL Use HTML Type Number]** in de componenteigenschappen in.
+* Adaptieve formuliervelden, zoals Numeriek vak en E-mail, kunnen zo worden geconfigureerd dat ze ook speciale HTML5-invoertypen bevatten. Wanneer deze velden de focus hebben op mobiele apparaten en tablets, worden op het toetsenblok specifieke alfabet, getallen en tekens vóór weergegeven die doorgaans worden gebruikt voor het invoeren van informatie in de velden. Het helpt gebruikers informatie snel ingaan zonder het moeten tussen karakterreeksen op het toetsenbord van een knevel voorzien. Als u gespecialiseerde invoer voor een component wilt toestaan, schakelt u de optie **[!UICONTROL Use HTML Type Number]** in de componenteigenschappen.
 
-* U kunt een component van de Doos van de Tekst toelaten om RTF goed te keuren. Als u tekst met opmaak wilt inschakelen voor een tekstvak, schakelt u het selectievakje **[!UICONTROL Allow Rich Text]** in de eigenschappen van de component in.
+* U kunt een component van de Doos van de Tekst toelaten om RTF goed te keuren. Als u RTF-tekst wilt inschakelen voor een tekstvak, schakelt u de optie **[!UICONTROL Allow Rich Text]** in de componenteigenschappen.
 
-* U kunt de componenten van het Doos van de Tekst, E-mail, en van de Telefoon aan autofill waarden voor gebieden zoals naam, adres, creditcard, telefoon, en e-mail van de informatie toelaten die in browser autofill montages wordt opgeslagen. Selecteer **[!UICONTROL Enable Autofill]** in de componenteigenschappen en selecteer een **[!UICONTROL Autofill Attribute]** om deze functie in te schakelen. Wanneer een gebruiker een adaptief formulier invult, worden de waarden voorgesteld vanuit het profiel Automatisch vullen in de browser of op basis van de waarden die eerder door de gebruiker zijn ingevuld. Automatisch vullen werkt alleen als de instellingen voor automatisch vullen in de browser van de gebruiker zijn ingeschakeld.
+* U kunt de componenten van het Doos van de Tekst, E-mail, en van de Telefoon aan autofill waarden voor gebieden zoals naam, adres, creditcard, telefoon, en e-mail van de informatie toelaten die in browser autofill montages wordt opgeslagen. Selecteer **[!UICONTROL Enable Autofill]** in de componenteigenschappen en selecteer een **[!UICONTROL Autofill Attribute]**. Wanneer een gebruiker een adaptief formulier invult, worden de waarden voorgesteld vanuit het profiel Automatisch vullen in de browser of op basis van de waarden die eerder door de gebruiker zijn ingevuld. Automatisch vullen werkt alleen als de instellingen voor automatisch vullen in de browser van de gebruiker zijn ingeschakeld.
 
-* Geef waarden op voor keuzerondjes en selectievakjes in de indeling `{value}={text}` in componenteigenschappen.
+* Geef waarden op voor de items Keuzerondje en Selectievakje in `{value}={text}` in componenteigenschappen.
 * Met de component Bestandsbijlage kan een gebruiker standaard slechts één bestand bijvoegen. U kunt de componenteigenschappen echter configureren om meerdere bijlagen te ondersteunen. Als een gebruiker meerdere bestanden met dezelfde bestandsnaam bijvoegt, kunnen er bovendien problemen optreden in de bijlagen. Daarom wordt aanbevolen een unieke id te koppelen voor elke verzonden bijlage bij het verzenden van het formulier. Daartoe:
 
    1. Navigeer op uw AEM Forms-server naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-   1. **[!UICONTROL Adaptive Forms Configuration Service]** zoeken en tikken.
-   1. Schakel in het dialoogvenster Adaptive Forms Configuration Service **[!UICONTROL Make File Names Unique]** in. Standaard is dit uitgeschakeld.
+   1. Zoeken en tikken **[!UICONTROL Adaptive Forms Configuration Service]**.
+   1. Schakel in het dialoogvenster Adaptive Forms Configuration Service de optie **[!UICONTROL Make File Names Unique]**. Standaard is dit uitgeschakeld.
 
-* Als u gebruikers wilt toestaan een PDF toe te voegen met een Safari-browser, moet u **application/pdf** toevoegen aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Adaptieve formulieren die zijn gemaakt met een eerdere AEM Forms-versie kunnen **.pdf** bevatten in plaats van **application/pdf** in de eigenschap Ondersteunde bestandstypen.
+* Om gebruikers in staat te stellen een PDF vast te maken gebruikend browser Safari, zorg ervoor dat **application/pdf** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Aangepaste formulieren die zijn gemaakt met een eerdere AEM Forms-versie kunnen **.pdf** in plaats van **application/pdf** in de eigenschap Ondersteunde bestandstypen.
 
-Zie [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) voor meer tips over het werken met adaptieve formulieren.
+Voor meer tips en trucs over adaptieve formulieren raadpleegt u [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md).
 
 >[!NOTE]
 >
@@ -314,13 +313,13 @@ Zie [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/form
 
 De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van het formulier kunt bekijken, de eigenschappen van het formulier kunt wijzigen en de indeling van het formulier kunt bewerken. U kunt een voorbeeld van het formulier bekijken wanneer u het maakt en wijzigingen aanbrengen. In de paginabooltoolbar, ziet u:
 
-* **Zijpaneel** ![in-/uitschakelen](assets/toggle-side-panel.png): Hiermee kunt u Zijbalk tonen of verbergen.
+* **Zijpaneel in-/uitschakelen** ![schakelen tussen zijpaneel](assets/toggle-side-panel.png): Hiermee kunt u Zijbalk tonen of verbergen.
 
-* **Pagina-** ![informatie, thema-opties](assets/theme-options.png): Hiermee kunt u pagina-eigenschappen weergeven, een formulier publiceren/publiceren, een formulierwerkstroom starten en het formulier openen in een klassieke gebruikersinterface.
+* **Pagina-informatie** ![thema-opties](assets/theme-options.png): Hiermee kunt u pagina-eigenschappen weergeven, een formulier publiceren/publiceren, een formulierwerkstroom starten en het formulier openen in een klassieke gebruikersinterface.
 
-* **** ![Emulatorliniaal](assets/ruler.png): Hiermee kunt u het uiterlijk van een formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
+* **Emulator** ![liniaal](assets/ruler.png): Hiermee kunt u het uiterlijk van een formulier emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
 
-* **Bewerken**: Hiermee kunt u andere modi selecteren, zoals:  **[!UICONTROL Edit]**,  **[!UICONTROL Style]**,  **[!UICONTROL Developer]** en  **[!UICONTROL Design]**.
+* **Bewerken**: Hiermee kunt u andere modi selecteren, zoals: **[!UICONTROL Edit]**, **[!UICONTROL Style]**, **[!UICONTROL Developer]**, en **[!UICONTROL Design]**.
 
    * **Bewerken**: Hiermee kunt u de eigenschappen van het formulier en de componenten ervan bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.
    * **Stijl**: Hiermee kunt u de vormgeving van componenten van het formulier opmaken. In de stijlmodus kunt u bijvoorbeeld een deelvenster selecteren en de achtergrondkleur ervan opgeven.
@@ -340,11 +339,11 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
 Wanneer u een component selecteert, ziet u een werkbalk waarin u de component kunt bewerken. U krijgt opties om, eigenschappen van de componenten te snijden te kleven, te bewegen en te specificeren. U kunt kiezen uit de volgende opties:
 
-A.**Configureren**: Wanneer u **[!UICONTROL Configure]** tikt, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
+A.**Configureren**: Wanneer u tikt **[!UICONTROL Configure]**, zijn componenteigenschappen zichtbaar in de zijbalk. Als u deze eigenschappen configureert, kunt u de ervaring voor het vastleggen van gegevens aanpassen. U kunt de elementnaam van de component wijzigen en de labeltekst opgeven in het veld Titel van de component. Met elementnaam kunt u waarden vastleggen die gebruikers invoeren met de component. In de componenteigenschappen geeft u het gedrag van de component op en beheert u de gebruikersinvoer. Configureer eigenschappen in de zijbalk om gebruikersgegevens vast te leggen en te gebruiken voor verdere verwerking. Met eigenschappen voor adaptieve formuliercontainers kunt u clientbibliotheken, indelingen, thema&#39;s, Document of Record-instellingen, opslaginstellingen, verzendinstellingen en metagegevensinstellingen opgeven.
 
 B.**Kopiëren**: Met de optie Kopiëren kunt u een component kopiëren en op andere plaatsen in het formulier plakken. Wanneer u een component plakt, krijgt de geplakte component een nieuwe elementnaam maar behoudt deze de eigenschappen van de gekopieerde component.
 
-C.**Cut**: Met de optie Knippen kunt u een component in het aangepaste formulier van de ene naar de andere plaats verplaatsen.
+C.**Knippen**: Met de optie Knippen kunt u een component in het aangepaste formulier van de ene naar de andere plaats verplaatsen.
 
 D. **Verwijderen**: Hiermee kunt u de component uit het formulier verwijderen.
 
@@ -352,13 +351,13 @@ E. **Invoegen**: Hiermee kunt u een component invoegen boven de geselecteerde co
 
 F. **Plakken**: Hiermee kunt u de component die u hebt geknipt of gekopieerd, plakken met de hierboven beschreven opties.
 
-G. **Regels bewerken**: Hiermee opent u de regeleditor. Zie [Regeleditor](../../forms/using/rule-editor.md) voor meer informatie.
+G. **Regels bewerken**: Hiermee opent u de regeleditor. Zie voor meer informatie [Regeleditor](../../forms/using/rule-editor.md).
 
 H. **Groep**: Hiermee kunt u meerdere componenten selecteren als u meerdere componenten tegelijk wilt knippen, kopiëren of plakken.
 
 I. **Bovenliggend**: Hiermee kunt u het bovenliggende element van een component selecteren. Een tekstveld bevindt zich bijvoorbeeld binnen een subsectie, die zich in een sectie bevindt. De sectie bevindt zich in het hoofddeelvenster van de hulplijn en de adaptieve formuliercontainer is het bovenliggende element van een hoofddeelvenster van de hulplijn. Voor een component, kunt u alle opties zien met hiërarchie gesorteerd onderaan-op.
 
-Als u bijvoorbeeld **[!UICONTROL Parent]** tikt voor een tekstvak, ziet u:
+Als u bijvoorbeeld tikt **[!UICONTROL Parent]** voor een tekstvak ziet u :
 
 * Onderafdeling
 * Sectie
@@ -375,22 +374,21 @@ J. **Overige**: Biedt meer opties voor het werken met de geselecteerde component
 
 ### Aangepaste formulierpagina {#af-page}
 
-De aangepaste formulierpagina is het daadwerkelijke formulier. Dit is net als elke andere WCM-pagina die is gemodelleerd als de WCM `cq:Page`-component. In de volgende afbeelding ziet u de inhoudsstructuur van een adaptief formulier.
+De aangepaste formulierpagina is het daadwerkelijke formulier. Het is als elke andere WCM pagina die als WCM wordt gemodelleerd `cq:Page` component. In de volgende afbeelding ziet u de inhoudsstructuur van een adaptief formulier.
 
 ![Inhoudsstructuur van een aangepaste WCM-pagina](assets/afstructure.png)
 
 De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 
-* **guideContainer**: De basis van een adaptief formulier, gemarkeerd als  **[!UICONTROL Start of adaptive form]** in de gebruikersinterface van het adaptieve formulier. In deze component kunt u het volgende opgeven:
+* **guideContainer**: De basis van een adaptief formulier, gemarkeerd als **[!UICONTROL Start of adaptive form]** in de gebruikersinterface van het adaptieve formulier. In deze component kunt u het volgende opgeven:
 
    * *Mobiele lay-out van het adaptieve formulier*: Hiermee definieert u de weergave van het formulier op mobiele apparaten.
-   * *Bedankt, pagina*: Hiermee definieert u de pagina waarop de gebruiker na het verzenden van het formulier wordt omgeleid.
-   * *Handeling* verzenden: Hiermee bepaalt u hoe het formulier op de server wordt verwerkt wanneer de gebruiker het formulier verzendt.
+   * *Pagina Bedankt*: Hiermee definieert u de pagina waarop de gebruiker na het verzenden van het formulier wordt omgeleid.
+   * *Handeling verzenden*: Hiermee bepaalt u hoe het formulier op de server wordt verwerkt wanneer de gebruiker het formulier verzendt.
    * *Stijlen*: Hiermee geeft u het pad op naar het CSS-bestand dat wordt gebruikt om de weergave van het formulier aan te passen.
 
-* **rootPanel:** het hoofddeelvenster van een adaptief formulier. Het kan subdeelvensters onder de puntenknoop bevatten. Aan elk deelvenster, inclusief het hoofddeelvenster, kan een lay-out zijn gekoppeld. De indeling van het deelvenster bepaalt de indeling van het formulier. In de schermindeling Accordeon worden de items ervan bijvoorbeeld ingedeeld als Accordion-stappen.
+* **rootPanel:** Het hoofddeelvenster van een adaptief formulier. Het kan subdeelvensters onder de puntenknoop bevatten. Aan elk deelvenster, inclusief het hoofddeelvenster, kan een lay-out zijn gekoppeld. De indeling van het deelvenster bepaalt hoe het formulier wordt opgemaakt. In de schermindeling Accordeon worden de items ervan bijvoorbeeld ingedeeld als Accordion-stappen.
 
-* **werkbalk:** Een adaptieve formuliercontainer heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de handeling **[!UICONTROL Add Toolbar]** op de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen enzovoort.
+* **werkbalk:** Een adaptieve formuliercontainer heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de opdracht **[!UICONTROL Add Toolbar]** in de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen, enzovoort.
 
-* **elementen:** Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort).
-
+* **activa:** Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort).

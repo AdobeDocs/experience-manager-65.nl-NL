@@ -1,8 +1,8 @@
 ---
 title: Functie Vragen en antwoorden op forum
-seo-title: Functie Vragen en antwoorden op forum
+seo-title: Q&A Forum Feature
 description: De functie voor het QnA-forum toevoegen aan een pagina
-seo-description: De functie voor het QnA-forum toevoegen aan een pagina
+seo-description: Adding the QnA forum feature to a page
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,16 +10,15 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c190d5f223c85f6c49fea1391d8a3d2baff20192
+exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
 
-
-# Functie Vragen en antwoorden forum{#q-a-forum-feature}
+# Functie Vragen en antwoorden op forum{#q-a-forum-feature}
 
 ## Inleiding {#introduction}
 
@@ -36,29 +35,29 @@ De functie van het QnA-forum (vragen en antwoorden) biedt leden van de gemeensch
 In de documentatie wordt beschreven:
 
 * Het toevoegen van de QnA forumeigenschap aan een AEM plaats.
-* De montages van de configuratie voor `QnA`component.
+* De montages van de configuratie voor de `QnA`component.
 
 ## Een forum voor vragen en antwoorden toevoegen aan een pagina {#adding-a-q-a-forum-to-a-page}
 
-Als u een component `QnA` in de modus Schrijver aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / QnA` te zoeken en deze naar de juiste plaats op een pagina te slepen waar het forum QnA moet worden weergegeven.
+Als u een `QnA` van een component aan een pagina op auteurswijze, gebruik componentenbrowser om van `Communities / QnA` en sleep het naar zijn plaats op een pagina waar het forum QnA zou moeten verschijnen.
 
-Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](/help/communities/basics.md).
+Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) worden opgenomen, wordt de `QnA`-component op deze manier weergegeven:
+Wanneer de [vereiste clientbibliotheken](/help/communities/qna-essentials.md#essentials-for-client-side) worden opgenomen, is dit hoe `QnA` wordt weergegeven:
 
 ![qna-component](assets/qna-component.png)
 
-### QnA {#configuring-qna} configureren
+### QnA configureren {#configuring-qna}
 
-Selecteer de geplaatste `QnA` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
+Selecteer de geplaatste `QnA` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![vormen](assets/configure-new.png)
 
 ![qna-config](assets/qna-config.png)
 
-#### Tabblad Instellingen {#settings-tab}
+#### Het tabblad Instellingen {#settings-tab}
 
-Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen) en antwoorden (antwoorden):
+Onder de **Instellingen** tabblad, geeft u instellingen op voor onderwerpen (vragen) en antwoorden (antwoorden):
 
 * **Miniatuur van bijlage toestaan**
 
@@ -94,7 +93,7 @@ Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen
 
 * **Tags toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie **Veld labelen** tabblad). Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan hun advertentie (zie **Veld code** ). Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -102,7 +101,7 @@ Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen
 
 * **Volgen toestaan**
 
-   Indien ingeschakeld, neemt u de volgende functie voor forumposten op, waardoor leden [op de hoogte worden gesteld](/help/communities/notifications.md) van nieuwe posten. Standaard is uitgeschakeld.
+   Indien deze optie is ingeschakeld, neemt u de volgende functie op voor forumposten, waardoor leden kunnen worden [aangemeld](/help/communities/notifications.md) van nieuwe posten. Standaard is uitgeschakeld.
 
 * **Vastzetten toestaan**
 
@@ -110,7 +109,7 @@ Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen
 
 * **E-mailabonnementen toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Vereist toestaan dat het volgende wordt gecontroleerd en [e-mail gevormd](/help/communities/email.md). Standaard is uitgeschakeld.
+   Als deze optie ingeschakeld is, kunnen leden per e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](/help/communities/subscriptions.md)). Vereist dat de optie Na wordt gecontroleerd en [e-mail geconfigureerd](/help/communities/email.md). Standaard is uitgeschakeld.
 
 * **Max. bestandsgrootte**
 
@@ -149,11 +148,11 @@ Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen
    Als deze optie ingeschakeld is, wordt een eerste weergegeven antwoord geselecteerd. Standaard is uitgeschakeld.
 * **Badges weergeven**
 
-   Indien ingeschakeld, toont u verdiende en toegewezen [badges](/help/communities/implementing-scoring.md) met het blogbericht van een lid. Standaard is uitgeschakeld.
+   Indien ingeschakeld, verdiende en toegewezen weergave [badges](/help/communities/implementing-scoring.md) met het blogbericht van een lid. Standaard is uitgeschakeld.
 
 * **Aanbevolen inhoud toestaan**
 
-   als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is uitgeschakeld.
+   als het idee wordt gecontroleerd, kan het worden geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is uitgeschakeld.
 
 * **Menu inschakelen**
 
@@ -169,7 +168,7 @@ Geef onder het tabblad **Instellingen** instellingen op voor onderwerpen (vragen
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Onder **De Moderatie van de Gebruiker** lusje, specificeer hoe de geposte onderwerpen (vragen) en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor meer informatie.
+Onder de **Moderatie gebruiker** , geeft u op hoe de geposte onderwerpen (vragen) en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Zie voor meer informatie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
 * **Antwoorden weigeren**
 
@@ -179,8 +178,8 @@ Onder **De Moderatie van de Gebruiker** lusje, specificeer hoe de geposte onderw
 
    Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een vraag (onderwerp) aan verdere uitgeeft en antwoorden sluiten, en ook een vraag heropenen. Standaard is uitgeschakeld.
 
-* **Verplaats**
-OnderwerpenIndien ingeschakeld, sta moderatoren toe om vragen te bewegen. Standaard is uitgeschakeld.
+* **Onderwerpen verplaatsen**
+Als deze optie ingeschakeld is, stelt u moderatoren aan de publiczijde in staat vragen te verplaatsen. Standaard is uitgeschakeld.
 
 * **Vlagberichten**
 
@@ -188,7 +187,7 @@ OnderwerpenIndien ingeschakeld, sta moderatoren toe om vragen te bewegen. Standa
 
 * **Lijst met redenen voor vlag**
 
-   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een vraag of antwoord niet correct is gemarkeerd. Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een vraag of antwoord onjuist is. Standaard is uitgeschakeld.
 
 * **Reden voor aangepaste vlag**
 
@@ -202,13 +201,13 @@ OnderwerpenIndien ingeschakeld, sta moderatoren toe om vragen te bewegen. Standa
 
    Voer het aantal keren in dat een vraag of antwoord moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt de gemarkeerde vraag of het gemarkeerde antwoord nooit verborgen voor de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad {#tag-field-tab} voor tagveld
+#### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **Instellingen**, beperkt op basis van de gekozen naamruimten.
+Onder de **Veld code** , de tags die kunnen worden toegepast, indien toegestaan onder de **Instellingen** zijn beperkt op basis van de gekozen naamruimten.
 
 * **Toegestane naamruimten**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **Instellingen**. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &quot;Standaardtags&quot; (de standaardnaamruimte) en &quot;Alle tags opnemen&quot;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant indien `Allow Tagging` wordt gecontroleerd onder de **Instellingen** tab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &quot;Standaardtags&quot; (de standaardnaamruimte) en &quot;Alle tags opnemen&quot;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **Suggestiegrenswaarde**
 
@@ -216,29 +215,29 @@ Onder het tabblad **Tagveld** zijn de tags die kunnen worden toegepast, indien t
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het tabblad **Instellingen sorteren** op hoe de geposte opmerkingen moeten worden gesorteerd wanneer ze worden weergegeven.
+Onder de **Instellingen sorteren** , geeft u op hoe de geposte opmerkingen worden gesorteerd wanneer deze worden weergegeven.
 
 * **Sorteren op**
 
-   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. De standaardwaarde is `Newest, Oldest, Last Updated`.
+   Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is `Newest, Oldest, Last Updated`.
 
 * **Instellen als standaard**
 
-   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. De standaardwaarde is `Newest`.
+   Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is `Newest`.
 
 * **Tijdopties selecteren voor het sorteren van analysemogelijkheden**
 
-   Vervolgkeuzelijst om een van `All, Last 24 Hours, Last 7 Days, Last 30 Days` te selecteren. De standaardwaarde is `All`.
+   Vervolgkeuzelijst om een van de `All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is `All`.
 
-## Ervaring {#site-visitor-experience} voor bezoekers van site
+## Ervaring met sitebezoekers {#site-visitor-experience}
 
-### Beantwoorden {#identifying-answers} identificeren
+### Antwoorden identificeren {#identifying-answers}
 
-Één antwoord kan als correct of nuttig antwoord worden gemerkt gebruikend `Select Answer` knoop. Als een vraag is gemarkeerd als Beantwoord, kan een ander antwoord pas worden geselecteerd als de eerste is uitgeschakeld met de knop `Unmark Chosen Answer`.
+Eén antwoord kan als een correct of nuttig antwoord worden gemarkeerd met de opdracht `Select Answer` knop. Als een vraag is gemarkeerd als Beantwoord, kan een ander antwoord pas worden geselecteerd als de eerste is uitgeschakeld met de optie `Unmark Chosen Answer` knop.
 
-Als deze optie eenmaal is geselecteerd als een handig antwoord, kunt u de selectie ongedaan maken met de knop `Unmark Chosen Answer`.
+Als u deze optie eenmaal hebt geselecteerd als een handig antwoord, kunt u de selectie ongedaan maken door de optie `Unmark Chosen Answer` knop.
 
-Zodra een antwoord als levensvatbaar antwoord wordt geselecteerd, wordt een aanwijzing dat de vraag `Answered` is getoond naast het vraagonderwerp op de belangrijkste pagina QnA.
+Zodra een antwoord als levensvatbaar antwoord is gekozen, een indicatie dat de vraag `Answered` wordt getoond naast het vraagonderwerp op de belangrijkste pagina QnA.
 
 #### Moderatoren en beheerders {#moderators-and-administrators}
 
@@ -255,14 +254,14 @@ Afhankelijk van de configuratie kunnen bezoekers zich aanmelden bij de site:
 * Vlagvragen of antwoorden van andere leden.
 * Antwoorden identificeren voor vragen die ze hebben geschreven.
 
-#### Anonieme {#anonymous}
+#### Anoniem {#anonymous}
 
-Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte vragen en antwoorden lezen, deze vertalen als ze hiervoor ondersteuning krijgen, maar kunnen geen vraag of antwoord toevoegen, noch vlagberichten van anderen.
+Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte vragen en antwoorden lezen, deze vertalen als ze hiervoor ondersteuning krijgen, maar ze kunnen geen vraag of antwoord toevoegen, noch vlagberichten van anderen.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [QnA Essentials](/help/communities/qna-essentials.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [QnA Essentials](/help/communities/qna-essentials.md) pagina voor ontwikkelaars.
 
-Zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
+Voor moderatie van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
-Zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md).

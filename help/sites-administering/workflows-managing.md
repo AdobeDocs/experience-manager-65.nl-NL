@@ -1,22 +1,21 @@
 ---
 title: Toegang tot werkstromen beheren
-seo-title: Toegang tot werkstromen beheren
+seo-title: Managing Access to Workflows
 description: Leer hoe u de toegang tot Workflows beheert.
-seo-description: Leer hoe u de toegang tot Workflows beheert.
+seo-description: Learn how to manage access to Workflows.
 uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
-
 
 # Toegang tot werkstromen beheren{#managing-access-to-workflows}
 
@@ -26,7 +25,7 @@ Vorm ACLs volgens gebruikersrekeningen om het beginnen van, en het deelnemen aan
 
 Acties betreffende workflows kunnen worden uitgevoerd als:
 
-* u werkt met de `admin`-account
+* u werkt met de `admin` account
 * de account is toegewezen aan de standaardgroep `workflow-users`:
 
    * deze groep beschikt over alle rechten die uw gebruikers nodig hebben om workflowhandelingen uit te voeren.
@@ -50,39 +49,39 @@ De modellen van het werkschema erven een standaard toegangsbeheerlijst (ACL) voo
 
 >[!NOTE]
 >
->Voor informatie over het gebruiken van CRXDE Lite om ACLs te vormen, zie [Rechterbeheer van de Toegang](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Voor informatie over het gebruiken van CRXDE Lite om ACLs te vormen, zie [Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models} toe
+### Pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen toe {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Als het werkschemamodel binnen `/var/workflow/models` wordt opgeslagen dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
+Als het workflowmodel is opgeslagen binnen `/var/workflow/models` dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
 
 1. Open CRXDE Lite in uw webbrowser (bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Selecteer in de nodestructuur het knooppunt voor de map workflowmodellen:
 
    `/var/workflow/models`
 
-1. Klik op het tabblad **Toegangsbeheer**.
-1. Klik in de tabel **Lokaal toegangsbeheerbeleid** (**Toegangsbeheerlijst**) op het pluspictogram om item **toevoegen** toe te voegen.
-1. Voeg in het **Add Nieuwe Ingang** dialoogvenster een nieuwe ACE met de volgende eigenschappen toe:
+1. Klik op de knop **Toegangsbeheer** tab.
+1. In de **Beleid voor lokaal toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
+1. In de **Nieuw bericht toevoegen** voegt een nieuw ACE met de volgende eigenschappen toe:
 
-   * **Opdrachtgever**:  `content-authors`
-   * **Type**:  `Deny`
-   * **Bevoegdheden**:  `jcr:read`
+   * **Opdrachtgever**: `content-authors`
+   * **Type**: `Deny`
+   * **Bevoegdheden**: `jcr:read`
    * **rep:glob**: verwijzing naar de specifieke workflow
 
    ![wf-108](assets/wf-108.png)
 
-   De tabel **Toegangsbeheerlijst** bevat nu de beperking voor `content-authors` in het `prototype-wfm-01`-workflowmodel.
+   De **Toegangsbeheerlijst** tabel bevat nu de beperking voor `content-authors` op de `prototype-wfm-01` workflowmodel.
 
    ![wf-109](assets/wf-109.png)
 
-1. Klik **Alles opslaan**.
+1. Klikken **Alles opslaan**.
 
-   De `prototype-wfm-01`-workflow is niet meer beschikbaar voor leden van de `content-authors`-groep.
+   De `prototype-wfm-01` de workflow is niet meer beschikbaar voor leden van de `content-authors` groep.
 
-### Creeer een subfolder in /var/workflow/modellen en pas ACL op toe {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
+### Creeer een subfolder in /var/workflow/modellen en pas ACL op dat toe {#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that}
 
-Uw [ontwikkelingsteam kan de werkschema&#39;s in een subfolder ](/help/sites-developing/workflows-models.md#creating-a-new-workflow) van
+Uw [ontwikkelingsteam kan de workflows in een submap maken](/help/sites-developing/workflows-models.md#creating-a-new-workflow) van
 
 `/var/workflow/models`
 
@@ -97,26 +96,25 @@ U kunt ACL aan de omslag zelf dan toevoegen.
 
    `/var/workflow/models/prototypes`
 
-1. Klik op het tabblad **Toegangsbeheer**.
-1. In **Toepasselijk Beleid van het Toegangsbeheer** lijst, klik het plus pictogram aan **voeg** een ingang toe.
-1. Klik in de tabel **Lokaal toegangsbeheerbeleid** (**Toegangsbeheerlijst**) op het pluspictogram om item **toevoegen** toe te voegen.
-1. Voeg in het **Add Nieuwe Ingang** dialoogvenster een nieuwe ACE met de volgende eigenschappen toe:
+1. Klik op de knop **Toegangsbeheer** tab.
+1. In de **Toepasselijk toegangsbeheerbeleid** tabel, klik op het plusteken naar **Toevoegen** een vermelding.
+1. In de **Beleid voor lokaal toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
+1. In de **Nieuw bericht toevoegen** voegt een nieuw ACE met de volgende eigenschappen toe:
 
-   * **Opdrachtgever**:  `content-authors`
-   * **Type**:  `Deny`
-   * **Bevoegdheden**:  `jcr:read`
+   * **Opdrachtgever**: `content-authors`
+   * **Type**: `Deny`
+   * **Bevoegdheden**: `jcr:read`
 
    >[!NOTE]
    >
-   >Zoals met [Pas ACL voor het specifieke werkschemamodel op /var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) toe u rep:glob kunt omvatten om toegang tot een specifieke werkschema te beperken.
+   >Zoals met [Pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen toe](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) U kunt rep:glob opnemen om toegang tot een specifieke werkstroom te beperken.
 
    ![wf-110](assets/wf-110.png)
 
-   De tabel **Toegangsbeheerlijst** bevat nu de beperking voor `content-authors` in de map `prototypes`.
+   De **Toegangsbeheerlijst** tabel bevat nu de beperking voor `content-authors` op de `prototypes` map.
 
    ![wf-111](assets/wf-111.png)
 
-1. Klik **Alles opslaan**.
+1. Klikken **Alles opslaan**.
 
-   De modellen in de `prototypes` omslag zijn niet meer beschikbaar aan leden van `content-authors` groep.
-
+   De modellen in de `prototypes` de map is niet meer beschikbaar voor leden van de `content-authors` groep.

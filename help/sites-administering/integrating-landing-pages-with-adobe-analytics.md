@@ -1,26 +1,25 @@
 ---
 title: Landingpagina's integreren met Adobe Analytics
-seo-title: Landingpagina's integreren met Adobe Analytics
+seo-title: Integrating Landing Pages with Adobe Analytics
 description: Leer hoe u bestemmingspagina's kunt integreren met Adobe Analytics.
-seo-description: Leer hoe u bestemmingspagina's kunt integreren met Adobe Analytics.
+seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
 
+# Landingpagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-# Openingspagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
-
-AEM heeft de landingspagina-oplossing met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken geïntegreerd:
+AEM heeft de landingspagina-oplossing geïntegreerd met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken:
 
 1. Klikken door component
 1. Grafische koppelingscomponent
@@ -29,15 +28,15 @@ Deze componenten maken bepaalde kenmerken beschikbaar die via Adobe Analytics-va
 
 ## Vereisten {#prerequisites}
 
-Adobe raadt u aan de [bestaande integratie AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) door te nemen om te begrijpen hoe deze integratie werkt.
+Adobe raadt u aan de [bestaande AEM-Adobe Analytics-integratie](/help/sites-administering/adobeanalytics.md) om te begrijpen hoe deze integratie werkt.
 
 ## Componenten beschikbaar voor toewijzing {#components-available-for-mapping}
 
-In AEM, kunnen **Vraag aan Action** componenten - **ClickThroughLink** en **GraphicalLink** - hier in sidekick worden getoond, aan de variabelen van Adobe Analytics worden in kaart gebracht.
+In AEM **Oproep tot actie** componenten - **ClickThroughLink** en **GraphicalLink** - hier in het hulpslot wordt getoond, kan aan variabelen van Adobe Analytics worden in kaart gebracht.
 
-![chlimage_1-29](assets/chlimage_1-21a.jpeg)
+![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
-### Onderdelen van landingspagina&#39;s toewijzen aan Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### Onderdelen van bestemmingspagina aan Adobe Analytics toewijzen {#mapping-landing-page-components-to-adobe-analytics}
 
 U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 
@@ -90,9 +89,8 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 </table>
 
 1. Wijs deze belichte kenmerken toe aan alle Adobe Analytics-variabelen van de zoeker naar inhoud. Het framework is nu gebruiksklaar.
-1. U kunt nu een nieuwe bestemmingspagina maken of een bestaande landingspagina met bestaande componenten openen CTA en **Cloud Services** lusje in **Pagina Eigenschappen** van sidekick (in aanraking-geoptimaliseerde UI, selecteer **Open Eigenschappen** en klik **Cloud Services**) en vorm het kader om met landingspagina te gebruiken. Selecteer het framework in de vervolgkeuzelijst.
+1. U kunt nu een nieuwe bestemmingspagina tot stand brengen of een bestaande landingspagina met bestaande componenten openen CTA en klikken **Cloud Services** tab in **Pagina-eigenschappen** in het zijpaneel (in de interface met geoptimaliseerde aanrakingen selecteert u **Eigenschappen openen** en klik op **Cloud Services**) en configureert u het framework dat u wilt gebruiken met de bestemmingspagina. Selecteer het framework in de vervolgkeuzelijst.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 1. Nadat u het framework hebt geconfigureerd met de bestemmingspagina, kunt u nu de van instrumenten voorziene componenten gebruiken en worden eventuele klikken op CTA opgenomen in Adobe Analytics.
-

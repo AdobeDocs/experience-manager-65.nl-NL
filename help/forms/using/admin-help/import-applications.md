@@ -1,28 +1,27 @@
 ---
 title: Toepassingen importeren en beheren
-seo-title: Toepassingen importeren en beheren
+seo-title: Import and manage applications
 description: Leer hoe u toepassingen kunt importeren en beheren.
-seo-description: Leer hoe u toepassingen kunt importeren en beheren.
+seo-description: Learn how to import and manage applications.
 uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
 
-
 # Toepassingen importeren en beheren{#import-and-manage-applications}
 
-In AEM vormen, is een *toepassing* een container voor het opslaan van activa die voor het uitvoeren van een AEM vormenoplossing worden vereist. Voorbeelden van elementen zijn formulierontwerpen, formulierfragmenten, afbeeldingen, processen, DDX-bestanden, formulierhulplijnen, HTML-pagina&#39;s en SWF-bestanden. Tijdens de ontwikkelingsfase van een project, kunnen de gebruikers Workbench toepassingen van de mening van Toepassingen in Workbench direct opstellen. Zodra opgesteld, verschijnen deze toepassingen in beleidsconsole, op het lusje van Toepassingen op de pagina van het Beheer van de Toepassing.
+In AEM formulieren *toepassing* is een container voor het opslaan van activa die voor het uitvoeren van een oplossing van AEM vormen worden vereist. Voorbeelden van elementen zijn formulierontwerpen, formulierfragmenten, afbeeldingen, processen, DDX-bestanden, formulierhulplijnen, HTML-pagina&#39;s en SWF-bestanden. Tijdens de ontwikkelingsfase van een project, kunnen de gebruikers Workbench toepassingen van de mening van Toepassingen in Workbench direct opstellen. Zodra opgesteld, verschijnen deze toepassingen in beleidsconsole, op het lusje van Toepassingen op de pagina van het Beheer van de Toepassing.
 
-Wanneer een toepassing klaar is voor implementatie op een productieserver, verpakt de Workbench-gebruiker de toepassing in een *AEM formuliertoepassingsbestand* (.lca). Dan gebruikt een beheerder beleidsconsole om het toepassingsdossier in te voeren en op te stellen, gebruikend het lusje van Toepassingen op de pagina van het Beheer van de Toepassing.
+Wanneer een toepassing volledig en klaar voor plaatsing aan een productieserver is, verpakt de gebruiker Workbench de toepassing in een *Toepassingsbestand voor formulieren AEM* (.lca). Dan gebruikt een beheerder beleidsconsole om het toepassingsdossier in te voeren en op te stellen, gebruikend het lusje van Toepassingen op de pagina van het Beheer van de Toepassing.
 
 U kunt het archieflusje op de pagina van het Beheer van de Toepassing ook gebruiken om LCAs in te voeren die gebruikend werkbank 8.x werden gecreeerd.
 
@@ -37,7 +36,7 @@ Met het tabblad Toepassingen kunt u toepassingen importeren en beheren die in Wo
 * eindpuntconfiguratie-instellingen
 * beveiligingsprofielen
 
-## Een toepassing of archief {#import-an-application-or-archive} importeren
+## Een toepassing of archief importeren {#import-an-application-or-archive}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Toepassingsbeheer.
 1. Klik op Importeren.
@@ -56,9 +55,9 @@ Met het tabblad Toepassingen kunt u toepassingen importeren en beheren die in Wo
 
    Op het tabblad Eigenschappen aan de rechterkant worden de eigenschappen van het geselecteerde CRX-knooppunt weergegeven.
 
-   De eigenschap **syncState** geeft de status aan van de synchronisatie van gegevens tussen de AEM formulierserver en de CRX-opslagplaats. Zodra het importproces begint, wordt deze status ingesteld op 0 (nul). Deze status geeft aan dat de gegevens momenteel niet zijn gesynchroniseerd. Wanneer de gegevens worden gesynchroniseerd, wordt de status ingesteld op 1.
+   De **syncState** Deze eigenschap geeft de status aan van de synchronisatie van gegevens tussen de AEM formulierserver en de CRX-opslagplaats. Zodra het importproces begint, wordt deze status ingesteld op 0 (nul). Deze status geeft aan dat de gegevens momenteel niet zijn gesynchroniseerd. Wanneer de gegevens worden gesynchroniseerd, wordt de status ingesteld op 1.
 
-## Een toepassing {#deploy-an-application} implementeren
+## Een toepassing implementeren {#deploy-an-application}
 
 U kunt toepassingen implementeren die u hebt geïmporteerd of die Workbench-gebruikers hebben geïmporteerd uit Workbench.
 
@@ -66,7 +65,7 @@ U kunt toepassingen implementeren die u hebt geïmporteerd of die Workbench-gebr
 1. Schakel het selectievakje naast de toepassing die u wilt implementeren in en klik op Implementeren.
 1. Klik op OK in het bevestigingsvenster dat wordt weergegeven.
 
-## Implementatie van een toepassing {#undeploy-an-application} ongedaan maken
+## Implementatie van een toepassing ongedaan maken {#undeploy-an-application}
 
 U kunt toepassingen verwijderen uit de runtime.
 
@@ -74,7 +73,7 @@ U kunt toepassingen verwijderen uit de runtime.
 1. Schakel het selectievakje naast de toepassing die u wilt verwijderen in en klik op Distribueren ongedaan maken.
 1. Klik op OK in het bevestigingsvenster dat wordt weergegeven.
 
-## Een toepassing verwijderen van de server {#remove-an-application-from-the-server}
+## Een toepassing van de server verwijderen {#remove-an-application-from-the-server}
 
 Verwijder de toepassing voordat u deze van de server verwijdert.
 
@@ -82,7 +81,7 @@ Verwijder de toepassing voordat u deze van de server verwijdert.
 1. Schakel het selectievakje naast de toepassing die u wilt verwijderen in en klik op Verwijderen.
 1. Klik op OK in het bevestigingsvenster dat wordt weergegeven.
 
-## Runtimeconfiguratie {#import-an-application-s-runtime-configuration} van een toepassing importeren
+## De runtimeconfiguratie van een toepassing importeren {#import-an-application-s-runtime-configuration}
 
 Als een toepassingsbeheerder de runtime configuratie voor een toepassing heeft uitgevoerd, kunt u het in de opgestelde toepassing invoeren. U kunt het invoeren gebruikend of de beleidsconsole of via gescripte plaatsing LCA.
 
@@ -92,7 +91,7 @@ Als een toepassingsbeheerder de runtime configuratie voor een toepassing heeft u
 1. Klik op Bladeren en selecteer het XML-bestand dat de runtimeconfiguratie bevat.
 1. Klik op Importeren.
 
-## Runtimeconfiguratie van een toepassing exporteren {#export-an-application-s-runtime-configuration}
+## De runtimeconfiguratie van een toepassing exporteren {#export-an-application-s-runtime-configuration}
 
 U kunt de runtime configuratieinformatie voor opgestelde toepassingen uitvoeren.
 
@@ -111,8 +110,7 @@ U kunt ook een gescripte implementatie gebruiken om toepassingsbestanden in te v
 
 De plaatsing Scripted elimineert de behoefte om montages in het productiemilieu manueel aan te passen alvorens opgezette toepassingen te beginnen.
 
-1. Navigeer vanuit een opdrachtprompt naar *[aem-forms root]*/sdk/misc/Foundation/ArchiveManagement.
+1. Van een bevelherinnering, navigeer aan *[basis van em-formulieren]*/sdk/misc/Foundation/ArchiveManagement.
 1. Controleer het bestand ReadMe.txt voor meer gedetailleerde instructies.
 1. Wijzig handmatig de bestanden scriptedDeploy.bat en sample-files/sample.xml, zoals beschreven in het bestand readme.txt.
 1. Voer het bestand scriptedDeploy.bat uit. Met deze actie implementeert u het archiefbestand voor AEM formulieren met de overschrijvingsinstellingen.
-

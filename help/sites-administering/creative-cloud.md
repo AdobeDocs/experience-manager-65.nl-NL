@@ -1,8 +1,8 @@
 ---
 title: Mappen delen met Adobe Creative Cloud
-seo-title: Mappen delen met Adobe Creative Cloud
+seo-title: Folder sharing with Adobe Creative Cloud
 description: Meer informatie over het delen van mappen met Adobe Creative Cloud
-seo-description: Meer informatie over het delen van mappen met Adobe Creative Cloud
+seo-description: Learn about sharing folder with Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie Mappen delen AEM naar Creative Cloud is vervangen. Klanten wordt ten zeerste aangeraden nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Leer meer in [AEM en de Beste praktijken van de Integratie van de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>De functie Mappen delen AEM naar Creative Cloud is vervangen. Klanten wordt sterk aangeraden om nieuwere mogelijkheden te gebruiken, zoals [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [Bureaubladapp AEM](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Meer informatie in [Aanbevolen werkwijzen voor AEM en Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

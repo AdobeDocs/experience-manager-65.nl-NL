@@ -1,8 +1,8 @@
 ---
 title: Opslagconfiguratie
-seo-title: Opslagconfiguratie
+seo-title: Storage Configuration
 description: Toegang tot de configuratieconsole voor opslag
-seo-description: Toegang tot de configuratieconsole voor opslag
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -35,16 +35,16 @@ Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek:
 
 In het auteursmilieu, om de console van de opslagconfiguratie te bereiken.
 
-* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
+* Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Communities]** > **[!UICONTROL Storage Configuration]**
 
 U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
 * Selecteer een optie
 * Passend configureren
 
-   * Zie details voor [het selecteren van MSRP](msrp.md#select-msrp)
-   * Zie details voor [het selecteren van DSRP](dsrp.md#select-dsrp)
-   * Zie details voor [het selecteren van ASRP](asrp.md#select-asrp)
+   * Zie details voor [selecteren van MSRP](msrp.md#select-msrp)
+   * Zie details voor [selecteren, DSRP](dsrp.md#select-dsrp)
+   * Zie details voor [selecteren van ASRP](asrp.md#select-asrp)
 
 * Selecteer **[!UICONTROL Submit]**.
 
@@ -52,10 +52,10 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
 Houd er rekening mee dat als er geen selectie wordt gemaakt, de standaardinstelling de AEM opslagplaats JCR is.
 
-JCR is *geen* een gemeenschappelijke opslag die door de auteur wordt gedeeld en publiceert milieu&#39;s. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
+JCR is *niet* een gemeenschappelijke opslag die door de auteur en het publiceren milieu&#39;s wordt gedeeld. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
 
-Bezoek [JCR Store](jsrp.md) voor meer informatie.
+Bezoek [JCR-winkel](jsrp.md) voor aanvullende informatie.
 
 >[!NOTE]
 >
->De afwezigheid van de knoop `srpc` onder `/etc/socialconfig` wijst op het gebrek [JCR store](jsrp.md).
+>De afwezigheid van het knooppunt `srpc` krachtens `/etc/socialconfig` Hiermee wordt de standaardinstelling aangegeven [JCR-archief](jsrp.md).

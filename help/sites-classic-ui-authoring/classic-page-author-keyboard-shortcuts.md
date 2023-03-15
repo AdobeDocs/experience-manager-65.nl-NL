@@ -1,30 +1,29 @@
 ---
 title: Sneltoetsen bij het bewerken van pagina's
-seo-title: Sneltoetsen bij het bewerken van pagina's
+seo-title: Keyboard Shortcuts when Editing Pages
 description: In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
-seo-description: In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
+seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 2%
 
 ---
 
-
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere bij het [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op de [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->In de volgende lijsten, voor de belangrijkste combinaties in **Shortcut** kolom, zowel de sleutels van CTRL als van het Bevel werken aan macOS.
+>In de volgende tabellen geldt voor de belangrijkste combinaties in de **Sneltoets** zowel de Ctrl- als de Command-toets werken op macOS.
 
 >[!NOTE]
 >
@@ -32,12 +31,10 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 >
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
 >* Mac: Houd Cmd ingedrukt en klik op de vereiste componenten.
-
 >
 
 
-
-## Sneltoetsen {#editing-keyboard-shortcuts} bewerken
+## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
 
 <table>
  <tbody>
@@ -74,7 +71,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Geselecteerde alinea('s) knippen.<strong><br /> Opmerking: </strong> de alinea Knippen verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
+   <td>Geselecteerde alinea('s) knippen.<strong><br /> Opmerking:</strong> De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
   </tr>
   <tr>
    <td> </td>
@@ -99,15 +96,15 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Standaardcontextmenu (browser) forceren.<br /> <strong>Opmerking:</strong> AEM contextmenu's worden alleen weergegeven in de klassieke gebruikersinterface.</td>
+   <td>Standaardcontextmenu (browser) forceren.<br /> <strong>Opmerking:</strong> AEM contextmenu's vindt alleen plaats in de klassieke gebruikersinterface.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Toont <a href="/help/sites-administering/client-context.md">cliëntcontext</a>.</td>
+   <td>Hiermee wordt het dialoogvenster <a href="/help/sites-administering/client-context.md">clientcontext</a>.</td>
   </tr>
   <tr>
-   <td>Rich Text Editor<br /> </td>
+   <td>RTF-editor<br /> </td>
    <td><strong><code>Ctrl-B</code></strong><br /> </td>
    <td>Vet</td>
   </tr>
@@ -154,7 +151,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
  </tbody>
 </table>
 
-Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer u de [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) gebruikt.
+Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 ## Sneltoetsen voor ontwikkeling {#keyboard-shortcuts-for-development}
 
@@ -169,9 +166,8 @@ Voor bureaubladontwikkelaars zijn aanvullende sneltoetsen beschikbaar wanneer u 
   </tr>
   <tr>
    <td>Bewerkingsmodus</td>
-   <td>Plaats het volgende achtervoegsel in URL:<br /> <code>?debugClientLibs=true</code><br /> dan gebruik:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Stel het volgende achtervoegsel in de URL in:<br /> <code>?debugClientLibs=true</code><br /> Gebruik vervolgens:<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>De tijdinstellingsstatistieken voor het laden van pagina's weergeven.</td>
   </tr>
  </tbody>
 </table>
-

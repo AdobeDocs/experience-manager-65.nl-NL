@@ -1,8 +1,8 @@
 ---
 title: Ontwerpmodus
-seo-title: Ontwerpmodus
+seo-title: Developer Mode
 description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
-seo-description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
+seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,21 @@ topic-tags: components
 content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
 
+# Ontwerpmodus{#developer-mode}
 
-# Modus voor ontwikkelaar{#developer-mode}
+Bij het bewerken van pagina&#39;s in AEM, diverse [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) zijn beschikbaar, inclusief de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
 
-Bij het bewerken van pagina&#39;s in AEM zijn verschillende [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) beschikbaar, waaronder de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
-
-* **[](#components)** Componenten voor het bekijken van structuur en prestatiesinformatie.
-* **[Test](#tests)** voor het uitvoeren van tests en het analyseren van de resultaten.
-* **[Er](#errors)** zijn fouten opgetreden.
+* **[Componenten](#components)** voor het bekijken van structuur en prestatiesinformatie.
+* **[Tests](#tests)** voor het uitvoeren van tests en het analyseren van de resultaten.
+* **[Fouten](#errors)** om te zien welke problemen zich voordoen.
 
 Deze hulp een ontwikkelaar om:
 
@@ -39,11 +38,9 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
-
    >
-   >   
-   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
->* Is alleen beschikbaar voor gebruikers die lid zijn van de groep `administrators`.
+   >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+>* Is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
 
 
 >[!CAUTION]
@@ -54,33 +51,29 @@ Deze hulp een ontwikkelaar om:
 >
 >* op een instantie van de auteur die geen runtime van de Inhoud gebruikt
 >* een publicatie-instantie
-
 >
->
-Het moet na gebruik opnieuw worden uitgeschakeld.
+>Het moet na gebruik opnieuw worden uitgeschakeld.
 
 >[!NOTE]
 >
 >Zie het volgende:
 >
->* Het artikel van de Kennisbank, [Oplossen van problemen AEM TouchUI kwesties](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor verdere uiteinden en hulpmiddelen.
+>* artikel in de kennisbank; [Problemen AEM TouchUI oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)voor meer tips en hulpmiddelen.
 >* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
-
 >
-
 
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
-De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Als u het deelvenster wilt openen, selecteert u **Developer** in de moduskiezer op de werkbalk van de pagina-editor:
+De modus Ontwikkelaar wordt als een zijpaneel geïmplementeerd in de pagina-editor. Selecteer **Ontwikkelaar** in de moduskiezer op de werkbalk van de pagina-editor:
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
 Het deelvenster bestaat uit twee tabbladen:
 
-* **[Componenten](/help/sites-developing/developer-mode.md#components)**  - Dit toont een componentstructuur, vergelijkbaar met de  [inhoudslijn ](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
+* **[Componenten](/help/sites-developing/developer-mode.md#components)** - Dit toont een componentenboom, gelijkend op [inhoudsstructuur](/help/sites-authoring/author-environment-tools.md#content-tree) voor auteurs
 
-* **[Fouten](/help/sites-developing/developer-mode.md#errors)**  - Wanneer er problemen optreden, worden de details voor elke component weergegeven.
+* **[Fouten](/help/sites-developing/developer-mode.md#errors)** - Als er problemen optreden, worden de details voor elke component weergegeven.
 
 ### Onderdelen {#components}
 
@@ -107,14 +100,14 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-* **Details** weergeven: een koppeling naar een lijst met:
+* **Details weergeven**: een koppeling naar een lijst met:
 
    * alle componentscripts die worden gebruikt om de component te renderen.
    * het inhoudspad van de gegevensopslagruimte voor deze specifieke component.
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
-* **Script** bewerken: een koppeling die:
+* **Script bewerken**: een koppeling die:
 
    * Hiermee wordt het componentscript in CRXDE Lite geopend.
 
@@ -127,18 +120,18 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
 >[!CAUTION]
 >
->Sommige verbindingen richten aan manuscripten onder `/libs`. Deze zijn echter alleen ter referentie; u **mag niets onder `/libs` bewerken, omdat wijzigingen die u aanbrengt mogelijk verloren gaan.** Dit is toe te schrijven aan het feit dat deze tak aan veranderingen kan zijn wanneer u bevordert of een hotfix/eigenschappak toepast. Alle wijzigingen die u nodig hebt, moeten worden aangebracht onder `/apps`, zie [Bedekkingen en overschrijvingen](/help/sites-developing/overlays.md).
+>Sommige koppelingen wijzen naar scripts onder `/libs`. Deze zijn echter uitsluitend ter referentie, u **mogen** alles onder bewerken `/libs`, omdat eventuele wijzigingen die u aanbrengt, verloren kunnen gaan. Dit is toe te schrijven aan het feit dat deze tak aan veranderingen kan zijn wanneer u bevordert of een hotfix/eigenschappak toepast. Alle wijzigingen die u nodig hebt, moeten onder `/apps`, zie [Bedekkingen en overschrijvingen](/help/sites-developing/overlays.md).
 
 ### Fouten {#errors}
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
-Hopelijk is het tabblad **Fouten** altijd leeg (zoals hierboven), maar wanneer problemen optreden, worden de volgende details voor elke component weergegeven:
+Hopelijk **Fouten** tab is altijd leeg (zoals hierboven), maar wanneer er problemen optreden, worden de volgende details voor elke component weergegeven:
 
 * Een waarschuwing als de component een ingang aan het foutenlogboek, samen met details van de fout en directe verbindingen aan de aangewezen code binnen CRXDE Lite schrijft.
 * Een waarschuwing als de component een beheersessie opent.
 
-Bijvoorbeeld, in een situatie waar een ongedefinieerde methode wordt geroepen, zal de resulterende fout op **Fouten** tabel worden getoond:
+Wanneer bijvoorbeeld een niet-gedefinieerde methode wordt aangeroepen, wordt de resulterende fout weergegeven in het dialoogvenster **Fouten** tab:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -150,5 +143,4 @@ Het componentitem in de structuur van het tabblad Componenten wordt ook gemarkee
 >
 >In AEM 6.2 werden de testfuncties van de modus Ontwikkelaar opnieuw geïmplementeerd als een zelfstandige toepassing Tools.
 >
->Zie [Uw interface testen](/help/sites-developing/hobbes.md) voor meer informatie.
-
+>Zie voor meer informatie [Uw gebruikersinterface testen](/help/sites-developing/hobbes.md).

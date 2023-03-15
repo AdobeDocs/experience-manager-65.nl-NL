@@ -1,8 +1,8 @@
 ---
 title: Forms renderen op waarde
-seo-title: Forms renderen op waarde
+seo-title: Rendering Forms By Value
 description: Met de Forms API (Java) kunt u een formulier op waarde weergeven met de API voor Java API en Web Service.
-seo-description: Met de Forms API (Java) kunt u een formulier op waarde weergeven met de API voor Java API en Web Service.
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
-
 
 # Forms renderen op waarde {#rendering-forms-by-value}
 
@@ -38,7 +37,7 @@ De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt d
 
 * Het formulierontwerp kan geen relatieve gekoppelde inhoud bevatten. Alle afbeeldingen en fragmenten moeten in het formulierontwerp worden ingesloten of absoluut worden vermeld.
 * Berekeningen aan de serverzijde kunnen niet worden uitgevoerd nadat het formulier is gegenereerd. Als het formulier wordt teruggestuurd naar de Forms-service, worden de gegevens opgehaald en geretourneerd zonder berekeningen aan de serverzijde.
-* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de Forms-service ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat op waarde wordt doorgegeven, geen locatie heeft waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden geëxtraheerd wanneer de HTML-pagina wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die in HTML moeten worden gerenderd.
+* Omdat HTML gekoppelde afbeeldingen alleen tijdens runtime kan gebruiken, is het niet mogelijk om HTML met ingesloten afbeeldingen te genereren. De reden hiervoor is dat de Forms-service ingesloten afbeeldingen met HTML ondersteunt door de afbeeldingen op te halen uit een formulierontwerp waarnaar wordt verwezen. Omdat een formulierontwerp dat via waarde wordt doorgegeven, geen locatie waarnaar wordt verwezen, kunnen ingesloten afbeeldingen niet worden uitgepakt wanneer de pagina HTML wordt weergegeven. Daarom moeten afbeeldingsverwijzingen absolute paden zijn die moeten worden gerenderd in HTML.
 
 >[!NOTE]
 >
@@ -46,9 +45,9 @@ De volgende beperkingen zijn van toepassing wanneer een formulierontwerp wordt d
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
+>Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een formulier op waarde te genereren:
 
@@ -64,11 +63,11 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms Client API-object maken**
 
-Voordat u gegevens via programmacode kunt importeren in een PDF-formulier met client-API, moet u een client voor gegevensintegratie maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen.
+Voordat u via programmacode gegevens kunt importeren in een PDF formulier-client-API, moet u een Data Integration-service-client maken. Wanneer u een serviceclient maakt, definieert u verbindingsinstellingen die vereist zijn om een service aan te roepen.
 
 **Verwijzen naar het formulierontwerp**
 
-Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document`-object maken dat het formulierontwerp bevat dat moet worden weergegeven. U kunt verwijzen naar een bestaand XDP-bestand of u kunt bij uitvoering dynamisch een formulierontwerp maken en een `com.adobe.idp.Document` vullen met die gegevens.
+Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document` object dat het formulierontwerp bevat dat moet worden weergegeven. U kunt verwijzen naar een bestaand XDP-bestand of u kunt tijdens runtime dynamisch een formulierontwerp maken en een `com.adobe.idp.Document` met die gegevens.
 
 >[!NOTE]
 >
@@ -76,11 +75,11 @@ Wanneer u een formulier op waarde weergeeft, moet u een `com.adobe.idp.Document`
 
 **Een formulier op waarde weergeven**
 
-Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Document`-exemplaar met het formulierontwerp door aan de parameter `inDataDoc` van de rendermethode (dit kan een van de rendermethoden van het object `FormsServiceClient` zijn, zoals `renderPDFForm`, `(Deprecated) renderHTMLForm`, enzovoort). Deze parameterwaarde is gewoonlijk gereserveerd voor gegevens die met het formulier worden samengevoegd. Op dezelfde manier geeft u een lege tekenreekswaarde door aan de parameter `formQuery`. Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp opgeeft.
+Als u een formulier op waarde wilt weergeven, geeft u een `com.adobe.idp.Document` instantie die het formulierontwerp bevat voor de rendermethode `inDataDoc` parameter (kan elk van de `FormsServiceClient` rendermethoden van object, zoals `renderPDFForm`, `(Deprecated) renderHTMLForm`, enzovoort). Deze parameterwaarde is gewoonlijk gereserveerd voor gegevens die met het formulier worden samengevoegd. Geef op dezelfde manier een lege tekenreekswaarde door aan de `formQuery` parameter. Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp opgeeft.
 
 >[!NOTE]
 >
->Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het element `xfa:datasets`. Ga voor informatie over XFA-architectuur naar [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>Als u gegevens in het formulier wilt weergeven, moeten de gegevens worden opgegeven in het dialoogvenster `xfa:datasets` element. Ga voor informatie over XFA-architectuur naar [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **De formuliergegevensstroom naar de webbrowser van de client schrijven**
 
@@ -102,7 +101,7 @@ Wanneer de Forms-service een formulier op waarde weergeeft, wordt een formulierg
 
 [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Een formulier op waarde weergeven met de Java-API {#render-a-form-by-value-using-the-java-api}
+## Een formulier op waarde weergeven met de Java API {#render-a-form-by-value-using-the-java-api}
 
 Een formulier op waarde weergeven met de Forms API (Java):
 
@@ -112,36 +111,36 @@ Een formulier op waarde weergeven met de Forms API (Java):
 
 1. Een Forms Client API-object maken
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijzen naar het formulierontwerp
 
-   * Maak een `java.io.FileInputStream`-object dat het formulierontwerp vertegenwoordigt dat moet worden gerenderd met de constructor ervan en geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` object dat staat voor het formulierontwerp dat moet worden gegenereerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het XDP-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Een formulier op waarde weergeven
 
-   Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+   De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een lege tekenreekswaarde. (Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp aangeeft.)
-   * Een `com.adobe.idp.Document`-object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` specificeren als u runtime geen opties wilt specificeren.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * A `com.adobe.idp.Document` object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` als u geen runtime opties wilt opgeven.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
 
-   De methode `renderPDFForm` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat die naar de webbrowser van de client kan worden geschreven.
+   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client kan worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object aan te roepen.`FormsResult`
-   * Hiermee wordt het inhoudstype van het object `com.adobe.idp.Document` opgehaald door de methode `getContentType` ervan aan te roepen.
-   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `com.adobe.idp.Document` door te geven.
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
-   * Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `com.adobe.idp.Document` aan te roepen.
-   * Maak een bytearray en wijs de grootte van het object `InputStream` toe. Roep de methode `InputStream` van het object `available` aan om de grootte van het object `InputStream` te verkrijgen.
-   * Vul de bytearray met de formuliergegevensstroom door de methode `read`van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
-   * Roep de methode `javax.servlet.ServletOutputStream` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
+   * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
+   * Maak een bytearray en wijs de grootte van de array toe `InputStream` object. De `InputStream` object `available` om de grootte van de `InputStream` object.
+   * Vul de bytearray met de formuliergegevensstroom door de `InputStream` object `read`en de bytearray doorgeven als een argument.
+   * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 
@@ -153,7 +152,7 @@ Een formulier op waarde weergeven met de Forms API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Een formulier op waarde weergeven met de API {#render-a-form-by-value-using-the-web-service-api} voor webservices
+## Een formulier op waarde weergeven met de API voor webservices {#render-a-form-by-value-using-the-web-service-api}
 
 Een formulier op waarde weergeven met de Forms API (webservice):
 
@@ -164,41 +163,41 @@ Een formulier op waarde weergeven met de Forms API (webservice):
 
 1. Een Forms Client API-object maken
 
-   Maak een `FormsService`-object en stel de verificatiewaarden in.
+   Een `FormsService` -object en stel verificatiewaarden in.
 
 1. Verwijzen naar het formulierontwerp
 
-   * Maak een `java.io.FileInputStream`-object met de constructor ervan. Geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen dat met een wachtwoord is versleuteld.
-   * Maak een bytearray waarin de inhoud van het object `java.io.FileInputStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de grootte van het object `java.io.FileInputStream` op te halen met de methode `available`.
-   * Vul de bytearray met streamgegevens door de methode `read` van het object `java.io.FileInputStream` aan te roepen en de bytearray door te geven.
-   * Vul het object `BLOB` door de methode `setBinaryData` ervan aan te roepen en de bytearray door te geven.
+   * Een `java.io.FileInputStream` object met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het XDP-bestand aangeeft.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om een PDF-document op te slaan dat met een wachtwoord is versleuteld.
+   * Maak een bytearray waarin de inhoud van de `java.io.FileInputStream` object. U kunt de grootte van de bytearray bepalen door de `java.io.FileInputStream` objectgrootte gebruiken `available` methode.
+   * De bytearray vullen met streamgegevens door de `java.io.FileInputStream` object `read` en geeft u de bytearray door.
+   * Vul de `BLOB` object aanroepen `setBinaryData` en geeft u de bytearray door.
 
 1. Een formulier op waarde weergeven
 
-   Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
+   De `FormsService` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een lege tekenreekswaarde. (Normaal gesproken vereist deze parameter een tekenreekswaarde die de naam van het formulierontwerp aangeeft.)
-   * Een `BLOB`-object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` specificeren als u runtime geen opties wilt specificeren.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
-   * Een leeg object `com.adobe.idp.services.holders.BLOBHolder` dat door de methode is gevuld. Hiermee slaat u het gerenderde PDF-formulier op.
-   * Een leeg object `javax.xml.rpc.holders.LongHolder` dat door de methode is gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
-   * Een leeg object `javax.xml.rpc.holders.StringHolder` dat door de methode is gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder`-object dat de resultaten van deze bewerking zal bevatten.
+   * A `BLOB` object dat het formulierontwerp bevat. Normaal gesproken is deze parameterwaarde gereserveerd voor gegevens die met het formulier worden samengevoegd.
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Dit is een optionele parameter en u kunt `null` als u geen runtime opties wilt opgeven.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
+   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.)
+   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
 
-   Met de methode `renderPDFForm` wordt het object `com.adobe.idp.services.holders.FormsResultHolder` dat als laatste argumentwaarde is doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `FormResult`-object door de waarde op te halen van het `com.adobe.idp.services.holders.FormsResultHolder`-gegevenslid van het object.`value`
-   * Maak een `BLOB`-object dat formuliergegevens bevat door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
-   * Hiermee wordt het inhoudstype van het object `BLOB` opgehaald door de methode `getContentType` ervan aan te roepen.
-   * Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `BLOB` door te geven.
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
-   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Deze taak wijst de inhoud van het `FormsResult` voorwerp aan de byteserie toe.
-   * Roep de methode `javax.servlet.http.HttpServletResponse` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
+   * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
+   * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
+   * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
+   * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 

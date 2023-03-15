@@ -1,7 +1,7 @@
 ---
 title: Teksten in interactieve communicatie
 seo-title: Text in Interactive Communications
-description: 'Het creëren en het uitgeven van tekstdocumentfragmenten die in Interactieve Mededelingen moeten worden gebruikt - de tekst is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn voorwaarden, lijsten, en lay-outfragmenten.  '
+description: Het creëren en het uitgeven van tekstdocumentfragmenten die in Interactieve Mededelingen moeten worden gebruikt - de tekst is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn voorwaarden, lijsten, en lay-outfragmenten.
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications

@@ -1,26 +1,25 @@
 ---
 title: Repositoregeling voor de herstructurering van AEM Communities in punt 6.4
-seo-title: Repositoregeling voor de herstructurering van AEM Communities in punt 6.4
+seo-title: Repository Restructuring for AEM Communities in 6.4
 description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.4 voor Gemeenschappen.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.4 voor Gemeenschappen.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
 uuid: d161655f-4074-44a7-8d69-38e80934c58b
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1011'
 ht-degree: 1%
 
 ---
 
+# Repositoregeling voor de herstructurering van AEM Communities in punt 6.5 {#repository-restructuring-for-aem-communities-in}
 
-# Herstructurering van de opslagplaats voor AEM Communities in 6.5 {#repository-restructuring-for-aem-communities-in}
-
-Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Communities-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.4](/help/sites-deploying/repository-restructuring.md) op de pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Communities-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **Met 6,5-upgrade**
 
@@ -31,15 +30,15 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
 
 * [Badgingconfiguraties](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [Consoleontwerpen van klassieke gemeenschappen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
-* [Facebook Social Login Configurations](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
+* [Configuraties voor sociale aanmelding in facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
 * [Configuraties taalopties](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
-* [Pinterest Social Login Configurations](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
+* [Configuraties voor sociale aanmelding in pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Scoringconfiguraties](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [Twitter Social Login Configurations](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Configuraties voor sociale aanmelding in twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Dic](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
-## Met 6.5-upgrade {#with-upgrade}
+## Met 6,5-upgrade {#with-upgrade}
 
 ### E-mailmeldingssjablonen {#e-mail-notification-templates}
 
@@ -55,7 +54,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door het bezit <code>mergeList</code> aan <code>true</code> op "<code>/libs/settings/community/subscriptions</code>"knoop te plaatsen en een <code>nt:unstructured</code> kindknoop toe te voegen.</p> </td>
+   <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door de eigenschap in te stellen <code>mergeList</code> tot <code>true</code> op de "<code>/libs/settings/community/subscriptions</code>" en voeg een <code>nt:unstructured</code> onderliggende node.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -64,7 +63,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Abonnementsconfiguraties {#subscription-configurations}
+### Subscription Configurations {#subscription-configurations}
 
 <table>
  <tbody>
@@ -78,7 +77,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door het bezit <code>mergeList</code> aan <code>true</code> op "<code>/libs/settings/community/subscriptions</code>"knoop te plaatsen en een <code>nt:unstructured</code> kindknoop toe te voegen.</p> </td>
+   <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door de eigenschap in te stellen <code>mergeList</code> tot <code>true</code> op de "<code>/libs/settings/community/subscriptions</code>" en voeg een <code>nt:unstructured</code> onderliggende node.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -87,7 +86,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Watchwords-configuraties {#watchwords-configurations}
+### Configuraties controlewoorden {#watchwords-configurations}
 
 <table>
  <tbody>
@@ -101,7 +100,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td>Er is een uitgestelde migratietaak beschikbaar voor het opschonen van de Community Configurations.<br /> <p>De Taak beweegt controlewoorden van <code>/etc/watchwords</code> naar <code>/conf/global/settings/community/watchwords</code>.</p> <p>Als de aangepaste watchwords in SCM worden opgeslagen, dan zouden zij aan <code>/apps/settings/...</code> moeten worden opgesteld en u moet ervoor zorgen dat er geen het bedekken <code>/conf/global/settings/...</code> configuratie is die belangrijkheid zou nemen.</p> <p>De taak van de migratie verwijdert <code>/etc</code> plaatsen.</p> </td>
+   <td>Er is een "Lazy Migration Task" beschikbaar om de Community Configurations op te schonen.<br /> <p>De taak verplaatst wachtwoorden van <code>/etc/watchwords</code> tot <code>/conf/global/settings/community/watchwords</code>.</p> <p>Als de aangepaste wachtwoorden in SCM worden opgeslagen, dan zouden zij aan moeten worden opgesteld <code>/apps/settings/...</code> en u moet ervoor zorgen dat er geen sprake is van een bedekking <code>/conf/global/settings/...</code> configuratie die voorrang zou krijgen.</p> <p>Migratietaak wordt verwijderd <code>/etc</code> locaties.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>
@@ -110,7 +109,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-## Vóór toekomstige upgrade {#prior-to-upgrade}
+## Voorafgaand aan toekomstige upgrade {#prior-to-upgrade}
 
 ### Badgingconfiguraties {#badging-configurations}
 
@@ -128,13 +127,13 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Handmatige migratie is vereist.</p> <p>Als uw instantie de regels voor badging/scoring heeft aangepast, is er geen geautomatiseerde manier om alle regels onder een emmertje te plaatsen. De input van de klant vereist waarop conf emmer (globaal of specifiek) u voor uw plaats wilt gebruiken.</p> <p>Er is geen interface beschikbaar voor het configureren van de badging en scoring voor een site.</p> <p>Uitlijnen met nieuwe repository structuur:</p>
     <ol>
-     <li>Maak een sitecontextemmertje met behulp van de <strong>Configuration Browser</strong> onder <strong>Tools</strong></li>
+     <li>Maak een sitecontextemmertje met het gereedschap <strong>Configuratiebrowser</strong> krachtens <strong>Gereedschappen</strong></li>
      <li>Ga naar de hoofdmap van de site</li>
-     <li>Stel <code>cq:confproperty</code> in op het emmerpad waar u al uw instellingen wilt opslaan. Hetzelfde kan worden ingesteld via de site <strong>Wizard Bewerken - Cloud config-invoer instellen</strong>.</li>
-     <li>Verplaats relevante regels voor badging en scoring van <code>/etc/community/*</code> naar het sitecontextemmertje dat in de vorige stap is gemaakt.</li>
+     <li>Set <code>cq:confproperty</code> naar het emmerpad waar u al uw instellingen wilt opslaan. Hetzelfde kan worden ingesteld via de site <strong>Wizard Bewerken - Cloudconfiguratie-invoer instellen</strong>.</li>
+     <li>Verplaats relevante regels voor badging en scores van <code>/etc/community/*</code> naar het sitecontextemmertje dat in de vorige stap is gemaakt.</li>
      <li>Pas de regels van het badging en het schrapen eigenschappen van Regels op plaatshroot aan om relatieve verwijzingen naar nieuwe regelplaatsen te hebben.
       <ol>
-       <li>Als de eigenschap voor <code>cq:conf = /conf/we-retail</code> bijvoorbeeld, <code>badgingRules [] = community/badging/rules</code> is als de regels nu naar dit nieuwe emmertje worden verplaatst.</li>
+       <li>Als de eigenschap bijvoorbeeld <code>cq:conf = /conf/we-retail</code>vervolgens <code>badgingRules [] = community/badging/rules</code> als de regels nu naar dit nieuwe emmertje worden verplaatst .</li>
       </ol> </li>
      <li>Pas op dezelfde manier de verwijzingen naar het schrapen van regels in een merkende regelknoop aan om een relatief pad te hebben.</li>
     </ol> <p> </p> <p>Tot slot kunt u opschonen door de resource te verwijderen <code>/etc/community/badging</code></p> </td>
@@ -146,7 +145,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Consoleontwerpen voor klassieke gemeenschappen {#classic-communities-console-designs}
+### Consoleontwerpen van klassieke gemeenschappen {#classic-communities-console-designs}
 
 <table>
  <tbody>
@@ -169,7 +168,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Facebook Social Login Configurations {#facebook-social-login-configurations}
+### Configuraties voor sociale aanmelding in facebook {#facebook-social-login-configurations}
 
 <table>
  <tbody>
@@ -188,11 +187,11 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Maak handmatig nieuwe Facebook Social Login Configurations opnieuw via de AEM ontwerpinterface op <strong>Extra &gt; Cloud Services &gt; Configuratie van sociale aanmelding via Facebook</strong>.<br /> or <br /> </li>
-       <li>Kopieer eventuele nieuwe Facebook Cloud Configurations van Vorige Locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Nieuwe Facebook Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Facebook</strong>.<br /> or <br /> </li>
+       <li>Kopieer nieuwe Facebook Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Werk een AEM Communities Site-hoofdmap bij om naar de nieuwe Facebook Social Login Configuration te verwijzen door de eigenschap <code>[cq:Page]/jcr:content@cq:conf</code> in te stellen op het absolute pad in de Nieuwe Locatie.</li>
-     <li>Koppel de oudere Facebook Connect-Cloud Service los van alle hoofdmappen van de AEM Communities-site die zijn bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
+     <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Facebook, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
+     <li>Koppel de verouderde Facebook Connect-Cloud Service los van de basis van de AEM Communities-site die is bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -202,7 +201,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Taalopties Configuraties {#language-options-configurations}
+### Configuraties taalopties {#language-options-configurations}
 
 <table>
  <tbody>
@@ -225,7 +224,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Pinterest Social Login Configurations {#pinterest-social-login-configurations}
+### Configuraties voor sociale aanmelding in pinterest {#pinterest-social-login-configurations}
 
 <table>
  <tbody>
@@ -244,11 +243,11 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Maak handmatig nieuwe Pinterest Social Login Configurations (Pinterest Social Login Configurations) via de AEM ontwerpinterface op <strong>Extra &gt; Cloud Services &gt; Pinterest Social Login Configuration</strong>.<br /> or</li>
-       <li>Kopieer eventuele nieuwe Pinterest Cloud Configurations van Vorige locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Nieuwe Pinterest Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Pinterest</strong>.<br /> or</li>
+       <li>Kopieer nieuwe Pinterest Cloud Configurations van vorige locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Werk om het even welke wortel van de Plaats van AEM Communities bij om de nieuwe Pinterest Sociale Login Configuratie door montages te verwijzen het <code>[cq:Page]/jcr:content@cq:conf</code> bezit aan de absolute weg in de Nieuwe Plaats.</li>
-     <li>Koppel de verouderde Pinterest Connect-Cloud Service los van de hoofdmappen van de AEM Communities-site die zijn bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
+     <li>Als u een AEM Communities Site-hoofdmap wilt bijwerken, verwijst u naar de nieuwe Pinterest Social Login Configuration op basis van de instellingen in het dialoogvenster <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
+     <li>Koppel de verouderde Pinterest Connect-Cloud Service los van de basis van de AEM Communities-site die is bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -272,15 +271,15 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Om uit te lijnen met de nieuwe repository structuur, kunnen scoringregels worden opgeslagen in <code>/apps/settings/</code> of /<code>conf/.../settings</code></p>
+   <td><p>Om met nieuwe bewaarplaatsstructuur te richten, kan het schrapen regels in worden opgeslagen <code>/apps/settings/</code> of /<code>conf/.../settings</code></p>
     <ol>
-     <li>Voor <code>/apps/settings</code>, zou dit als globale of standaardregels dienst doen die in SCM worden beheerd.</li>
-    </ol> <p>Creeer context-bewuste vormen in <code>/conf/</code> door CRXDELite te gebruiken:</p>
+     <li>Voor <code>/apps/settings</code>, zou dit als globale of standaardregels handelen die in SCM worden beheerd.</li>
+    </ol> <p>Contextbewuste configuraties maken in <code>/conf/</code> door CRXDELite te gebruiken:</p>
     <ol>
-     <li>Creeer vormen in de gewenste <code>/conf/.../settings</code> plaats<br /> </li>
-     <li>Voor de site van een Gemeenschappen moet de eigenschap <code>cq:conf </code>ingesteld zijn.
+     <li>Maak de configuraties in de gewenste <code>/conf/.../settings</code> locatie<br /> </li>
+     <li>De site van de Gemeenschappen moet de <code>cq:conf </code>eigenschap ingesteld.
       <ol>
-       <li>Als er geen <code>cq:conf</code> is ingesteld, worden de scoreregels rechtstreeks gelezen vanuit het opgegeven pad voor eigenschap '<code>scoringRules</code>' op het hoofdknooppunt van de site, bijvoorbeeld: <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li>Indien niet <code>cq:conf</code> is ingesteld, worden scoringregels rechtstreeks gelezen van het opgegeven pad voor eigenschap '<code>scoringRules</code>' in het hoofdknooppunt van de site, bijvoorbeeld: <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
     </ol> <p>Overbodig verwijderen: De bron verwijderen <code>/etc/community/scoring</code></p> </td>
   </tr>
@@ -291,7 +290,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Twitter Social Login Configurations {#twitter-social-login-configurations}
+### Configuraties voor sociale aanmelding in twitter {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -310,11 +309,11 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Maak handmatig nieuwe Twitter Social Login Configurations opnieuw via de AEM ontwerpinterface op <strong>Extra &gt; Cloud Services &gt; Configuratie van Twitter Social Login</strong>.<br /> of  <br /> </li>
-       <li>Kopieer eventuele nieuwe Twitter Cloud Configurations van Vorige locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Nieuwe Twitter Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Twitter</strong>.<br /> or <br /> </li>
+       <li>Kopieer nieuwe Twitter Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Werk een AEM Communities-hoofdmap van de site bij om naar de nieuwe Twitter Social Login Configuration te verwijzen door de eigenschap <code>[cq:Page]/jcr:content@cq:conf</code> in te stellen op het absolute pad in de Nieuwe Locatie.</li>
-     <li>Koppel de oudere Twitter Connect-Cloud Service los van de hoofdmappen van de AEM Communities-site die zijn bijgewerkt en die naar de nieuwe locatie verwijzen.</li>
+     <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Twitter, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
+     <li>Koppel de verouderde Twitter Connect-Cloud Service los van de basis van de AEM Communities-site die is bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -324,7 +323,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
  </tbody>
 </table>
 
-### Diverse {#misc}
+### Dic {#misc}
 
 <table>
  <tbody>
@@ -346,4 +345,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
  </tbody>
 </table>
-

@@ -2,26 +2,25 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: Volg deze pagina om aan de slag te gaan met het ontwerpen voor Adobe PhoneGap Enterprise in AEM.
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 930a6950-150a-4670-ab48-250b655132fb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---
-
 
 # PhoneGap{#phonegap}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
@@ -33,7 +32,7 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-Een ***AEM-auteur* (of *Marketer*)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
+An ***AEM-auteur* (of *Marketer*)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
 
 Zie de volgende bronnen om aan de slag te gaan:
 
@@ -45,7 +44,7 @@ Zie de volgende bronnen om aan de slag te gaan:
 * [Een nieuwe AEM Mobile-app maken met de wizard Maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Voor informatie over **Content Services**, zie [Content Services Overview](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
+Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -53,4 +52,3 @@ Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkh
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)
-

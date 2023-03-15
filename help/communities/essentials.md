@@ -1,28 +1,27 @@
 ---
 title: Componenten, functies en essentiële functies
-seo-title: Componenten, functies en essentiële functies
+seo-title: Component, Function and Feature Essentials
 description: De werking van gemeenschapssites, sjablonen en groepen
-seo-description: De werking van gemeenschapssites, sjablonen en groepen
+seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '209'
 ht-degree: 2%
 
 ---
 
+# Componenten, functies en essentiële functies  {#component-function-and-feature-essentials}
 
-# Elementen van componenten, functies en functies {#component-function-and-feature-essentials}
+Voor AEM Communities-functies moeten sitebezoekers lid worden en zich aanmelden bij de [community-site](overview.md#communitiessites) voordat u inhoud kunt plaatsen. Daarom [communitysjablonen](sites.md), waarvan een communautaire site [gemaakt](sites-console.md), zijn ontworpen om een aanmeldingsfunctie en gebruikersprofielen, berichten, zoeken, modereren en vertalen op te nemen.
 
-Voor AEM Communities-functies moeten bezoekers lid worden van de site en zich aanmelden bij de [communitysite](overview.md#communitiessites) voordat ze inhoud kunnen posten. Zo worden [communitysitesjablonen](sites.md), waarvan een community-site [gemaakt](sites-console.md) is, ontworpen om een aanmeldingsfunctie en gebruikersprofielen, berichten, zoeken, modereren en vertalen op te nemen.
-
-Een communautaire plaats zal leden steunen die communautaire groepen creëren wanneer [communitygroepenfunctie](functions.md#groups-function) in het geselecteerde malplaatje van de communautaire plaats inbegrepen is.
+Een site van een gemeenschap ondersteunt leden die groepen van gemeenschappen maken wanneer de [gemeenschapsgroepfunctie](functions.md#groups-function) is opgenomen in het geselecteerde sjabloon voor de communitysite.
 
 Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, functies en kenmerken van de Gemeenschappen.
 
@@ -41,7 +40,7 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 
 * [Activiteitsstromen](essentials-activities.md)
 * [Toewijzingen](essentials-assignments.md)
-* [Blog](blog-developer-basics.md) (  `Journal`)
+* [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Kalender](calendar-basics-for-developers.md)
 * [Catalogus](catalog-developer-essentials.md)
@@ -70,10 +69,10 @@ Hieronder vindt u koppelingen naar essentiële informatie voor onderdelen, funct
 
 ## Javadocs {#javadocs}
 
-De [online javadocs](../../help/sites-developing/reference-materials.md) weerspiegelen de API&#39;s die beschikbaar zijn in de AEM 6.3-release.
-Community API&#39;s bevinden zich in pakketten `com.adobe.cq.social.*`.
+De [online javadocs](../../help/sites-developing/reference-materials.md) weerspiegelt de API&#39;s die beschikbaar zijn in de AEM 6.3-release.
+Community API&#39;s bevinden zich in `com.adobe.cq.social.*` pakketten.
 
-Voor elk [functiepak](deploy-communities.md#latestfeaturepack), wordt een javadoc jar ter beschikking gesteld. Voor meer informatie, bezoek [Gebruikend Gemaakt voor Gemeenschappen](maven.md#javadocs).
+Voor elke [functiepakket](deploy-communities.md#latestfeaturepack), wordt een jar van javadoc beschikbaar gesteld. Ga voor meer informatie naar [Maven gebruiken voor Gemeenschappen](maven.md#javadocs).
 
 ## Aanvullende informatie {#additional-information}
 
@@ -86,4 +85,3 @@ Voor elk [functiepak](deploy-communities.md#latestfeaturepack), wordt een javado
 * [Codeerrichtlijnen](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Problemen oplossen](troubleshooting.md)
-

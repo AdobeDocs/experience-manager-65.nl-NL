@@ -67,7 +67,7 @@ De context van de Cliënt kan de volgende eigenschappen tonen ([afhankelijk van 
 
 **Campagne** Hiermee kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
-De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
+De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt normaal geselecteerd gebaseerd op segmentatie.
 
 **Kar** Geeft winkelwagengegevens weer, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
 

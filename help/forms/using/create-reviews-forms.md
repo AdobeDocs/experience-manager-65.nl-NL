@@ -1,8 +1,8 @@
 ---
 title: Revisies voor elementen in formulieren maken en beheren
-seo-title: Revisies voor elementen in formulieren maken en beheren
-description: 'Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier. '
-seo-description: 'Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier. '
+seo-title: Creating and managing reviews for assets in forms
+description: Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,25 +10,24 @@ topic-tags: forms-manager
 discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
 
+# Revisies voor elementen in formulieren maken en beheren{#creating-and-managing-reviews-for-assets-in-forms}
 
-# Revisies maken en beheren voor elementen in formulieren{#creating-and-managing-reviews-for-assets-in-forms}
-
-## Revisie {#review}
+## Controleren {#review}
 
 Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen maken over een element dat beschikbaar is in een formulier.
 
 ## Een revisie instellen {#setting-up-a-review}
 
 1. Navigeer naar het tabblad Forms en selecteer een formulier.
-1. Als er geen revisie wordt uitgevoerd op het element, wordt het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Klik op het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Als voor het element geen revisie wordt uitgevoerd, wordt een revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) wordt weergegeven op de actiebalk. Klik op Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) pictogram.
 1. Voer de volgende gegevens in:
 
    * Revisienaam: Verplicht, kan alfanumerieke karakters, koppelteken, of onderstrepingsteken bevatten.
@@ -59,9 +58,9 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 
 1. Navigeer naar het tabblad Forms en selecteer een formulier.
 
-1. Als een element een revisie heeft die wordt uitgevoerd en u de aanvrager van de revisie bent, wordt de pictogrammen Revisie beheren ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Alleen revisieaanvrager kan de revisie beheren (bijwerken/beëindigen).
+1. Als een element een revisie in uitvoering heeft en u de aanvrager van de revisie bent, voert u een revisie beheren uit ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) worden weergegeven in de actiebalk. Alleen revisieaanvrager kan de revisie beheren (bijwerken/beëindigen).
 
-   Klik op het pictogram Revisie beheren ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)pictogram.
+   Klik op Revisie beheren ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)pictogram.
 
    Voor andere gebruikers dan de aanvrager is het pictogram Revisie beheren uitgeschakeld.
 
@@ -69,9 +68,9 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 
    * **Revisienaam**: Kan niet worden bewerkt.
 
-   * **Beschrijving** bekijken: Beschikbaar voor bewerken.
+   * **Beschrijving bekijken**: Beschikbaar voor bewerken.
 
-   * **deadline** voor revisie: Beschikbaar voor bewerken. U kunt de deadline wijzigen in elke datum en tijd na de huidige datum en tijd.
+   * **Herzieningstermijn**: Beschikbaar voor bewerken. U kunt de deadline wijzigen in elke datum en tijd na de huidige datum en tijd.
 
    * **Revisoren**: Beschikbaar voor bewerken. U kunt revisoren toevoegen of verwijderen. Als een taak te laat is, kunt u revisoren pas toevoegen nadat de deadline is verlengd na de huidige datum.
 
@@ -113,4 +112,3 @@ In deze sectie wordt beschreven wat er gebeurt bij het einde/de wijziging van de
    1. **Revisoren**: Voor elke controleur wordt de onvolledige taak met betrekking tot de revisie beëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
    1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
-

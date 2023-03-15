@@ -1,24 +1,23 @@
 ---
 title: Aanbevolen topologieën voor Gemeenschappen
-seo-title: Aanbevolen topologieën voor Gemeenschappen
+seo-title: Recommended Topologies for Communities
 description: Hoe te om de behandeling van user-generated inhoud (UGC) te benaderen
-seo-description: Hoe te om de behandeling van user-generated inhoud (UGC) te benaderen
+seo-description: How to approach the handling of user-generated content (UGC)
 uuid: 4bc1c423-0ba9-4f2e-b11c-4d6824f45641
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
-translation-type: tm+mt
-source-git-commit: 612d102b5925704ce459ad818554e487ec0d5355
+exl-id: b6658330-d862-44e3-aac0-824fb91cd087
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
-
-# Aanbevolen topologieën voor gemeenschappen {#recommended-topologies-for-communities}
+# Aanbevolen topologieën voor Gemeenschappen {#recommended-topologies-for-communities}
 
 Vanaf AEM Communities 6.1 is een unieke aanpak gekozen voor de verwerking van door gebruikers gegenereerde inhoud (UGC) die door sitebezoekers (leden) uit de publicatieomgeving is ingediend.
 
@@ -26,26 +25,25 @@ Deze benadering is fundamenteel verschillend van de manier het AEM platform plaa
 
 Het AEM platform gebruikt een knoopopslag die site-inhoud van auteur voor publicatie repliceert, terwijl AEM Communities één algemene opslag voor UGC gebruikt die nooit wordt gerepliceerd.
 
-Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een [leverancier van het opslagmiddel (SRP)](working-with-srp.md) te kiezen. De aanbevolen opties zijn:
+Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een [Storage Resource Provider (SRP)](working-with-srp.md). De aanbevolen opties zijn:
 
 * [DSRP - Relational Database Storage Resource Provider](dsrp.md)
 * [MSRP - MongoDB Storage Resource Provider](msrp.md)
 * [ASRP - Adobe Storage Resource Provider](asrp.md)
 
-Een andere SRP-optie, [JSRP - JCR Storage Resource Provider](jsrp.md), ondersteunt geen gemeenschappelijke UGC-opslag voor de auteur- en publicatieomgevingen voor beide toegang.
+Een andere SRP-optie [JSRP - JCR Storage Resource Provider](jsrp.md), biedt geen ondersteuning voor een algemene UGC-opslag voor de auteur- en publicatieomgeving voor beide toegang.
 
 Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadviseerde topologieën.
 
 >[!NOTE]
 >
->Voor AEM Communities wordt [UGC nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
+>Voor AEM Communities: [UGC wordt nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
 >
->Wanneer de implementatie geen [common store](working-with-srp.md) bevat, is UGC alleen zichtbaar op de AEM publicatie- of auteurinstantie waarop deze is ingevoerd.
-
+>Wanneer de implementatie geen [gemeenschappelijk archief](working-with-srp.md), is UGC alleen zichtbaar op de AEM publicatie- of auteurinstantie waarop het is ingevoerd.
 
 >[!NOTE]
 >
->Zie [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md) en [Inleiding tot het AEM Platform](../../help/sites-deploying/data-store-config.md) voor meer informatie over het AEM platform.
+>Ga voor meer informatie over het AEM [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md) en [Inleiding tot het AEM Platform](../../help/sites-deploying/data-store-config.md).
 
 ## Voor productie {#for-production}
 
@@ -53,15 +51,15 @@ Het is van essentieel belang een gemeenschappelijke opslag voor UGC tot stand te
 
 Twee voorbeelden:
 
-1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus [MSRP](msrp.md) zijn.
+1. Als het verwachte volume van UGC hoog is en een lokale instantie MongoDB mogelijk is, dan zou de keus zijn [MSRP](msrp.md).
 
-1. Voor optimale prestaties voor paginainhoud, zou de keus van [publiceer landbouwbedrijf](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) het optimale schrapen van UGC met vrij ongecompliceerde verrichtingen verstrekken.
+1. Voor optimale prestaties voor pagina-inhoud kiest u een [publicatiebedrijf](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) en [ASRP](asrp.md) zou zorgen voor een optimale schaling van UGC met relatief eenvoudige bewerkingen.
 
 Voor beide, kan de plaatsing op om het even welke OAK microkernel worden gebaseerd.
 
-Om de aangewezen gemeenschappelijke opslag te kiezen, zorgvuldig overweeg de unieke [kenmerken](working-with-srp.md#characteristics-of-srp-options) van elk.
+Houd zorgvuldig rekening met het unieke [kenmerken](working-with-srp.md#characteristics-of-srp-options) van elk.
 
-Voor meer informatie over eiken microkorrels, bezoek [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md).
+Ga voor meer informatie over eiken microkorrels naar [Aanbevolen implementaties](../../help/sites-deploying/recommended-deploys.md).
 
 ### TarMK Publish Farm {#tarmk-publish-farm}
 
@@ -88,9 +86,9 @@ Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen
 
 ## Voor ontwikkeling {#for-development}
 
-Voor niet-productieomgevingen biedt [JSRP](jsrp.md) eenvoud bij het instellen van een ontwikkelomgeving met één auteurinstantie en één publicatieinstantie.
+Voor niet-productieomgevingen [JSRP](jsrp.md) biedt eenvoud bij het instellen van een ontwikkelomgeving met één auteurinstantie en één publicatie-instantie.
 
-Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie kiest, is het ook mogelijk om een gelijkaardige ontwikkelomgeving te installeren gebruikend Adobe op bestelling opslag of MongoDB. Voor een voorbeeld, zie [HowTo Opstelling MongoDB voor Demo](demo-mongo.md).
+Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie is het ook mogelijk om een vergelijkbare ontwikkelomgeving in te stellen met behulp van Adobe on-demand-opslag of MongoDB. Zie voor een voorbeeld [MongoDB voor demo instellen](demo-mongo.md).
 
 ## Verwijzingen {#references}
 
@@ -102,7 +100,7 @@ Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie kiest, 
 
    Bespreekt de rollen van gebruikers en gebruikersgroepen in de auteur en publicatiemilieu&#39;s.
 
-* UGC [common store](working-with-srp.md)
+* UGC [gemeenschappelijk archief](working-with-srp.md)
 
    Beschrijft de opslag van communautaire inhoud afzonderlijk van plaatsinhoud.
 

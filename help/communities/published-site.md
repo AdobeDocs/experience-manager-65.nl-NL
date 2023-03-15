@@ -1,8 +1,8 @@
 ---
 title: Ervaar de gepubliceerde site
-seo-title: Ervaar de gepubliceerde site
+seo-title: Experience the Published Site
 description: Naar een gepubliceerde site bladeren
-seo-description: Naar een gepubliceerde site bladeren
+seo-description: Browse to a published site
 uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Als u verschillende koppelingen selecteert, bevindt de modus Alleen-lezen zich.
 
 ### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
-Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme bezoekers door jcr inhoud en json bloot, hoewel **anonieme toegang toestaan** voor de inhoud van de plaats gehandicapt is. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
+Een bekende beperking stelt de inhoud van de communautaire site aan anonieme bezoekers via jcr-inhoud en json bloot, hoewel **anonieme toegang toestaan** is uitgeschakeld voor de inhoud van de site. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
@@ -66,37 +66,37 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 
    ![page-eigenschappen](assets/page-properties.png)
 
-1. Ga naar **Geavanceerd** tabblad.
+1. Ga naar **Geavanceerd** tab.
 
-1. Schakel **Verificatievereiste** in.
+1. Inschakelen **Verificatievereiste**.
 
    ![plaatsverificatie](assets/site-authentication.png)
 
-1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld **/content/......./GetStarted**.
+1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld: **/content/......./GetStarted**.
 1. Publiceer de pagina.
 
 ## Vertrouwd lid van de Gemeenschap {#trusted-community-member}
 
-Deze ervaring veronderstelt [Aaron McDonald](/help/communities/tutorials.md#demo-users) de rollen van [gemeenschapsmanager en moderator](/help/communities/create-site.md#roles) werd toegewezen. Als dat niet het geval is, gaat u terug naar de auteursomgeving om [de site-instellingen te wijzigen](/help/communities/sites-console.md#modifying-site-properties) en selecteert u Aaron McDonald als zowel communitymanager als moderator.
+Deze ervaring gaat uit van [Aaron McDonald](/help/communities/tutorials.md#demo-users) is toegewezen aan de rollen van [gemeenschapsbeheerder en moderator](/help/communities/create-site.md#roles). Zo niet, ga dan terug naar de auteursomgeving [de site-instellingen wijzigen](/help/communities/sites-console.md#modifying-site-properties) en selecteer Aaron McDonald als gemeenschapsleider en moderator.
 
-Selecteer in de rechterbovenhoek `Log in` en onderteken met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (password). Meld u aan met Twitter- of Facebook-referenties.
+Selecteer in de rechterbovenhoek de optie `Log in`en ondertekenen met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (wachtwoord). Meld u aan met Twitter- of Facebook-referenties.
 
 ![aanmelden](assets/login.png)
 
 Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volgende menu-items om op uw communitysite te klikken en deze te verkennen:
 
-* **Met de optie** Profiel kunt u uw profiel weergeven en bewerken.
-* [De optie ](/help/communities/configure-messaging.md) Berichten geeft u de opdracht om een berichtensectie te sturen, waar u:
+* **Profiel** kunt u uw profiel bekijken en bewerken.
+* [Berichten](/help/communities/configure-messaging.md) Deze optie geeft u de opdracht om een berichtensectie te sturen, waar u:
 
    1. Bekijk de directe berichten die u hebt ontvangen (Postvak IN), verzonden (Items verzenden) en verwijderd (Prullenbak).
    1. Stel nieuwe directe berichten samen om naar individuen en groepen te verzenden.
 
-* [Met de optie ](/help/communities/notifications.md) Meldingen wordt u naar de sectie Meldingen geleid. Hier kunt u uw belangwekkende gebeurtenissen weergeven en de berichtinstellingen bewerken.
-* [De ](/help/communities/published-site.md#moderationlink) Administratie leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatievoorrechten hebt.
+* [Meldingen](/help/communities/notifications.md) deze optie geeft u door naar de sectie Meldingen, waarin u uw belangwekkende gebeurtenissen kunt bekijken en de berichtinstellingen kunt bewerken.
+* [Beheer](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatie voorrechten hebt.
 
 ![beheersen](assets/adminscreen.png)
 
-U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referentie-site eerst de kalenderfunctie bevatte, gevolgd door de functie Activiteitenstroom, de functie Forum, enzovoort. Deze structuur is zichtbaar vanuit de console [Sitesjabloon](/help/communities/sites.md#edit-site-template) of wanneer u site-eigenschappen wijzigt in de auteursomgeving:
+U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referentie-site eerst de kalenderfunctie bevatte, gevolgd door de functie Activiteitenstroom, de functie Forum, enzovoort. Deze structuur is zichtbaar vanuit de [Sitesjabloon](/help/communities/sites.md#edit-site-template) console of bij het wijzigen van site-eigenschappen in de ontwerpomgeving:
 
 ![sitetemplate](assets/sitetemplate.png)
 
@@ -104,8 +104,8 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >
 >Voor meer informatie over de onderdelen en functies van de Gemeenschappen gaat u naar:
 >
->* [Community Components](/help/communities/author-communities.md)  (voor auteurs)
->* [Component, Function en Feature Essentials](/help/communities/essentials.md)  (voor ontwikkelaars)
+>* [Community-componenten](/help/communities/author-communities.md) (voor auteurs)
+>* [Component, Function en Feature Essentials](/help/communities/essentials.md) (voor ontwikkelaars)
 
 
 ### Forum-koppeling {#forum-link}
@@ -124,51 +124,51 @@ Aangezien Aaron een groepsbeheerder is, zal het selecteren van de verbinding van
 
 Dit is een voorbeeld waarin een groep wordt gemaakt in de publicatieomgeving.
 
-Groepen kunnen ook in de auteursomgeving worden gecreeerd en binnen de communautaire plaats in het auteursmilieu worden beheerd ([Community Groepen console](/help/communities/groups.md)). De ervaring van [het creëren van groepen op auteur](/help/communities/nested-groups.md) is daarna in dit leerprogramma.
+Groepen kunnen ook in de auteursomgeving worden gecreeerd en binnen de communautaire plaats in het auteursmilieu worden beheerd ([Community Group-console](/help/communities/groups.md)). De ervaring van [groepen maken op auteur](/help/communities/nested-groups.md) is volgende in deze zelfstudie.
 
 ![grouplink](assets/grouplink.png)
 
 Een referentiegroep maken:
 
-1. Selecteer **Nieuwe groep**
+1. Selecteren **Nieuwe groep**
 1. **Het tabblad Instellingen**
 
    * Groepsnaam: `Sports`
    * Beschrijving : `A parent group for various sporting groups`.
    * Groepsnaam URL: `sports`
-   * Selecteer `Open Group` (een lid van de gemeenschap toestaan om deel te nemen door lid te worden van de gemeenschap)
+   * Selecteren `Open Group` ( elk lid van de gemeenschap toestaan deel te nemen door lid te worden )
 
 1. **Tabblad Sjabloon**
 
-   * Selecteer `Reference Group` (bevat een groepfunctie in zijn structuur om geneste groepen toe te staan)
+   * Selecteren `Reference Group` (bevat een groepfunctie in de structuur om geneste groepen toe te staan)
 
-1. Selecteer **Groep maken**
+1. Selecteren **Groep maken**
 
    ![createggroup](assets/creategroup.png)
 
-Nadat de nieuwe groep wordt gecreeerd, **selecteer de nieuwe Groep van Sport** om twee (genestelde) binnen tot stand te brengen groepen. Aangezien een sitestructuur niet kan beginnen met de groepsfunctie, moet u na het openen van de Sportgroep de koppeling Groepen selecteren:
+Nadat nieuwe groep is gemaakt, **Selecteer de nieuwe groep Sport** om er twee (geneste) groepen in te maken. Aangezien een sitestructuur niet kan beginnen met de groepsfunctie, moet u na het openen van de Sportgroep de koppeling Groepen selecteren:
 
 ![grouplink1](assets/grouplink1.png)
 
-De tweede set koppelingen, die begint met `Blog`, behoren tot de momenteel geselecteerde groep, de groep `Sports`. Door de verbinding `Groups` van Sport te selecteren, is het mogelijk om twee groepen binnen de groep van Sport te nesten.
+De tweede set koppelingen, te beginnen met `Blog`, behoren tot de momenteel geselecteerde groep, `Sports` groep. Door de Sport te selecteren&#39; `Groups` kunnen twee groepen in de groep Sport worden genest.
 
-Voeg bijvoorbeeld twee `new groups` toe.
+Voeg bijvoorbeeld twee `new groups`.
 
-* Een met de naam `Baseball`
+* Eén naam `Baseball`
 
-   * Laat deze ingesteld staan als een `Open Group` (vereist lidmaatschap).
-   * Selecteer `Conversational Group` op het tabblad Sjablonen.
+   * Laat het als een `Open Group` (vereist lidmaatschap).
+   * Selecteer op het tabblad Sjablonen de optie `Conversational Group`.
 
-* Een met de naam `Gymnastics`
+* Eén naam `Gymnastics`
 
-   * Wijzig de instelling in `Member Only Group` (beperkt lidmaatschap).
-   * Selecteer `Conversational Group` op het tabblad Sjablonen.
+   * De instelling wijzigen in `Member Only Group` (beperkt lidmaatschap).
+   * Selecteer op het tabblad Sjablonen de optie `Conversational Group`.
 
-**Opmerking**:
+**Kennisgeving**:
 
 * Mogelijk moet de pagina worden vernieuwd voordat beide groepen worden weergegeven.
-* Deze sjabloon bevat de groepfunctie *niet*, zodat het nesten van groepen niet meer mogelijk is.
-* Op auteur, verstrekt [de console van Groepen](/help/communities/groups.md) een derde keus - a `Public Group` (facultatief lidmaatschap).
+* Deze sjabloon doet dit *niet* omvat de groepfunctie , zodat het nesten van groepen niet langer mogelijk is .
+* Op auteur: [Groepsconsole](/help/communities/groups.md) biedt een derde keuze - a `Public Group` (optioneel lidmaatschap).
 
 Nadat beide groepen zijn gemaakt, selecteert u de Baseball-groep, een open groep en ziet u de koppelingen:
 
@@ -178,18 +178,18 @@ De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofd
 
 ![grouplink2](assets/grouplink2.png)
 
-Op auteur - met administratieve voorrechten, navigeer aan [de Groepen van Gemeenschappen console](/help/communities/members.md) en voeg Weston McCall aan `Community Engage Gymnastics <uid> Members` groep toe.
+Navigeer bij de auteur - met beheerdersrechten naar de [console Gemeenschappen-groepen](/help/communities/members.md) en voegt Weston McCall toe aan de `Community Engage Gymnastics <uid> Members` groep.
 
 Als u doorgaat met publiceren, meldt u zich af als Aaron McDonald en bekijkt u de groepen in de Sports Group als anonieme bezoeker van de site:
 
 * Van homepage
-* Koppeling `Groups` selecteren
-* Koppeling `Sports` selecteren
-* Selecteer de verbinding `Groups` van Sport
+* Selecteren `Groups` link
+* Selecteren `Sports` link
+* Selecteer de Sport&#39; `Groups` link
 
 Alleen de Baseball-groep is zichtbaar.
 
-Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan de open `Baseball` groep `enter or Leave` en de private `Gymnastics` groep `Join` openen.
+Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan `Join` open `Baseball` groep en `enter or Leave` particuliere `Gymnastics` groep.
 
 ![grouplink3](assets/grouplink3.png)
 
@@ -197,13 +197,13 @@ Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer
 
 Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de site is opgenomen. U kunt de standaardinstellingen AEM de ontwerpgereedschappen gebruiken om inhoud aan deze pagina toe te voegen in de ontwerpomgeving.
 
-Ga bijvoorbeeld naar **auteur**-instantie, open de map `engage` in de [Community Sites-console](/help/communities/sites-console.md), selecteer het pictogram **Site openen** om de modus Schrijver bewerken te activeren. Selecteer vervolgens de modus Voorvertoning om de koppeling `Web Page` te selecteren en selecteer vervolgens de modus Bewerken om de componenten Titel en Tekst toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
+Ga bijvoorbeeld naar **auteur** -instantie, opent u de `engage` in de [Community Sites-console](/help/communities/sites-console.md), selecteert u de **Site openen** pictogram om de bewerkingsmodus voor auteurs te activeren. Selecteer vervolgens de voorvertoningsmodus om de optie `Web Page` en selecteert u vervolgens de bewerkingsmodus om de componenten Titel en Tekst toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Moderniseringskoppeling {#moderationlink}
 
-Wanneer het communitylid moderatievoorrechten heeft, dan zal de verbinding van de Moderatie zichtbaar zijn en het selecteren zal het geposte communautaire inhoud tonen en het toestaan om [gematigd](/help/communities/moderate-ugc.md) op een manier gelijkend op [moderatieconsole](/help/communities/moderation.md) in het auteursmilieu te zijn.
+Wanneer het lid van de gemeenschap moderatie voorrechten heeft, dan zal de verbinding van de Moderatie zichtbaar zijn en het selecteren van het zal de geposte communautaire inhoud tonen en het toestaan om te zijn [gematigd](/help/communities/moderate-ugc.md) op een wijze die vergelijkbaar is met die van [moderatieconsole](/help/communities/moderation.md) in de ontwerpomgeving.
 
 Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving.
 
@@ -222,9 +222,9 @@ Nadat u zich hebt afgemeld, kunt u een nieuwe gebruikersregistratie maken.
 
 Standaard is het e-mailadres de aanmeldings-id. Als deze optie is uitgeschakeld, kan de bezoeker zijn of haar eigen aanmeldings-id (gebruikersnaam) invoeren. De gebruikersnaam moet uniek zijn in de publicatieomgeving.
 
-Nadat u de naam, het e-mailadres en het wachtwoord van de gebruiker hebt opgegeven en `Sign Up` hebt geselecteerd, wordt de gebruiker gemaakt en kunnen deze worden ondertekend.
+Nadat u de naam, het e-mailadres en het wachtwoord van de gebruiker hebt opgegeven, selecteert u `Sign Up` wordt de gebruiker gemaakt en kan deze ondertekenen.
 
-Nadat u zich hebt aangemeld, is de eerste pagina die wordt weergegeven de `Profile`-pagina, die zij kunnen aanpassen.
+Na aanmelding is de eerste weergegeven pagina `Profile` pagina, die ze kunnen aanpassen.
 
 ![profiel](assets/profile.png)
 

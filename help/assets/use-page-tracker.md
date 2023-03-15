@@ -3,18 +3,18 @@ title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u JavaScript-codes in uw websitecode kunt opnemen in Paginanummering en hoe u JavaScript-codes kunt insluiten om Adobe Analytics in staat te stellen gebruiksgegevens vast te leggen rond elementen.
 contentOwner: AG
 role: Architect, Admin
-feature: Elementrapporten
+feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
 # Paginatracering gebruiken en code insluiten in webpagina&#39;s {#using-page-tracker-and-embed-code-in-web-pages}
 
-Paginanummering is een stuk JavaScript-code dat u in code van externe websites opneemt, zodat Adobe Analytics gebruiksgegevens rond [!DNL Adobe Experience Manager Assets] op deze websites kan vastleggen.
+Paginanummering is een stuk JavaScript-code dat u in code van externe websites opneemt, zodat Adobe Analytics gebruiksgegevens kan vastleggen rond [!DNL Adobe Experience Manager Assets] op deze websites.
 
 Als u gebeurtenissen wilt vastleggen, zoals klikken en dergelijke, die specifiek zijn voor elementen, neemt u ook de code Insluiten op in de code van websites van derden.
 

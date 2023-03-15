@@ -1,24 +1,23 @@
 ---
 title: Controlelijsten
-seo-title: Controlelijsten
+seo-title: Checklists
 description: In de volgende controlelijst worden enkele van de belangrijkste testproblemen gemarkeerd
-seo-description: In de volgende controlelijst worden enkele van de belangrijkste testproblemen gemarkeerd
+seo-description: The following checklist highlights some of the main testing issues
 uuid: 0456c98c-779f-415d-9641-b17ac141698b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
-translation-type: tm+mt
-source-git-commit: 34aadbc35d7aad127fe98211a5f37d623d101c0c
+exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '157'
 ht-degree: 1%
 
 ---
 
-
-# Controlklists{#checklists}
+# Controlelijsten{#checklists}
 
 In de volgende checklist worden enkele van de belangrijkste problemen beschreven. Lees de andere secties over Testen voor meer informatie.
 
@@ -37,4 +36,4 @@ In de volgende checklist worden enkele van de belangrijkste problemen beschreven
 
 >[!NOTE]
 >
->U kunt [Beheerde Projecten - Checklist van Beste praktijken ](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.
+>U kunt ook de [Projecten beheren - Checklist voor aanbevolen procedures](/help/managing/best-practices.md) voor verdere checklists met betrekking tot het gehele project.

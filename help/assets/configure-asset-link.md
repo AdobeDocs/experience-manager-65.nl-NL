@@ -4,13 +4,13 @@ description: Configureer Experience Manager Assets voor gebruik met de extensie 
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: e91fa04d87c7ecacf3ad8a148227948eafe15b1e
+exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
+source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
 workflow-type: tm+mt
 source-wordcount: '2943'
 ht-degree: 0%
 
 ---
-
 
 # Experience Manager Assets for Adobe Asset Link configureren {#adobe-asset-link}
 
@@ -289,11 +289,6 @@ Als u problemen ondervindt bij het configureren of gebruiken van Adobe Asset Lin
 >[!MORELIKETHIS]
 >
 >* [Over Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
->* [Asset Link gebruiken in Creative Cloud-bureaubladtoepassing en middelen beheren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Asset Link gebruiken in Creative Cloud-bureaubladtoepassing en middelen beheren](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [as a Cloud Service Adobe Experience Manager-middelen configureren](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
 

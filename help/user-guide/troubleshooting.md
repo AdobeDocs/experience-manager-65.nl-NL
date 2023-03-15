@@ -1,31 +1,30 @@
 ---
 title: AEM
-seo-title: AEM
+seo-title: Troubleshooting AEM
 description: AEM
-seo-description: AEM
-translation-type: tm+mt
-source-git-commit: 315d1ac1a00da474f535087eff49c2be8fee8c37
+seo-description: Troubleshooting AEM
+exl-id: f7a220bf-0b0c-4d16-824d-dad7d86c01c9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '59'
 ht-degree: 0%
 
 ---
 
+# AEM {#troubleshooting-aem}
 
-# AEM {#troubleshooting-aem} oplossen
-
-## Prestaties {#performance} van de Instantie van de Auteur van het oplossen van problemen
+## Prestaties van authorinstantie-instantie oplossen {#performance}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met de AEM auteur.](/help/sites-authoring/troubleshooting.md)
 
-## Problemen met beheer van probleemoplossing {#administering}
+## Problemen met beheer oplossen {#administering}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met beheer in AEM.](/help/sites-administering/troubleshoot.md)
 
-## Problemen AEM logbestanden {#logs} oplossen
+## Problemen met AEM logboeken oplossen {#logs}
 
 [Zie deze handleiding en tips voor het oplossen van problemen AEM logboeken.](/help/sites-administering/troubleshooting.md)
 
-## Problemen met replicatie {#replication} oplossen
+## Problemen met replicatie oplossen {#replication}
 
 [Zie deze handleiding en tips voor het oplossen van problemen met replicatie in AEM.](/help/sites-deploying/troubleshoot-rep.md)

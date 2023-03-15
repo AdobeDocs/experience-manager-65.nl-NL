@@ -1,38 +1,37 @@
 ---
 title: Aangepaste indelingscomponenten voor aangepaste formulieren maken
-seo-title: Aangepaste indelingscomponenten voor aangepaste formulieren maken
+seo-title: Creating custom layout components for adaptive forms
 description: Procedure voor het maken van aangepaste indelingscomponenten voor adaptieve formulieren.
-seo-description: Procedure voor het maken van aangepaste indelingscomponenten voor adaptieve formulieren.
+seo-description: Procedure to create custom layout components for adaptive forms.
 uuid: f0bb5fcd-3938-4804-ad0c-d96d3083fd01
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d4ae432d-557d-4e89-92b8-dca5f37cb6f8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 544b06f9-2456-4c05-88c2-b5349947742d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
 
-
-# Aangepaste indelingscomponenten maken voor aangepaste formulieren{#creating-custom-layout-components-for-adaptive-forms}
+# Aangepaste indelingscomponenten voor aangepaste formulieren maken{#creating-custom-layout-components-for-adaptive-forms}
 
 ## Vereiste {#prerequisite}
 
-Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie [Indeling van deelvenster wijzigen](../../forms/using/layout-capabilities-adaptive-forms.md).
+Kennis van lay-outs, waarmee u een aangepaste lay-out kunt maken/gebruiken. Zie [Lay-out deelvenster wijzigen](../../forms/using/layout-capabilities-adaptive-forms.md).
 
-## Aangepaste component voor lay-out deelvenster Formulier {#adaptive-form-panel-layout-component}
+## Indelingsonderdeel van deelvenster Adaptief formulier {#adaptive-form-panel-layout-component}
 
 Met de component Indeling van het deelvenster Adaptief formulier bepaalt u hoe adaptieve formuliercomponenten worden ingedeeld in een deelvenster dat relatief is ten opzichte van de gebruikersinterface.
 
-## Een aangepaste paneellay-out maken {#creating-a-custom-panel-layout}
+## Een aangepaste deelvensterlay-out maken {#creating-a-custom-panel-layout}
 
-1. Navigeer naar de locatie `/crx/de`.
-1. Kopieer een deelvensterlay-out van de locatie `/libs/fd/af/layouts/panel` (bijvoorbeeld `tabbedPanelLayout`) naar `/apps` (bijvoorbeeld `/apps/af-custom-layout`).
-1. Wijzig de naam van de layout die u naar `customPanelLayout` hebt gekopieerd. Wijzig de eigenschappen van de knooppunten `qtip` en `jcr:description`. Wijzig deze bijvoorbeeld in `Custom layout - Toggle tabs`.
+1. Naar de locatie navigeren `/crx/de`.
+1. Een deelvensterlay-out kopiëren vanaf de locatie `/libs/fd/af/layouts/panel` (bijvoorbeeld `tabbedPanelLayout`) naar `/apps` (bijvoorbeeld `/apps/af-custom-layout`).
+1. De naam wijzigen van de layout waarnaar u hebt gekopieerd `customPanelLayout`. De eigenschappen van de knooppunten wijzigen `qtip` en `jcr:description`. Wijzig deze bijvoorbeeld in `Custom layout - Toggle tabs`.
 
 qtip
 
@@ -40,10 +39,10 @@ qtip
 
 >[!NOTE]
 >
->Wanneer u de eigenschap `guideComponentType`instelt op de waarde `fd/af/layouts/panel`, wordt bepaald dat de lay-out een deelvensterlay-out is.
+>De eigenschap instellen `guideComponentType`op de waarde `fd/af/layouts/panel` bepaalt dat de lay-out een paneel-lay-out is.
 
-1. Wijzig de naam van het bestand `tabbedPanelLayout.jsp` onder de nieuwe layout in customPanelLayout.jsp.
-1. Als u nieuwe stijlen en gedragingen wilt introduceren, maakt u een clientbibliotheek onder het knooppunt `etc`. Maak bijvoorbeeld op de locatie /etc/af-custom-layout-clientlib de client-library van het knooppunt. Laat de knoop het categoriebezit af.panel.custom hebben. Het heeft de volgende .css en .js dossiers:
+1. De naam van het bestand wijzigen `tabbedPanelLayout.jsp` onder de nieuwe layout naar customPanelLayout.jsp.
+1. Als u nieuwe stijlen en gedragingen wilt introduceren, maakt u een clientbibliotheek onder de `etc` knooppunt. Maak bijvoorbeeld op de locatie /etc/af-custom-layout-clientlib de client-library van het knooppunt. Laat de knoop het categoriebezit af.panel.custom hebben. Het heeft de volgende .css en .js dossiers:
 
    ```css
    /** CSS defining new styles used by custom layout **/
@@ -115,9 +114,9 @@ qtip
    });
    ```
 
-1. U kunt de vormgeving en het gedrag verbeteren door een `client library` op te nemen.
+1. U kunt een `client library`.
 
-   Werk ook de paden van opgenomen scripts bij in .jsp-bestanden. Bijvoorbeeld, werk het `customPanelLayout.jsp` dossier als volgt bij:
+   Werk ook de paden van opgenomen scripts bij in .jsp-bestanden. Werk bijvoorbeeld de `customPanelLayout.jsp` bestand als volgt:
 
    ```html
    <%-- jsp encapsulating navigator container and panel container divs --%>
@@ -146,7 +145,7 @@ qtip
    </div>
    ```
 
-   Het `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp`-bestand:
+   De `/apps/af-custom-layout/customPanelLayout/defaultNavigatorLayout.jsp` bestand:
 
    ```html
    <%-- jsp governing the navigation part --%>
@@ -204,7 +203,7 @@ qtip
 
 1. Open een adaptief formulier in de ontwerpmodus. De door u gedefinieerde deelvensterlay-out wordt toegevoegd aan de lijst voor het configureren van deelvensterlay-outs.
 
-   ![De lay-out Aangepast deelvenster wordt weergegeven in de ](assets/auth-layt.png) ![lijst met deelvensterlay-outsSchermopname van adaptief formulier, met gebruik van de aangepaste ](assets/s1.png) ![layoutScreenshot van het deelvenster en de schakelfunctionaliteit van de aangepaste indeling.](assets/s2.png)
+   ![De lay-out van het deelvenster Aangepast wordt weergegeven in de lay-outlijst van het deelvenster](assets/auth-layt.png) ![Schermopname van adaptief formulier, met aangepaste paneellay-out](assets/s1.png) ![Screenshot met de schakelfunctionaliteit van de aangepaste layout](assets/s2.png)
 
 Voorbeeld-ZIP voor een aangepaste deelvensterindeling en een adaptief formulier dat deze gebruikt.
 

@@ -1,22 +1,21 @@
 ---
 title: Editor-beperkingen
-seo-title: Editor-beperkingen
+seo-title: Editor Limitations
 description: De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
-seo-description: De editor in de interface met aanraakbediening maakt gebruik van overlays voor interactie met inhoud die zich in een iframe bevindt. Deze interactie leidt tot sommige beperkingen in zowel gebruik van de redacteur als ook voor ontwikkelaars.
+seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
-translation-type: tm+mt
-source-git-commit: 844d42ed50da153077423190684aa85265bce12f
+exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
-
 
 # Editor-beperkingen{#editor-limitations}
 
@@ -28,13 +27,13 @@ Een auteur kan de volgende functionele beperkingen tegenkomen wanneer hij de edi
 
 ### Koppelingen niet actief {#links-not-active}
 
-Wanneer [een pagina bewerken](/help/sites-authoring/editing-content.md), zijn koppelingen niet actief.
+Wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md), zijn koppelingen niet actief.
 
-* [Schakel over naar  **** ](/help/sites-authoring/editing-content.md#preview-mode) Voorvertoning om te navigeren met de koppelingen in de inhoud.
+* [Overschakelen op **Voorvertoning** mode](/help/sites-authoring/editing-content.md#preview-mode) om te navigeren met de koppelingen in uw inhoud.
 
 ### Structuurpagina&#39;s {#structure-pages}
 
-De pagina&#39;s kunnen niet `structure` worden genoemd. Pagina&#39;s met de naam `structure` kunnen niet worden bewerkt in de pagina-editor.
+Pagina&#39;s kunnen geen naam krijgen `structure`. Benoemde pagina&#39;s `structure` kan niet worden bewerkt in de pagina-editor.
 
 ## CSS-beperkingen {#css-limitations}
 
@@ -46,7 +45,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 * Als dit gebeurt, zorg ervoor dat de afmetingen van absoluut gepositioneerd element correct zijn omdat de redacteur tot een bekleding met de nauwkeurige zelfde afmetingen zal leiden.
 
-### vh-eenheden {#vh-units}
+### vh Eenheden {#vh-units}
 
 `vh` De eenheden worden niet ondersteund omdat de hoogte van het iframe automatisch moet worden aangepast door AEM.
 
@@ -54,7 +53,7 @@ Absoluut gepositioneerde elementen kunnen problemen veroorzaken in de positie va
 
 Vaste achtergrondafbeeldingen worden mogelijk niet als vast weergegeven tijdens het schuiven omdat deze zijn ingesloten in een iframe.
 
-* Als u **Pagina weergeven als gepubliceerd** selecteert in de acties op de kopbalk, wordt de pagina correct weergegeven.
+* Selecteren **Pagina weergeven zoals gepubliceerd** in de koptekstbalk wordt de pagina correct weergegeven.
 
 ### 100% hoogte {#height}
 
@@ -84,4 +83,3 @@ body:before, body:after{
     display: table;
 }
 ```
-

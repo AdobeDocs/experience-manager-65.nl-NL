@@ -1,24 +1,23 @@
 ---
 title: Het beheerderswachtwoord configureren bij installatie
-seo-title: Het beheerderswachtwoord configureren bij installatie
+seo-title: Configure the Admin Password on Installation
 description: Leer hoe u het beheerderswachtwoord bij AEM installatie wijzigt.
-seo-description: Leer hoe u het beheerderswachtwoord bij AEM installatie wijzigt.
+seo-description: Learn how to change the Admin Password on AEM Installation.
 uuid: 06da9890-ed63-4fb6-88d5-fd0e16bc4ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
-translation-type: tm+mt
-source-git-commit: 1c1ade947f2cbd26b35920cfd10b1666b132bcbd
+exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# Vorm het Wachtwoord Admin op Installatie{#configure-the-admin-password-on-installation}
+# Het beheerderswachtwoord configureren bij installatie{#configure-the-admin-password-on-installation}
 
 ## Overzicht {#overview}
 
@@ -30,7 +29,7 @@ Deze eigenschap voegt de faciliteit toe om een nieuw beheerderwachtwoord voor de
 
 >[!CAUTION]
 >
->Houd er rekening mee dat deze functie niet van toepassing is op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Zie de relevante [sectie Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts) voor meer informatie.
+>Houd er rekening mee dat deze functie niet van toepassing is op de Felix Console, waarvoor het wachtwoord handmatig moet worden gewijzigd. Zie voor meer informatie de relevante [Sectie Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts).
 
 ## Hoe gebruik ik het? {#how-do-i-use-it}
 
@@ -50,9 +49,9 @@ Wanneer u de instantie uitvoert vanaf de opdrachtregel, krijgt u de mogelijkheid
 >
 >De vraag om het admin wachtwoord te veranderen zal slechts tijdens de installatie van een nieuw AEM geval verschijnen.
 
-## De -nointeractive vlag {#using-the-nointeractive-flag} gebruiken
+## De markering -nointeractive gebruiken {#using-the-nointeractive-flag}
 
-U kunt ook het wachtwoord opgeven in een eigenschappenbestand. Dit wordt gedaan door de `-nointeractive` vlag te gebruiken die met `-Dadmin.password.file` systeembezit wordt gecombineerd.
+U kunt ook het wachtwoord opgeven in een eigenschappenbestand. Dit wordt gedaan door te gebruiken `-nointeractive` markering gecombineerd met`-Dadmin.password.file` system, eigenschap.
 
 Hieronder ziet u een voorbeeld:
 
@@ -60,7 +59,7 @@ Hieronder ziet u een voorbeeld:
 java -Dadmin.password.file =/path/to/passwordfile.properties -jar aem6.3.jar -nointeractive
 ```
 
-Het wachtwoord binnen het `passwordfile.properties` dossier moet het hieronder formaat hebben:
+Het wachtwoord in de `passwordfile.properties` bestand moet de volgende indeling hebben:
 
 ```xml
 admin.password = 12345678
@@ -68,5 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Als u de `-nointeractive` parameter zonder `-Dadmin.password.file` systeembezit eenvoudig gebruikt, AEM zal het standaard admin wachtwoord gebruiken zonder u te vragen om het te veranderen, hoofdzakelijk het herhalen gedrag van vroegere versies. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.
-
+>Als u gewoon de `-nointeractive` parameter zonder `-Dadmin.password.file` systeemeigenschap, AEM het standaardbeheerderswachtwoord gebruiken zonder dat u wordt gevraagd dit te wijzigen, in feite gedrag uit eerdere versies repliceert. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.

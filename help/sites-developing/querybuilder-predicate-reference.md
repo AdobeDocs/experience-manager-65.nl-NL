@@ -242,7 +242,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
    de door komma&#39;s gescheiden voorrechten van het JCR die de huidige gebruikerszitting ALLE voor de knoop in kwestie moet hebben; bijvoorbeeld `jcr:write`, `jcr:modifyAccessControl`
 
-### taal {#language}
+### language {#language}
 
 Hiermee zoekt u CQ-pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een sitestructuur op hoofdniveau bevat.
 
@@ -330,7 +330,7 @@ Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige e
 
    indien ingesteld op &quot; `ignore`&quot; het sorteren ongevoelig zal maken, wat betekent dat &quot;a&quot; vóór &quot;B&quot; komt; indien leeg of weggelaten, wordt onderscheid gemaakt tussen hoofdletters en kleine letters, wat betekent dat &quot;B&quot; voor &quot;a&quot; komt
 
-### pad {#path}
+### path {#path}
 
 Hiermee zoekt u in een bepaald pad.
 
@@ -378,7 +378,7 @@ Ondersteunt facetextractie. Zal emmers verstrekken voor elke unieke eigenschapwa
 
    ingesteld op true voor het combineren van meerdere waarden ( `N_value`) met EN (sinds 5.3)
 
-* **bewerking**
+* **operation**
 
    &quot;`equals`&quot; voor exacte overeenkomst (standaardwaarde), &quot; `unequals`&quot; voor de vergelijking van ongelijkheid &quot; `like`&quot; voor het gebruik van de `jcr:like` xpath, functie (optioneel), &quot; `not`&quot; voor geen overeenkomst (bijv. &quot;`not(@prop)`&quot; in xpath, value param will be ignored) of &quot; `exists`&quot; voor existentiecontrole (waarde kan waar zijn - eigenschap moet bestaan, standaardwaarde - of vals - zelfde als &quot; `not`&quot;)
 

@@ -1,8 +1,8 @@
 ---
 title: Openingspagina's
-seo-title: Openingspagina's
-description: Met de functie voor het plaatsen van pagina's kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd.
-seo-description: Met de functie voor het plaatsen van pagina's kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd.
+seo-title: Landing Pages
+description: Met de functie voor het plaatsen van pagina's kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of slechts een deel van een pagina kunnen worden geïmporteerd.
+seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3381'
+source-wordcount: '3335'
 ht-degree: 0%
 
 ---
 
-
 # Openingspagina&#39;s{#landing-pages}
 
-Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is nuttig om bestemmingspagina&#39;s tot stand te brengen die slechts voor een beperkte tijd actief zijn en snel moeten worden gecreeerd.
+Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of slechts een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is nuttig om bestemmingspagina&#39;s tot stand te brengen die slechts voor een beperkte tijd actief zijn en snel moeten worden gecreeerd.
 
 Deze pagina beschrijft het volgende:
 
@@ -30,15 +29,15 @@ Deze pagina beschrijft het volgende:
 * hoe te met het landen van pagina&#39;s in AEM werken
 * mobiele bestemmingspagina&#39;s instellen
 
-Het voorbereiden van het ontwerppakket voor het invoeren wordt behandeld in [Uitbreiding en het Vormen van de Importeur van het Ontwerp](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Integratie met Adobe Analytics is opgenomen in [Landing Pages integreren met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+De voorbereiding van het ontwerppakket voor het importeren wordt behandeld in [De importmodule voor ontwerpen uitbreiden en configureren](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Integratie met Adobe Analytics valt onder [Landingpagina&#39;s integreren met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
->De Design Importer, die wordt gebruikt om bestemmingspagina&#39;s in te voeren, [is verouderd met AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>De ontwerpimportmodule die wordt gebruikt voor het importeren van bestemmingspagina&#39;s, [is vervangen door AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
->Aangezien de ontwerpimportmodule toegang tot `/apps` vereist, werkt deze niet in omgevingen met bewolking waarin `/apps` onveranderlijk is.
+>Omdat de functie voor het importeren van ontwerpen toegang vereist tot `/apps`, werkt het niet in omgevingen met geïncludeerde wolken waarin `/apps` is onveranderlijk.
 
 ## Wat zijn bestemmingspagina&#39;s? {#what-are-landing-pages}
 
@@ -48,9 +47,9 @@ Met de functie Landing Pages in AEM kunnen marketers samenwerken met webontwerpe
 
 In AEM maakt u bestemmingspagina&#39;s door de volgende stappen uit te voeren:
 
-1. Maak een pagina in AEM die het canvas van de bestemmingspagina&#39;s bevat. AEM wordt geleverd met een voorbeeld met de naam **Importer Page**.
+1. Maak een pagina in AEM die het canvas van de bestemmingspagina&#39;s bevat. AEM schepen met een steekproef genoemd **Pagina importeren**.
 
-1. [Bereid de HTML en de activa voor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Bereid de HTML en activa voor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Verpak de middelen in een dossier van het PIT dat hier als het Pakket van het Ontwerp wordt bedoeld.
 1. Importeer het ontwerppakket op de pagina Importeren.
 1. Wijzig en publiceer de pagina.
@@ -65,7 +64,7 @@ Een voorbeeldlandingspagina in AEM ziet er als volgt uit:
 
 Een openingspagina kan ook een mobiele versie van de pagina hebben. Voor een aparte mobiele versie van de bestemmingspagina moet het importontwerp twee HTML-bestanden hebben: *index.htm(l)* en *mobile.index.htm(l)*.
 
-De invoerprocedure voor de landingspagina is dezelfde als die van een normale openingspagina. Het ontwerp van de bestemmingspagina heeft een extra HTML-bestand dat overeenkomt met de bestemmingspagina. Dit HTML-bestand moet ook een canvas `div` met `id=cqcanvas` hebben, net als de bestemmingspagina html van het bureaublad en het ondersteunt alle bewerkbare componenten die worden beschreven voor de bestemmingspagina.
+De invoerprocedure voor de landingspagina is dezelfde als die van een normale openingspagina. Het ontwerp van de bestemmingspagina heeft een extra HTML-bestand dat overeenkomt met de bestemmingspagina. Dit HTML-bestand moet ook een canvas hebben `div` with `id=cqcanvas` Net als de openingspagina van het bureaublad (html) en ondersteunt het alle bewerkbare onderdelen die worden beschreven voor de openingspagina van het bureaublad.
 
 De mobiele openingspagina wordt gemaakt als een onderliggende pagina van de openingspagina van het bureaublad. Navigeer naar de openingspagina in Websites en open de onderliggende pagina om deze te openen.
 
@@ -75,9 +74,9 @@ De mobiele openingspagina wordt gemaakt als een onderliggende pagina van de open
 >
 >De landingspagina voor mobiele apparaten wordt samen met de bestemmingspagina verwijderd of gedeactiveerd als de bestemmingspagina van het bureaublad wordt verwijderd of gedeactiveerd.
 
-## Onderdelen {#landing-page-components} van bestemmingspagina
+## Onderdelen van bestemmingspagina {#landing-page-components}
 
-Als u delen van de HTML die worden geïmporteerd, bewerkbaar wilt maken binnen AEM, kunt u inhoud binnen de HTML-landingspagina&#39;s rechtstreeks toewijzen aan AEM componenten. De ontwerpimporteur begrijpt standaard de volgende componenten:
+Als u delen van de HTML die worden geïmporteerd, bewerkbaar wilt maken binnen AEM, kunt u inhoud binnen de HTML van de bestemmingspagina&#39;s rechtstreeks toewijzen aan AEM componenten. De ontwerpimporteur begrijpt standaard de volgende componenten:
 
 * Tekst, voor alle tekst
 * Titel, voor inhoud in H1-6-tags
@@ -94,7 +93,7 @@ Bovendien is het mogelijk om dit uit te breiden en douanecomponenten te steunen.
 
 ### Tekst {#text}
 
-Met de component Text kunt u een tekstblok invoeren met een WYSIWYG-editor. Zie [Tekstcomponent](/help/sites-authoring/default-components.md#text) voor meer informatie.
+Met de component Text kunt u een tekstblok invoeren met een WYSIWYG-editor. Zie [Tekstcomponent](/help/sites-authoring/default-components.md#text) voor meer informatie .
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -104,7 +103,7 @@ Hieronder ziet u een voorbeeld van een tekstcomponent op een bestemmingspagina:
 
 #### Titel {#title}
 
-Met de titelcomponent kunt u een titel weergeven en de grootte configureren (h1-6). Zie [Titelcomponent](/help/sites-authoring/default-components.md#title) voor meer informatie.
+Met de titelcomponent kunt u een titel weergeven en de grootte configureren (h1-6). Zie [Titelcomponent](/help/sites-authoring/default-components.md#title) voor meer informatie .
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -114,7 +113,7 @@ Hieronder ziet u een voorbeeld van een titelcomponent op een landingspagina:
 
 #### Afbeelding {#image}
 
-De afbeeldingscomponent toont een afbeelding die u kunt slepen en neerzetten vanuit de Inhoudszoeker of waarop u kunt klikken om te uploaden. Zie [afbeeldingscomponent](/help/sites-authoring/default-components.md) voor meer informatie.
+De afbeeldingscomponent toont een afbeelding die u kunt slepen en neerzetten vanuit de Inhoudszoeker of waarop u kunt klikken om te uploaden. Zie [afbeeldingscomponent](/help/sites-authoring/default-components.md) voor meer informatie .
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -128,7 +127,7 @@ Een landingspagina-ontwerp kan verscheidene verbindingen hebben - sommige kunnen
 
 De oproep tot actie (CTA) wordt gebruikt om de bezoeker te krijgen onmiddellijk actie op de landende pagina zoals &quot;Abonneren nu,&quot;Bekijk deze video,&quot;Beperkte Tijd slechts&quot;etc.
 
-* Klik via koppeling - Hiermee kunt u een tekstkoppeling toevoegen die de bezoeker naar een doel-URL stuurt wanneer erop wordt geklikt.
+* Klik via koppeling - Hiermee kunt u een tekstkoppeling toevoegen waarmee de bezoeker naar een doel-URL gaat wanneer erop wordt geklikt.
 * Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker naar een doel-URL stuurt wanneer erop wordt geklikt.
 
 Beide componenten CTA hebben gelijkaardige opties. De optie Doorklikken via koppeling heeft extra tekstopties. De componenten worden in de volgende alinea&#39;s uitgebreid beschreven.
@@ -139,20 +138,20 @@ Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen p
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**** LabelDe tekst die gebruikers zien. U kunt opmaak wijzigen met de RTF-editor.
+**Label** De tekst die gebruikers zien. U kunt opmaak wijzigen met de RTF-editor.
 
-**Geef de URI op** die gebruikers moeten bezoeken als ze op de tekst klikken.
+**Doel-URL** Voer de URI in die gebruikers moeten bezoeken als ze op de tekst klikken.
 
-**Rendering** OptionsBeschrijft renderopties. U kunt een van de volgende opties selecteren:
+**Renderopties** Beschrijft renderopties. U kunt een van de volgende opties selecteren:
 
 * Pagina laden in een nieuw browservenster
 * Pagina in huidig venster laden
 * Pagina in het bovenliggende frame laden
 * Alle frames annuleren en pagina in volledig browservenster laden
 
-**Voer op het tabblad Stijl een pad** in naar uw CSS-stijlpagina.
+**CSS** Voer op het tabblad Stijl een pad naar de CSS-stijlpagina in.
 
-**** IDOn het lusje van de Stijl, ga een identiteitskaart voor de component in om het uniek te identificeren.
+**ID** Voer op het tabblad Stijl een id in waarmee de component deze op unieke wijze kan identificeren.
 
 Hieronder ziet u een voorbeeld van een klik door een koppeling:
 
@@ -160,24 +159,24 @@ Hieronder ziet u een voorbeeld van een klik door een koppeling:
 
 #### Grafische koppeling {#graphical-link}
 
-Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het is een deel van de **Vraag aan Action** groep.
+Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het maakt deel uit van de **Oproep tot actie** groep.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-**** LabelDe tekst die gebruikers zien in de afbeelding. U kunt opmaak wijzigen met de RTF-editor.
+**Label** De tekst die gebruikers zien in de afbeelding. U kunt opmaak wijzigen met de RTF-editor.
 
-**Geef de URI op** die gebruikers moeten bezoeken als ze op de afbeelding klikken.
+**Doel-URL** Voer de URI in die gebruikers moeten bezoeken als ze op de afbeelding klikken.
 
-**Rendering** OptionsBeschrijft renderopties. U kunt een van de volgende opties selecteren:
+**Renderopties** Beschrijft renderopties. U kunt een van de volgende opties selecteren:
 
 * Pagina laden in een nieuw browservenster
 * Pagina in huidig venster laden
 * Pagina in het bovenliggende frame laden
 * Alle frames annuleren en pagina in volledig browservenster laden
 
-**Voer op het tabblad Stijl een pad** in naar uw CSS-stijlpagina.
+**CSS** Voer op het tabblad Stijl een pad naar de CSS-stijlpagina in.
 
-**** IDOn het lusje van de Stijl, ga een identiteitskaart voor de component in om het uniek te identificeren.
+**ID** Voer op het tabblad Stijl een id in waarmee de component deze op unieke wijze kan identificeren.
 
 Hier volgt een voorbeeld van een grafische koppeling:
 
@@ -185,7 +184,7 @@ Hier volgt een voorbeeld van een grafische koppeling:
 
 ### Oproep tot actie (CTA) Lead Form {#call-to-action-cta-lead-form}
 
-Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het is een deel van de **CTA Leidingsvorm** groep.
+Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het maakt deel uit van de **CTA-Leadformulier** groep.
 
 Een voorbeeld van een CTA-loodformulier ziet er als volgt uit:
 
@@ -193,54 +192,54 @@ Een voorbeeld van een CTA-loodformulier ziet er als volgt uit:
 
 CTA-loodformulieren worden samengesteld uit verschillende onderdelen:
 
-* **Formulier**
-LeadDe voorbeeldformuliercomponent definieert het begin en einde van een nieuw formulier voor lead op een pagina. Andere componenten kunnen vervolgens tussen deze elementen worden geplaatst, zoals E-mailadres, Voornaam, enzovoort.
+* **Voorloopformulier**
+De voorbeeldcomponent definieert het begin en einde van een nieuw formulier voor leads op een pagina. Andere componenten kunnen vervolgens tussen deze elementen worden geplaatst, zoals E-mailadres, Voornaam, enzovoort.
 
-* **Formuliervelden en -**
-elementenFormuliervelden en -elementen kunnen tekstvakken, keuzerondjes, afbeeldingen enzovoort bevatten. De gebruiker voert vaak een handeling uit in een formulierveld, zoals het typen van tekst. Zie de afzonderlijke formulierelementen voor meer informatie.
+* **Formuliervelden en -elementen**
+Formuliervelden en -elementen kunnen tekstvakken, keuzerondjes, afbeeldingen enzovoort bevatten. De gebruiker voert vaak een handeling uit in een formulierveld, zoals het typen van tekst. Zie de afzonderlijke formulierelementen voor meer informatie.
 
-* **ProfielcomponentenProfielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers is vereist.**
+* **Profielcomponenten**
+Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
 
-
-In het voorgaande voorbeeld wordt een voorbeeldformulier weergegeven; het bestaat uit de **Lead Form** component (start en end), met **Voornaam** en **Email Id** velden gebruikt voor invoer en een **Submit** veld
+In het voorgaande voorbeeld wordt een voorbeeldformulier weergegeven; het bestaat uit **Voorloopformulier** component (begin en einde), met **Voornaam** en **E-mailadres** velden die worden gebruikt voor invoer en een **Verzenden** field
 
 Van sidekick, zijn de volgende componenten beschikbaar voor de CTA Lood Vorm:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
-#### Gemeenschappelijke instellingen voor veel belangrijke formuliercomponenten {#settings-common-to-many-lead-form-components}
+#### Algemene instellingen voor veel onderdelen van formulieren voor lead {#settings-common-to-many-lead-form-components}
 
 Hoewel elk van de componenten van het hoofdformulier een ander doel heeft, bestaan veel van deze componenten uit vergelijkbare opties en parameters.
 
 Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabbladen beschikbaar in het dialoogvenster:
 
-* **Titel en**
-TextHere moet u de basisinformatie, zoals de titel van de component en om het even welke begeleidende tekst specificeren. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
+* **Titel en tekst**
+Hier moet u de basisinformatie opgeven, zoals de titel van de component en eventuele bijbehorende tekst. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
 
-* **Initiële**
-waardenHiermee kunt u een standaardwaarde opgeven.
+* **Beginwaarden**
+Hiermee kunt u een standaardwaarde opgeven.
 
-* ****
-RestrictiesThis u kunt specificeren of een gebied wordt vereist en plaatsbeperkingen zijn op dat gebied (bijvoorbeeld, moet numeriek zijn, etc.).
+* **Restricties**
+Hier kunt u opgeven of een veld verplicht is en plaatsbeperkingen in dat veld gelden (moet bijvoorbeeld numeriek zijn, enzovoort).
 
-* ****
-StileerGeeft de grootte en opmaak van de velden aan.
+* **Stijlen**
+Hiermee geeft u de grootte en opmaak van de velden aan.
 
 >[!NOTE]
 >
 >Welke velden u ziet, is afhankelijk van de afzonderlijke component.
 >
->Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Forms voor meer informatie over deze [algemene instellingen](/help/sites-authoring/default-components.md#formsgroup).
+>Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Forms voor meer informatie hierover [algemene instellingen](/help/sites-authoring/default-components.md#formsgroup).
 
-#### Formulieronderdelen {#lead-form-components}
+#### Voorloopformuliercomponenten {#lead-form-components}
 
 De volgende sectie beschrijft de componenten beschikbaar aan vraag-aan-actie leiden vormen.
 
-**Gebruikers** kunnen informatie over informatie toevoegen.
+**Info** Hiermee kunnen gebruikers informatie over het programma toevoegen.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-**Adres** FieldAllows gebruikers om adresinformatie in te gaan. Wanneer u deze component configureert, moet u de elementnaam in het dialoogvenster invoeren. De elementnaam is de naam van het formulierelement. Dit geeft aan waar in de gegevensopslagruimte de gegevens worden opgeslagen.
+**Adresveld** Hiermee kunnen gebruikers adresgegevens invoeren. Wanneer u deze component configureert, moet u de elementnaam in het dialoogvenster invoeren. De elementnaam is de naam van het formulierelement. Dit geeft aan waar in de gegevensopslagruimte de gegevens worden opgeslagen.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -248,43 +247,43 @@ De volgende sectie beschrijft de componenten beschikbaar aan vraag-aan-actie lei
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-**E-** mailadresHiermee kunnen gebruikers een e-mailadres (identificatie) invoeren.
+**E-mailadres** Hiermee kunnen gebruikers een e-mailadres (identificatie) invoeren.
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
-**First** NameHiermee wordt een veld weergegeven waarin gebruikers hun voornaam kunnen invoeren.
+**Voornaam** Biedt een veld waarin gebruikers hun voornaam kunnen invoeren.
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-**** GenderUsers kunnen hun geslacht selecteren in een vervolgkeuzelijst.
+**Geslacht** Gebruikers kunnen hun geslacht selecteren in een vervolgkeuzelijst.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
-**Last** NameUsers kan informatie over achternaam invoeren.
+**Achternaam** Gebruikers kunnen informatie over achternaam invoeren.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Lead** FormAdd this component to add a lead form to your landing page. Een lead-formulier bevat automatisch het veld Start of Lead Form en End of Lead Form. Hierna voegt u de in deze sectie beschreven componenten Formulier lead toe.
+**Voorloopformulier** Voeg deze component toe om een loodformulier toe te voegen aan de bestemmingspagina. Een lead-formulier bevat automatisch het veld Start of Lead Form en End of Lead Form. Hierna voegt u de in deze sectie beschreven componenten Formulier lead toe.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-De component Formulier lead definieert zowel het begin als het einde van een formulier met de elementen **Begin van formulier** en **Einde van formulier**. Deze worden altijd gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
+De component Formulier lead definieert zowel het begin als het einde van een formulier met de component **Begin formulier** en **Einde formulier** elementen. Deze worden altijd gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
 
-Nadat u het hoofdformulier hebt toegevoegd, kunt u het begin of einde van het formulier configureren door op **Bewerken** op de bijbehorende balk te klikken.
+Nadat u het voorbeeldformulier hebt toegevoegd, kunt u het begin of einde van het formulier configureren door op **Bewerken** in de desbetreffende balk.
 
 **Begin van Lead-formulier**
 
-Er zijn twee tabbladen beschikbaar voor de configuratie **Form** en **Advanced**:
+Er zijn twee tabbladen beschikbaar voor de configuratie **Formulier** en **Geavanceerd**:
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-**Hartelijk dank,** paginaDe pagina waarnaar wordt verwezen, is bedoeld om bezoekers te bedanken voor hun invoer. Als het formulier leeg blijft, wordt het na verzending opnieuw weergegeven.
+**Dankbriefje** De pagina waarnaar wordt verwezen om bezoekers te bedanken voor hun invoer. Als het formulier leeg blijft, wordt het na verzending opnieuw weergegeven.
 
-**Start** WorkflowHiermee bepaalt u welke workflow wordt geactiveerd wanneer een hoofdformulier wordt verzonden.
+**Workflow starten** Hiermee bepaalt u welke workflow wordt geactiveerd wanneer een hoofdformulier wordt verzonden.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Post** OptionsDe volgende opties zijn beschikbaar:
+**Post-opties** De volgende postopties zijn beschikbaar:
 
 * Lead maken
 * E-mailservice: Abonnee maken en toevoegen aan lijst - Gebruik deze optie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
@@ -292,15 +291,15 @@ Er zijn twee tabbladen beschikbaar voor de configuratie **Form** en **Advanced**
 * E-mailservice: Abonnement voor gebruiker opzeggen uit lijst - Gebruik deze optie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
 * Abonnement op gebruiker opzeggen
 
-**Formulier-** id De formulierid identificeert het hoofdformulier op unieke wijze. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
+**Formulierid** De formulier-id vormt een unieke identificatie van het hoofdformulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
 
-**Load** PathIs het pad naar knoopeigenschappen die worden gebruikt om vooraf gedefinieerde waarden te laden in de hoofdformuliervelden.
+**Pad laden** Is het pad naar knoopeigenschappen die worden gebruikt om vooraf gedefinieerde waarden te laden in de hoofdformuliervelden.
 
 Dit is een optioneel veld dat het pad naar een knooppunt in de repository aangeeft. Als dit knooppunt eigenschappen heeft die overeenkomen met de veldnamen, worden de desbetreffende velden op het formulier vooraf geladen met de waarde van die eigenschappen. Als er geen overeenkomst bestaat, bevat het veld de standaardwaarde.
 
-**ClientvalidatieHiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt altijd plaats).** Dit kan in combinatie met de Forms Captcha-component worden bereikt.
+**Clientvalidatie** Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt altijd plaats). Dit kan in combinatie met de Forms Captcha-component worden bereikt.
 
-**Resourcetype** voor validatie definieert het type resource voor formuliervalidatie als u het volledige hoofdformulier wilt valideren (in plaats van afzonderlijke velden).
+**Brontype voor validatie** Hiermee definieert u het type resource voor formuliervalidatie als u het volledige hoofdformulier wilt valideren (in plaats van afzonderlijke velden).
 
 Als u het volledige formulier valideert, voert u ook een van de volgende handelingen uit:
 
@@ -310,91 +309,91 @@ Als u het volledige formulier valideert, voert u ook een van de volgende handeli
 * Een script voor validatie aan de serverzijde:
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**De** Configuratie van de actieAfhankelijk van de selectie in PostOpties, verandert de Configuratie van de Actie. Als u bijvoorbeeld Lead maken selecteert, kunt u instellen aan welke lijst de lead wordt toegevoegd.
+**Configuratie van handelingen** Afhankelijk van de selectie in Post Options, verandert de Configuratie van de Actie. Als u bijvoorbeeld Lead maken selecteert, kunt u instellen aan welke lijst de lead wordt toegevoegd.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* **Toon Verzenden**
-ButtonGeeft aan of een knop Verzenden moet worden weergegeven.
+* **Verzendknop tonen**
+Geeft aan of een knop Verzenden moet worden weergegeven.
 
-* **Verstuur**
-NaamEen id als u meerdere verzendknoppen in een formulier gebruikt.
+* **Naam verzenden**
+Een id als u meerdere verzendknoppen in een formulier gebruikt.
 
-* **Verzend**
-TitelDe naam die op de knoop verschijnt, zoals voorleggen of verzenden.
+* **Titel verzenden**
+De naam die op de knop wordt weergegeven, zoals Verzenden of Verzenden.
 
-* **Knop**
-Herstellen tonenSelectievakje om de knop Herstellen zichtbaar te maken.
+* **Knop Herstellen tonen**
+Schakel het selectievakje in om de knop Herstellen zichtbaar te maken.
 
-* **Herstel**
-TitelDe naam die wordt weergegeven op de knop Herstellen.
+* **Titel opnieuw instellen**
+De naam die wordt weergegeven op de knop Herstellen.
 
-* ****
-DescriptionInformation die onder de knoop verschijnt.
+* **Beschrijving**
+Informatie die onder de knop wordt weergegeven.
 
-## Een openingspagina {#creating-a-landing-page} maken
+## Een bestemmingspagina maken {#creating-a-landing-page}
 
 Wanneer u een landingspagina maakt, moet u drie stappen uitvoeren:
 
 1. Maak een importerpagina.
-1. [Maak de HTML gereed voor importeren.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+1. [Bereid de HTML voor het invoeren voor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importeer het ontwerppakket.
 
 ### Gebruik van de ontwerpimportmodule {#use-of-the-design-importer}
 
-Omdat bij het importeren van pagina&#39;s HTML, verificatie en tests van de pagina&#39;s moeten worden voorbereid, is het importeren van bestemmingspagina&#39;s een beheertaak. Als beheerder, de gebruikers die de invoer uitvoeren moeten lees lezen, schrijven, tot stand brengen, en schrappen toestemmingen op `/apps`. Als de gebruiker niet over deze machtigingen beschikt, mislukt het importeren.
+Omdat bij het importeren van pagina&#39;s de HTML, verificatie en het testen van de pagina&#39;s moet worden voorbereid, is het importeren van bestemmingspagina&#39;s een beheertaak. Als beheerder hebben de gebruikers die de importbewerking uitvoeren, lees-, schrijf-, maak- en verwijdermachtigingen voor `/apps`. Als de gebruiker niet over deze machtigingen beschikt, mislukt het importeren.
 
 >[!NOTE]
 >
->Aangezien de ontwerpimportmodule bedoeld is als een beheerprogramma waarvoor lees-, schrijf-, maak- en verwijdermachtigingen op `/apps` vereist zijn, raadt Adobe het niet aan de ontwerpimportmodule in productie te gebruiken.
+>Omdat de ontwerpimportmodule bedoeld is als een beheerprogramma waarvoor lees-, schrijf-, maak- en verwijdermachtigingen vereist zijn op `/apps`Adobe beveelt niet aan de importeur van het ontwerp in productie te nemen.
 
 Adobe raadt aan de importer van het ontwerp op een testinstantie te gebruiken. Op een testinstantie kan de import worden getest en gevalideerd door een ontwikkelaar die vervolgens verantwoordelijk is voor het implementeren van de code in de productieinstantie.
 
-### Een importpagina {#creating-an-importer-page} maken
+### Een importpagina maken {#creating-an-importer-page}
 
-Voordat u het ontwerp van de bestemmingspagina kunt importeren, moet u een importerpagina maken, bijvoorbeeld in het kader van een campagne. Met de sjabloon Pagina importeren kunt u de volledige HTML-openingspagina importeren. De pagina bevat een neerzetvak waarin het ontwerppakket van de bestemmingspagina kan worden geïmporteerd door slepen en neerzetten te gebruiken.
+Voordat u het ontwerp van de bestemmingspagina kunt importeren, moet u een importerpagina maken, bijvoorbeeld in het kader van een campagne. Met de sjabloon Pagina importeren kunt u de volledige HTML-landingspagina importeren. De pagina bevat een neerzetvak waarin het ontwerppakket van de bestemmingspagina kan worden geïmporteerd door slepen en neerzetten te gebruiken.
 
 >[!NOTE]
 >
->Standaard kan een pagina Importer alleen worden gemaakt onder campagnes, maar u kunt deze sjabloon ook bedekken om een bestemmingspagina te maken onder `/content/mysite`.
+>Standaard kan een pagina Importer alleen worden gemaakt via campagnes, maar u kunt deze sjabloon ook bedekken om een bestemmingspagina te maken onder `/content/mysite`.
 
 Een nieuwe openingspagina maken:
 
-1. Ga naar **Websites** console.
+1. Ga naar de **Websites** console.
 1. Selecteer de campagne in het linkerdeelvenster.
-1. Klik **Nieuw** om het **Create Pagina** venster te openen.
-1. Selecteer de sjabloon **Importer Page** en voeg een titel en optioneel een naam toe en klik op **Maken**.
+1. Klikken **Nieuw** om de **Pagina maken** venster.
+1. Selecteer **Pagina importeren** sjabloon en voeg desgewenst een titel en een naam toe en klik op **Maken**.
 
    ![chlimage_1-1-1](assets/chlimage_1-1-1.png)
 
    De nieuwe importpagina wordt weergegeven.
 
-### HTML voorbereiden voor importeren {#preparing-the-html-for-import}
+### De HTML voorbereiden voor importeren {#preparing-the-html-for-import}
 
-Voordat u het ontwerppakket kunt importeren, moet de HTML worden voorbereid. Zie [De Invoer van het Ontwerp uitbreiden en Vormen](/help/sites-administering/extending-the-design-importer-for-landingpages.md) voor meer informatie.
+Voordat u het ontwerppakket importeert, moet de HTML worden voorbereid. Zie [De ontwerpimport uitbreiden en configureren](/help/sites-administering/extending-the-design-importer-for-landingpages.md) voor meer informatie .
 
-### Het ontwerppakket {#importing-the-design-package} importeren
+### Het ontwerppakket importeren {#importing-the-design-package}
 
 Nadat een importerpagina is gemaakt, kunt u een ontwerppakket op deze pagina importeren. Details over het maken van het ontwerppakket en de aanbevolen structuur worden uitgelegd in [De ontwerpimport uitbreiden en configureren](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
 Ervan uitgaande dat u het ontwerppakket klaar hebt, wordt in de volgende stappen beschreven hoe u het ontwerppakket op een importerpagina kunt importeren.
 
-1. Open de importerpagina die u [eerder hebt gemaakt](#creatingablankcanvaspage).
+1. De importerpagina die u opent [eerder gemaakt](#creatingablankcanvaspage).
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Sleep het ontwerppakket naar de dropbox. De pijl verandert van richting wanneer een pakket eroverheen wordt gesleept.
-1. Als gevolg van slepen en neerzetten wordt de openingspagina weergegeven in plaats van de pagina Importer. De HTML-openingspagina is geïmporteerd.
+1. Als gevolg van slepen en neerzetten wordt de openingspagina weergegeven in plaats van de pagina Importer. De openingspagina van de HTML is geïmporteerd.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
 >[!NOTE]
 >
->Tijdens het importeren wordt de markering om veiligheidsredenen ontsmet en om het importeren en publiceren van ongeldige opmaak te voorkomen. Hierbij wordt ervan uitgegaan dat alleen HTML is opgemaakt en dat alle andere vormen van elementen, zoals inline SVG of Web Components, worden uitgefilterd.
+>Tijdens het importeren wordt de markering om veiligheidsredenen ontsmet en om het importeren en publiceren van ongeldige opmaak te voorkomen. Dit veronderstelt HTML-slechts prijsverhoging en alle andere vorm van elementen zoals gealigneerde SVG of de Componenten van het Web zullen uit worden gefiltreerd.
 
 >[!NOTE]
 >
->Als u problemen hebt met het importeren van het ontwerppakket, raadpleegt u [Problemen oplossen](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>Als u problemen ondervindt met het importeren van het ontwerppakket, raadpleegt u [Problemen oplossen](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
 ## Werken met bestemmingspagina&#39;s {#working-with-landing-pages}
 
@@ -412,15 +411,15 @@ In deze sectie wordt beschreven hoe u het volgende kunt doen:
 * Voorvertoning van de openingspagina weergeven
 * Een openingspagina activeren/publiceren
 
-Wanneer u het ontwerppakket importeert, zijn **Clear Design** en **Download Imported Zip** beschikbaar in het instellingenmenu van de pagina:
+Wanneer u het ontwerppakket importeert, **Ontwerp wissen** en **Geïmporteerde postcode downloaden** zijn beschikbaar in het instellingenmenu van de pagina:
 
 ![chlimage_1-3-1](assets/chlimage_1-3-1.png)
 
-### Het geïmporteerde ontwerppakket {#downloading-the-imported-design-package} downloaden
+### Het geïmporteerde ontwerppakket downloaden {#downloading-the-imported-design-package}
 
 Door het ZIP-bestand te downloaden, kunt u opnemen welk ZIP-bestand met een bepaalde bestemmingspagina is geïmporteerd. Wijzigingen die op een pagina zijn aangebracht, worden niet toegevoegd aan het postvak.
 
-Als u het geïmporteerde ontwerppakket wilt downloaden, klikt u op **ZIP** downloaden op de werkbalk Landingspagina.
+Als u het geïmporteerde ontwerppakket wilt downloaden, klikt u op **Postcode downloaden** op de werkbalk Landingspagina.
 
 ### Informatie over importeren weergeven {#viewing-import-information}
 
@@ -428,19 +427,19 @@ U kunt op elk gewenst moment informatie over de laatste importbewerking weergeve
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Als het geïmporteerde ontwerppakket enkele problemen heeft, bijvoorbeeld als het verwijst naar afbeeldingen/scripts die niet in het pakket voorkomen, enzovoort, geeft de ontwerpimportmodule deze problemen weer in de vorm van een lijst. Als u de lijst met problemen wilt weergeven, klikt u in de klassieke gebruikersinterface op de koppeling voor problemen op de werkbalk Openingspagina. Als u in de volgende afbeelding op **Issues**-koppeling klikt, wordt het venster Problemen importeren geopend.
+Als het geïmporteerde ontwerppakket enkele problemen heeft, bijvoorbeeld als het verwijst naar afbeeldingen/scripts die niet in het pakket voorkomen, enzovoort, geeft de ontwerpimportmodule deze problemen weer in de vorm van een lijst. Als u de lijst met problemen wilt weergeven, klikt u in de klassieke gebruikersinterface op de koppeling voor problemen op de werkbalk Openingspagina. Klik in de volgende afbeelding op **Problemen** Hiermee opent u het venster Problemen importeren.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
-### Een openingspagina {#resetting-a-landing-page} opnieuw instellen
+### Een openingspagina opnieuw instellen {#resetting-a-landing-page}
 
-Als u het ontwerppakket van de bestemmingspagina opnieuw wilt importeren nadat u er enkele wijzigingen in hebt aangebracht, kunt u de openingspagina &quot;wissen&quot; door op **Wissen** boven aan de bestemmingspagina in de klassieke gebruikersinterface te klikken of op Wissen in het instellingenmenu in de gebruikersinterface met geoptimaliseerde aanrakingen te klikken. Hiermee verwijdert u de geïmporteerde bestemmingspagina en maakt u een lege importpagina.
+Als u het ontwerppakket van de bestemmingspagina opnieuw wilt importeren nadat u er enkele wijzigingen in hebt aangebracht, kunt u de openingspagina &quot;wissen&quot; door op **Wissen** boven aan de openingspagina in de klassieke gebruikersinterface of klik op Wissen in het instellingenmenu in de gebruikersinterface met geoptimaliseerde aanrakingen. Hiermee verwijdert u de geïmporteerde bestemmingspagina en maakt u een lege importpagina.
 
-Tijdens het wissen van de openingspagina kunt u de wijzigingen in de inhoud verwijderen. Als u **Nee** klikt, blijven de wijzigingen in de inhoud behouden. De structuur onder `jcr:content/importer`blijft dus behouden en worden alleen de component Importer Page en de bronnen in `etc/design` verwijderd. Als u **Yes** klikt, wordt `jcr:content/importer` ook verwijderd.
+Tijdens het wissen van de openingspagina kunt u de wijzigingen in de inhoud verwijderen. Als u op **Nee**, blijven de wijzigingen in de inhoud behouden, dat wil zeggen de structuur onder `jcr:content/importer`blijft behouden en worden alleen de component importerpagina en de bronnen in `etc/design` worden verwijderd. Als u op **Ja** de `jcr:content/importer` wordt ook verwijderd.
 
 >[!NOTE]
 >
->Als u besluit om de inhoudsveranderingen te verwijderen, dan worden alle veranderingen die u op de ingevoerde landende pagina evenals alle paginaeigenschappen aanbracht verloren wanneer u **Duidelijk** klikt.
+>Als u besluit om de inhoudswijzigingen te verwijderen, gaan alle wijzigingen die u hebt aangebracht op de geïmporteerde bestemmingspagina en alle pagina-eigenschappen verloren wanneer u op **Wissen**.
 
 ### Componenten wijzigen en toevoegen op een bestemmingspagina {#modifying-and-adding-components-on-a-landing-page}
 
@@ -450,15 +449,15 @@ Als u componenten aan de bestemmingspagina wilt toevoegen, sleept u componenten 
 
 >[!NOTE]
 >
->Als een component op de landingspagina niet kan worden bewerkt, moet u het ZIP-bestand opnieuw importeren nadat u het HTML-bestand [hebt gewijzigd.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM componenten.
+>Als een component op de landingspagina niet kan worden bewerkt, moet u het ZIP-bestand opnieuw importeren na [het HTML-bestand wijzigen.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM componenten.
 
-### Een openingspagina {#deleting-a-landing-page} verwijderen
+### Een openingspagina verwijderen {#deleting-a-landing-page}
 
 Het verwijderen van een openingspagina is vergelijkbaar met het verwijderen van een normale AEM.
 
 De enige uitzondering is dat wanneer u een bestemmingspagina verwijdert, deze ook de bijbehorende bestemmingspagina voor mobiele apparaten verwijdert (indien aanwezig), maar niet andersom.
 
-### Een openingspagina {#publishing-a-landing-page} publiceren
+### Een openingspagina publiceren {#publishing-a-landing-page}
 
 U kunt de openingspagina en alle bijbehorende afhankelijkheden publiceren op dezelfde manier als een normale pagina publiceren.
 

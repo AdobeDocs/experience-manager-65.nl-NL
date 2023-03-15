@@ -1,30 +1,29 @@
 ---
 title: Gebruiksgegevens voor referentie controleren
-seo-title: Gebruiksgegevens voor referentie controleren
+seo-title: Review credential use information
 description: Leer hoe u de gegevens over het gebruik van referenties kunt controleren.
-seo-description: Leer hoe u de gegevens over het gebruik van referenties kunt controleren.
+seo-description: Learn how to review credential use information.
 uuid: 02af75f9-c235-470d-a98b-a2102aa31381
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
-translation-type: tm+mt
-source-git-commit: d3719a9ce2fbb066f99445475af8e1f1e7476f4e
+exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
 
-
-# Referentie-gebruiksinformatie {#review-credential-use-information} controleren
+# Gebruiksgegevens voor referentie controleren {#review-credential-use-information}
 
 De referentie bevat informatie over het bedoelde gebruik dat toegankelijk is via de Acrobat Reader DC-webtoepassing voor extensies voor eindgebruikers. U kunt deze informatie gebruiken om het type geïnstalleerde referentie (evaluatie of productie) en zijn geldigheidsdata te bepalen.
 
 1. Open een webbrowser en voer de volgende URL in:
 
-   http://localhost:port/ReaderExtensions (waarbij *port* het poortnummer van uw toepassingsserver is)
+   http://localhost:port/ReaderExtensions *poort* is het poortnummer van de toepassingsserver)
 
 1. Meld u aan met de standaardgebruikersnaam en het standaardwachtwoord:
 
@@ -41,4 +40,3 @@ De referentie bevat informatie over het bedoelde gebruik dat toegankelijk is via
 >[!NOTE]
 >
 >De vervaldatum van de referentie is ook beschikbaar op de pagina Settings > Trust Store Management > Local Credentials van de beheerconsole, onder Expiration Date.
-

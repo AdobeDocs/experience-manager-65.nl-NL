@@ -1,8 +1,8 @@
 ---
 title: Repliceren met wederzijdse SSL
-seo-title: Repliceren met wederzijdse SSL
+seo-title: Replicating Using Mutual SSL
 description: Leer hoe te om AEM te vormen zodat een replicatieagent op de auteursinstantie wederzijdse SSL (MSSL) gebruikt om met te verbinden publiceert instantie. Gebruikend MSSL, gebruiken de replicatieagent en de dienst van HTTP op de publicatie instantie certificaten om elkaar voor authentiek te verklaren.
-seo-description: Leer hoe te om AEM te vormen zodat een replicatieagent op de auteursinstantie wederzijdse SSL (MSSL) gebruikt om met te verbinden publiceert instantie. Gebruikend MSSL, gebruiken de replicatieagent en de dienst van HTTP op de publicatie instantie certificaten om elkaar voor authentiek te verklaren.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1409'
 ht-degree: 2%
 
 ---
-
 
 # Repliceren met wederzijdse SSL{#replicating-using-mutual-ssl}
 
@@ -38,7 +37,7 @@ Wanneer u MSSL configureert voor replicatie, moet u de volgende stappen uitvoere
 
 U moet bepalen welke gebruikersaccount de replicatie uitvoert. Wanneer u het certificaat van de vertrouwde auteur op de publicatie-instantie installeert, is het certificaat gekoppeld aan dit gebruikersaccount.
 
-## Referenties verkrijgen of maken voor MSSL {#obtaining-or-creating-credentials-for-mssl}
+## Credentials verkrijgen of maken voor MSSL {#obtaining-or-creating-credentials-for-mssl}
 
 U hebt een persoonlijke sleutel en een openbaar certificaat nodig voor de auteur en u publiceert exemplaren:
 
@@ -48,7 +47,7 @@ U hebt een persoonlijke sleutel en een openbaar certificaat nodig voor de auteur
 
 ### JKS-indeling {#jks-format}
 
-Genereer een persoonlijke sleutel en een certificaat in JKS-indeling. De persoonlijke sleutel wordt opgeslagen in een KeyStore-bestand en het certificaat wordt opgeslagen in een TrustStore-bestand. Gebruik [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) om beide te maken.
+Genereer een persoonlijke sleutel en een certificaat in JKS-indeling. De persoonlijke sleutel wordt opgeslagen in een KeyStore-bestand en het certificaat wordt opgeslagen in een TrustStore-bestand. Gebruiken [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) om beide te maken.
 
 Voer de volgende stappen uit met Java `keytool` om de persoonlijke sleutel en de referentie te maken:
 
@@ -81,13 +80,13 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
 
    | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -alias | auteur | publish |
+   | -alias | author | publish |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
 ### pkcs#12-indeling {#pkcs-format}
 
-Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Gebruik [openSSL](https://www.openssl.org/) om hen te produceren. Gebruik de volgende procedure om een persoonlijke sleutel en een certificaatverzoek te produceren. Om het certificaat te verkrijgen, ondertekent u het verzoek met uw persoonlijke sleutel (zelfondertekend certificaat) of verzendt u het verzoek naar een CA. Vervolgens genereert u het archief pkcs#12 dat de persoonlijke sleutel en het certificaat bevat.
+Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Gebruiken [openSSL](https://www.openssl.org/) om ze te genereren. Gebruik de volgende procedure om een persoonlijke sleutel en een certificaatverzoek te produceren. Om het certificaat te verkrijgen, ondertekent u het verzoek met uw persoonlijke sleutel (zelfondertekend certificaat) of verzendt u het verzoek naar een CA. Vervolgens genereert u het archief pkcs#12 dat de persoonlijke sleutel en het certificaat bevat.
 
 1. Open een opdrachtregelvenster of terminal. Als u de persoonlijke sleutel wilt maken, voert u de volgende opdracht in met behulp van de optiewaarden uit de onderstaande tabel:
 
@@ -135,9 +134,9 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -inch | author.cer | publish.cer |
-   | -name | auteur | publish |
+   | -name | author | publish |
 
-## Private Key en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
+## Privésleutel en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
 
 Installeer de volgende items op de auteurinstantie:
 
@@ -146,7 +145,7 @@ Installeer de volgende items op de auteurinstantie:
 
 Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinstantie worden het programma geopend.
 
-### De persoonlijke sleutel van de auteur {#install-the-author-private-key} installeren
+### De persoonlijke sleutel van de auteur installeren {#install-the-author-private-key}
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
@@ -165,7 +164,7 @@ Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinsta
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Het publicatiecertificaat {#install-the-publish-certificate} installeren
+### Het publicatiecertificaat installeren {#install-the-publish-certificate}
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
@@ -200,7 +199,7 @@ Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder 
 1. Voer een alias en het wachtwoord voor de sleutelarchief in. Voer de alias en het wachtwoord voor de persoonlijke sleutel in en klik op Verzenden.
 1. Sluit het dialoogvenster KeyStore Management.
 
-### Auteurscertificaat {#install-the-author-certificate} installeren
+### Auteurscertificaat installeren {#install-the-author-certificate}
 
 1. Open de pagina Gebruikersbeheer voor de publicatie-instantie. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Zoek de gebruikersaccount die u gebruikt om replicatieverzoeken uit te voeren en klik of tik op de gebruikersnaam.
@@ -210,7 +209,7 @@ Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder 
 1. Controleer of de optie Certificaat toewijzen aan gebruiker is geselecteerd. Klik op Certificaatbestand selecteren, selecteer auteur.cer en klik op Openen.
 1. Klik op Verzenden en sluit het dialoogvenster TrustStore Management.
 
-## De HTTP-service configureren bij publicatie {#configure-the-http-service-on-publish}
+## De HTTP-service configureren bij publiceren {#configure-the-http-service-on-publish}
 
 Configureer de eigenschappen van de op Jetty Gebaseerde HTTP-service van Apache Felix op de publicatie-instantie, zodat deze HTTPS gebruikt bij de toegang tot Granite Keystore. De PID van de service is `org.apache.felix.http`.
 
@@ -223,9 +222,9 @@ De volgende lijst maakt een lijst van de eigenschappen OSGi die u moet vormen of
 | HTTPS-poort | org.osgi.service.http.port.secure | 8443 (of andere gewenste poort) |
 | Clientcertificaat | org.apache.felix.https.clientcertificate | &quot;Gezocht clientcertificaat&quot; |
 
-## De replicatieagent configureren op auteur {#configure-the-replication-agent-on-author}
+## De Replication Agent configureren op auteur {#configure-the-replication-agent-on-author}
 
-Configureer de replicatieagent op de auteurinstantie om het HTTPS-protocol te gebruiken wanneer u verbinding maakt met de publicatieinstantie. Voor volledige informatie over het vormen van replicatieagenten zie [het Vormen van Uw Agenten van de Replicatie](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+Configureer de replicatieagent op de auteurinstantie om het HTTPS-protocol te gebruiken wanneer u verbinding maakt met de publicatieinstantie. Voor volledige informatie over het vormen van replicatieagenten zie [De replicatieagents configureren](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Om MSSL toe te laten, vorm de eigenschappen op het lusje van het Vervoer volgens de volgende lijst:
 
@@ -295,4 +294,3 @@ Nadat u de replicatieagent vormt, test de verbinding om te bepalen of MSSL corre
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-

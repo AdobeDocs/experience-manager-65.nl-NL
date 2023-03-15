@@ -1,24 +1,23 @@
 ---
 title: Het configuratiebestand importeren en exporteren
-seo-title: Het configuratiebestand importeren en exporteren
+seo-title: Importing and exporting the configuration file
 description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
-seo-description: Leer hoe u het configuratiebestand importeert en exporteert om servervoorkeuren te bewerken of een ander exemplaar van een AEM formulierproduct te configureren.
+seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
 uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-
-# Het configuratiedossier {#importing-and-exporting-the-configuration-file} invoeren en uitvoeren
+# Het configuratiebestand importeren en exporteren {#importing-and-exporting-the-configuration-file}
 
 Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een ander exemplaar van een AEM formulierproduct te configureren.
 
@@ -37,4 +36,3 @@ Om veiligheidsrisico&#39;s te vermijden, bindt wachtwoordwaarde voor de folderse
 
 1. Klik in Beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik doorbladeren om het configuratiedossier te vinden, de Invoer te klikken, en dan O.K. te klikken.
-

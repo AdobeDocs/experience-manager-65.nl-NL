@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] Introductiepagina"'
+title: "[!DNL Assets] Introductiepagina"
 description: Personaliseer [!DNL Experience Manager Assets] De homepage voor een rijke het ontvangen het schermervaring, met inbegrip van een momentopname van recente activiteiten rond activa.
 contentOwner: AG
 feature: Developer Tools, Asset Management

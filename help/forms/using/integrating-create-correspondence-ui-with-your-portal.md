@@ -1,8 +1,8 @@
 ---
 title: De interface Correspondentie maken integreren met uw aangepaste portal
-seo-title: De interface Correspondentie maken integreren met uw aangepaste portal
+seo-title: Integrating Create Correspondence UI with your custom portal
 description: Leer hoe u het maken van correspondentie-UI kunt integreren met uw aangepaste portal
-seo-description: Leer hoe u het maken van correspondentie-UI kunt integreren met uw aangepaste portal
+seo-description: Learn how to integrate create correspondence UI with your custom portal
 uuid: 68ef5bf2-b271-4c44-8840-6c495069164d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: correspondence-management
 discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '413'
 ht-degree: 3%
 
 ---
 
-
-# Integratie van de interface Correspondentie maken met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
+# De interface Correspondentie maken integreren met uw aangepaste portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Overzicht {#overview}
 
@@ -44,9 +43,9 @@ Het aangepaste portaal bereidt bijvoorbeeld de URL voor als\
 >
 >Voordat u de toepassing Correspondentie maken aanroept, slaat u de gegevens op en uploadt u deze om de interface Correspondentie maken op de opgegeven dataURL aan te roepen. Dit zou of van het douaneportaal zelf of door een ander achtereindeproces kunnen worden gedaan.
 
-## Inline op gegevens gebaseerde aanroep {#inline-data-based-invocation}
+## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn eenvoudig URL op https://&#39;[server]:[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html te raken, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als een verzoek van de POST te roepen (hen verbergen van de eindgebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om eenvoudig URL op https://&#39; te raken[server]:[poort]&#39;/[contextPath]/aem/forms/createcorrespondence.html, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als verzoek van de POST te roepen (het verbergen van hen voor het eind - gebruiker). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
@@ -57,7 +56,7 @@ Een andere (en veiligere) manier om de Create toepassing van de Correspondentie 
 
 De volgorde van parameters in de tabel geeft de voorkeur aan parameters die worden gebruikt voor het laden van de letter.
 
-### Parameters om de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source} op te geven
+### Parameters voor het opgeven van de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source}
 
 <table>
  <tbody>

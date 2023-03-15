@@ -1,8 +1,8 @@
 ---
 title: Badges-console
-seo-title: Badges-console
+seo-title: Badges Console
 description: Met de console Gemeenschapsbadges kunt u aangepaste badges toevoegen die kunnen worden weergegeven voor leden die hun geld hebben verdiend (toegekend) of die een specifieke rol in de gemeenschap hebben (toegewezen)
-seo-description: Met de console Gemeenschapsbadges kunt u aangepaste badges toevoegen die kunnen worden weergegeven voor leden die hun geld hebben verdiend (toegekend) of die een specifieke rol in de gemeenschap hebben (toegewezen)
+seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
 uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -45,23 +45,23 @@ Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en w
 
 ## Badge maken {#create-badge}
 
-Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de opslagplaats op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
+Een badge wordt gemaakt door het uploaden van een voldoende kleine afbeelding (72 dpi met een hoogte tussen 26 en 32 pixels) en het opgeven van een naam. De badge-afbeelding wordt opgeslagen in de gegevensopslagruimte op `/libs/settings/community/badging/images` en wordt automatisch gerepliceerd naar de publicatieomgeving.
 
-Als de publicatieomgeving een bedrijf van uitgevers is, is het nodig om [user sync](/help/communities/sync.md) te configureren.
+Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakelijk om te vormen [gebruikerssync](/help/communities/sync.md).
 
 ![aanmaken](assets/create-badge.png)
 
 * **Afbeelding uploaden**
 
-   (*Required*) Een afbeelding met een badge met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in JPEG- of PNG-indeling.
+   (*Vereist*) Een badge-afbeelding met een aanbevolen formaat van 32 x 32 pixels bij 72 dpi in de indeling JPEG of PNG.
 
 * **Naam**
 
-   (*Required*) De merknaam. Het is de standaard `Display Name` evenals de naam van de repository node. Als `Name` geen geldige naam voor een opslagplaats is, wordt deze gewijzigd.
+   (*Vereist*) De naam van de badge. Dit is de standaardinstelling `Display Name` en de naam van het knooppunt in de repository. Als de `Name` is geen geldige naam voor een opslagplaats. De naam wordt gewijzigd.
 
 * **Weergavenaam**
 
-   (*Optioneel*) De naam die moet worden weergegeven voor de badge in de gebruikersinterface. Standaard is de ongewijzigde tekst die voor `Name` wordt ingevoerd.
+   (*Optioneel*) De naam die moet worden weergegeven voor de badge in de gebruikersinterface. Standaard is de ongewijzigde tekst die is ingevoerd voor de `Name`.
 
 * **Beschrijving**
 
@@ -69,6 +69,6 @@ Als de publicatieomgeving een bedrijf van uitgevers is, is het nodig om [user sy
 
 ## Aanvullende informatie {#additional-information}
 
-Zie [Scores en Badges](/help/communities/implementing-scoring.md) voor meer informatie over het instellen van regels voor scoring en badging.
+Voor meer informatie over het instellen van regels voor scoring en badging raadpleegt u [Scores en badges](/help/communities/implementing-scoring.md).
 
-Zie [Ledenconsole](/help/communities/members.md) voor het beheren van badges voor leden.
+Voor het beheren van badges voor leden raadpleegt u [Ledenconsole](/help/communities/members.md).

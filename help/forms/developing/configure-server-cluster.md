@@ -35,7 +35,7 @@ Een AEM Forms op JEE-cluster is afhankelijk van de clusteringsmogelijkheden van 
 
 ### GemFire-cache {#gemfire-cache}
 
-De GemFire-cache is een verspreid cachemechanisme dat in elk clusterknooppunt wordt geïmplementeerd. De knopen vinden elkaar en bouwen één enkel logisch geheime voorgeheugen dat tussen de knopen coherent wordt gehouden. De knopen die elkaar vinden sluiten zich samen om één enkel notioneel geheime voorgeheugen te handhaven dat als wolk in Figuur 1 wordt getoond. In tegenstelling tot de GDS en de database, is de cache een louter fictieve entiteit. De werkelijke inhoud in de cache wordt opgeslagen in het geheugen en in de map `LC_TEMP` op elk van de clusterknooppunten.
+De GemFire-cache is een verspreid cachemechanisme dat in elk clusterknooppunt wordt geïmplementeerd. De knopen vinden elkaar en bouwen één enkel logisch geheime voorgeheugen dat tussen de knopen coherent wordt gehouden. De knopen die elkaar vinden sluiten zich samen om één enkel notioneel geheime voorgeheugen te handhaven dat als wolk in Figuur 1 wordt getoond. In tegenstelling tot de GDS en de database, is de cache een louter fictieve entiteit. De eigenlijke inhoud in de cache wordt opgeslagen in het geheugen en in de `LC_TEMP` op elk van de clusterknooppunten.
 
 ### Database {#database}
 
@@ -117,7 +117,7 @@ GemFire produceert logboekinformatie die kan worden gebruikt om te bepalen welke
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-De numerieke tekenreeks na `adobeZZ_` is uniek voor het serverknooppunt. U moet daarom zoeken in de feitelijke inhoud van de tijdelijke map. De twee tekens na `adobe` zijn afhankelijk van het servertype van de toepassing: hetzij `wl`, `jb`, of `ws`.
+De numerieke tekenreeks na `adobeZZ_` is uniek aan de serverknoop, en zodat moet u de daadwerkelijke inhoud van uw tijdelijke folder zoeken. De twee tekens na `adobe` zijn afhankelijk van het servertype van de toepassing: ofwel `wl`, `jb`, of `ws`.
 
 De volgende steekproeflogboeken tonen wat gebeurt wanneer een twee-knoopcluster zich vindt.
 
@@ -264,12 +264,11 @@ Bij de ene instelling wordt een punt tussen &quot;cluster&quot; en &quot;locator
 
 Om te bepalen hoe Kwartz zich heeft gevormd, moet u de berichten bekijken die door AEM Forms op de dienst van de Planner JEE tijdens opstarten worden geproduceerd. Deze berichten worden geproduceerd bij ernst INFO, en het kan noodzakelijk zijn om het logboekniveau aan te passen en opnieuw te beginnen om de berichten te verkrijgen. In de AEM Forms op JEE startopeenvolging, begint de initialisering van het Kwartz met de volgende lijn:
 
-INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
-Het is belangrijk om van deze eerste lijn in de logboeken de plaats te bepalen omdat sommige toepassingsservers Kwartz ook gebruiken, en hun instanties van Kwartz zouden niet met de instantie moeten worden verward die door AEM Forms op de dienst van de Planner JEE wordt gebruikt. Dit is de aanwijzing dat de dienst van de Planner begint, en de lijnen die het volgen zullen u vertellen of het of niet op gegroepeerde wijze behoorlijk begint. Verscheidene berichten verschijnen in deze opeenvolging, en het is het laatste &quot;begonnen&quot;bericht dat onthult hoe Kwartz wordt gevormd:
+INFO  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad Het is belangrijk om van deze eerste lijn in de logboeken de plaats te bepalen omdat sommige toepassingsservers ook Kwartz gebruiken, en hun instanties Kwartz zouden niet met de instantie moeten worden verward die door AEM Forms op de dienst van de Planner JEE wordt gebruikt. Dit is de aanwijzing dat de dienst van de Planner begint, en de lijnen die het volgen zullen u vertellen of het of niet op gegroepeerde wijze behoorlijk begint. Verscheidene berichten verschijnen in deze opeenvolging, en het is het laatste &quot;begonnen&quot;bericht dat onthult hoe Kwartz wordt gevormd:
 
-Hier wordt de naam van het Kwartz-exemplaar gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner zal altijd met het koord `IDPSchedulerService_$_` beginnen. Het koord dat aan het eind van dit wordt toegevoegd vertelt u al dan niet Kwartz op gegroepeerde wijze loopt. De lange unieke die herkenningsteken van hostname van de knoop en een lange koord van cijfers, hier `ap-hp8.ottperflab.adobe.com1312883903975` wordt geproduceerd, wijst erop dat het in een cluster werkt. Als het als één enkele knoop werkt, dan zal het herkenningsteken een twee cijferaantal, &quot;20&quot;zijn:
+Hier wordt de naam van het Kwartz-exemplaar gegeven: `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. De naam van de instantie van het Kwartz van de planner zal altijd met het koord beginnen `IDPSchedulerService_$_`. Het koord dat aan het eind van dit wordt toegevoegd vertelt u al dan niet Kwartz op gegroepeerde wijze loopt. De lange unieke id die wordt gegenereerd op basis van de hostnaam van het knooppunt en een lange reeks cijfers, hier `ap-hp8.ottperflab.adobe.com1312883903975`, geeft aan dat de toepassing wordt uitgevoerd in een cluster. Als het als één enkele knoop werkt, dan zal het herkenningsteken een twee cijferaantal, &quot;20&quot;zijn:
 
-INFO `[org.quartz.core.QuartzScheduler]` Scheduler `IDPSchedulerService_$_20` is gestart.
+INFO  `[org.quartz.core.QuartzScheduler]` Planner `IDPSchedulerService_$_20` begonnen.
 Deze controle moet op alle clusterknopen afzonderlijk worden gedaan, aangezien de planner van elke knoop onafhankelijk bepaalt of om op clusterwijze te werken.
 
 ### Welke problemen ontstaan er als Kwartz in de verkeerde modus wordt uitgevoerd? {#quartz-running-in-wrong-mode}
@@ -326,7 +325,7 @@ De volgende instellingen moeten worden gecontroleerd:
 1. Locatie van de map System Fonts
 1. Locatie van het configuratiebestand van Data Services
 
-De cluster heeft slechts één enkele weg die voor elk van deze configuratiemontages plaatst. De locatie van de Temp-directory kan bijvoorbeeld `/home/project/QA2/LC_TEMP` zijn. In een cluster, is het noodzakelijk dat elke knoop eigenlijk dit bepaalde weg toegankelijk heeft. Als een knooppunt het verwachte tijdelijke bestandspad heeft en een ander knooppunt niet, werkt het knooppunt dat niet correct.
+De cluster heeft slechts één enkele weg die voor elk van deze configuratiemontages plaatst. De locatie van de Temp-directory kan bijvoorbeeld `/home/project/QA2/LC_TEMP`. In een cluster, is het noodzakelijk dat elke knoop eigenlijk dit bepaalde weg toegankelijk heeft. Als een knooppunt het verwachte tijdelijke bestandspad heeft en een ander knooppunt niet, werkt het knooppunt dat niet correct.
 
 Hoewel deze bestanden en paden kunnen worden gedeeld tussen de knooppunten of afzonderlijk of op externe bestandssystemen, is het doorgaans aan te raden dat het lokale kopieën zijn van de schijfopslag van het lokale knooppunt.
 

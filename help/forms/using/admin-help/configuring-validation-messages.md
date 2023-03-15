@@ -1,47 +1,46 @@
 ---
 title: Validatieberichten configureren
-seo-title: Validatieberichten configureren
+seo-title: Configuring validation messages
 description: Leer hoe u opgeeft hoe validatieberichten worden weergegeven en waar deze zich bevinden ten opzichte van het formulier dat wordt geretourneerd in de webbrowser.
-seo-description: Leer hoe u opgeeft hoe validatieberichten worden weergegeven en waar deze zich bevinden ten opzichte van het formulier dat wordt geretourneerd in de webbrowser.
+seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 14314383-5228-4904-98c1-586f48a1142c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '350'
 ht-degree: 2%
 
 ---
 
+# Validatieberichten configureren {#configuring-validation-messages}
 
-# Validatieberichten {#configuring-validation-messages} configureren
-
-Voor formulieren die als HTML worden gegenereerd, worden validatiefouten van formulieren weergegeven voor de gebruiker. U kunt de weergave van validatieberichten aanpassen. Afhankelijk van waar de validatieberichten worden weergegeven, kunt u ook de locatie van het bericht in het formulier en de grootte van de framerand bepalen.
+Voor formulieren die als HTML worden weergegeven, worden validatiefouten voor formulieren weergegeven die optreden voor de gebruiker. U kunt de weergave van validatieberichten aanpassen. Afhankelijk van waar de validatieberichten worden weergegeven, kunt u ook de locatie van het bericht in het formulier en de grootte van de framerand bepalen.
 
 ## Opgeven hoe validatieberichten worden weergegeven {#specify-how-validation-messages-are-displayed}
 
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer validatie in de lijst Rapportage een van de volgende opties:
 
-   **Berichtvenster:** validatieberichten weergeven in een afzonderlijk dialoogvenster.
+   **Berichtvenster:** Validatieberichten weergeven in een afzonderlijk dialoogvenster.
 
-   **Frame:** validatieberichten weergeven binnen een kader van hetzelfde venster.
+   **Frame:** Validatieberichten weergeven in een kader van hetzelfde venster.
 
-   **Geen kader:** validatieberichten weergeven in hetzelfde venster. Dit is de standaardwaarde.
+   **Geen kader:** Validatieberichten weergeven in hetzelfde venster. Dit is de standaardwaarde.
 
    **Via API (met gegevens):** De validatieberichten retourneren via de API (met gegevens). De validatieberichten worden niet op het scherm weergegeven.
 
    **Via API (met formulier):** De validatieberichten retourneren via de API (met het formulier). De validatieberichten worden niet op het scherm weergegeven.
 
-   **Geen:** om validatieberichten niet weer te geven.
+   **Geen:** Validatieberichten niet weergeven.
 
 1. Klik op Opslaan.
 
-## Geef de locatie van validatieberichten op ten opzichte van het formulier dat wordt geretourneerd in de webbrowser {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## De locatie van validatieberichten opgeven ten opzichte van het formulier dat wordt geretourneerd in de webbrowser {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Wanneer Rapportage is ingesteld op Frame of Geen frame, kunt u de locatie van validatieberichten opgeven.
 
@@ -49,7 +48,7 @@ Wanneer Rapportage is ingesteld op Frame of Geen frame, kunt u de locatie van va
 
    **Links:** Validatieberichten links in de webbrowser weergeven.
 
-   **Rechts:** om validatieberichten aan de rechterkant van de webbrowser weer te geven.
+   **Rechts:** Validatieberichten weergeven aan de rechterkant van de webbrowser.
 
    **Boven**: Validatieberichten boven aan de webbrowser weergeven. Dit is de standaardwaarde.
 
@@ -57,7 +56,7 @@ Wanneer Rapportage is ingesteld op Frame of Geen frame, kunt u de locatie van va
 
 1. Klik op Opslaan.
 
-## De frameregrootte {#specify-the-frame-border-size} opgeven
+## De grootte van de framerand opgeven {#specify-the-frame-border-size}
 
 Wanneer Rapportage is ingesteld op Frame, kunt u de grootte van de framerand opgeven.
 
@@ -66,4 +65,3 @@ Wanneer Rapportage is ingesteld op Frame, kunt u de grootte van de framerand opg
    De randgrootte moet gelijk zijn aan of groter zijn dan 0. De standaardwaarde is 1.
 
 1. Klik op Opslaan.
-

@@ -1,8 +1,8 @@
 ---
 title: Java APIQuick Start (SOAP) XMP Utilities Service
-seo-title: Java APIQuick Start (SOAP) XMP Utilities Service
+seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: Met de XMP Utilities kunt u XMP metagegevens exporteren en importeren.
-seo-description: Met de XMP Utilities kunt u XMP metagegevens exporteren en importeren.
+seo-description: Use the XMP Utilities service to export and import XMP metadata.
 uuid: 5db4c623-75db-4a34-9ad2-3c917619e296
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 699a7309-a976-480e-886f-2e466a477348
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
 
-
-# XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+# Java API Quick Start (SOAP) XMP Utilities Service {#xmp-utilities-service-java-apiquick-start-soap}
 
 De volgende Snelle Begarts zijn beschikbaar voor de dienst van het Hulpprogramma XMP.
 
@@ -140,7 +139,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
 
 ## Snel starten (SOAP-modus): XMP metagegevens importeren met de Java API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Zie [Metagegevens importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents) voor informatie over dit XML-bestand.
+In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Voor informatie over dit XML-bestand raadpleegt u [Metagegevens importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*
@@ -245,4 +244,3 @@ In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het
      }
  }
 ```
-

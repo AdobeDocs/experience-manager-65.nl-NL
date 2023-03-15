@@ -1,27 +1,26 @@
 ---
 title: Een taak openen
-seo-title: Een taak openen
+seo-title: Opening a task
 description: Stappen om een taak te openen in uw AEM Forms-app.
-seo-description: Stappen om een taak te openen in uw AEM Forms-app.
+seo-description: Steps to open a task on your AEM Forms app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
-
 
 # Een taak openen {#opening-a-task}
 
 Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd.
 
-Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten](/help/forms/using/save-as-draft.md) opslaan.
+Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten opslaan](/help/forms/using/save-as-draft.md).
 
 **Een taak openen**
 
@@ -34,11 +33,11 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Tik op de taak om deze te openen.
 
-   U kunt **Samenvatting van de Mening** tikken om extra instructies te bekijken die in het proces Workbench worden gespecificeerd.
+   U kunt tikken **Overzicht weergeven** om aanvullende instructies weer te geven die zijn opgegeven in het Workbench-proces.
 
 **Een toepassing openen**
 
-1. Tik op de **toepassing** op het tabblad **Forms**.
+1. Tik op de knop **toepassing** in de **Forms** tab.
 
    Wanneer u een toepassing selecteert, wordt de beschrijving van de toepassing onder de toepassingsnaam weergegeven. Na de beschrijving worden de gebruikershandeling/handelingen die aan de toepassing zijn gekoppeld, weergegeven.
 
@@ -47,4 +46,4 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Tik op de taak om deze te openen.
 
-   Tik op **Samenvatting weergeven** om aanvullende instructies weer te geven die voor de toepassing zijn opgegeven.
+   U kunt tikken **Overzicht weergeven** om extra instructies te bekijken die voor de toepassing worden gespecificeerd.

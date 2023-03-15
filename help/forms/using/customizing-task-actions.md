@@ -1,29 +1,28 @@
 ---
 title: Taakhandelingen aanpassen
-seo-title: Taakhandelingen aanpassen
+seo-title: Customizing Task Actions
 description: U kunt de vormgeving van de taakhandelingen aanpassen, alleen afbeeldingen voor handelingen gebruiken en de afbeeldingen aanpassen die worden gebruikt in routehandelingen.
-seo-description: U kunt de vormgeving van de taakhandelingen aanpassen, alleen afbeeldingen voor handelingen gebruiken en de afbeeldingen aanpassen die worden gebruikt in routehandelingen.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: d17863fb-7950-493d-b378-16861c4af176
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
+# Taakhandelingen aanpassen {#customizing-task-actions}
 
-# Taakhandelingen {#customizing-task-actions} aanpassen
+In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de volgende stappen uitvoeren: [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
 
-In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die worden vermeld bij [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+## Tekststijl aanpassen {#customizing-text-style}
 
-## Tekststijl {#customizing-text-style} aanpassen
-
-Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het bestand `/apps/ws/css/newStyle.css`:
+Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -109,9 +108,9 @@ Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het
 }
 ```
 
-## Afbeeldingen {#customizing-images} aanpassen
+## Afbeeldingen aanpassen {#customizing-images}
 
-Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in het bestand `/apps/ws/css/newStyle.css`. Het volgende codefragment past beeld voor de *lock* actie aan:
+Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in het dialoogvenster `/apps/ws/css/newStyle.css` bestand. Met het volgende codefragment wordt de afbeelding voor de *vergrendelen* handeling:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -132,15 +131,15 @@ Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in h
 }
 ```
 
-## Alleen afbeeldingen weergeven voor handelingen {#showing-only-images-for-actions}
+## Alleen afbeeldingen voor handelingen weergeven {#showing-only-images-for-actions}
 
-Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Voor gedetailleerde informatie, zie [Beelden voor de Acties van de Route](/help/forms/using/images-route-actions.md).
+Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Zie voor meer informatie [Beelden voor routeacties](/help/forms/using/images-route-actions.md).
 
-### Taaklijsthandeling, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
+### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Zie [AEM Forms-werkruimtecode samenstellen](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code) voor gedetailleerde informatie over het maken van ontwikkelingspakket.
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Voor gedetailleerde informatie over het maken van een ontwikkelingspakket gaat u naar [AEM Forms-werkruimtecode samenstellen.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-1. Kopieer /libs/ws/js/runtime/templates/task.html naar `/apps/ws/js/runtime/templates/task.html`vervang het volgende codefragment:
+1. /libs/ws/js/runtime/templates/task.html kopiëren naar `/apps/ws/js/runtime/templates/task.html`Vervang het volgende codefragment:
 
    ```html
    // Orignal code
@@ -213,7 +212,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
        </div>
    ```
 
-1. Verwijder de vaste breedte die aan een ankertag is toegewezen uit het `/apps/ws/css/newStyle.css`-bestand:
+1. De vaste breedte die aan een ankertag is toegewezen, verwijderen uit het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
 
    ```css
    .task .taskActionsPopUp ul{
@@ -263,12 +262,12 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
    }
    ```
 
-### Pop-upmenu {#task-details-task-action-pop-up-menu} Taakdetails
+### Pop-upmenu Taakdetails {#task-details-task-action-pop-up-menu}
 
 Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen:
 
-* Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de map `/apps/ws/js/runtime/templates/`:
-* Pictogramlabel inkapselen in de ankertag in plaats van tekst. Met de onderstaande *nieuwe code* wordt bijvoorbeeld de pictogramtag ingekapseld in de ankertag:
+* Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de map `/apps/ws/js/runtime/templates/` map:
+* Pictogramlabel inkapselen in de ankertag in plaats van tekst. De *nieuwe code* hieronder wordt de pictogramtag ingekapseld in de ankertag:
 
 ```html
 // Original code

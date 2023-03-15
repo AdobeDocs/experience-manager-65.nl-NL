@@ -1,10 +1,11 @@
 ---
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -42,9 +43,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar wordt gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in de Reis van de Ontwikkelaar worden gebruikt.
 
-Verzoeken om uw inhoud worden gemaakt met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. AEM GraphQL API staat toepassingen toe om (complexe) vragen op uw Fragments van de Inhoud uit te voeren, met elke vraag die volgens een specifiek modeltype is.
+Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunnen toepassingen (complexe) query&#39;s uitvoeren op uw Content Fragments, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 

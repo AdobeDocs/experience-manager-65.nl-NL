@@ -1,8 +1,8 @@
 ---
 title: AEM Forms verbinden met Adobe LiveCycle
-seo-title: AEM Forms verbinden met Adobe LiveCycle
+seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: Met AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM apps en workflows.
-seo-description: Met AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM apps en workflows.
+seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Met de Adobe Experience Manager (AEM) LiveCycle-aansluiting kunt u Adobe LiveCyc
 
 ## AEM server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle Connector is onderdeel van het [AEM Forms add-on pakket](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-invoegpakket hebt geïnstalleerd, voert u de volgende stappen uit om gegevens van de LiveCycle-server toe te voegen aan AEM webconsole.
+AEM LiveCycle Connector maakt deel uit van de [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-invoegpakket hebt geïnstalleerd, voert u de volgende stappen uit om gegevens van de LiveCycle-server toe te voegen aan AEM webconsole.
 
 1. Zoek in AEM configuratiebeheer van de webconsole de configuratiecomponent van de Adobe LiveCycle Client SDK.
 1. Klik op de component om de URL van de configuratieserver, de gebruikersnaam en het wachtwoord te bewerken.
@@ -31,7 +31,7 @@ AEM LiveCycle Connector is onderdeel van het [AEM Forms add-on pakket](/help/for
 
 Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 
-* **Server URL**  - Geeft URL aan naar de LiveCycle server. Als u wilt dat LiveCycle en AEM communiceren via https, start u AEM met de volgende JVM
+* **Server-URL** - Geeft de URL naar de LiveCycle-server op. Als u wilt dat LiveCycle en AEM communiceren via https, start u AEM met de volgende JVM
 
    ```java
    argument
@@ -40,13 +40,13 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 
    optie.
 
-* **Gebruikersnaam** - Geeft de gebruikersnaam op van de account die wordt gebruikt om communicatie tussen AEM en LiveCycle tot stand te brengen. De account is een LiveCycle-gebruikersaccount die gemachtigd is om Document Services te starten.
-* **Wachtwoord** - Geeft het wachtwoord op.
-* **De Naam**  van de dienst - specificeert de diensten die gebruikend de gebruikersgeloofsbrieven worden begonnen die in de gebieden van de Gebruikersnaam en van het Wachtwoord worden verstrekt. Standaard worden geen referenties doorgegeven bij het starten van LiveCycle-services.
+* **Gebruikersnaam**- Hier geeft u de gebruikersnaam op van de account die wordt gebruikt om communicatie tot stand te brengen tussen AEM en LiveCycle. De account is een LiveCycle-gebruikersaccount die gemachtigd is om Document Services te starten.
+* **Wachtwoord**- Geeft het wachtwoord op.
+* **Servicenaam** - Geeft de services aan die worden gestart met de gebruikersgegevens in de velden Gebruikersnaam en Wachtwoord. Standaard worden geen referenties doorgegeven bij het starten van LiveCycle-services.
 
 ## Documentservices starten {#starting-document-services}
 
-De toepassingen van de cliënt kunnen de diensten van LiveCycle programmatically beginnen gebruikend Java API, de Diensten van het Web, Remoting, en REST. Voor Java-clients kan de toepassing LiveCycle SDK gebruiken. De LiveCycle SDK biedt een Java API waarmee deze services op afstand kunnen worden gestart. Als u bijvoorbeeld een Microsoft Word-document naar PDF wilt converteren, start de client GeneratePDFService. De aanroepingsstroom bestaat uit de volgende stappen:
+De toepassingen van de cliënt kunnen de diensten van LiveCycle programmatically beginnen gebruikend Java API, de Diensten van het Web, Remoting, en REST. Voor Java-clients kan de toepassing LiveCycle SDK gebruiken. De LiveCycle SDK biedt een Java API waarmee deze services op afstand kunnen worden gestart. Als u bijvoorbeeld een Microsoft Word-document wilt converteren naar PDF, start de client GeneratePDFService. De aanroepingsstroom bestaat uit de volgende stappen:
 
 1. Maak een ServiceClientFactory-instantie.
 1. Elke service biedt een clientklasse. Om de dienst te beginnen, creeer een cliëntgeval van de dienst.
@@ -54,7 +54,7 @@ De toepassingen van de cliënt kunnen de diensten van LiveCycle programmatically
 
 AEM de Schakelaar van de LiveCycle vereenvoudigt de stroom door deze cliëntinstanties als diensten bloot te stellen OSGi die kunnen worden betreden gebruikend standaardOSGi middelen. De aansluiting LiveCycle biedt de volgende functies:
 
-* Clientinstanties als OSGi Service: De clients die als OSGI-bundels zijn verpakt, worden vermeld in de sectie [Document Services list](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
+* Clientinstanties als OSGi Service: De clients die als OSGI-bundels zijn verpakt, worden vermeld in de [Lijst met Document Services](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) sectie. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
 * Doorgave gebruikersreferenties: De verbindingsgegevens die nodig zijn om verbinding te maken met de LiveCycle-server worden centraal beheerd.
 * ServiceClientFactory Service: Om de processen te beginnen, kan de cliënttoepassing tot de instantie toegang hebben ServiceClientFactory.
 
@@ -82,7 +82,7 @@ Om de blootgestelde dienst van binnen AEM te beginnen, voer de volgende stappen 
    </dependency>
    ```
 
-   Om de dienst te beginnen, voeg overeenkomstig Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [Lijst van de Dienst van het Document](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Voeg bijvoorbeeld voor de service PDF genereren de volgende afhankelijkheid toe:
+   Om de dienst te beginnen, voeg overeenkomstig Geweven gebiedsdeel voor de dienst toe. Voor de lijst van gebiedsdelen, zie [Lijst met documentservices](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p). Bijvoorbeeld, voor de Generate dienst van de PDF voegt de volgende gebiedsdeel toe:
 
    ```xml
    <dependency>
@@ -116,7 +116,7 @@ Om de blootgestelde dienst van binnen AEM te beginnen, voer de volgende stappen 
                );
    ```
 
-   Met het bovenstaande codefragment wordt de createPDF API van GeneratePDFServiceClient gestart om een document naar PDF te converteren. U kunt gelijkaardige aanroeping in JSP uitvoeren gebruikend de volgende code. Het belangrijkste verschil is het volgende codegebruik Sling ScriptHelper om tot GeneratePdfServiceClient toegang te hebben.
+   Met het bovenstaande codefragment wordt de createPDF API van GeneratePdfServiceClient gestart om een document naar PDF te converteren. U kunt gelijkaardige aanroeping in JSP uitvoeren gebruikend de volgende code. Het belangrijkste verschil is het volgende codegebruik Sling ScriptHelper om tot GeneratePdfServiceClient toegang te hebben.
 
    ```jsp
    <%@ page import="com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient" %>

@@ -9,7 +9,7 @@ discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
 source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '42'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Met ingang van 31 januari 2014 is het DHTML-viewerplatform officieel levenseinde.
 
-Zie de [Referentiehandleiding voor Dynamic Media-viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) voor de meest recente ondersteunde viewers.
+Zie de [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) voor de meest recente ondersteunde viewers.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

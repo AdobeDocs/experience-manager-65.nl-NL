@@ -1,8 +1,8 @@
 ---
 title: Toegang tot documenten die met een beleid zijn beveiligd beheren
-seo-title: Toegang tot documenten die met een beleid zijn beveiligd beheren
+seo-title: Controlling access to policy-protected documents
 description: Zie hoe u de toegang tot documenten die met een beleid zijn beveiligd, kunt weergeven, beheren en beheren.
-seo-description: Zie hoe u de toegang tot documenten die met een beleid zijn beveiligd, kunt weergeven, beheren en beheren.
+seo-description: See how you can view, manage and control the access to your policy-protected documents.
 uuid: 2d9f95e9-e4ee-47e2-988e-a191d1d1d264
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,15 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2190'
+source-wordcount: '2169'
 ht-degree: 0%
 
 ---
 
-
-# Toegang tot documenten die met een beleid zijn beveiligd {#controlling-access-to-policy-protected-documents} beheren
+# Toegang tot documenten die met een beleid zijn beveiligd beheren {#controlling-access-to-policy-protected-documents}
 
 U kunt de manier controleren waarin de ontvangers uw beleid-beschermde documenten gebruiken ongeacht hoe wijd u hen verspreidt.
 
@@ -35,7 +34,7 @@ Wanneer een document door een beleid wordt beschermd en u toegangsvoorrechten in
 * Als het document online is, worden de wijzigingen direct toegepast, tenzij het document voor de gebruiker is geopend. In dit geval moet de gebruiker het document sluiten voordat de wijzigingen van kracht worden.
 * Als een ontvanger het document offline gebruikt (bijvoorbeeld op een laptop), worden de wijzigingen van kracht wanneer de ontvanger opnieuw synchroniseert met documentbeveiliging door een document te openen dat met een beleid is beveiligd.
 
-## Informatie weergeven over een document {#view-information-about-a-document}
+## Informatie over een document weergeven {#view-information-about-a-document}
 
 Voor elk document dat op de pagina Documenten wordt weergegeven, ziet u de documentnaam, de uitgeversnaam, de beleidsnaam en de datum waarop het document is beveiligd. Als het beleid dat een document beschermde is geschrapt, beleidsidentiteitskaart is vermeld onder de Naam van het Beleid.
 
@@ -43,30 +42,30 @@ U kunt ook meer details, die hieronder worden beschreven, weergeven over een bep
 
 >[!NOTE]
 >
->U moet de verbinding van de Naam van het Beleid op de pagina van het Detail van het Document gebruiken om tot beleid toegang te hebben dat auto-geproduceerd in Microsoft Outlook voor ontvangers van een document is dat aan een e-mailbericht in bijlage is. Dit beleid wordt niet weergegeven op de pagina met beleidsregels.
+>U moet de verbinding van de Naam van het Beleid op de pagina van het Detail van het Document gebruiken om tot beleid toegang te hebben dat in Microsoft Outlook voor ontvangers van een document auto-geproduceerd is dat aan een e-mailbericht in bijlage is. Dit beleid wordt niet weergegeven op de pagina met beleidsregels.
 
-**Documentnaam:** de naam van het geselecteerde document.
+**Documentnaam:** De naam van het geselecteerde document.
 
-**Document-id:** een unieke id die door de documentbeveiliging wordt toegewezen wanneer een beleid op het document wordt toegepast. In documentbeveiliging wordt dit nummer gebruikt om het document bij te houden.
+**Document-id:** Een unieke id die door de documentbeveiliging wordt toegewezen wanneer een beleid op het document wordt toegepast. In documentbeveiliging wordt dit nummer gebruikt om het document bij te houden.
 
-**Documentstatus:** status van het document (bijvoorbeeld actief of ingetrokken)
+**Documentstatus:** Status van het document (bijvoorbeeld actief of ingetrokken)
 
 **Uitgever:** Naam van de gebruiker die het beleid aan het document vastmaakte.
 
-**Beleidsnaam:** de naam van het beleid waarmee het document wordt beveiligd. U kunt op de naam klikken om het beleid te openen. U moet deze koppeling gebruiken om toegang te krijgen tot beleid dat Acrobat genereert voor ontvangers van een document dat in Outlook is gekoppeld aan een e-mailbericht. Dit beleid wordt niet weergegeven op de pagina Beleid.
+**Beleidsnaam:** De naam van het beleid waarmee het document wordt beveiligd. U kunt op de naam klikken om het beleid te openen. U moet deze koppeling gebruiken om toegang te krijgen tot beleid dat Acrobat genereert voor ontvangers van een document dat in Outlook is gekoppeld aan een e-mailbericht. Dit beleid wordt niet weergegeven op de pagina Beleid.
 
-**Beleidstype:** het type beleid dat is toegepast op het document.
+**Beleidstype:** Het type beleid dat is toegepast op het document.
 
-**Datum van publicatie:** de datum waarop het beleid is toegepast op het document.
+**Gepubliceerd op:** De datum waarop het beleid is toegepast op het document.
 
-**Verwante herhalingen:** Als het document verwante herhalingen heeft, wordt dit item ook weergegeven in de lijst. Klik op de koppeling om de lijst met verwante herhalingen voor het document weer te geven.
+**Verwante herhalingen:** Als het document verwante herhalingen heeft, wordt dit item ook in de lijst weergegeven. Klik op de koppeling om de lijst met verwante herhalingen voor het document weer te geven.
 
 Gebruikers kunnen informatie over hun beveiligde documenten bekijken. Beheerders kunnen informatie weergeven over documenten die door gebruikers zijn beveiligd met een beleid. Coördinatoren van beleidssets kunnen informatie bekijken over documenten die door beleid worden beschermd tegen hun beleidssets.
 
 1. Klik op Documenten op de pagina Documentbeveiliging.
 1. Klik in de lijst met documenten op het gewenste document. De pagina Documentdetails wordt geopend en er wordt gedetailleerde informatie over het document weergegeven. Deze pagina bevat ook opties voor het intrekken van de documenttoegang, het wijzigen van het beleid en het weergeven van gebeurtenissen die betrekking hebben op dit document.
 
-## Gerelateerde herhalingen weergeven voor een document {#view-related-iterations-for-a-document}
+## Gerelateerde herhalingen voor een document weergeven {#view-related-iterations-for-a-document}
 
 Als het bijhouden van verwante herhalingen is ingeschakeld, kunt u versies bijhouden van een document dat door verschillende gebruikers is opgeslagen. Deze functie wordt alleen ondersteund door bepaalde toepassingen, zoals PTC Pro/ENGINEER Wildfire.
 
@@ -74,26 +73,26 @@ Deze functie is handig wanneer meerdere gebruikers samenwerken en verschillende 
 
 Als deze functie is ingeschakeld, kunt u de verwante versies van een document bekijken vanaf de pagina Documenten.
 
-1. Bekijk de pagina Documentdetails voor een document. (Zie [Informatie weergeven over een document](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
+1. Bekijk de pagina Documentdetails voor een document. (Zie [Informatie over een document weergeven](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
 1. Klik op Verwante herhalingen weergeven. De optie is alleen beschikbaar als de functie is ingeschakeld. De lijst met verwante herhalingen wordt weergegeven. Voor elke herhaling kunt u de volgende informatie weergeven:
 
-   * **Iteratie:** de bestandsnaam. De naam kan verschillen van de oorspronkelijke bestandsnaam en er wordt een versienummer aan het einde van de naam toegevoegd.
+   * **Herhaling:** De bestandsnaam. De naam kan verschillen van de oorspronkelijke bestandsnaam en er wordt een versienummer aan het einde van de naam toegevoegd.
    * **Uitgever:** De uitgever van het oorspronkelijke document.
-   * **Gemaakt door:** de gebruiker die de iteratie heeft opgeslagen.
-   * **Gemaakt op:** de datum en tijd waarop de herhaling is opgeslagen.
-   * **Beleid:** het beleid dat de herhaling beschermt. Verschillende herhalingen kunnen door verschillende beleidsregels worden beschermd.
+   * **Gemaakt door:** De gebruiker die de iteratie heeft opgeslagen.
+   * **Gemaakt op:** De datum en tijd waarop de herhaling is opgeslagen.
+   * **Beleid:** Het beleid dat de herhaling beschermt. Verschillende herhalingen kunnen door verschillende beleidsregels worden beschermd.
 
 1. Als u de pagina Documentdetails voor die herhaling wilt weergeven, klikt u op de bestandsnaam van een herhaling.
 
-## Toegang tot documenten {#revoking-and-reinstating-access-to-documents} intrekken en opnieuw instellen
+## Toegang tot documenten intrekken en opnieuw instellen {#revoking-and-reinstating-access-to-documents}
 
 U kunt de toegang tot documenten die met een beleid zijn beveiligd, intrekken en opnieuw instellen:
 
-**Gebruikers:** kunnen toegang tot documenten intrekken of herstellen die ze beveiligen met hun eigen persoonlijke beleid of met gedeeld beleid waarvoor de intrekkingsmogelijkheid is ingeschakeld voor de gebruiker die het beleid toepast. Gebruikers die de toegang tot een document niet kunnen intrekken of van beleid kunnen veranderen, moeten contact opnemen met de beheerder.
+**Gebruikers:** Kan toegang tot documenten intrekken of herstellen die ze beschermen met hun eigen persoonlijke beleid of met gedeeld beleid waarvoor de intrekkingsmogelijkheid is ingeschakeld voor de gebruiker die het beleid toepast. Gebruikers die de toegang tot een document niet kunnen intrekken of van beleid kunnen veranderen, moeten contact opnemen met de beheerder.
 
-**Beheerders:** kunnen toegangsrechten voor elk document dat met een beleid is beveiligd, intrekken of opnieuw instellen, inclusief rechten die zijn beveiligd door persoonlijk of gedeeld beleid. Als een beheerder de toegang tot een document herroept dat met een gedeeld beleid wordt beveiligd, kan alleen een beheerder de toegangsrechten voor dat document opnieuw instellen.
+**Beheerders:** Kan toegangsrechten voor elk document dat met een beleid is beveiligd, intrekken of opnieuw instellen, inclusief documenten die zijn beveiligd door een persoonlijk of gedeeld beleid. Als een beheerder de toegang tot een document herroept dat met een gedeeld beleid wordt beveiligd, kan alleen een beheerder de toegangsrechten voor dat document opnieuw instellen.
 
-**Beleidssetcoördinatoren:** kan toegangsrechten voor documenten die door beleidsregels worden beveiligd, intrekken of opnieuw instellen.
+**Beleidssetcoördinatoren:** Kan toegangsrechten intrekken of opnieuw instellen voor documenten die door beleidsregels worden beveiligd.
 
 Wanneer u toegangsrechten voor documenten intrekt of weer instelt, wordt de wijziging op de volgende tijdstippen van kracht:
 
@@ -107,8 +106,8 @@ Wanneer u toegangsrechten voor documenten intrekt of weer instelt, wordt de wijz
 1. Schakel het selectievakje naast het desbetreffende document in en klik op Intrekken. U kunt de toegang tot meerdere documenten tegelijk intrekken.
 1. Selecteer een bericht om weer te geven aan gebruikers die proberen het document te openen nadat het is ingetrokken:
 
-   * **Algemeen bericht:** geeft aan dat de auteur het document heeft ingetrokken
-   * **Document beëindigd:** geeft aan dat de auteur het document heeft beëindigd
+   * **Algemeen bericht:** Geeft aan dat de auteur het document heeft ingetrokken
+   * **Document beëindigd:** Geeft aan dat de auteur het document heeft afgesloten
    * **Document herzien**: Geeft aan dat de auteur het document heeft herzien
 
 1. (Optioneel) Als er een nieuwere versie van het document beschikbaar is, voert u de URL in en klikt u op Testen om de URL te controleren.
@@ -120,7 +119,7 @@ Wanneer u toegangsrechten voor documenten intrekt of weer instelt, wordt de wijz
 1. Klik in de lijst met documenten op het gewenste document.
 1. Klik op Verwijderen en vervolgens op OK.
 
-## Van beleid wisselen dat op een document {#switch-a-policy-that-is-applied-to-a-document} wordt toegepast
+## Een ander beleid toepassen op een document {#switch-a-policy-that-is-applied-to-a-document}
 
 De gebruikers, de coördinatoren van de beleidsreeks, en de beheerders kunnen het beleid schakelen dat op een beleid-beschermd document wordt toegepast (u kunt slechts één beleid tegelijkertijd op een document toepassen). De gebruikers kunnen beleid schakelen dat op hun eigen beleid-beschermde documenten wordt toegepast als zij het beleid creeerden of als het beleid gedeelde is die deze toegelaten capaciteit heeft. Anders, moet de beheerder of de coördinator van de beleidsreeks het beleid schakelen. Beheerders kunnen van beleid wisselen voor documenten die met een beleid zijn beveiligd. Coördinatoren van beleidssets kunnen van hun beleidsreeksen overschakelen.
 
@@ -141,23 +140,23 @@ Wanneer u een beleid schakelt, wordt het nieuwe beleid als volgt afgedwongen:
 1. Klik op een nieuw beleid in de lijst.
 1. Klik op Beleid wisselen en klik vervolgens op OK om terug te keren naar de pagina Documenten.
 
-## Document {#search-for-a-document} zoeken
+## Zoeken naar een document {#search-for-a-document}
 
 U kunt naar documenten op de pagina van Documenten zoeken door een combinatie criteria van het datumbereik en de onderzoekscriteria te gebruiken die in de lijst beschikbaar zijn. Deze criteria zijn onder andere de documentnaam, de beleidsnaam of alle documenten.
 
 Enkele aanvullende zoekopties zijn alleen beschikbaar voor beheerders:
 
-**Document-id:** uniek id-nummer dat door de documentbeveiliging aan het document wordt toegewezen wanneer het beleid wordt toegepast.
+**Document-id:** Het unieke id-nummer dat door de documentbeveiliging aan het document wordt toegewezen wanneer het beleid wordt toegepast.
 
 **Documentnaam:** Naam van het document.
 
 **Naam uitgever:** Naam van de gebruiker die het beleid aan het document vastmaakte. U kunt de gebruiker uit alle domeinen of een gespecificeerd domein selecteren.
 
-**Beleid-id:** id-nummer van het beleid dat aan het document is gekoppeld.
+**Beleid-id:** Id-nummer van het beleid dat aan het document is gekoppeld.
 
-**Beleidsnaam:** naam van het beleid dat aan het document is gekoppeld.
+**Beleidsnaam:** Naam van het beleid dat aan het document is verbonden.
 
-**Alle documenten:** alle documenten die zijn beveiligd door beheerders en gebruikers. Als u de optie Alle documenten gebruikt om te zoeken, wordt mogelijk een lange lijst met documenten geretourneerd.
+**Alle documenten:** Alle documenten die zijn beveiligd door beheerders en gebruikers. Als u de optie Alle documenten gebruikt om te zoeken, wordt mogelijk een lange lijst met documenten geretourneerd.
 
 1. Klik op Documenten op de pagina Documentbeveiliging.
 1. Selecteer de vereiste zoekcriteria in de lijst Zoeken.
@@ -175,7 +174,7 @@ Enkele aanvullende zoekopties zijn alleen beschikbaar voor beheerders:
 
 1. Klik op Zoeken.
 
-## Documentlijst {#sort-the-document-list} sorteren
+## De documentlijst sorteren {#sort-the-document-list}
 
 U kunt de lijst met documenten sorteren op kolomkop. De driehoekspictogrammen naast de kolomkop geven aan welke kolom momenteel wordt gebruikt om te sorteren. Een naar boven wijzend driehoekje geeft de oplopende volgorde aan, terwijl een naar beneden wijzend driehoekje de aflopende volgorde aangeeft.
 
@@ -197,12 +196,12 @@ Met de ondersteuning Pagina 0 (Omsluitend document) kunnen niet-Adobe PDF-viewer
 
 Gebruik de volgende processen in Workbench:
 
-**Protect-document met omslagpagina:** beveiligt een PDF-document met het opgegeven beleid en voegt een omslagpagina toe aan het document
+**Protect-document met omslagpagina:** Hiermee wordt een PDF-document beveiligd met het opgegeven beleid en wordt een omslagpagina aan het document toegevoegd
 
-**Beveiligd document extraheren:** Extraheert het met beleid beveiligde PDF-document uit het PDF-document met omslagpagina
+**Beveiligd document extraheren:** Extraheert het met beleid beveiligde PDF-document uit het PDF-document met de omslagpagina
 
 Gebruik de volgende API&#39;s voor documentbeveiliging:
 
-**protectDocumentWithCoverPage:** beveiligt een bepaalde PDF met het gespecificeerde beleid, en keert een document met een omslagpagina en het beschermde document als gehechtheid 
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument terug:** Extraheert het beschermde document dat een gehechtheid in het document met omslagpagina is. Het document met de omslagpagina kan worden gemaakt met de methode protectDocumentWithCoverPage
+**protectDocumentWithCoverPage:** Hiermee wordt een bepaalde PDF beveiligd met het opgegeven beleid en wordt een document met een omslagpagina en het beveiligde document als bijlage geretourneerd
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument:** Extraheert het beveiligde document, dat een bijlage is in het document met de omslagpagina. Het document met de omslagpagina kan worden gemaakt met de methode protectDocumentWithCoverPage
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

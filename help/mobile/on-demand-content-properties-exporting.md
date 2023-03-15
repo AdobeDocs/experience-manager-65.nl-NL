@@ -1,36 +1,35 @@
 ---
 title: Inhoud-eigenschappen gebruiken om inhoud te exporteren
-seo-title: Inhoud-eigenschappen gebruiken om inhoud te exporteren
+seo-title: Using Content Properties to Export Content
 description: Op de volgende pagina worden App-eigenschappen en -knooppunten weergegeven.
-seo-description: Op de volgende pagina worden App-eigenschappen en -knooppunten weergegeven.
+seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '330'
 ht-degree: 1%
 
 ---
-
 
 # Inhoud-eigenschappen gebruiken om inhoud te exporteren{#using-content-properties-to-export-content}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Apps worden vertegenwoordigd als *cq:Pages* in AEM.
+Apps worden weergegeven als *cq:pagina&#39;s* in AEM.
 
-Zij delen de zelfde gemeenschappelijke eigenschappen die in om het even welke *cq worden gevonden:Pagina* naast hieronder getoonde anderen die integratie ondersteunende eigenschappen vertegenwoordigen.
+Ze delen dezelfde gemeenschappelijke eigenschappen die in *cq:pagina* naast de hieronder getoonde andere die integratie ondersteunende eigenschappen vertegenwoordigen.
 
-## Toepassingseigenschappen {#app-properties}
+## App-eigenschappen {#app-properties}
 
-In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
+De volgende tabel toont **Eigenschappen en knooppunten van app**.
 
 <table>
  <tbody>
@@ -82,12 +81,12 @@ In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
   <tr>
    <td>sling:resourceType</td>
    <td>String:Path</td>
-   <td><p>Pad naar een cq:Component die <i>mobileapps/core/components/instance is of uitbreidt.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
+   <td><p>Pad naar cq:Component die is of is uitgebreid <i>mobiele apps/core/components/instance.</i></p> <p>Dit biedt de aanwezigheid en rendering in de Apps Catalog.</p> </td>
   </tr>
  </tbody>
 </table>
 
-U kunt ***Inhoudseigenschappen*** gebruiken om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
+U kunt ***Eigenschappen van inhoud*** om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
 
 * [Eigenschappen van inhoud](/help/mobile/content-properties.md)
 * [Artikel-exportconfiguratie maken](/help/mobile/creating-article-export-configuration.md)

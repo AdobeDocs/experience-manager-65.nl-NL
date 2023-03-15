@@ -1,24 +1,23 @@
 ---
 title: Vervolgkeuzelijsten dynamisch vullen
-seo-title: Vervolgkeuzelijsten dynamisch vullen
+seo-title: Dynamically populating drop-down lists
 description: Procedure voor het dynamisch vullen van vervolgkeuzelijsten op basis van logica
-seo-description: Procedure voor het dynamisch vullen van vervolgkeuzelijsten op basis van logica
+seo-description: Procedure to dynamically populate drop-down lists based on some logic
 uuid: b3408aee-ac24-43af-a380-a5892abf0248
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: ad6db3fd-0d26-4241-bf73-be74b7f6e509
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
-
-# Vervolgkeuzelijsten {#dynamically-populating-drop-down-lists} dynamisch vullen
+# Vervolgkeuzelijsten dynamisch vullen {#dynamically-populating-drop-down-lists}
 
 ## Vereisten {#prerequisites}
 
@@ -29,7 +28,7 @@ ht-degree: 0%
 
 ## Procedure voor het dynamisch vullen van vervolgkeuzelijsten {#procedure-to-dynamically-populate-drop-down-lists}
 
-Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een waarde wordt gebaseerd die u in **Land** drop-down lijst selecteert. Als u Australië in **Land** drop-down lijst selecteert, **Staat** toont de staten binnen Australië. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
+Overweeg een scenario waar u wilt bevolken **Staat** vervolgkeuzelijst gebaseerd op een waarde die u in het dialoogvenster **Land** vervolgkeuzelijst. Als u Australië selecteert in het dialoogvenster **Land** vervolgkeuzelijst, de **Staat** in de vervolgkeuzelijst worden de staten in Australië weergegeven. De volgende procedure beschrijft hoe te om deze taak te verwezenlijken.
 
 1. Creeer een project met de volgende modules:
 
@@ -147,7 +146,7 @@ Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een 
    }
    ```
 
-1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan de parameter waarnaar het knooppunt verwijst (/apps/populatedropdown).
+1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de `sling:resourceType` parameter voor het knooppunt is dezelfde als die waaraan de servlet-punten (/apps/populatedropdown) wijzen.
 
    ![Een vervolgkeuzelijst maken](assets/dropdown-node.png)
 
@@ -156,7 +155,7 @@ Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een 
 
    Voeg de namen van de landen toe die u wilt weergeven in de lijst Land. Voeg in de lijst Staat een script toe om het te vullen op basis van de naam van het land in de lijst Land.
 
-   ![Landnamen ](assets/country-dropdown.png) ![toevoegenScript toevoegen om ](assets/state-dropdown.png) ![statusnamenLand en Staat te vullen vervolgkeuzelijsten om te verzamelen](assets/2dropdowns.png)
+   ![Landnamen toevoegen](assets/country-dropdown.png) ![Script toevoegen om statusnamen te vullen](assets/state-dropdown.png) ![Vervolgkeuzelijsten voor landen en staten](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

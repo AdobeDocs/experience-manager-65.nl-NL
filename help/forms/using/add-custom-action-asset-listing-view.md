@@ -1,8 +1,8 @@
 ---
 title: Aangepaste actie toevoegen aan de weergave Lijst met activa
-seo-title: Aangepaste actie toevoegen aan de weergave Lijst met activa
+seo-title: Add custom action to the Asset Listing view
 description: In dit artikel wordt uitgelegd hoe u aangepaste handelingen kunt toevoegen aan de weergave Lijst met activa
-seo-description: In dit artikel wordt uitgelegd hoe u aangepaste handelingen kunt toevoegen aan de weergave Lijst met activa
+seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,13 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1360'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste actie toevoegen aan de weergave Lijst met activa{#add-custom-action-to-the-asset-listing-view}
 
@@ -30,7 +29,7 @@ U kunt een aangepaste actie toevoegen aan de weergave Lijst met middelen voor:
 * Een of meer elementtypen of letters
 * Uitvoering (handeling/opdracht wordt actief) bij selectie van afzonderlijke, meerdere elementen/letters of zonder selectie
 
-Deze aanpassing wordt geïllustreerd met het scenario waarin de opdracht Vlakke PDF downloaden wordt toegevoegd aan de weergave Lijst met activa voor letters. Met dit aanpassingsscenario kunnen gebruikers één PDF-bestand met één geselecteerde letter downloaden.
+Deze aanpassing wordt getoond met het scenario dat een bevel &quot;PDF van de Download Flat&quot;aan de mening van de Lijst van Activa voor Letters toevoegt. Met dit aanpassingsscenario kunnen uw gebruikers één PDF van één geselecteerde letter downloaden.
 
 ### Vereisten {#prerequisites}
 
@@ -40,17 +39,17 @@ Om het volgende scenario of gelijkaardige te voltooien, vereist u kennis van:
 * JavaScript
 * Java
 
-## Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter {#addcommandtoletters} te downloaden
+## Scenario: Voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden {#addcommandtoletters}
 
-In de onderstaande stappen voegt u de opdracht Vlakke PDF downloaden toe aan de weergave Lijst met activa voor letters en stelt u uw gebruikers in staat om de platte PDF van de geselecteerde brief te downloaden. Als u deze stappen gebruikt met de juiste code en parameters, kunt u een andere functionaliteit toevoegen voor een ander element, zoals gegevenswoordenboeken of teksten.
+In de onderstaande stappen voegt u de opdracht Vlakke PDF downloaden toe aan de weergave Lijst met activa voor letters en kunt u gebruikers de platte PDF van de geselecteerde letter downloaden. Als u deze stappen gebruikt met de juiste code en parameters, kunt u een andere functionaliteit toevoegen voor een ander element, zoals gegevenswoordenboeken of teksten.
 
-Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat uw gebruikers een PDF met standaardletters kunnen downloaden:
+Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat uw gebruikers een vlakke PDF van letters kunnen downloaden:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de selectiemap en voer daarbij de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de map **items** op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de knop **items** map op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -69,27 +68,27 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
       ![Overlay-knooppunt](assets/2_createnodedownloadflatpdf.png)
 
-   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-      Klik **Alles opslaan**.
+      Klikken **Alles opslaan**.
 
 1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: downloadFlatPDF) gebruikend de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map **items** en selecteer **Maken** > **Node maken**.
+   1. Klik met de rechtermuisknop op de knop **items** map en selecteer **Maken** > **Knooppunt maken**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
       **Naam:** downloadFlatPDF (of de naam die u aan deze eigenschap wilt geven)
 
-      **tekst:** niet gestructureerd
+      **Type:** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
-   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik op **Alles opslaan**:
+   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik **Alles opslaan**:
 
       <table>
         <tbody>
@@ -106,12 +105,12 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         <tr>
         <td>stichting-collectie-actie</td>
         <td>Tekenreeks</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong></strong> typecan kan een of meer (komma's scheiden meerdere items) van de volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong>type</strong> kan een of meer (komma's scheiden meerdere vermeldingen) van het volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td>
         </tr>
         <tr>
         <td>pictogram</td>
         <td>Tekenreeks</td>
-        <td>icon-download<br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Zie <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentatie van CoralUI-pictogrammen</a> voor verschillende beschikbare pictogrammen en instellingen.<br /> </td>
+        <td>icon-download<br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Voor verschillende beschikbare pictogrammen en instellingen raadpleegt u <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentatie over CoralUI-pictogrammen</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -131,19 +130,19 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         <tr>
         <td>text</td>
         <td>Tekenreeks</td>
-        <td>Vlakke PDF downloaden (of een ander label)<br /> <br /> De opdracht die wordt weergegeven in de interface Asset Listening</td>
+        <td>Vlakke PDF downloaden (of een ander label)<br /> <br /> De opdracht die wordt weergegeven in de interface Asset Listing</td>
         </tr>
         <tr>
         <td>title</td>
         <td>Tekenreeks</td>
-        <td>Download een vlakke PDF van de geselecteerde brief (of een andere etiket/alt tekst)<br /> <br /> De titel is de alt tekst die de Managementvertoningen van de Correspondentie wanneer de gebruiker over het douanebevel beweegt.</td>
+        <td>Een vlakke PDF van de geselecteerde letter downloaden (of een andere label/Alt-tekst)<br /> <br /> De titel is de alt tekst die het Beheer van de Correspondentie toont wanneer de gebruiker over het douanebevel beweegt.</td>
         </tr>
         </tbody>
        </table>
 
 1. Maak in de map apps een map met de naam js met een pad/structuur die lijkt op de map met items in de map admin met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map **js** op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de knop **js** map op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -153,13 +152,13 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
-   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps. Klik **Alles opslaan**.
+   1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps. Klikken **Alles opslaan**.
 
 1. Maak in de map js een bestand met de naam formaction.js met de code voor de afhandeling van handelingen van de knop door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op de map **js** op het volgende pad en selecteer **Maken > Bestand maken**:
+   1. Klik met de rechtermuisknop op de knop **js** map op het volgende pad en selecteer **Maken > Bestand maken**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -233,31 +232,31 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de map met actionhandlers. Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de map **items** op het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de knop **items** map op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/gui/content/commons/actionhandlers/items/
+      **Pad:** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
-   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik **Alles opslaan**.
+   1. Klikken **Alles opslaan**.
 
 1. Voeg onder het nieuwe knooppunt Items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: letterpdfdownloader) met behulp van de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken > Knooppunt maken**.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken > knooppunt maken**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
-      **Naam:** letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven - moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
+      **Naam:** letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven) moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
 
-      **tekst:** niet gestructureerd
+      **Type:** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
@@ -271,18 +270,18 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Klik met de rechtermuisknop op de map **admin** op het volgende pad en selecteer **Maken > Bestand maken**:
+   1. Klik met de rechtermuisknop op de knop **beheerder** map op het volgende pad en selecteer **Maken > Bestand maken**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Geef het bestand een naam als POST.jsp. (De bestandsnaam moet alleen POST.jsp zijn.)
 
-   1. Dubbelklik op het bestand **POST.jsp** om dit te openen in CRX.
-   1. Voeg de volgende code aan POST.jsp- dossier toe en klik **sparen allen**:
+   1. Dubbelklik op de knop **POST.jsp** bestand openen in CRX.
+   1. Voeg de volgende code aan POST.jsp- dossier toe en klik **Alles opslaan**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie over AEM Forms API&#39;s.
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie voor meer informatie over AEM Forms API&#39;s [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
 
-      Zie AEM [Componenten](/help/sites-developing/components.md) voor meer informatie over AEM bibliotheken.
+      Zie AEM voor meer informatie over AEM bibliotheken [Componenten](/help/sites-developing/components.md).
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */
@@ -351,25 +350,24 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 ## Vlakke PDF van een letter downloaden met de aangepaste functionaliteit {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie PDF van de brief te downloaden u uitgezocht:
+Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie van de PDF van de brief te downloaden u selecteert:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/projects.html` en meld u aan.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/projects.html` en aanmelden.
 
-1. Selecteer **Forms > Letters**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
-1. Klik **Select** en klik dan een brief om het te selecteren.
-1. Selecteer **Meer** > **&lt;Alleen gedownloade PDF>** (De aangepaste functionaliteit die is gemaakt met de instructies in dit artikel). Het dialoogvenster Letter downloaden als PDF wordt geopend.
+1. Selecteren **Forms > Letters**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
+1. Klikken **Selecteren** en klik vervolgens op een letter om deze te selecteren.
+1. Selecteren **Meer** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** (De aangepaste functionaliteit die is gemaakt met behulp van de instructies in dit artikel.) Het dialoogvenster Letter downloaden als PDF wordt weergegeven.
 
-   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die is gemaakt in [Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter te downloaden.](#addcommandtoletters)
+   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die is gemaakt in [Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte versie van een PDF van een letter te downloaden.](#addcommandtoletters)
 
    ![Aangepaste functionaliteit: Vlakke PDF downloaden](assets/5_downloadflatpdf.png)
 
-1. Selecteer in het dialoogvenster Letter downloaden als PDF de relevante XML waaruit u de gegevens in de PDF wilt invullen.
+1. Selecteer in het dialoogvenster Letter downloaden als PDF de XML waaruit u de gegevens in de PDF wilt vullen.
 
    >[!NOTE]
    >
-   >Voordat u de brief als een vlakke PDF downloadt, kunt u het XML-bestand met de gegevens in de brief maken met de optie **Rapport maken**.
+   >Voordat u de letter downloadt als platte PDF, kunt u het XML-bestand met de gegevens in de letter maken met de **Rapport maken** optie.
 
    ![Letter downloaden als PDF](assets/6_downloadflatpdf.png)
 
    De brief wordt gedownload aan uw computer als vlakke PDF.
-

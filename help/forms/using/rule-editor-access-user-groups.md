@@ -1,8 +1,8 @@
 ---
 title: De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen
-seo-title: De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen
+seo-title: Grant rule editor access to select user groups
 description: Verleen beperkte toegang tot regelredacteur om gebruikersgroepen te selecteren.
-seo-description: Verleen beperkte toegang tot regelredacteur om gebruikersgroepen te selecteren.
+seo-description: Grant restricted access to rule editor to select user groups.
 uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
 topic-tags: adaptive_forms, develop
@@ -10,14 +10,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
-
 
 # De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen{#grant-rule-editor-access-to-select-user-groups}
 
@@ -25,21 +24,21 @@ ht-degree: 0%
 
 U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptive Forms. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
 
-AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de Adaptieve montages van de Dienst van de Configuratie van Forms, kunt u [gebruikersgroepen](/help/sites-administering/security.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
+AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](/help/sites-administering/security.md) die tot regelredacteur kunnen bekijken en toegang hebben.
 
-## Specificeer gebruikersgroepen die tot regelredacteur {#specify-user-groups-that-can-access-rule-editor} kunnen toegang hebben
+## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. Klik in de auteurinstantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Extra ![hammer](assets/hammer.png) > Bewerkingen > Webconsole. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteurinstantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer.png) > Bewerkingen > Webconsole. De webconsole wordt in een nieuw venster geopend.
 
    ![1-2](assets/1-2.png)
 
-1. Zoek en klik op **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** in het venster Webconsole. **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** wordt weergegeven. Wijzig geen waarde en klik op **Opslaan**.
+1. Zoek en klik in het venster Webconsole op **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]**. **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** wordt weergegeven. Wijzig geen waarde en klik op **Opslaan**.
 
    Het leidt tot een dossier /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config in CRX-bewaarplaats.
 
 1. Meld u als beheerder aan bij CRXDE. Open het bestand /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config voor bewerking.
-1. Gebruik het volgende bezit om de naam van een groep te specificeren die tot regelredacteur (bijvoorbeeld, RuleEditorsUserGroup) kan toegang hebben en **sparen allen** klikken.
+1. Gebruik het volgende bezit om de naam van een groep te specificeren die tot regelredacteur (bijvoorbeeld, RuleEditorsUserGroup) kan toegang hebben en klik **Alles opslaan**.
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
@@ -49,7 +48,7 @@ AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te bepe
 
    ![Gebruiker maken](assets/create_user_new.png)
 
-   Nu, wanneer een gebruiker die geen deel van een gespecificeerde gebruikersgroep (hier RuleEditorsUserGroup) uitmaakt een gebied tikt, is het Edit pictogram van de Regel ( ![edit-rules1](assets/edit-rules1.png)) niet beschikbaar voor haar in de componententoolbar:
+   Nu, wanneer een gebruiker die geen deel van een gespecificeerde gebruikersgroep (hier RuleEditorsUserGroup) uitmaakt een gebied tikt, geeft het Edit pictogram van de Regel ( ![edit-rules1](assets/edit-rules1.png)) is niet beschikbaar voor haar op de componentenwerkbalk:
 
    ![componentstoolbarwither](assets/componentstoolbarwithre.png)
 
@@ -59,5 +58,4 @@ AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te bepe
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies bij het toevoegen van gebruikers aan groepen, zie [Gebruikersbeheer en Veiligheid](/help/sites-administering/security.md).
-
+   Voor instructies over het toevoegen van gebruikers aan groepen raadpleegt u [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md).

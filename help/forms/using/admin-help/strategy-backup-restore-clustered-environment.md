@@ -1,22 +1,21 @@
 ---
 title: Strategie voor back-up en herstel in een geclusterde omgeving
-seo-title: Strategie voor back-up en herstel in een geclusterde omgeving
+seo-title: Strategy for backup and restore in a clustered environment
 description: Als in de implementatie van uw AEM aanvullende aangepaste gegevens worden opgeslagen in een andere database, moet u een strategie implementeren voor het maken van back-ups van deze gegevens, zodat deze consistent blijven met de AEM formuliergegevens.
-seo-description: Als in de implementatie van uw AEM aanvullende aangepaste gegevens worden opgeslagen in een andere database, moet u een strategie implementeren voor het maken van back-ups van deze gegevens, zodat deze consistent blijven met de AEM formuliergegevens.
+seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
-translation-type: tm+mt
-source-git-commit: b703c59d7d913fc890c713c6e49e7d89211fd998
+exl-id: 98c96349-f253-475f-b646-352269814a38
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1476'
 ht-degree: 0%
 
 ---
-
 
 # Strategie voor back-up en herstel in een geclusterde omgeving {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
@@ -34,7 +33,7 @@ U moet een back-up maken van de volgende onderdelen van het AEM om te herstellen
 >
 >U moet een back-up maken van alle andere gegevens die door de instelling van AEM worden gebruikt, zoals lettertypen van de klant, verbindingsgegevens enzovoort.
 
-## Back-up maken van een geclusterde omgeving {#back-up-a-clustered-environment}
+## Een back-up maken van een geclusterde omgeving {#back-up-a-clustered-environment}
 
 Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM vormen gegroepeerde milieu:
 
@@ -45,7 +44,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 
 ### Offline back-up met downtime {#offline-backup-with-downtime}
 
-1. Sluit de volledige cluster en de verwante diensten. (zie [Services starten en stoppen](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Sluit de volledige cluster en de verwante diensten. (zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up van AEM opslagplaats offline te maken:
 
@@ -53,7 +52,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van de opslagplaats/systeem-id van elk clusterknooppunt afzonderlijk.
 
-   Zie [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html) voor gedetailleerde stappen.
+   Voor gedetailleerde stappen raadpleegt u [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -64,7 +63,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 
    Merk op dat wij de het rollen reservewijze na een terugwinning moeten verlaten.
 
-1. Sluit om het even welke secundaire knopen van de cluster met betrekking tot AEM. (zie [Services starten en stoppen](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Sluit om het even welke secundaire knopen van de cluster met betrekking tot AEM. (zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up van AEM opslagplaats offline te maken:
 
@@ -72,7 +71,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
    1. Maak een back-up van alle bestanden van een secundair clusterknooppunt, inclusief submappen.
    1. Maak een back-up van repository/system.id van elk clusterknooppunt afzonderlijk.
 
-   Zie [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html) voor gedetailleerde stappen.
+   Voor gedetailleerde stappen raadpleegt u [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
@@ -83,7 +82,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 
    Let erop dat u de modus voor rolback-ups na een herstelbewerking moet verlaten.
 
-1. Sluit om het even welke secundaire knopen van de cluster met betrekking tot AEM. (zie [Services starten en stoppen](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Sluit om het even welke secundaire knopen van de cluster met betrekking tot AEM. (zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. Voor om het even welke knoop, file het gegevensbestand, GDS, en Connectors. (zie [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
 1. Voer de volgende stappen uit om een back-up van AEM opslagplaats online te maken:
 
@@ -94,7 +93,7 @@ Dit onderwerp bespreekt de volgende strategieën aan file om het even welke AEM 
 1. Maak een back-up van andere gegevens, zoals klantertypen.
 1. Start de cluster opnieuw.
 
-### Een back-up maken van het Bootstrap-eigenschappenbestand {#back-up-the-bootstrap-properties-file}
+### Een back-up maken van het eigenschappenbestand Bootstrap {#back-up-the-bootstrap-properties-file}
 
 Wanneer wij een AEM cluster creëren, wordt een bezitsdossier gecreeerd in de toepassingsserver voor alle secundaire knopen. Het wordt aanbevolen een back-up te maken van het eigenschappenbestand Bootstrap. U kunt het bestand op de volgende locatie op uw toepassingsserver vinden:
 
@@ -112,7 +111,7 @@ Voor één enkele knoopterugwinning, moet u enkel de enige knoop sluiten en de e
 
 Als de volledige cluster mislukt als gevolg van fouten zoals een crash van de database, moet u de volgende stappen uitvoeren. Herstellen is afhankelijk van de gebruikte methode voor back-up.
 
-### Eén knooppunt {#restoring-a-single-node} herstellen
+### Eén knooppunt herstellen {#restoring-a-single-node}
 
 1. Stop het corrupte knooppunt.
 
@@ -135,7 +134,7 @@ Als de volledige cluster mislukt als gevolg van fouten zoals een crash van de da
    1. Verwijder het bestand clusterNode/revision.log op het knooppunt.
    1. Verwijder de .lock op het knooppunt, indien aanwezig.
    1. Verwijder de map repository/system.id op het knooppunt, indien aanwezig.
-   1. &amp;Bestandsnaam verwijderen;ast;&amp;ast;/listener.properties op het knooppunt, indien aanwezig.
+   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties op het knooppunt, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -165,7 +164,7 @@ Als de volledige cluster mislukt als gevolg van fouten zoals een crash van de da
    1. Verwijder het bestand clusterNode/revision.log op alle clusterknooppunten.
    1. Verwijder de .lock op alle clusterknooppunten, indien aanwezig.
    1. Verwijder de eventuele repository/system.id.
-   1. De bestanden &amp;amp verwijderen;ast;&amp;ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
+   1. De bestanden &amp;voorst verwijderen;&amp;ast;/listener.properties op alle clusterknooppunten, indien aanwezig.
    1. Herstel repository/cluster_node.id voor afzonderlijke clusterknooppunten.
 
 >[!NOTE]
@@ -176,18 +175,17 @@ Als de volledige cluster mislukt als gevolg van fouten zoals een crash van de da
 * Voordat u een clusterknooppunt opnieuw start, moet u ervoor zorgen dat u de gegevensopslagruimte /clustered.txt van het primaire knooppunt verwijdert.
 * Zorg ervoor dat het primaire knooppunt eerst wordt gestart en dat andere knooppunten worden gestart zodra het volledig is opgestart.
 
-## Een back-up maken van en terugzetten op het publicatieknooppunt van Correspondentenbeheeroplossing {#back-up-and-restore-correspondence-management-solution-publish-node}
+## Knooppunt voor het maken van back-ups en het herstellen van Correspondentenbeheeroplossingen {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt een back-up maken van elk Publisher-knooppunt door [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html) te volgen.
+De uitgeversknoop heeft geen primair-secundaire verhouding in een gegroepeerde milieu. U kunt een back-up maken van elk Publisher-knooppunt door het volgende te doen [Back-up en herstel](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
-### Eén uitgeversknooppunt {#recover-a-single-publisher-node} herstellen
+### Eén uitgeversknooppunt herstellen {#recover-a-single-publisher-node}
 
 1. Sluit de knoop die moet worden teruggekregen en doe geen publicatieactiviteit tot de knoop opnieuw omhoog is.
-1. Herstel de Publish knoop gebruikend [Herstellend de Steun] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring de Steun).
+1. Het knooppunt Publiceren herstellen met [Back-up herstellen](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring de back-up).
 
-### Een cluster {#recover-a-cluster} herstellen
+### Een cluster herstellen {#recover-a-cluster}
 
 1. Sluit de cluster af.
-1. Herstel de Publish knoop gebruikend [Herstellend de Steun] (https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring de Steun).
+1. Het knooppunt Publiceren herstellen met [Back-up herstellen](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring de back-up).
 1. Start het primaire knooppunt gevolgd door het secundaire knooppunt van de auteurcluster.
-

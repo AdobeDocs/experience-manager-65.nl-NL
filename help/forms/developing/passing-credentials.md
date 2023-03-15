@@ -1,7 +1,8 @@
 ---
 title: Hoe te om geloofsbrieven over te gaan gebruikend WS-veiligheidskopballen?
 description: Leer hoe u referenties doorgeeft met WS-beveiligingskoppen
-source-git-commit: 9b118ef4f852e3df1e717bb27b9be272caeb0456
+exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
@@ -16,7 +17,7 @@ Hoe u WS-Veiligheid kopballen tot AEM Forms op JEE overgaat hangt van of u de as
 
 >[!NOTE]
 >
->Als voorbeeld om de dienst aan te halen gebruikend WS-Veiligheid kopballen, codeert dit onderwerp een PDF document met een wachtwoord door de dienst van de Encryptie aan te halen.
+>Als voorbeeld om de dienst aan te halen gebruikend WS-Veiligheid kopballen, codeert dit onderwerp een document van PDF met een wachtwoord door de dienst van de Encryptie aan te halen.
 
 In dit document worden de volgende onderwerpen behandeld:
 
@@ -38,5 +39,4 @@ Om dit document optimaal te kunnen benutten, hebt u een gedegen kennis van de AE
 >[!MORELIKETHIS]
 >
 >* [Gegevens doorgeven met WS-beveiligingskoppen](assets/passing-credentials-using-ws-security-headers.pdf)
-
 

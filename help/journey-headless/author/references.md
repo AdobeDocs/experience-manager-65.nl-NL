@@ -1,7 +1,8 @@
 ---
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 1%

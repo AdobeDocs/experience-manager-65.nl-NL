@@ -1,7 +1,8 @@
 ---
 title: Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM
 description: Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%

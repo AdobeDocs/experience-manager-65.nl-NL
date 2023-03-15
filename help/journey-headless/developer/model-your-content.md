@@ -1,7 +1,8 @@
 ---
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
-source-git-commit: 0458a811b5bd062abbe8a42ec141bc786491e19e
+exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1826'
 ht-degree: 0%
@@ -144,9 +145,9 @@ De structuur van het inhoudsmodel is:
 
 >[!NOTE]
 >
->De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in een recentere zitting wordt gebruikt.
+>De modellen van het Fragment van de Inhoud worden ook gebruikt als basis van de AEM Schema&#39;s van GraphQL, die voor het terugwinnen van uw inhoud - meer over dat in een recentere zitting worden gebruikt.
 
-Verzoeken om uw inhoud worden gemaakt met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. AEM GraphQL API staat u toe om (complexe) vragen op uw Fragments van de Inhoud uit te voeren, met elke vraag die volgens een specifiek modeltype is.
+Verzoeken om uw inhoud worden ingediend met de AEM GraphQL API, een aangepaste implementatie van de standaard GraphQL API. Met de AEM GraphQL API kunt u (complexe) query&#39;s uitvoeren op uw inhoudsfragmenten, waarbij elke query op een specifiek modeltype is gebaseerd.
 
 De geretourneerde inhoud kan vervolgens door uw toepassingen worden gebruikt.
 
@@ -265,7 +266,7 @@ Zie De structuur van het voorbeeldinhoudsfragment voor een basisstructuur als vo
 
 ## Volgende functies {#whats-next}
 
-Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hiervan afhankelijk is, is de volgende stap: [Leer hoe te om vragen te gebruiken GraphQL om tot uw inhoud van de Fragmenten van de Inhoud toegang te hebben en terug te winnen](access-your-content.md). Dit zal GraphQL introduceren en bespreken, dan bekijk sommige steekproefvragen om te zien hoe de dingen in praktijk werken.
+Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hiervan afhankelijk is, is de volgende stap: [Leer hoe u met GraphQL-query&#39;s toegang krijgt tot inhoud van Content Fragments en hoe u deze kunt ophalen](access-your-content.md). Dit zal GraphQL introduceren en bespreken, dan bekijk sommige steekproefvragen om te zien hoe de dingen in de praktijk werken.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -273,7 +274,7 @@ Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hi
    * [Inhoudsfragmenten in de configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegrowser
    * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - modellen voor inhoudsfragmenten maken en bewerken
    * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - het maken en ontwerpen van contentfragmenten; deze pagina leidt u tot andere gedetailleerde secties
-* [AEM GraphQL-schema&#39;s](access-your-content.md) - hoe GraphQL modellen realiseert
+* [AEM GraphQL Schemas](access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van functies zonder kop, zoals contentmodellering en GraphQL
-   * [Basisbeginselen van GraphQL-modellering](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) definieert en gebruikt voor gebruik met GraphQL.
+* [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van functies zonder kop, zoals het modelleren van inhoud en GraphQL
+   * [Basisbeginselen van GraphQL-modellen](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) definieert en gebruikt voor gebruik met GraphQL.

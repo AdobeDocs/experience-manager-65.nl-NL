@@ -1,22 +1,21 @@
 ---
 title: Traceringsprocessen
-seo-title: Traceringsprocessen
+seo-title: Tracking processes
 description: Hoe te om uw processen te volgen door naar hen te zoeken en hun details te bekijken.
-seo-description: Hoe te om uw processen te volgen door naar hen te zoeken en hun details te bekijken.
+seo-description: How to track your processes by searching for them and viewing their details.
 uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Traceringsprocessen {#tracking-processes}
 
@@ -39,14 +38,14 @@ U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
 ### Een taak zoeken met een zoeksjabloon {#search-for-a-task-using-a-search-template}
 
-1. Selecteer **Sjablonen zoeken** in de lijst Volgende op de pagina en selecteer een zoeksjabloon.
-1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden en klikt u op **Zoeken** om de zoekparameters te beperken. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
+1. Selecteer in de lijst aan de linkerkant op de pagina Tekstspatiëring de optie **Sjablonen zoeken** en selecteer een zoeksjabloon.
+1. Als de sjabloon zoekparameters ondersteunt, vult u de sjabloonvelden in en klikt u op **Zoeken**. Hiermee geeft u een lijst weer met alle taken waaraan u hebt deelgenomen, die overeenkomen met de zoekcriteria.
 
-## Procesdetails {#view-process-details} weergeven
+## Procesdetails weergeven {#view-process-details}
 
 Op de pagina Volgen kunt u een proces selecteren en de details ervan bekijken. U kunt de processen zoeken die op diverse parameters worden gebaseerd om de taakdetails te bekijken. U kunt het tabblad Status ook weergeven voor processen waarbij meerdere gebruikers taken gelijktijdig ontvangen, waarbij de gereedschappen voor het reviseren van documenten zijn ingeschakeld.
 
-**Status:** De status van taken in een proces wordt weergegeven in de kolom &#39;Geselecteerde actie&#39; wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
+**Status:** De status van taken in een proces wordt weergegeven in de kolom Geselecteerde actie wanneer u op een taak klikt. De status van het proces is echter niet beschikbaar.
 
 1. Selecteer de procesinstantie in de lijst met zoekresultaten om details weer te geven van de taken die deel uitmaken van de procesinstantie.
 1. Voer een of meer van de volgende handelingen uit om meer informatie over een taak weer te geven:

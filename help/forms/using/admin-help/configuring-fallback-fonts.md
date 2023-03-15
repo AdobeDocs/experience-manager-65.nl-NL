@@ -1,8 +1,8 @@
 ---
 title: Terugvallettertypen configureren
-seo-title: Terugvallettertypen configureren
+seo-title: Configuring fallback fonts
 description: Leer hoe u fallback-lettertypen configureert.
-seo-description: Leer hoe u fallback-lettertypen configureert.
+seo-description: Learn how to configure fallback fonts.
 uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
-
 
 # Terugvallettertypen configureren {#configuring-fallback-fonts}
 
@@ -27,12 +26,12 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
 >
 >De fontconfiguratie van de reserve is ook op de assembleerdienst van toepassing.
 
-1. Navigeer naar het bestand adobe-livecycle-*`[appserver]`*.ear in de map *`[aem-forms root]`*/configurationManager/export, maak een reservekopie en pak het origineel uit.
+1. Navigeren naar de adobe-livecycle-*`[appserver]`*.ear-bestand in de *`[aem-forms root]`*/configurationManager/export directory, maak een reservekopie en pak het origineel uit.
 1. Zoek het bestand adobe-fontmanager.jar en pak het uit.
 1. Zoek het bestand FontManagerResources.properties en open het in een teksteditor.
 1. Wijzig desgewenst de locaties en namen van de lettertypen Algemeen en Fallback en sla het bestand op.
 
-   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de map *`[aem-forms root]`*/fonts. Als u lettertypen opgeeft die niet standaard AEM formulierlettertypen zijn, moet u deze lettertypen installeren in deze mapstructuur (binnen een bestaande map of in een nieuw gemaakte map).
+   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de *`[aem-forms root]`*/fonts directory. Als u lettertypen opgeeft die niet standaard AEM formulierlettertypen zijn, moet u deze lettertypen installeren in deze mapstructuur (binnen een bestaande map of in een nieuw gemaakte map).
 
    >[!NOTE]
    >
@@ -43,9 +42,8 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
    * Algemeen lettertype, doorzocht op volgorde ingesteld in de fallback-tabel
 
 1. Verpak het bestand adobe-fontmanager.jar opnieuw.
-1. Herhaal het bestand adobe-livecycle-*`[appserver]`*.ear en implementeer het bestand vervolgens handmatig of door Configuratiebeheer uit te voeren.
+1. De adobe-livecycle opnieuw verpakken *`[appserver]`*.ear dossier en dan herstelt het of manueel of door de Manager van de Configuratie in werking te stellen.
 
 >[!NOTE]
 >
->Gebruik Configuration Manager niet om het bestand adobe-livecycle-`[appserver]`.ear opnieuw te verpakken, omdat hierdoor uw wijzigingen worden overschreven door de standaardwaarden voor AEM formulieren.
-
+>Gebruik Configuration Manager niet om de adobe-livecycle-`[appserver]`.ear-bestand omdat hiermee uw wijzigingen worden overschreven door de standaardwaarden van de AEM formulieren.

@@ -593,7 +593,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>De kleureigenschappen definiëren een unieke vulkleur.</td>
    <td>
     <ul>
@@ -614,7 +614,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>Met de eigenschap color wordt een unieke kleur beschreven voor een lineaire verloopvulling op een formulier.</td>
    <td>
     <ul>
@@ -652,7 +652,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het patroonobject beschreven. </td>
    <td>
     <ul>
@@ -673,7 +673,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het radiale object beschreven</td>
    <td>
     <ul>
@@ -694,7 +694,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het stipple-object beschreven.</td>
    <td>
     <ul>
@@ -720,12 +720,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> </td>
   </tr>
   <tr>
-   <td>bijschrift</td>
+   <td>caption</td>
    <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>aanwezigheid</td>
+   <td>presence</td>
    <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
    <td> </td>
   </tr>
@@ -752,7 +752,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>kleur</td>
+   <td>color</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het hoekobject beschreven.</td>
    <td>
     <ul>
@@ -948,7 +948,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>bijschrift</td>
+   <td>caption</td>
    <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.<br /> </td>
    <td>Geen</td>
   </tr>
@@ -963,12 +963,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>aanwezigheid</td>
+   <td>presence</td>
    <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>toegang</td>
+   <td>access</td>
    <td>Deze eigenschap bepaalt de toegang tot de inhoud van een container object, zoals een subformulier.</td>
    <td>Voor afzonderlijke items in de uitzondering wordt altijd open geretourneerd. </td>
   </tr>
@@ -1109,7 +1109,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| aanwezigheid | Hiermee wordt de zichtbaarheid van een object opgegeven. | Geen |
+| presence | Hiermee wordt de zichtbaarheid van een object opgegeven. | Geen |
 
 ## FormCalc {#formcalc}
 

@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Bijwerken
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
 
 # Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Zoals beschreven op de bovenliggende [Repository Reform in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar Experience Manager 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die van invloed zijn op Dynamic Media. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) op de pagina, moeten klanten die een upgrade uitvoeren naar Experience Manager 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor Dynamic Media. Sommige veranderingen vereisen het werk inspanning tijdens het Experience Manager 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **Voor toekomstige upgrade**
 
@@ -116,7 +116,7 @@ Zoals beschreven op de bovenliggende [Repository Reform in Adobe Experience Mana
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>1. Publiceer alle video's van YouTube<br /> 2. Creeer de Configuratie van YouTube gebruikend nieuwe TouchUI (van <code>/conf</code>) met inbegrip van het kopiëren van alle Kanalen van de oude plaats<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
+   <td><p>1. Alle video's van YouTube verwijderen<br /> 2. De YouTube-configuratie maken met de nieuwe TouchUI (van <code>/conf</code>) inclusief het kopiëren van alle kanalen van de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td>

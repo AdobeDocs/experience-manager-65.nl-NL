@@ -1,22 +1,21 @@
 ---
 title: Eerste instelling
-seo-title: Eerste instelling
+seo-title: Initial Setup
 description: Oprichting van Gemeenschappen
-seo-description: Oprichting van Gemeenschappen
+seo-description: Setting up Communities
 uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
-
 
 # Eerste instelling {#initial-setup}
 
@@ -24,10 +23,10 @@ ht-degree: 0%
 
 Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
 
-Hiervoor volgt u de AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies, die resulteren in:
+Volg hiervoor de AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies, die resulteren in:
 
 * Auteursomgeving op [localhost:4502](http://localhost:4502/)
-* Publiceer milieu op [localhost:4503](http://localhost:4503/)
+* Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
 Voor AEM Communities:
 
@@ -43,60 +42,60 @@ Voor AEM Communities:
 
 >[!NOTE]
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het schrijven van pagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
+>Als u niet bekend bent met AEM, kunt u de documentatie raadplegen op [basisbehandeling](../../help/sites-authoring/basic-handling.md) en [snelle handleiding voor het ontwerpen van pagina&#39;s](../../help/sites-authoring/qg-page-authoring.md).
 
-## Nieuwste communityrelease {#install-latest-communities-release} installeren
+## Laatste versie van Gemeenschappen installeren {#install-latest-communities-release}
 
-Deze zelfstudie maakt een [communitysite voor betrokkenheid](overview.md#engagement-community) en is gebaseerd op AEM Communities 6.2-functiepakket versie 1.10.
+Deze zelfstudie maakt een [community-site voor betrokkenheid](overview.md#engagement-community) en is gebaseerd op AEM Communities 6.2 feature pack versie 1.10.
 
 Ga voor de installatie van het nieuwste functiepakket naar:
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Voor een zelfstudie waarmee een [communitysite ](overview.md#enablement-community) wordt gemaakt, gaat u [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md).
+Voor een zelfstudie die een [gemeenschapssite inschakelen](overview.md#enablement-community), bezoek [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md).
 
-## Analyses {#configure-analytics} configureren
+## Analyses configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is informatie beschikbaar over community-activiteiten die de ervaring van het lid van de community verbetert en feedback geeft aan beheerders van de site.
+Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md)Er is informatie beschikbaar over de activiteiten van de community die de ervaring van het lid van de community verbetert en feedback geeft aan beheerders van de site.
 
 Integratie met Adobe Analytics is optioneel.
 
 ## E-mail voor meldingen configureren {#configure-email-for-notifications}
 
-De functie voor meldingen, die standaard beschikbaar is voor alle sites die zijn gemaakt met de console `Communities Sites`, biedt een e-mailkanaal voor meldingen.
+De functie voor meldingen is standaard beschikbaar voor alle sites die zijn gemaakt met de `Communities Sites` -console, biedt een e-mailkanaal voor meldingen.
 
 Het is nodig dat e-mail correct is geconfigureerd voor de site.
 
 Zie [E-mail configureren](email.md).
 
-## De tunnelservice {#enable-the-tunnel-service} inschakelen
+## De tunnelservice inschakelen {#enable-the-tunnel-service}
 
-Wanneer het creëren van een communautaire plaats in het auteursmilieu, maakt de tunneldienst de capaciteit mogelijk om rollen aan vertrouwde op communautaire leden toe te wijzen die in het publicatiemilieu worden geregistreerd. De tunnelservice biedt ook toegang tot leden van de gemeenschap vanuit de consoles [Leden en Groepen](members.md) in de auteuromgeving.
+Wanneer het creëren van een communautaire plaats in het auteursmilieu, maakt de tunneldienst de capaciteit mogelijk om rollen aan vertrouwde op communautaire leden toe te wijzen die in het publicatiemilieu worden geregistreerd. De tunneldienst verleent ook toegang aan leden van de gemeenschap van de [Samenstellingen van leden en groepen](members.md) in de ontwerpomgeving.
 
-De conventie is voor leden en lidgroepen die in de publicatieomgeving zijn gemaakt, om *niet* opnieuw te maken in de ontwerpomgeving. Zie [Gebruikers en gebruikersgroepen beheren](users.md) voor meer informatie.
+De conventie bepaalt dat leden en ledengroepen die in de publicatieomgeving zijn gemaakt *niet* opnieuw worden gemaakt in de auteursomgeving. Zie voor meer informatie [Gebruikers en gebruikersgroepen beheren](users.md).
 
-Voor eenvoudige instructies om de tunneldienst op een **auteur** instantie toe te laten, zie [Tunnel Service](deploy-communities.md#tunnel-service-on-author).
+Voor eenvoudige instructies om de tunneldienst op een **auteur** -instantie, zie [Tunnelservice](deploy-communities.md#tunnel-service-on-author).
 
 ## Rol van communautaire beheerder {#community-administrator-role}
 
 De leden van de groep van Beheerders van de Gemeenschap kunnen communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud.
 
-### Gebruiker {#create-user} maken
+### Gebruiker maken {#create-user}
 
-Creeer een gebruiker op *auteur*, die de rol van Communautaire Beheerder wordt toegewezen:
+Een gebruiker maken op *auteur*, die de rol van communautaire administrateur krijgt toegewezen:
 
 * Instantie van auteur
 
-   * Bijvoorbeeld [http://localhost:4502/](http://localhost:4503/)
+   * Bijvoorbeeld: [http://localhost:4502/](http://localhost:4503/)
 
 * Aanmelden met beheerdersrechten
 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
 * Navigeer vanuit de hoofdconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
-* Selecteer **[!UICONTROL Add User]** in het menu **Bewerken**
+* Van de **Bewerken** menu, selecteert u **[!UICONTROL Add User]**
 
-* Voer in het dialoogvenster `Create New User`:
+* In de `Create New User` dialoogvenster openen:
 
    * **[!UICONTROL ID]**: sirius
    * **[!UICONTROL Emai Address]**: sirius.nilson@mailinator.com
@@ -105,7 +104,7 @@ Creeer een gebruiker op *auteur*, die de rol van Communautaire Beheerder wordt t
    * **[!UICONTROL First Name]**: Sirius
    * **[!UICONTROL Last Name]**: Nilson
 
-### Sirius toewijzen aan groep Beheerders uit Gemeenschap {#assign-sirius-to-community-administrators-group}
+### Sirius toewijzen aan de groep met communautaire beheerders {#assign-sirius-to-community-administrators-group}
 
 Omlaag schuiven naar `Add User to Groups`:
 
@@ -120,20 +119,20 @@ Omlaag schuiven naar `Add User to Groups`:
 
 ## Sociale aanmelding inschakelen {#enable-social-login}
 
-Voordat de demonstratieversies van sociale aanmelding bij Facebook en Twitter kunnen worden gebruikt, is het noodzakelijk
+Voordat de demonstratieversies van de sociale aanmelding bij Facebook en Twitter kunnen worden gebruikt, moet
 
-1. Installeer een reparatiepakket of [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) (voor wijzigingen in Facebook-API van maart 2017).
-1. [Schakel de OAuth-](social-login.md#adobe-granite-oauth-authentication-handler) provider in de publicatieomgeving in.
+1. Installeer een fixpack of [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) (voor wijzigingen in de Facebook API van maart 2017).
+1. [De OAuth-provider inschakelen](social-login.md#adobe-granite-oauth-authentication-handler) in de publicatieomgeving.
 
 Voor productieservers is het nodig de cloudservices te maken die nodig zijn voor het aanbieden van sociale aanmeldingsgegevens.
 
-Zie [Sociale aanmelding bij Facebook en Twitter](social-login.md).
+Zie [Sociale aanmelding met Facebook en Twitter](social-login.md).
 
 ## Zelfstudietags maken {#create-tutorial-tags}
 
-Maak tags die u wilt gebruiken voor de zelfstudies voor toegang en activering met de naamruimte tag van `Tutorial`.
+Tags maken die u wilt gebruiken voor de zelfstudies voor toegang en activering met behulp van de naamruimte tag van `Tutorial`.
 
-Gebruik de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) om de volgende tags te maken:
+Gebruik de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) om de volgende labels te maken:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`
@@ -146,8 +145,8 @@ Gebruik de [Tagingconsole](../../help/sites-administering/tags.md#tagging-consol
 
 Volg vervolgens de instructies op:
 
-1. [Stel de tagmachtigingen](../../help/sites-administering/tags.md#setting-tag-permissions) in.
-1. [Publiceer de labels](../../help/sites-administering/tags.md#publishing-tags).
+1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
+1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags).
 
 Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van AEM Communities
 
@@ -155,8 +154,8 @@ Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van
 
 ## MongoDB voor UGC Common Store {#mongodb-for-ugc-common-store}
 
-Het wordt geadviseerd, maar facultatief, om [MSRP](msrp.md) (MongoDB) als [gemeenschappelijke opslag](working-with-srp.md) te plaatsen om de flexibiliteit te ervaren om al UGC van of publiceren en/of auteursmilieu&#39;s te modereren.
+U kunt het beste, maar optioneel, instellen [MSRP](msrp.md) (MongoDB) als de [gemeenschappelijk archief](working-with-srp.md) om de flexibiliteit te ervaren van het moderniseren van al UGC van of publiceren en/of auteursmilieu&#39;s.
 
-Voor instructies gaat u naar [MongoDB instellen voor demo](demo-mongo.md).
+Voor instructies gaat u naar [MongoDB voor demo instellen](demo-mongo.md).
 
-Door gebrek, resulteert de installatie van de auteur en publiceert AEM instanties in gebruiker geproduceerde inhoud (UGC) die in [JCR Tar opslag](../../help/sites-deploying/platform.md) wordt opgeslagen die gebruikend [JSRP](jsrp.md) wordt betreden. JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publicatie instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publicatieinstantie moeten gebruiken.
+Standaard wordt door de installatie van de auteur en de publicatie AEM instanties door de gebruiker gegenereerde inhoud (UGC) opgeslagen in [JCR Tar-opslag](../../help/sites-deploying/platform.md) die toegankelijk zijn via [JSRP](jsrp.md). JSRP is geen gemeenschappelijke opslag, wat betekent UGC slechts op de instantie zichtbaar is waarop het was ingegaan. Normaal, is UGC ingegaan op een publicatie instantie en zou niet zichtbaar in het auteursmilieu zijn, resulterend in alle matigingstaken die de publicatieinstantie moeten gebruiken.

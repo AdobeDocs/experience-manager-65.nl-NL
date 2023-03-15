@@ -1,8 +1,8 @@
 ---
 title: Communityabonnementen
-seo-title: Communityabonnementen
+seo-title: Communities Subscriptions
 description: Communautaire leden communiceren via e-mail met andere leden
-seo-description: Communautaire leden communiceren via e-mail met andere leden
+seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,14 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Vanaf Community [FP1](deploy-communities.md#latestfeaturepack) kunnen leden van de gemeenschap via e-mail communiceren met de community via een functie die wordt aangeduid als abonnementen.
+Vanaf Gemeenschappen [FP1](deploy-communities.md#latestfeaturepack)kunnen leden van de gemeenschap via e-mail communiceren met de gemeenschap via een functie die abonnementen wordt genoemd.
 
-Abonnementen zijn vergelijkbaar met [meldingen](notifications.md) omdat leden zich kunnen abonneren bij het volgen van blogartikelen, forumonderwerpen of QnA-vragen.
+Abonnementen lijken op [meldingen](notifications.md) aangezien leden zich kunnen abonneren bij het volgen van blogartikelen, forumonderwerpen of QnA-vragen.
 
 Abonnementen worden onderscheiden van meldingen:
 
 * Leden kunnen zich niet abonneren wanneer zij andere leden volgen.
-* De enige actie die leden kunnen ondernemen, is om `Email Subscriptions` te selecteren wanneer volgende.
+* De enige actie die leden kunnen ondernemen, is het selecteren van `Email Subscriptions` wanneer volgende.
 * Wanneer e-mailantwoord is geconfigureerd, kunnen leden inhoud effectief posten door eenvoudig te antwoorden op de ontvangen e-mail.
 
 ### Vereisten {#requirements}
@@ -38,21 +38,21 @@ Abonnementen worden onderscheiden van meldingen:
 
 E-mail moet worden gevormd om abonnementen te functioneren en voor leden te antwoorden per e-mail.
 
-Zie [E-mail configureren](email.md) voor instructies voor het instellen van e-mail.
+Voor instructies over het instellen van e-mailberichten raadpleegt u [E-mail configureren](email.md).
 
 **Abonnementen inschakelen en volgen**
 
-Componenten moeten worden geconfigureerd om de volgende abonnementen *en* in te schakelen. Functies die abonnementen toestaan, zijn [blog](blog-feature.md), [forum](forum.md) en [QnA](working-with-qna.md).
+Componenten moeten worden geconfigureerd om abonnementen in te schakelen *en* volgende. Functies die abonnementen toestaan, zijn [blog](blog-feature.md), [forum](forum.md) en [QnA](working-with-qna.md).
 
 ## Abonnementen van volgende {#subscriptions-from-following}
 
 ![abonnement-volgende](assets/subscription-following.png)
 
-Met de knop **Follow** kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Telkens wanneer de **Follow** knoop wordt geselecteerd, is het mogelijk om of van een selectie van een knevel te voorzien.
+De **Volg** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **Volg** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen.
 
-Als een methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak, is het mogelijk om `Unfollow All` te selecteren om alle methodes van een knevel te voorzien.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **volgende**. Voor het gemak is het mogelijk om `Unfollow All` om alle methoden uit te schakelen.
 
-De **Follow** knoop zal `Email Subscriptions` optie slechts omvatten wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
+De **Volg** bevat de knop `Email Subscriptions` optie slechts wanneer een forum, QnA, of blog wordt gevormd om e-mailabonnementen toe te laten. Deze knop wordt weergegeven:
 
 * Op de hoofdpagina met functies voor het ingeschakelde forum, stuurt QnA of blog een e-mail voor alle activiteiten onder die functie.
 
@@ -60,12 +60,12 @@ De **Follow** knoop zal `Email Subscriptions` optie slechts omvatten wanneer een
 
 ## Reageren per e-mail {#reply-by-email}
 
-Als e-mail [geconfigureerd is voor het beantwoorden via e-mail](email.md#configure-polling-importer), ontvangt het lid dat zich heeft geabonneerd een e-mail met de geposte inhoud en een koppeling naar de online-inhoud.
+Wanneer e-mail [geconfigureerd voor beantwoorden per e-mail](email.md#configure-polling-importer), ontvangt het lid dat zich heeft geabonneerd een e-mail met de geposte inhoud en een koppeling naar de online-inhoud.
 
 Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord invoeren, online weergegeven als inhoud.
 
 ![e-mailantwoord](assets/email-reply.png)
 
-De hoeveelheid tijd die nodig is om een antwoord te verzenden, wordt bepaald door het update-interval van de [opiniepeilingimporteur](email.md#configure-polling-importer).
+De tijd die nodig is om een antwoord te plaatsen, wordt bepaald door de [update-interval opiniepeilingimportmodule](email.md#configure-polling-importer).
 
 ![QA](assets/qa.png)

@@ -1,8 +1,8 @@
 ---
 title: Controles en probleemoplossing na upgrade
-seo-title: Controles en probleemoplossing na upgrade
+seo-title: Post Upgrade Checks and Troubleshooting
 description: Leer hoe te om kwesties problemen op te lossen die na een verbetering zouden kunnen verschijnen.
-seo-description: Leer hoe te om kwesties problemen op te lossen die na een verbetering zouden kunnen verschijnen.
+seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
 uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,20 +11,19 @@ content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1813'
 ht-degree: 0%
 
 ---
-
 
 # Controles en probleemoplossing na upgrade{#post-upgrade-checks-and-troubleshooting}
 
 ## Controles na upgrade {#post-upgrade-checks}
 
-Na [In-Place Verbetering](/help/sites-deploying/in-place-upgrade.md) zouden de volgende activiteiten moeten worden uitgevoerd om de verbetering te voltooien. Men veronderstelt AEM is begonnen met 6.5 jar en dat de promotiecode basis is opgesteld.
+Na de [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md) de volgende activiteiten moeten worden uitgevoerd om de upgrade af te ronden . Men veronderstelt AEM is begonnen met 6.5 jar en dat de promotiecode basis is opgesteld.
 
 * [Logbestanden controleren voor een upgrade](#main-pars-header-290365562)
 
@@ -47,7 +46,7 @@ Na [In-Place Verbetering](/help/sites-deploying/in-place-upgrade.md) zouden de v
 
 * [Testplan uitvoeren](#main-pars-header-1167972233)
 
-### Logboeken controleren voor upgradesucces {#verify-logs-for-upgrade-success}
+### Logboeken controleren voor upgrade voltooid {#verify-logs-for-upgrade-success}
 
 **upgrade.log**
 
@@ -60,7 +59,7 @@ Meer specifiek zorgt het ervoor dat:
 * De mislukkingen van de verbetering die door het verbeteringskader worden ontdekt kunnen in één enkel verbeteringsrapport worden gecentraliseerd;
 * Het verbeteringsrapport bevat indicatoren voor noodzakelijke handmatige interventie.
 
-Om dit bij te voegen, zijn de veranderingen aangebracht in de manier het logboeken in het `upgrade.log` dossier worden geproduceerd.
+Hiervoor zijn wijzigingen aangebracht in de manier waarop logbestanden worden gegenereerd in het dialoogvenster `upgrade.log` bestand.
 
 Hier is een steekproefrapport dat geen fouten tijdens verbetering toont:
 
@@ -72,57 +71,57 @@ Hier is een steekproefrapport dat een bundel toont die niet tijdens het verbeter
 
 **error.log**
 
-error.log zou zorgvuldig tijdens en na de aanvang van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen is het beter om op kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Zie [Problemen analyseren met de upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade) als zich herhaalde fouten en waarschuwingen voordoen.
+error.log zou zorgvuldig tijdens en na de aanvang van AEM moeten worden herzien gebruikend de jar van de doelversie. Alle waarschuwingen of fouten moeten worden herzien. In het algemeen is het beter om op kwesties aan het begin van het logboek te zoeken. Fouten die zich later in het logbestand voordoen, kunnen in feite bijwerkingen zijn van een hoofdoorzaak die vroeg in het bestand wordt aangeroepen. Als zich herhaalde fouten en waarschuwingen voordoen, zie hieronder voor [Problemen analyseren met de upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
 ### OSGi-bundels verifiëren {#verify-osgi-bundles}
 
-Navigeer aan de console OSGi `/system/console/bundles` en kijk of om het even welke bundels niet zijn begonnen. Raadpleeg `error.log` als er bundels in een geïnstalleerde status zijn om het hoofdprobleem te bepalen.
+Navigeer aan de console OSGi `/system/console/bundles` en controleer of er geen bundels zijn gestart. Als een bundel zich in een geïnstalleerde status bevindt, raadpleegt u de `error.log` om het hoofdprobleem te bepalen.
 
-### Oak-versie {#verify-oak-version} verifiëren
+### Oak-versie verifiëren {#verify-oak-version}
 
-Na de verbetering zou u moeten zien dat de versie van eikel is bijgewerkt aan **1.10.2**. Om de versie te verifiëren van de eik navigeer aan de console OSGi en bekijk de versie verbonden aan de bundels van de eik: eiken kern, eiken komma&#39;s, eiken segmentteer.
+Na de upgrade ziet u dat de versie van eikel is bijgewerkt naar **1.10.2.**. Om de versie te verifiëren van de eik navigeer aan de console OSGi en bekijk de versie verbonden aan de bundels van de eik: eiken kern, eiken komma&#39;s, eiken segmentteer.
 
 ### Inspect PreUpgradeBackup-map {#inspect-preupgradebackup-folder}
 
-Tijdens de upgrade probeert AEM een back-up te maken van aanpassingen en deze onder `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>` op te slaan. Als u deze map in CRXDE Lite wilt weergeven, moet u mogelijk [tijdelijk CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md) inschakelen.
+Tijdens de upgrade probeert AEM een back-up te maken van aanpassingen en deze onder `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Als u deze map in CRXDE Lite wilt weergeven, moet u mogelijk [tijdelijk CRXDE Lite inschakelen](/help/sites-administering/enabling-crxde-lite.md).
 
-De map met het tijdstempel moet een eigenschap met de naam `mergeStatus` hebben met de waarde `COMPLETED`. De **to-process** omslag zou leeg moeten zijn en de **overwritten** knoop wijst op welke knopen tijdens de verbetering werden beschreven. Inhoud onder de **leftovers**-node geeft inhoud aan die niet veilig kan worden samengevoegd tijdens de upgrade. Als uw implementatie afhankelijk is van een van de onderliggende knooppunten (en nog niet is geïnstalleerd door het aangepaste codepakket), moeten deze handmatig worden samengevoegd.
+De map met het tijdstempel moet een eigenschap hebben met de naam `mergeStatus` met een waarde van `COMPLETED`. De **te verwerken** de map moet leeg zijn en de **overschreven** de knoop wijst op welke knopen tijdens de verbetering werden beschreven. Inhoud onder de **overblijfselen** de knoop wijst op inhoud die niet veilig tijdens de verbetering kon worden samengevoegd. Als uw implementatie afhankelijk is van een van de onderliggende knooppunten (en nog niet is geïnstalleerd door het aangepaste codepakket), moeten deze handmatig worden samengevoegd.
 
 Schakel CRXDE Lite uit na deze bewerking als u een werkgebied of productieomgeving hebt.
 
 ### Eerste validatie van pagina&#39;s {#initial-validation-of-pages}
 
-Voer een eerste validatie uit op meerdere pagina&#39;s in AEM. Als u een auteur-omgeving wilt bijwerken, opent u de startpagina en welkomstpagina ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). In zowel auteur- als publicatieomgevingen worden enkele toepassingspagina&#39;s en rooktests geopend die correct worden weergegeven. Als er problemen optreden, raadpleegt u `error.log` om problemen op te lossen.
+Voer een eerste validatie uit op meerdere pagina&#39;s in AEM. Als u een auteur-omgeving wilt upgraden, opent u de startpagina en de welkomstpagina ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). In zowel auteur- als publicatieomgevingen worden enkele toepassingspagina&#39;s en rooktests geopend die correct worden weergegeven. Als er problemen optreden raadpleegt u `error.log` om problemen op te lossen.
 
 ### AEM servicepacks toepassen {#apply-aem-service-packs}
 
 Pas alle relevante AEM 6.5-servicepacks toe als deze zijn vrijgegeven.
 
-### AEM {#migrate-aem-features} migreren
+### AEM migreren {#migrate-aem-features}
 
-Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een volledige lijst van deze eigenschappen en stappen om hen in AEM 6.5 te migreren kunnen op [Upgraden Code en Klanten](/help/sites-deploying/upgrading-code-and-customizations.md) pagina worden gevonden.
+Verscheidene eigenschappen in AEM vereisen extra stappen na de verbetering. Een volledige lijst van deze functies en stappen om ze in AEM 6.5 te migreren vindt u op de [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md) pagina.
 
 ### Configuraties voor gepland onderhoud controleren {#verify-scheduled-maintenance-configurations}
 
-#### Afvalverzameling van gegevensopslag inschakelen {#enable-data-store-garbage-collection}
+#### Opruiming gegevensopslag inschakelen {#enable-data-store-garbage-collection}
 
-Als het gebruiken van een Opslag van de Gegevens van het Dossier ervoor zorgt dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. De instructies worden geschetst [hier](/help/sites-administering/data-store-garbage-collection.md).
+Als het gebruiken van een Opslag van de Gegevens van het Dossier ervoor zorgt dat de taak van de Inzameling van de Opslag van Gegevens wordt toegelaten en aan de Wekelijkse lijst van het Onderhoud toegevoegd. Instructies worden beschreven [hier](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
 >Dit wordt niet geadviseerd voor de installaties van de douanegegevensopslag van S3 of wanneer het gebruiken van een gedeelde gegevensopslag.
 
-#### Onlinerevisie-opruiming {#enable-online-revision-cleanup} inschakelen
+#### Onlinerevisie-opruiming inschakelen {#enable-online-revision-cleanup}
 
-Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, zorgt u ervoor dat de taak Opruimen voor revisie is ingeschakeld en wordt toegevoegd aan de lijst Dagelijks onderhoud. Instructies [hier](/help/sites-deploying/revision-cleanup.md).
+Als u MongoMK of de nieuwe TarMK-segmentindeling gebruikt, zorgt u ervoor dat de taak Opruimen voor revisie is ingeschakeld en wordt toegevoegd aan de lijst Dagelijks onderhoud. Instructies omgeven [hier](/help/sites-deploying/revision-cleanup.md).
 
 ### Testplan uitvoeren {#execute-test-plan}
 
-Gedetailleerd testplan uitvoeren op basis van de definitie [Code en aanpassingen upgraden](/help/sites-deploying/upgrading-code-and-customizations.md) onder de sectie **Testprocedure**.
+Gedetailleerd testplan uitvoeren ten opzichte van zoals gedefinieerd [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md) onder de **Testprocedure** sectie.
 
-### Replicatieagents {#enable-replication-agents} inschakelen
+### Replication-agents inschakelen {#enable-replication-agents}
 
-Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve Publish instanties kunnen verbinden. Zie U [Procedure upgraden](/help/sites-deploying/upgrade-procedure.md) voor meer informatie over de volgorde van gebeurtenissen.
+Zodra publicatiemilieu volledig is bevorderd en bevestigd, laat replicatieagenten op het Milieu van de Auteur toe. Verifieer dat de agenten met respectieve Publish instanties kunnen verbinden. Zie U [Procedure](/help/sites-deploying/upgrade-procedure.md) voor meer informatie over de volgorde van gebeurtenissen.
 
 ### Aangepaste geplande taken inschakelen {#enable-custom-scheduled-jobs}
 
@@ -134,37 +133,37 @@ Deze sectie bevat sommige probleemscenario&#39;s één langs de verbeteringsproc
 
 Deze scenario&#39;s zouden moeten helpen om de worteloorzaak van kwesties met betrekking tot verbetering te volgen en zouden moeten helpen om project of productspecifieke kwesties te identificeren.
 
-### Migratie van opslagplaats mislukt {#repository-migration-failing-}
+### Migratie opslagplaats mislukt  {#repository-migration-failing-}
 
-De gegevensmigratie van CRX2 naar eiken moet haalbaar zijn voor elk scenario dat begint met Broninstanties op basis van CQ 5.4. Zorg ervoor dat u de verbeteringsinstructies in dit document precies volgt die de voorbereiding van `repository.xml` omvatten, ervoor zorgt geen douaneauthentiek wordt begonnen via JAAS en de instantie is gecontroleerd op inconsistenties alvorens de migratie te beginnen.
+De gegevensmigratie van CRX2 naar eiken moet haalbaar zijn voor elk scenario dat begint met Broninstanties op basis van CQ 5.4. Zorg ervoor dat u de upgrade-instructies in dit document, waaronder de voorbereiding van de `repository.xml`zorgt u ervoor dat er geen aangepaste authenticator via JAAS wordt gestart en dat de instantie op inconsistenties is gecontroleerd voordat de migratie wordt gestart.
 
-Als de migratie nog ontbreekt kunt u erachter komen wat de worteloorzaak door `upgrade.log` te inspecteren is. Als het probleem nog niet bekend is, meld dit dan aan Customer Support.
+Als de migratie nog ontbreekt kunt u uitzoeken wat de worteloorzaak door is te inspecteren `upgrade.log`. Als het probleem nog niet bekend is, meld dit dan aan Customer Support.
 
 ### De upgrade is niet uitgevoerd {#the-upgrade-did-not-run}
 
-Voordat u de voorbereidingsstappen start, moet u de **source**-instantie eerst uitvoeren door deze uit te voeren met de opdracht java -jar aem-quickstart.jar. Dit is vereist om ervoor te zorgen dat het bestand quickstart.properties op de juiste wijze wordt gegenereerd. Als deze ontbreekt, werkt de upgrade niet. U kunt ook controleren of het bestand aanwezig is door onder `crx-quickstart/conf` in de installatiemap van de broninstantie te kijken. Wanneer u AEM start om de upgrade uit te voeren, moet deze worden uitgevoerd met de opdracht java -jar aem-quickstart.jar. Het opstarten vanaf een beginscript start niet AEM in de upgrademodus.
+Voordat u de voorbereidingsstappen start, moet u de **bron** instantie eerst door deze uit te voeren met de opdracht java -jar aem-quickstart.jar. Dit is vereist om ervoor te zorgen dat het bestand quickstart.properties op de juiste wijze wordt gegenereerd. Als deze ontbreekt, werkt de upgrade niet. U kunt ook controleren of het bestand aanwezig is door onder te kijken `crx-quickstart/conf` in de installatiemap van de broninstantie. Wanneer u AEM start om de upgrade uit te voeren, moet deze worden uitgevoerd met de opdracht java -jar aem-quickstart.jar. Het opstarten vanaf een beginscript start niet AEM in de upgrademodus.
 
-### Pakketten en bundels kunnen niet worden bijgewerkt {#packages-and-bundles-fail-to-update-}
+### Pakketten en pakketten kunnen niet worden bijgewerkt  {#packages-and-bundles-fail-to-update-}
 
-Als pakketten niet tijdens de upgrade worden geïnstalleerd, worden de bundels in de pakketten ook niet bijgewerkt. Deze categorie van kwesties wordt gewoonlijk veroorzaakt door wanconfiguratie van de gegevensopslag. Zij zullen ook als **ERROR** en **WARN** berichten in error.log verschijnen. Aangezien in de meeste van deze gevallen standaardlogin kan ontbreken om te werken, kunt u CRXDE direct gebruiken om de configuratieproblemen te inspecteren en te vinden.
+Als pakketten niet tijdens de upgrade worden geïnstalleerd, worden de bundels in de pakketten ook niet bijgewerkt. Deze categorie van kwesties wordt gewoonlijk veroorzaakt door wanconfiguratie van de gegevensopslag. Zij worden ook weergegeven als **FOUT** en **WAARSCHUWING** berichten in error.log. Aangezien in de meeste van deze gevallen standaardlogin kan ontbreken om te werken, kunt u CRXDE direct gebruiken om de configuratieproblemen te inspecteren en te vinden.
 
 ### Sommige AEM Bundels schakelen niet naar de Actieve Staat {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 Als bundels niet beginnen zou u om het even welke ontevreden gebiedsdelen moeten controleren.
 
-Als dit probleem zich voordoet, maar het is gebaseerd op een mislukte pakketinstallatie die ertoe heeft geleid dat bundels niet werden bijgewerkt, worden zij onverenigbaar geacht voor de nieuwe versie. Voor meer informatie over hoe te om dit problemen op te lossen, zie **Pakken en Bundels ontbreken aan Update** hierboven.
+Als dit probleem zich voordoet, maar het is gebaseerd op een mislukte pakketinstallatie die ertoe heeft geleid dat bundels niet werden bijgewerkt, worden zij onverenigbaar geacht voor de nieuwe versie. Voor meer informatie over hoe te om dit problemen op te lossen, zie **Pakketten en pakketten kunnen niet worden bijgewerkt** hierboven.
 
-Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Dit zal een dichtere werkingsgebied van wat aan onderzoek in `error.log` verstrekken.
+Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Hierdoor wordt het bereik vergroot van wat er in de `error.log`.
 
-### Aangepaste bundels die niet overschakelen op de actieve status {#custom-bundles-not-switching-to-the-active-state}
+### Aangepaste bundels die niet overschakelen op de actieve staat {#custom-bundles-not-switching-to-the-active-state}
 
 Als uw aangepaste bundels niet naar de actieve status overschakelen, is het zeer waarschijnlijk dat er code is die geen wijziging-API importeert. Dit zal meestal leiden tot ontevreden afhankelijkheden.
 
 API die is verwijderd, moet worden gemarkeerd als afgekeurd in een van de vorige releases. In dit bericht vindt u mogelijk instructies over een directe migratie van uw code. Adobe is bedoeld voor semantische versioning waar mogelijk, zodat de versies kunnen aangeven dat er wijzigingen zijn opgetreden.
 
-Het is ook het beste om te controleren of de verandering die het probleem heeft veroorzaakt absoluut noodzakelijk was en het zo niet te herstellen. Controleer ook of de versieverhoging van de pakketexport meer dan nodig is, na strikte semantische versiebewerking.
+Het is ook het beste om te controleren of de verandering die het probleem heeft veroorzaakt absoluut noodzakelijk was en het zo niet terug te draaien. Controleer ook of de versieverhoging van de pakketexport meer dan nodig is, na strikte semantische versiebewerking.
 
-### Onjuiste interface van Platform {#malfunctioning-platform-ui}
+### Gebruikersinterface van onjuist functionerend Platform {#malfunctioning-platform-ui}
 
 In het geval van bepaalde functionaliteit UI die niet behoorlijk na de verbetering werkt, zou u eerst douaneoverlays van de interface moeten controleren. Sommige structuren zijn mogelijk gewijzigd en de overlay moet mogelijk worden bijgewerkt of is verouderd.
 
@@ -176,13 +175,13 @@ Tot slot controleer misconfiguration dat Javascript niet zou kunnen behandelen. 
 
 In de meeste gevallen, zijn de worteloorzaken voor deze kwesties het zelfde als voor bundels die niet begonnen zijn of pakketten die niet met het enige verschil worden geïnstalleerd dat de kwesties beginnen op te duiken wanneer eerst het gebruiken van de componenten.
 
-De manier om met onjuiste aangepaste code om te gaan is eerst rooktests uit te voeren om de oorzaak te achterhalen. Zodra u het vindt, bekijk de aanbevelingen in deze [link] sectie van het artikel voor manieren om hen te bevestigen.
+De manier om met onjuiste aangepaste code om te gaan is eerst rooktests uit te voeren om de oorzaak te achterhalen. Kijk eens naar de aanbevelingen in deze [link] van het artikel voor het corrigeren ervan.
 
 ### Ontbrekende aanpassingen onder /etc {#missing-customizations-under-etc}
 
-`/apps` en  `/libs` worden goed afgehandeld door de upgrade, maar wijzigingen in de upgrade moeten  `/etc` mogelijk handmatig worden hersteld  `/var/upgrade/PreUpgradeBackup` na de upgrade. Controleer deze locatie op alle inhoud die handmatig moet worden samengevoegd.
+`/apps` en `/libs` worden goed behandeld door de verbetering, maar veranderingen onder `/etc` moet mogelijk handmatig worden hersteld vanaf `/var/upgrade/PreUpgradeBackup` na de upgrade. Controleer deze locatie op alle inhoud die handmatig moet worden samengevoegd.
 
-### Het bestand error.log en upgrade.log {#analyzing-the-error.log-and-upgrade.log} analyseren
+### De parameters error.log en upgrade.log analyseren {#analyzing-the-error.log-and-upgrade.log}
 
 In de meeste gevallen moeten de logboeken worden geraadpleegd voor fouten om de oorzaak van een probleem te vinden. In het geval van upgrades is het echter ook nodig om afhankelijkheidskwesties te controleren, aangezien oude bundels mogelijk niet correct worden bijgewerkt.
 

@@ -1,22 +1,21 @@
 ---
 title: Bestaande domeinen bewerken en converteren
-seo-title: Bestaande domeinen bewerken en converteren
+seo-title: Editing and converting existing domains
 description: Leer hoe u de instellingen voor bestaande domeinen wijzigt via de pagina Domeinbeheer. Zet een bestaand ondernemingsdomein in een hybride domein om of vice versa.
-seo-description: Leer hoe u de instellingen voor bestaande domeinen wijzigt via de pagina Domeinbeheer. Zet een bestaand ondernemingsdomein in een hybride domein om of vice versa.
+seo-description: Learn how to change the settings for existing domains from the Domain Management page. Convert an existing enterprise domain to a hybrid domain or vice versa.
 uuid: 4cc9547e-b4ec-4588-b1cf-18720f06149a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
-
 
 # Bestaande domeinen bewerken en converteren{#editing-and-converting-existing-domains}
 
@@ -27,7 +26,7 @@ U kunt de montages voor bestaande domeinen van de pagina van het Beheer van het 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op de naam van het domein dat u wilt bewerken.
 1. Als u de domeinnaam wilt wijzigen, wijzigt u de tekst in het vak Naam.
-1. Om de authentificatieinformatie voor een onderneming of hybride domein te veranderen, klik de aangewezen authentificatienaam bij de bodem van de pagina. Wijzig desgewenst de instellingen op de pagina Verificatie bewerken. (Zie [Verificatie-instellingen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
+1. Om de authentificatieinformatie voor een onderneming of hybride domein te veranderen, klik de aangewezen authentificatienaam bij de bodem van de pagina. Wijzig desgewenst de instellingen op de pagina Verificatie bewerken. (Zie [Verificatieinstellingen](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
 1. Als u de mapinformatie voor een ondernemingsdomein wilt wijzigen, klikt u op de juiste mapnaam onder aan de pagina. Wijzig desgewenst de instellingen op de pagina Directory bewerken. (Zie [Mappen of aangepaste SPI&#39;s toevoegen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
 1. Klik op OK als u de wijzigingen hebt aangebracht.
 
@@ -50,4 +49,3 @@ U kunt de montages voor bestaande domeinen van de pagina van het Beheer van het 
 1. Klik op Omzetten in Enterprise-domein.
 1. Controleer de informatie die wordt weergegeven met betrekking tot gebruikers- en groepsgegevens en verificatie van gebruikers en klik op OK.
 1. Klik toevoegen Folder en vormen de vereiste folderinformatie. (Zie [Mappen of aangepaste SPI&#39;s toevoegen](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
-

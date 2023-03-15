@@ -2,7 +2,7 @@
 title: Single Sign On
 seo-title: Single Sign On
 description: Leer hoe te om Enige Sign aan (SSO) voor een AEM instantie te vormen.
-seo-description: Leer hoe te om Enige Sign aan (SSO) voor een AEM instantie te vormen.
+seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
 
-
-# Enkelvoudige aanmelding {#single-sign-on}
+# Single Sign On {#single-sign-on}
 
 Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben).
 
-De service SSO Authentication Handler ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een ssid (Herkenningsteken SSO) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
+De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een ssid (Herkenningsteken SSO) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
 
 1. Aanvraagkoppen
 1. Cookies
@@ -36,32 +35,32 @@ Vorm de volgende twee diensten om de naam van de attributen te erkennen die de s
 * De aanmeldingsmodule.
 * De SSO-verificatieservice.
 
-U moet dezelfde kenmerknaam opgeven voor beide services. Het attribuut is inbegrepen in `SimpleCredentials` die aan `Repository.login` wordt verstrekt. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
+U moet dezelfde kenmerknaam opgeven voor beide services. Het kenmerk is opgenomen in de `SimpleCredentials` die worden verstrekt aan `Repository.login`. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
 
-## SSO {#configuring-sso} configureren
+## SSO configureren {#configuring-sso}
 
-Om SSO voor een AEM instantie te vormen, moet u [de Handler van de Authentificatie van SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler) vormen:
+Om SSO voor een AEM instantie te vormen, moet u vormen [SSO-verificatiehandler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [Het vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+1. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
    Bijvoorbeeld voor NTLM-set:
 
-   * **Pad:** indien vereist; bijvoorbeeld:  `/`
-   * **Namen** koptekst:  `LOGON_USER`
-   * **Id-indeling**:  `^<DOMAIN>\\(.+)$`
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Namen van koptekst**: `LOGON_USER`
+   * **ID-indeling**: `^<DOMAIN>\\(.+)$`
 
-      Waar `<*DOMAIN*>` door uw eigen domeinnaam wordt vervangen.
+      Wanneer `<*DOMAIN*>` wordt vervangen door uw eigen domeinnaam.
    Voor CoSign:
 
-   * **Pad:** indien vereist; bijvoorbeeld:  `/`
-   * **Namen** koptekst: remote_user
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Namen van koptekst**: remote_user
    * **ID-indeling:** asIs
 
    Voor SiteMinder:
 
-   * **Pad:** indien vereist; bijvoorbeeld:  `/`
-   * **koptekstnamen:** SM_USER
-   * **Id-indeling**: asIs
+   * **Pad:** indien nodig; bijvoorbeeld: `/`
+   * **Naam koptekst:** SM_USER
+   * **ID-indeling**: asIs
 
 
 
@@ -77,50 +76,42 @@ Om SSO voor een AEM instantie te vormen, moet u [de Handler van de Authentificat
 >
 >Zorg ook dat van kopballen, koekjes en de namen van de verzoekparameter, u slechts vormt die voor uw opstelling SSO wordt vereist.
 
-
 >[!NOTE]
 >
 >Single Sign On wordt vaak gebruikt in combinatie met [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Als u ook [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) met de Server van de Informatie van Microsoft Internet (IIS) gebruikt, dan zal de extra configuratie binnen worden vereist:
+>Als u ook de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) met de Microsoft Internet Information Server (IIS) is een aanvullende configuratie vereist in:
 >
 >* `disp_iis.ini`
 >* IIS
-
 >
->
-In `disp_iis.ini`-set:
->(zie [De Dispatcher installeren met Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) voor volledige details)
+>In `disp_iis.ini` set:
+>(zie [Dispatcher installeren met de Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
 >
 >* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
 >* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
-
 >
+>In IIS:
 >
-In IIS:
+>* disable **Anonieme toegang**
 >
->* uitschakelen **Anonieme toegang**
-   >
-   >
-* **Geïntegreerde Windows-verificatie** inschakelen
-
+>* enable **Geïntegreerde Windows-verificatie**
 >
 
 
-
-U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door **Authenticator** optie van de Console van Felix te gebruiken; bijvoorbeeld:
+U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Felix Console; bijvoorbeeld:
 
 `http://localhost:4502/system/console/slingauth`
 
-De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Bijvoorbeeld, als u manager-A voor de weg `/` en manager-B voor de weg `/content` vormt, dan zal een verzoek aan `/content/mypage.html` eerst manager-B vragen.
+De handler die het beste overeenkomt met het pad wordt als eerste gevraagd. Bijvoorbeeld, als u manager-A voor de weg vormt `/` en handler-B voor het pad `/content`en vervolgens een verzoek om `/content/mypage.html` zal eerst manager-B vragen.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Voorbeeld {#example}
 
-Voor een cookieverzoek (gebruikend URL `http://localhost:4502/libs/wcm/content/siteadmin.html`):
+Voor een cookieaanvraag (via de URL) `http://localhost:4502/libs/wcm/content/siteadmin.html`):
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -130,15 +121,15 @@ Cookie: TestCookie=admin
 
 De volgende configuratie gebruiken:
 
-* **Pad**:  `/`
+* **Pad**: `/`
 
-* **Namen** koptekst:  `TestHeader`
+* **Namen van koptekst**: `TestHeader`
 
-* **Cookie-namen**:  `TestCookie`
+* **Cookie-namen**: `TestCookie`
 
-* **Parameternamen**:  `TestParameter`
+* **Parameternamen**: `TestParameter`
 
-* **Id-indeling**:  `AsIs`
+* **ID-indeling**: `AsIs`
 
 Het antwoord zou zijn:
 
@@ -161,27 +152,27 @@ Transfer-Encoding: chunked
 Dit werkt ook als u daarom vraagt:
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-U kunt ook de volgende krullopdracht gebruiken om de `TestHeader`-koptekst naar `admin:` te sturen
+Of u kunt de volgende krullingsopdracht gebruiken om de `TestHeader` header naar `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
->Als u de parameter request in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van HTML zonder de verzoekparameter worden gedaan.
+>Wanneer u de aanvraagparameter in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van de HTML zonder de verzoekparameter worden gedaan.
 
-## Koppelingen voor AEM afmelden verwijderen {#removing-aem-sign-out-links}
+## Koppelingen AEM afmelden verwijderen {#removing-aem-sign-out-links}
 
 Wanneer u SSO gebruikt, worden aanmelden en afmelden extern afgehandeld, zodat AEM eigen aftekenkoppelingen niet langer van toepassing zijn en moeten worden verwijderd.
 
 U kunt de koppeling Afmelden op het welkomstscherm als volgt verwijderen.
 
-1. Bedekken `/libs/cq/core/components/welcome/welcome.jsp` tot `/apps/cq/core/components/welcome/welcome.jsp`
+1. Bedekking `/libs/cq/core/components/welcome/welcome.jsp` tot `/apps/cq/core/components/welcome/welcome.jsp`
 1. het volgende deel uit het gsp verwijderen.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Voer de volgende stappen uit om de koppeling Afmelden die beschikbaar is in het persoonlijke menu van de gebruiker in de rechterbovenhoek te verwijderen:
 
-1. Bedekken `/libs/cq/ui/widgets/source/widgets/UserInfo.js` tot `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Bedekking `/libs/cq/ui/widgets/source/widgets/UserInfo.js` tot `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Verwijder het volgende deel uit het bestand:
 
@@ -193,4 +184,3 @@ Voer de volgende stappen uit om de koppeling Afmelden die beschikbaar is in het 
    });
    menu.addSeparator();
    ```
-

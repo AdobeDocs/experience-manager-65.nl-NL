@@ -129,7 +129,7 @@ U vindt de relevante parameters in de onderstaande lijst:
 | `--port=<Val>` | De poort van de host. | 4502 |  |
 | `--user=<Val>` | De gebruikersnaam voor de instantie. | beheerder |  |
 | `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. | beheerder |  |
-| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1 quinquies |  |
+| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1d |  |
 | `--timeout=<Val>` | Hoe lang een test zal lopen alvorens het zal worden onderbroken en als ontbroken gemerkt. Uitgedrukt in seconden. | 180 |  |
 | `--suite=<Val>` | De waarde kan één of een lijst (gescheiden door komma&#39;s) van vooraf bepaalde testsuites zijn. | nachtmerrie |  |
 | `--configfile=<Val>` | Het doelafbeeldingsconfiguratiebestand. |  |  |
@@ -359,7 +359,7 @@ Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren
 | StdDev&#42; | De standaardafwijking. |
 | 90p&#42; | 90 percentiel. |
 | 99p&#42; | 99 percentiel. |
-| 99,9p&#42; | 99,9 percentiel. |
+| 99.9p&#42; | 99,9 percentiel. |
 | Reële doorvoer&#42; | Het aantal regels gedeeld door de verstreken uitvoeringstijd. |
 
 Deze metriek wordt geschreven met behulp van uitgevers die met de `add` parameter (vergelijkbaar met het toevoegen van tests). Er zijn momenteel twee opties:

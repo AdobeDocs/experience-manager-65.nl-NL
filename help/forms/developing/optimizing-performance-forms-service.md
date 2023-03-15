@@ -1,8 +1,8 @@
 ---
 title: De prestaties van de Forms Service optimaliseren
-seo-title: De prestaties van de Forms Service optimaliseren
+seo-title: Optimizing the Performance of theForms Service
 description: Stel uitvoeringsopties in bij het weergeven van een formulier en sla XDP-bestanden op in de opslagplaats om de prestaties van de Forms-service te optimaliseren.
-seo-description: Stel uitvoeringsopties in bij het weergeven van een formulier en sla XDP-bestanden op in de opslagplaats om de prestaties van de Forms-service te optimaliseren.
+seo-description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
-
 
 # De prestaties van de Forms-service optimaliseren {#optimizing-the-performance-of-theforms-service}
 
@@ -30,9 +29,9 @@ Bij het weergeven van een formulier kunt u uitvoeringsopties instellen die de pr
 
 >[!NOTE]
 >
->Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
+>Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende taken uit om de prestaties van de Forms-service te optimaliseren tijdens het genereren van een formulier:
 
@@ -48,18 +47,18 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms Client API-object maken**
 
-Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient`-object. Als u de Forms-API voor webservices gebruikt, maakt u een `FormsService`-object.
+Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de Forms-webservice-API gebruikt, maakt u een `FormsService` object.
 
 **Opties voor het uitvoeren van de prestaties instellen**
 
 U kunt de volgende uitvoeringsopties voor de prestaties instellen om de prestaties van de Forms-service te verbeteren:
 
-* **Formulier in cache plaatsen**: U kunt een formulier dat als PDF is gegenereerd, in de cache van de server plaatsen. Elk formulier wordt in de cache geplaatst nadat het voor het eerst wordt gegenereerd. Als het formulier in de cache vervolgens wordt gerenderd en het nieuwer is dan de tijdstempel van het formulierontwerp, wordt het formulier opgehaald uit de cache. Door formulieren in cache te plaatsen, verbetert u de prestaties van de Forms-service, omdat het formulierontwerp niet hoeft op te halen uit een opslagplaats.
+* **Formulier in cache plaatsen**: U kunt een formulier dat als PDF wordt weergegeven, in het cachegeheugen van de server in cache plaatsen. Elk formulier wordt in de cache geplaatst nadat het voor het eerst wordt gegenereerd. Als het formulier in de cache vervolgens wordt gerenderd en het nieuwer is dan de tijdstempel van het formulierontwerp, wordt het formulier opgehaald uit de cache. Door formulieren in cache te plaatsen, verbetert u de prestaties van de Forms-service, omdat het formulierontwerp niet hoeft op te halen uit een opslagplaats.
 * Het kan langer duren om formulierhulplijnen (afgekeurd) te renderen dan andere transformatietypen. U wordt aangeraden hulplijnen (afgekeurd) in cache te plaatsen om de prestaties te verbeteren.
-* **Standalone optie**: Als u niet wilt dat de Forms-service serverberekeningen uitvoert, kunt u de optie Standalone instellen op  `true`, wat ertoe leidt dat formulieren zonder statusinformatie worden gegenereerd. Statusinformatie is nodig als u een interactief formulier wilt genereren voor een eindgebruiker die vervolgens gegevens in het formulier invoert en het formulier terugstuurt naar de Forms-service. De Forms-service voert vervolgens een berekeningsbewerking uit en geeft het formulier weer aan de gebruiker met de resultaten die in het formulier worden weergegeven. Als een formulier zonder statusinformatie wordt teruggestuurd naar de Forms-service, zijn alleen de XML-gegevens beschikbaar en worden geen berekeningen op de server uitgevoerd.
-* **Gelijkmatig gemaakte PDF**: Een gelineariseerd PDF-bestand is zo geordend dat efficiënte incrementele toegang in een netwerkomgeving mogelijk is. Het PDF-bestand is in alle opzichten een geldige PDF en is compatibel met alle bestaande viewers en andere PDF-toepassingen. Een gelineariseerde PDF kan dus worden weergegeven terwijl deze nog wordt gedownload.
-* Deze optie verbetert de prestaties niet wanneer een PDF-formulier op de client wordt weergegeven.
-* **GuideRSL, optie**: Hiermee schakelt u het genereren van een formulierhulplijn (afgekeurd) in met gezamenlijke bibliotheken bij uitvoering. Dit betekent dat de eerste aanvraag een kleiner SWF-bestand en grotere gedeelde bibliotheken downloadt die in de cache van de browser zijn opgeslagen. Zie RSL in de documentatie van Flex voor meer informatie.
+* **Standalone, optie**: Als u niet wilt dat de Forms-service serverberekeningen uitvoert, kunt u de optie Standalone instellen op `true`, wat ertoe leidt dat formulieren worden gegenereerd zonder statusinformatie. Statusinformatie is nodig als u een interactief formulier wilt genereren voor een eindgebruiker die vervolgens gegevens in het formulier invoert en het formulier terugstuurt naar de Forms-service. De Forms-service voert vervolgens een berekeningsbewerking uit en geeft het formulier weer aan de gebruiker met de resultaten die in het formulier worden weergegeven. Als een formulier zonder statusinformatie wordt teruggestuurd naar de Forms-service, zijn alleen de XML-gegevens beschikbaar en worden geen berekeningen op de server uitgevoerd.
+* **Lineaire PDF**: Een gelineariseerd PDF-bestand is geordend om efficiënte incrementele toegang in een netwerkomgeving mogelijk te maken. Het PDF-bestand is in alle opzichten geldig PDF en is compatibel met alle bestaande viewers en andere PDF-toepassingen. Een gelineariseerde PDF kan dus worden weergegeven terwijl het bestand nog wordt gedownload.
+* Deze optie verbetert de prestaties niet wanneer een PDF-formulier op de client wordt gegenereerd.
+* **GuideRSL, optie**: Hiermee schakelt u het genereren van een formulierhulplijn (afgekeurd) in met gezamenlijke bibliotheken bij uitvoering. Dit betekent het eerste verzoek een kleiner SWF-bestand zal downloaden, plus grotere gedeelde bibliotheken die in het browsercache zijn opgeslagen. Zie RSL in de documentatie van Flex voor meer informatie.
 * U kunt ook de prestaties van de Forms-service verbeteren door een formulier op de client te genereren. (Zie [Forms renderen op de client](/help/forms/developing/rendering-forms-client.md).)
 
 **Het formulier renderen**
@@ -84,7 +83,7 @@ Nadat de Forms-service een formulier heeft gegenereerd, wordt een formuliergegev
 
 [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-### Prestaties optimaliseren met de Java API {#optimize-the-performance-using-the-java-api}
+### De prestaties optimaliseren met de Java API {#optimize-the-performance-using-the-java-api}
 
 Een formulier met optimale prestaties renderen met de Forms API (Java):
 
@@ -94,34 +93,34 @@ Een formulier met optimale prestaties renderen met de Forms API (Java):
 
 1. Een Forms Client API-object maken
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Opties voor het uitvoeren van de prestaties instellen
 
-   * Maak een `PDFFormRenderSpec`-object met de constructor ervan.
-   * Stel de optie voor de cache van het formulier in door de methode `setCacheEnabled` van het object `PDFFormRenderSpec` aan te roepen en `true` door te geven.
-   * Stel de lineaire optie in door de methode `PDFFormRenderSpec` van het object `setLinearizedPDF` aan te roepen en `true.` door te geven
+   * Een `PDFFormRenderSpec` object met behulp van de constructor.
+   * Stel de optie voor de cache van het formulier in door de `PDFFormRenderSpec` object `setCacheEnabled` methode en doorgeven `true`.
+   * Stel de optie Gelineariseerd in door de `PDFFormRenderSpec` object `setLinearizedPDF` methode en doorgeven `true.`
 
 1. Het formulier renderen
 
-   Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+   De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
-   * Een object `com.adobe.idp.Document` dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een leeg `com.adobe.idp.Document`-object door.
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat om de prestaties te verbeteren.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * A `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een lege waarde door `com.adobe.idp.Document` object.
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat om de prestaties te verbeteren.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
 
-   De methode `renderPDFForm` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
-   * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object aan te roepen.`FormsResult`
-   * Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `com.adobe.idp.Document` aan te roepen.
-   * Maak een bytearray en vul deze met de formuliergegevensstroom door de methode `read`van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
-   * Roep de methode `javax.servlet.ServletOutputStream` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
+   * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read`en de bytearray doorgeven als een argument.
+   * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 
@@ -142,38 +141,38 @@ Een formulier met optimale prestaties renderen met de Forms API (webservice):
 
 1. Een Forms Client API-object maken
 
-   Maak een `FormsService`-object en stel de verificatiewaarden in.
+   Een `FormsService` -object en stel verificatiewaarden in.
 
 1. Opties voor het uitvoeren van de prestaties instellen
 
-   * Maak een `PDFFormRenderSpec`-object met de constructor ervan.
-   * Stel de optie voor de cache van het formulier in door de methode `setCacheEnabled` van het object `PDFFormRenderSpec` aan te roepen en waar door te geven.
-   * Stel de zelfstandige optie in door de methode `setStandAlone` van het object `PDFFormRenderSpec` aan te roepen en waar door te geven.
-   * Stel de lineaire optie in door de methode `PDFFormRenderSpec` van het object `setLinearizedPDF` aan te roepen en waar door te geven.
+   * Een `PDFFormRenderSpec` object met behulp van de constructor.
+   * Stel de optie voor de cache van het formulier in door de `PDFFormRenderSpec` object `setCacheEnabled` en waar doorgeven.
+   * Stel de zelfstandige optie in door de `PDFFormRenderSpec` object `setStandAlone` en waar doorgeven.
+   * Stel de optie Gelineariseerd in door de `PDFFormRenderSpec` object `setLinearizedPDF` en waar doorgeven.
 
 1. Het formulier renderen
 
-   Roep de methode `renderPDFForm` van het object `FormsService` aan en geef de volgende waarden door:
+   De `FormsService` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
-   * Een object `BLOB` dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null` door.
-   * Een `PDFFormRenderSpecc`-object dat uitvoeringsopties opslaat.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
-   * Een leeg object `com.adobe.idp.services.holders.BLOBHolder` dat door de methode is gevuld. Hiermee slaat u het gerenderde PDF-formulier op.
-   * Een leeg object `javax.xml.rpc.holders.LongHolder` dat door de methode is gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
-   * Een leeg object `javax.xml.rpc.holders.StringHolder` dat door de methode is gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder`-object dat de resultaten van deze bewerking zal bevatten.
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`.
+   * A `PDFFormRenderSpecc` -object dat uitvoeringsopties opslaat.
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
+   * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
+   * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
+   * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
 
-   Met de methode `renderPDFForm` wordt het object `com.adobe.idp.services.holders.FormsResultHolder` dat als laatste argumentwaarde is doorgegeven, gevuld met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Maak een `FormResult`-object door de waarde op te halen van het `com.adobe.idp.services.holders.FormsResultHolder`-gegevenslid van het object.`value`
-   * Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
-   * Maak een `BLOB`-object dat formuliergegevens bevat door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
-   * Maak een bytearray en vul deze door de methode `getBinaryData` van het object `BLOB` aan te roepen. Deze taak wijst de inhoud van het `FormsResult` voorwerp aan de byteserie toe.
-   * Roep de methode `javax.servlet.http.HttpServletResponse` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+   * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
+   * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
+   * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
+   * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
+   * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 

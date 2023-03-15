@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot AEM Forms
-seo-title: Inleiding tot AEM Forms
+seo-title: Introduction to AEM Forms
 description: Met Adobe Experience Manager Forms kunnen zakelijke gebruikers aantrekkelijke, responsieve en adaptieve formulieren integreren in websites en mobiele sites, waardoor het digitale inschrijfproces wordt vereenvoudigd en de conversietarieven van klanten worden verhoogd.
-seo-description: Met Adobe Experience Manager Forms kunnen zakelijke gebruikers aantrekkelijke, responsieve en adaptieve formulieren integreren in websites en mobiele sites, waardoor het digitale inschrijfproces wordt vereenvoudigd en de conversietarieven van klanten worden verhoogd.
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,17 @@ topic-tags: introduction
 discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
-
 # Inleiding tot AEM Forms{#introduction-to-aem-forms}
 
-Zie [Nieuwe functies in AEM Forms](../../forms/using/whats-new.md) voor informatie over de nieuwste functies en verbeteringen in AEM Forms.
+Voor informatie over de nieuwste functies en verbeteringen in AEM Forms raadpleegt u [Nieuwe functies in AEM Forms](../../forms/using/whats-new.md).
 
 ## Informatie over AEM Forms {#about-aem-forms}
 
@@ -31,7 +30,7 @@ AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie
 
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
-AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md) voor meer informatie.
+AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie voor meer informatie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
@@ -39,7 +38,7 @@ AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptiev
 
 Samenvattend biedt AEM Forms krachtige functies voor formulierbeheer, zoals de volgende, die handmatige processen verminderen en de tevredenheid van klanten verhogen.
 
-* Een gecentraliseerd Forms Portal voor het ontwerpen en implementeren van dynamische formulieren, waaronder PDF-, HTML5- en adaptieve formulieren
+* Een gecentraliseerd Forms Portal voor het ontwerpen en implementeren van dynamische formulieren, waaronder PDF, HTML5 en adaptieve formulieren
 * Een gebruiksvriendelijke grafische gebruikersinterface waarmee zakelijke gebruikers eenvoudig formulieren kunnen importeren, beheren, voorvertonen en publiceren
 * Een responsieve formuliermap met krachtige zoekfuncties die trefwoorden, tags en metagegevens gebruiken
 * Dynamische detectie van het apparaat en de locatie van een gebruiker om het formulier op de juiste wijze te genereren via internet en mobiele kanalen
@@ -51,7 +50,7 @@ Samenvattend biedt AEM Forms krachtige functies voor formulierbeheer, zoals de v
 
 Met AEM Forms kunt u nieuwe en bestaande formulieren uitbreiden om te maken:
 
-* Pixel Perfect, gepagineerde HTML en PDF forms die er bijna als papier uitzien, of
+* pixelperfecte, gepagineerde HTML en PDF forms die er bijna als papier uitzien, of
 * adaptieve formulieren die automatisch worden weergegeven voor het apparaat en de browser van de gebruiker.
 
 **PDF forms**
@@ -60,7 +59,7 @@ PDF forms kunnen offline worden ingevuld, lokaal worden opgeslagen en formulierg
 
 **HTML-formulieren**
 
-HTML5-browserformulieren kunnen zowel op mobiele apparaten als in desktopbrowsers worden weergegeven. U kunt HTML-formulieren elektronisch ondertekenen met de services Krabbelen of eSign.
+HTML5 browserformulieren kunnen zowel op mobiele apparaten als in desktopbrowsers worden weergegeven. U kunt HTML-formulieren elektronisch ondertekenen met behulp van de services Krabbelen of eSign.
 
 **Aangepaste formulieren**
 
@@ -93,7 +92,7 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 * Workflowontwerpomgeving voor slepen en neerzetten
 * ECM (Enterprise Content Management Connectors)
 * Ondersteuning voor open standaarden, inclusief XML en SOAP, om formuliergegevens te verbinden met bedrijfssystemen
-* De uit-van-de-doos HTML- rapporten controleren achterlogboeken, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
+* De uit-van-de-doos rapporten van de HTML controleren achterstand, werkrijen, en Zeer belangrijke Indicatoren van Prestaties (KPIs)
 * Aanpasbare dashboards voor real-time inzicht in bedrijfsverrichtingen
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 

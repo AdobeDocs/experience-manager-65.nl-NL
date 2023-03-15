@@ -2,21 +2,20 @@
 title: Planning
 seo-title: Planning
 description: Wat u moet weten om voor uw test te plannen
-seo-description: Wat u moet weten om voor uw test te plannen
+seo-description: What you need to know to plan for your test
 uuid: 29b1127a-da85-46ed-98e7-1c983eb40cfe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
-
 
 # Planning{#planning}
 
@@ -26,29 +25,29 @@ In dit document wordt beschreven wat u moet weten om uw test te plannen. Bovendi
 * [De testcase definiëren](/help/sites-developing/test-cases.md)
 * [Testen - wanneer en met wie?](/help/sites-developing/when-who.md)
 
-## Voordat u {#before-you-start} begint
+## Voordat u begint {#before-you-start}
 
 Voordat u begint met de eigenlijke analyse en definitie van tests, bekijkt u de volgende informatie:
 
-**AEM Architectuur**  - zie Basisconcepten om zich aan de architectuur en basisprincipes van AEM te introduceren.
+**AEM architectuur** - Zie Basisconcepten om uzelf te introduceren aan de architectuur en basisbeginselen van AEM.
 
-**Documentatie**  - Zie om het even welke documentatiesecties, of hoe te artikelen, voor verdere informatie.
+**Documentatie** - Raadpleeg een van de documentatiesecties of Hoe kan ik-artikelen voor meer informatie.
 
-**Basisprincipes van tests**  - U moet op de hoogte zijn van de basisbeginselen van softwaretests en kwaliteitsborging. U hebt bij voorkeur ervaring met het testen van projecten.
+**Basisbeginselen van tests** - U dient op de hoogte te zijn van de basisbeginselen van Software Testing en Quality Assurance. U hebt bij voorkeur ervaring met het testen van projecten.
 
 Er zijn veel websites, boeken en cursussen die met dergelijke beginselen te maken hebben en die zullen dus niet in dit document in detail worden behandeld.
 
-**Veronderstellingen om te vermijden**  - De grootste veronderstelling (die regelmatig wordt gemaakt) is dat uw website miljoenen verzoeken elke dag zal moeten onderhouden. In bepaalde omstandigheden kan dit waar zijn, maar het kan niet worden aangenomen.
+**Veronderstellingen om te vermijden** - De grootste veronderstelling (die regelmatig wordt gemaakt) is dat uw website miljoenen verzoeken elke dag zal moeten bedienen. In bepaalde omstandigheden kan dit waar zijn, maar het kan niet worden aangenomen.
 
 Hoewel toekomstige getallen niet met 100% nauwkeurigheid kunnen worden voorspeld, geeft het observeren van uw bestaande site en het ervaren verkeer een goede indicatie. U kunt ramingen dan afhankelijk maken van de factor waardoor u verwacht/hoopt het verkeer zal stijgen.
 
-**Toezegging aan kwaliteit**  - Het is van het grootste belang dat iedereen die test neutraal blijft en simpelweg de resultaten van de uitgevoerde tests rapporteert.
+**Kwaliteit** - Het is van het grootste belang dat iedereen die test neutraal blijft en alleen maar de resultaten van de uitgevoerde tests meldt.
 
 Het is de verantwoordelijkheid van de projectbeheerder om afhankelijk van de resultaten een besluit te nemen over een actie of acties.
 
-**Betrokken**  - Hoewel het de verantwoordelijkheid van de projectbeheerder is om ervoor te zorgen dat alle partijen volledig betrokken zijn bij alle vergaderingen (status, workshops, enz.), moet u ook proberen zo vroeg mogelijk betrokken te raken bij de projectcyclus, inclusief de processen voor het verzamelen van informatie en de analyse van de vereisten.
+**Betrokken worden** - Hoewel het de verantwoordelijkheid van de projectbeheerder is om ervoor te zorgen dat alle partijen volledig betrokken zijn bij alle vergaderingen (status, workshops, enz.), moet u ook proberen zo vroeg mogelijk in de projectcyclus betrokken te raken, inclusief de processen voor het verzamelen van informatie en het analyseren van de vereisten.
 
-**Neem de klant**  bij een soortgelijk thema op, probeer de klant (waar mogelijk) te betrekken bij het definiëren van uw testcase en plan.
+**De klant betrekken** - Probeer bij een vergelijkbaar thema de klant (waar mogelijk) te betrekken bij het definiëren van uw testcase en -plan.
 
 ## Typen tests {#types-of-tests}
 
@@ -58,21 +57,21 @@ Er zijn verschillende standaardclassificaties van tests die geschikt zijn voor g
 >
 >Deze worden vermeld in chronologische volgorde van toepassing.
 
-**De Tests**  van eenheden - (gewoonlijk) tests die door het ontwikkelingsteam worden gemaakt om ervoor te zorgen dat de individuele elementen correct - zij het afzonderlijk.
+**Eenheden testen** - Tests (gewoonlijk) die door het ontwikkelingsteam worden uitgevoerd om ervoor te zorgen dat de afzonderlijke elementen zich correct gedragen - zij het afzonderlijk.
 
-**Integratietests**  - Tests modules indien gecombineerd. Deze tests worden uitgevoerd na het testen van de eenheid, maar vóór het testen van het systeem.
+**Integratietests** - Tests modules indien gecombineerd. Deze tests worden uitgevoerd na het testen van de eenheid, maar vóór het testen van het systeem.
 
-**Rooktests** : dit zijn snelle en vuile tests die worden gebruikt om te bewijzen dat de software actief is en dat functionaliteit op hoog niveau beschikbaar is. De details worden niet getest.
+**Rooktests** - Dit zijn snelle en vuile tests die worden gebruikt om te bewijzen dat de software actief is en dat functionaliteit op hoog niveau beschikbaar is. De details worden niet getest.
 
-**Functionele tests**  - Deze worden gebruikt om de functionaliteit van de software te testen. Er wordt een serie tests ontworpen om alle functionele details te bestrijken, zowel met verwachte als met onverwachte en/of onjuiste input.
+**Functionele tests** - Deze worden gebruikt om de functionaliteit van de software te testen. Er wordt een serie tests ontworpen om alle functionele details te bestrijken, zowel met verwachte als met onverwachte en/of onjuiste input.
 
 Zwartboxtests zijn functionele tests van een complete eenheid/onderdeel/module, uitgevoerd zonder kennis van de interne werking van het element in kwestie.
 
-**Systeemtests** : deze testen het hele systeem nadat het volledig is geïntegreerd en op een geschikt platform is geïnstalleerd.
+**Systeemtests** - Deze test het hele systeem nadat het volledig is geïntegreerd en op een geschikt platform is geïnstalleerd.
 
 Ze testen de functionaliteit op een black-box-basis.
 
-**Prestatietests**  - Prestatietests zijn cruciaal bij het testen van AEM.
+**Prestatietests** - Prestatietests zijn van cruciaal belang bij AEM.
 
 Deze worden gebruikt om de prestaties onder verschillende omstandigheden te illustreren:
 
@@ -92,35 +91,35 @@ Deze worden gebruikt om de prestaties onder verschillende omstandigheden te illu
 
 De resultaten worden vervolgens gebruikt om de toepassing af te stemmen.
 
-**Stresstests**  - Stresstests worden uitgevoerd om te bevestigen hoe een onderdeel of toepassing zich gedraagt onder extreme omstandigheden. Deze tests worden met name gebruikt om aan te tonen hoe het gedrag verslechtert, wanneer het element zal mislukken - en hoe.
+**Stresstests** - Er worden stresstests uitgevoerd om te bevestigen hoe een onderdeel of toepassing zich gedraagt onder extreme omstandigheden. Deze tests worden met name gebruikt om aan te tonen hoe het gedrag verslechtert, wanneer het element zal mislukken - en hoe.
 
-**Regressietests**  - Regressietests worden gebruikt om te bevestigen dat de functionaliteit die al in een vorige versie van de software is bewezen, nog steeds correct werkt.
+**Regressietests** - Regressietests worden gebruikt om te bevestigen dat de functionaliteit die al is bewezen in een eerdere versie van de software nog steeds correct werkt.
 
 Regressietests zijn (indien mogelijk) goede kandidaten voor automatisering om ervoor te zorgen dat ze snel en consistent kunnen worden herhaald.
 
-**Acceptatietests**  - Acceptatietests zijn een speciale categorie omdat ze worden gebruikt om aan te geven dat de klant het project accepteert.
+**Acceptatietests** - Acceptatietests zijn een speciale categorie, omdat ze worden gebruikt om aan te geven dat de klant het project accepteert.
 
 De lijst van goedkeuringstests kan een combinatie van tests van de diverse hierboven vermelde categorieën bevatten, en wordt geselecteerd om te verifiëren dat het project aan de vereisten van de klant voldoet
 
-Zie [Acceptatie en afmelding](/help/sites-developing/acceptance-signoff.md) voor meer informatie.
+Zie [Aanvaarding en afmelding](/help/sites-developing/acceptance-signoff.md) voor meer informatie .
 
 ## Aan de slag {#getting-started}
 
 Voordat u begint met uw gedetailleerde testcase en testplan, kunt u:
 
-**Bepaal de doelstellingen**  - bepaal uw doelstellingen op hoog niveau om als uitgangspunt voor verfijning te handelen aangezien het testen te werk gaat. U wilt:
+**De doelstellingen definiëren** - Definieer uw doelstellingen op hoog niveau om als uitgangspunt te dienen voor fijnafstemming tijdens het testen. U wilt:
 
 * Test de functionaliteit volgens de gedetailleerde specificaties.
-* Test Prestaties volgens [Doelwaarden](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
+* Testprestaties volgens de [Doelwaarden](/help/managing/best-practices-further-reference.md#key-performance-indicators-and-target-metrics).
 
 onder andere.
 
-**Verzamel verkeersstatistieken van de bestaande website**  - Deze informatie kan uit de logboekdossiers worden gehaald - zie de Controle van Prestaties voor meer details.
+**Verkeersstatistieken verzamelen van de bestaande website** - Deze informatie kan uit de logboekdossiers worden gehaald - zie de Controle van Prestaties voor meer details.
 
 Deze cijfers geven een indicatie van het huidige verkeer (volume en spread) op de bestaande website en kunnen worden gebruikt om een uitgangspunt te vormen voor de nieuwe website.
 
-**Verzamel verkeersstatistieken van externe websites**  - Indien mogelijk kunt u proberen om verkeersstatistieken van andere websites voor vergelijking te verzamelen, maar deze cijfers worden niet altijd gepubliceerd.
+**Verkeersstatistieken verzamelen van externe websites** - Indien mogelijk kunt u proberen om verkeersstatistieken van andere websites te verzamelen ter vergelijking, maar deze cijfers worden niet altijd gepubliceerd.
 
-**Bevestig de Metriek**  van het Doel - de Metriek wordt gebruikt om kwantitatieve metingen voor de kwaliteit van de website te bepalen, aangezien zij de prestatiedoelstellingen vertegenwoordigen die moeten worden bereikt.
+**Doelgegevens bevestigen** - Metriek worden gebruikt om kwantitatieve metingen voor de kwaliteit van de website te definiëren, aangezien deze de te bereiken prestatiedoelstellingen vertegenwoordigen.
 
-Zij zouden aan het begin van het project, samen met de klant moeten worden bepaald. Zie [Doelwaarden](/help/sites-developing/planning.md) voor meer informatie.
+Zij zouden aan het begin van het project, samen met de klant moeten worden bepaald. Zie [Doelwaarden](/help/sites-developing/planning.md) voor meer informatie .

@@ -1,8 +1,8 @@
 ---
 title: Publikaties
-seo-title: Publikaties
+seo-title: Communities Notifications
 description: AEM Communities heeft meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
-seo-description: AEM Communities heeft meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
+seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
 uuid: 2f5ea4b5-7308-414e-a3f8-2e8aa76b1ef4
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in het community-lid.
 
-Meldingen zijn vergelijkbaar met [activiteiten](/help/communities/essentials-activities.md) en [abonnementen](/help/communities/subscriptions.md), omdat deze kunnen voortvloeien uit:
+Meldingen lijken op [activiteiten](/help/communities/essentials-activities.md) en [abonnementen](/help/communities/subscriptions.md) als gevolg van:
 
 * Het lid dat inhoud plaatst.
 * Het lid dat ervoor kiest een ander lid te volgen.
@@ -36,17 +36,17 @@ Wat meldingen onderscheidt van activiteiten en abonnementen is:
 
 * Een koppeling naar de sectie Meldingen staat altijd in de koptekst van een communitysite:
 
-   * Voor activiteiten moet de functie [activity stream](/help/communities/functions.md#activity-stream-function) worden opgenomen in de structuur van de communitysite.
-   * Abonnementen vereisen [configuratie van e-mail](/help/communities/email.md).
+   * De activiteiten vereisen [activity stream, functie](/help/communities/functions.md#activity-stream-function) op te nemen in de structuur van de site van de gemeenschap .
+   * Abonnementen vereist [configuratie van e-mail](/help/communities/email.md).
 
 * De implementatie van meldingen verloopt via schaalbare en pluggable kanalen:
 
    * Activiteiten zijn alleen beschikbaar op het web.
    * Abonnementen zijn alleen beschikbaar via e-mail.
 
-Vanaf de Gemeenschappen [FP1](/help/communities/deploy-communities.md#latestfeaturepack) zijn de beschikbare kennisgevingskanalen:
+Vanaf Gemeenschappen [FP1](/help/communities/deploy-communities.md#latestfeaturepack)De beschikbare kennisgevingskanalen zijn:
 
-* Het webkanaal dat wordt geopend via de koppeling `Notifications`.
+* Het webkanaal, toegankelijk via de `Notifications` koppeling.
 * Het e-mailkanaal, beschikbaar wanneer e-mail correct is geconfigureerd.
 
 Toekomstige kanalen zijn mobiel en desktop.
@@ -57,15 +57,15 @@ Toekomstige kanalen zijn mobiel en desktop.
 
 E-mail moet worden gevormd om het e-mailkanaal voor berichten functioneel te zijn.
 
-Zie [E-mail configureren](/help/communities/analytics.md) voor instructies voor het instellen van e-mail.
+Voor instructies over het instellen van e-mailberichten raadpleegt u [E-mail configureren](/help/communities/analytics.md).
 
 **Volgen inschakelen**
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [agenda](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md) en [commentaren](/help/communities/comments.md).
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [QnA](/help/communities/working-with-qna.md), [kalender](/help/communities/calendar.md), [bestandsbibliotheek](/help/communities/file-library.md), en [opmerkingen](/help/communities/comments.md).
 
 **Opmerking**:
 
-* Componenten die worden gebruikt binnen de community [sitesjablonen](/help/communities/sites.md) en [groepssjablonen](/help/communities/tools-groups.md) kunnen al zijn geconfigureerd om te volgen.
+* Onderdelen die binnen de gemeenschap worden gebruikt [sitesjablonen](/help/communities/sites.md) en [groepssjablonen](/help/communities/tools-groups.md) kan reeds worden gevormd om te volgen.
 
 * Gebruikersprofielen zijn al zo geconfigureerd dat andere leden deze kunnen volgen.
 
@@ -73,11 +73,11 @@ Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functi
 
 ![meldingen](assets/notifications.png)
 
-Met de knop **[!UICONTROL Follow]** kunt u vermeldingen volgen als activiteiten, abonnementen en/of meldingen. Elke keer dat de knop **[!UICONTROL Follow]** wordt geselecteerd, is het mogelijk een selectie in of uit te schakelen. De `Email Subscriptions` selectie is slechts aanwezig wanneer gevormd.
+De **[!UICONTROL Follow]** biedt een manier om vermeldingen als activiteiten, abonnementen en/of meldingen te volgen. Elke keer als **[!UICONTROL Follow]** is geselecteerd, is het mogelijk om een selectie in of uit te schakelen. De `Email Subscriptions` selectie is alleen aanwezig als dit is geconfigureerd.
 
-Als een methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **[!UICONTROL Following]**. Voor het gemak, is het mogelijk om `Unfollow All` te selecteren om alle methodes van een knevel te voorzien.
+Als een van de volgende methoden is geselecteerd, verandert de tekst van de knop in **[!UICONTROL Following]**. Voor het gemak is het mogelijk om `Unfollow All` om alle methoden uit te schakelen.
 
-De knop **[!UICONTROL Follow]** wordt weergegeven:
+De **[!UICONTROL Follow]** wordt weergegeven:
 
 * Wanneer u het profiel van een ander lid weergeeft.
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs:
@@ -94,9 +94,9 @@ Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, 
 
 Het webkanaal is altijd ingeschakeld.
 
-![meldingen14](assets/notifications1.png)
+![notifications14](assets/notifications1.png)
 
-Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van e-mail](/help/communities/email.md), biedt dezelfde instellingen als voor het webkanaal.
+Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van e-mail](/help/communities/email.md)biedt dezelfde instellingen als voor het webkanaal.
 
 Het e-mailkanaal is standaard uitgeschakeld.
 
@@ -110,25 +110,25 @@ Het kan door een lid worden aangezet, maar nog hangt van e-mail af die wordt gev
 
 ### Webmeldingen {#web-notifications}
 
-Een [wizard heeft een communitysite](/help/communities/sites-console.md) gemaakt en bevat nu een koppeling naar de functie `Notifications` in de kopbalk van de site boven de banner. In tegenstelling tot berichten, worden de berichten gecreeerd voor elke communautaire plaats, terwijl de berichten tijdens het proces van de plaatsverwezenlijking moeten worden toegelaten.
+A [wizard heeft een communitysite gemaakt](/help/communities/sites-console.md) bevat nu een koppeling naar de `Notifications` in de koptekstbalk van de site boven de banner. In tegenstelling tot berichten, worden de berichten gecreeerd voor elke communautaire plaats, terwijl de berichten tijdens het proces van de plaatsverwezenlijking moeten worden toegelaten.
 
-Als u de gepubliceerde site bezoekt en de koppeling `Notifications` selecteert, worden alle meldingen voor het lid weergegeven.
+Als u de gepubliceerde site wilt bezoeken, selecteert u de optie `Notifications` via de koppeling worden alle meldingen voor het lid weergegeven .
 
-![meldingen4](assets/notifications4.png)
+![notifications4](assets/notifications4.png)
 
 ### E-mailmeldingen {#email-notifications}
 
 Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een koppeling naar de inhoud op het web.
 
-![meldingen5](assets/notifications5.png)
+![notifications5](assets/notifications5.png)
 
 ## E-mailberichten aanpassen {#customize-email-notifications}
 
-Organisaties kunnen de e-mailmeldingen aanpassen door [de sjablonen op **/libs/settings/community/templates/email/html** te bedekken.](/help/communities/client-customize.md#overlays)
+Organisaties kunnen de e-mailmeldingen aanpassen door [bedekken](/help/communities/client-customize.md#overlays) de sjablonen op **/libs/settings/community/templates/email/html**.
 
-Als u bijvoorbeeld de e-mailmeldingen voor vermeldingen wilt wijzigen (voor een onderdeel van een gemeenschap), voegt u een **if** voorwaarde voor werkwoord **specify** toe in de sjablonen van de componenten waarvoor u de ondersteuning **@mtations** hebt ingeschakeld.
+Als u bijvoorbeeld de e-mailmeldingen voor een melding wilt wijzigen (voor een onderdeel van een community), voegt u een **indien** voorwaarde voor werkwoord **noemen** in de malplaatjes van de componenten waarvoor u toeliet **@mnotices** ondersteuning.
 
-Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon voor het vak op: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/en**
+Als u de sjabloon voor e-mailmeldingen voor @notify in blogopmerkingen wilt wijzigen, plaatst u de sjabloon voor het vak op: **/libs/settings/community/templates/email/html/social.journal.components.hbs.comment/nl**
 
 ```java
 {{#equals this.verb "mention"}}\

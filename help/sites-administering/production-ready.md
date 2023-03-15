@@ -1,38 +1,37 @@
 ---
 title: AEM uitvoeren in productielocatie
-seo-title: AEM uitvoeren in productielocatie
+seo-title: Running AEM in Production Ready Mode
 description: Leer hoe u AEM kunt uitvoeren in de productielodus.
-seo-description: Leer hoe u AEM kunt uitvoeren in de productielodus.
+seo-description: Learn how to run AEM in Production Ready Mode.
 uuid: f48c8bae-c72f-4772-967e-f1526f096399
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
-translation-type: tm+mt
-source-git-commit: 730a690bcbf5935ca00ed69c27ce108cb2664c22
+exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '383'
 ht-degree: 3%
 
 ---
 
+# AEM uitvoeren in productielocatie{#running-aem-in-production-ready-mode}
 
-# AEM uitvoeren in productieklaar{#running-aem-in-production-ready-mode}
-
-Met AEM 6.1 introduceert Adobe de nieuwe `"nosamplecontent"`-runmode die de stappen moet automatiseren die nodig zijn om een AEM-instantie voor te bereiden voor implementatie in een productieomgeving.
+Met AEM 6.1 introduceert Adobe de nieuwe `"nosamplecontent"` runmode gericht op automatisering van de stappen die nodig zijn om een AEM voor te bereiden voor gebruik in een productieomgeving.
 
 De nieuwe runmode zal niet alleen automatisch de instantie vormen om aan de veiligheid beste praktijken te houden die in veiligheidscontrolelijst worden beschreven, maar zal ook alle toepassingen en configuraties van de steekproefgeometrixx in het proces verwijderen.
 
 >[!NOTE]
 >
->Aangezien de AEM productieklaar-klaar modus om praktische redenen slechts een groot deel van de taken omvat die nodig zijn om een instantie te beveiligen, wordt u ten zeerste aangeraden de [Beveiligingschecklist](/help/sites-administering/security-checklist.md) te raadplegen voordat u met uw productieomgeving gaat werken.
+>Aangezien de AEM productieklaar om praktische redenen slechts een groot deel van de taken omvat die nodig zijn om een instantie te beveiligen, wordt u ten zeerste aangeraden de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voordat u met uw productieomgeving gaat leven.
 >
->Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [Het toelaten van CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md).
+>Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [CRXDE Lite inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Als u AEM wilt uitvoeren in de modus gereed voor productie, hoeft u alleen `nosamplecontent` via de runmode-switch `-r` toe te voegen aan uw bestaande opstartargumenten:
+Als u AEM wilt uitvoeren in de productieloestaanmodus, hoeft u alleen maar het volgende te doen: `nosamplecontent` via de `-r` runmode schakelaar aan uw bestaande startargumenten:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -44,20 +43,20 @@ U kunt bijvoorbeeld de productie gebruiken die klaar is om een auteurinstantie t
 java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mongo.uri=mongodb://remoteserver:27017 -Doak.mongo.db=aem-author
 ```
 
-## Verandert een deel van de Klaar Wijze {#changes-part-of-the-production-ready-mode} van de Productie
+## Verandert een deel van de Productie Klaar Wijze {#changes-part-of-the-production-ready-mode}
 
 Meer specifiek, zullen de volgende configuratieveranderingen worden uitgevoerd wanneer AEM op productie klaar wijze in werking wordt gesteld:
 
-1. De **CRXDE-ondersteuningspakket** ( `com.adobe.granite.crxde-support`) is standaard uitgeschakeld in de productielocmodus. Het kan op elk ogenblik van de Adobe openbare Maven bewaarplaats worden geïnstalleerd. Versie 3.0.0 is vereist voor AEM 6.1.
+1. De **CRXDE-ondersteuningsbundel** ( `com.adobe.granite.crxde-support`) is standaard uitgeschakeld in de modus voor productie-klaar. Het kan op elk ogenblik van de Adobe openbare Maven bewaarplaats worden geïnstalleerd. Versie 3.0.0 is vereist voor AEM 6.1.
 
-1. De **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`)-bundel is alleen beschikbaar in **auteur**-instanties.
+1. De **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`) is alleen beschikbaar op **auteur** instanties.
 
 1. Nieuwe gebruikers moeten het wachtwoord wijzigen bij de eerste aanmelding. Dit is niet van toepassing op de beheerder.
-1. **Genereer foutopsporingsinformatie uitgeschakeld** voor de  **Apache Sling Java Script Handler**.
+1. **Foutopsporingsinfo genereren** is uitgeschakeld voor de **Apache Sling Java Script Handler**.
 
-1. **Toegewezen** inhoud en  **genereren foutopsporingsinformatie uitgeschakeld voor de JSP Script-handler**   **** Apache Sling.
+1. **Toegewezen inhoud** en **Foutopsporingsinfo genereren** zijn uitgeschakeld voor de **Apache Sling JSP Script Handler**.
 
-1. Het **Day CQ WCM-filter** wordt ingesteld op `edit` op **auteur** en `disabled` op **publish**-instanties.
+1. De **Day CQ WCM-filter** is ingesteld op `edit` op **auteur** en `disabled` op **publish** instanties.
 
 1. De **Adobe Granite HTML Library Manager** is geconfigureerd met de volgende instellingen:
 
@@ -70,10 +69,9 @@ Meer specifiek, zullen de volgende configuratieveranderingen worden uitgevoerd w
 
 | **Configuratie** | **Auteur** | **Publicatie** |
 |---|---|---|
-| TXT-uitvoering | disabled | uitgeschakeld |
-| HTML-uitvoering | uitgeschakeld | uitgeschakeld |
+| TXT-uitvoering | disabled | disabled |
+| HTML-uitvoering | disabled | disabled |
 | JSON-uitvoering | enabled | enabled |
-| XML-uitvoering | uitgeschakeld | uitgeschakeld |
+| XML-uitvoering | disabled | disabled |
 | json.maximumresults | 1000 | 100 |
-| Automatische index | uitgeschakeld | uitgeschakeld |
-
+| Automatische index | disabled | disabled |

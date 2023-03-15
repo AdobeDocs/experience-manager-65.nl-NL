@@ -1,32 +1,31 @@
 ---
 title: Essentiële elementen van revisies
-seo-title: Essentiële elementen van revisies
+seo-title: Reviews Essentials
 description: Samenvattingscomponenten van revisies en revisies
-seo-description: Samenvattingscomponenten van revisies en revisies
+seo-description: Reviews and Review Summary components
 uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
-translation-type: tm+mt
-source-git-commit: 62f2a11491e427a13cecae75c225ed41a44783cd
+exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
-
 
 # Essentiële elementen van revisies {#reviews-essentials}
 
 Deze functie bestaat uit twee componenten die samenwerken: Overzicht van beoordelingen en beoordelingen bekijken.
 
-Revisies is een samengesteld onderdeel op basis van een [opmerkingssysteem](essentials-comments.md) dat een of meer [rating](rating-basics.md) (tally)-componenten bevat.
+Revisies is een samengesteld onderdeel op basis van een [opmerkingssysteem](essentials-comments.md) die een of meer [beoordeling](rating-basics.md) (tally) componenten.
 
 Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten zich registreren en aanmelden om een revisie toe te voegen. De ondertekende bezoeker (lid) kan zijn beoordeling op elk ogenblik bijwerken.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 ### Revisies {#reviews}
 
@@ -38,7 +37,7 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>inclusief</strong></a></td>
-   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerpmodus </i>modus</td>
+   <td>Ja - eigenschappen kunnen worden bewerkt in <i>ontwerp </i>mode</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td>
@@ -65,7 +64,7 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
 |---|---|
 | [**inclusief**](scf.md#add-or-include-a-communities-component) | Ja - eigenschappen kunnen worden bewerkt in *design *mode |
 | [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **sjablonen** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **eigenschappen** | Zie [Revisies gebruiken](reviews.md) |
 
@@ -79,19 +78,18 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
 
 * [Aanpassingen op de server](server-customize.md)
 
-### Toegang tot Geposte Revisies (UGC) {#accessing-posted-reviews-ugc}
+### Toegang tot Geposte recensies (UGC) {#accessing-posted-reviews-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
-
+* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.

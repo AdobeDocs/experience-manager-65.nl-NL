@@ -1,23 +1,22 @@
 ---
 title: De sendToPrinter-API gebruiken
-seo-title: De sendToPrinter-API gebruiken
+seo-title: Using the sendToPrinter API
 description: Een document naar de printer verzenden met de service sendToPrinter.
-seo-description: Een document naar de printer verzenden met de service sendToPrinter.
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '358'
 ht-degree: 2%
 
 ---
 
-
-# De sendToPrinter-API {#using-the-sendtoprinter-api} gebruiken
+# De sendToPrinter-API gebruiken {#using-the-sendtoprinter-api}
 
 ## Overzicht {#overview}
 
@@ -35,7 +34,7 @@ In AEM Forms kunt u een document naar de printer verzenden met de SendToPrinter-
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: De uitvoerservice ondersteunt het CIFS-afdrukprotocol (Common Internet File System).
 
-## SendToPrinter Service {#using-sendtoprinter-service} gebruiken
+## De SendToPrinter-service gebruiken {#using-sendtoprinter-service}
 
 De onderstaande tabel bevat:
 
@@ -71,4 +70,3 @@ Verificatie wordt alleen ondersteund voor CIFS-afdrukken. Geef voor verificatie 
 1. Ga naar **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
 1. Voer onbewerkte tekst in en klik op **[!UICONTROL Protect]**.
-

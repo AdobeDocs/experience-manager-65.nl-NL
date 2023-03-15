@@ -1,8 +1,8 @@
 ---
 title: Bronnenconsole inschakelen
-seo-title: Bronnenconsole inschakelen
+seo-title: Enablement Resources Console
 description: De console van Middelen is waar de Managers van Enablement creeren, leiden en middelen toewijzen aan leden van een enablement communautaire plaats
-seo-description: De console van Middelen is waar de Managers van Enablement creeren, leiden en middelen toewijzen aan leden van een enablement communautaire plaats
+seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
 uuid: 52445b39-c339-4b39-8004-eb36de99bced
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ role: Admin
 exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2837'
 ht-degree: 0%
 
 ---
 
 # Bronnenconsole inschakelen {#enablement-resources-console}
 
-Voor AEM Communities, is de console van Middelen waar [Managers Enablement](users.md) creeer, beheer en wijs middelen aan leden van een enablement communautaire plaats toe.
+Voor AEM Communities is de Resources Console waar [Enablement Managers](users.md) creeer, beheer en wijs middelen aan leden van een enablement communautaire plaats toe.
 
 ## Vereisten {#requirements}
 
@@ -29,7 +29,7 @@ Alvorens enablement middelen voor een communautaire plaats toe te voegen, moeten
 * SCORM
 * FFmpeg
 
-Voor details, zie [Het vormen Enablement](enablement.md).
+Zie voor meer informatie [Inschakelen configureren](enablement.md).
 
 >[!CAUTION]
 >
@@ -37,13 +37,13 @@ Voor details, zie [Het vormen Enablement](enablement.md).
 
 >[!NOTE]
 >
->Met de release van [AEM 6.3](deploy-communities.md#latestfeaturepack) en de equivalente Communitypakketten [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) en [AEM 6.1 FP7] (https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack) vereist de functie enablement niet langer een [MySQL database](mysql.md).
+>Met de release van [AEM 6,3](deploy-communities.md#latestfeaturepack) en equivalente Gemeenschapspakken [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) en [AEM 6.1 KP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), vereist de functie enablement niet langer een [MySQL-database](mysql.md).
 
 ## Terminologie {#terminology}
 
 ### Resource {#resource}
 
-Bronnen zijn essentieel voor een [enablement community](overview.md#enablement-community). Het zijn de materialen die aan leden worden toegewezen die hen toelaten om hun vaardigheden te verbeteren.
+De middelen zijn essentieel voor een [enablement community](overview.md#enablement-community). Het zijn de materialen die aan leden worden toegewezen die hen toelaten om hun vaardigheden te verbeteren.
 
 Kenmerken van een bron:
 
@@ -61,13 +61,13 @@ Een leerpad is een logische reeks actiemiddelen die samen zijn gegroepeerd om ee
 
 ### Ledengroep {#members-group}
 
-Wanneer een communautaire plaats wordt gecreeerd, wordt de naam die aan de plaats voor URL wordt gegeven gebruikt in de verwezenlijking van [plaats specifieke gebruikersgroepen](users.md) die met diverse toestemmingen voor diverse rollen worden gevormd. Al deze automatisch gemaakte groepen worden voorafgegaan door `Community <site-name>`.
+Wanneer een communautaire plaats wordt gecreeerd, wordt de naam die aan de plaats voor URL wordt gegeven gebruikt in de verwezenlijking van [sitespecifieke gebruikersgroepen](users.md) gevormd met diverse toestemmingen voor diverse rollen. Al deze automatisch gemaakte groepen hebben `Community <site-name>`.
 
-Een dergelijke gebruikersgroep is de groep `Community <site-name> Members`, die geregistreerde gebruikers in de publicatieomgeving identificeert als leden van de community. Zie de zelfstudie [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md) bijvoorbeeld.
+Eén dergelijke gebruikersgroep is `Community <site-name> Members` groep, die geregistreerde gebruikers in de publicatieomgeving identificeert als leden van de gemeenschap. Zie de zelfstudie [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md) bijvoorbeeld.
 
-Voor [betrokkenheidsgemeenschappen](overview.md#egagementcommunity) is het redelijk bezoekers van de site toe te staan zichzelf te registreren of sociale aanmelding te gebruiken, waarna ze automatisch worden toegevoegd aan de ledengroep.
+Voor [betrokkenheid gemeenschappen](overview.md#egagementcommunity), is het redelijk bezoekers van de site toe te staan zichzelf te registreren of sociale aanmelding te gebruiken, waarna ze automatisch worden toegevoegd aan de ledengroep.
 
-Voor [enablement gemeenschappen](overview.md#enablement-community), wordt het geadviseerd om de plaats privé te maken die dan een beheerder vereist om gebruikers aan de lidgroep toe te voegen.
+Voor [gemeenschappen](overview.md#enablement-community), wordt aangeraden de site privé te maken, waarvoor vervolgens een beheerder gebruikers aan de ledengroep moet toevoegen.
 
 ## Toegang tot de Middelen van Enablement van een Plaats van de Gemeenschap {#accessing-a-community-site-s-enablement-resources}
 
@@ -109,8 +109,8 @@ Als u meerdere bronnen voor activering wilt selecteren, selecteert u eerst de mu
 
 Om een nieuw enablement middel aan de communautaire plaats toe te voegen
 
-* Selecteer het pictogram `Create`.
-* Selecteer **[!UICONTROL Resource]** in het submenu dat wordt weergegeven.
+* Selecteer `Create` pictogram.
+* Selecteer in het submenu dat wordt weergegeven **[!UICONTROL Resource]**.
 
 Dit lanceert een geleidelijke proces van:
 
@@ -128,41 +128,41 @@ Wanneer de bron deel uitmaakt van een cursus, dient u een leerpad toe te wijzen 
 
 * **[!UICONTROL Add Image]**
 
-   (*Facultatief*) een beeld om op de kaart voor het enablement middel in de de taakpagina van het lid evenals de console van Middelen te tonen. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
+   (*Optioneel*) Een beeld op de kaart voor het enablement middel in de de taakpagina van het lid evenals de console van Middelen te tonen. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
 
    ***Opmerking***: De aanbevolen afbeeldingsgrootte is niet gewoon 480 x 480 pixels. Door het responsieve ontwerp van de kaarten tot verschillende browserafmetingen, varieert de weergavegrootte van 220 x 165 pixels tot 400 x 165 pixels.
 
 * **[!UICONTROL Site Name]**
 
-   (*readonly*) De communautaire plaats waaraan de bron wordt toegevoegd.
+   (*alleen-lezen*) De communitysite waaraan de bron wordt toegevoegd.
 
 * **[!UICONTROL Resource Name]**
 
-   (*Required*) De vertoningsnaam voor het middel. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
+   (*Vereist*) De weergavenaam voor de bron. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
 
 * **[!UICONTROL Tags]**
 
-   (*Optioneel*) U kunt een of meer tags kiezen die de activeringsbron koppelen aan een of meer catalogi. Zie [Tags toewijzen Bronnen](tag-resources.md).
+   (*Optioneel*) U kunt een of meer tags kiezen die de bron van de activering koppelen aan een of meer catalogi. Zie [Tags toewijzen](tag-resources.md).
 
 * **[!UICONTROL Show in Catalog]**
 
-   Als deze optie uitgeschakeld is, wordt de resource voor activering niet weergegeven in een catalogus. Als deze optie is ingeschakeld, wordt de enablement-bron in alle catalogi weergegeven, tenzij [voorgefilterd](catalog-developer-essentials.md#pre-filters) of de lidfilters van de UI. De optie Standaard is uitgeschakeld.
+   Als deze optie uitgeschakeld is, wordt de resource voor activering niet weergegeven in een catalogus. Als deze optie is ingeschakeld, wordt de enablement-bron in alle catalogi weergegeven, tenzij [vooraf gefilterd](catalog-developer-essentials.md#pre-filters) of de lidfilters van UI. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Description]**
 
-   (*Optioneel*) De beschrijving die moet worden weergegeven voor de enablement-bron.
+   (*Optioneel*) De beschrijving die voor de enablement-bron moet worden weergegeven.
 
 * **[!UICONTROL Small Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
+   (*Optioneel*) Selectie uit AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
 
 * **[!UICONTROL Large Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
+   (*Optioneel*) Selectie uit AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
 
 * **[!UICONTROL Content Fragment Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
+   (*Optioneel*) Selectie uit AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
 * Selecteer **[!UICONTROL Next]**
 
@@ -172,7 +172,7 @@ Wanneer de bron deel uitmaakt van een cursus, dient u een leerpad toe te wijzen 
 
 Hoewel het lijkt alsof er meerdere bronnen voor activering zijn geselecteerd, is er slechts één optie toegestaan.
 
-Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om het middel te kiezen door de bron te identificeren.
+Selecteer `'+' icon`, in de rechterbovenhoek, om het proces te beginnen om de bron te kiezen door de bron te identificeren.
 
 ![upload-resource](assets/upload-resource1.png)
 
@@ -214,7 +214,7 @@ Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om
 
 * **[!UICONTROL Define an External Resource]**
 
-   Voer de locatie in waar het materiaal moet worden weergegeven. De waarden voor de successtatus en de score zijn manueel ingegaan (zie [Rapporten](reports.md)). Een geüploade omslagafbeelding kan worden gebruikt voor aanvullende informatie.
+   Voer de locatie in waar het materiaal moet worden weergegeven. De waarden voor de successtatus en de score worden handmatig ingevoerd (zie [Rapporten](reports.md)). Een geüploade omslagafbeelding kan worden gebruikt voor aanvullende informatie.
 
    Voer in het dialoogvenster dat wordt geopend het volgende in:
 
@@ -232,7 +232,7 @@ Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om
 
 * **[!UICONTROL Resource Cover Image]**
 
-   De omslagafbeelding is een afbeelding die wordt weergegeven wanneer de bron van de activering voor het eerst wordt weergegeven. De omslagafbeelding wordt bijvoorbeeld weergegeven wanneer een videobron nog niet wordt afgespeeld. Als een aangepaste afbeelding niet wordt geüpload, wordt een standaardafbeelding weergegeven. Voor videobronnen is het mogelijk om [een miniatuur te genereren](enablement.md#ffmpeg), maar alleen wanneer deze is geüpload en niet wanneer er naar de video wordt verwezen als een URL. Voor locatiebronnen kan de afbeelding worden gebruikt om aanvullende informatie te verschaffen.
+   De omslagafbeelding is een afbeelding die wordt weergegeven wanneer de bron van de activering voor het eerst wordt weergegeven. De omslagafbeelding wordt bijvoorbeeld weergegeven wanneer een videobron nog niet wordt afgespeeld. Als een aangepaste afbeelding niet wordt geüpload, wordt een standaardafbeelding weergegeven. Voor videobronnen kan het mogelijk zijn om [een miniatuur genereren](enablement.md#ffmpeg), maar alleen wanneer de video is geüpload en niet wanneer er naar de video wordt verwezen als een URL. Voor locatiebronnen kan de afbeelding worden gebruikt om aanvullende informatie te verschaffen.
 
    De aanbevolen grootte voor de omslagafbeelding is 640 x 360 px.
 
@@ -250,7 +250,7 @@ Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om
 
 * **[!UICONTROL Social Settings]**
 
-   Met deze instellingen bepaalt u of studenten invoer kunnen leveren met betrekking tot de activeringsbron. De [moderatie-instellingen](sites-console.md#moderation) zijn die van de bovenliggende communitysite.
+   Met deze instellingen bepaalt u of studenten invoer kunnen leveren met betrekking tot de activeringsbron. De [moderatie-instellingen](sites-console.md#moderation) Dit zijn die van de bovenliggende community-site.
 
    * **[!UICONTROL Allow Commenting]**
 
@@ -266,19 +266,19 @@ Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om
 
 * **[!UICONTROL Due Date]**
 
-   *(Optioneel)* Er kan een datum worden gekozen waarop de toewijzing moet worden voltooid.
+   *(Optioneel)* Een datum waarop de toewijzing moet zijn voltooid, kan worden geselecteerd.
 
 * **[!UICONTROL Resource Author]**
 
-   *(Optioneel)* De auteur van de resource voor activering. Gebruik het keuzemenu om gebruikers te selecteren die lid zijn van de [ledengroep](#members-group).
+   *(Optioneel)* De auteur van de enablement resource. Gebruik het keuzemenu om een keuze te maken uit de gebruikers die lid zijn van het [ledengroep](#members-group).
 
 * **[!UICONTROL Resource Contact&ast;]**
 
-   *(Vereist)* Een persoon die het lid kan contacteren betreffende het enablement middel. Gebruik het keuzemenu om gebruikers te selecteren die lid zijn van de [ledengroep](#members-group).
+   *(Vereist)* Een persoon het lid kan betreffende het enablement middel contacteren. Gebruik het keuzemenu om een keuze te maken uit de gebruikers die lid zijn van het [ledengroep](#members-group).
 
 * **[!UICONTROL Resource Expert]**
 
-   *(Facultatief)* Een persoon het lid kan contacteren die deskundigheid betreffende het enablement middel heeft. Gebruik het keuzemenu om gebruikers te selecteren die lid zijn van de [ledengroep](#members-group).
+   *(Optioneel)* Een persoon die het lid kan contacteren die deskundigheid betreffende het enablement middel heeft. Gebruik het keuzemenu om te selecteren uit gebruikers die lid zijn van het [ledengroep](#members-group).
 
 ### 4 Toewijzingen {#assignments}
 
@@ -286,13 +286,13 @@ Selecteer `'+' icon`, in de hogere juiste hoek, om met het proces te beginnen om
 
 * **[!UICONTROL Add Assignees]**
 
-   Gebruik het keuzemenu om te selecteren uit [leden](#members-group) - De gebruikers en gebruikersgroepen (die in vette letters worden vermeld) - die als Leerlingen moeten worden ingeschreven. Wanneer leden zich aanmelden bij de communitysite, worden de bronnen voor activering (en leerpaden) waarin ze zijn ingeschreven, weergegeven op de pagina [Toewijzingen](functions.md#assignments-function).
+   Gebruik het keuzemenu waaruit u wilt selecteren [leden](#members-group) - De gebruikers en gebruikersgroepen (die vetgedrukt worden weergegeven) - die als student worden ingeschreven. Wanneer leden zich aanmelden bij de communitysite, worden de bronnen voor activering (en leerpaden) waarin ze zijn ingeschreven, op hun site weergegeven [Toewijzingen](functions.md#assignments-function) pagina.
 
 * Selecteer **[!UICONTROL Create]**.
 
    ![resource einfo](assets/resourceinfo.png)
 
-Succesvolle verwezenlijking van het enablement middel keert aan de console van Middelen met het pas gecreëerde middel geselecteerd terug. Vanuit deze console is het mogelijk om [de resource](#managing-a-resource) te beheren.
+Succesvolle verwezenlijking van het enablement middel keert aan de console van Middelen met het pas gecreëerde middel geselecteerd terug. Vanuit deze console is het mogelijk om [de bron beheren](#managing-a-resource).
 
 ## Een leerpad maken {#create-a-learning-path}
 
@@ -300,8 +300,8 @@ Succesvolle verwezenlijking van het enablement middel keert aan de console van M
 
 Een nieuw leerpad toevoegen aan de communitysite
 
-* Het pictogram `Create` selecteren
-* Selecteer **[!UICONTROL Learning Path]** in het submenu dat wordt weergegeven.
+* Selecteer `Create` pictogram
+* Selecteer in het submenu dat wordt weergegeven **[!UICONTROL Learning Path]**.
 
 Dit lanceert een geleidelijke proces van:
 
@@ -321,41 +321,41 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
 * **[!UICONTROL Add Image]**
 
-   (*Optioneel*) Een afbeelding die op de kaart wordt weergegeven voor het leerpad in de toewijzingspagina van het lid en de Bronnenconsole. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
+   (*Optioneel*) Een afbeelding die op de kaart voor het leerpad moet worden weergegeven op de toewijzingspagina van het lid en op de bronnenconsole. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
 
    ***Opmerking***: De aanbevolen afbeeldingsgrootte is niet langer gewoon 480 x 480 pixels. Door het responsieve ontwerp van de kaarten tot verschillende browserafmetingen, varieert de weergavegrootte van 220 x 165 pixels tot 400 x 165 pixels.
 
 * **[!UICONTROL Site Name]**
 
-   (*Alleen-lezen*) De communitysite waaraan de bron wordt toegevoegd.
+   (*Readonly*) De communitysite waaraan de bron wordt toegevoegd.
 
 * **[!UICONTROL Learning Path Name]**
 
-   (*Required*) De vertoningsnaam voor de het leren weg. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
+   (*Vereist*) De weergavenaam voor het leerpad. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
 
 * **[!UICONTROL Tags]**
 
-   (*Optioneel*) U kunt een of meer tags kiezen die het leerpad koppelen aan een of meer catalogi. Zie [Tags toewijzen Bronnen](tag-resources.md).
+   (*Optioneel*) U kunt een of meer tags kiezen die het leerpad koppelen aan een of meer catalogi. Zie [Tags toewijzen](tag-resources.md).
 
 * **[!UICONTROL Show in Catalog]**
 
-   Als deze optie is uitgeschakeld, wordt het leerpad niet weergegeven in een catalogus. Als deze optie is ingeschakeld, wordt het leerpad weergegeven in alle catalogi, tenzij [voorgefilterd](catalog-developer-essentials.md#pre-filters) of de lidfilters van de gebruikersinterface. Als u het leerpad in een catalogus weergeeft, hebt u indirect toegang tot alle bijbehorende bronnen. De optie Standaard is uitgeschakeld.
+   Als deze optie is uitgeschakeld, wordt het leerpad niet weergegeven in een catalogus. Als deze optie is ingeschakeld, wordt het leerpad in alle catalogi weergegeven, tenzij [vooraf gefilterd](catalog-developer-essentials.md#pre-filters) of de lidfilters van UI. Als u het leerpad in een catalogus weergeeft, hebt u indirect toegang tot alle bijbehorende bronnen. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Description]**
 
-   (*Optioneel*) De beschrijving die moet worden weergegeven voor de enablement-bron.
+   (*Optioneel*) De beschrijving die voor de enablement-bron moet worden weergegeven.
 
 * **[!UICONTROL Small Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
+   (*Optioneel*) Selectie uit AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
 
 * **[!UICONTROL Large Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
+   (*Optioneel*) Selectie uit AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
 
 * **[!UICONTROL Content Fragment Asset]**
 
-   (*Optioneel*) Geselecteerd vanuit AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
+   (*Optioneel*) Selectie uit AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
 * Selecteer **[!UICONTROL Next]**.
 
@@ -375,11 +375,11 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
 * **[!UICONTROL Enforce Order in Learning Path]**
 
-   (*Optioneel*) Indien ingesteld op Aan, is de volgorde waarin de bronnen voor activering worden toegevoegd de volgorde waarin studenten het leerpad moeten doorlopen. Standaard uitgeschakeld.
+   (*Optioneel*) Indien ingesteld op Aan, is de volgorde waarin de bronnen van Enablement worden toegevoegd de volgorde waarin studenten het leerpad moeten doorlopen. Standaard uitgeschakeld.
 
 * **[!UICONTROL Resources]**
 
-   Een of meer bronnen die zijn gekozen uit de *gepubliceerde*-activeringsbronnen die zijn gemaakt voor de huidige communitysite.
+   Een of meer bronnen kiezen uit de *gepubliceerd* enablement resources created for the current community site.
 
 >[!NOTE]
 >
@@ -393,11 +393,11 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
 * **[!UICONTROL Add Enrollments]**
 
-   Gebruik het keuzemenu om te selecteren uit de leden en lidgroepen (in vet letterbeeld vermeld) die lid zijn van de [lidgroep](#members-group) van de communautaire plaats. U hoeft geen toewijzingen toe te voegen wanneer u het leerpad maakt. De eigenschappen van het leerpad kunnen worden gewijzigd om later studenten toe te voegen.
+   Gebruik het keuzemenu om een keuze te maken uit de leden en lidgroepen (vet weergegeven) die lid zijn van de site van de community [ledengroep](#members-group). U hoeft geen toewijzingen toe te voegen wanneer u het leerpad maakt. De eigenschappen van het leerpad kunnen worden gewijzigd om later studenten toe te voegen.
 
 * **[!UICONTROL Learning Path Contact&ast;]**
 
-   *(Vereist)* Een persoon die het lid kan contacteren met betrekking tot het leerpad. Gebruik het keuzemenu om te selecteren uit de gebruikers die lid zijn van de [ledengroep](#members-group) van de communautaire site.
+   *(Vereist)* Een persoon met wie het lid contact kan opnemen over het leerpad. Gebruik het keuzemenu om een keuze te maken uit de gebruikers die lid zijn van de site van de community [ledengroep](#members-group).
 
 * Selecteer **[!UICONTROL Create]**
 
@@ -436,7 +436,7 @@ Als de enige verandering taken op de stap van Montages moet wijzigen, dan leidt 
 
 ![delete-resource](assets/delete-resource.png)
 
-Door het trashcan-pictogram te selecteren, is de enablement-bron `Deleted` na bevestiging.
+Als u het trashcan-pictogram selecteert, wordt de enablement-bron ingesteld op `Deleted` na bevestiging.
 
 ### Publicatie {#publish}
 
@@ -444,8 +444,8 @@ Door het trashcan-pictogram te selecteren, is de enablement-bron `Deleted` na be
 
 Voordat studenten een toegewezen activeringscursus kunnen zien, moet deze worden gepubliceerd:
 
-* Selecteer het wereldpictogram aan `Publish`.
-* Selecteer **[!UICONTROL Publish]** nogmaals in het dialoogvenster dat verschijnt.
+* Het pictogram op de wereld selecteren voor `Publish`.
+* Selecteer **[!UICONTROL Publish]** opnieuw.
 * Selecteer **[!UICONTROL Close]**.
 
 Hoewel in het dialoogvenster staat dat de handeling in de wachtrij staat, wordt deze vaak onmiddellijk gepubliceerd.
@@ -454,7 +454,7 @@ Hoewel in het dialoogvenster staat dat de handeling in de wachtrij staat, wordt 
 
 ![ongedaan maken](assets/unpublish.png)
 
-Om de enablement middelen aan leden in het publicatiemilieu tijdelijk ontoegankelijk te maken zonder het te schrappen, gebruik het wereldpictogram aan `Unpublish` het middel.
+Als u de activeringsbronnen tijdelijk ontoegankelijk wilt maken voor leden in de publicatieomgeving zonder deze te verwijderen, gebruikt u het pictogram op de wereld `Unpublish` de bron.
 
 ### Rapport {#report}
 
@@ -462,13 +462,13 @@ Om de enablement middelen aan leden in het publicatiemilieu tijdelijk ontoeganke
 
 Het pictogram Rapport biedt toegang tot de rapporten die worden gegenereerd wanneer studenten in de publicatieomgeving werken met hun toegewezen bronnen voor activering. Het rapport varieert afhankelijk van het type van middel.
 
-Voor alle leerwegen, is het mogelijk om een rapport te bekijken dat of op middelen of studenten ( `User Report`) wordt gebaseerd.
+Voor alle leerpaden is het mogelijk een rapport te bekijken op basis van bronnen of studenten ( `User Report`.)
 
 ![learningpath-info](assets/learningpath-info1.png)
 
-Dit Rapport is specifiek voor het huidige enablement middel of het leren weg. De mate waarin rapporten worden verschaft, hangt af van het feit of [Adobe Analytics](analytics.md) een licentie heeft en is ingeschakeld voor de site van de gebruikersgemeenschap. De [Timeline](#timeline), [Viewer Engagement](#viewer-engagement) en [Engagement by Device](#engagement-by-device) rapporten worden geïmporteerd uit Adobe Analytics op basis van het [pollinginterval](analytics.md#report-importer).
+Dit Rapport is specifiek voor het huidige enablement middel of het leren weg. De omvang van de verstrekte rapportage hangt af van het al dan niet [Adobe Analytics](analytics.md) is in licentie gegeven en ingeschakeld voor de site van de community. De [Tijdlijn](#timeline), [Betrokkenheid van viewer](#viewer-engagement), en [Betrokkenheid per apparaat](#engagement-by-device) rapporten worden uit Adobe Analytics geïmporteerd op basis van de [pollinginterval](analytics.md#report-importer).
 
-Voor alle machtigingsmiddelen, ongeacht of Adobe Analytics wordt toegelaten, zijn er rapporten over [Status van de Ontvanger](#assignee-status) en [Ratings](#ratings) evenals een [Overzicht van het Rapport](#report-summary) lijst.
+Voor alle middelen van enablement, ongeacht of Adobe Analytics wordt toegelaten of niet, zijn er rapporten over [Status van ontvanger](#assignee-status) en [Waarderingen](#ratings) en [Samenvatting van rapport](#report-summary) tabel.
 
 ![resourcerapport](assets/resource-report1.png)
 
@@ -482,7 +482,7 @@ Het rapport Analytics Timeline toont wanneer gebeurtenissen in de loop der tijd 
 
 * **Afspelen**
 
-   Een afspeelbewerking wordt uitgevoerd wanneer alLearning communiceert met de bron, zoals het afspelen van een video of het openen van een PDF.
+   Een spel is wanneer alLearning met het middel in wisselwerking staat, zoals het spelen van een video of het openen van een PDF.
 
 * **Waarderingen**
 
@@ -554,7 +554,7 @@ Voor een leerpad Rapport van de Gebruiker, is het Overzicht van het Rapport een 
    * Aantal voltooide middelen.
    * Hun status.
 
-Het is mogelijk om de weergave van de tabel aan te passen door kolommen te selecteren met de kiezer `Show / hide columns`.
+U kunt de weergave van de tabel aanpassen door kolommen te selecteren met de opdracht `Show / hide columns` kiezer.
 
 #### Rapport downloaden als CSV {#download-report-as-csv}
 

@@ -1,8 +1,8 @@
 ---
 title: Leden en groepen beheerconsoles
-seo-title: Leden en groepen beheerconsoles
+seo-title: Members & Groups Management Consoles
 description: Toegang tot leden en groepen beheerconsoles
-seo-description: Toegang tot leden en groepen beheerconsoles
+seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -22,53 +22,53 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Voor AEM Communities-functies moeten bezoekers van de site vaak worden geregistreerd en aangemeld voordat ze kunnen deelnemen aan een community in de publicatieomgeving. Hun gebruikersregistratie hoeft alleen te bestaan in de publicatieomgeving en wordt meestal *leden* genoemd om ze te onderscheiden van *gebruikers* die zijn geregistreerd in de auteursomgeving.
+Voor AEM Communities-functies moeten bezoekers van de site vaak worden geregistreerd en aangemeld voordat ze kunnen deelnemen aan een community in de publicatieomgeving. De gebruikersregistratie hoeft alleen te bestaan in de publicatieomgeving en wordt meestal aangeduid als *leden* om ze van elkaar te onderscheiden *gebruikers* geregistreerd in de auteursomgeving.
 
 ### Leden (gebruikers) voor publicatie {#members-users-on-publish}
 
-Met behulp van de communityleden en -groepen kunnen leden en lidgroepen die zijn geregistreerd in de *publish*-omgeving worden gemaakt en beheerd vanuit de *auteur*-omgeving. Dit is alleen mogelijk wanneer de [tunnelservice](deploy-communities.md#tunnel-service-on-author) is ingeschakeld.
+Gebruikend de leden en de Groepen van de Gemeenschappen consoles, leden en leden die in *publish* kan worden gecreëerd en beheerd vanuit de *auteur* milieu. Dit is alleen mogelijk wanneer de [tunneldienst](deploy-communities.md#tunnel-service-on-author) is ingeschakeld.
 
 ### Gebruikers op auteur {#users-on-author}
 
-Voor het beheer van gebruikers en groepen die zijn geregistreerd in de *auteur*-omgeving, is het nodig om de beveiligingsconsole van het platform te gebruiken:
+Voor het beheer van gebruikers en groepen die zijn geregistreerd in het *auteur* -omgeving is noodzakelijk om de beveiligingsconsole van het platform te kunnen gebruiken:
 
-* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** bij globale navigatie.
-* Selecteer **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]** bij globale navigatie.
+* Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+* Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**.
 
 >[!NOTE]
 >
->Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zullen niet aanwezig zijn wanneer het lopen met [nosamplcontent runmode](../../help/sites-administering/production-ready.md).
+>Als voorbeeldinhoud is geïmplementeerd en ingeschakeld, zijn er veel voorbeeldgebruikers in zowel de auteur- als de publicatieomgeving. Deze gebruikers zijn niet aanwezig wanneer ze met [nosamplcontent-runmode](../../help/sites-administering/production-ready.md).
 
 ## Ledenconsole {#members-console}
 
 In het auteursmilieu, om de console van Leden te bereiken voor het beheren van leden die in het publicatiemilieu worden geregistreerd:
 
-* Selecteer **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Members]**
+* Selecteer bij globale navigatie de optie **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Members]**
 
 >[!CAUTION]
 >
->Het zal niet mogelijk zijn om de console van Leden te gebruiken als [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+>Het zal niet mogelijk zijn om de console van Leden te gebruiken als [tunneldienst](deploy-communities.md#tunnel-service-on-author) is niet ingeschakeld.
 
 ![member-console1](assets/member-console1.png)
 
 ### Zoeken {#search-features}
 
-Selecteer het pictogram van het zijpaneel aan de linkerkant van de kopbal `Members` om het onderzoek zijpaneel van een knevel te voorzien.
+Selecteer het pictogram van het zijpaneel aan de linkerkant van het deelvenster `Members` om het deelvenster met de zoekzijde te openen.
 
 ![](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
 
-Selecteer het zoekpictogram aan de linkerkant van de koptekst `Members` om het venster met de zoekzijde gesloten te schakelen.
+Selecteer het zoekpictogram aan de linkerkant van het dialoogvenster `Members` om het venster met de zoekzijde te sluiten.
 
 ### Statistieken van de lidstaten {#member-statistics}
 
-De kolommen `Views`, `Posts`, `Follows` en `Likes` worden bijgewerkt wanneer de gebruiker lid is van één of meerdere communitysites met Adobe Analytics [enabled](sites-console.md#analytics).
+De kolommen die worden weergegeven `Views`, `Posts`, `Follows` en `Likes` worden bijgewerkt wanneer de gebruiker lid is van een of meer communitysites met Adobe Analytics [enabled](sites-console.md#analytics).
 
 ### CSV exporteren {#export-csv}
 
-Als u de koppeling `Export CSV` selecteert, worden alle leden gedownload als een lijst met door komma&#39;s gescheiden waarden, die geschikt zijn voor importeren in een spreadsheet.
+Het selecteren van `Export CSV` Als u een koppeling maakt, worden alle leden gedownload als een lijst met door komma&#39;s gescheiden waarden die u kunt importeren in een spreadsheet.
 
 De kolomkoppen zijn
 
@@ -76,7 +76,7 @@ De kolomkoppen zijn
 
 ## Nieuw lid maken {#create-new-member}
 
-Selecteer `Create Member` om een gebruiker in het publicatiemilieu tot stand te brengen.
+Selecteren `Create Member` om een gebruiker te maken in de publicatieomgeving.
 
 ![create-member1](assets/create-member1.png)
 
@@ -86,31 +86,30 @@ De meeste velden zijn optionele velden die leden later kunnen invullen in hun pr
 
 * **[!UICONTROL ID]**
 
-(*Required*) Authorizable identiteitskaart is login identiteitskaart van het lid.
+(*Vereist*) De autoriseerbare id is de aanmeldings-id van het lid.
 Standaard wordt de id ingesteld op de waarde van het vereiste e-mailadres.
 *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd*.
 
 * **[!UICONTROL Email Address]**
 
-(*Required*) Het e-mailadres van het lid.
-Het lid kan zijn e-mailadres wijzigen bij het bijwerken van zijn profiel.I
-Als de id standaard is ingesteld op het e-mailadres, verandert de id *niet* wanneer het e-mailadres wordt gewijzigd.
+(*Vereist*) Het e-mailadres van het lid.
+Het lid kan zijn e-mailadres wijzigen bij het bijwerken van zijn profiel.I Als de id standaard op het e-mailadres is ingesteld, wordt de id *niet* wijzigen wanneer het e-mailadres wordt gewijzigd.
 
 * **[!UICONTROL Password]**
 
-   (*Required*) het login wachtwoord.
+   (*Vereist*) Het aanmeldingswachtwoord.
 
 * **[!UICONTROL Retype Password]**
 
-   (*Required*) ga het wachtwoord voor controle opnieuw in.
+   (*Vereist*) Voer het wachtwoord opnieuw in ter verificatie.
 
 * **[!UICONTROL Add Member to Sites]**
 
-   (*Optioneel*) Selecteer een van de bestaande communitysites om het lid toe te voegen aan de ledengroep van de community.
+   (*Optioneel*) Maak een keuze uit bestaande gemeenschapssites om het lid toe te voegen aan de groep met leden van de site van de community.
 
 * **[!UICONTROL Add Member to Groups]**
 
-   (*Facultatief*) Uitgezocht van bestaande lidgroepen om het lid aan die groep toe te voegen.
+   (*Optioneel*) Maak een keuze uit bestaande lidgroepen om het lid aan die groep toe te voegen.
 
 * Selecteer **[!UICONTROL Save]**
 
@@ -119,19 +118,17 @@ Als de id standaard is ingesteld op het e-mailadres, verandert de id *niet* wann
 Onder de montages van de Rekening is het mogelijk voor een communautaire beheerder:
 
 * **[!UICONTROL Status]**
-   * Verboden
-Een lid kan zich niet aanmelden, waardoor het geen pagina&#39;s kan weergeven of kan deelnemen aan activiteiten waarvoor aanmelden vereist is. Ze kunnen nog steeds anoniem een open communitysite bezoeken.
+   * Een lid met een verbod kan zich niet aanmelden, zodat het geen pagina&#39;s kan weergeven of kan deelnemen aan activiteiten waarvoor aanmelden vereist is. Ze kunnen nog steeds anoniem een open communitysite bezoeken.
 
-   * Niet verboden
-Een lid heeft volledige toegang tot de site van de community.
+   * Niet verboden Een lid heeft volledige toegang tot de site van de community.
 
-   De standaardwaarde is `Not Banned`.
+   Standaard is `Not Banned`.
 
 * **[!UICONTROL Contribution Limits]**
 
    Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te posten beperkt.
 Het gebrek hangt van de configuratie van bijdragegrenzen af.
-Zie [Limieten voor bijdragen van leden](limits.md).
+Zie [Limieten voor bijdragen van de lidstaten](limits.md).
 
 * **[!UICONTROL Change Password]**
 
@@ -139,7 +136,7 @@ Zie [Limieten voor bijdragen van leden](limits.md).
 
 ### ALGEMEEN - Foto {#general-photo}
 
-Als u een avatar voor het lid wilt opgeven, selecteert u eerst **[!UICONTROL Upload Image]** en kiest u een afbeelding van het type .jpg, .png, .tif of .gif. De voorkeursgrootte voor een afbeelding is 240 x 240 pixels bij 72 dpi.
+Om een avatar voor het lid te verstrekken, begin door te selecteren **[!UICONTROL Upload Image]** en kiest u een afbeelding van het type .jpg, .png, .tif of .gif. De voorkeursgrootte voor een afbeelding is 240 x 240 pixels bij 72 dpi.
 
 ### ALGEMEEN - Lid toevoegen aan sites {#general-add-member-to-sites}
 
@@ -151,14 +148,14 @@ Het lid kan aan een of meer ledengroepen worden toegevoegd. Voer eerst tekst in 
 
 ### Tabblad BADGES {#badges-tab}
 
-Met het deelvenster `BADGES` kunt u badges handmatig toewijzen en intrekken. De badges kunnen voor toegewezen rollen evenals badges typisch worden verdiend.
+De `BADGES` biedt de mogelijkheid om handmatig badges toe te wijzen en deze in te trekken. De badges kunnen voor toegewezen rollen evenals badges typisch worden verdiend.
 
-Zie ook [Scores en Badges](implementing-scoring.md).
+Zie ook [Scores en badges](implementing-scoring.md).
 
 ![create-member2](assets/create-member2.png)
 
 * **[!UICONTROL Add badges]**
-   * Begin te typen om uit [beschikbare badges](badges.md) te selecteren. Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
+   * Begin te typen om te selecteren uit [beschikbare badges](badges.md). Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
    * Er kunnen meerdere badges en sites worden gekozen.
 * **[!UICONTROL Remove badges]**
    * Selecteer het prullenbakpictogram naast een badge om het te verwijderen.
@@ -167,18 +164,18 @@ Zie ook [Scores en Badges](implementing-scoring.md).
 
 De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is met name nuttig voor:
 * [Geprivilegieerde ledengroepen](users.md#privilegedmembersgroups)
-* Groepse toewijzing van [enablement resources](resources.md)
+* Groepse toewijzing van [middelen](resources.md)
 
 De console Groepen openen:
-* Selecteer **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]** bij globale navigatie.
+* Selecteer bij globale navigatie de optie **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]**.
 
 >[!CAUTION]
 >
->Het zal niet mogelijk zijn om de console van Groepen te gebruiken als [tunneldienst](deploy-communities.md#tunnel-service-on-author) niet wordt toegelaten.
+>Het zal niet mogelijk zijn om de console van Groepen te gebruiken als [tunneldienst](deploy-communities.md#tunnel-service-on-author) is niet ingeschakeld.
 
 ### Nieuwe groep maken {#create-new-group}
 
-Selecteer `Add Group` om een groep in het publicatiemilieu tot stand te brengen.
+Selecteren `Add Group` om een groep te maken in de publicatieomgeving.
 
 ![group-console1](assets/group-console1.png)
 
@@ -186,7 +183,7 @@ De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn
 
 * **[!UICONTROL ID]**
 
-   (*Required*) De unieke identiteitskaart van de groep
+   (*Vereist*) De unieke groep-id.
 
    *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd.*
 
@@ -208,8 +205,8 @@ De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn
 
 ## Geautoriseerde beheerders {#authorized-administrators}
 
-Wanneer het werken met leden in de console van de Leden van Gemeenschappen, is het noodzakelijk om binnen als gebruiker met aangewezen toestemmingen worden ondertekend, en voor de replicatieagent die door [tunneldienst ](deploy-communities.md#tunnel-service-on-author) wordt gebruikt correct worden gevormd.
+Wanneer het werken met leden in de console van de Leden van Gemeenschappen, is het noodzakelijk om binnen als gebruiker met aangewezen toestemmingen worden ondertekend, en voor de replicatieagent die door wordt gebruikt [tunneldienst](deploy-communities.md#tunnel-service-on-author) correct worden geconfigureerd.
 
-Als u zich niet hebt aangemeld als `admin`, moet de aangemelde gebruiker lid zijn van de gebruikersgroep `administrators`.
+Indien niet aangemeld als `admin`, dan moet de ingetekende gebruiker lid zijn van de `administrators` gebruikersgroep.
 
-Zie ook [Replication Agents on Auteur](deploy-communities.md#replication-agents-on-author).
+Zie ook [Replicatieagents op auteur](deploy-communities.md#replication-agents-on-author).

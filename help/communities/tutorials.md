@@ -2,27 +2,26 @@
 title: Tutorials
 seo-title: Tutorials
 description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
-seo-description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
+seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
-translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
 
-
 # Tutorials {#tutorials}
 
-Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Communities [social component framework (SCF)](scf.md).
+Dit zijn voorbeelden die helpen bij het leren en werken met AEM 6.1-gemeenschappen [Sociaal-componentkader (SCF)](scf.md).
 
-## Aanpassing aan clientzijde {#client-side-customization}
+## Aanpassing op de client {#client-side-customization}
 
 Zie ook:
 
@@ -34,11 +33,11 @@ Zie ook:
 
 * [Component Opmerkingen uitbreiden](extend-comments.md)
 
-## Aanpassing aan serverzijde {#server-side-customization}
+## Aanpassing op de server {#server-side-customization}
 
-Zie ook [SCF server-side aanpassing](server-customize.md).
+Zie ook [SCF-serveraanpassing](server-customize.md).
 
-De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
+Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) opslagplaats:
 
 * [Voorbeeld van SCF-component aanpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -60,15 +59,15 @@ De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https
 
 * [Een voorbeeldpagina maken](create-sample-page.md)
 
-## Demopgebruikers {#demo-users}
+## Demo-gebruikers {#demo-users}
 
-Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met [Community Components guide](components-guide.md).
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met het [Community Components Guide](components-guide.md).
 
-Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Voor een volledige lijst van de demogebruikers, navigeer het gebruiken van Rail aan **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Of gebruik de klassieke gebruikersinterface [beveiligingsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Als een [communityplaats is gecreeerd](getting-started.md), is het mogelijk om demogebruikers aan zijn [communautaire gebruikersgroepen](users.md) toe te wijzen.
+Indien een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers aan zijn [gebruikersgroepen in de gemeenschap](users.md).
 
-***user id* / *password***:
+***gebruikersnaam* / *password***:
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password

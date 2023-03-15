@@ -1,8 +1,8 @@
 ---
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloze in AEM 6.5.
-exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
    * Er wordt automatisch een naam gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
-   * **GrafiekQL blijvende vragen**
+   * **Blijvende GraphQL-query&#39;s**
 
    ![Configuratie maken](../assets/create-configuration.png)
 
@@ -42,7 +42,7 @@ Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worde
 
 >[!NOTE]
 >
->Configuratieopties naast **Modellen van inhoudsfragmenten** en **GrafiekQL blijvende vragen** kan nodig zijn, afhankelijk van uw implementatievereisten.
+>Configuratieopties naast **Modellen van inhoudsfragmenten** en **Blijvende GraphQL-query&#39;s** kan nodig zijn, afhankelijk van uw implementatievereisten.
 
 ## Volgende stappen {#next-steps}
 

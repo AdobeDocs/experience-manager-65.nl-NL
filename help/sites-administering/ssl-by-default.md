@@ -1,8 +1,8 @@
 ---
 title: Standaard SSL
-seo-title: Standaard SSL
+seo-title: SSL By Default
 description: Leer hoe u in AEM SSL standaard kunt gebruiken.
-seo-description: Leer hoe u in AEM SSL standaard kunt gebruiken.
+seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
 content-type: reference
@@ -10,16 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 93ee9338fc2e78d01a9b62e8040c4674262ef6be
+exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
 
-
-# SSL standaard{#ssl-by-default}
+# Standaard SSL{#ssl-by-default}
 
 In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
@@ -27,27 +26,27 @@ In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft Adobe 
 
 U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
-Selecteer en open in de lijst de waarschuwing **HTTPS** configureren:
+Selecteer in de lijst de optie **HTTPS configureren** waarschuwing:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
->Als de **HTTPS** waarschuwing niet aanwezig in Inbox is, kunt u rechtstreeks naar de Tovenaar navigeren HTTPS door naar *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* te gaan
+>Als de **HTTPS configureren** waakzaamheid is niet aanwezig in Inbox, u kunt rechtstreeks aan de Tovenaar navigeren HTTPS door te gaan *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
 
-Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
+Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
 
-1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de sleutelopslag van de systeemgebruiker **ssl-service** die de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
+1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de **ssl-service** sleutelarchief van de systeemgebruiker dat de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
 1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Upload vervolgens de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL-verbinding.
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    >[!NOTE]
    >
-   >Zie [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard.
+   >Ga voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard naar [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder.
 
 1. Geef ten slotte de hostnaam HTTPS en de TCP-poort voor de HTTPS-listener op.
 
@@ -94,11 +93,11 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U vindt details over de status in de HTML-hoofdtekst van de reactie.
+De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U kunt meer informatie over de status vinden in de HTML-hoofdtekst van de reactie.
 
 Hieronder staan voorbeelden voor zowel een geslaagde reactie als een fout.
 
-**SUCCESS-VOORBEELD** (status = 200):
+**SUCCESVOORBEELD** (status = 200):
 
 ```xml
 <!DOCTYPE html>
@@ -129,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FOUTVOORBEELD**  (status = 500):
+**FOUTVOORBEELD** (status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -155,10 +154,10 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al de volgende vereiste items bevat:
 
-* Het sleutelarchief van de ssl-dienst gebruiker. Dit bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
-* De `GraniteSslConnectorFactory`-configuratie
+* Het sleutelarchief van de ssl-dienst gebruiker. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
+* De `GraniteSslConnectorFactory` configuratie
 
-### Genereren van een privésleutel/certificaatpaar voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken. Installeer OpenSSL op basis van het besturingssysteem, open de opdrachtprompt OpenSSL en wijzig de map in de map waarin u de persoonlijke sleutel of het certificaat wilt genereren.
 
@@ -191,13 +190,13 @@ Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat 
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Tot slot uploadt u **localhostprivate.der** als Private Key en **localhost.crt** als SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
+Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
 
 ### De SSL-configuratie bijwerken via cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Zie [URL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL-opdrachten in AEM.
+>Zie [cURL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
 U kunt de SSL-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
@@ -222,9 +221,9 @@ Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instelli
 
 >[!NOTE]
 >
->De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in de argumenten `privatekeyFile` en certificateFile.
+>De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in het dialoogvenster `privatekeyFile` en certificateFile-argumenten.
 >
->U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor u het cURL bevel met de `-u user:passeword` parameter toevoegt.
+>U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de opdracht `-u user:passeword` parameter.
 >
 >Een correcte post cURL zou als dit moeten kijken:
 

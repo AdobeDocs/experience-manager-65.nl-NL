@@ -1,8 +1,8 @@
 ---
 title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
-seo-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
+seo-title: How to Audit User Management Operations in AEM
 description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
-seo-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 9d177afb-172c-4858-a678-254c97cfa472
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,15 +12,14 @@ discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 1%
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
-# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM{#how-to-audit-user-management-operations-in-aem} te controleren
+# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren{#how-to-audit-user-management-operations-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -32,24 +31,24 @@ Dankzij deze uitbreiding kunt u de CRUD-handelingen (Maken, Lezen, Bijwerken, Ve
 * Een gebruiker die aan een groep wordt toegevoegd
 * Wijzigingen in machtigingen voor een bestaande gebruiker of groep
 
-Standaard worden de items naar het `error.log`-bestand geschreven. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
+Standaard worden de items naar de `error.log` bestand. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
 
 ## De uitvoer wordt omgeleid naar een afzonderlijk logbestand {#redirecting-the-output-to-a-separate-log-file}
 
-Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuwe **Logboekregistratie voor Apache Sling Logger**-configuratie maken. `useraudit.log` wordt gebruikt als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
+Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuw logbestand maken **Logboekregistratie voor Apache Sling** configuratie. We gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
 
-1. Ga naar de webconsole door naar *https://serveraddress:serverport/system/console/configMgr* te bladeren
-1. Zoek naar **Apache Sling Logging Logger Configuration**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
+1. Ga naar de webconsole door naar *https://serveraddress:serverport/system/console/configMgr*
+1. Zoeken naar **Logboekconfiguratie Apache Sling Logging**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
 1. Maak de volgende configuratie:
 
-   * **Logniveau:** informatie
-   * **logbestand:** logs/useraudit.log
-   * **Berichtpatroon:standaard** niveau
+   * **Logniveau:** Informatie
+   * **Logbestand:** logs/useraudit.log
+   * **Berichtpatroon:** niveau standaard
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Om beide loggers in het **Logger** gebied in te gaan, moet u de naam van eerste ingaan, dan een ander gebied tot stand brengen door &quot;+&quot;knoop te drukken en de naam van de tweede registreerder in te gaan.
+   Om beide loggers in te voeren in de **Aanmelder** in het veld moet u de naam van de eerste invoeren en vervolgens een ander veld maken door op de knop &quot;+&quot; te drukken en de naam van het tweede logger in te voeren.
 
-## Voorbeeld van uitvoer {#example-output}
+## Voorbeeld-uitvoer {#example-output}
 
 Indien correct gevormd, zou de output als dit moeten kijken:
 
@@ -83,7 +82,7 @@ Indien correct gevormd, zou de output als dit moeten kijken:
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## Klassieke UI {#classic-ui}
+## Klassieke interface {#classic-ui}
 
 In Klassieke UI, wordt de informatie over verrichtingen CRUD die in het controlelogboek met betrekking tot het toevoegen van en het schrappen van gebruikers worden geregistreerd beperkt tot identiteitskaart van de beïnvloede gebruiker en wanneer de veranderde situatie gebeurde.
 

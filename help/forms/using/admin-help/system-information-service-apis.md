@@ -1,8 +1,8 @@
 ---
 title: System Information Service API's
-seo-title: System Information Service API's
+seo-title: System information Service APIs
 description: Dit document bevat gedetailleerde informatie over de API's die worden geleverd door de systeeminformatiedienst.
-seo-description: Dit document bevat gedetailleerde informatie over de API's die worden geleverd door de systeeminformatiedienst.
+seo-description: This document provides detailed information about the APIs provided bythesystem information service.
 uuid: 7f624216-56e6-4d49-b9a1-3c9af045dabe
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
 
-# Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
+# System Information Service API&#39;s {#system-information-service-apis}
 
 De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te winnen. De volgende tabel bevat gedetailleerde informatie over de API&#39;s:
 
@@ -33,7 +33,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.properties</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.properties'</p></td>
-   <td><p>Deze API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
+   <td><p>Deze API omvat <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.envVar</p></td>
@@ -106,7 +106,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Deze API is een omslag voor alle dienst APIs van de systeeminformatiedienst. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>opmerking</strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td>
+   <td><p>Deze API is een omslag voor alle dienst APIs van de systeeminformatiedienst. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>notitie</strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td>
   </tr>
  </tbody>
 </table>

@@ -566,7 +566,7 @@ De beveiligingsleiding:
 
 * Technisch schrijvers
 
-   * Afhankelijk van de omvang en de aard van het project kunnen gespecialiseerde technische schrijvers worden gebruikt om richtsnoeren en handleidingen voor specifieke groepen te schrijven; bijv. een onderhoudshandleiding voor systeembeheerders of een gebruikershandleiding voor de auteurs.
+   * Afhankelijk van de omvang en de aard van het project kunnen gespecialiseerde technische schrijvers worden gebruikt om richtsnoeren en handleidingen voor specifieke groepen te schrijven; bv. een onderhoudshandleiding voor systeembeheerders of een gebruikershandleiding voor de auteurs.
 
 * Systeembeheerders
 

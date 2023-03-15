@@ -1,8 +1,8 @@
 ---
 title: Beleidssets maken en beheren
-seo-title: Beleidssets maken en beheren
+seo-title: Creating and managing policy sets
 description: De reeksen van het beleid worden gebruikt aan groepsbeleid dat een gemeenschappelijk bedrijfsdoel heeft. U kunt beleid in een beleidsset maken, bewerken en verwijderen.
-seo-description: De reeksen van het beleid worden gebruikt aan groepsbeleid dat een gemeenschappelijk bedrijfsdoel heeft. U kunt beleid in een beleidsset maken, bewerken en verwijderen.
+seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
 uuid: 11faf67c-b9b7-4394-8672-d43cace131ad
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 736926af-ae41-4da3-b181-444de72407bd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1295'
 ht-degree: 0%
 
 ---
-
 
 # Beleidssets maken en beheren {#creating-and-managing-policy-sets}
 
@@ -43,7 +42,7 @@ De supergebruiker of de coördinator van de beleidsreeks voegt domeinen toe die 
 
 Wanneer u beleidssets maakt, wijst u gebruikers de rol van documentuitgever toe. De *documentuitgever* is de gebruiker die het document met een beleid beschermt. Deze gebruiker is, door gebrek, altijd inbegrepen op een beleid met volledige toegangsrechten, met inbegrip van herroepen en beleid omschakelingsmogelijkheden. Beheerders kunnen echter de toegangsrechten van de uitgever van het document voor gedeeld beleid wijzigen. De beheerder kan bijvoorbeeld het recht van de uitgever van het document uitschakelen om de toegang tot het document in te trekken of om over te schakelen op een ander beleid. Als een beheerder het beleid in bijlage aan het document schakelt, zal de naam van de Uitgever aan de naam van de eigenaar van het beleid worden bijgewerkt dat het laatst op het document wordt toegepast.
 
-Op installatie van documentveiligheid, wordt een standaardbeleidsreeks gecreeerd genoemd *Globale Reeks van het Beleid*. Deze beleidsreeks wordt beheerd door de beheerder die de software of de coördinator van de beleidsreeks installeerde die voor deze beleidsreeks wordt aangewezen.
+Bij installatie van documentbeveiliging wordt een standaardbeleidsset aangeroepen *Algemene beleidsset*. Deze beleidsreeks wordt beheerd door de beheerder die de software of de coördinator van de beleidsreeks installeerde die voor deze beleidsreeks wordt aangewezen.
 
 ## Een beleidsset maken {#create-a-policy-set}
 
@@ -52,7 +51,7 @@ De globale Reeks van het Beleid is de enige standaardbeleidsreeks die op install
 Tijdens het creëren van de beleidsreeks, kunt u de Achterknoop gebruiken om aan het vorige scherm terug te keren en sparen knoop om uw beleidsreeks op elk ogenblik te bewaren.
 
 1. Voor de documentveiligheid, pagina, klik Beleid, klik het lusje van de Reeksen van het Beleid, en klik dan Nieuw.
-1. Typ in het vak Naam een naam voor de beleidsset, typ desgewenst een beschrijving en klik op Volgende. De naam mag geen dubbele punt **:** bevatten.
+1. Typ in het vak Naam een naam voor de beleidsset, typ desgewenst een beschrijving en klik op Volgende. De naam mag geen dubbele punt bevatten **:**.
 
    >[!NOTE]
    >
@@ -90,29 +89,28 @@ Tijdens het creëren van de beleidsreeks, kunt u de Achterknoop gebruiken om aan
 
 U kunt nu beleid toevoegen aan uw beleidsset. (Zie [Beleid maken en bewerken](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).)
 
-## Een beleidsset {#edit-a-policy-set} bewerken
+## Een beleidsset bewerken {#edit-a-policy-set}
 
 1. Voor de documentveiligheid, pagina, klik Beleid, klik het lusje van de Reeksen van het Beleid, en klik de beleidreeks om uit te geven.
 1. Klik op het desbetreffende tabblad en bewerk indien nodig:
 
-   * **Details:de naam en beschrijving van de beleidsset** bewerken.
-   * **Beleid:beleid** maken, inschakelen, bewerken en verwijderen binnen de beleidsset.
-   * **Zichtbare gebruikers en groepen:zichtbare gebruikers en groepen** toevoegen en verwijderen die in een beleid kunnen worden opgenomen.
-   * **Beleidssetcoördinatoren:machtigingen voor coördinatoren** toevoegen, verwijderen en wijzigen.
-   * **Documentuitgevers:gebruikers** toevoegen en verwijderen die documenten kunnen publiceren met het beleid in de set.
+   * **Details:** De naam en beschrijving van de beleidsset bewerken.
+   * **Beleid:** Beleid binnen de beleidsset maken, inschakelen, bewerken en verwijderen.
+   * **Zichtbare gebruikers en groepen:** Voeg zichtbare gebruikers en groepen toe en verwijder die in een beleid kunnen worden omvat.
+   * **Beleidssetcoördinatoren:** Machtigingen voor coördinatoren toevoegen, verwijderen en wijzigen.
+   * **Documentuitgevers:** Voeg gebruikers toe en verwijder gebruikers die documenten kunnen publiceren door het beleid in de reeks te gebruiken.
 
 1. Als u een zichtbare gebruiker of groep, beleidssetcoördinator of documentuitgever wilt verwijderen, klikt u op het desbetreffende tabblad, schakelt u het selectievakje voor de invoer in, klikt u op Verwijderen en klikt u vervolgens op OK.
 1. Als u zichtbare gebruikers of groepen, een beleidssetcoördinator of documentuitgevers wilt toevoegen, klikt u op het desbetreffende tabblad, klikt u op Gebruikers of groepen toevoegen, zoekt u naar de gebruiker of groep die u wilt toevoegen, selecteert u het item, klikt u op Toevoegen en klikt u vervolgens op OK.
 1. Zoek op het tabblad Beleid naar beleid dat u wilt toevoegen aan de beleidsset en maak nieuwe beleidsregels:
 
    * Als u naar een beleid wilt zoeken, selecteert u Beleids-id of Beleidsnaam, typt u de bijbehorende waarde, selecteert u het aantal items dat u wilt weergeven en klikt u op Zoeken.
-   * Zie [Beleid maken en bewerken](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies) voor meer informatie over het maken van een nieuw beleid.
+   * Ga voor meer informatie over het maken van een nieuw beleid naar [Beleid maken en bewerken](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
-## Een beleidsset {#delete-a-policy-set} verwijderen
+## Een beleidsset verwijderen {#delete-a-policy-set}
 
 Wanneer u een beleidsset verwijdert, kunnen beleid dat deel uitmaakte van de set, niet worden toegepast op nieuwe documenten. Nochtans, kunt u de beleidsinformatie in zowel de beleidsconsole als de eindgebruikerWeb-pagina&#39;s voor beleid bekijken dat nog in gebruik is. U kunt de beleidsinformatie van de documentdetailpagina voor om het even welk document bekijken dat door het beleid wordt beschermd. Het beleid dat nog in gebruik is, kan worden bewerkt.
 
 1. Klik op Beleid en klik op het tabblad Beleidssets.
 1. Schakel het selectievakje in voor de beleidsset die u wilt verwijderen.
 1. Klik op Verwijderen en vervolgens op OK.
-

@@ -46,7 +46,7 @@ Voer de onderstaande stappen uit om een AEM-site aan te sluiten en CIF Core-comp
 
    >[!TIP]
    >
-   >Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   >Commerciële catalogi kunnen worden benaderd met behulp van id&#39;s of UID&#39;s. UID&#39;s zijn geïntroduceerd in Adobe Commerce 2.4.2. Schakel deze optie alleen in als uw commerciële backend een GraphQL-schema van versie 2.4.2 of hoger ondersteunt.
 
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 

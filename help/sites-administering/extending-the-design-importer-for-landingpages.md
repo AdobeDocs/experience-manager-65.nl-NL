@@ -160,8 +160,8 @@ Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
 Een tekst met een lijst toevoegen:
 
-* 1e
-* 2de
+* 1st
+* 2nd
 
 die in de redacteur RTE kunnen uitgeven:
 

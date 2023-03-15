@@ -1,8 +1,8 @@
 ---
 title: Snelstartgids voor mappen zonder middelenkoppen maken
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
-exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
+exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

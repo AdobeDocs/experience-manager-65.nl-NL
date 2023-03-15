@@ -1,33 +1,32 @@
 ---
 title: Formulieruitvoer configureren
-seo-title: Formulieruitvoer configureren
+seo-title: Configuring form output
 description: Leer hoe u formulieruitvoer configureert.
-seo-description: Leer hoe u formulieruitvoer configureert.
+seo-description: Learn how to configure form output.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: d739806c-ce72-40fd-b304-3262a0988d96
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
 
-
 # Formulieruitvoer configureren{#configuring-form-output}
 
-## Geef het type HTML-uitvoer op dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Het type HTML-uitvoer opgeven dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer formulier in de lijst Uitvoertype een van de volgende opties:
 
-   **Volledige HTML:** het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
+   **Volledige HTML:** Het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
 
-   **Tekst van formulier:** het formulier weergeven binnen  `<BODY>` codes (geen volledige HTML-pagina).
+   **Hoofdtekst van formulier:** Het formulier weergeven binnen `<BODY>` -tags (geen volledige HTML-pagina).
 
 1. Klik op Opslaan.
 
@@ -35,15 +34,15 @@ ht-degree: 1%
 
 1. Selecteer onder Formulieruitvoer in de lijst Renderen op een van de volgende opties:
 
-   **Client:PDF forms renderen** in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
+   **Client:** PDF forms renderen in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
 
-   **Server:PDF forms renderen** op de toepassingsserver.
+   **Server:** PDF forms renderen op de toepassingsserver.
 
-   **Automatisch:** het PDF-formulier weergeven op de locatie die is opgegeven door de  `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
+   **Automatisch:** Het PDF-formulier weergeven op de locatie die door de `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
 
 1. Klik op Opslaan.
 
-## Aanroeping van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aanroepen van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Voer de volgende stappen uit om de functie in te schakelen:
 
@@ -56,4 +55,3 @@ Voer de volgende stappen uit om de functie in te schakelen:
    >[!NOTE]
    >
    >*Als u de functie wilt uitschakelen, kunt u de JavaScript-variabele verwijderen of de waarde ervan instellen op 0.*
-

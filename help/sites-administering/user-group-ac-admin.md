@@ -22,14 +22,14 @@ ht-degree: 0%
 
 Het toelaten van toegang tot een gegevensopslagplaats CRX impliceert verscheidene onderwerpen:
 
-* [Toegangsrechten](#how-access-rights-are-evaluated)  - de concepten hoe zij worden bepaald en geëvalueerd
-* [Gebruikersbeheer](#user-administration) : individuele accounts beheren die worden gebruikt voor toegang
-* [Groepsbeheer](#group-administration)  - vereenvoudig gebruikersbeheer door groepen te vormen
-* [Toegang tot Right Management](#access-right-management)  - beleidsregels definiëren die bepalen hoe deze gebruikers en groepen toegang hebben tot bronnen
+* [Toegangsrechten](#how-access-rights-are-evaluated) - de begrippen hoe zij worden gedefinieerd en geëvalueerd;
+* [Gebruikersbeheer](#user-administration) - beheer van de individuele rekeningen die voor toegang worden gebruikt
+* [Groepsbeheer](#group-administration) - gebruikersbeheer vereenvoudigen door groepen te vormen
+* [Toegangsbeheer](#access-right-management) - het bepalen van beleid dat controleert hoe deze gebruikers en groepen tot middelen kunnen toegang hebben
 
 De basiselementen zijn:
 
-**GebruikersaccountsCRX** verifieert de toegang door een gebruiker (door die persoon of een andere toepassing) te identificeren en te verifiëren volgens de gegevens in de gebruikersaccount.
+**Gebruikersaccounts** CRX verifieert toegang door, een gebruiker (door die persoon, of een andere toepassing) volgens details te identificeren en te verifiëren die in de gebruikersrekening worden gehouden.
 
 In CRX is elk gebruikersaccount een knooppunt in de werkruimte. Een CRX-gebruikersaccount heeft de volgende eigenschappen:
 
@@ -42,7 +42,7 @@ In CRX is elk gebruikersaccount een knooppunt in de werkruimte. Een CRX-gebruike
 
    Om het beheer te vereenvoudigen raden we u echter aan (in de meeste gevallen) toegangsrechten toe te wijzen aan groepsaccounts. Het toewijzen van toegangsrechten voor elke individuele gebruiker wordt snel zeer moeilijk te beheren (de uitzonderingen zijn bepaalde systeemgebruikers wanneer slechts één of twee instanties bestaan).
 
-**De rekeningen** AccountsGroup van de groep zijn inzamelingen van gebruikers en/of andere groepen. Deze worden gebruikt om beheer te vereenvoudigen aangezien een verandering in de toegangsrechten die aan een groep worden toegewezen automatisch op alle gebruikers in die groep wordt toegepast. Een gebruiker hoeft niet tot een groep te behoren, maar behoort vaak tot een groep.
+**Groepsaccounts** Groepsaccounts zijn verzamelingen van gebruikers en/of andere groepen. Deze worden gebruikt om beheer te vereenvoudigen aangezien een verandering in de toegangsrechten die aan een groep worden toegewezen automatisch op alle gebruikers in die groep wordt toegepast. Een gebruiker hoeft niet tot een groep te behoren, maar behoort vaak tot een groep.
 
 In CRX heeft een groep de volgende eigenschappen:
 
@@ -52,7 +52,7 @@ In CRX heeft een groep de volgende eigenschappen:
 * U kunt een hiërarchische groepering maken met lidrelaties. U kunt een groep niet direct onder een andere groep in de repository plaatsen.
 * U kunt de toegangsrechten voor alle groepsleden bepalen.
 
-**Access** RightsCRX gebruikt toegangsrechten om toegang tot specifieke gebieden van de opslagplaats te beheren.
+**Toegangsrechten** CRX gebruikt de Rechten van de Toegang om toegang tot specifieke gebieden van de bewaarplaats te controleren.
 
 Dit wordt gedaan door voorrechten toe te wijzen om of toegang tot een middel (knoop of weg) in de bewaarplaats toe te staan of te ontkennen. Aangezien verschillende voorrechten kunnen worden toegewezen, moeten zij worden geëvalueerd om te bepalen welke combinatie voor het huidige verzoek van toepassing is.
 
@@ -62,7 +62,7 @@ CRX staat u toe om de toegangsrechten voor zowel gebruiker als groepsrekeningen 
 
 >[!NOTE]
 >
->CRX implementeert [toegangsbeheer zoals bepaald door JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
+>CRX-implementaties [toegangsbeheer zoals gedefinieerd in JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html).
 >
 >Een standaardinstallatie van een CRX bewaarplaats wordt gevormd om op middel-gebaseerde toegangsbeheerlijsten te gebruiken. Dit is één mogelijke implementatie van JSR-283 toegangsbeheer en één van de implementaties heden met Jackrabbit.
 
@@ -70,14 +70,14 @@ CRX staat u toe om de toegangsrechten voor zowel gebruiker als groepsrekeningen 
 
 CRX gebruikt twee zeer belangrijke concepten wanneer het evalueren van toegangsrechten:
 
-* Een **principal** is een entiteit die toegangsrechten draagt. Belangrijkste punten zijn:
+* A **principal** is een entiteit die toegangsrechten heeft. Belangrijkste punten zijn:
 
    * Een gebruikersaccount
    * Een groepsaccount
 
       Als een gebruikersaccount bij een of meer gebruikersaccounts hoort, wordt deze ook aan elk van deze groepshoofden gekoppeld.
 
-* Een **subject** wordt gebruikt om de bron van een verzoek te vertegenwoordigen.
+* A **onderwerp** wordt gebruikt om de bron van een verzoek te vertegenwoordigen.
 
    Het wordt gebruikt om de toegangsrechten die op dat verzoek van toepassing zijn, te consolideren. Deze zijn afkomstig van:
 
@@ -109,7 +109,6 @@ De lijst van toegangsrechten die van toepassing zijn op het onderwerp is samenge
 >* CRX houdt geen rekening met enige gebruikershiërarchie wanneer het de lijst compileert.
 >* CRX gebruikt een groepshiërarchie slechts wanneer u een groep als lid van een andere groep omvat. Er is geen automatische overerving van groepsmachtigingen.
 >* De volgorde waarin u de groepen opgeeft, heeft geen invloed op de toegangsrechten.
-
 >
 
 
@@ -117,7 +116,7 @@ De lijst van toegangsrechten die van toepassing zijn op het onderwerp is samenge
 
 Wanneer CRX het verzoek behandelt het het toegangsverzoek van het onderwerp met de toegangsbeheerlijst op de gegevensopslaggegevensopslagknoop vergelijkt:
 
-Dus als Linda vraagt om het `/features` knooppunt bij te werken in de volgende repository structuur:
+Dus als Linda vraagt om de `/features` knooppunt in de volgende repository structuur:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -136,7 +135,7 @@ Toegangsrechten in CRX worden als volgt beoordeeld:
 >
 >Dit evaluatieproces is aangewezen voor het middel gebaseerde toegangsbeheer van een standaardCRX installatie.
 
-Twee voorbeelden waarbij de gebruiker `aUser` lid is van de groep `aGroup`:
+Twee voorbeelden nemen waarbij de gebruiker `aUser` lid is van de groep `aGroup`:
 
 ```xml
    + parentNode
@@ -150,7 +149,7 @@ Twee voorbeelden waarbij de gebruiker `aUser` lid is van de groep `aGroup`:
 
 In het bovenstaande geval:
 
-* `aUser` geen schrijfmachtiging is verleend op  `grandChildNode`.
+* `aUser` geen schrijfmachtiging is verleend op `grandChildNode`.
 
 ```xml
    + parentNode
@@ -165,8 +164,8 @@ In het bovenstaande geval:
 
 In dit geval:
 
-* `aUser` geen schrijfmachtiging is verleend op  `grandChildNode`.
-* De tweede ACE voor `aUser` is overtollig.
+* `aUser` geen schrijfmachtiging is verleend op `grandChildNode`.
+* De tweede ACE voor `aUser` is overbodig.
 
 De rechten van de toegang van veelvoudige groepshoofden worden geëvalueerd gebaseerd op hun orde, zowel binnen de hiërarchie als binnen één enkele toegangsbeheerlijst.
 
@@ -196,7 +195,7 @@ In de volgende tabel vindt u een aantal aanbevelingen en aanbevolen procedures:
   </tr>
   <tr>
    <td><i>Eenvoudig houden</i></td>
-   <td><p>Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald.</p> <p>Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat zowel uw huidige collega's als toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd.</p> </td>
+   <td><p>Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald.</p> <p>Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat uw huidige collega's en/of toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd.</p> </td>
   </tr>
   <tr>
    <td><i>Testen</i></td>
@@ -211,12 +210,12 @@ In de volgende tabel vindt u een aantal aanbevelingen en aanbevolen procedures:
 
 ## Gebruikersbeheer {#user-administration}
 
-Een standaarddialoogvenster wordt gebruikt voor **Gebruikersbeheer**.
+Er wordt een standaarddialoogvenster gebruikt voor **Gebruikersbeheer**.
 
 U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialoog van allebei toegang hebben:
 
-* de koppeling **Gebruikersbeheer** in de hoofdconsole van CRX
-* het menu **Beveiliging** van de CRX Explorer
+* de **Gebruikersbeheer** koppeling in de hoofdconsole van CRX
+* de **Beveiliging** menu van de CRX Explorer
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
@@ -244,7 +243,7 @@ U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialo
 
 Hiermee worden alle groepen weergegeven waartoe de account behoort. De kolom Overgenomen geeft het lidmaatschap aan dat is overgeërfd als gevolg van het lidmaatschap van een andere groep.
 
-Als u op een GroupID klikt (indien beschikbaar), wordt [Groepsbeheer](#group-administration) voor die groep geopend.
+Als u op een GroupID klikt (indien beschikbaar), wordt het dialoogvenster [Groepsbeheer](#group-administration) voor die groep.
 
 **Imitators**
 
@@ -258,21 +257,21 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 
 ### Een gebruikersaccount maken {#creating-a-user-account}
 
-1. Open het dialoogvenster **Gebruikersbeheer**.
-1. Klik **Gebruiker maken**.
+1. Open de **Gebruikersbeheer** .
+1. Klikken **Gebruiker maken**.
 1. Vervolgens kunt u de eigenschappen invoeren:
 
-   * **** Gebruikte gebruikersnaam als accountnaam.
-   * **** Wachtwoord vereist bij aanmelden.
-   * **De belangrijkste** Naam om een volledige textuele naam te verstrekken.
-   * **Tussenweg** die kan worden gebruikt om een boomstructuur te vormen.
+   * **GebruikerID** gebruikt als de accountnaam.
+   * **Wachtwoord** nodig bij het aanmelden.
+   * **Hoofdnaam** om een volledige tekstnaam op te geven.
+   * **Intermediair pad** die kunnen worden gebruikt om een boomstructuur te vormen.
 
 1. Klik op Opslaan (groen vinkje).
 1. Het dialoogvenster wordt uitgebreid, zodat u:
 
-   1. Configureer **Eigenschappen**.
+   1. Configureren **Eigenschappen**.
    1. Zie **Groepslidmaatschap**.
-   1. Definieer **Impersonators**.
+   1. Definiëren **Imitators**.
 
 >[!NOTE]
 >
@@ -280,21 +279,20 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 >
 >* gebruikers
 >* groepen met veel leden
-
 >
 
 
 ### Een gebruikersaccount bijwerken {#updating-a-user-account}
 
-1. Open in het dialoogvenster **Gebruikersbeheer** de lijstweergave van alle accounts.
+1. Met de **Gebruikersbeheer** wordt de lijstweergave van alle accounts geopend.
 1. Navigeer door de boomstructuur.
 1. Klik op de vereiste account om te openen voor bewerking.
 1. Breng een wijziging aan en klik vervolgens op Opslaan (groen verdeelstreepje) voor die vermelding.
-1. Klik **Close** om te beëindigen, of **List..** om terug te keren naar de lijst met alle gebruikersaccounts.
+1. Klikken **Sluiten** om te voltooien, of **Lijst...** om terug te keren naar de lijst met alle gebruikersaccounts.
 
 ### Een gebruikersaccount verwijderen {#removing-a-user-account}
 
-1. Open in het dialoogvenster **Gebruikersbeheer** de lijstweergave van alle accounts.
+1. Met de **Gebruikersbeheer** wordt de lijstweergave van alle accounts geopend.
 1. Navigeer door de boomstructuur.
 1. Selecteer de vereiste account en klik op **Gebruiker verwijderen**; het account wordt onmiddellijk verwijderd.
 
@@ -306,11 +304,11 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 
 ### Eigenschappen definiëren {#defining-properties}
 
-U kunt **Eigenschappen** voor of nieuwe of bestaande rekeningen bepalen:
+U kunt **Eigenschappen** voor nieuwe of bestaande rekeningen:
 
-1. Open het dialoogvenster **Gebruikersbeheer** voor de juiste account.
-1. Definieer een **naam van een eigenschap**.
-1. Selecteer **Type** van de drop-down lijst.
+1. Open de **Gebruikersbeheer** voor de juiste account.
+1. Een **Eigenschap** naam.
+1. Selecteer **Type** in de vervolgkeuzelijst.
 1. Definieer de **Waarde**.
 1. Klik op Opslaan (groen kliksymbool) voor de nieuwe eigenschap.
 
@@ -320,15 +318,15 @@ Met uitzondering van het Wachtwoord, kunnen de eigenschappen niet worden uitgege
 
 #### Het wachtwoord wijzigen {#changing-the-password}
 
-**Password** is een speciale eigenschap die kan worden gewijzigd door op de **Wachtwoord wijzigen**-koppeling te klikken.
+De **Wachtwoord** is een speciale eigenschap die kan worden gewijzigd door op de knop **Wachtwoord wijzigen** koppeling.
 
-U kunt het wachtwoord in uw eigen gebruikersrekening van **Veiligheid** menu in de Ontdekkingsreiziger ook veranderen CRX.
+U kunt het wachtwoord ook wijzigen in uw eigen gebruikersaccount via het dialoogvenster **Beveiliging** in de CRX Explorer.
 
 ### Een imitator definiëren {#defining-an-impersonator}
 
 U kunt imitators definiëren voor nieuwe of bestaande accounts:
 
-1. Open het dialoogvenster **Gebruikersbeheer** voor de juiste account.
+1. Open de **Gebruikersbeheer** voor de juiste account.
 1. Geef op welk account u als lid van dat account wilt gebruiken.
 
    U kunt Bladeren gebruiken... om een bestaande account te selecteren.
@@ -337,12 +335,12 @@ U kunt imitators definiëren voor nieuwe of bestaande accounts:
 
 ## Groepsbeheer {#group-administration}
 
-Een standaarddialoogvenster wordt gebruikt voor **Groepsbeheer**.
+Er wordt een standaarddialoogvenster gebruikt voor **Groepsbeheer**.
 
 U moet in de aangewezen werkruimte worden geregistreerd, dan kunt u tot de dialoog van allebei toegang hebben:
 
-* de **Groepsbeheer**-koppeling op de hoofdconsole van CRX
-* het menu **Beveiliging** van de CRX Explorer
+* de **Groepsbeheer** koppeling in de hoofdconsole van CRX
+* de **Beveiliging** menu van de CRX Explorer
 
 ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -372,39 +370,39 @@ Als u op een GroupID klikt, wordt het dialoogvenster voor die groep geopend.
 
 Hiermee geeft u alle accounts (gebruikers en/of groepen) weer die lid zijn van de huidige groep.
 
-De **Overgenomen** kolom wijst op lidmaatschap dat als resultaat van lidmaatschap van een andere groep is geërft.
+De **Overgenomen** de kolom wijst op lidmaatschap dat als resultaat van lidmaatschap van een andere groep is geërft.
 
 >[!NOTE]
 >
->Wanneer de rol Eigenaar, Editor of Viewer wordt toegewezen aan een gebruiker in een willekeurige map met middelen, wordt een nieuwe groep gemaakt. De groepsnaam heeft de notatie `mac-default-<foldername>` voor elke map waarin de rollen zijn gedefinieerd.
+>Wanneer de rol Eigenaar, Editor of Viewer wordt toegewezen aan een gebruiker in een willekeurige map met middelen, wordt een nieuwe groep gemaakt. De groepsnaam heeft de indeling `mac-default-<foldername>` voor elke map waarin de rollen zijn gedefinieerd.
 
 ### Een groepsaccount maken {#creating-a-group-account}
 
-1. Open het dialoogvenster **Groepsbeheer**.
-1. Klik **Groep maken**.
+1. Open de **Groepsbeheer** .
+1. Klikken **Groep maken**.
 1. Vervolgens kunt u de eigenschappen invoeren:
 
-   * **De belangrijkste** Naam om een volledige textuele naam te verstrekken.
-   * **Tussenweg** die kan worden gebruikt om een boomstructuur te vormen.
+   * **Hoofdnaam** om een volledige tekstnaam op te geven.
+   * **Intermediair pad** die kunnen worden gebruikt om een boomstructuur te vormen.
 
 1. Klik op Opslaan (groen vinkje).
 1. Het dialoogvenster wordt uitgebreid, zodat u:
 
-   1. Configureer **Eigenschappen**.
+   1. Configureren **Eigenschappen**.
    1. Zie **Groepslidmaatschap**.
-   1. **Leden** beheren.
+   1. Beheren **Leden**.
 
 ### Een groepsaccount bijwerken {#updating-a-group-account}
 
-1. Open in het dialoogvenster **Groepsbeheer** de lijstweergave van alle accounts.
+1. Met de **Groepsbeheer** wordt de lijstweergave van alle accounts geopend.
 1. Navigeer door de boomstructuur.
 1. Klik op de vereiste account om te openen voor bewerking.
 1. Breng een wijziging aan en klik vervolgens op Opslaan (groen verdeelstreepje) voor die vermelding.
-1. Klik **Close** om te beëindigen, of **List..** om terug te keren naar de lijst van alle groepsaccounts.
+1. Klikken **Sluiten** om te voltooien, of **Lijst...** om terug te keren naar de lijst van alle groepsrekeningen.
 
 ### Een groepsaccount verwijderen {#removing-a-group-account}
 
-1. Open in het dialoogvenster **Groepsbeheer** de lijstweergave van alle accounts.
+1. Met de **Groepsbeheer** wordt de lijstweergave van alle accounts geopend.
 1. Navigeer door de boomstructuur.
 1. Selecteer de vereiste account en klik op **Groep verwijderen**; het account wordt onmiddellijk verwijderd.
 
@@ -418,9 +416,9 @@ De **Overgenomen** kolom wijst op lidmaatschap dat als resultaat van lidmaatscha
 
 U kunt Eigenschappen definiëren voor nieuwe of bestaande accounts:
 
-1. Open het dialoogvenster **Groepsbeheer** voor de juiste account.
-1. Definieer een **naam van een eigenschap**.
-1. Selecteer **Type** van de drop-down lijst.
+1. Open de **Groepsbeheer** voor de juiste account.
+1. Een **Eigenschap** naam.
+1. Selecteer **Type** in de vervolgkeuzelijst.
 1. Definieer de **Waarde**.
 1. Klik op Opslaan (groen verdeelstreepje) voor de nieuwe eigenschap.
 
@@ -430,11 +428,11 @@ Bestaande eigenschappen kunnen met het prullenbaksymbool worden verwijderd.
 
 U kunt leden toevoegen aan de huidige groep:
 
-1. Open het dialoogvenster **Groepsbeheer** voor de juiste account.
+1. Open de **Groepsbeheer** voor de juiste account.
 1. Ofwel:
 
    * Voer de naam in van het vereiste lid (gebruiker- of groepsaccount).
-   * Of gebruik **Bladeren..** om naar de principal (gebruiker of groepsaccount) te zoeken en te selecteren die u wilt toevoegen.
+   * of gebruiken **Bladeren...** om te zoeken naar de principal (gebruiker- of groepsaccount) die u wilt toevoegen en deze te selecteren.
 
 1. Klik op Opslaan (groen verdeelstreepje) voor de nieuwe eigenschap.
 
@@ -442,9 +440,9 @@ Of verwijder een bestaand lid met het prullenbaksymbool.
 
 ## Toegangsbeheer {#access-right-management}
 
-Met **Toegangsbeheer** lusje van CRXDE Lite kunt u het beleid van de toegangscontrole bepalen en de verwante voorrechten toewijzen.
+Met de **Toegangsbeheer** tabblad van CRXDE Lite kunt u het beleid voor toegangsbeheer definiëren en de bijbehorende rechten toewijzen.
 
-Voor **Huidig pad** selecteert u bijvoorbeeld de vereiste bron in het linkerdeelvenster, het tabblad Toegangsbeheer in het rechterbenedendeelvenster:
+Bijvoorbeeld: **Huidig pad** Selecteer de vereiste bron in het linkerdeelvenster, het tabblad Toegangsbeheer in het rechterondervenster:
 
 ![crx_accesscontrol_tab](assets/crx_accesscontrol_tab.png)
 
@@ -476,15 +474,15 @@ Het beleid kan worden geselecteerd voor:
 
 * **Bewaarplaats**
 
-   Hiermee selecteert u toegangsbeheer op archiefniveau. Bijvoorbeeld, wanneer het plaatsen van `jcr:namespaceManagement` voorrecht, dat slechts relevant voor de bewaarplaats is, niet een knoop.
+   Hiermee selecteert u toegangsbeheer op archiefniveau. Als u bijvoorbeeld de opdracht `jcr:namespaceManagement` privilege, dat alleen relevant is voor de gegevensopslagruimte, niet voor een knooppunt.
 
 * **Opdrachtgever**
 
    Een principal die in de repository is geregistreerd.
 
-   U kunt de naam **Principal** typen of op het pictogram rechts van het veld klikken om het dialoogvenster **Select Principal** te openen.
+   U kunt in het dialoogvenster **Opdrachtgever** naam of klik op het pictogram rechts van het veld om het dialoogvenster **Principal selecteren** .
 
-   Hierdoor kunt u **Zoeken** naar een **Gebruiker** of **Groep**. Selecteer de vereiste principal in de resulterende lijst en klik vervolgens op **OK** om de waarde terug te brengen naar het vorige dialoogvenster.
+   Hierdoor kunt u **Zoeken** voor een **Gebruiker** of **Groep**. Selecteer de vereiste principal in de lijst die u opmaakt, en klik vervolgens op **OK** om de waarde terug naar het vorige dialoogvenster te brengen.
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
@@ -496,7 +494,7 @@ Het beleid kan worden geselecteerd voor:
 
 ### Bevoegdheden {#privileges}
 
-De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van een ingang van de toegangscontrole (zie [Veiligheid API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) voor volledige details):
+De volgende rechten zijn beschikbaar voor selectie wanneer u een toegangsbeheeritem toevoegt (zie de [Beveiliging-API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html) voor nadere bijzonderheden ) :
 
 <table>
  <tbody>
@@ -506,11 +504,11 @@ De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van
   </tr>
   <tr>
    <td><code>jcr:read</code></td>
-   <td>Haal een knooppunt op en lees de eigenschappen en waarden ervan.</td>
+   <td>Hiermee wordt een knooppunt opgehaald en worden de eigenschappen en waarden ervan gelezen.</td>
   </tr>
   <tr>
    <td><code>rep:write</code></td>
-   <td>Dit is een eigenschap voor een speciale aggregaat van jcr:write en jcr:nodeTypeManagement.<br /> </td>
+   <td>Dit is een speciale aggregaatbevoegdheid voor jcr:write en jcr:nodeTypeManagement voor het tekenen van een object.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:all</code></td>
@@ -582,7 +580,7 @@ De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van
   </tr>
   <tr>
    <td><code>jcr:write</code></td>
-   <td>Dit is een geaggregeerd voorrecht dat het volgende bevat:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
+   <td>Dit is een verzamelrecht dat het volgende bevat:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
   </tr>
   <tr>
    <td><code>rep:privilegeManagement</code></td>
@@ -595,29 +593,29 @@ De volgende voorrechten zijn beschikbaar voor selectie wanneer het toevoegen van
 
 U kunt ook nieuwe rechten registreren:
 
-1. Selecteer **Gereedschappen** op de werkbalk en **Rechten** om de momenteel geregistreerde rechten weer te geven.
+1. Selecteer op de werkbalk **Gereedschappen** vervolgens **Bevoegdheden** om de momenteel geregistreerde rechten weer te geven.
 
    ![ac_privileges](assets/ac_privileges.png)
 
-1. Gebruik het **Register Privilege** pictogram (**+**) om de dialoog te openen en een nieuw voorrecht te bepalen:
+1. Gebruik de **Rechten registreren** icon (**+**) om het dialoogvenster te openen en een nieuw voorrecht te definiëren:
 
    ![ac_privilegesRegister](assets/ac_privilegeregister.png)
 
-1. Klik **OK** om op te slaan. Het voorrecht is nu beschikbaar voor selectie.
+1. Klikken **OK** om op te slaan. Het voorrecht is nu beschikbaar voor selectie.
 
 ### Een toegangsbeheeritem toevoegen {#adding-an-access-control-entry}
 
-1. Selecteer uw bron en open **Toegangsbeheer** tabel.
+1. Selecteer uw bron en open de **Toegangsbeheer** tab.
 
-1. Als u een nieuw **Lokaal toegangsbeheerbeleid** wilt toevoegen, klikt u op het pictogram **+** rechts van de lijst **Toepasselijk toegangsbeheerbeleid**:
+1. Een nieuwe **Beleid voor lokaal toegangsbeheer** klikt u op de knop **+** pictogram rechts van **Toepasselijk toegangsbeheerbeleid** lijst:
 
    ![crx_accesscontrol_applicable](assets/crx_accesscontrol_applicable.png)
 
-1. Een nieuwe ingang verschijnt onder **Lokaal Beleid van het Toegangsbeheer:**
+1. Een nieuwe vermelding wordt weergegeven onder **Beleid voor lokaal toegangsbeheer:**
 
    ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
-1. Klik op het pictogram **+** om een nieuwe vermelding toe te voegen:
+1. Klik op de knop **+** pictogram om een nieuw item toe te voegen:
 
    ![crx_accesscontrol_addentry](assets/crx_accesscontrol_addentry.png)
 
@@ -627,10 +625,10 @@ U kunt ook nieuwe rechten registreren:
    >
    >Hiervoor moet u &quot;&quot; gebruiken.
 
-1. Bepaal uw toegangsbeheerbeleid en klik **O.K.** om te bewaren. Uw nieuwe beleid zal:
+1. Bepaal uw toegangsbeheerbeleid en klik **OK** om op te slaan. Uw nieuwe beleid zal:
 
-   * vermeld onder **Lokaal beleid van het Toegangsbeheer**
-   * de wijzigingen worden doorgevoerd in het **Effectief beleid voor toegangsbeheer**.
+   * worden vermeld onder **Lokaal toegangsbeheerbeleid**
+   * de wijzigingen zullen in de **Effectief beleid voor toegangscontrole**.
 
 CRX valideert uw selectie; voor een bepaalde principal bestaat (hoogstens) 1 ontkent en 1 staat ingang op een bepaald knooppunt toe. De implementatie ontruimt altijd overtollige ingangen en zorgt ervoor dat het zelfde voorrecht niet in zowel toestaat als ontkent ingangen vermeld is.
 
@@ -638,21 +636,21 @@ CRX valideert uw selectie; voor een bepaalde principal bestaat (hoogstens) 1 ont
 
 De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 
-1. In de lijst van **Lokaal Beleid van het Toegangsbeheer** selecteer de vereiste ingang en sleep het aan de nieuwe positie in de lijst.
+1. In de tabel **Beleid voor lokaal toegangsbeheer** Selecteer de gewenste vermelding en sleep deze naar de nieuwe positie in de tabel.
 
    ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
-1. De wijzigingen worden weergegeven in zowel de tabellen voor **Lokaal** als **Effectief beleid voor toegangsbeheer**.
+1. De wijzigingen worden in beide tabellen voor de **Lokaal** en de **Effectief beleid voor toegangscontrole**.
 
 ### Een toegangsbeheerbeleid verwijderen {#removing-an-access-control-policy}
 
-1. In de lijst van **Lokaal Beleid van het Toegangsbeheer** klik het rode pictogram (-) rechts van de ingang.
-1. De vermelding wordt verwijderd uit zowel de tabellen voor **Lokaal** als **Effectief beleid voor toegangsbeheer**.
+1. In de tabel **Beleid voor lokaal toegangsbeheer** Klik op het rode pictogram (-) rechts van de vermelding.
+1. De vermelding wordt uit de tabellen voor de **Lokaal** en de **Effectief beleid voor toegangscontrole**.
 
 ### Een toegangsbeheerbeleid testen {#testing-an-access-control-policy}
 
-1. Selecteer **Gereedschappen** op de werkbalk CRXDE Lite en **Toegangsbeheer testen...**.
-1. Er wordt een nieuw dialoogvenster geopend in het rechterbovenvenster. Selecteer **Pad** en/of **Principal** die u wilt testen.
-1. Klik **Test** om de resultaten voor uw selectie te zien:
+1. Selecteer op de werkbalk CRXDE Lite de optie **Gereedschappen** vervolgens **Toegangsbeheer testen...**.
+1. In het rechterbovenvenster wordt een nieuw dialoogvenster geopend. Selecteer **Pad** en/of **Opdrachtgever** die u wilt testen.
+1. Klikken **Testen** om de resultaten voor uw selectie te zien:
 
    ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)

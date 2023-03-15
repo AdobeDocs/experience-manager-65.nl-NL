@@ -1,24 +1,23 @@
 ---
 title: Best practices implementeren
-seo-title: Best practices implementeren
+seo-title: Deploying Best Practices
 description: Het opstellen en handhaven van beste praktijken.
-seo-description: Het opstellen en handhaven van beste praktijken.
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-
-# Het opstellen van Beste praktijken{#deploying-best-practices}
+# Best practices implementeren{#deploying-best-practices}
 
 Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -39,7 +38,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## OAK {#oak}
 
-[](/help/sites-deploying/platform.md) Oakis is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
+[Eik](/help/sites-deploying/platform.md) is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
 
 <table>
  <tbody>
@@ -75,9 +74,9 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[Community Content Store](/help/communities/working-with-srp.md) : bespreekt de nieuwe functie voor gedeelde opslag voor door gebruikers gegenereerde inhoud (UGC) en de overwegingen voor het kiezen van de onderliggende  [topologie](/help/communities/topologies.md).
+[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker geproduceerde inhoud (UGC) en de overwegingen om het onderliggende te kiezen [topologie](/help/communities/topologies.md).
 
-[Aanbevolen plaatsingen voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
+[Aanbevolen implementaties voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
 ## UI {#ui}
 
@@ -115,4 +114,3 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   </tr>
  </tbody>
 </table>
-

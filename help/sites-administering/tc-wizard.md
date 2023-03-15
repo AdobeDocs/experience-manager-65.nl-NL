@@ -1,8 +1,8 @@
 ---
 title: Wizard Taalkopie
-seo-title: Wizard Taalkopie
+seo-title: Language Copy Wizard
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in AEM.
-seo-description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in AEM.
+seo-description: Learn about using the Language Copy Wizard in AEM.
 uuid: a6168f5d-cce7-48bd-a898-171319621460
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,13 @@ content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
-
 
 # Wizard Taalkopie{#language-copy-wizard}
 
@@ -38,19 +37,19 @@ U kunt als volgt deze wizard openen:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. Met de stap **Source** van de wizard kunt u pagina&#39;s toevoegen/verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten.
+1. De **Bron selecteren** kunt u pagina&#39;s toevoegen of verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. De **Volgende** knoop brengt u aan **vorm** stap van de tovenaar. Hier kunt u talen toevoegen of verwijderen en de vertaalmethode selecteren.
+1. De **Volgende** de knoop brengt u aan **Configureren** stap van de wizard. Hier kunt u talen toevoegen of verwijderen en de vertaalmethode selecteren.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
    >[!NOTE]
    >
-   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het vormen van het Kader van de Integratie van de Vertaling](/help/sites-administering/tc-tic.md).
+   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het framework voor vertaalintegratie configureren](/help/sites-administering/tc-tic.md).
 
-1. Met de knop **Next** gaat u naar de stap **Translate** van de wizard. Hier kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
+1. De **Volgende** de knoop brengt u aan **Vertalen** stap van de wizard. Hier kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
 
    >[!NOTE]
    >
@@ -58,7 +57,6 @@ U kunt als volgt deze wizard openen:
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. De **Create** knoop beëindigt de tovenaar.
+1. De **Maken** de knop beëindigt de wizard.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
-

@@ -1,22 +1,21 @@
 ---
 title: Overzicht van AEM Document Services
-seo-title: Overzicht van AEM Document Services
+seo-title: Overview of AEM Document Services
 description: AEM Document Services is een set OSGi Services voor het maken, samenstellen en beveiligen van PDF-documenten.
-seo-description: AEM Document Services is een set OSGi Services voor het maken, samenstellen en beveiligen van PDF-documenten.
+seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
 uuid: 439144b7-f805-4819-9ed9-a6e9e374b5ed
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1402'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van AEM Document Services{#overview-of-aem-document-services}
 
@@ -24,7 +23,7 @@ AEM Document Services is een set OSGi Services voor het maken, samenstellen en b
 
 ## Uitvoerservice {#output-service}
 
-Met de service Uitvoer kunt u documenten in verschillende indelingen maken, zoals PDF-, laser-printerindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). In de volgende lijst ziet u de indeling van labelprinters:
+Met de uitvoerservice kunt u documenten in verschillende indelingen maken, zoals PDF, laserprinterindelingen en labelprinterindelingen. Indelingen voor laserprinters zijn PostScript en Printer Control Language (PCL). In de volgende lijst ziet u de indeling van labelprinters:
 
 * Zebra (ZPL)
 * Intermec (IPL)
@@ -37,19 +36,19 @@ Een document kan naar een netwerkprinter, een lokale printer of een bestand op h
 >
 >Een formulierontwerp wordt meestal gemaakt met Designer. Zie Help bij Designer voor informatie over het maken van formulierontwerpen voor de Output-service.
 
-Als u de Output-service gebruikt om XML-gegevens samen te voegen met een formulierontwerp, is het resultaat een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de velden. U kunt daarentegen de Forms-service gebruiken om een interactief PDF-formulier te maken waarmee gebruikers gegevens in de velden kunnen invoeren.
+Als u de Output-service gebruikt om XML-gegevens samen te voegen met een formulierontwerp, is het resultaat een niet-interactief PDF-document. In een niet-interactief PDF-document kunnen gebruikers geen gegevens invoeren in de desbetreffende velden. U kunt daarentegen de Forms-service gebruiken om een interactief PDF-formulier te maken waarmee gebruikers gegevens in de betreffende velden kunnen invoeren.
 
 De volgende vier de dienstverrichtingen van de Output zijn beschikbaar voor gebruik:
 
 * **generatePDFOuput**: Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te genereren
 * **generatePrintedOutput**: Hiermee voegt u een formulierontwerp samen met formuliergegevens om een document te genereren dat naar een laser- of labelnetwerkprinter wordt verzonden
 
-* **generatePDFOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een optie om één PDF te genereren door alle PDF&#39;s te combineren
+* **generatePDFOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een mogelijkheid om één PDF te genereren door alle PDF te combineren
 * **generatePrintedOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch afdrukdocumenten te genereren (PS, PCL, ZPL, DPL, IPL, TPCL). U kunt ook één afdrukdocument genereren.
 
-## Assembler Service {#assembler-service}
+## Assembler-service {#assembler-service}
 
-Met de Assembler-service kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set resulterende documenten te maken.
+Met de service Assembler kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie over PDF-documenten opvragen. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set resulterende documenten te maken.
 
 Naast bovengenoemde mogelijkheden, de dienst van de Assembler:
 
@@ -66,13 +65,13 @@ In het DDX-document kunnen resultaatdocumenten met de volgende kenmerken worden 
 
 * PDF-document dat is samengesteld uit meerdere PDF-documenten
 * Meerdere PDF-documenten die zijn gesplitst van één PDF-document
-* PDF-Portfolio die een zelfstandige gebruikersinterface en meerdere PDF- en niet-PDF-documenten bevat
+* PDF Portfolio die een zelfstandige gebruikersinterface en veelvoudige PDF en niet-PDF documenten omvat
 * XDP-document dat is samengesteld uit meerdere XDP-documenten
 * XDP-document dat XML-fragmenten bevat die dynamisch in een XDP-document worden ingevoegd
 * PDF-document dat een XDP-document verpakt
-* XML-bestanden die de kenmerken van een PDF-document rapporteren. Tot de gerapporteerde kenmerken behoren tekst, opmerkingen, formuliergegevens, bestandsbijlagen, bestanden die worden gebruikt in PDF-Portfolio, bladwijzers en PDF-eigenschappen. PDF-eigenschappen zijn onder andere formuliereigenschappen, paginarotatie en documentauteur.
+* XML-bestanden die de kenmerken van een PDF-document rapporteren. Tot de gerapporteerde kenmerken behoren tekst, opmerkingen, formuliergegevens, bestandsbijlagen, bestanden die worden gebruikt in PDF-Portfolio, bladwijzers en PDF-eigenschappen. PDF-eigenschappen zijn onder andere formuliereigenschappen, pagina-rotatie en documentauteur.
 
-U kunt DDX gebruiken om PDF-documenten te vergroten als onderdeel van documentverzameling of demontage. U kunt een willekeurige combinatie van de volgende effecten opgeven:
+U kunt DDX gebruiken om de documenten van PDF als deel van documentassemblage of demontage te verhogen. U kunt een willekeurige combinatie van de volgende effecten opgeven:
 
 * Watermerken of achtergronden toevoegen aan of verwijderen uit geselecteerde pagina&#39;s.
 * Kop- en voetteksten toevoegen aan of verwijderen uit geselecteerde pagina&#39;s.
@@ -81,7 +80,7 @@ U kunt DDX gebruiken om PDF-documenten te vergroten als onderdeel van documentve
 * Metagegevens uit een ander brondocument importeren.
 * Bestandsbijlagen, bladwijzers, koppelingen, opmerkingen en JavaScript toevoegen of verwijderen.
 * Stel de oorspronkelijke weergavekenmerken in en optimaliseer deze voor weergave op het web.
-* Machtigingen instellen voor versleutelde PDF.
+* Machtigingen instellen voor gecodeerde PDF.
 * Pagina&#39;s roteren of inhoud roteren en verschuiven op pagina&#39;s.
 * Wijzig de grootte van geselecteerde pagina&#39;s.
 * Gegevens samenvoegen met een op XFA gebaseerde PDF.
@@ -108,29 +107,29 @@ Met de service Handtekening kunt u werken met digitale handtekeningen en documen
 
 De handtekeningservice krijgt toegang tot certificaten en referenties die zijn opgeslagen in de vertrouwde opslag.
 
-### Versleutelingsservice {#encryption-service}
+### Coderingsservice {#encryption-service}
 
-Met de coderingsservice kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. U kunt het gehele PDF-document (inclusief de inhoud, metagegevens en bijlagen), alle gegevens behalve de metagegevens of alleen de bijlagen versleutelen. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Acrobat kan worden weergegeven. Als een PDF-document is versleuteld met een certificaat, moet de gebruiker het PDF-document decoderen met een persoonlijke sleutel (certificaat). De persoonlijke sleutel waarmee het PDF-document wordt ontsleuteld, moet overeenkomen met de openbare sleutel waarmee het wordt versleuteld.
+Met de coderingsservice kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. U kunt het volledige document van de PDF (met inbegrip van zijn inhoud, meta-gegevens, en gehechtheid), alles behalve zijn meta-gegevens, of slechts de gehechtheid coderen. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document met een wachtwoord is versleuteld, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met een persoonlijke sleutel (certificaat). De persoonlijke sleutel die wordt gebruikt voor het decoderen van het PDF-document, moet overeenkomen met de openbare sleutel waarmee het document is versleuteld.
 
 ### Reader Extension Service {#reader-extension-service}
 
-Met de service Reader Extensions kunt u eenvoudig interactieve PDF-documenten delen door de functionaliteit van Adobe Reader uit te breiden met extra gebruiksrechten. De service Reader Extensions werkt met Adobe Reader 7.0 of hoger. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
+De dienst van de Uitbreidingen van de Reader laat uw organisatie toe om interactieve documenten van de PDF gemakkelijk te delen door de functionaliteit van Adobe Reader met extra gebruiksrechten uit te breiden. De service Reader Extensions werkt met Adobe Reader 7.0 of hoger. De service voegt gebruiksrechten toe aan een PDF-document. Met deze actie activeert u functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, zoals het toevoegen van opmerkingen aan een document, het invullen van formulieren en het opslaan van het document. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
-Wanneer de juiste gebruiksrechten zijn toegevoegd aan PDF-documenten, kunnen ontvangers de volgende activiteiten uitvoeren vanuit Adobe Reader:
+Wanneer voor PDF-documenten de juiste gebruiksrechten zijn toegevoegd, kunnen ontvangers de volgende activiteiten uitvoeren vanuit Adobe Reader:
 
-* PDF-documenten en -formulieren online of offline invullen, zodat ontvangers kopieën lokaal kunnen opslaan voor hun administratie en de toegevoegde informatie intact kunnen houden
+* PDF-documenten en -formulieren online of offline invullen, zodat ontvangers kopieën lokaal kunnen opslaan voor hun records en de toegevoegde gegevens intact kunnen houden
 * PDF-documenten opslaan op een lokale vaste schijf om het originele document en eventuele aanvullende opmerkingen, gegevens of bijlagen te behouden
 * Bestanden en mediaclips aan PDF-documenten koppelen
 * Onderteken, certificeer en authenticeer PDF-documenten door digitale handtekeningen toe te passen met PKI-technologieën (Public Key Infrastructure) die industriestandaard zijn
-* Voltooide of geannoteerde PDF-documenten elektronisch verzenden
-* PDF-documenten en -formulieren gebruiken als intuïtieve ontwikkeling voor interne databases en webservices
+* Ingevulde of geannoteerde PDF documenten elektronisch verzenden
+* Gebruik PDF-documenten en -formulieren als intuïtieve ontwikkelfront-end voor interne databases en webservices
 * Deel PDF-documenten met anderen, zodat revisoren opmerkingen kunnen toevoegen met intuïtieve opmaakgereedschappen. Deze gereedschappen zijn onder andere elektronische notities, stempels, hooglichten en doorhalen van tekst. Dezelfde functies zijn beschikbaar in Acrobat.
 * Decodering van streepjescodes voor formulieren ondersteunen.
 
 Deze speciale gebruikersmogelijkheden worden automatisch geactiveerd wanneer een PDF-document met toegangsrechten wordt geopend in Adobe Reader. Wanneer de gebruiker klaar is met het werken met een document waarvoor rechten zijn ingeschakeld, worden deze functies weer uitgeschakeld in Adobe Reader. Ze blijven uitgeschakeld totdat de gebruiker een ander PDF-document met ingeschakelde rechten ontvangt.
 
-Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst te vormen DocAssurance, zie [Installing en Vormend de Diensten van het Document](../../forms/using/install-configure-document-services.md).
+Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst DocAssurance te vormen, zie [Installeren en configureren van Document Services](../../forms/using/install-configure-document-services.md).
 
-## Naar printerservice {#send-to-printer-service}
+## Naar printerservice verzenden {#send-to-printer-service}
 
 Send To Printer Service biedt API waarmee u documenten naar een opgegeven printer kunt verzenden voor afdrukken.

@@ -1,7 +1,8 @@
 ---
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 0%
@@ -81,7 +82,7 @@ In het verleden waren de API&#39;s voor CMS&#39;s meestal gebaseerd op REST. Rep
 
 Er is nog steeds behoefte aan robuuste REST API&#39;s. REST-verzoeken kunnen echter groot en uitgebreid zijn. Als er meerdere consumenten zijn die REST-oproepen voor al uw kanalen uitvoeren, kunnen deze uitgebreide verbindingen en prestaties worden beïnvloed.
 
-Bij levering van inhoud zonder kop wordt vaak gebruikgemaakt van GraphQL API&#39;s. GraphQL staat voor een gelijkaardige stateless overdracht toe, maar staat voor meer gerichte vragen toe, die het totale aantal vereiste vragen verminderen, en prestaties verbeteren. Het is gebruikelijk om oplossingen te zien een mengeling van REST en GraphQL gebruiken, hoofdzakelijk het kiezen van het beste hulpmiddel voor de baan in kwestie.
+Bij de levering van inhoud zonder kop wordt vaak gebruikgemaakt van GraphQL API&#39;s. GraphQL staat voor een gelijkaardige stateless overdracht toe, maar staat voor meer gerichte vragen toe, die het totale aantal vereiste vragen verminderen, en prestaties verbeteren. Het is gebruikelijk dat oplossingen een combinatie van REST en GraphQL gebruiken en in wezen het beste instrument kiezen voor de betreffende taak.
 
 Wat de gekozen API ook is, door een headless-systeem te definiëren op basis van gemeenschappelijke API&#39;s, kunt u de nieuwste browser en andere webtechnologieën, zoals progressieve webapps (PWA), benutten. API&#39;s maken een standaardinterface die eenvoudig kan worden uitgebreid en aangepast.
 

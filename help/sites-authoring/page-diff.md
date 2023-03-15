@@ -1,8 +1,8 @@
 ---
 title: Page Diff-optie
-seo-title: Page Diff-optie
+seo-title: Page Diff
 description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
-seo-description: Met de functie Pagina's diff kunt u twee pagina's naast elkaar vergelijken met de gemarkeerde verschillen.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c51ba167d9b3d37de649c59526e74d9728c677c6
+exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '560'
 ht-degree: 1%
 
 ---
-
 
 # Page Diff-optie{#page-diff}
 
@@ -31,18 +30,18 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 
-## {#use} gebruiken
+## Gebruiken {#use}
 
 De zijdelingse scheiding kan het volgende vergelijken:
 
-* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page)  - Eerdere versie van een pagina met de huidige status
-* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live kopie met vervaging
-* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page)  - Starten met bron
-* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies)  - Een pagina voor en na (her)vertaling
+* [Versies](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page) - Eerdere versie van een pagina met de huidige staat
+* [Actieve kopieën](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live kopie met bijbehorende blauwdruk
+* [Starten](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page) - Starten met bron
+* [Taalkopieën](/help/sites-administering/tc-manage.md#comparing-language-copies) - Een pagina voor en na (her)vertaling
 
 Zie de respectieve onderwerpen over hoe te om diff binnen die contexten te beginnen.
 
-### Presentatie van verschillen {#presentation-of-differences}
+### Presentatie van de verschillen {#presentation-of-differences}
 
 Ongeacht de inhoud die wordt vergeleken, blijft de presentatie van het diff gelijk.
 
@@ -53,16 +52,16 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
-De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
+Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
 **Componentwijzigingen**
 
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**HTML-wijzigingen**
+**HTML wijzigen**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -71,7 +70,7 @@ De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn ge
 >
 >Bij het vergelijken van taalkopieën wordt het markeren gedeactiveerd, omdat in een vertaling alles verandert en het markeren geen nut zou hebben.
 
-### Volledig scherm en {#fullscreen-and-exiting} afsluiten
+### Volledig scherm en afsluiten {#fullscreen-and-exiting}
 
 Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
 
@@ -95,7 +94,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
+   * Als u problemen ondervindt met een diff, controleert u [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
 
 >[!NOTE]
 >
@@ -103,4 +102,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Raadpleeg de [documentatie voor ontwikkelaars](/help/sites-developing/pagediff.md) van deze functie voor meer informatie over de werking van het mechanisme voor paginagecheiding en de beperkingen die paginaafbreking kunnen beïnvloeden.
+>Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die invloed kunnen hebben op pagina-diff de [ontwikkelaarsdocumentatie](/help/sites-developing/pagediff.md) van deze functie.

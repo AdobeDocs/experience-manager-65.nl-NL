@@ -1,7 +1,8 @@
 ---
 title: UAC voor PDFG-configuratie uitschakelen voor zowel JEE als OSGI
 description: Stappen om UAC voor Configuratie PDFG onbruikbaar te maken
-source-git-commit: f6dcb488c64dad2d65facc0e8e1d6685b7375a08
+exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
+source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

@@ -1,6 +1,6 @@
 ---
 title: AEM- en Adobe Commerce-integratie met behulp van Commerce Integration Framework
-description: AEM en Adobe Commerce zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF laat AEM toe om tot een instantie van Adobe Commerce toegang te hebben en met Adobe Commerce via GraphQL te communiceren. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om producten- en categoriegegevens op aanvraag van Adobe Commerce te doorzoeken. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
+description: AEM en Adobe Commerce zijn naadloos geïntegreerd met behulp van het Commerce Integration Framework (CIF). CIF biedt AEM toegang tot een Adobe Commerce-exemplaar en kan via GraphQL communiceren met Adobe Commerce. AEM-auteurs kunnen ook Product- en rubriekkiezers en de productconsole gebruiken om producten- en categoriegegevens op aanvraag van Adobe Commerce te doorzoeken. Bovendien verstrekt CIF een out-of-the-box opslag die handelsprojecten kan versnellen.
 thumbnail: aem-magento-architecture.jpg
 exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
@@ -25,7 +25,7 @@ De architectuur ziet er als volgt uit:
 ![Overzicht van CIF-architectuur](../assets/AEM_Magento_Architecture.png)
 
 Binnen CIF, is er steun voor server-kant en cliënt-zijcommunicatie patronen.
-Server-kant APIs vraag wordt uitgevoerd gebruikend bouwstijl-binnen, generisch [GraphQL-client](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met een [reeks gegenereerde gegevensmodellen](https://github.com/adobe/commerce-cif-magento-graphql) voor de handel GrafiekQL schema. Bovendien kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
+Server-kant APIs vraag wordt uitgevoerd gebruikend bouwstijl-binnen, generisch [GraphQL-client](https://github.com/adobe/commerce-cif-graphql-client) in combinatie met een [reeks gegenereerde gegevensmodellen](https://github.com/adobe/commerce-cif-magento-graphql) voor de handel GraphQL schema. Daarnaast kan elke GraphQL-query of -mutatie in GQL-indeling worden gebruikt.
 
 Voor de client-side componenten, die bouwen met [Reageren](https://reactjs.org/)de [Apollo-client](https://www.apollographql.com/docs/react/) wordt gebruikt.
 

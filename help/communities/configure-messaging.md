@@ -1,8 +1,8 @@
 ---
 title: Berichtenonderdeel
-seo-title: Berichtenonderdeel
+seo-title: Messaging Feature
 description: Het vormen van de componenten van het Overseinen
-seo-description: Het vormen van de componenten van het Overseinen
+seo-description: Configuring Messaging components
 uuid: 8b99ded1-aec2-40c9-82d5-e2e404f614ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,36 +10,35 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
-
 
 # Berichtenonderdeel {#messaging-feature}
 
 Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Communities communityleden toe om met elkaar meer privé in wisselwerking te staan.
 
-Deze functie kan worden opgenomen wanneer een [communitysite](/help/communities/overview.md#communitiessites) wordt gemaakt.
+Deze functie kan worden opgenomen wanneer een [community-site](/help/communities/overview.md#communitiessites) wordt gemaakt.
 
 De overseineneigenschap verstrekt de capaciteit om:
 
-**A** - een bericht sturen naar een of meer leden van de community
+**A** - een bericht sturen naar een of meer leden van de gemeenschap
 
-**B** - directe berichten in  [bulk naar de groepen van leden van de gemeenschap verzenden](/help/communities/messaging.md#group-messaging)
+**B** - directe berichten verzenden in [bulkgoederen naar groepen die lid zijn van de gemeenschap](/help/communities/messaging.md#group-messaging)
 
 **C** - een bericht met bijlagen verzenden
 
 **D** - een bericht doorsturen
 
-**E** -antwoord op een bericht
+**E** - antwoord op een bericht
 
-**F** - verwijder een bericht
+**F** - een bericht verwijderen
 
-**G** - een verwijderd bericht herstellen
+**G** - verwijderde berichten herstellen
 
 ![messaging-section](assets/messaging-section.png)
 
@@ -47,42 +46,42 @@ De overseineneigenschap verstrekt de capaciteit om:
 
 Om de overseineneigenschap toe te laten en te wijzigen, zie:
 
-* [Berichten ](/help/communities/messaging.md) voor beheerders configureren
-* [Berichtenhoofdzaak ](/help/communities/essentials-messaging.md) voor ontwikkelaars
+* [Berichten configureren](/help/communities/messaging.md) voor beheerders
+* [Grondbeginselen van berichten](/help/communities/essentials-messaging.md) voor ontwikkelaars
 
 >[!NOTE]
 >
->Het wordt niet ondersteund om `Compose Message, Message, or Message List`-componenten (gevonden in `Communities`componentgroep) toe te voegen aan een pagina in de bewerkingsmodus van de auteur.
+>Toevoegen wordt niet ondersteund `Compose Message, Message, or Message List` componenten (gevonden in `Communities`(componentgroep) naar een pagina in de bewerkingsmodus van de auteur.
 
-## Berichtcomponenten {#configure-messaging-components} configureren
+## Berichtcomponenten configureren {#configure-messaging-components}
 
 Wanneer het overseinen voor een communautaire plaats wordt toegelaten, wordt het opstelling zonder verdere configuratie noodzakelijk. De informatie wordt verstrekt als er een behoefte is om de standaardconfiguratie te veranderen.
 
 ### Berichtlijst configureren (berichtvenster) {#configure-message-list-message-box}
 
-Als u de configuratie wilt wijzigen van de lijst met berichten voor **Inbox**, **Items verzenden** en **Prullenmand** pagina&#39;s van de berichtfunctie, opent u de site in [bewerkingsmodus auteur](/help/communities/sites-console.md#authoring-site-content).
+Om de configuratie van de lijst van berichten te wijzigen voor **Inbox**, **Verzonden items**, en **Prullenbak** pagina&#39;s van de overseineneigenschap, open de plaats in [bewerkingsmodus auteur](/help/communities/sites-console.md#authoring-site-content).
 
-1. In `Preview` wijze, selecteer **Berichten** verbinding om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Items verzenden** of **Prullenmand** om de component voor die berichtlijst te configureren.
+1. In `Preview` in, selecteert u de **Berichten** verbinding om de belangrijkste overseinenpagina te openen. Selecteer vervolgens **Inbox**, **Verzonden items** of **Prullenbak** om de component voor die berichtlijst te vormen.
 
-1. Selecteer in de modus `Edit` de component op de pagina.
-1. U opent het configuratiedialoogvenster door overerving te annuleren door het pictogram `link` te selecteren.
+1. In `Edit` selecteert u de component op de pagina.
+1. Als u toegang wilt tot het configuratiedialoogvenster, annuleert u de overerving door het `link` pictogram.
 Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram te selecteren om het configuratiedialoogvenster te openen.
 
-1. Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstellen door het `broken link` pictogram te selecteren.
+1. Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstellen door te selecteren `broken link` pictogram.
 
 ![configure-message-list](assets/configure-message-list.png)
 
-#### Standaardtabblad {#basic-tab}
+#### Het tabblad Basis {#basic-tab}
 
 ![basic-tab-messagelist](assets/basic-tab-messagelist.png)
 
 * **Servicekiezer**
 
-   (*Required*) plaats dit aan de waarde van het bezit **`serviceSelector.name`** van [de Dienst van de Verrichtingen van het Overseinen van AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Vereist*) Stel deze in op de waarde van de eigenschap **`serviceSelector.name`** van de [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
 * **Pagina samenstellen**
 
-   (*Required*) de pagina om te openen wanneer een lid **`Reply`** knoop klikt. De doelpagina moet het formulier **Compose Message** bevatten.
+   (*Vereist*) De pagina die moet worden geopend wanneer een lid op de knop **`Reply`** knop. De doelpagina moet de **Bericht samenstellen** formulier.
 
 * **Reageren/weergeven als bron**
 
@@ -98,27 +97,27 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Mappaden**
 
-   (*Required*) Verwijzen naar de waarden die zijn ingesteld voor **inbox.path.name** en **sentitems.path.name** in [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Wanneer het vormen voor `Inbox`, voeg één ingang toe gebruikend de waarde van **inbox.path.name**. Wanneer het vormen voor `Outbox`, voeg één ingang toe gebruikend de waarde van **sentitems.path.name**. Wanneer het vormen voor `Trash`, voeg twee ingangen met beide waarden toe.
+   (*Vereist*) Verwijzen naar de waarden die zijn ingesteld voor **inbox.path.name** en **sentitems.path.name** in de [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service). Wanneer het vormen voor een `Inbox`Voeg één item toe met de waarde van **inbox.path.name**. Wanneer het vormen voor een `Outbox`Voeg één item toe met de waarde van **sentitems.path.name**. Wanneer het vormen voor `Trash`Voeg twee items met beide waarden toe.
 
-#### Tabblad {#display-tab} weergeven
+#### Tabblad Weergave {#display-tab}
 
 ![display-tab-message-list](assets/display-tab-message-list.png)
 
 * **Knop Markeren als lezen**
 
-   Als deze optie is ingeschakeld, wordt een `Read`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+   Als deze optie is ingeschakeld, wordt een `Read`knop waarmee een bericht kan worden gemarkeerd als gelezen.
 
 * **Knop Markeren als ongelezen**
 
-   Als deze optie is ingeschakeld, wordt een `Mark Unread`-knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+   Als deze optie is ingeschakeld, wordt een `Mark Unread` knop waarmee een bericht kan worden gemarkeerd als gelezen.
 
 * **Knop Verwijderen**
 
-   Als deze optie is ingeschakeld, wordt een `Delete`-knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als **`Message Options`** ook is ingeschakeld.
+   Als deze optie is ingeschakeld, wordt een `Delete` knop waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctie gedupliceerd als **`Message Options`** wordt ook gecontroleerd.
 
 * **Berichtopties**
 
-   Als deze optie is ingeschakeld, worden **`Reply`**, **`Reply All`**, **`Forward`** en **`Delete`** knoppen weergegeven waarmee een bericht kan worden verzonden of verwijderd. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als **`Delete Button`** ook is ingeschakeld.
+   Indien ingeschakeld, wordt weergegeven **`Reply`**, **`Reply All`**, **`Forward`** en **`Delete`** knoppen waarmee een bericht kan worden weergegeven of verwijderd. Hiermee wordt de verwijderfunctie gedupliceerd als **`Delete Button`** wordt ook gecontroleerd.
 
 * **Berichten per pagina**
 
@@ -130,23 +129,23 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Gebruiker weergeven**
 
-   Kies **`Sender`** of **`Recipients`** om te bepalen of om de afzender of Ontvangers te tonen.
+   Kies **`Sender`** of **`Recipients`** om te bepalen of de afzender of de Ontvanger moet worden weergegeven.
 
-### Samenstellingsbericht {#configure-compose-message} configureren
+### Samenstellingsbericht configureren {#configure-compose-message}
 
-Als u de configuratie van de pagina voor samenstellen van berichten wilt wijzigen, opent u de site in de bewerkingsmodus [auteur](/help/communities/sites-console.md#authoring-site-content).
+Open de site in [bewerkingsmodus auteur](/help/communities/sites-console.md#authoring-site-content).
 
-* In `Preview` wijze, selecteer **Berichten** verbinding om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om de pagina `Compose Message` te openen.
+* In `Preview` in, selecteert u de **Berichten** verbinding om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om het dialoogvenster `Compose Message` pagina.
 
-* Selecteer in de modus `Edit` de hoofdcomponent op de pagina die de hoofdtekst van het bericht bevat.
-* U opent het configuratiedialoogvenster door overerving te annuleren door het pictogram `link` te selecteren.
+* In `Edit` Selecteer in de modus de hoofdcomponent op de pagina die de berichttekst bevat.
+* Als u het configuratievenster wilt openen, annuleert u de overerving door de optie `link` pictogram.
 Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram te selecteren om het configuratiedialoogvenster te openen.
 
-* Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstellen door het `broken link` pictogram te selecteren.
+* Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstellen door te selecteren `broken link` pictogram.
 
 ![config-compose-bericht](assets/config-compose-message.png)
 
-#### Standaardtabblad {#basic-tab-1}
+#### Het tabblad Basis {#basic-tab-1}
 
 ![basic-tab-compose](assets/basic-tab-compose.png)
 
@@ -168,35 +167,35 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 
 * **Servicekiezer**
 
-   (*Required*) plaats dit aan de waarde van het bezit **`serviceSelector.name`** van [de Dienst van de Verrichtingen van het Overseinen van AEM Communities](/help/communities/messaging.md#messaging-operations-service).
+   (*Vereist*) Stel deze in op de waarde van de eigenschap **`serviceSelector.name`** van de [AEM Communities Messaging Operations Service](/help/communities/messaging.md#messaging-operations-service).
 
-#### Tabblad {#display-tab-1} weergeven
+#### Tabblad Weergave {#display-tab-1}
 
 ![display-tab-compose](assets/display-tab-compose.png)
 
 * **Onderwerpveld tonen**
 
-   Als deze optie is ingeschakeld, geeft u het veld `Subject` weer en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
+   Indien ingeschakeld, geeft u de optie `Subject` en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
 
 * **Onderwerplabel**
 
-   Voer de tekst in die naast het veld `Subject` moet worden weergegeven. De standaardwaarde is `Subject`.
+   Voer de tekst in die naast de `Subject` veld. Standaard is `Subject`.
 
 * **Veld Bestand bijvoegen tonen**
 
-   Als deze optie is ingeschakeld, geeft u het veld `Attachment` weer en schakelt u het toevoegen van bestandsbijlagen aan het bericht in. Standaard is niet ingeschakeld.
+   Indien ingeschakeld, geeft u de optie `Attachment` en schakel het toevoegen van bestandsbijlagen aan het bericht in. Standaard is niet ingeschakeld.
 
 * **Bestandslabel bijvoegen**
 
-   Voer de tekst in die naast het veld `Attachment` moet worden weergegeven. De standaardwaarde is **`Attach File`**.
+   Voer de tekst in die naast de `Attachment` veld. Standaard is **`Attach File`**.
 
 * **Inhoudsveld tonen**
 
-   Indien ingeschakeld, toon het `Content` gebied en laat het toevoegen van een berichtlichaam toe. Standaard is niet ingeschakeld.
+   Indien ingeschakeld, geeft u de optie `Content` en schakelt u het toevoegen van een berichttekst in. Standaard is niet ingeschakeld.
 
 * **Inhoudslabel**
 
-   Voer de tekst in die naast het veld `Content` moet worden weergegeven. De standaardwaarde is **`Body`**.
+   Voer de tekst in die naast de `Content` veld. Standaard is **`Body`**.
 
 * **Met RTF-editor**
 
@@ -205,4 +204,3 @@ Nadat de overerving is geannuleerd, is het mogelijk om het configuratiepictogram
 * **Tijdstempelpatronen**
 
    Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
-

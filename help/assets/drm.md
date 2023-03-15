@@ -73,7 +73,7 @@ Bovendien als een glitch of een fout de planner verhindert verlopen activa in de
 Om het [!DNL Assets] console om de verwijzende samengestelde activa samen met de verlopen subassets te tonen, vorm en **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuratiebeheer.
 
 1. Openen [!DNL Experience Manager] Configuratiebeheer.
-1. Kies **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard, **[!UICONTROL Time based Scheduler]** is geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
+1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard, **[!UICONTROL Time based Scheduler]** is geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
 1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. De voorbeeldexpressie `0 0 0 * * ?` wordt de taak om 00 uur gestart.
 1. Selecteren **[!UICONTROL send email]** om e-mails te ontvangen wanneer een middel verloopt.

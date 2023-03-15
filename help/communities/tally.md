@@ -1,40 +1,39 @@
 ---
 title: Grondbeginselen van Tally
-seo-title: Grondbeginselen van Tally
+seo-title: Tally Essentials
 description: Overzicht van de klasse Tally
-seo-description: Overzicht van de klasse Tally
+seo-description: Tally class overview
 uuid: c369c6a1-9ced-4b5c-af43-8c03236eaa52
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
-translation-type: tm+mt
-source-git-commit: 77d00c1d6e94b257aa0533ca88b5f9a12dba0054
+exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
 
-
-# Essentiële elementen tellen {#tally-essentials}
+# Grondbeginselen van Tally {#tally-essentials}
 
 Tally is een abstracte klasse die een standaardmethode verstrekt om terugkoppelen van leden te verzamelen over hoe zij specifieke producten en de diensten waarderen. Anonieme feedback wordt niet ondersteund. De bezoeker van de site moet zich registreren en aanmelden om deel te nemen en zich aan te melden om zijn feedback te wijzigen. De verplichting om zich aan te melden vergemakkelijkt de matiging en verhoogt de waarde van de feedback door meerdere posten te voorkomen.
 
 Een aangepaste telcomponent kan worden gecreeerd door de abstracte tellingsklasse uit te breiden.
 
-[Op ](essentials-liking.md) dezelfde manier wordt de overeenkomst toegepast. Dat is een eenvoudige manier om een positief oordeel uit te spreken.
+[Vergelijken](essentials-liking.md) is een uitvoering van de overeenkomst die een eenvoudige vorm is om een positief oordeel uit te spreken.
 
-[De ](essentials-voting.md) stemming is een uitvoering van de overeenkomst, die een eenvoudige vorm is van het uiten van een positief of negatief advies.
+[Stemming](essentials-voting.md) is een uitvoering van een overeenkomst die een eenvoudige vorm van positief of negatief advies is.
 
-[](rating-basics.md) Ratingis een implementatie van tally die een sterrenstelsel gebruikt voor het uiten van een reeks meningen van positief tot negatief.
+[Classificatie](rating-basics.md) is een uitvoering van tally die een sterrenstelsel gebruikt om een reeks meningen van positief tot negatief uit te drukken.
 
 Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 
-[](reviews-basics.md) Reviewsis een SCF component die een hybride van  [](essentials-comments.md) commentaren en  [classificatie](rating-basics.md) is.
+[Revisies](reviews-basics.md) is een SCF-component die een hybride van [opmerkingen](essentials-comments.md) en [beoordeling](rating-basics.md).
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 
@@ -51,14 +50,13 @@ Vanaf AEM 6.1 is de opiniepeilingscomponent niet meer beschikbaar.
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
-**De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
+**De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van het opslaggebruik.
-* [SRP en de Hoofdzaak](srp-and-ugc.md)  van UGC - SRP nutsmethodes en voorbeelden.
-* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md)  - Coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md)  - Afgekeurde nutsmethodes van de Afbeelding aan huidige SRP hulpprogrammamethodes.
-
+* [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
+* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.

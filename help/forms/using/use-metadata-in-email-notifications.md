@@ -1,5 +1,5 @@
 ---
-title: 'Metagegevens gebruiken in een e-mailmelding '
+title: Metagegevens gebruiken in een e-mailmelding
 seo-title: Use metadata in an email notification
 description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
 seo-description: Use metadata to populate information in a forms workflow email notification

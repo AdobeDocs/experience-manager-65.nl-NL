@@ -1,22 +1,21 @@
 ---
 title: Annotaties bij het bewerken van een pagina
-seo-title: Annotaties bij het bewerken van een pagina
+seo-title: Annotations when Editing a Page
 description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
-seo-description: Met veel rechtstreeks aan inhoud gerelateerde componenten kunt u een annotatie toevoegen
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
-translation-type: tm+mt
-source-git-commit: cec6c4f9a1a75eb049dd4b8461c36c8d58d46f79
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
-
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
 
@@ -42,11 +41,11 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 ## Annotaties {#annotations}
 
-Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
+Een speciale [mode](/help/sites-authoring/author-environment-tools.md#page-modes) wordt gebruikt voor het maken en weergeven van annotaties.
 
 >[!NOTE]
 >
->Vergeet niet dat [commentaren](/help/sites-authoring/basic-handling.md#timeline) ook beschikbaar zijn voor het verstrekken van terugkoppelen op een pagina.
+>Vergeet niet dat [opmerkingen](/help/sites-authoring/basic-handling.md#timeline) zijn ook beschikbaar voor het opgeven van feedback op een pagina.
 
 >[!NOTE]
 >
@@ -54,12 +53,10 @@ Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-mode
 >
 >* [Annoteren van elementen](/help/assets/manage-assets.md#annotating)
 >* [Video-elementen annoteren](/help/assets/managing-video-assets.md#annotate-video-assets)
-
 >
 
 
-
-### Een component {#annotating-a-component} annoteren
+### Een component annoteren {#annotating-a-component}
 
 In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 
@@ -126,4 +123,3 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 Annotaties worden niet weergegeven in de modus Bewerken, maar het symbool rechtsboven op de werkbalk geeft aan hoeveel annotaties er bestaan voor de huidige pagina. Het pictogram vervangt het standaardpictogram Annotaties, maar werkt nog steeds als een snelle koppeling die van/naar de modus Annotatie schakelt:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

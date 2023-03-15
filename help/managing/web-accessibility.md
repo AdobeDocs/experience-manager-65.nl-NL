@@ -1,14 +1,13 @@
 ---
 title: Adobe Experience Manager (AEM) en de Web Accessibility Guidelines
 description: Een inleiding tot Adobe Experience Manager (AEM) en de Web Accessibility Guidelines
-translation-type: tm+mt
-source-git-commit: ebf3f34af7da6b1a659ac8d8843152b97f30b652
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 69%
 
 ---
-
 
 # AEM en de Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 
@@ -24,7 +23,7 @@ Toegankelijke websites en inhoud met AEM effecten maken:
 
 * Sjabloonontwikkelaars dienen zich bij de implementatie van het websiteontwerp ook bewust te zijn van dergelijke problemen.
 
-Adobe Experience Manager werkt met de [guidelines](#wcag-accessibility-guidelines) die worden geleverd door het [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager werkt met de [richtlijnen](#wcag-accessibility-guidelines) door de [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -48,11 +47,11 @@ Met Adobe Experience Manager kunnen contentauteurs en/of website-eigenaars webco
 
 * In [Toegankelijke content maken](/help/sites-authoring/creating-accessible-content.md) wordt de relatie tussen de richtlijnen en AEM uitgelegd.
 
-* [Het vormen van de Rich Redacteur van de Tekst voor het Produceren van Toegankelijke ](/help/sites-administering/rte-accessible-content.md)
-SitesGuidelines op hoe de beheerders AEM voor het produceren van toegankelijke inhoud kunnen vormen.
+* [De Rich Text Editor configureren voor het produceren van toegankelijke sites](/help/sites-administering/rte-accessible-content.md)
+Richtlijnen voor hoe beheerders AEM kunnen configureren voor het produceren van toegankelijke inhoud.
 
-* [Het maken van toegankelijke adaptieve ](/help/forms/using/creating-accessible-adaptive-forms.md)
-FormsAdobe Experience Manager (AEM) bevat een aantal functies en mogelijkheden die de bruikbaarheid van adaptieve formulieren voor gebruikers met verschillende mogelijkheden verbeteren. De oplossing helpt ook formulierauteurs bij het maken van toegankelijke adaptieve formulieren.
+* [Toegankelijke adaptieve Forms maken](/help/forms/using/creating-accessible-adaptive-forms.md)
+Adobe Experience Manager (AEM) bevat een aantal functies en mogelijkheden die de bruikbaarheid van adaptieve formulieren voor gebruikers met verschillende mogelijkheden verbeteren. De oplossing helpt ook formulierauteurs bij het maken van toegankelijke adaptieve formulieren.
 
 >[!NOTE]
 >
@@ -61,4 +60,3 @@ FormsAdobe Experience Manager (AEM) bevat een aantal functies en mogelijkheden d
 ## Toegankelijkheid in Adobe {#accessibility-at-adobe}
 
 Ga voor meer informatie naar het [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
-

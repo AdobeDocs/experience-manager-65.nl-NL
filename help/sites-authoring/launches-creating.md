@@ -1,8 +1,8 @@
 ---
 title: Lanceringen maken
-seo-title: Lanceringen maken
+seo-title: Creating Launches
 description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
-seo-description: U kunt een lancering tot stand brengen om het bijwerken van een nieuwe versie van bestaande Web-pagina's voor toekomstige activering toe te laten.
+seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,44 +10,43 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '986'
 ht-degree: 14%
 
 ---
-
 
 # Lanceringen maken{#creating-launches}
 
 Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagina&#39;s voor toekomstige activering toe te laten. Wanneer u een Starten creeert, specificeert u een titel en de bronpagina:
 
-* De titel wordt weergegeven in de [References](/help/sites-authoring/author-environment-tools.md#references) rail, vanwaar auteurs ze kunnen openen om er aan te werken.
+* De titel wordt weergegeven in het dialoogvenster [Verwijzingen](/help/sites-authoring/author-environment-tools.md#references) spoorwegen, vanwaar auteurs toegang hebben tot hen om er aan te werken.
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
-* Standaard worden de startpagina&#39;s automatisch bijgewerkt met [Live kopie](/help/sites-administering/msm.md) als de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
+* Standaard, [Live kopie](/help/sites-administering/msm.md) werkt automatisch de startpagina&#39;s bij terwijl de bronpagina&#39;s veranderen. U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
 U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de startpagina&#39;s moeten worden gepromoveerd en geactiveerd. De **startdatum** werkt echter alleen in combinatie met de markering **Geschikt voor productie** (zie [Een startconfiguratie bewerken](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)). Opdat de acties automatisch zouden optreden, moeten beide worden ingesteld.
 
-## Starten {#creating-a-launch} maken
+## Starten maken {#creating-a-launch}
 
 U kunt een lancering van of Sites of de console van Lanceringen tot stand brengen:
 
-1. Open de **Sites** of **Launches** console.
+1. Open de **Sites** of **Starten** console.
 
    >[!NOTE]
    >
-   >Wanneer u de console **Sites** gebruikt, is het gebruikelijk om naar de locatie van de bronpagina te navigeren, maar dit is niet verplicht, aangezien u kunt navigeren wanneer u **Bron starten** in de wizard selecteert.
+   >Wanneer u de **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
 
 1. Afhankelijk van de console die u gebruikt:
 
    * **Lanceringen**:
 
-      1. Selecteer **Start maken** op de werkbalk om de wizard te openen.
+      1. Selecteren **Starten maken** op de werkbalk om de wizard te openen.
    * **Sites**:
 
-      1. Selecteer **Maken** op de werkbalk om het selectievak te openen.
-      1. Selecteer **Launch** maken om de wizard te openen.
+      1. Selecteren **Maken** van de werkbalk om het selectievak te openen.
+      1. Van dit uitgezocht **Starten maken** om de wizard te openen.
 
    >[!NOTE]
    >
@@ -55,7 +54,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    >
    >Hiermee gebruikt u de geselecteerde pagina als de eerste bronpagina.
 
-1. In **Selecteer Bron** stap moet u **Pagina&#39;s toevoegen**. U kunt meerdere pagina&#39;s selecteren en het pad voor elke pagina opgeven:
+1. In de **Bron selecteren** stap die u nodig hebt **Pagina&#39;s toevoegen**. U kunt meerdere pagina&#39;s selecteren en het pad voor elke pagina opgeven:
 
    * Navigeer naar de gewenste locatie.
    * Selecteer de bronpagina(&#39;s) en bevestig (vinkje).
@@ -72,43 +71,43 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
 1. Voor elk item kunt u opgeven of:
 
-   * **Inclusief subpagina**&#39;s:
+   * **Subpagina&#39;s opnemen**:
 
       * Geef op of u de opstart wilt maken met of zonder de onderliggende pagina&#39;s.  Deze subpagina&#39;s worden standaard opgenomen.
 
-   Ga verder met **Next**.
+   Doorgaan met **Volgende**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
-1. In de stap **Eigenschappen** van de tovenaar kunt u specificeren:
+1. In de **Eigenschappen** stap van de wizard die u kunt opgeven:
 
-   * **Titel** starten: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
+   * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
    * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de opstart te maken.
-   * **Gebruik een nieuwe sjabloon om de pagina** te vervangen: Zie Starten  [maken met nieuwe ](#create-launch-with-new-template) sjabloon voor meer informatie.
-   * **Live-gegevens** van bronpagina overnemen: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de opstart te maken tot een [live kopie](/help/sites-administering/msm.md).
+   * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
+   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [live kopie](/help/sites-administering/msm.md).
 
       Deze optie is standaard geselecteerd.
 
-   * **Startdatum**: de datum en het tijdstip waarop de lanceerkopie moet worden geactiveerd (afhankelijk van de  **productievlag** Readyflag; zie  [Launches - de Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
-1. Gebruik **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
-   Als u de console terugkeert (met **Done**) kunt u uw lancering zien (en toegang hebben) van of:
+   Als u de console terugkeert (met **Gereed**) kunt u uw lancering zien (en toegang hebben) van één van beiden:
 
-   * de [**Launches** console](/help/sites-authoring/launches.md#the-launches-console)
-   * de [**References** in de **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * de [**Starten** console](/help/sites-authoring/launches.md#the-launches-console)
+   * de [**Verwijzingen** in de **Sites** console](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
-### Starten maken met nieuwe sjabloon {#create-launch-with-new-template}
+### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
-Wanneer u een opstart maakt[kunt u kiezen of u een nieuwe sjabloon wilt gebruiken:](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)
+Wanneer [starten](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) U kunt kiezen of u een nieuwe sjabloon wilt gebruiken:
 
 **een nieuwe sjabloon gebruiken om de pagina te vervangen**
 
 >[!CAUTION]
 >
->Deze optie is alleen beschikbaar wanneer u een opstart maakt via de console **Sites**. Het is niet beschikbaar wanneer het creëren van een lancering van de **console van Lanceringen**.
+>Deze optie is alleen beschikbaar wanneer u een opstart maakt via het dialoogvenster **Sites** console. Deze functie is niet beschikbaar wanneer u een opstart maakt via de **Starten** console.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -123,7 +122,7 @@ Selecteer deze optie:
 >
 >Aangezien een andere sjabloon wordt gebruikt, is de nieuwe pagina leeg. Vanwege de verschillende paginastructuur wordt er geen inhoud over gekopieerd.
 >
->Dit mechanisme kan worden gebruikt om het malplaatje van een [bestaande pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) te veranderen - hoewel het verlies van inhoud moet worden overwogen.
+>Dit mechanisme kan worden gebruikt om de sjabloon van een [bestaande pagina](/help/sites-authoring/managing-pages.md#creating-a-new-page) - het verlies van inhoud moet echter in overweging worden genomen.
 
 ### Een geneste start maken {#creating-a-nested-launch}
 
@@ -131,37 +130,37 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 
 >[!NOTE]
 >
->Zie ook [Een geneste start promoten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
+>Zie ook [Een geneste start bevorderen](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch).
 
 #### Een geneste start maken - Opstartconsole {#creating-a-nested-launch-launches-console}
 
-Het maken van een geneste opstart vanuit de **Launches**-console is in principe hetzelfde als het maken van een andere opstarthandeling, met uitzondering dat u naar de opstartaftakking `/content/launches` moet navigeren:
+Een geneste opstart maken vanuit de **Starten** console is in wezen het zelfde als het creëren van een andere vorm van lancering, met uitzondering dat u aan de lanceringstak moet navigeren `/content/launches`:
 
-1. Selecteer **Maken** in de **Launches**-console.
+1. In de **Starten** console selecteren **Maken**.
 1. Selecteer **Pagina&#39;s toevoegen** en ga naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
-1. Ga verder met **Volgende** en vul **Eigenschappen** in zoals bij elke andere lancering.
+1. Doorgaan met **Volgende** en de **Eigenschappen** zoals bij elke andere lancering.
 
    ![chlimage_1-231](assets/chlimage_1-231.png)
 
-#### Een geneste start maken - Siteconsole {#creating-a-nested-launch-sites-console}
+#### Een geneste start maken - Sites-console {#creating-a-nested-launch-sites-console}
 
-Om een geneste lancering van **Sites** te creëren console - die op een bestaande lancering wordt gebaseerd:
+Als u een geneste opstart wilt maken vanuit de **Sites** console - gebaseerd op een bestaande lancering:
 
-1. Open [Starten vanuit Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare handelingen weer te geven.
+1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
 1. Selecteer **Start maken** om de wizard te openen (aangezien de bron al is geselecteerd, wordt de stap **Bron selecteren** overgeslagen).
 
-1. Voer de **Titel starten** en alle andere vereiste gegevens in (zoals bij een normale start).
+1. Voer de **Titel starten** en alle andere vereiste gegevens (zoals bij een normale start).
 
-1. Gebruik **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
+1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
    Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
-### Starten {#deleting-a-launch} verwijderen
+### Een Starten verwijderen {#deleting-a-launch}
 
-U kunt een lancering van [lanceert console](/help/sites-authoring/launches.md#the-launches-console) schrappen:
+U kunt een opstart verwijderen uit het dialoogvenster [opstartconsole](/help/sites-authoring/launches.md#the-launches-console):
 
 * Selecteer de start door op de miniatuur te tikken of te klikken.
 * De werkbalk wordt weergegeven. Selecteer Verwijderen.
@@ -170,4 +169,3 @@ U kunt een lancering van [lanceert console](/help/sites-authoring/launches.md#th
 >[!CAUTION]
 >
 >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
-

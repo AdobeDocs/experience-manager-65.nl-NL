@@ -1,8 +1,8 @@
 ---
 title: DDX-documenten valideren
-seo-title: DDX-documenten valideren
+seo-title: Validating DDX Documents
 description: Valideer een DDX-document programmatically met de Java API en de Web Service API.
-seo-description: Valideer een DDX-document programmatically met de Java API en de Web Service API.
+seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
 uuid: da668170-d2e9-4fff-aef5-432a856bd0bd
 contentOwner: admin
 content-type: reference
@@ -11,16 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1526'
 ht-degree: 0%
 
 ---
 
-
-# DDX-documenten {#validating-ddx-documents} valideren
+# DDX-documenten valideren {#validating-ddx-documents}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
@@ -28,13 +27,13 @@ U kunt een DX- document programmatically bevestigen dat door de dienst van de As
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende taken uit om een DDX-document te valideren:
 
@@ -69,13 +68,13 @@ Als u een DDX-document wilt valideren, moet u naar een bestaand DDX-document ver
 
 **Stel runtime-opties in om het DDX-document te valideren**
 
-Wanneer het bevestigen van een DX- document, moet u specifieke runtime opties plaatsen die de dienst van de Assembler opdragen om het DX- document te bevestigen in plaats van het uit te voeren. Ook, kunt u de hoeveelheid informatie verhogen die de dienst van de Assembler aan het logboekdossier schrijft.
+Wanneer het bevestigen van een Dx- document, moet u specifieke runtime opties plaatsen die de dienst van de Assembler opdragen om het Dx- document in plaats van het uit te voeren te bevestigen. Ook, kunt u de hoeveelheid informatie verhogen die de dienst van de Assembler aan het logboekdossier schrijft.
 
 **De validatie uitvoeren**
 
-Nadat u de de dienstcliënt van de Assembler creeert, van verwijzingen het DX- document, en vastgestelde runtime opties, kunt u `invokeDDX` verrichting aanhalen om het DX- document te bevestigen. Wanneer u het DDX-document valideert, kunt u `null` als kaartparameter doorgeven (in deze parameter worden gewoonlijk PDF-documenten opgeslagen die de Assembler nodig heeft om de bewerking(en) uit te voeren die in het DDX-document is opgegeven).
+Nadat u de de dienstcliënt van de Assembler creeert, van verwijzingen het DX- document, en vastgestelde runtime opties, kunt u aanhalen `invokeDDX` bewerking om het DDX-document te valideren. Wanneer u het DDX-document valideert, kunt u `null` als de kaartparameter (deze parameter slaat gewoonlijk PDF documenten op die de Assembler vereist om de verrichting(en) uit te voeren die in het DX- document wordt gespecificeerd).
 
-Als de bevestiging ontbreekt, wordt een uitzondering geworpen en het logboekdossier bevat details die verklaren waarom het DX- document ongeldig is kan uit `OperationException` instantie worden verkregen. Zodra voorbij het basisontleden van XML en schema het controleren, dan wordt de bevestiging tegen de specificatie DDX uitgevoerd. Alle fouten die zich in het DDX-document bevinden, worden opgegeven in het logbestand.
+Als de validatie mislukt, wordt een uitzondering gegenereerd en bevat het logbestand details die verklaren waarom het DDX-document ongeldig is, kunnen worden verkregen uit het dialoogvenster `OperationException` -instantie. Zodra voorbij het basisontleden van XML en schema het controleren, dan wordt de bevestiging tegen de specificatie DDX uitgevoerd. Alle fouten die zich in het DDX-document bevinden, worden opgegeven in het logbestand.
 
 **De validatieresultaten opslaan in een logbestand**
 
@@ -103,45 +102,45 @@ Valideer een DDX-document met behulp van de API voor vergaderingsservice (Java):
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Stel uitvoeringsopties in om het DDX-document te valideren.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Plaats de runtime optie die de dienst van de Assembler opdraagt om het DX- document te bevestigen door de methode setValidateOnly van het `AssemblerOptionSpec` voorwerp aan te halen en `true` over te gaan.
-   * Stel de hoeveelheid informatie in die de Assembler-service naar het logbestand schrijft door de methode `getLogLevel` van het object `AssemblerOptionSpec` aan te roepen en een tekenreekswaarde door te geven die aan uw vereisten voldoet. Wanneer u een DDX-document valideert, wilt u meer informatie naar het logbestand dat u helpt bij het validatieproces. Hierdoor kunt u de waarde `FINE` of `FINER` doorgeven.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Plaats de runtime optie die de dienst van de Assembler opdraagt om het DX- document te bevestigen door het te roepen `AssemblerOptionSpec` methode setValidateOnly van object en doorgeven `true`.
+   * Plaats de hoeveelheid informatie die de dienst van de Assembler aan het logboekdossier schrijft door te roepen `AssemblerOptionSpec` object `getLogLevel` en het doorgeven van een tekenreekswaarde voldoet aan uw vereisten. Wanneer u een DDX-document valideert, wilt u meer informatie naar het logbestand dat u helpt bij het validatieproces. Hierdoor kunt u de waarde doorgeven `FINE` of `FINER`.
 
 1. Voer de validatie uit.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het DDX-document vertegenwoordigt.
-   * De waarde `null` voor het object java.io.Map dat gewoonlijk PDF-documenten opslaat.
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-object dat de runtime-opties opgeeft.
+   * A `com.adobe.idp.Document` object dat het DDX-document vertegenwoordigt.
+   * De waarde `null` voor het java.io.Map-object waarin gewoonlijk PDF-documenten worden opgeslagen.
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` -object dat de runtime-opties opgeeft.
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat informatie bevat die opgeeft of het DDX-document geldig is.
+   De `invokeDDX` methode retourneert een `AssemblerResult` object dat informatie bevat die aangeeft of het DDX-document geldig is.
 
 1. Sla de validatieresultaten op in een logbestand.
 
-   * Maak een `java.io.File`-object en zorg dat de bestandsnaamextensie .xml is.
-   * Roep de methode `AssemblerResult` van het object `getJobLog` aan. Deze methode retourneert een `com.adobe.idp.Document`-instantie die validatiegegevens bevat.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren.
+   * Een `java.io.File` -object en zorg ervoor dat de bestandsnaamextensie .xml is.
+   * De `AssemblerResult` object `getJobLog` methode. Deze methode retourneert een `com.adobe.idp.Document` instantie die validatiegegevens bevat.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `com.adobe.idp.Document` naar het bestand.
 
    >[!NOTE]
    >
-   >Als het DDX-document ongeldig is, wordt een `OperationException` gegenereerd. Binnen de catch-instructie kunt u de methode `getJobLog` van het object `OperationException` aanroepen.
+   >Als het DDX-document ongeldig is, `OperationException` wordt gegenereerd. Binnen de catch-instructie kunt u de instructie `OperationException` object `getJobLog` methode.
 
 **Zie ook**
 
 [DDX-documenten valideren](#validating-ddx-documents)
 
-[Snel starten (SOAP-modus): DDX-documenten valideren met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)  (SOAP-modus)
+[Snel starten (SOAP-modus): DDX-documenten valideren met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (SOAP-modus)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -153,7 +152,7 @@ Valideer een DDX-document met behulp van de API (webservice) voor vergaderingsse
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -161,52 +160,52 @@ Valideer een DDX-document met behulp van de API (webservice) voor vergaderingsse
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
 
 1. Stel uitvoeringsopties in om het DDX-document te valideren.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Plaats de runtime optie die de dienst van de Assembler opdraagt om het DX- document te bevestigen door de waarde waar aan het `AssemblerOptionSpec` gegevenslid van het voorwerp `validateOnly` toe te wijzen.
-   * Stel de hoeveelheid informatie in die de Assembler-service naar het logbestand schrijft door een tekenreekswaarde toe te wijzen aan het `AssemblerOptionSpec`-gegevenslid van het `logLevel`-object. methode Bij het valideren van een DDX-document wilt u meer informatie naar het logbestand schrijven dat u helpt bij het validatieproces. Hierdoor kunt u de waarde `FINE` of `FINER` opgeven. Zie de `AssemblerOptionSpec`-klasseverwijzing in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de runtime-opties die u kunt instellen.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Plaats de runtime optie die de dienst van de Assembler opdraagt om het Dx- document te bevestigen door de waarde waar aan toe te wijzen `AssemblerOptionSpec` object `validateOnly` lid.
+   * Stel de hoeveelheid informatie in die de Assembler-service naar het logbestand schrijft door een tekenreekswaarde toe te wijzen aan de `AssemblerOptionSpec` object `logLevel` lid. methode Bij het valideren van een DDX-document wilt u meer informatie naar het logbestand schrijven dat u helpt bij het validatieproces. Hierdoor kunt u de waarde opgeven `FINE` of `FINER`. Voor informatie over de runtime opties die u kunt plaatsen, zie `AssemblerOptionSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Voer de validatie uit.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt.
-   * De waarde `null` voor het `Map`-object dat gewoonlijk PDF-documenten opslaat.
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft.
+   * A `BLOB` object dat het DDX-document vertegenwoordigt.
+   * De waarde `null` voor de `Map` object waarin gewoonlijk PDF-documenten worden opgeslagen.
+   * An `AssemblerOptionSpec` -object dat uitvoeringsopties opgeeft.
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat informatie bevat die opgeeft of het DDX-document geldig is.
+   De `invokeDDX` methode retourneert een `AssemblerResult` object dat informatie bevat die aangeeft of het DDX-document geldig is.
 
 1. Sla de validatieresultaten op in een logbestand.
 
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het logbestand en de modus voor het openen van het bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .xml is.
-   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde van het `AssemblerResult`-gegevenslid van het object op te halen.`jobLog`
-   * Maak een bytearray waarin de inhoud van het object `BLOB` wordt opgeslagen. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
-   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
+   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het logbestand en de modus voor het openen van het bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .xml is.
+   * Een `BLOB` object dat logboekgegevens opslaat door de waarde van de `AssemblerResult` object `jobLog` lid.
+   * Maak een bytearray waarin de inhoud van de `BLOB` object. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
    >[!NOTE]
    >
-   >Als het DDX-document ongeldig is, wordt een `OperationException` gegenereerd. Binnen de catch-instructie kunt u de waarde van het `OperationException`-lid van het object ophalen.`jobLog`
+   >Als het DDX-document ongeldig is, `OperationException` wordt gegenereerd. Binnen de catch-instructie kunt u de waarde van de instructie `OperationException` object `jobLog` lid.
 
 **Zie ook**
 

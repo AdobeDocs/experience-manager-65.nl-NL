@@ -1,22 +1,21 @@
 ---
 title: Overzicht van het configureren van SSL
-seo-title: Overzicht van het configureren van SSL
+seo-title: Overview of configuring SSL
 description: Leer over hoe te om veiligheid van mededeling te verbeteren door SSL te vormen.
-seo-description: Leer over hoe te om veiligheid van mededeling te verbeteren door SSL te vormen.
+seo-description: Learn about how to enhance security of communication by configuring SSL.
 uuid: 3e99d2bf-137b-45ba-8384-309624094623
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van het configureren van SSL {#overview-of-configuring-ssl}
 
@@ -34,4 +33,4 @@ De verstrekte informatie is van toepassing op kant-en-klare, automatische en han
 >
 >Wanneer u SSL-beveiligingscertificaten en -referenties maakt, gebruikt u dezelfde gebruikersaccountrechten als waarmee u de toepassingsserver hebt uitgevoerd. Als de toepassingsserver wordt uitgevoerd met andere gebruikersrechten, wordt het formulier mogelijk niet correct weergegeven voor PDFForm-uitvoeringen wanneer ContentRootURI naar https wijst.
 
-Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie [Gebruikersbeheer configureren voor een LDAP-server met SSL ingeschakeld](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie [Gebruikersbeheer configureren voor een LDAP-server die geschikt is voor SSL](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)

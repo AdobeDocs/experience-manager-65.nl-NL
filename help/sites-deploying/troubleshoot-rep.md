@@ -1,8 +1,8 @@
 ---
 title: Problemen met replicatie oplossen
-seo-title: Problemen met replicatie oplossen
+seo-title: Troubleshooting Replication
 description: Dit artikel biedt informatie over hoe u problemen met replicatie kunt oplossen.
-seo-description: Dit artikel biedt informatie over hoe u problemen met replicatie kunt oplossen.
+seo-description: This article provides information on how to troubleshoot replication issues.
 uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,15 @@ topic-tags: configuring
 discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
 
-
-# Problemen oplossen met replicatie{#troubleshooting-replication}
+# Problemen met replicatie oplossen{#troubleshooting-replication}
 
 Deze pagina biedt informatie over hoe u problemen met replicatie kunt oplossen.
 
@@ -44,8 +43,8 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan op de r
 
 **Als één agentenrij of een paar agentenrijen vast zijn:**
 
-1. Geeft de wachtrij de status **locked** weer? Zo ja, wordt de publicatie-instantie dan niet uitgevoerd of reageert deze niet volledig? Controleer de publicatie-instantie om te zien wat er mis is (controleer de logbestanden en controleer of er een OutOfMemory-fout of een ander probleem is. Dan als het slechts over het algemeen langzaam is, neem draaddumps en analyseer hen.
-1. Geeft de wachtrijstatus **Wachtrij is actief - # hangend**? De replicatietaak kan in feite vastzitten in een socket die wordt gelezen en die wacht op de reactie van de publiciteit of de verzender. Dit zou kunnen betekenen dat de publicatie instantie of de verzender onder hoge lading of vastzit in een slot. Neem draaddumps van auteur en publiceer in dit geval.
+1. Wordt de wachtrij weergegeven **geblokkeerd** status? Zo ja, wordt de publicatie-instantie dan niet uitgevoerd of reageert deze niet volledig? Controleer de publicatie-instantie om te zien wat er mis is (controleer de logbestanden en controleer of er een OutOfMemory-fout of een ander probleem is. Dan als het slechts over het algemeen langzaam is, neem draaddumps en analyseer hen.
+1. Geeft de wachtrijstatus weer **Wachtrij is actief - # in behandeling**? De replicatietaak kan in feite vastzitten in een socket die wordt gelezen en die wacht op de reactie van de publiciteit of de verzender. Dit zou kunnen betekenen dat de publicatie instantie of de verzender onder hoge lading of vastzit in een slot. Neem draaddumps van auteur en publiceer in dit geval.
 
    * Open de draaddumps van auteur in een analysator van de draadstortplaats, controleer of het toont dat de sling van de replicatieagent de gebeurtenisbaan in socketRead geplakt is.
    * Open de draaddumps van publiceren in een analysator van de draadstortplaats, analyseer wat zou kunnen veroorzaken publiceer instantie om niet te antwoorden. U zou een draad met POST /bin/receive in zijn naam moeten zien, die de draad is die de replicatie van auteur ontvangt.
@@ -54,11 +53,11 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan op de r
 
 1. Het is mogelijk dat een bepaald stuk inhoud niet onder /var/replication/data kan in series worden vervaardigd toe te schrijven aan de corruptie van de bewaarplaats of een andere kwestie. Ga naar logs/error.log voor een verwante fout. Ga als volgt te werk om het slechte replicatiepunt te wissen:
 
-   1. Ga naar https://&lt;host>:&lt;port>/crx/de en meld u aan als beheerder.
+   1. Ga naar https://&lt;host>:&lt;port>/crx/de en login als admin gebruiker.
    1. Klik op &quot;Gereedschappen&quot; in het bovenste menu.
    1. Klik op de vergrootglasknop.
    1. Selecteer XPath als Type.
-   1. Voer in het vak &quot;Query&quot; deze query/jcr:root/var/eventing/jobs//element(*,slingevent:Job)-volgorde in door @slingevent:created
+   1. Voer in het vak &quot;Query&quot; deze query /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job), volgorde door @slingevent:gemaakt
    1. Klik op Zoeken
    1. In de resultaten zijn de bovenste items de meest recente sling-gebeurtenistaken. Klik op elke replicatie en zoek de geplakte replicaties die overeenkomen met wat boven in de wachtrij wordt weergegeven.
 
@@ -77,7 +76,7 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan op de r
 Soms kan het zeer nuttig zijn om al replicatieregistreren te plaatsen om in een afzonderlijk logboekdossier op het niveau van DEBUG worden toegevoegd. Dit doet u als volgt:
 
 1. Ga naar https://host:port/system/console/configMgr en meld u aan als beheerder.
-1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie te klikken. Hiermee wordt een nieuw logbestand gemaakt.
+1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie. Hiermee wordt een nieuw logbestand gemaakt.
 1. Stel de configuratie als volgt in:
 
    * Logniveau: DEBUG
@@ -86,32 +85,31 @@ Soms kan het zeer nuttig zijn om al replicatieregistreren te plaatsen om in een 
 
 1. Als u vermoedt dat het probleem op enigerlei wijze te maken heeft met sling, kunt u dit Java-pakket ook toevoegen onder categorieën:org.apache.sling.event
 
-## Wachtrij van replicatieagent {#pausing-replication-agent-queue} pauzeren
+## Wachtrij replicatieagent pauzeren  {#pausing-replication-agent-queue}
 
 Soms kan het geschikt zijn om de replicatiewachtrij te pauzeren om de belasting van het auteursysteem te verminderen zonder deze uit te schakelen. Momenteel is dit alleen mogelijk door een hack van het tijdelijk configureren van een ongeldige poort. Vanaf 5.4 kon u pauzeknoop in replicatieagentenrij zien het één of andere beperking heeft
 
 1. De status blijft niet bestaan. Dit betekent dat als u een server opnieuw opstart of een replicatiebundel wordt gerecycled, de status weer actief wordt.
 1. De pauze is nutteloos voor een kortere periode (OOB 1 uur na geen activiteiten met replicatie door andere draden) en niet voor een langere tijd. Omdat er een functie in sling is die nutteloze draden vermijdt. Controleer in feite of een thread voor een taakwachtrij langer ongebruikt is, als dit het geval is, of er opschoningscycli zijn. Als gevolg van het opschoonprogramma stopt het de verbinding en daardoor gaat de gepauzeerde instelling verloren. Aangezien de banen worden voortgeduurd stelt het een nieuwe draad in werking om de rij te verwerken die geen details van de gepauzeerde configuratie heeft. Vanwege deze wachtrij wordt deze status ingeschakeld.
 
-## Paginamachtigingen worden niet gerepliceerd bij activering {#page-permissions-are-not-replicated-on-user-activation}
+## Paginamachtigingen worden niet herhaald bij activering van de gebruiker {#page-permissions-are-not-replicated-on-user-activation}
 
 Paginamachtigingen worden niet gerepliceerd omdat ze worden opgeslagen onder de knooppunten waartoe toegang wordt verleend, niet met de gebruiker.
 
 In het algemeen mogen paginamachtigingen niet door de auteur worden gerepliceerd om te publiceren en zijn ze niet standaard. Dit komt doordat toegangsrechten in deze twee omgevingen verschillend moeten zijn. Daarom wordt het geadviseerd om ACLs bij te vormen publiceer afzonderlijk van auteur.
 
-## Replicatiereeks geblokkeerd tijdens replicatie van naamruimtegegevens van auteur naar publicatie {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## Replicatiereeks geblokkeerd tijdens replicatie van naamruimtegegevens van Auteur voor publiceren {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-In sommige gevallen wordt de replicatiewachtrij geblokkeerd wanneer wordt geprobeerd naamruimtegegevens te repliceren van de auteurinstantie naar de publicatieinstantie. Dit gebeurt omdat de replicatiegebruiker geen `jcr:namespaceManagement` voorrecht heeft. Om dit probleem te voorkomen, moet u ervoor zorgen dat:
+In sommige gevallen wordt de replicatiewachtrij geblokkeerd wanneer wordt geprobeerd naamruimtegegevens te repliceren van de auteurinstantie naar de publicatieinstantie. Dit gebeurt omdat de replicatiegebruiker niet heeft `jcr:namespaceManagement` voorrecht. Om dit probleem te voorkomen, moet u ervoor zorgen dat:
 
-* De replicatiegebruiker (zoals die onder [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User wordt gevormd) bestaat ook op de Publish instantie.
+* De replicatiegebruiker (zoals die onder [Vervoer](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>Gebruiker) staat ook op de instantie Publiceren.
 * De gebruiker heeft lees- en schrijfrechten op het pad waar de inhoud is geïnstalleerd.
-* De gebruiker heeft `jcr:namespaceManagement` voorrecht op het niveau van de bewaarplaats. U kunt deze bevoegdheid als volgt toekennen:
+* De gebruiker heeft `jcr:namespaceManagement` bevoegdheden op het niveau van de opslagplaats. U kunt deze bevoegdheid als volgt toekennen:
 
-1. Meld u als beheerder aan bij CRX/DE ( `https://localhost:4502/crx/de/index.jsp`).
-1. Klik op **Toegangsbeheer** tabel.
-1. Selecteer **Opslagplaats**.
-1. Klik **Bericht toevoegen** (het plusteken).
+1. Aanmelden bij CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) als beheerder.
+1. Klik op de knop **Toegangsbeheer** tab.
+1. Selecteren **Bewaarplaats**.
+1. Klikken **Item toevoegen** (het plusteken).
 1. Voer de naam van de gebruiker in.
-1. Selecteer `jcr:namespaceManagement` in de lijst met bevoegdheden.
+1. Selecteren `jcr:namespaceManagement` uit de lijst met bevoegdheden.
 1. Klik op OK.
-

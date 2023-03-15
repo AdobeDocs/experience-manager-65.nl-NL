@@ -1,7 +1,8 @@
 ---
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
-source-git-commit: 7f43d9d6b631b26f7b9293aa109498d0c8040436
+exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 1%
@@ -14,9 +15,9 @@ In dit deel van het [AEM Headless Developer Journey,](overview.md) Leer hoe u de
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API en u moet nu:
+In het vorige document van de AEM zonder kop: [Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API. Nu moet u:
 
-* Heb een inzicht op hoog niveau van GraphQL.
+* Een goed begrip van GraphQL.
 * Begrijp hoe de AEM GraphQL API werkt.
 * Begrijp sommige praktische steekproefvragen.
 
@@ -36,11 +37,11 @@ Dit artikel bouwt verder op deze basisbeginselen, zodat u begrijpt hoe u bestaan
 
 ## Waarom hebt u de HTTP-API Middelen nodig voor inhoudsfragmenten {#why-http-api}
 
-In het vorige stadium van de Headless Reis, leerde u over het gebruiken van AEM GraphQL API om uw inhoud terug te winnen gebruikend vragen.
+In de vorige fase van de Headless Journey hebt u geleerd hoe u de AEM GraphQL API kunt gebruiken om uw inhoud op te halen met behulp van query&#39;s.
 
 Waarom is er dus nog een API nodig?
 
-Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** content - handelingen die niet mogelijk zijn met de GraphQL API.
+Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** content - acties die niet mogelijk zijn met de GraphQL API.
 
 De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager-versie die buiten de box valt.
 
@@ -326,6 +327,6 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe 
    * [API-naslag](/help/assets/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API - Inhoudsfragmenten](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
-* [AEM kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [AEM-kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)

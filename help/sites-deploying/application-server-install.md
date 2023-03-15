@@ -1,31 +1,29 @@
 ---
 title: Installeren van toepassingsserver
-seo-title: Installeren van toepassingsserver
+seo-title: Application Server Install
 description: Leer hoe u AEM met een toepassingsserver installeert.
-seo-description: Leer hoe u AEM met een toepassingsserver installeert.
+seo-description: Learn how to install AEM with an application server.
 uuid: c9571f80-6ed1-46fe-b7c3-946658dfc3f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
-translation-type: tm+mt
-source-git-commit: 4090b1641467c6fb02b2fcce4df97b9fd5da4e2f
+exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
-
 
 # Installeren van toepassingsserver{#application-server-install}
 
 >[!NOTE]
 >
->`JAR` en  `WAR` zijn de bestandstypen waarin AEM wordt vrijgegeven. Deze formaten ondergaan kwaliteitsgarantie om de steunniveaus aan te passen Adobe heeft toegezegd.
+>`JAR` en `WAR` Dit zijn de bestandstypen waarin AEM wordt uitgebracht. Deze formaten ondergaan kwaliteitsgarantie om de steunniveaus aan te passen Adobe heeft toegezegd.
 
-
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de sectie [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor de specifieke supportniveaus voor de afzonderlijke toepassingsservers.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -49,7 +47,7 @@ AEM wordt geleverd als één oorlogsbestand dat moet worden geïmplementeerd.
 Indien opgesteld zal het volgende door gebrek gebeuren:
 
 * de uitvoeringsmodus is `author`
-* de instantie (Repository, Felix OSGI-omgeving, bundels enz.) wordt geïnstalleerd in `${user.dir}/crx-quickstart`waarbij `${user.dir}` de huidige werkmap is, wordt dit pad naar crx-quickstart `sling.home` aangeroepen
+* de instantie (Repository, Felix OSGI-omgeving, bundels enz.) is geïnstalleerd in `${user.dir}/crx-quickstart`waar `${user.dir}` Dit pad naar crx-quickstart wordt de huidige werkmap genoemd `sling.home`
 
 * de hoofdmap van de context is de naam van het oorlogsbestand, bijvoorbeeld : `aem-6`
 
@@ -57,13 +55,13 @@ Indien opgesteld zal het volgende door gebrek gebeuren:
 
 U kunt het standaardgedrag als volgt wijzigen:
 
-* uitvoeringsmodus: configureren van de parameter `sling.run.modes` in het `WEB-INF/web.xml`-bestand van het AEM-oorlogsbestand vóór implementatie
+* uitvoeringsmodus: vorm `sling.run.modes` in de `WEB-INF/web.xml` dossier van het AEM oorlogsdossier vóór plaatsing
 
-* sling.home: configureer de parameter `sling.home` in het `WEB-INF/web.xml`bestand van het AEM-oorlogsbestand voor de implementatie
+* sling.home: vorm `sling.home` in de `WEB-INF/web.xml`dossier van het AEM oorlogsdossier vóór plaatsing
 
 * contextbasis: naam van AEM oorlogsbestand wijzigen
 
-#### Installatie {#publish-installation} publiceren
+#### Installatie publiceren {#publish-installation}
 
 Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus instellen voor publicatie:
 
@@ -76,8 +74,8 @@ Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus in
 
 Om te controleren of alles is geïnstalleerd, kunt u:
 
-* staart het `error.log`bestand om te zien dat alle inhoud is geïnstalleerd
-* zie in `/system/console` dat alle bundels geïnstalleerd zijn
+* staart `error.log`bestand om te controleren of alle inhoud is geïnstalleerd
+* zoeken in `/system/console` dat alle bundels zijn geïnstalleerd
 
 #### Twee instanties op dezelfde toepassingsserver {#two-instances-on-the-same-application-server}
 
@@ -99,7 +97,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 ### WebSphere 8.5 {#websphere}
 
-Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-description).
+Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
 
 **Servervoorbereiding**
 
@@ -128,7 +126,7 @@ Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-des
 
 #### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-description).
+Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
 
 **JBoss-server voorbereiden**
 
@@ -136,7 +134,7 @@ Geheugenargumenten in uw conf-bestand instellen (bijvoorbeeld `standalone.conf`)
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk goed om de `deployment-timeout,` voor die set een `deployment-timeout`-kenmerk in het XML-bestand van uw instantie te verhogen (bijvoorbeeld `configuration/standalone.xml)`:
+als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk verstandig om de `deployment-timeout,` voor die set `deployment-timeout` kenmerk in het xml-bestand van uw instantie (bijvoorbeeld `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -152,30 +150,30 @@ als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, 
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-description).
+Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
 
 Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 **WebLogic-servervoorbereiding**
 
-* In `${myDomain}/config/config.xml`voeg aan de veiligheid-configuratie sectie toe:
+* In `${myDomain}/config/config.xml`toevoegen aan de veiligheid-configuratie sectie:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdfor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
 
 * VM-geheugeninstellingen verhogen:
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) onderzoek naar WLS_MEM_ARGS, reeks b.v. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) zoek naar WLS_MEM_ARGS, stel bijvoorbeeld set in `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * WebLogic Server opnieuw starten
 
-* Maak in `${myDomain}` een pakketmap en in een cq-map en maak er een overzichtsmap in
+* Maken in `${myDomain}` een pakketmap en in een cq-map en daarin een overzichtsmap
 
 **AEM webtoepassing implementeren**
 
 * AEM bestand downloaden
 * Plaats het AEM oorlogsdossier in ${myDomain}/packages/cq omslag
-* Stel uw configuraties in `WEB-INF/web.xml` indien nodig in (zie hierboven in de Algemene Beschrijving)
+* Configuraties maken in `WEB-INF/web.xml` indien nodig (zie hierboven in de algemene beschrijving)
 
-   * `WEB-INF/web.xml`bestand uitpakken
+   * Uitpakken `WEB-INF/web.xml`file
    * de parameter sling.run.modes wijzigen om te publiceren
    * uncomment sling.home aanvankelijke parameter en reeks dit weg zoals u nodig hebt (zie Algemene Beschrijving)
    * Het bestand web.xml herstellen
@@ -183,21 +181,21 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 * Implementeer AEM oorlogsbestand als een toepassing (voor de andere instellingen worden de standaardinstellingen gebruikt)
 * De installatie kan tijd in beslag nemen...
 * Controleer of de installatie is voltooid zoals hierboven vermeld in de algemene beschrijving (bijv. door op error.log te tikken)
-* U kunt de basisinhoud van de context wijzigen op het tabblad Configuratie van de webtoepassing in de webtoepassing `/console`
+* U kunt de basisinhoud van de context wijzigen op het tabblad Configuratie van de webtoepassing in de WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-description).
+Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
 
 * **Tomcat-server voorbereiden**
 
    * VM-geheugeninstellingen verhogen:
 
-      * Voeg in `bin/catalina.bat` (resp. `catalina.sh` op unix) de volgende instelling toe:
+      * In `bin/catalina.bat` (resp. `catalina.sh` bij unix) voeg de volgende instelling toe:
       * `set "JAVA_OPTS= -Xmx2048m`
-   * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u `tomcat-users.xml` manueel uitgeven om toegang voor deze rekeningen toe te staan:
+   * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u handmatig bewerken `tomcat-users.xml` deze rekeningen toegankelijk te maken:
 
-      * Bewerk `tomcat-users.xml` om toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
+      * Bewerken `tomcat-users.xml` toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
 
          ```xml
          <?xml version='1.0' encoding='utf-8'?>
@@ -222,7 +220,7 @@ Lees voor een implementatie de bovenstaande [Algemene beschrijving](#general-des
 
       `webapps/manager/WEB-INF/web.xml`
 
-      en vergroot de max-file-size en maximum-request-size tot minstens 500MB, zie het volgende `multipart-config` voorbeeld van zulk een `web.xml` dossier.
+      en vergroot de maximale bestandsgrootte en maximale aanvraaggrootte tot minstens 500 MB. Raadpleeg de volgende secties `multipart-config` voorbeeld van een dergelijke `web.xml` bestand.
 
       ```xml
       <multipart-config>

@@ -1,8 +1,8 @@
 ---
-title: Een PDF-document deassembleren met de webservice-API
-seo-title: Een PDF-document deassembleren met de webservice-API
-description: Een PDF-document deassembleren met de API voor de vergaderingsservice
-seo-description: Een PDF-document deassembleren met de API voor de vergaderingsservice
+title: Een PDF-document dempen met behulp van de webservice-API
+seo-title: Disassemble a PDF document usingthe web service API
+description: Een PDF-document dempen met de API voor vergaderingsservice
+seo-description: Disassemble a PDF document using the Assembler Service API
 uuid: d6283dc5-e333-49d0-abde-1d390662f4fe
 contentOwner: admin
 content-type: reference
@@ -10,85 +10,84 @@ geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: de2f90ad-5dea-40a0-8c6d-d6b08228310d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-
-# Een PDF-document ontkoppelen met de webservice-API {#disassemble-a-pdf-document-usingthe-web-service-api}
+# Een PDF-document dempen met de webservice-API {#disassemble-a-pdf-document-usingthe-web-service-api}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een PDF-document desassembleren met de API (webservice) voor de Assembler-service:
+U kunt een PDF-document desassembleren met de API (webservice) van de Assembler-service:
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die staat voor de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
 
-1. Verwijs naar een PDF-document dat u wilt demonteren.
+1. Verwijs naar een document van de PDF om te demonteren.
 
-   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het invoer-PDF-document opgeslagen. Dit `BLOB` voorwerp wordt overgegaan tot `invokeOneDocument` als argument.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoer-PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het object `BLOB` door het veld `MTOM` ervan de inhoud van de bytearray toe te wijzen.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Met dit verzamelingsobject wordt de PDF opgeslagen om te demonteren.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan het `key`-veld van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
-   * Wijs het `BLOB`-object toe dat het PDF-document opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object.
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de `MyMapOf_xsd_string_To_xsd_anyType`-methode `Add` aan en geef het `MyMapOf_xsd_string_To_xsd_anyType`-object door.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het invoerdocument PDF op te slaan. Dit `BLOB` object wordt doorgegeven aan de `invokeOneDocument` als argument.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerdocument PDF en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld de inhoud van de bytearray.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om de PDF op te slaan die moet worden gedemonteerd.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
+   * Wijs het `BLOB` object waarin het PDF-document is opgeslagen in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld.
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object&quot; `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object.
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het object `AssemblerOptionSpec` behoort. Als u bijvoorbeeld de Assembler-service wilt instrueren een taak te blijven verwerken wanneer een fout optreedt, wijst u `false` toe aan het veld `AssemblerOptionSpec` van het `failOnError`-object.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` veld.
 
-1. Het PDF-document demonteren.
+1. Haal het PDF-document uit elkaar.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat staat voor het DDX-document dat het PDF-document demonteert
-   * Het `MyMapOf_xsd_string_To_xsd_anyType`-object dat het te demonteren PDF-document bevat
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft
+   * A `BLOB` object dat staat voor het DDX-document dat het PDF-document demonteert
+   * De `MyMapOf_xsd_string_To_xsd_anyType` object dat het te demonteren PDF-document bevat
+   * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat de taakresultaten en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `AssemblerResult` -object dat de taakresultaten en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Sla de gedemonteerde PDF-documenten op.
 
    Voer de volgende handelingen uit om de nieuwe PDF-documenten te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de gedemonteerde PDF-documenten bevat.
-   * Doorloop het object `Map` om elk resulterend document te verkrijgen. Vervolgens cast u `value` van dat arraylid naar een `BLOB`.
-   * Pak de binaire gegevens die het PDF-document vertegenwoordigen uit door de eigenschap `MTOM` van het object `BLOB` te openen. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de gedemonteerde PDF-documenten bevat.
+   * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 
 **Zie ook**
 

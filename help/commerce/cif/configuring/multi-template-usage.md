@@ -1,24 +1,24 @@
 ---
 title: Meerdere categorieën en productpagina's maken
 description: Leer hoe u de pagina's Landing van categorieën en Productdetails verrijkt met gerichte marketinginhoud.
-sub-product: Handel
+sub-product: Commerce
 doc-type: feature-video
 activity: use
 audience: marketer
-feature: Kader voor integratie in de handel
+feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-translation-type: tm+mt
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: 09e986c4-16b9-4ef5-a0b3-8d65b17a7f2c
+source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '100'
 ht-degree: 0%
 
 ---
 
 # Meerdere categorieën en productpagina&#39;s maken
 
-[AEM de Componenten van de Kern van CIF ](https://github.com/adobe/aem-core-cif-components) verstrekt inhoudsauteurs de capaciteit om extra categorie en productpagina&#39;s tot stand te brengen. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
+[AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) biedt auteurs van inhoud de mogelijkheid om extra categorie- en productpagina&#39;s te maken. Deze pagina&#39;s kunnen met extra marketing inhoud worden verrijkt en worden gevormd om specifieke categorieën en producten te richten. De volgende video doorloopt de opstelling van deze eigenschap.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 

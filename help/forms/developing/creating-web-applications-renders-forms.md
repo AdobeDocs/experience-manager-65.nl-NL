@@ -1,8 +1,8 @@
 ---
 title: Webtoepassingen maken die Forms renderen
-seo-title: Webtoepassingen maken die Forms renderen
+seo-title: Creating Web Applications thatRenders Forms
 description: Maak een webtoepassing die Java-servlets gebruikt om de Forms-service aan te roepen en formulieren te genereren. De Java-servlet fungeert als de koppeling tussen de Forms-service die een formulier retourneert en een clientwebbrowser.
-seo-description: Maak een webtoepassing die Java-servlets gebruikt om de Forms-service aan te roepen en formulieren te genereren. De Java-servlet fungeert als de koppeling tussen de Forms-service die een formulier retourneert en een clientwebbrowser.
+seo-description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
 contentOwner: admin
 content-type: reference
@@ -11,20 +11,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 85e00003-8c8b-463a-b728-66af174be295
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1874'
 ht-degree: 0%
 
 ---
 
-
-# Webtoepassingen maken die Forms {#creating-web-applications-thatrenders-forms} renderen
+# Webtoepassingen maken die Forms renderen {#creating-web-applications-thatrenders-forms}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-## Webtoepassingen maken die Forms {#creating-web-applications-that-renders-forms} renderen
+## Webtoepassingen maken die Forms renderen {#creating-web-applications-that-renders-forms}
 
 U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aan te roepen en formulieren te genereren. Een voordeel van het gebruik van een Java™ servlet is dat u de terugkeerwaarde van het proces aan cliëntbrowser kunt schrijven. Met andere woorden, een Java-servlet kan worden gebruikt als de koppeling tussen de Forms-service die een formulier retourneert en een clientwebbrowser.
 
@@ -32,7 +31,7 @@ U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aa
 >
 >In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie [Forms renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server, waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
+Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
 
 In deze sectie wordt besproken hoe u een webtoepassing kunt maken waarmee de gebruiker op Amerika gebaseerde formuliergegevens of op Canada gebaseerde formuliergegevens kan selecteren, zoals in de volgende afbeelding wordt getoond.
 
@@ -48,27 +47,27 @@ Als de gebruiker Canadese gegevens selecteert, bevat het geretourneerde formulie
 
 >[!NOTE]
 >
->Zie [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) voor informatie over het maken van formulierontwerpen op basis van fragmenten.
+>Voor informatie over het maken van formulierontwerpen op basis van fragmenten raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Voorbeeldbestanden**
 
 In deze sectie worden voorbeeldbestanden gebruikt die zich op de volgende locatie bevinden:
 
-&lt;>Forms Designer-installatiemap *>/Samples/Forms/Purchase Order/Form Fragments*
+&lt;*Installatiemap van Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
-waarbij &lt;*installatiemap*> het installatiepad is. Ten behoeve van de clienttoepassing is het bestand Purchase Order Dynamic.xdp gekopieerd van deze installatielocatie en geïmplementeerd in een Forms-toepassing met de naam *Applications/FormsApplication*. Het bestand Purchase Order Dynamic.xdp wordt in een map met de naam FormsFolder geplaatst. Op dezelfde manier worden de fragmenten in de map Fragments geplaatst, zoals in de volgende afbeelding wordt getoond.
+waarbij &lt;*installatiemap*> is het installatiepad. Ten behoeve van de clienttoepassing is het bestand Purchase Order Dynamic.xdp gekopieerd van deze installatielocatie en geïmplementeerd in een Forms-toepassing met de naam *Applications/FormsApplication*. Het bestand Purchase Order Dynamic.xdp wordt in een map met de naam FormsFolder geplaatst. Op dezelfde manier worden de fragmenten in de map Fragments geplaatst, zoals in de volgende afbeelding wordt getoond.
 
 ![cw_cw_fragmentsrepository](assets/cw_cw_fragmentsrepository.png)
 
-Als u toegang wilt krijgen tot het formulierontwerp Purchase Order Dynamic.xdp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` op als de formuliernaam (de eerste parameter die is doorgegeven aan de methode `renderPDFForm`) en `repository:///` als de URI-waarde van de inhoudsbasis.
+Als u het formulierontwerp Purchase Order Dynamic.xdp wilt openen, geeft u `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` als de formuliernaam (de eerste parameter die aan de `renderPDFForm` methode) en `repository:///` als de URI-waarde van de inhoudsbasis.
 
-De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe` (het bestandssysteem dat hoort bij de J2EE-toepassingsserver die als host fungeert voor AEM Forms). De bestandsnamen zijn Purchase Order *Canada.xml* en Purchase Order *US.xml*.
+De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe`(het bestandssysteem dat behoort tot de J2EE-toepassingsserver die als host fungeert voor AEM Forms). De bestandsnamen zijn Purchase Order *Canada.xml* en inkooporder *US.xml*.
 
 >[!NOTE]
 >
->Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) voor informatie over het maken van een Forms-toepassing met Workbench.
+>Voor informatie over het maken van een Forms-toepassing met Workbench gaat u naar [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-### Overzicht van stappen {#summary-of-steps}
+### Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een webtoepassing te maken die formulieren weergeeft op basis van fragmenten:
 
@@ -83,9 +82,9 @@ Voer de volgende stappen uit om een webtoepassing te maken die formulieren weerg
 >
 >Sommige van deze stappen zijn afhankelijk van de J2EE-toepassing waarop AEM Forms wordt geïmplementeerd. De methode die u bijvoorbeeld gebruikt om een WAR-bestand te implementeren, is afhankelijk van de J2EE-toepassingsserver die u gebruikt. In deze sectie wordt ervan uitgegaan dat AEM Forms wordt geïmplementeerd op JBoss®.
 
-### Een webproject {#creating-a-web-project} maken
+### Een webproject maken {#creating-a-web-project}
 
-De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de Forms-service kan aanroepen, is het maken van een nieuw webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet toe aan uw project.
+De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de Forms-service kan aanroepen, is het maken van een nieuw webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet voor uw project.
 
 In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject moet toevoegen:
 
@@ -94,39 +93,39 @@ In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor de locatie van deze JAR-bestanden.
+Ga voor de locatie van deze JAR-bestanden naar [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Een webproject maken:**
 
-1. Start Eclipse en klik op **Bestand** > **Nieuw project**.
-1. Selecteer **Web** > **Dynamisch webproject** in het dialoogvenster **Nieuw project**.
-1. Typ `FragmentsWebApplication` voor de naam van uw project en klik vervolgens op **Voltooien**.
+1. Eclipse starten en klikken **Bestand** >  **Nieuw project**.
+1. In de **Nieuw project** dialoogvenster selecteert u **Web** > **Dynamisch webproject**.
+1. Type `FragmentsWebApplication` voor de naam van uw project en klik vervolgens op **Voltooien**.
 
 **U voegt als volgt vereiste JAR-bestanden toe aan uw project:**
 
-1. Van het venster van de Ontdekkingsreiziger van het Project, klik het `FragmentsWebApplication` project met de rechtermuisknop aan en selecteer **Eigenschappen**.
-1. Klik **Java-bouwpad** en klik vervolgens op het tabblad **Bibliotheken**.
+1. Van het venster van de Ontdekkingsreiziger van het Project, klik met de rechtermuisknop aan `FragmentsWebApplication` project en selecteer **Eigenschappen**.
+1. Klikken **Java-ontwikkelpad** en klik vervolgens op de knop **Bibliotheken** tab.
 1. Klik op de knop **Externe JAR&#39;s toevoegen** en blader naar de JAR-bestanden die u wilt opnemen.
 
 **Een Java-servlet toevoegen aan uw project:**
 
-1. Van het venster van de Ontdekkingsreiziger van het Project, klik het `FragmentsWebApplication` project met de rechtermuisknop aan en selecteer **Nieuw** > **Overig**.
-1. Vouw de map **Web** uit, selecteer **Servlet** en klik vervolgens op **Volgende**.
-1. Typ `RenderFormFragment` voor de naam van de servlet in het dialoogvenster Servlet maken en klik vervolgens op **Voltooien**.
+1. Van het venster van de Ontdekkingsreiziger van het Project, klik met de rechtermuisknop aan `FragmentsWebApplication` project en selecteer **Nieuw** >  **Overige**.
+1. Breid uit **Web** map, selecteert u **Servlet** en klik vervolgens op **Volgende**.
+1. Typ in het dialoogvenster Servlet maken `RenderFormFragment` voor de naam van de servlet en klik vervolgens op **Voltooien**.
 
 **Een HTML-pagina toevoegen aan uw project:**
 
-1. Van het venster van de Ontdekkingsreiziger van het Project, klik het `FragmentsWebApplication` project met de rechtermuisknop aan en selecteer **Nieuw** > **Overig**.
-1. Vouw de map **Web** uit, selecteer **HTML** en klik op **Volgende**.
-1. Typ `index.html` voor de bestandsnaam in het dialoogvenster Nieuwe HTML en klik vervolgens op **Voltooien**.
+1. Van het venster van de Ontdekkingsreiziger van het Project, klik met de rechtermuisknop aan `FragmentsWebApplication` project en selecteer **Nieuw** > **Overige**.
+1. Breid uit **Web** map, selecteert u **HTML** en klik op **Volgende**.
+1. Typ in het dialoogvenster Nieuwe HTML `index.html` voor de bestandsnaam en klik vervolgens op **Voltooien**.
 
 >[!NOTE]
 >
->Zie [De webpagina maken](/help/forms/developing/rendering-forms.md#creating-the-web-page) voor informatie over het maken van de HTML-pagina die het Java-servlet `RenderFormFragment` activeert.
+>Voor informatie over het maken van de pagina HTML die de `RenderFormFragment` Java servlet, zie [De webpagina maken](/help/forms/developing/rendering-forms.md#creating-the-web-page).
 
-### Java-toepassingslogica maken voor de servlet {#creating-java-application-logic-for-the-servlet}
+### Java-toepassingslogica voor de servlet maken {#creating-java-application-logic-for-the-servlet}
 
-U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Servlet van Java:
+U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Servlet:
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -141,35 +140,35 @@ U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-serv
              }
 ```
 
-Normaal gesproken plaatst u geen clientcode in een Java-servlet- of `doGet`-methode. `doPost` Een betere programmeringspraktijk moet deze code binnen een afzonderlijke klasse plaatsen, de klasse van binnen de `doPost` methode (of `doGet` methode) concretiseren, en de aangewezen methodes roepen. Voor de beknoptheid van de code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de methode `doPost` geplaatst.
+Normaal gesproken plaatst u geen clientcode in een Java-servlet `doGet` of `doPost` methode. Een betere programmeerpraktijk is deze code binnen een afzonderlijke klasse te plaatsen, de klasse van binnen te concretiseren `doPost` methode (of `doGet` methode) en roept de aangewezen methodes aan. Voor de beknoptheid van de code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de `doPost` methode.
 
 Als u een formulier wilt genereren op basis van fragmenten met de API van de Forms-service, voert u de volgende taken uit:
 
-1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze bestanden.
-1. Haal de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geef aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als American wordt verzonden, maakt u een `com.adobe.idp.Document` waarin de gegevens worden opgeslagen die zich bevinden in *Purchase Order US.xml*. Op dezelfde manier, als Canadees, creeer dan `com.adobe.idp.Document` die gegevens opslaat die in *Inkooporder Canada.xml* dossier worden gevestigd.
-1. Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-1. Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
-1. Maak een object `URLSpec` waarin URI-waarden worden opgeslagen met behulp van de constructor.
-1. Roep de methode `URLSpec` van het object `setApplicationWebRoot` aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-1. Roep de methode `setContentRootURI` van het object `URLSpec` aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de AEM Forms-opslagplaats wilt verwijzen, geeft u `repository://` op.
-1. Roep de methode `setTargetURL` van het object `URLSpec` aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waar de formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
-1. Roep de methode `renderPDFForm` van het object `FormsServiceClient` aan en geef de volgende waarden door:
+1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Hiermee haalt u de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geeft u aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als American wordt verzonden, maakt u een `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order US.xml*. En als Canadees, creeer dan `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order Canada.xml* bestand.
+1. Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+1. Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+1. Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
+1. De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
+1. De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de AEM Forms-opslagplaats wilt verwijzen, geeft u `repository://`.
+1. De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
+1. De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
-   * Een object `com.adobe.idp.Document` dat gegevens bevat die met het formulier moeten worden samengevoegd (gemaakt in stap 2).
-   * Een `PDFFormRenderSpec`-object dat uitvoeringsopties opslaat. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie.
-   * Een object `URLSpec` dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
-   * Een `java.util.HashMap`-object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt `null` opgeven als u geen bestanden aan het formulier wilt koppelen.
+   * A `com.adobe.idp.Document` -object dat gegevens bevat die met het formulier moeten worden samengevoegd (gemaakt in stap 2).
+   * A `PDFFormRenderSpec` -object dat uitvoeringsopties opslaat. Zie voor meer informatie [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
+   * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
 
-   De methode `renderPDFForm` retourneert een `FormsResult`-object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
+   De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
-1. Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object aan te roepen.`FormsResult`
-1. Hiermee wordt het inhoudstype van het object `com.adobe.idp.Document` opgehaald door de methode `getContentType` ervan aan te roepen.
-1. Stel het inhoudstype van het object `javax.servlet.http.HttpServletResponse` in door de methode `setContentType` ervan aan te roepen en het inhoudstype van het object `com.adobe.idp.Document` door te geven.
-1. Maak een `javax.servlet.ServletOutputStream`-object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door de methode `javax.servlet.http.HttpServletResponse` van het object `getOutputStream` aan te roepen.
-1. Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `com.adobe.idp.Document` aan te roepen.
-1. Maak een bytearray die deze met de formuliergegevensstroom vult door de methode `read`van het object `InputStream` aan te roepen en de bytearray als een argument door te geven.
-1. Roep de methode `javax.servlet.ServletOutputStream` van het object `write` aan om de gegevensstroom van het formulier naar de webbrowser van de client te verzenden. Geef de bytearray door aan de methode `write`.
+1. Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+1. Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
+1. Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+1. Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
+1. Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
+1. Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` object `read`en de bytearray doorgeven als een argument.
+1. De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 In het volgende codevoorbeeld ziet u het Java-servlet dat de Forms-service activeert en een formulier genereert op basis van fragmenten.
 
@@ -308,11 +307,11 @@ In het volgende codevoorbeeld ziet u het Java-servlet dat de Forms-service activ
  }
 ```
 
-### De webpagina {#creating-the-web-page} maken
+### De webpagina maken {#creating-the-web-page}
 
-De webpagina index.html biedt een ingangspunt voor de Java-server en roept de Forms-service aan. Deze webpagina is een standaard-HTML-formulier dat twee keuzerondjes en een verzendknop bevat. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden formuliergegevens naar de Java-servlet `RenderFormFragment` gepost.
+De webpagina index.html biedt een ingangspunt voor de Java-server en roept de Forms-service aan. Deze webpagina is een basisformulier voor HTML met twee keuzerondjes en een verzendknop. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden formuliergegevens naar de `RenderFormFragment` Java servlet.
 
-De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met de volgende Java-code:
+De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met behulp van de volgende Java-code:
 
 ```java
              Document oInputData = null;
@@ -374,23 +373,23 @@ De volgende HTML-code bevindt zich in het bestand index.html dat tijdens de inst
  </html>
 ```
 
-### De webtoepassing {#packaging-the-web-application} verpakken
+### De webtoepassing verpakken {#packaging-the-web-application}
 
 Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u uw webtoepassing verpakken naar een WAR-bestand. Zorg ervoor dat externe JAR-bestanden waarvan de bedrijfslogica van de component afhankelijk is, zoals adobe-livecycle-client.jar en adobe-forms-client.jar, ook worden opgenomen in het WAR-bestand.
 
 **Een webtoepassing verpakken naar een WAR-bestand:**
 
-1. Klik in het venster **Projectverkenner** met de rechtermuisknop op het `FragmentsWebApplication`-project en selecteer **Exporteren** > **WAR-bestand**.
-1. Typ `FragmentsWebApplication` voor de naam van het Java-project in het tekstvak **Webmodule**.
-1. Typ `FragmentsWebApplication.war`**in het tekstvak** Doel **voor de bestandsnaam** de locatie voor het WAR-bestand en klik op Voltooien.
+1. Van de **Projectverkenner** venster, klikt u met de rechtermuisknop op de knop `FragmentsWebApplication` project en selecteer **Exporteren** > **WAR-bestand**.
+1. In de **Webmodule** tekstvak, tekst `FragmentsWebApplication` voor de naam van het Java-project.
+1. In de **Doel** tekstvak, tekst `FragmentsWebApplication.war`**voor de** bestandsnaam, geef de locatie voor het WAR-bestand op en klik op Voltooien.
 
-### WAR-bestand gebruiken op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
+### WAR-bestand implementeren op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
-U kunt het WAR-bestand implementeren op de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Nadat het WAR-bestand is geïmplementeerd, kunt u de HTML-webpagina openen met een webbrowser.
+U kunt het WAR-bestand implementeren op de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd. Nadat het WAR-bestand is geïmplementeerd, kunt u de webpagina HTML openen met een webbrowser.
 
 **Het WAR-bestand implementeren op de J2EE-toepassingsserver:**
 
-* Kopieer het WAR-bestand van het exportpad naar `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`.
+* Het WAR-bestand kopiëren van het exportpad naar `[Forms Install]\Adobe\Adobe Experience Manager Forms\jboss\server\all\deploy`.
 
 ### Uw webtoepassing testen {#testing-your-web-application}
 
@@ -399,4 +398,3 @@ Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbr
 * http://localhost:8080/FragmentsWebApplication/index.html
 
    Selecteer een keuzerondje en klik op Verzenden. Een formulier dat is gebaseerd op fragmenten, wordt weergegeven in de webbrowser. Als er problemen optreden, raadpleegt u het logbestand van de J2EE-toepassingsserver.
-

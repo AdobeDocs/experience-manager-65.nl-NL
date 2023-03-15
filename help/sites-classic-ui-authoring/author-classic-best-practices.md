@@ -1,19 +1,18 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
-seo-description: De beste praktijken van het Ontwerp beschrijven hoe te om AEM op de meest efficiënte en meest efficiënte manier te gebruiken. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-translation-type: tm+mt
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 3%
+source-wordcount: '282'
+ht-degree: 2%
 
 ---
 
@@ -38,7 +37,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## Assets {#assets}
 
-De beste praktijken rond Activa, met inbegrip van het Dynamische vermogen van Media en Dynamische integratie van Media Classic, worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
 
 <table>
  <tbody>
@@ -55,7 +54,7 @@ De beste praktijken rond Activa, met inbegrip van het Dynamische vermogen van Me
   <tr>
    <td>Dynamic Imaging</td>
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamic Imaging</a></td>
-   <td><p>Beschrijft hoe te om een beeld voor beste resultaten en de beste manier te verscherpen om de kwaliteit van uw beelden te optimaliseren als u de Dynamische functionaliteit van Media gebruikt of met Dynamische Klassiek van Media integreert. </p> </td>
+   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Dynamic Media Classic integreert. </p> </td>
   </tr>
   <tr>
    <td>Meertalige activa</td>
@@ -69,10 +68,10 @@ De beste praktijken rond Activa, met inbegrip van het Dynamische vermogen van Me
 
 Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen procedures die als volgt worden beschreven:
 
-Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Hiermee geeft u een overzicht van het schrijven van pagina&#39;s.
+Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Geeft een overzicht van het schrijven van pagina&#39;s.
 
 ## Forms {#forms}
 
-Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft beste werkwijzen voor het instellen, ontwerpen en aanpassen van adaptieve formulieren.
+Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft beste praktijken voor vestiging, creatie, en het aanpassen van adaptieve vormen.
 
-HTML5-formulieren: [Aanbevolen werkwijzen voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) - Beschrijft aanbevolen werkwijzen voor het werken aan de indeling en het ontwerp van HTML5-formulieren.
+HTML5-formulieren: [Aanbevolen procedures voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) - Beschrijft beste praktijken voor het werken aan lay-out en ontwerp van HTML5 vormen.

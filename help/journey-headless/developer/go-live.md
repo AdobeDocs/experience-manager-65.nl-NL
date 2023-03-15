@@ -1,7 +1,8 @@
 ---
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -103,7 +104,7 @@ Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introducti
 
 ### Beveilig uw toepassing zonder koppen voordat u de toepassing start {#secure-and-scale-before-launch}
 
-1. Voorbereiden [Verificatie](/help/assets/content-fragments/graphql-authentication-content-fragments.md) voor uw GraphQL-aanvragen
+1. Voorbereiden [Verificatie](/help/assets/content-fragments/graphql-authentication-content-fragments.md) voor je GraphQL-aanvragen
 
 ### Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 
@@ -113,11 +114,11 @@ Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introducti
 
 ### CDN-hoogte-breedteverhouding in cache maximaliseren {#maximize-cdn}
 
-* Gebruik geen directe vragen GraphQL, tenzij u levende inhoud van de oppervlakte verzoekt.
+* Gebruik geen directe GraphQL-query&#39;s, tenzij u live-inhoud vanaf het oppervlak aanvraagt.
    * Gebruik waar mogelijk doorlopende query&#39;s.
    * Verstrek CDN TTL boven 600 seconden zodat CDN hen in het voorgeheugen onderbrengt.
    * AEM kan het effect van een modelwijziging op bestaande query&#39;s berekenen.
-* Splits JSON- dossiers/GraphQL vragen tussen laag en hoge tarief van de inhoudsverandering om cliëntverkeer aan CDN te verminderen en hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
+* Splits JSON-bestanden/GraphQL-query&#39;s tussen lage en hoge wijzigingssnelheid voor inhoud om het clientverkeer naar CDN te beperken en een hogere TTL toe te wijzen. Dit minimaliseert CDN die JSON met de oorsprongserver opnieuw bevestigt.
 * Als u de inhoud van de CDN actief ongeldig wilt maken, gebruikt u Zacht wissen. Hierdoor kan de CDN de inhoud opnieuw downloaden zonder dat een cache-fout optreedt.
 
 >[!NOTE]
@@ -180,7 +181,7 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 * Functionaliteit en prestaties valideren met de productieversie van de toepassing
 * Valideren met de JSON-voorvertoning van de Content Fragment Editor
 * Inspect de JSON in de clienttoepassing om te controleren of er problemen zijn met de clienttoepassing of levering
-* Inspect de JSON met GraphQL om te controleren of er problemen zijn met inhoud of AEM in cache.
+* Inspect de JSON met GraphQL om te controleren of er problemen zijn met inhoud in de cache of AEM
 
 ### Een probleem aanmelden met ondersteuning {#logging-a-bug-with-support}
 

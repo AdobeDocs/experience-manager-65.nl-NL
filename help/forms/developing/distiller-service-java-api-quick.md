@@ -1,6 +1,6 @@
 ---
 title: Distiller Service Java API QuickStart (SOAP)
-seo-title: Distiller Service Java API QuickStart (SOAP)
+seo-title: Distiller Service Java API QuickStart(SOAP)
 description: Distiller Service Java API QuickStart (SOAP)
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
@@ -9,14 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: c5bf9184-a837-4033-9962-7b3052498e75
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Distiller Service Java API Quick Start (SOAP) {#distiller-service-java-api-quickstart-soap}
 
@@ -32,7 +31,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Een PostScript-bestand converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PostScript-bestand met de naam *Loan.ps* geconverteerd naar een PDF-bestand met de naam *Loan.pdf*. (Zie [PostScript converteren naar PDF-documenten](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
+In het volgende codevoorbeeld wordt een PostScript-bestand met de naam *Lening.ps* naar een PDF-bestand dat *Lening.pdf*. (Zie [PostScript converteren naar PDF-documenten](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents).)
 
 ```java
  /*

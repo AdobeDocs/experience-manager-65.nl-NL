@@ -1,24 +1,23 @@
 ---
 title: Informatie weergeven in het deelvenster Taakoverzicht
-seo-title: Informatie weergeven in het deelvenster Taakoverzicht
+seo-title: Displaying information in the Task Summary pane
 description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
-seo-description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
+seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-
-# Informatie weergeven in het venster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
+# Informatie weergeven in het deelvenster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
 
 Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakoverzicht een overzicht van de taak weergegeven. Deze aanvullende en relevante informatie voor een taak voegt meer waarde toe aan de eindgebruiker van de AEM Forms-werkruimte.
 
@@ -33,10 +32,10 @@ In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in he
 1. Configureer het veld Taakoverzicht-URL. U kunt een letterlijke waarde, een sjabloon, een variabele of een XPath-expressie opgeven.
 1. Hieronder ziet u een voorbeeld van het weergeven van de informatie op de pagina Taakoverzicht.
 
-   * Meld u aan bij de CRXDE Lite-omgeving op `https://'[server]:[port]'/lc/crx/de`.
-   * `Create a node`**SampleSummary** ` under `/` with type `content:`. In the properties of this node, add `unstructuresling:` of type String and value ``. In the Access Control List of this node, add an entry for `resourceTypeSampleSummaryPERM_WORKSPACE_` allowing `USERjcr:read` privileges.`
-   * `Create a folder`**** SampleSummaryunder  `/apps`. In de Lijst van het Toegangsbeheer van `/apps/SampleSummary`, voeg een ingang voor `PERM_WORKSPACE_USER` toe die `jcr:readprivileges` toestaat.
-   * `Create a file `html.esp` at `/apps/`. For example, add the following lines in `SampleSummaryhtml.esp`.`
+   * Aanmelden bij CRXDE Lite-omgeving bij `https://'[server]:[port]'/lc/crx/de`.
+   * `Create a node`**SampleSummary** ` under `/content` with type `nt:ongestructureerd`. In the properties of this node, add `sling:resourceType` of type String and value `SampleSummary`. In the Access Control List of this node, add an entry for `PERM_WORKSPACE_USER` allowing `jcr:lezen` privileges.`
+   * `Create a folder`**SampleSummary** krachtens `/apps`. In de lijst Toegangsbeheer van `/apps/SampleSummary`, een item toevoegen voor `PERM_WORKSPACE_USER` toestaan `jcr:readprivileges`.
+   * `Create a file `html.esp` at `/apps/SampleSummary`. For example, add the following lines in `html.esp`.`
 
    ```html
    <html>
@@ -51,5 +50,5 @@ In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in he
    </html>
    ```
 
-   * Plaats de waarde van taak summiere url als `/lc/content/SampleSummary.html` in de stap van de Taak toewijzen.
-   * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van AEM Forms wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.
+   * Stel de waarde van de taaksummiere URL in op `/lc/content/SampleSummary.html` in de stap Taak toewijzen.
+   * Wanneer de taak die bij deze stap Taak toewijzen hoort, wordt geopend in de AEM Forms-werkruimte, wordt `html.esp` om `/apps/SampleSummary` wordt weergegeven in het taakoverzichtsvenster.

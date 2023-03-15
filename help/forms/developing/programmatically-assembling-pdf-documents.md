@@ -1,8 +1,8 @@
 ---
 title: PDF-documenten programmatisch samenstellen
-seo-title: PDF-documenten programmatisch samenstellen
-description: Gebruik de API voor de vergaderingsservice om meerdere PDF-documenten samen te stellen tot één PDF-document met de Java API en de webservice-API.
-seo-description: Gebruik de API voor de vergaderingsservice om meerdere PDF-documenten samen te stellen tot één PDF-document met de Java API en de webservice-API.
+seo-title: Programmatically Assembling PDF Documents
+description: Gebruik de Assembler service-API om meerdere PDF-documenten samen te stellen tot één PDF-document met de Java API en de Web Service-API.
+seo-description: Use the Assembler service API to assemble multiple PDF documents into a single PDF document using the Java API and the Web Service API.
 uuid: aa3f8f39-1fbc-48d0-82ff-6caaadf125fc
 contentOwner: admin
 content-type: reference
@@ -11,24 +11,23 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten programmatisch samenstellen {#programmatically-assembling-pdf-documents}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt de API van de Dienst van de Assembler gebruiken om veelvoudige PDF documenten in één enkel Pdf- document samen te stellen. In de volgende afbeelding ziet u drie PDF-documenten die in één PDF-document worden samengevoegd.
+Met de API voor vergaderingsservice kunt u meerdere PDF-documenten samenvoegen tot één PDF-document. In de volgende afbeelding ziet u drie PDF-documenten die worden samengevoegd in één PDF-document.
 
 ![pa_pa_document_assembly](assets/pa_pa_document_assembly.png)
 
-Als u twee of meer PDF-documenten in één PDF-document wilt samenvoegen, hebt u een DDX-document nodig. In een DDX-document wordt het PDF-document beschreven dat de Assembler-service produceert. Namelijk draagt het DDX- document de dienst van de Assembler op welke acties om uit te voeren.
+U hebt een DDX-document nodig om twee of meer PDF-documenten samen te voegen tot één PDF-document. Een DX-document beschrijft het PDF-document dat de Assembler-service produceert. Namelijk draagt het DDX- document de dienst van de Assembler op welke acties om uit te voeren.
 
 Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt.
 
@@ -42,38 +41,38 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
  </DDX>
 ```
 
-Dit DDX-document voegt twee PDF-documenten met de naam *map.pdf* en *direction.pdf* samen tot één PDF-document.
+In dit DDX-document worden twee PDF-documenten samengevoegd met de naam *map.pdf* en *direction.pdf* in één PDF-document.
 
 >[!NOTE]
 >
->Zie [PDF-documenten decompileren](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents) voor een DDX-document dat een PDF-document demonteert.
+>Als u een DDX-document wilt bekijken dat een PDF-document demonteert, raadpleegt u [PDF-documenten programmatisch demonteren](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overwegingen bij het aanroepen van de Assembler-service met behulp van webservices {#considerations-when-invoking-assembler-service-using-web-services}
 
-Wanneer u kop- en voetteksten toevoegt tijdens het samenstellen van grote documenten, kan een fout `OutOfMemory` optreden en worden de bestanden niet samengesteld. Om de kans te verminderen dat dit probleem voorkomt, voeg een `DDXProcessorSetting` element aan uw Dx- document toe, zoals aangetoond in het volgende voorbeeld.
+Wanneer u kop- en voetteksten toevoegt tijdens het samenstellen van grote documenten, kan het zijn dat u een `OutOfMemory` fout en de bestanden worden niet samengesteld. Om de kans dat dit probleem zich voordoet te verkleinen, voegt u een `DDXProcessorSetting` element aan uw Dx- document, zoals aangetoond in het volgende voorbeeld.
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
-U kunt dit element toevoegen als een onderliggend element van het element `DDX` of als een onderliggend element van een element `PDF result`. De standaardwaarde voor deze instelling is 0 (nul), waardoor het aanwijzen wordt uitgeschakeld en de DDX zich gedraagt alsof het element `DDXProcessorSetting` niet aanwezig is. Als u een fout `OutOfMemory` hebt ontmoet, kunt u de waarde aan een geheel, typisch tussen 500 en 5000 moeten plaatsen. Een kleine controlepuntwaarde resulteert in frequentere controle die.
+U kunt dit element toevoegen als een onderliggend element van het dialoogvenster `DDX` element of als onderliggend element van een `PDF result` element. De standaardwaarde voor deze instelling is 0 (nul). Hiermee schakelt u het aanwijzen uit en de DDX gedraagt zich alsof de `DDXProcessorSetting` element is not present. Als u een `OutOfMemory` Als er een fout optreedt, moet u de waarde mogelijk instellen op een geheel getal, meestal tussen 500 en 5000. Een kleine controlepuntwaarde resulteert in frequentere controle die.
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
 Als u één PDF-document wilt samenstellen op basis van meerdere PDF-documenten, voert u de volgende taken uit:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
 1. Verwijs naar een bestaand DDX-document.
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 1. Stel runtime-opties in.
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 1. Extraheer de resultaten.
 
 **Projectbestanden opnemen**
@@ -98,29 +97,29 @@ Voordat u programmatically een verrichting van de Assembler kunt uitvoeren, moet
 
 Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Neem bijvoorbeeld het DDX-document dat in deze sectie is geïntroduceerd. Dit DDX-document geeft de Assembler-service de opdracht om twee PDF-documenten samen te voegen tot één PDF-document.
 
-**Referentie-invoer-PDF-documenten**
+**Referentie-invoer PDF-documenten**
 
-Referentie-invoer-PDF-documenten die u wilt doorgeven aan de Assembler-service. Als u bijvoorbeeld twee invoer-PDF-documenten met de naam Kaart en Richtingen wilt doorgeven, moet u de bijbehorende PDF-bestanden doorgeven.
+Referentie-invoer PDF documenten die u aan de dienst van de Assembler wilt overgaan. Als u bijvoorbeeld twee invoerdocumenten met de naam Kaart en Richtingen wilt doorgeven, moet u de bijbehorende PDF-PDF-bestanden doorgeven.
 
-Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelingsobject worden geplaatst. De naam van de sleutel moet overeenkomen met de waarde van het PDF-bronkenmerk in het DDX-document. Het maakt niet uit wat de naam van het PDF-bestand is als de sleutel en het bronkenmerk in het DDX-document overeenkomen.
+Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelingsobject worden geplaatst. De naam van de sleutel moet de waarde van het PDF bronattribuut in het DX- document aanpassen. Het maakt niet uit wat de naam van het PDF-bestand is als de sleutel en het bronkenmerk in het DDX-document overeenkomen.
 
 >[!NOTE]
 >
->Een `AssemblerResult` voorwerp, dat een inzamelingsvoorwerp bevat, is teruggekeerd als u `invokeDDX` verrichting aanhaalt. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de bewerking `invokeOneDocument` aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents) voor informatie over het gebruik van deze bewerking.
+>An `AssemblerResult` object, dat een verzamelingsobject bevat, wordt geretourneerd wanneer u het object activeert `invokeDDX` bewerking. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van PDF doorgeeft aan de Assembler-service. Als u echter maar één invoerdocument doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de instelling `invokeOneDocument` bewerking. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Voor informatie over het gebruik van deze bewerking raadpleegt u [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Uitvoeringsopties instellen**
 
-U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Zie de `AssemblerOptionSpec`-klasseverwijzing in [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor informatie over de runtime-opties die u kunt instellen.
+U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler controleren terwijl het een baan uitvoert. U kunt bijvoorbeeld een optie instellen die de Assembler-service de opdracht geeft door te gaan met het verwerken van een taak als er een fout optreedt. Voor informatie over de runtime opties die u kunt plaatsen, zie `AssemblerOptionSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**PDF-invoerdocumenten samenstellen**
+**De invoerdocumenten PDF samenstellen**
 
-Nadat u de serviceclient hebt gemaakt, naar een DDX-bestand hebt verwezen, een verzamelingsobject hebt gemaakt waarin de invoer-PDF-documenten zijn opgeslagen en uitvoeropties hebt ingesteld, kunt u de DDX-bewerking activeren. Wanneer u het in deze sectie opgegeven DDX-document gebruikt, worden de bestanden map.pdf en direction.pdf samengevoegd in één PDF-document.
+Nadat u de de dienstcliënt creeert, verwijs een DX- dossier, creeer een inzamelingsvoorwerp dat de documenten van de inputPDF opslaat, en vastgestelde runtime opties, kunt u de verrichting DDX aanhalen. Wanneer u het DDX-document gebruikt dat in deze sectie is opgegeven, worden de bestanden map.pdf en direction.pdf samengevoegd in één PDF-document.
 
 **De resultaten extraheren**
 
-De service Assembler retourneert een object `java.util.Map`, dat kan worden verkregen van het object `AssemblerResult` en dat bewerkingsresultaten bevat. Het geretourneerde `java.util.Map`-object bevat de resulterende documenten en eventuele uitzonderingen.
+De dienst van de Assembler keert a terug `java.util.Map` -object, dat kan worden verkregen uit het `AssemblerResult` en die bewerkingsresultaten bevatten. De geretourneerde `java.util.Map` bevat de resulterende documenten en eventuele uitzonderingen.
 
-De volgende tabel bevat een overzicht van enkele sleutelwaarden en objecttypen die in het geretourneerde `java.util.Map`-object kunnen worden gevonden.
+In de volgende tabel vindt u een overzicht van enkele sleutelwaarden en objecttypen die zich in het geretourneerde object kunnen bevinden `java.util.Map` object.
 
 <table>
  <thead>
@@ -159,7 +158,7 @@ De volgende tabel bevat een overzicht van enkele sleutelwaarden en objecttypen d
 
 ## PDF-documenten samenstellen met de Java API {#assemble-pdf-documents-using-the-java-api}
 
-U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
+U kunt een PDF-document samenstellen met behulp van de API (Java) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
@@ -167,50 +166,50 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 
-   * Maak een `java.util.Map`-object dat wordt gebruikt om invoer-PDF-documenten op te slaan met behulp van een `HashMap`-constructor.
-   * Maak voor elk invoer-PDF-document een `java.io.FileInputStream`-object door de constructor ervan te gebruiken en de locatie van het invoer-PDF-document door te geven.
-   * Maak voor elk invoer-PDF-document een `com.adobe.idp.Document`-object en geef het `java.io.FileInputStream`-object door dat het PDF-document bevat.
-   * Voeg voor elk invoerdocument een item toe aan het `java.util.Map`-object door de methode `put` ervan aan te roepen en de volgende argumenten door te geven:
+   * Een `java.util.Map` object dat wordt gebruikt voor het opslaan van PDF-invoerdocumenten met behulp van een `HashMap` constructor.
+   * Maak voor elk invoerdocument een PDF `java.io.FileInputStream` object door de constructor ervan te gebruiken en de locatie van het invoerdocument PDF door te geven.
+   * Maak voor elk invoerdocument een PDF `com.adobe.idp.Document` en geeft het `java.io.FileInputStream` object dat het PDF-document bevat.
+   * Voor elk invoerdocument voegt u een item toe aan de `java.util.Map` object aanroepen `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
-      * Een `com.adobe.idp.Document`-object (of `java.util.List`-object dat meerdere documenten opgeeft) dat het bron-PDF-document bevat.
+      * A `com.adobe.idp.Document` object (of `java.util.List` -object dat meerdere documenten opgeeft) die het PDF-brondocument bevatten.
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt de `AssemblerOptionSpec` methode `setFailOnError` van objecten aan en gaat `false` over.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het te gebruiken DDX-document vertegenwoordigt
-   * Een `java.util.Map`-object dat de invoer-PDF-bestanden bevat die moeten worden samengevoegd
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-object dat de runtime-opties opgeeft, inclusief het standaardniveau voor lettertypen en taaklogbestanden
+   * A `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
+   * A `java.util.Map` object dat de invoerbestanden bevat die moeten worden samengesteld PDF
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardfont- en taaklogniveau
 
-   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Extraheer de resultaten.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Roep de methode `AssemblerResult` van het object `getDocuments` aan. Dit retourneert een `java.util.Map`-object.
-   * Doorloop het object `java.util.Map` totdat u het resulterende object `com.adobe.idp.Document` hebt gevonden. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het PDF-document uit te pakken.
+   * De `AssemblerResult` object `getDocuments` methode. Dit retourneert een `java.util.Map` object.
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
+   * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-document te extraheren.
 
    >[!NOTE]
    >
-   >Als `LOG_LEVEL` is ingesteld om een logbestand te maken, kunt u het logbestand extraheren met de methode `AssemblerResult` van het object `getJobLog`.
+   >Indien `LOG_LEVEL` is ingesteld om een logboek te maken, kunt u het logboek extraheren met de `AssemblerResult` object `getJobLog` methode.
 
 **Zie ook**
 
@@ -222,76 +221,76 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
 
 ## PDF-documenten samenstellen met de webservice-API {#assemble-pdf-documents-using-the-web-service-api}
 
-U kunt PDF-documenten samenstellen met de API (webservice) van de Assembler Service:
+U kunt PDF-documenten samenstellen met behulp van de API (webservice) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
 
-1. Referentie-invoer-PDF-documenten.
+1. Referentie-invoer PDF-documenten.
 
-   * Maak voor elk invoer-PDF-document een `BLOB`-object met behulp van de constructor. Met het object `BLOB` wordt het invoer-PDF-document opgeslagen.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoer-PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Dit verzamelobject wordt gebruikt om invoer-PDF-documenten op te slaan.
-   * Maak voor elk invoer-PDF-document een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Als bijvoorbeeld twee invoer-PDF-documenten worden gebruikt, maakt u twee `MyMapOf_xsd_string_To_xsd_anyType_Item`-objecten.
-   * Wijs een tekenreekswaarde toe die de toetsnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoer-PDF-document.)
-   * Wijs het `BLOB`-object toe dat het PDF-document opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object. (Voer deze taak uit voor elk invoer-PDF-document.)
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` van het object `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door. (Voer deze taak uit voor elk invoer-PDF-document.)
+   * Maak voor elk invoerdocument een PDF `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het invoerdocument PDF op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerdocument PDF en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om invoer-PDF-documenten op te slaan.
+   * Maak voor elk invoerdocument een PDF `MyMapOf_xsd_string_To_xsd_anyType_Item` object. Als bijvoorbeeld twee invoerdocumenten PDF worden gebruikt, maakt u twee invoerdocumenten `MyMapOf_xsd_string_To_xsd_anyType_Item` objecten.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerdocument van de PDF.)
+   * Wijs het `BLOB` object waarin het PDF-document is opgeslagen in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld. (Voer deze taak uit voor elk invoerdocument van de PDF.)
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object. (Voer deze taak uit voor elk invoerdocument van de PDF.)
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs `false` aan `AssemblerOptionSpec` het gegevenslid van `failOnError` van het voorwerp toe.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
-1. Stel de invoer-PDF-documenten samen.
+1. Stel de invoerdocumenten PDF samen.
 
-   Roep de methode `invoke` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invoke` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt.
-   * De array `mapItem` die de invoer-PDF-documenten bevat. De sleutels moeten overeenkomen met de namen van de PDF-bronbestanden en de waarden ervan moeten de `BLOB`-objecten zijn die overeenkomen met die bestanden.
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft.
+   * A `BLOB` object dat het DDX-document vertegenwoordigt.
+   * De `mapItem` -array die de invoerdocumenten PDF bevat. Zijn sleutels moeten de namen van de PDF brondossiers aanpassen, en zijn waarden moeten zijn `BLOB` objecten die overeenkomen met die bestanden.
+   * An `AssemblerOptionSpec` -object dat uitvoeringsopties opgeeft.
 
-   De methode `invoke` retourneert een `AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invoke` methode retourneert een `AssemblerResult` -object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Extraheer de resultaten.
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de PDF-documenten van het resultaat bevat.
-   * Doorloop het object `Map` totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet `value` van dat serielid aan `BLOB`.
-   * Pak de binaire gegevens die het PDF-document vertegenwoordigen uit door de eigenschap `MTOM` van het object `BLOB` te openen. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
+   * Doorlopen `Map` -object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 
    >[!NOTE]
    >
-   >Als `LOG_LEVEL` is ingesteld om een logbestand te maken, kunt u het logbestand extraheren door de waarde van het `AssemblerResult`-gegevenslid van het object `jobLog` op te halen.
+   >Indien `LOG_LEVEL` is ingesteld om een logboek te maken, kunt u het logboek extraheren door de waarde van het `AssemblerResult` object `jobLog` lid.
 
 **Zie ook**
 

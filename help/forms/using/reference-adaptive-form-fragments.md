@@ -1,7 +1,7 @@
 ---
 title: Referentie adaptieve formulierfragmenten
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken. '
+description: AEM Forms biedt adaptieve formulierfragmenten die u kunt gebruiken als elementen om snel een formulier te maken.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: 85401274-6691-4726-8b70-b93fd46de053
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # Referentie adaptieve formulierfragmenten{#reference-adaptive-form-fragments}
 
-[Aangepast formulier ](../../forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
+[Adaptief formulierfragment](../../forms/using/adaptive-form-fragments.md) Dit is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
 
-Voor auteurs van adaptieve formulieren staan referentiefragmenten in het [AEM Forms-invoegpakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Het bevat de volgende fragmenten:
+Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in de [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Het bevat de volgende fragmenten:
 
 * Adres
 * Contactgegevens
@@ -33,7 +33,7 @@ Voor auteurs van adaptieve formulieren staan referentiefragmenten in het [AEM Fo
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
 
 ![Alle fragmenten weergegeven](assets/ootb-frags.png)
 

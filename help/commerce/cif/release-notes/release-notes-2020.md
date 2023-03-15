@@ -15,9 +15,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.6.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.6.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia Reference Site | 2020 12 01 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF-aansluiting | 1.6.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.6.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Venia Reference Site | 2020.12.01 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw? {#what-is-new-november}
 
@@ -37,9 +37,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.5.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.5.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia Reference Site | 2020 10 27 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF-aansluiting | 1.5.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.5.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Venia Reference Site | 2020.10.27 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw? {#what-is-new-october}
 
@@ -55,9 +55,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.4.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.4.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia Reference Site | 2020,10,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF-aansluiting | 1.4.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.4.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Venia Reference Site | 2020.10.2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw? {#what-is-new-september}
 
@@ -81,9 +81,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.3.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.3.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia Reference Site | 2020,9,2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF-aansluiting | 1.3.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.3.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Venia Reference Site | 2020.9.2 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw? {#what-is-new-august}
 
@@ -105,9 +105,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.2.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.2.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia Reference Site | 2020,8,14 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF-aansluiting | 1.2.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.2.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Venia Reference Site | 2020.8.14 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Wat is er nieuw? {#what-is-new-july}
 
@@ -131,9 +131,9 @@ ht-degree: 9%
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.1.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.1.1. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.11.0. | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 1.1.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.1.1 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.11.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-june}
 
@@ -159,9 +159,9 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 1.0.0. | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 1.0.0. | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0.11.0. | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 1.0.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 1.0.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.11.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-may}
 
@@ -183,9 +183,9 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,10,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,10,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,10,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.10.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.10.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.10.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-april}
 
@@ -207,9 +207,9 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,9,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,9,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,9,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.9.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.9.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.9.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-february}
 
@@ -233,9 +233,9 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
-| CIF-aansluiting | 0,8,0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF Core-componenten | 0,8,0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Archetype | 0,7,0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| CIF-aansluiting | 0.8.0 | [Releaseopmerkingen](https://github.com/adobe/commerce-cif-connector/releases) |
+| CIF Core-componenten | 0.8.0 | [Releaseopmerkingen](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF Archetype | 0.7.0 | [Releaseopmerkingen](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Wat is er nieuw? {#what-is-new-january}
 

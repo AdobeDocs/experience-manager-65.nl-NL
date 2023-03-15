@@ -1,14 +1,13 @@
 ---
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
-translation-type: tm+mt
-source-git-commit: c3f85314740c4e9ca8ed0c9a724b49ff4276616a
+exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 98%
 
 ---
-
 
 # Asynchrone bewerkingen {#asynchronous-operations}
 
@@ -92,7 +91,7 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 U kunt configureren wat het maximum aantal assets, pagina’s of verwijzingen voor AEM is om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen over de verwerking van taken in en uit te schakelen.
 
-### Asynchrone verwijderingsbewerkingen van assets configureren{#configuring-synchronous-delete-operations}
+### Asynchrone verwijderingsbewerkingen van assets configureren {#configuring-synchronous-delete-operations}
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
@@ -105,7 +104,7 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van assets configureren{#configuring-asynchronous-move-operations}
+### Asynchrone verplaatsingsbewerkingen van assets configureren {#configuring-asynchronous-move-operations}
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
@@ -118,7 +117,7 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van pagina’s configureren{#configuring-asynchronous-page-move-operations}
+### Asynchrone verplaatsingsbewerkingen van pagina’s configureren {#configuring-asynchronous-page-move-operations}
 
 Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 
@@ -146,7 +145,7 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 >* [Pagina&#39;s maken en indelen](/help/sites-authoring/managing-pages.md)
 >* [Actieve kopieën maken en synchroniseren](/help/sites-administering/msm-livecopy.md)
 >* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
->* [Metagegevens](/help/assets/metadata.md#import-metadata) van elementen importeren.
->* [Metagegevens](/help/assets/metadata.md#export-metadata) van elementen exporteren.
+>* [Metagegevens van elementen importeren](/help/assets/metadata.md#import-metadata).
+>* [Metagegevens van elementen exporteren](/help/assets/metadata.md#export-metadata).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).
 

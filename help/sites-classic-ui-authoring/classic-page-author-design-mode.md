@@ -1,8 +1,8 @@
 ---
 title: Componenten configureren in ontwerpmodus
-seo-title: Componenten configureren in ontwerpmodus
+seo-title: Configuring Components in Design Mode
 description: Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen.
-seo-description: Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,24 +10,23 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-translation-type: tm+mt
-source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
-
 
 # Componenten configureren in ontwerpmodus{#configuring-components-in-design-mode}
 
 Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick.
 
-Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de wijze van het Ontwerp aan [toelaten/onbruikbaar maken dergelijke componenten](#enabledisablecomponentsusingdesignmode) gebruiken. Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om aspecten van het componentenontwerp [te vormen](#configuringcomponentsusingdesignmode) door de attributenparameters uit te geven.
+Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om [Dergelijke componenten in-/uitschakelen](#enabledisablecomponentsusingdesignmode). Als deze optie is ingeschakeld en zich op de pagina bevindt, kunt u de ontwerpmodus gebruiken om [aspecten van het componentontwerp configureren](#configuringcomponentsusingdesignmode) door de kenmerkparameters te bewerken.
 
 >[!NOTE]
 >
->Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website en moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden (en ervaring), vaak een beheerder of ontwikkelaar. Zie [Componenten ontwikkelen](/help/sites-developing/components.md) voor meer informatie.
+>Bij het bewerken van deze componenten moet de nodige voorzichtigheid worden betracht. De ontwerpinstellingen vormen vaak een integraal onderdeel van het ontwerp van de gehele website en moeten daarom alleen worden gewijzigd door iemand met de juiste bevoegdheden (en ervaring), vaak een beheerder of ontwikkelaar. Zie [Componenten ontwikkelen](/help/sites-developing/components.md) voor meer informatie .
 
 Hierbij worden in feite de onderdelen toegevoegd of verwijderd die in het alineasysteem voor de pagina zijn toegestaan. Het alineasysteem ( `parsys`) is een samengestelde component die alle andere alineacomponenten bevat. Met het alineasysteem kunnen auteurs componenten van verschillende typen aan een pagina toevoegen omdat deze alle andere alineacomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component.
 
@@ -42,7 +41,7 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 >
 >Zie [Componenten ontwikkelen](/help/sites-developing/components.md#paragraphsystem) en [Richtlijnen voor het gebruik van sjablonen en componenten](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) voor meer informatie over `parsys`.
 
-## Componenten {#enable-disable-components} inschakelen/uitschakelen
+## Componenten in-/uitschakelen {#enable-disable-components}
 
 In de ontwerpmodus wordt het hulpprogramma geminimaliseerd en kunt u de componenten configureren die toegankelijk zijn voor ontwerpen:
 
@@ -50,7 +49,7 @@ In de ontwerpmodus wordt het hulpprogramma geminimaliseerd en kunt u de componen
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Klik op **Bewerken** op het alineasysteem (**Ontwerp van par**).
+1. Klikken **Bewerken** over het alineasysteem (**Ontwerp van onderdeel**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -64,9 +63,9 @@ In de ontwerpmodus wordt het hulpprogramma geminimaliseerd en kunt u de componen
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Het vormen van het Ontwerp van een Component {#configuring-the-design-of-a-component}
+## Het ontwerp van een component configureren {#configuring-the-design-of-a-component}
 
-In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke componenten. Elke component heeft zijn eigen parameters, toont het volgende voorbeeld **Image** component:
+In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke componenten. Elke component heeft zijn eigen parameters, toont het volgende voorbeeld **Afbeelding** component:
 
 1. Als u de ontwerpmodus wilt activeren, opent u een pagina die u wilt bewerken en gebruikt u het pictogram Sidetrap:
 
@@ -74,11 +73,11 @@ In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke compo
 
 1. U kunt het ontwerp van componenten configureren.
 
-   Als u bijvoorbeeld **Edit** op de component Image (**Design of image**) klikt, kunt u de componentspecifieke parameters configureren:
+   Als u bijvoorbeeld op **Bewerken** op de component Image (**Ontwerp van afbeelding**) kunt u de componentspecifieke parameters configureren:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-1. Klik **OK** om uw wijzigingen op te slaan.
+1. Klikken **OK** om uw wijzigingen op te slaan.
 
 1. In de ontwerpmodus wordt de Sidetrap geminimaliseerd. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
 

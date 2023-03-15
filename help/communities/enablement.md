@@ -1,8 +1,8 @@
 ---
 title: Functies van Enablement configureren
-seo-title: Functies van Enablement configureren
+seo-title: Configuring Enablement Features
 description: Functies voor activering configureren in Gemeenschappen
-seo-description: Functies voor activering configureren in Gemeenschappen
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De functies voor activering bieden de mogelijkheid [enablement Communities](overview.md#enablement-community) te maken.
+De functies voor activering bieden de mogelijkheid om [gemeenschappen](overview.md#enablement-community).
 
 * Deze functie vereist extra licenties voor gebruik in een productieomgeving.
 
@@ -40,13 +40,13 @@ Installatie van:
 
 * **FFmpeg**
 
-   mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [Video Assets](../../help/sites-authoring/default-components-foundation.md#video). Voor gemeenschappen van activering wordt deze methode in de auteursomgeving gebruikt om metagegevens voor geüploade bronnen op te halen en om een miniatuur te genereren die wordt weergegeven wanneer de bron wordt vermeld.
+   mpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor de juiste transcodering van [Video-elementen](../../help/sites-authoring/default-components-foundation.md#video). Voor gemeenschappen van activering wordt deze methode in de auteursomgeving gebruikt om metagegevens voor geüploade bronnen op te halen en om een miniatuur te genereren die wordt weergegeven wanneer de bron wordt vermeld.
 
 Instellen van:
 
 * **Community-managers**
 
-   Voor gemeenschappen van enablement, slechts kunnen de leden van de `Community Enablement Managers` gebruikersgroep de rol van `Community Site Enablement Manager` worden toegewezen, de waarvan toestemmingen inhoudsverwezenlijking, taken, en lidbeheer in het publiceren milieu kunnen omvatten.
+   Alleen leden van de `Community Enablement Managers` aan een gebruikersgroep kan de rol van `Community Site Enablement Manager`, waarvan de machtigingen het maken van inhoud, toewijzingen en lidbeheer in de publicatieomgeving kunnen omvatten.
 
 Optionele configuratie van:
 
@@ -68,7 +68,7 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
    Webconsole gebruiken (bundels): *http://localhost:4502/system/console/bundles*
 
-   *installeren voor* SCORM-pakket installeren
+   Installeren *voor* SCORM-pakket installeren
 
 1. **[SCORM-pakket installeren](deploy-communities.md#scorm-package)**
 
@@ -130,4 +130,4 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 ## Dispatcher {#dispatcher}
 
-Wanneer de implementatie [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) bevat, moeten de secties `clientheader` en `filter` worden gewijzigd om de schakelingsfuncties naar behoren te laten werken. Zie [Dispatcher configureren voor Communities](dispatcher.md#enablement).
+Wanneer de implementatie [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), zodat de schakelfuncties naar behoren werken, `clientheader` en `filter` secties moeten worden gewijzigd. Zie [Dispatcher configureren voor Gemeenschappen](dispatcher.md#enablement).

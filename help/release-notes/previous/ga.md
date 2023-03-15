@@ -1,6 +1,6 @@
 ---
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
-description: '"[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."'
+description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | Product | [!DNL Adobe Experience Manager] |
 |---|---|
-| Versie | 6,5 |
+| Versie | 6.5 |
 | Type | Grote release |
 | Algemene beschikbaarheidsdatum | 8 april 2019 |
 | Aanbevolen updates | Zie [Recente updates AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en). |

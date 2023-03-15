@@ -1,26 +1,25 @@
 ---
 title: Beschrijving van herbruikbare onderdelen
-seo-title: Beschrijving van herbruikbare onderdelen
+seo-title: Description of reusable components
 description: Een volledige lijst met herbruikbare componenten met bestandsnamen en afhankelijkheden, waarmee u de AEM Forms-werkruimtecomponent kunt integreren in uw webtoepassingen.
-seo-description: Een volledige lijst met herbruikbare componenten met bestandsnamen en afhankelijkheden, waarmee u de AEM Forms-werkruimtecomponent kunt integreren in uw webtoepassingen.
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1231'
 ht-degree: 6%
 
 ---
 
+# Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
 
-# Beschrijving van herbruikbare componenten {#description-of-reusable-components}
-
-De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [omslagstructuur](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+De werkruimte van AEM Forms bestaat uit [herbruikbaar](/help/forms/using/integrating-html-ws-components-web.md) onderdelen die in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 
@@ -186,7 +185,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
  </tbody>
 </table>
 
-## Teamwachtrijen {#teamqueues}
+## TeamQueues {#teamqueues}
 
 <table>
  <tbody>
@@ -660,7 +659,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
 
 >[!NOTE]
 >
->ProcessInstanceList verwacht een gebeurtenis van ProcessNameList die de procesnaam voor het halen en tonen van instanties wijst. Als u ProcessInstanceList onafhankelijk wilt gebruiken, moet u de gebeurtenistrigger afzonderlijk simuleren.
+>ProcessInstanceList verwacht een gebeurtenis van ProcessNameList die de procesnaam voor het ophalen en weergeven van instanties wijst. Als u ProcessInstanceList onafhankelijk wilt gebruiken, moet u de gebeurtenistrigger afzonderlijk simuleren.
 
 ## ProcessInstance {#processinstance}
 
@@ -925,7 +924,7 @@ De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integra
    <td>
     <ul>
      <li>userImageUrlFetched - userinfo model</li>
-     <li>sessionRenewed - userinfo model <br /> </li>
+     <li>sessionRenewed - gebruikersinformatiemodel <br /> </li>
      <li>sessionExpired - gebruikersinformatiemodel </li>
     </ul> </td>
   </tr>

@@ -1,8 +1,8 @@
 ---
 title: Essentiële elementen activiteitsstroom
-seo-title: Essentiële elementen activiteitsstroom
+seo-title: Activity Stream Essentials
 description: Lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud worden uitgevoerd
-seo-description: Lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud worden uitgevoerd
+seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,14 +10,13 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
-translation-type: tm+mt
-source-git-commit: c897f034edbdbeee74869165ed384c3408a857e0
+exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
-
 
 # Essentiële elementen activiteitsstroom {#activity-stream-essentials}
 
@@ -25,19 +24,19 @@ De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan
 
 De mogelijkheid om te volgen voegt nog een reeks activiteiten toe wanneer leden van de gemeenschap belangenverklaringen of andere leden van de gemeenschap volgen.
 
-Alle [communitysites](/help/communities/overview.md#communitiessites) bevatten een gebruikersprofielpagina voor het ondertekende lid dat lidactiviteiten op dezelfde manier zal tonen.
+Alles [communitysites](/help/communities/overview.md#communitiessites) Neem een gebruikersprofielpagina op voor het aangemelde lid dat de activiteiten van leden op dezelfde manier weergeeft.
 
 ## Concepten {#concepts}
 
-Een *activiteitsstroom* is de lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forumonderwerp of blog worden uitgevoerd.
+An *activiteitsstroom* is de lijst van recente activiteiten die door een lid worden uitgevoerd of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forum onderwerp of blog.
 
 Een lid kan een activiteitenstroom volgen, door of een ander individu of inhoud te volgen.
 
-Een *nieuwsfeed* is een samenvoeging van de activiteitenstromen die door een lid in één enkele stroom worden gevolgd.
+A *nieuwsfeed* is een samenvoeging van de activiteitsstromen die door een lid in één enkele stroom worden gevolgd.
 
-A *[social graph](/help/communities/essentials-socialgraph.md)* vangt de volgende verhoudingen van één lid aan een andere.
+A *[sociale grafiek](/help/communities/essentials-socialgraph.md)* vangt de volgende verhoudingen van één lid aan een andere.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -80,4 +79,4 @@ A *[social graph](/help/communities/essentials-socialgraph.md)* vangt de volgend
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-Een community-sitestructuur die de [Activiteitenstroomfunctie](/help/communities/functions.md#activity-stream-function) bevat, bevat een geconfigureerde `activity streams`-component.
+Een community-sitestructuur die de [Activiteitenstroomfunctie](/help/communities/functions.md#activity-stream-function)bevat een configuratie `activity streams` component.

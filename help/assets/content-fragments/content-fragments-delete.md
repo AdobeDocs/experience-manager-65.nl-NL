@@ -3,10 +3,11 @@ title: Contentfragmenten - Overwegingen verwijderen
 description: Herzie deze belangrijke overwegingen alvorens uw beleid van de schrapping van de Fragmenten van de Inhoud in AEM te bepalen. Inhoudsfragmenten zijn een krachtig hulpmiddel voor het afleveren van inhoud zonder kop en de gevolgen van het verwijderen ervan moeten zorgvuldig worden overwogen.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 6212457e-a171-4c33-8d19-54c26516e981
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '509'
+ht-degree: 9%
 
 ---
 
@@ -22,23 +23,23 @@ Met betrekking tot schrappingstoestemmingen, moeten de Fragmenten van de Inhoud 
 
 1. **Het inhoudsfragment als één entiteit.**
 
-   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **en een volledig fragment** moet verwijderen.
-   * **Machtigingen**: De  [](/help/sites-administering/security.md#actions) machtiging Verwijderen kan worden  [toegewezen via Gebruiker en/of Groepsbeheer](/help/sites-administering/security.md#managing-permissions).
+   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **en verwijder een volledig fragment**.
+   * **Machtigingen**: De [Verwijderen](/help/sites-administering/security.md#actions) toestemming kan [toegewezen via gebruikers- en/of groepsbeheer](/help/sites-administering/security.md#managing-permissions).
 
 2. **De meerdere subentiteiten waaruit een inhoudsfragment bestaat; bijvoorbeeld variaties, subknooppunten.**
 
    De basiswerking van de inhoudfragment-editor vereist dat dergelijke tijdelijke subelementen kunnen worden verwijderd. Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
-   * **Hoofdlettergebruik**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken -  **zonder dat het is toegestaan een volledig fragment** te verwijderen.
-   * **Machtigingen**: Zie  [Machtigingen vereist voor alleen](#permissions-required-for-editor-functionality-only) bewerkingsfunctionaliteit.
+   * **Hoofdletters gebruiken**: Een gebruiker die een inhoudsfragment moet bewerken/bijwerken - **zonder dat het is toegestaan een volledig fragment te verwijderen**.
+   * **Machtigingen**: Zie [Machtigingen alleen vereist voor Editor-functionaliteit](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
 >
->Wanneer een gebruiker geen [Delete](/help/sites-administering/security.md#actions) toestemmingen heeft, werkt de redacteur van het Fragment van de Inhoud op *read-only* wijze.
+>Wanneer een gebruiker geen [Verwijderen](/help/sites-administering/security.md#actions) machtigingen, de Content Fragment-editor werkt in *alleen-lezen* in.
 
 >[!NOTE]
 >
->Zie ook [Gebruikersbeheerbewerkingen in AEM](/help/sites-administering/audit-user-management-operations.md) controleren.
+>Zie ook [Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren](/help/sites-administering/audit-user-management-operations.md).
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
@@ -48,7 +49,7 @@ Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metageg
 
 >[!NOTE]
 >
->De verwijdermachtigingen, die vereist zijn om een inhoudsfragment te bewerken/bij te werken, worden opgenomen in de machtiging [Verwijderen die is toegewezen via Gebruiker en/of Groepsbeheer](/help/sites-administering/security.md#managing-permissions).
+>De machtigingen voor verwijderen die vereist zijn om een inhoudsfragment te bewerken/bij te werken, worden opgenomen in de machtiging Verwijderen [toegewezen via gebruikers- en/of groepsbeheer](/help/sites-administering/security.md#managing-permissions).
 
 De machtigingen die nodig zijn om een fragment te bewerken/bij te werken, moeten worden toegepast op het knooppunt met het inhoudsfragment of op een geschikt bovenliggend knooppunt (op elk niveau onder `/content/dam`). Wanneer toegewezen aan een dergelijk bovenliggend knooppunt, worden de machtigingen toegepast op alle knooppunten in die vertakking.
 
@@ -58,9 +59,9 @@ Bijvoorbeeld een map die alle inhoudsfragmenten bevat, zoals:
 
 >[!CAUTION]
 >
->Het is ook mogelijk de machtigingen voor `/content/dam` in te stellen, aangezien alle inhoudsfragmenten hier worden opgeslagen.
+>Machtigingen instellen op `/content/dam` is ook mogelijk, omdat alle inhoudsfragmenten hier worden opgeslagen.
 >
->Met deze handeling worden echter dezelfde verwijdermachtigingen ook toegepast op andere elementtypen *all*.
+>Deze handeling past echter dezelfde verwijdermachtigingen toe op *alles* ook andere soorten activa.
 
 U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruiker en/of groep de volgende machtigingen heeft:
 
@@ -72,18 +73,18 @@ U kunt een inhoudsfragment alleen bewerken/bijwerken als een specifieke gebruike
 
    * `jcr:addChildNodes`, `jcr:modifyProperties`
 
-* Voor het `jcr:content`knooppunt van alle inhoudsfragmenten:
+* Voor de `jcr:content`knooppunt van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`,  `jcr:modifyProperties` en  `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`
 
-* Voor alle knooppunten onder `jcr:content` van alle inhoudsfragmenten:
+* Voor alle onderstaande knooppunten `jcr:content` van alle inhoudsfragmenten:
 
-   * `jcr:addChildNodes`,  `jcr:modifyProperties` en  `jcr:removeChildNodes`,  `jcr:removeNode`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` en `jcr:removeChildNodes`, `jcr:removeNode`
 
-Deze `remove` voorrechten moeten [worden beheerd gebruikend de Lijsten van het Toegangsbeheer, binnen CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Deze `remove` rechten moeten [beheerd met behulp van Access Control Lists, binnen CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-De `add` en `modify` voorrechten kunnen ook in CRXDE Lite worden beheerd, of het gebruiken van de console van het Beheer van de Gebruiker.
+De `add` en `modify` U kunt ook rechten beheren in CRXDE Lite of via de gebruikersbeheerconsole.
 
-Bijvoorbeeld, de definitie van `remove` voorrechten voor een groep `content-authors-no-delete`:
+De definitie van bijvoorbeeld `remove` rechten voor een groep `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

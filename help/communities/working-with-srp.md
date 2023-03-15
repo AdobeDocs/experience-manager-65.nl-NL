@@ -1,8 +1,8 @@
 ---
 title: SRP - Opslag van communautaire inhoud
-seo-title: SRP - Opslag van communautaire inhoud
+seo-title: SRP - Community Content Storage
 description: Vanaf AEM Communities 6.1 wordt door de gebruiker gegenereerde inhoud (UGC) opgeslagen in één gemeenschappelijke opslagplaats die wordt geleverd door een opslagprovider (SRP)
-seo-description: Vanaf AEM Communities 6.1 wordt door de gebruiker gegenereerde inhoud (UGC) opgeslagen in één gemeenschappelijke opslagplaats die wordt geleverd door een opslagprovider (SRP)
+seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
 uuid: d45e03c4-378b-4510-a6a0-d48c8cb879d9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -27,19 +27,19 @@ Vanaf AEM Communities 6.1 wordt door de gebruiker gegenereerde inhoud (UGC) opge
 
 In tegenstelling tot vroegere versies, is er geen omgekeerde/voorwaartse replicatie van UGC over AEM instanties. In plaats daarvan maakt SRP UGC direct toegankelijk voor creeer, lees, update, en schrapt (CRUD) verrichtingen van alle auteur en publiceer instanties, met een uitzondering voor JSRP.
 
-Hieronder volgen de [kenmerken van elke SRP-optie](#characteristics-of-srp-options). Dit is cruciale informatie voor het besluitvormingsproces bij het kiezen van de juiste SRP en [onderliggende implementatie](/help/communities/topologies.md).
+Hieronder vindt u [kenmerken van elke SRP-optie](#characteristics-of-srp-options), die van cruciaal belang is voor het besluitvormingsproces bij de keuze van het passende SRP en [onderliggende implementatie](/help/communities/topologies.md).
 
-Voor details betreffende het gebruik van SRP voor UGC, zie [Overzicht van de Leverancier van het Middel van de Opslag](/help/communities/srp.md).
+Voor details betreffende het gebruik van SRP voor UGC, zie [Overzicht opslagbronprovider](/help/communities/srp.md).
 
 >[!NOTE]
 >
->SRP is slechts op communautaire inhoud van toepassing. Het heeft geen invloed op de opslaglocatie van de site-inhoud ([knooppuntoverslag](/help/sites-deploying/data-store-config.md)) en heeft geen invloed op de veilige verwerking van gebruikersregistratie, gebruikersprofielen en gebruikersgroepen tussen AEM instanties (zie ook [Gebruikersgegevens beheren](#managing-user-data)).
+>SRP is slechts op communautaire inhoud van toepassing. Het heeft geen invloed op de opslaglocatie van de site ([knooppuntopslag](/help/sites-deploying/data-store-config.md)) en heeft geen invloed op de veilige verwerking van gebruikersregistratie, gebruikersprofielen en gebruikersgroepen tussen AEM instanties (zie ook [Gebruikersgegevens beheren](#managing-user-data)).
 
 >[!CAUTION]
 >
->Vanaf AEM 6.1 wordt [UGC nooit gerepliceerd](#ugc-never-replicated).
+>Vanaf AEM 6.1 [UGC wordt nooit gerepliceerd](#ugc-never-replicated).
 >
->Wanneer de plaatsing geen gemeenschappelijke opslag, zoals het gebrek [JSRP](/help/communities/topologies.md#jsrp) topologie omvat, zal UGC slechts op AEM publiceren of auteursinstantie zichtbaar zijn waarop het was ingegaan. Alleen als de topologie een publicatiecluster bevat, is de UGC zichtbaar op elke publicatieinstantie.
+>Wanneer de plaatsing geen gemeenschappelijke opslag, zoals het gebrek omvat [JSRP](/help/communities/topologies.md#jsrp) topologie, zal UGC slechts op AEM publiceren of auteursinstantie zichtbaar zijn waarop het was ingegaan. Alleen als de topologie een publicatiecluster bevat, is de UGC zichtbaar op elke publicatieinstantie.
 
 ## Kenmerken van SRP-opties {#characteristics-of-srp-options}
 
@@ -75,7 +75,7 @@ ASRP is geschikt:
 
 * Voor bestaande TarMK publiceert landbouwbedrijf.
 * Voor een MongoMK- of RdbMK-cluster.
-* Wanneer er grote hoeveelheden community-inhoud wordt verwacht.
+* Wanneer er grote hoeveelheden community-inhoud worden verwacht.
 
 [DSRP - Relational Database Storage Resource Provider](/help/communities/dsrp.md)
 
@@ -91,7 +91,7 @@ DSRP is geschikt:
 
 * Voor bestaande TarMK publiceert landbouwbedrijf.
 * Voor een MongoMK- of RdbMK-cluster.
-* Wanneer er grote hoeveelheden community-inhoud wordt verwacht.
+* Wanneer er grote hoeveelheden community-inhoud worden verwacht.
 
 [JSRP - JCR Storage Resource Provider](/help/communities/jsrp.md)
 
@@ -107,7 +107,7 @@ JSRP:
 
 ## SRP configureren {#configuring-srp}
 
-De standaardopslagoptie specificeren, die op de onderliggende plaatsing wordt gebaseerd, wordt gemaakt door [de console van de Configuratie van de Opslag](/help/communities/srp-config.md).
+Het specificeren van de standaard opslagoptie, die op de onderliggende plaatsing wordt gebaseerd, wordt gemaakt door [Opslagconfiguratieconsole](/help/communities/srp-config.md).
 
 Voor configuratiedetails van elke optie, zie:
 
@@ -132,12 +132,12 @@ Terwijl site-inhoud wordt gerepliceerd, wordt UGC nooit gerepliceerd.
 
 ### Gebruikersgegevens beheren {#managing-user-data}
 
-Ook van belang voor CommunityIes zijn [*gebruikers*, *gebruikersgroepen*, en *gebruikersprofielen*](/help/communities/users.md). Deze op gebruiker betrekking hebbende gegevens, wanneer gecreeerd en bijgewerkt in publicatiemilieu, moeten aan andere publicatieinstanties ter beschikking worden gesteld wanneer de topologie [publicerend landbouwbedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm) is.
+Ook van belang voor de Gemeenschap [*gebruikers*, *gebruikersgroepen*, en *gebruikersprofielen*](/help/communities/users.md). Deze op gebruiker betrekking hebbende gegevens, wanneer gecreeerd en bijgewerkt in publicatiemilieu, moeten ter beschikking worden gesteld aan andere publicatieinstanties wanneer de topologie een is [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
-Vanaf AEM Communities 6.1 worden gebruikersgerelateerde gegevens gesynchroniseerd met behulp van Verschuivende distributie in plaats van replicatie. Voor meer informatie, surf naar [Gebruikerssynchronisatie](/help/communities/sync.md).
+Vanaf AEM Communities 6.1 worden gebruikersgerelateerde gegevens gesynchroniseerd met behulp van Verschuivende distributie in plaats van replicatie. Ga voor meer informatie naar [Gebruikerssynchronisatie](/help/communities/sync.md).
 
 ### Upgrade uitvoeren naar AEM Communities 6.5 {#upgrading-to-aem-communities}
 
 Als bij de upgrade naar AEM 6.5-gemeenschappen de reeds bestaande UGC moet worden gehandhaafd, moeten stappen worden gezet afhankelijk van het feit of de AEM 5.6.1- of AEM 6.0-gemeenschap gebruikmaakte van Adobe-opslag op aanvraag of opslag op locatie van UGC.
 
-Voor meer informatie gaat u naar [Upgraden naar AEM Communities 6.5](/help/communities/upgrade.md).
+Ga voor meer informatie naar [Upgrade uitvoeren naar AEM Communities 6.5](/help/communities/upgrade.md).

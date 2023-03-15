@@ -1,22 +1,21 @@
 ---
 title: Standaardvalidatiefoutenberichten voor adaptieve formulieren
-seo-title: Standaardvalidatiefoutenberichten voor adaptieve formulieren
+seo-title: Standard validation error messages for adaptive forms
 description: Transformeer de foutberichten voor validatie van adaptieve formulieren naar de standaardnotatie met behulp van aangepaste fouthandlers
-seo-description: Transformeer de foutberichten voor validatie van adaptieve formulieren naar de standaardnotatie met behulp van aangepaste fouthandlers
+seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
 uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
 contentOwner: anujkapo
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
-
 
 # Standaardvalidatiefoutenberichten voor adaptieve formulieren {#standard-validation-error-messages}
 
@@ -59,25 +58,25 @@ Waar:
 * `originCode` bevat de foutcode die door de externe service wordt geretourneerd
 * `originMessage` bevat de onbewerkte foutgegevens die door de externe service worden geretourneerd
 
-## Aangepaste formulierverzending configureren om aangepaste handlers {#configure-adaptive-form-submission} toe te voegen
+## Aangepaste formulierverzending configureren om aangepaste handlers toe te voegen {#configure-adaptive-form-submission}
 
 Als het foutbericht voor servervalidatie niet in de standaardindeling wordt weergegeven, kunt u asynchrone verzending inschakelen en een aangepaste fouthandler toevoegen bij het verzenden van het formulier om het bericht om te zetten in een standaardindeling.
 
-### Asynchrone adaptieve formulierverzending {#configure-asynchronous-adaptive-form-submission} configureren
+### Asynchrone adaptieve formulierverzending configureren {#configure-asynchronous-adaptive-form-submission}
 
 Voordat u een aangepaste handler toevoegt, moet u het adaptieve formulier configureren voor asynchrone verzending. Voer de volgende stappen uit:
 
-1. Selecteer in de modus Aangepast formulier het object Form Container en tik op ![Aangepaste formuliereigenschappen](assets/configure_icon.png) om de eigenschappen ervan te openen.
-1. Schakel in de sectie **[!UICONTROL Submission]** eigenschappen **[!UICONTROL Use asynchronous submission]** in.
-1. Selecteer **[!UICONTROL Revalidate on server]** om de waarden van de invoervelden op de server vóór verzending te valideren.
+1. Selecteer in de modus Aangepast formulier voor het schrijven van programmacode het object Form Container en tik op ![adaptieve formuliereigenschappen](assets/configure_icon.png) om de eigenschappen te openen.
+1. In de **[!UICONTROL Submission]** eigenschappensectie, inschakelen **[!UICONTROL Use asynchronous submission]**.
+1. Selecteren **[!UICONTROL Revalidate on server]** om de waarden van de invoervelden op de server vóór verzending te valideren.
 1. Selecteer de handeling Verzenden:
 
-   * Selecteer **[!UICONTROL Submit using Form Data Model]** en selecteer het juiste gegevensmodel als u RESTful-webservice gebruikt op basis van [formuliergegevensmodel](work-with-form-data-model.md) als gegevensbron.
-   * Selecteer **[!UICONTROL Submit to REST endpoint]** en geef **[!UICONTROL Redirect URL/Path]** op als u RESTful-webservices als gegevensbron gebruikt.
+   * Selecteren **[!UICONTROL Submit using Form Data Model]** en selecteer het juiste gegevensmodel als u RESTful-webservice gebruikt [formuliergegevensmodel](work-with-form-data-model.md) als gegevensbron.
+   * Selecteren **[!UICONTROL Submit to REST endpoint]** en de **[!UICONTROL Redirect URL/Path]**, als u RESTful Webdiensten als gegevensbron gebruikt.
 
    ![adaptieve eigenschappen voor formulierverzending](assets/af_submission_properties.png)
 
-1. Tik ![Opslaan](assets/save_icon.png) om de eigenschappen op te slaan.
+1. Tikken ![Opslaan](assets/save_icon.png) om de eigenschappen op te slaan.
 
 ### Aangepaste fouthandler toevoegen bij het verzenden van aangepaste formulieren {#add-custom-error-handler-af-submission}
 
@@ -85,10 +84,10 @@ AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden va
 
 Voer de volgende stappen uit om aangepaste fouthandler toe te voegen bij het verzenden van aangepaste formulieren:
 
-1. Open het aangepaste formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en tik <!--![Rule Editor](assets/af_edit_rules.png)--> om de regeleditor te openen.
-1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en tik **[!UICONTROL Create]**.
-1. Selecteer **[!UICONTROL Error in Submission]** in de vervolgkeuzelijst Gebeurtenis.
-1. Schrijf een regel om de aangepaste foutstructuur om te zetten in de standaardfoutstructuur en tik **[!UICONTROL Done]** om de regel op te slaan.
+1. Open het adaptieve formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en tik op <!--![Rule Editor](assets/af_edit_rules.png)--> om de regeleditor te openen.
+1. Selecteren **[!UICONTROL Form]** in de structuur Formulierobjecten en tik op **[!UICONTROL Create]**.
+1. Selecteren **[!UICONTROL Error in Submission]** in de vervolgkeuzelijst Gebeurtenis.
+1. Schrijf een regel om de aangepaste foutstructuur om te zetten in de standaardfoutstructuur en tik op **[!UICONTROL Done]** om de regel op te slaan.
 
 Hieronder volgt een voorbeeldcode voor het omzetten van een aangepaste foutstructuur in de standaardfoutstructuur:
 
@@ -130,23 +129,23 @@ if (data) {
 }
 ```
 
-In `var som_map` wordt de SOM-expressie weergegeven van de adaptieve formuliervelden die u in de standaardindeling wilt omzetten. U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en **[!UICONTROL View SOM Expression]** te selecteren.
+De `var som_map` Hiermee geeft u de SOM-expressie weer van de adaptieve formuliervelden die u wilt transformeren in de standaardindeling. U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en **[!UICONTROL View SOM Expression]**.
 
-Met behulp van deze aangepaste fouthandler converteert het aangepaste formulier de velden in `var som_map` naar de standaardindeling voor foutberichten. Hierdoor worden de berichten met validatiefouten in het adaptieve formulier op veldniveau weergegeven.
+Met deze aangepaste fouthandler worden de velden in het aangepaste formulier geconverteerd naar `var som_map` naar de standaardindeling voor foutberichten. Hierdoor worden de berichten met validatiefouten in het adaptieve formulier op veldniveau weergegeven.
 
 ## Voeg douanemanager toe gebruikend de Actie van de Dienst van het Oproepen
 
-Voer de volgende stappen uit om foutenmanager toe te voegen om een structuur van de douanefout in de standaardfoutenstructuur om te zetten gebruikend [de actie van de Redacteur van de Regel ](rule-editor.md) Invoke van de Dienst:
+Voer de volgende stappen uit om fouthandler toe te voegen voor het omzetten van een aangepaste foutstructuur in de standaardfoutstructuur met behulp van [Regeleditor](rule-editor.md) Actie Service aanroepen:
 
-1. Open het aangepaste formulier in de ontwerpmodus, selecteer een formulierobject en tik ![Regeleditor](assets/rule_editor_icon.png) om de regeleditor te openen.
+1. Open het adaptieve formulier in de ontwerpmodus, selecteer een willekeurig formulierobject en tik op ![Regeleditor](assets/rule_editor_icon.png) om de regeleditor te openen.
 1. Tik op **[!UICONTROL Create]**.
-1. Creeer een voorwaarde in de **[!UICONTROL When]** sectie van de regel. Bijvoorbeeld, wanneer [Naam van gebied] wordt veranderd. Selecteer **[!UICONTROL is changed]** in de vervolgkeuzelijst **[!UICONTROL Select State]** om deze voorwaarde te bereiken.
-1. Selecteer in de sectie **[!UICONTROL Then]** **[!UICONTROL Invoke Service]** in de vervolgkeuzelijst **[!UICONTROL Select Action]**.
-1. Selecteer een Post-service en de bijbehorende gegevensbindingen in de sectie **[!UICONTROL Input]**. Als u bijvoorbeeld de velden **Naam**, **ID** en **Status** in het adaptieve formulier wilt valideren, selecteert u een Post-service (pet) en selecteert u pet.name, pet.id en pet.status in de sectie **[!UICONTROL Input]**.
+1. Een voorwaarde maken in het dialoogvenster **[!UICONTROL When]** van de regel. Als[Naam van veld] is gewijzigd. Selecteren **[!UICONTROL is changed]** van de **[!UICONTROL Select State]** vervolgkeuzelijst om deze voorwaarde te bereiken.
+1. In de **[!UICONTROL Then]** sectie, selecteert u **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
+1. Selecteer een postservice en de bijbehorende gegevensbindingen in het menu **[!UICONTROL Input]** sectie. Als u bijvoorbeeld wilt valideren **Naam**, **ID**, en **Status** in het adaptieve formulier selecteert u een Post-service (pet) en selecteert u pet.name, pet.id en pet.status in het dialoogvenster **[!UICONTROL Input]** sectie.
 
-Als gevolg van deze regel worden de waarden die u invoert voor **Naam**, **ID** en **Status** velden gevalideerd, zodra het veld dat is gedefinieerd in stap 2 wordt gewijzigd en u het veld in het formulier verlaat.
+Als resultaat van deze regel worden de waarden opgegeven waarvoor u **Naam**, **ID**, en **Status** velden worden gevalideerd, zodra het in stap 2 gedefinieerde veld wordt gewijzigd en u het veld in het formulier verlaat.
 
-1. Selecteer **[!UICONTROL Code Editor]** van de drop-down lijst van de wijzesselectie.
+1. Selecteren **[!UICONTROL Code Editor]** in de vervolgkeuzelijst Modus selecteren.
 1. Tik op **[!UICONTROL Edit Code]**.
 1. Verwijder de volgende regel uit de bestaande code:
 
@@ -154,7 +153,7 @@ Als gevolg van deze regel worden de waarden die u invoert voor **Naam**, **ID** 
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
    ```
 
-1. Schrijf een regel om de aangepaste foutstructuur om te zetten in de standaardfoutstructuur en tik **[!UICONTROL Done]** om de regel op te slaan.
+1. Schrijf een regel om de aangepaste foutstructuur om te zetten in de standaardfoutstructuur en tik op **[!UICONTROL Done]** om de regel op te slaan.
 Voeg bijvoorbeeld de volgende voorbeeldcode aan het einde toe om een aangepaste foutstructuur om te zetten in de standaardfoutstructuur:
 
    ```javascript
@@ -199,7 +198,7 @@ Voeg bijvoorbeeld de volgende voorbeeldcode aan het einde toe om een aangepaste 
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   In `var som_map` wordt de SOM-expressie weergegeven van de adaptieve formuliervelden die u in de standaardindeling wilt omzetten. U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en **[!UICONTROL View SOM Expression]** in het menu **[!UICONTROL More Opions]** (...) te selecteren.
+   De `var som_map` Hiermee geeft u de SOM-expressie weer van de adaptieve formuliervelden die u wilt transformeren in de standaardindeling. U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en **[!UICONTROL View SOM Expression]** van **[!UICONTROL More Opions]** (...).
 
    Zorg ervoor dat u de volgende regel van de voorbeeldcode naar de aangepaste fouthandler kopieert:
 
@@ -207,6 +206,6 @@ Voeg bijvoorbeeld de volgende voorbeeldcode aan het einde toe om een aangepaste 
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, null, errorHandler);
    ```
 
-   De executeOperation-API bevat de parameters `null` en `errorHandler` op basis van de nieuwe aangepaste fouthandler.
+   De API van executeOperation bevat de `null` en `errorHandler` parameters die zijn gebaseerd op de nieuwe aangepaste fouthandler.
 
-   Met behulp van deze aangepaste fouthandler converteert het aangepaste formulier de velden in `var som_map` naar de standaardindeling voor foutberichten. Hierdoor worden de berichten met validatiefouten in het adaptieve formulier op veldniveau weergegeven.
+   Met deze aangepaste fouthandler worden de velden in het aangepaste formulier geconverteerd naar `var som_map` naar de standaardindeling voor foutberichten. Hierdoor worden de berichten met validatiefouten in het adaptieve formulier op veldniveau weergegeven.

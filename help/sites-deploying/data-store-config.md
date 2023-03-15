@@ -232,7 +232,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 | --- | --- | --- | --- |
 | accessKey | Toegang tot sleutel-id voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
 | geheimeKey | Geheime toegangstoets voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
-| cacheSize | De grootte (in bytes) van de lokale cache. | 64 GB | Nee. |
+| cacheSize | De grootte (in bytes) van de lokale cache. | 64GB | Nee. |
 | connectionTimeout | Stel de hoeveelheid tijd in die moet worden gewacht (in milliseconden) voordat u de time-out verlaat wanneer u een verbinding maakt. | 10000 | Nee. |
 | maxCachedBinarySize | Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze waarde (in bytes) worden opgeslagen in de geheugencache. | 17408 (17 kB) | Nee. |
 | maxConnections | Stel het maximum aantal toegestane open HTTP-verbindingen in. | 50 | Nee. |

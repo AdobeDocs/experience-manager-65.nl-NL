@@ -1,22 +1,21 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
+seo-title: Best Practices
 description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
-seo-description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
-translation-type: tm+mt
-source-git-commit: e594c53b2a26c1c9e484ac07220dc89c283cf7da
+exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '524'
 ht-degree: 2%
 
 ---
-
 
 # Best practices voor{#best-practices}
 
@@ -37,7 +36,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## Assets {#assets}
 
-De beste praktijken rond Activa, met inbegrip van het Dynamische vermogen van Media en Dynamische integratie van Media Classic, worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de integratie van Dynamic Media Classic, worden beschreven in de volgende onderwerpen:
 
 <table>
  <tbody>
@@ -58,13 +57,13 @@ De beste praktijken rond Activa, met inbegrip van het Dynamische vermogen van Me
   </tr>
   <tr>
    <td>Opties voor voorinstellingen afbeelding</td>
-   <td>Voorinstellingen voor <a href="/help/assets/managing-image-presets.md#understanding-image-presets">afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">voorinstellingen voor afbeeldingen: aanbevolen werkwijzen</a></td>
-   <td>In het kader van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a> wordt in deze onderwerpen beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen getoond voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td>
+   <td>Begrijpen <a href="/help/assets/managing-image-presets.md#understanding-image-presets">voorinstellingen voor afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">tips en trucs voor voorinstellingen van afbeeldingen</a></td>
+   <td>Als onderdeel van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a>In deze onderwerpen wordt beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen beschreven voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td>
   </tr>
   <tr>
-   <td>Dynamische media versus directe integratie met Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM-integratie versus Dynamic Media</a></td>
-   <td>Beschrijft wanneer het best is om de Dynamische oplossing van Media te gebruiken, wanneer om S7 met AEM te integreren, of wanneer om allebei te gebruiken.</td>
+   <td>Dynamic Media versus directe integratie met Scene7</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM integratie versus Dynamic Media</a></td>
+   <td>Beschrijft wanneer het best is om de oplossing van Dynamic Media te gebruiken, wanneer om S7 met AEM te integreren, of wanneer om allebei te gebruiken.</td>
   </tr>
  </tbody>
 </table>
@@ -107,4 +106,3 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
   </tr>
  </tbody>
 </table>
-

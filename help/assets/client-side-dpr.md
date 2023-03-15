@@ -2,7 +2,8 @@
 title: Slimme beeldverwerking gebruiken met pixelverhouding van client-side apparaat
 description: Leer hoe u de pixelverhouding van client-side apparaten kunt gebruiken met Smart Imaging in Adobe Experience Manager as a Cloud Service met Dynamic Media.
 role: Admin,User
-source-git-commit: 9b02a5363d32771cd9c039f97044e8a1d72fe286
+exl-id: e38f522a-242a-4ea9-a866-d8d129950831
+source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -69,3 +70,4 @@ De volgende JavaScript-bestanden in de download worden alleen als voorbeeldverwi
 >[!MORELIKETHIS]
 >
 >* [Smart Imaging](/help/assets/imaging-faq.md)
+

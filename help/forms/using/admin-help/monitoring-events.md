@@ -1,8 +1,8 @@
 ---
 title: Gebeurtenissen controleren
-seo-title: Gebeurtenissen controleren
+seo-title: Monitoring events
 description: Wanneer de controlefunctie is ingeschakeld, kunt u met documentbeveiliging bepaalde typen gebeurtenissen controleren. U kunt de gebeurtenissenlijst eenvoudig zoeken en sorteren met behulp van de documentbeveiliging.
-seo-description: Wanneer de controlefunctie is ingeschakeld, kunt u met documentbeveiliging bepaalde typen gebeurtenissen controleren. U kunt de gebeurtenissenlijst eenvoudig zoeken en sorteren met behulp van de documentbeveiliging.
+seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
 uuid: 22add6ff-536d-4cb9-8eac-b72cad5c3ecf
 contentOwner: admin
 content-type: reference
@@ -10,24 +10,23 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
 
-
-# Gebeurtenissen {#monitoring-events} controleren
+# Gebeurtenissen controleren {#monitoring-events}
 
 Wanneer de controlefunctie is ingeschakeld, kunt u met documentbeveiliging bepaalde typen gebeurtenissen controleren. De gebeurtenissen die u kunt zien zijn afhankelijk van uw rol:
 
-**Gebruikers:** kunnen gecontroleerde gebeurtenissen weergeven voor documenten die door hun beleid zijn beveiligd en voor beveiligde documenten die zij ontvangen en gebruiken.
+**Gebruikers:** De gecontroleerde gebeurtenissen kunnen worden weergegeven voor de documenten die door het beleid worden beveiligd en voor de beveiligde documenten die ze ontvangen en gebruiken.
 
-**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, waaronder document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beschermd tegen hun beleidssets.
+**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, inclusief document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beveiligd tegen hun beleidssets.
 
-**Beheerders:** kan gecontroleerde gebeurtenissen weergeven die betrekking hebben op alle documenten en gebruikers die met een beleid zijn beveiligd. Beheerders kunnen ook andere gebeurtenistypen bijhouden, zoals gebruiker, document, beleid en systeemgebeurtenissen.
+**Beheerders:** Kan gecontroleerde gebeurtenissen weergeven die betrekking hebben op alle documenten en gebruikers die met een beleid zijn beveiligd. Beheerders kunnen ook andere gebeurtenistypen bijhouden, zoals gebruiker, document, beleid en systeemgebeurtenissen.
 
 >[!NOTE]
 >
@@ -43,7 +42,7 @@ Een mislukte gebeurtenis wordt geregistreerd als een onbevoegde gebruiker probee
 
 Als een beleid anonieme gebruikerstoegang toestaat maar de beheerder later anonieme toegang voor documentveiligheid uitschakelt, zal de anonieme toegang voor documenten ontbreken die met het beleid worden beschermd en de gebeurtenis zal niet worden geregistreerd.
 
-## Gebeurteniscontrole {#enable-event-auditing} inschakelen
+## Gebeurteniscontrole inschakelen {#enable-event-auditing}
 
 Aan deze instellingsvereisten moet worden voldaan om gebeurteniscontrole uit te voeren:
 
@@ -59,30 +58,30 @@ U kunt de gebeurtenissenlijst doorzoeken en meer gedetailleerde beschrijvingen v
 
 U kunt naar gebeurtenissen op de pagina Gebeurtenissen zoeken met een combinatie van zoekcriteria voor gebeurtenissen en de datums waarop de gebeurtenissen hebben plaatsgevonden. Welke gebeurtenissen u kunt zoeken, is afhankelijk van uw rol:
 
-**Gebruikers:** kunnen gecontroleerde gebeurtenissen weergeven voor documenten die door hun beleid zijn beveiligd en voor beveiligde documenten die zij ontvangen en gebruiken. Deze zoekopties zijn beschikbaar:
+**Gebruikers:** De gecontroleerde gebeurtenissen kunnen worden weergegeven voor de documenten die door het beleid worden beveiligd en voor de beveiligde documenten die ze ontvangen en gebruiken. Deze zoekopties zijn beschikbaar:
 
-**Gebeurtenissen met betrekking tot mij:** gebruikers kunnen gebeurtenissen vinden voor elk document dat met een beleid is beveiligd en dat ze hebben gemaakt of ontvangen. Als een gebruiker bijvoorbeeld een document opent, weergeeft of afdrukt dat door een andere persoon is beveiligd, ziet de gebruiker alleen deze gebeurtenissen voor dat document.
+**Gebeurtenissen met betrekking tot mij:** Gebruikers kunnen gebeurtenissen zoeken voor elk document dat met een beleid is beveiligd en dat zij hebben gemaakt of ontvangen. Als een gebruiker bijvoorbeeld een document opent, weergeeft of afdrukt dat door een andere persoon is beveiligd, ziet de gebruiker alleen deze gebeurtenissen voor dat document.
 
-**Gebeurtenissen met betrekking tot mijn documenten:** gebruikers kunnen alle gebeurtenissen vinden die betrekking hebben op hun eigen documenten die met een beleid zijn beveiligd. De gebruikers zien de gebeurtenissen die door elke persoon worden geproduceerd die hun documenten behandelde.
+**Gebeurtenissen met betrekking tot mijn documenten:** Gebruikers kunnen alle gebeurtenissen vinden die betrekking hebben op hun eigen documenten die met een beleid zijn beveiligd. De gebruikers zien de gebeurtenissen die door elke persoon worden geproduceerd die hun documenten behandelde.
 
-**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, waaronder document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beschermd tegen hun beleidssets. De volgende opties zijn beschikbaar:
+**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, inclusief document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beveiligd tegen hun beleidssets. De volgende opties zijn beschikbaar:
 
-**Documentgebeurtenissen waarbij ik coördinator ben van een beleidsset:** Beleidssetcoördinatoren die de machtiging voor weergavegebeurtenissen hebben, kunnen gebeurtenissen vinden die betrekking hebben op documenten die door het beleid van hun beleidssets worden beveiligd.
+**Documentgebeurtenissen waarbij ik als beleidssetcoördinator ben:** Coördinatoren met beleidssets die de machtiging voor weergavegebeurtenissen hebben, kunnen gebeurtenissen vinden die gerelateerd zijn aan documenten die door het beleid van hun beleidssets worden beveiligd.
 
-**Beleidsgebeurtenissen waarbij ik een beleidssetcoördinator ben:** Beleidssetcoördinatoren die de machtiging voor weergavegebeurtenissen hebben, kunnen gebeurtenissen vinden die gerelateerd zijn aan beleid vanuit hun beleidssets.
+**Beleidsgebeurtenissen waarbij ik als beleidscoördinator ben:** Coördinatoren met beleidssets die de machtiging voor weergavegebeurtenissen hebben, kunnen gebeurtenissen vinden die gerelateerd zijn aan beleid in hun beleidssets.
 
-**Beheerders:** kan gecontroleerde gebeurtenissen weergeven die betrekking hebben op alle documenten en gebruikers die met een beleid zijn beveiligd. Beheerders kunnen ook andere typen bijhouden. Ook kunnen beheerders zoekopdrachten naar gebeurtenissen verder onderverdelen op basis van het type gebruiker:
+**Beheerders:** Kan gecontroleerde gebeurtenissen weergeven die betrekking hebben op alle documenten en gebruikers die met een beleid zijn beveiligd. Beheerders kunnen ook andere typen bijhouden. Ook kunnen beheerders zoekopdrachten naar gebeurtenissen verder onderverdelen op basis van het type gebruiker:
 
-**Bekende gebruikers:** Gebruikers bevinden zich in de brondirectory&#39;s of zijn geregistreerd als externe gebruikers.
+**Bekende gebruikers:** De gebruikers zijn in de bronfolders of geregistreerd als externe gebruikers.
 
 **Anonieme gebruikers:** Onbekende gebruikers die toegang hebben tot een document dat is beveiligd met een beleid dat anonieme toegang toestaat.
 
-**Systeemgebruikers:** Server-gestarte gebeurtenissen, zoals een foldersynchronisatie.
+**Systeemgebruikers:** Gebeurtenissen die door de server worden gestart, zoals een directorysynchronisatie.
 
 1. Klik op Gebeurtenissen op de pagina Documentbeveiliging.
 1. Selecteer in de lijst Zoeken de zoekcriteria die u wilt gebruiken. Afhankelijk van de selectie in de lijst Zoeken wordt een tweede lijst weergegeven met aanvullende zoekcriteria. Typ, indien van toepassing, in het tekstvak de zoekcriteria.
 
-   Zie [Opties voor gebeurteniscontrole](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options) voor meer informatie over de specifieke gebeurtenistypen.
+   Zie voor meer informatie over de specifieke gebeurtenistypen [Opties voor gebeurteniscontrole](/help/forms/using/admin-help/configuring-client-server-options.md#event-auditing-options).
 
 1. Selecteer in de lijst Gebruiker het gebruikerstype dat de gebeurtenis heeft uitgevoerd:
 
@@ -103,10 +102,9 @@ U kunt naar gebeurtenissen op de pagina Gebeurtenissen zoeken met een combinatie
 
 1. Klik op de beschrijving van de gebeurtenis in de lijst om de details van een gebeurtenis weer te geven.
 
-## De gebeurtenislijst {#sort-the-event-list} sorteren
+## De gebeurtenislijst sorteren {#sort-the-event-list}
 
 U kunt de gebeurtenissenlijst sorteren op kolomkop om gebeurtenissen gemakkelijker te vinden. De driehoekspictogrammen naast de kolomkop geven aan welke kolom momenteel wordt gebruikt om te sorteren. Een naar boven wijzend driehoekje geeft de oplopende volgorde aan, terwijl een naar beneden wijzend driehoekje de aflopende volgorde aangeeft.
 
 1. Klik op de gewenste kolomkop.
 1. Klik nogmaals op de kolomkop om de sorteervolgorde te wijzigen.
-

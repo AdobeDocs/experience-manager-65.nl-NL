@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5 Handboek voor ontwerpen
+title: AEM 6.5 Gebruikersgids voor authoring
 seo-title: AEM 6.5 Authoring User Guide
 description: Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 seo-description: Explains the concepts of authoring in AEM.
@@ -7,11 +7,11 @@ exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 9%
+ht-degree: 16%
 
 ---
 
-# AEM 6.5 Handboek voor ontwerpen
+# AEM 6.5 Gebruikersgids voor authoring
 
 Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 6.5. U vindt ook informatie over het gebruik van tags, sjablonen en andere paginafuncties.
 
@@ -30,8 +30,8 @@ Verken de belangrijkste concepten voor het maken van inhoud en ontwerpen in AEM 
 | [Handboek voor Assets](/help/assets/home.md) | Leer hoe u digitale middelen maakt, beheert, levert en optimaliseert. |
 | [Forms-gebruikershandleiding](/help/forms/home.md) | In deze handleiding wordt beschreven hoe u digitale formulieren kunt maken, beheren, publiceren en bijwerken. |
 | [Gebruikersgids voor gemeenschappen](/help/communities/home.md) | Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. |
-| [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
-| [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
+| [Gids voor beheerders](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
+| [Handleiding voor authoring](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
 | [Gebruikershandleiding voor schermen](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |

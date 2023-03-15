@@ -181,7 +181,7 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
   </tr>
   <tr>
    <td>&gt;<p>SOAP</p> </td>
-   <td><p>880</p> </td>
+   <td><p>8880</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>MySQL</p> </td>

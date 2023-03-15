@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van berichten
-seo-title: Grondbeginselen van berichten
+seo-title: Messaging Essentials
 description: Overzicht van de component Messaging
-seo-description: Overzicht van de component Messaging
+seo-description: Messaging component overview
 uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,20 +10,19 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
-translation-type: tm+mt
-source-git-commit: f375b40c084ee363757b78c602091f38524b8b03
+exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '389'
 ht-degree: 1%
 
 ---
 
-
-# Essentiële elementen voor berichten {#messaging-essentials}
+# Grondbeginselen van berichten {#messaging-essentials}
 
 Deze pagina documenteert de details van het werken met het gebruiken van de component van het Overseinen om een overseineneigenschap op een website te omvatten.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 **Bericht samenstellen**
 
@@ -71,7 +70,7 @@ Deze pagina documenteert de details van het werken met het gebruiken van de comp
    <td><p>cq.social.hbs.messaging</p> </td>
   </tr>
   <tr>
-   <td> <strong>sjablonen</strong></td>
+   <td> <strong>templates</strong></td>
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td>
   </tr>
   <tr>
@@ -94,21 +93,19 @@ Zie ook [Aanpassingen aan de clientzijde](/help/communities/client-customize.md)
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
 * [Berichten configureren](/help/communities/configure-messaging.md)
-* [Messaging client-](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) APIs voor SCF-componenten
-* [Berichten ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) APIs voor de dienst
+* [Berichtenclient-API&#39;s](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) voor SCF-componenten
+* [Berichten-API&#39;s](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) voor de dienst
 * [Eindpunten van berichten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Aanpassingen op de server](/help/communities/server-customize.md)
 
 >[!CAUTION]
 >
->De parameter van het Koord moet *not* een het slepen schuine streep &quot;/&quot;voor de volgende methodes MessageBuilder bevatten:
+>De parameter String moet *niet* bevat een slash &quot;/&quot; voor de volgende MessageBuilder-methoden:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
-
 >
->
-Bijvoorbeeld:
+>Bijvoorbeeld:
 >
 >
 ```
@@ -118,34 +115,34 @@ Bijvoorbeeld:
 
 ### Community-site {#community-site}
 
-Een community-sitestructuur die met de wizard is gemaakt, bevat de berichtfunctie wanneer deze is geselecteerd. Zie `User Management`-instellingen van [Community Sites Console](/help/communities/sites-console.md#user-management).
+Een community-sitestructuur die met de wizard is gemaakt, bevat de berichtfunctie wanneer deze is geselecteerd. Zie `User Management` instellingen van [Community Sites Console](/help/communities/sites-console.md#user-management).
 
-### Voorbeeldcode: Melding ontvangen {#sample-code-message-received-notification}
+### Voorbeeldcode: Bericht ontvangen {#sample-code-message-received-notification}
 
-Met de functie Sociaal overseinen worden gebeurtenissen voor bewerkingen gegenereerd, bijvoorbeeld `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
+Met de functie Sociaal overseinen worden bijvoorbeeld gebeurtenissen voor bewerkingen gegenereerd `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
 
-In het volgende voorbeeld ziet u een gebeurtenishandler die luistert naar de gebeurtenis `message sent` en die via `Day CQ Mail Service` een e-mail verzendt naar alle ontvangers van het bericht.
+Het volgende voorbeeld is een gebeurtenishandler die luistert naar de gebeurtenis `message sent` en verzendt via de `Day CQ Mail Service`.
 
 Om het server-zijsteekproefmanuscript te proberen, hebt u een ontwikkelomgeving en de capaciteit nodig om een bundel te bouwen OSGi:
 
-1. Meld u aan als beheerder bij ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
-1. Maak een `bundle node`in `/apps/engage/install` met willekeurige namen, zoals:
+1. Meld u aan als beheerder ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Een `bundle node`in `/apps/engage/install` met willekeurige namen, zoals:
 
    * Symbolische naam: `com.engage.media.social.messaging.MessagingNotification`
    * Naam: Melding van lesbestanden aan de slag
    * Omschrijving: Een voorbeeldservice voor het verzenden van een e-mailbericht naar gebruikers wanneer zij een bericht ontvangen
    * Pakket: `com.engage.media.social.messaging.notification`
 
-1. Navigeer naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification` en vervolgens:
+1. Navigeren naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`en vervolgens:
 
-   1. Verwijder automatisch de klasse `Activator.java`.
-   1. Klasse `MessageEventHandler.java` maken.
-   1. Kopieer en plak de onderstaande code naar `MessageEventHandler.java`.
+   1. Verwijder de `Activator.java` automatisch aangemaakt.
+   1. Klasse maken `MessageEventHandler.java`.
+   1. Kopieer en plak de onderstaande code in `MessageEventHandler.java`.
 
-1. Klik **Alles opslaan**.
-1. Navigeer naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` en voeg alle instructies import toe zoals geschreven in de code `MessageEventHandler.java`.
+1. Klikken **Alles opslaan**.
+1. Navigeren naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd`en voegt u alle instructies voor het importeren toe, zoals in het dialoogvenster `MessageEventHandler.java` code.
 1. Maak de bundel.
-1. Zorg ervoor dat `Day CQ Mail Service`OSGi-service is geconfigureerd.
+1. Zorgen `Day CQ Mail Service`De dienst OSGi wordt gevormd.
 1. Meld u aan als demogebruiker en stuur een e-mail naar een andere gebruiker.
 1. De ontvanger ontvangt een e-mail met betrekking tot een nieuw bericht.
 
@@ -240,4 +237,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-

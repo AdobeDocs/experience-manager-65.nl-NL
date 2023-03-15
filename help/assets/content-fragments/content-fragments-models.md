@@ -134,7 +134,7 @@ In de fragmenteditor wordt elke instantie weergegeven als een tab.
 
       >[!NOTE]
       >
-      >Dit gegevenstype wordt puur gebruikt voor het formatteren, wordt het genegeerd door het schema AEM GraphQL.
+      >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
 
 ## Eigenschappen {#properties}
 
@@ -225,7 +225,7 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
       >[!NOTE]
       >
-      >Deze methode is van bijzonder belang in samenhang met [Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+      >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
    * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
 
 >[!NOTE]
@@ -279,7 +279,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Dit is van bijzonder belang in samenhang met [Aflevering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>Dit is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -307,7 +307,7 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 >
 >Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
->Er is ook een terugkerende bescherming voor de Verwijzingen van het Fragment in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
+>Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
@@ -319,7 +319,7 @@ Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
 
 * Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
-* is beschikbaar voor GraphQL; zodat wordt het schema geproduceerd.
+* beschikbaar is voor GraphQL; zodat wordt het schema geproduceerd.
 
 Een model inschakelen dat is gemarkeerd als:
 
@@ -340,8 +340,8 @@ Een model kan ook worden uitgeschakeld, zodat:
 * Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten.
 * Echter:
    * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
-   * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt worden gevraagd en van GraphQL zijn teruggekeerd.
-* Het model kan niet meer van verwijzingen worden voorzien, maar de bestaande verwijzingen worden gehouden onaangeroerd, en kunnen nog worden gevraagd en van het eindpunt GraphQL zijn teruggekeerd.
+   * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt van GraphQL worden gevraagd en zijn teruggekeerd.
+* Er kan niet meer naar het model worden verwezen, maar bestaande verwijzingen blijven ongewijzigd en kunnen nog steeds worden opgevraagd en geretourneerd vanaf het GraphQL-eindpunt.
 
 Een model uitschakelen dat is gemarkeerd als **Ingeschakeld** u de **Uitschakelen** optie van:
 

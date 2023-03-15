@@ -3,11 +3,11 @@ title: Elementeditorpagina's maken en configureren
 description: Leer hoe u aangepaste pagina's in de Asset Editor kunt maken en meerdere middelen tegelijk kunt bewerken.
 contentOwner: AG
 role: User, Admin
-feature: Gereedschappen voor ontwikkelaars, beheer van bedrijfsmiddelen
+feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2105'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ In dit document wordt het volgende beschreven:
 
 >[!NOTE]
 >
->Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [Commons voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/). Het wordt niet officieel gesteund.
+>Asset Share is beschikbaar als een open-source referentie-implementatie. Zie [Commentaar voor het delen van bedrijfsmiddelen](https://adobe-marketing-cloud.github.io/asset-share-commons/). Het wordt niet officieel gesteund.
 
 ## Waarom de pagina&#39;s van de Redacteur van Activa creëren en vormen? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Bij de overgang van een kleinschalige oplossing voor een kleine gebruikersgroep professionele gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en meer uiteenlopende gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - kan de krachtige gebruikersinterface van [!DNL Adobe Experience Manager Assets] voor professionele gebruikers te veel informatie bieden en kunnen belanghebbenden specifieke gebruikersinterfaces of toepassingen aanvragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
+Digital Asset Management wordt in steeds meer scenario&#39;s gebruikt. Wanneer u overschakelt van een kleinschalige oplossing voor een kleine gebruikersgroep van professioneel opgeleide gebruikers - bijvoorbeeld fotografen of taxonomisten - naar grotere en meer uiteenlopende gebruikersgroepen - bijvoorbeeld zakelijke gebruikers, WCM-auteurs, journalisten, enzovoort - de krachtige gebruikersinterface van [!DNL Adobe Experience Manager Assets] professionele gebruikers kunnen te veel informatie verstrekken en belanghebbenden beginnen specifieke gebruikersinterfaces of toepassingen te vragen om toegang te krijgen tot de digitale middelen die voor hen van belang zijn.
 
 Deze asset-centric toepassingen kunnen eenvoudige fotogalerieën in een Intranet zijn waar de werknemers foto&#39;s van handelsshowbezoeken of een perscentrum in een openbaar-onder ogen ziende website kunnen uploaden. Asset-centric toepassingen kunnen ook worden uitgebreid tot complete oplossingen, zoals winkelwagentjes, kassa&#39;s en verificatieprocessen.
 
-Het creëren van een middel-centric toepassing wordt grotendeels een configuratieproces dat geen codering vereist, slechts kennis van gebruikersgroepen en hun behoeften evenals kennis van de meta-gegevens die worden gebruikt. Elementgerichte toepassingen die zijn gemaakt met [!DNL Assets] zijn uitbreidbaar: met een matige codeerinspanning kunnen herbruikbare componenten voor het zoeken, bekijken, en het wijzigen van activa worden gecreeerd.
+Het creëren van een middel-centric toepassing wordt grotendeels een configuratieproces dat geen codering vereist, slechts kennis van gebruikersgroepen en hun behoeften evenals kennis van de meta-gegevens die worden gebruikt. Asset-centric toepassingen die zijn gemaakt met [!DNL Assets] uitbreidbaar zijn: met een matige codeerinspanning kunnen herbruikbare componenten voor het zoeken, bekijken, en het wijzigen van activa worden gecreeerd.
 
-Een op elementen gerichte toepassing in [!DNL Experience Manager] bestaat uit een pagina van de Redacteur van Activa, die kan worden gebruikt om een gedetailleerde mening van een specifiek middel te krijgen. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
+Een toepassing die op elementen is gericht in [!DNL Experience Manager] bestaat uit een pagina Asset Editor, die kan worden gebruikt voor een gedetailleerde weergave van een specifiek element. Een pagina van de Redacteur van Activa staat ook voor het uitgeven van meta-gegevens toe, op voorwaarde dat de gebruiker die tot de activa toegang heeft de noodzakelijke toestemmingen heeft.
 
 <!--
 ## Create and configure an Asset Share page {#creating-and-configuring-an-asset-share-page}
@@ -196,16 +196,16 @@ U kunt de middeleneditor aanpassen om te bepalen hoe gebruikers de digitale elem
 
 >[!NOTE]
 >
->Als u aangepaste velden wilt toevoegen aan de DAM Asset Editor, voegt u nieuwe `cq:Widget`-knooppunten toe aan `/apps/dam/content/asseteditors.`
+>Als u aangepaste velden wilt toevoegen aan de DAM-editor voor elementen, voegt u nieuwe `cq:Widget` knooppunten naar `/apps/dam/content/asseteditors.`
 
 ### Een pagina voor de Editor van middelen maken {#creating-the-asset-editor-page}
 
 Als u de pagina Asset Editor maakt, is het verstandig de pagina direct onder de pagina Asset Share te maken.
 
-Een pagina voor de Asset Editor maken:
+Een pagina voor de Editor van middelen maken:
 
-1. Navigeer op het tabblad **[!UICONTROL Websites]** naar de plaats waar u een pagina voor een elementeditor wilt maken en klik op **Nieuw**.
-1. Selecteer **Geometrixx Asset Editor** en klik op **Maken**. De nieuwe pagina wordt gecreeerd en de pagina is vermeld op **Websites** tabel.
+1. In de **[!UICONTROL Websites]** , navigeert u naar de plaats waar u een pagina voor de middeleneditor wilt maken en klikt u **Nieuw**.
+1. Selecteren **Geometrixx-itemeditor** en klik op **Maken**. De nieuwe pagina wordt gemaakt en de pagina wordt weergegeven in het dialoogvenster **Websites** tab.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
@@ -213,7 +213,7 @@ De basispagina die is gemaakt met de sjabloon Geometrixx Asset Editor ziet er al
 
 ![assetshare5](assets/assetshare5.png)
 
-Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina van de Redacteur van Activa die van **het Centrum van de pers van de Geometrixx wordt betreden** is een aangepaste versie van een pagina die op dit malplaatje wordt gebaseerd:
+Als u de pagina Asset Editor wilt aanpassen, gebruikt u elementen van de assistent. De pagina Asset Editor die wordt geopend via de **Geometrixx Press Center** is een aangepaste versie van een pagina die op deze sjabloon is gebaseerd:
 
 ![assetshare6](assets/assetshare6.png)
 
@@ -223,13 +223,13 @@ Nadat u de aangepaste pagina Asset Editor hebt gemaakt, moet u ervoor zorgen dat
 
 De pagina Asset Editor instellen:
 
-1. In de pagina van het Aandeel van Activa, klik **geef** naast de Bouwer van de Vraag uit.
+1. Klik op de pagina Asset Share op **Bewerken** naast de Query Builder.
 
 ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
-1. Klik op het tabblad **Algemeen** als dit nog niet is geselecteerd.
+1. Klik op de knop **Algemeen** als deze nog niet is geselecteerd.
 
-1. Typ in het veld **Pad van de Asset Editor** het pad naar de asseteditor waarin u de pagina voor het delen van elementen wilt openen en klik op **OK**.
+1. In de **Pad van de Asset Editor** Voer het pad in naar de middeleneditor waarin u de pagina Asset Share wilt openen en klik op **OK**.
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
@@ -239,7 +239,7 @@ U bepaalt welke functionaliteit een middeleneditor heeft door componenten aan de
 
 Elementeditorcomponenten toevoegen:
 
-1. Op de pagina van de Redacteur van Activa die u wilt aanpassen, uitgezocht **Activa Redacteur** in sidekick. Alle beschikbare componenten van de middeleneditor worden weergegeven.
+1. Selecteer op de pagina Asset Editor die u wilt aanpassen **Asset Editor** in het hulpje. Alle beschikbare componenten van de middeleneditor worden weergegeven.
 
 >[!NOTE]
 >
@@ -263,29 +263,29 @@ Elementeditorcomponenten toevoegen:
 
 #### Metagegevensformulier en tekstveld - De component Metagegevens weergeven configureren {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-Het metagegevensformulier is een formulier met een begin- en eindactie. Tussendoor voert u **Tekstvelden** in. Zie [Forms](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie over het werken met formulieren.
+Het metagegevensformulier is een formulier met een begin- en eindactie. Tussen haakjes voert u in **Tekst** velden. Zie [Forms](/help/sites-authoring/default-components-foundation.md#form-component) voor meer informatie over het werken met formulieren.
 
-1. Maak een startactie door te klikken op **Bewerken** in het begingebied van het formulier. U kunt desgewenst een titel voor een vak invoeren. Standaard is de titel van het vak **Metagegevens**. Schakel het selectievakje Clientvalidatie in als u de Java-Script-clientcode voor validatie wilt genereren.
+1. Een startactie maken door op **Bewerken** in het gebied Start van het formulier. U kunt desgewenst een titel voor een vak invoeren. Standaard is de titel van het vak **Metagegevens**. Schakel het selectievakje Clientvalidatie in als u de Java-Script-clientcode voor validatie wilt genereren.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Maak een actie End door te klikken op **Edit** in het gebied End van het formulier. U kunt bijvoorbeeld een optie **[!UICONTROL Submit]** maken waarmee gebruikers hun wijzigingen in metagegevens kunnen verzenden. U kunt desgewenst een optie **Herstellen** toevoegen waarmee de metagegevens worden teruggezet naar de oorspronkelijke staat.
+1. Een actie Einde maken door op **Bewerken** in het gebied Einde van het formulier. U kunt bijvoorbeeld een **[!UICONTROL Submit]** om gebruikers toe te staan hun meta-gegevensveranderingen voor te leggen. U kunt desgewenst een **Herstellen** optie waarmee de metagegevens worden teruggezet naar de oorspronkelijke staat.
 
 ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Sleep Metagegevenstekstvelden tussen **Begin van formulier** en **Einde van formulier** naar het formulier. Gebruikers vullen metagegevens in deze tekstvelden in. Deze kunnen worden verzonden of een andere actie uitvoeren.
+1. In tussen de **Begin formulier** en de **Einde formulier** Sleep Metagegevenstekstvelden naar het formulier. Gebruikers vullen metagegevens in deze tekstvelden in. Deze kunnen worden verzonden of een andere actie uitvoeren.
 
-1. Dubbelklik bijvoorbeeld op de veldnaam **Titel** om het metagegevensveld te openen en wijzigingen aan te brengen. Op **Algemeen** lusje van **geef Component** venster uit, bepaalt u namespace en het gebiedsetiket evenals type, bijvoorbeeld `dc:title`.
+1. Dubbelklik bijvoorbeeld op de veldnaam. **Titel** om het metagegevensveld te openen en wijzigingen aan te brengen. In de **Algemeen** tabblad van het dialoogvenster **Component bewerken** kunt u bijvoorbeeld de naamruimte en het veldlabel definiëren, evenals het type. `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
 Zie [Elementen aanpassen en uitbreiden](/help/assets/extending-assets.md) voor informatie over het wijzigen van de naamruimten die beschikbaar zijn in het metagegevensformulier.
 
-1. Klik op het tabblad **Restricties**. Hier kunt u selecteren of een veld vereist is en zo nodig beperkingen toevoegen.
+1. Klik op de knop **Restricties** tab. Hier kunt u selecteren of een veld vereist is en zo nodig beperkingen toevoegen.
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Klik op de tab **Display**. Hier kunt u een nieuwe breedte en een nieuw aantal rijen voor het meta-gegevensgebied ingaan. Schakel het selectievakje **Veld is alleen-lezen** in zodat gebruikers de metagegevens kunnen bewerken.
+1. Klik op de knop **Weergave** tab. Hier kunt u een nieuwe breedte en een nieuw aantal rijen voor het meta-gegevensgebied ingaan. Selecteer **Veld is alleen-lezen** Schakel het selectievakje in om gebruikers toe te staan de metagegevens te bewerken.
 
 ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -297,7 +297,7 @@ Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de me
 
 #### Subactiva {#sub-assets}
 
-In de component Subelementen kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder [hoofdelement](/help/assets/assets.md#what-are-digital-assets) en subelementen worden weergegeven.
+In de component Subelementen kunt u subelementen weergeven en selecteren. U kunt bepalen welke namen onder de [hoofdmiddel](/help/assets/assets.md#what-are-digital-assets) en subactiva.
 
 Dubbelklik op de component Subelementen om het dialoogvenster Subelementen te openen, waarin u de titels voor het hoofdelement en eventuele subelementen kunt wijzigen. De standaardwaarden worden onder het desbetreffende veld weergegeven.
 
@@ -317,7 +317,7 @@ De component Tags is een component waarin gebruikers bestaande tags aan een elem
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Dubbelklik op de component Tags om het dialoogvenster Codes te openen waarin u desgewenst de titel van Codes kunt wijzigen en waarin u de toegewezen naamruimten kunt selecteren. Als u dit veld bewerkbaar wilt maken, schakelt u het selectievakje **[!UICONTROL Hide Edit]** uit. Standaard zijn codes bewerkbaar.
+Dubbelklik op de component Tags om het dialoogvenster Codes te openen waarin u desgewenst de titel van Codes kunt wijzigen en waarin u de toegewezen naamruimten kunt selecteren. Als u dit veld bewerkbaar wilt maken, wist u het **[!UICONTROL Hide Edit]** selectievakje. Standaard zijn codes bewerkbaar.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -331,11 +331,11 @@ Hier volgt een gevulde component Tags:
 
 #### Miniatuur {#thumbnail}
 
-In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien toont de component filename, en [acties die u kunt wijzigen ](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
+In het element Miniatuur wordt de geselecteerde miniatuur weergegeven (bij veel van de indelingen wordt de miniatuur automatisch geëxtraheerd). Bovendien geeft de component de bestandsnaam weer, en [acties die u kunt wijzigen](/help/assets/assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Dubbelklik op de miniatuurcomponent om het dialoogvenster met miniaturen te openen waarin u de alt-tekst kunt wijzigen. Standaard wordt de alt-tekst van de miniatuur ingesteld op **Klikken om het element** te downloaden.
+Dubbelklik op de miniatuurcomponent om het dialoogvenster met miniaturen te openen waarin u de alt-tekst kunt wijzigen. Standaard wordt de alt-tekst van de miniatuur ingesteld op **Klik om te downloaden** activa.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -347,13 +347,13 @@ Hieronder ziet u een voorbeeld van een gevulde miniatuurcomponent:
 
 In de component Title worden de titel van het element en een beschrijving weergegeven.
 
-Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers het bestand niet kunnen bewerken. Als u dit bewerkbaar wilt maken, dubbelklikt u op de component en schakelt u het selectievakje **Bewerken verbergen** uit. Voer bovendien een titel in voor meerdere elementen.
+Standaard bevindt het bestand zich in de modus Alleen-lezen, zodat gebruikers het bestand niet kunnen bewerken. Als u de component bewerkbaar wilt maken, dubbelklikt u op de component en wist u de **Knop Bewerken verbergen** selectievakje. Voer bovendien een titel in voor meerdere elementen.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Als de titel kan worden bewerkt, kunt u een titel en een beschrijving toevoegen door op het potlood te klikken om het venster **Eigenschappen van element** te openen. Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
+Als de titel kan worden bewerkt, kunt u een titel en beschrijving toevoegen door op het potlood te klikken om het dialoogvenster **Eigenschappen van element** venster. Bovendien kunt u het element in- en uitschakelen door de datum en tijd te selecteren.
 
-Tijdens het bewerken van [!UICONTROL Title] kunnen gebruikers de **Title**, **Description** wijzigen en **On** en **Off Times** invoeren om het element in of uit te schakelen.
+Bij het bewerken van de [!UICONTROL Title], kunnen gebruikers de **Titel**, **Beschrijving** en voert u **Aan** en **Off Times** om het actief in- en uit te schakelen.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -367,7 +367,7 @@ U kunt bepalen welke handelingen gebruikers kunnen uitvoeren op geselecteerde di
 
 Handelingen toevoegen aan de pagina Asset Editor:
 
-1. In de pagina van de Redacteur van Activa die u wilt aanpassen, klik **Redacteur van Activa** in sidekick.
+1. Klik op de pagina Asset Editor die u wilt aanpassen **Asset Editor** in het hulpje.
 
 ![screen_shot_2012-04-23at35515pm](assets/screen_shot_2012-04-23at35515pm.png)
 
@@ -375,27 +375,27 @@ De volgende acties zijn beschikbaar:
 
 | Actie | Beschrijving |
 |---|---|
-| [!UICONTROL Download] | Hiermee kunnen gebruikers een selectie downloaden   elementen naar hun computers. |
-| [!UICONTROL Editors] | Gebruikers kunnen een afbeelding bewerken   (interactieve bewerkingen) |
-| [!UICONTROL Lightbox] | Hiermee slaat u elementen op als een   &quot;lichtbak&quot; waar u andere handelingen op kunt uitvoeren. Dit komt   handig wanneer u met elementen op meerdere pagina&#39;s werkt. |
-| [!UICONTROL Locking] | Hiermee kunnen gebruikers een element vergrendelen. Dit   functionaliteit is niet standaard ingeschakeld en moet in de lijst worden ingeschakeld   van componenten. |
-| [!UICONTROL References] | Klik hierop om te tonen op welke pagina&#39;s   het actief wordt gebruikt. |
-| [!UICONTROL Versioning] | Hiermee kunt u bestanden maken en herstellen   versies van een element. |
+| [!UICONTROL Download] | Hiermee kunnen gebruikers geselecteerde elementen downloaden naar hun computers. |
+| [!UICONTROL Editors] | Gebruikers kunnen een afbeelding bewerken (interactief bewerken) |
+| [!UICONTROL Lightbox] | Hiermee slaat u elementen op in een &#39;lichtbak&#39; waar u andere handelingen op kunt uitvoeren. Dit is handig wanneer u met elementen op meerdere pagina&#39;s werkt. |
+| [!UICONTROL Locking] | Hiermee kunnen gebruikers een element vergrendelen. Deze functionaliteit is niet standaard ingeschakeld en moet worden ingeschakeld in de lijst met componenten. |
+| [!UICONTROL References] | Klik hierop om te tonen op welke pagina&#39;s het element wordt gebruikt. |
+| [!UICONTROL Versioning] | Hiermee kunt u versies van een element maken en herstellen. |
 
-1. Sleep de aangewezen actie aan **Acties** gebied op de pagina. Er wordt een optie gemaakt waarmee de handeling wordt uitgevoerd die op de pagina wordt gesleept.
+1. Sleep de gewenste actie naar de **Handelingen** op de pagina. Er wordt een optie gemaakt waarmee de handeling wordt uitgevoerd die op de pagina wordt gesleept.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
 ## Elementen bewerken via de pagina Asset Editor {#multi-editing-assets-with-the-asset-editor-page}
 
-Met [!DNL Experience Manager Assets] kunt u wijzigingen in meerdere elementen tegelijk aanbrengen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
+Met [!DNL Experience Manager Assets] u kunt meerdere elementen tegelijk wijzigen. Nadat u elementen hebt geselecteerd, kunt u tegelijkertijd de volgende wijzigingen aanbrengen:
 
 * Tags
 * Metagegevens
 
 Elementen bewerken via de pagina Asset Editor:
 
-1. Open de pagina Geometrixx **Press Center**:
+1. De Geometrixx openen **Press Center** pagina:
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. Selecteer de elementen:
@@ -403,28 +403,28 @@ Elementen bewerken via de pagina Asset Editor:
    * in Windows: `Ctrl + click` elk element.
    * op Mac: `Cmd + click` elk element.
 
-   Een reeks elementen selecteren: Klik op het eerste element en `Shift + click` op het laatste element.
+   Een reeks elementen selecteren: Klik vervolgens op het eerste element `Shift + click` het laatste activum.
 
-1. Klik **Metagegevens bewerken** in het veld **Acties** (linkergedeelte van de pagina).
-1. De pagina Geometrixx **Press Center Asset Editor** wordt geopend op een nieuw tabblad. De metagegevens van de elementen worden als volgt weergegeven:
+1. Klikken **Metagegevens bewerken** in de **Handelingen** veld (linkergedeelte van de pagina).
+1. De Geometrixx **Midden-middeleneditor openen** wordt geopend in een nieuw tabblad. De metagegevens van de elementen worden als volgt weergegeven:
 
    * Een tag, die niet van toepassing is op alle elementen, maar alleen op een paar elementen, wordt cursief weergegeven.
    * Een label dat op alle elementen van toepassing is, wordt met een normaal lettertype weergegeven.
    * Andere metagegevens dan codes: de waarde van het veld wordt alleen weergegeven als deze voor alle geselecteerde elementen gelijk is.
 
-1. Klik **Download** om een ZIP-bestand te downloaden dat de elementen van de oorspronkelijke uitvoeringen bevat.
-1. Klik op de optie Tags bewerken naast het veld **Codes**.
+1. Klikken **Downloaden** om een ZIP-bestand te downloaden dat de elementen van de oorspronkelijke uitvoeringen bevat.
+1. Klik op de optie Tags bewerken naast de optie **Tags** veld.
 
    * Een tag die niet van toepassing is op alle elementen, maar alleen op een paar elementen, heeft een grijze achtergrond.
    * Een tag die van toepassing is op alle elementen heeft een witte achtergrond.
 
    U kunt:
 
-   * Klik op `x` om de tag voor alle elementen te verwijderen.
-   * Klik `+` om de markering aan alle activa toe te voegen.
-   * Klik op **pijl** en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
+   * Klikken `x` om de tag voor alle elementen te verwijderen.
+   * Klikken `+` om de tag aan alle elementen toe te voegen.
+   * Klik op de knop **pijl** en selecteer een tag om een nieuwe tag aan alle elementen toe te voegen.
 
-   Klik **OK** om de wijzigingen in het formulier te schrijven. Het vakje naast het **Codes** gebied wordt automatisch gecontroleerd.
+   Klikken **OK** om de wijzigingen in het formulier te schrijven. De doos naast **Tags** wordt automatisch gecontroleerd.
 
 1. Bewerk het veld Beschrijving. Stel bijvoorbeeld in op:
 
@@ -434,6 +434,6 @@ Elementen bewerken via de pagina Asset Editor:
 
    Opmerking: Het vak naast het veld wordt automatisch ingeschakeld wanneer het veld wordt bewerkt.
 
-1. Klik op **Metagegevens bijwerken** om het formulier te verzenden en de wijzigingen voor alle elementen op te slaan.
+1. Klikken **Metagegevens bijwerken** om het formulier te verzenden en de wijzigingen voor alle elementen op te slaan.
 
    Opmerking: alleen de geselecteerde metagegevens worden gewijzigd.

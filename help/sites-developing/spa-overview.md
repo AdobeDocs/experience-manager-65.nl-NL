@@ -82,7 +82,7 @@ U kunt de stroom van de interactie tussen de SPA en AEM begrijpen door de SPA Re
 
 Met inachtneming van de belangrijkste elementen van de SPA Editor, ziet de auteur de workflow op hoog niveau voor het bewerken van een SPA binnen AEM er als volgt uit.
 
-![naamloos1](assets/untitled1.gif)
+![untitled1](assets/untitled1.gif)
 
 1. SPA Editor wordt geladen.
 1. SPA wordt in een afzonderlijk frame geladen.

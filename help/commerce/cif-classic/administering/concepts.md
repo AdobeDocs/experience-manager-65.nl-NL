@@ -36,7 +36,6 @@ Dit betekent dat:
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -554,7 +553,7 @@ Promoties worden gewoonlijk niet onderhouden door productinformatiemanagers, maa
    * renderers en dialoogvensters voor bevorderingsbeheer
    * subcomponenten voor het teruggeven en het uitgeven configuratieparameters specifiek voor de bevorderingsmanagers
 
-AEM de promoties ook in de [Campagnebeheer](/help/sites-authoring/personalization.md):
+AEM de promoties ook in de [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campagne](/help/sites-authoring/personalization.md) Hiermee worden de aan/uit-tijden opgegeven
 * [ervaringen](/help/sites-authoring/personalization.md) *binnen* de campagne wordt gebruikt om elementen ( theaterpagina &#39; s , promoties , enz . ) te groeperen volgens het publiekssegment dat zij met

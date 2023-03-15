@@ -1,22 +1,21 @@
 ---
 title: Backbone-interactie
-seo-title: Backbone-interactie
+seo-title: Backbone interaction
 description: Conceptuele informatie over het gebruik van backbone-JavaScript-modellen in de AEM Forms-werkruimte.
-seo-description: Conceptuele informatie over het gebruik van backbone-JavaScript-modellen in de AEM Forms-werkruimte.
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: 040f42cb-3b76-4657-ba05-9e52647efb12
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
-
 
 # Backbone-interactie{#backbone-interaction}
 
@@ -24,17 +23,17 @@ Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectu
 
 Enkele belangrijke concepten zijn:
 
-**Backbone** modelContains gegevens, en de meeste logica met betrekking tot deze gegevens.
+**Backbone-model** Bevat gegevens, en de meeste logica met betrekking tot deze gegevens.
 
-**Backbone** viewUsed om de staat van het overeenkomstige model te vertegenwoordigen. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
+**Achtergrondweergave** Wordt gebruikt om de status van het corresponderende model weer te geven. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
 
-**HTML-** sjabloonEen omvattende sjabloon met plaatsaanduidingen die zijn gevuld door het model.
+**HTML-sjabloon** Een omvattende sjabloon met plaatsaanduidingen die zijn gevuld door het model.
 
-**AEM Forms-** werkruimteBevat verschillende afzonderlijke componenten. Elke component:
+**AEM Forms-werkruimte** Bevat verschillende afzonderlijke componenten. Elke component:
 
 * Vertegenwoordigt één logisch interface-element.
 * Dit kan een verzameling van vergelijkbare componenten zijn.
-* Deze indeling bestaat uit een backbonemodel, een backboneweergave en een HTML-sjabloon.
+* Opgemaakt uit het model van de Backbone, de mening van de Backbone, en malplaatje van de HTML.
 * Bevat verwijzing naar de dienst.
 * Bevat een verwijzing naar vereiste hulpprogramma&#39;s.
 
@@ -42,11 +41,11 @@ Wanneer een component wordt geïnitialiseerd, worden de volgende objecten gemaak
 
 * Er wordt een nieuwe instantie van het backbonemodel voor de component gemaakt. De service wordt in het model geïnjecteerd.
 * Er wordt een nieuw exemplaar van de backboneweergave gemaakt.
-* Instantie van het bijbehorende model, HTML-sjabloon en hulpprogramma&#39;s worden in de weergave geïnjecteerd.
+* Instantie van het bijbehorende model, de HTML-sjabloon en de hulpprogramma&#39;s worden in de weergave geïnjecteerd.
 
 In de backboneweergave is er een gebeurteniskaart die de verschillende gebeurtenissen in kaart brengt die zich als gevolg van gebruikersinterfaceinteractie met een overeenkomstige manager kunnen voordoen. Deze toewijzing wordt in werking gesteld zodra een component wordt geïnitialiseerd.
 
-Wanneer een mening wordt geïnitialiseerd, roept de mening zijn overeenkomstig model om gegevens van server te halen. Zodra alle gegevens die door een weergave worden vereist, beschikbaar zijn, worden de gegevens in de indeling gerenderd die door de HTML-sjabloon is opgegeven. Meerdere weergaven kunnen hetzelfde model voor communicatie delen.
+Wanneer een mening wordt geïnitialiseerd, roept de mening zijn overeenkomstig model om gegevens van server te halen. Zodra alle gegevens die door een mening worden vereist beschikbaar zijn, geeft de mening de gegevens in het formaat terug dat door het malplaatje van de HTML wordt gespecificeerd. Meerdere weergaven kunnen hetzelfde model voor communicatie delen.
 
 ![](do-not-localize/aem_forms_workflow.png)
 

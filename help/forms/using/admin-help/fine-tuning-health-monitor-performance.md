@@ -1,24 +1,23 @@
 ---
 title: Prestaties van de fijnafgestelde Health Monitor
-seo-title: Prestaties van de fijnafgestelde Health Monitor
+seo-title: Fine-tuning Health Monitor performance
 description: Leer hoe u de prestaties van de Health Monitor kunt verfijnen
-seo-description: Leer hoe u de prestaties van de Health Monitor kunt verfijnen
+seo-description: Learn how to fine-tune Health Monitor performance
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
-
-# Prestaties van de Health Monitor afstemmen{#fine-tuning-health-monitor-performance}
+# Prestaties van de fijnafgestelde Health Monitor{#fine-tuning-health-monitor-performance}
 
 Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft enig effect op de prestaties van uw AEM formulieromgeving. Dit effect kan worden beheerd door de Java-opties in te stellen die hieronder in uw toepassingsserver worden vermeld.
 
@@ -67,16 +66,16 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 ## Java-opties toevoegen aan JBoss {#add-java-options-to-jboss}
 
 1. Stop de JBoss-toepassingsserver.
-1. Open *[appserver root]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een redacteur en voeg om het even welke opties van Java toe zoals vereist.
+1. Open de *[appserver-hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een editor en voeg zo nodig een van de Java-opties toe.
 1. Start de server opnieuw.
 
 ## Java-opties toevoegen aan WebLogic {#add-java-options-to-weblogic}
 
-1. Start de WebLogic-beheerconsole door https://[hostnaam]:&#39;port&#39;/console te typen in de URL-regel van een webbrowser.
+1. Start de WebLogic-beheerconsole met https://[hostnaam]:&#39;port&#39;/console in de URL-regel van een webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.
-1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Als u bijvoorbeeld toevoegt - `Dadobe.healthmonitor.enabled=false` schakelt u Health Monitor uit.
+1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Bijvoorbeeld: toevoegen - `Dadobe.healthmonitor.enabled=false` Schakelt Health Monitor uit.
 1. Klik op Opslaan en vervolgens op Wijzigingen activeren.
 1. Start WebLogic managed server opnieuw.
 
@@ -93,4 +92,3 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
 1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
-

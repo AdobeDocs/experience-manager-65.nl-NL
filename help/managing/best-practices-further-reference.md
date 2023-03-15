@@ -312,7 +312,7 @@ Het vaststellen van doelen voor zoekverzoeken is ook hier een kwestie van ervari
 * een beoordeling van de frequentie waarmee de zoekopdracht zal worden gebruikt in vergelijking met andere doelstellingen
 * uw persistentiemanager
 * uw zoekindex
-* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, is sneller dan een geavanceerd zoeken waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
+* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, wordt sneller uitgevoerd dan een geavanceerde zoekopdracht waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
 
 Deze moeten vanaf het begin van uw project worden gepland en geïntegreerd. De volgende controlemechanismen zijn beschikbaar:
 

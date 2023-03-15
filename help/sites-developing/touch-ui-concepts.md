@@ -1,8 +1,8 @@
 ---
 title: Concepten van de interface AEM Touch-Enabled
-seo-title: Concepten van de interface AEM Touch-Enabled
+seo-title: Concepts of the AEM Touch-Enabled UI
 description: Met AEM 5.6-Adobe werd een nieuwe, aanraakgeoptimaliseerde interface met responsief ontwerp voor de auteursomgeving geïntroduceerd
-seo-description: Met AEM 5.6-Adobe werd een nieuwe, aanraakgeoptimaliseerde interface met responsief ontwerp voor de auteursomgeving geïntroduceerd
+seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
-translation-type: tm+mt
-source-git-commit: ec528e115f3e050e4124b5c232063721eaed8df5
+exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2176'
 ht-degree: 0%
 
 ---
 
+# Concepten van de interface AEM Touch-Enabled{#concepts-of-the-aem-touch-enabled-ui}
 
-# Concepten van AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
-
-AEM beschikt over een interface met aanraakbediening met [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de auteursomgeving die is ontworpen om zowel op touch- als desktopapparaten te werken.
+AEM beschikt over een interface met aanraakbediening met [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de auteursomgeving die voor zowel aanraak als Desktopapparaten ontworpen is te werken.
 
 >[!NOTE]
 >
@@ -41,7 +40,7 @@ De interface met aanraakbediening bevat:
    * Geeft aan welke console u momenteel gebruikt en/of uw locatie binnen die console
    * Selectie voor de linkerspoorstaaf
    * Broodkruimels
-   * Toegang tot de juiste **Create**-handelingen
+   * Toegang tot **Maken** handelingen
    * Selecties weergeven
 * Het inhoudsgebied dat:
    * Hiermee geeft u de inhoudsitems weer (pagina&#39;s, middelen, forumposts, enz.)
@@ -53,12 +52,12 @@ De interface met aanraakbediening bevat:
 
 >[!NOTE]
 >
->Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen zal de functionaliteit echter terugkeren naar de klassieke interface. Zie [Status van aanraakinterface](/help/release-notes/touch-ui-features-status.md) voor meer informatie.
+>Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen zal de functionaliteit echter terugkeren naar de klassieke interface. Zie [Status van TouchUI-functie](/help/release-notes/touch-ui-features-status.md) voor meer informatie .
 
 De interface met aanraakbediening is ontworpen door Adobe om consistentie te bieden in de gebruikerservaring van meerdere producten. Het is gebaseerd op:
 
-* **Coral UI**  (CUI) een implementatie van visuele stijl van Adobe voor aanraking-toegelaten UI. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
-* **De componenten van graniet** UI worden gebouwd met Koraal UI.
+* **Koraalinterface** (CUI) een implementatie van een visuele stijl voor de aanraakinterface. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
+* **Graniet-interface** de componenten worden gebouwd met Koral UI.
 
 De basisbeginselen van de interface met aanraakbediening zijn:
 
@@ -70,9 +69,9 @@ De basisbeginselen van de interface met aanraakbediening zijn:
 * Ingesloten tests opnemen
 * Het bottom-up ontwerp om ervoor te zorgen dat deze principes op elk element en component worden toegepast
 
-Raadpleeg het artikel [Structuur van de interface AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) voor een verder overzicht van de interface voor aanraakbediening.
+Raadpleeg het artikel voor een verder overzicht van de interface met aanraakbediening [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md).
 
-## AEM Technologiestapel {#aem-technology-stack}
+## AEM {#aem-technology-stack}
 
 AEM gebruikt het Granite-platform als basis en het Granite-platform bevat onder andere de Java Content Repository.
 
@@ -94,7 +93,7 @@ Graniet is Adobe Open Web-stapel, die diverse componenten verstrekt:
 >
 >Graniet wordt uitgevoerd als een open ontwikkelingsproject binnen Adobe: bijdragen aan de code , discussies en kwesties worden geleverd door het hele bedrijf .
 >
->Graniet is echter **geen** een opensource-project. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar Adobe tekent een duidelijke lijn tussen wat openbaar en wat intern is.
+>Graniet is echter **niet** een opensource-project. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar Adobe tekent een duidelijke lijn tussen wat openbaar en wat intern is.
 
 ## Graniet-interface {#granite-ui}
 
@@ -113,8 +112,8 @@ Deze voldoen aan de eisen:
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
 
-[Get ](assets/graniteui.pdf)
-FileThe Granite UI:
+[Bestand ophalen](assets/graniteui.pdf)
+De graniet-interface:
 
 * Gebruikt de RESTful-architectuur van Sling
 * Hiermee implementeert u componentbibliotheken die zijn bedoeld voor het bouwen van inhoudgerichte webtoepassingen
@@ -126,28 +125,28 @@ FileThe Granite UI:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Granite UI Foundation ](#granite-ui-foundation-components)
-ComponentsThis library of foundation components can be used or extended by other libraries.
+* [Graniet UI Foundation-componenten](#granite-ui-foundation-components)
+Deze bibliotheek van stichtingscomponenten kan door andere bibliotheken worden gebruikt of worden uitgebreid.
 * [Algemene UI-componenten](#granite-ui-administration-components)
 
-### Client Side versus Server Side {#client-side-vs-server-side}
+### Client-kant versus server-kant {#client-side-vs-server-side}
 
 De cliënt-server mededeling in granite UI bestaat uit hypertext, niet voorwerpen, zodat is er geen behoefte aan de cliënt om de bedrijfslogica te begrijpen
 
-* De HTML wordt door de server verrijkt met semantische gegevens
+* De server verrijkt de HTML met semantische gegevens
 * De client verrijkt de hypertekst met hypermedia (interactie)
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
 #### Client-kant {#client-side}
 
-Hierbij wordt een extensie van de HTML-woordenlijst gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een gelijkaardige benadering aan [WAI-ARIA](https://www.w3.org/TR/wai-aria/) en [microformats](https://microformats.org/).
+Hierbij wordt een uitbreiding van de woordenlijst HTML gebruikt, op voorwaarde dat de auteur zijn voornemen kenbaar kan maken om een interactieve webapp te maken. Dit is een vergelijkbare aanpak [WAI-ARIA](https://www.w3.org/TR/wai-aria/) en [microformaten](https://microformats.org/).
 
 Het bestaat voornamelijk uit een verzameling interactiepatronen (bijvoorbeeld het asynchroon verzenden van een formulier) die worden geïnterpreteerd door JS- en CSS-codes die op de client worden uitgevoerd. De rol van de client-kant bestaat uit het verbeteren van de opmaak (gegeven als de hypermediapliteit van de server) voor interactiviteit.
 
 De client-kant is onafhankelijk van servertechnologie. Zolang de server de aangewezen prijsverhoging geeft, kan de cliënt-kant zijn rol vervullen.
 
-Momenteel worden de JS- en CSS-codes geleverd als graniet [clientlibs](/help/sites-developing/clientlibs.md) onder de categorie:
+Momenteel worden de JS- en CSS-codes geleverd als graniet [clientlibs](/help/sites-developing/clientlibs.md) in de categorie:
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -157,7 +156,7 @@ Deze worden geleverd als onderdeel van het inhoudspakket:
 
 #### Server-kant {#server-side}
 
-Dit wordt gevormd door een inzameling van sling componenten die de auteur toelaten om *samen te stellen* een webapp snel. De ontwikkelaar ontwikkelt componenten, de auteur assembleert de componenten aan webapp. De rol van de server-kant is de hypermedia betaalbaarheid (prijsverhoging) aan de cliënt te geven.
+Dit wordt gevormd door een inzameling van hellende componenten die de auteur toelaten om *samenstellen* snel een webapp. De ontwikkelaar ontwikkelt componenten, de auteur assembleert de componenten aan webapp. De rol van de server-kant is de hypermedia betaalbaarheid (prijsverhoging) aan de cliënt te geven.
 
 Momenteel bevinden de componenten zich in de granietopslagplaats op:
 
@@ -178,7 +177,7 @@ De verschillen tussen de gebruikersinterface van Granite en ExtJS (die voor de k
    <td><strong>Graniet-interface</strong></td>
   </tr>
   <tr>
-   <td>Externe procedureoproep<br /> </td>
+   <td>Externe procedure<br /> </td>
    <td>Overgangen naar status</td>
   </tr>
   <tr>
@@ -200,9 +199,9 @@ De verschillen tussen de gebruikersinterface van Granite en ExtJS (die voor de k
  </tbody>
 </table>
 
-### Graniet UI Foundation Components {#granite-ui-foundation-components}
+### Graniet UI Foundation-componenten {#granite-ui-foundation-components}
 
-De [granite UI stichtingscomponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
+De [Basiscomponenten van graniet UI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) verstrekken de basisbouwstenen nodig voor de bouw van om het even welke UI. Deze omvatten onder meer:
 
 * Knop
 * Hyperlink
@@ -212,7 +211,7 @@ De basiscomponenten zijn te vinden onder:
 
 `/libs/granite/ui/components/foundation`
 
-Deze bibliotheek bevat een graniet UI-component voor elk koraalelement. Een component wordt aangedreven door inhoud, met zijn configuratie die in de bewaarplaats verblijft. Hierdoor is het mogelijk een Granite UI-toepassing samen te stellen zonder HTML-opmaak handmatig te schrijven.
+Deze bibliotheek bevat een graniet UI-component voor elk koraalelement. Een component wordt aangedreven door inhoud, met zijn configuratie die in de bewaarplaats verblijft. Hierdoor is het mogelijk een Granite UI-toepassing samen te stellen zonder handmatig markeringen voor HTML te schrijven.
 
 Doel:
 
@@ -257,9 +256,9 @@ Wanneer het bevorderen van code ExtJS om granite UI te gebruiken, verstrekt de v
 | `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
-### Algemene UI-beheercomponenten {#granite-ui-administration-components}
+### Algemene UI-componenten {#granite-ui-administration-components}
 
-De [granite UI-beheercomponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) bouwen voort op de basiscomponenten om generieke bouwstenen te leveren die elke beheertoepassing kan implementeren. Deze omvatten onder meer:
+De [Graniet UI-beheercomponenten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) bouwen op de stichtingscomponenten voort om generische bouwstenen te verstrekken die om het even welke beleidstoepassing kan uitvoeren. Deze omvatten onder meer:
 
 * Algemene navigatiebalk
 * Rail (skelet)
@@ -268,7 +267,7 @@ De [granite UI-beheercomponenten](https://helpx.adobe.com/experience-manager/6-5
 Doel:
 
 * Unified look-and-feel voor beheertoepassingen
-* RAD voor beheertoepassingen
+* Rad voor beheertoepassingen
 
 Implementatie:
 
@@ -279,8 +278,8 @@ Implementatie:
 
 CoralUI.pdf
 
-[Get ](assets/coralui.pdf)
-FileCoral UI (CUI) is een implementatie van visuele stijl voor Adobe voor aanraking-toegelaten UI, die is ontworpen om consistentie in de gebruikerservaring over veelvoudige producten te verstrekken. Koraal UI verstrekt alles u de visuele stijl moet goedkeuren die op het auteursmilieu wordt gebruikt.
+[Bestand ophalen](assets/coralui.pdf)
+Koraal UI (koral UI) is een implementatie van CUI (Adobe style) voor aanraking-toegelaten UI, die is ontworpen om consistentie in de gebruikerservaring over veelvoudige producten te verstrekken. Koraal UI verstrekt alles u de visuele stijl moet goedkeuren die op het auteursmilieu wordt gebruikt.
 
 >[!CAUTION]
 >
@@ -294,34 +293,30 @@ FileCoral UI (CUI) is een implementatie van visuele stijl voor Adobe voor aanrak
 >* Adobe zakelijk onderpand, advertenties en presentaties.
 >* De gebruikersinterface van toepassingen met Adobe-branding (het lettertype mag niet direct beschikbaar zijn voor andere toepassingen).
 >* Met kleine aanpassingen.
-
 >
->
-Het gebruik van de koraalinterface moet worden vermeden in:
+>Het gebruik van de koraalinterface moet worden vermeden in:
 >
 >* Documenten en andere artikelen die geen verband houden met Adobe.
 >* Omgevingen voor het maken van inhoud (waar de voorafgaande items door anderen kunnen worden gegenereerd).
 >* Toepassingen/componenten/webpagina&#39;s die niet duidelijk zijn verbonden met Adobe.
-
 >
-
 
 
 De koraalinterface is een verzameling bouwstenen voor het ontwikkelen van webtoepassingen.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Ontworpen om modulair van het begin te zijn, vormt elke module een afzonderlijke laag die op zijn primaire rol wordt gebaseerd. Hoewel de lagen zijn ontworpen om elkaar te steunen, kunnen zij ook onafhankelijk worden gebruikt indien nodig. Hierdoor kunt u de gebruikerservaring van Coral implementeren in een HTML-omgeving.
+Ontworpen om modulair van het begin te zijn, vormt elke module een afzonderlijke laag die op zijn primaire rol wordt gebaseerd. Hoewel de lagen zijn ontworpen om elkaar te steunen, kunnen zij ook onafhankelijk worden gebruikt indien nodig. Hierdoor kan de gebruikerservaring van Coral worden geïmplementeerd in elke omgeving die geschikt is voor HTML.
 
-Met de koraalinterface is het niet verplicht een bepaald ontwikkelingsmodel en/of -platform te gebruiken. Het primaire doel van Coral is uniforme en schone markeringen van HTML5, onafhankelijk van de daadwerkelijke methode te verstrekken die wordt gebruikt om deze prijsverhoging uit te zenden. Dit kan worden gebruikt voor client- of server-side rendering, sjablonen, JSP-, PHP- of zelfs Adobe Flash RIA-toepassingen - om er maar een paar te noemen.
+Met de koraalinterface is het niet verplicht een bepaald ontwikkelingsmodel en/of -platform te gebruiken. Het primaire doel van Coral is verenigde en schone HTML5 prijsverhoging te verstrekken, onafhankelijk van de daadwerkelijke methode die wordt gebruikt om deze prijsverhoging uit te zenden. Dit kan worden gebruikt voor client- of server-side rendering, sjablonen, JSP-, PHP- of zelfs Adobe Flash RIA-toepassingen - om er maar een paar te noemen.
 
 ### HTML-elementen - De opmaaklaag {#html-elements-the-markup-layer}
 
-De HTML-elementen bieden een algemene look en feel voor alle basis-UI-elementen (zoals navigatiebalk, knop, menu, rail, enz.).
+De HTML-elementen bieden een gemeenschappelijke look en feel voor alle UI-basiselementen (zoals navigatiebalk, knop, menu, spoorstaaf).
 
 Op het eenvoudigste niveau is een HTML-element een HTML-tag met een toegewezen klassenaam. Complexere elementen kunnen bestaan uit meerdere tags, die binnen elkaar zijn genest (op een specifieke manier).
 
-De CSS wordt gebruikt om het daadwerkelijke uiterlijk te geven. Om het mogelijk te maken de look-and-feel (bijvoorbeeld voor branding) eenvoudig aan te passen, worden werkelijke stijlwaarden gedeclareerd als variabelen die tijdens runtime worden uitgebreid met de [LESS](https://lesscss.org/)-voorprocessor.
+De CSS wordt gebruikt om het daadwerkelijke uiterlijk te geven. Om het uiterlijk van de stijl gemakkelijk aan te passen (bijvoorbeeld voor branding) worden de werkelijke stijlwaarden gedeclareerd als variabelen die door de [MINDER](https://lesscss.org/) pre-processor tijdens runtime.
 
 Doel:
 
@@ -371,28 +366,28 @@ Veel van de HTML-elementen moeten een dynamisch gedrag vertonen, zoals het opene
 
 Een insteekmodule is:
 
-* Ontworpen voor gebruik op een specifiek DOM-element. Een dialoogplug-in verwacht bijvoorbeeld `DIV class=dialog` te vinden
-* Algemeen in de natuur. Een layoutmanager biedt bijvoorbeeld een lay-out voor elke lijst met `DIV`- of `LI`-elementen
+* Ontworpen voor gebruik op een specifiek DOM-element. Een insteekmodule voor het dialoogvenster verwacht bijvoorbeeld dat deze kan worden gevonden `DIV class=dialog`
+* Algemeen in de natuur. Een indelingsmanager biedt bijvoorbeeld een indeling voor elke lijst met `DIV` of `LI` elementen
 
 Het gedrag van de stop kan met parameters worden aangepast, door één van beiden:
 
 * Het overgaan van de parameters door middel van een vraag javascript
-* Toegewezen `data-*`-kenmerken gebruiken die zijn gekoppeld aan de HTML-markering
+* Toegewezen gebruiken `data-*` kenmerken die zijn gekoppeld aan de markering HTML
 
 Hoewel de ontwikkelaar de beste aanpak voor elke plug-in kan kiezen, is de duimregel:
 
-* `data-*` kenmerken voor opties met betrekking tot HTML-lay-out. Als u bijvoorbeeld het aantal kolommen wilt opgeven
+* `data-*` kenmerken voor HTML-opmaakopties. Als u bijvoorbeeld het aantal kolommen wilt opgeven
 * API-opties/klassen voor functionaliteit met betrekking tot gegevens. Bijvoorbeeld door de lijst met weer te geven items samen te stellen
 
-Hetzelfde concept wordt gebruikt om formuliervalidatie te implementeren. Voor een element dat u wilt valideren, moet u het vereiste invoerformulier opgeven als aangepast `data-*`-kenmerk. Dit kenmerk wordt vervolgens gebruikt als een optie voor een validatie-insteekmodule.
+Hetzelfde concept wordt gebruikt om formuliervalidatie te implementeren. Voor een element dat u wilt valideren, moet u het vereiste invoerformulier opgeven als een aangepast formulier `data-*` kenmerk. Dit kenmerk wordt vervolgens gebruikt als een optie voor een validatie-insteekmodule.
 
 >[!NOTE]
 >
->Waar mogelijk moet native HTML5-formuliervalidatie worden gebruikt en/of uitgebreid.
+>waar mogelijk moet native HTML5-formuliervalidatie worden gebruikt en/of uitgebreid.
 
 Doel:
 
-* Dynamisch gedrag voor HTML-elementen opgeven
+* Dynamisch gedrag voor HTML Elements opgeven
 * Aangepaste lay-outs bieden die niet mogelijk zijn met zuivere CSS
 * Formuliervalidatie uitvoeren
 * Geavanceerde DOM-bewerking uitvoeren
@@ -400,9 +395,9 @@ Doel:
 Implementatie:
 
 * jQuery-insteekmodule, gekoppeld aan specifiek DOM-element(en)
-* Kenmerken `data-*` gebruiken om gedrag aan te passen
+* Gebruiken `data-*` kenmerken om gedrag aan te passen
 
-Een uittreksel van voorbeeldmarkering (noteer de opties die zijn opgegeven als data-* kenmerken):
+Een uittreksel van voorbeeldmarkering (noteer de opties die als data- worden opgegeven&#42; kenmerken):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -436,7 +431,7 @@ Dit wordt weergegeven als:
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-Met de `cardLayout`-plug-in worden de omsloten `UL`-elementen weergegeven op basis van hun respectieve hoogten en ook rekening houdend met de breedte van het bovenliggende element.
+De `cardLayout` insteekmodule maakt de ingesloten `UL` elementen op basis van hun respectieve hoogten en ook rekening houdend met de breedte van het bovenliggende element.
 
 ### HTML Elements-widgets {#html-elements-widgets}
 
@@ -451,7 +446,7 @@ Doel:
 
 Implementatie:
 
-* jQuery-insteekmodule + HTML-opmaak
+* jQuery-insteekmodule + HTML-opmaakcode
 * Kan client/server-side sjablonen gebruiken
 
 Voorbeeldopmaak is:
@@ -467,7 +462,7 @@ $(".tagManager").tagsManager({
         prefilled: ["Pisa", "Rome"] })
 ```
 
-De insteekmodule geeft HTML-opmaak weer (deze markering gebruikt basiselementen, die mogelijk intern andere insteekmodules gebruiken):
+De plug-in geeft HTML-markeringen uit (deze markering gebruikt basiselementen, die mogelijk intern andere plug-ins gebruiken):
 
 ```
 <span>Pisa</code>
@@ -496,7 +491,7 @@ Deze bibliotheek is een verzameling javascript-hulplijnplug-ins en/of -functies:
 
 Dit zijn onder andere XSS-afhandeling en de gebeurtenisbus.
 
-Hoewel de insteekmodules en widgets voor HTML-elementen afhankelijk kunnen zijn van de functionaliteit die door de hulpprogrammabibliotheek wordt geboden, kan de hulpprogrammabibliotheek niet sterk afhankelijk zijn van de elementen of widgets zelf.
+Hoewel de HTML-elemenu&#39;s en -widgets kunnen vertrouwen op functionaliteit die wordt geleverd door de nutsbibliotheek, kan de hulpprogrammabibliotheek niet afhankelijk zijn van de elementen of widgets zelf.
 
 Doel:
 

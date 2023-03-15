@@ -1,22 +1,21 @@
 ---
 title: Pagina-eigenschappen bewerken
-seo-title: Pagina-eigenschappen bewerken
+seo-title: Editing Page Properties
 description: De eigenschappen van een pagina kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina's kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is beschikbaar, indien van toepassing.
-seo-description: De eigenschappen van een pagina kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina's kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is beschikbaar, indien van toepassing.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
-
 
 # Pagina-eigenschappen bewerken{#editing-page-properties}
 
@@ -26,11 +25,11 @@ U kunt de vereiste eigenschappen voor een pagina definiëren. Deze kunnen afhank
 
 De eigenschappen zijn verdeeld over verschillende tabbladen:
 
-### Standaard {#basic}
+### Basis {#basic}
 
 * **Titel**
 
-   De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Tablijst Websites** en de **Kaart/lijstweergaven van** Sites.
+   De titel van de pagina wordt op verschillende locaties weergegeven. De **Websites** en de **Sites** kaart-/lijstweergaven.
 
    Dit is een verplicht veld.
 
@@ -56,7 +55,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Navigatietitel**
 
-   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Als dit leeg is, wordt **Title** gebruikt.
+   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
 
 * **Ondertitel**
 
@@ -82,7 +81,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
    Hiermee kunt u een vanity-URL voor deze pagina invoeren. Hierdoor hebt u een kortere en expressievere URL.
 
-   Als de URL vanity bijvoorbeeld is ingesteld op w `elcome`op de pagina die wordt aangeduid met het pad / `v1.0/startpage`voor de website h `ttp://example.com,`, zou h `ttp://example.com/welcome`de vanity URL van h `ttp://example.com/content/v1.0/startpage` zijn
+   Als de URL voor Vanity bijvoorbeeld is ingesteld op w `elcome`naar de pagina die wordt aangegeven door het pad / `v1.0/startpage`voor de website h `ttp://example.com,` vervolgens h `ttp://example.com/welcome`zou de vanity URL van h zijn `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -108,7 +107,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Ontwerp**
 
-   Geef het [ontwerp](/help/sites-developing/designer.md) aan dat voor deze pagina moet worden gebruikt.
+   Geef de [ontwerp](/help/sites-developing/designer.md) die voor deze pagina moet worden gebruikt.
 
 * **Alias**
 
@@ -116,7 +115,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Gesloten gebruikersgroep inschakelen**
 
-   Hiermee wordt het gebruik van [gesloten gebruikersgroepen](/help/sites-administering/cug.md) (CUG&#39;s) ingeschakeld (of uitgeschakeld).
+   Hiermee wordt het gebruik van [gesloten gebruikersgroepen](/help/sites-administering/cug.md) (CUG&#39;s).
 
 * **Aanmeldingspagina**
 
@@ -152,35 +151,35 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Cloud Services**
 
-   Definieer eigenschappen voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
+   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisatie {#personalization}
 
 * **Personalisatie**
 
-   Selecteer een [Merk om een werkingsgebied voor het richten ](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) te specificeren.
+   Selecteer een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ### Machtigingen {#permissions}
 
-* **Machtigingen**  (interface met aanraakgeoptimaliseerde interface)
+* **Machtigingen** (interface met aanraakoptimalisatie)
 
-   Bekijk de [effectieve toestemmingen en voeg nieuwe toestemmingen](/help/sites-administering/user-group-ac-admin.md) toe.
+   De weergave van [effectieve machtigingen en nieuwe machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blauwdruk {#blueprint}
 
 * **Blauwdruk**
 
-   Definieer eigenschappen voor een pagina Vervagen binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+   Eigenschappen definiëren voor een pagina Vervagen in [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-   Definieer eigenschappen voor een pagina van Live kopie binnen [beheer met meerdere sites](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+   Eigenschappen definiëren voor een pagina van Live kopie binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 
-* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmelden van pagina**, **Offlinepagina**, onder andere.
+* Koppelingen maken naar pagina&#39;s die functionaliteit voor de hele site bieden, zoals **Aanmeldingspagina**, **Offline pagina**, onder andere.
 
 ## Pagina-eigenschappen bewerken {#editing-page-properties-2}
 
@@ -190,9 +189,8 @@ Pagina-eigenschappen definiëren de verschillende eigenschappen van de pagina, z
 
 1. Open de pagina die u wilt bewerken.
 
-1. Open in de assistent het tabblad **Pagina** en selecteer **Pagina-eigenschappen...**
+1. Open in het hulpstuk de **Pagina** dan selecteert u **Pagina-eigenschappen...**
 
    Hiermee wordt een dialoogvenster met meerdere tabbladen geopend.
 
 1. Breng de gewenste wijzigingen aan en klik op **OK** om op te slaan.
-

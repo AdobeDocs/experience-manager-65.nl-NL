@@ -1,8 +1,8 @@
 ---
 title: OSGi configureren
-seo-title: OSGi configureren
+seo-title: Configuring OSGi
 description: OSGi is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
-seo-description: OSGi is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
+seo-description: OSGi is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and their configuration. This article details how you can manage the configuration settings for such bundles.
 uuid: b39059a5-dd61-486a-869a-0d7a732c3a47
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,30 +10,29 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
 
+# OSGi configureren{#configuring-osgi}
 
-# Het vormen OSGi{#configuring-osgi}
+[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
-[](https://www.osgi.org/) OSGiis een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
+OSGi &quot;*biedt de gestandaardiseerde primitieven die het mogelijk maken toepassingen te maken op basis van kleine, herbruikbare en gezamenlijke onderdelen. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
 
-OSGi &quot;*verstrekt de gestandaardiseerde primitieven die toepassingen toestaan om van kleine, herbruikbare en samenwerkende componenten worden geconstrueerd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
-
-Hierdoor kunt u eenvoudig bundels beheren, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke Component OSGi (zie [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is bevat in één van de diverse bundels.
+Hierdoor kunt u eenvoudig bundels beheren, aangezien deze kunnen worden gestopt, geïnstalleerd en afzonderlijk kunnen worden gestart. De onderlinge afhankelijkheden worden automatisch verwerkt. Elke component OSGi (zie [OSGi-specificatie](https://www.osgi.org/Specifications/HomePage)) bevindt zich in een van de verschillende bundels.
 
 U kunt de configuratie-instellingen voor dergelijke bundels beheren door:
 
-* het gebruiken van [Adobe CQ Webconsole](#osgi-configuration-with-the-web-console)
+* met de [Adobe CQ-webconsole](#osgi-configuration-with-the-web-console)
 * gebruiken [configuratiebestanden](#osgi-configuration-with-configuration-files)
-* configureren van [content-nodes ( `sling:OsgiConfig`) in de repository](#osgi-configuration-in-the-repository)
+* configureren [content-nodes ( `sling:OsgiConfig`) in de opslagplaats](#osgi-configuration-in-the-repository)
 
-Één van beide methode kan worden gebruikt hoewel er subtiele verschillen zijn, hoofdzakelijk met betrekking tot [loopwijze](/help/sites-deploying/configure-runmodes.md):
+Beide methoden kunnen worden gebruikt, hoewel er subtiele verschillen zijn, vooral met betrekking tot [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md):
 
 * [Adobe CQ-webconsole](#osgi-configuration-with-the-web-console)
 
@@ -51,7 +50,7 @@ U kunt de configuratie-instellingen voor dergelijke bundels beheren door:
 * [content-nodes (sling:osgiConfig) in de repository](#osgi-configuration-in-the-repository)
 
    * Dit vereist handconfiguratie gebruikend CRXDE Lite.
-   * Vanwege de naamgevingsconventies van de `sling:OsgiConfig`-knooppunten kunt u de configuratie koppelen aan een specifieke [uitvoeringsmodus](/help/sites-deploying/configure-runmodes.md). U kunt zelfs configuraties voor meer dan één uitvoeringswijze in de zelfde bewaarplaats opslaan.
+   * Vanwege de naamconventies van de `sling:OsgiConfig` knooppunten, kunt u de configuratie aan een specifieke [uitvoeringsmodus](/help/sites-deploying/configure-runmodes.md). U kunt zelfs configuraties voor meer dan één uitvoeringswijze in de zelfde bewaarplaats opslaan.
    * Eventuele geschikte configuraties worden direct toegepast (afhankelijk van de uitvoeringsmodus).
 
 Welke methode u ook gebruikt, al deze configuratiemethoden:
@@ -63,17 +62,17 @@ Welke methode u ook gebruikt, al deze configuratiemethoden:
 
 >[!NOTE]
 >
->De details van bepaalde belangrijke montages zijn vermeld onder [OSGi de Montages van de Configuratie.](/help/sites-deploying/osgi-configuration-settings.md)
+>Details van bepaalde belangrijke instellingen worden weergegeven onder [OSGi-configuratie-instellingen.](/help/sites-deploying/osgi-configuration-settings.md)
 
-## OSGi-configuratie met de webconsole {#osgi-configuration-with-the-web-console}
+## OSGi Configuratie met de Console van het Web {#osgi-configuration-with-the-web-console}
 
-De [webconsole](/help/sites-deploying/web-console.md) in AEM biedt een gestandaardiseerde interface voor het configureren van de bundels. Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
+De [Webconsole](/help/sites-deploying/web-console.md) in AEM biedt een gestandaardiseerde interface voor het configureren van de bundels. De **Configuratie** tab wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
 
 Eventuele aangebrachte wijzigingen worden onmiddellijk toegepast op de relevante OSGi-configuratie. Er is geen herstart nodig.
 
 >[!NOTE]
 >
->Wijzigingen die in de webconsole worden aangebracht, worden in de opslagplaats opgeslagen als [configuratiebestanden](#osgi-configuration-with-configuration-files). Deze kunnen worden opgenomen in inhoudspakketten voor hergebruik in verdere installaties.
+>Wijzigingen die in de webconsole zijn aangebracht, worden in de opslagplaats opgeslagen als [configuratiebestanden](#osgi-configuration-with-configuration-files). Deze kunnen worden opgenomen in inhoudspakketten voor hergebruik in verdere installaties.
 
 >[!NOTE]
 >
@@ -83,9 +82,9 @@ Eventuele aangebrachte wijzigingen worden onmiddellijk toegepast op de relevante
 
 Een configuratie bijwerken met de webconsole:
 
-1. Open het tabblad **Configuration** van de webconsole door:
+1. Toegang krijgen tot **Configuratie** tabblad van de webconsole door:
 
-   * Het openen van de Webconsole van de verbinding op **Hulpmiddel -> Verrichtingen** menu. Na het registreren in de console kunt u het drop-down menu gebruiken van:
+   * De webconsole openen via de koppeling op het tabblad **Gereedschap -> Bewerkingen** -menu. Na het registreren in de console kunt u het drop-down menu gebruiken van:
 
       **OSGi >**
 
@@ -96,28 +95,28 @@ Een configuratie bijwerken met de webconsole:
 
 1. Selecteer de bundel die u door één van beiden wilt vormen:
 
-   * klikken op het pictogram **Bewerken** voor die bundel
+   * klikken op de **Bewerken** pictogram voor die bundel
    * klikken op de **Naam** van de bundel
 
-1. Er wordt een dialoogvenster geopend. Hier kunt u desgewenst bewerken. Stel bijvoorbeeld **Logniveau** in op `INFO`:
+1. Er wordt een dialoogvenster geopend. Hier kunt u desgewenst bewerken. Stel bijvoorbeeld de **Logboekniveau** tot `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    >[!NOTE]
    >
-   >Updates worden in de opslagplaats opgeslagen als [configuratiebestanden](#osgi-configuration-with-configuration-files). Als u deze naderhand wilt zoeken (bijvoorbeeld om de inhoud op te nemen in een inhoudspakket voor gebruik op een andere instantie), moet u een notitie maken van de blijvende identiteit ( `PID`).
+   >Updates worden in de opslagplaats opgeslagen als [configuratiebestanden](#osgi-configuration-with-configuration-files). Als u deze achteraf wilt zoeken (bijvoorbeeld om de inhoud op te nemen in een inhoudspakket voor gebruik op een ander exemplaar), moet u een notitie maken van de blijvende identiteit ( `PID`).
 
-1. Klik **Opslaan**.
+1. Klikken **Opslaan**.
 
    Uw veranderingen worden onmiddellijk toegepast op de relevante configuratie OSGi van het lopende systeem, wordt geen nieuw begin vereist.
 
    >[!NOTE]
    >
-   >U kunt van verwant [configuratiedossier(s)](#osgi-configuration-with-configuration-files) nu de plaats bepalen; bijvoorbeeld om op te nemen in een inhoudspakket voor gebruik op een andere instantie.
+   >U kunt nu de verwante [configuratiebestand(en)](#osgi-configuration-with-configuration-files); bijvoorbeeld om op te nemen in een inhoudspakket voor gebruik op een andere instantie.
 
 ## OSGi-configuratie met configuratiebestanden {#osgi-configuration-with-configuration-files}
 
-Wijzigingen in de configuratie die zijn aangebracht met de webconsole blijven in de opslagplaats als configuratiebestanden ( `.config`) onder:
+De veranderingen van de configuratie die worden aangebracht gebruikend de Console van het Web worden voortgeduurd in de bewaarplaats als configuratiedossiers ( `.config`) onder:
 
 `/apps`
 
@@ -125,18 +124,18 @@ Deze kunnen in inhoudspakketten worden opgenomen en op andere instanties worden 
 
 >[!NOTE]
 >
->De indeling van de configuratiebestanden is zeer specifiek. Zie de [Sling Apache-documentatie](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) voor meer informatie.
+>De indeling van de configuratiebestanden is erg specifiek. Zie de [Documentatie over Sling Apache](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) voor volledige informatie.
 >
 >Daarom wordt aangeraden het configuratiebestand te maken en te onderhouden door werkelijke wijzigingen aan te brengen in de webconsole.
 
 De console van het Web toont geen aanwijzing van waar in de bewaarplaats uw veranderingen zijn bewaard, maar zij kunnen gemakkelijk worden gevestigd:
 
-1. Maak het configuratiebestand door een eerste wijziging aan te brengen in de webconsole](#osgi-configuration-with-the-web-console).[
+1. Maak het configuratiebestand door [een eerste wijziging aanbrengen in de webconsole](#osgi-configuration-with-the-web-console).
 1. Open CRXDE Lite.
-1. Selecteer in het menu **Extra** **Query..** .
-1. Verzend een vraag van **Type** `SQL` om naar PID van de configuratie te zoeken die u hebt bijgewerkt.
+1. In de **Gereedschappen** menu selecteren **Query uitvoeren...** .
+1. Een query verzenden van **Type** `SQL` om naar PID van de configuratie te zoeken die u hebt bijgewerkt.
 
-   **Apache Felix OSGi Management Console** heeft bijvoorbeeld de persistente identiteit (PID) van:
+   Bijvoorbeeld: **Apache Felix OSGi Management Console** heeft de persistente identiteit (PID) van:
 
    `org.apache.felix.webconsole.internal.servlet.OsgiManager`
 
@@ -162,9 +161,9 @@ De console van het Web toont geen aanwijzing van waar in de bewaarplaats uw vera
 
 Naast het gebruik van de webconsole kunt u ook configuratiegegevens definiëren in de opslagplaats. Hierdoor kunt u de verschillende uitvoeringsmodi eenvoudig configureren.
 
-Deze configuraties worden gemaakt door `sling:OsgiConfig` knooppunten in de opslagplaats te maken waarnaar het systeem verwijst. Deze knopen weerspiegelen de configuraties OSGi, en vormen een gebruikersinterface aan hen. Om de configuratiegegevens bij te werken werkt u de knoopeigenschappen bij.
+Deze configuraties worden gemaakt door `sling:OsgiConfig` knooppunten in de opslagplaats waar het systeem naar kan verwijzen. Deze knopen weerspiegelen de configuraties OSGi, en vormen een gebruikersinterface aan hen. Om de configuratiegegevens bij te werken werkt u de knoopeigenschappen bij.
 
-Als u de configuratiegegevens in de bewaarplaats wijzigt worden de veranderingen onmiddellijk toegepast op de relevante configuratie OSGi alsof de veranderingen gebruikend de console van het Web, met de aangewezen bevestiging en consistentiecontroles waren aangebracht. Dit geldt ook voor het kopiëren van een configuratie van `/libs/` naar `/apps/`.
+Als u de configuratiegegevens in de bewaarplaats wijzigt worden de veranderingen onmiddellijk toegepast op de relevante configuratie OSGi alsof de veranderingen gebruikend de console van het Web, met de aangewezen bevestiging en consistentiecontroles waren aangebracht. Dit geldt ook voor het kopiëren van een configuratie uit `/libs/` tot `/apps/`.
 
 Aangezien de zelfde configuratieparameter in verscheidene plaatsen kan worden gevestigd, kan het systeem:
 
@@ -174,7 +173,7 @@ Aangezien de zelfde configuratieparameter in verscheidene plaatsen kan worden ge
 
 >[!NOTE]
 >
->Lees ook [hoe u een op gegevensopslagruimte gebaseerde configuratie alleen voor een specifieke instantie definieert](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
+>Lees ook [hoe u een op een opslagplaats gebaseerde configuratie alleen voor een specifieke instantie definieert](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
 
 ### Een nieuwe configuratie toevoegen aan de opslagplaats {#adding-a-new-configuration-to-the-repository}
 
@@ -182,36 +181,36 @@ Aangezien de zelfde configuratieparameter in verscheidene plaatsen kan worden ge
 
 Om een nieuwe configuratie aan de bewaarplaats toe te voegen moet u het volgende weten:
 
-1. De **Persistent Identity** (PID) van de service.
+1. De **Blijvende identiteit** (PID) van de service.
 
-   Verwijs het **Configurations** gebied in de console van het Web. De naam wordt tussen haakjes weergegeven na de bundelnaam (of in **Configuration Information** naar de onderkant van de pagina).
+   Verwijs naar de **Configuraties** in de webconsole. De naam wordt tussen haakjes weergegeven na de naam van de bundel (of in de **Configuratiegegevens** onder aan de pagina).
 
-   Maak bijvoorbeeld een knooppunt `com.day.cq.wcm.core.impl.VersionManagerImpl.` om **AEM WCM Version Manager** te configureren.
+   Maak bijvoorbeeld een knooppunt `com.day.cq.wcm.core.impl.VersionManagerImpl.` om te vormen **AEM WCM-versiebeheer**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Of een specifieke [run mode](/help/sites-deploying/configure-runmodes.md) wordt vereist. Maak de map:
+1. Of een specifieke [uitvoeringsmodus](/help/sites-deploying/configure-runmodes.md) is vereist. Maak de map:
 
    * `config` - voor alle uitvoeringsmodi
    * `config.author` - voor de auteursomgeving
    * `config.publish` - voor de publicatieomgeving
    * `config.<run-mode>` - in voorkomend geval
 
-1. Of een **Configuratie** of **Factory Configuration** noodzakelijk is.
+1. Of een **Configuratie** of **Fabrieksconfiguratie** is noodzakelijk.
 1. de afzonderlijke parameters die moeten worden geconfigureerd; met inbegrip van bestaande parameterdefinities die opnieuw moeten worden gemaakt.
 
    Verwijs het individuele parametergebied in de console van het Web. De naam wordt tussen haakjes weergegeven voor elke parameter.
 
    Maak bijvoorbeeld een eigenschap
-   `versionmanager.createVersionOnActivation` om versie  **maken bij activering** te configureren.
+   `versionmanager.createVersionOnActivation` om te vormen **Versie maken bij activering**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Bestaat er al een configuratie in `/libs`? Als u alle configuraties in uw instantie wilt weergeven, gebruikt u het gereedschap **Query** in CRXDE Lite om de volgende SQL-query te verzenden:
+1. Bestaat er al een configuratie in `/libs`? Als u alle configuraties in uw exemplaar wilt weergeven, gebruikt u de **Query** in CRXDE Lite om de volgende SQL-query te verzenden:
 
    `select * from sling:OsgiConfig`
 
-   Als zo, kan deze configuratie aan ` /apps/<yourProject>/` worden gekopieerd, dan aangepast in de nieuwe plaats.
+   Als dat het geval is, kan deze configuratie worden gekopieerd naar ` /apps/<yourProject>/`en vervolgens aangepast op de nieuwe locatie.
 
 #### De configuratie maken in de opslagplaats {#creating-the-configuration-in-the-repository}
 
@@ -221,7 +220,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
    ` /apps/<yourProject>`
 
-1. Als dit nog niet het geval is, maakt u de `config`-map ( `sling:Folder`):
+1. Als deze nog niet bestaat, maakt u de `config` map ( `sling:Folder`):
 
    * `config` - van toepassing op alle uitvoeringsmodi
    * `config.<run-mode>` - specifiek voor een bepaalde uitvoeringsmodus
@@ -231,20 +230,20 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * Type: `sling:OsgiConfig`
    * Naam: de persistente identiteit (PID);
 
-      bijvoorbeeld voor AEM WCM Version Manager gebruik `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      bijvoorbeeld voor AEM gebruik van WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
-   >Wanneer het maken van een Configuratie van de Fabriek voegt `-<identifier>` aan de naam toe.
+   >Bij het toevoegen van een fabrieksconfiguratie `-<identifier>` op de naam.
    >
    >Zoals in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >waarin `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten); bijvoorbeeld:
+   >Wanneer `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten); bijvoorbeeld:
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Voor elke parameter die u wilt vormen, creeer een bezit op deze knoop:
 
-   * Naam: de parameternaam zoals aangetoond in de console van het Web; de naam wordt tussen haakjes weergegeven aan het einde van de veldbeschrijving. Gebruik `versionmanager.createVersionOnActivation` bijvoorbeeld voor `Create Version on Activation`
+   * Naam: de parameternaam zoals aangetoond in de console van het Web; de naam wordt tussen haakjes weergegeven aan het einde van de veldbeschrijving. Bijvoorbeeld: `Create Version on Activation` gebruiken `versionmanager.createVersionOnActivation`
    * Type: in voorkomend geval.
    * Waarde: zoals vereist.
 
@@ -256,7 +255,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
 >[!CAUTION]
 >
->U mag niets in de `/libs` weg veranderen.
+>U mag niets wijzigen in het dialoogvenster `/libs` pad.
 
 >[!CAUTION]
 >
@@ -264,27 +263,27 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
 ## Configuratiedetails {#configuration-details}
 
-### Resolutie van volgorde bij opstarten {#resolution-order-at-startup}
+### Volgorde resolutie bij opstarten {#resolution-order-at-startup}
 
 De volgende rangorde wordt gebruikt:
 
-1. Opslagknooppunten onder `/apps/*/config...`.met het type `sling:OsgiConfig` of eigenschapsbestanden.
+1. Opslagknooppunten onder `/apps/*/config...`.either met type `sling:OsgiConfig` of eigenschapsbestanden.
 
-1. Opslagknooppunten met het type `sling:OsgiConfig` onder `/libs/*/config...`. (definities buiten de box).
+1. Opslagknooppunten met type `sling:OsgiConfig` krachtens `/libs/*/config...`. (definities buiten de box).
 
-1. Om het even welke `.config` dossiers van `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. op het lokale bestandssysteem.
+1. Alle `.config` bestanden van `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. op het lokale bestandssysteem.
 
-Dit betekent dat een generische configuratie in `/libs` door een projectspecifieke configuratie in `/apps` kan worden gemaskeerd.
+Dit betekent dat een generische configuratie in `/libs` kan worden gemaskeerd door een projectspecifieke configuratie in `/apps`.
 
-### Resolutie van volgorde bij uitvoering {#resolution-order-at-runtime}
+### Volgorde van resolutie bij uitvoering {#resolution-order-at-runtime}
 
 De veranderingen van de configuratie die worden aangebracht terwijl het systeem loopt teweegbrengen een herlading met de gewijzigde configuratie.
 
 Dan is de volgende orde van belangrijkheid van toepassing:
 
 1. Het wijzigen van een configuratie in de console van het Web zal onmiddellijk van kracht worden aangezien het belangrijkheid bij runtime neemt.
-1. Het wijzigen van een configuratie in `/apps` zal onmiddellijk van kracht worden.
-1. Het wijzigen van een configuratie in `/libs` zal onmiddellijk van kracht worden, tenzij het door een configuratie in `/apps` wordt gemaskeerd.
+1. Een configuratie aanpassen in `/apps` onmiddellijk van kracht worden.
+1. Een configuratie aanpassen in `/libs` wordt onmiddellijk van kracht, tenzij het wordt gemaskeerd door een configuratie in `/apps`.
 
 ### Resolutie van meerdere uitvoermodi {#resolution-of-multiple-run-modes}
 
@@ -294,15 +293,15 @@ Voor configuraties die specifiek zijn voor de uitvoermodus, kunnen meerdere uitv
 
 Configuraties in dergelijke mappen worden toegepast als alle uitvoermodi overeenkomen met een uitvoeringsmodus die bij het opstarten is gedefinieerd.
 
-Als een instantie bijvoorbeeld is gestart met de uitvoeringsmodi `author,dev,emea`, worden configuratieknooppunten in `/apps/*/config.emea`, `/apps/*/config.author.dev/` en `/apps/*/config.author.emea.dev/` toegepast, terwijl configuratieknooppunten in `/apps/*/config.author.asean/` en `/config/author.dev.emea.noldap/` niet worden toegepast.
+Als bijvoorbeeld een instantie is gestart met de uitvoermodi `author,dev,emea`, configuratieknooppunten in `/apps/*/config.emea`, `/apps/*/config.author.dev/` en `/apps/*/config.author.emea.dev/` wordt toegepast, terwijl configuratieknooppunten in `/apps/*/config.author.asean/` en `/config/author.dev.emea.noldap/` wordt niet toegepast.
 
 Als meerdere configuraties voor dezelfde PID van toepassing zijn, wordt de configuratie met het hoogste aantal overeenkomende uitvoeringsmodi toegepast.
 
-Als een instantie bijvoorbeeld is gestart met de uitvoeringsmodi `author,dev,emea` en `/apps/*/config.author/` en `/apps/*/config.emea.author/` een configuratie definiëren voor
-`com.day.cq.wcm.core.impl.VersionManagerImpl`, wordt de configuratie in `/apps/*/config.emea.author/` toegepast.
+Als bijvoorbeeld een instantie is gestart met de uitvoermodi `author,dev,emea`en beide `/apps/*/config.author/` en `/apps/*/config.emea.author/` een configuratie definiëren voor
+`com.day.cq.wcm.core.impl.VersionManagerImpl`, de configuratie in `/apps/*/config.emea.author/` wordt toegepast.
 
 De granulariteit van deze regel staat op een PID-niveau.
-U kunt geen eigenschappen voor zelfde PID in `/apps/*/config.author/` en specifiekere degenen in `/apps/*/config.emea.author/` voor zelfde PID bepalen.
+U kunt geen eigenschappen definiëren voor dezelfde PID in `/apps/*/config.author/` en meer specifieke `/apps/*/config.emea.author/` voor dezelfde PID.
 De configuratie met het hoogste aantal passende looppaswijzen zal voor volledige PID efficiënt zijn.
 
 ### Standaardconfiguraties {#standard-configurations}
@@ -323,9 +322,9 @@ In de volgende lijst ziet u een kleine selectie van de configuraties die beschik
 
 >[!NOTE]
 >
->Aangezien deze configuraties in `/libs` verblijven moeten zij niet direct worden uitgegeven, maar worden gekopieerd aan uw toepassingsgebied ( `/apps`) alvorens aanpassing.
+>Als deze configuraties zich bevinden in `/libs` ze mogen niet rechtstreeks worden bewerkt, maar moeten wel naar het toepassingsgebied worden gekopieerd ( `/apps`) vóór aanpassing.
 
-Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de **Query**-functionaliteit in CRXDE Lite om de volgende SQL-query te verzenden:
+Om van alle configuratieknooppunten in uw instantie een lijst te maken, gebruik **Query** functionaliteit in CRXDE Lite om de volgende SQL-query te verzenden:
 
 `select * from sling:OsgiConfig`
 
@@ -335,7 +334,7 @@ Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de
 
    `/apps/{somewhere}`
 
-   * Standaard is `{somewhere}` `system/config`, dus wordt de configuratie geschreven naar
+   * Standaard `{somewhere}` is `system/config` zodat wordt de configuratie geschreven aan
 
       `/apps/system/config`
 
@@ -347,13 +346,13 @@ Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de
 
       `/apps/foo/config/someconfig`
 
-* Instellingen die worden gewijzigd door `admin` worden opgeslagen in `*.config`-bestanden onder:
+* Instellingen die worden gewijzigd door `admin` worden opgeslagen in `*.config` bestanden onder:
 
    ```
       /crx-quickstart/launchpad/config
    ```
 
-   * Dit is het privé gegevensgebied van OSGi configuratieadmin en houdt alle configuratiedetails die door `admin` worden gespecificeerd, ongeacht hoe zij het systeem inging.
+   * Dit is het privé gegevensgebied van OSGi configuratie admin en houdt alle configuratiedetails die door worden gespecificeerd `admin`, ongeacht hoe zij het systeem zijn binnengekomen.
    * Dit is een implementatiedetails en u moet deze folder niet direct uitgeven.
    * Het is echter handig om de locatie van deze configuratiebestanden te kennen, zodat u kopieën kunt maken voor back-up en/of meerdere installaties:
 
@@ -367,7 +366,6 @@ Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de
 
 >[!CAUTION]
 >
->U moet de mappen of bestanden onder ***nooit*** bewerken:
+>U moet ***nooit*** Bewerk de mappen of bestanden onder:
 >
 >`/crx-quickstart/launchpad/config`
-

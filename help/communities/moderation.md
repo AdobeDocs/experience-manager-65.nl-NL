@@ -1,8 +1,8 @@
 ---
 title: Moderatieconsole
-seo-title: Moderatieconsole
+seo-title: Moderation Console
 description: Hoe te om tot de console van de Moderatie toegang te hebben
-seo-description: Hoe te om tot de console van de Moderatie toegang te hebben
+seo-description: How to access the Moderation console
 uuid: d3b8a160-85b2-43f4-9891-5fafa8c48c5f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,22 +14,22 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2040'
 ht-degree: 1%
 
 ---
 
 # Moderatieconsole {#moderation-console}
 
-In AEM Communities is grote [moderatie van communautaire inhoud](/help/communities/moderate-ugc.md) mogelijk van zowel auteur als publicatiemilieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
+In AEM Communities, bulkgoederen [modernisering van de communautaire inhoud](/help/communities/moderate-ugc.md) is mogelijk van zowel auteur als publiceer milieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
 
-Beheerders en moderatoren van de gemeenschap kunnen [contextmoderatie](/help/communities/in-context.md) ook uitvoeren in het publicatiemilieu.
+Beheerders en moderatoren van de gemeenschap kunnen ook [contextmatiging](/help/communities/in-context.md) in de publicatieomgeving.
 
-Een functie van alle [communitysites](/help/communities/sites-console.md) is een `Administration` menu-item dat beschikbaar is voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration` verbinding verleent toegang tot de console van de Moderatie.
+Een kenmerk van alles [communitysites](/help/communities/sites-console.md) is een `Administration` menu-item beschikbaar voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration` de verbinding verleent toegang tot de console van de Moderatie.
 
 Van de console van de Moderatie, zullen de beheerders en de communautaire moderatoren toegang tot al gebruiker geproduceerde inhoud (UGC) hebben waarvoor zij toestemming hebben te matigen. Als u meerdere sites wilt gematigd, is het mogelijk om posten op alle sites weer te geven of door geselecteerde communitysites te filteren.
 
-Voor gedetailleerdere informatie gaat u naar [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
+Voor meer informatie gaat u naar [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
 
 De console van de Moderatie steunt:
 
@@ -38,7 +38,7 @@ De console van de Moderatie steunt:
 * UGC-details weergeven.
 * UGC-auteurdetails weergeven.
 
-Alleen wanneer u bent aangemeld als beheerder of een lid met ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`, kunnen moderatietaken worden uitgevoerd.
+Alleen bij aanmelding als beheerder of lid met ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`kan worden uitgevoerd.
 
 ## Toegang tot omgeving publiceren {#publish-environment-access}
 
@@ -54,13 +54,13 @@ Door de verbinding van het Beleid te selecteren, verschijnt de console van de Mo
 
 In het auteursmilieu, om de console van de Moderatie te bereiken
 
-* Selecteer **[!UICONTROL Communities]** > **[!UICONTROL Moderation]** bij globale navigatie.
+* Selecteer bij globale navigatie de optie **[!UICONTROL Communities]** > **[!UICONTROL Moderation]**.
 
-Slechts wanneer binnen ondertekend als beheerder, of als lid met [moderatortoestemmingen](/help/communities/in-context.md#identifyingtrustedmembers), moderatietaken kunnen worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
+Alleen bij aanmelding als beheerder of als lid met [moderatormachtigingen](/help/communities/in-context.md#identifyingtrustedmembers), kunnen moderatietaken worden uitgevoerd. De enige inhoud van de gemeenschap die wordt weergegeven, is de inhoud die de ondertekenaar mag verkleinen.
 
 >[!NOTE]
 >
->UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie [Community Content Storage](/help/communities/working-with-srp.md).
+>UGC van het publicatiemilieu zal slechts op auteur zichtbaar zijn als gekozen SRP een gemeenschappelijke opslag uitvoert. De opslag is standaard bijvoorbeeld JSRP, wat geen algemene opslag is voor auteur en publiceren. Zie [Opslag van communautaire inhoud](/help/communities/working-with-srp.md).
 
 ![moderationconsoletoewijzing](assets/moderationconsoleauthor.png)
 
@@ -74,21 +74,21 @@ Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie 
 
 ### Bovenste navigatiebalk {#top-navigation-bar}
 
-De bovenste navigatiebalk is voor alle consoles constant. Zie [Basisverwerking](/help/sites-authoring/basic-handling.md) voor meer informatie.
+De bovenste navigatiebalk is voor alle consoles constant. Zie voor meer informatie [Basisverwerking](/help/sites-authoring/basic-handling.md).
 
 ### Werkbalk {#toolbar}
 
 De werkbalk, die zich onder de bovenste navigatiebalk bevindt, biedt de volgende schakeloptie aan de linkerkant:
 
-* [Filterrails ](/help/communities/moderation.md#filterrail)
-openen een rails waarin u de eigenschappen kunt kiezen waarop u de inhoud wilt filteren.
+* [Filterrail](/help/communities/moderation.md#filterrail)
+opent een rails waarin u de eigenschappen kunt kiezen waarop u de inhoud wilt filteren.
 
 De werkbalk, die zich onder de bovenste navigatiebalk bevindt, biedt de volgende schakeloptie aan de linkerkant:
 
 ![toggleswitch](assets/toggleswitch.png)
 
-[Filterregels ](/help/communities/moderation.md#filterrail)
-openen een rails door Zoeken te selecteren. Op deze manier kunt u kiezen welke eigenschappen u wilt gebruiken om de inhoud te filteren.
+[Filterrail](/help/communities/moderation.md#filterrail)
+Hiermee opent u een rails bij het selecteren van Zoeken, zodat u kunt kiezen op welke eigenschappen u de inhoud wilt filteren.
 
 ![filterrail](assets/filterrail.png)
 
@@ -102,13 +102,13 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 * Locatie van het bericht.
 * Toen het werd gepost.
 * Aantal reacties op de post.
-* [Aan het bericht ](/help/communities/moderate-ugc.md#sentiment) gekoppelde melding
+* [Sentiment](/help/communities/moderate-ugc.md#sentiment) in verband met het bericht
 * Indien goedgekeurd, wordt een vinkje getoond.
 * Als er een bijlage is, wordt een paperclip weergegeven.
 
 >[!NOTE]
 > 
->Het inhoudsgebied heeft een *oneindige scroll*, zo betekent het dat u zal blijven scrollen tot u het eind van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
+>Het inhoudsgebied bevat een *oneindig schuiven*, wat betekent dat u kunt blijven schuiven totdat u het einde van de inhoud hebt bereikt. De werkbalk blijft tijdens het schuiven op een vaste, zichtbare positie boven het inhoudsgebied staan.
 
 ### Rail filteren {#ootbfilters}
 
@@ -116,11 +116,11 @@ Het inhoudsgebied bevat informatie voor gepost UGC:
 
 Met het pictogram van het zijpaneel wordt de filterrail geopend. De filterrail, die links van het inhoudsgebied verschijnt, verstrekt verschillende filters, elk die een onmiddellijk effect op referenced UGC hebben die in het inhoudsgebied verschijnt.
 
-De filters binnen elke categorie zijn **OR**&#39;d bij elkaar, en de filters in verschillende categorieën zijn **AND**&#39;d bij elkaar.
+De filters binnen elke categorie zijn **OF**&#39;d bij elkaar en de filters in verschillende categorieën zijn **EN**&#39;Samen.
 
-Als u bijvoorbeeld zowel **Vraag** als **Antwoord** controleert, wordt inhoud weergegeven die ofwel een **Vraag** *of* en **Antwoord** is.
+Als u bijvoorbeeld beide incheckt **Vraag** en **Antwoord**, ziet u inhoud die een van de **Vraag** *of* een **Antwoord**.
 
-Nochtans als u **Vraag** en **In behandeling** controleert, zult u slechts inhoud zien die **Vraag** is en **In behandeling** is.
+Als u echter **Vraag** en **In behandeling**, ziet u alleen inhoud die een **Vraag** en is **In behandeling**.
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteer
 
 >[!NOTE]
 >
->Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met [tovenaar van de plaatsverwezenlijking](/help/communities/sites-console.md), zoals de steekproeven van Geometrixx worden gecreeerd.
+>Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen niet gecreeerd met [wizard voor het maken van sites](/help/communities/sites-console.md), zoals de Geometrixx monsters.
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
 
@@ -179,8 +179,8 @@ Het Type van inhoud beperkt referenced UGC getoond aan posten van het geselectee
 Aanvullende bronnen toevoegen waarop moet worden gefilterd:
 
 * Meld u als beheerder aan bij de auteurinstantie.
-* Open [Webconsole](https://localhost:4502/system/console/configMgr).
-* `AEM Communities Moderation Dashboard Filters` zoeken.
+* Openen [Webconsole](https://localhost:4502/system/console/configMgr).
+* Zoeken `AEM Communities Moderation Dashboard Filters`.
 * Selecteer de configuratie die u wilt openen in de bewerkingsmodus.
 * Ga ResourceType van een component in waarop te filtreren:
 
@@ -210,7 +210,7 @@ De status beperkt de UGC waarnaar wordt verwezen, tot posten van de geselecteerd
 
 Als u een vlag voert, wordt de UGC waarnaar wordt verwezen, beperkt tot publicaties die zijn gemarkeerd of verborgen.
 
-Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals de knop **Vlag** te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
+Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door de optie **Markering** nogmaals. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
 
 ![vlaggen](assets/flagging.png)
 
@@ -228,32 +228,32 @@ Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste 
 
 #### Sentiment {#sentiment}
 
-[Met ](/help/communities/moderate-ugc.md#sentiment) Sentimentatie beperkt u de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
+[Sentiment](/help/communities/moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen, tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 
 ![sentiment](assets/sentiment.png)
 
 ## Aangepaste filters {#custom-filters}
 
-Naast de filters uit de doos in [Rail](/help/communities/moderation.md#ootbfilters) van de Filter, kunnen de extra douanefilters op meta-gegevens aan moderatie UI worden toegevoegd. De ontwikkelaars kunnen de steekproefcode in Github gebruiken om de bestaande filters van moderatie UI uit te breiden.
+Behalve de filters uit de doos in [Rail filteren](/help/communities/moderation.md#ootbfilters)aanvullende aangepaste filters voor metagegevens kunnen worden toegevoegd aan de moderatie-interface. De ontwikkelaars kunnen de steekproefcode in Github gebruiken om de bestaande filters van moderatie UI uit te breiden.
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-Met het [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) op Github implementeert u het tagfilter om de UGC-lijst te filteren op basis van het feit of de specifieke tags worden toegepast op door de gebruiker gegenereerde inhoud. U kunt de voorbeeldcode volgen en analoge filters voor andere vergelijkbare UGC-metagegevensvelden maken.
+De [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) op Github implementeert het filter Tag om de UGC-lijst te filteren op basis van of de specifieke tags worden toegepast op door de gebruiker gegenereerde inhoud. U kunt de voorbeeldcode volgen en analoge filters voor andere vergelijkbare UGC-metagegevensvelden maken.
 
 Het voorbeeld voor het filter Codes installeren:
 
-1. Open pakketbeheer op AEM-auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`)-instantie en AEM-publicatieinstantie (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
-1. Bouw het pakket `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` van code van Github, en installeer en laat het zelfde toe.
-1. Open de bundelconsole op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) instantie en AEM Publish ( `https://[aem-publish]:4503/system/console/bundles`) instantie.
-1. Bouw het pakket (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) van Github, en installeer en laat het zelfde toe.
-1. Ga naar **/apps/social/moderation/facets**-knooppunt op AEM-auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) en AEM-publicatieexemplaar (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
-1. Voeg een technische gebruiker **gemeenschappen-nut-lezer** met `jcr:read` toestemmingen toe.
+1. Pakketbeheer openen op AEM-auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) en AEM-publicatie (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Het pakket maken `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` uit Github-code, en installeer en schakel dezelfde optie in.
+1. De bundelconsole openen op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) en AEM-publicatie ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Het pakket maken (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) van Github, installeren en inschakelen.
+1. Ga naar **/apps/social/moderation/facets** knooppunt op AEM-auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) en AEM-publicatie (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. Een technische gebruiker toevoegen **gemeenschappen-nutsbedrijven-lezer** with `jcr:read` machtigingen.
 
 Aangepaste filters beschikbaar maken op bestaande communautaire sites:
 
-1. `Clientlibs` van bestaande moderatiepagina `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.` bewerken
+1. Bewerken `Clientlibs` van bestaande moderniseringspagina `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
 
-   * Nieuwe categorie `cq.social.hbs.moderation.v2.` toevoegen
+   * Nieuwe categorie toevoegen `cq.social.hbs.moderation.v2.`
 
 1. Ga naar `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
@@ -265,15 +265,15 @@ Aangepaste filters beschikbaar maken op bestaande communautaire sites:
 
 ## Moderatiehandelingen {#moderation-actions}
 
-[Moderatiehandelingen ](/help/communities/moderate-ugc.md#moderation-actions) kunnen worden uitgevoerd op een of meer selecties in het inhoudsgebied of bij het weergeven van de inhouddetails.
+[Moderniseringsacties](/help/communities/moderate-ugc.md#moderation-actions) kan worden uitgevoerd op een of meer selecties die in het inhoudsgebied zijn gemaakt of wanneer u de details van de inhoud weergeeft.
 
-Als u de positie in een artikel in bulk wilt verkleinen, klikt u in het inhoudsgebied op het pictogram Selecteren (![selecticon](assets/selecticon.png)) op een post. Dit pictogram verschijnt wanneer u de muis (bureaublad) erop plaatst of een vinger op de post (mobiel) ingedrukt houdt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
+Klik in het inhoudsgebied op Selecteren (![selecticon](assets/selecticon.png)) op een post, die verschijnt als u de muisaanwijzer (bureaublad) op het desbetreffende artikel plaatst of met een vinger op het betreffende artikel (mobiel) drukt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
 
 Als u één artikel in het inhoudsgebied wilt gematigd, houdt u de muisaanwijzer (bureaublad) of drukt u met een vinger op de post (mobiel), zodat er knoppen op de post verschijnen. Als u op één inhoudsgegeven werkt, wordt alleen een verwijderactie ter bevestiging verzonden.
 
 ### Meerdere posts modereren {#moderating-multiple-posts}
 
-Ga de bulkselectiemodus in door op het pictogram `Select` op een post te klikken:
+U opent de modus voor bulkselectie door op de knop `Select` pictogram op een bericht:
 
 ![select-icon](assets/select-icon.png)
 
@@ -328,7 +328,7 @@ Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wann
 
 ![ontkennen](assets/deny.png)
 
-De **Weigeren** matigactie is slechts beschikbaar voor inhoud die wordt gematigd, en verschijnt niet op ongematigde inhoud behalve in multi-selectiemodus.
+De **Weigeren** matigheidsactie is slechts beschikbaar voor inhoud die wordt gematigd, en niet op ongematigde inhoud behalve in multi-selectiemodus verschijnt.
 
 Inhoud die niet wordt gematigd, wordt altijd goedgekeurd.
 
@@ -366,7 +366,7 @@ Bijvoorbeeld:
 
 Als u met één artikel werkt, kunt u meer details bekijken door de UGC in de detailmodus te openen.
 
-Als u dit wilt doen, plaatst u de muisaanwijzer boven de post om het pictogram `View Detail` weer te geven en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
+Houd hiertoe de muisaanwijzer boven de post om de `View Detail` en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
 
 Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-posten, selecteert u de X in de rechterbovenhoek van het deelvenster met weergavedetails.
 

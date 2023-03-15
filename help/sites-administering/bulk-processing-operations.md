@@ -1,23 +1,22 @@
 ---
 title: Verwerking van bulk
-seo-title: Verwerking van bulk
-description: 'null'
-seo-description: 'null'
+seo-title: Bulk Processing Operations
+description: null
+seo-description: null
 page-status-flag: never-activated
 uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
 discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-translation-type: tm+mt
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
 
 
-# Bulkverwerking {#bulk-processing-operations}
+# Verwerking van bulk {#bulk-processing-operations}
 
 ## Inleiding {#introduction}
 
@@ -25,9 +24,9 @@ Met de nieuwste versie van AEM is de knop Alles selecteren uitgebreid naar alle 
 
 De belangrijkste acties zijn toegelaten voor de bulkverrichting: **Verplaatsen**, **Verwijderen** en **Kopiëren**. Een nieuw dialoogvenster zal klanten laten weten voor welke acties bulkverwerking niet beschikbaar is.
 
-## Hoe wordt {#how-to-use} gebruikt
+## Hoe wordt het gebruikt {#how-to-use}
 
-Er is een nieuwe knop met de naam **Alles selecteren** toegevoegd aan de Kaart-, lijst- of kolomweergave. Deze knop kan in elke weergave worden gebruikt om alle elementen in de gegevensset te selecteren.
+Een nieuwe knop met de naam **Alles selecteren** is toegevoegd aan de Kaart-, Lijst- of Kolomweergave. Deze knop kan in elke weergave worden gebruikt om alle elementen in de gegevensset te selecteren.
 
 In vorige versies van AEM was de selectie beperkt wat in de clientbrowser werd geladen. Deze nieuwe wijzigingen zijn aangebracht om verwarring te voorkomen over het aantal elementen waarop een bulkbewerking wordt uitgevoerd.
 
@@ -48,7 +47,7 @@ Kies vervolgens een van de weergaven, zoals hieronder wordt weergegeven:
 
 ### Selectie opheffen in kaartweergave {#bulk-selection-in-card-view}
 
-Middelen of Pagina&#39;s kunnen bulksgewijs worden geselecteerd met de **knop Alles selecteren** rechtsboven:
+Elementen of pagina&#39;s kunnen in bulk worden geselecteerd met de opdracht **Alles selecteren** knop rechtsboven:
 
 ![](assets/doi.png) ![](assets/trei.png)
 
@@ -58,9 +57,9 @@ Hetzelfde geldt voor de lijstweergave:
 
 ![](assets/patru_modified.png)
 
-### Selectie opheffen in lijstweergave {#bulk-selection-in-list-view}
+### Bulkselectie in lijstweergave {#bulk-selection-in-list-view}
 
-In de Mening van de Lijst, gebruik of **Selecteer allen** knoop, of gebruik checkbox op de linkerzijde voor bulkselectie.
+In de Lijstweergave gebruikt u de optie **Alles selecteren** of schakel het selectievakje links in voor bulksgewijs selecteren.
 
 ![](assets/cinci.png) ![](assets/sase.png)
 
@@ -68,18 +67,18 @@ In de Mening van de Lijst, gebruik of **Selecteer allen** knoop, of gebruik chec
 
 ![](assets/sapte.png)
 
-### Selectie opheffen in kolomweergave {#bulk-selection-in-column-view}
+### Bulkselectie in kolomweergave {#bulk-selection-in-column-view}
 
 ![](assets/opt.png)
 
-## Bulkbewerkingen {#bulk-enabled-operations}
+## Bewerkingen waarvoor bulkfuncties zijn ingeschakeld {#bulk-enabled-operations}
 
 Na de selectie kan een van de drie acties voor bulkactivering worden uitgevoerd: **Verplaatsen**, **Kopiëren** of **Verwijderen**.
 
-Hier wordt de bewerking **Move** uitgevoerd op de hierboven geselecteerde elementen. In om het even welke meningen, zal dit resulteren in alle Activa die naar de gekozen plaats en niet alleen die worden verplaatst die op het scherm worden geladen.
+Hier, **Verplaatsen** De bewerking wordt uitgevoerd op de hierboven geselecteerde elementen. In om het even welke meningen, zal dit resulteren in alle Activa die naar de gekozen plaats en niet alleen die worden verplaatst die op het scherm worden geladen.
 
 ![](assets/noua.png)
 
-Voor andere bewerkingen die niet bulksgewijs zijn ingeschakeld, zoals **Downloaden,**, wordt een waarschuwing weergegeven dat alleen wordt aangegeven dat alleen elementen die in de browser zijn geladen, in de bewerking worden opgenomen.
+Voor andere bewerkingen die niet in bulk zijn ingeschakeld, zoals **Downloaden,** er wordt een waarschuwing getoond dat alleen wordt aangegeven dat alleen elementen die in de browser worden geladen, in de bewerking worden opgenomen.
 
 ![](assets/zece.png)

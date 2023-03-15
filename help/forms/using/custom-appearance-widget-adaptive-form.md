@@ -21,32 +21,32 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Bij adaptieve formulieren wordt het [weergaveframework](/help/forms/using/introduction-widgets.md) gebruikt om u te helpen aangepaste weergaven te maken voor adaptieve formuliervelden en een andere gebruikerservaring te bieden. Vervang bijvoorbeeld keuzerondjes en selectievakjes door schakelknoppen of gebruik aangepaste jQuery-plug-ins om gebruikersinvoer in velden zoals telefoonnummers of e-mailadressen te beperken.
+Adaptieve formulieren maken gebruik van de [weergaveframework](/help/forms/using/introduction-widgets.md) om u te helpen aangepaste weergaven te maken voor adaptieve formuliervelden en een andere gebruikerservaring te bieden. Vervang bijvoorbeeld keuzerondjes en selectievakjes door schakelknoppen of gebruik aangepaste jQuery-plug-ins om gebruikersinvoer in velden zoals telefoonnummers of e-mailadressen te beperken.
 
 In dit document wordt uitgelegd hoe u met een jQuery-insteekmodule deze alternatieve ervaringen voor adaptieve formuliervelden kunt maken. Daarnaast wordt een voorbeeld weergegeven voor het maken van een aangepaste weergave voor numerieke veldcomponenten die worden weergegeven als een numerieke stapfunctie of schuifregelaar.
 
 Laten we eerst kijken naar de belangrijkste termen en concepten die in dit artikel worden gebruikt.
 
-**** VormgevingVerwijst naar de stijl, vormgeving en organisatie van verschillende elementen van een adaptief formulierveld. Het omvat gewoonlijk een etiket, een interactief gebied om input, een hulppictogram, en korte en lange beschrijvingen van het gebied te verstrekken. De aanpassing van de weergave die in dit artikel wordt besproken, is van toepassing op de weergave van het invoergebied van het veld.
+**Weergave** Verwijst naar de stijl, het uiterlijk en de organisatie van verschillende elementen van een adaptief formulierveld. Het omvat gewoonlijk een etiket, een interactief gebied om input, een hulppictogram, en korte en lange beschrijvingen van het gebied te verstrekken. De aanpassing van de weergave die in dit artikel wordt besproken, is van toepassing op de weergave van het invoergebied van het veld.
 
-**jQuery-** insteekmoduleBiedt een standaardmechanisme op basis van het jQuery-widgetframework voor het implementeren van een alternatieve weergave.
+**jQuery-insteekmodule** Verstrekt een standaardmechanisme, dat op het kader van jQuery widget wordt gebaseerd, om een afwisselende verschijning uit te voeren.
 
-**** ClientLibA client-side bibliotheeksysteem in AEM client-side verwerking aangedreven door complexe JavaScript- en CSS-code. Zie Client-Side Libraries gebruiken voor meer informatie.
+**ClientLib** Een bibliotheeksysteem aan de clientzijde in AEM verwerking door complexe JavaScript- en CSS-code. Zie Client-Side Libraries gebruiken voor meer informatie.
 
-**** ArchetypeA Maven toolkit voor projectsjablonen die is gedefinieerd als een origineel patroon of model voor Maven-projecten. Voor meer informatie, zie Inleiding aan Archetypes.
+**Archetype** Een Maven toolkit van de projectmalplaatje die als origineel patroon of model voor Geweven projecten wordt bepaald. Voor meer informatie, zie Inleiding aan Archetypes.
 
-**User** ControlReference to the main element in a widget that contains the value of the field, and is used by the appearance framework for binding the custom widget UI with the adaptive form model.
+**Gebruikerscontrole** Verwijst naar het hoofdelement in een widget die de waarde van het veld bevat en door het weergaveframework wordt gebruikt om de aangepaste widget-interface te binden aan het aangepaste formuliermodel.
 
 ## Stappen om een aangepaste weergave te maken {#steps-to-create-a-custom-appearance}
 
 Op hoog niveau zijn de volgende stappen nodig om een aangepaste weergave te maken:
 
-1. **Een project** maken: Creeer een Geweven project dat een inhoudspakket om op AEM produceert op te stellen.
-1. **Een bestaande widgetklasse** uitbreiden: Een bestaande widgetklasse uitbreiden en de vereiste klassen overschrijven.
-1. **Een clientbibliotheek** maken: Maak een  `clientLib: af.customwidget` bibliotheek en voeg de vereiste JavaScript- en CSS-bestanden toe.
+1. **Een project maken**: Creeer een Geweven project dat een inhoudspakket om op AEM produceert op te stellen.
+1. **Een bestaande widgetklasse uitbreiden**: Een bestaande widgetklasse uitbreiden en de vereiste klassen overschrijven.
+1. **Een clientbibliotheek maken**: Een `clientLib: af.customwidget` en voeg de vereiste JavaScript- en CSS-bestanden toe.
 
-1. **Het project** bouwen en installeren: Bouw het Maven project en installeer het geproduceerde inhoudspakket op AEM.
-1. **Het aangepaste formulier** bijwerken: Pas de eigenschappen van formuliervelden aan om de aangepaste weergave te gebruiken.
+1. **Het project bouwen en installeren**: Bouw het Maven project en installeer het geproduceerde inhoudspakket op AEM.
+1. **Het aangepaste formulier bijwerken**: Pas de eigenschappen van formuliervelden aan om de aangepaste weergave te gebruiken.
 
 ### Een project maken {#create-a-project}
 
@@ -64,9 +64,9 @@ Voer het volgende bevel uit om een lokaal project tot stand te brengen dat op ar
 De opdracht downloadt de Maven-plug-ins en archetype-informatie van de opslagplaats en genereert een project op basis van de volgende informatie:
 
 * **groupId**: Groep-id gebruikt door het gegenereerde Maven-project
-* **artefactId**: Artefact-id die wordt gebruikt door het gegenereerde Maven-project.
+* **artifactId**: Artefact-id die wordt gebruikt door het gegenereerde Maven-project.
 * **versie**: Versie voor het gegenereerde Maven-project.
-* **pakket**: Pakket gebruikt voor de bestandsstructuur.
+* **package**: Pakket gebruikt voor de bestandsstructuur.
 * **artifactName**: Artefactnaam van het gegenereerde AEM.
 * **packageGroup**: Pakketgroep van het gegenereerde AEM.
 * **widgetName**: Weergavenaam die ter referentie wordt gebruikt.
@@ -113,9 +113,9 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
 
 1. Neem de afhankelijkheid van de externe plug-in van het project op.
 
-   1. Plaats de externe of aangepaste jQuery-plug-ins in de map `jqueryplugin/javascript` en de bijbehorende CSS-bestanden in de map `jqueryplugin/css`. Zie de JS- en CSS-bestanden in de map `jqueryplugin/javascript and jqueryplugin/css` voor meer informatie.
+   1. Plaats de externe of aangepaste jQuery-plug-ins in het dialoogvenster `jqueryplugin/javascript` map en verwante CSS-bestanden in de `jqueryplugin/css` map. Zie de JS- en CSS-bestanden onder de `jqueryplugin/javascript and jqueryplugin/css` map.
 
-   1. Wijzig de `js.txt`- en `css.txt`-bestanden om extra JavaScript- en CSS-bestanden van de jQuery-insteekmodule op te nemen.
+   1. De `js.txt` en `css.txt` bestanden die extra JavaScript- en CSS-bestanden van de jQuery-insteekmodule bevatten.
 
 1. Integreer de externe insteekmodule met het framework om interactie mogelijk te maken tussen het aangepaste weergaveframework en de jQuery-insteekmodule. De nieuwe widget werkt alleen nadat u de volgende functies hebt uitgebreid of genegeerd.
 
@@ -127,13 +127,13 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code> en <code>&lt;li&gt;</code>. Het geretourneerde element wordt gebruikt als <code>$userControl</code>. Als de <code>$userControl</code> de bovenstaande beperking specificeert, werken de functies van de <code>AbstractWidget</code> klasse zoals verwacht, anders sommige gemeenschappelijke APIs (nadruk, klik) vereisen veranderingen. </td>
+   <td>De renderfunctie retourneert het jQuery-object voor het standaard HTML-element van de widget. Het standaardelement van HTML zou van brandpuntsafhankelijk type moeten zijn. Bijvoorbeeld: <code>&lt;a&gt;</code>, <code>&lt;input&gt;</code>, en <code>&lt;li&gt;</code>. Het geretourneerde element wordt gebruikt zoals <code>$userControl</code>. Als de <code>$userControl</code> geeft de bovenstaande beperking, de functies van de <code>AbstractWidget</code> -klasse werkt zoals verwacht, anders moeten sommige gemeenschappelijke API's (focus, klikken) worden gewijzigd. </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
    <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> In dit voorbeeld  <code>blur</code> wordt getoond dat het een HTML-gebeurtenis  <code>XFA_EXIT_EVENT</code> is en dat het de corresponderende XFA-gebeurtenis is. </td>
+      }</code><br /> In dit voorbeeld wordt getoond dat <code>blur</code> is een HTML-gebeurtenis en <code>XFA_EXIT_EVENT</code> is de overeenkomstige XFA-gebeurtenis. </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>
@@ -145,32 +145,32 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
   </tr>
   <tr>
    <td><code>showValue</code></td>
-   <td>Standaard wordt in XFA bij Enter de <code>rawValue</code> van het veld weergegeven. Deze functie wordt geroepen om <code>rawValue</code> aan de gebruiker te tonen. </td>
+   <td>Standaard wordt in XFA bij Enter de gebeurtenis <code>rawValue</code> van het veld wordt weergegeven. Deze functie wordt aangeroepen om de functie <code>rawValue</code> aan de gebruiker. </td>
   </tr>
   <tr>
    <td><code>showDisplayValue</code></td>
-   <td>Standaard wordt in XFA bij afsluitgebeurtenis <code>formattedValue</code> van het veld weergegeven. Deze functie wordt geroepen om <code>formattedValue</code> aan de gebruiker te tonen. </td>
+   <td>Standaard wordt in XFA bij afsluitgebeurtenis de <code>formattedValue</code> van het veld wordt weergegeven. Deze functie wordt aangeroepen om de functie <code>formattedValue</code> aan de gebruiker. </td>
   </tr>
  </tbody>
 </table>
 
-1. Werk het JavaScript-bestand naar wens bij in de map `integration/javascript`.
+1. Het JavaScript-bestand in het dialoogvenster `integration/javascript` map, naar wens.
 
-   * Vervang de tekst `__widgetName__` door de daadwerkelijke widgetnaam.
-   * Breid de widget uit van een geschikte buitenste widgetklasse. In de meeste gevallen is dit de klasse widget die overeenkomt met de bestaande widget die wordt vervangen. De naam van de bovenliggende klasse wordt op meerdere locaties gebruikt. Het wordt daarom aanbevolen te zoeken naar alle instanties van de tekenreeks `xfaWidget.textField` in het bestand en deze te vervangen door de werkelijk gebruikte bovenliggende klasse.
-   * Breid `render` methode uit om een afwisselende UI te verstrekken. Dit is de locatie vanwaar de jQuery-insteekmodule wordt aangeroepen om de gebruikersinterface of het interactiegedrag bij te werken. De `render` methode zou een user-control element moeten terugkeren.
+   * De tekst vervangen `__widgetName__` met de eigenlijke widgetnaam.
+   * Breid de widget uit van een geschikte buitenste widgetklasse. In de meeste gevallen is dit de klasse widget die overeenkomt met de bestaande widget die wordt vervangen. De naam van de bovenliggende klasse wordt op meerdere locaties gebruikt. Het wordt daarom aanbevolen naar alle instanties van de tekenreeks te zoeken `xfaWidget.textField` in het bestand en deze vervangen door de werkelijk gebruikte bovenliggende klasse.
+   * Breid uit `render` methode om een alternatieve UI te verstrekken. Dit is de locatie vanwaar de jQuery-insteekmodule wordt aangeroepen om de gebruikersinterface of het interactiegedrag bij te werken. De `render` de methode zou een user-control element moeten terugkeren.
 
-   * Breid de `getOptionsMap` methode uit om het even welke optie met voeten te treden die als toe te schrijven aan een verandering in widget wordt beïnvloed. De functie retourneert een toewijzing die details bevat voor de actie die moet worden uitgevoerd bij wijziging van een optie. De sleutels zijn de opties die aan widget worden verstrekt en de waarden zijn de functies die worden geroepen wanneer een verandering in de optie wordt ontdekt.
-   * De methode `getEventMap` wijst gebeurtenissen toe die door de widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen voor de standaardwidget toe en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
-   * De `showDisplayValue` en `showValue` passen de weergave- en bewerkingsafbeeldingsvoorwaarde toe en kunnen worden overschreven voor een ander gedrag.
+   * Breid uit `getOptionsMap` methode om opties te overschrijven die worden beïnvloed door een wijziging in de widget. De functie retourneert een toewijzing die details bevat voor de actie die moet worden uitgevoerd bij wijziging van een optie. De sleutels zijn de opties die aan widget worden verstrekt en de waarden zijn de functies die worden geroepen wanneer een verandering in de optie wordt ontdekt.
+   * De `getEventMap` De methode wijst gebeurtenissen toe die door widget worden teweeggebracht, met de gebeurtenissen die door het adaptieve vormmodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen voor de standaardwidget toe en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
+   * De `showDisplayValue` en `showValue` pas de weergave- en bewerkingsafbeeldingsvoorwaarde toe en kan worden overschreven voor een ander gedrag.
 
-   * De methode `getCommitValue` wordt aangeroepen door het adaptieve formulierframework wanneer de gebeurtenis `commit`plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie [Aangepaste Forms-expressies](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p) voor meer informatie.
+   * De `getCommitValue` methode wordt aangeroepen door het raamwerk voor adaptieve formulieren wanneer de `commit`gebeurtenis plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie voor meer informatie [Adaptieve Forms-expressies](../../forms/using/adaptive-form-expressions.md#p-value-commit-script-p).
 
    * Het sjabloonbestand biedt voorbeeldimplementatie voor verschillende methoden. Verwijder methoden die niet moeten worden uitgebreid.
 
 ### Een clientbibliotheek maken {#create-a-client-library}
 
-Het voorbeeldproject dat door het Maven archetype wordt geproduceerd leidt automatisch tot vereiste cliëntbibliotheken, en verpakt hen in een cliëntbibliotheek met een categorie `af.customwidgets`. De JavaScript- en CSS-bestanden die beschikbaar zijn in `af.customwidgets` worden automatisch opgenomen bij uitvoering.
+Het voorbeeldproject dat door het Maven archetype wordt geproduceerd leidt automatisch tot vereiste cliëntbibliotheken, en verpakt hen in een cliëntbibliotheek met een categorie `af.customwidgets`. De JavaScript- en CSS-bestanden die beschikbaar zijn in het dialoogvenster `af.customwidgets` worden automatisch bij uitvoering opgenomen.
 
 ### Samenstellen en installeren {#build-and-install}
 
@@ -180,15 +180,15 @@ Om het project te bouwen, voer het volgende bevel op shell uit om een pakket te 
 
 >[!NOTE]
 >
->Het beheerde project verwijst naar een externe opslagplaats binnen het POM-bestand. Dit is alleen ter referentie en volgens de Maven-standaarden wordt de opslagplaats-informatie vastgelegd in het `settings.xml`-bestand.
+>Het beheerde project verwijst naar een externe opslagplaats binnen het POM-bestand. Dit is alleen ter referentie en volgens Maven-standaarden wordt de informatie in de repository vastgelegd in de `settings.xml` bestand.
 
 ### Het aangepaste formulier bijwerken {#update-the-adaptive-form}
 
 De aangepaste weergave toepassen op een adaptief formulierveld:
 
 1. Open het adaptieve formulier in de bewerkingsmodus.
-1. Open het dialoogvenster **Eigenschap** voor het veld waarop u de aangepaste weergave wilt toepassen.
-1. Werk op het tabblad **Stileren** de eigenschap `CSS class` bij om de weergavenaam toe te voegen in de indeling `widget_<widgetName>`. Bijvoorbeeld: **widget_numericstepper**
+1. Open de **Eigenschap** voor het veld waarop u de aangepaste weergave wilt toepassen.
+1. In de **Stijlen** tabblad, werkt u de `CSS class` eigenschap om de weergavenaam toe te voegen in het dialoogvenster `widget_<widgetName>` gebruiken. Bijvoorbeeld: **widget_numericstepper**
 
 ## Voorbeeld: Een aangepaste weergave maken   {#sample-create-a-custom-appearance-nbsp}
 
@@ -199,7 +199,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
    `mvn archetype:generate -DarchetypeRepository=https://repo1.maven.org/maven2/com/adobe/ -DarchetypeGroupId=com.adobe.aemforms -DarchetypeArtifactId=custom-appearance-archetype -DarchetypeVersion=1.0.4`
 
    U wordt gevraagd waarden op te geven voor de volgende parameters.
-   *De in dit voorbeeld gebruikte waarden worden vet* gemarkeerd.
+   *De in dit voorbeeld gebruikte waarden worden vet gemarkeerd*.
 
    `Define value for property 'groupId': com.adobe.afwidgets`
 
@@ -215,7 +215,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
    `Define value for property 'widgetName': numericStepper`
 
-1. Navigeer naar de map `customWidgets` (opgegeven waarde voor de eigenschap `artifactID`) en voer de volgende opdracht uit om een Eclipse-project te genereren:
+1. Ga naar de `customWidgets` (opgegeven waarde voor de `artifactID` eigenschap) en voer de volgende opdracht uit om een Eclipse-project te genereren:
 
    `mvn eclipse:eclipse`
 
@@ -223,7 +223,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
    1. Selecteer **[!UICONTROL File > Import > Existing Projects into Workspace]**.
 
-   1. Blader en selecteer de map waarin u de opdracht `archetype:generate` hebt uitgevoerd.
+   1. Blader naar de map waarin u het dialoogvenster `archetype:generate` gebruiken.
 
    1. Klik op **[!UICONTROL Finish]**.
 
@@ -233,20 +233,20 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
    [https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html](https://www.jqueryscript.net/form/User-Friendly-Number-Input-Spinner-with-jQuery-Bootstrap.html)
 
-   Controleer in het Eclipse-project de insteekcode in het `plugin.js`-bestand om te controleren of deze voldoet aan de vereisten voor de weergave. In dit voorbeeld voldoet de weergave aan de volgende vereisten:
+   Controleer in het Eclipse-project de insteekmodulecode in het dialoogvenster `plugin.js` om ervoor te zorgen dat deze voldoet aan de vereisten voor de weergave. In dit voorbeeld voldoet de weergave aan de volgende vereisten:
 
    * De numerieke stapfunctie moet worden uitgebreid van `- $.xfaWidget.numericInput`.
-   * De methode `set value` van de widget stelt de waarde in nadat de focus op het veld is geplaatst. Dit is een verplichte vereiste voor een adaptieve formulierwidget.
-   * De `render` methode moet worden met voeten getreden om de `bootstrapNumber` methode aan te halen.
+   * De `set value` De methode van widget plaatst de waarde nadat de nadruk op het gebied is. Dit is een verplichte vereiste voor een adaptieve formulierwidget.
+   * De `render` moet worden overschreven om de `bootstrapNumber` methode.
 
    * Er is geen andere afhankelijkheid van de plug-in dan de hoofdbroncode van de plug-in.
    * In het voorbeeld wordt geen stijl toegepast op de stapfunctie. Er is dus geen extra CSS vereist.
-   * Het object `$userControl` moet beschikbaar zijn voor de methode `render`. Dit is een veld van het type `text` dat met de insteekcode is gekloond.
+   * De `$userControl` -object beschikbaar moet zijn voor `render` methode. Het is een gebied van `text` type dat is gekloond met de plug-incode.
 
-   * De **+** en **-** knopen zouden moeten worden onbruikbaar gemaakt wanneer het gebied wordt onbruikbaar gemaakt.
+   * De **+** en **-** De knoppen moeten worden uitgeschakeld wanneer het veld wordt uitgeschakeld.
 
-1. Vervang de inhoud van de `bootstrap-number-input.js` (jQuery-insteekmodule) door de inhoud van het `numericStepper-plugin.js`-bestand.
-1. Voeg in het `numericStepper-widget.js`-bestand de volgende code toe om de rendermethode te overschrijven om de insteekmodule aan te roepen en het `$userControl`-object te retourneren:
+1. De inhoud van het dialoogvenster vervangen `bootstrap-number-input.js` (jQuery-insteekmodule) met de inhoud van de `numericStepper-plugin.js` bestand.
+1. In de `numericStepper-widget.js` Voeg de volgende code toe om de rendermethode te overschrijven om de insteekmodule aan te roepen en de `$userControl` object:
 
    ```javascript
    render : function() {
@@ -266,7 +266,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
    }
    ```
 
-1. Overschrijf in het bestand `numericStepper-widget.js` de eigenschap `getOptionsMap` om de toegangsoptie te overschrijven en verberg de knoppen + en - in de uitgeschakelde modus.
+1. In de `numericStepper-widget.js` bestand, overschrijf de `getOptionsMap` eigenschap om de toegangsoptie te overschrijven en de knoppen + en - in de uitgeschakelde modus te verbergen.
 
    ```javascript
    getOptionsMap: function(){
@@ -308,7 +308,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
     }
    ```
 
-1. Sla de wijzigingen op, navigeer naar de map die het `pom.xml`-bestand bevat en voer de volgende Maven-opdracht uit om het project te maken:
+1. Sla de wijzigingen op en navigeer naar de map met de `pom.xml` en voer het volgende Maven bevel uit om het project te bouwen:
 
    `mvn clean install`
 
@@ -318,6 +318,6 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
    1. Klik met de rechtermuisknop op het veld waarop u de weergave wilt toepassen en klik op **[!UICONTROL Edit]** om het dialoogvenster Component bewerken te openen.
 
-   1. Werk op het tabblad Stijl de eigenschap **[!UICONTROL CSS class]** bij om `widget_numericStepper` toe te voegen.
+   1. Werk op het tabblad Stijl de **[!UICONTROL CSS class]** toe te voegen eigenschap `widget_numericStepper`.
 
 De nieuwe weergave die u zojuist hebt gemaakt, is nu beschikbaar voor gebruik.

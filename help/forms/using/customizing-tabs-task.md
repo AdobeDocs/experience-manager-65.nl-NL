@@ -1,32 +1,31 @@
 ---
 title: Tabs aanpassen voor een taak
-seo-title: Tabs aanpassen voor een taak
+seo-title: Customizing tabs for a task
 description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
-seo-description: Hoe kan ik de namen van de tabbladen voor uw taken aanpassen in de werkruimte van LiveCycle AEM Forms.
+seo-description: How-to customize the names of the tabs for your tasks, in LiveCycle AEM Forms workspace.
 uuid: 77eabb63-f8ea-4ec0-8a41-b51c65cdecc0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
+# Tabs aanpassen voor een taak {#customizing-tabs-for-a-task}
 
-# Tabbladen aanpassen voor een taak {#customizing-tabs-for-a-task}
+U kunt tabnamen aanpassen voor de `Start Process` in de `Start Process` De Uberweergave en de `Task Details` in de `ToDo` Uberweergave.
 
-U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process` Uberweergave en de `Task Details` component in de `ToDo` Uberweergave.
+1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. De waarde wijzigen van `tabname`in de `translation.json` bestand.
 
-1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. Wijzig de waarde van `tabname`in het `translation.json`-bestand.
+   Bijvoorbeeld, wijzigen `/apps/ws/locales/en-US/translation.json` voor Engels naar het volgende.
 
-   Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels in het volgende.
-
-   * Voor taken die in het beginproces in werking worden gesteld, gebruik het volgende fragment van het `"startprocess" : {}` blok.
+   * Voor taken die in het beginproces worden gestart, gebruikt u het volgende fragment uit het dialoogvenster `"startprocess" : {}` blokkeren.
 
    ```json
    "tabname" : {
@@ -37,7 +36,7 @@ U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process
            }
    ```
 
-   * Voor taken in te doen, gebruik het volgende fragment van het `"todo" : {}` blok.
+   * Voor taken in Te-doen, gebruik het volgende fragment van `"todo" : {}` blokkeren.
 
    ```json
    "tabname" : {

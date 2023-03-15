@@ -226,7 +226,7 @@ Met deze opties configureert u afbeeldingen in kleur, grijswaarden en monochroom
 
 **Bicubische downsampling naar:** Gebruikt een gewogen gemiddelde om pixelkleur te bepalen en geeft gewoonlijk betere resultaten dan de eenvoudige het gemiddelde nemen methode van downsampling. Bicubisch is de langzaamste maar meest nauwkeurige methode en resulteert in de meest vloeiende kleurovergangen.
 
-**Subsampling naar:** Hiermee selecteert u een pixel in het midden van het monstergebied en vervangt u het gehele gebied door die pixel bij de opgegeven resolutie. Subsampling vermindert significant de omzettingstijd in vergelijking met downsampling, maar het resulteert in beelden die minder vlot en ononderbroken zijn.
+**Subsampling naar:** Hiermee selecteert u een pixel in het midden van het monstergebied en vervangt u het hele gebied door die pixel bij de opgegeven resolutie. Subsampling vermindert significant de omzettingstijd in vergelijking met downsampling, maar het resulteert in beelden die minder vlot en ononderbroken zijn.
 
 De resolutie-instelling voor kleur en grijswaarden moet 1,5 tot 2 keer de rasterliniatuur zijn waarmee het bestand wordt afgedrukt. (Als u deze aanbevolen resolutie-instelling niet overschrijdt, worden afbeeldingen zonder rechte lijnen of geometrische of herhalende patronen niet beïnvloed door een lagere resolutie.) De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat. Houd er echter rekening mee dat als u een monochrome afbeelding opslaat met een resolutie die hoger is dan 1500 dpi, de bestandsgrootte toeneemt zonder dat de beeldkwaliteit merkbaar toeneemt.
 

@@ -1,6 +1,6 @@
 ---
 title: Caching en prestaties
-description: Leer over de verschillende beschikbare configuraties om GrafiekQL en inhoudcaching toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
+description: Leer over de verschillende beschikbare configuraties om GraphQL en inhoud het in cache plaatsen toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 ## Component &amp; GraphQL Response Caching {#graphql}
 
-De AEM CIF Core Components hebben reeds ingebouwde steun voor caching GraphQL reacties voor individuele componenten. Deze eigenschap kan worden gebruikt om het aantal graafQL achterste vraag door een grote factor te verminderen. Een efficiënte caching kan vooral voor het herhalen van vragen zoals het terugwinnen van de categorieboom voor een navigatiecomponent of het halen van alle beschikbare samenvoegingen/facetwaarden worden bereikt die op de productonderzoek en categoriepagina&#39;s worden getoond.
+De AEM CIF Core Components hebben reeds ingebouwde steun voor caching GraphQL reacties voor individuele componenten. Deze functie kan worden gebruikt om het aantal GraphQL backend vraag met een grote factor te verminderen. Een efficiënte caching kan vooral voor het herhalen van vragen zoals het terugwinnen van de categorieboom voor een navigatiecomponent of het halen van alle beschikbare samenvoegingen/facetwaarden worden bereikt die op de productonderzoek en categoriepagina&#39;s worden getoond.
 
-Voor de AEM componenten van de Kern van CIF, wordt het in cache plaatsen gevormd op componentenbasis, zodat is het mogelijk om te controleren als (en hoe lang) de verzoeken/de reacties GraphQL voor elke component in het voorgeheugen worden opgeslagen. Het is ook mogelijk om het caching gedrag voor de diensten te bepalen OSGi gebruikend de cliënt GraphQL.
+Voor de AEM componenten van de Kern van CIF, wordt het in cache plaatsen gevormd op componentenbasis, zodat is het mogelijk om te controleren als (en hoe lang) de verzoeken/de reacties van GraphQL voor elke component in het voorgeheugen worden opgeslagen. Het is ook mogelijk om het caching gedrag voor de diensten te bepalen OSGi gebruikend de cliënt van GraphQL.
 
 ### Configuratie
 
-Zodra gevormd voor een bepaalde component, begint het geheime voorgeheugen het opslaan van vragen GraphQL en reacties zoals die door elke ingang van de geheim voorgeheugenconfiguratie worden bepaald. De grootte van het geheime voorgeheugen en de caching duur van elke ingang moeten op een projectbasis worden bepaald, afhankelijk van bijvoorbeeld hoe vaak de catalogusgegevens zouden kunnen veranderen, hoe kritiek het is dat een component altijd de recentste mogelijke gegevens, etc. toont. Merk op dat er geen geheim voorgeheugenongeldigverklaring is, zo zorgvuldig wanneer het plaatsen van de geheim voorgeheugenduur is.
+Zodra gevormd voor een bepaalde component, begint het geheime voorgeheugen GraphQL vragen en antwoorden zoals die door elke ingang van de geheim voorgeheugenconfiguratie worden bepaald op te slaan. De grootte van het geheime voorgeheugen en de caching duur van elke ingang moeten op een projectbasis worden bepaald, afhankelijk van bijvoorbeeld hoe vaak de catalogusgegevens zouden kunnen veranderen, hoe kritiek het is dat een component altijd de recentste mogelijke gegevens, etc. toont. Merk op dat er geen geheim voorgeheugenongeldigverklaring is, zo zorgvuldig wanneer het plaatsen van de geheim voorgeheugenduur is.
 
 Wanneer het vormen caching voor componenten, moet de geheim voorgeheugennaam de naam van zijn **proxy** componenten die u in uw project definieert.
 
-Alvorens de cliënt een verzoek GraphQL verzendt, controleert het of dat **exact** Het zelfde verzoek GraphQL wordt reeds in het voorgeheugen ondergebracht en keert misschien de caching reactie terug. Om aan elkaar te passen, MOET het verzoek GraphQL precies aanpassen, namelijk de vraag, verrichtingsnaam (als om het even welk), variabelen (als om het even welk) moeten allen aan het caching verzoek gelijk zijn, en ook alle kopballen van douaneHTTP die zouden kunnen worden geplaatst MOET het zelfde zijn. De Adobe Commerce `Store` koptekst MOET overeenkomen.
+Voordat de client een GraphQL-aanvraag verzendt, wordt gecontroleerd of **exact** dezelfde GraphQL-aanvraag is al in de cache opgeslagen en retourneert mogelijk de in de cache opgeslagen reactie. Om overeen te komen, MOET de GraphQL- verzoek precies aanpassen, namelijk de vraag, verrichtingsnaam (als om het even welk), variabelen (als om het even welk) moeten allen aan het caching verzoek gelijk zijn, en ook alle kopballen van douaneHTTP die zouden kunnen worden geplaatst MOET het zelfde zijn. De Adobe Commerce `Store` koptekst MOET overeenkomen.
 
 ### Voorbeelden
 
@@ -35,7 +35,7 @@ Dit wordt typisch gevormd met de volgende geheim voorgeheugeningang:
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
-Een ander voorbeeldscenario waar de eigenschap GraphQl in het voorgeheugen onderbrengend wordt geadviseerd om te worden gebruikt is de navigatiecomponent omdat het de zelfde vraag GraphQL op alle pagina&#39;s verzendt. In dit geval wordt de cachevermelding doorgaans ingesteld op:
+Een ander voorbeeldscenario waar de eigenschap GraphQl in het voorgeheugen onderbrengend wordt geadviseerd om te worden gebruikt is de navigatiecomponent omdat het de zelfde vraag van GraphQL op alle pagina&#39;s verzendt. In dit geval wordt de cachevermelding doorgaans ingesteld op:
 
 ```
 venia/components/structure/navigation:true:10:600
@@ -49,7 +49,7 @@ Caching voor andere componenten zou op een projectbasis, gewoonlijk in coördina
 
 Pagina&#39;s of fragmenten in cache AEM in het deelvenster [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is een beste praktijk voor om het even welk AEM project. Doorgaans is dit afhankelijk van validatietechnieken die ervoor zorgen dat inhoud die in AEM is gewijzigd, correct wordt bijgewerkt in de Dispatcher. Dit is een kernelement van de strategie voor het in cache plaatsen van AEM Dispatcher.
 
-Naast zuivere AEM beheerde inhoud CIF kan een pagina commerciële gegevens typisch tonen die dynamisch van Adobe Commerce via GraphQL wordt gehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen, bijvoorbeeld, als sommige productgegevens (zoals naam of prijs) in Adobe Commerce veranderen.
+Naast zuivere AEM beheerde inhoud CIF kan een pagina typisch handelsgegevens tonen die dynamisch van Adobe Commerce via GraphQL wordt opgehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen, bijvoorbeeld, als sommige productgegevens (zoals naam of prijs) in Adobe Commerce veranderen.
 
 Om ervoor te zorgen dat CIF-pagina&#39;s gedurende een beperkte periode in de AEM Dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF-pagina&#39;s in de AEM Dispatcher. Deze eigenschap kan in AEM met het gebruiken van extra worden gevormd [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
 
@@ -62,5 +62,5 @@ Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvou
 ## Aanvullende bronnen
 
 - [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia)
-- [Configuratie van GraphQL-caching](https://github.com/adobe/commerce-cif-graphql-client#caching)
+- [GraphQL-cacheconfiguratie](https://github.com/adobe/commerce-cif-graphql-client#caching)
 - [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

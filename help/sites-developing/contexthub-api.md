@@ -1,8 +1,8 @@
 ---
 title: ContextHub JavaScript API-naslaggids
-seo-title: ContextHub JavaScript API-naslaggids
+seo-title: ContextHub Javascript API Reference
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
-seo-description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
+seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,17 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '5031'
+source-wordcount: '5006'
 ht-degree: 2%
 
 ---
 
+# ContextHub JavaScript API-naslaggids{#contexthub-javascript-api-reference}
 
-# ContextHub JavaScript API Reference{#contexthub-javascript-api-reference}
-
-De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de [component ContextHub aan pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component) is toegevoegd.
+De JavaScript-API van ContextHub is beschikbaar voor uw scripts wanneer de [De component ContextHub is toegevoegd aan de pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## ContextHub-constanten {#contexthub-constants}
 
@@ -34,7 +33,7 @@ De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels Co
 | Constante | Beschrijving | Waarde |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | ContextHub-gebeurtenisnaamruimte | ch |
-| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste opslagruimten zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
+| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste winkels zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
 | ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Geeft aan dat niet alle winkels binnen een bepaalde tijd zijn geïnitialiseerd | gedeeltelijk gereed voor winkels |
 | ContextHub.Constants.EVENT_STORE_REGISTERED | Wordt geactiveerd wanneer een winkel is geregistreerd | in de winkel geregistreerd |
 | ContextHub.Constants.EVENT_STORE_READY | Geeft aan dat winkels klaar zijn om te werken. Het wordt teweeggebracht onmiddellijk na registratie, behalve JSONP slaat op, waar het in brand wordt gestoken wanneer het gegeven wordt opgehaald). | klaar voor gebruik |
@@ -103,7 +102,7 @@ Hiermee wordt een winkel opgehaald als een JavaScript-object.
 
 **Parameters**
 
-* **name:** De naam waarmee de winkel is geregistreerd.
+* **naam:** De naam waarmee de winkel is geregistreerd.
 
 **Geeft als resultaat**
 
@@ -151,40 +150,40 @@ De basisklasse voor opslag ContextHub.
 
 ### Eigenschappen (ContextHub.Store.Core) {#properties-contexthub-store-core}
 
-#### gebeurtenis {#eventing}
+#### voorkomen {#eventing}
 
-Een [ContextHub.Utils.Event](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) voorwerp. Gebruik dit object voor het binden van functies om gebeurtenissen op te slaan. Voor informatie over de standaardwaarde en initialisatie, zie [init (naam, config)](/help/sites-developing/contexthub-api.md#init-name-config).
+A [ContextHub.Utils.Event](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) object. Gebruik dit object voor het binden van functies om gebeurtenissen op te slaan. Voor informatie over de standaardwaarde en initialisatie raadpleegt u [init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).
 
 #### name {#name}
 
 De naam van de winkel.
 
-#### persistentie {#persistence}
+#### volharding {#persistence}
 
-Een ContextHub.Utils.Persistence-object. Zie `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).` voor informatie over de standaardwaarde en initialisatie
+Een ContextHub.Utils.Persistence-object. Voor informatie over de standaardwaarde en initialisatie raadpleegt u `[init(name,config)](/help/sites-developing/contexthub-api.md#init-name-config).`
 
 ### Functies (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
 #### addAllItems(tree, options) {#addallitems-tree-options}
 
-Voegt een gegevensobject of een array samen met de opslaggegevens. Elk sleutelwaardepaar in het object of de array wordt toegevoegd aan de store (via de functie `setItem`):
+Voegt een gegevensobject of een array samen met de opslaggegevens. Elk sleutelwaardepaar in het object of de array wordt aan de winkel toegevoegd (via de `setItem` functie):
 
 * **Object:** Toetsen zijn de eigenschapnamen.
-* **Array:** Toetsen zijn de arrayindexen.
+* **Array:** Toetsen zijn de array-indexen.
 
 Waarden kunnen objecten zijn.
 
 **Parameters**
 
-* **tree:** (Object of array) De gegevens die aan de winkel moeten worden toegevoegd.
-* **opties:** (Object) Een optioneel object met opties dat wordt doorgegeven aan de functie setItem. Zie de parameter `options` van [setItem(key,value,options)](/help/sites-developing/contexthub-api.md#setitem-key-value-options) voor meer informatie.
+* **boom:** (Object of array) De gegevens die aan de winkel moeten worden toegevoegd.
+* **opties:** (Object) Een optioneel object met opties dat wordt doorgegeven aan de functie setItem. Zie voor meer informatie de `options` parameter van [setItem(key,value,options)](/help/sites-developing/contexthub-api.md#setitem-key-value-options).
 
 **Geeft als resultaat**
 
 A `boolean` waarde:
 
-* De waarde `true` geeft aan dat het gegevensobject is opgeslagen.
-* De waarde `false` geeft aan dat de gegevensopslag ongewijzigd blijft.
+* Een waarde van `true` Hiermee wordt aangegeven dat het gegevensobject is opgeslagen.
+* Een waarde van `false` Hiermee wordt aangegeven dat de gegevensopslag ongewijzigd blijft.
 
 #### addReference(key, anotherKey) {#addreference-key-anotherkey}
 
@@ -192,20 +191,20 @@ Maakt een verwijzing van de ene toets naar de andere. Een sleutel kan niet naar 
 
 **Parameters**
 
-* **key:** De toets waarnaar wordt verwezen  `anotherKey`.
+* **toets:** De sleutel waarnaar wordt verwezen `anotherKey`.
 
-* **een andere sleutel:** De sleutel waarnaar wordt verwezen door  `key`.
+* **andere sleutel:** De sleutel waarnaar wordt verwezen door `key`.
 
 **Geeft als resultaat**
 
 A `boolean` waarde:
 
-* De waarde `true` geeft aan dat de verwijzing is toegevoegd.
-* De waarde `false` geeft aan dat er geen verwijzing is toegevoegd.
+* Een waarde van `true` geeft aan dat de verwijzing is toegevoegd.
+* Een waarde van `false` geeft aan dat er geen verwijzing is toegevoegd.
 
-#### aankonceReadiness() {#announcereadiness}
+#### noticeReadiness() {#announcereadiness}
 
-De gebeurtenis `ready` voor deze winkel wordt geactiveerd. Deze functie heeft geen parameters en retourneert geen waarde.
+Hiermee wordt het dialoogvenster `ready` voor deze winkel. Deze functie heeft geen parameters en retourneert geen waarde.
 
 #### clean() {#clean}
 
@@ -217,7 +216,7 @@ Retourneert de waarde die aan een toets is gekoppeld.
 
 **Parameters**
 
-* **key:** (String) De sleutel waarvoor de waarde moet worden geretourneerd.
+* **toets:** (String) De sleutel waarvoor de waarde moet worden geretourneerd.
 
 **Geeft als resultaat**
 
@@ -229,11 +228,11 @@ Haalt de sleutels uit de opslag op. Naar keuze kunt u de sleutels terugwinnen di
 
 **Parameters**
 
-* **includeInternal:** A value of  `true` includes internal-used keys in the results. Deze toetsen beginnen met het onderstrepingsteken (&quot;_&quot;). De standaardwaarde is `false`.
+* **includeInternal:** Een waarde van `true` neemt intern gebruikte sleutels in de resultaten op. Deze toetsen beginnen met het onderstrepingsteken (&quot;_&quot;). De standaardwaarde is `false`.
 
 **Geeft als resultaat**
 
-Een array van sleutelnamen ( `string` waarden).
+Een array met sleutelnamen ( `string` waarden).
 
 #### getReferences() {#getreferences}
 
@@ -243,9 +242,9 @@ Haalt de verwijzingen uit de opslag op.
 
 Een array die naar toetsen verwijst als indexen voor de toetsen waarnaar wordt verwezen:
 
-* Verwijzen naar toetsen komt overeen met de parameter `key` van de functie `addReference`.
+* Verwijzen naar sleutels komt overeen met de `key` parameter van de `addReference` functie.
 
-* Sleutels waarnaar wordt verwezen, komen overeen met de parameter `anotherKey` van de functie `addReference`.
+* Sleutels waarnaar wordt verwezen, komen overeen met de `anotherKey` parameter van de `addReference` functie.
 
 #### getTree(includeInternal) {#gettree-includeinternals}
 
@@ -253,7 +252,7 @@ Hiermee wordt de gegevensstructuur uit de opslagruimte opgehaald. Naar keuze kun
 
 **Parameters**
 
-* `includeInternals:` Een waarde van  `true` omvat intern-gebruikte sleutel/waardeparen in de resultaten. De sleutels van deze gegevens beginnen met het onderstrepingsteken (&quot;_&quot;) karakter. De standaardwaarde is `false`.
+* `includeInternals:` Een waarde van `true` neemt intern-gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (&quot;_&quot;) karakter. De standaardwaarde is `false`.
 
 **Geeft als resultaat**
 
@@ -265,17 +264,17 @@ Initialiseert de winkel.
 
 * Stelt de opslaggegevens in op een leeg object.
 * Hiermee stelt u de opslagverwijzingen in naar een leeg object.
-* Het eventChannel is data:*name*, waarbij *name* de winkelnaam is.
+* Het gebeurteniskanaal is gegevens:*name*, waarbij *name* is de naam van de winkel.
 
-* De storeDataKey is /store/*name*, waarbij *name* de opslagnaam is.
+* De storeDataKey is /store/*name*, waarbij *name* is de naam van de winkel.
 
 **Parameters**
 
-* **name:** The name of the store.
+* **naam:** De naam van de winkel.
 * **config:** Een object dat configuratie-eigenschappen bevat:
 
    * eventDeferring: De standaardwaarde is 32.
-   * gebeurtenis: Het [voorwerp ContextHub.Utils.Event](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) voor deze opslag. De standaardwaarde is het voorwerp ContextHub.eventing gebruikt.
+   * gebeurtenis: De [ContextHub.Utils.Event](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) object voor deze winkel. De standaardwaarde is het voorwerp ContextHub.eventing gebruikt.
    * persistentie: Het object ContextHub.Utils.Persistence voor deze winkel. De standaardwaarde is het voorwerp ContextHub.persistence.
 
 #### isEventPaused() {#iseventingpaused}
@@ -293,27 +292,27 @@ Een Booleaanse waarde:
 
 Pauzeert het voorkomen voor de opslag zodat geen gebeurtenissen worden teweeggebracht. Deze functie vereist geen parameters en retourneert geen waarde.
 
-#### removeItem(key, options) {#removeitem-key-options}
+#### removeItem(sleutel, opties) {#removeitem-key-options}
 
 Hiermee verwijdert u een sleutel-/waardepaar uit de winkel.
 
-Wanneer een toets wordt verwijderd, activeert de functie de gebeurtenis `data`. De gebeurtenisgegevens omvatten de opslagnaam, de naam van de sleutel die is verwijderd, de waarde die is verwijderd, de nieuwe waarde voor de sleutel (null) en het actietype &quot;remove&quot;.
+Wanneer een toets wordt verwijderd, activeert de functie het `data` gebeurtenis. De gebeurtenisgegevens omvatten de opslagnaam, de naam van de sleutel die is verwijderd, de waarde die is verwijderd, de nieuwe waarde voor de sleutel (null) en het actietype &quot;remove&quot;.
 
-U kunt desgewenst het activeren van de gebeurtenis `data` voorkomen.
+U kunt desgewenst het activeren van de `data` gebeurtenis.
 
 **Parameters**
 
-* **key:** (String) De naam van de toets die moet worden verwijderd.
+* **toets:** (String) De naam van de toets die moet worden verwijderd.
 * **opties:** (Object) Een object met opties. De volgende objecteigenschappen zijn geldig:
 
-   * stil: De waarde `true` voorkomt het activeren van de gebeurtenis `data`. De standaardwaarde is `false`.
+   * stil: Een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
 
 **Geeft als resultaat**
 
 A `boolean` waarde:
 
-* De waarde `true` geeft aan dat het sleutelwaardepaar is verwijderd.
-* De waarde `false` geeft aan dat de gegevensopslag ongewijzigd is omdat de sleutel niet in de opslag is gevonden.
+* Een waarde van `true` Geeft aan dat het sleutelwaardepaar is verwijderd.
+* Een waarde van `false` Hiermee wordt aangegeven dat de gegevensopslag ongewijzigd blijft omdat de sleutel niet in de opslag is gevonden.
 
 #### removeReference(key) {#removereference-key}
 
@@ -321,14 +320,14 @@ Hiermee verwijdert u een verwijzing uit de winkel.
 
 **Parameters**
 
-* **key:** De toetsverwijzing die moet worden verwijderd. Deze parameter komt overeen met de parameter `key` van de functie `addReference`.
+* **toets:** De belangrijkste verwijzing om te verwijderen. Deze parameter komt overeen met `key` parameter van de `addReference` functie.
 
 **Geeft als resultaat**
 
 A `boolean` waarde:
 
-* De waarde `true` geeft aan dat de verwijzing is verwijderd.
-* De waarde `false` geeft aan dat de sleutel niet geldig was en dat de opslag ongewijzigd blijft.
+* Een waarde van `true` Geeft aan dat de verwijzing is verwijderd.
+* Een waarde van `false` geeft aan dat de sleutel niet geldig was en dat de winkel ongewijzigd is.
 
 #### reset(keepRestatingData) {#reset-keepremainingdata}
 
@@ -338,7 +337,7 @@ De aanvankelijke waarden worden verstrekt in het initialValues bezit van het con
 
 **Parameters**
 
-* **keepRestatingData:** (Boolean) Een waarde van true zorgt ervoor dat niet-initiële gegevens worden voortgezet. Bij de waarde false worden alle gegevens verwijderd, behalve de beginwaarden.
+* **keepRestatingData:** (Boolean) Bij de waarde true blijven niet-initiële gegevens behouden. Bij de waarde false worden alle gegevens verwijderd, behalve de beginwaarden.
 
 Herstelt de aanvankelijke waarden van de blijvende gegevens van de opslag. U kunt desgewenst alle andere gegevens uit de winkel verwijderen. De gebeurtenis wordt gepauzeerd voor deze opslag terwijl de opslag wordt teruggesteld. Deze functie retourneert geen waarde.
 
@@ -354,13 +353,13 @@ Hiermee wordt een toets waarnaar wordt verwezen, opgehaald. U kunt desgewenst he
 
 **Parameters**
 
-* **key:** (String) The key for which to resolve the reference. Deze parameter `key` komt overeen met de parameter `key` van de functie `addReference`.
+* **toets:** (String) De sleutel waarvoor de verwijzing moet worden opgelost. Dit `key` parameter komt overeen met `key` parameter van de `addReference` functie.
 
-* **retry:** (Number) The number of iterations to use.
+* **opnieuw proberen:** (Number) Het aantal herhalingen dat moet worden gebruikt.
 
 **Geeft als resultaat**
 
-Een waarde `string` die de referenced sleutel vertegenwoordigt. Als er geen verwijzing is opgelost, wordt de waarde van de parameter `key` geretourneerd.
+A `string` waarde die de referenced sleutel vertegenwoordigt. Als er geen verwijzing wordt gevonden, wordt de waarde van de optie `key` parameter wordt geretourneerd.
 
 #### resumeEvent() {#resumeeventing}
 
@@ -370,33 +369,33 @@ Hervat de gebeurtenis voor deze opslag zodat de gebeurtenissen worden teweeggebr
 
 Voegt een sleutel/waardepaar aan de opslag toe.
 
-De gebeurtenis `data` wordt alleen geactiveerd als de waarde voor de toets anders is dan de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat de gebeurtenis `data` wordt geactiveerd.
+Hiermee wordt het dialoogvenster `data` alleen als de waarde voor de toets anders is dan de waarde die momenteel voor de toets is opgeslagen. U kunt desgewenst voorkomen dat het `data` gebeurtenis.
 
-De gebeurtenisgegevens omvatten de opslagnaam, de sleutel, de vorige waarde, de nieuwe waarde en het actietype `set`.
+De gebeurtenisgegevens omvatten de opslagnaam, de sleutel, de vorige waarde, de nieuwe waarde en het actietype van `set`.
 
 **Parameters**
 
-* **key:** (String) The name of the key.
+* **toets:** (String) De naam van de toets.
 * **opties:** (Object) Een object met opties. De volgende objecteigenschappen zijn geldig:
 
-   * stil: De waarde `true` voorkomt het activeren van de gebeurtenis `data`. De standaardwaarde is `false`.
+   * stil: Een waarde van `true` voorkomt dat de `data` gebeurtenis. De standaardwaarde is `false`.
 
-* **value:** (Object) De waarde die aan de sleutel moet worden gekoppeld.
+* **waarde:** (Object) De waarde die aan de sleutel moet worden gekoppeld.
 
 **Geeft als resultaat**
 
 A `boolean` waarde:
 
-* De waarde `true` geeft aan dat het gegevensobject is opgeslagen.
-* De waarde `false` geeft aan dat de gegevensopslag ongewijzigd blijft.
+* Een waarde van `true` Hiermee wordt aangegeven dat het gegevensobject is opgeslagen.
+* Een waarde van `false` Hiermee wordt aangegeven dat de gegevensopslag ongewijzigd blijft.
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de functie [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) wanneer u een instantie van deze klasse maakt.
+Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) wanneer u een instantie van deze klasse maakt.
 
 De opslag gebruikt in-geheugenpersistentie (variabele Javascript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
 
-ContextHub.Store.JSONPStore breidt [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) uit en erft de functies van die klasse.
+ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) en neemt de functies van die klasse over.
 
 ### Functies (ContextHub.Store.JSONPStore) {#functions-contexthub-store-jsonpstore}
 
@@ -406,10 +405,10 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 
 **Parameters**
 
-* **serviceConfig:** een object dat de volgende eigenschappen bevat:
+* **serviceConfig:** Een object dat de volgende eigenschappen bevat:
 
    * host: (Tekenreeks) De servernaam of het IP-adres.
-   * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
+   * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
    * param: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
    * pad: (Tekenreeks) Het pad naar de service.
    * poort: (Aantal) het havenaantal van de dienst.
@@ -419,7 +418,7 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
       * true: https://
       * false: https://
 
-* **override:** (Boolean). Bij een waarde van `true` wordt de bestaande serviceconfiguratie vervangen door de eigenschappen van `serviceConfig`. Bij een waarde van `false` worden de bestaande serviceconfiguratie-eigenschappen samengevoegd met de eigenschappen van `serviceConfig`.
+* **overschrijven:** (Booleaans). Een waarde van `true` veroorzaakt de bestaande de dienstconfiguratie om door de eigenschappen van te worden vervangen `serviceConfig`. Een waarde van `false` veroorzaakt de bestaande eigenschappen van de de dienstconfiguratie om met de eigenschappen van worden samengevoegd: `serviceConfig`.
 
 #### getRawResponse() {#getrawresponse}
 
@@ -437,13 +436,13 @@ Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opge
 
 Een object met de volgende eigenschappen:
 
-* **host:** (String) De servernaam of het IP-adres.
-* **jsonp:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
+* **host:** (Tekenreeks) De servernaam of het IP-adres.
+* **jsonp:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*}-object wordt toegevoegd aan het object service.params.
 
-* **params:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
-* **path:** (String) The path to the service.
-* **poort:** (Number) Het poortnummer van de service.
-* **secure:** (String of Boolean) Bepaalt het protocol dat voor de service-URL moet worden gebruikt:
+* **param:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
+* **pad:** (Tekenreeks) Het pad naar de service.
+* **poort:** (Aantal) het havenaantal van de dienst.
+* **veilig:** (String of Boolean) Bepaalt het protocol dat voor de service-URL moet worden gebruikt:
 
    * auto: //
    * true: https://
@@ -455,11 +454,11 @@ Haalt URL van de dienst JSONP op.
 
 **Parameters**
 
-* **resolve:** (Boolean) Hiermee wordt bepaald of omgezette parameters in de URL moeten worden opgenomen. Een waarde van `true` lost parameters op, en `false` niet.
+* **oplossen:** (Boolean) Hiermee wordt bepaald of omgezette parameters in de URL moeten worden opgenomen. Een waarde van `true` stelt parameters op, en `false` niet.
 
 **Geeft als resultaat**
 
-Een waarde `string` die de service-URL vertegenwoordigt.
+A `string` waarde die de service-URL vertegenwoordigt.
 
 #### init(name, config) {#init-name-config-1}
 
@@ -467,16 +466,16 @@ initialiseert het object ContextHub.Store.JSONPStore.
 
 **Parameters**
 
-* **name:** (String) The name of the store.
-* **config:** (Object) Een object dat de eigenschap service bevat. Het JSONPStore-object gebruikt de eigenschappen van het `service`-object om de URL van de JSONP-service te maken:
+* **naam:** (Tekenreeks) De naam van de winkel.
+* **config:** (Object) Een object dat de eigenschap service bevat. Het JSONPStore-object gebruikt de eigenschappen van de `service` object voor het samenstellen van de URL van de JSONP-service:
 
    * eventDeferring: 32.
-   * gebeurtenis: Het object ContextHub.Utils.Event voor deze winkel. De standaardwaarde is het object `ContextHub.eventing`.
+   * gebeurtenis: Het object ContextHub.Utils.Event voor deze winkel. De standaardwaarde is `ContextHub.eventing` object.
    * persistentie: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (Javascript-object).
    * service: (Object)
 
       * host: (Tekenreeks) De servernaam of het IP-adres.
-      * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt het object `{callback: "ContextHub.Callbacks.*Object.name*}`toegevoegd aan `service.params`.
+      * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt `{callback: "ContextHub.Callbacks.*Object.name*}`object wordt toegevoegd aan `service.params`.
       * param: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen en -waarden zijn respectievelijk namen en waarden van objecteigenschappen.
       * pad: (Tekenreeks) Het pad naar de service.
       * poort: (Aantal) het havenaantal van de dienst.
@@ -486,18 +485,18 @@ initialiseert het object ContextHub.Store.JSONPStore.
          * true: https://
          * false: https://
       * timeout: (Aantal) de hoeveelheid tijd op de dienst JSONP te wachten om vóór timing uit, in milliseconden te antwoorden.
-      * ttl: De minimumhoeveelheid tijd in milliseconden die tussen vraag tot de dienst JSONP overgaat. (Zie de functie [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
+      * ttl: De minimumhoeveelheid tijd in milliseconden die tussen vraag tot de dienst JSONP overgaat. (Zie de [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) functie).
 
 
 #### queryService(reload) {#queryservice-reload}
 
-Zoekt de verre dienst JSONP en caches de reactie. Als de hoeveelheid tijd sinds de vorige vraag aan deze functie minder dan de waarde van `config.service.ttl` is, wordt de dienst niet geroepen en de caching reactie wordt niet veranderd. Naar keuze, kunt u de dienst dwingen om worden geroepen. De `config.service.ttl`eigenschap wordt ingesteld wanneer de functie [init](/help/sites-developing/contexthub-api.md#init-name-config) wordt aangeroepen om de opslag te initialiseren.
+Zoekt de verre dienst JSONP en caches de reactie. Als de hoeveelheid tijd sinds de vorige aanroep van deze functie kleiner is dan de waarde van `config.service.ttl`, wordt de dienst niet geroepen en de caching reactie wordt niet veranderd. Naar keuze, kunt u de dienst dwingen om worden geroepen. De `config.service.ttl`eigenschap wordt ingesteld wanneer het aanroepen van de [init](/help/sites-developing/contexthub-api.md#init-name-config) om de winkel te initialiseren.
 
 De gebeurtenis ready wordt geactiveerd wanneer de query is voltooid. Wanneer de URL van de JSONP-service niet is ingesteld, doet de functie niets.
 
 **Parameters**
 
-* **herladen:**  (Boolean) Een waarde van waar verwijdert de in de cache opgeslagen reactie en dwingt de JSONP-service aan te roepen.
+* **opnieuw laden:** (Boolean) De waarde true verwijdert de reactie in de cache en dwingt de JSONP-service aan te roepen.
 
 #### reset {#reset}
 
@@ -507,7 +506,7 @@ De aanvankelijke waarden worden verstrekt in het initialValues bezit van het con
 
 **Parameters**
 
-* **keepRestatingData:** (Boolean) Een waarde van true zorgt ervoor dat niet-initiële gegevens worden voortgezet. Bij de waarde false worden alle gegevens verwijderd, behalve de beginwaarden.
+* **keepRestatingData:** (Boolean) Bij de waarde true blijven niet-initiële gegevens behouden. Bij de waarde false worden alle gegevens verwijderd, behalve de beginwaarden.
 
 #### resolveParameter(f) {#resolveparameter-f}
 
@@ -515,15 +514,15 @@ Hiermee wordt de opgegeven parameter omgezet.
 
 ## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
-ContextHub.Store.PersistedJSONPStore breidt [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) uit zodat erft het alle functies van die klasse. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [Persistentiemodi](/help/sites-developing/ch-adding.md#persistence-modes).)
+ContextHub.Store.PersistedJSONPStore extends [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) dus neemt het alle functies van die klasse over. Nochtans, worden de gegevens die van de dienst JSONP worden teruggewonnen voortgeduurd volgens de configuratie van persistentie ContextHub. (Zie [Persistentiemodi](/help/sites-developing/ch-adding.md#persistence-modes).)
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-ContextHub.Store.PersistedStore breidt [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag worden voortgeduurd volgens de configuratie van persistentie ContextHub.
+ContextHub.Store.PersistedStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag worden voortgeduurd volgens de configuratie van persistentie ContextHub.
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore breidt [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) uit zodat erft het alle functies van die klasse. De gegevens in deze opslag blijven behouden met in-memory persistance (Javascript-object).
+ContextHub.Store.SessionStore is uitgebreid [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag blijven behouden met in-memory persistance (Javascript-object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -533,13 +532,13 @@ Beheert UI-modules en UI-moduleurs.
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
-Registreert een UI modulerenderer met ContextHub. Nadat renderer wordt geregistreerd, kan het worden gebruikt om modules [te creëren UI](ch-configuring.md#adding-a-ui-module). Gebruik deze functie wanneer u [uitbreidt ContextHub.UI.BaseModuleRenderer](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) om een renderer van de Module van de douaneUI tot stand te brengen.
+Registreert een UI modulerenderer met ContextHub. Nadat de renderer is geregistreerd, kan deze worden gebruikt om [UI-modules maken](ch-configuring.md#adding-a-ui-module). Gebruik deze functie wanneer u [ContextHub.UI.BaseModuleRenderer uitbreiden](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types) om een aangepaste UI Module-renderer te maken.
 
 **Parameters**
 
-* **moduleType:** (Koord) het herkenningsteken voor UI modulerenderer. Als een renderer al is geregistreerd met de opgegeven waarde, is de bestaande renderer niet geregistreerd voordat deze renderer is geregistreerd.
-* **renderer:** (String) De naam van de klasse die de UI-module rendert.
-* **dontRender:** (Boolean) Reeks aan  `true` om te verhinderen dat ContextHub UI wordt teruggegeven nadat renderer wordt geregistreerd. De standaardwaarde is `false`.
+* **moduleType:** (Tekenreeks) De id voor de renderer van de module UI. Als een renderer al is geregistreerd met de opgegeven waarde, is de bestaande renderer niet geregistreerd voordat deze renderer is geregistreerd.
+* **renderer:** (String) De naam van de klasse die de module UI rendert.
+* **dontRender:** (Boolean) Ingesteld op `true` om ContextHub UI te verhinderen worden teruggegeven nadat renderer wordt geregistreerd. De standaardwaarde is `false`.
 
 **Voorbeeld**
 
@@ -561,11 +560,11 @@ Hiermee wordt bepaald of een cookie bestaat.
 
 **Parameters**
 
-* **key:** A  `String` die de sleutel van het koekje bevat waarvoor u test.
+* **toets:** A `String` die de sleutel bevat van het cookie waarvoor u test.
 
 **Geeft als resultaat**
 
-De waarde `boolean` van true geeft aan dat het cookie bestaat.
+A `boolean` De waarde true geeft aan dat het cookie bestaat.
 
 **Voorbeeld**
 
@@ -604,11 +603,11 @@ Retourneert een cookiewaarde.
 
 **Parameters**
 
-* **key:** De sleutel van het koekje waarvoor u de waarde wilt.
+* **toets:** De sleutel van het koekje waarvoor u de waarde wilt.
 
 **Geeft als resultaat**
 
-De waarde van het cookie of `null` als er geen cookie is gevonden voor de toets.
+De waarde van het cookie, of `null` als er geen cookie is gevonden voor de toets.
 
 **Voorbeeld**
 
@@ -616,7 +615,7 @@ De waarde van het cookie of `null` als er geen cookie is gevonden voor de toets.
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys(filter) {#getkeys-filter}
+#### getKeys (filter) {#getkeys-filter}
 
 Retourneert een array met de sleutels van bestaande cookies die overeenkomen met een filter.
 
@@ -627,7 +626,7 @@ Retourneert een array met de sleutels van bestaande cookies die overeenkomen met
    * Tekenreeks: De tekenreeks wordt vergeleken met de cookie-toets.
    * Array: Elk item in de array is een filter.
    * Een RegExp-object: De testfunctie van het object wordt gebruikt om cookies aan te passen.
-   * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de koekjessleutel als parameter nemen en `true` terugkeren als de test een gelijke bevestigt.
+   * Een functie: Een functie die een koekjessleutel voor een gelijke test. De functie moet de cookiesleutel als parameter nemen en terugkeren `true` als de test een gelijke bevestigt.
 
 **Geeft als resultaat**
 
@@ -639,15 +638,15 @@ Een array van tekenreeksen waarbij elke tekenreeks de sleutel is van een cookie 
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options) {#removeitem-key-options-1}
+#### removeItem(sleutel, opties) {#removeitem-key-options-1}
 
 Hiermee verwijdert u een cookie. Als u het cookie wilt verwijderen, wordt de waarde ingesteld op een tekenreeks en wordt de vervaldatum ingesteld op de dag vóór de huidige datum.
 
 **Parameters**
 
-* **key:** A  `String` value that represents the key of the cookie to remove.
+* **toets:** A `String` waarde die staat voor de sleutel van het cookie dat moet worden verwijderd.
 
-* **opties:** Een object dat eigenschapwaarden bevat voor het configureren van de cookie-kenmerken. Zie de functie ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` voor meer informatie. De eigenschap `expires` heeft geen effect.
+* **opties:** Een object dat eigenschapwaarden bevat voor het configureren van de cookie-kenmerken. Zie de ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` functie voor informatie. De `expires` eigenschap heeft geen effect.
 
 **Geeft als resultaat**
 
@@ -665,13 +664,13 @@ Hiermee maakt u een cookie van de opgegeven sleutel en waarde en voegt u het coo
 
 **Parameters**
 
-* **key:** Een tekenreeks die de sleutel van het cookie bevat.
-* **value:** A String that contains the cookie value.
-* **opties:** (Optioneel) Een object dat een van de volgende eigenschappen bevat waarmee de cookiekenmerken worden geconfigureerd:
+* **toets:** Een tekenreeks die de sleutel van het cookie bevat.
+* **waarde:** Een tekenreeks die de cookiewaarde bevat.
+* **opties:** (Optioneel) Een object dat een van de volgende eigenschappen bevat waarmee de cookie-kenmerken worden geconfigureerd:
 
-   * verloopt: Een waarde `date` of `number` die aangeeft wanneer het cookie vervalt. Een datumwaarde geeft de absolute vervaltijd aan. Een getal (in dagen) stelt de vervaltijd in op de huidige tijd plus het getal. De standaardwaarde is `undefined`.
-   * veilig: Een waarde `boolean` die het `Secure` attribuut van het koekje specificeert. De standaardwaarde is `false`.
-   * pad: Een `String` waarde om als `Path` attribuut van het koekje te gebruiken. De standaardwaarde is `undefined`.
+   * verloopt: A `date` of `number` waarde die aangeeft wanneer het cookie vervalt. Een datumwaarde geeft de absolute vervaltijd aan. Een getal (in dagen) stelt de vervaltijd in op de huidige tijd plus het getal. De standaardwaarde is `undefined`.
+   * veilig: A `boolean` waarde die de `Secure` kenmerk van de cookie. De standaardwaarde is `false`.
+   * pad: A `String` te gebruiken waarde als de `Path` kenmerk van de cookie. De standaardwaarde is `undefined`.
 
 **Geeft als resultaat**
 
@@ -694,55 +693,55 @@ Hiermee verwijdert u alle cookies die overeenkomen met een opgegeven filter. Coo
 
 **Parameters**
 
-* **filter:** Het  `filter` argument dat moet worden gebruikt in de aanroep van de  `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` functie.
+* **filter:** De `filter` in de oproep tot `[getKeys](/help/sites-developing/contexthub-api.md#getkeys-filter)` functie.
 
-* **opties:** Het  `options` argument dat moet worden gebruikt in de aanroep van de  `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` functie.
+* **opties:** De `options` in de oproep tot `[removeItem](/help/sites-developing/contexthub-api.md#removeitem-key-options)` functie.
 
 **Geeft als resultaat**
 
 Deze functie retourneert geen waarde.
 
-## ContextHub.Utils.Event {#contexthub-utils-eventing}
+## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
-Laat u toe om functies aan ContextHub archiefgebeurtenissen te binden en los te maken. Toegang tot objecten ContextHub.Utils.Event voor een opslag die het [eventing](/help/sites-developing/contexthub-api.md#eventing) bezit van de opslag gebruiken.
+Laat u toe om functies aan ContextHub archiefgebeurtenissen te binden en los te maken. Toegang krijgen tot objecten ContextHub.Utils.Event voor een winkel die de [voorkomen](/help/sites-developing/contexthub-api.md#eventing) eigenschap van de winkel.
 
 ### Functies (ContextHub.Utils.Event) {#functions-contexthub-utils-eventing}
 
-#### off(name, kiezer) {#off-name-selector}
+#### off (naam, kiezer) {#off-name-selector}
 
 Hiermee wordt de binding van een functie met een gebeurtenis opgeheven.
 
 **Parameters**
 
-* **name:** De  [naam van de ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) gebeurtenis waarvoor u de binding van de functie opheft.
+* **naam:** De [naam van de gebeurtenis](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) waarvoor u de binding van de functie ongedaan maakt.
 
-* **kiezer:** De kiezer die de binding aangeeft. (Zie de parameter `selector` voor de functies [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) en [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)).
+* **kiezer:** De kiezer die de binding aangeeft. (Zie de `selector` parameter voor de [op](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) en [eenmaal](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) functies).
 
 **Geeft als resultaat**
 
 Deze functie retourneert geen waarde.
 
-#### on(name, handler, kiezer, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
+#### on(naam, handler, kiezer, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
 
 Bindt een functie aan een gebeurtenis. De functie wordt aangeroepen telkens wanneer de gebeurtenis plaatsvindt. De functie kan optioneel worden aangeroepen voor gebeurtenissen die zich in het verleden hebben voorgedaan, voordat de binding wordt ingesteld.
 
 **Parameters**
 
-* **name:** (String) De  [naam van de ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) gebeurtenis waaraan u de functie bindt.
+* **naam:** (String) De [naam van de gebeurtenis](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) waaraan u de functie bindt.
 
-* **handler:** (Function) De functie die aan de gebeurtenis moet worden gebonden.
-* **kiezer:** (String) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de functie `off` wilt gebruiken om de binding te verwijderen.
+* **handler:** (Functie) De functie die aan de gebeurtenis wordt gebonden.
+* **kiezer:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
 
-* **triggerForPastEvents:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die in het verleden hebben plaatsgevonden. De waarde `true` roept de handler voor gebeurtenissen uit het verleden aan. De waarde `false` roept de handler voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
+* **triggerForPastEvents:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen. De standaardwaarde is `true`.
 
 **Geeft als resultaat**
 
-Wanneer het argument `triggerForPastEvents` `true` is, retourneert deze functie een waarde `boolean` die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
+Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
 * `true`: De gebeurtenis vond in het verleden plaats en de handler wordt aangeroepen.
 * `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
 
-Als `triggerForPastEvents` `false` is, keert deze functie geen waarde terug.
+Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.
 
 **Voorbeeld**
 
@@ -770,21 +769,21 @@ Bindt een functie aan een gebeurtenis. De functie wordt slechts eenmaal aangeroe
 
 **Parameters**
 
-* **name:** (String) De  [naam van de ](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) gebeurtenis waaraan u de functie bindt.
+* **naam:** (String) De [naam van de gebeurtenis](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) waaraan u de functie bindt.
 
-* **handler:** (Function) De functie die aan de gebeurtenis moet worden gebonden.
-* **kiezer:** (String) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de functie `off` wilt gebruiken om de binding te verwijderen.
+* **handler:** (Functie) De functie die aan de gebeurtenis wordt gebonden.
+* **kiezer:** (Tekenreeks) Een unieke id voor de binding. U hebt de kiezer nodig om de binding te identificeren als u de `off` functie om de binding te verwijderen.
 
-* **triggerForPastEvents:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die in het verleden hebben plaatsgevonden. De waarde `true` roept de handler voor gebeurtenissen uit het verleden aan. De waarde `false` roept de handler voor toekomstige gebeurtenissen aan. De standaardwaarde is `true`.
+* **triggerForPastEvents:** (Boolean) Geeft aan of de handler moet worden uitgevoerd voor gebeurtenissen die zich in het verleden hebben voorgedaan. Een waarde van `true` roept de manager voor vroegere gebeurtenissen aan. Een waarde van `false` roept de manager voor toekomstige gebeurtenissen. De standaardwaarde is `true`.
 
 **Geeft als resultaat**
 
-Wanneer het argument `triggerForPastEvents` `true` is, retourneert deze functie een waarde `boolean` die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
+Wanneer de `triggerForPastEvents` argument is `true`Deze functie retourneert een `boolean` waarde die aangeeft of de gebeurtenis in het verleden heeft plaatsgevonden:
 
 * `true`: De gebeurtenis vond in het verleden plaats en de handler wordt aangeroepen.
 * `false`: De gebeurtenis heeft zich in het verleden niet voorgedaan.
 
-Als `triggerForPastEvents` `false` is, keert deze functie geen waarde terug.
+Indien `triggerForPastEvents` is `false`, retourneert deze functie geen waarde.
 
 ## ContextHub.Utils.inheritance {#contexthub-utils-inheritance}
 
@@ -792,14 +791,14 @@ Een hulpprogrammaklasse waarmee een object de eigenschappen en methoden van een 
 
 ### Functies (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 
-#### inherit(child, parent) {#inherit-child-parent}
+#### inherit (child, parent) {#inherit-child-parent}
 
 Causes an object to inherit the properties and methods of another object.
 
 **Parameters**
 
-* **child:** (Object) Het object dat overerft.
-* **parent:** (Object) Het object dat de eigenschappen en methoden definieert die worden overgeërfd.
+* **kind:** (Object) Het object dat overerft.
+* **bovenliggend element:** (Object) Het object dat de eigenschappen en methoden definieert die worden overgeërfd.
 
 ## ContextHub.Utils.JSON {#contexthub-utils-json}
 
@@ -813,7 +812,7 @@ Parseert een tekenreekswaarde als JSON en zet deze om in een javascript-object.
 
 **Parameters**
 
-* **data:** Een tekenreekswaarde in JSON-indeling.
+* **gegevens:** Een tekenreekswaarde in JSON-indeling.
 
 **Geeft als resultaat**
 
@@ -837,11 +836,11 @@ Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indel
 
 **Parameters**
 
-* **gegevens:** De waarde of het object waarvan een serienummer moet worden opgegeven. Deze functie ondersteunt booleaanse waarden, arrays, getallen, tekenreeksen en datumwaarden.
+* **gegevens:** De waarde of het object waarop serienummering moet worden toegepast. Deze functie ondersteunt booleaanse waarden, arrays, getallen, tekenreeksen en datumwaarden.
 
 **Geeft als resultaat**
 
-De geserialiseerde tekenreekswaarde. Wanneer `data` een R `egExp` waarde is, keert deze functie een leeg voorwerp terug. Wanneer `data` een functie is, retourneert `undefined`.
+De geserialiseerde tekenreekswaarde. Wanneer `data` is een R `egExp` waarde, retourneert deze functie een leeg object. Wanneer `data` is een functie, retourneert `undefined`.
 
 **Voorbeeld**
 
@@ -867,20 +866,20 @@ Maakt een kopie van een gegevensobject en voegt er vanuit een tweede object de g
 
 **Parameters**
 
-* **structuur:** het object dat wordt gekopieerd.
-* **secondTree:** Het object dat wordt samengevoegd met de kopie van het  `tree` object.
+* **boom:** Het object dat wordt gekopieerd.
+* **secondTree:** Het object dat wordt samengevoegd met de kopie van het dialoogvenster `tree` object.
 
 **Geeft als resultaat**
 
 Een object dat de samengevoegde gegevens bevat.
 
-#### cleanUp() {#cleanup}
+#### Cleup() {#cleanup}
 
 Maakt een kopie van een object, zoekt en verwijdert items in de gegevensstructuur die geen waarden, null-waarden of ongedefinieerde waarden bevatten en retourneert de kopie.
 
 **Parameters**
 
-* **structuur:** het object dat moet worden gewist.
+* **boom:** Het object dat moet worden gewist.
 
 **Geeft als resultaat**
 
@@ -892,12 +891,12 @@ Hiermee wordt de waarde opgehaald van een object voor de toets A.
 
 **Parameters**
 
-* **structuur:** het gegevensobject.
-* **key:** De toets voor de waarde die u wilt ophalen.
+* **boom:** Het gegevensobject.
+* **toets:** De sleutel voor de waarde die u wilt terugwinnen.
 
 **Geeft als resultaat**
 
-De waarde die overeenkomt met de toets. Wanneer de toets onderliggende toetsen heeft, retourneert deze functie een complex object. Wanneer het type van de waarde voor de sleutel `undefined` is, `null` is teruggekeerd.
+De waarde die overeenkomt met de toets. Wanneer de toets onderliggende toetsen heeft, retourneert deze functie een complex object. Wanneer het type van de waarde voor de toets `undefined`, `null` wordt geretourneerd.
 
 **Voorbeeld**
 
@@ -949,9 +948,9 @@ Hiermee worden alle sleutels opgehaald uit de gegevensstructuur van een object. 
 
 **Parameters**
 
-* **structuur:** het object waaruit de sleutels van de gegevensstructuur moeten worden opgehaald.
-* **parent:** (Optioneel) De sleutel van een item in de gegevensstructuur waarvoor u de sleutels van de onderliggende items wilt ophalen.
-* **order:** (Optioneel) Een functie die de sorteervolgorde van de geretourneerde toetsen bepaalt. (Zie [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) op het Mozilla Developer Network.)
+* **boom:** Het object waarvan de sleutels van de gegevensstructuur moeten worden opgehaald.
+* **bovenliggend element:** (Optioneel) De sleutel van een item in de gegevensstructuur waarvoor u de sleutels van de onderliggende items wilt ophalen.
+* **bestelling:** (Optioneel) Een functie die de sorteervolgorde van de geretourneerde toetsen bepaalt. (Zie [Array.prototype.sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) op het Mozilla Developer Network.)
 
 **Geeft als resultaat**
 
@@ -978,7 +977,7 @@ myObject {
 }
 ```
 
-Het `ContextHub.Utils.JSON.tree.getKeys(myObject);` manuscript keert de volgende serie terug:
+De `ContextHub.Utils.JSON.tree.getKeys(myObject);` script retourneert de volgende array:
 
 ```
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1043,15 +1042,15 @@ Hiermee worden tekenreekswaarden gesimuleerd zodat deze als toetsen kunnen worde
 
 Gebruik de resulterende array om een bruikbare sleutel te maken.  **Parameters**
 
-* **key:** The  `string` to sanitize.
+* **toets:** De `string` om te ontsmetten.
 
 **Geeft als resultaat**
 
-Een array van `string` waarden waarbij elke tekenreeks het gedeelte is van de `key` die is afgebakend door slashes. vertegenwoordigt de geanimeerde sleutel. Als de geanimeerde array een lengte van nul heeft, retourneert deze functie `null`.
+Een array van `string` waarden waarbij elke tekenreeks het deel van de `key` dat werd afgebakend door slashes . vertegenwoordigt de geanimeerde sleutel. Als de geanimeerde array een lengte van nul heeft, retourneert deze functie `null`.
 
 **Voorbeeld**
 
-Met de volgende code wordt een tekenreeks geanimeerd om de array `["this", "is", "a", "path"]` te produceren en wordt vervolgens de sleutel `"/this/is/a/path"` uit de array gegenereerd:
+Met de volgende code wordt een tekenreeks gesimuleerd om de array te produceren `["this", "is", "a", "path"]`en genereert vervolgens de toets `"/this/is/a/path"` uit de array:
 
 ```
 var key = " / this////is/a/path ";
@@ -1061,17 +1060,17 @@ ContextHub.Utils.JSON.tree.sanitizeKey(key)
 
 #### setItem(tree, key, value) {#setitem-tree-key-value}
 
-Hiermee voegt u een sleutel-/waardepaar toe aan de gegevensstructuur van een kopie van een object. Zie [Persistentie](/help/sites-developing/contexthub.md#persistence) voor informatie over gegevensbomen.
+Hiermee voegt u een sleutel-/waardepaar toe aan de gegevensstructuur van een kopie van een object. Voor informatie over gegevensbomen raadpleegt u [Persistentie](/help/sites-developing/contexthub.md#persistence).
 
 **Parameters**
 
 * boom: Een gegevensobject.
-* toets: De sleutel die moet worden gekoppeld aan de waarde die u toevoegt. De sleutel is het pad naar het item in de gegevensstructuur. Deze functie roept `ContextHub.Utils.JSON.tree.sanitize` om de sleutel te ontsmetten alvorens het toe te voegen.
+* toets: De sleutel die moet worden gekoppeld aan de waarde die u toevoegt. De sleutel is het pad naar het item in de gegevensstructuur. Deze functie roept `ContextHub.Utils.JSON.tree.sanitize` om de toets te ontsmetten voordat u deze toevoegt.
 * waarde: De waarde die aan de gegevensstructuur moet worden toegevoegd.
 
 **Geeft als resultaat**
 
-Een kopie van het `tree`-object dat het `key`/ `value`-paar bevat.
+Een kopie van de `tree` object dat het `key`/ `value` paar.
 
 **Voorbeeld**
 
@@ -1110,7 +1109,7 @@ Retourneert de winkeltypen die zijn geregistreerd als opslagkandidaten. Of wint 
 
 **Parameters**
 
-* **storeType:** (String) De naam van het winkeltype. Zie de parameter `storeType` van de functie [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates).
+* **storeType:** (String) De naam van het winkeltype. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
 
 **Geeft als resultaat**
 
@@ -1122,7 +1121,7 @@ Retourneert een winkeltype van de geregistreerde kandidaten. Als meer dan één 
 
 **Parameters**
 
-* storeType: (String) De naam van de opslagkandidaat. Zie de parameter `storeType` van de functie [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies).
+* storeType: (String) De naam van de opslagkandidaat. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) functie.
 
 **Geeft als resultaat**
 
@@ -1134,7 +1133,7 @@ Retourneert de namen van de winkeltypen die als opslagkandidaten zijn geregistre
 
 **Geeft als resultaat**
 
-Een array van tekenreekswaarden, waarbij elke tekenreeks het opslagtype is waarmee een opslagkandidaat is geregistreerd. Zie de parameter `storeType` van de functie [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates).
+Een array van tekenreekswaarden, waarbij elke tekenreeks het opslagtype is waarmee een opslagkandidaat is geregistreerd. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
 
 #### registerStoreCandidate(store, storeType, priority, apply) {#registerstorecandidate-store-storetype-priority-applies}
 
@@ -1144,10 +1143,10 @@ De prioriteit is een aantal dat op het belang van de zelfde-genoemde opslag wijs
 
 **Parameters**
 
-* **store:** (Object) Het opslagobject dat moet worden geregistreerd als opslagkandidaat.
+* **opslag:** (Object) Het opslagobject dat moet worden geregistreerd als opslagkandidaat.
 * **storeType:** (String) De naam van de opslagkandidaat. Deze waarde wordt vereist wanneer het creëren van een geval van de opslagkandidaat.
 * **prioriteit:** (Aantal) De prioriteit van de opslagkandidaat.
-* **is van toepassing:** (Functie) De functie om aan te roepen die de toepasselijkheid van de opslag in het huidige milieu evalueert. De functie moet `true` als de opslag van toepassing is, en `false` anders terugkeren. De standaardwaarde is een functie die waar retourneert: `function() {return true;}`
+* **van toepassing:** (Functie) De functie die moet worden aangeroepen die de toepasselijkheid van de opslag in de huidige omgeving evalueert. De functie moet worden geretourneerd `true` indien de opslagplaats van toepassing is, en `false` anders. De standaardwaarde is een functie die waar retourneert: `function() {return true;}`
 
 **Voorbeeld**
 
@@ -1155,4 +1154,3 @@ De prioriteit is een aantal dat op het belang van de zelfde-genoemde opslag wijs
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandiate', 0);
 ```
-

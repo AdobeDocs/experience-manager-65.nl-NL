@@ -405,7 +405,7 @@ Bevestig ten slotte de configuratie door:
    * `Mail.Send`
    * `openid`
    * `offline_access`
-1. Ga naar **Verificatie** - **Een platform toevoegen** - **Web** en in de **URL omleiden** , voegt u de volgende URL toe voor het omleiden van de OAuth-code en drukt u vervolgens op **Configureren**:
+1. Ga naar **Verificatie** - **Een platform toevoegen** - **Web** en in de **URL omleiden** , voegt u de volgende URL toe om de OAuth-code om te leiden en drukt u vervolgens op **Configureren**:
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. Het bovenstaande voor elke publicatie-instantie herhalen
 1. Configureer de instellingen volgens uw vereisten

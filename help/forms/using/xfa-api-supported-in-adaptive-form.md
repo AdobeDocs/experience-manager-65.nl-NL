@@ -1,22 +1,21 @@
 ---
 title: XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren
-seo-title: XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren
+seo-title: XFA support in XDP-based adaptive forms
 description: Hier worden ondersteunde XFA-gebeurtenissen, -eigenschappen, -scripts en -validatie in adaptieve formulieren weergegeven.
-seo-description: Hier worden ondersteunde XFA-gebeurtenissen, -eigenschappen, -scripts en -validatie in adaptieve formulieren weergegeven.
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 75d3c292-cfed-438f-afdb-4071d95a08b7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '683'
 ht-degree: 5%
 
 ---
-
 
 # XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren{#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -30,9 +29,9 @@ Adaptieve formulieren bieden ondersteuning voor verschillende XFA-gebeurtenissen
 
 Wanneer een adaptief formulier wordt gemaakt op basis van een XDP-bestand, worden de eigenschappen, gebeurtenissen en validaties automatisch ingevuld in de gebruikersinterface van het formulierontwerp. Auteurs van formulieren kunnen sommige van deze elementen echter overschrijven om een andere ervaring te creëren.
 
-In dit artikel worden ondersteunde XFA-gebeurtenissen, -eigenschappen en -validaties in adaptieve formulieren weergegeven en wordt uitgelegd hoe u deze in adaptieve formulieren kunt overschrijven.
+Dit artikel bevat een lijst met ondersteunde XFA-gebeurtenissen, -eigenschappen en -validaties die in adaptieve formulieren worden ondersteund, en uitleg hoe u deze in adaptieve formulieren kunt overschrijven.
 
-## Ondersteunde XFA-elementen en hun toewijzing in adaptieve vormen {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Ondersteunde XFA-elementen en hun toewijzing in adaptieve formulieren {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Fields {#fields}
 
@@ -142,7 +141,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de korte beschrijvingseigenschap in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>caption<em> (alle veldtypen)</em></p> </td>
+   <td><p>bijschrift<em> (alle veldtypen)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Title in adaptieve vorm.</p> </td>
   </tr>
   <tr>
@@ -166,11 +165,11 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de eigenschap Meerdere regels toestaan in aangepaste vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigit<em> (Numeriek veld, Decimaal veld)</em></p> </td>
+   <td><p>fracDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
    <td><p>Toegewezen aan de eigenschap Frac digits in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigit<em> (Numeriek veld, Decimaal veld)</em></p> </td>
+   <td><p>leadDigit<em> (Numeriek veld, decimaal veld)</em></p> </td>
    <td><p>Wordt in adaptieve vorm toegewezen aan de eigenschap Cijfers lead.</p> </td>
   </tr>
   <tr>
@@ -269,4 +268,3 @@ In de volgende tabel wordt vastgelegd hoe XFA-validaties worden toegewezen aan v
 >[!NOTE]
 >
 >U kunt de verplichte eigenschap voor het adaptieve formulier keuzerondje en de groep selectievakjes die zijn gebonden aan XFA-knoppen, niet overschrijven.
-

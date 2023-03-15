@@ -1,8 +1,8 @@
 ---
 title: Tags
-seo-title: Tags
+seo-title: Tagging
 description: Door tags toe te wijzen, kan inhoud worden gecategoriseerd en ingedeeld
-seo-description: Door tags toe te wijzen, kan inhoud worden gecategoriseerd en ingedeeld
+seo-description: Tagging allows content to be categorized and organized
 uuid: fbbce525-ebc4-484b-bec9-2d68314cf15a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 feature: Tagging
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 3%
+source-wordcount: '100'
+ht-degree: 2%
 
 ---
-
 
 # Tags{#tagging}
 
@@ -28,6 +27,6 @@ Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden ge
 
 De volgende informatie is beschikbaar voor ontwikkelaars:
 
-* [AEM Tagingframework](/help/sites-developing/framework.md) : een beschrijving van de knooppunten en eigenschappen die worden gebruikt voor tags
+* [Kader voor tags AEM](/help/sites-developing/framework.md) - Een beschrijving van de knooppunten en eigenschappen die voor het aanbrengen van tags zijn gebruikt
 
-* [Tags maken in een AEM-toepassing](/help/sites-developing/building.md)  - Een beschrijving van de API&#39;s die werken met het coderingsframework vanuit de code aan de clientzijde en aan de serverzijde
+* [Tags maken in een AEM toepassing](/help/sites-developing/building.md) - Een beschrijving van de API&#39;s die vanuit client- en servercode werken met het coderingsframework

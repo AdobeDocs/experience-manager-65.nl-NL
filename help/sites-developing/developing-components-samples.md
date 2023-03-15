@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelen AEM componenten - Codevoorbeelden
-seo-title: Ontwikkelen AEM componenten - Codevoorbeelden
+seo-title: Developing AEM Components - Code Samples
 description: In deze sectie vindt u enkele voorbeelden van het maken van uw eigen componenten voor AEM.
-seo-description: In deze sectie vindt u enkele voorbeelden van het maken van uw eigen componenten voor AEM.
+seo-description: This section provides some examples on how to create your own components for AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: components
 content-type: reference
 discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
-
 
 # Ontwikkelen AEM componenten - Codevoorbeelden{#developing-aem-components-code-samples}
 
@@ -28,7 +27,7 @@ Zie voor de onderliggende concepten:
 * [Componenten AEM - de basisbeginselen](/help/sites-developing/components-basics.md)
 * [AEM ontwikkelen](/help/sites-developing/developing-components.md)
 
-Voor informatie over klassieke UI zie [AEM Componenten voor Klassieke UI](/help/sites-developing/developing-components-classic.md).
+Voor informatie over de klassieke interface raadpleegt u [Componenten AEM voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
@@ -36,12 +35,10 @@ Voor informatie over klassieke UI zie [AEM Componenten voor Klassieke UI](/help/
 >
 >* [Ontwerpmodus](/help/sites-developing/developer-mode.md)
 >* a [framework for automating tests, based on the Hobbes.js library](/help/sites-developing/hobbes.md)
-
 >
 
 
-
-## Codevoorbeeld - Hoe te om de Gebieden van de Dialoog {#code-sample-how-to-customize-dialog-fields} aan te passen
+## Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen {#code-sample-how-to-customize-dialog-fields}
 
 CODE VOOR GITHUB
 
@@ -52,19 +49,18 @@ U kunt de code van deze pagina op GitHub vinden
 
 >[!NOTE]
 >
->Dit codevoorbeeld is verwant met de zitting van AEM Gems op [Aanpassen van de Gebieden van de Dialoog](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>Dit codevoorbeeld is gerelateerd aan de AEM Gems-sessie op [Dialoogvenstervelden aanpassen](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Gerelateerde bronnen {#related-resources}
 
-### Nieuwe handeling toevoegen aan een componentwerkbalk {#add-new-action-to-a-component-toolbar}
+### Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
 
 U kunt nieuwe handelingen toevoegen aan werkbalken van componenten met de bewerkingslaag van de pagina-editor.
 
-De details, samen met verbindingen aan de codesteekproef, zijn onder [Nieuwe Actie toevoegen aan een Toolbar van de Component](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
+De details, samen met verbindingen aan de codesteekproef zijn onder [Nieuwe handeling toevoegen aan werkbalk Component](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Contentfragmenten aanpassen en uitbreiden {#customizing-and-extending-content-fragments}
 
 U kunt de standaardcomponent van het Fragment van de Inhoud willen uitbreiden om eigenschappen toe te voegen.
 
-De details zijn onder [Aanpassen en Uitbreidend Inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md).
-
+Details zijn onder [Inhoudsfragmenten aanpassen en uitbreiden](/help/sites-developing/customizing-content-fragments.md).

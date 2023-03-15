@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Assets] proxyontwikkeling"'
+title: "[!DNL Assets] proxyontwikkeling"
 description: Een proxy is een [!DNL Experience Manager] instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een [!DNL Experience Manager] proxy, ondersteunde bewerkingen, proxycomponenten en hoe een aangepaste proxyworker te ontwikkelen.
 contentOwner: AG
 role: Admin, Architect

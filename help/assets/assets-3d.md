@@ -180,7 +180,7 @@ Dynamic Media bevat een Dynamic Media 3D Media-component die u in Adobe Experien
 1. Selecteren **[!UICONTROL Edit]** zodat u de sjabloon kunt openen.
 1. Selecteer in de rechterbovenhoek van de pagina in het keuzemenu de optie **[!UICONTROL Structure]** als deze nog niet actief is.
 
-   ![3d-media-component-structuur](/help/assets/assets-dm/3d-media-component-structure.png)
+   ![3d-media-component-structure](/help/assets/assets-dm/3d-media-component-structure.png)
 
 1. Een leeg gebied selecteren in het dialoogvenster **[!UICONTROL Layout Container]** gebied zodat selecteert u het en opent u de bijbehorende werkbalk.
 1. Selecteer op de werkbalk de optie **[!UICONTROL Policy]** pictogram om het **[!UICONTROL Policy Editor]**.
@@ -206,7 +206,7 @@ Zie ook [Dynamic Media-elementen toevoegen op pagina&#39;s](/help/assets/adding-
 
 1. Selecteer in het zijpaneel het pictogram met het plusteken om het dialoogvenster **[!UICONTROL Components]** lijst.
 
-   ![3d-media-component-slepen-neerzetten](/help/assets/assets-dm/3d-assets-filter.png)
+   ![3d-media-component-drag-drop](/help/assets/assets-dm/3d-assets-filter.png)
 
 1. Sleep de **[!UICONTROL 3D Media]** uit de **[!UICONTROL Components]** Hiermee geeft u een lijst weer naar de locatie op de pagina waar u de 3D-viewer wilt weergeven.
 

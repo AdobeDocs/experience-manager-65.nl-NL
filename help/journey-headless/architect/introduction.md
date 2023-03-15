@@ -1,7 +1,8 @@
 ---
 title: Reis van architect zonder hoofdinhoud AEM
 description: Een inleiding tot de krachtige, flexibele, eindeloze eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
@@ -67,7 +68,7 @@ Dit is meer een ontwikkelingsdetail - maar het zou u kunnen interesseren, enkel 
 
 Nadat u de modellen voor inhoudsfragmenten hebt gemaakt en de auteurs deze hebben gebruikt om de inhoud te genereren, hebben de toepassingen zonder kop toegang tot deze inhoud nodig.
 
-Adobe Experience Manager (AEM) heeft selectief toegang tot uw inhoudsfragmenten met behulp van de AEM GraphQL API, zodat alleen de benodigde inhoud wordt geretourneerd. Met de API kan een ontwikkelaar query&#39;s formuleren die specifieke inhoud selecteren. Dit selectieproces is gebaseerd op *uw* Modellen van inhoudsfragmenten.
+Adobe Experience Manager (AEM) heeft via de GraphQL API selectief toegang tot uw inhoudsfragmenten. Alleen de benodigde inhoud wordt geretourneerd. Met de API kan een ontwikkelaar query&#39;s formuleren die specifieke inhoud selecteren. Dit selectieproces is gebaseerd op *uw* Modellen van inhoudsfragmenten.
 
 Dit betekent dat uw project zonder kop gestructureerde inhoud voor gebruik in uw toepassingen kan realiseren.
 

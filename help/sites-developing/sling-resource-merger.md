@@ -37,7 +37,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 >
 >De samenvoeging van het Verdeelde Middel en verwante methodes kunnen slechts met worden gebruikt [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Dit betekent ook dat het alleen geschikt is voor de standaardinterface met aanraakbediening. met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing op het aanraakdialoogvenster van een component.
 >
->Bij overlays/overschrijvingen voor andere gebieden (waaronder andere aspecten van een component met aanraakbediening of de klassieke interface) worden het juiste knooppunt en de juiste structuur van het origineel naar waar de aanpassing wordt gedefinieerd, gekopieerd.
+>Bij overlays/overschrijvingen voor andere gebieden (waaronder andere aspecten van een aanraakcomponent of de klassieke UI) worden het juiste knooppunt en de juiste structuur van het origineel naar waar de aanpassing wordt gedefinieerd, gekopieerd.
 
 ### Doelen voor AEM {#goals-for-aem}
 
@@ -229,7 +229,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
          Dit specificeert de knoop (zoals in `/libs`) dat het huidige knooppunt moet worden geplaatst voor:
 
          * type: `String`
-         * waarde: `<before-SiblingName>`
+         * value: `<before-SiblingName>`
 
 ### Het aanroepen van de Verschuivende Fusie van het Middel van uw code {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -254,7 +254,7 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 
    * doel: samenvoegbronnen op basis van hun supertype
    * koppelpunt: `/mnt/overide`
-   * gebruik: `mount point + absolute path`
+   * usage: `mount point + absolute path`
    * voorbeeld:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

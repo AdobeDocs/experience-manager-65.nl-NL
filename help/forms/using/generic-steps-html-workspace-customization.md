@@ -1,8 +1,8 @@
 ---
 title: Algemene stappen voor aanpassing van de AEM Forms-werkruimte
-seo-title: Algemene stappen voor aanpassing van de AEM Forms-werkruimte
+seo-title: Generic steps for AEM Forms workspace customization
 description: Aan de slag met het aanpassen van de gebruikersinterface van de AEM Forms-werkruimte.
-seo-description: Aan de slag met het aanpassen van de gebruikersinterface van de AEM Forms-werkruimte.
+seo-description: How to get started customizing AEM Forms workspace user interface.
 uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
 contentOwner: robhagat
 content-type: reference
@@ -10,32 +10,31 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
-translation-type: tm+mt
-source-git-commit: e863089a4328b7222b60429c82ca3df2b8e1dd05
+exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '271'
 ht-degree: 2%
 
 ---
-
 
 # Algemene stappen voor aanpassing van de AEM Forms-werkruimte {#generic-steps-for-aem-forms-workspace-customization}
 
 De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
-1. Meld u aan bij CRXDE Lite door `https://'[server]:[port]'/lc/crx/de/index.jsp` te openen.
-1. Maak een `sling:Folder`-map met de naam `ws` op `/apps` als deze map niet bestaat. Als u een map `sling:Folder` wilt maken, klikt u met de rechtermuisknop op de map `apps` en selecteert u **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Geef de naam op als `ws`, selecteer tekst als `sling:Folder` en klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Save All]**.
-1. Blader naar `/apps/ws` en navigeer naar het tabblad **[!UICONTROL Access Control]**.
-1. Selecteer de optie **[!UICONTROL Repository]**. Klik in de lijst **[!UICONTROL Access Control]** op **[!UICONTROL +]** om een nieuwe vermelding toe te voegen. Klik nogmaals **[!UICONTROL +]**.
-1. Zoek en selecteer **PERM_WORKSPACE_USER** Principal.
+1. Aanmelden bij CRXDE Lite via toegang `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Een `sling:Folder` map met naam `ws` om `/apps`, als deze niet bestaat. Als u een `sling:Folder` map, klikt u met de rechtermuisknop op de `apps` map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Geef de naam op als `ws`, selecteert u tekst als `sling:Folder` en klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Save All]**.
+1. Bladeren naar `/apps/ws`en navigeer naar de **[!UICONTROL Access Control]** tab.
+1. Selecteer **[!UICONTROL Repository]** optie. In de **[!UICONTROL Access Control]** lijst, klikt u op **[!UICONTROL +]** om een nieuwe vermelding toe te voegen. Klikken **[!UICONTROL +]** opnieuw.
+1. Zoek en selecteer de **PERM_WORKSPACE_USER** Opdrachtgever.
 
-   ![Selecteer PERM_WORKSPACE_USER principal als onderdeel van de algemene stappen om de HTML-werkruimte aan te passen](assets/perm_workspace_user.png)
+   ![Selecteer PERM_WORKSPACE_USER principal als onderdeel van de algemene stappen om de HTML Workspace aan te passen](assets/perm_workspace_user.png)
 
-1. Geef `jcr:read` voorrecht aan Opdrachtgever.
+1. Geef `jcr:read` aan de Opdrachtgever.
 1. Klik op **[!UICONTROL Save All]**.
-1. Kopieer de bestanden `GET.jsp`, `index` en `html.jsp` van de map `/libs/ws` naar de map `/apps/ws`.
-1. Kopieer de map `/libs/ws/locales` in de map `/apps/ws`. Klik op **[!UICONTROL Save All]**.
-1. Werk de verwijzingen en relatieve wegen in het `GET.jsp` dossier bij, zoals hieronder getoond, en klik **[!UICONTROL Save all]**.
+1. Kopieer de `GET.jsp`, `index`, en `html.jsp` bestanden van de `/libs/ws` aan de `/apps/ws` map.
+1. Kopieer de `/libs/ws/locales` in de `/apps/ws` map. Klik op **[!UICONTROL Save All]**.
+1. De verwijzingen en relatieve paden in het dialoogvenster `GET.jsp` bestand, zoals hieronder weergegeven, en klik op **[!UICONTROL Save all]**.
 
    ```javascript
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -43,11 +42,11 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk voor CSS-aanpassingen:
 
-   1. Navigeer naar de map `/apps/ws` en maak een nieuwe map met de naam `css`.
+   1. Ga naar de `/apps/ws` en maak een nieuwe map met de naam `css`.
 
-   1. Maak in de map `css` een nieuw bestand met de naam `newStyle.css`.
+   1. In de `css` map, een nieuw bestand maken met de naam `newStyle.css`.
 
-   1. `/apps/ws/html`.jsp openen en wijzigen van
+   1. Openen `/apps/ws/html`.jsp en wijzigen van
 
    ```javascript
    <link lang="en" rel="stylesheet" type="text/css" href="css/style.css" />
@@ -80,22 +79,22 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk:
 
-   1. Maak een map met de naam `js` op `/apps/ws`. Klik op **[!UICONTROL Save All]**.
+   1. Een map maken met de naam `js` om `/apps/ws`. Klik op **[!UICONTROL Save All]**.
 
-   1. Maak een map met de naam `libs` op `/apps/ws/js`. Klik op **[!UICONTROL Save All]**.
+   1. Een map maken met de naam `libs` om `/apps/ws/js`. Klik op **[!UICONTROL Save All]**.
 
-   1. Kopieer `/libs/ws/js/libs/jqueryui` map naar `/apps/ws/js/libs`. Klik op **[!UICONTROL Save All]**.
+   1. Kopiëren `/libs/ws/js/libs/jqueryui` map naar `/apps/ws/js/libs`. Klik op **[!UICONTROL Save All]**.
 
-1. Ga als volgt te werk voor HTML-aanpassingen:
+1. Doe het volgende voor HTML aanpassingen:
 
-   1. Maak onder `/apps/ws/js` een map met de naam `runtime`. Klik op **[!UICONTROL Save All]**.
+   1. Onder `/apps/ws/js`, maakt u een map met de naam `runtime`. Klik op **[!UICONTROL Save All]**.
 
-   1. Maak onder `/apps/ws/js/runtime` een map met de naam `templates`. Klik op **[!UICONTROL Save All]**.
+   1. Onder `/apps/ws/js/runtime`, maakt u een map met de naam `templates`. Klik op **[!UICONTROL Save All]**.
 
-   1. Kopieer `/libs/ws/js/main.js` naar `/apps/ws/js/main.js`.
+   1. Kopiëren `/libs/ws/js/main.js` tot `/apps/ws/js/main.js`.
 
-   1. Kopieer /libs/ws/js/registry.js naar `/apps/ws/js/registry.js`.
+   1. /libs/ws/js/registry.js kopiëren naar `/apps/ws/js/registry.js`.
 
-1. Klik **[!UICONTROL Save All]**, ontruim geheime voorgeheugen, en vernieuw de werkruimte van AEM Forms.
+1. Klikken **[!UICONTROL Save All]**, cache verwijderen en de AEM Forms-werkruimte vernieuwen.
 
-   Open de URL `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens voor de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   Toegang krijgen tot de URL `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.

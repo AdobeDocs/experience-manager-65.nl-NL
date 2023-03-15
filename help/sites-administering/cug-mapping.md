@@ -1,8 +1,8 @@
 ---
 title: Toewijzing van aangepaste gebruikersgroepen in AEM 6.5
-seo-title: Toewijzing van aangepaste gebruikersgroepen in AEM 6.5
+seo-title: Custom User Group Mapping in AEM 6.5
 description: Leer hoe de Toewijzing van de Gebruikersgroep van de Douane in AEM werkt.
-seo-description: Leer hoe de Toewijzing van de Gebruikersgroep van de Douane in AEM werkt.
+seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +12,9 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-translation-type: tm+mt
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ ht-degree: 0%
   <tr>
    <td><p>Eigenschap: cq:cugPrincipals</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
    <td><p>Eigenschap: rep:principalNames</p> <p>Type knooppunt declareren: rep:CugPolicy</p> </td>
-   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van regelmatige JCR API-aanroepen. gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">deze pagina</a> voor meer informatie over de implementatie.</p> </td>
+   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van regelmatige JCR API-aanroepen. gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugLoginPage</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
@@ -90,7 +89,7 @@ Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG
 
    >[!NOTE]
    > 
-   >Als `CugExcludeImpl` niet wordt gevormd, zal `CugConfiguration` terug naar het gebrek vallen.
+   >Als de `CugExcludeImpl` is niet geconfigureerd, `CugConfiguration` wordt de standaardwaarde hersteld.
 
    Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten in het geval van speciale behoeften.
 

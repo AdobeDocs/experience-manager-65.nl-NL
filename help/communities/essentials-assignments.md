@@ -1,8 +1,8 @@
 ---
 title: Essentiële toewijzingen
-seo-title: Essentiële toewijzingen
+seo-title: Assignments Essentials
 description: Overzicht van de toewijzingsfuncties voor gemeenschappen die in staat zijn om te werken
-seo-description: Overzicht van de toewijzingsfuncties voor gemeenschappen die in staat zijn om te werken
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
 # Essentiële toewijzingen {#assignments-essentials}
 
-Lees verder om over de essentiële informatie voor het werken met de toewijzingseigenschap van [enablement community](/help/communities/overview.md#enablement-community) plaatsen te weten te komen.
+Lees verder voor meer informatie over het werken met de toewijzingsfunctie van [enablement community](/help/communities/overview.md#enablement-community) sites.
 
 De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden toe te wijzen aan leden van gemeenschappen die activering mogelijk maken.
 
@@ -85,7 +85,7 @@ De enige mogelijke combinaties van Voltooiing en Successtatus zijn:
 
 ### Toewijzingsfunctie {#assignments-function}
 
-Een community-sitestructuur die de [toewijzingsfunctie](/help/communities/functions.md#assignments-function) bevat, bevat een geconfigureerde ` [assignments](/help/communities/assignments.md)`-component.
+Een community-sitestructuur die de [Toewijzingsfunctie](/help/communities/functions.md#assignments-function)bevat een configuratie ` [assignments](/help/communities/assignments.md)` component.
 
 ### Referentie-API&#39;s {#reference-apis}
 

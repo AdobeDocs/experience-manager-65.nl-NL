@@ -188,7 +188,7 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
 
    * Ga naar de webconsole op *https://serverhost:serveraddress/system/console/configMgr*
    * Zoeken naar **Wijziging van de Gebruikerstoewijzingsservice Apache Sling Service**
-   * Klik op de koppeling om te zien of de juiste configuratie is geïnstalleerd.
+   * Klik op de koppeling om te zien of de juiste configuratie is ingesteld.
 
 ## Werken met gedeelde sessies in services {#dealing-with-shared-sessions-in-services}
 

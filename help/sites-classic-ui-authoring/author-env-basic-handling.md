@@ -1,35 +1,31 @@
 ---
 title: Basisbewerkingen
-seo-title: Basisbewerkingen
+seo-title: Basic Handling
 description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
-seo-description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
-translation-type: tm+mt
-source-git-commit: 016c705230dffec052c200b058a36cdbe0520fc4
+exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 2%
+source-wordcount: '1194'
+ht-degree: 1%
 
 ---
-
 
 # Basisbewerkingen{#basic-handling}
 
 >[!NOTE]
 >
 >* Deze pagina is ontworpen om een overzicht van basisbehandeling te geven wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de **Sites** console als basis.
-   >
-   >
-* Bepaalde functionaliteit is niet in alle consoles beschikbaar en/of in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
->* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
+>* Bepaalde functionaliteit is niet in alle consoles beschikbaar en/of in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
+>* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>
 
 
 ## Het welkomstscherm {#the-welcome-screen}
@@ -56,31 +52,31 @@ De belangrijkste consoles zijn:
   </tr>
   <tr>
    <td><strong>Digitale middelen</strong><br /> </td>
-   <td>Met deze consoles kunt u digitale elementen, zoals afbeeldingen, video's, documenten en audiobestanden, importeren en <a href="/help/sites-classic-ui-authoring/classicui-assets.md">beheren. </a> Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
+   <td>Met deze consoles kunt u importeren en <a href="/help/sites-classic-ui-authoring/classicui-assets.md">digitale middelen beheren</a> zoals afbeeldingen, video's, documenten en audiobestanden. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td>
   </tr>
   <tr>
    <td><strong>Lanceringen</strong></td>
-   <td>Dit helpt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen </a> beheren; Hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien vereist, is deze console beschikbaar bij de console van Hulpmiddelen; Selecteer Bewerkingen en vervolgens Starten.</i></td>
+   <td>Hierdoor kunt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen</a>; Hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien vereist, is deze console beschikbaar bij de console van Hulpmiddelen; Selecteer Bewerkingen en vervolgens Starten.</i></td>
   </tr>
   <tr>
    <td><strong>Inbox </strong></td>
-   <td>In veel gevallen is een aantal mensen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt uitgeleverd. Met het Postvak IN kunt u meldingen met betrekking tot dergelijke taken weergeven. Zie <a href="/help/sites-administering/workflows.md">Werken met Workflows</a>. <br /> </td>
+   <td>In veel gevallen is een aantal mensen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt uitgeleverd. Met het Postvak IN kunt u meldingen met betrekking tot dergelijke taken weergeven. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tags</strong></td>
-   <td>Met de coderingsconsoles kunt u tags beheren. Tags zijn korte namen of woordgroepen die u kunt gebruiken om stukken inhoud te classificeren en er notities aan toe te voegen, zodat u ze gemakkelijker kunt vinden en organiseren. Zie <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Tags gebruiken en beheren</a> voor meer informatie.</td>
+   <td>Met de coderingsconsoles kunt u tags beheren. Tags zijn korte namen of woordgroepen die u kunt gebruiken om stukken inhoud te classificeren en er notities aan toe te voegen, zodat u ze gemakkelijker kunt vinden en organiseren. Zie voor meer informatie <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Tags gebruiken en beheren</a>.</td>
   </tr>
   <tr>
    <td><strong>Opties</strong></td>
-   <td>Met de <a href="/help/sites-administering/tools-consoles.md">Tools consoles</a> hebt u toegang tot een aantal gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.</td>
+   <td>De <a href="/help/sites-administering/tools-consoles.md">Gereedschapsconsoles</a> toegang bieden tot een aantal gespecialiseerde tools en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.</td>
   </tr>
   <tr>
    <td><strong>Gebruikers</strong></td>
-   <td>Met deze consoles kunt u toegangsrechten voor gebruikers en groepen beheren. Voor volledige details zie <a href="/help/sites-administering/security.md">Gebruikersbeheer en Veiligheid</a>.<br /> </td>
+   <td>Met deze consoles kunt u toegangsrechten voor gebruikers en groepen beheren. Zie voor meer informatie <a href="/help/sites-administering/security.md">Gebruikersbeheer en beveiliging</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Websites</strong></td>
-   <td>Met de Sites/Websites-consoles kunt u <a href="/help/sites-classic-ui-authoring/classic-page-author.md">websites maken, weergeven en beheren</a> die op uw AEM-instantie worden uitgevoerd. Via deze consoles kunt u websitepagina's maken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina's activeren (publiceren). U kunt ook een pagina openen om te bewerken.<br /> </td>
+   <td>Met de sites/Websites-consoles kunt u <a href="/help/sites-classic-ui-authoring/classic-page-author.md">websites maken, weergeven en beheren</a> uitvoeren op uw AEM. Via deze consoles kunt u websitepagina's maken, kopiëren, verplaatsen en verwijderen, workflows starten en pagina's activeren (publiceren). U kunt ook een pagina openen om te bewerken.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
@@ -89,7 +85,7 @@ De belangrijkste consoles zijn:
  </tbody>
 </table>
 
-De **Websites** console verstrekt twee ruiten voor u om uw pagina&#39;s te navigeren en te beheren:
+De **Websites** De console verstrekt twee ruiten voor u om uw pagina&#39;s te navigeren en te beheren:
 
 * Linkerdeelvenster
 
@@ -101,38 +97,38 @@ De **Websites** console verstrekt twee ruiten voor u om uw pagina&#39;s te navig
 
    Hiermee worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en kunnen handelingen worden uitgevoerd.
 
-Van hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages.md) gebruikend of de toolbar, een contextmenu of door een pagina voor verdere acties te openen.
+Vanaf hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages.md) met de werkbalk, een contextmenu of door een pagina voor verdere handelingen te openen.
 
 >[!NOTE]
 >
->De basisafhandeling is voor alle consoles hetzelfde. Deze sectie concentreert zich op **Websites** console aangezien het de primaire console is die bij het ontwerpen wordt gebruikt.
+>De basisafhandeling is voor alle consoles hetzelfde. Deze rubriek concentreert zich op de **Websites** -console omdat dit de primaire console is die tijdens het ontwerpen wordt gebruikt.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Toegang tot Help {#accessing-help}
 
-Op verschillende consoles (bijvoorbeeld Websites) is er ook **Help** knop beschikbaar. Hiermee wordt ofwel Delen van pakket of de documentatiesite geopend.
+Op verschillende consoles (bv. websites) is er ook **Help** -knop beschikbaar is, wordt Pakket delen of de documentatiesite geopend.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Wanneer het uitgeven van een pagina [sidekick heeft ook een knoop voor de toegang tot van help](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Wanneer u een pagina bewerkt, [sidekick heeft ook een knop om hulp te zoeken](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigeren met de websiteconsole {#navigating-with-the-websites-console}
 
-De **Websites** console maakt een lijst van uw pagina&#39;s van inhoud in een boomstructuur (linkerkant ruit). Voor het gemak van navigatie, kunnen de secties van de boomstructuur worden uitgebreid (+) of worden doen ineenstorten (-) zoals vereist:
+De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een boomstructuur (linkerruit). Voor het gemak van navigatie, kunnen de secties van de boomstructuur worden uitgebreid (+) of worden doen ineenstorten (-) zoals vereist:
 
 * Een enkele klik op de paginanaam (in het linkerdeelvenster):
 
    * De onderliggende pagina&#39;s weergeven in het rechterdeelvenster
    * Vouw ook de structuur in het linkerdeelvenster uit.
 
-      Om redenen van prestaties is deze actie afhankelijk van het aantal kindknopen. Met een standaardinstallatie werkt deze uitbreidingsmethode wanneer er `30` of minder kindknopen zijn.
+      Om redenen van prestaties is deze actie afhankelijk van het aantal kindknopen. Met een standaardinstallatie werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
 
 * Als u dubbelklikt op de naam van de pagina (linkerdeelvenster), wordt de structuur ook uitgebreid, hoewel dit effect niet zo duidelijk is wanneer de pagina tegelijkertijd wordt geopend.
 
 >[!NOTE]
 >
->Deze standaardwaarde ( `30`) kan per console in uw toepassing specifieke configuraties van de plaats worden veranderd admin widget:
+>Deze standaardwaarde ( `30`) kan per console worden gewijzigd in de specifieke configuraties van de sitebeheerwidget:
 >
 >Op het knooppunt voor sitebeheer:
 >
@@ -147,11 +143,11 @@ De **Websites** console maakt een lijst van uw pagina&#39;s van inhoud in een bo
 >inch:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Zie [SiteAdmin in CQ Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer informatie.
+>Zie [SiteAdmin in de CQ-widget-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer informatie .
 
 ## Pagina-informatie op de websiteconsole {#page-information-on-the-websites-console}
 
-Het rechterdeelvenster van de console **Websites** biedt een lijstweergave met informatie over pagina&#39;s:
+Het rechterdeelvenster van het deelvenster **Websites** console biedt een lijstweergave met informatie over pagina&#39;s:
 
 ![page-info](assets/page-info.png)
 
@@ -216,9 +212,9 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
 
 >[!NOTE]
 >
->Als u de zichtbare kolommen wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Vanaf dit punt kunt u de optie **Kolommen** gebruiken.
+>Als u de zichtbare kolommen wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Hiervanaf kunt u de opdracht **Kolommen** optie.
 
-De kleuren naast pagina&#39;s in **Gepubliceerd** en **Gewijzigd** kolommen wijzen op publicatiestatus:
+De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gewijzigd** kolommen geven de publicatiestatus aan:
 
 | **Kolom** | **Kleur** | **Beschrijving** |
 |---|---|---|
@@ -234,4 +230,3 @@ De kleuren naast pagina&#39;s in **Gepubliceerd** en **Gewijzigd** kolommen wijz
 In de klassieke gebruikersinterface worden bekende mechanismen gebruikt voor het navigeren en starten van handelingen, waaronder klikken en dubbelklikken. Afhankelijk van de huidige situatie, zijn een waaier van contextmenu&#39;s (gewoonlijk geopend met de juiste-muis-knoop) ook beschikbaar:
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
-

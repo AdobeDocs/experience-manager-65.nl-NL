@@ -1,6 +1,6 @@
 ---
-title: Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query's
-description: Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
+title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
+description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
@@ -10,9 +10,9 @@ ht-degree: 2%
 
 ---
 
-# Leren gebruiken GraphQL met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
+# GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s {#learn-graphql-with-aem-sample-content-queries}
 
-Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door steekproefinhoud en vragen te onderzoeken.
+Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query&#39;s te verkennen.
 
 >[!NOTE]
 >
@@ -20,19 +20,19 @@ Leer om GraphQL met AEM te gebruiken om inhoud zonder problemen te dienen door s
 >
 >* [Contentfragmenten](/help/assets/content-fragments/content-fragments.md)
 >* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
->* [AEM GraphQL API voor gebruik met Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
-Om met vragen te beginnen GraphQL en hoe zij met AEM de Fragmenten van de Inhoud werken helpt het om sommige praktische voorbeelden te zien.
+Om aan de slag te gaan met GraphQL query&#39;s en hoe ze werken met AEM Content Fragments, helpt het om enkele praktische voorbeelden te zien.
 
 Zie voor hulp bij dit:
 
 * A [voorbeeldstructuur van inhoudsfragment](#content-fragment-structure-graphql)
 
-* En sommige [voorbeeld GraphQL-query&#39;s](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
+* En sommige [voorbeeld GraphQL-vragen](#graphql-sample-queries), op basis van de fragmentstructuur van de voorbeeldinhoud (Content Fragment Models and related Content Fragments).
 
 
-## GraphQL - Voorbeeldquery&#39;s met gebruik van de structuur van het contentfragment voor voorbeeldinhoud {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Voorbeeldquery&#39;s met de structuur van het voorbeeldinhoudsfragment {#graphql-sample-queries-sample-content-fragment-structure}
 
 Zie deze steekproefvragen voor illustraties van creeer vragen, samen met steekproefresultaten.
 
@@ -1616,11 +1616,11 @@ Deze query vraagt om:
 }
 ```
 
-## De structuur van het fragment met voorbeeldinhoud (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
+## De structuur voor het voorbeeldinhoudfragment (wordt gebruikt met GraphQL) {#content-fragment-structure-graphql}
 
 De steekproefvragen zijn gebaseerd op de volgende structuur, die gebruikt:
 
-* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-schema&#39;s
+* één of meer, [Voorbeeld van fragmentmodellen van inhoud](#sample-content-fragment-models-schemas) - de basis vormen voor de GraphQL-regeling
 
 * [Voorbeeldinhoudsfragmenten](#sample-content-fragments) op basis van bovenstaande modellen
 
@@ -1642,7 +1642,7 @@ De basisvelden voor het bedrijf zijn:
 |--- |--- |--- |
 | Bedrijfsnaam | Tekst met één regel |  |
 | CEO | Fragmentverwijzing (enkele) | [Person](#model-person) |
-| Werknemers | Fragmentverwijzing (meerdere velden) | [Persoon](#model-person) |
+| Werknemers | Fragmentverwijzing (meerdere velden) | [Person](#model-person) |
 
 #### Person {#model-person}
 
@@ -1686,7 +1686,7 @@ De volgende fragmenten worden gebruikt voor het juiste model.
 |  Little Pony Inc. | Adam Smith | Lara Croft<br>Trekslade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
-#### Persoon {#fragment-person}
+#### Person {#fragment-person}
 
 | Naam | Voornaam | Awards |
 |--- |--- |--- |

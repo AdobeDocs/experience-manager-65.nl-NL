@@ -39,17 +39,17 @@ Start en installeer het vereiste AEM 6.5 Service Pack. Wij adviseren installeren
 
 ### AEM aansluiten op uw systeem voor handel {#connect}
 
-AEM kan met om het even welk handelssysteem worden verbonden dat een toegankelijk eindpunt GraphQL voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
+AEM kunnen worden aangesloten op elk handelssysteem dat een toegankelijk GraphQL-eindpunt voor AEM heeft. Deze eindpunten zijn gewoonlijk openbaar beschikbaar, of kunnen via privé VPN of lokale verbindingen afhankelijk van de individuele projectopstelling worden verbonden.
 
 Naar keuze, kan de authentificatiekop worden verstrekt om extra eigenschappen te gebruiken CIF die authentificatie vereisen.
 
 Door de [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype)en de [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) die al in het [standaardconfiguratie](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) moet worden aangepast.
 
-Vervang de waarde van de optie `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` met het eindpunt GraphQL van uw handelsysteem. Deze configuratie kan via de console worden gedaan OSGI of door de configuratie OSGI via het project op te stellen. De verschillende configuraties voor het opvoeren en productiesystemen worden gesteund gebruikend verschillende AEM looppas wijzen.
+Vervang de waarde van de optie `url` in `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` met het GraphQL-eindpunt van uw handelssysteem. Deze configuratie kan via de console worden gedaan OSGI of door de configuratie OSGI via het project op te stellen. De verschillende configuraties voor het opvoeren en productiesystemen worden gesteund gebruikend verschillende AEM looppas wijzen.
 
 De AEM Inhoud en de Handel toe:voegen-aan en de Componenten van de Kern CIF gebruiken zowel AEM server-kant als cliënt-zijverbindingen. Clientside CIF Core Components and CIF Add-On authoring tools connect by default to `/api/graphql`. Dit kan worden aangepast via de CIF Cloud Service config indien nodig (zie hieronder).
 
-CIF toe:voegen-On verstrekt een de volmachtsservlet GraphQL bij `/api/graphql` die optioneel kunnen worden gebruikt voor [lokale ontwikkeling](develop.md). Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het eindpunt van commerceGraphQL via de AEM Dispatcher of bij andere netwerklagen (zoals CDN) te plaatsen.
+De CIF Add-On verstrekt een de volmachtsservlet van GraphQL bij `/api/graphql` die optioneel kunnen worden gebruikt voor [lokale ontwikkeling](develop.md). Voor productieplaatsingen wordt het sterk geadviseerd om een omgekeerde volmacht aan het handelsGraphQL eindpunt via de AEMVerzender of bij andere netwerklagen (zoals CDN) te plaatsen.
 
 ## Opslag en catalogi configureren {#catalog}
 
@@ -67,19 +67,19 @@ Deze configuratie kan voor het project via CIF Cloud Service config worden aange
 
 De volgende eigenschappen kunnen worden geconfigureerd:
 
-- Cliënt GraphQL - selecteer de gevormde cliënt GraphQL voor handel achterste mededeling. Dit zou typisch bij gebrek moeten blijven.
+- GraphQL Client - selecteer de geconfigureerde GraphQL-client voor commerciële back-endcommunicatie. Dit zou typisch bij gebrek moeten blijven.
 - Winkelweergave - de weergave-id van de winkel. Als dit leeg is, wordt de standaardwinkelweergave gebruikt.
-- GraphQL de Weg van de Volmacht - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt GraphQL.
+- GraphQL Proxy Path - de Volmacht van GraphQL van de weg URL in AEM gebruik aan volmachtsverzoeken aan het commerciële achterste eindpunt van GraphQL.
 
    >[!NOTE]
    >
-   >In de meeste instellingen is de standaardwaarde `/api/graphql` mogen niet worden gewijzigd. Alleen geavanceerde instellingen die de geleverde GraphQL-proxy niet gebruiken, moeten deze instelling wijzigen.
+   >In de meeste instellingen is de standaardwaarde `/api/graphql` mogen niet worden gewijzigd. Alleen geavanceerde instellingen die de opgegeven GraphQL-proxy niet gebruiken, moeten deze instelling wijzigen.
 
-- De Steun van UID van de Catalogus van de inschakelen - laat steun voor UID in plaats van identiteitskaart in de handel achterste vraag GraphQL toe.
+- Schakel ondersteuning voor UID-catalogus in - schakel ondersteuning voor UID in in plaats van voor ID in de commerciële back-end GraphQL-aanroepen.
 
    >[!NOTE]
    >
-   >Ondersteuning voor UID&#39;s is geïntroduceerd in Adobe Commerce 2.4.2. Laat slechts dit toe als uw handels achterkant een schema GraphQL van versie 2.4.2 of later steunt.
+   >Ondersteuning voor UID&#39;s is geïntroduceerd in Adobe Commerce 2.4.2. Schakel deze optie alleen in als uw commerciële backend een GraphQL-schema van versie 2.4.2 of hoger ondersteunt.
 
 - Hoofdcategorie-id van catalogus - de id (UID of ID) van de hoofdmap van de opslagcatalogus
 

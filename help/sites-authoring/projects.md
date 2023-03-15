@@ -104,7 +104,7 @@ Klik op het vervolgkeuzemenu rechtsboven in een tegel om meer gegevens aan de te
 
 Klik op de ellipsknop rechtsonder in een tegel om de gegevens van de tegel te openen in de bijbehorende console.
 
-### Activa {#assets}
+### Assets {#assets}
 
 In de **Activa** U kunt alle elementen verzamelen die u voor een bepaald project gebruikt.
 

@@ -1,24 +1,23 @@
 ---
 title: AEM formulieren uitvoeren in de onderhoudsmodus
-seo-title: AEM formulieren uitvoeren in de onderhoudsmodus
+seo-title: Running AEM forms in maintenance mode
 description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM formulieren in de onderhoudsmodus.
-seo-description: De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak. Meer informatie over het uitvoeren van AEM formulieren in de onderhoudsmodus.
+seo-description: Maintenance mode is useful when performing tasks such as patching a DSC, upgrading AEM forms, or applying a service pack. Learn more about running AEM forms in maintenance mode.
 uuid: 9aa3be20-f17e-4384-b4ce-daaee2898c96
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 94047c12-ba3d-457a-954f-e035c7cc3ecd
-translation-type: tm+mt
-source-git-commit: 317fadfe48724270e59644d2ed9a90fbee95cf9f
+exl-id: 6f5ce18b-26b4-4c31-b48a-43ccbb3912f6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
 
-
-# AEM formulieren uitvoeren in onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
+# AEM formulieren uitvoeren in de onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
 
 De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak.
 
@@ -54,4 +53,3 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
    `https://[hostname]:[port]/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=[administrator username]&password=[password]`
 
    Er wordt een bericht &quot;now running&quot; weergegeven in het browservenster.
-

@@ -1,8 +1,8 @@
 ---
 title: Een type persistentie kiezen voor een AEM Forms-installatie
-seo-title: Een type persistentie kiezen voor een AEM Forms-installatie
+seo-title: Choosing a persistence type for an AEM Forms installation
 description: Kies verstandig een persistentietype. Het helpt u een efficiënte en schaalbare AEM Forms-omgeving op te bouwen.
-seo-description: Kies verstandig een persistentietype. Het helpt u een efficiënte en schaalbare AEM Forms-omgeving te bouwen.
+seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
 uuid: 1c692502-5039-4757-9358-1772772b3904
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '372'
 ht-degree: 1%
 
 ---
@@ -59,12 +59,12 @@ De volgende tabel bevat een lijst met alle ondersteunde typen persistentie en di
  </tbody>
 </table>
 
-TarMK is ontworpen voor prestaties, terwijl MongoMK en RDBMK zijn ontworpen voor schaalbaarheid. Adobe adviseert hoogst TarMK als standaardpersistentietechnologie voor alle de plaatsingsscenario&#39;s van AEM Forms, voor zowel Auteur als Publish instanties, behalve in de gebruiksgevallen die in sectie [worden geschetst het Kiezen Mongo of een Relationele Microkernel van het Gegevensbestand over TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p) worden geschetst.
+TarMK is ontworpen voor prestaties, terwijl MongoMK en RDBMK zijn ontworpen voor schaalbaarheid. Adobe adviseert hoogst TarMK als standaardpersistentietechnologie voor alle de plaatsingsscenario&#39;s van AEM Forms, voor zowel Auteur als Publish instanties, behalve in de gebruiksgevallen die in sectie worden geschetst [Mongo of een relationele database-microkernel kiezen boven TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
-Zie [AEM Forms on OSGi Technical Requirements](/help/sites-deploying/technical-requirements.md) of [AEM Forms on JEE supported platform combinaties](/help/forms/using/aem-forms-jee-supported-platforms.md) articles voor de lijst met ondersteunde microkernels.
+Voor de lijst met ondersteunde microkorrels raadpleegt u [AEM Forms inzake technische vereisten voor OSGi](/help/sites-deploying/technical-requirements.md) of [Door AEM Forms ondersteunde platformcombinaties op JEE](/help/forms/using/aem-forms-jee-supported-platforms.md) artikelen.
 
 ## Mongo of een relationele database-microkernel kiezen boven TarMK {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 Een scalable (gegroepeerde) milieu van AEM Forms is een reeks van twee of meer horizontaal gevormde actieve auteursinstanties. U kunt ervoor kiezen om meer dan één auteurinstantie uit te voeren als één enkele server, die alle gelijktijdige auteursactiviteiten steunt, niet meer duurzaam is.
 
-Alleen het persistentietype MongoMK en RDBMK wordt ondersteund voor een schaalbare (geclusterde) AEM Forms op JEE-omgeving. Het aantal servers of de grootte van scalable milieu varieert voor elke installatie. Voor een lijst van overwegingen en voorbeelden, zie [Aanbevolen Plaatsingen](/help/sites-deploying/recommended-deploys.md) en of [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) artikel. U kunt ook contact opnemen met AEM Forms-ondersteuning voor gedetailleerde informatie over capaciteitsplanning voor AEM Forms met RDBMK en TarMK.
+Alleen het persistentietype MongoMK en RDBMK wordt ondersteund voor een schaalbare (geclusterde) AEM Forms op JEE-omgeving. Het aantal servers of de grootte van scalable milieu varieert voor elke installatie. Voor een lijst van overwegingen en voorbeelden, zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md) en of [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md) artikel. U kunt ook contact opnemen met AEM Forms-ondersteuning voor gedetailleerde informatie over capaciteitsplanning voor AEM Forms met RDBMK en TarMK.

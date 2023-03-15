@@ -25,9 +25,9 @@ Dit pakket is gemaakt voor **AEM Forms 6.4 OSGI-auteur**, is getest en wordt daa
 
 | AEM | AEM Forms PACKAGE VERSION | STATUS |
 |---|---|---|
-| 6,4 | 5,0,86 | **Ondersteund** |
-| 6,5 | 6,0,80 | **Ondersteund** |
-| 6.5.3. | 6,0,122 | **Ondersteund** |
+| 6.4 | 5.0.86 | **Ondersteund** |
+| 6.5 | 6.0.80 | **Ondersteund** |
+| 6.5.3 | 6.0.122 | **Ondersteund** |
 
 Dit pakket bevat cloudconfiguratie die de volgende platformversies ondersteunt:
 

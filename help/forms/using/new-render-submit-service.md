@@ -1,37 +1,36 @@
 ---
 title: Nieuwe renderservice en verzendservice
-seo-title: Nieuwe renderservice en verzendservice
-description: Definieer de renderings- en verzendservices in Workbench om XDP-formulieren te renderen als HTML of PDF, afhankelijk van het apparaat waartoe deze toegang hebben.
-seo-description: Definieer de renderings- en verzendservices in Workbench om XDP-formulieren te renderen als HTML of PDF, afhankelijk van het apparaat waartoe deze toegang hebben.
+seo-title: New render and submit service
+description: Definieer de renderservices en verzend services in Workbench om XDP-formulier te renderen als HTML of PDF, afhankelijk van het apparaat waartoe deze toegang heeft.
+seo-description: Define render and submit services in Workbench to render XDP form as HTML or PDF depending on the device it is accessed from.
 uuid: 7f8348a1-753c-4dab-87d5-4a4a301198dd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
+exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
 
-
-# Nieuwe render- en verzendservice{#new-render-and-submit-service}
+# Nieuwe renderservice en verzendservice{#new-render-and-submit-service}
 
 ## Inleiding {#introduction}
 
-Als u in Workbench een bewerking `AssignTask` definieert, geeft u een bepaald formulier (XDP- of PDF-formulier) op. Geef ook een set services voor renderen en verzenden op via een actieprofiel.
+Als u in Workbench een `AssignTask` Geef een bepaald formulier op (XDP- of PDF-formulier). Geef ook een set services voor renderen en verzenden op via een actieprofiel.
 
-Een XDP kan worden weergegeven als een PDF-formulier of een HTML-formulier. De nieuwe mogelijkheden omvatten de capaciteit:
+Een XDP kan als vorm van de PDF of een vorm van de HTML worden teruggegeven. De nieuwe mogelijkheden omvatten de capaciteit:
 
-* Een XDP-formulier weergeven en verzenden als HTML
-* Een XDP-formulier weergeven en verzenden als PDF-bestand op het bureaublad en als HTML op mobiele apparaten (bijvoorbeeld een iPad)
+* Een XDP-formulier renderen en verzenden als HTML
+* Een XDP-formulier weergeven en verzenden als PDF op het bureaublad en als HTML op mobiele apparaten (bijvoorbeeld een iPad)
 
 ### Nieuwe HTML Forms-service {#new-html-forms-service}
 
-De nieuwe HTML Forms-service maakt gebruik van de nieuwe functie in Forms ter ondersteuning van de rendering van XDP-formulieren als HTML. De nieuwe HTML Forms-service stelt de volgende methoden beschikbaar:
+De nieuwe HTML Forms-service maakt gebruik van de nieuwe functie in Forms om het weergeven van XDP-formulieren als HTML te ondersteunen. De nieuwe dienst van HTML Forms stelt de volgende methodes bloot:
 
 ```java
 /*
@@ -58,13 +57,13 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 Meer informatie over profielen van mobiele formulieren vindt u op [Een aangepast profiel maken](/help/forms/using/custom-profile.md).
 
-## Nieuwe processen voor het renderen en verzenden van HTML-formulieren {#new-html-form-render-amp-submit-processes}
+## Nieuwe HTML-formulieren renderen en verzenden {#new-html-form-render-amp-submit-processes}
 
-Geef voor elke bewerking &#39;AssignTask&#39; een Render- en een Verzendproces op met het formulier. Deze processen worden aangeroepen door TaskManager `renderForm`en `submitForm`APIs om douanebehandeling toe te staan. Semantiek van deze processen voor Nieuwe HTML-vorm:
+Geef voor elke bewerking &#39;AssignTask&#39; een Render- en een Verzendproces op met het formulier. Deze processen worden aangeroepen door TaskManager `renderForm`en `submitForm`API&#39;s om aangepaste afhandeling toe te staan. Semantiek van deze processen voor Nieuwe vorm van HTML:
 
-### Een nieuw HTML-formulier weergeven {#render-a-new-html-form}
+### Een nieuw HTML-formulier renderen {#render-a-new-html-form}
 
-Het nieuwe proces voor het renderen van HTML heeft, net als elk renderproces, de volgende I/O-parameters -
+Het nieuwe proces om HTML terug te geven, zoals elk teruggeven proces heeft de volgende I/O parameters -
 
 Invoer - `taskContext`
 
@@ -72,13 +71,13 @@ Uitvoer - `runtimeMap`
 
 Uitvoer - `outFormDoc`
 
-Deze methode simuleert het nauwkeurige gedrag van `renderHTMLForm` API van NewHTMLFormsService. De API `generateFormURL` wordt aangeroepen om de URL voor HTML-uitvoering van het formulier op te halen. Vervolgens wordt de runtimeMap gevuld met de volgende sleutel of waarden:
+Deze methode simuleert het exacte gedrag van `renderHTMLForm` API van de NewHTMLFormsService. Het roept de `generateFormURL` API voor het ophalen van de URL voor HTML-uitvoering van het formulier. Vervolgens wordt de runtimeMap gevuld met de volgende sleutel of waarden:
 
 new html form = true
 
-newHTMLFormURL = de URL die wordt geretourneerd na het aanroepen van de `generateFormURL`-API.
+newHTMLFormURL = de URL die wordt geretourneerd na het aanroepen `generateFormURL` API.
 
-### Een nieuw HTML-formulier {#submit-a-new-html-form} verzenden
+### Een nieuw HTML-formulier verzenden {#submit-a-new-html-form}
 
 Dit proces voor het verzenden van een nieuw HTML-formulier werkt met de volgende I/O-parameters -
 
@@ -88,30 +87,30 @@ Uitvoer - `runtimeMap`
 
 Uitvoer - `outputDocument`
 
-Het proces plaatst `outputDocument`aan `inputDocument`teruggewonnen van `taskContext`.
+Het proces stelt de `outputDocument`aan de `inputDocument`opgehaald van `taskContext`.
 
-## Standaard renderen- of verzendprocessen en actieprofielen {#default-render-or-submit-processes-and-action-profiles}
+## Standaardwaarden voor renderen of verzenden, processen en actieprofielen {#default-render-or-submit-processes-and-action-profiles}
 
-Met de standaardservices Renderen en Verzenden kunt u ondersteuning inschakelen voor het weergeven van PDF&#39;s op een bureaublad en van HTML op mobiele apparaten (iPad).
+Met de standaardservices Renderen en Verzenden kunt u ondersteuning inschakelen voor het renderen van PDF op een desktop en voor het HTML op mobiele apparaten (iPad).
 
 ### Standaardformulier voor renderen {#default-render-form}
 
-Met dit proces wordt een XDP-formulier naadloos weergegeven op meerdere platforms. Het proces wint de gebruikersagent van `taskContext` terug, en gebruikt de gegevens om het proces te roepen om of HTML of PDF terug te geven.
+Met dit proces wordt een XDP-formulier naadloos weergegeven op meerdere platforms. Het proces wint de gebruikersagent van terug `taskContext`en gebruikt de gegevens om het proces aan te roepen om HTML of PDF te renderen.
 
 ![default-render-vorm](assets/default-render-form.png)
 
-### Standaardformulier {#default-submit-form} verzenden
+### Standaardformulier verzenden {#default-submit-form}
 
-Met dit proces wordt een XDP-formulier naadloos verzonden naar meerdere platforms. De gebruikersagent wordt opgehaald uit `taskContext`en de gegevens worden gebruikt om het proces aan te roepen om HTML of PDF te verzenden.
+Met dit proces wordt een XDP-formulier naadloos verzonden naar meerdere platforms. Het wint de gebruikersagent van terug `taskContext`en gebruikt de gegevens om het proces aan te roepen om of HTML of PDF te verzenden.
 
 ![default-submit-form](assets/default-submit-form.png)
 
-## De weergave van mobiele formulieren overschakelen van PDF naar HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
+## De weergave van mobiele formulieren wijzigen van PDF naar HTML {#switch-the-rendering-of-mobile-forms-from-pdf-to-html}
 
 Browsers trekken de ondersteuning voor op NPAPI gebaseerde plug-ins, waaronder plug-ins voor Adobe Acrobat en Adobe Acrobat Reader, geleidelijk in. U kunt de weergave van mobiele formulieren van PDF naar HTML als volgt wijzigen:
 
 1. Meld u als geldige gebruiker aan bij Workbench.
-1. Selecteer **Bestand** > **Toepassingen ophalen**.
+1. Selecteren **Bestand** > **Toepassingen ophalen**.
 
    Het dialoogvenster Toepassingen ophalen wordt geopend.
 
@@ -120,18 +119,18 @@ Browsers trekken de ondersteuning voor op NPAPI gebaseerde plug-ins, waaronder p
 1. Open het beoogde startpunt/de beoogde taak, navigeer naar de sectie Presentatie en gegevens en klik op **Actieprofielen beheren**.
 
    Het dialoogvenster Actieprofielen beheren wordt geopend.
-1. Wijzig de standaardrenderprofielconfiguraties van PDF naar HTML en klik op **OK**.
+1. Standaardrenderprofielconfiguraties wijzigen van PDF naar HTML en klikken **OK**.
 1. Controleer het proces.
 1. Herhaal de stappen om de rendering voor andere processen te wijzigen.
 1. Implementeer de toepassing die relevant is voor de processen die u hebt gewijzigd.
 
 ### Standaardactieprofiel {#default-action-profile}
 
-Met het standaardactieprofiel wordt het XDP-formulier weergegeven als PDF. Dit gedrag is nu gewijzigd en gebruikt nu de processen Standaardformulier renderen en Standaardformulier verzenden.
+Het standaard-actieprofiel heeft het XDP-formulier weergegeven als PDF. Dit gedrag is nu gewijzigd en gebruikt nu de processen Standaardformulier renderen en Standaardformulier verzenden.
 
 Enkele vaak gestelde vragen over actieprofielen zijn als volgt:
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Welke processen Renderen/Verzenden beschikbaar zullen zijn uit de doos?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Welke processen Renderen/Verzenden zijn beschikbaar uit de doos?**
 
 * Handleiding voor renderen (hulplijnen zijn afgekeurd)
 * Formulierhulplijn renderen
@@ -142,25 +141,25 @@ Enkele vaak gestelde vragen over actieprofielen zijn als volgt:
 
 Equivalente verzendprocessen.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Welke Profielen van de Actie uit de doos beschikbaar zullen zijn?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Welke Profielen van de Actie zullen uit de doos beschikbaar zijn?**
 
 Voor XDP Forms:
 
 * Standaard (renderen/verzenden met de nieuwe processen Standaard renderen/verzenden)
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Wat moet door de procesontwerper worden gedaan om de vorm toe te laten om in HTML op een apparaat, en in PDF op een Desktop worden teruggegeven?**
 
-Niets. Het standaardactieprofiel wordt automatisch gekozen en de renderingmodus wordt automatisch ook geactiveerd.
+Niets. Het standaardprofiel van de Actie wordt automatisch gekozen, en de wijze van het teruggeven wordt ook behandeld, automatisch.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Wat moet er gebeuren om ervoor te zorgen dat het formulier in HTML op een bureaublad wordt weergegeven?**
 
-De gebruiker moet het HTML-keuzerondje voor het standaardprofiel selecteren.
+De gebruiker moet het keuzerondje HTML selecteren voor het standaardprofiel.
 
-![gen_question_b_20](assets/gen_question_b_20.png) **Zal er om het even welk verbeteringseffect op het veranderen van het standaardgedrag van het actieprofiel zijn?**
+![gen_question_b_20](assets/gen_question_b_20.png) **Zal er een upgrade-effect zijn op het wijzigen van het standaardgedrag van het actieprofiel?**
 
-Ja, omdat de vorige renderings- en verzendservices die aan het standaardactieprofiel zijn gekoppeld verschillend waren, worden deze beschouwd als een aanpassing van de bestaande formulieren. Als u op **Standaardwaarden herstellen** klikt, worden de standaardservices voor renderen en verzenden ingesteld.
+Ja, omdat de vorige renderings- en verzendservices die aan het standaardactieprofiel zijn gekoppeld verschillend waren, worden deze beschouwd als een aanpassing van de bestaande formulieren. Bij klikken **Standaardwaarden herstellen**, worden de gebrek teruggeeft en voorlegt de diensten in plaats daarvan geplaatst.
 
-Als u de bestaande services voor het renderen of verzenden van PDF-formulieren of aangepaste services (zoals custom1) hebt gewijzigd, wilt u nu dezelfde functionaliteit gebruiken voor HTML-uitvoering. U moet de nieuwe renderen herhalen of de dienst voorleggen (zoals custom2) en gelijkaardige aanpassingen op die toepassen. Pas nu het actieprofiel voor uw XDP aan begin gebruikend de diensten custom2, in plaats van custom1 voor terug of voorleggen.
+Als u de bestaande Render of Submit de diensten van de Vorm van de PDF of de gecreeerde douanediensten (bijvoorbeeld custom1) had gewijzigd, en nu de zelfde functionaliteit voor de vertoning van de HTML willen gebruiken. U moet de nieuwe renderen herhalen of de dienst voorleggen (zoals custom2) en gelijkaardige aanpassingen op die toepassen. Pas nu het actieprofiel voor uw XDP aan begin gebruikend de diensten custom2, in plaats van custom1 voor terug of voorleggen.
 
-Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?
-Wat moet de procesontwerper doen om ervoor te zorgen dat het formulier in HTML op een apparaat en in PDF op een bureaublad kan worden weergegeven?
+Wat moet door de procesontwerper worden gedaan om de vorm toe te laten om in HTML op een apparaat, en in PDF op een Desktop worden teruggegeven?
+Wat moet door de procesontwerper worden gedaan om de vorm toe te laten om in HTML op een apparaat, en in PDF op een Desktop worden teruggegeven?

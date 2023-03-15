@@ -1,8 +1,8 @@
 ---
 title: Meerdere XDP-fragmenten samenstellen
-seo-title: Meerdere XDP-fragmenten samenstellen
+seo-title: Assembling Multiple XDP Fragments
 description: U kunt meerdere XDP-fragmenten samenvoegen in één XDP-document met de Java API en Web Service API.
-seo-description: U kunt meerdere XDP-fragmenten samenvoegen in één XDP-document met de Java API en Web Service API.
+seo-description: Assemble multiple XDP fragments into a single XDP document using the Java API and Web Service API.
 uuid: 0e35ff85-ff40-4878-ae31-aa8da75bd3ec
 contentOwner: admin
 content-type: reference
@@ -12,26 +12,25 @@ topic-tags: operations
 discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
 
-
 # Meerdere XDP-fragmenten samenstellen{#assembling-multiple-xdp-fragments}
 
-U kunt meerdere XDP-fragmenten samenvoegen tot één XDP-document. Neem bijvoorbeeld XDP-fragmenten waarin elk XDP-bestand een of meer subformulieren bevat die worden gebruikt om een gezondheidsformulier te maken. De volgende afbeelding toont de omtrekweergave (vertegenwoordigt het bestand tuc018_template_flowed.xdp dat wordt gebruikt in het bestand *Meerdere XDP-fragmenten samenstellen* snel starten):
+U kunt meerdere XDP-fragmenten samenvoegen tot één XDP-document. Neem bijvoorbeeld XDP-fragmenten waarin elk XDP-bestand een of meer subformulieren bevat die worden gebruikt om een gezondheidsformulier te maken. In de volgende afbeelding ziet u de omtrekweergave (die staat voor het bestand tuc018_template_flowed.xdp dat in het *Meerdere XDP-fragmenten samenstellen* snel starten):
 
 ![am_am_forma](assets/am_am_forma.png)
 
-In de volgende afbeelding ziet u de sectie Patiënt (staat voor het bestand tuc018_contact.xdp dat wordt gebruikt in het bestand *Meerdere XDP-fragmenten samenstellen* Snel starten):
+In de volgende afbeelding wordt de sectie Patiënt getoond (staat voor het bestand tuc018_contact.xdp dat in het dialoogvenster *Meerdere XDP-fragmenten samenstellen* snel starten):
 
 ![am_am_formb](assets/am_am_formb.png)
 
-In de volgende afbeelding ziet u de sectie over de gezondheid van de patiënt (staat voor het bestand tuc018_patiënt.xdp dat wordt gebruikt in het bestand *Meerdere XDP-fragmenten samenstellen* snel starten):
+In de volgende afbeelding wordt de sectie over de gezondheid van de patiënt getoond (staat voor het bestand tuc018_patiënt.xdp dat in het bestand *Meerdere XDP-fragmenten samenstellen* snel starten):
 
 ![am_am_formc](assets/am_am_formc.png)
 
@@ -54,7 +53,7 @@ In het volgende DDX-document worden meerdere XDP-fragmenten samengevoegd in een 
  </DDX>
 ```
 
-Het DDX-document bevat een XDP-tag `result` die de naam van het resultaat opgeeft. In deze situatie is de waarde `tuc018result.xdp`. Naar deze waarde wordt verwezen in de toepassingslogica die wordt gebruikt om het XDP-document op te halen nadat de Assembler-service het resultaat heeft geretourneerd. Neem bijvoorbeeld de volgende Java-toepassingslogica die wordt gebruikt om het geassembleerde XDP-document op te halen (de waarde is vet):
+Het DDX-document bevat een XDP `result` -tag die de naam van het resultaat aangeeft. In deze situatie is de waarde `tuc018result.xdp`. Naar deze waarde wordt verwezen in de toepassingslogica die wordt gebruikt om het XDP-document op te halen nadat de Assembler-service het resultaat heeft geretourneerd. Neem bijvoorbeeld de volgende Java-toepassingslogica die wordt gebruikt om het geassembleerde XDP-document op te halen (de waarde is vet):
 
 ```java
  //Iterate through the map object to retrieve the result XDP document
@@ -75,19 +74,19 @@ Het DDX-document bevat een XDP-tag `result` die de naam van het resultaat opgeef
  }
 ```
 
-Met de tag `XDP source` wordt het XDP-bestand opgegeven dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van een aantal documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in *Meerdere XDP-fragmenten samenvoegen*). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
+De `XDP source` -tag geeft het XDP-bestand aan dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van een aantal documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in *Meerdere XDP-fragmenten samenstellen*). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
 
-Voor elk subformulier kunt u een `XDPContent`-element toevoegen (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical` en `subPatientHealth`. Zowel het subformulier `subPatientPhysical` als het subformulier `subPatientHealth` bevinden zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
-
->[!NOTE]
->
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor elk subformulier kunt u een `XDPContent` element (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical`, en `subPatientHealth`. Beide `subPatientPhysical` subformulier en de `subPatientHealth` Het subformulier bevindt zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Overzicht van stappen {#summary-of-steps}
+>[!NOTE]
+>
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+
+## Overzicht van de stappen {#summary-of-steps}
 
 Voer de volgende taken uit om meerdere XDP-fragmenten samen te stellen:
 
@@ -117,17 +116,17 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, cre
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om meerdere XDP-documenten samen te stellen. Dit DDX-document moet `XDP result`, `XDP source` en `XDPContent` elementen bevatten.
+Er moet naar een DDX-document worden verwezen om meerdere XDP-documenten samen te stellen. Dit DDX-document moet `XDP result`, `XDP source`, en `XDPContent` elementen.
 
 **Verwijzen naar de XDP-documenten**
 
-Als u meerdere XDP-documenten wilt samenstellen, verwijst u naar alle XDP-bestanden die worden gebruikt om het resultaat-XDP-document samen te stellen. Zorg ervoor dat de naam van het subformulier in het XDP-document waarnaar wordt verwezen door het `source`-kenmerk, is opgegeven in het `fragment`-kenmerk. Een subformulier wordt gedefinieerd in Designer. Neem bijvoorbeeld de volgende XML.
+Als u meerdere XDP-documenten wilt samenstellen, verwijst u naar alle XDP-bestanden die worden gebruikt om het resultaat-XDP-document samen te stellen. Controleer of de naam van het subformulier in het XDP-document waarnaar wordt verwezen door de `source` kenmerk wordt opgegeven in het dialoogvenster `fragment` kenmerk. Een subformulier wordt gedefinieerd in Designer. Neem bijvoorbeeld de volgende XML.
 
 ```xml
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-Het subformulier met de naam *subPatientContact* moet zich bevinden in het XDP-bestand met de naam *tuc018_contact.xdp*.
+Het subformulier genaamd *subPatientContact* moet zich in het XDP-bestand bevinden met de naam *tuc018_contact.xdp*.
 
 **Uitvoeringsopties instellen**
 
@@ -135,7 +134,7 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Meerdere XDP-documenten samenstellen**
 
-Als u meerdere XDP-bestanden wilt samenstellen, roept u de bewerking `invokeDDX` aan. De dienst van de Assembler keert het geassembleerde XDP document binnen een inzamelingsvoorwerp terug.
+Als u meerdere XDP-bestanden wilt samenstellen, roept u de `invokeDDX` bewerking. De dienst van de Assembler keert het geassembleerde XDP document binnen een inzamelingsvoorwerp terug.
 
 **Het samengevoegde XDP-document ophalen**
 
@@ -165,52 +164,52 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Verwijs naar de XDP-documenten.
 
-   * Maak een `java.util.Map`-object dat wordt gebruikt om invoer-XDP-documenten op te slaan met behulp van een `HashMap`-constructor.
-   * Maak een `com.adobe.idp.Document`-object en geef het `java.io.FileInputStream`-object door dat het invoer-XDP-bestand bevat (herhaal deze taak voor elk XDP-bestand).
-   * Voeg een item aan het object `java.util.Map` toe door de methode `put` ervan aan te roepen en de volgende argumenten door te geven:
+   * Een `java.util.Map` object dat wordt gebruikt om invoer-XDP-documenten op te slaan met een `HashMap` constructor.
+   * Een `com.adobe.idp.Document` en geeft het `java.io.FileInputStream` -object dat het invoer-XDP-bestand bevat (deze taak voor elk XDP-bestand herhalen).
+   * Een item toevoegen aan de `java.util.Map` object aanroepen `put` en het doorgeven van de volgende argumenten:
 
-      * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het element `source` die is opgegeven in het DDX-document (herhaal deze taak voor elk XDP-bestand).
-      * Een object `com.adobe.idp.Document` dat het XDP-document bevat dat overeenkomt met het element `source` (herhaal deze taak voor elk XDP-bestand).
+      * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met `source` elementwaarde opgegeven in het DDX-document (deze taak herhalen voor elk XDP-bestand).
+      * A `com.adobe.idp.Document` object dat het XDP-document bevat dat overeenkomt met het `source` -element (deze taak voor elk XDP-bestand herhalen).
 
 1. Stel de runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt de `AssemblerOptionSpec` methode `setFailOnError` van objecten aan en gaat `false` over.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
 1. Stel de meerdere XDP-documenten samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het te gebruiken DDX-document vertegenwoordigt
-   * Een `java.util.Map`-object dat de invoer-XDP-bestanden bevat
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
+   * A `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
+   * A `java.util.Map` object dat de invoer-XDP-bestanden bevat
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
 
-   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult`-object dat het geassembleerde XDP-document bevat.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat het geassembleerde XDP-document bevat.
 
 1. Haal het samengevoegde XDP-document op.
 
    Voer de volgende handelingen uit om het samengevoegde XDP-document te verkrijgen:
 
-   * Roep de methode `AssemblerResult` van het object `getDocuments` aan. Deze methode retourneert een `java.util.Map`-object.
-   * Doorloop het object `java.util.Map` totdat u het resulterende object `com.adobe.idp.Document` hebt gevonden.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om het samengevoegde XDP-document te extraheren.
+   * De `AssemblerResult` object `getDocuments` methode. Deze methode retourneert een `java.util.Map` object.
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object.
+   * De `com.adobe.idp.Document` object `copyToFile` methode voor het extraheren van het samengevoegde XDP-document.
 
 **Zie ook**
 
-[Meerdere XDP-](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[fragmenten samenstellen in Quick Start (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java ](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
-[APIInIncluding AEM Forms Java-bibliotheekbestandenVerbindingseigenschappen ](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
-[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+[Meerdere XDP-fragmenten samenstellen](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Snel starten (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Meerdere XDP-fragmenten samenstellen met de webservice-API {#assemble-multiple-xdp-fragments-using-the-web-service-api}
 
@@ -218,7 +217,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing:
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing:
 
    ```java
     https://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
@@ -226,66 +225,66 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde door die de WSDL opgeeft voor de AEM Forms-service, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de AEM Forms-service, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het `AssemblerServiceClient.ClientCredentials.UserName.Password`gebied toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` toe aan het `BasicHttpBindingSecurity.Transport.ClientCredentialType`veld.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` toe aan het `BasicHttpBindingSecurity.Security.Mode`veld.
+      * Wijs de gebruikersnaam voor AEM formulieren toe aan de `AssemblerServiceClient.ClientCredentials.UserName.UserName` veld.
+      * Wijs de overeenkomstige wachtwoordwaarde aan toe `AssemblerServiceClient.ClientCredentials.UserName.Password`veld.
+      * Wijs het `HttpClientCredentialType.Basic` constante waarde voor de `BasicHttpBindingSecurity.Transport.ClientCredentialType`veld.
+      * Wijs het `BasicHttpSecurityMode.TransportCredentialOnly` constante waarde voor de `BasicHttpBindingSecurity.Security.Mode`veld.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
 
 1. Verwijs naar de XDP-documenten.
 
-   * Maak voor elk invoer-XDP-bestand een `BLOB`-object met behulp van de constructor. Het object `BLOB` wordt gebruikt om het invoerbestand op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerbestand en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Dit verzamelingsobject wordt gebruikt voor het opslaan van invoerbestanden die nodig zijn om een samengesteld XDP-document te maken.
-   * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Wijs een tekenreekswaarde toe die de toetsnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoer-XDP-bestand.)
-   * Wijs het `BLOB`-object toe dat het invoerbestand opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object. (Voer deze taak uit voor elk invoer-XDP-bestand.)
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` van het object `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door. (Voer deze taak uit voor elk invoer-XDP-document.)
+   * Maak voor elk invoer-XDP-bestand een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het invoerbestand op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerbestand en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt voor het opslaan van invoerbestanden die nodig zijn om een samengesteld XDP-document te maken.
+   * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoer-XDP-bestand.)
+   * Wijs het `BLOB` object dat het invoerbestand in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld. (Voer deze taak uit voor elk invoer-XDP-bestand.)
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object. (Voer deze taak uit voor elk invoer-XDP-document.)
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs `false` aan `AssemblerOptionSpec` het gegevenslid van `failOnError` van het voorwerp toe.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
 1. Stel de meerdere XDP-documenten samen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt
-   * Het `MyMapOf_xsd_string_To_xsd_anyType`-object dat de vereiste bestanden bevat
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft
+   * A `BLOB` object dat staat voor het DDX-document
+   * De `MyMapOf_xsd_string_To_xsd_anyType` object dat de vereiste bestanden bevat
+   * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Haal het samengevoegde XDP-document op.
 
    Voer de volgende handelingen uit om het nieuwe XDP-document te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de resulterende PDF-documenten bevat.
-   * Doorloop het object `Map` om elk resulterend document te verkrijgen. Vervolgens cast u `value` van dat arraylid naar een `BLOB`.
-   * Pak de binaire gegevens die het PDF-document vertegenwoordigen uit door de eigenschap `MTOM` van het object `BLOB` te openen. Hiermee wordt een array met bytes geretourneerd die u naar een XDP-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
+   * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een XDP-bestand kunt schrijven.
 
 **Zie ook**
 
-[Meerdere XDP-](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[fragmenten samenstellenAEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[Meerdere XDP-fragmenten samenstellen](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

@@ -1,8 +1,8 @@
 ---
-title: SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers
-seo-title: SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers
-description: Meer informatie over SharePoint-connectorlicenties, Copyrightmeldingen en Disclaimers.
-seo-description: Meer informatie over SharePoint-connectorlicenties, Copyrightmeldingen en Disclaimers.
+title: SharePoint-connectorlicenties, copyrightberichten en Disclaimers
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
+description: Meer informatie over SharePoint Connector-licenties, Copyright Notices en Disclaimers.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,22 +10,21 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4e5e6ef022dc9f083859e13ab9c86b622fc3d46e
+exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '362'
 ht-degree: 4%
 
 ---
 
+# SharePoint-connectorlicenties, copyrightberichten en Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-# SharePoint-connectorlicenties, copyrightmeldingen en Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
-
-In deze sectie worden alle licenties, copyrightmeldingen en disclaimers vermeld die expliciet moeten worden vermeld in verband met de Day JCR Connector voor MS SharePoint.
+In deze sectie worden alle licenties, copyrightmeldingen en disclaimers weergegeven die expliciet moeten worden vermeld in verband met de Day JCR Connector voor MS SharePoint.
 
 ## Overzicht van de Bibliotheken van derde partijen van de Schakelaar {#overview-of-connector-rd-party-libraries}
 
-De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruikt in de kernbibliotheken van de SharePoint-connector, samen met de licenties, copyrightmeldingen of disclaimers waarop deze betrekking hebben:
+De volgende tabel bevat een lijst met bibliotheken van derden die in de kernbibliotheken van de SharePoint Connector worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 
 | Bibliotheek | Licentietype |
 |---|---|
@@ -42,7 +41,7 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| gelijktijdige | [Gelijktijdig](#concurrent)  (openbaar domein) |
+| gelijktijdige | [Gelijktijdig](#concurrent) (Openbaar domein) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -61,10 +60,10 @@ De volgende tabel bevat een lijst met bibliotheken van derden die worden gebruik
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache)  (bevat delen die vallen onder licenties voor openbare domein en W3C-software) |
+| xml-apis | [Apache](#apache) (bevat delen die vallen onder licenties voor het publieke domein en W3C-software) |
 | XmlSchema | [Apache](#apache) |
 
-## Overzicht van CRX bibliotheken van derden {#overview-of-crx-rd-party-libraries}
+## Overzicht van CRX-bibliotheken van derden {#overview-of-crx-rd-party-libraries}
 
 De volgende tabel bevat een lijst met bibliotheken van derden die in CRX worden gebruikt, samen met de licenties, copyrightkennisgevingen of disclaimers waarop deze betrekking hebben:
 
@@ -1291,4 +1290,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and
 LICENSEE agrees to preserve same.
 ```
-

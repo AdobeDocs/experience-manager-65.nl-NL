@@ -1,22 +1,21 @@
 ---
 title: Een adaptief formulier of interactieve communicatie insluiten in AEM sitepagina
-seo-title: Een adaptief formulier of interactieve communicatie insluiten in AEM sitepagina
+seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: U kunt adaptieve formulieren insluiten in AEM sitepagina's. Gebruikers kunnen formulieren invullen en verzenden zonder de sitepagina's te verlaten.
-seo-description: U kunt adaptieve formulieren insluiten in AEM sitepagina's. Gebruikers kunnen formulieren invullen en verzenden zonder de sitepagina's te verlaten.
+seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier of interactieve communicatie insluiten in AEM sitepagina {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
@@ -24,21 +23,21 @@ ht-degree: 0%
 
 Met AEM Forms kunnen ontwikkelaars van formulieren adaptieve formulieren en interactieve communicatie naadloos insluiten in een AEM Sites-pagina of een webpagina die buiten AEM wordt gehost. Het ingesloten adaptieve formulier en de interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het formulier of de interactieve communicatie.
 
-Zie [Aangepast formulier insluiten in externe webpagina](/help/forms/using/embed-adaptive-form-external-web-page.md) voor informatie over het insluiten van een adaptief formulier in een externe webpagina.
+Voor informatie over het insluiten van een adaptief formulier in een externe webpagina raadpleegt u [Aangepast formulier insluiten in externe webpagina](/help/forms/using/embed-adaptive-form-external-web-page.md).
 
 Op de AEM Sites-pagina kunt u een adaptief formulier of interactieve communicatie toevoegen met:
 
-* **[AEM Forms Container](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
-componentAEM Forms biedt een component die u aan uw sitepagina&#39;s kunt toevoegen. Met de AEM Forms Container-component kunt u een adaptief formulier en interactieve communicatie insluiten.
+* **[AEM Forms Container-component](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**
+AEM Forms biedt een component die u aan uw sitepagina&#39;s kunt toevoegen. Met de AEM Forms Container-component kunt u een adaptief formulier en interactieve communicatie insluiten.
 
-* **[Asset](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
-browserAlle formulieren en interactieve communicatie die u maakt, zijn beschikbaar onder Elementen. U kunt het formulier slepen en neerzetten als middel op de pagina.
+* **[Middelenbrowser](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
+Alle formulieren en interactieve communicatie die u maakt, zijn beschikbaar onder Elementen. U kunt het formulier slepen en neerzetten als middel op de pagina.
 
 ## Vereisten {#prerequisites}
 
-Als u een adaptief formulier of interactieve communicatie wilt insluiten in een AEM sitepagina die een bewerkbare sjabloon gebruikt, moet u ervoor zorgen dat de AEM formuliercomponent is geconfigureerd als een toegestane component in de bijbehorende sjabloon. Zie **Beleid en eigenschappen (container layout)** in [Paginasjablonen maken](/help/sites-authoring/templates.md) voor meer informatie.
+Als u een adaptief formulier of interactieve communicatie wilt insluiten in een AEM sitepagina die een bewerkbare sjabloon gebruikt, moet u ervoor zorgen dat de AEM formuliercomponent is geconfigureerd als een toegestane component in de bijbehorende sjabloon. Zie voor meer informatie **Beleid en eigenschappen (container met layout)** sectie in [Paginasjablonen maken](/help/sites-authoring/templates.md).
 
-In het geval van een pagina van Plaatsen die een statisch malplaatje gebruikt, moet u het in het paragraafsysteem van de plaatspagina vormen. Zie [Componenten configureren in ontwerpmodus](/help/sites-authoring/default-components-designmode.md) voor meer informatie.
+In het geval van een pagina van Plaatsen die een statisch malplaatje gebruikt, moet u het in het paragraafsysteem van de plaatspagina vormen. Zie [Componenten configureren in ontwerpmodus](/help/sites-authoring/default-components-designmode.md) voor meer informatie .
 
 ## Een adaptief formulier of interactieve communicatie insluiten {#af-component}
 
@@ -53,16 +52,16 @@ Een adaptief formulier of interactieve communicatie insluiten met AEM Forms Cont
    >
    >Meerdere AEM Forms Container-componenten op een pagina worden niet ondersteund.
 
-1. Tik op de ingesloten AEM Forms Container-component op de sitepagina en tik op ![settings_icon](assets/settings_icon.png) op de actiebalk. Het dialoogvenster **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
+1. Tik op de ingesloten AEM Forms Container-component op de sitepagina en tik vervolgens op ![settings_icon](assets/settings_icon.png) op de actiebalk. De **[!UICONTROL Edit AEM Forms Container]** wordt geopend.
 1. Geef het volgende op in het dialoogvenster AEM Forms-container bewerken.
 
-   * **Elementtype:** selecteer het type element dat u wilt insluiten. De opties zijn adaptieve vorm en interactieve communicatie
-   * **Middelenpad**: Blader naar het aangepaste formulier of de interactieve communicatie die u wilt insluiten en selecteer dit. Deze wordt automatisch ingevuld als u deze uit de middelenbrowser hebt verwijderd.
-   * (Alleen adaptief formulier) **Na verzending**: Selecteer de actie die moet worden geactiveerd bij het verzenden van het formulier. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
+   * **Type element:** Selecteer het type element dat u wilt insluiten. De opties zijn adaptieve vorm en interactieve communicatie
+   * **Middelpad**: Blader naar het aangepaste formulier of de interactieve communicatie die u wilt insluiten en selecteer dit. Deze wordt automatisch ingevuld als u deze uit de middelenbrowser hebt verwijderd.
+   * (Alleen adaptief formulier) **Verzending na verzending**: Selecteer de actie die moet worden geactiveerd bij het verzenden van het formulier. U kunt ervoor kiezen om een bedankbericht of een pagina voor bedankt weer te geven.
 
-      * **Bedankt voor uw bericht**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
-      * **Hartelijk dank, pagina**: Blader en selecteer de pagina die u wilt weergeven bij het verzenden van het formulier. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
-      * **Pagina vernieuwen bij verzending**: Schakel deze optie in om de pagina met het ingesloten adaptieve formulier te vernieuwen en de pagina voor bedankt weer te geven. Anders vervangt de pagina Hartelijk dank het aangepaste formulier in de AEM Forms-container, zonder de pagina te vernieuwen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
+      * **Bericht van dank**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
+      * **Dankbriefje**: Blader en selecteer de pagina die u wilt weergeven bij het verzenden van het formulier. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
+      * **Pagina bij verzending vernieuwen**: Schakel deze optie in om de pagina met het ingesloten adaptieve formulier te vernieuwen en de pagina voor bedankt weer te geven. Anders vervangt de pagina Hartelijk dank het aangepaste formulier in de AEM Forms-container, zonder de pagina te vernieuwen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
    * **Thema**: Selecteer een thema waarmee u stijlen definieert voor onderdelen van uw adaptieve formulier of interactieve communicatie. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
    * **Hoogte**: Geef de hoogte van de container op. Laat deze leeg om de grootte van de container automatisch te wijzigen.
    * **CSS-clientbibliotheek**: Geef het pad naar een CSS-clientbibliotheek op.
@@ -85,13 +84,13 @@ AEM sitepagina bevat een verwijzing naar het adaptieve formulier en de interacti
 Voer een van de volgende handelingen uit als u een configuratie of eigenschap van het ingesloten adaptieve formulier en interactieve communicatie wilt wijzigen.
 
 * Open het oorspronkelijke formulier in adaptieve formulieren of interactieve communicatie in de respectievelijke editors en wijzig deze.
-* Tik in de bewerkingsmodus op het aangepaste formulier of de interactieve communicatie vanuit de sitepagina en tik op **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
+* Tik in de bewerkingsmodus op het aangepaste formulier of de interactieve communicatie vanuit de sitepagina en tik vervolgens op **[!UICONTROL Edit in a new window]**. Het oorspronkelijke formulier wordt geopend in de bewerkingsmodus die u kunt wijzigen.
 
 >[!NOTE]
 >
 >De wijzigingen in het oorspronkelijke adaptieve formulier of de interactieve communicatie worden automatisch doorgevoerd in het ingesloten formulier. U kunt het aangepaste formulier, de interactieve communicatie of de sitepagina echter opnieuw publiceren om de wijzigingen in de gepubliceerde pagina weer te geven.
 
-## Overwegingen en aanbevolen procedures {#considerations-and-best-practices}
+## Overwegingen en beste praktijken {#considerations-and-best-practices}
 
 Houd rekening met de volgende punten wanneer u adaptieve formulieren insluit in AEM sitepagina&#39;s:
 
@@ -100,4 +99,3 @@ Houd rekening met de volgende punten wanneer u adaptieve formulieren insluit in 
 * De verzendactie die op het oorspronkelijke formulier is geconfigureerd, blijft behouden in het ingesloten formulier.
 * De ervaring die het richten en A/B tests die op de originele vorm worden gevormd werkt niet in de ingebedde vorm richten. U kunt echter de pagina Sites gebruiken om verschillende formulieren weer te geven op basis van gebruikersprofielen.
 * Als u Adobe Analytics hebt geconfigureerd voor het oorspronkelijke formulier, worden de analysegegevens van het ingesloten formulier vastgelegd in Adobe Analytics. Het is echter niet beschikbaar in het rapport Formulieranalyse.
-

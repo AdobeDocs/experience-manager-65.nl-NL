@@ -2,31 +2,30 @@
 title: SocialUtils Refactoring
 seo-title: SocialUtils Refactoring
 description: Het pakket com.adobe.cq.social.ugcbase.SocialUtils is vervangen in AEM 6.1
-seo-description: Het pakket com.adobe.cq.social.ugcbase.SocialUtils is vervangen in AEM 6.1
+seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
-translation-type: tm+mt
-source-git-commit: 1429a099288f038510cb0a194fb55632297ef371
+exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
 
+# SocialUtils Refactoring {#socialutils-refactoring}
 
-# Refactoring voor sociale hulpmiddelen {#socialutils-refactoring}
-
-## Pakket met sociale hulpmiddelen Vervangen {#socialutils-package-deprecated}
+## Pakket met sociale hulpmiddelen is vervangen {#socialutils-package-deprecated}
 
 Het pakket `com.adobe.cq.social.ugcbase.SocialUtils` is afgekeurd in AEM 6.1.
 
-In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de methoden `SocialUtils`.
+In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van `SocialUtils` methoden.
 
-## Pakket met socialeResourceUtilities {#socialresourceutilities-package}
+## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
@@ -48,7 +47,7 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 |---|
 | SocialResourceProvider getSocialResourceProvider(resource) | vervangt SocialResourceProvider getConfiguredProvider(resource) |
 
-## SCFUtilities Package {#scfutilities-package}
+## SCFUtilities-pakket {#scfutilities-package}
 
 | Methoden in `com.adobe.cq.social.`utilities.scf.api.SCFUtilites |
 |---|
@@ -89,4 +88,3 @@ In de volgende tabellen worden de methoden weergegeven die moeten worden gebruik
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
 | boolean mayAccessUGC(ResourceResolver resolver) |
-

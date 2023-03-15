@@ -1,28 +1,27 @@
 ---
 title: App-prestaties bijhouden met Adobe Mobile Analytics
-seo-title: App-prestaties bijhouden met Adobe Mobile Analytics
+seo-title: Track App Performance with Adobe Mobile Analytics
 description: Met Adobe Mobile Services kunt u meer inzicht krijgen in hoe uw gebruikers uw mobiele apps gebruiken door het gebruik, de vastgelopen apps, de details van apparaten en zoveel andere belangrijke meetgegevens voor uw mobiele apps te volgen. Volg deze pagina voor meer informatie.
-seo-description: Met Adobe Mobile Services kunt u meer inzicht krijgen in hoe uw gebruikers uw mobiele apps gebruiken door het gebruik, de vastgelopen apps, de details van apparaten en zoveel andere belangrijke meetgegevens voor uw mobiele apps te volgen. Volg deze pagina voor meer informatie.
+seo-description: With Adobe Mobile Services you can gain insight on how your users are using your mobile apps by tracking usage, app crashes, device details and so many other critical metrics for your mobile apps. Follow this page to learn more.
 uuid: 139858c7-66a1-4fea-9f7e-4671b86f67e6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 377548fa-987a-4a59-84a3-067a3541b6b2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1072'
 ht-degree: 0%
 
 ---
 
-
-# Prestaties van toepassingen bijhouden met mobiele Adobe-analyse{#track-app-performance-with-adobe-mobile-analytics}
+# App-prestaties bijhouden met Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 U wilt hogere klantenomzettingen en loyaliteit drijven.
 
@@ -34,20 +33,20 @@ Hoe kunt u uw mobiele toepassingen afstemmen om de beste ervaring voor uw gebrui
 
 Met Adobe Mobile Services kunt u meer inzicht krijgen in hoe uw gebruikers uw mobiele apps gebruiken door het gebruik, de vastgelopen apps, de details van apparaten en zoveel andere belangrijke meetgegevens voor uw mobiele apps te volgen.
 
-Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobile Metrics Tile** in het dashboard biedt realtime analyses voor uw mobiele toepassing, zodat ontwikkelaars, auteurs en beheerders snel een voorsprong van de gezondheid van uw mobiele app kunnen krijgen. Onder de omslagen die de analyse aandrijven is [Adobe Mobiele Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. De SDK van Adobe Mobile Analytics kan in uw toepassingen worden aangesloten of via een PhoneGap bridge-insteekmodule voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze gegevens wordt de Adobe Mobile Services Cloud aangedrukt voor rapportage en analyse.
+Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobiele metrische tegel** in het dashboard biedt realtime analyses voor uw mobiele toepassing, zodat ontwikkelaars, auteurs en beheerders snel een voorvertoning van de status van uw mobiele app kunnen bekijken. Onder de deksels die de analysator aandrijven, is de [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. De SDK van Adobe Mobile Analytics kan in uw toepassingen worden aangesloten of via een PhoneGap bridge-insteekmodule voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze gegevens wordt de Adobe Mobile Services Cloud aangedrukt voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
-1. **Gegevensverzameling voor mobiele kanalen**  - Verzamel uitgebreide gegevens voor uw mobiele websites en toepassingen op alle grote besturingssystemen.
-1. **Analyse**  van de mobiele betrokkenheid: begrijp de betrokkenheid van gebruikers binnen uw mobiele app, website of video, inclusief hoe vaak consumenten het kanaal starten, of ze er aankopen van maken en meer.
-1. **Mobiele app-dashboards en -rapporten**  - Gebruiksrapporten met levenscyclusgegevens voor uw apps en maatgegevens voor de App Store — zie trends voor gebruikers, lanceringen, gemiddelde sessielengte, retentielengte en vastlopen.
-1. **Analyse**  van mobiele campagnes - De doeltreffendheid van mobiele specifieke campagnes zoals SMS, mobiele onderzoeksadvertenties, mobiele vertoningsadvertenties, en QR codes kwantificeren.
-1. **Geolocatieanalyse**  - Zoek waar uw gebruikers van de app uw mobiele beleving kunnen starten en interageren via de GPS-locatie of -punten.
-1. **Analyse**  van het schilderen - zie hoe de gebruikers door uw app navigeren om te bepalen welke schermen en elementen UI gebruikers in dienst nemen en die gebruikers veroorzaken om weg te laten.
+1. **Gegevensverzameling voor mobiele kanalen** - Verzamel uitgebreide gegevens voor uw mobiele websites en toepassingen op alle grote besturingssystemen.
+1. **Analyse van mobiele betrokkenheid** - Begrijp de betrokkenheid van gebruikers binnen uw mobiele app, website of video, inclusief hoe vaak consumenten het kanaal starten, of ze er aankopen van maken en meer.
+1. **Mobiele toepassingsdashboards en -rapporten** - Gebruik gebruiksrapporten die levenscyclusmetriek voor uw apps en de gegevens van de App store bevatten — zie trends voor gebruikers, lanceringen, gemiddelde zittingslengte, retentielengte, en neerstortingen.
+1. **Mobiele campagneanalyse** - De doeltreffendheid van specifieke campagnes voor mobiele apparaten, zoals SMS, mobiele zoekadvertenties, advertenties voor mobiele schermen en QR-codes, kwantificeren.
+1. **Geolocatieanalyse** - Zoek waar uw gebruikers van de app uw mobiele beleving kunnen starten en interactief kunnen gebruiken op basis van de GPS-locatie of -punten.
+1. **Padeanalyse** - Bekijk hoe gebruikers door uw app navigeren om te bepalen welke schermen en UI-elementen gebruikers aantrekken en welke ertoe leiden dat gebruikers wegvallen.
 
-In deze sectie wordt beschreven hoe [AEM Developers](#developers) vervolgens leert hoe u AEM Mobile-toepassingen kunt optimaliseren met het bijhouden van analyses.
+In deze sectie wordt beschreven hoe [AEM ontwikkelaars](#developers) kunt u vervolgens leren hoe u AEM Mobile-toepassingen kunt optimaliseren met het bijhouden van analyses.
 
-Tot slot [AEM Beheerders](#administrators) leren om:
+Tot slot: [AEM](#administrators) leren:
 
 * een cloudservice voor Adobe Mobile Services maken
 * creeer een mobiele dienst config en associeer een rapportreeks
@@ -57,13 +56,13 @@ Tot slot [AEM Beheerders](#administrators) leren om:
 
 ## Voor ontwikkelaars - Integreer Analytics in uw app {#for-developers-integrate-analytics-into-your-app}
 
-**Vereiste:** AEM beheerders moeten de de wolkenconfiguratie van de Diensten van de Adobe Mobiele vormen,  [zoals hieronder](#amscloudserviceconfig) besproken.
+**Vereiste:** AEM beheerders moeten de de wolkenconfiguratie van de Mobiele Diensten van de Adobe vormen, [zoals hieronder besproken](#amscloudserviceconfig).
 
-Ontwikkelaars zijn verantwoordelijk voor het [toevoegen van analysemogelijkheden aan een AEM Mobile-app](/help/mobile/phonegap-add-analytics-to-apps.md), indien nodig, om te volgen, rapporteren en te begrijpen hoe gebruikers werken met inhoud van uw mobiele app en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in app en crashsnelheid.
+Ontwikkelaars zijn verantwoordelijk voor [analyses toevoegen aan een AEM Mobile-app](/help/mobile/phonegap-add-analytics-to-apps.md) waar nodig om te volgen, te rapporteren en te begrijpen hoe u gebruikers omgaan met uw inhoud van uw mobiele app en om belangrijke levenscyclusmetriek zoals lanceringen, tijd in app, en botsingssnelheid te meten.
 
-## Voor Beheerders - Configureer de Adobe Mobile Services-Cloud Service {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
+## Voor Beheerders - vorm de Cloud Service van de Diensten van Adobe Mobile {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Als u gebruik wilt maken van Adobe Mobile Services, moet u de Cloud Service AEM Adobe Mobile Services configureren met uw Adobe Analytics-accountgegevens. Het Centrum van het Bevel van Apps verstrekt **Analyze Metrics** tegel waar u de wolkendienst tot stand kunt brengen en met uw mobiele app associëren.
+Als u gebruik wilt maken van Adobe Mobile Services, moet u de Cloud Service AEM Adobe Mobile Services configureren met uw Adobe Analytics-accountgegevens. Het Opdrachtcentrum voor toepassingen biedt een **Metrische gegevens analyseren** tegel waarin u de cloudservice kunt maken en koppelen aan uw mobiele app.
 
 Configureer de cloudservice voor uw mobiele app door te klikken op het tandwielpictogram op de tegel Metrische gegevens analyseren.
 
@@ -77,7 +76,7 @@ Klik om te beginnen op de knop &#39;+&#39; in het element Cloud Services beheren
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Wanneer u op de knop &#39;**+**&#39; klikt, wordt de wizard **Cloud Service toevoegen** weergegeven.
+Klik op de knop &#39;**+**&#39;, de **Cloud Service toevoegen** wordt weergegeven.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 

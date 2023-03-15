@@ -1,7 +1,8 @@
 ---
 title: Alles bij elkaar plaatsen - uw app en uw inhoud in AEM headless
-description: In dit deel van de AEM Headless Ontwikkelaarsreis, leer hoe te om uw AEMProject met inbegrip van Inhoudsfragmenten, uw vraag GraphQL, uw vraag REST API, en uw toepassing te nemen, en het voor te bereiden voor het leven.
-source-git-commit: e3b3c3202b718da063392c33739c0f109b619ac7
+description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw AEM Project met inbegrip van Inhoudsfragmenten, uw GraphQL-aanroepen, uw REST API-aanroepen en uw toepassing kunt uitvoeren en voorbereiden op live gaan.
+exl-id: 7087a742-732d-41d1-88a5-ac29083cf726
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%

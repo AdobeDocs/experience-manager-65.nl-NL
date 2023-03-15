@@ -3,11 +3,11 @@ title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u afbeeldingen met hyperlinks aan een afbeelding kunt toevoegen.
 contentOwner: AG
 role: User, Admin
-feature: Beheer van bedrijfsmiddelen
+feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -16,27 +16,27 @@ ht-degree: 0%
 
 Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen die net als andere hyperlinks functioneren.
 
-1. Voer een van de volgende handelingen uit om **[!UICONTROL In-place Image Editor]** te openen:
+1. Voer een van de volgende handelingen uit om te openen **[!UICONTROL In-place Image Editor]**:
 
-   * Klik met Snelle handelingen op **[!UICONTROL Edit]** dat wordt weergegeven op een element in de weergave **[!UICONTROL Card]**. Selecteer het element in de lijstweergave en klik op de optie **[!UICONTROL Edit]** op de werkbalk.
+   * Klik met Snelle handelingen op **[!UICONTROL Edit]** die wordt weergegeven op een element in het dialoogvenster **[!UICONTROL Card]** weergeven. Selecteer het element in de lijstweergave en klik op **[!UICONTROL Edit]** in de werkbalk.
 
       >[!NOTE]
       >
-      >Snelle handelingen is niet beschikbaar in de weergave **[!UICONTROL List]**.
+      >Snelle handelingen zijn niet beschikbaar in het dialoogvenster **[!UICONTROL List]** weergeven.
 
-   * Selecteer het element in de weergave **[!UICONTROL Card]** of **[!UICONTROL List]** en klik op **[!UICONTROL Edit]** op de werkbalk.
-   * Klik op **[!UICONTROL Edit]** op de elementpagina.
+   * In de **[!UICONTROL Card]** of **[!UICONTROL List]** selecteert u het element en klikt u op **[!UICONTROL Edit]** op de werkbalk.
+   * Klikken **[!UICONTROL Edit]** op de elementpagina.
 
-1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u **[!UICONTROL Launch Map]** ![afbeeldingskaart](assets/do-not-localize/image-map-icon.png) op de werkbalk.
+1. Als u een afbeelding met hyperlinks wilt invoegen, klikt u op **[!UICONTROL Launch Map]** ![afbeelding met hyperlinks](assets/do-not-localize/image-map-icon.png) op de werkbalk.
 1. Selecteer de vorm van de afbeelding met hyperlinks. De hotspot van de geselecteerde vorm wordt op de afbeelding geplaatst.
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Klik op de hotspot en voer de URL- en Alt-tekst in. Geef in de lijst **[!UICONTROL Target]** op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Typ bijvoorbeeld `https://www.adobe.com` als de URL, `Adobe website` als de Alt-tekst en geef **[!UICONTROL New Tab]** in de lijst **[!UICONTROL Target]** op om de afbeelding met hyperlinks te openen op een nieuw tabblad.
+1. Klik op de hotspot en voer de URL- en Alt-tekst in. Van de **[!UICONTROL Target]** Geef op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Voer bijvoorbeeld `https://www.adobe.com` als URL, `Adobe website` als de alt-tekst en geef **[!UICONTROL New Tab]** van de **[!UICONTROL Target]** voor de afbeelding met hyperlinks die moet worden geopend op een nieuw tabblad.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Klik **[!UICONTROL Confirm]** en klik dan **[!UICONTROL Finish]** ![selecteer controle gedaan](assets/do-not-localize/check-ok-done-icon.png) van de toolbar om de veranderingen te bewaren.
+1. Klikken **[!UICONTROL Confirm]** en klik vervolgens op **[!UICONTROL Finish]** ![Selecteer controle voltooid](assets/do-not-localize/check-ok-done-icon.png) op de werkbalk om de wijzigingen op te slaan.
 
    Als u de afbeelding met hyperlinks wilt verwijderen, klikt u op de hotspot en klikt u op **[!UICONTROL Delete]** ![delete](assets/do-not-localize/delete-solid-line.png).
 

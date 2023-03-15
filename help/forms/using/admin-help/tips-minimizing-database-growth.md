@@ -1,22 +1,21 @@
 ---
 title: Tips voor het minimaliseren van databasegroei
-seo-title: Tips voor het minimaliseren van databasegroei
+seo-title: Tips for minimizing database growth
 description: Bij langlevende processen worden procesgegevens opgeslagen in de database met AEM formulieren. De groei van de AEM formulierdatabase kan worden geminimaliseerd met behulp van een paar eenvoudige strategieën voor procesontwerp en productconfiguratie.
-seo-description: Bij langlevende processen worden procesgegevens opgeslagen in de database met AEM formulieren. De groei van de AEM formulierdatabase kan worden geminimaliseerd met behulp van een paar eenvoudige strategieën voor procesontwerp en productconfiguratie.
+seo-description: Long-lived processes store process data in the AEM forms database. The growth of the AEM forms database can be minimized using a few easy process design and product configuration strategies.
 uuid: 13f99d4f-848e-451e-90d9-55e202dc0bdb
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
-
 
 # Tips voor het minimaliseren van databasegroei {#tips-for-minimizing-database-growth}
 
@@ -32,8 +31,8 @@ Maak spaarzaam gebruik van variabelen. Wanneer het gebruiken van langlevende pro
 
 Gebruik eenvoudige variabeletypen (bijvoorbeeld tekenreeks of int) en vermijd waar mogelijk het gebruik van complexe variabeletypen. De ruimte van het gegevensbestand wordt toegewezen voor variabelen zelfs wanneer zij geen waarde bevatten. Complexe variabelen vereisen doorgaans meer ruimte dan eenvoudige variabelen.
 
-## Tips voor productbeheer {#product-administration-tips}
+## Tips voor producttoediening {#product-administration-tips}
 
 Gebruik effectief GDS (global document storage). In de GDS-map op de formulierserver worden onder andere bestanden opgeslagen die worden doorgegeven aan services die onderdeel zijn van AEM formulieren in processen. Om de prestaties te verbeteren, worden kleinere documenten in plaats daarvan opgeslagen in het geheugen en in het gegevensbestand voortgeduurd.
 
-De beheerconsole stelt het StandaardGealigneerde bezit van de Grootte van het Document van het Document bloot voor het vormen van de maximumgrootte van documenten die in geheugen worden opgeslagen en in het gegevensbestand voortgeduurd. (Zie [Algemene AEM formulierinstellingen configureren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Als u deze eigenschap instelt op een lage waarde, blijven de meeste documenten in de GDS-map staan in plaats van in de database. Het voordeel is dat u de bestanden gemakkelijker kunt verwijderen wanneer ze niet meer nodig zijn wanneer ze in de GDS-map zijn opgeslagen.
+De beheerconsole stelt het StandaardGealigneerde bezit van de Grootte van het Document van het Document bloot voor het vormen van de maximumgrootte van documenten die in geheugen worden opgeslagen en in het gegevensbestand voortgeduurd. (Zie [Algemene instellingen voor AEM configureren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Als u deze eigenschap instelt op een lage waarde, blijven de meeste documenten in de GDS-map staan in plaats van in de database. Het voordeel is dat u de bestanden gemakkelijker kunt verwijderen wanneer ze niet meer nodig zijn wanneer ze in de GDS-map zijn opgeslagen.

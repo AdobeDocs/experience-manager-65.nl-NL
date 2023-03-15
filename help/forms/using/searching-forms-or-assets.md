@@ -1,8 +1,8 @@
 ---
 title: Zoeken naar formulieren en middelen
-seo-title: Zoeken naar formulieren en middelen
+seo-title: Searching for forms and assets
 description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
-seo-description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ U kunt naar uw formulieren of formulierelementen zoeken met behulp van een teken
 
 Wanneer u een of meer criteria selecteert en ook een tekenreeks opgeeft, wordt het snijpunt van de tekst en criteria geretourneerd als zoekresultaten. De zoekresultaten zijn net zo goed als de metagegevens voor formulieren en middelen die worden verstrekt.
 
-Klik ![aem6forms_search](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
+Klikken ![aem6forms_search](assets/aem6forms_search.png)om het zoekvenster weer te geven of te verbergen.
 
 ## Basiszoekopdracht {#basic-search}
 
 Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms voert een volledige tekstzoekopdracht uit naar eigenschappen van metagegevens.
 
-Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het tekstveld in en kiest u Enter. U kunt ook het jokerteken (*) invoeren, zodat dit overeenkomt met een willekeurig aantal tekens.
+Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het tekstveld in en kiest u Enter. U kunt ook het jokerteken invoeren (&#42;) om overeen te komen met een willekeurig aantal tekens.
 
 Adobe Experience Manager zoekt naar de ingevoerde tekst in eigenschappen van metagegevens en retourneert de corresponderende resultaten. Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
 
@@ -38,10 +38,10 @@ Neem nota van de volgende punten over het basisonderzoek:
 
 * De zoekopdracht wordt uitgevoerd met de metagegevenseigenschappen van het formulier en het element.
 * Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
-* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx` typt, worden elementen met titels `Geometrixx`, `GEOMETRIXX` en `GeoMetRixx` weergegeven in de zoekresultaten.
+* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx`, elementen met titels `Geometrixx`, `GEOMETRIXX`, en `GeoMetRixx` worden weergegeven in de zoekresultaten.
 
-* Gedeeltelijke overeenkomsten van een woord worden niet ondersteund. Gebruik * jokerteken als u wilt zoeken met gebruik van gedeeltelijke tekenreeksen. Als de zoekquery echter overeenkomt met een volledig woord, wordt het bijbehorende formulier of element weergegeven.
-* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. `My form` is bijvoorbeeld niet dezelfde zoekquery als `My form`.
+* Gedeeltelijke overeenkomsten van een woord worden niet ondersteund. Als u wilt zoeken met gedeeltelijke tekenreeksen, gebruikt u &#42; jokerteken. Als de zoekquery echter overeenkomt met een volledig woord, wordt het bijbehorende formulier of element weergegeven.
+* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. Bijvoorbeeld: `My form` is niet dezelfde zoekquery als `My form`.
 
 * Als de gegevens en weergavewaarden van de velden in metagegevenseigenschappen verschillend zijn, kunt u geen weergavewaarden gebruiken als zoekparameters. U kunt bijvoorbeeld niet zoeken op basis van een status, zoals Gewijzigd of Gepubliceerd, omdat deze eigenschappen in een andere indeling zijn opgeslagen.
 
@@ -74,7 +74,7 @@ U kunt naar elementen zoeken met een van de volgende statussen:
 
 * **Gepubliceerd**: Zoeken in alle elementen die na publicatie zijn gepubliceerd en niet zijn gewijzigd.
 
-* **Niet gepubliceerd**: Zoeken in alle elementen die nooit zijn gepubliceerd.
+* **Ongepubliceerd**: Zoeken in alle elementen die nooit zijn gepubliceerd.
 
 * **Gewijzigd**: Zoeken in alle elementen die na publicatie zijn gewijzigd of niet zijn gepubliceerd.
 
@@ -94,7 +94,7 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
   </tr>
   <tr>
    <td>PDF-formulier</td> 
-   <td>Zoeken in alle PDF-documenten.</td> 
+   <td>Doorzoek alle PDF-documenten.</td> 
   </tr>
   <tr>
    <td>Document</td> 

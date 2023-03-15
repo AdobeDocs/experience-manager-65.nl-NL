@@ -1,7 +1,8 @@
 ---
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 0%
@@ -51,7 +52,7 @@ U wilt een consistente ervaring opdoen en gepersonaliseerde campagnes over kanal
 
 In plaats daarvan, zou u moeten nadenken hoe de inhoud op verschillende oppervlakten op het organiseren van beginsel zoals merk en producthiërarchieën, categorieën van goederen of oppervlakten, of stappen in de klantenreis wordt verwant. Als u bijvoorbeeld een reeks oppervlakken hebt die een specifiek merk auto&#39;s ondersteunen dat u maakt, kunt u beginnen met een inhoudsmodel voor algemene informatie die geldt voor de hele auto en vervolgens meer - specifieke elementen hebben, zoals de inhoud die nodig is wanneer de auto wordt gestart tot wanneer er serviceproblemen zijn. Een dergelijk model zal de overerving van de algemene inhoud van het automerk afdwingen en tegelijk verschuivingen mogelijk maken op basis van de specifieke context die nodig is. Het helpt ook bij het beheer in de toekomst van updates voor deze inhoud, aangezien u controle kunt afdwingen op basis van rollen zoals de algemene markator of productmanager voor het hele automerk tegenover een auteur die verantwoordelijk is voor de &quot;startervaring&quot;.
 
-Zodra u het inhoudsmodel en de duidelijke mening op de diverse cliënten hebt moet de inhoud worden opgezocht aan, moet u ervoor zorgen GraphQL/APIs verbonden aan de toegang tot van diverse van het inhoudsmodel wordt gepubliceerd aan alle cliënten die deze inhoud nodig hebben. Er zijn verschillende opties voor de toegang tot bepaalde inhoud. U kunt om een specifiek stuk van inhoud verzoeken dat statisch is die caching van de inhoud en hogere prestaties toelaat. U kunt ook inhoud aanvragen die dynamisch wordt gegenereerd en waarvoor meer verwerkingstijd nodig is. Zorg ervoor dat clients gebruikmaken van de API&#39;s die het meest efficiënt zijn voor hun zakelijke behoeften.
+Zodra u het inhoudsmodel en de duidelijke mening op de diverse cliënten hebt moet de inhoud worden opgezocht aan, moet u ervoor zorgen de GraphQL/APIs verbonden aan de toegang tot diverse van het inhoudsmodel aan alle cliënten worden gepubliceerd die deze inhoud nodig hebben. Er zijn verschillende opties voor de toegang tot bepaalde inhoud. U kunt om een specifiek stuk van inhoud verzoeken dat statisch is die caching van de inhoud en hogere prestaties toelaat. U kunt ook inhoud aanvragen die dynamisch wordt gegenereerd en waarvoor meer verwerkingstijd nodig is. Zorg ervoor dat clients gebruikmaken van de API&#39;s die het meest efficiënt zijn voor hun zakelijke behoeften.
 
 ## Inzicht in uw omgevingen {#understanding-environments}
 
@@ -89,7 +90,7 @@ Dit is een overzicht van wat nodig is om uw eerste app zonder koppen te implemen
 
 1. Modellen voor inhoudsfragmenten maken
 1. Inhoudsfragmenten maken
-1. Inhoud query met GraphQL
+1. Query-inhoud uitvoeren met GraphQL
 
 ## Best practices voor {#best-practices}
 
@@ -144,9 +145,9 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Headless Development voor AEM Sites](/help/sites-developing/headless/introduction.md) - Een korte inleiding om de ontwikkelaar van AEM Headless te oriënteren met de noodzakelijke eigenschappen
 * [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.
-* [Beheer van inhoud zonder kop met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM wordt uitgevoerd. Verificatie via AdobeID is vereist.
-* [AEM Hulplijnen WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit project GitHub omvat voorbeeldtoepassingen die AEM GraphQL APIs benadrukken.
+* [Beheer van inhoud zonder koppen met GraphQL API&#39;s](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) - Volg deze cursus voor een overzicht van de GraphQL API die in AEM is geïmplementeerd. Verificatie via AdobeID is vereist.
+* [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) - Dit GitHub-project bevat voorbeeldtoepassingen die AEM GraphQL API&#39;s markeren.
 * [Aan de slag met koppen](/help/sites-developing/headless/introduction.md#getting-started) - Een snelle inleiding tot AEM functies zonder kop voor gebruikers die al bekend zijn met AEM.
 * [Modellen voor inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie over modellen van inhoudsfragmenten
 * [Inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments.md) - Technische documentatie over inhoudsfragmenten
-* [Inhoud query met GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technische documentatie over de GraphQL API
+* [Query-inhoud uitvoeren met GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technische documentatie over de GraphQL API

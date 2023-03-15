@@ -79,7 +79,7 @@ Definieert het notatietype van een opmerkingsknooppunt.
 
 **Beschrijving**
 
-Definieert het notatietype van een `commentattachment`-knooppunt
+Hiermee wordt het notatietype van een `commentattachment` node
 
 **Definitie**
 
@@ -165,7 +165,7 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 * `@prop jcr:description` - Beschrijving van deze pagina.
 * `@prop cq:template` - Pad naar de sjabloon die is gebruikt om de pagina te maken.
 * `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om het pad of de paden naar de toegestane sjabloon te bepalen.
-* `@prop pageTitle` - Titel wordt meestal weergegeven in de  `<title>` tag.
+* `@prop pageTitle` - Titel wordt meestal weergegeven in het dialoogvenster `<title>` tag.
 * `@prop navTitle` - Titel wordt meestal gebruikt in de navigatie.
 * `@prop hideInNav` - Geeft aan of de pagina moet worden verborgen in de navigatie.
 * `@prop onTime` - Tijdstip waarop deze pagina geldig wordt.
@@ -236,18 +236,18 @@ Definieert een CQ-component.
 * `@prop dialogPath` - Primair dialoogvenster (alternatief voor dialoogvenster).
 * `@node design_dialog` - Het dialoogvenster Ontwerpen.
 * `@prop cq:cellName` - Naam van de ontwerpcel.
-* `@prop cq:isContainer` - Geeft aan of dit een containercomponent is. Hierdoor worden de celnamen van onderliggende componenten in plaats van padnamen gebruikt. De `parsys` is bijvoorbeeld een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
-* `@prop cq:noDecoration` - Indien waar (true), worden er geen decoratietags  `div` getekend wanneer deze component wordt opgenomen.
+* `@prop cq:isContainer` - Geeft aan of dit een containercomponent is. Hierdoor worden de celnamen van onderliggende componenten in plaats van padnamen gebruikt. De `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
+* `@prop cq:noDecoration` - Indien waar (true), geen decoratie `div` -tags worden getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
 * `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
-* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die worden toegevoegd aan de  `div` tag &quot;omringend&quot; wanneer de component wordt opgenomen.
+* `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die aan de &quot;omringende&quot; tags worden toegevoegd `div` -tag wanneer de component wordt opgenomen.
 * `@node icon.png`- Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
 * `@prop allowedParents` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
 * `@prop allowedChildren` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
 * `@node virtual` - Bevat subknooppunten die virtuele componenten weerspiegelen die worden gebruikt voor het slepen en neerzetten van de component.
 * `@prop componentGroup` - Naam van de componentgroep die wordt gebruikt voor slepen en neerzetten van de component.
-* `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben  `className` dat naar een  `PageInfoProvider`. verwijst.
+* `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben `className` die verwijst naar een `PageInfoProvider`.
 
 **Definitie**
 
@@ -301,7 +301,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 * `@prop cq:actions`- Lijst met handelingen (knoppen op de bewerkbalk of menu-items).
 * `@node cq:actionConfigs` - Widgetconfiguraties voor bewerkbalk- of menu-items.
 * `@prop cq:emptyText` - Tekst die moet worden weergegeven als er geen visuele inhoud aanwezig is.
-* `@node cq:dropTargets` - Verzameling van  `{@link cq:DropTargetConfig}` knooppunten.
+* `@node cq:dropTargets` - Verzameling van `{@link cq:DropTargetConfig}` knooppunten.
 
 **Definitie**
 
@@ -320,7 +320,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
-* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv.  `["image/*"]`
+* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv. `["image/*"]`
 * `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
@@ -467,9 +467,9 @@ Containerlijst.
 
 **Beschrijving**
 
-Het knooppunttype `cq:contentPage` bevat de bezit en kindknoopdefinities voor de pagina&#39;s van de ContentBus inhoud. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
+Het knooppunttype `cq:contentPage` bevat de eigenschappen en onderliggende knoopdefinities voor ContentBus-inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
 
-De punten in a `cq:Cq4ContentPage` zijn:
+De items in een `cq:Cq4ContentPage` zijn:
 
 * `@prop cq:csd` - De ContentBus-CSD van de pagina.
 * `@node cq:content` - De inhoud van de pagina. Dit onderliggende knooppunt bestaat niet als het paginaknooppunt de status &quot;Bestaande zonder inhoud&quot; of &quot;Verwijderd&quot; heeft.
@@ -818,7 +818,7 @@ Elke gebruiker/openbare website kan de inhoud (Web2.0-stijl) labelen die wordt g
 
 **Beschrijving**
 
-Voegt een `cq:userContent` subknooppunt toe dat door gebruikers kan worden gewijzigd. Elke gebruiker zal zijn eigen `cq:userContent/<userid>` subnode hebben, die typisch de mixin `cq:UserTaggable` heeft.
+Hiermee voegt u een `cq:userContent` subnode die kan worden gewijzigd door gebruikers. Elke gebruiker heeft zijn eigen `cq:userContent/<userid>` subknooppunt, dat doorgaans de mix bevat `cq:UserTaggable`.
 
 **Definitie**
 
@@ -826,7 +826,7 @@ Voegt een `cq:userContent` subknooppunt toe dat door gebruikers kan worden gewij
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-Uitgebreide variant, die explicieter `cq:userContent` boom bepaalt
+Uitgebreide variant, die explicieter het bepalen van `cq:userContent` boom
 
 * `[cq:AllowsUserContent]`
    * `mixin`

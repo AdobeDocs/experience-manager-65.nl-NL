@@ -1,8 +1,8 @@
 ---
 title: Teksteditor aanpassen
-seo-title: Teksteditor aanpassen
+seo-title: Customize text editor
 description: Leer hoe u de teksteditor kunt aanpassen.
-seo-description: Leer hoe u de teksteditor kunt aanpassen.
+seo-description: Learn how to customize text editor.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,15 @@ topic-tags: correspondence-management
 discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
 
-
-# Teksteditor{#customize-text-editor} aanpassen
+# Teksteditor aanpassen{#customize-text-editor}
 
 ## Overzicht {#overview}
 
@@ -37,11 +36,11 @@ Hiervoor moet u:
 1. [Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken](#customizefonts)
 1. [Aangepaste lettertypen toevoegen aan de clientcomputer](#addcustomfonts)
 
-## Lettertypen aanpassen door het bestand tbxeditor-config.xml te bewerken in CRX {#customizefonts}
+## Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken {#customizefonts}
 
 Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-config.xml te bewerken:
 
-1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en login als Beheerder.
+1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 1. Maak in de map apps een map met de naam config met een pad/structuur die lijkt op de configuratiemap (libs/fd/cm/config). Ga hierbij als volgt te werk:
 
    1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
@@ -56,22 +55,22 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
       **Locatie:** /apps/
 
-      **Identieke knooppunttypen:** geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
       ![Overlay-knooppunt](assets/2.png)
 
-   1. Klik **OK**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik **Alles opslaan**.
+   1. Klikken **Alles opslaan**.
 
 1. Maak een kopie van het bestand tbxeditor-config.xml in de nieuw gemaakte config-map met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op het bestand tbxeditor-config.xml in libs/fd/cm/config en selecteer **Copy**.
+   1. Klik met de rechtermuisknop op het bestand tbxeditor-config.xml in libs/fd/cm/config en selecteer **Kopiëren**.
    1. Klik met de rechtermuisknop op de volgende map en selecteer **Plakken:**
 
       `apps/fd/cm/config`
 
-   1. De naam van het geplakte bestand is standaard `copy of tbxeditor-config.xml.` Naam van het bestand wijzigen in `tbxeditor-config.xml` en klikken op **Alles opslaan**.
+   1. Standaard krijgt het geplakte bestand de naam `copy of tbxeditor-config.xml.` De naam van het bestand wijzigen in `tbxeditor-config.xml` en klik op **Alles opslaan**.
 
 1. Open het bestand tbxeditor-config.xml in apps/fd/cm/config en breng de vereiste wijzigingen aan.
 
@@ -169,11 +168,11 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
       * Opsommingstekens
 
-      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u het volgende item in het XML-bestand invoeren: `<font>Sazanami Mincho Medium</font>`. Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Zie [Aangepaste lettertypen toevoegen aan de clientcomputer](#addcustomfonts) voor meer informatie.
+      Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u het volgende item in het XML-bestand invoeren: `<font>Sazanami Mincho Medium</font>`. Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Zie voor meer informatie [Aangepaste lettertypen toevoegen aan de clientcomputer](#addcustomfonts).
 
       U kunt ook de standaardinstellingen voor verschillende aspecten van tekst wijzigen en de lettertypen uit de teksteditor verwijderen door de items te verwijderen.
 
-   1. Klik **Alles opslaan**.
+   1. Klikken **Alles opslaan**.
 
 
 ## Aangepaste lettertypen toevoegen aan de clientcomputer {#addcustomfonts}
@@ -189,11 +188,10 @@ Raadpleeg de volgende secties voor meer informatie over het installeren van lett
 
 Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
 
-Het lettertype Sazanami Mincho Medium dat bijvoorbeeld is toegevoegd in het bestand [Lettertypen aanpassen door het bestand tbxeditor-config.xml te bewerken in de CRX](#customizefonts)-procedure, wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
+Het lettertype Sazanami Mincho Medium dat bijvoorbeeld is toegevoegd aan het dialoogvenster [Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken](#customizefonts) De procedure wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 
 >[!NOTE]
 >
 >Als u tekst in het Japans wilt zien, moet u eerst de tekst met Japanse tekens invoeren. De toepassing van een aangepast Japans lettertype maakt de tekst alleen op een bepaalde manier op. De toepassing van een aangepast Japans lettertype wijzigt geen Engelse of andere tekens in Japanse tekens.
-

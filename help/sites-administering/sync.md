@@ -192,7 +192,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync-reverse`
 
       * Selecteer de `Enabled` selectievakje
-      * selecteren `Save`
+      * select `Save`
    * **herhalen** voor elke publicatie-instantie
 
 
@@ -216,7 +216,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
          Verifiëren `agent name`: `socialpubsync-reverse`
 
       * Selecteer de `Enabled` selectievakje
-      * selecteren `Save`
+      * select `Save`
 
 
 ![](assets/screen-shot_2019-05-24at090809.png)
@@ -239,7 +239,7 @@ Standaard wordt elke 30 seconden een opiniepeiling uitgevoerd. U wijzigt dit int
 
          * Verifiëren `Name`: `socialpubsync-scheduled-trigger`
       * instellen `Interval in Seconds` naar het gewenste interval
-      * selecteren `Save`
+      * select `Save`
 
 
 
@@ -278,7 +278,7 @@ Voor elke publicatieinstantie moet een eindpunt voor de importer zijn ingesteld.
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
-* selecteren `Save`
+* select `Save`
 
 ### 8. AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
 
@@ -515,7 +515,7 @@ De geautoriseerde gebruiker moet expliciet de volgende rechten en beperkingen he
 
 Als lid van de `administrators` de geautoriseerde gebruiker de volgende rechten verlenen bij alle publicatieexemplaren:
 
-| **pad** | **jcr:alles** | **jcr:lezen** | **rep:write** |
+| **path** | **jcr:alles** | **jcr:lezen** | **rep:write** |
 |---|---|---|---|
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |

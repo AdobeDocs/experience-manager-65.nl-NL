@@ -1,29 +1,28 @@
 ---
 title: Foutdialoogvensters aanpassen
-seo-title: Foutdialoogvensters aanpassen
+seo-title: Customizing error dialogs
 description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
-seo-description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
-translation-type: tm+mt
-source-git-commit: 07abce0e6e4d1a299ce32ab130366b4e676b6388
+exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '152'
 ht-degree: 4%
 
 ---
 
+# Foutdialoogvensters aanpassen {#customizing-error-dialogs}
 
-# Foutdialoogvensters {#customizing-error-dialogs} aanpassen
+In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer het [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md) gevolgd door de onderstaande stappen om foutmeldingen aan te passen.
 
-In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte uit](/help/forms/using/generic-steps-html-workspace-customization.md), gevolgd door de onderstaande stappen om de foutmeldingen aan te passen.
+## Tekst aanpassen {#customizing-text}
 
-## Tekst {#customizing-text} aanpassen
-
-1. Wijzig in het `/apps/ws/locales/en-US/translation.json`-bestand de waarden van `wserror` in de aangepaste waarden. Bijvoorbeeld:
+1. In de `/apps/ws/locales/en-US/translation.json` bestand, wijzigt u de waarden van `wserror` op de aangepaste waarden. Bijvoorbeeld:
 
    ```json
    "wserror" : {
@@ -51,9 +50,9 @@ In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer de [Algemene 
    >
    >Voeg overeenkomstige sleutel-waarde paren voor alle gesteunde talen toe.
 
-## CSS {#customizing-css} aanpassen
+## CSS aanpassen {#customizing-css}
 
-1. U kunt dialoog, kopbal, inhoudsgebied, voet-bar, voet-bar knopen, en andere zekerheden bijwerken door het volgende fragment in het `/apps/ws/css/newStyle.css` dossier toe te voegen:
+1. U kunt dialoogvensters, koptekst, inhoudsgebied, voetbalk, voetbalknoppen en andere elementen bijwerken door het volgende fragment toe te voegen in het dialoogvenster `/apps/ws/css/newStyle.css` bestand:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -188,7 +187,7 @@ In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer de [Algemene 
    }
    ```
 
-1. Voor het bereik van de voetbalkknop scheidt u de knopbereiken `.error-dialog` en `.foot-bar` van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
+1. Voor het bereik van de voetbalkknop scheidt u de `.error-dialog` en `.foot-bar` de knoop overspant van de samengestelde lijst. U brengt deze wijziging door het volgende toe te voegen in het bestand newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,

@@ -1,8 +1,8 @@
 ---
 title: Webpagina's voor documentbeveiliging gebruiken
-seo-title: Webpagina's voor documentbeveiliging gebruiken
+seo-title: Using the document security webpages
 description: Leer hoe u zich kunt aanmelden, door de webpagina's met documentbeveiliging kunt navigeren en deze kunt gebruiken.
-seo-description: Leer hoe u zich kunt aanmelden, door de webpagina's met documentbeveiliging kunt navigeren en deze kunt gebruiken.
+seo-description: Learn how you can login, navigate and use the document security web pages.
 uuid: b4863343-cda5-474a-a101-a20e39b1f8c7
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,13 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
-
 
 # Webpagina&#39;s voor documentbeveiliging gebruiken {#using-the-document-security-webpages}
 
@@ -29,7 +28,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
-Omdat documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
+Aangezien documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
 
 Als u zich wilt aanmelden als beheerder, moet u de beheerdersrol hebben die aan u is toegewezen. U kunt de standaard superbeheerdersaccount gebruiken die tijdens het installatieproces is gemaakt.
 
@@ -86,7 +85,7 @@ Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s
 
 ## Toegang tot documentbeveiliging instellen vanuit clienttoepassingen {#setting-up-access-to-document-security-from-client-applications}
 
-Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of de juiste *RightsManagementExtension Help* voor informatie over het configureren van de verbinding binnen de clienttoepassing.
+Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of *RightsManagementExtension Help* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
 
 Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). U moet het certificaat van de website installeren in het certificaatarchief, zodat u toegang hebt tot documentbeveiliging via de clienttoepassingen.
 
@@ -107,4 +106,3 @@ Meld u af wanneer u klaar bent met het gebruik van de webpagina&#39;s, zodat u u
 
 1. Klik in de rechterbovenhoek van de pagina op Afmelden.
 1. Als er een bericht verschijnt op de aanmeldingspagina, sluit u het browservenster om u volledig af te melden. Anders kunt u de browser voor andere doeleinden gebruiken.
-

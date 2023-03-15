@@ -1,34 +1,33 @@
 ---
 title: Uw gebruikers en gebruikersgroepen configureren
-seo-title: Uw gebruikers en gebruikersgroepen configureren
+seo-title: Configure Your Users and User Groups
 description: Volg deze pagina om de gebruikersrollen te begrijpen en hoe te om uw gebruikers en groepen te vormen om het ontwerpen en het beheer van uw mobiele On-Demand de dienstenapp te steunen.
-seo-description: Volg deze pagina om de gebruikersrollen te begrijpen en hoe te om uw gebruikers en groepen te vormen om het ontwerpen en het beheer van uw mobiele On-Demand de dienstenapp te steunen.
+seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
-
-# Uw gebruikers en gebruikersgroepen {#configure-your-users-and-user-groups} configureren
+# Uw gebruikers en gebruikersgroepen configureren {#configure-your-users-and-user-groups}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
-## AEM Mobile Application Users and Group Administration {#aem-mobile-application-users-and-group-administration}
+## AEM Mobile Application Users en Group Administration {#aem-mobile-application-users-and-group-administration}
 
-### AEM Mobile Application Content Authors (app-auteurgroep) {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile Application Content Authors (groep voor het schrijven van apps) {#aem-mobile-application-content-authors-app-author-group}
 
 Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het ontwerpen AEM inhoud van mobiele toepassingen, zoals pagina&#39;s, tekst, afbeeldingen en video&#39;s.
 
@@ -46,7 +45,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nu u de app-auteursGebruikersgroep hebt gecreeerd, kunt u individuele teamleden aan deze nieuwe groep door [de console van Admin van de Gebruiker toevoegen ](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin-console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -61,7 +60,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 ### AEM Mobile Application Administrators Group (app-admins-groep) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemmingen ontwerpen inbegrepen bij app-auteurs **AND** zijn ook verantwoordelijk voor:
+Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
 
 * Toepassingsupdates voor ContentSync OTA opslaan, publiceren en wissen
 
@@ -71,7 +70,7 @@ Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemming
 >
 >Sommige opties zijn niet beschikbaar voor toepassingsauteurs die beschikbaar zijn voor app-beheerders.
 
-### Groepsconfiguratie - app-admins {#group-configuration-app-admins}
+### Groepsconfiguratie - app-beheerders {#group-configuration-app-admins}
 
 1. Maak een nieuwe groep met de naam app-admins.
 1. Voeg de volgende groepen toe aan uw nieuwe app-admins-groep:
@@ -85,7 +84,7 @@ Leden van de app-admins-groep kunnen toepassingsinhoud met de zelfde toestemming
    >
    >workflowgebruikers moeten op afstand bouwen met de service PhoneGap Build
 
-1. Navigeer naar [Machtigingen console](http://localhost:4502/useradmin) en voeg machtigingen toe om cloudservices te beheren
+1. Ga naar de [Machtigingenconsole](http://localhost:4502/useradmin) en machtigingen toevoegen om cloudservices te beheren
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/cloudservices/mobileservices
 

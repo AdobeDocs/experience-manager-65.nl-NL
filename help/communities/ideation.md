@@ -1,28 +1,27 @@
 ---
 title: Essentiële elementen voor ideeën
-seo-title: Essentiële elementen voor ideeën
+seo-title: Ideation Essentials
 description: Overzicht van de functie Ideatie
-seo-description: Overzicht van de functie Ideatie
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '106'
 ht-degree: 1%
 
 ---
-
 
 # Essentiële elementen voor ideeën {#ideation-essentials}
 
 Deze pagina biedt de essentiële informatie voor het werken met de ideatiefunctie, die vergelijkbaar is met een forum, maar met de mogelijkheid om op te slaan als een concept en een meer op samenwerking gericht gevoel.
 
-## Essentiële elementen voor client-side {#essentials-for-client-side}
+## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
 <table>
  <tbody>
@@ -36,7 +35,7 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.hbs.voice<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
+   <td>cq.social.hbs.stemden<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -57,4 +56,4 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 
 ### Idealisatiefunctie {#ideation-function}
 
-Een community-sitestructuur die de [Ideatiefunctie](functions.md#ideation-function) bevat, bevat een geconfigureerde `ideation`-component.
+Een community-sitestructuur die de [Idealisatiefunctie](functions.md#ideation-function)bevat een configuratie `ideation` component.

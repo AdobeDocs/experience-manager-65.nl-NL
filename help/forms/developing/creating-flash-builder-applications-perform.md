@@ -1,8 +1,8 @@
 ---
 title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
-seo-title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
+seo-title: Creating Flash Builder applicationsthat perform SSO authentication using HTTP tokens
 description: Creeer een cliënttoepassing gebruikend Flash Builder die enig-sign op (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Verifieer een gebruiker voor een verrichting eens en gebruik die authentificatie om veelvoudige verrichtingen van AEM Forms uit te voeren.
-seo-description: Creeer een cliënttoepassing gebruikend Flash Builder die enig-sign op (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Verifieer een gebruiker voor een verrichting eens en gebruik die authentificatie om veelvoudige verrichtingen van AEM Forms uit te voeren.
+seo-description: Create a client application using Flash Builder that performs single-sign on (SSO) authentication using HTTP tokens. Authenticate a user for an operation once and use that authentication to perform multiple AEM Forms operations.
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
 contentOwner: admin
 content-type: reference
@@ -10,46 +10,45 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1840'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
 
-
-# Flash Builder-toepassingen maken die SSO-verificatie uitvoeren met HTTP-tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
 U kunt een cliënttoepassing tot stand brengen gebruikend Flash Builder die enig-sign (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Stel bijvoorbeeld dat u een webtoepassing maakt met Flash Builder. Ga er vervolgens van uit dat de toepassing verschillende weergaven bevat, waarbij elke weergave een andere AEM Forms-bewerking aanroept. In plaats van een gebruiker te verifiëren voor elke Forms-bewerking, kunt u een aanmeldingspagina maken waarmee de gebruiker één keer kan verifiëren. Zodra voor authentiek verklaard, kan een gebruiker veelvoudige verrichtingen aanhalen zonder het moeten opnieuw voor authentiek verklaren. Als een gebruiker zich bijvoorbeeld heeft aangemeld bij Workspace (of een andere Forms-toepassing), hoeft de gebruiker zich niet opnieuw te verifiëren.
 
-Hoewel de cliënttoepassing vereiste toepassingslogica bevat om authentificatie uit te voeren SSO, voert AEM het Beheer van de vormengebruiker de daadwerkelijke gebruikersauthentificatie uit. Als u een gebruiker wilt verifiëren met gebruik van HTTP-tokens, roept de clienttoepassing de bewerking `authenticateWithHTTPToken` van de verificatiebeheerservice aan. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor volgende verwijderings- of webserviceaanroepen naar AEM Forms hoeft u geen referenties door te geven voor verificatie.
+Hoewel de cliënttoepassing vereiste toepassingslogica bevat om authentificatie uit te voeren SSO, voert AEM het Beheer van de vormengebruiker de daadwerkelijke gebruikersauthentificatie uit. Om een gebruiker voor authentiek te verklaren gebruikend de tokens van HTTP, roept de cliënttoepassing de dienst van de Manager van de Authentificatie aan `authenticateWithHTTPToken` bewerking. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor volgende verwijderings- of webserviceaanroepen naar AEM Forms hoeft u geen referenties door te geven voor verificatie.
 
 >[!NOTE]
 >
 >Voordat u deze sectie leest, wordt u aangeraden AEM Forms aan te roepen met Remoting. (Zie [AEM Forms aanroepen met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker gebruikend SSO voor authentiek wordt verklaard. (Zie [Voorbeeld van kortstondig dynamisch proces](/help/forms/developing/aem-forms-processes.md) voor informatie over dit proces, zoals de invoer- en uitvoerwaarden.)
+Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangeroepen nadat een gebruiker is geverifieerd met behulp van SSO. (Voor informatie over dit proces, zoals de invoer- en uitvoerwaarden, raadpleegt u [Voorbeeld van een kortlopend proces](/help/forms/developing/aem-forms-processes.md).)
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63) gebruiken.)
+>Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` met Workbench. (Zie [Workbench gebruiken](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
-De clienttoepassing die is gebouwd met behulp van Flash Builder, communiceert met de beveiligingsserver van de User Manager die is geconfigureerd op `/um/login` en `/um/logout`. Dat wil zeggen dat de clienttoepassing tijdens het opstarten een verzoek naar de `/um/login` URL verzendt om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
+De cliënttoepassing die gebruikend Flash Builder wordt gebouwd interactie met de veiligheidsserver van de Manager van de Gebruiker die bij wordt gevormd `/um/login` en `/um/logout`. De clienttoepassing verzendt dus een aanvraag naar de `/um/login` URL tijdens opstarten om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
 
 **Aanvraagindeling**
 
 Voor de beveiligingsserver zijn de volgende invoervariabelen vereist:
 
-* `um_no_redirect` - Deze waarde moet zijn  `true`. Deze variabele vergezelt alle verzoeken die aan de de veiligheidsservlet van de Manager van de Gebruiker worden gemaakt. Het helpt de veiligheidsservlet ook het inkomende verzoek onderscheiden die uit een flex cliënt of andere Webtoepassingen komt.
+* `um_no_redirect` - Deze waarde moet `true`. Deze variabele vergezelt alle verzoeken die aan de de veiligheidsservlet van de Manager van de Gebruiker worden gemaakt. Het helpt de veiligheidsservlet ook het inkomende verzoek onderscheiden die uit een flex cliënt of andere Webtoepassingen komt.
 * `j_username` - Deze waarde is de waarde van de aanmeldings-id van de gebruiker zoals opgegeven in het aanmeldingsformulier.
 * `j_password` - Deze waarde is het overeenkomstige wachtwoord van de gebruiker zoals opgegeven in het aanmeldingsformulier.
 
-De waarde `j_password` is alleen vereist voor referentie-aanvragen. Als de wachtwoordwaarde niet is opgegeven, controleert het beveiligingsserver of de account die u gebruikt al is geverifieerd. Zo ja, dan kunt u doorgaan; nochtans, verifieert de veiligheidsservlet u niet opnieuw.
+De `j_password` Waarde is alleen vereist voor referentie-aanvragen. Als de wachtwoordwaarde niet is opgegeven, controleert het beveiligingsserver of de account die u gebruikt al is geverifieerd. Zo ja, dan kunt u doorgaan; nochtans, verifieert de veiligheidsservlet u niet opnieuw.
 
 >[!NOTE]
 >
@@ -57,37 +56,37 @@ De waarde `j_password` is alleen vereist voor referentie-aanvragen. Als de wacht
 
 **Responsindeling**
 
-De veiligheidsserver die bij `/um/login` wordt gevormd antwoordt door `URLVariables` formaat te gebruiken. In deze indeling wordt de uitvoer van het inhoudstype ingesteld op text/plain. De uitvoer bevat naamwaardeparen, gescheiden door een en-teken (&amp;). De reactie bevat de volgende variabelen:
+De veiligheidsserver die bij wordt gevormd `/um/login` reageert met de opdracht `URLVariables` gebruiken. In deze indeling wordt de uitvoer van het inhoudstype ingesteld op text/plain. De uitvoer bevat naamwaardeparen, gescheiden door een en-teken (&amp;). De reactie bevat de volgende variabelen:
 
-* `authenticated` - De waarde is ofwel  `true` ofwel  `false`.
+* `authenticated` - De waarde is ofwel `true` of `false`.
 * `authstate` - Deze waarde kan een van de volgende waarden bevatten:
 
    * `CREDENTIAL_CHALLENGE` - Deze status geeft aan dat Gebruikersbeheer op geen enkele manier de identiteit van de gebruiker kan bepalen. Voor verificatie zijn de gebruikersnaam en het wachtwoord van de gebruiker vereist.
-   * `SPNEGO_CHALLENGE`- Deze toestand wordt op dezelfde manier behandeld als  `CREDENTIAL_CHALLENGE`.
+   * `SPNEGO_CHALLENGE`- Deze toestand wordt op dezelfde manier behandeld als `CREDENTIAL_CHALLENGE`.
    * `COMPLETE` - Deze status geeft aan dat Gebruikersbeheer de gebruiker kan verifiëren.
    * `FAILED` - Deze status geeft aan dat Gebruikersbeheer de gebruiker niet kon verifiëren. Als reactie op deze status kan de flex-client een foutbericht aan de gebruiker weergeven.
    * `LOGGED_OUT` - Deze status geeft aan dat de gebruiker zich heeft afgemeld.
 
-* `assertionid` - Als de status  `COMPLETE` toen was, bevat deze de  `assertionId` waarde van de gebruiker. Een cliënttoepassing kan `AuthResult` voor de gebruiker verkrijgen.
+* `assertionid` - Indien de staat `COMPLETE` bevat het de `assertionId` waarde. Een clienttoepassing kan de `AuthResult` voor de gebruiker.
 
 **Aanmeldingsproces**
 
-Wanneer een cliënttoepassing begint, kunt u een POST verzoek aan `/um/login` veiligheidsservlet indienen. Bijvoorbeeld, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
+Wanneer een clienttoepassing wordt gestart, kunt u een verzoek van een POST indienen bij de `/um/login` beveiligingsservlet. Bijvoorbeeld, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
 
 1. Er wordt gezocht naar een cookie met de naam `lcAuthToken`. Als de gebruiker zich al heeft aangemeld bij een andere Forms-toepassing, is deze cookie aanwezig. Als het cookie wordt gevonden, wordt de inhoud gevalideerd.
 1. Als op Kopbal gebaseerde SSO wordt toegelaten, dan zoekt servlet gevormde kopballen om de identiteit van de gebruiker te bepalen.
 1. Als SPNEGO wordt toegelaten, dan probeert servlet om SPNEGO in werking te stellen en probeert om de identiteit van de gebruiker te bepalen.
 
-Als het veiligheidsservlet van een geldig teken de plaats bepaalt dat een gebruiker aanpast, laat veiligheidsservlet u te werk gaan en met `authstate=COMPLETE` antwoordt. Anders reageert de beveiligingsservlet met `authstate=CREDENTIAL_CHALLENGE`. In de volgende lijst worden deze waarden beschreven:
+Als de beveiligingsservlet een geldig token zoekt dat overeenkomt met een gebruiker, kunt u met de beveiligingsservlet verdergaan en hiermee reageren `authstate=COMPLETE`. Anders reageert de beveiligingsserver met `authstate=CREDENTIAL_CHALLENGE`. In de volgende lijst worden deze waarden beschreven:
 
-* `Case authstate=COMPLETE`: Geeft aan dat de gebruiker is geverifieerd en dat de  `assertionid` waarde de bevestiging-id voor de gebruiker bevat. In dit stadium kan de clienttoepassing verbinding maken met AEM Forms. servlet die voor die URL wordt gevormd kan `AuthResult` voor de gebruiker verkrijgen door de `AuthenticationManager.authenticate(HttpRequestToken)` methode aan te halen. De instantie `AuthResult` kan de context van de gebruikersmanager tot stand brengen en het opslaan in de zitting.
-* `Case authstate=CREDENTIAL_CHALLENGE`: Geeft aan dat voor het beveiligingsservlet de gebruikersgegevens van de gebruiker zijn vereist. Als reactie hierop kan de clienttoepassing het aanmeldingsscherm weergeven aan de gebruiker en de verkregen referentie naar het beveiligingsservlet verzenden (bijvoorbeeld `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`). Als de verificatie succesvol is, reageert de beveiligingsservlet met `authstate=COMPLETE`.
+* `Case authstate=COMPLETE`: Geeft aan dat de gebruiker is geverifieerd en de `assertionid` waarde bevat de bewering-id voor de gebruiker. In dit stadium kan de clienttoepassing verbinding maken met AEM Forms. De servlet die voor die URL wordt gevormd kan verkrijgen `AuthResult` voor de gebruiker door het `AuthenticationManager.authenticate(HttpRequestToken)` methode. De `AuthResult` De instantie kan de context van de gebruikersmanager tot stand brengen en het opslaan in de zitting.
+* `Case authstate=CREDENTIAL_CHALLENGE`: Geeft aan dat voor het beveiligingsservlet de gebruikersgegevens van de gebruiker zijn vereist. Als reactie hierop kan de clienttoepassing het aanmeldingsscherm weergeven aan de gebruiker en de verkregen referentie naar de beveiligingsserver verzenden (bijvoorbeeld `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`. Als de verificatie is gelukt, reageert de beveiligingsserver met `authstate=COMPLETE`.
 
-Als de verificatie nog steeds niet succesvol is, reageert de beveiligingsservlet met `authstate=FAILED`. Om op deze waarde te reageren, kan de clienttoepassing een bericht weergeven om de gegevens opnieuw te verkrijgen.
+Als de authentificatie nog niet succesvol is, dan antwoordt veiligheidsservlet met `authstate=FAILED`. Om op deze waarde te reageren, kan de clienttoepassing een bericht weergeven om de gegevens opnieuw te verkrijgen.
 
 >[!NOTE]
 >
->Terwijl `authstate=CREDENTIAL_CHALLENGE`, adviseert het dat de cliënt de verkregen referentie naar de veiligheidsserver in een vorm van de POST verzendt.
+>while `authstate=CREDENTIAL_CHALLENGE`, is het raadzaam dat de client de verkregen referentie naar de beveiligingsserver verzendt in de vorm van een POST.
 
 **Afmeldingsproces**
 
@@ -95,9 +94,9 @@ Wanneer een clienttoepassing zich afmeldt, kunt u een aanvraag naar de volgende 
 
 `https://<your_serverhost>:<your_port>/um/logout?um_no_redirect=true`
 
-Bij het ontvangen van deze aanvraag verwijdert de beveiligingsserver van de gebruikersbeheerder het cookie `lcAuthToken` en reageert deze met `authstate=LOGGED_OUT`. Nadat de clienttoepassing deze waarde heeft ontvangen, kan de toepassing opschoningstaken uitvoeren.
+Bij het ontvangen van deze aanvraag verwijdert de beveiligingsserver van de gebruikersbeheerder de `lcAuthToken` cookie en reageert met `authstate=LOGGED_OUT`. Nadat de clienttoepassing deze waarde heeft ontvangen, kan de toepassing opschoningstaken uitvoeren.
 
-## Een clienttoepassing maken waarmee gebruikers van formulieren worden geverifieerd AEM SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso} wordt gebruikt
+## Een clienttoepassing maken die gebruikers van AEM formulieren verifieert met behulp van SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Om aan te tonen hoe te om een cliënttoepassing tot stand te brengen die authentificatie SSO uitvoert, wordt een voorbeeldcliënttoepassing gecreeerd. In de volgende afbeelding ziet u de stappen die de clienttoepassing uitvoert om een gebruiker te verifiëren met behulp van SSO.
 
@@ -105,21 +104,21 @@ Om aan te tonen hoe te om een cliënttoepassing tot stand te brengen die authent
 
 In de vorige illustratie wordt de toepassingsstroom beschreven die plaatsvindt wanneer de clienttoepassing wordt gestart.
 
-1. De clienttoepassing activeert de gebeurtenis `applicationComplete`.
-1. De vraag aan `ISSOManager.singleSignOn` wordt gemaakt. De clienttoepassing verzendt een aanvraag naar de beveiligingsserver van de gebruikersbeheerder.
-1. Als de beveiligingsserver de gebruiker verifieert, verzendt `ISSOManager` `SSOEvent.AUTHENTICATION_SUCCESS`. Als reactie hierop geeft de clienttoepassing de hoofdpagina weer. In dit voorbeeld roept de hoofdpagina het kortstondige AEM Forms-proces met de naam MyApplication/EncryptDocument aan.
-1. Als de beveiligingsserver niet kan bepalen of de gebruiker geldig is, vraagt de toepassing opnieuw om de gebruikersgegevens. De klasse `ISSOManager` verzendt de gebeurtenis `SSOEvent.AUTHENTICATION_REQUIRED`. De aanmeldingspagina wordt weergegeven in de clienttoepassing.
-1. De gegevens die op de aanmeldingspagina worden opgegeven, worden naar de methode `ISSOManager.login` verzonden. Als de verificatie succesvol is, leidt dit tot stap 3. Anders wordt de gebeurtenis `SSOEvent.AUTHENTICATION_FAILED` geactiveerd. De clienttoepassing geeft de aanmeldingspagina en een geschikt foutbericht weer.
+1. De clienttoepassing activeert de `applicationComplete` gebeurtenis.
+1. De oproep tot `ISSOManager.singleSignOn` is gemaakt. De clienttoepassing verzendt een aanvraag naar de beveiligingsserver van de gebruikersbeheerder.
+1. Als de beveiligingsserver de gebruiker verifieert, wordt `ISSOManager` verzendingen `SSOEvent.AUTHENTICATION_SUCCESS`. Als reactie hierop geeft de clienttoepassing de hoofdpagina weer. In dit voorbeeld roept de hoofdpagina het kortstondige AEM Forms-proces met de naam MyApplication/EncryptDocument aan.
+1. Als de beveiligingsserver niet kan bepalen of de gebruiker geldig is, vraagt de toepassing opnieuw om de gebruikersgegevens. De `ISSOManager` de klasse verzendt `SSOEvent.AUTHENTICATION_REQUIRED` gebeurtenis. De aanmeldingspagina wordt weergegeven in de clienttoepassing.
+1. De gegevens op de aanmeldingspagina worden verzonden naar de `ISSOManager.login` methode. Als de verificatie succesvol is, leidt dit tot stap 3. Anders `SSOEvent.AUTHENTICATION_FAILED` gebeurtenis wordt geactiveerd. De clienttoepassing geeft de aanmeldingspagina en een geschikt foutbericht weer.
 
-### De clienttoepassing {#creating-the-client-application} maken
+### De clienttoepassing maken {#creating-the-client-application}
 
 De clienttoepassing bestaat uit de volgende bestanden:
 
 * `SSOStandalone.mxml`: Het MXML hoofdbestand dat de clienttoepassing vertegenwoordigt. (Zie [Het bestand SSOStandalone.mxml maken](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file).)
 * `um/ISSOManager.as`: Bewerkingen met betrekking tot Single Sign On (SSO) toegankelijk maken. (Zie [Het bestand ISSOManager.as maken](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file).)
-* `um/SSOEvent.as`: De gebeurtenis  `SSOEvent` wordt verzonden voor SSO-gerelateerde gebeurtenissen. (Zie [Het bestand SSOEvent.as maken](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
+* `um/SSOEvent.as`: De `SSOEvent` wordt verzonden voor SSO-gerelateerde gebeurtenissen. (Zie [Het bestand SSOEvent.as maken](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file).)
 * `um/SSOManager.as`: Beheert de bewerkingen met betrekking tot SSO en verzendt de juiste gebeurtenissen. (Zie [Het bestand SSOManager.as maken](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file).)
-* `um/UserManager.as`: Bevat toepassingslogica die de dienst van de Manager van de Authentificatie gebruikend zijn WSDL aanhaalt. (Zie [Creating the UserManager.as file](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
+* `um/UserManager.as`: Bevat toepassingslogica die de dienst van de Manager van de Authentificatie gebruikend zijn WSDL aanhaalt. (Zie [Het bestand UserManager.as maken](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file).)
 * `views/login.mxml`: Vertegenwoordigt het aanmeldingsscherm. (Zie [Het bestand login.mxml maken](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file).)
 * `views/logout.mxml`: Vertegenwoordigt het logout scherm. (Zie [Het bestand logout.mxml maken](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file).)
 * `views/progress.mxml`: Vertegenwoordigt een vooruitgangsmening. (Zie [Het bestand progress.mxml maken](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file).)
@@ -131,7 +130,7 @@ In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
 >[!NOTE]
 >
->Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Inclusief het AEM Forms Flex-bibliotheekbestand](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Het AEM Forms Flex-bibliotheekbestand opnemen](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Het bestand SSOStandalone.mxml maken {#creating-the-ssostandalone-mxml-file}
 
@@ -250,7 +249,7 @@ De volgende code vertegenwoordigt het SSOStandalone.mxml- dossier.
  
 ```
 
-### Het bestand ISSOManager.as {#creating-the-issomanager-as-file} maken
+### Het bestand ISSOManager.as maken {#creating-the-issomanager-as-file}
 
 De volgende code vertegenwoordigt het bestand ISSOManager.as.
 
@@ -301,7 +300,7 @@ De volgende code vertegenwoordigt het bestand ISSOManager.as.
  }
 ```
 
-### Het bestand SSOEvent.as {#creating-the-ssoevent-as-file} maken
+### Het bestand SSOEvent.as maken {#creating-the-ssoevent-as-file}
 
 De volgende code vertegenwoordigt het SSOEvent.as-bestand.
 
@@ -373,7 +372,7 @@ De volgende code vertegenwoordigt het SSOEvent.as-bestand.
  }
 ```
 
-### Het bestand SSOManager.as {#creating-the-ssomanager-as-file} maken
+### Het bestand SSOManager.as maken {#creating-the-ssomanager-as-file}
 
 De volgende code vertegenwoordigt het bestand SSOManager.as.
 
@@ -603,7 +602,7 @@ De volgende code vertegenwoordigt het bestand UserManager.as.
  }
 ```
 
-### Het bestand login.mxml {#creating-the-login-mxml-file} maken
+### Het bestand login.mxml maken {#creating-the-login-mxml-file}
 
 De volgende code vertegenwoordigt het login.mxml- dossier.
 
@@ -646,7 +645,7 @@ De volgende code vertegenwoordigt het login.mxml- dossier.
  
 ```
 
-### Het bestand logout.mxml {#creating-the-logout-mxml-file} maken
+### Het bestand logout.mxml maken {#creating-the-logout-mxml-file}
 
 De volgende code vertegenwoordigt het logout.mxml- dossier.
 
@@ -659,7 +658,7 @@ De volgende code vertegenwoordigt het logout.mxml- dossier.
  
 ```
 
-### Het bestand progress.mxml {#creating-the-progress-mxml-file} maken
+### Het bestand progress.mxml maken {#creating-the-progress-mxml-file}
 
 De volgende code vertegenwoordigt het progress.mxml- dossier.
 
@@ -671,9 +670,9 @@ De volgende code vertegenwoordigt het progress.mxml- dossier.
  </mx:Canvas>
 ```
 
-### Het bestand {#creating-the-remoting-mxml-file} remoting.mxml maken
+### Het bestand remoting.mxml maken {#creating-the-remoting-mxml-file}
 
-De volgende code vertegenwoordigt het remoting.mxml- dossier dat het `MyApplication/EncryptDocument` proces aanhaalt. Aangezien een document aan het proces wordt doorgegeven, bevindt de toepassingslogica die verantwoordelijk is voor het doorgeven van een beveiligd document aan AEM Forms zich in dit bestand. (Zie [Beveiligde documenten doorgeven om processen aan te roepen met Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+De volgende code vertegenwoordigt het bestand remoting.mxml dat het `MyApplication/EncryptDocument` proces. Aangezien een document aan het proces wordt doorgegeven, bevindt de toepassingslogica die verantwoordelijk is voor het doorgeven van een beveiligd document aan AEM Forms zich in dit bestand. (Zie [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](/help/forms/developing/invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 ```xml
  <?xml version="1.0" encoding="utf-8"?>
@@ -873,9 +872,9 @@ De volgende code vertegenwoordigt het remoting.mxml- dossier dat het `MyApplicat
 
 In de volgende secties vindt u aanvullende informatie over de communicatie tussen de clienttoepassing en de beveiligingsserver van de gebruikersbeheerder.
 
-### Er vindt een nieuwe verificatie plaats {#a-new-authentication-occurs}
+### Er treedt een nieuwe verificatie op {#a-new-authentication-occurs}
 
-In deze situatie probeert de gebruiker zich voor het eerst aan te melden bij een clienttoepassing bij AEM Forms. (Er bestaat geen vorige sessie met de gebruiker.) In de `applicationComplete` gebeurtenis, wordt de `SSOManager.singleSignOn` methode aangehaald die een verzoek naar de Manager van de Gebruiker verzendt.
+In deze situatie probeert de gebruiker zich voor het eerst aan te melden bij een clienttoepassing bij AEM Forms. (Er bestaat geen vorige sessie met de gebruiker.) In de `applicationComplete` gebeurtenis, de `SSOManager.singleSignOn` De methode wordt aangehaald die een verzoek naar de Manager van de Gebruiker verzendt.
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -885,7 +884,7 @@ De beveiligingsserver van de gebruikersbeheerder reageert op de volgende waarde:
 
 `authenticated=false&authstate=CREDENTIAL_CHALLENGE`
 
-Als reactie op deze waarde wordt een waarde `SSOEvent.AUTHENTICATION_REQUIRED` verzonden. Het resultaat is dat de clienttoepassing een aanmeldingsscherm weergeeft aan de gebruiker. De referenties worden teruggestuurd naar de beveiligingsserver van de gebruikersbeheerder.
+Als reactie op deze waarde wordt een `SSOEvent.AUTHENTICATION_REQUIRED` waarde wordt verzonden. Het resultaat is dat de clienttoepassing een aanmeldingsscherm weergeeft aan de gebruiker. De referenties worden teruggestuurd naar de beveiligingsserver van de gebruikersbeheerder.
 
 `GET /um/login?um%5Fno%5Fredirect=true&j%5Fusername=administrator&j%5Fpassword=password HTTP/1.1`
 
@@ -897,7 +896,7 @@ De beveiligingsserver van de gebruikersbeheerder reageert op de volgende waarde:
  authenticated=true&authstate=COMPLETE&assertionid=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-Hierdoor wordt `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` verzonden. De clienttoepassing kan indien nodig verdere verwerking uitvoeren. U kunt bijvoorbeeld een logboek maken dat de datum en tijd bijhoudt waarop de gebruiker is geverifieerd.
+Dientengevolge `authstate=COMPLETE the SSOEvent.AUTHENTICATION_SUCCESS` wordt verzonden. De clienttoepassing kan indien nodig verdere verwerking uitvoeren. U kunt bijvoorbeeld een logboek maken dat de datum en tijd bijhoudt waarop de gebruiker is geverifieerd.
 
 ### De gebruiker is al geverifieerd {#the-user-is-already-authenticated}
 
@@ -908,7 +907,7 @@ In dit geval heeft de gebruiker zich al aangemeld bij AEM Forms en navigeert dez
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-Omdat de gebruiker al voor authentiek is verklaard, is het koekje van de Manager van de Gebruiker aanwezig en wordt verzonden naar de veiligheidsserver van de Manager van de Gebruiker. De servlet krijgt dan de `assertionId` waarde en verifieert of het geldig is. Als deze geldig is, wordt `authstate=COMPLETE` geretourneerd. Anders wordt `authstate=CREDENTIAL_CHALLENGE` geretourneerd. Dit is een typische reactie:
+Omdat de gebruiker al voor authentiek is verklaard, is het koekje van de Manager van de Gebruiker aanwezig en wordt verzonden naar de veiligheidsserver van de Manager van de Gebruiker. De servlet krijgt dan de `assertionId` en controleert of deze geldig is. Als het geldig is, dan `authstate=COMPLETE` wordt geretourneerd. Anders `authstate=CREDENTIAL_CHALLENGE` wordt geretourneerd. Dit is een typische reactie:
 
 ```verilog
  HTTP/1.1 200 OK

@@ -1,14 +1,13 @@
 ---
 title: Samengestelde onderdelen in SPA
-description: Leer hoe u uw eigen samengestelde componenten maakt, componenten die uit andere componenten bestaan en die werken met de AEM Single-Page Application (SPA) Editor.
-translation-type: tm+mt
-source-git-commit: 431bed450ed5b0239d9191dcf061f01e64b8981a
+description: Leer hoe u uw eigen samengestelde componenten maakt, componenten die uit andere componenten bestaan, die werken met de AEM Single-Page Application (SPA) Editor.
+exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 0%
 
 ---
-
 
 # Samengestelde onderdelen in SPA {#composite-components-in-spas}
 
@@ -18,7 +17,7 @@ Wanneer samengestelde componenten correct worden geïmplementeerd in het kader v
 
 Dit artikel laat zien hoe u een samengestelde component kunt toevoegen aan uw toepassing voor één pagina, zodat u naadloos kunt werken met de AEM SPA Editor.
 
-## Hoofdlettergebruik {#use-case}
+## Hoofdletters gebruiken {#use-case}
 
 Dit artikel gebruikt de typische kaartcomponent als zijn geval van het voorbeeldgebruik. Kaarten vormen een algemeen interface-element voor veel digitale ervaringen en bestaan doorgaans uit een afbeelding en de bijbehorende tekst of bijschrift. Een auteur wil de hele kaart kunnen slepen en neerzetten, maar de afbeelding van de kaart afzonderlijk kunnen bewerken en de bijbehorende tekst aanpassen.
 
@@ -27,10 +26,10 @@ Dit artikel gebruikt de typische kaartcomponent als zijn geval van het voorbeeld
 De volgende modellen voor het steunen van de composietgebruiksgevallen vereisen de volgende eerste vereisten.
 
 * Uw AEM ontwikkelingsinstantie loopt plaatselijk op haven 4502 met een steekproefproject.
-* U hebt een werkende externe React-app [ingeschakeld voor bewerking in AEM.](spa-edit-external.md)
-* De React-app wordt in de AEM-editor [geladen met behulp van de RemotePage-component.](spa-remote-page.md)
+* U hebt een werkende externe Reactie-app [ingeschakeld voor bewerking in AEM.](spa-edit-external.md)
+* De React-app is geladen in de AEM-editor [met de RemotePage-component.](spa-remote-page.md)
 
-## Samengestelde componenten toevoegen aan een SPA {#adding-composite-components}
+## Samengestelde onderdelen toevoegen aan een SPA {#adding-composite-components}
 
 Er zijn drie verschillende modellen voor het uitvoeren van uw samengestelde component afhankelijk van uw SPA implementatie binnen AEM.
 
@@ -45,13 +44,13 @@ De volgende secties geven voorbeelden van het uitvoeren van elk geval gebruikend
 Begin door de componenten te creëren die omhoog de samengestelde component, d.w.z. componenten voor het beeld en zijn tekst zullen maken.
 
 1. Maak de tekstcomponent in uw AEM project.
-1. Voeg de overeenkomstige `resourceType` van het project in de `editConfig` knoop van de component toe.
+1. Voeg de bijbehorende `resourceType` van het project in de componenten `editConfig` knooppunt.
 
    ```text
     resourceType: 'wknd-spa/components/text' 
    ```
 
-1. Gebruik de `withMappable` helper om het uitgeven voor de component toe te laten.
+1. Gebruik de `withMappable` de hulp om het uitgeven voor de component toe te laten.
 
    ```text
    export const AEMText = withMappable(Text, TextEditConfig); 
@@ -86,7 +85,7 @@ export const Text = ({ cqPath, richText, text }) => {
 export const AEMText = withMappable(Text, TextEditConfig);
 ```
 
-Als u een afbeeldingscomponent op dezelfde manier maakt, kunt u deze combineren met de component `AEMText` in een nieuwe kaartcomponent en de afbeeldings- en tekstcomponenten als onderliggende elementen gebruiken.
+Als u een afbeeldingscomponent op een vergelijkbare manier maakt, kunt u deze combineren met de opdracht `AEMText` in een nieuwe kaartcomponent, die de beeld en tekstcomponenten gebruiken als kinderen.
 
 ```javascript
 import React from 'react';
@@ -119,7 +118,7 @@ function Home() {
 }
 ```
 
-Hiermee wordt een lege plaatsaanduiding voor een tekst en een afbeelding in de editor weergegeven. Wanneer u waarden voor deze waarden invoert via de editor, worden ze opgeslagen op het opgegeven paginapad, dat wil zeggen `/content/wknd-spa/home` op het hoofdniveau met de namen die zijn opgegeven in `itemPath`.
+Hiermee wordt een lege plaatsaanduiding voor een tekst en een afbeelding in de editor weergegeven. Wanneer u waarden voor deze waarden invoert via de editor, worden ze opgeslagen op het opgegeven paginapad, dat wil zeggen `/content/wknd-spa/home`  op het hoofdniveau met de namen die zijn opgegeven in `itemPath`.
 
 ![Samengestelde kaartcomponent in de editor](assets/composite-card.png)
 
@@ -131,7 +130,7 @@ In dit geval wordt de kaartcomponent al gemaakt in uw AEM project met titel- en 
 
 U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
 
-1. Maak hiervoor een overeenkomende component in de SPA. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige AEM middeltypes binnen het SPA project in kaart worden gebracht. In dit voorbeeld gebruiken wij de zelfde `AEMText` en `AEMImage` componenten zoals gedetailleerd [in het vorige geval.](#component-does-not-exist)
+1. Maak hiervoor een overeenkomende component in de SPA. Zorg ervoor dat de kindcomponenten aan hun overeenkomstige AEM middeltypes binnen het SPA project in kaart worden gebracht. In dit voorbeeld gebruiken we hetzelfde `AEMText` en `AEMImage` componenten als gedetailleerd [in het vorige geval.](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -147,7 +146,7 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. Aangezien er geen inhoud is voor de `imagecard` component, voegt u de kaart toe aan de pagina. Neem de bestaande container van AEM op in de SPA.
+1. Aangezien er geen inhoud is voor de `imagecard` voegt u de kaart toe aan de pagina. Neem de bestaande container van AEM op in de SPA.
    * Als er al een container in het AEM project is, kunnen wij dit in de SPA in plaats daarvan omvatten en de component aan de container van AEM in plaats daarvan toevoegen.
    * Zorg ervoor dat de kaartcomponent is toegewezen aan het corresponderende brontype in de SPA.
 
@@ -157,9 +156,9 @@ U kunt het dan toevoegen aan uw SPA en zijn inhoud terugwinnen.
     itemPath='root/responsivegrid' />
    ```
 
-1. Voeg de gemaakte `wknd-spa/components/imagecard`-component toe aan de toegestane componenten voor de containercomponent [in de paginasjabloon.](/help/sites-authoring/templates.md)
+1. De gemaakte `wknd-spa/components/imagecard` component aan de toegestane componenten voor de containercomponent [in de paginasjabloon.](/help/sites-authoring/templates.md)
 
-De component `imagecard` kan nu rechtstreeks aan de container in de AEM-editor worden toegevoegd.
+Nu de `imagecard` kan direct aan de container in de AEM redacteur worden toegevoegd.
 
 ![Samengestelde kaart in de editor](assets/composite-card.gif)
 
@@ -175,4 +174,4 @@ Als de inhoud in AEM bestaat, kan deze rechtstreeks in de SPA worden opgenomen d
 
 ![Samengesteld pad in knooppuntstructuur](assets/composite-path.png)
 
-De `AEMCard` component is het zelfde als bepaald [in het vorige gebruiksgeval.](#content-does-not-exist) Hier is de inhoud die op de bovenstaande locatie in het AEM project is gedefinieerd, opgenomen in de SPA.
+De `AEMCard` component is hetzelfde als gedefinieerd [in het geval van eerder gebruik.](#content-does-not-exist) Hier is de inhoud die op de bovenstaande locatie in het AEM project is gedefinieerd, opgenomen in de SPA.

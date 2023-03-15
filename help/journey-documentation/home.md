@@ -1,7 +1,8 @@
 ---
 title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
-source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
+exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1234'
 ht-degree: 0%

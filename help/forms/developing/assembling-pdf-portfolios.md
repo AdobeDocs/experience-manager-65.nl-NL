@@ -1,8 +1,8 @@
 ---
 title: PDF-Portfolio samenstellen
-seo-title: PDF-Portfolio samenstellen
+seo-title: Assembling PDF Portfolios
 description: U kunt een PDF-portfolio samenstellen om verschillende typen documenten te combineren, zoals tekstbestanden, afbeeldingsbestanden en PDF-documenten. U kunt een PDF-portfolio samenstellen met een Java API en een webservice-API.
-seo-description: U kunt een PDF-portfolio samenstellen om verschillende typen documenten te combineren, zoals tekstbestanden, afbeeldingsbestanden en PDF-documenten. U kunt een PDF-portfolio samenstellen met een Java API en een webservice-API.
+seo-description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
-
 
 # PDF-Portfolio samenstellen {#assembling-pdf-portfolios}
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-U kunt een PDF-Portfolio samenstellen met de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals het *raster met voorvertoning*, de *layout op een afbeelding* of zelfs *Draaien*.
+U kunt een PDF-Portfolio samenstellen met gebruik van de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals de *Raster met voorvertoning* de *Op een afbeelding* lay-out of even *Draaien*.
 
-De volgende illustratie is een schermafbeelding van een portfolio met de stijllay-out *Op een afbeelding*.
+De volgende afbeelding is een schermafbeelding van een portfolio met *Op een afbeelding* stijllay-out.
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-Het maken van een PDF-Portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
+Het maken van een PDF-Portfolio dient als een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
 
 ```xml
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/">
@@ -54,19 +53,19 @@ Het maken van een PDF-Portfolio is een papierloos alternatief voor het doorgeven
  </DDX>
 ```
 
-Het DXX-document moet een `Portfolio`-tag met een geneste `Navigator`-tag bevatten. Het label `<Resource name="navigator/image.xxx" source="myImage.png"/>` is alleen nodig als `myNavigator` is toegewezen als de lay-outnavigator onImage: `AdobeOnImage.nav`. Met deze tag kan de Assembler-service de afbeelding selecteren die u wilt gebruiken als de portfolioachtergrond. Neem `PackageFiles`- en `File`-tags op om de bestandsnaam en het MIME-type van het pakketbestand te definiëren.
+Het DXX-document moet een `Portfolio` tag met een genest `Navigator` tag. De tag noteren `<Resource name="navigator/image.xxx" source="myImage.png"/>` is alleen nodig als `myNavigator` wordt toegewezen als de lay-outnavigator onImage: `AdobeOnImage.nav`. Met deze tag kan de Assembler-service de afbeelding selecteren die u wilt gebruiken als de portfolioachtergrond. Inclusief `PackageFiles` en `File` -tags om de bestandsnaam en het MIME-type van het pakketbestand te definiëren.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Voor meer informatie over een DX- document, zie [de Dienst van de Assembler en DX Verwijzing](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
-## Overzicht van stappen {#summary-of-steps}
+## Overzicht van de stappen {#summary-of-steps}
 
-Voer de volgende taken uit om een PDF-Portfolio te maken:
+Voer de volgende taken uit om een PDF Portfolio te maken:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
@@ -94,13 +93,13 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, cre
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om een PDF-Portfolio samen te stellen. Dit DDX-document moet de elementen `Portfolio`, `Navigator` en `PackageFiles` bevatten.
+Er moet naar een DDX-document worden verwezen om een PDF-Portfolio samen te stellen. Dit DDX-document moet de `Portfolio`, `Navigator` en `PackageFiles` elementen.
 
 **Verwijzing naar de vereiste documenten**
 
 Als u een PDF-Portfolio wilt samenstellen, verwijst u naar alle bestanden die de samen te stellen documenten vertegenwoordigen. Geef bijvoorbeeld alle afbeeldingsbestanden die in het DDX-document zijn opgegeven, door aan de Assembler-service. U ziet dat naar deze bestanden wordt verwezen in het DDX-document dat in deze sectie is opgegeven: *myImage.png* en *saint_bernard.jpg*.
 
-Wanneer u een PDF-Portfolio samenstelt, geeft u een NAV-bestand (een navigatorbestand) door aan de Assembler-service. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF-Portfolio dat u maakt. Als u bijvoorbeeld een *Op een afbeelding*-lay-out wilt maken, geeft u het bestand AdobeOnImage.nav door. U kunt NAV-bestanden zoeken in de volgende map:
+Wanneer het assembleren van een Portfolio van PDF, geef een NAV- dossier (een navigatordossier) tot de dienst van de Assembler over. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF Portfolio dat u maakt. Als u bijvoorbeeld een *Op een afbeelding* geeft u de indeling door aan het bestand AdobeOnImage.nav. U kunt NAV-bestanden zoeken in de volgende map:
 
 `<Install folder>\Acrobat 9.0\Acrobat\Navigators`
 
@@ -116,11 +115,11 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het portfolio samenstellen**
 
-Als u een PDF-Portfolio wilt samenstellen, roept u de bewerking `invokeDDX` aan. De Assembler-service retourneert de PDF-Portfolio in een verzamelingsobject.
+Als u een PDF-Portfolio wilt samenstellen, roept u de `invokeDDX` bewerking. De dienst van de Assembler keert de Portfolio van de PDF binnen een inzamelingsvoorwerp terug.
 
 **De geassembleerde portfolio opslaan**
 
-Een PDF-Portfolio wordt geretourneerd in een verzamelingsobject. Doorloop het verzamelingsobject en sla PDF-Portfolio op als een PDF-bestand.
+Een PDF-Portfolio wordt geretourneerd binnen een verzamelingsobject. Doorloop het verzamelingsobject en sla PDF Portfolio op als een PDF-bestand.
 
 **Zie ook**
 
@@ -144,46 +143,46 @@ U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
-   * Maak een `AssemblerServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
+   * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `java.io.FileInputStream`-object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
+   * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
 
 1. Verwijs naar de vereiste documenten.
 
-   * Maak een `java.util.Map`-object dat wordt gebruikt om invoer-PDF-documenten op te slaan met behulp van een `HashMap`-constructor.
-   * Maak een `java.io.FileInputStream`-object met de constructor ervan. Geef de locatie van het vereiste NAV-bestand door (herhaal deze taak voor elk bestand dat is vereist om een portfolio te maken).
-   * Maak een `com.adobe.idp.Document`-object en geef het `java.io.FileInputStream`-object door dat het NAV-bestand bevat (herhaal deze taak voor elk bestand dat is vereist om een portfolio te maken).
-   * Voeg een item aan het object `java.util.Map` toe door de methode `put` ervan aan te roepen en de volgende argumenten door te geven:
+   * Een `java.util.Map` object dat wordt gebruikt voor het opslaan van PDF-invoerdocumenten met behulp van een `HashMap` constructor.
+   * Een `java.io.FileInputStream` object met behulp van de constructor. Geef de locatie van het vereiste NAV-bestand door (herhaal deze taak voor elk bestand dat is vereist om een portfolio te maken).
+   * Een `com.adobe.idp.Document` en geeft het `java.io.FileInputStream` -object dat het NAV-bestand bevat (herhaal deze taak voor elk bestand dat is vereist om een portfolio te maken).
+   * Een item toevoegen aan de `java.util.Map` object aanroepen `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het bronelement dat is opgegeven in het DDX-document. (Herhaal deze taak voor elk bestand dat vereist is om een portfolio te maken).
-      * Een `com.adobe.idp.Document`-object dat het PDF-document bevat. (Herhaal deze taak voor elk bestand dat vereist is om een portfolio te maken).
+      * A `com.adobe.idp.Document` object dat het PDF-document bevat. (Herhaal deze taak voor elk bestand dat vereist is om een portfolio te maken).
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt de `AssemblerOptionSpec` methode `setFailOnError` van objecten aan en gaat `false` over.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
 1. De portfolio samenstellen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende vereiste waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
-   * Een `com.adobe.idp.Document`-object dat het te gebruiken DDX-document vertegenwoordigt
-   * Een `java.util.Map`-object dat de bestanden bevat die zijn vereist om een PDF-Portfolio te maken.
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`-object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
+   * A `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
+   * A `java.util.Map` -object dat de bestanden bevat die vereist zijn om een PDF-Portfolio te maken.
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
 
-   De methode `invokeDDX` retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult`-object dat de geassembleerde PDF-Portfolio en eventuele uitzonderingen bevat.
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de geassembleerde PDF Portfolio en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om de PDF-Portfolio te verkrijgen:
+   Voer de volgende handelingen uit om de PDF Portfolio te verkrijgen:
 
-   * Roep de methode `AssemblerResult` van het object `getDocuments` aan. Deze methode retourneert een `java.util.Map`-object.
-   * Doorloop het object `java.util.Map` totdat u het resulterende object `com.adobe.idp.Document` hebt gevonden.
-   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de PDF-Portfolio te extraheren.
+   * De `AssemblerResult` object `getDocuments` methode. Deze methode retourneert een `java.util.Map` object.
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object.
+   * De `com.adobe.idp.Document` object `copyToFile` methode om de Portfolio van de PDF te extraheren.
 
 **Zie ook**
 
@@ -195,72 +194,72 @@ U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice
 
 ## Een PDF-Portfolio samenstellen met de webservice-API {#assemble-a-pdf-portfolio-using-the-web-service-api}
 
-U kunt een PDF-Portfolio samenstellen met de API (webservice) van de Assembler Service:
+U kunt een PDF-Portfolio samenstellen met behulp van de API (webservice) voor de Assembler-service:
 
 1. Inclusief projectbestanden.
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Creeer een Microsoft .NET project dat MTOM gebruikt. Zorg ervoor dat u de volgende definitie van WSDL gebruikt wanneer het plaatsen van een de dienstverwijzing: `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een PDF Assembler-client.
 
-   * Maak een `AssemblerServiceClient`-object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AssemblerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
-   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Een `AssemblerServiceClient` object met de standaardconstructor.
+   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
+   * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor het AEM aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName` toe.
-      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AssemblerServiceClient.ClientCredentials.UserName.Password` toe.
-      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
-      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * De bijbehorende wachtwoordwaarde aan het veld toewijzen `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Verwijs naar een bestaand DDX-document.
 
-   * Maak een `BLOB`-object met de constructor ervan. Het object `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` eigenschap met de inhoud van de bytearray.
 
 1. Verwijs naar de vereiste documenten.
 
-   * Maak voor elk invoerbestand een `BLOB`-object met behulp van de constructor. Het object `BLOB` wordt gebruikt om het invoerbestand op te slaan.
-   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerbestand en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
-   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB`-object door het `MTOM`-veld toe te wijzen met de inhoud van de bytearray.
-   * Maak een `MyMapOf_xsd_string_To_xsd_anyType`-object. Dit verzamelingsobject wordt gebruikt om invoerbestanden op te slaan die nodig zijn om een PDF-Portfolio te maken.
-   * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item`-object.
-   * Wijs een tekenreekswaarde toe die de toetsnaam vertegenwoordigt aan het veld `key` van het `MyMapOf_xsd_string_To_xsd_anyType_Item`-object. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerbestand.)
-   * Wijs het `BLOB`-object toe dat het invoerbestand opslaat in het veld `MyMapOf_xsd_string_To_xsd_anyType_Item` van het `value`-object. (Voer deze taak uit voor elk invoer-PDF-document.)
-   * Voeg het object `MyMapOf_xsd_string_To_xsd_anyType_Item` toe aan het object `MyMapOf_xsd_string_To_xsd_anyType`. Roep de methode `MyMapOf_xsd_string_To_xsd_anyType` van het object `Add` aan en geef het object `MyMapOf_xsd_string_To_xsd_anyType` door. (Voer deze taak uit voor elk invoer-PDF-document.)
+   * Maak voor elk invoerbestand een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het invoerbestand op te slaan.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het invoerbestand en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
+   * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
+   * Een `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om invoerbestanden op te slaan die nodig zijn om een PDF-Portfolio te maken.
+   * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
+   * Wijs een tekenreekswaarde toe die de sleutelnaam vertegenwoordigt aan de `MyMapOf_xsd_string_To_xsd_anyType_Item` object `key` veld. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerbestand.)
+   * Wijs het `BLOB` object dat het invoerbestand in het `MyMapOf_xsd_string_To_xsd_anyType_Item` object `value` veld. (Voer deze taak uit voor elk invoerdocument van de PDF.)
+   * Voeg de `MyMapOf_xsd_string_To_xsd_anyType_Item` aan `MyMapOf_xsd_string_To_xsd_anyType` object. De `MyMapOf_xsd_string_To_xsd_anyType` object `Add` en geeft de `MyMapOf_xsd_string_To_xsd_anyType` object. (Voer deze taak uit voor elk invoerdocument van de PDF.)
 
 1. Stel runtime-opties in.
 
-   * Maak een `AssemblerOptionSpec`-object dat uitvoeringsopties opslaat met de constructor ervan.
-   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot het object `AssemblerOptionSpec` behoort. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs `false` aan `AssemblerOptionSpec` het gegevenslid van `failOnError` van het voorwerp toe.
+   * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
+   * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
 1. De portfolio samenstellen.
 
-   Roep de methode `invokeDDX` van het object `AssemblerServiceClient` aan en geef de volgende waarden door:
+   De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
-   * Een `BLOB`-object dat het DDX-document vertegenwoordigt
-   * Het `MyMapOf_xsd_string_To_xsd_anyType`-object dat de vereiste bestanden bevat
-   * Een `AssemblerOptionSpec`-object dat uitvoeringsopties opgeeft
+   * A `BLOB` object dat staat voor het DDX-document
+   * De `MyMapOf_xsd_string_To_xsd_anyType` object dat de vereiste bestanden bevat
+   * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De methode `invokeDDX` retourneert een `AssemblerResult`-object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
+   De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om de nieuwe PDF-Portfolio te verkrijgen:
+   Voer de volgende handelingen uit om de nieuwe PDF Portfolio te verkrijgen:
 
-   * Open het veld `AssemblerResult` van het object `documents`. Dit is een `Map`-object dat de resulterende PDF-documenten bevat.
-   * Doorloop het object `Map` om elk resulterend document te verkrijgen. Vervolgens cast u `value` van dat arraylid naar een `BLOB`.
-   * Pak de binaire gegevens die het PDF-document vertegenwoordigen uit door de eigenschap `MTOM` van het object `BLOB` te openen. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
+   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
+   * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
+   * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 
 **Zie ook**
 

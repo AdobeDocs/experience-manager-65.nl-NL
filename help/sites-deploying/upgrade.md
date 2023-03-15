@@ -25,7 +25,7 @@ In deze sectie gaat het om het upgraden van een AEM naar AEM 6.5:
 * [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)
 * [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
 
-<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md)
 * [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)

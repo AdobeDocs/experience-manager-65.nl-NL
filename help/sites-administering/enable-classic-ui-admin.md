@@ -2,7 +2,7 @@
 title: Admin Consoles
 seo-title: Admin Consoles
 description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in AEM.
-seo-description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in AEM.
+seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,19 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 954c1d5b06b54d59f523483ce5c1af36c2083a76
+exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Admin Consoles{#admin-consoles}
 
 De mogelijkheid om via de beheerconsoles over te schakelen op de klassieke gebruikersinterface is standaard uitgeschakeld. Daarom worden de pop-uppictogrammen die werden gezien toen de muis over bepaalde consolepictogrammen beweegt, die toegang tot klassieke UI toestaan, niet meer getoond.
 
-Elke console die een Klassieke versie UI in `/libs/cq/core/content/nav` heeft kan individueel worden re-toegelaten zodat **Klassieke UI** optie opnieuw over het consolepictogram verschijnt wanneer het over wordt gemouseover.
+Elke console die een Klassieke versie UI in heeft `/libs/cq/core/content/nav` kan individueel opnieuw worden toegelaten zodat **Klassieke interface** Deze optie wordt weer boven het consolepictogram weergegeven wanneer de muis erboven wordt geplaatst.
 
 In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatsen.
 
@@ -39,17 +38,17 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
    `/libs/cq/core/content/nav/sites`
 
-1. Maak een overlay met de optie **Overlay Node**; bijvoorbeeld:
+1. Een overlay maken met de opdracht **Overlayknooppunt** optie; bijvoorbeeld:
 
-   * **Pad**:  `/apps/cq/core/content/nav/sites`
-   * **Locatie** bedekking:  `/apps/`
+   * **Pad**: `/apps/cq/core/content/nav/sites`
+   * **Overlay-locatie**: `/apps/`
    * **Identieke knooppunttypen**: actief (schakel het selectievakje in)
 
 1. Voeg de volgende booleaanse eigenschap toe aan het bovenliggende knooppunt:
 
    `enableDesktopOnly = {Boolean}true`
 
-1. De optie **Klassieke UI** is opnieuw beschikbaar als popover optie in de admin console.
+1. De **Klassieke interface** deze optie is weer beschikbaar als een popover-optie in de beheerconsole.
 
    ![](assets/syui-01-2019-02-27-15-16-55.png)
 

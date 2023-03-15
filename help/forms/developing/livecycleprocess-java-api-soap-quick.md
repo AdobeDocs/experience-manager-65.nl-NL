@@ -1,8 +1,8 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Snel starten
-seo-title: LiveCycleProcess Java API(SOAP)Snel starten
-description: 'Met de SOAP (LiveCycleProcess Java API) kunt u snel aan de slag om naar procesinstanties te zoeken, procesinstanties op te schorten, geschorste procesinstanties te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen. '
-seo-description: Met de SOAP (LiveCycleProcess Java API) kunt u snel aan de slag om naar procesinstanties te zoeken, procesinstanties op te schorten, geschorste procesinstanties te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
+seo-title: LiveCycleProcess Java API(SOAP)Quick Start
+description: Gebruik de LiveCycleProcess Java API (SOAP) Quick Start om naar procesinstanties te zoeken, procesinstanties op te schorten, instanties van geschorste processen te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
+seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
+# LiveCycleProcess Java API (SOAP), snel aan de slag {#livecycleprocess-java-api-soap-quick-start}
 
-# LiveCycleProcess Java API (SOAP) Quick Start {#livecycleprocess-java-api-soap-quick-start}
-
-De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstantie* is een instantie van een specifiek proces dat door een aanroepingsmethode zoals de Inroeping API of van binnen Werkruimte is begonnen.
+De Java API (SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de API voor aanroepen of vanuit de werkruimte.
 
 [Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -43,7 +42,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op het proces *MortgaugeLoan - Prebuilt*.
+In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op de *Hypothecaire lening - Prebuilt* proces.
 
 ```java
  /*
@@ -432,7 +431,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
 
 ## Snel starten (SOAP-modus): Procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-De volgende code van Java zuivert gegevens van een proces genoemd *SecureDocument*. Een filter wordt gebruikt dat specificeert om gegevens voor die procesinstanties te zuiveren waar de procesvariabele genoemd *inValue* groter is dan 200.
+De volgende Java-code verwijdert gegevens uit een proces met de naam *SecureDocument*. Er wordt een filter gebruikt dat aangeeft dat gegevens moeten worden gewist voor procesinstanties waarbij de procesvariabele genaamd *inValue* is groter dan 200.
 
 ```java
  /*
@@ -644,4 +643,3 @@ In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
  
  
 ```
-

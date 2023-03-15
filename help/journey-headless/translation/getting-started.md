@@ -1,7 +1,8 @@
 ---
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%

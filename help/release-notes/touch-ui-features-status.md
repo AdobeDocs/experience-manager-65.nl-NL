@@ -1,26 +1,25 @@
 ---
 title: Status van TouchUI-functie
-description: Opmerkingen bij de release specifiek voor  [!DNL Adobe Experience Manager] Touch-Enabled UI.
-translation-type: tm+mt
-source-git-commit: d938f52766154b68df2f6db2c8c49a0ad97e7e6d
+description: Opmerkingen bij de release die specifiek zijn voor [!DNL Adobe Experience Manager] Interface voor aanraakbediening.
+exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
+# Status van TouchUI-functie {#touch-ui-feature-status}
 
-# Status aanraakinterface {#touch-ui-feature-status}
+AEM 6.4 en vanaf [Klassieke UI is afgekeurd](../release-notes/deprecated-removed-features.md). Adobe zal geen verdere verbeteringen aanbrengen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies die beschikbaar zijn in de interface met aanraakbediening te benutten.
 
-AEM 6.4 en [Klassieke UI is afgekeurd](../release-notes/deprecated-removed-features.md). Adobe zal geen verdere verbeteringen aanbrengen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies die beschikbaar zijn in de interface met aanraakbediening te benutten.
-
-Vanaf versie 6.0 introduceerde AEM een nieuwe gebruikersinterface die wordt aangeduid als de &quot;touch-enabled UI&quot; (gewoon &quot;Touch UI&quot; genoemd) en die wordt uitgelijnd op [!DNL Adobe Experience Cloud] en de algemene richtlijnen voor de gebruikersinterface van Adobe. Met bijna bereikte eigenschappariteit, is dit standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI wordt bedoeld.
+AEM introduceerde vanaf versie 6.0 een nieuwe gebruikersinterface die de &#39;touch-UI&#39; (gewoon &#39;touch-UI&#39; genoemd) wordt genoemd en die is uitgelijnd op de [!DNL Adobe Experience Cloud] en de algemene richtlijnen voor de gebruikersinterface van Adobe. Met bijna bereikte eigenschappariteit, is dit standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI wordt bedoeld.
 
 Hoewel de meeste mogelijkheden aanwezig zijn in de interface met aanraakbediening, zijn er functies die nog niet zijn voltooid en in toekomstige versies zullen worden toegevoegd.
 
 In de volgende lijst wordt de huidige status van de mogelijkheden weergegeven, zoals geïmplementeerd in AEM 6.5.
 
-Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie [Aanbevelingen van het gebruikersinterface voor klanten](/help/sites-deploying/ui-recommendations.md).
+Voor aanbevelingen voor klanten die aan AEM 6.5 bevorderen, zie [Aanbevelingen voor gebruikersinterface voor klanten](/help/sites-deploying/ui-recommendations.md).
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder (`/siteadmi
 
 | Functie | Status | Opmerking |
 |--- |--- |--- |
-| Navigeren door sitehiërarchie | Voltooid | AEM 6.4 introduceerde een [inhoudsboomweergave](/help/sites-authoring/basic-handling.md#content-tree). |
+| Navigeren door sitehiërarchie | Voltooid | AEM 6.4 [inhoudsstructuurweergave](/help/sites-authoring/basic-handling.md#content-tree). |
 | Workflow starten | Voltooid |  |
 | Nieuwe pagina maken | Voltooid |  |
 | Nieuwe site maken | Voltooid |  |
@@ -78,7 +77,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder (`/siteadmi
 
 ## Status van onderdeel: Pagina-editor {#feature-status-page-editor}
 
-Dit is een lijst met mogelijkheden die de klassieke UI Page Editor (`/cf#`) heeft en de status in touch-enabled (`/editor.html`).
+Dit is een lijst met mogelijkheden in de klassieke UI Page Editor (`/cf#`) heeft en de status in de aanraakbediening (`/editor.html`).
 
 | Functie | Status | Opmerking |
 |--- |--- |--- |
@@ -103,18 +102,18 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor (`/cf#`) heef
 | Pagina vergrendelen/ontgrendelen | Voltooid |  |
 | Pagina publiceren | Voltooid |  |
 | Publicatie van pagina ongedaan maken | Voltooid |  |
-| Pagina kopiëren | Verwijderd | Gebruik Sitebeheerder om pagina&#39;s [ te kopiëren.](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page) |
-| Pagina verplaatsen | Verwijderd | Gebruik Sitebeheerder om pagina&#39;s te verplaatsen[.](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) |
-| Pagina verwijderen | Verwijderd | Gebruik Sitebeheerder om pagina&#39;s [ te verwijderen.](/help/sites-authoring/managing-pages.md#deleting-a-page) |
-| Referenties tonen | Verwijderd | Gebruik Sitebeheerder om de [gedetailleerde referentielijst](/help/sites-authoring/author-environment-tools.md#references) weer te geven. |
-| Controlelogboek | Verwijderd | Gebruik Site Admin en [open activity rail](/help/sites-authoring/author-environment-tools.md#events-timeline). |
-| Versie maken | Verwijderd | Gebruik Sitebeheerder om nieuwe versies te maken[.](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) |
-| Versie herstellen | Verwijderd | Gebruik Sitebeheerder om versies [te herstellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| Starten wisselen | Verwijderd | Gebruik Sitebeheerder om [te schakelen tussen lanceringen](/help/sites-authoring/launches-promoting.md). |
-| Pagina vertalen | Verwijderd | Gebruik Sitebeheerder om pagina [toe te voegen aan vertaalprojecten](/help/sites-administering/tc-manage.md). |
+| Pagina kopiëren | Verwijderd | Sitebeheerder gebruiken voor [pagina&#39;s kopiëren](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
+| Pagina verplaatsen | Verwijderd | Sitebeheerder gebruiken voor [pagina&#39;s verplaatsen](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
+| Pagina verwijderen | Verwijderd | Sitebeheerder gebruiken voor [pagina&#39;s verwijderen](/help/sites-authoring/managing-pages.md#deleting-a-page). |
+| Referenties tonen | Verwijderd | Gebruik Sitebeheerder om de [gedetailleerde referentielijst](/help/sites-authoring/author-environment-tools.md#references). |
+| Controlelogboek | Verwijderd | Sitebeheer en [open-activiteitspoor](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| Versie maken | Verwijderd | Sitebeheerder gebruiken voor [nieuwe versies maken](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
+| Versie herstellen | Verwijderd | Sitebeheerder gebruiken voor [versies herstellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
+| Starten wisselen | Verwijderd | Sitebeheerder gebruiken voor [schakelaar tussen lanceringen](/help/sites-authoring/launches-promoting.md). |
+| Pagina vertalen | Verwijderd | Sitebeheerder gebruiken voor [pagina toevoegen aan vertaalprojecten](/help/sites-administering/tc-manage.md). |
 | Tijdlijn verdraaien (kies datum/tijd en blader de site zoals deze vervolgens werd weergegeven) | Voltooid |  |
 | Machtigingen instellen | Voltooid |  |
-| Interface voor clientcontext | Vervangen | Gebruik [ContextHub](/help/sites-authoring/ch-previewing.md) UI vooruitgaand. |
+| Interface voor clientcontext | Vervangen | Gebruik de [ContextHub](/help/sites-authoring/ch-previewing.md) UI gaat verder. |
 | Inhoudszoeker voor de verschillende mediatypen | Voltooid |  |
 | Componentlijst | Voltooid |  |
 | Componenten kopiëren en plakken | Voltooid |  |
@@ -151,7 +150,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
 | Tabeleditor | Voltooid | Geschikt op locatie, in dialoogvenster en op volledig scherm. |
 | Afbeelding naar tabelcel slepen | Voltooid | In regel bruikbaar |
 | Afbeeldingseditor | Voltooid | Geschikt op locatie, in dialoogvenster en op volledig scherm. |
-| IPE-plug-ins in-/uitschakelen | Voltooid | AEM 6.3 introduceerde een UI in [de Redacteur van het Malplaatje](/help/sites-authoring/templates.md). |
+| IPE-plug-ins in-/uitschakelen | Voltooid | AEM 6.3 introduceerde een interface in de [Sjablooneditor](/help/sites-authoring/templates.md). |
 | IPE-plug-in: Uitsnijden | Voltooid |  |
 | IPE-plug-in: Omdraaien | Voltooid |  |
 | IPE-plug-in: Ongedaan maken/Opnieuw | Voltooid |  |
@@ -167,13 +166,13 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
 |--- |--- |--- |
 | Taakbeheer | Vervangen | 6.0 introduceerde Projecten en taken. |
 | Workflow Inbox | Voltooid |  |
-| Workflow naar configuratie paginasjabloon (`/etc/workflow/wcm/templates.html`) | Ontbreekt | Klassieke UI gebruiken. |
+| Workflow naar paginasjabloonconfiguratie (`/etc/workflow/wcm/templates.html`) | Ontbreekt | Klassieke UI gebruiken. |
 | Tagbeheer-interface | Voltooid |  |
 | MSM/Blueprint Control Center | Voltooid |  |
 | Gebruikersinterface van Blauwdrukbeheer | Voltooid |  |
 | UI voor configuratie van uitrol | Ontbreekt | Klassieke UI gebruiken. |
 | Gebruikersinterface, groepen en machtigingen | Meestal voltooid | Gebruik voor geavanceerde bewerkingen met bevoegdheden de klassieke gebruikersinterface. |
-| Purgeerversies (`/etc/versioning/purge.html`) | Ontbreekt | Klassieke UI gebruiken. |
+| Purperen (`/etc/versioning/purge.html`) | Ontbreekt | Klassieke UI gebruiken. |
 | Controle van externe koppelingen (`/etc/linkchecker.html`) | Ontbreekt | Klassieke UI gebruiken. |
 | Bulkeditor (`/etc/importers/bulkeditor.html`) | Ontbreekt | Klassieke UI gebruiken. |
 | Miniaturen uploaden om deze toe te voegen of te overschrijven | Ontbreekt | Klassieke UI gebruiken. |

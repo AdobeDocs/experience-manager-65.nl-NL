@@ -1,8 +1,8 @@
 ---
 title: Compatibiliteitspakket
-seo-title: Compatibiliteitspakket
+seo-title: Compatibility Package
 description: Als u het compatibiliteitspakket op AEM Forms 6.5 installeert, kunt u de Correspondence Management-middelen van AEM Forms 6.4 en eerdere versies en afgekeurde adaptieve formuliersjablonen en pagina's gebruiken
-seo-description: Als u het compatibiliteitspakket op AEM Forms 6.4 installeert, kunt u de Correspondence Management-middelen van AEM Forms 6.4 en afgekeurde aangepaste formuliersjablonen en pagina's gebruiken
+seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,7 +14,7 @@ role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
@@ -23,31 +23,31 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Als u letters wilt blijven gebruiken in AEM Forms 6.5, moet u het nieuwste [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) installeren.
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.5 tot stand te brengen. Als u letters wilt blijven gebruiken in AEM Forms 6.5, moet u de nieuwste [AEMFD-compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-Met het pakket AEMFD-compatibiliteit kunt u ook [de volgende middelen van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5 gebruiken:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
+Met het pakket AEMFD-compatibiliteit kunt u ook [gebruik de volgende activa van AEM Forms 6.4, 6.3 en 6.2 op AEM Forms 6.5:](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
 * Documentfragmenten
 * Letters
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
-Zie [Elementen die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren](../../forms/using/compatibility-package.md#assetsmadecompatible) voor meer informatie.
+Zie voor meer informatie [Activa die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren](../../forms/using/compatibility-package.md#assetsmadecompatible).
 
 ## Voeg ondersteuning toe voor AEM Forms 6.4-, 6.3- en 6.2-middelen in AEM Forms 6.5 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.5:
 
-Zorg ervoor dat u [AEM compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf hebt geïnstalleerd.
+Zorg ervoor dat u [Compatibiliteitspakket AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd.
 
-1. Installeer het nieuwste 6.5 [compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. De nieuwste 6.5 installeren [Compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
-   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het uploaden en installeren van het pakket.
+   Voor meer informatie over het uploaden en installeren van het pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
 1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.5.
 
-   Zie [migratiehulpprogramma](../../forms/using/migration-utility.md) voor meer informatie.
+   Zie voor meer informatie [migratiehulpprogramma](../../forms/using/migration-utility.md).
 
 ## Activa die compatibel zijn gemaakt met AEM Forms 6.5 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
 

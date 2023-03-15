@@ -1,24 +1,23 @@
 ---
 title: Beveiligingsinstellingen opgeven
-seo-title: Beveiligingsinstellingen opgeven
+seo-title: Specifying security settings
 description: Leer hoe u beveiligingsinstellingen opgeeft.
-seo-description: Leer hoe u beveiligingsinstellingen opgeeft.
+seo-description: Learn how to specify security settings.
 uuid: 63ba7819-e4eb-4d28-8463-142ff4233a1e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 36a7e16f-d09d-4cc5-babd-1ccadba76e16
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 004b8a2f-66a0-43a4-be56-7e42b703ebb2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '70'
 ht-degree: 1%
 
 ---
 
-
-# Beveiligingsinstellingen {#specifying-security-settings} opgeven
+# Beveiligingsinstellingen opgeven {#specifying-security-settings}
 
 Met Forms kunt u bepalen of externe entiteiten in XML-invoer worden opgelost. Deze worden standaard opgelost, maar u kunt dit gedrag wijzigen om de beveiliging van uw AEM te verbeteren.
 
@@ -27,4 +26,3 @@ Met Forms kunt u bepalen of externe entiteiten in XML-invoer worden opgelost. De
 1. Klik in de beheerconsole op **[!UICONTROL Services > Forms]**.
 1. Schakel het selectievakje Externe entiteiten oplossen uit.
 1. Klik op **[!UICONTROL Save]**.
-

@@ -1,8 +1,8 @@
 ---
 title: Bijlagen inschakelen voor een HTML5-formulier
-seo-title: Bijlagen inschakelen voor een HTML5-formulier
+seo-title: Enabling attachments for an HTML5 form
 description: Standaard is de ondersteuning voor bijlagen voor HTML5-formulieren uitgeschakeld.
-seo-description: Standaard is de ondersteuning voor bijlagen voor HTML5-formulieren uitgeschakeld.
+seo-description: By default, the attachment support for HTML5 forms is disabled.
 uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,29 +12,29 @@ feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
 
 # Bijlagen inschakelen voor een HTML5-formulier {#enabling-attachments-for-an-html-form}
 
-U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
+U kunt bijlagen uploaden, een voorbeeld bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
 
-1. Creeer een [douaneprofiel](/help/forms/using/custom-profile.md) met een `mfAttachmentOptions` multiselect koordbezit. Elke tekenreeks in de eigenschap `mfAttachmentOptions` moet een `property=value`-indeling hebben om opties voor de bestandsbijlage-widget te configureren. De `property` en `value` kunnen om het even welke volgende waarden hebben:
+1. Een [aangepast profiel](/help/forms/using/custom-profile.md) met een `mfAttachmentOptions` multiselect, tekenreekseigenschap. Elke tekenreeks in de `mfAttachmentOptions` eigenschap moet een `property=value` indeling voor het configureren van opties voor de bestandsbijlage-widget. De `property` en `value` kan een van de volgende waarden hebben:
 
    | Eigenschap | Waarde |
    |--- |---|
    | multiSelect | true of false (standaard true) |
    | fileSizeLimit | Aantal in MBs (2 MBs door gebrek). Bijvoorbeeld 5. |
    | buttonText | Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard) |
-   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard) |
+   | accepteren | door komma&#39;s gescheiden lijst met bestandstypen die moeten worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, afbeelding/&amp;ast;, tekst/&amp;ast; standaard .pdf&quot;) |
 
    Bijvoorbeeld:
 
    ![configureren, opties](assets/mfAttachmentOptions.png)
 
-   Desgewenst kunt u ook meer aangepaste opties voor de eigenschap `mfAttachmentOptions` opgeven.
+   U kunt desgewenst ook meer aangepaste opties voor de `mfAttachmentOptions` eigenschap.
 
    >[!NOTE]
    >
@@ -45,9 +45,9 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
 
    >[!NOTE]
    >
-   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Zie [HTML5-formulieren opslaan als concept](/help/forms/using/saving-html5-form-draft.md) voor meer informatie over het profiel **Opslaan als concept**.
+   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Voor meer informatie over de **Opslaan als concept** profiel, zie [HTML5-formulieren opslaan als concept](/help/forms/using/saving-html5-form-draft.md).
 
-1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader naar de bijlage en selecteer deze en klik op **Bijvoegen**.
+1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader en selecteer de bijlage en klik op **Koppelen**.
 
    >[!NOTE]
    >
@@ -59,10 +59,10 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
 
 ## Indeling voor het verzenden van bijlagen {#attachment-submission-format}
 
-Als bijlagen zijn ingeschakeld, verzendt het HTML5-formulier meerdelige gegevens. De uit meerdere delen bestaande verzendingsgegevens bestaan uit twee delen **dataXml** en **bijlagen**.
+Als bijlagen zijn ingeschakeld, verzendt HTML5-formulier meerdelige gegevens. De uit meerdere delen bestaande indieningsgegevens bestaan uit twee delen **dataXml** en **bijlagen**.
 
 >[!NOTE]
 >
->Als de optie `mfAllowAttachments` voor achterwaartse compatibiliteit is uitgeschakeld, worden de meerdelige gegevens niet verzonden door de HTML5-formulieren. Het verzendt eenvoudige gegevens-xml in **application/xml** formaat.
+>Voor achterwaartse compatibiliteit, als `mfAllowAttachments` is uitgeschakeld, worden de meerdelige gegevens niet verzonden door de HTML5-formulieren. Het verzendt eenvoudige gegevens-xml in **application/xml** gebruiken.
 
-Als de markering mfAllowAttachments is ingeschakeld, plaatst de [service voor serviceproxy verzenden](/help/forms/using/service-proxy.md) ook meerdelige gegevens met dataXml en bijlagen.
+Als de markering mfAllowAttachments is ingeschakeld, [service-proxy verzenden](/help/forms/using/service-proxy.md) Hiermee worden ook meerdelige gegevens gepost met dataXml en bijlagen.

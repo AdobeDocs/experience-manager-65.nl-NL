@@ -1,28 +1,27 @@
 ---
 title: Aanmelden bij AEM Forms-workflows
-seo-title: Aanmelden bij AEM Forms-workflows
+seo-title: Logging in AEM Forms workflows
 description: Gebruik logboeken om fouten in de AEM Forms-workflow op te sporen.
-seo-description: Gebruik logboeken om fouten in de AEM Forms-workflow op te sporen.
+seo-description: Use logs to debug AEM Forms workflow issues.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '269'
 ht-degree: 6%
 
 ---
-
 
 # Aanmelden bij AEM Forms-workflows{#logging-in-aem-forms-workflows}
 
 Workflowstappen van Forms bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
 
-Standaard zijn alle logboekgegevens beschikbaar in het bestand **error.log** in de map */crx-repository/logs/*.
+Standaard zijn alle logboekgegevens beschikbaar in de **error.log** bestand op */crx-repository/logs/* directory.
 
 De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
@@ -87,12 +86,11 @@ Voer de volgende stappen uit om het registreren van fouten voor AEM Forms-workfl
 
 1. Selecteer **[!UICONTROL Sling]** > **[!UICONTROL Log Support]**.
 1. Tik op **[!UICONTROL Add new Logger.]**
-1. Selecteer **[!UICONTROL Debug]** als **[!UICONTROL Log Level]**.
+1. Selecteren **[!UICONTROL Debug]** als de **[!UICONTROL Log Level]**.
 1. Geef de locatie van het logbestand op. De standaardlocatie voor het logbestand is: *logs\error.log*
-1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de kolom **[!UICONTROL Logger]**.
+1. Geef de naam van het pakket op als **com.adobe.granite.workflow.core** in de **[!UICONTROL Logger]** kolom.
 
-   Als u deze stappen uitvoert, kunnen de logbestanden voor foutopsporing worden opgeslagen voor het pakket **com.adobe.granite.workflow.core**. Tik **[!UICONTROL +]** en voeg de volgende pakketnamen toe aan de lijst:
+   Als u deze stappen uitvoert, worden de logbestanden voor foutopsporing opgeslagen voor de **com.adobe.granite.workflow.core** pakket. Tikken **[!UICONTROL +]** en voeg de volgende pakketnamen aan de lijst toe:
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace
-

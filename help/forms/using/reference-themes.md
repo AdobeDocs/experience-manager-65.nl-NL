@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Referentiethema&#39;s{#reference-themes}
 
-[Met ](../../forms/using/themes.md) thema&#39;s kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema kunt u de volgende thema&#39;s ophalen door het [AEM Forms-invoegpakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) te installeren:
+[Thema&#39;s](../../forms/using/themes.md) Hiermee kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema kunt u de volgende thema&#39;s ophalen door het [AEM Forms-invoegtoepassing](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en):
 
 * Beryl
 * Exec
@@ -35,7 +35,7 @@ Elk thema bevat een unieke en elegante stijl waarmee u aanpasbare formulieren vo
 
 De thema&#39;s in dit pakket reageren snel en de stijl in deze thema&#39;s is gedefinieerd voor mobiele schermen en desktopschermen. De meeste moderne browsers op verschillende apparaten kunnen formulieren die met een van deze thema&#39;s zijn toegepast, zonder problemen weergeven.
 
-Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het installeren van het pakket.
+Voor meer informatie over het installeren van het pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
 
 ## Beryl {#beryl}
 

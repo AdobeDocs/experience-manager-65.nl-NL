@@ -1,8 +1,8 @@
 ---
 title: Fouten opsporen in HTML5-formulieren
-seo-title: Fouten opsporen in HTML5-formulieren
+seo-title: Debugging HTML5 forms
 description: In het document staan stappen voor het oplossen van verschillende bekende problemen.
-seo-description: In het document staan stappen voor het oplossen van verschillende bekende problemen.
+seo-description: The document list steps to troubleshoot various known issues.
 uuid: df1835aa-6033-4ecb-97c8-4c3b7b96b943
 contentOwner: robhagat
 content-type: reference
@@ -10,20 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '818'
 ht-degree: 1%
 
 ---
 
-
 # Fouten opsporen in HTML5-formulieren {#debugging-html-forms}
 
-Dit document bevat verschillende scenario&#39;s voor probleemoplossing. Voor elk scenario, worden sommige stappen verstrekt om het probleem problemen op te lossen. Volg deze stappen en, als het probleem voortduurt, vorm Logger om logboeken voor fouten/waarschuwingen te krijgen en te herzien. Zie [Logboeken genereren voor HTML5-formulieren](/help/forms/using/enable-logs.md) voor meer informatie over het loggen van HTML5-formulieren.
+Dit document bevat verschillende scenario&#39;s voor probleemoplossing. Voor elk scenario, worden sommige stappen verstrekt om het probleem problemen op te lossen. Volg deze stappen en, als het probleem voortduurt, vorm Logger om logboeken voor fouten/waarschuwingen te krijgen en te herzien. Voor meer informatie over het registreren van HTML5 formulieren, zie [Logbestanden genereren voor HTML5-formulieren](/help/forms/using/enable-logs.md).
 
-## Probleem: Bij het weergeven van het formulier zie ik de pagina {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page} met uitzonderingen org.apache.sling.api.SlingException
+## Probleem: Bij het weergeven van het formulier zie ik de pagina met uitzonderingen org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
 In de uitzonderingsdetails, onderzoek naar woord **veroorzaakt door**.
 
@@ -58,13 +57,13 @@ Controleer de volgende parameters:
 
 ## Probleem: Kan een formulier niet genereren (er wordt een foutbericht weergegeven) {#problem-unable-to-render-form}
 
-1. Controleer of de opgegeven parameters correct zijn. Zie [Parameters renderen](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page) voor gedetailleerde informatie over parameters.
+1. Controleer of de opgegeven parameters correct zijn. Zie voor gedetailleerde informatie over parameters [Renderparameters](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page).
 1. Meld u aan bij CRX Package Manager (op https://&lt;server>:&lt;port>/crx/packmgr/index.jsp) en controleer of de volgende pakketten correct zijn geïnstalleerd:
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
 
-1. Meld u aan bij de CQ-webconsole (Felix Console) op https://&lt;server>:&lt;port>/system/console/bundles.
+1. Meld u aan bij de CQ-webconsole (Felix Console) op https://&lt;server>:&lt;port>/systeem/console/bundels.
 
    Zorg ervoor dat de status van de volgende bundels &quot;actief&quot; is:
 
@@ -80,9 +79,9 @@ Controleer de volgende parameters:
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
-## Probleem: Formulierrenderingen zonder stijlen {#problem-form-renders-without-styles}
+## Probleem: Formulierweergaven zonder stijlen {#problem-form-renders-without-styles}
 
-1. Open **Developer Tools** in uw browser. Controleer of profile.css beschikbaar is.
+1. In uw browser, open **Gereedschappen voor ontwikkelaars**. Controleer of profile.css beschikbaar is.
 1. Als het bestand profile.css niet beschikbaar is, meldt u zich aan bij CRX DE op https://&lt;server>:&lt;port>/crx/de.
 1. Navigeer in de mappenhiërarchie links naar /etc/clientlibs/fd/xfaforms/. Open css.txt- dossiers die in de omslagen worden vermeld.
 
@@ -103,29 +102,29 @@ Controleer de volgende parameters:
    listboxwidget.css
    ```
 
-1. Als de vermelde bestanden niet beschikbaar zijn, installeert u het pakket adobe-lc-forms-runtime-pkg-&lt;version>.zip opnieuw.
+1. Als de vermelde bestanden niet beschikbaar zijn, installeert u de adobe-lc-forms-runtime-pkg-&lt;version>.zip package again.
 
 ### Probleem: Onverwachte fout aangetroffen {#problem-unexpected-error-encountered}
 
-1. Voeg in de formulier-URL een queryparameter debugClientLibs toe en stel de waarde ervan in op true (bijvoorbeeld: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;name of xdp file>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Voeg in de formulier-URL een queryparameter debugClientLibs toe en stel de waarde ervan in op true (bijvoorbeeld: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
 1. Ga in de desktopbrowser, zoals chroom, naar Developer Tools -> Console.
-1. Open de logboeken om het type van fout te identificeren. Zie [logs voor HTML5-formulieren](/help/forms/using/enable-logs.md) voor gedetailleerde informatie over logboeken.
+1. Open de logboeken om het type van fout te identificeren. Voor gedetailleerde informatie over logboeken raadpleegt u [logboeken voor HTML5-formulieren](/help/forms/using/enable-logs.md).
 1. Ga naar Developer Tools -> Console. Gebruik stacktracering om de code te zoeken die de fout veroorzaakt. Foutopsporing de fout om het probleem op te lossen.
 
    >[!NOTE]
    >
-   >Als er een scriptfout optreedt, controleert u of hetzelfde probleem optreedt tijdens de PDF-uitvoering van het formulier. Zo ja, dan is er een probleem in de logica van het formulierscript.
+   >Als het script is mislukt, controleert u of hetzelfde probleem optreedt tijdens de uitvoering van de PDF van het formulier. Zo ja, dan is er een probleem in de logica van het formulierscript.
 
-## Probleem: Kan het formulier {#problem-unable-to-submit-the-form} niet verzenden
+## Probleem: Kan het formulier niet verzenden {#problem-unable-to-submit-the-form}
 
 1. Zorg ervoor dat u toegangsrechten hebt tot de AEM server en dat u verbinding hebt met de server.
 1. Controleer of de parameter submitUrl correct is.
-1. Schakel de logbestanden aan de clientzijde in zoals vermeld in [Logs voor de HTML5-formulieren](/help/forms/using/enable-logs.md) met de optie Foutopsporing als **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
-1. Zoek de serverlogboeken zoals vermeld in [Logs voor de HTML5-formulieren](/help/forms/using/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
+1. Logbestanden aan de clientzijde inschakelen, zoals vermeld in [Logboeken voor de HTML5-formulieren](/help/forms/using/enable-logs.md) de optie Foutopsporing gebruiken als **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
+1. Zoek de serverlogboeken zoals vermeld op [Logboeken voor de HTML5-formulieren](/help/forms/using/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
 
-## Probleem: Lokale foutberichten worden niet weergegeven {#problem-localized-error-messages-do-not-display}
+## Probleem: Gelokaliseerde foutberichten worden niet weergegeven {#problem-localized-error-messages-do-not-display}
 
-1. Het formulier weergeven met extra queryparameter **debugClientLibs=true** in de desktopbrowser en vervolgens naar Developer Tools -> Resources gaan en het bestand I18N.css controleren.
+1. Het formulier weergeven met een aanvullende queryparameter **debugClientLibs=true** in de desktopbrowser en ga vervolgens naar Developer Tools -> Resources en controleer het bestand I18N.css.
 1. Als het bestand niet beschikbaar is, meldt u zich aan bij CRX DE op https://&lt;server>:&lt;port>/crx/de.
 1. Navigeer in de mappenhiërarchie links naar /libs/fd/xfaforms/clientlibs/I18N en zorg ervoor dat de volgende bestanden en mappen bestaan:
 
@@ -133,7 +132,7 @@ Controleer de volgende parameters:
    * LogMessages.js
    * Mappen voor talen
 
-1. Als een van de bovenstaande bestanden of mappen niet bestaat, installeert u het pakket **adobe-lc-forms-runtime-pkg-&lt;version>.zip** opnieuw.
+1. Als een van de bovenstaande bestanden of mappen niet bestaat, installeert u de **adobe-lc-forms-runtime-pkg-&lt;version>.zip** opnieuw verpakken.
 1. Navigeer naar de map met dezelfde naam als de naam van de landinstelling en controleer de inhoud ervan. De map moet de volgende bestanden bevatten:
 
    * I18N.js
@@ -147,7 +146,7 @@ Controleer de volgende parameters:
    ../LogMessages.js
    ```
 
-## Probleem: Afbeelding {#problem-image-not-showing-up} wordt niet weergegeven
+## Probleem: Afbeelding niet zichtbaar {#problem-image-not-showing-up}
 
 1. Controleer of de URL van de afbeelding juist is.
 1. Controleer of uw browser dit type afbeelding ondersteunt.
@@ -155,8 +154,7 @@ Controleer de volgende parameters:
 
    De waarschijnlijke reden is dat een of meer parameters in de URL onjuist zijn.
 
-   Controleer de volgende parameters:
-Staptekst
+   Controleer de volgende parameters: Staptekst
 
 <table>
  <tbody>
@@ -185,4 +183,4 @@ Staptekst
 
 1. Ga in de desktopbrowser naar Developer Tools -> Resources.
 
-   Schakel links in Frames in als die afbeelding wordt weergegeven.
+   Schakel de linkerzijde in Frames in als die afbeelding wordt weergegeven.

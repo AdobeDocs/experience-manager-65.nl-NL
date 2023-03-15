@@ -1,8 +1,8 @@
 ---
 title: Verharden en beveiligen van AEM formulieren op OSGi-omgeving
-seo-title: Verharden en beveiligen van AEM formulieren op OSGi-omgeving
+seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Leer aanbevelingen en beste praktijken voor het beveiligen van AEM Forms op server OSGi.
-seo-description: Leer aanbevelingen en beste praktijken voor het beveiligen van AEM Forms op server OSGi.
+seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
@@ -10,7 +10,7 @@ role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1443'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Een organisatie kan een externe firewall hebben om toegang tussen een eindgebrui
 
 #### Externe firewall configureren  {#configure-external-firewall}
 
-U kunt een externe firewall zo configureren dat bepaalde AEM Forms-URL&#39;s toegang hebben tot internet. U hebt toegang tot deze URL&#39;s nodig als u een adaptief formulier, HTML5, letter voor correspondentiebeheer of als u zich wilt aanmelden bij een AEM Forms-server:
+U kunt een externe firewall zo configureren dat bepaalde AEM Forms-URL&#39;s toegang hebben tot internet. U hebt toegang tot deze URL&#39;s nodig om een adaptief formulier, HTML5, een brief voor correspondentiebeheer of een aanmelding bij een AEM Forms-server in te vullen of te verzenden:
 
 <table> 
  <tbody>
@@ -123,7 +123,7 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
 
 #### Machtigingen van de bewaarplaats van de opstelling en toegangsbeheerlijsten (ACLs) {#setup-repository-permissions-and-access-control-lists-acls}
 
-Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de elementen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
+Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de middelen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
 
 * /content/&amp;ast;
 * /etc.clientlibs/fd/&amp;ast;
@@ -145,16 +145,16 @@ Standaard slaat de verzendactie van een portal Formulieren met aangepaste formul
 
 U kunt de opslagdienst vormen om over-de-draad naar de verwerkingscluster te verzenden zonder om het even wat plaatselijk op te slaan publiceer knoop. De verwerkingscluster bevindt zich in een veilige zone achter de privéfirewall en de gegevens blijven veilig.
 
-Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Het wordt aanbevolen referenties te gebruiken van een niet-administratieve gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie [Opslagservices configureren voor concepten en verzendingen](/help/forms/using/configuring-draft-submission-storage.md) voor meer informatie.
+Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Het wordt aanbevolen referenties te gebruiken van een niet-administratieve gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie voor meer informatie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Beveiligde gegevens die worden verwerkt door FDM (Form Data Model) {#secure-data-handled-by-form-data-model-fdm}
 
 Gebruik gebruikersaccounts met minimaal vereiste rechten om gegevensbronnen voor het formuliergegevensmodel (FDM) te configureren. Het gebruik van een beheeraccount kan onbevoegde gebruikers toegang bieden tot metagegevens en schema-entiteiten.\
 De integratie van gegevens verstrekt ook methodes om FDM de dienstverzoeken toe te laten. U kunt machtigingsmechanismen vóór en na uitvoering invoegen om een aanvraag te valideren. De serviceaanvragen worden gegenereerd tijdens het vooraf invullen van een formulier, het verzenden van een formulier en het aanroepen van services via een regel.
 
-**Voorafgaande verificatie:** u kunt de pre-procesautorisatie gebruiken om de authenticiteit van een aanvraag te valideren voordat u deze uitvoert. U kunt input, de dienst en verzoekdetails gebruiken om uitvoering van het verzoek toe te staan of tegen te houden. U kunt een uitzondering OPERATION_ACCESS_DENIED van de gegevensintegratie terugkeren als de uitvoering wordt tegengehouden. U kunt ook de clientaanvraag wijzigen voordat u deze ter uitvoering verzendt. U kunt bijvoorbeeld de invoer wijzigen en aanvullende informatie toevoegen.
+**Voorafgaande goedkeuring:** U kunt de pre-procesvergunning gebruiken om authentificatie van een verzoek te bevestigen alvorens het uit te voeren. U kunt input, de dienst en verzoekdetails gebruiken om uitvoering van het verzoek toe te staan of tegen te houden. U kunt een uitzondering OPERATION_ACCESS_DENIED van de gegevensintegratie terugkeren als de uitvoering wordt tegengehouden. U kunt ook de clientaanvraag wijzigen voordat u deze ter uitvoering verzendt. U kunt bijvoorbeeld de invoer wijzigen en aanvullende informatie toevoegen.
 
-**Nabewerkingsautorisatie:** u kunt de postprocesautorisatie gebruiken om de resultaten te valideren en te beheren voordat u de resultaten terugstuurt naar de aanvrager. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
+**Autorisatie na verwerking:** U kunt de postprocesvergunning gebruiken om de resultaten te bevestigen en te controleren alvorens de resultaten aan aanvrager terug te keren. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
 
 ### Gebruikerstoegang beperken {#limit-user-access}
 
@@ -198,4 +198,4 @@ Een verwerkingscluster wordt uitgevoerd in de auteursmodus, maar gebruikt deze n
 
 ### Gebruik AEM beste praktijken om een milieu van AEM Forms te beveiligen {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Zie [AEM Beveiligingschecklist](/help/sites-administering/security-checklist.md) documentatie voor gedetailleerde instructies.
+Dit document bevat specifieke instructies voor de AEM Forms-omgeving. U zou moeten nemen om ervoor te zorgen dat uw onderliggende AEM installatie wanneer opgesteld veilig is. Zie voor gedetailleerde instructies [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md) documentatie.

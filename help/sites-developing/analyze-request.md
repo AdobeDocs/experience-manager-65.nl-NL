@@ -1,44 +1,43 @@
 ---
 title: Analyse aanvragen
-seo-title: Analyse aanvragen
+seo-title: Request Analysis Script
 description: Het manuscript van de verzoekanalyse wordt gemaakt om de analyse van de access.log dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren
-seo-description: Het manuscript van de verzoekanalyse wordt gemaakt om de analyse van de access.log dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren
+seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '171'
 ht-degree: 1%
 
 ---
 
+# Analyse aanvragen{#request-analysis-script}
 
-# Analyse-script aanvragen{#request-analysis-script}
+## Downloaden {#download}
 
-## {#download} downloaden
-
-Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
+Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 [Bestand ophalen](assets/analyse-access.sh)
 
 ## Beschrijving {#description}
 
-Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
+Dit script is gemaakt om de analyse van de `access.log` bestanden die een leesbaar rapport produceren voor latere verwerking.
 
 Het produceert het algemene verzoekaantal, GET versus POST, Verzoek verdeling over tijd en meer.
 
-De uitvoer wordt uitgevoerd in de syntaxis Markdown. Het is daarom gemakkelijker om de uitvoer te converteren naar PDF met gereedschappen zoals een pandoc-bestand of de uitvoer weer te geven in een browser met plug-ins zoals een Markeringen-viewer.
+De uitvoer wordt uitgedrukt in de syntaxis Markdown. Het is daarom gemakkelijker om de uitvoer om te zetten in PDF met gereedschappen zoals een pandoc of om de uitvoer weer te geven in een browser met plug-ins zoals een Markdown-viewer.
 
 Een aangepast pad op de opdrachtregel kan worden geanalyseerd.
 
 Maak kennis met de opmerking in het bestand die u vertelt hoe u de opmerking moet uitvoeren:
 
-Analyseer CQ `access.log` het extrapoleren van diverse informatie en het veroorzaken van een output van de Prijsverlaging op `stdout`.
+CQ analyseren `access.log` het extrapoleren van diverse informatie en het produceren van een output van de Prijsverlaging op `stdout`.
 
 ## Gebruik {#usage}
 

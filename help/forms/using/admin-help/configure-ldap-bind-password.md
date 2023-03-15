@@ -1,30 +1,29 @@
 ---
 title: Het wachtwoord voor LDAP-binding configureren
-seo-title: Het wachtwoord voor LDAP-binding configureren
+seo-title: Configure the LDAP bind password
 description: Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert.
-seo-description: Leer hoe te om het bind wachtwoordgebied te vormen alvorens u het configuratiedossier in een ander systeem invoert.
+seo-description: Learn how to configure the bind password field before you import the configuration file into another system.
 uuid: 1ab1907c-8b55-4b6f-bd5b-49f22d78b8a8
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
-translation-type: tm+mt
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
+exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 3%
+source-wordcount: '183'
+ht-degree: 4%
 
 ---
 
-
-# Vorm LDAP bindt wachtwoord{#configure-the-ldap-bind-password}
+# Het wachtwoord voor LDAP-binding configureren{#configure-the-ldap-bind-password}
 
 Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het uitgevoerde configuratiedossier (config.xml) niet wordt gevormd. Alvorens u het configuratiedossier in een ander systeem invoert, zorg ervoor dat u dit wachtwoord vormt. Dit wachtwoord negeert een bestaand wachtwoord dat in het gegevensbestand wordt opgeslagen. Een null-wachtwoord negeert een bestaande wachtwoordwaarde die niet gelijk is aan null.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
-1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig`. Hier volgt een voorbeeld:
+1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` knooppunt. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -39,7 +38,7 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
    Typ een waarde voor `bindpassword` en sla uw wijzigingen op.
 
-1. Zoek in het bestand het knooppunt `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`. Hier volgt een voorbeeld:
+1. Zoek in het bestand de locatie `Domains` > *[Uw domeinnaam]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` knooppunt. Hier volgt een voorbeeld:
 
    ```xml
     <node name="LDAPUserConfig">
@@ -56,4 +55,3 @@ Om veiligheidsrisico&#39;s te vermijden, bindt het bind wachtwoordgebied in het 
 
 1. Als u het bijgewerkte bestand wilt importeren, klikt u in Gebruikersbeheer op Configuratie > Configuratiebestanden importeren en exporteren.
 1. Klik op Bladeren om het bestand te zoeken, klik op Importeren en klik vervolgens op OK.
-

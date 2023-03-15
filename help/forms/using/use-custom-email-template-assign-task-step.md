@@ -1,22 +1,21 @@
 ---
 title: Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen
-seo-title: Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen
-description: 'Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom '
-seo-description: 'Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom '
+seo-title: Use custom email templates in an Assign Task step
+description: Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom
+seo-description: Custom email templates for forms workflow email notifications
 uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 76908a565bf9e6916db39d7db23c04d2d40b3247
+exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
 
-
-# Aangepaste e-mailsjablonen gebruiken in een stap Taak toewijzen{#use-custom-email-templates-in-an-assign-task-step}
+# Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen{#use-custom-email-templates-in-an-assign-task-step}
 
 Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of groep. Wanneer een taak aan een gebruiker of een groep wordt toegewezen, wordt een e-mailbericht verzonden naar de bepaalde gebruiker of naar elk lid van de bepaalde groep. Een typisch e-mailbericht bevat een koppeling naar de toegewezen taak en informatie met betrekking tot de taak. In de volgende afbeelding wordt een voorbeeld-e-mailmelding weergegeven:
 
@@ -30,7 +29,7 @@ In de volgende afbeelding wordt een aangepast e-mailbericht weergegeven:
 
 ![E-mailmelding met aangepaste sjabloon](do-not-localize/customized-email.png)
 
-## De bestaande sjabloon {#customize-the-existing-template} aanpassen
+## De bestaande sjabloon aanpassen {#customize-the-existing-template}
 
 AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt de sjabloon aanpassen om de weergave te wijzigen. Voer de volgende stappen uit om de sjabloon aan te passen:
 
@@ -62,16 +61,16 @@ AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een
 
 1. Sla het bestand op. Het malplaatje is klaar voor gebruik in de stap van de Taak toewijzen.
 
-## Een e-mailsjabloon gebruiken in een taakstap toewijzen {#use-an-email-template-in-an-assign-task-step}
+## Een e-mailsjabloon gebruiken in een stap Taak toewijzen {#use-an-email-template-in-an-assign-task-step}
 
 Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaatje, htmlEmailTemplate.txt te gebruiken. U kunt een aangepaste sjabloon gebruiken. De sjabloon wijzigen:
 
 1. Open de stap Taak toewijzen.
 
-1. Navigeer naar Toegewezen > HTML-e-mailsjabloon.
+1. Navigeer naar Toegewezen > E-mailsjabloon HTML.
 
-1. Selecteer de nieuwe HTML-e-mailsjabloon.
+1. Selecteer de nieuwe HTML E-mailsjabloon.
 
 1. Klik op OK. De sjabloon is gewijzigd.
 
-Een e-mailmelding gebruikt ook [metadata](../../forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt het malplaatje ook vormen om [douanemetagegevens](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) te gebruiken.
+Een e-mailmelding gebruikt ook [metagegevens](../../forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt de sjabloon ook configureren voor gebruik [aangepaste metagegevens](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

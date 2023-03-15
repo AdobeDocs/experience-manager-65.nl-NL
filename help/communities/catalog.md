@@ -1,33 +1,32 @@
 ---
 title: Catalogusonderdeel
-seo-title: Catalogusonderdeel
+seo-title: Catalog Feature
 description: De toewijzingen van Enablement en de componenten van de Catalogus van Enablement zijn componenten van een enablement gemeenschap
-seo-description: De toewijzingen van Enablement en de componenten van de Catalogus van Enablement zijn componenten van een enablement gemeenschap
+seo-description: The Enablement Assignments and Enablement Catalog components are components of an enablement community
 uuid: ee9fd9f6-9f8e-4d8a-b4c1-73f466dd52e2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
-translation-type: tm+mt
-source-git-commit: 82affd528f2526384b319fe89082e0f574ab5855
+exl-id: 88356736-47c5-4878-a083-fdb526299d1e
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
-
 # Catalogusonderdeel {#catalog-feature}
 
-De [`Enablement Assignments`](assignments.md) en `Enablement Catalog` componenten die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van [enablement community](overview.md#enablement-community).
+De [`Enablement Assignments`](assignments.md) en `Enablement Catalog` componenten die in de groep Communities in de componentenbrowser worden gevonden, zijn componenten van een [enablement community](overview.md#enablement-community).
 
-Met de component `Enablement Catalog` hebben leden van de gemeenschap toegang tot een catalogus met [enablement resources](resources.md). Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de lijst met machtigingsbronnen in een catalogus (zie [Tags toewijzen van bronnen van Enablement](tag-resources.md)).
+De `Enablement Catalog` de component staat communautaire leden toe om tot een catalogus van [middelen](resources.md). Het gebruik van AEM-tags is een belangrijk onderdeel van het beheer van de lijst met activeringsbronnen in een catalogus (zie [Tags toewijzen](tag-resources.md)).
 
-Van [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in [Ervaar de Gepubliceerde Plaats](enablement-published-site.md) sectie.
+Van de [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md) zelfstudie, zie de mening van een lid van toewijzingen en catalogi in [Ervaar de gepubliceerde site](enablement-published-site.md) sectie.
 
 ## Aanvullende informatie {#additional-information}
 
-Meer informatie vindt u op de pagina [Catalog Essentials](catalog-developer-essentials.md) voor ontwikkelaars.
+Meer informatie is te vinden op de [Essentiële elementen van catalogus](catalog-developer-essentials.md) pagina voor ontwikkelaars.
 
-De [catalogusfunctie](functions.md#catalog-function) is beschikbaar wanneer het creëren van een [communautaire plaats](sites-console.md).
+De [catalogusfunctie](functions.md#catalog-function) is beschikbaar wanneer u een [community-site](sites-console.md).

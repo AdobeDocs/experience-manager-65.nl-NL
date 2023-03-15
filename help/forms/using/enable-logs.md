@@ -1,8 +1,8 @@
 ---
-title: Logbestand voor HTML5-formulieren inschakelen
-seo-title: Logbestand voor HTML5-formulieren inschakelen
+title: Logboek inschakelen voor HTML5-formulieren
+seo-title: Enable logging for HTML5 forms
 description: Met het hulpprogramma Logger kunt u zich aanmelden voor een formulier en kunt u fouten in formuliergerelateerde problemen opsporen.
-seo-description: Met het hulpprogramma Logger kunt u zich aanmelden voor een formulier en kunt u fouten in formuliergerelateerde problemen opsporen.
+seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
 uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
@@ -14,43 +14,43 @@ feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '626'
 ht-degree: 4%
 
 ---
 
-# Logbestand inschakelen voor HTML5-formulieren{#enable-logging-for-html-forms}
+# Logboek inschakelen voor HTML5-formulieren{#enable-logging-for-html-forms}
 
-U kunt het hulpprogramma Logger configureren om logboeken te maken voor HTML5-formulieren. Het loggerhulpprogramma heeft verschillende niveaus en u kunt een niveau instellen op basis van uw vereisten. HTML5-formulieren bevatten server- en clientcomponenten. U kunt logboeken voor beide componenten vormen.
+U kunt het hulpprogramma Logger configureren om logbestanden voor HTML5-formulieren te maken. Het loggerhulpprogramma heeft verschillende niveaus en u kunt een niveau instellen op basis van uw vereisten. HTML5-formulieren hebben server- en clientcomponenten. U kunt logboeken voor beide componenten vormen.
 
 ## Logboekregistratie op de server configureren {#configuring-server-side-logging}
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de *Apace Sling Logger configuration* optie. Er wordt een dialoogvenster weergegeven:
+1. Ga naar `https://'[server]:[port]'/system/console/configMgr`. Zoek en open de *Configuratie van logboek van Apace Sling-logboekregistratie* optie. Er wordt een dialoogvenster weergegeven:
 
    ![ Het dialoogvenster voor het instellen van de optie Apace Sling-logboekregistratie](assets/logconfig.png)
 
    Configuratieoptie Apace Sling-logboekregistratie
 
-1. Wijzig **Logniveau** in **Foutopsporing**.
+1. Wijzig de **Logboekniveau** tot **Foutopsporing**.
 
-1. Geef de naam en het pad op van het **logbestand**.
+1. Geef een naam en pad op voor de **Logbestand**.
 
    >[!NOTE]
    >
    >Als u logbestanden wilt genereren in de logmap met HTML5-formulieren, voegt u ../logs/ toe vóór de bestandsnaam.
 
-1. Wijzig **Logger** in **HTMLFormsPerfLogger**. Klik **Opslaan**.
+1. Wijzigen **Aanmelder** tot **HTMLFormsPerfLogger**. Klikken **Opslaan**.
 
-## Logboekregistratie van client configureren {#configuring-client-logging}
+## Logboekregistratie van clients configureren {#configuring-client-logging}
 
 U kunt de volgende methoden gebruiken om aanmelding op de client in HTML5-formulieren in te schakelen:
 
-* Het gebruiken van de verzoekparameter genoemd `log`
+* De genoemde parameter request gebruiken `log`
 * CQ-configuratiebeheer gebruiken
 
-### Het registreren toelaten gebruikend verzoekparameter {#enabling-logging-using-request-parameter}
+### Registreren met behulp van aanvraagparameter inschakelen {#enabling-logging-using-request-parameter}
 
 Met deze methode kunt u logboeken voor een bepaalde aanvraag genereren. De naam van de parameter request is `log`. Het logbestand-URL ziet er als volgt uit:
 
@@ -68,11 +68,11 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>1</td>
-   <td>De logboeken worden gericht aan browser <strong>Console</strong></td>
+   <td>Logbestanden worden naar de browser geleid <strong>Console</strong></td>
   </tr>
   <tr>
    <td>2</td>
-   <td>Logbestanden worden verzameld in een JavaScript-object op de client en kunnen worden gepost op <strong>Server</strong> </td>
+   <td>Logbestanden worden verzameld in een JavaScript-object op de client en kunnen worden geplaatst op <strong>Server</strong> </td>
   </tr>
   <tr>
    <td>3</td>
@@ -91,11 +91,11 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>0</td>
-   <td>OFF<br type="_moz" /> </td>
+   <td>UIT<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>1</td>
-   <td>FATAL<br type="_moz" /> </td>
+   <td>FATAAL<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>2</td>
@@ -103,7 +103,7 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>3</td>
-   <td>WARN<br type="_moz" /> </td>
+   <td>WAARSCHUWING<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>4</td>
@@ -119,12 +119,12 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>7</td>
-   <td>ALL<br type="_moz" /> </td>
+   <td>ALLES<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Logboekcategorieën {#logger-categories}
+#### Gebruikerscategorieën {#logger-categories}
 
 <table>
  <tbody>
@@ -138,16 +138,16 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
   </tr>
   <tr>
    <td>b</td>
-   <td>xfaView (logbestanden met betrekking tot de engine voor lay-out)<br type="_moz" /> </td>
+   <td>xfaView (logbestanden met betrekking tot de layout-engine)<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>c</td>
-   <td>xfaPerf (prestatiegerelateerde logboeken)<br type="_moz" /> </td>
+   <td>xfaPerf (prestatiegerelateerde logs)<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Logconfiguratie {#log-configuration}
+#### Logboekconfiguratie {#log-configuration}
 
 In het logboek URL, wordt de parameter van het de vraagkoord van de logboekconfiguratie als volgt bepaald:
 
@@ -179,33 +179,33 @@ Bijvoorbeeld:
 
 Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt, worden de logboeken geproduceerd voor elk teruggeven verzoek tot het registreren opnieuw onbruikbaar wordt gemaakt.
 
-1. Meld u aan bij CQ Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` en meld u aan met beheerdersreferenties.
-1. Zoek naar en klik **Mobiele Configuraties van Forms**.
-1. Voer in het tekstvak Opties voor foutopsporing de logconfiguraties in zoals in de vorige sectie, bijvoorbeeld **2-a4-b5-c6**
+1. Meld u aan bij CQ Configuration Manager op `https://'[server]:[port]'/system/console/configMgr` en aanmelden met beheerdersreferenties.
+1. Zoeken naar en klikken **Mobiele Forms-configuraties**.
+1. Voer in het tekstvak Opties voor foutopsporing de logboekconfiguraties in zoals bijvoorbeeld in de vorige sectie wordt beschreven. **2-a4-b5-c6**
 
    ![Forms-configuratie](assets/forms_configuration.png)
 
    Forms-configuratie
 
-## Logbestanden {#uploading-logs} uploaden
+## Logbestanden uploaden {#uploading-logs}
 
-Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client en als het formulier wordt weergegeven met het standaardprofiel, wordt de knop **Logs verzenden** links van de knop **Bestaande velden markeren** op de werkbalk weergegeven. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
+Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client en als het formulier wordt weergegeven met het standaardprofiel, wordt een **Logbestanden verzenden** wordt links van **Bestaande velden markeren** op de werkbalk. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
 
 Standaard wordt alle informatie toegevoegd aan het bestand error.log in de map /crx-repository/logs/.
 
 De locatie en naam van het logbestand wijzigen:
 
-1. Meld u aan bij Configuratiebeheer als beheerder. De standaard URL van de Manager van de Configuratie is `https://'[server]:[port]'/system/console/configMgr`.
-1. Klik **Configuratie van Apache Sling Logging Logger**. Er wordt een dialoogvenster weergegeven.
+1. Meld u aan bij Configuratiebeheer als beheerder. De standaard-URL van Configuration Manager is `https://'[server]:[port]'/system/console/configMgr`.
+1. Klikken **Logboekconfiguratie Apache Sling Logging**. Er wordt een dialoogvenster weergegeven.
 
    ![logconfig-1](assets/logconfig-1.png)
 
-1. Wijzig **Logniveau** in Foutopsporing.
+1. Wijzig de **Logboekniveau** op Foutopsporing.
 
-1. Geef het pad en de naam op van het **logbestand**.
+1. Pad en naam van de **Logbestand**.
 
    >[!NOTE]
    >
-   >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;bestandsnaam> op in de eigenschap Logbestanden.
+   >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;filename> in het bezit van de Dossiers van het Logboek.
 
-1. Wijzig de **Logger** in **HTMLFormsPerfLogger** en klik **Save**.
+1. Wijzig de **Aanmelder** tot **HTMLFormsPerfLogger** en klik op **Opslaan**.

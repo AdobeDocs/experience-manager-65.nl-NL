@@ -1,22 +1,21 @@
 ---
 title: Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse
-seo-title: Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse
+seo-title: How to Develop AEM Projects Using Eclipse
 description: In deze handleiding wordt beschreven hoe u Eclipse kunt gebruiken voor het ontwikkelen van op AEM gebaseerde projecten
-seo-description: In deze handleiding wordt beschreven hoe u Eclipse kunt gebruiken voor het ontwikkelen van op AEM gebaseerde projecten
+seo-description: This guide describes how to use Eclipse for developing AEM based projects
 uuid: 79fee76f-6bcc-498f-af46-530816b41bbe
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
-translation-type: tm+mt
-source-git-commit: 06f1f753b9bb7f7336454f166e03f753e3735a16
+exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
@@ -24,7 +23,7 @@ In deze handleiding wordt beschreven hoe u Eclipse kunt gebruiken voor het ontwi
 
 >[!NOTE]
 >
->Adobe biedt nu de [AEM ontwikkelingstools voor Eclipse](/help/sites-developing/aem-eclipse.md) waarmee u AEM oplossingen kunt ontwikkelen met Eclipse.
+>Adobe biedt nu de [AEM-ontwikkelingsinstrumenten voor Eclipse](/help/sites-developing/aem-eclipse.md) waarmee u AEM oplossingen met Eclipse kunt ontwikkelen.
 
 ## Overzicht {#overview}
 
@@ -41,13 +40,13 @@ Elk van hen wordt meer in detail beschreven in de rest van dit hoe te.
 >
 >Deze handleiding is gebaseerd op Eclipse 4.3 (Kepler) en AEM 5.6.1.
 
-## Verduistering {#install-eclipse} installeren
+## Verduistering installeren {#install-eclipse}
 
-Download de &quot;Eclipse IDE for Java EE Developers&quot; op de pagina [Eclipse Downloads](https://www.eclipse.org/downloads/).
+Download de &quot;Eclipse IDE for Java EE Developers&quot; van de [Pagina Eclipdownloads](https://www.eclipse.org/downloads/).
 
-Installeer Eclipse volgens de [Installatie-instructies](https://wiki.eclipse.org/Eclipse/Installation).
+Verduistering installeren na de [Installatie-instructies](https://wiki.eclipse.org/Eclipse/Installation).
 
-## Stel uw AEM in op basis van Maven {#set-up-your-aem-project-based-on-maven}
+## Uw AEM instellen op basis van Maven {#set-up-your-aem-project-based-on-maven}
 
 Stel vervolgens uw project in met Maven zoals beschreven in [Hoe kan ik AEM projecten bouwen met Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
@@ -56,16 +55,16 @@ Stel vervolgens uw project in met Maven zoals beschreven in [Hoe kan ik AEM proj
 Eclipse kan ook ondersteuning bieden bij het werken met JSP, bijvoorbeeld
 
 * tagbibliotheken automatisch invullen
-* Eclipsebewustzijn van objecten die worden gedefinieerd door &lt;cq:defineObjects /> en &lt;sling:defineObjects />
+* Verduistering van objecten die zijn gedefinieerd door &lt;cq:defineobjects /> en &lt;sling:defineobjects />
 
 Om dat te doen:
 
-1. Volg de instructies op [Hoe te met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [hoe te AEM Projecten bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
-1. Voeg het volgende toe aan de &lt;build /> sectie in POM van uw inhoudsmodule.
+1. Volg de instructies op [Hoe kan ik-werken met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Hoe kan ik AEM projecten bouwen met Apache Maven](/help/sites-developing/ht-projects-maven.md).
+1. Voeg het volgende toe aan de &lt;build /> in de POM van uw inhoudsmodule.
 
-   De Maven-supportplug-in van Eclipse, m2e, biedt geen ondersteuning voor de maven-jspc-plugin. Deze configuratie instrueert m2e om de plug-in en de bijbehorende taak van het opschonen van de resultaten van de tijdelijke compilatie te negeren.
+   Met de Maven-supportplug-in van Eclipse, m2e, wordt de maven-jspc-plugin niet ondersteund. Met deze configuratie wordt aan m2e doorgegeven dat de plug-in en de bijbehorende taak om de resultaten van de tijdelijke compilatie op te schonen, moeten worden genegeerd.
 
-   Dit is geen probleem: zoals vermeld in [Hoe te met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) te werken, wordt de maven-jspc-stop in deze opstelling slechts gebruikt om te bevestigen dat JSPs als deel van het bouwstijlproces compileert. Eclipse rapporteert al problemen in JSPs en vertrouwt niet op deze Maven plugin om dit te kunnen doen.
+   Dit is geen probleem: zoals vermeld in [Hoe kan ik-werken met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), wordt de maven-jspc-stop in deze opstelling slechts gebruikt om te bevestigen dat JSPs als deel van het bouwstijlproces compileert. Eclipse rapporteert al problemen in JSPs en vertrouwt niet op deze Maven plugin om dit te kunnen doen.
 
    **myproject/content/pom.xml**
 
@@ -117,7 +116,7 @@ Om dat te doen:
    </build>
    ```
 
-### Het gemaakte project importeren in Eclipse {#import-the-maven-project-into-eclipse}
+### Geweven project importeren in Eclipse {#import-the-maven-project-into-eclipse}
 
 1. Kies in Eclipse Bestand > Importeren...
 1. Kies Geweven > Bestaande gefabriceerde projecten in het dialoogvenster Importeren en klik op Volgende.
@@ -134,5 +133,4 @@ Om dat te doen:
 
    >[!NOTE]
    >
-   >Als u `/libs/foundation/global.jsp` of andere JSPs in `/libs` omvat, zult u dat aan uw project moeten kopiëren zodat kan de Verduistering de opneming oplossen. Tegelijkertijd moet u ervoor zorgen dat het pakket niet door Maven in het inhoudspakket wordt opgenomen. Hoe dit te bereiken wordt beschreven in [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
-
+   >Als u `/libs/foundation/global.jsp` of andere JSP&#39;s in `/libs`, zult u dat aan uw project moeten kopiëren zodat kan Eclipse de opneming oplossen. Tegelijkertijd moet u ervoor zorgen dat het pakket niet door Maven in het inhoudspakket wordt opgenomen. Hoe dit te bereiken wordt beschreven in [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).

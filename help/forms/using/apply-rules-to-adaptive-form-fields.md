@@ -1,8 +1,8 @@
 ---
 title: Regels toepassen op aangepaste formuliervelden
-seo-title: Regels toepassen op aangepaste formuliervelden
+seo-title: Apply rules to adaptive form fields
 description: Maak regels om interactiviteit, bedrijfslogica en slimme validaties toe te voegen aan een adaptief formulier.
-seo-description: Maak regels om interactiviteit, bedrijfslogica en slimme validaties toe te voegen aan een adaptief formulier.
+seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -10,7 +10,7 @@ discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
-Deze zelfstudie is een stap in de serie [Uw eerste adaptieve vorm maken](/help/forms/using/create-your-first-adaptive-form.md). Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikssituatie van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
+Deze zelfstudie is een stap in de [Uw eerste adaptieve formulier maken](/help/forms/using/create-your-first-adaptive-form.md) reeks. Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikssituatie van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
 ## Over de zelfstudie {#about-the-tutorial}
 
 Met regels kunt u interactiviteit, bedrijfslogica en slimme validaties toevoegen aan een adaptief formulier. Adaptieve formulieren hebben een ingebouwde regeleditor. De regelredacteur verstrekt belemmering-en-dalingsfunctionaliteit, gelijkend op geleide reizen. De methode slepen en neerzetten is de snelste en eenvoudigste methode om regels te maken. De regelredacteur verstrekt ook een codevenster voor gebruikers geinteresseerd in het testen van hun coderingsvaardigheden of het nemen van de regels aan het volgende niveau.
 
-U kunt meer over de regelredacteur bij [Aangepaste Forms regelredacteur](/help/forms/using/rule-editor.md) leren.
+U kunt meer over de regelredacteur leren bij [Adaptieve Forms-regeleditor](/help/forms/using/rule-editor.md).
 
 Aan het einde van de zelfstudie leert u regels maken voor:
 
@@ -33,11 +33,11 @@ Aan het einde van de zelfstudie leert u regels maken voor:
 * Een service van het formuliergegevensmodel aanroepen om gegevens aan de database toe te voegen
 * Een validatiecontrole uitvoeren en foutberichten weergeven
 
-Met interactieve GIF-afbeeldingen aan het einde van elke sectie van de zelfstudie kunt u de functionaliteit van het formulier dat u maakt, direct leren kennen en valideren.
+Met interactieve afbeeldingen van GIFFEN aan het einde van elke sectie van de zelfstudie kunt u de functionaliteit van het formulier dat u maakt, direct leren kennen en valideren.
 
 ## Stap 1: Een klantrecord ophalen uit de database {#retrieve-customer-record}
 
-U hebt een formuliergegevensmodel gemaakt door het artikel [model formuliergegevens maken](/help/forms/using/create-form-data-model.md) te volgen. Nu, kunt u de regelredacteur gebruiken om de diensten van het Gegevensmodel van Forms aan te halen om informatie aan het gegevensbestand terug te winnen en toe te voegen.
+U hebt een formuliergegevensmodel gemaakt door het volgende te doen [formuliergegevensmodel maken](/help/forms/using/create-form-data-model.md) artikel. Nu, kunt u de regelredacteur gebruiken om de diensten van het Gegevensmodel van Forms aan te halen om informatie aan het gegevensbestand terug te winnen en toe te voegen.
 
 Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantgegevens in een database kunnen worden geïdentificeerd. In de onderstaande procedure wordt de klant-id gebruikt om gegevens op te halen uit de database:
 
@@ -45,28 +45,28 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
    [http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 
-1. Tik op het veld **[!UICONTROL Customer ID]** en tik op het pictogram **[!UICONTROL Edit Rules]**. Het venster van de Redacteur van de Regel opent.
-1. Tik op het pictogram **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
+1. Tik op de knop **[!UICONTROL Customer ID]** en tik op **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
+1. Tik op de knop **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
 
-   In Visuele Redacteur, wordt **[!UICONTROL WHEN]** verklaring geselecteerd door gebrek. Bovendien wordt het formulierobject (in dit geval **[!UICONTROL Customer ID]**) waaruit u de regeleditor hebt gestart, opgegeven in de instructie **[!UICONTROL WHEN]**.
+   In de Visuele Redacteur, **[!UICONTROL WHEN]** is standaard geselecteerd. Ook het formulierobject (in dit geval, **[!UICONTROL Customer ID]**) vanaf waar u de regeleditor hebt gestart, opgegeven in het dialoogvenster **[!UICONTROL WHEN]** instructie.
 
-1. Tik op de vervolgkeuzelijst **[!UICONTROL Select State]** en selecteer **[!UICONTROL is changed]**.
+1. Tik op de knop **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
 
    ![gewend](assets/whencustomeridischanged.png)
 
-1. Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie **[!UICONTROL Invoke Service]**.
-1. Selecteer de **[!UICONTROL Retrieve Shipping Address]** dienst van **[!UICONTROL Select]** drop-down.
-1. Sleep het veld **[!UICONTROL Customer ID]** van het tabblad Formulierobjecten naar het veld **[!UICONTROL Drop object or select here]** in het vak **[!UICONTROL INPUT]**.
+1. In de **[!UICONTROL THEN]** instructie, selecteren **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
+1. Selecteer **[!UICONTROL Retrieve Shipping Address]** van de **[!UICONTROL Select]** vervolgkeuzelijst.
+1. Sleep de **[!UICONTROL Customer ID]** van het tabblad Formulierobjecten naar het tabblad **[!UICONTROL Drop object or select here]** in het **[!UICONTROL INPUT]** doos.
 
    ![dropobjectstoinputfield-retrieve](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. Sleep het veld **[!UICONTROL Customer ID, Name, Shipping Address, State, and Zip Code]** van het tabblad Formulierobjecten naar het veld **[!UICONTROL Drop object or select here]** in het vak **[!UICONTROL OUTPUT]**.
+1. Sleep de **[!UICONTROL Customer ID, Name, Shipping Address, State, and Zip Code]** van het tabblad Formulierobjecten naar het tabblad **[!UICONTROL Drop object or select here]** in het **[!UICONTROL OUTPUT]** doos.
 
    ![dropobjectstooutputfield-retrieve data](assets/dropobjectstooutputfield-retrievedata.png)
 
-   Tik **[!UICONTROL Done]** om de regel op te slaan. Tik op **[!UICONTROL Close]** in het venster van de regeleditor.
+   Tikken **[!UICONTROL Done]** om de regel op te slaan. Tik in het regeleditorvenster op **[!UICONTROL Close]**.
 
-1. Geef een voorvertoning weer van het adaptieve formulier. Voer een id in het veld **[!UICONTROL Customer ID]** in. Het formulier kan nu klantgegevens uit de database ophalen.
+1. Geef een voorvertoning weer van het adaptieve formulier. Voer een id in het dialoogvenster **[!UICONTROL Customer ID]** veld. Het formulier kan nu klantgegevens uit de database ophalen.
 
    ![ophalen-informatie](assets/retrieve-information.gif)
 
@@ -74,30 +74,30 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
 Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, de provincie en de postcode bijwerken. Met de onderstaande procedure wordt een service Formuliergegevensmodel aangeroepen om klantgegevens bij te werken naar de database:
 
-1. Selecteer het veld **[!UICONTROL Submit]** en tik op het pictogram **[!UICONTROL Edit Rules]**. Het venster van de Redacteur van de Regel opent.
-1. Selecteer de **[!UICONTROL Submit - Click]** regel en tik **[!UICONTROL Edit]** pictogram. De opties voor het bewerken van de regel Verzenden worden weergegeven.
+1. Selecteer **[!UICONTROL Submit]** en tik op **[!UICONTROL Edit Rules]** pictogram. Het venster van de Redacteur van de Regel opent.
+1. Selecteer **[!UICONTROL Submit - Click]** tikken op de **[!UICONTROL Edit]** pictogram. De opties voor het bewerken van de regel Verzenden worden weergegeven.
 
    ![submit-rule](assets/submit-rule.png)
 
-   Bij de optie WHEN zijn de opties **[!UICONTROL Submit]** en **[!UICONTROL is clicked]** al geselecteerd.
+   In de optie WHEN **[!UICONTROL Submit]** en **[!UICONTROL is clicked]** zijn al geselecteerd.
 
    ![submit-is-geklikt](assets/submit-is-clicked.png)
 
-1. Tik in de optie **[!UICONTROL THEN]** op de optie **[!UICONTROL + Add Statement]**. Selecteer **[!UICONTROL Invoke Service]** van **[!UICONTROL Select Action]** drop-down.
-1. Selecteer de **[!UICONTROL Update Shipping Address]** dienst van **[!UICONTROL Select]** drop-down.
+1. In de **[!UICONTROL THEN]** tikken op de knop **[!UICONTROL + Add Statement]** optie. Selecteren **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
+1. Selecteer **[!UICONTROL Update Shipping Address]** van de **[!UICONTROL Select]** vervolgkeuzelijst.
 
    ![update-verzend-adres](assets/update-shipping-address.png)
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. Sleep het veld **[!UICONTROL Shipping Address, State, and Zip Code]** van het tabblad [!UICONTROL Form Objects] naar de overeenkomstige eigenschap tableName.property (bijvoorbeeld customerdetails.ShippingAddress) van het veld **[!UICONTROL Drop object or select here]** in het tekstvak **[!UICONTROL INPUT]**. Alle velden met een tabelnaam (bijvoorbeeld details van de klant in dit geval) fungeren als invoergegevens voor de updateservice. Alle inhoud die in deze velden wordt geleverd, wordt bijgewerkt in de gegevensbron.
+1. Sleep de **[!UICONTROL Shipping Address, State, and Zip Code]** veld van [!UICONTROL Form Objects] tab naar de overeenkomstige tableName.property (bijvoorbeeld, customerdetails.ShippingAddress) van het **[!UICONTROL Drop object or select here]** in het **[!UICONTROL INPUT]** doos. Alle velden met een tabelnaam (bijvoorbeeld details van de klant in dit geval) fungeren als invoergegevens voor de updateservice. Alle inhoud die in deze velden wordt geleverd, wordt bijgewerkt in de gegevensbron.
 
    >[!NOTE]
    >
-   >Sleep de velden **[!UICONTROL Name]** en **[!UICONTROL Customer ID]** niet naar de bijbehorende eigenschap tablename.property (bijvoorbeeld customerdetails.name). Zo voorkomt u per ongeluk dat de naam en id van de klant worden bijgewerkt.
+   >Sleep de **[!UICONTROL Name]** en **[!UICONTROL Customer ID]** velden naar de overeenkomstige tablename.property (bijvoorbeeld customerdetails.name). Zo voorkomt u per ongeluk dat de naam en id van de klant worden bijgewerkt.
 
-1. Sleep het veld **[!UICONTROL Customer ID]** van het tabblad [!UICONTROL Form Objects] naar het veld id in het vak **[!UICONTROL INPUT]**. Velden zonder een vooraf ingestelde tabelnaam (bijvoorbeeld klantgegevens in dit geval) fungeren als zoekparameter voor de updateservice. In het veld **[!UICONTROL id]** in dit gebruiksgeval wordt een record in de tabel **customerdetails** uniek geïdentificeerd.
-1. Tik **[!UICONTROL Done]** om de regel op te slaan. Tik op **[!UICONTROL Close]** in het venster van de regeleditor.
+1. Sleep de **[!UICONTROL Customer ID]** veld van [!UICONTROL Form Objects] aan het id-veld in het dialoogvenster **[!UICONTROL INPUT]** doos. Velden zonder een vooraf ingestelde tabelnaam (bijvoorbeeld klantgegevens in dit geval) fungeren als zoekparameter voor de updateservice. De **[!UICONTROL id]** veld in dit gebruiksgeval een record op unieke wijze identificeert in het  **klantgegevens**  tabel.
+1. Tikken **[!UICONTROL Done]** om de regel op te slaan. Tik in het regeleditorvenster op **[!UICONTROL Close]**.
 1. Geef een voorvertoning weer van het adaptieve formulier. Haal de gegevens van een klant op, werk het verzendadres bij en verzend het formulier. Wanneer u de details van dezelfde klant opnieuw ophaalt, wordt het bijgewerkte verzendadres weergegeven.
 
 ## Stap 3: (sectie Bonus) Gebruik de code-editor om validaties uit te voeren en foutberichten weer te geven {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
@@ -106,20 +106,20 @@ Voer de validatie op het formulier uit om te controleren of de gegevens in het f
 
 Aangepaste formulieren bieden verschillende componenten ingebouwde validaties, zoals e-mail en numerieke velden die u kunt gebruiken voor veelvoorkomende gebruiksgevallen. Gebruik de regeleditor voor geavanceerde gebruiksgevallen bijvoorbeeld om een foutbericht weer te geven wanneer de database nul (0) records (geen records) retourneert.
 
-De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te geven als de klant-id die u in het formulier hebt ingevoerd, niet bestaat in de database. De regel brengt ook de nadruk aan en stelt het **[!UICONTROL Customer ID]** gebied opnieuw in. De regel gebruikt [de dataIntegrationUtils-API van de service van het formuliergegevensmodel](/help/forms/using/invoke-form-data-model-services.md) om te controleren of de klant-id in de database aanwezig is.
+De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te geven als de klant-id die u in het formulier hebt ingevoerd, niet bestaat in de database. De regel brengt ook de focus naar en stelt de **[!UICONTROL Customer ID]** veld. De regel gebruikt [de API dataIntegrationUtils van de service van het formuliergegevensmodel](/help/forms/using/invoke-form-data-model-services.md) om te controleren of de klant-id in de database aanwezig is.
 
-1. Tik op het veld **[!UICONTROL Customer ID]** en tik op het pictogram `Edit Rules`. Het venster [!UICONTROL Rule Editor] wordt geopend.
-1. Tik op het pictogram **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
+1. Tik op de knop **[!UICONTROL Customer ID]** en tik op `Edit Rules` pictogram. De [!UICONTROL Rule Editor] wordt geopend.
+1. Tik op de knop **[!UICONTROL + Create]** om een regel toe te voegen. Het opent de Visuele Redacteur.
 
-   In Visuele Redacteur, wordt **[!UICONTROL WHEN]** verklaring geselecteerd door gebrek. Bovendien wordt het formulierobject (in dit geval **[!UICONTROL Customer ID]**) waaruit u de regeleditor hebt gestart, opgegeven in de instructie **[!UICONTROL WHEN]**.
+   In de Visuele Redacteur, **[!UICONTROL WHEN]** is standaard geselecteerd. Ook het formulierobject (in dit geval, **[!UICONTROL Customer ID]**) vanaf waar u de regeleditor hebt gestart, opgegeven in het dialoogvenster **[!UICONTROL WHEN]** instructie.
 
-1. Tik op de vervolgkeuzelijst **[!UICONTROL Select State]** en selecteer **[!UICONTROL is changed]**.
+1. Tik op de knop **[!UICONTROL Select State]** vervolgkeuzelijst en selecteer **[!UICONTROL is changed]**.
 
    ![gewend](assets/whencustomeridischanged.png)
 
-   Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie **[!UICONTROL Invoke Service]**.
+   In de **[!UICONTROL THEN]** instructie, selecteren **[!UICONTROL Invoke Service]** van de **[!UICONTROL Select Action]** vervolgkeuzelijst.
 
-1. Overschakelen van **[!UICONTROL Visual Editor]** naar **[!UICONTROL Code Editor]**. De schakelaarcontrole is op de rechterkant van het venster. De Redacteur van de Code opent, tonend code gelijkend op het volgende:
+1. Overschakelen van **[!UICONTROL Visual Editor]** tot **[!UICONTROL Code Editor]**. De schakelaarcontrole is op de rechterkant van het venster. De Redacteur van de Code opent, tonend code gelijkend op het volgende:
 
    ![code-editor](assets/code-editor.png)
 
@@ -131,7 +131,7 @@ De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te
    };
    ```
 
-1. Vervang de sectie `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` door de volgende code:
+1. Vervang de `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` met de volgende code:
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {

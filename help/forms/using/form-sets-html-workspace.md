@@ -1,8 +1,8 @@
 ---
 title: Werken met indelingen in de AEM Forms-werkruimte
-seo-title: Werken met indelingen in de AEM Forms-werkruimte
-description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
-seo-description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
+seo-title: Working with Formsets in AEM Forms workspace
+description: Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
+seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
 uuid: 1a5f3ce8-1d6a-497e-90d0-49765e40cf3b
 contentOwner: vishgupt
 content-type: reference
@@ -10,37 +10,36 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 27a054cc5d502d95c664c3b414d0066c6c120b65
+exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
 
+# Werken met indelingen in de AEM Forms-werkruimte{#working-with-formsets-in-aem-forms-workspace}
 
-# Werken met formsets in de AEM Forms-werkruimte{#working-with-formsets-in-aem-forms-workspace}
-
-Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Zie [Opmaak in AEM Forms](../../forms/using/formset-in-aem-forms.md) voor meer informatie over formsets en het instellen ervan.
+Een formulierset is een verzameling van HTML5-formulieren die zijn gegroepeerd en gepresenteerd als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Voor meer informatie over formsets en hoe u deze instelt, raadpleegt u [Opmaak in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
 De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formulieren die betrekking hebben op een service of proces worden gegroepeerd om een bedrijfsproces te automatiseren en aan de eindgebruikers worden gepresenteerd. In dat geval kunnen de gebruikers de gehele set als één geheel invullen en hoeven afzonderlijke formulieren of processen niet te worden opgeslagen, verzonden en bijgehouden.
 
 ## Een formulierset koppelen aan het beginpunt in een AEM Forms-werkruimte-app {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
-1. Maak de workflow voor het bedrijfsproces in Workbench. Zie [Workbench help](https://www.adobe.com/go/learn_aemforms_workbench_63) voor meer informatie.
-1. Selecteer **Een CRX-element** gebruiken in presentatie en gegevens in de proceseigenschappen van het startpunt.
+1. Maak de workflow voor het bedrijfsproces in Workbench. Zie voor meer informatie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
+1. Van de proceseigenschappen van het startpunt, selecteer **Een CRX-element gebruiken** in presentatie en gegevens.
 
    ![1-3](assets/1-3.png)
 
-1. Klik ![doorblader](assets/browse.png) (doorbladeren) naast de CRX activaweg. Het dialoogvenster Formulierelement selecteren wordt geopend.
+1. Klikken ![doorbladeren](assets/browse.png) (Bladeren) naast het CRX-middelenpad. Het dialoogvenster Formulierelement selecteren wordt geopend.
 
    ![2-1](assets/2-1.png)
 
-1. Klik op het tabblad **Formset**, selecteer de relevante formset in de lijst en klik vervolgens op **OK**.
+1. Klik op de knop **Inzet** selecteert u de desbetreffende indeling in de lijst en klikt u vervolgens op **OK**.
 
 1. Implementeer de toepassing nadat u andere relevante proceseigenschappen hebt bijgewerkt.
 
-## Opmaak gebruiken in de AEM Forms-werkruimte {#using-formset-in-nbsp-aem-forms-workspace}
+## Indeling gebruiken in de AEM Forms-werkruimte {#using-formset-in-nbsp-aem-forms-workspace}
 
 Zodra een formset aan een startpunt is gekoppeld, kan het startpunt worden aangeroepen, net als elk ander startpunt dat wordt aangeroepen, vanuit de AEM Forms-werkruimte.
 
@@ -59,4 +58,3 @@ De volgende bewerkingen worden ondersteund in de indeling in de AEM Forms-werkru
 >[!NOTE]
 >
 >Voor prestatieverbetering tijdens het verplaatsen van vorige en volgende formulieren in een indeling, worden alle werkruimteknoppen (Vorige, Volgende, Opslaan, Verzenden en ... (Meer)) worden uitgeschakeld totdat het desbetreffende formulier volledig wordt weergegeven.
-

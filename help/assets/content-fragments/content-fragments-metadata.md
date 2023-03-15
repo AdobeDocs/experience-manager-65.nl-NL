@@ -41,4 +41,4 @@ U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om
 
    * **Gemaakt** (alleen weergeven)
    Bijvoorbeeld:
-   ![metagegevens](assets/cfm-metadata-02.png)
+   ![metadata](assets/cfm-metadata-02.png)

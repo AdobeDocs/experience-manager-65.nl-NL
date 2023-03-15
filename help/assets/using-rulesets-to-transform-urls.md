@@ -19,19 +19,19 @@ ht-degree: 0%
 
 U kunt regelsets in Dynamic Media gebruiken om URL&#39;s te transformeren. Regelsets zijn instructiesets die in een scripttaal (zoals JavaScript) zijn geschreven en die XML-gegevens evalueren en bepaalde handelingen uitvoeren als die gegevens aan bepaalde voorwaarden voldoen. Elke regel bestaat uit ten minste één voorwaarde en ten minste één actie. Een regel evalueert de gegevens van XML tegen de voorwaarden, en als een voorwaarde wordt voldaan, dan neemt het de aangewezen actie. Voorbeelden van regelsets zijn:
 
-* Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals het toevoegen van `.jpg` aan een URL.
+* Een MIME-achtervoegsel toevoegen. Voor veel services en websites zijn afbeeldingsachtervoegsels vereist, zoals toevoegen `.jpg` naar een URL.
 * Een mappad naar de URL maken voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s).
 
-   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO ondersteunt](/help/assets/assets/s7_seo.pdf).
 
 * Metagegevens toevoegen aan de URL voor SEO-doeleinden (Search Engine Optimization).
 
-   Zie [Hoe Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf) ondersteunt.
+   Zie [Hoe Adobe Dynamic Media Classic SEO ondersteunt](/help/assets/assets/s7_seo.pdf).
 
 * De positie van de inhoud instellen om een download te activeren.
-* Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Zet `rgb{XX,YY,ZZ}` bijvoorbeeld om in RTF-ready `\redXX\greenYY\blueZZ`
+* Vereenvoudig URL&#39;s met sjablonen voor beeldweergave voor personalisatie. Bijvoorbeeld draaien `rgb{XX,YY,ZZ}` in RTF-gereed `\redXX\greenYY\blueZZ`
 
-* Vraag om bepaalde tekens die moeten worden gecodeerd, zoals `$`, `{` en `}`, en bepaalde tekens die naar ImageServer moeten worden gedecodeerd. Facebook werkt bijvoorbeeld niet goed met URL&#39;s die speciale tekens bevatten.
+* Vraag om bepaalde tekens die moeten worden gecodeerd, zoals `$`, `{`, en `}`en bepaalde tekens die naar ImageServer moeten worden gedecodeerd. Facebook werkt bijvoorbeeld niet goed met URL&#39;s die speciale tekens bevatten.
 
    Zie [Speciale tekens uit URL&#39;s verwijderen](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
@@ -42,7 +42,7 @@ In de context van Dynamic Media kunnen websites die een op XML gebaseerd systeem
 >Wees voorzichtig bij het gebruik van linialen; kunnen voorkomen dat Dynamic Media-inhoud op uw website wordt weergegeven.
 
 Er zijn voorbeeldregels beschikbaar die u kunnen helpen uw eigen regels te maken.
-Zie [Referentie regelset](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
+Zie [Referentie voor regelset](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Net als bij het maken van alle regelsets moet u ervoor zorgen dat uw XML-bestand geldig is voordat u het uploadt met een XML-validatieprogramma zoals xmlvalid.
 Zie ook [Problemen met regelsets oplossen](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
@@ -56,29 +56,29 @@ Zie de [Adobe Dynamic Media Classic-bureaubladtoepassing voor aanmeldingsgegeven
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-Zie ook [Gebruik &#39;element&#39; in plaats van &#39;is&#39;-afbeelding in een regelset](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
+Zie ook [&#39;asset&#39; gebruiken in plaats van &#39;is&#39;-afbeelding in een regelset](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **XML-regelsets implementeren:**
 
-1. Meld u aan bij uw [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+1. Aanmelden bij uw [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
    Adobe heeft uw aanmeldingsgegevens en aanmeldingsgegevens op het moment van de levering verstrekt. Neem contact op met de Klantenondersteuning van Adobe als u deze informatie niet hebt.
 
 1. Upload het bestand met de regelset als volgt:
 
-   * Selecteer **[!UICONTROL Upload]** op de algemene navigatiebalk.
-   * Selecteer **[!UICONTROL Browse]** op de pagina **[!UICONTROL Upload]** in de linkerbovenhoek.
-   * Blader in het dialoogvenster **[!UICONTROL Open]** naar het bestand met de regelset (XML).
-   * Selecteer het bestand en selecteer **[!UICONTROL Open]**.
-   * Selecteer rechts van de pagina **[!UICONTROL Upload]** een doelmap voor het bestand met regelsets.
-   * Controleer of **[!UICONTROL Publish After Uploading]** onder aan de pagina is ingeschakeld.
-   * Selecteer **[!UICONTROL Submit Upload]** in de rechterbenedenhoek van de pagina.
-   * Selecteer **[!UICONTROL Jobs]** op de algemene navigatiebalk om de status van de uploadtaak te controleren. Wanneer de **[!UICONTROL Status]** kolom op **[!UICONTROL Job]** pagina zegt upload Gedaan, ga aan de volgende stappen verder.
+   * Selecteer op de algemene navigatiebalk de optie **[!UICONTROL Upload]**.
+   * Op de **[!UICONTROL Upload]** pagina, bij de linkerbovenhoek, selecteert u **[!UICONTROL Browse]**.
+   * In de **[!UICONTROL Open]** bladert u naar het bestand met de regelset (XML).
+   * Selecteer het bestand en selecteer vervolgens **[!UICONTROL Open]**.
+   * Aan de rechterkant van het **[!UICONTROL Upload]** pagina, selecteert u een doelmap voor het regelsetbestand.
+   * Controleer of onder aan de pagina **[!UICONTROL Publish After Uploading]** is ingeschakeld.
+   * Selecteer in de rechterbenedenhoek van de pagina de optie **[!UICONTROL Submit Upload]**.
+   * Selecteer op de algemene navigatiebalk de optie **[!UICONTROL Jobs]** om de status van de uploadtaak te controleren. Wanneer de **[!UICONTROL Status]** kolom op de **[!UICONTROL Job]** De pagina zegt Geüpload Klaar, ga aan de volgende stappen verder.
 
-1. Selecteer **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]** op de navigatiebalk boven aan de pagina.
-1. Zoek op de pagina **[!UICONTROL Image Server Publish]** onder de groep **[!UICONTROL Catalog Management]** **[!UICONTROL Rule Set Definition File Path]** en selecteer **[!UICONTROL Select]**.
-1. Blader op de pagina **[!UICONTROL Select Rule Set Definition File (XML)]** naar het bestand met de regelset en selecteer **[!UICONTROL Select]** in de rechterbenedenhoek van de pagina.
-1. Selecteer **[!UICONTROL Close]** in de rechterbenedenhoek van de pagina Setup.
+1. Selecteer op de navigatiebalk boven aan de pagina de optie **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+1. Op de **[!UICONTROL Image Server Publish]** pagina, onder de **[!UICONTROL Catalog Management]** groep, zoeken **[!UICONTROL Rule Set Definition File Path]** selecteert u vervolgens **[!UICONTROL Select]**.
+1. Op de **[!UICONTROL Select Rule Set Definition File (XML)]** pagina, bladert u naar het bestand met de regelset en selecteert u vervolgens in de rechterbenedenhoek van de pagina de optie **[!UICONTROL Select]**.
+1. Selecteer in de rechterbenedenhoek van de pagina Setup de optie **[!UICONTROL Close]**.
 1. Voer een publicatietaak voor afbeeldingsservers uit.
 
    De regelingestelde voorwaarden worden toegepast op de aanvragen voor live Dynamic Media Image Servers.

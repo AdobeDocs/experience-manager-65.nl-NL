@@ -1,8 +1,8 @@
 ---
 title: Herstructurering van de depositaris in AEM 6.5
-seo-title: Herstructurering van de depositaris in AEM 6.5
+seo-title: Repository Restructuring in AEM 6.5
 description: Meer informatie over de grondbeginselen en de redenering achter de herstructurering van de opslagplaats in AEM 6.5
-seo-description: Meer informatie over de grondbeginselen en de redenering achter de herstructurering van de opslagplaats in AEM 6.5
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.5
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,15 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
-
-# Herstructurering van de opslagplaats in AEM 6.5{#repository-restructuring-in-aem}
+# Herstructurering van de depositaris in AEM 6.5{#repository-restructuring-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -32,7 +31,7 @@ Te dien einde, vanaf AEM 6.4 en om in toekomstige versies te worden voortgezet, 
 * AEM productcode zal altijd in /libs worden geplaatst, die niet door douanecode moet worden beschreven
 * De aangepaste code moet worden geplaatst in /apps, /content en /conf
 
-## Effect op 6.5-upgrades {#impact-on-upgrades}
+## Effect op upgrades van 6,5 graden {#impact-on-upgrades}
 
 Wanneer u een upgrade uitvoert naar AEM 6.5, wordt een grote subset van de inhoud onder /etc. gedupliceerd in andere mappen in de opslagplaats. Deze nieuwe locaties zijn de voorkeurslocaties voor de inhoud. Nochtans, is elke poging gemaakt om AEM 6.5 verbetering achterwaarts compatibel met de vorige plaatsen in de /etc omslag te zijn en zo in de meeste gevallen zullen de oude plaatsen door AEM code blijven worden van verwijzingen voorzien tot de veranderingen actief — en in veel gevallen manueel — in de toepassing van een klant worden gemaakt. Vanuit een tijdlijnperspectief zijn er twee categorieën wijzigingen:
 

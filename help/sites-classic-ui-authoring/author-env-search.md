@@ -1,8 +1,8 @@
 ---
 title: Zoeken
-seo-title: Zoeken
+seo-title: Search
 description: De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeken, afhankelijk van het middeltype.
-seo-description: De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeken, afhankelijk van het middeltype.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,13 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
-translation-type: tm+mt
-source-git-commit: 4dc4a518c212555b7833ac27de02087a403d3517
+exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
-
 
 # Zoeken{#searching}
 
@@ -27,37 +26,33 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 >
 >Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Basisinformatie zoeken {#search-basics}
+## Grondbeginselen van zoekopdrachten {#search-basics}
 
-Om tot het onderzoekspaneel toegang te hebben, klik op **Onderzoek** lusje bij de bovenkant van de linkerruit van de aangewezen console.
+Als u het deelvenster Zoeken wilt openen, klikt u op de knop **Zoeken** aan de bovenkant van de linkerruit van de aangewezen console.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
 Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het bevat velden en widgets voor het volgende:
 
 * **Fulltext**: Zoeken naar de opgegeven tekst
-* **Gewijzigd na/voor**: Alleen de pagina&#39;s zoeken die zijn gewijzigd tussen de specifieke datums
+* **Gewijzigd na/vóór**: Alleen de pagina&#39;s zoeken die zijn gewijzigd tussen de specifieke datums
 * **Sjabloon**: Alleen die pagina&#39;s zoeken op basis van de opgegeven sjabloon
 * **Tags**: Alleen de pagina&#39;s met de opgegeven tags doorzoeken
 
 >[!NOTE]
 >
->Wanneer uw instantie voor [Lucene onderzoek](/help/sites-deploying/queries-and-indexing.md) wordt gevormd kunt u het volgende in **Fulltext** gebruiken:
+>Wanneer uw instantie wordt gevormd voor [Lucene-zoekopdracht](/help/sites-deploying/queries-and-indexing.md) u kunt de volgende opties gebruiken in **Fulltext**:
 >
 >* [Jokertekens](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Booleaanse operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
-
-   >
-   >
-* [Reguliere expressies](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Reguliere expressies](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Veldgroepering](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Verhogen](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
-
 >
 
 
-
-Voer het onderzoek door **Onderzoek** bij de bodem van de ruit uit te klikken. Klik **Reset** om de zoekcriteria te wissen.
+De zoekopdracht uitvoeren door op **Zoeken** onder aan het deelvenster. Klikken **Herstellen** de zoekcriteria te wissen.
 
 ## Filter {#filter}
 
@@ -65,16 +60,16 @@ Op verschillende locaties kan een filter worden ingesteld (en gewist) om de weer
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-## {#find-and-replace} zoeken en vervangen
+## Zoeken en vervangen {#find-and-replace}
 
-In de **Websites** console kunt u met een menuoptie **Zoeken en vervangen** meerdere instanties van een tekenreeks zoeken en vervangen binnen een sectie van de website.
+In de **Websites** console a **Zoeken en vervangen** kunt u in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
 
 1. Selecteer de hoofdpagina, of map, waar de zoek- en vervangactie moet plaatsvinden.
-1. Selecteer **Gereedschappen** dan **Zoeken en vervangen**:
+1. Selecteren **Gereedschappen** dan **Zoeken en vervangen**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. Het dialoogvenster **Zoeken en vervangen** voert de volgende handelingen uit:
+1. De **Zoeken en vervangen** wordt het volgende uitgevoerd:
 
    * bevestigt het hoofdpad waar de zoekactie moet beginnen
    * definieert de term die moet worden gevonden
@@ -82,11 +77,11 @@ In de **Websites** console kunt u met een menuoptie **Zoeken en vervangen** meer
    * Hiermee wordt aangegeven of de zoekopdracht hoofdlettergevoelig moet zijn
    * Hiermee wordt aangegeven of alleen hele woorden moeten worden gevonden (anders worden ook subtekenreeksen gevonden)
 
-   Als u op **Voorvertoning** klikt, wordt de term weergegeven. U kunt specifieke te vervangen exemplaren selecteren/wissen:
+   Klikken **Voorvertoning** lijsten waarin de term is gevonden. U kunt specifieke te vervangen exemplaren selecteren/wissen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Klik **Vervangen** om alle instanties daadwerkelijk te vervangen. U wordt gevraagd de actie te bevestigen.
+1. Klikken **Vervangen** om alle instanties daadwerkelijk te vervangen. U wordt gevraagd de actie te bevestigen.
 
 Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de volgende eigenschappen:
 
@@ -95,7 +90,7 @@ Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de vol
 * `jcr:text`
 * `text`
 
-Het bereik kan worden gewijzigd met de Apache Felix Web Management Console (bijvoorbeeld op `https://localhost:4502/system/console/configMgr`). Selecteer `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` en vorm het werkingsgebied zoals vereist.
+Het bereik kan worden gewijzigd met de Apache Felix Web Management Console (bijvoorbeeld bij `https://localhost:4502/system/console/configMgr`). Selecteren `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` en configureer het bereik naar wens.
 
 >[!NOTE]
 >

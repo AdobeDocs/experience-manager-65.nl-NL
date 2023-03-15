@@ -18,7 +18,7 @@ ht-degree: 17%
 
 ---
 
-# Gemengde mediasets{#mixed-media-sets}
+# Mixed Media Sets{#mixed-media-sets}
 
 Met gemengde mediasets kunt u in één presentatie een combinatie van afbeeldingen, afbeeldingssets, centrifuges en video&#39;s aanbieden.
 

@@ -1,22 +1,21 @@
 ---
 title: XCI-configuratieopties opgeven
-seo-title: XCI-configuratieopties opgeven
+seo-title: Specifying XCI configuration options
 description: Leer hoe u XCI-configuratieopties opgeeft.
-seo-description: Leer hoe u XCI-configuratieopties opgeeft.
+seo-description: Learn how to specify XCI configuration options.
 uuid: 5d3c10c1-4a93-4336-b311-20faaf835b9f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
-translation-type: tm+mt
-source-git-commit: a3c303d4e3a85e1b2e794bec2006c335056309fb
+exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '130'
 ht-degree: 1%
 
 ---
-
 
 # XCI-configuratieopties opgeven {#specifying-xci-configuration-options}
 
@@ -32,4 +31,3 @@ U kunt opties selecteren waarmee de overschrijving voor de bovenstaande opties w
 1. Klik in de beheerconsole op Services > Forms.
 1. Schakel het selectievakje Systeemstandaard XCI-opties gebruiken in of uit. Wanneer deze optie is geselecteerd, gebruikt Forms de standaardwaarden voor de pakketten, de maker, de producent en de compressObjectStream-instellingen. Als deze optie is uitgeschakeld, gebruikt Forms de waarden die zijn opgegeven in het aangepaste XCI-bestand.
 1. Klik op Opslaan.
-

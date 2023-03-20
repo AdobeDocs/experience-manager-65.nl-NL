@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
 source-wordcount: '7665'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Voordat u AEM Forms op JEE installeert, kunt u beveiligingsoplossingen toepassen
 
 **Installatie en configuratie op UNIX en Linux**
 
-U moet AEM Forms niet installeren of configureren op JEE met behulp van een hoofdshell. Standaard worden bestanden geïnstalleerd onder de map /opt en heeft de gebruiker die de installatie uitvoert, alle bestandsmachtigingen onder /opt nodig. Een installatie kan ook worden uitgevoerd in de map /user van een individuele gebruiker, waar deze al over alle bestandsmachtigingen beschikt.
+U moet AEM Forms niet installeren of configureren op JEE met behulp van een hoofdshell. Standaard worden bestanden geïnstalleerd onder de map /opt en heeft de gebruiker die de installatie uitvoert, alle bestandsmachtigingen onder /opt nodig. Alternatief, kan een installatie onder de /user folder van een individuele gebruiker worden uitgevoerd waar zij reeds alle dossiertoestemmingen hebben.
 
 **Installatie en configuratie in Windows**
 
@@ -958,7 +958,7 @@ Verwijzen naar de fysieke architectuur die in de sectie wordt beschreven [AEM Fo
 
 Voor instructies over hoe te om SSL op JBoss, WebLogic, en WebSphere te vormen, zie &quot;het Vormen SSL&quot;in [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-Zie sectie Wederzijdse verificatie in [Help bij AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65).
+Zie sectie Wederzijdse verificatie in [Help bij AEM Forms Workbench](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### SSL-omleiding configureren {#configuring-ssl-redirect}
 

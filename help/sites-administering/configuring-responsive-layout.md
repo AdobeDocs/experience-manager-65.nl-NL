@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 1%
+source-wordcount: '1288'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +80,7 @@ Zie voor informatie over de apparaatgroepen die worden weergegeven in de lijst m
 
 ### Uw site koppelen aan de opgegeven apparaatgroepen {#link-your-site-to-the-specified-device-groups}
 
-Als u de emulator wilt opnemen, moet u uw site koppelen aan de apparaatgroepen. Zie [De lijst met apparaten toevoegen](/help/sites-developing/responsive.md#adding-the-devices-list) (voor zowel de klassieke gebruikersinterface als de gebruikersinterface met aanraakfuncties).
+Als u de emulator wilt opnemen, koppelt u uw site aan de apparaatgroepen. Zie [De lijst met apparaten toevoegen](/help/sites-developing/responsive.md#adding-the-devices-list) (voor zowel de klassieke gebruikersinterface als de gebruikersinterface met aanraakfuncties).
 
 ## Lay-outmodus voor uw site activeren {#activate-layout-mode-for-your-site}
 
@@ -94,7 +94,7 @@ Deze procedures worden gebruikt om de **Layout** op uw site.
 * Kan worden gedefinieerd:
 
    * Op het paginasjabloon, vanaf waar de instellingen worden gekopieerd naar pagina&#39;s die met die sjabloon zijn gemaakt.
-   * Op het paginaknooppunt, vanwaar de montages door om het even welke kindpagina&#39;s zullen worden geërft.
+   * Op het paginaknooppunt, vanwaar de montages door om het even welke kindpagina&#39;s worden geërft.
 
 * Een titel en breedte definiëren:
 
@@ -111,7 +111,7 @@ Ze kunnen worden gedefinieerd met behulp van CRXDE Lite of XML.
 >
 >Als u een nieuw project instelt:
 >
->* u moet onderbrekingspunten toevoegen aan de sjablonen.
+>* Voeg onderbrekingspunten toe aan de sjablonen.
 >
 >Als u een bestaand project (met bestaande inhoud) migreert, moet u:
 >
@@ -175,7 +175,7 @@ Deze procedures zijn vereist zodat u de grootte van componenten in de **Layout**
 
 ### De container van de Lay-out instellen als HoofdParsys {#set-layout-container-as-main-parsys}
 
-Om hoofdparsys van uw pagina te plaatsen om een lay-outcontainer te zijn moet u parsys als bepalen:
+Om hoofdparsys van uw pagina te plaatsen om een lay-outcontainer te zijn, bepaal parsys als:
 
 `wcm/foundation/components/responsivegrid`
 
@@ -204,7 +204,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, moeten deze voor uw projecten worden omvat.
 
-U moet ook een [clientbibliotheek](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum u aan uw project moet toevoegen:
+U moet ook een [clientbibliotheek](https://experienceleague.adobe.com/docs/) om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum dat u aan uw project moet toevoegen:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -238,7 +238,7 @@ De basisrasterdefinitie is te vinden onder:
 
 #### Overwegingen bij opmaken {#styling-considerations}
 
-Componenten die zich in een responsieve container bevinden, worden vergroot of verkleind (samen met hun respectievelijke HTML DOM-elementen) op basis van de responsieve rastergrootte. Daarom wordt in deze omstandigheden aanbevolen definities van DOM-elementen met een vaste breedte (bevat) te vermijden (of bij te werken).
+Componenten die in een responsieve container worden vastgehouden, worden vergroot of verkleind (samen met hun respectievelijke HTML DOM-elementen) op basis van de responsieve rastergrootte. Daarom wordt in deze omstandigheden aanbevolen definities van DOM-elementen met een vaste breedte (bevat) te vermijden (of bij te werken).
 
 Bijvoorbeeld:
 

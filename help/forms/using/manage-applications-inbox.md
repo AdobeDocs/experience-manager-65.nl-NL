@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 1%
+source-wordcount: '1080'
+ht-degree: 0%
 
 ---
 
 # Forms-toepassingen en -taken beheren in AEM Postvak In{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. U moet een workflowtoepassing maken om een Forms-workflow als toepassing beschikbaar te maken in Inbox. Ga voor meer informatie over workflowtoepassingen en andere manieren om Forms-workflows te starten naar [Een Forms-centric workflow starten op OSGi](../../forms/using/aem-forms-workflow.md#launch).
+Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. Als u een Forms-workflow als toepassing beschikbaar wilt maken in Inbox, maakt u een workflowtoepassing. Ga voor meer informatie over workflowtoepassingen en andere manieren om Forms-workflows te starten naar [Een Forms-centric workflow starten op OSGi](../../forms/using/aem-forms-workflow.md#launch).
 
 Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
@@ -64,7 +64,7 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
 1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
-1. Tikken **Openen** om taakdetails te bekijken en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
+1. Tikken **Openen** om taakdetails te bekijken. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en aan de taak werken.
 
    >[!NOTE]
    >
@@ -75,7 +75,7 @@ Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitv
 De gedetailleerde taakmening omvat de volgende secties:
 
 * Taakdetails
-* formulier
+* Formulier
 * Workflowdetails
 * Werkbalk Handelingen
 
@@ -83,7 +83,7 @@ De gedetailleerde taakmening omvat de volgende secties:
 
 In de sectie Taakdetails wordt informatie over de taak weergegeven. De weergegeven informatie is afhankelijk van de configuratie-instellingen van de [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md) in de workflow. In het bovenstaande voorbeeld worden de beschrijving, de status, de begindatum en de workflow weergegeven die voor de taak worden gebruikt. U kunt ook een bestand aan de taak koppelen.
 
-#### formulier {#form}
+#### Formulier {#form}
 
 Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulier en eventuele bijlagen op veldniveau weergegeven.
 
@@ -99,11 +99,11 @@ Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebie
 
 Op de werkbalk Handelingen staan alle beschikbare opties voor de taak. Terwijl sparen, het Terugstellen, en de Delegatie standaardacties zijn, worden andere beschikbare acties gevormd in [Taakstap toewijzen](/help/sites-developing/workflows-step-ref.md). In het bovenstaande voorbeeld worden Goedkeuren en Afwijzen geconfigureerd in de workflow.
 
-Wanneer u de taak uitvoert, gaat deze verder in de workflow.
+Terwijl u aan de taak werkt, gaat het verder in de workflow.
 
 ### Voltooide taken weergeven {#view-completed-tasks}
 
-AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status, begin- en einddatum enzovoort. Voltooide taken weergeven:
+AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status en begin- en einddatum. Voltooide taken weergeven:
 
 1. Tik in AEM Postvak IN ![aan de zijkant schakelen1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
 1. Tikken **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
@@ -141,7 +141,7 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
       | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype) project om een implementeerbaar AEM pakket te maken. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
+   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project om een implementeerbaar AEM pakket te maken. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

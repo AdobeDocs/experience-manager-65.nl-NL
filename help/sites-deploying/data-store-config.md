@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 1%
+source-wordcount: '3521'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +48,7 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 >
 >Als u een upgrade uitvoert van een oudere versie van Eak, dient u een back-up te maken van de `crx-quickstart/install`map eerst. Na de upgrade herstelt u de inhoud van de map naar de geüpgrade installatie en wijzigt u de extensie van de configuratiebestanden vanuit **.cfg** tot **.config**.
 >
->Als u dit artikel leest ter voorbereiding op een upgrade van een **AEM 5,x** , dient u [upgrade](https://docs.adobe.com/content/docs/en/aem/6-0/deploy/upgrade.html) documentatie eerst.
+>Als u dit artikel leest ter voorbereiding op een upgrade van een **AEM 5,x** , dient u [upgrade](https://experienceleague.adobe.com/docs/) documentatie eerst.
 
 ### Segmentknooppuntarchief {#segment-node-store}
 
@@ -109,7 +109,7 @@ customBlobStore=B"false"
 
 Wanneer het behandelen van groot aantal binaire getallen, adviseert men dat een externe gegevensopslag in plaats van de standaardknoopopslag wordt gebruikt om prestaties te maximaliseren.
 
-Als uw project bijvoorbeeld een groot aantal media-elementen vereist, kunt u deze sneller openen dan ze rechtstreeks in een MongoDB opslaan als u ze onder de File- of S3 Data Store opslaat.
+Als uw project bijvoorbeeld veel media-elementen vereist, kunt u deze sneller opslaan onder de File of S3 Data Store dan ze rechtstreeks in een MongoDB op te slaan.
 
 De File Data Store biedt betere prestaties dan MongoDB, en back-up- en herstelbewerkingen in Mongo zijn ook trager bij een groot aantal middelen.
 
@@ -139,11 +139,11 @@ Deze configuratieopties zijn beschikbaar:
 
 AEM kunnen worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage Service (S3). Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID voor configuratie.
 
-Om de S3 functionaliteit van de gegevensopslag toe te laten, moet een eigenschappak dat de S3 Schakelaar van de Datastore bevat worden gedownload en worden geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de nieuwste versie van de 1.10.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.s3connector-1.10.0.zip). Bovendien moet u ook het nieuwste AEM servicepakket downloaden en installeren, zoals vermeld op het tabblad [AEM 6.5 Opmerkingen bij de release](/help/release-notes/release-notes.md) pagina.
+Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de nieuwste versie van de 1.10.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.s3connector-1.10.0.zip). U moet ook het nieuwste AEM servicepakket downloaden en installeren, zoals vermeld op het tabblad [AEM 6.5 Opmerkingen bij de release](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
 >
->Wanneer u AEM gebruikt met TarMK, worden binaire bestanden standaard opgeslagen in het dialoogvenster `FileDataStore`. Als u TarMK met de S3 Datastore wilt gebruiken, moet u beginnen AEM het `crx3tar-nofds` runmode, bijvoorbeeld:
+>Wanneer u AEM gebruikt met TarMK, worden binaire bestanden standaard opgeslagen in het dialoogvenster `FileDataStore`. Als u TarMK met de S3 Datastore wilt gebruiken, moet u AEM gebruiken `crx3tar-nofds` runmode, bijvoorbeeld:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -185,7 +185,7 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 
 ## Een upgrade uitvoeren naar een nieuwe versie van de 1.10.x S3-connector {#upgrading-to-a-new-version-of-the-s-connector}
 
-Voer de volgende stappen uit als u wilt upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
+Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-connector (bijvoorbeeld van 1.10.0 naar 1.10.4):
 
 1. Stop de AEM instantie.
 
@@ -238,7 +238,7 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 | maxConnections | Stel het maximum aantal toegestane open HTTP-verbindingen in. | 50 | Nee. |
 | maxErrorRetry | Stel het maximumaantal pogingen voor mislukte (opvraagbare) aanvragen in. | 3 | Nee. |
 | minRecordLength | De minimale grootte van een object (in bytes) die moet worden opgeslagen in de gegevensopslag. | 16384 | Nee. |
-| path | Het lokale pad van de AEM datastore. | `crx-quickstart/repository/datastore` | Nee. |
+| pad | Het lokale pad van de AEM datastore. | `crx-quickstart/repository/datastore` | Nee. |
 | proxyHost | Stel de optionele proxyhost in waarmee de client verbinding maakt. |  | Nee. |
 | proxyPort | Stel de optionele proxypoort in waarmee de client verbinding maakt. |  | Nee. |
 | s3Bucket | Naam van het S3 emmertje. |  | Ja |
@@ -306,7 +306,7 @@ Het geheime voorgeheugen heeft een groottegrens en het kan worden gevormd door d
 
 #### Downloads {#downloads}
 
-Het lokale geheime voorgeheugen zal op het verslag van het gevraagde dossier/blok worden gecontroleerd alvorens tot het van DataStore toegang te hebben. Wanneer het geheime voorgeheugen de gevormde grens overschrijdt (zie `cacheSize` (parameter) tijdens het toevoegen van een bestand aan de cache, worden een aantal bestanden uitgepakt om ruimte vrij te maken.
+Het lokale geheime voorgeheugen wordt gecontroleerd op het verslag van het gevraagde dossier/blok alvorens tot het van DataStore toegang te hebben. Wanneer het geheime voorgeheugen de gevormde grens overschrijdt (zie `cacheSize` (parameter) wanneer u een bestand toevoegt aan de cache, worden sommige bestanden verwijderd om ruimte vrij te maken.
 
 #### Asynchroon uploaden {#async-upload}
 
@@ -360,14 +360,14 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 #### Een gedeelde gegevensopslag configureren {#configuring-a-shared-data-store}
 
-1. Maak eerst het configuratiebestand van de gegevensopslagruimte voor elke instantie die nodig is om de gegevensopslag te delen:
+1. Maak eerst het configuratiebestand van de gegevensopslagruimte op elke instantie die nodig is om de gegevensopslag te delen:
 
    * Als u een `FileDataStore`, maakt u een bestand met de naam `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` en plaatst deze in de `<aem-install>/crx-quickstart/install` map.
 
    * Als u S3 gebruikt als gegevensopslag, maakt u een bestand met de naam `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` in de `<aem-install>/crx-quickstart/install` map als hierboven.
 
-1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie om aan de zelfde gegevensopslag te richten. Zie voor meer informatie [dit artikel](/help/sites-deploying/data-store-config.md#data-store-configurations).
-1. Als de instantie is gekloond vanaf een bestaande server, moet u de `clusterId` van het nieuwe exemplaar door het recentste hulpmiddel van de eiken-looppas te gebruiken terwijl de bewaarplaats off-line is. De opdracht die u moet uitvoeren is:
+1. Wijzig de de configuratiedossiers van de gegevensopslag op elke instantie zodat richten zij aan de zelfde gegevensopslag. Zie voor meer informatie [dit artikel](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Als de instantie is gekloond van een bestaande server, moet u het `clusterId` van het nieuwe exemplaar door het recentste hulpmiddel van de eiken-looppas te gebruiken terwijl de bewaarplaats off-line is. De opdracht die u moet uitvoeren is:
 
    ```xml
    java -jar oak-run.jar resetclusterid < repository path | Mongo URI >
@@ -375,7 +375,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
    >[!NOTE]
    >
-   >Als een de knoopopslag van het Segment wordt gevormd dan moet de bewaarplaatspad worden gespecificeerd. Standaard is het pad `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Als een Document Nodeopslag wordt gevormd kunt u gebruiken [URI monoverbinding](https://docs.mongodb.org/manual/reference/connection-string/).
+   >Als een de knoopopslag van het Segment wordt gevormd, dan moet de bewaarplaatspad worden gespecificeerd. Standaard is het pad `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Als een Document Nodeopslag wordt gevormd kunt u gebruiken [URI monoverbinding](https://docs.mongodb.org/manual/reference/connection-string/).
 
    >[!NOTE]
    >
@@ -385,7 +385,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >Houd er rekening mee dat verschillende versies van het gereedschap moeten worden gebruikt, afhankelijk van de eikenversie die u gebruikt bij de AEM installatie. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
+   >Welke versies van het gereedschap worden gebruikt, is afhankelijk van de eikversie die u gebruikt bij de AEM. Controleer de onderstaande lijst met versievereisten voordat u het gereedschap gebruikt:
    >
    >
    >
@@ -393,7 +393,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
    >    * Voor eiken-versies **nieuwer dan bovenstaande**, gebruikt u de versie van de eik-run die overeenkomt met de eik-kern van de AEM-installatie.
 
 
-1. Ten slotte valideert u de configuratie. Hiervoor moet u zoeken naar een uniek bestand dat aan de gegevensopslag is toegevoegd door elke opslagplaats die de gegevensopslag deelt. De bestandsindeling is `repository-[UUID]`, waarbij de UUID een unieke id is van elke afzonderlijke opslagplaats.
+1. Ten slotte valideert u de configuratie. Om te valideren, zoekt u naar een uniek bestand dat aan de gegevensopslag is toegevoegd door elke opslagplaats die het deelt. De bestandsindeling is `repository-[UUID]`, waarbij de UUID een unieke id is van elke afzonderlijke opslagplaats.
 
    Daarom zou een juiste configuratie zo vele unieke dossiers moeten hebben aangezien er bewaarplaatsen zijn die de gegevensopslag delen.
 
@@ -404,13 +404,13 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 ## Azure Data Store {#azure-data-store}
 
-AEM kan worden geconfigureerd om gegevens op te slaan in Microsoft Azure-opslagservice. Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID voor configuratie.
+AEM kunnen worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID voor configuratie.
 
-Om de functionaliteit van de Azure Data Store mogelijk te maken, moet een functiepakket met de Azure Connector worden gedownload en geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de nieuwste versie van de 1.6.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de nieuwste versie van de 1.6.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Wanneer het gebruiken van AEM met TarMK, zullen de binaire getallen door gebrek in FileDataStore worden opgeslagen. Als u TarMK wilt gebruiken met de Azure DataStore, moet u beginnen AEM met het `crx3tar-nofds` runmode, bijvoorbeeld:
+>Wanneer het gebruiken van AEM met TarMK, worden de binaire getallen opgeslagen door gebrek in FileDataStore. Als u TarMK wilt gebruiken met de Azure DataStore, moet u beginnen AEM met het `crx3tar-nofds` runmode, bijvoorbeeld:
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -437,13 +437,13 @@ Na het downloaden kunt u de Azure-connector als volgt installeren en configurere
 
 U kunt het configuratiebestand gebruiken met de volgende opties:
 
-* azureSas=&quot;&quot;: In versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **Als het configuratiebestand zowel SAS- als opslagreferenties bevat, heeft SAS prioriteit.** Voor meer informatie over SAS raadpleegt u de [officiële documentatie](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
+* azureSas=&quot;&quot;: In versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **Als het configuratiebestand zowel SAS- als opslagreferenties bevat, heeft SAS prioriteit.** Voor meer informatie over SAS raadpleegt u de [officiële documentatie](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Het Azure Blob Endpoint. Bijvoorbeeld https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: De naam van de opslagaccount. Raadpleeg voor meer informatie over de Microsoft Azure-verificatiereferenties de [officiële documentatie](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: De naam van de opslagaccount. Voor meer informatie over de Microsoft® Azure verificatiereferenties raadpleegt u de [officiële documentatie](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
 
 * geheimakey=&quot;&quot;: De toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
-* container=&quot;&quot;: De naam van de Microsoft Azure-opslagcontainer. De container is een groepering van een set bollen. Lees voor meer informatie de [officiële documentatie](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
+* container=&quot;&quot;: De naam van de Microsoft® Azure-opslagcontainer. De container is een groepering van een set bollen. Lees voor meer informatie de [officiële documentatie](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
 * maxConnections=&quot;&quot;: Het gelijktijdige aantal gelijktijdige aanvragen per bewerking. De standaardwaarde is 1.
 * maxErrorRetry=&quot;&quot;: Aantal pogingen per verzoek. De standaardwaarde is 3.
 * socketTimeout=&quot;&quot;: Het time-outinterval, in milliseconden, dat voor de aanvraag wordt gebruikt. De standaardwaarde is 5 minuten.
@@ -451,7 +451,7 @@ U kunt het configuratiebestand gebruiken met de volgende opties:
 Naast de bovenstaande instellingen kunnen ook de volgende instellingen worden geconfigureerd:
 
 * pad: Het pad van de gegevensopslag. De standaardwaarde is `<aem-install>/repository/datastore.`
-* RecordLength: De minimale grootte van een object dat in de gegevensopslag moet worden opgeslagen. De standaardwaarde is 16KB.
+* RecordLength: De minimale grootte van een object dat in de gegevensopslag moet worden opgeslagen. De standaardwaarde is 16 kB.
 * maxCachedBinarySize: Binaire bestanden met een grootte kleiner dan of gelijk aan deze grootte worden opgeslagen in de geheugencache. De grootte is in bytes. De standaardwaarde is 17408 (17 kB).
 * cacheSize: De grootte van de cache. De waarde wordt opgegeven in bytes. De standaardwaarde is 64 GB.
 * geheim: Slechts te gebruiken als het gebruiken van binaryless replicatie voor gedeelde datastore opstelling.
@@ -484,24 +484,24 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 
    >[!NOTE]
    >
-   >De `markOnly` parameter geeft aan of de sweep-fase van de afvalophaling wordt uitgevoerd.
+   >De `markOnly` parameter geeft aan of de sweep-fase van de opschoonfunctie wordt uitgevoerd.
 
 ## De Inzameling van de Winkel van gegevens voor een Gedeelde Opslag van Gegevens {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
->Wanneer het uitvoeren van huisvuilinzameling in een gegroepeerde of gedeelde opstelling van de gegevensopslag (met Mongo of Tar van het Segment) zou het logboek waarschuwingen over de onmogelijkheid kunnen tonen om bepaalde blob IDs te schrappen. Dit gebeurt omdat de blob IDs die in een vorige huisvuilinzameling worden geschrapt verkeerd opnieuw van verwijzingen wordt voorzien door andere cluster of gedeelde knopen die geen informatie over de schrappingen van identiteitskaart hebben. Dientengevolge, wanneer de huisvuilinzameling wordt uitgevoerd registreert het een waarschuwing wanneer het probeert om identiteitskaart te schrappen die reeds in de laatste looppas is geschrapt. Dit gedrag heeft geen invloed op prestaties of functionaliteit.
+>Wanneer het uitvoeren van huisvuilinzameling in een gegroepeerde of gedeelde gegevensopslag, opstelling (met Mongo of Tar van het Segment) zou het logboek waarschuwingen over de onmogelijkheid kunnen tonen om bepaalde blob IDs te schrappen. Klob-id&#39;s die zijn verwijderd in een vorige opschoning, worden onjuist weergegeven door andere clusters of gedeelde knooppunten die geen informatie hebben over het verwijderen van id&#39;s. Dientengevolge, wanneer de huisvuilinzameling wordt uitgevoerd registreert het een waarschuwing wanneer het probeert om identiteitskaart te schrappen die reeds in de laatste looppas is geschrapt. Dit gedrag heeft geen invloed op prestaties of functionaliteit.
 
 >[!NOTE]
 >
->Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. Om dit te voorkomen, moet u BlobTracker op alle auteur onbruikbaar maken en instanties publiceren als volgt:
+>Als u een gedeelde datastore opstelling gebruikt en de inzameling van het datastore huisvuil wordt onbruikbaar gemaakt, kan het runnen van de Binaire schoonmaaktaak van Lucene plotseling de gebruikte schijfruimte verhogen. U kunt BlobTracker op alle auteur uitschakelen en instanties publiceren door het volgende te doen:
 >
 >1. Stop de AEM Instance.
 >2. Voeg de `blobTrackSnapshotIntervalInSecs=L"0"` in de `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` bestand. Deze parameter vereist eik 1.12.0, 1.10.2 of later.
 >3. Start de AEM opnieuw.
 
 
-Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoning van gegevens op te slaan in een gedeelde gegevensopslag te kunnen uitvoeren:
+Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoonfunctie van gegevensopslaggegevens uit te voeren in een gedeelde gegevensopslag:
 
 1. Zorg ervoor dat om het even welke onderhoudstaken die voor de inzameling van huisvuil van de gegevensopslag worden gevormd op alle bewaarplaats instanties onbruikbaar worden gemaakt die de gegevensopslag delen.
 1. Voer de in [Binaire afvalophaling](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) individueel **alles** gegevensopslaginstanties die de gegevensopslag delen. Zorg er echter voor dat u `true` voor de `markOnly` parameter voordat u op de knop Invoke klikt:
@@ -513,4 +513,4 @@ Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopsl
    1. Ga naar de JMX-console en selecteer de Repository Manager Mbean.
    1. Klik op de knop **Klik op startDataStoreGC (booleaanse markeringOnly)** koppeling.
    1. In het volgende dialoogvenster voert u `false` voor de `markOnly` opnieuw.
-   Hiermee worden alle gevonden bestanden gesorteerd met behulp van de markeringsfase die voor is gebruikt en worden de overige bestanden die niet in de gegevensopslag worden gebruikt, verwijderd.
+   Alle gevonden bestanden worden gesorteerd met behulp van de markeringsfase die voor is gebruikt en de overige bestanden die niet in de gegevensopslag worden gebruikt, worden verwijderd.

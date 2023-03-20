@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -49,13 +49,13 @@ Veel prestatieproblemen worden pas zichtbaar wanneer het systeem zwaar belast is
 
 Voordat wordt begonnen met het testen van de prestaties, moeten niet-functionele eisen worden vastgesteld om de belasting- en responstijden te bepalen. Als u van een bestaand systeem migreert, zorg ervoor dat de reactietijd aan uw huidige productiewaarden gelijkaardig is. Voor lading, is het best om de huidige pieklading te nemen en te verdubbelen. Hierdoor kan de website goed blijven functioneren terwijl deze groeit.
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestaties op de markt. Wanneer het runnen van een lading die hulpmiddel produceert, is het belangrijk om ervoor te zorgen dat de computers die de tests uitvoeren voldoende netwerkbandbreedte hebben. Als de testmachine de grenzen van de verbinding bereikt, wordt geen extra belasting in de testomgeving gegenereerd.
 
 #### Testgereedschappen {#testing-tools}
 
-* Adobe **Dag** kan worden gebruikt om belasting te genereren op AEM instanties en prestatiegegevens te verzamelen. Het AEM engineeringteam van Adobe gebruikt het gereedschap voor het testen van de belasting van het AEM product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Zie voor meer informatie de [Tough Day-documentatie](/help/sites-developing/tough-day.md).
+* Adobe **Dag** kan worden gebruikt om belasting te genereren op AEM instanties en prestatiegegevens te verzamelen. Adobe gebruikt het gereedschap om het AEM zelf te testen. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Zie voor meer informatie de [Tough Day-documentatie](/help/sites-developing/tough-day.md).
 
 * AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken en foutenmeldingen snel te zien. Zie voor meer informatie de [Diagnosemiddelen](/help/sites-administering/operations-dashboard.md#diagnosis-tools) sectie van de documentatie van het vluchthandboek.
 * Apache levert een product genaamd **JMeter** die kunnen worden gebruikt voor prestatie- en belastingtests en functioneel gedrag. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter is te vinden op de website van Apache op [https://jmeter.apache.org/](https://jmeter.apache.org/)
@@ -76,7 +76,7 @@ De [Monitorprestaties](/help/sites-deploying/monitoring-and-maintaining.md#monit
 
 **Modus voor ontwikkelaars in Touch UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface om de rendertijd voor elk van de componenten op de pagina te zien en stacksporen van eventuele fouten te zien. Voor meer informatie over ontwikkelaarwijze, zie dit [CQ Gems-presentatie](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface om de rendertijd voor elk van de componenten op de pagina te zien en stacksporen van eventuele fouten te zien. Voor meer informatie over ontwikkelaarwijze, zie dit [CQ Gems-presentatie](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
 **Het gebruiken van rlog.jar om de verzoeklogboeken te lezen**
 
@@ -88,7 +88,7 @@ De [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashbo
 
 **PageSpeed-gereedschappen**
 
-De PageSpeed-gereedschappen van Google bieden een siteanalyse die voldoet aan de aanbevolen procedures voor paginaprestaties en een insteekmodule die naast de dispatcher op een Apache-instantie kan worden geïnstalleerd voor extra optimalisaties. Zie voor meer informatie de [PaginaSpeed Tools-website](https://developers.google.com/speed/pagespeed/).
+De Google PageSpeed-gereedschappen bieden een siteanalyse die voldoet aan de aanbevolen procedures voor paginaprestaties en een insteekmodule die naast de dispatcher op een Apache-instantie kan worden geïnstalleerd voor extra optimalisaties. Zie voor meer informatie de [PaginaSpeed Tools-website](https://developers.google.com/speed/pagespeed/).
 
 ## Auteursomgeving {#author-environment}
 
@@ -153,6 +153,6 @@ Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen 
 * Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Hierdoor wordt een uitsplitsing van elk inhoudsgebied op de pagina en de laadtijd gegenereerd
 * Alle JS en CSS op de site miniaturen. Zie deze voor meer informatie over hoe u dit kunt doen [blogbericht](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Elimineer ingesloten CSS en JS uit de componenten. Ze moeten worden opgenomen in en geminiatuurd op de bibliotheken aan de clientzijde om het aantal aanvragen te minimaliseren dat vereist is om de pagina weer te geven
-* Gebruik browsergereedschappen zoals het tabblad Netwerk van Chrome om de serveraanvragen te inspecteren en te zien welke de langste aanvragen uitvoeren.
+* Gebruik browsergereedschappen, zoals het tabblad Netwerk van Chrome, om de serveraanvragen te inspecteren en te zien welke de langste aanvragen uitvoeren.
 
 Als probleemgebieden zijn geïdentificeerd, kan de toepassingscode worden gecontroleerd op optimalisatie van de prestaties. Om het even welke uit de doos AEM eigenschappen die niet behoorlijk presteren kunnen met de Steun van de Adobe worden behandeld.

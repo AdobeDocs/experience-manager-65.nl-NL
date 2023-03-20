@@ -2,9 +2,9 @@
 title: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 description: Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: d33abafa0478de1f7b637a14df6d2b7712000c03
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '259'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,10 @@ U kunt drie methoden gebruiken om metagegevens en tags toe te voegen:
 * Bij het maken van het fragment:
 
    ![Inhoudsfragment maken - naam opgeven](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+
+* De **Variaties** tabblad van de editor voor inhoudsfragmenten kunt u vooraf gedefinieerde **Tags** van uw project:
+
+   ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 * De **Metagegevens** kunt u zowel verschillende metagegevensvelden als vooraf gedefinieerde velden toevoegen aan de editor voor het inhoudsfragment **Tags** van uw project:
 

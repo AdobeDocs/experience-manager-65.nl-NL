@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 8%
+source-wordcount: '979'
+ht-degree: 7%
 
 ---
 
@@ -25,11 +25,11 @@ Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-accou
 * Voeg Soorten publiek toe - of Adobe Target publiek of segmenten ContextHub.
 * Het publiek beheren.
 
-Een publiek, genoemd *segment* in ContextHub en de Context van de Cliënt, is een klasse van bezoekers die door specifieke criteria worden bepaald, die dan bepaalt wie een gerichte activiteit ziet. Wanneer u een activiteit richt, kunt u of publiek direct in het Doelproces selecteren of nieuwe degenen in de console van het Publiek creëren.
+Een publiek, genoemd *segment* in ContextHub en de Context van de Cliënt, is een klasse van bezoekers die door specifieke criteria worden bepaald, die dan bepaalt wie een gerichte activiteit ziet. Wanneer u een activiteit richt, kunt u of publiek direct in het Doelproces selecteren of meer in de console van het Publiek creëren.
 
 In de console van het publiek, worden de soorten publiek georganiseerd door merk.
 
-Soorten publiek is beschikbaar in de modus Doel voor [ontwerpen, doelinhoud](/help/sites-authoring/content-targeting-touch.md), waarin u ook soorten publiek kunt maken (maar Adobe Target-soorten publiek moet maken in de console Soorten publiek). De soorten publiek dat u op het richten wijze creeert verschijnen in de console van het Soorten publiek.
+Soorten publiek is beschikbaar in de modus Doel voor [ontwerpen, doelinhoud](/help/sites-authoring/content-targeting-touch.md), waarin u ook soorten publiek kunt maken (maar u moet een Adobe Target-publiek maken in de console Soorten publiek). De soorten publiek dat u op het richten wijze creeert verschijnen in de console van het Soorten publiek.
 
 Het publiek wordt weergegeven met een label waarin wordt beschreven welk soort publiek wordt gedefinieerd:
 
@@ -54,7 +54,7 @@ Om een segment ContextHub in de console van het publiek tot stand te brengen:
    >
    >U kunt de gewijzigde lijst sorteren door op **Gewijzigd** te tikken of te klikken om in aflopende volgorde te sorteren om de nieuwe doelgroep te zien.
 
-Voor meer detail over het creëren van segmenten die ContextHub gebruiken, gelieve te zien [Het vormen Segmentatie met ContextHub](/help/sites-administering/segmentation.md) documentatie.
+Voor meer detail over het creëren van segmenten die ContextHub gebruiken, zie [Het vormen Segmentatie met ContextHub](/help/sites-administering/segmentation.md) documentatie.
 
 ## Een Adobe Target-publiek maken met de Audience Console {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -93,9 +93,9 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 |---|---|---|
 | **Mobiel** | Het doel mobiele apparaten die op parameters zoals mobiel apparaat, type van apparaat, apparatenverkoper, het schermafmetingen (door pixel) worden gebaseerd, en meer. | Zie [Mobiele documentatie](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) in Adobe Target. |
 | **Aangepast** | Aangepaste parameters zijn parameters mbox. Als u om het even welke mbox parameters tot dozen, of de targetPageParams functie doorgeeft, verschijnen die parameters hier voor gebruik in publiek. | Zie [Documentatie voor aangepaste parameters](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) in Adobe Target. |
-| **OS** | U kunt zich richten op bezoekers die een bepaald besturingssysteem gebruiken. | Doelgebruikers die Linux, Macintosh of Windows gebruiken. |
+| **OS** | U kunt zich richten op bezoekers die een bepaald besturingssysteem gebruiken. | Doelgebruikers die Linux®, Macintosh of Windows gebruiken. |
 | **Sitepagina&#39;s** | Doelbezoekers die zich op een specifieke pagina bevinden of een specifieke parameter mbox hebben. | Zie [Documentatie over sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) in Adobe Target. |
-| **Browser** | U kunt zich richten op gebruikers die een specifieke browser of specifieke browseropties gebruiken wanneer zij uw pagina bezoeken. | Zie [Documentatie voor browseropties](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)in Adobe Target. |
+| **Browser** | U kunt zich richten op gebruikers die een specifieke browser of specifieke browseropties gebruiken wanneer zij uw pagina bezoeken. | Zie [Documentatie voor browseropties](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=en) in Adobe Target. |
 | **Bezoekerprofiel** | Doelbezoekers die voldoen aan specifieke profielparameters. | Zie [Documentatie bezoekersprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) in Adobe Target. |
 | **Verkeersbronnen** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [Documentatie verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) in Adobe Target. |
 
@@ -105,7 +105,7 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 >
 >U kunt alleen Adobe Target-soorten publiek bewerken die zijn gemaakt in hetzelfde AEM waarin u bewerkt. Doelpubliek dat in verschillende AEM is gemaakt, kan niet worden bewerkt.
 
-U kunt om het even welk Contextpubliek van ContextHub of van de Cliënt van de console van het publiek uitgeven. U kunt het Adobe Target-publiek altijd bewerken, maar alleen het publiek dat is gemaakt in AEM:
+U kunt om het even welk Contextpubliek van ContextHub of van de Cliënt van de console van het publiek uitgeven. U kunt ook het Adobe Target-publiek bewerken, maar alleen het publiek dat is gemaakt in AEM:
 
 1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
 1. Tik of klik op het pictogram naast het ContextHub- of Client-segment dat u wilt bewerken en tik of klik op **Bewerken**.

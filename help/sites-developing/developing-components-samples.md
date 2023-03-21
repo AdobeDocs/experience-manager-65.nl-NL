@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '221'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 In deze sectie vindt u enkele voorbeelden van het maken van uw eigen componenten voor AEM.
 
-Zie voor de onderliggende concepten:
+Voor de onderliggende concepten, zie:
 
 * [Componenten AEM - de basisbeginselen](/help/sites-developing/components-basics.md)
 * [AEM ontwikkelen](/help/sites-developing/developing-components.md)
@@ -45,11 +45,11 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open aem-creatie-dialoog-gebieden-aanpassing project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]
 >
->Dit codevoorbeeld is gerelateerd aan de AEM Gems-sessie op [Dialoogvenstervelden aanpassen](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>Dit codevoorbeeld is gerelateerd aan de AEM Gems-sessie op [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
 ## Gerelateerde bronnen {#related-resources}
 

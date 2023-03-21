@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3456'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Een bestaande component uitbreiden kan worden bereikt met [Hiërarchie van bront
 
 >[!NOTE]
 >
->Componenten kunnen ook opnieuw worden gedefinieerd met een bedekking op basis van de logica van het zoekpad. In dat geval echter [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) wordt niet geactiveerd en `/apps` moet de volledige overlay definiëren.
+>Componenten kunnen ook opnieuw worden gedefinieerd met een bedekking op basis van de logica van het zoekpad. In dat geval echter [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) niet geactiveerd is en `/apps` moet de volledige overlay definiëren.
 
 >[!NOTE]
 >
@@ -95,11 +95,11 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### Java gebruiken {#using-java}
 
-[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
+[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hiermee kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
-### Werken met JavaScript {#using-javascript}
+### JavaScript gebruiken {#using-javascript}
 
-[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://helpx.adobe.com/experience-manager/htl/using/use-api-javascript.html). Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### Client-Side HTML-bibliotheken gebruiken {#using-client-side-html-libraries}
 
@@ -117,13 +117,13 @@ De [bewerkingsgedrag van een component is geconfigureerd](/help/sites-developing
 
 ## Het gedrag Voorvertoning configureren {#configuring-the-preview-behavior}
 
-De [WCM-modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie wordt ingesteld wanneer wordt geschakeld naar **Voorvertoning** zelfs als de pagina niet is vernieuwd.
+De [WCM-modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie wordt ingesteld wanneer wordt geschakeld naar **Voorvertoning** zelfs als de pagina niet is vernieuwd.
 
 Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moeten zij worden bepaald om zich specifiek te verfrissen, dan zich op de waarde van het koekje baseren.
 
 >[!NOTE]
 >
->In de interface met aanraakfuncties alleen de waarden `EDIT` en `PREVIEW` worden gebruikt voor de [WCM-modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
+>In de interface met aanraakfuncties alleen de waarden `EDIT` en `PREVIEW` worden gebruikt voor de [WCM-modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) cookie.
 
 ## Een dialoogvenster maken en configureren {#creating-and-configuring-a-dialog}
 
@@ -131,9 +131,9 @@ Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwer
 
 ### Gebruikersinterface voor koralen en graniet {#coral-ui-and-granite-ui}
 
-[Koraalinterface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) en [Graniet-interface](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) de moderne kijk op de AEM bepalen.
+[Koraalinterface](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) en [Graniet-interface](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) de moderne kijk op de AEM bepalen.
 
-[De graniet-interface biedt een groot aantal basiscomponenten (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) nodig zijn om een dialoogvenster over de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en [uw eigen widget maken](#creatinganewwidget).
+[De graniet-interface biedt een groot aantal basiscomponenten (widgets)](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) nodig zijn om een dialoogvenster over de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en [uw eigen widget maken](#creatinganewwidget).
 
 Zie voor meer informatie:
 
@@ -141,13 +141,13 @@ Zie voor meer informatie:
 
    * Biedt een consistente gebruikersinterface voor alle cloudoplossingen
    * [Concepten van de AEM interface met aanraakfuncties - koraalinterface](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Handleiding voor koraal](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Handleiding voor koraal](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Graniet-interface
 
    * Verstrekt de prijsverhoging van de Koraal UI die in het Verdelen componenten voor de bouw van consoles UI en dialogen wordt verpakt
    * [Concepten van de AEM interface met aanraakfuncties - graniet-interface](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
+   * [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 
 >[!NOTE]
 >
@@ -198,7 +198,7 @@ Zie voor voorbeelden:
 >
 >Zie:
 >
->* de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 >* de desbetreffende steekproefcode die onder [Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -211,13 +211,13 @@ Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster v
 
 >[!NOTE]
 >
->Voor volledige informatie over de graniet-gebruikersinterface raadpleegt u de [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Voor volledige informatie over de graniet-gebruikersinterface raadpleegt u de [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
 Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken; dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Meer specifiek verstrekt granite UI een waaier van gebiedscomponenten die voor gebruik in dialogen (of, meer in het algemeen, in [formulieren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
+Meer specifiek verstrekt granite UI een waaier van gebiedscomponenten die voor gebruik in dialogen (of, meer in het algemeen, in [formulieren](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)).
 
 >[!NOTE]
 >
@@ -269,7 +269,7 @@ Om logica in uw gebied te injecteren, zou u moeten:
 1. Laat uw veld gemarkeerd zijn met een bepaalde CSS-klasse (de *haak*).
 1. Definieer in uw clientbibliotheek een JS-listener die is gekoppeld aan de naam van die CSS-klasse (dit zorgt ervoor dat uw aangepaste logica alleen binnen het bereik van uw veld valt en niet van invloed is op andere velden van hetzelfde type).
 
-Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. Zie de [Coral UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) om aan te geven op welke gebeurtenis u wilt reageren. Dit lijkt erg op het proces dat u in het verleden met ExtJS moest uitvoeren: Zoek de documentatiepagina van een bepaalde widget en controleer vervolgens de details van de bijbehorende API voor gebeurtenissen.
+Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. Zie de [Coral UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) om aan te geven op welke gebeurtenis u wilt reageren. Dit lijkt erg op het proces dat u in het verleden met ExtJS moest uitvoeren: Zoek de documentatiepagina van een bepaalde widget en controleer vervolgens de details van de bijbehorende API voor gebeurtenissen.
 
 Zie voor een voorbeeld:
 
@@ -308,7 +308,7 @@ Zie voor een voorbeeld:
 
 #### Veldvalidatie (graniet-UI) {#field-validation-granite-ui}
 
-Veldvalidatie in de gebruikersinterface van graniet en de componenten van de gebruikersinterface van graniet (equivalent aan widgets) wordt uitgevoerd met de `foundation-validation` API. [Zie de `foundation-valdiation` Korte documentatie voor meer informatie.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
+Veldvalidatie in de gebruikersinterface van graniet en de componenten van de gebruikersinterface van graniet (equivalent aan widgets) wordt uitgevoerd met de `foundation-validation` API. [Zie de `foundation-valdiation` Korte documentatie voor meer informatie.](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/clientlibs/foundation/js/validation/index.html)
 
 Zie voor voorbeelden:
 
@@ -428,8 +428,8 @@ CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
-* [Open aem-project-archetype project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/archive/master.zip)
+* [Open aem-project-archetype project op GitHub](https://github.com/adobe/aem-project-archetype)
+* Het project downloaden als [een ZIP-bestand](https://github.com/adobe/aem-project-archetype/archive/master.zip)
 
 >[!NOTE]
 >
@@ -464,12 +464,12 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
 
 * Dialoogvensters
 
-   * U moet een nieuw dialoogvenster maken voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
+   * Maak een dialoogvenster voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
    * De [AEM moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) worden geleverd om u te helpen bestaande componenten uit te breiden.
    * [ExtJS toewijzen aan UI-componenten voor graniet](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) verstrekt een geschikt overzicht van xtypes ExtJS en knooptypes van hun gelijkwaardige middeltypes van Granite UI.
-   * Velden aanpassen, raadpleeg de sessie AEM Gems over voor meer informatie [Dialoogvenstervelden aanpassen](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
-   * Migreren van typen naar [Graniet UI-validatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * JS-listeners gebruiken, zie voor meer informatie [Veldgebeurtenissen afhandelen](#handling-field-events) en de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Velden aanpassen, raadpleeg de sessie AEM Gems over voor meer informatie [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * Migreren van typen naar [Graniet UI-validatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
+   * JS-listeners gebruiken, zie voor meer informatie [Veldgebeurtenissen afhandelen](#handling-field-events) en de zitting van AEM Gems over [Dialoogvenstervelden aanpassen](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
 
 ### cq:listenercode migreren {#migrating-cq-listener-code}
 
@@ -497,11 +497,11 @@ Als ontwikkelaar wilt u gemakkelijk toegang tot componentendocumentatie zodat u 
 * Beoogd gebruik
 * Inhoudsstructuur en eigenschappen
 * Toegankelijke API&#39;s en uitbreidingspunten
-* enz.
+* enzovoort
 
-Daarom is het vrij gemakkelijk om het even welke bestaande documentatiemarkering te maken u binnen de component zelf beschikbaar hebt.
+Daarom is het eenvoudig om bestaande documentatiemarkering die u binnen de component zelf beschikbaar hebt, te maken.
 
-U hoeft alleen maar een `README.md` in de componentstructuur. Deze markering wordt dan weergegeven in het dialoogvenster [componentconsole](/help/sites-authoring/default-components-console.md).
+Een `README.md` in de componentstructuur. Deze markering wordt weergegeven in het dialoogvenster [componentconsole](/help/sites-authoring/default-components-console.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 

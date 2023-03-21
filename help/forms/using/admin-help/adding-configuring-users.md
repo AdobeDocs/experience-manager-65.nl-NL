@@ -8,9 +8,9 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1647'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ AEM formulieren kunnen geen onderscheid maken tussen gebruikersaccounts die iden
 
 Wanneer u SQL Server als uw database gebruikt, kunt u geen gebruikers-id maken die meer dan 255 tekens bevat.
 
-Wanneer u MySQL gebruikt, kan de gebruikersnaam uitgebreide tekens bevatten. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, zoals abcde en âbcdè, worden deze als hetzelfde beschouwd. Als bij het synchroniseren bijvoorbeeld een nieuwe gebruiker aan de database is toegevoegd, wordt een vergelijking gemaakt om te controleren of een gebruiker met dezelfde gebruikersnaam in de database aanwezig is. Indien gebruiker *abcde* bestaat al in de database wanneer de nieuwe gebruiker *âbcdè* wordt toegevoegd, kan de vergelijking geen onderscheid maken tussen de twee namen. Aangenomen wordt dat de gebruiker al in de database bestaat en de nieuwe gebruiker wordt genegeerd en niet toegevoegd.
+Wanneer u MySQL gebruikt, kan de gebruikersnaam uitgebreide tekens bevatten. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, zoals abcde en âbcdè, worden deze als hetzelfde beschouwd. Als bij het synchroniseren bijvoorbeeld een nieuwe gebruiker aan de database is toegevoegd, wordt een vergelijking gemaakt om te controleren of een gebruiker met dezelfde gebruikersnaam in de database aanwezig is. Indien gebruiker *abcde* bestaat in de database wanneer de nieuwe gebruiker *âbcdè* wordt toegevoegd, kan de vergelijking geen onderscheid maken tussen de twee namen. Aangenomen wordt dat de gebruiker in de database bestaat en dat de nieuwe gebruiker wordt genegeerd en niet toegevoegd.
 
 Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taakonderzoeken keert geen resultaten voor die gebruikersnamen terug. (Zie [Werken met taken](/help/forms/using/admin-help/tasks.md#working-with-tasks).)
 
@@ -173,4 +173,4 @@ Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Ga voor meer informatie over het aanpassen van de pagina voor foutafhandeling naar [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) in de documentatie van Adobe Experience Manager.
+Ga voor meer informatie over het aanpassen van de pagina voor foutafhandeling naar [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en) in de documentatie van Adobe Experience Manager.

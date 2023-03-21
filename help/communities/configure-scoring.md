@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
-Met de functie AEM Communities scoring en badges kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
+De AEM Communities-functie voor scoren en badges identificeert en beloont leden van de gemeenschap.
 
 De details van het instellen van de functie worden beschreven op
 
@@ -70,7 +70,7 @@ Zoek bijvoorbeeld naar `this.isAssigned` in `/libs/social/forum/components/hbs/t
 
 Indien waar (true), geeft isAssigned aan dat de badge voor een rol is toegewezen en dat de badge als tekst moet worden weergegeven.
 
-Indien onwaar (false), wordt bij Toewijzen aangegeven dat de badge is toegekend voor een verdiende score en dat het badge moet worden weergegeven als een afbeelding.
+Indien onwaar, isAssigned wijst erop dat het badge voor een verdiende score werd verleend en het badge als beeld zou moeten worden getoond.
 
 Wijzigingen in dit gedrag moeten worden aangebracht in een aangepast script (overschrijven of bedekken). Zie [Aanpassing aan clientzijde](/help/communities/client-customize.md).
 
@@ -127,7 +127,7 @@ In de beschrijvingen voor toegang tot scoring- en badinggegevens wordt JSRP gebr
 
 **JSRP bij auteur**: experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
 
-**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatie - instantie . Als de publicatie-instantie wordt uitgevoerd in [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig dat [CRXDE Lite inschakelen](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatieinstantie . Als de publicatie-instantie wordt uitgevoerd in [productiemodus](/help/sites-administering/production-ready.md) (geen samplcontent-runmode), is het nodig dat [CRXDE Lite inschakelen](/help/sites-administering/enabling-crxde-lite.md).
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -135,8 +135,8 @@ De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
 De volgende API&#39;s zijn beschikbaar voor gebruik:
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
 De recentste JavaDocs voor het geïnstalleerde eigenschappak zijn beschikbaar aan ontwikkelaars van de bewaarplaats van de Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](/help/communities/maven.md#javadocs).
 
@@ -170,7 +170,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Eigenschap toevoegen aan weergaveknoppen
+   * Om badges weer te geven, voegt u eigenschap toe
 
       `allowBadges = true`
 
@@ -201,7 +201,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Eigenschap toevoegen aan weergaveknoppen
+   * Om badges weer te geven, voegt u eigenschap toe
 
       `allowBadges = true`
 
@@ -214,7 +214,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, is dit hoe de gebruiker met hun forumingang verschijnt.
+   Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge heeft gekregen, verschijnt de gebruiker met zijn forumingang als volgt:
 
    ![moderator](assets/moderator.png)
 
@@ -242,15 +242,15 @@ Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die s
 
 De onderliggende node van `scoring` is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
 
-Voor de plaats van de Ingenieur van de Geometrixx, zijn de gebruiker en hun score in een weg geconstrueerd met de het schrapen regelnaam, plaatsidentiteitskaart van de gemeenschap ( `engage-ba81p`), een unieke id en de id van de gebruiker:
+Voor de plaats van de Ingenieur van de Geometrixx, zijn de gebruiker, en hun score, in een weg die met de het scoren regelnaam, plaatsidentiteitskaart van de gemeenschap wordt geconstrueerd ( `engage-ba81p`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Voor de Community Components Guide-site bevinden de gebruiker en hun score zich in een pad dat is opgebouwd met de naam van de scoreregel, een standaard-id ( `default-site`), een unieke id en de id van de gebruiker:
+Voor de Community Components-hulplijnsite bevinden de gebruiker en hun score zich in een pad dat is samengesteld met de naam van de scoreregel, een standaard-id ( `default-site`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-De score wordt opgeslagen in de eigenschap `scoreValue_tl` die direct alleen een waarde kunnen bevatten of indirect naar een atomicCounter kunnen verwijzen.
+De score wordt opgeslagen in de eigenschap `scoreValue_tl` die alleen een waarde mogen bevatten of indirect naar een atomicCounter mogen verwijzen.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 

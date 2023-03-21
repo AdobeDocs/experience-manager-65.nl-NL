@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,11 @@ De XML-gegevens worden naar de servlet verzonden met behulp van de **`jcr:data`*
 
 ### Actievelden {#action-fields}
 
-Met een handeling Verzenden kunt u verborgen invoervelden toevoegen (met de HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) -tag) op het weergegeven formulier HTML. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de handeling Verzenden kan gebruiken tijdens het verzenden. De invoervelden worden actievelden genoemd.
+Met een handeling Verzenden kunt u verborgen invoervelden toevoegen (met de HTML [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) -tag) op het weergegeven formulier HTML. Deze verborgen velden kunnen waarden bevatten die nodig zijn tijdens de verwerking van formulierverzendingen. Bij het verzenden van het formulier worden deze veldwaarden teruggeplaatst als aanvraagparameters die de handeling Verzenden kan gebruiken tijdens het verzenden. De invoervelden worden actievelden genoemd.
 
 Met een handeling Verzenden die ook de tijd vastlegt die nodig is om een formulier in te vullen, kunt u bijvoorbeeld de verborgen invoervelden toevoegen `startTime` en `endTime`.
 
-Een script kan de waarden van de `startTime` en `endTime` velden wanneer het formulier wordt gerenderd en vóór het verzenden van het formulier. Het handelingsscript Verzenden `post.jsp` U kunt deze velden vervolgens openen met behulp van aanvraagparameters en de totale tijd berekenen die nodig is om het formulier in te vullen.
+Een script kan de waarden van de `startTime` en `endTime` velden wanneer het formulier wordt gerenderd en vóór het verzenden van het formulier. De ActionScript verzenden `post.jsp` U kunt deze velden vervolgens openen met behulp van aanvraagparameters en de totale tijd berekenen die nodig is om het formulier in te vullen.
 
 ### Bestandsbijlagen {#file-attachments}
 
@@ -102,7 +102,7 @@ Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
-Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de OOTB-actie Store Content (afgekeurd) waarmee de gegevens worden opgeslagen in de CRX-opslagplaats. Bovendien biedt CQ een [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, [vormen](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring de Mail Service) de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
+Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die de gegevens opslaat in de CRX-opslagplaats en u vervolgens een e-mail stuurt. Het adaptieve formulier bevat de OOTB-actie Store Content (afgekeurd) waarmee de gegevens worden opgeslagen in de CRX-opslagplaats. Bovendien biedt CQ een [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API die kan worden gebruikt om e-mails te verzenden. Voordat u de e-mail-API gebruikt, [vormen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) de Day CQ Mail-service via de systeemconsole. U kunt de actie Store Content (afgekeurd) opnieuw gebruiken om de gegevens in de opslagplaats op te slaan. De actie Store Content (afgekeurd) is beschikbaar op de locatie /libs/fd/af/components/guidesubmittype/store in de CRX-opslagruimte.
 
 1. Meld u aan bij CRXDE Lite op de URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Maak een knooppunt met de eigenschap sling:Folder en name store_and_mail in de map /apps/custom_submit_action. Maak de map custom_submit_action als deze nog niet bestaat.
 
@@ -138,7 +138,7 @@ Voer de volgende stappen uit om een aangepaste handeling Verzenden te maken die 
 
    Voeg het script post.POST.jsp toe aan uw handeling. (/apps/custom_submit_action/store_and_mail/).
 
-   Voer de actie OOTB Store uit (script post.POST.jsp). Gebruik de [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ in uw code verstrekt om de actie van de Opslag in werking te stellen. Voeg de volgende code in uw JSP dossier toe:
+   Voer de actie OOTB Store uit (script post.POST.jsp). Gebruik de [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API die CQ in uw code verstrekt om de actie van de Opslag in werking te stellen. Voeg de volgende code in uw JSP dossier toe:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

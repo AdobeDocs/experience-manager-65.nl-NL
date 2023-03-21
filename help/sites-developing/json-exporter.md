@@ -10,9 +10,9 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '444'
 ht-degree: 2%
 
 ---
@@ -27,15 +27,15 @@ Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web
 * Systeemeigen mobiele toepassingen
 * andere kanalen en aanraakpunten buiten AEM
 
-Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdiensten verlenen door JSON-exporter te gebruiken om de inhoud van een (y) AEM pagina in het formaat van het JSON-gegevensmodel te leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdiensten verlenen door de exporteur te gebruiken JSON om de inhoud van om het even welke AEM pagina in het formaat van het JSON gegevensmodel te leveren. Deze methode kan vervolgens door uw eigen toepassingen worden gebruikt.
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Core Components aangezien [release 1.1.0 van de Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
+>De hier beschreven functionaliteit is beschikbaar voor alle Core Components aangezien [release 1.1.0 van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
-Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM pagina in de indeling van het JSON-gegevensmodel leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
+Met de AEM JSON-exportfunctie kunt u de inhoud van elke AEM pagina in JSON-indeling voor gegevensmodellen leveren. Deze methode kan vervolgens door uw eigen toepassingen worden gebruikt.
 
 Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en `.json` extensie.
 
@@ -47,13 +47,13 @@ Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en `.json`
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Zal inhoud leveren zoals:
+1. Levert inhoud zoals:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
-Dit doet u door het volledige pad naar het fragment te gebruiken (via de `jcr:content`); bijvoorbeeld met een achtervoegsel zoals
+Het volledige pad naar het fragment gebruiken (als `jcr:content`); bijvoorbeeld met een achtervoegsel zoals .
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -65,7 +65,7 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
    http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
    ```
 
-* Zal inhoud leveren zoals:
+* Levert inhoud zoals:
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -97,10 +97,10 @@ Zie ook:
 
 Zie voor meer informatie:
 
-* De [Het onderwerp Inhoudsfragmenten in de gebruikershandleiding voor middelen](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* De [Het onderwerp Inhoudsfragmenten in de gebruikershandleiding voor middelen](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&amp;topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en de [Component Inhoudsfragment](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

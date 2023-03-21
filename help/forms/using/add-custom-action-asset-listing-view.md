@@ -11,10 +11,10 @@ discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 1%
+source-wordcount: '1355'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Om het volgende scenario of gelijkaardige te voltooien, vereist u kennis van:
 
 * CRX
 * JavaScript
-* Java
+* Java™
 
 ## Scenario: Voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden {#addcommandtoletters}
 
@@ -55,7 +55,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       >[!NOTE]
       >
-      >Dit pad is specifiek voor het maken van een handeling die werkt met de selectie van een of meer elementen/letters. Als u een handeling wilt maken die zonder selectie werkt, moet u een overlayknooppunt maken voor het volgende pad en de overige stappen dienovereenkomstig uitvoeren:
+      >Dit pad is specifiek voor het maken van een handeling die werkt met de selectie van een of meer elementen/letters. Als u een actie wilt maken die zonder selectie werkt, maakt u een overlayknooppunt voor het volgende pad en voert u de overige stappen dienovereenkomstig uit:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -99,18 +99,18 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         </tr>
         <tr>
         <td>class</td>
-        <td>Tekenreeks</td>
+        <td>String</td>
         <td>stichting-collectie-actie</td>
         </tr>
         <tr>
         <td>stichting-collectie-actie</td>
-        <td>Tekenreeks</td>
+        <td>String</td>
         <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong>type</strong> kan een of meer (komma's scheiden meerdere vermeldingen) van het volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td>
         </tr>
         <tr>
         <td>pictogram</td>
-        <td>Tekenreeks</td>
-        <td>icon-download<br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Voor verschillende beschikbare pictogrammen en instellingen raadpleegt u <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentatie over CoralUI-pictogrammen</a>.<br /> </td>
+        <td>String</td>
+        <td>icon-download<br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Voor verschillende beschikbare pictogrammen en instellingen raadpleegt u <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">documentatie over CoralUI-pictogrammen</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -119,22 +119,22 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         </tr>
         <tr>
         <td>vat</td>
-        <td>Tekenreeks</td>
+        <td>String</td>
         <td>download-flat-pdf-button</td>
         </tr>
         <tr>
         <td>sling:resourceType</td>
-        <td>Tekenreeks</td>
+        <td>String</td>
         <td>graniet/ui/componenten/endor/actionbar/knop</td>
         </tr>
         <tr>
         <td>text</td>
-        <td>Tekenreeks</td>
+        <td>String</td>
         <td>Vlakke PDF downloaden (of een ander label)<br /> <br /> De opdracht die wordt weergegeven in de interface Asset Listing</td>
         </tr>
         <tr>
-        <td>title</td>
-        <td>Tekenreeks</td>
+        <td>titel</td>
+        <td>String</td>
         <td>Een vlakke PDF van de geselecteerde letter downloaden (of een andere label/Alt-tekst)<br /> <br /> De titel is de alt tekst die het Beheer van de Correspondentie toont wanneer de gebruiker over het douanebevel beweegt.</td>
         </tr>
         </tbody>
@@ -264,7 +264,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | sling:resourceType | Tekenreeks | fd/cm/ma/gui/components/admin/clientlibs/admin |
+      | sling:resourceType | String | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
 1. Maak een bestand met de naam POST.jsp met de code voor de afhandeling van handelingen van de opdracht op de volgende locatie:
 
@@ -279,7 +279,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
    1. Dubbelklik op de knop **POST.jsp** bestand openen in CRX.
    1. Voeg de volgende code aan POST.jsp- dossier toe en klik **Alles opslaan**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie voor meer informatie over AEM Forms API&#39;s [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Zie voor meer informatie over AEM Forms API&#39;s [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
       Zie AEM voor meer informatie over AEM bibliotheken [Componenten](/help/sites-developing/components.md).
 

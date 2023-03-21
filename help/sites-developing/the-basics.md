@@ -1,7 +1,7 @@
 ---
 title: AEM kernconcepten
 seo-title: The Basics
-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe te om bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, het Schrapen, OSGi, de Verzender, werkschema's, en MSM
 seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3324'
 ht-degree: 0%
 
 ---
@@ -39,25 +39,25 @@ U hebt de volgende vaardigheden nodig om zich bovenop AEM te ontwikkelen:
 
 U wordt ook aangeraden de [Richtlijnen en beste praktijken](/help/sites-developing/dev-guidelines-bestpractices.md).
 
-## Java Content Repository {#java-content-repository}
+## Java™ Content Repository {#java-content-repository}
 
-De JCR-standaard (Java Content Repository), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatieonafhankelijke manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats.
+De JCR-standaard (Java™ Content Repository), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatieonafhankelijke manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats.
 
 Specificatie lead wordt gehouden door Adobe Research (Zwitserland) AG.
 
-De [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&amp;asteren; wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
+De [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&amp;asteren; wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
 
 ## Experience Server (CRX) en Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-De Server van de Ervaring verstrekt de Diensten van de Ervaring die AEM worden voortgebouwd, en die kunnen worden gebruikt om douanetoepassingen te bouwen, en het sluit de Inhoudsbewaarplaats van de Inhoud op Jackrabbit in.
+De Server van de Ervaring verstrekt de Diensten van de Ervaring die AEM worden voortgebouwd, en die kunnen worden gebruikt om douanetoepassingen te bouwen, en het sluit de Inhoudsbewaarplaats in van de Inhoud op Jackrabbit wordt gebaseerd.
 
-[Apache Jackrabbit](https://jackrabbit.apache.org/) is een open bron, volledig conform, implementatie van JCR API 2.0.
+[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) is een open bron, volledig conform, implementatie van JCR API 2.0.
 
 ## Verwerking van aanvraag voor verzending {#sling-request-processing}
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
-AEM is gemaakt met [Sling](https://sling.apache.org/site/index.html), een toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit, of in het geval van AEM de CRX Content Repository, als gegevensopslagruimte. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM is gemaakt met [Sling](https://sling.apache.org/index.html), een toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt als gegevensopslagruimte een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit of, in het geval van AEM, de CRX Content Repository. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste verwerkingsoverweging. De belangrijkste overweging is in plaats daarvan of de URL wordt omgezet in een inhoudsobject waarvoor vervolgens een script kan worden gevonden om de rendering uit te voeren. Dit biedt uitstekende ondersteuning voor auteurs van webinhoud om pagina&#39;s samen te stellen die eenvoudig aan hun vereisten kunnen worden aangepast.
 
@@ -78,7 +78,7 @@ Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters
 Verkopen is *inhoudgericht*. Dit betekent dat de verwerking wordt geconcentreerd op de inhoud aangezien elk (HTTP) verzoek op inhoud in de vorm van een middel JCR (een gegevensopslagplaats knoop) in kaart wordt gebracht:
 
 * het eerste doel is de bron (JCR-knooppunt) die de inhoud in zijn bezit heeft
-* ten tweede bevindt de representatie, of het script, zich in combinatie met bepaalde delen van het verzoek (bijvoorbeeld kiezers en/of de extensie) uit de eigenschappen resource.
+* ten tweede bevindt de representatie, of het script, zich in de eigenschappen resource die worden gecombineerd met bepaalde delen van het verzoek (bijvoorbeeld kiezers en/of de extensie)
 
 ### RESTful Sling {#restful-sling}
 
@@ -158,34 +158,34 @@ Alle verkoopscripts worden opgeslagen in submappen van `/apps` of `/libs`, die i
 
 Een paar andere punten die u kunt opmerken zijn:
 
-* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven volgens de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
+* Wanneer de methode (GET, POST) wordt vereist, wordt deze in hoofdletters opgegeven zoals in de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
 * verschillende scriptengines worden ondersteund :
 
-   * HTL (Sjabloontaal HTML — door Adobe Experience Manager aanbevolen en aanbevolen Sjabloonsysteem aan serverzijde voor HTML): `.html`
+   * HTL (Sjabloontaal HTML - Adobe Experience Manager heeft het voorkeur en aanbevolen Sjabloonsysteem aan serverzijde voor HTML): `.html`
    * ECMAScript (JavaScript) Pages (uitvoering op de server): `.esp, .ecma`
-   * Java Server Pages (serveruitvoering): `.jsp`
-   * Java Servlet Compiler (uitvoering op de server): `.java`
+   * Java™ Server Pages (serveruitvoering): `.jsp`
+   * Java™ Servlet Compiler (serveruitvoering): `.java`
    * JavaScript-sjablonen (uitvoering op de client): `.jst`
 
 De lijst met scriptengines die door de opgegeven AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
-Daarnaast ondersteunt Apache Sling integratie met andere populaire scriptengines (zoals Groovy, JRuby, Freemarker) en biedt Apache Sling een manier om nieuwe scriptengines te integreren.
+Apache Sling ondersteunt ook integratie met andere populaire scriptengines (bijvoorbeeld Groovy, JRuby, Freemarker) en biedt een manier om nieuwe scriptengines te integreren.
 
 Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs` vervolgens voor:
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+   Het script is /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
-   POST wordt gebruikt in de scriptnaam.
+   POST wordt gebruikt in de manuscriptnaam.
 
-   Het script wordt `/apps/hr/jobs/jobs.POST.esp`.
+   Het script is `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL&#39;s in andere indelingen, niet eindigend met .html
 
-   Bijvoorbeeld `../content/corporate/jobs/developer.pdf`
+   Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
 
    Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
 
@@ -317,7 +317,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Bij Sling, en dus bij CQ5, wordt de optie [Apache Felix](https://felix.apache.org/) implementatie van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het Platform OSGi Service. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Bij Sling, en dus bij CQ5, wordt de optie [Apache Felix](https://felix.apache.org/documentation/index.html) implementatie van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het Platform OSGi Service. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -337,7 +337,7 @@ De volgende zaken zijn van belang voor ontwikkeling:
 
 **Item** Een item is een knooppunt of een eigenschap.
 
-Voor gedetailleerde informatie over het manipuleren van voorwerpen van het Punt, verwijs naar [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) van de interface javax.jcr.Item
+Voor gedetailleerde informatie over het manipuleren van voorwerpen van het Punt, verwijs naar [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) van de interface javax.jcr.Item
 
 **Knooppunt (en de eigenschappen ervan)** Knooppunten en hun eigenschappen worden gedefinieerd in de JCR API 2.0-specificatie (JSR 283). Ze slaan inhoud, objectdefinities, scripts en andere gegevens op.
 
@@ -353,7 +353,7 @@ Als u bijvoorbeeld de eigenschappen van het huidige knooppunt wilt ophalen, kunt
 
 Met currentNode als het huidige knoopvoorwerp.
 
-Voor meer informatie over het manipuleren van voorwerpen van de Knoop, verwijs naar [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Voor meer informatie over het manipuleren van voorwerpen van de Knoop, verwijs naar [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM wordt alle gebruikersinvoer beheerd door widgets. Deze worden vaak gebruikt om het bewerken van een stuk inhoud te besturen.
 
@@ -392,7 +392,7 @@ Als u bijvoorbeeld de naam van de huidige pagina wilt ophalen, kunt u de volgend
 
 S`tring pageName = currentPage.getName();`
 
-Met currentPage wordt het huidige paginaobject. Raadpleeg voor meer informatie over het manipuleren van paginaobjecten de [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+Met currentPage wordt het huidige paginaobject. Raadpleeg voor meer informatie over het manipuleren van paginaobjecten de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Paginabeheer** Het paginabeheer is een interface die methoden biedt voor bewerkingen op paginaniveau.
 
@@ -400,11 +400,11 @@ Bijvoorbeeld, om de bevattende pagina van een middel te krijgen, kunt u de volge
 
 Page myPage = pageManager.getConcontainingPage(myResource);
 
-Met pageManager die het voorwerp van de paginamanager en myResource zijn een middelvoorwerp. Raadpleeg voor meer informatie over de methoden die worden geleverd door de paginabeheerder de [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+Met pageManager die het voorwerp van de paginamanager en myResource zijn een middelvoorwerp. Raadpleeg voor meer informatie over de methoden die worden geleverd door de paginabeheerder de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 
-De volgende lijst geeft een overzicht van de structuur die u in de repository zult zien.
+De volgende lijst geeft een overzicht van de structuur die u in de repository ziet.
 
 >[!CAUTION]
 >
@@ -414,7 +414,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 >[!CAUTION]
 >
->U mag niets wijzigen in het dialoogvenster `/libs` pad. Voor configuratie en andere veranderingen kopieer het punt van `/libs` tot `/apps` en brengt alle wijzigingen aan in `/apps`.
+>Wijzig niets in het dialoogvenster `/libs` pad. Voor configuratie en andere veranderingen kopieer het punt van `/libs` tot `/apps` en brengt alle wijzigingen aan in `/apps`.
 
 * `/apps`
 
@@ -432,7 +432,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 * `/libs`
 
-   Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen uit de doos AEM eigenschappen zoals bijvoorbeeld onderzoek of replicatie. De inhoud in `/libs` mogen niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de uit-van-de-doos AEM eigenschappen zoals onderzoek of replicatie. De inhoud in `/libs` mogen niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -448,11 +448,11 @@ Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanti
 
 ## De verzender {#the-dispatcher}
 
-De Dispatcher is een Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+De Dispatcher is een Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 
-FileVault biedt uw JCR-opslagplaats van bestandssysteemtoewijzing en versiebeheer. Het kan worden gebruikt om AEM ontwikkelingsprojecten met volledige steun voor het opslaan van en het versioning van projectcode, inhoud, configuraties etc., in standaardversiecontrolesystemen (bijvoorbeeld, Subversion) te beheren.
+FileVault biedt uw JCR-opslagplaats van bestandssysteemtoewijzing en versiebeheer. Het kan worden gebruikt om AEM ontwikkelingsprojecten met volledige steun voor het opslaan van en het versioning van projectcode, inhoud, configuraties, etc., in standaardversiecontrolesystemen (bijvoorbeeld, Subversion) te beheren.
 
 Zie de [Gereedschap FileVault](/help/sites-developing/ht-vlttool.md) documentatie voor gedetailleerde informatie.
 
@@ -466,7 +466,7 @@ De Workflow Engine wordt gebruikt om de implementatie van uw workflows en de daa
 
 Met MSM (Multi Site Manager) kunt u eenvoudig meerdere websites beheren die gemeenschappelijke inhoud delen. Met MSM kunt u relaties tussen de sites definiëren, zodat wijzigingen in de inhoud van de ene site automatisch worden gerepliceerd in andere sites.
 
-Websites worden bijvoorbeeld vaak in meerdere talen aangeboden voor internationaal publiek. Wanneer het aantal sites in dezelfde taal laag is (drie tot vijf), is een handmatig proces voor het synchroniseren van inhoud in verschillende sites mogelijk. Zodra het aantal sites echter toeneemt of wanneer meerdere talen bij het proces betrokken zijn, wordt het efficiënter om het proces te automatiseren.
+Websites worden bijvoorbeeld vaak in meerdere talen aangeboden voor internationaal publiek. Wanneer het aantal sites in dezelfde taal laag is (drie tot vijf), is een handmatig proces voor het synchroniseren van inhoud over sites mogelijk. Nochtans, wanneer het aantal plaatsen groeit of wanneer de veelvoudige talen betrokken zijn, wordt het efficiënter om het proces te automatiseren.
 
 * U kunt op efficiënte wijze verschillende taalversies van een website beheren.
 * Een of meer sites automatisch bijwerken op basis van een bronsite:

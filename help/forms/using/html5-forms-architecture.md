@@ -12,7 +12,7 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 0%
@@ -33,9 +33,9 @@ De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket 
 
 Voor details over het eindpunt van REST en gesteunde verzoekparameters, zie [Formuliersjabloon renderen](/help/forms/using/rendering-form-template.md).
 
-Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Vanuit dit profielknooppunt wordt het volgende gelezen: **sling:resourceSuperType** en **sling:resourceType** om te bepalen welke scripts beschikbaar zijn die deze aanvraag voor het renderen van formulieren kunnen verwerken. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
+Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Vanuit dit profielknooppunt wordt het volgende gelezen: **sling:resourceSuperType** en **sling:resourceType** om te bepalen welke scripts beschikbaar zijn die deze aanvraag voor het renderen van formulieren kunnen verwerken. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
 
-Zie voor meer informatie over het oplossen van scriptoplossingen [AEM Cheatblad](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) of [Apache Sling Url-decompositie](https://sling.apache.org/site/url-decomposition.html).
+Zie voor meer informatie over het oplossen van scriptoplossingen [AEM Cheatblad](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) of [Apache Sling Url-decompositie](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Typische stroom van de de vraagvraag van de vormverwerking {#typical-form-processing-call-flow}
 
@@ -179,8 +179,8 @@ Het knooppunt Profile heeft een eigenschap **sling:resourceSuperType** met waard
 * **xfaforms.I18N.&lt;locale>**: Deze bibliotheek bevat gelokaliseerde gegevens.
 * **xfaforms.profile**: Deze bibliotheek bevat implementatie voor XFA Scripting en Layout Engine.
 
-Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken, waarbij gebruik wordt gemaakt van de automatische functies voor samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
-Voor meer informatie over CQ-clientbibliotheken raadpleegt u [Documentatie CQ Clientlib](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
+Deze bibliotheken zijn gemodelleerd als CQ-clientbibliotheken die gebruikmaken van de automatische functies voor samenvoeging, minificatie en compressie van de JavaScript-bibliotheken van het CQ-framework.
+Voor meer informatie over CQ-clientbibliotheken raadpleegt u [Documentatie CQ Clientlib](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
 Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Forms via het verbinden omvat. Dit JSP plaatst ook diverse zuivert opties die op adminconfiguratie of verzoekparameters worden gebaseerd.
 

@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Classic UI Authoring User Guide
 description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 15%
+source-wordcount: '327'
+ht-degree: 16%
 
 ---
 
@@ -39,7 +39,6 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
 

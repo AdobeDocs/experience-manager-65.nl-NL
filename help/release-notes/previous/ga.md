@@ -2,9 +2,9 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4675'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
    * operator &quot;in&quot; voor tekenreeksen, arrays en objecten:
 
       ```html
-      ${'a' in 'abc’}
+      ${'a' in 'abc'}
       ${100 in myArray}
       ${'a' in myObject}
       ```
@@ -428,10 +428,6 @@ AEM 6.5 Forms biedt verschillende nieuwe functies en verbeteringen. De hooglicht
 * Geautomatiseerde validatie van invoergegevens in formuliergegevensmodellen
 
 Zie de [Overzicht van nieuwe functies en verbeteringen in AEM 6.5 Forms](/help/forms/using/whats-new.md) voor informatie over nieuwe en verbeterde functies en documentatiebronnen.
-
-### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
-
-U kunt Livefyre met uw AEM 6.5 instantie integreren. Zie [Hoe te om Livefyre met AEM te integreren](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/livefyre.html).
 
 ### Gebruik klantgerichte ontwikkeling {#leverage-customer-focused-development}
 

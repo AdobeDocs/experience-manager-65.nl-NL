@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Developing User Guide
 description: Leer hoe u uw AEM-exemplaar kunt opbouwen. Meer informatie over het platform en de componenten, en vind informatie over ontwikkelingshulpmiddelen en verpersoonlijking.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 16%
+source-wordcount: '341'
+ht-degree: 17%
 
 ---
 
@@ -39,7 +39,6 @@ Leer hoe u uw AEM-exemplaar kunt opbouwen. Meer informatie over het platform en 
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
 

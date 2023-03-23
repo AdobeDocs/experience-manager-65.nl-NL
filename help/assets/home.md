@@ -5,9 +5,9 @@ user-guide-title: Handleiding voor assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '325'
 ht-degree: 11%
 
 ---
@@ -38,7 +38,7 @@ Digitale middelen maken, beheren, verwerken en distribueren in Experience Manage
 | [Gebruikershandleiding beheren](/help/managing/home.md) | Deze gids beschrijft hoe te om een project van de Experience Manager met succes te beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Leer over het Kader van de Integratie van de Handel op Experience Manager. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met [!DNL Livefyre]. |
+
 
 ## Sleutel [!DNL Experience Manager] bronnen
 

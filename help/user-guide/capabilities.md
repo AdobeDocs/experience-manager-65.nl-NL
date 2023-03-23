@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Capabilities User Guide
 description: Een overzicht van de essentiële capaciteiten van AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 41%
+source-wordcount: '129'
+ht-degree: 46%
 
 ---
 
@@ -44,10 +44,6 @@ ht-degree: 41%
 ## AEM Communities {#aem-communities}
 
 [Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.](/help/communities/home.md)
-
-## AEM Livefyre {#aem-livefyre}
-
-[Door de gebruiker gegenereerde inhoud delen met AEM LiveCycle.](https://experienceleague.adobe.com/docs/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 

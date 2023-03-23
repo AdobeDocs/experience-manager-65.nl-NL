@@ -10,224 +10,225 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 3%
+source-wordcount: '50'
+ht-degree: 0%
 
 ---
 
 # Integreren met Livefyre{#integrating-with-livefyre}
 
-Leer hoe u de toonaangevende curatiemogelijkheden van Livefy met uw AEM 6.5-exemplaar kunt integreren, zodat u in enkele minuten waardevolle door gebruikers gegenereerde inhoud (UGC) kunt publiceren van sociale netwerken naar uw site.
+>[!IMPORTANT]
+>
+>[Adobe Livefyre is officieel het einde van de dienst op 30 november 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
-## Aan de slag {#getting-started}
+<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
-### Livefyre-pakket installeren voor AEM {#install-livefyre-package-for-aem}
+## Getting Started {#getting-started}
 
-AEM 6.5 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleerd. Dit pakket bevat alleen beperkte Livefyre-integratie met AEM Sites en moet worden verwijderd voordat een bijgewerkt pakket kan worden geïnstalleerd. Met het nieuwste pakket kunt u de volledige integratie van Livefyre met AEM ervaren, waaronder Sites, Assets en Commerce.
+### Install Livefyre Package for AEM {#install-livefyre-package-for-aem}
+
+AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package only includes limited Livefyre integration with AEM Sites and must be uninstalled before installing an updated package. With the latest package, you can experience the full integration of Livefyre with AEM, including Sites, Assets, and Commerce.
 
 >[!NOTE]
 >
->Sommige eigenschappen van het AEM-LF pakket hangen van Sociaal Kader (SCF) af. Als u het functiepakket Livefyre gebruikt als onderdeel van een site die geen gemeenschappen is, moet u declareren *cq.social.scf* als een afhankelijkheid in de clientlibs van de auteur van de website. Als u het LF eigenschappak als deel van een communautaire website gebruikt, zou deze gebiedsdeel reeds moeten worden verklaard.
+>Some features of the AEM-LF package depend on Social Component Framework (SCF). If you are using the Livefyre feature pack as part of a non-communities site, you must declare *cq.social.scf* as a dependency in the author clientlibs of the website. If you are using the LF feature pack as part of a communities website, this dependency should already be declared.
 
-1. Klik op de AEM **Gereedschappen** pictogram op de linkerspoorstaaf.
-1. Navigeren naar **Implementatie > Pakketten**.
-1. Blader in Pakketbeheer totdat u het vooraf geïnstalleerde Livefy-functiepakket ziet en klik vervolgens op de titel van het pakket **cq-social-livefyre-pkg-1.2.6.zip** om de opties uit te breiden.
-1. Klikken **Meer > Verwijderen**.
+1. From the AEM homepage, click the **Tools** icon on the left rail.
+1. Navigate to **Deployment &gt; Packages**.
+1. In the Package Manager, scroll until you see the pre-installed Livefyre feature package, then click the package title **cq-social-livefyre-pkg-1.2.6.zip** to expand the options.
+1. Click **More &gt; Uninstall**.
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. LiveCycle-pakket downloaden van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+1. Download Livefyre package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-1. Installeer het gedownloade pakket via Package Manager. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het gebruik van softwaredistributie en -pakketten in AEM
+1. From the Package Manager, install the downloaded package. See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
-   Uw Livefyre-AEM-pakket is nu geïnstalleerd. Voordat u de integratiefuncties kunt gaan gebruiken, moet u AEM configureren om Livefyre te gebruiken.
+   Your Livefyre-AEM package is now installed. Before you can begin using the integration features, you must Configure AEM to use Livefyre.
 
-   Voor meer informatie en versienota&#39;s op eigenschapspakken, zie [Functiepakketten](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
+   For more information and release notes on feature packs, see [Feature Packs](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
 
-### Configureer AEM voor gebruik van Livefyre: Een configuratiemap maken {#configure-aem-to-use-livefyre-create-a-configuration-folder}
+### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
-1. Klik op de AEM **Gereedschappen** pictogram in de linkerspoorstaaf, dan navigeer aan **Algemeen > Configuratiebrowser**.
-   * Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
-1. Klikken **Maken** om het dialoogvenster Configuratie maken te openen.
-1. Geef uw configuratie een naam en controleer de **Cloudconfiguraties** selectievakje.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+1. Click **Create** to open the Create Configuration dialog.
+1. Name your configuration and check the **Cloud Configurations** checkbox.
 
-   Hiermee maakt u een map onder **Extra > Implementatie > LiveCycle Configuration** met de opgegeven naam.
+   This will create a folder under **Tools &gt; Deployment &gt; Livefyre Configuration** with the name provided.
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
 
-### Configureer AEM voor gebruik van Livefyre: Een LiveCycle-configuratie maken {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
+### Configure AEM to use Livefyre: Create a Livefyre Configuration {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
-Configureer AEM om de LiveCyre-licentiereferenties van uw organisatie te gebruiken, zodat communicatie tussen Livefyre en AEM mogelijk is.
+Configure AEM to use your organization's Livefyre license credentials, allowing communication between Livefyre and AEM.
 
-1. Klik op de AEM **Gereedschappen** pictogram in de linkerspoorstaaf, dan navigeer aan **Implementatie > LiveCycle Configuration**.
-1. Selecteer de configuratiemap waarin u een nieuwe configuratie van de Levensstijl wilt creëren, dan klik **Maken**.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **Deployment &gt; Livefyre Configuration**.
+1. Select the configuration folder in which you want to create a new Livefyre configuration, then click **Create**.
 
    ![create-livefyre-configuration1](assets/create-livefyre-configuration1.png)
 
    >[!NOTE]
    >
-   >Mappen moeten de eigenschappen van Cloud Configurations hebben ingeschakeld voordat LiveCycle-configuraties eraan kunnen worden toegevoegd. Configuratiemappen worden gemaakt en beheerd in de [Configuratiebrowser.](/help/sites-administering/configurations.md)
+   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
-   >U kunt geen naam voor een configuratie-het wordt van verwijzingen voorzien door de weg van de omslag het binnen is. U kunt slechts één configuratie per map hebben.
+   >You cannot create a name for a configuration—it is referenced by the path of the folder it is in. You can only have one configuration per folder.
 
-1. Selecteer de nieuwe Livefyre-configuratiekaart en klik vervolgens op **Eigenschappen**.
+1. Select the newly created Livefyre configuration card, then click **Properties**.
 
    ![create-livefyre-configuration2](assets/create-livefyre-configuration2.png)
 
-1. Voer de Livefyre-gegevens van uw organisatie in en klik op **OK**.
+1. Enter your organization's Livefyre credentials, then click **OK**.
 
    ![configure-aem2](assets/configure-aem2.png)
 
-   Voor toegang tot deze informatie opent u de Livefyre-studio en navigeert u naar **Instellingen > Integratie-instellingen > Referenties**.
+   To access this information, open Livefyre studio and navigate to **Settings &gt; Integration Settings &gt; Credentials**.
 
-   Uw AEM-instantie is nu geconfigureerd voor gebruik van LiveCycle en u kunt de integratiefuncties gebruiken.
+   Your AEM instance is now configured to use Livefyre and you can use the integration features.
 
-### Integratie van Single Sign-On aanpassen {#customize-single-sign-on-integration}
+### Customize Single Sign-on Integration {#customize-single-sign-on-integration}
 
-Het Livefyre voor AEM pakket omvat een out-of-the-box integratie tussen de profielen van AEM Communities en de dienst van SSO van Livefyre.
+The Livefyre for AEM package includes an out-of-the-box integration between AEM Communities profiles and Livefyre's SSO service.
 
-Wanneer gebruikers zich aanmelden bij uw AEM, worden ze ook aangemeld bij sociale onderdelen van LiveCycle. Wanneer een aangemelde gebruiker een onderdeel van LiveCycle probeert te gebruiken dat verificatie vereist (zoals het uploaden van een foto), initieert de component LiveCyre gebruikersverificatie.
+When users log into your AEM site, they are also logged into Livefyre social components. When a logged-out user attempts to use a Livefyre component feature that requires authentication (like uploading a photo), the Livefyre component initiates user authentication.
 
-De standaardintegratie voor verificatie is mogelijk niet perfect voor elke site. Om de verificatiestroom in uw sitesjablonen het beste aan te passen, kunt u de standaard LiveCycle Authentication Delegate negeren en aan uw behoeften voldoen. Voer de volgende stappen uit:
+The default authentication integration may not be perfect for every site. To best match the authentication flow in your site templates, you can override the default Livefyre Authentication Delegate to meet your needs. Use these steps:
 
-1. CRXDE Lite gebruiken, kopiëren */libs/social/integrations/livefyre/components/authorizablecomponent/authclientLib* tot */apps/social/integrations/livefyre/components/authorizablecomponent/authclientLib*.
-1. Bewerken en opslaan */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* om een Livefyre Auth Delegate uit te voeren die aan uw behoeften voldoet.
+1. Using CRXDE Lite, copy */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
+1. Edit and save */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* to implement a Livefyre Auth Delegate that meets your needs.
 
-   Voor meer informatie bij het aanpassen van een Afgevaardigde van de Auth, zie [Identiteitsintegratie](https://answers.livefyre.com/developers/identity-integration/).
+   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
 
-   Voor meer informatie over AEM Clientlibs raadpleegt u [Client-Side bibliotheken gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
+## Use Livefyre with AEM Sites {#use-livefyre-with-aem-sites}
 
-## Livefyre gebruiken met AEM Sites {#use-livefyre-with-aem-sites}
+### Add Livefyre Components to a Page {#add-livefyre-components-to-a-page}
 
-### LiveCycle-componenten aan een pagina toevoegen {#add-livefyre-components-to-a-page}
+Before adding Livefyre components to a page within Sites, you must enable Livefyre for the page by either inheriting a Livefyre cloud configuration from a parent page or by adding the configuration directly to the page. Refer to your implementation for how to include cloud services on your site.
 
-Voordat u LiveCycle-componenten aan een pagina binnen Sites toevoegt, moet u LiveCycle voor de pagina inschakelen door een LiveCycle-cloudconfiguratie van een bovenliggende pagina over te nemen of door de configuratie rechtstreeks aan de pagina toe te voegen. Raadpleeg uw implementatie voor informatie over het opnemen van cloudservices op uw site.
-
-Nadat Livefyre is ingeschakeld voor de pagina, moeten containers zijn geconfigureerd om Livefyre-componenten toe te staan. Zie [Componenten configureren in ontwerpmodus](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) voor instructies over hoe te om verschillende componenten toe te laten.
+Once Livefyre is enabled for the page, containers must be configured to allow Livefyre components. See [Configuring Components in Design Mode](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) for instructions on how to enable different components.
 
 >[!NOTE]
 >
->Toepassingen waarvoor verificatie moet worden gepost, werken pas nadat verificatie is geconfigureerd in Single Sign-On-integratie aanpassen.
+>Apps requiring authentication to post do not function until authentication is configured in Customize Single Sign-on Integration.
 
-1. Van de **Componenten** zijpaneel in ontwerpmodus, selecteer **Livefyre** in het menu om de lijst te beperken tot beschikbare LiveCycle-componenten.
+1. From the **Components** side panel in design mode, select **Livefyre** from the menu to limit the list to available Livefyre components.
 
    ![livefyre-add](assets/livefyre-add.png)
 
-1. Selecteer een component LiveCycle en sleep deze naar de gewenste positie op de pagina.
-1. Selecteer of u een nieuwe LiveCycle-app wilt maken of een bestaande wilt insluiten.
+1. Select a Livefyre component, and drag it into position on your page.
+1. Select whether to create a new Livefyre app or to embed an existing one.
 
-   Als u een bestaande app insluit, AEM u wordt gevraagd de app te selecteren. Als u een nieuwe app maakt, moet de app worden ingevuld voordat er inhoud wordt weergegeven. De app wordt gemaakt op de livefyre-site en het netwerk dat is geselecteerd toen de cloudconfiguratie van LiveCycle voor de pagina is ingeschakeld.
+   If embedding an existing app, AEM asks you to select the App. If creating a new App, the App will need to be populated before any content appears. The App will be created in the Livefyre site and network selected when Livefyre cloud configuration was enabled for the page.
 
-   Zie voor meer informatie over het invoegen van componenten [Pagina-inhoud bewerken](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
+   For more information on inserting components, see [Editing Page Content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
 
-### Een LiveCycle-component voor een AEM pagina bewerken. {#edit-a-livefyre-component-for-an-aem-page}
+### Edit a Livefyre Component for an AEM Page. {#edit-a-livefyre-component-for-an-aem-page}
 
-U kunt een component Livefyre in Studio slechts vormen en uitgeven Livefyre. Van AEM:
+You can only configure and edit a Livefyre component in Livefyre Studio. From AEM:
 
-1. Klik op de component LiveCycle om te configureren.
-1. Klik op de knop **Configureren** pictogram (moersleutel) om het configuratiedialoogvenster te openen.
-1. Klikken **Ga naar LiveCyre Studio om deze component te bewerken**.
-1. Bewerk de app in LiveCyre Studio.
+1. Click the Livefyre component to configure.
+1. Click the **Configure** icon (wrench) to open the configuration dialog.
+1. Click **To edit this component, go to Livefyre Studio**.
+1. Edit the App in Livefyre Studio.
 
-## Livefyre gebruiken met AEM Assets {#use-livefyre-with-aem-assets}
+## Use Livefyre with AEM Assets {#use-livefyre-with-aem-assets}
 
-### Rechten aanvragen en UGC importeren in AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
+### Request Rights and Import UGC into AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Met de UGC-importmodule kunt u door Twitter en Instagram door gebruikers gegenereerde inhoud (UGC) vanuit LiveCycle Studio naar AEM Assets importeren. Nadat u de inhoud hebt geselecteerd die u wilt importeren, moet u eerst rechten op de inhoud aanvragen voordat het importeren kan worden voltooid.
+You can import Twitter and Instagram user-generated content (UGC) from Livefyre Studio to AEM Assets using the UGC Importer. After selecting the content to import, you must then request rights to the content before the import can be completed.
 
 >[!NOTE]
 >
->Voordat u middelen kunt gebruiken om UGC te importeren, moet u accounts voor sociale accounts en verzoeken om rechten instellen in LiveCycle Studio. Zie [Instellen: Verzoeken om rechten](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) voor meer informatie .
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
-UGC importeren in AEM Assets:
+To import UGC into AEM Assets:
 
-1. Navigeer vanaf de AEM homepage naar **Middelen > Bestanden**.
-1. Klikken **Maken** en klik vervolgens op **UGC importeren.**
+1. From the AEM homepage, navigate to **Assets &gt; Files**.
+1. Click **Create**, then click **Import UGC.**
 
    ![livefyre-aem-import-ugc](assets/livefyre-aem-import-ugc.png)
 
-1. Inhoud zoeken:
+1. Find content:
 
-   * Klik vanuit LiveCycle op het tabblad UGC-bibliotheek. Gebruik de filters en het onderzoek om inhoud van de Bibliotheek te vinden UGC.
-   * Klik in Twitter en Instagram op het tabblad Twitter of Instagram. Gebruik de zoekopdracht of de filters om inhoud te zoeken.
+    * From Livefyre by clicking the UGC Library tab. Use the filters and search to find content from the UGC Library.
+    * From Twitter and Instagram by clicking the Twitter or Instagram tab. Use the search or filters to find content.
 
-1. Selecteer de elementen die u wilt importeren. De elementen die u selecteert, worden automatisch geteld en opgeslagen onder de **Geselecteerd** tab.
-1. **Optioneel**: Klik op de knop **Geselecteerd** en bekijk de geselecteerde UGC-inhoud die u wilt importeren.
-1. Klik op **Next**.
+1. Select the assets you want to import. The assets you select are automatically counted and saved under the **Selected** tab.
+1. **Optional**: Click the **Selected** tab and review your selected UGC content to import.
+1. Click **Next**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
 
-1. Kies voor aanvragen voor rechten een van de volgende opties voor elk element:
+1. For rights requests, choose one of the following options for each asset:
 
-   Voor Instagram:
+   For Instagram:
 
-   * **Rechten handmatig aanvragen** om een bericht te krijgen dat via Instagram kan worden gekopieerd en geplakt en handmatig naar de eigenaars van inhoud kan worden verzonden.
-   * **Rechten voor handmatig kenmerkende inhoud** om de rechten voor individuele activa te overschrijven.
+    * **Manually Request Rights** to get a message that can be copied and pasted and manually sent to the content owners via Instagram.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
    >[!NOTE]
    >
-   >Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakelijke gebruikersaccounts, kunnen we geen opmerkingen meer namens u plaatsen of automatisch controleren op antwoorden van de auteur. [Klik hier voor meer informatie](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+   >Due to updates affecting the aggregation of content from non-business user accounts, we can no longer post comments on your behalf or automatically check for replies from the author. [Click here to find out more](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
    ![livefyre-aem-import-ugc3-6-4](assets/livefyre-aem-import-ugc3-6-4.png)
 
-   Voor Twitter:
+   For Twitter:
 
-   * **Auteur van bericht** om een bericht te verzenden aan de eigenaar van de inhoud waarin om rechten voor het element wordt verzocht.
-   * **Rechten voor handmatig kenmerkende inhoud** om de rechten voor individuele activa te overschrijven.
+    * **Message Author** to send a message to the content owner requesting rights to the asset.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
+1. Click **Import**.
 
-1. Klikken **Importeren**.
-
-   Als u een Twitter-rechtenaanvraag hebt verzonden, ziet de eigenaar van de inhoud het rechtenaanvraagbericht op zijn account:
+   If you sent a Twitter rights request, the content owner will see the rights request message on their account:
 
    ![livefyre-aem-rights-request-twitter](assets/livefyre-aem-rights-request-twitter.png)
 
    >[!NOTE]
    >
-   >Twitter heeft limieten voor identieke aanvragen die afkomstig zijn van hetzelfde account. Wanneer het invoeren van meer dan een paar activa, wijzig de berichten individueel om te vermijden die worden gemarkeerd.
+   >Twitter has limits on identical requests coming from the same account. When importing more than a couple assets, modify the messages individually to avoid being flagged.
 
-1. Klikken **Gereed** in de rechterbovenhoek om de workflow voor het aanvragen van rechten te voltooien.
+1. Click **Done** in the top-right corner to finish the Rights Request workflow.
 
-   U kunt de status zien van een aanvraag voor rechten in behandeling voor een middel in LiveCyre Studio. Als de inhoud in afwachting is van een verzoek om rechten, wordt het element pas in AEM Assets weergegeven als de rechten zijn verleend. Het middel verschijnt automatisch in AEM Assets wanneer een Verzoek van Rechten wordt verleend.
+   You can see the status of a pending Rights Request for an asset in Livefyre Studio. If content is pending a rights request, the asset will not display in AEM Assets until rights are granted. The asset automatically appears in AEM Assets when a Rights Request is granted.
 
-   Voor Instagram moet u het antwoord van de eigenaar van de inhoud volgen en handmatig rechten verlenen als u bepaalde rechten voor de inhoud hebt.
+   For Instagram, you must track the content owner's response and manually grant rights if given rights to the content.
 
-## Livefyre gebruiken met AEM Handel {#use-livefyre-with-aem-commerce}
+## Use Livefyre with AEM Commerce {#use-livefyre-with-aem-commerce}
 
-### Productcatalogi met AEM handel in LiveCyre importeren {#import-product-catalogs-into-livefyre-with-aem-commerce}
+### Import Product Catalogs into Livefyre with AEM Commerce {#import-product-catalogs-into-livefyre-with-aem-commerce}
 
-AEM gebruikers van Commerce kunnen hun bestaande productcatalogus naadloos integreren in Livefyre om de betrokkenheid van gebruikers in de visualisatie-apps van Livefyre te stimuleren.
+AEM Commerce users can seamlessly integrate their existing product catalog into Livefyre to drive user engagement in Livefyre's visualization Apps.
 
-Nadat u de productcatalogus hebt geïmporteerd, worden de producten in real-time weergegeven in uw LiveCycle-instantie. Als u items bewerkt of verwijdert in de catalogus AEM Commerce-product, worden de wijzigingen automatisch bijgewerkt in LiveCycle.
+After you import the product catalog, the products show up in real time in your Livefyre instance. If you edit or delete items in your AEM Commerce Product Catalog, the changes automatically update in Livefrye.
 
-1. Zorg ervoor dat u de nieuwste versie van Livefyre voor AEM pakket op uw AEM hebt geïnstalleerd.
-1. Navigeer vanaf de AEM homepage naar **AEM Commerce**.
-1. Maak een nieuwe verzameling of gebruik een bestaande verzameling.
-1. Houd de muisaanwijzer boven de verzameling en klik op **Verzamelingseigenschappen** (potloodpictogram).
-1. Controleren **Synchroniseren met LiveCycle**.
-1. Invullen **Voorvoegsel van LiveCycle-pagina** om deze verzameling te koppelen aan een specifieke pagina in AEM.
+1. Ensure you have the latest Livefyre for AEM package installed on your AEM instance.
+1. From the AEM homepage, navigate to **AEM Commerce**.
+1. Create a new collection or use an existing collection.
+1. Hover over the collection and click **Collection Properties** (pencil icon).
+1. Check **Sync to Livefyre**.
+1. Fill in **Livefyre Page Prefix** to link this collection to a specific page in AEM.
 
-   Het paginavoorvoegsel definieert het hoofdpad in uw omgeving waar het zoeken naar productpagina&#39;s begint. LiveCycle kiest de eerste pagina waaraan een overeenkomstig product is gekoppeld. Voor verschillende pagina&#39;s voor verschillende producten zijn meerdere verzamelingen nodig.
+   The page prefix defines the root path in your environment where searching for product pages begins. Livefyre chooses the first page that has a corresponding product associated to it. To get different pages for different products, multiple collections are needed.
 
-## Ondersteuningsmatrix AEM voor LiveCyre-apps {#aem-support-matrix-for-livefyre-apps}
+## AEM Support Matrix for Livefyre Apps {#aem-support-matrix-for-livefyre-apps}
 
-| Livefyre Apps | AEM 6,1 | AEM 6,2 | AEM 6,3 | AEM 6,4 |
+| Livefyre Apps |AEM 6.1 |AEM 6.2 |AEM 6.3 |AEM 6.4 |
 |---|---|---|---|---|
-| Carousel | X | X | X | X |
-| Chat | X | X | X | X |
-| Opmerkingen | X | X | X | X |
-| Filmstrip |  | X | X | X |
-| LiveBlog | X | X | X | X |
-| Kaart | X | X | X | X |
-| Mediumwand | X | X | X | X |
-| Mozaïek | X | X | X | X |
-| Opiniepeiling |  | X | X | X |
-| Revisies |  | X | X | X |
-| Enkele kaart | X | X | X | X |
-| Storiseren 2 |  | X | X | X |
-| Trend |  | X | X | X |
-| Knop Uploaden |  | X | X | X |
+| Carousel |X |X |X |X |
+| Chat |X |X |X |X |
+| Comments |X |X |X |X |
+| Filmstrip |  |X |X |X |
+| LiveBlog |X |X |X |X |
+| Map |X |X |X |X |
+| Media Wall |X |X |X |X |
+| Mosaic |X |X |X |X |
+| Poll |  |X |X |X |
+| Reviews |  |X |X |X |
+| Single Card |X |X |X |X |
+| Storify 2 |  |X |X |X |
+| Trending |  |X |X |X |
+| Upload Button |  |X |X |X | -->

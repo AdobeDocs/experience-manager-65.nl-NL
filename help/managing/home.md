@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Managing User Guide
 description: Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit belangrijke bronnen en een uitgebreide verzameling van AEM 6.5-gebruikershandleidingen.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 17%
+source-wordcount: '337'
+ht-degree: 18%
 
 ---
 
@@ -39,7 +39,6 @@ Ontdek hoe u een AEM project met succes kunt beheren, met ondersteuning vanuit b
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
 

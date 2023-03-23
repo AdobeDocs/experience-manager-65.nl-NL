@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Forms Guide
 description: Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren van deze formulieren en leer meer over het ontwerpen van adaptieve formulieren.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 17%
+source-wordcount: '348'
+ht-degree: 18%
 
 ---
 
@@ -39,7 +39,6 @@ Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publice
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
 | [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
 workflow-type: tm+mt
-source-wordcount: '2582'
+source-wordcount: '2593'
 ht-degree: 0%
 
 ---
@@ -194,13 +194,14 @@ Een nieuwe rollout-configuratie maken:
    >[!NOTE]
    >Dit is de aangepaste versie van uw project van:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Moet worden gecreeerd als dit uw eerste configuratie is.
+   >Als dit uw eerste configuratie is, dit `/libs` vertakking moet worden gebruikt als een sjabloon voor het maken van de nieuwe vertakking onder `/apps`.
 
    >[!NOTE]
    >
    >U moet niets in de /libs weg veranderen.
    >Dit is omdat de inhoud van /libs de volgende tijd wordt beschreven u uw instantie (en kan goed worden beschreven wanneer u of hotfix of eigenschappak toepast) bevordert.
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
+   >
    >* Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in /libs) onder /apps
    >* Wijzigingen aanbrengen in /apps
 
@@ -675,11 +676,11 @@ Daarna moet u ervoor zorgen dat:
 
 * E-mailadres contactpersoon:
 
-   * is uitgesloten van de opgebouwde eigenschappen; zie [Eigenschappen en knooppunttypen uitsluiten van synchronisatie](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+* is uitgesloten van de opgebouwde eigenschappen; zie [Eigenschappen en knooppunttypen uitsluiten van synchronisatie](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Belangrijke visuele stijl:
 
-   * Zorg ervoor dat u deze eigenschap niet mag bewerken in de interface met aanraakbediening, tenzij de overerving wordt geannuleerd, en dat u de overerving vervolgens opnieuw kunt installeren. Dit wordt gecontroleerd door de ketting/gebroken-ketting verbindingen te klikken die om op de status van de verbinding van een knevel te wijzen.
+* Zorg ervoor dat u deze eigenschap niet mag bewerken in de interface met aanraakbediening, tenzij de overerving wordt geannuleerd, en dat u de overerving vervolgens opnieuw kunt installeren. Dit wordt gecontroleerd door de ketting/gebroken-ketting verbindingen te klikken die om op de status van de verbinding van een knevel te wijzen.
 
 Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het annuleren/opnieuw installeren van overerving tijdens het bewerken, wordt dan gecontroleerd door de dialoogvenster-eigenschap:
 
@@ -689,10 +690,10 @@ Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het an
    * maakt het kettingkoppelingssymbool in het dialoogvenster
    * is alleen bewerken toegestaan als overerving is geannuleerd (de ketting-koppeling is verbroken)
    * alleen van toepassing op het eerste onderliggende niveau van de bron
-   * **Type**: `String`
+      * **Type**: `String`
 
-   * **Waarde**: houder is van de naam van het betrokken goed (en vergelijkbaar is met de waarde van het goed) `name`; zie bijvoorbeeld
-      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+      * **Waarde**: houder is van de naam van het betrokken goed (en vergelijkbaar is met de waarde van het goed) `name`; zie bijvoorbeeld
+         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wanneer `cq-msm-lockable` is gedefinieerd, heeft het breken/sluiten van de keten op de volgende manier interactie met MSM:
 

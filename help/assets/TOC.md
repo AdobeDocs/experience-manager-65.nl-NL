@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Handleiding voor assets
 breadcrumb-title: Handleiding voor assets
 user-guide-description: Maak, beheer, verwerk en distribueer digitale middelen.
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 16%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 16%
 + Elementen beheren {#managing}
    + [Digitale middelen beheren](manage-assets.md)
    + [Verzamelingen beheren](manage-collections.md)
+   + [Asset Selector](asset-selector.md)
    + [Dubbele detectie inschakelen](duplicate-detection.md)
    + [Digitale elementen ordenen](organize-assets.md)
    + [Videoassets beheren](managing-video-assets.md)

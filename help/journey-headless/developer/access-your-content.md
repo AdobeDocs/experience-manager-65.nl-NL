@@ -2,10 +2,10 @@
 title: Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -243,10 +243,10 @@ Voordat u begint met query&#39;s op uw inhoud, moet u:
 
 * Uw eindpunt inschakelen
    * Gereedschappen gebruiken -> Middelen -> GraphQL
-   * [GraphQL Endpoint inschakelen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [GraphQL Endpoint inschakelen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Access GraphiQL (indien vereist)
-   * [AEM GraphiQL-interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
+   * [AEM GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Voorbeeldstructuur {#sample-structure}
 
@@ -256,7 +256,7 @@ Om de AEM GraphQL API in een vraag eigenlijk te gebruiken, kunnen wij de twee ze
    * Naam - tekst
    * CEO (Persoon) - Fragmentverwijzing
    * Werknemers (personen) - Fragmentverwijzing(en)
-* Person
+* Persoon
    * Naam - tekst
    * Voornaam - tekst
 
@@ -269,7 +269,7 @@ De fragmentmodellen worden gebruikt:
 
 ### Waar kan ik uw query&#39;s testen? {#where-to-test-your-queries}
 
-De vragen kunnen in [GraphiQL-interface](/help/assets/content-fragments/graphiql-ide.md), bijvoorbeeld op:
+De vragen kunnen in [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md), bijvoorbeeld op:
 
 * `http://localhost:4502/aem/graphiql.html`
 
@@ -362,14 +362,14 @@ Nu u hebt geleerd hoe u toegang kunt krijgen tot inhoud zonder kop en deze kunt 
    * [Variabelen](https://graphql.org/learn/queries/#variables)
    * [GraphQL Java-bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [GraphQL leren gebruiken met AEM](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [GraphQL Endpoint inschakelen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [De interface AEM GraphiQL installeren](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [De structuur van het voorbeeldinhoudsfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Voorbeeldquery - één specifiek stedenfragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Voorbeeldquery - Alle steden met een benoemde variatie](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [GraphQL leren gebruiken met AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+   * [GraphQL Endpoint inschakelen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+   * [De interface AEM GraphiQL installeren](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
+* [De structuur van het voorbeeldinhoudsfragment](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
+   * [Voorbeeldquery - één specifiek stedenfragment](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+   * [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+   * [Voorbeeldquery - Alle steden met een benoemde variatie](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Functionaliteit van inhoudsfragment inschakelen in configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Werken met contentfragmenten](/help/assets/content-fragments/content-fragments.md)
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)

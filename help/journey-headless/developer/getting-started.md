@@ -2,7 +2,7 @@
 title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 0%
@@ -287,7 +287,7 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - Technische documentatie voor inhoudsfragmenten.
 * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie voor modellen van inhoudsfragmenten.
 * [GraphQL - Technische documentatie](https://graphql.org) - De GraphQL-definitie (externe koppeling)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en inhoudsfragmenten te leveren
+* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie die verklaart hoe te om verzoeken tot toegang te leiden en inhoudsfragmenten te leveren
 * [REST-API voor middelen](/help/assets/assets-api-content-fragments.md) - Technische documentatie die verklaart hoe te om de Fragmenten van de Inhoud (en andere activa) tot stand te brengen en te wijzigen
-* [Blijvende query&#39;s](/help/assets/content-fragments/persisted-queries.md) - Technische documentatie over gepresteerde vragen in AEM
+* [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Technische documentatie over gepresteerde vragen in AEM
 * [Hoofdletters en headless in AEM](/help/sites-developing/headful-headless.md) - Een volledige discussie over de niveaus van de ontelbare integratie in AEM

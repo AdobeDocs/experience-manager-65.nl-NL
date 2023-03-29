@@ -2,7 +2,7 @@
 title: Snelstartgids voor mappen zonder middelenkoppen maken
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -33,16 +33,16 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
       * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/sites-developing/naming-conventions.md)
       * Deze kan zo nodig worden aangepast.
 
-   ![Map maken](../assets/assets-folder-create.png)
+   ![Map maken](assets/assets-folder-create.png)
 1. Selecteer de map die u net hebt gemaakt en selecteer **Eigenschappen** van de werkbalk (of gebruik de `p` [sneltoets.](/help/sites-authoring/keyboard-shortcuts.md))
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Services** tab.
 1. Voor de **Cloud Configuration** Selecteer [configuratie die u eerder hebt gemaakt.](create-configuration.md)
 
-   ![Map met middelen configureren](../assets/assets-folder-configure.png)
+   ![Map met middelen configureren](assets/assets-folder-configure.png)
 1. Tik of klik op **Opslaan en sluiten**.
 1. Tik of klik op **OK** in het bevestigingsvenster.
 
-   ![Bevestigingsvenster](../assets/assets-folder-confirmation.png)
+   ![Bevestigingsvenster](assets/assets-folder-confirmation.png)
 
 U kunt extra submappen maken in de map die u net hebt gemaakt. De submappen nemen de **Cloud Configuration** van de bovenliggende map. Dit kan echter worden genegeerd als u modellen uit een andere configuratie wilt gebruiken.
 

@@ -2,7 +2,7 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 0%
@@ -104,7 +104,7 @@ Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introducti
 
 ### Beveilig uw toepassing zonder koppen voordat u de toepassing start {#secure-and-scale-before-launch}
 
-1. Voorbereiden [Verificatie](/help/assets/content-fragments/graphql-authentication-content-fragments.md) voor je GraphQL-aanvragen
+1. Voorbereiden [Verificatie](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) voor je GraphQL-aanvragen
 
 ### Modelstructuur versus GraphQL-uitvoer {#structure-vs-output}
 

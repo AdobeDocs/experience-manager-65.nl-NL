@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Handleiding voor assets
 breadcrumb-title: Handleiding voor assets
 user-guide-description: Maak, beheer, verwerk en distribueer digitale middelen.
-source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 16%
+source-wordcount: '723'
+ht-degree: 15%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 16%
    + [Editor van element uitbreiden](asseteditorx.md)
    + [[!DNL Assets] HTTP-API](mac-api-assets.md)
    + [Ondersteuning voor inhoudsfragmenten in [!DNL Assets] HTTP-API](assets-api-content-fragments.md)
-   + [GraphQL API voor inhoudsfragmenten](content-fragments/graphql-api-content-fragments.md)
-   + [GraphiQL IDE gebruiken](content-fragments/graphiql-ide.md)
-   + [Blijvende query&#39;s](content-fragments/persisted-queries.md)
-   + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
-   + [GraphQL API met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+   + [GraphQL API voor inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
+   + [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
+   + [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [Verificatie voor externe GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
+   + [GraphQL API met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets] proxyontwikkeling](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde bestandsindelingen](assets-formats.md)

@@ -2,7 +2,7 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM kan ook worden gebruikt om inhoud eenvoudig te beheren, zodat de presentatie
 
 Maar dit hoeft geen binaire keuze te zijn. AEM biedt ongekende flexibiliteit, die u toestaat om de voordelen van beide modellen voor uw project te exploiteren.
 
-![Implementatiemodellen AEM](headless/assets/aem-implementation-models.png)
+![Implementatiemodellen AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML, enz. worden gebaseerd. worden gebruikt om de inhoud weer te geven voor de gebruikerservaring. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
 
@@ -54,18 +54,18 @@ SPA integratie ligt op een spectrum van vier niveaus in AEM.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
 * **Niveau 1: Integratie van inhoudsfragmenten**
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
 * **Niveau 2: De SPA insluiten in AEM**
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan binnen AEM in context worden weergegeven.
    * Beperkte inhoud kan binnen AEM worden bewerkt.
 * **Niveau 3: SPA insluiten en volledig inschakelen in AEM**
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
-   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Inhoud kan binnen AEM in context worden weergegeven.
    * De meeste inhoud kan worden bewerkt in AEM.
 

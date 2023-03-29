@@ -4,7 +4,7 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1989'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 >* [Contentfragmenten aanpassen en uitbreiden](/help/sites-developing/customizing-content-fragments.md)
 >* [Contentfragmenten die componenten voor rendering configureren](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/assets-api-content-fragments.md)
->* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
@@ -133,7 +133,7 @@ Inhoudsfragmenten zijn:
 
    * De **Inhoudsfragment** is beschikbaar voor auteurs van pagina&#39;s. Hiermee kunnen ze naar het vereiste inhoudsfragment verwijzen en dit leveren in HTML- of JSON-indeling.
 
-* Toegankelijk met de [GraphQL API AEM](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Toegankelijk met de [GraphQL API AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 Inhoudsfragmenten zijn een inhoudsstructuur die:
 

@@ -2,7 +2,7 @@
 title: Inhoudsfragmenten zonder kop Handleiding voor snel starten maken
 description: Leer hoe u AEM inhoudsfragmenten kunt gebruiken voor het ontwerpen, maken, beheren en gebruiken van pagina-onafhankelijke inhoud voor levering zonder kop.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
@@ -32,16 +32,16 @@ Inhoudsauteurs maken een willekeurig aantal Inhoudsfragmenten om de inhoud te ve
    * Welke modellen beschikbaar zijn, is afhankelijk van de [**Cloud Configuration** u hebt gedefinieerd voor de map assets](create-assets-folder.md) waarin u het inhoudsfragment maakt.
    * Als u het bericht ontvangt `We could not find any models`, controleert u de configuratie van de map met elementen.
 
-   ![Inhoudsfragmentmodel selecteren](../assets/content-fragment-model-select.png)
+   ![Inhoudsfragmentmodel selecteren](assets/content-fragment-model-select.png)
 1. Een **Titel**, **Beschrijving**, en **Tags** tikken of klikken **Maken**.
 
-   ![Inhoudsfragment maken](../assets/content-fragment-create.png)
+   ![Inhoudsfragment maken](assets/content-fragment-create.png)
 1. Tik of klik op **Openen** in het bevestigingsvenster.
 
-   ![Bevestiging van Content Fragment](../assets/content-fragment-confirmation.png)
+   ![Bevestiging van Content Fragment](assets/content-fragment-confirmation.png)
 1. Geef de details van het inhoudsfragment op in de Inhoudsfragmenteditor.
 
-   ![Inhoudsfragmenteditor](../assets/content-fragment-edit.png)
+   ![Inhoudsfragmenteditor](assets/content-fragment-edit.png)
 1. Tik of klik op **Opslaan** of  **Opslaan en sluiten**.
 
 Inhoudsfragmenten kunnen verwijzen naar andere inhoudsfragmenten, waarbij zo nodig een geneste inhoudsstructuur mogelijk is.

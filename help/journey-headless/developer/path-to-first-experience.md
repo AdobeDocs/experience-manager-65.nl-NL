@@ -2,7 +2,7 @@
 title: Pad naar uw eerste ervaring met AEM zonder kop
 description: In dit deel van de AEM Headless Developer Journey zult u de stappen begrijpen voor het implementeren van uw eerste headless ervaring in AEM met planningsoverwegingen en leert u ook best practices om uw pad zo vloeiend mogelijk te maken.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1982'
 ht-degree: 0%
@@ -150,4 +150,4 @@ Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder
 * [Aan de slag met koppen](/help/sites-developing/headless/introduction.md#getting-started) - Een snelle inleiding tot AEM functies zonder kop voor gebruikers die al bekend zijn met AEM.
 * [Modellen voor inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments-models.md) - Technische documentatie over modellen van inhoudsfragmenten
 * [Inhoudsfragmenten maken](/help/assets/content-fragments/content-fragments.md) - Technische documentatie over inhoudsfragmenten
-* [Query-inhoud uitvoeren met GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technische documentatie over de GraphQL API
+* [Query-inhoud uitvoeren met GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technische documentatie over de GraphQL API

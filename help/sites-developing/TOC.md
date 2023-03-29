@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkeling
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1285'
 ht-degree: 6%
 
 ---
@@ -138,11 +138,12 @@ ht-degree: 6%
    + Leverings-API{#delivery-api}
       + [HTTP-API voor assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
       + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
-      + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-      + [GraphiQL IDE gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
-      + [Blijvende query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
-      + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)
-      + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+      + [Content Fragments GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+      + [GraphQL-eindpunten beheren](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+      + [GraphiQL IDE gebruiken](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
+      + [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
+      + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Ontwikkeling van hybride en SPA AEM{#spas}
    + [Hybride en SPA met AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [SPA Inleiding en Analyse](spa-walkthrough.md)

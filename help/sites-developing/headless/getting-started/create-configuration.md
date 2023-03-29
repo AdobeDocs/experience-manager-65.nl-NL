@@ -2,7 +2,7 @@
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloze in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
    * **Modellen van contentfragmenten**
    * **Blijvende GraphQL-query&#39;s**
 
-   ![Configuratie maken](../assets/create-configuration.png)
+   ![Configuratie maken](assets/create-configuration.png)
 
 1. Tik of klik op **Maken**
 

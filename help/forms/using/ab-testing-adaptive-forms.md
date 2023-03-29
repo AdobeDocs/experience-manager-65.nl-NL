@@ -10,15 +10,16 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 5fdd76a907c444a90fdda76ffb314888fe92e839
+source-git-commit: ccbb6a33c2ee8029d2e82d9098c07de18af166ac
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1567'
 ht-degree: 0%
 
 ---
 
 # A/B-test voor adaptieve formulieren maken en beheren{#create-and-manage-a-b-test-for-adaptive-forms}
 
+|Negatief|[!BADGE Stopzetten]{type=negative tooltip="Deze functie is nu levenseinde"}
 <div class="preview"> De functie voor het testen van adaptieve formulieren in A/B is aan het einde van de levensduur verstreken en wordt niet meer ondersteund. </div>
 
 ## Overzicht {#overview-br}

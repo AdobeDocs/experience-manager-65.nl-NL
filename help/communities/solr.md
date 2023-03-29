@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '1457'
-ht-degree: 2%
+source-wordcount: '1424'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Solr. voor AEM Platform {#solr-for-aem-platform}
 
-An [Apache Solr](https://lucene.apache.org/solr/) de installatie kan worden gedeeld tussen de [knooppuntopslag](../../help/sites-deploying/data-store-config.md) (eikenhout) en [gemeenschappelijk archief](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
+An [Apache Solr](https://solr.apache.org/) de installatie kan worden gedeeld tussen de [knooppuntopslag](../../help/sites-deploying/data-store-config.md) (eikenhout) en [gemeenschappelijk archief](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
 
 Als zowel de Oak als SRP inzamelingen intensief worden gebruikt, kan tweede Solr om prestatiesredenen worden geïnstalleerd.
 
@@ -34,7 +34,7 @@ Download en installeer Apache Solr:
 
 * [Versie 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr vereist Java 1.7 of hoger
+* Solr vereist Java™ 1.7 of hoger
 * Er is geen service nodig
 * Keuze van uitvoeringsmodi:
 
@@ -63,14 +63,14 @@ Het wordt ook aanbevolen JVM te configureren om het geheugengebruik en de opscho
 JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
-### Opdrachten voor instellen van SolrCloud {#solrcloud-setup-commands}
+### Opdrachten instellen voor SolrCloud {#solrcloud-setup-commands}
 
-Wanneer de installatie wordt uitgevoerd in de SolrCloud-modus, zijn het gebruik en de kennis van de volgende opdrachten voor de SolrCloud-instelling vereist voordat MLS wordt geïnstalleerd.
+Wanneer de installatie van MLS wordt uitgevoerd in de SolrCloud-modus, zijn het gebruik en de kennis van de volgende opdrachten voor de SolrCloud-instelling vereist.
 
 #### 1. Een configuratie uploaden naar ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referentie:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
@@ -82,7 +82,7 @@ Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
 #### 2. Een verzameling maken {#create-a-collection}
 
 Referentie:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Gebruik:
 ./bin/solr create \
@@ -98,7 +98,7 @@ Gebruik:
 Koppel een verzameling aan een configuratie die al is geüpload naar ZooKeeper.
 
 Referentie:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
@@ -110,7 +110,7 @@ Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
 
 Meertalig zoeken (MLS) voor AEM Communities is ontwikkeld voor het Solr-platform, zodat alle ondersteunde talen, waaronder het Engels, beter kunnen worden doorzocht.
 
-MLS voor AEM gemeenschappen is beschikbaar als Standaard MLS of Geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat zowel de configuratie-instellingen voor Solr als plug-ins en bijbehorende bronnen
+MLS voor AEM Communities is beschikbaar als Standaard MLS of Geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat zowel de configuratie-instellingen voor Solr als plug-ins en bijbehorende bronnen
 
 Standaard MLS bevat verbeteringen voor het zoeken naar inhoud voor de volgende talen:
 
@@ -133,14 +133,14 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 | Chinees (vereenvoudigd) | Haitian Creole | Portugees |
 | Chinees (traditioneel) | Hebreeuws | Roemeens |
 | Tsjechisch | Hongaars | Russisch |
-| Deens | Bahasa Indonesia | Slovaaks |
+| Deens | Indonesisch | Slowaaks |
 | Nederlands | Italiaans | Sloveens |
 | Engels | Japans | Spaans |
-| Estisch | Koreaans | Zweeds |
+| Ests | Koreaans | Zweeds |
 | Fins | Lets | Thai |
 | Frans | Litouws | Turks |
 
-#### Vergelijking van AEM 6.1 Solr zoeken, Standaard MLS en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Vergelijking van AEM 6.1 Solr onderzoek, Standaard MLS, en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Opmerking**: AEM 6.1 verwijst naar AEM 6.1 KP3 en lager.
 
@@ -171,7 +171,7 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Download naar de lokale server waarop Solr wordt geïmplementeerd.
 
    * Zoek de `jcr:content` knooppunten `jcr:data` eigenschap.
-   * Selecteren `view` om het downloaden te starten.
+   * Selecteer `view`.
    * Zorg ervoor dat de bestanden met de juiste namen en codering (UTF8) worden opgeslagen.
 
 1. Volg de installatie-instructies voor de zelfstandige modus of de SolrCloud-modus.
@@ -194,7 +194,7 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. [Een verzameling maken](#create-a-collection) het specificeren van de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
 1. Als de configuratienaam *not *provided tijdens verwezenlijking van de inzameling was, [deze nieuwe verzameling koppelen](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](msrp.md#msrp-reindex-tool), tenzij dit een nieuwe installatie is.
+1. Voor MSRP, looppas [MSRP opnieuw indexeren](msrp.md#msrp-reindex-tool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Standaard MLS {#standalone-mode-standard-mls}
 
@@ -212,7 +212,7 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 1. Het gedownloade bestand kopiëren **schema.xml** en **solrconfig.xml** naar dezelfde map.
 
 1. Start Solr opnieuw.
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij dit een nieuwe installatie is.
+1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij deze installatie nieuw is.
 
 ### Geavanceerde MLS installeren {#installing-advanced-mls}
 
@@ -277,13 +277,13 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
 1. [Een verzameling maken](#create-a-collection) het specificeren van de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
 1. Als de configuratienaam was *niet* verstrekt tijdens het aanmaken van de collectie; [deze nieuwe verzameling koppelen](#link-a-collection-to-a-configuration-set) met de configuratie die aan ZooKeeper wordt geupload.
 
-1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij dit een nieuwe installatie is.
+1. Voor MSRP, looppas [MSRP opnieuw indexeren](#msrpreindextool), tenzij deze installatie nieuw is.
 
 #### Standalone modus - Geavanceerde MLS {#standalone-mode-advanced-mls}
 
 Een installatiescript is inbegrepen in het Geavanceerde pakket MLS.
 
-Nadat de inhoud van het pakket is geëxtraheerd naar de server die als host fungeert voor de zelfstandige Solr-server, voert u gewoon het installatiescript uit om de benodigde bronnen en configuratiebestanden te installeren.
+Nadat de inhoud van het pakket is geëxtraheerd naar de server die als host fungeert voor de zelfstandige Solr-server, voert u het installatiescript uit om de benodigde bronnen en configuratiebestanden te installeren.
 
 * Installeer Solr in zelfstandige modus.
 * Als het lopen Solr5, creeer een inzameling1 (gelijkend op Solr4):
@@ -320,14 +320,14 @@ waarbij:
 
 **Opmerking**:
 
-* Het installatiescript zal file.xml en solrconfig.xml alvorens nieuwe versies te installeren door &quot;.orig&quot;toe te voegen
+* Het installatiescript maakt een back-up van schema.xml en solrconfig.xml voordat nieuwe versies worden geïnstalleerd door &quot;.orig&quot; toe te voegen
 
 ### Info solrconfig.xml {#about-solrconfig-xml}
 
-De **solrconfig.xml** het dossier controleert automatisch interval en onderzoekszicht begaan en zal het testen en het stemmen vereisen.
+De **solrconfig.xml** het dossier controleert automatisch interval en onderzoekszicht begaan en vereist het testen en het stemmen.
 
 `<autoCommit>`: Door gebrek, wordt het interval AutoCommit, dat hard aan stabiele opslag is begaan, geplaatst aan 15 seconden. De zoekzichtbaarheid wordt standaard ingesteld op het gebruik van de vooraf vastgelegde index.
 
 Als u een zoekopdracht wilt wijzigen en een index wilt gebruiken die is bijgewerkt om wijzigingen door te voeren die het gevolg zijn van de bewerking, wijzigt u de inhoud `openSearcher` naar waar.
 
-`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de veranderingen zichtbaar zijn (de index wordt bijgewerkt), maar verzekert niet dat de veranderingen aan stabiele opslag (hard commit) worden gesynchroniseerd. Het resultaat is een verbetering van de prestaties. Standaard, `autoSoftCommit` is uitgeschakeld met de bevat `maxTime` ingesteld op -1.
+`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de veranderingen zichtbaar zijn (de index wordt bijgewerkt), maar verzekert niet dat de veranderingen aan stabiele opslag (hard begaan) worden gesynchroniseerd. Het resultaat is een verbetering van de prestaties. Standaard, `autoSoftCommit` is uitgeschakeld met de bevat `maxTime` ingesteld op -1.

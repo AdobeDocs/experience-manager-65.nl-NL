@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '4674'
+source-wordcount: '4662'
 ht-degree: 1%
 
 ---
@@ -748,12 +748,12 @@ Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijde
 
 ### Chrome voor toegankelijkheidstest inschakelen bij {#enable-chrome-add-on}
 
-Als u eerst de toegankelijkheid wilt testen en de Chrome-plug-in wilt installeren, kunt u deze vinden [hier](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+Installeer de gevonden Chrome-plug-in om de toegankelijkheid te testen [hier](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Wanneer de pagina is geïnstalleerd, laadt u de pagina die u wilt testen in de Chrome-browser (Opmerking: Als er meerdere tabbladen zijn geopend, heeft dit mogelijk invloed op de score. Het is aan te raden slechts één tab open te hebben.) Nadat de pagina is geladen
-**rechtsklikken** op de pagina en selecteer **Audits** -tabblad. Er kunnen ontwikkelaars het type controle selecteren dat door de insteekmodule Toegankelijkheid moet worden uitgevoerd. Nadat alle gewenste opties zijn geselecteerd, kan de gebruiker de knop Rapport genereren selecteren. Hiermee wordt een PDF-document gegenereerd met de algemene toegankelijkheidsscore en de functies die kunnen worden gebruikt om de score voor toegankelijkheid in het algemeen te verhogen.
+Nadat de pagina is geïnstalleerd, laadt u de pagina die u wilt testen in de Chrome-browser (Opmerking: Als er meerdere tabbladen zijn geopend, heeft dit mogelijk invloed op de score. Het is aan te raden slechts één tab open te hebben.) Nadat de pagina is geladen
+**rechtsklikken** op de pagina en selecteer **Audits** -tabblad. Er kunnen ontwikkelaars het type controle selecteren dat door de insteekmodule Toegankelijkheid moet worden uitgevoerd. Nadat alle gewenste opties zijn geselecteerd, kan de gebruiker op de knop Rapport genereren klikken. Hiermee wordt een PDF-document gegenereerd met de algemene toegankelijkheidsscore en de functies die kunnen worden gebruikt om de score voor toegankelijkheid in het algemeen te verhogen.
 
-Zodra het rapport is uitgevoerd kunnen de gebruikers het volgende verwachten te zien:
+Nadat het rapport in werking wordt gesteld, kunnen de gebruikers het volgende verwachten te zien:
 
 ![Toegankelijkheidsrapport](assets/aftia-accessibility.jpg)
 

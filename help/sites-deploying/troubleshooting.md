@@ -1,7 +1,7 @@
 ---
 title: Problemen oplossen
 seo-title: Troubleshooting
-description: In dit artikel worden enkele installatieproblemen besproken die mogelijk optreden bij AEM.
+description: Dit artikel behandelt enkele installatieproblemen die u met AEM kunt tegenkomen.
 seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Deze sectie omvat gedetailleerde informatie over logboeken beschikbaar om u te h
 
 ## De prestaties van auteurs oplossen {#troubleshoot-author-performance}
 
-Het analyseren van langzame prestaties op Authoring instantie kan vrij complex worden. Als eerste stap is het vereist om te achterhalen op welk niveau van de technologiestapel de prestaties verminderen.
+Het analyseren van langzame prestaties op Authoring instantie kan complex worden. Als eerste stap is het vereist om te achterhalen op welk niveau van de technologiestapel de prestaties verminderen.
 
-De volgende beslisboom verstrekt raad om het knelpunt te versmallen.
+De volgende beslisboom verstrekt begeleiding om het knelpunt te versmallen.
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -35,7 +35,7 @@ De volgende beslisboom verstrekt raad om het knelpunt te versmallen.
 
 ## Logbestanden en auditlogbestanden configureren {#configuring-log-files-and-audit-logs}
 
-AEM registreert gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Zie voor meer informatie de [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sectie.
+AEM verslagen gedetailleerde logboeken die u zou kunnen willen vormen om installatiekwesties problemen op te lossen. Zie voor meer informatie de [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) sectie.
 
 ## De optie Uitvouwen gebruiken {#using-the-verbose-option}
 
@@ -47,47 +47,47 @@ De verbose optie toont sommige van de het logboekoutput van Quickstart op de con
 
 In de volgende sectie worden enkele installatieproblemen en de bijbehorende oplossingen beschreven.
 
-### Als u dubbelklikt op de Quickstart-jar, heeft dit geen effect en wordt het jar-bestand geopend met een ander programma (bijvoorbeeld archiefbeheer) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Dubbelklikken op de QuickStart-jar heeft geen effect of opent het jar-bestand met een ander programma (bijvoorbeeld archiefbeheer) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Dit geeft meestal een probleem aan met de manier waarop de bureaubladomgeving van het besturingssysteem is geconfigureerd voor het openen van bestanden met de extensie .jar. Het kan ook aangeven dat u Java niet hebt geïnstalleerd of dat u een niet-ondersteunde versie van Java gebruikt.
+Dit probleem geeft meestal een probleem aan met de manier waarop de bureaubladomgeving van uw besturingssysteem is geconfigureerd voor het openen van bestanden met de extensie .jar. Het kan ook aangeven dat u Java™ niet hebt geïnstalleerd of dat u een niet-ondersteunde versie van Java™ gebruikt.
 
 Aangezien de jar dossiers het overal formaat van het ZIP gebruiken, kunnen sommige archiveringsprogramma&#39;s automatisch de Desktop vormen om jar dossiers als archiefdossiers te openen.
 
 Ga als volgt te werk om problemen op te lossen:
 
-* Controleer of u ten minste Java versie 1.6 hebt geïnstalleerd.
+* Controleer nogmaals of u ten minste Java™ versie 1.6 hebt geïnstalleerd.
 * Probeer een contextmenu (gewoonlijk klik met de rechtermuisknop) op AEM WCM QuickStart, en selecteer &quot;Open met....&quot;
-* Controleer of Java of Sun Java wordt vermeld en probeer er AEM WCM mee uit te voeren. Als u meerdere Java-versies hebt geïnstalleerd, selecteert u de ondersteunde versie.
+* Controleer of Java™ of Sun Java™ wordt vermeld en probeer er AEM WCM mee uit te voeren. Als u meerdere Java™-versies hebt geïnstalleerd, selecteert u de ondersteunde versie.
 
-   Als deze stap is geslaagd en uw besturingssystemen de optie hebben om altijd het geselecteerde programma te gebruiken om de .jar-bestanden uit te voeren, selecteert u deze optie. Dubbelklikken moet vanaf nu werken.
+   Als deze stap is geslaagd en uw besturingssysteem de optie heeft om altijd het geselecteerde programma te gebruiken om de .jar-bestanden uit te voeren, selecteert u deze optie. Dubbelklikken moet vanaf nu werken.
 
-* Soms kunt u de juiste koppeling herstellen door de ondersteunde Java-versie opnieuw te installeren.
+* Soms kunt u de juiste koppeling herstellen door de ondersteunde Java™-versie opnieuw te installeren.
 * U kunt CRX altijd uitvoeren met behulp van de opdrachtregel of start/stop-scripts zoals eerder in dit document is beschreven.
 
 ### Mijn toepassing die op CRX loopt werpt fouten uit het geheugen {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Zie ook [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Zie ook [Geheugenproblemen analyseren](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
-CRX heeft zelf een zeer laag geheugenverbruik. Als de toepassing die binnen CRX wordt uitgevoerd grotere geheugenvereisten heeft of om geheugen-zware verrichtingen (bijvoorbeeld, grote transacties) verzoekt, moet de JVM instantie waar CRX looppas met aangewezen geheugenmontages worden begonnen.
+CRX heeft zelf een laag geheugenverbruik. Als de toepassing die binnen CRX loopt grotere geheugenvereisten heeft of geheugen-zware verrichtingen (bijvoorbeeld, grote transacties) vraagt, moet de instantie JVM waar CRX looppas met aangewezen geheugenmontages beginnen.
 
-Gebruik de Java-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&amp;ast;.jar om de heapsize in te stellen op 512MB).
+Gebruik de Java™-opdrachtopties om geheugeninstellingen van de JVM te definiëren (bijvoorbeeld java -Xmx512m -jar crx&amp;ast;.jar om de heapsize in te stellen op 512 MB).
 
 Geef de optie voor het instellen van het geheugen op terwijl u AEM WCM start vanaf de opdrachtregel. De AEM WCM start/stop manuscripten of de douanescripten voor het beheren van AEM opstarten WCM kunnen ook worden gewijzigd om de vereiste geheugenmontages te bepalen.
 
-Als u reeds uw heapsize aan 512MB hebt bepaald, kunt u de geheugenkwestie verder willen analyseren door een heapstortplaats te creëren:
+Als u reeds uw heapsize aan 512 MB hebt bepaald, kunt u de geheugenkwestie verder willen analyseren door een heapstortplaats te creëren:
 
 Als u automatisch een heapdump wilt maken wanneer er onvoldoende geheugen beschikbaar is, gebruikt u de volgende opdracht:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
-Hiermee wordt een heap-dump-bestand gegenereerd (**java_..hprof**) als er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
+Deze methode produceert een heap dump-bestand (**java_..hprof**) als er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
 
 ### Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
-In bepaalde situaties worden de AEM WCM-welkomstschermen niet automatisch weergegeven, ook al is de gegevensopslagruimte zelf in orde. Dit kan afhangen van de instelling van het besturingssysteem, de configuratie van de browser of vergelijkbare factoren.
+In bepaalde situaties worden de AEM WCM-welkomstschermen niet automatisch weergegeven, ook al is de gegevensopslagruimte zelf in orde. Dit probleem kan afhankelijk zijn van de installatie van het besturingssysteem, de configuratie van de browser of vergelijkbare factoren.
 
 Het gebruikelijke symptoom is dat het venster AEM WCM QuickStart &quot;AEM WCM opstarten, wachten op het opstarten van de server....&quot; Als dat bericht relatief lang wordt weergegeven, voert u de AEM WCM-URL handmatig in in het browservenster met de standaard 4502-poort of de poort waarop de instantie wordt uitgevoerd: http://localhost:4502/.
 
@@ -97,11 +97,11 @@ Soms heeft het AEM WCM QuickStart-venster het bericht &quot;AEM WCM wordt uitgev
 
 Als alles anders ontbreekt, controleer de logboeken om te weten te komen wat is gebeurd.
 
-### De website laadt niet of mislukt soms met Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+### De website laadt niet of mislukt soms met Java™ 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java 11 waarbij de website niet met tussenpozen wordt geladen of gezakt.
+Er is een bekend probleem met AEM 6.5 dat wordt uitgevoerd op Java™ 11 waarbij de website mogelijk niet met tussenpozen wordt geladen of gezakt.
 
-Als dit gebeurt, volgt u de onderstaande tijdelijke oplossing:
+Ga als volgt te werk als dit probleem zich voordoet:
 
 1. Open de `sling.properties` bestand onder de `crx-quickstart/conf/` map
 1. Zoek de volgende regel:
@@ -118,15 +118,15 @@ Als dit gebeurt, volgt u de onderstaande tijdelijke oplossing:
 
 ### Pagina niet gevonden bij aanvragen van een geometrixx-buitenpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
-**Is van toepassing op WebLogic 10.3.5 en JBoss 5.1**
+**Is van toepassing op WebLogic 10.3.5 en JBoss® 5.1**
 
-Wanneer een verzoek aan geometrixx-outdoor/en pagina een 404 (Pagina niet Fouten) terugkeert, kunt u opnieuw controleren dat u het extra het hellen bezit in het sling.properties- dossier nodig voor deze specifieke Servers van de Toepassing hebt geplaatst.
+Wanneer een verzoek aan geometrixx-outdoor/en pagina 404 (Pagina niet Gevonden) terugkeert, kunt u opnieuw controleren dat u het extra bezit van de helling in het sling.properties- dossier nodig voor deze specifieke Servers van de Toepassing hebt geplaatst.
 
 Zie in de *AEM webtoepassing implementeren* voor de details.
 
-### De grootte van de reactiekop kan groter zijn dan 4Kb {#response-header-size-can-be-greater-than-kb}
+### De grootte van de reactiekop kan groter zijn dan 4 KB {#response-header-size-can-be-greater-than-kb}
 
-502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4kb kan overschrijden.
+502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4 KB kan overschrijden.
 
 Voor Tomcat 7.0, bijvoorbeeld, het maxHttpHeaderSize-kenmerk van het [HTTP-connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) Hiermee bepaalt u de beperkingen van de koptekstgrootte.
 
@@ -138,11 +138,11 @@ Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de sta
 
 >[!NOTE]
 >
->Adobe raadt u ten zeerste aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory>, verwijdert u de opslagplaats. Als u de gegevens in de opslagplaats wilt bewaren voordat u de gegevens verwijdert, verplaatst of kopieert u de &lt;cq-installation-directory>/crx-quickstart/repository folder ergens anders alvorens de andere omslagen te schrappen.
+>Adobe raadt u aan een back-up van de opslagplaats te maken voordat u AEM verwijdert. Als u de gehele &lt;cq-installation-directory>, verwijdert u ook de repository. Als u de gegevens in de opslagplaats wilt bewaren voordat u de gegevens verwijdert, verplaatst of kopieert u de &lt;cq-installation-directory>/crx-quickstart/repository folder ergens anders alvorens de andere omslagen te schrappen.
 
 Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.
 
-### JSP-bestanden worden niet gecompileerd op JBoss {#jsp-files-are-not-compiled-on-jboss}
+### JSP-bestanden worden niet gecompileerd op JBoss® {#jsp-files-are-not-compiled-on-jboss}
 
-Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Zie voor meer informatie de
-[Problemen met JSP-compilatie in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artikel.
+Als u JSP-bestanden installeert of bijwerkt naar Experience Manager op JBoss® en de bijbehorende servlets niet worden gecompileerd, moet u ervoor zorgen dat de JBoss® JSP-compiler correct is geconfigureerd. Zie voor meer informatie de
+[Problemen met JSP-compilatie in JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) artikel.

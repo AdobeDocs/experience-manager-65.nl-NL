@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Deze zelfstudie is een stap in de [Uw eerste adaptieve formulier maken](../../fo
 
 ## Over de zelfstudie {#about-the-tutorial}
 
-AEM [!DNL Forms] Met de module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
+AEM [!DNL Forms] Met de module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
 Voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel raadpleegt u [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md).
 
@@ -57,7 +57,7 @@ Doe het volgende uw vormen [!DNL MySQL] database:
 
 1. JDBC-stuurprogramma installeren voor [!DNL MySQL] database als een OSGi-bundel:
 
-   1. Downloaden [[!DNL MySQL] JDBC Driver OSGi Bundle](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+   1. Downloaden [!DNL MySQL] JDBC Driver OSGi Bundle van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
    1. Aanmelden bij AEM [!DNL Forms] Instantie van auteur als beheerder en ga naar AEM bundels van de Webconsole. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tik op **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] wordt weergegeven.

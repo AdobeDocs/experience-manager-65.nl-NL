@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Open een externe SQL-database zodat uw CQ-toepassingen kunnen werken met de gege
 
 ## Het JDBC-databasestuurprogramma bundelen {#bundling-the-jdbc-database-driver}
 
-Sommige gegevensbestandverkopers verstrekken bestuurders JDBC in een bundel OSGi, bijvoorbeeld [MySQL](https://www.mysql.com/downloads/connector/j/). Als het JDBC-stuurprogramma voor uw database niet beschikbaar is als OSGi-bundel, vraagt u het stuurprogramma JAR op en plaatst u deze in een OSGi-bundel. De bundel moet de pakketten uitvoeren die voor het in wisselwerking staan met de gegevensbestandserver worden vereist. De bundel moet ook de pakketten invoeren die het verwijzingen.
+Sommige gegevensbestandverkopers verstrekken bestuurders JDBC in een bundel OSGi, bijvoorbeeld [MySQL](https://dev.mysql.com/downloads/connector/j/). Als het JDBC-stuurprogramma voor uw database niet beschikbaar is als OSGi-bundel, vraagt u het stuurprogramma JAR op en plaatst u deze in een OSGi-bundel. De bundel moet de pakketten uitvoeren die voor het in wisselwerking staan met de gegevensbestandserver worden vereist. De bundel moet ook de pakketten invoeren die het verwijzingen.
 
-In het volgende voorbeeld wordt het [Bundelplug-in voor Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) om het HSQLDB-stuurprogramma in een OSGi-bundel te plaatsen. De POM geeft de plug-in de opdracht het bestand hsqldb.jar dat als een afhankelijkheid is geïdentificeerd, in te sluiten. Alle org.hsqldb-pakketten worden geëxporteerd.
+In het volgende voorbeeld wordt het [Plug-in voor bundel voor Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) om het HSQLDB-stuurprogramma in een OSGi-bundel te plaatsen. De POM geeft de plug-in de opdracht het bestand hsqldb.jar dat als een afhankelijkheid is geïdentificeerd, in te sluiten. Alle org.hsqldb-pakketten worden geëxporteerd.
 
 De plug-in bepaalt automatisch welke pakketten u wilt importeren en geeft deze weer in het bestand MANIFEST.MF van de bundel. Als een van de pakketten niet beschikbaar is op de CQ-server, wordt de bundel niet gestart bij de installatie. Er zijn twee mogelijke oplossingen:
 
@@ -86,9 +86,9 @@ Met kennis van de broncode kunt u bepalen welke oplossing u wilt gebruiken. U ku
 
 Met de volgende koppelingen worden de downloadpagina&#39;s voor bepaalde populaire databaseproducten geopend:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
-* [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
-* [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
+* [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### De JDBC Connection Pool Service configureren {#configuring-the-jdbc-connection-pool-service}
 
@@ -100,7 +100,7 @@ Bij het werken met CQ zijn er verschillende methoden om de configuratie-instelli
 
 De volgende eigenschappen zijn beschikbaar om een samengevoegde verbindingsdienst te vormen. De bezitsnamen zijn vermeld aangezien zij in de Console van het Web verschijnen. De corresponderende naam voor een `sling:OsgiConfig` knooppunt wordt tussen haakjes weergegeven. Voorbeeldwaarden worden weergegeven voor een HSQLDB-server en een database met een alias van `mydb`:
 
-* JDBC-stuurprogramma, klasse ( `jdbc.driver.class`): De Java-klasse die moet worden gebruikt om de interface java.sql.Driver uit te voeren, bijvoorbeeld `org.hsqldb.jdbc.JDBCDriver`. Het gegevenstype is `String`.
+* JDBC-stuurprogramma, klasse ( `jdbc.driver.class`): De klasse Java™ die moet worden gebruikt om de interface java.sql.Driver uit te voeren, bijvoorbeeld `org.hsqldb.jdbc.JDBCDriver`. Het gegevenstype is `String`.
 
 * JDBC-verbindingsURI ( `jdbc.connection.uri`): De URL van de database die moet worden gebruikt om de verbinding te maken, bijvoorbeeld `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. De indeling van de URL moet geldig zijn voor gebruik met de methode getConnection van de klasse java.sql.DriverManager. Het gegevenstype is `String`.
 
@@ -121,13 +121,13 @@ De volgende eigenschappen zijn beschikbaar om een samengevoegde verbindingsdiens
 
 * Aanvullende serviceeigenschappen ( `datasource.svc.properties`): Een set naam-/waardeparen die u aan de verbindings-URL wilt toevoegen. Het gegevenstype is `String[]`.
 
-De service van de JDBC-verbindingspool is een fabriek. Daarom moet u een `sling:OsgiConfig` knoop om de verbindingsdienst te vormen, moet de naam van de knoop de fabrieksdienst PID omvatten die door wordt gevolgd *`-alias`*. De alias die u gebruikt moet uniek zijn voor alle configuratienamen voor die PID. Een voorbeeldknooppuntnaam is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+De service van de JDBC-verbindingspool is een fabriek. Daarom moet u een `sling:OsgiConfig` knoop om de verbindingsdienst te vormen, moet de naam van de knoop de fabrieksdienst PID omvatten die door wordt gevolgd *`-alias`*. De alias die u gebruikt moet uniek zijn voor alle configuratieknooppunten voor die PID. Een voorbeeldknooppuntnaam is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Verbinding maken met de database {#connecting-to-the-database}
 
-In uw code van Java, gebruik de dienst DataSourcePool om een `javax.sql.DataSource` object voor de configuratie die u hebt gemaakt. De DataSourcePool-service biedt de `getDataSource` methode die een `DataSource` -object voor een bepaalde gegevensbronnaam. Als methodeargument, gebruik de waarde van de Naam Datasource (of `datasource.name`) die u hebt opgegeven voor de configuratie van de JDBC-verbindingspool.
+Gebruik in uw Java™-code de DataSourcePool-service om een `javax.sql.DataSource` object voor de configuratie die u hebt gemaakt. De DataSourcePool-service biedt de `getDataSource` methode die een `DataSource` -object voor een bepaalde gegevensbronnaam. Als methodeargument, gebruik de waarde van de Naam Datasource (of `datasource.name`) die u hebt opgegeven voor de configuratie van de JDBC-verbindingspool.
 
 In het volgende voorbeeld verkrijgt JSP-code een instantie van de hsqldbds-gegevensbron, wordt een eenvoudige SQL-query uitgevoerd en wordt het aantal geretourneerde resultaten weergegeven.
 
@@ -169,8 +169,9 @@ In het volgende voorbeeld verkrijgt JSP-code een instantie van de hsqldbds-gegev
 
 >[!NOTE]
 >
->Als de methode getDataSource een uitzondering werpt omdat de gegevensbron niet wordt gevonden, zorg ervoor de de dienstconfiguratie van de Pool van Verbindingen correct is. Verifieer de bezitsnamen, de waarden, en de gegevenstypes.
+>Als de methode getDataSource een uitzondering werpt omdat de gegevensbron niet wordt gevonden, zorg ervoor dat de de dienstconfiguratie van de Pool van Verbindingen correct is. Verifieer de bezitsnamen, de waarden, en de gegevenstypes.
 
+<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->Leer hoe te om een DataSourcePool in een bundel te injecteren OSGi, zie [Een DataSourcePool-service in een Adobe Experience Manager OSGi-bundel injecteren](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->

@@ -1,7 +1,7 @@
 ---
 title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de lagen worden in het voorgeheugen ondergebracht Dispatcher en CDN, uiteindelijk verbeterend de prestaties van de cliënttoepassingen.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 1%
@@ -264,7 +264,7 @@ De blijvende vragen worden geadviseerd aangezien zij in het voorgeheugen onder k
 AEM maakt de cache standaard ongeldig op basis van de definitie Tijd tot live (TTL). Deze TTLs kan door de volgende parameters worden bepaald. Deze parameters zijn op verschillende manieren toegankelijk, waarbij de namen variëren volgens het gebruikte mechanisme:
 
 | Cachetype | [HTTP-header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-configuratie  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |

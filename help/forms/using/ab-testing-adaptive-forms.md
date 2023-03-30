@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # A/B-test voor adaptieve formulieren maken en beheren{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Negatief|[!BADGE Stopzetten]{type=negative tooltip="Deze functie is nu levenseinde"}
+|Negatief|[!BADGE Stopzetten]{type=negative tooltip="Deze functie is nu levenseinde"}|
 <div class="preview"> De functie voor het testen van adaptieve formulieren in A/B is aan het einde van de levensduur verstreken en wordt niet meer ondersteund. </div>
 
 ## Overzicht {#overview-br}

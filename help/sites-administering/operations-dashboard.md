@@ -12,9 +12,9 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
+source-wordcount: '6053'
 ht-degree: 0%
 
 ---
@@ -138,9 +138,9 @@ Voor het maken van een individuele health check zijn twee stappen nodig: een Sli
 
 ### Een samengestelde health check maken {#creating-a-composite-health-check}
 
-Een Composite Health Check heeft als taak verschillende afzonderlijke Health Checks samen te voegen en een reeks gemeenschappelijke kenmerken te delen. Zo groepeert de veiligheidssamengestelde health check alle afzonderlijke gezondheidscontroles die beveiligingsgerelateerde controles uitvoeren. De eerste stap om een samengestelde controle tot stand te brengen is een configuratie toe te voegen OSGI. Opdat het in het Dashboard van Verrichtingen moet worden getoond, moet een nieuw configuratieknooppunt worden toegevoegd, de zelfde manier wij voor een eenvoudige controle deden.
+Een Composite Health Check heeft als taak verschillende afzonderlijke Health Checks samen te voegen en een reeks gemeenschappelijke kenmerken te delen. Zo groepeert de veiligheidssamengestelde health check alle afzonderlijke gezondheidscontroles die beveiligingsgerelateerde controles uitvoeren. De eerste stap om een samengestelde controle tot stand te brengen is een configuratie toe te voegen OSGI. Opdat het in het Dashboard van Verrichtingen moet worden getoond, moet een nieuw configuratieknooppunt op de zelfde manier worden toegevoegd zoals een eenvoudige controle.
 
-1. Ga naar de Manager van de Configuratie van het Web in de Console OSGI. U kunt dit doen door toegang te hebben tot `https://serveraddress:port/system/console/configMgr`
+1. Ga naar de Manager van de Configuratie van het Web in de Console OSGI. Ga naar `https://serveraddress:port/system/console/configMgr`
 1. Zoeken naar het item dat wordt aangeroepen **Apache Sling Composite Health Check**. Nadat u het vindt, merk op dat er twee configuraties reeds beschikbaar zijn: een voor de System Checks en een andere voor de Security Checks.
 1. Creeer een configuratie door &quot;+&quot;knoop op de rechterkant van de configuratie te drukken. Er wordt een nieuw venster weergegeven, zoals hieronder wordt getoond:
 
@@ -153,7 +153,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
    * **Naam (hc.name):** De naam van de Composite Health Check. Een betekenisvolle naam wordt aanbevolen.
    * **Tags (hc.tags):** De labels voor deze Health Check. Als deze samengestelde health check bedoeld is om deel uit te maken van een andere samengestelde health check (bijvoorbeeld in een hiërarchie van gezondheidscontroles), voegt u de codes toe waarop deze samenstelling betrekking heeft.
    * **Naam MBean (hc.bean.name):** De naam van de boon die aan JMX MBean van deze samengestelde gezondheidscontrole wordt gegeven.
-   * **Filterlabels (filter.tags):** De eigenschap die specifiek is voor samengestelde gezondheidscontroles. Dit zijn de tags die de samenstelling moet samenvoegen. De samengestelde health check aggregeert onder de groep alle gezondheidscontroles waarvoor een tag is gebruikt die overeenkomt met een van de filtertags van deze samenstelling. Bijvoorbeeld een samengestelde health check met de filterlabels **test** en **controleren** worden alle individuele en samengestelde gezondheidscontroles samengevoegd die een van de **test** en **controleren** tags in de eigenschap tags ( `hc.tags`).
+   * **Filterlabels (filter.tags):** De eigenschap die specifiek is voor samengestelde gezondheidscontroles. Deze tags worden samengevoegd door de samenstelling. De samengestelde health check aggregeert onder de groep alle gezondheidscontroles waarvoor een tag is gebruikt die overeenkomt met een van de filtertags van deze samenstelling. Bijvoorbeeld een samengestelde health check met de filterlabels **test** en **controleren** worden alle individuele en samengestelde gezondheidscontroles samengevoegd die een van de **test** en **controleren** tags in de eigenschap tags ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
 
    >[!NOTE]
    >
-   >Als u individuele gezondheidscontroles creeert die logisch gezien onder een samengestelde controle behoren die reeds in het dashboard door gebrek aanwezig is, worden zij automatisch gevangen en gegroepeerd onder de respectieve samengestelde controle. Wegens dit, is er geen behoefte om een configuratieknooppunt voor deze controles tot stand te brengen.
+   >Als u individuele gezondheidscontroles creeert die logisch gezien onder een samengestelde controle behoren die reeds in het dashboard door gebrek aanwezig is, worden zij automatisch gevangen en gegroepeerd onder de respectieve samengestelde controle. Als dusdanig, is er geen behoefte om een configuratieknooppunt voor deze controles tot stand te brengen.
    >
    >Als u bijvoorbeeld een afzonderlijke beveiligingscontrole maakt, wijst u deze toe aan de &quot;**beveiliging**&quot; en wordt geïnstalleerd. Deze wordt automatisch weergegeven onder de samengestelde controle Beveiligingscontroles in het vluchthandboek.
 
@@ -309,11 +309,11 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
   </tr>
   <tr>
    <td>Cachecontrole code</td>
-   <td><p>Dit is een Health Check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java 7 kunnen activeren:</p>
+   <td><p>Een health check die verschillende JVM-omstandigheden controleert die een CodeCache-bug in Java™ 7 kunnen activeren:</p>
     <ul>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
-     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd in Java 7 en de grootte van de gereserveerde codecache is kleiner dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
-    </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Voor meer informatie over de bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">deze pagina controleren</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>retourneert de waarschuwing als de instantie wordt uitgevoerd op Java™ 7, waarbij Cachegeheugen leegmaken is ingeschakeld</li>
+     <li>retourneert Waarschuwen als de instantie wordt uitgevoerd op Java™ 7 en de grootte van de gereserveerde codecache kleiner is dan een minimumdrempel (de standaardwaarde is 90 MB)</li>
+    </ul> <p>De <code>minimum.code.cache.size</code> drempel kan worden geconfigureerd. Voor meer informatie over de bug raadpleegt u <a href="https://bugs.java.com/bugdatabase/"> en zoek vervolgens op Bug ID 8012547</a>.</p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Fouten in snijpad van bronnen</td>
@@ -630,7 +630,7 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 
 ## Aangepaste onderhoudstaken {#custom-maintenance-tasks}
 
-De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur voor onderhoudstaken is gebaseerd op de taakafhandeling van Apache Sling, moet een onderhoudstaak de Java-interface implementeren ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder wordt vermeld:
+De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur voor onderhoudstaken is gebaseerd op de taakafhandeling van Apache Sling, moet een onderhoudstaak de Java™-interface implementeren ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder wordt vermeld:
 
 <table>
  <tbody>
@@ -767,7 +767,7 @@ U kunt ook een `JSON` het dossier samenvattend de dashboardinformatie door te kl
    <td>Systeem</td>
    <td>
     <ul>
-     <li>besturingssysteem en versie van besturingssysteem (bijvoorbeeld Mac OS X)</li>
+     <li>besturingssysteem en versie van besturingssysteem (bijvoorbeeld macOS X)</li>
      <li>gemiddelde systeembelasting, zoals opgehaald uit <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanutable</a></li>
      <li>schijfruimte (op de partitie waar de thuismap zich bevindt)</li>
      <li>maximale heap, zoals geretourneerd door <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>

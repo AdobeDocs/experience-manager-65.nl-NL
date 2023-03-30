@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '1528'
+source-wordcount: '1499'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Wanneer u een webpagina aan een framework koppelt, wordt de webpagina en de onde
 
 ### Adobe Analytics-account {#adobe-analytics-account}
 
-Als u AEM gegevens in Adobe Analytics wilt bijhouden, moet u een geldige Adobe Marketing Cloud Adobe Analytics-account hebben.
+Als u AEM gegevens in Adobe Analytics wilt bijhouden, moet u een geldige Adobe Experience Cloud Adobe Analytics-account hebben.
 
 De Adobe Analytics-account moet:
 
@@ -44,36 +44,36 @@ De Adobe Analytics-account moet:
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt aanmelden. Via:
+Voordat u verdergaat, moet u ervoor zorgen dat u zich bij Adobe Analytics kunt aanmelden. Als volgt:
 
-* [Aanmelden bij Adobe Experience Cloud](https://login.experiencecloud.adobe.com/exc-content/login.html)
+* [Aanmelden bij Adobe Experience Cloud](https://experience.adobe.com/#/@login/home)
 
 * [Aanmelden bij Adobe Analytics](https://sc.omniture.com/login/)
 
 ### AEM configureren om uw Adobe Analytics-datacenters te gebruiken {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [datacenters](https://developer.omniture.com/en_US/content_page/concepts-terminology/c-how-is-data-stored) gegevens verzamelen, verwerken en opslaan die bij uw Adobe Analytics-rapportenpakket horen. U moet AEM configureren om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportsuite. In de volgende tabel staan de beschikbare datacenters en de bijbehorende URL.
+Adobe Analytics [datacenters](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) gegevens verzamelen, verwerken en opslaan die bij uw Adobe Analytics-rapportenpakket horen. Configureer AEM om het datacenter te gebruiken dat als host fungeert voor uw Adobe Analytics-rapportenpakket. Het datacenter wordt vermeld in uw contract. Neem voor deze informatie contact op met een beheerder in uw organisatie.
+
+Indien nodig, gebruik het volgende om aan het correcte gegevenscentrum worden verpletterd: `https://api.omniture.com/`.
+
+Als uw organisatie gegevensinzameling of herwinning van een specifiek gegevenscentrum vereist, gebruik het volgende:
 
 | Datacenter | URL |
 |---|---|
-| San Jose | https://api.omniture.com/admin/1.4/rest/ |
-| Dallas | https://api2.omniture.com/admin/1.4/rest/ |
-| Londen | https://api3.omniture.com/admin/1.4/rest/ |
-| Singapore | https://api4.omniture.com/admin/1.4/rest/ |
-| Oregon | https://api5.omniture.com/admin/1.4/rest/ |
-
-AEM gebruikt standaard het datacenter van San Jose (https://api.omniture.com/admin/1.4/rest/).
+| Londen | `https://api3.omniture.com/` |
+| Singapore | `https://api4.omniture.com/` |
+| Oregon | `https://api5.omniture.com/` |
 
 Gebruik de [Webconsole om de OSGi-bundel te configureren](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) **Adobe AEM Analytics HTTP Client**. Voeg de **URL datacenter** voor het gegevenscentrum dat gastheren een rapportreeks waarvoor uw AEM pagina&#39;s gegevens verzamelen.
 
 ![aa-07](assets/aa-07.png)
 
 1. Open de webconsole in uw webbrowser. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
-1. Ga uw geloofsbrieven in om tot de console toegang te hebben.
+1. Om tot de console toegang te hebben, ga uw geloofsbrieven in.
 
    >[!NOTE]
    >
-   >Neem contact op met de sitebeheerder om te weten te komen of u toegang hebt tot deze console.
+   >Neem contact op met de sitebeheerder als u wilt weten of u toegang hebt tot deze console.
 
 1. Selecteer genoemd het punt van de Configuratie **Adobe AEM Analytics HTTP Client**.
 1. Als u de URL voor een datacenter wilt toevoegen, drukt u op de knop + naast de knop **Datacenter-URL&#39;s** en typ de URL in het vak.
@@ -125,13 +125,13 @@ Voor identiteitskaart van de Reeks van het Rapport (RSID) die u gebruikt, kunt u
 
    Het framework wordt geopend voor bewerking.
 
-1. In de **Rapportageopties** van de zijpod (rechterkant van het hoofddeelvenster) klikt u op **Item toevoegen**. Gebruik vervolgens de vervolgkeuzelijst om de rapportsuite-id te selecteren (bijvoorbeeld `geometrixxauth`) waarmee het kader zal samenwerken.
+1. In de **Rapportageopties** van de zijpod (rechterkant van het hoofddeelvenster) klikt u op **Item toevoegen**. Gebruik vervolgens de vervolgkeuzelijst om de rapportsuite-id te selecteren (bijvoorbeeld `geometrixxauth`) waarmee het kader interactie heeft.
 
    >[!NOTE]
    >
    >De zoeker naar inhoud aan de linkerkant wordt gevuld met Adobe Analytics-variabelen (SiteCatalyst-variabelen) wanneer u een rapportsuite-id selecteert.
 
-1. Gebruik vervolgens de **Run-modus** vervolgkeuzelijst (naast de rapportsuite-id) om de serverinstanties te selecteren die u gegevens naar de rapportsuite wilt verzenden.
+1. Om de serverinstanties te selecteren die u informatie naar de Reeks van het Rapport wilt verzenden, gebruik **Run-modus** vervolgkeuzelijst (naast de rapportsuite-id).
 
    ![aa-framework-01](assets/aa-framework-01.png)
 
@@ -153,19 +153,19 @@ Begin door het paneel te openen. Druk op de pijl omlaag naast **Servers**:
 
    * bevat de URL waarmee Adobe Analytics-aanroepen worden verzonden
 
-      * name - standaardinstellingen voor de Adobe Analytics-account *Bedrijfsnaam*
-      * d1 - komt overeen met het datacenter waarnaar de informatie wordt verzonden (kan d1, d2 of d3 zijn)
-      * sc.omtr dc.net - domeinnaam
+      * `cname` - wordt standaard ingesteld op de Adobe Analytics-account *Bedrijfsnaam*
+      * `d1` - komt overeen met het datacenter waarnaar de informatie wordt verzonden (ofwel `d1`, `d2`, of `d3`)
+      * `sc.omtrdc.net` - domeinnaam
 
 * **Secure Tracking Server**
 
    * Bevat dezelfde segmenten als de trackingserver
-   * Dit wordt gebruikt voor het verzenden van gegevens van beveiligde pagina&#39;s (https://)
+   * Wordt gebruikt voor het verzenden van gegevens van beveiligde pagina&#39;s (`https://`)
 
 * **Naamruimte van bezoeker**
 
    * De naamruimte bepaalt het eerste deel van de URL voor bijhouden.
-   * bijv. de naamruimte wijzigen in **CNAME** zal ertoe leiden dat de vraag aan Adobe Analytics wordt gemaakt om te kijken als **CNAME.d1.omtr dc.net** in plaats van de standaardinstelling.
+   * De naamruimte wijzigen in **CNAME** veroorzaakt de vraag aan Adobe Analytics om te kijken als **CNAME.d1.omtr dc.net** in plaats van de standaardinstelling.
 
 ## Een pagina koppelen aan een Adobe Analytics-framework {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -177,15 +177,15 @@ Afstammingen van de pagina nemen de koppeling met het framework over. Wanneer u 
 1. Open de **[Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md)**, rechtstreeks vanuit de console of de pagina-editor.
 1. Open het tabblad* Cloud Services**.
 
-1. Gebruik de **Configuratie toevoegen** keuzelijst selecteren **Adobe Analytics** uit de beschikbare opties. Als er overerving is, moet u die uitschakelen voordat de kiezer beschikbaar wordt.
+1. Gebruik de **Configuratie toevoegen** keuzelijst selecteren **Adobe Analytics** uit de beschikbare opties. Als overerving is ingesteld, schakelt u die uit voordat de kiezer beschikbaar wordt.
 
-1. De keuzelijst voor **Adobe Analytics** worden toegevoegd aan de beschikbare opties. Gebruik deze optie om de vereiste frameworkconfiguratie te selecteren.
+1. De keuzelijst voor **Adobe Analytics** wordt toegevoegd aan de beschikbare opties. Selecteer de vereiste frameworkconfiguratie.
 
 1. Selecteren **Opslaan en sluiten**.
-1. **[Publiceren](/help/sites-authoring/publishing-pages.md)** de pagina om de pagina en alle aangesloten configuraties/bestanden te activeren.
-1. De laatste stap bestaat uit het bezoeken van de pagina op de publicatie-instantie en het zoeken naar een trefwoord (bijvoorbeeld een aubergine) met de functie **Zoeken** component.
-1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
-1. Gebruikend het verstrekte voorbeeld, zou de vraag de ingevoerde waarde (d.w.z. augplant) in eVar7 moeten bevatten en de gebeurtenislijst zou event3 moeten bevatten.
+1. Om de pagina en om het even welke verbonden configuraties/dossiers te activeren, **[Publiceren](/help/sites-authoring/publishing-pages.md)** de pagina.
+1. De laatste stap bestaat uit het bezoeken van de pagina op de publicatie-instantie en het zoeken naar een trefwoord (bijvoorbeeld een tag) met de opdracht **Zoeken** component.
+1. U kunt dan de vraag controleren die aan Adobe Analytics wordt gemaakt gebruikend een aangewezen hulpmiddel; bijvoorbeeld: [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html).
+1. Gebruikend het voorgelegde voorbeeld, zou de vraag de ingegane waarde (d.w.z., augplant) in eVar7 moeten bevatten en de gebeurtenislijst zou event3 moeten bevatten.
 
 ### Paginaweergaven {#page-views}
 
@@ -208,7 +208,7 @@ Om deze dienst te vormen OSGi, kunt u of gebruiken [Webconsole](/help/sites-depl
 
 Ga net als bij het maken van een Adobe Analytics-configuratie of -framework naar de (verouderd) **Cloud Services** scherm. Selecteren **Configuraties tonen** klikt u vervolgens op de koppeling naar de specifieke configuratie die u wilt bijwerken.
 
-Wanneer u een Adobe Analytics-configuratie bewerkt, moet u ook op de knop **Bewerken** wanneer op de configuratiepagina zelf om de **Component bewerken** .
+Druk op **Bewerken** wanneer op de configuratiepagina zelf om de **Component bewerken** .
 
 ## Adobe Analytics-frameworks verwijderen {#deleting-adobe-analytics-frameworks}
 

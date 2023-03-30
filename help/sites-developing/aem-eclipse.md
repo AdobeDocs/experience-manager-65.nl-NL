@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '779'
+ht-degree: 1%
 
 ---
 
@@ -23,38 +23,38 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De AEM Developer Tools for Eclipse is een Eclipse-plug-in die is gebaseerd op de [Eclipse-insteekmodule voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) vrijgegeven onder de Apache-licentie 2.
+&quot;AEM Developer Tools&quot; is een Eclipse-plug-in op basis van de [Eclipse-insteekmodule voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) vrijgegeven onder de Apache-licentie 2.
 
 Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
 * Naadloze integratie met AEM instanties door de Schakelaar van de Server van Eclipse.
 * Synchronisatie voor inhoud en OSGI-bundels.
 * Ondersteuning voor foutopsporing met de functie voor hot-swapping van code.
-* Eenvoudige laarzentrekker van AEM projecten via een specifieke Tovenaar van de Aanmaak van het Project.
+* Eenvoudige Bootstrap van AEM Projecten door middel van een specifieke Tovenaar van de Aanmaak van het Project.
 * Eenvoudig bewerken van JCR-eigenschappen.
 
 ## Vereisten {#requirements}
 
-Voordat u de AEM Developer Tools kunt gebruiken, moet u:
+Ga als volgt te werk voordat u de AEM Developer Tools gebruikt:
 
-* Downloaden en installeren [Eclipse-IDE voor Java EE-ontwikkelaars](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools biedt momenteel ondersteuning voor Eclipse Kepler of nieuwer
+* Downloaden en installeren [Eclipse-IDE voor Java™ EE-ontwikkelaars](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools biedt momenteel ondersteuning voor Eclipse Kepler of nieuwer
 
 * Kan worden gebruikt met AEM versie 5.6.1 of hoger
-* Configureer uw overdrukinstallatie om ervoor te zorgen dat u ten minste 1 gigabyte heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Configureer de lipse-installatie om ervoor te zorgen dat u ten minste 1 GB heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->In macOS moet u met de rechtermuisknop klikken op **Eclipse.app** en selecteer vervolgens **Pakketinhoud tonen** om uw `eclipse.ini`**.**
+>Klik in macOS met de rechtermuisknop **Eclipse.app** en selecteer vervolgens **Pakketinhoud tonen** om uw `eclipse.ini`.
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Als u eenmaal aan de [vereisten](#requirements) hierboven kunt u de plug-in als volgt installeren:
 
-1. Bladeren in het dialoogvenster [**AEM** Website Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
+1. Bladeren in het dialoogvenster **AEM Developer Tools** website op `https://eclipse.adobe.com/aem/dev-tools/`.
 
 1. Kopieer de **Installatiekoppeling**.
 
-   U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Hierdoor kunt u offline installeren, maar op deze manier gaan automatische updatemeldingen verloren.
+   U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Zo kunt u offline installeren, maar u kunt automatische updatemeldingen niet uitvoeren.
 
 1. Open in Eclipse de **Help** -menu.
 1. Klikken **Nieuwe software installeren**.
@@ -76,15 +76,15 @@ Als u eenmaal aan de [vereisten](#requirements) hierboven kunt u de plug-in als 
 
 ## Het AEM perspectief {#the-aem-perspective}
 
-De hulpmiddelen van de Ontwikkeling van de AEM voor Eclipse schepen met een Perspectief dat u volledige controle over uw AEM projecten en instanties biedt.
+De hulpmiddelen van de Ontwikkeling van de AEM voor Eclipse schepen met een Perspectief dat u volledige controle over uw AEM Projecten en instanties biedt.
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De AEM Hulpmiddelen van de Ontwikkelaar voor Eclipse komen met een steekproef, multi-moduleproject dat u snel aan snelheid met een projectopstelling in Verduistering helpt, evenals dienst als best-praktijkgids aan verscheidene AEM eigenschappen. [Meer informatie over de projectarchetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+De &quot;AEM Hulpmiddelen van de Ontwikkelaar&quot;omvatten een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt krijgen. Het dient ook als gids voor beste praktijken aan verscheidene AEM eigenschappen. [Meer informatie over de projectarchetype](https://github.com/adobe/aem-project-archetype).
 
-Ga als volgt te werk om het voorbeeldproject te maken:
+Voer de volgende stappen uit om het voorbeeldproject te maken:
 
 1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van project met meerdere modules**.
 
@@ -94,7 +94,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!NOTE]
    >
-   >Deze stap kan even duren omdat m2eclipse de catalogi van archetype moet aftasten.
+   >Deze stap kan even duren omdat m2eclipse de archetype catalogi moet aftasten.
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
@@ -106,9 +106,9 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-1. Vervolgens moet u een AEM configureren waarmee Eclipse verbinding maakt.
+1. Configureer nu een AEM server waarmee Eclipse verbinding kan maken.
 
-   Om de debugger eigenschap te gebruiken, moet u AEM op zuivert wijze begonnen zijn - die kan worden bereikt bijvoorbeeld door het volgende aan de bevellijn toe te voegen:
+   Om de debugger eigenschap te gebruiken, ben zeker u AEM op zuivert wijze begonnen, die kan worden bereikt door het volgende aan de bevellijn toe te voegen:
 
    ```
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -120,7 +120,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    >[!NOTE]
    >
-   >Op een nieuwe installatie (meer bepaald: wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de procedure die in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
+   >Op een nieuwe installatie (meer bepaald: wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -129,7 +129,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 1. Selecteer alle gemaakte projecten.
-1. Klik met de rechtermuisknop. In menu **Maven** selecteren **Projecten bijwerken**.
+1. Klik met de rechtermuisknop. In menu **Maven**, selecteert u **Projecten bijwerken**.
 1. Controleren **Updates van momentopname/releases forceren**.
 1. Klikken **OK**. Eclipse probeert de vereiste afhankelijkheden te downloaden.
 
@@ -137,7 +137,7 @@ Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 Automatisch aanvullen van de tagbibliotheek werkt buiten het vak, aangezien de juiste afhankelijkheden aan het project worden toegevoegd. Er is één bekend probleem wanneer u de AEM Uber Jar gebruikt, dat niet de benodigde tld- en TagExtraInfo-bestanden bevat.
 
-Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.scripting.jsp.taglib zich in het klassenpad vóór de AEM Uber Jar bevindt. Voor Geweven projecten, plaats het volgende gebiedsdeel in pom.xml vóór Uber Jar.
+Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.scripting.jsp.taglib zich in het klassepad vóór de AEM Uber Jar bevindt. Voor Geweven projecten, plaats het volgende gebiedsdeel in pom.xml vóór Uber Jar.
 
 ```xml
 <dependency>
@@ -153,12 +153,12 @@ Zorg ervoor om de juiste versie voor uw plaatsing van AEM toe te voegen.
 
 Op de officiële Apache Sling IDE-website voor Eclipse vindt u nuttige informatie:
 
-* De [**Apache Sling IDE-gereedschap voor Eclipse** Handboek](https://sling.apache.org/documentation/development/ide-tooling.html), zal deze documentatie u door de algemene concepten, serverintegratie en plaatsingsmogelijkheden begeleiden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
+* De [**Apache Sling IDE-gereedschap voor Eclipse** Handboek](https://sling.apache.org/documentation/development/ide-tooling.html), begeleidt deze documentatie u door de algemene concepten, serverintegratie, en plaatsingsmogelijkheden die door de Hulpmiddelen van de Ontwikkeling van de AEM worden gesteund.
 * De [Sectie Problemen oplossen](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * De [Lijst met bekende problemen](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-De volgende ambtenaar [Eclipse](https://eclipse.org/) documentatie kan u helpen uw omgeving in te stellen:
+De volgende ambtenaar [Eclipse](https://www.eclipse.org/) documentatie kan u helpen uw omgeving in te stellen:
 
-* [Aan de slag met Eclipse](https://eclipse.org/users/)
-* [Help-systeem Eclipse Luna](https://help.eclipse.org/luna/index.jsp)
+* [Aan de slag met Eclipse](https://www.eclipse.org/getting-started/)
+* [Help-systeem Eclipse Luna](https://help.eclipse.org/latest/index.jsp)
 * [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)

@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
 workflow-type: tm+mt
-source-wordcount: '6236'
+source-wordcount: '6235'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ Voor meer informatie over Adobe-extensies of extensies van derden raadpleegt u [
 * Integratie van Experience Platform-tags voor Dynamic Media-viewers werkt niet in het knooppunt van de auteur van de Experience Manager. U kunt geen het volgen van een pagina zien WCM tot het wordt gepubliceerd.
 * Integratie van Experience Platform-tags voor Dynamic Media-viewers wordt niet ondersteund in de pop-upbewerkingsmodus, waarin de URL van de viewer wordt verkregen via de knop &quot;URL&quot; op de pagina Asset Details.
 * Integratie van Experience Platform Tags kan niet gelijktijdig worden gebruikt met de integratie van verouderde viewers Analytics (via `config2=` parameter).
-* Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de &#39;kern playback&#39;, zoals wordt beschreven in [Overzicht van bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+* Ondersteuning voor het bijhouden van video&#39;s is beperkt tot het bijhouden van de &#39;kern playback&#39;, zoals wordt beschreven in [Overzicht van bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 * De configuratie van de Duur van de opslag voor Elementen van Gegevens wordt niet gesteund voor Elementen van Gegevens die gebruiken *Dynamic Media Viewers* extensie. Opslagduur moet worden ingesteld op **[!UICONTROL None]**.
 
 ### Gebruik de integratiegevallen {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Als een Experience Cloud-account is geabonneerd op Adobe Analytics for Audio en 
 
 Zie [Installatie en installatie van extensies](#installing-and-setup-of-extensions).
 
-De ondersteuning voor het bijhouden van video&#39;s is momenteel beperkt tot het bijhouden van de &#39;core playback&#39;, zoals beschreven in [Overzicht van bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
+De ondersteuning voor het bijhouden van video&#39;s is momenteel beperkt tot het bijhouden van de &#39;core playback&#39;, zoals beschreven in [Overzicht van bijhouden](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). Met name QoS, Advertenties, Hoofdstuk/Segmenten, of het volgen van Fouten wordt niet gesteund.
 
 ## De extensie Dynamic Media Viewers gebruiken {#using-the-dynamic-media-viewers-extension}
 
@@ -157,7 +157,7 @@ Voltooi de configuratiestappen van de [Adobe Analytics configureren](#configurin
 
 Na de juiste configuratie kunt u ondersteuning voor Experience Platform-tags toevoegen aan een webpagina met een Dynamic Media-viewer.
 
-Zie [De insluitcode voor Experience Platform-tags toevoegen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) voor meer informatie over hoe u de insluitcode van de bibliotheek Experience Platform Tags kunt gebruiken.
+Zie [De insluitcode voor Experience Platform-tags toevoegen](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) voor meer informatie over hoe u de insluitcode van de bibliotheek Experience Platform Tags kunt gebruiken.
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
@@ -422,7 +422,7 @@ U gaat de volgende producten van Adobe gebruiken om uw integratie te vormen:
 
 Als deze integratieoplossing wordt gebruikt met Experience Manager Sites, moet ook de volgende configuratie worden uitgevoerd:
 
-* [!DNL Adobe I/O] Console - integratie wordt gecreeerd voor de Markeringen van het Experience Platform.
+* [!DNL Adobe Developer Console] - er wordt integratie voor Experience Platform-tags gecreëerd.
 * Knooppunt van de auteur van de Experience Manager - de configuratie IMS en de wolkenconfiguratie van de Markeringen van het Experience Platform.
 
 Als deel van de configuratie, zeker bent u toegang tot een bedrijf in Adobe Experience Cloud hebt dat Adobe Analytics en de Markeringen van het Experience Platform reeds heeft toegelaten.
@@ -453,7 +453,7 @@ Zie ook [Handleiding voor analytische implementatie](https://experienceleague.ad
 
    Als er geen rapportsuite beschikbaar is, moet u of uw Adobe Analytics-beheerder er een maken voordat u verder kunt gaan met de configuratie.
 
-   Zie [Rapporten en rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) en [Een rapportsuite maken](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+   Zie [Rapporten en rapportsuite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) en [Een rapportsuite maken](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
    In Adobe Analytics worden rapportsuites beheerd onder **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
@@ -515,7 +515,7 @@ Nadat u de Markeringen van het Experience Platform vormt, zal het volgende opste
 
 Een bezit in de Markeringen van het Experience Platform is een genoemde configuratie die al uw montages bij elkaar houdt. Er wordt een bibliotheek met de configuratie-instellingen gegenereerd en gepubliceerd op verschillende milieuniveaus (ontwikkeling, staging en productie).
 
-Zie ook [Een eigenschap Tags maken](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+Zie ook [Een eigenschap Tags maken](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 1. Selecteer in Experience Platform-tags de optie **[!UICONTROL New Property]**.
 1. Typ in het dialoogvenster **[!UICONTROL Create Property]** in het veld **[!UICONTROL Name]** een beschrijvende naam, zoals de titel van uw website. Bijvoorbeeld, `DynamicMediaViewersProp.`
@@ -540,7 +540,7 @@ Waar nodig moeten de volgende extensies worden geïnstalleerd en geconfigureerd:
 
 Geen extra configuratie is nodig, keur voor om het even welke voorgestelde waarden goed. Zorg ervoor dat u **[!UICONTROL Save]**.
 
-Zie [Adobe Experience Cloud Identity Service-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+Zie [Adobe Experience Cloud Identity Service-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
 
 * (Vereist) *Adobe Analytics* extension
 
@@ -560,7 +560,7 @@ Op de **[!UICONTROL Install Extension]** pagina, uitvouwen **[!UICONTROL General
 
 Selecteer **[!UICONTROL Save]**.
 
-Zie [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+Zie [Adobe Analytics-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
 * (facultatief; is alleen vereist als videotracering vereist is) *Adobe Media Analytics voor audio en video* extension
 
@@ -568,7 +568,7 @@ Vul het veld Trackingserver in. De trackingserver voor *Adobe Media Analytics vo
 
 Alle andere velden zijn optioneel.
 
-Zie [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
+Zie [Adobe Media Analytics voor audio- en video-extensie](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 
 * (Vereist) *Dynamic Media Viewers* extension
 
@@ -683,7 +683,7 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
    Het volgende Info-bericht wordt weergegeven:
 
-   *Om een geldig toegangstoken terug te winnen, wordt de openbare sleutel van het nieuwe certificaat toegevoegd aan de technische rekening op Adobe I/O!*
+   *Als u een geldig toegangstoken wilt ophalen, wordt de openbare sleutel van het nieuwe certificaat toegevoegd aan de technische account op Adobe Developer Console!*
 
    Als u het dialoogvenster Info wilt sluiten, selecteert u **[!UICONTROL OK]**.
 
@@ -697,9 +697,9 @@ De configuratie van de Experience Manager bestaat uit de volgende twee belangrij
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Navigeer in een nieuw browsertabblad naar het tabblad [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
+1. Navigeer in een nieuw browsertabblad naar [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
 
-1. Van de **[!UICONTROL Adobe I/O Console Integrations]** pagina, bij de rechterbovenhoek, selecteert u **[!UICONTROL New integration]**.
+1. Van de **[!UICONTROL Adobe Developer Console Integrations]** pagina, bij de rechterbovenhoek, selecteert u **[!UICONTROL New integration]**.
 1. In de **[!UICONTROL Create a new integration]** , zorgt u ervoor dat **[!UICONTROL Access an API]** keuzerondje is geselecteerd en selecteer vervolgens **[!UICONTROL Continue]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -854,4 +854,4 @@ Deze wordt echter wel ondersteund in het publicatieknooppunt Experience Manager.
 
 Het is mogelijk om deze beperking te omzeilen. Geef de ontwikkelings- of staging-URL van de bibliotheek met Platform-tags op in de Cloud-configuratie voor Experience Platform-tags voor het publicatieknooppunt hierboven voor de Experience Manager. Dit maakt de Experience Manager publicatieknooppunt gebruiken de versie van de Markeringen van het Experience Platform van de Ontwikkeling of van het Staging van.
 
-Zie [Experience Manager met Experience Platform-tags integreren via [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) voor meer informatie over het instellen van Experience Platform Tags Cloud Configuration.
+Zie [Experience Manager met Experience Platform-tags integreren via [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) voor meer informatie over het instellen van Experience Platform Tags Cloud Configuration.

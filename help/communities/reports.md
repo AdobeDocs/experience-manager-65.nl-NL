@@ -12,9 +12,9 @@ discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,6 @@ Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toe
 
 In het algemeen zijn de verschillende verslagen:
 
-* [Toewijzingsrapport](#assignments-report)
-
-   Voor een [enablement community](/help/communities/overview.md#enablement-community), biedt een overzicht van de vorderingen van studenten bij hun taken, inclusief een bijbehorende score bij de implementatie van de SCORM-standaard.
-
 * [Rapport Weergaven](#views-report)
 
    Verstrekt een grafiek van meningen van inhoud door communautaire leden en plaatsbezoekers voor om het even welke communautaire plaats.
@@ -38,8 +34,6 @@ In het algemeen zijn de verschillende verslagen:
 * [Post Report](#posts-report)
 
    Verstrekt een grafiek van diverse soorten posten door communautaire leden aan om het even welke communautaire plaats.
-
-Wanneer [Adobe Analytics is ingeschakeld](/help/communities/sites-console.md#analytics), bevatten rapporten het aantal weergaven, afspelen, opmerkingen en waarderingen voor elke bron van activering in de loop van de tijd.
 
 Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verdere verwerking.
 
@@ -64,59 +58,6 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 
 ![rapporten](assets/reports1.png)
-
-### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
-
-* Vanuit globale navigatie: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
-
-* Selecteer een bestaande communitysite voor activering:
-
-   * Selecteren **Rapport** pictogram om rapporten te genereren die alle bronnen van activering bestrijken.
-   * Selecteer een leerpad voor inschakelen.
-   * Selecteren **Rapport** pictogram voor het genereren van rapporten voor:
-
-      * De meegeleverde bronnen voor activering.
-      * De studenten die zijn toegewezen aan het leerpad.
-
-* Deze verslagen bevatten:
-
-   * Tabelgegevens, downloadbaar als CSV:
-
-      * Student identificeren
-      * Hun status
-      * Of toegewezen of benaderd via catalogus
-      * Aantal gemaakte opmerkingen
-      * Sterrenclassificatie gegeven
-
-Zie voor meer informatie [Sectie Rapporten](/help/communities/resources.md#report) van de console van Middelen.
-
-## Toewijzingsrapport {#assignments-report}
-
-Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysite, gebruikers of groepen en toewijzing in te schakelen.
-
-Het verslag bevat informatie over de voortgang van de activiteiten en eventuele opmerkingen of beoordelingen.
-
-![toewijzingsrapport](assets/assignment-report.png)
-
-Selecteer de criteria voor het rapport:
-
-* **Site**
-
-   Selecteer een community-site voor activering.
-
-* **Gebruiker of groep**
-   * Selecteer Gebruiker om een rapport voor één student te genereren.
-   * Selecteer Groep om een rapport voor een groep studenten te genereren.
-
-   De tunneldienst zal tot leden en lidgroepen van het publicatiemilieu toegang hebben.
-
-* **Toewijzen**
-
-   Maak een keuze uit de instellingsbronnen die aan de geselecteerde studenten zijn toegewezen.
-
-Selecteren **Genereren** om het rapport op te stellen:
-
-![genereren](assets/generate-assignment-report.png)
 
 ## Rapport Weergaven {#views-report}
 

@@ -5,9 +5,9 @@ description: AEM Communities implementeren
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: 14a33b14043869614efcdbf8cb413333d0fa644b
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1682'
 ht-degree: 1%
 
 ---
@@ -71,13 +71,6 @@ ht-degree: 1%
          * UGC is alleen zichtbaar op AEM instantie of cluster waarin het is ingevoerd.
       * Standaard is JSRP
 
-   Voor de **[enablement, functie](/help/communities/overview.md#enablement-community)**
-
-   * [Mpeg installeren en configureren](/help/communities/ffmpeg.md)
-   * [Installeer het JDBC-stuurprogramma voor MySQL](#jdbc-driver-for-mysql)
-   * [AEM Communities SCORM-engine installeren](#scorm-package)
-   * [MySQL voor activering installeren en configureren](/help/communities/mysql.md)
-
 
 
 
@@ -99,9 +92,8 @@ Net als bij AEM 6.4 en hoger maken AEM Communities-functies en hotfixes deel uit
 
 ### JDBC-stuurprogramma voor MySQL {#jdbc-driver-for-mysql}
 
-Twee eigenschappen van Gemeenschappen gebruiken een gegevensbestand MySQL:
+De functie Eén Gemeenschappen gebruikt een MySQL-database:
 
-* Voor [inschakelen](/help/communities/enablement.md): SCORM-activiteiten en -studenten opnemen
 * Voor [DSRP](/help/communities/dsrp.md): door de gebruiker gegenereerde inhoud opslaan (UGC)
 
 De MySQL-connector moet afzonderlijk worden opgehaald en geïnstalleerd.
@@ -133,28 +125,6 @@ Meer informatie over het installeren van bundels vindt u op de [Webconsole](/hel
 #### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
 ![](../assets/mysql-connector.png)
-
-### SCORM-pakket {#scorm-package}
-
-Shareable Content Object Reference Model (SCORM) is een verzameling standaarden en specificaties voor e-learning. SCORM definieert ook hoe inhoud kan worden verpakt in een overdraagbaar ZIP-bestand.
-
-De AEM Communities SCORM-engine is vereist voor de [inschakelen](/help/communities/overview.md#enablement-community) gebruiken. Scorepakketten ondersteund op AEM 6.5-gemeenschappen:
-
-* [cq-social-scorm-package, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) die de [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) motor.
-
-**Een SCORM-pakket installeren**
-
-1. Installeer de [cq-social-scorm-package, versie 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) uit het pakket delen
-1. Downloaden `/libs/social/config/scorm/database_scormengine_data.sql` van cq instantie en voer het in mysql server uit om een bevorderd schema te creëren scormEngineDB.
-1. Toevoegen `/content/communities/scorm/RecordResults` in de eigenschap Uitgesloten paden in het CSRF-filter uit `https://<hostname>:<port>/system/console/configMgr` op uitgevers.
-
-#### SCORM-registratie {#scorm-logging}
-
-Zoals geïnstalleerd, wordt al enablement activiteit uitgebreid geregistreerd aan de systeemconsole.
-
-Indien gewenst, kan het logboekniveau aan WARN voor `RusticiSoftware.*` pakket.
-
-Voor het werken met logboeken, zie [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### Geavanceerde MLS AEM {#aem-advanced-mls}
 

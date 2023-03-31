@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,6 @@ In AEM Communities kunnen gebruikers zichzelf registreren en hun profielen bewer
 * Subgemeenschappen maken binnen de communitysite (zie [communautaire groepen](creating-groups.md)).
 
 * [Gemiddeld](moderation.md) door de gebruiker gegenereerde inhoud (UGC).
-
-* zijn [enablement resource](resources.md) contacten.
 
 * zijn [bevoorrecht](#privileged-members-group) om berichten voor blogs, kalenders, QnA en forums te maken.
 
@@ -79,8 +77,6 @@ Als u gebruikers en gebruikersgroepen wilt beheren die zijn geregistreerd in de 
 | beheerders | De groep van beheerders bestaat uit systeembeheerders die alle capaciteiten van een communautaire Beheerder evenals de capaciteit hebben om de groep van Communautaire Beheerders te beheren. |
 | Communautaire administrateurs | De communautaire groep van Beheerders wordt automatisch een lid van alle communautaire plaatsen en om het even welke communautaire groepen die op de plaats worden gecreeerd. Een aanvankelijk lid van de groep van Communautaire Beheerders is de beheerdersgroep. In de auteursomgeving, kunnen de Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud. |
 | Community &lt;*sitenaam*> Sitecontentmanager | Met Community Site Content Manager kunt u traditionele AEM ontwerpen, inhoud maken en pagina&#39;s voor een communitysite wijzigen. |
-| Community Enablement Managers | De groep van de Managers van Enablement van de Gemeenschap bestaat uit gebruikers die voor taak beschikbaar zijn om de groep van de Managers van Enablement van een communautaire plaats te beheren. |
-| Community &lt;*sitenaam* > Sitenablementmanagers | De groep van de Managers van Enablement van de Plaats van de Gemeenschap bestaat uit gebruikers die zijn toegewezen om de plaatsing van een communautaire plaats te beheren [bronnen](resources.md). |
 | Geen | Een anonieme sitebezoeker heeft mogelijk geen toegang tot de auteursomgeving. |
 
 ### Systeembeheerders {#system-administrators}
@@ -196,43 +192,11 @@ Er zijn vier afzonderlijke consoles beschikbaar slechts in het auteursmilieu:
 | beheer | gebruikers op auteur | gebruikersgroepen bij auteur | leden die worden gepubliceerd | lidgroepen die worden gepubliceerd |
 | vereist | machtiging beheerder | machtiging beheerder | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm |
 
-### Rol van Community Enablement Manager {#community-enablement-manager-role}
-
-De mogelijkheid voor een sitebezoeker om zichzelf te registreren is doorgaans niet toegestaan voor een [enablement community](overview.md#enablement-community) aangezien er kosten verbonden zijn aan elk lid . De studenten en de middelen van Enablement worden beheerd door een gebruiker toegewezen [rol](#author-group-roles) van `enablement manager` [tijdens het maken van de site](sites-console.md#enablement) op auteur (toegevoegd als lid van groep `Community <site-name> Siteenablementmanagers`). De `enablement manager` is tevens verantwoordelijk voor [leerbronnen toewijzen](resources.md) aan leden van de gemeenschap op auteur.
-
-Alleen gebruikers die lid zijn van de wereld `Community Enablement Managers` groep kan als `enablement manager` voor een specifieke communautaire site.
-
-Om een gebruiker te creëren die de rol van kan worden toegewezen `Community Site Enablement Manager`gebruikt u de klassieke UI-beveiligingsconsole om het pad op te geven:
-
-Op een instantie van de auteur:
-
-1. Aangemeld met beheerdersrechten, surf naar de klassieke UI-beveiligingsconsole.
-
-   Bijvoorbeeld: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. Selecteer in het menu Bewerken de optie **[!UICONTROL Create User]**.
-3. Vul de `Create User` .
-   * Pad moet `/home/users/community`.
-4. Selecteer **[!UICONTROL Create]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* Zoek in het linkerdeelvenster naar de nieuwe gebruiker en selecteer deze in het rechterdeelvenster.
-
-   ![community-user](assets/view-community-user.png)
-
-In het linkervenster:
-
-1. Het zoekvak wissen en **[!UICONTROL Hide Users]**.
-2. Zoeken en slepen `community-enablementmanagers` aan de **[!UICONTROL Groups]** van de nieuwe gebruiker die in het rechterdeelvenster wordt weergegeven.
-
-   ![assign-group](assets/assign-group.png)
-
 ### Rol van communautaire administrateurs {#community-administrators-role}
 
 Zoals vermeld in het [Auteursgroeprollen](#author-group-roles) in kaart brengen, kunnen de leden van de groep van Beheerders Gemeenschap communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud.
 
-Voer dezelfde stappen uit als het maken en toewijzen van een gebruiker aan de rol van [vermogensbeheerder](#communitysiteenablementmanagerrole), maar c toevoegen `ommunity-administrators` onder het tabblad Groepen van de gebruiker.
+Voer dezelfde stappen uit als het maken en toewijzen van een gebruiker aan de rol van enablement Manager, maar voeg c toe `ommunity-administrators` onder het tabblad Groepen van de gebruiker.
 
 ### LDAP-integratie {#ldap-integration}
 

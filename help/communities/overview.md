@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,6 @@ ht-degree: 0%
 # AEM Communities - Overzicht {#aem-communities-overview}
 
 Adobe Experience Manager (AEM) Communities biedt de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
 
 ## Functies van Gemeenschappen {#communities-features}
 
@@ -40,7 +36,6 @@ AEM Communities maakt de ontwikkeling mogelijk van een relatie met bezoekers van
 * **Bestanden delen**,
 * **Meldingen** en **activiteitsstromen**,
 * Toestaan **labelen** (@vermeld) andere geregistreerde leden in Door gebruiker gegenereerde inhoud, om hun aandacht te vestigen.
-* Ondersteunt **toetsenbordnavigatie** betreffende de componenten van enablement (bijvoorbeeld Catalog en Course Play, Assignment, File Library).
 
 De kenmerken van de Gemeenschappen kunnen worden aangetoond met behulp van de [AEM demo-machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) beschikbaar openbaar op GitHub.com of met de nieuwe Wij.Retail verwijzingsimplementatie.
 
@@ -120,11 +115,6 @@ In de auteursomgeving biedt de globale navigatieconsole toegang tot de [Communit
 
    * Verstrekt de capaciteit om rapporten over taken, posten en meningen te produceren.
 
-* [Bronnen](/help/communities/resources.md) console
-
-   * Verstrekt de capaciteit om enablement middelen en het leren wegen tot stand te brengen.
-   * Verleent toegang tot rapporten over enablement middelen en het leren wegen.
-
 De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van Gemeenschappen:
 
 * [Sitesjablonen](/help/communities/tools.md#sitetemplatesconsole) console
@@ -183,9 +173,7 @@ De [communautaire componenten](/help/communities/author-communities.md) Van waar
 
 De [Community-componentengids](/help/communities/components-guide.md) is beschikbaar voor interactieve verkenning van de componenten.
 
-## Soorten Gemeenschappen {#types-of-communities}
-
-### Gemeenschap voor betrokkenheid {#engagement-community}
+## Gemeenschap voor betrokkenheid {#engagement-community}
 
 Een betrokkenheidsgemeenschap is een community-site die klanten aanmoedigt om te informeren, feedback te vragen en klanten in staat te stellen als leden van de community te communiceren.
 
@@ -208,23 +196,6 @@ Functies van een betrokkenheidsgemeenschap kunnen het volgende omvatten:
 * Analyserapportage
 
 Ga voor het gemak om snel een nieuwe betrokkenheidsgemeenschap te maken naar [Aan de slag met AEM Communities](/help/communities/getting-started.md).
-
-### Enablement Community {#enablement-community}
-
-Een enablement-gemeenschap is een community-site met functies voor online leren.
-
-Functies van een machtigingsgemeenschap kunnen zijn:
-
-* Alle functies van een [betrokkenheidsgemeenschap](#engagement-community).
-* de mogelijkheid om inhoud en leren toe te wijzen. middelen voor leden en leden.
-* Ondersteunt SCORM-inhoud, zoals quizzen en tests.
-* Tracering van de voltooiing van de taken.
-* Toegang tot rapportage en analyses.
-* De capaciteit om een gesprek over een het leren middel door forums, overseinen, commentaren en classificaties te hebben.
-
-Een enablement-gemeenschap kan worden opgericht wanneer de [Invoegtoepassing inschakelen is geconfigureerd](/help/communities/enablement.md), waarvoor aanvullende licenties vereist zijn voor gebruik in een productieomgeving. Een site van de gemeenschap voor activering bevat de [toewijzingsfunctie](#community-functions).
-
-Ga naar [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
 
 ## AEM demo-machine {#aem-demo-machine}
 

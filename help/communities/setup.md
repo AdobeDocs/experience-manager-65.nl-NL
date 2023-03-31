@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -51,8 +51,6 @@ Deze zelfstudie maakt een [community-site voor betrokkenheid](overview.md#engage
 Ga voor de installatie van het nieuwste functiepakket naar:
 
 * [Laatste releases](deploy-communities.md#latest-releases)
-
-Voor een zelfstudie die een [gemeenschapssite inschakelen](overview.md#enablement-community), bezoek [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md).
 
 ## Analyses configureren {#configure-analytics}
 
@@ -130,7 +128,7 @@ Zie [Sociale aanmelding met Facebook en Twitter](social-login.md).
 
 ## Zelfstudietags maken {#create-tutorial-tags}
 
-Tags maken die u wilt gebruiken voor de zelfstudies voor toegang en activering met behulp van de naamruimte tag van `Tutorial`.
+Tags maken die u wilt gebruiken voor de instructiezelfstudies, met de naamruimte tag van `Tutorial`.
 
 Gebruik de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) om de volgende labels te maken:
 

@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 1%
+source-wordcount: '498'
+ht-degree: 0%
 
 ---
 
@@ -93,7 +93,6 @@ Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen we
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
-* [Assets](#enablement-assets)
 * [Databaserecords](#database-records)
 
 ### Unieke site-id van community {#community-unique-site-id}
@@ -134,18 +133,3 @@ Op alle auteur en publiceer instanties, van [beveiligingsconsole](../../help/sit
 * Gevolgd door [unieke site-id](#community-unique-site-id)
 
 Bijvoorbeeld, `community-engage-x0e11-members`.
-
-### Enablement Assets {#enablement-assets}
-
-Vanaf de hoofdconsole:
-
-* Selecteer **[!UICONTROL Assets]**.
-* Enter **[!UICONTROL Select]** in.
-* Selecteer een map met de naam [unieke site-id](#community-unique-site-id).
-* Selecteren **[!UICONTROL Delete]** (moet mogelijk selecteren uit **[!UICONTROL More...]**).
-
-### Databasegegevens {#database-records}
-
-Er is geen hulpmiddel om gegevensbestandingangen voor één specifieke plaats van de enablement communautaire selectief te schrappen.
-
-Wanneer alle communautaire plaatsen worden geschrapt, dan laat vallen enablementdb en scormenginedb gebruikend MySQL Workbench.

@@ -12,10 +12,10 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0f7d4aba0b8c79039918e1338007a4277a5030f2
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 2%
+source-wordcount: '2680'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Analytics en Adobe Experience Manager (AEM) zijn beide oplossingen van Ado
 
 Adobe Analytics kan voor AEM Communities zodanig worden geconfigureerd dat, als lid communiceert met ondersteunde functies van de Gemeenschappen, gebeurtenissen worden verzonden naar Adobe Analytics waaruit rapporten worden gegenereerd.
 
-Bijvoorbeeld, wanneer een lid van een enablement communautaire plaats een videobron bekijkt die aan hen wordt toegewezen, zal de middelspeler gebeurtenissen naar Analytics, met inbegrip van videohartslaggegevens verzenden. Van de communautaire plaats, kunnen de beheerders diverse rapporten zien betreffende het spelen van de video.
+Bijvoorbeeld, van de communautaire plaats, kunnen de beheerders diverse rapporten zien betreffende het spelen van de video.
 
 Daarnaast is een analyse nodig voor:
 
@@ -44,7 +44,6 @@ Daarnaast is een analyse nodig voor:
 
 Tot de ondersteunde Gemeenschappen behoren:
 
-* [Middelen inschakelen](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
@@ -105,7 +104,7 @@ Door u aan te melden bij [Adobe Experience Cloud](https://experienceleague.adobe
 
    * type **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * niet **`Counter (no subrelations)`**
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
 
@@ -151,7 +150,7 @@ Video-hartslagrapportage inschakelen na [het vormen van de het rapportreeks van 
 * Inschakelen [Analyses voor een communitysite](#enable-analytics-for-a-community-site)
 * Koppel de `Marketing Cloud Org Id` met de site van de gemeenschap
 
-De `Marketing Cloud Org Id` kan worden ingevoerd op het tijdstip van [site maken](/help/communities/sites-console.md#enablement) of later [wijzigen](/help/communities/sites-console.md#modifying-site-properties) de eigenschappen van de site van de gemeenschap.
+De `Marketing Cloud Org Id` kan worden ingevoerd op het tijdstip van [site maken](/help/communities/sites-console.md) of later [wijzigen](/help/communities/sites-console.md#modifying-site-properties) de eigenschappen van de site van de gemeenschap.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -180,14 +179,14 @@ In het dialoogvenster Configuratie maken identificeren de waarden die moeten wor
 * **Titel**
 
    (Vereist) Een weergavetitel voor de configuratie.
-Voer bijvoorbeeld *Community Analytics inschakelen*
+Voer bijvoorbeeld *Community Analytics*
 
 * **Naam**
 
    (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 Voer bijvoorbeeld *gemeenschappen*
 
-* **Sjabloonmodel**
+* **Sjabloon**
 
    Selecteer `Adobe Analytics Configuration`
 
@@ -244,7 +243,7 @@ De instellingen opslaan:
 
 * Selecteren **OK**.
 
-   ![analytics-enablement-settings](assets/analytics-settings1.png)
+   ![analytische instellingen](assets/analytics-settings1.png)
 
 ### Framework maken {#create-framework}
 
@@ -256,14 +255,14 @@ Nadat de basisverbinding met Adobe Analytics met succes is geconfigureerd, moet 
 
 * **Titel**
 
-   (Vereist) Typ bijvoorbeeld een titel voor de weergave van het framework. *Communautair kader inschakelen*.
+   (Vereist) Typ bijvoorbeeld een titel voor de weergave van het framework. *Communautair kader*.
 
 * **Naam**
 
    (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 Voer bijvoorbeeld *gemeenschappen*.
 
-* *Sjabloonmodel*
+* *Sjabloon*
 
    Selecteer `Adobe Analytics Framework`.
 
@@ -275,7 +274,7 @@ Het creëren van het Kader van Analytics opent het kader voor configuratie.
 
 Het doel van het kader is AEM variabelen toe te wijzen aan analytische variabelen (eVars en events). De beschikbare variabelen voor Analytics zijn: [gedefinieerd in de rapportsuite](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytische actiekader](assets/analytics-framework1.png)
+![analytisch kader](assets/analytics-framework1.png)
 
 ### Rapportsuite selecteren {#select-report-suite}
 
@@ -389,7 +388,7 @@ Zodra de communautaire plaats met toegelaten Analytics en geselecteerd wolkencon
 
 Als het gebruiken van een bestaande rapportreeks die om het even welke variabelen binnen evar1 door evar11 en event1 door event7 in kaart bracht, zal het noodzakelijk zijn om [opnieuw toewijzen van de AEM variabelen](#modifying-analytics-variable-mapping) en herstelt u de oorspronkelijke toewijzing.
 
-Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de slag - zelfstudie](/help/communities/getting-started-enablement.md):
+Hier volgt een voorbeeld van standaardtoewijzingen:
 
 ![map-analytics](assets/map-analytics1.png)
 
@@ -425,7 +424,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
   </tr>
   <tr>
    <td><strong>event1<br /> Resource Play</strong></td>
-   <td><em>(a)</em></td>
+   <td><em>a)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -438,14 +437,14 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(a)</em></td>
+   <td><em>a)</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -454,11 +453,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -467,11 +466,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -480,11 +479,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -493,11 +492,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
@@ -506,11 +505,11 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
    <td><em>-</em></td>
    <td><em>b)</em></td>
    <td><em>c)</em></td>
-   <td><em>(d)</em></td>
+   <td><em>d)</em></td>
    <td><em>e)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
-   <td><em>(h)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
+   <td><em>h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

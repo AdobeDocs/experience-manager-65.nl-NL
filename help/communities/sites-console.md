@@ -12,9 +12,9 @@ discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3104'
 ht-degree: 0%
 
 ---
@@ -62,10 +62,6 @@ De console van de Plaatsen van Gemeenschappen toont om het even welke bestaande 
 Als u een nieuwe communitysite wilt maken, selecteert u de optie **Maken** pictogram.
 
 Als u toegang wilt krijgen tot een bestaande communitysite, ten behoeve van het ontwerpen, wijzigen, publiceren, exporteren of toevoegen van een geneste groep, selecteert u het mappictogram van de site.
-
-In de volgende afbeelding ziet u bijvoorbeeld de hoofdconsole van Communitysites met de mappen voor twee communitysites: [enable](/help/communities/getting-started-enablement.md) en [aangaan](/help/communities/getting-started.md):
-
-![site-console](assets/site-console.png)
 
 ## Site maken {#site-creation}
 
@@ -165,7 +161,6 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 * [MODERING](#moderation)
 * [ANALYSE](#analytics)
 * [VERTALING](#translation)
-* [UITSCHAKELING](#enablement)
 
 >[!NOTE]
 >
@@ -182,12 +177,6 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 #### GEBRUIKERSBEHEER {#user-management}
 
 ![creaties](assets/createsitesettings.png)
-
->[!NOTE]
->
->Het wordt aanbevolen [gemeenschapssites inschakelen](/help/communities/overview.md#enablement-community) privé zijn (neem contact op met uw accountvertegenwoordiger voor meer informatie).
->
->Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
 
 * **Gebruikersregistratie toestaan**
 
@@ -231,7 +220,7 @@ Niet ingeschakeld laten voor een *privé* community-site. De optie Standaard is 
 
 De tags die kunnen worden toegepast op community-inhoud, worden beheerd door Tag-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingsconsole](/help/sites-administering/tags.md#tagging-console).
 
-Bovendien beperkt het selecteren van tagnaamruimten voor de site van de community de weergegeven selectie bij het definiëren van catalogi en bronnen. Zie [Tags toewijzen](/help/communities/tag-resources.md) voor belangrijke informatie.
+Bovendien beperkt het selecteren van tagnaamruimten voor de site van de community de weergegeven selectie bij het definiëren van catalogi en bronnen.
 
 * tekstzoekvak: Begin te typen om tags te identificeren die op de site mogen worden gebruikt.
 
@@ -347,24 +336,9 @@ Als deze optie is geselecteerd, wordt de inhoud pas omgezet wanneer een aanvraag
 
    Selecteer een van de volgende opties:
 
-   * `Always show contributions in the original language` (standaardwaarde)
+   * `Always show contributions in the original language` (standaard)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
-
-#### UITSCHAKELING {#enablement}
-
-![locatienablement](assets/site-enablement.png)
-
-De `ENABLEMENT`de instellingen zijn van toepassing wanneer de gekozen sjabloon voor de communitysite de [toewijzingsfunctie](/help/communities/functions.md#assignments-function), die beschikbaar is wanneer de functies voor activering een licentie hebben en [geconfigureerd](/help/communities/enablement.md). De verwijzingsplaatssjabloon die de toewijzingsfunctie omvat is `Reference Structured Learning Site Template.`
-
-* **Enablement Managers**
-(Vereist) Alleen leden van de `Community Enablementmanagers` Er is een groep beschikbaar die u wilt selecteren om deze activeringscommunity te beheren. Enablement managers zijn verantwoordelijk voor het toewijzen van leden aan bronnen. Zie ook [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
-
-* **Org-id Marketing Cloud**
-
-   (optioneel) De id voor een [Video-hartslaganalyse](/help/communities/analytics.md#video-heartbeat-analytics) licentie.
-
-* Selecteren **Volgende**.
 
 ### Stap 4: Communitysite maken {#step-create-communities-site}
 
@@ -486,12 +460,6 @@ In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder 
 ### Miniatuur wijzigen {#modify-thumbnail}
 
 In het deelvenster MINIATUUR kunt u een afbeelding uploaden om de site in de console Sites van Gemeenschappen weer te geven.
-
-### Inschakelen wijzigen {#modify-enablement}
-
-Met het deelvenster ENABLEMENT hebt u toegang tot de instellingen die zijn opgegeven tijdens het maken van de site van de community.
-
-Zie de [UITSCHAKELING](#enablement) beschrijving.
 
 ## De site publiceren {#publishing-the-site}
 

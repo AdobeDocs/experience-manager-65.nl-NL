@@ -7,9 +7,9 @@ breadcrumb-title: Handleiding Communities
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 feature: Communities
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '451'
 ht-degree: 5%
 
 ---
@@ -23,15 +23,10 @@ ht-degree: 5%
    + [AEM Communities - Overzicht](overview.md)
    + [Opmerkingen bij de release van AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [Aan de slag met AEM Communities](getting-started.md)
-   + [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
    + [Eerste instelling](setup.md)
    + [Auteur van een nieuwe communautaire site](create-site.md)
    + [Ervaar de gepubliceerde site](published-site.md)
    + [Geneste groepen ontwerpen](nested-groups.md)
-   + [Eerste instelling voor inschakelen](enablement-setup.md)
-   + [Auteur van een nieuwe communautaire site voor activering](enablement-create-site.md)
-   + [Creeer en wijs Middelen toe Enablement](resource.md)
-   + [Ervaar de gepubliceerde Enablement Site](enablement-published-site.md)
 + Implementeren {#deploy}
    + [Gemeenschappen inzetten](deploy-communities.md)
    + [Opwaarderen naar AEM 6.5 Gemeenschappen](upgrade.md)
@@ -42,7 +37,6 @@ ht-degree: 5%
    + [Communitysites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communityconsoles](consoles.md)
    + [Analytische configuratie voor functies van Gemeenschappen](analytics.md)
-   + [Functies van Enablement configureren](enablement.md)
    + [Berichten configureren](messaging.md)
    + [Communautaire inhoud moderniseren](moderate-ugc.md)
    + [E-mail configureren](email.md)
@@ -62,9 +56,7 @@ ht-degree: 5%
    + [Communautaire functies](functions.md)
    + [Opslagconfiguratie](srp-config.md)
    + [Badges-console](badges.md)
-   + [Bronnenconsole inschakelen](resources.md)
    + [Rapportenconsole](reports.md)
-   + [MySQL-configuratie voor functies van Enablement](mysql.md)
    + [MPEG voor Gemeenschappen](ffmpeg.md)
    + [In context Moderatie](in-context.md)
    + [Geavanceerde scores en Badges](advanced.md)
@@ -75,7 +67,6 @@ ht-degree: 5%
    + [MySQL-configuratie voor DSRP](dsrp-mysql.md)
    + [JSRP - JCR Storage Resource Provider](jsrp.md)
    + [Solr Configuratie voor SRP](solr.md)
-   + [Tags toewijzen](tag-resources.md)
    + [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md)
    + [Door gebruiker gegenereerde inhoud vertalen](translate-ugc.md)
    + [Gebruikerssynchronisatie van gemeenschappen](sync.md)
@@ -94,10 +85,8 @@ ht-degree: 5%
    + [Overzicht opslagbronprovider](srp.md)
    + [Essentiële elementen voor community-sites](sites-for-developers.md)
    + [Essentiële elementen activiteitsstroom](essentials-activities.md)
-   + [Essentiële toewijzingen](essentials-assignments.md)
    + [Grondbeginselen van blogs](blog-developer-basics.md)
    + [Essentiële elementen van agenda](calendar-basics-for-developers.md)
-   + [Essentiële elementen van catalogus](catalog-developer-essentials.md)
    + [Clientlibs voor Community-componenten](clientlibs.md)
    + [Essentiële opmerkingen](essentials-comments.md)
    + [OSGi Events for Communities Components](events.md)
@@ -145,10 +134,8 @@ ht-degree: 5%
    + [Community-componenten](author-communities.md)
    + [Grondbeginselen van Community-componenten](basics.md)
    + [Functie voor activiteitsstromen](activities.md)
-   + [Toewijzingsfunctie](assignments.md)
    + [Blogonderdeel](blog-feature.md)
    + [Kalenderfunctie](calendar.md)
-   + [Catalogusonderdeel](catalog.md)
    + [Opmerkingen gebruiken](comments.md)
    + [Functie voor aanbevolen inhoud](featured.md)
    + [Functie bestandsbibliotheek](file-library.md)

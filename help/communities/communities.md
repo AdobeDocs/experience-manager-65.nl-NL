@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '385'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,6 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 * [AEM Communities - Overzicht](overview.md)
 * [Aan de slag met AEM Communities](getting-started.md)
-* [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
 > 

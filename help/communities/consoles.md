@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -66,10 +66,6 @@ Om tot de diverse consoles van Gemeenschappen toegang te hebben, van globale nav
 * [Rapporten](reports.md)
 
    De console van Rapporten is waar de rapporten over taken, paginameningen, en geposte inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats heeft [Adobe Analytics ingeschakeld](sites-console.md#analytics). De console is alleen beschikbaar in de auteursomgeving.
-
-* [Bronnen](resources.md)
-
-   De console van Middelen is waar [vermogensbeheerders](enablement.md#communitymanagers) middelen maken, beheren en toewijzen aan leden van een [gemeenschapssite inschakelen](overview.md#enablement-community). De console is alleen beschikbaar in de auteursomgeving.
 
 ## Tools Console {#tools-console}
 

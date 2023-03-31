@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ De onderliggende infrastructuur voor tags die worden toegepast in de publicatieo
 * Zie [Tags voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over de [coderingskader](../../help/sites-developing/framework.md) alsmede tags opnemen en uitbreiden in [aangepaste toepassingen](../../help/sites-developing/building.md).
 
 * Zie [Sociale tagcloud gebruiken](tagcloud.md) voor informatie aan auteurs over het toevoegen van een `social tag cloud` op een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
-
-* Zie [Tags toewijzen](tag-resources.md) voor informatie over het coderen van bronnen voor catalogi.
 
 Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-console.md#tagging) of een van de volgende kenmerken:
 
@@ -58,7 +56,7 @@ Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-cons
    <td>cq.social.hbs.tagcloud</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/commons/components/hbs/tagcloud/tagcloud.hbs<br /> </td>
   </tr>
   <tr>

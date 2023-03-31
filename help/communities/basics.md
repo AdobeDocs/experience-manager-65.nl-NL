@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '361'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Als het etiketteren wordt toegestaan, kan de configuratie van de communautaire p
 
 Functies die codering mogelijk maken: [blog](blog-feature.md), [kalender](calendar.md), [bestandsbibliotheek](file-library.md), [forum](forum.md)
 
-Functies die tags gebruiken: [catalogus](catalog.md), [zoeken](search.md), [social tag-cloud](tagcloud.md)
+Functies die tags gebruiken: [zoeken](search.md), [social tag-cloud](tagcloud.md)
 
 Voor ontwerpinformatie:
 
@@ -84,7 +84,6 @@ Voor administratieve informatie:
 * Tagnaamruimten maken (taxonomie): [Tags beheren](../../help/sites-administering/tags.md)
 * Configuratie van community-site: zie [TAGS](sites-console.md#tagging)
 * [Door gebruiker gegenereerde inhoud labelen](../../help/sites-authoring/tags.md)
-* [Tags toewijzen](tag-resources.md)
 
 Voor informatie over ontwikkelaars:
 

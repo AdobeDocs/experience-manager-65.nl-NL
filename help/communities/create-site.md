@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '1627'
-ht-degree: 1%
+source-wordcount: '1580'
+ht-degree: 0%
 
 ---
 
@@ -78,9 +78,7 @@ Selecteren **Volgende**.
 
 ### Stap 3: Instellingen {#step-settings}
 
-Selecteer in de stap Instellingen voordat u `Next`, merk op dat er zeven secties zijn die toegang verlenen tot configuraties die gebruikersbeheer, tags, moderatie, groepsbeheer, analyses, vertaling en activering omvatten.
-
-Ga naar [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md) zelfstudie voor het werken met de functies voor activering.
+Selecteer in de stap Instellingen voordat u `Next`, merk op dat er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, moderatie, groepsbeheer, analyses, en vertaling impliceren.
 
 #### Gebruikersbeheer {#user-management}
 
@@ -118,7 +116,7 @@ Als u een lid van de gemeenschap (of groep leden) de site wilt laten ervaren als
 Bijvoorbeeld,
 
 * Type `q`
-* Selecteren [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Quinn Harper selecteren
 
 >[!NOTE]
 >
@@ -152,16 +150,6 @@ De [Vertaalinstellingen](/help/communities/sites-console.md#translation) de basi
 * De optie Standaardpersistentie behouden
 
 ![translatie-instellingen](assets/translation-settings.png)
-
-#### UITSCHAKELING {#enablement}
-
-Laat leeg als u een betrokkenheidsgemeenschap maakt.
-
-Voor een vergelijkbare zelfstudie kunt u snel een [enablement community](/help/communities/overview.md#enablement-community), zie [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
-
-Selecteren **Volgende**.
-
-![inschakelen](assets/enablement.png)
 
 ### Stap 4: Communitysite maken {#step-create-communities-site}
 

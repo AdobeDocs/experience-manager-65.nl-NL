@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 0%
+source-wordcount: '900'
+ht-degree: 1%
 
 ---
 
@@ -162,9 +162,7 @@ Zie ook [Scores en badges](implementing-scoring.md).
 
 ## Groepsconsole {#groups-console}
 
-De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is met name nuttig voor:
-* [Geprivilegieerde ledengroepen](users.md#privilegedmembersgroups)
-* Groepse toewijzing van [middelen](resources.md)
+De console van Groepen, beschikbaar bij het auteursmilieu, staat voor de verwezenlijking en het beheer van lidgroepen toe die in het publicatiemilieu worden geregistreerd. Het is bijzonder nuttig om [Geprivilegieerde ledengroepen](users.md#privilegedmembersgroups).
 
 De console Groepen openen:
 * Selecteer bij globale navigatie de optie **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]**.

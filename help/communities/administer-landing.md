@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,6 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 * [AEM Communities - Overzicht](overview.md)
 * [Aan de slag met AEM Communities](getting-started.md)
-* [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
 ## Beheer en configuratieonderwerpen {#administration-and-configuration-topics}
 
@@ -41,7 +40,6 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
       * [Groepen (subgemeenschappen)](groups.md)
    * [Moderatie](moderation.md)
    * [Leden en groepsbeheer](members.md)
-   * [Bronnen voor Enablement](resources.md)
    * [Rapporten](reports.md)
 
 
@@ -77,12 +75,6 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 * [Meldingen](notifications.md): de mogelijkheid voor de leden om in kennis te worden gesteld van hun activiteiten.
 * [Abonnementen](subscriptions.md): de mogelijkheid voor leden om via externe e-mail te communiceren met de gemeenschap.
 * [Berichten](messaging.md): de mogelijkheid voor de leden om met de gemeenschap te communiceren door middel van interne berichten .
-
-### Functies Enablement {#enablement-features}
-
-* [Inschakelen configureren](enablement.md): noodzakelijke informatie om de enablement eigenschappen correct te plaatsen.
-* [Analyseconfiguratie](analytics.md): noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken.
-* [Tags toewijzen](tag-resources.md): nodig voor het maken van enablement catalogs.
 
 ### Implementatie {#deployment}
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 2%
+source-wordcount: '273'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,6 @@ Ga voor meer informatie over het maken van een site op de website van de gemeens
 
 * [AEM Communities - Overzicht](/help/communities/overview.md)
 * [Aan de slag met AEM Communities](/help/communities/getting-started.md)
-* [Aan de slag met AEM Communities for Enablement](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
@@ -54,8 +53,6 @@ Zie ook de interactieve [Community Components Guide](/help/communities/component
 | Communautaire activiteitslijst | [Activiteitendensen](/help/communities/trends.md) |
 | Lijst van leden van de communautaire groep | [Communautaire groepen](/help/communities/creating-groups.md) |
 | Bericht samenstellen | [Berichten](/help/communities/configure-messaging.md) |
-| Toewijzingen inschakelen | [Toewijzingen](/help/communities/assignments.md) |
-| Catalogus inschakelen | [Catalogus](/help/communities/catalog.md) |
 | Aanbevolen inhoud | [Aanbevolen inhoud](/help/communities/featured.md) |
 | Bestandsbibliotheek | [Bestandsbibliotheek](/help/communities/file-library.md) |
 | Volg | [Sociale grafiek](/help/communities/socialgraph.md) |

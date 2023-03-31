@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2220'
 ht-degree: 0%
 
 ---
@@ -96,14 +96,6 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
    Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die het huidige lid volgt. Standaard is geselecteerd.
 
-### Toewijzingsfunctie {#assignments-function}
-
-De toewijzingsfunctie is de basisfunctie die een [gemeenschapssite voor activering](/help/communities/overview.md#enablement-community). Het maakt het mogelijk middelen voor activering toe te wijzen aan leden van de gemeenschap. Zie ook [Essentiële toewijzingen](/help/communities/essentials-assignments.md) voor ontwikkelaars.
-
-Deze functie is beschikbaar als een functie van de [add-on inschakelen](/help/communities/enablement.md). De inschakelingsadd-on vereist aanvullende licenties voor gebruik in een productieomgeving.
-
-Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Instellingen voor Titel en URL](#title-and-url-settings).
-
 ### Blogfunctie {#blog-function}
 
 De blogfunctie is een pagina met een [Blogcomponent](/help/communities/blog-feature.md) geconfigureerd voor labelen, het uploaden van bestanden, als volgt, leden die zichzelf moeten bewerken, stemmen en moderatie. Zie ook [Grondbeginselen van blogs](/help/communities/blog-developer-basics.md) voor ontwikkelaars.
@@ -159,25 +151,6 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 * **Aanbevolen inhoud toestaan**
 
    Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
-
-### Catalogusfunctie {#catalog-function}
-
-De catalogusfunctie biedt de mogelijkheid om [enablement community](/help/communities/overview.md#enablement-community) leden kunnen bladeren door bronnen die niet aan hen zijn toegewezen. Zie [Tags toewijzen](/help/communities/tag-resources.md) en [Essentiële elementen van catalogus](/help/communities/catalog-developer-essentials.md) voor ontwikkelaars.
-
-Alle enablement-bronnen en leerpaden voor de communitysite worden in alle catalogi weergegeven als hun eigenschap, ` [Show in Catalog](/help/communities/resources.md)`, is ingesteld op true. Als u expliciet bronnen en leerpaden wilt opnemen, moet u een [voorfilter](/help/communities/catalog-developer-essentials.md#pre-filters) naar de catalogus.
-
-Wanneer de configuratie aan een sjabloon is toegevoegd, kunt u met de configuratie tagnaamruimten opgeven die worden gebruikt om het tagfilter te configureren dat aan bezoekers van de site wordt aangeboden:
-
-![Catalog, functie](assets/catalog-function.png)
-
-* [Instellingen voor Titel en URL](#title-and-url-settings)
-
-* **Alle naamruimten selecteren**
-
-   Met de geselecteerde tagnaamruimten wordt gedefinieerd welke tags bezoekers kunnen selecteren voor het filteren van de lijst met activeringsbronnen die in de catalogus wordt vermeld.
-Als deze optie is geselecteerd, zijn alle naamruimten voor tags die zijn toegestaan voor de communitysite beschikbaar.
-Als deze optie is uitgeschakeld, is het mogelijk een of meer naamruimten te selecteren die zijn toegestaan voor de site van de community.
-Standaard is geselecteerd.
 
 ### Functie aanbevolen inhoud {#featured-content-function}
 

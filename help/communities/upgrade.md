@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,6 @@ Wanneer het installeren van een nieuw de eigenschappak van Gemeenschappen op een
 1. Installeer de [nieuwste functiepakket](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Installeer de [nieuwste configuratiebestanden van Solr](/help/communities/msrp.md#upgrading).
 1. Opnieuw indexeren MSRP zie sectie [MSRP opnieuw indexeren](/help/communities/msrp.md#msrp-reindex-tool).
-
-### Enablement 2.0 {#enablement}
-
-Vanaf AEM 6.3 slaan de enablement eigenschappen niet meer rapporteringsinformatie in MySQL op. De MySQL-afhankelijkheid is alleen beschikbaar voor het bijhouden van SCORM-inhoud.
-
-Neem contact op met [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor hulp bij het migreren van inhoud uit Enablement 1.0.
 
 ## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 

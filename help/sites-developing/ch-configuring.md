@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
 workflow-type: tm+mt
-source-wordcount: '1842'
+source-wordcount: '1787'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,22 @@ Configureer de [ContextHub](/help/sites-developing/contexthub.md) toolbar om te 
 
 ## ContextHub uitschakelen {#disabling-contexthub}
 
-Door gebrek, wordt ContextHub toegelaten in een AEM installatie. ContextHub kan worden onbruikbaar gemaakt om het te verhinderen js/css te laden en te initialiseren. Er zijn twee opties om ContextHub onbruikbaar te maken:
+Door gebrek, wordt ContextHub toegelaten in een AEM installatie. ContextHub kan worden onbruikbaar gemaakt om het te verhinderen js/css te laden en te initialiseren.
 
-* Bewerk de configuratie van ContextHub en controleer de optie **ContextHub uitschakelen**
+<!--
+There are two options to disable ContextHub:
 
-   1. Klik of tik in de spoorstaaf **Extra > Sites > ContextHub**
-   1. Klik of tik de standaard **Configuratiecontainer**
-   1. Selecteer **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
-   1. Klikken of tikken **ContextHub uitschakelen** en klik of tik **Opslaan**
+* Edit the ContextHub's configuration and check the option **Disable ContextHub**
+
+    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
+    1. Click or tap the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
+    1. Click or tap **Disable ContextHub** and click or tap **Save**
 
 or
+-->
 
-* CRXDE Lite gebruiken om de eigenschap in te stellen `disabled` tot **true** krachtens `/libs/settings/cloudsettings`
+* CRXDE Lite gebruiken om de eigenschap in te stellen `disabled` tot **true** krachtens `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
@@ -250,7 +254,7 @@ Bewerk de configuratie van ContextHub en controleer de optie **Foutopsporing**
 
 CRXDE Lite gebruiken om de eigenschap in te stellen `debug` tot **true** onder:
 
-* `/conf/global/settings/cloudsettings` or
+* `/conf/global/settings/cloudsettings` of
 * `/conf/<tenant>/settings/cloudsettings`
 
 >[!NOTE]
@@ -279,12 +283,12 @@ ContextHub-configuraties worden opgeslagen in een map met de naam `contexthub` o
 
 Na een upgrade wordt de back-up opgeslagen in een map met de naam `contexthub` onder een knooppunt met de naam:
 
-`/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` or
+`/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` of
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
 De `yyyymmdd` Het gedeelte van de knooppuntnaam is de datum toen de verbetering werd uitgevoerd.
 
 Om uw configuraties te herstellen ContextHub, gebruik CRXDE Lite om de knopen te kopiëren die uw opslag, wijzen UI, en modules UI van onder vertegenwoordigen `default-pre-upgrade_yyyymmdd_xxxxxx` knooppunt tot hieronder:
 
-* `/conf/global/settings/cloudsettings` or
+* `/conf/global/settings/cloudsettings` of
 * `/conf/<tenant>/settings/cloudsettings`

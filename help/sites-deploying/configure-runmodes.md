@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 0%
@@ -122,10 +122,9 @@ Deze mappen zijn van het type `nt:folder` en moet de juiste bundel bevatten.
 
 Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. de volgorde van resolutie is :
 
+1. [systeemeigenschappen (](#using-a-system-property-in-the-start-script)
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
-1. [systeemeigenschappen (](#using-a-system-property-in-the-start-script)
-
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
 
 Wanneer u een toepassingsserver gebruikt, kunt u ook [de uitvoeringsmodus in web.xml definiëren](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -163,7 +162,7 @@ Een systeemeigenschap in het beginscript kan worden gebruikt om de uitvoermodus 
 De volgende twee uitvoeringsmodi voor de installatie kunnen worden geactiveerd door de naam van het installatiejar-bestand vóór de installatie te wijzigen:
 
 * publish
-* author
+* auteur
 
 Voor het jar-bestand moet de naamgevingsconventie worden gebruikt:
 

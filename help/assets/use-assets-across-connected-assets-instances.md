@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
+source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
 workflow-type: tm+mt
-source-wordcount: '3761'
+source-wordcount: '3740'
 ht-degree: 16%
 
 ---
@@ -63,7 +63,7 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 |---|---|---|---|---|
 | [!DNL Sites] beheerder | Lokaal | [!DNL Experience Manager] `administrators` | `admin` | Instellen [!DNL Experience Manager] en vormt integratie met verre [!DNL Assets] implementatie. |
 | DAM-gebruiker | Lokaal | `Authors` | `ksaner` | Wordt gebruikt om de assets die bij `/content/DAM/connectedassets/` zijn opgehaald, weer te geven en te dupliceren. |
-| [!DNL Sites] author | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | `ksaner` | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. De auteurs zoeken naar middelen in externe DAM en bladeren deze met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
+| [!DNL Sites] auteur | Lokaal | <ul><li>`Authors` (met leestoegang op de externe DAM en auteurstoegang op de lokale [!DNL Sites]) </li> <li>`dam-users` op lokaal niveau [!DNL Sites]</li></ul> | `ksaner` | Eindgebruikers zijn [!DNL Sites] auteurs die deze integratie gebruiken om de snelheid van hun inhoud te verbeteren. De auteurs zoeken naar middelen in externe DAM en bladeren deze met [!UICONTROL Content Finder] en het gebruik van de vereiste afbeeldingen op lokale webpagina&#39;s. De referenties van de `ksaner` DAM-gebruiker worden gebruikt. |
 | [!DNL Assets] beheerder | Extern | [!DNL Experience Manager] `administrators` | `admin` op afstand [!DNL Experience Manager] | Configureer CORS (Cross-Origin Resource Sharing). |
 | DAM-gebruiker | Extern | `Authors` | `ksaner` op afstand [!DNL Experience Manager] | Auteur-rol op de externe server [!DNL Experience Manager] implementatie. Zoek en blader naar assets in gekoppelde assets met de [!UICONTROL Content Finder]. |
 | DAM-distributeur (technische gebruiker) | Extern | [!DNL Sites] `Authors` | `ksaner` op afstand [!DNL Experience Manager] | Deze gebruiker die aanwezig is op de externe implementatie wordt gebruikt door [!DNL Experience Manager] lokale server (niet de [!DNL Sites] auteurrol) om de verre activa, namens te halen [!DNL Sites] auteur. Deze rol is anders dan de twee bovenstaande `ksaner`-rollen en hoort bij een andere gebruikersgroep. |
@@ -247,10 +247,6 @@ U kunt ook de metagegevenseigenschappen van een element op de externe DAM bijwer
 [!DNL Sites] auteurs kunnen de beschikbare updates voorvertonen op de [!DNL Sites] de implementatie en publiceer de wijzigingen opnieuw om deze beschikbaar te maken op de [!DNL Experience Manager] -instantie publiceren.
 
 [!DNL Experience Manager] geeft een verlopen visuele statusindicator weer voor elementen in `Remote Assets Content Finder` om te voorkomen dat siteauteurs het element op een [!DNL Sites] pagina. Als u een element met een verlopen status gebruikt op een [!DNL Sites] pagina, wordt het element niet weergegeven op de [!DNL Experience Manager] -instantie publiceren.
-
->[!NOTE]
->
->De updates van middelen in verre DAM worden ter beschikking gesteld aan [!DNL Sites] implementatie alleen als externe DAM en [!DNL Sites] implementaties zijn ingeschakeld [!DNL Experience Manager].
 
 ## Veelgestelde vragen {#frequently-asked-questions}
 

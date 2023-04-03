@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 0</strong></td>
    <td>Aanvraagstroom analyseren</td>
-   <td><p>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Voor meer informatie over hoe te om deze analyse op Chrome te doen, zie:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>U kunt standaard HTTP- verzoekanalyse in browser gebruiken om de verzoekstroom te analyseren. Voor meer informatie over hoe te om deze analyse op Chrome te doen, zie:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 2</strong></td>
@@ -97,7 +97,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 8</strong></td>
    <td>Is de traagheid reproduceerbaar met een lokale instantie?</td>
-   <td><br /> <p>Gebruiken <a href="/help/sites-developing/tough-day.md">Dag</a> om de "reële omstandigheden" van de productie-instanties te repliceren. Als dit scenario voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productieinstantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
+   <td><br /> <p>Gebruiken <a href="/help/sites-developing/tough-day.md">Dag</a> om "echte" omstandigheden van de productie-instanties te repliceren. Als dit scenario voor de ruimte van uw ontwikkeling niet realistisch is, zorg ervoor om de productieinstantie (of identieke het opvoeren) in een verschillende netwerkcontext te testen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Stap 9</strong></td>
@@ -212,7 +212,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets Synchronization Service</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Meerdere DAM-instanties</a></li>
-     <li>Tips voor het afstemmen van prestaties, artikelen <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">hier</a> en <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">hier</a>.<br /> </li>
+     <li>Tips voor het afstemmen van prestaties, artikel <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">hier</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -244,7 +244,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">De Dispatcher Cache configureren</a></li>
     </ol> <p>Hoe te om geheim voorgeheugenverhouding te verbeteren; aanvragen in cache kunnen plaatsen (best practices voor Dispatcher)</p> <p>Overweeg ook de onderstaande instellingen om uw cacheconfiguraties te optimaliseren<br /> </p>
     <ol>
-     <li>Een no-cache-regel instellen voor HTTP-aanvragen die niet zijn ingesteld op GET</li>
+     <li>Een no-cache-regel instellen voor een HTTP-aanvraag die geen GET is</li>
      <li>Vraagtekenreeksen configureren om niet cacheable te zijn</li>
      <li>Plaats geen URL's met ontbrekende extensies in cache</li>
      <li>Koppen voor cacheverificatie (mogelijk sinds Dispatcher versie 4.1.10)</li>
@@ -277,7 +277,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (Verzender, 
   <tr>
    <td><strong>Stap 39</strong></td>
    <td>Gebruik pre-verbindt om verbindingsoverheadkosten te verminderen</td>
-   <td>Zie de Gem-sessie hierboven. Daarnaast is er extra documentatie beschikbaar die vooraf verbinding maakt met W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Zie de Gem-sessie hierboven. Daarnaast vindt u aanvullende documentatie vóór de verbinding op W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Stappen 40 en 41</strong><br /> </td>

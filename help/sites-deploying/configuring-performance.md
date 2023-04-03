@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '6645'
+source-wordcount: '6503'
 ht-degree: 1%
 
 ---
@@ -26,29 +26,29 @@ ht-degree: 1%
 >
 >Voor meer informatie over het oplossen van problemen en het bevestigen van prestatieskwesties, zie ook [Prestatiestructuur](/help/sites-deploying/performance-tree.md).
 >
->Bovendien kunt u een artikel van de Kennisbank op herzien [Tips voor afstemmen van prestaties.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>U kunt ook een Knowledge Base-artikel bekijken op [Tips voor afstemmen van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
-Een belangrijk probleem is de tijd die uw website nodig heeft om te reageren op bezoekersverzoeken. Hoewel deze waarde voor elke aanvraag zal variëren, kan een gemiddelde doelwaarde worden bepaald. Zodra deze waarde zowel haalbaar als houdbaar is, kan deze worden gebruikt om de prestaties van de website te controleren en de ontwikkeling van potentiële problemen aan te geven.
+Een belangrijk probleem is de tijd die uw website nodig heeft om te reageren op bezoekersverzoeken. Hoewel deze waarde voor elke aanvraag varieert, kan een gemiddelde doelwaarde worden bepaald. Zodra deze waarde zowel haalbaar als houdbaar is, kan deze worden gebruikt om de prestaties van de website te controleren en de ontwikkeling van potentiële problemen aan te geven.
 
-De responstijden die u wilt bepalen, verschillen per auteur- en publicatieomgeving en weerspiegelen de verschillende kenmerken van het doelpubliek:
+De responstijden die u wilt opgeven, verschillen per auteur- en publicatieomgeving en weerspiegelen de verschillende kenmerken van het doelpubliek:
 
 ## Auteursomgeving {#author-environment}
 
-Deze omgeving wordt gebruikt door auteurs die inhoud invoeren en bijwerken. Er moet rekening worden gehouden met een klein aantal gebruikers die elk een groot aantal prestatieintensieve verzoeken genereren bij het bijwerken van inhoudspagina&#39;s en de afzonderlijke elementen op die pagina&#39;s.
+Deze omgeving wordt gebruikt door auteurs die inhoud invoeren en bijwerken. Er moet rekening worden gehouden met een paar gebruikers die elk een groot aantal prestatie-intensieve aanvragen genereren bij het bijwerken van inhoudspagina&#39;s en de afzonderlijke elementen op die pagina&#39;s.
 
 ## Publicatie-omgeving {#publish-environment}
 
-Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Het aantal verzoeken is hier nog groter en de snelheid is even belangrijk, maar aangezien de aard van de verzoeken minder dynamisch is, kunnen er aanvullende mechanismen voor prestatieverbetering worden toegepast. zoals het in cache plaatsen van de inhoud of taakverdeling.
+Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Hier is het aantal verzoeken nog groter en de snelheid is net zo belangrijk. Maar omdat de aard van de verzoeken minder dynamisch is, kunnen aanvullende mechanismen ter verbetering van de prestaties worden toegepast; zoals het in cache plaatsen van de inhoud of taakverdeling.
 
 >[!NOTE]
 >
 >* Nadat u de configuratie hebt geconfigureerd voor optimalisatie van de prestaties, volgt u de procedures in [Dag](/help/sites-developing/tough-day.md) het milieu onder zware belasting te testen.
->* Zie ook [Tips voor afstemmen van prestaties.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>* Zie ook [Tips voor afstemmen van prestaties.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 
 ## Methode voor optimalisatie van prestaties {#performance-optimization-methodology}
 
-Een prestatiesoptimalisatiemethodologie voor AEM projecten kan in vijf zeer eenvoudige regels worden samengevat die kunnen worden gevolgd om prestatieskwesties van begin af aan te vermijden:
+Een prestatiesoptimaliseringsmethodologie voor AEM Projecten kan in vijf eenvoudige regels worden samengevat die kunnen worden gevolgd om prestatieskwesties van begin te vermijden:
 
 1. [Planning voor Optimalisatie](#planning-for-optimization)
 1. [Realiteit simuleren](#simulate-reality)
@@ -56,17 +56,17 @@ Een prestatiesoptimalisatiemethodologie voor AEM projecten kan in vijf zeer eenv
 1. [Relevant blijven](#stay-relevant)
 1. [Agile-iteratiecycli](#agile-iteration-cycles)
 
-Deze regels zijn in grote mate van toepassing op webprojecten in het algemeen en zijn relevant voor projectbeheerders en systeembeheerders om ervoor te zorgen dat hun projecten niet met prestatieproblemen worden geconfronteerd wanneer de lanceringstijd aankomt.
+Deze regels gelden voor webprojecten in het algemeen en zijn relevant voor projectbeheerders en systeembeheerders om ervoor te zorgen dat hun projecten niet worden geconfronteerd met prestatieproblemen wanneer de starttijd aankomt.
 
 ### Planning voor Optimalisatie {#planning-for-optimization}
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
-Ongeveer 10% van de projectinspanningen moet worden gepland voor de optimalisatiefase van de prestaties. De daadwerkelijke optimalisatievereisten voor de prestaties zijn uiteraard afhankelijk van de complexiteit van een project en de ervaring van het ontwikkelingsteam. Hoewel uw project (uiteindelijk) niet alle toegewezen tijd kan vereisen, is het goed om altijd voor prestatiesoptimalisering in het voorgestelde gebied te plannen.
+Plan ongeveer 10% van de projectinspanning voor de prestatiesoptimaliseringsfase. De werkelijke optimalisatievereisten voor de prestaties zijn afhankelijk van de complexiteit van een project en de ervaring van het ontwikkelingsteam. Hoewel uw project (uiteindelijk) niet de toegewezen tijd kan vereisen, is het goed om altijd voor prestatiesoptimalisering in het voorgestelde gebied te plannen.
 
-Voorzover mogelijk moet een project eerst worden gelanceerd aan een beperkt publiek om praktijkervaring te vergaren en verdere optimalisaties uit te voeren, zonder de extra druk die volgt op een volledige aankondiging.
+Waar mogelijk moet een project eerst worden gelanceerd aan een beperkt publiek om praktijkervaring te vergaren en verdere optimalisaties uit te voeren, zonder de extra druk die volgt op een volledige aankondiging.
 
-Zodra u &quot;live&quot; bent, is de optimalisatie van de prestaties nog niet voorbij. Dit is het moment waarop u de &quot;echte&quot; belasting op uw systeem ervaart. Het is belangrijk om na de lancering aanvullende aanpassingen te plannen.
+Nadat u &quot;live&quot; bent, is de optimalisatie van de prestaties nog niet voorbij. Het is nu wanneer u de &quot;echte&quot; lading op uw systeem ervaart. Het is belangrijk om na de lancering aanvullende aanpassingen te plannen.
 
 Aangezien de systeembelasting verandert en de prestatieprofielen van uw systeem in de loop der tijd verschuiven, moet een &#39;afstelling&#39; van de prestaties of &#39;health check&#39; met tussenpozen van 6 tot 12 maanden worden gepland.
 
@@ -74,15 +74,15 @@ Aangezien de systeembelasting verandert en de prestatieprofielen van uw systeem 
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-Als u live gaat met een website en na de introductie ontdekt dat u problemen hebt met de prestaties, is er slechts één reden voor dat: Uw belasting- en prestatietests hebben de realiteit niet nauwkeurig genoeg gesimuleerd.
+Als u live gaat met een website en u na de lancering ontdekt dat u prestatieproblemen ondervindt, is dit waarschijnlijk omdat uw belasting- en prestatietests de realiteit niet nauwkeurig genoeg hebben gesimuleerd.
 
-Het simuleren van de realiteit is moeilijk en hoeveel moeite u redelijkerwijs zult willen investeren om &quot;echt&quot; te worden hangt af van de aard van uw project. &quot;Reëel&quot; betekent niet alleen &quot;echte code&quot; en &quot;echt verkeer&quot;, maar ook &quot;echte inhoud&quot;, met name met betrekking tot de grootte en structuur van de inhoud. Houd er rekening mee dat uw sjablonen zich totaal anders gedragen, afhankelijk van de grootte en structuur van de opslagplaats.
+Het simuleren van de realiteit is moeilijk en hoeveel moeite je wilt investeren om &#39;echt&#39; te worden hangt af van de aard van je project. &quot;Reëel&quot; betekent niet alleen &quot;echte code&quot; en &quot;echt verkeer&quot;, maar ook &quot;echte inhoud&quot;, met name met betrekking tot de grootte en structuur van de inhoud. Uw sjablonen gedragen zich mogelijk anders, afhankelijk van de grootte en structuur van de opslagplaats.
 
 ### Effen doelen vaststellen {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-Het belang van een correcte vaststelling van prestatiedoelen mag niet worden onderschat. Vaak is het, zodra mensen zich richten op specifieke prestatiedoelen, erg moeilijk om deze doelen achteraf te wijzigen, zelfs als ze gebaseerd zijn op wilde veronderstellingen.
+Het belang van een correcte vaststelling van prestatiedoelen mag niet worden onderschat. Vaak is het moeilijk om deze doelen achteraf te wijzigen, ook al zijn ze gebaseerd op veronderstellingen.
 
 Het vaststellen van goede, stevige prestatiesdoelstellingen is echt één van de moeilijkste gebieden. Het is vaak het beste om logboeken en benchmarks uit de praktijk te verzamelen van een vergelijkbare website (bijvoorbeeld de voorganger van de nieuwe website).
 
@@ -90,24 +90,24 @@ Het vaststellen van goede, stevige prestatiesdoelstellingen is echt één van de
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-Het is belangrijk om één knelpunt tegelijk te optimaliseren. Als u dingen tegelijkertijd probeert te doen zonder de impact van één optimalisering te bevestigen, zult u spoor verliezen van welke optimaliseringsmaatregel eigenlijk hielp.
+Het is belangrijk om één knelpunt tegelijk te optimaliseren. Als u dingen tegelijkertijd probeert te doen zonder de impact van de ene optimalisatie te valideren, kunt u het spoor kwijtraken waarvan de optimalisatiemaatregel heeft bijgedragen.
 
 ### Agile-iteratiecycli {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
-Prestaties afstemmen is een herhalend proces dat betrekking heeft op meten, analyseren, optimaliseren en valideren totdat het doel is bereikt. Om dit aspect naar behoren in aanmerking te nemen, voert u na elke herhaling een flexibel validatieproces in de optimalisatiefase in plaats van een zwaarder testproces uit.
+Prestaties afstemmen is een herhalend proces dat betrekking heeft op meten, analyseren, optimaliseren en valideren totdat het doel is bereikt. Om rekening te houden met dit aspect, implementeert u een flexibel validatieproces in de optimalisatiefase in plaats van een zwaarder testproces na elke herhaling.
 
-Dit betekent grotendeels dat de ontwikkelaar die de optimalisatie implementeert, snel moet kunnen zien of de optimalisatie al het doel heeft bereikt. Dit is waardevolle informatie, want wanneer het doel wordt bereikt, is optimalisatie voorbij.
+Dit betekent dat de ontwikkelaar die de optimalisatie implementeert, snel moet kunnen zien of de optimalisatie al het doel heeft bereikt. Deze informatie is waardevol, omdat wanneer het doel wordt bereikt, optimalisering voorbij is.
 
 ## Basisrichtsnoeren voor prestaties {#basic-performance-guidelines}
 
 In het algemeen, houd uw uncaching HTML- verzoeken aan minder dan 100 ms. Meer in het bijzonder kan het volgende als richtsnoer dienen:
 
 * 70% van de aanvragen voor pagina&#39;s moet binnen 100 ms worden beantwoord.
-* 25% van de aanvragen voor pagina&#39;s moet binnen 100 ms-300 ms een antwoord krijgen.
-* 4% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 300 ms-500 ms.
-* 1% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 500 ms-1000 ms.
+* 25% van de aanvragen voor pagina&#39;s moet binnen 100 ms - 300 ms een antwoord krijgen.
+* 4% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 300 ms - 500 ms.
+* 1% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 500 ms - 1000 ms.
 * Geen pagina&#39;s mogen langzamer reageren dan 1 seconde.
 
 De bovenstaande getallen voldoen aan de volgende voorwaarden:
@@ -118,20 +118,20 @@ De bovenstaande getallen voldoen aan de volgende voorwaarden:
 * Alleen voor complexe items met veel afhankelijkheden (HTML, JS, PDF, ...)
 * Geen andere belasting op het systeem
 
-Er zijn een aantal problemen die vaak tot prestatieproblemen leiden. Deze hebben voornamelijk betrekking op:
+Er zijn enkele problemen die vaak tot prestatieproblemen leiden, zoals:
 
 * Inefficiëntie in cache plaatsen door verzending
 * Het gebruik van query&#39;s in normale weergavesjablonen.
 
-JVM- en besturingssysteemniveau-tuning leiden gewoonlijk niet tot grote prestatieverschillen en moeten daarom aan het einde van de optimalisatiecyclus worden uitgevoerd.
+Afstemming op JVM- en OS-niveau leidt gewoonlijk niet tot aanzienlijke prestatieverschillen en moet daarom aan het einde van de optimalisatiecyclus worden uitgevoerd.
 
-De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1.000 (als algemene regel) moeten overschrijden.
+De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1.000 (als regel) moeten overschrijden.
 
 Uw beste vrienden tijdens een gebruikelijke optimalisatie van de prestaties zijn:
 
-* The `request.log`
+* De `request.log`
 * Op componenten gebaseerde timing
-* Last but not least een Java-profiler.
+* Een Java™ profiler.
 
 ### Prestaties bij het laden en bewerken van digitale middelen {#performance-when-loading-and-editing-digital-assets}
 
@@ -142,7 +142,7 @@ Hier zijn twee dingen van invloed op de prestaties:
 * CPU - meerdere kernen zorgen voor vloeiender werk bij transcodering
 * Harde schijf - parallelle RAID-schijven bereiken hetzelfde
 
-Als u de prestaties wilt verbeteren, kunt u het volgende overwegen:
+Houd rekening met het volgende om de prestaties te verbeteren:
 
 * Hoeveel middelen worden per dag geüpload? Een goede schatting kan gebaseerd zijn op:
 
@@ -154,17 +154,17 @@ Als u de prestaties wilt verbeteren, kunt u het volgende overwegen:
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-* 80% van alle bewerkingen wordt uitgevoerd in 20% van de tijd, dus tijdens de piektijd hebt u vier keer de gemiddelde gegevenssnelheid. Dit is uw prestatiedoel.
+* 80% van alle bewerkingen worden uitgevoerd in 20% van de tijd, dus in piektijd hebt u vier keer de gemiddelde gegevenssnelheid. Dergelijke prestaties zijn uw doel.
 
 ## Prestatiebewaking {#performance-monitoring}
 
-Prestaties (of het ontbreken ervan) zijn een van de eerste dingen die uw gebruikers opmerken. Prestaties zijn dus net als bij elke toepassing met een gebruikersinterface van essentieel belang. Om de prestaties van uw AEM installatie te optimaliseren, moet u verschillende kenmerken van de instantie en het gedrag ervan controleren.
+Prestaties (of het ontbreken ervan) zijn een van de eerste dingen die uw gebruikers opmerken. Prestaties zijn dus net als bij elke toepassing met een gebruikersinterface van essentieel belang. Om de prestaties van uw AEM installatie te optimaliseren, controleert u verschillende kenmerken van de instantie en het gedrag ervan.
 
 Voor informatie over hoe te om prestaties controle uit te voeren, zie [Monitorprestaties](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 De problemen die prestatieproblemen veroorzaken, zijn vaak moeilijk op te sporen, zelfs als de effecten ervan gemakkelijk te zien zijn.
 
-Een basisuitgangspunt is een goede kennis van uw systeem wanneer het zoals normaal werkt. Tenzij u weet hoe uw omgeving eruit ziet en zich gedraagt wanneer deze goed functioneert, kan het moeilijk zijn het probleem op te sporen wanneer de prestaties achteruitgaan. Dit betekent dat u wat tijd moet besteden aan het onderzoeken van uw systeem wanneer het regelmatig loopt en ervoor moet zorgen dat het verzamelen van prestatiesinformatie een lopende taak is. Dit zal u een basis voor vergelijking verstrekken als de prestaties lijden.
+Een basisuitgangspunt is een goede kennis van uw systeem wanneer het zoals normaal werkt. Tenzij u weet hoe uw omgeving eruit ziet en zich gedraagt wanneer deze goed functioneert, is het moeilijk om het probleem op te sporen wanneer de prestaties achteruitgaan. Besteed tijd aan het onderzoeken van uw systeem wanneer het regelmatig loopt en zorg ervoor dat het verzamelen van prestatiesinformatie een voortdurende taak is. Dit biedt u een basis voor vergelijking als de prestaties hieronder lijden.
 
 Het volgende diagram illustreert het pad dat een verzoek om AEM inhoud kan innemen, en dus het aantal verschillende elementen die de prestaties kunnen beïnvloeden.
 
@@ -175,7 +175,7 @@ De prestaties zijn ook een evenwicht tussen volume en capaciteit:
 * **Volume** - De hoeveelheid output die door het systeem wordt verwerkt en geleverd.
 * **Capaciteit** - de capaciteit van het systeem om het volume te leveren.
 
-Dit kan worden geïllustreerd op verschillende locaties in de gehele webketen.
+Prestaties kunnen op verschillende locaties in de hele webketen worden geïllustreerd.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -198,15 +198,15 @@ Bij het optimaliseren van prestaties moet rekening worden gehouden met bepaalde 
 
 >[!NOTE]
 >
->Houd er rekening mee dat het mechanisme dat u gebruikt om de prestaties te meten, vaak precies van invloed is op wat u probeert te meten. U moet altijd proberen rekening te houden met deze discrepanties en zoveel mogelijk van hun effect uitsluiten. in het bijzonder moeten browserplug-ins waar mogelijk worden gedeactiveerd.
+>Houd er rekening mee dat het mechanisme dat u gebruikt om de prestaties te meten, vaak van invloed is op wat u probeert te meten. Probeer rekening te houden met deze verschillen en elimineer zoveel mogelijk het effect ervan; in het bijzonder moeten browserplug-ins waar mogelijk worden gedeactiveerd.
 
 ## Configureren voor prestaties {#configuring-for-performance}
 
-Bepaalde aspecten van AEM (en/of de onderliggende opslagplaats) kunnen worden geconfigureerd om de prestaties te optimaliseren. Hieronder vindt u mogelijkheden en suggesties. Voordat u wijzigingen aanbrengt, moet u controleren of en hoe u de desbetreffende functionaliteit gebruikt.
+Bepaalde aspecten van AEM (en/of de onderliggende opslagplaats) kunnen worden geconfigureerd om de prestaties te optimaliseren. Hieronder vindt u mogelijkheden en suggesties. Voordat u wijzigingen aanbrengt, moet u zeker weten of en hoe u de desbetreffende functionaliteit gebruikt.
 
 >[!NOTE]
 >
->Zie voor meer informatie de [KB-artikel](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>Zie [Optimalisatie van prestaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 ### Indexering zoeken {#search-indexing}
 
@@ -219,14 +219,14 @@ Hier vindt u de bijgewerkte indexeringsgegevens:
 
 ### Gelijktijdige workflowverwerking {#concurrent-workflow-processing}
 
-Beperk het aantal werkstroomprocessen die tegelijkertijd worden uitgevoerd om de prestaties te verbeteren. De workflowengine verwerkt standaard evenveel workflows als er processors beschikbaar zijn voor de Java VM. Wanneer workflowstappen grote hoeveelheden verwerkingsbronnen (RAM of CPU) vereisen, kan het uitvoeren van meerdere van deze workflows tegelijk hoge eisen stellen aan de beschikbare serverbronnen.
+Om de prestaties te verbeteren, beperkt u het aantal werkstroomprocessen die tegelijkertijd worden uitgevoerd. De workflowengine verwerkt standaard evenveel workflows als er processors beschikbaar zijn voor de Java™ VM. Wanneer workflowstappen grote hoeveelheden verwerkingsbronnen (RAM of CPU) vereisen, kan het uitvoeren van meerdere van deze workflows tegelijk hoge eisen stellen aan de beschikbare serverbronnen.
 
 Wanneer bijvoorbeeld afbeeldingen (of DAM-elementen in het algemeen) worden geüpload, worden de afbeeldingen door de workflows automatisch in DAM geïmporteerd. Afbeeldingen hebben vaak een hoge resolutie en kunnen eenvoudig honderden MB heap-bestanden voor verwerking verbruiken. Door deze afbeeldingen parallel af te handelen, wordt er veel belasting gelegd op het geheugensubsysteem en de afvalophaler.
 
 De workflowengine gebruikt Apache Sling-taakwachtrijen voor het verwerken en plannen van de verwerking van werkitems. De volgende taakrijservices zijn standaard gemaakt in de Apache Sling Job Queue Configuration-service factory voor het verwerken van werkstroomtaken:
 
 * Wachtrij voor Granite-werkstroom: De meeste workflowstappen, zoals die welke DAM-elementen verwerken, gebruiken de Granite Workflow Queue-service.
-* Extra werkstroom voor externe procestaak: Deze service wordt gebruikt voor speciale externe workflowstappen die doorgaans worden gebruikt om contact op te nemen met een extern systeem en om de resultaten te bekijken. De stap InDesign Media Extraction Process wordt bijvoorbeeld geïmplementeerd als een extern proces. De workflowengine gebruikt de externe wachtrij voor het verwerken van de opiniepeiling. (Zie [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Extra werkstroom voor externe procestaak: Deze service wordt gebruikt voor speciale externe workflowstappen die doorgaans worden gebruikt om contact op te nemen met een extern systeem en om de resultaten te bekijken. De stap InDesign Media Extraction Process wordt bijvoorbeeld geïmplementeerd als een extern proces. De workflowengine gebruikt de externe wachtrij voor het verwerken van de opiniepeiling. (Zie [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Vorm deze diensten om het maximumaantal gelijktijdig lopende werkschemaprocessen te beperken.
 
@@ -238,13 +238,13 @@ Vorm deze diensten om het maximumaantal gelijktijdig lopende werkschemaprocessen
 
 Als u de diensten vormt [gebruiken:OsgiConfig-knooppunt](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), moet u PID van de bestaande diensten vinden, bijvoorbeeld: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. U kunt de PID ontdekken gebruikend de Console van het Web.
 
-U moet het genoemde bezit vormen `queue.maxparallel`.
+Vorm genoemd bezit `queue.maxparallel`.
 
 #### Configuratie in de webconsole {#configuration-in-the-web-console}
 
 Om deze diensten te vormen [de webconsole gebruiken](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), zoekt u de bestaande configuratie-items onder de Apache Sling Job Queue Configuration-service factory.
 
-U moet het bezit vormen genoemd Maximum Parallelle Banen.
+Vorm het bezit genoemd Maximum Parallelle Banen.
 
 ### Vorm de Rij voor een Specifieke Werkstroom {#configure-the-queue-for-a-specific-workflow}
 
@@ -277,29 +277,29 @@ De volgende procedure maakt een taakwachtrij voor een workflow met **DAM Update-
 
 ### DAM Asset Synchronization Service AEM {#cq-dam-asset-synchronization-service}
 
-De `AssetSynchronizationService` wordt gebruikt voor het synchroniseren van elementen van gekoppelde repositories (waaronder LiveLink, Documentum). Standaard wordt hiermee elke 300 seconden (5 minuten) regelmatig gecontroleerd. Als u geen gekoppelde opslagplaatsen gebruikt, kunt u deze service uitschakelen.
+De `AssetSynchronizationService` wordt gebruikt voor het synchroniseren van elementen van gekoppelde repositories (waaronder LiveLink, Documentum®). Standaard wordt bij deze synchronisatie elke 300 seconden (5 minuten) regelmatig gecontroleerd, dus als u geen gekoppelde opslagplaatsen gebruikt, kunt u deze service uitschakelen.
 
-Dit wordt gedaan door [configureren van de OSGi-service](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** om de **Synchronisatieperiode** ( `scheduler.period`) tot (minimaal) 1 jaar (gedefinieerd in seconden).
+Het onbruikbaar maken van de dienst wordt gedaan door [configureren van de OSGi-service](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** om de **Synchronisatieperiode** ( `scheduler.period`) tot (minimaal) één jaar (gedefinieerd in seconden).
 
 ### Meerdere DAM-instanties {#multiple-dam-instances}
 
 De implementatie van meerdere DAM-instanties kan de prestaties verbeteren als bijvoorbeeld:
 
-* U hebt een hoge belasting omdat u regelmatig een groot aantal elementen uploadt voor de ontwerpomgeving. Hier kan een afzonderlijke instantie DAM worden gewijd aan het onderhouden van auteur.
-* U hebt meerdere teams in de hele wereld (bijvoorbeeld VS, Europa, Azië).
+* U hebt een hoge belasting omdat u regelmatig veel elementen uploadt naar de ontwerpomgeving. Hier kan een afzonderlijke instantie DAM worden gewijd aan het onderhouden van auteur.
+* U hebt meerdere teams op wereldwijde locaties (bijvoorbeeld VS, Europa, Azië).
 
 Aanvullende overwegingen zijn:
 
 * Scheiding &quot;werk in uitvoering&quot; op auteur van &quot;final&quot; bij publicatie
-* Interne gebruikers op auteur scheiden van externe bezoekers/gebruikers bij publicatie (bv. agenten, persvertegenwoordigers, klanten, studenten, enz.).
+* Interne gebruikers op auteur scheiden van externe bezoekers/gebruikers bij het publiceren (bijvoorbeeld, agenten, persvertegenwoordigers, klanten, en studenten).
 
 ## Beste praktijken voor kwaliteitsborging {#best-practices-for-quality-assurance}
 
-Prestaties zijn van het grootste belang voor uw publicatieomgeving. Daarom moet u zorgvuldig plannen en de prestatietests analyseren u voor het publicatiemilieu zult maken terwijl het uitvoeren van uw project.
+Prestaties zijn van het grootste belang voor uw publicatieomgeving. Daarom moet u de prestatietests zorgvuldig plannen en analyseren u voor het publicatiemilieu terwijl het uitvoeren van uw project maakt.
 
-Deze sectie heeft tot doel een gestandaardiseerd overzicht te geven van de problemen die zich voordoen bij het definiëren van een testconcept dat specifiek is bedoeld voor prestatietests op uw *publish* milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers en systeembeheerders.
+Deze sectie heeft tot doel een gestandaardiseerd overzicht te geven van de problemen die zich voordoen bij het definiëren van een testconcept dat specifiek is bedoeld voor prestatietests op uw *publish* milieu. Deze informatie is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers, en systeembeheerders.
 
-Hieronder wordt een gestandaardiseerde aanpak van prestatietests voor een AEM toepassing op de *Publiceren* milieu. Dit omvat de volgende vijf fasen:
+Hieronder wordt een gestandaardiseerde aanpak van prestatietests voor een AEM toepassing op de *Publiceren* milieu. Deze prestatietest omvat de volgende vijf fasen:
 
 * [Verificatie van kennis](#verification-of-knowledge)
 * [Definitie van toepassingsgebied](#scope-definition)
@@ -318,26 +318,26 @@ Een eerste stap bestaat uit het documenteren van de basisgegevens die u moet wet
 
 #### Testarchitectuur {#test-architecture}
 
-U moet duidelijk de architectuur documenteren van de testomgeving die voor uw prestatietests wordt gebruikt.
+Documenteer de architectuur van de testomgeving die wordt gebruikt voor het testen van de prestaties.
 
-U hebt een reproductie nodig van uw geplande publicatie-omgeving voor productie, samen met Dispatcher en Load Balancer.
+U hebt een reproductie van uw geplande productie nodig publiceer milieu, samen met Verzender, en Laad Balancer.
 
 #### Toepassingsoverzicht {#application-map}
 
-Om een duidelijk overzicht te krijgen kunt u een kaart van de volledige toepassing tot stand brengen (u kunt dit van tests op het milieu van de Auteur hebben).
+Krijg een duidelijk overzicht waarvan u een kaart van de volledige toepassing kunt tot stand brengen (u kunt deze kaart van tests op het milieu van de Auteur reeds hebben).
 
 Een diagram met de interne elementen van de toepassing kan een overzicht geven van de testvereisten; met kleurcodering kan het ook als basis voor rapportage dienen.
 
 ### Toepassingsdefinitie {#scope-definition}
 
-Een toepassing heeft doorgaans een selectie van gebruikscategorieën. Sommige zullen erg belangrijk zijn, andere minder.
+Een toepassing heeft gewoonlijk een selectie van gebruiksgevallen. Sommige gebruiksgevallen zijn belangrijk, andere minder.
 
-Als u het bereik van de prestatietests wilt beperken tot publiceren, raden we u aan het volgende te definiëren:
+Als u het bereik van de prestatietests wilt beperken tot publicatie, raadt Adobe u aan het volgende te definiëren:
 
 * De belangrijkste zaken van het bedrijfsgebruik
 * Meest kritieke gevallen van technisch gebruik
 
-Het aantal gebruiksgevallen is aan u, maar het moet beperkt blijven tot een eenvoudig te beheren aantal (bijvoorbeeld tussen 5 en 10).
+Het aantal gebruiksgevallen is aan u, maar het zou tot een gemakkelijk handelbaar aantal moeten worden beperkt (bijvoorbeeld, tussen 5 tot 10).
 
 Zodra de belangrijkste gebruiksgevallen zijn geselecteerd, kunnen de belangrijkste prestatie-indicatoren (KPI) en de instrumenten die worden gebruikt om deze te meten voor elk geval worden bepaald. Voorbeelden van veelvoorkomende KPI&#39;s zijn:
 
@@ -351,7 +351,7 @@ Zodra de belangrijkste gebruiksgevallen zijn geselecteerd, kunnen de belangrijks
 
 ### Testmethoden {#test-methodologies}
 
-Dit concept heeft 4 scenario&#39;s die voor het bepalen van en het testen van de prestatiesdoelstellingen worden gebruikt:
+Dit concept heeft vier scenario&#39;s die voor het bepalen van en het testen van de prestatiesdoelstellingen worden gebruikt:
 
 * Tests met één component
 * Gecombineerde componenttests
@@ -362,23 +362,23 @@ Gebaseerd op de volgende beginselen.
 
 #### Onderdeelpunten {#component-breakpoints}
 
-* Elke component heeft een specifiek breekpunt wanneer gerelateerd aan prestaties. Dit betekent dat een component goede prestaties kan tonen tot een specifiek punt wordt bereikt, waarna de prestaties snel zullen verminderen.
+* Elke component heeft een specifiek breekpunt wanneer gerelateerd aan prestaties. Met andere woorden, een component kan laten zien dat goede prestaties tot een bepaald punt is bereikt, waarna de prestaties snel afnemen.
 * Voor een volledig overzicht van de toepassing, moet u eerst uw componenten verifiëren wanneer het breekpunt van elk wordt bereikt.
-* Om het breekpunt te vinden kunt u een ladingstest uitvoeren waar, over een periode, u het aantal gebruikers verhoogt om een stijgende lading tot stand te brengen. Door deze lading, en de reactie van de componenten te controleren, zult u specifiek prestatiesgedrag ontmoeten wanneer het breekpunt van de component wordt bereikt. Het punt kan door het aantal gezamenlijke transacties per seconde, samen met het aantal gezamenlijke gebruikers worden gekwalificeerd (als de component voor dit KPI gevoelig is).
+* Om het breekpunt te vinden dat u een ladingstest kunt uitvoeren waar, over een tijdspanne, u het aantal gebruikers verhoogt om een stijgende lading tot stand te brengen. Door deze lading, en de reactie van de componenten te controleren, ontmoet u specifiek prestatiesgedrag wanneer het breekpunt van de component wordt bereikt. Het punt kan door het aantal gezamenlijke transacties per seconde, samen met het aantal gezamenlijke gebruikers worden gekwalificeerd (als de component voor dit KPI gevoelig is).
 * Deze informatie kan dan als benchmark voor verbeteringen dienen, de doeltreffendheid van de gebruikte maatregelen aangeven en helpen bij het definiëren van testscenario&#39;s.
 
 #### Transacties {#transactions}
 
-* De term transactie wordt gebruikt om het verzoek van een volledige Web-pagina, met inbegrip van de pagina zelf en alle verdere vraag te vertegenwoordigen; d.w.z. de paginaaanvraag, eventuele AJAX, afbeeldingen en andere objecten.**Downloaden aanvragen**
-* Om elk verzoek volledig te analyseren kunt u elk element van de vraagstapel vertegenwoordigen, dan totaal de gemiddelde verwerkingstijd voor elk.
+* De term transactie wordt gebruikt om het verzoek van een volledige Web-pagina, met inbegrip van de pagina zelf en alle verdere vraag te vertegenwoordigen. Met andere woorden, de paginaaanvraag, alle AJAX aanroepen, afbeeldingen en andere objecten **Downloaden aanvragen**.
+* Om elk verzoek volledig te analyseren, kunt u elk element van de vraagstapel vertegenwoordigen, dan totaal de gemiddelde verwerkingstijd voor elk.
 
 ### De prestatiedoelstellingen definiëren {#defining-the-performance-goals}
 
-Zodra het werkingsgebied, en verwante KPIs zijn bepaald, kunnen de specifieke prestatiesdoelstellingen worden geplaatst. Hierbij moeten testscenario&#39;s samen met streefwaarden worden opgesteld.
+Nadat het werkingsgebied en verwante KPIs worden bepaald, worden de specifieke prestatiesdoelstellingen geplaatst. Dit proces omvat het ontwerpen van testscenario&#39;s, samen met streefwaarden.
 
-U moet de prestaties testen onder zowel gemiddelde als piekomstandigheden. Daarnaast hebt u tests met live-scenario&#39;s nodig om ervoor te zorgen dat u meer interesse krijgt in uw website wanneer deze voor het eerst beschikbaar wordt gesteld.
+Testprestaties onder zowel gemiddelde als piekomstandigheden. Daarnaast hebt u tests met live-scenario&#39;s nodig om ervoor te zorgen dat u meer interesse krijgt in uw website wanneer deze voor het eerst beschikbaar wordt gesteld.
 
-Eventuele ervaringen of statistieken die u op een bestaande website hebt verzameld, kunnen ook nuttig zijn bij het bepalen van toekomstige doelen. bijvoorbeeld het hoogste verkeer van uw live website.
+Elke ervaring of statistische gegevens die u op een bestaande website hebt verzameld, kan ook nuttig zijn bij het bepalen van toekomstige doelen. Bijvoorbeeld, hoogste verkeer van uw levende website.
 
 #### Tests met één component {#single-component-tests}
 
@@ -388,9 +388,9 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 
 | Component | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Homepage voor één gebruiker | Gemiddelde | 1 | 1 |  |  |
+| Homepage voor één gebruiker | Gemiddeld | 1 | 1 |  |  |
 |  | Piek | 1 | 3 |  |  |
-| Homepage 100 gebruikers | Gemiddelde | 100 | 3 |  |  |
+| Homepage 100 gebruikers | Gemiddeld | 100 | 3 |  |  |
 |  | Piek | 100 | 3 |  |
 
 #### Gecombineerde componenttests {#combined-component-tests}
@@ -412,7 +412,7 @@ Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassinge
 
 #### Live tests uitvoeren {#going-live-tests}
 
-In de eerste dagen nadat uw website beschikbaar is gemaakt, kunt u een hogere mate van belangstelling verwachten. Dit zal waarschijnlijk zelfs groter zijn dan de piekwaarden u voor hebt getest. Het wordt ten zeerste aanbevolen Going Live-scenario&#39;s te testen om ervoor te zorgen dat het systeem op deze situatie kan inspelen.
+In de eerste dagen nadat uw website beschikbaar is gemaakt, kunt u een hogere mate van belangstelling verwachten. Dit scenario is zelfs groter dan de piekwaarden u voor test. Adobe raadt u aan Going Live-scenario&#39;s te testen om ervoor te zorgen dat het systeem op deze situatie kan inspelen.
 
 | Scenario | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
@@ -424,12 +424,12 @@ In de eerste dagen nadat uw website beschikbaar is gemaakt, kunt u een hogere ma
 
 #### Foutproeven {#error-scenario-tests}
 
-Foutscenario&#39;s moeten ook worden getest om ervoor te zorgen dat het systeem correct en correct reageert. Niet alleen in hoe de fout zelf wordt behandeld, maar het effect het op prestaties kan hebben. Bijvoorbeeld:
+Test foutscenario&#39;s om ervoor te zorgen dat het systeem correct en correct reageert. Niet alleen in hoe de fout zelf wordt behandeld, maar het effect het op prestaties kan hebben. Bijvoorbeeld:
 
 * Wat gebeurt er als de gebruiker een ongeldige zoekterm in het zoekvak probeert in te voeren
 * Wat gebeurt er als de zoekterm zo algemeen is dat deze een buitensporig aantal resultaten oplevert
 
-Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet alle scenario&#39;s regelmatig zullen plaatsvinden. Het is echter van belang dat de gevolgen voor het hele systeem worden beïnvloed.
+Bij het opstellen van deze tests moet men niet vergeten dat niet alle scenario&#39;s regelmatig voorkomen. Het is echter van belang dat de gevolgen voor het hele systeem worden beïnvloed.
 
 | Foutscenario | Fouttype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
@@ -440,7 +440,7 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 
 #### Duurzaamheidstests {#endurance-tests}
 
-Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een ononderbroken periode functioneert; hetzij uren, hetzij zelfs dagen. Een duurtest wordt gebruikt om een constante gemiddelde belasting over een vereiste periode te testen. Elke verslechtering van de prestaties kan vervolgens worden geanalyseerd.
+Bepaalde problemen worden pas aangetroffen nadat het systeem gedurende een ononderbroken periode, uren of dagen wordt uitgevoerd. Een duurtest wordt gebruikt om een constante gemiddelde belasting over een vereiste periode te testen. Elke verslechtering van de prestaties kan vervolgens worden geanalyseerd.
 
 | Scenario | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
@@ -452,7 +452,7 @@ Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een
 
 ### Optimalisatie {#optimization}
 
-In de latere stadia van de implementatie moet u de toepassing optimaliseren om de prestatiedoelen te halen of te maximaliseren.
+In de latere stadia van de implementatie optimaliseert u de toepassing om de prestatiedoelen te halen en te maximaliseren.
 
 Eventuele optimalisaties moeten worden getest om na te gaan of zij:
 
@@ -461,29 +461,29 @@ Eventuele optimalisaties moeten worden getest om na te gaan of zij:
 
 Er zijn verschillende tools beschikbaar om u te helpen bij het genereren van de belasting, het bewaken van de prestaties en/of het analyseren van de resultaten:
 
-* [JMeter](https://jakarta.apache.org/jmeter/)
-* [Runner laden](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* [JMeter](https://jmeter.apache.org/)
+* [Runner laden](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
-* [Interactief Java-profiel](https://jiprof.sourceforge.net/)
+* [Java™ Interactief profiel](https://jiprof.sourceforge.net/)
 * nog veel meer...
 
-Na optimalisatie moet u opnieuw testen om de impact te bevestigen.
+Na optimalisering, test opnieuw om het effect te bevestigen.
 
 ### Rapportage {#reporting}
 
-Doorlopende rapportage is nodig om iedereen op de hoogte te houden van de status, zoals eerder vermeld met kleurcodering, kan de architectuurkaart hiervoor worden gebruikt.
+De voortdurende rapportering houdt iedereen op de hoogte van de status. Zoals eerder vermeld bij kleurcodering, kan de architectuurkaart voor deze status worden gebruikt.
 
-Nadat alle tests zijn voltooid, wilt u rapporteren over:
+Nadat alle tests zijn afgerond, rapporteren over het volgende:
 
 * Eventuele kritieke fouten aangetroffen
-* Niet-kritische kwesties die nog nader moeten worden onderzocht
+* Niet-kritische kwesties die nog nader onderzoek behoeven
 * Eventuele aannames tijdens de tests
 * Eventuele aanbevelingen die uit de tests voortvloeien
 
 ## Prestaties optimaliseren bij gebruik van Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-De [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) is Adobe en/of taakverdeling. Wanneer u de Dispatcher gebruikt, kunt u overwegen uw website te optimaliseren voor de prestaties van de cache.
+De [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) is Adobe-in evenwicht brengen en/of laden. Als u Dispatcher gebruikt, kunt u uw website optimaliseren voor cacheprestaties.
 
 >[!NOTE]
 >
@@ -491,18 +491,15 @@ De [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/disp
 >
 >U bent mogelijk omgeleid naar deze pagina als u een koppeling naar de Dispatcher-documentatie hebt gevolgd die is ingesloten in de documentatie voor een vorige versie van AEM.
 
-De Dispatcher biedt een aantal ingebouwde mechanismen die u kunt gebruiken om de prestaties te optimaliseren als uw website er gebruik van maakt. In deze sectie wordt uitgelegd hoe u uw website kunt ontwerpen om de voordelen van caching te maximaliseren.
+De Dispatcher biedt verschillende ingebouwde mechanismen die u kunt gebruiken om de prestaties te optimaliseren als uw website er gebruik van maakt. In deze sectie wordt uitgelegd hoe u uw website kunt ontwerpen om de voordelen van caching te maximaliseren.
 
 >[!NOTE]
 >
->Het kan u helpen herinneren dat de Dispatcher het geheime voorgeheugen op een standaardWebserver opslaat. Dit betekent dat u:
+>Het kan u helpen herinneren dat de Dispatcher het geheime voorgeheugen op een standaardWebserver opslaat. Als u deze informatie kent, kunt u alles opslaan als pagina en aanvragen via een URL. En u kunt geen andere dingen opslaan, zoals cookies, sessiegegevens en formuliergegevens.
 >
->* Kan alles wat u als een pagina kunt opslaan en aanvragen via een URL in cache plaatsen
->* Kan geen andere dingen opslaan, zoals cookies, sessiegegevens en formuliergegevens.
+>In het algemeen, impliceren vele caching strategieën het selecteren van goede URLs en het verlaten van deze extra gegevens.
 >
->In het algemeen, impliceren veel caching strategieën het selecteren van goede URLs en het verlaten van deze extra gegevens.
->
->Met Dispatcher versie 4.1.11 kunt u ook responsheaders in cache plaatsen, zie [HTTP-responsheaders in cache plaatsen](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>Met Dispatcher versie 4.1.11 kunt u ook responsheaders in cache plaatsen, zie [HTTP-responsheaders in cache plaatsen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
 
 ### De cacheverhouding van de verzender berekenen {#calculating-the-dispatcher-cache-ratio}
 
@@ -518,7 +515,7 @@ De formule voor het berekenen van de cacheverhouding is:
 
 Bijvoorbeeld, als het totale aantal verzoeken 129491 is en het aantal verzoeken door de Publish instantie wordt gediend 58959 is de geheim voorgeheugenverhouding: **(129491 - 58959)/129491= 54,5%**.
 
-Als u geen één aan één uitgever/verzender het telegraferen hebt, zult u verzoeken van alle verzenders en uitgevers samen moeten toevoegen om een nauwkeurige meting te krijgen. Zie ook [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md).
+Als u geen één-op-één uitgever/verzender-telegrafering hebt, voeg verzoeken van alle verzenders en uitgevers samen om een nauwkeurige meting te krijgen. Zie ook [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -529,7 +526,7 @@ Als u geen één aan één uitgever/verzender het telegraferen hebt, zult u verz
 Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen antwoordheaders in de cache plaatst bij Dispatcher, kunnen er problemen optreden als u pagina-coderingsinformatie opslaat in de koptekst. Als Dispatcher dan een pagina uit de cache bedient, wordt de standaardcodering van de webserver gebruikt voor de pagina. Dit probleem kan op twee manieren worden voorkomen:
 
 * Als u slechts één codering gebruikt, moet u ervoor zorgen dat de codering die op de webserver wordt gebruikt, gelijk is aan de standaardcodering van de AEM website.
-* Een `<META>` -tag in de HTML `head` -sectie om de codering in te stellen, zoals in het volgende voorbeeld:
+* Als u de codering wilt instellen, gebruikt u een `<META>` -tag in de HTML `head` , zoals in het volgende voorbeeld:
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
@@ -537,7 +534,7 @@ Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen
 
 #### URL-parameters vermijden {#avoid-url-parameters}
 
-Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Als u bijvoorbeeld een fotogalerie hebt, wordt de volgende URL nooit in de cache opgeslagen (tenzij Dispatcher wordt verzonden) [dienovereenkomstig geconfigureerd](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+Vermijd indien mogelijk URL-parameters voor pagina&#39;s die u in cache wilt plaatsen. Als u bijvoorbeeld een fotogalerie hebt, wordt de volgende URL nooit in de cache opgeslagen (tenzij Dispatcher wordt verzonden) [dienovereenkomstig geconfigureerd](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -567,9 +564,9 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->Voor de meeste indelingsaspecten is het ook mogelijk stijlpagina&#39;s en/of clientscripts te gebruiken. Deze werken meestal heel goed met caching.
+>Voor de meeste lay-outaspecten is het ook mogelijk om stijlbladen, of cliënt-zijmanuscripten, of allebei te gebruiken. Deze instrumenten werken goed met caching.
 >
->Dit is ook handig voor een afdrukversie, waarin u bijvoorbeeld een URL kunt gebruiken:
+>Deze strategie is ook handig voor een afdrukversie, waar u bijvoorbeeld een URL kunt gebruiken:
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -592,32 +589,32 @@ U kunt bijvoorbeeld de titel van de pagina opslaan `myPage.html` in de `file myP
 
 #### Beeldbestanden die voor navigatie worden gebruikt ongeldig maken {#invalidating-image-files-used-for-navigation}
 
-Als u foto&#39;s gebruikt voor de navigatie-items, is de methode in feite hetzelfde als bij titels, iets complexer. Sla alle navigatieafbeeldingen op de doelpagina&#39;s op. Als u twee afbeeldingen gebruikt voor normaal en actief, kunt u de volgende scripts gebruiken:
+Als u afbeeldingen gebruikt voor de navigatie-items, is de methode in principe hetzelfde als bij titels, maar iets complexer. Sla alle navigatieafbeeldingen op de doelpagina&#39;s op. Als u twee afbeeldingen gebruikt voor normaal en actief, kunt u de volgende scripts gebruiken:
 
 * Een script waarmee de pagina als normaal wordt weergegeven.
 * Een script dat &quot;.normal&quot;-verzoeken verwerkt en het normale beeld retourneert.
 * Een script dat &quot;.active&quot;-aanvragen verwerkt en het geactiveerde beeld retourneert.
 
-Het is belangrijk dat u deze afbeeldingen maakt met dezelfde naamgevingsgreep als de pagina, zodat deze afbeeldingen en de pagina worden verwijderd door een update van de inhoud.
+Het is belangrijk dat u deze afbeeldingen maakt met dezelfde naamgevingsgreep als de pagina om ervoor te zorgen dat deze afbeeldingen en de pagina worden verwijderd bij het bijwerken van de inhoud.
 
-Voor pagina&#39;s die niet worden gewijzigd, blijven de afbeeldingen in het cachegeheugen staan, hoewel de pagina&#39;s zelf meestal automatisch ongeldig worden gemaakt.
+Voor pagina&#39;s die niet worden gewijzigd, blijven de afbeeldingen in het cachegeheugen staan, hoewel de pagina&#39;s zelf automatisch ongeldig worden gemaakt.
 
 #### Personalisatie {#personalization}
 
 U wordt aangeraden de personalisatie te beperken tot de plaats waar dat nodig is. Ter illustratie:
 
 * Als u een vrij aanpasbare startpagina gebruikt, moet die pagina telkens worden samengesteld wanneer een gebruiker erom vraagt.
-* Als u daarentegen 10 verschillende startpagina&#39;s kunt kiezen, kunt u elk van deze pagina&#39;s in cache plaatsen, waardoor de prestaties verbeteren.
+* Als u daarentegen een keuze hebt uit tien verschillende startpagina&#39;s, kunt u elk van deze in cache plaatsen, waardoor de prestaties verbeteren.
 
 >[!TIP]
 >Zie voor meer informatie over het configureren van de Dispatcher-cache de [Zelfstudie AEM Dispatcher Cache](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) en het gedeelte over [Beveiligde inhoud in cache plaatsen.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
-Als u elke pagina personaliseert (bijvoorbeeld door de naam van de gebruiker in de titelbalk te plaatsen), kan dit gevolgen hebben voor de prestaties.
+Als u elke pagina personaliseert door de naam van de gebruiker in de titelbar (bijvoorbeeld) te zetten, heeft het een prestatieseffect.
 
 >[!TIP]
 >Voor het in cache plaatsen van beveiligde inhoud raadpleegt u [Beveiligde inhoud in cache plaatsen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in de Dispatcher-handleiding.
 
-Met betrekking tot het mengen van beperkte en openbare inhoud op één pagina, zou u een strategie kunnen willen overwegen die serverzij omvat in Dispatcher, of cliëntkant omvat via Ajax in browser.
+Wat het mengen van beperkte en openbare inhoud op één pagina betreft, overweeg een strategie die server gebruikt omvat in de Dispatcher, of cliëntkant omvat als Ajax in browser.
 
 >[!TIP]
 >
@@ -625,53 +622,53 @@ Met betrekking tot het mengen van beperkte en openbare inhoud op één pagina, z
 
 #### Vaste verbindingen {#sticky-connections}
 
-[Vaste verbindingen](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) Zorg ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Definieer één map voor alle documenten die voor de website kleverige verbindingen vereisen. Probeer er geen andere documenten in op te nemen. Dit is van invloed op de taakverdeling als u gepersonaliseerde pagina&#39;s en sessiegegevens gebruikt.
+[Vaste verbindingen](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) Zorg ervoor dat de documenten voor één gebruiker allen op de zelfde server samengesteld zijn. Als een gebruiker deze map verlaat en er later weer naar terugkeert, blijft de verbinding behouden. Als u alle documenten wilt bewaren waarvoor kleverige verbindingen voor de website nodig zijn, definieert u één map. Probeer er geen andere documenten in op te nemen. Dit scenario beïnvloedt lading-in evenwicht brengend als u gepersonaliseerde pagina&#39;s en zittingsgegevens gebruikt.
 
 #### MIME-typen {#mime-types}
 
 Er zijn twee manieren waarop een browser het type bestand kan bepalen:
 
-1. Door de uitbreiding (bijvoorbeeld `.html`, `.gif`, `.jpg`, enz.)
+1. Door de extensie ervan (bijvoorbeeld `.html`, `.gif`, en `.jpg`).
 1. Door het MIME-type dat de server met het bestand verzendt.
 
-Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. i.e.:
+Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. Dat wil zeggen:
 
-1. Door de uitbreiding (bijvoorbeeld `.html`, `.gif`, `.jpg`, enz.)
+1. Door de extensie ervan (bijvoorbeeld `.html`, `.gif`, en `.jpg`).
 1. Door het MIME-type dat de server met het bestand verzendt.
 
 Als de bestandsnaam geen extensie heeft, wordt deze weergegeven als onbewerkte tekst.
 
-Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u antwoordheaders niet in de cache plaatst bij Dispatcher, moet u er rekening mee houden dat het MIME-type onderdeel is van de HTTP-header. Als uw AEM-toepassing bestanden retourneert die geen herkend bestand hebben dat eindigt en in plaats daarvan afhankelijk is van het MIME-type, worden deze bestanden mogelijk onjuist weergegeven.
+Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen antwoordheaders in de cache plaatst bij Dispatcher, maakt het MIME-type deel uit van de HTTP-header. Als uw AEM-toepassing bestanden retourneert die geen herkend bestand hebben dat eindigt en in plaats daarvan afhankelijk is van het MIME-type, worden deze bestanden mogelijk onjuist weergegeven.
 
 Volg de onderstaande richtlijnen om ervoor te zorgen dat bestanden correct in het cachegeheugen worden opgeslagen:
 
 * Zorg ervoor dat bestanden altijd de juiste extensie hebben.
-* Vermijd generieke serverscripts, die URL&#39;s hebben, zoals `download.jsp?file=2214`. Schrijf het script opnieuw om URL&#39;s te gebruiken die de bestandsspecificatie bevatten. In het vorige voorbeeld is dit `download.2214.pdf`.
+* Vermijd generieke serverscripts, die URL&#39;s hebben, zoals `download.jsp?file=2214`. Als u URL&#39;s met de bestandsspecificatie wilt gebruiken, moet u het script opnieuw schrijven. In het vorige voorbeeld is deze herschrijven `download.2214.pdf`.
 
 ## Back-upprestaties {#backup-performance}
 
-Deze sectie bevat een reeks benchmarks die worden gebruikt om de prestaties van AEM back-ups en de effecten van back-upactiviteiten op de prestaties van de toepassing te beoordelen. AEM back-ups betekenen een aanzienlijke belasting voor het systeem terwijl het wordt uitgevoerd, en we meten dit, evenals de effecten van de instellingen voor back-upvertraging die proberen deze effecten te moduleren. Het doel is om enkele referentiegegevens te bieden over de verwachte prestaties van back-ups in realistische configuraties en hoeveelheden productiegegevens, en om u te helpen bij het schatten van de back-uptijden voor geplande systemen.
+Deze sectie bevat een reeks benchmarks die worden gebruikt om de prestaties van AEM back-ups en de effecten van back-upactiviteiten op de prestaties van de toepassing te beoordelen. AEM steunen vormen een significante belasting op het systeem terwijl het loopt, en Adobe meet dit effect, en de gevolgen van de reservevertragingsmontages die proberen om deze gevolgen te moduleren. Het doel is om enkele referentiegegevens te bieden over de verwachte prestaties van back-ups in realistische configuraties en hoeveelheden productiegegevens, en om u te helpen bij het schatten van de back-uptijden voor geplande systemen.
 
 ### Referentiemilieu {#reference-environment}
 
 #### Fysiek systeem {#physical-system}
 
-De resultaten die in dit document worden gerapporteerd, zijn verkregen uit benchmarks die in een referentieomgeving met de volgende configuratie worden uitgevoerd. Deze configuratie is zo ontworpen dat deze vergelijkbaar is met een typische productieomgeving in een datacenter:
+De resultaten die in dit document worden gerapporteerd, zijn verkregen uit benchmarks die in een referentieomgeving met de volgende configuratie worden uitgevoerd. Deze configuratie is gelijkaardig aan een typische productiemilieu in een gegevenscentrum:
 
-* H-P ProLiant DL380 G6, 8 CPU&#39;s x 2,533 GHz
-* Serial Attached SCSI 300 GB 10.000 RPM-schijven
-* RAID-hardwarecontroller; 8 schijven in een RAID0+5-array
-* VMware image CPU x 2 Intel Xeon E5540 @ 2,53 GHz
-* RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
+* HP ProLiant DL380 G6, 8 CPU&#39;s x 2,533 GHz
+* Serial Attached SCSI 300 GB harde schijven (10.000 rpm)
+* RAID-hardwarecontroller; acht schijven in een RAID0+5-array
+* VMware image CPU x 2 Intel Xeon® E5540 @ 2,53 GHz
+* Red Hat® Linux® 2.6.18-194.el5; Java™ 1.6.0_29
 * Single Author-instantie
 
-Het schijfsubsysteem op deze server is vrij snel, representatief voor een krachtige configuratie van de INVAL die in een productieserver zou kunnen worden gebruikt. Back-upprestaties kunnen gevoelig zijn voor schijfprestaties en de resultaten in deze omgeving weerspiegelen de prestaties op een zeer snelle RAID-configuratie. Het VMWare-image is geconfigureerd voor één groot schijfvolume dat zich fysiek in de lokale schijfopslag op de RAID-array bevindt.
+Het schijfsubsysteem op deze server is snel en vertegenwoordigt een krachtige RAID-configuratie die in een productieserver kan worden gebruikt. Back-upprestaties kunnen gevoelig zijn voor schijfprestaties en de resultaten in deze omgeving weerspiegelen de prestaties bij een snelle RAID-configuratie. Het VMWare-image is geconfigureerd voor één groot schijfvolume dat zich fysiek in de lokale schijfopslag op de RAID-array bevindt.
 
-De AEM configuratie plaatst de opslagplaats en datastore op het zelfde logische volume, naast al werkend systeem en AEM software. De doelmap voor back-ups bevindt zich ook op dit logische bestandssysteem.
+De AEM configuratie plaatst de opslagplaats en datastore op hetzelfde logische volume, naast het besturingssysteem en de AEM. De doelmap voor back-ups bevindt zich ook op dit logische bestandssysteem.
 
 #### Gegevensvolumes {#data-volumes}
 
-De volgende tabel illustreert de grootte van gegevensvolumes die worden gebruikt in de back-upbenchmarks. De initiële basislijninhoud wordt eerst geïnstalleerd, waarna extra bekende hoeveelheden gegevens worden toegevoegd om de inhoud waarvan een back-up wordt gemaakt, groter te maken. Back-ups worden gemaakt in specifieke stappen, zodat de inhoud van de back-ups aanzienlijk toeneemt en de productie per dag aanzienlijk toeneemt. De distributie van inhoud (pagina&#39;s, afbeeldingen, tags) is ruwweg gebaseerd op een realistische samenstelling van productieelementen. Pagina&#39;s, afbeeldingen en tags zijn beperkt tot maximaal 800 onderliggende pagina&#39;s. Elke pagina bevat de volgende onderdelen: titel, Flash, tekst/afbeelding, video, presentatie, formulier, tabel, cloud en carrousel. Afbeeldingen worden geüpload uit een groep van 400 unieke bestanden, variërend van 37 kB tot 594 kB.
+De volgende tabel illustreert de grootte van gegevensvolumes die worden gebruikt in de back-upbenchmarks. De initiële basislijninhoud wordt eerst geïnstalleerd, waarna extra bekende hoeveelheden gegevens worden toegevoegd om de inhoud waarvan een back-up wordt gemaakt, groter te maken. Back-ups worden gemaakt in specifieke stappen, zodat de inhoud van de back-up aanzienlijk toeneemt en het resultaat per dag groter wordt. De distributie van inhoud (pagina&#39;s, afbeeldingen, tags) is ruwweg gebaseerd op een realistische compositie van productieelementen. Pagina&#39;s, afbeeldingen en tags zijn beperkt tot maximaal 800 onderliggende pagina&#39;s. Elke pagina bevat de volgende onderdelen: titel, Flash, tekst/afbeelding, video, presentatie, formulier, tabel, cloud en carrousel. Afbeeldingen worden geüpload uit een groep van 400 unieke bestanden, van 37 kB tot 594 kB.
 
 | Inhoud | Knooppunten | Pagina&#39;s | Afbeeldingen | Tags |
 |---|---|---|---|---|
@@ -690,42 +687,42 @@ De back-upbenchmarks bestrijken twee hoofdscenario&#39;s: back-ups maken wanneer
 
 De back-uptijden en -grootte van de resulterende back-up worden opgehaald uit de AEM serverlogboeken. Het wordt normaal aanbevolen dat back-ups worden gepland voor &#39;off-times&#39; wanneer AEM inactief is, bijvoorbeeld &#39;s nachts. Dit scenario is representatief voor de aanbevolen aanpak.
 
-De lading zal bestaan uit pagina leidt/schrapt, traversals, en vragen met het grootste deel van lading die uit paginalandangen en vragen komen. Door te veel pagina&#39;s toe te voegen en te verwijderen wordt de werkruimte steeds groter en wordt voorkomen dat de back-ups worden voltooid. De verdeling van de belasting die het script gebruikt, is 75% pagina-verplaatsingen, 24% query&#39;s en 1% pagina-ontwerpen (één niveau zonder geneste subpagina&#39;s). De piekgemiddelde transacties per seconde op een nutteloos systeem worden bereikt met 4 gezamenlijke draden, die wordt gebruikt wanneer het testen van file-ups onder lading.
+De lading bestaat uit gecreeerde pagina&#39;s, verwijderde pagina&#39;s, traversals, en vragen met de meeste lading die uit paginalandangen en vragen komt. Door te veel pagina&#39;s toe te voegen en te verwijderen wordt de werkruimte steeds groter en wordt voorkomen dat de back-ups worden voltooid. De verdeling van het laden die het script gebruikt, is 75% pagina-traversals, 24% query&#39;s en 1% pagina-ontwerpen (één niveau zonder geneste subpagina&#39;s). De piekgemiddelde transacties per seconde op een nutteloos systeem worden bereikt met vier gezamenlijke draden, die wanneer het testen van file-ups onder lading wordt gebruikt.
 
 De impact van de belasting op de back-upprestaties kan worden geschat door het verschil tussen prestaties met en zonder deze toepassingsbelasting. De impact van de back-up op de doorvoer van de toepassing wordt gevonden door de doorvoerscenario&#39;s per uur te vergelijken met en zonder een gelijktijdige back-up aan de gang, en met back-ups die werken met verschillende instellingen voor &quot;back-upvertraging&quot;.
 
-* **Vertraging instellen** - Voor verscheidene scenario&#39;s veranderden wij ook het reservevertragingsplaatsen, gebruikend waarden van 10 ms (gebrek), 1 ms en 0 ms, om te onderzoeken hoe dit het plaatsen de prestaties van steunen beïnvloedde.
-* **Back-uptype** - Alle back-ups waren externe back-ups van de opslagplaats die in een back-updirectory werden gemaakt zonder een ritssluiting te maken, behalve in één keer voor vergelijking waar de teeropdracht rechtstreeks werd gebruikt. Aangezien incrementele back-ups niet naar een ZIP-bestand kunnen worden gemaakt of wanneer de voorafgaande volledige back-up een ZIP-bestand is, wordt de back-upmapmethode het meest gebruikt in productiesituaties.
+* **Vertraging instellen** - Voor verscheidene scenario&#39;s, werd de reservevertragingsinstelling ook gevarieerd, gebruikend waarden van 10 ms (gebrek), 1 ms, en 0 ms, om te onderzoeken hoe dit het plaatsen de prestaties van steunen beïnvloedde.
+* **Back-uptype** - Alle back-ups waren externe back-ups van de opslagplaats die in een back-updirectory werden gemaakt zonder een ritssluiting te maken, behalve in één geval voor vergelijking waar de teeropdracht rechtstreeks werd gebruikt. Aangezien incrementele back-ups niet naar een ZIP-bestand kunnen worden gemaakt of wanneer de voorafgaande volledige back-up een ZIP-bestand is, wordt de back-upmapmethode het meest gebruikt in productiesituaties.
 
 ### Samenvatting van de resultaten {#summary-of-results}
 
 #### Back-uptijd en -doorvoer {#backup-time-and-throughput}
 
-Het belangrijkste resultaat van deze benchmarks is te laten zien hoe de back-uptijden variëren afhankelijk van het back-uptype en de totale hoeveelheid gegevens. In het volgende diagram wordt de back-uptijd weergegeven die is verkregen met de standaardback-upconfiguratie, als een functie van het totale aantal pagina&#39;s.
+Het belangrijkste resultaat van deze benchmarks is te laten zien hoe de back-uptijden variëren afhankelijk van het back-uptype en de totale hoeveelheid gegevens. In het volgende diagram wordt de verkregen back-uptijd weergegeven met de standaardback-upconfiguratie, als een functie van het totale aantal pagina&#39;s.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-De back-uptijden op een inactieve instantie zijn redelijk consistent en het gemiddelde is 0,608 MB/s, ongeacht de volledige of incrementele back-up (zie onderstaande grafiek). De back-uptijd is gewoon een functie van de hoeveelheid gegevens waarvan een back-up wordt gemaakt. De tijd om een volledige steun te voltooien neemt duidelijk met het totale aantal pagina&#39;s toe. De tijd om een stijgende steun te voltooien klimt ook met het totale aantal pagina&#39;s, maar bij een veel lager tarief. De tijd die nodig is om de incrementele back-up te voltooien is veel korter vanwege de relatief kleine hoeveelheid gegevens waarvan een back-up wordt gemaakt.
+De reservetijden op een nutteloze instantie zijn vrij verenigbaar, die gemiddelde 0.608 MB per seconde, ongeacht volledige, of stijgende steunen (zie grafiek hieronder). De back-uptijd is gewoon een functie van de hoeveelheid gegevens waarvan een back-up wordt gemaakt. De tijd om een volledige steun te voltooien neemt duidelijk met het totale aantal pagina&#39;s toe. De tijd om een stijgende steun te voltooien klimt ook met het totale aantal pagina&#39;s, maar bij een veel lager tarief. De tijd die nodig is om de incrementele back-up te voltooien is veel korter vanwege de relatief kleine hoeveelheid gegevens waarvan een back-up wordt gemaakt.
 
 De grootte van de gemaakte back-up is de belangrijkste bepalende factor voor de tijd die nodig is om de back-up te voltooien. In het volgende diagram wordt de tijd weergegeven die is ingenomen als functie van de uiteindelijke back-upgrootte.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-Deze grafiek illustreert dat zowel stijgende als volledige steunen een eenvoudig grootte tegenover tijdpatroon volgen dat wij als productie kunnen meten. Back-uptijden op een inactieve instantie zijn redelijk consistent, met een gemiddelde van 0,61 MB/sec, ongeacht volledige of incrementele back-ups op de benchmarkomgeving.
+Dit diagram illustreert dat zowel stijgende als volledige steunen een eenvoudig grootte tegenover tijdpatroon volgen dat Adobe als productie kan meten. Back-uptijden op een inactieve instantie zijn redelijk consistent, met een gemiddelde van 0,61 MB per seconde, ongeacht de volledige of incrementele back-ups op de benchmarkomgeving.
 
 #### Back-upvertraging {#backup-delay}
 
 De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot welke steunen productiewerklasten kunnen interfereren. De parameter geeft een wachttijd in milliseconden aan, die per bestand in de back-upbewerking wordt afgedrukt. Het algemene effect hangt gedeeltelijk af van de grootte van de betrokken bestanden. Het meten van back-upprestaties in MB/sec biedt een redelijke manier om de effecten van vertraging op de back-up te vergelijken.
 
-* Als u een back-up gelijktijdig uitvoert met een normale toepassingsbelasting, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
-* De impact kan gering zijn (maar niet minder dan 5%) of zeer significant zijn, wat tot een daling van de productie met 75% kan leiden, en dit hangt waarschijnlijk meer af van de toepassing dan wat dan ook.
+* Als u een back-up tegelijkertijd uitvoert met de normale belasting van de toepassing, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
+* De invloed kan gering zijn (maar niet minder dan 5%) of significant, waardoor de productie met maar liefst 75% afneemt. Het hangt waarschijnlijk het meest van de toepassing af.
 * Back-up is geen zware belasting voor de CPU en dus zouden CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan I/O-intensieve werklasten.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Ter vergelijking: de doorvoer die wordt verkregen via een back-up van het bestandssysteem (met &#39;teer&#39;) voor het maken van een back-up van dezelfde opslagplaats. De prestaties van het teer zijn vergelijkbaar, maar iets hoger dan de back-up met een vertraging die op nul is ingesteld. Zelfs een kleine vertraging verlaagt de back-updoorvoer aanzienlijk en de standaardvertraging van 10 ms resulteert in een sterk verminderde doorvoer. In situaties waar de steunen kunnen worden gepland wanneer algemeen toepassingsgebruik zeer laag is of de toepassing volledig nutteloos kan zijn, is het waarschijnlijk wenselijk om de vertraging onder de standaardwaarde te verminderen om de steun toe te laten om sneller te werk te gaan.
+Ter vergelijking: de doorvoer die wordt verkregen via een back-up van een bestandssysteem (&#39;tar&#39;) om back-ups te maken van dezelfde opslagplaats. De prestaties van het teer zijn vergelijkbaar, maar iets hoger dan de back-up met een vertraging die op nul is ingesteld. Zelfs een kleine vertraging verlaagt de back-updoorvoer aanzienlijk en de standaardvertraging van 10 ms resulteert in een sterk verminderde doorvoer. In situaties waarin back-ups kunnen worden gepland wanneer het totale gebruik van de toepassing laag is of wanneer de toepassing inactief kan zijn, verlaagt u de vertraging tot onder de standaardwaarde, zodat de back-up sneller kan worden uitgevoerd.
 
-De daadwerkelijke impact van de doorvoer van toepassingen van een continue back-up is afhankelijk van de toepassings- en infrastructuurdetails. De vertragingswaarde moet worden gekozen door een empirische analyse van de toepassing, maar moet zo klein mogelijk worden gekozen, zodat de back-ups zo snel mogelijk kunnen worden voltooid. Aangezien er slechts een zwakke correlatie is tussen de keuze van vertragingswaarde en de invloed op de doorvoer van de toepassing, moet de keuze van vertraging de voorkeur geven aan kortere algemene back-uptijden, om de algemene impact van back-ups tot een minimum te beperken. Een back-up die 8 uur duurt om te voltooien, maar die invloed heeft op de doorvoer met -20%, heeft waarschijnlijk een groter algemeen effect dan een back-up die 2 uur duurt om te voltooien, maar die invloed heeft op de doorvoer met -30%.
+De daadwerkelijke impact van de doorvoer van toepassingen van een continue back-up is afhankelijk van de toepassings- en infrastructuurdetails. De vertragingswaarde moet worden gekozen door een empirische analyse van de toepassing, maar moet zo klein mogelijk worden gekozen, zodat de back-ups zo snel mogelijk kunnen worden voltooid. Omdat er slechts een zwakke correlatie is tussen de keuze van vertragingswaarde en de invloed op de doorvoer van de toepassing, zou de keuze van vertraging kortere algemene back-uptijden moeten begunstigen om de algemene impact van back-ups te minimaliseren. Een back-up die acht uur duurt, maar die invloed heeft op de doorvoer met -20%, heeft waarschijnlijk een groter algemeen effect dan een back-up die twee uur duurt, maar die invloed heeft op de doorvoer met -30%.
 
 ### Verwijzingen {#references}
 

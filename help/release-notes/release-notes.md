@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 676472125cf472d42b792fae87dffe263e499014
+source-git-commit: 72b3eaea279911569dbd6b9acf41527111e9e53c
 workflow-type: tm+mt
-source-wordcount: '2581'
+source-wordcount: '2641'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 | -------- | ---------------------------- |
 | Versie | 6.5.16.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
-| Date | Donderdag 23 februari 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Datum | Donderdag 23 februari 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[...]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Wat is inbegrepen in [!DNL Experience Manager] 6.5.16.0. {#what-is-included-in-aem-6516}
@@ -271,6 +271,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 Dit pakket is nodig voor klanten die GraphQL gebruiken. hierdoor kunnen ze de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
 
 * Werk uw GraphQL-query&#39;s die mogelijk een aangepaste API-naam voor uw inhoudsmodel hebben gebruikt bij om in plaats daarvan de standaardnaam van het inhoudsmodel te gebruiken.
+
+* Een GraphQL-query kan de opdracht `damAssetLucene` index in plaats van de `fragments` index. Dit kan resulteren in GraphQL-query&#39;s die mislukken, of het duurt erg lang om deze uit te voeren.
+
+   Om het probleem te verhelpen, `damAssetLucene` moet worden gevormd om de volgende twee eigenschappen te omvatten:
+
+   * `contentFragment`
+   * `model`
+
+   Nadat de indexdefinitie is gewijzigd, is opnieuw indexeren vereist (`reindex` = `true`).
+
+   Na deze stappen zouden de vragen van GraphQL sneller moeten presteren.
 
 * Als [!DNL Microsoft®® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL AEM Forms 6.5.10.0].
 

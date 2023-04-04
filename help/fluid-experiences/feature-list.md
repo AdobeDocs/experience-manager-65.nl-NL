@@ -4,9 +4,9 @@ description: Lijst met functies voor dynamische ervaringen
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '346'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 |---|
 | [HTTP-API](/help/assets/mac-api-assets.md) |
 | [Gestructureerde inhoudsmodellen](/help/assets/content-fragments/content-fragments.md) |
-| [Inhoudsservices](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
+| [Inhoudsservices](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en) |
 | [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md) |
 | HTTP API voor gestructureerde inhoud (lezen) |
 | HTTP-API voor gestructureerde inhoud (CRUD) |
@@ -82,10 +82,9 @@ In de volgende tabellen worden de kenmerken van AEM dynamische ervaring gedefini
 
 ## Meer informatie {#learn-more}
 
-* [Vochtervaring in gevallen zonder hoofdtelefoon](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [AEM Content Service: Wat, waarom en hoe?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
-* [Inhoudsservices gebruiken](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Mobiele app ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
-* [Veelgestelde vragen over toegang van derden](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
-* [Vloeiende ervaringen overal](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
-* [Sling-API&#39;s gebruiken](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
+* [Vochtervaring in gevallen zonder hoofdtelefoon](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
+* [AEM Content Service: Wat, waarom en hoe?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
+* [Inhoudsservices gebruiken](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [Mobiele app ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [Veelgestelde vragen over toegang van derden](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [Sling-API&#39;s gebruiken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

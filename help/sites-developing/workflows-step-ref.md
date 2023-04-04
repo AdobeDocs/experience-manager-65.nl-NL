@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '3284'
+source-wordcount: '3246'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De modellen van het werkschema bestaan uit een reeks stappen van diverse types. 
 >
 >In deze sectie worden de standaardworkflowstappen beschreven.
 >
->Zie ook voor modulespecifieke stappen:
+>Raadpleeg de volgende secties voor modulespecifieke stappen:
 >
 >* [AEM Forms Workflow Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Middelen verwerken met behulp van mediafuncties en workflows](/help/assets/media-handlers.md)
@@ -49,17 +49,16 @@ Een beschrijving van de stap.
 
 * **Werkstroomwerkgebied**
 
-   Een vervolgkeuzelijst om een [Werkgebied](/help/sites-developing/workflows.md#workflow-stages) naar de stap.
+   Een vervolgkeuzelijst voor het toepassen van een [Werkgebied](/help/sites-developing/workflows.md#workflow-stages) naar de stap.
 
 * **Time-out**
 
-   De periode waarna de stap wordt &quot;uitgezet&quot;.
+   De periode waarna de stap &quot;uitkomt&quot;.
 U kunt kiezen tussen: **Uit**, **Meteen**, **1h**, **6 uur**, **12 nonies**, **24 nonies**.
 
 * **Timeout-handler**
 
-   De manager die het werkschema zal controleren wanneer de staptijden uit; bijvoorbeeld:
-   `Auto Advancer`
+   De manager die het werkschema controleert wanneer de staptijden uit. Bijvoorbeeld, `Auto Advancer`
 
 * **Handler Advance**
 
@@ -72,18 +71,18 @@ De volgende eigenschappen zijn beschikbaar voor veel workflowstapcomponenten op 
 * **Gebruikers via e-mail op de hoogte stellen**
 
    * U kunt deelnemers op de hoogte stellen door hen een e-mail te sturen wanneer de werkstroom de stap bereikt.
-   * Indien ingeschakeld, wordt een e-mail verzonden naar de gebruiker die door de eigenschap wordt gedefinieerd **Gebruiker/groep** of aan elk lid van de groep indien een groep is gedefinieerd.
+   * Indien ingeschakeld, wordt een e-mail verzonden naar de gebruiker die door de eigenschap wordt gedefinieerd **Gebruiker/groep**, of aan elk lid van de groep indien een groep is gedefinieerd.
 
 * **Gebruiker/groep**
 
-   * In een keuzelijst kunt u navigeren en een gebruiker of groep selecteren.
-   * Als u de stap toewijst aan een specifieke gebruiker, kan alleen deze gebruiker actie ondernemen voor de stap.
-   * Als u de stap toewijst aan een hele groep, hebben alle gebruikers in deze groep de actie in hun **Workflow Inbox**.
+   * Met een keuzelijst kunt u naar een gebruiker of groep navigeren en deze selecteren.
+   * Als u de stap aan een specifieke gebruiker toewijst, dan slechts kan deze gebruiker op de stap handelen.
+   * Als u de stap toewijst aan een hele groep en de workflow deze stap bereikt, staan alle gebruikers in deze groep in hun **Workflow Inbox**.
    * Zie [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md) voor meer informatie .
 
 ## EN splitsen {#and-split}
 
-De **EN splitsen** maakt een splitsing in de workflow, waarna beide vertakkingen actief zijn. U voegt workflowstappen naar wens toe aan elke vertakking. Met deze stap kunt u meerdere verwerkingspaden in de workflow opnemen. U kunt bijvoorbeeld toestaan dat bepaalde stappen van de revisie parallel worden uitgevoerd, zodat u tijd bespaart.
+De **EN splitsen** maakt een splitsing in de workflow, waarna beide vertakkingen actief zijn. U voegt workflowstappen naar wens toe aan elke vertakking. Met deze stap kunt u meerdere verwerkingspaden in de workflow opnemen. U kunt bijvoorbeeld toestaan dat bepaalde stappen van de revisie parallel worden uitgevoerd, wat tijd bespaart.
 
 ![wf-26](assets/wf-26.png)
 
@@ -142,12 +141,12 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 #### Een lus voor lus simuleren {#simulating-a-for-loop}
 
-Wanneer u een lus for simuleert, moet u een telling bijhouden van het aantal herhalingen van lus dat is opgetreden:
+Wanneer u een lus &quot;for&quot; simuleert, moet u een telling bijhouden van het aantal herhalingen van lus dat is opgetreden:
 
 * De telling vertegenwoordigt typisch een index van punten die op in het werkschema worden gehandeld.
 * De telling wordt geëvalueerd als uitgangscriteria van de lijn.
 
-Als u bijvoorbeeld een workflow wilt implementeren die een handeling uitvoert op verschillende JCR-knooppunten, kunt u een lusteller gebruiken als index voor de knooppunten. Als u het aantal wilt behouden, slaat u een `integer` waarde in de gegevenskaart van de werkschemainstantie. Het script van het **Ga naar stap** de telling verhogen en de telling vergelijken met de uitstapcriteria.
+Als u bijvoorbeeld een workflow wilt implementeren die een handeling uitvoert op verschillende JCR-knooppunten, kunt u een lusteller gebruiken als index voor de knooppunten. Als u het aantal wilt behouden, slaat u een `integer` waarde in de gegevenskaart van de werkschemainstantie. Als u het aantal wilt verhogen en het aantal wilt vergelijken met de afsluitcriteria, gebruikt u het script van het dialoogvenster **Ga naar stap**.
 
 ```
 function check(){
@@ -183,7 +182,7 @@ In de **Ga naar stap**, gebruik **Variabele instellen** als de **Doelstap** en *
 
 ![Voorwaarde voor het simuleren van een lus for](assets/variable_use_case_count1_new.png)
 
-De **Variabele instellen** stap wordt herhaaldelijk uitgevoerd, waarbij de waarde van **aantal** variëren met 1 bij elke uitvoering tot de waarde 5 bereikt.
+De **Variabele instellen** stap wordt herhaaldelijk uitgevoerd, waarbij de waarde van **aantal** variëren met 1 op elke looppas tot de waarde 5 bereikt.
 
 ## OF Splitsen {#or-split}
 
@@ -191,7 +190,7 @@ De **OF Splitsen** maakt een splitsing in de workflow, waarna slechts één vert
 
 >[!NOTE]
 >
->Zie voor meer informatie over het maken van een OF-splitsing: [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>Zie [OF stap Splitsen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
 
 ![Vertakken met OF splitsen](assets/variables_orsplit_new.png)
 
@@ -207,11 +206,11 @@ De splitsing configureren:
    * **Branches (*x)***
 
       * **Vertakking toevoegen:** Voeg meer vertakkingen aan de stap toe.
-      * **Selecteer het Verpletteren van Uitdrukking**: Selecteer de verpletterende uitdrukking om de actieve tak te evalueren. Mogelijke waarden zijn: Regeldefinitie, extern script en ECMA-script.
+      * **Selecteer het Verpletteren van Uitdrukking**: Om de actieve tak te evalueren, selecteer de verpletterende uitdrukking. Mogelijke waarden zijn: Regeldefinitie, extern script en ECMA-script.
       * **Klik om uitdrukking toe te voegen**: Expressie toevoegen om de actieve vertakking te evalueren als u **Regeldefinitie** als verpletterende uitdrukking.
       * **Scriptpad**: Het pad naar een bestand dat het script bevat om de actieve vertakking te evalueren als u **Extern script** als verpletterende uitdrukking.
       * **Script**: Voeg het script in het vak toe om de actieve vertakking te evalueren als u **ECMA-script** als verpletterende uitdrukking.
-      * **Standaardroute**: De standaardvertakking wordt gevolgd in het geval van meerdere vertakkingen. U kunt slechts één vertakking als standaard opgeven.
+      * **Standaardroute**: De standaardvertakking wordt gevolgd als er meerdere vertakkingen zijn. U kunt slechts één vertakking als standaard opgeven.
 
    >[!NOTE]
    >
@@ -231,7 +230,7 @@ De splitsing configureren:
 
 ### Stap deelnemer {#participant-step}
 
-A **Stap deelnemer** kunt u de eigendom van een bepaalde handeling toewijzen. De workflow wordt alleen uitgevoerd wanneer de gebruiker de stap handmatig heeft bevestigd. Dit wordt gebruikt wanneer u iemand een actie op het werkschema wilt nemen; bijvoorbeeld een revisiestap.
+A **Stap deelnemer** kunt u de eigendom van een bepaalde handeling toewijzen. De workflow wordt alleen uitgevoerd wanneer de gebruiker de stap handmatig heeft bevestigd. Deze workflow wordt gebruikt wanneer u wilt dat iemand op de workflow reageert. Bijvoorbeeld een revisiestap.
 
 Hoewel dit niet rechtstreeks verband houdt, moet bij de toewijzing van een actie rekening worden gehouden met de autorisatie van de gebruiker; de gebruiker moet toegang hebben tot de pagina die de nuttige werkstroom is.
 
@@ -253,7 +252,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 >[!NOTE]
 >
->Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Zie [E-mailmelding configureren](/help/sites-administering/notification.md#configuringemailnotification) om e-mailberichten in AEM te configureren.
+>Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Als u e-mailmeldingen wilt configureren in AEM, raadpleegt u [E-mailmelding configureren](/help/sites-administering/notification.md#configuringemailnotification).
 
 ### Stap deelnemer van dialoogvenster {#dialog-participant-step}
 
@@ -277,8 +276,8 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 Als u een dialoogvenster wilt maken, moet u het dialoogvenster maken:
 
-* Bepalen waar de resulterende gegevens worden [opgeslagen in de lading](#dialog-participant-step-storing-data-in-the-payload).
-* [De dialoog definiëren; dit omvat het definiëren van de velden die worden gebruikt om de gegevens te verzamelen (en op te slaan)](#dialog-participant-step-dialog-definition).
+* Bepalen waar de resulterende gegevens zijn [opgeslagen in de lading](#dialog-participant-step-storing-data-in-the-payload).
+* [De dialoog definiëren; omvat het definiëren van de velden die worden gebruikt om de gegevens te verzamelen en op te slaan](#dialog-participant-step-dialog-definition).
 
 #### Stap van de Deelnemer van de dialoog - het Opslaan van Gegevens in de Lading {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -290,14 +289,14 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
       `./jcr:content/nodename`
 
    * De gegevens worden opgeslagen in de `nodename` eigenschap van het payload-knooppunt. Als het knooppunt die eigenschap niet bevat, wordt de eigenschap gemaakt.
-   * Wanneer opgeslagen met de lading, het verdere gebruik van de dialoog met de zelfde lading overschrijft de waarde van het bezit.
+   * Wanneer opgeslagen met de lading, later gebruik van de dialoog met de zelfde lading overschrijft de waarde van het bezit.
 
 * **Gegevens opslaan met het werkitem**
 
    * Als u widgetgegevens wilt opslaan als een eigenschap van de metagegevens van het werkitem, gebruikt u de volgende indeling voor de waarde van de eigenschap name:
       `nodename`
 
-   * De gegevens worden opgeslagen in de `nodename` eigenschap van het werkitem `metadata`. De gegevens blijven behouden als het dialoogvenster vervolgens wordt gebruikt met dezelfde payload.
+   * De gegevens worden opgeslagen in de `nodename` eigenschap van het werkitem `metadata`. De gegevens blijven behouden als het dialoogvenster later wordt gebruikt met dezelfde payload.
 
 #### Stap deelnemer van dialoogvenster - Dialoogdefinitie {#dialog-participant-step-dialog-definition}
 
@@ -324,7 +323,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
    >[!NOTE]
    >
-   >Zie voor meer informatie [Een dialoogvenster maken en configureren](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
+   >Zie [Een dialoogvenster maken en configureren](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **Dialoogvensterpad, eigenschap**
 
@@ -342,7 +341,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
 1. **Voorbeeld Dialoogdefinitie**
 
-   Het volgende XML-codefragment vertegenwoordigt een dialoogvenster waarin een `String` in de `watchEmail` knooppunt van de ladingsinhoud. Het titelknooppunt vertegenwoordigt de [TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
+   Het volgende XML-codefragment vertegenwoordigt een dialoogvenster waarin een `String` in de `watchEmail` knooppunt van de ladingsinhoud. Het titelknooppunt vertegenwoordigt de [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -370,7 +369,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
    </cq:dialog>
    ```
 
-   In het geval van de interface met aanraakbediening resulteert dit voorbeeld in een dialoogvenster zoals:
+   In de interface met aanraakbediening resulteert dit voorbeeld in een dialoogvenster zoals:
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -411,10 +410,10 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
    >[!CAUTION]
    >
-   >U ***moet*** niets wijzigen in de `/libs` pad.
+   >Wijzig niets in het dialoogvenster `/libs` pad.
    >
    >
-   >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
    Met dit script wordt de aanvrager van de workflow geselecteerd als de deelnemer:
 
@@ -430,19 +429,19 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
 * **OSGi-service**
 
-   De diensten moeten uitvoeren [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. De interface definieert de volgende leden:
+   De diensten moeten uitvoeren [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. De interface definieert de volgende leden:
 
    * `SERVICE_PROPERTY_LABEL` veld: Gebruik dit veld om de naam van de deelnemerkiezer op te geven. De naam wordt weergegeven in een lijst met beschikbare deelnemerskiezers in het dialoogvenster **Stap dynamische deelnemer** eigenschappen.
 
    * `getParticipant` methode: Hiermee wordt de dynamisch opgeloste Principal-id geretourneerd als een `String` waarde.
    >[!CAUTION]
    >
-   >De `getParticipant` De methode keert dynamisch gevormde Belangrijkste identiteitskaart terug. Dit kan een groep-id of een gebruikers-id zijn.
+   >De `getParticipant` De methode keert dynamisch gevormde Belangrijkste identiteitskaart terug. Deze id kan een groep-id of een gebruikers-id zijn.
    >
    >
-   >Een groep-id kan echter alleen worden gebruikt voor een **Stap deelnemer**, wanneer een lijst met deelnemers wordt geretourneerd. Voor een **Stap dynamische deelnemer** er wordt een lege lijst geretourneerd en deze kan niet worden gebruikt voor delegatie.
+   >Een groep-id kan echter alleen worden gebruikt voor een **Stap deelnemer**, wanneer een lijst met deelnemers wordt geretourneerd. Voor een **Stap dynamische deelnemer**, wordt een lege lijst geretourneerd en kan niet worden gebruikt voor delegatie.
 
-   Om uw implementatie beschikbaar te maken aan **Stap dynamische deelnemer** componenten, voeg uw klasse van Java aan een bundel OSGi toe die de dienst uitvoert, en stel de bundel aan de AEM server op.
+   Om uw implementatie beschikbaar te maken aan **Stap dynamische deelnemer** voegt u uw Java™-klasse toe aan een OSGi-bundel die de service exporteert en implementeert u de bundel op de AEM server.
 
    >[!NOTE]
    >
@@ -450,7 +449,7 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
 #### Stap voor dynamische deelnemer - Voorbeeld van Kiezerservice voor deelnemers {#dynamic-participant-step-example-participant-chooser-service}
 
-De volgende Java-klasse implementeert de `ParticipantStepChooser` interface. De klasse retourneert de naam van de deelnemer die de workflow heeft gestart. De code gebruikt de zelfde logica die het steekproefmanuscript (`initiator-participant-chooser.ecma`) gebruikt.
+De volgende Java™-klasse implementeert de `ParticipantStepChooser` interface. De klasse retourneert de naam van de deelnemer die de workflow heeft gestart. De code gebruikt de zelfde logica die het steekproefmanuscript (`initiator-participant-chooser.ecma`) gebruikt.
 
 De `@Property` annotatie stelt de waarde van de `SERVICE_PROPERTY_LABEL` veld naar `Workflow Initiator Participant Chooser`.
 
@@ -513,7 +512,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 * [Vaak](#step-properties-common-tab)
 * [Gebruiker/groep](#step-properties-user-group-tab)
-* **formulier**
+* **Formulier**
 
    * **Formulierpad**: Het pad naar de [formulier dat u maakt](#form-participant-step-creating-the-form).
 
@@ -527,7 +526,7 @@ Een formulier maken voor gebruik met een **Stap voor deelnemer aan formulier** z
 
    `./jcr:content/path_to_node`
 
-* Het formulier moet een **Knop(en) voor verzenden werkstroom** component. U vormt geen eigenschappen van de component.
+* Het formulier moet een **Knop Workflow verzenden** component. U vormt geen eigenschappen van de component.
 
 De vereisten van uw workflow bepalen waar u veldgegevens moet opslaan. U kunt bijvoorbeeld veldgegevens gebruiken om de eigenschappen van pagina-inhoud te configureren. De volgende waarde van een **Elementnaam** eigenschap slaat veldgegevens op als de waarde van `redirectTarget` eigendom van de `jcr:content` knooppunt:
 
@@ -583,14 +582,14 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
       * De standaard ECMAScripts en OSGi diensten, zie [Ingebouwde processen voor processtappen](/help/sites-developing/workflows-process-ref.md).
       * ECMAScripts maken voor een processtap, zie [Een processtap implementeren met een ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creërend de diensten OSGi voor een stap van het Proces, zie [Een processtap implementeren met een Java-klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+      * Creërend de diensten OSGi voor een stap van het Proces, zie [Een processtap implementeren met een Java™-klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
    * **Handler Advance**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **Argumenten**: Argumenten die aan het proces moeten worden doorgegeven.
 
 
 ## Variabele instellen {#set-variable}
 
-Met de stap Variabele instellen kunt u de waarde van een variabele instellen en de volgorde definiëren waarin de waarden worden ingesteld. De variabele wordt ingesteld in de volgorde waarin de variabeletoewijzingen worden weergegeven in de stap Variabele instellen.
+Met de stap Variabele instellen kunt u de waarde van een variabele instellen en de volgorde definiëren waarin de waarden worden ingesteld. De variabele wordt geplaatst in de orde dat de veranderlijke toewijzingen in de Vastgestelde stap van de Variabele vermeld zijn.
 
 ![Toewijzing toevoegen om een variabele in te stellen](assets/set_variable_addmappingnew.png)
 
@@ -602,7 +601,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * **Toewijzing**
 
    * **Variabele selecteren:** Gebruik deze optie om een variabele te selecteren om de waarde ervan in te stellen.
-   * **Toewijzingsmodus selecteren:** Selecteer een toewijzingsmodus om de waarde voor de variabele in te stellen. Afhankelijk van het gegevenstype van de variabele kunt u de volgende opties gebruiken om de waarde van een variabele in te stellen:
+   * **Toewijzingsmodus selecteren:**  Als u de waarde voor de variabele wilt instellen, selecteert u een toewijzingsmodus. Afhankelijk van het gegevenstype van de variabele kunt u de volgende opties gebruiken om de waarde van een variabele in te stellen:
 
       * **Letterlijk:** Gebruik deze optie als u precies weet welke waarde u moet opgeven.
       * **Uitdrukking:** Gebruik de optie wanneer de te gebruiken waarde wordt berekend op basis van een expressie. De expressie wordt gemaakt in de beschikbare expressie-editor.
@@ -610,5 +609,5 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * **XPATH:** Gebruik de optie om een waarde van een variabele van het type van XML terug te winnen.
       * **Ten opzichte van lading:** Gebruik de optie wanneer de waarde die u wilt opslaan in een variabele, beschikbaar is op een pad dat relatief is ten opzichte van de laadbewerking.
       * **Absoluut pad:** Gebruik de optie wanneer de waarde die u wilt opslaan in de variabele beschikbaar is in een absoluut pad.
-   * **Geef waarde op:** Geef een waarde op die aan de variabele moet worden toegewezen. De waarde die u in dit veld opgeeft, is afhankelijk van de toewijzingsmodus.
+   * **Geef waarde op:** Geef een waarde op om de variabele toe te wijzen. De waarde die u in dit veld opgeeft, is afhankelijk van de toewijzingsmodus.
    * **Toewijzing toevoegen:** Gebruik deze optie om meer toewijzingen toe te voegen om een waarde voor de variabele in te stellen.

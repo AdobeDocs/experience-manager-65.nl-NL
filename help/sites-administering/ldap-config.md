@@ -1,8 +1,6 @@
 ---
 title: LDAP configureren met AEM 6
-seo-title: Configuring LDAP with AEM 6
 description: Leer hoe u LDAP kunt configureren met AEM.
-seo-description: Learn how to configure LDAP with AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,24 +8,24 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
 
 # LDAP configureren met AEM 6 {#configuring-ldap-with-aem}
 
-LDAP (de **L** oprecht **D** irector **A** toegang **P** protocol) wordt gebruikt voor de toegang tot de gecentraliseerde indexdiensten. Dit helpt de inspanning verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
+LDAP (de **L** oprecht **D** irector **A** toegang **P** protocol) wordt gebruikt voor de toegang tot de gecentraliseerde indexdiensten. Het helpt de inspanning te verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
 
-Gebruikersaccounts kunnen worden gesynchroniseerd tussen de LDAP-server en de gegevensopslagruimte, waarbij de gegevens van de LDAP-account worden opgeslagen in de gegevensopslagruimte. Hierdoor kunnen de accounts worden toegewezen aan groepen in de opslagplaats voor het toewijzen van de vereiste machtigingen en bevoegdheden.
+Gebruikersaccounts kunnen worden gesynchroniseerd tussen de LDAP-server en de gegevensopslagruimte, waarbij de gegevens van de LDAP-account worden opgeslagen in de gegevensopslagruimte. Met deze functionaliteit kunnen de accounts worden toegewezen aan groepen in de opslagplaats voor het toewijzen van de vereiste machtigingen en bevoegdheden.
 
 De gegevensopslagruimte gebruikt LDAP-verificatie om dergelijke gebruikers te verifiëren, waarbij referenties worden doorgegeven aan de LDAP-server voor validatie, wat vereist is voordat toegang tot de gegevensopslagruimte wordt toegestaan. Om de prestaties te verbeteren, kunnen gevalideerde gegevens door de opslagplaats in cache worden opgeslagen, met een vervaltijd om ervoor te zorgen dat de validatie na een geschikte periode wordt uitgevoerd.
 
-Wanneer een account wordt verwijderd uit de LDAP-servervalidatie, wordt geen toegang meer verleend tot de gegevensopslagruimte. Details van LDAP-accounts die in de opslagplaats zijn opgeslagen, kunnen ook worden gewist.
+Wanneer een account wordt verwijderd van de LDAP-server, wordt de validatie niet meer verleend en wordt de toegang tot de gegevensopslagruimte geweigerd. Details van LDAP-accounts die in de opslagplaats zijn opgeslagen, kunnen ook worden gewist.
 
-Het gebruik van dergelijke accounts is transparant voor uw gebruikers, ze zien geen verschil tussen gebruikers- en groepsaccounts die met LDAP zijn gemaakt en accounts die alleen in de repository zijn gemaakt.
+Het gebruik van dergelijke accounts is transparant voor uw gebruikers. Dat wil zeggen dat ze geen verschil zien tussen gebruikers- en groepsaccounts die met LDAP zijn gemaakt, en accounts die alleen in de opslagplaats zijn gemaakt.
 
 In AEM 6 wordt bij LDAP-ondersteuning een nieuwe implementatie geleverd waarvoor een ander type configuratie is vereist dan bij eerdere versies.
 
@@ -42,9 +40,9 @@ Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen O
 
 >[!NOTE]
 >
->Controle [Externe aanmeldingsmodule van Oak — Verifiëren met LDAP en Buiten](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) naar diepe duikende externe aanmeldingsmodules.
+>Controle [Externe aanmeldingsmodule van Oak — Verifiëren met LDAP en Buiten](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) naar diepe duikende externe aanmeldingsmodules.
 >
->Als u een voorbeeld wilt lezen van het configureren van Experience Manager met Apache DS, raadpleegt u [Adobe Experience Manager 6.5 configureren voor het gebruik van Apache Directory Service.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
+>Als u een voorbeeld wilt lezen van het configureren van Experience Manager met Apache DS, raadpleegt u [Adobe Experience Manager 6.5 configureren voor het gebruik van Apache Directory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## De LDAP-identiteitsprovider configureren {#configuring-the-ldap-identity-provider}
 
@@ -82,7 +80,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr>
   <tr>
    <td><strong>DN binden</strong></td>
-   <td>DN van de gebruiker voor verificatie. Als dit leeg wordt verlaten, zal anonieme bind worden uitgevoerd.</td>
+   <td>DN van de gebruiker voor verificatie. Als dit veld leeg blijft, wordt een anonieme binding uitgevoerd.</td>
   </tr>
   <tr>
    <td><strong>Wachtwoord binden</strong></td>
@@ -142,14 +140,14 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr>
   <tr>
    <td><strong>Kenmerk groepslid</strong></td>
-   <td>Groepseigenschap die het lid of de leden van een groep bevat.</td>
+   <td>Groepattribuut dat een of meer leden van een groep bevat.</td>
   </tr>
  </tbody>
 </table>
 
 ## Synchronisatie-handler configureren {#configuring-the-synchronization-handler}
 
-De synchronisatiehandler definieert hoe de gebruikers en groepen van de identiteitsprovider worden gesynchroniseerd met de opslagplaats.
+De synchronisatiehandler definieert hoe de gebruikers en groepen van Identiteitsproviders worden gesynchroniseerd met de gegevensopslagruimte.
 
 Het bevindt zich onder de **Apache Jackrabbit Oak Handler voor standaardsynchronisatie** naam in de beheersconsole.
 
@@ -171,11 +169,11 @@ De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
   </tr>
   <tr>
    <td><strong>Toewijzing van gebruikerseigenschappen</strong></td>
-   <td>Lijsttoewijzingsdefinitie van lokale eigenschappen van externe eigenschappen.</td>
+   <td>List-mapping definitie van lokale eigenschappen van externe eigenschappen.</td>
   </tr>
   <tr>
    <td><strong>Voorvoegsel gebruikerspad</strong></td>
-   <td>Het padvoorvoegsel dat wordt gebruikt bij het maken van nieuwe gebruikers.</td>
+   <td>Het padvoorvoegsel dat wordt gebruikt bij het maken van gebruikers.</td>
   </tr>
   <tr>
    <td><strong>Vervaldatum gebruikerslidmaatschap</strong></td>
@@ -195,11 +193,11 @@ De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
   </tr>
   <tr>
    <td><strong>Groepseigenschappen toewijzen</strong></td>
-   <td>Lijsttoewijzingsdefinitie van lokale eigenschappen van externe eigenschappen.</td>
+   <td>List-mapping definitie van lokale eigenschappen van externe eigenschappen.</td>
   </tr>
   <tr>
    <td><strong>Groepspadvoorvoegsel</strong></td>
-   <td>Het padvoorvoegsel dat wordt gebruikt bij het maken van nieuwe groepen.</td>
+   <td>Het padvoorvoegsel dat wordt gebruikt bij het maken van groepen.</td>
   </tr>
  </tbody>
 </table>
@@ -210,22 +208,21 @@ De externe aanmeldingsmodule bevindt zich onder de **Apache Jackrabbit Oak Exter
 
 >[!NOTE]
 >
->De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie de [officiële Oracle Java Security Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie .
+>De Apache Jackrabbit Oak External Login Module implementeert de Java™ Authentication and Authorization Service (JAAS)-specificaties. Zie de [officiële handleiding Java™ Security Reference Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie .
 
 Zijn baan moet bepalen welke Leverancier van de Identiteit en de Handler van de Synchronisatie aan gebruik, effectief binden de twee modules.
 
 De volgende configuratieopties zijn beschikbaar:
 
-| **JAAS Ranking** | Het specificeren van de rangschikking (d.w.z. sorteervolgorde) van deze login moduleingang. De items worden in aflopende volgorde gesorteerd (de configuraties met een hogere waarde worden het eerst gesorteerd). |
+| **JAAS Ranking** | Het specificeren van het rangschikken (namelijk, soortorde) van deze login moduleingang. De items worden in aflopende volgorde gesorteerd (dat wil zeggen dat configuraties met een hogere waarde het eerst komen). |
 |---|---|
-| **JAAS-besturingsmarkering** | Eigenschap die opgeeft of een LoginModule al dan niet VEREIST, VEREIST, VOLDOENDE of OPTIONAL.Raadpleeg de configuratiedocumentatie van JAAS voor meer details rond de betekenis van deze vlaggen. |
-| **JAAS Realm** | De naam van het domein (of de toepassingsnaam) waartegen LoginModule wordt geregistreerd. Als geen domeinnaam wordt verstrekt dan wordt LoginModule geregistreerd met een standaarddomein zoals die in de configuratie van Felix JAAS wordt gevormd. |
+| **JAAS-besturingsmarkering** | Eigenschap die aangeeft of een LoginModule VEREIST, VEREIST, VOLDOENDE of OPTIONEEL is. Zie de configuratiedocumentatie van JAAS voor meer details rond de betekenis van deze vlaggen. |
+| **JAAS Realm** | De naam van het domein (of de toepassingsnaam) waartegen LoginModule wordt geregistreerd. Als geen domeinnaam wordt verstrekt, dan wordt LoginModule geregistreerd met een standaarddomein zoals die in de configuratie van Felix JAAS wordt gevormd. |
 | **Naam identiteitsprovider** | Naam van de identiteitsprovider. |
 | **Naam synchronisatiehandler** | Naam van de synchronisatiehandler. |
 
 >[!NOTE]
->
->Als u op het hebben van meer dan één configuratie LDAP met uw AEM instantie van plan bent, moeten de afzonderlijke Leveranciers van de Identiteit en de Managers van de Synchronisatie voor elke configuratie worden gecreeerd.
+Als u op het hebben van meer dan één configuratie LDAP met uw AEM instantie van plan bent, moeten de afzonderlijke Leveranciers van de Identiteit en de Managers van de Synchronisatie voor elke configuratie worden gecreeerd.
 
 ## LDAP configureren via SSL {#configure-ldap-over-ssl}
 
@@ -233,7 +230,7 @@ AEM 6 kan worden gevormd om met LDAP over SSL voor authentiek te verklaren door 
 
 1. Controleer de **SSL gebruiken** of **TLS gebruiken** selectievakjes bij het configureren van de [LDAP-identiteitsprovider](#configuring-the-ldap-identity-provider).
 1. Configureer de synchronisatiehandler en de module Externe aanmelding naar wens.
-1. Installeer indien nodig de SSL-certificaten in uw Java VM. Dit kan worden gedaan door keytool te gebruiken:
+1. Installeer indien nodig de SSL-certificaten in uw Java™ VM. U kunt deze installatie uitvoeren met behulp van het hulpprogramma:
 
    `keytool -import -alias localCA -file <certificate location> -keystore <keystore location>`
 
@@ -241,11 +238,11 @@ AEM 6 kan worden gevormd om met LDAP over SSL voor authentiek te verklaren door 
 
 ### SSL-certificaten maken {#creating-ssl-certificates}
 
-Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert voor verificatie met LDAP via SSL. Hieronder ziet u een voorbeeld van een werkprocedure voor het genereren van certificaten voor gebruik met AEM.
+Zelfondertekende certificaten kunnen worden gebruikt bij het configureren van AEM voor verificatie met LDAP via SSL. Hieronder ziet u een voorbeeld van een werkprocedure voor het genereren van certificaten voor gebruik met AEM.
 
 1. Zorg ervoor dat u een SSL-bibliotheek hebt geïnstalleerd en werkt. Bij deze procedure wordt OpenSSL als voorbeeld gebruikt.
 
-1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Dit kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Bij UNIX-systemen bevindt de locatie zich gewoonlijk op `/usr/lib/ssl/openssl.cnf`
+1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Deze configuratie kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Op UNIX®-systemen is het `/usr/lib/ssl/openssl.cnf`
 
 1. Ga aan het creëren van de wortelsleutel van CA door het hieronder bevel in een terminal in werking te stellen:
 
@@ -253,11 +250,11 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
    openssl genpkey -algorithm [public key algorithm] -out certificatefile.key -pkeyopt [public key algorithm option]
    ```
 
-1. Maak vervolgens een nieuw zelfondertekend certificaat:
+1. Maak vervolgens een zelfondertekend certificaat:
 
    `openssl req -new -x509 -days [number of days for certification] -key certificatefile.key -out root-ca.crt -config CA/openssl.cnf`
 
-1. Inspect het nieuwe certificaat om te controleren of alles in orde is:
+1. Om ervoor te zorgen dat alles in orde is, inspecteer het onlangs geproduceerde certificaat:
 
    `openssl x509 -noout -text -in root-ca.crt`
 
@@ -268,13 +265,13 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
 
 1. Verplaats de gemaakte .pem-bestanden naar de locaties die in het .cnf-bestand zijn geconfigureerd.
 
-1. Voeg ten slotte het certificaat toe aan het sleutelarchief van Java.
+1. Voeg ten slotte het certificaat toe aan het Java™ sleutelarchief.
 
 ## Foutopsporingsregistratie inschakelen {#enabling-debug-logging}
 
 Foutopsporingslogbestand kan worden ingeschakeld voor zowel de LDAP-identiteitsprovider als de externe aanmeldingsmodule om verbindingsproblemen op te lossen.
 
-Om het registreren voor foutopsporing in te schakelen, moet u:
+Om te toelaten zuivert registreren, moet u het volgende doen:
 
 1. Ga naar de webbeheerconsole.
 1. Zoek naar &quot;Apache Sling Logging Logger Configuration&quot; en maak twee loggers met de volgende opties:
@@ -291,16 +288,16 @@ Om het registreren voor foutopsporing in te schakelen, moet u:
 
 ## Een woord over groepsverbinding {#a-word-on-group-affiliation}
 
-Gebruikers die via LDAP zijn gesynchroniseerd, kunnen deel uitmaken van verschillende groepen in AEM. Deze groepen kunnen externe LDAP-groepen zijn die als onderdeel van het synchronisatieproces aan AEM worden toegevoegd, maar het kunnen ook groepen zijn die afzonderlijk worden toegevoegd en geen deel uitmaken van het oorspronkelijke LDAP-groepsverbindingsschema.
+Gebruikers die via LDAP zijn gesynchroniseerd, kunnen deel uitmaken van verschillende groepen in AEM. Deze groepen kunnen externe LDAP-groepen zijn die als onderdeel van het synchronisatieproces aan AEM worden toegevoegd. Ze kunnen echter ook groepen zijn die afzonderlijk worden toegevoegd en geen deel uitmaken van het oorspronkelijke LDAP-groepslidmaatschapsschema.
 
-In de meeste gevallen, kunnen deze groepen zijn die door een lokale AEM beheerder of door een andere identiteitsleverancier worden toegevoegd.
+Gewoonlijk worden deze groepen toegevoegd door een lokale AEM of door een andere identiteitsprovider.
 
-Als een gebruiker uit een groep op de LDAP-server wordt verwijderd, wordt de wijziging ook aan de AEM kant doorgevoerd bij synchronisatie. Alle andere groepsrelaties van de gebruiker die niet door LDAP zijn toegevoegd, blijven echter wel van kracht.
+Als een gebruiker wordt verwijderd uit een groep op de LDAP-server, wordt de wijziging tijdens de synchronisatie weerspiegeld aan de AEM kant. Alle andere groepsrelaties van de gebruiker die niet door LDAP zijn toegevoegd, blijven echter van kracht.
 
-AEM detecteert en handelt de verwijdering van gebruikers uit externe groepen af door gebruik te maken van de `rep:externalId` eigenschap. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
+AEM detecteert en handelt de verwijdering van gebruikers uit externe groepen af met behulp van de `rep:externalId` eigenschap. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
 
-Raadpleeg de documentatie bij Apache Oak over [Synchronisatie van gebruikers en groepen](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+Zie documentatie over Apache Oak op [Synchronisatie van gebruikers en groepen](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
 
 ## Bekende problemen {#known-issues}
 
-Als u LDAP wilt gebruiken via SSL, moet u ervoor zorgen dat de certificaten die u gebruikt, worden gemaakt zonder de Netscape-opmerkingsoptie. Als deze optie is ingeschakeld, mislukt de verificatie met een SSL Handshake-fout.
+Als u LDAP wilt gebruiken via SSL, moet u ervoor zorgen dat de certificaten die u gebruikt, worden gemaakt zonder de Netscape-commentaaroptie. Als deze optie is ingeschakeld, mislukt de verificatie met een SSL Handshake-fout.

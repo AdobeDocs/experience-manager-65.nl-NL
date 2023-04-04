@@ -1,13 +1,11 @@
 ---
 title: De AEM Gemeenschap
-seo-title: The AEM Community
 description: De AEM Gemeenschap
-seo-description: The AEM Community
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 1%
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -15,22 +13,22 @@ ht-degree: 1%
 
 ## Wat is de AEM Gemeenschap? {#what-is}
 
-De AEM Gemeenschap heeft duizenden leden over de hele wereld. Ze variëren van nieuwe mensen tot Experience Manager, tot ervaren deskundige ontwikkelaars en beheerders.  Wij zijn er om u te helpen van vragen over AEM mogelijkheden tot hulp bij ontwikkelingsvragen. Wij houden regelmatig vergaderingen van deskundigen met interne en externe deskundige gebruikers en helpen steekproeven, artikelen en leerprogramma&#39;s voor u produceren.
+De AEM Gemeenschap heeft duizenden leden over de hele wereld. Ze variëren van nieuwe mensen tot Experience Manager, tot ervaren deskundige ontwikkelaars en beheerders. De gemeenschap is er om u te helpen van vragen over AEM mogelijkheden tot het helpen met ontwikkelingskwesties. AEM Gemeenschap houdt regelmatig vergaderingen van deskundigen met interne en externe deskundige gebruikers. Ook kunt u monsters, artikelen en zelfstudies maken.
 
-[Word vandaag nog lid van de gemeenschap voor toegang tot de beste inhoud, mensen en kennis.](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) Het staat open voor iedereen. Als je interesse hebt in AEM, dan ben je welkom. Kom vandaag verder!
+[Word vandaag nog lid van de gemeenschap voor toegang tot de beste inhoud, mensen en kennis.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) Het staat open voor iedereen. Als je interesse hebt in AEM, dan ben je welkom. Kom vandaag verder!
 
 ## Welke gebeurtenissen zijn er voor AEM EU-lidstaten? {#events}
 
-Leden hebben een hele reeks gebeurtenissen! Elke maand houden wij zittingen waar u de deskundige over specifieke AEM onderwerpen kunt vragen. We zullen u ook op de hoogte stellen van belangrijke gebeurtenissen zoals [Onderdompelen](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of de [Adobe Summit](https://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)of zelfs gebruikersgroepgebeurtenissen in uw gebied.
+Er is een hele reeks gebeurtenissen voor leden! Elke maand, worden de zittingen gehouden waar u de deskundige over specifieke AEM onderwerpen kunt vragen. Meer informatie over belangrijke gebeurtenissen, zoals [Onderdompelen](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) of de [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html)of zelfs gebruikersgroepgebeurtenissen in uw gebied.
 
-Het beste wat je kunt doen is [bezoek vandaag de AEM Gemeenschap en kijk wat er aan de hand is.](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+[Bezoek vandaag de AEM Gemeenschap en kijk wat er gebeurt](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html).
 
 ## Kan ik codevoorbeelden krijgen om me te helpen? {#code-samples}
 
-Het team van de AEM gemeenschap produceert voortdurend &quot;hoe te&quot;gidsen en codesteekproeven om de ontwikkelaars en de gebruikers van de Experience Manager te helpen aan greep met de oplossing krijgen. [Hier is onze volledige lijst met praktische artikelen en codevoorbeelden.](https://helpx.adobe.com/experience-manager/topics/how-to.html)
+Het team van de AEM gemeenschap produceert voortdurend &quot;hoe te&quot;gidsen en codesteekproeven om de ontwikkelaars en de gebruikers van de Experience Manager te helpen aan greep met de oplossing krijgen. [Hier volgt een lijst met praktische artikelen en codevoorbeelden](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
 ## Vraag de sessies van experts van de gemeenschap en GEMS {#gems}
 
-De AEM Gemeenschap organiseert regelmatig evenementen om de leden te helpen kennis te maken over technieken en beste praktijken. U kunt deze live webcasts bijwonen of ze afspelen tijdens uw vrijetijdsbesteding. Wij hebben de gebeurtenissen van de Expert en ook eigenschapoverzichten en wat nieuwe opnamen is.
+De AEM Gemeenschap organiseert regelmatig evenementen om de leden te helpen kennis te maken over technieken en beste praktijken. U kunt deze live webcasts bijwonen of ze afspelen tijdens uw vrijetijdsbesteding. Er zijn Expert-gebeurtenissen en ook overzichten van functies en Nieuwe opnamen.
 
-[De volledige lijst van vroegere Experience Manager Deskundigenzittingen is hier.](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)
+[De volledige lijst van vroegere Experience Manager Deskundigenzittingen is hier.](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/knowledge-base/expert-session/expert-session.html?lang=en)

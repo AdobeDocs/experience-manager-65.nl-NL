@@ -1,8 +1,6 @@
 ---
 title: Paginasjablonen - Bewerkbaar
-seo-title: Page Templates - Editable
-description: Bewerkbare sjablonen zijn geïntroduceerd om, niet-ontwikkelaars toe te staan sjablonen te maken en te bewerken, sjablonen op te geven die een dynamische verbinding met alle pagina's behouden die van hen zijn gemaakt, en de paginacomponent generischer te maken
-seo-description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
+description: Er zijn bewerkbare sjablonen geïntroduceerd waarmee niet-ontwikkelaars sjablonen kunnen maken en bewerken, sjablonen kunnen bieden die een dynamische verbinding met alle pagina's behouden die van hen zijn gemaakt, en de paginacomponent generischer kunnen maken
 uuid: 61791960-fdef-4e49-878a-11fdf1d4f0ab
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
+source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3224'
 ht-degree: 0%
 
 ---
@@ -27,10 +25,10 @@ Bewerkbare sjablonen zijn geïntroduceerd in:
    * Dergelijke gespecialiseerde auteurs worden genoemd **sjabloonauteurs**
    * Sjabloonauteurs moeten lid zijn van de `template-authors` groep.
 
-* Geef sjablonen op die een dynamische verbinding behouden met alle pagina&#39;s die van deze sjablonen zijn gemaakt. Zo zorgt u ervoor dat wijzigingen in de sjabloon ook op de pagina&#39;s zelf worden doorgevoerd.
+* Geef sjablonen op die een dynamische verbinding behouden met alle pagina&#39;s die van deze sjablonen zijn gemaakt. Zo zorgt u ervoor dat alle wijzigingen in de sjabloon worden doorgevoerd in de pagina&#39;s zelf.
 * Maak de paginacomponent generischer zodat kan de kernpaginacomponent zonder aanpassing worden gebruikt.
 
-Met bewerkbare sjablonen worden de onderdelen die een pagina maken, geïsoleerd in componenten. U kunt de noodzakelijke combinaties componenten in een UI vormen, daardoor eliminerend de behoefte aan een nieuwe paginacomponent die voor elke paginariatie moet worden ontwikkeld.
+Met bewerkbare sjablonen worden de onderdelen die een pagina maken, geïsoleerd in componenten. U kunt de noodzakelijke combinaties componenten in een UI vormen zodat u de behoefte aan een nieuwe paginacomponent elimineert die voor elke paginariatie moet worden ontwikkeld.
 
 >[!NOTE]
 >
@@ -50,22 +48,22 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >[!NOTE]
 >
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:
->[Aan de slag met AEM Sites Deel 2 - Een basispagina en sjabloon maken](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>[Aan de slag met AEM Sites Deel 2 - Een basispagina en sjabloon maken](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
 
 ## Een nieuwe sjabloon maken {#creating-a-new-template}
 
 Bewerkbare sjablonen maken wordt voornamelijk uitgevoerd met de opdracht [sjabloonconsole en sjablooneditor](/help/sites-authoring/templates.md) door een sjabloonauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
-Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie [Een AEM maken met behulp van Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html).
+Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie [Een AEM maken met behulp van Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
 Bij het maken van een nieuwe bewerkbare sjabloon:
 
-1. Een [map voor de sjablonen](#template-folders). Dit is niet verplicht, maar aanbevolen beste praktijken.
-1. Selecteer een [sjabloontype](#template-type). Deze wordt gekopieerd om de [sjabloondefinitie](#template-definitions).
+1. Een [map voor de sjablonen](#template-folders). Deze map is niet verplicht, maar wordt aanbevolen.
+1. Selecteer een [sjabloontype](#template-type). Dit type wordt gekopieerd om het [sjabloondefinitie](#template-definitions).
 
    >[!NOTE]
    >
-   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt ook [uw eigen sitespecifieke sjabloontypen maken](/help/sites-developing/page-templates-editable.md#creating-template-types) indien nodig.
+   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt ook [uw eigen sitespecifieke sjabloontypen maken](/help/sites-developing/page-templates-editable.md#creating-template-types), indien nodig.
 
 1. Vorm de structuur, inhoudsbeleid, aanvankelijke inhoud, en lay-out van het nieuwe malplaatje.
 
@@ -74,7 +72,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Met de structuur kunt u componenten en inhoud voor de sjabloon definiëren.
    * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 
-      * Als u een malplaatje in een douanemap buiten de wij.Retail steekproefinhoud creeert, kunt u de Componenten van de Stichting kiezen of gebruiken [Kernonderdelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+      * Als u een sjabloon maakt in een aangepaste map buiten de map `We.Retail` voorbeeldinhoud, kunt u de Componenten van de Stichting kiezen of gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
 
@@ -87,7 +85,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Het inhoudsbeleid definieert de ontwerpeigenschappen van een component.
 
       * Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen.
-   * Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
+   * Dit beleid is van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
    Zie voor meer informatie over de manier waarop een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
@@ -102,7 +100,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Voor technische details over de initiële inhoud raadpleegt u [Oorspronkelijke inhoud](/help/sites-developing/page-templates-editable.md#initial-content) in dit document.
 
-   **Indeling**
+   **Layout**
 
    * U kunt de sjabloonlay-out voor een reeks apparaten definiëren.
    * De responsieve indeling voor sjablonen werkt op dezelfde manier als voor het ontwerpen van pagina&#39;s.
@@ -118,11 +116,11 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Voor details over hoe een malplaatjeauteur een malplaatje toelaat, zie [Paginasjablonen maken](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Voor technische details over het toelaten van een malplaatje, zie [Een sjabloon voor ons inschakelen en toestaan](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
+   Voor technische details over het inschakelen van een sjabloon raadpleegt u [Een sjabloon voor ons inschakelen en toestaan](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
-   * Wanneer u een sjabloon gebruikt om een nieuwe pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
+   * Wanneer u een sjabloon gebruikt om een pagina te maken, is er geen zichtbaar verschil en is er geen indicatie tussen statische en bewerkbare sjablonen.
    * Voor de auteur van de pagina is het proces transparant.
 
    Zie voor meer informatie over hoe een auteur van een pagina sjablonen gebruikt om een pagina te maken [Pagina&#39;s maken en ordenen](/help/sites-authoring/managing-pages.md#templates).
@@ -131,7 +129,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die u wilt internationaliseren in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefunctie van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefunctie van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
 
 >[!NOTE]
 >
@@ -141,7 +139,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!NOTE]
 >
->In de clientbibliotheek van de editor wordt ervan uitgegaan dat de editor `cq.shared` naamruimte in inhoudspagina&#39;s en als deze ontbreekt, de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined` resulteert.
+>In de clientbibliotheek van de editor wordt ervan uitgegaan dat de editor `cq.shared` naamruimte in inhoudspagina&#39;s. Als deze ontbreekt, resulteert dit in de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined`.
 >
 >Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared`, dus alle inhoud die erop is gebaseerd, omvat automatisch `cq.shared`. Als u echter besluit zelf inhoudspagina&#39;s te maken zonder deze op voorbeeldinhoud te baseren, moet u ervoor zorgen dat u de `cq.shared` naamruimte.
 >
@@ -151,18 +149,18 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
 
-* **global**
+* **globaal**
 * Sitespecifiek De sitespecifieke mappen die u maakt om uw sjablonen te organiseren, worden gemaakt met beheerdersrechten voor een account.
 
 >[!NOTE]
 >
 >Ook al kunt u uw mappen nesten, wanneer de gebruiker ze in het dialoogvenster **Sjablonen** worden weergegeven als een platte structuur.
 
-In een standaardinstelling AEM **globaal** bestaat al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een nieuwe map maken (aanbevolen).
+In een standaardinstelling AEM **globaal** bestaat in de sjabloonconsole. Deze map bevat standaardsjablonen en fungeert als fallback als er geen beleid en/of sjabloontypen in de huidige map zijn gevonden. U kunt uw standaardsjablonen toevoegen aan deze map of een map maken (aanbevolen).
 
 >[!NOTE]
 >
->Het wordt aanbevolen een nieuwe map te maken waarin u uw aangepaste sjablonen kunt opslaan en niet de algemene map te gebruiken.
+>Het wordt aanbevolen een map te maken waarin u uw aangepaste sjablonen kunt opslaan en niet de algemene map te gebruiken.
 
 >[!CAUTION]
 >
@@ -178,7 +176,7 @@ Sjabloontypen en beleid worden in alle mappen overgeërfd volgens de volgende pr
 
 Er wordt een lijst met alle toegestane vermeldingen gemaakt. Als een van de configuraties elkaar overlappen ( `path`/ `label`), wordt alleen de instantie die zich het dichtst bij de huidige map bevindt, aan de gebruiker getoond.
 
-Als u een nieuwe map wilt maken, kunt u het volgende doen:
+Ga als volgt te werk om een map te maken:
 
 * Programmaticaal of met CRXDE Lite
 * De configuratiebrowser gebruiken
@@ -208,7 +206,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
    * Waarde: De titel (voor de map) die u wilt weergeven in het dialoogvenster **Sjablonen** console.
 
-1. In *optellen* volgens de standaardmachtigingen en -bevoegdheden voor het schrijven van programmacode (bv. `content-authors`) moet u nu groep(en) toewijzen en de vereiste toegangsrechten (ACL&#39;s) definiëren voor uw auteurs om sjablonen in de nieuwe map te kunnen maken.
+1. In *optellen* aan de standaardauteursrechten en -rechten (bijvoorbeeld `content-authors`), wijst groepen toe en bepaalt de vereiste toegangsrechten (ACLs) voor uw auteurs om malplaatjes in de nieuwe omslag te kunnen tot stand brengen.
 
    De `template-authors` groep is de standaardgroep die moet worden toegewezen. Zie de volgende sectie [ACLs en Groepen](/help/sites-developing/page-templates-editable.md#acls-and-groups) voor meer informatie.
 
@@ -224,21 +222,21 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 1. In de **Configuratie maken** moeten de volgende velden worden geconfigureerd:
 
    * **Titel**: Geef een titel op voor de configuratiemap
-   * **Bewerkbare sjablonen**: Tik om bewerkbare sjablonen toe te staan in deze map
+   * **Bewerkbare sjablonen**: Selecteren om bewerkbare sjablonen in deze map toe te staan
 
 1. Klikken **Maken**
 
 >[!NOTE]
 >
->In Browser van de Configuratie, kunt u de globale omslag uitgeven en activeren **Bewerkbare sjablonen** als u sjablonen in deze map wilt maken, wordt dit echter niet aanbevolen.
+>In Browser van de Configuratie, kunt u de globale omslag uitgeven en activeren **Bewerkbare sjablonen** als u sjablonen in deze map wilt maken. Dit is echter geen aanbevolen beste praktijk.
 >
 >Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
 
 ### ACLs en Groepen {#acls-and-groups}
 
-Zodra uw malplaatjeomslagen (of via CRXDE of met Browser van de Configuratie) worden gecreeerd, moet ACLs voor de aangewezen groepen voor de malplaatjeomslagen worden bepaald om juiste veiligheid te verzekeren.
+Nadat uw malplaatjeomslagen (of als CRXDE of met Browser van de Configuratie) worden gecreeerd, moet ACLs voor de aangewezen groepen voor de malplaatjeomslagen worden bepaald om juiste veiligheid te verzekeren.
 
-De sjabloonmappen voor de [We.Retail-referentieimplementatie](/help/sites-developing/we-retail.md) kan als voorbeeld worden gebruikt.
+De sjabloonmappen voor de [`We.Retail` referentieimplementatie](/help/sites-developing/we-retail.md) kan als voorbeeld worden gebruikt.
 
 #### De groep sjabloonauteurs {#the-template-authors-group}
 
@@ -246,9 +244,9 @@ De `template-authors` de groep is de groep wordt gebruikt om toegang tot malplaa
 
 >[!CAUTION]
 >
->De `template-authors` groep is *alleen* voor gebruikers die nieuwe sjablonen moeten kunnen maken.
+>De `template-authors` groep is *alleen* voor gebruikers die sjablonen moeten kunnen maken.
 >
->Het bewerken van sjablonen is bijzonder krachtig en als dit niet het geval is, kunnen bestaande sjablonen worden verbroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
+>Het bewerken van sjablonen is krachtig en als dit niet correct gebeurt, kunnen bestaande sjablonen worden afgebroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
 
 In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking weergegeven.
 
@@ -268,7 +266,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet malplaatjes lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -284,19 +282,19 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
    <td>Inhoudsauteurs</td>
    <td>repliceren</td>
-   <td>Auteurs van inhoud moeten het beleid van een sjabloon op een pagina activeren wanneer ze een pagina activeren</td>
+   <td>Inhoudsauteurs moeten het beleid van een sjabloon van een pagina activeren wanneer ze een pagina activeren</td>
   </tr>
   <tr>
    <td rowspan="2"><code>/conf/&lt;site&gt;/settings/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>read</td>
-   <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen.</td>
+   <td>lezen</td>
+   <td>Sjabloonauteur maakt een sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen.</td>
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
@@ -306,11 +304,11 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
  </tbody>
 </table>
 
-Deze standaard `template-authors` groep omvat alleen de projectinstellingen, waarbij alle `template-authors` leden hebben toegang tot alle sjablonen en mogen deze ontwerpen . Voor complexere montages, waar de veelvoudige groepen van malplaatjeauteurs nodig zijn om toegang tot malplaatjes te scheiden, moeten meer de auteursgroepen van het douanemalplaatje worden gecreeerd. De machtigingen voor de groepen sjabloonauteurs zijn echter nog steeds hetzelfde.
+Deze standaard `template-authors` groep omvat alleen de projectinstellingen, waarbij alle `template-authors` leden hebben toegang tot alle sjablonen en mogen deze ontwerpen . Voor complexere montages, waar er een behoefte aan veelvoudige groepen van malplaatjeauteurs is om toegang tot malplaatjes te scheiden, moeten meer de auteursgroepen van het douanemalplaatje worden gecreeerd. De machtigingen voor de groepen sjabloonauteurs zijn echter nog steeds hetzelfde.
 
 #### Oudere sjablonen onder /conf/global {#legacy-templates-under-conf-global}
 
-Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude installaties zijn er echter nog sjablonen op deze locatie. ALLEEN in dergelijke verouderde situaties dient het volgende te gebeuren: `/conf/global` de wegen worden uitdrukkelijk gevormd.
+Sjablonen niet opslaan in `/conf/global`. Voor sommige oude installaties zijn er echter nog sjablonen op deze locatie. *Alleen* in dergelijke oudere situaties `/conf/global` de wegen worden uitdrukkelijk gevormd.
 
 <table>
  <tbody>
@@ -328,7 +326,7 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet malplaatjes lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
@@ -344,19 +342,19 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
-   <td>read</td>
+   <td>lezen</td>
    <td>De anonieme Gebruiker van het Web moet beleid lezen terwijl het teruggeven van een pagina</td>
   </tr>
   <tr>
    <td>Inhoudsauteurs</td>
    <td>repliceren</td>
-   <td>Auteurs van inhoud moeten het beleid van een sjabloon op een pagina activeren wanneer ze een pagina activeren</td>
+   <td>Inhoudsauteurs moeten het beleid van een sjabloon van een pagina activeren wanneer ze een pagina activeren</td>
   </tr>
   <tr>
    <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td>
    <td>Sjabloonauteur</td>
-   <td>read</td>
-   <td>Sjabloonauteur maakt een nieuwe sjabloon op basis van een van de vooraf gedefinieerde sjabloontypen</td>
+   <td>lezen</td>
+   <td>Sjabloonauteur maakt een sjabloon op basis van een vooraf gedefinieerd sjabloontype</td>
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
@@ -368,9 +366,9 @@ Sjablonen mogen niet meer worden opgeslagen in `/conf/global`Voor sommige oude i
 
 ## Sjabloontype {#template-type}
 
-Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
+Geef een sjabloontype op wanneer u een sjabloon maakt:
 
-* Sjabloontypen bieden sjablonen voor een sjabloon. Wanneer u een nieuwe sjabloon maakt, worden de structuur en initiële inhoud van het geselecteerde sjabloontype gebruikt om aan de nieuwe sjabloon te maken.
+* Sjabloontypen bieden sjablonen voor een sjabloon. Wanneer u een sjabloon maakt, worden de structuur en initiële inhoud van het geselecteerde sjabloontype gebruikt om de sjabloon te maken.
 
    * Het sjabloontype wordt gekopieerd om de sjabloon te maken.
    * Zodra het exemplaar is voorgekomen, is de enige verbinding tussen het malplaatje en het malplaatjetype een statische verwijzing voor informatiedoeleinden.
@@ -379,11 +377,11 @@ Wanneer u een nieuwe sjabloon maakt, moet u een sjabloontype opgeven:
 
    * Het middeltype van de paginacomponent.
    * Het beleid van de wortelknoop, die de componenten bepaalt die in de malplaatjeredacteur worden toegestaan.
-   * Het wordt aanbevolen de onderbrekingspunten voor het responsieve raster en de instelling van de mobiele emulator op te geven voor het sjabloontype. Dit is optioneel omdat de configuratie ook op de afzonderlijke sjabloon kan worden gedefinieerd (zie [Sjabloontype en mobiele apparaatgroepen](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
+   * Adobe raadt u aan de onderbrekingspunten voor het responsieve raster en de instelling van de mobiele emulator op te geven voor het sjabloontype. Deze stap is optioneel omdat de configuratie ook op de afzonderlijke sjabloon kan worden gedefinieerd (zie [Sjabloontype en mobiele apparaatgroepen](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
 * AEM biedt een kleine selectie van sjabloontypen die buiten het vak vallen, zoals HTML5 Pagina en Aangepaste formulierpagina.
 
-   * Als onderdeel van het [Wij.Detailhandel](/help/sites-developing/we-retail.md) voorbeeldinhoud.
+   * Als onderdeel van het [`We.Retail`](/help/sites-developing/we-retail.md) voorbeeldinhoud.
 
 * Sjabloontypen worden meestal gedefinieerd door ontwikkelaars.
 
@@ -393,7 +391,7 @@ De sjabloontypen voor de out-of-the-box worden opgeslagen onder:
 
 >[!CAUTION]
 >
->U mag niets wijzigen in het dialoogvenster `/libs` pad. Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Wijzig niets in het dialoogvenster `/libs` pad. De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 Uw sitespecifieke sjabloontypen moeten worden opgeslagen op de vergelijkbare locatie:
 
@@ -407,7 +405,7 @@ De definities voor uw aangepaste malplaatjetypes zouden in user-defined omslagen
 
 >[!CAUTION]
 >
->De sjabloontypen moeten de juiste mapstructuur in acht nemen (d.w.z. `/settings/wcm/...`), anders worden de sjabloontypen niet gevonden.
+>De sjabloontypen moeten de juiste mapstructuur in acht nemen (dat wil zeggen: `/settings/wcm/...`), anders worden de sjabloontypen niet gevonden.
 
 ### Sjabloontype en mobiele apparaatgroepen {#template-type-and-mobile-device-groups-br}
 
@@ -432,7 +430,7 @@ Wanneer u een nieuwe bewerkbare sjabloon maakt, wordt de waarde van het sjabloon
 
 Als u een sjabloon hebt gemaakt die als basis voor andere sjablonen kan dienen, kunt u deze sjabloon kopiëren als een sjabloontype.
 
-1. Een sjabloon maken zoals elke bewerkbare sjabloon [zoals hier beschreven](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype zal dienen.
+1. Een sjabloon maken zoals elke bewerkbare sjabloon [zoals hier beschreven](/help/sites-authoring/templates.md#creating-a-new-template-template-author), die als basis voor uw sjabloontype kunnen dienen.
 1. Kopieer de nieuwe sjabloon met CRXDE Lite van de `templates` aan de `template-types` knooppunt onder [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
 1. De sjabloon verwijderen uit het dialoogvenster `templates` knooppunt onder [sjabloonmap](/help/sites-developing/page-templates-editable.md#template-folders).
 1. In de kopie van de sjabloon die zich onder de `template-types` knooppunt, alles verwijderen `cq:template` en `cq:templateType` eigenschappen van alle `jcr:content` knooppunten.
@@ -444,7 +442,7 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open a-plaatsen-voorbeeld-douane-malplaatje-type project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sites-example-custom-template-type/zip/refs/heads/master)
 
 ## Sjabloondefinities {#template-definitions}
 
@@ -506,40 +504,40 @@ Dit knooppunt bevat eigenschappen voor de sjabloon:
 
    * **Type**: `String`
 
-   * **Waarde**: `draft`, `enabled` of `disabled`
+   * **Waarde**: `draft`, `enabled`, of `disabled`
 
 ### Structuur {#structure}
 
 Hiermee definieert u de structuur van de resulterende pagina:
 
-* Is samengevoegd met de oorspronkelijke inhoud ( `/initial`) bij het maken van een nieuwe pagina.
-* Wijzigingen in de structuur worden weerspiegeld in alle pagina&#39;s die met de sjabloon worden gemaakt.
-* De `root` ( `structure/jcr:content/root`) definieert de lijst met componenten die beschikbaar zullen zijn op de resulterende pagina.
+* Is samengevoegd met de oorspronkelijke inhoud ( `/initial`) bij het maken van een pagina.
+* Wijzigingen in de structuur worden weerspiegeld in alle pagina&#39;s die met de sjabloon zijn gemaakt.
+* De `root` ( `structure/jcr:content/root`) definieert de lijst met componenten die beschikbaar zijn op de resulterende pagina.
 
    * Componenten die zijn gedefinieerd in de sjabloonstructuur kunnen niet worden verplaatst op of verwijderd van resulterende pagina&#39;s.
-   * Als een component eenmaal is ontgrendeld, wordt het `editable` eigenschap is ingesteld op `true`.
+   * Nadat een component is ontgrendeld, `editable` eigenschap is ingesteld op `true`.
 
-   * Wanneer een component die al inhoud bevat, is ontgrendeld, wordt deze inhoud naar de `initial` vertakking.
+   * Nadat een component die al inhoud bevat, is ontgrendeld, wordt deze inhoud naar de `initial` vertakking.
 
 * De `cq:responsive` node bevat definities voor de responsieve lay-out.
 
 ### Oorspronkelijke inhoud {#initial-content}
 
-Definieert de eerste inhoud die een nieuwe pagina krijgt wanneer deze wordt gemaakt:
+Definieert de eerste inhoud van een nieuwe pagina bij het maken:
 
 * Bevat een `jcr:content` knooppunt dat naar nieuwe pagina&#39;s wordt gekopieerd.
-* Is samengevoegd met de structuur ( `/structure`) bij het maken van een nieuwe pagina.
-* Bestaande pagina&#39;s worden niet bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
-* De `root` node bevat een lijst met componenten om te definiëren wat er beschikbaar is op de resulterende pagina.
-* Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component vervolgens wordt ontgrendeld (of vice versa), wordt deze inhoud gebruikt als initiële inhoud.
+* Is samengevoegd met de structuur ( `/structure`) bij het maken van een pagina.
+* Bestaande pagina&#39;s worden bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
+* De `root` node bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
+* Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component later wordt ontgrendeld (of omgekeerd), wordt deze inhoud gebruikt als initiële inhoud.
 
-### Indeling {#layout}
+### Layout {#layout}
 
-Wanneer [bewerken van een sjabloon die u kunt definiëren](/help/sites-authoring/templates.md)gebruikt [standaardresponsieve indeling](/help/sites-authoring/responsive-layout.md) dat ook [geconfigureerd](/help/sites-administering/configuring-responsive-layout.md).
+Wanneer [bewerken, kunt u de lay-out definiëren](/help/sites-authoring/templates.md), wordt [standaardresponsieve indeling](/help/sites-authoring/responsive-layout.md) dat ook [geconfigureerd](/help/sites-administering/configuring-responsive-layout.md).
 
 ### Inhoudsbeleid {#content-policies}
 
-Het inhoudsbeleid (of het ontwerpbeleid) definieert de ontwerpeigenschappen van een component, zoals de beschikbaarheid van de component of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
+Het inhoudsbeleid (of het ontwerpbeleid) definieert de ontwerpeigenschappen van een component, zoals de beschikbaarheid van de component of de minimum-/maximumafmetingen. Dit beleid is van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
 
 * De eigenschap `cq:policy`over de `root` node
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -552,7 +550,7 @@ Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafs
 
 >[!NOTE]
 >
->De paden van beleidsdefinities zijn afhankelijk van het pad van de component. `cq:policy` bevat een relatieve verwijzing naar de configuratie zelf.
+>De paden van beleidsdefinities zijn afhankelijk van het pad van de component. De `cq:policy` bevat een relatieve verwijzing naar de configuratie zelf.
 
 >[!NOTE]
 >
@@ -604,7 +602,7 @@ Pagina&#39;s die zijn gemaakt op basis van bewerkbare sjablonen:
 
 * Wordt gemaakt met een substructuur waaruit wordt samengevoegd `structure` en `initial` in de sjabloon
 
-* Verwijzingen hebben naar in de template opgeslagen informatie en naar het sjabloontype. Dit wordt bereikt met een `jcr:content` knooppunt met de eigenschappen:
+* Verwijzingen hebben naar in de template opgeslagen informatie en naar het sjabloontype. U kunt deze functionaliteit bereiken met een `jcr:content` knooppunt met de eigenschappen:
 
    * `cq:template`
 Verstrekt de dynamische verwijzing naar het daadwerkelijke malplaatje; Hiermee kunnen wijzigingen in de sjabloon op de werkelijke pagina&#39;s worden weergegeven.
@@ -631,15 +629,15 @@ Bij het weergeven van een pagina:
 
 * **Sjablonen**:
 
-   * De `cq:template` eigendom van zijn `jcr:content` Het knooppunt wordt opgeroepen om toegang te krijgen tot de sjabloon die overeenkomt met die pagina.
+   * De `cq:template` eigendom van zijn `jcr:content` node wordt referenced to access the template that corresponding to that page.
 
 * **Onderdelen**:
 
-   * De component page voegt de `structure/jcr:content` structuur van de sjabloon met de `jcr:content` boomstructuur van de pagina.
+   * De component Pagina voegt de `structure/jcr:content` structuur van de sjabloon met de `jcr:content` boomstructuur van de pagina.
 
    * Met de paginacomponent kan de auteur alleen de knooppunten van de sjabloonstructuur bewerken die als bewerkbaar zijn gemarkeerd (en eventuele onderliggende knooppunten).
-   * Wanneer u een component op een pagina rendert, wordt het relatieve pad van die component overgenomen van de `jcr:content` knooppunt; hetzelfde pad onder `policies/jcr:content` het knooppunt van de sjabloon wordt doorzocht.
+   * Wanneer u een component op een pagina rendert, wordt het relatieve pad van die component overgenomen van de `jcr:content` knooppunt; hetzelfde pad onder `policies/jcr:content` het knooppunt van de sjabloon wordt vervolgens doorzocht.
 
-      * De `cq:policy` Het bezit van deze knoop wijst aan het daadwerkelijke inhoudsbeleid (d.w.z. het houdt de ontwerpconfiguratie voor die component).
+      * De `cq:policy` Het bezit van deze knoop wijst aan het daadwerkelijke inhoudsbeleid (namelijk houdt het de ontwerpconfiguratie voor die component).
 
-      * Dit staat u toe om veelvoudige malplaatjes te hebben die de zelfde configuraties van het inhoudsbeleid opnieuw gebruiken.
+      * Deze functionaliteit laat u veelvoudige malplaatjes hebben die de zelfde configuraties van het inhoudsbeleid opnieuw gebruiken.

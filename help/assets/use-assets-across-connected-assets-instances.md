@@ -6,9 +6,9 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+source-git-commit: 8d4ff8bcb7df4770bc1ed7e7c2cad27befe3d175
 workflow-type: tm+mt
-source-wordcount: '3740'
+source-wordcount: '3793'
 ht-degree: 16%
 
 ---
@@ -364,5 +364,5 @@ Ga als volgt te werk om algemene fouten op te lossen:
 
    ![fout bij ophalen externe elementverwijzingen](assets/reference-report-failure.png)
 
-
+* Als de cookies niet van de Sites-server naar de Assets-server in Google Chrome worden verzonden, is dit omdat de Assets-verbinding niet via HTTPS wordt uitgevoerd. Als u geen HTTPS gebruikt voor de instantie Assets, wordt de `SameSite=None` koptekst kan niet worden toegevoegd aan de reactie nadat u de toepassing hebt geverifieerd met de middelenserver.
 

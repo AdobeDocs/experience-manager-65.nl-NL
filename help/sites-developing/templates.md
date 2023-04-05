@@ -1,8 +1,6 @@
 ---
 title: Sjablonen
-seo-title: Templates
-description: Sjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt
-seo-description: Templates are used when creating a page which will be used as the base for the new page
+description: Sjablonen worden gebruikt bij het maken van een pagina die als basis voor de nieuwe pagina wordt gebruikt.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -22,9 +20,9 @@ ht-degree: 0%
 
 Sjablonen worden op verschillende punten in AEM gebruikt:
 
-* Wanneer [een pagina maken die u nodig hebt om een sjabloon te selecteren](#templates-pages); dit wordt gebruikt als basis voor de nieuwe pagina . De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de [componenten](/help/sites-authoring/default-components.md) die kunnen worden gebruikt (ontwerpeigenschappen).
+* [Wanneer u een pagina maakt, selecteert u een sjabloon](#templates-pages). Deze sjabloon wordt gebruikt als basis voor de nieuwe pagina. De sjabloon definieert de structuur van de pagina, eventuele eerste inhoud en de [componenten](/help/sites-authoring/default-components.md) die kunnen worden gebruikt (ontwerpeigenschappen).
 
-* Wanneer [een inhoudsfragment maken dat u ook moet selecteren](#templates-content-fragments). Deze sjabloon definieert de structuur, initiële elementen en variaties.
+* [Wanneer u een inhoudsfragment maakt, selecteert u ook een sjabloon](#templates-content-fragments). Deze sjabloon definieert de structuur, initiële elementen en variaties.
 
 De volgende sjablonen worden in detail besproken:
 
@@ -39,7 +37,7 @@ AEM biedt nu twee basistypen sjablonen voor het maken van pagina&#39;s:
 
 >[!NOTE]
 >
->Als u een sjabloon gebruikt naar [een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) er is geen zichtbaar verschil (voor de auteur van de pagina) en er is geen aanduiding van het type sjabloon dat wordt gebruikt.
+>Als u een sjabloon gebruikt naar [een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page)Er is echter geen zichtbaar verschil (voor de auteur van de pagina) en er is geen indicatie van het type sjabloon dat wordt gebruikt.
 
 ### Bewerkbare sjablonen {#editable-templates}
 
@@ -55,23 +53,23 @@ De voordelen van bewerkbare sjablonen:
    * de initiële inhoud
    * inhoudsbeleid
 
-* Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. dit betekent dat wijzigingen in de sjabloonstructuur worden doorgevoerd op alle pagina&#39;s die met die sjabloon worden gemaakt (wijzigingen in de oorspronkelijke inhoud worden niet doorgevoerd).
+* Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Deze verbinding houdt in dat wijzigingen in de sjabloonstructuur worden weerspiegeld op alle pagina&#39;s die met die sjabloon worden gemaakt; wijzigingen in de oorspronkelijke inhoud worden niet doorgevoerd.
 * Gebruikt het inhoudsbeleid (dat van de malplaatjeredacteur wordt uitgegeven) om de ontwerpeigenschappen (gebruikt niet de wijze van het Ontwerp binnen de paginaredacteur) voort te zetten.
 * worden opgeslagen onder `/conf`
 * Zie [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md) voor nadere informatie.
 
 >[!NOTE]
 >
->Er is een AEM communautair artikel beschikbaar waarin wordt uitgelegd hoe u een site voor Experience Managers met bewerkbare sjablonen kunt ontwikkelen, raadpleegt u [Een Adobe Experience Manager 6.5-website maken met Bewerkbare sjablonen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>Zie [Bewerkbare paginasjablonen gebruiken om een Experience Manager-site te ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
 
 ### Statische sjablonen {#static-templates}
 
 Statische sjablonen:
 
 * Moet door uw ontwikkelaars worden bepaald en worden gevormd.
-* Dit was het oorspronkelijke sjabloonsysteem van AEM en is al in vele versies beschikbaar.
+* Het oorspronkelijke sjabloonsysteem van AEM dat voor veel versies beschikbaar was.
 * Een statische sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
-* Wordt gekopieerd om de nieuwe pagina te maken. Hierna bestaat geen dynamische verbinding.
+* Wordt gekopieerd om de pagina te maken. Hierna bestaat geen dynamische verbinding.
 * Gebruiksmiddelen [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) om ontwerpeigenschappen te behouden.
 * worden opgeslagen onder `/apps`
 * Zie [Statische sjablonen](/help/sites-developing/page-templates-static.md) voor nadere informatie.
@@ -86,7 +84,7 @@ Statische sjablonen:
 
 >[!CAUTION]
 >
->AEM biedt meerdere eigenschappen om de sjablonen te beheren die zijn toegestaan onder **Sites**. Het combineren ervan kan echter leiden tot zeer complexe regels die moeilijk te volgen en te beheren zijn.
+>AEM biedt meerdere eigenschappen om de sjablonen te beheren die zijn toegestaan onder **Sites**. Het combineren ervan kan echter leiden tot complexe regels die moeilijk te volgen en te beheren zijn.
 >
 >Daarom adviseert Adobe dat u eenvoudig begint, door te bepalen:
 >
@@ -100,9 +98,9 @@ Statische sjablonen:
 >
 >Een extra voordeel is dat de `cq:allowedTemplates` eigenschappen kunnen door een auteur worden bijgewerkt in het dialoogvenster **Geavanceerd** tabblad van het dialoogvenster **Pagina-eigenschappen**. De andere malplaatjeeigenschappen kunnen niet worden bijgewerkt gebruikend (standaard) UI, zodat zou een ontwikkelaar nodig hebben om de regels en een codeplaatsing voor elke verandering te handhaven.
 
-Wanneer u een nieuwe pagina maakt in de interface voor sitebeheer, is de lijst met beschikbare sjablonen afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven.
+Wanneer u een pagina maakt in de interface voor sitebeheer, is de lijst met beschikbare sjablonen afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven.
 
-De volgende eigenschappen bepalen of een sjabloon `T` mag worden gebruikt voor een nieuwe pagina die als onderliggend item van pagina moet worden geplaatst `P`. Elk van deze eigenschappen is een tekenreeks met meerdere waarden die nul of meer reguliere expressies bevat die worden gebruikt voor overeenkomsten met paden:
+De volgende eigenschappen bepalen of een sjabloon `T` wordt gebruikt voor een nieuwe pagina die als onderliggend item van een pagina moet worden geplaatst `P`. Elk van deze eigenschappen is een tekenreeks met meerdere waarden die nul of meer reguliere expressies bevat die worden gebruikt voor overeenkomsten met paden:
 
 * De `cq:allowedTemplates` eigendom van de `jcr:content` subknooppunt van `P` of een voorouder van `P`.
 
@@ -140,4 +138,4 @@ Als u meer beperkingen wilt toevoegen, bijvoorbeeld met betrekking tot de sjablo
 
 ## Sjablonen - Inhoudsfragmenten {#templates-content-fragments}
 
-Zie [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) voor volledige informatie.
+Zie [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md).

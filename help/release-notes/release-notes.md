@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: ea90bd913b437a564fb50e01af7719510fa22e74
+source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2681'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,11 @@ Voor instructies voor het installeren van het servicepakket op AEM Forms raadple
 
 ### GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren {#install-aem-graphql-index-add-on-package}
 
-Klanten die GraphQL gebruiken, moeten de [Inhoudsfragment AEM met GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). Hierdoor kunnen ze de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
+Klanten die GraphQL gebruiken, moeten de [Inhoudsfragment AEM met GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip).
+
+Hierdoor kunt u de vereiste indexdefinitie toevoegen op basis van de functies die ze daadwerkelijk gebruiken.
+
+Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-query&#39;s.
 
 >[!NOTE]
 >

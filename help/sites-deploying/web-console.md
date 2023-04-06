@@ -1,5 +1,5 @@
 ---
-title: Webconsole
+title: Webconsole in Adobe Experience Manager
 seo-title: Web Console
 description: Leer hoe u de AEM webconsole kunt gebruiken.
 seo-description: Learn how to use the AEM web console.
@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '722'
+ht-degree: 0%
 
 ---
 
@@ -135,7 +135,7 @@ Met dit tabblad kunt u:
 
    Na een update kan de oude en de nieuwe versie bijvoorbeeld nog steeds actief zijn vanwege eerdere verwijzingen. Met deze optie worden alle verwijzingen naar de nieuwe versie gecontroleerd en verplaatst, zodat de oude versie stopt.
 
-* **Begin**
+* **Start**
 
    Hiermee wordt een bundel gestart op basis van het opgegeven beginniveau.
 

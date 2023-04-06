@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
+source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Belangrijkste kenmerken {#forms-features-6516}
 
-* [Forms zonder hoofdadapter](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) stelt u uw ontwikkelaars in staat om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface.
+* [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) stelt u uw ontwikkelaars in staat om interactieve formulieren te maken, te publiceren en te beheren die via API&#39;s kunnen worden benaderd en waarmee interactie mogelijk is, in plaats van via een traditionele grafische gebruikersinterface.
 
 * [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) zijn 24 open-source, BEM-compatibele componenten die op de basis van de Adobe Experience Manager WCM Core Components zijn gebouwd. Deze componenten zijn open-source en bieden ontwikkelaars de mogelijkheid om deze componenten eenvoudig aan te passen en uit te breiden, zodat ze voldoen aan de specifieke behoeften van hun organisatie. Iedereen met bestaande vaardigheden om zich aan te passen [WCM Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) U kunt deze componenten eenvoudig aanpassen en opmaken.
 
@@ -100,7 +100,7 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
    * Microsoft® Excel crasht vaak.
    * Tijdens het openen van een beveiligd document **Documentbeveiligingsbureau** extensie is niet gedetecteerd als geïnstalleerd op een computer. Geeft de gebruiker de opdracht de beveiligingsextensie te downloaden en installeren. (NPR-39768)
 * Nadat een gebruiker aan AEM 6.5.15.0 Service Pack upgradet, werkt de omzetting van PostScript aan PDF niet. (NPR-39765), (NPR-39764)
-* Wanneer de gebruiker het touroperscherm probeert te openen nadat een adaptief formulier is geopend, mislukt dit met een NullPointer-uitzondering:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* Wanneer de gebruiker het touroperscherm probeert te openen nadat een adaptief formulier is geopend, mislukt dit met een NullPointer-uitzondering:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Wanneer de gebruiker in Windows zwarte instellingen met hoog contrast inschakelt, wordt de HTML5 Forms-inhoud onduidelijk wanneer deze als een HTML-voorvertoning in de browser wordt weergegeven. (NPR-39018)
 
 ## Integrations {#integrations-6516}

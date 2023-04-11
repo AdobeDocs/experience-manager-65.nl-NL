@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '4405'
-ht-degree: 8%
+source-wordcount: '4406'
+ht-degree: 7%
 
 ---
 
@@ -145,7 +145,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>In-/uitzoomen</strong></td>
+   <td><strong>Zoomen</strong></td>
    <td>Hiermee kunnen gebruikers inzoomen op het gebied door het te selecteren. Gebruikers kunnen besturingselementen selecteren om in te zoomen, uit te zoomen en de standaardgrootte van de afbeelding te herstellen.</td>
   </tr>
  </tbody>
@@ -308,12 +308,12 @@ Zie Opmerkingen bij de release van viewers in de inhoudsopgave van het dialoogve
   </tr>
   <tr>
    <td>Zoomen_donker<br /> </td>
-   <td>In-/uitzoomen<br /> </td>
+   <td>Zoomen<br /> </td>
    <td><code>html5_basiczoomviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>Zoomen_licht<br /> </td>
-   <td>In-/uitzoomen</td>
+   <td>Zoomen</td>
    <td><code>html5_basiczoomviewer_light.css</code></td>
   </tr>
   <tr>
@@ -338,7 +338,7 @@ In de volgende tabel worden de bewegingen van de mobiele viewer weergegeven die 
   <tr>
    <td><strong>Gesture</strong></td>
    <td><strong>Zoomen met flyout</strong></td>
-   <td><strong>In-/uitzoomen</strong></td>
+   <td><strong>Zoomen</strong></td>
    <td><strong>Draaien</strong></td>
   </tr>
   <tr>
@@ -463,7 +463,7 @@ Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UI
 
    * **[!UICONTROL dash]** - Video&#39;s worden alleen als streepje gestreamd. Op Safari/iOS-apparaten moet u echter **[!UICONTROL hls]** als het type.
    * **[!UICONTROL hls]** - Video&#39;s worden alleen als hls gestreamd.
-   * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden als strepen, hls of progressief gestreamd, zoals in het volgende voorbeeld:
+   * **[!UICONTROL auto]** - Beste praktijken. Het maken van DASH- en HLS-streams is geoptimaliseerd voor opslag. Daarom raadt Adobe u aan altijd **[!UICONTROL auto]** als het afspeeltype. Video&#39;s worden gestreamd als strepen, hls of progressief, zoals in de volgende afspeelvolgorde:
       * Als de browser DASH ondersteunt, wordt eerst DASH-streaming gebruikt.
       * Als de browser geen ondersteuning biedt voor DASH, wordt vervolgens HLS-streaming gebruikt.
       * Als de browser DASH of HLS niet ondersteunt, wordt progressief afspelen gebruikt, tot slot.
@@ -492,7 +492,7 @@ Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UI
 
    >[!IMPORTANT]
    >
-   >Voor oude video&#39;s die een adaptief streamingprofiel voor bitsnelheid gebruiken, wordt de URL verder op de gebruikelijke wijze afgespeeld — met HLS-streaming — totdat u [de video-elementen opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets). Na de verwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
+   >Voor oude video&#39;s die een adaptief streamingprofiel voor bitsnelheid gebruiken, wordt de URL verder op de gebruikelijke wijze afgespeeld — met HLS-streaming — totdat u [de video-elementen opnieuw verwerken](/help/assets/processing-profiles.md#reprocessing-assets). Na de opwerking blijft dezelfde URL werken, maar nu met *beide* DASH- en HLS-streaming ingeschakeld.
 
 ### Speciale overwegingen voor het maken van een voorinstelling voor een interactieve viewer {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -552,7 +552,7 @@ Gebruikend het voorbeeld in de bovenstaande lijst, 30 seconden/3 videosubsegment
 
 Als u voorinstellingen voor de Carousel Banner-viewer maakt, kunt u de stijl van hotspots als volgt wijzigen:
 
-|  | **Beschrijving** | **Acties** |
+|  | **Beschrijving** | **Handelingen** |
 |---|---|---|
 | **[!UICONTROL Hotspot Icon]** | Het pictogram voor hotspot wijzigen | Als u de afbeelding van het hotspot-pictogram wilt wijzigen, gaat u naar **[!UICONTROL Appearance]** tab, in **[!UICONTROL Selected Component]**, selecteert u **[!UICONTROL ImageMapEffect]**. Selecteer onder **[!UICONTROL Icon]** de optie **[!UICONTROL Background]** en ga in het veld **[!UICONTROL Image]** naar de gewenste achtergrondafbeelding. |
 

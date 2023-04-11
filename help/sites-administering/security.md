@@ -1,8 +1,6 @@
 ---
 title: Gebruikersbeheer en beveiliging
-seo-title: User Administration and Security
 description: Meer informatie over gebruikersbeheer en beveiliging in AEM.
-seo-description: Learn about User Administration and Security in AEM.
 uuid: 4512c0bf-71bf-4f64-99f6-f4fa5a61d572
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5398'
 ht-degree: 0%
 
 ---
@@ -29,13 +27,13 @@ Deze sectie behandelt de diverse entiteiten en verwante concepten meer in detail
 
 ### Gebruikers {#users}
 
-Gebruikers zullen zich aanmelden bij AEM met hun account. Elke gebruikersaccount is uniek en bevat de basisaccountgegevens, samen met de toegewezen rechten.
+Gebruikers melden zich aan bij AEM account. Elke gebruikersaccount is uniek en bevat de basisaccountgegevens, samen met de toegewezen rechten.
 
 Gebruikers zijn vaak leden van Groepen, waardoor de toewijzing van deze machtigingen en/of bevoegdheden wordt vereenvoudigd.
 
 ### Groepen {#groups}
 
-Groepen zijn verzamelingen van gebruikers en/of andere groepen; Dit zijn allemaal leden van een fractie.
+Groepen zijn verzamelingen van gebruikers of andere groepen, of beide. Deze verzamelingen worden allemaal leden van een groep genoemd.
 
 Hun voornaamste doel is het onderhoudsproces te vereenvoudigen door het aantal bij te werken entiteiten te verminderen, aangezien een wijziging van een groep op alle leden van de groep wordt toegepast. Groepen weerspiegelen vaak:
 
@@ -48,14 +46,14 @@ Met planning en een schone structuur kan het gebruik van groepen uw structuur we
 
 ### Ingebouwde gebruikers en groepen {#built-in-users-and-groups}
 
-AEM WCM installeert een aantal gebruikers en groepen. Deze kunnen worden gezien wanneer u eerst tot de Console van de Veiligheid na installatie toegang hebt.
+AEM WCM installeert meerdere gebruikers en groepen. Deze inzamelingen worden gezien wanneer u eerst tot de Console van de Veiligheid na installatie toegang hebt.
 
 In de volgende tabellen wordt elk item vermeld, samen met:
 
 * een korte beschrijving
 * eventuele aanbevelingen over noodzakelijke wijzigingen
 
-*Wijzig alle standaardwachtwoorden* (als u de account zelf niet verwijdert in bepaalde omstandigheden).
+*Alle standaardwachtwoorden wijzigen* (als u de account zelf niet verwijdert in bepaalde omstandigheden).
 
 <table>
  <tbody>
@@ -68,73 +66,73 @@ In de volgende tabellen wordt elk item vermeld, samen met:
   <tr>
    <td><p>beheerder</p> <p>Standaardwachtwoord: beheerder</p> </td>
    <td>Gebruiker</td>
-   <td><p>Systeembeheeraccount met volledige toegangsrechten.</p> <p>Dit account wordt gebruikt voor de verbinding tussen AEM WCM en CRX.</p> <p>Als u dit account per ongeluk verwijdert, wordt het opnieuw gemaakt nadat de opslagplaats opnieuw is opgestart (in de standaardconfiguratie).</p> <p>De beheerdersaccount is een vereiste van het AEM platform. Dit betekent dat dit account niet kan worden verwijderd.</p> </td>
-   <td><p>Adobe raadt ten zeerste aan het wachtwoord voor deze gebruikersaccount te wijzigen.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> <p>Opmerking: Dit account mag niet worden verward met de beheerdersaccount van de CQ Servlet Engine.</p> </td>
+   <td><p>Systeembeheeraccount met volledige toegangsrechten.</p> <p>Dit account wordt gebruikt voor de verbinding tussen AEM WCM en CRX.</p> <p>Als u dit account per ongeluk verwijdert, wordt het opnieuw gemaakt nadat de opslagplaats opnieuw is opgestart (in de standaardinstelling).</p> <p>De beheerdersaccount is een vereiste van het AEM platform. Dit betekent dat dit account niet kan worden verwijderd.</p> </td>
+   <td><p>Adobe raadt u aan het standaardwachtwoord voor deze gebruikersaccount te wijzigen.</p> <p>Bij voorkeur bij installatie, maar dat kan achteraf gebeuren.</p> <p>Opmerking: Verwar dit account niet met de beheerdersaccount van de CQ Servlet Engine.</p> </td>
   </tr>
   <tr>
    <td><p>anoniem</p> <p> </p> </td>
    <td>Gebruiker</td>
-   <td><p>Houdt de standaardrechten voor ongeautoriseerde toegang tot een instantie. Per gebrek houdt dit de minimumtoegangsrechten.</p> <p>Als u dit account per ongeluk verwijdert, wordt het bij het opstarten opnieuw gemaakt. Het kan niet permanent worden geschrapt, maar het kan worden onbruikbaar gemaakt.</p> </td>
+   <td><p>Houdt de standaardrechten voor ongeautoriseerde toegang tot een instantie. Per gebrek, bezit deze rekening de minimumtoegangsrechten.</p> <p>Als u dit account per ongeluk verwijdert, wordt het bij het opstarten opnieuw gemaakt. Het kan niet permanent worden geschrapt, maar het kan worden onbruikbaar gemaakt.</p> </td>
    <td>Verwijder of schakel dit account niet uit, omdat dit negatieve gevolgen heeft voor het functioneren van auteur-instanties. Als er beveiligingsvereisten zijn die u verplichten deze te verwijderen, moet u controleren of u de effecten ervan op uw systemen eerst op de juiste wijze test.</td>
   </tr>
   <tr>
-   <td><p>author</p> <p>Standaardwachtwoord: auteur</p> </td>
+   <td><p>auteur</p> <p>Standaardwachtwoord: auteur</p> </td>
    <td>Gebruiker</td>
-   <td><p>Een auteursaccount mag schrijven naar /content. Omvat contribuant en surfer voorrechten.</p> <p>Kan als webmaster worden gebruikt aangezien het toegang tot de volledige /content boom heeft.</p> <p>Dit is geen ingebouwde gebruiker, maar een andere geometrixx demogebruiker</p> </td>
-   <td><p>Adobe raadt aan dat de account volledig wordt verwijderd of dat het wachtwoord is gewijzigd ten opzichte van de standaardwaarde.</p> <p>Bij voorkeur na installatie, maar achteraf.</p> </td>
+   <td><p>Een auteursaccount dat naar /content mag schrijven. Omvat contribuant en surfer voorrechten.</p> <p>Kan als webmaster worden gebruikt aangezien het toegang tot de volledige /content boom heeft.</p> <p>Dit account is geen ingebouwde gebruiker, maar een andere demogebruiker van Geometrixx</p> </td>
+   <td><p>Adobe raadt aan dat de account volledig wordt verwijderd of dat het standaardwachtwoord wordt gewijzigd.</p> <p>Bij voorkeur bij installatie, maar dat kan achteraf gebeuren.</p> </td>
   </tr>
   <tr>
    <td>beheerders</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td><p>Groep die beheerderrechten aan al zijn leden geeft. Alleen beheerders mogen deze groep bewerken.</p> <p>Heeft volledige toegangsrechten.</p> </td>
-   <td>Zelfs als u "ontkent-iedereen"op een knoop plaatst, kunnen de beheerders nog tot de knoop toegang hebben</td>
+   <td>Zelfs als u "ontkent-iedereen"op een knoop plaatst, kunnen de beheerders tot de knoop nog toegang hebben</td>
   </tr>
   <tr>
    <td>content-authors</td>
-   <td>Groeperen</td>
-   <td><p>Groep die verantwoordelijk is voor het bewerken van inhoud. Vereist machtigingen voor lezen, wijzigen, maken en verwijderen.</p> </td>
-   <td>U kunt uw eigen groep(en) van inhoudauteurs maken met projectspecifieke toegangsrechten, op voorwaarde dat u machtigingen voor lezen, wijzigen, maken en verwijderen toevoegt.</td>
+   <td>Groep</td>
+   <td><p>Groep die verantwoordelijk is voor het bewerken van inhoud. Vereist lees, wijzig, creeer, en schrap toestemmingen.</p> </td>
+   <td>U kunt uw eigen tevreden-auteur groepen met project-specifieke toegangsrechten tot stand brengen, op voorwaarde dat u gelezen toevoegt, wijzigt, creeert en, toestemmingen schrapt.</td>
   </tr>
   <tr>
    <td>contribuant</td>
-   <td>Groeperen</td>
-   <td><p>Basisrechten waarmee de gebruiker inhoud kan schrijven (zoals alleen in functionaliteit).</p> <p>Wijst geen voorrechten aan de /content boom toe - deze moeten specifiek voor de individuele groepen of de gebruikers worden toegewezen.</p> </td>
+   <td>Groep</td>
+   <td><p>Basisrechten waarmee de gebruiker inhoud kan schrijven (zoals in, alleen functionaliteit).</p> <p>Wijst geen voorrechten aan de /content boom toe. Moet worden toegewezen aan de afzonderlijke groepen of gebruikers.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td>stuwdammen</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Buiten-de-doos verwijzingsgroep voor een typische gebruiker van AEM Assets. Leden van deze groep hebben de juiste rechten om het uploaden/delen van elementen en verzamelingen mogelijk te maken.</td>
    <td> </td>
   </tr>
   <tr>
    <td>iedereen</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td><p>Elke gebruiker in AEM is een lid van de groep iedereen, hoewel u de groep of de lidmaatschapsrelatie in alle hulpmiddelen misschien niet ziet.</p> <p>Deze groep kan als standaardrechten worden beschouwd aangezien het kan worden gebruikt om toestemmingen voor iedereen, zelfs gebruikers toe te passen die in de toekomst zullen worden gecreeerd.</p> </td>
    <td><p>Wijzig of verwijder deze groep niet.</p> <p>Het wijzigen van deze account heeft extra gevolgen voor de beveiliging.</p> </td>
   </tr>
   <tr>
    <td>tagbeheerders</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Groep die tags mag bewerken.</td>
    <td> </td>
   </tr>
   <tr>
    <td>gebruikersbeheerders</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Hiermee wordt gebruikersbeheer toegestaan, dat wil zeggen het recht om gebruikers en groepen te maken.</td>
    <td> </td>
   </tr>
   <tr>
    <td>workfloweditors</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Groep die workflowmodellen mag maken en wijzigen.</td>
    <td> </td>
   </tr>
   <tr>
    <td>workflowgebruikers</td>
-   <td>Groeperen</td>
-   <td><p>Een gebruiker die deelneemt aan een workflow moet lid zijn van een groepswerkstroom-gebruiker. Dit geeft hem of haar volledige toegang tot: /etc/workflow/varianten zodat hij of zij de instantie van de workflow kan bijwerken.</p> <p>De groep is opgenomen in de standaardinstallatie, maar u moet de gebruikers handmatig aan de groep toevoegen.</p> </td>
+   <td>Groep</td>
+   <td><p>Een gebruiker die deelneemt aan een workflow moet lid zijn van een groepswerkstroom-gebruiker. Biedt de gebruiker volledige toegang tot: /etc/workflow/varianten zodat zij de instantie van de workflow kunnen bijwerken.</p> <p>De groep is opgenomen in de standaardinstallatie, maar u moet de gebruikers handmatig aan de groep toevoegen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -145,20 +143,20 @@ AEM gebruikt ACLs om te bepalen welke acties een gebruiker of een groep en kan n
 
 ### Machtigingen en ACL&#39;s {#permissions-and-acls}
 
-De toestemmingen bepalen wie wordt toegestaan om welke acties op een middel uit te voeren. De machtigingen zijn het resultaat van [toegangsbeheer](#access-control-lists-and-how-they-are-evaluated) evaluaties.
+Machtigingen bepalen wie welke handelingen op een bron kan uitvoeren. De machtigingen zijn het resultaat van [toegangsbeheer](#access-control-lists-and-how-they-are-evaluated) evaluaties.
 
 U kunt de machtigingen wijzigen die aan een bepaalde gebruiker zijn verleend of geweigerd door de selectievakjes voor de individuele AEM in te schakelen of te wissen [handelingen](security.md#actions). Een vinkje geeft aan dat een handeling is toegestaan. Geen vinkje geeft aan dat een handeling wordt geweigerd.
 
-Wanneer het vinkje zich in het raster bevindt, geeft dit ook aan welke machtigingen gebruikers hebben op welke locaties binnen AEM (dat wil zeggen, welke paden).
+Wanneer het vinkje in het raster staat, geeft dit ook aan welke machtigingen gebruikers hebben op welke locaties binnen AEM (dat wil zeggen, welke paden).
 
-### Acties {#actions}
+### Handelingen {#actions}
 
 Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in de hiërarchie kunt u opgeven welke actie de gebruiker mag uitvoeren op die pagina. [Machtigingen](#permissions-and-acls) kunt u toestaan of ontkennen een actie.
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Actie </strong></td>
+   <td><strong>Handeling </strong></td>
    <td><strong>Beschrijving </strong></td>
   </tr>
   <tr>
@@ -170,15 +168,15 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
    <td><p>De gebruiker kan:</p>
     <ul>
      <li>bestaande inhoud op de pagina en op onderliggende pagina's wijzigen.</li>
-     <li>nieuwe alinea's op de pagina of op een onderliggende pagina maken.</li>
-    </ul> <p>Op het niveau JCR, kunnen de gebruikers een middel wijzigen door zijn eigenschappen, het sluiten, het versioning, niet-wijzigingen te wijzigen, en zij hebben volledige schrijftoestemming op knopen die een jcr:content kindknoop, bijvoorbeeld cq:Page, nt:file, cq:Asset bepalen.</p> </td>
+     <li>alinea's maken op de pagina of op een onderliggende pagina.</li>
+    </ul> <p>Op het niveau JCR, kunnen de gebruikers een middel uitgeven door zijn eigenschappen, het sluiten, het versioning, niet-wijzigingen uit te geven, en zij hebben volledige schrijftoestemming op knopen die een jcr:content kindknoop bepalen. Bijvoorbeeld cq:Page, nt:file, cq:Asset.</p> </td>
   </tr>
   <tr>
    <td>Maken</td>
    <td><p>De gebruiker kan:</p>
     <ul>
-     <li>Maak een nieuwe pagina of onderliggende pagina.</li>
-    </ul> <p>Indien <strong>wijzigen</strong> wordt geweigerd de substructuren onder jcr:inhoud specifiek uit te sluiten, omdat het maken van jcr:inhoud en de onderliggende knooppunten ervan als een wijziging van de pagina worden beschouwd. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
+     <li>Maak een pagina of onderliggende pagina.</li>
+    </ul> <p>Indien <strong>wijzigen</strong> wordt geweigerd, worden de substructuren onder jcr:content uitgesloten omdat het maken van jcr:content en de onderliggende knooppunten ervan als een wijziging van de pagina worden beschouwd. Deze regel is alleen van toepassing op knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
   </tr>
   <tr>
    <td>Verwijderen</td>
@@ -186,7 +184,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
     <ul>
      <li>bestaande alinea's van de pagina of een onderliggende pagina verwijderen.</li>
      <li>een pagina of onderliggende pagina verwijderen.</li>
-    </ul> <p>Indien <strong>wijzigen</strong> worden geen substructuren onder jcr:inhoud toegestaan, omdat jcr:inhoud wordt verwijderd en de onderliggende knooppunten worden beschouwd als een wijziging van de pagina. Dit geldt alleen voor knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
+    </ul> <p>Indien <strong>wijzigen</strong> worden onderliggende knooppunten onder jcr:inhoud niet toegestaan, omdat jcr:inhoud wordt verwijderd en de onderliggende knooppunten worden beschouwd als een wijziging van de pagina. Deze regel is alleen van toepassing op knooppunten die een onderliggende node jcr:content definiëren.</p> </td>
   </tr>
   <tr>
    <td>ACL lezen</td>
@@ -211,7 +209,7 @@ Handelingen kunnen worden uitgevoerd op een pagina (bron). Voor elke pagina in d
 
 AEM WCM gebruikt de Lijsten van het Toegangsbeheer (ACLs) om de toestemmingen te organiseren die op de diverse pagina&#39;s worden toegepast.
 
-De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestemmingen en worden gebruikt om de orde te bepalen waarin deze toestemmingen eigenlijk worden toegepast. De lijst wordt gevormd volgens de hiërarchie van de pagina&#39;s in kwestie. Deze lijst wordt vervolgens van beneden naar boven gescand totdat de eerste juiste machtiging voor het toepassen op een pagina is gevonden.
+De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestemmingen en worden gebruikt om de orde te bepalen waarin deze toestemmingen worden toegepast. De lijst wordt gevormd volgens de hiërarchie van de pagina&#39;s in kwestie. Deze lijst wordt vervolgens van beneden naar boven gescand totdat de eerste juiste machtiging voor het toepassen op een pagina is gevonden.
 
 >[!NOTE]
 >
@@ -223,9 +221,9 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >Uw aangepaste toepassing kan toegang instellen voor andere relaties, zoals:
 >
 >* `*/social/relationships/friend/*`
->* or `*/social/relationships/pending-following/*`.
+>* of `*/social/relationships/pending-following/*`.
 >
->Wanneer u ACLs specifiek voor gemeenschappen creeert, kunnen de leden die die gemeenschappen aansluiten bij extra toestemmingen worden verleend. Dit kan bijvoorbeeld het geval zijn wanneer gebruikers zich aansluiten bij de gemeenschappen op: `/content/we-retail/us/en/community`
+>Wanneer u ACLs specifiek voor gemeenschappen creeert, kunnen de leden die die gemeenschappen aansluiten bij extra toestemmingen worden verleend. Bijvoorbeeld wanneer gebruikers lid worden van de gemeenschappen bij: `/content/we-retail/us/en/community`
 
 ### Machtigingsstaten {#permission-states}
 
@@ -233,11 +231,11 @@ De Lijsten van het Toegangsbeheer worden samengesteld uit de individuele toestem
 >
 >Voor gebruikers van CQ 5.3:
 >
->In tegenstelling tot eerdere CQ-versies, **maken** en **delete** niet meer worden toegestaan als een gebruiker alleen pagina&#39;s moet wijzigen. Geef in plaats daarvan de **wijzigen** actie alleen als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
+>In tegenstelling tot eerdere CQ-versies, **maken** en **delete** niet meer worden toegestaan als een gebruiker alleen pagina&#39;s mag wijzigen. Geef in plaats daarvan de **wijzigen** actie alleen als u wilt dat gebruikers componenten op bestaande pagina&#39;s kunnen maken, wijzigen of verwijderen.
 >
 >Om achterwaartse compatibiliteitsredenen wordt bij de tests voor acties geen speciale behandeling toegepast van knooppunten die **jcr:inhoud** rekening.
 
-| **Actie** | **Beschrijving** |
+| **Handeling** | **Beschrijving** |
 |---|---|
 | Toestaan (vinkje) | AEM WCM staat de gebruiker toe om de actie op deze pagina of op om het even welke kindpagina&#39;s uit te voeren. |
 | Weigeren (geen vinkje) | AEM WCM staat de gebruiker niet toe de actie op deze pagina of op enige kindpagina&#39;s uit te voeren. |
@@ -271,7 +269,7 @@ Als u de cursor boven een sterretje of uitroepteken houdt, ziet u knopinfo met m
   </tr>
   <tr>
    <td>Onderste deel</td>
-   <td>Maakt een lijst van de noneffective ingangen die een effect elders in de boom (zoals die door een speciaal kenmerk wordt vermeld aanwezig met overeenkomstige ACE die het werkingsgebied van de ingang beperken) kunnen hebben. Dit is ook een item waarvan het effect is ingetrokken door een andere vermelding die op het opgegeven pad of op een voorouderknooppunt is gedefinieerd.</td>
+   <td>Maakt een lijst van de noneffective ingangen die elders in de boom (zoals die door een speciaal attribuut wordt vermeld aanwezig met overeenkomstige ACE kan beïnvloeden die het werkingsgebied van de ingang beperken). Het is ook een item waarvan het effect wordt ingetrokken door een ander item dat op het opgegeven pad of op een voorouderknooppunt is gedefinieerd.</td>
   </tr>
  </tbody>
 </table>
@@ -286,16 +284,16 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
 * Wijs de machtigingen niet rechtstreeks toe aan gebruikers. Alleen aan groepen toewijzen.
 
-   Dit zal het onderhoud vereenvoudigen, aangezien het aantal groepen veel kleiner is dan het aantal gebruikers, en ook minder volatiel.
+   Dit vereenvoudigt het onderhoud, aangezien het aantal groepen veel kleiner is dan het aantal gebruikers, en ook minder volatiel.
 
 * Als u wilt dat een groep/gebruiker pagina&#39;s alleen kan wijzigen, geeft u deze geen rechten. Hiermee geeft u ze alleen bewerkings- en leesrechten.
 * Maak spaarzaam gebruik van Weigeren. Gebruik voor zover mogelijk alleen toestaan.
 
-   Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Weigeren verklaringen van één groep de Allow verklaring van een andere groep of vice versa annuleren. Het is moeilijk om een overzicht te houden wanneer dit gebeurt en kan gemakkelijk tot onvoorziene resultaten leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
+   Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Deny-instructies van de ene groep de Allow-instructie van een andere groep annuleren of op de andere manier. Het is moeilijk om een overzicht te houden wanneer zoiets gebeurt en gemakkelijk tot onvoorziene resultaten kan leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
 
    Adobe raadt u aan om met Toestaan te werken in plaats van Weigeren raadpleegt u [Aanbevolen werkwijzen](#best-practices).
 
-Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de CRX documentatie om te illustreren hoe AEM WCM [evalueert toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated) en voorbeelden bij het instellen van toegangsbeheerlijsten.
+Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de CRX documentatie die illustreert hoe AEM WCM [evalueert toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)en voorbeelden van het instellen van toegangslijsten.
 
 ### Machtigingen {#permissions}
 
@@ -323,7 +321,7 @@ Details worden in twee delen opgesplitst:
  <tbody>
   <tr>
    <td>Bovenste deel</td>
-   <td><p>Hiermee herhaalt u de informatie die u in het structuurraster ziet. Voor elke actie, toont een pictogram of de actie wordt toegestaan of ontkend:</p>
+   <td><p>Herhaalt de informatie die u in het boomraster ziet. Voor elke actie, toont een pictogram of de actie wordt toegestaan of ontkend:</p>
     <ul>
      <li>geen pictogram = geen gedeclareerd item</li>
      <li>(tik) = gedeclareerde actie (allow)</li>
@@ -343,27 +341,27 @@ Details worden in twee delen opgesplitst:
 
 ### Een andere gebruiker imiteren {#impersonating-another-user}
 
-Met de [Functionaliteit imiteren](/help/sites-authoring/user-properties.md#user-settings) een gebruiker kan namens een andere gebruiker werken.
+Met de [Functionaliteit imiteren](/help/sites-authoring/user-properties.md#user-settings), kan een gebruiker namens een andere gebruiker werken.
 
-Dit betekent dat een gebruikersaccount andere accounts kan opgeven die met hun account kunnen werken. Met andere woorden, als gebruiker-B wordt toegestaan om gebruiker-A na te bootsen, dan kan gebruiker-B acties nemen gebruikend de volledige rekeningsdetails van gebruiker-A.
+Met andere woorden, een gebruikersaccount kan andere accounts opgeven die met hun account kunnen werken. Bijvoorbeeld, als gebruiker-B wordt toegestaan om gebruiker-A te nadoen, dan kan gebruiker-B het gebruiken van de volledige rekeningsdetails van gebruiker-A handelen.
 
-Hierdoor kunnen imitatoraccounts taken uitvoeren alsof ze de account gebruiken die ze nadoen. bijvoorbeeld tijdens afwezigheid of om een buitensporige last op korte termijn te delen.
+Met deze functie kunnen imitatoraccounts alle taken uitvoeren alsof ze het account gebruiken dat ze nadoen. Bijvoorbeeld tijdens afwezigheid of om een buitensporige last op korte termijn te delen.
 
 >[!NOTE]
 >
->Om zich voor gebruikers te kunnen nadoen die geen beheerder zijn, moet de imitator (in het bovenstaande geval gebruiker-B) beschikken over de ReAD-machtigingen in het dialoogvenster `/home/users` pad.
+>Voor het nadoen van werken voor gebruikers die geen beheerder zijn, moet de imitator (in het bovenstaande geval gebruiker-B) beschikken over de ReAD-machtigingen in het dialoogvenster `/home/users` pad.
 >
->Ga voor meer informatie over hoe u dit kunt bereiken naar [Machtigingen in AEM](/help/sites-administering/security.md#permissions-in-aem).
+>Zie [Machtigingen in AEM](/help/sites-administering/security.md#permissions-in-aem).
 
 >[!CAUTION]
 >
->Als een account zich als een ander imiteert, is het erg moeilijk te zien. Een ingang wordt gemaakt in het controlelogboek wanneer de imitatie begint en beëindigt, maar de andere logboekdossiers (zoals het toegangslogboek) houden geen informatie over het feit dat de imitatie op de gebeurtenissen is voorgekomen. Dus als user-B zich gebruiker-A imiteert zullen alle gebeurtenissen kijken alsof zij door gebruiker-A persoonlijk werden uitgevoerd.
+>Als een account zich als een ander account gedraagt, is het moeilijk te zien. Een ingang wordt gemaakt in het controlelogboek wanneer de imitatie begint en beëindigt, maar de andere logboekdossiers (zoals het toegangslogboek) houden geen informatie dat een imitatie op de gebeurtenissen is voorgekomen. Dus, als gebruiker-B zich gebruiker-A imiteert, kijken alle gebeurtenissen alsof gebruiker-A hen uitvoerde.
 
 >[!CAUTION]
 >
 >U kunt een pagina vergrendelen wanneer u een gebruiker imiteert. Een pagina die op deze manier is vergrendeld, kan echter alleen dan worden ontgrendeld als de gebruiker die zich heeft voorgedaan of als een gebruiker met beheerdersrechten.
 >
->De pagina&#39;s kunnen niet worden ontgrendeld door zich als de gebruiker voor te doen die de pagina heeft vergrendeld.
+>Pagina&#39;s kunnen niet worden ontgrendeld door zich voor te doen als de gebruiker die de pagina heeft vergrendeld.
 
 ### Best practices voor {#best-practices}
 
@@ -371,9 +369,9 @@ Hieronder worden de aanbevolen procedures beschreven wanneer u werkt met machtig
 
 | Regel | Reden |
 |--- |--- |
-| *Groepen gebruiken* | Vermijd het toewijzen van toegangsrechten per gebruiker. Hiervoor zijn verschillende redenen:<ul><li>U hebt veel meer gebruikers dan groepen, zodat vereenvoudigen de groepen de structuur.</li><li>Groepen bieden een overzicht van alle accounts.</li> <li>Overerving is eenvoudiger bij groepen.</li><li>Gebruikers komen en gaan. Groepen zijn langdurig.</li></ul> |
+| *Groepen gebruiken* | Vermijd het toewijzen van toegangsrechten per gebruiker. Er zijn verschillende redenen voor dit advies:<ul><li>U hebt veel meer gebruikers dan groepen, zodat vereenvoudigen de groepen de structuur.</li><li>Groepen bieden een overzicht van alle accounts.</li> <li>Overerving is eenvoudiger bij groepen.</li><li>Gebruikers komen en gaan. Groepen zijn langdurig.</li></ul> |
 | *Positief* | Gebruik altijd Instructies toestaan om de rechten van de groep op te geven (waar mogelijk). Vermijd het gebruik van een Deny-instructie. Groepen worden op volgorde geëvalueerd en de volgorde kan per gebruiker anders worden gedefinieerd. Met andere woorden: U hebt wellicht weinig controle over de volgorde waarin de instructies worden geïmplementeerd en geëvalueerd. Als u alleen Instructies toestaan gebruikt, is de volgorde niet van belang. |
-| *Eenvoudig houden* | Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald. Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat uw huidige collega&#39;s en/of toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd. |
+| *Eenvoudig houden* | Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie is het waard. Het toepassen van een duidelijke structuur vereenvoudigt het lopende onderhoud en de administratie, die ervoor zorgen dat zowel uw huidige collega&#39;s als toekomstige opvolgers gemakkelijk kunnen begrijpen wat wordt uitgevoerd. |
 | *Testen* | Gebruik een testinstallatie om te oefenen en ervoor te zorgen dat u de relaties tussen de verschillende gebruikers en groepen begrijpt. |
 | *Standaardgebruikers/groepen* | Werk de standaardgebruikers en -groepen altijd direct na de installatie bij om beveiligingsproblemen te voorkomen. |
 
@@ -411,7 +409,7 @@ De tabbladen bieden toegang tot verschillende configuraties:
 
 | Tab | Beschrijving |
 |--- |--- |
-| Filter, vak | Een mechanisme voor het filteren van de vermelde gebruikers en/of groepen. Zie [Gebruikers en groepen filteren](#filtering-users-and-groups). |
+| Filter, vak | Een mechanisme voor het filteren van de vermelde gebruikers, groepen of beide. Zie [Gebruikers en groepen filteren](#filtering-users-and-groups). |
 | Gebruikers verbergen | Een schakeloptie die alle vermelde gebruikers verbergt, waarbij alleen groepen overblijven. Zie [Gebruikers en groepen verbergen](#hiding-users-and-groups). |
 | Groepen verbergen | Een schakeloptie die alle vermelde groepen verbergt, waarbij alleen gebruikers blijven staan. Zie [Gebruikers en groepen verbergen](#hiding-users-and-groups). |
 | Bewerken | Een menu waarmee u gebruikers of groepen kunt maken en verwijderen en waarmee u deze kunt activeren en deactiveren. Zie [Gebruikers en groepen maken](#creating-users-and-groups) en [Gebruikers en groepen verwijderen](#deleting-users-and-groups). |
@@ -449,7 +447,7 @@ Gebruikers en groepen verbergen:
 
 ### Gebruikers en groepen maken {#creating-users-and-groups}
 
-Een nieuwe gebruiker of groep maken:
+Een gebruiker of groep maken:
 
 1. In de **Beveiliging** consoleboomlijst, klik **Bewerken** en vervolgens **Gebruiker maken** of **Groep maken**.
 
@@ -473,7 +471,7 @@ Een gebruiker of groep verwijderen:
 
 1. In de **Beveiliging** selecteert u de gebruiker of groep die u wilt verwijderen. Als u meerdere items wilt verwijderen, houdt u Shift of Ctrl ingedrukt en klikt u om deze te selecteren.
 1. Klikken **Bewerken,** Selecteer vervolgens Verwijderen. AEM WCM vraagt of u de gebruiker of de groep wilt schrappen.
-1. Klikken **OK** om uw handeling te bevestigen of te annuleren.
+1. Klikken **OK** om te bevestigen of te annuleren.
 
 ### Eigenschappen van gebruikers en groepen wijzigen {#modifying-user-and-group-properties}
 
@@ -497,7 +495,7 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 >
 >U kunt de beveiligingsconsole niet gebruiken om het beheerwachtwoord te wijzigen. Als u het wachtwoord voor de beheerdersaccount wilt wijzigen, gebruikt u de opdracht [Gebruikersconsole](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user) die Granite Operations biedt.
 >
->Als u AEM Forms op JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms op JEE-beheerconsole (/adminui) te gebruiken om het wachtwoord te wijzigen.
+>Als u AEM Forms in JEE gebruikt, moet u onderstaande instructies niet gebruiken om het wachtwoord te wijzigen in plaats van AEM Forms op JEE Admin Console (/adminui) te gebruiken om het wachtwoord te wijzigen.
 
 1. In de **Beveiliging** Dubbelklik op de gebruikersnaam waarvoor u het wachtwoord wilt wijzigen.
 1. Klik op de knop **Eigenschappen** tab (als deze nog niet actief is).
@@ -505,7 +503,7 @@ Gebruik de volgende procedure om het wachtwoord van een gebruiker te wijzigen.
 
    ![cqsecurityUserPassword](assets/cqsecurityuserpassword.png)
 
-1. Voer het nieuwe wachtwoord tweemaal in; omdat ze niet in duidelijke tekst worden weergegeven , is dit ter bevestiging - als ze niet overeenkomen , geeft het systeem een fout weer .
+1. Voer het nieuwe wachtwoord tweemaal in; aangezien deze niet in duidelijke tekst worden weergegeven , is deze actie ter bevestiging - als zij niet overeenkomen , toont het systeem een fout .
 1. Klikken **Set** om het nieuwe wachtwoord voor het account te activeren.
 
 ### Gebruikers of groepen toevoegen aan een groep {#adding-users-or-groups-to-a-group}
@@ -552,7 +550,7 @@ Om leden aan een groep bij in een bepaalde weg toe te voegen:
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Schakel het selectievakje in het dialoogvenster **Lid** kolom voor de leden u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
+1. Schakel het selectievakje in het dialoogvenster **Lid** kolom voor de leden die u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
 1. Klikken **OK** om uw wijzigingen op te slaan.
 
 ### Gebruikers of groepen verwijderen uit groepen {#removing-users-or-groups-from-groups}
@@ -599,14 +597,14 @@ Om leden uit een groep bij een bepaalde weg te verwijderen:
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
-1. Schakel het selectievakje in het dialoogvenster **Lid** kolom voor de leden u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
+1. Schakel het selectievakje in het dialoogvenster **Lid** kolom voor de leden die u toestemmingen aan dat weg wilt hebben. Schakel het selectievakje uit voor het lid waarvoor u machtigingen wilt verwijderen. Er verschijnt een rood driehoekje in de cel die u hebt gewijzigd.
 1. Klikken **OK** om uw wijzigingen op te slaan.
 
 ### Gebruikerssynchronisatie {#user-synchronization}
 
 Wanneer de implementatie een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm)gebruikers en groepen moeten worden gesynchroniseerd tussen alle publicatieknooppunten.
 
-Ga voor meer informatie over gebruikerssynchronisatie en het inschakelen ervan naar [Synchronisatie van gebruikers](/help/sites-administering/sync.md).
+Ga voor meer informatie over gebruikerssynchronisatie en het inschakelen ervan naar [Gebruikerssynchronisatie](/help/sites-administering/sync.md).
 
 ## Machtigingen beheren {#managing-permissions}
 
@@ -661,17 +659,17 @@ Wanneer u machtigingen toevoegt of verwijdert, kunt u naar het knooppunt bladere
 
 Er zijn twee verschillende typen padzoekopdrachten:
 
-* Padzoekopdracht - Als de zoektekenreeks begint met een &quot;/&quot;, zoekt de zoekopdracht naar de directe subknooppunten van het opgegeven pad:
+* Padzoekopdracht - Als de zoektekenreeks begint met een &quot;/&quot;, wordt gezocht naar de directe subknooppunten van het opgegeven pad:
 
 ![cqsecuritypathsearch](assets/cqsecuritypathsearch.png)
 
 In het zoekvak kunt u het volgende doen:
 
-| Actie | Wat het doet |
+| Handeling | Wat het doet |
 |--- |--- |
 | Pijltoets rechts | Hiermee selecteert u een subknooppunt in het zoekresultaat |
 | Pijltoets omlaag | Hiermee wordt de zoekopdracht opnieuw gestart. |
-| Enter (Return)-toets | Hiermee wordt een subknooppunt geselecteerd en in het treegrid geladen |
+| Enter (Return)-toets | Hiermee wordt een subknooppunt geselecteerd en in het structuurraster geladen |
 
 * FullText-zoekopdracht - Als de zoektekenreeks niet begint met een &#39;/&#39;, wordt een zoekopdracht met volledige tekst uitgevoerd op alle knooppunten onder het pad &#39;/content&#39;.
 
@@ -685,7 +683,7 @@ Een zoekopdracht uitvoeren op paden of volledige tekst:
 
 ### Gebruikers imiteren {#impersonating-users}
 
-U kunt één of meerdere gebruikers specificeren die worden toegestaan om zich de huidige gebruiker te verpersoonlijken. Dit betekent dat zij hun accountinstellingen kunnen overschakelen op die van de huidige gebruiker en namens deze gebruiker kunnen handelen.
+U kunt één of meerdere gebruikers specificeren die worden toegestaan om zich de huidige gebruiker te verpersoonlijken. Deze mogelijkheid betekent dat ze hun accountinstellingen kunnen overschakelen op die van de huidige gebruiker en namens deze gebruiker kunnen handelen.
 
 Gebruik deze functie met voorzichtigheid omdat het gebruikers kan toestaan om acties uit te voeren die hun eigen gebruiker niet kan. Wanneer het nadoen van een gebruiker, worden de gebruikers op de hoogte gebracht dat zij niet als zelf het programma worden geopend.
 
@@ -698,7 +696,7 @@ Een bestaande gebruiker als volgt imiteren:
 
 1. Selecteer in de boomstructuurlijst de naam van de persoon die u aan andere gebruikers wilt toewijzen om zich voor te doen. Dubbelklik om te openen.
 1. Klik op de knop **Imitators** tab.
-1. Klik op de gebruiker die u als geselecteerde gebruiker wilt kunnen weergeven. Sleep de gebruiker (die zich zal nadoen) van de lijst aan de ruit van de Imitatie. De naam wordt weergegeven in de lijst.
+1. Klik op de gebruiker die u als geselecteerde gebruiker wilt kunnen weergeven. Sleep de gebruiker (de imitator) van de lijst aan de ruit van de Imitatie. De naam wordt weergegeven in de lijst.
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -719,7 +717,7 @@ U stelt de gebruikers- en groepsvoorkeuren in, waaronder de taal, het vensterbeh
 
 Gebruikers of beheerders de rechten geven om andere gebruikers te verwijderen, activeren/deactiveren:
 
-1. Voeg de gebruiker toe u voorrechten wilt geven om andere gebruikers aan de beheerdergroep te beheren en uw veranderingen te bewaren.
+1. Voeg de gebruiker toe die u rechten wilt geven om andere gebruikers te beheren aan de beheerdersgroep en sla uw wijzigingen op.
 
    ![cqsecurityaddlidToAdmin](assets/cqsecurityaddmembertoadmin.png)
 
@@ -735,11 +733,11 @@ Als u toepassingsspecifieke voorrechten wilt uitvoeren, beschrijft de volgende i
 
 Het voorrecht van de hiërarchie-wijziging wordt behandeld door een combinatie jcr-voorrechten. Het replicatievoorrecht wordt genoemd **crx:repliceren** die samen met andere rechten op de jcr-opslagplaats wordt opgeslagen/geëvalueerd. Het wordt echter niet op jcr-niveau gehandhaafd.
 
-De definitie en registratie van aangepaste rechten maakt officieel deel uit van de [Jackrabbit-API](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/api/security/authorization/PrivilegeManager.html) vanaf versie 2.4 (zie ook [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Verdere toepassingen vallen onder het JCR Access Control Management, zoals gedefinieerd door [JSR 283](https://jcp.org/en/jsr/detail?id=283) (rubriek 16). Daarnaast definieert de Jackrabbit API een aantal extensies.
+De definitie en registratie van aangepaste rechten maakt officieel deel uit van de [Jackrabbit-API](https://jackrabbit.apache.org/oak/docs/security/privilege.html) vanaf versie 2.4 (zie ook [JCR-2887](https://issues.apache.org/jira/browse/JCR-2887)). Verdere toepassingen vallen onder het JCR Access Control Management, zoals gedefinieerd door [JSR 283](https://jcp.org/en/jsr/detail?id=283) (rubriek 16). Daarnaast definieert de Jackrabbit API een aantal extensies.
 
 Het mechanisme voor de registratie van bevoegdheden wordt weergegeven in de gebruikersinterface onder **Configuratie opslagplaats**.
 
-De registratie van nieuwe (aangepaste) rechten wordt zelf beschermd door een ingebouwd voorrecht dat moet worden toegekend op het niveau van de opslagplaats (in JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie). Standaard, **beheerder** en alle leden van beheerders hebben dat voorrecht verleend.
+De registratie van nieuwe (aangepaste) rechten wordt zelf beveiligd door een ingebouwd voorrecht dat moet worden toegekend op het niveau van de opslagplaats. In JCR: Als u &#39;null&#39; doorgeeft als de parameter &#39;absPath&#39; in de ac mgt api, zie jsr 333 voor meer informatie. Standaard, **beheerder** en alle leden van beheerders hebben dat voorrecht verleend.
 
 >[!NOTE]
 >

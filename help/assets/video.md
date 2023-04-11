@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '7998'
+source-wordcount: '8005'
 ht-degree: 2%
 
 ---
@@ -132,7 +132,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -278,7 +278,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
 
 >[!IMPORTANT]
 >
->*Als u DASH wilt gebruiken voor uw video&#39;s, moet DASH eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).)
+>*Als u DASH wilt gebruiken voor uw video&#39;s, moet DASH eerst worden ingeschakeld door Adobe Technical Support op uw account. Zie [DASH inschakelen voor uw account](#enable-dash).
 
 ## Architectuur van Dynamic Media-videooplossing {#architecture-of-dynamic-media-video-solution}
 
@@ -445,7 +445,7 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 
    >[!IMPORTANT]
    >
-   >Het inschakelen van DASH op uw account is momenteel alleen beschikbaar in Noord-Amerika.
+   >Het inschakelen van DASH op uw account is momenteel alleen beschikbaar in Azië-Pacific en Noord-Amerika. binnenkort in Europa-Midden-Oosten-Afrika.
 
 Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
 
@@ -476,7 +476,7 @@ Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
 >
 >Videorapporten zijn alleen beschikbaar wanneer u de modus Dynamic Media - Hybride uitvoert.
 
-Videorapporten geven verschillende statistische gegevens over een bepaalde tijd weer, zodat u kunt controleren of *gepubliceerde *individuele en geaggregeerde video&#39;s naar behoren functioneren. De volgende statistische gegevens worden geaggregeerd voor alle gepubliceerde video&#39;s op uw gehele website:
+Videorapporten geven verschillende statistische gegevens over een bepaalde tijd weer, zodat u kunt controleren of *gepubliceerd* individuele en geaggregeerde video&#39;s worden uitgevoerd zoals u had verwacht. De volgende statistische gegevens worden geaggregeerd voor alle gepubliceerde video&#39;s op uw gehele website:
 
 * Video start
 * Voltooiingssnelheid

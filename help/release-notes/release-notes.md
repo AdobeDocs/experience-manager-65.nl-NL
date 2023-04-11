@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2959'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
 * Wanneer een gebruiker een adaptief formulier als een HTML weergeeft in een Microsoft Edge-browser met IE-compatibiliteitsmodus, wordt het niet correct weergegeven.(CQ-4352216)
 * In het woordenboek moeten nieuwe landinstellingen met speciale tekens worden opgenomen, zoals onderstrepingstekens of afbreekstreepjes, om het vertalen mogelijk te maken. (NPR-40088)
 
-Na de installatie van het AEM 6.5.16.0 Forms add-on servicepakket kregen klanten het volgende probleem. Een bijgewerkte versie van AEM 6.5.16.0 Forms add-on service pack wordt dus vrijgegeven:
+Na de installatie van het AEM 6.5.16.0 Forms add-on servicepakket kregen klanten te maken met de hieronder vermelde problemen. Een bijgewerkte versie van [AEM 6.5.16.0 Forms add-on service pack - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) wordt vrijgegeven. Adobe raadt u aan het bijgewerkte servicepakket te gebruiken:
 * Wanneer een gebruiker een adaptief formulier probeert te maken met een gebruiker in de groep met formuliergebruikers, is de optie voor het selecteren van een sjabloon niet aanwezig en treedt de fout op die vergelijkbaar is met de volgende fout: interne serverfout: java.lang.NullPointerException bij com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) bij java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176) bij java.base/java.util.Iterator.forEachRestaining(Iterator.java:133) (FORMS-7629)
 * De wijzigingen die zijn aangebracht in de regels voor de code-editor worden niet opgeslagen.(FORMS-7532)
 

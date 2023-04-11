@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
 workflow-type: tm+mt
-source-wordcount: '2681'
+source-wordcount: '2943'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Oplossingen {#forms-fixes-6516}
 
-* Wanneer u een stap Taak toewijzen** gebruikt om een melding voor een toegewezen taak te verzenden, worden twee e-mails verzonden in plaats van één naar de toegewezen persoon. (NPR-40078)
+* Wanneer u een **Taak toewijzen** stap om een bericht voor een toegewezen taak te verzenden, worden twee e-mails verzonden in plaats van één naar de toegewezen persoon. (NPR-40078)
 * Wanneer een gebruiker de tabelkoppen verbergt, wordt de eerder ingestelde kolombreedte gedeactiveerd en behouden alle kolommen dezelfde breedte. (NPR-40063)
 * Als u het standaardwachtwoord van de beheerder wijzigt van `admin`, tijdens de uitvoering van de `Prepare Adobe Experience Manager Server For DSC deployment` controleer het AEM Forms JEE de dienstpak het ontbreekt. (NPR-40062), (NPR-39387)
 * De OutputService- en AssemblerService-API&#39;s converteren het PDF-formulier niet naar PDF/A. (NPR-39990)
@@ -102,6 +102,18 @@ Zie [DASH inschakelen voor uw account](/help/assets/video.md#enable-dash).
 * Nadat een gebruiker aan AEM 6.5.15.0 Service Pack upgradet, werkt de omzetting van PostScript aan PDF niet. (NPR-39765), (NPR-39764)
 * Wanneer de gebruiker het touroperscherm probeert te openen nadat een adaptief formulier is geopend, mislukt dit met een NullPointer-uitzondering:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Wanneer de gebruiker in Windows zwarte instellingen met hoog contrast inschakelt, wordt de HTML5 Forms-inhoud onduidelijk wanneer deze als een HTML-voorvertoning in de browser wordt weergegeven. (NPR-39018)
+* Wanneer de gebruiker metagegevens probeert toe te voegen, werkt de knop Opslaan niet meer voor de componenten Concept en Verzending.(CQ-4349601)
+* Na bevordering aan AEM 6.5.15.0 het Pak van de Dienst, de omleiding van relatieve URLs werkt niet meer in de Visuele Redacteur. (NPR-39947)
+* Wanneer een gebruiker aan AEM 6.5.15.0 het Pak van de Dienst bevordert, houdt redirection op werkend met Internet Explorer. (CQ-4351745)
+* Na een gebruikersverbeteringen aan AEM 6.5.15.0 Service Pack, wordt de koptag HTML niet herkend. HTML-code voor de kopcode wordt als tekst weergegeven in het HTML-formulier. (NPR-39915)
+* Wanneer de gebruiker een adaptief formulier probeert te verzenden, treedt een typefout op: `ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]`(NPR-39809)
+* Wanneer een gebruiker een voorvertoning van een document met de **E-mail verzenden** actie verzenden, wordt deze niet correct weergegeven. De mailsjabloon wordt ingesloten in de voorvertoning van het Document of Record. (CQ-4352155)
+* Wanneer een gebruiker een adaptief formulier als een HTML weergeeft in een Microsoft Edge-browser met IE-compatibiliteitsmodus, wordt het niet correct weergegeven.(CQ-4352216)
+* In het woordenboek moeten nieuwe landinstellingen met speciale tekens worden opgenomen, zoals onderstrepingstekens of afbreekstreepjes, om het vertalen mogelijk te maken. (NPR-40088)
+
+Na de installatie van het AEM 6.5.16.0 Forms add-on servicepakket kregen klanten het volgende probleem. Een bijgewerkte versie van AEM 6.5.16.0 Forms add-on service pack wordt dus vrijgegeven:
+* Wanneer een gebruiker een adaptief formulier probeert te maken met een gebruiker in de groep met formuliergebruikers, is de optie voor het selecteren van een sjabloon niet aanwezig en treedt de fout op die vergelijkbaar is met de volgende fout: interne serverfout: java.lang.NullPointerException bij com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) bij java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176) bij java.base/java.util.Iterator.forEachRestaining(Iterator.java:133) (FORMS-7629)
+* De wijzigingen die zijn aangebracht in de regels voor de code-editor worden niet opgeslagen.(FORMS-7532)
 
 ## Integrations {#integrations-6516}
 

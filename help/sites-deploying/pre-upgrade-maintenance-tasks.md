@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 
 ## Zorgen voor voldoende schijfruimte {#ensure-sufficient-disk-space}
 
-Bij het uitvoeren van de upgrade moet, naast de activiteiten voor het bijwerken van de inhoud en code, een migratie naar de opslagplaats worden uitgevoerd. De migratie zal een exemplaar van de bewaarplaats in het nieuwe formaat van de Tar van het Segment tot stand brengen. Hierdoor hebt u voldoende schijfruimte nodig om een tweede, mogelijk grotere versie van uw opslagplaats te behouden.
+Bij het uitvoeren van de upgrade moet, naast de activiteiten voor het bijwerken van de inhoud en code, een migratie naar de opslagplaats worden uitgevoerd. Tijdens de migratie wordt een kopie van de opslagplaats gemaakt in de nieuwe indeling Segment Tar. Hierdoor hebt u voldoende schijfruimte nodig om een tweede, mogelijk grotere versie van uw opslagplaats te behouden.
 
 ## Volledige back-up AEM {#fully-back-up-aem}
 
@@ -50,41 +50,45 @@ Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt ge
 
 ## Back-up maken van wijzigingen in /etc {#backup-changes-etc}
 
-Het verbeteringsproces doet een goede baan om bestaande inhoud en configuraties van onder te handhaven en samen te voegen `/apps` en `/libs` paden in de repository. Voor wijzigingen in de `/etc` De weg, met inbegrip van de configuraties van de Hub van de Context, is het vaak noodzakelijk om deze veranderingen na de verbetering opnieuw toe te passen. Tijdens de upgrade wordt een reservekopie gemaakt van alle wijzigingen die niet kunnen worden samengevoegd `/var`Wij raden u aan handmatig een back-up van deze wijzigingen te maken voordat u de upgrade start.
+Het verbeteringsproces doet een goede baan om bestaande inhoud en configuraties van onder te handhaven en samen te voegen `/apps` en `/libs` paden in de repository. Voor wijzigingen in de `/etc` De weg, met inbegrip van de configuraties van de Hub van de Context, is het vaak noodzakelijk om deze veranderingen na de verbetering opnieuw toe te passen. Terwijl de upgrade een reservekopie maakt van alle wijzigingen die de upgrade niet kan samenvoegen `/var`Adobe raadt u aan om vóór het starten van de upgrade handmatig een back-up van deze wijzigingen te maken.
 
 ## Het bestand quickstart.properties genereren {#generate-quickstart-properties}
 
-Wanneer AEM wordt gestart vanuit het jar-bestand, wordt een `quickstart.properties` bestand wordt gegenereerd onder `crx-quickstart/conf`. Als AEM in het verleden alleen is gestart met het beginscript, is dit bestand niet aanwezig en mislukt de upgrade. Controleer of dit bestand bestaat en start AEM opnieuw vanaf het jar-bestand als dit niet aanwezig is.
+Wanneer AEM wordt gestart vanuit het jar-bestand, wordt een `quickstart.properties` bestand wordt gegenereerd onder `crx-quickstart/conf`. Als AEM in het verleden alleen met het beginscript is gestart, is dit bestand niet aanwezig en mislukt de upgrade. Controleer of dit bestand bestaat en start AEM opnieuw vanaf het jar-bestand als dit niet aanwezig is.
 
 ## Werkstroom- en controlelogbestanden leegmaken configureren {#configure-wf-audit-purging}
 
-De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` de taken vereisen afzonderlijke configuraties OSGi en zullen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. Documentatie voor het configureren van taken voor het zuiveren van werkstromen vindt u op [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kan worden gevonden bij [Onderhoud controlelogbestand in AEM 6](/help/sites-administering/operations-audit-log.md).
+De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` de taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. Documentatie voor het configureren van taken voor het zuiveren van werkstromen vindt u op [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kan worden gevonden bij [Onderhoud controlelogbestand in AEM 6](/help/sites-administering/operations-audit-log.md).
 
 Voor werkstroom- en controlelogboekzuivering op CQ 5.6 en controle logpuring op AEM 6.0, zie [Werkstroom en controleknooppunten wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## De taken vóór de upgrade installeren, configureren en uitvoeren {#install-configure-run-pre-upgrade-tasks}
 
-Vanwege de mate van aanpassing die AEM toestaat, passen omgevingen gewoonlijk niet op dezelfde manier upgrades uit. Dit maakt het tot stand brengen van een gestandaardiseerde procedure voor verbeteringen een moeilijk proces.
+Vanwege de mate van aanpassing die AEM toestaat, passen omgevingen gewoonlijk niet op dezelfde manier upgrades uit. Als zodanig is het moeilijk om een gestandaardiseerde procedure voor upgrades in te voeren.
 
-In vorige versies was het ook moeilijk voor AEM upgrades die waren gestopt of die niet veilig zijn hervat. Dit leidde tot situaties waarin het opnieuw opstarten van de volledige upgradeprocedure noodzakelijk was of waarin defecte upgrades werden uitgevoerd zonder dat dit tot waarschuwingen leidde.
+In vorige versies was het ook moeilijk voor AEM upgrades die zijn gestopt of die niet veilig zijn hervat. Dit leidde tot situaties waarin het opnieuw opstarten van de volledige upgradeprocedure noodzakelijk was of waarin defecte upgrades werden uitgevoerd zonder dat dit tot waarschuwingen leidde.
 
-Om deze problemen aan te pakken, heeft Adobe het upgradeproces verschillende verbeteringen aangebracht, waardoor het robuuster en gebruiksvriendelijker wordt. De onderhoudstaken die vóór de upgrade moesten worden uitgevoerd, worden geoptimaliseerd en geautomatiseerd. Ook zijn er ná de upgrade-rapporten toegevoegd, zodat het proces volledig kan worden onderzocht in de hoop dat eventuele problemen gemakkelijker kunnen worden gevonden.
+Om deze kwesties te behandelen, heeft Adobe verscheidene verhogingen aan het verbeteringsproces toegevoegd, die het veerkrachtiger en gebruikersvriendelijker maken. De onderhoudstaken die vóór de upgrade moesten worden uitgevoerd, worden geoptimaliseerd en geautomatiseerd. Ook zijn er ná de upgrade-rapporten toegevoegd, zodat het proces volledig kan worden onderzocht in de hoop dat eventuele problemen gemakkelijker kunnen worden gevonden.
 
-De preupgrade onderhoudstaken worden momenteel verspreid over verschillende interfaces die gedeeltelijk of volledig manueel worden uitgevoerd. De pre-verbeterings onderhoudsoptimalisering die in AEM 6.3 wordt geïntroduceerd laat een verenigde manier toe om deze taken teweeg te brengen en hun resultaat op bestelling te kunnen inspecteren.
+Onderhoudstaken vóór de upgrade worden momenteel verspreid over verschillende interfaces die gedeeltelijk of volledig handmatig worden uitgevoerd. De pre-verbeterings onderhoudsoptimalisering die in AEM 6.3 wordt geïntroduceerd laat een verenigde manier toe om deze taken teweeg te brengen en hun resultaat op bestelling te kunnen inspecteren.
 
 Alle taken die zijn opgenomen in de optimaliseringsstap vóór de upgrade zijn compatibel met alle versies vanaf AEM 6.0.
 
 ### Procedure voor instellen {#how-to-set-it-up}
 
-In AEM 6.3 en later worden de optimalisatietaken voor het onderhoud van de upgrade opgenomen in de snelstartjar. Als u een upgrade uitvoert vanaf een oudere versie van AEM 6, worden deze beschikbaar gesteld via afzonderlijke pakketten die u kunt downloaden van Package Manager.
+In AEM 6.3 en later worden de optimalisatietaken voor het onderhoud van de upgrade opgenomen in de snelstartjar.
 
-U vindt de pakketten op de volgende locaties:
+<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
-* [Voor upgrade vanaf AEM 6.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq600/product/pre-upgrade-tasks-content-cq60)
+If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
-* [Voor upgrade vanaf AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
+You can find the packages at these locations:
 
-* [Voor upgrade vanaf AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+* [For upgrading from AEM 6.0](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq600/product/pre-upgrade-tasks-content-cq60)
+
+* [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
+
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
 
 ### Hoe wordt het gebruikt {#how-to-use-it}
 
@@ -94,7 +98,7 @@ De `PreUpgradeTasksMBean` De component OSGI komt vooraf gevormd met een lijst va
 
 1. Zoeken naar &quot;**preupgradetoestellen**&quot;, klikt u op de eerste overeenkomende component. De volledige naam van de component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
-1. Wijzig de lijst van onderhoudstaken die zoals hieronder getoond moeten lopen:
+1. Wijzig de lijst met onderhoudstaken die moet worden uitgevoerd zoals hieronder wordt weergegeven:
 
    ![1487758925984](assets/1487758925984.png)
 
@@ -105,7 +109,7 @@ De takenlijst is afhankelijk van de uitvoeringsmodus die wordt gebruikt om de in
   <tr>
    <td><strong>Taak</strong></td>
    <td><strong>Run-modus</strong></td>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
   </tr>
   <tr>
    <td><code>TarIndexMergeTask</code></td>
@@ -147,7 +151,7 @@ De takenlijst is afhankelijk van de uitvoeringsmodus die wordt gebruikt om de in
 
 >[!CAUTION]
 >
->`DataStoreGarbageCollectionTask` Roept een verrichting van de Inzameling van het Afval Datastore met het teken en de slagfase indien gebruikt. Voor plaatsingen die een gedeelde datastore gebruiken zorg ervoor om of het opnieuw te vormen of behoorlijk of de instantie voor te bereiden om schrapping van punten te vermijden die door een andere instantie van verwijzingen worden voorzien. Hiervoor kan het nodig zijn de markeringsfase handmatig op alle instanties uit te voeren voordat deze pre-upgradetaak wordt geactiveerd.
+>De `DataStoreGarbageCollectionTask` roept een verrichting van de Inzameling van de Schrapping Datastore met het teken en de slagfase indien gebruikt. Voor plaatsingen die een gedeelde datastore gebruiken, zorg ervoor of het behoorlijk opnieuw vormt of de instantie voorbereidt om schrapping van punten te vermijden die door een andere instantie van verwijzingen worden voorzien. Voor dit proces kan het nodig zijn de markeringsfase handmatig op alle instanties uit te voeren voordat deze pre-upgradetaak wordt geactiveerd.
 
 ### Standaardconfiguratie van de health checks vóór de upgrade {#default-configuration-of-the-pre-upgrade-health-checks}
 
@@ -155,7 +159,7 @@ De `PreUpgradeTasksMBeanImpl` De component OSGI wordt vooraf geconfigureerd met 
 
 * **systeem** - het label dat wordt gebruikt bij de gezondheidscontroles van het granietonderhoud
 
-* **pre-upgrade** - dit is een aangepaste tag die kan worden toegevoegd aan alle gezondheidscontroles die u kunt instellen voor uitvoering vóór een upgrade
+* **pre-upgrade** - een aangepaste tag die kan worden toegevoegd aan alle gezondheidscontroles die u kunt instellen voor uitvoering vóór een upgrade
 
 De lijst kan worden bewerkt. U kunt de plus gebruiken **(+)** en minus **(-)** naast de tags om meer aangepaste tags toe te voegen of om de standaardtags te verwijderen.
 
@@ -202,7 +206,7 @@ Hieronder volgt een lijst met alle beschikbare methoden die `PreUpgradeTasksMBea
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Controleert of de <code>runAllPreUpgradeTasksmaintenance</code> deze taak wordt momenteel uitgevoerd.</td>
+   <td>Controleert of de <code>runAllPreUpgradeTasksmaintenance</code> taak wordt uitgevoerd.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
@@ -222,12 +226,12 @@ Hieronder volgt een lijst met alle beschikbare methoden die `PreUpgradeTasksMBea
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>ACTIE</td>
-   <td><p>Voert alle controles van de pre-verbeteringsgezondheid uit en bewaart hun status in een dossier genoemd <code>preUpgradeHCStatus.properties</code> die zich in de sling huisweg bevindt. Als de <code>shutDownOnSuccess</code> parameter is ingesteld op <code>true</code>, wordt de AEM afgesloten, maar alleen als alle gezondheidscontroles vóór de upgrade de status OK hebben.</p> <p>Het eigenschappenbestand wordt gebruikt als voorwaarde voor een toekomstige upgrade<br /> en het upgradeproces wordt gestopt als de health check vóór de upgrade wordt uitgevoerd<br /> uitvoering mislukt. Als u het resultaat van de pre-upgrade wilt negeren<br /> controles op de gezondheid en de upgrade toch starten, kunt u het bestand verwijderen.</p> </td>
+   <td><p>Voert alle controles van de pre-verbeteringsgezondheid uit en bewaart hun status in een dossier genoemd <code>preUpgradeHCStatus.properties</code> dat ligt in het sling home path . Als de <code>shutDownOnSuccess</code> parameter is ingesteld op <code>true</code>, wordt de AEM afgesloten, maar alleen als alle gezondheidscontroles vóór de upgrade de status OK hebben.</p> <p>Het eigenschappenbestand wordt gebruikt als voorwaarde voor een toekomstige upgrade<br /> en het upgradeproces wordt gestopt als de health check vóór de upgrade wordt uitgevoerd<br /> uitvoering mislukt. Als u het resultaat van de pre-upgrade wilt negeren<br /> controles op de gezondheid en de upgrade toch starten, kunt u het bestand verwijderen.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>ACTIE</td>
-   <td>Hiermee worden alle geïmporteerde pakketten weergegeven waaraan niet meer wordt voldaan wanneer<br /> upgrade uitvoeren naar de opgegeven AEM. De AEM versie moet<br /> gegeven als parameter.</td>
+   <td>Hiermee geeft u alle geïmporteerde pakketten weer die niet meer tevreden zijn wanneer<br /> upgrade uitvoeren naar de opgegeven AEM. De AEM versie moet<br /> gegeven als parameter.</td>
   </tr>
  </tbody>
 </table>
@@ -254,7 +258,7 @@ In AEM versies die de configuratie gebruiken CRX2 werd geplaatst in `repository.
 
 Daarom moeten bestaande configuraties na de upgrade worden uitgeschakeld en opnieuw worden gemaakt voor Apache Oak.
 
-Om de douanemodules onbruikbaar te maken die in de configuratie JAAS van `repository.xml`, moet u de configuratie wijzigen om van gebrek gebruik te maken `LoginModule`, zoals in dit voorbeeld:
+Om de douanemodules onbruikbaar te maken die in de configuratie JAAS van `repository.xml`, moet u de configuratie uitgeven om het gebrek te gebruiken `LoginModule`, zoals in het volgende voorbeeld:
 
 ```xml
 <Security >
@@ -283,13 +287,13 @@ Om de douanemodules onbruikbaar te maken die in de configuratie JAAS van `reposi
 
 >[!NOTE]
 >
->Verwijder alleen pakketten uit de map crx-quickstart/install NA het afsluiten van de AEM. Dit zal één van de laatste stappen zijn alvorens de op zijn plaats verbeteringsprocedure te beginnen.
+>Verwijder alleen pakketten uit de map crx-quickstart/install NA het afsluiten van de AEM. Deze stap is één van het laatste alvorens de op zijn plaats verbeteringsprocedure te beginnen.
 
-Verwijder om het even welke de dienstpakken, eigenschapspakken of hotfixes die door `crx-quickstart/install` op het lokale bestandssysteem. Hierdoor wordt voorkomen dat oude hotfixes en servicepacks onbedoeld boven op de nieuwe AEM worden geïnstalleerd nadat de update is voltooid.
+Verwijder om het even welke de dienstpakken, eigenschapspakken, of hotfixes die door werden opgesteld `crx-quickstart/install` op het lokale bestandssysteem. Hierdoor wordt voorkomen dat oude hotfixes en servicepacks onbedoeld boven op de nieuwe AEM worden geïnstalleerd nadat de update is voltooid.
 
 ## Koude stand-byinstanties stoppen {#stop-tarmk-coldstandby-instance}
 
-Als u TarMK koude stand-by gebruikt, moet u eventuele koude stand-byinstanties stoppen. Deze zullen een efficiënte manier waarborgen om online terug te komen in het geval van kwesties in de verbetering. Nadat de verbetering met succes heeft voltooid, zullen de koude standby instanties van de promotieprimaire instanties moeten worden herbouwd.
+Als u TarMK koude stand-by gebruikt, moet u eventuele koude stand-byinstanties stoppen. Dit garandeert een efficiënte manier om online terug te keren als er problemen zijn in de upgrade. Nadat de verbetering met succes heeft voltooid, moeten de koude standby instanties van de promotieprimaire instanties worden herbouwd.
 
 ## Aangepaste geplande taken uitschakelen {#disable-custom-scheduled-jobs}
 
@@ -301,7 +305,7 @@ Schakel geplande OSGi-taken uit die in uw toepassingscode zijn opgenomen.
 >
 >Deze stap is alleen nodig voor TarMK-installaties
 
-Als u TarMK gebruikt, moet u de optie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie over het uitvoeren van Offline de Opruiming van de Revisie, zie [Offline revisie opschonen uitvoeren](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+Als u TarMK gebruikt, moet u de functie Offline revisie opschonen uitvoeren voordat u de upgrade uitvoert. Hierdoor worden de migratie naar de opslagplaats en de daarop volgende upgradetaken veel sneller uitgevoerd en wordt ervoor gezorgd dat Online revisie-opschoning met succes kan worden uitgevoerd nadat de upgrade is voltooid. Voor informatie over het uitvoeren van Offline de Opruiming van de Revisie, zie [Offline revisie opschonen uitvoeren](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## Verzameling van afval uit datastore uitvoeren {#execute-datastore-garbage-collection}
 
@@ -313,14 +317,14 @@ Na het runnen van revisie schoonmaakbeurt op CRX3 instanties, zou u de Inzamelin
 
 ## Upgrade het databaseschema indien nodig {#upgrade-the-database-schema-if-needed}
 
-Gewoonlijk zorgt de onderliggende Apache Oak-stapel AEM voor persistentie ervoor dat het databaseschema indien nodig wordt bijgewerkt.
+Gewoonlijk zorgt de onderliggende Apache Oak-stapel die AEM gebruikt voor persistentie ervoor dat het databaseschema wordt bijgewerkt, indien nodig.
 
-Er kunnen zich echter gevallen voordoen wanneer het schema niet automatisch kan worden bijgewerkt. Dit zijn meestal hoge beveiligingsomgevingen waarin de database wordt uitgevoerd onder een gebruiker met zeer beperkte bevoegdheden. Als dit gebeurt, blijft AEM het oude schema gebruiken.
+Er kunnen zich echter gevallen voordoen wanneer het schema niet automatisch kan worden bijgewerkt. Dergelijke gevallen zijn meestal omgevingen met hoge beveiliging waarin de database wordt uitgevoerd onder een gebruiker met beperkte rechten. Als een dergelijke situatie voorkomt, blijft AEM het oude schema gebruiken.
 
-Om dit te verhinderen, moet u het schema bevorderen door de hieronder procedure te volgen:
+Om zulk een scenario te verhinderen te gebeuren, bevorder het schema door het volgende te doen:
 
 1. Sluit de AEM instantie die moet worden bijgewerkt.
-1. Voer een upgrade uit op het databaseschema. Raadpleeg de documentatie bij het databasetype om te zien welke gereedschappen u nodig hebt om dit te bereiken.
+1. Voer een upgrade uit op het databaseschema. Raadpleeg de documentatie bij het databasetype om te zien welke gereedschappen nodig zijn om het resultaat te bereiken.
 
    Voor meer informatie over hoe het Eak schemaverbeteringen behandelt, zie [deze pagina op de Apache-website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
@@ -337,20 +341,20 @@ Om dit te verhinderen, moet u het schema bevorderen door de hieronder procedure 
 >
 
 
-Er zijn uitzonderlijke gevallen wanneer de de dienstgebruikers in een oudere AEM versies zouden kunnen uiteindelijk verkeerd geëtiketteerd worden als regelmatige gebruikers.
+In uitzonderlijke gevallen kunnen servicegebruikers in een oudere versie van AEM niet correct zijn gecodeerd als normale gebruikers.
 
-Als dit gebeurt, zal de verbetering met een bericht als dit ontbreken:
+Als een dergelijke situatie gebeurt, ontbreekt de verbetering met een bericht als het volgende:
 
 ```
 ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
 java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
 ```
 
-Om dit probleem te verhelpen, moet u het volgende doen:
+U kunt dit probleem omzeilen door het volgende te doen:
 
 1. De instantie loskoppelen van het productieverkeer
-1. Maak een back-up van de gebruiker(s) die het probleem heeft veroorzaakt. U kunt dit doen via Package Manager. Zie voor meer informatie [Hoe te met Pakketten werken.](/help/sites-administering/package-manager.md)
-1. Verwijder de gebruiker(s) die het probleem heeft veroorzaakt. Hieronder volgt een lijst met gebruikers die mogelijk onder deze categorie vallen:
+1. Maak een back-up van een of meer gebruikers die het probleem veroorzaken. U kunt deze taak uitvoeren via Package Manager. Zie voor meer informatie [Hoe te met Pakketten werken.](/help/sites-administering/package-manager.md)
+1. Verwijder een of meer gebruikers die het probleem veroorzaken. Hieronder volgt een lijst met gebruikers die mogelijk onder deze categorie vallen:
 
    1. `dynamic-media-replication`
    1. `communities-ugc-writer`
@@ -361,4 +365,4 @@ Om dit probleem te verhelpen, moet u het volgende doen:
 
 ## Logbestanden roteren {#rotate-log-files}
 
-We raden u aan uw huidige logbestanden te archiveren voordat u begint met de upgrade. Hierdoor kunt u logbestanden tijdens en na de upgrade gemakkelijker controleren en scannen om eventuele problemen op te sporen en op te lossen.
+Adobe raadt u aan uw huidige logbestanden te archiveren voordat u begint met de upgrade. Zo kunt u logbestanden tijdens en na de upgrade gemakkelijker controleren en scannen om eventuele problemen op te sporen en op te lossen.

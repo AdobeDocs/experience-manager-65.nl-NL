@@ -4,9 +4,9 @@ description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -214,7 +214,7 @@ Voor aanbevelingen voor de implementatie van AEM op Azure of AWS, buiten Adobe M
 
 ### Dispatcher-Platforms (webservers) {#dispatcher-platforms-web-servers}
 
-De Dispatcher is de component voor het in cache plaatsen en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
+De Dispatcher is de component voor caching en taakverdeling. [Download de nieuwste versie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 vereist Dispatcher versie 4.3.2 of hoger.
 
 De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3.2:
 

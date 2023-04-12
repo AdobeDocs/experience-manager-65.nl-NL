@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard b
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-De eiken implementeert de [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0) - specificatie. De belangrijkste ontwerpdoelstellingen zijn:
+De eiken implementeert de [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) - specificatie. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -78,13 +78,13 @@ Er zijn verschillende basisprincipes voor het ontwerp waarop het is gebouwd:
 
 * **Onveranderbare segmenten**
 
-De inhoud wordt opgeslagen in segmenten die maximaal 256 kB groot kunnen zijn. Ze zijn onveranderlijk, waardoor het gemakkelijk wordt om vaak geopende segmenten in de cache op te slaan en systeemfouten die de opslagplaats kunnen beschadigen, worden verminderd.
+De inhoud wordt opgeslagen in segmenten die maximaal 256 kB kunnen zijn. Ze zijn onveranderlijk, waardoor het gemakkelijk wordt om vaak geopende segmenten in de cache op te slaan en systeemfouten die de opslagplaats kunnen beschadigen, worden verminderd.
 
 Elk segment wordt geïdentificeerd door een uniek herkenningsteken (UUID) en bevat een ononderbroken ondergroep van de inhoudsboom. Daarnaast kunnen segmenten verwijzen naar andere inhoud. Elk segment houdt een lijst van UUIDs van andere referenced segmenten bij.
 
 * **Locatie**
 
-Verwante verslagen zoals een knoop en zijn directe kinderen worden gewoonlijk opgeslagen in het zelfde segment. Hierdoor wordt het zoeken in de gegevensopslagruimte zeer snel en worden de meeste cachevervallen vermeden voor typische clients die per sessie toegang hebben tot meer dan één gerelateerd knooppunt.
+Verwante verslagen zoals een knoop en zijn directe kinderen worden opgeslagen in het zelfde segment. Hierdoor verloopt het zoeken in de repository snel en worden de meeste cachefouten vermeden voor typische clients die per sessie toegang hebben tot meer dan één gerelateerd knooppunt.
 
 * **Compacte**
 
@@ -92,7 +92,7 @@ De opmaak van records is geoptimaliseerd om de IO-kosten te verlagen en om zovee
 
 ### Mongo-opslag {#mongo-storage}
 
-De MongoDB-opslag maakt gebruik van MongoDB voor het delen en clusteren van bestanden. De repository tree wordt bewaard in één MongoDB database waar elk knooppunt een afzonderlijk document is.
+De opslag MongoDB gebruikt MongoDB voor het delen en groeperen. De repository tree wordt bewaard in één MongoDB database waar elk knooppunt een afzonderlijk document is.
 
 Het heeft verschillende bijzonderheden:
 
@@ -122,10 +122,10 @@ Een standaard AEM clusterinstallatie met MongoDB-opslag:
 
 ## Wat is er anders dan Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Omdat eiken is ontworpen om achterwaarts compatibel te zijn met de JCR 1.0-standaard, zijn er vrijwel geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een op een eik gebaseerde AEM-installatie:
+Omdat eiken achterwaarts compatibel is met de JCR 1.0-standaard, zijn er bijna geen wijzigingen op gebruikersniveau. Er zijn echter enkele merkbare verschillen waarmee u rekening moet houden bij het instellen van een op eik gebaseerde AEM-installatie:
 
 * Met Eak worden niet automatisch indexen gemaakt. Daarom moeten aangepaste indexen worden gemaakt wanneer dat nodig is.
-* In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. Dit komt door het MVCC-model waarop eiken is gebaseerd.
+* In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. De reden hiervoor is het MVCC-model waarop eiken is gebaseerd.
 * SNS (Same Name siblings) wordt niet ondersteund in Oak.
 
 ## Overige documentatie over Platforms {#other-platform-related-documentation}

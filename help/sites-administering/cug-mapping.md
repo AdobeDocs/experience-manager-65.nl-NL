@@ -12,16 +12,16 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Toewijzing van aangepaste gebruikersgroepen in AEM 6.5 {#custom-user-group-mapping-in-aem}
 
-## Vergelijking van JCR-inhoud met betrekking tot CUG {#comparison-of-jcr-content-related-to-cug}
+## Vergelijking van JCR-inhoud met betrekking tot CUG (Custom User Group) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
@@ -33,12 +33,12 @@ ht-degree: 0%
   <tr>
    <td><p>Eigenschap: cq:cugEnabled</p> <p>Type knooppunt declareren: N.v.t., resterend vermogen</p> </td>
    <td><p>Autorisatie:</p> <p>Knooppunt: rep:cugPolicy of node type rep:CugPolicy</p> <p>Type knooppunt declareren: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Verificatie:</p> <p>Mengtype: graniet:AuthenticationRequired</p> </td>
-   <td><p>Om leestoegang te beperken wordt een specifiek beleid van de GIDS toegepast op de doelknoop.</p> <p>OPMERKING: Het beleid kan slechts bij de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">deze pagina</a> voor meer informatie.</p> <p>Om authentificatievereiste op een knoop af te dwingen is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>OPMERKING: Alleen gerespecteerd onder de geconfigureerde ondersteunde paden.</p> </td>
+   <td><p>Om leestoegang te beperken, wordt een specifiek beleid van de CUG toegepast op de doelknoop.</p> <p>OPMERKING: Het beleid kan slechts bij de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">deze pagina</a> voor meer informatie.</p> <p>Om authentificatievereiste op een knoop af te dwingen, is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>OPMERKING: Alleen gerespecteerd onder de geconfigureerde ondersteunde paden.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugPrincipals</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
    <td><p>Eigenschap: rep:principalNames</p> <p>Type knooppunt declareren: rep:CugPolicy</p> </td>
-   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van regelmatige JCR API-aanroepen. gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
+   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van regelmatige JCR API-aanroepen. gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugLoginPage</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
@@ -91,14 +91,14 @@ Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG
    > 
    >Als de `CugExcludeImpl` is niet geconfigureerd, `CugConfiguration` wordt de standaardwaarde hersteld.
 
-   Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten in het geval van speciale behoeften.
+   Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten als er speciale behoeften zijn.
 
 * De component OSGi die LoginPathProvider uitvoert die een passende login weg aan LoginSelectorHandler blootstelt. Het heeft een verplichte verwijzing naar een RequirementHandler die wordt gebruikt om de waarnemer te registreren die aan veranderde auteisen luistert die in de inhoud door middel van graniet worden opgeslagen:AuthenticationRequired mixin type.
 * De component OSGi die RequirementHandler uitvoert die SlingAuthenticator over veranderingen in authrequirements op de hoogte brengt.
 
-   Aangezien het configuratiebeleid voor deze component VEREIST is zal het slechts worden geactiveerd als een reeks gesteunde wegen wordt gespecificeerd.
+   Aangezien het configuratiebeleid voor deze component VEREIST is, wordt het slechts geactiveerd als een reeks gesteunde wegen wordt gespecificeerd.
 
-   Als u de service inschakelt, wordt de RequirementService gestart.
+   Het toelaten van de dienst lanceert RequirementService.
 
 <!-- nested tables not supported - text above is the table>
 <table>

@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1097'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Verbinding maken met AEM via WebDAV met KDE:
 
-AEM biedt WebDAV-ondersteuning waarmee u inhoud in opslagruimten kunt weergeven en bewerken. Verbinding maken via WebDAV geeft u rechtstreeks via uw bureaublad toegang tot de opslagplaats voor inhoud. Tekst- en PDF-bestanden die via de WebDAV-verbinding aan de gegevensopslagruimte worden toegevoegd, worden automatisch geïndexeerd met volledige tekst en kunnen worden doorzocht met de standaardzoekinterfaces en via de standaard Java API&#39;s.
+AEM biedt WebDAV-ondersteuning waarmee u inhoud in opslagruimten kunt weergeven en bewerken. Verbinding maken via WebDAV geeft u rechtstreeks via uw bureaublad toegang tot de opslagplaats voor inhoud. Tekst- en PDF-bestanden die via de WebDAV-verbinding aan de opslagplaats worden toegevoegd, worden automatisch geïndexeerd met volledige tekst en kunnen worden gezocht met de standaardzoekinterfaces en met de standaard Java™ API&#39;s.
 
 ## Algemeen {#general}
 
@@ -45,7 +45,7 @@ Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, AEM ma
 
 >[!NOTE]
 >
->Controleer voordat u WebDAV instelt de [Technische vereisten](/help/sites-deploying/technical-requirements.md#webdav-clients).
+>Controleer voordat u WebDAV instelt het [Technische vereisten](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## WebDAV-URL&#39;s {#webdav-urls}
 
@@ -98,9 +98,9 @@ http://localhost:4502/crx/repository/staging
 
 ## Verbinding maken via WebDAV {#connecting-via-webdav}
 
-[Zoals hierboven vermeld](/help/sites-administering/webdav-access.md#general)Als u verbinding wilt maken met de opslagplaats via het WebDAV-protocol, wijst u uw WebDAV-client naar de opslagplaats. Afhankelijk van uw besturingssysteem verschillen de stappen waarmee u verbinding maakt met uw client echter en is er mogelijk een configuratie van het vereiste besturingssysteem vereist.
+[Zoals hierboven vermeld](/help/sites-administering/webdav-access.md#general)Als u verbinding wilt maken met de opslagplaats via het WebDAV-protocol, wijst u uw WebDAV-client naar de opslagplaats. Afhankelijk van uw besturingssysteem verschillen de stappen voor het aansluiten van uw client echter en is er mogelijk een vereiste configuratie van het besturingssysteem vereist.
 
-Er zijn instructies voor het aansluiten van de volgende besturingssystemen:
+Instructies voor het aansluiten van de volgende besturingssystemen zijn beschikbaar:
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
@@ -108,7 +108,7 @@ Er zijn instructies voor het aansluiten van de volgende besturingssystemen:
 
 ### Windows {#windows}
 
-Als u een Microsoft Windows 7-systeem (en hoger) wilt verbinden met een AEM-instantie die niet met SSL is beveiligd, moet de optie voor het instellen van een basisverificatie via een onbeveiligd netwerk expliciet zijn ingeschakeld in Windows. Dit vereist een verandering in de Registratie van Vensters van WebClient.
+Als u een Microsoft® Windows 7 (en hoger)-systeem wilt verbinden met een AEM die niet met SSL is beveiligd, moet de optie voor het instellen van een basisverificatie via een onbeveiligd netwerk expliciet zijn ingeschakeld in Windows. Deze capaciteit vereist een verandering in de Registratie van Vensters van WebClient.
 
 Zodra de registratie wordt bijgewerkt, dan kan de AEM instantie als aandrijving worden in kaart gebracht.
 
@@ -126,11 +126,7 @@ Om de registratie bij te werken om basisauthentificatie over een onbeveiligd net
 
    Voeg de subsleutel toe als deze niet aanwezig is.
 
-1. De registerwijziging wordt pas van kracht als u het systeem opnieuw hebt gestart.
-
-Zie [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) voor meer informatie over deze registerwijziging.
-
-Zie [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) voor informatie over het verbeteren van de verantwoordelijkheid van de Cliënt WebDav onder Vensters.
+1. Start het systeem opnieuw zodat de registerwijziging van kracht wordt.
 
 >[!NOTE]
 >
@@ -138,11 +134,11 @@ Zie [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) voo
 
 #### Windows 8-configuratie {#windows-configuration}
 
-Voor Windows 8 moet u ook de registervermelding wijzigen [zoals beschreven in Windows 7 en hoger](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Nochtans, alvorens u dit kunt doen, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
+Voor Windows 8 wijzigt u de registervermelding [zoals beschreven in Windows 7 en hoger](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Nochtans, alvorens u deze taak doet, moet de Ervaring van de Desktop worden toegelaten om de registratieingang te zien.
 
 Als u de desktopervaring wilt inschakelen, opent u **Serverbeheer** vervolgens **Functies** vervolgens **Functies toevoegen** vervolgens **Desktopbeleving**.
 
-Na het rebooten van de registratieingang die voor Vensters 7 en groter wordt beschreven is beschikbaar. Wijzig het zoals die voor Vensters 7 en groter wordt beschreven.
+Na rebooting, is de registratieingang die voor Vensters 7 en groter wordt beschreven beschikbaar. Wijzig het zoals die voor Vensters 7 en groter wordt beschreven.
 
 #### Verbinding maken in Windows {#connecting-in-windows}
 
@@ -152,7 +148,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. Klikken **Kaartnetwerkstation** om de wizard te starten.
+1. Als u de wizard wilt starten, klikt u op **Kaartnetwerkstation**.
 1. Voer de toewijzingsdetails in:
 
    * **Drive**: Kies een beschikbare letter
@@ -165,13 +161,13 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
    >[!NOTE]
    >
-   >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
 
 1. Gebruikersnaam invoeren `admin` en wachtwoord `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
-1. De wizard wordt gesloten en de nieuw toegewezen schijf wordt geopend in Windows Verkenner of het venster Bestandverkenner.
+1. De wizard wordt gesloten en het nieuwe toegewezen station wordt geopend in Windows Verkenner of het venster Bestandverkenner.
 
    ![chlimage_1-115](assets/chlimage_1-115a.png)
 
@@ -179,7 +175,7 @@ Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als el
 
 ### macOS {#macos}
 
-Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op macOS. U hoeft alleen maar verbinding te maken met de WebDAV-server.
+Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op macOS. U kunt verbinding maken met de WebDAV-server.
 
 1. Naar een willekeurige locatie navigeren **Finder** venster en klik op **Ga** en **Verbinding maken met server**, of druk op **Command+k**.
 1. In de **Verbinding maken met server** Voer de AEM in:
@@ -187,15 +183,15 @@ Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op ma
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
 
 1. Wanneer u wordt gevraagd om verificatie, voert u gebruikersnaam in `admin` en wachtwoord `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
 macOS heeft nu verbinding met AEM via WebDAV en u kunt deze gebruiken als elke andere map op uw Mac.
 
-### Linux {#linux}
+### Linux® {#linux}
 
-Voor verbinding via WebDAV op Linux is geen configuratie vereist, maar het omvat wel een paar stappen om de verbinding tot stand te brengen die afhankelijk is van uw desktopomgeving.
+Het verbinden via WebDAV op Linux® vereist geen configuratie, maar impliceert een paar stappen om de verbinding te maken die afhankelijk van uw Desktopmilieu varieert.
 
 #### GNOME {#gnome}
 
@@ -208,7 +204,7 @@ Verbinding maken met AEM via WebDAV met GNOME:
 
    >[!NOTE]
    >
-   >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.
 
 1. In **Map**, enter `/dav`
 1. Voer de gebruikersnaam in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
@@ -228,7 +224,7 @@ GNOME heeft nu AEM gemonteerd als een volume en u kunt het gebruiken als elk and
 
    >[!NOTE]
    >
-   >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres
+   >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres
 
 1. In **Map**, enter `dav`
 

@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
+source-wordcount: '2986'
 ht-degree: 0%
 
 ---
@@ -389,6 +389,14 @@ Hoewel niet geadviseerd, kunt u het onbruikbaar maken voor het geval u de oude i
 >[!NOTE]
 >
 >Raadpleeg de documentatie bij de eiken over [Authorizable Node Name Generation](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Verhardend pakket anonieme machtigingen**
+
+AEM slaat standaard systeemmetagegevens op, zoals `jcr:createdBy` of `jcr:lastModifiedBy` als knoopeigenschappen, naast regelmatige inhoud, in de bewaarplaats. Afhankelijk van de configuratie en de opstelling van het toegangsbeheer, in sommige gevallen zou dit tot blootstelling van persoonlijk identificeerbare informatie (PII) kunnen leiden, bijvoorbeeld wanneer dergelijke knopen als ruwe JSON of XML worden teruggegeven.
+
+Net als alle gegevens in de opslagplaats worden deze eigenschappen gemedieerd door de Oak-machtigingenstapel. De toegang tot deze rechten dient te worden beperkt overeenkomstig het beginsel van de minst bevoorrechte behandeling.
+
+Om dit te steunen, verstrekt Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan worden gedownload [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en kan op alle gesteunde versies van AEM worden geïnstalleerd. Zie de opmerkingen bij de release voor meer informatie.
 
 ### Klikaanvallen voorkomen {#prevent-clickjacking}
 

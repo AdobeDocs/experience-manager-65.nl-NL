@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -396,7 +396,17 @@ AEM slaat standaard systeemmetagegevens op, zoals `jcr:createdBy` of `jcr:lastMo
 
 Net als alle gegevens in de opslagplaats worden deze eigenschappen gemedieerd door de Oak-machtigingenstapel. De toegang tot deze rechten dient te worden beperkt overeenkomstig het beginsel van de minst bevoorrechte behandeling.
 
-Om dit te steunen, verstrekt Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan worden gedownload [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en kan op alle gesteunde versies van AEM worden geïnstalleerd. Zie de opmerkingen bij de release voor meer informatie.
+Om dit te steunen, verstrekt Adobe een toestemmings het verharden pakket als basis voor klanten om op te bouwen. Het werkt door een &quot;ontkent&quot;toegangsbeheeringang bij de bewaarplaatswortel te installeren, die anonieme toegang tot algemeen gebruikte systeemeigenschappen beperkt. Het pakket kan worden gedownload [hier](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) en kan op alle gesteunde versies van AEM worden geïnstalleerd.
+
+Om de veranderingen te illustreren, kunnen wij de knoopeigenschappen vergelijken die anoniem kunnen worden bekeken alvorens het pakket te installeren:
+
+![Voordat u het pakket installeert](/help/sites-administering/assets/before_resized.png)
+
+met de apparaten die na de installatie van het pakket zichtbaar zijn, waarbij `jcr:createdBy` en `jcr:lastModifiedBy` zijn niet zichtbaar:
+
+![Na installatie van pakket](/help/sites-administering/assets/after_resized.png)
+
+Zie de opmerkingen bij de pakketrelease voor meer informatie.
 
 ### Klikaanvallen voorkomen {#prevent-clickjacking}
 

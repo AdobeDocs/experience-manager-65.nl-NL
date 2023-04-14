@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Zie de bronnen in de tabel voor beveiligingsinformatie over besturingssystemen d
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Beveiligingsgids voor release 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Beveiligingsgids voor release 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -212,7 +212,7 @@ JBoss® Application Server gebruikt 8080 als de standaard HTTP-poort. JBoss® he
 
 1. Open het volgende bestand om te bewerken:
 
-   Installatie van één server: [JBoss® root]/standalone/configuration/standalone.xml
+   Eén server installeren: [JBoss® root]/standalone/configuration/standalone.xml
 
    Clusterinstallaties: [JBoss® root]/domain/configuration/domain.xml
 
@@ -245,8 +245,8 @@ De lc_[database].xml-bestand mag geen wachtwoord in duidelijke-tekstindeling bev
 >
 >Met het AEM Forms on JEE JBoss®-installatieprogramma wordt het databasewachtwoord gecodeerd.
 
-IBM® WebSphere® Application Server en Oracle WebLogic Server kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
+IBM® WebSphere® Application Server en Oracle WebLogic Server kunnen standaard gegevensbronwachtwoorden coderen. Nochtans, zou u met uw documentatie van de toepassingsserver moeten bevestigen om ervoor te zorgen dat het gebeurt.
 
 ### De persoonlijke sleutel die is opgeslagen in de Trust Store beveiligen {#protecting-the-private-key-stored-in-trust-store}
 
-De persoonlijke sleutels of referenties die in de Trust Store worden geïmporteerd, worden opgeslagen in AEM Forms in de JEE-database. Neem de juiste voorzorgsmaatregelen om de database te beveiligen en beperk de toegang tot alleen de aangewezen beheerders.
+De persoonlijke sleutels of referenties die in de Trust Store worden geïmporteerd, worden opgeslagen in AEM Forms in de JEE-database. Om het gegevensbestand te beveiligen en toegang tot aangewezen slechts beheerders te beperken, neem aangewezen voorzorgsmaatregelen.

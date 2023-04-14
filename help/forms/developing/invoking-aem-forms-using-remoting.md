@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '4628'
+source-wordcount: '4599'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
 [Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Voor informatie over hoe te om procesgegevens in een de grafiekcontrole van Flex te tonen, zie [AEM Forms-procesgegevens weergeven in Flex-grafieken](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+<!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 >[!NOTE]
 >
@@ -98,15 +98,15 @@ Als u AEM Forms-processen programmatisch wilt aanroepen met Remoting, voegt u he
 
 ## Documenten verwerken met Verwijderen {#handling-documents-with-remoting}
 
-Een van de belangrijkste niet-primitieve Java-typen die in AEM Forms worden gebruikt, is de `com.adobe.idp.Document` klasse. Een document is doorgaans vereist om een AEM Forms-bewerking aan te roepen. Het is voornamelijk een PDF-document, maar kan ook andere documenttypen bevatten, zoals SWF, HTML, XML of een DOC-bestand. (Zie [Gegevens doorgeven aan AEM Forms-services met de Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+Een van de belangrijkste niet-primitieve Java™-typen die in AEM Forms worden gebruikt, is de `com.adobe.idp.Document` klasse. Een document is doorgaans vereist om een AEM Forms-bewerking aan te roepen. Het is voornamelijk een PDF-document, maar kan ook andere documenttypen bevatten, zoals SWF, HTML, XML of een DOC-bestand. (Zie [Gegevens doorgeven aan AEM Forms-services met de Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Een clienttoepassing die met Flex is gebouwd, kan niet rechtstreeks een document aanvragen. U kunt Adobe Reader bijvoorbeeld niet starten om een URL aan te vragen die een PDF-bestand maakt. Verzoeken om documenttypen, zoals PDF- en Microsoft Word-documenten, retourneren een resultaat dat een URL is. Het is de verantwoordelijkheid van de client om de inhoud van de URL weer te geven. Met de service Documentbeheer kunt u informatie over de URL en het inhoudstype genereren. Verzoeken om XML-documenten retourneren het volledige XML-document in het resultaat.
+Een clienttoepassing die met Flex is gebouwd, kan niet rechtstreeks een document aanvragen. U kunt Adobe Reader bijvoorbeeld niet starten om een URL aan te vragen die een PDF-bestand maakt. Verzoeken om documenttypen, zoals PDF- en Microsoft® Word-documenten, retourneren een resultaat dat een URL is. Het is de verantwoordelijkheid van de klant om de inhoud van de URL weer te geven. Met de service Documentbeheer kunt u informatie over de URL en het inhoudstype genereren. Verzoeken om XML-documenten retourneren het volledige XML-document in het resultaat.
 
 ### Een document doorgeven als een invoerparameter {#passing-a-document-as-an-input-parameter}
 
 Een clienttoepassing die met Flex is gebouwd, kan een document niet rechtstreeks doorgeven aan een AEM Forms-proces. In plaats daarvan gebruikt de clienttoepassing een instantie van het `mx.rpc.livecycle.DocumentReference` ActionScript-klasse om invoerparameters door te geven aan een bewerking die een `com.adobe.idp.Document` -instantie. Een Flex-clienttoepassing heeft verschillende opties voor het instellen van een `DocumentReference` object:
 
-* Wanneer het document zich op de server bevindt en de bestandslocatie bekend is, stelt u de eigenschap referenceType van het object DocumentReference in op REF_TYPE_FILE. Stel de eigenschap fileRef in op de locatie van het bestand, zoals in het volgende voorbeeld:
+* Wanneer het document op de server is en de bestandslocatie bekend is, stelt u de eigenschap referenceType van het object DocumentReference in op REF_TYPE_FILE. Stel de eigenschap fileRef in op de locatie van het bestand, zoals in het volgende voorbeeld:
 
 ```java
  ... var docRef: DocumentReference = new DocumentReference(); 
@@ -127,7 +127,7 @@ docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
 docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
-docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
+docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
 * Als het document zich niet op de server bevindt, gebruikt u het verwijderbare uploadserver om een document te uploaden naar AEM Forms. Nieuw in AEM Forms is de mogelijkheid om beveiligde documenten te uploaden. Wanneer u een beveiligd document uploadt, moet u een gebruiker gebruiken die de *Gebruiker van toepassing voor uploaden van document* rol. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U wordt aangeraden een beveiligd document met één aanmeldingsnaam te uploaden. (Zie [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
@@ -233,7 +233,7 @@ Een cliënttoepassing kan AEM Forms aanhalen door een Kanaal in MXML of ActionSc
      ...
 ```
 
-Wijs het `ChannelSet` aan de `mx:RemoteObject` van `channelSet` veld (zoals in het vorige codevoorbeeld). Over het algemeen importeert u de kanaalklasse in een importinstructie in plaats van de volledig gekwalificeerde naam op te geven wanneer u de instructie `ChannelSet.addChannel` methode.
+Wijs het `ChannelSet` aan de `mx:RemoteObject` instantie `channelSet` veld (zoals in het vorige codevoorbeeld). Over het algemeen importeert u de kanaalklasse in een importinstructie in plaats van de volledig gekwalificeerde naam op te geven wanneer u de instructie `ChannelSet.addChannel` methode.
 
 **Invoerwaarden doorgeven**
 
@@ -286,9 +286,9 @@ U kunt de `MyApplication/EncryptDocument` door de volgende stappen uit te voeren
 
 1. Een `mx:RemoteObject` via ActionScript of MXML. Zie Een instantie mx:RemoteObject maken.
 1. Een `ChannelSet` -instantie om te communiceren met AEM Forms en deze te koppelen aan de `mx:RemoteObject` -instantie. Zie Een kanaal naar AEM Forms maken.
-1. De ChannelSet aanroepen `login` methode of de `setCredentials` methode om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [Single Sign-On gebruiken](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Roep ChannelSet `login` of de `setCredentials` methode om de waarde en het wachtwoord van de gebruikersidentificatie op te geven. (Zie [Single Sign-On gebruiken](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Een `mx.rpc.livecycle.DocumentReference` instantie met een onbeveiligd PDF-document dat aan de `MyApplication/EncryptDocument` proces. (Zie [Een document doorgeven als een invoerparameter](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Codeer het PDF-document door het `mx:RemoteObject` van `invoke` methode. Geef de `Object` die de invoerparameter bevat (dit is het onbeveiligde PDF-document). Zie Invoerwaarden doorgeven.
+1. Codeer het PDF-document door het `mx:RemoteObject` instantie `invoke` methode. Geef de `Object` die de invoerparameter bevat (dit is het onbeveiligde PDF-document). Zie Invoerwaarden doorgeven.
 1. Haal het met wachtwoord gecodeerde PDF-document op dat door het proces wordt geretourneerd. Zie Retourwaarden afhandelen.
 
 [Snel starten: Een kortstondig proces aanroepen door een onbeveiligd document door te geven met (Vervangen voor AEM formulieren) AEM Forms Remoting](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -732,7 +732,7 @@ als AEM Forms is geconfigureerd om alleen beveiligde documenten te uploaden en d
       // Called once the file is completely uploaded.
       private function completeHandler(event:DataEvent):void {
  
-        // Set the docRef’s url and referenceType parameters
+        // Set the docRef's url and referenceType parameters
         docRef.url = event.data as String;
         docRef.referenceType=DocumentReference.REF_TYPE_URL;
         executeInvokeProcess();
@@ -904,7 +904,7 @@ De volgende lijst maakt een lijst van de controles die deel van deze cliënttoep
  <tbody>
   <tr>
    <td><p>txtFirst</p></td>
-   <td><p>Specificeert de voornaam van de klant. </p></td>
+   <td><p>Geeft de voornaam van de klant aan. </p></td>
   </tr>
   <tr>
    <td><p>txtLast</p></td>
@@ -912,15 +912,15 @@ De volgende lijst maakt een lijst van de controles die deel van deze cliënttoep
   </tr>
   <tr>
    <td><p>txtPhone</p></td>
-   <td><p>Specificeert het de telefoonaantal van de klant.</p></td>
+   <td><p>Hier geeft u het telefoonnummer van de klant op.</p></td>
   </tr>
   <tr>
    <td><p>txtStreet</p></td>
-   <td><p>Specificeert de straatnaam van de klant.</p></td>
+   <td><p>Geeft de straatnaam van de klant aan.</p></td>
   </tr>
   <tr>
    <td><p>txtState</p></td>
-   <td><p>Specificeert de staat van de klant. </p></td>
+   <td><p>Geeft de status van de klant aan. </p></td>
   </tr>
   <tr>
    <td><p>txtZIP</p></td>
@@ -932,7 +932,7 @@ De volgende lijst maakt een lijst van de controles die deel van deze cliënttoep
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>Hiermee geeft u de id-waarde van de klant op waartoe de nieuwe account behoort. Dit tekstvakje wordt bevolkt door de terugkeerwaarde van de dienst van de Klant <code>createCustomer</code> bewerking. </p></td>
+   <td><p>Hiermee geeft u de id-waarde van de klant op waartoe de nieuwe account behoort. Dit tekstvak wordt gevuld door de geretourneerde waarde van de service van de klant <code>createCustomer</code> bewerking. </p></td>
   </tr>
  </tbody>
 </table>
@@ -977,7 +977,7 @@ De klasse ActionScript van de Klant behoort tot een pakket genoemd klant. U word
 
 ### Snel starten: Aangepaste service van de klant aanroepen met Verwijderen {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een nieuwe klant. Wanneer u dit codevoorbeeld in werking stelt, zorg ervoor dat u alle tekstvakjes invult. Zorg er ook voor dat u het bestand Customer.as maakt dat aan `com.adobe.livecycle.sample.customer.Customer`.
+Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een klant. Wanneer u dit codevoorbeeld in werking stelt, zorg ervoor dat u alle tekstvakjes invult. Zorg er ook voor dat u het bestand Customer.as maakt dat aan `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 Voordat u deze snelle start kunt uitvoeren, moet u de aangepaste component Bank maken en implementeren.

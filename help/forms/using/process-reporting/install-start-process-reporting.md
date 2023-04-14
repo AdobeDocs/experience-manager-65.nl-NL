@@ -1,8 +1,6 @@
 ---
 title: Aan de slag met Process Reporting
-seo-title: Getting Started with Process Reporting
-description: De stappen die u moet volgen om aan de slag te gaan met AEM Forms over JEE Process Reporting
-seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
+description: De stappen om aan de slag te gaan met AEM Forms over JEE Process Reporting
 uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
@@ -29,13 +27,13 @@ In dit artikel worden de stappen beschreven die het publiceren van AEM Forms-geg
 
 Als u momenteel Forms Workflow gebruikt, kan de AEM Forms-database mogelijk een grote hoeveelheid gegevens bevatten
 
-De publicatieservices voor Process Reporting publiceren alle AEM Forms-gegevens die momenteel in de database beschikbaar zijn. Dit houdt in dat als de database verouderde gegevens bevat waarop u geen rapporten en query&#39;s wilt uitvoeren, alle gegevens ook naar de gegevensopslagruimte worden gepubliceerd, ook al is dit niet vereist voor rapportage. U wordt aangeraden deze gegevens te wissen voordat u de services uitvoert om de gegevens naar de Process Reporting-opslagplaats te publiceren. Dit zal de prestaties van zowel de uitgeversdienst als de dienst verbeteren die de gegevens voor rapportering vraagt.
+Met de publicatieservices Process Reporting worden alle AEM Forms-gegevens gepubliceerd die momenteel in de database beschikbaar zijn. Het impliceert dat als het gegevensbestand erfenisgegevens bevat waarover u geen rapporten en vragen wilt in werking stellen, al die gegevens ook aan de bewaarplaats zouden worden gepubliceerd hoewel het niet voor rapportering wordt vereist. U wordt aangeraden deze gegevens te wissen voordat u de services uitvoert om de gegevens naar de Process Reporting-opslagplaats te publiceren. Dit verbetert de prestaties van zowel de uitgeversdienst als de dienst die de gegevens voor rapportering vraagt.
 
-Voor meer informatie over het wissen van AEM Forms-procesgegevens raadpleegt u [Procesgegevens wissen](https://help.adobe.com/en_US/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
+Voor meer informatie over het wissen van AEM Forms-procesgegevens raadpleegt u [Procesgegevens wissen](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 >[!NOTE]
 >
->Raadpleeg het Adobe Developer Connection-artikel over het gebruik van het gereedschap Leegmaken voor de tips en trucs van het hulpprogramma [Leegmaken en banen](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Raadpleeg het Adobe Developer Connection-artikel over het gebruik van het gereedschap Leegmaken voor de tips en trucs van het hulpprogramma [Leegmaken en banen](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 ## Services voor Process Reporting configureren {#configuring-process-reporting-services}
 
@@ -53,11 +51,11 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 >
 >Als u uw AEM Forms-implementatie uitvoert in een cluster, voert u de volgende stappen uit op elk knooppunt van de cluster.
 
-1. Stop de AEM Forms-serverinstantie.
+1. Stop de AEM Forms Server-instantie.
 1. &#x200B;
 
    * (Voor Windows) Open het dialoogvenster `[JBoss root]/bin/run.conf.bat` in een editor.
-   * (Voor Linux, AIX en Solaris) `[JBoss root]/bin/run.conf.sh` in een editor.
+   * (Voor Linux®, AIX® en Solaris™) `[JBoss root]/bin/run.conf.sh` in een editor.
 
 1. Het JVM-argument toevoegen `-Dreporting.publisher.cron = <expression>.`
 
@@ -67,14 +65,14 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
 
 1. Sla het bestand op en sluit het `run.conf.bat` bestand.
 
-1. Start de AEM Forms-serverinstantie opnieuw.
+1. Start de AEM Forms Server-instantie opnieuw.
 
-1. Stop de AEM Forms-serverinstantie.
-1. Meld u aan bij de beheerconsole van WebSphere. Klik in de navigatiestructuur op **Servers** > **Toepassingsservers** en klik vervolgens in het rechterdeelvenster op de servernaam.
+1. Stop de AEM Forms Server-instantie.
+1. Meld u aan bij de beheerconsole van WebSphere®. Klik in de navigatiestructuur op **Servers** > **Toepassingsservers** en klik vervolgens in het rechterdeelvenster op de servernaam.
 
-1. Klik onder Serverinfrastructuur op **Java en Process Management** > **Procesdefinitie**.
+1. Klik onder Serverinfrastructuur op **Java™ en Process Management** > **Procesdefinitie**.
 
-1. Klik onder Extra eigenschappen op **Java Virtual Machine**.
+1. Klik onder Extra eigenschappen op **Java™ Virtual Machine**.
 
    Voeg het argument toe in het vak Generic JVM-argumenten `-Dreporting.publisher.cron = <expression>.`
 
@@ -83,8 +81,8 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Klikken **Toepassen**, klikt u op OK en vervolgens op **Direct opslaan in de master configuratie**.
-1. Start de AEM Forms-serverinstantie opnieuw.
-1. Stop de AEM Forms-serverinstantie.
+1. Start de AEM Forms Server-instantie opnieuw.
+1. Stop de AEM Forms Server-instantie.
 1. Meld u aan bij de WebLogic-beheerconsole. Het standaardadres van de WebLogic-beheerconsole is `https://[hostname]:[port]/console`.
 1. Klik onder Wijzigen in midden op **Vergrendelen en bewerken**.
 1. Klik onder Domeinstructuur op **Omgeving** > **Servers** en klik in het rechterdeelvenster op de naam van de beheerde server.
@@ -96,7 +94,7 @@ Voer de volgende stappen uit om het publicatieschema te wijzigen:
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Klikken **Opslaan** en klik vervolgens op **Wijzigingen activeren**.
-1. Start de AEM Forms-serverinstantie opnieuw.
+1. Start de AEM Forms Server-instantie opnieuw.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
 
@@ -139,9 +137,9 @@ De dienst ReportConfiguration wordt gebruikt door Proces dat voor het vormen van
 1. Open de **ReportingConfiguration** service.
 1. **Aantal records**
 
-   Wanneer het runnen van een vraag op de bewaarplaats, kan een resultaat een groot aantal verslagen potentieel bevatten. Als de resultaatreeks groot is, kan de vraaguitvoering servermiddelen verbruiken.
+   Wanneer het runnen van een vraag op de bewaarplaats, kan een resultaat vele verslagen potentieel bevatten. Als de resultaatreeks groot is, kan de vraaguitvoering servermiddelen verbruiken.
 
-   Om grote resultaatsets te behandelen, splitst de dienst ReportConfiguration de vraagverwerking in partijen verslagen. Hierdoor wordt de systeembelasting verminderd.
+   Om grote resultaatsets te behandelen, splitst de dienst ReportConfiguration de vraagverwerking in partijen verslagen. Dit vermindert de belasting van het systeem.
 
    `Default`: `1000`
 
@@ -153,7 +151,7 @@ De dienst ReportConfiguration wordt gebruikt door Proces dat voor het vormen van
 
    >[!NOTE]
    >
-   >Dit is dezelfde locatie als opgegeven in de configuratieoptie ProcessDataStorage **Hoofdmap**.
+   >Deze locatie is gelijk aan de locatie die is opgegeven in de configuratieoptie ProcessDataStorage **Hoofdmap**.
    >
    >
    >Als u de optie van de Omslag van de Wortel in de configuratie ProcessDataStorage bijwerkt, moet u de plaats van de Weg van de Opslag CRX in de dienst ReportConfiguration bijwerken.
@@ -186,9 +184,7 @@ U kunt deze optie ook gebruiken om het publiceren van procesgegevens uit te scha
 
 **Batchinterval (sec)**
 
-Telkens als de dienst ProcessDataPublisher loopt, verdeelt de dienst eerst de tijd sinds de laatste looppas van de dienst door het Interval van de Partij. De dienst verwerkt dan elk interval van de gegevens van AEM Forms afzonderlijk.
-
-Zo kunt u de grootte bepalen van de gegevens die de uitgever verwerkt tijdens elke uitvoering (batch) binnen een cyclus.
+Telkens als de dienst ProcessDataPublisher loopt, verdeelt de dienst eerst de tijd sinds de laatste looppas van de dienst door het Interval van de Partij. De dienst verwerkt dan elk interval van de gegevens van AEM Forms afzonderlijk om de grootte van gegevens te controleren de uitgever van begin tot eind tijdens elke looppas (partij) binnen een cyclus verwerkt.
 
 Bijvoorbeeld, als de uitgever elke dag in werking stelt, dan in plaats van het verwerken van de volledige gegevens één dag in één enkele looppas, door gebrek, wordt het de verwerking in 24 partijen van elk één uur verdeeld.
 
@@ -212,7 +208,7 @@ De AEM Forms-omgeving bevat gegevens uit de tijd dat de omgeving werd ingesteld.
 
 Standaard importeert de ProcessDataPublisher-service alle gegevens uit de AEM Forms-database.
 
-Afhankelijk van uw rapporteringsbehoeften, als u van plan bent om rapporten en vragen over gegevens na een bepaalde datum en een tijd in werking te stellen, adviseert men dat u de datum en de tijd specificeert. De publicatieservice publiceert vervolgens de datum vanaf die datum.
+Afhankelijk van uw rapporteringsbehoeften, als u van plan bent om rapporten en vragen over gegevens na een bepaalde datum en een tijd in werking te stellen, adviseert men dat u de datum en de tijd specificeert. De publicatieservice publiceert vervolgens de datum vanaf die tijd.
 
 `Default`: `01-01-1970 00:00:00`
 
@@ -230,7 +226,7 @@ Nadat u Procesrapportage hebt ingesteld, kunt u beginnen te werken met Process R
 
 Wanneer u naar de URL voor procesrapportage navigeert (https://&lt;server>:&lt;port>/lc/pr), wordt het aanmeldingsscherm weergegeven.
 
-Specificeer uw geloofsbrieven aan login aan de module van de Rapportering van het Proces.
+Om aan login aan de module van de Rapportering van het Proces, specificeer uw geloofsbrieven.
 
 >[!NOTE]
 >

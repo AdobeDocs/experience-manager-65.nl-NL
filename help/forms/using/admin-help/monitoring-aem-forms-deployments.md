@@ -10,25 +10,25 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
 # Implementaties van AEM controleren {#monitoring-aem-forms-deployments}
 
-U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. U kunt gespecialiseerde beheershulpmiddelen zoals HP OpenView, IBM Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken riep *JConsole* om Java-activiteiten specifiek te controleren. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM formulieren.
+U kunt AEM formulierimplementaties zowel op systeemniveau als op intern niveau controleren. U kunt gespecialiseerde beheersinstrumenten zoals HP OpenView, IBM® Tivoli, en CA UniCenter en een derdeJMX monitor gebruiken genoemd *JConsole* om specifiek toezicht te houden op Java™-activiteit. De implementatie van een monitoringstrategie verbetert de beschikbaarheid, betrouwbaarheid en prestaties van uw AEM formulieren.
 
-Voor meer informatie over het controleren AEM formulierimplementaties raadpleegt u [Een technische gids voor het controleren van AEM formulierimplementaties](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+<!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 ## Bewaking met behulp van MBeans {#monitoring-using-mbeans}
 
-AEM formulieren bieden twee geregistreerde MB&#39;s die navigatie- en statistische informatie verschaffen. Dit zijn de enige MBeans die voor integratie en inspectie worden gesteund:
+AEM Forms biedt twee geregistreerde MBans die navigatie- en statistische informatie bieden. Deze delen zijn de enige MBans die voor integratie en inspectie worden gesteund:
 
 * **ServiceStatistic:** Dit MBean verstrekt informatie over de naam van de Dienst en zijn versie.
-* **OperationStatistic:** Dit MBean verstrekt de statistiek van de dienst van elke vormserver. Dit is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, aantal fouten, etc. kunnen krijgen.
+* **OperationStatistic:** Dit MBean verstrekt de statistiek van de dienst van elke server van AEM Forms. Dit MBean is waar de beheerders informatie over een bepaalde dienst zoals oproepingstijd, en aantal fouten kunnen krijgen.
 
 ### ServiceStatisticMbean, openbare interfaces {#servicestatisticmbean-public-interfaces}
 
@@ -84,7 +84,7 @@ Met behulp van een JMX-console (JConsole) zijn statistieken van OperationStatist
 
 **Bewerkingsstatistieken**
 
-**Aanroepingstijd:** Tijd die nodig is om de methode uit te voeren. Dit omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
+**Aanroepingstijd:** Tijd die nodig is om de methode uit te voeren. Deze aanroep omvat niet de tijd het verzoek in series wordt vervaardigd, van cliënt aan server wordt overgebracht, en deserialized.
 
 **Aantal aanroepen:** Het aantal tijden de dienst wordt aangehaald.
 
@@ -106,7 +106,7 @@ Voor JMX-bewaking hebben de toepassingsservers doorgaans een bepaalde configurat
 
 ### Voorbeelden van het instellen van open JMX-toegang {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss 4.0.3/4.2.0 - het JVM-opstarten configureren**
+**JBoss® 4.0.3/4.2.0 - het JVM-opstarten configureren**
 
 Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van de toepassingsserver. Zorg ervoor dat JBoss wordt gestart vanuit het bestand run.bat/sh.
 
@@ -137,9 +137,9 @@ Om MBans van JConsole te bekijken, vorm de JBoss startparameters van de JVM van 
 1. Start JConsole voor nieuwe verbinding en klik op extern tabblad.
 1. Voer de hostnaam en poort in (9088, het nummer dat u opgeeft tijdens de startopties van JVM).
 
-**Websfeer 6.1 - JVM-opstarten configureren**
+**WebSphere® 6.1 - JVM-opstarten configureren**
 
-1. Voeg op de beheerconsole (Application Server > server1 > Process Definition > JVM) de volgende regel toe aan het veld voor Generic JVM-argument:
+1. Voeg in de Admin Console (Toepassingsserver > server1 > Procesdefinitie > JVM) de volgende regel toe aan het veld voor Generic JVM-argument:
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote

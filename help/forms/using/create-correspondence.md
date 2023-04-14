@@ -10,9 +10,9 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3813'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Selecteer de brief aan voorproef gebruikend de volgende stappen:
 
    >[!NOTE]
    >
-   >Zie voor meer informatie over het schakelen tussen de modus HTML of PDF-uitvoering van een lettertypevoorvertoning [Weergavemodus van letter wijzigen](#changerenditionmode). Ga voor meer informatie over PDF-ondersteuning in Correspondentenbeheer en AEM naar [Stopzetten van insteekmodules voor NPAPI-browsers en de gevolgen hiervan](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) en [PDF forms naar HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Zie voor meer informatie over het schakelen tussen de modus HTML of PDF-uitvoering van een lettertypevoorvertoning [Weergavemodus van letter wijzigen](#changerenditionmode). Ga voor meer informatie over PDF-ondersteuning in Correspondentenbeheer en AEM naar [Stopzetten van insteekmodules voor NPAPI-browsers en de gevolgen hiervan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Gegevens invoeren {#enterdata}
 
@@ -379,7 +379,7 @@ Zie voor meer informatie over ondersteuning van scripts in HTML5-formulieren [Sc
 
 Standaard gebruikt de gebruikersinterface Correspondentie maken de HTML- of mobiele formulieren om de lettertypevoorvertoning weer te geven. De voorvertoning van mobiele formulieren geeft in geen enkele browser een renderingprobleem omdat deze de native plug-in van de browser gebruikt en geen extra plug-ins nodig heeft. U kunt de modus voor lettertypevoorvertoning wijzigen in PDF. Browserbeperkingen kunnen echter problemen veroorzaken voor verschillende functies van de interactieve PDF-voorvertoning van de letter.
 
-Zie voor meer informatie over browsercompatibiliteit met lettertypevoorvertoning [Stopzetten van insteekmodules voor NPAPI-browsers en de gevolgen hiervan](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Zie voor meer informatie over browsercompatibiliteit met lettertypevoorvertoning [Stopzetten van insteekmodules voor NPAPI-browsers en de gevolgen hiervan](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen:
 

@@ -1,7 +1,7 @@
 ---
 title: Variabelen in AEM Forms-workflows
 seo-title: Variables in AEM Forms Workflows
-description: Maak een variabele, stel een waarde voor de variabele in en gebruik deze in AEM Forms-workflowstappen.
+description: Maak een variabele, stel een waarde voor de variabele in en gebruik deze in AEM Forms Workflow-stappen.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
 workflow-type: tm+mt
 source-wordcount: '2196'
 ht-degree: 0%
@@ -25,9 +25,11 @@ In AEM workflowmodellen kunt u:
 
 * [Een variabele maken](../../forms/using/variable-in-aem-workflows.md#create-a-variable) van een gegevenstype dat op het informatietype wordt gebaseerd dat u in het wilt opslaan.
 * [Een waarde voor de variabele instellen](../../forms/using/variable-in-aem-workflows.md#set-a-variable) met de workflowstap Variabele instellen.
-* [De variabele gebruiken](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in alle AEM Forms-workflowstappen om de opgeslagen waarde op te halen en in de stappen OR splitsen en Ga naar om een verpletterende expressie te definiëren.
+* [De variabele gebruiken](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in alle stappen van het Werkschema van AEM Forms om de opgeslagen waarde terug te winnen en in OF Splitst en gaat stappen om een verpletterende uitdrukking te bepalen.
 
 In de volgende video ziet u hoe u variabelen kunt maken, instellen en gebruiken in AEM workflowmodellen:
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -115,6 +117,8 @@ Gebruik een expressie om de som van de variabelen te berekenen en sla het result
 
 In dit voorbeeld gebruikt u de expressie-editor om een expressie te definiëren die de som van **assetkosten** en **saldobedrag** variabelen en sla het resultaat op in **totalvalue** variabele.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Expressieeditor gebruiken {#use-expression-editor}
@@ -150,7 +154,7 @@ U kunt variabelen gebruiken om input en output terug te winnen of het resultaat 
 
 ### Workflowstappen met ondersteuning voor variabelen {#workflow-steps-with-support-for-variables}
 
-De stap Ga naar OF Splitsen en alle AEM Forms-workflowstappen ondersteunen variabelen.
+De stap Ga naar OF Splitsen en alle AEM Forms Workflowstappen ondersteunen variabelen.
 
 #### OF stap Splitsen {#or-split-step}
 
@@ -161,6 +165,8 @@ U kunt het verpletteren van uitdrukking voor een tak bepalen gebruikend een rege
 U kunt variabelen gebruiken om de verpletterende uitdrukking te bepalen gebruikend de uitdrukkingsredacteur. Voor meer informatie bij het gebruiken van het verpletteren van uitdrukkingen voor OF de Gesplitste stap, zie [OF stap Splitsen](/help/sites-developing/workflows-step-ref.md#or-split).
 
 In dit voorbeeld, alvorens de verpletterende uitdrukking te bepalen, gebruik [voorbeeld 2](../../forms/using/variable-in-aem-workflows.md#example2) om de waarde voor de **totalvalue** variabele. Tak 1 is actief als de waarde van **totalvalue** variabele is groter dan 50000. Op dezelfde manier kunt u een regel bepalen om Tak 2 actief te maken als de waarde van **totalvalue** variabele is minder dan 50000.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -184,7 +190,7 @@ Voor meer voorbeelden bij het gebruiken van regeldefinitie in de stap Ga naar, z
 
 #### Forms-workflowgerichte workflowstappen {#forms-workflow-centric-workflow-steps}
 
-Alle AEM Forms-workflowstappen ondersteunen variabelen. Zie voor meer informatie [Forms-centric workflow op OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
+Alle AEM Forms Workflowstappen ondersteunen variabelen. Zie voor meer informatie [Forms-centric workflow op OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
 ### Workflowstappen zonder ondersteuning voor variabelen {#workflow-steps-without-support-for-variables}
 
@@ -271,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Gevoelige gebruikersgegevens opslaan buiten JCR met behulp van workflowvariabelen {#jcr-independent-persistance}
 
-Gegevens die worden verwerkt met de formulierwerkstroom kunnen vertrouwelijke gebruikersgegevens bevatten, zoals Persoonlijk identificeerbare gegevens en Gevoelige persoonlijke gegevens. De ondernemingen kunnen verkiezen om de gegevens op te slaan, die door diverse werkschemastappen (en overgegaan gebruikend werkschemariabelen), uit opslag JCR in een externe gegevensopslag worden verwerkt die door hen wordt bezeten en wordt beheerd. Voor meer informatie over het voortduren van workflowgegevens in een externe opslag raadpleegt u [Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Gegevens die met Forms Workflow worden verwerkt, kunnen gevoelige gebruikersgegevens bevatten, zoals persoonlijk identificeerbare gegevens en gevoelige persoonlijke gegevens. De ondernemingen kunnen verkiezen om de gegevens op te slaan, die door diverse werkschemastappen (en overgegaan gebruikend werkschemariabelen), uit opslag JCR in een externe gegevensopslag worden verwerkt die door hen wordt bezeten en wordt beheerd. Voor meer informatie over het voortduren van workflowgegevens in een externe opslag raadpleegt u [Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] biedt Workflow API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) om workflowvariabelen op te slaan in externe Azure blob-opslagruimten. Zie voor meer informatie over het gebruik van de API [Workflowvariabelen gebruiken voor het bepalen van de parameters van gevoelige gegevens en opslaan in externe gegevensopslagruimten](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Een variabele bewerken {#edit-a-variable}
@@ -292,4 +298,4 @@ Voer de volgende stappen uit om een variabele te verwijderen:
 
 ## Verwijzingen {#references}
 
-Raadpleeg voor meer voorbeelden over het gebruik van variabelen in AEM Forms-workflowstappen: [Variabelen in AEM werkstromen](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+Raadpleeg voor meer voorbeelden over het gebruik van variabelen in AEM Forms Workflow-stappen: [Variabelen in AEM werkstromen](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

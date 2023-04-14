@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de 
 
 Als er tijdens de installatie van het pakket een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`Voer de volgende stappen uit:
 
-1. Meld u aan bij CRX DE List. De standaard-URL is `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Meld u aan bij CRXDE Lite. De standaard-URL is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Verwijder het volgende knooppunt:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -155,9 +155,9 @@ In de AEM Forms-werkruimte:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Foutopsporing in Firefox**: Er zijn verschillende invoegtoepassingen beschikbaar voor foutopsporing in scripts en stijlen in Firefox. Firebug is bijvoorbeeld een van deze hulpprogramma&#39;s voor foutopsporing ([https://getfirebug.com](https://getfirebug.com)).
 

@@ -11,9 +11,9 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -49,18 +49,18 @@ Zie de bronnen in de tabel voor beveiligingsinformatie over besturingssystemen d
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX-beveiligingsvoordelen</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX® Security Benefits</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p>Microsoft® Windows Server® 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 Security Guide</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP of ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux-beveiligingsgids</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat® Enterprise Linux®-beveiligingsgids</a></p> </td>
   </tr>
   <tr>
-   <td><p>Sun Solaris 11</p> </td>
+   <td><p>Sun Solaris™ 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Richtlijnen voor beveiliging en beveiliging</a></p> </td>
   </tr>
   <tr>
@@ -98,15 +98,15 @@ Zie de bronnen in deze tabel voor beveiligingsinformatie over toepassingsservers
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Zoek naar Begrip van WebLogic-beveiliging op <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Zoek naar Begrip van WebLogic-beveiliging op <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM WebSphere®</p> </td>
+   <td><p>IBM® WebSphere®</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Toepassingen en hun omgeving beveiligen</a></p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® JBoss®</p> </td>
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Configuratie van het subsysteem Beveiliging</a></p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security%20subsystem%20configuration.html">Configuratie van het subsysteem Beveiliging</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,11 +131,11 @@ Voor veiligheidsinformatie over gegevensbestanden die AEM Forms op JEE steunt, z
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM DB2® 11.1</p> </td>
-   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2-productfamilie</a></p> </td>
+   <td><p>IBM® DB2® 11.1</p> </td>
+   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2® Product Family Library</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft® SQL Server 2016</p> </td>
    <td>Zoek het Web naar "SQL Server 2016: Beveiliging"</td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
  </thead>
  <tbody>
   <tr>
-   <td><p>JBoss</p> </td>
+   <td><p>JBoss®</p> </td>
    <td><p>8080</p> </td>
   </tr>
   <tr>
@@ -172,7 +172,7 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
    <td><p>Instellen door beheerder tijdens configuratie</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>WebSphere</p> </td>
+   <td>&gt;<p>WebSphere®</p> </td>
    <td><p>9060, als de Globale Veiligheid wordt toegelaten is de standaardSSL havenwaarde 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
    <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>DB2</p> </td>
+   <td>&gt;<p>DB2®</p> </td>
    <td><p>50000</p> </td>
   </tr>
   <tr>
@@ -206,22 +206,22 @@ In deze tabel worden de standaardpoorten beschreven die moeten worden geopend ti
  </tbody>
 </table>
 
-### JBoss configureren voor het gebruik van een niet-standaard HTTP-poort {#configuring-jboss-to-use-a-non-default-http-port}
+### JBoss® configureren voor het gebruik van een niet-standaard HTTP-poort {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBoss heeft ook pre-gevormde havens 8180, 8280, en 8380, die uit in het jreliëf-service.xml- dossier worden becommentarieerd. Als u een toepassing op uw computer hebt die deze poort al gebruikt, wijzigt u de poort die AEM Forms op JEE gebruikt door de volgende stappen uit te voeren:
+JBoss® Application Server gebruikt 8080 als de standaard HTTP-poort. JBoss® heeft ook pre-gevormde havens 8180, 8280, en 8380, die uit in het jreliëf-service.xml- dossier worden becommentarieerd. Als u een toepassing op uw computer hebt die deze poort al gebruikt, wijzigt u de poort die AEM Forms op JEE gebruikt door de volgende stappen uit te voeren:
 
 1. Open het volgende bestand om te bewerken:
 
-   Installatie van één server: [JBoss-root]/standalone/configuration/standalone.xml
+   Installatie van één server: [JBoss® root]/standalone/configuration/standalone.xml
 
-   Clusterinstallaties: [JBoss-root]/domain/configuration/domain.xml
+   Clusterinstallaties: [JBoss® root]/domain/configuration/domain.xml
 
 1. De waarde wijzigen van **poort** in het dialoogvenster **&lt;socket-binding>** -tag aan een aangepast poortnummer. Het volgende gebruikt bijvoorbeeld poort 8090:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Sla het bestand op en sluit het.
-1. Start de JBoss-toepassingsserver opnieuw.
+1. Start de JBoss®-toepassingsserver opnieuw.
 
 ## AEM Forms over JEE-beveiligingsoverwegingen {#aem-forms-on-jee-security-considerations}
 
@@ -243,9 +243,9 @@ De lc_[database].xml-bestand mag geen wachtwoord in duidelijke-tekstindeling bev
 
 >[!NOTE]
 >
->Met het AEM Forms on JEE JBoss-installatieprogramma wordt het databasewachtwoord gecodeerd.
+>Met het AEM Forms on JEE JBoss®-installatieprogramma wordt het databasewachtwoord gecodeerd.
 
-IBM WebSphere Application Server en WebLogic-server van Oracles kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
+IBM® WebSphere® Application Server en Oracle WebLogic Server kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
 
 ### De persoonlijke sleutel die is opgeslagen in de Trust Store beveiligen {#protecting-the-private-key-stored-in-trust-store}
 

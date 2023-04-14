@@ -1,8 +1,6 @@
 ---
 title: Optimalisatie van prestaties
-seo-title: Performance Optimization
 description: Leer hoe u bepaalde aspecten van AEM kunt configureren om de prestaties te optimaliseren.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
 ht-degree: 1%
@@ -102,12 +100,12 @@ Dit betekent dat de ontwikkelaar die de optimalisatie implementeert, snel moet k
 
 ## Basisrichtsnoeren voor prestaties {#basic-performance-guidelines}
 
-In het algemeen, houd uw uncaching HTML- verzoeken aan minder dan 100 ms. Meer in het bijzonder kan het volgende als richtsnoer dienen:
+In het algemeen, houd uw uncaching HTML- verzoeken aan minder dan 100 milliseconden. Meer in het bijzonder kan het volgende als richtsnoer dienen:
 
-* 70% van de aanvragen voor pagina&#39;s moet binnen 100 ms worden beantwoord.
-* 25% van de aanvragen voor pagina&#39;s moet binnen 100 ms - 300 ms een antwoord krijgen.
-* 4% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 300 ms - 500 ms.
-* 1% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 500 ms - 1000 ms.
+* 70% van de aanvragen voor pagina&#39;s moet binnen 100 milliseconden worden beantwoord.
+* 25% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 100 milliseconden - 300 milliseconden.
+* 4% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 300 milliseconden - 500 milliseconden.
+* 1% van de aanvragen voor pagina&#39;s moet een antwoord krijgen binnen 500 milliseconden - 1000 milliseconden.
 * Geen pagina&#39;s mogen langzamer reageren dan 1 seconde.
 
 De bovenstaande getallen voldoen aan de volgende voorwaarden:
@@ -459,14 +457,12 @@ Eventuele optimalisaties moeten worden getest om na te gaan of zij:
 * Dit heeft geen invloed op de functionaliteit
 * Met de belastingtests zijn geverifieerd voordat ze worden vrijgegeven
 
-Er zijn verschillende tools beschikbaar om u te helpen bij het genereren van de belasting, het bewaken van de prestaties en/of het analyseren van de resultaten:
+U kunt kiezen uit verschillende gereedschappen voor het genereren van de belasting, het controleren van de prestaties en het analyseren van de resultaten. Enkele van deze gereedschappen zijn:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Runner laden](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Java™ Interactief profiel](https://jiprof.sourceforge.net/)
-* nog veel meer...
 
 Na optimalisering, test opnieuw om het effect te bevestigen.
 
@@ -691,7 +687,7 @@ De lading bestaat uit gecreeerde pagina&#39;s, verwijderde pagina&#39;s, travers
 
 De impact van de belasting op de back-upprestaties kan worden geschat door het verschil tussen prestaties met en zonder deze toepassingsbelasting. De impact van de back-up op de doorvoer van de toepassing wordt gevonden door de doorvoerscenario&#39;s per uur te vergelijken met en zonder een gelijktijdige back-up aan de gang, en met back-ups die werken met verschillende instellingen voor &quot;back-upvertraging&quot;.
 
-* **Vertraging instellen** - Voor verscheidene scenario&#39;s, werd de reservevertragingsinstelling ook gevarieerd, gebruikend waarden van 10 ms (gebrek), 1 ms, en 0 ms, om te onderzoeken hoe dit het plaatsen de prestaties van steunen beïnvloedde.
+* **Vertraging instellen** - Voor verscheidene scenario&#39;s, werd de reservevertragingsinstelling ook gevarieerd, gebruikend waarden van 10 milliseconden (gebrek), 1 milliseconden, en 0 milliseconden, om te onderzoeken hoe dit het plaatsen de prestaties van steunen beïnvloedde.
 * **Back-uptype** - Alle back-ups waren externe back-ups van de opslagplaats die in een back-updirectory werden gemaakt zonder een ritssluiting te maken, behalve in één geval voor vergelijking waar de teeropdracht rechtstreeks werd gebruikt. Aangezien incrementele back-ups niet naar een ZIP-bestand kunnen worden gemaakt of wanneer de voorafgaande volledige back-up een ZIP-bestand is, wordt de back-upmapmethode het meest gebruikt in productiesituaties.
 
 ### Samenvatting van de resultaten {#summary-of-results}
@@ -720,7 +716,7 @@ De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Ter vergelijking: de doorvoer die wordt verkregen via een back-up van een bestandssysteem (&#39;tar&#39;) om back-ups te maken van dezelfde opslagplaats. De prestaties van het teer zijn vergelijkbaar, maar iets hoger dan de back-up met een vertraging die op nul is ingesteld. Zelfs een kleine vertraging verlaagt de back-updoorvoer aanzienlijk en de standaardvertraging van 10 ms resulteert in een sterk verminderde doorvoer. In situaties waarin back-ups kunnen worden gepland wanneer het totale gebruik van de toepassing laag is of wanneer de toepassing inactief kan zijn, verlaagt u de vertraging tot onder de standaardwaarde, zodat de back-up sneller kan worden uitgevoerd.
+Ter vergelijking: de doorvoer die wordt verkregen via een back-up van een bestandssysteem (&#39;tar&#39;) om back-ups te maken van dezelfde opslagplaats. De prestaties van het teer zijn vergelijkbaar, maar iets hoger dan de back-up met een vertraging die op nul is ingesteld. Zelfs een kleine vertraging verlaagt de back-updoorvoer aanzienlijk en de standaardvertraging van 10 milliseconden resulteert in een sterk verminderde doorvoer. In situaties waarin back-ups kunnen worden gepland wanneer het totale gebruik van de toepassing laag is of wanneer de toepassing inactief kan zijn, verlaagt u de vertraging tot onder de standaardwaarde, zodat de back-up sneller kan worden uitgevoerd.
 
 De daadwerkelijke impact van de doorvoer van toepassingen van een continue back-up is afhankelijk van de toepassings- en infrastructuurdetails. De vertragingswaarde moet worden gekozen door een empirische analyse van de toepassing, maar moet zo klein mogelijk worden gekozen, zodat de back-ups zo snel mogelijk kunnen worden voltooid. Omdat er slechts een zwakke correlatie is tussen de keuze van vertragingswaarde en de invloed op de doorvoer van de toepassing, zou de keuze van vertraging kortere algemene back-uptijden moeten begunstigen om de algemene impact van back-ups te minimaliseren. Een back-up die acht uur duurt, maar die invloed heeft op de doorvoer met -20%, heeft waarschijnlijk een groter algemeen effect dan een back-up die twee uur duurt, maar die invloed heeft op de doorvoer met -30%.
 

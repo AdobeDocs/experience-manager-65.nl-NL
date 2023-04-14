@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Wijzig de fabrieksconfiguratie niet wanneer u een configuratie maakt. In plaats 
 * Voor JS-ontwikkeling (vooral bij foutopsporing/foutopsporing):
 
    * disable **Minieren**
-   * enable **Foutopsporing** om de bestanden te scheiden voor foutopsporing en gebruik met firebug.
+   * enable **Foutopsporing** om de bestanden te scheiden voor foutopsporing en gebruik met een fout in het vuur.
    * enable **Timing** indien geïnteresseerd in timing.
    * enable **Foutopsporing** console om JS console logboekberichten te zien.
 
@@ -381,7 +381,7 @@ De andere modi zijn toegankelijk via het zijpaneel of het achtervoegsel `?wcmmod
 
 **Day CQ WCM Link Checker Configurator** Configureren:
 
-* **Lijst met herschrijfconfiguraties** om een lijst met locaties op te geven voor op inhoud gebaseerde koppelingencontroleerconfiguraties. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen van de koppelingencontrole kunnen verschillen.
+* **Lijst met herschrijfconfiguraties** om een lijst van plaatsen voor op inhoud-gebaseerde configuraties van de verbindingscontrole te specificeren. De configuraties kunnen op looppaswijze worden gebaseerd. Dit is belangrijk om onderscheid te maken tussen auteur- en publicatieomgevingen, omdat de instellingen voor koppelingencontrole kunnen verschillen.
 
 **Day CQ WCM Page Manager-fabriek** Configureren:
 
@@ -443,7 +443,7 @@ Een Configuratie van de Fabriek, zodat kunnen de veelvoudige instanties worden g
 **CDN Rewriter** De communicatie tussen AEM en een CDN moet worden gewaarborgd zodat de activa/binaire getallen aan een eind - gebruiker op een veilige manier worden geleverd. Dit proces omvat de volgende twee taken:
 
 * Toegang tot de bron via AEM CDN de eerste keer (of nadat deze in cache is verlopen).
-* Toegang hebbend tot het middel in CDN veilig cached omdat nadat het middel in CDN in het voorgeheugen wordt opgeslagen, het verzoek niet naar AEM gaat, en alle gebruikers die toegang tot dat middel hebben zouden van CDN moeten worden gediend.
+* Toegang hebbend tot het middel caching in CDN veilig. Nadat het middel in CDN in het voorgeheugen wordt opgeslagen, gaat het verzoek niet naar AEM, en alle gebruikers die toegang tot dat middel hebben zouden van CDN moeten worden gediend.
 
 AEM biedt een herschrijver voor het herschrijven van interne elementen-URL&#39;s naar externe CDN-URL&#39;s. Het herschrijft verbindingen die tot CDN met inbegrip van een handtekening JWS moeten worden overgegaan en verloopt tijd om de activa toe te staan om veilig worden betreden. Deze functie moet worden gebruikt op auteur-instanties.
 

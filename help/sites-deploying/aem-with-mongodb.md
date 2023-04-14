@@ -1,8 +1,6 @@
 ---
-title: AEM met MongoDB
-seo-title: AEM with MongoDB
-description: Leer meer over de taken en overwegingen die nodig zijn voor een geslaagde AEM met de implementatie van MongoDB.
-seo-description: Learn about the tasks and considerations needed for a successful AEM with MongoDB deployment.
+title: Adobe Experience Manager met MongoDB
+description: Meer informatie over de taken en overwegingen die nodig zijn voor een geslaagde implementatie van Adobe Experience Manager met MongoDB.
 uuid: 8028832d-10de-4811-a769-fab699c162ec
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '6496'
+source-wordcount: '6408'
 ht-degree: 0%
 
 ---
 
-# AEM met MongoDB{#aem-with-mongodb}
+# Adobe Experience Manager met MongoDB{#aem-with-mongodb}
 
-Dit artikel is bedoeld om de kennis over taken en overwegingen te verbeteren die nodig zijn om Adobe Experience Manager met MongoDB succesvol te implementeren.
+Dit artikel heeft tot doel de kennis over taken en overwegingen te verbeteren die nodig zijn om AEM (Adobe Experience Manager) met MongoDB succesvol te implementeren.
 
 Voor meer informatie over de implementatie raadpleegt u de [Implementeren en onderhouden](/help/sites-deploying/deploy.md) van de documentatie.
 
@@ -47,11 +45,11 @@ Hieronder vindt u een minimale implementatie voor AEM op MongoDB. Voor eenvoud, 
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Een minimale implementatie vereist 3 `mongod` instanties die zijn geconfigureerd als een replicaset. Eén instantie wordt primair gekozen en de andere instanties zijn gedetacheerd, waarbij de verkiezing wordt beheerd door `mongod`. Aan elke instantie is een lokale schijf gekoppeld. Om de cluster in staat te stellen het laden te ondersteunen, wordt een minimale doorvoer van 12 MB/s met meer dan 3000 I/O-bewerkingen per seconde (IOPS) aanbevolen.
+Voor een minimale implementatie zijn drie `mongod` instanties die zijn geconfigureerd als een replicaset. Eén instantie is primair gekozen en de andere instanties zijn gedetacheerd, waarbij de verkiezing wordt beheerd door `mongod`. Aan elke instantie is een lokale schijf gekoppeld. De cluster kan de belasting dus ondersteunen, een minimale doorvoer van 12 MB per seconde met meer dan 3000 I/O-bewerkingen per seconde (IOPS) wordt aanbevolen.
 
-De AEM auteurs zijn verbonden met de `mongod` instanties, waarbij elke AEM auteur verbinding maakt met alle drie `mongod` instanties. Schrijven worden naar de primaire pagina verzonden en kunnen vanuit elk van de gevallen worden gelezen. Het verkeer wordt verdeeld gebaseerd op lading door een verzender aan om het even welke actieve AEM auteur instanties. De OAK-gegevensopslag is een `FileDataStore`en MongoDB-controle wordt geleverd door MMS of MongoDB Ops Manager, afhankelijk van de locatie van de implementatie. Het niveau van het werkende systeem en logboekcontrole wordt verstrekt door derdeoplossingen zoals Splunk of Ganglia.
+De AEM auteurs zijn verbonden met de `mongod` instanties, waarbij elke AEM auteur verbinding maakt met alle drie `mongod` instanties. Schrijven worden naar de primaire pagina verzonden en kunnen vanuit elk van de gevallen worden gelezen. Het verkeer wordt verdeeld gebaseerd op lading door een Dispatcher aan om het even welke actieve AEM auteursinstanties. De eik gegevensopslag is een `FileDataStore`en MongoDB-controle wordt geleverd door MMS of MongoDB Ops Manager, afhankelijk van de locatie van de implementatie. Het niveau van het werkende systeem en logboekcontrole wordt verstrekt door derdeoplossingen zoals Splunk of Ganglia.
 
-In deze implementatie zijn alle componenten vereist voor een geslaagde implementatie. Bij ontbrekende componenten blijft de implementatie onfunctioneel.
+In deze implementatie zijn alle componenten vereist voor een geslaagde implementatie. Ontbrekende componenten laten de implementatie onfunctioneel.
 
 ### Besturingssystemen {#operating-systems}
 
@@ -59,32 +57,32 @@ Voor een lijst met ondersteunde besturingssystemen voor AEM 6 raadpleegt u de [P
 
 ### Omgevingen {#environments}
 
-Gevirtualiseerde omgevingen worden ondersteund op voorwaarde dat er goede communicatie is tussen de verschillende technische teams die het project uitvoeren. Dit omvat het team dat AEM uitvoert, het team dat eigenaar is van het besturingssysteem en het team dat de gevirtualiseerde infrastructuur beheert.
+Gevirtualiseerde omgevingen worden ondersteund op voorwaarde dat er goede communicatie is tussen de verschillende technische teams die het project uitvoeren. Tot deze ondersteuning behoren het team dat AEM uitvoert, het team dat eigenaar is van het besturingssysteem en het team dat de gevirtualiseerde infrastructuur beheert.
 
-Er zijn specifieke vereisten met betrekking tot de I/O-capaciteit van de MongoDB-instanties die moeten worden beheerd door het team dat de gevirtualiseerde omgeving beheert. Als in het project gebruik wordt gemaakt van een cloudimplementatie, zoals Amazon Web Services, moeten instanties over voldoende I/O-capaciteit en consistentie beschikken om de MongoDB-instanties te ondersteunen. Anders zullen de processen van MongoDB en de eiken bewaarplaats onbetrouwbaar en onregelmatig presteren.
+Er zijn specifieke vereisten met betrekking tot de I/O-capaciteit van de MongoDB-instanties die moeten worden beheerd door het team dat de gevirtualiseerde omgeving beheert. Als het project een cloudimplementatie gebruikt, zoals Amazon Web Services, moeten instanties zijn voorzien van voldoende I/O-capaciteit en consistentie om de MongoDB-instanties te ondersteunen. Anders functioneren de MongoDB-processen en de Oak-opslagplaats onbetrouwbaar en onregelmatig.
 
-In de gevirtualiseerde omgevingen heeft MongoDB specifieke I/O- en VM-configuraties nodig om ervoor te zorgen dat de opslagengine van MongoDB niet wordt verlamd door het beleid voor VMWare-brontoewijzing. Een geslaagde implementatie zal ervoor zorgen dat er geen barrières zijn tussen de verschillende teams en iedereen wordt ondertekend om de vereiste prestaties te leveren.
+In de gevirtualiseerde omgevingen heeft MongoDB specifieke I/O- en VM-configuraties nodig om ervoor te zorgen dat de opslagengine van MongoDB niet wordt verlamd door het beleid voor VMWare-brontoewijzing. Een geslaagde implementatie zorgt ervoor dat er geen barrières zijn tussen de verschillende teams en iedereen is aangemeld om de vereiste prestaties te leveren.
 
 ## Overwegingen voor hardware {#hardware-considerations}
 
 ### Opslag {#storage}
 
-Om de lees- en schrijfdoorvoer te behalen voor de beste prestaties zonder de noodzaak van premature horizontale schaling, heeft MongoDB doorgaans SSD-opslag of -opslag nodig met dezelfde prestaties als SSD.
+Om de lees- en schrijfdoorvoer te behalen voor de beste prestaties zonder de behoefte aan premature horizontale schaling, vereist MongoDB doorgaans SSD-opslag of -opslag met prestaties die gelijk zijn aan SSD.
 
 ### RAM {#ram}
 
 Voor MongoDB-versies 2.6 en 3.0 die de MMAP-opslagengine gebruiken, is het vereist dat de werkset van de database en de bijbehorende indexen in het RAM passen.
 
-Onvoldoende RAM-geheugen leidt tot een aanzienlijke prestatievermindering. De grootte van de werkset en van de database is sterk afhankelijk van de toepassing. Hoewel sommige schattingen kunnen worden gemaakt, is de betrouwbaarste manier om te bepalen hoeveel RAM-geheugen nodig is, het bouwen van de AEM en het testen van de belasting.
+Onvoldoende RAM leidt tot een aanzienlijke prestatievermindering. De grootte van de werkset en van de database is sterk afhankelijk van de toepassing. Hoewel sommige schattingen kunnen worden gemaakt, is de betrouwbaarste manier om te bepalen hoeveel RAM-geheugen nodig is, het bouwen van de AEM en het testen van de belasting.
 
 Ter ondersteuning van het laadtestproces kan de volgende verhouding tussen werkset en totale databasegrootte worden aangenomen:
 
 * 1:10 voor SSD-opslag
 * 1:3 voor harde-schijfopslag
 
-Dit betekent dat in het geval van SSD-implementaties 200 GB RAM vereist is voor een 2 TB-database.
+Deze verhoudingen betekenen dat voor SSD-implementaties 200 GB RAM vereist is voor een database van 2 TB.
 
-Hoewel de zelfde beperkingen op de opslag WiredTiger motor in MongoDB 3.0 van toepassing zijn, is de correlatie tussen de het werk reeks, RAM en paginafouten niet zo sterk aangezien WiredTiger geen geheugenafbeelding op dezelfde manier gebruikt als de MMAP opslagmotor.
+Hoewel de zelfde beperkingen op de opslag WiredTiger motor in MongoDB 3.0 van toepassing zijn, is de correlatie tussen de het werk reeks, RAM, en paginafouten niet zo sterk. WiredTiger gebruikt geheugentoewijzing niet op dezelfde manier als de MMAP-opslagengine.
 
 >[!NOTE]
 >
@@ -92,23 +90,23 @@ Hoewel de zelfde beperkingen op de opslag WiredTiger motor in MongoDB 3.0 van to
 
 ### Gegevensopslag {#data-store}
 
-Vanwege de beperkingen van de MongoDB-werkset wordt sterk aanbevolen dat de gegevensopslag onafhankelijk van de MongoDB wordt onderhouden. In de meeste omgevingen `FileDataStore` gebruik te maken van een NAS die voor alle AEM beschikbaar is. Voor situaties waarin de Amazon Web Services wordt gebruikt, is er ook een `S3 DataStore`. Als om het even welke reden de gegevensopslag binnen MongoDB wordt gehandhaafd, zou de grootte van de datastore aan de totale gegevensbestandgrootte moeten worden toegevoegd en de werksetberekeningen dienovereenkomstig worden aangepast. Dit kan betekenen dat u aanzienlijk meer RAM-geheugen ter beschikking moet stellen om de prestaties te handhaven zonder paginafouten.
+Vanwege de beperkingen van de MongoDB-werkset wordt aanbevolen de gegevensopslag onafhankelijk van de MongoDB te houden. In de meeste omgevingen `FileDataStore` gebruik te maken van een NAS die voor alle AEM beschikbaar is. Voor situaties waarin de Amazon Web Services wordt gebruikt, is er ook een `S3 DataStore`. Als om het even welke reden, de gegevensopslag binnen MongoDB wordt gehandhaafd, zou de grootte van de datastore aan de totale gegevensbestandgrootte moeten worden toegevoegd, en de werksetberekeningen zouden geschikt worden aangepast. Deze grootte kan betekenen dat u meer RAM-geheugen moet inrichten om de prestaties te handhaven zonder paginafouten.
 
 ## Bewaking {#monitoring}
 
-Controle is van essentieel belang voor een succesvolle uitvoering van het project. Hoewel het met voldoende kennis van zaken mogelijk is om AEM op MongoDB zonder controle in werking te stellen, wordt die kennis gewoonlijk gevonden in ingenieurs die voor elke sectie van de plaatsing worden gespecialiseerd.
+Controle is van essentieel belang voor een succesvolle uitvoering van het project. Met voldoende kennis van zaken is het mogelijk om AEM te draaien op MongoDB zonder controle. Nochtans, wordt die kennis gewoonlijk gevonden in ingenieurs die voor elke sectie van de plaatsing worden gespecialiseerd.
 
-Hierbij gaat het doorgaans om een O&amp;O-engineer die werkt aan de Apache Oak Core en een MongoDB-specialist.
+Bij deze gespecialiseerde kennis gaat het doorgaans om een O&amp;O-engineer die werkt aan de Apache Oak Core en een MongoDB-specialist.
 
-Zonder controle op alle niveaus zal gedetailleerde kennis van de codebasis worden vereist om kwesties te diagnostiseren. Met toezicht en passende richtsnoeren voor de belangrijkste statistieken zullen de implementatieteams adequaat kunnen reageren op anomalieën.
+Zonder controle op alle niveaus, wordt gedetailleerde kennis van de codebasis vereist om kwesties te diagnostiseren. Met toezicht en passende richtsnoeren voor de belangrijkste statistieken kunnen de implementatieteams adequaat reageren op anomalieën.
 
-Hoewel het mogelijk is opdrachtregelprogramma&#39;s te gebruiken om een snelle momentopname van de werking van een cluster te krijgen, is het vrijwel onmogelijk dat in real-time op veel hosts gebeurt. Met opdrachtregelprogramma&#39;s wordt zelden meer dan een paar minuten historische informatie gegeven en is geen kruiscorrelatie tussen verschillende typen meetgegevens mogelijk. Een korte periode van langzame achtergrond `mongod` Voor synchronisatie is een aanzienlijke handmatige inspanning vereist om de correlatie tussen I/O te herstellen. Wacht of te veel schrijfniveaus naar een gedeelde opslagbron van een ogenschijnlijk niet-aangesloten virtuele machine.
+Terwijl het mogelijk is om bevel-lijn hulpmiddelen te gebruiken om een snelle momentopname van de verrichting van een cluster te krijgen, is het doen van dat in echt - tijd over vele gastheren bijna onmogelijk. Met opdrachtregelprogramma&#39;s wordt zelden meer dan een paar minuten historische informatie gegeven en is geen kruiscorrelatie mogelijk tussen verschillende typen metriek. Een korte periode van langzame achtergrond `mongod` Voor synchronisatie is een aanzienlijke handmatige inspanning vereist om de correlatie tussen I/O te herstellen. Wacht of te veel schrijfniveaus naar een gedeelde opslagbron van een ogenschijnlijk niet-aangesloten virtuele machine.
 
 ### MongoDB Cloud Manager {#mongodb-cloud-manager}
 
 MongoDB Cloud Manager is een gratis service die wordt aangeboden door MongoDB en waarmee u de instanties van MongoDB kunt controleren en beheren. Het biedt een weergave in real-time van de prestaties en gezondheid van de MongoDB-cluster. Het beheert zowel clouds als privégehoste instanties op voorwaarde dat de instantie de controleserver van Cloud Manager kan bereiken.
 
-Het vereist een agent die op de instantie MongoDB wordt geïnstalleerd die met de controleserver verbindt. Er zijn 3 niveaus van de agent:
+Het vereist een agent die op de instantie MongoDB wordt geïnstalleerd die met de controleserver verbindt. Er zijn drie niveaus van de agent:
 
 * Een automatiseringsagent die alles op de MongoDB-server volledig kan automatiseren,
 * Een controleagent die de `mongod` instantie,
@@ -120,13 +118,13 @@ Voor meer informatie over MongoDB Cloud Manager raadpleegt u de [MongoDB-documen
 
 ### MongoDB Ops Manager {#mongodb-ops-manager}
 
-MongoDB Ops Manager is dezelfde software als de MongoDB Cloud Manager. Zodra geregistreerd, kan de Manager van Ops plaatselijk in een privé gegevenscentrum of op een andere laptop of Desktopmachine worden gedownload en worden geïnstalleerd. Het gebruikt een lokale gegevensbestand MongoDB om gegevens op te slaan en op precies de zelfde manier als Manager van de Wolk met de beheerde servers mee te delen. Als u veiligheidsbeleid hebt dat een controleagent verhindert, zou de Manager van Ops MongoDB moeten worden gebruikt.
+MongoDB Ops Manager is dezelfde software als de MongoDB Cloud Manager. Zodra geregistreerd, kan de Manager van Ops plaatselijk in een privé gegevenscentrum of op een andere laptop of Desktopmachine worden gedownload en worden geïnstalleerd. Het gebruikt een lokale gegevensbestand MongoDB om gegevens op te slaan en op de zelfde manier als Manager van de Wolk met de beheerde servers mee te delen. Als u veiligheidsbeleid hebt dat een controleagent verhindert, zou de Manager van Ops MongoDB moeten worden gebruikt.
 
 ### Bewaking van besturingssystemen {#operating-system-monitoring}
 
 Controle op besturingssysteemniveau is vereist om een AEM MongoDB-cluster uit te voeren.
 
-Ganglia is een goed voorbeeld van een dergelijk systeem en biedt een beeld van het bereik en de details van de vereiste informatie die verder gaat dan elementaire gezondheidsmaatstaven zoals CPU, laadgemiddelde en vrije schijfruimte. Om problemen te diagnostiseren, is informatie op een lager niveau, zoals de niveaus van de entropiepool, I/O wachtende cpu, de contactdozen in staat FIN_WAIT2 vereist.
+Ganglia is een goed voorbeeld van een dergelijk systeem en biedt een beeld van het bereik en de details van de vereiste informatie die verder gaat dan de standaardmaatstaven voor de gezondheid, zoals CPU, laadgemiddelde en vrije schijfruimte. Om problemen te diagnostiseren, is informatie op een lager niveau, zoals de niveaus van de entropiepool, I/O van cpu wachtende, contactdozen in staat FIN_WAIT2 vereist.
 
 ### Logaggregatie {#log-aggregation}
 
@@ -177,26 +175,26 @@ blobCacheSize=1024
 Waar:
 
 * `mongodburi`
-Dit is de MongoDB-server waarmee AEM verbinding moet maken. Verbindingen worden gemaakt met alle bekende leden van de standaardreplicaset. Als MongoDB Cloud Manager wordt gebruikt, is de serverbeveiliging ingeschakeld. Daarom moet de verbindingstekenreeks een geschikte gebruikersnaam en wachtwoord bevatten. Niet-zakelijke versies van MongoDB ondersteunen alleen gebruikersnaam- en wachtwoordverificatie. Voor meer informatie over de syntaxis van de verbindingstekenreeks raadpleegt u de [documentatie](https://docs.mongodb.org/manual/reference/connection-string/).
+De MongoDB-AEM moet verbinding maken. Verbindingen worden gemaakt met alle bekende leden van de standaardreplicaset. Als MongoDB Cloud Manager wordt gebruikt, is de serverbeveiliging ingeschakeld. Daarom moet de verbindingstekenreeks een geschikte gebruikersnaam en wachtwoord bevatten. Niet-zakelijke versies van MongoDB ondersteunen alleen gebruikersnaam- en wachtwoordverificatie. Voor meer informatie over de syntaxis van de verbindingstekenreeks raadpleegt u de [documentatie](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
 De naam van de database. De standaardwaarde voor AEM is 
 `aem-author`.
 
 * `customBlobStore`
-Als de plaatsing binaire getallen in het gegevensbestand opslaat, zullen zij deel van de het werk reeks uitmaken. Daarom wordt aangeraden om geen binaire bestanden in MongoDB op te slaan, waarbij een andere datastore wordt uitgevoerd als een 
+Als de plaatsing binaire getallen in het gegevensbestand opslaat, maken zij deel uit van de het werk reeks. Daarom wordt aangeraden binaire bestanden niet in MongoDB op te slaan, bij voorkeur een alternatieve datastore als een 
 `FileSystem` datastore op een NAS.
 
 * `cache`
-De cachegrootte in megabytes. Dit wordt verdeeld over verschillende caches die worden gebruikt in de 
-`DocumentNodeStore`. De standaardwaarde is 256 MB. Eak-leesprestaties zullen echter baat hebben bij een groter cachegeheugen.
+De cachegrootte in megabytes. Deze ruimte wordt verdeeld over verschillende caches die worden gebruikt in de 
+`DocumentNodeStore`. De standaardwaarde is 256 MB. Eak-leesprestaties profiteren echter van een grotere cache.
 
 * `blobCacheSize`
-Veelgebruikte blobs kunnen door AEM in de cache worden geplaatst om te voorkomen dat ze opnieuw uit de gegevensopslag worden opgehaald. Dit heeft meer invloed op de prestaties, met name wanneer u lobs opslaat in de MongoDB-database. Alle op bestandssysteem gebaseerde gegevensopslagsystemen profiteren van de schijfcache op besturingssysteemniveau.
+Veelgebruikte blobs kunnen door AEM in de cache worden geplaatst om te voorkomen dat ze opnieuw uit de gegevensopslag worden opgehaald. Dit heeft meer invloed op de prestaties, met name wanneer u lobs opslaat in de MongoDB-database. Alle gegevensopslagsystemen op bestandssysteem profiteren van de schijfcache op besturingssysteemniveau.
 
 #### Configuratie gegevensopslag {#data-store-configuration}
 
-De gegevensopslag wordt gebruikt om bestanden op te slaan die groter zijn dan een drempel. Onder die drempel worden bestanden als eigenschappen opgeslagen in het Document Node Store. Als de `MongoBlobStore` wordt gebruikt, wordt een specifieke inzameling gecreeerd in MongoDB om de vlekken op te slaan. Deze verzameling draagt bij aan de `mongod` -instantie, en vereist dat `mongod` heeft meer RAM om prestatieproblemen te voorkomen. Daarom wordt aanbevolen de `MongoBlobStore` voor productieimplementaties en -gebruik `FileDataStore` ondersteund door een NAS die onder alle AEM instanties wordt gedeeld. Omdat de cache op het niveau van het besturingssysteem efficiënt is voor het beheren van bestanden, moet de minimale grootte van een bestand op schijf dicht bij de blokgrootte van de schijf worden ingesteld, zodat het bestandssysteem efficiënt wordt gebruikt en veel kleine documenten niet buitensporig bijdragen aan de werkset van de `mongod` -instantie.
+De gegevensopslag wordt gebruikt om bestanden op te slaan die groter zijn dan een drempel. Onder die drempel worden bestanden als eigenschappen opgeslagen in het Document Node Store. Als de `MongoBlobStore` wordt gebruikt, wordt een specifieke inzameling gecreeerd in MongoDB om de vlekken op te slaan. Deze verzameling draagt bij aan de `mongod` -instantie, en vereist dat `mongod` heeft meer RAM om prestatieproblemen te voorkomen. Daarom wordt aanbevolen de `MongoBlobStore` voor productieimplementaties en -gebruik `FileDataStore` ondersteund door een NAS die door alle AEM wordt gedeeld. Omdat de cache op besturingssysteemniveau efficiënt is voor het beheren van bestanden, moet de minimale grootte van een bestand op schijf dicht bij de blokgrootte van de schijf worden ingesteld. Dit zorgt ervoor dat het bestandssysteem efficiënt wordt gebruikt en dat veel kleine documenten niet buitensporig bijdragen aan de werkset van de `mongod` -instantie.
 
 Hier volgt een standaardconfiguratie voor een minimale AEM implementatie met MongoDB:
 
@@ -212,11 +210,11 @@ cacheSizeInMB=128
 Waar:
 
 * `minRecordLength`
-Grootte in bytes. Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze grootte, worden opgeslagen in het Document Node Store. In plaats van de id van de blob op te slaan, wordt de inhoud van het binaire bestand opgeslagen. Voor binaire getallen groter dan deze grootte wordt identiteitskaart van binair getal opgeslagen als bezit van het Document in de knooppuntinzameling, en het lichaam van binair getal wordt opgeslagen in 
+Grootte in bytes. Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze grootte, worden opgeslagen in het Document Node Store. In plaats van de id van de blob op te slaan, wordt de inhoud van het binaire bestand opgeslagen. Met binaire getallen die groter zijn dan deze grootte, wordt identiteitskaart van binair getal opgeslagen als bezit van het Document in de knooppuntinzameling. En het lichaam van het binaire getal wordt opgeslagen in het 
 `FileDataStore` op schijf. 4096 bytes is een typische blokgrootte van het dossiersysteem.
 
 * `path`
-Het pad naar de hoofdmap van de gegevensopslag. Voor een MongoMK-implementatie moet dit een gedeeld bestandssysteem zijn dat beschikbaar is voor alle AEM. Gewoonlijk wordt een NAS-server (Network Attached Storage) gebruikt. Voor cloudimplementaties zoals Amazon Web Services: 
+Het pad naar de hoofdmap van de gegevensopslag. Voor een MongoMK-implementatie moet dit pad een gedeeld bestandssysteem zijn dat beschikbaar is voor alle AEM. Gewoonlijk wordt een NAS-server (Network Attached Storage) gebruikt. Voor cloudimplementaties zoals Amazon Web Services: 
 `S3DataFileStore` is ook beschikbaar.
 
 * `cacheSizeInMB`
@@ -224,47 +222,43 @@ De totale grootte van de binaire cache in Megabytes. Het wordt gebruikt om binai
 `maxCacheBinarySize` instellen.
 
 * `maxCachedBinarySize`
-De maximumgrootte in bytes van een binaire caching in het binaire geheime voorgeheugen. Als een gegevensopslag op basis van een bestandssysteem wordt gebruikt, wordt het niet aanbevolen hoge waarden te gebruiken voor de cache van de gegevensopslag, aangezien de binaire bestanden al in de cache zijn opgeslagen door het besturingssysteem.
+De maximumgrootte in bytes van een binaire caching in het binaire geheime voorgeheugen. Als een op een bestandssysteem gebaseerde gegevensopslag wordt gebruikt, wordt het niet aanbevolen hoge waarden te gebruiken voor de cache van de gegevensopslag, aangezien de binaire bestanden al in de cache zijn opgeslagen door het besturingssysteem.
 
 #### De queryhint uitschakelen {#disabling-the-query-hint}
 
-Men adviseert dat u de vraagwenk onbruikbaar maakt die met alle vragen wordt verzonden door het bezit toe te voegen
+Men adviseert dat u de vraagwenk onbruikbaar maakt die met alle vragen wordt verzonden door het bezit toe te voegen `-Doak.mongo.disableIndexHint=true` wanneer u begint AEM. Dit zorgt ervoor dat MongoDB de meest geschikte index berekent die op interne statistieken moet worden gebruikt.
 
-`-Doak.mongo.disableIndexHint=true`
-
-bij het starten van AEM. Op deze manier zal MongoDB de meest geschikte index berekenen die op interne statistieken moet worden gebruikt.
-
-Als de vraagwenk niet gehandicapt is, zal om het even welke prestaties het stemmen van indexen geen invloed op de prestaties van AEM hebben.
+Als de vraagwenk niet gehandicapt is, heeft om het even welke prestaties het stemmen van indexen geen invloed op de prestaties van AEM.
 
 #### Blijvende cache inschakelen voor MongoMK {#enable-persistent-cache-for-mongomk}
 
-Het wordt aanbevolen een permanente cacheconfiguratie in te schakelen voor MongoDB-implementaties, zodat omgevingen met hoge I/O-leesprestaties een maximale snelheid hebben. Zie voor meer informatie de [Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
+Het wordt aanbevolen een permanente cacheconfiguratie in te schakelen voor MongoDB-implementaties om de snelheid te maximaliseren voor omgevingen met hoge I/O-leesprestaties. Zie voor meer informatie de [Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/nodestore/persistent-cache.html).
 
 ## Optimalisatie van MongoDB-besturingssystemen {#mongodb-operating-system-optimizations}
 
 ### Ondersteuning van besturingssystemen {#operating-system-support}
 
-MongoDB 2.6 gebruikt een in geheugen toegewezen opslagengine die gevoelig is voor bepaalde aspecten van het systeembeheer tussen RAM en schijf. De vraag en gelezen Prestaties van de instantie MongoDB baseert zich op het vermijden of het elimineren van langzame I/O verrichtingen die vaak als paginafouten worden bedoeld. Dit zijn paginafouten die van toepassing zijn op de `mongod` in het bijzonder. Ze mogen niet worden verward met paginafouten op besturingssysteemniveau.
+MongoDB 2.6 gebruikt een in geheugen toegewezen opslagengine die gevoelig is voor bepaalde aspecten van het systeembeheer tussen RAM en schijf. De vraag en gelezen Prestaties van de instantie MongoDB baseert zich op het vermijden of het elimineren van langzame I/O verrichtingen die vaak als paginafouten worden bedoeld. Dit zijn paginafouten die van toepassing zijn op de `mongod` in het bijzonder. Let op het verschil met paginafouten op besturingssysteemniveau.
 
-Voor snelle verrichting zou het gegevensbestand MongoDB slechts tot gegevens moeten toegang hebben die reeds in RAM zijn. De gegevens waartoe het toegang moet krijgen, bestaan uit indexen en gegevens. Deze verzameling indexen en gegevens wordt de werkset genoemd. Als de werkset groter is dan de beschikbare RAM-geheugen, moet MongoDB die gegevens vanaf een schijf met I/O-kosten inpakken, zodat andere gegevens die al in het geheugen staan, worden verwijderd. Als de verwijdering ertoe leidt dat gegevens opnieuw worden geladen van schijfpaginafouten zullen de fouten domineren en de prestaties zullen verminderen. Als de werkset dynamisch en variabel is, worden er meer paginafouten gegenereerd om bewerkingen te ondersteunen.
+Voor snelle verrichting, zou het gegevensbestand MongoDB slechts tot gegevens moeten toegang hebben die reeds in RAM zijn. De gegevens waartoe het toegang moet krijgen, bestaan uit indexen en gegevens. Deze verzameling indexen en gegevens wordt de werkset genoemd. Als de werkset groter is dan de beschikbare RAM-geheugen, moet MongoDB die gegevens vanaf een schijf met I/O-kosten inpakken, zodat andere gegevens die al in het geheugen staan, worden verwijderd. Als de verwijdering ertoe leidt dat gegevens van schijf worden opnieuw geladen, nemen de paginafouten en de prestaties af. Wanneer de werkset dynamisch en variabel is, worden er meer paginafouten gegenereerd om bewerkingen te ondersteunen.
 
-MongoDB wordt uitgevoerd op een aantal besturingssystemen, waaronder een groot aantal verschillende Linux-kleuren, Windows en Mac OS. Zie [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) voor meer informatie. Afhankelijk van de keuze van het besturingssysteem heeft MongoDB verschillende aanbevelingen voor het niveau van het besturingssysteem. Er is gedocumenteerd op [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) en hier samengevat voor het gemak.
+MongoDB wordt uitgevoerd op verschillende besturingssystemen, waaronder een groot aantal Linux®-kleuren, Windows en macOS. Zie [https://docs.mongodb.com/manual/installation/#supported-platforms](https://docs.mongodb.com/manual/installation/#supported-platforms) voor meer informatie. Afhankelijk van de keuze van het besturingssysteem heeft MongoDB verschillende aanbevelingen voor het niveau van het besturingssysteem. Er is gedocumenteerd op [https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration](https://docs.mongodb.com/manual/administration/production-checklist-operations/#operating-system-configuration) en hier samengevat voor het gemak.
 
-#### Linux {#linux}
+#### Linux® {#linux}
 
 * Schakel transparante kleurtonen en foutopsporing uit. Zie [Instellingen voor transparante grote pagina&#39;s](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) voor meer informatie .
-* [De voorinstellingen aanpassen](https://docs.mongodb.com/manual/administration/production-notes/#readahead) op de apparaten die uw gegevensbestanddossiers opslaan om uw gebruiksgeval aan te passen.
+* [De voorinstellingen aanpassen](https://docs.mongodb.com/manual/administration/production-notes/#readahead) op de apparaten die uw gegevensbestanddossiers opslaan zodat u uw gebruiksgeval past.
 
-   * Als de werkset van de MMAPv1-opslagengine groter is dan het beschikbare RAM en het toegangspatroon van het document willekeurig is, kunt u het aflezen naar 32 of 16 verkleinen. U kunt verschillende instellingen evalueren om een optimale waarde te vinden waarmee het geheugen op de site wordt gemaximaliseerd en het aantal paginafouten wordt verminderd.
-   * Voor de WiredTiger-opslagengine stelt u deze in op 0, ongeacht het type opslagmedium (draaien, SSD, enz.). Over het algemeen gebruikt u de aanbevolen instelling voor het aflezen van voorkeuren, tenzij tests een meetbaar, herhaalbaar en betrouwbaar voordeel opleveren bij een hogere aflezing. [Ondersteuning voor MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan advies en begeleiding over niet-nul readahead configuraties verstrekken.
+   * Als de werkset van de MMAPv1-opslagengine groter is dan het beschikbare RAM en het toegangspatroon van het document willekeurig is, kunt u het aflezen naar 32 of 16 verkleinen. U kunt verschillende instellingen evalueren, zodat u een optimale waarde kunt vinden voor een zo groot mogelijk geheugen en een lager aantal paginafouten.
+   * Voor de opslag WiredTiger motor, reeks opnieuw gelezen aan 0 ongeacht opslagmedia type (het draaien, SSD, etc.). Over het algemeen gebruikt u de aanbevolen instelling voor het aflezen van voorkeuren, tenzij tests een meetbaar, herhaalbaar en betrouwbaar voordeel opleveren bij een hogere aflezing. [Ondersteuning voor MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan advies en begeleiding op configuraties zonder het nulbereik bieden.
 
 * Schakel het afgestelde gereedschap uit als u RHEL 7 / CentOS 7 in een virtuele omgeving uitvoert.
-* Wanneer RHEL 7 / CentOS 7 in een virtuele omgeving wordt uitgevoerd, roept het afgestemde hulpmiddel automatisch een prestatiesprofiel aan dat uit prestatiesproductie wordt afgeleid, dat automatisch de lezingsmontages aan 4MB plaatst. Dit kan de prestaties negatief beïnvloeden.
+* Wanneer RHEL 7/CentOS 7 in een virtuele milieu in werking wordt gesteld, roept het afgestemde hulpmiddel automatisch een prestatiesprofiel aan dat uit prestatiesproductie wordt afgeleid, die automatisch de lezingsmontages aan 4 MB plaatst. Deze instelling kan negatieve gevolgen hebben voor de prestaties.
 * Gebruik de noop- of deadline schijfplanners voor SSD-stations.
 * Gebruik de noop schijfplanner voor gevirtualiseerde aandrijving in gast VMs.
-* NUMA uitschakelen of vm.zone_reclaim_mode instellen op 0 en uitvoeren [monniken](https://docs.mongodb.com/manual/administration/production-notes/#readahead) instanties met knooppunt interleave. Zie: [MongoDB- en NUMA-hardware](https://docs.mongodb.com/manual/administration/production-notes/#readahead) voor meer informatie .
+* NUMA of set uitschakelen `vm.zone_reclaim_mode` naar 0 en uitvoeren [monniken](https://docs.mongodb.com/manual/administration/production-notes/#readahead) instanties met knooppunt interleave. Zie: [MongoDB- en NUMA-hardware](https://docs.mongodb.com/manual/administration/production-notes/#readahead) voor meer informatie .
 
-* Pas de grenswaarden op uw hardware aan uw gebruiksscenario aan. Indien meerdere [monniken](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) of [mongos](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) exemplaren worden uitgevoerd onder dezelfde gebruiker, de grenswaarden dienovereenkomstig schalen. Zie: [UNIX-instellingen voor limiet](https://docs.mongodb.com/manual/reference/ulimit/) voor meer informatie .
+* Pas de grenswaarden op de hardware aan, zodat deze passen bij uw gebruiksscenario. Indien meerdere [monniken](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) of [mongos](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) exemplaren worden uitgevoerd onder dezelfde gebruiker, de grenswaarden dienovereenkomstig schalen. Zie: [UNIX® ulimit Settings](https://docs.mongodb.com/manual/reference/ulimit/) voor meer informatie .
 
 * Noatitie gebruiken voor de [dbPath](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath) koppelpunt.
 * Configureer voldoende bestandshandgrepen (fs.file-max), de limiet voor de pid van de kernel (kernel.pid_max) en de maximale threads per proces (kernel.threads-max) voor uw implementatie. Voor grote systemen bieden de volgende waarden een goed uitgangspunt:
@@ -278,17 +272,17 @@ MongoDB wordt uitgevoerd op een aantal besturingssystemen, waaronder een groot a
 
 #### Windows {#windows}
 
-* Overweeg het onbruikbaar maken NTFS &quot;laatste toegangstijd&quot;updates. Dit is gelijk aan het uitschakelen van atime op Unix-achtige systemen.
+* Overweeg het onbruikbaar maken NTFS &quot;laatste toegangstijd&quot;updates. Deze instelling is hetzelfde als het uitschakelen van atime op Unix-achtige systemen.
 
 ### WiredTiger {#wiredtiger}
 
-Vanaf MongoDB 3.2 is de standaard opslagengine voor MongoDB de WiredTiger-opslagengine. Deze engine beschikt over een aantal robuuste en schaalbare functies die deze veel geschikter maken voor algemene databasewerklasten die overal ter wereld liggen. In de volgende secties worden deze functies beschreven.
+Vanaf MongoDB 3.2 is de standaard opslagengine voor MongoDB de WiredTiger-opslagengine. Deze engine biedt enkele robuuste en schaalbare functies die het veel geschikter maken voor algemene databasewerklasten. In de volgende secties worden deze functies beschreven.
 
 #### Documentniveau gelijktijdig {#document-level-concurrency}
 
 WiredTiger gebruikt document-vlakke gelijktijdig controle voor schrijfverrichtingen. Dientengevolge, kunnen de veelvoudige cliënten verschillende documenten van een inzameling tezelfdertijd wijzigen.
 
-Voor de meeste lees en schrijf verrichtingen, gebruikt WiredTiger optimistische gelijktijdig controle. WiredTiger gebruikt slechts intent sloten bij de globale, gegevensbestand en inzamelingsniveaus. Wanneer de opslagengine conflicten tussen twee bewerkingen detecteert, treedt er een schrijfconflict op waardoor MongoDB deze bewerking op transparante wijze opnieuw probeert. Sommige globale bewerkingen, meestal kortstondige bewerkingen met meerdere databases, vereisen nog steeds een algemene &#39;instance-wide&#39; vergrendeling.
+Voor de meeste lees en schrijf verrichtingen, gebruikt WiredTiger optimistische gelijktijdig controle. WiredTiger gebruikt slechts intent sloten bij globale, gegevensbestand, en inzamelingsniveaus. Wanneer de opslagengine conflicten tussen twee bewerkingen detecteert, treedt er een schrijfconflict op waardoor MongoDB deze bewerking op transparante wijze opnieuw probeert. Voor sommige globale bewerkingen, meestal kortstondige bewerkingen met meerdere databases, is nog steeds een algemene vergrendeling voor de hele instantie vereist.
 
 Voor sommige andere bewerkingen, zoals het neerzetten van een verzameling, is nog steeds een exclusieve databasevergrendeling vereist.
 
@@ -296,9 +290,9 @@ Voor sommige andere bewerkingen, zoals het neerzetten van een verzameling, is no
 
 WiredTiger gebruikt MultiVersion Concurrency Control (MVCC). Aan het begin van een verrichting, verstrekt WiredTiger een punt-in-tijd momentopname van de gegevens aan de transactie. Een momentopname stelt een verenigbare mening van de in-geheugengegevens voor.
 
-Wanneer het schrijven aan schijf, schrijft WiredTiger alle gegevens in een momentopname aan schijf op een verenigbare manier over alle gegevensdossiers. De now- [duurzaam](https://docs.mongodb.com/manual/reference/glossary/#term-durable) gegevens fungeren als controlepunt in de gegevensbestanden. Het controlepunt zorgt ervoor dat de gegevensdossiers tot en met het laatste controlepunt verenigbaar zijn; controlepunten kunnen dus fungeren als herstelpunten.
+Wanneer het schrijven aan schijf, schrijft WiredTiger alle gegevens in een momentopname aan schijf op een verenigbare manier over alle gegevensdossiers. De now- [duurzaam](https://docs.mongodb.com/manual/reference/glossary/#term-durable) gegevens fungeren als controlepunt in de gegevensbestanden. Het controlepunt zorgt ervoor dat de gegevensdossiers tot en met het laatste controlepunt verenigbaar zijn. Dit betekent dat controlepunten kunnen fungeren als herstelpunten.
 
-MongoDB configureert WiredTiger om controlepunten tot stand te brengen (d.w.z. de momentopnamegegevens aan schijf te schrijven) met intervallen van 60 seconden of 2 gigabytes dagboekgegevens.
+MongoDB configureert WiredTiger om controlepunten (namelijk schrijven de momentopnamegegevens aan schijf) met intervallen van 60 seconden of 2 GB van dagboekgegevens tot stand te brengen.
 
 Tijdens het schrijven van een nieuw controlepunt, is het vorige controlepunt nog geldig. Als zodanig, zelfs als MongoDB beëindigt of een fout ontmoet terwijl het schrijven van een nieuw controlepunt, bij nieuw begin, kan MongoDB van het laatste geldige controlepunt terugkrijgen.
 
@@ -308,13 +302,13 @@ Werken met WiredTiger, zelfs zonder [journalistiek](https://docs.mongodb.com/man
 
 #### Dagboek {#journal}
 
-WiredTiger gebruikt een write-ahead transactielogboek in combinatie met [controlepunten](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-checkpoints) om de duurzaamheid van de gegevens te waarborgen.
+WiredTiger gebruikt een write-ahead combinatie van de transactieopening van een sessie met [controlepunten](https://docs.mongodb.com/manual/core/wiredtiger/#storage-wiredtiger-checkpoints) om de duurzaamheid van de gegevens te waarborgen.
 
 Het journaal WiredTiger zet alle gegevenswijzigingen tussen controlepunten voort. Als MongoDB tussen controlepunten weggaat, gebruikt het dagboek om alle gegevens opnieuw te spelen die sinds het laatste controlepunt worden gewijzigd. Voor informatie over de frequentie waarmee MongoDB de dagboekgegevens aan schijf schrijft, zie [Journalaliseringsproces](https://docs.mongodb.com/manual/core/journaling/#journal-process).
 
 Het tijdschrift WiredTiger wordt gecomprimeerd met het [snappel](https://docs.mongodb.com/manual/core/journaling/#journal-process) compressiebibliotheek. Als u een alternatief compressiealgoritme of geen compressie wilt opgeven, gebruikt u de opdracht [storage.wiredTiger.engineConfig.journaalCompressor](https://docs.mongodb.com/manual/reference/configuration-options/#storage.wiredTiger.engineConfig.journalCompressor) instellen.
 
-Zie voor meer informatie: [Journalating met WiredTiger](https://docs.mongodb.com/manual/core/journaling/#journaling-wiredtiger).
+Zie [Journalating met WiredTiger](https://docs.mongodb.com/manual/core/journaling/#journaling-wiredtiger).
 
 >[!NOTE]
 >
@@ -322,7 +316,7 @@ Zie voor meer informatie: [Journalating met WiredTiger](https://docs.mongodb.com
 >
 >U kunt het journaling onbruikbaar maken door te plaatsen [storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled) naar false, wat de overhead van het bijhouden van het journaal kan verminderen.
 >
->Voor [standalone](https://docs.mongodb.com/manual/reference/glossary/#term-standalone) instanties, betekent het niet gebruiken van het dagboek dat u sommige gegevenswijzigingen zult verliezen wanneer MongoDB onverwacht tussen controlepunten weggaat. Voor leden van [replica-sets](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set), kan het replicatieproces voldoende duurzame garanties bieden.
+>Voor [standalone](https://docs.mongodb.com/manual/reference/glossary/#term-standalone) instanties, betekent het niet gebruiken van het dagboek dat u sommige gegevenswijzigingen verliest wanneer MongoDB onverwacht tussen controlepunten weggaat. Voor leden van [replica-sets](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set), kan het replicatieproces voldoende duurzame garanties bieden.
 
 #### Compressie {#compression}
 
@@ -344,7 +338,7 @@ Het tijdschrift WiredTiger wordt ook door gebrek samengeperst. Voor informatie o
 
 Met WiredTiger gebruikt MongoDB zowel de interne cache van WiredTiger als de cache van het bestandssysteem.
 
-Beginnend in 3.4, zal het interne geheime voorgeheugen WiredTiger, door gebrek, het grootste van één van beiden gebruiken:
+Beginnend in 3.4, gebruikt het interne geheime voorgeheugen WiredTiger, door gebrek, het grootste van of:
 
 * 50% van RAM min 1 GB, of
 * 256 MB
@@ -367,64 +361,62 @@ Om de grootte van het interne geheime voorgeheugen WiredTiger aan te passen, zie
 
 ### NUMA {#numa}
 
-Met niet-Uniform Memory Access (NUMA) kan een kernel bepalen hoe geheugen wordt toegewezen aan de processorkernen. Hoewel dit probeert om geheugentoegang voor kernen sneller te maken die ervoor zorgen dat zij tot de vereiste gegevens kunnen toegang hebben, mengt NUMA zich in MMAP die extra latentie introduceert aangezien leest niet kan worden voorspeld. Daarom moet NUMA worden uitgeschakeld voor de `mongod` op alle besturingssystemen die over de nodige mogelijkheden beschikken.
+Met NUMA (Non-Uniform Memory Access) kan een kernel bepalen hoe geheugen wordt toegewezen aan de processorkernen. Hoewel dit proces probeert om geheugentoegang voor kernen sneller te maken die ervoor zorgen dat zij tot de vereiste gegevens kunnen toegang hebben, mengt NUMA zich in MMAP die extra latentie introduceert aangezien leest niet kan worden voorspeld. Als gevolg hiervan moet NUMA worden uitgeschakeld voor de `mongod` op alle geschikte besturingssystemen.
 
-In wezen wordt het geheugen van een NUMA-architectuur aangesloten op de CPU en worden de CPU&#39;s aangesloten op een bus. In een architectuur SMP of UMA, wordt het geheugen verbonden met de bus en door cpu&#39;s gedeeld. Wanneer een draad geheugen op NUMA cpu toewijst het het volgens een beleid. Standaard wordt geheugen toegewezen dat aan de lokale CPU van de thread is gekoppeld, tenzij er geen vrije processor is. Op dat moment wordt geheugen van een vrije CPU tegen hogere kosten gebruikt. Zodra toegewezen, beweegt het geheugen zich niet tussen cpu&#39;s. De toewijzing wordt uitgevoerd door een beleid dat van de ouderdraad wordt geërft, die uiteindelijk de draad is die het proces begon.
+In wezen wordt het geheugen van een NUMA-architectuur aangesloten op de CPU en worden de CPU&#39;s aangesloten op een bus. In een SMP of een architectuur UMA, wordt het geheugen verbonden met de bus en door cpu&#39;s gedeeld. Wanneer een draad geheugen op NUMA cpu toewijst, wijst het volgens een beleid toe. Standaard wordt geheugen toegewezen dat aan de lokale CPU van de thread is gekoppeld, tenzij er geen vrije processor is. Op dat moment wordt geheugen van een vrije CPU tegen hogere kosten gebruikt. Zodra toegewezen, beweegt het geheugen zich niet tussen cpu&#39;s. De toewijzing wordt uitgevoerd door een beleid dat van de ouderdraad wordt geërft, die uiteindelijk de draad is die het proces begon.
 
-In vele gegevensbestanden die de machine als multi-core uniforme geheugenarchitectuur zien, leidt dit tot eerste volledige cpu en de secundaire vulling van cpu later, vooral als een centrale draad voor de toewijzing van geheugenbuffers verantwoordelijk is. De oplossing is het beleid van NUMA van de belangrijkste draad te veranderen die wordt gebruikt om te beginnen `mongod` proces.
-
-Dit kan worden gedaan door het volgende bevel in werking te stellen:
+In vele gegevensbestanden die de computer als multicore eenvormige geheugenarchitectuur zien, leidt dit scenario tot eerste volledige cpu en de secundaire vulling later. Het is vooral waar als een centrale draad voor het toewijzen van geheugenbuffers verantwoordelijk is. De oplossing is het beleid van NUMA van de belangrijkste draad te veranderen die wordt gebruikt om te beginnen `mongod` proces door het volgende bevel in werking te stellen:
 
 ```shell
 numactl --interleaved=all <mongod> -f config
 ```
 
-Dit beleid wijst geheugen in een ronde weg over alle knopen van cpu toe die een gelijke distributie over alle knopen verzekeren. Er wordt geen optimale toegang tot het geheugen gegenereerd, zoals bij systemen met meerdere CPU-hardware. Ongeveer de helft van de geheugenbewerkingen zal langzamer en over de bus plaatsvinden, maar `mongod` is niet op optimale wijze naar NUMA geschreven, zodat het een redelijk compromis is.
+Dit beleid wijst geheugen in een ronde weg over alle knopen van cpu toe die een gelijke distributie over alle knopen verzekeren. Er wordt geen optimale toegang tot het geheugen gegenereerd, zoals bij systemen met meerdere CPU-hardware. Ongeveer de helft van de geheugenbewerkingen verloopt trager en over de bus, maar `mongod` is niet op optimale wijze naar NUMA geschreven, dus het is een redelijk compromis.
 
 ### NUMA-problemen {#numa-issues}
 
-Als de `mongod` het proces is gestart vanaf een andere locatie dan de `/etc/init.d` map, is het waarschijnlijk dat deze niet wordt gestart met het juiste NUMA-beleid. Afhankelijk van het standaardbeleid kunnen er problemen optreden. Dit komt omdat de verschillende Linux-installatieprogramma&#39;s voor pakketbeheer voor MongoDB ook een service installeren met configuratiebestanden die zich bevinden in `/etc/init.d` die de hierboven beschreven stap uitvoeren. Als u MongoDB rechtstreeks vanuit een archief installeert en uitvoert ( `.tar.gz`) moet u handmatig mongod onder de `numactl` proces.
+Als de `mongod` het proces is gestart vanaf een andere locatie dan de `/etc/init.d` , is het waarschijnlijk niet begonnen met het juiste beleid van NUMA. Afhankelijk van het standaardbeleid kunnen er problemen optreden. De reden hiervoor is dat de verschillende Linux® Package Manager-installatieprogramma&#39;s voor MongoDB ook een service met configuratiebestanden installeren in `/etc/init.d` die de hierboven beschreven stap uitvoeren. Als u MongoDB rechtstreeks vanuit een archief installeert en uitvoert ( `.tar.gz`), moet u manueel onder `numactl` proces.
 
 >[!NOTE]
 >
 >Voor meer informatie over het beschikbare beleid NUMA raadpleegt u de [numerieke documentatie](https://linux.die.net/man/8/numactl).
 
-Het MongoDB-proces zal zich anders gedragen in het kader van verschillende toewijzingsbeleidslijnen:
+Het MongoDB-proces gedraagt zich anders in het kader van verschillende toewijzingsbeleid:
 
 ```
 
 ```
 
 * `-membind=<nodes>`
-Alleen toewijzen op de vermelde knooppunten. Mongod wijst geen geheugen toe op vermelde knooppunten en gebruikt mogelijk niet alle beschikbare geheugen.
+Alleen toewijzen op de vermelde knooppunten. Mongod wijst geen geheugen toe op vermelde knooppunten en gebruikt mogelijk niet al het beschikbare geheugen.
 
 * `-cpunodebind=<nodes>`
-Alleen uitvoeren op de knooppunten. Mongod wordt alleen uitgevoerd op de opgegeven knooppunten en gebruikt alleen geheugen dat beschikbaar is op die knooppunten.
+Alleen op de knooppunten uitvoeren. Mongod wordt alleen uitgevoerd op de opgegeven knooppunten en gebruikt alleen geheugen dat beschikbaar is op die knooppunten.
 
 * `-physcpubind=<nodes>`
-Alleen uitvoeren op vermelde CPU&#39;s (kernen). Mongod wordt alleen uitgevoerd op de CPU&#39;s die worden vermeld en gebruikt alleen geheugen dat beschikbaar is op die CPU&#39;s.
+Alleen uitvoeren op vermelde CPU&#39;s (cores). Mongod voert alleen de CPU&#39;s uit die worden vermeld en gebruikt alleen het geheugen dat beschikbaar is voor die CPU&#39;s.
 
 * `--localalloc`
-Wijs altijd geheugen op de huidige knoop toe, maar gebruik alle knopen de draadlooppas. Als één draad toewijzing uitvoert, dan slechts zal het geheugen beschikbaar aan die cpu worden gebruikt.
+Wijs altijd geheugen op de huidige knoop toe, maar gebruik alle knopen de draadlooppas. Als één draad toewijzing uitvoert, dan slechts wordt het geheugen beschikbaar aan die cpu gebruikt.
 
 * `--preferred=<node>`
 Geeft de voorkeur aan toewijzing aan een knooppunt, maar valt terug naar andere knooppunten als het voorkeurknooppunt vol is. U kunt een relatieve notatie gebruiken voor het definiëren van een knooppunt. Ook, lopen de draden op alle knopen.
 
-Een deel van het beleid kan ertoe leiden dat minder dan al beschikbaar RAM wordt gegeven aan `mongod` proces. In tegenstelling tot MySQL voorkomt MongoDB actief paginering op besturingssysteemniveau, en dus ook de `mongod` minder geheugen beschikbaar.
+Een deel van het beleid kan ertoe leiden dat minder dan al beschikbaar RAM wordt gegeven aan `mongod` proces. In tegenstelling tot MySQL vermijdt MongoDB actief paginering op besturingssysteemniveau, en daarom de `mongod` minder geheugen beschikbaar.
 
 #### Wisselen {#swapping}
 
-Wegens de geheugenintensieve aard van gegevensbestanden, moet de uitwisseling van het niveau van het werkende systeem worden onbruikbaar gemaakt. Met het MongoDB-proces voorkomt u dat het ontwerp wordt verwisseld.
+Wegens de geheugenintensieve aard van gegevensbestanden, moet de uitwisseling van het niveau van het werkende systeem worden onbruikbaar gemaakt. Met het MongoDB-proces vermijdt u verwisselingen per ontwerp.
 
 #### Externe bestandssystemen {#remote-filesystems}
 
-Externe bestandssystemen, zoals NFS, worden niet aanbevolen voor interne gegevensbestanden van MongoDB (de bestanden van de modelprocesdatabase), omdat deze te veel latentie introduceren. Dit mag niet worden verward met het gedeelde bestandssysteem dat vereist is voor de opslag van Oak Blob&#39;s (FileDataStore), waar NFS wordt aanbevolen.
+Externe bestandssystemen, zoals NFS, worden niet aanbevolen voor interne gegevensbestanden van MongoDB (de bestanden van de modelprocesdatabase), omdat deze te veel latentie introduceren. Let op het verschil met het gedeelde bestandssysteem dat vereist is voor de opslag van Oak Blob&#39;s (FileDataStore), waarbij NFS wordt aanbevolen.
 
 #### Vooruit lezen {#read-ahead}
 
-Lees-vooruit moet worden aangepast zodat wanneer een pagina wordt geplakt in het gebruik van een willekeurige leesbewerking, overbodige blokken niet van de schijf worden gelezen, wat leidt tot onnodig verbruik van I/O-bandbreedte.
+Tune Read forward zodat wanneer een pagina binnen gebruikend een willekeurig gelezen wordt gepagineerd, de onnodige blokken niet van schijf worden gelezen. Dergelijke resultaten betekenen een onnodig gebruik van I/O-bandbreedte.
 
-### Linux-vereisten {#linux-requirements}
+### Linux®-vereisten {#linux-requirements}
 
 #### Minimale kernelversies {#minimum-kernel-versions}
 
@@ -436,19 +428,19 @@ Lees-vooruit moet worden aangepast zodat wanneer een pagina wordt geplakt in het
 
 **atijd uitschakelen**
 
-Het wordt aanbevolen `atime` wordt uitgeschakeld voor de schijven die de databases zullen bevatten.
+Het wordt aanbevolen `atime` wordt uitgeschakeld voor de schijven die de databases bevatten.
 
 **De NOOP-schijfplanner instellen**
 
-U kunt dit doen door:
+Ga als volgt te werk:
 
-Eerst, controlerend de I/O planner die momenteel wordt geplaatst. Dit kan worden gedaan door het volgende bevel in werking te stellen:
+Eerst, controlerend de I/O planner die door het volgende bevel in werking te stellen wordt geplaatst:
 
 ```shell
 cat /sys/block/sdg/queue/scheduler
 ```
 
-Als de reactie `noop` er is niets dat u verder hoeft te doen .
+Als de reactie `noop`Maar er is niets meer dat u moet doen.
 
 Als NOOP niet de I/O planner is die opstelling is, kunt u het veranderen door te lopen:
 
@@ -458,7 +450,7 @@ echo noop > /sys/block/sdg/queue/scheduler
 
 **De waarde voor Vooraf lezen aanpassen**
 
-Aanbevolen wordt een waarde van 32 te gebruiken voor de schijven waarop MongoDB-databases worden uitgevoerd. Dit komt neer op 16 kilobytes. U kunt dit instellen door het volgende uit te voeren:
+U wordt aangeraden een waarde van 32 te gebruiken voor de schijven waarop MongoDB-databases worden uitgevoerd. Deze waarde bedraagt 16 kB. U kunt het plaatsen door het volgende in werking te stellen:
 
 ```shell
 sudo blockdev --setra <value> <device>
@@ -466,7 +458,7 @@ sudo blockdev --setra <value> <device>
 
 #### NTP inschakelen {#enable-ntp}
 
-Zorg ervoor u NTP hebt geïnstalleerd en lopend op de machine die de gegevensbestanden MongoDB ontvangt. U kunt de toepassing bijvoorbeeld installeren met Yum package Manager op een CentOS-computer:
+Zorg ervoor u NTP hebt geïnstalleerd en lopend op de machine die de gegevensbestanden MongoDB ontvangt. U kunt de toepassing bijvoorbeeld installeren met Yum Package Manager op een CentOS-computer:
 
 ```shell
 sudo yum install ntp
@@ -476,7 +468,7 @@ Nadat het NTP daemon is geïnstalleerd en met succes is begonnen, kunt u het dri
 
 #### Transparante grote pagina&#39;s uitschakelen {#disable-transparent-huge-pages}
 
-Red Hat Linux gebruikt een algoritme van het geheugenbeheer genoemd Transparante Grote Pagina&#39;s (THP). Het wordt aanbevolen dit uit te schakelen als u het besturingssysteem gebruikt voor databasewerklasten.
+Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transparent Huge Pages (THP). Het wordt aanbevolen dit uit te schakelen als u het besturingssysteem gebruikt voor databasewerklasten.
 
 U kunt deze uitschakelen door de onderstaande procedure te volgen:
 
@@ -507,7 +499,7 @@ U kunt deze uitschakelen door de onderstaande procedure te volgen:
 
 In de meeste installaties waar NUMA is ingeschakeld, schakelt de MongoDB-daemon deze automatisch uit als deze als service wordt uitgevoerd vanuit de `/etc/init.d` map.
 
-Waar dit niet het geval is, kunt u NUMA op een per procesniveau onbruikbaar maken. Voer de volgende opdrachten uit om het uit te schakelen:
+Als dit niet het geval is, kunt u NUMA op een per procesniveau onbruikbaar maken. Voer de volgende opdrachten uit om het uit te schakelen:
 
 ```shell
 numactl --interleave=all <path_to_process>
@@ -523,7 +515,7 @@ echo 0 > /proc/sys/vm/zone_reclaim_mode
 
 #### Kneep de instellingen voor de limiet voor het mondige proces {#tweak-the-ulimit-settings-for-the-mongod-process}
 
-Linux staat voor configureerbare controle over de toewijzing van middelen via toe `ulimit` gebruiken. Dit kan op een gebruiker of op een per procesbasis worden gedaan.
+Linux® maakt configureerbare controle mogelijk over de toewijzing van bronnen via de `ulimit` gebruiken. Deze configuratie kan op een gebruiker of op een per procesbasis worden gedaan.
 
 U wordt aangeraden de limiet voor het mongoproces in te stellen op basis van de [Door MongoDB aanbevolen instellingen voor limiet](https://docs.mongodb.org/manual/reference/ulimit/#recommended-ulimit-settings).
 
@@ -535,9 +527,9 @@ Voor informatie over het gebruik `mongoperf`, bekijk de [MongoDB-documentatie](h
 
 >[!NOTE]
 >
->Let op: `mongoperf` is ontworpen als een indicator voor de prestaties van MongoDB op het platform waarop het wordt uitgevoerd. Daarom mogen de resultaten niet als definitief worden beschouwd voor de prestaties van een productiesysteem.
+>De `mongoperf` is een indicator van de prestaties van MongoDB op het platform dat het in werking wordt gesteld. Bijgevolg mogen de resultaten niet als definitief worden beschouwd voor de prestaties van een productiesysteem.
 >
->Voor nauwkeuriger prestatiesresultaten kunt u complementaire tests met uitvoeren `fio` Linux.
+>Voor nauwkeuriger prestatiesresultaten kunt u complementaire tests met uitvoeren `fio` Het gereedschap Linux®.
 
 **Leesprestaties testen op de virtuele machines die uw implementatie vormen**
 
@@ -547,7 +539,7 @@ Nadat u het hulpmiddel hebt geïnstalleerd, schakelaar aan de MongoDB gegevensbe
 echo "{nThreads:32,fileSizeMB:1000,r:true}" | mongoperf
 ```
 
-De gewenste uitvoer zou tot twee gigabytes per seconde (2GB/s) en 500.000 IOPS moeten bereiken die bij 32 draden voor alle instanties MongoDB lopen.
+De gewenste uitvoer zou tot twee gigabytes per seconde (2 GB/s) en 500.000 IOPS moeten bereiken die bij 32 draden voor alle instanties MongoDB lopen.
 
 Voer een tweede test uit, dit keer met in geheugen toegewezen bestanden, door de `mmf:true` parameter:
 
@@ -558,8 +550,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 De uitvoer van de tweede test moet aanzienlijk hoger zijn dan die van de eerste, wat de prestaties van de geheugenoverdracht aangeeft.
 
 >[!NOTE]
->
->Controleer bij het uitvoeren van de tests de I/O-gebruiksstatistieken voor de virtuele machines in kwestie in uw besturingssysteem. Als ze waarden aangeven die lager zijn dan 100 procent voor I/O lezen, kan er een probleem zijn met uw virtuele machine.
+Controleer bij het uitvoeren van de tests de I/O-gebruiksstatistieken voor de virtuele machines in kwestie in uw besturingssysteem. Als ze waarden aangeven die lager zijn dan 100 procent voor I/O lezen, kan er een probleem zijn met uw virtuele machine.
 
 **De schrijfprestaties van de primaire MongoDB-instantie testen**
 
@@ -578,11 +569,11 @@ De gewenste output zou 12 megabytes per seconde moeten zijn en rond 3000 IOPS, m
 Als u WMWare ESX gebruikt om uw gevirtualiseerde milieu&#39;s te beheren en op te stellen, zorg ervoor u de volgende montages van de ESX console uitvoert om verrichting MongoDB aan te passen:
 
 1. Geheugenballon uitschakelen
-1. Het geheugen vooraf toewijzen en reserveren voor de virtuele machines die de MongoDB-databases zullen hosten
+1. Het geheugen vooraf toewijzen en reserveren voor de virtuele machines die de MongoDB-databases hosten
 1. Gebruik I/O-controle van opslag om voldoende I/O toe te wijzen aan de `mongod` proces.
-1. Garandeer CPU-bronnen van de computers die als host fungeren voor MongoDB door de instelling [CPU-reservering](https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/configuring_virtual_machines/t_allocate_cpu_resources.html)
+1. Garandeer CPU-bronnen van de computers die als host fungeren voor MongoDB door de instelling [CPU-reservering](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. Overweeg om ParaVirtual I/O-stuurprogramma&#39;s te gebruiken. Voor meer informatie over hoe te om dit te doen, controleer dit [knowledgebase, artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. Overweeg om ParaVirtual I/O-stuurprogramma&#39;s te gebruiken. Zie [knowledgebase, artikel](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
 
 ### Amazon Web Services {#amazon-web-services}
 
@@ -596,37 +587,37 @@ Deze advertentie bekijken op [MongoDB veilig implementeren](https://blogs.adobe.
 
 ### Het besturingssysteem kiezen voor de Dispatcher {#choosing-the-operating-system-for-the-dispatcher}
 
-Voor een correcte implementatie van MongoDB moet het besturingssysteem dat de dispatcher host, worden uitgevoerd **Apache httpd** **versie 2.4 of hoger.**
+Om de implementatie van MongoDB op de juiste wijze te kunnen uitvoeren, moet het besturingssysteem dat de Dispatcher host, worden uitgevoerd **Apache httpd** **versie 2.4 of hoger.**
 
 Ook, zorg ervoor dat alle bibliotheken die in uw bouwstijl worden gebruikt bijgewerkt zijn om veiligheidsimplicaties te minimaliseren.
 
 ### Dispatcher Configuration {#dispatcher-configuration}
 
-Een typische configuratie van de Verzender zal tussen tien tot twintig keer meer de verzoekproductie van één enkele AEM instantie dienen.
+Een typische configuratie van de Verzender dient tussen tien tot 20 keer meer de verzoekproductie van één enkele AEM instantie.
 
-Aangezien de Dispatcher voornamelijk staatloos is, kan deze eenvoudig horizontaal worden geschaald. In sommige plaatsingen, moeten de auteurs van de toegang tot van bepaalde middelen worden beperkt. Daarom wordt u ten zeerste aangeraden een dispatcher te gebruiken bij de auteur.
+Omdat de Dispatcher geen status heeft, kan deze eenvoudig horizontaal worden geschaald. In sommige plaatsingen, moeten de auteurs van de toegang tot van bepaalde middelen worden beperkt. Het wordt aanbevolen een Dispatcher te gebruiken bij de auteur-instanties.
 
-Wanneer AEM zonder dispatcher wordt uitgevoerd, moet SSL-beëindiging en taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies affiniteit moeten hebben met de AEM instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. Het doel hiervan is ervoor te zorgen dat updates van de inhoud minimale latentie vertonen.
+Wanneer AEM zonder Dispatcher wordt uitgevoerd, moeten SSL-beëindiging en taakverdeling door een andere toepassing worden uitgevoerd. Dit is vereist omdat sessies de affiniteit moeten hebben met de AEM instantie waarop ze zijn gemaakt, een concept dat sticky connections wordt genoemd. De reden hiervoor is dat updates van de inhoud minimale vertraging vertonen.
 
-Controleer de [Documentatie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) voor meer informatie over hoe te om het te vormen.
+Controleer de [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor meer informatie over hoe te om het te vormen.
 
 ### Aanvullende configuratie {#additional-configuration}
 
 #### Vaste verbindingen {#sticky-connections}
 
-Vaste verbindingen zorgen ervoor dat gepersonaliseerde pagina&#39;s en zittingsgegevens voor één gebruiker allen op de zelfde instantie van AEM samengesteld zijn. Dit gegeven wordt opgeslagen op de instantie, zodat zullen de verdere verzoeken van de zelfde gebruiker aan de zelfde instantie terugkeren.
+Vaste verbindingen zorgen ervoor dat gepersonaliseerde pagina&#39;s en zittingsgegevens voor één gebruiker allen op de zelfde instantie van AEM samengesteld zijn. Dit gegeven wordt opgeslagen op de instantie, zodat de verdere verzoeken van de zelfde gebruiker aan de zelfde instantie terugkeren.
 
-Het wordt aanbevolen dat kleverige verbindingen zijn ingeschakeld voor alle binnenlagen die aanvragen naar de AEM instanties routeren, waardoor latere verzoeken om hetzelfde AEM te bereiken, worden aangemoedigd. Dit zal helpen latentie minimaliseren die anders merkbaar is wanneer de inhoud tussen instanties wordt bijgewerkt.
+Het wordt aanbevolen dat kleverige verbindingen zijn ingeschakeld voor alle binnenlagen die aanvragen naar de AEM instanties routeren, waardoor latere verzoeken om hetzelfde AEM te bereiken, worden aangemoedigd. Zo minimaliseert u de latentie die anders opvalt wanneer de inhoud tussen instanties wordt bijgewerkt.
 
 #### Lange vervaldatum {#long-expires}
 
-Inhoud die wordt verzonden van een AEM dispatcher, heeft standaard de koppen Laatst gewijzigd en Etag, zonder aanduiding van de vervaldatum van de inhoud. Hoewel dit ervoor zorgt dat de gebruikersinterface altijd de recentste versie van het middel krijgt, betekent het ook dat browser een GET verrichting zal uitvoeren om te controleren of is het middel veranderd. Dit kan leiden tot meerdere aanvragen waarop het HTTP-antwoord 304 is (Niet gewijzigd), afhankelijk van het laden van de pagina. Voor middelen die gekend om niet te verlopen zijn, verloopt het plaatsen van een kopbal en het verwijderen van de laatste-Gewijzigde en kopballen ETag zullen ertoe leiden dat de inhoud in het voorgeheugen wordt opgeslagen en geen verdere updateverzoeken om worden gemaakt tot de datum in de kopbal van Verloopt wordt voldaan.
+Inhoud die wordt verzonden van een AEM Dispatcher, heeft standaard de koppen Laatst gewijzigd en Etag, zonder aanduiding van de vervaldatum van de inhoud. Deze stroom zorgt ervoor dat de gebruikersinterface altijd de recentste versie van het middel krijgt. Het betekent ook dat de browser een GET-bewerking uitvoert om te zien of de resource is gewijzigd. Dit kan leiden tot meerdere aanvragen waarop het HTTP-antwoord 304 (Niet gewijzigd) is, afhankelijk van het laden van de pagina. Voor middelen die niet verlopen, het plaatsen van een kopbal Verloopt en het verwijderen van de laatste-Gewijzigde en kopballen ETag veroorzaken de inhoud om in het voorgeheugen onder te brengen. En, worden geen verdere updateverzoeken gemaakt tot de datum in de kopbal van Verlopen wordt voldaan.
 
-Nochtans, betekent het gebruiken van deze methode dat er geen redelijke manier is om het middel te veroorzaken om in browser te verlopen alvorens de kopbal verloopt. Om dit te verlichten, kan HtmlClientLibraryManager worden gevormd om onveranderlijke URLs voor cliëntbibliotheken te gebruiken.
+Nochtans, betekent het gebruiken van deze methode dat er geen redelijke manier is om het middel te veroorzaken om in browser te verlopen alvorens de kopbal verloopt. Om dit werkschema te verlichten, kan HtmlClientLibraryManager worden gevormd om onveranderlijke URLs voor cliëntbibliotheken te gebruiken.
 
-Deze URL&#39;s worden gegarandeerd niet gewijzigd. Wanneer de hoofdtekst van de bron in de URL verandert, worden de wijzigingen automatisch doorgevoerd in de URL, zodat de browser de juiste versie van de bron aanvraagt.
+Deze URL&#39;s worden gegarandeerd niet gewijzigd. Wanneer de hoofdtekst van de bron in de URL verandert, worden de wijzigingen doorgevoerd in de URL die ervoor zorgt dat de browser de juiste versie van de bron opvraagt.
 
-De standaardconfiguratie voegt een selecteur aan HtmlClientLibraryManager toe. Als kiezer wordt de bron in de dispatcher in het cachegeheugen opgeslagen met de kiezer intact. Deze kiezer kan ook worden gebruikt om het juiste vervalgedrag te garanderen. De standaardkiezer volgt de `lc-.*?-lc` patroon. De volgende Apache httpd-configuratierichtlijnen zorgen ervoor dat alle aanvragen die overeenkomen met dat patroon, een geschikte vervaltijd krijgen.
+De standaardconfiguratie voegt een selecteur aan HtmlClientLibraryManager toe. Als kiezer wordt de bron in het cachegeheugen opgeslagen in de Dispatcher met de kiezer intact. Deze kiezer kan ook worden gebruikt om het juiste vervalgedrag te garanderen. De standaardkiezer volgt de `lc-.*?-lc` patroon. De volgende Apache httpd-configuratierichtlijnen zorgen ervoor dat alle aanvragen die overeenkomen met dat patroon, een geschikte vervaltijd krijgen.
 
 ```xml
 Header set Expires "Tue, 20 Jan 2037 04:20:42 GMT" "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*lc-.*?-lc.*/)"
@@ -638,9 +629,9 @@ Header unset Pragma "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*l
 
 #### Geen schuine streep {#no-sniff}
 
-Wanneer inhoud zonder inhoudstype wordt verzonden, proberen veel browsers het type inhoud te raden door de eerste paar bytes van de inhoud te lezen. Dit heet &#39;snuiven&#39;. Door te niveren ontstaat een kwetsbaarheid voor beveiliging, omdat gebruikers die naar de opslagplaats kunnen schrijven, schadelijke inhoud zonder inhoudstype kunnen uploaden.
+Wanneer inhoud zonder inhoudstype wordt verzonden, proberen veel browsers het type inhoud te raden door de eerste paar bytes van de inhoud te lezen. Deze methode wordt &#39;snuiven&#39; genoemd. Door te niveren ontstaat een kwetsbaarheid voor beveiliging, omdat gebruikers die naar de opslagplaats kunnen schrijven, schadelijke inhoud zonder inhoudstype kunnen uploaden.
 
-Daarom is het raadzaam een `no-sniff` aan bronnen die door de verzender worden aangeleverd. De verzender slaat de koppen echter niet in de cache op. Dit betekent dat voor alle inhoud die vanuit het lokale bestandssysteem wordt aangeboden, het inhoudstype wordt bepaald door de extensie in plaats van de oorspronkelijke header van het inhoudstype van de AEM server van oorsprong.
+Daarom is het raadzaam een `no-sniff` aan bronnen die door de Dispatcher worden aangeboden. De Dispatcher slaat echter geen koppen in de cache op. Als zodanig betekent dit dat voor alle inhoud die vanuit het lokale bestandssysteem wordt aangeboden, het inhoudstype wordt bepaald door de extensie in plaats van de oorspronkelijke header van het inhoudstype van de AEM server van oorsprong.
 
 Geen sniff kan veilig worden toegelaten als de Webtoepassing gekend om nooit caching middelen zonder een dossiertype te dienen.
 
@@ -662,17 +653,16 @@ Header setifempty Content-Type application/javascript env=jsonp_request
 
 #### Beveiligingsbeleid voor inhoud {#content-security-policy}
 
-Met de standaardinstellingen voor verzenders kunt u een beveiligingsbeleid voor inhoud openen, ook wel CSP genoemd. Hierdoor kan een pagina bronnen laden van alle domeinen waarop het standaardbeleid van de browsersandbox van toepassing is.
+Met de standaardinstellingen voor Verzender kunt u een geopend Content Security Policy (Beveiligingsbeleid voor inhoud) openen, ook wel CSP genoemd. Met deze instellingen kan een pagina bronnen laden van alle domeinen waarvoor het standaardbeleid van de browsersandbox geldt.
 
-Het is wenselijk om te beperken waar de middelen van kunnen worden geladen om ladingscode in de motor te vermijden javascript van onbetrouwbare of niet geverifieerde buitenlandse servers.
+Het is wenselijk te beperken waar de middelen van kunnen worden geladen om te vermijden ladend code in de motor JavaScript van onbetrouwbare of niet geverifieerde buitenlandse servers.
 
-CSP staat voor het verfijnen van beleid toe. In een complexe toepassing moeten CSP-headers echter zorgvuldig worden ontwikkeld, omdat beleid dat te restrictief is, onderdelen van de gebruikersinterface kan doorbreken.
+CSP staat voor het verfijnen van beleid toe. In een complexe toepassing, echter, moeten de kopballen CSP met zorg worden ontwikkeld aangezien het beleid dat te restrictief is delen van het gebruikersinterface kan breken.
 
 >[!NOTE]
->
->Zie voor meer informatie over hoe dit werkt de [OWASP-pagina over beveiligingsbeleid voor inhoud](https://www.owasp.org/index.php/Content_Security_Policy).
+Zie voor meer informatie over hoe dit werkt de [OWASP-pagina over beveiligingsbeleid voor inhoud](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
-### Grootte wijzigen {#sizing}
+### Grootte {#sizing}
 
 Zie voor meer informatie over het instellen van de grootte de [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md).
 
@@ -686,12 +676,11 @@ Voor algemene informatie over de prestaties van MongoDB raadpleegt u [De prestat
 
 Hoewel het gelijktijdige gebruik van meerdere AEM instanties met één database wordt ondersteund door MongoMK, zijn gelijktijdige installaties niet mogelijk.
 
-Als u dit wilt omzeilen, moet u eerst de installatie uitvoeren met één lid en de andere leden toevoegen nadat de eerste installatie is voltooid.
+Om dit probleem te verhelpen, dient u de installatie eerst uit te voeren met één lid en de andere leden toe te voegen nadat de eerste installatie is voltooid.
 
 ### Lengte paginanaam {#page-name-length}
 
 Als AEM wordt uitgevoerd op een implementatie van de persistentiebeheersoftware van MongoMK, [paginanamen mogen maximaal 150 tekens bevatten.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
->
->[Raadpleeg de documentatie van MongoDB](https://docs.mongodb.com/manual/reference/limits/) om uzelf ook vertrouwd te maken met de bekende beperkingen en drempels van MongoDB zelf.
+Zie de [MongoDB-documentatie](https://docs.mongodb.com/manual/reference/limits/) zodat u zich met de bekende beperkingen en drempels van MongoDB kunt vertrouwd maken.

@@ -1,8 +1,6 @@
 ---
 title: Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA
-seo-title: How to Develop AEM Projects using IntelliJ IDEA
-description: IntelliJ IDEA gebruiken om AEM projecten te ontwikkelen
-seo-description: Using IntelliJ IDEA to develop AEM projects
+description: IntelliJ IDEA gebruiken om AEM Projecten te ontwikkelen
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 0%
 
 Om met AEM ontwikkeling op IntelliJ te beginnen, zijn de volgende stappen vereist.
 
-Elk van hen wordt meer in detail uitgelegd in de rest van dit hoe-te.
+Elke stap wordt meer gedetailleerd uitgelegd in de rest van dit onderwerp.
 
 * IntelliJ installeren
 * Uw AEM instellen op basis van Maven
@@ -36,7 +34,7 @@ Elk van hen wordt meer in detail uitgelegd in de rest van dit hoe-te.
 
 ### IntelliJ IDEA installeren {#install-intellij-idea}
 
-IntelliJ IDEA downloaden van [de pagina Downloads bij JetBrains](https://www.jetbrains.com/idea/download/index.html).
+IntelliJ IDEA downloaden van [de pagina Downloads bij JetBrains](https://www.jetbrains.com/idea/download/).
 
 Volg vervolgens de installatie-instructies op die pagina.
 
@@ -44,11 +42,11 @@ Volg vervolgens de installatie-instructies op die pagina.
 
 Stel vervolgens uw project in met Maven zoals beschreven in [Hoe kan ik AEM projecten bouwen met Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Om met AEM projecten in IntelliJ IDEA te beginnen, de basisopstelling in [Binnen 5 minuten aan de slag](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) volstaat.
+Om met AEM Projecten in IntelliJ IDEA te beginnen werken, de basisopstelling in [Binnen 5 minuten aan de slag](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) volstaat.
 
 ### JSP-ondersteuning voorbereiden voor IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
-IntelliJ IDEA kan ook ondersteuning bieden bij het werken met JSP, bijvoorbeeld
+IntelliJ IDEA kan steun in het werken met JSP ook verlenen, bijvoorbeeld:
 
 * tagbibliotheken automatisch invullen
 * bewustzijn van objecten gedefinieerd door `<cq:defineObjects />` en `<sling:defineObjects />`
@@ -86,12 +84,12 @@ De volgende stappen zijn noodzakelijk voor het zuiveren JSPs met IntelliJ IDEA
 
 #### Opstelling een Facet van het Web in het Project {#set-up-a-web-facet-in-the-project}
 
-IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Aangezien IDEA de `content-package-maven-plugin` instellingen, moet dit handmatig worden geconfigureerd.
+IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat IDEA het `content-package-maven-plugin` instellingen, moet deze handmatig worden geconfigureerd.
 
 1. Ga naar **Bestand -> Projectstructuur**
 1. Selecteer **Inhoud** module
 1. Klikken **+** boven de lijst van modules en selecteer **Web**
-1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder ontsproten scherm.
+1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder opgenomen screenshot.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
@@ -111,7 +109,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Aangez
 1. Selecteer in het dialoogvenster Configuratie de optie **Configureren** naast **Toepassingsserver** en een generieke server configureren
 1. Stel de startpagina in op een geschikte URL als u een browser wilt openen wanneer u de foutopsporing start
 1. Alles verwijderen **Voor starten** taken als u vlt autosync gebruikt, of aangewezen Gemaakt taken vormen als u niet
-1. Op de **Opstarten/Verbinding** deelvenster, pas de poort indien nodig aan
+1. Op de **Opstarten/Verbinding** deelvenster, pas indien nodig de poort aan
 1. Kopieer de opdrachtregelargumenten die IntelliJ IDEA voorstelt
 
 ![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
@@ -120,7 +118,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Aangez
 
 De laatste vereiste stap is AEM te beginnen met de JVM-opties die door IntelliJ IDEA worden voorgesteld.
 
-U kunt dit doen door het AEM jar dossier direct te beginnen en deze opties toe te voegen, bijvoorbeeld met de volgende bevellijn:
+Start het AEM jar-bestand rechtstreeks en voeg deze opties toe, bijvoorbeeld met de volgende opdrachtregel:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -151,4 +149,4 @@ U bent nu allen opstelling voor het zuiveren van uw JSPs in AEM.
 
 ### Fouten opsporen in bundels met IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-De code in bundels kan worden gezuiverd gebruikend standaard generische verre zuivert verbinding. U kunt de [Jetbrain-documentatie over foutopsporing op afstand](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).
+De code in bundels kan worden gezuiverd gebruikend standaard generische verre zuivert verbinding. U kunt de [Jetbrain-documentatie over foutopsporing op afstand](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).

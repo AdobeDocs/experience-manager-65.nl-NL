@@ -9,9 +9,9 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Voordat u de mogelijkheden voor interactief communicatie- en correspondentiebehe
 
 * Er wordt voldaan aan de geheugenvereisten. AEM Forms-add-on-pakket vereist:
 
-   * 15 GB tijdelijke ruimte voor Microsoft Windows-installaties.
+   * 15 GB tijdelijke ruimte voor Microsoft® Windows-installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
 
 * Extra eisen voor op UNIX gebaseerde systemen: Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem.
@@ -99,14 +99,14 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
-   U kunt het pakket ook downloaden via de directe koppeling in het dialoogvenster [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
+   U kunt het pakket ook downloaden via de directe koppeling in het dialoogvenster [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) artikel.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in de [AEM-installatiemap]Het bestand /crx-quickstart/logs/error.log en het logbestand zijn stabiel.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de niet-geregistreerde ServiceEvent-berichten en de niet-geregistreerde ServiceEvent-berichten niet meer worden weergegeven in de [AEM-installatiemap]Het bestand /crx-quickstart/logs/error.log en het logbestand zijn stabiel.
 1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
-AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
+AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn de configuratie van Dispatcher en Adobe Target.
 
 ### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
 
@@ -117,7 +117,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 1. Stop de onderliggende AEM instantie.
 1. Open de [AEM installatiemap]\crx-quickstart\conf\sling.properties.
 
-   Als u [AEM installatiemap]\crx-quickstart\bin\start.bat om AEM te starten, bewerkt u vervolgens de eigenschappen sling.property op [AEM_root]\crx-quickstart\.
+   Als u [AEM installatiemap]\crx-quickstart\bin\start.bat om AEM te starten, bewerkt u vervolgens de eigenschappen sling.properties op [AEM_root]\crx-quickstart\.
 
 1. Voeg de volgende eigenschappen toe aan het bestand sling.properties:
 
@@ -141,7 +141,7 @@ Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket 
 
 #### Compatibiliteitspakket installeren {#install-compatibility-package}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.5 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u de [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM 6.5 Forms tot stand te brengen. Als u een upgrade hebt uitgevoerd of een migratie hebt uitgevoerd van een vorige versie en u wilt doorgaan met het gebruik van letters (Correspondentiebeheer), installeert u de [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 Met het compatibiliteitspakket voor AEMFD kunt u de volgende middelen gebruiken van AEM 6.4 Forms, AEM 6.3 Forms en AEM 6.2 Forms op AEM 6.5 Forms:
 
@@ -152,7 +152,7 @@ Met het compatibiliteitspakket voor AEMFD kunt u de volgende middelen gebruiken 
 
 #### Dispatcher configureren {#configure-dispatcher}
 
-Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverdeling dat kan worden gebruikt in combinatie met een webserver op bedrijfsniveau. Als u [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)Voer vervolgens de volgende configuraties voor AEM Forms uit:
+Dispatcher is een Adobe Experience Manager-programma voor caching en taakverdeling dat wordt gebruikt met een webserver op bedrijfsniveau. Als u [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en)Voer vervolgens de volgende configuraties voor AEM Forms uit:
 
 1. Toegang voor AEM Forms configureren:
 
@@ -160,21 +160,21 @@ Dispatcher is een Adobe Experience Manager-programma voor caching en/of taakverd
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Sla het bestand op en sluit het. Zie voor meer informatie over filters [Documentatie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Sla het bestand op en sluit het. Zie voor meer informatie over filters [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. In de **Configuraties** selecteert u de **Filter Apache Sling Referrer** optie. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De opmaak van de vermelding is https://&#39;[server]:[poort]&quot;.
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. In de **Configuraties** selecteert u de **Filter Apache Sling Referrer** optie. Voer in het veld Hosts toestaan de hostnaam van de Dispatcher in om het als referentie toe te staan en klik op **Opslaan**. De opmaak van de vermelding is https://&#39;[server]:[poort]&quot;.
 
 #### Adobe Target integreren {#integrate-adobe-target}
 
-Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
+Uw klanten zullen waarschijnlijk een interactieve mededeling verlaten als de ervaring het levert niet aansprekend is. Hoewel het voor de klanten frustrerend is, keert het ook het steunvolume en de kosten voor uw organisatie terug. Het is kritiek en uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omzettingssnelheid verhoogt. AEM formulieren vormen de sleutel tot dit probleem.
 
-AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM formulieren kunnen worden geïntegreerd met Adobe Target, een Adobe Experience Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen te bieden via meerdere digitale kanalen. Adobe Target gebruiken om interactieve communicatie aan te passen, [Adobe Target integreren met AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
 #### SSL-communicatie configureren voor formuliergegevensmodel  {#configure-ssl-communcation-for-form-data-model}
 
-U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-communicatie wilt inschakelen voor het formuliergegevensmodel, voegt u certificaten toe aan het Java Trust Store van alle exemplaren voordat u een AEM Forms-exemplaar start. U kunt de onderstaande opdracht uitvoeren om de certificaten toe te voegen:
+U kunt SSL-communicatie inschakelen voor het formuliergegevensmodel. Als u SSL-communicatie wilt inschakelen voor het formuliergegevensmodel, voegt u certificaten toe aan het Java™ Trust Store van alle exemplaren voordat u een AEM Forms-exemplaar start. U kunt de onderstaande opdracht uitvoeren om de certificaten toe te voegen:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

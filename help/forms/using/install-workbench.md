@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Dit document bevat instructies voor het installeren en configureren van AEM Form
 
 ## Wie moet dit document lezen? {#who-should-read-this-doc}
 
-Dit document is bedoeld voor beheerders of ontwikkelaars die verantwoordelijk zijn voor het installeren, configureren, beheren of implementeren van Workbench. Ook de informatie die nodig is om uw systeem te configureren voor de ondersteuning van uw geüpgrade AEM Forms-processen. De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die dit document leest vertrouwd is met het Microsoft® Windows® besturingssysteem.
+Dit document is bedoeld voor beheerders of ontwikkelaars die verantwoordelijk zijn voor het installeren, configureren, beheren of implementeren van Workbench. Hier vindt u ook informatie over het configureren van uw systeem ter ondersteuning van uw geüpgrade AEM Forms-processen. De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die dit document leest vertrouwd is met het Microsoft® Windows® besturingssysteem.
 
 ## Extra informatie {#additional-information}
 
@@ -36,11 +36,11 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
   </tr>
   <tr>
    <td><p>Algemene informatie over AEM Forms en de wijze waarop deze kan worden geïntegreerd met andere Adobe-producten</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms - Overzicht</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms - Overzicht</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Alle documentatie die beschikbaar is voor AEM Forms</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-documentatie</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms-documentatie</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch updates, technische notities en aanvullende informatie over deze productversie</p> </td>
@@ -51,7 +51,7 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
+>De Flex Workspace is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
 
 ## Voordat u gaat installeren {#before-you-install}
 
@@ -65,7 +65,7 @@ De volgende afbeelding toont de Workbench-installatie, inclusief:
 
 >[!NOTE]
 >
->Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg de documentatie bij de installatie van AEM Forms in JEE voor meer informatie.
+>Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg de documentatie bij de installatie van AEM Forms on JEE voor meer informatie.
 
 ![default-render-vorm](assets/installing-workbench.png)
 
@@ -85,25 +85,25 @@ De volgende eisen worden minimaal aanbevolen: Schijfruimte voor installatie:
 >
 >Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
-* Hardwarevereisten: Intel® Pentium® 4 of AMD equivalent, 1 GHz processor.
+* Hardwarevereisten: Intel® Pentium® 4 of AMD® equivalent, 1 GHz processor.
 * Java™ Runtime Environment (JRE) 7.0 werkt 51 of hoger bij naar 7.0.
 * Monitorresolutie van minimaal 1024 x 768 pixels met 16-bits kleur of hoger.
-* TCP/IPv4- of TCP/IPv6-netwerkverbinding met de AEM Forms-server.
+* TCP/IPv4- of TCP/IPv6-netwerkverbinding met de AEM Forms Server.
 * Installeer Visuele C++ Redistributable runtime Pakketten 2012 met 32 bits.
 * Installeer Visuele C++ Redistributable runtime Pakketten 2013 met 32 bits.
 
 >[!NOTE]
 >
->U moet over beheerdersrechten beschikken om Workbench te installeren. Als u een niet-beheerdersaccount gebruikt, wordt u door het installatieprogramma gevraagd om de referenties voor een geschikte account.
+>U moet over beheerdersrechten beschikken om Workbench te installeren. Als u een niet-beheerdersaccount installeert, vraagt het installatieprogramma u om de referenties voor een geschikte account.
 
 ### Ondersteunde Platforms {#supported-platforms}
 
-Zie de volledige lijst met ondersteunde platforms voor Workbench op [Door AEM Forms ondersteunde Platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst met ondersteunde platforms voor Workbench op [Door AEM Forms ondersteunde Platforms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Installatieoverwegingen voor Designer {#designer-installation-considerations}
 
 Standaard bevat de Workbench-installatie een overeenkomende versie van Designer met alleen Engels. Als de Workbench-installatietoepassing een bestaande versie van Designer op uw computer detecteert, wordt de installatie mogelijk beëindigd en moet u de huidige versie van Designer verwijderen voordat u kunt doorgaan.
-De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenario&#39;s voor Designer die u kunt tegenkomen, en alle handelingen die u moet uitvoeren bij de installatie van Workbench.
+De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenario&#39;s van Designer die u kunt tegenkomen en alle handelingen die u moet uitvoeren bij de installatie van Workbench.
 
 <table>
  <tbody>
@@ -143,7 +143,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 
 1. Voer een van de volgende taken uit:
    * Navigeer naar de map \workbench op de installatiemedia en dubbelklik op het bestand run_windows_installer.bat.
-   * Download de Workbench en decomprimeer deze naar uw bestandssysteem. Nadat het is gedownload, navigeert u naar de map \workbench en dubbelklikt u op het bestand run_windows_installer.bat.
+   * Download de Workbench en decomprimeer deze naar uw bestandssysteem. Blader nadat u het bestand hebt gedownload naar de map \workbench en dubbelklik op het bestand run_windows_installer.bat.
 
    >[!IMPORTANT]
    >
@@ -151,21 +151,19 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 
    >[!NOTE]
    >
-   >Als er een fout optreedt &quot;Kan de Java Virtual Machine niet maken&quot;, maakt u een omgevingsvariabele met de naam _JAVA_OPTIONS met de waarde -Xmx512M en voert u het installatieprogramma uit.
+   >Als er een fout optreedt &quot;Kan de Java™ Virtual Machine niet maken&quot;, maakt u een omgevingsvariabele met de naam _JAVA_OPTIONS met de waarde -Xmx512M en voert u het installatieprogramma uit.
 
 1. Klik in het scherm Introductie op Volgende.
 1. Lees de licentieovereenkomst voor producten, selecteer Ik accepteer de voorwaarden van de licentieovereenkomst en klik op Volgende.
 1. (Optioneel) Selecteer Adobe Designer installeren als u dit gereedschap nodig hebt om formulieren te maken en te wijzigen.
 
    >[!NOTE]
-   >
-   >U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
+   U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
 
 1. Accepteer de standaardmap zoals deze wordt weergegeven of klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
 
    >[!NOTE]
-   >
-   >Het pad naar de installatiemap mag geen # (pound)- en $ (dollar)-tekens bevatten.
+   Het pad naar de installatiemap mag geen # (pound)- en $ (dollar)-tekens bevatten.
 
 1. Controleer het overzicht van de voorinstallatie en klik op Installeren. In het installatieprogramma wordt de voortgang van de installatie weergegeven.
 1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten om Workbench te starten en klik op Volgende.
@@ -173,7 +171,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. De volgende items zijn nu op uw computer geïnstalleerd:
    * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Zie voor meer informatie de <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench gebruiken</a> documentatie.
    * **Designer**: U kunt Designer openen vanuit Workbench. Voor informatie, zie het Aan de slag onderwerp in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Help bij Designer</a>.
-   * **AEM Forms SDK**: Voor meer informatie over het gebruik van de SDK raadpleegt u <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmeren met AEM Forms</a>.
+   * **AEM Forms SDK**: Voor meer informatie over het gebruik van de SDK raadpleegt u <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programmeren met AEM Forms</a>.
 
 ## Processen upgraden {#upgrading-processes}
 
@@ -181,11 +179,10 @@ AEM Forms on JEE-processen kunnen worden geüpgraded naar AEM Forms-toepassingen
 
 ### Aanmelden bij een server configureren {#configuring-and-logging-server}
 
-Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
+Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms en gegevens over de locatie van de server.
 
 >[!NOTE]
->
->Als u AEM Forms hebt geconfigureerd voor gebruik van de EMC Documentum- of IBM FileNet-opslagprovider en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
+Als u AEM Forms zodanig hebt geconfigureerd dat de EMC Documentum® of IBM® FileNet-opslagprovider wordt gebruikt en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
@@ -193,11 +190,10 @@ Workbench is na twee uur standaard uitgevallen, ongeacht de activiteit of inacti
 
 ### Workbench configureren voor verbinding via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-Als u Workbench via HTTPS wilt verbinden met een AEM Forms-server, moet u ervoor zorgen dat de certificeringsinstantie (CA) die de openbare sleutel heeft uitgegeven, wordt herkend als vertrouwd door Workbench. Als het certificaat niet wordt herkend als afkomstig van een vertrouwde bron, moet u het actieve bestand in het dialoogvenster [Workbench_HOME]/workbench/jre/lib/security directory.
+Als u Workbench via HTTPS wilt verbinden met een AEM Forms-server, moet u ervoor zorgen dat de certificeringsinstantie (CA) die de openbare sleutel heeft uitgegeven, wordt herkend als vertrouwd door Workbench. Als het certificaat niet wordt herkend als afkomstig van een vertrouwde bron, moet u het controlebestand bijwerken in het dialoogvenster [Workbench_HOME]/workbench/jre/lib/security directory.
 
 >[!NOTE]
->
->[Workbench_HOME] vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+[Workbench_HOME] vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in het certificaat is opgegeven. Deze naam is doorgaans de volledig gekwalificeerde hostnaam.
 
@@ -205,19 +201,18 @@ Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in he
 1. Zorg ervoor dat u een kopie van het SSL-certificaat (Secure Sockets Layer) hebt. Neem contact op met de beheerder die de SSL-server heeft geconfigureerd of exporteer het certificaat via een webbrowser.
 
    >[!NOTE]
-   >
-   >Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij de beheerconsole, installeert u het certificaat in de browser en exporteert u het certificaat van de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
+   Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij de beheerconsole, installeert u het certificaat in de browser en exporteert u het certificaat van de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Het certificaat kopiëren naar de [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Open een opdrachtpromptvenster, navigeer naar [Workbench_HOME]/workbench/jre/bin, en typ dan het volgende bevel:
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
 Waar:
-   * de wijziging is het standaardwachtwoord aan cacerts keystore.
+   * `changeit` is het standaardwachtwoord voor het sleutelarchief van het cacerts.
    * certname is het certificaat dat u hebt geselecteerd in stap 1.
-   * Dit is bijvoorbeeld de alias die u kiest voor het certificaat. Deze waarde kan worden gewijzigd
+   * Dit is bijvoorbeeld de alias die u kiest voor het certificaat. Deze waarde kan worden gewijzigd.
 
-1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het toetsgereedschap gaat door met het importeren van het controlebestand in het dialoogvenster [Workbench_HOME]/workbench/jre/lib/security directory.
+1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het keytool gaat door met het importeren van het cacartbestand in de [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Sluit en herstart Workbench om wijzigingen toe te passen.
 
@@ -238,8 +233,8 @@ Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheim
 
 
 De Forms-service ontvangt sjablonen op basis van de bestandsnaam of de locatie in de opslagplaats, of op basis van de waarde als een XML-object in het geheugen.
-* **Door verwijzing doorgegeven sjablonen**: Hiermee gebruikt u de hoofdmap van de inhoud en de naam van het formulier. Als unieke sjablonen met verschillende bestandsnamen bij elke aanvraag met deze methode worden doorgegeven, wordt de schijfcache eindeloos groter en wordt deze nooit opnieuw gebruikt. Om dit te voorkomen, zouden de unieke malplaatjes met zelfde filename moeten worden overgegaan om ervoor te zorgen dat het zelfde geheime voorgeheugen voor alle verzoeken wordt bijgewerkt.
-* **Sjablonen doorgegeven via waarde**: Gebruikt sjabloonbytes die samen met de gegevens worden doorgegeven met de parameter theinDataDoc. Als unieke sjablonen met verschillende UUID worden doorgegeven met deze methode, wordt de schijfcache eindeloos groter en wordt deze nooit opnieuw gebruikt. Om dit te verhinderen, zou het attribuut UUID van alle malplaatjes moeten worden gestript om ervoor te zorgen dat geen geheim voorgeheugen voor het malplaatje wordt gecreeerd. Als u dezelfde UUID doorgeeft die niet gelijk is aan null, kunnen de cacheobjecten worden gemaakt, maar wordt gegarandeerd dat dezelfde cache bij elke aanvraag wordt bijgewerkt.
+* **Door verwijzing doorgegeven sjablonen**: Hiermee gebruikt u de hoofdmap van de inhoud en de naam van het formulier. Als unieke sjablonen met verschillende bestandsnamen in elke aanvraag worden doorgegeven met deze methode, groeit de schijfcache eindeloos en wordt deze nooit opnieuw gebruikt. Om dit te voorkomen, zouden de unieke malplaatjes met zelfde filename moeten worden overgegaan om ervoor te zorgen dat het zelfde geheime voorgeheugen voor alle verzoeken wordt bijgewerkt.
+* **Sjablonen doorgegeven via waarde**: Gebruikt sjabloonbytes die samen met de gegevens worden doorgegeven met de parameter theinDataDoc. Als unieke sjablonen met verschillende UUID&#39;s met deze methode worden doorgegeven, groeit de schijfcache eindeloos en wordt deze nooit opnieuw gebruikt. Om dit te verhinderen, zou het attribuut UUID van alle malplaatjes moeten worden gestript om ervoor te zorgen dat geen geheim voorgeheugen voor het malplaatje wordt gecreeerd. Als u dezelfde UUID doorgeeft die niet gelijk is aan null, kunnen de cacheobjecten worden gemaakt, maar wordt gegarandeerd dat dezelfde cache bij elke aanvraag wordt bijgewerkt.
 
 Als u wilt voorkomen dat de cache eindeloos groeit, moet u rekening houden met de volgende factoren voor het renderen van dynamisch gegenereerde sjablonen met de nieuwe AEM Forms API&#39;s: renderHTMLForm2 en renderPDFForm2.
 
@@ -251,8 +246,8 @@ Houd rekening met de volgende aspecten van gepassiveerde documenten waarin de UU
 
 Houd rekening met het volgende voor niet-gepassiveerde documenten waarbij de bestandsnaam en de hoofdmap van de inhoud als cachesleutel fungeren:
 * Voor niet-gepassiveerde invoersjablonen is het in cache plaatsen afhankelijk van de hoofdmap en bestandsnaam van de inhoud waaruit het document is gegenereerd.
-Dezelfde cache wordt alleen gebruikt voor aanvragen met dezelfde hoofdmap en dezelfde naam voor de sjabloon.
-De volgende beste praktijken zullen ervoor zorgen dat het geheime voorgeheugen niet eindeloos groeit wanneer dynamisch geproduceerde malplaatjes worden overgegaan tot de dienst van Forms:
+Hetzelfde cachegeheugen wordt alleen gebruikt voor aanvragen met dezelfde hoofdmap en naam van het sjabloon.
+De volgende beste praktijken zorgen ervoor dat het geheime voorgeheugen niet eindeloos groeit wanneer dynamisch geproduceerde malplaatjes worden overgegaan tot de dienst van Forms:
    * Strip UUID of ga zelfde UUID in alle dynamisch geproduceerde malplaatjes over.
    * Genereer het document op basis van sjabloonbytes of op basis van dezelfde bestandsnaam op de schijf.
 
@@ -267,7 +262,7 @@ Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML 
 Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u de voorbeeld-XDC-bestanden en raadpleegt u Apparaatprofielen maken met de XDC Editor.
 
 **De voorbeeld-XDC-bestanden ophalen**:
-1. Zoek op de AEM Forms-server de XDC-map op in [AEM Forms root]\sdk\samples\Output\IVS.
+1. Zoek op de AEM Forms Server de XDC-map op in [AEM Forms root]\sdk\samples\Output\IVS.
 1. Kopieer de inhoud van deze map naar een map die toegankelijk is via het Workbench- of Eclipse-systeem.
 
 **Om de XDC Editor Help te verkrijgen**:

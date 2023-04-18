@@ -1,8 +1,6 @@
 ---
-title: Best practices voor
-seo-title: Best Practices
-description: Volg deze pagina om beste praktijken en richtlijnen te leren die ervaren AEM ontwikkelaars voor plaatsen zullen helpen, die mobiele toepassingsmalplaatjes en componenten bouwen.
-seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
+title: Aanbevolen procedures voor AEM Mobile On-demand Services
+description: Leer over beste praktijken en richtlijnen die ervaren AEM ontwikkelaars voor plaatsen, die mobiele toepassingsmalplaatjes en componenten willen bouwen.
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---

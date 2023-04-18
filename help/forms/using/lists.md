@@ -1,8 +1,6 @@
 ---
-title: Documentfragmenten
-seo-title: Document Fragments
+title: Documentfragmenten in AEM
 description: Met documentfragmenten, zoals tekst, lijsten, voorwaarden en layoutfragmenten, kunt u in Correspondence Management de statische, dynamische en herhaalbare componenten van klantcorrespondentie vormen.
-seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '6903'
+source-wordcount: '6905'
 ht-degree: 0%
 
 ---
@@ -120,7 +118,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
 1. Sleep vanuit het gegevensvenster gegevenswoordenboekelementen en plaatsaanduidingselementen naar de tekst.
 
-   Naar:
+   Aan:
 
    * Voeg een gegevenswoordenboekelement in de tekst toe, selecteer een gegevenselement in de lijst en tik op Invoegen ( ![insert](assets/insert.png)). Als u Beveiligd selecteert, is het gegevenswoordenboekelement alleen-lezen en wordt het weergegeven in de lettereditor, maar niet in de gebruikersinterface Correspondentie maken of Correspondence Creator.
    * Voeg een plaatsaanduidingselement toe aan de tekst. Tik in het deelvenster Gegevenselementen op Nieuw maken, voer de details voor het nieuwe gegevenselement in en tik op Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en tikt u op Bewerken.
@@ -298,9 +296,12 @@ Op basis van de opties die u kiest, wordt alleen de eerste expressie die op basi
 
 De Condition Editor wordt geleverd met een [Expressiebouwer](/help/forms/using/expression-builder.md) gebruikersinterface die het creëren van uitdrukkingen gebruikend zowel veelvoudige placeholders als elementen van het Woordenboek van Gegevens steunt. In dergelijke expressies kunt u algemene operanden en lokale/algemene functies gebruiken. Elke expressie kan aan bepaalde inhoud worden gekoppeld en optioneel kan er een standaardsectie zijn als geen van de expressies true oplevert. Alle expressies worden geëvalueerd in de volgorde waarin ze zijn gedefinieerd en de eerste expressies die true retourneren worden geselecteerd en de bijbehorende inhoud wordt geretourneerd door die voorwaardelijke module.
 
-Als de tekst van de voorwaarden in een brief bijvoorbeeld verschilt, afhankelijk van de status waarin de klant zich bevindt en het gegevenswoordenboek een element bevat met de naam &quot;state&quot;, kunt u de voorwaarde als volgt toevoegen: ・ state = NY, selecteer T&amp;C_NY tekstparagraaf ・ staat = NC, uitgezochte T&amp;C_NC tekstparagraaf
+Als de tekst van de voorwaarden in een brief bijvoorbeeld verschilt, afhankelijk van de status waarin de klant zich bevindt en het gegevenswoordenboek een element bevat met de naam &quot;state&quot;, kunt u de voorwaarde als volgt toevoegen:
+* state = NY, selecteer T&amp;C_NY tekstparagraaf
+* state = NC, selecteer T&amp;C_NC tekstparagraaf
 
-Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde van de besturingsvariabelen niet overeenkomt met een van de voorwaarden, wordt de inhoud gebruikt die aan de standaardvoorwaarde is gekoppeld. In het volgende voorbeeld kunt u deze voorwaardenrij toevoegen: ・ Standaard, selecteer T&amp;C_Rest
+Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde van de besturingsvariabelen niet overeenkomt met een van de voorwaarden, wordt de inhoud gebruikt die aan de standaardvoorwaarde is gekoppeld. In het volgende voorbeeld kunt u deze voorwaardenrij toevoegen:
+* Standaard, selecteer T&amp;C_Resten
 
 ### Een voorwaarde maken {#create-a-condition}
 

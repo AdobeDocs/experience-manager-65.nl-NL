@@ -1,8 +1,6 @@
 ---
-title: Best practices voor
-seo-title: Best Practices
+title: Tips en trucs om beheerders te helpen aan de slag te gaan
 description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '531'
 ht-degree: 2%
 
 ---

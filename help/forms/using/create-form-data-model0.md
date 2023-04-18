@@ -1,8 +1,6 @@
 ---
-title: "Zelfstudie: Formuliergegevensmodel maken"
-seo-title: Create form data model for Interactive Communication
+title: "Zelfstudie: Formuliergegevensmodel maken in AEM Forms"
 description: Formuliergegevensmodel maken voor interactieve communicatie
-seo-description: Create form data model for Interactive Communication
 uuid: b56d3dac-be54-4812-b958-38a085686218
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +8,14 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '2733'
+source-wordcount: '2739'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: Formuliergegevensmodel maken{#tutorial-create-form-data-model}
+# Zelfstudie: Formuliergegevensmodel maken in AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 

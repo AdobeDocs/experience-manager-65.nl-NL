@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -235,7 +235,7 @@ Als u bijvoorbeeld het aanwijzen van doelen voor de titelcomponenten van de Geom
 >
 >Als u DTM niet gebruikt, stuurt u een bevestiging van de bestelling naar Adobe Target.
 
-Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [Een orderConfirmPage Mbox maken](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) in de documentatie van Adobe Target.) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` en gebruikt de volgende specifieke parameternamen:
+Als u de prestaties van uw website wilt volgen, stuurt u aankoopgegevens van de bevestigingspagina van uw bestelling naar Adobe Target. (Zie [Een orderConfirmPage Mbox maken](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) en [Mbox met orderbevestiging - aangepaste parameters toevoegen.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target herkent mbox-gegevens als orderbevestigingsgegevens wanneer uw MBox-naam `orderConfirmPage` en gebruikt de volgende specifieke parameternamen:
 
 * productPurchasedId: Een lijst met id&#39;s die de aangeschafte producten identificeren.
 * orderId: De id van de bestelling.

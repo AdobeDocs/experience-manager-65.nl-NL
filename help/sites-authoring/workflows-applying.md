@@ -1,8 +1,6 @@
 ---
-title: Workflows toepassen op pagina's
-seo-title: Applying Workflows to Pages
-description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkschema's toe te passen.
-seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+title: Workflows toepassen op inhoudspagina's
+description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkstromen toe te passen .
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 11%
 
 ---

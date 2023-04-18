@@ -1,8 +1,6 @@
 ---
-title: Pagina's publiceren
-seo-title: Publishing Pages
-description: Pagina's publiceren
-seo-description: null
+title: Inhoudspagina's publiceren
+description: Leer hoe u inhoudspagina's publiceert.
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 9946bfd3c2701a37d13e6eb6b4c19562ef77d24c
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 6%
+source-wordcount: '1662'
+ht-degree: 5%
 
 ---
 
 # Pagina&#39;s publiceren {#publishing-pages}
 
-Wanneer u de inhoud in de ontwerpomgeving hebt gemaakt en gecontroleerd, is het doel [beschikbaar stellen op uw openbare website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (uw publicatieomgeving).
+Nadat u de inhoud in de ontwerpomgeving hebt gemaakt en gecontroleerd, [beschikbaar stellen op uw openbare website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (uw publicatieomgeving).
 
 Dit wordt bedoeld als het publiceren van een pagina. Wanneer u een pagina uit het publicatiemilieu wilt verwijderen wordt bedoeld unpublishing. Wanneer u de pagina publiceert en publiceert, blijft deze beschikbaar in de ontwerpomgeving voor verdere wijzigingen totdat u de pagina verwijdert.
 

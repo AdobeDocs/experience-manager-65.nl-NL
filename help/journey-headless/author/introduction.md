@@ -1,10 +1,10 @@
 ---
-title: AEM Schrijverreis zonder kopinhoud
+title: Ontwerpen voor headless met Adobe Experience Manager
 description: Een inleiding tot de krachtige, flexibele, eindeloze eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te ontwerpen.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---

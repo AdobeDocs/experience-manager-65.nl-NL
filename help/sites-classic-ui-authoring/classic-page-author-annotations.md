@@ -1,8 +1,6 @@
 ---
 title: Annotaties bij het bewerken van een pagina
-seo-title: Annotations when Editing a Page
 description: Het toevoegen van inhoud aan de pagina's van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant u toe om een aantekening toe te voegen.
-seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -11,7 +9,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 0%

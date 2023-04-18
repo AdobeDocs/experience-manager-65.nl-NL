@@ -1,8 +1,6 @@
 ---
-title: Adobe Campaign-componenten
-seo-title: Adobe Campaign Components
-description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u werkt met nieuwsbrieven en formulieren
-seo-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms
+title: Integreren met Adobe Campaign-componenten
+description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u met nieuwsbrieven en met formulieren werkt.
 uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '2824'
+source-wordcount: '2826'
 ht-degree: 0%
 
 ---

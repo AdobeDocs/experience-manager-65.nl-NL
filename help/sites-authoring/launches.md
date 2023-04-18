@@ -1,8 +1,6 @@
 ---
-title: Lanceringen
-seo-title: Launches
-description: Met behulp van opstartprogramma's kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze sjablonen kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven
-seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
+title: Starten gebruiken om inhoud voor een toekomstige release te ontwikkelen
+description: Met Launches kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release. Met deze pagina's kunt u wijzigingen klaar maken voor toekomstige publicatie, terwijl uw huidige pagina's behouden blijven.
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '833'
 ht-degree: 6%
 
 ---

@@ -1,8 +1,6 @@
 ---
 title: Uw inbox
-seo-title: Your Inbox
 description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
-seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%

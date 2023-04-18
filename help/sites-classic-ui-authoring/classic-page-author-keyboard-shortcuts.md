@@ -1,8 +1,6 @@
 ---
-title: Sneltoetsen bij het bewerken van pagina's
-seo-title: Keyboard Shortcuts when Editing Pages
+title: Sneltoetsen voor het bewerken van pagina's
 description: In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
-seo-description: Various keyboard shortcuts are available throughout AEM. Some apply when editing pages, others to the use of consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 

@@ -1,8 +1,6 @@
 ---
-title: Basisbewerkingen
-seo-title: Basic Handling
+title: Basisverwerking
 description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
-seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -67,7 +65,7 @@ De belangrijkste consoles zijn:
    <td>Met de coderingsconsoles kunt u tags beheren. Tags zijn korte namen of woordgroepen die u kunt gebruiken om stukken inhoud te classificeren en er notities aan toe te voegen, zodat u ze gemakkelijker kunt vinden en organiseren. Zie voor meer informatie <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Tags gebruiken en beheren</a>.</td>
   </tr>
   <tr>
-   <td><strong>Opties</strong></td>
+   <td><strong>Gereedschappen</strong></td>
    <td>De <a href="/help/sites-administering/tools-consoles.md">Gereedschapsconsoles</a> toegang bieden tot een aantal gespecialiseerde tools en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.</td>
   </tr>
   <tr>
@@ -134,13 +132,13 @@ De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een
 >
 >Stel de waarde van de eigenschap in:
 >`treeAutoExpandMax`
->on:
+>op:
 >`/apps/wcm/core/content/siteadmin`
 >
 >Of globaal in het thema:
 >Stel de waarde in van:
 >`TREE_AUTOEXPAND_MAX`
->inch:
+>in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Zie [SiteAdmin in de CQ-widget-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer informatie .
@@ -192,7 +190,7 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
    <td>Hiermee wordt de activiteit op een pagina in aantal hits weergegeven.</td>
   </tr>
   <tr>
-   <td>Sjabloonmodel</td>
+   <td>Sjabloon</td>
    <td>Geeft de sjabloon aan waarop een pagina is gebaseerd.</td>
   </tr>
   <tr>
@@ -222,7 +220,7 @@ De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gew
 | Gepubliceerd | Geel | Publicatie is in behandeling. Het systeem heeft nog geen bevestiging van publicatie ontvangen. |
 | Gepubliceerd | Rood | Publicatie mislukt. Er is geen verbinding met het publicatieexemplaar. Dit kan ook betekenen dat de inhoud is gedeactiveerd. |
 | Gepubliceerd | *blank* | Deze pagina is nog nooit gepubliceerd. |
-| Gewijzigd | Blue | De pagina is gewijzigd sinds de laatste publicatie. |
+| Gewijzigd | Blauw | De pagina is gewijzigd sinds de laatste publicatie. |
 | Gewijzigd | *blank* | Deze pagina is nooit gewijzigd of is niet gewijzigd sinds de laatste publicatie. |
 
 ## Contextmenu&#39;s {#context-menus}

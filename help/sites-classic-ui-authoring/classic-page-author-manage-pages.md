@@ -1,8 +1,6 @@
 ---
-title: Pagina's maken en indelen
-seo-title: Creating and Organizing Pages
+title: Pagina's maken en ordenen
 description: In deze sectie wordt beschreven hoe u pagina's met AEM kunt maken en beheren, zodat u vervolgens inhoud op die pagina's kunt maken.
-seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '1910'
 ht-degree: 2%

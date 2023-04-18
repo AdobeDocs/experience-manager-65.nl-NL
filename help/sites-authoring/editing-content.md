@@ -1,8 +1,6 @@
 ---
-title: Paginacontent bewerken
-seo-title: Editing Page Content
-description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken en de gewenste updates uitvoeren
-seo-description: Once your page is created you can edit the content to make the updates you require
+title: De inhoud van pagina's bewerken
+description: Nadat u de pagina hebt gemaakt, kunt u de inhoud bewerken om de gewenste updates uit te voeren.
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '3045'
+source-wordcount: '3047'
 ht-degree: 5%
 
 ---
@@ -280,7 +278,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
    >
    >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
 
-* **Groeperen**
+* **Groep**
 
    Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
@@ -292,7 +290,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
    ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
-* **Indeling**
+* **Layout**
 
    Hierdoor kunt u de [layout](/help/sites-authoring/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-authoring/author-environment-tools.md#page-modes) voor de gehele pagina.
 

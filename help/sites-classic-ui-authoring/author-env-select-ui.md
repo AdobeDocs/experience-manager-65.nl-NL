@@ -1,8 +1,6 @@
 ---
 title: Gebruikersinterface selecteren
-seo-title: Selecting your UI
 description: Voor het gemak waarmee gebruikers kunnen ontwerpen, maakt de interface met aanraakbediening het mogelijk om indien nodig over te schakelen op de klassieke interface.
-seo-description: For convenience to authoring users, the touch-enabled UI does allow for switching to the classic UI when necessary.
 uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%

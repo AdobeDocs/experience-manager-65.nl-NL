@@ -1,8 +1,6 @@
 ---
-title: Basisstructuur
-seo-title: Scaffolding
-description: Met een basisstructuur kunt u een basiselement maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur
-seo-description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure
+title: Basisstructuur in Adobe Experience Manager-ontwerpomgeving
+description: Met een basisstructuur kunt u een basispagina maken met velden die de gewenste structuur voor uw pagina's weerspiegelen en vervolgens dit formulier gebruiken om pagina's te maken op basis van deze structuur.
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---

@@ -1,8 +1,6 @@
 ---
 title: Pagina-eigenschappen bewerken
-seo-title: Editing Page Properties
-description: De eigenschappen van een pagina kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina's kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is beschikbaar, indien van toepassing.
-seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
+description: De eigenschappen van een pagina kunnen afhankelijk van de aard van de pagina variëren. Sommige pagina's kunnen bijvoorbeeld zijn verbonden met een live kopie, andere niet en de live kopie-informatie is op de juiste wijze beschikbaar.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 1%

@@ -1,8 +1,6 @@
 ---
-title: Paginasjablonen voor mobiele apps
-seo-title: Page Templates for Mobile Apps
+title: Sjablonen voor inhoudspagina's voor mobiele apps
 description: Volg deze pagina voor meer informatie over paginasjablonen voor mobiele apps.
-seo-description: Follow this page to learn about page templates for mobile apps.
 uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -361,7 +359,7 @@ Deze map is leeg totdat u de opdracht `phonegap run *<platform>*` op het project
 
 Nadat u de app voor een specifiek platform hebt gemaakt, wordt de bijbehorende map gemaakt en bevat deze de platformspecifieke toepassingscode.
 
-### plugins/ {#plugins}
+### plug-ins/ {#plugins}
 
 De map plugins wordt gevuld door elke plug-in die in de `.cordova/hooks/before_platform_add/install_plugins.js` bestand nadat u het `phonegap run *<platform>*` gebruiken. De map is aanvankelijk leeg.
 

@@ -1,8 +1,6 @@
 ---
-title: Eerste stappen voor auteurs
-seo-title: First Steps for Authors
-description: Een overzicht van de belangrijkste taken die u zult gebruiken wanneer het beginnen aan auteursinhoud met AEM
-seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
+title: Eerste stappen voor auteurs bij het maken van inhoud in AEM
+description: Een overzicht van de belangrijkste taken die u gebruikt bij het ontwerpen van inhoud met Adobe Experience Manager (AEM).
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---

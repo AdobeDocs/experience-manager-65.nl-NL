@@ -1,8 +1,6 @@
 ---
-title: Lanceringen promoten
-seo-title: Promoting Launches
-description: U moet opstartiepagina's promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen.
-seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
+title: Starten promoten
+description: U promoot opstartiepagina's om de inhoud vóór publicatie terug te plaatsen naar de bron (productie).
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---

@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u h
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Upload vervolgens de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL-verbinding.
+1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Via pakket {#via-package}
 
-U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al de volgende vereiste items bevat:
+U kunt de installatie van SSL/TLS ook automatiseren door een pakket te uploaden dat al deze vereiste items bevat:
 
 * Het sleutelarchief van de ssl-dienst gebruiker. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
 * De `GraniteSslConnectorFactory` configuratie
@@ -178,7 +178,7 @@ Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaa
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Genereer het SSL-certificaat en onderteken het met de persoonlijke sleutel. In dit voorbeeld verloopt de bewerking over een jaar:
+1. Genereer het SSL/TLS-certificaat en onderteken het met de persoonlijke sleutel. In dit voorbeeld verloopt de bewerking over een jaar:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt

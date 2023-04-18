@@ -1,6 +1,6 @@
 ---
-title: Standaard SSL
-seo-title: SSL By Default
+title: Standaard SSL/TLS
+seo-title: SSL/TLS By Default
 description: Leer hoe u in AEM SSL standaard kunt gebruiken.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
@@ -11,20 +11,20 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Standaard SSL{#ssl-by-default}
+# Standaard SSL/TLS{#ssl-tls-by-default}
 
 In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
-## SSL standaard inschakelen {#enabling-ssl-by-default}
+## SSL/TLS standaard inschakelen {#enabling-ssl-tls-by-default}
 
-U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
+U kunt standaard beginnen SSL/TLS te configureren door te klikken op het betreffende Postvak IN-bericht van uw AEM startscherm. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
 Selecteer in de lijst de optie **HTTPS configureren** waarschuwing:
 
@@ -52,9 +52,9 @@ Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u h
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## SSL standaard automatiseren {#automating-ssl-by-default}
+## SSL/TLS standaard automatiseren {#automating-ssl-tls-by-default}
 
-Er zijn drie manieren om SSL standaard te automatiseren.
+Er zijn drie manieren om standaard SSL/TLS te automatiseren.
 
 ### Via HTTP-POST {#via-http-post}
 
@@ -159,7 +159,7 @@ U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al d
 
 ### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken. Installeer OpenSSL op basis van het besturingssysteem, open de opdrachtprompt OpenSSL en wijzig de map in de map waarin u de persoonlijke sleutel of het certificaat wilt genereren.
+Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de wizard SSL/TLS kan gebruiken. Installeer OpenSSL op basis van het besturingssysteem, open de opdrachtprompt OpenSSL en wijzig de map in de map waarin u de persoonlijke sleutel of het certificaat wilt genereren.
 
 >[!NOTE]
 >
@@ -190,15 +190,15 @@ Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat 
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
+Ten slotte uploadt u de **localhostprivate.der** als persoonlijke sleutel en **localhost.crt** als het SSL/TLS-certificaat in stap 2 van de grafische SSL/TLS-wizard die aan het begin van deze pagina wordt beschreven.
 
-### De SSL-configuratie bijwerken via cURL {#updating-the-ssl-configuration-via-curl}
+### De SSL/TLS-configuratie bijwerken via cURL {#updating-the-ssl-tls-configuration-via-curl}
 
 >[!NOTE]
 >
 >Zie [cURL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL bevelen in AEM.
 
-U kunt de SSL-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
+U kunt de SSL/TLS-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -221,7 +221,7 @@ Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instelli
 
 >[!NOTE]
 >
->De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in het dialoogvenster `privatekeyFile` en certificateFile-argumenten.
+>De snelste manier om cURL uit te voeren om de configuratie SSL/TLS te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in het dialoogvenster `privatekeyFile` en certificateFile-argumenten.
 >
 >U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de opdracht `-u user:passeword` parameter.
 >
@@ -239,3 +239,15 @@ U kunt de server een certificaatketen sturen door de parameter certificateFile a
 
 Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keystore maakten. Controleer het sleutelarchief van:
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+
+### Een TLS 1.3-verbinding inschakelen {#enabling-tls-connection}
+
+1. Ga naar de webconsole
+1. Navigeer vervolgens naar **OSGi** - **Configuratie** - **Adobe granite SSL Connector Factory**
+1. Ga naar de **Inclusief cementsuites** en voeg de volgende vermeldingen toe. U kunt elke toevoeging bevestigen door op &quot;**+**&quot;, links van het veld, na elke knop in te voegen:
+
+   * `TLS_AES_256_GCM_SHA384`
+   * `TLS_AES_128_GCM_SHA256`
+   * `TLS_CHACHA20_POLY1305_SHA256`
+   * `TLS_AES_128_CCM_SHA256`
+   * `TLS_AES_128_CCM_8_SHA256`

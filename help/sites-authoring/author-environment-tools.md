@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -264,7 +264,7 @@ Open de vereiste console, navigeer dan aan het vereiste middel en open **Tijdlij
 
 ## Pagina-informatie {#page-information}
 
-Met het pictogram Pagina-informatie (equalizer) opent u een menu dat ook informatie bevat over de laatste bewerking en de laatste publicatie. Afhankelijk van de kenmerken van de pagina, de site en uw exemplaar, zijn mogelijk meer of minder opties beschikbaar:
+Met de knop Pagina-informatie (egalisatiepictogram) opent u een menu dat ook informatie bevat over de laatste bewerking en de laatste publicatie. Afhankelijk van de kenmerken van de pagina, de site en uw exemplaar, zijn mogelijk meer of minder opties beschikbaar:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ Met het pictogram Pagina-informatie (equalizer) opent u een menu dat ook informa
 * [Sjabloon bewerken](/help/sites-authoring/templates.md); wanneer de pagina is gebaseerd op een [bewerkbare sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Weergeven als gepubliceerd](/help/sites-authoring/editing-content.md#view-as-published)
-* [Weergeven in beheerder](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Weergeven in Admin; Hiermee opent u de pagina in het dialoogvenster [siteconsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Zo, indien van toepassing, **Pagina-informatie** heeft ook de volgende opties:

@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
+source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 0%
@@ -464,6 +464,6 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
 Bevestig ten slotte de configuratie door:
 
 1. Ga naar het adres van de instantie Publiceren en meld u aan als beheerder.
-1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Gmail opnieuw richten.
+1. Open een nieuw tabblad in de browser en ga naar `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Dit zal u aan de pagina van uw leverancier SMTP, in dit geval Vooruitzichten opnieuw richten.
 1. Aanmelding en toestemming voor het verlenen van de vereiste machtigingen
 1. Na instemming wordt het token opgeslagen in de opslagplaats. U hebt toegang tot de `accessToken` door deze URL rechtstreeks te openen op uw publicatieexemplaar: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

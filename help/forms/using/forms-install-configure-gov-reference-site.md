@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: d0233ba5358f961339317bc1d63d51f1826d8c13
 workflow-type: tm+mt
-source-wordcount: '4662'
+source-wordcount: '4655'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Voer de stappen in 4.1 en 4.2 uit om een nieuwe pakketversie te installeren. U k
 
    ![WeGov-pakket verwijderen](assets/uninstall_wegov_forms_package.jpg)
 
-1. Selecteer na bevestiging nogmaals &quot;Verwijderen&quot; en voer de procedure voor het verwijderen uit.
+1. Selecteer bij bevestiging nogmaals &quot;Verwijderen&quot; en sta het verwijderingsproces toe.
 
 ## Configuratie demopakket {#demo-package-configuration}
 
@@ -748,7 +748,7 @@ Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijde
 
 ### Chrome voor toegankelijkheidstest inschakelen bij {#enable-chrome-add-on}
 
-Installeer de gevonden Chrome-plug-in om de toegankelijkheid te testen [hier](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Installeer de Chrome-plug-in op `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Nadat de pagina is geïnstalleerd, laadt u de pagina die u wilt testen in de Chrome-browser (Opmerking: Als er meerdere tabbladen zijn geopend, heeft dit mogelijk invloed op de score. Het is aan te raden slechts één tab open te hebben.) Nadat de pagina is geladen
 **rechtsklikken** op de pagina en selecteer **Audits** -tabblad. Er kunnen ontwikkelaars het type controle selecteren dat door de insteekmodule Toegankelijkheid moet worden uitgevoerd. Nadat alle gewenste opties zijn geselecteerd, kan de gebruiker op de knop Rapport genereren klikken. Hiermee wordt een PDF-document gegenereerd met de algemene toegankelijkheidsscore en de functies die kunnen worden gebruikt om de score voor toegankelijkheid in het algemeen te verhogen.

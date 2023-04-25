@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
+source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
 workflow-type: tm+mt
-source-wordcount: '4664'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Nadat u zich hebt aangemeld bij de JMX-console, voert u een zoekopdracht uit naa
 
 Voor vraagstatistieken, neem een blik bij MBean genoemd **Query-statistieken voor onak**.
 
-Als u met een gereedschap als [Luke](https://code.google.com/p/luke/), zult u de console van het Eak moeten gebruiken om de index van te dumpen `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van te dumpen `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Hiervoor hebt u toegang tot `https://server:port/oak:index.tidy.-1.json`
 

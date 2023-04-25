@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: c96f83b84ed1473aee0ddcca08a0e585ec088aa1
 workflow-type: tm+mt
-source-wordcount: '2204'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -42,20 +42,22 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 * **Clientbibliotheek:** mbox.js.
 * **DTM gebruiken om clientbibliotheek te leveren:** Niet geselecteerd. Selecteer deze optie als u [DTM gebruiken](/help/sites-administering/dtm.md) of een ander tagbeheersysteem als host voor het bestand mbox.js of AT.js. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
 
-* **Aangepaste mbox.js:** Niets specificeerde zodat het standaard mbox.js- dossier wordt gebruikt. Geef het bestand mbox.js op dat u wilt gebruiken. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
-* **Aangepaste AT.js:** Niets specificeerde zodat het standaardAT.js- dossier wordt gebruikt. Geef een aangepast AT.js-bestand op dat u wilt gebruiken. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
+* **Aangepaste mbox.js:** Niets specificeerde zodat het standaard mbox.js- dossier wordt gebruikt. Geef desgewenst een aangepast bestand mbox.js op dat u wilt gebruiken. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
+* **Aangepaste AT.js:** Niets specificeerde zodat het standaardAT.js- dossier wordt gebruikt. Geef zo nodig een aangepast AT.js-bestand op dat u wilt gebruiken. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
 
 >[!NOTE]
 >
->In AEM 6.3 kunt u het doelbibliotheekbestand selecteren. [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel standaard webimplementaties als toepassingen van één pagina.
+>In AEM 6.3 kunt u het doelbibliotheekbestand selecteren. [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel standaard webimplementaties als toepassingen van één pagina.
 >
 >AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 >
 >* Verbeterde laadtijden voor webimplementaties
 >* Verbeterde beveiliging
 >* Betere implementatieopties voor toepassingen van één pagina
->* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan target.js
+>* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan doel.
 
+
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Voorziene eigenschappen van doelframework {#provisioned-target-framework-properties}
 
@@ -73,7 +75,7 @@ U kunt Adobe Target zo configureren dat Adobe Analytics de rapportagebron is voo
 >
 >Gebruikersreferenties (verouderd) functioneren niet met A4T (zowel voor Doel als voor Analytics). Daarom moeten klanten IMS-verificatie gebruiken in plaats van gebruikersreferentie-verificatie.
 
-Hiervoor moet u opgeven welke A4T-cloudconfiguratie u wilt gebruiken om uw Adobe Target-cloudconfiguratie aan te sluiten met:
+Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfiguratie wordt verbonden met:
 
 1. Navigeren naar **Cloud Services** via de **AEM** > **Gereedschappen** > **Implementatie** > **Cloud Services**.
 1. In de **Adobe Target** sectie, klikt u op **Nu configureren**.
@@ -107,7 +109,7 @@ Klikken **OK**. Wanneer u inhoud aanwijst met Adobe Target, kunt u [selecteer uw
 Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 
 >[!NOTE]
-het doelbibliotheekbestand, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan. Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
+het doelbibliotheekbestand, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan. Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
 AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
 * Verbeterde laadtijden voor webimplementaties
 * Verbeterde beveiliging
@@ -116,13 +118,15 @@ AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox
 >
 U kunt AT.js of mbox.js in selecteren **Clientbibliotheek** vervolgkeuzemenu.
 
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+
 ### Een doelcloud-configuratie maken {#creating-a-target-cloud-configuration}
 
 Om AEM in staat te stellen om met Adobe Target in wisselwerking te staan, creeer een de wolkenconfiguratie van het Doel. Als u de configuratie wilt maken, geeft u de Adobe Target-clientcode en gebruikersgegevens op.
 
 U kunt de configuratie van de wolk van het Doel slechts eenmaal tot stand brengen omdat u de configuratie met veelvoudige AEM campagnes kunt associëren. Als u meerdere Adobe Target-clientcodes hebt, maakt u één configuratie voor elke clientcode.
 
-U kunt de wolkenconfiguratie vormen om segmenten van Adobe Target te synchroniseren. Als u synchronisatie inschakelt, worden segmenten op de achtergrond geïmporteerd van Target zodra de cloudconfiguratie is opgeslagen.
+U kunt de wolkenconfiguratie vormen om segmenten van Adobe Target te synchroniseren. Als u synchronisatie inschakelt, worden segmenten op de achtergrond geïmporteerd van Target wanneer de cloudconfiguratie wordt opgeslagen.
 
 Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM tot stand te brengen:
 
@@ -155,12 +159,12 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    * **E-mail**: het e-mailadres voor de doelaccount.
    * **Wachtwoord**: het wachtwoord voor de doelaccount.
    * **API-type**: REST of XML
-   * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u de cloudconfiguratie niet ziet, raadpleegt u de opmerking in [A4T Analytics Cloud-configuratie configureren](#configuring-a-t-analytics-cloud-configuration).
+   * **A4T Analytics Cloud-configuratie**: Selecteer de configuratie van Analytics Cloud die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. U hebt deze configuratie nodig als u Adobe Analytics als rapportbron gebruikt wanneer u inhoud als doel instelt. Als u de cloudconfiguratie niet ziet, raadpleegt u de opmerking in [A4T Analytics Cloud-configuratie configureren](#configuring-a-t-analytics-cloud-configuration).
 
    * **Gebruik nauwkeurige gericht:** Dit selectievakje is standaard ingeschakeld. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
-   * **Segmenten uit Adobe Target synchroniseren:** Selecteer deze optie om segmenten te downloaden die in Doel zijn gedefinieerd om deze in AEM te gebruiken. U moet deze optie selecteren wanneer het bezit van het Type API REST is, omdat de gealigneerde segmenten niet worden gesteund en u altijd segmenten van Doel moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
+   * **Segmenten uit Adobe Target synchroniseren:** Selecteer deze optie zodat u segmenten die in Doel zijn gedefinieerd, kunt downloaden en in AEM kunt gebruiken. Selecteer deze optie als de eigenschap API Type REST is, omdat inline-segmenten niet worden ondersteund en u segmenten van Target moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
    * **Clientbibliotheek:** Selecteer of u de clientbibliotheek mbox.js of AT.js wilt.
-   * **DTM gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u AT.js of mbox.js van DTM of een ander systeem voor tagbeheer wilt gebruiken. U moet [De DTM-integratie configureren](/help/sites-administering/dtm.md) om deze optie te gebruiken. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
+   * **DTM gebruiken om clientbibliotheek te leveren** - Selecteer deze optie als u AT.js of mbox.js van DTM of een ander systeem voor tagbeheer wilt gebruiken. Configureren [de DTM-integratie](/help/sites-administering/dtm.md) om deze optie te gebruiken. Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
    * **Aangepaste mbox.js**: Laat leeg als u het vak DTM hebt ingeschakeld of als u de standaard mbox.js wilt gebruiken. U kunt ook uw aangepaste mbox.js uploaden. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
    * **Aangepaste AT.js**: Laat leeg als u het vak DTM hebt ingeschakeld of als u de standaard-AT.js wilt gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
 
@@ -168,7 +172,7 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
    Nauwkeurige het richten betekent dat de configuratie van de wolkendienst op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
    Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Op de publicatie-instantie kunt u er echter voor kiezen om nauwkeurig afstemmen globaal uit te schakelen door het vinkje naast Accurate Targeting in de cloudserviceconfiguratie (**http://localhost:4502/etc/cloudservices.html**). U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
-   Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. U moet om het even welke veranderingen in die component direct aanbrengen.
+   Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. Wijzig deze componenten rechtstreeks.
 
 1. Klikken **Verbinden met doel** om de verbinding met Doel te initialiseren. Als de verbinding tot stand is gebracht, wordt het bericht **Verbinding gelukt** wordt weergegeven. Klikken **OK** op het bericht en vervolgens **OK** in het dialoogvenster.
 
@@ -178,7 +182,7 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
 
 Nadat u de de wolkenconfiguratie van het Doel vormt, voeg een kader van het Doel toe. Het framework identificeert de standaardparameters die via de beschikbare [Clientcontext](/help/sites-administering/client-context.md) of [ContextHub](/help/sites-developing/ch-configuring.md) componenten. Het doel gebruikt de parameters om de segmenten te bepalen die op de huidige context van toepassing zijn.
 
-U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand brengen. Meerdere frameworks zijn handig wanneer u een andere set parameters naar Doel moet sturen voor verschillende gedeelten van uw website. Maak een framework voor elke set parameters die u wilt verzenden. Koppel elk gedeelte van uw website aan het juiste framework. Een webpagina kan slechts één framework tegelijk gebruiken.
+U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand brengen. Meerdere frameworks zijn handig wanneer u een andere set parameters naar Doel moet sturen voor verschillende gedeelten van uw website. Maak een framework voor elke set parameters die u verzendt. Koppel elk gedeelte van uw website aan het juiste framework. Een webpagina kan slechts één framework tegelijk gebruiken.
 
 1. Voor uw de configuratiepagina van het Doel, klik **+** (plusteken) naast Beschikbare kaders.
 1. Geef in het dialoogvenster Kader maken een **Titel**, selecteert u de **Adobe Target Framework** en klik op **Maken**.
@@ -194,7 +198,7 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
    >[!NOTE]
    Bij toewijzing worden parameters via eenvoudige tekenreeksen aan een box doorgegeven. U kunt geen series van ContextHub in kaart brengen.
 
-   Bijvoorbeeld om te gebruiken **Profielgegevens** over uw site-bezoekers om uw doelcampagne te beheren, sleept u de **Profielgegevens** naar de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
+   Bijvoorbeeld om te gebruiken **Profielgegevens** over uw sitebezoekers om uw doelcampagne te beheren, sleept u de **Profielgegevens** naar de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -214,9 +218,9 @@ Koppel uw [AEM](/help/sites-authoring/activitylib.md) met uw doelwolkenconfigura
 >[!NOTE]
 Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
 * Als de **alleen_xt** Deze optie is ingeschakeld in de Adobe Target-agent (clientcode) die aan de AEM zijde wordt gebruikt om verbinding te maken met Adobe Target. Vervolgens kunt u **alleen** XT-activiteiten in AEM.
-* Als de **alleen_xt** opties zijn **niet** ingeschakeld in de Adobe Target-huurder (clientcode), kunt u vervolgens **beide** XT- en A/B-activiteiten in AEM.
+* Als de **alleen_xt** optie is **niet** ingeschakeld in de Adobe Target-huurder (clientcode), kunt u vervolgens **beide** XT- en A/B-activiteiten in AEM.
 >
-**Aanvullende opmerking:** **alleen_xt** Deze opties zijn een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kunnen alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
+**Aanvullende opmerking:** **alleen_xt** Deze optie is een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kan alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 ### Het doelframework koppelen aan uw site {#associating-the-target-framework-with-your-site}
 
@@ -232,22 +236,22 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Selecteer het framework dat u onder **Configuratieverwijzing**.
+1. Selecteer het framework dat u wilt gebruiken onder **Configuratieverwijzing**.
 
    >[!NOTE]
    Zorg ervoor dat u de specifieke **kader** die u hebt gemaakt en niet de doelwolkenconfiguratie waaronder deze is gemaakt.
 
 1. Tikken/klikken **Gereed**.
-1. Activeer de hoofdpagina van de website om deze te repliceren naar de publicatieserver. (Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).)
+1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
    Als het framework dat u aan de pagina hebt gekoppeld nog niet is geactiveerd, wordt een wizard geopend waarmee u het framework ook kunt publiceren.
 
 ## Problemen met doelverbinding oplossen {#troubleshooting-target-connection-problems}
 
-Voer de volgende taken uit om problemen op te lossen die voorkomen wanneer het verbinden met Doel:
+Om problemen op te lossen die wanneer het verbinden met Doel voorkomen, kunt u de volgende taken uitvoeren:
 
 * Controleer of de gebruikersgegevens die u opgeeft juist zijn.
 * Controleer of de AEM-instantie verbinding kan maken met de doelserver. Bijvoorbeeld, zorg ervoor dat de firewallregels uitgaande AEM geen verbindingen blokkeren, of dat AEM wordt gevormd om noodzakelijke volmachten te gebruiken.
 * Zoek naar nuttige berichten in het AEM foutenlogboek. Het bestand error.log bevindt zich in de map **crx-quickstart/logs** map waarin AEM is geïnstalleerd.
-* Wanneer u de activiteit in Adobe Target bewerkt, verwijst de URL naar de localhost. U kunt dit omzeilen door de AEM externalizer in te stellen op de juiste URL.
+* Wanneer u de activiteit in Adobe Target bewerkt, verwijst de URL naar de localhost. U kunt dit begrijpen omzeilen door de AEM Externalzer in te stellen op de juiste URL.

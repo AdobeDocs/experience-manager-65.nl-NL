@@ -1,14 +1,14 @@
 ---
-title: Meertalige assets en de vertaling van assets
+title: Meertalig actief
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 68f9179222c55840c4edf8774687cd8fde8cde4b
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 5%
+source-wordcount: '199'
+ht-degree: 2%
 
 ---
 

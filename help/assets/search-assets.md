@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
+source-git-commit: 9406dc74887d29e93461e1015a8f52fa7ee196f6
 workflow-type: tm+mt
-source-wordcount: '5556'
+source-wordcount: '5564'
 ht-degree: 4%
 
 ---
 
-# Middelen zoeken in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Digitale middelen zoeken in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -38,7 +38,7 @@ ht-degree: 4%
 | [Beperkingen](#limitations) en [Tips](#tips) |  |  |
 | [Afbeeldingsvoorbeelden](#samples) |  |  |
 
-Middelen zoeken met behulp van het veld Onderzoek boven aan het dialoogvenster [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klikt u op ![search_icon](assets/do-not-localize/search_icon.png) Voer in de bovenste balk het trefwoord Zoeken in en selecteer `Return`. U kunt ook de trefwoordsneltoets gebruiken `/` (slash) om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
+Digitale middelen zoeken met behulp van het veld Onderzoek boven aan het dialoogvenster [!DNL Experience Manager] webinterface. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], klikt u op ![search_icon](assets/do-not-localize/search_icon.png) Voer in de bovenste balk het trefwoord Zoeken in en selecteer `Return`. U kunt ook de trefwoordsneltoets gebruiken `/` (slash) om het veld Onderzoek te openen. `Location:Assets` is vooraf geselecteerd om de zoekopdrachten te beperken tot DAM-middelen. [!DNL Experience Manager] biedt suggesties als u begint met het typen van een trefwoord voor zoeken.
 
 Gebruik de **[!UICONTROL Filters]** om te zoeken naar elementen, mappen, tags en metagegevens. U kunt zoekresultaten filteren op basis van de verschillende opties (voorspelling), zoals bestandstype, bestandsgrootte, datum van laatste wijziging, status van element, gegevens over inzichten en Adobe Stock-licenties. U kunt het deelvenster Filters aanpassen en voorvertoningen van zoekopdrachten toevoegen of verwijderen met behulp van [zoekfacetten](/help/assets/search-facets.md). De [!UICONTROL File Type] filter in de [!UICONTROL Filters] heeft selectievakjes met gemengde status. Tenzij u alle geneste voorspellen (of indelingen) selecteert, worden de selectievakjes op het eerste niveau daarom gedeeltelijk gecontroleerd.
 
@@ -159,12 +159,12 @@ U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Medi
 
 ### GQL-zoekopdracht met specifieke waarden in metagegevensvelden {#gql-search}
 
-U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, zoals titel, beschrijving en maker. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (Maker, Titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
+U kunt zoeken naar digitale elementen op basis van exacte waarden van metagegevensvelden, zoals titel, beschrijving en maker. Met de zoekfunctie voor volledige tekst GQL haalt u alleen die elementen op waarvan de metagegevenswaarde exact overeenkomt met uw zoekopdracht. De namen van de eigenschappen (Maker, Titel, enzovoort) en de waarden zijn hoofdlettergevoelig.
 
 | Metagegevensveld | Facetwaarde en gebruik |
 |---|---|
 | Titel | titel:John |
-| Creator | maker:John |
+| Maker | maker:John |
 | Locatie | locatie:NA |
 | Beschrijving | beschrijving:&quot;Voorbeeldafbeelding&quot; |
 | Gereedschap Maker | creatortool:&quot;Adobe Photoshop&quot; |
@@ -178,12 +178,12 @@ U kunt zoeken in elementen op basis van exacte waarden van metagegevensvelden, z
 | Tijdsbereik (verloopt dateontime, offtime) | facetveld: lager gebonden..bovenaan |
 | Pad | /content/dam/&lt;folder name=&quot;&quot;> |
 | PDF-titel | pdftitle:&quot;Adobe-document&quot; |
-| Subject | onderwerp: &quot;Opleiding&quot; |
+| Onderwerp | onderwerp: &quot;Opleiding&quot; |
 | Tags | tags:&quot;Locatie en reizen&quot; |
 | Type | type:&quot;image\png&quot; |
 | Breedte van afbeelding | breedte:ondergrens..bovenaan |
 | Hoogte van afbeelding | hoogte:ondergrens..bovenaan |
-| Person | persoon:John |
+| Persoon | persoon:John |
 
 De eigenschappen `path`, `limit`, `size`, en `orderby` kan niet worden gecombineerd met `OR` met een andere eigenschap.
 
@@ -202,19 +202,19 @@ Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
 * Elementen weergeven met een eigenschapswaarde die een specifieke tekenreeks bevat (bijvoorbeeld: titel = Bazel-vergaderruimte): `title:*Meeting*`
 * Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoek naar string Adobe in assets met title=Jan Smit): `*Adobe* title:"John Doe"`
 
-## Middelen zoeken van andere [!DNL Experience Manager] aanbiedingen of interfaces {#search-assets-other-surfaces}
+## Digitale middelen zoeken van andere [!DNL Experience Manager] aanbiedingen of interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] maakt verbinding met DAM-opslagplaats met verschillende andere [!DNL Experience Manager] oplossingen om snellere toegang tot digitale middelen te bieden en de creatieve workflows te stroomlijnen. Elke detectie van middelen begint met bladeren of zoeken. Het zoekgedrag blijft grotendeels hetzelfde op de verschillende oppervlakken en oplossingen. Sommige zoekmethoden veranderen als doelpubliek, de gebruiksgevallen en de gebruikersinterface. Dit kan per doelgroep en gebruikersinterface verschillen. [!DNL Experience Manager] oplossingen. De specifieke methoden worden gedocumenteerd voor de afzonderlijke oplossingen in de onderstaande koppelingen. De algemeen toepasselijke tips en gedragingen worden in dit artikel beschreven.
 
-### Middelen zoeken vanuit het deelvenster Adobe-itemkoppeling {#aal}
+### Digitale middelen zoeken vanuit het deelvenster Adobe Asset Link {#aal}
 
 Met Adobe Asset Link hebben creatieve professionals nu toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de ondersteunde Adobe Creative Cloud-apps te verlaten. Met het deelvenster in de app in het [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign]. Met Asset Link kunnen gebruikers ook visueel vergelijkbare resultaten zoeken. De resultaten van de visuele zoekopdrachten worden aangedreven door instructiealgoritmen van Adobe Sensei-computers en helpen gebruikers bij het zoeken naar beelden die er in esthetisch opzicht op lijken. Zie [elementen zoeken en doorbladeren](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) Adobe Asset Link gebruiken.
 
-### Middelen zoeken in [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
+### Digitale middelen zoeken in [!DNL Experience Manager] bureaubladtoepassing {#desktop-app}
 
 Creatieve professionals gebruiken de desktop-app om de [!DNL Experience Manager Assets] gemakkelijk doorzoekbaar en beschikbaar op hun lokale bureaublad (Win of Mac). Creative Cloud kan de gewenste middelen eenvoudig weergeven in Mac Finder of Windows Verkenner, geopend in bureaubladtoepassingen en lokaal gewijzigd - de wijzigingen worden opgeslagen in [!DNL Experience Manager] met een nieuwe versie die in de repository is gemaakt. De toepassing ondersteunt standaardzoekopdrachten met een of meer trefwoorden. `*` en `?` jokertekens, en `AND` operator. Zie [elementen zoeken, zoeken en voorvertonen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in bureaubladtoepassing.
 
-### Middelen zoeken in [!DNL Brand Portal] {#brand-portal}
+### Digitale middelen zoeken in [!DNL Brand Portal] {#brand-portal}
 
 Line-of-business gebruikers en marketers gebruiken Brand Portal om de goedgekeurde digitale middelen efficiënt en veilig te delen met hun uitgebreide interne teams, partners en wederverkopers. Zie [zoekmiddelen op Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
@@ -226,7 +226,7 @@ Van binnen [!DNL Experience Manager] gebruikersinterface kunnen gebruikers zoeke
 
 U kunt filteren op dynamische media-afbeeldingen door **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** te selecteren in het deelvenster **[!UICONTROL Filters]**. Het filtert op en toont assets zoals afbeeldingsets, carrousels, gemengde mediasets, en spinsets. Tijdens het ontwerpen van webpagina&#39;s kunnen auteurs naar sets zoeken in de Inhoudszoeker. Een filter voor sets is beschikbaar in een pop-upmenu.
 
-### Middelen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#content-finder}
+### Digitale middelen zoeken in de Inhoudszoeker bij het ontwerpen van webpagina&#39;s {#content-finder}
 
 Auteurs kunnen de Inhoudszoeker gebruiken om in de DAM-opslagplaats te zoeken naar de relevante elementen en de elementen te gebruiken op de webpagina&#39;s die ze maken. Auteurs kunnen ook de functie Verbonden elementen gebruiken om te zoeken naar elementen die op een externe server beschikbaar zijn [!DNL Experience Manager] implementatie. Auteurs kunnen deze elementen vervolgens gebruiken in webpagina&#39;s op een lokale [!DNL Experience Manager] implementatie. Zie [externe elementen gebruiken](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 

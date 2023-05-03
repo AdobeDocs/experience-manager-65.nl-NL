@@ -1,16 +1,17 @@
 ---
 title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager kunt voortzetten om de prestaties te optimaliseren. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de lagen worden in het voorgeheugen ondergebracht Dispatcher en CDN, uiteindelijk verbeterend de prestaties van de cliënttoepassingen.
-source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
+exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1424'
 ht-degree: 1%
 
 ---
 
 # Blijvende GraphQL-query&#39;s {#persisted-queries-caching}
 
-Blijvende query&#39;s zijn GraphQL query&#39;s die worden gemaakt en opgeslagen op de Adobe Experience Manager (AEM) as a Cloud Service server. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de lagen van het Netwerk van de Levering van de Verzender en van de Inhoud (CDN) worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het verzoeken cliënttoepassing. Dit verschilt van standaard GraphQL query&#39;s, die worden uitgevoerd met behulp van POST-aanvragen waarbij de reactie niet gemakkelijk in cache kan worden geplaatst.
+Blijvende query&#39;s zijn GraphQL-query&#39;s die zijn gemaakt en opgeslagen op de Adobe Experience Manager (AEM)-server. Ze kunnen worden aangevraagd met een GET-aanvraag door clienttoepassingen. De reactie van een verzoek van de GET kan bij de lagen van het Netwerk van de Levering van de Verzender en van de Inhoud (CDN) worden in het voorgeheugen ondergebracht, uiteindelijk verbeterend de prestaties van de het verzoeken cliënttoepassing. Dit verschilt van standaard GraphQL query&#39;s, die worden uitgevoerd met behulp van POST-aanvragen waarbij de reactie niet gemakkelijk in cache kan worden geplaatst.
 
 <!--
 >[!NOTE]

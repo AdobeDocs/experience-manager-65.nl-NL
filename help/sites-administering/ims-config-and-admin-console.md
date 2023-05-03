@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 778987e69a23f81584f7a86db2fe24df64035919
+source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1677'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 10%
 
 AEM 6.4.3.0 introduceert [!DNL Admin Console] ondersteuning voor AEM en verificatie op basis van Adobe IMS (Identity Management System) voor **AEM Managed Services** klanten.
 
-AEM [!DNL Admin Console] biedt AEM Managed Services-klanten de mogelijkheid om alle Experience Cloud-gebruikers in één console te beheren. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
+AEM [!DNL Admin Console] biedt AEM Managed Services-klanten de mogelijkheid om alle Experience Cloud-gebruikers in één console te beheren. Gebruikers kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich bij een bepaalde instantie kunnen aanmelden.
 
 ## Belangrijkste kenmerken {#key-highlights}
 
@@ -40,7 +40,7 @@ AEM [!DNL Admin Console] biedt AEM Managed Services-klanten de mogelijkheid om a
 * De [!DNL Admin Console] zal AEM klanten van Managed Services als organisaties IMS en hun Instanties als Contexten van het Product vertegenwoordigen. Systeem- en productbeheerders van klanten kunnen de toegang tot instanties beheren
 * AEM Managed Services de topologieën van de klant met de [!DNL Admin Console]. Er is één exemplaar van AEM Managed Services Product Context per Instantie in de [!DNL Admin Console].
 * Productprofielen in [!DNL Admin Console] bepaalt welke instanties een gebruiker kan benaderen
-* Federatieve verificatie met behulp van eigen SAML 2-compatibele identiteitsproviders van klanten wordt ondersteund
+* Federatieve verificatie met behulp van de eigen SAML 2-compatibele identiteitsproviders van klanten wordt ondersteund
 * Alleen Enterprise- of federatieve id&#39;s (voor Single Sign-On van klant) worden ondersteund, geen persoonlijke Adobe-id&#39;s.
 * [!DNL User Management] (in Adobe [!DNL Admin Console]) blijft eigendom van de klantenbeheerders.
 
@@ -108,7 +108,7 @@ Met het Hulpprogramma voor gebruikerssynchronisatie (UST in het kort) kunnen zak
 
 Wanneer de looppas van de Synchronisatie van de Gebruiker, het een lijst van gebruikers van de Actieve Folder van de organisatie (of een andere compatibele gegevensbron) haalt en het met de lijst van gebruikers binnen vergelijkt [!DNL Admin Console]. Vervolgens wordt de Adobe [!DNL User Management] API zodat de [!DNL Admin Console] wordt gesynchroniseerd met de directory van de organisatie. De wisselstroom is volledig eenrichtingsverkeer; alle in de [!DNL Admin Console] niet naar de directory worden geduwd.
 
-Het hulpmiddel staat systeemadmin toe om gebruikersgroepen in de folder van de klant met productconfiguratie en gebruikersgroepen in kaart te brengen [!DNL Admin Console], de nieuwe UST-versie maakt het ook mogelijk om op dynamische wijze gebruikersgroepen op te richten in de [!DNL Admin Console].
+Met dit hulpprogramma kan de systeembeheerder gebruikersgroepen in de directory van de klant toewijzen aan productconfiguratie en gebruikersgroepen in de [!DNL Admin Console], de nieuwe UST-versie maakt het ook mogelijk om op dynamische wijze gebruikersgroepen op te richten in de [!DNL Admin Console].
 
 Om Gebruikerssynchronisatie in te stellen, moet de organisatie een set referenties maken op dezelfde manier als de [[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
@@ -158,11 +158,11 @@ De instantiedetails kunnen worden gecontroleerd om de instantie te identificeren
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt voor het toewijzen van toegang aan gebruikers en groepen.
+Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt voor het toewijzen van toegang aan gebruikers.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
-Gebruikers en groepen die zijn toegevoegd onder dit productprofiel, kunnen zich aanmelden bij die instantie, zoals in het onderstaande voorbeeld wordt getoond:
+Gebruikers die onder dit productprofiel zijn toegevoegd, kunnen zich aanmelden bij die instantie, zoals in het onderstaande voorbeeld wordt getoond:
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 

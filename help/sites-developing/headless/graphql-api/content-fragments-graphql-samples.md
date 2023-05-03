@@ -3,9 +3,9 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -1306,15 +1306,15 @@ Deze query vraagt om:
 
 **Voorbeeldquery**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1323,16 +1323,42 @@ Deze query vraagt om:
 
 ### Voorbeeldquery voor een geneste inhoudsfragment - Meerdere modeltypen{#sample-wknd-nested-fragment-multiple-model}
 
+#### Type model waarnaar wordt verwezen
+
 Deze query vraagt om:
 
 * voor meerdere inhoudsfragmenten van het type `bookmark`
-   * met fragmentverwijzingen naar andere fragmenten van de specifieke modeltypen `article` en `adventure`
+   * met fragmentverwijzingen naar andere fragmenten van het specifieke modeltype `article`
 
 >[!NOTE]
 >
->Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd.
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met het model `Article` geselecteerd. Query levert `fragments` als een array van `[Article]`.
 
-```xml
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Meerdere modeltypen waarnaar wordt verwezen
+
+Deze query vraagt om:
+
+* voor meerdere inhoudsfragmenten van het type `bookmark`
+   * met fragmentverwijzingen naar andere fragmenten van de specifieke modeltypen `Article` en `Adventure`
+
+>[!NOTE]
+>
+>Het veld `fragments` heeft het gegevenstype Data `fragment-reference`met de modellen `Article`, `Adventure` geselecteerd. Query levert `fragments` als een array van `[AllFragmentModels]`, die wordt afgeweken van het type union.
+
+```graphql
 {
   bookmarkList {
     items {

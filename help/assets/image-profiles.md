@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
+source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2956'
+ht-degree: 4%
 
 ---
 
@@ -63,7 +63,7 @@ Adobe raadt de volgende richtlijnen en tips aan om het gebruik van Smart Crop on
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren of de snijinhoud in de verschillende doelresoluties te behouden.
+U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen: Pixeluitsnede of Slim uitsnijden. U kunt er ook voor kiezen om het maken van kleur- en afbeeldingsstalen te automatiseren.
 
 >[!IMPORTANT]
 ・ Adobe raadt u aan de gegenereerde gewassen en stalen te herzien om ervoor te zorgen dat ze geschikt en relevant zijn voor uw merk en waarden.

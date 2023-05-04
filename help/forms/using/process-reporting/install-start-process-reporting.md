@@ -8,9 +8,9 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1669'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Als u momenteel Forms Workflow gebruikt, kan de AEM Forms-database mogelijk een 
 
 Met de publicatieservices Process Reporting worden alle AEM Forms-gegevens gepubliceerd die momenteel in de database beschikbaar zijn. Het impliceert dat als het gegevensbestand erfenisgegevens bevat waarover u geen rapporten en vragen wilt in werking stellen, al die gegevens ook aan de bewaarplaats zouden worden gepubliceerd hoewel het niet voor rapportering wordt vereist. U wordt aangeraden deze gegevens te wissen voordat u de services uitvoert om de gegevens naar de Process Reporting-opslagplaats te publiceren. Dit verbetert de prestaties van zowel de uitgeversdienst als de dienst die de gegevens voor rapportering vraagt.
 
-Voor meer informatie over het wissen van AEM Forms-procesgegevens raadpleegt u [Procesgegevens wissen](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Voor meer informatie over het wissen van AEM Forms-procesgegevens raadpleegt u [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Raadpleeg het Adobe Developer Connection-artikel over het gebruik van het gereedschap Leegmaken voor de tips en trucs van het hulpprogramma [Leegmaken en banen](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Raadpleeg het Adobe Developer Connection-artikel over het gebruik van het gereedschap Leegmaken voor de tips en trucs van het hulpprogramma [Leegmaken en banen](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Services voor Process Reporting configureren {#configuring-process-reporting-services}
 

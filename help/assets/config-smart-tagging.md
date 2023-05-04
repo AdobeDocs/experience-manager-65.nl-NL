@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1999'
+source-wordcount: '1982'
 ht-degree: 21%
 
 ---
@@ -293,7 +293,7 @@ Om te controleren of de Slimme Dienst van de Inhoud op uw markeringen in de trai
 
    * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
    * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
-   * Tags worden ondersteund in de landinstellingen die [!DNL Experience Manager] wordt ondersteund in. Voor een lijst met talen raadpleegt u [Opmerkingen bij de release Smart Content Services](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+   * Tags worden ondersteund in de landinstellingen die [!DNL Experience Manager] wordt ondersteund in.
 
 * Als u wilt zoeken naar elementen met slimme tags (normaal of verbeterd), gebruikt u de opdracht [!DNL Assets] Omnissearch (full-text zoekopdracht). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 

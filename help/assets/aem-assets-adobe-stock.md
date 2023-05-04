@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2326'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 3%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
 | AEM 6,5 | Dit artikel |
-| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
 
 <!-- old content
 
@@ -154,7 +153,7 @@ Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
 
 1. In de **[!UICONTROL Project overview]** tabblad, klikt u op **[!UICONTROL Add API]**.
 
-1. In de **[!UICONTROL Add an API window]**, selecteert u **[!UICONTROL Adobe Stock]**. Klikken **[!UICONTROL Next]**.
+1. In de **[!UICONTROL Add an API window]**, selecteert u **[!UICONTROL Adobe Stock]**. Klik op **[!UICONTROL Next]**.
 
 1. In de **[!UICONTROL Configure API]** venster, selecteert u **[!UICONTROL Service Account (JWT)]** verificatie. Klik op **[!UICONTROL Next]**.
 
@@ -311,7 +310,7 @@ Als u het dialoogvenster [!DNL Adobe Stock] cloudconfiguratie:
 
 In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij het openen van de [!DNL Adobe Stock] activa:
 
-| Gebruiker | Groeperen | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
+| Gebruiker | Groep | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | beheerder | N.v.t. | Alles | N.v.t. | Ja | Ja |
 | test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |

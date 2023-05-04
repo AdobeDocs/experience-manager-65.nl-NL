@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 15%
+source-wordcount: '825'
+ht-degree: 12%
 
 ---
 
@@ -22,7 +22,7 @@ U kunt ook extra tabbladen toevoegen aan de [!DNL Assets] deelvenster Beheer.
 
 >[!CAUTION]
 >
->Vanaf [!DNL Experience Manager] 6.4, is de klassieke gebruikersinterface afgekeurd. Zie voor aankondiging [vervangen en verwijderde functies](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassingen raadpleegt u [zoekfacetten](/help/assets/search-facets.md).
+>Vanaf [!DNL Experience Manager] 6.4, is de klassieke gebruikersinterface afgekeurd. Adobe raadt u aan een interface met aanraakbediening te gebruiken. Voor aanpassingen raadpleegt u [zoekfacetten](/help/assets/search-facets.md).
 
 ## Bedekking {#overlaying}
 
@@ -255,42 +255,42 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `fulltext` |
+| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `fulltext` |
 | searchCallback | -functie | Callback voor het activeren van zoeken op gebeurtenis `keyup`. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `property` |
-| propertyName | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:title` |
-| defaultValue | Tekenreeks | Vooraf ingevulde standaardwaarde. |
+| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `property` |
+| propertyName | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:title` |
+| defaultValue | String | Vooraf ingevulde standaardwaarde. |
 
 ### PathPredicate {#pathpredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `path` |
-| rootPath | Tekenreeks | Hoofdpad van de voorspelling. Standaardwaarden: `/content/dam` |
-| pathFieldPredicateName | Tekenreeks | Standaardwaarden: `folder` |
+| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `path` |
+| rootPath | String | Hoofdpad van de voorspelling. Standaardwaarden: `/content/dam` |
+| pathFieldPredicateName | String | Standaardwaarden: `folder` |
 | showFlatOption | Boolean | Markering voor selectievakje `search in subfolders`. Heeft als standaardwaarde true. |
 
 ### DatePredicate {#datepredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/jcr:lastModified` |
-| defaultValue | Tekenreeks | Vooraf ingevulde standaardwaarde |
+| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `daterange` |
+| eigenschapsnaam | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/jcr:lastModified` |
+| defaultValue | String | Vooraf ingevulde standaardwaarde |
 
 ### OptionsPredicate {#optionspredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| title | Tekenreeks | Hiermee wordt een extra bovenste titel toegevoegd |
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/metadata/cq:tags` |
-| samenvouwen | Tekenreeks | Niveau samenvouwen. Standaardwaarden: `level1` |
+| titel | String | Hiermee wordt een extra bovenste titel toegevoegd |
+| predikaatName | String | Naam van de voorspelling. Standaardwaarden: `daterange` |
+| eigenschapsnaam | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/metadata/cq:tags` |
+| samenvouwen | String | Niveau samenvouwen. Standaardwaarden: `level1` |
 | triggerSearch | Boolean | Markering voor het activeren van zoekopdrachten bij controle. Standaard ingesteld op false |
 | searchCallback | -functie | Callback voor het teweegbrengen van onderzoek. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Getal | Time-out voordat searchCallback wordt gestart. Wordt standaard ingesteld op 800 ms |

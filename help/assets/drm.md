@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1343'
 ht-degree: 5%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 5%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6,5 | Dit artikel |
-| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/drm.html?lang=en) |
 
 Digitale middelen zijn vaak gekoppeld aan een licentie die de gebruiksvoorwaarden en -duur bepaalt. Omdat [!DNL Adobe Experience Manager Assets] is volledig geïntegreerd met de [!DNL Experience Manager] -platform, kunt u informatie over het verlopen van bedrijfsmiddelen en de status van bedrijfsmiddelen efficiënt beheren. U kunt ook licentiegegevens aan elementen koppelen.
 
@@ -62,7 +61,7 @@ In het deelvenster Zoeken kunt u zoeken naar verlopen elementen, waaronder verlo
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Choose **[!UICONTROL Expired]**. Alleen de verlopen elementen worden weergegeven nadat de zoekresultaten zijn gefilterd.
+1. Kies **[!UICONTROL Expired]**. Alleen de verlopen elementen worden weergegeven nadat de zoekresultaten zijn gefilterd.
 
 Wanneer u **[!UICONTROL Expired]** de [!DNL Assets] De console toont slechts de verlopen activa en de subassets die door samengestelde activa van verwijzingen worden voorzien. De samengestelde elementen die verwijzen naar verlopen subelementen worden niet direct weergegeven nadat de subelementen verlopen zijn. In plaats daarvan worden ze na [!DNL Experience Manager] ontdekt dat zij verlopen subassets van verwijzingen voorzien de volgende tijd de planner loopt.
 
@@ -73,7 +72,7 @@ Bovendien als een glitch of een fout de planner verhindert verlopen activa in de
 Om het [!DNL Assets] console om de verwijzende samengestelde activa samen met de verlopen subassets te tonen, vorm en **[!UICONTROL Adobe CQ DAM Expiry Notification]** workflow in [!DNL Experience Manager] Configuratiebeheer.
 
 1. Openen [!DNL Experience Manager] Configuratiebeheer.
-1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard, **[!UICONTROL Time based Scheduler]** is geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
+1. Kies **[!UICONTROL Adobe CQ DAM Expiry Notification]**. Standaard, **[!UICONTROL Time based Scheduler]** is geselecteerd, die een taak plant om op een bepaald tijdstip te controleren of een element verlopen subassets heeft. Nadat de taak is voltooid, worden elementen waarvan de subelementen zijn verlopen en waarnaar wordt verwezen, weergegeven als verlopen in de zoekresultaten.
 
 1. Als u de taak periodiek wilt uitvoeren, wist u het veld **[!UICONTROL Time Based Scheduler Rule]** en wijzigt u de tijd in seconden in het veld **[!UICONTROL Periodic Scheduler]**. De voorbeeldexpressie `0 0 0 * * ?` wordt de taak om 00 uur gestart.
 1. Selecteren **[!UICONTROL send email]** om e-mails te ontvangen wanneer een middel verloopt.

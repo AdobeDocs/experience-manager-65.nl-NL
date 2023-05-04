@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Als er te veel veranderingen en verplichtingen in korte tijd aan de repository w
 1. Om te voorkomen dat de limieten van de waarnemingswachtrij worden overschreden, wordt aanbevolen:
 
    * Verlaag de constante snelheid van komma&#39;s. Korte punten in vastleggingen zijn aanvaardbaar, maar de constante snelheid moet worden verlaagd.
-   * De grootte van de `DiffCache` zoals beschreven in [Tips voor het afstemmen van prestaties > Mongo Storage Tuning > Documentcachegrootte](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+   * De grootte van de `DiffCache` zoals beschreven in [Tips voor het afstemmen van prestaties > Mongo Storage Tuning > Documentcachegrootte](/help/sites-deploying/configuring-performance.md).
 
 ## Een vast herindexeringsproces identificeren en corrigeren {#identifying-and-remediating-a-stuck-re-indexing-process}
 

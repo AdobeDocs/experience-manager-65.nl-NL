@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2277'
-ht-degree: 14%
+source-wordcount: '2265'
+ht-degree: 13%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 14%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
 | AEM 6,5 | Dit artikel |
-| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Een bedrijfsbrede implementatie van [!DNL Adobe Experience Manager Assets] heeft de capaciteit om vele activa op te slaan. Soms kan het lastig en tijdrovend zijn om het juiste middel te vinden als u alleen de algemene zoekmogelijkheden van [!DNL Experience Manager].
 
@@ -198,7 +197,7 @@ Voer de volgende stappen uit om de standaardzoekfacet te herstellen:
 
 Als er geen beheerdersrol aan u is toegewezen, volgt hier een lijst met machtigingen die u nodig hebt voor het uitvoeren van bewerkingen, verwijderen en voorvertoningen van handelingen met zoekfacetten.
 
-| Actie | Machtigingen |
+| Handeling | Machtigingen |
 | ------------------- | ---------------------------------------------------------------- |
 | [!UICONTROL Edit] | Lezen en schrijven toestemmingen op `/apps` knooppunt in CRXDE |
 | [!UICONTROL Delete] | De machtiging Lezen, Schrijven en Verwijderen geldt voor de `/apps` knooppunt in CRXDE |

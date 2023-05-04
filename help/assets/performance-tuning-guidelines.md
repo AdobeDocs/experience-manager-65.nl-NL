@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2680'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,7 @@ XMP terugschrijven werkt het oorspronkelijke element bij wanneer metagegevens wo
 * Er wordt een versie van het element gemaakt
 * [!UICONTROL DAM Update Asset] wordt uitgevoerd met het element
 
-De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan XMP terugschrijven uit te schakelen als dit niet vereist is. Zie voor meer informatie [XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
+De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan XMP terugschrijven uit te schakelen als dit niet vereist is. Zie voor meer informatie [XMP](/help/assets/xmp-writeback.md).
 
 Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve XMP terugzetactiviteit resulteren als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 

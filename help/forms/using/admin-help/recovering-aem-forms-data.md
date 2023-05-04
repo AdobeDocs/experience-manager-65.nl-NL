@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -57,10 +57,10 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 1. (WebSphere® Application Server) Als u herstelt naar een nieuwe instantie van WebSphere® Application Server, voert u de opdracht restoreConfig.bat/sh uit.
 1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en vervolgens de transactierlogboeken opnieuw toe te passen op de herstelde database. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
 
-   * [DB2® Back-up en herstel voor AEM formulieren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [Back-up en herstel van oracle voor AEM formulieren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Microsoft® SQL Server Backup and Recovery voor AEM formulieren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [MySQL Backup and Recovery voor AEM formulieren](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Back-up en herstel van oracle voor AEM formulieren](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [MySQL Backup and Recovery voor AEM formulieren](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Herstel de GDS-map door eerst de inhoud van de GDS-map te verwijderen bij de bestaande installatie van AEM formulieren en vervolgens de inhoud van de GDS-map te kopiëren uit de GDS-map waarvan een back-up is gemaakt. Als u de locatie van de GDS-directory hebt gewijzigd, raadpleegt u [De GDS-locatie wijzigen tijdens het herstellen](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Wijzig de naam van de GDS-back-updirectory die moet worden hersteld, zoals in de volgende voorbeelden wordt getoond:

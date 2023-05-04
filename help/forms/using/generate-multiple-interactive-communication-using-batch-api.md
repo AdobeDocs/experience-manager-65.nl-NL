@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '2188'
-ht-degree: 1%
+source-wordcount: '2167'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 
 Interactieve communicatie maken op basis van records die zijn opgeslagen in een JSON-bestand:
 
-1. Een [Gecontroleerde map](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze voor gebruik van de Batch-API:
+1. Een [Gecontroleerde map](/help/forms/using/creating-configure-watched-folder.md) en configureer deze voor gebruik van de Batch-API:
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
@@ -91,11 +91,11 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
-      | templatePath | Tekenreeks | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
-      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
+      | templatePath | String | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
+      | recordPath | String | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |
       | usePrefillService | Boolean | Stel de waarde in op Onwaar. U kunt de parameter usePrefillService gebruiken om interactieve communicatie met gegevens vooraf te vullen die van prefill dienst worden gehaald die voor overeenkomstige interactieve mededeling wordt gevormd. Wanneer usePrefillService is ingesteld op true, worden JSON-invoergegevens (voor elke record) beschouwd als FDM-argumenten. De standaardwaarde is false. |
-      | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
-      | locale | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL |
+      | batchType | String | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
+      | landinstelling | String | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL |
 
    1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:
@@ -109,7 +109,7 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
 
 #### Invoergegevens gebruiken die zijn opgeslagen in een externe gegevensbron en die via het formuliergegevensmodel kunnen worden benaderd om een interactieve communicatie te produceren {#use-fdm-as-data-source}
 
-U combineert gegevens (verslagen) die in een externe gegevensbron met een interactieve communicatie malplaatje worden bewaard om een interactieve mededeling te produceren. Wanneer u een interactieve mededeling creeert, verbindt u het met een externe gegevensbron via een Model van de Gegevens van het Vorm (FDM) om tot gegevens toegang te hebben. U kunt de Gecontroleerde service Mappen in batch verwerken om gegevens op te halen met hetzelfde formuliergegevensmodel van een externe gegevensbron. Naar [een interactieve communicatie maken op basis van records die zijn opgeslagen in een externe gegevensbron](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+U combineert gegevens (verslagen) die in een externe gegevensbron met een interactieve communicatie malplaatje worden bewaard om een interactieve mededeling te produceren. Wanneer u een interactieve mededeling creeert, verbindt u het met een externe gegevensbron via een Model van de Gegevens van het Vorm (FDM) om tot gegevens toegang te hebben. U kunt de Gecontroleerde service Mappen in batch verwerken om gegevens op te halen met hetzelfde formuliergegevensmodel van een externe gegevensbron. Naar [een interactieve communicatie maken op basis van records die zijn opgeslagen in een externe gegevensbron](/help/forms/using/work-with-form-data-model.md):
 
 1. Configureer het formuliergegevensmodel van de sjabloon:
    1. Open het formuliergegevensmodel dat is gekoppeld aan de interactieve communicatiesjabloon.
@@ -141,7 +141,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
    1. Sla het bestand op en sluit het.
 
-1. Een [Gecontroleerde map](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) en configureer deze zo dat de Batch API-service wordt gebruikt:
+1. Een [Gecontroleerde map](/help/forms/using/creating-configure-watched-folder.md) en configureer deze zo dat de Batch API-service wordt gebruikt:
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
@@ -153,11 +153,11 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
       | Eigenschap | Type | Beschrijving |
       |--- |--- |--- |
-      | templatePath | Tekenreeks | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
-      | recordPath | Tekenreeks | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
+      | templatePath | String | Geef het pad op van de interactieve communicatiesjabloon die u wilt gebruiken. Bijvoorbeeld /content/dam/formsanddocuments/testsample/mediumic. Het is een verplicht bezit. |
+      | recordPath | String | De waarde van het recordPath gebied helpt plaatsnaam van een interactieve mededeling plaatsen. U kunt een pad van een veld van een record instellen als waarde van het veld recordPath. Als u bijvoorbeeld /employee/Id opgeeft, wordt de waarde van het id-veld een naam voor de bijbehorende interactieve communicatie. De standaardwaarde is willekeurig [willekeurige UUID](https://docs.oracle.com/javase/7/docs/api/java/util/UUID.html#randomUUID()). |  |
       | usePrefillService | Boolean | Stel de waarde in op Waar. De standaardwaarde is false.  Als de waarde is ingesteld op true, leest de batch-API gegevens uit het geconfigureerde formuliergegevensmodel en wordt deze gevuld naar de interactieve communicatie. Wanneer usePrefillService is ingesteld op true, worden JSON-invoergegevens (voor elke record) beschouwd als FDM-argumenten. |
-      | batchType | Tekenreeks | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
-      | locale | Tekenreeks | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL. |
+      | batchType | String | Stel waarde in op AFDRUKKEN, WEB of WEB_AND_PRINT. De standaardwaarde is WEB_AND_PRINT. |
+      | landinstelling | String | Geef de landinstelling van interactieve uitvoercommunicatie op. De out-of-the-box service maakt geen gebruik van de landinstelling, maar u kunt wel een aangepaste service maken om gelokaliseerde interactieve communicatie te genereren. De standaardwaarde is nl_NL. |
 
    1. Tikken **[!UICONTROL Create]** De gecontroleerde map wordt gemaakt.
 1. Gebruik de gecontroleerde map om interactieve communicatie te genereren:

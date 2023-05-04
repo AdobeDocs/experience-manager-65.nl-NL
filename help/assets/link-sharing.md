@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '936'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 3%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6,5 | Dit artikel |
-| AEM 6,4 | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en) |
 
 [!DNL Adobe Experience Manager Assets] kunt u elementen, mappen en verzamelingen als een URL delen met leden van uw organisatie en externe entiteiten, waaronder partners en leveranciers. Het delen van elementen via een koppeling is een handige manier om bronnen beschikbaar te maken voor externe partijen zonder dat deze zich eerst hoeven aan te melden bij [!DNL Assets].
 
@@ -73,7 +72,7 @@ Als u de URL wilt genereren voor elementen die u met gebruikers wilt delen, gebr
 
    ![Werkbalkoptie om het gedeelde element te downloaden](assets/chlimage_1-547.png)
 
-1. Ga naar de [!DNL Assets] gebruikersinterface en klik op [!DNL Experience Manager] logo. Choose **[!UICONTROL Navigation]**. Kies in het navigatievenster de optie **[!UICONTROL Shared Links]** om een lijst met gedeelde elementen weer te geven.
+1. Ga naar de [!DNL Assets] gebruikersinterface en klik op [!DNL Experience Manager] logo. Kies **[!UICONTROL Navigation]**. Kies in het navigatievenster de optie **[!UICONTROL Shared Links]** om een lijst met gedeelde elementen weer te geven.
 
 1. Als u een element niet wilt delen, selecteert u het en klikt u op **[!UICONTROL Unshare]** op de werkbalk. Hierna volgt een bevestigingsbericht. De vermelding voor het element wordt uit de lijst verwijderd.
 

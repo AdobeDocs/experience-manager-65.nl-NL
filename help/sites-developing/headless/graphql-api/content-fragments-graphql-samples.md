@@ -3,7 +3,7 @@ title: GraphQL leren gebruiken met AEM - Voorbeeldinhoud en query's
 description: Leer GraphQL met AEM gebruiken om inhoud zonder problemen te bedienen door voorbeeldinhoud en query's te verkennen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
+source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
 workflow-type: tm+mt
 source-wordcount: '1586'
 ht-degree: 1%
@@ -1328,7 +1328,7 @@ Deze query vraagt om:
 Deze query vraagt om:
 
 * voor meerdere inhoudsfragmenten van het type `bookmark`
-   * met fragmentverwijzingen naar andere fragmenten van het specifieke modeltype `article`
+   * met fragmentverwijzingen naar andere fragmenten van het specifieke modeltype `Article`
 
 >[!NOTE]
 >

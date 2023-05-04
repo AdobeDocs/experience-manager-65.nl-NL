@@ -10,9 +10,9 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: bd33c0884be55b76ef526c8c938236e743dc3dc6
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Het integreren rapport UI in bestaand Proces Meldend UI  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-De eerste vereisten voor het maken van een aparte gebruikersinterface voor het weergeven van resultaten zijn [Basisprincipes van verkoop](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Een CRX-knooppunt maken](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#creating-a-node) en passende [toegangsrechten](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#access-control).
+De eerste vereisten voor het maken van een aparte gebruikersinterface voor het weergeven van resultaten zijn [Basisprincipes van verkoop](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Een CRX-knooppunt maken](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) en passende [toegangsrechten](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. Maak een aparte interface.
 1. Een onderliggend element maken `nt:unstructured` knooppunt bij `/content/process-reporting-runtime/custom-reports` knoop voor elk pluggable rapport.

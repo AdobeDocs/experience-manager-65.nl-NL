@@ -9,9 +9,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -263,7 +263,7 @@ Voor elk configuratietype is er een *Handler voor bijwerken van inhoud*, een OSG
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface die alle updatemanagers moeten uitvoeren
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Een abstracte klasse die het teruggeven van middelen gebruikend Sling vereenvoudigt
 
-Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend [Maven SCR plug-in](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) gebruiken met JavaDoc-tags of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
+Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend [Maven SCR plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) gebruiken met JavaDoc-tags of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
 
 ```java
 /*

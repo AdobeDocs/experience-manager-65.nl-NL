@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Om een configuratie ExactTarget in Cloud Services te creëren:
 
    ExactTarget is gevormd. U kunt de configuratie bewerken door op **Bewerken**. U kunt naar ExactTarget gaan door te klikken **Ga naar ExactTarget**.
 
-1. AEM beschikt nu over een functie voor gegevensextensie. U kunt ExactTarget-gegevensextensiekolommen importeren. Dit kan worden gevormd door &quot;+&quot;teken te klikken dat behalve met succes tot stand gebrachte configuratie ExactTarget verschijnt. U kunt een van de bestaande gegevensextensies selecteren in de vervolgkeuzelijst. Voor meer informatie over hoe te om gegevensuitbreidingen te vormen, verwijs [ExactTarget-documentatie](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM beschikt nu over een functie voor gegevensextensie. U kunt ExactTarget-gegevensextensiekolommen importeren. Het kan worden gevormd door &quot;+&quot;teken te klikken dat behalve met succes tot stand gebrachte configuratie ExactTarget verschijnt. U kunt een van de bestaande gegevensextensies selecteren in de vervolgkeuzelijst. Voor meer informatie over hoe te om gegevensuitbreidingen te vormen, zie [ExactTarget-documentatie](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5).
 
    De geïmporteerde kolommen voor gegevensextensies kunnen later worden gebruikt via de **Tekst en personalisatie** component.
 

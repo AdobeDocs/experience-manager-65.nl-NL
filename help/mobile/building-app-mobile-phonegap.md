@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Verzend uw toepassingsbronnen naar PhoneGap Build voor compilatie voor de versch
 
 1. Klik in het dialoogvenster Succes op PhoneGap Build om de Adobe PhoneGap Build-pagina te openen op [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Als u wacht tot uw app wordt weergegeven, kunt u de knop [Status van PhoneGap Build](https://status.build.phonegap.com/) pagina.
 
-   Voor informatie over het installeren van de build raadpleegt u de [Documentatie PhoneGap Build](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
+   Voor informatie over het installeren van de build raadpleegt u de [Documentatie PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

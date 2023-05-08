@@ -1,8 +1,6 @@
 ---
 title: Pushmeldingen
-seo-title: Push Notifications
-description: Volg deze pagina voor meer informatie over het gebruik van pushberichten in een AEM Mobile-app.
-seo-description: Follow this page to learn about how to use push notifications in an AEM Mobile app.
+description: Volg deze pagina voor meer informatie over het gebruik van pushberichten in een Adobe Experience Manager Mobile-app.
 uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '3273'
+source-wordcount: '3293'
 ht-degree: 0%
 
 ---
@@ -44,14 +42,14 @@ Deze release van AEM biedt ondersteuning voor mobiele iOS- en Android-apparaten.
 
 Als u pushberichten wilt gebruiken in een AEM Mobile-app, moet u de volgende stappen op hoog niveau uitvoeren.
 
-Een AEM ontwikkelaar:
+Een Experience Manager Developer doet doorgaans het volgende:
 
 1. Registreren bij Apple en Google Messaging Services
 1. Registreer met de dienst van het duw overseinen en vorm het
 1. Pushondersteuning toevoegen aan de app
 1. Een telefoon voorbereiden voor testen
 
-Terwijl een AEM beheerder:
+Een beheerder van een Experience Manager doet het volgende:
 
 1. Push-on voor AEM toepassingen configureren
 1. De app ontwikkelen en implementeren
@@ -62,9 +60,9 @@ Terwijl een AEM beheerder:
 
 #### De Apple Push Notification Service (APNS) gebruiken {#using-the-apple-push-notification-service-apns}
 
-Ga naar de Apple-pagina [hier](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html) om vertrouwd te raken met de Apple Push Notification Service.
+Ga naar de Apple-pagina [hier](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) om vertrouwd te raken met de Apple Push Notification Service.
 
-Als u APNS wilt gebruiken, hebt u een **Certificaat** bestand (een .cer-bestand), een push **Persoonlijke sleutel** (een .p12-bestand) en een **Wachtwoord persoonlijke sleutel** uit Apple. Instructies over hoe dat moet gebeuren zijn te vinden [hier](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html).
+Als u APNs wilt gebruiken, hebt u een **Certificaat** bestand (een .cer-bestand), een push **Persoonlijke sleutel** (een .p12-bestand) en een **Wachtwoord persoonlijke sleutel** uit Apple. Instructies over hoe dat moet gebeuren zijn te vinden [hier](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### De Google Cloud Messaging (GCM)-service gebruiken {#using-the-google-cloud-messaging-gcm-service}
 
@@ -217,7 +215,7 @@ Maak twee inhoudsknooppunten (één in app-config en één in app-config-dev) me
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 Met deze eigenschappen (.content.xml-bestanden):
-&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)&quot; xmlns:nt=&quot; [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)&quot; jcr:primaryType=&quot;nt:ungestructureerde&quot; excludeProperties=&quot;[appAPIAccessToken]&quot; path=&quot;../../../...&quot;
+&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; jcr:primaryType=&quot;nt:ungestructureerde&quot; excludeProperties=&quot;[appAPIAccessToken]&quot; path=&quot;../../../...&quot;
 [
 targetRootDirectory=&quot;www&quot; type=&quot;notificationsconfig&quot;/>
 

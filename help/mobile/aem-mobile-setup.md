@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Bestaande klanten van AEM Mobile Apps die van AEM 6.2 of 6.3 naar AEM 6.5 migreren, kunnen AEM Mobile Apps blijven gebruiken door een [pakket van PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). Nieuwe installaties van AEM 6.5 bieden echter geen ondersteuning voor de functionaliteit van AEM Mobile Apps.
+>Bestaande klanten van AEM Mobile Apps die van AEM 6.2 of 6.3 aan AEM 6.5 migreren kunnen AEM Mobile Apps blijven gebruiken door een pakket van PackageShare te downloaden. Nieuwe installaties van AEM 6.5 bieden echter geen ondersteuning voor de functionaliteit van AEM Mobile Apps.
 
 Als u AEM wilt gebruiken om inhoud te produceren voor AEM Mobile-apps, moet u het AEM-exemplaar integreren met de op de cloud gebaseerde AEM Mobile On-demand Services-account en -project(en).
 
@@ -35,9 +35,9 @@ Voer de volgende stappen uit om AEM Mobile in te stellen, zodat de gebruiker de 
 
 Om aan de slag te gaan met het instellen van AEM Mobile, moet u:
 
-* **Een API-sleutel aanvragen**: Om tot de On-Demand Services API toegang te hebben, moet u een API-sleutel aanvragen. Als u de API-sleutel wilt aanvragen, voert u de [PDF-formulier](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Het ingevulde formulier verzenden naar Adobe Developer Support: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Een API-sleutel aanvragen**: Om tot de On-Demand Services API toegang te hebben, moet u een API-sleutel aanvragen. Als u de API-sleutel wilt aanvragen, voert u de [PDF-formulier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Het ingevulde formulier verzenden naar Adobe Developer Support: [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Apparaat-id en apparaattoken genereren**: Nadat u de API-sleutel hebt ontvangen, kunt u de apparaat-id en het apparaattoken genereren. Ga naar [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) en voer de volgende handelingen uit:
+* **Apparaat-id en apparaattoken genereren**: Nadat u de API-sleutel hebt ontvangen, kunt u de apparaat-id en het apparaattoken genereren. Ga naar `https://aex.aemmobile.adobe.com` en voer de volgende handelingen uit:
 
    * API-sleutel opgeven
    * Aanmelden bij een Adobe ID die u met de volgende machtigingen aan een AEM Mobile-project hebt toegevoegd (zie de onderstaande stappen voor het maken van een project)
@@ -49,7 +49,7 @@ Als aan alle voorwaarden wordt voldaan, worden een apparaat-id en apparaattoken 
 
 >[!NOTE]
 >
->De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [Account Administration voor AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in online Help.
+>De Adobe ID moet toegang krijgen tot een AEM Mobile-project. Zie [Account Administration voor AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in online Help.
 
 ## Projecten maken voor AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -65,7 +65,7 @@ Voor het maken van een project moet u zich aanmelden bij het portal On-Demand Se
 
 AEM opstelling impliceert de volgende stappen voor schakelaarconfiguratie. Zodra de configuratie van de AEM Mobile-connector is voltooid, kan de gebruiker gebruikersgroepen en machtigingen instellen.
 
-De AEM Mobile On-Demand-aansluiting wordt gebruikt om door AEM Mobile beheerde inhoud te binden met de On-Demand-services van Adobe Experience Manager Mobile. Hierdoor kunnen auteurs van inhoud materiaal voor mobiele toepassingen maken en beheren met de gereedschappen van AEM terwijl ze de On-Demand-services van AEM Mobile gebruiken voor eenvoudige distributie van mobiele inhoud.
+De AEM Mobile On-Demand-aansluiting wordt gebruikt om door AEM Mobile beheerde inhoud te binden met Adobe Experience Manager Mobile On-Demand-services. Op deze manier kunnen auteurs van inhoud materiaal voor mobiele toepassingen maken en beheren met behulp van AEM tools terwijl ze de On-Demand-services van AEM Mobile gebruiken voor eenvoudige distributie van mobiele inhoud.
 
 >[!NOTE]
 >

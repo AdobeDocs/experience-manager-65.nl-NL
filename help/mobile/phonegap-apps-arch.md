@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2691'
 ht-degree: 0%
 
 ---
@@ -309,7 +309,7 @@ Dit is een verborgen map die u mogelijk niet ziet, afhankelijk van de huidige be
 
 #### .cordova/haken/ {#cordova-hooks}
 
-Deze map bevat de [CLI-haken](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). De omslagen in de hooks folder bevatten knoop.js manuscripten die op nauwkeurige punten tijdens de bouwstijl worden uitgevoerd.
+Deze map bevat de [CLI-haken](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). De omslagen in de hooks folder bevatten knoop.js manuscripten die op nauwkeurige punten tijdens de bouwstijl worden uitgevoerd.
 
 #### .cordova/haken/after-platform_add/ {#cordova-hooks-after-platform-add}
 
@@ -360,7 +360,7 @@ Deze map is leeg totdat u de opdracht `phonegap run <platform>` op het project. 
 
 Nadat u de app voor een specifiek platform hebt gemaakt, wordt de bijbehorende map gemaakt en bevat deze de platformspecifieke toepassingscode.
 
-#### plugins/ {#plugins}
+#### plug-ins/ {#plugins}
 
 De map plugins wordt gevuld door elke plug-in die in de `.cordova/hooks/before_platform_add/install_plugins.js` bestand nadat u het `phonegap run <platform>` gebruiken. De map is aanvankelijk leeg.
 

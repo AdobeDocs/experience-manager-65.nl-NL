@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,7 @@ Met de Preflight-app Mobiel op aanvraag kunt u alle projecten weergeven waartoe 
 
 >[!NOTE]
 >
->De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren in pagina&#39;s. Als u meer wilt weten over Preflight App, klikt u op [hier](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
->
->De AEM Preflight-app is beschikbaar in [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en), en [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
+>De app AEM Preflight wordt gebruikt voor het voorvertonen van inhoud en het bladeren in pagina&#39;s. Als u meer wilt weten over Preflight App, klikt u op [hier](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 
 ### Aan de slag {#getting-ahead}
 

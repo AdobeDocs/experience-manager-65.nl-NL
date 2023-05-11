@@ -2,9 +2,9 @@
 title: Integratie met Adobe Target met IMS
 description: Meer informatie over het integreren van AEM met Adobe Target met IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5c3de9c272030b3e258aea95899a58553c3b33db
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -167,7 +167,7 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
    * **Clientgeheim**: Dit genereren in het dialoogvenster [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
    * **Payload**: Kopieer deze van de [JWT genereren](#details-stored-for-the-ims-integration-project) sectie
 
-   ![](assets/integrate-target-io-10.png)
+   ![Configuratie van technische account](assets/integrate-target-io-10.png)
 
 1. Bevestigen met **Maken**.
 

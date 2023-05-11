@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Ex
 description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
 workflow-type: tm+mt
-source-wordcount: '3021'
+source-wordcount: '2924'
 ht-degree: 0%
 
 ---
@@ -109,14 +109,14 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | Plug-in-id | functies | Beschrijving |
 |--- |--- |--- |
 | bewerken | cut copy paste-default paste-plaintext paste-wordhtml | [De drie plakmodi knippen, kopiëren en plakken](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | zoeken, vervangen | Zoeken en vervangen. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | vet cursief onderstrepen | [Basistekstopmaak](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [afbeelding](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | afbeelding | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
-| [toetsen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Zie voor het definiëren van deze waarde [tabgrootte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| [uitvullen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
-| [koppelingen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lijsten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | geordende ongeordende inspringing uitspringen | Deze insteekmodule bestuurt beide [inspringing en lijsten](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
-| [misverstanden](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars-bronbewerking | Met diverse gereedschappen kunnen auteurs toegang krijgen tot [speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) of bewerk de HTML-bron. U kunt ook een geheel toevoegen [bereik van speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) als u uw eigen lijst wilt bepalen. |
+| findreplace | zoeken, vervangen | Zoeken en vervangen. |
+| format | vet cursief onderstrepen | [Basistekstopmaak](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| afbeelding | afbeelding | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| toetsen |  | Zie voor het definiëren van deze waarde [tabgrootte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| uitvullen | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
+| koppelingen | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| lijsten | geordende ongeordende inspringing uitspringen | Deze insteekmodule bestuurt beide [inspringing en lijsten](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
+| misverstanden | specialchars-bronbewerking | Met diverse gereedschappen kunnen auteurs toegang krijgen tot [speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) of bewerk de HTML-bron. U kunt ook een geheel toevoegen [bereik van speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) als u uw eigen lijst wilt bepalen. |
 | Paraformat | paraformat | De standaardindelingen voor alinea&#39;s zijn Alinea, Kop 1, Kop 2 en Kop 3 (`<p>`, `<h1>`, `<h2>`, en `<h3>`). U kunt [meer alineaopmaak toevoegen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) of breid de lijst uit. |
 | spellingcontrole | checktext | [Spellingcontrole taalbewust](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | stijlen | stijlen | Ondersteuning voor opmaak met behulp van een CSS-klasse. [Nieuwe tekststijlen toevoegen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) als u uw eigen reeks stijlen wilt toevoegen (of uitbreiden) voor gebruik met tekst. |
@@ -323,12 +323,12 @@ Voor een pagina, kunt u of CoralUI 2 KTE clientlib of CoralUI 3 KTE clientlib om
 
 ## Aanvullende informatie {#further-information}
 
-Voor meer informatie over het vormen van RTE, zie [Widget-API AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) referentie.
+Voor meer informatie over het vormen van RTE, zie [Widget-API AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) referentie.
 
 Met name om de beschikbare plug-ins en bijbehorende opties te zien:
 
-* De [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) biedt een formulierveld voor het bewerken van opgemaakte tekstgegevens (opgemaakte tekst). Zie Configuratieopties voor meer informatie over alle parameters die beschikbaar zijn voor het RTF-formulier.
-* De component RichText verstrekt een brede waaier van functionaliteit gebruikend stop-ins die onder worden vermeld [CQ.form.rate.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Voor elke insteekmodule:
+* De [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) biedt een formulierveld voor het bewerken van opgemaakte tekstgegevens (opgemaakte tekst). Zie Configuratieopties voor meer informatie over alle parameters die beschikbaar zijn voor het RTF-formulier.
+* De component RichText verstrekt een brede waaier van functionaliteit gebruikend stop-ins die onder worden vermeld [CQ.form.rate.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Voor elke insteekmodule:
 
    * zie de Eigenschappen voor details van functionaliteit die kan worden toegelaten (of worden onbruikbaar gemaakt)
    * Zie de Opties Config voor alle parameters beschikbaar voor gedetailleerde configuratie van de aangewezen stop - binnen

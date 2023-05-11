@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -150,57 +150,6 @@ Wanneer &lt;text_x> Dit kan een combinatie zijn van statische tekst en dynamisch
 
    PageModified => /content/geometrixx/nl/products
 
-### E-mailsjablonen voor forumkennisgeving {#email-templates-for-forum-notification}
-
-E-mailsjablonen voor forummeldingen vindt u onder:
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-De standaardsjabloon Engels ( `en.txt`) wordt als volgt gedefinieerd:
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-```
-
-#### E-mailsjablonen aanpassen voor forummelding {#customizing-email-templates-for-forum-notification}
-
-U kunt als volgt de Engelse e-mailsjabloon voor forumkennisgeving aanpassen:
-
-1. Open het bestand in CRXDE:
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. Wijzig het bestand naar wens.
-1. Sla de wijzigingen op.
-
-De sjabloon moet de volgende indeling hebben:
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-Wanneer `<text_x>` Dit kan een combinatie zijn van statische tekst en dynamische tekenreeksvariabelen.
-
-De volgende variabelen kunnen binnen het e-mailmalplaatje voor forumberichten worden gebruikt:
-
-* `${time}`, de datum en het tijdstip van de gebeurtenis.
-
-* `${forum.path}`, het pad naar de forumpagina.
-
 ### E-mailsjablonen voor workflowmelding {#email-templates-for-workflow-notification}
 
 Het e-mailsjabloon voor workflowmeldingen (Engels) bevindt zich op:
@@ -293,7 +242,6 @@ Een sjabloon toevoegen voor een nieuwe taal:
 1. Voeg in CRXDE een bestand toe `<language-code>.txt` hieronder:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : voor paginameldingen
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : voor forummeldingen
    * `/libs/settings/workflow/notification/email/default` : voor workflowmeldingen
 
 1. Pas het bestand aan de taal aan.

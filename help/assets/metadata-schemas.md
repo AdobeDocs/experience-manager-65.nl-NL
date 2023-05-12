@@ -6,7 +6,8 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 5%
@@ -172,7 +173,7 @@ Gebruik schema&#39;s voor metagegevens om regels voor de weergave van trapsgewij
 
 Hier volgen enkele gebruiksgevallen waarvoor u trapsgewijze metagegevens kunt definiëren:
 
-* Indien de gebruikerslocatie vereist is, relevante plaatsnaam weergeven op basis van de keuze van het land en de staat van de gebruiker.
+* Indien een gebruikerslocatie is vereist, relevante plaatsnaam weergeven op basis van de keuze van het land en de staat van de gebruiker.
 * Laad relevante merknamen in een lijst op basis van de door de gebruiker gekozen productcategorie.
 * Schakel de zichtbaarheid van een bepaald veld in of uit op basis van de waarde die in een ander veld is opgegeven. Geef bijvoorbeeld afzonderlijke velden voor het verzendadres weer als de gebruiker de verzending op een ander adres wil laten uitvoeren.
 * Wijs een veld aan als verplicht op basis van de waarde die in een ander veld is opgegeven.

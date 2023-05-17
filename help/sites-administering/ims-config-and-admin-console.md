@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
+source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1676'
 ht-degree: 10%
 
 ---
@@ -133,10 +133,10 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 >
 >Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->De documentatie van de Adobe I/O-console is te vinden [hier](https://www.adobe.io/apis/cloudplatform/console.html).
+>De documentatie van de Adobe I/O-console is te vinden [hier](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->De [!DNL User Management] API die door het Hulpmiddel van de Synchronisatie van de Gebruiker wordt gebruikt is op dit [locatie](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>De [!DNL User Management] API die door het Hulpmiddel van de Synchronisatie van de Gebruiker wordt gebruikt is op dit [locatie](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

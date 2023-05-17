@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1018'
 ht-degree: 13%
 
 ---
@@ -66,6 +66,8 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    >Als u pagina&#39;s en/of vertakkingen wilt toevoegen aan een lancering, moeten deze zich binnen een site bevinden. d.w.z. onder een gemeenschappelijke hoofdmap.
    >
    >Als een site taalwortels onder het bovenste niveau bevat, moeten de pagina&#39;s en vertakkingen voor een introductie zich onder een gemeenschappelijke hoofdtaalbasis bevinden.
+   >
+   >Als u een opstart probeert te maken met een bovenliggende of onderliggende pagina in het bronpad, mislukt deze en wordt de fout &#39;&#39;Doel bestaat al bij :path to the page&#39;&#39; geretourneerd.
 
 1. Voor elk item kunt u opgeven of:
 

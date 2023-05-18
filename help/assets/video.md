@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '7993'
+source-wordcount: '7973'
 ht-degree: 2%
 
 ---
@@ -155,8 +155,6 @@ Adaptieve videostreaming wordt ondersteund op verschillende iOS-platforms. Zie [
 Dynamic Media ondersteunt het afspelen van mobiele video voor MP4 H.264-video. U kunt de apparaten van BlackBerry® vinden die dit videoformaat bij het volgende steunen: [Ondersteunde video-indelingen op BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 U kunt de apparaten van Vensters vinden die dit videoformaat bij het volgende steunen: [Ondersteunde mediacodecs voor Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
-
-
 
 * Speel de video terug gebruikend de Voorinstellingen van de VideoKijker van Dynamic Media, met inbegrip van het volgende:
 
@@ -442,10 +440,6 @@ Enkele belangrijke voordelen van het inschakelen van DASH voor uw account zijn:
 * Helpt de levering van video toegankelijker te maken voor uw klanten.
 * U kunt de URL voor streaming ook ophalen via API&#39;s.
 
-   >[!IMPORTANT]
-   >
-   >Het inschakelen van DASH op uw account is momenteel alleen beschikbaar in Azië-Pacific en Noord-Amerika. binnenkort in Europa-Midden-Oosten-Afrika.
-
 Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
 
 * Dynamic Media configureren voor gebruik van DASH, wat u eenvoudig kunt doen.
@@ -455,10 +449,10 @@ Voor het inschakelen van DASH voor uw account zijn twee stappen vereist:
 
 1. **Dynamic Media configureren** - Ga in Dynamic Media op Experience Manager 6.5 naar [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Zoeken naar **AEM Assets Dynamic Media Video Advanced Streaming** markering functie.
-1. Schakel het selectievakje in om DASH in te schakelen (inschakelen).
+1. Schakel het selectievakje in als u DASH wilt inschakelen (inschakelen).
 1. Selecteer **[!UICONTROL Save]**.
 1. **Experience Manager 6.5 configureren** - [Gebruik de Admin Console om een nieuwe steungeval te beginnen](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Volg de instructies om een steungeval tot stand te brengen terwijl het verzekeren van u de volgende informatie verstrekt:
+1. Als u een ondersteuningsgeval wilt maken, volgt u de instructies en zorgt u ervoor dat u de volgende informatie opgeeft:
 
    * Primaire contactpersoon, e-mail, telefoon.
    * Naam van je Dynamic Media-account.
@@ -720,7 +714,7 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://w3c.github.io/webvtt/)
 
 ## Informatie over videominiaturen in de modus Dynamic Media - Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Een videominiatuur is een verkleinde versie van een videoframe of een afbeeldingselement dat de video voor de klant vertegenwoordigt. De miniatuur moedigt een klant aan om op de video te klikken.
+Een videominiatuur is een verkleinde versie van een videoframe of een afbeeldingselement dat de video voor de klant vertegenwoordigt. De miniatuur moedigt een klant aan de video te selecteren.
 
 Aan alle video&#39;s in de Experience Manager moet een miniatuur zijn gekoppeld. u kunt een miniatuur niet verwijderen zonder deze te vervangen. Wanneer u een video uploadt naar Experience Manager, wordt standaard het eerste frame gebruikt als miniatuur. U kunt de miniatuur echter aanpassen voor bijvoorbeeld branding of visuele zoekopdracht. Wanneer u een videominiatuur aanpast, kunt u de video afspelen en pauzeren op het frame dat u wilt gebruiken. U kunt ook een afbeeldingselement selecteren dat u al hebt geüpload en *gepubliceerd* in uw Digital Asset Manager.
 

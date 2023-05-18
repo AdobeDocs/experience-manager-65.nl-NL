@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '4406'
+source-wordcount: '4402'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Zie [Responsieve afbeeldingsbibliotheek](https://experienceleague.adobe.com/docs
 
 >[!NOTE]
 >
->Houd er rekening mee dat u alle viewers uit de verpakking moet publiceren voordat u ze voor het eerst gebruikt.
+>Publiceer alle viewers die niet in de box staan voordat u ze voor het eerst gebruikt.
 >Zie [Voorinstellingen van viewer publiceren].(#publishing-viewer-presets)
 
 ### Compatibiliteit van het systeem met voorinstellingen voor viewers {#viewer-preset-system-compatibility}
@@ -72,7 +72,7 @@ Alle voorinstellingen voor viewers buiten de box die bij Dynamic Media worden ge
 * Apple iPad
 * Android™-smartphone
 * Android™-tablet
-* Voor video is aanvullende ondersteuning voor het afspelen van MP4 beschikbaar [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows-telefoon](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+* Voor video is aanvullende ondersteuning voor het afspelen van MP4 beschikbaar [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) en [Windows-telefoon](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Rijke mediatypen voor viewervoorinstellingen {#rich-media-types-for-viewer-presets}
 
@@ -498,7 +498,7 @@ Bijvoorbeeld voor *VideoPlayer* tekst, onder **[!UICONTROL Modifiers]** > **[!UI
 
 **Informatie over weergavemodi voor afbeeldingsminiaturen in het deelvenster**
 
-Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, kunt u kiezen welke instelling voor de weergavemodus moet worden gebruikt wanneer u `InteractiveSwatches` van de **[!UICONTROL Selected Component]** menu onder **[!UICONTROL Behavior]** tab. De gekozen weergavemodus bepaalt hoe en wanneer miniaturen worden weergegeven terwijl de video wordt afgespeeld. U kunt een van de `segment`weergavemodus (standaard) of een `continuous` weergavemodus.
+Wanneer u een voorinstelling voor een interactieve videoviewer maakt of bewerkt, kunt u kiezen welke instelling voor de weergavemodus moet worden gebruikt wanneer u `InteractiveSwatches` van de **[!UICONTROL Selected Component]** menu onder **[!UICONTROL Behavior]** tab. De weergavemodus die u kiest, bepaalt hoe en wanneer miniaturen worden weergegeven terwijl de video wordt afgespeeld. U kunt een van de `segment`weergavemodus (standaard) of een `continuous` weergavemodus.
 
 <table>
  <tbody>

@@ -6,10 +6,11 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+hide: true
+source-git-commit: c1878d6aadba9c795168459dbd5f09abfe0fc327
 workflow-type: tm+mt
 source-wordcount: '1741'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +30,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 
 Ondersteunde rasterafbeeldingsindelingen in [!DNL Assets] zijn:
 
-| Format | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | Bewerken | Metagegevens terugschrijven | Inzichten |
+| Indeling | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | Bewerken | Metagegevens terugschrijven | Inzichten |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
@@ -61,7 +62,7 @@ De volgende lijst met 3D-indelingen wordt ondersteund.
 
 Zie ook [Werken met 3D-elementen in Dynamic Media.](/help/assets/assets-3d.md)
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Voorvertoning miniatuur | 3D-voorvertoning | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ |  | ✓ | ✓ | − | − |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
@@ -96,7 +97,7 @@ De [!DNL Adobe Camera Raw] library enable [!DNL Assets] om Raw-afbeeldingen in t
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
-| Format | Opslag | [Metagegevensbeheer](metadata.md) | Volledige tekst<br> extractie | [Metagegevensextractie](metadata.md) | Miniatuur<br> opwekking | [Extractie van subactiva](managing-linked-subassets.md) | [Metagegevens terugschrijven](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
+| Indeling | Opslag | [Metagegevensbeheer](metadata.md) | Volledige tekst<br> extractie | [Metagegevensextractie](metadata.md) | Miniatuur<br> opwekking | [Extractie van subactiva](managing-linked-subassets.md) | [Metagegevens terugschrijven](xmp-writeback.md) | [Gekoppelde assets](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
 | DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
@@ -252,7 +253,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 ## Dynamic Media - Ondersteunde documentindelingen {#supported-document-formats-dynamic-media}
 
-| Format | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering |
+| Indeling | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
@@ -272,7 +273,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 ## Dynamic Media - Ondersteunde rasterafbeeldingsindelingen {#supported-raster-image-formats-dynamic-media}
 
-| Format | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering | Typen instellen die deze indeling ondersteunen |
+| Indeling | Uploaden<br> (Invoerindeling) | Maken<br> image<br> voorinstelling<br> (Uitvoerindeling) | Voorvertoning<br> dynamic<br> uitvoering | Leveren<br> dynamic<br> uitvoering | Downloaden<br> dynamic<br> uitvoering | Typen instellen die deze indeling ondersteunen |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Afbeelding](/help/assets/image-sets.md), [Gemengde media](/help/assets/mixed-media-sets.md), en [Draaien](/help/assets/spin-sets.md) |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
@@ -328,7 +329,7 @@ Dynamic Media ondersteunt de volgende 3D-indelingen.
 
 Zie ook [Werken met 3D-elementen in Dynamic Media](/help/assets/assets-3d.md).
 
-| 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
+| 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |

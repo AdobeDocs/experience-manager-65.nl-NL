@@ -11,9 +11,9 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4edfc51227607b4fb3ee4b97443d2040015b6a65
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,6 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
    * **Herzieningstermijn**: Beschikbaar voor bewerken. U kunt de deadline wijzigen in elke datum en tijd na de huidige datum en tijd.
 
    * **Revisoren**: Beschikbaar voor bewerken. U kunt revisoren toevoegen of verwijderen. Als een taak te laat is, kunt u revisoren pas toevoegen nadat de deadline is verlengd na de huidige datum.
-
-1. Bewerk de benodigde velden en klik op Bijwerken.
-
-   ![Bijgewerkte status controleren in Taakbeheer](assets/tskmgr.png)
-
-   Bijgewerkte status controleren in Taakbeheer
 
 1. Klik op Einde om de revisie te beëindigen.
 
